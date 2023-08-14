@@ -71,6 +71,20 @@ GET /policies/permissionGrantPreApprovalPolicies
   "@odata.type": "Collection(microsoft.graph.permissionGrantPreApprovalPolicy)"
 }
 -->
+In the following example:
+Policy ID `71ba13dc-5947-4e59-bcc5-0ad5c339a853` has the following settings:
+  - The condition for the `chat` resource type:
+    - Indicates that all chats regardless of sensitivity labels are in scope 
+    - Specifies that all application permissions for all APIs are pre-approved
+  - The condition for the `group` resource type:
+    - Specifies two sensitivity labels that are in scope
+    - Specifies **two** application permissions for the `00000003-0000-0000-c000-000000000000` resource app are pre-approved
+   
+  Policy ID `bd4b701c-a54e-42b8-9f56-e4b4b229be3b` has the following settings:
+  - The condition for the `group` resource type:
+    - Indicates that all groups regardless of sensitivity labels are in scope 
+    - Specifies that **all** application permissions for the `00000003-0000-0000-c000-000000000000` resource app are pre-approved
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -81,78 +95,39 @@ Content-Type: application/json
             "id": "71ba13dc-5947-4e59-bcc5-0ad5c339a853",
             "deletedDateTime": null,
             "conditions": [
-                {
-                    "scopeType": "chat",
-                    "sensitivityLabels": {
-                        "@odata.type": "#microsoft.graph.enumeratedScopeSensitivityLabels",
-                        "labelKind": "enumerated",
-                        "sensitivityLabels": [
-                            "d9c43deb-f3e1-4422-9fd6-ccf22a3206b8",
-                            "c99dade2-aa54-4890-ac1c-a146fa26bd1e"
-                        ]
-                    },
-                    "permissions": {
-                        "@odata.type": "#microsoft.graph.allPreApprovedPermissions",
-                        "permissionKind": "all",
-                        "permissionType": "application"
-                    }
-                },
-                {
-                    "scopeType": "group",
-                    "sensitivityLabels": {
-                        "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
-                        "labelKind": "all"
-                    },
-                    "permissions": {
-                        "@odata.type": "#microsoft.graph.enumeratedPreApprovedPermissions",
-                        "permissionKind": "enumerated",
-                        "resourceApplicationId": "00000003-0000-0000-c000-000000000000",
-                        "permissionIds": [
-                            "134483aa-3dda-4d65-ac91-b8dda1417875",
-                            "9d33613d-f855-483b-bca7-ea63ac9f5485"
-                        ],
-                        "permissionType": "application"
-                    }
-                }
-            ]
-        },
-        {
-            "id": "81cc4c53-1333-47b3-9fa5-1963876e0c5c",
-            "deletedDateTime": null,
-            "conditions": [
-                {
-                    "scopeType": "chat",
-                    "sensitivityLabels": {
-                        "@odata.type": "#microsoft.graph.enumeratedScopeSensitivityLabels",
-                        "labelKind": "enumerated",
-                        "sensitivityLabels": [
-                            "d9c43deb-f3e1-4422-9fd6-ccf22a3206b8",
-                            "c99dade2-aa54-4890-ac1c-a146fa26bd1e"
-                        ]
-                    },
-                    "permissions": {
-                        "@odata.type": "#microsoft.graph.allPreApprovedPermissions",
-                        "permissionKind": "all",
-                        "permissionType": "application"
-                    }
-                },
-                {
-                    "scopeType": "group",
-                    "sensitivityLabels": {
-                        "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
-                        "labelKind": "all"
-                    },
-                    "permissions": {
-                        "@odata.type": "#microsoft.graph.enumeratedPreApprovedPermissions",
-                        "permissionKind": "enumerated",
-                        "resourceApplicationId": "00000003-0000-0000-c000-000000000000",
-                        "permissionIds": [
-                            "134483aa-3dda-4d65-ac91-b8dda1417875",
-                            "9d33613d-f855-483b-bca7-ea63ac9f5485"
-                        ],
-                        "permissionType": "application"
-                    }
-                }
+                      {
+                  "scopeType": "chat",
+                  "sensitivityLabels": {
+                      "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+                      "labelKind": "all"
+                  },
+                  "permissions": {
+                      "@odata.type": "#microsoft.graph.allPreApprovedPermissions",
+                      "permissionKind": "all",
+                      "permissionType": "application"
+                  }
+              },
+              {
+                  "scopeType": "group",
+                  "scopeSensitivityLabels": {
+                      "@odata.type": "microsoft.graph.enumeratedScopeSensitivityLabels",
+                      "labelKind": "enumerated",
+                      "sensitivityLabels": [
+                          "d9c43deb-f3e1-4422-9fd6-ccf22a3206b8",
+                          "c99dade2-aa54-4890-ac1c-a146fa26bd1e"
+                      ]
+                  },
+                  "permissions": {
+                      "@odata.type": "#microsoft.graph.enumeratedPreApprovedPermissions",
+                      "permissionKind": "enumerated",
+                      "permissionType": "application",
+                      "resourceApplicationId": "00000003-0000-0000-c000-000000000000",
+                      "permissionIds": [
+                          "134483aa-3dda-4d65-ac91-b8dda1417875",
+                          "9d33613d-f855-483b-bca7-ea63ac9f5485"
+                      ]
+                  }
+              }
             ]
         },
         {
@@ -160,34 +135,16 @@ Content-Type: application/json
             "deletedDateTime": null,
             "conditions": [
                 {
-                    "scopeType": "chat",
-                    "sensitivityLabels": {
-                        "@odata.type": "#microsoft.graph.enumeratedScopeSensitivityLabels",
-                        "labelKind": "enumerated",
-                        "sensitivityLabels": [
-                            "d9c43deb-f3e1-4422-9fd6-ccf22a3206b8"
-                        ]
-                    },
-                    "permissions": {
-                        "@odata.type": "#microsoft.graph.allPreApprovedPermissions",
-                        "permissionKind": "all",
-                        "permissionType": "application"
-                    }
-                },
-                {
                     "scopeType": "group",
                     "sensitivityLabels": {
                         "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
                         "labelKind": "all"
                     },
                     "permissions": {
-                        "@odata.type": "#microsoft.graph.enumeratedPreApprovedPermissions",
-                        "permissionKind": "enumerated",
-                        "resourceApplicationId": "00000003-0000-0000-c000-000000000000",
-                        "permissionIds": [
-                            "134483aa-3dda-4d65-ac91-b8dda1417875"
-                        ],
-                        "permissionType": "application"
+                        "@odata.type": "#microsoft.graph.allPermissionsOnResourceApp",
+                        "permissionKind": "allPermissionsOnResourceApp",
+                        "permissionType": "application",
+                        "resourceApplicationId": "00000003-0000-0000-c000-000000000000"
                     }
                 }
             ]
