@@ -2,7 +2,7 @@
 title: "List accessReview reviewers (deprecated)"
 description: "In the Azure AD access reviews feature, retrieve the reviewers of an accessReview object."
 ms.localizationpriority: medium
-author: "jyothig123"
+author: "shubhamguptacal"
 ms.prod: "governance"
 doc_type: apiPageType
 ---

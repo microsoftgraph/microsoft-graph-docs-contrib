@@ -2,7 +2,7 @@
 title: "List methods"
 description: "Retrieve a list of authentication methods registered to a user."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "jpettere"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
