@@ -1,5 +1,5 @@
 ---
-title: "Viva Insights VivaInsightsDataset_Report_v1 dataset"
+title: "VivaInsightsDataset_Report_v1_[Viva Insights query name] dataset"
 description: "Gain insights on top collaborators, meeting and focus hours, and other personal productivity metrics."
 author: "rimisra2"
 ms.localizationpriority: high
@@ -7,21 +7,22 @@ ms.prod: "data-connect"
 ms.custom: datasets:dataset-name
 ---
 
-# Viva Insights VivaInsightsDataset_Report_v1 dataset
+# VivaInsightsDataset_Report_v1_[Viva Insights query name] dataset
 
 ## Description
 
--	Gain insights on top collaborators, meeting and focus hours, and other personal productivity metrics. Customers can also create custom and reserved attributes that can be uploaded by analysts.
+Microsoft Viva Insights provides scope information and research-based behavioral insights into how an organization gets work done; for example, whether employees maintain work-life balance, how to protect employee well being, and the ways that hybrid work affects the employee experience.
 
 ## Scenarios
 
--	**People sensing:** Empowering decision-making with Viva Insights metrics (including collaboration time, meetings, etc.) across the organization or from various departments.
--	**Meeting efficiency:** Understanding meeting time spent, especially those with hundreds of hours of employee time.
--	**Organizational network analysis (ONA):** Measuring how people were communicating pre- and post-Covid, creating their own analysis and connecting it with a much broader set of data.
--	**Seller productivity:** Using customer relationship management (CRM) data with Viva Insights data to highlight important accounts and contacts.
+Scenarios are customizable, depending on what dataset you choose to export. Scenarios fall into the following two categories, including those addressed with:
 
+- [Person queries](/viva/insights/advanced/analyst/person-query-overview); for example, using Viva Insights metrics to measure empowering decision-making (including collaboration time, meetings, etc.) across the organization or from various departments.
+- [Meeting queries](/viva/insights/advanced/analyst/meeting-query); for example, using Viva Insights metrics to better understand the time employees spend in meetings, especially those with hundreds of hours of employee focus time.
 
 ## Questions
+
+Questions are customizable, depending on what dataset you choose to export. Here are some examples:
 
 -	Which departments have employees who are at risk of burnout?
 -	How have email and chat communication changed after moving to work from home policies?
