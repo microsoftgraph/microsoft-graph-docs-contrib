@@ -42,7 +42,7 @@ POST /servicePrincipals/{id}/permissionGrantPreApprovalPolicies/$ref
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON object and pass an @odata.id parameter with a single policy object from the [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) collection.
+In the request body, supply a JSON object that contains an **@odata.id** parameter with a reference to a single [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) object.
 
 ## Response
 
@@ -59,6 +59,7 @@ If successful, this method returns a `204 No Content` response code.
 ``` http
 POST https://graph.microsoft.com/beta/servicePrincipals/37d4ba51-cc54-4762-9ff7-deb5c9438cc7/permissionGrantPreApprovalPolicies/$ref
 Content-Type: application/json
+
 {
     "@odata.id": "https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies/71ba13dc-5947-4e59-bcc5-0ad5c339a853"
 }
