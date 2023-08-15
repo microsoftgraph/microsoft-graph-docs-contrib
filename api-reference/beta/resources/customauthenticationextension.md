@@ -27,7 +27,7 @@ Learn how to use this API when [Configuring a custom claim provider token issuan
 |[Get customAuthenticationExtension](../api/customauthenticationextension-get.md)|[customAuthenticationExtension](../resources/customauthenticationextension.md)|Read the properties and relationships of a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
 |[Update customAuthenticationExtension](../api/customauthenticationextension-update.md)|None|Update the properties of a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
 |[Delete customAuthenticationExtension](../api/customauthenticationextension-delete.md)|None|Delete a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
-|[validateAuthenticationConfiguration](../api/customauthenticationextension-validateauthenticationconfiguration.md)|[authenticationConfigurationValidation](../resources/authenticationconfigurationvalidation.md)|Check validity of the endpoint and and authentication configuration for a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
+|[validateAuthenticationConfiguration](../api/customauthenticationextension-validateauthenticationconfiguration.md)|[authenticationConfigurationValidation](../resources/authenticationconfigurationvalidation.md)|Check validity of the endpoint and authentication configuration for a [customAuthenticationExtension](../resources/customauthenticationextension.md) object.|
 
 ## Properties
 |Property|Type|Description|
