@@ -19,7 +19,7 @@ Describes the status of the provisioning summary event.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|status|provisioningResult| Possible values are: `success`, `failure`, `skipped`, `warning`, `unknownFutureValue`.|
+|status|provisioningResult| Possible values are: `success`, `failure`, `skipped`, `warning`, `unknownFutureValue`. Supports `$filter` (`eq`, `contains`).|
 |errorInformation|[provisioningErrorInfo](provisioningerrorinfo.md)| If status is not success/ skipped details for the error are contained in this.|
 
 ## JSON representation

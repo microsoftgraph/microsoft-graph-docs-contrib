@@ -2,7 +2,7 @@
 title: "Add Connector to connectorGroup"
 description: "Use this API to add a connector to a new connectorGroup."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinrshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---

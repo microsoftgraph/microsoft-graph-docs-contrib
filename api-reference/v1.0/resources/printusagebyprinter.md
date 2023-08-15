@@ -23,12 +23,13 @@ Describes print activity for a printer during a specified time period (usageDate
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|id|String|The ID of this usage summary.|
+|printerID|String|The ID of the printer represented by these statistics.|
+|printerName|String|The name of the printer represented by these statistics.|
+|usageDate|Date|The date associated with these statistics.|
 |completedBlackAndWhiteJobCount|Int64|The number of black and white print jobs completed by the printer on the associated date.|
 |completedColorJobCount|Int64|The number of color print jobs completed by the printer on the associated date.|
-|id|String|The ID of this usage summary.|
 |incompleteJobCount|Int64|The number of print jobs that were queued for the printer, but not completed, on the associated date.|
-|printerID|String|The ID of the printer represented by these statistics.|
-|usageDate|Date|The date associated with these statistics.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -43,11 +44,12 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.printUsageByPrinter",
   "id": "String (identifier)",
+  "printerId": "String",
+  "printerName": "String (identifier)",
   "usageDate": "Date",
   "completedBlackAndWhiteJobCount": "Integer",
   "completedColorJobCount": "Integer",
-  "incompleteJobCount": "Integer",
-  "printerId": "String"
+  "incompleteJobCount": "Integer"
 }
 ```
 

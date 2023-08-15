@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Team();
 $requestBody->setVisibility(new TeamVisibilityType('private'));
@@ -157,11 +157,9 @@ $requestBody->setInstalledApps($installedAppsArray);
 
 $additionalData = [
 'template@odata.bind' => 'https://graph.microsoft.com/v1.0/teamsTemplates(\'standard\')', 
-'discoverySettings' => $requestBody = new DiscoverySettings();
-$requestBody->setShowInTeamsSearchAndSuggestions(true);
-
-
-$requestBody->setDiscoverySettings($discoverySettings);
+'discoverySettings' => [
+	'showInTeamsSearchAndSuggestions' => true,
+],
 
 ];
 $requestBody->setAdditionalData($additionalData);

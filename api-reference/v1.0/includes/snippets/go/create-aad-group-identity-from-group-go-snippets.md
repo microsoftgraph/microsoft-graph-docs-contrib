@@ -21,7 +21,7 @@ requestBody.SetId(&id)
 type := graphmodels.GROUP_IDENTITYTYPE 
 requestBody.SetType(&type) 
 
-result, err := graphClient.External().Connections().ByConnectionId("externalConnection-id").Groups().ByGroupId("externalGroup-id").Members().Post(context.Background(), requestBody, nil)
+members, err := graphClient.External().Connections().ByExternalConnectionId("externalConnection-id").Groups().ByExternalGroupId("externalGroup-id").Members().Post(context.Background(), requestBody, nil)
 
 
 ```

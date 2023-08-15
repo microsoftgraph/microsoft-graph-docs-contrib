@@ -2,7 +2,7 @@
 title: "passwordAuthenticationMethod resource type"
 description: "A representation of a password registered to a user."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "zhvolosh"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---

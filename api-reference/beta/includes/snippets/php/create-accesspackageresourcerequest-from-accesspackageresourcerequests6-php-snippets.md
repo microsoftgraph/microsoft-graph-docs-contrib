@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackageResourceRequest();
 $requestBody->setCatalogId('26ac0c0a-08bc-4a7b-a313-839f58044ba5');
@@ -37,10 +37,10 @@ $attributesAccessPackageResourceAttribute1->setIsEditable(true);
 $attributesAccessPackageResourceAttribute1->setIsPersistedOnAssignmentRemoval(true);
 
 $attributesAccessPackageResourceAttribute1AttributeSource = new AccessPackageResourceAttributeQuestion();
-$attributesAccessPackageResourceAttribute1AttributeSource->set@odatatype('#microsoft.graph.accessPackageResourceAttributeQuestion');
+$attributesAccessPackageResourceAttribute1AttributeSource->setOdataType('#microsoft.graph.accessPackageResourceAttributeQuestion');
 
 $attributesAccessPackageResourceAttribute1AttributeSourceQuestion = new AccessPackageTextInputQuestion();
-$attributesAccessPackageResourceAttribute1AttributeSourceQuestion->set@odatatype('#microsoft.graph.accessPackageTextInputQuestion');
+$attributesAccessPackageResourceAttribute1AttributeSourceQuestion->setOdataType('#microsoft.graph.accessPackageTextInputQuestion');
 
 $attributesAccessPackageResourceAttribute1AttributeSourceQuestion->setIsRequired(false);
 
@@ -51,7 +51,7 @@ $attributesAccessPackageResourceAttribute1AttributeSourceQuestion->setIsSingleLi
 $attributesAccessPackageResourceAttribute1AttributeSourceQuestionText = new AccessPackageLocalizedContent();
 $attributesAccessPackageResourceAttribute1AttributeSourceQuestionText->setDefaultText('Title');
 
-$attributesAccessPackageResourceAttribute1AttributeSourceQuestionText->setLocalizedTexts([]);
+$attributesAccessPackageResourceAttribute1AttributeSourceQuestionText->setLocalizedTexts([	]);
 
 
 $attributesAccessPackageResourceAttribute1AttributeSourceQuestion->setText($attributesAccessPackageResourceAttribute1AttributeSourceQuestionText);
@@ -60,7 +60,7 @@ $attributesAccessPackageResourceAttribute1AttributeSource->setQuestion($attribut
 
 $attributesAccessPackageResourceAttribute1->setAttributeSource($attributesAccessPackageResourceAttribute1AttributeSource);
 $attributesAccessPackageResourceAttribute1AttributeDestination = new AccessPackageUserDirectoryAttributeStore();
-$attributesAccessPackageResourceAttribute1AttributeDestination->set@odatatype('#microsoft.graph.accessPackageUserDirectoryAttributeStore');
+$attributesAccessPackageResourceAttribute1AttributeDestination->setOdataType('#microsoft.graph.accessPackageUserDirectoryAttributeStore');
 
 
 $attributesAccessPackageResourceAttribute1->setAttributeDestination($attributesAccessPackageResourceAttribute1AttributeDestination);

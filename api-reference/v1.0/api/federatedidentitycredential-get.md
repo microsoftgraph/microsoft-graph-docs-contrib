@@ -1,7 +1,7 @@
 ---
 title: "Get federatedIdentityCredential"
 description: "Read the properties and relationships of a federatedIdentityCredential object."
-author: "shahzad-khalid"
+author: "nickludwig"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType

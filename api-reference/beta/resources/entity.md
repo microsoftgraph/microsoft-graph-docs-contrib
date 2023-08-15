@@ -4,7 +4,7 @@ description: "Represents an entity."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "applications"
-author: "keylimesoda"
+author: "dkershaw10"
 ---
 
 # entity resource type

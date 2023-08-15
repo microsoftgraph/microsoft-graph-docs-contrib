@@ -29,6 +29,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
+> [!NOTE]
+>
+> If you plan to use the TeamsAppInstallation.ReadWriteSelfForUser.All permission, the following are required:
+>
+> - The app manifest must have the **webApplicationInfo** property.
+> - The app **id** given in the **webApplicationInfo** property and the app **id** used to generate the access token must match. Otherwise, the API returns an empty result.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -318,8 +325,11 @@ Content-type: application/json
     ]
 }
 ```
+
 ## See also
+
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 
-<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph.deviceAppManagement" }-->
+<!-- { "blockType": "response" , "@odata.type" : "microsoft.graph." }-->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -109,3 +109,6 @@ Content-Length: 133
   }
 }
 ```
+
+
+
