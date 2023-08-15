@@ -75,7 +75,7 @@ You can find the list of permission scopes required by each component in the **M
 
 ## Custom hosts
 
-You can specify custom hosts for the Microsoft Graph client. This allows you to call non-Microsoft Graph Entra ID-secured APIs. When you specify custom hosts, make sure that you request the scope for the access token.
+You can specify custom hosts for the Microsoft Graph client. This allows you to call non-Microsoft Graph Azure AD-secured APIs. When you specify custom hosts, make sure that you request the scope for the access token.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
