@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account)| ChannelMessage.Send,  |
+|Delegated (work or school account)| ChannelMessage.Send |
 |Delegated (personal Microsoft account)| Not supported. |
 |Application| Not supported. |
 
@@ -51,7 +51,7 @@ To set a reaction to a **chatMessage** in a **chat**:
 }
 -->
 ``` http
-POST /users/{userId}/chats/{chatsId}/messages/{chatMessageId}/setReaction
+POST /chats/{chatsId}/messages/{chatMessageId}/setReaction
 ```
 
 ## Request headers
