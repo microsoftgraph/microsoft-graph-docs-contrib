@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a request specific to a delegated admin relationship between a partner and a customer. It allows the Microsoft partner admin to take actions on a relationship such as locking a relationship for approval or terminating a relationship.
-
-It also allows Indirect reseller partner admin to provide consent on a relationship created for them by Indirect provider partner by approving or rejecting the relationship.
+Represents a request specific to a delegated admin relationship between a partner and a customer. It allows the Microsoft partner administrator to take actions on a relationship such as locking a relationship for approval or terminating a relationship. It also allows the indirect reseller partner administrator to approve or reject a relationship created for them by an indirect provider partner.
 
 ## Methods
 |Method|Return type|Description|
@@ -27,7 +25,7 @@ It also allows Indirect reseller partner admin to provide consent on a relations
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|action|delegatedAdminRelationshipRequestAction|The action to be performed on the delegated admin relationship.|
+|action|delegatedAdminRelationshipRequestAction|The action to be performed on the delegated admin relationship. The possible values are: `lockForApproval`, `approve`, `terminate`, `reject`, `unknownFutureValue`. For a Microsoft partner to finalize a relationship in the `created` **status**, set the **action** to `lockForApproval`. For a Microsoft partner to terminate a relationship in the `active` **status**, set the **action** to `terminate`. For an indirect reseller to approve a relationship created by an indirect provider in the `approvalPending` **status**, set the **action** to `approve`. For an indirect reseller to reject a relationship created by an indirect provider in the `approvalPending` **status**, set the **action** to `reject`.|
 |createdDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the relationship request was created. Read-only. |
 |id|String|The unique identifier of the relationship request. Read-only. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time in ISO 8601 format and UTC time when this relationship request was last modified. Read-only.|
