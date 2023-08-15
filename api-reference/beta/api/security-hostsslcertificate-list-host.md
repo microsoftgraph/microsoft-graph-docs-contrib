@@ -1,6 +1,6 @@
 ---
 title: "List hostSslCertificates"
-description: "Get the host resources from the host navigation property."
+description: "Get the hostSslCertificate resources from the host navigation property."
 author: "nblankenau"
 ms.localizationpriority: medium
 ms.prod: "security"
