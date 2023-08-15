@@ -10,7 +10,7 @@ ms.custom: scenarios:getting-started
 
 The authorization experience for Microsoft Graph Data Connect apps is built in to the Microsoft 365 admin center. Global administrators who authorize Data Connect apps for your organization can get started by going to the [Microsoft Graph Data Connect authorization portal](https://admin.microsoft.com/Adminportal/Home#/Settings/MGDCAdminCenter). Go to the **Security & Privacy** tab in **Org settings**, then select **Microsoft Graph Data Connect applications**.
 
-These are different entry points from where admins opt in to Data Connect. Only global administrators can authorize Data Connect applications.
+Only global administrators can authorize Data Connect applications.
 
 ![Graphic showing org settings in the Security & Privacy tab for Data Connect apps.](images/org-settings-security-and-privacy-data-connect-apps.png)
 
