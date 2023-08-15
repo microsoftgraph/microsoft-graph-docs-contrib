@@ -22,8 +22,8 @@ This option is available today. If you choose this option, none of your existing
 
 Existing Data Connect customers are provided the option to perform a one-click auto-migration from PAM over to the new onboarding experience. This auto-migration handles the conversion of existing PAM authorizations into app registrations and maintains existing app authorizations. The goal is to enable a smooth migration with no downtime for existing customers.
 
-Existing customer will see this option from August 2023. More details will be shared as we get closer to the release.
+Existing customer will see this option later in 2023. More details will be shared as we get closer to the release.
 
 ## Phase 3: Automatic migration
 
-In this phase, existing Data Connect customers who didn't perform the one-click auto-migration will be automatically migrated to the new onboarding experience. When available, we will announce the date to begin force migration. We anticipate this date to be in late 2023. Any customer who is not migrated by the beginning of phase 3 will be automatically migrated to the new experience on their first run of Data Connect, once phase 3 begins.
+In this phase, existing Data Connect customers who didn't perform the one-click auto-migration will be automatically migrated to the new onboarding experience. When available, we will announce the date to begin force migration. We anticipate this to be in late 2023, or early 2024. Any customer who is not migrated by the beginning of phase 3 will be automatically migrated to the new experience on their first run of Data Connect, once phase 3 begins.

@@ -18,7 +18,7 @@ This article describes the simplified onboarding experience for Microsoft Graph 
 
 2. Create a new Azure AD app.
 
-3. Register the The global administrator authorizes the app in the [Data Connect app registration portal](https://aka.ms/mgdcinazure). This is where you specify the data you require for the application. For details, see [app registration](./app-registration.md).
+3. Your global administrator authorizes the app in the [Data Connect app registration portal](https://aka.ms/mgdcinazure)—and specifies the data that is required for the application. For details, see [app registration](./app-registration.md).
 
 4. Your global administrator authorizes the app in the Data Connect app authorization portal. For details, see [app authorization](./app-authorization.md).
 
