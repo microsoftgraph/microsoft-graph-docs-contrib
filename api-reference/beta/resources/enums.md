@@ -422,6 +422,7 @@ Namespace: microsoft.graph
 | strictEnforcement  |
 | disabled           |
 | unknownFutureValue |
+|strictLocation|
 
 ### msiType values
 
@@ -1329,6 +1330,13 @@ Namespace: microsoft.graph
 | studentsAndTeamOwners |
 | unknownFutureValue    |
 | studentsOnly          |
+
+### educationModuleStatus values
+
+| Member             |
+| :----------------- |
+| draft              |
+| published          |
 
 ### educationAssignmentStatus values
 
