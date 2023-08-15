@@ -1,13 +1,13 @@
 ---
-title: "VivaInsightsDataset_Report_v1_[Viva Insights query name] dataset"
-description: "Gain insights on top collaborators, meeting and focus hours, and other personal productivity metrics."
+title: Microsoft Graph Data Connect VivaInsightsDataset_Report_v1_[Viva Insights query name] dataset"
+description: "Use this dataset to gain insights on top collaborators, meeting and focus hours, and other personal productivity metrics."
 author: "rimisra2"
 ms.localizationpriority: high
 ms.prod: "data-connect"
 ms.custom: datasets:dataset-name
 ---
 
-# VivaInsightsDataset_Report_v1_[Viva Insights query name] dataset
+# Microsoft Graph Data Connect VivaInsightsDataset_Report_v1_[Viva Insights query name] dataset
 
 ## Description
 
@@ -44,5 +44,5 @@ Questions are customizable, depending on what dataset you choose to export. Here
 
 ## Notes
 
--	Viva Insights has recurring flexible queries that are refreshed weekly; every Tuesday, with data up to the last Saturday.
+-	Viva Insights has recurring flexible queries that are refreshed weekly every Tuesday, and with data up to the last Saturday of the month (Pacific time zone).
 
