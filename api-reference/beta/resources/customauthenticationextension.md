@@ -17,7 +17,7 @@ Custom authentication extensions define interactions with external systems durin
 
 Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 
-Learn how to use this API when [Configuring a custom claim provider token issuance event (preview)](/azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?context=graph/context).
+Learn how to use this API when [Configuring a custom claim provider token issuance event (preview)](/azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json&context=graph/context).
 
 ## Methods
 |Method|Return type|Description|
@@ -72,5 +72,5 @@ The following is a JSON representation of the resource.
 
 ## See also
 
-- [Configure a custom claim provider token issuance event (preview)](/azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?context=graph/context)
+- [Configure a custom claim provider token issuance event (preview)](/azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json&context=graph/context)
 
