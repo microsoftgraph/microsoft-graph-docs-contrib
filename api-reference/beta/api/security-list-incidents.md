@@ -106,10 +106,6 @@ GET https://graph.microsoft.com/beta/security/incidents
 [!INCLUDE [sample-code](../includes/snippets/php/list-incident-for-defender-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-incident-for-defender-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-incident-for-defender-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -193,10 +189,6 @@ GET https://graph.microsoft.com/beta/security/incidents?$expand=alerts
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-incident-with-theri-alerts-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-incident-with-theri-alerts-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -297,9 +289,15 @@ Content-Type: application/json
                         "rbacGroupName": "UnassignedGroup",
                         "onboardingStatus": "onboarded",
                         "defenderAvStatus": "unknown",
+                        "ipInterfaces": [
+                            "1.1.1.1"
+                        ],
                         "loggedOnUsers": [],
                         "roles": [
                             "compromised"
+                        ],
+                        "detailedRoles": [
+                          "Main device"
                         ],
                         "tags": [
                             "Test Machine"
@@ -320,6 +318,9 @@ Content-Type: application/json
                         "detectionStatus": "detected",
                         "mdeDeviceId": "73e7e2de709dff64ef64b1d0c30e67fab63279db",
                         "roles": [],
+                        "detailedRoles": [
+                          "Referred in command line",
+                        ],
                         "tags": [],
                         "fileDetails": {
                             "sha1": "5f1e8acedc065031aad553b710838eb366cfee9a",
@@ -346,6 +347,7 @@ Content-Type: application/json
                         "detectionStatus": "detected",
                         "mdeDeviceId": "73e7e2de709dff64ef64b1d0c30e67fab63279db",
                         "roles": [],
+                        "detailedRoles": [],
                         "tags": [],
                         "imageFile": {
                             "sha1": "5f1e8acedc065031aad553b710838eb366cfee9a",
@@ -384,6 +386,7 @@ Content-Type: application/json
                         "registryKey": "SYSTEM\\CONTROLSET001\\CONTROL\\WMI\\AUTOLOGGER\\SENSEAUDITLOGGER",
                         "registryHive": "HKEY_LOCAL_MACHINE",
                         "roles": [],
+                        "detailedRoles": [],
                         "tags": [],
                     }
                 ]

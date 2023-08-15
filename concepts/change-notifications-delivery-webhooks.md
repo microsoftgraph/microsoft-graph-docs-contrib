@@ -7,7 +7,11 @@ ms.reviewer: keylimesoda
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
+<<<<<<< HEAD
 ms.date: 08/15/2023
+=======
+ms.date: 07/12/2023
+>>>>>>> 34b6a1586df063fa7040c18a5725c436579a9908
 ---
 
 # Receive change notifications through webhooks

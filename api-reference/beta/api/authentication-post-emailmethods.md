@@ -1,7 +1,7 @@
 ---
 title: "Create emailAuthenticationMethod"
 description: "Create a new emailAuthenticationMethod object."
-author: "jpettere"
+author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

@@ -98,6 +98,10 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_testuserflow/ap
 [!INCLUDE [sample-code](../includes/snippets/php/get-b2xuserflows-apiconnectorconfiguration-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-b2xuserflows-apiconnectorconfiguration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-b2xuserflows-apiconnectorconfiguration-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

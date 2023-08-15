@@ -2,7 +2,7 @@
 title: "Remove homeRealmDiscoveryPolicy"
 description: "Remove a homeRealmDiscoveryPolicy from a servicePrincipal."
 ms.localizationpriority: medium
-author: "hpsin"
+author: "nickludwig"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
@@ -88,6 +88,10 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/homeRealmDiscover
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-homerealmdiscoverypolicy-from-serviceprincipal-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-homerealmdiscoverypolicy-from-serviceprincipal-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
