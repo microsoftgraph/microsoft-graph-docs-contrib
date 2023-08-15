@@ -131,7 +131,7 @@ Alternatively:
 </mgt-msal2-provider>
 ```
 
-To call the custom api's you will need to request that API scope
+To call the custom APIs, request that API scope.
 
 ```HTML
 <mgt-get resource="https://myapi.com/v1.0/api" scopes="api://CUSTOM_API_GUID/SCOPE">
@@ -149,9 +149,9 @@ graphClient
 ...
 ```
 
-#### Use custom hosts to call different EntraID secured endpoints
+#### Use custom hosts to call different Entra ID-secured endpoints
 
-If you want to call your own custom EntraID secured endpoints you will need to pass those domains to the underlying Graph client
+If you want to call your own custom Entra ID secured endpoints, pass those domains to the underlying Microsoft Graph client.
 
 ```ts
 import {Providers, Msal2Provider} from '@microsoft/mgt'
