@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Send activity feed notifications to multiple users, in bulk. 
+Send activity feed notifications to multiple users, in bulk.
 
 For more details about sending notifications and the requirements for doing so, see
 [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
@@ -23,11 +23,13 @@ For more details about sending notifications and the requirements for doing so, 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | TeamsActivity.Send                          |
-| Delegated (personal Microsoft account) | Not Supported.                              |
-| Application                            | TeamsActivity.Send                          |
+| Permission type                        | Permissions (from least to most privileged)  |
+| :------------------------------------- | :------------------------------------------- |
+| Delegated (work or school account)     | TeamsActivity.Send                           |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            | TeamsActivity.Send, TeamsActivity.Send.User  |
+
+>**Note:** The `TeamsActivity.Send.User` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). RSC permissions pertain to the individual recipients in the payload.
 
 ## HTTP request
 
