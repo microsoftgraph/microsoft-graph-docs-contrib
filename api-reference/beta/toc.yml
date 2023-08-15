@@ -8700,13 +8700,6 @@ items:
                         href: api/intune-devices-userexperienceanalyticsdevicestartupprocessperformance-get.md
                   - name: User experience analytics device status
                     href: resources/intune-devices-userexperienceanalyticsdevicestatus.md
-                  - name: User experience analytics device timeline event
-                    href: resources/intune-devices-userexperienceanalyticsdevicetimelineevent.md
-                    items:
-                      - name: List
-                        href: api/intune-devices-userexperienceanalyticsdevicetimelineevent-list.md
-                      - name: Get
-                        href: api/intune-devices-userexperienceanalyticsdevicetimelineevent-get.md
                   - name: User experience analytics device without cloud identity
                     href: resources/intune-devices-userexperienceanalyticsdevicewithoutcloudidentity.md
                     items:
@@ -10858,6 +10851,8 @@ items:
                 href: api/educationassignmentdefaults-get.md
               - name: List categories
                 href: api/educationclass-list-categories.md
+              - name: List modules
+                href: api/educationclass-list-modules.md
               - name: Create category
                 href: api/educationclass-post-category.md
               - name: Get delta
@@ -10968,6 +10963,35 @@ items:
                 href: api/educationgradingcategory-update.md
               - name: Delete grading category
                 href: api/educationassignment-delete-gradingcategory.md
+          - name: Module
+            href: resources/educationmodule.md
+            items:
+            - name: Create module
+              href: api/educationclass-post-module.md
+            - name: Get module
+              href: api/educationmodule-get.md
+            - name: Update module
+              href: api/educationmodule-update.md
+            - name: Delete module
+              href: api/educationmodule-delete.md
+            - name: List module resources
+              href: api/educationmodule-list-resources.md
+            - name: Create module resource
+              href: api/educationmodule-post-resources.md
+            - name: Get module resource
+              href: api/educationmoduleresource-get.md
+            - name: Update module resource
+              href: api/educationmoduleresource-update.md
+            - name: Delete resource from module
+              href: api/educationmoduleresource-delete.md
+            - name: Publish module
+              href: api/educationmodule-publish.md
+            - name: Set up module resources folder
+              href: api/educationmodule-setupresourcesfolder.md
+            - name: Pin module
+              href: api/educationmodule-pin.md
+            - name: Unpin module
+              href: api/educationmodule-unpin.md
           - name: Rubric
             href: resources/educationrubric.md
             items:
@@ -10982,6 +11006,8 @@ items:
           - name: Submission
             href: resources/educationsubmission.md
             items:
+              - name: List submissions for assignment
+                href: api/educationassignment-list-submissions.md
               - name: List submission resources
                 href: api/educationsubmission-list-resources.md
               - name: Add submission resource
@@ -11799,8 +11825,6 @@ items:
               - name: Organization settings
                 href: resources/organizationSettings.md
                 items:
-                  - name: Get org settings
-                    href: api/organizationSettings-get.md
                   - name: App settings for Microsoft 365 data (preview)
                     items:
                       - name: App data access settings
@@ -11833,20 +11857,6 @@ items:
                         href: api/organizationsettings-list-peopleinsights.md
                       - name: Update
                         href: api/insightssettings-update.md
-                  - name: Profile card customization (preview)
-                    items:
-                      - name: Profile card property
-                        href: resources/profilecardproperty.md
-                      - name: List
-                        href: api/organizationsettings-list-profilecardproperties.md
-                      - name: Create
-                        href: api/organizationsettings-post-profilecardproperties.md
-                      - name: Get
-                        href: api/profilecardproperty-get.md
-                      - name: Update
-                        href: api/profilecardproperty-update.md
-                      - name: Delete
-                        href: api/profilecardproperty-delete.md
                   - name: Todo configuration (preview)
                     href: resources/admintodo.md
                     items:
@@ -11919,8 +11929,10 @@ items:
                       - name: Get manager
                         href: api/orgcontact-get-manager.md
               - name: People admin settings (preview)
-                href: resources/peopleAdminSettings.md
+                href: resources/peopleadminsettings.md
                 items:
+                  - name: Get
+                    href: api/peopleadminsettings-get.md
                   - name: Org control for pronouns settings (preview)
                     items:
                       - name: Pronouns settings
@@ -11929,6 +11941,20 @@ items:
                         href: api/peopleadminsettings-list-pronouns.md
                       - name: Update
                         href: api/pronounssettings-update.md
+                  - name: Profile card customization (preview)
+                    items:
+                      - name: Profile card property
+                        href: resources/profilecardproperty.md
+                      - name: List
+                        href: api/peopleadminsettings-list-profilecardproperties.md
+                      - name: Create
+                        href: api/peopleadminsettings-post-profilecardproperties.md
+                      - name: Get
+                        href: api/profilecardproperty-get.md
+                      - name: Update
+                        href: api/profilecardproperty-update.md
+                      - name: Delete
+                        href: api/profilecardproperty-delete.md
               - name: Role management
                 displayName: Unified RBAC
                 href: resources/rolemanagement.md
@@ -13433,8 +13459,10 @@ items:
               - name: Data policy operation
                 href: resources/datapolicyoperation.md
                 items:
-                  - name: Get data policy operation
+                  - name: Get
                     href: api/datapolicyoperation-get.md
+                  - name: Export personal data
+                    href: api/user-exportpersonaldata.md
               - name: Delegated permission grant
                 href: resources/oauth2permissiongrant.md
                 items:
@@ -14911,9 +14939,9 @@ items:
               - name: Profile card property
                 href: resources/profilecardproperty.md
               - name: List
-                href: api/organizationsettings-list-profilecardproperties.md
+                href: api/peopleadminsettings-list-profilecardproperties.md
               - name: Create
-                href: api/organizationsettings-post-profilecardproperties.md
+                href: api/peopleadminsettings-post-profilecardproperties.md
               - name: Get
                 href: api/profilecardproperty-get.md
               - name: Update
@@ -17144,9 +17172,18 @@ items:
                         items:
                           - name: List
                             href: api/attendancerecord-list.md
-                  - name: Call transcript (preview)
-                    href: resources/calltranscript.md
+                  - name: Call recording (preview)
                     items:
+                      - name: Call recording (preview)
+                        href: resources/callrecording.md
+                      - name: List
+                        href: api/onlinemeeting-list-recordings.md
+                      - name: Get
+                        href: api/callrecording-get.md                
+                  - name: Call transcript (preview)
+                    items:
+                      - name: Call transcript (preview)
+                        href: resources/calltranscript.md
                       - name: List
                         href: api/onlinemeeting-list-transcripts.md
                       - name: Get
@@ -17244,6 +17281,8 @@ items:
                   - name: Session
                     href: resources/virtualeventsession.md
                     items:
+                      - name: List
+                        href: api/virtualeventsession-list.md
                       - name: Get
                         href: api/virtualeventsession-get.md
                   - name: Registration

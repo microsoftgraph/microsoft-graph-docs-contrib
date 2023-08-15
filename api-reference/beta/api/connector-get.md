@@ -2,7 +2,7 @@
 title: "Get connector"
 description: "Retrieve the properties of a connector object."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
