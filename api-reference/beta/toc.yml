@@ -11141,7 +11141,7 @@ items:
                 href: api/driveitem-update.md
               - name: Delete item
                 href: api/driveitem-delete.md
-              - name: Permanently Delete item
+              - name: Permanently delete item
                 href: api/driveitem-permanentdelete.md
               - name: Restore item
                 href: api/driveitem-restore.md
