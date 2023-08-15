@@ -18,7 +18,7 @@ This article describes the simplified onboarding experience for Microsoft Graph 
 
 2. Create a new Azure AD app.
 
-3. Your global administrator authorizes the app in the [Data Connect app registration portal](https://aka.ms/mgdcinazure)—and specifies the data that is required for the application. For details, see [app registration](./app-registration.md).
+3. Register the app with Data Connect in the [Data Connect app registration portal](https://aka.ms/mgdcinazure)—and specify the data that is required for the application. For details, see [app registration](./app-registration.md).
 
 4. Your global administrator authorizes the app in the Data Connect app authorization portal. For details, see [app authorization](./app-authorization.md).
 
@@ -44,7 +44,7 @@ The onboarding experience to Microsoft Graph Data Connect now includes improved 
 
 ## Confirming your new tenant experience
 <!-- This date has a bit of a cyclic dependency... as soon as docs go out, we will roll this out... once this is signed off, we can decide the exact date and add it here and other places. -->
-If your tenant enabled Data Connect on the Microsoft 365 Admin Center after August 2023, your organization is successfully enrolled in the new onboarding experience. Confirm this by requesting someone in your company with a Global Reader or Global Administrator-assigned role to access the Data Connect admin authorization portal. 
+If your tenant enabled Data Connect on the Microsoft 365 Admin Center after August 2023, your organization is successfully enrolled in the new onboarding experience. Confirm this by requesting someone in your company with a Global Reader or Global Administrator-assigned role to access the Data Connect admin authorization portal.
 
 If you're able to access the experience and you don't see the following warning text, you don't need to take any further action: You are still using the legacy Privileged Access Management Microsoft Graph Data Connect consent experience. Please enable the new consent experience for MGDC enterprise apps.
 
