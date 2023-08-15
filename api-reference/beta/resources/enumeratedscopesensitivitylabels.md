@@ -13,7 +13,7 @@ Namespace: microsoft.graph.enumeratedScopeSensitivityLabels
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies that only specific sensitivity labels on a resource app in a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) are pre-approved for consent. It can also be used to specify a matching rule in a [permission grant condition set](permissiongrantconditionset.md) in a [permission grant policy](permissiongrantpolicy.md) to include or exclude a permission grant event. If the client application requests access to more resource scopes after the policy is created, the policy will still apply.
+Specifies that only specific sensitivity labels on a resource app in a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) are pre-approved for consent. It can also be used to specify condition sets that are included or excluded in a [permission grant policy](permissiongrantpolicy.md). If the client application requests access to more resource scopes after the policy is created, the policy will still apply.
 
 Inherits from [scopeSensitivityLabels](../resources/scopesensitivitylabels.md).
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the sensitivity labels for groups that are included in a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) or [permission grant condition set](permissiongrantconditionset.md) in a [permission grant policy](permissiongrantpolicy.md) to include or exclude a permission grant event. Since **chat** resources don't support sensitivity labels, do not use this type when the **scopeType** of [preApprovalDetail](../resources/preapprovaldetail.md) is `chat`. For more information about sensitivity labels, see [sensitivity labels](/microsoft-365/compliance/sensitivity-labels).
+Defines the sensitivity labels for groups that are included in a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md) or [permission grant condition set](permissiongrantconditionset.md) to specify the included or excluded in a [permission grant policy](permissiongrantpolicy.md). Since **chat** resources don't support sensitivity labels, use `all` when the **scopeType** of [preApprovalDetail](../resources/preapprovaldetail.md) is `chat`. For more information about sensitivity labels, see [sensitivity labels](/microsoft-365/compliance/sensitivity-labels).
 
 This is an abstract base type from which the following types are derived:
 * [allscopesensitivitylabels](allscopesensitivitylabels.md) indicates all sensitivity labels are pre-approved
