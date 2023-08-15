@@ -149,9 +149,9 @@ graphClient
 ...
 ```
 
-#### Use custom hosts to call different Entra ID-secured endpoints
+#### Use custom hosts to call different Azure AD-secured endpoints
 
-If you want to call your own custom Entra ID secured endpoints, pass those domains to the underlying Microsoft Graph client.
+If you want to call your own custom Azure AD secured endpoints, pass those domains to the underlying Microsoft Graph client.
 
 ```ts
 import {Providers, Msal2Provider} from '@microsoft/mgt'
