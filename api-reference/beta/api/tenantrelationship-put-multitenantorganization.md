@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Create a new multi-tenant organization. By default, the creator tenant becomes an owner tenant upon successful creation. Only owner tenants can manage a multi-tenant organization.
 
-To allow for asynchronous processing, you must wait a **minimum of 2 hours** before any subsequently added pending tenants can submit their join requests.
+To allow for asynchronous processing, you must wait a **minimum of 2 hours** between creation and joining a multi-tenant organization.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
