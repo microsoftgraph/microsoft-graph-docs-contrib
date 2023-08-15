@@ -65,12 +65,7 @@ GET /policies/permissionGrantPreApprovalPolicies
 
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.permissionGrantPreApprovalPolicy)"
-}
--->
+
 In the following example:
 Policy ID `71ba13dc-5947-4e59-bcc5-0ad5c339a853` has the following settings:
   - The condition for the `chat` resource type:
@@ -84,6 +79,13 @@ Policy ID `71ba13dc-5947-4e59-bcc5-0ad5c339a853` has the following settings:
   - The condition for the `group` resource type:
     - Indicates that all groups regardless of sensitivity labels are in scope 
     - Specifies that **all** application permissions for the `00000003-0000-0000-c000-000000000000` resource app are pre-approved
+      
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.permissionGrantPreApprovalPolicy)"
+}
+-->
 
 ``` http
 HTTP/1.1 200 OK
