@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # cloudPcReports: getRawRemoteConnectionReports
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -29,17 +30,20 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
+
 ``` http
 POST /deviceManagement/virtualEndpoint/reports/getRawRemoteConnectionReports
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the parameters.
 
 The following table shows the parameters that can be used with this action.
@@ -51,8 +55,6 @@ The following table shows the parameters that can be used with this action.
 |skip|Int32|Number of records to skip.|
 |top|Int32|The number of top records to return.|
 
-
-
 ## Response
 
 If successful, this action returns a `200 OK` response code and a Stream in the response body.
@@ -60,6 +62,7 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 
 # [HTTP](#tab/http)
@@ -83,6 +86,7 @@ Content-length: 199
 ---
 
 ### Response
+
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -91,6 +95,7 @@ The following is an example of the response
   "@odata.type": "Edm.Stream"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
