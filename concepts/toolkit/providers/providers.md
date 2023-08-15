@@ -73,9 +73,9 @@ Providers.globalProvider = new Msal2Provider({
 
 You can find the list of permission scopes required by each component in the **Microsoft Graph permissions** section of each component's documentation page.
 
-## Custom Hosts
+## Custom hosts
 
-You can specify custom hosts for graph client, allowing you to call those non-Graph EntraID secured apis. **Make sure you request the scope for the access token**
+You can specify custom hosts for the Microsoft Graph client. This allows you to call non-Microsoft Graph Entra ID-secured APIs. When you specify custom hosts, make sure that you request the scope for the access token.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
@@ -94,16 +94,17 @@ Providers.globalProvider = new Msal2Provider({
 });
 ```
 
-Note: these are host names, not Uris.
+>**Note:** these are host names, not URIs.
 
-To call the custom api's you will need to request that API scope
+To call the custom APIs, request that API scope.
 
 ```HTML
 <mgt-get resource="https://myapi.com/v1.0/api" scopes="api://CUSTOM_API_GUID/SCOPE">
   ...
 </mgt-get>
 ```
-or via Javascript/Typescript
+Or via Javascript/Typescript:
+
 ```ts
 import { prepScopes } from "@microsoft/mgt";
 
