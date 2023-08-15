@@ -2,7 +2,7 @@
 title: "List publishedResources"
 description: "Retrieve a list of publishedResource objects."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinrshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
