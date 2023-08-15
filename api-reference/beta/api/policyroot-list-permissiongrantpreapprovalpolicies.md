@@ -88,6 +88,7 @@ Policy ID `71ba13dc-5947-4e59-bcc5-0ad5c339a853` has the following settings:
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPreApprovalPolicies",
     "value": [
