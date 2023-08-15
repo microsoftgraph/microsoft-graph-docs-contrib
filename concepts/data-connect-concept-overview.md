@@ -9,11 +9,11 @@ ms.custom: scenarios:getting-started
 
 # Overview of Microsoft Graph Data Connect
 
-In a hybrid workplace, organizations must dynamically evolve by implementing a data-driven culture. Today's organizations have an incredible amount of business data across applications and services in Microsoft 365.
+In a hybrid workplace, organizations must develop a data-driven culture in order to dynamically evolve. Today's organizations have an incredible amount of business data across applications and services in Microsoft 365.
  
-While the potential this data holds is powerful, organizations must first unlock scale access to their Microsoft 365 data and streamline manual analytical processes to remain competitive.  We live in a world where your data is your competitive advantage. 
+The potential this data holds is powerful; however, to remain competitive, organizations must unlock access to their Microsoft 365 data and streamline their manual analytical processes.  Data is an organization's competitive advantage. 
 
-To access your Microsoft 365 data in the Microsoft Graph for enterprise analytics, you can use [Microsoft Graph Data Connect](https://developer.microsoft.com/graph), a secure, scalable solution that enables you to access relevant Microsoft 365 datasets incuded in Microsoft Fabric, Azure Synapse, and Azure Data Factory. 
+To access your Microsoft 365 data in the Microsoft Graph for enterprise analytics, you can use [Microsoft Graph Data Connect](https://developer.microsoft.com/graph), a secure, scalable solution that enables you to access relevant Microsoft 365 datasets in Microsoft Fabric, Azure Synapse, and Azure Data Factory. 
 
 Here are some of the enterprise analytics scenarios that are possible: 
 
