@@ -4,10 +4,10 @@
             "ChangeList": [
                 {
                     "Id": "931b4c70-9941-46b8-8afd-59138523c03e",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "notificationChannel",
-                    "ChangeType": "Change",
-                    "Description": "Change the [notificationChannel](https://learn.microsoft.com/graph/api/resources/devicemanagement-notificationchannel?view=graph-rest-beta) resource type.",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "receivers",
+                    "ChangeType": "Deletion",
+                    "Description": "Removed the `receivers` property from the [notificationChannel](https://learn.microsoft.com/en-us/graph/api/resources/deviceManagement-notificationChannel?view=graph-rest-beta) resource.",
                     "Target": "notificationChannel"
                 }
             ],
