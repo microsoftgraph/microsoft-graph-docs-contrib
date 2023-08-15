@@ -268,7 +268,6 @@ Content-Length: 9630
     "specificationVersion": "Specification Version value",
     "joinType": "azureADJoined",
     "skuFamily": "Sku Family value",
-    "securityPatchLevel": "Security Patch Level value",
     "skuNumber": 9,
     "managementFeatures": "microsoftManagedDesktop",
     "chromeOSDeviceInfo": [
