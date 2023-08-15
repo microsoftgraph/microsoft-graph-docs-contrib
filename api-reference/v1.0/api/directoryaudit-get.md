@@ -2,7 +2,7 @@
 title: "Get directoryAudit"
 description: "Describes the get method of the directoryAudit resource (entity) from the Microsoft Graph API."
 ms.localizationpriority: medium
-author: "SarahBar"
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
@@ -87,10 +87,6 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits/{id}
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-directoryaudit-1-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-directoryaudit-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

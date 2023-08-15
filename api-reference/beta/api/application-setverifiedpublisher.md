@@ -2,7 +2,7 @@
 title: "application: setVerifiedPublisher"
 description: "Set the verified publisher of an application."
 ms.localizationpriority: medium
-author: "jesakowi"
+author: "xurobertMSFT"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
@@ -43,7 +43,7 @@ POST /applications(appId='{appId}')/setVerifiedPublisher
 
 In the request body, provide the following required properties.
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 | verifiedPublisherId | string | The Microsoft Partner Network ID (MPNID) of the verified publisher to be set on the application, from the publisher's Partner Center account. |
 
@@ -91,6 +91,10 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/application-setverifiedpublisher-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/application-setverifiedpublisher-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

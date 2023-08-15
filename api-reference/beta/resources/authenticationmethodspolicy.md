@@ -1,7 +1,7 @@
 ---
 title: "authenticationMethodsPolicy resource type"
 description: "Defines authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA)."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

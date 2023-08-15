@@ -5645,7 +5645,7 @@ items:
                         href: api/accesspackageassignment-filterbycurrentuser.md
                       - name: Reprocess
                         href: api/accesspackageassignment-reprocess.md
-                  - name: Access package assignment request approval
+                  - name: Access package assignment approval
                     items:
                       - name: Approval
                         href: resources/approval.md
@@ -6000,6 +6000,8 @@ items:
                             href: api/policyroot-list-rolemanagementpolicies.md
                           - name: Get
                             href: api/unifiedrolemanagementpolicy-get.md
+                          - name: Update
+                            href: api/unifiedrolemanagementpolicy-update.md
                           - name: List rules
                             href: api/unifiedrolemanagementpolicy-list-rules.md
                           - name: Get rule
@@ -6125,18 +6127,6 @@ items:
                         href: api/emailauthenticationmethod-delete.md
                       - name: Add
                         href: api/authentication-post-emailmethods.md
-                  - name: Certificate-based auth configuration
-                    displayName: CBA
-                    href: resources/certificatebasedauthconfiguration.md
-                    items:
-                      - name: List
-                        href: api/certificatebasedauthconfiguration-list.md
-                      - name: Create
-                        href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
-                      - name: Get
-                        href: api/certificatebasedauthconfiguration-get.md
-                      - name: Delete
-                        href: api/certificatebasedauthconfiguration-delete.md
                   - name: Password
                     href: resources/passwordauthenticationmethod.md
                     items:
@@ -6202,6 +6192,18 @@ items:
                         href: api/authenticationstrengthroot-list-authenticationmethodmodes.md
                       - name: Get authentication method modes
                         href: api/authenticationmethodmodedetail-get.md
+              - name: Certificate-based auth configuration
+                displayName: CBA
+                href: resources/certificatebasedauthconfiguration.md
+                items:
+                  - name: List
+                    href: api/certificatebasedauthconfiguration-list.md
+                  - name: Create
+                    href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+                  - name: Get
+                    href: api/certificatebasedauthconfiguration-get.md
+                  - name: Delete
+                    href: api/certificatebasedauthconfiguration-delete.md
               - name: Conditional Access
                 items:
                   - name: Conditional Access
@@ -6331,8 +6333,10 @@ items:
               - name: Data policy operation
                 href: resources/datapolicyoperation.md
                 items:
-                  - name: Get data policy operation
+                  - name: Get
                     href: api/datapolicyoperation-get.md
+                  - name: Export personal data
+                    href: api/user-exportpersonaldata.md
               - name: Delegated permission grant
                 items:
                   - name: OAuth 2.0 permission grant
@@ -7649,40 +7653,6 @@ items:
                 items:
                   - name: Alert evidence
                     href: resources/security-alertevidence.md
-                  - name: Amazon resource evidence
-                    href: resources/security-amazonresourceevidence.md
-                  - name: Analyzed message evidence
-                    href: resources/security-analyzedmessageevidence.md
-                  - name: Azure resource evidence
-                    href: resources/security-azureresourceevidence.md
-                  - name: Cloud application evidence
-                    href: resources/security-cloudapplicationevidence.md
-                  - name: Device evidence
-                    href: resources/security-deviceevidence.md
-                  - name: File evidence
-                    href: resources/security-fileevidence.md
-                  - name: Google Cloud resource evidence
-                    href: resources/security-googlecloudresourceevidence.md
-                  - name: IP evidence
-                    href: resources/security-ipevidence.md
-                  - name: Mailbox evidence
-                    href: resources/security-mailboxevidence.md
-                  - name: Mail cluster evidence
-                    href: resources/security-mailclusterevidence.md
-                  - name: OAuth application evidence
-                    href: resources/security-oauthapplicationevidence.md
-                  - name: Process evidence
-                    href: resources/security-processevidence.md
-                  - name: Registry key evidence
-                    href: resources/security-registrykeyevidence.md
-                  - name: Registry value evidence
-                    href: resources/security-registryvalueevidence.md
-                  - name: Security group evidence
-                    href: resources/security-securitygroupevidence.md
-                  - name: URL evidence
-                    href: resources/security-urlevidence.md
-                  - name: User evidence
-                    href: resources/security-userevidence.md
               - name: Incident
                 items:
                   - name: Incident

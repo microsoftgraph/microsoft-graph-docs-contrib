@@ -1,7 +1,7 @@
 ---
 title: "organizationalBrandingLocalization resource type"
 description: "Contains details of the organization's branding localizations."
-author: "AlexanderMars"
+author: "quievey"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

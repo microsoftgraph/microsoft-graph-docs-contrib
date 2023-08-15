@@ -106,10 +106,6 @@ Content-length: 390
 [!INCLUDE [sample-code](../includes/snippets/php/intune-apps-enterprisecodesigningcertificate-create-create-enterprisecodesigningcertificate-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-apps-enterprisecodesigningcertificate-create-create-enterprisecodesigningcertificate-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-apps-enterprisecodesigningcertificate-create-create-enterprisecodesigningcertificate-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
