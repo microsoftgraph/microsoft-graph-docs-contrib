@@ -682,22 +682,24 @@ items:
             items:
               - name: Installed app
                 href: resources/teamsappinstallation.md
-              - name: List apps for user
-                href: api/userteamwork-list-installedapps.md
               - name: Add app for user
                 href: api/userteamwork-post-installedapps.md
-              - name: Get installed app for user
-                href: api/userteamwork-get-installedapps.md
-              - name: Upgrade installed app for user
-                href: api/userteamwork-teamsappinstallation-upgrade.md
-              - name: Remove app for user
-                href: api/userteamwork-delete-installedapps.md
               - name: Get chat between user and app
                 href: api/userscopeteamsappinstallation-get-chat.md
               - name: Get chat for user
                 href: api/chat-get.md
               - name: List chats for user
                 href: api/chat-list.md
+              - name: Get installed app for user
+                href: api/userteamwork-get-installedapps.md
+              - name: List apps for user
+                href: api/userteamwork-list-installedapps.md
+              - name: List permission grants for user (preview)
+                href: api/user-list-permissiongrants.md
+              - name: Remove app for user
+                href: api/userteamwork-delete-installedapps.md
+              - name: Upgrade installed app for user
+                href: api/userteamwork-teamsappinstallation-upgrade.md
           - name: To-do task
             items:
               - name: To-do task
@@ -16983,12 +16985,14 @@ items:
               - name: Resource-specific permission grant
                 href: resources/resourcespecificpermissiongrant.md
                 items:
-                  - name: List for team (preview)
-                    href: api/team-list-permissiongrants.md
-                  - name: List for group
-                    href: api/group-list-permissiongrants.md
                   - name: List for chat (preview)
                     href: api/chat-list-permissiongrants.md
+                  - name: List for group
+                    href: api/group-list-permissiongrants.md
+                  - name: List for team (preview)
+                    href: api/team-list-permissiongrants.md
+                  - name: List for user (preview)
+                    href: api/user-list-permissiongrants.md
               - name: Tab
                 href: resources/teamstab.md
                 items:
