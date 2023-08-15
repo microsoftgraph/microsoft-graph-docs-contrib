@@ -2,7 +2,7 @@
 title: "Update connectorGroups"
 description: "Update the properties of connectorgroup object."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---

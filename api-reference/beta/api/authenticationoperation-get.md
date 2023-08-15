@@ -2,7 +2,7 @@
 title: "Get authentication operation"
 description: "Retrieve the properties and relationships of an operation object."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "jpettere"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---

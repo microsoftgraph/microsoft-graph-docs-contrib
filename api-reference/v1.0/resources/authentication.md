@@ -1,7 +1,7 @@
 ---
 title: "authentication resource type"
 description: "Exposes relationships that represent the authentication methods supported by Azure AD and that can configured for users."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

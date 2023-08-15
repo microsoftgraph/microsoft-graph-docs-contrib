@@ -204,6 +204,8 @@ Content-type: application/json
 
 ---
 
+> **Note:** To add a guest account to the channel, for the **roles** property, use the value `guest`.
+
 #### Response
 
 The following is an example of the response.
@@ -278,7 +280,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-channel-for-migration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -464,6 +466,8 @@ Content-type: application/json
 
 ---
 
+>  **Note:** To add a guest account to the channel, for the **roles** property, use the value `guest`.
+
 #### Response
 
 The following is an example of the response.
@@ -547,7 +551,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-shared-channel-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -555,6 +559,8 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+>  **Note:** To add a guest account to the channel, for the **roles** property, use the value `guest`.
 
 #### Response
 

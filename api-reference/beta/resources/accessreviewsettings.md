@@ -2,7 +2,7 @@
 title: "accessReviewSettings resource type (deprecated)"
 description: "Provides additional settings when creating an access review."
 ms.localizationpriority: medium
-author: "markwahl-msft"
+author: "shubhamguptacal"
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

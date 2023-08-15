@@ -95,7 +95,6 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
