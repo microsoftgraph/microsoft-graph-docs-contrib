@@ -1,7 +1,7 @@
 ---
 title: "List federatedIdentityCredentials"
 description: "Get a list of the federatedIdentityCredential objects and their properties."
-author: "shahzad-khalid"
+author: "nickludwig"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType

@@ -2,7 +2,7 @@
 title: "Add accessReview reviewer (deprecated)"
 description: "In the Azure AD access reviews feature, update an existing accessReview object to add another user as a reviewer.  This operation is only permitted for an access review that is not yet completed, and only for an access review where the reviewers are explicitly specified. This operation is not permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers. "
 ms.localizationpriority: medium
-author: "jyothig123"
+author: "shubhamguptacal"
 ms.prod: "governance"
 doc_type: apiPageType
 ---
