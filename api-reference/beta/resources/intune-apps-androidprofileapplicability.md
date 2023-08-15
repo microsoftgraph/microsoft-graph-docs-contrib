@@ -20,6 +20,6 @@ Android profile applicability
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|default|0|Not yet documented|
-|androidWorkProfile|1|Not yet documented|
-|androidDeviceOwner|2|Not yet documented|
+|default|0||
+|androidWorkProfile|1||
+|androidDeviceOwner|2||

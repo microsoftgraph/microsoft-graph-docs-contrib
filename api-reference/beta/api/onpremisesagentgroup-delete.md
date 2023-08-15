@@ -2,7 +2,7 @@
 title: "Delete onPremisesAgentGroup"
 description: "Delete an **onPremisesAgentGroup** object."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinrshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
