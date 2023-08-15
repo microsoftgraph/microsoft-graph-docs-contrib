@@ -151,6 +151,8 @@ This resource supports:
 |[Remove app for user](../api/userteamwork-delete-installedapps.md) | None | Removes (uninstalls) an app in the personal scope of a user.|
 |[Upgrade app installed for user](../api/userteamwork-teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app installed in the personal scope of a user.|
 |[Get chat between user and app](../api/userscopeteamsappinstallation-get-chat.md)| [Chat](chat.md)| Lists one-on-one chat between the user and the app. |
+|[Get chat between user and app](../api/userscopeteamsappinstallation-get-chat.md)| [Chat](chat.md)| Lists one-on-one chat between the user and the app. |
+|[List permission grants](../api/user-list-permissiongrants.md)| [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection| List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) of a [user](../resources/user.md). |
 | **To-do tasks** |||
 |[Create task](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Create a [todoTask](todotask.md) in the specified task list.|
 |[Create task list](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Create a To Do task list in the user's mailbox. |
@@ -352,6 +354,7 @@ For example: Cameron is administrator of a directory for an elementary school in
 |ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Read-only. Nullable. Supports `$expand` and `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`).|
 |pendingAccessReviewInstances|[accessReviewInstance](accessreviewinstance.md) collection| Navigation property to get list of access reviews pending approval by reviewer. |
 |people|[person](person.md) collection| Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.|
+|permissionGrants|[resourceSpecificPermissionGrant](../resources/resourcespecificpermissiongrant.md) collection| List all resource-specific permission grants of a user. |
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
 |photos|[photo](photo.md) collection| Read-only. Nullable.|
 |planner|[plannerUser](planneruser.md)| Selective Planner services available to the user. Read-only. Nullable. |
