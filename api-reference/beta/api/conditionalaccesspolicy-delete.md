@@ -2,7 +2,7 @@
 title: "Delete conditionalAccessPolicy"
 description: "Delete a conditionalAccessPolicy."
 ms.localizationpriority: medium
-author: "davidspooner"
+author: "lisaychuang"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
