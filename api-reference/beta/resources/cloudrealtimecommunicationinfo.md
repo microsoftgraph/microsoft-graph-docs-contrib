@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Group of properties that relate to Microsoft realtime communication information related to a user.
+Represents a group of properties that relate to Microsoft real-time communication information for a user.
 
 ## Properties
 
 | Property                    | Type     | Description                                                                                      |
 | --------------------------- | -------- | ------------------------------------------------------------------------------------------------ |
-| isSipEnabled                | Boolean  | Indicates if  the user has a SIP enabled client registered for them. Read-only.                  |
+| isSipEnabled                | Boolean  | Indicates whether the user has a SIP-enabled client registered for them. Read-only.              |
 
 ## JSON representation
 The following is a JSON representation of the resource.
