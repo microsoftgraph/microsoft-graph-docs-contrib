@@ -14297,6 +14297,40 @@
       "CreatedDateTime": "2023-08-14T00:00:00.6681791Z",
       "WorkloadArea": "Users",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "caa9fb73-da66-4a9e-8ad8-b6aeb478195c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudRealtimeCommunicationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudRealtimeCommunicationInfo](https://learn.microsoft.com/en-us/graph/api/resources/cloudRealtimeCommunicationInfo?view=graph-rest-beta) resource type.",
+          "Target": "cloudRealtimeCommunicationInfo"
+        },
+        {
+          "Id": "caa9fb73-da66-4a9e-8ad8-b6aeb478195c",
+          "ApiChange": "Property",
+          "ChangedApiName": "isSipEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isSipEnabled** property to the [cloudRealtimeCommunicationInfo](https://learn.microsoft.com/en-us/graph/api/resources/cloudRealtimeCommunicationInfo?view=graph-rest-beta) resource.",
+          "Target": "cloudRealtimeCommunicationInfo"
+        },
+        {
+          "Id": "caa9fb73-da66-4a9e-8ad8-b6aeb478195c",
+          "ApiChange": "Property",
+          "ChangedApiName": "cloudRealtimeCommunicationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudRealtimeCommunicationInfo** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "caa9fb73-da66-4a9e-8ad8-b6aeb478195c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-14T17:29:23.027316Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }

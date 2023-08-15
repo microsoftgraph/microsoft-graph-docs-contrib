@@ -184,6 +184,7 @@ This resource supports:
 | birthday | DateTimeOffset | The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z` <br><br>Returned only on `$select`. |
 | businessPhones | String collection | The telephone numbers for the user. Only one number can be set for this property. <br><br>Read-only for users synced from on-premises directory. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 | city | String | The city in which the user is located. Maximum length is 128 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
+| cloudRealtimeCommunicationInfo | [cloudRealtimeCommunicationInfo](cloudrealtimecommunicationinfo.md) | Microsoft realtime communication information related to the user. <br> Supports `$filter` (`eq`, `ne`,`not`).|
 | companyName | String | The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length is 64 characters.<br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | Sets whether consent has been obtained for minors. Allowed values: `null`, `Granted`, `Denied` and `NotRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. <br><br>Supports `$filter` (`eq`, `ne`, `not`, and `in`).|
 | country | String | The country/region in which the user is located; for example, `US` or `UK`. Maximum length is 128 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
@@ -423,6 +424,9 @@ Here is a JSON representation of the resource
   "birthday": "String (timestamp)",
   "businessPhones": ["String"],
   "city": "String",
+  "cloudRealtimeCommunicationInfo": {
+    "@odata.type": "microsoft.graph.cloudRealtimeCommunicationInfo"
+  },
   "companyName": "String",
   "consentProvidedForMinor": "String",
   "country": "String",
