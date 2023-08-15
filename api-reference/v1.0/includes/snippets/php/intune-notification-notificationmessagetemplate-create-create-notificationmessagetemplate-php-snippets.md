@@ -7,18 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new NotificationMessageTemplate();
-$requestBody->set@odatatype('#microsoft.graph.notificationMessageTemplate');
+$requestBody->setOdataType('#microsoft.graph.notificationMessageTemplate');
 
 $requestBody->setDisplayName('Display Name value');
 
 $requestBody->setDefaultLocale('Default Locale value');
 
-$requestBody->setBrandingOptions(new NotificationTemplateBrandingOptions('includecompanylogo'));
+$requestBody->setBrandingOptions(new NotificationTemplateBrandingOptions('includeCompanyLogo'));
 
-$requestBody->setRoleScopeTagIds(['Role Scope Tag Ids value', ]);
+$requestBody->setRoleScopeTagIds(['Role Scope Tag Ids value', 	]);
 
 
 

@@ -32,35 +32,35 @@ Authorization: Bearer {Token}
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-synchronization-with-extensions-get-serviceprincipals-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-synchronization-with-extensions-get-serviceprincipals-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/tutorial-configure-synchronization-with-extensions-get-serviceprincipals-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-synchronization-with-extensions-get-serviceprincipals-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-synchronization-with-extensions-get-serviceprincipals-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-synchronization-with-extensions-get-serviceprincipals-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-synchronization-with-extensions-get-serviceprincipals-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-synchronization-with-extensions-get-serviceprincipals-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-synchronization-with-extensions-get-serviceprincipals-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-synchronization-with-extensions-get-serviceprincipals-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-synchronization-with-extensions-get-serviceprincipals-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-synchronization-with-extensions-get-serviceprincipals-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-synchronization-with-extensions-get-serviceprincipals-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-synchronization-with-extensions-get-serviceprincipals-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/tutorial-configure-synchronization-with-extensions-get-serviceprincipals-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-synchronization-with-extensions-get-serviceprincipals-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -111,35 +111,35 @@ Authorization: Bearer {Token}
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-synchronization-with-extensions-get-synchronization-jobs-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-synchronization-with-extensions-get-synchronization-jobs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/tutorial-configure-synchronization-with-extensions-get-synchronization-jobs-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-synchronization-with-extensions-get-synchronization-jobs-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-synchronization-with-extensions-get-synchronization-jobs-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-synchronization-with-extensions-get-synchronization-jobs-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-synchronization-with-extensions-get-synchronization-jobs-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-synchronization-with-extensions-get-synchronization-jobs-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-synchronization-with-extensions-get-synchronization-jobs-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-synchronization-with-extensions-get-synchronization-jobs-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-synchronization-with-extensions-get-synchronization-jobs-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-synchronization-with-extensions-get-synchronization-jobs-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-synchronization-with-extensions-get-synchronization-jobs-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-synchronization-with-extensions-get-synchronization-jobs-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/tutorial-configure-synchronization-with-extensions-get-synchronization-jobs-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-synchronization-with-extensions-get-synchronization-jobs-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -187,35 +187,35 @@ Authorization: Bearer {Token}
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/tutorial-configure-synchronization-with-extensions-get-synchronizationschema-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/tutorial-configure-synchronization-with-extensions-get-synchronizationschema-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/tutorial-configure-synchronization-with-extensions-get-synchronizationschema-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/tutorial-configure-synchronization-with-extensions-get-synchronizationschema-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/tutorial-configure-synchronization-with-extensions-get-synchronizationschema-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/tutorial-configure-synchronization-with-extensions-get-synchronizationschema-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/tutorial-configure-synchronization-with-extensions-get-synchronizationschema-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/v1/tutorial-configure-synchronization-with-extensions-get-synchronizationschema-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/tutorial-configure-synchronization-with-extensions-get-synchronizationschema-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/tutorial-configure-synchronization-with-extensions-get-synchronizationschema-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/tutorial-configure-synchronization-with-extensions-get-synchronizationschema-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/tutorial-configure-synchronization-with-extensions-get-synchronizationschema-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/tutorial-configure-synchronization-with-extensions-get-synchronizationschema-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-configure-synchronization-with-extensions-get-synchronizationschema-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/tutorial-configure-synchronization-with-extensions-get-synchronizationschema-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/tutorial-configure-synchronization-with-extensions-get-synchronizationschema-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

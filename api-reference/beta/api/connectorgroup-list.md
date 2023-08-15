@@ -2,7 +2,7 @@
 title: "List connectorGroups"
 description: "Retrieve a list of connectorgroup objects."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---

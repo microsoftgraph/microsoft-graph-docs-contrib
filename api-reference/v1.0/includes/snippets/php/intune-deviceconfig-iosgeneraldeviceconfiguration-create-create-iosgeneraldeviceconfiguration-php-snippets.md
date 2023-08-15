@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new IosGeneralDeviceConfiguration();
-$requestBody->set@odatatype('#microsoft.graph.iosGeneralDeviceConfiguration');
+$requestBody->setOdataType('#microsoft.graph.iosGeneralDeviceConfiguration');
 
 $requestBody->setDescription('Description value');
 
@@ -35,7 +35,7 @@ $requestBody->setAppleWatchForceWristDetection(true);
 $requestBody->setAppleNewsBlocked(true);
 
 $appsSingleAppModeListAppListItem1 = new AppListItem();
-$appsSingleAppModeListAppListItem1->set@odatatype('microsoft.graph.appListItem');
+$appsSingleAppModeListAppListItem1->setOdataType('microsoft.graph.appListItem');
 
 $appsSingleAppModeListAppListItem1->setName('Name value');
 
@@ -51,7 +51,7 @@ $requestBody->setAppsSingleAppModeList($appsSingleAppModeListArray);
 
 
 $appsVisibilityListAppListItem1 = new AppListItem();
-$appsVisibilityListAppListItem1->set@odatatype('microsoft.graph.appListItem');
+$appsVisibilityListAppListItem1->setOdataType('microsoft.graph.appListItem');
 
 $appsVisibilityListAppListItem1->setName('Name value');
 
@@ -66,7 +66,7 @@ $appsVisibilityListArray []= $appsVisibilityListAppListItem1;
 $requestBody->setAppsVisibilityList($appsVisibilityListArray);
 
 
-$requestBody->setAppsVisibilityListType(new AppListType('appsinlistcompliant'));
+$requestBody->setAppsVisibilityListType(new AppListType('appsInListCompliant'));
 
 $requestBody->setAppStoreBlockAutomaticDownloads(true);
 
@@ -99,7 +99,7 @@ $requestBody->setClassroomAppBlockRemoteScreenObservation(true);
 $requestBody->setClassroomAppForceUnpromptedScreenObservation(true);
 
 $compliantAppsListAppListItem1 = new AppListItem();
-$compliantAppsListAppListItem1->set@odatatype('microsoft.graph.appListItem');
+$compliantAppsListAppListItem1->setOdataType('microsoft.graph.appListItem');
 
 $compliantAppsListAppListItem1->setName('Name value');
 
@@ -114,7 +114,7 @@ $compliantAppsListArray []= $compliantAppsListAppListItem1;
 $requestBody->setCompliantAppsList($compliantAppsListArray);
 
 
-$requestBody->setCompliantAppListType(new AppListType('appsinlistcompliant'));
+$requestBody->setCompliantAppListType(new AppListType('appsInListCompliant'));
 
 $requestBody->setConfigurationProfileBlockChanges(true);
 
@@ -235,91 +235,91 @@ $requestBody->setLockScreenBlockPassbook(true);
 $requestBody->setLockScreenBlockTodayView(true);
 
 $mediaContentRatingAustralia = new MediaContentRatingAustralia();
-$mediaContentRatingAustralia->set@odatatype('microsoft.graph.mediaContentRatingAustralia');
+$mediaContentRatingAustralia->setOdataType('microsoft.graph.mediaContentRatingAustralia');
 
-$mediaContentRatingAustralia->setMovieRating(new RatingAustraliaMoviesType('allblocked'));
+$mediaContentRatingAustralia->setMovieRating(new RatingAustraliaMoviesType('allBlocked'));
 
-$mediaContentRatingAustralia->setTvRating(new RatingAustraliaTelevisionType('allblocked'));
+$mediaContentRatingAustralia->setTvRating(new RatingAustraliaTelevisionType('allBlocked'));
 
 
 $requestBody->setMediaContentRatingAustralia($mediaContentRatingAustralia);
 $mediaContentRatingCanada = new MediaContentRatingCanada();
-$mediaContentRatingCanada->set@odatatype('microsoft.graph.mediaContentRatingCanada');
+$mediaContentRatingCanada->setOdataType('microsoft.graph.mediaContentRatingCanada');
 
-$mediaContentRatingCanada->setMovieRating(new RatingCanadaMoviesType('allblocked'));
+$mediaContentRatingCanada->setMovieRating(new RatingCanadaMoviesType('allBlocked'));
 
-$mediaContentRatingCanada->setTvRating(new RatingCanadaTelevisionType('allblocked'));
+$mediaContentRatingCanada->setTvRating(new RatingCanadaTelevisionType('allBlocked'));
 
 
 $requestBody->setMediaContentRatingCanada($mediaContentRatingCanada);
 $mediaContentRatingFrance = new MediaContentRatingFrance();
-$mediaContentRatingFrance->set@odatatype('microsoft.graph.mediaContentRatingFrance');
+$mediaContentRatingFrance->setOdataType('microsoft.graph.mediaContentRatingFrance');
 
-$mediaContentRatingFrance->setMovieRating(new RatingFranceMoviesType('allblocked'));
+$mediaContentRatingFrance->setMovieRating(new RatingFranceMoviesType('allBlocked'));
 
-$mediaContentRatingFrance->setTvRating(new RatingFranceTelevisionType('allblocked'));
+$mediaContentRatingFrance->setTvRating(new RatingFranceTelevisionType('allBlocked'));
 
 
 $requestBody->setMediaContentRatingFrance($mediaContentRatingFrance);
 $mediaContentRatingGermany = new MediaContentRatingGermany();
-$mediaContentRatingGermany->set@odatatype('microsoft.graph.mediaContentRatingGermany');
+$mediaContentRatingGermany->setOdataType('microsoft.graph.mediaContentRatingGermany');
 
-$mediaContentRatingGermany->setMovieRating(new RatingGermanyMoviesType('allblocked'));
+$mediaContentRatingGermany->setMovieRating(new RatingGermanyMoviesType('allBlocked'));
 
-$mediaContentRatingGermany->setTvRating(new RatingGermanyTelevisionType('allblocked'));
+$mediaContentRatingGermany->setTvRating(new RatingGermanyTelevisionType('allBlocked'));
 
 
 $requestBody->setMediaContentRatingGermany($mediaContentRatingGermany);
 $mediaContentRatingIreland = new MediaContentRatingIreland();
-$mediaContentRatingIreland->set@odatatype('microsoft.graph.mediaContentRatingIreland');
+$mediaContentRatingIreland->setOdataType('microsoft.graph.mediaContentRatingIreland');
 
-$mediaContentRatingIreland->setMovieRating(new RatingIrelandMoviesType('allblocked'));
+$mediaContentRatingIreland->setMovieRating(new RatingIrelandMoviesType('allBlocked'));
 
-$mediaContentRatingIreland->setTvRating(new RatingIrelandTelevisionType('allblocked'));
+$mediaContentRatingIreland->setTvRating(new RatingIrelandTelevisionType('allBlocked'));
 
 
 $requestBody->setMediaContentRatingIreland($mediaContentRatingIreland);
 $mediaContentRatingJapan = new MediaContentRatingJapan();
-$mediaContentRatingJapan->set@odatatype('microsoft.graph.mediaContentRatingJapan');
+$mediaContentRatingJapan->setOdataType('microsoft.graph.mediaContentRatingJapan');
 
-$mediaContentRatingJapan->setMovieRating(new RatingJapanMoviesType('allblocked'));
+$mediaContentRatingJapan->setMovieRating(new RatingJapanMoviesType('allBlocked'));
 
-$mediaContentRatingJapan->setTvRating(new RatingJapanTelevisionType('allblocked'));
+$mediaContentRatingJapan->setTvRating(new RatingJapanTelevisionType('allBlocked'));
 
 
 $requestBody->setMediaContentRatingJapan($mediaContentRatingJapan);
 $mediaContentRatingNewZealand = new MediaContentRatingNewZealand();
-$mediaContentRatingNewZealand->set@odatatype('microsoft.graph.mediaContentRatingNewZealand');
+$mediaContentRatingNewZealand->setOdataType('microsoft.graph.mediaContentRatingNewZealand');
 
-$mediaContentRatingNewZealand->setMovieRating(new RatingNewZealandMoviesType('allblocked'));
+$mediaContentRatingNewZealand->setMovieRating(new RatingNewZealandMoviesType('allBlocked'));
 
-$mediaContentRatingNewZealand->setTvRating(new RatingNewZealandTelevisionType('allblocked'));
+$mediaContentRatingNewZealand->setTvRating(new RatingNewZealandTelevisionType('allBlocked'));
 
 
 $requestBody->setMediaContentRatingNewZealand($mediaContentRatingNewZealand);
 $mediaContentRatingUnitedKingdom = new MediaContentRatingUnitedKingdom();
-$mediaContentRatingUnitedKingdom->set@odatatype('microsoft.graph.mediaContentRatingUnitedKingdom');
+$mediaContentRatingUnitedKingdom->setOdataType('microsoft.graph.mediaContentRatingUnitedKingdom');
 
-$mediaContentRatingUnitedKingdom->setMovieRating(new RatingUnitedKingdomMoviesType('allblocked'));
+$mediaContentRatingUnitedKingdom->setMovieRating(new RatingUnitedKingdomMoviesType('allBlocked'));
 
-$mediaContentRatingUnitedKingdom->setTvRating(new RatingUnitedKingdomTelevisionType('allblocked'));
+$mediaContentRatingUnitedKingdom->setTvRating(new RatingUnitedKingdomTelevisionType('allBlocked'));
 
 
 $requestBody->setMediaContentRatingUnitedKingdom($mediaContentRatingUnitedKingdom);
 $mediaContentRatingUnitedStates = new MediaContentRatingUnitedStates();
-$mediaContentRatingUnitedStates->set@odatatype('microsoft.graph.mediaContentRatingUnitedStates');
+$mediaContentRatingUnitedStates->setOdataType('microsoft.graph.mediaContentRatingUnitedStates');
 
-$mediaContentRatingUnitedStates->setMovieRating(new RatingUnitedStatesMoviesType('allblocked'));
+$mediaContentRatingUnitedStates->setMovieRating(new RatingUnitedStatesMoviesType('allBlocked'));
 
-$mediaContentRatingUnitedStates->setTvRating(new RatingUnitedStatesTelevisionType('allblocked'));
+$mediaContentRatingUnitedStates->setTvRating(new RatingUnitedStatesTelevisionType('allBlocked'));
 
 
 $requestBody->setMediaContentRatingUnitedStates($mediaContentRatingUnitedStates);
 $networkUsageRulesIosNetworkUsageRule1 = new IosNetworkUsageRule();
-$networkUsageRulesIosNetworkUsageRule1->set@odatatype('microsoft.graph.iosNetworkUsageRule');
+$networkUsageRulesIosNetworkUsageRule1->setOdataType('microsoft.graph.iosNetworkUsageRule');
 
 $managedAppsAppListItem1 = new AppListItem();
-$managedAppsAppListItem1->set@odatatype('microsoft.graph.appListItem');
+$managedAppsAppListItem1->setOdataType('microsoft.graph.appListItem');
 
 $managedAppsAppListItem1->setName('Name value');
 
@@ -343,7 +343,7 @@ $networkUsageRulesArray []= $networkUsageRulesIosNetworkUsageRule1;
 $requestBody->setNetworkUsageRules($networkUsageRulesArray);
 
 
-$requestBody->setMediaContentRatingApps(new RatingAppsType('allblocked'));
+$requestBody->setMediaContentRatingApps(new RatingAppsType('allBlocked'));
 
 $requestBody->setMessagesBlocked(true);
 
@@ -385,7 +385,7 @@ $requestBody->setSafariBlockPopups(true);
 
 $requestBody->setSafariBlocked(true);
 
-$requestBody->setSafariCookieSettings(new WebBrowserCookieSettings('blockalways'));
+$requestBody->setSafariCookieSettings(new WebBrowserCookieSettings('blockAlways'));
 
 $requestBody->setSafariManagedDomains(['Safari Managed Domains value', ]);
 

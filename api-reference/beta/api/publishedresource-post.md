@@ -2,7 +2,7 @@
 title: "Create publishedResource"
 description: "Create a new **publishedResource** object."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---

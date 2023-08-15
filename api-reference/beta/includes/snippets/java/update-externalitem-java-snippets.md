@@ -17,6 +17,6 @@ externalItem.acl = aclList;
 
 graphClient.external().connections("contosohr").items("TSP228082938")
 	.buildRequest()
-	.patch(externalItem);
+	.put(externalItem);
 
 ```

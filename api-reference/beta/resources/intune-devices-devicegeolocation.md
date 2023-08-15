@@ -20,7 +20,6 @@ Device location
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|lastCollectedDateTimeUtc|DateTimeOffset|Time at which location was recorded, relative to UTC|
 |lastCollectedDateTime|DateTimeOffset|Time at which location was recorded, relative to UTC|
 |longitude|Double|Longitude coordinate of the device's location|
 |latitude|Double|Latitude coordinate of the device's location|
@@ -43,7 +42,6 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.deviceGeoLocation",
-  "lastCollectedDateTimeUtc": "String (timestamp)",
   "lastCollectedDateTime": "String (timestamp)",
   "longitude": "4.2",
   "latitude": "4.2",

@@ -2,7 +2,7 @@
 title: "Create connectorGroup"
 description: "Use this API to create a new connectorGroup."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---

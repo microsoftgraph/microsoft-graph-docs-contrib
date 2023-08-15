@@ -7,16 +7,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new MobileAppCategory();
-$requestBody->set@odatatype('#microsoft.graph.mobileAppCategory');
+$requestBody->setOdataType('#microsoft.graph.mobileAppCategory');
 
 $requestBody->setDisplayName('Display Name value');
 
 
 
-$result = $graphServiceClient->deviceAppManagement()->mobileAppCategories()->byMobileAppCategorieId('mobileAppCategory-id')->patch($requestBody);
+$result = $graphServiceClient->deviceAppManagement()->mobileAppCategories()->byMobileAppCategoryId('mobileAppCategory-id')->patch($requestBody);
 
 
 ```

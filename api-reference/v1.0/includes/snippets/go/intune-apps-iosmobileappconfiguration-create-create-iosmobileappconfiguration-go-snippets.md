@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewManagedDeviceMobileAppConfiguration()
@@ -43,7 +43,7 @@ settings := []graphmodels.AppConfigurationSettingItemable {
 }
 requestBody.SetSettings(settings)
 
-result, err := graphClient.DeviceAppManagement().MobileAppConfigurations().Post(context.Background(), requestBody, nil)
+mobileAppConfigurations, err := graphClient.DeviceAppManagement().MobileAppConfigurations().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewTermsAndConditions()
@@ -29,7 +29,7 @@ requestBody.SetAcceptanceStatement(&acceptanceStatement)
 version := int32(7)
 requestBody.SetVersion(&version) 
 
-result, err := graphClient.DeviceManagement().TermsAndConditions().Post(context.Background(), requestBody, nil)
+termsAndConditions, err := graphClient.DeviceManagement().TermsAndConditions().Post(context.Background(), requestBody, nil)
 
 
 ```
