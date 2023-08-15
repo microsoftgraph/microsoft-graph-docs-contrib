@@ -46,7 +46,7 @@ You can specify the following properties when creating a **delegatedAdminRelatio
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|delegatedAdminRelationshipRequestAction|The action to be performed on the delegated admin relationship. Required. The possible values are: `lockForApproval`, `approve`, `terminate`, `reject`. All Partners to finalize a relationship in the "created" status, set the action to "lockForApproval". All Partners to terminate a relationship in the "active" status, set the action to "terminate". Indirect Reseller to approve relationship created by Indirect Provider in the "approvalPending" status, set the action to "approve". Indirect Reseller to reject relationship created by Indirect provider in the "approvalPending" status, set the action to "reject".|
+|action|delegatedAdminRelationshipRequestAction|The action to be performed on the delegated admin relationship. Required. The possible values are: `lockForApproval`, `approve`, `terminate`, `reject`, `unknownFutureValue`. For a partner to finalize a relationship in the `created` **status**, set the **action** to `lockForApproval`. For a partner to terminate a relationship in the `active` **status**, set the **action** to `terminate`. For an indirect reseller to approve a relationship created by an indirect provider in the `approvalPending` **status**, set the **action** to `approve`. For an indirect reseller to reject a relationship created by an indirect provider in the `approvalPending` **status**, set the **action** to `reject`.|
 
 ## Response
 
