@@ -47,7 +47,7 @@ Here is a JSON representation of a **microsoft.graph.recycleBinItem** resource.
 
 | Method                         | Example Request
 |:-------------------------------|:--------------------------------------------
-| [List recycleBin items](../api/recycleBinItems_list.md)     | GET /recycleBin/items
+| [List recycleBin items](../api/recyclebin-list-items.md)     | GET /recycleBin/items
 
 
 
