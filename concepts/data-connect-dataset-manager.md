@@ -30,6 +30,7 @@ The Manager_v0 dataset can be joined with the DirectReport_v0 dataset.
 
 ## Schema
 
+
 | Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | accountEnabled |	boolean |	True if the account is enabled; otherwise, false. |	No |	None |
@@ -45,7 +46,7 @@ The Manager_v0 dataset can be joined with the DirectReport_v0 dataset.
 | department |	string |	The name for the department in which the manager works. |	No |	None |
 | displayName |	string |	The name displayed in the address book for the manager. This is usually a  combination of the manager's first name, middle initial and last name. |	No |	None |
 | givenName |	string |	The given name (first name) of the manager. |	No |	None |
-| id |	string |	The unique identifier for the manager. Inherited from directoryObject. |	No |	None |
+| id |	string |	The unique identifier for the manager. Inherited from 'directoryObject'. |	No |	None |
 | imAddresses |	string |	The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the manager. `*Format:* ARRAY<STRING>.` |	No |	None |
 | jobTitle |	string |	The manager’s job title. |	No |	None |
 | legalAgeGroupClassification |	string |	Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties. *Allowed values:* null, minorWithOutParentalConsent, minorWithParentalConsent, minorNoParentalConsentRequired, notAdult and adult. |	No |	None |
@@ -70,6 +71,7 @@ The Manager_v0 dataset can be joined with the DirectReport_v0 dataset.
 | userType |	string |	A string value that can be used to classify user types in your directory, such as "Member" and "Guest". |	No |	None |
 | puser |	string | User id. |	No |  None |
 | ptenant |	string |  Tenant id. |	No |  None |
+
 
 ## JSON representation
 
