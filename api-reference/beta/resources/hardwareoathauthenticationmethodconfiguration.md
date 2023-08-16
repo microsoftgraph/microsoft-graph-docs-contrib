@@ -1,7 +1,7 @@
 ---
 title: "hardwareOathAuthenticationMethodConfiguration resource type"
 description: "Represents a Hardware OATH authentication methods policy."
-author: "jpettere"
+author: "luc-msft"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
