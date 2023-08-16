@@ -1,7 +1,7 @@
 ---
 title: "List settings"
 description: "Retrieve a list of directory setting objects."
-author: "adimitui"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

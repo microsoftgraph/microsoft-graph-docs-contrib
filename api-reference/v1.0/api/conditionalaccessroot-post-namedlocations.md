@@ -2,7 +2,7 @@
 title: "Create namedLocation"
 description: "Create a new namedLocation."
 ms.localizationpriority: medium
-author: "davidspooner"
+author: "lisaychuang"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
