@@ -31,9 +31,8 @@ The Manager_v0 dataset can be joined with the DirectReport_v0 dataset.
 ## Schema
 
 
-|  Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
+| Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
 | ----------- | ----------- | ----------- | ----------- | ----------- |
-
 | accountEnabled |	boolean |	True if the account is enabled; otherwise, false. |	No |	None |
 | ageGroup |	string |	Sets the age group of the user. *Allowed values:* null, minor, notAdult and adult. |	No |	None |
 | assignedLicenses |	string |	The licenses that are assigned to the manager. `*Format:* ARRAY<STRUCT<`disabledPlans`:ARRAY<STRING>, `skuId`:STRING>>.` |	No |	None |
@@ -59,7 +58,7 @@ The Manager_v0 dataset can be joined with the DirectReport_v0 dataset.
 | onPremisesLastSyncDateTime |	datetime |	Indicates the last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would be: '2014-01-001T00:00:00Z'. |	No |	None |
 | onPremisesSecurityIdentifier |	string |	Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. |	No	| None |
 | onPremisesSyncEnabled |	boolean |	True if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory, but is no longer synced; null if this object has never been synced from an on-premises directory (default). |	No |	None |
-| passwordPolicies |	string |	Specifies password policies for the manager. This value is an enumeration with one possible value being "DisableStrongPassword", allowing weaker passwords than the default policy to be specified. "DisablePasswordExpiration" can also be specified. The two may be specified together. |	No |	None |
+| passwordPolicies |	string |	Specifies password policies for the manager. This value is an enumeration with one possible value being 'DisableStrongPassword', allowing weaker passwords than the default policy to be specified. "DisablePasswordExpiration" can also be specified. The two may be specified together. |	No |	None |
 | postalCode |	string |	The postal code for the manager's postal address. The postal code is specific to the manager's country/region. In the United States of America, this attribute contains the ZIP code. |	No |	None |
 | preferredLanguage |	string |	The preferred language for the manager. Should follow ISO 639-1 code; for example "en-US". |	No |	None |
 | provisionedPlans |	string |	The plans that are provisioned for the manager. Read-only. Not nullable.  |	No |	None |
