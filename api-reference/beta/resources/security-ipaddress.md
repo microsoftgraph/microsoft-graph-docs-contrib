@@ -55,7 +55,7 @@ Inherits from [host](../resources/security-host.md).
 | passiveDnsReverse | [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection | Reverse passive DNS retrieval about this host. Inherited from [host](../resources/security-host.md).             |
 | reputation        | [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)                | Represents a calculated reputation of this host. Inherited from [host](../resources/security-host.md).           |
 | trackers          | [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection           | The **hostTrackers** that are associated with this host. Inherited from [host](../resources/security-host.md).   |
-| whois             | [microsoft.graph.security.whoisrecord](../resources/security-whoisrecord.md)                      | The most recent **whoisrecord** for this host. Inherited from [host](../resources/security-host.md).             |
+| whois             | [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md)                      | The most recent **whoisRecord** for this host. Inherited from [host](../resources/security-host.md).             |
 
 ## JSON representation
 
