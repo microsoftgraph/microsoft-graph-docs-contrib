@@ -23,9 +23,9 @@ Inherits from [whoisBaseRecord](../resources/security-whoisbaserecord.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
+|[List whoisRecords](../api/security-whoisrecord-list.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) collection|Get a list of [whoisRecord](../resources/security-whoisrecord.md) objects.|
 |[Get whoisRecord](../api/security-whoisrecord-get.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md)|Read the properties and relationships of a [whoisRecord](../resources/security-whoisrecord.md) object.|
 |[Get whoisRecord for a host](../api/security-host-get-whois.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) |Get the [whoisRecord](../resources/security-whoisrecord.md) object and their properties.|
-|[List history of a whois record](../api/security-whoisrecord-list-history.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md)|List the [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects for a [whoisRecord](../resources/security-whoisrecord.md).|
 
 ## Properties
 
