@@ -49,13 +49,13 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|userPrincipalName|String|Not yet documented|
-|addressableUserName|String|Not yet documented|
-|groupTag|String|Not yet documented|
-|displayName|String|Not yet documented|
-|deviceAccountUpn|String|Not yet documented|
-|deviceAccountPassword|String|Not yet documented|
-|deviceFriendlyName|String|Not yet documented|
+|userPrincipalName|String||
+|addressableUserName|String||
+|groupTag|String||
+|displayName|String||
+|deviceAccountUpn|String||
+|deviceAccountPassword|String||
+|deviceFriendlyName|String||
 
 
 

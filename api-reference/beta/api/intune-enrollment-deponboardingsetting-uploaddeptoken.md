@@ -48,8 +48,8 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|appleId|String|Not yet documented|
-|depToken|String|Not yet documented|
+|appleId|String||
+|depToken|String||
 
 
 
