@@ -42,14 +42,21 @@ The following example shows iterating over all the messages in a user's mailbox.
 ### [PHP](#tab/PHP)
 
 ```php
-$pageIterator = new PageIterator($graphResponse, $requestAdapter, $parsableConstructor);
-$pageIterator->setHeaders(["Content-Type" => "application/json"]);
+<?php
+$messages = $graphServiceClient->users()->byUserId(USER_ID)->messages()->get()->wait();
 
-$items = [];
-$pageIterator->iterate(function ($pageItem) use (&$items) {
-      $items []= $pageItem;
-      return true;
-})
+$pageIterator = new PageIterator($messages, $graphServiceClient->getRequestAdapter());
+
+$callback = function (Message $message) {
+    echo "Message ID: {$message->getId()}";
+    return ($message->getId() !== 5);
+}
+
+// iteration will pause at message ID 5
+$pageIterator->iterate($callback);
+
+// resumes iteration from next message (ID 6)
+$pageIterator->iterate($callback);
 
 ```
 
@@ -82,19 +89,21 @@ Some scenarios require stopping the iteration process in order to perform other 
 ### [PHP](#tab/PHP)
 
 ```php
-$pageIterator = new PageIterator($graphResponse, $requestAdapter, $parsableConstructor);
-$pageIterator->setHeaders(["Content-Type" => "application/json"]);
-$items = [];
+<?php
+$messages = $graphServiceClient->users()->byUserId(USER_ID)->messages()->get()->wait();
 
-$pageIterator->iterate(function ($pageItem) use (&$items) {
-      return $pageItem->id !== '2';
-});
+$pageIterator = new PageIterator($messages, $graphServiceClient->getRequestAdapter());
 
-// resumes iteration from user with id 3
-$pageIterator->iterate(function ($pageItem) use (&$items) {
-      $items []= $pageItem;
-      return true;
-});
+$callback = function (Message $message) {
+    echo "Message ID: {$message->getId()}";
+    return ($message->getId() !== 5);
+}
+
+// iteration will pause at message ID 5
+$pageIterator->iterate($callback);
+
+// resumes iteration from next message (ID 6)
+$pageIterator->iterate($callback);
 ```
 
 ### [TypeScript](#tab/typescript)
