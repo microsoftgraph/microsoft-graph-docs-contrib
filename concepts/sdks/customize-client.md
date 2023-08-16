@@ -24,24 +24,29 @@ The Microsoft Graph SDK client configures a default set of middleware that allow
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CustomClients.java" id="ChaosHandlerSnippet":::
 
-# [PHP](#tab/PHP)
+## [PHP](#tab/PHP)
 We currently use [Guzzle](http://guzzlephp.org/) as our HTTP client. You can pass your custom configured Guzzle client using:
 
 ```php
 <?php
 use Microsoft\Graph\Core\GraphClientFactory;
 use Microsoft\Graph\GraphRequestAdapter;
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Core\Authentication\GraphPhpLeagueAuthenticationProvider;
 
-// Get default middleware stack from SDK
-$handlerStack = GraphClientFactory::getDefaultHandlerStack();
-
-// Add a custom handler or extra handlers not added by default
-// Add Chaos handler to simulate random server failure responses
-$handlerStack->push(KiotaMiddleware::chaos());
-
-$httpClient = GraphClientFactory::createWithMiddleware($handlerStack);
+$tokenRequestContext = new ClientCredentialContext(
+    'tenantId',
+    'clientId',
+    'clientSecret'
+);
+$authProvider = new GraphPhpLeagueAuthenticationProvider($tokenRequestContext);
+$guzzleConfig = [
+    // your custom config
+];
+$httpClient = GraphClientFactory::createWithConfig($guzzleConfig);
 $requestAdapter = new GraphRequestAdapter($authProvider, $httpClient);
 $graphServiceClient = GraphServiceClient::createWithRequestAdapter($requestAdapter);
+
 ```
 
 ## [Python](#tab/python)
