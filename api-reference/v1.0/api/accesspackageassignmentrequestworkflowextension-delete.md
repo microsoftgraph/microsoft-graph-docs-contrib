@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /identityGovernance/entitlementManagement/catalogs/{catalogId}/customAccessPackageWorkflowExtensions/{customAccessPackageWorkflowExtensionId}
+DELETE /identityGovernance/entitlementManagement/catalogs/{catalogId}/customWorkflowExtensions/{customAccessPackageWorkflowExtensionId}
 ```
 
 ## Request headers
@@ -63,7 +63,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE /identityGovernance/entitlementManagement/catalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customAccessPackageWorkflowExtensions/E3D4CE35-B16A-4E19-ADF2-616B64D336DC
+DELETE /identityGovernance/entitlementManagement/catalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customWorkflowExtensions/E3D4CE35-B16A-4E19-ADF2-616B64D336DC
 ```
 
 ### Response
