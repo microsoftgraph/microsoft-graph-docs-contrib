@@ -458,6 +458,8 @@ items:
                 href: tutorial-assign-azureadroles.md
           - name: Identity and sign-in
             items:
+              - name: Configure a custom claim provider token issuance event
+                href: /azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json
               - name: Authentication methods
                 href: authenticationmethods-get-started.md
                 displayName: identity, authenticate, sign-in, sign in, signin

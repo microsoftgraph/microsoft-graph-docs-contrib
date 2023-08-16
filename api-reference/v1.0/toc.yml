@@ -5639,7 +5639,7 @@ items:
                         href: api/accesspackageassignment-filterbycurrentuser.md
                       - name: Reprocess
                         href: api/accesspackageassignment-reprocess.md
-                  - name: Access package assignment request approval
+                  - name: Access package assignment approval
                     items:
                       - name: Approval
                         href: resources/approval.md
@@ -5994,6 +5994,8 @@ items:
                             href: api/policyroot-list-rolemanagementpolicies.md
                           - name: Get
                             href: api/unifiedrolemanagementpolicy-get.md
+                          - name: Update
+                            href: api/unifiedrolemanagementpolicy-update.md
                           - name: List rules
                             href: api/unifiedrolemanagementpolicy-list-rules.md
                           - name: Get rule
@@ -6119,18 +6121,6 @@ items:
                         href: api/emailauthenticationmethod-delete.md
                       - name: Add
                         href: api/authentication-post-emailmethods.md
-                  - name: Certificate-based auth configuration
-                    displayName: CBA
-                    href: resources/certificatebasedauthconfiguration.md
-                    items:
-                      - name: List
-                        href: api/certificatebasedauthconfiguration-list.md
-                      - name: Create
-                        href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
-                      - name: Get
-                        href: api/certificatebasedauthconfiguration-get.md
-                      - name: Delete
-                        href: api/certificatebasedauthconfiguration-delete.md
                   - name: Password
                     href: resources/passwordauthenticationmethod.md
                     items:
@@ -6196,6 +6186,18 @@ items:
                         href: api/authenticationstrengthroot-list-authenticationmethodmodes.md
                       - name: Get authentication method modes
                         href: api/authenticationmethodmodedetail-get.md
+              - name: Certificate-based auth configuration
+                displayName: CBA
+                href: resources/certificatebasedauthconfiguration.md
+                items:
+                  - name: List
+                    href: api/certificatebasedauthconfiguration-list.md
+                  - name: Create
+                    href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
+                  - name: Get
+                    href: api/certificatebasedauthconfiguration-get.md
+                  - name: Delete
+                    href: api/certificatebasedauthconfiguration-delete.md
               - name: Conditional Access
                 items:
                   - name: Conditional Access
@@ -6325,8 +6327,10 @@ items:
               - name: Data policy operation
                 href: resources/datapolicyoperation.md
                 items:
-                  - name: Get data policy operation
+                  - name: Get
                     href: api/datapolicyoperation-get.md
+                  - name: Export personal data
+                    href: api/user-exportpersonaldata.md
               - name: Delegated permission grant
                 items:
                   - name: OAuth 2.0 permission grant

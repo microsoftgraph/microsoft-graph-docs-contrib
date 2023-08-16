@@ -100,6 +100,9 @@ You can also use [Teams app installation](/graph/api/resources/teamsappinstallat
 
 ## Send activity feed notifications to users
 
+> [!NOTE]
+> To show activity feed notifications on iOS and Android clients, the app must be included in the allow list. Only third-party apps are supported.
+
 Because a Teams app can be installed for a user, in a team, or in a chat, the notifications can be sent in these three contexts as well:
 
 - [Send notification to user in a chat](/graph/api/chat-sendactivitynotification)
