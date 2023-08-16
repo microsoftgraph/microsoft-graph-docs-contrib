@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 Approve a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.
 
+> [!NOTE]
+> Only the recipient of the request can approve a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md).
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -106,6 +109,3 @@ HTTP/1.1 204 NO CONTENT
   "section": "documentation",
   "tocPath": ""
 }-->
-
-> [!NOTE]
-> A [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) approval is only meant for recipient of the request.
