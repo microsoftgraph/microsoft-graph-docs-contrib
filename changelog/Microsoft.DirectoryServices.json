@@ -14339,7 +14339,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "requireClientServicePrincipal",
           "ChangeType": "Addition",
-          "Description": "Added the requireClientServicePrincipal property to the [authenticationBehaviors](https://learn.microsoft.com/en-us/graph/api/resources/authenticationBehaviors?view=graph-rest-beta) resource.",
+          "Description": "Added the **requireClientServicePrincipal** property to the [authenticationBehaviors](https://learn.microsoft.com/en-us/graph/api/resources/authenticationBehaviors?view=graph-rest-beta) resource.",
           "Target": "authenticationBehaviors"
         }
       ],
