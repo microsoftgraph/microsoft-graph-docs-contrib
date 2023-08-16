@@ -1331,6 +1331,13 @@ Namespace: microsoft.graph
 | unknownFutureValue    |
 | studentsOnly          |
 
+### educationModuleStatus values
+
+| Member             |
+| :----------------- |
+| draft              |
+| published          |
+
 ### educationAssignmentStatus values
 
 | Member             |

@@ -2,7 +2,7 @@
 title: "Update conditionalaccesspolicy"
 description: "Update the properties of a conditionalAccessPolicy object."
 ms.localizationpriority: medium
-author: "davidspooner"
+author: "lisaychuang"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
