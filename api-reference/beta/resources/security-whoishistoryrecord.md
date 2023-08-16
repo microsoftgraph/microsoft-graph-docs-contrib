@@ -46,7 +46,7 @@ Inherits from [whoisBaseRecord](../resources/security-whoisbaserecord.md).
 |registrar|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **registrar** contact. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
 |registrationDateTime|DateTimeOffset|The date and time when this whois record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
 |technical|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **technical** contact. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
-|whoisServer|String|The whois server providing the details. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
+|whoisServer|String|The whois server that provides the details. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
 |zone|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **zone** contact. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
 
 ## Relationships
@@ -56,7 +56,9 @@ Inherits from [whoisBaseRecord](../resources/security-whoisbaserecord.md).
 |host|[microsoft.graph.security.host](../resources/security-host.md)|The host associated to this whois object. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -68,43 +70,23 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.whoisHistoryRecord",
-  "id": "String (identifier)",
-  "registrationDateTime": "String (timestamp)",
+  "abuse": {"@odata.type": "microsoft.graph.security.whoisContact"},
+  "admin": {"@odata.type": "microsoft.graph.security.whoisContact"},
+  "billing": {"@odata.type": "microsoft.graph.security.whoisContact"},
+  "domainStatus": "String",
   "expirationDateTime": "String (timestamp)",
   "firstSeenDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "lastSeenDateTime": "String (timestamp)",
   "lastUpdateDateTime": "String (timestamp)",
-  "abuse": {
-    "@odata.type": "microsoft.graph.security.whoisContact"
-  },
-  "admin": {
-    "@odata.type": "microsoft.graph.security.whoisContact"
-  },
-  "billing": {
-    "@odata.type": "microsoft.graph.security.whoisContact"
-  },
-  "registrar": {
-    "@odata.type": "microsoft.graph.security.whoisContact"
-  },
-  "registrant": {
-    "@odata.type": "microsoft.graph.security.whoisContact"
-  },
-  "technical": {
-    "@odata.type": "microsoft.graph.security.whoisContact"
-  },
-  "noc": {
-    "@odata.type": "microsoft.graph.security.whoisContact"
-  },
-  "zone": {
-    "@odata.type": "microsoft.graph.security.whoisContact"
-  },
-  "nameservers": [
-    {
-      "@odata.type": "microsoft.graph.security.whoisNameserver"
-    }
-  ],
+  "nameservers": [{"@odata.type": "microsoft.graph.security.whoisNameserver"}],
+  "noc": {"@odata.type": "microsoft.graph.security.whoisContact"},
+  "rawWhoisText": "String",
+  "registrant": {"@odata.type": "microsoft.graph.security.whoisContact"},
+  "registrar": {"@odata.type": "microsoft.graph.security.whoisContact"},
+  "registrationDateTime": "String (timestamp)",
+  "technical": {"@odata.type": "microsoft.graph.security.whoisContact"},
   "whoisServer": "String",
-  "domainStatus": "String",
-  "rawWhoisText": "String"
+  "zone": {"@odata.type": "microsoft.graph.security.whoisContact"}
 }
 ```
