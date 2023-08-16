@@ -17184,7 +17184,7 @@ items:
                         href: api/onlinemeeting-list-recordings.md
                       - name: Get
                         href: api/callrecording-get.md
-                      - name: Get recordings across all online meetings for user
+                      - name: List recordings by organizer
                         href: api/onlinemeeting-getallrecordings.md  
                   - name: Call transcript (preview)
                     items:
@@ -17194,7 +17194,7 @@ items:
                         href: api/onlinemeeting-list-transcripts.md
                       - name: Get
                         href: api/calltranscript-get.md
-                      - name: Get transcripts across all online meetings for user
+                      - name: List transcripts by organizer
                         href: api/onlinemeeting-getalltranscripts.md 
                   - name: External meeting registration (preview)
                     href: resources/externalmeetingregistration.md
