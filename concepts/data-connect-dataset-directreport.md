@@ -35,9 +35,9 @@ The DirectReport_v0 dataset can be joined with the Manager_v0 dataset.
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | accountEnabled |	boolean	| True if the account is enabled; otherwise, false.	| No |	None |
 | ageGroup	| string |	Sets the age group of the user. This dataset provides details of all the direct reports for users. *Allowed values:* null, minor, notAdult and adult.	| No |	None |
-| assignedLicenses	| string |	The licenses that are assigned to the direct report. *Format:* ARRAY<STRUCT<`disabledPlans`:ARRAY<STRING>, `skuId`:STRING>> |	No |	None |
-| assignedPlans	| string |	The plans that are assigned to the direct report. *Format:* ARRAY<STRUCT<`assignedDateTime`:STRING, `capabilityStatus`:STRING, `service`:STRING, `servicePlanId`:STRING>> |	No |	None |
-| businessPhones |	string |	The telephone numbers of the direct report. *Note:* Although this is a string collection, only one number can be set for this property. *Format:* ARRAY<STRING> |	No |	None |
+| assignedLicenses	| string |	The licenses that are assigned to the direct report. `*Format:* ARRAY<STRUCT<`disabledPlans`:ARRAY<STRING>, `skuId`:STRING>>` |	No |	None |
+| assignedPlans	| string |	The plans that are assigned to the direct report. `*Format:* ARRAY<STRUCT<`assignedDateTime`:STRING, `capabilityStatus`:STRING, `service`:STRING, `servicePlanId`:STRING>>` |	No |	None |
+| businessPhones |	string |	The telephone numbers of the direct report. *Note:* Although this is a string collection, only one number can be set for this property. `*Format:* ARRAY<STRING>.` |	No |	None |
 | city |	string |	The city in which the direct report is located. |	No |	None |
 | companyName |	string |	The company name which the direct report is associated. |	No |	None |
 | consentProvidedForMinor |	string |	Sets whether consent has been obtained for minors. *Allowed values:* null, granted, denied and notRequired. |	No |	None |
@@ -47,7 +47,7 @@ The DirectReport_v0 dataset can be joined with the Manager_v0 dataset.
 | displayName |	string |	The name displayed in the address book for the direct report. This is usually the combination of the user's first name, middle initial and last name. |	No |	None |
 | givenName	| string |	The given name (first name) of the direct report. |	No |	None |
 | id |	string |	The unique identifier for the direct report. Inherited from directoryObject. |	No |	None |
-| imAddresses |	string |	The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the direct report. *Format:* ARRAY<STRING> |	No |	None |
+| imAddresses |	string |	The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the direct report. `*Format:* ARRAY<STRING>.` |	No |	None |
 | jobTitle	| string |	The direct report’s job title. |	No |	None |
 | legalAgeGroupClassificationv |	string |	Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties. *Allowed values:* null, minorWithOutParentalConsent, minorWithParentalConsent, minorNoParentalConsentRequired, notAdult and adult. |	No |	None |
 | mail | string	| The SMTP address for the direct report. |	No |	None |
@@ -61,8 +61,8 @@ The DirectReport_v0 dataset can be joined with the Manager_v0 dataset.
 | passwordPolicies |	string |	Specifies password policies for the direct report. This value is an enumeration with one possible value being “DisableStrongPassword”, which allows weaker passwords than the default policy to be specified. “DisablePasswordExpiration” can also be specified. The two may be specified together. |	No |	None |
 | postalCode |	string |	The postal code for the direct report's postal address. The postal code is specific to the direct report's country/region. In the United States of America, this attribute contains the ZIP code. |	No |	None |
 | preferredLanguage |	string |	The preferred language for the direct report. Should follow ISO 639-1 Code; for example "en-US". |	No |	None |
-| provisionedPlans |	string |	The plans that are provisioned for the direct report. Read-only. Not nullable. *Format:* ARRAY<STRUCT<`capabilityStatus`:STRING, `provisioningStatus`:STRING, `service`:STRING>> |	No |	None |
-| proxyAddresses |	string |	*Format:* ARRAY<STRING> |	No |	None |
+| provisionedPlans |	string |	The plans that are provisioned for the direct report. Read-only. Not nullable. `*Format:* ARRAY<STRUCT<`capabilityStatus`:STRING, `provisioningStatus`:STRING, `service`:STRING>>.` |	No |	None |
+| proxyAddresses |	string |	`*Format:* ARRAY<STRING>.` |	No |	None |
 | state	| string |	The state or province in the direct report's address. |	No |	None |
 | streetAddress |	string |	The street address of the direct report's place of business. |	No |	None |
 | surname |	string |	The direct report's surname (family name or last name). |	No |	None |

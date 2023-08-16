@@ -46,7 +46,7 @@ The Inbox_v1 dataset can be joined with Message_v0, Message_v1 and other MailFol
 | createdDateTime |	datetime |	The date and time the message was created. |	Yes |	Date |
 | lastModifiedDateTime |	datetime |	The date and time the message was last changed. |	Yes |	Date |
 | changeKey |	string |	The version of the message. |	No	| None |
-| categories |	string |	The categories associated with the message. *Format:* ARRAY<STRING>. |	No |	None |
+| categories |	string |	The categories associated with the message. `*Format:* ARRAY<STRING>.` |	No |	None |
 | receivedDateTime |	datetime |	The date and time the message was received. |	Yes |	Date |
 | sentDateTime |	datetime |	The date and time the message was sent. |	Yes | 	Date |
 | hasAttachments |	boolean	Indicates whether the message has attachments. |	No |	None |
@@ -54,23 +54,23 @@ The Inbox_v1 dataset can be joined with Message_v0, Message_v1 and other MailFol
 | subject |	string	The subject of the message. |	No |	None |
 | importance |	string |	The importance of the message. *Allowed values:* Low = 0, Normal = 1, High = 2. |	No |	None |
 | parentFolderId |	string |	The unique identifier for the message's parent folder. |	No |	None |
-| sender |	string |	The account that is actually used to generate the message. *Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>. |	No |	None |
-| from | string |	The mailbox owner and sender of the message. *Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>. |	No |	None |
-| toRecipients |	string |	The To recipients for the message. *Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>. |	No |	None |
-| ccRecipients |	string |	The Cc recipients for the message. *Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>.	 |No |	None |
-| bccRecipients |	string |	The Bcc recipients for the message. *Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>. |	No |	None |
-| replyTo |	string |	The email addresses to use when replying. *Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>. |	No |	None |
+| sender |	string |	The account that is actually used to generate the message. `*Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>.` |	No |	None |
+| from | string |	The mailbox owner and sender of the message. `*Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>.` |	No |	None |
+| toRecipients |	string |	The To recipients for the message. `*Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>.` |	No |	None |
+| ccRecipients |	string |	The Cc recipients for the message. `*Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>.`	 |No |	None |
+| bccRecipients |	string |	The Bcc recipients for the message. `*Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>.` |	No |	None |
+| replyTo |	string |	The email addresses to use when replying. `*Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>.` |	No |	None |
 | conversationId |	string |	The ID of the conversation that the email belongs to. |	No |	None |
-| uniqueBody |	string | The body of the message that is unique to the conversation. *Format:* STRUCT<ContentType: INT32, Content: STRING>. |	No |	None |
+| uniqueBody |	string | The body of the message that is unique to the conversation. `*Format:* STRUCT<ContentType: INT32, Content: STRING>.` |	No |	None |
 | isDeliveryReceiptRequested |	boolean |	Indicates whether a read receipt is requested for the message. | 	No |	None |
 | isReadReceiptRequested |	boolean |	Indicates whether a read receipt is requested for the message. |	No |	None |
 | isRead |	boolean |	Indicates whether the message has been read. |	No |	None |
 | isDraft |	boolean |	Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet. |	No |	None |
 | webLink |	string |	The URL to open the message in Microsoft Outlook Web app. |	No |	None |
-| attachments |	string |	The FileAttachment and ItemAttachment attachments for the message. Navigation property. *Format:* ARRAY<STRUCT<LastModifiedDateTime: STRING, Name: STRING, ContentType: STRING, Size: INT, IsInline: BOOLEAN, Id: STRING>>. |	No |	None |
+| attachments |	string |	The FileAttachment and ItemAttachment attachments for the message. Navigation property. `*Format:* ARRAY<STRUCT<LastModifiedDateTime: STRING, Name: STRING, ContentType: STRING, Size: INT, IsInline: BOOLEAN, Id: STRING>>.` |	No |	None |
 | inferenceClassification |	string |	The classification of the message for the user, based on inferred relevance or importance, or on an explicit override. The possible values are: Focused or Other. |	No	| None |
 | flag |	string |	The flag value that indicates the status, start date, due date, or completion date for the message. |	No |	None |
-| body |	string |	The body of the message. It can be in HTML or text format. *Format:* STRUCT<ContentType: INT32, Content: STRING>. |	No |	None |
+| body |	string |	The body of the message. It can be in HTML or text format. `*Format:* STRUCT<ContentType: INT32, Content: STRING>.` |	No |	None |
 | bodyPreview |	string |	The first 255 characters of the message body. It is in text format. |	No |	None |
 | conversationIndex |	string |	Indicates the position of the message within the conversation. |	No |	None |
 | ODataType |	string |	Data type of the current folder. |	No |	None |
