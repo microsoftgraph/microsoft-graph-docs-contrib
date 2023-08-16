@@ -150,7 +150,7 @@ Content-type: application/json
 * When the `draftTimeOff` changes are shared, the content from the `draftTimeOff` entity is copied into the `sharedTimeOff` entity.
 * Changes to the shared entity are restricted when there's a draft waiting. You can only make changes to the shared entity when the draft entity is empty.
 * Updates to the shared entity prompt notifications for the affected user within the Teams client—notifications are presented through both the activity feed and mobile notifications.
-* If you make more changes, it's recommended to make all the changes in the draft entities to avoid notification noise for the end user, and then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.
+*For a streamlined user experience, it is advisable to make further changes to the draft entities, thereby mitigating notification alerts. You can then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.
 
 The same rules apply to the shifts APIs which has a `sharedShift` and `draftShift` entity.
 
