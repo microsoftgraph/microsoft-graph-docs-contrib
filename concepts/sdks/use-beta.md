@@ -51,10 +51,26 @@ GraphServiceClient graphClient = GraphServiceClient
 
 ## [PHP](#tab/php)
 
-The [Microsoft Graph SDK for PHP](https://github.com/microsoftgraph/msgraph-sdk-php) supports the beta endpoint and models. You set the beta endpoint with the `setApiVersion` method. You will need to disambiguate the v1.0 and beta models by providing an alias.  
-
+The [Microsoft Graph SDK for PHP](https://github.com/microsoftgraph/msgraph-sdk-php) supports the beta endpoint and models. For instructions to install see [Microsoft Graph PHP SDK for Beta endpoint](https://packagist.org/packages/microsoft/microsoft-graph-beta).
 ```php
-//sample here
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Kiota\Abstractions\ApiException;
+use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
+
+$tokenRequestContext = new ClientCredentialContext(
+    'tenantId',
+    'clientId',
+    'clientSecret'
+);
+$betaGraphServiceClient = new GraphServiceClient($tokenRequestContext);
+
+try {
+    $user = $betaGraphServiceClient->users()->byUserId('[userPrincipalName]')->get()->wait();
+    echo "Hello, I am {$user->getGivenName()}";
+
+} catch (ApiException $ex) {
+    echo $ex->getError()->getMessage();
+}
 ```
 
 ## [TypeScript](#tab/typescript)
