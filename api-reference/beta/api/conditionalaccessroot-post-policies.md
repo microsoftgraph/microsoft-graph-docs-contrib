@@ -2,7 +2,7 @@
 title: "Create conditionalAccessPolicy"
 description: "Create a new conditionalAccessPolicy."
 ms.localizationpriority: medium
-author: "davidspooner"
+author: "lisaychuang"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---

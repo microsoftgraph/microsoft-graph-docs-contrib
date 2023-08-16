@@ -204,6 +204,8 @@ Content-type: application/json
 
 ---
 
+> **Note:** To add a guest account to the channel, for the **roles** property, use the value `guest`.
+
 #### Response
 
 The following is an example of the response.
@@ -464,6 +466,8 @@ Content-type: application/json
 
 ---
 
+>  **Note:** To add a guest account to the channel, for the **roles** property, use the value `guest`.
+
 #### Response
 
 The following is an example of the response.
@@ -555,6 +559,8 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+>  **Note:** To add a guest account to the channel, for the **roles** property, use the value `guest`.
 
 #### Response
 

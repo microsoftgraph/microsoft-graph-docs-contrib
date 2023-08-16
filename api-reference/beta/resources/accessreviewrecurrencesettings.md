@@ -2,7 +2,7 @@
 title: "accessReviewRecurrenceSettings resource type (deprecated)"
 description: "Specifies that the access review recurs at regular intervals."
 ms.localizationpriority: medium
-author: "jyothig123"
+author: "shubhamguptacal"
 ms.prod: "governance"
 doc_type: resourcePageType
 ---

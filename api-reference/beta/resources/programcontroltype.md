@@ -4,7 +4,7 @@ description: "In the Azure AD access reviews feature, the program control type i
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "jyothig123"
+author: "shubhamguptacal"
 ---
 
 # programControlType resource type (deprecated)
