@@ -144,6 +144,10 @@ Content-length: 1066
 [!INCLUDE [sample-code](../includes/snippets/php/intune-apps-iosstoreapp-create-create-iosstoreapp-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-apps-iosstoreapp-create-create-iosstoreapp-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-apps-iosstoreapp-create-create-iosstoreapp-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

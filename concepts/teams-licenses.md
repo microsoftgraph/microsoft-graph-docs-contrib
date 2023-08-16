@@ -154,8 +154,10 @@ The following table lists the evaluation mode capacity and price for additional 
 
 | API | Evaluation mode capacity  | Price for additional use  | Notes |
 | -------- | -------- | -------- | -------- |
-| [Get callTranscript content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content) </br> [Get callTranscript metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent) | 600 minutes per app per tenant  | $0.0 per minute | The duration will be rounded down to nearest minute. |
-| [Get callRecording content](/graph/api/callrecording-get#example-2-get-callrecording-content) | 600 minutes per app per tenant  | $0.0 per minute | The duration will be rounded down to nearest minute. |
+| [Get callTranscript content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content) </br> [Get callTranscript metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent) | 600 minutes per app per tenant  | $0.0 per minute* | The duration will be rounded down to nearest minute. |
+| [Get callRecording content](/graph/api/callrecording-get#example-2-get-callrecording-content) | 600 minutes per app per tenant  | $0.0 per minute* | The duration will be rounded down to nearest minute. |
+
+*The price for additional use is subject to change in the future.
 
 ## Payment and billing
 
