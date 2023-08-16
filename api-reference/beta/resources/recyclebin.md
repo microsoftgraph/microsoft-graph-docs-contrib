@@ -25,7 +25,7 @@ The **recycleBin** resource does not have any methods.
 
 | Property     | Type                                          | Description
 |:------------ |:--------------------------------------------- |:-----------------------------------------------
-| items        | [microsoft.graph.recycleBinItem](recycleBinItem.md) collection | List of the recycleBinitems deleted by the user.
+| items        | [microsoft.graph.recycleBinItem](recyclebinitem.md) collection | List of the recycleBinitems deleted by the user.
 
 ## JSON Representation
 
