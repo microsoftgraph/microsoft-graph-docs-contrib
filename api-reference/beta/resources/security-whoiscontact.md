@@ -23,10 +23,10 @@ Represents key contact details for a [whoisRecord](../resources/security-whoisre
 |:---|:---|:---|
 |address|[microsoft.graph.physicalAddress](../resources/physicaladdress.md)|The physical address of the entity.|
 |email|String|The email of this whois contact.|
-|fax|String|The fax of this whois contact. **Note**: No format is guaranteed.|
+|fax|String|The fax of this whois contact. No format is guaranteed.|
 |name|String|The name of this whois contact.|
 |organization|String|The organization of this whois contact.|
-|telephone|String|The telephone of this whois contact. **Note**: No format is guaranteed.|
+|telephone|String|The telephone of this whois contact. No format is guaranteed.|
 
 ## Relationships
 
