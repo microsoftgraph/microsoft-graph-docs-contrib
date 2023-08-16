@@ -38,7 +38,7 @@ The Manager_v0 dataset can be joined with the DirectReport_v0 dataset.
 | ageGroup |	string |	Sets the age group of the user. *Allowed values:* null, minor, notAdult and adult. |	No |	None |
 | assignedLicenses |	string |	The licenses that are assigned to the manager. `*Format:* ARRAY<STRUCT<`disabledPlans`:ARRAY<STRING>, `skuId`:STRING>>.` |	No |	None |
 | assignedPlans |	string |	The plans that are assigned to the manager. `*Format:* ARRAY<STRUCT<`assignedDateTime`:STRING, `capabilityStatus`:STRING, `service`:STRING, `servicePlanId`:STRING>>.` |	No |	None |
-| businessPhones |	string |	The telephone numbers for the manager. *Note:* Although this is a string collection, only one number can be set for this property. `*Format:* ARRAY<STRING>.v |	No |	None |
+| businessPhones |	string |	The telephone numbers for the manager. *Note:* Although this is a string collection, only one number can be set for this property. `*Format:* ARRAY<STRING>.` |	No |	None |
 | city |	string |	The city in which the manager is located. |	No |	None |
 | companyName |	string |	The company name which the manager is associated. |	No | None |
 | consentProvidedForMinor |	string |	Sets whether consent has been obtained for minors. *Allowed values:* null, granted, denied and notRequired. |	No |	None |
