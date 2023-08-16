@@ -146,7 +146,7 @@ Content-type: application/json
 **Difference between the `sharedTimeOff` and `draftTimeOff`:**
 
 * The `sharedTimeOff` entity is visible to all team members.
-* The `draftTimeOff` entity is for draft changes that is only visible to team owners. The `draftTimeOff` changes must be shared with team members for visibility to them.
+* The `draftTimeOff` entity is for draft changes only visible to team owners. The `draftTimeOff` changes need to be shared with team members for visibility.
 * When the `draftTimeOff` changes are shared, the content from the `draftTimeOff` entity is copied into the `sharedTimeOff` entity.
 * Based on the error message, it doesn't allow changes to the shared entity when there's a pending draft entity. So they can only modify the shared entity when the draft entity is empty.
 * Updates to the shared entity prompt notifications for the affected user within the Teams client—notifications are presented through both the activity feed and mobile notifications.
