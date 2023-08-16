@@ -21,7 +21,7 @@ Applications can adopt new breaking changes by enabling a behavior (set the beha
 |Property|Type|Description|
 |:---|:---|:---|
 |removeUnverifiedEmailClaim|Boolean| Removes the `email` claim from tokens sent to an application when the email address's domain cannot be verified. |
-|requireClientServicePrincipal|Boolean| Requires a client application attempting to acquire a cross-tenant token from a resource application to have a service principal as a pre-requisite. <br> **Note**: This property can only be modified if your application was grandfathered in to the deprecated behavior. Grandfathered applications will see this behavior as set to `false` in their authentication behaviors configuration.
+|requireClientServicePrincipal|Boolean| Requires multitenant applications to have a service principal in the resource tenant as part of authorization checks before they are granted access tokens. This property is only modifyable for multi-tenant resource applications that rely on access from clients without a service principal and had this behavior as set to `false` by Microsoft. Tenant administrators should respond to security advisories sent through Azure Health Service events and the Microsoft 365 message center.|
 
 ## Relationships
 None.
