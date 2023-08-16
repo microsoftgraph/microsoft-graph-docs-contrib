@@ -100,7 +100,7 @@ Now you can bring all your Microsoft 365 data into [Microsoft Fabric](/fabric/ge
 
 To learn more about Microsoft Graph Data Connect integration with Microsoft 365 Fabric:
 
-- Microsoft 365 + Fabric Launch Event Video: [Microsoft Fabric Launch Digital Event](https://youtu.be/1o_QDFq6gzE?t=10194](https://youtu.be/1o_QDFq6gzE?t=10194)
+- Microsoft 365 + Fabric Launch Event Video: [Microsoft Fabric Launch Digital Event](https://youtu.be/1o_QDFq6gzE?t=10194)
 - Detailed Microsoft 365 + Fabric eBook: [Transform Your Microsoft 365 Data into Business Insights with Microsoft Graph Data Connect](https://info.microsoft.com/ww-landing-Unlock-Productivity-and-Collaboration-Insights-with-Microsoft-Graph-data_connect-and-Microsoft-Fabric.html)
 - Microsoft 365 + Fabric Blog: [Microsoft 365 Data + Microsoft Fabric better together](https://blog.fabric.microsoft.com/blog/microsoft-365-data-microsoft-fabric-better-together/)
 
