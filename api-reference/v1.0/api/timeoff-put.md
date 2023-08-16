@@ -142,13 +142,13 @@ Content-type: application/json
 **Difference between the `sharedTimeOff` and `draftTimeOff`:**
 
 * The `sharedTimeOff` entity is visible to all team members.
-* The `draftTimeOff` entity is for draft changes that is only visible to team owners. The `draftTimeOff` changes must be shared with team members for visibility to them.
+* The `draftTimeOff` entity is for draft changes only visible to team owners. The `draftTimeOff` changes need to be shared with team members for visibility.
 * When the `draftTimeOff` changes are shared, the content from the `draftTimeOff` entity is copied into the `sharedTimeOff` entity.
-* Based on the error message, it doesn't allow changes to the shared entity when there's a pending draft entity. So they can only modify the shared entity when the draft entity is empty.
-* When the shared entity is updated, the affected user gets a notification in the Teams client (activity feed and mobile notification).
-* If you make more changes, it's recommended to make all the changes in the draft entities to avoid notification noise for the end user, and then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.
+* Changes to the shared entity are restricted when there's a draft waiting. You can only make changes to the shared entity when the draft entity is empty.
+* Updates to the shared entity prompt notifications for the affected user within the Teams client—notifications are presented through both the activity feed and mobile notifications.
+* For a streamlined user experience, it is advisable to make further changes to the draft entities, thereby mitigating notification alerts. You can then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.
 
-The same rules apply to the shifts APIs which has a `sharedShift` and `draftShift` entity.
+The same rules are applicable to shift APIs, including both the `sharedShift` and `draftShift` entities.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
