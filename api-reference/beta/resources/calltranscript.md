@@ -20,7 +20,7 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 |:---------------|:--------|:----------|
 |[List callTranscripts](../api/onlinemeeting-list-transcripts.md) | [callTranscript](calltranscript.md) collection | Get the list of [callTranscript](../resources/calltranscript.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md).| 
 |[Get callTranscript](../api/calltranscript-get.md) | [callTranscript](calltranscript.md) | Get a [callTranscript](../resources/calltranscript.md) object associated with an [onlineMeeting](../resources/onlinemeeting.md).|
- |[getAllTranscripts](../api/onlinemeeting-getAllTranscripts.md) | [callTranscript](calltranscript.md) collection | Get [callTranscript](../resources/calltranscript.md) objects for all [onlineMeetings](../resources/onlinemeeting.md) organized by a given user.|
+ |[getAllTranscripts](../api/onlinemeeting-getAllTranscripts.md) | [callTranscript](calltranscript.md) collection | Get the [callTranscript](../resources/calltranscript.md) objects for all the [onlineMeeting](../resources/onlinemeeting.md) instances organized by the specified user.|
  
 
 ## Properties
@@ -31,7 +31,7 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 | createdDateTime| DateTimeOffset|  Date and time at which the transcript was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 | id| String| The unique identifier for the transcript. Read-only.|
 | meetingId | String | The unique identifier of the online meeting related to this transcript. Read-only.|
-| meetingOrganizerId| String| The unique identifier of the organizer of the online meeting related to this transcript. Read-only.|
+| meetingOrganizerId| String| The unique identifier of the organizer of the **onlineMeeting** related to this transcript. Read-only.|
 | metadataContent| Stream| The time-aligned metadata of the utterances in the transcript. Read-only.|
 | transcriptContentUrl| String| The URL which can be used to access the content of the transcript. Read-only.|
 

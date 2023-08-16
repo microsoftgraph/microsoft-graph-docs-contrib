@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all transcripts from private, scheduled [online meetings](../resources/onlinemeeting.md) that a user is an organizer of.
+Get the transcripts from all private, scheduled [onlineMeeting](../resources/onlinemeeting.md) instances for which the specified user is the organizer.
 
 To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
