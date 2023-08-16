@@ -14331,6 +14331,24 @@
       "CreatedDateTime": "2023-08-14T17:29:23.027316Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    }, 
+    {
+      "ChangeList": [
+        {
+          "Id": "a64b8d10-4143-415b-b851-be687b11005d",
+          "ApiChange": "Property",
+          "ChangedApiName": "requireClientServicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the requireClientServicePrincipal property to the [authenticationBehaviors](https://learn.microsoft.com/en-us/graph/api/resources/authenticationBehaviors?view=graph-rest-beta) resource.",
+          "Target": "authenticationBehaviors"
+        }
+      ],
+      "Id": "a64b8d10-4143-415b-b851-be687b11005d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-16T00:52:03Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
     }
   ]
 }
