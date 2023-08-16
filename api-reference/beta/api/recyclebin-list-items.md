@@ -48,7 +48,7 @@ Do not supply a request body for this method
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and returns a collection of [microsoft.graph.recycleBinItem](../resources/recycleBinItem.md) in the response body.
+If successful, this method returns a `200 OK` response code and returns a collection of [microsoft.graph.recycleBinItem](../resources/recyclebinitem.md) in the response body.
 
 ## Examples
 
