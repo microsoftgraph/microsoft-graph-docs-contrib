@@ -62,8 +62,8 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.security.whoisRecord",
-  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.security.whoisHistoryRecord",
+  "baseType": "microsoft.graph.whoisBaseRecord",
   "openType": false
 }
 -->
