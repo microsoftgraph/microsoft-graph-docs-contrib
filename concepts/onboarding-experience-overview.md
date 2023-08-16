@@ -8,7 +8,7 @@ ms.custom: scenarios:getting-started
 
 # Microsoft Graph Data Connect onboarding experience
 
-Microsoft Graph Data Connect has a simplified onboarding experience that features an enhanced app registration and app authorization experience, and detailed guidance for migrating existing customers to the new Data Connect experience.
+Microsoft Graph Data Connect has a simplified onboarding experience that features an enhanced app registration and app authorization experience.
 
 This article describes the simplified onboarding experience, in which data transfers are authorized before the pipelines run. Customers who currently use the Privileged Access Management (PAM) authorization model can migrate to the simplified experience; for details, see [Existing customer migration](graph/existing-customer-migration).
 
@@ -37,7 +37,7 @@ The updated Data Connect onboarding experience includes process efficiencies and
 
 - Admins don't need an E5 license. A user authorizing an app is required to be a global admin to access the [Data Connect app registration portal](https://admin.microsoft.com/Adminportal/Home?#/Settings/MGDCAdminCenter), and approve apps for Data Connect.
 
-- Enhanced Microsoft 365 admin center experience for authorizing apps.
+- The updated Data Connect onboarding experience also includes an enhanced Microsoft 365 admin center experience for authorizing apps.
 
 - Data Connect is evolving to a per-app authorization model, which functionally means one admin authorization per customer scenario. A single app registration encapsulates all datasets that an app requires, along with per dataset controls for columns and scopes. This also means that just a single authorization is required to enable a scenario.
 
