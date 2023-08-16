@@ -152,7 +152,7 @@ Content-type: application/json
 * Updates to the shared entity prompt notifications for the affected user within the Teams client—notifications are presented through both the activity feed and mobile notifications.
 *For a streamlined user experience, it is advisable to make further changes to the draft entities, thereby mitigating notification alerts. You can then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.
 
-The same rules apply to the shifts APIs which has a `sharedShift` and `draftShift` entity.
+The same rules are applicable to shift APIs, including both the `sharedShift` and `draftShift` entities.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
