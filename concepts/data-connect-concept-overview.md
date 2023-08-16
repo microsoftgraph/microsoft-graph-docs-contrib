@@ -11,45 +11,42 @@ ms.custom: scenarios:getting-started
 
 In a hybrid workplace, organizations must develop a data-driven culture in order to dynamically evolve. Today's organizations have an incredible amount of business data across applications and services in Microsoft 365.
  
-The potential this data holds is powerful; however, to remain competitive, organizations must unlock access to their Microsoft 365 data and streamline their manual analytical processes.  Data is an organization's competitive advantage. 
+The potential this data holds is powerful; however, to remain competitive, organizations must unlock access to their Microsoft 365 data and streamline their manual analytical processes. Data is an organization's competitive advantage. 
 
-To access your Microsoft 365 data in the Microsoft Graph for enterprise analytics, you can use [Microsoft Graph Data Connect](https://developer.microsoft.com/graph), a secure, scalable solution that enables you to access relevant Microsoft 365 datasets in Microsoft Fabric, Azure Synapse, and Azure Data Factory. 
+You can use [Microsoft Graph Data Connect](https://developer.microsoft.com/graph) to access your Microsoft 365 data for enterprise analytics. Data Connect provides secure, scalable access to relevant Microsoft 365 datasets in Microsoft Fabric, Azure Synapse, and Azure Data Factory. 
 
-Here are some of the enterprise analytics scenarios that are possible: 
+Data Connect unlocks a number of enterprise analytics scenarios, including: 
+
+- **Customer relationship analytics** - For commercial business leaders, go beyond traditional customer relationship management (CRM) insights and understand customer interactions and relationships based on communication and collaboration patterns.
+- **Business process analytics** - For better operations, see how work really flows through the organization on a day-to-day basis. Pinpoint manual processes and workflow bottlenecks that can be automated or optimized.
+- **Security and compliance analytics** - To secure sensitive data, learn how employees use and share sensitive information. Implement anomaly detection, threat intelligence, audit log analysis, risk management, and legal forensics.
+- **People productivity analytics** - To drive transformation, export your [Microsoft Viva](/viva/microsoft-viva-overview) productivity metrics, so you can convert insights into solutions with digital adoption, smart meetings and content, hybrid workplaces, and cultural change.
 
 ![An image that shows some of the enterprise analytics scenarios that are possible.](images/data_connect_msdc_solution.png)
 
-- **Customer relationship analytics.** For commercial business leaders, go beyond traditional customer relationship management (CRM) insights and understand customer interactions and relationships based on communication and collaboration patterns.
-- **Business process analytics.** For better operations, see how work really flows through the organization on a day-to-day basis. Pinpoint the manual processes and workflow bottlenecks that should be automated or optimized.
-- **Security and compliance analytics.** To secure sensitive data, learn how employees are using and sharing sensitive information. Implement anomaly detection, threat intelligence, audit log analysis, risk management, and legal forensics.
-- **People productivity analytics.** For driving transformation, export your [Microsoft Viva](/viva/microsoft-viva-overview) productivity metrics, so you can convert insights into solutions with digital adoption, smart meetings and content, hybrid workplaces, and cultural change.
-
-
 ## Breadth and depth of Microsoft 365 data
 
-In the following diagram, you can see various types of Microsoft 365 data that organizations get though Microsoft Graph Data Connect. There are datasets available from a wide variety of Microsoft 365 sources, including Azure Active Directory, Outlook, Teams, SharePoint, Viva Insight, and Microsoft Groups—and the list is growing. 
+Organizations can access various types of Microsoft 365 data via Microsoft Graph Data Connect. Datasets are available from a wide variety of Microsoft 365 sources, including Azure Active Directory, Outlook, Teams, SharePoint, Viva Insights, and Microsoft groups — and the list is growing. 
 
 ![An image that shows various types of Microsoft 365 data that organizations get though Microsoft Graph Data Connect.](images/data-connect-continuing-growth.png)
 
-Learn more for the full list of datasets we offer at Microsoft Graph Data Connect: [Datasets, regions, and sinks supported by Microsoft Graph Data Connect](/graph/data-connect-datasets).
+Microsoft 365 datasets come ready for analysis and include the following categories:  
 
-Microsoft 365 datasets come ready for analysis. You can have data delivered in the following categories:  
-
-- **Basic datasets:** Datasets generated from raw customer created content and inputs from Microsoft 365 applications and services. 
+- **Basic datasets:** Datasets generated from raw customer-created content and inputs from Microsoft 365 applications and services. 
 - **Cleaned datasets:** Datasets generated by either normalization and de-duplication from basic datasets. This can also include datasets created from user activity or behavior signals in Microsoft 365.
-- **Curated datasets:** Datasets custom generated for a specific use case or analytics scenarios. This can also include datasets from other Microsoft organizations (Viva Insights, SharePoint, and so on) on Microsoft 365 analytics application for their extensibility.
+- **Curated datasets:** Datasets custom-generated for a specific use case or analytics scenario. This category can also include datasets from other Microsoft organizations (Viva Insights, SharePoint, and so on) on Microsoft 365 analytics application for their extensibility.
+
+For a list of Data Connect datasets, see [Datasets, regions, and sinks supported by Microsoft Graph Data Connect](/graph/data-connect-datasets).
 
 ### Who gets value from Microsoft Graph Data Connect?
 
-- **LOB business leaders** need actionable insights from Microsoft 365 data because it helps them make informed decisions regarding their organization. By analyzing data, they can identify patterns and trends including customer relationship analytics, business process analytics, security and compliance analytics, and people productivity analytics.
-- **Data engineers** collect, process, and transform Microsoft 365 data from Microsoft Graph Data Connect into a format that is usable by data scientists and analysts. They construct and manage Microsoft 365 data pipelines as data combined across other data sources in Microsoft Fabric, all while ensuring the highest levels of data quality and consistency. 
-- **Data scientists** and **data analysts** play a critical role in helping LOB business leaders make sense of their data and use it to drive business decisions. Data analysts identify trends, patterns, and insights. They analyze Microsoft 365 data from Data Connect data and create reports to make informed decisions. They may also be responsible for creating dashboards and visualizations to communicate their findings. Data scientists build highly accurate, predictive models and algorithms based on the petabytes of available Microsoft 365 data from Data Connect. They use machine learning to analyze data and make predictions about future outcomes.
+- **LOB business leaders** need actionable insights from Microsoft 365 data because it helps them make informed decisions regarding their organization. By analyzing data, they can identify patterns and trends, including customer relationship analytics, business process analytics, security and compliance analytics, and people productivity analytics.
+- **Data engineers** collect, process, and transform Microsoft 365 data from Data Connect into a format that data scientists and analysts can use. They construct and manage Microsoft 365 data pipelines as data combined across other data sources in Microsoft Fabric and ensure the highest levels of data quality and consistency. 
+- **Data scientists** and **data analysts** play a critical role in helping business leaders make sense of their data and use it to drive business decisions. Data analysts identify trends, patterns, and insights. They analyze Microsoft 365 data and create reports, dashboards, and visualizations to communicate findings and make informed decisions. Data scientists build accurate, predictive models and algorithms based on the petabytes of Microsoft 365 data available from Data Connect. They use machine learning to analyze data and make predictions about future outcomes.
 
 ## Get started 
 
-Getting started with Microsoft Graph Data Connect is easy! 
-
-Simply follow the following the steps at [Build your first Microsoft Graph Data Connect application](/graph/data-connect-quickstart?tabs=AzureSynapsePipeline%2CMicrosoft365):
+At a high level, to set up Data Connect, you:
 
 1. Set up your **Microsoft 365 tenant and enable Microsoft Graph Data Connect**.
 2. Set up your **Azure Active Directory app registration**.
@@ -57,31 +54,29 @@ Simply follow the following the steps at [Build your first Microsoft Graph Data 
 4. Set up your **Azure resource with Azure Synapse or Azure Data Factory**.
 5. Monitor data consent requests with **Microsoft 365 Admin Center or PowerShell**.
 
-And congratulations, you’re all ready to go!
+For more details about how to get started, see [Build your first Microsoft Graph Data Connect application](/graph/data-connect-quickstart?tabs=AzureSynapsePipeline%2CMicrosoft365). 
 
 ## Why choose Microsoft Graph Data Connect?
 
 ![An image that shows the benefits of choosing Microsoft Graph Data Connect.](images/data_connect_why_choose_mgdc.png)
 
-### Scale access to Microsoft 365 data 
+- Gain deep insights into the patterns of organizational collaboration.
+- Make use of a unified, single source of truth with open and governed data lakehouse.
+- Perform interactive analysis directly in a data lake without the need for data migration.
+- Empower data and business users to make more informed and accurate data-driven decisions.
 
-1. Gain deep insights into the patterns of organizational collaboration.
-2. Make use of a unified, single source of truth with open and governed data lakehouse.
-3. Perform interactive analysis directly in a data lake without the need for data migration.
-4. Empower data and business users to make more informed and accurate data-driven decisions.
+To learn more about Data Connect features, see [Scale access to Microsoft 365 data with Microsoft Graph Data Connect](https://devblogs.microsoft.com/microsoft365dev/scale-access-to-microsoft-365-data-with-microsoft-graph-data-connect/).
 
-Learn more about features with Microsoft Graph Data Connect: [Scale access to Microsoft 365 data with Microsoft Graph Data Connect](https://devblogs.microsoft.com/microsoft365dev/scale-access-to-microsoft-365-data-with-microsoft-graph-data-connect/)
+## Data Connect templates
 
-## Accelerate time to insights
+Browse through a gallery of templates that provide the necessary Azure resources, data pipelines, and user experience samples to accelerate your path to realizing the value of Microsoft 365 data. For details, see [Microsoft Graph Data Connect templates](data-connect-templates-overview.md).
 
-Browse through a gallery of templates that provide the necessary Azure resources, data pipelines, and user experience samples to accelerate the path to realizing the value of the M365 data. Learn more about [Microsoft Graph Data Connect templates](data-connect-templates-overview.md):
+Templates help take use cases from hypothesis to implementation by:
 
-Templates help take use cases from hypothesis to implementation in four steps:
-
-1. Aggregate and analyze large volumes of data within minutes.
-2. Simplify development workflows to rapidly and easily build, test, and iterate.
-3. Automate processes to reduce the need for time-consuming, manual processes.
-4. Visualize data without the need for complex report configuration.
+1. Aggregating and analyzing large volumes of data within minutes.
+2. Simplifying development workflows to rapidly build, test, and iterate.
+3. Automating processes to reduce the need for time-consuming, manual processes.
+4. Providing data visualizations without the need for complex report configuration.
 
 <!--- Learn more about the streamlined consent flow and approval: TBD
 -->
@@ -89,26 +84,24 @@ Templates help take use cases from hypothesis to implementation in four steps:
 ### Secure your data with Microsoft Graph Data Connect
 
 1. See persistent data governance in a single view with [Microsoft Purview](/purview/purview). 
-2. Minimize compliance management overhead by specified detailed compliance policies for applications and users.
+2. Minimize compliance management overhead by using specified detailed compliance policies for applications and users.
 3. Follow the industry standard for data privacy and confidentially, with support for critical data protection regulations such as GDPR and HIPAA.
 
-Learn about our security, governance and privacy: [Security, governance and privacy built into Microsoft Graph Data Connect](https://devblogs.microsoft.com/microsoft365dev/security-governance-and-privacy-built-into-microsoft-graph-data-connect/)
+For more details, see [Security, governance and privacy built into Microsoft Graph Data Connect](https://devblogs.microsoft.com/microsoft365dev/security-governance-and-privacy-built-into-microsoft-graph-data-connect/)
 
-Now you can bring all your Microsoft 365 data into [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview). Microsoft 365 Data Integration for Microsoft Fabric is a feature of the new Microsoft Fabric solution, which enables you to manage your Microsoft 365 alongside your other data sources in one place. This solution offers you a suite of analytical experiences that seamlessly work together to transform your data into a competitive advantage.
+Now you can bring all your Microsoft 365 data into [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview). Use the Microsoft 365 Data Integration for Microsoft Fabric feature to manage your Microsoft 365 data alongside your other data sources in one place. This solution offers you a suite of analytical experiences that work together to transform your data into a competitive advantage.
 
 ![An image that shows the benefits of using Microsoft 365 along with Microsoft Fabric.](images/data_connect_microsoft_fabric.png)
 
-To learn more about Microsoft Graph Data Connect integration with Microsoft 365 Fabric:
+To learn more about Microsoft Graph Data Connect integration with Microsoft 365 Fabric, see:
 
-- Microsoft 365 + Fabric Launch Event Video: [Microsoft Fabric Launch Digital Event](https://youtu.be/1o_QDFq6gzE?t=10194)
-- Detailed Microsoft 365 + Fabric eBook: [Transform Your Microsoft 365 Data into Business Insights with Microsoft Graph Data Connect](https://info.microsoft.com/ww-landing-Unlock-Productivity-and-Collaboration-Insights-with-Microsoft-Graph-data_connect-and-Microsoft-Fabric.html)
-- Microsoft 365 + Fabric Blog: [Microsoft 365 Data + Microsoft Fabric better together](https://blog.fabric.microsoft.com/blog/microsoft-365-data-microsoft-fabric-better-together/)
+- [Microsoft Fabric Launch Digital Event video](https://youtu.be/1o_QDFq6gzE?t=10194) 
+- [Transform Your Microsoft 365 Data into Business Insights with Microsoft Graph Data Connect](https://info.microsoft.com/ww-landing-Unlock-Productivity-and-Collaboration-Insights-with-Microsoft-Graph-data_connect-and-Microsoft-Fabric.html)
+- [Microsoft 365 Data + Microsoft Fabric better together blog](https://blog.fabric.microsoft.com/blog/microsoft-365-data-microsoft-fabric-better-together/)
 
-## Microsoft 365 data integrations
+## Microsoft 365 data integration
 
-Microsoft Graph Data Connect is integrated with many Microsoft services. 
-
-Here are the services that are now available:
+Microsoft Graph Data Connect is integrated with the following Microsoft services: 
 
 - Microsoft 365 Data + [Microsoft Fabric](https://aka.ms/microsoft-fabric) 
 - Microsoft 365 Data + [Azure Synapse Analytics](https://azure.microsoft.com/products/synapse-analytics/) 
@@ -118,7 +111,7 @@ Here are the services that are now available:
 
 ## Microsoft Graph Data Connect customer and partner stories
 
-**Customers.** Read about how Microsoft Graph Data Connect customers build enterprise analytics to empower their organizations.
+Microsoft Graph Data Connect customers build enterprise analytics to empower their organizations.
 
 | Logo        | Description |
 | ----------- | ----------- |
@@ -128,7 +121,7 @@ Here are the services that are now available:
 | ![An image that shows a customer logo for G&J Pepsi-Cola Bottlers.](images/data_connect_logo_gjpepsi.png)   | **G&J Pepsi-Cola Bottlers:** Learn more about Pepsi as they reflect on overcoming ransomware attacks and offer insights from the other side: [Microsoft Customer Story-G&J Pepsi reflects on overcoming a ransomware attack, offers insights from the other side](https://customers.microsoft.com/story/1548796714270598782-gjpepsi-consumer-goods-microsoft-security-solutions) |
 
 
-**Partners.** Read about how Microsoft Graph Data Connect has collaborated with a rich network of enterprise technology vendors who have built powerful, joint solutions on Microsoft 365 data: 
+Microsoft Graph Data Connect has a rich network of enterprise technology partners who have built powerful solutions with Microsoft 365 data. 
 
 | Logo        | Description |
 | ----------- | ----------- |
@@ -145,9 +138,9 @@ Here are the services that are now available:
 
 ## Pricing 
 
-Microsoft Graph Data Connect consumption charges are billed using Azure subscriptions. Details on pricing rates can be found here on the official webpage: [Pricing - Microsoft Graph Data Connect](https://azure.microsoft.com/pricing/details/graph-data-connect/). 
+Microsoft Graph Data Connect consumption charges are billed using Azure subscriptions. For details about pricing rates, see [Pricing - Microsoft Graph Data Connect](https://azure.microsoft.com/pricing/details/graph-data-connect/). 
 
-Read more about our recent [Microsoft Graph Data Connect pricing updates](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-data-connect-pricing-updates-2).
+Read more about the recent [Microsoft Graph Data Connect pricing updates](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-data-connect-pricing-updates-2).
 
 ## See also
 
