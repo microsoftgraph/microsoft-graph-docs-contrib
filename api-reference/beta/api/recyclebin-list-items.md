@@ -9,7 +9,7 @@ doc_type: apiPageType
 ---
 # Get recycleBinItem
 
-Retrieve the list of [recycleBinItem](../resources/recycleBinItem.md) resources under the specified site or storageContainer.
+Retrieve the list of [recycleBinItem](../resources/recyclebinitem.md) resources under the specified site or storageContainer.
 
 ## Permissions
 
