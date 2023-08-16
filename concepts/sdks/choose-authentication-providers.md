@@ -208,7 +208,8 @@ use Microsoft\Kiota\Authentication\Oauth\OnBehalfOfContext;
 $tokenRequestContext = new OnBehalfOfContext(
     'TENANT_ID',
     'CLIENT_ID',
-    'CLIENT_SECRET'
+    'CLIENT_SECRET',
+    'ASSERTION'
 );
 
 // Initialize the service client
