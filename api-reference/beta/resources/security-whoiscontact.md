@@ -1,6 +1,6 @@
 ---
 title: "whoisContact resource type"
-description: "Represents key contact details for a whois record"
+description: "Represents key contact details for a whois record."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -15,12 +15,13 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-A **whoisContact** represents a specific contact for whois details. These details are included in a [whoisRecord](../resources/security-whoisrecord.md) to denote a specific contact entry.
+Represents key contact details for a [whoisRecord](../resources/security-whoisrecord.md). These details are included in a [whoisRecord](../resources/security-whoisrecord.md) to denote a specific contact entry.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|address|[microsoft.graph.physicalAddress](../resources/physicaladdress.md)|A physical address of the entity.|
+|address|[microsoft.graph.physicalAddress](../resources/physicaladdress.md)|The physical address of the entity.|
 |email|String|The email of this whois contact.|
 |fax|String|The fax of this whois contact. **Note**: No format is guaranteed.|
 |name|String|The name of this whois contact.|
@@ -28,10 +29,13 @@ A **whoisContact** represents a specific contact for whois details. These detail
 |telephone|String|The telephone of this whois contact. **Note**: No format is guaranteed.|
 
 ## Relationships
+
 None.
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.whoisContact"
@@ -40,13 +44,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.security.whoisContact",
+  "address": {"@odata.type": "microsoft.graph.physicalAddress"},
   "email": "String",
+  "fax": "String",
   "name": "String",
   "organization": "String",
-  "address": {
-    "@odata.type": "microsoft.graph.physicalAddress"
-  },
-  "telephone": "String",
-  "fax": "String"
+  "telephone": "String"
 }
 ```
