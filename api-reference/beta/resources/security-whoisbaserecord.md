@@ -40,7 +40,7 @@ Inherits from [entity](../resources/entity.md).
 |rawWhoisText|String|The raw whois details for this whois object.|
 |registrant|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **registrant** contact.|
 |registrar|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **registrar** contact.|
-|registrationDateTime|DateTimeOffset|The date and time when this whois record was registered with a registrar.|
+|registrationDateTime|DateTimeOffset|The date and time when this whois record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |technical|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **technical** contact.|
 |whoisServer|String|The whois server that provides the details.|
 |zone|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **zone** contact.|
