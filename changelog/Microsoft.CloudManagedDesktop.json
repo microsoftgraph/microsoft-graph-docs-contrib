@@ -3445,6 +3445,40 @@
           "CreatedDateTime": "2023-07-31T09:00:37.9148169Z",
           "WorkloadArea": "Device and app management",
           "SubArea": "Cloud PC"
-        }
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "cd506d8f-eddb-4d12-859d-a7894452989e",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "CloudPC.ReadWrite.All",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the create operations of the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-beta&tabs=http) resource.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "cd506d8f-eddb-4d12-859d-a7894452989e",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "CloudPC.ReadWrite.All",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the update operations of the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-update?view=graph-rest-beta&tabs=http) resource.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "cd506d8f-eddb-4d12-859d-a7894452989e",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "CloudPC.ReadWrite.All",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the runHealthChecks operations of the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&tabs=http) resource.",
+                    "Target": "cloudPC"
+                }
+              ],
+              "Id": "cd506d8f-eddb-4d12-859d-a7894452989e",
+              "Cloud": "Prod",
+              "Version": "beta",
+              "CreatedDateTime": "2023-08-02T11:36:16.0017333Z",
+              "WorkloadArea": "Device and app management",
+              "SubArea": "Cloud PC"
+          }
     ]
 }
