@@ -44,7 +44,7 @@ GET /security/threatIntelligence/whoisRecords
 
 This method supports the `$count`, `$orderby`, `$search`, `$select`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-`$count` is supported to return a wholistic count of the number of [whoisRecord](../resources/security-whoisrecord.md) objects. This is supported as a query parameter (`?$count=true`) or as a path parameter (`/$count`).
+`$count` is supported to return a holistic count of the number of [whoisRecord](../resources/security-whoisrecord.md) objects. This is supported as a query parameter (`?$count=true`) or as a path parameter (`/$count`).
 
 The following properties can be used for `$orderby` calls.
 
@@ -54,19 +54,19 @@ The following properties can be used for `$orderby` calls.
 | `host/id`              | `$orderby=host/id asc`               | The full path is required for `$orderby` usage. |
 | `registrationDateTime` | `$orderby=registrationDateTime desc` |                                                 |
 
-`$search` is **required** when calling the `whoisRecords` List API. The API currently only supports searching by one field in a call.The following properties can be used for searching:
+`$search` is **required** when calling the `whoisRecords` List API. The API currently only supports searching by one field in a call. The following properties can be used for searching:
 
 | Property      | Example                                   | Notes                                                                                                    |
 | :------------ | :---------------------------------------- | :------------------------------------------------------------------------------------------------------- |
-| `abuse`       | `$search=abuse/address/state:WA`          | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `admin`       | `$search=admin/address/state:WA`          | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `billing`     | `$search=billing/address/state:WA`        | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `nameservers` | `$search=nameservers/host/id:contoso.com` | The `$search` must search against as specific host id.                                                   |
-| `noc`         | `$search=noc/address/state:WA`            | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `registrant`  | `$search=registrant/address/state:WA`     | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `registrar`   | `$search=registrar/address/state:WA`      | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `technical`   | `$search=technical/address/state:WA`      | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `zone`        | `$search=zone/address/state:WA`           | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
+| `abuse`       | `$search="abuse/address/state:WA"`          | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
+| `admin`       | `$search="admin/address/state:WA"`          | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
+| `billing`     | `$search="billing/address/state:WA"`        | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
+| `nameservers` | `$search="nameservers/host/id:contoso.com"` | The `$search` must search against as specific host id.                                                   |
+| `noc`         | `$search="noc/address/state:WA"`            | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
+| `registrant`  | `$search="registrant/address/state:WA"`     | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
+| `registrar`   | `$search="registrar/address/state:WA"`      | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
+| `technical`   | `$search="technical/address/state:WA"`      | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
+| `zone`        | `$search="zone/address/state:WA"`           | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
 
 `$select` is supported to limit the properties returned in this query.
 
