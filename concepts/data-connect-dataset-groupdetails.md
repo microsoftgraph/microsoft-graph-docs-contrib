@@ -51,6 +51,7 @@ The GroupDetails_v0 dataset can be joined with the GroupOwners_v0 and GroupMembe
 
 ## Schema
 
+
 | Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | id |	string |	Unique | Directory ID for the group in AAD. |	No |	None |
