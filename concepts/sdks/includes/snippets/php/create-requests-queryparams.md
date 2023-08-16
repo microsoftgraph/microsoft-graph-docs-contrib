@@ -5,10 +5,23 @@ use Microsoft\Graph\Generated\Users\Item\Messages\MessagesRequestBuilderGetQuery
 use Microsoft\Graph\Generated\Users\Item\Messages\MessagesRequestBuilderGetRequestConfiguration;
 
 $requestConfig = new MessagesRequestBuilderGetRequestConfiguration();
-$requestConfig->queryParameters = new MessagesRequestBuilderGetQueryParameters();
-$requestConfig->queryParameters->select = ['subject', 'from'];
-$requestConfig->queryParameters->skip = 2;
-$requestConfig->queryParameters->top = 3;
+$requestConfig->queryParameters = MessagesRequestBuilderGetRequestConfiguration::createQueryParameters();
+$requestConfig->queryParameters->select = ['subject'];
+$requestConfig->queryParameters->top = 2;
+$requestConfig->headers = ['Prefer' => 'outlook.body-content-type=text'];
 
-$messages = $graphServiceClient->me()->messages()->get($requestConfig)->wait();
+// or with PHP 8
+$requestConfig = new MessagesRequestBuilderGetRequestConfiguration(
+    queryParameters: MessagesRequestBuilderGetRequestConfiguration::createQueryParameters(
+        select: ['subject'],
+        top: 2
+    ),
+    headers: ['Prefer' => 'outlook.body-content-type=text']
+);
+
+$messages = $graphServiceClient->users()->byUserId(USER_ID)->messages()->get($requestConfig)->wait();
+
+foreach ($messages->getValue() as $message) {
+    echo "Subject: {$message->getSubject()}\n";
+}
 ```
