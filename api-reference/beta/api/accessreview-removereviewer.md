@@ -2,7 +2,7 @@
 title: "Remove accessReview reviewer (deprecated)"
 description: "Remove an access review reviewer."
 ms.localizationpriority: medium
-author: "markwahl-msft"
+author: "shubhamguptacal"
 ms.prod: "governance"
 doc_type: apiPageType
 ---

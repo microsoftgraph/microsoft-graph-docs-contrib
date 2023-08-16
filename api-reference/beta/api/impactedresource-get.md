@@ -1,9 +1,9 @@
 ---
 title: "Get impactedResource"
 description: "Read the properties and relationships of an impactedResource object."
-author: "hafowler"
+author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
