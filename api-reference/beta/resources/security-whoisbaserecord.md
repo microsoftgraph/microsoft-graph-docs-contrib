@@ -32,7 +32,7 @@ Inherits from [entity](../resources/entity.md).
 |domainStatus|String|The domain status for this whois object.|
 |expirationDateTime|DateTimeOffset|The date and time when this whois record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |firstSeenDateTime|DateTimeOffset|The first seen date and time of this whois record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|id|String|The id for this Whois record object. Inherited from [entity](../resources/entity.md).|
+|id|String|The ID for this whois record object. Inherited from [entity](../resources/entity.md).|
 |lastSeenDateTime|DateTimeOffset|The last seen date and time of this whois record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |lastUpdateDateTime|DateTimeOffset|The date and time when this whois record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |nameservers|[microsoft.graph.security.whoisNameserver](../resources/security-whoisnameserver.md) collection|The nameservers for this whois object.|
