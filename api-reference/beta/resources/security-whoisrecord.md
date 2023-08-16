@@ -1,6 +1,6 @@
 ---
 title: "whoisRecord resource type"
-description: "Represents a whois record of a host"
+description: "Represents a whois record that communicates a registered host, the contacts for the registered host, and other metadata about the registration."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -15,47 +15,52 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents a Whois entry, which communicates a registered [host](../resources/security-host.md), the contacts for that resource, and other metadata about the registration.
+Represents a whois record that communicates a registered [host](../resources/security-host.md), the contacts for the registered **host**, and other metadata about the registration.
 
 Inherits from [whoisBaseRecord](../resources/security-whoisbaserecord.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get whoisRecord for a host](../api/security-host-get-whois.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) |Get the [whoisRecord](../resources/security-whoisrecord.md) object and their properties.|
 |[Get whoisRecord](../api/security-whoisrecord-get.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md)|Read the properties and relationships of a [whoisRecord](../resources/security-whoisrecord.md) object.|
+|[Get whoisRecord for a host](../api/security-host-get-whois.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) |Get the [whoisRecord](../resources/security-whoisrecord.md) object and their properties.|
 |[List history of a whois record](../api/security-whoisrecord-list-history.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md)|List the [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects for a [whoisRecord](../resources/security-whoisrecord.md).|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |abuse|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **abuse** contact. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
 |admin|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **admin** contact. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
 |billing|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **billing** contact. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
 |domainStatus|String|The domain status for this whois object. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
-|expirationDateTime|DateTimeOffset|The date and time that this whois record will expire with the registrar. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
-|firstSeenDateTime|DateTimeOffset|The first seen date and time of this whois record. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
-|id|String|The id for this Whois record object. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
-|lastSeenDateTime|DateTimeOffset|The last seen date and time of this whois record. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
-|lastUpdateDateTime|DateTimeOffset|The date and time that this whois record was last updated. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
+|expirationDateTime|DateTimeOffset|The date and time when this whois record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
+|firstSeenDateTime|DateTimeOffset|The first seen date and time of this whois record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
+|id|String|The ID for this whois record object. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
+|lastSeenDateTime|DateTimeOffset|The last seen date and time of this whois record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
+|lastUpdateDateTime|DateTimeOffset|The date and time when this whois record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
 |nameservers|[microsoft.graph.security.whoisNameserver](../resources/security-whoisnameserver.md) collection|The nameservers for this whois object. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
 |noc|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **noc** contact. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
 |rawWhoisText|String|The raw whois details for this whois object. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
 |registrant|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **registrant** contact. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
 |registrar|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **registrar** contact. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
-|registrationDateTime|DateTimeOffset|The date and time that this whois record was registered with a registrar. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
+|registrationDateTime|DateTimeOffset|The date and time when this whois record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
 |technical|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **technical** contact. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
-|whoisServer|String|The whois server providing the details. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
+|whoisServer|String|The whois server that provides the details. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
 |zone|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **zone** contact. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
+|history|[microsoft.graph.security.whoisHistoryRecord](../resources/security-whoisHistoryRecord.md) collection|The collection of history records associated to this whois object.|
 |host|[microsoft.graph.security.host](../resources/security-host.md)|The host associated to this whois object. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
-|history|[microsoft.graph.security.host](../resources/security-host.md)|The Collection of history associated to this whois object.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -66,44 +71,24 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.security.whoisRecord",
-  "id": "String (identifier)",
-  "registrationDateTime": "String (timestamp)",
+  "@odata.type": "#microsoft.graph.security.whoisHistoryRecord",
+  "abuse": {"@odata.type": "microsoft.graph.security.whoisContact"},
+  "admin": {"@odata.type": "microsoft.graph.security.whoisContact"},
+  "billing": {"@odata.type": "microsoft.graph.security.whoisContact"},
+  "domainStatus": "String",
   "expirationDateTime": "String (timestamp)",
   "firstSeenDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "lastSeenDateTime": "String (timestamp)",
   "lastUpdateDateTime": "String (timestamp)",
-  "abuse": {
-    "@odata.type": "microsoft.graph.security.whoisContact"
-  },
-  "admin": {
-    "@odata.type": "microsoft.graph.security.whoisContact"
-  },
-  "billing": {
-    "@odata.type": "microsoft.graph.security.whoisContact"
-  },
-  "registrar": {
-    "@odata.type": "microsoft.graph.security.whoisContact"
-  },
-  "registrant": {
-    "@odata.type": "microsoft.graph.security.whoisContact"
-  },
-  "technical": {
-    "@odata.type": "microsoft.graph.security.whoisContact"
-  },
-  "noc": {
-    "@odata.type": "microsoft.graph.security.whoisContact"
-  },
-  "zone": {
-    "@odata.type": "microsoft.graph.security.whoisContact"
-  },
-  "nameservers": [
-    {
-      "@odata.type": "microsoft.graph.security.whoisNameserver"
-    }
-  ],
+  "nameservers": [{"@odata.type": "microsoft.graph.security.whoisNameserver"}],
+  "noc": {"@odata.type": "microsoft.graph.security.whoisContact"},
+  "rawWhoisText": "String",
+  "registrant": {"@odata.type": "microsoft.graph.security.whoisContact"},
+  "registrar": {"@odata.type": "microsoft.graph.security.whoisContact"},
+  "registrationDateTime": "String (timestamp)",
+  "technical": {"@odata.type": "microsoft.graph.security.whoisContact"},
   "whoisServer": "String",
-  "domainStatus": "String",
-  "rawWhoisText": "String"
+  "zone": {"@odata.type": "microsoft.graph.security.whoisContact"}
 }
 ```
