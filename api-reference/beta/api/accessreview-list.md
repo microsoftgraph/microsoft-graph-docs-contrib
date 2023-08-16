@@ -2,7 +2,7 @@
 title: "List accessReviews (deprecated)"
 description: "Retrieve accessReview objects for a businessFlowTemplate."
 ms.localizationpriority: medium
-author: "markwahl-msft"
+author: "shubhamguptacal"
 ms.prod: "governance"
 doc_type: apiPageType
 ---

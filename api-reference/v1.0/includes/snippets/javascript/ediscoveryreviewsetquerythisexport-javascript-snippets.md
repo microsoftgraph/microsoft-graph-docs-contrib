@@ -13,7 +13,7 @@ const client = Client.init(options);
 const _export = {
     outputName: 'Export reviewset query via API',
     description: 'Export for the Contoso investigation 2',
-    exportOptions: 'originalFiles,fileInfo,tags',
+    exportOptions: 'originalFiles,tags',
     exportStructure: 'directory'
 };
 

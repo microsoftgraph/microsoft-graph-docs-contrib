@@ -2,7 +2,7 @@
 title: "homeRealmDiscoveryPolicy resource type"
 description: "Represents a policy to control Azure Active Directory authentication behavior for federated users."
 ms.localizationpriority: medium
-author: "hpsin"
+author: "nickludwig"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
@@ -58,7 +58,7 @@ The properties below form the JSON object that represents a token lifetime polic
   ]
 ```
 
-| Property	   | Type	|Description| 
+| Property       | Type    |Description| 
 |:---------------|:--------|:----------|
 |AccelerateToFederatedDomain|Boolean| Set to `true` for auto-acceleration (bypass home realm discovery). If `true` and there is only one verified and federated domain in the tenant, then users will be taken straight to the federated identity provider (such as ADFS) for sign in. If `true` and there is more than one verified domain in the tenant, **PreferredDomain** must be specified. Optional.|
 |AllowCloudPasswordValidation|Boolean| Set to `true` to allow an application to authenticate a federated user by presenting username/password credentials directly to the Azure Active Directory token endpoint. Only works if Password Hash Sync is enabled. Optional.|

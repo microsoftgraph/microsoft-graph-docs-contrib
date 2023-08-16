@@ -45,11 +45,9 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200, OK` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
 
 ## Examples
-
-The following example shows how to call this API.
 
 ### Request
 
@@ -83,10 +81,6 @@ POST https://graph.microsoft.com/beta/security/securityActions/{id}/cancelSecuri
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/securityaction-cancelsecurityaction-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/securityaction-cancelsecurityaction-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

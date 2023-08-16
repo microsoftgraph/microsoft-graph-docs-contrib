@@ -40,7 +40,7 @@ requestBody.SetLastReportedDateTime(&lastReportedDateTime)
 userPrincipalName := "User Principal Name value"
 requestBody.SetUserPrincipalName(&userPrincipalName) 
 
-result, err := graphClient.DeviceManagement().IosUpdateStatuses().Post(context.Background(), requestBody, nil)
+iosUpdateStatuses, err := graphClient.DeviceManagement().IosUpdateStatuses().Post(context.Background(), requestBody, nil)
 
 
 ```

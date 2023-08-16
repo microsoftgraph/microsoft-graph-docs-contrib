@@ -100,6 +100,9 @@ You can also use [Teams app installation](/graph/api/resources/teamsappinstallat
 
 ## Send activity feed notifications to users
 
+> [!NOTE]
+> To show activity feed notifications on iOS and Android clients, the app must be included in the allow list. Only third-party apps are supported.
+
 Because a Teams app can be installed for a user, in a team, or in a chat, the notifications can be sent in these three contexts as well:
 
 - [Send notification to user in a chat](/graph/api/chat-sendactivitynotification)
@@ -503,7 +506,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/team-sendactivitynotification-channelmember-about-event-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

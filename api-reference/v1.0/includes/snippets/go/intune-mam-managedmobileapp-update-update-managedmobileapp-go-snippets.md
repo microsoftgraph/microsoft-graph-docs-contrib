@@ -23,7 +23,7 @@ requestBody.SetMobileAppIdentifier(mobileAppIdentifier)
 version := "Version value"
 requestBody.SetVersion(&version) 
 
-result, err := graphClient.DeviceAppManagement().IosManagedAppProtections().ByIosManagedAppProtectionId("iosManagedAppProtection-id").Apps().ByAppId("managedMobileApp-id").Patch(context.Background(), requestBody, nil)
+apps, err := graphClient.DeviceAppManagement().IosManagedAppProtections().ByIosManagedAppProtectionId("iosManagedAppProtection-id").Apps().ByManagedMobileAppId("managedMobileApp-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

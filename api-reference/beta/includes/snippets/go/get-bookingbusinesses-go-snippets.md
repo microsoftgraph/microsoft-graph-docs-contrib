@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.BookingBusinesses().Get(context.Background(), nil)
+bookingBusinesses, err := graphClient.BookingBusinesses().Get(context.Background(), nil)
 
 
 ```

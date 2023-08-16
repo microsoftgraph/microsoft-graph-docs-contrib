@@ -4,7 +4,7 @@ description: "In the Azure AD access reviews feature, delete a program object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "markwahl-msft"
+author: "shubhamguptacal"
 ---
 
 # Delete program (deprecated)
