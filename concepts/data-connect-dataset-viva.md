@@ -17,10 +17,13 @@ Use the VivaInsightsDataset_Report_v1_[Viva Insights query name] dataset to gain
 
 ## Scenarios
 
-Scenarios are customizable, depending on what dataset you choose to export. Scenarios fall into the following two categories:
+Scenarios are customizable, depending on what dataset you choose to export. 
 
-- [Person queries](/viva/insights/advanced/analyst/person-query-overview); for example, using Viva Insights metrics to understand the relationship between a person’s organizational attributes – like their team, level, or location – and how they use their time. Or when you want to know how one aspect of a person’s time use might influence another aspect of their time use.
-- [Meeting queries](/viva/insights/advanced/analyst/meeting-query); for example, using Viva Insights metrics to understand the relationship between different meeting attributes.
+Scenarios are based on the following categories:
+
+- [Power BI report templates](/viva/insights/advanced/analyst/templates/introduction-to-templates); includes hybrid workforce experience, impact explorer, manager effectiveness, meeting effectiveness, onboarding and development, recurring meeting audit, ways of working, and wellbeing - balance and flexibility.
+- [Custom person queries](/viva/insights/advanced/analyst/person-query-overview); for example, using Viva Insights metrics to understand the relationship between a person’s organizational attributes – like their team, level, or location – and how they use their time. Or when you want to know how one aspect of a person’s time use might influence another aspect of their time use.
+- [Customer meeting queries](/viva/insights/advanced/analyst/meeting-query); for example, using Viva Insights metrics to understand the relationship between different meeting attributes.
 
 ## Questions
 
