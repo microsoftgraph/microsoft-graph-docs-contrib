@@ -14161,8 +14161,6 @@ items:
                         href: api/delegatedadminrelationship-update.md
                       - name: Delete
                         href: api/delegatedadminrelationship-delete.md
-                      - name: Reseller Delegated admin relationships
-                        href: resources/resellerdelegatedadminrelationship.md
                   - name: Delegated admin access assignments
                     href: resources/delegatedadminaccessassignment.md
                     items:
