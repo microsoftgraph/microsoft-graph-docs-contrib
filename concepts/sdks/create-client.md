@@ -33,9 +33,6 @@ use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Kiota\Abstractions\ApiException;
 use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
 
-set_include_path(__DIR__);
-require 'vendor/autoload.php';
-
 $tokenRequestContext = new ClientCredentialContext(
     'tenantID',
     'clientID',
