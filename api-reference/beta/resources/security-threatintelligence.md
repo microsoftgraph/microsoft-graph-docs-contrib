@@ -42,6 +42,8 @@ The threat intelligence API allows you to operationalize intelligence found with
 | [Get passiveDnsRecord](../api/security-passivednsrecord-get.md)                 |[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) |Get the properties and relationships of a **hostTracker** object.|
 | [Get subdomain](../api/security-subdomain-get.md)                               |[microsoft.graph.security.subdomain](../resources/security-subdomain.md) |Get the properties and relationships of a **subdomain** object.|
 | [Get vulnerabilities](../api/security-vulnerability-get.md)                     |[microsoft.graph.security.vulnerability](../resources/security-vulnerability.md) |Get the properties and relationships of a **vulnerability** object.|
+| [List whoisRecords](../api/security-whoisrecord-list.md)                     |[microsoft.graph.security.whoisRecord](../resources/security-vulnerability.md) |Get a list of **whoisRecord** objects.|
+| [Get whoisHistoryRecord](../api/security-whoishistoryrecord-get.md)                     |[microsoft.graph.security.whoisHistoryRecord](../resources/security-whoishistoryrecord.md) |Get the properties and relationships of a **whoisHistoryRecord** object.|
 
 ## Properties
 
@@ -63,6 +65,8 @@ None.
 |passiveDnsRecords|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection|Retrieve details about [microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) objects.<br/>**Note**: List retrieval is not yet supported.|
 |subdomains|[microsoft.graph.security.subdomain](../resources/security-subdomain.md) collection|Retrieve details about the [microsoft.graph.security.subdomain](../resources/security-subdomain.md).<br/>**Note**: List retrieval is not yet supported.|
 |vulnerabilities|[microsoft.graph.security.vulnerability](../resources/security-vulnerability.md) collection|Retrieve details about [microsoft.graph.security.vulnerabilities](../resources/security-vulnerability.md).<br/>**Note**: List retrieval is not yet supported.|
+|whoisRecords|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) collection|A list of [whoisRecord](../resources/security-whoisrecord.md) objects.|
+|whoisHistoryRecords|[microsoft.graph.security.whoisHistoryRecord](../resources/security-whoishistoryrecord.md) collection|Retrieve details about [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects.<br/>**Note**: List retrieval is not yet supported.|
 
 ## JSON representation
 
