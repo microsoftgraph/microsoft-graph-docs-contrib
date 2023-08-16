@@ -29,21 +29,18 @@ The following code examples show how to create an instance of a Microsoft Graph 
 
 ```php
 <?php
-use Microsoft\Graph\GraphRequestAdapter;
 use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Kiota\Abstractions\ApiException;
-use Microsoft\Kiota\Authentication\GraphPhpLeagueAuthenticationProvider;
 use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
 
+set_include_path(__DIR__);
+require 'vendor/autoload.php';
 
-// Get access without a logged in user. Use the AuthorizationCodeContext or OnBehalfOfContext with a logged in user
 $tokenRequestContext = new ClientCredentialContext(
-    'TENANT_ID',
-    'CLIENT_ID',
-    'CLIENT_SECRET'
+    'tenantID',
+    'clientID',
+    'clientSecret'
 );
-
-// Initialize the service client
 $graphServiceClient = new GraphServiceClient($tokenRequestContext);
 
 ```
