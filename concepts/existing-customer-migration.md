@@ -8,22 +8,22 @@ ms.custom: scenarios:getting-started
 
 # How existing customers can migrate to the enhanced Microsoft Graph Data Connect consent experience
 
-New customers who onboard onto Microsoft Graph Data Connect beginning in late August 2023 will automatically start using the enhanced authorization experience. Existing customers with the [PAM authorization flow](./data-connect-pam.md) can migrate to the enhanced experience in three phases.
+Starting in late August 2023, new customers who onboard to Microsoft Graph Data Connect automatically use the enhanced authorization experience. Existing customers who onboarded by using the [PAM authorization flow](./data-connect-pam.md) can migrate to the enhanced experience in three phases.
 
 ## Phase 1: Self-serve migration
 
 <!-- Date changed to "August 2023" and once the release goes out fully, we can add a quick change to add the exact date. -->
 
-If you are an existing Data Connect customer and want to get started with the improved app registration and authorization experience, simply have your tenant admin disable Data Connect in the Microsoft 365 admin portal and then re-enable it. Then, follow the steps in the [onboarding guide](./onboarding-experience-overview.md).
+If you're an existing Data Connect customer and want to get started with the enhanced app registration and authorization experience, have your tenant admin disable Data Connect in the Microsoft 365 admin portal and then re-enable it. Then, follow the steps in the [onboarding guide](./onboarding-experience-overview.md).
 
-This option is available today. If you choose this option, none of your existing Privileged Access Management (PAM) authorizations will be migrated to the new experience. You'll need to register the apps from scratch, and work with your tenant admin to get them authorized.
+This option is available today. If you choose this option, none of your existing Privileged Access Management (PAM) authorizations will be migrated to the new experience. You'll need to register the apps and work with your tenant admin to get them authorized.
 
-## Phase 2: One-click auto migration
+## Phase 2: One-click automatic migration
 
-Existing Data Connect customers are provided the option to perform a one-click auto-migration from PAM over to the new onboarding experience. This auto-migration handles the conversion of existing PAM authorizations into app registrations and maintains existing app authorizations. The goal is to enable a smooth migration with no downtime for existing customers.
+Existing Data Connect customers have the option to perform a one-click automatic migration from PAM to the enhanced onboarding experience. This migration handles the conversion of existing PAM authorizations into app registrations and maintains existing app authorizations. The goal is to enable a smooth migration with no downtime for existing customers.
 
-Existing customer will see this option later in 2023. More details will be shared as we get closer to the release.
+This option will be available in late 2023. Stay tuned for more details.
 
 ## Phase 3: Automatic migration
 
-In this phase, existing Data Connect customers who didn't perform the one-click auto-migration will be automatically migrated to the new onboarding experience. When available, we will announce the date to begin force migration. We anticipate this to be in late 2023, or early 2024. Any customer who is not migrated by the beginning of phase 3 will be automatically migrated to the new experience on their first run of Data Connect, once phase 3 begins.
+In this phase, existing Data Connect customers who didn't perform the one-click automatic migration will be migrated automatically to the new onboarding experience. This option will be availalbe in late 2023 or early 2024. When this phase begins, any customer who is not migrated at this time will automatically be migrated to the new experience on their first run of Data Connect.
