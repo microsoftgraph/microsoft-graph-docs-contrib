@@ -68,7 +68,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-PUT https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/accessPackageCustomWorkflowExtensions/78ffaec5-ae8e-4902-a434-5ffc5d3d3cd0
+PUT https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customWorkflowExtensions/78ffaec5-ae8e-4902-a434-5ffc5d3d3cd0
 Content-Type: application/json
 
 {

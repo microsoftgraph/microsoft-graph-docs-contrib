@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /identityGovernance/entitlementManagement/catalogs/{catalogId}/accessPackageCustomWorkflowExtensions
+POST /identityGovernance/entitlementManagement/catalogs/{catalogId}/customWorkflowExtensions
 ```
 
 ## Request headers
@@ -77,7 +77,7 @@ The following is an example of a access package assignment request custom workfl
 -->
 
 ``` http
-POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/accessPackagecustomWorkflowExtensions
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customWorkflowExtensions
 Content-Type: application/json
 
 {
@@ -152,7 +152,7 @@ The following is an example of a access package assignment custom workflow exten
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/accessPackagecustomWorkflowExtensions
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customWorkflowExtensions
 Content-Type: application/json
 
 {
