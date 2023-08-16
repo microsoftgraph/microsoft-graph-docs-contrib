@@ -50,10 +50,10 @@ The User_v1 dataset can be joined with other datasets that can be mapped to the 
 | aboutMe |	string |	A freeform text entry field for the user to describe themselves. |	No |	None |
 | accountEnabled |	boolean | True if the account is enabled; otherwise, false.	 | No  |	None  |
 | ageGroup  |	string  |	Sets the age group of the user. *Allowed values:* null, minor, notAdult and adult.  |	No  |	None  |
-| assignedLicenses |	string  |	The licenses that are assigned to the user. `*Format:* ARRAY<STRUCT<`disabledPlans`:ARRAY<STRING>, `skuId`:STRING>>.` |	No  |	None  |
-| assignedPlans  |	string  |	The plans that are assigned to the user. `*Format:* ARRAY<STRUCT<`assignedDateTime`:STRING, `capabilityStatus`:STRING, `service`:STRING, `servicePlanId`:STRING>>.`  |	No  |	None  |
+| assignedLicenses |	string  |	The licenses that are assigned to the user. *Format:*` ARRAY<STRUCT<`disabledPlans`:ARRAY<STRING>, `skuId`:STRING>>.` |	No  |	None  |
+| assignedPlans  |	string  |	The plans that are assigned to the user. *Format:*` ARRAY<STRUCT<`assignedDateTime`:STRING, `capabilityStatus`:STRING, `service`:STRING, `servicePlanId`:STRING>>.`  |	No  |	None  |
 | birthday	 | string	 | The birthdate of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.  |	No  |	None  |
-| businessPhones	 | string  |	The telephone numbers for the user. *Note:* Although this is a string collection, only one number can be set for this property. `*Format:* ARRAY<STRING>. ` |	No  |	None  |
+| businessPhones	 | string  |	The telephone numbers for the user. *Note:* Although this is a string collection, only one number can be set for this property. *Format:*` ARRAY<STRING>. ` |	No  |	None  |
 | city  |	string  |	The city where the user's office is located.  |	No  |	None  |
 | companyName  |	string  |	The company name for where the user works.  |	No  |	None  |
 | consentProvidedForMinor  |	string  |	Sets whether consent has been obtained for minors. *Allowed values:* null, granted, denied and notRequired.  |	No  |	None  |
@@ -64,8 +64,8 @@ The User_v1 dataset can be joined with other datasets that can be mapped to the 
 | givenName  |	string  |	The given name (first name) of the user.  |	No  |	None  |
 | hireDate	 | string  |	The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.  |	No  |	None  |
 | id  |	string  |	The unique identifier for the user. Inherited from directoryObject.  |	No  |	None  |
-| imAddresses  |	string  |	The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. `*Format:* ARRAY<STRING>.`  |	No  |	None  |
-| interests  |	string  |	A list of interests for the user. `*Format:* ARRAY<STRING>.`  |	No  |	None  |
+| imAddresses  |	string  |	The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. *Format:*` ARRAY<STRING>.`  |	No  |	None  |
+| interests  |	string  |	A list of interests for the user. *Format:*` ARRAY<STRING>.`  |	No  |	None  |
 | jobTitle  |	string  |	The user’s job title.  |	No  |	None  |
 | legalAgeGroupClassification  |	string  |	Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties. *Allowed values:* null, minorWithOutParentalConsent, minorWithParentalConsent, minorNoParentalConsentRequired, notAdult and adult.  |	No  |	None  |
 | mail   |	string  |	The SMTP address for the user.  |	No  |	None  |
@@ -78,15 +78,15 @@ The User_v1 dataset can be joined with other datasets that can be mapped to the 
 | onPremisesSecurityIdentifier  |	string  |	Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud.  |	No  |	None  |
 | onPremisesSyncEnabled  |	boolean  |	True if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default).  |	No  |	None  |
 | passwordPolicies  |	string  |	Specifies password policies for the user. This value is an enumeration with one possible value being "DisableStrongPassword",  allowing weaker passwords than the default policy to be specified. "DisablePasswordExpiration" can also be specified. The two may be specified together.  |	No  |	None  |
-| pastProjects  |	string  |	A list for the user to enumerate their past projects. `*Format:* ARRAY<STRING>.`  |	No  |	None  |
+| pastProjects  |	string  |	A list for the user to enumerate their past projects. *Format:*` ARRAY<STRING>.`  |	No  |	None  |
 | postalCode  |	string  |	The postal code for the user's postal address. The postal code is specific to the user's country/region. In the U.S. this attribute contains ZIP codes.  |	No  |	None  |
 | preferredLanguage  |	string  |	The preferred language of the user. Should follow ISO 639-1 Code; for example \"en-US\".  |	No  |	None  |
 | preferredName  |	string  |	The preferred name of the user.  |	No  |	None  |
-| provisionedPlans  |	string  |	The plans that are provisioned for the user. Read-only. Not nullable. `*Format:* ARRAY<STRUCT<`capabilityStatus`:STRING, `provisioningStatus`:STRING, `service`:STRING>>.`  |	No  |	None  |
-| proxyAddresses  |	string	 | The proxy address for the usesr. `*Format:* ARRAY<STRING>.`  |	No  |	None  |
-| responsibilities  |	string  |	A list for the user to enumerate their responsibilities. `*Format:* ARRAY<STRING>.`  |	No  |	None  |
-| schools  |	string  |	A list for the user to enumerate the schools they've attended. `*Format:* ARRAY<STRING>.`  |	No  |	None  |
-| skills  |	string  |	A list for the user to enumerate their skills. `*Format:* ARRAY<STRING>.`  |	No  |	None  |
+| provisionedPlans  |	string  |	The plans that are provisioned for the user. Read-only. Not nullable. *Format:*` ARRAY<STRUCT<`capabilityStatus`:STRING, `provisioningStatus`:STRING, `service`:STRING>>.`  |	No  |	None  |
+| proxyAddresses  |	string	 | The proxy address for the usesr. *Format:*` ARRAY<STRING>.`  |	No  |	None  |
+| responsibilities  |	string  |	A list for the user to enumerate their responsibilities. *Format:*` ARRAY<STRING>.`  |	No  |	None  |
+| schools  |	string  |	A list for the user to enumerate the schools they've attended. *Format:*` ARRAY<STRING>.`  |	No  |	None  |
+| skills  |	string  |	A list for the user to enumerate their skills. *Format:*` ARRAY<STRING>.`  |	No  |	None  |
 | state  |	string  |	The state or province for the user's address.  |	No  |	None  |
 | streetAddress  |	string  |	The street address for the user's place of business.  |	No  |	None  |
 | surname  |	string  |	The user's surname (family name or last name).  |	No  |	None  |

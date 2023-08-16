@@ -44,8 +44,8 @@ The TodoTasks_v0 dataset can be joined with the User_v1 dataset using the unique
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | Id | String | The unique identifier of the task. | No | False | 
 | AssignedTo	| String | The name of the person who has been assigned the task. |	No | False |
-| Body	| String | The task body that typically contains information about the task. `*Format:* STRUCT<ContentType: STRING, Content: STRING>. `| No  |	False |
-| Categories |	String |	The categories associated with the task. `*Format:* ARRAY<STRING>. ` |	No | False |
+| Body	| String | The task body that typically contains information about the task. *Format:*` STRUCT<ContentType: STRING, Content: STRING>. `| No  |	False |
+| Categories |	String |	The categories associated with the task. *Format:*` ARRAY<STRING>. ` |	No | False |
 | ChangeKey	| String |	The version of the task. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.	| No | 	False |
 | CompletedDateTime |	Datetime |	The date in the specified time zone that the task was finished. |	No | False |
 | CreatedDateTime |	Datetime |	The date and time when the task was created. By default, it is in UTC. | Yes | True |
@@ -56,13 +56,13 @@ The TodoTasks_v0 dataset can be joined with the User_v1 dataset using the unique
 | LastModifiedDateTime |	Datetime |	The date and time when the task was last modified. By default, it is in UTC. |	Yes |	True |
 | Owner	| String |	The name of the person who created the task. |	No |	False |
 | ParentFolderId |	String |	The unique identifier for the task's parent folder. |	No | False |
-| Recurrence | String | The recurrence pattern for the task. `*Format:* STRUCT<Pattern: STRUCT<Type: STRING, `Interval`: INT, Month: INT, DayOfMonth: INT, DaysOfWeek: ARRAY<STRING>, FirstDayOfWeek: STRING, Index: STRING>, 'Range': STRUCT<Type: STRING, StartDate: STRING, EndDate: STRING, RecurrenceTimeZone: STRING, NumberOfOccurrences: INT>>. ` |	No | False |
+| Recurrence | String | The recurrence pattern for the task. *Format:*` STRUCT<Pattern: STRUCT<Type: STRING, `Interval`: INT, Month: INT, DayOfMonth: INT, DaysOfWeek: ARRAY<STRING>, FirstDayOfWeek: STRING, Index: STRING>, 'Range': STRUCT<Type: STRING, StartDate: STRING, EndDate: STRING, RecurrenceTimeZone: STRING, NumberOfOccurrences: INT>>. ` |	No | False |
 | ReminderDateTime |	Datetime |	The date and time for a reminder alert of the task to occur. |	No | False |
 | Sensitivity	| String | Indicates the level of privacy for the event: Normal, Personal, Private, Confidential.	| No | False |
 | StartDateTime	| Datetime |	The date in the specified time zone when the task is to begin. |	No | False |
 | Status | String |	Indicates state or progress of the task: NotStarted, InProgress, Completed, WaitingOnOthers, Deferred. |	No |	False |
 | Subject	| String |	A brief description or title of the task.	| No | False |
-| Attachments	| String | The FileAttachment and ItemAttachment attachments for the message. Navigation property. `*Format:* ARRAY<STRUCT<LastModifiedDateTime: STRING, Name: STRING, ContentType: STRING, Size: INT, IsInline: BOOLEAN, Id: STRING>>.` | No | False |
+| Attachments	| String | The FileAttachment and ItemAttachment attachments for the message. Navigation property. *Format:*` ARRAY<STRUCT<LastModifiedDateTime: STRING, Name: STRING, ContentType: STRING, Size: INT, IsInline: BOOLEAN, Id: STRING>>.` | No | False |
 | DataType	| String |	Data type of the current folder. |	No |	False |
 | puser	| String	| User id. |	No  | False |
 | ptenant	| String |  Tenant id. |	No | False |
