@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewRoleAssignment()
@@ -25,7 +25,7 @@ resourceScopes := []string {
 }
 requestBody.SetResourceScopes(resourceScopes)
 
-result, err := graphClient.DeviceManagement().RoleDefinitions().ByRoleDefinitionId("roleDefinition-id").RoleAssignments().Post(context.Background(), requestBody, nil)
+roleAssignments, err := graphClient.DeviceManagement().RoleDefinitions().ByRoleDefinitionId("roleDefinition-id").RoleAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -1,9 +1,9 @@
 ---
 title: "List recommendations"
 description: "Get a list of the recommendation objects and their properties."
-author: "hafowler"
+author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

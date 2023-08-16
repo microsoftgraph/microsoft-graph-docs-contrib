@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().CloudPCs().ByCloudPCId("cloudPC-id").GetCloudPcConnectivityHistory().Get(context.Background(), nil)
+getCloudPcConnectivityHistory(), err := graphClient.DeviceManagement().VirtualEndpoint().CloudPCs().ByCloudPCId("cloudPC-id").GetCloudPcConnectivityHistory().Get(context.Background(), nil)
 
 
 ```

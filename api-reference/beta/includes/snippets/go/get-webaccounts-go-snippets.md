@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Profile().WebAccounts().Get(context.Background(), nil)
+webAccounts, err := graphClient.Me().Profile().WebAccounts().Get(context.Background(), nil)
 
 
 ```

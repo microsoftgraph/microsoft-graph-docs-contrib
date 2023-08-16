@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDeviceManagementPartner()
@@ -46,7 +46,7 @@ groupsRequiringPartnerEnrollment := []graphmodels.DeviceManagementPartnerAssignm
 }
 requestBody.SetGroupsRequiringPartnerEnrollment(groupsRequiringPartnerEnrollment)
 
-result, err := graphClient.DeviceManagement().DeviceManagementPartners().ByDeviceManagementPartnerId("deviceManagementPartner-id").Patch(context.Background(), requestBody, nil)
+deviceManagementPartners, err := graphClient.DeviceManagement().DeviceManagementPartners().ByDeviceManagementPartnerId("deviceManagementPartner-id").Patch(context.Background(), requestBody, nil)
 
 
 ```
