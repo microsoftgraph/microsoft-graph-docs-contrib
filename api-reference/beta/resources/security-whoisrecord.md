@@ -54,7 +54,7 @@ Inherits from [whoisBaseRecord](../resources/security-whoisbaserecord.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|history|[microsoft.graph.security.whoisHistoryRecord](../resources/security-whoisHistoryRecord.md) collection|The collection of history records associated to this whois object.|
+|history|[microsoft.graph.security.whoisHistoryRecord](../resources/security-whoisHistoryRecord.md) collection|The Collection of history associated to this whois object.|
 |host|[microsoft.graph.security.host](../resources/security-host.md)|The host associated to this whois object. Inherited from [whoisBaseRecord](../resources/security-whoisbaserecord.md).|
 
 ## JSON representation
