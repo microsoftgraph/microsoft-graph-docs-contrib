@@ -15,7 +15,7 @@ Create a new [team](../resources/team.md) under a [group](../resources/group.md)
 
 In order to create a team, the group must have a least one owner.
 
-If the Create team call delays, you can retry the Create team call three times, with a 10 seconds delay between the calls before waiting on the 15 minutes propagated delay. If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays.
+If there is a delay in a created team call, you have the option to attempt the call creation three additional times before waiting 15 minutes due to a propagated delay. If the group was created less than 15 minutes ago, it's possible for a team-created call to fail with a 404 error code which can be attributed to ongoing replication delays.
 
 ## Permissions
 
