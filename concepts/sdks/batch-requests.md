@@ -38,16 +38,14 @@ This example shows how to send multiple requests in a batch that are not depende
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/BatchRequests.java" id="SimpleBatchSnippet":::
 
-### [TypeScript](#tab/typescript)
-
-:::code language="typescript" source="./snippets/typescript/src/snippets/batchRequests.ts" id="SimpleBatchSnippet":::
-
-# [PHP](#tab/PHP)
+### [PHP](#tab/PHP)
 
 ```php
 <?php
 use Microsoft\Graph\Core\Requests\BatchRequestContent;
+use Microsoft\Graph\Core\Requests\BatchResponseItem;
 use Microsoft\Graph\Generated\Models\Message;
+use Microsoft\Graph\BatchRequestBuilder;
 
 $message = new Message();
 $message->setSubject("Test Subject");
@@ -58,7 +56,23 @@ $batchRequestContent = new BatchRequestContent([
     $graphServiceClient->users()->byUserId(USER_ID)->toGetRequestInformation()
 ]);
 
+// Send the request
+$requestBuilder = new BatchRequestBuilder($graphServiceClient->getRequestAdapter());
+/** @var BatchResponseContent $batchResponse  */
+$batchResponse = $requestBuilder->postAsync($batchRequestContent)->wait();
+
+// Get response back
+$batchRequests = $batchRequestContent->getRequests();
+// Uses the auto-generated ID added to the batch request content
+$response1 = $batchResponse->getResponse($batchRequests[0]->getId());
+echo "Response1 status code: {$response1->getStatusCode()}";
+
 ```
+
+### [TypeScript](#tab/typescript)
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/batchRequests.ts" id="SimpleBatchSnippet":::
+
 
 ---
 
@@ -81,20 +95,12 @@ This example shows how to send multiple requests in a batch that are dependent o
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/BatchRequests.java" id="DependentBatchSnippet":::
 
-### [TypeScript](#tab/typescript)
-
-:::code language="typescript" source="./snippets/typescript/src/snippets/batchRequests.ts" id="DependentBatchSnippet":::
-
-# [PHP](#tab/PHP)
+### [PHP](#tab/PHP)
 
 ```php
-<?php
 use Microsoft\Graph\Core\Requests\BatchRequestContent;
 use Microsoft\Graph\Core\Requests\BatchRequestItem;
 use Microsoft\Graph\Generated\Models\Message;
-
-use Microsoft\Graph\BatchRequestBuilder;
-use Microsoft\Graph\Core\Requests\BatchResponseItem;
 
 $message = new Message();
 $message->setSubject("Test Subject");
@@ -107,10 +113,10 @@ $batchRequestContent = new BatchRequestContent([
     $request1, $request2
 ]);
 
-$requestBuilder = new BatchRequestBuilder($requestAdapter);
-/** @var BatchResponseContent $batchResponse  */
-$batchResponse = $requestBuilder->postAsync($batchRequestContent)->wait();
-
 ```
+
+### [TypeScript](#tab/typescript)
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/batchRequests.ts" id="DependentBatchSnippet":::
 
 ---
