@@ -31,8 +31,9 @@ The Manager_v0 dataset can be joined with the DirectReport_v0 dataset.
 ## Schema
 
 
-| Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
+|  Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
 | ----------- | ----------- | ----------- | ----------- | ----------- |
+
 | accountEnabled |	boolean |	True if the account is enabled; otherwise, false. |	No |	None |
 | ageGroup |	string |	Sets the age group of the user. *Allowed values:* null, minor, notAdult and adult. |	No |	None |
 | assignedLicenses |	string |	The licenses that are assigned to the manager. `*Format:* ARRAY<STRUCT<`disabledPlans`:ARRAY<STRING>, `skuId`:STRING>>.` |	No |	None |
@@ -47,7 +48,7 @@ The Manager_v0 dataset can be joined with the DirectReport_v0 dataset.
 | displayName |	string |	The name displayed in the address book for the manager. This is usually a  combination of the manager's first name, middle initial and last name. |	No |	None |
 | givenName |	string |	The given name (first name) of the manager. |	No |	None |
 | id |	string |	The unique identifier for the manager. Inherited from 'directoryObject'. |	No |	None |
-| imAddresses |	string |	The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the manager. `*Format:*  ARRAY<STRING>.`  |	No |	None |
+| imAddresses |	string |	The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the manager. `*Format:* ARRAY<STRING>.` |	No |	None |
 | jobTitle |	string |	The manager’s job title. |	No |	None |
 | legalAgeGroupClassification |	string |	Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties. *Allowed values:* null, minorWithOutParentalConsent, minorWithParentalConsent, minorNoParentalConsentRequired, notAdult and adult. |	No |	None |
 | mail |	string |	The SMTP address for the manager. |	No |	None |
@@ -61,7 +62,7 @@ The Manager_v0 dataset can be joined with the DirectReport_v0 dataset.
 | passwordPolicies |	string |	Specifies password policies for the manager. This value is an enumeration with one possible value being "DisableStrongPassword", allowing weaker passwords than the default policy to be specified. "DisablePasswordExpiration" can also be specified. The two may be specified together. |	No |	None |
 | postalCode |	string |	The postal code for the manager's postal address. The postal code is specific to the manager's country/region. In the United States of America, this attribute contains the ZIP code. |	No |	None |
 | preferredLanguage |	string |	The preferred language for the manager. Should follow ISO 639-1 code; for example "en-US". |	No |	None |
-| provisionedPlans |	string |	The plans that are provisioned for the manager. Read-only. Not nullable. `*Format:* ARRAY<STRUCT<capabilityStatus:STRING, provisioningStatus:STRING, service:STRING>>.` |	No |	None |
+| provisionedPlans |	string |	The plans that are provisioned for the manager. Read-only. Not nullable.  |	No |	None |
 | proxyAddresses |	string |	`*Format:* ARRAY<STRING>.` |	No |	None |
 | state |	string |	The state or province of the manager's address. |	No |	None |
 | streetAddress |	string |	The street address of the manager's place of business. |	No |	None |

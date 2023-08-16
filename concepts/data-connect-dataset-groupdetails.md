@@ -53,7 +53,8 @@ The GroupDetails_v0 dataset can be joined with the GroupOwners_v0 and GroupMembe
 
 |  Name  |  Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
 | ----------- | ----------- | ----------- | ----------- | ----------- |
-| id |	string |	Unique | Directory ID for the group in AAD. |	No |	None |
+
+| id  |	string  |	Unique | Directory ID for the group in Azure AD. |	No |	None |
 | deletedDateTime |	datetime |	Timestamp in UTC when group was deleted; "null" if group is active. |	No |	None |
 | classification |	string |	Defines the group sensitivity classification selected. |	No |	None |
 | createdDateTime |	datetime |	Timestamp in UTC when the group was created. |	No |	None |
