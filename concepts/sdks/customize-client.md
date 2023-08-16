@@ -40,12 +40,17 @@ $tokenRequestContext = new ClientCredentialContext(
     'clientSecret'
 );
 $authProvider = new GraphPhpLeagueAuthenticationProvider($tokenRequestContext);
-$guzzleConfig = [
-    // your custom config
-];
-$httpClient = GraphClientFactory::createWithConfig($guzzleConfig);
+// Get default middleware stack from SDK
+$handlerStack = GraphClientFactory::getDefaultHandlerStack();
+
+// Add a custom handler or extra handlers not added by default
+// Add Chaos handler to simulate random server failure responses
+$handlerStack->push(KiotaMiddleware::chaos());
+
+$httpClient = GraphClientFactory::createWithMiddleware($handlerStack);
+
 $requestAdapter = new GraphRequestAdapter($authProvider, $httpClient);
-$graphServiceClient = GraphServiceClient::createWithRequestAdapter($requestAdapter);
+$graphServiceClient = new GraphServiceClient($requestAdapter);
 
 ```
 
