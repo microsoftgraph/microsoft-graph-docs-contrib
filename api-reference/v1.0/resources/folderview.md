@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: folderView
 ms.localizationpriority: medium
 description: "The FolderView resource provides or sets recommendations on the user-experience of a folder."
