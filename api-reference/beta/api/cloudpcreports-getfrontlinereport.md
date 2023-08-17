@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: getFrontlineReport"
-description: "Get the Frontline reports, such as real-time report or historical data report."
+description: "Get the frontline reports, such as real-time reports or historical data reports."
 author: "rbayetov"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
