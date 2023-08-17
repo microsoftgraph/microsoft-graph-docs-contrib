@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/security/labels/citations/{citationTemplateId}
+GET https://graph.microsoft.com/v1.0/security/labels/citations/c0475d01-d532-8a53-6e26-14ea58c640bf
 ```
 
 
@@ -79,13 +79,16 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.security.citationTemplate",
     "id": "c0475d01-d532-8a53-6e26-14ea58c640bf",
-    "displayName": "String",
+    "displayName": "Contoso Company Policy",
     "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "createdDateTime": "String (timestamp)",
-    "citationUrl": "String",
-    "citationJurisdiction": "String"
+    "user": {
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Admin"
+    }
+  },
+  "createdDateTime" : "2021-03-24T02:09:08Z",
+    "citationUrl": "www.citationUrl.com",
+    "citationJurisdiction": "Contoso"
   }
 }
 ```

@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/security/labels/filePlanReferences/{filePlanReferenceTemplateId}
+GET https://graph.microsoft.com/v1.0/security/labels/filePlanReferences/b1f7b518-a44f-1d4b-c6f1-ab8771d3907c
 ```
 
 
@@ -81,10 +81,13 @@ Content-Type: application/json
     "id": "b1f7b518-a44f-1d4b-c6f1-ab8771d3907c",
     "displayName": "String",
     "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "createdDateTime": "String (timestamp)"
-  }
+    "user": {
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Admin"
+    }
+  },
+  "createdDateTime" : "2021-03-24T02:09:08Z"
+}
 }
 ```
 

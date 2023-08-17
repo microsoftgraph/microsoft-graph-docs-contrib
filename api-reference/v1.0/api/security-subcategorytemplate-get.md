@@ -57,7 +57,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories/{subCategoryTemplateId}
+GET https://graph.microsoft.com/v1.0/security/labels/retentionLabels/82d00422-1f60-46cd-9809-33ca0b4d2286/descriptors/categoryTemplate/subCategories/2ac39915-dbeb-e933-82e2-92b981835fa0
 ```
 
 
@@ -78,12 +78,15 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.security.subCategoryTemplate",
     "id": "2ac39915-dbeb-e933-82e2-92b981835fa0",
-    "displayName": "String",
+    "displayName": "Vendor Invoice",
     "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "createdDateTime": "String (timestamp)"
-  }
+    "user": {
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Admin"
+    }
+  },
+  "createdDateTime" : "2021-03-24T02:09:08Z"
+}
 }
 ```
 
