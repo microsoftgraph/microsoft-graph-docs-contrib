@@ -1,7 +1,7 @@
 ---
 title: "Add or delete custom attributes on a profile card (preview)"
 description: "Learn how to use the profile card API in Microsoft Graph to make additional attributes visible and add or delete custom attributes on a profile card."
-author: "PollyNincevic"
+author: "rwaithera"
 ms.localizationpriority: high
 ms.prod: "people"
 ms.custom: scenarios:getting-started
@@ -18,7 +18,7 @@ Use the [profileCardProperty](/graph/api/resources/profilecardproperty) resource
 
 Additional properties display in the **Contact** section of the profile card in Microsoft 365.
 
-You can also [delete](/graph/api/profilecardproperty-delete?view=graph-rest-beta&preserve-view=true) custom attributes from profile cards of the organization.
+You can also [delete](/graph/api/profilecardproperty-delete) custom attributes from profile cards of the organization.
 
 > [!NOTE]
 > Operations on the **profileCardProperty** resource that use delegated permissions require the signed-in user to have a tenant administrator or global administrator role.
@@ -57,15 +57,13 @@ You can add any of these attributes to the profile card by configuring your [peo
 The following example displays the `Alias` attribute on the profile card.
 
 ``` http
-POST https://graph.microsoft.com/beta/admin/people/profileCardProperties
+POST https://graph.microsoft.com/v1.0/admin/people/profileCardProperties
 Content-Type: application/json
 
 {
   "directoryPropertyName": "Alias"
 }
 ```
-
-> **Note:** The `/organization/{organizationId}/settings` path is deprecated. Going forward, use the `/admin/people` path.
 
 If successful, the response returns a `201 OK` response code and a **profileCardProperty** object in the response body. The value for the `Alias` attribute would be displayed on a user's profile card.
 
@@ -114,7 +112,7 @@ The following example adds the first Azure AD custom extension attribute to the 
 #### Request
 
 ``` http
-POST https://graph.microsoft.com/beta/admin/people/profileCardProperties
+POST https://graph.microsoft.com/v1.0/admin/people/profileCardProperties
 Content-Type: application/json
 
 {
@@ -163,7 +161,7 @@ Content-type: application/json
 
 ## Delete a custom attribute
 
-Following the same mapping between Azure AD custom extension attributes and profile card custom attributes (such as `customAttribute1`) as described in the preceding section [Adding a custom attribute](/graph/add-properties-profilecard#adding-a-custom-attribute), you can delete a custom attribute using the [delete](/graph/api/profilecardproperty-delete?view=graph-rest-beta&preserve-view=true) operation, as shown in the following example.
+Following the same mapping between Azure AD custom extension attributes and profile card custom attributes (such as `customAttribute1`) as described in the preceding section [Adding a custom attribute](/graph/add-properties-profilecard#adding-a-custom-attribute), you can delete a custom attribute using the [delete](/graph/api/profilecardproperty-delete) operation, as shown in the following example.
 
 ### Example
 
@@ -172,10 +170,8 @@ The following example deletes the custom attribute `customAttribute5` from the o
 #### Request
 
 ``` http
-DELETE https://graph.microsoft.com/beta/admin/people/profileCardProperties/customAttribute5
+DELETE https://graph.microsoft.com/v1.0/admin/people/profileCardProperties/customAttribute5
 ```
-
-> **Note:** The `/organization/{organizationId}/settings` path is deprecated. Going forward, use the `/admin/people` path.
 
 #### Response
 
@@ -192,24 +188,18 @@ You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/inst
 - **PowerShell module** - Install [module version 1.24.0 or higher](https://www.powershellgallery.com/packages/Microsoft.Graph).
 - **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or a higher version.
 
-> [!NOTE]
-> Because profile card properties commands are only available in beta, switch to the beta profile before running the command.
-> ```powershell
->    Select-MgProfile beta
-> ```
-
 ### Confirm your current settings
 
 To get profile card properties configuration for an organization, use the following command.
 
 ```powershell
-   Get-MgBetaAdminPeopleProfileCardProperty
+   Get-MgAdminPeopleProfileCardProperty
 ```
 
 To get a profile card property configuration in an organization, use the following command.
 
 ```powershell
-   Get-MgBetaAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
+   Get-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
 ```
 
 > [!NOTE]
@@ -218,8 +208,6 @@ To get a profile card property configuration in an organization, use the followi
 > ```powershell
 >    Connect-MgGraph -Scopes "PeopleSettings.Read.All"
 > ```
-
-> **Note:** The `Get-MgBetaOrganizationSettingProfileCardProperty` command is deprecated. Going forward, use the `Get-MgBetaAdminPeopleProfileCardProperty` command.
 
 ### Create profile card properties in your organization
 
@@ -250,10 +238,8 @@ $params = @{
 	)
 }
 
-New-MgBetaAdminPeopleProfileCardProperty -BodyParameter $params
+New-MgAdminPeopleProfileCardProperty -BodyParameter $params
 ```
-
-> **Note:** The `New-MgBetaOrganizationSettingProfileCardProperty` command is deprecated. Going forward, use the `New-MgBetaAdminPeopleProfileCardProperty` command.
 
 ### Update profile card properties in your organization
 
@@ -282,9 +268,8 @@ $params = @{
 	)
 }
 
-Update-MgBetaAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
+Update-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
 ```
-> **Note:** The `Update-MgBetaOrganizationSettingProfileCardProperty` command is deprecated. Going forward, use the `Update-MgBetaAdminPeopleProfileCardProperty` command.
 
 ### Delete profile card properties in your organization
 
@@ -300,9 +285,8 @@ You can use the Microsoft Graph PowerShell module to remove profile card propert
 Use the following command, where you replace `$profileCardPropertyId` with the id of the property to be deleted.
 
 ```powershell
- Remove-MgBetaAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
+ Remove-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
 ```
-> **Note:** The `Remove-MgBetaOrganizationSettingProfileCardProperty` command is deprecated. Going forward, use the `Remove-MgBetaAdminPeopleProfileCardProperty` command.
 
 ## See also
 
