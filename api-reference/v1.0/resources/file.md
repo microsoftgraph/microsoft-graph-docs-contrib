@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: File resource type
 ms.localizationpriority: medium
@@ -41,7 +41,7 @@ Here is a JSON representation of the resource.
 | hashes   | [Hashes](hashes.md) | Hashes of the file's binary content, if available. Read-only.                                                                                    |
 | mimeType | string                  | The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file was uploaded. Read-only. |
 
-## Remarks 
+## Remarks
 
 For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).
 

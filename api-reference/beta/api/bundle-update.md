@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: Update a bundle
 description: Update a bundle of driveItems
 ms.localizationpriority: medium
