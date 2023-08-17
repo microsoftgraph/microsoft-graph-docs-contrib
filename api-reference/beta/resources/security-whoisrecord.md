@@ -23,9 +23,9 @@ Inherits from [whoisBaseRecord](../resources/security-whoisbaserecord.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List whoisRecords](../api/security-whoisrecord-list.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) collection|Get a list of [whoisRecord](../resources/security-whoisrecord.md) objects.|
-|[Get whoisRecord](../api/security-whoisrecord-get.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md)|Read the properties and relationships of a [whoisRecord](../resources/security-whoisrecord.md) object.|
-|[Get whoisRecord for a host](../api/security-host-get-whois.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) |Get the [whoisRecord](../resources/security-whoisrecord.md) object and their properties.|
+|[List whoisRecords](../api/security-whoisrecord-list.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) collection|Get a list of [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) objects.|
+|[Get whoisRecord](../api/security-whoisrecord-get.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md)|Read the properties and relationships of a [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) object.|
+|[Get whoisRecord for a host](../api/security-host-get-whois.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) |Get the current [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) resource for a [microsoft.graph.security.host](../resources/security-host.md).|
 
 ## Properties
 
