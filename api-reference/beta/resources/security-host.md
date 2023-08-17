@@ -63,7 +63,7 @@ Inherits from [artifact](../resources/security-artifact.md).
 | reputation        | [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)                | Represents a calculated reputation of this host.                                                                                               |
 | subdomains        | [microsoft.graph.security.subdomain](../resources/security-subdomain.md) collection               | The **subdomains** that are associated with this host.                                                                                         |
 | trackers          | [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection           | The **hostTrackers** that are associated with this host.                                                                                       |
-| whois             | [microsoft.graph.security.whoisrecord](../resources/security-whoisrecord.md)                      | The most recent **whoisrecord** for this host. Inherited from [host](../resources/security-host.md).                                           |
+| whois             | [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md)                      | The most recent **whoisRecord** for this host.                                           |
 
 ## JSON representation
 
