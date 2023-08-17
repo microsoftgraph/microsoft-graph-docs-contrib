@@ -39,7 +39,7 @@ Inherits from [artifact](../resources/security-artifact.md).
 | [Get reputation](../api/security-host-get-reputation.md)                 | [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)                | Get the properties and relationships of a **hostReputation** object.                                              |
 | [List subdomains](../api/security-host-list-subdomains.md)               | [microsoft.graph.security.subdomain](../resources/security-subdomain.md) collection               | Get a list of **subdomain** resources.                                                                            |
 | [List trackers](../api/security-host-list-trackers.md)                   | [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection           | Get a list of **hostTracker** resources.                                                                          |
-| [Get whois](../api/security-host-get-whois.md)                           | [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md)                      | Get the properties and relationships of a **whoisRecord** object.                                                 |
+| [Get whois](../api/security-host-get-whois.md)                           | [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md)                      | Get the current [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) resource for a [microsoft.graph.security.host](../resources/security-host.md).                                                 |
 
 ## Properties
 
