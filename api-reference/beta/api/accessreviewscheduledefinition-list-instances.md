@@ -23,7 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)     | AccessReview.Read.All, AccessReview.ReadWrite.All  |
 |Application                            | AccessReview.Read.All, AccessReview.ReadWrite.All |
 
-The signed-in user must also be in a directory role that permits them to read an access review. To view just the instances that the signed-in user is assigned the reviewer on, see [List pending access review instances](accessreviewinstance-pendingaccessreviewinstances.md)
+[!INCLUDE [rbac-access-reviews-apis-read](../includes/rbac-for-apis/rbac-access-reviews-apis-read.md)]
+
+To view just the instances that the signed-in user is assigned the reviewer on, see [List pending access review instances](accessreviewinstance-pendingaccessreviewinstances.md)
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
