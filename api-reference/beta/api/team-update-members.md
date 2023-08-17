@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an updated [conv
 
 The following example shows a request to apply the owner role to an existing member of a team.
 
-# HTTP
+# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
