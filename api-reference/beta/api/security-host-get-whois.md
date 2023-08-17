@@ -15,9 +15,10 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get the current [whoisRecord](../resources/security-whoisrecord.md) resource for a [host](../resources/security-host.md).
+Get the current [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) resource for a [microsoft.graph.security.host](../resources/security-host.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
