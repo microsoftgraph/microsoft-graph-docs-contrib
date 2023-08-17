@@ -32,7 +32,7 @@ requestBody.SetPasswordCredential(passwordCredential)
 proof := "eyJ0eXAiOiJ..."
 requestBody.SetProof(&proof) 
 
-result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").AddKey().Post(context.Background(), requestBody, nil)
+addKey, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").AddKey().Post(context.Background(), requestBody, nil)
 
 
 ```

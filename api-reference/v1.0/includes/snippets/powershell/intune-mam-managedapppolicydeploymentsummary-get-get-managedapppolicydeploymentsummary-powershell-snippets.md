@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Devices.CorporateManagement
 
-Get-MgDeviceAppMgtiOSManagedAppProtectionDeploymentSummary -IosManagedAppProtectionId $iosManagedAppProtectionId
+Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary -IosManagedAppProtectionId $iosManagedAppProtectionId
 
 ```

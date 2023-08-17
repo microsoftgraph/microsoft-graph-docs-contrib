@@ -24,7 +24,7 @@ requestBody.SetEffectiveDateTime(&effectiveDateTime)
 expirationDateTime , err := time.Parse(time.RFC3339, "2023-03-12T16:40:46.924769+05:30")
 requestBody.SetExpirationDateTime(&expirationDateTime) 
 
-result, err := graphClient.External().IndustryData().InboundFlows().ByInboundFlowId("inboundFlow-id").Patch(context.Background(), requestBody, nil)
+inboundFlows, err := graphClient.External().IndustryData().InboundFlows().ByInboundFlowId("inboundFlow-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

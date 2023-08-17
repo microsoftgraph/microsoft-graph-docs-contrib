@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewMobileApp()
@@ -43,7 +43,7 @@ requestBody.SetNotes(&notes)
 publishingState := graphmodels.PROCESSING_MOBILEAPPPUBLISHINGSTATE 
 requestBody.SetPublishingState(&publishingState) 
 
-result, err := graphClient.DeviceAppManagement().MobileApps().Post(context.Background(), requestBody, nil)
+mobileApps, err := graphClient.DeviceAppManagement().MobileApps().Post(context.Background(), requestBody, nil)
 
 
 ```

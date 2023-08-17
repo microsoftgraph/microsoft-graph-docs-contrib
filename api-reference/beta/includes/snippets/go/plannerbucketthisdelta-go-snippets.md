@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Planner().Plans().ByPlanId("plannerPlan-id").Buckets().Delta().Get(context.Background(), nil)
+delta(), err := graphClient.Planner().Plans().ByPlannerPlanId("plannerPlan-id").Buckets().Delta().Get(context.Background(), nil)
 
 
 ```

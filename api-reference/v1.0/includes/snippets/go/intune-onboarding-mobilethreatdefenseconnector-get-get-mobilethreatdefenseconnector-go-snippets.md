@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().MobileThreatDefenseConnectors().ByMobileThreatDefenseConnectorId("mobileThreatDefenseConnector-id").Get(context.Background(), nil)
+mobileThreatDefenseConnectors, err := graphClient.DeviceManagement().MobileThreatDefenseConnectors().ByMobileThreatDefenseConnectorId("mobileThreatDefenseConnector-id").Get(context.Background(), nil)
 
 
 ```

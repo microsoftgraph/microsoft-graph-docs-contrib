@@ -246,7 +246,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/fd
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-built-in-role-unifiedroledefinition-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -441,7 +441,7 @@ GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleDe
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-built-in-entitlementmanagement-role-unifiedroledefinition-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -550,6 +550,7 @@ Content-type: application/json
     "version": "0.12 (14.0.451.0)",
     "isBuiltIn": true,
     "templateId": null,
+    "allowedPrincipalTypes": "user,group",
     "rolePermissions": [
         {
             "allowedResourceActions": [

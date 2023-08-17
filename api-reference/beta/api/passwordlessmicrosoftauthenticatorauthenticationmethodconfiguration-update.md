@@ -1,7 +1,7 @@
 ---
 title: "Update passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration"
 description: "Update the properties of a passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration object."
-author: "mmcla"
+author: "mjsantani"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

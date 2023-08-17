@@ -442,6 +442,7 @@ Content-Type: application/json
 
 The following bulk request illustrates how to update attributes of an existing Azure AD user, to change the user's department and set that the user cannot sign in.  This example assumes you have configured a mapping for the **externalId**, **department** and **active** fields, and you have an existing Azure AD user that has attribute matching the **externalId**.  
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bulk_upload_for_update"
@@ -474,6 +475,12 @@ Content-Type: application/scim+json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/bulk-upload-for-update-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ### Response
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -504,6 +511,7 @@ The following bulk request illustrates how to delete an existing Azure AD or on-
 > If the target directory for the operation is on-premises Active Directory, then the matched user is hard-deleted. If the **Active Directory Recycle Bin** is enabled, you can restore the deleted on-premises AD user object.
 > To prevent and recover from accidental deletions, we recommend [configuring accidental deletion threshold](/azure/active-directory/app-provisioning/accidental-deletions) in the provisioning app and [enabling the on-premises Active Directory recycle bin](/azure/active-directory/hybrid/connect/how-to-connect-sync-recycle-bin).
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "bulk_upload_for_delete"
@@ -534,6 +542,12 @@ Content-Type: application/scim+json
     ]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/bulk-upload-for-delete-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

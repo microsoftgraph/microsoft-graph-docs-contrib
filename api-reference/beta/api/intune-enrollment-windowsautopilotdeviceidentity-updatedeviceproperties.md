@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -49,13 +49,13 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|userPrincipalName|String|Not yet documented|
-|addressableUserName|String|Not yet documented|
-|groupTag|String|Not yet documented|
-|displayName|String|Not yet documented|
-|deviceAccountUpn|String|Not yet documented|
-|deviceAccountPassword|String|Not yet documented|
-|deviceFriendlyName|String|Not yet documented|
+|userPrincipalName|String||
+|addressableUserName|String||
+|groupTag|String||
+|displayName|String||
+|deviceAccountUpn|String||
+|deviceAccountPassword|String||
+|deviceFriendlyName|String||
 
 
 

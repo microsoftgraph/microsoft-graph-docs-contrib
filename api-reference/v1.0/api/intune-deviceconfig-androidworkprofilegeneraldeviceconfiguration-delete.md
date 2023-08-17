@@ -60,20 +60,20 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-delete-delete-androidworkprofilegeneraldeviceconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-delete-delete-androidworkprofilegeneraldeviceconfiguration-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-delete-delete-androidworkprofilegeneraldeviceconfiguration-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-delete-delete-androidworkprofilegeneraldeviceconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-delete-delete-androidworkprofilegeneraldeviceconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-delete-delete-androidworkprofilegeneraldeviceconfiguration-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-delete-delete-androidworkprofilegeneraldeviceconfiguration-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration-delete-delete-androidworkprofilegeneraldeviceconfiguration-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

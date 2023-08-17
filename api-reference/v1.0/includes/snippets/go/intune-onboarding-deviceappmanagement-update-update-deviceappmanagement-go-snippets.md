@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDeviceAppManagement()
@@ -26,7 +26,7 @@ requestBody.SetMicrosoftStoreForBusinessLanguage(&microsoftStoreForBusinessLangu
 microsoftStoreForBusinessLastCompletedApplicationSyncTime , err := time.Parse(time.RFC3339, "2017-01-01T00:02:00.0421137-08:00")
 requestBody.SetMicrosoftStoreForBusinessLastCompletedApplicationSyncTime(&microsoftStoreForBusinessLastCompletedApplicationSyncTime) 
 
-result, err := graphClient.DeviceAppManagement().Patch(context.Background(), requestBody, nil)
+deviceAppManagement, err := graphClient.DeviceAppManagement().Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -19,7 +19,7 @@ requestBody := graphmodelstermstore.NewGroup()
 displayName := "myGroup"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.TermStore().Groups().Post(context.Background(), requestBody, nil)
+groups, err := graphClient.TermStore().Groups().Post(context.Background(), requestBody, nil)
 
 
 ```
