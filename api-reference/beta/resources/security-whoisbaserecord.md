@@ -17,8 +17,8 @@ Namespace: microsoft.graph.security
 
 Represents a WHOIS entry that communicates a registered [host](../resources/security-host.md), the contacts for the registered **host**, and other metadata about the registration. This is an abstract type that can't be accessed directly. You can use the following implementation types instead.
 
-- [whoisRecord](./security-whoisrecord.md) 
 - [whoisHistoryRecord](./security-whoishistoryrecord.md) 
+- [whoisRecord](./security-whoisrecord.md) 
 
 Inherits from [entity](../resources/entity.md).
 
