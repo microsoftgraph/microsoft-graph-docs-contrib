@@ -13,6 +13,14 @@
         {
           "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
           "ApiChange": "Relationship",
+          "ChangedApiName": "whoisHistoryRecords",
+          "ChangeType": "Addition",
+          "Description": "Added the **whoisHistoryRecords** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligence"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Relationship",
           "ChangedApiName": "whoisRecords",
           "ChangeType": "Addition",
           "Description": "Added the **whoisRecords** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
