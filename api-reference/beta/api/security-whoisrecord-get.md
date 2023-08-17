@@ -75,7 +75,7 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/whoisRecords/Y2
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -105,112 +105,112 @@ Content-Type: application/json
   "domainStatus": "client update prohibited,client transfer prohibited,client delete prohibited",
   "rawWhoisText": "Registrar: \n  Handle: 1891582_DOMAIN_COM-VRSN\n  LDH Name: contoso.com\n  Nameserver: \n    LDH Name: ns1-205.azure-dns.com\n    Event: \n      Action: last changed\n...",
   "abuse": {
-      "email": "abusecomplaints@markmonitor.com",
-      "name": null,
-      "organization": null,
-      "telephone": "+1.2086851750",
-      "fax": null,
-      "address": {
-          "city": null,
-          "countryOrRegion": null,
-          "postalCode": null,
-          "state": null,
-          "street": null,
-          "type": "unknown"
-      }
+    "email": "abusecomplaints@markmonitor.com",
+    "name": null,
+    "organization": null,
+    "telephone": "+1.2086851750",
+    "fax": null,
+    "address": {
+      "city": null,
+      "countryOrRegion": null,
+      "postalCode": null,
+      "state": null,
+      "street": null,
+      "type": "unknown"
+    }
   },
   "admin": {
-      "email": "domains@microsoft.com",
-      "name": "Domain Administrator",
-      "organization": "Microsoft Corporation",
-      "telephone": "+1.4258828080",
-      "fax": "+1.4259367329",
-      "address": {
-          "city": "Redmond",
-          "countryOrRegion": "US",
-          "postalCode": "98052",
-          "state": "WA",
-          "street": "One Microsoft Way",
-          "type": "unknown"
-      }
+    "email": "domains@microsoft.com",
+    "name": "Domain Administrator",
+    "organization": "Microsoft Corporation",
+    "telephone": "+1.4258828080",
+    "fax": "+1.4259367329",
+    "address": {
+      "city": "Redmond",
+      "countryOrRegion": "US",
+      "postalCode": "98052",
+      "state": "WA",
+      "street": "One Microsoft Way",
+      "type": "unknown"
+    }
   },
   "registrar": {
-      "email": null,
-      "name": null,
-      "organization": "MarkMonitor Inc.",
-      "telephone": null,
-      "fax": null,
-      "address": {
-          "city": "Meridian",
-          "countryOrRegion": "US",
-          "postalCode": "83646",
-          "state": "ID",
-          "street": "3540 E Longwing Ln",
-          "type": "unknown"
-      }
+    "email": null,
+    "name": null,
+    "organization": "MarkMonitor Inc.",
+    "telephone": null,
+    "fax": null,
+    "address": {
+      "city": "Meridian",
+      "countryOrRegion": "US",
+      "postalCode": "83646",
+      "state": "ID",
+      "street": "3540 E Longwing Ln",
+      "type": "unknown"
+    }
   },
   "registrant": {
-      "email": "domains@microsoft.com",
-      "name": "Domain Administrator",
-      "organization": "Microsoft Corporation",
-      "telephone": "+1.4258828080",
-      "fax": "+1.4259367329",
-      "address": {
-          "city": "Redmond",
-          "countryOrRegion": "US",
-          "postalCode": "98052",
-          "state": "WA",
-          "street": "One Microsoft Way",
-          "type": "unknown"
-      }
+    "email": "domains@microsoft.com",
+    "name": "Domain Administrator",
+    "organization": "Microsoft Corporation",
+    "telephone": "+1.4258828080",
+    "fax": "+1.4259367329",
+    "address": {
+      "city": "Redmond",
+      "countryOrRegion": "US",
+      "postalCode": "98052",
+      "state": "WA",
+      "street": "One Microsoft Way",
+      "type": "unknown"
+    }
   },
   "technical": {
-      "email": "msnhst@microsoft.com",
-      "name": "MSN Hostmaster",
-      "organization": "Microsoft Corporation",
-      "telephone": "+1.4258828080",
-      "fax": "+1.4259367329",
-      "address": {
-          "city": "Redmond",
-          "countryOrRegion": "US",
-          "postalCode": "98052",
-          "state": "WA",
-          "street": "One Microsoft Way",
-          "type": "unknown"
-      }
+    "email": "msnhst@microsoft.com",
+    "name": "MSN Hostmaster",
+    "organization": "Microsoft Corporation",
+    "telephone": "+1.4258828080",
+    "fax": "+1.4259367329",
+    "address": {
+      "city": "Redmond",
+      "countryOrRegion": "US",
+      "postalCode": "98052",
+      "state": "WA",
+      "street": "One Microsoft Way",
+      "type": "unknown"
+    }
   },
   "nameservers": [
-      {
-        "firstSeenDateTime": null,
-        "lastSeenDateTime": null,
-        "host": {
-            "id": "ns1-205.azure-dns.com"
-        }
-      },
-      {
-        "firstSeenDateTime": null,
-        "lastSeenDateTime": null,
-        "host": {
-            "id": "ns2-205.azure-dns.net"
-        }
-      },
-      {
-        "firstSeenDateTime": null,
-        "lastSeenDateTime": null,
-        "host": {
-            "id": "ns3-205.azure-dns.org"
-        }
-      },
-      {
-        "firstSeenDateTime": null,
-        "lastSeenDateTime": null,
-        "host": {
-            "id": "ns4-205.azure-dns.info"
-        }
+    {
+      "firstSeenDateTime": null,
+      "lastSeenDateTime": null,
+      "host": {
+        "id": "ns1-205.azure-dns.com"
       }
+    },
+    {
+      "firstSeenDateTime": null,
+      "lastSeenDateTime": null,
+      "host": {
+        "id": "ns2-205.azure-dns.net"
+      }
+    },
+    {
+      "firstSeenDateTime": null,
+      "lastSeenDateTime": null,
+      "host": {
+        "id": "ns3-205.azure-dns.org"
+      }
+    },
+    {
+      "firstSeenDateTime": null,
+      "lastSeenDateTime": null,
+      "host": {
+        "id": "ns4-205.azure-dns.info"
+      }
+    }
   ],
   "host": {
-      "id": "contoso.com"
+    "id": "contoso.com"
   }
 }
 ```
