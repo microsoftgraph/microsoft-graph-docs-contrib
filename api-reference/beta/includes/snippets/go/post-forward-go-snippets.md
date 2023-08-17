@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphgroups.NewForwardPostRequestBody()
@@ -29,9 +29,8 @@ address := "address-value"
 emailAddress.SetAddress(&address) 
 recipient.SetEmailAddress(emailAddress)
 
-toRecipients := []graphgroups.Recipientable {
+toRecipients := []graphmodels.Recipientable {
 	recipient,
-
 }
 requestBody.SetToRecipients(toRecipients)
 

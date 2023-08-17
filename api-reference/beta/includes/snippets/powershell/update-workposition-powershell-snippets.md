@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 
 $params = @{
 	isCurrent = $true
 }
 
 # A UPN can also be used as -UserId.
-Update-MgUserProfilePosition -UserId $userId -WorkPositionId $workPositionId -BodyParameter $params
+Update-MgBetaUserProfilePosition -UserId $userId -WorkPositionId $workPositionId -BodyParameter $params
 
 ```

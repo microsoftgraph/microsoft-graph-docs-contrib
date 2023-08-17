@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new IdentityProviderBase
+var requestBody = new SocialIdentityProvider
 {
 	OdataType = "#microsoft.graph.socialIdentityProvider",
 	DisplayName = "Apple",

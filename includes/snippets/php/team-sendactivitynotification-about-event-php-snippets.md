@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SendActivityNotificationPostRequestBody();
 $topic = new TeamworkActivityTopic();
@@ -26,14 +26,10 @@ $previewText->setContent('It will be fun!');
 $requestBody->setPreviewText($previewText);
 $requestBody->setActivityType('eventCreated');
 
-$recipient = new TeamworkNotificationRecipient();
-$recipient->set@odatatype('microsoft.graph.teamMembersNotificationRecipient');
+$recipient = new TeamMembersNotificationRecipient();
+$recipient->setOdataType('microsoft.graph.teamMembersNotificationRecipient');
 
-$additionalData = [
-		'teamId' => '7155e3c8-175e-4311-97ef-572edc3aa3db', 
-];
-$recipient->setAdditionalData($additionalData);
-
+$recipient->setTeamId('7155e3c8-175e-4311-97ef-572edc3aa3db');
 
 
 $requestBody->setRecipient($recipient);

@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: MichaelMainer
 ---
 
-<!-- markdownlint-disable MD001 MD024 MD051 -->
+<!-- markdownlint-disable MD024 MD051 -->
 
 # Choose a Microsoft Graph authentication provider based on scenario
 
@@ -41,11 +41,27 @@ Authentication providers implement the code required to acquire a token using th
 
 The authorization code flow enables native and web apps to securely obtain tokens in the name of the user. To learn more, see [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="AuthorizationCodeSnippet":::
 
-# [TypeScript](#tab/typescript)
+### [Go](#tab/go)
+
+The [Azure Identity Client Module for Go](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azidentity) does not support the authorization code flow.
+
+### [Java](#tab/java)
+
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="AuthorizationCodeSnippet":::
+
+### [Python](#tab/python)
+
+[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
+In the following example we are using the asynchronous [AuthorizationCodeCredential](/python/api/azure-identity/azure.identity.aio.authorizationcodecredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.authorizationcodecredential?view=azure-python&preserve-view-true) of this credential.
+
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="AuthorizationCodeSnippet":::
+
+### [TypeScript](#tab/typescript)
 
 ### Using @azure/msal-browser for browser applications
 
@@ -55,39 +71,13 @@ The authorization code flow enables native and web apps to securely obtain token
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="AuthorizationCodeSnippet":::
 
-# [Java](#tab/java)
-
-:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="AuthorizationCodeSnippet":::
-
-# [Go](#tab/go)
-
-The [Azure Identity Client Module for Go](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azidentity) does not support the authorization code flow.
-
-# [Python](#tab/python)
-
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
-You can choose from any of the synchronous classes listed [here](/python/api/azure-identity/azure.identity?view=azure-python&preserve-view=true) or they asynchronous class listed [here](/python/api/azure-identity/azure.identity.aio?view=azure-python&preserve-view=true). In the following example we are using [AuthorizationCodeCredential](/python/api/azure-identity/azure.identity.aio.authorizationcodecredential?view=azure-python&preserve-view=true).
-
-```python
-from azure.identity.aio import AuthorizationCodeCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
-
-credential=AuthorizationCodeCredential(
-    tenant_id = 'TENANT_ID',
-    client_id = 'CLIENT_ID',
-    authorization_code = 'AUTH_CODE',
-    redirect_uri = 'REDIRECT_URL')
-auth_provider = AzureIdentityAuthenticationProvider(credential)
-```
-
 ---
 
 ## Client credentials provider
 
 The client credential flow enables service applications to run without user interaction. Access is based on the identity of the application. For more information, see [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 ### Using a client certificate
 
@@ -97,27 +87,7 @@ The client credential flow enables service applications to run without user inte
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="ClientSecretSnippet":::
 
-# [TypeScript](#tab/typescript)
-
-### Using a client certificate
-
-:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="ClientCertificateSnippet":::
-
-### Using a client secret
-
-:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="ClientSecretSnippet":::
-
-# [Java](#tab/java)
-
-### Using a client certificate
-
-:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="ClientCertificateSnippet":::
-
-### Using a client secret
-
-:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="ClientSecretSnippet":::
-
-# [Go](#tab/go)
+### [Go](#tab/go)
 
 ### Using a client certificate
 
@@ -127,22 +97,41 @@ The client credential flow enables service applications to run without user inte
 
 :::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="ClientSecretSnippet":::
 
-# [Python](#tab/python)
+### [Java](#tab/java)
+
+### Using a client certificate
+
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="ClientCertificateSnippet":::
+
+### Using a client secret
+
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="ClientSecretSnippet":::
+
+### [Python](#tab/python)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-You can choose from any of the synchronous classes listed [here](/python/api/azure-identity/azure.identity?view=azure-python&preserve-view=true) or they asynchronous class listed [here](/python/api/azure-identity/azure.identity.aio?view=azure-python&preserve-view=true). In the following example we are using [ClientSecretCredential](/python/api/azure-identity/azure.identity.aio.clientsecretcredential?view=azure-python&preserve-view=true).
+### Using a client certificate
 
-```python
-from azure.identity.aio import ClientSecretCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
+In the following example we are using the asynchronous [CertificateCredential](/python/api/azure-identity/azure.identity.aio.certificatecredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.certificatecredential?view=azure-python&preserve-view-true) of this credential.
 
-credential=ClientSecretCredential(
-    tenant_id = 'TENANT_ID',
-    client_id = 'CLIENT_ID',
-    client_secret = 'CLIENT_SECRET')
-auth_provider = AzureIdentityAuthenticationProvider(credential)
-```
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="ClientCertificateSnippet":::
+
+### Using a client secret
+
+In the following example we are using the asynchronous [ClientSecretCredential](/python/api/azure-identity/azure.identity.aio.clientsecretcredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.clientsecretcredential?view=azure-python&preserve-view-true) of this credential.
+
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="ClientSecretSnippet":::
+
+### [TypeScript](#tab/typescript)
+
+### Using a client certificate
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="ClientCertificateSnippet":::
+
+### Using a client secret
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="ClientSecretSnippet":::
 
 ---
 
@@ -150,39 +139,29 @@ auth_provider = AzureIdentityAuthenticationProvider(credential)
 
 The on-behalf-of flow is applicable when your application calls a service/web API which in turns calls the Microsoft Graph API. Learn more by reading [Microsoft identity platform and OAuth 2.0 On-Behalf-Of flow](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="OnBehalfOfSnippet":::
 
-# [TypeScript](#tab/typescript)
-
-:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="OnBehalfOfSnippet":::
-
-# [Java](#tab/java)
-
-:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="OnBehalfOfSnippet":::
-
-# [Go](#tab/go)
+### [Go](#tab/go)
 
 :::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="OnBehalfOfSnippet":::
 
-# [Python](#tab/python)
+### [Java](#tab/java)
+
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="OnBehalfOfSnippet":::
+
+### [Python](#tab/python)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-For details on the library see [OnBehalfOfCredential Class](/python/api/azure-identity/azure.identity.aio.onbehalfofcredential?view=azure-python&preserve-view=true).
+In the following example we are using the asynchronous [OnBehalfOfCredential](/python/api/azure-identity/azure.identity.aio.onbehalfofcredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.onbehalfofcredential?view=azure-python&preserve-view-true) of this credential.
 
-```python
-from azure.identity.aio import OnBehalfOfCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="OnBehalfOfSnippet":::
 
-credential=OnBehalfOfCredential(
-    tenant_id = 'TENANT_ID',
-    client_id = 'CLIENT_ID',
-    client_secret = 'CLIENT_SECRET',
-    user_assertion = 'USER_ASSERTION')
-auth_provider = AzureIdentityAuthenticationProvider(credential)
-```
+### [TypeScript](#tab/typescript)
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="OnBehalfOfSnippet":::
 
 ---
 
@@ -194,33 +173,25 @@ Implicit Authentication flow is not recommended due to its [disadvantages](https
 
 The device code flow enables sign in to devices by way of another device. For details, see [Microsoft identity platform and the OAuth 2.0 device code flow](/azure/active-directory/develop/v2-oauth2-device-code).
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="DeviceCodeSnippet":::
 
-# [TypeScript](#tab/typescript)
-
-:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="DeviceCodeSnippet":::
-
-# [Java](#tab/java)
-
-:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="DeviceCodeSnippet":::
-
-# [Go](#tab/go)
+### [Go](#tab/go)
 
 :::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="DeviceCodeSnippet":::
 
-# [Python](#tab/python)
+### [Java](#tab/java)
 
-```python
-from azure.identity import DeviceCodeCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="DeviceCodeSnippet":::
 
-# Create authentication provider object. Used to authenticate request
-credential = DeviceCodeCredential(client_id = 'CLIENT_ID')
-scopes = ['https://graph.microsoft.com/.default']
-auth_provider = AzureIdentityAuthenticationProvider(credential, scopes=scopes)
-```
+### [Python](#tab/python)
+
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="DeviceCodeSnippet":::
+
+### [TypeScript](#tab/typescript)
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="DeviceCodeSnippet":::
 
 ---
 
@@ -228,7 +199,7 @@ auth_provider = AzureIdentityAuthenticationProvider(credential, scopes=scopes)
 
 The integrated Windows flow provides a way for Windows computers to silently acquire an access token when they are domain joined. For details, see [Integrated Windows authentication](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 The `Azure.Identity` package does not currently support Windows integrated authentication. Instead create a custom access token provider using MSAL.
 
@@ -240,19 +211,19 @@ The `Azure.Identity` package does not currently support Windows integrated authe
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="IntegratedWindowsSnippet":::
 
-# [TypeScript](#tab/typescript)
+### [Go](#tab/go)
 
 Not applicable.
 
-# [Java](#tab/java)
+### [Java](#tab/java)
 
 Not applicable.
 
-# [Go](#tab/go)
+### [Python](#tab/python)
 
 Not applicable.
 
-# [Python](#tab/python)
+### [TypeScript](#tab/typescript)
 
 Not applicable.
 
@@ -262,33 +233,25 @@ Not applicable.
 
 The interactive flow is used by mobile applications (Xamarin and UWP) and desktops applications to call Microsoft Graph in the name of a user. For details, see [Acquiring tokens interactively](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively).
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="InteractiveSnippet":::
 
-# [TypeScript](#tab/typescript)
-
-:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="InteractiveSnippet":::
-
-# [Java](#tab/java)
-
-:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="InteractiveSnippet":::
-
-# [Go](#tab/go)
+### [Go](#tab/go)
 
 :::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="InteractiveSnippet":::
 
-# [Python](#tab/python)
+### [Java](#tab/java)
 
-```python
-from azure.identity import InteractiveBrowserCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="InteractiveSnippet":::
 
-# Create authentication provider object. Used to authenticate request
-credential = InteractiveBrowserCredential()
-scopes = ['https://graph.microsoft.com/.default']
-auth_provider = AzureIdentityAuthenticationProvider(credential, scopes=scopes)
-```
+### [Python](#tab/python)
+
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="InteractiveSnippet":::
+
+### [TypeScript](#tab/typescript)
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="InteractiveSnippet":::
 
 ---
 
@@ -296,33 +259,25 @@ auth_provider = AzureIdentityAuthenticationProvider(credential, scopes=scopes)
 
 The username/password provider allows an application to sign in a user by using their username and password. Use this flow only when you cannot use any of the other OAuth flows. For more information, see [Microsoft identity platform and the OAuth 2.0 resource owner password credential](/azure/active-directory/develop/v2-oauth-ropc)
 
-# [C#](#tab/csharp)
+### [C#](#tab/csharp)
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="UserNamePasswordSnippet":::
 
-# [TypeScript](#tab/typescript)
-
-:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="UserNamePasswordSnippet":::
-
-# [Java](#tab/java)
-
-:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="UserNamePasswordSnippet":::
-
-# [Go](#tab/go)
+### [Go](#tab/go)
 
 :::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="UserNamePasswordSnippet":::
 
-# [Python](#tab/python)
+### [Java](#tab/java)
 
-```python
-from azure.identity import UsernamePasswordCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="UserNamePasswordSnippet":::
 
-# Create authentication provider object. Used to authenticate request
-credential = UsernamePasswordCredential(CLIENT_ID, USERNAME, PASSWORD)
-scopes = ['https://graph.microsoft.com/.default']
-auth_provider = AzureIdentityAuthenticationProvider(credential, scopes=scopes)
-```
+### [Python](#tab/python)
+
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="UserNamePasswordSnippet":::
+
+### [TypeScript](#tab/typescript)
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="UserNamePasswordSnippet":::
 
 ---
 

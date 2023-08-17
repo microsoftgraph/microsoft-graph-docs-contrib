@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewSchemaExtension()
@@ -22,7 +22,6 @@ description := "Graph Learn training courses extensions"
 requestBody.SetDescription(&description) 
 targetTypes := []string {
 	"user",
-
 }
 requestBody.SetTargetTypes(targetTypes)
 
@@ -47,7 +46,6 @@ properties := []graphmodels.ExtensionSchemaPropertyable {
 	extensionSchemaProperty,
 	extensionSchemaProperty1,
 	extensionSchemaProperty2,
-
 }
 requestBody.SetProperties(properties)
 

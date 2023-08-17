@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAuthenticationMethodsPolicy()
@@ -38,26 +38,22 @@ authenticationMethodsRegistrationCampaignIncludeTarget.SetTargetedAuthentication
 
 includeTargets := []graphmodels.AuthenticationMethodsRegistrationCampaignIncludeTargetable {
 	authenticationMethodsRegistrationCampaignIncludeTarget,
-
 }
 authenticationMethodsRegistrationCampaign.SetIncludeTargets(includeTargets)
 registrationEnforcement.SetAuthenticationMethodsRegistrationCampaign(authenticationMethodsRegistrationCampaign)
 requestBody.SetRegistrationEnforcement(registrationEnforcement)
-additionalData := map[string]interface{}{
-reportSuspiciousActivitySettings := graphmodels.New()
-state := "enabled"
+reportSuspiciousActivitySettings := graphmodels.NewReportSuspiciousActivitySettings()
+state := graphmodels.ENABLED_ADVANCEDCONFIGSTATE 
 reportSuspiciousActivitySettings.SetState(&state) 
-includeTarget := graphmodels.New()
-targetType := "group"
+includeTarget := graphmodels.NewIncludeTarget()
+targetType := graphmodels.GROUP_AUTHENTICATIONMETHODTARGETTYPE 
 includeTarget.SetTargetType(&targetType) 
 id := "all_users"
 includeTarget.SetId(&id) 
-	reportSuspiciousActivitySettings.SetIncludeTarget(includeTarget)
+reportSuspiciousActivitySettings.SetIncludeTarget(includeTarget)
 voiceReportingCode := int32(0)
 reportSuspiciousActivitySettings.SetVoiceReportingCode(&voiceReportingCode) 
-	requestBody.SetReportSuspiciousActivitySettings(reportSuspiciousActivitySettings)
-}
-requestBody.SetAdditionalData(additionalData)
+requestBody.SetReportSuspiciousActivitySettings(reportSuspiciousActivitySettings)
 
 result, err := graphClient.Policies().AuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
 

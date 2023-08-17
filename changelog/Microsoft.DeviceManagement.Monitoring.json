@@ -3,6 +3,24 @@
         {
             "ChangeList": [
                 {
+                    "Id": "b023fd62-6131-49c4-bd7d-12b3f84e2317",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcInGracePeriodScenario",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `cloudPcInGracePeriodScenario` member to the **alertRuleTemplate** enumeration.",
+                    "Target": "alertRuleTemplate"
+                }
+            ],
+            "Id": "b023fd62-6131-49c4-bd7d-12b3f84e2317",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-07-25T06:35:09.9640775Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "4d3868c0-d11b-46d6-b4ab-5e52b550b759",
                     "ApiChange": "Enum type",
                     "ChangedApiName": "aggregationType",
@@ -119,7 +137,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-10-11T06:35:09.9640775Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         }
     ]

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
 	displayName = "Onboard pre-hire employee"
@@ -44,6 +44,6 @@ $params = @{
 	)
 }
 
-New-MgIdentityGovernanceLifecycleWorkflow -BodyParameter $params
+New-MgBetaIdentityGovernanceLifecycleWorkflow -BodyParameter $params
 
 ```

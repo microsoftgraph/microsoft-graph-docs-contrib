@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Workflow();
 $requestBody->setDisplayName('Onboard pre-hire employee');
@@ -18,32 +18,25 @@ $requestBody->setIsEnabled(true);
 
 $requestBody->setIsSchedulingEnabled(false);
 
-$executionConditions = new WorkflowExecutionConditions();
-$executionConditions->set@odatatype('microsoft.graph.identityGovernance.triggerAndScopeBasedConditions');
+$executionConditions = new TriggerAndScopeBasedConditions();
+$executionConditions->setOdataType('microsoft.graph.identityGovernance.triggerAndScopeBasedConditions');
 
-$additionalData = [
-		'scope' => $executionConditions = new Scope();
-$		executionConditions->set@odatatype('microsoft.graph.identityGovernance.ruleBasedSubjectSet');
+$executionConditionsScope = new RuleBasedSubjectSet();
+$executionConditionsScope->setOdataType('microsoft.graph.identityGovernance.ruleBasedSubjectSet');
 
-$		executionConditions->setRule('(department eq \'Sales\')');
-
-
-$executionConditions->setScope($scope);
-
-		'trigger' => $executionConditions = new Trigger();
-$		executionConditions->set@odatatype('microsoft.graph.identityGovernance.timeBasedAttributeTrigger');
-
-$		executionConditions->setTimeBasedAttribute('employeeHireDate');
-
-		$executionConditions->setOffsetInDays(-2);
+$executionConditionsScope->setRule('(department eq \'Sales\')');
 
 
-$executionConditions->setTrigger($trigger);
+$executionConditions->setScope($executionConditionsScope);
+$executionConditionsTrigger = new TimeBasedAttributeTrigger();
+$executionConditionsTrigger->setOdataType('microsoft.graph.identityGovernance.timeBasedAttributeTrigger');
 
-];
-$executionConditions->setAdditionalData($additionalData);
+$executionConditionsTrigger->setTimeBasedAttribute(new WorkflowTriggerTimeBasedAttribute('employeeHireDate'));
+
+$executionConditionsTrigger->setOffsetInDays(-2);
 
 
+$executionConditions->setTrigger($executionConditionsTrigger);
 
 $requestBody->setExecutionConditions($executionConditions);
 $tasksTask1 = new Task();

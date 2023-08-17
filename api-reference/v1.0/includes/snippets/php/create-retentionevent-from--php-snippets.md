@@ -7,46 +7,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new RetentionEvent();
-$requestBody->set@odatatype('#microsoft.graph.security.retentionEvent');
+$requestBody->setOdataType('#microsoft.graph.security.retentionEvent');
 
 $requestBody->setDisplayName('String');
 
 $requestBody->setDescription('String');
 
-$requestBody->setEventTriggerDateTime(new DateTime('String (timestamp)'));
-
-$createdBy = new IdentitySet();
-$createdBy->set@odatatype('microsoft.graph.identitySet');
-
-
-$requestBody->setCreatedBy($createdBy);
-$eventPropagationResultsEventPropagationResult1 = new EventPropagationResult();
-$eventPropagationResultsEventPropagationResult1->set@odatatype('microsoft.graph.security.eventPropagationResult');
-
-
-$eventPropagationResultsArray []= $eventPropagationResultsEventPropagationResult1;
-$requestBody->setEventPropagationResults($eventPropagationResultsArray);
-
-
-$eventStatus = new RetentionEventStatus();
-$eventStatus->set@odatatype('microsoft.graph.security.retentionEventStatus');
-
-
-$requestBody->setEventStatus($eventStatus);
-$requestBody->setLastStatusUpdateDateTime(new DateTime('String (timestamp)'));
+$requestBody->setEventTriggerDateTime(new \DateTime('String (timestamp)'));
 
 $additionalData = [
-	'eventQuery' => $eventQuery1 = new ();
-$	eventQuery1->set@odatatype('microsoft.graph.security.eventQuery');
-
-
-$eventQueryArray []= $eventQuery1;
-$requestBody->setEventQuery($eventQueryArray);
-
-
+		'eventQuery' => [
+				[
+						'@odata.type' => 'microsoft.graph.security.eventQuery', 
+				],
+			],
+		'retentionEventType@odata.bind' => 'https://graph.microsoft.com/v1.0/security/triggerTypes/retentionEventType/9eecef97-fb3c-4c68-825b-4dd74530863a', 
 ];
 $requestBody->setAdditionalData($additionalData);
 

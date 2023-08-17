@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Search
+Import-Module Microsoft.Graph.Beta.Search
 
 $params = @{
 	displayName = "GDPR"
@@ -14,6 +14,6 @@ $params = @{
 	state = "published"
 }
 
-New-MgSearchAcronym -BodyParameter $params
+New-MgBetaSearchAcronym -BodyParameter $params
 
 ```

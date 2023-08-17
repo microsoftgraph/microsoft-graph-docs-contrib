@@ -32,7 +32,7 @@ var requestBody = new SubjectRightsRequest
 	{
 		"CCPA",
 	},
-	SiteLocations = new SubjectRightsRequestSiteLocation
+	SiteLocations = new SubjectRightsRequestAllSiteLocation
 	{
 		OdataType = "microsoft.graph.subjectRightsRequestAllSiteLocation",
 	},

@@ -13,23 +13,20 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphcommunications.NewAnswerPostRequestBody()
 callbackUri := "https://bot.contoso.com/api/calls"
 requestBody.SetCallbackUri(&callbackUri) 
-acceptedModalities := []graphcommunications.Modalityable {
+acceptedModalities := []graphmodels.Modalityable {
 	modality := graphmodels.AUDIO_MODALITY 
-	requestBody.SetModality(&modality) 
-
+	requestBody.SetModality(&modality)
 }
 requestBody.SetAcceptedModalities(acceptedModalities)
-mediaConfig := graphmodels.NewMediaConfig()
-additionalData := map[string]interface{}{
-	"blob" : "<Media Session Configuration Blob>", 
-}
-mediaConfig.SetAdditionalData(additionalData)
+mediaConfig := graphmodels.NewAppHostedMediaConfig()
+blob := "<Media Session Configuration Blob>"
+mediaConfig.SetBlob(&blob) 
 requestBody.SetMediaConfig(mediaConfig)
 
 graphClient.Communications().Calls().ByCallId("call-id").Answer().Post(context.Background(), requestBody, nil)

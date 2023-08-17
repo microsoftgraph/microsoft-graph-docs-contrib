@@ -17,17 +17,12 @@ var requestBody = new EducationAssignment
 		ContentType = BodyType.Text,
 		Content = "Read chapter 4",
 	},
-	Grading = new EducationAssignmentGradeType
+	Grading = new EducationAssignmentPointsGradeType
 	{
 		OdataType = "#microsoft.graph.educationAssignmentPointsGradeType",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"maxPoints" , 50
-			},
-		},
+		MaxPoints = 50f,
 	},
-	AssignTo = new EducationAssignmentRecipient
+	AssignTo = new EducationAssignmentClassRecipient
 	{
 		OdataType = "#microsoft.graph.educationAssignmentClassRecipient",
 	},

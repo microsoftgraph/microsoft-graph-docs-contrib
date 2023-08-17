@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewUnifiedRoleDefinition()
@@ -26,13 +26,11 @@ unifiedRolePermission := graphmodels.NewUnifiedRolePermission()
 allowedResourceActions := []string {
 	"Microsoft.CloudPC/CloudPCs/Read",
 	"Microsoft.CloudPC/CloudPCs/Reprovision",
-
 }
 unifiedRolePermission.SetAllowedResourceActions(allowedResourceActions)
 
 rolePermissions := []graphmodels.UnifiedRolePermissionable {
 	unifiedRolePermission,
-
 }
 requestBody.SetRolePermissions(rolePermissions)
 

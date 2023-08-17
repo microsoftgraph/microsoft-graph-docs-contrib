@@ -13,13 +13,12 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphsolutions.NewGetStaffAvailabilityPostRequestBody()
 staffIds := []string {
 	"311a5454-08b2-4560-ba1c-f715e938cb79",
-
 }
 requestBody.SetStaffIds(staffIds)
 startDateTime := graphmodels.NewDateTimeTimeZone()

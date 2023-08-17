@@ -71,7 +71,7 @@ request_body.meetingduration =  \DateInterval('PT1H')
 
 request_body.return_suggestion_reasons = True
 
-request_body.minimum_attendee_percentage = '100'
+request_body.MinimumAttendeePercentage = 100
 
 
 

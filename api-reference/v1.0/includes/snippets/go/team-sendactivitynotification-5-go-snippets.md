@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphteams.NewSendActivityNotificationPostRequestBody()
@@ -29,11 +29,9 @@ previewText := graphmodels.NewItemBody()
 content := "Internal spending team has a pending finance approval requests"
 previewText.SetContent(&content) 
 requestBody.SetPreviewText(previewText)
-recipient := graphmodels.NewTeamworkNotificationRecipient()
-additionalData := map[string]interface{}{
-	"teamId" : "e8bece96-d393-4b9b-b8da-69cedef1a7e7", 
-}
-recipient.SetAdditionalData(additionalData)
+recipient := graphmodels.NewTeamMembersNotificationRecipient()
+teamId := "e8bece96-d393-4b9b-b8da-69cedef1a7e7"
+recipient.SetTeamId(&teamId) 
 requestBody.SetRecipient(recipient)
 
 
@@ -43,9 +41,8 @@ keyValuePair.SetName(&name)
 value := "5"
 keyValuePair.SetValue(&value) 
 
-templateParameters := []graphteams.KeyValuePairable {
+templateParameters := []graphmodels.KeyValuePairable {
 	keyValuePair,
-
 }
 requestBody.SetTemplateParameters(templateParameters)
 

@@ -12,21 +12,20 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphdrives.NewAddPostRequestBody()
 index := int32(5)
 requestBody.SetIndex(&index) 
-values := []graphdrives.Jsonable {
+values := []graphmodels.Jsonable {
 	json := []graphmodels.Numberable {
  := int32(1)
 requestBody.Set(&) 
  := int32(2)
 requestBody.Set(&) 
  := int32(3)
-requestBody.Set(&) 
-
+requestBody.Set(&)
 	}
 	json := []graphmodels.Numberable {
  := int32(4)
@@ -34,10 +33,8 @@ requestBody.Set(&)
  := int32(5)
 requestBody.Set(&) 
  := int32(6)
-requestBody.Set(&) 
-
+requestBody.Set(&)
 	}
-
 }
 requestBody.SetValues(values)
 

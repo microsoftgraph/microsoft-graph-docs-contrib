@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelswindowsupdates.NewUpdatePolicy()
@@ -22,31 +22,27 @@ audience.SetId(&id)
 requestBody.SetAudience(audience)
 
 
-complianceChange := graphmodelswindowsupdates.NewComplianceChange()
+complianceChange := graphmodelswindowsupdates.NewContentApproval()
 
 complianceChanges := []graphmodelswindowsupdates.ComplianceChangeable {
 	complianceChange,
-
 }
 requestBody.SetComplianceChanges(complianceChanges)
 
 
-complianceChangeRule := graphmodelswindowsupdates.NewComplianceChangeRule()
-additionalData := map[string]interface{}{
-contentFilter := graphmodels.New()
-	complianceChangeRule.SetContentFilter(contentFilter)
-	"durationBeforeDeploymentStart" : "P7D", 
-}
-complianceChangeRule.SetAdditionalData(additionalData)
+complianceChangeRule := graphmodelswindowsupdates.NewContentApprovalRule()
+contentFilter := graphmodelswindowsupdates.NewDriverUpdateFilter()
+complianceChangeRule.SetContentFilter(contentFilter)
+durationBeforeDeploymentStart , err := abstractions.ParseISODuration("P7D")
+complianceChangeRule.SetDurationBeforeDeploymentStart(&durationBeforeDeploymentStart) 
 
 complianceChangeRules := []graphmodelswindowsupdates.ComplianceChangeRuleable {
 	complianceChangeRule,
-
 }
 requestBody.SetComplianceChangeRules(complianceChangeRules)
 deploymentSettings := graphmodelswindowsupdates.NewDeploymentSettings()
 schedule := graphmodelswindowsupdates.NewScheduleSettings()
-gradualRollout := graphmodelswindowsupdates.NewGradualRolloutSettings()
+gradualRollout := graphmodelswindowsupdates.NewRateDrivenRolloutSettings()
 durationBetweenOffers , err := abstractions.ParseISODuration("P1D")
 gradualRollout.SetDurationBetweenOffers(&durationBetweenOffers) 
 additionalData := map[string]interface{}{

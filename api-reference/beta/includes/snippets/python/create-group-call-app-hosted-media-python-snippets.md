@@ -54,7 +54,7 @@ targets_invitation_participant_info1identity.user = targets_invitation_participa
 targets_invitation_participant_info1.identity = targets_invitation_participant_info1identity
 
 targetsArray []= targetsInvitationParticipantInfo1;
-targets_invitation_participant_info2 = InvitationParticipantInfo()
+targets_invitation_participant_info2 = ParticipantInfo()
 targets_invitation_participant_info2.@odata_type = '#microsoft.graph.participantInfo'
 
 targets_invitation_participant_info2identity = IdentitySet()
@@ -79,16 +79,12 @@ request_body.targets(targetsArray)
 request_body.RequestedModalities([request_body.modality(Modality.Audio('modality.audio'))
 ])
 
-media_config = MediaConfig()
+media_config = AppHostedMediaConfig()
 media_config.@odata_type = '#microsoft.graph.appHostedMediaConfig'
 
+media_config.blob = '<Media Session Configuration>'
+
 media_config.remove_from_default_audio_group = False
-
-additional_data = [
-'blob' => '<Media Session Configuration>', 
-];
-media_config.additional_data(additional_data)
-
 
 
 request_body.media_config = media_config

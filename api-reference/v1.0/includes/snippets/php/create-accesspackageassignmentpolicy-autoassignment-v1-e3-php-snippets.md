@@ -7,24 +7,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackageAssignmentPolicy();
 $requestBody->setDisplayName('Sales department users');
 
 $requestBody->setDescription('All users from sales department');
 
-$requestBody->setAllowedTargetScope(new AllowedTargetScope('specificdirectoryusers'));
+$requestBody->setAllowedTargetScope(new AllowedTargetScope('specificDirectoryUsers'));
 
-$specificAllowedTargetsSubjectSet1 = new SubjectSet();
-$specificAllowedTargetsSubjectSet1->set@odatatype('#microsoft.graph.attributeRuleMembers');
+$specificAllowedTargetsSubjectSet1 = new AttributeRuleMembers();
+$specificAllowedTargetsSubjectSet1->setOdataType('#microsoft.graph.attributeRuleMembers');
 
-$additionalData = [
-		'description' => 'Membership rule for all users from sales department', 
-		'membershipRule' => '(user.department -eq \"Sales\")', 
-];
-$specificAllowedTargetsSubjectSet1->setAdditionalData($additionalData);
+$specificAllowedTargetsSubjectSet1->setDescription('Membership rule for all users from sales department');
 
+$specificAllowedTargetsSubjectSet1->setMembershipRule('(user.department -eq \"Sales\")');
 
 
 $specificAllowedTargetsArray []= $specificAllowedTargetsSubjectSet1;
@@ -33,6 +30,10 @@ $requestBody->setSpecificAllowedTargets($specificAllowedTargetsArray);
 
 $automaticRequestSettings = new AccessPackageAutomaticRequestSettings();
 $automaticRequestSettings->setRequestAccessForAllowedTargets(true);
+
+$automaticRequestSettings->setRemoveAccessWhenTargetLeavesAllowedTargets(true);
+
+$automaticRequestSettings->setGracePeriodBeforeAccessRemoval(new \DateInterval('P7D'));
 
 
 $requestBody->setAutomaticRequestSettings($automaticRequestSettings);

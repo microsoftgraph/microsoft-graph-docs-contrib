@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewSimulation()
@@ -24,18 +24,13 @@ attackTechnique := graphmodels.CREDENTIALHARVESTING_SIMULATIONATTACKTECHNIQUE
 requestBody.SetAttackTechnique(&attackTechnique) 
 status := graphmodels.SCHEDULED_SIMULATIONSTATUS 
 requestBody.SetStatus(&status) 
-durationInDays := int32(3)
-requestBody.SetDurationInDays(&durationInDays) 
-includedAccountTarget := graphmodels.NewAccountTargetContent()
+includedAccountTarget := graphmodels.NewAddressBookAccountTargetContent()
 type := graphmodels.ADDRESSBOOK_ACCOUNTTARGETCONTENTTYPE 
 includedAccountTarget.SetType(&type) 
-additionalData := map[string]interface{}{
-	accountTargetEmails := []string {
-		"john@contoso.com",
-
-	}
+accountTargetEmails := []string {
+	"john@contoso.com",
 }
-includedAccountTarget.SetAdditionalData(additionalData)
+includedAccountTarget.SetAccountTargetEmails(accountTargetEmails)
 requestBody.SetIncludedAccountTarget(includedAccountTarget)
 additionalData := map[string]interface{}{
 	"odataBind" : "https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a", 

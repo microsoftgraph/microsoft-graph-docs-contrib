@@ -58,29 +58,22 @@ stages_access_package_approval_stage1.is_escalation_enabled = False
 
 stages_access_package_approval_stage1.durationbeforeescalation =  \DateInterval('PT0S')
 
-primary_approvers_subject_set1 = SubjectSet()
+primary_approvers_subject_set1 = RequestorManager()
 primary_approvers_subject_set1.@odata_type = '#microsoft.graph.requestorManager'
 
-additional_data = [
-'manager_level' => 1,
-];
-primary_approvers_subject_set1.additional_data(additional_data)
-
+primary_approvers_subject_set1.ManagerLevel = 1
 
 
 primaryApproversArray []= primaryApproversSubjectSet1;
 stages_access_package_approval_stage1.primaryapprovers(primaryApproversArray)
 
 
-fallback_primary_approvers_subject_set1 = SubjectSet()
+fallback_primary_approvers_subject_set1 = SingleUser()
 fallback_primary_approvers_subject_set1.@odata_type = '#microsoft.graph.singleUser'
 
-additional_data = [
-'user_id' => 'e6bf4d7d-6824-4dd0-809d-5bf42d4817c2', 
-'description' => 'user', 
-];
-fallback_primary_approvers_subject_set1.additional_data(additional_data)
+fallback_primary_approvers_subject_set1.user_id = 'e6bf4d7d-6824-4dd0-809d-5bf42d4817c2'
 
+fallback_primary_approvers_subject_set1.description = 'user'
 
 
 fallbackPrimaryApproversArray []= fallbackPrimaryApproversSubjectSet1;

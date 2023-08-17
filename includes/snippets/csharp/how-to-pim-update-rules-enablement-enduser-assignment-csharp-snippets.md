@@ -8,10 +8,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new UnifiedRoleManagementPolicyRule
+var requestBody = new UnifiedRoleManagementPolicyEnablementRule
 {
 	OdataType = "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule",
 	Id = "Enablement_EndUser_Assignment",
+	EnabledRules = new List<string>
+	{
+		"Justification",
+		"MultiFactorAuthentication",
+		"Ticketing",
+	},
 	Target = new UnifiedRoleManagementPolicyRuleTarget
 	{
 		OdataType = "microsoft.graph.unifiedRoleManagementPolicyRuleTarget",
@@ -21,22 +27,11 @@ var requestBody = new UnifiedRoleManagementPolicyRule
 			UnifiedRoleManagementPolicyRuleTargetOperations.All,
 		},
 		Level = "Assignment",
-		InheritableSettings = new List<String>
+		InheritableSettings = new List<string>
 		{
 		},
-		EnforcedSettings = new List<String>
+		EnforcedSettings = new List<string>
 		{
-		},
-	},
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"enabledRules" , new List<string>
-			{
-				"Justification",
-				"MultiFactorAuthentication",
-				"Ticketing",
-			}
 		},
 	},
 };

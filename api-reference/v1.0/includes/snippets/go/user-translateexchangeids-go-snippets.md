@@ -13,14 +13,13 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewTranslateExchangeIdsPostRequestBody()
+requestBody := graphusers.NewItemTranslateExchangeIdsPostRequestBody()
 inputIds := []string {
 	"{rest-formatted-id-1}",
 	"{rest-formatted-id-2}",
-
 }
 requestBody.SetInputIds(inputIds)
 sourceIdType := graphmodels.RESTID_EXCHANGEIDFORMAT 

@@ -14,42 +14,34 @@ request_body.id = '7a6ab703-0780-4b37-8445-81f679b2d75c'
 
 request_body.requesttype(AccessPackageRequestType.AdminUpdate('accesspackagerequesttype.adminupdate'))
 
-answers_access_package_answer1 = AccessPackageAnswer()
+answers_access_package_answer1 = AccessPackageAnswerString()
 answers_access_package_answer1.@odata_type = '#microsoft.graph.accessPackageAnswerString'
 
-answers_access_package_answer1answered_question = AccessPackageQuestion()
+answers_access_package_answer1.value = 'UpdatedAnswerValue'
+
+answers_access_package_answer1answered_question = AccessPackageMultipleChoiceQuestion()
 answers_access_package_answer1answered_question.@odata_type = '#microsoft.graph.accessPackageMultipleChoiceQuestion'
 
 answers_access_package_answer1answered_question.id = '8fe745e7-80b2-490d-bd22-4e708c77288c'
 
 
 answers_access_package_answer1.answered_question = answers_access_package_answer1answered_question
-additional_data = [
-'value' => 'UpdatedAnswerValue', 
-];
-answers_access_package_answer1.additional_data(additional_data)
-
-
 
 answersArray []= answersAccessPackageAnswer1;
-answers_access_package_answer2 = AccessPackageAnswer()
+answers_access_package_answer2 = AccessPackageAnswerString()
 answers_access_package_answer2.@odata_type = '#microsoft.graph.accessPackageAnswerString'
+
+answers_access_package_answer2.value = 'My updated answer.'
 
 answers_access_package_answer2.display_value = 'This is my updated answer to the question.'
 
-answers_access_package_answer2answered_question = AccessPackageQuestion()
+answers_access_package_answer2answered_question = AccessPackageTextInputQuestion()
 answers_access_package_answer2answered_question.@odata_type = '#microsoft.graph.accessPackageTextInputQuestion'
 
 answers_access_package_answer2answered_question.id = '7aaa18c9-8e4f-440f-bd5a-3a7ce312cbe6'
 
 
 answers_access_package_answer2.answered_question = answers_access_package_answer2answered_question
-additional_data = [
-'value' => 'My updated answer.', 
-];
-answers_access_package_answer2.additional_data(additional_data)
-
-
 
 answersArray []= answersAccessPackageAnswer2;
 request_body.answers(answersArray)

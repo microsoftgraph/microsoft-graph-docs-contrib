@@ -47,21 +47,18 @@ approval_stages_approval_stage1.is_escalation_enabled = True
 
 approval_stages_approval_stage1.EscalationTimeInMinutes = 11520
 
-primary_approvers_user_set1 = UserSet()
+primary_approvers_user_set1 = GroupMembers()
 primary_approvers_user_set1.@odata_type = '#microsoft.graph.groupMembers'
 
 primary_approvers_user_set1.is_backup = True
 
-additional_data = [
-'id' => 'string (identifier)', 
-'description' => 'group for users from connected organizations which have no external sponsor', 
-];
-primary_approvers_user_set1.additional_data(additional_data)
+primary_approvers_user_set1.id = 'string (identifier)'
 
+primary_approvers_user_set1.description = 'group for users from connected organizations which have no external sponsor'
 
 
 primaryApproversArray []= primaryApproversUserSet1;
-primary_approvers_user_set2 = UserSet()
+primary_approvers_user_set2 = ExternalSponsors()
 primary_approvers_user_set2.@odata_type = '#microsoft.graph.externalSponsors'
 
 primary_approvers_user_set2.is_backup = False
@@ -71,17 +68,14 @@ primaryApproversArray []= primaryApproversUserSet2;
 approval_stages_approval_stage1.primaryapprovers(primaryApproversArray)
 
 
-escalation_approvers_user_set1 = UserSet()
+escalation_approvers_user_set1 = SingleUser()
 escalation_approvers_user_set1.@odata_type = '#microsoft.graph.singleUser'
 
 escalation_approvers_user_set1.is_backup = True
 
-additional_data = [
-'id' => 'string (identifier)', 
-'description' => 'user if the external sponsor does not respond', 
-];
-escalation_approvers_user_set1.additional_data(additional_data)
+escalation_approvers_user_set1.id = 'string (identifier)'
 
+escalation_approvers_user_set1.description = 'user if the external sponsor does not respond'
 
 
 escalationApproversArray []= escalationApproversUserSet1;
@@ -99,21 +93,18 @@ approval_stages_approval_stage2.is_escalation_enabled = True
 
 approval_stages_approval_stage2.EscalationTimeInMinutes = 11520
 
-primary_approvers_user_set1 = UserSet()
+primary_approvers_user_set1 = GroupMembers()
 primary_approvers_user_set1.@odata_type = '#microsoft.graph.groupMembers'
 
 primary_approvers_user_set1.is_backup = True
 
-additional_data = [
-'id' => 'string (identifier)', 
-'description' => 'group for users from connected organizations which have no internal sponsor', 
-];
-primary_approvers_user_set1.additional_data(additional_data)
+primary_approvers_user_set1.id = 'string (identifier)'
 
+primary_approvers_user_set1.description = 'group for users from connected organizations which have no internal sponsor'
 
 
 primaryApproversArray []= primaryApproversUserSet1;
-primary_approvers_user_set2 = UserSet()
+primary_approvers_user_set2 = InternalSponsors()
 primary_approvers_user_set2.@odata_type = '#microsoft.graph.internalSponsors'
 
 primary_approvers_user_set2.is_backup = False
@@ -123,17 +114,14 @@ primaryApproversArray []= primaryApproversUserSet2;
 approval_stages_approval_stage2.primaryapprovers(primaryApproversArray)
 
 
-escalation_approvers_user_set1 = UserSet()
+escalation_approvers_user_set1 = SingleUser()
 escalation_approvers_user_set1.@odata_type = '#microsoft.graph.singleUser'
 
 escalation_approvers_user_set1.is_backup = True
 
-additional_data = [
-'id' => 'string (identifier)', 
-'description' => 'user if the internal sponsor does not respond', 
-];
-escalation_approvers_user_set1.additional_data(additional_data)
+escalation_approvers_user_set1.id = 'string (identifier)'
 
+escalation_approvers_user_set1.description = 'user if the internal sponsor does not respond'
 
 
 escalationApproversArray []= escalationApproversUserSet1;

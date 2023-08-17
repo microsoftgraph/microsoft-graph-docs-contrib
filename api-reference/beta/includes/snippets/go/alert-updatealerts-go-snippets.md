@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphsecurity.NewUpdateAlertsPostRequestBody()
@@ -26,7 +26,6 @@ closedDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
 alert.SetClosedDateTime(&closedDateTime) 
 comments := []string {
 	"String",
-
 }
 alert.SetComments(comments)
 feedback := graphmodels.NewAlertFeedback()
@@ -43,7 +42,6 @@ status.SetAdditionalData(additionalData)
 alert.SetStatus(status)
 tags := []string {
 	"String",
-
 }
 alert.SetTags(tags)
 vendorInformation := graphmodels.NewSecurityVendorInformation()
@@ -53,9 +51,8 @@ vendor := "String"
 vendorInformation.SetVendor(&vendor) 
 alert.SetVendorInformation(vendorInformation)
 
-value := []graphsecurity.Objectable {
+value := []graphmodels.alertable {
 	alert,
-
 }
 requestBody.SetValue(value)
 

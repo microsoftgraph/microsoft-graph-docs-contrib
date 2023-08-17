@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphdrives.NewRevokeGrantsPostRequestBody()
@@ -23,9 +23,8 @@ driveRecipient := graphmodels.NewDriveRecipient()
 email := "ryan@contoso.com"
 driveRecipient.SetEmail(&email) 
 
-grantees := []graphdrives.DriveRecipientable {
+grantees := []graphmodels.DriveRecipientable {
 	driveRecipient,
-
 }
 requestBody.SetGrantees(grantees)
 

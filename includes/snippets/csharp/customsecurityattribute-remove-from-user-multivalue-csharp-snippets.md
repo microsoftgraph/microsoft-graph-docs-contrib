@@ -18,7 +18,7 @@ var requestBody = new User
 				Engineering = new 
 				{
 					OdataType = "#Microsoft.DirectoryServices.CustomSecurityAttributeValue",
-					Project = new List<>
+					Project = new List<object>
 					{
 					},
 				},

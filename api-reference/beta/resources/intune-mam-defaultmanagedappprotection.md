@@ -131,6 +131,7 @@ Inherits from [managedAppProtection](../resources/intune-mam-managedappprotectio
 |appActionIfDeviceLockNotSet|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either warn, block or wipe, if the screen lock is required on device but is not set. (android only). Possible values are: `block`, `wipe`, `warn`.|
 |connectToVpnOnLaunch|Boolean|Whether the app should connect to the configured VPN on launch (Android only).|
 |appActionIfDevicePasscodeComplexityLessThanLow|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If the device does not have a passcode of low complexity or higher, trigger the stored action. Possible values are: `block`, `wipe`, `warn`.|
+|appActionIfAccountIsClockedOut|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Defines a managed app behavior, either block or warn, if the user is clocked out (non-working time). Possible values are: `block`, `wipe`, `warn`.|
 |appActionIfDevicePasscodeComplexityLessThanMedium|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If the device does not have a passcode of medium complexity or higher, trigger the stored action. Possible values are: `block`, `wipe`, `warn`.|
 |appActionIfDevicePasscodeComplexityLessThanHigh|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If the device does not have a passcode of high complexity or higher, trigger the stored action. Possible values are: `block`, `wipe`, `warn`.|
 |requireClass3Biometrics|Boolean|Require user to apply Class 3 Biometrics on their Android device.|
@@ -280,6 +281,7 @@ Here is a JSON representation of the resource.
   "appActionIfDeviceLockNotSet": "String",
   "connectToVpnOnLaunch": true,
   "appActionIfDevicePasscodeComplexityLessThanLow": "String",
+  "appActionIfAccountIsClockedOut": "String",
   "appActionIfDevicePasscodeComplexityLessThanMedium": "String",
   "appActionIfDevicePasscodeComplexityLessThanHigh": "String",
   "requireClass3Biometrics": true,

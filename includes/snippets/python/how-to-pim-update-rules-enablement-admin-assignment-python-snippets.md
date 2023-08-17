@@ -7,10 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
 client =  GraphServiceClient(request_adapter)
 
-request_body = UnifiedRoleManagementPolicyRule()
+request_body = UnifiedRoleManagementPolicyEnablementRule()
 request_body.@odata_type = '#microsoft.graph.unifiedRoleManagementPolicyEnablementRule'
 
 request_body.id = 'Enablement_Admin_Assignment'
+
+request_body.EnabledRules(['Justification', 'MultiFactorAuthentication', ])
 
 target = UnifiedRoleManagementPolicyRuleTarget()
 target.@odata_type = 'microsoft.graph.unifiedRoleManagementPolicyRuleTarget'
@@ -28,12 +30,6 @@ target.EnforcedSettings([])
 
 
 request_body.target = target
-additional_data = [
-'enabled_rules' => ['Justification', 'MultiFactorAuthentication', ],
-];
-request_body.additional_data(additional_data)
-
-
 
 
 

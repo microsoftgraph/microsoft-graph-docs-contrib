@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Channel();
-$requestBody->set@odatatype('#Microsoft.Graph.channel');
+$requestBody->setOdataType('#Microsoft.Graph.channel');
 
 $requestBody->setMembershipType(new ChannelMembershipType('private'));
 
@@ -18,13 +18,13 @@ $requestBody->setDisplayName('My First Private Channel');
 
 $requestBody->setDescription('This is my first private channels');
 
-$membersConversationMember1 = new ConversationMember();
-$membersConversationMember1->set@odatatype('#microsoft.graph.aadUserConversationMember');
+$membersConversationMember1 = new AadUserConversationMember();
+$membersConversationMember1->setOdataType('#microsoft.graph.aadUserConversationMember');
 
-$membersConversationMember1->setRoles(['owner', ]);
+$membersConversationMember1->setRoles(['owner', 	]);
 
 $additionalData = [
-	'user@odata.bind' => 'https://graph.microsoft.com/v1.0/users(\'jacob@contoso.com\')', 
+		'user@odata.bind' => 'https://graph.microsoft.com/v1.0/users(\'jacob@contoso.com\')', 
 ];
 $membersConversationMember1->setAdditionalData($additionalData);
 

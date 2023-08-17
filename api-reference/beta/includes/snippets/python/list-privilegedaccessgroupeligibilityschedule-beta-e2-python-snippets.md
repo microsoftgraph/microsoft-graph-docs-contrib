@@ -8,6 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 client =  GraphServiceClient(request_adapter)
 
 query_params = EligibilitySchedulesRequestBuilder.EligibilitySchedulesRequestBuilderGetQueryParameters(
+		filter = "principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'",
 		select = ["accessId","principalId","groupId"],
 )
 

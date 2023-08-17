@@ -7,25 +7,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Call();
-$requestBody->set@odatatype('#microsoft.graph.call');
+$requestBody->setOdataType('#microsoft.graph.call');
 
 $requestBody->setDirection(new CallDirection('outgoing'));
 
 $requestBody->setCallbackUri('https://bot.contoso.com/callback');
 
-$requestBody->setRequestedModalities([$requestBody->setModality(new Modality('audio'));
-]);
+$requestBody->setRequestedModalities([new Modality('audio'),	]);
 
-$mediaConfig = new MediaConfig();
-$mediaConfig->set@odatatype('#microsoft.graph.appHostedMediaConfig');
+$mediaConfig = new AppHostedMediaConfig();
+$mediaConfig->setOdataType('#microsoft.graph.appHostedMediaConfig');
 
 
 $requestBody->setMediaConfig($mediaConfig);
 $chatInfo = new ChatInfo();
-$chatInfo->set@odatatype('#microsoft.graph.chatInfo');
+$chatInfo->setOdataType('#microsoft.graph.chatInfo');
 
 $chatInfo->setThreadId('19:meeting_Win6Ydo4wsMijFjZS00ZGVjLTk5MGUtOTRjNWY2NmNkYTFm@thread.v2');
 
@@ -33,28 +32,31 @@ $chatInfo->setMessageId('0');
 
 
 $requestBody->setChatInfo($chatInfo);
-$meetingInfo = new MeetingInfo();
-$meetingInfo->set@odatatype('#microsoft.graph.organizerMeetingInfo');
+$meetingInfo = new OrganizerMeetingInfo();
+$meetingInfo->setOdataType('#microsoft.graph.organizerMeetingInfo');
+
+$meetingInfoOrganizer = new IdentitySet();
+$meetingInfoOrganizer->setOdataType('#microsoft.graph.identitySet');
+
+$meetingInfoOrganizerUser = new Identity();
+$meetingInfoOrganizerUser->setOdataType('#microsoft.graph.identity');
+
+$meetingInfoOrganizerUser->setId('5810cede-f3cc-42eb-b2c1-e9bd5d53ec96');
+
+$meetingInfoOrganizerUser->setDisplayName('Bob');
 
 $additionalData = [
-	'organizer' => $meetingInfo = new Organizer();
-$	meetingInfo->set@odatatype('#microsoft.graph.identitySet');
-
-$user = new User();
-$	user->set@odatatype('#microsoft.graph.identity');
-
-$	user->setId('5810cede-f3cc-42eb-b2c1-e9bd5d53ec96');
-
-$	user->setTenantId('aa67bd4c-8475-432d-bd41-39f255720e0a');
-
-$	user->setDisplayName('Bob');
+		'tenantId' => 'aa67bd4c-8475-432d-bd41-39f255720e0a', 
+];
+$meetingInfoOrganizerUser->setAdditionalData($additionalData);
 
 
-$meetingInfo->setUser($user);
 
-$meetingInfo->setOrganizer($organizer);
+$meetingInfoOrganizer->setUser($meetingInfoOrganizerUser);
 
-	'allowConversationWithoutHost' => true,
+$meetingInfo->setOrganizer($meetingInfoOrganizer);
+$additionalData = [
+		'allowConversationWithoutHost' => true,
 ];
 $meetingInfo->setAdditionalData($additionalData);
 

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	displayName = "displayName-value"
@@ -18,6 +18,6 @@ $params = @{
 	supports = "supports-value"
 }
 
-New-MgTeamworkWorkforceIntegration -BodyParameter $params
+New-MgBetaTeamworkWorkforceIntegration -BodyParameter $params
 
 ```

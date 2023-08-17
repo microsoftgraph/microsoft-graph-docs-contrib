@@ -7,23 +7,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ResumePostRequestBody();
 $requestBody->setSource('Contoso.SodCheckProcess');
 
 $requestBody->setType('microsoft.graph.accessPackageCustomExtensionStage.assignmentRequestCreated');
 
-$data = new CustomExtensionData();
-$data->set@odatatype('microsoft.graph.accessPackageAssignmentRequestCallbackData');
+$data = new AccessPackageAssignmentRequestCallbackData();
+$data->setOdataType('microsoft.graph.accessPackageAssignmentRequestCallbackData');
 
-$additionalData = [
-		'stage' => 'assignmentRequestCreated', 
-		'customExtensionStageInstanceId' => '957d0c50-466b-4840-bb5b-c92cea7141ff', 
-		'customExtensionStageInstanceDetail' => 'This user is all verified', 
-];
-$data->setAdditionalData($additionalData);
+$data->setStage(new AccessPackageCustomExtensionStage('assignmentRequestCreated'));
 
+$data->setCustomExtensionStageInstanceId('957d0c50-466b-4840-bb5b-c92cea7141ff');
+
+$data->setCustomExtensionStageInstanceDetail('This user is all verified');
 
 
 $requestBody->setData($data);
