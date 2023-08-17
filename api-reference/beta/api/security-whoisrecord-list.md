@@ -15,9 +15,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get a list of [whoisRecord](../resources/security-whoisrecord.md) objects.
+Get a list of [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) objects.
 
-> **Note:** This List whoisRecords API requires the usage of `$search`
+> **Note:** This API requires the usage of `$search` in the request URL.
 
 ## Permissions
 
@@ -44,35 +44,40 @@ GET /security/threatIntelligence/whoisRecords
 
 This method supports the `$count`, `$orderby`, `$search`, `$select`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-`$count` is supported to return a holistic count of the number of [whoisRecord](../resources/security-whoisrecord.md) objects. This is supported as a query parameter (`?$count=true`) or as a path parameter (`/$count`).
+| Name                        | Description |
+| :-------------------------- | :---------- |
+| $count     | `$count` is supported to return a holistic count of the number of [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) objects. This is supported as a query parameter (`?$count=true`) or as a path parameter (`/$count`).                |
+|$orderby| `$orderby` supports some properties of the **whoisRecord** resource. For details, see [Supported properties with $orderby](#supported-properties-with-orderby). 
+|$search|`$search` is **required** in the request URL of this API. The API currently only supports searching by one field in a call. For details, see [Supported properties with $search](#supported-properties-with-search).|
+|$select|`$select` is supported to limit the properties returned in this query.|
+|$skip|`$skip` is supported to skip over elements in pages. Combine with `$top` to perform pagination or use the `@odata.nextLink` for server-side pagination.|
+|$top|`$top` is supported to limit the number of elements per page. Combine with `$skip` to perform pagination or use the `@odata.nextLink` for server-side pagination.|
+
+### Supported properties with $orderby
 
 The following properties can be used for `$orderby` calls.
 
-| Property               | Example                              | Notes                                           |
-| :--------------------- | :----------------------------------- | :---------------------------------------------- |
-| `expirationDateTime`   | `$orderby=expirationDateTime desc`   |                                                 |
-| `host/id`              | `$orderby=host/id asc`               | The full path is required for `$orderby` usage. |
-| `registrationDateTime` | `$orderby=registrationDateTime desc` |                                                 |
+| Property             | Example                              | Notes                                           |
+| :------------------- | :----------------------------------- | :---------------------------------------------- |
+| expirationDateTime   | `$orderby=expirationDateTime desc`   |                                                 |
+| host/id              | `$orderby=host/id asc`               | The full path is required for `$orderby` usage. |
+| registrationDateTime | `$orderby=registrationDateTime desc` |                                                 |
 
-`$search` is **required** when calling the `whoisRecords` List API. The API currently only supports searching by one field in a call. The following properties can be used for searching:
+### Supported properties with $search
+
+The following properties can be used for `$search` calls.
 
 | Property      | Example                                   | Notes                                                                                                    |
 | :------------ | :---------------------------------------- | :------------------------------------------------------------------------------------------------------- |
-| `abuse`       | `$search="abuse/address/state:WA"`          | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `admin`       | `$search="admin/address/state:WA"`          | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `billing`     | `$search="billing/address/state:WA"`        | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `nameservers` | `$search="nameservers/host/id:contoso.com"` | The `$search` must search against as specific host id.                                                   |
-| `noc`         | `$search="noc/address/state:WA"`            | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `registrant`  | `$search="registrant/address/state:WA"`     | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `registrar`   | `$search="registrar/address/state:WA"`      | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `technical`   | `$search="technical/address/state:WA"`      | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-| `zone`        | `$search="zone/address/state:WA"`           | The `$search` must target a specific field of the [whoisContact](../resources/security-whoiscontact.md). |
-
-`$select` is supported to limit the properties returned in this query.
-
-`$skip` is supported to skip over elements in pages. Combine with `$top` to perform pagination (or leverage the `@odata.nextLink` for server-side pagination).
-
-`$top` is supported to limit the number of elements per page. Combine with `$skip` to perform pagination (or leverage the `@odata.nextLink` for server-side pagination).
+| abuse       | `$search="abuse/address/state:WA"`          | The `$search` must target a specific field of the [microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md). |
+| admin       | `$search="admin/address/state:WA"`          | The `$search` must target a specific field of the [microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md). |
+| billing     | `$search="billing/address/state:WA"`        | The `$search` must target a specific field of the [microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md). |
+| nameservers | `$search="nameservers/host/id:contoso.com"` | The `$search` must search against as specific host ID.                                                   |
+| noc         | `$search="noc/address/state:WA"`            | The `$search` must target a specific field of the [microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md). |
+| registrant  | `$search="registrant/address/state:WA"`     | The `$search` must target a specific field of the [microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md). |
+| registrar   | `$search="registrar/address/state:WA"`      | The `$search` must target a specific field of the [microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md). |
+| technical   | `$search="technical/address/state:WA"`      | The `$search` must target a specific field of the [microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md). |
+| zone        | `$search="zone/address/state:WA"`           | The `$search` must target a specific field of the [microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md). |
 
 ## Request headers
 
@@ -106,7 +111,7 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/whoisRecords?$s
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -138,112 +143,112 @@ Content-Type: application/json
       "domainStatus": "client update prohibited,client transfer prohibited,client delete prohibited",
       "rawWhoisText": "Registrar: \n  Handle: 1891582_DOMAIN_COM-VRSN\n  LDH Name: contoso.com\n  Nameserver: \n    LDH Name: ns1-205.azure-dns.com\n    Event: \n      Action: last changed\n...",
       "abuse": {
-          "email": "abusecomplaints@markmonitor.com",
-          "name": null,
-          "organization": null,
-          "telephone": "+1.2086851750",
-          "fax": null,
-          "address": {
-              "city": null,
-              "countryOrRegion": null,
-              "postalCode": null,
-              "state": null,
-              "street": null,
-              "type": "unknown"
-          }
+        "email": "abusecomplaints@markmonitor.com",
+        "name": null,
+        "organization": null,
+        "telephone": "+1.2086851750",
+        "fax": null,
+        "address": {
+          "city": null,
+          "countryOrRegion": null,
+          "postalCode": null,
+          "state": null,
+          "street": null,
+          "type": "unknown"
+        }
       },
       "admin": {
-          "email": "domains@microsoft.com",
-          "name": "Domain Administrator",
-          "organization": "Microsoft Corporation",
-          "telephone": "+1.4258828080",
-          "fax": "+1.4259367329",
-          "address": {
-              "city": "Redmond",
-              "countryOrRegion": "US",
-              "postalCode": "98052",
-              "state": "WA",
-              "street": "One Microsoft Way",
-              "type": "unknown"
-          }
+        "email": "domains@microsoft.com",
+        "name": "Domain Administrator",
+        "organization": "Microsoft Corporation",
+        "telephone": "+1.4258828080",
+        "fax": "+1.4259367329",
+        "address": {
+          "city": "Redmond",
+          "countryOrRegion": "US",
+          "postalCode": "98052",
+          "state": "WA",
+          "street": "One Microsoft Way",
+          "type": "unknown"
+        }
       },
       "registrar": {
-          "email": null,
-          "name": null,
-          "organization": "MarkMonitor Inc.",
-          "telephone": null,
-          "fax": null,
-          "address": {
-              "city": "Meridian",
-              "countryOrRegion": "US",
-              "postalCode": "83646",
-              "state": "ID",
-              "street": "3540 E Longwing Ln",
-              "type": "unknown"
-          }
+        "email": null,
+        "name": null,
+        "organization": "MarkMonitor Inc.",
+        "telephone": null,
+        "fax": null,
+        "address": {
+          "city": "Meridian",
+          "countryOrRegion": "US",
+          "postalCode": "83646",
+          "state": "ID",
+          "street": "3540 E Longwing Ln",
+          "type": "unknown"
+        }
       },
       "registrant": {
-          "email": "domains@microsoft.com",
-          "name": "Domain Administrator",
-          "organization": "Microsoft Corporation",
-          "telephone": "+1.4258828080",
-          "fax": "+1.4259367329",
-          "address": {
-              "city": "Redmond",
-              "countryOrRegion": "US",
-              "postalCode": "98052",
-              "state": "WA",
-              "street": "One Microsoft Way",
-              "type": "unknown"
-          }
+        "email": "domains@microsoft.com",
+        "name": "Domain Administrator",
+        "organization": "Microsoft Corporation",
+        "telephone": "+1.4258828080",
+        "fax": "+1.4259367329",
+        "address": {
+          "city": "Redmond",
+          "countryOrRegion": "US",
+          "postalCode": "98052",
+          "state": "WA",
+          "street": "One Microsoft Way",
+          "type": "unknown"
+        }
       },
       "technical": {
-          "email": "msnhst@microsoft.com",
-          "name": "MSN Hostmaster",
-          "organization": "Microsoft Corporation",
-          "telephone": "+1.4258828080",
-          "fax": "+1.4259367329",
-          "address": {
-              "city": "Redmond",
-              "countryOrRegion": "US",
-              "postalCode": "98052",
-              "state": "WA",
-              "street": "One Microsoft Way",
-              "type": "unknown"
-          }
+        "email": "msnhst@microsoft.com",
+        "name": "MSN Hostmaster",
+        "organization": "Microsoft Corporation",
+        "telephone": "+1.4258828080",
+        "fax": "+1.4259367329",
+        "address": {
+          "city": "Redmond",
+          "countryOrRegion": "US",
+          "postalCode": "98052",
+          "state": "WA",
+          "street": "One Microsoft Way",
+          "type": "unknown"
+        }
       },
       "nameservers": [
         {
           "firstSeenDateTime": null,
           "lastSeenDateTime": null,
           "host": {
-              "id": "ns1-205.azure-dns.com"
+            "id": "ns1-205.azure-dns.com"
           }
         },
         {
           "firstSeenDateTime": null,
           "lastSeenDateTime": null,
           "host": {
-              "id": "ns2-205.azure-dns.net"
+            "id": "ns2-205.azure-dns.net"
           }
         },
         {
           "firstSeenDateTime": null,
           "lastSeenDateTime": null,
           "host": {
-              "id": "ns3-205.azure-dns.org"
+            "id": "ns3-205.azure-dns.org"
           }
         },
         {
           "firstSeenDateTime": null,
           "lastSeenDateTime": null,
           "host": {
-              "id": "ns4-205.azure-dns.info"
+            "id": "ns4-205.azure-dns.info"
           }
         }
       ],
       "host": {
-          "id": "contoso.com"
+        "id": "contoso.com"
       }
     }
   ]
