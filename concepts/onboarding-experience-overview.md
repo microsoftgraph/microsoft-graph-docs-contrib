@@ -24,9 +24,6 @@ The following are the steps to onboard:
 
 5. You can now run existing pipelines without delays caused by runtime authorization. Pipelines are created and run via Azure Data Factory or Azure Synapse.
 
-<!-- Graphic needs to be updated without links. -->
-![Graphic showing the onboarding experience for Microsoft Graph Data Connect customers.](images/new-mgdc-onboarding-flow.png)
-
 ## Updated onboarding experience
 
 The updated Data Connect onboarding experience includes process efficiencies and improved developer workflows, as well as Azure portal improvements that further enable a more intuitive and informative developer experience, including the following:
