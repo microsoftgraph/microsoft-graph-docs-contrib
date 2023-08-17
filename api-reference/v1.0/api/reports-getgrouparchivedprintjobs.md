@@ -30,7 +30,7 @@ In addition to the following permissions, the user's tenant must have an active 
 }
 -->
 ``` http
-GET /reports/getGroupArchivedPrintJobs
+GET /reports/getGroupArchivedPrintJobs(groupId='{groupId}',startDateTime='{startDateTime}',endDateTime='{endDateTime}')
 ```
 
 ## Function parameters
