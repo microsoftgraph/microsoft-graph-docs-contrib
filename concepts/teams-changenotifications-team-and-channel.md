@@ -14,8 +14,9 @@ Change notifications enable you to subscribe to changes (create, update, and del
 Continue with this article about scenarios for the **team** or **channel** resource. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
 > [!NOTE]
-> If you request a subscription date/time that is more than 1 hour in the future, you must include a **lifecycleNotificationUrl** property in your subscription request.
-
+> If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise your subscription request will fail with the follwing error message: 
+> 
+> "lifecycleNotificationUrl is a required property for subscription creation on this resource when the expirationDateTime value is set to greater than 1 hour"
 ## Subscribe to changes in any team at tenant level
 
 To get change notifications for all changes (create, update, and delete) related to any team in a tenant, subscribe to `/teams`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
