@@ -2,7 +2,7 @@
 title: "Update publishedResource"
 description: "Update the properties of a [publishedResource](../resources/publishedresource.md) object."
 ms.localizationpriority: medium
-author: "dhruvinshah"
+author: "dhruvinrshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---

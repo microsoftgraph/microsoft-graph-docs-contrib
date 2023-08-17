@@ -1,4 +1,4 @@
-policitems:
+items:
   - name: Overview of Microsoft Graph
     href: /graph/overview
   - name: Authentication and authorization
