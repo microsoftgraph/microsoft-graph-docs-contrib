@@ -57,8 +57,8 @@ Represents the export job for downloading a specified Cloud PC report.
 | sharedUseLicenseUsageRealTimeReport    | Indicates real-time data for shared use license usage.              |
 | unknownFutureValue                     | Evolvable enumeration sentinel value. Do not use.                   |
 | noLicenseAvailableConnectivityFailureReport | Indicates the Cloud PCs that failed to connect because no licenses were available. |
-| frontlineLicenseUsageReport                 | Indicates daily/hourly aggregated frontline license usage report                    |
-| frontlineLicenseUsageRealTimeReport         | Indicates real time data for frontline license usage                                |
+| frontlineLicenseUsageReport                 | Indicates daily/hourly aggregated frontline license usage report.                   |
+| frontlineLicenseUsageRealTimeReport         | Indicates real-time data for frontline license usage.                             |
 
 ## Relationships
 
