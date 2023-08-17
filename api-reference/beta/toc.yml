@@ -16237,7 +16237,7 @@ items:
                     href: api/security-host-list-subdomains.md
                   - name: List trackers
                     href: api/security-host-list-trackers.md
-                  - name: Get whois
+                  - name: Get WHOIS for a host
                     href: api/security-host-get-whois.md
               - name: Host component
                 items:
@@ -16305,23 +16305,21 @@ items:
                     href: resources/security-vulnerabilitycomponent.md
                   - name: Get
                     href: api/security-vulnerabilitycomponent-get.md
-              - name: Whois Record
+              - name: WHOIS record
                 items:
-                  - name: Whois Record
+                  - name: WHOIS record
                     href: resources/security-whoisrecord.md
-                  - name: Get whois for a host
-                    href: api/security-host-get-whois.md
-                  - name: Get
-                    href: api/security-whoisrecord-get.md
                   - name: List
                     href: api/security-whoisrecord-list.md
-                  - name: List history for whois
-                    href: api/security-whoisrecord-list-history.md
-              - name: Whois History Record
+                  - name: Get
+                    href: api/security-whoisrecord-get.md
+                  - name: Get WHOIS for a host
+                    href: api/security-host-get-whois.md
+              - name: WHOIS history record
                 items:
-                  - name: Whois History Record
+                  - name: WHOIS history record
                     href: resources/security-whoishistoryrecord.md
-                  - name: List history for whois
+                  - name: List
                     href: api/security-whoisrecord-list-history.md
                   - name: Get
                     href: api/security-whoishistoryrecord-get.md
