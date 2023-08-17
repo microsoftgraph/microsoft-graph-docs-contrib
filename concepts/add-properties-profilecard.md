@@ -7,7 +7,7 @@ ms.prod: "people"
 ms.custom: scenarios:getting-started
 ---
 
-# Add or delete custom attributes on a profile card using the profile card API (preview)
+# Add or delete custom attributes on a profile card using the profile card API
 
 On the profile card in Microsoft 365, you can find information about users that is stored and maintained by your organization, for example **Job title** or **Office location**.
 
