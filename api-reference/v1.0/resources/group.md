@@ -186,7 +186,6 @@ This resource supports:
 | membersWithLicenseErrors | [User](user.md) collection | A list of group members with license errors from this group-based license assignment. Read-only. |
 | onenote | [Onenote](onenote.md) | Read-only. |
 | owners | [directoryObject](directoryobject.md) collection | The owners of the group. Limited to 100 owners. Nullable. If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. <br/> Supports `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`). Supports `$expand` including nested `$select`. For example, `/groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName)`. |
-| permissionGrants | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) | The permission that have been granted for a group to a specific application. Supports `$expand`. |
 | photo | [profilePhoto](profilephoto.md) | The group's profile photo |
 | photos | [profilePhoto](profilephoto.md) collection | The profile photos owned by the group. Read-only. Nullable. |
 | planner | [plannerGroup](plannergroup.md) | Entry-point to Planner resource that might exist for a Unified Group. |

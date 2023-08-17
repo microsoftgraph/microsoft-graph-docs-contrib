@@ -17,12 +17,28 @@
           "ChangeType": "Addition",
           "Description": "Added the **permissionGrants** relationship to the [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
           "Target": "team"
+        },
+        {
+          "Id": "742d05f5-7c66-4398-add8-e53e4c45c5b9",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/chat-list-permissiongrants?view=graph-rest-1.0)  operation to the [permissionGrants](https://learn.microsoft.com/en-us/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-1.0) resource.",
+          "Target": "team"
+        },
+        {
+          "Id": "742d05f5-7c66-4398-add8-e53e4c45c5b9",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/team-list-permissiongrants?view=graph-rest-1.0)  operation to the [permissionGrants](https://learn.microsoft.com/en-us/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-1.0) resource.",
+          "Target": "team"
         }
       ],
       "Id": "742d05f5-7c66-4398-add8-e53e4c45c5b9",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-08-15T01:54:55.1386602Z",
+      "CreatedDateTime": "2023-08-17T01:54:55.1386602Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },

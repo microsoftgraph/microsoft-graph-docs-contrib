@@ -147,24 +147,6 @@
     {
       "ChangeList": [
         {
-          "Id": "5a45a586-7c08-4b25-a988-c776e3f84547",
-          "ApiChange": "Resource",
-          "ChangedApiName": "resourceSpecificPermissionGrant",
-          "ChangeType": "Addition",
-          "Description": "Added the [resourceSpecificPermissionGrant](https://learn.microsoft.com/en-us/graph/api/resources/resourceSpecificPermissionGrant?view=graph-rest-1.0) resource",
-          "Target": "resourceSpecificPermissionGrant"
-        }
-      ],
-      "Id": "5a45a586-7c08-4b25-a988-c776e3f84547",
-      "Cloud": "Prod",
-      "Version": "v1.0",
-      "CreatedDateTime": "2023-08-15T01:54:55.1390168Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "f6b20371-ca94-44d6-a70c-443f4ae9e653",
           "ApiChange": "Resource",
           "ChangedApiName": "onPremisesCurrentExportData",
