@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Use the special collection to access a special folder by name."
 title: Get Special Folders
 ms.localizationpriority: medium
@@ -51,7 +51,7 @@ This method returns a `200 OK` response code and a [driveItem](../resources/driv
 
 You can use this method of addressing a special folder inline with additional calls to properties or relationships on the driveItem.
 
-## Examples 
+## Examples
 
 ### Example 1: Get special folder by name
 
