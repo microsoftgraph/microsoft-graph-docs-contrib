@@ -125,27 +125,27 @@ Microsoft Graph Data Connect is integrated with the following Microsoft services
 
 ## Microsoft Graph Data Connect customer and partner stories
 
-Microsoft Graph Data Connect customers build enterprise analytics to empower their organizations.
+icrosoft Graph Data Connect customers build enterprise analytics to empower their organizations.
 
 | Logo        | Description |
 | ----------- | ----------- |
-| ![An image that shows a customer logo for JLL.](images/data_connect_logo_jll.png)   | **JLL:** Companies like JLL give their sales teams a holistic view of client relationships. |
-| ![An image that shows a customer logo for Politecnico di Milano.](images/data_connect_logo_politecnico.png) | **Politecnico di Milano:** Universities can use Microsoft Graph Data Connect to research actionable workforce sentiment insights. |
-| ![An image that shows a customer logo for Sura.](images/data_connect_logo_sura.png)   | **Sura:** Companies like Sura are using Microsoft Graph Data Connect to help businesses reduce human resources risk. |
-| ![An image that shows a customer logo for G&J Pepsi-Cola Bottlers.](images/data_connect_logo_gjpepsi.png)   | **G&J Pepsi-Cola Bottlers:** Companies such as Pepsi have overcome ransomware attacks and offer insights from the other side. |
+| ![An image that shows a customer logo for JLL.](images/data_connect_logo_jll.png)   | Learn more about how **JLL** gives their sales teams a holistic view of client relationships: [Microsoft Customer Story-JLL gives sales teams a holistic view of client relationships with Microsoft Graph Data Connect](https://customers.microsoft.com/story/1640464050423914642-jll-professional-services-microsoft-graph-data_connect) |
+| ![An image that shows a customer logo for Politecnico di Milano.](images/data_connect_logo_politecnico.png) | Learn more about how universities like **Politecnico di Milano** use Microsoft Graph Data Connect to research actionable workforce sentiment insights: [Microsoft Customer Story-Politecnico di Milano delivers actionable workforce sentiment insights with Microsoft Graph Data Connect](https://customers.microsoft.com/story/1635023177515744184-politecnico-di-milano-higher-education-microsoft-graph-data_connect) |
+| ![An image that shows a customer logo for Sura.](images/data_connect_logo_sura.png)   | Companies like **Sura**  are using Microsoft Graph Data Connect to help businesses reduce human resources risk: [Microsoft Customer Story-Seguros SURA Latinoamérica to help businesses reduce strategic human resources risk with Microsoft Graph Data Connect](https://customers.microsoft.com/story/1602468095350437521-suramericana-insurance-microsoft365) |
+| ![An image that shows a customer logo for G&J Pepsi-Cola Bottlers.](images/data_connect_logo_gjpepsi.png)   | Learn more about **G&J Pepsi-Cola Bottlers** as they reflect on overcoming ransomware attacks and offer insights from the other side: [Microsoft Customer Story-G&J Pepsi reflects on overcoming a ransomware attack, offers insights from the other side](https://customers.microsoft.com/story/1548796714270598782-gjpepsi-consumer-goods-microsoft-security-solutions) |
 
 
 Microsoft Graph Data Connect has a rich network of enterprise technology partners who have built powerful solutions with Microsoft 365 data. 
 
 | Logo        | Description |
 | ----------- | ----------- |
-| ![An image that shows a customer logo for GainX.](images/data_connect_logo_gainx.png)   | **GainX** builds a comprehensive map of information flow and provide a data-driven, systemic view of how an organization is actually functioning.|
+| ![An image that shows a customer logo for GainX.](images/data_connect_logo_gainx.png)   | **GainX** builds a comprehensive map of information flow and provide a data-driven, systemic view of how an organization is actually functioning: [Learn more](https://devblogs.microsoft.com/microsoft365dev/maximizing-organizational-performance-with-gainx-artificial-intelligence-and-microsoft-graph-data-connect/) |
 | ![An image that shows a customer logo for HCL.](images/data_connect_logo_hclsoftware.png)   | **HCL** conducts better workforce management, performance analysis, and improvement measures to understand employee productivity. |
 | ![An image that shows a customer logo for Infosys.](images/data_connect_logo_infosys.png)   | **Infosys** gathers feedback, identify areas for improvement, and take action to improve employee engagement, productivity, and retention. |
 | ![An image that shows a customer logo for Lotis Blue.](images/data_connect_logo_lotis_blue.png)   | **Lotis Blue** utilizes organizational network analysis (ONA) to enhance diversity, equity, and inclusion outcomes. Also applying ONA principles to improve customer relationships and revenue velocity. |
-| ![An image that shows a customer logo for Neo4j.](images/data_connect_logo_neo4j.png)   | **Neo4j** constructs security and compliance analytics to uncover the hidden patterns of communication in your organization.  |
-| ![An image that shows a customer logo for Neudesic.](images/data_connect_logo_neudesic.png)   | **Neudesic** extends their use of Microsoft 365 data and Viva Insights collaboration metrics into customer’s Azure environment to further display relevant metrics for employees within other systems and portals. |
-| ![An image that shows a customer logo for Parabole.](images/data_connect_logo_parabole.png)   | **Parabole** illustrates the true cost to maintain the channel, time spent with partners by product, and mismatches between partner investment & partner value. |
+| ![An image that shows a customer logo for Neo4j.](images/data_connect_logo_neo4j.png)   | **Neo4j** constructs security and compliance analytics to uncover the hidden patterns of communication in your organization. [Learn more](https://www.youtube.com/watch?v=no6iWuswR0c&list=PLWZJrkeLOrbaSmfaIM6ogv-LQUP0tleTw).  |
+| ![An image that shows a customer logo for Neudesic.](images/data_connect_logo_neudesic.png)   | **Neudesic** extends their Microsoft 365 data and Viva Insights collaboration metrics into customer’s Azure environment to further display relevant metrics for employees within other systems and portals. |
+| ![An image that shows a customer logo for Parabole.](images/data_connect_logo_parabole.png)   | **Parabole** illustrates true cost to maintain the channel, time spent with partners by product, and mismatches between partner investment & partner value. |
 | ![An image that shows a customer logo for TCS.](images/data_connect_logo_tata_cs.png)   | **TLC** identifies patterns and trends in employee behavior during weekends. Gain insights into how weekend working affects overall employee happiness scores. |
 | ![An image that shows a customer logo for Veldhoen.](images/data_connect_logo_veldhoen.png)   | **Veldhoen** facilitates collaboration and connections between various business units within the company as a way to drive innovation. |
 | ![An image that shows a customer logo for Wipro.](images/data_connect_logo_wipro.png)   | **Wipro** enables their organization to effectively manage and classify data classification during mergers, acquisitions, and divesture scenarios. |
