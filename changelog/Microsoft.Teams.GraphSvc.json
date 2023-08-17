@@ -4,18 +4,18 @@
       "ChangeList": [
         {
           "Id": "742d05f5-7c66-4398-add8-e53e4c45c5b9",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "permissionGrants",
           "ChangeType": "Addition",
-          "Description": "Added the **permissionGrants** relationship to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
+          "Description": "Added the **permissionGrants** navigation property to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-1.0) resource.",
           "Target": "chat"
         },
         {
           "Id": "742d05f5-7c66-4398-add8-e53e4c45c5b9",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "permissionGrants",
           "ChangeType": "Addition",
-          "Description": "Added the **permissionGrants** relationship to the [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
+          "Description": "Added the **permissionGrants** navigation property to the [team](https://learn.microsoft.com/en-us/graph/api/resources/team?view=graph-rest-1.0) resource.",
           "Target": "team"
         },
         {
