@@ -4,7 +4,7 @@ description: "Represents the verified publisher of the application."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "applications"
-author: "jesakowi"
+author: "xurobertMSFT"
 ---
 
 # verifiedPublisher resource type

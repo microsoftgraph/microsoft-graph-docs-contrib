@@ -1,7 +1,7 @@
 ---
 title: "Get softwareOathAuthenticationMethod"
 description: "Read the properties and relationships of a softwareOathAuthenticationMethod object."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
