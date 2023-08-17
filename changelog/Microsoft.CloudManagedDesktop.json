@@ -7,7 +7,7 @@
                     "ApiChange": "Enum type",
                     "ChangedApiName": "cloudPcReportName",
                     "ChangeType": "Change",
-                    "Description": "Added the frontlineLicenseUsageReport member to the **cloudPcReportName** enumeration type.",
+                    "Description": "Added the `frontlineLicenseUsageReport` member to the **cloudPcReportName** enumeration type.",
                     "Target": "cloudPcReportName"
                 },
                 {
@@ -15,7 +15,7 @@
                     "ApiChange": "Enum type",
                     "ChangedApiName": "cloudPcReportName",
                     "ChangeType": "Change",
-                    "Description": "Added the frontlineLicenseUsageRealTimeReport member to the **cloudPcReportName** enumeration type.",
+                    "Description": "Added the `frontlineLicenseUsageRealTimeReport` member to the **cloudPcReportName** enumeration type.",
                     "Target": "cloudPcReportName"
                 },
                 {
