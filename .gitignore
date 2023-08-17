@@ -11,3 +11,4 @@ apidoc.exe
 
 # Unotes related files
 .unotes/
+*.md
