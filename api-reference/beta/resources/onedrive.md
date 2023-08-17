@@ -4,7 +4,7 @@ description: "You can use Microsoft Graph to create an app that connects with fi
 ms.localizationpriority: high
 ms.prod: "sharepoint"
 doc_type: conceptualPageType
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 ---
 
 # Working with files in Microsoft Graph
