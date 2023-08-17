@@ -41,7 +41,7 @@ GET /security/threatIntelligence/whoisRecord/{id}/history
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$select`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name                        | Description |
 | :-------------------------- | :---------- |
@@ -99,7 +99,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.security.whoisHistoryRecord",
+      "@odata.type": "#microsoft.graph.security.whoisRecord",
       "id": "Y29udG9zby5jb20kJDY5NjQ3ODEyMDc3NDY1NzI0MzM=",
       "expirationDateTime": "2023-08-31T00:00:00Z",
       "registrationDateTime": "2022-07-30T09:43:19Z",
@@ -111,12 +111,12 @@ Content-Type: application/json
       "zone": null,
       "whoisServer": "rdap.markmonitor.com",
       "domainStatus": "client update prohibited,client transfer prohibited,client delete prohibited",
-      "rawWhoisText": "Registrar: \n  Handle: 1891582_DOMAIN_COM-VRSN\n  LDH Name: contoso.com\n  Nameserver: \n    LDH Name: ns1-205.azure-dns.com\n    Event: \n      Action: last changed\n...",
+      "rawWhoisText": "Registrar: \n  Handle: 1891582_DOMAIN_COM-VRSN\n  LDH Name: contoso.com\n  Nameserver: \n    LDH Name: ns1.contoso.com\n    Event: \n      Action: last changed\n...",
       "abuse": {
-        "email": "abusecomplaints@markmonitor.com",
+        "email": "noreply@contoso.com",
         "name": null,
         "organization": null,
-        "telephone": "+1.2086851750",
+        "telephone": "+1.5555555555",
         "fax": null,
         "address": {
           "city": null,
@@ -128,17 +128,17 @@ Content-Type: application/json
         }
       },
       "admin": {
-        "email": "domains@microsoft.com",
+        "email": "noreply@contoso.com",
         "name": "Domain Administrator",
-        "organization": "Microsoft Corporation",
-        "telephone": "+1.4258828080",
-        "fax": "+1.4259367329",
+        "organization": "Contoso Org",
+        "telephone": "+1.5555555555",
+        "fax": "+1.5555555555",
         "address": {
           "city": "Redmond",
           "countryOrRegion": "US",
           "postalCode": "98052",
           "state": "WA",
-          "street": "One Microsoft Way",
+          "street": "123 Fake St.",
           "type": "unknown"
         }
       },
@@ -148,42 +148,35 @@ Content-Type: application/json
         "organization": "MarkMonitor Inc.",
         "telephone": null,
         "fax": null,
-        "address": {
-          "city": "Meridian",
-          "countryOrRegion": "US",
-          "postalCode": "83646",
-          "state": "ID",
-          "street": "3540 E Longwing Ln",
-          "type": "unknown"
-        }
+        "address": null
       },
       "registrant": {
-        "email": "domains@microsoft.com",
+        "email": "noreply@contoso.com",
         "name": "Domain Administrator",
-        "organization": "Microsoft Corporation",
-        "telephone": "+1.4258828080",
-        "fax": "+1.4259367329",
+        "organization": "Contoso Corporation",
+        "telephone": "+1.5555555555",
+        "fax": "+1.5555555555",
         "address": {
           "city": "Redmond",
           "countryOrRegion": "US",
           "postalCode": "98052",
           "state": "WA",
-          "street": "One Microsoft Way",
+          "street": "123 Fake St.",
           "type": "unknown"
         }
       },
       "technical": {
-        "email": "msnhst@microsoft.com",
-        "name": "MSN Hostmaster",
-        "organization": "Microsoft Corporation",
-        "telephone": "+1.4258828080",
-        "fax": "+1.4259367329",
+        "email": "noreply@contoso.com",
+        "name": "Hostmaster",
+        "organization": "Contoso Corporation",
+        "telephone": "+1.5555555555",
+        "fax": "+1.5555555555",
         "address": {
           "city": "Redmond",
           "countryOrRegion": "US",
           "postalCode": "98052",
           "state": "WA",
-          "street": "One Microsoft Way",
+          "street": "123 Fake St.",
           "type": "unknown"
         }
       },
@@ -192,28 +185,28 @@ Content-Type: application/json
           "firstSeenDateTime": null,
           "lastSeenDateTime": null,
           "host": {
-            "id": "ns1-205.azure-dns.com"
+            "id": "ns1.contoso-dns.com"
           }
         },
         {
           "firstSeenDateTime": null,
           "lastSeenDateTime": null,
           "host": {
-            "id": "ns2-205.azure-dns.net"
+            "id": "ns2.contoso-dns.com"
           }
         },
         {
           "firstSeenDateTime": null,
           "lastSeenDateTime": null,
           "host": {
-            "id": "ns3-205.azure-dns.org"
+            "id": "ns3.contoso-dns.com"
           }
         },
         {
           "firstSeenDateTime": null,
           "lastSeenDateTime": null,
           "host": {
-            "id": "ns4-205.azure-dns.info"
+            "id": "ns4.contoso-dns.com"
           }
         }
       ],

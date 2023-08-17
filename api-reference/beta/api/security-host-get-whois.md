@@ -88,7 +88,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://canary.graph.microsoft.com/testprodbetathreatintelligenceapis/$metadata#microsoft.graph.security.whoisRecord",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.security.whoisRecord",
     "id": "Y29udG9zby5jb20kJDY5NjQ3ODEyMDc3NDY1NzI0MzM=",
     "expirationDateTime": "2023-08-31T00:00:00Z",
     "registrationDateTime": "2022-07-30T09:43:19Z",
@@ -105,7 +105,7 @@ Content-Type: application/json
         "email": "abusecomplaints@markmonitor.com",
         "name": null,
         "organization": null,
-        "telephone": "+1.2086851750",
+        "telephone": "+1.5555555555",
         "fax": null,
         "address": {
             "city": null,
@@ -120,8 +120,8 @@ Content-Type: application/json
         "email": "domains@microsoft.com",
         "name": "Domain Administrator",
         "organization": "Microsoft Corporation",
-        "telephone": "+1.4258828080",
-        "fax": "+1.4259367329",
+        "telephone": "+1.5555555555",
+        "fax": "+1.5555555555",
         "address": {
             "city": "Redmond",
             "countryOrRegion": "US",
@@ -150,8 +150,8 @@ Content-Type: application/json
         "email": "domains@microsoft.com",
         "name": "Domain Administrator",
         "organization": "Microsoft Corporation",
-        "telephone": "+1.4258828080",
-        "fax": "+1.4259367329",
+        "telephone": "+1.5555555555",
+        "fax": "+1.5555555555",
         "address": {
             "city": "Redmond",
             "countryOrRegion": "US",
@@ -165,8 +165,8 @@ Content-Type: application/json
         "email": "msnhst@microsoft.com",
         "name": "MSN Hostmaster",
         "organization": "Microsoft Corporation",
-        "telephone": "+1.4258828080",
-        "fax": "+1.4259367329",
+        "telephone": "+1.5555555555",
+        "fax": "+1.5555555555",
         "address": {
             "city": "Redmond",
             "countryOrRegion": "US",

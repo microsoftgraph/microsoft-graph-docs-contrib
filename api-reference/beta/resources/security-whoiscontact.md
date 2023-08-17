@@ -1,6 +1,6 @@
 ---
 title: "whoisContact resource type"
-description: "Represents key contact details for a whois record."
+description: "Represents details about a specific contact entry within a whoisRecord."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents key contact details for a [whoisRecord](../resources/security-whoisrecord.md). These details are included in a [whoisRecord](../resources/security-whoisrecord.md) to denote a specific contact entry.
+Represents details about a specific contact entry within a [whoisRecord](../resources/security-whoisrecord.md).
 
 ## Properties
 
