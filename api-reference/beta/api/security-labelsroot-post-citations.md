@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Create citationTemplate
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create a new [citationTemplate](../resources/security-citationtemplate.md) object.
 
 ## Permissions
@@ -72,9 +70,6 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.security.citationTemplate",
   "displayName": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
   "citationUrl": "String",
   "citationJurisdiction": "String"
 }

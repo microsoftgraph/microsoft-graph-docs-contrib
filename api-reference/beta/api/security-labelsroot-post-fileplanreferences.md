@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Create filePlanReferenceTemplate
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create a new [filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) object.
 
 ## Permissions
@@ -72,9 +70,6 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.security.filePlanReferenceTemplate",
   "displayName": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  }
 }
 ```
 

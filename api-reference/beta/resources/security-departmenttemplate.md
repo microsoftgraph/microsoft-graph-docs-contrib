@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Supports CRUD operations to apply and manage the [department](security-department.md) descriptor for a [retentionLabel](security-retentionlabel.md). The **department** file plan descriptor supplements a retention label to improve the manageability and organization of Microsoft 365 content.
 
 Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).
@@ -28,10 +26,10 @@ Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the department descriptor. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).|
-|createdDateTime|DateTimeOffset|Represents the date and time in which the department descriptor is created. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the department descriptor. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md). Read-only.|
+|createdDateTime|DateTimeOffset|Represents the date and time in which the department descriptor is created. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md). Read-only.|
 |displayName|String|Unique string that defines a department name. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).|
-|id|String|Unique ID of the department. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|id|String|Unique ID of the department. Inherited from [microsoft.graph.entity](../resources/entity.md). Read-only.|
 
 ## Relationships
 None.

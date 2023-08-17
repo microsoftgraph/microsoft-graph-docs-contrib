@@ -70,9 +70,6 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.security.authorityTemplate",
   "displayName": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  }
 }
 ```
 

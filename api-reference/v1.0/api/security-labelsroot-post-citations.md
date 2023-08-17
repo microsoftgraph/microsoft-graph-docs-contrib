@@ -70,9 +70,6 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.security.citationTemplate",
   "displayName": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
   "citationUrl": "String",
   "citationJurisdiction": "String"
 }

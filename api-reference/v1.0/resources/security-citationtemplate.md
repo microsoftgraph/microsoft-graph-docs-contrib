@@ -28,10 +28,10 @@ Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources
 |:---|:---|:---|
 |citationJurisdiction|String|Represents the jurisdiction or agency that published the citation.|
 |citationUrl|String|Represents the URL to the published citation.|
-|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the citation descriptor. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).|
-|createdDateTime|DateTimeOffset|Represents the date and time in which the citation descriptor is created. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).|
+|createdBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|Represents the user who created the citation descriptor. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md). Read-only.|
+|createdDateTime|DateTimeOffset|Represents the date and time in which the citation descriptor is created. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md). Read-only.|
 |displayName|String|Unique string that defines a citation name. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptorTemplate.md).|
-|id|String|Unique ID of the citation. Inherited from [microsoft.graph.entity](../resources/entity.md).|
+|id|String|Unique ID of the citation. Inherited from [microsoft.graph.entity](../resources/entity.md). Read-only.|
 
 ## Relationships
 None.

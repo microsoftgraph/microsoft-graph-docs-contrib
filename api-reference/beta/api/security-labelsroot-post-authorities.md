@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Create authorityTemplate
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create a new [authorityTemplate](../resources/security-authoritytemplate.md) object.
 
 ## Permissions
@@ -72,9 +70,6 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.security.authorityTemplate",
   "displayName": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  }
 }
 ```
 
