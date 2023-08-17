@@ -15,7 +15,7 @@ The potential this data holds is powerful; however, to remain competitive, organ
 
 You can use [Microsoft Graph Data Connect](https://developer.microsoft.com/graph) to access your Microsoft 365 data for enterprise analytics. Data Connect provides secure, scalable access to relevant Microsoft 365 datasets in Microsoft Fabric, Azure Synapse, and Azure Data Factory. 
 
-Data Connect unlocks a number of enterprise analytics scenarios as described in the image below, including: 
+Data Connect unlocks a number of enterprise analytics scenarios as shown in the image below, including: 
 
 - **Customer relationship analytics** - For commercial business leaders, go beyond traditional customer relationship management (CRM) insights and understand customer interactions and relationships based on communication and collaboration patterns.
   - *Options include:* Relationship mesh, Customer 360, Customer complaint management, and Conversation lineage. 
