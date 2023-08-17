@@ -18,10 +18,10 @@ Represents details of the managed identity that was used to sign into the target
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|associatedResourceId|String|**TODO: Add Description**|
+|associatedResourceId|String|The ARM resource ID of the Azure resource associated with the managed identity used for sign in.|
 |federatedTokenId|String|**TODO: Add Description**|
 |federatedTokenIssuer|String|**TODO: Add Description**|
-|msiType|msiType|**TODO: Add Description**.The possible values are: `none`, `userAssigned`, `systemAssigned`, `unknownFutureValue`.|
+|msiType|msiType|The possible values are: `none`, `userAssigned`, `systemAssigned`, `unknownFutureValue`.|
 
 ## Relationships
 None.
