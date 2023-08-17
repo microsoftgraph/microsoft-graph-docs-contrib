@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents a whois entry that communicates a registered [host](../resources/security-host.md), the contacts for the registered **host**, and other metadata about the registration. This is an abstract type that can't be accessed directly. You can use the following implementation types instead.
+Represents a WHOIS entry that communicates a registered [host](../resources/security-host.md), the contacts for the registered **host**, and other metadata about the registration. This is an abstract type that can't be accessed directly. You can use the following implementation types instead.
 
 - [whoisRecord](./security-whoisrecord.md) 
 - [whoisHistoryRecord](./security-whoishistoryrecord.md) 
@@ -29,27 +29,27 @@ Inherits from [entity](../resources/entity.md).
 |abuse|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **abuse** contact.|
 |admin|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **admin** contact.|
 |billing|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **billing** contact.|
-|domainStatus|String|The domain status for this whois object.|
-|expirationDateTime|DateTimeOffset|The date and time when this whois record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|firstSeenDateTime|DateTimeOffset|The first seen date and time of this whois record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|id|String|The ID for this whois record object. Inherited from [entity](../resources/entity.md).|
-|lastSeenDateTime|DateTimeOffset|The last seen date and time of this whois record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|lastUpdateDateTime|DateTimeOffset|The date and time when this whois record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|nameservers|[microsoft.graph.security.whoisNameserver](../resources/security-whoisnameserver.md) collection|The nameservers for this whois object.|
+|domainStatus|String|The domain status for this WHOIS object.|
+|expirationDateTime|DateTimeOffset|The date and time when this WHOIS record expires with the registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|firstSeenDateTime|DateTimeOffset|The first seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|id|String|The ID for this WHOIS record object. Inherited from [entity](../resources/entity.md).|
+|lastSeenDateTime|DateTimeOffset|The last seen date and time of this WHOIS record. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastUpdateDateTime|DateTimeOffset|The date and time when this WHOIS record was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|nameservers|[microsoft.graph.security.whoisNameserver](../resources/security-whoisnameserver.md) collection|The nameservers for this WHOIS object.|
 |noc|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **noc** contact.|
-|rawWhoisText|String|The raw whois details for this whois object.|
+|rawWhoisText|String|The raw WHOIS details for this WHOIS object.|
 |registrant|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **registrant** contact.|
 |registrar|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **registrar** contact.|
-|registrationDateTime|DateTimeOffset|The date and time when this whois record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|registrationDateTime|DateTimeOffset|The date and time when this WHOIS record was registered with a registrar. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |technical|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **technical** contact.|
-|whoisServer|String|The whois server that provides the details.|
+|whoisServer|String|The WHOIS server that provides the details.|
 |zone|[microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md)|The contact information for the **zone** contact.|
 
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|host|[microsoft.graph.security.host](../resources/security-host.md)|The host associated to this whois object.|
+|host|[microsoft.graph.security.host](../resources/security-host.md)|The host associated to this WHOIS object.|
 
 ## JSON representation
 
