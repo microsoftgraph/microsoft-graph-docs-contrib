@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and an updated [conv
 
 ### Request
 
-The following is an example of a request to apply the owner role to an existing member of a team.
+The following example shows a request to apply the owner role to an existing member of a team.
 
 # HTTP
 
@@ -110,7 +110,7 @@ content-length: 26
 
 ---
 
-The following is an example if you use Power Automate to call this HTTP request.
+The following example shows how to use Power Automate to make this request.
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/members/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=
