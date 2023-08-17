@@ -4,19 +4,20 @@ resource: repository
 
 configuration:
   resourceManagementConfiguration:
-  scheduledSearches:
-    - frequencies:
-        - weekday:
-            day: Monday
-            time: 12:00
-      filters:
-        - isOpen
-        - isIssue
-        - hasLabel:
-            label: pr-closed
-        - noActivitySince:
-            days: 60
-      actions:
-        - addReply:
-            reply: Closing issue due to no activity in 60 days.
-        - closeIssue
+    scheduledSearches:
+      - frequencies:
+          - weekday:
+              day: Monday
+              time: 12:00
+        filters:
+          - isOpen
+          - isIssue
+          - hasLabel:
+              label: pr-closed
+          - noActivitySince:
+              days: 60
+        actions:
+          - addReply:
+              reply: Closing issue due to no activity in 60 days.
+          - closeIssue
+
