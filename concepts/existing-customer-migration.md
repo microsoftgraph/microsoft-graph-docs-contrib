@@ -26,4 +26,4 @@ This option will be available in late 2023. Stay tuned for more details.
 
 ## Option 3: Automatic migration
 
-In this phase, existing Data Connect customers who didn't perform the one-click automatic migration will be migrated automatically to the new onboarding experience. This option will be available in late 2023 or early 2024. When this phase begins, any customer who is not migrated at this time will automatically be migrated to the new experience on their first run of Data Connect.
+Starting in late 2023 or early 2024, existing Data Connect customers who didn't perform the one-click automatic migration will be migrated automatically to the new onboarding experience. Any customer who has not migrated by this time will be migrated to the new experience on their first run of Data Connect.
