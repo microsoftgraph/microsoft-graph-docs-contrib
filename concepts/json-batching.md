@@ -212,7 +212,7 @@ For more information, see [Throttling and batching][throttling-and-batching].
 
 ## Known issues
 
-For a list of current limitations related to batching, see [known issues][https://developer.microsoft.com/en-us/graph/known-issues/?filterBy=JSON%20batching&search=].
+For a list of current limitations related to batching, see [known issues](https://developer.microsoft.com/en-us/graph/known-issues/?filterBy=JSON%20batching&search=).
 
 [batching-known-issues]: https://developer.microsoft.com/en-us/graph/known-issues/?filterBy=JSON%20batching&search=
 [odata-4.01-json]: https://www.oasis-open.org/committees/download.php/60365/odata-json-format-v4.01-wd02-2017-03-24.docx

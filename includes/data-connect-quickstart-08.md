@@ -55,4 +55,4 @@ Before you proceed, make sure that you've completed the steps to build your firs
     > You can choose the data connectivity mode (**DirectQuery** or **Import**) depending on your data size and query requirements. We recommend that you use **DirectQuery** in this tutorial.
 
 ## See also
-- For solution templates that use Microsoft Graph Data Connect built in Power BI, see the [Data Connect solutions](https://github.com/microsoftgraph/dataconnect-solutions/tree/main/solutions) repo in GitHub.
+- For solution templates that use Microsoft Graph Data Connect built into Power BI, see the [Data Connect solutions](https://github.com/microsoftgraph/dataconnect-solutions/tree/main/solutions) repo in GitHub.
