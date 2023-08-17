@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Install an [app](../resources/teamsapp.md) in the personal scope of the specified [user](../resources/user.md).
 
->**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
+>**Note:** This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 ## Permissions
 
@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser |
+|Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForUser, TeamsAppInstallation.ReadWriteForUser, TeamsAppInstallation.ReadWriteAndConsentSelfForUser, TeamsAppInstallation.ReadWriteAndConsentForUser |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
+|Application | TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All, TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All, TeamsAppInstallation.ReadWriteAndConsentForUser.All |
 
 > [!NOTE]
 > If you want your app to install, get, upgrade, or remove an app for the user, you must use the `TeamsAppInstallation.ReadWriteForUser` permission.
@@ -44,19 +44,24 @@ POST /users/{user-id | user-principal-name}/teamwork/installedApps
 
 ## Request body
 
-The request body should contain the ID of the existing catalog app to be added.
+The request body should contain the catalog generated app ID for the app catalog. For details, see [teamsApp properties](../resources/teamsapp.md#properties).
+The following table lists additional parameters that can be used with the request body.
 
-| Property   | Type |Description|
-|:---------------|:--------|:----------|
-|teamsApp|String|The ID of the app to add.|
+|Parameter|Type|Description|
+|:---|:---|:---|
+|consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|The set of resource-specific permissions that are being consented to.|
+
+> **Note:** The permissions consented to during the install must be the same as the resource-specific permissions present in the [teamsAppDefinition](../resources/teamsappdefinition.md) of the app. To get the application and delegated resource-specific permissions, see [Example 7](../api/appcatalogs-list-teamsapps.md#example-7-list-applications-with-a-given-id-and-return-only-the-resource-specific-permissions-required-by-the-app). If only delegated resource-specific permissions are present in the **teamsAppDefinition**, then the permissions can be omitted from a request body.
 
 ## Response
 
 If successful, this method returns a `201 Created` response code. It does not return anything in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Install an app for a user
+
+#### Request
 
 The following is an example of the request.
 
@@ -104,7 +109,46 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
+```http
+HTTP/1.1 201 Created
+```
+
+### Example 2: Install an app for a user and consent to the resource-specific permissions required by the app
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "user_add_teamsApp_consent_resource_specific_permissions"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps
+Content-Type: application/json
+
+{
+  "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a",
+  "consentedPermissionSet": {
+    "resourceSpecificPermissions": [
+      {
+        "permissionValue": "TeamsActivity.Send.User",
+        "permissionType": "Application"
+      }
+    ]
+  }
+}
+```
+
+#### Response
 
 The following is an example of the response.
 
