@@ -178,7 +178,7 @@ Event Hubs' maximum message size is 1MB.  When using [rich notifications](https:
 5.  Create or recreate your subscription, now including the **blobStoreUrl** property in the following syntax: `blobStoreUrl: "https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>"`
 
 #### Receiving notifications
-When Event Hubs receives a notification payload that is larger than 1 MB, the Event Hubs notification will not contain resource, resourceData and EncryptedContent like a normal Rich Notification would. The Event Hubs notification will contain an "additionalPayloadStorageId" GUID that points to the blob in your storage account where these properties have been stored.
+When Event Hubs receives a notification payload that is larger than 1 MB, the Event Hubs notification will not contain the **resource**, **resourceData**, and **encryptedContent** properties that are included in rich notifications. The Event Hubs notification will instead contain an **additionalPayloadStorageId** property with an ID that points to the blob in your storage account where these properties have been stored.
 
 
 ### What happens if the Microsoft Graph Change Tracking application is missing?
