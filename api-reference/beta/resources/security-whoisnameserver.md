@@ -21,8 +21,8 @@ Represents a nameserver associated with a [whoisRecord](../resources/security-wh
 
 |Property|Type|Description|
 |:---|:---|:---|
-|firstSeenDateTime|DateTimeOffset|The first seen date and time of this whois contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|lastSeenDateTime|DateTimeOffset|The last seen date and time of this whois contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|firstSeenDateTime|DateTimeOffset|The first seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastSeenDateTime|DateTimeOffset|The last seen date and time of this WHOIS contact. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 ## Relationships
 
