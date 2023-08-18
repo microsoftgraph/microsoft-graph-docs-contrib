@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "The ThumbnailSet resource is a keyed collection of thumbnail resources."
 ms.date: 09/10/2017
 title: ThumbnailSet
