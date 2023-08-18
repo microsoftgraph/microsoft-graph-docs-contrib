@@ -2,7 +2,7 @@
 title: "List onPremisesAgents"
 description: "Retrieve a list of onPremisesAgents."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinrshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---

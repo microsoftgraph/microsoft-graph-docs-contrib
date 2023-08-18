@@ -71,11 +71,11 @@ The following table shows the properties that are required when you create the m
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|primaryBundleId|String|The primary CFBundleIdentifier of the DMG.|
-|primaryBundleVersion|String|The primary CFBundleVersion of the DMG.|
-|includedApps|[macOSIncludedApp](../resources/intune-apps-macosincludedapp.md) collection|The list of apps expected to be installed by the DMG.|
-|ignoreVersionDetection|Boolean|A value indicating whether the app's version will be used to detect the app after it is installed on a device. Set this to true for apps that use a self-update feature. Set this to false to install the app when it is not already installed on the device, or if the deploying app's version number does not match the version that's already installed on the device.|
-|minimumSupportedOperatingSystem|[macOSMinimumOperatingSystem](../resources/intune-apps-macosminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
+|primaryBundleId|String|The bundleId of the primary .app in the DMG (Apple Disk Image). This maps to the CFBundleIdentifier in the app's bundle configuration.|
+|primaryBundleVersion|String|The version of the primary .app in the DMG (Apple Disk Image). This maps to the CFBundleShortVersion in the app's bundle configuration.|
+|includedApps|[macOSIncludedApp](../resources/intune-apps-macosincludedapp.md) collection|The list of .apps expected to be installed by the DMG (Apple Disk Image)|
+|ignoreVersionDetection|Boolean|When TRUE, indicates that the app's version will NOT be used to detect if the app is installed on a device. When FALSE, indicates that the app's version will be used to detect if the app is installed on a device. Set this to true for apps that use a self update feature. The default value is FALSE.|
+|minimumSupportedOperatingSystem|[macOSMinimumOperatingSystem](../resources/intune-apps-macosminimumoperatingsystem.md)|ComplexType macOSMinimumOperatingSystem that indicates the minimum operating system applicable for the application.|
 
 
 
