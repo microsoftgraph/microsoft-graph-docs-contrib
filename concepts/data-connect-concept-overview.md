@@ -17,13 +17,13 @@ You can use [Microsoft Graph Data Connect](https://developer.microsoft.com/graph
 
 Data Connect unlocks a number of enterprise analytics scenarios, including: 
 
-- **Customer relationship analytics** - For commercial business leaders, go beyond traditional customer relationship management (CRM) insights and understand customer interactions and relationships based on communication and collaboration patterns.
+- **Customer relationship analytics:** For commercial business leaders, go beyond traditional customer relationship management (CRM) insights and understand customer interactions and relationships based on communication and collaboration patterns.
   - *Scenarios include:* customer relationship mesh, customer 360, customer complaint management, and conversation lineage. 
-- **Business process analytics** - For better operations, see how work really flows through the organization on a day-to-day basis. Pinpoint manual processes and workflow bottlenecks that can be automated or optimized.
+- **Business process analytics:** For better operations, see how work really flows through the organization on a day-to-day basis. Pinpoint manual processes and workflow bottlenecks that can be automated or optimized.
   - *Scenarios include:* process discovery and automation, skills finder and talent alignment, and supply chain automation. 
-- **Security and compliance analytics** - To secure sensitive data, learn how employees use and share sensitive information. Implement anomaly detection, threat intelligence, audit log analysis, risk management, and legal forensics.
+- **Security and compliance analytics:** To secure sensitive data, learn how employees use and share sensitive information. Implement anomaly detection, threat intelligence, audit log analysis, risk management, and legal forensics.
   - *Scenarios include:* information sharing, fraud detection, and international threat detection. 
-- **People productivity analytics** - To drive transformation, export your [Microsoft Viva](/viva/microsoft-viva-overview) productivity metrics, so you can convert insights into solutions with digital adoption, smart meetings and content, hybrid workplaces, and cultural change.
+- **People productivity analytics:** To drive transformation, export your [Microsoft Viva](/viva/microsoft-viva-overview) productivity metrics, so you can convert insights into solutions with digital adoption, smart meetings and content, hybrid workplaces, and cultural change.
   - *Scenarios include:* culture-driven digital transformation, employee engagement and activity, hybrid work effectiveness, and organizational network analysis. 
 
 ![An image that shows some of the enterprise analytics scenarios that are possible.](images/data_connect_msdc_solution.png)
@@ -52,9 +52,9 @@ For a list of Data Connect datasets, see [Datasets, regions, and sinks supported
 
 With Data Connect, organizations can:
 
-- **Scale access to Microsoft 365 data** - Gain deep insights into the patterns of organizational collaboration.
-- **Accelerate time to insights** - Reduce the time to value and get updated reports out faster, and perform interactive analysis without the need for data migration.
-- **Help to ensure security and governance** - Minimize compliance management overhead and provide access to secure data, empowering data and business users to make more informed and accurate data-driven decisions.
+- **Scale access to Microsoft 365 data:** Gain deep insights into the patterns of organizational collaboration.
+- **Accelerate time to insights:** Reduce the time to value and get updated reports out faster, and perform interactive analysis without the need for data migration.
+- **Help to ensure security and governance:** Minimize compliance management overhead and provide access to secure data, empowering data and business users to make more informed and accurate data-driven decisions.
 
 To learn more about Data Connect features, see [Scale access to Microsoft 365 data with Microsoft Graph Data Connect](https://devblogs.microsoft.com/microsoft365dev/scale-access-to-microsoft-365-data-with-microsoft-graph-data-connect/).
 
