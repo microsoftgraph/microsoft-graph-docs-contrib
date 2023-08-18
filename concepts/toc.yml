@@ -155,8 +155,6 @@ items:
             displayName: Microsoft Graph Data Connect
           - name: Datasets, regions, and sinks
             href: data-connect-datasets.md
-          - name: Policies and billing
-            href: data-connect-policies.md
           - name: User selection and filtering
             href: data-connect-filtering.md
           - name: Updated onboarding experience
