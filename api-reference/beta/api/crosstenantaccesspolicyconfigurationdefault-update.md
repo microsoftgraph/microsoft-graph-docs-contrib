@@ -118,7 +118,7 @@ HTTP/1.1 204 No Content
 ### Example 2: Update default invitation redemption configuration
 <!-- {
   "blockType": "request",
-  "name": "update_crosstenantaccesspolicyconfigurationdefault"
+  "name": "update_crosstenantaccesspolicyconfigurationdefault_idpconfiguration"
 }
 -->
 ``` http
