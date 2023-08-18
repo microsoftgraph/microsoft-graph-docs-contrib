@@ -29,7 +29,6 @@ GET /me/drive/items/{id}/workbook/tables/{id|name}/rows/itemAt(index={index})/ra
 GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/itemAt(index={index})/range
 GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/itemAt(index={index})range
 GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/itemAt(index={index})/range
-GET /drives/{drive-id}/items/{driveItem-id}/workbook/tables/{id|name}/rows/itemAt(index={index})/range
 ```
 
 ## Function parameters

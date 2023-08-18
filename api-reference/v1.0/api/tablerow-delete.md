@@ -28,8 +28,6 @@ DELETE /me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
 DELETE /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/{index}
 DELETE /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
-DELETE /drives/{drive-id}/items/{driveItem-id}/workbook/tables/{id|name}/rows/{index}
-
 ```
 ## Request headers
 | Name       | Description|
