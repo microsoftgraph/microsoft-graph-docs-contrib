@@ -80,7 +80,7 @@ See also what you'll do [to retrieve additional changes](#example-2-retrieving-a
 
 In this example, the call transcripts are being synchronized for the first time, so the initial sync request does not include any state token. This round will return all transcripts available at the time.
 
-## HTTP request
+#### HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -131,7 +131,7 @@ Content-type: application/json
 The second request specifies the `@odata.nextLink` URL returned from the previous response. Notice that it no longer has to specify the same query parameters as in the initial request, as the `skipToken` in the `@odata.nextLink` URL encodes and includes them.
 
 
-## HTTP request
+#### HTTP request
 
 <!-- { "blockType": "ignored" } -->
 ```http
