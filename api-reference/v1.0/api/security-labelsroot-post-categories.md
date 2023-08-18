@@ -69,7 +69,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.security.categoryTemplate",
-  "displayName": "String",
+  "displayName": "Accounts Payable",
 }
 ```
 
@@ -90,11 +90,13 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.security.categoryTemplate",
   "id": "e2c79762-34a9-75ba-b6f0-a7c9a57978ef",
-  "displayName": "String",
+  "displayName": "Accounts Payable",
   "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+    "user": {
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Admin"
+    }
   },
-  "createdDateTime": "String (timestamp)"
+  "createdDateTime" : "2021-03-24T02:09:08Z"
 }
 ```
-

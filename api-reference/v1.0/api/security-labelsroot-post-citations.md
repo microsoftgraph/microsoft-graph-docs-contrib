@@ -69,9 +69,9 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.security.citationTemplate",
-  "displayName": "String",
-  "citationUrl": "String",
-  "citationJurisdiction": "String"
+ "displayName": "Contoso Company Policy",
+  "citationUrl": "www.citationUrl.com",
+  "citationJurisdiction": "Contoso"
 }
 ```
 
@@ -92,12 +92,16 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.security.citationTemplate",
   "id": "c0475d01-d532-8a53-6e26-14ea58c640bf",
-  "displayName": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+  "displayName": "Contoso Company Policy",
+  "createdBy":  {
+    "user": {
+      "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+      "displayName": "Admin"
+    }
   },
+  "createdDateTime" : "2021-03-24T02:09:08Z",
   "createdDateTime": "String (timestamp)",
-  "citationUrl": "String",
+  "citationUrl": "www.citationUrl.com",
   "citationJurisdiction": "String"
 }
 ```
