@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Get the collection of items in a list."
 title: Retrieve items from a SharePoint list
 ms.localizationpriority: medium
@@ -45,9 +45,9 @@ GET /sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 
 Do not supply a request body for this method.
 
-## Response 
+## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [listItem][item] objects in the response body. 
+If successful, this method returns a `200 OK` response code and a collection of [listItem][item] objects in the response body.
 
 ## Example
 
