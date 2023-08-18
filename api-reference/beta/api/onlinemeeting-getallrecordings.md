@@ -32,10 +32,10 @@ The following permissions are required to call this API. To learn more, includin
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{id}/onlineMeetings/getAllRecordings?$filter=MeetingOrganizerId%20eq%20'{id}'
+GET /users/{id}/onlineMeetings/getAllRecordings?$filter=meetingOrganizerId%20eq%20'{id}'
 ```
 
->**Note:** If you don't specify a **MeetingOrganizerId** the request will fail.
+>**Note:** If you don't specify a **meetingOrganizerId** the request will fail.
 
 ## Request headers
 | Header       | Value |
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a list of [callR
 ### Request
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeeting/getAllRecordings?$filter=MeetingOrganizerId%20eq%20'8b081ef6-4792-4def-b2c9-c363a1bf41d5'
+GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeeting/getAllRecordings?$filter=meetingOrganizerId%20eq%20'8b081ef6-4792-4def-b2c9-c363a1bf41d5'
 ```
 
 ### Response
