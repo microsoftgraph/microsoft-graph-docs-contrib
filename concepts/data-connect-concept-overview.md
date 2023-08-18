@@ -18,13 +18,13 @@ You can use [Microsoft Graph Data Connect](https://developer.microsoft.com/graph
 Data Connect unlocks a number of enterprise analytics scenarios, including: 
 
 - **Customer relationship analytics** - For commercial business leaders, go beyond traditional customer relationship management (CRM) insights and understand customer interactions and relationships based on communication and collaboration patterns.
-  - *Options include:* Relationship mesh, Customer 360, Customer complaint management, and Conversation lineage. 
+  - *Scenarios include:* customer relationship mesh, customer 360, customer complaint management, and conversation lineage. 
 - **Business process analytics** - For better operations, see how work really flows through the organization on a day-to-day basis. Pinpoint manual processes and workflow bottlenecks that can be automated or optimized.
-  - *Options include:* Process discovery and automation, Skills finder and talent alignment, and Supply chain automation. 
+  - *Scenarios include:* process discovery and automation, skills finder and talent alignment, and supply chain automation. 
 - **Security and compliance analytics** - To secure sensitive data, learn how employees use and share sensitive information. Implement anomaly detection, threat intelligence, audit log analysis, risk management, and legal forensics.
-  - *Options include:* Information sharing, Fraud detection, and International threat detection. 
+  - *Scenarios include:* information sharing, fraud detection, and international threat detection. 
 - **People productivity analytics** - To drive transformation, export your [Microsoft Viva](/viva/microsoft-viva-overview) productivity metrics, so you can convert insights into solutions with digital adoption, smart meetings and content, hybrid workplaces, and cultural change.
-  - *Options include:* Culture-driven digital transformation, Employee engagement and activity, Hybrid work effectiveness, and Organizational network analysis. 
+  - *Scenarios include:* culture-driven digital transformation, employee engagement and activity, hybrid work effectiveness, and organizational network analysis. 
 
 ![An image that shows some of the enterprise analytics scenarios that are possible.](images/data_connect_msdc_solution.png)
 
@@ -48,18 +48,6 @@ Microsoft 365 datasets come ready for analysis and include the following categor
 
 For a list of Data Connect datasets, see [Datasets, regions, and sinks supported by Microsoft Graph Data Connect](/graph/data-connect-datasets).
 
-## Get started 
-
-At a high level, to set up Data Connect, you:
-
-1. Set up your **Microsoft 365 tenant and enable Microsoft Graph Data Connect**.
-2. Set up your **Azure Active Directory app registration**.
-3. Set up your **Azure Storage resource**.
-4. Set up your **Azure resource with Azure Synapse or Azure Data Factory**.
-5. Monitor data consent requests with **Microsoft 365 Admin Center or PowerShell**.
-
-For more details about how to get started, see [Build your first Microsoft Graph Data Connect application](/graph/data-connect-quickstart?tabs=AzureSynapsePipeline%2CMicrosoft365). 
-
 ## Why choose Microsoft Graph Data Connect?
 
 ![An image that shows the benefits of choosing Microsoft Graph Data Connect.](images/data_connect_why_choose_mgdc.png)
@@ -72,8 +60,19 @@ With Data Connect, organizations can:
 
 To learn more about Data Connect features, see [Scale access to Microsoft 365 data with Microsoft Graph Data Connect](https://devblogs.microsoft.com/microsoft365dev/scale-access-to-microsoft-365-data-with-microsoft-graph-data-connect/).
 
-## Data Connect templates
+## Get started 
 
+At a high level, to set up Data Connect, you:
+
+1. Set up your **Microsoft 365 tenant and enable Microsoft Graph Data Connect**.
+2. Set up your **Azure Active Directory app registration**.
+3. Set up your **Azure Storage resource**.
+4. Set up your **Azure resource with Azure Synapse or Azure Data Factory**.
+5. Monitor data consent requests with **Microsoft 365 Admin Center or PowerShell**.
+
+For more details about how to get started, see [Build your first Microsoft Graph Data Connect application](/graph/data-connect-quickstart?tabs=AzureSynapsePipeline%2CMicrosoft365). 
+
+## Data Connect templates
 Browse through a gallery of templates that provide the necessary Azure resources, data pipelines, and user experience samples to accelerate your path to realizing the value of Microsoft 365 data. For details, see [Microsoft Graph Data Connect templates](data-connect-templates-overview.md).
 
 Templates help take use cases from hypothesis to implementation by:
@@ -82,9 +81,6 @@ Templates help take use cases from hypothesis to implementation by:
 2. Simplifying development workflows to rapidly build, test, and iterate.
 3. Automating processes to reduce the need for time-consuming, manual processes.
 4. Providing data visualizations without the need for complex report configuration.
-
-<!--- Learn more about the streamlined consent flow and approval: TBD
--->
 
 ### Secure your data with Microsoft Graph Data Connect
 
