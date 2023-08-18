@@ -37,10 +37,12 @@ This section describes implementation differences in the Microsoft Graph for US 
 | **Meeting recordings**            |                                                          |
 |[List recordings](/graph/api/onlinemeeting-list-recordings) | Not supported. |
 |[Get recording](/graph/api/callrecording-get) | Not supported. |
+|[Get delta by organizer](/graph/api/callrecording-delta) | Not supported. |
 |[List recordings by organizer](/graph/api/onlinemeeting-getallrecordings) | Not supported. |
 | **Meeting transcripts**            |                                                          |
 |[List transcripts](/graph/api/onlinemeeting-list-transcripts) | Not supported. |
 |[Get transcript](/graph/api/calltranscript-get) | Not supported. |
+|[Get delta by organizer](/graph/api/calltranscript-delta) | Not supported. |
 |[List transcripts by organizer](/graph/api/onlinemeeting-getalltranscripts) | Not supported. |
 | **Messages**            |                                                          |
 |[Soft delete a message](/graph/api/chatmessage-softdelete) | Not supported in the GCC High and DOD Environments. |
