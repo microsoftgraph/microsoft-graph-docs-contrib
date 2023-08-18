@@ -13,10 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all recordings from scheduled [onlineMeeting](../resources/onlinemeeting.md) instances that a user is an organizer of.
+Get all recordings from scheduled [onlineMeeting](../resources/onlinemeeting.md) instances for which the specified user is the organizer.
 
 **Note:** Retrieval of call recordings from channel meetings is currently not supported by this API.
-
 
 To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 

@@ -1,7 +1,7 @@
 ---
 title: "Create organizationalBrandingLocalization"
 description: "Create a new organizationalBrandingLocalization object."
-author: "AlexanderMars"
+author: "quievey"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

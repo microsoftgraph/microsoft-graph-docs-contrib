@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: Get metadata for a list
 description: Return the metadata for a list.
 ms.localizationpriority: medium

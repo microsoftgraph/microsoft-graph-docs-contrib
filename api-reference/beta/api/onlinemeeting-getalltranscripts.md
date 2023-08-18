@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all transcripts from scheduled [onlineMeeting](../resources/onlinemeeting.md) instances that a user is an organizer of.
+Get all transcripts from scheduled [onlineMeeting](../resources/onlinemeeting.md) instances for which the specified user is the organizer.
 
 **Note:** Retrieval of call transcripts from channel meetings is currently not supported by this API.
 

@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: Update a bundle
 description: Update a bundle of driveItems
 ms.localizationpriority: medium
@@ -96,10 +96,6 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/rename-bundle-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/rename-bundle-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
