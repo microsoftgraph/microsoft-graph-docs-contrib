@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 Get all recordings from scheduled [onlineMeeting](../resources/onlinemeeting.md) instances for which the specified user is the organizer. This API currently does not support getting call recordings from channel meetings.
 
-Delta query supports both full synchronization that gets all the recordings for online meetings organized by a given user, and incremental synchronization that gets recordings that have been added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
+You can apply the [delta](callrecording-delta.md) function on **getAllRecordings** to synchronize and get [callRecording](../resources/callrecording.md) resources as they are added for **onlineMeeting** instances organized by the specified user.
+
+Delta query supports both full synchronization that gets all the recordings for online meetings organized by the user, and incremental synchronization that gets recordings that have been added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
 
 Find more information in the [delta query](/graph/delta-query-overview) documentation. For additional examples, see [callRecording: delta](callrecording-delta.md).
 
@@ -38,7 +40,7 @@ The following permissions are required to call this API. To learn more, includin
 GET /users/{id}/onlineMeetings/getAllRecordings?$filter=meetingOrganizerId%20eq%20'{id}'
 ```
 
->**Note:** If you don't specify a filter on **meetingOrganizerId**, the request will fail.
+>**Note:** If you don't specify a filter on **meetingOrganizerId**, the request fails.
 
 ## Request headers
 | Header       | Value |
@@ -53,6 +55,11 @@ If successful, this method returns a `200 OK` response code and a list of [callR
 
 ### Request
 
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["8b081ef6-4792-4def-b2c9-c363a1bf41d5"],
+  "name": "get_allrecordings"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeeting/getAllRecordings?$filter=meetingOrganizerId%20eq%20'8b081ef6-4792-4def-b2c9-c363a1bf41d5'
 ```
@@ -63,7 +70,9 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callRecording"
+  "name": "get_allrecordings",
+  "@odata.type": "microsoft.graph.callRecording",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK

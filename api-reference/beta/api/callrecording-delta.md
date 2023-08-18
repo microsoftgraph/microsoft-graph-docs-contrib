@@ -41,7 +41,7 @@ The following permissions are required to call this API. To learn more, includin
 ```http
 GET /users/{id}/onlineMeetings/getAllRecordings/delta?$filter=meetingOrganizerId%20eq%20'{id}'
 ```
->**Note:** If you don't specify a **meetingOrganizerId** the request will fail.
+>**Note:** If you don't specify a **meetingOrganizerId**, the request fails.
 
 ## Query parameters
 
@@ -51,7 +51,7 @@ In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLin
 
 | Query parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-| `$deltatoken` | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next iteration of change tracking for that collection.|
+| `$deltatoken` | string | A [state token](/graph/delta-query-overview) returned in the `@odata.deltaLink` URL of the previous **delta** function call, indicating the completion of that round of change tracking. Save and apply the entire `@odata.deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
 | `$skiptoken` | string | A [state token](/graph/delta-query-overview) returned in the `@odata.nextLink` URL of the previous **delta** function call, indicating that there are further changes to be tracked. |
 
 ## Request headers
@@ -61,7 +61,7 @@ In subsequent requests, copy and apply the `@odata.nextLink` or `@odata.deltaLin
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [callRecording](../resources/callrecording.md) objects in the response body. The response also includes a `@odata.nextLink` URL or a `@odata.deltaLink` URL.
+If successful, this method returns a `200 OK` response code and a collection of [callRecording](../resources/callrecording.md) objects in the response body. The response also includes an `@odata.nextLink` URL or an `@odata.deltaLink` URL.
 
 ## Examples
 
@@ -184,7 +184,7 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 #### Third and final response for the round
 
-The third response returns the only remaining recordings and a `@odata.deltaLink` property with a `deltaToken` which indicates that all recordings have been returned. Save and use the `@odata.deltaLink` URL to query for any new recording starting from this point onwards.
+The third response returns the only remaining recordings and a `@odata.deltaLink` property with a `deltaToken` which indicates that all recordings have been returned. Save and use the `@odata.deltaLink` URL to query for any new recording that is added from this point onwards.
 
 <!-- {
   "blockType": "response",

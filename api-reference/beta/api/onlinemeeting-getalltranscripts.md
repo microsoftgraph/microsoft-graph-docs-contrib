@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get all transcripts from scheduled [onlineMeeting](../resources/onlinemeeting.md) instances for which the specified user is the organizer. This API currently does not support getting call transcripts from channel meetings.
 
+You can apply the [delta](calltranscript-delta.md) function on **getAllTranscripts** to synchronize and get [callTranscript](../resources/calltranscript.md) resources as they are added for **onlineMeeting** instances organized by the specified user.
+
 Delta query supports both full synchronization that gets all the transcripts for online meetings organized by the user, and incremental synchronization that gets transcripts that have been added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that transcript view periodically.
 
 Find more information in the [delta query](/graph/delta-query-overview) documentation. For additional examples, see [callTranscript: delta](calltranscript-delta.md).
@@ -38,7 +40,7 @@ The following permissions are required to call this API. To learn more, includin
 GET /users/{id}/onlineMeetings/getAllTranscripts?$filter=meetingOrganizerId%20eq%20'{id}'
 ```
 
->**Note:** If you don't specify a filter on **meetingOrganizerId**, the request will fail.
+>**Note:** If you don't specify a filter on **meetingOrganizerId**, the request fails.
 
 ## Request headers
 | Header       | Value |
@@ -53,6 +55,11 @@ If successful, this method returns a `200 OK` response code and a list of [callT
 
 ### Request
 
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["8b081ef6-4792-4def-b2c9-c363a1bf41d5"],
+  "name": "get_alltranscipts"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeeting/getAllTranscripts?$filter=meetingOrganizerId%20eq%20'8b081ef6-4792-4def-b2c9-c363a1bf41d5'
 ```
@@ -63,7 +70,9 @@ GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.callTranscript"
+  "name": "get_alltranscipts",
+  "@odata.type": "microsoft.graph.callTranscript",
+  "isCollection": true
 } -->
 ```http
 HTTP/1.1 200 OK
