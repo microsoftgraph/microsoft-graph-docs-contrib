@@ -206,7 +206,7 @@ Content-Type: application/json
         }
       ]
     }
-  }
+  },
   "invitationRedemptionIdentityProviderConfiguration": 
   { 
         "primaryIdentityProviderPrecedenceOrder": [ 
