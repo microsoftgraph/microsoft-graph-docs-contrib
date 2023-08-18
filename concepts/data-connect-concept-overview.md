@@ -50,8 +50,6 @@ For a list of Data Connect datasets, see [Datasets, regions, and sinks supported
 
 ## Why choose Microsoft Graph Data Connect?
 
-![An image that shows the benefits of choosing Microsoft Graph Data Connect.](images/data_connect_why_choose_mgdc.png)
-
 With Data Connect, organizations can:
 
 - **Scale access to Microsoft 365 data** - Gain deep insights into the patterns of organizational collaboration.
@@ -72,7 +70,7 @@ At a high level, to set up Data Connect, you:
 
 For more details about how to get started, see [Build your first Microsoft Graph Data Connect application](/graph/data-connect-quickstart?tabs=AzureSynapsePipeline%2CMicrosoft365). 
 
-## Data Connect templates
+### Data Connect templates
 Browse through a gallery of templates that provide the necessary Azure resources, data pipelines, and user experience samples to accelerate your path to realizing the value of Microsoft 365 data. For details, see [Microsoft Graph Data Connect templates](data-connect-templates-overview.md).
 
 Templates help take use cases from hypothesis to implementation by:
@@ -135,11 +133,11 @@ Microsoft Graph Data Connect has a rich network of enterprise technology partner
 
 | Partner        | Description |
 | ----------- | ----------- |
-| ![GainX logo.](images/data_connect_logo_gainx.png)   | **GainX** builds a comprehensive map of information flow and provide a data-driven, systemic view of how an organization is actually functioning: [Learn more](https://devblogs.microsoft.com/microsoft365dev/maximizing-organizational-performance-with-gainx-artificial-intelligence-and-microsoft-graph-data-connect/) |
+| ![GainX logo.](images/data_connect_logo_gainx.png)   | **GainX** builds a comprehensive map of information flow and provide a data-driven, systemic view of how an organization is actually functioning. To learn more, see [Maximizing organizational performance with GainX Artificial Intelligence and Microsoft Graph Data Connect](https://devblogs.microsoft.com/microsoft365dev/maximizing-organizational-performance-with-gainx-artificial-intelligence-and-microsoft-graph-data-connect). |
 | ![HCL logo.](images/data_connect_logo_hclsoftware.png)   | **HCL** conducts better workforce management, performance analysis, and improvement measures to understand employee productivity. |
 | ![Infosys logo.](images/data_connect_logo_infosys.png)   | **Infosys** gathers feedback, identify areas for improvement, and take action to improve employee engagement, productivity, and retention. |
 | ![Lotis Blue logo.](images/data_connect_logo_lotis_blue.png)   | **Lotis Blue** utilizes organizational network analysis (ONA) to enhance diversity, equity, and inclusion outcomes. Also applying ONA principles to improve customer relationships and revenue velocity. |
-| ![Neo4j logo.](images/data_connect_logo_neo4j.png)   | **Neo4j** constructs security and compliance analytics to uncover the hidden patterns of communication in your organization. [Learn more](https://www.youtube.com/watch?v=no6iWuswR0c&list=PLWZJrkeLOrbaSmfaIM6ogv-LQUP0tleTw).  |
+| ![Neo4j logo.](images/data_connect_logo_neo4j.png)   | **Neo4j** constructs security and compliance analytics to uncover the hidden patterns of communication in your organization. To learn more, see [Using Microsoft Graph to understand enterprise communication](https://www.youtube.com/watch?v=no6iWuswR0c&list=PLWZJrkeLOrbaSmfaIM6ogv-LQUP0tleTw).  |
 | ![Neudesic logo.](images/data_connect_logo_neudesic.png)   | **Neudesic** extends their Microsoft 365 data and Viva Insights collaboration metrics into customer’s Azure environment to further display relevant metrics for employees within other systems and portals. |
 | ![Parabole logo.](images/data_connect_logo_parabole.png)   | **Parabole** illustrates true cost to maintain the channel, time spent with partners by product, and mismatches between partner investment & partner value. |
 | ![TCS logo.](images/data_connect_logo_tata_cs.png)   | **TLC** identifies patterns and trends in employee behavior during weekends. Gain insights into how weekend working affects overall employee happiness scores. |
