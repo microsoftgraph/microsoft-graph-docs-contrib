@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories/{subCategoryTemplateId}
+GET /security/labels/categories/{categoryTemplateId}/subCategories/{subCategoryTemplateId}
 ```
 
 ## Optional query parameters
@@ -59,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/labels/retentionLabels/82d00422-1f60-46cd-9809-33ca0b4d2286/descriptors/categoryTemplate/subCategories/2ac39915-dbeb-e933-82e2-92b981835fa0
+GET https://graph.microsoft.com/beta/security/labels/categories/82d00422-1f60-46cd-9809-33ca0b4d2286/subCategories/2ac39915-dbeb-e933-82e2-92b981835fa0
 ```
 
 # [Java](#tab/java)

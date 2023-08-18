@@ -33,7 +33,7 @@ GET /security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemp
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. For example, to retrieve the **subategories** property associated with this particular category, you can use the `expand` parameter:`$expand=subcategories`. For general information, see [OData query parameters](/graph/query-parameters). 
 
 ## Request headers
 |Name|Description|

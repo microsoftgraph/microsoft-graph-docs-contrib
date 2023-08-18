@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories
+POST /security/labels/categories/{categoryTemplateId}/subCategories
 ```
 
 ## Request headers
@@ -64,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories
+POST https://graph.microsoft.com/v1.0/security/labels/categories/{categoryTemplateId}/subCategories
 Content-Type: application/json
 
 {

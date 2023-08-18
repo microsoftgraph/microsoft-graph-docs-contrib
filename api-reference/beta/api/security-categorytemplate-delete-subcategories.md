@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories/{subCategoryTemplateId}/$ref
+DELETE /security/labels/categories/{categoryTemplateId}/subCategories/{subCategoryTemplateId}/$ref
 ```
 
 ## Request headers
@@ -56,7 +56,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/security/labels/retentionLabels/{retentionLabelId}/descriptors/categoryTemplate/subCategories/{subCategoryTemplateId}
+DELETE https://graph.microsoft.com/beta/security/labels/categories/6cf65e55-6baf-44ff-5dcc-08d8de97b1d5/subCategories/f44dkle55-6baf-44ff-5dcc-08d8de97b1d5
 ```
 
 # [Java](#tab/java)

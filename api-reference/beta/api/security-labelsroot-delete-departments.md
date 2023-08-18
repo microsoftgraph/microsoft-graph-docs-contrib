@@ -57,7 +57,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/security/labels/departments/{departmentTemplateId}
+DELETE https://graph.microsoft.com/beta/security/labels/departments/f44dkle55-6baf-44ff-5dcc-08d8de97b1d5
 ```
 
 # [C#](#tab/csharp)
