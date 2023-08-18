@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 title: "List bundles"
 description: "List the bundles in a user's drive."
 ms.localizationpriority: medium
