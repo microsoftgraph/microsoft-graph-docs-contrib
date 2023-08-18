@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 title: "Delete bundle"
 description: "Delete a bundle of driveItems."
 ms.localizationpriority: medium
