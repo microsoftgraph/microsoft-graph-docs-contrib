@@ -28,6 +28,7 @@ PATCH /me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
 PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/{index}
 PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
+PATCH /drives/{drive-id}/items/{driveItem-id}/workbook/tables/{id|name}/rows/{index}
 ```
 ## Optional request headers
 | Name       | Description|

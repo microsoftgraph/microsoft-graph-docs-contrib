@@ -28,6 +28,7 @@ GET /me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
 GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/{index}
 GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
+GET /drives/{drive-id}/items/{driveItem-id}/workbook/tables/{id|name}/rows/{index}
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
