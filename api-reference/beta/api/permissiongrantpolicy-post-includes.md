@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Policy.ReadWrite.PermissionGrant |
 
-[!INCLUDE [rbac-permission-grant-preapproval-policy-read](../includes/rbac-for-apis/rbac-permission-grant-preapproval-policy-read.md)]
+[!INCLUDE [rbac-permission-grant-preapproval-policy-write](../includes/rbac-for-apis/rbac-permission-grant-preapproval-policy-write.md)]
 
 ## HTTP request
 
@@ -56,7 +56,7 @@ If successful, this method returns a `201 Created` response code and an [permiss
 
 #### Request
 
-In this example, *all* delegated permissions for client apps that are from verified publishers are included in the permission grant policy. Because all the other conditions from the [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) were omitted, they will take their default values, which in each case is the most-inclusive.
+In this example, *all* delegated permissions for client apps that are from verified publishers are included in the permission grant policy. Because all the other conditions from the [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) were omitted, they take their default values, which in each case is the most-inclusive.
 
 
 # [HTTP](#tab/http)
@@ -143,7 +143,7 @@ Content-type: application/json
 
 #### Request
 
-In this example, *all* delegated permissions for all client apps that are Microsoft 365 certified are included in the permission grant policy. Since having a verified publisher is a pre-requisite for an app to be considered Microsoft 365 certified, it is not necessary to explicitly require a verified publisher. Because all the other conditions from the [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) were omitted, they will take their default values, which in each case is the most-inclusive.
+In this example, *all* delegated permissions for all client apps that are Microsoft 365 certified are included in the permission grant policy. Since having a verified publisher is a prerequisite for an app to be considered Microsoft 365 certified, it isn't necessary to explicitly require a verified publisher. Because all the other conditions from the [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) were omitted, they take their default values, which in each case is the most-inclusive.
 
 
 

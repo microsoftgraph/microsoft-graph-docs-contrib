@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET /policies/permissionGrantPreApprovalPolicies
+GET https://graph.microsoft.com/beta/policies/permissionGrantPreApprovalPolicies
 ```
 
 
@@ -67,19 +67,20 @@ GET /policies/permissionGrantPreApprovalPolicies
 >**Note:** The response object shown here might be shortened for readability.
 
 In the following example:
-Policy ID `71ba13dc-5947-4e59-bcc5-0ad5c339a853` has the following settings:
+
+- Policy ID `71ba13dc-5947-4e59-bcc5-0ad5c339a853` has the following settings:
   - The condition for the `chat` resource type:
-    - Indicates that all chats regardless of sensitivity labels are in scope 
-    - Specifies that all application permissions for all APIs are pre-approved
+    - Indicates that all chats regardless of sensitivity labels are in scope
+    - Specifies that all application permissions for all APIs are preapproved
   - The condition for the `group` resource type:
     - Specifies two sensitivity labels that are in scope
-    - Specifies **two** application permissions for the `00000003-0000-0000-c000-000000000000` resource app are pre-approved
-   
-  Policy ID `bd4b701c-a54e-42b8-9f56-e4b4b229be3b` has the following settings:
+    - Specifies **two** application permissions for the `00000003-0000-0000-c000-000000000000` resource app are preapproved
+
+- Policy ID `bd4b701c-a54e-42b8-9f56-e4b4b229be3b` has the following settings:
   - The condition for the `group` resource type:
-    - Indicates that all groups regardless of sensitivity labels are in scope 
-    - Specifies that **all** application permissions for the `00000003-0000-0000-c000-000000000000` resource app are pre-approved
-      
+    - Indicates that all groups regardless of sensitivity labels are in scope
+    - Specifies that **all** application permissions for the `00000003-0000-0000-c000-000000000000` resource app are preapproved
+
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.PermissionGrant|
 
-[!INCLUDE [rbac-permission-grant-preapproval-policy-read](../includes/rbac-for-apis/rbac-permission-grant-preapproval-policy-read.md)]
+[!INCLUDE [rbac-permission-grant-preapproval-policy-write](../includes/rbac-for-apis/rbac-permission-grant-preapproval-policy-write.md)]
 
 ## HTTP request
 
@@ -47,7 +47,7 @@ PATCH /policies/permissionGrantPreApprovalPolicies/{id}
 
 |Property|Type|Description|
 |:---|:---|:---|
-|conditions|[preApprovalDetail](../resources/preapprovaldetail.md) collection| A list of conditions that are pre-approved in the policy.	Required.|
+|conditions|[preApprovalDetail](../resources/preapprovaldetail.md) collection| A list of conditions that are preapproved in the policy.    Required.|
 
 
 

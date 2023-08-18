@@ -14276,6 +14276,22 @@
       "ChangeList": [
         {
           "Id": "5b096996-7d95-4588-a4db-a0ff311881da",
+          "ApiChange": "Resource",
+          "ChangedApiName": "permissionGrantPreApprovalPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissionGrantPreApprovalPolicies** relationship to the [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
+          "Target": "policyRoot"
+        },
+        {
+          "Id": "5b096996-7d95-4588-a4db-a0ff311881da",
+          "ApiChange": "Resource",
+          "ChangedApiName": "permissionGrantPreApprovalPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [permissionGrantPreApprovalPolicy](https://learn.microsoft.com/en-us/graph/api/resources/permissionGrantPreApprovalPolicy?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "permissionGrantPreApprovalPolicy"
+        },
+        {
+          "Id": "5b096996-7d95-4588-a4db-a0ff311881da",
           "ApiChange": "EnumType",
           "ChangedApiName": "labelKind",
           "ChangeType": "Addition",
@@ -14361,22 +14377,6 @@
           "ChangeType": "Addition",
           "Description": "Added the [scopeSensitivityLabels](https://learn.microsoft.com/en-us/graph/api/resources/scopeSensitivityLabels?view=graph-rest-beta) resource type.",
           "Target": "scopeSensitivityLabels"
-        },
-        {
-          "Id": "5b096996-7d95-4588-a4db-a0ff311881da",
-          "ApiChange": "Resource",
-          "ChangedApiName": "permissionGrantPreApprovalPolicy",
-          "ChangeType": "Addition",
-          "Description": "Added the [permissionGrantPreApprovalPolicy](https://learn.microsoft.com/en-us/graph/api/resources/permissionGrantPreApprovalPolicy?view=graph-rest-beta) resource",
-          "Target": "permissionGrantPreApprovalPolicy"
-        },
-        {
-          "Id": "5b096996-7d95-4588-a4db-a0ff311881da",
-          "ApiChange": "Resource",
-          "ChangedApiName": "permissionGrantPreApprovalPolicies",
-          "ChangeType": "Addition",
-          "Description": "Added the **permissionGrantPreApprovalPolicies** relationship to [policyRoot](https://learn.microsoft.com/en-us/graph/api/resources/policyRoot?view=graph-rest-beta) resource.",
-          "Target": "policyRoot"
         }
       ],
       "Id": "5b096996-7d95-4588-a4db-a0ff311881da",

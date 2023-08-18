@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.PermissionGrant|
 
-[!INCLUDE [rbac-permission-grant-preapproval-policy-read](../includes/rbac-for-apis/rbac-permission-grant-preapproval-policy-read.md)]
+[!INCLUDE [rbac-permission-grant-preapproval-policy-write](../includes/rbac-for-apis/rbac-permission-grant-preapproval-policy-write.md)]
 
 ## HTTP request
 
@@ -48,7 +48,7 @@ You can specify the following properties when creating a **permissionGrantPreApp
 
 |Property|Type|Description|
 |:---|:---|:---|
-|conditions|[preApprovalDetail](../resources/preapprovaldetail.md) collection| A list of conditions that are pre-approved in the policy. Required.|
+|conditions|[preApprovalDetail](../resources/preapprovaldetail.md) collection| A list of conditions that are preapproved in the policy. Required.|
 
 
 
@@ -58,16 +58,16 @@ If successful, this method returns a `201 Created` response code and a [permissi
 
 ## Examples
 
-### Example 1: Create a pre-approval policy for both group and chat scope
+### Example 1: Create a preapproval policy for both group and chat scope
 
 In the following example:
 
 - The condition for the `chat` resource type:
-  - Indicates that all chats regardless of sensitivity labels are in scope 
-  - Specifies that all application permissions for all APIs are pre-approved
+  - Indicates that all chats regardless of sensitivity labels are in scope
+  - Specifies that all application permissions for all APIs are preapproved
 - The condition for the `group` resource type:
   - Specifies two sensitivity labels that are in scope
-  - Specifies two application permissions for the `00000003-0000-0000-c000-000000000000` resource app are pre-approved
+  - Specifies two application permissions for the `00000003-0000-0000-c000-000000000000` resource app are preapproved
 
 #### Request
 <!-- {
@@ -174,7 +174,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Create a pre-approval policy for group scope and pre-approves all permissions from a given API
+### Example 2: Create a preapproval policy for group scope and preapprove all permissions from a given API
 
 #### Request
 <!-- {

@@ -1,13 +1,13 @@
 ---
-title: "Get permissionGrantPreApprovalPolicy for a serviceprincipal"
-description: "Retrieve the permissionGrantPreApprovalPolicy object from serviceprincipal."
+title: "List permissionGrantPreApprovalPolicies for a servicePrincipal"
+description: "Retrieve the permissionGrantPreApprovalPolicy object from a servicePrincipal."
 author: "yuhko-msft"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType
 ---
 
-# servicePrincipal: List permissionGrantPreApprovalPolicy
+# List permissionGrantPreApprovalPolicies for a servicePrincipal
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]

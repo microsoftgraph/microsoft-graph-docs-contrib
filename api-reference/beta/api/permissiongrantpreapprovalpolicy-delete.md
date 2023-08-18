@@ -19,11 +19,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|	PermissionGrantPolicy.ReadWrite.All|
+|Delegated (work or school account)|    PermissionGrantPolicy.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|	PermissionGrantPolicy.ReadWrite.All|
+|Application|    PermissionGrantPolicy.ReadWrite.All|
 
-[!INCLUDE [rbac-permission-grant-preapproval-policy-read](../includes/rbac-for-apis/rbac-permission-grant-preapproval-policy-read.md)]
+[!INCLUDE [rbac-permission-grant-preapproval-policy-write](../includes/rbac-for-apis/rbac-permission-grant-preapproval-policy-write.md)]
 
 ## HTTP request
 

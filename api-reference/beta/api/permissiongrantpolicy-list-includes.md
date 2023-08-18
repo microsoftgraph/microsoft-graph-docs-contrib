@@ -1,6 +1,6 @@
 ---
 title: "List includes collection of permissionGrantPolicy"
-description: "Retrieve a list of the condition sets which describe conditions under which a permission grant event is included in a permission grant policy."
+description: "Retrieve a list of the condition sets that describe conditions under which a permission grant event is included in a permission grant policy."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the condition sets which are *included* in a [permissionGrantPolicy](../resources/permissiongrantpolicy.md).
+Retrieve the condition sets that are *included* in a [permissionGrantPolicy](../resources/permissiongrantpolicy.md).
 
 ## Permissions
 
