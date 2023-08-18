@@ -7275,21 +7275,21 @@ items:
                 - name: Directory audit
                   href: resources/directoryaudit.md
                   items:
-                    - name: List directory audits
+                    - name: List
                       href: api/directoryaudit-list.md
-                    - name: Get directory audit
+                    - name: Get
                       href: api/directoryaudit-get.md
                 - name: Sign-in
                   href: resources/signin.md
                   items:
-                    - name: List sign-ins
+                    - name: List
                       href: api/signin-list.md
-                    - name: Get sign-in
+                    - name: Get
                       href: api/signin-get.md
                 - name: Provisioning
                   href: resources/provisioningobjectsummary.md
                   items:
-                    - name: List provisioning
+                    - name: List
                       href: api/provisioningobjectsummary-list.md
           - name: Microsoft 365 usage reports
             items:

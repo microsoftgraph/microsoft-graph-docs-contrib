@@ -15138,14 +15138,14 @@ items:
                     - name: Sign-in summary
                       href: resources/applicationsigninsummary.md
                       items:
-                        - name: Get sign-in summary
+                        - name: Get
                           href: api/reportroot-getazureadapplicationsigninsummary.md
                     - name: Sign-in details
                       href: resources/applicationsignindetailedsummary.md
                       items:
-                        - name: List sign-in details
+                        - name: List
                           href: api/reportroot-list-applicationsignindetailedsummary.md
-                        - name: Get sign-in details
+                        - name: Get
                           href: api/applicationsignindetailedsummary-get.md
                 - name: Azure AD SLA attainment
                   items:
@@ -15210,16 +15210,16 @@ items:
                 - name: Directory audit
                   href: resources/directoryaudit.md
                   items:
-                    - name: List directory audits
+                    - name: List
                       href: api/directoryaudit-list.md
-                    - name: Get directory audit
+                    - name: Get
                       href: api/directoryaudit-get.md
                 - name: Sign-in
                   href: resources/signin.md
                   items:
-                    - name: List sign-ins
+                    - name: List
                       href: api/signin-list.md
-                    - name: Get sign-in
+                    - name: Get
                       href: api/signin-get.md
                     - name: Confirm safe
                       href: api/signin-confirmsafe.md
@@ -15228,7 +15228,7 @@ items:
                 - name: Provisioning
                   href: resources/provisioningobjectsummary.md
                   items:
-                    - name: List provisioning
+                    - name: List
                       href: api/provisioningobjectsummary-list.md
           - name: Microsoft 365 usage reports
             items:
