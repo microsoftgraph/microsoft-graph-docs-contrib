@@ -15,8 +15,7 @@ Namespace: microsoft.graph
 
 Approve a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.
 
-> [!NOTE]
-> Only the recipient of the request can approve a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md).
+>**Note:** Only the recipient of the request can approve a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md).
 
 ## Permissions
 

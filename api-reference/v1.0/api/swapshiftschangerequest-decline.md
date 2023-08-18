@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 Decline a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.
 
-> [!NOTE]
-> Only the recipient of the request can decline a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md).
+>**Note:** Only the recipient of the request can decline a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md).
 
 ## Permissions
 
