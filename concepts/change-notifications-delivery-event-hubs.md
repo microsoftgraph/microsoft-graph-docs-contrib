@@ -168,9 +168,9 @@ Before you can receive the notifications in your application, you'll need to cre
 }
 ```
 ### Subscriptions for rich notifications with large payloads
-Event Hubs' maximum message size is 1MB.  When using [rich notifications](https://learn.microsoft.com/en-us/graph/webhooks-with-resource-data?tabs=csharp) you might expect notifications that will exceeed this 1MB limit.  To receive notifications larger than 1MB through Event Hubs, you must also add a blob storage account to your subscription request.
+The maximum message size for Event Hubs is 1 MB.  When you use [rich notifications](https://learn.microsoft.com/en-us/graph/webhooks-with-resource-data?tabs=csharp), you might expect notifications that exceeed this 1 MB limit.  To receive notifications larger than 1 MB through Event Hubs, you must also add a blob storage account to your subscription request.
 
-#### Setup storage and create subscription
+#### Set up storage and create subscription
 1.  [Create a storage account](/azure/storage/common/storage-account-create).
 2.  [Create a container in that storage account](/azure/storage/blobs/blob-containers-portal) and assign it a name.
 3.  [Retrieve the storage account access keys or connection string](/azure/storage/common/storage-account-keys-manage#view-account-access-keys).
