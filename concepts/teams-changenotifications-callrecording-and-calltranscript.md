@@ -145,53 +145,7 @@ Content-Type: application/json
 }
 ```
 
-## Notification payloads
-
-Depending on your subscription, you can either get the notification with resource data, or without it. Subscribing with resource data allows you to get the message payload along with the notification, removing the need to call back and get the content.
-
-### Notifications with resource data
-
-For notifications with resource data, the payload looks like the following. This payload is for a recording available for an online meeting.
-
-```json
-{
-  "value": [
-    {
-      "subscriptionId": "265009c7-312c-4594-981f-f620d31abdd3",
-      "changeType": "created",
-      "clientState": "ClientSecret",
-      "subscriptionExpirationDateTime": "2023-04-11T11:00:00.0000000-08:00",
-      "resource": "communications/onlineMeetings('MSphZDJlYTFhOS0xNTdmLTQ3ZTItOTQ3ZS1iZmVkMWM5MDk3ZTQqMCoqMTk6bWVldGluZ19NR001T0dGbFpqQXROV1V5WkMwMFlqSTVMV0kyTkRBdE4ySXhaalEwTjJFeE1qRmhAdGhyZWFkLnYy')/recordings('ea1089e0-edf9-4044-9c6d-fc44dcaaf38e')",
-      "resourceData": {
-        "id": "ea1089e0-edf9-4044-9c6d-fc44dcaaf38e",
-        "@odata.type": "#Microsoft.Graph.callRecording",
-        "@odata.id": "communications/onlineMeetings('MSphZDJlYTFhOS0xNTdmLTQ3ZTItOTQ3ZS1iZmVkMWM5MDk3ZTQqMCoqMTk6bWVldGluZ19NR001T0dGbFpqQXROV1V5WkMwMFlqSTVMV0kyTkRBdE4ySXhaalEwTjJFeE1qRmhAdGhyZWFkLnYy')/recordings('ea1089e0-edf9-4044-9c6d-fc44dcaaf38e')"
-      },
-      "EncryptedContent": {
-        "data": "<<--EncryptedContent-->>",
-        "dataKey": "<<--EnryptedDataKeyUsedForEncryptingContent-->>",
-        "encryptionCertificateId": "<<--IdOfTheCertificateUsedForEncryptingDataKey-->>",
-        "encryptionCertificateThumbprint": "<<--ThumbprintOfTheCertificateUsedForEncryptingDataKey-->>"
-      },
-      "tenantId": "<<--TenantForWhichNotificationWasSent-->>"
-    }
-  ],
-  "validationTokens": [
-    "<<--ValidationTokens-->>"
-  ]
-}
-```
-
-The decrypted notification payload looks like the following. The payload conforms to the [recording](/graph/api/resources/callrecording) schema. The payload is similar to those returned by GET operations.
-
-```json
-{
-  "id": "MSpNQSpkMDBhZTc2NS02YzZiLTQ2NDEtODAxZC0xOTMyYWYyMTM3N2E=",
-  "createdDateTime": "2021-09-01T07:48:50.1418898Z"
-}
-```
-
-### Notifications without resource data
+## Notifications without resource data
 
 Notifications without resource data give you enough information to make GET calls to get the transcript or recording. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data isn't sent over).
 
