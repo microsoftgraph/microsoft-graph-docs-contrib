@@ -19,7 +19,7 @@ Represents details of the managed identity that was used to sign into the target
 |Property|Type|Description|
 |:---|:---|:---|
 |associatedResourceId|String|The ARM resource ID of the Azure resource associated with the managed identity used for sign in.|
-|federatedTokenId|String|The unique Id of the federated token.|
+|federatedTokenId|String|The unique ID of the federated token.|
 |federatedTokenIssuer|String|The issuer of the federated token.|
 |msiType|msiType|The possible values are: `none`, `userAssigned`, `systemAssigned`, `unknownFutureValue`.|
 
