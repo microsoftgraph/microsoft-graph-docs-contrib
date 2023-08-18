@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 id := "ebf18762-ab92-487e-21d1-08daddab28bb"
 requestBody.SetId(&id) 
 
-result, err := graphClient.External().IndustryData().Years().ByYearId("yearTimePeriodDefinition-id").Patch(context.Background(), requestBody, nil)
+years, err := graphClient.External().IndustryData().Years().ByYearTimePeriodDefinitionId("yearTimePeriodDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

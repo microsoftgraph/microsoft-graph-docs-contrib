@@ -1,7 +1,7 @@
 ---
 title: "signIn: confirmCompromised"
 description: "Allow admins to mark Azure AD sign in events as risky for Azure AD Identity Protection."
-author: "besiler"
+author: "egreenberg14"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType

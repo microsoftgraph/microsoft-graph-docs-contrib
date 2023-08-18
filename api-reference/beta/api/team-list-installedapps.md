@@ -309,6 +309,9 @@ GET https://graph.microsoft.com/beta/teams/acda442c-78d2-491b-8204-4ef5019c0193/
 
 ---
 
+>[!NOTE]
+> This example applies to sideloaded or organizational apps. The **externalId** value is empty for apps with a **distributionMethod** type of `store`. When apps are published to the global store, the **id** of the app matches the **id** in the app manifest.
+
 #### Response
 
 The following is an example of the response.
@@ -445,9 +448,12 @@ Content-type: application/json
     ]
 }
 ```
+
 ## See also
+
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
 - [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

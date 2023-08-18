@@ -23,7 +23,7 @@ requestBody.SetGroupId(&groupId)
 renameAs := "renameAs-value"
 requestBody.SetRenameAs(&renameAs) 
 
-result, err := graphClient.Me().Onenote().Sections().BySectionId("onenoteSection-id").CopyToNotebook().Post(context.Background(), requestBody, nil)
+copyToNotebook, err := graphClient.Me().Onenote().Sections().ByOnenoteSectionId("onenoteSection-id").CopyToNotebook().Post(context.Background(), requestBody, nil)
 
 
 ```

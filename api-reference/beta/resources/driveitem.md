@@ -1,7 +1,4 @@
 ---
-author: "JeremyKelley"
-description: "Represents a file, folder, or other item stored in a drive."
-title: "driveItem resource type"
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
 doc_type: resourcePageType
@@ -23,7 +20,7 @@ There are two primary ways of addressing a **driveItem** resource:
 * By file system path using `/drive/root:/path/to/file`
 
 For more information, see [addressing driveItems](/graph/onedrive-addressing-driveitems).
-                                                
+
 **DriveItem** resources have facets modeled as properties that provide data about the driveItem's identities and capabilities.
 For example:
 
@@ -53,6 +50,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Download content](../api/driveitem-get-content.md)                          | `GET /drive/items/{item-id}/content`                                   |
 | [Download specific file format][download-format]                             | `GET /drive/items/{item-id}/content?format={format}`                   |
 | [Delete item](../api/driveitem-delete.md)                                    | `DELETE /drive/items/{item-id}`                                        |
+| [PermanentDelete item](../api/driveitem-permanentDelete.md)                  | `POST /drives/{driveId}/items/{itemId}/permanentDelete`                |
 | [Restore item](../api/driveitem-restore.md)                                  | `POST /drive/items/{item-id}/restore`                                  |
 | [Move item](../api/driveitem-move.md)                                        | `PATCH /drive/items/{item-id}`                                         |
 | [Copy item](../api/driveitem-copy.md)                                        | `POST /drive/items/{item-id}/copy`                                     |
@@ -171,7 +169,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
        "keyProperty": "id", "openType": true } -->
 
 ```json
-{  
+{
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "bundle": { "@odata.type": "microsoft.graph.bundle" },
   "content": { "@odata.type": "Edm.Stream" },

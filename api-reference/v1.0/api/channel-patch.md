@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update the properties of the specified [channel](../resources/channel.md).
 
+[!INCLUDE [teams-model-A-only-disclaimer](../../includes/teams-model-A-only-disclaimer.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -116,3 +118,7 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+## See also
+
+[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

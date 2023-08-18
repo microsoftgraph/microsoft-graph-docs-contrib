@@ -1,7 +1,7 @@
 ---
 title: "Create federatedIdentityCredential"
 description: "Create a new federatedIdentityCredential object for an application."
-author: "shahzad-khalid"
+author: "nickludwig"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType

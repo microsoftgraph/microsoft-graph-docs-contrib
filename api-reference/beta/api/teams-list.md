@@ -281,6 +281,7 @@ Content-type: application/json
 }
 ```
 
-
 ## See also
+
 - [Get team](../api/team-get.md)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

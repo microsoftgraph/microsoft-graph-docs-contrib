@@ -39,7 +39,7 @@ members := []graphmodels.ConversationMemberable {
 }
 requestBody.SetMembers(members)
 
-result, err := graphClient.Teams().ByTeamId("team-id").Channels().Post(context.Background(), requestBody, nil)
+channels, err := graphClient.Teams().ByTeamId("team-id").Channels().Post(context.Background(), requestBody, nil)
 
 
 ```

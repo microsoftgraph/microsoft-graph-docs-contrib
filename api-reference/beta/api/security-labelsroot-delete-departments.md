@@ -86,7 +86,6 @@ DELETE https://graph.microsoft.com/beta/security/labels/departments/{departmentT
 
 ---
 
-
 ### Response
 The following is an example of the response.
 >

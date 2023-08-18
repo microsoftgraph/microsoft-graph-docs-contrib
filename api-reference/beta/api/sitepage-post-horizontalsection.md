@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-POST /sites/{site-id}/pages/{page-id}/canvasLayout/horizontalSections
+POST /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/horizontalSections
 ```
 
 ## Request headers
@@ -56,14 +56,10 @@ If successful, this method returns a `201 Created` response code and a created [
 
 The following is an example of a request.
 
-<!-- {
-  "blockType": "request",
-  "name": "create_horizontalsection"
-}
--->
+<!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/beta/sites/{site-id}/pages/{page-id}/canvasLayout/horizontalSections
+POST https://graph.microsoft.com/beta/sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/horizontalSections
 Content-Type: application/json
 
 {

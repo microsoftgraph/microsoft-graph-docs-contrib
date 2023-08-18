@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-PATCH /sites/{site-id}/pages/{page-id}/canvasLayout/verticalSection
+PATCH /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/verticalSection
 ```
 
 ## Request headers
@@ -60,14 +60,10 @@ If the vertical section does not exist, this method returns a `404 NotFound` res
 
 The following is an example of a request.
 
-<!-- {
-  "blockType": "request",
-  "name": "update_verticalSection"
-}
--->
+<!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/sites/{site-id}/pages/{page-id}/canvasLayout/verticalSection
+PATCH https://graph.microsoft.com/beta/sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/verticalSection
 Content-Type: application/json
 
 {

@@ -40,7 +40,7 @@ This type inherits from [conversationMember](conversationmember.md).
 |displayName| string | The display name of the user. |
 |email| string  | The email address of the user. |
 |id|String| Read-only. Unique ID of the user.|
-|roles| string collection | The roles for that user. |
+|roles| string collection | The roles of the user such as owner, member, or guest. |
 |tenantId| string  | TenantId which the Azure AD user belongs to. |
 |userId| string | The guid of the user. |
 |visibleHistoryStartDateTime| DateTimeOffset  | The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.|
