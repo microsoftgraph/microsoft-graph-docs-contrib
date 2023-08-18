@@ -63,7 +63,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Example 1: Block outbound B2B collaboration for a group of users
+
+#### Request
 
 <!-- {
   "blockType": "request",
@@ -72,7 +74,6 @@ If successful, this method returns a `204 No Content` response code.
 -->
 ``` http
 PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default
-
 Content-Type: application/json
 
 {
@@ -98,19 +99,45 @@ Content-Type: application/json
         }
       ]
     }
-  },
-  "invitationRedemptionIdentityProviderConfiguration": { 
-        "primaryIdentityProviderPrecedenceOrder": [ 
-            "externalFederation", 
-            "azureActiveDirectory", 
-            "socialIdentityProviders" 
-        ], 
-        "fallbackIdentityProvider": "defaultConfiguredIdp" 
-    } 
+  }
 }
 ```
 
-### Response
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Update default invitation redemption configuration
+<!-- {
+  "blockType": "request",
+  "name": "update_crosstenantaccesspolicyconfigurationdefault"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default
+Content-Type: application/json
+
+{
+  "invitationRedemptionIdentityProviderConfiguration": { 
+    "primaryIdentityProviderPrecedenceOrder": [ 
+        "externalFederation", 
+        "azureActiveDirectory", 
+        "socialIdentityProviders" 
+    ], 
+    "fallbackIdentityProvider": "defaultConfiguredIdp" 
+  } 
+}
+```
+
+#### Response
 
 <!-- {
   "blockType": "response",
