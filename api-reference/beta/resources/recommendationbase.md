@@ -1,7 +1,7 @@
 ---
 title: "recommendationBase resource type"
 description: "An abstract type that exposes the properties for a recommendation. "
-author: "hafowler"
+author: "ddeeps2610"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
