@@ -38,6 +38,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "primaryIdentityProviderPrecedenceOrder": ["String"],
-  "fallbackIdentityProvider": ["String"]
+  "fallbackIdentityProvider": "String"
 }
 ```
