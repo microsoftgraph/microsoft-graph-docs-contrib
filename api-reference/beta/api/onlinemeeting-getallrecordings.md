@@ -13,20 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all recordings from scheduled [onlineMeeting](../resources/onlinemeeting.md) instances for which the specified user is the organizer.
+Get all recordings from scheduled [onlineMeeting](../resources/onlinemeeting.md) instances for which the specified user is the organizer. This API currently does not support getting call recordings from channel meetings.
 
-**Note:** This API currently does not support getting call recordings from channel meetings.
+Delta query supports both full synchronization that gets all the recordings for online meetings organized by a given user, and incremental synchronization that gets recordings that have been added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
+
+Find more information in the [delta query](/graph/delta-query-overview) documentation. For additional examples, see [callRecording: delta](callrecording-delta.md).
 
 To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
-
-## Change tracking support
-
-By using delta query, you can get newly added recordings.
-
-Delta query supports both full synchronization that retrieves all the recordings for online meetings organized by a given user, and incremental synchronization that retrieves recordings that have been added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
-
-For more information, see the [delta query](/graph/delta-query-overview) documentation.
-For additional examples, see [callRecording: delta](callrecording-delta.md).
 
 ## Permissions
 
@@ -45,7 +38,7 @@ The following permissions are required to call this API. To learn more, includin
 GET /users/{id}/onlineMeetings/getAllRecordings?$filter=meetingOrganizerId%20eq%20'{id}'
 ```
 
->**Note:** If you don't specify a **meetingOrganizerId** the request will fail.
+>**Note:** If you don't specify a filter on **meetingOrganizerId**, the request will fail.
 
 ## Request headers
 | Header       | Value |
@@ -60,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a list of [callR
 
 ### Request
 
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeeting/getAllRecordings?$filter=meetingOrganizerId%20eq%20'8b081ef6-4792-4def-b2c9-c363a1bf41d5'
 ```
 
