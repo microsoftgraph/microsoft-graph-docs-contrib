@@ -26,7 +26,7 @@ By using delta query, you can get newly added recordings.
 Delta query supports both full synchronization that retrieves all the recordings for online meetings organized by a given user, and incremental synchronization that retrieves recordings that have been added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that recording view periodically.
 
 For more information, see the [delta query](/graph/delta-query-overview) documentation.
-For additional examples, see [callRecording: delta](/callrecording-delta.md).
+For additional examples, see [callRecording: delta](callrecording-delta.md).
 
 ## Permissions
 

@@ -26,7 +26,7 @@ By using delta query, you can get newly added transcripts.
 Delta query supports both full synchronization that retrieves all the transcripts for online meetings organized by a given user, and incremental synchronization that retrieves transcripts that have been added since the last synchronization. Typically, you would do an initial full synchronization, and then get incremental changes to that transcript view periodically.
 
 For more information, see the [delta query](/graph/delta-query-overview) documentation.
-For additional examples, see [callTranscript: delta](/calltranscript-delta.md).
+For additional examples, see [callTranscript: delta](calltranscript-delta.md).
 
 ## Permissions
 
