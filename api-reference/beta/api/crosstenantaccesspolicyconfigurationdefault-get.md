@@ -209,7 +209,11 @@ Content-Type: application/json
   }
   "invitationRedemptionIdentityProviderConfiguration": 
   { 
-        "primaryIdentityProviderPrecedenceOrder": "AAD, DirectFed, Social",
+        "primaryIdentityProviderPrecedenceOrder": [ 
+            "externalFederation", 
+            "azureActiveDirectory", 
+            "socialIdentityProviders" 
+        ],
         "fallbackIdentityProvider": "defaultConfiguredIdp" 
   }
 }

@@ -17,11 +17,10 @@ Defines the base type invitation redemption provider configuration base type to 
 
 ## Properties
 
-
 |Property|Type|Description|
 |:---|:---|:---|
-| primaryIdentityProviderPrecedenceOrder | \[b2bIdentityProvidersType\] | Collection of identity providers in priority order of preference to be used for guest user invitation redemption |
-| fallbackIdentityProvider | \[b2bIdentityProvidersType\] | Collection of fallback identity providers to be used in case no primary identity provider can be used for guest user invitation redemption. |
+| primaryIdentityProviderPrecedenceOrder | b2bIdentityProvidersType collection | Collection of identity providers in priority order of preference to be used for guest user invitation redemption |
+| fallbackIdentityProvider | b2bIdentityProvidersType | Collection of fallback identity providers to be used in case no primary identity provider can be used for guest user invitation redemption. Values can be `defaultConfiguredIdp`, `EOTP`, or `MSA`. |
 
 ## Relationships
 
@@ -39,6 +38,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "primaryIdentityProviderPrecedenceOrder": ["String"],
-  "fallbackIdentityProvider": ["String"]
+  "fallbackIdentityProvider": "String"
 }
 ```
