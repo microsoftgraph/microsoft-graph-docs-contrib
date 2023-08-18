@@ -84,7 +84,7 @@ In this example, the call recordings are being synchronized for the first time, 
 GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeetings/getAllRecordings/delta?$filter=meetingOrganizerId%20eq%20'8b081ef6-4792-4def-b2c9-c363a1bf41d5'
 ```
 
-#### Initial request response
+#### Initial response
 
 The response includes two call recordings and a `@odata.nextLink` response header with a `skipToken`. The `@odata.nextLink` URL indicates there are more call recordings to retrieve.
 
@@ -133,7 +133,7 @@ The second request specifies the `@odata.nextLink` URL returned from the previou
 GET https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/onlineMeeting/getAllRecordings?$skiptoken=GGXvkS7mbjFAe9Uidm2D70e58K-BOnoJadAqkZEJmoLprr5eSP1hQPlb3dJ1AVz3xCYKxov6hSEJhsasyg
 ```
 
-#### Second request response
+#### Second response
 
 The second response returns the next 2 call recordings and a `@odata.nextLink` property with a `skipToken` which indicates there are more recordings.
 
