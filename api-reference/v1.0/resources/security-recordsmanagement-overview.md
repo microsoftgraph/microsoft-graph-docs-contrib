@@ -14,11 +14,24 @@ The Microsoft Purview records management APIs help organizations manage retentio
 The records mangement solution is a part of the Microsoft Purview compliance center.
 
 ## Manage retention labels
-Record Management admins and developers need to keep their record management systems updated to the appropriate periods and retention categories which translates to creating, updating and deleting retention labels periodically. Developers can use the Microsoft Graph to perform create, updated, delete and retrieve operations on the retention label entity. 
-This may include creating and maintaining file plan descriptors like “Authority”, “Category” and others.
+Most organizations need to manage their data to comply with industry regulations and internal policies, reduce risks of litigation or security breach, and let their employees effectively and agiley share knowledge that is current and relevant to them. Managing data commonly involves appropriately retaining or deleting different types of content. 
+
+You can use [retention labels](security-retentionlabel.md) to configure retention and deletion settings for Microsoft 365 content. For example, you can set retention periods from when the content was labeled and you can set disposition review as the action at the end of the retention period. 
+
+In addition, you can use [file plan descriptors](security-fileplandescriptor.md) to supplement a retention label and improve the manageability and organization of Microsoft 365 content. Examples of file plan descriptors include [authority](security-authority.md), [citation](security-citation.md), and [department](security-department.md).
 
 ## Trigger events for an existing label
-Retention labels may have their retention period tied to external events, for example – an employee leaving the company, a project completing or the fiscal year ending. When using events, external systems which are aware of this change or information can be used to drive our service to start the clock for the retention period of items labeled. The Microsoft Graph allows creation of event types to be used in retention labels as well as triggering the specific event instances that happen externally which need to start the clock for a certain event type. For example, when an employee (with an employee ID of 1234) leaves Contoso, the information is updated in the HR management system. Let us assume that from the date of leaving, employment documentation must be retained for 5 years. These documents already have the label “Personnel information” applied to them which is already configured to listen to events of the type 'Employee_departure'. The developer can then use the Microsoft Graph to trigger a new instance of the 'Employee_departure' event type with the criteria of 'ComplianceAssetID:1234' which will ensure any items which are using the 'Personnel information' retention label and have the employee ID of 1234 in the 'Compliance Asset' column, will get their 5 year retention period started from the date specified.
+Some scenarios require starting a retention period for certain documents upon a specific event, such as an employee leaving an organization, a contract expiring, or the fiscal year ending. 
+
+You can use the [retentionLabel](security-retentionlabel.md) resource to support event-based retention, by setting the **retentionTrigger** property as `dateOfEvent` and associating the label with a [retentionEventType](security-retentioneventtype.md) resource. A [retentionEvent](security-retentionevent.md) is associated with a **retentionEventType** as well. When a triggering event happens, only content with that retention label applied is retained for the specified retention period.
+
+As an example: in an organization, when an employee leaves, employment records must be retained for 5 years. For each employee record, apply a **retentionLabel** configured as follows:
+- A display name of "Personnel information"
+- Listen to the **retentionEventType** named "Employee departure"
+- A **retentionDuration** of 1827 days (5 years)
+
+When an employee with an employee ID of 1234 leaves Contoso, the information is updated in the HR management system. The record management system can then use the records management API to trigger a new instance of **retentionEvent** with the "Employee departure" event type and the criteria of 'ComplianceAssetID:1234'. This way, any items using the "Personnel information" retention label and have the employee ID of 1234 in the 'Compliance Asset' column, gets their 5 year retention period started from the date specified.
+
 
 ## Entities
 The records management API includes the following key entities.
