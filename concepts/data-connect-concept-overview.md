@@ -69,7 +69,7 @@ Microsoft 365 datasets come ready for analysis and include the following categor
 For a list of Data Connect datasets, see [Datasets, regions, and sinks supported by Microsoft Graph Data Connect](/graph/data-connect-datasets).
 
 ## Data Connect templates
-Browse through a gallery of templates that provide the necessary Azure resources, data pipelines, and user experience samples to accelerate your path to realizing the value of Microsoft 365 data. For details, see [Microsoft Graph Data Connect templates](data-connect-templates-overview.md).
+Browse through a gallery of templates that provide the necessary Azure resources, data pipelines, and user experience samples to accelerate your path to realizing the value of Microsoft 365 data. <!-- For details, see [Microsoft Graph Data Connect templates](data-connect-templates-overview.md).-->
 
 Templates help take use cases from hypothesis to implementation by:
 
