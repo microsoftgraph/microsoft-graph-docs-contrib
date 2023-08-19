@@ -1595,6 +1595,32 @@
         "SubArea": "Identity and access reports"
     },
     {
+      "ChangeList": [
+        {
+          "Id": "b6aab1b1-6ba2-470c-85e6-a5b700bca26b",
+          "ApiChange": "Property",
+          "ChangedApiName": "federatedTokenId",
+          "ChangeType": "Addition",
+          "Description": "Added the `federatedTokenId` property to the [managedIdentity](https://learn.microsoft.com/en-us/graph/api/resources/managedIdentity?view=graph-rest-beta) resource.",
+          "Target": "managedIdentity"
+        },
+        {
+          "Id": "b6aab1b1-6ba2-470c-85e6-a5b700bca26b",
+          "ApiChange": "Property",
+          "ChangedApiName": "federatedTokenIssuer",
+          "ChangeType": "Addition",
+          "Description": "Added the `federatedTokenIssuer` property to the [managedIdentity](https://learn.microsoft.com/en-us/graph/api/resources/managedIdentity?view=graph-rest-beta) resource.",
+          "Target": "managedIdentity"
+        }
+      ],
+      "Id": "b6aab1b1-6ba2-470c-85e6-a5b700bca26b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-18T18:27:41.0670841Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
          "ChangeList":[
             {
                "Id":"c5972090-4edc-11eb-ae35-ed470c456b69",
