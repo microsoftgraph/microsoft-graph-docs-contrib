@@ -17179,20 +17179,28 @@ items:
                             href: api/attendancerecord-list.md
                   - name: Call recording (preview)
                     items:
-                      - name: Call recording (preview)
+                      - name: Call recording
                         href: resources/callrecording.md
-                      - name: List
+                      - name: List recordings
                         href: api/onlinemeeting-list-recordings.md
-                      - name: Get
-                        href: api/callrecording-get.md                
+                      - name: Get recording
+                        href: api/callrecording-get.md
+                      - name: Get delta by organizer
+                        href: api/callrecording-delta.md
+                      - name: List recordings by organizer
+                        href: api/onlinemeeting-getallrecordings.md
                   - name: Call transcript (preview)
                     items:
-                      - name: Call transcript (preview)
+                      - name: Call transcript
                         href: resources/calltranscript.md
-                      - name: List
+                      - name: List transcripts
                         href: api/onlinemeeting-list-transcripts.md
-                      - name: Get
+                      - name: Get transcript
                         href: api/calltranscript-get.md
+                      - name: Get delta by organizer
+                        href: api/calltranscript-delta.md
+                      - name: List transcripts by organizer
+                        href: api/onlinemeeting-getalltranscripts.md
                   - name: External meeting registration (preview)
                     href: resources/externalmeetingregistration.md
                     items:
