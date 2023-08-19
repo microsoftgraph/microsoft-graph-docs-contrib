@@ -4,6 +4,14 @@
       "ChangeList": [
         {
           "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get whoisRecord for a host](https://learn.microsoft.com/en-us/graph/api/security-host-get-whois?view=graph-rest-beta) method to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
+          "Target": "host"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
           "ApiChange": "Relationship",
           "ChangedApiName": "whois",
           "ChangeType": "Addition",
@@ -25,6 +33,22 @@
           "ChangeType": "Addition",
           "Description": "Added the **whoisRecords** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
           "Target": "threatIntelligence"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "whois",
+          "ChangeType": "Addition",
+          "Description": "Added the **whois** relationship to the [hostname](https://learn.microsoft.com/en-us/graph/api/resources/security-hostname?view=graph-rest-beta) resource.",
+          "Target": "hostname"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "whois",
+          "ChangeType": "Addition",
+          "Description": "Added the **whois** relationship to the [ipAddress](https://learn.microsoft.com/en-us/graph/api/resources/security-ipaddress?view=graph-rest-beta) resource.",
+          "Target": "ipAddress"
         },
         {
           "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
