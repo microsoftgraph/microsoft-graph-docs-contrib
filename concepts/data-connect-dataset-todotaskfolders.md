@@ -9,26 +9,27 @@ ms.custom: datasets:dataset-name
 
 # Microsoft Graph Data Connect TodoTaskFolders_v0 dataset
 
-## Description
-
 Tasks in Microsoft Outlook track user-level work items. Users can note a task's start, due, and actual completion dates, its progress or status, and whether it's recurring or requires a reminder. Tasks are organized in task folders, which are organized in task groups. Each mailbox has a default task folder (with the Name property Tasks) and a default task group (Name property My Tasks). 
 
 The TodoTaskFolders_v0 dataset provides all the task folders created by all users of a tenant that are secured by Azure Active Directory (Azure AD) in Office 365. User accounts can be in Microsoft 365 or a Microsoft account (Hotmail.com, Live.com, MSN.com, Outlook.com, and Passport.com). 
 
 ## Scenarios
 
+The following are business scenarios that you can answer with this dataset:
+
 - Create a Microsoft Outlook tasks structure replica, along with all user-level Task folders and tasks.
 - Identify task folders created by all users.
 
 ## Questions
+
+The following are examples of questions that you can answer with this dataset:
 
 - How many task folders were created by all users of a tenant?
 - Which task folders were created by all users of a tenant?
 
 ## Joining with other datasets
 
-- The TodoTaskFolders_v0 dataset can be joined with the TodoTasks_v0 dataset to map and analyze user-level Outlook tasks structure for a tenant.
-- It can also be joined with the User_v1 dataset to view and analyze which users have created task folders at tenant scale.  
+The TodoTaskFolders_v0 dataset can be joined with the TodoTasks_v0 dataset to map and analyze user-level Outlook tasks structure for a tenant. It can also be joined with the User_v1 dataset to view and analyze which users have created task folders at tenant scale.  
 
 ## Definitions
 
