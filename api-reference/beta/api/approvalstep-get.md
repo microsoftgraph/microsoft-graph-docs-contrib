@@ -57,6 +57,7 @@ To get an approval step in PIM for Azure AD roles:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/directory/roleAssignmentApprovals/{id}/steps/{id}
+```
 
 To get an approval step in PIM for groups:
 
