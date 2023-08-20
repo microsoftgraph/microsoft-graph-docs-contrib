@@ -9,13 +9,13 @@ ms.custom: datasets:dataset-name
 
 # Microsoft Graph Data Connect TodoTasks_v0 dataset 
 
-## Description
-
 The TodoTasks_v0 dataset provides a list of Microsoft Outlook tasks. Tasks in Microsoft Outlook tracks user-level work items. Users can note a task's start, due, and actual completion dates, its progress or status, and whether it's recurring or requires a reminder. Tasks are organized in task folders, which are organized in task groups. Each mailbox has a default task folder (with the Name property tasks) and a default task group (Name property *My Tasks*).
 
 The TodoTasks_v0 dataset enables you to identify all tasks created by all users of a tenant that are secured by Azure Active Directory (Azure AD) in Microsoft 365. User accounts can be on Microsoft 365 or a Microsoft account (Hotmail.com, Live.com, MSN.com, Outlook.com, and Passport.com). 
  
 ## Scenarios
+
+The following are business scenarios that you can answer with this dataset:
 
 - Analyze the number of tasks that were created by all users. You can also analysze how many of these tasks got completed before the assigned due dates, and how many got completed after the assigned due dates.
 - Identify stale tasks for notifying respective users to complete their tasks before the due date.
@@ -23,6 +23,8 @@ The TodoTasks_v0 dataset enables you to identify all tasks created by all users 
 - Identify tasks assigned to users where the status remains unchanged beyond a particular threshold.
 
 ## Questions
+
+The following are examples of questions that you can answer with this dataset:
 
 - How many tasks were created by all users of a tenant?
 - How many tasks were completed before the assigned due date by all users of a tenant?
