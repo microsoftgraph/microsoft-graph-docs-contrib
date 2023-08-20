@@ -9,17 +9,20 @@ ms.custom: datasets:dataset-name
 
 # Microsoft Graph Data Connect  Manager_v0 dataset
 
-## Description
-
-- The Manager_v0 dataset provides the list of users assigned as managers.
+The Manager_v0 dataset provides the list of users assigned as managers.
 
 ## Scenarios
 
+The following are business scenarios that you can answer with this dataset:
+
 - Analyze the details of managers according to their job titles, department, age group, location, usage location, and other details.
+- Determine how many employees are currently managers in the organization.
 
 ## Questions
 
-- How many managers are present in the organization? 
+The following are examples of questions that you can answer with this dataset:
+
+- How many managers exist in the organization? 
 - Which managers are located in a particular city/state/country? 
 - What is the average age group of managers in the organization?
 - What are the business phone numbers of all managers?
@@ -29,7 +32,6 @@ ms.custom: datasets:dataset-name
 The Manager_v0 dataset can be joined with the DirectReport_v0 dataset.
 
 ## Schema
-
 
 | Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
 | ----------- | ----------- | ----------- | ----------- | ----------- |
