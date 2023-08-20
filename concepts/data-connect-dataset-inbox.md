@@ -9,11 +9,11 @@ ms.custom: datasets:dataset-name
 
 # Microsoft Graph Data Connect Inbox_v1 dataset
 
-## Description
-
 The Inbox_v1 dataset provides the messages from users' mail folders.
 
 ## Scenarios
+
+The following are business scenarios that you can answer with this dataset:
 
 - Analyze all the messages received by users.
 - Analyze the subject to shortlist messages having certain keywords.
@@ -22,6 +22,8 @@ The Inbox_v1 dataset provides the messages from users' mail folders.
 - Scenarios related to security and compliance audits.
 
 ## Questions
+
+The following are examples of questions that you can answer with this dataset:
 
 - Which internal users are frequently communicating with a particular user?
 - Which external users are frequently communicating with a particular user?
