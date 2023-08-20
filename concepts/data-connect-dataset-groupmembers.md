@@ -9,16 +9,18 @@ ms.custom: datasets:dataset-name
 
 # Microsoft Graph Data Connect GroupMembers_v0 dataset
 
-## Description
-
 The GroupMembers_v0 dataset generates a list of direct members of all groups. A group can have users, organizational contacts, devices, service principals and other groups as members. 
 
 ## Scenarios
+
+The following are business scenarios that you can answer with this dataset:
 
 - Generate a list of the members of a group.
 - Determine whether a user is a member of a group.
 
 ## Questions
+
+The following are examples of questions that you can answer with this dataset:
 
 - How many members are part of a particular group?
 - Who are the members of a group?
