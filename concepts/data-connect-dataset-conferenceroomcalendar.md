@@ -48,38 +48,38 @@ The ConferenceRoomCalendar_v0 dataset can be joined with relevant events categor
 | lastModifiedDateTime |	datetime |	The date and time that the event was last modified. |	No |	None |
 | changeKey |	string |	Identifies the version of the event object. Every time the event is changed, 
 ChangeKey' changes as well. This allows Exchange to apply changes to the correct version of the object. |	No |	None |
-| categories |	string |	The categories associated with the event. *Format:* ARRAY<STRING>. |	No |	None |
+| categories |	string |	The categories associated with the event. *Format:* `ARRAY<STRING>.` |	No |	None |
 | originalStartTimeZone |	string |	The start time zone that was set when the event was created. See 'DateTimeTimeZone' for a list of valid time zones. |	No |	None |
 | originalEndTimeZone |	string |	The end time zone that was set when the event was created. See 'DateTimeTimeZone' for a list of valid time zones. |	No |	None |
-| responseStatus |	string |	Indicates the type of response sent in response to an event message. *Format:* STRUCT<Response: STRING, Time: STRING>. |	No |	None |
+| responseStatus |	string |	Indicates the type of response sent in response to an event message. *Format:* `STRUCT<Response: STRING, Time: STRING>.` |	No |	None |
 | iCalUId |	string |	A unique identifier that is shared by all instances of an event across different calendars. |	No |	None |
 | isOnlineMeeting |	boolean |	Indicates whether this event has online meeting information. |	No |	None |
 | reminderMinutesBeforeStart |	int32 |	The number of minutes before the event start time that the reminder alert occurs. |	No |	None |
 | isReminderOn |	boolean |	True if an alert is set to remind the user of the event; otherwise false.	| No |	None |
 | hasAttachments |	boolean	 | True if the event has attachments; otherwise false. |	No |	None |
 | subject |	string |	The text of the event's subject line. |	No |	None |
-| body |	string |	The body of the message that is unique to the conversation. *Format:* STRUCT<ContentType: STRING, Content: STRING>. |	No |	None |
+| body |	string |	The body of the message that is unique to the conversation. *Format:* `STRUCT<ContentType: STRING, Content: STRING>.` |	No |	None |
 | importance |	string |	The importance of the event. *Allowed values:*  low, normal, high. |	No |	None |
 | sensitivity |	string |	Indicates the level of privacy for the event. *Allowed values:* normal, personal, private, confidential. |	No	 | None |
-| start |	string |	The start time of the event. *Format:* STRUCT<DateTime: STRING, TimeZone: STRING>. |	No	| None |
+| start |	string |	The start time of the event. *Format:* `STRUCT<DateTime: STRING, TimeZone: STRING>.` |	No	| None |
 | end |	string |	The date and time that the event ends. *Format:* STRUCT<DateTime: STRING, TimeZone: STRING>. |	No |	None |
-| location	| string |	Location information of the event. *Format:* STRUCT<DisplayName: STRING, Address: STRUCT<Street: STRING, City: STRING, State: STRING, CountryOrRegion: STRING, PostalCode: STRING>, Coordinates: STRUCT<Altitude: DOUBLE, Latitude: DOUBLE, Longitude: DOUBLE, Accuracy: DOUBLE, AltitudeAccuracy: DOUBLE>>. |	No |	None |
+| location	| string |	Location information of the event. *Format:* `STRUCT<DisplayName: STRING, Address: STRUCT<Street: STRING, City: STRING, State: STRING, CountryOrRegion: STRING, PostalCode: STRING>, Coordinates: STRUCT<Altitude: DOUBLE, Latitude: DOUBLE, Longitude: DOUBLE, Accuracy: DOUBLE, AltitudeAccuracy: DOUBLE>>.` |	No |	None |
 | isAllDay |	boolean |	True if the event lasts all day; otherwise false. Adjusting this property requires adjusting the Start and End properties of the event as well. |	No |	None |
 | isCancelled |	boolean |	True if the event has been canceled; otherwise false. |	No |	None |
 | isOrganizer |	boolean |	True if the message sender is also the organizer; otherwise false. |	No |	None |
 | onlineMeeting |	string |	Details for an attendee to join the meeting online. |	No |	None |
 | onlineMeetingProvider |	string |	Represents the online meeting service provider. *Allowed values:* teamsForBusiness, skypeForBusiness, and skypeForConsumer. |	No |	None |
-| recurrence |	string |	The recurrence pattern for the event. *Format:* STRUCT<Pattern: STRUCT<Type: STRING, `Interval`: INT, Month: INT, DayOfMonth: INT, DaysOfWeek: ARRAY<STRING>, FirstDayOfWeek: STRING, Index: STRING>, `Range`: STRUCT<Type: STRING, StartDate: STRING, EndDate: STRING, RecurrenceTimeZone: STRING, NumberOfOccurrences: INT>>. |	No |	None |
+| recurrence |	string |	The recurrence pattern for the event. *Format:* `STRUCT<Pattern: STRUCT<Type: STRING, `Interval`: INT, Month: INT, DayOfMonth: INT, DaysOfWeek: ARRAY<STRING>, FirstDayOfWeek: STRING, Index: STRING>, `Range`: STRUCT<Type: STRING, StartDate: STRING, EndDate: STRING, RecurrenceTimeZone: STRING, NumberOfOccurrences: INT>>.` |	No |	None |
 | responseRequested |	boolean |	True if the sender would like a response when the event is accepted or declined; otherwise false. |	No	| None |
 | showAs |	string	| The status to show. *Allowed values:* free, tentative, busy, oof, workingelsewhere, unknown. |	No |	None |
 | transactionId |	string |	A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event.	| No |	None |
 | type |	string |	The event type. *Allowed values:* singleinstance, occurrence, exception, seriesmaster. |	No |	None |
-| attendees |	string |	The collection of attendees for the event. *Format:* ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>, Status: STRUCT<Response: STRING, Time: STRING>, Type: STRING>>. |	No |	None |
+| attendees |	string |	The collection of attendees for the event. *Format:* `ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>, Status: STRUCT<Response: STRING, Time: STRING>, Type: STRING>>.` |	No |	None |
 | organizer |	string |	The organizer of the event. *Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>. |	No |	None |
 | webLink |	string |	The URL to open the event in Microsoft Outlook web app. |	No |	None |
-| attachments |	string	The 'FileAttachment' and 'ItemAttachment' attachments for the message; navigation property. *Format:* ARRAY<STRUCT<LastModifiedDateTime: STRING, Name: STRING, ContentType: STRING, Size: INT, IsInline: BOOLEAN, Id: STRING>>. |	No |	None |
+| attachments |	string	The 'FileAttachment' and 'ItemAttachment' attachments for the message; navigation property. *Format:* `ARRAY<STRUCT<LastModifiedDateTime: STRING, Name: STRING, ContentType: STRING, Size: INT, IsInline: BOOLEAN, Id: STRING>>.` |	No |	None |
 | bodyPreview	| string |	The preview of the message associated with the event in text format. |	No |	None |
-| locations |	string |	The locations where the event is held or attended from. The location and locations properties always correspond with each other. *Format:* ARRAY<STRUCT<DisplayName: STRING, Address: STRUCT<Street: STRING, City: STRING, State: STRING, CountryOrRegion: STRING, PostalCode: STRING>, Coordinates: STRUCT<Altitude: DOUBLE, Latitude: DOUBLE, Longitude: DOUBLE, Accuracy: DOUBLE, AltitudeAccuracy: DOUBLE>, LocationEmailAddress: STRING, LocationUri: STRING, LocationType: STRING, UniqueId: STRING, UniqueIdType: STRING>>. |	No |	None |
+| locations |	string |	The locations where the event is held or attended from. The location and locations properties always correspond with each other. *Format:* `ARRAY<STRUCT<DisplayName: STRING, Address: STRUCT<Street: STRING, City: STRING, State: STRING, CountryOrRegion: STRING, PostalCode: STRING>, Coordinates: STRUCT<Altitude: DOUBLE, Latitude: DOUBLE, Longitude: DOUBLE, Accuracy: DOUBLE, AltitudeAccuracy: DOUBLE>, LocationEmailAddress: STRING, LocationUri: STRING, LocationType: STRING, UniqueId: STRING, UniqueIdType: STRING>>.` |	No |	None |
 | onlineMeetingUrl |	string |	URL for an online meeting. The property is set only when an organizer specifies an event as an online meeting such as a Teams meeting. |	No	| None |
 | seriesMasterId |	string |	The ID for the recurring series master item, if this event is part of a recurring series. |	No |	None |
 | originalStart |	datetime |	The start time that was set when the event was created in UTC time. |	No |	None |
