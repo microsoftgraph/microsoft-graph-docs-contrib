@@ -41,17 +41,16 @@ Mailbox folders can contain messages and other folders created by users.
 
 | Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
 | ----------- | ----------- | ----------- | ----------- | ----------- |
-Id	string	The mailFolder's unique identifier.	No	None
-DisplayName	string	The mailFolder's display name.	No  	None
-ParentFolderId	string	The unique identifier for the mailFolder's parent mailFolder.	No  	None
-ChildFolderCount	int32	The number of immediate child mailFolders in the current mailFolder.	No  	None
-UnreadItemCount	int32	The number of items in the mailFolder marked as unread.	No	None
-TotalItemCount	int32	The number of items in the mailFolder.	No  	None
-ChildFolders	string	The collection of child folders in the mailFolder.	No  	None
-ODataType	string	Data type of the current folder	No	None
-puser	string	User id	No  	None
-ptenant	string  	Tenant id	No  	None
-
+| Id	| string |	The mailFolder's unique identifier. |	No	| None |
+| DisplayName |	string |	The mailFolder's display name. |	No |  	None |
+| ParentFolderId	| string |	The unique identifier for the mailFolder's parent mailFolder.	| No |  	None |
+| ChildFolderCount |	int32 |	The number of immediate child mailFolders in the current mailFolder. |	No |  	None |
+| UnreadItemCount |	int32 |	The number of items in the mailFolder marked as unread.	| No |	None |
+| TotalItemCount |	int32 |	The number of items in the mailFolder. |	No |  	None |
+| ChildFolders |	string |	The collection of child folders in the mailFolder. |	No |  	None |
+| ODataType |	string |	Data type of the current folder. |	No |	None |
+| puser |	string |	User id. |	No |  	None |
+| ptenant |	string |  Tenant id. |	No |  	None |
 
 ## JSON representation
 
