@@ -46,13 +46,13 @@ The TeamChat_v2 dataset can be joined with Teams datasets, the User dataset and 
 | Subject | string |  The subject of the teams message. | 	No | 	None | 
 | BodyPreview | string |  The first 255 characters of the teams message body. It is text format. | 	No	|  None | 
 | Importance | 	string	|  The importance of the teams message. *Allowed values:* Low = 0, Normal = 1, High = 2. | 	No | 	None | 
-| Body | string	|  The body of the teams message. It can be in HTML or text format. *Format:* STRUCT<ContentType: INT32, Content: STRING>. | No | 	None | 
-| Sender | 	string | The account that is actually used to generate the teams message. *Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>. | 	No	|  None | 
-| From |  string | The mailbox owner and sender of the teams message. *Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>. | 	No |  None | 
-| ToRecipients	|  string | The To recipients for the teams message. *Format:* ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>>. |  No | 	None | 
+| Body | string	|  The body of the teams message. It can be in HTML or text format. *Format:* `STRUCT<ContentType: INT32, Content: STRING>.` | No | 	None | 
+| Sender | 	string | The account that is actually used to generate the teams message. *Format:* `STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>.` | 	No	|  None | 
+| From |  string | The mailbox owner and sender of the teams message. *Format:* `STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>.` | 	No |  None | 
+| ToRecipients	|  string | The To recipients for the teams message. *Format:* `ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>>.` |  No | 	None | 
 | ReplyTo |  string | The email addresses to use when replying. *Format:* ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>>. | No | 	None | 
 | Flag | string | 	The flag value that indicates the status, start date, due date, or completion date for the teams message. | No | 	None | 
-| Attachments	|  string | The 'FileAttachment' and 'ItemAttachmens' attachments for the message. *Format:* ARRAY<STRUCT<LastModifiedDateTime: STRING, Name: STRING, ContentType: STRING, Size: INT, IsInline: BOOLEAN, Id: STRING>>. |  No | None | 
+| Attachments	|  string | The 'FileAttachment' and 'ItemAttachmens' attachments for the message. *Format:* `ARRAY<STRUCT<LastModifiedDateTime: STRING, Name: STRING, ContentType: STRING, Size: INT, IsInline: BOOLEAN, Id: STRING>>.` |  No | None | 
 | ThreadId | string | 	Teams meeting 'thread Id' for correlating with messages and chats. | 	No | 	None | 
 | ThreadType | 	string |  Thread type defined from chat service. *Allowed values:* chat, topic, space, meeting, sfbInteropchat, and others. | 	No |  None | 
 | puser |  string | User id. | 	No |  None | 
