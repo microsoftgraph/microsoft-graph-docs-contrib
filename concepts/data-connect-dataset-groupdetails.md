@@ -9,11 +9,11 @@ ms.custom: datasets:dataset-name
 
 # Microsoft Graph Data Connect GroupDetails_v0 dataset
 
-## Description
-
 The GroupDetails_v0 dataset represents the Azure Active Directory (Azure AD) groups data for a tenant, such as Microsoft 365 groups or a security group. 
 
 ## Scenarios
+
+The following are business scenarios that you can answer with this dataset:
 
 - Generate analytics for groups created by all the users based on creation date.
 - Analyze groups that got expired or deleted in a particular time span.
@@ -22,6 +22,8 @@ The GroupDetails_v0 dataset represents the Azure Active Directory (Azure AD) gro
 - Understand geographic location preferences set for storing group’s data, such as eails, files, and so on.
 
 ## Questions
+
+The following are examples of questions that you can answer with this dataset:
 
 - How many groups were created for the tenant in a time range?
 - What are the unique types of groups that were created?
@@ -47,7 +49,6 @@ The GroupDetails_v0 dataset can be joined with the GroupOwners_v0 and GroupMembe
   - Mail-enabled security groups
   - Distribution groups
 - Only Microsoft 365 and security groups can be managed by the tenant users. Mail-enabled security groups and distribution groups are read-only through Microsoft Graph.
-
 
 ## Schema
 
