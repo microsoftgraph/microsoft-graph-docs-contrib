@@ -47,7 +47,7 @@ The TeamsStandardChannelMessages_v0 dataset can be joined to other Teams dataset
 | ConversationId |	string |	The ID of the conversation the email belongs to. |	No |	None |
 | IsRead |	boolean |	Indicates whether the message has been read. |	No	| None |
 | Sender	| string |	The account that is actually used to generate the teams message. *Format:* `STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>.` |	No |	None |
-| ReplyTo	string |	The email addresses to use when replying. *Format:* `ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>>.`  |	No |	None |
+| ReplyTo	| string |	The email addresses to use when replying. *Format:* `ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>>.`  |	No |	None |
 | Flag | string | The flag value that indicates the status, start date, due date, or completion date for the teams message. |	No | None |
 | Attachments |	string |	List of attachments on the message. |	No |	None |
 | ODataType |	string |	Data type of the current item. |	No |	None |
