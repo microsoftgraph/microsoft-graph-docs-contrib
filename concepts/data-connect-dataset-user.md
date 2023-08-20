@@ -9,11 +9,11 @@ ms.custom: datasets:dataset-name
 
 # Microsoft Graph Data Connect User_v1 dataset
 
-## Description
-
 The User_v1 dataset provides user details stored for all the Azure Active Directory (Azure AD) user accounts that are created for a particular tenant.
  
 ## Scenarios
+
+The following are business scenarios that you can answer with this dataset:
 
 - Analyze users' information based on country, state, city, department, job title, skills, experience, and age group.
 - Identify the last time individual users were synced in the on-premises directory.
@@ -22,6 +22,8 @@ The User_v1 dataset provides user details stored for all the Azure Active Direct
 - Generate a list of users including names, mail, business phone, job title, work location, birthdate, address, and so on.
 
 ## Questions
+
+The following are examples of questions that you can answer with this dataset:
 
 - Which users work in a particular office location/country/state/city?
 - How many users have a particular language as their preferred language?
