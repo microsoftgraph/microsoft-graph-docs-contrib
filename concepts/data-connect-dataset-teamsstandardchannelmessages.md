@@ -36,7 +36,7 @@ The TeamsStandardChannelMessages_v0 dataset can be joined to other Teams dataset
 | Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | Id |	string | Unique ID for the Teams channel message, formatted according to RFC2822. |	No |	None |
-| CreatedDateTime |	datetime	| UTC | Formatted created date time of message. |	Yes |	Date |
+| CreatedDateTime |	datetime	| UTC formatted created date time of message. |	Yes |	Date |
 | LastModifiedDateTime | datetime |	UTC formatted last modified date time of message. |	Yes | Date |
 | SentDateTime |	datetime |	UTC formatted sent date time of message. | Yes | Date |
 | Subject | string |	Subject of the message or announcement.	| No	| None |
@@ -46,8 +46,8 @@ The TeamsStandardChannelMessages_v0 dataset can be joined to other Teams dataset
 | ParentFolderId |	string |	The unique identifier for the teams message parent folder. |	No |	None |
 | ConversationId |	string |	The ID of the conversation the email belongs to. |	No |	None |
 | IsRead |	boolean |	Indicates whether the message has been read. |	No	| None |
-| Sender	| string |	The account that is actually used to generate the teams message. *Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>. |	No |	None |
-| ReplyTo	string |	The email addresses to use when replying. *Format:* ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>>.  |	No |	None |
+| Sender	| string |	The account that is actually used to generate the teams message. *Format:* `STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>.` |	No |	None |
+| ReplyTo	string |	The email addresses to use when replying. *Format:* `ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>>.`  |	No |	None |
 | Flag | string | The flag value that indicates the status, start date, due date, or completion date for the teams message. |	No | None |
 | Attachments |	string |	List of attachments on the message. |	No |	None |
 | ODataType |	string |	Data type of the current item. |	No |	None |
