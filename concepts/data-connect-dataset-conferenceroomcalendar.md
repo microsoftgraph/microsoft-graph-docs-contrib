@@ -46,8 +46,7 @@ The ConferenceRoomCalendar_v0 dataset can be joined with relevant events categor
 | allowNewTimeProposals |	boolean	 | Indicates if the meeting organizer allows invitees to propose a new time when responding. |	No | None |
 | createdDateTime |	datetime |	The date and time that the event was created. |	No |	None |
 | lastModifiedDateTime |	datetime |	The date and time that the event was last modified. |	No |	None |
-| changeKey |	string |	Identifies the version of the event object. Every time the event is changed, 
-ChangeKey' changes as well. This allows Exchange to apply changes to the correct version of the object. |	No |	None |
+| changeKey |	string |	Identifies the version of the event object. Every time the event is changed, 'ChangeKey' changes as well. This allows Exchange to apply changes to the correct version of the object. |	No |	None |
 | categories |	string |	The categories associated with the event. *Format:* `ARRAY<STRING>.` |	No |	None |
 | originalStartTimeZone |	string |	The start time zone that was set when the event was created. See 'DateTimeTimeZone' for a list of valid time zones. |	No |	None |
 | originalEndTimeZone |	string |	The end time zone that was set when the event was created. See 'DateTimeTimeZone' for a list of valid time zones. |	No |	None |
@@ -77,7 +76,7 @@ ChangeKey' changes as well. This allows Exchange to apply changes to the correct
 | attendees |	string |	The collection of attendees for the event. *Format:* `ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>, Status: STRUCT<Response: STRING, Time: STRING>, Type: STRING>>.` |	No |	None |
 | organizer |	string |	The organizer of the event. *Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>. |	No |	None |
 | webLink |	string |	The URL to open the event in Microsoft Outlook web app. |	No |	None |
-| attachments |	string	The 'FileAttachment' and 'ItemAttachment' attachments for the message; navigation property. *Format:* `ARRAY<STRUCT<LastModifiedDateTime: STRING, Name: STRING, ContentType: STRING, Size: INT, IsInline: BOOLEAN, Id: STRING>>.` |	No |	None |
+| attachments |	string	| The 'FileAttachment' and 'ItemAttachment' attachments for the message; navigation property. *Format:* `ARRAY<STRUCT<LastModifiedDateTime: STRING, Name: STRING, ContentType: STRING, Size: INT, IsInline: BOOLEAN, Id: STRING>>.` |	No |	None |
 | bodyPreview	| string |	The preview of the message associated with the event in text format. |	No |	None |
 | locations |	string |	The locations where the event is held or attended from. The location and locations properties always correspond with each other. *Format:* `ARRAY<STRUCT<DisplayName: STRING, Address: STRUCT<Street: STRING, City: STRING, State: STRING, CountryOrRegion: STRING, PostalCode: STRING>, Coordinates: STRUCT<Altitude: DOUBLE, Latitude: DOUBLE, Longitude: DOUBLE, Accuracy: DOUBLE, AltitudeAccuracy: DOUBLE>, LocationEmailAddress: STRING, LocationUri: STRING, LocationType: STRING, UniqueId: STRING, UniqueIdType: STRING>>.` |	No |	None |
 | onlineMeetingUrl |	string |	URL for an online meeting. The property is set only when an organizer specifies an event as an online meeting such as a Teams meeting. |	No	| None |
