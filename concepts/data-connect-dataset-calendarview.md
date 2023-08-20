@@ -7,7 +7,7 @@ ms.prod: "data-connect"
 ms.custom: datasets:dataset-name
 ---
 
-# Microsoft Graph Data Connect TeamsStandardChannelMessages_v0 dataset
+# Microsoft Graph Data Connect CalendarView_v0 dataset
 
 The CalendarView_v0 dataset provides occurrences, exceptions and single instances of events, based on the calendar view from users' calendars.
  

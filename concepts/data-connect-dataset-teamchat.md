@@ -38,6 +38,7 @@ The TeamChat_v1 dataset can be joined with Teams datasets, the User dataset and 
 
 ## Schema
 
+
 | Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | Id | 	string | 	The unique identifier of the message. | No | 	None | 

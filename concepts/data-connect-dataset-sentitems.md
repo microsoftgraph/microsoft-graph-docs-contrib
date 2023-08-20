@@ -35,6 +35,7 @@ The SentItems_v0 dataset can be joined with datasets, such as Inbox, MailFolder,
 
 ## Schema
 
+
 | Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | Id |	string |	The unique identifier of the message. |	No |	None |

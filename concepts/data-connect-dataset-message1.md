@@ -38,6 +38,7 @@ The Message_v1 dataset can be joined with User datasets, Mail folder datasets an
 
 ## Schema
 
+
 | Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | receivedDateTime |	datetime |	The date and time the message was received. |	Yes |	Date |

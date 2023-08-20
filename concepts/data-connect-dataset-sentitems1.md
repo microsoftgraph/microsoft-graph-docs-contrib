@@ -36,6 +36,7 @@ The SentItems_v1 dataset can be joined with datasets, such as Inbox, MailFolder,
 
 ## Schema
 
+
 | Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
 | ----------- | ----------- | ----------- | ----------- | ----------- |
 | id |	string | The unique identifier of the message. |	No |	None |
@@ -57,7 +58,7 @@ The SentItems_v1 dataset can be joined with datasets, such as Inbox, MailFolder,
 | bccRecipients |	string	| The Bcc recipients for the message. *Format:* `STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>.` |	No |	None |
 | replyTo |	string | The email addresses to use when replying. *Format:* `STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>.` |	No |	None |
 | conversationId |	string |	The ID of the conversation that the email belongs to. |	No |	None |
-| uniqueBody |	string	| The body of the message that is unique to the conversation.Format: `STRUCT<ContentType: INT32, Content: STRING>.` |	No |	None |
+| uniqueBody |	string	| The body of the message that is unique to the conversation. *Format:* `STRUCT<ContentType: INT32, Content: STRING>.` |	No |	None |
 | isDeliveryReceiptRequested |	boolean |	Indicates whether a read receipt is requested for the message. |	No |	None |
 | isReadReceiptRequested |	boolean |	Indicates whether a read receipt is requested for the message. |	No |	None |
 | isRead |	boolean	| Indicates whether the message has been read. |	No | None |
