@@ -9,18 +9,20 @@ ms.custom: datasets:dataset-name
 
 # Microsoft Graph Data Connect TeamsChannelDetails_v0 dataset
 
-## Description
-
 The TeamsChannelDetails_v0 dataset provides a list of Microsoft Teams channels. Teams in Microsoft Teams are made up of channels, which are the conversations that users have with their teammates. Each channel is dedicated to a specific topic, department, or project. 
 
 Channels are where the work actually gets done; where text, audio, and video conversations open to the whole team happen; where files are shared; and where tabs are added. TeamsChannelDetails dataset provides details of all the conversation channels created on Microsoft Teams for a particular tenant.
 
 ## Scenarios
 
+The following are business scenarios that you can answer with this dataset:
+
 - Analyze Microsoft Teams channels that are created in a particular time range.
 - Analyze all the web URLs of all the channels for a security audit of an organization.
 
 ## Questions
+
+The following are examples of questions that you can answer with this dataset:
 
 - How many Microsoft Teams channels are created for a tenant?
 - When (date and time) was a particular channel created?
