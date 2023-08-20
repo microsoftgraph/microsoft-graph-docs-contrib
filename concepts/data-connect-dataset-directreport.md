@@ -9,16 +9,18 @@ ms.custom: datasets:dataset-name
 
 # Microsoft Graph Data Connect DirectReport_v0 dataset
 
-## Description
-
 The DirectReport_v0 dataset provides details of all the direct reports for your users. 
 
 ## Scenarios
+
+The following are business scenarios that you can answer with this dataset:
 
 -	Analyze direct reporting members of users based on job title, city, address, office location and other details.
 -	Analyze the direct reports as per the age group, language preference and other details.
 
 ## Questions
+
+The following are examples of questions that you can answer with this dataset:
 
 -	Who are the direct reports of a user?
 -	What is the address, email, business phone of direct reports of a user?
