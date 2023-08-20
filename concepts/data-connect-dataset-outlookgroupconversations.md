@@ -41,8 +41,7 @@ The OutlookGroupConversations_v0 dataset can be joined with Mail, Message, Mail 
 
 | Name  | Type  |  Description  |  FilterOptions  |  IsDateFilter  | 
 | ----------- | ----------- | ----------- | ----------- | ----------- |
-| Attachments |	string |	All attachments in a message. Contains metadata of attachments, such as LastModifiedDateTime, Name, 
-| ContentType, Size, IsInline, SourceUrl, and ProviderType. The actual attachment files are not included. |	No |	None |
+| Attachments |	string |	All attachments in a message. Contains metadata of attachments, such as LastModifiedDateTime, Name, ContentType, Size, IsInline, SourceUrl, and ProviderType. The actual attachment files are not included. |	No |	None |
 | BodyPreview	| string	| The first 255 characters of the message body content. |	No |	None |
 | CcRecipients |	string |	The Cc: recipients for the message. |	No |	None |
 | ConversationId |	string |	The ID of the conversation that the email belongs to. |	No |	None |

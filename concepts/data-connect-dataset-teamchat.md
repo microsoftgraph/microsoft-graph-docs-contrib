@@ -44,7 +44,7 @@ The TeamChat_v1 dataset can be joined with Teams datasets, the User dataset and 
 | CreatedDateTime | 	datetime | 	The date and time the message was created. |  Yes | Date | 
 | LastModifiedDateTime | 	datetime | 	The date and time the message was last changed. |  Yes | Date | 
 | ChangeKey | 	string	 | The version of the message. | 	No | 	None | 
-| Categories | 	string | 	The categories associated with the message. *Format:* ARRAY<STRING>. | 	No | 	None | 
+| Categories | 	string | 	The categories associated with the message. *Format:* `ARRAY<STRING>.` | 	No | 	None | 
 | ReceivedDateTime | 	datetime | 	The date and time the teams message was received. |  Yes | 	Date | 
 | SentDateTime | 	datetime | 	The date and time the teams message was sent. |  Yes | 	Date | 
 | HasAttachments | 	boolean | 	Indicates |  whether the teams message is an attachment. | 	No |  None | 
@@ -57,13 +57,13 @@ The TeamChat_v1 dataset can be joined with Teams datasets, the User dataset and 
 | ConversationIndex |  string | Indicates the position of the message within the conversation. |  No | None | 
 | IsRead | 	boolean |  Indicates whether the message has been read. | 	No | None | 
 | IsDraft |	boolean |  Indicates whether the message is a draft. A message is a draft if it hasn’t been sent yet. |	No |	None |
-| Body |	string |  The body of the teams message. It can be in HTML or text format. *Format:* STRUCT<ContentType: INT32, Content: STRING>. |	No |  None |
-| Sender |	string |  The account that is actually used to generate the teams message. *Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>.	| No |	None |
-| From |	string |  The mailbox owner and sender of the teams message. *Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>. |	No |  None |
-| ToRecipients | string	 | The To recipients for the teams message. *Format:* ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>>. |	No |  None |
-| ReplyTo |	string	| The email addresses to use when replying. *Format:* ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>>. |	No |  None |
+| Body |	string |  The body of the teams message. It can be in HTML or text format. *Format:* `STRUCT<ContentType: INT32, Content: STRING>.` |	No |  None |
+| Sender |	string |  The account that is actually used to generate the teams message. *Format:* `STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>.``	| No |	None |
+| From |	string |  The mailbox owner and sender of the teams message. *Format:* `STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>.` |	No |  None |
+| ToRecipients | string	 | The To recipients for the teams message. *Format:* `ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>>.` |	No |  None |
+| ReplyTo |	string	| The email addresses to use when replying. *Format:* `ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>>.` |	No |  None |
 | Flag	| string |	The flag value that indicates the status, start date, due date, or completion date for the teams message. |	No | None |
-| Attachments |	string | The 'FileAttachment' and 'ItemAttachment' attachments for the message. *Format:* ARRAY<STRUCT<LastModifiedDateTime: STRING, Name: STRING, ContentType: STRING, Size: INT, IsInline: BOOLEAN, Id: STRING>>.  | No |	None |
+| Attachments |	string | The 'FileAttachment' and 'ItemAttachment' attachments for the message. *Format:* `ARRAY<STRUCT<LastModifiedDateTime: STRING, Name: STRING, ContentType: STRING, Size: INT, IsInline: BOOLEAN, Id: STRING>>.`  | No |	None |
 | ODataType	 | string |	Data type of the current folder. |	No |	None |
 | puser |	string |  User id. |	No |  None |
 | ptenant |	string |   Tenant id. | No  |  None |

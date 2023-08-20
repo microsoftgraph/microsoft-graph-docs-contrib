@@ -47,14 +47,14 @@ The Message_v0 dataset can be joined with User datasets, Mail folder datasets an
 | Subject |	string |	The subject of the message. |	No |	None |
 | Importance | string |	The importance of the message. *Allowed values:* Low = 0, Normal = 1, High = 2. |	No |	None |
 | ParentFolderId |	string	| The unique identifier for the message's parent folder. |	No |	None |
-| Sender |	string |	The account that is actually used to generate the message. | *Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>. |	No |	None |
-| From |	string |	The mailbox owner and sender of the message. *Format:* STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>. |	No |	None |
-| ToRecipients |	string |	The To recipients for the message. *Format:* ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>>. | No |	None |
-| CcRecipients |	string |	The Cc recipients for the message. *Format:* ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>>. |	No |	None |
-| BccRecipients |	string |	The Bcc recipients for the message. *Format:* ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>>. |	No |	None |
-| ReplyTo |	string |	The email addresses to use when replying. *Format:* ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>>. |	No |	None |
+| Sender |	string |	The account that is actually used to generate the message. | *Format:* ``STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>.` |	No |	None |
+| From |	string |	The mailbox owner and sender of the message. *Format:* `STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>.` |	No |	None |
+| ToRecipients |	string |	The To recipients for the message. *Format:* `ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>>.` | No |	None |
+| CcRecipients |	string |	The Cc recipients for the message. *Format:* `ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>>.` |	No |	None |
+| BccRecipients |	string |	The Bcc recipients for the message. *Format:* `ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>>.` |	No |	None |
+| ReplyTo |	string |	The email addresses to use when replying. *Format:* `ARRAY<STRUCT<EmailAddress: STRUCT<Name: STRING, Address: STRING>>>.` |	No |	None |
 | ConversationId |	string |	The ID of the conversation the email belongs to. |	No |	None |
-| UniqueBody |	string |	The body of the message that is unique to the conversation. *Format:* STRUCT<ContentType: INT32, Content: STRING>. |	No |	None |
+| UniqueBody |	string |	The body of the message that is unique to the conversation. *Format:* `STRUCT<ContentType: INT32, Content: STRING>.` |	No |	None |
 | IsDeliveryReceiptRequested |	boolean |	Indicates whether a read receipt is requested for the message. |	No |	None |
 | IsReadReceiptRequested |	boolean |	Indicates whether a read receipt is requested for the message. |	No |	None |
 | IsRead	| boolean |	Indicates whether the message has been read. |	No |	None |
@@ -63,9 +63,9 @@ The Message_v0 dataset can be joined with User datasets, Mail folder datasets an
 | CreatedDateTime |	datetime |	The date and time the message was created. |	Yes |	Date |
 | LastModifiedDateTime |	datetime |	The date and time the message was last changed. |	Yes |	Date |
 | ChangeKey |	string |	The version of the message. |	No |	None |
-| Categories |	string |	The categories associated with the message. *Format:* ARRAY<STRING>. |	No |	None |
+| Categories |	string |	The categories associated with the message. *Format:* `ARRAY<STRING>.` |	No |	None |
 | Id |	string |	The unique identifier of the message. |	No |	None |
-| Attachments |	string |	The 'FileAttachment' and 'ItemAttachment' attachments for the message; Navigation property. *Format:* ARRAY<STRUCT<LastModifiedDateTime: STRING, Name: STRING, ContentType: STRING, Size: INT, IsInline: BOOLEAN, Id: STRING>>.	| No |	None |
+| Attachments |	string |	The 'FileAttachment' and 'ItemAttachment' attachments for the message; Navigation property. *Format:* `ARRAY<STRUCT<LastModifiedDateTime: STRING, Name: STRING, ContentType: STRING, Size: INT, IsInline: BOOLEAN, Id: STRING>>.`	| No |	None |
 | ODataType |	string |	Data type of the current folder. |	No |	None |
 | puser |	string |	User id. |	No   |	None |
 | ptenant |	string  | 	Tenant id. |	No |  	None |
