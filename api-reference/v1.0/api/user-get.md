@@ -385,6 +385,99 @@ Content-type: application/json
 }
 ```
 
+### Example 5: Get the custom security attribute assignments for a user
+
+The following example shows how to get the custom security attribute assignments for a user.
+
+Attribute #1
+
+- Attribute set: `Engineering`
+- Attribute: `Project`
+- Attribute data type: Collection of Strings
+- Attribute value: `["Baker","Cascade"]`
+
+Attribute #2
+
+- Attribute set: `Engineering`
+- Attribute: `CostCenter`
+- Attribute data type: Collection of Integers
+- Attribute value: `[1001]`
+
+Attribute #3
+
+- Attribute set: `Engineering`
+- Attribute: `Certification`
+- Attribute data type: Boolean
+- Attribute value: `true`
+
+Attribute #4
+
+- Attribute set: `Marketing`
+- Attribute: `EmployeeId`
+- Attribute data type: String
+- Attribute value: `"QN26904"`
+
+To get custom security attribute assignments, the calling principal must be assigned the Attribute Assignment Reader or Attribute Assignment Administrator role and must be granted the *CustomSecAttributeAssignment.Read.All* or *CustomSecAttributeAssignment.ReadWrite.All* permission.
+
+For more examples of custom security attribute assignments, see [Examples: Assign, update, list, or remove custom security attribute assignments using the Microsoft Graph API](/graph/custom-security-attributes-examples).
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "get_user_customsecurityattributes"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users/{id}?$select=customSecurityAttributes
+```
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(customSecurityAttributes)/$entity",
+    "customSecurityAttributes": {
+        "Marketing": {
+            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+            "EmployeeId": "QN26904"
+        },
+        "Engineering": {
+            "@odata.type": "#microsoft.graph.customSecurityAttributeValue",
+            "Project@odata.type": "#Collection(String)",
+            "Project": [
+                "Baker",
+                "Cascade"
+            ],
+            "CostCenter@odata.type": "#Collection(Int32)",
+            "CostCenter": [
+                1001
+            ],
+            "Certification": true
+        }
+    }
+}
+```
+
+If there are no custom security attributes assigned to the user or if the calling principal does not have access, the following will be the response:
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(customSecurityAttributes)/$entity",
+    "customSecurityAttributes": null
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

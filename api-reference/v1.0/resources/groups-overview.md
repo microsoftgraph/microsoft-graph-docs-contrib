@@ -127,7 +127,7 @@ Content-type: application/json
 
 ## Group membership
 
-Not all object types can be members of both Microsoft 365 and security groups.
+Membership to groups can be statically assigned or dynamic. Not all object types can be members of both Microsoft 365 and security groups.
 
 [!INCLUDE [groups-allowed-member-types](../../../concepts/includes/groups-allowed-member-types.md)]
 
