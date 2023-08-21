@@ -34,7 +34,7 @@ The following are business scenarios that you can answer with this dataset:
 
 ## Joining with other datasets
 
-The Message_v0 dataset can be joined with User datasets, Mail folder datasets and other relevant datasets.
+The Message_v0 dataset can be joined with User datasets, Mail folder datasets, and other relevant datasets.
 
 ## Schema
 
