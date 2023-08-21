@@ -25,6 +25,22 @@
           "ChangeType": "Addition",
           "Description": "Added the [undoDelete](https://learn.microsoft.com/en-us/graph/api/deletedchat-undodelete.md?view=graph-rest-beta) method to the [deletedChat](https://learn.microsoft.com/en-us/graph/api/resources/deletedChat?view=graph-rest-beta) resource.",
           "Target": "deletedChat"
+        },
+        {
+          "Id": "2161c85f-d15f-4b31-8c29-774d4eaec8a8",
+          "ApiChange": "Method",
+          "ChangedApiName": "delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/chat-delete.md?view=graph-rest-beta) method to the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "deletedChat"
+        },
+        {
+          "Id": "2161c85f-d15f-4b31-8c29-774d4eaec8a8",
+          "ApiChange": "Method",
+          "ChangedApiName": "get",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/deletedchat-get.md?view=graph-rest-beta) method to the [deletedChat](https://learn.microsoft.com/en-us/graph/api/resources/deletedChat?view=graph-rest-beta) resource.",
+          "Target": "deletedChat"
         }
       ],
       "Id": "2161c85f-d15f-4b31-8c29-774d4eaec8a8",
