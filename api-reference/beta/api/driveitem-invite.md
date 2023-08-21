@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Sends a sharing invitation for a DriveItem."
 ms.date: 09/10/2017
 title: Send an invite to access an item
@@ -179,7 +179,7 @@ When inviting multiple recipients, it's possible for the notification to succeed
 In this case, the service returns a partial success response with an HTTP status code of 207.
 When partial success is returned, the response for each failed recipient will contain an `error` object with information about what went wrong and how to fix it.
 
-Here is an example of the partial response.  
+Here is an example of the partial response.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
@@ -207,8 +207,8 @@ Content-type: application/json
         "message":"Account verification needed to unblock sending emails.",
         "localizedMessage": "Kontobestätigung erforderlich, um das Senden von E-Mails zu entsperren.",
         "fixItUrl":"http://g.live.com/8SESkydrive/VerifyAccount",
-        "innererror":{  
-          "code":"accountVerificationRequired" 
+        "innererror":{
+          "code":"accountVerificationRequired"
         }
       }
     },
@@ -231,7 +231,7 @@ Content-type: application/json
 }
 ```
 ### SendNotification errors
-The following are some additional errors that your app might encounter within the nested `innererror` objects when sending notification fails. 
+The following are some additional errors that your app might encounter within the nested `innererror` objects when sending notification fails.
 Apps are not required to handle these.
 
 | Code                           | Description

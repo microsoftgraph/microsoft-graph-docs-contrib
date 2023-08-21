@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Removes an item from a list."
 ms.date: 09/11/2017
 title: Delete an entry from a SharePoint list
