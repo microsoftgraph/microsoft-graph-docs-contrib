@@ -8798,6 +8798,8 @@ items:
                     href: api/chat-post-pinnedmessages.md
                   - name: Unpin message
                     href: api/chat-delete-pinnedmessages.md
+                  - name: Delete
+                    href: api/chat-delete.md
               - name: Chat message
                 href: resources/chatmessage.md
                 items:
@@ -8844,6 +8846,13 @@ items:
                     href: api/chat-post-pinnedmessages.md
                   - name: Unpin message
                     href: api/chat-delete-pinnedmessages.md
+              - name: Deleted chat
+                href: resources/deletedchat.md
+                items:
+                  - name: Get
+                    href: api/deletedchat-get.md
+                  - name: Undodelete
+                    href: api/deletedchat-undodelete.md
               - name: Team
                 href: resources/team.md
                 items:
