@@ -150,6 +150,24 @@
     },
     {
       "ChangeList": [
+        {
+          "Id": "8f05b5ef-fbdd-4990-a11f-ed8493585072",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customSecurityAttributeValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [customSecurityAttributeValue](https://learn.microsoft.com/en-us/graph/api/resources/customSecurityAttributeValue?view=graph-rest-1.0) resource type and associated methods.",
+          "Target": "customSecurityAttributeValue"
+        }
+      ],
+      "Id": "8f05b5ef-fbdd-4990-a11f-ed8493585072",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-08-18T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
             {
               "Id": "f1a2366e-c693-4a6d-8783-370f38cd9660",
               "ApiChange": "Property",

@@ -10,7 +10,7 @@ ms.custom: scenarios:getting-started
 
 Microsoft Graph Data Connect has a simplified onboarding experience that features an enhanced app registration and app authorization experience.
 
-This article describes the simplified onboarding experience, in which data transfers are authorized before the pipelines run. Customers who currently use the Privileged Access Management (PAM) authorization model can migrate to the simplified experience; for details, see [Existing customer migration](graph/existing-customer-migration).
+This article describes the simplified onboarding experience, in which data transfers are authorized before the pipelines run. Customers who currently use the Privileged Access Management (PAM) authorization model can migrate to the simplified experience; for details, see [Existing customer migration](/graph/existing-customer-migration).
 
 The following are the steps to onboard:
 
