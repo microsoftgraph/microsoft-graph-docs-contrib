@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. 
+The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call.
 This method only supports files up to 4MB in size.
 
 To upload large files see [Upload large files with an upload session](driveitem-createuploadsession.md).
@@ -28,7 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Files.ReadWrite, Files.ReadWrite.All    |
 |Application | Files.ReadWrite.All, Sites.ReadWrite.All |
 
-## HTTP request (to replace an existing item)
+## HTTP request
+
+### To replace an existing item
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,7 +42,7 @@ PUT /sites/{site-id}/drive/items/{item-id}/content
 PUT /users/{user-id}/drive/items/{item-id}/content
 ```
 
-## HTTP request (to upload a new file)
+### To upload a new file
 
 <!-- { "blockType": "ignored" } -->
 

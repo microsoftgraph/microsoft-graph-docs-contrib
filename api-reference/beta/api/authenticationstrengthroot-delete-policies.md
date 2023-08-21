@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /policies/authenticationStrengthPolicies/{authenticationStrengthPolicyId}/$ref
+DELETE /policies/authenticationStrengthPolicies/{authenticationStrengthPolicyId}
 ```
 
 ## Request headers

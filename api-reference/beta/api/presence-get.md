@@ -24,7 +24,7 @@ One of the following permissions is required to call these APIs. To learn more, 
 | Delegated (personal Microsoft account) | Not Supported.                        |
 | Application                            | Not Supported.                        |
 
-## HTTP Requests
+## HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/presence
@@ -107,7 +107,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 1574
 
-{  
+{
   "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
   "availability": "Available",
   "activity": "Available",

@@ -26,8 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/items/{id}/workbook/tables/$/add
-POST /me/drive/root:/{item-path}:/workbook/tables/$/add
+POST /me/drive/items/{id}/workbook/tables/add
+POST /me/drive/root:/{item-path}:/workbook/tables/add
 
 ```
 ## Request headers
@@ -58,7 +58,7 @@ Here is an example of the request.
   "name": "create_table_from_workbook"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/$/add
+POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/add
 Content-type: application/json
 
 {

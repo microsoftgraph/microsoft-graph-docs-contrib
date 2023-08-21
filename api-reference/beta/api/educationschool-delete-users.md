@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /education/schools/{id}/users/{userId}/$ref
+DELETE /education/schools/{id}/users/{userId}
 ```
 
 ## Request headers
@@ -76,7 +76,7 @@ DELETE https://graph.microsoft.com/beta/education/schools/10001/users/13006
 
 ### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
 <!-- {
   "blockType": "response"

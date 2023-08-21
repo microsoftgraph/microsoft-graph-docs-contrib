@@ -35,7 +35,7 @@ Fetch tasks for a lifecycle workflow.
 }
 -->
 ``` http
-GET /identityGovernance/lifecycleWorkflows/workflow/{workflowId}/tasks/{taskId}
+GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/tasks/{taskId}
 ```
 
 Fetch tasks for a lifecycle workflow version.
