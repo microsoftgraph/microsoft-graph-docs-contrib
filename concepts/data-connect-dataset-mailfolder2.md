@@ -31,7 +31,7 @@ The following are examples of questions that you can answer with this dataset:
 
 ## Joining with other datasets
 
-The Mailfolder_v2 dataset can be joined with relevant entity datasets such as *User*, *Mail* and others.
+The Mailfolder_v2 dataset can be joined with relevant entity datasets, such as User, Mail, and others.
 
 ## Definitions
 
