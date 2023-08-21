@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|AccessReview.ReadWrite.All|
 
-To generate the link, the signed-in user must be either the creator of the associated review history definition, or assigned the *Global Administrator* or *Global Reader* [directory roles](/azure/active-directory/roles/permissions-reference).
+[!INCLUDE [rbac-access-reviews-apis-write](../includes/rbac-for-apis/rbac-access-reviews-apis-write.md)]
 
 ## HTTP request
 
