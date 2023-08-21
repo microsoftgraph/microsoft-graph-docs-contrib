@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Delete the photo for a group or user in a tenant. 
+Delete the photo for the signed-in user or the specified group. 
 
 
 ## Permissions
