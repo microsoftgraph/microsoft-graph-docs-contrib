@@ -28,7 +28,7 @@ Describe installation result details for a partner agent on a Cloud PC.
 
 |Member|Description|
 |:---|:---|
-|citrix|A third-party-partner named Citrix.|
+|citrix| Indicates that a third-party-partner named Citrix.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 |vMware|A third-party-partner named VMware.|
 
