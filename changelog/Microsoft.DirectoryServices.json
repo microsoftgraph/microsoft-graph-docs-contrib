@@ -3,6 +3,58 @@
     {
       "ChangeList": [
         {
+          "Id": "fb9eeb9e-adf8-43f6-8aee-7a55853c74a5",
+          "ApiChange": "Permission",
+          "ChangedApiName": "OnPremDirectorySynchronization.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `OnPremDirectorySynchronization.Read.All` application permission to the read operations of the [on-premises directory synchronization](https://learn.microsoft.com/en-us/graph/api/resources/onpremisesdirectorysynchronization?view=graph-rest-beta).",
+          "Target": "onPremisesDirectorySynchronization"
+        },
+        {
+          "Id": "fb9eeb9e-adf8-43f6-8aee-7a55853c74a5",
+          "ApiChange": "Permission",
+          "ChangedApiName": "OnPremDirectorySynchronization.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `OnPremDirectorySynchronization.ReadWrite.All` application permission to the read and write operations of the [on-premises directory synchronization](https://learn.microsoft.com/en-us/graph/api/resources/onpremisesdirectorysynchronization?view=graph-rest-beta).",
+          "Target": "onPremisesDirectorySynchronization"
+        }
+      ],
+      "Id": "fb9eeb9e-adf8-43f6-8aee-7a55853c74a5",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-08-03T14:24:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c450f46a-46a4-4198-b81e-8514ee65377f",
+          "ApiChange": "Permission",
+          "ChangedApiName": "OnPremDirectorySynchronization.Read.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `OnPremDirectorySynchronization.Read.All` application permission to the read operations of the [on-premises directory synchronization](https://learn.microsoft.com/en-us/graph/api/resources/onpremisesdirectorysynchronization?view=graph-rest-beta).",
+          "Target": "onPremisesDirectorySynchronization"
+        },
+        {
+          "Id": "c450f46a-46a4-4198-b81e-8514ee65377f",
+          "ApiChange": "Permission",
+          "ChangedApiName": "OnPremDirectorySynchronization.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `OnPremDirectorySynchronization.ReadWrite.All` application permission to the read and write operations of the [on-premises directory synchronization](https://learn.microsoft.com/en-us/graph/api/resources/onpremisesdirectorysynchronization?view=graph-rest-beta).",
+          "Target": "onPremisesDirectorySynchronization"
+        }
+      ],
+      "Id": "c450f46a-46a4-4198-b81e-8514ee65377f",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-03T14:24:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "8d2e4350-d719-4db7-8c66-a48dd89e2375",
           "ApiChange": "Resource",
           "ChangedApiName": "tenantInformation",
@@ -93,6 +145,24 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-07-27T00:00:00.8451905Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8f05b5ef-fbdd-4990-a11f-ed8493585072",
+          "ApiChange": "Resource",
+          "ChangedApiName": "customSecurityAttributeValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [customSecurityAttributeValue](https://learn.microsoft.com/en-us/graph/api/resources/customSecurityAttributeValue?view=graph-rest-1.0) resource type and associated methods.",
+          "Target": "customSecurityAttributeValue"
+        }
+      ],
+      "Id": "8f05b5ef-fbdd-4990-a11f-ed8493585072",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-08-18T00:00:00.000Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
@@ -14219,6 +14289,84 @@
       "CreatedDateTime": "2023-06-19T07:13:01.0506132Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0d0ccba4-794b-46b6-be6b-5761eef57e0c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onPremisesSipInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [onPremisesSipInfo](https://learn.microsoft.com/en-us/graph/api/resources/onPremisesSipInfo?view=graph-rest-beta) resource type.",
+          "Target": "onPremisesSipInfo"
+        },
+        {
+          "Id": "0d0ccba4-794b-46b6-be6b-5761eef57e0c",
+          "ApiChange": "Property",
+          "ChangedApiName": "onPremisesSipInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremisesSipInfo** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "0d0ccba4-794b-46b6-be6b-5761eef57e0c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-14T00:00:00.6681791Z",
+      "WorkloadArea": "Users",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "caa9fb73-da66-4a9e-8ad8-b6aeb478195c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudRealtimeCommunicationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudRealtimeCommunicationInfo](https://learn.microsoft.com/en-us/graph/api/resources/cloudRealtimeCommunicationInfo?view=graph-rest-beta) resource type.",
+          "Target": "cloudRealtimeCommunicationInfo"
+        },
+        {
+          "Id": "caa9fb73-da66-4a9e-8ad8-b6aeb478195c",
+          "ApiChange": "Property",
+          "ChangedApiName": "isSipEnabled",
+          "ChangeType": "Addition",
+          "Description": "Added the **isSipEnabled** property to the [cloudRealtimeCommunicationInfo](https://learn.microsoft.com/en-us/graph/api/resources/cloudRealtimeCommunicationInfo?view=graph-rest-beta) resource.",
+          "Target": "cloudRealtimeCommunicationInfo"
+        },
+        {
+          "Id": "caa9fb73-da66-4a9e-8ad8-b6aeb478195c",
+          "ApiChange": "Property",
+          "ChangedApiName": "cloudRealtimeCommunicationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudRealtimeCommunicationInfo** property to the [user](https://learn.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "caa9fb73-da66-4a9e-8ad8-b6aeb478195c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-14T17:29:23.027316Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    }, 
+    {
+      "ChangeList": [
+        {
+          "Id": "a64b8d10-4143-415b-b851-be687b11005d",
+          "ApiChange": "Property",
+          "ChangedApiName": "requireClientServicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added the **requireClientServicePrincipal** property to the [authenticationBehaviors](https://learn.microsoft.com/en-us/graph/api/resources/authenticationBehaviors?view=graph-rest-beta) resource.",
+          "Target": "authenticationBehaviors"
+        }
+      ],
+      "Id": "a64b8d10-4143-415b-b851-be687b11005d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-16T00:52:03Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
     }
   ]
 }

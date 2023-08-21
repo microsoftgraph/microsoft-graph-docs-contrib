@@ -1,7 +1,7 @@
 ### YamlMime:Tutorial
-title: Build your first Microsoft Graph Data Connect application
+title: Build your first Data Connect application
 metadata:
-  title: Build your first Microsoft Graph Data Connect application
+  title: Build your first Data Connect application
   description: In this tutorial, you'll build your first Microsoft Graph Data Connect application for email metrics.
   audience: Developer
   level: Beginner

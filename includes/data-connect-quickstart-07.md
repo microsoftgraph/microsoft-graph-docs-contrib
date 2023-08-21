@@ -4,11 +4,7 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-You've completed the Microsoft Graph Data Connect tutorial! Please follow the steps below to ensure your JSON file is in your Azure Storage account.
-
-1. Open a browser and navigate to your [Azure portal](https://portal.azure.com/#home).
-
-You've completed the Microsoft Graph Data Connect tutorial! Use the following steps to ensure that your JSON file is in your Azure Storage account:
+You've completed the Microsoft Graph Data Connect tutorial. Use the following steps to ensure that your JSON file is in your Azure Storage account:
 
 1. Open a browser and go to your [Azure portal](https://portal.azure.com/#home).
 2. Under **Azure Services**, choose **Storage accounts**.
@@ -21,5 +17,4 @@ You've completed the Microsoft Graph Data Connect tutorial! Use the following st
 
 Congratulations! You've built your first successful Microsoft Graph Data Connect pipeline. To learn more about Data Connect, see [Overview of Microsoft Graph Data Connect.](/graph/data-connect-concept-overview).
 
-Optional: In the next step, learn how to create a Power BI report to visualize your data from Microsoft Graph Data Connect.
-
+Optional: In the next step, you can learn how to create a Power BI report to visualize your data from Microsoft Graph Data Connect.

@@ -13,7 +13,7 @@ The second section covers application requests and is meant for users engaging w
 
 ## Register your application with Microsoft Graph Data Connect
 
-As a prerequisite, enable Data Connect in your tenant. It's helpful to have an Azure AD app and storage destination resource created; you can also set these up by using the wizard. The app registration process in Data Connect involves using a wizard with three tabs: Registration info, Datasets, and Review + create.
+As a prerequisite, please enable Data Connect in your tenant. It's helpful to have an Azure AD app and storage destination resource created; you can also set these up by using the wizard. The app registration process in Data Connect involves using a wizard with three tabs: Registration info, Datasets, and Review + create.
 
 ### Provide details in the Registration info tab
 

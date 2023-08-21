@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "You can use createLink action to share a DriveItem via a sharing link."
 title: "driveItem: createLink"
 ms.localizationpriority: medium

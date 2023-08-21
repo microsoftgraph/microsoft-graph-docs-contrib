@@ -2,7 +2,7 @@
 title: "phoneAuthenticationMethod resource type"
 description: "Represents a phone number and type that's registered to a user."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "luc-msft"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---

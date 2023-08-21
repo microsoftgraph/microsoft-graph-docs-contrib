@@ -4,7 +4,7 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-Before you use Microsoft Graph Data Connect (Data Connect) for the first time, you will need to work with your Microsoft 365 tenant admin to enable the Data Connect service for your tenant. 
+Before you use Microsoft Graph Data Connect (Data Connect) for the first time, please work with your Microsoft 365 tenant admin to enable the Data Connect service for your tenant. 
 
 The first tab describes the new consent flow. We recommend that new and current customers use this new consent flow for a smoother and more secure onboarding process. The second tab describes the previous consent process involving Privileged Access Management (PAM), which will be deprecated in the future.
 

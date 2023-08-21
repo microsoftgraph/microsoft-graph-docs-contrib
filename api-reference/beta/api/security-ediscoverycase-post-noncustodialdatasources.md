@@ -101,10 +101,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-ediscoverynoncustodialdatasource-from--wesite-url-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-ediscoverynoncustodialdatasource-from--wesite-url-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-ediscoverynoncustodialdatasource-from--wesite-url-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
