@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "eac38eec-1815-4d91-be4a-a2ccbe815cab",
+          "Id": "8ab4f546-04b5-4c5d-8c36-b67bc1ebdd83",
           "ApiChange": "Permission",
           "ChangedApiName": "RoleAssignmentSchedule.Read.Directory",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "unifiedRoleAssignmentScheduleRequest"
         },
         {
-          "Id": "4f1643d6-24e4-49ff-900e-d62cd5833fcb",
+          "Id": "8ab4f546-04b5-4c5d-8c36-b67bc1ebdd83",
           "ApiChange": "Permission",
           "ChangedApiName": "RoleEligibilitySchedule.Read.Directory",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "unifiedRoleEligibilityScheduleRequest"
         },
         {
-          "Id": "fb113dca-4710-47a6-bc96-577e5490d987",
+          "Id": "8ab4f546-04b5-4c5d-8c36-b67bc1ebdd83",
           "ApiChange": "Permission",
           "ChangedApiName": "RoleAssignmentSchedule.ReadWrite.Directory",
           "ChangeType": "Addition",
@@ -27,7 +27,7 @@
           "Target": "unifiedRoleAssignmentScheduleRequest"
         },
         {
-          "Id": "7a275a17-6a6a-436d-8316-4fe77bc7ff79",
+          "Id": "8ab4f546-04b5-4c5d-8c36-b67bc1ebdd83",
           "ApiChange": "Permission",
           "ChangedApiName": "RoleEligibilitySchedule.ReadWrite.Directory",
           "ChangeType": "Addition",
@@ -35,7 +35,7 @@
           "Target": "unifiedRoleEligibilityScheduleRequest"
         }
       ],
-      "Id": "7a275a17-6a6a-436d-8316-4fe77bc7ff79",
+      "Id": "8ab4f546-04b5-4c5d-8c36-b67bc1ebdd83",
       "Cloud": "Prod",
       "Version": "v1.0",
       "CreatedDateTime": "2022-08-21T00:00:00.0291684Z",
