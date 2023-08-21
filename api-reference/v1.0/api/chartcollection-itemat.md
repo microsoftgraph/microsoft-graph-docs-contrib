@@ -38,7 +38,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|index|Int32|Index value of the object to be retrieved. Zero-indexed.|## Request body
+|index|Int32|Index value of the object to be retrieved. Zero-indexed.|
 
 ## Request headers
 

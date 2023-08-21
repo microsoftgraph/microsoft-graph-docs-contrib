@@ -27,6 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 > **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
+## HTTP request
+
 <!-- { "blockType": "ignored"} -->
 ```http
 POST /chats/{chat-id}/members
@@ -108,7 +110,7 @@ content-type: application/json
 
 The following is an example of the response.
 
-<!-- 
+<!--
 {
  "blockType": "response",
   "truncated": true,
@@ -178,7 +180,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-<!-- 
+<!--
 {
  "blockType": "response",
   "truncated": true,
@@ -249,7 +251,7 @@ content-type: application/json
 
 The following is an example of the response.
 
-<!-- 
+<!--
 {
  "blockType": "response",
   "truncated": true,
@@ -320,7 +322,7 @@ content-type: application/json
 
 The following is an example of the response.
 
-<!-- 
+<!--
 {
  "blockType": "response",
   "truncated": true,
@@ -392,7 +394,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-<!-- 
+<!--
 {
  "blockType": "response",
   "truncated": true,
@@ -466,7 +468,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-<!-- 
+<!--
 {
  "blockType": "response",
   "truncated": true,
