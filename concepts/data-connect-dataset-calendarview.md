@@ -9,7 +9,7 @@ ms.custom: datasets:dataset-name
 
 # Microsoft Graph Data Connect CalendarView_v0 dataset
 
-The CalendarView_v0 dataset provides occurrences, exceptions and single instances of events, based on the calendar view from users' calendars.
+The CalendarView_v0 dataset provides occurrences, exceptions, and single instances of events, based on the calendar view from users' calendars.
  
 ## Scenarios
 
@@ -33,7 +33,7 @@ The following are examples of questions that you can answer with this dataset:
 
 ## Joining with other datasets
 
-The CalendarView_v0 dataset can be joined with relevant events, users and other category datasets.
+The CalendarView_v0 dataset can be joined with relevant events, users, and other category datasets.
 
 ## Definitions
 
