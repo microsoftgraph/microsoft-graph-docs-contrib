@@ -13,6 +13,8 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Delete a [yearTimePeriodDefinition](../resources/industrydata-yearTimePeriodDefinition.md) object.
 
 ## Permissions

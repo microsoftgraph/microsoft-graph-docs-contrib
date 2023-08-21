@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Get a list of the [customAuthenticationExtension](../resources/customauthenticationextension.md) objects and their properties. Currently, only [onTokenIssuanceStartCustomExtension](../resources/ontokenissuancestartcustomextension.md) objects are returned.
 
 ## Permissions

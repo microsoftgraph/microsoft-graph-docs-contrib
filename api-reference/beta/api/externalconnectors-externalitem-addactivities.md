@@ -13,6 +13,8 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Append additional instances of [externalActivity](../resources/externalconnectors-externalactivity.md) objects on an [externalItem](../resources/externalconnectors-externalitem.md).
 
 ## Permissions

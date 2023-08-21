@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Reassign the [submission](../resources/educationsubmission.md) to the student with feedback for review.
 
 Only teachers can perform this action. 

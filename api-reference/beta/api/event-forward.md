@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 This action allows the organizer or attendee of a meeting [event](../resources/event.md) to forward the 
 meeting request to a new recipient. 
 

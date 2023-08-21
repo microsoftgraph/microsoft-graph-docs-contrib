@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Retrieves the teachers and students for a class. Note that if the delegated token is used, members can only be seen by other members of the class.
 
 ## Permissions

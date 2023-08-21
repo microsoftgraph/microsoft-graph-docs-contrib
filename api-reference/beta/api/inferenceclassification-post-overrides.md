@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Create a [focused Inbox](../resources/manage-focused-inbox.md) override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified
 as specified in the override.
 

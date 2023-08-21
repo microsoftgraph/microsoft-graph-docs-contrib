@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 Retrieve a collection of [governanceRoleSettings](../resources/governancerolesetting.md) on a resource.
@@ -32,7 +34,7 @@ The requestor must also have at least one role assignment on the resource.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /privilegedAccess/azureResources/resources/<resourceId>/roleSettings
+GET /privilegedAccess/azureResources/resources/{resourceId}/roleSettings
 GET /privilegedAccess/azureResources/roleSettings?$filter=resourceId+eq+'<resourceId>'
 ```
 ## Optional query parameters
@@ -50,7 +52,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [governanceRoleSetting](../resources/governancerolesetting.md) objects in the response body.
 
 ## Example
-This example shows how an administrator lists role settings for the resource Wingtip Toys - Prod. 
+This example shows how an administrator lists role settings for the resource Wingtip Toys - Prod.
 <!-- {
   "blockType": "request",
   "name": "get_governancerolesettings"

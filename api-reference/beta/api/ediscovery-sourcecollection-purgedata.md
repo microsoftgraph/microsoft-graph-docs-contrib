@@ -13,6 +13,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Permanently delete Microsoft Teams messages contained in a [sourceCollection](../resources//ediscovery-sourcecollection.md).
 
 >**Note:** This request purges Teams data only. It does not purge other types of data such as mailbox items.

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Add a [educationSubmissionResource](../resources/educationsubmissionresource.md) to a submission resource list.
 
 Only teachers and students can perform this operation.

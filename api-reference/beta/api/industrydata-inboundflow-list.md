@@ -13,6 +13,8 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Get a list of the [inboundFlow](../resources/industrydata-inboundflow.md) objects and their properties.
 
 ## Permissions

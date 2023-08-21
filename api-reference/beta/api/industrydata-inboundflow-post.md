@@ -13,6 +13,8 @@ Namespace: microsoft.graph.industryData
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Create a new [inboundFlow](../resources/industrydata-inboundflow.md) object.
 
 The following prerequisite resources are required when you create an **inboundFlow**:

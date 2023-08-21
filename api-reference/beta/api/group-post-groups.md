@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Create a new [group](../resources/group.md) as specified in the request body. You can create one of the following groups:
 
 - Microsoft 365 group (unified group)

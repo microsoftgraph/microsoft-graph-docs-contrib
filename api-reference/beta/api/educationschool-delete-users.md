@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Delete a user from a school.
 
 ## Permissions
@@ -29,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /education/schools/{id}/users/{userId}
+DELETE /education/schools/{id}/users/{userId}/$ref
 ```
 
 ## Request headers
@@ -61,7 +63,7 @@ The following is an example of a request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/education/schools/10001/users/13006
+DELETE https://graph.microsoft.com/beta/education/schools/10001/users/13006/$ref
 ```
 
 # [Java](#tab/java)

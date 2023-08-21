@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Remove a member from a group via the **members** navigation property. You can't remove a member from groups with dynamic memberships.
 
 ## Permissions

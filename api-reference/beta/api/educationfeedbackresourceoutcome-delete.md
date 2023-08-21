@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Delete a [feedback resource](../resources/educationfeedbackresourceoutcome.md) from a submission. This can only be done by a teacher.
 
 ## Permissions

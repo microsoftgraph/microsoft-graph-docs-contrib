@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Delete an [educationClass](../resources/educationclass.md). Because a class is also a universal group, deleting a class deletes the group.
 
 ## Permissions

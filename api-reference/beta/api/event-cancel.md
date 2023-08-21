@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 This action allows the organizer of a meeting to send a cancellation message and cancel the event. 
 
 The action moves the event to the Deleted Items folder. The organizer can also cancel an occurrence of a recurring meeting 

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
 Enable administrators to update their decisions (`AdminApproved` or `AdminDenied`) on [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) that are in status of `PendingAdminDecision`.
@@ -32,7 +34,7 @@ The requester must also have at least one active administrator role assignment (
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest   
+POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 ```
 
 ## Request headers
