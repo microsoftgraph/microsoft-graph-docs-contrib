@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a particular [submission](../resources/educationsubmission.md). Only teachers, students, and applications with application permissions can perform this operation.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 A **submission** object represents a student's work for an [assignment](../resources/educationassignment.md). Resources associated with the **submission** represent this work.
 
 Only the **assignedTo** student can see and modify the **submission**. A teacher or application with application permissions has full access to all **submissions**.

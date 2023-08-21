@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Create a new [accessPackage](../resources/accesspackage.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 The access package will be added to an existing [accessPackageCatalog](../resources/accesspackagecatalog.md).
 
 ## Permissions

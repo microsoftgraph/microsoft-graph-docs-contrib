@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Removes the specified [event](../resources/event.md) from the containing calendar. 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 If the event is a meeting, deleting the event on the organizer's calendar sends a cancellation message to the meeting attendees.
 
 ## Permissions

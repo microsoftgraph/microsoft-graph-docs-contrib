@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Reassign the [submission](../resources/educationsubmission.md) to the student with feedback for review.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Only teachers can perform this action. 
 
 Include the `Prefer: include-unknown-enum-members` header when you call this method; otherwise, a reassigned submission will be treated as a returned submission. This means that the `reassigned` status will be mapped to the `returned` status, and **reassignedDateTime** and **reassignedBy** properties will be mapped to **returnedDateTime** and **returnedBy** respectively.

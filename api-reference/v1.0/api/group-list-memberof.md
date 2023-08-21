@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get groups that the group is a direct member of.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 This operation is not transitive. Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.
 
 ## Permissions

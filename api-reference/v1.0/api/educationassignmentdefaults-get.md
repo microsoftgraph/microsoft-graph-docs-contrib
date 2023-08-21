@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) object. 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 These are the class-level assignment defaults respected by new [assignments](../resources/educationassignment.md) created in the class. Callers can continue to specify custom values on each **assignment** creation if they don't want the default behaviors. Only teachers can perform this operation.
 
 ## Permissions

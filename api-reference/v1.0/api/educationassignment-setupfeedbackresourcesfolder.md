@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Create a SharePoint folder to upload feedback files for a given [educationSubmission](../resources/educationsubmission.md). Only teachers can perform this operation.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 The teacher determines the resources to upload in the feedback resources folder of a submission.
 
 ## Permissions

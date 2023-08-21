@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of schools for a user.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 >**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...v1.0/education/me/schools` resource in this case.
 
 ## Permissions

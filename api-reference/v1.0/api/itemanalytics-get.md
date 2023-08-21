@@ -14,6 +14,8 @@ Get [itemAnalytics][] about the views that took place under this resource.
 The **itemAnalytics** resource is a convenient way to get activity stats for `allTime` and the `lastSevenDays`.
 For a custom time range or interval, use the [getActivitiesByInterval][] API.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 >**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).
 
 [itemAnalytics]: ../resources/itemanalytics.md

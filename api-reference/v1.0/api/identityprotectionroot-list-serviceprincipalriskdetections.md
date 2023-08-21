@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a collection of [servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 >**Note:** You must have an Entra Workload Identity Premium license to use the servicePrincipalRiskDetection API.
 
 ## Permissions

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Use this API to create a new Attachment.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 An attachment can be one of the following types:
 
 * A file ([fileAttachment](../resources/fileattachment.md) resource).

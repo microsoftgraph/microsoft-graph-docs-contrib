@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection. For more information about the delta function, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview) for details.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 The following table shows the least privileged permission that's required by each resource type when calling this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

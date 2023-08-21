@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Create an [assignment resource](../resources/educationassignmentresource.md). Only teachers can perform this operation.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 You can create the following types of assignment resources:
 
 - [educationFileResource](../resources/educationfileresource.md)

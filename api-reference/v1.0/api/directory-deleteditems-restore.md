@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Restore a recently deleted [application](../resources/application.md), [group](../resources/group.md), [servicePrincipal](../resources/serviceprincipal.md), [administrative unit](../resources/administrativeunit.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md). If an item was accidentally deleted, you can fully restore the item. This is not applicable to security groups, which are deleted permanently.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 A recently deleted item will remain available for up to 30 days. After 30 days, the item is permanently deleted.
 
 ## Permissions

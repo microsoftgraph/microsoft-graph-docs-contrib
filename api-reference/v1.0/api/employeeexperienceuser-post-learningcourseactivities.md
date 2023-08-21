@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Create a new [learningCourseActivity](../resources/learningcourseactivity.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 A learning course activity can be one of two types: 
 - [Assignment](../resources/learningassignment.md)
 - [Self-initiated](../resources/learningselfinitiatedcourse.md)

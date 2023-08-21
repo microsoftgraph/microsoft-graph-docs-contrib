@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Deletes a domain using an asynchronous long-running operation.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Prior to calling [forceDelete](domain-forcedelete.md), you must update or remove any references to **Exchange** as the provisioning service.
 
 The following actions are performed as part of this operation:

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update the properties of the [event](../resources/event.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 <!-- markdownlint-disable MD001 -->
 ### Notes for updating specific properties
 

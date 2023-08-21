@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Publish an education assignment.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Change the state of an [educationAssignment](../resources/educationassignment.md) from its original `draft` status to the `published` status. 
 
 You can change the state from `draft` to `scheduled` if the **assignment** is scheduled for a future date. 

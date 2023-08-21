@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a [directoryRole](../resources/directoryrole.md) object. The role must be activated in tenant for a successful response.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 You can use both the object ID and template ID of the **directoryRole** with this API. The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal. For details, see [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
 ## Permissions

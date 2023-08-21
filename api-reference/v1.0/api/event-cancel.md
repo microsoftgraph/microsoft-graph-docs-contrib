@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 This action allows the organizer of a meeting to send a cancellation message and cancel the event. 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 The action moves the event to the Deleted Items folder. The organizer can also cancel an occurrence of a recurring meeting 
 by providing the occurrence event ID. An attendee calling this action gets an error (HTTP 400 Bad Request), with the following
 error message:

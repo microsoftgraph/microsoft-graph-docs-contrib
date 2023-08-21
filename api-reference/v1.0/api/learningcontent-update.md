@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update the specified [learningContent](../resources/learningcontent.md) resource.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Used by a [learning provider](../resources/learningprovider.md) to ingest or update the metadata for their content in Viva Learning. If the specified learning content doesn't yet exist for the specified provider, this operation creates the metadata for the new content. Otherwise, this operation replaces the metadata of the existing content.
 
 ## Permissions

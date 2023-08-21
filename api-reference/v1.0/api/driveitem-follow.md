@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Follow a [driveItem](../resources/driveitem.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 >**Note:** To unfollow an item, see [Unfollow item](driveitem-unfollow.md).
 
 ## Permissions

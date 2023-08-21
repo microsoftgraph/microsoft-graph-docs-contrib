@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Trigger the creation of the SharePoint resource folder where all file-based resources (Word, Excel, and so on) should be uploaded for a given submission. Only teachers and students can perform this operation.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Note that files must be located in this folder in order to be added as resources. Only a student in the class can determine what files to upload in a given submission-level resource folder. 
 
 ## Permissions

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 List the directory roles that are activated in the tenant.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 This operation only returns roles that have been activated. A role becomes activated when an admin activates the role using the [Activate directoryRole](directoryrole-post-directoryroles.md) API. Not all built-in roles are initially activated. 
 
 When assigning a role using the Azure portal, the role activation step is implicitly done on the admin's behalf. To get the full list of roles that are available in Azure AD, use [List directoryRoleTemplates](directoryroletemplate-list.md).

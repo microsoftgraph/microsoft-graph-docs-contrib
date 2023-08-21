@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Retrieve [messages](../resources/chatmessage.md) across all [channels](../resources/channel.md) in a [deleted team](../resources/deletedteam.md), including text, audio, and video conversations.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
 ## Permissions

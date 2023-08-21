@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Retrieve all [identityProviders](../resources/identityprovider.md) in the directory.
 
 ## Permissions

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Create an override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified
 as specified in the override.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 **Note**
 
 - If an override already exists with the same SMTP address, then the **classifyAs** and **name** fields of that override are updated with the provided values.

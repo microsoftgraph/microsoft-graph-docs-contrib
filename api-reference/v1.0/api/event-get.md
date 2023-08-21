@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of the specified [event](../resources/event.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Currently, this operation returns event bodies in only HTML format.
 
 There are two scenarios where an app can get an event in another user's calendar:

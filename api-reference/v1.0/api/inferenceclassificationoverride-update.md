@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Change the **classifyAs** field of an override as specified.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 You cannot use PATCH to change any other fields in an [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) instance.
 
 If an override exists for a sender and the sender changes his/her display name, you can use [POST](inferenceclassification-post-overrides.md) to force an update to the name field in the existing override.

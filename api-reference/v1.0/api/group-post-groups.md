@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Create a new group as specified in the request body. You can create the following types of groups:
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 - Microsoft 365 group (unified group)
 - Security group
 

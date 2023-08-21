@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get the collection of [lists][] for a [site][].
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Lists with the [system][] facet are hidden by default.
 To list them, include `system` in your `$select` statement.
 

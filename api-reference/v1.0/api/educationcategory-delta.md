@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get a list of newly created or updated [educationCategory](../resources/educationcategory.md) objects without having to perform a full read of the collection.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 > This method doesn't return deleted categories.
 
 ## Permissions

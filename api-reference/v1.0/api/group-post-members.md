@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Add a member to a security or Microsoft 365 group through the **members** navigation property.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 [!INCLUDE [groups-allowed-member-types](../../../concepts/includes/groups-allowed-member-types.md)]
 
 ## Permissions

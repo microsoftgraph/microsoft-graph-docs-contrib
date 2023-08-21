@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get the instances (occurrences) of an event for a specified time range. 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 If the event is a `seriesMaster` type, this returns the 
 occurrences and exceptions of the event in the specified time range.
 

@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of the specified identity provider configured in the tenant.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Among the types of providers derived from identityProviderBase, you can currently get a [socialIdentityProvider](../resources/socialidentityprovider.md) or a [builtinIdentityProvider](../resources/builtinidentityprovider.md) resource in Azure AD. In Azure AD B2C, this operation can currently get a [socialIdentityProvider](../resources/socialidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource.
 
 ## Permissions

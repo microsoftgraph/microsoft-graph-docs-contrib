@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update the properties of a registered device.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
 
 ## Permissions

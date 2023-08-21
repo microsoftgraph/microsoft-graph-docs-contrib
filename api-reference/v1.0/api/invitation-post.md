@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Use this API to create a new [invitation](../resources/invitation.md). Invitation adds an external user to the organization.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 When creating a new invitation you have several options available:
 
 1. On invitation creation, Microsoft Graph can automatically send an invitation email directly to the invited user, or your app can use the *inviteRedeemUrl* returned in the creation response to craft your own invitation (through your communication mechanism of choice) to the invited user. If you decide to have Microsoft Graph send an invitation email automatically, you can control the content and language of the email using [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).

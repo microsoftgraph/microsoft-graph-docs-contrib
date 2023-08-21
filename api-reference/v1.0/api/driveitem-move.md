@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 This is a special case of the [Update](driveitem-update.md) method.
 Your app can combine moving an item to a new container and updating other properties of the item into a single request.
 

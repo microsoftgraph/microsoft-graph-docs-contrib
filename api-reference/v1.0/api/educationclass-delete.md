@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Delete an [educationClass](../resources/educationclass.md). Because a class is also a universal group, deleting a class deletes the group.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 > [!IMPORTANT]
 > Because a class is also a universal group, deleting a class deletes the group.
 

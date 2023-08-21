@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of [riskyServicePrincipal](../resources/riskyserviceprincipal.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 >**Note:** Using the riskyServicePrincipals API requires an Entra Workload Identity Premium license.
 
 ## Permissions

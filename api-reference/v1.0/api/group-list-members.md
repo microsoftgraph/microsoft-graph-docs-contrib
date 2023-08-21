@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a list of the group's direct members. A group can have users, organizational contacts, devices, service principals and other groups as members. This operation is not transitive.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > [!IMPORTANT]
 > This API has a known issue where service principals are not listed as group members in v1.0. Use this API on the `beta` endpoint instead or the `/groups/{id}?members` API.
 
