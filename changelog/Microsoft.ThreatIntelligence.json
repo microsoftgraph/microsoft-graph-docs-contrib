@@ -4,14 +4,6 @@
       "ChangeList": [
         {
           "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
-          "ApiChange": "Enumeration",
-          "ChangedApiName": "whoisDomainStatus",
-          "ChangeType": "Addition",
-          "Description": "Added the **whoisDomainStatus** enumeration type.",
-          "Target": "whoisDomainStatus"
-        },
-        {
-          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
           "ApiChange": "Relationship",
           "ChangedApiName": "hostSslCertificates",
           "ChangeType": "Addition",
