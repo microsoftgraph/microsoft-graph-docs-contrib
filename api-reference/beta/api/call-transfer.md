@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Transfer an active peer-to-peer call or group call.
 
 > **Note:** This is only supported if both the transferee and transfer target are Microsoft Teams users that belong to the same tenant. Transfer to PSTN number is supported only for application instance. To learn more about transferor, transferee and transfer target, see [RFC 5589](https://tools.ietf.org/html/rfc5589#section-2).

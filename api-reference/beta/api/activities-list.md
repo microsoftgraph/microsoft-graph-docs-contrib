@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 List the recent [activities](../resources/itemactivity.md) that took place on an item or under a hierarchy.
 
 >**Note:** Activities is in a limited preview and is not yet available to all tenants.

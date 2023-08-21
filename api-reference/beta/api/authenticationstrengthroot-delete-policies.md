@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Delete a custom [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object.
 
 ## Permissions

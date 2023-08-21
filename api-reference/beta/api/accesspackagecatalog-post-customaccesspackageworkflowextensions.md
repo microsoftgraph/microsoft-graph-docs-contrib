@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+
 Create a new [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object and add it to an existing [accessPackageCatalog](../resources/accesspackagecatalog.md) object.  
 
 ## Permissions

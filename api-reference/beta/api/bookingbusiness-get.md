@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Get the properties and relationships of a [bookingBusiness](../resources/bookingbusiness.md) object.
 ## Permissions
 

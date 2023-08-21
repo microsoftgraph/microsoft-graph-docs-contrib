@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Remove an owner from an [application](../resources/application.md). As a recommended best practice, apps should have at least two owners.
 
 ## Permissions

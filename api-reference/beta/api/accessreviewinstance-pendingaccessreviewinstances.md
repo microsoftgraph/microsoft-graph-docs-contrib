@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 >[!NOTE]
 >This method will be deprecated and will stop returning data on May 19, 2023. It has been replaced by [filterByCurrentUser](accessreviewinstance-filterbycurrentuser.md).
 

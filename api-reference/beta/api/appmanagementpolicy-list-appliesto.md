@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 List application and service principal objects assigned an [appManagementPolicy](../resources/appManagementPolicy.md) policy object.
 
 ## Permissions

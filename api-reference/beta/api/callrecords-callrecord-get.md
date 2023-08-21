@@ -13,6 +13,8 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Retrieve the properties and relationships of a [callRecord](../resources/callrecords-callrecord.md) object.
 
 There are two ways to get the **id** of a **callRecord**:

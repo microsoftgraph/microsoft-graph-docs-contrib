@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Allow applications to share screen content with the participants of a group call.
 
 > **Note:** This is only supported for group calls that use App-Hosted Media.

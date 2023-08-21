@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Delete a [bundle][] of driveItems by using its **id**.
 Note that deleting a bundle using this method permanently deletes the bundle and does not move it to the Recycle Bin.
 It does not, however, remove the items that were referenced by the bundle.

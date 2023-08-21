@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Get the list of [teams](../resources/associatedteaminfo.md) in Microsoft Teams that a [user](../resources/user.md) is associated with.
 Currently, a [user](../resources/user.md) can be associated with a [team](../resources/team.md) in two different ways:
 * A [user](../resources/user.md) can be a direct member of a [team](../resources/team.md).

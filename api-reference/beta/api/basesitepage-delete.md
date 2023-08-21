@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Delete a [baseSitePage][] from the site pages [list][] in a [site][].
 
 [baseSitePage]: ../resources/basesitepage.md

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of languages supported for customization in an Azure AD B2C user flow.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 **Note:** To retrieve a list of languages supported for customization, you must first enable language customization on your Azure AD B2C user flow. For more information, see [Update b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md).
 
 ## Permissions

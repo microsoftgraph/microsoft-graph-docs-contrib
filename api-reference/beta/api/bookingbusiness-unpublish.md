@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Make the scheduling page of this business not available to external customers.
 
 Set the **isPublished** property to false, and **publicUrl** property to null.

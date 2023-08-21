@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+
 Send a reminder to the reviewers of a currently active [accessReviewInstance](../resources/accessreviewinstance.md).
 
 ## Permissions
