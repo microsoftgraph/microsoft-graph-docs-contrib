@@ -559,6 +559,8 @@ items:
                 href: api/profilephoto-get.md
               - name: Update photo
                 href: api/profilephoto-update.md
+              - name: Delete photo
+                href: api/profilephoto-delete.md
           - name: Planner
             items:
               - name: Planner task
@@ -867,6 +869,8 @@ items:
                 href: api/profilephoto-get.md
               - name: Update photo
                 href: api/profilephoto-update.md
+              - name: Delete photo
+                href: api/profilephoto-delete.md
           - name: Planner
             items:
               - name: Planner plan
@@ -8889,6 +8893,8 @@ items:
                     href: api/profilephoto-get.md
                   - name: Update team photo
                     href: api/profilephoto-update.md
+                  - name: Delete team photo
+                    href: api/profilephoto-delete.md
                   - name: List all teams
                     href: /graph/teams-list-all-teams?context=graph/api/1.0
                   - name: Complete migration for team
