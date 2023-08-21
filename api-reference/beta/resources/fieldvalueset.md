@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Represents the column values in a listItem resource."
 ms.date: 09/11/2017
 title: FieldValueSet

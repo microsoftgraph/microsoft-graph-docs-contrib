@@ -64,7 +64,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET /teams/{id}/installedApps/{id}
+GET https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}
 ```
 
 # [C#](#tab/csharp)
