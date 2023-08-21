@@ -1,6 +1,6 @@
 ---
 title: "ipAddress resource type"
-description: "Represents an IP address which is (or has been) addressable over the internet."
+description: "Represents an IP address, which is (or has been) addressable over the internet."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents an IP address which is (or has been) addressable over the internet. This resource acts as a grouping mechanism for related details about the hostname or IP address, such as the reputation, any related trackers or cookies, and so on.
+Represents an IP address, which is (or has been) addressable over the internet. This resource acts as a grouping mechanism for related details about the hostname or IP address, such as the reputation, any related trackers or cookies, and so on.
 
 You cannot retrieve this type directly. To access it, retrieve the [host](../resources/security-host.md) resource.
 
@@ -38,7 +38,7 @@ Inherits from [host](../resources/security-host.md).
 | Property          | Type                                                                                   | Description                                                                                                                                                                                                                                                                                                                                             |
 | :---------------- | :------------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | autonomousSystem  | [microsoft.graph.security.autonomousSystem](../resources/security-autonomoussystem.md) | The details about the autonomous system to which this IP address belongs.                                                                                                                                                                                                                                                                               |
-| countryOrRegion   | String                                                                                 | The country or region for this IP address.                                                                                                                                                                                                                                                                                                              |
+| countryOrRegion   | String                                                                                 | The country/region for this IP address.                                                                                                                                                                                                                                                                                                              |
 | firstSeenDateTime | DateTimeOffset                                                                         | The first date and time when this [host](../resources/security-host.md) was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [microsoft.graph.security.host](../resources/security-host.md).       |
 | hostingProvider   | String                                                                                 | The hosting company listed for this [host](../resources/security-host.md).                                                                                                                                                                                                                                                                              |
 | id                | String                                                                                 | The IP Address for this [host](../resources/security-host.md). Read-only. Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).                                                                                                                                                                                        |

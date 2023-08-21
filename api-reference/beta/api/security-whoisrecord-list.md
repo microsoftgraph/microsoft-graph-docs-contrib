@@ -44,14 +44,14 @@ GET /security/threatIntelligence/whoisRecords?$search="{value}"
 
 This method supports the `$count`, `$orderby`, `$search`, `$select`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-| Name                        | Description |
-| :-------------------------- | :---------- |
-| $count     | `$count` is supported to return a holistic count of the number of [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) objects. This is supported as a query parameter (`?$count=true`) or as a path parameter (`/$count`).                |
-|$orderby| `$orderby` supports some properties of the **whoisRecord** resource. For details, see [Supported properties with $orderby](#supported-properties-with-orderby). 
-|$search|`$search` is **required** in the request URL of this API. The API currently only supports searching by one field in a call. For details, see [Supported properties with $search](#supported-properties-with-search).|
-|$select|`$select` is supported to limit the properties returned in this query.|
-|$skip|`$skip` is supported to skip over elements in pages. Combine with `$top` to perform pagination or use the `@odata.nextLink` for server-side pagination.|
-|$top|`$top` is supported to limit the number of elements per page. Combine with `$skip` to perform pagination or use the `@odata.nextLink` for server-side pagination.|
+| Name     | Description                                                                                                                                                                                                                                             |
+| :------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| $count   | `$count` is supported to return a holistic count of the number of [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) objects. `$count` is supported as a query parameter (`?$count=true`) or as a path parameter (`/$count`). |
+| $orderby | `$orderby` supports some properties of the **whoisRecord** resource. For details, see [Supported properties with $orderby](#supported-properties-with-orderby).                                                                                         |
+| $search  | `$search` is **required** in the request URL of this API. The API currently only supports searching by one field in a call. For details, see [Supported properties with $search](#supported-properties-with-search).                                    |
+| $select  | `$select` is supported to limit the properties returned in this query.                                                                                                                                                                                  |
+| $skip    | `$skip` is supported to skip over elements in pages. Combine with `$top` to perform pagination or use the `@odata.nextLink` for server-side pagination.                                                                                                 |
+| $top     | `$top` is supported to limit the number of elements per page. Combine with `$skip` to perform pagination or use the `@odata.nextLink` for server-side pagination.                                                                                       |
 
 ### Supported properties with $orderby
 
@@ -67,12 +67,12 @@ The following properties can be used for `$orderby` calls.
 
 The following properties can be used for `$search` calls.
 
-| Property      | Example                                   | Notes                                                                                                    |
-| :------------ | :---------------------------------------- | :------------------------------------------------------------------------------------------------------- |
+| Property    | Example                                     | Notes                                                                                                                             |
+| :---------- | :------------------------------------------ | :-------------------------------------------------------------------------------------------------------------------------------- |
 | abuse       | `$search="abuse/address/state:WA"`          | The `$search` must target a specific field of the [microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md). |
 | admin       | `$search="admin/address/state:WA"`          | The `$search` must target a specific field of the [microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md). |
 | billing     | `$search="billing/address/state:WA"`        | The `$search` must target a specific field of the [microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md). |
-| nameservers | `$search="nameservers/host/id:contoso.com"` | The `$search` must search against as specific host ID.                                                   |
+| nameservers | `$search="nameservers/host/id:contoso.com"` | The `$search` must search against as specific host ID.                                                                            |
 | noc         | `$search="noc/address/state:WA"`            | The `$search` must target a specific field of the [microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md). |
 | registrant  | `$search="registrant/address/state:WA"`     | The `$search` must target a specific field of the [microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md). |
 | registrar   | `$search="registrar/address/state:WA"`      | The `$search` must target a specific field of the [microsoft.graph.security.whoisContact](../resources/security-whoiscontact.md). |

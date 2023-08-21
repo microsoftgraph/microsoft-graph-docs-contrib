@@ -1,6 +1,6 @@
 ---
 title: "List whoisHistoryRecords"
-description: "Get a list of whoisHistoryRecord objects for a whoisRecord, including the the properties and relationships of each whoisHistoryRecord object."
+description: "Get a list of whoisHistoryRecord objects for a whoisRecord, including the properties and relationships of each whoisHistoryRecord object."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get a list of [microsoft.graph.security.whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects for a [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md), including the the properties and relationships of each [microsoft.graph.security.whoisHistoryRecord](../resources/security-whoishistoryrecord.md) object.
+Get a list of [microsoft.graph.security.whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects for a [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md), including the properties and relationships of each [microsoft.graph.security.whoisHistoryRecord](../resources/security-whoishistoryrecord.md) object.
 
 ## Permissions
 
@@ -27,14 +27,14 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | ThreatIntelligence.Read.All                 |
 
-
 ## HTTP request
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 GET /security/threatIntelligence/hosts/{hostId}/whois/history
 GET /security/threatIntelligence/whoisRecord/{id}/history
 ```
@@ -43,18 +43,18 @@ GET /security/threatIntelligence/whoisRecord/{id}/history
 
 This method supports the `$count`, `$select`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-| Name                        | Description |
-| :-------------------------- | :---------- |
-| $count     | `$count` is supported to return a holistic count of the number of [microsoft.graph.security.whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects. This is supported as a query parameter (`?$count=true`) or as a path parameter (`/$count`).                |
-|$select|`$select` is supported to limit the properties returned in this query.|
-|$skip|`$skip` is supported to skip over elements in pages. Combine with `$top` to perform pagination or use the `@odata.nextLink` for server-side pagination.|
-|$top|`$top` is supported to limit the number of elements per page. Combine with `$skip` to perform pagination or use the `@odata.nextLink` for server-side pagination.|
+| Name    | Description                                                                                                                                                                                                                                                           |
+| :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| $count  | `$count` is supported to return a holistic count of the number of [microsoft.graph.security.whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects. `$count` is supported as a query parameter (`?$count=true`) or as a path parameter (`/$count`). |
+| $select | `$select` is supported to limit the properties returned in this query.                                                                                                                                                                                                |
+| $skip   | `$skip` is supported to skip over elements in pages. Combine with `$top` to perform pagination or use the `@odata.nextLink` for server-side pagination.                                                                                                               |
+| $top    | `$top` is supported to limit the number of elements per page. Combine with `$skip` to perform pagination or use the `@odata.nextLink` for server-side pagination.                                                                                                     |
 
 ## Request headers
 
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -76,7 +76,8 @@ The following is an example of a request.
   "sampleKeys": ["contoso.com"]
 }
 -->
-``` http
+
+```http
 GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.com/whois/history
 ```
 
@@ -84,7 +85,7 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.c
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -92,7 +93,8 @@ The following is an example of the response.
   "@odata.type": "Collection(microsoft.graph.security.whoisHistoryRecord)"
 }
 -->
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
