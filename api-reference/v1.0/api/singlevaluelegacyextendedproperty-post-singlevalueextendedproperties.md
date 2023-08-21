@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Create one or more single-value extended properties in a new or existing instance of a resource.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 The following user resources are supported:
 
 - [calendar](../resources/calendar.md)

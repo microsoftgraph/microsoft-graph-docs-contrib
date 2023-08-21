@@ -13,6 +13,8 @@ Retrieve the properties and relationships of a specified [threatAssessmentReques
 
 A threat assessment request can be one of the following types:
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 * [Mail](../resources/mailAssessmentRequest.md)
 * [Email file](../resources/emailFileAssessmentRequest.md)
 * [File](../resources/fileAssessmentRequest.md)

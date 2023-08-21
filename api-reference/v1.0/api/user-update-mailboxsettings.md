@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Enable, configure, or disable one or more of the following settings as part of a user's [mailboxSettings](../resources/mailboxsettings.md):
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 - [automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon receipt of their email)
 - dateFormat
 - delegateMeetingMessageDeliveryOptions

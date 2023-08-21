@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Restore an archived [team](../resources/team.md). This restores users' ability to send messages and edit the team, abiding by tenant and team settings. Teams are archived using the [archive](team-archive.md) API.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Unarchiving is an async operation. A team is unarchived once the async operation completes successfully, which may occur subsequent to a response from this API.
 
 ## Permissions

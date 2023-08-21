@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Create a new [team](../resources/team.md) under a [group](../resources/group.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 In order to create a team, the group must have a least one owner.
 
 If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. 

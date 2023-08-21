@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Suggest meeting times and locations based on organizer and attendee availability, and time or location constraints specified as parameters.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 If **findMeetingTimes** cannot return any meeting suggestions, the response would indicate a reason in the **emptySuggestionsReason** property. 
 Based on this value, you can better adjust the parameters and call **findMeetingTimes** again.
 

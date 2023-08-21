@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Create a draft of a new [message](../resources/message.md) in either JSON or MIME format.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 When using JSON format, you can:
 - Include an [attachment](../resources/attachment.md) to the **message**.
 - [Update](../api/message-update.md) the draft later to add content to the **body** or change other message properties.

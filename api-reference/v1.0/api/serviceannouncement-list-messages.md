@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Retrieve the [serviceUpdateMessage](../resources/serviceupdatemessage.md) resources from the **messages** navigation property.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 This operation retrieves all service update messages that exist for the tenant.
 
 ## Permissions

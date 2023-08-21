@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update the role of a [conversationMember](../resources/conversationmember.md) in a [team](../resources/team.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > [!NOTE]
 > Team members with the role of `guest` cannot be given the role of `owner`.
 

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Parse a given string expression into an [attributeMappingSource](../resources/synchronization-attributemappingsource.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 For more information about expressions, see [Writing Expressions for Attribute Mappings in Azure Active Directory](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
 
 ## Permissions

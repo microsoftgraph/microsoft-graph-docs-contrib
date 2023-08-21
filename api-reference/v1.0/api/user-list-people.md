@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a collection of [person](../resources/person.md) objects ordered by their relevance to the [user](../resources/user.md), which is determined by the user's communication and collaboration patterns, and business relationships.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Use the People API to get information about the people most relevant to you](/graph/people-insights-overview).
 
 ## Permissions

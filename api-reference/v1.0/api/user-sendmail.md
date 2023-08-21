@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Send the message specified in the request body using either JSON or MIME format.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 When using JSON format you can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.
 
 When using MIME format:

@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 Delete Microsoft Teams messages contained in an [eDiscovery search](../resources/security-ediscoverysearch.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 >**Note:** This request purges Teams data only. It does not purge other types of data such as mailbox items.
 
 You can collect and purge the following categories of Teams content:

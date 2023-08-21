@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Get the last  [ediscoveryEstimateOperation](../resources/security-ediscoveryestimateoperation.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 >**Note:** This method only lists the last operation; it does not return a history of all operations.
 
 ## Permissions

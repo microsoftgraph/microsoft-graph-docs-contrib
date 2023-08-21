@@ -12,6 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Assign a user's manager.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > **Note:** You cannot assign direct reports; instead, use this API.
 
 ## Permissions

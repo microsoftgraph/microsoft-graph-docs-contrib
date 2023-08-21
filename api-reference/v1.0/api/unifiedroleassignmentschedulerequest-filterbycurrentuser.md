@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 In PIM, retrieve the requests for active role assignments for a particular principal. The principal can be the creator or approver of the **unifiedRoleAssignmentScheduleRequest** object, or they can be the target of the assignment.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > [!NOTE]
 > This API doesn't return active role assignments through group memberships.
 

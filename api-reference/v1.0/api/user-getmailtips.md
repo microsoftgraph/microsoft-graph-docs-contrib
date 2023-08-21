@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get the MailTips of one or more recipients as available to the signed-in [user](../resources/user.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to 
 be returned for more than one recipient at one time. The requested MailTips are returned in a [mailTips](../resources/mailtips.md) collection.
 

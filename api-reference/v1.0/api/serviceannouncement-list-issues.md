@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Retrieve [serviceHealthIssue](../resources/servicehealthissue.md) resources from the **issues** navigation property.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 This operation retrieves information about all service health issues that exist for the tenant.
 
 ## Permissions

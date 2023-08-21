@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 Retrieve the properties and relationships of an [incident](../resources/security-incident.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Attacks are typically inflicted on different types of entities, such as devices, users, and mailboxes, resulting in multiple [alert](../resources/security-alert.md) objects. Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an **incident**. 
 
 ## Permissions

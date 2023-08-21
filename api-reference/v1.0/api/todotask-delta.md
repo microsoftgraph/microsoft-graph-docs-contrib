@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a set of [todoTask](../resources/todotask.md) resources that have been added, deleted, or updated in a specified [todoTaskList](../resources/todotasklist.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 A **delta** function call for **todoTask** resources in a **todoTaskList** is similar to a GET request, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls, you can query for incremental changes in the **todoTask** in that **todoTaskList**. This allows you to maintain and synchronize a local store of a user's **todoTask** resources without having to fetch the entire set from the server every time.  
 
 ## Permissions

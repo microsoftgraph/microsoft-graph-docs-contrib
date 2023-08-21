@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of user object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > **Note:** Getting a user returns a default set of properties only (*businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName*). Use `$select` to get the other properties and relationships for the [user](../resources/user.md) object.
 >
 > This request might have replication delays for users that were recently created, updated, or deleted.

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get newly created, updated, or deleted users without having to perform a full read of the entire user collection. See [change tracking](/graph/delta-query-overview) for details.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > [!NOTE]
 > Changes to the **licenseAssignmentStates** property are currently not tracked.
 

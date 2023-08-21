@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 The following role-based access control (RBAC) providers are currently supported:
 
 - directory (Azure AD directory roles)

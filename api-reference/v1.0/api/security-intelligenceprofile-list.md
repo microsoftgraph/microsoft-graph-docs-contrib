@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Get a list of the [intelligenceProfile](../resources/security-intelligenceprofile.md) objects and their properties.
 
 ## Permissions

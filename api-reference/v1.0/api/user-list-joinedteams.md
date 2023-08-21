@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 
 
 Get the [teams](../resources/team.md) in Microsoft Teams that the user is a direct member of.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 >**Note:** This API doesn't return the host team of the shared channel that the user is a direct member of. Use the [List associated teams](../api/associatedteaminfo-list.md) API, to retrieve the host teams of the shared channels that the user has access to.
  
 ## Permissions

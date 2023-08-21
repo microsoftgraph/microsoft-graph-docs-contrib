@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 List training coverage for tenant users in attack simulation and training campaigns.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 This function supports `@odata.nextLink` for pagination.
 
 ## Permissions

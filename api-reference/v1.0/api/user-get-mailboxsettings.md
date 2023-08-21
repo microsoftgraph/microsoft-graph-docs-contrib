@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get the user's [mailboxSettings](../resources/mailboxsettings.md). You can view all mailbox settings, or get specific settings.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Users can set the following settings for their mailboxes through an Outlook client:
 
 - [automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon

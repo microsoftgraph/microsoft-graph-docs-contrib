@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Get a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single 
 instance meetings and series masters.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 To get expanded event instances, you can [get the calendar view](calendar-list-calendarview.md), or 
 [get the instances of an event](event-list-instances.md).
 

@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Retrieve the [serviceHealth](../resources/servicehealth.md) resources from the **healthOverviews** navigation property.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 This operation provides the health report of all subscribed services for a tenant.
 
 ## Permissions

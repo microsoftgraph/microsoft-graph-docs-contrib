@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 List all available [sites][] in an organization.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Specific filter criteria and query options are also supported and described below:
 
 | Filter statement             | Select statement        | Description

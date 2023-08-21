@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Deletes an [appRoleAssignment](../resources/approleassignment.md) that a service principal has been granted.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 App roles which are assigned to service principals are also known as [application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Deleting an app role assignment for a service principal is equivalent to revoking the app-only permission grant.
 
 ## Permissions

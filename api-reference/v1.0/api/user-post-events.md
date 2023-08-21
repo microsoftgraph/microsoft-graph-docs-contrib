@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Create an [event](../resources/event.md) in the user's default calendar or specified calendar.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 By default, the **allowNewTimeProposals** property is set to true when an event is created, which means invitees can propose a different date/time for the event. See [Propose new meeting times](/graph/outlook-calendar-meeting-proposals) for more information on how to propose a time, and how to receive and accept a new time proposal.
 
 You can specify the time zone for each of the start and end times of the event as part of their values, because the 

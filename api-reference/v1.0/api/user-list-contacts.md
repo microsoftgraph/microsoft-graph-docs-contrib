@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a contact collection from the default contacts folder of the signed-in user.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 There are two scenarios where an app can get contacts in another user's contact folder:
 
 * If the app has application permissions, or,

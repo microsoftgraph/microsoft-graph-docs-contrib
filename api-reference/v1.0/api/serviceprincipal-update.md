@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update the properties of [servicePrincipal](../resources/serviceprincipal.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > [!IMPORTANT]
 > Using PATCH to set [**passwordCredential**](../resources/passwordcredential.md) is not supported. Use the [addPassword](./serviceprincipal-addpassword.md) and [removePassword](./serviceprincipal-removepassword.md) methods to update the password or secret for a servicePrincipal.
 

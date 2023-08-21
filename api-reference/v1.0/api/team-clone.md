@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 Create a copy of a [team](../resources/team.md). This operation also creates a copy of the corresponding [group](../resources/group.md).
 You can specify which parts of the team to clone:
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 - **apps** - Copies Microsoft Teams apps that are installed in the team. 
 - **channels** – Copies the channel structure (but not the messages in the channel).
 - **members** – Copies the members and owners of the group.

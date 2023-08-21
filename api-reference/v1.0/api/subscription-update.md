@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Renew a subscription by extending its expiry time.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 The table in the [Permissions](#permissions) section lists the resources that support subscribing to change notifications.
 
 Subscriptions expire after a length of time that varies by resource type. In order to avoid missing change notifications, an app should renew its subscriptions well in advance of their expiry date. See [subscription](../resources/subscription.md) for maximum length of a subscription for each resource type.

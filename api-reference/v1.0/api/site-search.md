@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Search across a SharePoint tenant for [sites][] that match keywords provided.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 The only property that works for sorting is **createdDateTime**. The search filter is a free text search that uses multiple properties when retrieving the search results.
 
 [sites]: ../resources/site.md

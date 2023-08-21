@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 List the tenant users who have yielded to attacks more than once in attack simulation and training campaigns.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 This function supports `@odata.nextLink` for pagination.
 
 ## Permissions

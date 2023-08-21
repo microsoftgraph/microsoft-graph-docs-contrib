@@ -11,6 +11,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get the rules or settings defined for a role management policy. The rules are a collection of following types that are derived from the [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) object:
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 + [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md)
 + [unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md)
 + [unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md)

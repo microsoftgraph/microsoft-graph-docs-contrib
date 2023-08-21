@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Install an [app](../resources/teamsapp.md) to the specified [team](../resources/team.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > **Note:**
 > Currently, installing an app that requires resource-specific consent permissions is not supported in the application context.
 

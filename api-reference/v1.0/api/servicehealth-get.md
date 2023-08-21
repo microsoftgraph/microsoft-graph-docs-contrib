@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [serviceHealth](../resources/servicehealth.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 This operation provides the health information of a specified service for a tenant.
 
 ## Permissions

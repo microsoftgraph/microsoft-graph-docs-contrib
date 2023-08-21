@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Read the properties and relationships of a [hostTracker](../resources/security-hosttracker.md) object.
 
 ## Permissions

@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Create a new [permission](../resources/permission.md) object on a site. 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 >**Note:** You can only use this method to create a new application permission; you can't use it to create a new user site permission.
 
 ## Permissions

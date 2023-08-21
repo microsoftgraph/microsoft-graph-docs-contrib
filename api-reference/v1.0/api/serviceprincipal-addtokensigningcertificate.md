@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Create a self-signed signing certificate and return a [selfSignedCertificate](../resources/selfsignedcertificate.md) object, which is the public part of the generated certificate. 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 The self-signed signing certificate is composed of the following objects, which are added to the [servicePrincipal](../resources/serviceprincipal.md): 
 + The [keyCredentials](../resources/keycredential.md) object with the following objects:
     + A private key object with **usage** set to `Sign`.

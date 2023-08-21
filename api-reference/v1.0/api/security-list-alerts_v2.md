@@ -12,6 +12,8 @@ Namespace: microsoft.graph.security
 
 Get a list of [alert](../resources/security-alert.md) resources that have been created to track suspicious activities in an organization.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 This operation lets you filter and sort through alerts to create an informed cyber security response. It exposes a collection of alerts that were flagged in your network, within the time range you specified in your environment retention policy. The most recent alerts are displayed at the top of the list.
 
 ## Permissions

@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Update an application [permission](../resources/permission.md) object on a site. 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 >**Note:** You can't use this method to update a user site permission.
 
 ## Permissions
