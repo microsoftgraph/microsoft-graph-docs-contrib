@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Policies().PermissionGrantPolicies().ByPermissionGrantPolicieId("permissionGrantPolicy-id").Includes().ByIncludeId("permissionGrantConditionSet-id").Delete(context.Background(), nil)
+graphClient.Policies().PermissionGrantPolicies().ByPermissionGrantPolicyId("permissionGrantPolicy-id").Includes().ByPermissionGrantConditionSetId("permissionGrantConditionSet-id").Delete(context.Background(), nil)
 
 
 ```

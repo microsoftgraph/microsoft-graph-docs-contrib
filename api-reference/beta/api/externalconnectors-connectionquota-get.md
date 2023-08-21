@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/quota
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-connection-forid-quota-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-connection-forid-quota-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 <!-- markdownlint-disable MD024 -->

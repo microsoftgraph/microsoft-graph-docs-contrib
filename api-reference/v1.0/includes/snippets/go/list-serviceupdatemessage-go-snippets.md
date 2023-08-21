@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Admin().ServiceAnnouncement().Messages().Get(context.Background(), nil)
+messages, err := graphClient.Admin().ServiceAnnouncement().Messages().Get(context.Background(), nil)
 
 
 ```

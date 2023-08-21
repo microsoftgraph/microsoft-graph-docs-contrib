@@ -6,7 +6,7 @@ ms.author: ombongifaith
 ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
-ms.date: 11/11/2022
+ms.date: 06/22/2023
 ---
 
 # Azure AD Graph to Microsoft Graph migration FAQ
@@ -17,7 +17,7 @@ This article provides answers to frequently asked questions about migrating from
 
 The Azure AD Graph API offers access to only Azure AD services. The Microsoft Graph API offers a single unified endpoint to access Azure AD services and other Microsoft services such as Microsoft Teams, Microsoft Exchange, and Microsoft Intune.
 
-[Microsoft Graph](/graph/overview) is also more secure and resilient than Azure AD Graph. For this reason, Azure AD Graph has been on a deprecation path since June 30, 2020, and will be retired in the near future as we move all investments to Microsoft Graph. After the retirement, your apps will receive error responses from the Azure AD Graph endpoint. Migrate to Microsoft Graph to avoid loss of functionality.
+[Microsoft Graph](/graph/overview) is also more secure and resilient than Azure AD Graph. For this reason, Azure AD Graph has been on a deprecation path since June 30, 2020, and will enter the retirement phase after June 30, 2023 as we move all investments to Microsoft Graph. Migrate to Microsoft Graph to avoid loss of functionality.
 
 ## As a developer, how do I identify apps that use Azure AD Graph?
 

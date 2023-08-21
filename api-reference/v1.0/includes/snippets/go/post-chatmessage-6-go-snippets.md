@@ -42,7 +42,6 @@ chatMessageAttachment.SetThumbnailUrl(&thumbnailUrl)
 
 attachments := []graphmodels.ChatMessageAttachmentable {
 	chatMessageAttachment,
-
 }
 requestBody.SetAttachments(attachments)
 
@@ -69,11 +68,10 @@ chatMessageHostedContent1.SetAdditionalData(additionalData)
 hostedContents := []graphmodels.ChatMessageHostedContentable {
 	chatMessageHostedContent,
 	chatMessageHostedContent1,
-
 }
 requestBody.SetHostedContents(hostedContents)
 
-result, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().Post(context.Background(), requestBody, nil)
+messages, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

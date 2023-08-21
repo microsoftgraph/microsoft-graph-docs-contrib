@@ -16,15 +16,16 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewExtension()
+extensionName := "Com.Contoso.Deal"
+requestBody.SetExtensionName(&extensionName) 
 additionalData := map[string]interface{}{
-	"extensionName" : "Com.Contoso.Deal", 
 	"companyName" : "Alpine Skis", 
 	"dealValue" : int32(1010100) , 
 	"expirationDate" : "2015-07-03T13:04:00.000Z", 
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Groups().ByGroupId("group-id").Events().ByEventId("event-id").Extensions().Post(context.Background(), requestBody, nil)
+extensions, err := graphClient.Groups().ByGroupId("group-id").Events().ByEventId("event-id").Extensions().Post(context.Background(), requestBody, nil)
 
 
 ```

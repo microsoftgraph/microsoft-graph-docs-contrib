@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/compliance"
+	  graphcompliance "github.com/microsoftgraph/msgraph-beta-sdk-go/compliance"
 	  //other-imports
 )
 
@@ -16,12 +16,12 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-requestForcedelete := true
+requestForcedelete := "true"
 
-requestParameters := &graphconfig.ComplianceEdiscoveryCaseItemTagItemRequestBuilderDeleteQueryParameters{
+requestParameters := &graphcompliance.ComplianceEdiscoveryCaseItemTagItemRequestBuilderDeleteQueryParameters{
 	Forcedelete: &requestForcedelete,
 }
-configuration := &graphconfig.ComplianceEdiscoveryCaseItemTagItemRequestBuilderDeleteRequestConfiguration{
+configuration := &graphcompliance.ComplianceEdiscoveryCaseItemTagItemRequestBuilderDeleteRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 

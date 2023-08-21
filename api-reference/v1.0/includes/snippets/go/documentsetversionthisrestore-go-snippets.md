@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().ByItemId("listItem-id").DocumentSetVersions().ByDocumentSetVersionId("documentSetVersion-id").Restore().Post(context.Background(), nil)
+graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Items().ByListItemId("listItem-id").DocumentSetVersions().ByDocumentSetVersionId("documentSetVersion-id").Restore().Post(context.Background(), nil)
 
 
 ```

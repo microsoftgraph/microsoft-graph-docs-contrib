@@ -79,8 +79,8 @@ DELETE https://graph.microsoft.com/beta/users/{userId}/profile/patents/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/delete-itempatent-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-itempatent-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-itempatent-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

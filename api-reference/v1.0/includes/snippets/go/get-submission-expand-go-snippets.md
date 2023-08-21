@@ -8,21 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/education"
+	  grapheducation "github.com/microsoftgraph/msgraph-sdk-go/education"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.EducationClasseItemAssignmentItemSubmissionItemRequestBuilderGetQueryParameters{
+requestParameters := &grapheducation.EducationClasseItemAssignmentItemSubmissionItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"*"},
 }
-configuration := &graphconfig.EducationClasseItemAssignmentItemSubmissionItemRequestBuilderGetRequestConfiguration{
+configuration := &grapheducation.EducationClasseItemAssignmentItemSubmissionItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().ByAssignmentId("educationAssignment-id").Submissions().BySubmissionId("educationSubmission-id").Get(context.Background(), configuration)
+submissions, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").Assignments().ByEducationAssignmentId("educationAssignment-id").Submissions().ByEducationSubmissionId("educationSubmission-id").Get(context.Background(), configuration)
 
 
 ```

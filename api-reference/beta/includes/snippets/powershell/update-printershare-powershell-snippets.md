@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Devices.CloudPrint
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
 $params = @{
 	displayName = "ShareName"
@@ -12,6 +12,6 @@ $params = @{
 	"printer@odata.bind" = "https://graph.microsoft.com/beta/print/printers/{id}"
 }
 
-Update-MgPrintShare -PrinterShareId $printerShareId -BodyParameter $params
+Update-MgBetaPrintShare -PrinterShareId $printerShareId -BodyParameter $params
 
 ```

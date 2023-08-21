@@ -81,6 +81,10 @@ GET https://graph.microsoft.com/beta/drive/items/{id}/workbook/comments/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/get-workbookcomment-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-workbookcomment-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

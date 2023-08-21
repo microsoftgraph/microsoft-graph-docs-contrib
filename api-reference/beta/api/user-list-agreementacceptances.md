@@ -2,7 +2,7 @@
 title: "List agreementAcceptances"
 description: "Retrieve a list of a user's agreementAcceptance objects."
 ms.localizationpriority: medium
-author: "raprakasMSFT"
+author: "AlexFilipin"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -74,6 +74,14 @@ GET https://graph.microsoft.com/beta/me/agreementAcceptances
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-agreementacceptances-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-agreementacceptances-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-agreementacceptances-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Create a new list in a site."
 title: Create a SharePoint List
 ms.localizationpriority: medium
@@ -45,7 +45,7 @@ In the request body, supply a JSON representation of a [list][] object.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [list][] object in the response body. 
+If successful, this method returns a `201 Created` response code and a [list][] object in the response body.
 
 ## Examples
 
@@ -106,6 +106,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-list-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-list-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -9,14 +9,14 @@ import (
 	  "context"
 	  "github.com/google/uuid"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Groups/Item/ValidateProperties"
+	  graphgroups "github.com/microsoftgraph/msgraph-beta-sdk-go/groups"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewValidatePropertiesPostRequestBody()
+requestBody := graphgroups.NewValidatePropertiesPostRequestBody()
 displayName := "Myprefix_test_mysuffix"
 requestBody.SetDisplayName(&displayName) 
 mailNickname := "Myprefix_test_mysuffix"

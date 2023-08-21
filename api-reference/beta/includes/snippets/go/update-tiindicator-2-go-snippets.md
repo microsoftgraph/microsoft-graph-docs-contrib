@@ -10,7 +10,7 @@ import (
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
 	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/security"
+	  graphsecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/security"
 	  //other-imports
 )
 
@@ -20,7 +20,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "return=representation")
 
-configuration := &graphconfig.SecurityTiIndicatorItemRequestBuilderPatchRequestConfiguration{
+configuration := &graphsecurity.SecurityTiIndicatorItemRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewTiIndicator()
@@ -31,7 +31,7 @@ requestBody.SetConfidence(&confidence)
 description := "description-after-update"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Security().TiIndicators().ByTiIndicatorId("tiIndicator-id").Patch(context.Background(), requestBody, configuration)
+tiIndicators, err := graphClient.Security().TiIndicators().ByTiIndicatorId("tiIndicator-id").Patch(context.Background(), requestBody, configuration)
 
 
 ```

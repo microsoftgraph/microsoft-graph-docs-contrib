@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/deploymentAudiences/7
 [!INCLUDE [sample-code](../includes/snippets/php/get-deploymentaudience-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-deploymentaudience-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

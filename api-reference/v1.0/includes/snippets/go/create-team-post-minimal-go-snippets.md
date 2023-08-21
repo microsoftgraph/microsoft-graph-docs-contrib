@@ -22,9 +22,7 @@ description := "My Sample Team’s Description"
 requestBody.SetDescription(&description) 
 
 
-conversationMember := graphmodels.NewConversationMember()
-odataType := "#microsoft.graph.aadUserConversationMember"
-conversationMember.SetOdataType(&odataType)
+conversationMember := graphmodels.NewAadUserConversationMember()
 roles := []string {
 	"owner",
 }
@@ -36,7 +34,6 @@ conversationMember.SetAdditionalData(additionalData)
 
 members := []graphmodels.ConversationMemberable {
 	conversationMember,
-
 }
 requestBody.SetMembers(members)
 additionalData := map[string]interface{}{
@@ -44,7 +41,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Teams().Post(context.Background(), requestBody, nil)
+teams, err := graphClient.Teams().Post(context.Background(), requestBody, nil)
 
 
 ```

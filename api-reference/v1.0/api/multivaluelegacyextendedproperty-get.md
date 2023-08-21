@@ -135,25 +135,106 @@ This example gets and expands the specified event by including a multi-value ext
 extended property that has its **id** matching the string `StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation`
 (with URL encoding removed here for ease of reading).
 
-<!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/v1.0/me/events('AAMkAGE1M2_bs88AACbuFiiAAA=')?$expand=multiValueExtendedProperties($filter=id%20eq%20'StringArray%20{66f5a359-4659-4830-9070-00050ec6ac6e}%20Name%20Recreation')
+# [HTTP](#tab/http)
+<!-- { "blockType": "request", "name": "multivaluelegacyextendedpropertyget" } -->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/events/AAMkADI0NzVmYjQ0LWQyZTItNDIxYS1iMWE2LTIyZGJiOGM0N2YzMQBGAAAAAABaZwRaNsIxTp0lpjY1il_IBwAXjnwa91gDSKOqCnaDInDMAAAAAAENAAAXjnwa91gDSKOqCnaDInDMAAAtgOgIAAA=?$expand=multiValueExtendedProperties($filter=id%20eq%20'StringArray%20{66f5a359-4659-4830-9070-00050ec6ac6e}%20Name%20Recreation')
+
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/multivaluelegacyextendedpropertyget-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/multivaluelegacyextendedpropertyget-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/multivaluelegacyextendedpropertyget-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/multivaluelegacyextendedpropertyget-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/multivaluelegacyextendedpropertyget-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/multivaluelegacyextendedpropertyget-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/multivaluelegacyextendedpropertyget-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/multivaluelegacyextendedpropertyget-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ##### Response
 
 The response body includes all the properties of the specified event and extended property returned from the filter.
 
 Note: The **event** object shown here is truncated for brevity. All of the properties will be returned from an actual call.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.event"
+} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Me/events/$entity",
-    "@odata.id": "https://graph.microsoft.com/v1.0/users('ddfcd489-628b-40d7-b48b-57002df800e5@1717622f-1d94-4d0c-9d74-709fad664b77')/events('AAMkAGE1M2_bs88AACbuFiiAAA=')",
-    "@odata.etag": "W/\"mODEKWhc/Um6lA3uPm7PPAAAm8k15A==\"",
-    "id": "AAMkAGE1M2_bs88AACbuFiiAAA=",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('4d29052a-70e8-4251-a7de-542b522cdf25')/events(multiValueExtendedProperties())/$entity",
+    "@odata.etag": "W/\"F458GvdYA0ijqgp2gyJwzAAALXs9wA==\"",
+    "id": "AAMkADI0NzVmYjQ0LWQyZTItNDIxYS1iMWE2LTIyZGJiOGM0N2YzMQBGAAAAAABaZwRaNsIxTp0lpjY1il_IBwAXjnwa91gDSKOqCnaDInDMAAAAAAENAAAXjnwa91gDSKOqCnaDInDMAAAtgOgIAAA=",
+    "createdDateTime": "2023-06-13T23:13:17.305298Z",
+    "lastModifiedDateTime": "2023-06-13T23:15:17.761448Z",
+    "changeKey": "F458GvdYA0ijqgp2gyJwzAAALXs9wA==",
+    "categories": [],
+    "transactionId": null,
+    "originalStartTimeZone": "Pacific Standard Time",
+    "originalEndTimeZone": "Pacific Standard Time",
+    "iCalUId": "040000008200E00074C5B7101A82E00800000000742AF7A24C9ED901000000000000000010000000C525CA622368B44D89B3B78E4B44A92A",
+    "reminderMinutesBeforeStart": 15,
+    "isReminderOn": true,
+    "hasAttachments": false,
+    "subject": "Family reunion",
+    "bodyPreview": "Let's get together this Thanksgiving!",
+    "importance": "normal",
+    "sensitivity": "normal",
+    "isAllDay": false,
+    "isCancelled": false,
+    "isOrganizer": true,
+    "responseRequested": true,
+    "seriesMasterId": null,
+    "showAs": "busy",
+    "type": "singleInstance",
+    "webLink": "https://outlook.office365.com/owa/?itemid=AAMkADI0NzVmYjQ0LWQyZTItNDIxYS1iMWE2LTIyZGJiOGM0N2YzMQBGAAAAAABaZwRaNsIxTp0lpjY1il%2BIBwAXjnwa91gDSKOqCnaDInDMAAAAAAENAAAXjnwa91gDSKOqCnaDInDMAAAtgOgIAAA%3D&exvsurl=1&path=/calendar/item",
+    "onlineMeetingUrl": null,
+    "isOnlineMeeting": false,
+    "onlineMeetingProvider": "unknown",
+    "allowNewTimeProposals": true,
+    "occurrenceId": null,
+    "isDraft": false,
+    "hideAttendees": false,
+    "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"></head><body>Let's get together this Thanksgiving!</body></html>"
+    },
     "start": {
         "dateTime": "2015-11-26T17:00:00.0000000",
         "timeZone": "UTC"
@@ -162,12 +243,46 @@ Content-type: application/json
         "dateTime": "2015-11-30T05:00:00.0000000",
         "timeZone": "UTC"
     },
+    "location": {
+        "displayName": "",
+        "locationType": "default",
+        "uniqueIdType": "unknown",
+        "address": {},
+        "coordinates": {}
+    },
+    "locations": [],
+    "recurrence": null,
+    "attendees": [
+        {
+            "type": "required",
+            "status": {
+                "response": "none",
+                "time": "0001-01-01T00:00:00Z"
+            },
+            "emailAddress": {
+                "name": "Terrie Barrera",
+                "address": "Terrie@contoso.com"
+            }
+        },
+        {
+            "type": "required",
+            "status": {
+                "response": "none",
+                "time": "0001-01-01T00:00:00Z"
+            },
+            "emailAddress": {
+                "name": "Lauren Solis",
+                "address": "Lauren@contoso.com"
+            }
+        }
+    ],
     "organizer": {
         "emailAddress": {
-            "name": "Christine Irwin",
-            "address": "christine@contoso.com"
+            "name": "MOD Administrator",
+            "address": "admin@M365x39866865.OnMicrosoft.com"
         }
     },
+    "onlineMeeting": null,
     "multiValueExtendedProperties": [
         {
             "id": "StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",
@@ -177,7 +292,9 @@ Content-type: application/json
                 "Swimming"
             ]
         }
-    ]
+    ],
+    "calendar@odata.associationLink": "https://graph.microsoft.com/v1.0/users('4d29052a-70e8-4251-a7de-542b522cdf25')/calendars('AAMkADI0NzVmYjQ0LWQyZTItNDIxYS1iMWE2LTIyZGJiOGM0N2YzMQAuAAAAAABaZwRaNsIxTp0lpjY1il_IAQAXjnwa91gDSKOqCnaDInDMAAAAAAENAAA=')/$ref",
+    "calendar@odata.navigationLink": "https://graph.microsoft.com/v1.0/users('4d29052a-70e8-4251-a7de-542b522cdf25')/calendars('AAMkADI0NzVmYjQ0LWQyZTItNDIxYS1iMWE2LTIyZGJiOGM0N2YzMQAuAAAAAABaZwRaNsIxTp0lpjY1il_IAQAXjnwa91gDSKOqCnaDInDMAAAAAAENAAA=')"
 }
 ```
 

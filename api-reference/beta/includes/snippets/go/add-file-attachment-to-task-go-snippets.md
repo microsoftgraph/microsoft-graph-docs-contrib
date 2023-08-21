@@ -18,12 +18,10 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 requestBody := graphmodels.NewAttachment()
 name := "menu.txt"
 requestBody.SetName(&name) 
-additionalData := map[string]interface{}{
-	"contentBytes" : "bWFjIGFuZCBjaGVlc2UgdG9kYXk=", 
-}
-requestBody.SetAdditionalData(additionalData)
+contentBytes := []byte("bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
+requestBody.SetContentBytes(&contentBytes) 
 
-result, err := graphClient.Me().Outlook().Tasks().ByTaskId("outlookTask-id").Attachments().Post(context.Background(), requestBody, nil)
+attachments, err := graphClient.Me().Outlook().Tasks().ByOutlookTaskId("outlookTask-id").Attachments().Post(context.Background(), requestBody, nil)
 
 
 ```

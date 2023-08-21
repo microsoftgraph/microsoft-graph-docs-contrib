@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/ServicePrincipals/Item/DeletePasswordSingleSignOnCredentials"
+	  graphserviceprincipals "github.com/microsoftgraph/msgraph-beta-sdk-go/serviceprincipals"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewDeletePasswordSingleSignOnCredentialsPostRequestBody()
+requestBody := graphserviceprincipals.NewDeletePasswordSingleSignOnCredentialsPostRequestBody()
 id := "5793aa3b-cca9-4794-679a240f8b58"
 requestBody.SetId(&id) 
 

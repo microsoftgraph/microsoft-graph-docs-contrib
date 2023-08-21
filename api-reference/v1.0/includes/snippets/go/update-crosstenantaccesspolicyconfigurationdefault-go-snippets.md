@@ -30,7 +30,6 @@ crossTenantAccessPolicyTarget.SetTargetType(&targetType)
 
 targets := []graphmodels.CrossTenantAccessPolicyTargetable {
 	crossTenantAccessPolicyTarget,
-
 }
 usersAndGroups.SetTargets(targets)
 b2bCollaborationOutbound.SetUsersAndGroups(usersAndGroups)
@@ -47,13 +46,12 @@ crossTenantAccessPolicyTarget.SetTargetType(&targetType)
 
 targets := []graphmodels.CrossTenantAccessPolicyTargetable {
 	crossTenantAccessPolicyTarget,
-
 }
 applications.SetTargets(targets)
 b2bCollaborationOutbound.SetApplications(applications)
 requestBody.SetB2bCollaborationOutbound(b2bCollaborationOutbound)
 
-result, err := graphClient.Policies().CrossTenantAccessPolicy().Default().Patch(context.Background(), requestBody, nil)
+default, err := graphClient.Policies().CrossTenantAccessPolicy().Default().Patch(context.Background(), requestBody, nil)
 
 
 ```

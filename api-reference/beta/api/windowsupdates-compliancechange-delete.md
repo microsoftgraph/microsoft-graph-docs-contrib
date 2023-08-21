@@ -79,8 +79,8 @@ DELETE https://graph.microsoft.com/beta/admin/windows/updates/updatePolicies/983
 [!INCLUDE [sample-code](../includes/snippets/php/delete-compliancechange-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-compliancechange-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-compliancechange-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

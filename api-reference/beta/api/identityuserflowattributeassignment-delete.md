@@ -89,6 +89,10 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/userAttribute
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-userattributeassignments-from-b2cidentityuserflow-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-userattributeassignments-from-b2cidentityuserflow-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

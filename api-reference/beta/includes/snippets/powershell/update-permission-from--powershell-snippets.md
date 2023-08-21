@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Sites
+Import-Module Microsoft.Graph.Beta.Sites
 
 $params = @{
 	roles = @(
@@ -12,6 +12,6 @@ $params = @{
 	)
 }
 
-Update-MgSitePermission -SiteId $siteId -PermissionId $permissionId -BodyParameter $params
+Update-MgBetaSitePermission -SiteId $siteId -PermissionId $permissionId -BodyParameter $params
 
 ```

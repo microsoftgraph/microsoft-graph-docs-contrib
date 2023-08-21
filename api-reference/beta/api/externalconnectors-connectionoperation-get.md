@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/operations/3
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-connectionoperation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-connectionoperation-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 <!-- markdownlint-disable MD024 -->

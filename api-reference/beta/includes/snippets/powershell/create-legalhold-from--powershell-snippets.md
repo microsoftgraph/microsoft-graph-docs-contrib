@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Compliance
+Import-Module Microsoft.Graph.Beta.Compliance
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.ediscovery.legalHold"
@@ -21,6 +21,6 @@ $params = @{
 	displayName = "String"
 }
 
-New-MgComplianceEdiscoveryCaseLegalHold -CaseId $caseId -BodyParameter $params
+New-MgBetaComplianceEdiscoveryCaseLegalHold -CaseId $caseId -BodyParameter $params
 
 ```

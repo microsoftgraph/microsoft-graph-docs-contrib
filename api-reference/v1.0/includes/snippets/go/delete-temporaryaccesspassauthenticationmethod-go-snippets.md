@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Users().ByUserId("user-id").Authentication().TemporaryAccessPassMethods().ByTemporaryAccessPassMethodId("temporaryAccessPassAuthenticationMethod-id").Delete(context.Background(), nil)
+graphClient.Users().ByUserId("user-id").Authentication().TemporaryAccessPassMethods().ByTemporaryAccessPassAuthenticationMethodId("temporaryAccessPassAuthenticationMethod-id").Delete(context.Background(), nil)
 
 
 ```

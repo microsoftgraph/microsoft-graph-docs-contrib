@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/external/industryData/dataConnectors
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-azuredatalakeconnector-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-azuredatalakeconnector-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

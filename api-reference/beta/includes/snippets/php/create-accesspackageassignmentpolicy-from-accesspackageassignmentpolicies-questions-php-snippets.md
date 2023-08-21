@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackageAssignmentPolicy();
 $requestBody->setAccessPackageId('b2eba9a1-b357-42ee-83a8-336522ed6cbf');
@@ -47,22 +47,19 @@ $approvalStagesApprovalStage1->setIsEscalationEnabled(false);
 
 $approvalStagesApprovalStage1->setEscalationTimeInMinutes(11520);
 
-$primaryApproversUserSet1 = new UserSet();
-$primaryApproversUserSet1->set@odatatype('#microsoft.graph.groupMembers');
+$primaryApproversUserSet1 = new GroupMembers();
+$primaryApproversUserSet1->setOdataType('#microsoft.graph.groupMembers');
 
 $primaryApproversUserSet1->setIsBackup(true);
 
-$additionalData = [
-		'id' => 'd2dcb9a1-a445-42ee-83a8-476522ed6cbf', 
-		'description' => 'group for users from connected organizations which have no external sponsor', 
-];
-$primaryApproversUserSet1->setAdditionalData($additionalData);
+$primaryApproversUserSet1->setId('d2dcb9a1-a445-42ee-83a8-476522ed6cbf');
 
+$primaryApproversUserSet1->setDescription('group for users from connected organizations which have no external sponsor');
 
 
 $primaryApproversArray []= $primaryApproversUserSet1;
-$primaryApproversUserSet2 = new UserSet();
-$primaryApproversUserSet2->set@odatatype('#microsoft.graph.externalSponsors');
+$primaryApproversUserSet2 = new ExternalSponsors();
+$primaryApproversUserSet2->setOdataType('#microsoft.graph.externalSponsors');
 
 $primaryApproversUserSet2->setIsBackup(false);
 
@@ -78,7 +75,7 @@ $requestApprovalSettings->setApprovalStages($approvalStagesArray);
 
 
 $requestBody->setRequestApprovalSettings($requestApprovalSettings);
-$questionsAccessPackageQuestion1 = new AccessPackageQuestion();
+$questionsAccessPackageQuestion1 = new AccessPackageMultipleChoiceQuestion();
 $questionsAccessPackageQuestion1->setIsRequired(false);
 
 $questionsAccessPackageQuestion1Text = new AccessPackageLocalizedContent();
@@ -96,74 +93,70 @@ $questionsAccessPackageQuestion1Text->setLocalizedTexts($localizedTextsArray);
 
 
 $questionsAccessPackageQuestion1->setText($questionsAccessPackageQuestion1Text);
-$questionsAccessPackageQuestion1->set@odatatype('#microsoft.graph.accessPackageMultipleChoiceQuestion');
+$questionsAccessPackageQuestion1->setOdataType('#microsoft.graph.accessPackageMultipleChoiceQuestion');
 
-$additionalData = [
-'choices' => $choices1 = new ();
-$choices1->setActualValue('AZ');
+$choicesAccessPackageAnswerChoice1 = new AccessPackageAnswerChoice();
+$choicesAccessPackageAnswerChoice1->setActualValue('AZ');
 
-$choices1DisplayValue = new DisplayValue();
-$localizedTexts1 = new ();
-$localizedTexts1->setText('Arizona');
+$choicesAccessPackageAnswerChoice1DisplayValue = new AccessPackageLocalizedContent();
+$localizedTextsAccessPackageLocalizedText1 = new AccessPackageLocalizedText();
+$localizedTextsAccessPackageLocalizedText1->setText('Arizona');
 
-$localizedTexts1->setLanguageCode('es');
-
-
-$localizedTextsArray []= $localizedTexts1;
-$choices1DisplayValue->setLocalizedTexts($localizedTextsArray);
+$localizedTextsAccessPackageLocalizedText1->setLanguageCode('es');
 
 
-
-$choices1->setDisplayValue($choices1DisplayValue);
-
-$choicesArray []= $choices1;
-$choices2 = new ();
-$choices2->setActualValue('CA');
-
-$choices2DisplayValue = new DisplayValue();
-$localizedTexts1 = new ();
-$localizedTexts1->setText('California');
-
-$localizedTexts1->setLanguageCode('es');
-
-
-$localizedTextsArray []= $localizedTexts1;
-$choices2DisplayValue->setLocalizedTexts($localizedTextsArray);
+$localizedTextsArray []= $localizedTextsAccessPackageLocalizedText1;
+$choicesAccessPackageAnswerChoice1DisplayValue->setLocalizedTexts($localizedTextsArray);
 
 
 
-$choices2->setDisplayValue($choices2DisplayValue);
+$choicesAccessPackageAnswerChoice1->setDisplayValue($choicesAccessPackageAnswerChoice1DisplayValue);
 
-$choicesArray []= $choices2;
-$choices3 = new ();
-$choices3->setActualValue('OH');
+$choicesArray []= $choicesAccessPackageAnswerChoice1;
+$choicesAccessPackageAnswerChoice2 = new AccessPackageAnswerChoice();
+$choicesAccessPackageAnswerChoice2->setActualValue('CA');
 
-$choices3DisplayValue = new DisplayValue();
-$localizedTexts1 = new ();
-$localizedTexts1->setText('Ohio');
+$choicesAccessPackageAnswerChoice2DisplayValue = new AccessPackageLocalizedContent();
+$localizedTextsAccessPackageLocalizedText1 = new AccessPackageLocalizedText();
+$localizedTextsAccessPackageLocalizedText1->setText('California');
 
-$localizedTexts1->setLanguageCode('es');
-
-
-$localizedTextsArray []= $localizedTexts1;
-$choices3DisplayValue->setLocalizedTexts($localizedTextsArray);
+$localizedTextsAccessPackageLocalizedText1->setLanguageCode('es');
 
 
+$localizedTextsArray []= $localizedTextsAccessPackageLocalizedText1;
+$choicesAccessPackageAnswerChoice2DisplayValue->setLocalizedTexts($localizedTextsArray);
 
-$choices3->setDisplayValue($choices3DisplayValue);
 
-$choicesArray []= $choices3;
+
+$choicesAccessPackageAnswerChoice2->setDisplayValue($choicesAccessPackageAnswerChoice2DisplayValue);
+
+$choicesArray []= $choicesAccessPackageAnswerChoice2;
+$choicesAccessPackageAnswerChoice3 = new AccessPackageAnswerChoice();
+$choicesAccessPackageAnswerChoice3->setActualValue('OH');
+
+$choicesAccessPackageAnswerChoice3DisplayValue = new AccessPackageLocalizedContent();
+$localizedTextsAccessPackageLocalizedText1 = new AccessPackageLocalizedText();
+$localizedTextsAccessPackageLocalizedText1->setText('Ohio');
+
+$localizedTextsAccessPackageLocalizedText1->setLanguageCode('es');
+
+
+$localizedTextsArray []= $localizedTextsAccessPackageLocalizedText1;
+$choicesAccessPackageAnswerChoice3DisplayValue->setLocalizedTexts($localizedTextsArray);
+
+
+
+$choicesAccessPackageAnswerChoice3->setDisplayValue($choicesAccessPackageAnswerChoice3DisplayValue);
+
+$choicesArray []= $choicesAccessPackageAnswerChoice3;
 $questionsAccessPackageQuestion1->setChoices($choicesArray);
 
 
-'allowsMultipleSelection' => false,
-];
-$questionsAccessPackageQuestion1->setAdditionalData($additionalData);
-
+$questionsAccessPackageQuestion1->setAllowsMultipleSelection(false);
 
 
 $questionsArray []= $questionsAccessPackageQuestion1;
-$questionsAccessPackageQuestion2 = new AccessPackageQuestion();
+$questionsAccessPackageQuestion2 = new AccessPackageTextInputQuestion();
 $questionsAccessPackageQuestion2->setIsRequired(false);
 
 $questionsAccessPackageQuestion2Text = new AccessPackageLocalizedContent();
@@ -181,13 +174,9 @@ $questionsAccessPackageQuestion2Text->setLocalizedTexts($localizedTextsArray);
 
 
 $questionsAccessPackageQuestion2->setText($questionsAccessPackageQuestion2Text);
-$questionsAccessPackageQuestion2->set@odatatype('#microsoft.graph.accessPackageTextInputQuestion');
+$questionsAccessPackageQuestion2->setOdataType('#microsoft.graph.accessPackageTextInputQuestion');
 
-$additionalData = [
-'isSingleLineQuestion' => false,
-];
-$questionsAccessPackageQuestion2->setAdditionalData($additionalData);
-
+$questionsAccessPackageQuestion2->setIsSingleLineQuestion(false);
 
 
 $questionsArray []= $questionsAccessPackageQuestion2;

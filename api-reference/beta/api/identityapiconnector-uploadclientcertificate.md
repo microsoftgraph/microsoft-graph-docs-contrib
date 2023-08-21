@@ -101,8 +101,8 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/identityapiconnector-uploadclientcertificate-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/identityapiconnector-uploadclientcertificate-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/identityapiconnector-uploadclientcertificate-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

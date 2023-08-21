@@ -8,21 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-sdk-go/print"
+	  graphprint "github.com/microsoftgraph/msgraph-sdk-go/print"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.PrintShareItemRequestBuilderGetQueryParameters{
+requestParameters := &graphprint.PrintShareItemRequestBuilderGetQueryParameters{
 	Select: [] string {"id","displayName","capabilities"},
 }
-configuration := &graphconfig.PrintShareItemRequestBuilderGetRequestConfiguration{
+configuration := &graphprint.PrintShareItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Print().Shares().ByShareId("printerShare-id").Get(context.Background(), configuration)
+shares, err := graphClient.Print().Shares().ByPrinterShareId("printerShare-id").Get(context.Background(), configuration)
 
 
 ```

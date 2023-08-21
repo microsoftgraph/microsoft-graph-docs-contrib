@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/me/settings/itemInsights
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-userinsightssettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-userinsightssettings-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

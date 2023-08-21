@@ -8,14 +8,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//security"
+	  graphmodelssecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/models/security"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewEdiscoveryCase()
+requestBody := graphmodelssecurity.NewEdiscoveryCase()
 displayName := "CONTOSO LITIGATION-005"
 requestBody.SetDisplayName(&displayName) 
 description := "Project Bazooka"
@@ -23,7 +23,7 @@ requestBody.SetDescription(&description)
 externalId := "324516"
 requestBody.SetExternalId(&externalId) 
 
-result, err := graphClient.Security().Cases().EdiscoveryCases().Post(context.Background(), requestBody, nil)
+ediscoveryCases, err := graphClient.Security().Cases().EdiscoveryCases().Post(context.Background(), requestBody, nil)
 
 
 ```

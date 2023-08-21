@@ -8,21 +8,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/onpremisespublishingprofiles"
+	  graphonpremisespublishingprofiles "github.com/microsoftgraph/msgraph-beta-sdk-go/onpremisespublishingprofiles"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestParameters := &graphconfig.OnPremisesPublishingProfileItemAgentGroupItemRequestBuilderGetQueryParameters{
+requestParameters := &graphonpremisespublishingprofiles.OnPremisesPublishingProfileItemAgentGroupItemRequestBuilderGetQueryParameters{
 	Expand: [] string {"publishedResources","agents"},
 }
-configuration := &graphconfig.OnPremisesPublishingProfileItemAgentGroupItemRequestBuilderGetRequestConfiguration{
+configuration := &graphonpremisespublishingprofiles.OnPremisesPublishingProfileItemAgentGroupItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.OnPremisesPublishingProfiles().ByOnPremisesPublishingProfileId("onPremisesPublishingProfile-id").AgentGroups().ByAgentGroupId("onPremisesAgentGroup-id").Get(context.Background(), configuration)
+agentGroups, err := graphClient.OnPremisesPublishingProfiles().ByOnPremisesPublishingProfileId("onPremisesPublishingProfile-id").AgentGroups().ByOnPremisesAgentGroupId("onPremisesAgentGroup-id").Get(context.Background(), configuration)
 
 
 ```

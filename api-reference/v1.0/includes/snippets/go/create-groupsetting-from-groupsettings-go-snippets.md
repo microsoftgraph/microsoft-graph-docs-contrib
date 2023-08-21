@@ -46,11 +46,10 @@ values := []graphmodels.SettingValueable {
 	settingValue1,
 	settingValue2,
 	settingValue3,
-
 }
 requestBody.SetValues(values)
 
-result, err := graphClient.GroupSettings().Post(context.Background(), requestBody, nil)
+groupSettings, err := graphClient.GroupSettings().Post(context.Background(), requestBody, nil)
 
 
 ```

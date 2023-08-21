@@ -1,0 +1,385 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "actionAfterRetentionPeriod",
+          "ChangeType": "Addition",
+          "Description": "Added the **actionAfterRetentionPeriod** enumeration type.",
+          "Target": "actionAfterRetentionPeriod"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "behaviorDuringRetentionPeriod",
+          "ChangeType": "Addition",
+          "Description": "Added the **behaviorDuringRetentionPeriod** enumeration type.",
+          "Target": "behaviorDuringRetentionPeriod"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "defaultRecordBehavior",
+          "ChangeType": "Addition",
+          "Description": "Added the **defaultRecordBehavior** enumeration type.",
+          "Target": "defaultRecordBehavior"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "eventPropagationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **eventPropagationStatus** enumeration type.",
+          "Target": "eventPropagationStatus"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "eventStatusType",
+          "ChangeType": "Addition",
+          "Description": "Added the **eventStatusType** enumeration type.",
+          "Target": "eventStatusType"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "queryType",
+          "ChangeType": "Addition",
+          "Description": "Added the **queryType** enumeration type.",
+          "Target": "queryType"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "retentionTrigger",
+          "ChangeType": "Addition",
+          "Description": "Added the **retentionTrigger** enumeration type.",
+          "Target": "retentionTrigger"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "eventPropagationResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [eventPropagationResult](https://learn.microsoft.com/en-us/graph/api/resources/security-eventPropagationResult?view=graph-rest-beta) resource type.",
+          "Target": "eventPropagationResult"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "eventQuery",
+          "ChangeType": "Addition",
+          "Description": "Added the [eventQuery](https://learn.microsoft.com/en-us/graph/api/resources/security-eventQueries?view=graph-rest-beta) resource type.",
+          "Target": "eventQuery"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "retentionDuration",
+          "ChangeType": "Addition",
+          "Description": "Added the [retentionDuration](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionDuration?view=graph-rest-beta) resource type.",
+          "Target": "retentionDuration"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "retentionDurationForever",
+          "ChangeType": "Addition",
+          "Description": "Added the [retentionDurationForever](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionDurationForever?view=graph-rest-beta) resource type.",
+          "Target": "retentionDurationForever"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "retentionDurationInDays",
+          "ChangeType": "Addition",
+          "Description": "Added the [retentionDurationInDays](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionDurationInDays?view=graph-rest-beta) resource type.",
+          "Target": "retentionDurationInDays"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "retentionEventStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [retentionEventStatus](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionEventStatus?view=graph-rest-beta) resource type.",
+          "Target": "retentionEventStatus"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "dispositionReviewStage",
+          "ChangeType": "Addition",
+          "Description": "Added the [dispositionReviewStage](https://learn.microsoft.com/en-us/graph/api/resources/security-dispositionReviewStage?view=graph-rest-beta) resource",
+          "Target": "dispositionReviewStage"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "retentionEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [retentionEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionEvent?view=graph-rest-beta) resource",
+          "Target": "retentionEvent"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "retentionEventType",
+          "ChangeType": "Addition",
+          "Description": "Added the [retentionEventType](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionEventType?view=graph-rest-beta) resource",
+          "Target": "retentionEventType"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "retentionLabel",
+          "ChangeType": "Addition",
+          "Description": "Added the [retentionLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionLabel?view=graph-rest-beta) resource",
+          "Target": "retentionLabel"
+        }
+      ],
+      "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2022-06-23T20:00:41.5572363Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Records management"
+    },
+    {
+      "ChangeList": [
+        {"Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "eventPropagationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **eventPropagationStatus** enumeration type.",
+          "Target": "eventPropagationStatus"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "eventStatusType",
+          "ChangeType": "Addition",
+          "Description": "Added the **eventStatusType** enumeration type.",
+          "Target": "eventStatusType"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "queryType",
+          "ChangeType": "Addition",
+          "Description": "Added the **queryType** enumeration type.",
+          "Target": "queryType"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "eventPropagationResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [eventPropagationResult](https://learn.microsoft.com/en-us/graph/api/resources/security-eventPropagationResult?view=graph-rest-1.0) resource type.",
+          "Target": "eventPropagationResult"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "eventQuery",
+          "ChangeType": "Addition",
+          "Description": "Added the [eventQuery](https://learn.microsoft.com/en-us/graph/api/resources/security-eventQuery?view=graph-rest-1.0) resource type.",
+          "Target": "eventQuery"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "retentionEventStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [retentionEventStatus](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionEventStatus?view=graph-rest-1.0) resource type.",
+          "Target": "retentionEventStatus"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "retentionEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [retentionEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionEvent?view=graph-rest-1.0) resource",
+          "Target": "retentionEvent"
+        },
+        {
+          "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+          "ApiChange": "Resource",
+          "ChangedApiName": "retentionEventType",
+          "ChangeType": "Addition",
+          "Description": "Added the [retentionEventType](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionEventType?view=graph-rest-1.0) resource",
+          "Target": "retentionEventType"
+        }
+      ],
+      "Id": "a8aa5b98-5fb3-4aba-acec-5e85209a4026",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-03-09T20:00:41.5572363Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Records management"
+   }, 
+   {
+     "ChangeList": [
+          {
+            "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+            "ApiChange": "Resource",
+            "ChangedApiName": "appliedCategory",
+            "ChangeType": "Addition",
+            "Description": "Added the [appliedCategory](https://learn.microsoft.com/en-us/graph/api/resources/security-appliedCategory?view=graph-rest-beta) resource type.",
+            "Target": "appliedCategory"
+          },
+          {
+            "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+            "ApiChange": "Resource",
+            "ChangedApiName": "authority",
+            "ChangeType": "Addition",
+            "Description": "Added the [authority](https://learn.microsoft.com/en-us/graph/api/resources/security-authority?view=graph-rest-beta) resource type.",
+            "Target": "authority"
+          },
+          {
+            "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+            "ApiChange": "Resource",
+            "ChangedApiName": "citation",
+            "ChangeType": "Addition",
+            "Description": "Added the [citation](https://learn.microsoft.com/en-us/graph/api/resources/security-citation?view=graph-rest-beta) resource type.",
+            "Target": "citation"
+          },
+          {
+            "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+            "ApiChange": "Resource",
+            "ChangedApiName": "department",
+            "ChangeType": "Addition",
+            "Description": "Added the [department](https://learn.microsoft.com/en-us/graph/api/resources/security-department?view=graph-rest-beta) resource type.",
+            "Target": "department"
+          },
+          {
+            "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+            "ApiChange": "Resource",
+            "ChangedApiName": "filePlanReference",
+            "ChangeType": "Addition",
+            "Description": "Added the [filePlanReference](https://learn.microsoft.com/en-us/graph/api/resources/security-filePlanReference?view=graph-rest-beta) resource type.",
+            "Target": "filePlanReference"
+          },
+          {
+            "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+            "ApiChange": "Resource",
+            "ChangedApiName": "subCategory",
+            "ChangeType": "Addition",
+            "Description": "Added the [subCategory](https://learn.microsoft.com/en-us/graph/api/resources/security-subCategory?view=graph-rest-beta) resource type.",
+            "Target": "subCategory"
+          },
+          {
+            "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+            "ApiChange": "Resource",
+            "ChangedApiName": "authorityTemplate",
+            "ChangeType": "Addition",
+            "Description": "Added the [authorityTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-authorityTemplate?view=graph-rest-beta) resource",
+            "Target": "authorityTemplate"
+          },
+          {
+            "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+            "ApiChange": "Resource",
+            "ChangedApiName": "categoryTemplate",
+            "ChangeType": "Addition",
+            "Description": "Added the [categoryTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-categoryTemplate?view=graph-rest-beta) resource",
+            "Target": "categoryTemplate"
+          },
+          {
+            "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+            "ApiChange": "Resource",
+            "ChangedApiName": "citationTemplate",
+            "ChangeType": "Addition",
+            "Description": "Added the [citationTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-citationTemplate?view=graph-rest-beta) resource",
+            "Target": "citationTemplate"
+          },
+          {
+            "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+            "ApiChange": "Resource",
+            "ChangedApiName": "departmentTemplate",
+            "ChangeType": "Addition",
+            "Description": "Added the [departmentTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-departmentTemplate?view=graph-rest-beta) resource",
+            "Target": "departmentTemplate"
+          },
+          {
+            "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+            "ApiChange": "Resource",
+            "ChangedApiName": "filePlanDescriptor",
+            "ChangeType": "Addition",
+            "Description": "Added the [filePlanDescriptor](https://learn.microsoft.com/en-us/graph/api/resources/security-filePlanDescriptor?view=graph-rest-beta) resource",
+            "Target": "filePlanDescriptor"
+          },
+          {
+            "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+            "ApiChange": "Resource",
+            "ChangedApiName": "filePlanDescriptorBase",
+            "ChangeType": "Addition",
+            "Description": "Added the [filePlanDescriptorBase](https://learn.microsoft.com/en-us/graph/api/resources/security-filePlanDescriptorBase?view=graph-rest-beta) resource type",
+            "Target": "filePlanDescriptorBaser"
+          },
+          {
+            "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+            "ApiChange": "Resource",
+            "ChangedApiName": "filePlanDescriptorTemplate",
+            "ChangeType": "Addition",
+            "Description": "Added the [filePlanDescriptorTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-filePlanDescriptorTemplate?view=graph-rest-beta) resource",
+            "Target": "filePlanDescriptorTemplate"
+          },
+          {
+            "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+            "ApiChange": "Resource",
+            "ChangedApiName": "filePlanReferenceTemplate",
+            "ChangeType": "Addition",
+            "Description": "Added the [filePlanReferenceTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-filePlanReferenceTemplate?view=graph-rest-beta) resource",
+            "Target": "filePlanReferenceTemplate"
+          },
+          {
+            "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+            "ApiChange": "Relationship",
+            "ChangedApiName": "descriptors",
+            "ChangeType": "Addition",
+            "Description": "Added the **descriptors** relationship to the [retentionLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionLabel?view=graph-rest-beta) resource.",
+            "Target": "retentionLabel"
+          },
+          {
+            "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+            "ApiChange": "Resource",
+            "ChangedApiName": "subCategoryTemplate",
+            "ChangeType": "Addition",
+            "Description": "Added the [subCategoryTemplate](https://learn.microsoft.com/en-us/graph/api/resources/security-subCategoryTemplate?view=graph-rest-beta) resource",
+            "Target": "subCategoryTemplate"
+          },
+          {
+            "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+            "ApiChange": "Resource",
+            "ChangedApiName": "labelsRoot",
+            "ChangeType": "Addition",
+            "Description": "Added the [labelsRoot](https://learn.microsoft.com/en-us/graph/api/resources/security-labelsRoot?view=graph-rest-beta) resource",
+            "Target": "labelsRoot"
+          },
+          {
+            "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+            "ApiChange": "GET",
+            "ChangedApiName": "retentionLabel",
+            "ChangeType": "Addition",
+            "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-labelsroot-list-retentionlabel?view=graph-rest-beta) operation to [retentionLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionLabel?view=graph-rest-beta) resource",
+            "Target": "subCategoryTemplate"
+          },
+          {
+            "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+            "ApiChange": "POST",
+            "ChangedApiName": "retentionLabel",
+            "ChangeType": "Addition",
+            "Description": "Added the [create](https://learn.microsoft.com/en-us/graph/api/security-labelsroot-post-retentionlabel?view=graph-rest-beta) operation to [retentionLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionLabel?view=graph-rest-beta) resource",
+            "Target": "subCategoryTemplate"
+          }
+        ],
+        "Id": "523c6227-aa1d-473f-8c16-50fd37ca12c6",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-04-04T14:01:24.5697379Z",
+        "WorkloadArea": "Security",
+        "SubArea": "Records management"
+    }
+  ]
+}

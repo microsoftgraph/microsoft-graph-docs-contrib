@@ -46,11 +46,10 @@ buckets := []graphmodels.PlannerPlanConfigurationBucketLocalizationable {
 	plannerPlanConfigurationBucketLocalization1,
 	plannerPlanConfigurationBucketLocalization2,
 	plannerPlanConfigurationBucketLocalization3,
-
 }
 requestBody.SetBuckets(buckets)
 
-result, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().PlanConfiguration().Localizations().ByLocalizationId("plannerPlanConfigurationLocalization-id").Patch(context.Background(), requestBody, nil)
+localizations, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().PlanConfiguration().Localizations().ByPlannerPlanConfigurationLocalizationId("plannerPlanConfigurationLocalization-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

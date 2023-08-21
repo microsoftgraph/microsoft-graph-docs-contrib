@@ -92,6 +92,10 @@ DELETE https://graph.microsoft.com/beta/external/industryData/years/0c629a1a-a85
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-yeartimeperioddefinition-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-yeartimeperioddefinition-from--python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

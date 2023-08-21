@@ -53,6 +53,7 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 
 #### Request
 The following is an example of a request that adds Google as identity provider option for account creation.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_authenticationeventsflow"
@@ -66,6 +67,15 @@ POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc3
 }
 ```
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-authenticationeventsflow-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authenticationeventsflow-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following is an example of the response

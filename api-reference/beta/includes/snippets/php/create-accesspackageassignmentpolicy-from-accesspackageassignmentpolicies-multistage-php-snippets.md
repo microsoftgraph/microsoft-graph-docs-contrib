@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AccessPackageAssignmentPolicy();
 $requestBody->setAccessPackageId('string (identifier)');
@@ -27,7 +27,7 @@ $requestorSettings->setScopeType('AllExistingConnectedOrganizationSubjects');
 
 $requestorSettings->setAcceptRequests(true);
 
-$requestorSettings->setAllowedRequestors([]);
+$requestorSettings->setAllowedRequestors([	]);
 
 
 $requestBody->setRequestorSettings($requestorSettings);
@@ -49,22 +49,19 @@ $approvalStagesApprovalStage1->setIsEscalationEnabled(true);
 
 $approvalStagesApprovalStage1->setEscalationTimeInMinutes(11520);
 
-$primaryApproversUserSet1 = new UserSet();
-$primaryApproversUserSet1->set@odatatype('#microsoft.graph.groupMembers');
+$primaryApproversUserSet1 = new GroupMembers();
+$primaryApproversUserSet1->setOdataType('#microsoft.graph.groupMembers');
 
 $primaryApproversUserSet1->setIsBackup(true);
 
-$additionalData = [
-	'id' => 'string (identifier)', 
-	'description' => 'group for users from connected organizations which have no external sponsor', 
-];
-$primaryApproversUserSet1->setAdditionalData($additionalData);
+$primaryApproversUserSet1->setId('string (identifier)');
 
+$primaryApproversUserSet1->setDescription('group for users from connected organizations which have no external sponsor');
 
 
 $primaryApproversArray []= $primaryApproversUserSet1;
-$primaryApproversUserSet2 = new UserSet();
-$primaryApproversUserSet2->set@odatatype('#microsoft.graph.externalSponsors');
+$primaryApproversUserSet2 = new ExternalSponsors();
+$primaryApproversUserSet2->setOdataType('#microsoft.graph.externalSponsors');
 
 $primaryApproversUserSet2->setIsBackup(false);
 
@@ -73,17 +70,14 @@ $primaryApproversArray []= $primaryApproversUserSet2;
 $approvalStagesApprovalStage1->setPrimaryApprovers($primaryApproversArray);
 
 
-$escalationApproversUserSet1 = new UserSet();
-$escalationApproversUserSet1->set@odatatype('#microsoft.graph.singleUser');
+$escalationApproversUserSet1 = new SingleUser();
+$escalationApproversUserSet1->setOdataType('#microsoft.graph.singleUser');
 
 $escalationApproversUserSet1->setIsBackup(true);
 
-$additionalData = [
-'id' => 'string (identifier)', 
-'description' => 'user if the external sponsor does not respond', 
-];
-$escalationApproversUserSet1->setAdditionalData($additionalData);
+$escalationApproversUserSet1->setId('string (identifier)');
 
+$escalationApproversUserSet1->setDescription('user if the external sponsor does not respond');
 
 
 $escalationApproversArray []= $escalationApproversUserSet1;
@@ -101,22 +95,19 @@ $approvalStagesApprovalStage2->setIsEscalationEnabled(true);
 
 $approvalStagesApprovalStage2->setEscalationTimeInMinutes(11520);
 
-$primaryApproversUserSet1 = new UserSet();
-$primaryApproversUserSet1->set@odatatype('#microsoft.graph.groupMembers');
+$primaryApproversUserSet1 = new GroupMembers();
+$primaryApproversUserSet1->setOdataType('#microsoft.graph.groupMembers');
 
 $primaryApproversUserSet1->setIsBackup(true);
 
-$additionalData = [
-'id' => 'string (identifier)', 
-'description' => 'group for users from connected organizations which have no internal sponsor', 
-];
-$primaryApproversUserSet1->setAdditionalData($additionalData);
+$primaryApproversUserSet1->setId('string (identifier)');
 
+$primaryApproversUserSet1->setDescription('group for users from connected organizations which have no internal sponsor');
 
 
 $primaryApproversArray []= $primaryApproversUserSet1;
-$primaryApproversUserSet2 = new UserSet();
-$primaryApproversUserSet2->set@odatatype('#microsoft.graph.internalSponsors');
+$primaryApproversUserSet2 = new InternalSponsors();
+$primaryApproversUserSet2->setOdataType('#microsoft.graph.internalSponsors');
 
 $primaryApproversUserSet2->setIsBackup(false);
 
@@ -125,17 +116,14 @@ $primaryApproversArray []= $primaryApproversUserSet2;
 $approvalStagesApprovalStage2->setPrimaryApprovers($primaryApproversArray);
 
 
-$escalationApproversUserSet1 = new UserSet();
-$escalationApproversUserSet1->set@odatatype('#microsoft.graph.singleUser');
+$escalationApproversUserSet1 = new SingleUser();
+$escalationApproversUserSet1->setOdataType('#microsoft.graph.singleUser');
 
 $escalationApproversUserSet1->setIsBackup(true);
 
-$additionalData = [
-'id' => 'string (identifier)', 
-'description' => 'user if the internal sponsor does not respond', 
-];
-$escalationApproversUserSet1->setAdditionalData($additionalData);
+$escalationApproversUserSet1->setId('string (identifier)');
 
+$escalationApproversUserSet1->setDescription('user if the internal sponsor does not respond');
 
 
 $escalationApproversArray []= $escalationApproversUserSet1;
@@ -156,7 +144,7 @@ $accessReviewSettings->setRecurrenceType('quarterly');
 
 $accessReviewSettings->setReviewerType('Self');
 
-$accessReviewSettings->setStartDateTime(new DateTime('2020-04-01T07:59:59.998Z'));
+$accessReviewSettings->setStartDateTime(new \DateTime('2020-04-01T07:59:59.998Z'));
 
 $accessReviewSettings->setDurationInDays(25);
 

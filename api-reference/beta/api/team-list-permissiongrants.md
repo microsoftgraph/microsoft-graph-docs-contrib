@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/teams/14c981a4-dca9-4565-bae6-e13ada8861be/
 [!INCLUDE [sample-code](../includes/snippets/powershell/team-list-permission-grants-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/team-list-permission-grants-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -139,5 +143,7 @@ Content-type: application/json
 ```
 
 ## See also
-- [List permission grants of a group](group-list-permissionGrants.md)
-- [List permission grants of a chat](chat-list-permissionGrants.md)
+
+- [List permission grants of a chat](chat-list-permissiongrants.md)
+- [List permission grants of a group](group-list-permissiongrants.md)
+- [List permission grants of a user](user-list-permissiongrants.md)

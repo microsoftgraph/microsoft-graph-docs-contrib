@@ -8,14 +8,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Applications/Item/AddKey"
+	  graphapplications "github.com/microsoftgraph/msgraph-sdk-go/applications"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAddKeyPostRequestBody()
+requestBody := graphapplications.NewAddKeyPostRequestBody()
 keyCredential := graphmodels.NewKeyCredential()
 type := "X509CertAndPassword"
 keyCredential.SetType(&type) 
@@ -31,7 +32,7 @@ requestBody.SetPasswordCredential(passwordCredential)
 proof := "eyJ0eXAiOiJ..."
 requestBody.SetProof(&proof) 
 
-result, err := graphClient.Applications().ByApplicationId("application-id").AddKey().Post(context.Background(), requestBody, nil)
+addKey, err := graphClient.Applications().ByApplicationId("application-id").AddKey().Post(context.Background(), requestBody, nil)
 
 
 ```

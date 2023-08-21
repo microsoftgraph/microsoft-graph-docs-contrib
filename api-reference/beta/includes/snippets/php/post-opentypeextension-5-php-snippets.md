@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Conversation();
 $requestBody->setTopic('Does anyone have a second?');
@@ -15,20 +15,28 @@ $requestBody->setTopic('Does anyone have a second?');
 $threadsConversationThread1 = new ConversationThread();
 $postsPost1 = new Post();
 $postsPost1Body = new ItemBody();
-$postsPost1Body->setContentType(new BodyType('html'));
+$postsPost1Body->setContentType(new BodyType('hTML'));
 
 $postsPost1Body->setContent('This is urgent!');
 
 
 $postsPost1->setBody($postsPost1Body);
-$extensionsExtension1 = new Extension();
-$extensionsExtension1->set@odatatype('microsoft.graph.openTypeExtension');
+$extensionsExtension1 = new OpenTypeExtension();
+$extensionsExtension1->setOdataType('microsoft.graph.openTypeExtension');
+
+$extensionsExtension1->setExtensionName('Com.Contoso.Benefits');
 
 $additionalData = [
-		'extensionName' => 'Com.Contoso.Benefits', 
 		'companyName' => 'Contoso', 
 		'expirationDate' => '2016-08-03T11:00:00.000Z', 
-		'topPicks' => ['Employees only', 'Add spouse or guest', 'Add family', ],
+		'topPicks' => [
+				[
+				],
+				[
+				],
+				[
+				],
+			],
 ];
 $extensionsExtension1->setAdditionalData($additionalData);
 

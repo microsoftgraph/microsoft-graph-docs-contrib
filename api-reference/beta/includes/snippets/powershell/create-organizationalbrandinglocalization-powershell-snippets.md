@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
 	backgroundColor = "#00000F"
@@ -12,6 +12,6 @@ $params = @{
 	signInPageText = " "
 }
 
-New-MgOrganizationBrandingLocalization -OrganizationId $organizationId -BodyParameter $params
+New-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId -BodyParameter $params
 
 ```

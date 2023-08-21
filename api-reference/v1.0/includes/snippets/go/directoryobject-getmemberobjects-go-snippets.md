@@ -8,18 +8,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/DirectoryObjects/Item/GetMemberObjects"
+	  graphdirectoryobjects "github.com/microsoftgraph/msgraph-sdk-go/directoryobjects"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewGetMemberObjectsPostRequestBody()
+requestBody := graphdirectoryobjects.NewGetMemberObjectsPostRequestBody()
 securityEnabledOnly := true
 requestBody.SetSecurityEnabledOnly(&securityEnabledOnly) 
 
-result, err := graphClient.DirectoryObjects().ByDirectoryObjectId("directoryObject-id").GetMemberObjects().Post(context.Background(), requestBody, nil)
+getMemberObjects, err := graphClient.DirectoryObjects().ByDirectoryObjectId("directoryObject-id").GetMemberObjects().Post(context.Background(), requestBody, nil)
 
 
 ```

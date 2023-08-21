@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
+
 Represents a web component that provides details about a web page or server infrastructure gleaned from a web crawl or scan. This information can be used to detect bad actors or sites that are compromised. It can also help users understand whether a site is vulnerable to a specific attack or compromise.
 
 A host component is associated with a [host](../resources/security-host.md) resource.

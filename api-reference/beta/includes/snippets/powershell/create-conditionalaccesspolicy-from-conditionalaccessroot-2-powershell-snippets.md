@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	displayName = "Block access to EXO non-trusted regions."
@@ -37,6 +37,6 @@ $params = @{
 	}
 }
 
-New-MgIdentityConditionalAccessPolicy -BodyParameter $params
+New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
 
 ```

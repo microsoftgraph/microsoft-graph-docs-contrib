@@ -16,12 +16,10 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAuthenticationMethodConfiguration()
-additionalData := map[string]interface{}{
-	"isOfficePhoneAllowed" : "false", 
-}
-requestBody.SetAdditionalData(additionalData)
+isOfficePhoneAllowed := false
+requestBody.SetIsOfficePhoneAllowed(&isOfficePhoneAllowed) 
 
-result, err := graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurations().ByAuthenticationMethodConfigurationId("authenticationMethodConfiguration-id").Patch(context.Background(), requestBody, nil)
+authenticationMethodConfigurations, err := graphClient.Policies().AuthenticationMethodsPolicy().AuthenticationMethodConfigurations().ByAuthenticationMethodConfigurationId("authenticationMethodConfiguration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

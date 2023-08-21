@@ -8,18 +8,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//industryData"
+	  graphmodelsindustrydata "github.com/microsoftgraph/msgraph-beta-sdk-go/models/industrydata"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewIndustryDataConnector()
+requestBody := graphmodelsindustrydata.NewIndustryDataConnector()
 displayName := "API Monitor 60201009"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.External().IndustryData().DataConnectors().ByDataConnectorId("industryDataConnector-id").Patch(context.Background(), requestBody, nil)
+dataConnectors, err := graphClient.External().IndustryData().DataConnectors().ByIndustryDataConnectorId("industryDataConnector-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

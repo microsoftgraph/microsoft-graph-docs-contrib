@@ -58,6 +58,7 @@ If successful, this method returns a `200 OK` response code and a new [identityU
 
 #### Request
 The following is an example of a request to retrieve the attributes associated with a user flow.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_onAttributeCollectionExternalUsersSelfServiceSignUp"
@@ -66,6 +67,16 @@ The following is an example of a request to retrieve the attributes associated w
 ``` http
 GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37-d421-421d-857b-87804d61e33e/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAttributeCollection/microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp/attributes/
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-onattributecollectionexternalusersselfservicesignup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-onattributecollectionexternalusersselfservicesignup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 The following is an example of the response

@@ -2,7 +2,7 @@
 title: "Azure Active Directory consent requests"
 description: "Use the consent request APIs to configure the consent request workflow and to manage consent requests for users attempting to access apps that require admin consent."
 ms.localizationpriority: medium
-author: "psignoret"
+author: "eringreenlee"
 ms.prod: "governance"
 doc_type: conceptualPageType
 ms.date: 09/28/2022

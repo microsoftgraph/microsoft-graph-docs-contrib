@@ -1,7 +1,7 @@
 ---
 title: "writebackConfiguration resource type"
 description: "Represents a writeback state on Azure AD cloud groups (Microsoft 365 and security groups)."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: resourcePageType

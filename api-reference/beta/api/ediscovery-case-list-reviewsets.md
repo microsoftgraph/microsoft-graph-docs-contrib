@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/{caseId}/review
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-reviewset-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-reviewset-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

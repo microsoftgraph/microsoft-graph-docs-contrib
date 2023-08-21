@@ -8,20 +8,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/ServicePrincipals/Item/Owners/Item/Ref"
+	  graphserviceprincipals "github.com/microsoftgraph/msgraph-sdk-go/serviceprincipals"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.New$refDeleteRequestBody()
+requestBody := graphserviceprincipals.New$refDeleteRequestBody()
 additionalData := map[string]interface{}{
 	"odataId" : "https://graph.microsoft.com/v1.0/directoryObjects/{id}", 
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Owners().ByOwnerId("directoryObject-id").Ref().Delete(context.Background(), requestBody, nil)
+graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Owners().ByDirectoryObjectId("directoryObject-id").Ref().Delete(context.Background(), requestBody, nil)
 
 
 ```

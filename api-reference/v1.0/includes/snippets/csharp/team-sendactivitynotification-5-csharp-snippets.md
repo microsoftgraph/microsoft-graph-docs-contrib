@@ -20,15 +20,10 @@ var requestBody = new Microsoft.Graph.Teams.Item.SendActivityNotification.SendAc
 	{
 		Content = "Internal spending team has a pending finance approval requests",
 	},
-	Recipient = new TeamworkNotificationRecipient
+	Recipient = new TeamMembersNotificationRecipient
 	{
 		OdataType = "microsoft.graph.teamMembersNotificationRecipient",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"teamId" , "e8bece96-d393-4b9b-b8da-69cedef1a7e7"
-			},
-		},
+		TeamId = "e8bece96-d393-4b9b-b8da-69cedef1a7e7",
 	},
 	TemplateParameters = new List<KeyValuePair>
 	{

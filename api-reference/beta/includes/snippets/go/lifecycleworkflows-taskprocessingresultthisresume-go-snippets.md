@@ -8,15 +8,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/IdentityGovernance/LifecycleWorkflows/Workflows/Item/Tasks/Item/TaskProcessingResults/Item/MicrosoftGraphIdentityGovernanceResume"
+	  graphidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/identitygovernance"
+	  graphmodelsidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/models/identitygovernance"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewResumePostRequestBody()
-data := graphmodels.NewCustomTaskExtensionCallbackData()
+requestBody := graphidentitygovernance.NewResumePostRequestBody()
+data := graphmodelsidentitygovernance.NewCustomTaskExtensionCallbackData()
 operationStatus := graphmodels.COMPLETED_CUSTOMTASKEXTENSIONOPERATIONSTATUS 
 data.SetOperationStatus(&operationStatus) 
 requestBody.SetData(data)

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new AuthenticationEventListener
+var requestBody = new OnTokenIssuanceStartListener
 {
 	OdataType = "#microsoft.graph.onTokenIssuanceStartListener",
 	Conditions = new AuthenticationConditions
@@ -26,17 +26,12 @@ var requestBody = new AuthenticationEventListener
 		},
 	},
 	Priority = 500,
-	AdditionalData = new Dictionary<string, object>
+	Handler = new OnTokenIssuanceStartCustomExtensionHandler
 	{
+		OdataType = "#microsoft.graph.onTokenIssuanceStartCustomExtensionHandler",
+		CustomExtension = new OnTokenIssuanceStartCustomExtension
 		{
-			"handler" , new 
-			{
-				OdataType = "#microsoft.graph.onTokenIssuanceStartCustomExtensionHandler",
-				CustomExtension = new 
-				{
-					Id = "6fc5012e-7665-43d6-9708-4370863f4e6e",
-				},
-			}
+			Id = "6fc5012e-7665-43d6-9708-4370863f4e6e",
 		},
 	},
 };
