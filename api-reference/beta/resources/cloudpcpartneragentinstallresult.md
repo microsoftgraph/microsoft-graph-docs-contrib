@@ -23,6 +23,7 @@ Describe installation result details for a partner agent on a Cloud PC.
 |installStatus|[cloudPcPartnerAgentInstallStatus](#cloudpcpartneragentinstallstatus-values)|The status of a partner agent installation. Possible values are: installed, installFailed, installing, uninstalling, uninstallFailed and licensed. Read-Only.|
 |isThirdPartyPartner|Boolean|Indicates if the partner agent is a third party. When 'TRUE', the agent is a third-party (non-Microsoft) agent.  When 'FALSE', the agent is a Microsoft agent or is not known.  The default value is 'FALSE'.|
 |retriable|Boolean|Indicates if the partner agent is a third party. When 'TRUE', the agent is a third-party (non-Microsoft) agent. When 'FALSE', the agent is a Microsoft agent or is not known. The default value is 'FALSE'.|
+|errorMessage|string|Indicates detailed error message when the partner agent installation failed.|
 
 ### cloudPcPartnerAgentName values
 
@@ -62,6 +63,7 @@ The following is a JSON representation of the resource.
   "partnerAgentName": "String",
   "installStatus": "String",
   "isThirdPartyPartner": "Boolean",
-  "retriable": "Boolean"
+  "retriable": "Boolean",
+  "errorMessage": "String"
 }
 ```
