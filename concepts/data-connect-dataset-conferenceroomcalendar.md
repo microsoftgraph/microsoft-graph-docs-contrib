@@ -35,7 +35,7 @@ The ConferenceRoomCalendar_v0 dataset can be joined with relevant events categor
 
 ## Definitions
 
-- Events are created in user's calendars or the default calendar of a Microsoft 365 group. 
+- Events are created in users' calendars or the default calendar of a Microsoft 365 group. 
 - The maximum number of attendees included in an event and the maximum number of recipients in an 'eventMessage' sent from a Microsoft Exchange Online mailbox is 500.
 
 ## Schema
