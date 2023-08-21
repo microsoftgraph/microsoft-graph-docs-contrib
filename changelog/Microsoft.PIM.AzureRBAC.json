@@ -7,33 +7,43 @@
           "ApiChange": "Permission",
           "ChangedApiName": "RoleAssignmentSchedule.Read.Directory",
           "ChangeType": "Addition",
-          "Description": "Added support for the permission of `RoleAssignmentSchedule.Read.Directory` to the read operations of the [unifiedRoleAssignmentSchedule](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroleassignmentschedule?view=graph-rest-1.0),  [unifiedRoleAssignmentScheduleInstance](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroleassignmentscheduleinstance?view=graph-rest-1.0), and  [unifiedRoleAssignmentScheduleRequest](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroleassignmentschedulerequest?view=graph-rest-1.0) resources.",
-          "Target": "unifiedRoleAssignmentSchedule"
+          "Description": "Added support for the permission of `RoleAssignmentSchedule.Read.Directory` to the read operations of the [unifiedRoleAssignmentSchedule](https://learn.microsoft.com/graph/api/resources/unifiedroleassignmentschedule?view=graph-rest-1.0),  [unifiedRoleAssignmentScheduleInstance](https://learn.microsoft.com/graph/api/resources/unifiedroleassignmentscheduleinstance?view=graph-rest-1.0), and [unifiedRoleAssignmentScheduleRequest](https://learn.microsoft.com/graph/api/resources/unifiedroleassignmentschedulerequest?view=graph-rest-1.0) resources.",
+          "Target": "unifiedRoleAssignmentScheduleRequest"
         },
         {
           "Id": "4f1643d6-24e4-49ff-900e-d62cd5833fcb",
           "ApiChange": "Permission",
           "ChangedApiName": "RoleEligibilitySchedule.Read.Directory",
           "ChangeType": "Addition",
-          "Description": "Added support for the permission of `RoleEligibilitySchedule.Read.Directory` to the read operations of the [unifiedRoleEligibilitySchedule](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroleeligibilityschedule?view=graph-rest-1.0),  [unifiedRoleEligibilityScheduleInstance](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroleeligibilityscheduleinstance?view=graph-rest-1.0), and  [unifiedRoleEligibilityScheduleRequest](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroleeligibilityschedulerequest?view=graph-rest-1.0) resources.",
-          "Target": "unifiedRoleEligibilitySchedule"
+          "Description": "Added support for the permission of `RoleEligibilitySchedule.Read.Directory` to the read operations of the [unifiedRoleEligibilitySchedule](https://learn.microsoft.com/graph/api/resources/unifiedroleeligibilityschedule?view=graph-rest-1.0),  [unifiedRoleEligibilityScheduleInstance](https://learn.microsoft.com/graph/api/resources/unifiedroleeligibilityscheduleinstance?view=graph-rest-1.0), and  [unifiedRoleEligibilityScheduleRequest](https://learn.microsoft.com/graph/api/resources/unifiedroleeligibilityschedulerequest?view=graph-rest-1.0) resources.",
+          "Target": "unifiedRoleEligibilityScheduleRequest"
         },
         {
           "Id": "fb113dca-4710-47a6-bc96-577e5490d987",
           "ApiChange": "Permission",
           "ChangedApiName": "RoleAssignmentSchedule.ReadWrite.Directory",
           "ChangeType": "Addition",
-          "Description": "Added support for the permission of `RoleAssignmentSchedule.ReadWrite.Directory` to the read and write operations of the [unifiedRoleAssignmentSchedule](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroleassignmentschedule?view=graph-rest-1.0),  [unifiedRoleAssignmentScheduleInstance](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroleassignmentscheduleinstance?view=graph-rest-1.0), and  [unifiedRoleAssignmentScheduleRequest](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroleassignmentschedulerequest?view=graph-rest-1.0) resources.",
-          "Target": "unifiedRoleAssignmentSchedule"
+          "Description": "Added support for the permission of `RoleAssignmentSchedule.ReadWrite.Directory` to the read and write operations of the [unifiedRoleAssignmentSchedule](https://learn.microsoft.com/graph/api/resources/unifiedroleassignmentschedule?view=graph-rest-1.0),  [unifiedRoleAssignmentScheduleInstance](https://learn.microsoft.com/graph/api/resources/unifiedroleassignmentscheduleinstance?view=graph-rest-1.0), and  [unifiedRoleAssignmentScheduleRequest](https://learn.microsoft.com/graph/api/resources/unifiedroleassignmentschedulerequest?view=graph-rest-1.0) resources.",
+          "Target": "unifiedRoleAssignmentScheduleRequest"
         },
         {
           "Id": "7a275a17-6a6a-436d-8316-4fe77bc7ff79",
           "ApiChange": "Permission",
           "ChangedApiName": "RoleEligibilitySchedule.ReadWrite.Directory",
           "ChangeType": "Addition",
-          "Description": "Added support for the permission of `RoleEligibilitySchedule.ReadWrite.Directory` to the read and write operations of the [unifiedRoleEligibilitySchedule](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroleeligibilityschedule?view=graph-rest-1.0),  [unifiedRoleEligibilityScheduleInstance](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroleeligibilityscheduleinstance?view=graph-rest-1.0), and  [unifiedRoleEligibilityScheduleRequest](https://learn.microsoft.com/en-us/graph/api/resources/unifiedroleeligibilityschedulerequest?view=graph-rest-1.0) resources.",
-          "Target": "unifiedRoleEligibilitySchedule"
-        },
+          "Description": "Added support for the permission of `RoleEligibilitySchedule.ReadWrite.Directory` to the read and write operations of the [unifiedRoleEligibilitySchedule](https://learn.microsoft.com/graph/api/resources/unifiedroleeligibilityschedule?view=graph-rest-1.0),  [unifiedRoleEligibilityScheduleInstance](https://learn.microsoft.com/graph/api/resources/unifiedroleeligibilityscheduleinstance?view=graph-rest-1.0), and  [unifiedRoleEligibilityScheduleRequest](https://learn.microsoft.com/graph/api/resources/unifiedroleeligibilityschedulerequest?view=graph-rest-1.0) resources.",
+          "Target": "unifiedRoleEligibilityScheduleRequest"
+        }
+      ],
+      "Id": "7a275a17-6a6a-436d-8316-4fe77bc7ff79",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-21T00:00:00.0291684Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "55e3f741-d8c9-4ddc-b5cd-7e83bd760366",
           "ApiChange": "Relationship",
