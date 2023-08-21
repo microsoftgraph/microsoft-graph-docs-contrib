@@ -7,7 +7,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "RoleAssignmentSchedule.Read.Directory",
           "ChangeType": "Addition",
-          "Description": "Added support for the `RoleAssignmentSchedule.Read.Directory` delegated and application permissions to the read operations of the [unifiedRoleAssignmentSchedule](https://learn.microsoft.com/graph/api/resources/unifiedroleassignmentschedule?view=graph-rest-1.0),  [unifiedRoleAssignmentScheduleInstance](https://learn.microsoft.com/graph/api/resources/unifiedroleassignmentscheduleinstance?view=graph-rest-1.0), and [unifiedRoleAssignmentScheduleRequest](https://learn.microsoft.com/graph/api/resources/unifiedroleassignmentschedulerequest?view=graph-rest-1.0) resources.",
+          "Description": "Added support for the `RoleAssignmentSchedule.Read.Directory` application permission to the read operations of the [unifiedRoleAssignmentSchedule](https://learn.microsoft.com/graph/api/resources/unifiedroleassignmentschedule?view=graph-rest-1.0),  [unifiedRoleAssignmentScheduleInstance](https://learn.microsoft.com/graph/api/resources/unifiedroleassignmentscheduleinstance?view=graph-rest-1.0), and [unifiedRoleAssignmentScheduleRequest](https://learn.microsoft.com/graph/api/resources/unifiedroleassignmentschedulerequest?view=graph-rest-1.0) resources.",
           "Target": "unifiedRoleAssignmentScheduleRequest"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "RoleEligibilitySchedule.Read.Directory",
           "ChangeType": "Addition",
-          "Description": "Added support for the `RoleEligibilitySchedule.Read.Directory` delegated and application permissions to the read operations of the [unifiedRoleEligibilitySchedule](https://learn.microsoft.com/graph/api/resources/unifiedroleeligibilityschedule?view=graph-rest-1.0),  [unifiedRoleEligibilityScheduleInstance](https://learn.microsoft.com/graph/api/resources/unifiedroleeligibilityscheduleinstance?view=graph-rest-1.0), and  [unifiedRoleEligibilityScheduleRequest](https://learn.microsoft.com/graph/api/resources/unifiedroleeligibilityschedulerequest?view=graph-rest-1.0) resources.",
+          "Description": "Added support for the `RoleEligibilitySchedule.Read.Directory` application permission to the read operations of the [unifiedRoleEligibilitySchedule](https://learn.microsoft.com/graph/api/resources/unifiedroleeligibilityschedule?view=graph-rest-1.0),  [unifiedRoleEligibilityScheduleInstance](https://learn.microsoft.com/graph/api/resources/unifiedroleeligibilityscheduleinstance?view=graph-rest-1.0), and  [unifiedRoleEligibilityScheduleRequest](https://learn.microsoft.com/graph/api/resources/unifiedroleeligibilityschedulerequest?view=graph-rest-1.0) resources.",
           "Target": "unifiedRoleEligibilityScheduleRequest"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "RoleAssignmentSchedule.ReadWrite.Directory",
           "ChangeType": "Addition",
-          "Description": "Added support for the `RoleAssignmentSchedule.ReadWrite.Directory` delegated and application permissions to the read and write operations of the [unifiedRoleAssignmentSchedule](https://learn.microsoft.com/graph/api/resources/unifiedroleassignmentschedule?view=graph-rest-1.0),  [unifiedRoleAssignmentScheduleInstance](https://learn.microsoft.com/graph/api/resources/unifiedroleassignmentscheduleinstance?view=graph-rest-1.0), and  [unifiedRoleAssignmentScheduleRequest](https://learn.microsoft.com/graph/api/resources/unifiedroleassignmentschedulerequest?view=graph-rest-1.0) resources.",
+          "Description": "Added support for the `RoleAssignmentSchedule.ReadWrite.Directory` application permission to the read and write operations of the [unifiedRoleAssignmentSchedule](https://learn.microsoft.com/graph/api/resources/unifiedroleassignmentschedule?view=graph-rest-1.0),  [unifiedRoleAssignmentScheduleInstance](https://learn.microsoft.com/graph/api/resources/unifiedroleassignmentscheduleinstance?view=graph-rest-1.0), and  [unifiedRoleAssignmentScheduleRequest](https://learn.microsoft.com/graph/api/resources/unifiedroleassignmentschedulerequest?view=graph-rest-1.0) resources.",
           "Target": "unifiedRoleAssignmentScheduleRequest"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "RoleEligibilitySchedule.ReadWrite.Directory",
           "ChangeType": "Addition",
-          "Description": "Added support for the `RoleEligibilitySchedule.ReadWrite.Directory` delegated and application permissions to the read and write operations of the [unifiedRoleEligibilitySchedule](https://learn.microsoft.com/graph/api/resources/unifiedroleeligibilityschedule?view=graph-rest-1.0),  [unifiedRoleEligibilityScheduleInstance](https://learn.microsoft.com/graph/api/resources/unifiedroleeligibilityscheduleinstance?view=graph-rest-1.0), and  [unifiedRoleEligibilityScheduleRequest](https://learn.microsoft.com/graph/api/resources/unifiedroleeligibilityschedulerequest?view=graph-rest-1.0) resources.",
+          "Description": "Added support for the `RoleEligibilitySchedule.ReadWrite.Directory` application permission to the read and write operations of the [unifiedRoleEligibilitySchedule](https://learn.microsoft.com/graph/api/resources/unifiedroleeligibilityschedule?view=graph-rest-1.0),  [unifiedRoleEligibilityScheduleInstance](https://learn.microsoft.com/graph/api/resources/unifiedroleeligibilityscheduleinstance?view=graph-rest-1.0), and  [unifiedRoleEligibilityScheduleRequest](https://learn.microsoft.com/graph/api/resources/unifiedroleeligibilityschedulerequest?view=graph-rest-1.0) resources.",
           "Target": "unifiedRoleEligibilityScheduleRequest"
         }
       ],
