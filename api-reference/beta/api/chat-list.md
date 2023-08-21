@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Retrieve the list of [chats](../resources/chat.md) that the user is part of.
 
 This method supports federation. When a user ID is provided, the calling application must belong to the same tenant that the user belongs to.

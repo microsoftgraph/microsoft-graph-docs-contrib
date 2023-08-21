@@ -13,6 +13,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Reset a [caseSettings](../resources/ediscovery-caseSettings.md) object to the default values.
 
 ## Permissions

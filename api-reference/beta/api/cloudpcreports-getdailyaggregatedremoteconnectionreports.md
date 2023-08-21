@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Get the daily aggregated remote connection reports, such as round trip time, available bandwidth, and so on, in a given period.
 
 ## Permissions

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Retrieve a list of users that are registered users of the device.
 
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.

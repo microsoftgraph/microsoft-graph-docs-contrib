@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Create a new thread in the specified conversation.
 
 A thread and post are created as specified. Use [reply thread](conversationthread-reply.md) to further post

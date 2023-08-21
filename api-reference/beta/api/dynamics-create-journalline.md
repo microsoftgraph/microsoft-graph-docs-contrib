@@ -1,5 +1,5 @@
 ---
-title: Create journalLines 
+title: Create journalLines
 description: Creates a journal line in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Creates a journal line object in Dynamics 365 Business Central.
 
 ## Permissions
@@ -29,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-POST /financials/companies/{id}/journals/{id}/journalLines/{id}
+POST /financials/companies/{id}/journals/{id}/journalLines
 ```
 
 ## Optional query parameters

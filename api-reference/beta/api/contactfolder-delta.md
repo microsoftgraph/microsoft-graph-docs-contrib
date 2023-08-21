@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.
 
 A **delta** function call for contact folders in a mailbox is similar to a GET request, except that by appropriately 

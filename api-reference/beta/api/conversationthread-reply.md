@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Reply to a thread in a group conversation and add a new post to it. You can specify the parent conversation 
 in the request, or, you can specify just the thread without the parent conversation.
 

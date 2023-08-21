@@ -13,6 +13,8 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Get a list of the [alertRecord](../resources/devicemanagement-alertrecord.md) objects and their properties.
 
 ## Permissions

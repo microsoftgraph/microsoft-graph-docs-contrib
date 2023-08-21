@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Validate that a set of [cloudPC](../resources/cloudpc.md) devices meet the requirements to be bulk resized.
 
 ## Permissions

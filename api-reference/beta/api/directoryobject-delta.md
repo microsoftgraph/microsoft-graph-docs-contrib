@@ -13,6 +13,8 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Get newly created, updated, or deleted directory objects without performing a full read of the entire directoryObject collection. For more information about the delta function, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview) for details.
 
 ## Permissions

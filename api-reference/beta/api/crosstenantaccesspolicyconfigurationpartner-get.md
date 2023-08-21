@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Read the properties and relationships of a [partner-specific](../resources/crosstenantaccesspolicyconfigurationpartner.md) configuration.
 
 ## Permissions

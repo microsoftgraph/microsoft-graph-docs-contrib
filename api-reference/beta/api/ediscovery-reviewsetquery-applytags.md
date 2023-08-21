@@ -13,6 +13,8 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Apply [tags](../resources/ediscovery-tag.md) to documents that match the specified [reviewSetQuery](../resources/ediscovery-reviewsetquery.md).
 
 ## Permissions

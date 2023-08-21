@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Run health checks on the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]

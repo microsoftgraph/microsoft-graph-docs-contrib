@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Troubleshoot a specific Cloud PC. Use this API to check the health status of the Cloud PC and the session host.
 
 ## Permissions

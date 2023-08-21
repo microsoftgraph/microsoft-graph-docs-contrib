@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Retrieve the properties and relationships of a [customer](../resources/dynamics-customer.md) object for Dynamics 365 Business Central.
 
 ## Permissions

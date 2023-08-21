@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 List all the replies to a [message](../resources/chatmessage.md) in a [channel](../resources/channel.md) of a team.
 
 This method lists only the replies of the specified message, if any. To get the message itself, simply call [get channel message](chatmessage-get.md).

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 List a set of items that have been recently used by the signed in user.
 This collection includes items that are in the user's drive as well as items they have access to from other drives.
 

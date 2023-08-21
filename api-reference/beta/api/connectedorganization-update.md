@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+
 Update a [connectedOrganization](../resources/connectedorganization.md) object to change one or more of its properties.
 
 ## Permissions

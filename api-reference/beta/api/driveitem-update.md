@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Update the metadata for a [DriveItem](../resources/driveitem.md) by ID or path.
 
 You can also use update to [move an item](driveitem-move.md) to another parent by updating the item's **parentReference** property.

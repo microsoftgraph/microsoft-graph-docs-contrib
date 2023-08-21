@@ -1,6 +1,6 @@
 ---
-title: Create taxAreas 
-description: Creates a tax area object in Dynamics for Financials. 
+title: Create taxAreas
+description: Creates a tax area object in Dynamics for Financials.
 services: project-madeira
 documentationcenter: ''
 author: SusanneWindfeldPedersen
@@ -14,6 +14,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 Creates a tax area object in Dynamics 365 Business Central.
 
@@ -29,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-POST /financials/companies/{id}/taxAreas/{id}
+POST /financials/companies/{id}/taxAreas
 ```
 
 ## Optional query parameters

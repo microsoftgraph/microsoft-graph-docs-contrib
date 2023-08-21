@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Delete a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. A relationship can only be deleted if it's in the "created" status. 
 
 ## Permissions

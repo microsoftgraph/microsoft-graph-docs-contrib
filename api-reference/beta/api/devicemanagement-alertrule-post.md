@@ -13,6 +13,8 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Create an [alertRule](../resources/devicemanagement-alertrule.md) object.
 
 ## Permissions

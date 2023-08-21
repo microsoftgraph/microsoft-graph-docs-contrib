@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 You can use **createLink** action to share a [driveItem](../resources/driveitem.md) via a sharing link.
 
 The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.

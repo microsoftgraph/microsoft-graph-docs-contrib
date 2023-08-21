@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Retrieve a [conversationMember](../resources/conversationmember.md) from a [chat](../resources/chat.md).
 
 > [!NOTE]

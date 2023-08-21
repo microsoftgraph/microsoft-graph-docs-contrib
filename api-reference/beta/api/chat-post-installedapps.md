@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Install a [teamsApp](../resources/teamsapp.md) to the specified [chat](../resources/chat.md).
 
 > **Notes**:

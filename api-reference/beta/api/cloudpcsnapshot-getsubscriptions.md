@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 List all subscriptions [cloudPcSubscription](../resources/cloudpcsubscription.md) that can be used to store a snapshot or snapshots of a Cloud PC for forensic analysis.
 
 ## Permissions

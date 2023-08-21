@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Retrieve the contents of a specific version of a [driveItem](../resources/driveitem.md). 
 
 >**Note:** Getting the content of the current version is not supported. Instead, use the [driveItem content endpoint](driveitem-get-content.md).
