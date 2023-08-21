@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Only teachers can perform this action. A teacher wants to mark a submission as excused to indicate that the submission has no further action for the student and will NOT be included in average grade calculations. Rubric selections and points feedback will be wiped.
+ Teachers can mark a submission as excused to indicate that the submission has no further action for the student and will NOT be included in average grade calculations. Rubric selections and points feedback will be wiped. Only teachers can perform this action. 
 
 If the header Prefer: include-unknown-enum-members is provided, a excused submission retains the excused status. For details, see the examples section.
 
