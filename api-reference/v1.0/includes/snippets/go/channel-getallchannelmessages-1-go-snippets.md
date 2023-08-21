@@ -25,7 +25,7 @@ configuration := &graphteams.TeamItemChannelsGetAllMessages()RequestBuilderGetRe
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Teams().ByTeamId("team-id").Channels().GetAllMessages().Get(context.Background(), configuration)
+getAllMessages(), err := graphClient.Teams().ByTeamId("team-id").Channels().GetAllMessages().Get(context.Background(), configuration)
 
 
 ```

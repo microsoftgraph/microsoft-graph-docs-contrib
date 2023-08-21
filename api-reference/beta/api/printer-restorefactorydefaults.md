@@ -77,10 +77,6 @@ POST https://graph.microsoft.com/beta/print/printers/{id}/restoreFactoryDefaults
 [!INCLUDE [sample-code](../includes/snippets/php/printer-restorefactorydefaults-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/printer-restorefactorydefaults-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/printer-restorefactorydefaults-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

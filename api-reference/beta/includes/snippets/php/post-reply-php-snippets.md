@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ReplyPostRequestBody();
 $post = new Post();
@@ -18,7 +18,7 @@ $postBody->setContent('content-value');
 
 
 $post->setBody($postBody);
-$post->setReceivedDateTime(new DateTime('2016-10-19T10:37:00Z'));
+$post->setReceivedDateTime(new \DateTime('2016-10-19T10:37:00Z'));
 
 $post->setHasAttachments(true);
 
@@ -59,9 +59,9 @@ $post->setNewParticipants($newParticipantsArray);
 
 $post->setConversationId('conversationId-value');
 
-$post->setCreatedDateTime(new DateTime('2016-10-19T10:37:00Z'));
+$post->setCreatedDateTime(new \DateTime('2016-10-19T10:37:00Z'));
 
-$post->setLastModifiedDateTime(new DateTime('2016-10-19T10:37:00Z'));
+$post->setLastModifiedDateTime(new \DateTime('2016-10-19T10:37:00Z'));
 
 $post->setChangeKey('changeKey-value');
 
@@ -73,9 +73,9 @@ $postInReplyTo = new Post();
 
 $post->setInReplyTo($postInReplyTo);
 $attachmentsAttachment1 = new FileAttachment();
-$attachmentsAttachment1->set@odatatype('#microsoft.graph.fileAttachment');
+$attachmentsAttachment1->setOdataType('#microsoft.graph.fileAttachment');
 
-$attachmentsAttachment1->setLastModifiedDateTime(new DateTime('2016-10-19T10:37:00Z'));
+$attachmentsAttachment1->setLastModifiedDateTime(new \DateTime('2016-10-19T10:37:00Z'));
 
 $attachmentsAttachment1->setName('name-value');
 
@@ -96,7 +96,7 @@ $post->setAttachments($attachmentsArray);
 $requestBody->setPost($post);
 
 
-$graphServiceClient->groups()->byGroupId('group-id')->threads()->byThreadId('conversationThread-id')->posts()->byPostId('post-id')->reply()->post($requestBody);
+$graphServiceClient->groups()->byGroupId('group-id')->threads()->byConversationThreadId('conversationThread-id')->posts()->byPostId('post-id')->reply()->post($requestBody);
 
 
 ```

@@ -2,7 +2,7 @@
 title: "Delete ipNamedLocation"
 description: "Delete an ipNamedLocation object."
 ms.localizationpriority: medium
-author: "davidspooner"
+author: "lisaychuang"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -85,6 +85,10 @@ DELETE https://graph.microsoft.com/v1.0/identity/conditionalAccess/namedLocation
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-ipnamedlocation-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-ipnamedlocation-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

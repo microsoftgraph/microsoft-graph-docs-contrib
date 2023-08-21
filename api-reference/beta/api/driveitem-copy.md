@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name."
 ms.date: 09/10/2017
 title: "driveItem: copy"
@@ -105,10 +105,6 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/copy-item-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/copy-item-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

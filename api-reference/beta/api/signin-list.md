@@ -3,7 +3,7 @@ title: "List signIns"
 doc_type: apiPageType
 description: "Get a list of the user sign-ins in an Azure Active Directory tenant."
 ms.localizationpriority: medium
-author: "besiler"
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
 ---
 
@@ -46,12 +46,12 @@ In addition to the delegated permissions, the signed-in user needs to belong to 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET auditLogs/signIns
+GET /auditLogs/signIns
 ```
 
 ## Optional query parameters
 
-This method supports the `$top`, `$skiptoken`, and `$filter` OData Query Parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
+This method supports the `$top`, `$skiptoken`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -223,7 +223,9 @@ Content-type: application/json
         ],
       "managedServiceIdentity":{
           "msiType":"systemAssigned",
-          "associatedResourceId":"/subscriptions/a89523b8-b5db-4697-9c1b-2f7dcfd074d9/resourcegroups/Scenario-TestRPToKeyVaultSAJob_USCentral/providers/Providers.Test/msiStateful/testrp30964"
+          "associatedResourceId":"/subscriptions/aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa/resourcegroups/Scenario-TestRPToKeyVaultSAJob_USCentral/providers/Providers.Test/msiStateful/testrp30964",
+          "federatedTokenId" : "aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa",
+          "federatedTokenIssuer" : "https://aks_test.prod-aks.azure.com/bbbbbbbb-bbbb-bbbb-bbbb-bbbbbbbbbbbb/"
       },
       "networkLocationDetails":[
           {
@@ -445,7 +447,7 @@ GET https://graph.microsoft.com/beta/auditLogs/signins?&$filter=(signInEventType
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-signins-ne-noninteractiveuser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

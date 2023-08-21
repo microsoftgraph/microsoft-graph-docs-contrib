@@ -21,6 +21,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|AccessReview.Read.All, AccessReview.ReadWrite.All|
 
+[!INCLUDE [rbac-access-reviews-apis-read](../includes/rbac-for-apis/rbac-access-reviews-apis-read.md)]
+
 ## HTTP request
 
 <!-- {
@@ -89,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definition
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-accessreviewinstancedecisionitem-v1-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

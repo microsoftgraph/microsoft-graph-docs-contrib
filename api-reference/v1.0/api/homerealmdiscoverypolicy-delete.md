@@ -2,7 +2,7 @@
 title: "Delete homeRealmDiscoveryPolicy"
 description: "Delete homeRealmDiscoveryPolicy."
 ms.localizationpriority: medium
-author: "hpsin"
+author: "nickludwig"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -86,10 +86,6 @@ DELETE https://graph.microsoft.com/v1.0/policies/homeRealmDiscoveryPolicies/{id}
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-homerealmdiscoverypolicy-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-homerealmdiscoverypolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

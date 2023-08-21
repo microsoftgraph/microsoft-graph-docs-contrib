@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 description := "Tenants that have purchased extended support"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantTags().Post(context.Background(), requestBody, nil)
+tenantTags, err := graphClient.TenantRelationships().ManagedTenants().TenantTags().Post(context.Background(), requestBody, nil)
 
 
 ```
