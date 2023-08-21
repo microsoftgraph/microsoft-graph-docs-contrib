@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Create an upload session that allows an app to iteratively upload ranges of a binary file linked to the print document.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 As part of the response, this action returns an upload URL that can be used in subsequent sequential `PUT` queries. Request headers for each `PUT` operation can be used to specify the exact range of bytes to be uploaded. This allows transfer to be resumed, in case the network connection is dropped during upload. 
 
 >**Note**: Creating an upload session using application permissions will only succeed if there is a [printTask](../resources/printTask.md) in a `processing` state on the associated print job, started by a trigger that the requesting app created. For details about how to register a task trigger, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).

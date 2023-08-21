@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Delete an open extension ([openTypeExtension](../resources/opentypeextension.md) object) from the specified instance of a resource. 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 For the list of resources that support open extensions, see the table in the [Permissions](#permissions) section.
 
 ## Permissions

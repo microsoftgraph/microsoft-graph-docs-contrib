@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a single delegated permission grant represented by an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 An **oAuth2PermissionGrant** represents delegated permissions which have been granted for a client application to access an API on behalf of a signed-in user.
 
 > [!NOTE]

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Invite participants to the active call.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 For more information about how to handle operations, see [commsOperation](../resources/commsoperation.md).
 
 >**Note:** Inviting multiple participants in one request is only supported for group calls.

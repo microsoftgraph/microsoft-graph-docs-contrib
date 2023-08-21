@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a list of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for the RBAC provider.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 The following RBAC providers are currently supported:
 - directory (Azure AD)
 - entitlement management (Azure AD)

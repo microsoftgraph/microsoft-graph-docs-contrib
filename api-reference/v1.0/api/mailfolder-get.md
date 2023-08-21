@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a message folder object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 The following list shows the two existing scenarios where an app can get another user's mail folder:
 
 * If the app has application permissions, or,

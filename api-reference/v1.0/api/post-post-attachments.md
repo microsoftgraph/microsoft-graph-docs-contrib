@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Add an [attachment](../resources/attachment.md) when creating a group post.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 This operation limits the size of the attachment you can add to under 3 MB.
 
 An attachment can be one of the following types:

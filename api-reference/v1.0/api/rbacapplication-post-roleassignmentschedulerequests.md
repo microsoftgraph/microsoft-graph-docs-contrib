@@ -11,6 +11,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 In PIM, carry out the following operations through the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object:
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 + Request active and persistent role assignments for a principal, with or without expiry dates.
 + Activate, deactivate, extend, or renew an eligible role assignment for a principal.
 

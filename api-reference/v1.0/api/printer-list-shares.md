@@ -11,6 +11,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Retrieve a list of printer shares associated with the [printer](../resources/printer.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 >**Note:** Currently, only **one** printer share per printer is supported.
 
 ## Permissions

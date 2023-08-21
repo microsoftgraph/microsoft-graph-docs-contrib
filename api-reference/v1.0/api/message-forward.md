@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Forward a message using either JSON or MIME format.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 When using JSON format, you can:
 - Specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
 - Specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter. Specifying both or specifying neither will return an HTTP 400 Bad Request error.

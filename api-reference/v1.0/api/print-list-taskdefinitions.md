@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [task definitions](../resources/printtaskdefinition.md) that the requesting app defined in the tenant.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 For details about how to use this API to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
 ## Permissions

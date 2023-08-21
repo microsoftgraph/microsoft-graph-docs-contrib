@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (**profilePhoto** properties).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,
 360x360, 432x432, 504x504, and 648x648. Photos can be any dimension if they are stored in Azure Active Directory.
 

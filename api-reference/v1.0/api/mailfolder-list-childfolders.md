@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Get the folder collection under the specified folder. You can use the `.../me/mailFolders` shortcut to get the top-level 
 folder collection and navigate to another folder.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 By default, this operation does not return hidden folders. Use a query parameter _includeHiddenFolders_ to include them in the response.
 
 ## Permissions

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of endpoints exposed by a print service.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 > [!NOTE]
 > In order to use the Universal Print service, the user or app's tenant must have an active Universal Print subscription.
 

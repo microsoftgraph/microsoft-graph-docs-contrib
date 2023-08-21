@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a report that provides the details about which apps and platforms users have used.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 > **Note:** For details about different report views and names, see [Microsoft 365 Reports in the admin center - Microsoft 365 Apps usage](/microsoft-365/admin/activity-reports/microsoft365-apps-usage).
 
 ## Permissions

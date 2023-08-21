@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Delete a delegated permission grant, represented by an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 When a delegated permission grant is deleted, the access it granted is revoked. Existing access tokens will continue to be valid for their lifetime, but new access tokens will not be granted for the delegated permissions identified in the deleted **oAuth2PermissionGrant**.
 
 > [!NOTE]

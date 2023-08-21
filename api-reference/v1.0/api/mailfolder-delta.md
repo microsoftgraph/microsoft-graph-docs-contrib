@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a set of mail folders that have been added, deleted, or removed from the user's mailbox.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 A **delta** function call for mail folders in a mailbox is similar to a GET request, except that by appropriately 
 applying [state tokens](/graph/delta-query-overview) in one or more of these calls, 
 you can query for incremental changes in the mail folders. This allows you to maintain and synchronize 

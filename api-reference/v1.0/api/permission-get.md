@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Return the effective sharing permission for a particular permission resource.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
 
 Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.

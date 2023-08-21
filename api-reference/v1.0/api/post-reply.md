@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Reply to a post and add a new post to the specified thread in a group conversation. 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ## Permissions

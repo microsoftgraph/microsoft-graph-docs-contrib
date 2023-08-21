@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get an open extension ([openTypeExtension](../resources/opentypeextension.md) object) identified by name or fully qualified name.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 The table in the [Permissions](#permissions) section lists the resources that support open extensions.
 
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.

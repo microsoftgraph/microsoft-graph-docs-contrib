@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [page](../resources/page.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 **Getting page information**
 
 Access a page's metadata by page identifier:

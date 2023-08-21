@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of a [place](../resources/place.md) object specified by either its ID or email address.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 The **place** object can be one of the following types:
 
 * A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support.

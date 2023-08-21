@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get the [meetingAttendanceReport](../resources/meetingAttendanceReport.md) for an [onlineMeeting](../resources/onlinemeeting.md). Each time an online meeting ends, an attendance report will be generated for that session.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 > [!WARNING]
 > This method does not support channel meetings.
 

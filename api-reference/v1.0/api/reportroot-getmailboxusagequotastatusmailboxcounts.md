@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get the count of user mailboxes in each quota category.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - Mailbox usage](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).
 
 ## Permissions

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a set of messages that have been added, deleted, or updated in a specified folder.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 A **delta** function call for messages in a folder is similar to a GET request, except that by appropriately 
 applying [state tokens](/graph/delta-query-overview) in one or more of these calls, you can [query for incremental changes in the messages in 
 that folder](/graph/delta-query-messages). This allows you to maintain and synchronize a local store of a user's messages without 

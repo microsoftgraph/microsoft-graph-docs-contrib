@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a resource instance that contains a multi-value extended property by using `$expand`.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Using the query parameter `$expand` allows you to get the specified instance expanded with the indicated extended
 property. This is currently the only way to get the [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)
 object that represents an extended property.

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a list of [meetingAttendanceReport](../resources/meetingAttendanceReport.md) objects for an [onlineMeeting](../resources/onlinemeeting.md). Each time an online meeting ends, an attendance report is generated for that session.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 > [!WARNING]
 >
 > This method does not support channel meetings, and only returns up to 50 of the most recent reports.

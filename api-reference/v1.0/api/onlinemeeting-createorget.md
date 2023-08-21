@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Create an [onlineMeeting](../resources/onlinemeeting.md) object with a custom specified external ID. If the external ID already exists, this API will return the [onlineMeeting](../resources/onlinemeeting.md) object with that external ID. 
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 > **Note**: The meeting does not show on the user's calendar.
 
 ## Permissions

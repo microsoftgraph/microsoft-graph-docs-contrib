@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [riskyServicePrincipal](../resources/riskyserviceprincipal.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 >**Note:** Using the riskyServicePrincipal API requires a Workload Identities Premium license.
 
 ## Permissions

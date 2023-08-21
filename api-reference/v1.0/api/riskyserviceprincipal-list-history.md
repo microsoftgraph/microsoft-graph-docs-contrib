@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get the risk history of a [riskyServicePrincipal](../resources/riskyServicePrincipal.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 >**Note:** Using the riskyServicePrincipal API requires an Entra Workload Identity Premium license.
 
 ## Permissions

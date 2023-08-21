@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Remove access to a [DriveItem](../resources/driveitem.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Only sharing permissions that are **not** inherited can be deleted.
 The **inheritedFrom** property must be `null`.
 

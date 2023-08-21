@@ -13,6 +13,9 @@ Namespace: microsoft.graph
 
 Put a [participant](../resources/participant.md) on hold and play music in the background.
  
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 > **Note:** Only one participant can be placed on hold at any given time.
 
 ## Permissions

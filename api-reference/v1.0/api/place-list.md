@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get a collection of the specified type of [place](../resources/place.md) objects defined in the tenant. For example, you can get all the rooms, all the room lists, or the rooms in a specific room list in the tenant.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 >**Note:** Rooms that are marked "Hidden from GAL" can't be retrieved through this endpoint.
 
 A **place** object can be one of the following types:

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Create a new [schemaExtension](../resources/schemaextension.md) definition and its associated schema extension property to extend a [supporting resource type](/graph/extensibility-overview#supported-resources).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Schema extensions let you add strongly-typed custom data to a resource. The app that creates a schema extension is the owner app. Depending on the 
 [state](/graph/api/resources/schemaextension#schema-extensions-lifecycle) of the extension, the owner app, and only the owner app, may update or delete the extension. 
 

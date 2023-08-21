@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [riskyUser](../resources/riskyuser.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
 ## Permissions

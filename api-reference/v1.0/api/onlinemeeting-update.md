@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update the properties of the specified [onlineMeeting](../resources/onlinemeeting.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Please see [Request body](#request-body) section for the list of properties that support updating.
 
 ## Permissions

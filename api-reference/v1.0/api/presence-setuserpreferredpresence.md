@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Set the preferred availability and activity status for a user. If the preferred presence of a user is set, the user's presence shows as the preferred status.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Preferred presence takes effect only when at least one [presence session](presence-setpresence.md#presence-sessions) exists for the user. Otherwise, the user's presence shows as `Offline`.
 
 A presence session is created as a result of a successful [setPresence](presence-setpresence.md) operation, or if the user is signed in on a Microsoft Teams client.

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Copy a page to a specific section.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ## Permissions

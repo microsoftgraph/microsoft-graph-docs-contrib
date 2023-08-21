@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Create a [messageRule](../resources/messagerule.md) object by specifying a set of conditions and actions. 
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
 
 ## Permissions

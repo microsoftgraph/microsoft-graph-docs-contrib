@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [riskDetection](../resources/riskdetection.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 >[!NOTE]
 >You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
 

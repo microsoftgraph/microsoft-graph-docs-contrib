@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get all the [messageRule](../resources/messagerule.md) objects defined for the user's inbox.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
