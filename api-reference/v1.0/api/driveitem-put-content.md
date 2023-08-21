@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Upload small files
 ms.localizationpriority: high
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. 
+The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call.
 This method only supports files up to 4MB in size.
 
 To upload large files see [Upload large files with an upload session](driveitem-createuploadsession.md).

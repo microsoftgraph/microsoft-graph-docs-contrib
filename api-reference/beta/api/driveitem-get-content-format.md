@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Use this API to retrieve the contents of an item in a specific format."
 ms.date: 09/10/2017
 title: Convert to other formats

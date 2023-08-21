@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Update the properties on a listItem."
 ms.date: 09/11/2017
 title: Update a record in a SharePoint list
@@ -47,7 +47,7 @@ In the request body, supply a JSON representation of a [fieldValueSet][] specify
 ## Example
 
 Here is an example that updates the Color and Quantity fields of the list item with new values.
-All other values on the listItem are left alone. 
+All other values on the listItem are left alone.
 
 
 # [HTTP](#tab/http)
