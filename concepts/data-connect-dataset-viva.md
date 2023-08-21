@@ -1,6 +1,6 @@
 ---
-title: Viva Insights dataset for Microsot Graph Data Connect"
-description: "Use this dataset to gain insights on top collaborators, meeting and focus hours, and other personal productivity metrics."
+title: "Viva Insights dataset for Microsot Graph Data Connect"
+description: "Use this dataset to gain insights about top collaborators, meeting and focus hours, and other personal productivity metrics."
 author: "rimisra2"
 ms.localizationpriority: high
 ms.prod: "data-connect"
@@ -19,9 +19,9 @@ Scenarios are customizable, depending on what dataset you choose to export.
 
 Scenarios include:
 
-- [Power BI report templates](/viva/insights/advanced/analyst/templates/introduction-to-templates): Includes hybrid workforce experience, impact explorer, manager effectiveness, meeting effectiveness, onboarding and development, recurring meeting audit, ways of working, and wellbeing, balance and flexibility.
-- [Custom person queries](/viva/insights/advanced/analyst/person-query-overview): For example, using Viva Insights metrics to understand the relationship between a person’s organizational attributes – like their team, level, or location – and how they use their time. Or when you want to know how one aspect of a person’s time use might influence another aspect of their time use.
-- [Customer meeting queries](/viva/insights/advanced/analyst/meeting-query): For example, using Viva Insights metrics to understand the relationship between different meeting attributes.
+- [Power BI report templates](/viva/insights/advanced/analyst/templates/introduction-to-templates) - Includes hybrid workforce experience, impact explorer, manager effectiveness, meeting effectiveness, onboarding and development, recurring meeting audit, ways of working, and wellbeing, balance and flexibility.
+- [Custom person queries](/viva/insights/advanced/analyst/person-query-overview) - For example, using Viva Insights metrics to understand the relationship between a person’s organizational attributes – like their team, level, or location – and how they use their time. Or when you want to know how one aspect of a person's time use might influence another aspect of their time use.
+- [Customer meeting queries](/viva/insights/advanced/analyst/meeting-query) - For example, using Viva Insights metrics to understand the relationship between different meeting attributes.
 
 ## Questions
 
@@ -38,7 +38,7 @@ The following are examples of questions that you can answer with the Viva Insigh
 
 ## Joining with other datasets
 
-This data set can be joined with any data set based on join keys that the analyst sets in Viva Insights, such as, departments, sellers, external collaborator IDs, and so on.
+This dataset can be joined with any data set based on join keys that the analyst sets in Viva Insights, such as departments, sellers, external collaborator IDs, and so on.
 
 ## Definitions
 
