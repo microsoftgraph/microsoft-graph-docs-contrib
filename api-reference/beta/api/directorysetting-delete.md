@@ -1,7 +1,7 @@
 ---
 title: "Delete directorySetting"
 description: "Delete a directory setting."
-author: "adimitui"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

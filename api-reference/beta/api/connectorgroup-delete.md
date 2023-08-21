@@ -2,7 +2,7 @@
 title: "Delete connectorGroup"
 description: "Delete a connectorGroup."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinrshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
