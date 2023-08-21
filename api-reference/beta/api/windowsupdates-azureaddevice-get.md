@@ -3,6 +3,7 @@ title: "Get azureADDevice"
 description: "Read the properties of an azureADDevice object."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
+ms.custom: has-azure-ad-ps-ref
 ms.prod: "w10"
 doc_type: apiPageType
 ---
@@ -120,4 +121,3 @@ Content-Type: application/json
   }
 }
 ```
-

@@ -3,6 +3,7 @@ title: "Create federationConfiguration"
 description: "Create a new internalDomainFederation object."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
+ms.custom: has-azure-ad-ps-ref
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -181,4 +182,3 @@ Content-Type: application/json
    "federatedIdpMfaBehavior": "rejectMfaByFederatedIdp"
 }
 ```
-
