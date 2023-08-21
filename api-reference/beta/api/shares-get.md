@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Access a shared DriveItem or a collection of shared items by using a shareId or sharing URL."
 ms.date: 09/10/2017
 title: Access shared items

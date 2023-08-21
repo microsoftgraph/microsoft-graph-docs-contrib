@@ -10,7 +10,7 @@ ms.custom: scenarios:getting-started
 
 Microsoft Graph Data Connect has a simplified onboarding experience that features an enhanced app registration and app authorization experience.
 
-This article describes the simplified onboarding experience, in which data transfers are authorized before the pipelines run. Customers who currently use the Privileged Access Management (PAM) authorization model can migrate to the simplified experience; for details, see [Existing customer migration](graph/existing-customer-migration).
+This article describes the simplified onboarding experience, in which data transfers are authorized before the pipelines run. Customers who currently use the Privileged Access Management (PAM) authorization model can migrate to the simplified experience; for details, see [Existing customer migration](/graph/existing-customer-migration).
 
 The following are the steps to onboard:
 
@@ -43,8 +43,8 @@ The simplified Data Connect onboarding experience includes process efficiencies 
 - Multi-tenant apps can initiate cross-tenant data movement with Data Connect. This enables ISVs to make use of Data Connect to extract Microsoft 365 data to bring value to customers.
 
 ## Confirm your tenant experience
-<!-- This date has a bit of a cyclic dependency... as soon as docs go out, we will roll this out... once this is signed off, we can decide the exact date and add it here and other places. -->
-If your tenant enabled Data Connect in the Microsoft 365 admin center after August 2023, your organization is successfully enrolled in the simplified onboarding experience. To confirm this, request that someone in your company with a Global Reader or Global Administrator-assigned role access the Data Connect admin authorization portal.
+<!-- Update 8/17/2023 changed date per developer guidance to August 17, 2023. -->
+If your tenant enabled Data Connect in the Microsoft 365 admin center after August 17, 2023, your organization is successfully enrolled in the simplified onboarding experience. To confirm this, request that someone in your company with a Global Reader or Global Administrator-assigned role access the Data Connect admin authorization portal.
 
 If you're able to access the experience and you don't see the following warning text, you don't need to take any further action: 
 `You are still using the legacy Privileged Access Management Microsoft Graph Data Connect consent experience. Please enable the new consent experience for MGDC enterprise apps.`
