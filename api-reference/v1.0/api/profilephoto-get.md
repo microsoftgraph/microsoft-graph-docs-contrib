@@ -200,6 +200,9 @@ GET https://graph.microsoft.com/v1.0/me/photos/48x48/$value
 Content-Type: image/jpg
 ```
 
+> [!NOTE]
+> 
+> - Specifying a fixed size of the output photo requires a call to the collection of photos of fixed sizes (/photos) rather than the default photo endpoint that returns the largest available photo (/photo)
 #### Response
 Contains the binary data of the requested 48x48 photo. The HTTP response code is 200.
 
