@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a contact object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 There are two scenarios where an app can get a contact in another user's contact folder:
 
 * If the app has application permissions, or,

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [conversationMembers](../resources/conversationmember.md) from a [channel](../resources/channel.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 This method supports federation. Only a user who is a member of the shared channel can retrieve the channel member list.
 
 > [!NOTE]

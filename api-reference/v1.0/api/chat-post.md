@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Create a new [chat](../resources/chat.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > **Note:** Only one one-on-one chat can exist between two members. If a one-on-one chat already exists, this operation will return the existing chat and not create a new one.
 > 
 ## Permissions

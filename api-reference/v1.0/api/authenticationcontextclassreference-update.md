@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Create an [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object, if the ID has not been used. If ID has been used, this call updates the [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

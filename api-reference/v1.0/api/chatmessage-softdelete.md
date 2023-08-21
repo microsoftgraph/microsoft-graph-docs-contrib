@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Delete a single [chatMessage](../resources/chatmessage.md) or a [chat message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 >**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 ## Permissions

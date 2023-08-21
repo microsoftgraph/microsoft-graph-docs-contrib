@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Deletes an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 [!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-delete-intro-sentence.md)]
 
 ## Permissions

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Uninstall an [app](../resources/teamsapp.md) installed within a [chat](../resources/chat.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > **Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the **teamsApp** will get removed from the meeting.
 
 ## Permissions

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Upgrade an [app installation](../resources/teamsappinstallation.md) within a [chat](../resources/chat.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > **Notes**:
 > - If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then effectively, the **teamsApp** installed in the meeting will get upgraded.
 

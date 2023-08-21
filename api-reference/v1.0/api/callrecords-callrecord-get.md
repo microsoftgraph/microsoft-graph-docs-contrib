@@ -13,6 +13,8 @@ Namespace: microsoft.graph.callRecords
 
 Retrieve the properties and relationships of a [callRecord](../resources/callrecords-callrecord.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 There are two ways to get the **id** of a **callRecord**:
 
 * Subscribe to [change notifications](/graph/api/resources/webhooks?view=graph-rest-1.0&preserve-view=true) to the `/communications/callRecords` endpoint.

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a set of contacts that have been added, deleted, or updated in a specified folder.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 A **delta** function call for contacts in a folder is similar to a GET request, except that by appropriately 
 applying [state tokens](/graph/delta-query-overview) in one or more of these calls, 
 you can query for incremental changes in the contacts in 

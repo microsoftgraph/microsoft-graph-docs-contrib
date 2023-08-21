@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve the list of [messages](../resources/chatmessage.md) in a [chat](../resources/chat.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 This method supports federation. To list chat messages in application context, the request must be made from the tenant that the channel owner belongs to (represented by the **tenantId** property on the channel).
 
 > **Notes**: 

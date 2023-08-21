@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve the list of [tabs](../resources/teamstab.md) in the specified [chat](../resources/chat.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > **Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tabs pinned in the meeting will be listed. 
 
 ## Permissions

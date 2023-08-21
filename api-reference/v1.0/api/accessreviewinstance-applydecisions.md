@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 Apply review decisions on an [accessReviewInstance](../resources/accessreviewinstance.md) if the decisions were not applied automatically because the autoApplyDecisionsEnabled property is `false` in the review's [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md).
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 The status of the accessReviewInstance must be `Completed` to call this method.
 
 ## Permissions

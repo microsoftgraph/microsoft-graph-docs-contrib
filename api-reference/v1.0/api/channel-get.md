@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [channel](../resources/channel.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 This method supports federation. Only a user who is a member of the shared channel can retrieve channel information.
 
 ## Permissions

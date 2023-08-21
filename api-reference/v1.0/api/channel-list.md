@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Retrieve the list of [channels](../resources/channel.md) in this [team](../resources/team.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 >**Note:** Guest users can't see private or shared channels that they aren't members of in the response for this API.
 
 ## Permissions

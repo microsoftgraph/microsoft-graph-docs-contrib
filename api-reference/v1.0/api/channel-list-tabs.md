@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Retrieve the list of [tabs](../resources/teamstab.md) in the specified [channel](../resources/channel.md) within a [team](../resources/team.md). 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > **Note**: The Files tab is native to a channel or chat and is not returned by this API.
 
 ## Permissions

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [bookingService](../resources/bookingservice.md) object in the specified [bookingBusiness](../resources/bookingbusiness.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 The following are some examples you can customize for a service:
 - Price
 - Typical length of an appointment

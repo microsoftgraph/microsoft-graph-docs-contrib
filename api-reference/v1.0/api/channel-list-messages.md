@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a [team](../resources/team.md). 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 To get the replies for a message, call the [list message replies](chatmessage-list-replies.md) or the [get message reply](chatmessage-get.md) API. 
 
 This method supports federation. To list channel messages in application context, the request must be made from the tenant that the channel owner belongs to (represented by the **tenantId** property on the channel).

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Create a new thread in the specified conversation. 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 A thread and post are created as specified. Use [reply thread](conversationthread-reply.md) to further post 
 to that thread. Or, if you get the post ID, you can also [reply](post-reply.md) to that post in that thread.
 

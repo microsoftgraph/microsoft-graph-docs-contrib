@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a contact folder by using the contact folder ID.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 There are two scenarios where an app can get another user's contact folder:
 
 * If the app has application permissions, or,

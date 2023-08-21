@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Associate a published [content type][contentType] present in a content type hub with a list of hub sites.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 >**Note:** This feature is limited to tenants that have a SharePoint Syntex license.
   
 

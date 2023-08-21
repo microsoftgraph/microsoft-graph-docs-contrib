@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Update the properties of an [accessReviewStage](../resources/accessreviewstage.md) object. Only the **reviewers** and **fallbackReviewers** properties can be updated. You can only add reviewers to the **fallbackReviewers** property but can't remove existing **fallbackReviewers**.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 To update an **accessReviewStage**, its **status** must be `NotStarted`, `Initializing`, or `InProgress`.
 
 > [!NOTE]

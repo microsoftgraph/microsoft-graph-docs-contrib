@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) objects and their properties. 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 This operation does not return the **key** property. For information about how to read the **key** property, see [Get bitlockerRecoveryKey](bitlockerrecoverykey-get.md).
 
 ## Permissions

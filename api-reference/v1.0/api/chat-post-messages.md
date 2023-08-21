@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Send a new [chatMessage](../resources/chatmessage.md) in the specified [chat](../resources/chat.md). This API can't create a new chat; you must use the [list chats](chat-list.md) method to retrieve the ID of an existing chat before you can create a chat message.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > **Note**: We don't recommend that you use this API for data migration. It doesn't have the throughput necessary for a typical migration.
 
 > **Note**: It is a violation of the [terms of use](/legal/microsoft-apis/terms-of-use) to use Microsoft Teams as a log file. Only send messages that people will read.

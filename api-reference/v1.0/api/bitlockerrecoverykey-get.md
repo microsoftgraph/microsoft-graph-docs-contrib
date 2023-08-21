@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) object. 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 By default, this operation does not return the **key** property that represents the actual recovery key. To include the **key** property in the response, use the `$select` OData query parameter. Including the `$select` query parameter triggers an Azure AD audit of the operation and generates an audit log. For more information on audit logs for bitlocker recovery keys, see the KeyManagement category filter of [Azure AD audit logs](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
 ## Permissions

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 List all [conversation members](../resources/conversationmember.md) in a [chat](../resources/chatmessage.md) or [channel](../resources/channel.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > [!NOTE]
 > The membership IDs returned by the server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
 >

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Add a key credential to an [application](../resources/application.md). This method, along with [removeKey](application-removekey.md) can be used by an application to automate rolling its expiring keys.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > [!NOTE]
 > [Create application](../api/application-post-applications.md) and
 [Update application](../api/application-update.md) operations can continue to be used to add and update key credentials for any application with or without a user's context.

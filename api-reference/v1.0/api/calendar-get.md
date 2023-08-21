@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Get the properties and relationships of a [calendar](../resources/calendar.md) object. The calendar can be one for a [user](../resources/user.md), 
 or the default calendar of a Microsoft 365 [group](../resources/group.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 There are two scenarios where an app can get another user's calendar:
 
 * If the app has application permissions, or,

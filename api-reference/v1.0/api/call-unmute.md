@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Allow the application to unmute itself.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 This is a server unmute, meaning that the server will start sending audio packets for this participant to other participants again.
 
 For more information about how to handle unmute operations, see [unmuteParticipantOperation](../resources/unmuteParticipantoperation.md).

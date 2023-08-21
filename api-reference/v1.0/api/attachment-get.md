@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Read the properties, relationships, or raw contents of an attachment that is attached to a user [event](../resources/event.md), [message](../resources/message.md), or group [post](../resources/post.md). 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 An attachment can be one of the following types:
 
 * A file. Programmatically, this is a [fileAttachment](../resources/fileattachment.md) resource. See [example 1](#example-1-get-the-properties-of-a-file-attachment).

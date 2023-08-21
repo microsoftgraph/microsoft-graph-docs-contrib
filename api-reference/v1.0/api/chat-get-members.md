@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Retrieve a [conversationMember](../resources/conversationmember.md) from a [chat](../resources/chat.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > [!NOTE]
 > The membership IDs returned by the server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
 >

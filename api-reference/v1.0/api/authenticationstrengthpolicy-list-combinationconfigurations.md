@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get the [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) objects for an [authentication strength policy](../resources/authenticationstrengthpolicy.md). authenticationCombinationConfiguration represents requirements placed on specific authentication method combinations that require specified variants of those authentication methods to be used when authenticating. Currently, only [fido2combinationConfigurations](../resources/fido2combinationconfiguration.md) objects are supported.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 authenticationCombinationConfiguration objects are supported only for custom authentication strengths.
 
 ## Permissions

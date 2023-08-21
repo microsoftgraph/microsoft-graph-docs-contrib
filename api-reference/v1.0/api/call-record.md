@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Records a short audio response from the caller.
 A bot can utilize this to capture a voice response from a caller after they are prompted for a response.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 For further information on how to handle operations, please review [commsOperation](../resources/commsOperation.md)
 
 >**Note:** This is only supported for [calls](../resources/call.md) which are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).

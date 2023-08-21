@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Subscribe to DTMF (dual-tone multi-frequency signaling). This allows you to be notified when the user presses keys on a "dialpad".
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 > [!Note]
 > The **subscribeToTone** action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
 

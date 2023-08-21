@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Add (pin) a [tab](../resources/teamstab.md) to the specified [chat](../resources/chat.md). 
 The corresponding app must already be [installed in the chat](../api/chat-list-installedapps.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > **Note**: If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the tab will get added to the meeting.
 
 ## Permissions

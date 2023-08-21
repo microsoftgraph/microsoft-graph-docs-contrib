@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Play a prompt in the call.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 For more information about how to handle operations, see [commsOperation](../resources/commsoperation.md)
 
 > [!Note]

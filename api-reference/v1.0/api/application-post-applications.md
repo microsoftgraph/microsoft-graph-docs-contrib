@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Create a new [application](../resources/application.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > [!IMPORTANT]
 > Adding [**passwordCredential**](../resources/passwordcredential.md) when creating applications is not supported. Use the [addPassword](application-addpassword.md) method to add passwords or secrets for an application.
 >

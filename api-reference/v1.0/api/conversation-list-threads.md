@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get all the threads in a group conversation.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Note: You can also [get all the threads of a group](group-list-threads.md).
 
 ## Permissions

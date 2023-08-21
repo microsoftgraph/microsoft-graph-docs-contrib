@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a list of [certificateBasedAuthConfiguration](../resources/certificateBasedAuthConfiguration.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > [!NOTE]
 > Only a single instance of certificateBasedAuthConfiguration can exist in the collection. It always has a fixed ID with a value of '29728ade-6ae4-4ee9-9103-412912537da5'.
 
