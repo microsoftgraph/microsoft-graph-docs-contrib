@@ -44,7 +44,12 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/h
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-For the list of properties, see [hardwareOathAuthenticationMethodConfiguration](../resources/hardwareoathauthenticationmethodconfiguration.md).
+|Property|Type|Description|
+|:---|:---|:---|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
+|state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
+|includeTargets|[authenticationMethodTarget](../resources/authenticationmethodtarget.md) collection|A collection of groups that are enabled to use the authentication method.|
+
 
 >**Note:** The `@odata.type` property with a value of `#microsoft.graph.hardwareOathAuthenticationMethodConfiguration` must be included in the body.
 
