@@ -5779,6 +5779,25 @@ items:
                     items:
                       - name: List
                         href: api/entitlementmanagement-list-resourceenvironments.md
+                  - name: Access package resource
+                    href: resources/accesspackageresource.md
+                    items:
+                      - name: List
+                        href: api/accesspackagecatalog-list-resources.md
+                  - name: Access package resource role
+                    href: resources/accesspackageresourcerole.md
+                    items:
+                      - name: List
+                        href: api/accesspackagecatalog-list-resourceroles.md
+                  - name: Access package resource role scope
+                    href: resources/accesspackageresourcerolescope.md
+                    items:
+                      - name: List
+                        href: api/accesspackage-list-resourcerolescopes.md
+                      - name: Create
+                        href: api/accesspackage-post-resourcerolescopes.md
+                      - name: Delete
+                        href: api/accesspackage-delete-resourcerolescopes.md
               - name: Lifecycle workflows
                 displayName: LCW, Identity Governance, Joiner, Mover, Leaver
                 items:

@@ -12548,6 +12548,16 @@ items:
                         href: api/entitlementmanagement-list-accesspackageresourceenvironment.md
                       - name: Get
                         href: api/accesspackageresourceenvironment-get.md
+                  - name: Access package resource
+                    href: resources/accesspackageresource.md
+                    items:
+                      - name: List
+                        href: api/accesspackagecatalog-list-accesspackageresources.md
+                  - name: Access package resource role
+                    href: resources/accesspackageresourcerole.md
+                    items:
+                      - name: List
+                        href: api/accesspackagecatalog-list-accesspackageresourceroles.md
                   - name: Access package resource role scope
                     href: resources/accesspackageresourcerolescope.md
                     items:
@@ -12555,7 +12565,7 @@ items:
                         href: api/accesspackage-list-accesspackageresourcerolescopes.md
                       - name: Create
                         href: api/accesspackage-post-accesspackageresourcerolescopes.md
-                      - name: Create
+                      - name: Delete
                         href: api/accesspackage-delete-accesspackageresourcerolescopes.md
                   - name: Access package subject
                     href: resources/accesspackagesubject.md
