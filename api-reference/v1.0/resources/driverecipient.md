@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: DriveRecipient
 ms.localizationpriority: medium
@@ -28,9 +28,9 @@ The recipients resource has these properties.
 
 ## JSON representation
 
-<!-- { 
-  "blockType": "resource", 
-  "@odata.type": "microsoft.graph.driveRecipient", 
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.driveRecipient",
   "optionalProperties": ["alias", "objectId", "email"] } -->
 ```json
 {

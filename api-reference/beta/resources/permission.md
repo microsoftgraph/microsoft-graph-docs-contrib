@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: permission resource type
 description: permission resource representing a sharing permission granted for a driveItem
 ms.localizationpriority: medium
