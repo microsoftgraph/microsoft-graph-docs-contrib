@@ -10,8 +10,6 @@ doc_type: apiPageType
 # privilegedAccessGroupEligibilityScheduleInstance: filterByCurrentUser
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Return instances of membership and ownership eligibility schedules for the calling principal.
 
 ## Permissions
@@ -62,41 +60,15 @@ If successful, this function returns a `200 OK` response code and a [privilegedA
 
 #### Request
 The following is an example of a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "privilegedaccessgroupeligibilityscheduleinstancethis.filterbycurrentuser"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleInstances/filterByCurrentUser(on='principal')
+GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/eligibilityScheduleInstances/filterByCurrentUser(on='principal')
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/privilegedaccessgroupeligibilityscheduleinstancethisfilterbycurrentuser-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/privilegedaccessgroupeligibilityscheduleinstancethisfilterbycurrentuser-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/privilegedaccessgroupeligibilityscheduleinstancethisfilterbycurrentuser-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/privilegedaccessgroupeligibilityscheduleinstancethisfilterbycurrentuser-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/privilegedaccessgroupeligibilityscheduleinstancethisfilterbycurrentuser-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/privilegedaccessgroupeligibilityscheduleinstancethisfilterbycurrentuser-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 The following is an example of the response.

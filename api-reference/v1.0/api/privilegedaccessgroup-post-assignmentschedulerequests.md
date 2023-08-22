@@ -10,8 +10,6 @@ doc_type: apiPageType
 # Create assignmentScheduleRequest
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create a new [privilegedAccessGroupAssignmentScheduleRequest](../resources/privilegedaccessgroupassignmentschedulerequest.md) object.
 
 ## Permissions
@@ -68,41 +66,31 @@ If successful, this method returns a `201 Created` response code and a [privileg
 The following request creates an assignment schedule request to assign a principal active membership to the specified group. The active membership expires after two hours.
 
 #### Request
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_privilegedaccessgroupassignmentschedulerequest_from_beta_e1"
+  "name": "create_privilegedaccessgroupassignmentschedulerequest_from_v1_e1"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentScheduleRequests
+POST https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/assignmentScheduleRequests
 Content-Type: application/json
 
 {
   "accessId": "member", 
-  "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2", 
-  "groupId": "68e55cce-cf7e-4a2d-9046-3e4e75c4bfa7", 
-  "action": "adminAssign", 
-  "scheduleInfo": { 
-      "startDateTime": "2022-12-08T07:43:00.000Z", 
-      "expiration": { 
-          "type": "afterDuration", 
-          "duration": "PT2H" 
-      } 
-  }, 
-  "justification": "Assign active member access."
+  "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2", 
+  "groupId": "68e55cce-cf7e-4a2d-9046-3e4e75c4bfa7", 
+  "action": "adminAssign", 
+  "scheduleInfo": { 
+    "startDateTime": "2022-12-08T07:43:00.000Z", 
+    "expiration": { 
+      "type": "afterDuration", 
+      "duration": "PT2H" 
+    } 
+  }, 
+  "justification": "Assign active member access."
 }
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-privilegedaccessgroupassignmentschedulerequest-from-beta-e1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-privilegedaccessgroupassignmentschedulerequest-from-beta-e1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 The following is an example of the response.
@@ -118,7 +106,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/assignmentScheduleRequests/$entity",
+  "@odata.type": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/privilegedAccess/group/assignmentScheduleRequests/$entity",
   "id": "34e963f6-150f-cf79-678c-6fcaf978bb49",
   "status": "Provisioned",
   "completedDateTime": "2023-02-07T07:05:55.3404527Z",
@@ -145,8 +133,8 @@ Content-Type: application/json
       "ticketSystem": null
   },
   "accessId": "member", 
-  "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2", 
-  "groupId": "68e55cce-cf7e-4a2d-9046-3e4e75c4bfa7",
+  "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2", 
+  "groupId": "68e55cce-cf7e-4a2d-9046-3e4e75c4bfa7",
   "targetScheduleId": "2b5ed229-4072-478d-9504-a047ebd4b07d_member_6aacaee8-4089-4048-9510-3119367fc943"
 }
 ```
@@ -156,41 +144,31 @@ Content-Type: application/json
 In the following request, a user identified by **principalId** `3cce9d87-3986-4f19-8335-7ed075408ca2` activates their *eligible membership* to a group managed by PIM identified by **groupId** `2b5ed229-4072-478d-9504-a047ebd4b07d`.
 
 #### Request
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_privilegedaccessgroupassignmentschedulerequest_from_beta_e2"
+  "name": "create_privilegedaccessgroupassignmentschedulerequest_from_v1_e2"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/assignmentScheduleRequests
+POST https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/assignmentScheduleRequests
 Content-Type: application/json
 
 {
   "accessId": "member", 
-  "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2", 
-  "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d", 
-  "action": "selfActivate", 
-  "scheduleInfo": { 
-      "startDateTime": "2023-02-08T07:43:00.000Z", 
-      "expiration": { 
-          "type": "afterDuration", 
-          "duration": "PT2H" 
-      } 
-  }, 
-  "justification": "Activate assignment."
+  "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2", 
+  "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d", 
+  "action": "selfActivate", 
+  "scheduleInfo": { 
+    "startDateTime": "2023-02-08T07:43:00.000Z", 
+    "expiration": { 
+      "type": "afterDuration", 
+      "duration": "PT2H" 
+    } 
+  }, 
+  "justification": "Activate assignment."
 }
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-privilegedaccessgroupassignmentschedulerequest-from-beta-e2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-privilegedaccessgroupassignmentschedulerequest-from-beta-e2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 The following is an example of the response.
@@ -206,7 +184,7 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "@odata.type": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/assignmentScheduleRequests/$entity",
+  "@odata.type": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/privilegedAccess/group/assignmentScheduleRequests/$entity",
   "id": "6aacaee8-4089-4048-9510-3119367fc943",
   "status": "Provisioned",
   "completedDateTime": "2023-02-07T07:05:55.3404527Z",
@@ -233,8 +211,8 @@ Content-Type: application/json
       "ticketSystem": null
   },
   "accessId": "member", 
-  "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2", 
-  "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
+  "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2", 
+  "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
   "targetScheduleId": "2b5ed229-4072-478d-9504-a047ebd4b07d_member_6aacaee8-4089-4048-9510-3119367fc943"
 }
 ```

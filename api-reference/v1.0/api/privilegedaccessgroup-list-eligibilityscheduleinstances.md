@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List eligibilityScheduleInstances
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get a list of the [privilegedAccessGroupEligibilityScheduleInstance](../resources/privilegedaccessgroupeligibilityscheduleinstance.md) objects and their properties.
 
 ## Permissions
@@ -61,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleInstances$filter=groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d'
+GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/eligibilityScheduleInstances$filter=groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d'
 ```
 
 
@@ -79,7 +77,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/eligibilityScheduleInstances/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/privilegedAccess/group/eligibilityScheduleInstances/$entity",
   "value": [
     {
       "id": "772d5185-39b7-58be-4915-137ffaa7e42e",
