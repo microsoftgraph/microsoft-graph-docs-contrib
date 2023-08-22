@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 If the header Prefer: include-unknown-enum-members is provided, a excused submission retains the excused status. For details, see the examples section.
 
-If the header Prefer: include-unknown-enum-members is not provided, submission status changes to returned. For details, see the examples section.
+If the header Prefer: include-unknown-enum-members is not provided, the submission status changes to **returned**. For more information, see the examples section.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
