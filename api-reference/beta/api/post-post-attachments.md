@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Add an [attachment](../resources/attachment.md) when creating a group post. 
 
 This operation limits the size of the attachment you can add to under 3 MB.

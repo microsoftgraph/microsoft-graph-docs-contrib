@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Get the [plannerPlans](../resources/plannerplan.md) contained by the [plannerRoster](../resources/plannerroster.md).
 
 ## Permissions

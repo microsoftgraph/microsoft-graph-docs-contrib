@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Create a sharing link for a [listItem](../resources/listitem.md).
 
 The **createLink** action creates a new sharing link if the specified link type doesn't already exist for the calling application.

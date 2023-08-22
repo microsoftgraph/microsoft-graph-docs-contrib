@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Get newly created, updated, or deleted [list items](../resources/listitem.md) without having to perform a full read of the entire items collection.
 
 Your app begins by calling `delta` without any parameters.

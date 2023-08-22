@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Update the phone number associated with a [phone authentication method](../resources/phoneauthenticationmethod.md).
 
 You can't change a phone's type. To change a phone's type, add a new number of the desired type and then delete the object with the original type.

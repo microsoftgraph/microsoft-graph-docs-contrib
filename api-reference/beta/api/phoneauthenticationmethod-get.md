@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Retrieve a single [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object. This method is available only for standard Azure AD and B2B users, but not B2C users.
 
 ## Permissions

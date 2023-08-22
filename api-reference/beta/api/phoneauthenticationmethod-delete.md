@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Delete a user's [phone authentication method](../resources/phoneauthenticationmethod.md). 
 
 >**Note:** This removes the phone number from the user and they will no longer be able to use the number for authentication, whether via SMS or voice calls.

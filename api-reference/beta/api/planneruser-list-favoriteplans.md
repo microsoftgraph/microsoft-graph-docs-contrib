@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Retrieve a list of [plannerPlans](../resources/plannerplan.md) that are marked as favorite by a user. You can mark a plan as favorite by [updating the plannerUser resource](planneruser-update.md).
 
 ## Permissions

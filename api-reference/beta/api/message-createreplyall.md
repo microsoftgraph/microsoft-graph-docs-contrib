@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Create a draft to reply to the sender and all recipients of a [message](../resources/message.md) in either JSON or MIME format.
 
 When using JSON format:

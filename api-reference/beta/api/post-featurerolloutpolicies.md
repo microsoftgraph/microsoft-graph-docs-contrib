@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [feature-rolloutpolicy-deprecate](../../includes/directory-featurerolloutpolicies-deprecate.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object.

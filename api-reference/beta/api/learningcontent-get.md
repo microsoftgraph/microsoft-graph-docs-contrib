@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Get the specified [learningContent](../resources/learningcontent.md) resource which represents the metadata of the specified provider's ingested content.
 
 ## Permissions

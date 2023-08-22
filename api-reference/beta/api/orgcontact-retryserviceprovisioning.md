@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Retry the [orgContact](../resources/orgContact.md) service provisioning.
 
 ## Permissions
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /orgContacts/{id}/retryServiceProvisioning
+POST /contacts/{id}/retryServiceProvisioning
 ```
 
 ## Request headers
@@ -56,7 +58,7 @@ The following is an example of the request.
   "name": "orgcontact_retryserviceprovisioning"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/orgContacts/{id}/retryServiceProvisioning
+POST https://graph.microsoft.com/beta/contacts/{id}/retryServiceProvisioning
 ```
 
 ### Response

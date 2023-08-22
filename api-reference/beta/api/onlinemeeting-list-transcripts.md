@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md).
 
 > **Notes:**
@@ -38,8 +40,8 @@ To use application permission for this API, tenant administrators must create an
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/onlineMeetings({meetingId})/transcripts
-GET /users({userId})/onlineMeetings({meetingId})/transcripts
+GET /me/onlineMeetings/{meetingId}/transcripts
+GET /users/{userId}/onlineMeetings/{meetingId}/transcripts
 ```
 
 ## Optional query parameters
@@ -134,7 +136,7 @@ Content-Type: application/json
         {
             "id": "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4",
             "createdDateTime": "2021-09-16T18:56:00.9038309Z"
-        }        
+        }
     ]
 }
 ```

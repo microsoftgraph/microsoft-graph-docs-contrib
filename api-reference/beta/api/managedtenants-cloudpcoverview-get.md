@@ -12,6 +12,8 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Read the properties and relationships of a [cloudPcOverview](../resources/managedtenants-cloudpcoverview.md) object.
 
 ## Permissions

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Delete a message in the specified user's mailbox, or delete a relationship of the message.
 
 For example, you can delete a specific [@-mention](../resources/mention.md) of the specified user in the message.

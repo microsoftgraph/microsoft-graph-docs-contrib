@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Update the properties of the specified [onlineMeeting](../resources/onlinemeeting.md) object.
 
 Please see [Request body](#request-body) section for the list of properties that support updating.

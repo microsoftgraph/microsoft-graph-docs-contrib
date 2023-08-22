@@ -12,6 +12,8 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Un-assigns the tenant tag from the specified managed tenants.
 
 ## Permissions

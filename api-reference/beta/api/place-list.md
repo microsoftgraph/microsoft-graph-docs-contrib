@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Get a collection of the specified type of [place](../resources/place.md) objects defined in the tenant. 
 
 You can do the following for a given tenant:

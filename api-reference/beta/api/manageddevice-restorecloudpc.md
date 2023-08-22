@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Restore a Cloud PC device to a previous state with an Intune [managed device](../resources/cloudpc.md) ID.
 
 ## Permissions

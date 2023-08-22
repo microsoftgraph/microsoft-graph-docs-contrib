@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Create a [messageRule](../resources/messagerule.md) object by specifying a set of conditions and actions. 
 
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.

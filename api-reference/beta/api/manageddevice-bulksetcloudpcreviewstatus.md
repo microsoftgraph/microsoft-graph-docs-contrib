@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.
 
 ## Permissions

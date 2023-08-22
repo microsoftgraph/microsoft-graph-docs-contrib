@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Retrieve the properties and relationships of the [message](../resources/message.md) object.
 
 For instance, you can get a message and expand all the [mention](../resources/mention.md) instances in the message. See an [example](#example-2-get-all-mentions-in-a-specific-message) below.

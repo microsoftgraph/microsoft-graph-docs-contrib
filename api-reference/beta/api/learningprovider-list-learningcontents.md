@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Get a list of the [learningContent](../resources/learningcontent.md) resources and their properties.
 
 This list represents the metadata of the specified provider's content in Viva Learning.
