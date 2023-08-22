@@ -69,7 +69,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Example
 ### Request
-Here is an example of the request that updates a tenant-wide setting.
+The following sample request updates a tenant-wide setting.
 
 <!-- {
   "blockType": "request",
