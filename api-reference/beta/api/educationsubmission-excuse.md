@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
  Teachers can mark a submission as excused to indicate that the submission has no further action for the student and will NOT be included in average grade calculations. Rubric selections and points feedback will be wiped. Only teachers can perform this action. 
 
-If the header Prefer: include-unknown-enum-members is provided, a excused submission retains the excused status. For details, see the examples section.
+If the header Prefer: include-unknown-enum-members is provided, an excused submission retains the **excused** status. For more information, see the examples section.
 
 If the header Prefer: include-unknown-enum-members is not provided, the submission status changes to **returned**. For more information, see the examples section.
 
