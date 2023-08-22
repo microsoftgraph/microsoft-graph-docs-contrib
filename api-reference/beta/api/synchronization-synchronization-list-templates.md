@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 List the synchronization templates associated with a given application or service principal.
 
 ## Permissions

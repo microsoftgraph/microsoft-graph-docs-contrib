@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Get the user's [mailboxSettings](../resources/mailboxsettings.md). You can view all mailbox settings, or get specific settings.
 
 Users can set the following settings for their mailboxes through an Outlook client:

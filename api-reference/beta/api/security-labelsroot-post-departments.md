@@ -12,6 +12,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Create a new [departmentTemplate](../resources/security-departmenttemplate.md) object.
 
 ## Permissions

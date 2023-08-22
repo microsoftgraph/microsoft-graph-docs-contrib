@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Create single sign-on credentials using a password for a user or group.
 
 ## Permissions

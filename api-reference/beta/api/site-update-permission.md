@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Update the [permission](../resources/permission.md) object on a site.
 
 >**Note:** You can't use this method to update a user site permission.

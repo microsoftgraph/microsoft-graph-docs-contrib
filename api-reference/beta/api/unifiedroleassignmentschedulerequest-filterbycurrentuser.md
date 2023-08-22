@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 In PIM, retrieve the requests for active role assignments for a particular principal. The principal can be the creator or approver of the **unifiedRoleAssignmentScheduleRequest** object, or they can be the target of the assignment.
 
 > [!NOTE]

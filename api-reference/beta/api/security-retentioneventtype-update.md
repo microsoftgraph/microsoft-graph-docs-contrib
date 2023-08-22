@@ -12,6 +12,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Update the properties of a [retentionEventType](../resources/security-retentioneventtype.md) object.
 
 ## Permissions

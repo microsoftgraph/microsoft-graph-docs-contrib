@@ -12,6 +12,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Get a list of the [urlThreatSubmission](../resources/security-urlthreatsubmission.md) objects and their properties.
 
 ## Permissions

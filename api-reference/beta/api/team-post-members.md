@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Add a new [conversation member](../resources/conversationmember.md) to a [team](../resources/team.md).
 
 > [!NOTE] 

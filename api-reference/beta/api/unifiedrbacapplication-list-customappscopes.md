@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Get a list of [customAppScope](../resources/customappscope.md) objects for an RBAC provider.
 
 Currently only the Exchange Online RBAC provider is supported.

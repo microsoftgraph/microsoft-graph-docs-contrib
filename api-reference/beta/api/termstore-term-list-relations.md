@@ -12,6 +12,8 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Get the different relation of a [term] or [set] from the relations navigation property.
 
 ## Permissions

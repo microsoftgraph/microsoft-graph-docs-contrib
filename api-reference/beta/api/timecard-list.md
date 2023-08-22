@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Retrieve a list of [timeCard](../resources/timecard.md) entries in a [schedule](../resources/schedule.md).
 
 ## Permissions

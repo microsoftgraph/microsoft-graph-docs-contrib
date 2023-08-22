@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Create a new [permission](../resources/permission.md) object on a site.
 
 >**Note:** You can only use this method to create a new application permission; you can't use it to create a new user site permission.

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Retrieve a list of [timeoffrequest](../resources/timeoffrequest.md) objects in the team.
 
 ## Permissions

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Complete the message migration process by removing `migration mode` from a [team](../resources/team.md). `Migration mode` is a special state where certain operations are barred, like message POST and membership operations during the data migration process.
 
 After a **completeMigration** request is made, you cannot import additional messages into the team. You can add members to the team after the request returns a successful response.

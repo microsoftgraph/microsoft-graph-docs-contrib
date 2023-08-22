@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Get the tenant-level [settings](../resources/sharepointsettings.md) for SharePoint and OneDrive.
 
 ## Permissions

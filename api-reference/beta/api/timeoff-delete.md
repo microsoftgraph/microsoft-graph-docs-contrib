@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Delete a [timeOff](../resources/timeoff.md) instance from a [schedule](../resources/schedule.md).
 
 ## Permissions

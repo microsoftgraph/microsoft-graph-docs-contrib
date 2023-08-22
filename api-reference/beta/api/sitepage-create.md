@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Create a new [sitePage][] in the site pages [list][] in a [site][].
 
 [sitePage]: ../resources/sitePage.md

@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 List the [sites](../resources/site.md) that have been followed by the signed in user.
 
 >**Note:** This API has a [known issue](/graph/known-issues#sites-and-lists-sharepoint) and might return incorrect results. 

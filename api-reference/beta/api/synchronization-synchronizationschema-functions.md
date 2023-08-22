@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 List all the functions currently supported in the [attributeMappingSource](../resources/synchronization-attributemappingsource.md).
 
 ## Permissions

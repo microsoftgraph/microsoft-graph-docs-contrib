@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Remove changes made to the [SMS authentication method policy](../resources/smsauthenticationmethodconfiguration.md) by reverting the policy to its default configuration.
 
 ## Permissions

@@ -15,6 +15,8 @@ doc_type: apiPageType
 
 List [sites](../resources/site.md) across geographies in an organization.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 For more details, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online&preserve-view=true).
 
 ## Permissions

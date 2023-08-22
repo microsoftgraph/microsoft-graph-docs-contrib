@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Retrieve the properties and relationships of a [shiftPreferences](../resources/shiftpreferences.md) object by ID.
 
 ## Permissions

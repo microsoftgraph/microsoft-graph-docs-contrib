@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Get a single security alert by its alert definition ID from Privileged Identity Management (PIM) for Azure AD roles.
 
 ## Permissions

@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Unarchive a list of [serviceUpdateMessages](../resources/serviceupdatemessage.md) for the signed in user.
 
 ## Permissions

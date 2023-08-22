@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object for an RBAC provider. You cannot delete built-in roles. This feature requires an Azure AD Premium P1 or P2 license.
 
 

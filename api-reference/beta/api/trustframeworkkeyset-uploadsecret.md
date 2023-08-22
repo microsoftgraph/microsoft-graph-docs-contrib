@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Upload a plain text secret to a [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). Examples of secrets are application secrets in Azure Active Directory, Google, Facebook, or any other identity provider. his method returns [trustFrameworkKey](../resources/trustframeworkkey.md).
 
 ## Permissions

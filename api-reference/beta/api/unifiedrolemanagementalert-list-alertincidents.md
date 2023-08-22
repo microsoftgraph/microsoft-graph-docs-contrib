@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Get a list of the alert incidents. The alert incidents are a collection of any following type that is derived from the [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) object:
 
 - [invalidLicenseAlertIncident](../resources/invalidlicensealertincident.md)

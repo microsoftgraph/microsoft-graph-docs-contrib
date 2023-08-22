@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Stop the synchronization job, and permanently delete all the state associated with it. Synchronized accounts are left as-is.
 
 ## Permissions

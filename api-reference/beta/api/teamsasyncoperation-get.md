@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Get the specified [Teams async operation](../resources/teamsasyncoperation.md) that ran or is running on a specific resource.
 
 ## Permissions

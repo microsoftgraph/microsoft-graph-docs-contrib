@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Get the final attachment for a subject rights request. The attachment is a zip file that contains all the files that were included by the privacy administrator.
 
 ## Permissions

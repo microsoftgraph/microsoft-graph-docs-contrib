@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Get a list of [subjectRightsRequest](../resources/subjectRightsRequest.md) objects and their properties.
 
 ## Permissions

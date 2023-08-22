@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [todoTaskList](../resources/todotasklist.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

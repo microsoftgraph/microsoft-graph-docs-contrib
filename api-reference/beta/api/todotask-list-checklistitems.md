@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Get the [checklistItem](../resources/checklistitem.md) resources associated to the **checklistItems** navigation property of a [todoTask](../resources/todoTask.md).
 
 ## Permissions

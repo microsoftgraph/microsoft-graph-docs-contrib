@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Restart the specified Microsoft Teams-enabled [device](../resources/teamworkdevice.md) asynchronously. 
 
 A device is restarted after the async operation completes successfully, which might occur subsequent to a response from this API.

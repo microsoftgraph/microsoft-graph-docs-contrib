@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Delete a user's [Software OATH token authentication method](../resources/softwareoathauthenticationmethod.md) object.
 
 ## Permissions

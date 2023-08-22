@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Add an owner for the [servicePrincipal](../resources/serviceprincipal.md). Service principal owners can be users, the service principal itself, or other service principals.
 
 ## Permissions

@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Retrieve the properties and relationships of a [serviceHealthIssue](../resources/servicehealthissue.md) object.
 
 This operation retrieves a specified service health issue for tenant. The operation returns an error if the issue does not exist for the tenant.

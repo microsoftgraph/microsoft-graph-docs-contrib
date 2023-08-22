@@ -12,6 +12,8 @@ Namespace: microsoft.graph.termStore
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Update the properties of a [term](../resources/termstore-term.md) object.
 
 ## Permissions

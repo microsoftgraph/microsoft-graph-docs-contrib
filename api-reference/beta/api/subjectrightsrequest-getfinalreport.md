@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Get the final report for a subject rights request. The report is a text file that contains information about the files that were included by the privacy administrator.
 
 ## Permissions

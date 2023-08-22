@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Temporarily stop a running synchronization job. All the progress, including job state, is persisted, and the job will continue from where it left off when a [start](../api/synchronization-synchronizationjob-start.md) call is made.
 
 ## Permissions

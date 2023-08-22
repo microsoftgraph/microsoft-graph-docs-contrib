@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 > [!IMPORTANT]
 > This API is in the process of being deprecated in favor of [Create team](../api/team-post.md), and will be removed by the end of 2019. For details about how to create a team from a group, see examples 4 and 5 in [Create team](../api/team-post.md).
 
