@@ -49,7 +49,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "ResourceSpecificPermissionGrant.ReadForChat",
           "ChangeType": "Deletion",
-          "Description": "Removed support for delegated permission 'ResourceSpecificPermissionGrant.ReadForChat' from the [list](https://learn.microsoft.com/en-us/graph/api/chat-list-permissiongrants?view=graph-rest-beta) operation on [permissionGrants](https://learn.microsoft.com/en-us/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta) for a [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta).",
+          "Description": "Removed support for delegated permission 'ResourceSpecificPermissionGrant.ReadForChat' from the [list](https://learn.microsoft.com/en-us/graph/api/chat-list-permissiongrants?view=graph-rest-beta) operation of the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
           "Target": ""
         },
         {
@@ -57,7 +57,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "ResourceSpecificPermissionGrant.ReadForChat.All",
           "ChangeType": "Deletion",
-          "Description": "Removed support for application permission 'ResourceSpecificPermissionGrant.ReadForChat.All' from the [list](https://learn.microsoft.com/en-us/graph/api/chat-list-permissiongrants?view=graph-rest-beta) operation on [permissionGrants](https://learn.microsoft.com/en-us/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta) for a [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta).",
+          "Description": "Removed support for application permission 'ResourceSpecificPermissionGrant.ReadForChat.All' from the [list](https://learn.microsoft.com/en-us/graph/api/chat-list-permissiongrants?view=graph-rest-beta) operation of the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
           "Target": ""
         }
       ],
