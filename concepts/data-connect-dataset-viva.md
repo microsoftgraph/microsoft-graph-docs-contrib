@@ -19,7 +19,7 @@ The Viva Insights dataset is designed to help you build solutions that unlock th
 
 - [Power BI report templates](/viva/insights/advanced/analyst/templates/introduction-to-templates): Includes hybrid workforce experience, impact explorer, manager effectiveness, meeting effectiveness, onboarding and development, recurring meeting audit, ways of working, and wellbeing, balance and flexibility.
 - [Custom person queries](/viva/insights/advanced/analyst/person-query-overview): For example, using Viva Insights metrics to understand the relationship between a person’s organizational attributes – like their team, level, or location – and how they use their time. Or when you want to know how one aspect of a person's time use might influence another aspect of their time use.
-- [Customer meeting queries](/viva/insights/advanced/analyst/meeting-query) - For example, using Viva Insights metrics to understand the relationship between different meeting attributes.
+- [Customer meeting queries](/viva/insights/advanced/analyst/meeting-query): For example, using Viva Insights metrics to understand the relationship between different meeting attributes.
 
 ## Questions
 
