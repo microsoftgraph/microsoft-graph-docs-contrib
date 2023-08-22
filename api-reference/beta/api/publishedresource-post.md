@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Create a new [publishedResource](../resources/publishedresource.md) object.
 
 ## Permissions
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /onPremisesPublishingProfiles/{publishingType}/publishedResources
+POST /onPremisesPublishingProfiles/{profile-id}/publishedResources
 ```
 
 ## Request headers

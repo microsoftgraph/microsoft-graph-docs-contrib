@@ -12,6 +12,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Activate a custodian that has been released from a case to make them part of the case again. For details, see [Manage custodians in an eDiscovery (Premium) case](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian).
 
 

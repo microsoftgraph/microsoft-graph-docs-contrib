@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Get [simulation coverage](../resources/attacksimulationsimulationusercoverage.md) for users of a tenant in attack simulation and training campaigns.
 
 This function supports `@odata.nextLink` for pagination.

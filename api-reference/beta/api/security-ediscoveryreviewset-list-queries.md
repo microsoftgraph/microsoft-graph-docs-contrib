@@ -12,6 +12,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Get the list of [queries](../resources/security-ediscoveryreviewsetquery.md) associated with an eDiscovery review set.
 
 ## Permissions

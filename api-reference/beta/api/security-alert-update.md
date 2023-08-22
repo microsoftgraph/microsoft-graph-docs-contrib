@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Update the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **id** property.
 
 ## Permissions

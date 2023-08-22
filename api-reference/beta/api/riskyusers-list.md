@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Retrieve the properties and relationships of a collection of **riskyUser** objects.
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.

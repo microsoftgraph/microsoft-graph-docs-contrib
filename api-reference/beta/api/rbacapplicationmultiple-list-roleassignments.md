@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Get a list of [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) objects for an RBAC provider.
 
 The following RBAC providers are currently supported:

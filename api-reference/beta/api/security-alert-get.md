@@ -12,6 +12,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Get the properties and relationships of an [alert](../resources/security-alert.md) in an organization based on the specified alert **id** property.
 
 ## Permissions

@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+
 Cancel an access assignment request to a group whose membership and ownership are governed by PIM.
 
 ## Permissions

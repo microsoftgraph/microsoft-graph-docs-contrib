@@ -12,6 +12,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Read the properties and relationships of an [emailThreatSubmission](../resources/security-emailthreatsubmission.md) object.
 
 ## Permissions

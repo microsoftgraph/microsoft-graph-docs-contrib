@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Delete a [publishedResource](../resources/publishedresource.md) object.
 
 ## Permissions
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/agentGroups/{id2}/$ref
+DELETE /onPremisesPublishingProfiles/{profile-id}/publishedResources/{resource-id}/agentGroups/{agentGroup-id}/$ref
 ```
 
 ## Request headers

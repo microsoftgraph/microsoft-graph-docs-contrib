@@ -12,6 +12,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Get a list of the [ediscoveryFile](../resources/security-ediscoveryfile.md) objects and their properties.
 
 ## Permissions

@@ -12,6 +12,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Apply tags to files in an [eDiscovery review set](../resources/security-ediscoveryreviewset.md). For details, see [Tag documents in a review set in eDiscovery](/microsoft-365/compliance/tagging-documents).
 
 ## Permissions

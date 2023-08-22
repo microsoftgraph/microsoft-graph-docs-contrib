@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+
 Retrieve schedules of membership and ownership eligibility requests for the calling principal.
 
 ## Permissions

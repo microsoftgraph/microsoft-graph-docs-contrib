@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Get the risk history of a [riskyServicePrincipal](../resources/riskyServicePrincipal.md) object.
 
 >**Note:** Using the riskyServicePrincipal API requires an Entra Workload Identity Premium license.

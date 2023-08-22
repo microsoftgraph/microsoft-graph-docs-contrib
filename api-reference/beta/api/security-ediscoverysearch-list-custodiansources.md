@@ -12,6 +12,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Get the list of custodial data sources associated with an [eDiscovery search](../resources/security-ediscoverysearch.md).
 
 ## Permissions

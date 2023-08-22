@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Reset a [caseSettings](../resources/security-ediscoverycaseSettings.md) object to the default values.
 
 ## Permissions

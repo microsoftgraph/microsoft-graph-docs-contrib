@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Get a list of [sensitivityLabel](../resources/security-sensitivitylabel.md) objects associated with a user or organization.
 
 ## Permissions

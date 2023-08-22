@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Delete the [profileCardProperty](../resources/profilecardproperty.md) object specified by its `directoryPropertyName` from the organization's profile card, and remove any localized customizations for that property.
 
 ## Permissions
@@ -32,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /organization/{organizationId}/settings/profileCardProperties/{directoryPropertyName-Value}
+DELETE /organization/{organizationId}/settings/profileCardProperties/{directoryPropertyName-id}
 ```
 
 ## Request headers

@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Get a list of the alert configurations. The alert configurations are a collection of following types that are derived from the [unifiedRoleManagementAlertConfiguration](../resources/unifiedRoleManagementAlertConfiguration.md) object:
 
 - [invalidLicenseAlertConfiguration](../resources/invalidlicensealertconfiguration.md)

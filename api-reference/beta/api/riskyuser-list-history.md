@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Get the risk history of a [riskyUser](../resources/riskyuser.md) resource.
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.

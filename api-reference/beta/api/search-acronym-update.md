@@ -12,6 +12,8 @@ Namespace: microsoft.graph.search
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Update the properties of an [acronym](../resources/search-acronym.md) object.
 
 ## Permissions

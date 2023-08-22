@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Retrieve a [printer](../resources/printer.md)'s usage summary for a particular time period.
 
 For descriptions of each of the endpoints, see [printUsageByPrinter](../resources/printUsageByPrinter.md).

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Retrieve a user's usage summary for a particular time period.
 
 See the [printUsageByUser](../resources/printUsageByUser.md) documentation for descriptions of each of the endpoints.

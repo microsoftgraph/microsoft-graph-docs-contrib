@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Complete a [recommendation](../resources/recommendation.md) object and update its **status** to `completedByUser`.
 
 ## Permissions

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Retrieve a list of **relyingPartyDetailedSummary** objects.
 
 ## Permissions
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getRelyingPartyDetailedSummary
+GET /reports/getRelyingPartyDetailedSummary(period='{period}')
 ```
 ## Function parameters
 
@@ -40,7 +42,7 @@ GET /reports/getRelyingPartyDetailedSummary
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. 
+This method supports some of the OData query parameters to help customize the response.
 
 - You can use the `$filter` parameter to filter by relyingPartyId, migrationStatus and other attributes. For example, $filter= relyingPartyId eq 'identifier'.
 - You can use `$orderby`, `$top`, and `$skip` query parameters in any GET request.

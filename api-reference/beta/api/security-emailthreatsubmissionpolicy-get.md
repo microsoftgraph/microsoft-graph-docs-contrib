@@ -12,6 +12,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Read the properties and relationships of an [emailThreatSubmissionPolicy](../resources/security-emailthreatsubmissionpolicy.md) object.
 
 ## Permissions
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET security/threatSubmission//emailThreatSubmissionPolicies/{emailThreatSubmissionPoliciesId}
+GET /security/threatSubmission/emailThreatSubmissionPolicies/{emailThreatSubmissionPoliciesId}
 ```
 
 ## Optional query parameters

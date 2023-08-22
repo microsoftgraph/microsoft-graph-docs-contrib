@@ -12,6 +12,8 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Delete an [emailThreatSubmissionPolicy](../resources/security-emailthreatsubmissionpolicy.md) object.
 
 ## Permissions
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE security/threatSubmission/emailThreatSubmissionPolices/{id}
+DELETE /security/threatSubmission/emailThreatSubmissionPolicies/{id}
 ```
 
 ## Request headers
