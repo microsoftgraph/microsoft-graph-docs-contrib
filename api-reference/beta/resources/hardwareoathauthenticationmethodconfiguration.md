@@ -27,9 +27,10 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy.|
-|id|String|The authentication method policy identifier.|
-|state|authenticationMethodState|Possible values are: `enabled`, `disabled`.|
+|excludeTargets|[excludeTarget](../resources/excludetarget.md) collection|Groups of users that are excluded from the policy. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
+|id|String|The authentication method policy identifier. Inherited from [entity](../resources/entity.md).|
+|state|authenticationMethodState|Possible values are: `enabled`, `disabled`. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
+
 
 ## Relationships
 |Relationship|Type|Description|
