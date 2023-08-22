@@ -33,11 +33,53 @@
           "ChangeType": "Addition",
           "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/team-list-permissiongrants?view=graph-rest-1.0)  operation to the [permissionGrants](https://learn.microsoft.com/en-us/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-1.0) resource.",
           "Target": "team"
+        },
+        {
+          "Id": "742d05f5-7c66-4398-add8-e53e4c45c5b9",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ResourceSpecificPermissionGrant.ReadForChat",
+          "ChangeType": "Deletion",
+          "Description": "Removed support for permission ResourceSpecificPermissionGrant.ReadForChat from the read operation of [permissionGrants on a chat](https://learn.microsoft.com/en-us/graph/api/chat-list-permissiongrants?view=graph-rest-beta).",
+          "Target": ""
+        },
+        {
+          "Id": "742d05f5-7c66-4398-add8-e53e4c45c5b9",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ResourceSpecificPermissionGrant.ReadForChat.All",
+          "ChangeType": "Deletion",
+          "Description": "Removed support for permission ResourceSpecificPermissionGrant.ReadForChat.All from the read operation of [permissionGrants on a chat](https://learn.microsoft.com/en-us/graph/api/chat-list-permissiongrants?view=graph-rest-beta).",
+          "Target": ""
         }
       ],
       "Id": "742d05f5-7c66-4398-add8-e53e4c45c5b9",
       "Cloud": "Prod",
       "Version": "v1.0",
+      "CreatedDateTime": "2023-08-17T01:54:55.1386602Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3C049C53-1494-48C0-B57E-E7AE625B7061",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ResourceSpecificPermissionGrant.ReadForChat",
+          "ChangeType": "Deletion",
+          "Description": "Removed support for permission ResourceSpecificPermissionGrant.ReadForChat from the read operation of [permissionGrants on a chat](https://learn.microsoft.com/en-us/graph/api/chat-list-permissiongrants?view=graph-rest-beta).",
+          "Target": ""
+        },
+        {
+          "Id": "3C049C53-1494-48C0-B57E-E7AE625B7061",
+          "ApiChange": "Permission",
+          "ChangedApiName": "ResourceSpecificPermissionGrant.ReadForChat.All",
+          "ChangeType": "Deletion",
+          "Description": "Removed support for permission ResourceSpecificPermissionGrant.ReadForChat.All from the read operation of [permissionGrants on a chat](https://learn.microsoft.com/en-us/graph/api/chat-list-permissiongrants?view=graph-rest-beta).",
+          "Target": ""
+        }
+      ],
+      "Id": "3C049C53-1494-48C0-B57E-E7AE625B7061",
+      "Cloud": "Prod",
+      "Version": "beta",
       "CreatedDateTime": "2023-08-17T01:54:55.1386602Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
