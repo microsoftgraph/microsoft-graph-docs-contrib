@@ -167,6 +167,8 @@ items:
                 href: app-authorization.md 
               - name: Existing customer migration
                 href: existing-customer-migration.md  
+          - name: Templates
+            href: data-connect-templates-overview.md
           - name: Integrate with PAM
             href: data-connect-pam.md
             displayName: Privileged Access Management
