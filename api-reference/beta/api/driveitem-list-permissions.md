@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "List the effective sharing permissions of on a driveItem."
 ms.date: 09/10/2017
 title: List who has access to a file

@@ -150,15 +150,23 @@ items:
           - name: Microsoft Graph Data Connect overview
             href: data-connect-concept-overview.md
             displayName: Microsoft Graph Data Connect, access data, bulk data
-          - name: Build your first Microsoft Graph Data Connect application
+          - name: Build your Data Connect application
             href: data-connect-quickstart.yml
             displayName: Microsoft Graph Data Connect
           - name: Datasets, regions, and sinks
             href: data-connect-datasets.md
-          - name: Policies and billing
-            href: data-connect-policies.md
           - name: User selection and filtering
             href: data-connect-filtering.md
+          - name: Updated onboarding experience
+            items:
+              - name: Onboarding experience overview
+                href: onboarding-experience-overview.md
+              - name: App registration
+                href: app-registration.md 
+              - name: App authorization
+                href: app-authorization.md 
+              - name: Existing customer migration
+                href: existing-customer-migration.md  
           - name: Integrate with PAM
             href: data-connect-pam.md
             displayName: Privileged Access Management
@@ -459,7 +467,7 @@ items:
           - name: Identity and sign-in
             items:
               - name: Configure a custom claim provider token issuance event
-                href: /azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json
+                href: /azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json&context=graph/context
               - name: Authentication methods
                 href: authenticationmethods-get-started.md
                 displayName: identity, authenticate, sign-in, sign in, signin

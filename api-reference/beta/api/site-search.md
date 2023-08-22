@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Search across a SharePoint tenant for sites that match keywords provided."
 ms.date: 09/10/2017
 title: Find SharePoint sites by keyword
