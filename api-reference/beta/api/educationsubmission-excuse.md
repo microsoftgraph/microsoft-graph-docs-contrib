@@ -47,7 +47,9 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 Ok` response code and an [educationSubmission](../resources/educationsubmission.md) object in the response body.
 
 ## Examples
+
 ### Example 1: Request with optional Prefer header
+
 #### Request
 The following is an example of the request with Header Prefer: include-unknown-enum-members.
 
