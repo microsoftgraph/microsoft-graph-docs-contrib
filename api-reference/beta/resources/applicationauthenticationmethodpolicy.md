@@ -58,6 +58,10 @@ The application authentication methods policy API offers the following restricti
 >
 > Applying the **customPasswordAddition** restriction will block any legacy PowerShell modules that add a client-generated password secret to applications or service principals. This restriction does not block Azure AD-generated application or service principal password secrets.
 
+### Requirements
+
+- Management of Application authentication method policies can be performed by a Global administrator, Application administrator, or Cloud application administrator.
+- All app policy management operations require a [Workload identity premium license](https://learn.microsoft.com/en-us/azure/active-directory/workload-identities/workload-identities-faqs#what-is-the-cost-of-workload-identities-premium-plan).
 ### Single vs multi-tenant apps
 
 Depending on whether your app is a single tenant or multitenant app, you apply the policy on either an application or the service principal object as follows:
