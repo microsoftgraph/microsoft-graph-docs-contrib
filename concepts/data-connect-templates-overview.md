@@ -19,7 +19,3 @@ The Microsoft Graph Data Connect templates provide a mechanism to depict the art
 The templates provide quick provisioning of Azure resources, data pipelines, and value realization samples.
 
 To start using the Microsoft Graph Data Connect templates visit the [templates GitHub repository](https://github.com/microsoftgraph/dataconnect-solutions/tree/main). 
-
-
-Add MGDC templates trimmed section 
-Only keeping the MGDC templates overview page. Removing individual template pages.
