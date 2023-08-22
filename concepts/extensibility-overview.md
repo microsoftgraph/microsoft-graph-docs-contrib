@@ -644,7 +644,7 @@ POST https://graph.microsoft.com/beta/users
     "accountEnabled": true,
     "displayName": "Adele Vance",
     "mailNickname": "AdeleV",
-    "userPrincipalName": "AdeleV@m365x72712789.onmicrosoft.com",
+    "userPrincipalName": "AdeleV@contoso.com",
     "passwordProfile": {
         "forceChangePasswordNextSignIn": false,
         "password": "xWwvJ]6NMw+bWH-d"
@@ -1049,7 +1049,7 @@ The table below contrasts and compares the extension types, which should help yo
 | Limits | <li>15 predefined attributes per user or device resource instance | <li>100 extension values per resource instance | <li>Maximum of five definitions per owner app <br/><li> 100 extension values per resource instance (directory objects only) | <li>Two open extensions per creator app per resource instance<sup>3</sup> <br/><li> Max. of 2 Kb per open extension<sup>3</sup><li> For Outlook resources, each open extension is stored in a [MAPI named property][MAPI-named-property]<sup>4</sup> |
 
 > [!NOTE]
-> 
+>
 > <sup>1</sup> Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
 >
 > <sup>2</sup> Only available in public preview for directory extensions.

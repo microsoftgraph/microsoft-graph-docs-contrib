@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: The dateTimeColumn on a columnDefinition resource indicates that the column's values are dates or times.
 ms.date: 09/11/2017
 title: DateTimeColumn

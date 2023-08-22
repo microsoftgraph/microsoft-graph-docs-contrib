@@ -5,7 +5,7 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
-ms.date: 07/19/2023
+ms.date: 08/01/2023
 ---
 
 # Manage Azure AD role assignments using PIM APIs
@@ -105,7 +105,7 @@ Use the following Microsoft Graph resources to manage PIM alerts.
 
 | Resource | Description | API operations|
 |--|--|--|
-| [unifiedRoleManagementAlert](unifiedrolemanagementalert.md) | Provides a summary of alerts in PIM for Azure AD roles, whether they are enabled or disabled, when the PIM service last scanned the tenant for incidences or this alert, and the number of incidences mapping to this alert type in the tenant. The PIM service scans the tenant daily for incidences relating to the alert but you can also run a manual scan. All the details are | [List](../api/rolemanagementalert-list-alerts.md) <br/><br/> [Get](../api/unifiedrolemanagementalert-get.md) <br/><br/> [Update](../api/unifiedrolemanagementalert-update.md) <br/><br/> [Refresh (Manual scan)](../api/unifiedrolemanagementalert-refresh.md)|
+| [unifiedRoleManagementAlert](unifiedrolemanagementalert.md) | Provides a summary of alerts in PIM for Azure AD roles, whether they are enabled or disabled, when the PIM service last scanned the tenant for incidences or this alert, and the number of incidences mapping to this alert type in the tenant. The PIM service scans the tenant daily for incidences relating to the alert but you can also run a manual scan.| [List](../api/rolemanagementalert-list-alerts.md) <br/><br/> [Get](../api/unifiedrolemanagementalert-get.md) <br/><br/> [Update](../api/unifiedrolemanagementalert-update.md) <br/><br/> [Refresh (Manual scan)](../api/unifiedrolemanagementalert-refresh.md)|
 | [unifiedRoleManagementAlertDefinition](unifiedrolemanagementalertdefinition.md) | Provides detailed description of each alert type, the severity level, the recommended steps to mitigate incidences relating to the alert in the tenant, and the recommended actions to prevent future incidences. | [List](../api/rolemanagementalert-list-alertdefinitions.md) <br/><br/> [Get](../api/unifiedrolemanagementalertdefinition-get.md) |
 | [unifiedRoleManagementAlertConfiguration](unifiedrolemanagementalertconfiguration.md) | The tenant-specific configuration for the alert including whether the PIM service should scan the tenant for incidences relating to the alert, the thresholds that trigger the alert, and the related alert definition. This is an abstract type from which resources that represent the individual alert types are derived. | [List](../api/rolemanagementalert-list-alertconfigurations.md) <br/><br/> [Get](../api/unifiedrolemanagementalertconfiguration-get.md) <br/><br/> [Update](../api/unifiedrolemanagementalertconfiguration-update.md)|
 | [unifiedRoleManagementAlertIncident](unifiedrolemanagementalertincident.md) | The incidences in the tenant that match the alert type. | [List](../api/unifiedrolemanagementalert-list-alertincidents.md) <br/><br/> [Get](../api/unifiedrolemanagementalertincident-get.md) <br/><br/> [Remediate](../api/unifiedrolemanagementalertincident-remediate.md) |
@@ -135,7 +135,9 @@ The tenant where Privileged Identity Management is being used must have sufficie
 
 ## See also
 
-- [What is Azure AD Identity Governance?](/azure/active-directory/governance/identity-governance-overview)
 - [What is Azure AD Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
-- [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles)
-- You can also set up access reviews of role assignments and eligibilities that are managed through PIM. For more information, see [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles).
+- Learn more about role settings in PIM through the following articles:
+  - [Working with rules for Azure AD roles in PIM APIs](/graph/identity-governance-pim-rules-overview)
+  - [Use PIM APIs to update Azure AD rules](/graph/how-to-pim-update-rules)
+- Follow this tutorial to learn more about using PIM APIs:
+  - [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles)

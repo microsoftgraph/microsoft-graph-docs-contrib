@@ -2109,8 +2109,12 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
+| _RoleAssignmentSchedule.Read.Directory_ | Read all active role assignments and role schedules for your company's directory. | Allows the app to read the active role-based access control (RBAC) assignments and schedules for your company's directory, without a signed-in user. This includes reading directory role templates, and directory roles. | Yes |
+| _RoleEligibilitySchedule.Read.Directory_ | Read all eligible role assignments and role schedules for your company's directory. | Allows the app to read the eligible role-based access control (RBAC) assignments and schedules for your company's directory, without a signed-in user. This includes reading directory role templates, and directory roles. | Yes |
 | _RoleManagement.Read.All_ | Read role management data for all RBAC providers. | Allows the app to read the role-based access control (RBAC) settings for all supported [RBAC providers](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true), without a signed-in user. This includes reading role definitions and role assignments. | Yes |
 | _RoleManagement.Read.Directory_ | Read role management data for Azure AD. | Allows the app to read the role-based access control (RBAC) settings for your company's directory, without a signed-in user.  This includes reading directory role templates, directory roles and memberships. | Yes |
+| _RoleAssignmentSchedule.ReadWrite.Directory_ | Read, update, and delete all policies for privileged role assignments of your company's directory. | Allows the app to read, update, and delete policies for privileged role-based access control (RBAC) assignments of your company's directory, without a signed-in user. | Yes |
+| _RoleEligibilitySchedule.ReadWrite.Directory_ | Read, update, and delete all eligible role assignments and schedules for your company's directory. | Allows the app to read and manage the eligible role-based access control (RBAC) assignments and schedules for your company's directory, without a signed-in user. This includes managing eligible directory role membership, and reading directory role templates, directory roles and eligible memberships. | Yes |
 | _RoleManagement.ReadWrite.Directory_ | Read and write role management data for Azure AD. | Allows the app to read and manage the role-based access control (RBAC) settings for your company's directory, without a signed-in user. This includes instantiating directory roles and managing directory role membership, and reading directory role templates, directory roles and memberships. | Yes |
 | _RoleManagementAlert.Read.Directory_ | Read all alert data for your company's directory. | Allows the app to read all role-based access control (RBAC) alerts for your company's directory, without a signed-in user. This includes reading alert statuses, alert definitions, alert configurations and incidents that lead to an alert. | Yes |
 | _RoleManagementPolicy.Read.Directory_ | Read all policies for privileged role assignments of your company's directory. | Allows the app to read policies for privileged role-based access control (RBAC) assignments of your company's directory, without a signed-in user. | Yes |
@@ -2576,6 +2580,9 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamsAppInstallation.ReadWriteAndConsentForTeam_ | Manage installed Teams apps in teams| Allows a Teams app to read, install, upgrade, and uninstall itself to teams the signed-in user can access.| Yes | No |
 | _TeamsAppInstallation.ReadWriteAndConsentSelfForChat_ | Allow the Teams app to manage itself and its permission grants in chats| Allows a Teams app to read, install, upgrade, and uninstall itself to teams the signed-in user can access.| Yes | No |
 | _TeamsAppInstallation.ReadWriteAndConsentSelfForTeam_ | Allow the Teams app to manage itself and its permission grants in teams| Allows a Teams app to read, install, upgrade, and uninstall itself to teams the signed-in user can access.| Yes | No |
+| _TeamsAppInstallation.ReadWriteAndConsentForUser_ | Manage installation and permission grants of Teams apps  in all user accounts| Allows the app to read, install, upgrade, and uninstall Teams apps for your account, on your behalf. Gives the ability to manage permission grants for accessing your data.| Yes | No |
+| _TeamsAppInstallation.ReadWriteAndConsentSelfForUser_ | Allow the Teams app to manage itself and its permission grants on your user account| Allows a Teams app to read, install, upgrade, and uninstall itself in your account, and manage its permission grants for accessing your data, on your behalf.| Yes | No | 
+| _ResourceSpecificPermissionGrant.ReadForUser_ |Read resource specific permissions granted on your user account | Allows the app to read the resource specific permission granted on your account, on your behalf.| Yes | No |
 
 #### Application permissions
 |   Permission    |  Display String   |  Description | Admin Consent Required |
@@ -2590,6 +2597,9 @@ Taxonomy permissions are valid only on work or school accounts.
 | _TeamsAppInstallation.ReadWriteAndConsentForTeam.All_ | Manage installation and permission grants of Teams apps for all teams| Allows the app to read, install, upgrade, and uninstall Teams apps in any team, without a signed-in user. Gives the ability to manage permission grants for accessing those specific teams' data.| Yes |
 | _TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All_ | Allow the Teams app to manage itself and its permission grants for all chats| Allows a Teams app to read, install, upgrade, and uninstall itself for any chat, without a signed-in user, and manage its permission grants for accessing those specific chats' data.| Yes |
 | _TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All_ | Allow the Teams app to manage itself and its permission grants for all teams| Allows a Teams app to read, install, upgrade, and uninstall itself for any team, without a signed-in user, and manage its permission grants for accessing those specific teams' data.| Yes |
+| _TeamsAppInstallation.ReadWriteAndConsentForUser.All_ | Manage installation and permission grants of Teams apps in a user account| Allows the app to read, install, upgrade, and uninstall Teams apps in any user account, without a signed-in user. Gives the ability to manage permission grants for accessing those specific users' data.| Yes |
+| _TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All_ | Allow the Teams app to manage itself and its permission grants in all user accounts | Allows a Teams app to read, install, upgrade, and uninstall itself for any user account, without a signed-in user, and manage its permission grants for accessing those specific users' data.| Yes |
+| _ResourceSpecificPermissionGrant.ReadForUser.All_ | Read all resource specific permissions granted on user accounts | Allows the app to read all resource specific permissions granted on user accounts, without a signed-in user.| Yes |
 
 ## Teams app settings permissions
 
@@ -3075,6 +3085,19 @@ With these permissions, all authentication methods can be read and managed on a 
 * Primary authentication (password, FIDO2, Microsoft Authenticator, and so on)
 * Second factor of multi-factor authentication/MFA (phone numbers, Microsoft Authenticator, and so on)
 * Self-Service Password Reset/SSPR (email address, and so on)
+
+---
+
+## User resource-specific consent permissions
+
+#### Application permissions
+
+| Permission                     | Display String                                                | Description  | Admin Consent Required | Microsoft Account supported |
+|:-------------------------------|:--------------------------------------------------------------|:-------------|:-----------------------|:----------------------------|
+| _TeamsActivity.Send.User_        | Send activity feed notifications to this user.       | Allows the app to create new notifications in the teamwork activity feed of this user, without a signed-in user. | No | No |
+
+>[!NOTE]
+> Currently, these permissions are supported only in the beta version of Microsoft Graph.
 
 ---
 

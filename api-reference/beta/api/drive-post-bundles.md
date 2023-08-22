@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: Create bundle
 description: Create a bundle of driveItems
 ms.localizationpriority: medium

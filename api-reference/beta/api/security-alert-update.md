@@ -47,7 +47,7 @@ PATCH /security/alerts_v2/{alertId}
 |Property|Type|Description|
 |:---|:---|:---|
 |status|microsoft.graph.security.alertStatus|The status of the alert. Possible values are: `new`, `inProgress`, `resolved`, `unknownFutureValue`.|
-|classification|microsoft.graph.security.alertClassification|Specifies the classification of the alert. Possible values are: `unknown`, `falsePositive`, `truePositive`, `benignPositive`, `unknownFutureValue`.|
+|classification|microsoft.graph.security.alertClassification|Specifies the classification of the alert. Possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
 |determination|microsoft.graph.security.alertDetermination|Specifies the determination of the alert. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |assignedTo|String|Owner of the incident, or null if no owner is assigned.|
 
@@ -99,10 +99,6 @@ Content-length: 2450
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-alert-v2-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-alert-v2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
