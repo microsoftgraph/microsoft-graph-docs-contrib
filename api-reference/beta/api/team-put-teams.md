@@ -13,14 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> [!IMPORTANT]
-> This API is in the process of being deprecated in favor of [Create team](../api/team-post.md), and will be removed by the end of 2019. For details about how to create a team from a group, see examples 4 and 5 in [Create team](../api/team-post.md).
-
 Create a new [team](../resources/team.md) from a [group](../resources/group.md).
 
 In order to create a team, the group must have a least one owner.
 
-If there is a delay in a created team call, you have the option to attempt the call creation three additional times before waiting 15 minutes due to a propagated delay. If the group was created less than 15 minutes ago, it's possible for a team-created call to fail with a 404 error code which can be attributed to ongoing replication delays.
+If the creation of the team call is delayed, you can retry the call up to three times before you wait for 15 minutes due to a propagation delay. If the group was created less than 15 minutes ago, the call might fail with a 404 error code due to replication delays.
 
 ## Permissions
 
