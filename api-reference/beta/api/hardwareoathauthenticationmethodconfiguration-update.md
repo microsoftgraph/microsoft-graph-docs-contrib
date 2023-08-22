@@ -42,7 +42,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/h
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [hardwareOathAuthenticationMethodConfiguration](../resources/hardwareoathauthenticationmethodconfiguration.md) object with the values of fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 For the list of properties, see [hardwareOathAuthenticationMethodConfiguration](../resources/hardwareoathauthenticationmethodconfiguration.md).
 
