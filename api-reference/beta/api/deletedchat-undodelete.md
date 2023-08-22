@@ -63,7 +63,7 @@ POST https://graph.microsoft.com/beta/teamwork/deletedChats/19:64dedcac16b74a209
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
