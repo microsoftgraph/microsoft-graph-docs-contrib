@@ -103,6 +103,7 @@ To get the list of resource-specific permissions required by the app, get the ap
 
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "user_upgrade_teamsApp_and_consent_resource_specific_permissions",
@@ -124,6 +125,16 @@ Content-Type: application/json
   }
 }
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-upgrade-teamsapp-and-consent-resource-specific-permissions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-upgrade-teamsapp-and-consent-resource-specific-permissions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
