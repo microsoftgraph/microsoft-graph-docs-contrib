@@ -535,7 +535,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "hardwareOathAuthenticationMethodConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [hardwareOathAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/hardwareOathAuthenticationMethodConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the [hardwareOathAuthenticationMethodConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/hardwareOathAuthenticationMethodConfiguration?view=graph-rest-beta) resource and its associated methods.",
           "Target": "hardwareOathAuthenticationMethodConfiguration"
         }
       ],
