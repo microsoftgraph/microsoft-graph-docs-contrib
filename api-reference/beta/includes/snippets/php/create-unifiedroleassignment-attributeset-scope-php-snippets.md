@@ -7,10 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 <?php
 
 // THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new UnifiedRoleAssignment();
-$requestBody->set@odatatype('#microsoft.graph.unifiedRoleAssignment');
+$requestBody->setOdataType('#microsoft.graph.unifiedRoleAssignment');
 
 $requestBody->setRoleDefinitionId('58a13ea3-c632-46ae-9ee0-9c0d43cd7f3d');
 

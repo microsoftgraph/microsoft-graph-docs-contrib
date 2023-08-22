@@ -1,9 +1,9 @@
 ---
 title: "userTeamwork: sendActivityNotification"
-description:  Send an activity feed notification to a user.
-author: RamjotSingh
+description: "Send an activity feed notification to a user."
+author: "RamjotSingh"
 ms.localizationpriority: medium
-ms.prod: microsoft-teams
+ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
@@ -17,11 +17,13 @@ Send an activity feed notification to a user. For more details about sending not
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|TeamsActivity.Send|
-|Delegated (personal Microsoft account)|Not Supported.|
-|Application|TeamsActivity.Send|
+| Permission type                        | Permissions (from least to most privileged)  |
+|:---------------------------------------|:---------------------------------------------|
+| Delegated (work or school account)     | TeamsActivity.Send                           |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            | TeamsActivity.Send, TeamsActivity.Send.User  |
+
+>**Note:** The `TeamsActivity.Send.User` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 
@@ -115,10 +117,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/userteamwork-sendactivitynotification-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/userteamwork-sendactivitynotification-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/userteamwork-sendactivitynotification-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -190,10 +188,6 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-for-customer-topic-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-for-customer-topic-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/team-sendactivitynotification-for-customer-topic-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -215,3 +209,4 @@ HTTP/1.1 204 No Content
 
 - [Activity feed notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-activity-feed/csharp)
 - [Activity feed notification Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-activity-feed/nodejs)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

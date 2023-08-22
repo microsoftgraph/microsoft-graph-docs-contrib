@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Onenote().Notebooks().GetRecentNotebooks(includePersonalNotebooks={includePersonalNotebooks})().Get(context.Background(), nil)
+getRecentNotebooks(includePersonalNotebooks={includePersonalNotebooks}), err := graphClient.Me().Onenote().Notebooks().GetRecentNotebooks(includePersonalNotebooks={includePersonalNotebooks})().Get(context.Background(), nil)
 
 
 ```

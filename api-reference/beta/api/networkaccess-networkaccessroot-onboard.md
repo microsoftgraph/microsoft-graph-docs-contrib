@@ -88,7 +88,6 @@ POST https://graph.microsoft.com/beta/networkAccess/microsoft.graph.networkacces
 
 ---
 
-
 ### Response
 The following is an example of the response.
 <!-- {

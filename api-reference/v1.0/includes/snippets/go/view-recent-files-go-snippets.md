@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Recent().Get(context.Background(), nil)
+recent(), err := graphClient.Drives().ByDriveId("drive-id").Recent().Get(context.Background(), nil)
 
 
 ```

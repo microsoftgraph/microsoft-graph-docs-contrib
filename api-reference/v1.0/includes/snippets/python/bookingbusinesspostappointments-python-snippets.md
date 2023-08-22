@@ -146,6 +146,8 @@ request_body.service_name = 'Catered bento'
 
 request_body.service_notes = 'Customer requires punctual service.'
 
+request_body.StaffMemberIds(['8ee1c803-a1fa-406d-8259-7ab53233f148', ])
+
 start_date_time = DateTimeTimeZone()
 start_date_time.@odata_type = '#microsoft.graph.dateTimeTimeZone'
 

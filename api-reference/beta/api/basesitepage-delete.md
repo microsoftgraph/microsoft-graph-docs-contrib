@@ -1,8 +1,7 @@
 ---
-author: sangle7
-description: "Removes a sitePage from the site pages list in a site."
-ms.date: 05/07/2018
-title: Delete a page from a SharePoint site
+author: "sangle7"
+description: "Delete a sitePage from the site pages list in a site."
+title: "Delete baseSitePage"
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
@@ -13,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Removes a [baseSitePage][] from the site pages [list][] in a [site][].
+Delete a [baseSitePage][] from the site pages [list][] in a [site][].
 
 [baseSitePage]: ../resources/basesitepage.md
 [list]: ../resources/list.md
@@ -58,12 +57,16 @@ If successful, this method returns a `204 No Content`. It does not return anythi
 
 <!-- { "blockType": "request", "name": "delete-page", "scopes": "files.readwrite sites.readwrite.all" } -->
 
-##### Request
+### Request
+
+The following is an example of the request.
 
 ```http
 DELETE /sites/{site-id}/pages/{page-id}
 ```
-##### Response
+### Response
+
+The following is an example of the response.
 
 <!-- { "blockType": "response" } -->
 
@@ -81,5 +84,3 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
-
-
