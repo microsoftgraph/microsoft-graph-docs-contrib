@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Create a new contactFolder under the user's default contacts folder.
 
 You can also [create a new contactfolder as a child of any specified contact folder](contactfolder-post-childfolders.md).

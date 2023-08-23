@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Get a list of [event](../resources/event.md) objects from the user's default calendar or
 from a specified calendar. The list contains single instance meetings and series masters.
 

@@ -12,6 +12,8 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Delete a [resourceConnection](../resources/windowsupdates-resourceconnection.md) object.
 
 ## Permissions

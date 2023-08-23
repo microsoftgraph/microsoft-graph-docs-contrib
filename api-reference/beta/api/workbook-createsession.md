@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Create a new workbook session. 
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Excel APIs can be called in one of two modes: 
 
 1. Persistent session - All changes made to the workbook are persisted (saved). This is the usual mode of operation. 

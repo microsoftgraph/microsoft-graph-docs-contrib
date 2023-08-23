@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Returns the user or organizational contact assigned as the user's manager. Optionally, you can expand the manager's chain up to the root node.
 
 ## Permissions

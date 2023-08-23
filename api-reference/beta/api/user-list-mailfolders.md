@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 Get all the mail folders in the specified user's mailbox, including any [mail search folders](../resources/mailsearchfolder.md).
 
 By default, this operation does not return hidden folders. Use a query parameter _includeHiddenFolders_ to include them in the response.

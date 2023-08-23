@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Meaningless if this url is called independently. This request is part of all async requests for excel. This is used to retrieve the status of a [workbookOperation](../resources/workbookoperation.md) object.
 
 Currently not all requests support async. Take Create session request as an example.

@@ -12,6 +12,8 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Add members of the same type to an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md).
 
 You can also use the method [addMembers](windowsupdates-updatableassetgroup-addmembers.md) to add members.
