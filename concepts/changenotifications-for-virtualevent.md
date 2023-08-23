@@ -114,11 +114,11 @@ Content-Type: application/json
 
 For information about how to subscribe to meeting call events of a specific session, see [Get change notifications for Microsoft Teams meeting call updates](/graph/changenotifications-for-onlinemeeting).
 
-## Subscribe to all registrants for a particular event
+## Subscribe to registration events for a webinar
 
 To subscribe to notifications for registration events of a webinar, specify the resource as `solutions/virtualEvents/webinars/{webinarId}/registrations`.
 
-An application can only have a single registrant level subscription per webinar inside a tenant.
+An application can only have a single registration level subscription per webinar inside a tenant.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -146,7 +146,7 @@ The following table indicates the supported notification and change types for th
 |:-------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------|:------------------|
 | [Webinar](/graph/api/resources/virtualeventwebinar?view=graph-rest-beta)       | `solutions/virtualEvents/webinars/{webinarId}`                                                      | created, updated  |
 | [Session](/graph/api/resources/virtualeventsession?view=graph-rest-beta)       | `solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}`                                 | created, updated  |
-| [Registrant](/graph/api/resources/virtualeventregistrant?view=graph-rest-beta) | `solutions/virtualEvents/webinars/{webinarId}/registrations/{registrantId}`              | created, updated  |
+| [Registration](/graph/api/resources/virtualeventregistrant?view=graph-rest-beta) | `solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}`              | created, updated  |
 
 ## Event notification examples
 
@@ -236,7 +236,7 @@ The following JSON examples show the responses for each supported change type of
       "subscriptionExpirationDateTime": "2023-01-28T00:00:00.0000000Z",
       "resourceData": {
         "@odata.id": "solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}",
-        "@odata.type": "#microsoft.graph.agents.subscriptionManagement.entities.graphNotificationPayload+GraphResourceData",
+        "@odata.type": "#microsoft.graph.virtualEventSession",
         "id": "solutions/virtualEvents/webinars/{webinarId}/sessions/{sessionId}"
       }
     }
@@ -248,11 +248,11 @@ The following JSON examples show the responses for each supported change type of
 
 For information about the types of notifications received for meeting call updates, see [Event notifications types](/graph/changenotifications-for-onlinemeeting#event-notifications-types).
 
-## Registrant notifications examples
+## Registration notifications examples
 
-The following JSON examples show the responses for each supported change type of a registrant.
+The following JSON examples show the responses for each supported change type of a registration.
 
-### Registrant created
+### Registration created
 
 ```json
 {
@@ -265,16 +265,16 @@ The following JSON examples show the responses for each supported change type of
       "resource": "solutions/virtualEvents/webinars/{webinarId}/registrations",
       "subscriptionExpirationDateTime": "2023-01-28T00:00:00.0000000Z",
       "resourceData": {
-        "@odata.id": "solutions/virtualEvents/webinars/{webinarId}/registrations/{registrantId}",
-        "@odata.type": "#microsoft.graph.virtualEventRegistrant",
-        "id": "solutions/virtualEvents/webinars/{webinarId}/registrations/{registrantId}"
+        "@odata.id": "solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}",
+        "@odata.type": "#microsoft.graph.virtualEventRegistration",
+        "id": "solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}"
       }
     }
   ]
 }
 ```
 
-### Registrant updated
+### Registration updated
 
 ```json
 {
@@ -287,9 +287,9 @@ The following JSON examples show the responses for each supported change type of
       "resource": "solutions/virtualEvents/webinars/{webinarId}/registrations",
       "subscriptionExpirationDateTime": "2023-01-28T00:00:00.0000000Z",
       "resourceData": {
-        "@odata.id": "solutions/virtualEvents/webinars/{webinarId}/registrations/{registrantId}",
-        "@odata.type": "#microsoft.graph.virtualEventRegistrant",
-        "id": "solutions/virtualEvents/webinars/{webinarId}/registrations/{registrantId}"
+        "@odata.id": "solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}",
+        "@odata.type": "#microsoft.graph.virtualEventRegistration",
+        "id": "solutions/virtualEvents/webinars/{webinarId}/registrations/{registrationId}"
       }
     }
   ]
