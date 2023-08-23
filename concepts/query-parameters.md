@@ -63,7 +63,7 @@ The following OData 4.0 capabilities are URL segments, not query parameters.
 The values of query parameters should be percent-encoded as per [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986#section-2.2). For example, all reserved characters in query strings must be percent-encoded. Many HTTP clients, browsers, and tools (such as the [Graph Explorer][graph-explorer]) will help you with this. If a query is failing, one possible cause is failure to encode the query parameter values appropriately. In some cases, you may have to double-encode the values.
 
 > [!NOTE]
-> There's a known issue with encoding ampersand (&) symbols in `$search` expressions on the `v1.0` endpoint. For more information about the issue and the recommended workaround, see [Known issue: $search for directory objects fails for encoded ampersand (&) character](https://developer.microsoft.com/en-us/graph/known-issues/?search=18185).
+> There's a known issue related to encoding ampersand (&) symbols in `$search` expressions on the `v1.0` endpoint. For more information about the issue and the recommended workaround, see [Known issue: $search for directory objects fails for encoded ampersand (&) character](https://developer.microsoft.com/en-us/graph/known-issues/?search=18185).
 
 For example, an unencoded URL looks like this:
 
