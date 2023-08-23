@@ -31,7 +31,6 @@ Inherits from [entity](../resources/entity.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|profileCardProperties|[profileCardProperty](profilecardproperty.md) collection| Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card.|
 |pronouns|[pronounsSettings](../resources/pronounssettings.md)|Represents administrator settings that manage the support of pronouns in an organization.|
 
 ## JSON representation
