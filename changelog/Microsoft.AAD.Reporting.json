@@ -241,7 +241,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customSecurityAttributeAudit",
           "ChangeType": "Addition",
-          "Description": "Added the [customSecurityAttributeAudit](https://learn.microsoft.com/en-us/graph/api/resources/customsecurityattributeaudit?view=graph-rest-beta) resource.",
+          "Description": "Added the [customSecurityAttributeAudit](https://learn.microsoft.com/en-us/graph/api/resources/customsecurityattributeaudit?view=graph-rest-beta) resource and its associated methods. Use this resource and its methods to retrieve audit logs relating to custom security attribute events.",
           "Target": "customSecurityAttributeAudit"
         }
       ],
@@ -250,7 +250,7 @@
       "Version": "beta",
       "CreatedDateTime": "2023-06-02T00:00:00.601897Z",
       "WorkloadArea": "Reports",
-      "SubArea": "Azure AD activity reports"
+      "SubArea": "Identity and acess reports"
     },
     {
       "ChangeList": [

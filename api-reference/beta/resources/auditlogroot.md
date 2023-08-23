@@ -17,14 +17,7 @@ Contains different types of audit logs. This resources returns a singleton audit
 
 ## Methods
 
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List directoryAudits](../api/directoryaudit-list.md) | [directoryAudit](directoryaudit.md) |List the directory audit items in the collection and their properties.|
-|[Get directoryAudit](../api/directoryaudit-get.md) | [directoryAudit](directoryaudit.md) |Get a specific directory audit item and its properties.|
-|[List customSecurityAttributeAudits](../api/customsecurityattributeaudit-list.md)|[customSecurityAttributeAudit](../resources/customsecurityattributeaudit.md) collection|Get the customSecurityAttributeAudit resources from the customSecurityAttributeAudits navigation property.|
-|[List provisioning](../api/provisioningobjectsummary-list.md)|[provisioningObjectSummary](../resources/provisioningobjectsummary.md) collection|Get the provisioningObjectSummary resources from the provisioning navigation property.|
-|[List signIn](../api/signin-list.md) | [signIn](signin.md) |Read properties and relationships of signIn objects.|
-|[Get signIn](../api/signin-get.md) | [signIn](signin.md) |Read properties and relationships of signIn object.|
+None.
 
 ## Properties
 
