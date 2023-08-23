@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-filterByCurrentUser(on='{on}'), err := graphClient.IdentityGovernance().PrivilegedAccess().Group().EligibilitySchedules().FilterByCurrentUser(on='{on}')().Get(context.Background(), nil)
+on := "principal"
+filterByCurrentUser, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().EligibilitySchedules().FilterByCurrentUserWithOn(&on).Get(context.Background(), nil)
 
 
 ```
