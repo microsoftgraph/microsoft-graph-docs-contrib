@@ -4,7 +4,7 @@ description: "OneDrive and SharePoint can be configured to retain the history fo
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 ---
 
 # List versions of a driveItem
@@ -62,6 +62,10 @@ GET /me/drive/items/{item-id}/versions
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-previous-versions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-previous-versions-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

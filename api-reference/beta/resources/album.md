@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: album resource type
 description: Facet describing a bundle which is a photo album.
 ms.localizationpriority: medium

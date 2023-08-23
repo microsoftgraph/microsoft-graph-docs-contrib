@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(request_adapter)
 
 query_params = CalendarViewRequestBuilder.CalendarViewRequestBuilderGetQueryParameters(
-		startDateTime = "2017-01-01T19:00:00-08:00",
-		endDateTime = "2017-10-01T19:00:00.00-08:00",
+		start_date_time = "2017-01-01T19:00:00-08:00",
+		end_date_time = "2017-10-01T19:00:00.00-08:00",
 )
 
 request_configuration = CalendarViewRequestBuilder.CalendarViewRequestBuilderGetRequestConfiguration(
@@ -20,8 +21,7 @@ headers = {
 
 )
 
-
-result = await client.groups.by_group_id('group-id').calendar_view.get(request_configuration = request_configuration)
+result = await graph_client.groups.by_group_id('group-id').calendar_view.get(request_configuration = request_configuration)
 
 
 ```

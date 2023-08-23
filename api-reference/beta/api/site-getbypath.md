@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Retrieve properties and relationships for a site resource."
 ms.date: 09/10/2017
 title: Get SharePoint site by path
@@ -60,7 +60,7 @@ HTTP/1.1 200 OK
 {
   "id": "contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE",
   "owner": {
-    "user": { 
+    "user": {
       "displayName": "Daron Spektor",
       "id": "5280E7FE-DC7A-4486-9490-E790D81DFEB3"
     }
