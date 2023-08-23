@@ -96,7 +96,7 @@ This section describes the changes that need to be added to Teams app manifest. 
 > [!NOTE]
 > `actor` is a special parameter that always takes the name of the caller. In delegated calls, `actor` is the user's name. In application-only calls, it takes the name of the Teams app.
 
-#### authorization section changes 
+#### authorization section changes
 
 ```json
 "authorization": 
@@ -116,7 +116,8 @@ This section describes the changes that need to be added to Teams app manifest. 
         "name": "TeamsActivity.Send.Chat" 
       } 
     ] 
-  } 
+  }
+} 
 
 ```
 
