@@ -4,52 +4,36 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = SendActivityNotificationPostRequestBody()
-topic = TeamworkActivityTopic()
-topic.source(TeamworkActivityTopicSource.EntityUrl('teamworkactivitytopicsource.entityurl'))
+graph_client = GraphServiceClient(request_adapter)
 
-topic.value = 'https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/tabs/{tabId}'
+request_body = SendActivityNotificationPostRequestBody(
+	topic = TeamworkActivityTopic(
+		source = TeamworkActivityTopicSource.EntityUrl,
+		value = "https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/tabs/{tabId}",
+	),
+	activity_type = "reservationUpdated",
+	preview_text = ItemBody(
+		content = "You have moved up the queue",
+	),
+	recipient = AadUserNotificationRecipient(
+		odata_type = "microsoft.graph.aadUserNotificationRecipient",
+		user_id = "jacob@contoso.com",
+	),
+	template_parameters = [
+		KeyValuePair(
+			name = "reservationId",
+			value = "TREEE433",
+		),
+		KeyValuePair(
+			name = "currentSlot",
+			value = "23",
+		),
+	]
+)
 
-
-request_body.topic = topic
-request_body.activity_type = 'reservationUpdated'
-
-preview_text = ItemBody()
-preview_text.content = 'You have moved up the queue'
-
-
-request_body.preview_text = preview_text
-recipient = AadUserNotificationRecipient()
-recipient.@odata_type = 'microsoft.graph.aadUserNotificationRecipient'
-
-recipient.user_id = 'jacob@contoso.com'
-
-
-request_body.recipient = recipient
-template_parameters_key_value_pair1 = KeyValuePair()
-template_parameters_key_value_pair1.name = 'reservationId'
-
-template_parameters_key_value_pair1.value = 'TREEE433'
-
-
-templateParametersArray []= templateParametersKeyValuePair1;
-template_parameters_key_value_pair2 = KeyValuePair()
-template_parameters_key_value_pair2.name = 'currentSlot'
-
-template_parameters_key_value_pair2.value = '23'
-
-
-templateParametersArray []= templateParametersKeyValuePair2;
-request_body.templateparameters(templateParametersArray)
-
-
-
-
-
-await client.teams.by_team_id('team-id').send_activity_notification.post(request_body = request_body)
+await graph_client.teams.by_team_id('team-id').send_activity_notification.post(request_body = request_body)
 
 
 ```

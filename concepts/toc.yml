@@ -467,7 +467,7 @@ items:
           - name: Identity and sign-in
             items:
               - name: Configure a custom claim provider token issuance event
-                href: /azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json&context=graph/context
+                href: /azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json&context=graph/context&tabs=microsoft-graph
               - name: Authentication methods
                 href: authenticationmethods-get-started.md
                 displayName: identity, authenticate, sign-in, sign in, signin
