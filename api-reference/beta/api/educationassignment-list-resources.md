@@ -35,7 +35,7 @@ GET /education/classes/{id}/assignments/{id}/resources
 This method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData query parameters to help customize the response.
 For general information, see [OData query parameters](/graph/query-parameters).
 
-All [properties](/graph/api/resources/educationassignmentresource#properties) are supported for `$filter`, `$orderby`.
+All [properties](/graph/api/resources/educationcategory#properties) are supported for the query parameters `$filter` and  `$orderby.
 
 
 ## Request headers
