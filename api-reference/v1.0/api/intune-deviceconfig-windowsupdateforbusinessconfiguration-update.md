@@ -182,6 +182,10 @@ Content-length: 1963
 [!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-windowsupdateforbusinessconfiguration-update-update-windowsupdateforbusinessconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-windowsupdateforbusinessconfiguration-update-update-windowsupdateforbusinessconfiguration-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

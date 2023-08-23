@@ -108,6 +108,10 @@ Content-length: 426
 [!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-devicecompliancedevicestatus-update-update-devicecompliancedevicestatus-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-devicecompliancedevicestatus-update-update-devicecompliancedevicestatus-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-devicecompliancedevicestatus-update-update-devicecompliancedevicestatus-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
