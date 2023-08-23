@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 Revert the [hardware Oath authentication method policy](../resources/hardwareoathauthenticationmethodconfiguration.md) to its default configuration.
 
 ## Permissions

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Pin an [educationModule](../resources/educationmodule.md) in the classwork list. This action sets the **isPinned** property to **true** for an [educationModule](../resources/educationmodule.md).
 
 Only teachers can perform this action and only one module at a time can be pinned in the classwork list.

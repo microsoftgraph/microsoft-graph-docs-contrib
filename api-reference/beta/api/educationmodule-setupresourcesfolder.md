@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 Create a SharePoint folder to upload files for a given [educationModule](../resources/educationmodule.md). Only teachers can perform this operation.
 
 The teacher determines what resources to upload to the SharePoint folder for the module.
@@ -29,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/{classId}/modules/{{moduleId}}/setUpResourcesFolder
+POST /education/classes/{classId}/modules/{moduleId}/setUpResourcesFolder
 ```
 
 ## Request headers
