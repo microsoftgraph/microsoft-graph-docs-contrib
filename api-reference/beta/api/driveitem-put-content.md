@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "The simple upload API allows you to provide the contents of a new file or update the contents of an existing file in a single API call. "
 ms.date: 09/10/2017
 title: Upload small files
@@ -109,6 +109,10 @@ Content-Type: text/plain
 
 The contents of the file goes here.
 ```
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/upload-via-put-id-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/upload-via-put-id-java-snippets.md)]

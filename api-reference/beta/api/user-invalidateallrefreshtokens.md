@@ -45,10 +45,7 @@ This operation has no request content.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code.
-
->[!NOTE]
->This API returns a different HTTP response code, similar to the [revokeSignInSessions](user-revokesigninsessions.md) action. For details, see [known issue](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code). 
+If successful, this method returns a 2xx series response code.
 
 ## Example
 
@@ -66,6 +63,10 @@ POST https://graph.microsoft.com/beta/me/invalidateAllRefreshTokens
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-invalidateallrefreshtokens-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/user-invalidateallrefreshtokens-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

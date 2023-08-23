@@ -2,7 +2,7 @@
 title: "List directorySettingTemplates"
 description: "This operation retrieves the list of available directorySettingTemplates objects."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "Jordanndahl"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -62,6 +62,10 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directorysettingtemplates-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-directorysettingtemplates-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

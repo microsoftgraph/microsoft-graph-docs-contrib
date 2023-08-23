@@ -25,7 +25,7 @@ configuration := &graphidentity.IdentityAuthenticationEventsFlowsRequestBuilderG
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Identity().AuthenticationEventsFlows().Get(context.Background(), configuration)
+authenticationEventsFlows, err := graphClient.Identity().AuthenticationEventsFlows().Get(context.Background(), configuration)
 
 
 ```

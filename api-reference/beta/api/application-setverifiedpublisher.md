@@ -2,7 +2,7 @@
 title: "application: setVerifiedPublisher"
 description: "Set the verified publisher of an application."
 ms.localizationpriority: medium
-author: "jesakowi"
+author: "xurobertMSFT"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
@@ -45,7 +45,7 @@ POST /applications(appId='{appId}')/setVerifiedPublisher
 
 In the request body, provide the following required properties.
 
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 | verifiedPublisherId | string | The Microsoft Partner Network ID (MPNID) of the verified publisher to be set on the application, from the publisher's Partner Center account. |
 
@@ -77,6 +77,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/application-setverifiedpublisher-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/application-setverifiedpublisher-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

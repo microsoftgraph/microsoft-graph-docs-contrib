@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Retrieve the contents of a specific version of a driveItem. "
 ms.date: 09/10/2017
 title: Download a previous version
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-Retrieve the contents of a specific version of a [driveItem](../resources/driveitem.md). 
+Retrieve the contents of a specific version of a [driveItem](../resources/driveitem.md).
 
 >**Note:** Getting the content of the current version is not supported. Instead, use the [driveItem content endpoint](driveitem-get-content.md).
 
@@ -67,6 +67,10 @@ GET /me/drive/items/{item-id}/versions/{version-id}/content
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-version-contents-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-version-contents-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

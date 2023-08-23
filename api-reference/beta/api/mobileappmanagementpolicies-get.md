@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab90ba
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mobilitymanagementpolicy-forid-app-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-mobilitymanagementpolicy-forid-app-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-mobilitymanagementpolicy-forid-app-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

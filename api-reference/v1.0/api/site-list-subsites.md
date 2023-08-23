@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: List the subsites for a SharePoint site
 ms.localizationpriority: high
 ms.prod: "sharepoint"
@@ -44,9 +44,9 @@ GET /sites/{site-id}/sites
 
 Do not supply a request body for this method.
 
-## Response 
+## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [site][] objects in the response body. 
+If successful, this method returns a `200 OK` response code and a collection of [site][] objects in the response body.
 
 ## Example
 

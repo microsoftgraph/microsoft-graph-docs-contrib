@@ -29,8 +29,6 @@ One of the following permissions is required to call this API. To learn more, in
 
 > **Note:** Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 
-> **Note:** Currently, with user delegated permissions, this operation only works for the `me` user. With application permissions, it works for all users by specifying the specific user ID (`me` alias is not supported with application permissions). For details, see [Known issues](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).
-
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -55,7 +53,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [team](../resources/team.md) objects in the response body.
 
 > [!Note]
-> Currently, this API call returns only the **id**, **displayName**, and **description** properties of a [team](../resources/team.md). To get all properties, use the [Get team](../api/team-get.md) operation. For details, see [known issues](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams).
+> This API has a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13633) where it returns only the **id**, **displayName**, and **description** properties of a [team](../resources/team.md).To get all properties, use the [Get team](../api/team-get.md) operation.
 
 
 ## Example
@@ -73,6 +71,10 @@ GET https://graph.microsoft.com/beta/me/joinedTeams
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-joinedteams-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-joinedteams-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

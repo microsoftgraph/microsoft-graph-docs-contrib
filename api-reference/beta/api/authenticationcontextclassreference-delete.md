@@ -1,7 +1,7 @@
 ---
 title: "Delete authenticationContextClassReference"
 description: "Delete an authenticationContextClassReference object."
-author: "bakerCaleb"
+author: "swetha-rai"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -65,6 +65,10 @@ DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/authenticatio
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-authenticationcontextclassreference-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-authenticationcontextclassreference-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

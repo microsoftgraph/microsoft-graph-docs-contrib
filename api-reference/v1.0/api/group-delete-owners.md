@@ -15,8 +15,6 @@ Remove an owner from a Microsoft 365 group or a security group through the **own
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-> **Note:** For issues encountered when removing owner of a group associated with a [team](/graph/api/resources/team), see [Known Issues](/graph/known-issues#removing-a-group-owner-also-removes-the-user-as-a-group-member).
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

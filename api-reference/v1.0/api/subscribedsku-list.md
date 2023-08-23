@@ -2,7 +2,7 @@
 title: "List subscribedSkus"
 description: "Retrieve the list of commercial subscriptions that an organization has acquired."
 ms.localizationpriority: high
-author: "jconley76"
+author: "frank-masuelli"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---

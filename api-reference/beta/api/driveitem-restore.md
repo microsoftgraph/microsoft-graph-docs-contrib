@@ -2,7 +2,7 @@
 title: "driveItem: restore"
 description: "Restore a driveItem that has been deleted and is currently in the recycle bin."
 ms.localizationpriority: medium
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 ms.prod: files
 doc_type: "apiPageType"
 ---
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-Restore a [driveItem](../resources/driveitem.md) that has been deleted and is currently in the recycle bin. 
+Restore a [driveItem](../resources/driveitem.md) that has been deleted and is currently in the recycle bin.
 
 >**Note**: This functionality is currently only available for OneDrive Personal.
 
@@ -86,6 +86,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/restore-item-e1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/restore-item-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

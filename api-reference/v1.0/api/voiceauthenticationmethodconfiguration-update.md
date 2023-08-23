@@ -1,7 +1,7 @@
 ---
 title: "Update voiceAuthenticationMethodConfiguration"
 description: "Update the properties of a voiceAuthenticationMethodConfiguration object."
-author: "jpettere"
+author: "luc-msft"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

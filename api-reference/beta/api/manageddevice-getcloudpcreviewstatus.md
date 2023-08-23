@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/managedDevices/185f01c2de9
 [!INCLUDE [sample-code](../includes/snippets/csharp/manageddevicethisgetcloudpcreviewstatus-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/manageddevicethisgetcloudpcreviewstatus-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/manageddevicethisgetcloudpcreviewstatus-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

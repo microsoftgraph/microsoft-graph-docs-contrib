@@ -1,7 +1,7 @@
 ---
 title: "Get transitiveReports for a user"
 description: "Get the count of transitive reports for a user."
-author: "dkershaw10"
+author: "yyuank"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/beta/users/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-transitivereports-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-transitivereports-user-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

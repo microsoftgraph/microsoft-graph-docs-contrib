@@ -2,7 +2,7 @@
 title: "Get passwordAuthenticationMethod"
 description: "Retrieve a user's passwordAuthenticationMethod object."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "zhvolosh"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---

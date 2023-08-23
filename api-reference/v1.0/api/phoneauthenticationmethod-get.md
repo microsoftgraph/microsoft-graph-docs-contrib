@@ -2,7 +2,7 @@
 title: "Get phoneAuthenticationMethod"
 description: "Retrieve a single phoneAuthenticationMethod object for a user."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "luc-msft"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---

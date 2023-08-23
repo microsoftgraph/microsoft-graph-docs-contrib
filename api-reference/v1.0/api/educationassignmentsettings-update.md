@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update educationAssignmentSettings
 Namespace: microsoft.graph
 
-Update the properties of an [educationAssignmentSettings](../resources/educationassignmentsettings.md) object. Only Teachers can update these settings.
+Update the properties of an [educationAssignmentSettings](../resources/educationassignmentsettings.md) object. Only teachers can update these settings.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -58,6 +58,7 @@ If successful, this method returns a `200 OK` response code and an updated [educ
 
 ### Request
 
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -109,7 +110,8 @@ Content-Type: application/json
 ---
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

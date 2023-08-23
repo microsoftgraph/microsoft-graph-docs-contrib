@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Get permission
 ms.localizationpriority: medium
@@ -100,7 +100,7 @@ GET /me/drive/items/{item-id}/permissions/{perm-id}
 
 ### Response
 
-If successful, this method returns a [Permission](../resources/permission.md) resource for the specified ID. 
+If successful, this method returns a [Permission](../resources/permission.md) resource for the specified ID.
 
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.permission", "truncated": true} -->
 
@@ -136,7 +136,7 @@ Content-type: application/json
 
 The [Permission](../resources/permission.md) resource uses _facets_ to provide information about the kind of permission represented by the resource.
 
-Permissions with a [**link**](../resources/sharinglink.md) facet represent sharing links created on the item. 
+Permissions with a [**link**](../resources/sharinglink.md) facet represent sharing links created on the item.
 Sharing links contain a unique token that provides access to the item for anyone with the link.
 
 Permissions with a [**invitation**](../resources/sharinginvitation.md) facet represent permissions added by inviting specific users or groups to have access to the file.

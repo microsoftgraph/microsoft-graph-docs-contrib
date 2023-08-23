@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: Get a SharePoint list
 ms.localizationpriority: high
 ms.prod: "sharepoint"

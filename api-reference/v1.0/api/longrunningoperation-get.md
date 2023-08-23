@@ -2,7 +2,7 @@
 title: "Get longRunningOperation"
 description: "Retrieve the status of a long-running operation."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "jpettere"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---

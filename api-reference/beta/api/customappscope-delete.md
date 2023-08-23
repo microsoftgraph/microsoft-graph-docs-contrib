@@ -2,7 +2,7 @@
 title: "Delete customAppScope"
 description: "Delete a customAppScope object of an RBAC provider."
 ms.localizationpriority: medium
-author: "bili1"
+author: "cubika"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -74,6 +74,10 @@ DELETE https://graph.microsoft.com/beta/roleManagement/exchange/customAppScopes/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-customappscope-exchangeonlineprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-customappscope-exchangeonlineprovider-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

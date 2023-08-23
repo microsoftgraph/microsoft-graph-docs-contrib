@@ -1,7 +1,7 @@
 ---
 title: "List emailMethods"
 description: "Get a list of the emailAuthenticationMethod objects for a user."
-author: "mmcla"
+author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

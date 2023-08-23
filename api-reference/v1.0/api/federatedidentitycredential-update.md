@@ -1,7 +1,7 @@
 ---
 title: "Update federatedIdentityCredential"
 description: "Update the properties of a federatedIdentityCredential object."
-author: "shahzad-khalid"
+author: "nickludwig"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType

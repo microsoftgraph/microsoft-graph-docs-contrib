@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: "driveItem: createUploadSession"
 ms.localizationpriority: high
 ms.prod: "sharepoint"
@@ -93,7 +93,7 @@ The following example controls the behavior if the filename is already taken, an
 
 ### Request
 
-The response to this request will provide the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file. 
+The response to this request will provide the details of the newly created [uploadSession](../resources/uploadsession.md), which includes the URL used for uploading the parts of the file.
 
 >**Note:** The {item-path} must contain the name of the item that's specified in the request body.
 
@@ -140,7 +140,7 @@ You can upload the entire file, or split the file into multiple byte ranges, as 
 The fragments of the file must be uploaded sequentially in order.
 Uploading fragments out of order will result in an error.
 
-**Note:** If your app splits a file into multiple byte ranges, the size of each byte range **MUST** be a multiple of 320 KiB (327,680 bytes). 
+**Note:** If your app splits a file into multiple byte ranges, the size of each byte range **MUST** be a multiple of 320 KiB (327,680 bytes).
 Using a fragment size that does not divide evenly by 320 KiB will result in errors committing some files.
 
 ### Example
@@ -181,10 +181,10 @@ Content-Type: application/json
 ```
 
 Your app can use the **nextExpectedRanges** value to determine where to start the next byte range.
-You may see multiple ranges specified, indicating parts of the file that the server has not yet received. 
+You may see multiple ranges specified, indicating parts of the file that the server has not yet received.
 This is useful if you need to resume a transfer that was interrupted and your client is unsure of the state on the service.
 
-You should always determine the size of your byte ranges according to the best practices below. 
+You should always determine the size of your byte ranges according to the best practices below.
 Do not assume that **nextExpectedRanges** will return ranges of proper size for a byte range to upload.
 The **nextExpectedRanges** property indicates ranges of the file that have not been received and not a pattern for how your app should upload the file.
 
@@ -207,7 +207,7 @@ Content-Type: application/json
 
 * The `nextExpectedRanges` property won't always list all of the missing ranges.
 * On successful fragment writes, it will return the next range to start from (eg. "523-").
-* On failures when the client sent a fragment the server had already received, the server will respond with `HTTP 416 Requested Range Not Satisfiable`. 
+* On failures when the client sent a fragment the server had already received, the server will respond with `HTTP 416 Requested Range Not Satisfiable`.
   You can [request upload status](#resuming-an-in-progress-upload) to get a more detailed list of missing ranges.
 * Including the Authorization header when issuing the `PUT` call may result in a `HTTP 401 Unauthorized` response. The Authorization header and bearer token should only be sent when issuing the `POST` during the first step. It should be not be included when issuing the `PUT`.
 
@@ -362,7 +362,7 @@ Now that your app knows where to start the upload from, resume the upload by fol
 
 ## Handle upload errors
 
-When the last byte range of a file is uploaded, it is possible for an error to occur. 
+When the last byte range of a file is uploaded, it is possible for an error to occur.
 This can be due to a name conflict or quota limitation being exceeded.
 The upload session will be preserved until the expiration time, which allows your app to recover the upload by explicitly committing the upload session.
 

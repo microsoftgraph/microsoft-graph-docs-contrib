@@ -160,9 +160,15 @@ Content-type: application/json
       "rbacGroupName": "UnassignedGroup",
       "onboardingStatus": "onboarded",
       "defenderAvStatus": "unknown",
+      "ipInterfaces": [
+        "1.1.1.1"
+      ],
       "loggedOnUsers": [],
       "roles": [
         "compromised"
+      ],
+      "detailedRoles": [
+        "Main device"
       ],
       "tags": [
         "Test Machine"
@@ -183,6 +189,9 @@ Content-type: application/json
       "detectionStatus": "detected",
       "mdeDeviceId": "73e7e2de709dff64ef64b1d0c30e67fab63279db",
       "roles": [],
+      "detailedRoles": [
+        "Referred in command line"
+      ],
       "tags": [],
       "fileDetails": {
         "sha1": "5f1e8acedc065031aad553b710838eb366cfee9a",
@@ -209,6 +218,7 @@ Content-type: application/json
       "detectionStatus": "detected",
       "mdeDeviceId": "73e7e2de709dff64ef64b1d0c30e67fab63279db",
       "roles": [],
+      "detailedRoles": [],
       "tags": [],
       "imageFile": {
         "sha1": "5f1e8acedc065031aad553b710838eb366cfee9a",
@@ -248,6 +258,7 @@ Content-type: application/json
       "registryKey": "SYSTEM\\CONTROLSET001\\CONTROL\\WMI\\AUTOLOGGER\\SENSEAUDITLOGGER",
       "registryHive": "HKEY_LOCAL_MACHINE",
       "roles": [],
+      "detailedRoles": [],
       "tags": []
     }
   ]

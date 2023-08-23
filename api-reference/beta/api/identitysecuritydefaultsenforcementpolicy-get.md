@@ -2,7 +2,7 @@
 title: "Get identitySecurityDefaultsEnforcementPolicy"
 description: "Retrieve the properties and relationships of identitysecuritydefaultsenforcementpolicy object."
 ms.localizationpriority: medium
-author: "rohinigoyal1"
+author: "Sammak"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/beta/policies/identitySecurityDefaultsEnforcemen
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-identitysecuritydefaultsenforcementpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-identitysecuritydefaultsenforcementpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

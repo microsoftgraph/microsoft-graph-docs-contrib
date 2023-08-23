@@ -1,8 +1,8 @@
 ---
 title: "Delete profileCardProperty"
-description: "Delete a profileCardProperty object and remove all customizations from the profile card."
+description: "Delete a profileCardProperty object and remove all customizations from a profile card."
 ms.localizationpriority: medium
-author: "kevinbellinger"
+author: "rwaithera"
 ms.prod: "people"
 doc_type: "apiPageType"
 ---
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-Delete the [profileCardProperty](../resources/profilecardproperty.md) object specified by its `directoryPropertyName` from the organization's profile card, and remove any localized customizations for that property.
+Delete the [profileCardProperty](../resources/profilecardproperty.md) object specified by its **directoryPropertyName** from the organization's profile card, and remove any localized customizations for that property.
 
 ## Permissions
 
@@ -23,19 +23,21 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
+| Delegated (work or school account)     | PeopleSettings.ReadWrite.All                |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Not supported.                              |
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a tenant administrator or global administrator role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have a Tenant Administrator or Global Administrator role.
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /organization/{organizationId}/settings/profileCardProperties/{directoryPropertyName-id}
+DELETE /admin/people/profileCardProperties/{id}
 ```
+
+> **Note:** The `/organization/{organizationId}/settings` path is deprecated. Going forward, use the `/admin/people` path.
 
 ## Request headers
 
@@ -55,20 +57,25 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ### Request
 
-The following example shows how to delete the attribute named "Fax" from the profile card for the organization.
+The following example shows how to delete the attribute named `Fax` from the profile card for the organization.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_profilecardproperty"
+  "name": "delete_profilecardproperty",
+  "sampleKeys": ["fax"]
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/organization/{organizationId}/settings/profileCardProperties/fax
+DELETE https://graph.microsoft.com/beta/admin/people/profileCardProperties/fax
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-profilecardproperty-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-profilecardproperty-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -109,15 +116,3 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Delete profileCardProperty",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-
-

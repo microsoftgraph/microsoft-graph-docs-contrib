@@ -130,7 +130,6 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

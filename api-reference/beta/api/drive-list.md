@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Retrieve the list of Drive resources available for a target User, Group, or Site."
 ms.date: 09/10/2017
 title: List Drives
@@ -87,6 +87,10 @@ GET /me/drives
 [!INCLUDE [sample-code](../includes/snippets/csharp/enum-drives-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/enum-drives-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/enum-drives-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -115,7 +119,7 @@ GET /me/drives
 
 ### Response
 
-<!-- { "blockType": "response", 
+<!-- { "blockType": "response",
        "@odata.type": "Collection(microsoft.graph.drive)",
        "truncated": true } -->
 

@@ -25,7 +25,7 @@ requestBody.SetFailedDeviceCount(&failedDeviceCount)
 notInstalledDeviceCount := int32(7)
 requestBody.SetNotInstalledDeviceCount(&notInstalledDeviceCount) 
 
-result, err := graphClient.DeviceAppManagement().ManagedEBooks().ByManagedEBookId("managedEBook-id").UserStateSummary().Post(context.Background(), requestBody, nil)
+userStateSummary, err := graphClient.DeviceAppManagement().ManagedEBooks().ByManagedEBookId("managedEBook-id").UserStateSummary().Post(context.Background(), requestBody, nil)
 
 
 ```

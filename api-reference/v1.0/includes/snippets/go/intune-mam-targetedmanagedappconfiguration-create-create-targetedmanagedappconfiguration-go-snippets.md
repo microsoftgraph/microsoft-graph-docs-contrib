@@ -39,7 +39,7 @@ requestBody.SetDeployedAppCount(&deployedAppCount)
 isAssigned := true
 requestBody.SetIsAssigned(&isAssigned) 
 
-result, err := graphClient.DeviceAppManagement().TargetedManagedAppConfigurations().Post(context.Background(), requestBody, nil)
+targetedManagedAppConfigurations, err := graphClient.DeviceAppManagement().TargetedManagedAppConfigurations().Post(context.Background(), requestBody, nil)
 
 
 ```

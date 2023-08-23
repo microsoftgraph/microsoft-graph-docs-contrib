@@ -1,7 +1,7 @@
 ---
 title: "Delete smsAuthenticationMethodConfiguration"
 description: "Delete a smsAuthenticationMethodConfiguration object."
-author: "jpettere"
+author: "luc-msft"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

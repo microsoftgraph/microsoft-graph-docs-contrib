@@ -1,7 +1,7 @@
 ---
 title: "Get azureADAuthentication"
 description: "Read the properties and relationships of an azureADAuthentication object to find Azure AD SLA attainment for your tenant."
-author: "sarbar"
+author: "SarahBar"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/reports/sla/azureADAuthentication
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-azureadauthentication-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-azureadauthentication-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

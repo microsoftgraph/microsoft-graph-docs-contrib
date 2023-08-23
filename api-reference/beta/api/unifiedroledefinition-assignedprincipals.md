@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleDefinition: assignedPrincipals"
 description: "Get the list of security principals (users, groups, and service principals) directly or transitively assigned to a specific role for different scopes."
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

@@ -1,7 +1,7 @@
 ---
 title: "Get organizationalBranding"
 description: "Read the properties and relationships of an organizationalBranding object."
-author: "AlexanderMars"
+author: "quievey"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

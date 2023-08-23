@@ -14,7 +14,7 @@ List the [sites](../resources/site.md) that have been followed by the signed in 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
->**Note:** This API has a [known issue](/graph/known-issues#sites-and-lists-sharepoint) and might return incorrect results. 
+> **Note:** This API has a [known issue](https://developer.microsoft.com/graph/known-issues/?search=15193) and might return incorrect results.
 
 ## Permissions
 

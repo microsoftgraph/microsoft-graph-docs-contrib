@@ -1,7 +1,7 @@
 ---
 title: "Get fido2AuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a fido2AuthenticationMethodConfiguration object."
-author: "jpettere"
+author: "calvinlui"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"

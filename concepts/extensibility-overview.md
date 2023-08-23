@@ -19,7 +19,7 @@ In this article, we'll discuss how Microsoft Graph supports extending its resour
 > [!IMPORTANT]
 > Do not use extensions to store sensitive personally identifiable information, such as account credentials, government identification numbers, cardholder data, financial account data, healthcare information, or sensitive background information.
 >
-> The extensions mentioned in this article are not similar to Azure AD [custom security attributes](/graph/api/resources/custom-security-attributes-overview). To understand their differences, see [How do custom security attributes compare with extensions?](/azure/active-directory/fundamentals/custom-security-attributes-overview#how-do-custom-security-attributes-compare-with-extensions)
+> The extensions mentioned in this article are not similar to [custom security attributes](/graph/api/resources/custom-security-attributes-overview). To understand their differences, see [How do custom security attributes compare with extensions?](/azure/active-directory/fundamentals/custom-security-attributes-overview#how-do-custom-security-attributes-compare-with-extensions)
 
 ## Why add custom data to Microsoft Graph?
 
@@ -372,7 +372,7 @@ GET https://graph.microsoft.com/beta/users?$select=id,displayName,extension_b7d8
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/extensibility-overview-directoryextensions-get-users-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -644,7 +644,7 @@ POST https://graph.microsoft.com/beta/users
     "accountEnabled": true,
     "displayName": "Adele Vance",
     "mailNickname": "AdeleV",
-    "userPrincipalName": "AdeleV@m365x72712789.onmicrosoft.com",
+    "userPrincipalName": "AdeleV@contoso.com",
     "passwordProfile": {
         "forceChangePasswordNextSignIn": false,
         "password": "xWwvJ]6NMw+bWH-d"
@@ -662,7 +662,7 @@ POST https://graph.microsoft.com/beta/users
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/extensibility-overview-schemaextensions-add-users-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -721,7 +721,7 @@ PATCH https://graph.microsoft.com/beta/users/0668e673-908b-44ea-861d-0661297e1a3
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/extensibility-overview-schemaextensions-update-users-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -773,7 +773,7 @@ GET https://graph.microsoft.com/beta/users/0668e673-908b-44ea-861d-0661297e1a3e?
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/extensibility-overview-schemaextensions-get-user-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -1036,7 +1036,7 @@ The table below contrasts and compares the extension types, which should help yo
 
 | Capability | Extension attributes 1-15 | Directory extensions | Schema extensions | Open extensions |
 |--|--|--|--|--|
-| Supported resource types | [user][] <br/>[device][] | [user][] <br/> [group][] [administrativeUnit][] <br/> [application][] <br/>[device][] <br/> [organization][] | [user][] <br/> [group][] [administrativeUnit][] <br/> [contact][] <br/> [device][] <br/> [event][] (both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [contact][] <br/> [device][] <br/> [event][]<sup>1</sup> (both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] <br/> [todoTask][] <br/> [todoTaskList][] |
+| Supported resource types | [user][] <br/>[device][] | [user][] <br/> [group][] <br/> [administrativeUnit][] <br/> [application][] <br/>[device][] <br/> [organization][] | [user][] <br/> [group][] <br/> [administrativeUnit][] <br/> [contact][] <br/> [device][] <br/> [event][] (both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] | [user][] <br/> [group][] <!--<br/> [administrativeUnit][]--> <br/> [contact][] <br/> [device][] <br/> [event][]<sup>1</sup> (both user and group calendars) <br/> [message][] <br/> [organization][] <br/> [post][] <br/> [todoTask][] <br/> [todoTaskList][] |
 | Strongly typed | No | Yes | Yes | No |
 | Filterable | Yes | Yes | Yes | No |
 | Can store a collection<sup>2</sup> | No | Yes | No | No |
@@ -1049,7 +1049,7 @@ The table below contrasts and compares the extension types, which should help yo
 | Limits | <li>15 predefined attributes per user or device resource instance | <li>100 extension values per resource instance | <li>Maximum of five definitions per owner app <br/><li> 100 extension values per resource instance (directory objects only) | <li>Two open extensions per creator app per resource instance<sup>3</sup> <br/><li> Max. of 2 Kb per open extension<sup>3</sup><li> For Outlook resources, each open extension is stored in a [MAPI named property][MAPI-named-property]<sup>4</sup> |
 
 > [!NOTE]
-> 
+>
 > <sup>1</sup> Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
 >
 > <sup>2</sup> Only available in public preview for directory extensions.
@@ -1063,10 +1063,6 @@ The table below contrasts and compares the extension types, which should help yo
 ## Permissions and privileges
 
 The same privileges that your app requires to read from or write to a resource instance are also required to manage any extensions data on that resource instance. For example, in a delegated scenario, an app can only update any user's extension data if it's granted the *User.ReadWrite.All* permission and the signed-in user is assigned a supported Azure AD administrative role.
-
-## Known limitations
-
-For known limitations using extensions, see the [extensions section](known-issues.md#extensions) in the known issues article.
 
 ## Next steps
 

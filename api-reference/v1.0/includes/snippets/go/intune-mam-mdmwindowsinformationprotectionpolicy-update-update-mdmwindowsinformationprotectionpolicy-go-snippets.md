@@ -220,7 +220,7 @@ requestBody.SetSmbAutoEncryptedFileExtensions(smbAutoEncryptedFileExtensions)
 isAssigned := true
 requestBody.SetIsAssigned(&isAssigned) 
 
-result, err := graphClient.DeviceAppManagement().MdmWindowsInformationProtectionPolicies().ByMdmWindowsInformationProtectionPolicieId("mdmWindowsInformationProtectionPolicy-id").Patch(context.Background(), requestBody, nil)
+mdmWindowsInformationProtectionPolicies, err := graphClient.DeviceAppManagement().MdmWindowsInformationProtectionPolicies().ByMdmWindowsInformationProtectionPolicyId("mdmWindowsInformationProtectionPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

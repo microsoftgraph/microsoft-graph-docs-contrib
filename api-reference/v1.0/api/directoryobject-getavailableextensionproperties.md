@@ -1,7 +1,7 @@
 ---
 title: "directoryObject: getAvailableExtensionProperties"
 description: "Get all or a filtered list of the directory extension properties that have been registered in a directory."
-author: "sureshja"
+author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType

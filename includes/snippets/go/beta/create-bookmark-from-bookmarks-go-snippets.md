@@ -38,7 +38,7 @@ requestBody.SetKeywords(keywords)
 state := graphmodels.PUBLISHED_ANSWERSTATE 
 requestBody.SetState(&state) 
 
-result, err := graphClient.Search().Bookmarks().Post(context.Background(), requestBody, nil)
+bookmarks, err := graphClient.Search().Bookmarks().Post(context.Background(), requestBody, nil)
 
 
 ```

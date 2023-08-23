@@ -2,7 +2,7 @@
 title: "application: unsetVerifiedPublisher"
 description: "Unset the verified publisher of an application."
 ms.localizationpriority: medium
-author: "jesakowi"
+author: "xurobertMSFT"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
@@ -67,6 +67,10 @@ POST https://graph.microsoft.com/beta/applications/{id}/unsetVerifiedPublisher
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/application-unsetverifiedpublisher-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/application-unsetverifiedpublisher-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -25,7 +25,7 @@ requestBody.SetRoleDefinitionId(&roleDefinitionId)
 directoryScopeId := "/"
 requestBody.SetDirectoryScopeId(&directoryScopeId) 
 
-result, err := graphClient.RoleManagement().Directory().RoleEligibilityScheduleRequests().Post(context.Background(), requestBody, nil)
+roleEligibilityScheduleRequests, err := graphClient.RoleManagement().Directory().RoleEligibilityScheduleRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

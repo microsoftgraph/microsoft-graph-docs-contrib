@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/chats/19:089ac694c48647c68035aae675cf78ab@t
 [!INCLUDE [sample-code](../includes/snippets/csharp/chat-list-permission-grants-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/chat-list-permission-grants-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/chat-list-permission-grants-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -154,5 +158,7 @@ Content-type: application/json
 ```
 
 ## See also
-- [List permission grants of a team](team-list-permissionGrants.md)
-- [List permission grants of a group](group-list-permissionGrants.md)
+
+- [List permission grants of a group](group-list-permissiongrants.md)
+- [List permission grants of a team](team-list-permissiongrants.md)
+- [List permission grants of a user](user-list-permissiongrants.md)

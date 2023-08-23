@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: List Recent Files
 ms.localizationpriority: medium
@@ -83,7 +83,7 @@ GET /me/drive/recent
 
 ### Response
 
-<!-- { 
+<!-- {
     "blockType": "response",
      "@odata.type": "Collection(microsoft.graph.driveItem)",
      "truncated": true

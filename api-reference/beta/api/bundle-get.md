@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 title: "Get bundle"
 description: "Get a bundle of driveItems."
 ms.localizationpriority: medium
