@@ -25,7 +25,8 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |[getRealTimeRemoteConnectionLatency](../api/cloudpcreports-getrealtimeremoteconnectionlatency.md)|Stream|Get the real-time remote connection latency reports like current round trip time and available bandwidth of a Cloud PC.|
 |[getRealTimeRemoteConnectionStatus](../api/cloudpcreports-getrealtimeremoteconnectionstatus.md)|Stream|Get the real-time remote connection status reports like sign in status, or days since last use of a Cloud PC.|
 |[getRemoteConnectionHistoricalReports](../api/cloudpcreports-getremoteconnectionhistoricalreports.md)|Stream|Get a Cloud PC's remote connection historical reports, such as **signInDateTime**, **signOutDateTime**, or **usageInHour**, in a given period.|
-|[getSharedUseLicenseUsageReport](../api/cloudpcreports-getshareduselicenseusagereport.md)|Stream|Get the shared use license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.|
+|[getSharedUseLicenseUsageReport](../api/cloudpcreports-getshareduselicenseusagereport.md) (deprecated) |Stream| Get the shared use license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.|
+|[getFrontlineReport](../api/cloudpcreports-getfrontlinereport.md)|Stream| Get the Frontline license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.|
 |[getTotalAggregatedRemoteConnectionReports](../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md)|Stream|Get the total aggregated remote connection reports, like usage and **daysSinceLastUse**, in a given period.|
 
 ## Properties
