@@ -3,6 +3,56 @@
     {
       "ChangeList": [
         {
+          "Id": "9b4cd317-0b73-42e2-991a-9654e292f8a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "displayNameLocalization",
+          "ChangeType": "Addition",
+          "Description": "Added the [displayNameLocalization](https://learn.microsoft.com/en-us/graph/api/resources/displayNameLocalization?view=graph-rest-1.0) resource type.",
+          "Target": "displayNameLocalization"
+        },
+        {
+          "Id": "9b4cd317-0b73-42e2-991a-9654e292f8a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profileCardAnnotation",
+          "ChangeType": "Addition",
+          "Description": "Added the [profileCardAnnotation](https://learn.microsoft.com/en-us/graph/api/resources/profileCardAnnotation?view=graph-rest-1.0) resource type.",
+          "Target": "profileCardAnnotation"
+        },
+        {
+          "Id": "9b4cd317-0b73-42e2-991a-9654e292f8a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "admin",
+          "ChangeType": "Addition",
+          "Description": "Added the [admin](https://learn.microsoft.com/en-us/graph/api/resources/admin?view=graph-rest-1.0) resource",
+          "Target": "admin"
+        },
+        {
+          "Id": "9b4cd317-0b73-42e2-991a-9654e292f8a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "peopleAdminSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleAdminSettings?view=graph-rest-1.0) resource",
+          "Target": "peopleAdminSettings"
+        },
+        {
+          "Id": "9b4cd317-0b73-42e2-991a-9654e292f8a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profileCardProperty",
+          "ChangeType": "Addition",
+          "Description": "Added the [profileCardProperty](https://learn.microsoft.com/en-us/graph/api/resources/profileCardProperty?view=graph-rest-1.0) resource",
+          "Target": "profileCardProperty"
+        }
+      ],
+      "Id": "9b4cd317-0b73-42e2-991a-9654e292f8a0",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-08-23T13:04:20.9572176Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "e2817c55-852f-428b-89f5-1b19830d041d",
           "ApiChange": "Permission",
           "ChangedApiName": "User.ReadWrite",
