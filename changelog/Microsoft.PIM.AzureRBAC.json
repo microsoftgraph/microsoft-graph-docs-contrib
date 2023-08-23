@@ -110,6 +110,14 @@
         },
 		{
           "Id": "8c297080-41ec-436e-9907-f0f8a3ee036d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityGovernance",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityGovernance](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance?view=graph-rest-1.0) resource.",
+          "Target": "identityGovernance"
+        },
+		{
+          "Id": "8c297080-41ec-436e-9907-f0f8a3ee036d",
           "ApiChange": "Relationship",
           "ChangedApiName": "privilegedAccess",
           "ChangeType": "Addition",
@@ -273,7 +281,7 @@
           "ApiChange": "Singleton",
           "ChangedApiName": "identityGovernance",
           "ChangeType": "Addition",
-          "Description": "Added the [identityGovernance](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource",
+          "Description": "Added the [identityGovernance](https://learn.microsoft.com/en-us/?view=graph-rest-1.0) resource.",
           "Target": "privilegedAccessContainer"
         }
       ],
