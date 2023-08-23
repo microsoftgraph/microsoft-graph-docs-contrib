@@ -1,4 +1,7 @@
 ---
+author: spgraph-docs-team
+description: "The driveItem resource represents a file, folder, or other item stored in a drive."
+title: driveItem
 ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
 doc_type: resourcePageType
