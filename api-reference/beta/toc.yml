@@ -13758,6 +13758,15 @@ items:
                             href: api/fido2authenticationmethodconfiguration-update.md
                           - name: Delete
                             href: api/fido2authenticationmethodconfiguration-delete.md
+                      - name: Hardware OATH policy
+                        href: resources/hardwareoathAuthenticationMethodConfiguration.md
+                        items:
+                          - name: Get
+                            href: api/hardwareoathAuthenticationMethodConfiguration-get.md
+                          - name: Update
+                            href: api/hardwareoathAuthenticationMethodConfiguration-update.md
+                          - name: Delete
+                            href: api/hardwareoathAuthenticationMethodConfiguration-delete.md
                       - name: Microsoft Authenticator policy
                         href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
                         items:
