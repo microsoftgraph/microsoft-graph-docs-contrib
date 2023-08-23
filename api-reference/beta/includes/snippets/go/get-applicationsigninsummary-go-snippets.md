@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-getAzureADApplicationSignInSummary(period='{period}'), err := graphClient.Reports().GetAzureADApplicationSignInSummary(period='{period}')().Get(context.Background(), nil)
+period := "{period}"
+getAzureADApplicationSignInSummary, err := graphClient.Reports().GetAzureADApplicationSignInSummaryWithPeriod(&period).Get(context.Background(), nil)
 
 
 ```
