@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Reports().GetTeamsTeamActivityCounts(period='{period}')().Get(context.Background(), nil)
+period := "{period}"
+graphClient.Reports().GetTeamsTeamActivityCountsWithPeriod(&period).Get(context.Background(), nil)
 
 
 ```

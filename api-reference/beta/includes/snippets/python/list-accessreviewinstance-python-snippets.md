@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(request_adapter)
 
 query_params = InstancesRequestBuilder.InstancesRequestBuilderGetQueryParameters(
 		top = 100,
@@ -16,8 +17,7 @@ request_configuration = InstancesRequestBuilder.InstancesRequestBuilderGetReques
 query_parameters = query_params,
 )
 
-
-result = await client.identity_governance.acce_reviews.definitions.by_definition_id('accessReviewScheduleDefinition-id').instances.get(request_configuration = request_configuration)
+result = await graph_client.identity_governance.acce_reviews.definitions.by_definition_id('accessReviewScheduleDefinition-id').instances.get(request_configuration = request_configuration)
 
 
 ```
