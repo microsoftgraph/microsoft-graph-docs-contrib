@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "servicePrincipalLockConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [servicePrincipalLockConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/servicePrincipalLockConfiguration?view=graph-rest-v1.0) resource.",
+          "Description": "Added the [servicePrincipalLockConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/servicePrincipalLockConfiguration?view=graph-rest-1.0) resource.",
           "Target": "servicePrincipalLockConfiguration"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "servicePrincipalLockConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the **servicePrincipalLockConfiguration** property to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-v1.0) resource.",
+          "Description": "Added the **servicePrincipalLockConfiguration** property to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.",
           "Target": "application"
         }
       ],
