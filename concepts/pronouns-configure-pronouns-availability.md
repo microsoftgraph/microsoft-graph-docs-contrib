@@ -7,7 +7,7 @@ ms.prod: "people"
 ms.custom: scenarios:getting-started
 ---
 
-# Manage pronouns settings for an organization using the Microsoft Graph API (preview)
+# Manage pronouns settings for an organization using the Microsoft Graph API
 
 Using the Microsoft Graph API, you can enable, disable, or get settings that manage pronouns in an organization, such as controlling the display within the organization of any pronouns users might have set up for themselves.
 
@@ -24,7 +24,7 @@ Enabling pronouns in an organization facilitates associating users with their pr
 
 The end user experience with pronouns might evolve over time. For current information about the end user experience with pronouns, see [Pronouns in Microsoft 365](https://support.microsoft.com/en-us/topic/232c3bfb-a947-4310-86db-b22d63663d85).
 
-Global administrators can decide whether to display pronouns that users set up in their profile cards. To enable this scenario, you set the [isEnabledInOrganization](/graph/api/resources/pronounssettings?view=graph-rest-beta&preserve-view=true#properties) property to `true`. When this property is set to `true`, pronouns are displayed for everyone within the organization. When this property is set to `false`, pronouns are not displayed for anyone within or outside the organization. The default setting is `false`.
+Global administrators can decide whether to display pronouns that users set up in their profile cards. To enable this scenario, you set the [isEnabledInOrganization](/graph/api/resources/pronounssettings?view=graph-rest-1.0&preserve-view=true#properties) property to `true`. When this property is set to `true`, pronouns are displayed for everyone within the organization. When this property is set to `false`, pronouns are not displayed for anyone within or outside the organization. The default setting is `false`.
 
 > [!IMPORTANT]
 > When you turn pronouns on or off, it can take up to seven hours for users to see changes. For example, if you turn pronouns on, users cannot see the option to add pronouns on their profile card for up to seven hours. If you turn pronouns off, any previously set pronouns might stay visible in Microsoft 365 (for example, on profile cards) for up to seven hours.
@@ -91,7 +91,7 @@ Alternatively, you can make pronouns unavailable for your organization using the
 
 ### Confirm your current settings
 
-Use the [get](/graph/api/peopleadminsettings-list-pronouns?view=graph-rest-beta&preserve-view=true) operation to return the current settings for pronouns in your organization.
+Use the [get](/graph/api/peopleadminsettings-list-pronouns?view=graph-rest-1.0&preserve-view=true) operation to return the current settings for pronouns in your organization.
 
 The following example gets the current display settings, which have pronouns disabled. 
 
@@ -99,7 +99,7 @@ The following example gets the current display settings, which have pronouns dis
 GET https://graph.microsoft.com/beta/admin/people/pronouns
 ```
 
-If successful, the response returns a `200 OK` response code and a [pronounsSettings](/graph/api/resources/pronounssettings?view=graph-rest-beta&preserve-view=true) resource in the response body.
+If successful, the response returns a `200 OK` response code and a [pronounsSettings](/graph/api/resources/pronounssettings?view=graph-rest-1.0&preserve-view=true) resource in the response body.
 
 ``` http
 HTTP/1.1 200 OK
@@ -112,7 +112,7 @@ Content-Type: application/json
 
 ### Enable pronouns in your organization
 
-Use the [update](/graph/api/pronounssettings-update?view=graph-rest-beta&preserve-view=true) operation to enable pronouns in your organization.
+Use the [update](/graph/api/pronounssettings-update?view=graph-rest-1.0&preserve-view=true) operation to enable pronouns in your organization.
 
 ``` http
 PATCH https://graph.microsoft.com/beta/admin/people/pronouns
@@ -123,7 +123,7 @@ Content-Type: application/json
 }
 ```
 
-If successful, the response returns a `200 OK` response code and a [pronounsSettings](/graph/api/resources/pronounssettings?view=graph-rest-beta&preserve-view=true) resource in the response body.
+If successful, the response returns a `200 OK` response code and a [pronounsSettings](/graph/api/resources/pronounssettings?view=graph-rest-1.0&preserve-view=true) resource in the response body.
 
 ``` http
 HTTP/1.1 200 OK
@@ -139,7 +139,7 @@ Content-Type: application/json
 Use the update operation to make pronouns unavailable in your organization.
 
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/people/pronouns
+PATCH https://graph.microsoft.com/v1.0/admin/people/pronouns
 Content-Type: application/json
 
 {
@@ -147,7 +147,7 @@ Content-Type: application/json
 }
 ```
 
-If successful, the response returns a `200 OK` response code and a [pronounsSettings](/graph/api/resources/pronounssettings?view=graph-rest-beta&preserve-view=true) resource in the response body.
+If successful, the response returns a `200 OK` response code and a [pronounsSettings](/graph/api/resources/pronounssettings?view=graph-rest-1.0&preserve-view=true) resource in the response body.
 
 ``` http
 HTTP/1.1 200 OK
