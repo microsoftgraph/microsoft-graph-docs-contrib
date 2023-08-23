@@ -8626,7 +8626,9 @@ items:
                   - name: Set user preferred presence
                     href: api/presence-setuserpreferredpresence.md
                   - name: Clear user preferred presence
-                    href: api/presence-clearuserpreferredpresence.md
+                    href: api/presence-clearuserpreferredpresence.md            
+                  - name: Set user status message
+                    href: api/presence-setstatusmessage.md
           - name: Employee learning
             displayName: Viva Learning
             items:
