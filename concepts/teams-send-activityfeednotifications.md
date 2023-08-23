@@ -38,7 +38,7 @@ Activity feed APIs work with a [Teams app](/microsoftteams/platform/overview). T
 
 ### Permissions
 
-You can use Delegated or Application permissions to send Activity Notifications. When using Application permissions, [Resource-specific Consent (RSC)](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) is recommended because TeamsActivity.Send.User permission can be consented by the user to send activity notifications. You must declare RSC permissions in your Teams app [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
+You can use delegated or application permissions to send activity notifications. When you use application permissions, we recommend that you use [resource-specific consent (RSC)](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) because the `TeamsActivity.Send.User` permission allows the user to consent to send activity notifications. You must declare RSC permissions in your Teams app [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 
 ### Teams app manifest changes
 
@@ -124,7 +124,7 @@ This section describes the changes that need to be added to Teams app manifest. 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |type|string|The type of the resource-specific consent (RSC) permission.|
-|name|string|The name of the RSC permission. For more information, see [Supported Resource Specific Permissions](/microsoftteams/platform/graph-api/rsc/resource-specific-consent#supported-rsc-permissions) |
+|name|string|The name of the RSC permission. For more information, see [Supported RSC permissions](/microsoftteams/platform/graph-api/rsc/resource-specific-consent#supported-rsc-permissions) |
 
 ### Install the Teams app
 
