@@ -19,7 +19,7 @@ The support for the `$search` query parameter varies by entity, with some, such 
 > [!NOTE]
 > The `$search` query parameter is currently not available in Azure AD B2C tenants.
 >
-> There's a known issue encoding ampersand (&) symbols in `$search` expressions on the `v1.0` endpoint. For more information about the issue and the recommended workaround, see [Known issue: $search for directory objects fails for encoded ampersand (&) character](https://developer.microsoft.com/en-us/graph/known-issues/?search=18185).
+> There's a known issue related to encoding ampersand (&) symbols in `$search` expressions on the `v1.0` endpoint. For more information about the issue and the recommended workaround, see [Known issue: $search for directory objects fails for encoded ampersand (&) character](https://developer.microsoft.com/en-us/graph/known-issues/?search=18185).
 
 ## Using $search on message collections
 
