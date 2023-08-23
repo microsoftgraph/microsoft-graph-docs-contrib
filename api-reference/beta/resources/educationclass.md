@@ -33,6 +33,7 @@ Students are regular members of the class, and Teachers are owners and have appr
 | [Remove teacher](../api/educationclass-delete-teachers.md)              | [educationUser]                                | Remove an **educationUser** from the class through the teachers navigation property.      |
 | [Create educationAssignment](../api/educationclass-post-assignments.md) | [educationAssignment]                          | Create a new **educationAssignment** by posting to the assignments collection.            |
 | [List assignments](../api/educationclass-list-assignments.md)           | [educationAssignment]collection                | Get an **educationAssignment** object collection.                                         |
+| [List modules](../api/educationclass-list-modules.md)                   | [educationModule]collection                    | Get an **educationModule** object collection.                                             |
 | [Get group](../api/educationclass-get-group.md)                         | [group]                                        | Get the Microsoft 365 **group** that corresponds to this **educationClass**.              |
 | [Create educationCategory](../api/educationclass-post-category.md)      | [educationCategory]                            | Create a new **educationCategory** for this class.                                        |
 | [List categories](../api/educationclass-list-categories.md)             | [educationCategory] collection                 | Get a list of **educationCategory** objects that belong to this class.                      |
@@ -64,6 +65,7 @@ Students are regular members of the class, and Teachers are owners and have appr
 | :----------- | :------------------------------- | :-------------------------------------------------------- |
 | assignments  | [educationAssignment] collection | All assignments associated with this class. Nullable.     |
 | members      | [educationUser] collection       | All users in the class. Nullable.                         |
+| modules      | [educationModule] collection       | All modules in the class. Nullable.                         |
 | schools      | [educationSchool] collection     | All schools that this class is associated with. Nullable. |
 | teachers     | [educationUser] collection       | All teachers in the class. Nullable.                      |
 |assignmentCategories| [educationCategory](educationcategory.md) collection | All categories associated with this class. Nullable. |
@@ -118,6 +120,7 @@ The following is a JSON representation of the resource.
 [educationassignment]: educationassignment.md
 [educationcourse]: educationcourse.md
 [educationcategory]: educationcategory.md
+[educationmodule]: educationmodule.md
 [educationschool]: educationschool.md
 [educationterm]: educationterm.md
 [identityset]: identityset.md

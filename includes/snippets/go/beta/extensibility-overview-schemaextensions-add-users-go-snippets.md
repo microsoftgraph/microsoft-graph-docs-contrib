@@ -22,7 +22,7 @@ displayName := "Adele Vance"
 requestBody.SetDisplayName(&displayName) 
 mailNickname := "AdeleV"
 requestBody.SetMailNickname(&mailNickname) 
-userPrincipalName := "AdeleV@m365x72712789.onmicrosoft.com"
+userPrincipalName := "AdeleV@contoso.com"
 requestBody.SetUserPrincipalName(&userPrincipalName) 
 passwordProfile := graphmodels.NewPasswordProfile()
 forceChangePasswordNextSignIn := false

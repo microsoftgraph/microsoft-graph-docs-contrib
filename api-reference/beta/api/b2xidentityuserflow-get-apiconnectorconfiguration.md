@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_testuserflow/ap
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-b2xuserflows-apiconnectorconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-b2xuserflows-apiconnectorconfiguration-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-b2xuserflows-apiconnectorconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -96,6 +100,10 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_testuserflow/ap
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-b2xuserflows-apiconnectorconfiguration-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-b2xuserflows-apiconnectorconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

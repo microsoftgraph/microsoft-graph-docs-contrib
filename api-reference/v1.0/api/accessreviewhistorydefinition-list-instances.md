@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|AccessReview.ReadWrite.All|
 
-If the signed-in user is not a global administrator or a global reader, only the definitions that the signed-in user created will be returned.
+[!INCLUDE [rbac-access-reviews-apis-read](../includes/rbac-for-apis/rbac-access-reviews-apis-read.md)]
 
 ## HTTP request
 
