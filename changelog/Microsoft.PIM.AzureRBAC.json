@@ -108,20 +108,28 @@
           "Description": "Added the **scheduleRequestActions** enumeration type.",
           "Target": "scheduleRequestActions"
         },
-        {
+		{
+          "Id": "8c297080-41ec-436e-9907-f0f8a3ee036d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "privilegedAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the **privilegedAccess** relationship to the [identityGovernance](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance?view=graph-rest-1.0) resource.",
+          "Target": "identityGovernance"
+        },
+		{
           "Id": "8c297080-41ec-436e-9907-f0f8a3ee036d",
           "ApiChange": "Resource",
-          "ChangedApiName": "identityGovernance",
+          "ChangedApiName": "privilegedAccessRoot",
           "ChangeType": "Addition",
-          "Description": "Added the [identityGovernance](https://learn.microsoft.com/en-us/graph/api/resources/identityGovernance?view=graph-rest-1.0) resource",
-          "Target": "identityGovernance"
+          "Description": "Added the [privilegedAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessRoot?view=graph-rest-1.0) resource.",
+          "Target": "privilegedAccessRoot"
         },
         {
           "Id": "8c297080-41ec-436e-9907-f0f8a3ee036d",
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedAccessGroup",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedAccessGroup](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroup?view=graph-rest-1.0) resource",
+          "Description": "Added the [privilegedAccessGroup](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroup?view=graph-rest-1.0) resource.",
           "Target": "privilegedAccessGroup"
         },
         {
@@ -129,7 +137,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedAccessGroupAssignmentSchedule",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedAccessGroupAssignmentSchedule](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupAssignmentSchedule?view=graph-rest-1.0) resource",
+          "Description": "Added the [privilegedAccessGroupAssignmentSchedule](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupAssignmentSchedule?view=graph-rest-1.0) resource and its associated methods for governing membership and ownership of groups through PIM for groups.",
           "Target": "privilegedAccessGroupAssignmentSchedule"
         },
         {
@@ -137,7 +145,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedAccessGroupAssignmentScheduleInstance",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedAccessGroupAssignmentScheduleInstance](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupAssignmentScheduleInstance?view=graph-rest-1.0) resource",
+          "Description": "Added the [privilegedAccessGroupAssignmentScheduleInstance](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupAssignmentScheduleInstance?view=graph-rest-1.0) resource and its associated methods for governing membership and ownership of groups through PIM for groups.",
           "Target": "privilegedAccessGroupAssignmentScheduleInstance"
         },
         {
@@ -145,7 +153,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedAccessGroupAssignmentScheduleRequest",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedAccessGroupAssignmentScheduleRequest](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupAssignmentScheduleRequest?view=graph-rest-1.0) resource",
+          "Description": "Added the [privilegedAccessGroupAssignmentScheduleRequest](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupAssignmentScheduleRequest?view=graph-rest-1.0) resource and its associated methods for governing membership and ownership of groups through PIM for groups.",
           "Target": "privilegedAccessGroupAssignmentScheduleRequest"
         },
         {
@@ -153,7 +161,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedAccessGroupEligibilitySchedule",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedAccessGroupEligibilitySchedule](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupEligibilitySchedule?view=graph-rest-1.0) resource",
+          "Description": "Added the [privilegedAccessGroupEligibilitySchedule](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupEligibilitySchedule?view=graph-rest-1.0) resource and its associated methods for governing membership and ownership of groups through PIM for groups.",
           "Target": "privilegedAccessGroupEligibilitySchedule"
         },
         {
@@ -161,7 +169,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedAccessGroupEligibilityScheduleInstance",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedAccessGroupEligibilityScheduleInstance](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupEligibilityScheduleInstance?view=graph-rest-1.0) resource",
+          "Description": "Added the [privilegedAccessGroupEligibilityScheduleInstance](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupEligibilityScheduleInstance?view=graph-rest-1.0) resource and its associated methods for governing membership and ownership of groups through PIM for groups.",
           "Target": "privilegedAccessGroupEligibilityScheduleInstance"
         },
         {
@@ -169,23 +177,15 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedAccessGroupEligibilityScheduleRequest",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedAccessGroupEligibilityScheduleRequest](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupEligibilityScheduleRequest?view=graph-rest-1.0) resource",
+          "Description": "Added the [privilegedAccessGroupEligibilityScheduleRequest](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessGroupEligibilityScheduleRequest?view=graph-rest-1.0) resource and its associated methods for governing membership and ownership of groups through PIM for groups.",
           "Target": "privilegedAccessGroupEligibilityScheduleRequest"
-        },
-        {
-          "Id": "8c297080-41ec-436e-9907-f0f8a3ee036d",
-          "ApiChange": "Resource",
-          "ChangedApiName": "privilegedAccessRoot",
-          "ChangeType": "Addition",
-          "Description": "Added the [privilegedAccessRoot](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessRoot?view=graph-rest-1.0) resource",
-          "Target": "privilegedAccessRoot"
         },
         {
           "Id": "8c297080-41ec-436e-9907-f0f8a3ee036d",
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedAccessSchedule",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedAccessSchedule](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessSchedule?view=graph-rest-1.0) resource",
+          "Description": "Added the [privilegedAccessSchedule](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessSchedule?view=graph-rest-1.0) resource.",
           "Target": "privilegedAccessSchedule"
         },
         {
@@ -193,7 +193,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedAccessScheduleInstance",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedAccessScheduleInstance](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessScheduleInstance?view=graph-rest-1.0) resource",
+          "Description": "Added the [privilegedAccessScheduleInstance](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessScheduleInstance?view=graph-rest-1.0) resource.",
           "Target": "privilegedAccessScheduleInstance"
         },
         {
@@ -201,7 +201,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "privilegedAccessScheduleRequest",
           "ChangeType": "Addition",
-          "Description": "Added the [privilegedAccessScheduleRequest](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessScheduleRequest?view=graph-rest-1.0) resource",
+          "Description": "Added the [privilegedAccessScheduleRequest](https://learn.microsoft.com/en-us/graph/api/resources/privilegedAccessScheduleRequest?view=graph-rest-1.0) resource.",
           "Target": "privilegedAccessScheduleRequest"
         },
         {
