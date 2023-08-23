@@ -3,7 +3,7 @@ title: "driveItemVersion resource type"
 description: "Represents a specific version of a driveItem."
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 doc_type: resourcePageType
 ---
 
@@ -47,7 +47,7 @@ In the previous table, the examples use `/drive`, but there are many valid reque
 |:----------------------------------|:-------|:--------------------------------
 | @microsoft.graph.downloadUrl      | string | A URL that can be used to download this version of the file's content. Authentication is not required with this URL. Read-only.
 
->**Notes:** 
+>**Notes:**
 >The `@microsoft.graph.downloadUrl` value is a short-lived URL and can't be cached. The URL is only available for a short period of time (1 hour) before it is invalidated.
 Removing file permissions for a user might not immediately invalidate the URL.
 
