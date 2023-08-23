@@ -46,7 +46,9 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [educationCategory](../resources/educationcategory.md) objects in the response body.
 
 ## Example
+
 ### Example 1: Get Categories
+
 #### Request
 The following is an example of the request.
 
