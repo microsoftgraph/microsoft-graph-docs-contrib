@@ -189,7 +189,8 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Create an accessPackageResourceRequest for removing a resource
+
+### Example 3: Create an accessPackageResourceRequest for adding a SharePoint Online site as a resource
 
 #### Request
 
@@ -198,6 +199,58 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests3"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/resourceRequests
+Content-type: application/json
+
+{
+  "requestType": "adminAdd",
+  "resource": {
+    "originId": "https://microsoft.sharepoint.com/sites/Example",
+    "originSystem": "SharePointOnline"
+  },
+  "catalog": {
+    "id": "beedadfe-01d5-4025-910b-84abb9369997"
+  }
+}
+```
+
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "acc2294e-f37f-42d3-981d-4e83847ed0ce",
+  "requestType": "adminAdd",
+  "state": "delivered"
+}
+```
+
+
+### Example 4: Create an accessPackageResourceRequest for removing a resource
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests4"
 }-->
 
 ```http
