@@ -1,7 +1,7 @@
 ---
 title: "List permissionGrants of a chat"
 description: "Retrieve permissionGrants of a chat."
-author: "akjo"
+author: "sthapliyal"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List permissionGrants of a chat
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [chat](../resources/chat.md). This list specifies the Azure AD apps that have access to the **chat**, along with the corresponding kind of resource-specific access that each app has.
 
@@ -57,50 +55,15 @@ If successful, this method returns a `200 OK` response code and a list of [resou
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "chat_list_permission_grants",
   "sampleKeys": ["19:089ac694c48647c68035aae675cf78ab@thread.v2"]
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/19:089ac694c48647c68035aae675cf78ab@thread.v2/permissionGrants
+
+```http
+GET https://graph.microsoft.com/v1.0/chats/19:089ac694c48647c68035aae675cf78ab@thread.v2/permissionGrants
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/chat-list-permission-grants-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/chat-list-permission-grants-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/chat-list-permission-grants-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/chat-list-permission-grants-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/chat-list-permission-grants-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/chat-list-permission-grants-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/chat-list-permission-grants-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/chat-list-permission-grants-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -117,7 +80,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   "@odata.context":"https://graph.microsoft.com/beta/$metadata#permissionGrants",
+   "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#permissionGrants",
    "value":[
       {
          "id":"Y2VkZGEyMWUtYTUwZS00ZDI3LWEyZjAtOTk0MTMwMGY3Y2I1IyNDaGF0U2V0dGluZ3MuUmVhZFdyaXRlLkNoYXQjI0FwcGxpY2F0aW9u",
@@ -156,7 +119,5 @@ Content-type: application/json
 ```
 
 ## See also
-
-- [List permission grants of a group](group-list-permissiongrants.md)
-- [List permission grants of a team](team-list-permissiongrants.md)
-- [List permission grants of a user](user-list-permissiongrants.md)
+- [List permission grants of a team](team-list-permissionGrants.md)
+- [List permission grants of a group](group-list-permissionGrants.md)
