@@ -67,7 +67,7 @@ The following is a JSON representation of the resource.
   "description": "String",
   "eventQueries": [
     {
-      "@odata.type": "microsoft.graph.security.eventQueries"
+      "@odata.type": "microsoft.graph.security.eventQuery"
     }
   ],
   "eventTriggerDateTime": "String (timestamp)",
