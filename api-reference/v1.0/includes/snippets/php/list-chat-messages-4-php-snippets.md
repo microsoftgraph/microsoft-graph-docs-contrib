@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new MessagesRequestBuilderGetRequestConfiguration();
@@ -17,7 +17,6 @@ $queryParameters->filter = "lastModifiedDateTime gt 2022-09-22T00:00:00.000Z and
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->chats()->byChatId('chat-id')->messages()->get($requestConfiguration);
-
+$result = $graphServiceClient->chats()->byChatId('chat-id')->messages()->get($requestConfiguration)->wait();
 
 ```
