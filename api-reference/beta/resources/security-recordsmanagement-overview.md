@@ -14,7 +14,7 @@ The Microsoft Purview records management APIs help organizations manage retentio
 The records mangement solution is a part of the Microsoft Purview compliance center.
 
 ## Manage retention labels
-Most organizations need to manage their data to comply with industry regulations and internal policies, reduce risks of litigation or security breach, and let their employees effectively and agiley share knowledge that is current and relevant to them. Managing data commonly involves appropriately retaining or deleting different types of content. 
+Many organizations need to manage their data to comply with industry regulations and internal policies, reduce risks of litigation or security breach, and let their employees effectively and agiley share knowledge that is current and relevant to them. Managing data commonly involves appropriately retaining or deleting different types of content. 
 
 You can use [retention labels](security-retentionlabel.md) to configure retention and deletion settings for Microsoft 365 content. For example, you can set retention periods from when the content was labeled and you can set disposition review as the action at the end of the retention period. 
 
@@ -25,12 +25,14 @@ Some scenarios require starting a retention period for certain documents upon a 
 
 You can use the [retentionLabel](security-retentionlabel.md) resource to support event-based retention, by setting the **retentionTrigger** property as `dateOfEvent` and associating the label with a [retentionEventType](security-retentioneventtype.md) resource. A [retentionEvent](security-retentionevent.md) is associated with a **retentionEventType** as well. When a triggering event happens, only content with that retention label applied is retained for the specified retention period.
 
-As an example: in an organization, when an employee leaves, employment records must be retained for 5 years. For each employee record, apply a **retentionLabel** configured as follows:
-- A display name of "Personnel information"
-- Listen to the **retentionEventType** named "Employee departure"
-- A **retentionDuration** of 1827 days (5 years)
+As an example: in an organization, when an employee leaves, employment records must be retained for 5 years. Use the **retentionLabel** and **retentionEvent** APIs to do the following for each employee record when the employee starts:
+1. Apply a **retentionLabel** configured as follows:
+   - A display name of "Personnel information"
+   - A **retentionDuration** of 1827 days (5 years)
+   - Listening to the **retentionEventType** named "Employee departure"
+2. Define a **retentionEvent** with the same **retentionEventType** named "Employee departure", and as part of its [eventQuery](security-eventqueries.md) collection, an `Asset ID` with an employee ID value as the ID information associated with the event.
 
-When an employee with an employee ID of 1234 leaves Contoso, the information is updated in the HR management system. The record management system can then use the records management API to trigger a new instance of **retentionEvent** with the "Employee departure" event type and the criteria of 'ComplianceAssetID:1234'. This way, any items using the "Personnel information" retention label and have the employee ID of 1234 in the 'Compliance Asset' column, gets their 5 year retention period started from the date specified.
+When an employee with an ID of 1234 leaves Contoso, the information is updated in the HR management system. The employee departure can trigger a new instance of **retentionEvent** with the "Employee departure" event type, and as part of its **eventQueries** property, an [eventQuery](security-eventqueries.md) with a query string of 'AssetID:1234'. This way, employee record items using the "Personnel information" retention label and associated with the employee ID of 1234 get their 5 year retention period started from the date of the employee departure event.
 
 ## Entities
 The records management API includes the following key entities.
