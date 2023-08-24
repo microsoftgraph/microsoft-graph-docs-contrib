@@ -81,7 +81,7 @@ tasks := []graphmodelsidentitygovernance.Taskable {
 workflow.SetTasks(tasks)
 requestBody.SetWorkflow(workflow)
 
-microsoft.graph.identityGovernance.createNewVersion, err := graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().ByWorkflowId("workflow-id").MicrosoftGraphIdentityGovernanceCreateNewVersion().Post(context.Background(), requestBody, nil)
+microsoftGraphIdentityGovernanceCreateNewVersion, err := graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().ByWorkflowId("workflow-id").MicrosoftGraphIdentityGovernanceCreateNewVersion().Post(context.Background(), requestBody, nil)
 
 
 ```
