@@ -19,7 +19,7 @@ requestBody := graphmodels.NewUser()
 deviceEnrollmentLimit := int32(5)
 requestBody.SetDeviceEnrollmentLimit(&deviceEnrollmentLimit) 
 
-result, err := graphClient.Users().Post(context.Background(), requestBody, nil)
+users, err := graphClient.Users().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -2,7 +2,7 @@
 title: "conditionalAccessGuestsOrExternalUsers resource type"
 description: "Represents internal guests and external users in a policy scope."
 ms.localizationpriority: medium
-author: "sandeo"
+author: "SanDeo-MSFT"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

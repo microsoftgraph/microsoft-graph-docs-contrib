@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/intelProfiles
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-intelligenceprofile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-intelligenceprofile-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-intelligenceprofile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -132,9 +136,9 @@ Content-Type: application/json
         "Government",
         "Humanitarian"
       ],
-      "sponsorStates": [
+      "countriesOrRegionsOfOrigin": [
         {
-          "@odata.type": "microsoft.graph.security.intelligenceProfileSponsorState",
+          "@odata.type": "microsoft.graph.security.countriesOrRegionsOfOrigin",
           "label": "Country/Region",
           "code": "Country/Region code"
         }

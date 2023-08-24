@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Security().Labels().RetentionLabels().Get(context.Background(), nil)
+retentionLabels, err := graphClient.Security().Labels().RetentionLabels().Get(context.Background(), nil)
 
 
 ```

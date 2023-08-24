@@ -25,7 +25,7 @@ configuration := &graphusers.ItemContactsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Contacts().Get(context.Background(), configuration)
+contacts, err := graphClient.Me().Contacts().Get(context.Background(), configuration)
 
 
 ```

@@ -2,7 +2,7 @@
 title: "signIn resource type"
 doc_type: resourcePageType
 description: "Provides details about user or application sign-in activity in your directory."
-author: "besiler"
+author: "egreenberg14"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 ---
@@ -63,7 +63,7 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 |isInteractive|Boolean|Indicates whether a user sign in is interactive. In interactive sign in, the user provides an authentication factor to Azure AD. These factors include passwords, responses to MFA challenges, biometric factors, or QR codes that a user provides to Azure AD or an associated app. In non-interactive sign in, the user doesn't provide an authentication factor. Instead, the client app uses a token or code to authenticate or access a resource on behalf of a user. Non-interactive sign ins are commonly used for a client to sign in on a user's behalf in a process transparent to the user.|
 |isTenantRestricted|Boolean|Shows whether the sign in event was subject to an Azure AD tenant restriction policy.|
 |location|[signInLocation](signinlocation.md)|The city, state, and 2 letter country code from where the sign-in occurred. <br/><br/> Supports `$filter` (`eq`, `startsWith`) on **city**, **state**, and **countryOrRegion** properties.|
-|managedServiceIdentity|[managedIdentity](../resources/managedidentity.md)|Contains information about the managed identity used for the sign in, including its type and associated Azure Resource Manager (ARM) resource ID.|
+|managedServiceIdentity|[managedIdentity](../resources/managedidentity.md)|Contains information about the managed identity used for the sign in, including its type, associated Azure Resource Manager (ARM) resource ID, and federated token information.|
 |networkLocationDetails|[networkLocationDetail](networklocationdetail.md) collection|The network location details including the type of network used and its names.|
 |originalRequestId|String|The request identifier of the first request in the authentication sequence. <br/><br/> Supports `$filter` (`eq`).|
 |privateLinkDetails|[privateLinkDetails](../resources/privatelinkdetails.md)|Contains information about the Azure AD Private Link policy that is associated with the sign in event.|

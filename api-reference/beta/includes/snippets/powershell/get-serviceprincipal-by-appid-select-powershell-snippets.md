@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Applications
 
-Get-MgBetaServicePrincipal -Property "id,appId,displayName,appRoles,publishedPermissionScopes" 
+Get-MgBetaServicePrincipal -Property "id,appId,displayName,appRoles,publishedPermissionScopes,resourceSpecificApplicationPermissions" 
 
 ```

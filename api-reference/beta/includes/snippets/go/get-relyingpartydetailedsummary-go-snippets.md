@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Reports().GetRelyingPartyDetailedSummary(period='{period}')().Get(context.Background(), nil)
+period := "{period}"
+getRelyingPartyDetailedSummary, err := graphClient.Reports().GetRelyingPartyDetailedSummaryWithPeriod(&period).Get(context.Background(), nil)
 
 
 ```
