@@ -9,4 +9,4 @@ This API is supported in the following [national cloud deployments](../../concep
 
 | Global service | US Government L4 | US Government L5 (DOD) | China operated by 21Vianet |
 |--|--|--|--|
-| :heavy_check_mark: | :check_mark: | :heavy_check_mark: | :x: |
+| :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
