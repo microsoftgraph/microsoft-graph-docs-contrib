@@ -51,7 +51,7 @@ In the request body, supply a JSON representation of a [shift](../resources/shif
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code and a [shift](../resources/shift.md) object in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
@@ -131,7 +131,7 @@ Prefer: return=representation
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
