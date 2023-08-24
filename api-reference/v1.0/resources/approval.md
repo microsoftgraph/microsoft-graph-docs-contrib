@@ -1,6 +1,6 @@
 ---
 title: "approval resource type"
-description: "The approval object associated with a userConsentRequest or an accessPackageAssignmentRequest."
+description: "The approval object associated with a userConsentRequest, an accessPackageAssignmentRequest or a privilegedAccessGroupAssignmentScheduleRequest."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Represents the approval object for decisions associated with a request.
 
+In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), the approval object for decisions to approve or deny requests to activate group membership or ownership.
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -23,7 +25,7 @@ Represents the approval object for decisions associated with a request.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Identifier of the approval decision.|
+|id|String|Identifier of the approval decision. <br/><li>In PIM for groups, it is the same identifier as the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).|
 
 ## Relationships
 

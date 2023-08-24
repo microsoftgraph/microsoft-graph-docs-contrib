@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Specifies a decision stage in an [approval](approval.md).
 
+In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), the approval decisions associated with requests to activate group membership or ownership.
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|

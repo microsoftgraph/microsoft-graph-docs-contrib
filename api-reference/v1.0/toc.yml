@@ -6082,16 +6082,16 @@ items:
                         items:
                           - name: Get
                             href: api/approval-get.md
-                          - name: Approval step
+                          - name: Approval stage
                             items:
-                              - name: Approval step
-                                href: resources/approvalstep.md
+                              - name: Approval stage
+                                href: resources/approvalstage.md
                               - name: List
-                                href: api/approval-list-steps.md
+                                href: api/approval-list-stages.md
                               - name: Get
-                                href: api/approvalstep-get.md
+                                href: api/approvalstage-get.md
                               - name: Update
-                                href: api/approvalstep-update.md
+                                href: api/approvalstage-update.md
                       - name: Policies and rules
                         items:
                           - name: Policy
