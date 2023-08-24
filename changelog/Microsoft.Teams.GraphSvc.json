@@ -1313,6 +1313,24 @@
       "CreatedDateTime": "2023-08-18T12:00:00.0154606Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d51c4dba-957b-47a8-9eb5-be042d0519fd",
+          "ApiChange": "Permission",
+          "ChangedApiName": "OnlineMeetingTranscript.Read.Chat",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `OnlineMeetingTranscript.Read.Chat` to the read operations of the [OnlineMeetingTranscript.Read.Chat](https://learn.microsoft.com/microsoftteams/platform/graph-api/rsc/resource-specific-consent#rsc-permissions-for-a-chat-or-meeting).",
+          "Target": "callTranscript"
+        }
+      ],
+      "Id": "d51c4dba-957b-47a8-9eb5-be042d0519fd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-24T01:54:55.1386602Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     }
   ]
 }
