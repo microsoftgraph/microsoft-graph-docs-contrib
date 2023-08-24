@@ -181,7 +181,6 @@ Content-type: application/json
       "displayName": "Faculty cafeteria ordering",
       "description": "Example application",
       "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
-
       "roles": [
           {
               "id": "5fc34d75-926c-458e-9967-060691c7f4ae",
