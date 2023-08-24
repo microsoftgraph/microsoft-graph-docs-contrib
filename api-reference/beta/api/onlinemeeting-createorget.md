@@ -73,7 +73,7 @@ In the request body, provide a JSON object with the following parameters.
 >
 > - Currently **chatInfo** is only supported in beta.
 >
-> - If different users of the same tenant use the same **externalId** to run this API query, it creates different meeting instances with different IDs. `tenantId`, `userId`, and `externalId` identifies a meeting with external ID.
+> - If different users of the same tenant use the same **externalId** to run this API query, it creates different meeting instances with different IDs. `tenantId`, `userId`, and `externalId` together identifies a meeting with external ID.
 
 ## Response
 If successful, this method returns a `201 Created` response code if a new meeting is created, or a `200 OK` response code if an existing meeting is retrieved. In both cases, an [onlineMeeting](../resources/onlinemeeting.md) object is returned in the response body.
