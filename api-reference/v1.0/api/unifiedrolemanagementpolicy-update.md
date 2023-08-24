@@ -200,6 +200,7 @@ The following is an example of a request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369
 Content-Type: application/json
+
 {
   "rules": [
     {
