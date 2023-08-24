@@ -145,7 +145,7 @@ The following table summarizes the evaluation mode behavior for transcript and r
 | Azure Billing Setup | Model parameter | Result |
 | -------- | -------- | -------- |
 | Not configured | No parameter | Evaluation mode capacity will be available for download. Beyond that, the API will fail with error code: `402` (Payment Required). |
-| Configured | No parameter | Unlimited meeting content will be available for download. Engineering RPS limits still apply. |
+| Configured | No parameter | Unlimited meeting content will be available for download and priced based on per minute of content, as described below. Engineering RPS limits still apply. |
 
 > [!NOTE]
 > These APIs do not support the model A and model B payment models.
