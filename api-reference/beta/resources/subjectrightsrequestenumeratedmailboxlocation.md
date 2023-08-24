@@ -20,7 +20,8 @@ Inherits from [subjectRightsRequestMailboxLocation](../resources/subjectrightsre
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|upns|String collection|Collection of mailboxes that should be included in the search. Includes the UPN (user principal name) of each mailbox, for example, `Monica.Thompson@contoso.com`.|
+|userPrincipalNames|String collection|Collection of mailboxes that should be included in the search. Includes the UPN (user principal name) of each mailbox, for example, `Monica.Thompson@contoso.com`.|
+|upns (deprecated) |String collection|Collection of mailboxes that should be included in the search. Includes the UPN (user principal name) of each mailbox, for example, `Monica.Thompson@contoso.com`. <br>**Note:** This property has been replaced by **userPrincipalNames**. However, specifying either **upns** or **userPrincipalNames** automatically populates the same values to the other property.|
 
 ## Relationships
 None.
@@ -35,6 +36,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.subjectRightsRequestEnumeratedMailboxLocation",
+  "userPrincipalNames": [
+    "String"
+  ]
   "upns": [
     "String"
   ]
