@@ -148,7 +148,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests2"
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests_app"
 }-->
 
 ```http
@@ -200,7 +200,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests3"
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests_spo"
 }-->
 
 ```http
@@ -252,7 +252,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests4"
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests_remove"
 }-->
 
 ```http
