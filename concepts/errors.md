@@ -91,31 +91,31 @@ The error resource is composed of a single resource:
 |:---------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
 | **code**       | string                 | An error code string for the error that occurred                                                            |
 | **message**    | string                 | A developer ready message about the error that occurred. This should not be displayed to the user directly. |
-| **innererror** | error object           | Optional. An additional error object that may be more specific than the top level error.                     |
-| **details**    | error object           | Optional. A list of additional error objects that may provide a breakdown of multiple errors encountered whilst processing the request. |
+| **innererror** | error object           | Optional. An additional error object that might be more specific than the top-level error.                     |
+| **details**    | error object           | Optional. A list of additional error objects that might provide a breakdown of multiple errors encountered while processing the request. |
 
 <!--<a name="msg_properties"> </a> -->
 
 #### Properties
 
-The `code` property contains a machine-readable value that you can take a dependency on in your code.  
+The **code** property contains a machine-readable value that you can take a dependency on in your code.  
 
-The `innererror` object might recursively contain more `innererror` objects
-with additional, more specific error `codes` properties. When handling an error, apps
-should loop through all the nested error codes available and use the most detailed
+The **innererror** object might recursively contain more **innererror** objects
+with additional, more specific error **codes** properties. When handling an error, apps
+should loop through all the nested error codes that are available and use the most detailed
 one that they understand.
 
-The 'message' property is a human-readable value describing the error condition.  You should not take any dependency on the content of this value in your code. 
+The **message** property is a human-readable value that describes the error condition. Do not take any dependency on the content of this value in your code. 
 
-The `message` property at the root contains an error message intended for the
+The **message** property at the root contains an error message intended for the
 developer to read. Error messages are not localized and shouldn't be displayed
 directly to the user. When handling errors, your code should not take any dependency on the 
-content of `message` values because they can change at any time, and they often contain
+the **message** property values because they can change at any time, and they often contain
 dynamic information specific to the failed request. You should only code
-against error codes returned in `code` properties.
+against error codes returned in **code** properties.
 
-The `details` property is an optional array of error objects using the same JSON format as the top-level error object.
-In the case of a request that is composed of multiple operations, such as a bulk or batch operation, it may be nece3ssary to return an independent error for each operation.  In this case, the `details` list will be populated with these individual errors.
+The **details** property is an optional array of error objects that have the same JSON format as the top-level error object.
+In the case of a request that is composed of multiple operations, such as a bulk or batch operation, it might be necessary to return an independent error for each operation. In this case, the **details** list will be populated with these individual errors.
 
 <!-- {
   "type": "#page.annotation",
