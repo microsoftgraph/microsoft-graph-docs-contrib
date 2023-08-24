@@ -15,6 +15,10 @@ Create a new [accessPackageResourceRequest](../resources/accesspackageresourcere
 
 To add an Azure AD group as a resource to a catalog, set the **requestType** to be `adminAdd`, and a `resource` representing the resource. The value of the **originSystem** property within the `resource` should be `AadGroup` and the value of the **originId** is the identifier of the group.  If using delegated permissions, the user requesting to add a group should be an owner of the group or in a directory role which allows them to modify groups. If using application permissions, the application requesting to add the group should also be assigned the `Group.ReadWrite.All` permission.
 
+To add an Azure AD application as a resource to a catalog, set the **requestType** to be `adminAdd`, and a `resource` representing the resource. The value of the **originSystem** property within the `resource` should be `AadApplication` and the value of the **originId** is the identifier of the [servicePrincipal](../resources/serviceprincipal.md).  If using delegated permissions, the user requesting to add an application should be an owner of the application or in a directory role which allows them to modify application role assignments.
+
+To remove a resource from a catalog, set the **requestType** to be `adminRemove`, and the `resource` to contain the `id` of the [resource](../resources/accesspackageresource.md) object to be removed.  The resource object can be retrieved using [list resources](accesspackagecatalog-list-resources.md).
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,7 +46,7 @@ POST /identityGovernance/entitlementManagement/resourceRequests
 
 ## Request body
 
-In the request body, supply a JSON representation of an [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) object. Include the `accessPackageResource` relationship with an [accessPackageResource](../resources/accesspackageresource.md) object as part of the request.
+In the request body, supply a JSON representation of an [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) object. Include the `resource` relationship with an [accessPackageResource](../resources/accesspackageresource.md) object as part of the request, and a `catalog` object containing its `id`.
 
 If successful, this method returns a `201 Created` response code and a new [accessPackageResourceRequest](../resources/accesspackageresourcerequest.md) object in the response body.
 
@@ -130,6 +134,107 @@ Content-type: application/json
 {
   "id": "acc2294e-f37f-42d3-981d-4e83847ed0ce",
   "requestType": "adminAdd",
+  "state": "delivered"
+}
+```
+
+### Example 2: Create an accessPackageResourceRequest for adding an application as a resource
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests2"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/resourceRequests
+Content-type: application/json
+
+{
+  "requestType": "adminAdd",
+  "resource": {
+    "originId": "e81d7f57-0840-45e1-894b-f505c1bdcc1f",
+    "originSystem": "AadApplication"
+  },
+  "catalog": {
+    "id": "beedadfe-01d5-4025-910b-84abb9369997"
+  }
+}
+```
+
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "acc2294e-f37f-42d3-981d-4e83847ed0ce",
+  "requestType": "adminAdd",
+  "state": "delivered"
+}
+```
+
+### Example 3: Create an accessPackageResourceRequest for removing a resource
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerequest_from_accesspackageresourcerequests3"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/resourceRequests
+Content-type: application/json
+
+{
+  "requestType": "adminRemove",
+  "resource": {
+    "id": "1d0bb962-5bb0-4b16-a488-fda7a788b9ec"
+  },
+  "catalog": {
+    "id": "beedadfe-01d5-4025-910b-84abb9369997"
+  }
+}
+```
+
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+  "id": "acc2294e-f37f-42d3-981d-4e83847ed0ce",
+  "requestType": "adminRemove",
   "state": "delivered"
 }
 ```
