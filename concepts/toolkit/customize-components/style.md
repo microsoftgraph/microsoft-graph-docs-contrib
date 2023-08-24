@@ -100,6 +100,27 @@ You can use several CSS tokens to style a component if you want to override the 
 }
 ```
 
+You can also use global tokens for customization that applies to all elements in the DOM. 
+MGT defines the following custom CSS global tokens.
+
+```html
+<mgt-file-list></mgt-file-list>
+```
+
+```css
+body {
+  /**
+  * Overrides the default font-family 'Segoe UI', 'Segoe UI Web (West European)', 'Segoe UI', -apple-system, 'BlinkMacSystemFont', 'Roboto', 'Helvetica Neue', sans-serif for dark and light theme.
+  */
+  --default-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  /**
+  * Overrides the default font-size of 14px
+  */
+  --default-font-size: 20px;
+}
+```
+
 ### Example 4: Customize Fluent UI CSS tokens
 
 You can customize the tokens used by Fluent UI to style the fluent UI component used in an `mgt` component. Fluent UI Web Components provides first-class support for Design Tokens and makes setting, getting, and using Design Tokens simple.
@@ -118,6 +139,12 @@ body {
   * Overrides the default #ffffff color for dark theme and #000000 color for light theme
   */
   --neutral-foreground-rest: yellow !important;
+
+  /**
+  * Overrides the default fluent UI components font-family
+  */
+  --body-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 ```
 
