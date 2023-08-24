@@ -48,7 +48,7 @@ Specify the following properties when creating a **retentionEvent**.
 |:---|:---|:---|
 |description|String|Optional information about the event.|
 |displayName|String|Name of the event.|
-|eventQuery|[microsoft.graph.security.eventQueries](../resources/security-eventqueries.md) collection| Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.|
+|eventQuery|[microsoft.graph.security.eventQuery](../resources/security-eventqueries.md) collection| Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.|
 |eventTriggerDateTime|DateTimeOffset|Optional time when the event should be triggered.|
 |retentionEventType|String|Name of the event type associated with the event.|
 
@@ -77,7 +77,7 @@ Content-length: 616
   "description": "String",
   "eventQueries": [
     {
-      "@odata.type": "microsoft.graph.security.eventQueries"
+      "@odata.type": "microsoft.graph.security.eventQuery"
     }
   ],
   "eventTriggerDateTime": "String (timestamp)",
@@ -150,7 +150,7 @@ Content-Type: application/json
   "description": "String",
   "eventQueries": [
     {
-      "@odata.type": "microsoft.graph.security.eventQueries"
+      "@odata.type": "microsoft.graph.security.eventQuery"
     }
   ],
   "eventTriggerDateTime": "String (timestamp)",

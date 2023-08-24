@@ -116,7 +116,7 @@ Content-Type: application/json
     "description": "String",
     "eventQueries": [
       {
-        "@odata.type": "microsoft.graph.security.eventQueries"
+        "@odata.type": "microsoft.graph.security.eventQuery"
       }
     ],
     "eventTriggerDateTime": "String (timestamp)",
