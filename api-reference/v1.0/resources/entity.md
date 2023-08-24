@@ -16,7 +16,7 @@ Represents an entity.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| The unique idenfier for an entity. Read-only.|
+|id|String| The unique identifier for an entity. Read-only.|
 
 ## Relationships
 None.
