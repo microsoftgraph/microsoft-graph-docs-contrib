@@ -49,7 +49,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "ResourceSpecificPermissionGrant.ReadForChat",
           "ChangeType": "Deletion",
-          "Description": "Removed support for delegated permission 'ResourceSpecificPermissionGrant.ReadForChat' from the [list](https://learn.microsoft.com/en-us/graph/api/chat-list-permissiongrants?view=graph-rest-beta) operation of the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Description": "Removed support for delegated permission `ResourceSpecificPermissionGrant.ReadForChat` from the [list](https://learn.microsoft.com/en-us/graph/api/chat-list-permissiongrants?view=graph-rest-beta) operation of the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
           "Target": ""
         },
         {
@@ -57,14 +57,14 @@
           "ApiChange": "Permission",
           "ChangedApiName": "ResourceSpecificPermissionGrant.ReadForChat.All",
           "ChangeType": "Deletion",
-          "Description": "Removed support for application permission 'ResourceSpecificPermissionGrant.ReadForChat.All' from the [list](https://learn.microsoft.com/en-us/graph/api/chat-list-permissiongrants?view=graph-rest-beta) operation of the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Description": "Removed support for application permission `ResourceSpecificPermissionGrant.ReadForChat.All` from the [list](https://learn.microsoft.com/en-us/graph/api/chat-list-permissiongrants?view=graph-rest-beta) operation of the [chat](https://learn.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
           "Target": ""
         }
       ],
       "Id": "3C049C53-1494-48C0-B57E-E7AE625B7061",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-08-17T01:54:55.1386602Z",
+      "CreatedDateTime": "2023-08-23T01:54:55.1386602Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },
