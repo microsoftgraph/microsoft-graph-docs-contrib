@@ -25,7 +25,8 @@ configuration := &graphreports.ReportsGetCredentialUsageSummary(period='{period}
 	QueryParameters: requestParameters,
 }
 
-getCredentialUsageSummary(period='{period}'), err := graphClient.Reports().GetCredentialUsageSummary(period='{period}')().Get(context.Background(), configuration)
+period := "{period}"
+getCredentialUsageSummary, err := graphClient.Reports().GetCredentialUsageSummaryWithPeriod(&period).Get(context.Background(), configuration)
 
 
 ```

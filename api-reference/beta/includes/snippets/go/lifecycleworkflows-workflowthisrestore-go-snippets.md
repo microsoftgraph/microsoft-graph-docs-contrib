@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-microsoft.graph.identityGovernance.restore, err := graphClient.IdentityGovernance().LifecycleWorkflows().DeletedItems().Workflows().ByWorkflowId("workflow-id").MicrosoftGraphIdentityGovernanceRestore().Post(context.Background(), nil)
+microsoftGraphIdentityGovernanceRestore, err := graphClient.IdentityGovernance().LifecycleWorkflows().DeletedItems().Workflows().ByWorkflowId("workflow-id").MicrosoftGraphIdentityGovernanceRestore().Post(context.Background(), nil)
 
 
 ```

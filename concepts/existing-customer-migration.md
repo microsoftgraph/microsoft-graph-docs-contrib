@@ -8,11 +8,11 @@ ms.custom: scenarios:getting-started
 
 # Migrate existing customers to the enhanced Microsoft Graph Data Connect consent experience
 
-Starting in late August 2023, new customers who onboard to Microsoft Graph Data Connect automatically use the enhanced authorization experience. Existing customers who onboarded by using the [PAM authorization flow](./data-connect-pam.md) have three options to migrate to the enhanced experience.
+Starting August 17, 2023, new customers who onboard to Microsoft Graph Data Connect will automatically benefit from the enhanced authorization experience. Existing customers who onboarded by using the [PAM authorization flow](./data-connect-pam.md) have three options to migrate to the enhanced experience.
 
 ## Option 1: Self-serve migration
 
-<!-- Date changed to "August 2023" and once the release goes out fully, we can add a quick change to add the exact date. -->
+<!-- Update 8/17/2023 changed date per developer guidance to August 17, 2023. -->
 
 If you're an existing Data Connect customer and want to get started with the enhanced app registration and authorization experience, have your tenant admin disable Data Connect in the Microsoft 365 admin portal and then re-enable it. Then, follow the steps in the [onboarding guide](./onboarding-experience-overview.md).
 
