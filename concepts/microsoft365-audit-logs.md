@@ -8,3 +8,4 @@ ms.custom: scenarios:getting-started
 ---
 
 # Overview of how to use Microsoft 365 audit logs with Microsoft Graph Data Connect
+<!--Placeholder for article text, to be updated after completion of team review-->
