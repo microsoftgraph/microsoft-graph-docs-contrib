@@ -76,26 +76,33 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.security.retentionLabel",
     "id": "64a99fb4-07be-0481-8746-44c15c0eef1f",
-    "displayName": "String",
-    "behaviorDuringRetentionPeriod": "String",
-    "actionAfterRetentionPeriod": "String",
-    "retentionTrigger": "String",
-    "retentionDuration": {
-      "@odata.type": "microsoft.graph.security.retentionDuration"
-    },
-    "isInUse": "Boolean",
-    "descriptionForAdmins": "String",
-    "descriptionForUsers": "String",
-    "createdBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "createdDateTime": "String (timestamp)",
-    "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.identitySet"
-    },
-    "lastModifiedDateTime": "String (timestamp)",
-    "labelToBeApplied": "String",
-    "defaultRecordBehavior": "String"
+      "displayName": "Retention Schedule 10004",
+      "behaviorDuringRetentionPeriod": "retain",
+      "actionAfterRetentionPeriod": "relabel",
+      "retentionTrigger": "dateCreated",
+      "retentionDuration": {
+        "@odata.type": "microsoft.graph.security.retentionDurationInDays",
+        "days": "730"
+      },
+      "isInUse": "true",
+      "descriptionForAdmins": "creation based retention label for schedule 10004",
+      "descriptionForUsers": "retains for 2 years then relabeled",
+      "createdBy": {
+        "user": {
+          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+          "displayName": "Admin"
+        }
+      },
+      "createdDateTime": "2017-11-27T02:10:12Z",
+      "lastModifiedBy": {
+        "user": {
+          "id": "9563a605-e827-4324-a5a9-09efddff1e90",
+          "displayName": "Records Manager"
+        }
+      },
+      "lastModifiedDateTime": "2020-08-28T22:13:09Z",
+      "labelToBeApplied": "Retention schedule 10005",
+      "defaultRecordBehavior": "startLocked"
   }
 }
 ```
