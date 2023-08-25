@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+      "source_path": "openpublishing/docs/concepts/data-connect-policies.md/",
+      "redirect_url": "https://azure.microsoft.com/en-us/pricing/details/graph-data-connect/",
+      "redirect_document_id": true
+    }
+  ]
+}

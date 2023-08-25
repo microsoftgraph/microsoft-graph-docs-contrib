@@ -17,11 +17,12 @@ This is an abstract type that represents the settings for each authentication me
 The following authentication methods are derived from the **authenticationMethodConfiguration** resource type:
 + [emailAuthenticationMethodConfiguration](emailauthenticationmethodconfiguration.md)
 + [fido2AuthenticationMethodConfiguration](fido2authenticationmethodconfiguration.md)
++ [hardwareOathAuthenticationMethodConfiguration](hardwareoathauthenticationmethodconfiguration.md)
 + [microsoftAuthenticatorAuthenticationMethodConfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)
-+ [voiceAuthenticationMethodConfiguration](voiceauthenticationmethodconfiguration.md)
 + [smsAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
 + [softwareOathAuthenticationMethodConfiguration](softwareoathauthenticationmethodconfiguration.md)
 + [temporaryAccessPassAuthenticationMethodConfiguration](smsauthenticationmethodconfiguration.md)
++ [voiceAuthenticationMethodConfiguration](voiceauthenticationmethodconfiguration.md)
 + [x509CertificateAuthenticationMethodConfiguration](x509certificateauthenticationmethodconfiguration.md)
 
 ## Properties
