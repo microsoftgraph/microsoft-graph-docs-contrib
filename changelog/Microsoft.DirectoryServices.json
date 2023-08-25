@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "7c184bc2-56c6-4580-a706-636276e2b405",
+          "ApiChange": "Resource",
+          "ChangedApiName": "servicePrincipalLockConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [servicePrincipalLockConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/servicePrincipalLockConfiguration?view=graph-rest-1.0) resource.",
+          "Target": "servicePrincipalLockConfiguration"
+        },
+        {
+          "Id": "7c184bc2-56c6-4580-a706-636276e2b405",
+          "ApiChange": "Property",
+          "ChangedApiName": "servicePrincipalLockConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **servicePrincipalLockConfiguration** property to the [application](https://learn.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-1.0) resource.",
+          "Target": "application"
+        }
+      ],
+      "Id": "7c184bc2-56c6-4580-a706-636276e2b405",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-08-24T21:02:17.1897204Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "fb9eeb9e-adf8-43f6-8aee-7a55853c74a5",
           "ApiChange": "Permission",
           "ChangedApiName": "OnPremDirectorySynchronization.Read.All",
