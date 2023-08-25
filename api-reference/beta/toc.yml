@@ -1046,10 +1046,10 @@ items:
                   - name: Remove key
                     href: api/application-removekey.md
               - name: Federated identity credentials
-                displayName: Workload identity federation, workload identities
                 items:
                   - name: Overview
                     href: resources/federatedidentitycredentials-overview.md
+                    displayName: Workload identity federation, workload identities
                   - name: Federated identity credentials
                     href: resources/federatedidentitycredential.md
                     items:
@@ -11169,6 +11169,8 @@ items:
                 href: api/driveitem-update.md
               - name: Delete item
                 href: api/driveitem-delete.md
+              - name: Permanently delete item
+                href: api/driveitem-permanentdelete.md
               - name: Restore item
                 href: api/driveitem-restore.md
               - name: Move item
@@ -11473,7 +11475,6 @@ items:
               - name: Delete vendor
                 href: api/dynamics-vendor-delete.md
       - name: Identity and access
-        displayName: Azure AD, Microsoft identity platform, Identity and access
         items:
           - name: Overview
             displayName: Azure AD, Microsoft identity platform, Identity and access
@@ -12044,7 +12045,6 @@ items:
                   - name: Find tenant by tenant ID
                     href: api/tenantrelationship-findtenantinformationbytenantid.md
           - name: Network access
-            displayName: ZTNA, Global Secure Access, Microsoft Entra Internet Access, Microsoft Entra Private Access
             items:
               - name: Overview
                 displayName: ZTNA, Global Secure Access, Microsoft Entra Internet Access, Microsoft Entra Private Access
@@ -12506,7 +12506,6 @@ items:
                       - name: List resource roles
                         href: api/accesspackagecatalog-list-accesspackageresourceroles.md
                   - name: Access package custom workflow extension
-                    displayName: Custom authentication extensions
                     items:
                       - name: Assignment request workflow extension
                         href: resources/accesspackageassignmentrequestworkflowextension.md
@@ -12548,6 +12547,16 @@ items:
                         href: api/entitlementmanagement-list-accesspackageresourceenvironment.md
                       - name: Get
                         href: api/accesspackageresourceenvironment-get.md
+                  - name: Access package resource
+                    href: resources/accesspackageresource.md
+                    items:
+                      - name: List
+                        href: api/accesspackagecatalog-list-accesspackageresources.md
+                  - name: Access package resource role
+                    href: resources/accesspackageresourcerole.md
+                    items:
+                      - name: List
+                        href: api/accesspackagecatalog-list-accesspackageresourceroles.md
                   - name: Access package resource role scope
                     href: resources/accesspackageresourcerolescope.md
                     items:
@@ -12555,7 +12564,7 @@ items:
                         href: api/accesspackage-list-accesspackageresourcerolescopes.md
                       - name: Create
                         href: api/accesspackage-post-accesspackageresourcerolescopes.md
-                      - name: Create
+                      - name: Delete
                         href: api/accesspackage-delete-accesspackageresourcerolescopes.md
                   - name: Access package subject
                     href: resources/accesspackagesubject.md
@@ -12610,10 +12619,10 @@ items:
                       - name: Update
                         href: api/entitlementmanagementsettings-update.md
               - name: Lifecycle workflows
-                displayName: LCW, Identity Governance, Joiner, Mover, Leaver
                 items:
                   - name: Overview
                     href: resources/identitygovernance-lifecycleworkflows-overview.md
+                    displayName: LCW, Identity Governance, Joiner, Mover, Leaver
                   - name: Workflow
                     items:
                       - name: Workflow
@@ -12665,7 +12674,6 @@ items:
                           - name: Update task
                             href: api/identitygovernance-task-update.md
                       - name: Reports
-                        displayName: Lifecycle Workflows
                         items:
                           - name: Overview
                             displayName: Lifecycle Workflows reporting
@@ -12749,10 +12757,10 @@ items:
                       - name: Update
                         href: api/identitygovernance-lifecyclemanagementsettings-update.md
               - name: Privileged Identity Management iteration 3
-                displayName: Privileged Identity Management, PIM, Identity Governance
                 items:
                   - name: PIM for Azure AD Roles
                     href: resources/privilegedidentitymanagementv3-overview.md
+                    displayName: Privileged Identity Management, PIM, Identity Governance
                     items:
                       - name: Assignment schedule requests
                         href: resources/unifiedroleassignmentschedulerequest.md
@@ -13613,6 +13621,63 @@ items:
                 items:
                   - name: Create invitation
                     href: api/invitation-post.md
+              - name: Multi-tenant organization
+                items:
+                - name: Overview
+                  displayName: Multi-tenant organization, MTO
+                  href: resources/multitenantorganization-overview.md
+                - name: Multi-tenant organization
+                  items:
+                  - name: Multi-tenant organization
+                    href: resources/multitenantorganization.md
+                  - name: Create
+                    href: api/tenantrelationship-put-multitenantorganization.md
+                  - name: Get
+                    href: api/multitenantorganization-get.md
+                  - name: Update
+                    href: api/multitenantorganization-update.md
+                - name: Tenant
+                  items:
+                  - name: Tenant
+                    href: resources/multitenantorganizationmember.md
+                  - name: List
+                    href: api/multitenantorganization-list-tenants.md
+                  - name: Add
+                    href: api/multitenantorganization-post-tenants.md
+                  - name: Get
+                    href: api/multitenantorganizationmember-get.md
+                  - name: Update
+                    href: api/multitenantorganizationmember-update.md
+                  - name: Remove
+                    href: api/multitenantorganization-delete-tenants.md
+                - name: Join request
+                  items:
+                  - name: Join request
+                    href: resources/multitenantorganizationjoinrequestrecord.md
+                  - name: Get
+                    href: api/multitenantorganizationjoinrequestrecord-get.md
+                  - name: Update
+                    href: api/multitenantorganizationjoinrequestrecord-update.md
+                - name: Partner configuration template
+                  items:
+                  - name: Partner configuration template
+                    href: resources/multitenantorganizationpartnerconfigurationtemplate.md
+                  - name: Get
+                    href: api/multitenantorganizationpartnerconfigurationtemplate-get.md
+                  - name: Update
+                    href: api/multitenantorganizationpartnerconfigurationtemplate-update.md
+                  - name: Reset
+                    href: api/multitenantorganizationpartnerconfigurationtemplate-resettodefaultsettings.md
+                - name: Identity sync policy template
+                  items:
+                  - name: Identity sync policy template
+                    href: resources/multitenantorganizationidentitysyncpolicytemplate.md
+                  - name: Get
+                    href: api/multitenantorganizationidentitysyncpolicytemplate-get.md
+                  - name: Update
+                    href: api/multitenantorganizationidentitysyncpolicytemplate-update.md
+                  - name: Reset
+                    href: api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
               - name: Organization
                 href: resources/organization.md
                 items:
@@ -13748,6 +13813,15 @@ items:
                             href: api/fido2authenticationmethodconfiguration-update.md
                           - name: Delete
                             href: api/fido2authenticationmethodconfiguration-delete.md
+                      - name: Hardware OATH policy
+                        href: resources/hardwareoathAuthenticationMethodConfiguration.md
+                        items:
+                          - name: Get
+                            href: api/hardwareoathAuthenticationMethodConfiguration-get.md
+                          - name: Update
+                            href: api/hardwareoathAuthenticationMethodConfiguration-update.md
+                          - name: Delete
+                            href: api/hardwareoathAuthenticationMethodConfiguration-delete.md
                       - name: Microsoft Authenticator policy
                         href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
                         items:
