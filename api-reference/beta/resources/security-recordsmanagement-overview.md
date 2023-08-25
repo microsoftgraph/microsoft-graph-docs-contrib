@@ -32,9 +32,9 @@ As an example: in an organization, when an employee leaves, employment records m
    - A display name of "Personnel information"
    - A **retentionDuration** of 1827 days (5 years)
    - Listening to the **retentionEventType** named "Employee departure"
-2. Define a **retentionEvent** with the same **retentionEventType** named "Employee departure", and as part of its [eventQuery](security-eventqueries.md) collection, an `Asset ID` with an employee ID value as the ID information associated with the event.
+2. Define a **retentionEvent** with the same **retentionEventType** named "Employee departure", and as part of its [eventQuery](security-eventquery.md) collection, an `Asset ID` with an employee ID value as the ID information associated with the event.
 
-When an employee with an ID of 1234 leaves Contoso, the information is updated in the HR management system. The employee departure can trigger a new instance of **retentionEvent** with the "Employee departure" event type, and as part of its **eventQueries** property, an [eventQuery](security-eventqueries.md) with a query string of 'AssetID:1234'. This way, employee record items using the "Personnel information" retention label and associated with the employee ID of 1234 get their 5 year retention period started from the date of the employee departure event.
+When an employee with an ID of 1234 leaves Contoso, the information is updated in the HR management system. The employee departure can trigger a new instance of **retentionEvent** with the "Employee departure" event type, and as part of its **eventQueries** property, an [eventQuery](security-eventquery.md) with a query string of 'AssetID:1234'. This way, employee record items using the "Personnel information" retention label and associated with the employee ID of 1234 get their 5 year retention period started from the date of the employee departure event.
 
 ## Entities
 The records management API includes the following key entities.
