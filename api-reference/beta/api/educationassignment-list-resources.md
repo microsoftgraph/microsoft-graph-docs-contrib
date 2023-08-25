@@ -36,7 +36,6 @@ This method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData quer
 For general information, see [OData query parameters](/graph/query-parameters).
 
 
-
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -49,7 +48,6 @@ Don't supply a request body for this method.
 If successful, this method returns a `200 OK` response code and a collection of [educationAssignmentResource](../resources/educationassignmentresource.md) objects in the response body.
 
 ## Example
-
 ### Request
 The following is an example of the request.
 
