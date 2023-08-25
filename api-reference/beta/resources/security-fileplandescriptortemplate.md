@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.security
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Specifies the properties common to the template resources for file plan descriptors. Base type for each of the template resources: [authorityTemplate](security-authoritytemplate.md), [categoryTemplate](security-categorytemplate.md), [citationTemplate](security-citationtemplate.md), [departmentTemplate](security-departmenttemplate.md), [filePlanReferenceTemplate](security-fileplanreferencetemplate.md), and [subCategoryTemplate](security-subcategorytemplate.md).
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
