@@ -60,7 +60,7 @@ Here is a JSON representation of a **baseItem** resource.
 | lastModifiedDateTime | dateTimeOffset    | Date and time the item was last modified. Read-only.                                   |
 | name                 | string            | The name of the item. Read-write.                                                      |
 | parentReference      | [itemReference][] | Parent information, if the item has a parent. Read-write.                              |
-| webUrl               | string (url)      | URL that displays the resource in the browser. Read-only.                              |
+| webUrl               | string (url)      | URL that either displays the resource in the browser (for Office file formats), or is a direct link to the file (for other formats). Read-only. |
 
 ## Relationships
 

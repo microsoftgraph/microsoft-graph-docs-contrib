@@ -4,7 +4,7 @@ description: "The **assignedPlans** property of both the user entity and the org
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "jconley76"
+author: "frank-masuelli"
 ---
 
 # assignedPlan resource type
