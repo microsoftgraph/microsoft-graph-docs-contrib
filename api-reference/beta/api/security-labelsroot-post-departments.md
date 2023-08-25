@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Create departmentTemplate
 Namespace: microsoft.graph.security
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a new [departmentTemplate](../resources/security-departmenttemplate.md) object.
 
 ## Permissions
