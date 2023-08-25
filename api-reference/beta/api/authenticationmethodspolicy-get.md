@@ -116,6 +116,7 @@ Content-Type: application/json
     "registrationEnforcement": {
         "authenticationMethodsRegistrationCampaign": {
             "snoozeDurationInDays": 1,
+            "enforceRegistrationAfterAllowedSnoozes": true,
             "state": "default",
             "excludeTargets": [],
             "includeTargets": [
