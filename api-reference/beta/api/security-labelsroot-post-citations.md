@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Create citationTemplate
 Namespace: microsoft.graph.security
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a new [citationTemplate](../resources/security-citationtemplate.md) object.
 
 ## Permissions
