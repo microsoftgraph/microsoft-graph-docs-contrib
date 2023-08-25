@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Create categoryTemplate
 Namespace: microsoft.graph.security
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a new [categoryTemplate](../resources/security-categorytemplate.md) object.
 
 ## Permissions
