@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns a list of assignments assigned to a user for all classes. Only teachers, students, and applications with application permissions can perform this operation.
+Returns a list of assignments assigned to a user for all classes. 
 
 This utility namespace allows a caller to find all the assignments belonging to a student or a teacher in a single call rather than having to request assignments from each class. The assignment list contains what is needed to get the detailed information for the assignment from within the class namespace. All other operations on the assignment should use the class namespace.
 
@@ -42,6 +42,7 @@ GET /education/users/{user-id}/assignments
 
 This method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+All [properties](/graph/api/resources/educationuserassignments#properties) are supported for the query parameters `$filter` and `$orderby`.
 
 ## Request headers
 
@@ -64,7 +65,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 #### Request
 The following is an example of the request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -79,31 +79,28 @@ GET https://graph.microsoft.com/beta/education/me/assignments
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-me-assignments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-me-assignments-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-me-assignments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-me-assignments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-me-assignments-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-me-assignments-php-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-me-assignments-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-me-assignments-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-me-assignments-python-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-me-assignments-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 #### Response
 
@@ -227,28 +224,24 @@ GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-678
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-assignments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-user-assignments-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-assignments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-assignments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-assignments-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-user-assignments-php-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-assignments-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-user-assignments-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-user-assignments-python-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-user-assignments-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -259,10 +252,9 @@ If user tries to query a different user-id than his own, this method returns a `
 
 The `instructions`, `assignedDateTime`, `assignTo`, `resourcesFolderUrl` and `webUrl` properties will always display null.
 
-The following is an example of the response. 
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
-
 
 <!-- {
   "blockType": "response",
@@ -380,28 +372,24 @@ GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-678
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-assignments-expand-submissions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-user-assignments-expand-submissions-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-assignments-expand-submissions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-user-assignments-expand-submissions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-assignments-expand-submissions-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-user-assignments-expand-submissions-php-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-user-assignments-expand-submissions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-user-assignments-expand-submissions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-user-assignments-expand-submissions-python-snippets.md)]
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-user-assignments-expand-submissions-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -411,7 +399,6 @@ GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-678
 The following is an example of the response. 
 
 > **Note:** It will expand submissions if the user has a student role, and will be null for teacher role.
-
 
 <!-- {
   "blockType": "response",
@@ -516,6 +503,336 @@ Content-type: application/json
         }
     ]
 }        
+```
+
+### Example 4: Using `$filter` to get user assignments
+
+#### Request
+The following is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_user_assignments_filter"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/me/assignments?$filter=dueDateTime eq 2050-05-18T17:00:00Z
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationAssignment",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/me/assignments",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/education/me/assignments?$filter=dueDateTime+eq+2050-05-18T17%3a00%3a00Z&$skiptoken=MyZRVkZCUVVGQlFVRk9RVUZCUVVGQlFVRkJRWGxCUVVGQmVFNDJOV0pqWTJ0RVJXMVFUVU5NUTJodVUxYzVkejA5",
+    "value": [
+        {
+            "classId": "2003c52e-807a-4186-9b49-60c573095461",
+            "displayName": "2022-04-14T05_08_50_854Z",
+            "closeDateTime": "2050-05-26T17:00:00Z",
+            "dueDateTime": "2050-05-18T17:00:00Z",
+            "assignDateTime": null,
+            "assignedDateTime": null,
+            "allowLateSubmissions": true,
+            "resourcesFolderUrl": null,
+            "feedbackResourcesFolderUrl": null,
+            "createdDateTime": "2022-04-13T05:09:21.009Z",
+            "lastModifiedDateTime": "2022-10-19T23:02:21.3868802Z",
+            "allowStudentsToAddResourcesToSubmission": false,
+            "status": "assigned",
+            "notificationChannelUrl": null,
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%222003c52e-807a-4186-9b49-60c573095461%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%222be08d97-b140-4eec-8cbd-88238d571060%5C%22%5D,%5C%22submissionId%5C%22%3Anull%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "addToCalendarAction": "none",
+            "addedStudentAction": "none",
+            "id": "2be08d97-b140-4eec-8cbd-88238d571060",
+            "instructions": null,
+            "assignTo": null,
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 100
+            },
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
+                    "displayName": null
+                }
+            }
+        },
+        {
+            "classId": "2003c52e-807a-4186-9b49-60c573095461",
+            "displayName": "2022-04-14T02_07_33_835Z",
+            "closeDateTime": "2050-05-26T17:00:00Z",
+            "dueDateTime": "2050-05-18T17:00:00Z",
+            "assignDateTime": null,
+            "assignedDateTime": null,
+            "allowLateSubmissions": true,
+            "resourcesFolderUrl": null,
+            "feedbackResourcesFolderUrl": null,
+            "createdDateTime": "2022-04-13T02:07:33.972Z",
+            "lastModifiedDateTime": "2022-04-13T02:09:20.1336769Z",
+            "allowStudentsToAddResourcesToSubmission": false,
+            "status": "assigned",
+            "notificationChannelUrl": null,
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%222003c52e-807a-4186-9b49-60c573095461%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%227242e03e-048c-437b-8810-3e89b285a362%5C%22%5D,%5C%22submissionId%5C%22%3Anull%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "addToCalendarAction": "none",
+            "addedStudentAction": "none",
+            "id": "7242e03e-048c-437b-8810-3e89b285a362",
+            "instructions": null,
+            "assignTo": null,
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 100
+            },
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
+                    "displayName": null
+                }
+            }
+        },
+        {
+            "classId": "2003c52e-807a-4186-9b49-60c573095461",
+            "displayName": "2022-04-14T01_59_02_516Z",
+            "closeDateTime": "2050-05-26T17:00:00Z",
+            "dueDateTime": "2050-05-18T17:00:00Z",
+            "assignDateTime": null,
+            "assignedDateTime": null,
+            "allowLateSubmissions": true,
+            "resourcesFolderUrl": null,
+            "feedbackResourcesFolderUrl": null,
+            "createdDateTime": "2022-04-13T01:59:30.258Z",
+            "lastModifiedDateTime": "2022-04-13T02:02:47.719251Z",
+            "allowStudentsToAddResourcesToSubmission": false,
+            "status": "assigned",
+            "notificationChannelUrl": null,
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%222003c52e-807a-4186-9b49-60c573095461%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%2203a893d4-f64b-47e4-9e0c-afac4b357007%5C%22%5D,%5C%22submissionId%5C%22%3Anull%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "addToCalendarAction": "none",
+            "addedStudentAction": "none",
+            "id": "03a893d4-f64b-47e4-9e0c-afac4b357007",
+            "instructions": null,
+            "assignTo": null,
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 100
+            },
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
+                    "displayName": null
+                }
+            }
+        }
+    ]
+}             
+```
+
+### Example 5: Using `$orderby` to get user assignments
+
+#### Request
+The following is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_user_assignments_orderby"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/me/assignments?$orderby=status
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationAssignment",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/me/assignments",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/education/me/assignments?$orderby=status&$skiptoken=MyZRVkZCUVVGQlFVRTJaMGxCUVVGQlFVRkJRWGxCUVVGQmJGZDRlVzV3TkZCS1JXVlpZMjVST1RoR1REZFFaejA5",
+    "value": [
+        {
+            "classId": "2003c52e-807a-4186-9b49-60c573095461",
+            "displayName": "2022-04-14T05_08_50_854Z",
+            "closeDateTime": "2050-05-26T17:00:00Z",
+            "dueDateTime": "2050-05-18T17:00:00Z",
+            "assignDateTime": null,
+            "assignedDateTime": null,
+            "allowLateSubmissions": true,
+            "resourcesFolderUrl": null,
+            "feedbackResourcesFolderUrl": null,
+            "createdDateTime": "2022-04-13T05:09:21.009Z",
+            "lastModifiedDateTime": "2022-10-19T23:02:21.3868802Z",
+            "allowStudentsToAddResourcesToSubmission": false,
+            "status": "assigned",
+            "notificationChannelUrl": null,
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%222003c52e-807a-4186-9b49-60c573095461%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%222be08d97-b140-4eec-8cbd-88238d571060%5C%22%5D,%5C%22submissionId%5C%22%3Anull%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "addToCalendarAction": "none",
+            "addedStudentAction": "none",
+            "id": "2be08d97-b140-4eec-8cbd-88238d571060",
+            "instructions": null,
+            "assignTo": null,
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 100
+            },
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
+                    "displayName": null
+                }
+            }
+        },
+        {
+            "classId": "2003c52e-807a-4186-9b49-60c573095461",
+            "displayName": "2022-04-14T02_07_33_835Z",
+            "closeDateTime": "2050-05-26T17:00:00Z",
+            "dueDateTime": "2050-05-18T17:00:00Z",
+            "assignDateTime": null,
+            "assignedDateTime": null,
+            "allowLateSubmissions": true,
+            "resourcesFolderUrl": null,
+            "feedbackResourcesFolderUrl": null,
+            "createdDateTime": "2022-04-13T02:07:33.972Z",
+            "lastModifiedDateTime": "2022-04-13T02:09:20.1336769Z",
+            "allowStudentsToAddResourcesToSubmission": false,
+            "status": "assigned",
+            "notificationChannelUrl": null,
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%222003c52e-807a-4186-9b49-60c573095461%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%227242e03e-048c-437b-8810-3e89b285a362%5C%22%5D,%5C%22submissionId%5C%22%3Anull%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "addToCalendarAction": "none",
+            "addedStudentAction": "none",
+            "id": "7242e03e-048c-437b-8810-3e89b285a362",
+            "instructions": null,
+            "assignTo": null,
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 100
+            },
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
+                    "displayName": null
+                }
+            }
+        },
+        {
+            "classId": "2003c52e-807a-4186-9b49-60c573095461",
+            "displayName": "2022-04-14T01_59_02_516Z",
+            "closeDateTime": "2050-05-26T17:00:00Z",
+            "dueDateTime": "2050-05-18T17:00:00Z",
+            "assignDateTime": null,
+            "assignedDateTime": null,
+            "allowLateSubmissions": true,
+            "resourcesFolderUrl": null,
+            "feedbackResourcesFolderUrl": null,
+            "createdDateTime": "2022-04-13T01:59:30.258Z",
+            "lastModifiedDateTime": "2022-04-13T02:02:47.719251Z",
+            "allowStudentsToAddResourcesToSubmission": false,
+            "status": "assigned",
+            "notificationChannelUrl": null,
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%222003c52e-807a-4186-9b49-60c573095461%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%2203a893d4-f64b-47e4-9e0c-afac4b357007%5C%22%5D,%5C%22submissionId%5C%22%3Anull%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "addToCalendarAction": "none",
+            "addedStudentAction": "none",
+            "id": "03a893d4-f64b-47e4-9e0c-afac4b357007",
+            "instructions": null,
+            "assignTo": null,
+            "grading": {
+                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+                "maxPoints": 100
+            },
+            "createdBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            },
+            "lastModifiedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
+                    "displayName": null
+                }
+            }
+        }
+    ]
+}                   
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

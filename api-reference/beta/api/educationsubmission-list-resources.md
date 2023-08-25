@@ -38,6 +38,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 
 This method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData query parameters to help customize the response.For general information, see [OData query parameters](/graph/query-parameters).
 
+All [properties](/graph/api/resources/educationresources#properties) are supported for the query parameters `$filter` and `$orderby`.
 
 ## Request headers
 
@@ -55,6 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
+### Example 1: Get all resources
 ##### Request
 
 The following is an example of the request.
@@ -120,7 +122,7 @@ Content-type: application/json
 {
   "value": [
     {
-      "assignmentResourceUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
+      "assignmentResourceUrl": "https://graph.microsoft.com/beta/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
       "id": "f2387c3b-ec39-4bf2-a399-d7242677f024",
       "resource": {
           "@odata.type": "#microsoft.graph.educationLinkResource",
@@ -149,7 +151,137 @@ Content-type: application/json
   ]
 }
 ```
+### Example 2: Using `$filter` to get resources
 
+#### Request
+
+The following is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_resources_filter"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2/submissions/57ef8ee2-4755-4351-66d0-8e37192870a5/resources?$filter= id eq 'c4682401-6866-4962-94d9-7499782a13e9'
+```
+
+##### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSubmissionResource",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2')/submissions('57ef8ee2-4755-4351-66d0-8e37192870a5')/resources",
+    "value": [
+        {
+            "assignmentResourceUrl": "https://assignments.onenote.com/api/v1.0/edu/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2/resources/781c546e-380d-4506-b093-97deca996bca",
+            "id": "c4682401-6866-4962-94d9-7499782a13e9",
+            "resource": {
+                "@odata.type": "#microsoft.graph.educationWordResource",
+                "displayName": "Document1",
+                "createdDateTime": "2022-07-28T22:10:23.713329Z",
+                "lastModifiedDateTime": "2022-07-28T22:10:23.7133476Z",
+                "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!IDwAYNkmlUucm64fxXxnzYYTuh2luKRDvUVGQBLOmvYqism21WrdQ4Aijx5lDIKE/items/0173CEVEIK3DYCBRKZLZEYKAGP73TAVKM2",
+                "createdBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                        "displayName": null
+                    }
+                },
+                "lastModifiedBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                        "displayName": null
+                    }
+                }
+            }
+        }
+    ]
+}
+```
+
+### Example 3: Using `$orderby` to get resources
+
+#### Request
+
+The following is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_resources_orderby"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2/submissions/57ef8ee2-4755-4351-66d0-8e37192870a5/resources?$orderby= id
+```
+
+##### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSubmissionResource",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2')/submissions('57ef8ee2-4755-4351-66d0-8e37192870a5')/resources",
+    "value": [
+        {
+            "assignmentResourceUrl": "https://assignments.onenote.com/api/v1.0/edu/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2/resources/781c546e-380d-4506-b093-97deca996bca",
+            "id": "c4682401-6866-4962-94d9-7499782a13e9",
+            "resource": {
+                "@odata.type": "#microsoft.graph.educationWordResource",
+                "displayName": "Document1",
+                "createdDateTime": "2022-07-28T22:10:23.713329Z",
+                "lastModifiedDateTime": "2022-07-28T22:10:23.7133476Z",
+                "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!IDwAYNkmlUucm64fxXxnzYYTuh2luKRDvUVGQBLOmvYqism21WrdQ4Aijx5lDIKE/items/0173CEVEIK3DYCBRKZLZEYKAGP73TAVKM2",
+                "createdBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                        "displayName": null
+                    }
+                },
+                "lastModifiedBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                        "displayName": null
+                    }
+                }
+            }
+        }
+    ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

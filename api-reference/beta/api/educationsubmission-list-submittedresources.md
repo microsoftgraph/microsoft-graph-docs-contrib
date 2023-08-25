@@ -36,6 +36,8 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
 
 This method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+All [properties](/graph/api/resources/educationsubmittedresources#properties) are supported for the query parameters `$filter` and `$orderby`.
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -46,7 +48,9 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [educationSubmissionResource](../resources/educationsubmissionresource.md) objects in the response body.
 ## Example
-##### Request
+
+### Example 1: Get all submitted resources
+#### Request
 The following is an example of the request.
 <!-- {
   "blockType": "ignored",
@@ -102,7 +106,125 @@ Content-type: application/json
   ]
 }
 ```
+### Example 2: Using `$filter` to get submitted resources
 
+#### Request
+The following is an example of the request.
+<!-- {
+  "blockType": "ignored",
+  "name": "get_submittedresources_filter"
+}-->
+```http
+GET https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/03a893d4-f64b-47e4-9e0c-afac4b357007/submissions/be6280d6-cf92-d58e-6ca4-44babfcb2394/submittedResources?$filter=id eq '6d6e204d-d976-452e-a76b-14a43f77dc65'
+```
+
+##### Response
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "ignored",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationResource",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('03a893d4-f64b-47e4-9e0c-afac4b357007')/submissions('be6280d6-cf92-d58e-6ca4-44babfcb2394')/submittedResources",
+    "value": [
+        {
+            "assignmentResourceUrl": "https://assignments.onenote.com/api/v1.0/edu/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/03a893d4-f64b-47e4-9e0c-afac4b357007/resources/45361b68-2777-42b1-aa4b-7054ce6de136",
+            "id": "6d6e204d-d976-452e-a76b-14a43f77dc65",
+            "resource": {
+                "@odata.type": "#microsoft.graph.educationExternalResource",
+                "displayName": "Forms Complete (Postman Test Dev)",
+                "createdDateTime": "2022-04-13T02:00:32.0613061Z",
+                "lastModifiedDateTime": "2022-04-13T02:00:32.0623064Z",
+                "webUrl": "https://forms.office.com/Pages/AssignmentsDesignPage.aspx#TopView=Preview&FormId=kowztj5TbU-jJ5lCY3EjmS7FAyB6gIZBm0lgxXMJVGFUMVlZVFM2MDRCVk1NOFlRU0xJRExDWDVTQyQlQCN0PWcu",
+                "createdBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "51cf5a99-d234-4e43-96de-cd65df14bfa1",
+                        "displayName": null
+                    }
+                },
+                "lastModifiedBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "51cf5a99-d234-4e43-96de-cd65df14bfa1",
+                        "displayName": null
+                    }
+                }
+            }
+        }
+    ]
+}
+```
+
+### Example 2: Using `$orderby` to get submitted resources
+
+#### Request
+The following is an example of the request.
+<!-- {
+  "blockType": "ignored",
+  "name": "get_submittedresources_orderby"
+}-->
+```http
+GET https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/03a893d4-f64b-47e4-9e0c-afac4b357007/submissions/be6280d6-cf92-d58e-6ca4-44babfcb2394/submittedResources?$orderby=id
+```
+
+##### Response
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "ignored",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationResource",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('03a893d4-f64b-47e4-9e0c-afac4b357007')/submissions('be6280d6-cf92-d58e-6ca4-44babfcb2394')/submittedResources",
+    "value": [
+        {
+            "assignmentResourceUrl": "https://assignments.onenote.com/api/v1.0/edu/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/03a893d4-f64b-47e4-9e0c-afac4b357007/resources/45361b68-2777-42b1-aa4b-7054ce6de136",
+            "id": "6d6e204d-d976-452e-a76b-14a43f77dc65",
+            "resource": {
+                "@odata.type": "#microsoft.graph.educationExternalResource",
+                "displayName": "Forms Complete (Postman Test Dev)",
+                "createdDateTime": "2022-04-13T02:00:32.0613061Z",
+                "lastModifiedDateTime": "2022-04-13T02:00:32.0623064Z",
+                "webUrl": "https://forms.office.com/Pages/AssignmentsDesignPage.aspx#TopView=Preview&FormId=kowztj5TbU-jJ5lCY3EjmS7FAyB6gIZBm0lgxXMJVGFUMVlZVFM2MDRCVk1NOFlRU0xJRExDWDVTQyQlQCN0PWcu",
+                "createdBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "51cf5a99-d234-4e43-96de-cd65df14bfa1",
+                        "displayName": null
+                    }
+                },
+                "lastModifiedBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "51cf5a99-d234-4e43-96de-cd65df14bfa1",
+                        "displayName": null
+                    }
+                }
+            }
+        }
+    ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
