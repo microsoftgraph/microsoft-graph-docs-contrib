@@ -133,10 +133,10 @@ These APIs support an [evaluation mode](#evaluation-mode-default-requirements) t
 
 The following table lists the price for use for these APIs.
 
-| APIs or [change notification](/graph/api/subscription-post-subscriptions) `resources` | [Seeded capacity](#seeded-capacity) | [Price for use](#payment-and-billing) | Notes |
+| APIs | [Seeded capacity](#seeded-capacity) | [Price for use](#payment-and-billing) | Notes |
 |:---------------------------------------------------------------|:----------------|:-------|:------|
 | Teams Meeting Transcript APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent)</li></ul>  | None |  $0.024* per minute | The duration will be rounded down to nearest minute. |
-| Teams Meeting Recording APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content](/graph/api/callrecording-get#example-2-get-callrecording-content)</li></ul>  |  $0.03* per minute | The duration will be rounded down to nearest minute. |
+| Teams Meeting Recording APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content](/graph/api/callrecording-get#example-2-get-callrecording-content)</li></ul>  | None | $0.03* per minute | The duration will be rounded down to nearest minute. |
 
 *The price for use will be applicable from October 2, 2023. It is subject to change in the future.
 
