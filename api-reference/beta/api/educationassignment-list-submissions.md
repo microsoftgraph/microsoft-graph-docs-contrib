@@ -38,6 +38,8 @@ GET /education/classes/{class-id}/assignments/{assignment-id}/submissions
 
 This method supports the `$filter`,'$top', and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+All [properties](/graph/api/resources/educationsubmission#properties) are supported for the query parameters `$filter` and  `$orderby`.
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -457,7 +459,150 @@ Content-length: 4492
     ]
 }
 ```
+### Example 2: Using `$filter` to get submissions
 
+### Request
+The following is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["237d99af7-cfc5-4e3b-8566-f7d40e4a2070","a3cce0ba-2008-4c4d-bf62-079408562d96"],
+  "name": "get_resources_with_filter"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/a3cce0ba-2008-4c4d-bf62-079408562d96/submissions?$filter=id eq 'ff2c7fe6-91cd-57a4-aa62-5b9c6b73222a'
+```
+
+### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationSubmission",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('37d99af7-cfc5-4e3b-8566-f7d40e4a2070')/assignments('a3cce0ba-2008-4c4d-bf62-079408562d96')/submissions",
+    "value": [
+        {
+            "status": "working",
+            "submittedDateTime": null,
+            "unsubmittedDateTime": null,
+            "returnedDateTime": null,
+            "reassignedDateTime": null,
+            "resourcesFolderUrl": null,
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2237d99af7-cfc5-4e3b-8566-f7d40e4a2070%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%22a3cce0ba-2008-4c4d-bf62-079408562d96%5C%22%5D,%5C%22submissionId%5C%22%3A%5C%22ff2c7fe6-91cd-57a4-aa62-5b9c6b73222a%5C%22%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22speed-grader%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "id": "ff2c7fe6-91cd-57a4-aa62-5b9c6b73222a",
+            "recipient": {
+                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                "userId": "80cefd93-8d88-40e2-b5d3-67898383e226"
+            },
+            "submittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "80cefd93-8d88-40e2-b5d3-67898383e226",
+                    "displayName": null
+                }
+            },
+            "unsubmittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "returnedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "reassignedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            }
+        }
+    ]
+}
+```
+
+### Example 3: Using `$orderby` to get submissions
+
+### Request
+The following is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["2003c52e-807a-4186-9b49-60c573095461","2be08d97-b140-4eec-8cbd-88238d571060"],
+  "name": "get_resources_with_orderby"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/2be08d97-b140-4eec-8cbd-88238d571060/resources?$orderby=distributeForStudentWork
+```
+
+### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationAssignmentResource",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('2be08d97-b140-4eec-8cbd-88238d571060')/resources",
+    "value": [
+        {
+            "distributeForStudentWork": true,
+            "id": "777c1719-d464-4385-96f5-f031f8bd3b14",
+            "resource": {
+                "@odata.type": "#microsoft.graph.educationExternalResource",
+                "displayName": "Forms Complete (Postman Test Dev)",
+                "createdDateTime": "2022-04-13T05:09:25.9909527Z",
+                "lastModifiedDateTime": "2022-04-13T05:09:25.9919046Z",
+                "webUrl": "https://forms.office.com/Pages/AssignmentsDesignPage.aspx#TopView=Preview&FormId=kowztj5TbU-jJ5lCY3EjmS7FAyB6gIZBm0lgxXMJVGFUQVhTUzlTNE9ITlVRM04xWjMyOVVIM1VVTCQlQCN0PWcu",
+                "createdBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                        "displayName": null
+                    }
+                },
+                "lastModifiedBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                        "displayName": null
+                    }
+                }
+            }
+        }
+    ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
