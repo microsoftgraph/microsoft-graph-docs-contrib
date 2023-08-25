@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Create subCategoryTemplate
 Namespace: microsoft.graph.security
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Create a new [subCategoryTemplate](../resources/security-subcategorytemplate.md) object.
 
 ## Permissions
