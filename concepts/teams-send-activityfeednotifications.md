@@ -36,6 +36,10 @@ Activity feed APIs work with a [Teams app](/microsoftteams/platform/overview). T
 - Activity types must be declared in the `activities` section. For details, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 - The Teams app must be installed for the recipient, either personally, or in a [team](/graph/api/resources/team) or [chat](/graph/api/resources/chat) they are part of. For more information, see [Teams app installation](/graph/api/resources/teamsappinstallation).
 
+### Permissions
+
+You can use delegated or application permissions to send activity notifications. When you use application permissions, we recommend that you use [resource-specific consent (RSC)](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) because the `TeamsActivity.Send.User` permission allows the user to consent to send activity notifications. You must declare RSC permissions in your Teams app [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
+
 ### Teams app manifest changes
 
 This section describes the changes that need to be added to Teams app manifest. Note that you must be using the [Teams app manifest](/microsoftteams/platform/resources/schema/manifest-schema) version `1.7` or greater.
@@ -91,6 +95,36 @@ This section describes the changes that need to be added to Teams app manifest. 
 
 > [!NOTE]
 > `actor` is a special parameter that always takes the name of the caller. In delegated calls, `actor` is the user's name. In application-only calls, it takes the name of the Teams app.
+
+#### authorization section changes
+
+```json
+"authorization": 
+{ 
+  "permissions": { 
+    "resourceSpecific": [ 
+      {
+        "type": "Application", 
+         "name": "TeamsActivity.Send.User" 
+      }, 
+      { 
+        "type": "Application",
+        "name": "TeamsActivity.Send.Group"
+      }, 
+      { 
+        "type": "Application", 
+        "name": "TeamsActivity.Send.Chat" 
+      } 
+    ] 
+  }
+} 
+
+```
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|type|string|The type of the resource-specific consent (RSC) permission.|
+|name|string|The name of the RSC permission. For more information, see [Supported RSC permissions](/microsoftteams/platform/graph-api/rsc/resource-specific-consent#supported-rsc-permissions) |
 
 ### Install the Teams app
 
