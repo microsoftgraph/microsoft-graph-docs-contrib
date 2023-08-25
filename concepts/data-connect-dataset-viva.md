@@ -48,5 +48,4 @@ Viva Insights has recurring flexible queries that are refreshed weekly every Tue
 
 ## See also
 
-[Datasets, regions, and sinks supported by Microsoft Graph Data Connect](data-connect-datasets.md)<br>
-[Advanced insights introduction](viva/insights/advanced/introduction-to-advanced-insights)
+[Datasets, regions, and sinks supported by Microsoft Graph Data Connect](data-connect-datasets.md)
