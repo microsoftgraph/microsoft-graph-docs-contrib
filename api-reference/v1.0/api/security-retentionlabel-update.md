@@ -70,44 +70,27 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/v1.0/security/labels/retentionLabels/{retentionLabelId}
+PATCH https://graph.microsoft.com/beta/security/labels/retentionLabels/9563a605-e827-4324-a5a9-09efddff1e50
 Content-Type: application/json
 Content-length: 555
 
 {
   "@odata.type": "#microsoft.graph.security.retentionLabel",
   "retentionDuration": {
-    "@odata.type": "microsoft.graph.security.retentionDuration"
+    "@odata.type": "microsoft.graph.security.retentionDurationInDays"
+    "days": 2555
   },
-  "descriptionForAdmins": "String",
-  "descriptionForUsers": "String",
-  "labelToBeApplied": "String",
-  "defaultRecordBehavior": "String"
 }
 ```
 
 ### Response
->**Note:** The response object shown here might be shortened for readability.
+>
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.security.retentionLabel"
+  "truncated": true
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.security.retentionLabel",
-  "id": "64a99fb4-07be-0481-8746-44c15c0eef1f",
-  "retentionDuration": {
-    "@odata.type": "microsoft.graph.security.retentionDuration"
-  },
-  "descriptionForAdmins": "String",
-  "descriptionForUsers": "String",
-  "labelToBeApplied": "String",
-  "defaultRecordBehavior": "String"
-}
+HTTP/1.1 204 No Content
 ```
 
