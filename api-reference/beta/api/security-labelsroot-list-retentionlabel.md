@@ -127,7 +127,7 @@ Content-Type: application/json
         "@odata.type": "microsoft.graph.security.retentionDurationInDays",
         "days": "730"
       },
-      "isInUse": "true",
+      "isInUse": true,
       "descriptionForAdmins": "creation based retention label for schedule 10004",
       "descriptionForUsers": "retains for 2 years then relabeled",
       "createdBy": {
