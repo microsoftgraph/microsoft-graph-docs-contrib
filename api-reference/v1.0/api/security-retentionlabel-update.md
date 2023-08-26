@@ -77,7 +77,7 @@ Content-length: 555
 {
   "@odata.type": "#microsoft.graph.security.retentionLabel",
   "retentionDuration": {
-    "@odata.type": "microsoft.graph.security.retentionDurationInDays"
+    "@odata.type": "microsoft.graph.security.retentionDurationInDays",
     "days": 2555
   },
 }
