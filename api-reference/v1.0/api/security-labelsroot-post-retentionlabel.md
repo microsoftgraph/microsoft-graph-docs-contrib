@@ -145,7 +145,7 @@ Content-Type: application/json
       ]
     }
   ],
-  "isInUse": "true",
+  "isInUse": true,
   "descriptionForAdmins": "retain for 7 years",
   "descriptionForUsers": "retain for 7 years",
   "defaultRecordBehavior":"startLocked",
