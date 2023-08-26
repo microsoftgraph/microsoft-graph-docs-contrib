@@ -133,7 +133,7 @@ Content-Type: application/json
   "actionAfterRetentionPeriod": "startDispositionReview",
   "retentionTrigger": "dateOfEvent",
   "retentionDuration": {
-    "@odata.type": "microsoft.graph.security.retentionDurationInDays"
+    "@odata.type": "microsoft.graph.security.retentionDurationInDays",
     "days": 2555
   },
   "dispositionReviewStages": [
