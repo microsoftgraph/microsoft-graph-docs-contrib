@@ -4062,6 +4062,32 @@ Possible values for user account types (group membership), per Windows definitio
 | presentation_verified |
 | unknownFutureValue    |
 
+### labelKind values
+
+|Member|
+|:---|
+|all|
+|enumerated|
+|unknownFutureValue|
+
+### permissionKind values
+
+|Member|
+|:---|
+|all|
+|enumerated|
+|allPermissionsOnResourceApp|
+|unknownFutureValue|
+
+### resourceScopeType values
+
+|Member|
+|:---|
+|group|
+|chat|
+|tenant|
+|unknownFutureValue|
+
 ### allowedRolePrincipalTypes values
 
 |Member|
