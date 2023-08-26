@@ -82,21 +82,26 @@ Content-length: 555
 
 {
   "@odata.type": "#microsoft.graph.security.retentionLabel",
-  "displayName": "String",
-  "behaviorDuringRetentionPeriod": "String",
-  "actionAfterRetentionPeriod": "String",
-  "retentionTrigger": "String",
+  "displayName": "Retention Schedule 10005",
+  "behaviorDuringRetentionPeriod": "retain",
+  "actionAfterRetentionPeriod": "startDispositionReview",
+  "retentionTrigger": "dateOfEvent",
+  "retentionEventType@odata.bind": "https://graph.microsoft.com/beta/security/triggerTypes/retentionEventTypes('e095f4fc-b966-4c40-94de-fb8a383658e4')"
   "retentionDuration": {
-    "@odata.type": "microsoft.graph.security.retentionDuration"
+    "@odata.type": "microsoft.graph.security.retentionDurationInDays"
+    "days": 2555
   },
-  "isInUse": "Boolean",
-  "descriptionForAdmins": "String",
-  "descriptionForUsers": "String",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "labelToBeApplied": "String",
-  "defaultRecordBehavior": "String",
+   "dispositionReviewStages": [
+    {
+      "stageNumber" : 1,
+      "name": "Stage1",
+      "reviewersEmailAddresses ": [
+        "Admin@contoso.onmicrosoft.com"
+      ]
+    }
+  ],
+  "descriptionForAdmins": "retain for 7 years",
+  "descriptionForUsers": "retain for 7 years",
   "descriptors": {
     "authorityTemplate@odata.bind" : "https://graph.microsoft.com/beta/security/labels/authorities('fie3f4fc-b966-4c40-94de-fb8a383658e4')",
     "categoryTemplate@odata.bind" : "https://graph.microsoft.com/beta/security/labels/categories('0bjk8-b966-4c40-94de-fb8a383658e4')",
@@ -104,6 +109,7 @@ Content-length: 555
     "departmentTemplate@odata.bind" : "https://graph.microsoft.com/beta/security/labels/departments('p99ef4fc-b966-4c40-94de-fb8a383658e4')",
     "filePlanReferenceTemplate@odata.bind" : "https://graph.microsoft.com/beta/security/labels/filePlanReferences('e095f4fc-b966-4c40-94de-fb8a383658e4')"
   },
+  "defaultRecordBehavior":"startLocked",
 }
 ```
 
@@ -157,26 +163,36 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.security.retentionLabel",
   "id": "64a99fb4-07be-0481-8746-44c15c0eef1f",
-  "displayName": "String",
-  "behaviorDuringRetentionPeriod": "String",
-  "actionAfterRetentionPeriod": "String",
-  "retentionTrigger": "String",
+  "displayName": "Retention Schedule 10005",
+  "behaviorDuringRetentionPeriod": "retain",
+  "actionAfterRetentionPeriod": "startDispositionReview",
+  "retentionTrigger": "dateOfEvent",
   "retentionDuration": {
-    "@odata.type": "microsoft.graph.security.retentionDuration"
+    "@odata.type": "microsoft.graph.security.retentionDurationInDays"
+    "days": 2555
   },
-  "isInUse": "Boolean",
-  "descriptionForAdmins": "String",
-  "descriptionForUsers": "String",
+  "dispositionReviewStages": [
+    {
+     "stageNumber" : 1,
+      "name": "Stage1",
+      "reviewersEmailAddresses ": [
+        "Admin@contoso.onmicrosoft.com"
+      ]
+    }
+  ],
+  "isInUse": "true",
+  "descriptionForAdmins": "retain for 7 years",
+  "descriptionForUsers": "retain for 7 years",
+  "defaultRecordBehavior":"startLocked",
   "createdBy": {
-    "@odata.type": "microsoft.graph.identitySet"
+   "user": {
+      "id": "9563a605-e827-4324-a5a9-09efddff1e90",
+      "displayName": "Admin"
+    }
   },
-  "createdDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.identitySet"
-  },
-  "lastModifiedDateTime": "String (timestamp)",
-  "labelToBeApplied": "String",
-  "defaultRecordBehavior": "String",
+  "createdDateTime": "2021-08-23T16:43:55Z",
+  "labelToBeApplied": " ",
+  "defaultRecordBehavior": "startLocked",
   "descriptors": {
     "authority": {
       "displayName": "Business"
