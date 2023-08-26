@@ -86,9 +86,9 @@ Content-length: 555
   "behaviorDuringRetentionPeriod": "retain",
   "actionAfterRetentionPeriod": "startDispositionReview",
   "retentionTrigger": "dateOfEvent",
-  "retentionEventType@odata.bind": "https://graph.microsoft.com/beta/security/triggerTypes/retentionEventTypes('e095f4fc-b966-4c40-94de-fb8a383658e4')"
+  "retentionEventType@odata.bind": "https://graph.microsoft.com/beta/security/triggerTypes/retentionEventTypes('e095f4fc-b966-4c40-94de-fb8a383658e4')",
   "retentionDuration": {
-    "@odata.type": "microsoft.graph.security.retentionDurationInDays"
+    "@odata.type": "microsoft.graph.security.retentionDurationInDays",
     "days": 2555
   },
    "dispositionReviewStages": [
