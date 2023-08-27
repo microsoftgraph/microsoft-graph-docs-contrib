@@ -1,7 +1,7 @@
 ---
 title: "user: assignLicense"
 description: "Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription."
-author: "jconley76"
+author: "frank-masuelli"
 ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
@@ -104,6 +104,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/user-assignlicense-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/user-assignlicense-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
