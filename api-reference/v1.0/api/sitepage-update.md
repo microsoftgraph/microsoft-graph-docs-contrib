@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage
+PATCH /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage
 ```
 
 ## Request headers
@@ -77,7 +77,7 @@ The following is an example of a request.
 -->
 
 ```http
-PATCH https://graph.microsoft.com/v1.0/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage
+PATCH https://graph.microsoft.com/v1.0/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage
 Content-Type: application/json
 
 {

@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}
+GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontal-section-id}
 ```
 
 ## Optional query parameters
@@ -63,7 +63,7 @@ The following is an example of a request.
 <!-- { "blockType": "ignored" } -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}
+GET https://graph.microsoft.com/v1.0/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage/canvasLayout/horizontalSections/1
 ```
 
 #### Response
@@ -98,10 +98,12 @@ With `select` and `expand` statements, you can retrieve horizontalSection metada
 <!-- { "blockType": "ignored" } -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}?select=id,expand=columns
+GET https://graph.microsoft.com/v1.0/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage/canvasLayout/horizontalSections/1?select=id,expand=columns
 ```
 
 #### Response
+
+The following is an example of a request.
 
 <!-- {
   "blockType": "response",

@@ -78,7 +78,7 @@ The following is an example of the request.
 -->
 
 ```http
-GET /sites/{site-id}/pages
+GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages
 ```
 
 ---

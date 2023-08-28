@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}
+DELETE /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontal-section-id}
 ```
 
 ## Request headers
@@ -55,13 +55,17 @@ If the target horizontal section is not found, this method returns `404 Not Foun
 
 ### Request
 
+The following is an example of the request.
+
 <!-- { "blockType": "ignored" } -->
 
 ``` http
-DELETE https://graph.microsoft.com/v1.0/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}
+DELETE https://graph.microsoft.com/v1.0/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage/canvasLayout/horizontalSections/1
 ```
 
 ### Response
+
+The following is an example of the response
 
 <!-- { "blockType": "response" } -->
 

@@ -59,6 +59,7 @@ If successful, this method returns a `200` and a [baseSitePage](../resources/bas
 
 ### Request
 
+The following is an example of the request.
 
 <!--{
 	"blockType": "request",
@@ -69,11 +70,13 @@ If successful, this method returns a `200` and a [baseSitePage](../resources/bas
 -->
 
 ```http
-GET /sites/{site-id}/pages/{page-id}
+GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202
 ```
 ---
 
 ### Response
+
+The following is an example of the response
 
 > **Note:** The response object shown here might be shortened for readability.
 

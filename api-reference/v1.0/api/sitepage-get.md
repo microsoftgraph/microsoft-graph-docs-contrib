@@ -66,16 +66,20 @@ If successful, this method returns a `200` and a [sitePage](../resources/sitepag
 ### Example 1: Get a page in the site pages list of a site
 #### Request
 
+The following is an example of the request.
+
 <!-- { "blockType": "request", "name": "get-page", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
 ```http
-GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage
+GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage
 ```
 
 
 ---
 
 #### Response
+
+The following is an example of the response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
@@ -130,7 +134,7 @@ With `select` and `expand` statements, you can retrieve sitePage metadata and pa
 -->
 
 ```http
-GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage
+GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage
 ```
 
 ---
@@ -193,10 +197,12 @@ Content-type: application/json
 To access the page with page content, append the `?expand=canvasLayout` query string.
 
 ```http
-GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage?expand=canvasLayout
+GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage?expand=canvasLayout
 ```
 
 #### Response
+
+The following is an example of the response
 ```json
 {
   "description": "Reiciendis placeat dolores.",

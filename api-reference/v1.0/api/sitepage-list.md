@@ -59,6 +59,8 @@ If successful, this method returns a `200` and a list of [sitePage](../resources
 
 ### Request
 
+The following is an example of the request.
+
 <!--{
 	"blockType": "request",
 	"name": "get-pages",
@@ -68,12 +70,14 @@ If successful, this method returns a `200` and a list of [sitePage](../resources
 -->
 
 ```http
-GET /sites/{site-id}/pages/microsoft.graph.sitePage
+GET /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage
 ```
 
 ---
 
 ### Response
+
+The following is an example of the response
 
 <!--
 {

@@ -31,9 +31,9 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-DELETE /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webPartId}
-DELETE /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/verticalSection/webparts/{webPartIndex}
-DELETE /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}/columns/{horizontalSectionColumnId}/webparts/{webPartIndex}
+DELETE /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/webParts/{webpart-id}
+DELETE /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/verticalSection/webparts/{webpart-index}
+DELETE /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontal-section-id}/columns/{horizontal-section-column-id}/webparts/{webpart-index}
 ```
 ## Request headers
 
@@ -54,15 +54,19 @@ If successful, this method returns a `204 No Content`. It does not return anythi
 
 ### Request
 
+The following is an example of the request.
+
 <!-- { "blockType": "request", "name": "delete-webpart", "scopes": "sites.readwrite.all" } -->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/webParts/{webPartId}
+DELETE https://graph.microsoft.com/v1.0/sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202/microsoft.graph.sitePage/webParts/29c08ca7-7f16-4c97-ba05-ea8d2850fc0e
 ```
 
 ---
 
 ### Response
+
+The following is an example of the response
 
 <!-- { "blockType": "response" } -->
 
