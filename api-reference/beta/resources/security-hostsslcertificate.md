@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents an observed relationship between a [microsoft.graph.security.host](../resources/security-host.md) and a [microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md).
+Represents an observed relationship between a [host](../resources/security-host.md) and an [sslCertificate](../resources/security-sslcertificate.md).
 
 Inherits from [microsoft.graph.security.artifact](../resources/security-artifact.md).
 
@@ -23,8 +23,8 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List hostSslCertificates](../api/security-hostsslcertificate-list-host.md)|[microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) collection|Get a list of the [microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) objects and their properties.|
-|[Get hostSslCertificate](../api/security-hostsslcertificate-get.md)|[microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md)|Read the properties and relationships of a [microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) object.|
+|[List hostSslCertificates](../api/security-hostsslcertificate-list-host.md)|[microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) collection|Get a list of [hostSslCertificate](../resources/security-hostsslcertificate.md) objects from the [host](../resources/security-host.md) navigation property.|
+|[Get hostSslCertificate](../api/security-hostsslcertificate-get.md)|[microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md)|Read the properties and relationships of a [hostSslCertificate](../resources/security-hostsslcertificate.md) object.|
 
 ## Properties
 
