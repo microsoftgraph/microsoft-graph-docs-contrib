@@ -48,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) objects in the response body. The response collection can also include one or more [resellerDelegatedAdminRelationship](../resources/resellerDelegatedAdminRelationship.md) objects.
+If successful, this method returns a `200 OK` response code and a collection of [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) objects in the response body. The response collection can also include one or more [resellerDelegatedAdminRelationship](../resources/resellerdelegatedadminrelationship.md) objects.
 
 Each **delegatedAdminRelationship** object contains an **@odata.etag** property as per RFC2616.
 
