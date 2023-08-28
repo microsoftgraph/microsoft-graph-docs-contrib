@@ -123,12 +123,14 @@ Content-length: 555
 >
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.security.retentionLabel"
 }
 -->
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.security.retentionLabel",
   "retentionDuration": {
