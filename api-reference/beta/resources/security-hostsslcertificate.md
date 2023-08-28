@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 
 Represents an observed relationship between a [host](../resources/security-host.md) and an [sslCertificate](../resources/security-sslcertificate.md).
 
-Inherits from [microsoft.graph.security.artifact](../resources/security-artifact.md).
+Inherits from [artifact](../resources/security-artifact.md).
 
 ## Methods
 
