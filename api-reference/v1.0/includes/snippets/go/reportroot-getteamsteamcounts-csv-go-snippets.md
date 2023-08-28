@@ -25,7 +25,8 @@ configuration := &graphreports.ReportsGetTeamsTeamCounts(period='{period}')Reque
 	QueryParameters: requestParameters,
 }
 
-graphClient.Reports().GetTeamsTeamCounts(period='{period}')().Get(context.Background(), configuration)
+period := "{period}"
+graphClient.Reports().GetTeamsTeamCountsWithPeriod(&period).Get(context.Background(), configuration)
 
 
 ```

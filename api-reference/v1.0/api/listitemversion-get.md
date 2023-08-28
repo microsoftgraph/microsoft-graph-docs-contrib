@@ -3,7 +3,7 @@ title: "Get a ListItemVersion resource"
 description: "Retrieve the metadata for a specific version of a ListItem."
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 doc_type: apiPageType
 ---
 

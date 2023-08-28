@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-ProfileCardProperty profileCardProperty = graphClient.organization("{organizationId}").settings().profileCardProperties("{id}")
+ProfileCardProperty profileCardProperty = graphClient.admin().people().profileCardProperties("CustomAttribute1")
 	.buildRequest()
 	.get();
 

@@ -25,7 +25,7 @@ configuration := &graphdirectory.DirectoryCustomSecurityAttributeDefinitionsRequ
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Get(context.Background(), configuration)
+customSecurityAttributeDefinitions, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Get(context.Background(), configuration)
 
 
 ```

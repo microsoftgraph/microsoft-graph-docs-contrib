@@ -23,7 +23,7 @@ requestBody.SetContentBytes(&contentBytes)
 contentType := "image/gif"
 requestBody.SetContentType(&contentType) 
 
-result, err := graphClient.Me().Todo().Lists().ByListId("todoTaskList-id").Tasks().ByTaskId("todoTask-id").Attachments().Post(context.Background(), requestBody, nil)
+attachments, err := graphClient.Me().Todo().Lists().ByTodoTaskListId("todoTaskList-id").Tasks().ByTodoTaskId("todoTask-id").Attachments().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -12,7 +12,6 @@ $params = @{
 	durationInDays = 7
 	attackTechnique = "credentialHarvesting"
 	status = "scheduled"
-	durationInDays = "3"
 	includedAccountTarget = @{
 		"@odata.type" = "#microsoft.graph.addressBookAccountTargetContent"
 		type = "addressBook"

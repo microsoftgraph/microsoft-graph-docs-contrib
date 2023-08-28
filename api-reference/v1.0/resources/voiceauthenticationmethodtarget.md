@@ -1,7 +1,7 @@
 ---
 title: "voiceAuthenticationMethodTarget resource type"
 description: "A collection of groups enabled to use voice call authentication method via policy."
-author: "jpettere"
+author: "luc-msft"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

@@ -25,7 +25,7 @@ configuration := &graphrolemanagement.RoleManagementCloudPCRoleAssignmentsReques
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.RoleManagement().CloudPC().RoleAssignments().Get(context.Background(), configuration)
+roleAssignments, err := graphClient.RoleManagement().CloudPC().RoleAssignments().Get(context.Background(), configuration)
 
 
 ```

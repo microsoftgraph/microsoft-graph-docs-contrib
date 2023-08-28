@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.IdentityProtection().RiskDetections().ByRiskDetectionId("riskDetection-id").Get(context.Background(), nil)
+riskDetections, err := graphClient.IdentityProtection().RiskDetections().ByRiskDetectionId("riskDetection-id").Get(context.Background(), nil)
 
 
 ```
