@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get a list of [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) objects.
+Get a list of [whoisRecord](../resources/security-whoisrecord.md) objects.
 
 > **Note:** This API requires the usage of `$search` in the request URL.
 
