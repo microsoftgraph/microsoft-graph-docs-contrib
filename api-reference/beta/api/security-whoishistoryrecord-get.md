@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Read the properties and relationships of a [microsoft.graph.security.whoisHistoryRecord](../resources/security-whoishistoryrecord.md) object.
+Read the properties and relationships of a [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) object.
 
 ## Permissions
 
