@@ -51,8 +51,6 @@ If the target horizontal section is not found, this method returns `404 Not Foun
 
 ## Example
 
-<!-- { "blockType": "request", "name": "delete-horizontalSection", "scopes": "files.readwrite sites.readwrite.all" } -->
-
 ### Request
 
 The following is an example of the request.

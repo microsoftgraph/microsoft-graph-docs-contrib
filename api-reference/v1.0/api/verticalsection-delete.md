@@ -51,8 +51,6 @@ If the vertical section is not found, this method returns `404 Not Found`.
 
 ## Example
 
-<!-- { "blockType": "request", "name": "delete-verticalSection", "scopes": "sites.readwrite.all" } -->
-
 ### Request
 
 The following is an example of the request.

@@ -53,12 +53,11 @@ If successful, this method returns a `204 No Content`. It does not return anythi
 
 ## Example
 
-<!-- { "blockType": "request", "name": "delete-page", "scopes": "files.readwrite sites.readwrite.all" } -->
-
 ### Request
 
 The following is an example of the request.
 
+<!-- { "blockType": "request", "name": "delete-page", "scopes": "files.readwrite sites.readwrite.all" } -->
 ```http
 DELETE /sites/7f50f45e-714a-4264-9c59-3bf43ea4db8f/pages/df69e386-6c58-4df2-afc0-ab6327d5b202
 ```
