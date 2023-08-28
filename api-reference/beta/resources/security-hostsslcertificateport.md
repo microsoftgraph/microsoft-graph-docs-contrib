@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents the ports of a [microsoft.graph.security.host](../resources/security-host.md) where this **hostSslCertificate** is currently or was previously related.
+Represents the ports of a [host](../resources/security-host.md) where a [hostSslCertificate](../resources/security-hostsslcertificate.md) is currently or was previously related.
 
 ## Properties
 
