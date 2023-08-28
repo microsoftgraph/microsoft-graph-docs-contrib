@@ -3592,8 +3592,8 @@ Possible values for user account types (group membership), per Windows definitio
 | lockForApproval    |
 | approve            |
 | terminate          |
-| reject             |
 | unknownFutureValue |
+| reject             |
 
 ### delegatedAdminRelationshipRequestStatus values 
 
