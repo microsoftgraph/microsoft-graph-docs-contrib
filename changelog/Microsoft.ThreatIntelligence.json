@@ -4,14 +4,6 @@
       "ChangeList": [
         {
           "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "hostSslCertificates",
-          "ChangeType": "Addition",
-          "Description": "Added the **hostSslCertificates** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
-          "Target": "host"
-        },
-        {
-          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
           "ApiChange": "Resource",
           "ChangedApiName": "sslCertificates",
           "ChangeType": "Addition",
