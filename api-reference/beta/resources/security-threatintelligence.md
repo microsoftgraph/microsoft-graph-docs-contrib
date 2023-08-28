@@ -42,10 +42,10 @@ The threat intelligence API allows you to operationalize intelligence found with
 |[Get passiveDnsRecord](../api/security-passivednsrecord-get.md)|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) |Get the properties and relationships of a **hostTracker** object.|
 |[Get subdomain](../api/security-subdomain-get.md)|[microsoft.graph.security.subdomain](../resources/security-subdomain.md) |Get the properties and relationships of a **subdomain** object.|
 |[Get vulnerabilities](../api/security-vulnerability-get.md)|[microsoft.graph.security.vulnerability](../resources/security-vulnerability.md) |Get the properties and relationships of a **vulnerability** object.|
-|[Get sslCertificate](../api/security-sslcertificate-get.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) |Get the properties and relationships of a **sslCertificate** object.|
-|[List sslCertificates](../api/security-sslcertificate-list.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) collection |Get a list of **sslCertificate** resources.|
-|[Get hostSslCertificate](../api/security-hostsslcertificate-get.md)|[microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) |Get the properties and relationships of a **hostSslCertificate** object.|
-|[List hostSslCertificates](../api/security-hostsslcertificate-list-host.md)|[microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) collection |Get a list of **hostSslCertificate** resources.|
+|[Get sslCertificate](../api/security-sslcertificate-get.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) |Get the properties and relationships of an [sslCertificate](../resources/security-sslcertificate.md) object.|
+|[List sslCertificates](../api/security-sslcertificate-list.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) collection |Get a list of [sslCertificate](../resources/security-sslcertificate.md) objects and their properties.|
+|[Get hostSslCertificate](../api/security-hostsslcertificate-get.md)|[microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) |Get the properties and relationships of a [hostSslCertificate](../resources/security-hostsslcertificate.md) object.|
+|[List hostSslCertificates](../api/security-hostsslcertificate-list-host.md)|[microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) collection |Get a list of [hostSslCertificate](../resources/security-hostsslcertificate.md) objects from the [host](../resources/security-host.md) navigation property.|
 
 ## Properties
 
