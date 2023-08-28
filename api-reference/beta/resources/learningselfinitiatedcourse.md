@@ -51,10 +51,11 @@ The following is a JSON representation of the resource.
   "completedDateTime": "String (timestamp)",
   "completionPercentage": "Int32",
   "externalCourseActivityId": "String",
+  "id": "String (identifier)",
   "learningContentId": "String",
   "learningProviderId": "String",
   "learnerUserId": "String",
   "startedDateTime": "String (timestamp)",
-  "status": "@odata.type: microsoft.graph.courseStatus"
+  "status": {"@odata.type": "microsoft.graph.courseStatus"}
 }
 ```
