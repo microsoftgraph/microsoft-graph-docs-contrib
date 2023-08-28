@@ -70,6 +70,10 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/claimsMappingPoli
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-claimsmappingpolicy-from-serviceprincipal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-claimsmappingpolicy-from-serviceprincipal-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-claimsmappingpolicy-from-serviceprincipal-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -84,6 +88,10 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/claimsMappingPoli
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-claimsmappingpolicy-from-serviceprincipal-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-claimsmappingpolicy-from-serviceprincipal-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

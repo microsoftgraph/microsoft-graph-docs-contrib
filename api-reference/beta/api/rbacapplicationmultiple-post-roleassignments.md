@@ -107,6 +107,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignmentmultiple-from-rbacapplication-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-unifiedroleassignmentmultiple-from-rbacapplication-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignmentmultiple-from-rbacapplication-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -193,6 +197,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignmentmultiple-intune-specific-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-unifiedroleassignmentmultiple-intune-specific-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-unifiedroleassignmentmultiple-intune-specific-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -270,6 +278,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-unifiedroleassignmentmultiple-from-rbacapplication-cloudpc-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-unifiedroleassignmentmultiple-from-rbacapplication-cloudpc-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

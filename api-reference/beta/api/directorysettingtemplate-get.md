@@ -2,7 +2,7 @@
 title: "Get a directory setting template"
 description: "Allows retrieval of the properties of the directorySettingTemplate object, including the available settings and their defaults."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "Jordanndahl"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -61,6 +61,10 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates/08d542b9-071f-4e1
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directorysettingtemplate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-directorysettingtemplate-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

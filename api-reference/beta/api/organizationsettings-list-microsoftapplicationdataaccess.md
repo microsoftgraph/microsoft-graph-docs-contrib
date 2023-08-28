@@ -67,6 +67,10 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/micr
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-microsoftapplicationdataaccesssettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-microsoftapplicationdataaccesssettings-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-microsoftapplicationdataaccesssettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -81,6 +85,10 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/micr
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-microsoftapplicationdataaccesssettings-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-microsoftapplicationdataaccesssettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

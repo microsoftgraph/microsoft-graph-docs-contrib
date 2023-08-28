@@ -62,6 +62,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders/inbox/messageRules
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-messagerules-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-messagerules-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-messagerules-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -76,6 +80,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders/inbox/messageRules
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-messagerules-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-messagerules-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

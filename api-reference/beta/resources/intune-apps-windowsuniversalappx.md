@@ -1,6 +1,6 @@
 ---
 title: "windowsUniversalAppX resource type"
-description: "Contains properties and inherited properties for Windows Universal AppX Line Of Business apps."
+description: "Contains properties and inherited properties for Windows Universal AppX Line Of Business apps. Inherits from `mobileLobApp`."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Contains properties and inherited properties for Windows Universal AppX Line Of Business apps.
+Contains properties and inherited properties for Windows Universal AppX Line Of Business apps. Inherits from `mobileLobApp`.
 
 
 Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
@@ -55,14 +55,14 @@ Inherits from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)
 |committedContentVersion|String|The internal committed content version. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
-|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The Windows architecture(s) for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
-|applicableDeviceTypes|[windowsDeviceType](../resources/intune-apps-windowsdevicetype.md)|The Windows device type(s) for which this app can run on. Possible values are: `none`, `desktop`, `mobile`, `holographic`, `team`.|
-|identityName|String|The Identity Name.|
-|identityPublisherHash|String|The Identity Publisher Hash.|
-|identityResourceIdentifier|String|The Identity Resource Identifier.|
-|isBundle|Boolean|Whether or not the app is a bundle.|
-|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
-|identityVersion|String|The identity version.|
+|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|The Windows architecture(s) for which this app can run on. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`; default value is `none`. Possible values are: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
+|applicableDeviceTypes|[windowsDeviceType](../resources/intune-apps-windowsdevicetype.md)|The Windows device type(s) for which this app can run on. Possible values are: `none`, `desktop`, `mobile`, `holographic`, `team`; default value is `none`. Possible values are: `none`, `desktop`, `mobile`, `holographic`, `team`, `unknownFutureValue`.|
+|identityName|String|The Identity Name of the app, parsed from the appx file when it is uploaded through the Intune MEM console. For example: "Contoso.DemoApp".|
+|identityPublisherHash|String|The Identity Publisher Hash of the app, parsed from the appx file when it is uploaded through the Intune MEM console. For example: "AB82CD0XYZ".|
+|identityResourceIdentifier|String|The Identity Resource Identifier of the app, parsed from the appx file when it is uploaded through the Intune MEM console. For example: "TestResourceId".|
+|isBundle|Boolean|Whether or not the app is a bundle. If TRUE, app is a bundle; if FALSE, app is not a bundle.|
+|minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|The value for the minimum applicable Windows operating system.|
+|identityVersion|String|The Identity Version of the app, parsed from the appx file when it is uploaded through the Intune MEM console.  For example: "1.0.0.0".|
 
 ## Relationships
 |Relationship|Type|Description|

@@ -1,7 +1,7 @@
 ---
 title: "featureTarget resource type"
 description: "Defines a single group, Azure AD role, or administrative unit that is included or excluded in the settings specified in the authenticationMethodFeatureConfiguration object."
-author: "mjsantani"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

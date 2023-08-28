@@ -2,7 +2,7 @@
 title: "Update authenticationContextClassReference"
 description: "Update the properties of a authenticationContextClassReference object."
 ms.localizationpriority: medium
-author: "bakerCaleb"
+author: "swetha-rai"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -86,6 +86,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-authenticationcontextclassreference-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-authenticationcontextclassreference-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

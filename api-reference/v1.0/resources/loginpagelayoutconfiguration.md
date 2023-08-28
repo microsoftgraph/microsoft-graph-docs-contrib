@@ -1,7 +1,7 @@
 ---
 title: "loginPageLayoutConfiguration resource type"
 description: "Contains details of the layout of the sign-in page for a tenant."
-author: "AlexanderMars"
+author: "quievey"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

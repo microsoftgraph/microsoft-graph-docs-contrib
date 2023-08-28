@@ -52,7 +52,7 @@ The following RBAC providers are currently supported:
 
 ## Relationships
 
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |inheritsPermissionsFrom| [unifiedRoleDefinition](unifiedroledefinition.md) collection| Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute. |
 

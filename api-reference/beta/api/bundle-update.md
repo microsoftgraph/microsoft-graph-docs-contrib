@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: Update a bundle
 description: Update a bundle of driveItems
 ms.localizationpriority: medium
@@ -80,6 +80,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/rename-bundle-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/rename-bundle-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
