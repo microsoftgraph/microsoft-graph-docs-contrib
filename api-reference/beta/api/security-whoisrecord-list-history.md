@@ -43,12 +43,12 @@ GET /security/threatIntelligence/whoisRecord/{id}/history
 
 This method supports the `$count`, `$select`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-| Name    | Description                                                                                                                                                                                                                                                           |
-| :------ | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| $count  | `$count` is supported to return a holistic count of the number of [microsoft.graph.security.whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects. `$count` is supported as a query parameter (`?$count=true`) or as a path parameter (`/$count`). |
-| $select | `$select` is supported to limit the properties returned in this query.                                                                                                                                                                                                |
-| $skip   | `$skip` is supported to skip over elements in pages. Combine with `$top` to perform pagination or use the `@odata.nextLink` for server-side pagination.                                                                                                               |
-| $top    | `$top` is supported to limit the number of elements per page. Combine with `$skip` to perform pagination or use the `@odata.nextLink` for server-side pagination.                                                                                                     |
+| Name    | Description                                                                                                                                                                                                                                  |
+| :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| $count  | `$count` is supported to return a holistic count of the number of [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects. `$count` is supported as a query parameter (`?$count=true`) or as a path parameter (`/$count`). |
+| $select | `$select` is supported to limit the properties returned in this query.                                                                                                                                                                       |
+| $skip   | `$skip` is supported to skip over elements in pages. Combine with `$top` to perform pagination or use the `@odata.nextLink` for server-side pagination.                                                                                      |
+| $top    | `$top` is supported to limit the number of elements per page. Combine with `$skip` to perform pagination or use the `@odata.nextLink` for server-side pagination.                                                                            |
 
 ## Request headers
 
