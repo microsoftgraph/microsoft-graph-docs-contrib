@@ -48,11 +48,9 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) objects in the response body. The response collection may also include [resellerDelegatedAdminRelationship](../resources/delegatedadminrelationship.md) which are delegated admin relationships with default roles created for Microsoft indirect reseller partner by a Microsoft indirect provider partner.
 
 Each **delegatedAdminRelationship** object contains an **@odata.etag** property as per RFC2616.
-
-The response collection may also include [resellerDelegatedAdminRelationship](../resources/delegatedadminrelationship.md) which are delegated admin relationships with default roles created for Microsoft indirect reseller partner by a Microsoft indirect provider partner.
 
 ## Examples
 
