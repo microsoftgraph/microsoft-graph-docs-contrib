@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents an entity related to an **sslCertificate**. An **sslCertificateEntity** is either an issuer or subject of the certificate.
+Represents an entity related to an [sslCertificate](../resources/security-sslcertificate.md). An **sslCertificateEntity** is either an issuer or subject of the certificate.
 
 ## Properties
 
