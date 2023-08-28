@@ -1450,7 +1450,7 @@
         "Id": "37dcf6ec-0705-446c-928d-dd3309c6afed",
         "Cloud": "prd",
         "Version": "beta",
-        "CreatedDateTime": "2023-06-30T00:00:00.000Z",
+        "CreatedDateTime": "2023-09-01T00:00:00.000Z",
         "WorkloadArea": "Identity and Access",
         "SubArea": "Directory management"
     },
