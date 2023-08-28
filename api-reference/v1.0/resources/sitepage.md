@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 
 This resource represents a page in the sitePages [list](../resources/list.md).
 It contains the title, layout, and a collection of [webPart](../resources/webpart.md)s.
