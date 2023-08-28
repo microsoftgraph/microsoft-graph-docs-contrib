@@ -25,6 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Policy.ReadWrite.PermissionGrant |
 
+[!INCLUDE [rbac-permission-grant-preapproval-policy-write](../includes/rbac-for-apis/rbac-permission-grant-preapproval-policy-write.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -133,6 +135,10 @@ Content-type: application/json
   "clientApplicationTenantIds": ["all"],
   "clientApplicationPublisherIds": ["all"],
   "clientApplicationsFromVerifiedPublisherOnly": false,
-  "certifiedClientApplicationsOnly": false
+  "certifiedClientApplicationsOnly": false,
+  "scopeSensitivityLabels": {
+      "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+      "labelKind": "all"
+  }
 }
 ```

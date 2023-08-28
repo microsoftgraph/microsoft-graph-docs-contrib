@@ -11,8 +11,6 @@ ms.localizationpriority: medium
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Set a reaction to a single [chatMessage](../resources/chatmessage.md) or a [chat message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
 ## Permissions
@@ -23,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account)| ChannelMessage.Send  |
+|Delegated (work or school account)| ChannelMessage.Send |
 |Delegated (personal Microsoft account)| Not supported. |
 |Application| Not supported. |
 
@@ -53,7 +51,7 @@ To set a reaction to a **chatMessage** in a **chat**:
 }
 -->
 ``` http
-POST /chats/{chatId}/messages/{chatMessageId}/setReaction
+POST /chats/{chatsId}/messages/{chatMessageId}/setReaction
 ```
 
 ## Request headers
@@ -77,7 +75,7 @@ If successful, this action returns a `204 No Content` response code.
 #### Request
 
 ```http
-POST https://graph.microsoft.com/beta/chats/chatId/messages/messageId/setReaction
+POST https://graph.microsoft.com/v1.0/chats/chatId/messages/messageId/setReaction
 {
   "reactionType": "💘"
 }
@@ -97,7 +95,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 ```http
-POST https://graph.microsoft.com/beta/teams/teamsid/channels/channelId/messages/messageId/setReaction
+POST https://graph.microsoft.com/v1.0/teams/teamsid/channels/channelId/messages/messageId/setReaction
 {
   "reactionType": "💘"
 }
@@ -118,7 +116,7 @@ HTTP/1.1 204 No Content
 #### Request
 
 ```http
-POST https://graph.microsoft.com/beta/teams/teamsid/channels/channelId/messages/messageId/replies/replyId/setReaction
+POST https://graph.microsoft.com/v1.0/teams/teamsid/channels/channelId/messages/messageId/replies/replyId/setReaction
 {
   "reactionType": "💘"
 }
