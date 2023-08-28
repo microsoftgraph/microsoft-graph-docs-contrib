@@ -1,6 +1,6 @@
 ---
 title: "Get hostSslCertificate"
-description: "Read the properties and relationships of a hostSslCertificate object."
+description: "Get the properties and relationships of a hostSslCertificate object."
 author: "nblankenau"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Read the properties and relationships of a [hostSslCertificate](../resources/security-hostsslcertificate.md) object.
+Get the properties and relationships of a [hostSslCertificate](../resources/security-hostsslcertificate.md) object.
 
 ## Permissions
 
