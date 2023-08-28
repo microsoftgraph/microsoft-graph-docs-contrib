@@ -21,6 +21,9 @@ Use the application permission `OnPremDirectorySynchronization.Read.All` or `OnP
 ### Security | Alerts and incidents
 Manage additional resources, such as a Kubernetes account or service, or a storage blob or blob container, as specific types of [evidence](/graph/api/resources/security-alertevidence) related to an [alert](/graph/api/resources/security-alert). See an exact [list](https://developer.microsoft.com/en-us/graph/changelog?search=e66d855d-9635-4fbb-b435-23182467f0ce) of evidence types added.
 
+### Teamwork and communications | Apps
+- [List](/graph/api/chat-list-permissiongrants) each [resource-specific permission grant](/graph/api/resources/resourcespecificpermissiongrant) on a specific [chat](/graph/api/resources/chat), showing each Azure AD app that has access to the chat, the permission type, and actual resource-specific permission.
+- [List](/graph/api/team-list-permissiongrants) each [resource-specific permission grant](/graph/api/resources/resourcespecificpermissiongrant) on a specific [team](/graph/api/resources/team), showing each Azure AD app that has access to the team, the permission type, and actual resource-specific permission.
 
 ## August 2023: New in preview only
 
@@ -37,9 +40,16 @@ Get the license type of a specified managed tenant as part of the Azure Active D
 ### Education
 Organize individual learning resources in a systematic way in a [module](/graph/api/resources/educationModule?view=graph-rest-beta&preserve-view=true). Modules contain read-only learning resources and assignments the teacher wants the student to complete. The teacher can [set up a resources folder](/graph/api/educationmodule-setupresourcesfolder?view=graph-rest-beta&preserve-view=true) on SharePoint for a module, [pin](/graph/api/educationmodule-pin?view=graph-rest-beta&preserve-view=true) one module at a time in a classwork list, [unpin](/graph/api/educationmodule-unpin?view=graph-rest-beta&preserve-view=true) a module in a classwork list, and [publish](/graph/api/educationmodule-publish?view=graph-rest-beta&preserve-view=true) a module to a student's classwork list.
 
+### Identity and access | Identity and sign-in
+- Use a [session control that requires sign-in sessions to be bound to a device](/graph/api/resources/secureSignInSessionControl?view=graph-rest-beta).
+- Use [hardware OATH authentication method policy](/graph/api/resources/hardwareOathAuthenticationMethodConfiguration?view=graph-rest-beta) to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD).
+
 ### People and workplace intelligence | People
 - Use the delegated permission, `PeopleSettings.Read.All` or `PeopleSettings.ReadWrite.All`, to read or update [people-related admin settings](/graph/api/resources/peopleadminsettings?view=graph-rest-beta&preserve-view=true) that are available for an organization, with a signed-in user present.
 - Use the policy-based application permission, `PeopleSettings.Read.All` or `PeopleSettings.ReadWrite.All`, to read or update [people-related admin settings](/graph/api/resources/peopleadminsettings?view=graph-rest-beta&preserve-view=true) that are available for an organization, without a signed-in user present.
+
+### Reports | Identity and access reports
+Get information about the [managed identity](/graph/api/resources/managedIdentity?view=graph-rest-beta) used for the [sign-in](/graph/api/resources/signin?view=graph-rest-beta), including its type, associated Azure Resource Manager (ARM) resource ID, and federated token information.
 
 ### Security | Threat intelligence
 List [host pair](/graph/api/resources/security-hostpair?view=graph-rest-beta&preserve-view=true) information for a [host](/graph/api/resources/security-host?view=graph-rest-beta&preserve-view=true) to reveal connections between websites, where your resources are being used and vice-versa, and adversaries’ infrastructure of actor groups targeting your organization. A host pair is two pieces of infrastructure (a parent and a child), leveraging the relationship of which can build out a threat investigation. For more information, see [infrastructure chaining](/defender/threat-intelligence/infrastructure-chaining), [data sets](/defender/threat-intelligence/data-sets), and [host pairs](/defender/threat-intelligence/data-sets#host-pairs).
