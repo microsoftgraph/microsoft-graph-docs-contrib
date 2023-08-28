@@ -1,6 +1,6 @@
 ---
 title: "List hostSslCertificates"
-description: "Get the hostSslCertificate resources from the host navigation property."
+description: "Get a list of hostSslCertificate objects from the host navigation property."
 author: "nblankenau"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get the host resources from the host navigation property.
+Get a list of [hostSslCertificate](../resources/security-hostsslcertificate.md) objects from the [host](../resources/security-host.md) navigation property.
 
 ## Permissions
 
