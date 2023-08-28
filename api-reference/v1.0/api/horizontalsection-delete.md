@@ -61,7 +61,6 @@ If the target horizontal section is not found, this method returns `404 Not Foun
 DELETE https://graph.microsoft.com/v1.0/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/horizontalSections/{horizontalSectionId}
 ```
 
-ve
 ### Response
 
 <!-- { "blockType": "response" } -->
