@@ -26,6 +26,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[Create chat](../api/chat-post.md) | [chat](chat.md) | Create a new chat.| 
 |[Get chat](../api/chat-get.md) | [chat](chat.md) | Read properties and relationships of the chat.| 
 |[Update chat](../api/chat-patch.md) | [chat](chat.md) | Update properties of the chat.|
+|[Delete chat](../api/chat-delete.md)|None|Delete a chat.|
 |[List chat members](../api/chat-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all users in the chat.| 
 |[Add chat member](../api/chat-post-members.md) | Location header | Add a user to the chat.| 
 |[Get chat member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a single user in the chat.| 
@@ -35,7 +36,6 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[Mark chat as unread](../api/chat-markchatunreadforuser.md) |None| Mark chat as unread for a user.|
 |[Hide chat](../api/chat-hideforuser.md)|None|Hide a chat for a user.|
 |[Unhide chat](../api/chat-unhideforuser.md)|None|Unhide a chat for a user.|
-|[Delete chat](../api/chat-delete.md)|None|Delete a chat.|
 | **Messages** |||
 |[List messages in chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a chat. | 
 |[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. | 

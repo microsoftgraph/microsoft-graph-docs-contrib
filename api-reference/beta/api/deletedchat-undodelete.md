@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a  [deletedChat](../resources/deletedchat.md). The deletedChat is restored as [chat](../resources/chat.md).
+Restore a  [deletedChat](../resources/deletedchat.md) to an active [chat](../resources/chat.md).
 
->**Note:** This operation is not supported for non-admin-users.
+>**Note:** This operation is not supported for non-admin users.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -64,7 +64,6 @@ POST https://graph.microsoft.com/beta/teamwork/deletedChats/19:64dedcac16b74a209
 
 ### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

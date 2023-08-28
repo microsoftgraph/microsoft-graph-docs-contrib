@@ -17561,6 +17561,8 @@ items:
                     href: api/chat-get.md
                   - name: Update chat
                     href: api/chat-patch.md
+                  - name: Delete
+                    href: api/chat-delete.md
                   - name: List members
                     href: api/chat-list-members.md
                   - name: Add member
@@ -17603,8 +17605,6 @@ items:
                     href: api/chatmessage-setreaction.md
                   - name: Unset message reaction
                     href: api/chatmessage-unsetreaction.md
-                  - name: Delete
-                    href: api/chat-delete.md
               - name: Chat message
                 href: resources/chatmessage.md
                 items:
@@ -17660,7 +17660,7 @@ items:
                 items:
                   - name: Get
                     href: api/deletedchat-get.md
-                  - name: Undodelete
+                  - name: Undo delete
                     href: api/deletedchat-undodelete.md
               - name: Team
                 href: resources/team.md

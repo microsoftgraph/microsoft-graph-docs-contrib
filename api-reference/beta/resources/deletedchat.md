@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a deleted [chat](../resources/chat.md) in Microsoft Teams.
+Represents a [chat](../resources/chat.md) that was deleted in Microsoft Teams.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -21,7 +21,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get deleted chat](../api/deletedchat-get.md)|[deletedChat](../resources/deletedchat.md)|Read the properties and relationships of a [deletedChat](../resources/deletedchat.md) object.|
-|[Restore deleted chat](../api/deletedchat-undodelete.md)|None|Restore a deleted chat as a [chat](../resources/chat.md).|
+|[undoDelete deleted chat](../api/deletedchat-undodelete.md)|None|Restore a deleted chat as a [chat](../resources/chat.md).|
 
 ## Properties
 |Property|Type|Description|
