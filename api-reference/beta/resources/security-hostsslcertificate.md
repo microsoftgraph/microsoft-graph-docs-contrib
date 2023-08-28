@@ -31,7 +31,7 @@ Inherits from [artifact](../resources/security-artifact.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |firstSeenDateTime|DateTimeOffset|The first date and time that this **hostSslCertificate** was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|id|String|The system-generated ID for this **hostSslCertificate**. Inherited from [microsoft.graph.security.artifact](../resources/security-artifact.md).|
+|id|String|The system-generated ID for this **hostSslCertificate**. Inherited from [artifact](../resources/security-artifact.md).|
 |lastSeenDateTime|DateTimeOffset|The most recent date and time that this **hostSslCertificate** was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |ports|[microsoft.graph.security.hostSslCertificatePort](../resources/security-hostsslcertificateport.md) collection|The ports related with this **hostSslCertificate**.|
 
