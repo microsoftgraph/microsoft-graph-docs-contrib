@@ -23,8 +23,8 @@ Inherits from [microsoft.graph.security.artifact](../resources/security-artifact
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List sslCertificates](../api/security-sslcertificate-list.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) collection|Get a list of the [microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) objects and their properties.|
-|[Get sslCertificate](../api/security-sslcertificate-get.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md)|Read the properties and relationships of a [microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) object.|
+|[List sslCertificates](../api/security-sslcertificate-list.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) collection|Get a list of the [sslCertificate](../resources/security-sslcertificate.md) objects and their properties.|
+|[Get sslCertificate](../api/security-sslcertificate-get.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md)|Read the properties and relationships of an [sslCertificate](../resources/security-sslcertificate.md) object.|
 
 ## Properties
 
