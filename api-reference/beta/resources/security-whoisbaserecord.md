@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents a WHOIS entry that communicates a registered [host](../resources/security-host.md), the contacts for the registered **host**, and other metadata about the registration. This is an abstract type that can't be accessed directly. You can use the following implementation types instead:
+Represents a WHOIS entry that contains information about a registered [host](../resources/security-host.md), the contacts for the registered **host**, and other metadata about the registration. This is an abstract type that can't be accessed directly. You can use the following implementation types instead:
 
 - [whoisHistoryRecord](./security-whoishistoryrecord.md) 
 - [whoisRecord](./security-whoisrecord.md) 

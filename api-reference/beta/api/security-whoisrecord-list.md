@@ -17,7 +17,7 @@ Namespace: microsoft.graph.security
 
 Get a list of [whoisRecord](../resources/security-whoisrecord.md) objects.
 
-> **Note:** This API requires the usage of `$search` in the request URL.
+> **Note:** You must include the `$search` query parameter in the request URL for this API.
 
 ## Permissions
 
@@ -106,7 +106,7 @@ The following is an example of a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/whoisRecords?$search="admin/address/state:WA"
+GET https://graph.microsoft.com/beta/security/threatIntelligence/whoisRecords?$search="admin/address/state:WA&$orderby=registrationDateTime desc"
 ```
 
 ### Response

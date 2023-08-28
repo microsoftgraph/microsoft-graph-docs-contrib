@@ -1,6 +1,6 @@
 ---
 title: "whoisRecord resource type"
-description: "Represents a WHOIS record that communicates a registered host, the contacts for the registered host, and other metadata about the registration."
+description: "Represents a WHOIS record that contains information about a registered host, the contacts for the registered host, and other metadata about the registration."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents a WHOIS record that communicates a registered [host](../resources/security-host.md), the contacts for the registered **host**, and other metadata about the registration.
+Represents a WHOIS record that contains information about a registered [host](../resources/security-host.md), the contacts for the registered **host**, and other metadata about the registration.
 
 Inherits from [whoisBaseRecord](../resources/security-whoisbaserecord.md).
 
