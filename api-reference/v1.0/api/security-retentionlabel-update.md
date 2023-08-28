@@ -91,6 +91,14 @@ Content-length: 555
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+{
+  "@odata.type": "#microsoft.graph.security.retentionLabel",
+  "retentionDuration": {
+    "@odata.type": "microsoft.graph.security.retentionDuration",
+    "days": 2555
+    },
+  }
 ```
 
