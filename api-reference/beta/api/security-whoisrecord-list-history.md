@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get a list of [microsoft.graph.security.whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects for a [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md), including the properties and relationships of each [microsoft.graph.security.whoisHistoryRecord](../resources/security-whoishistoryrecord.md) object.
+Get a list of [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects for a [whoisRecord](../resources/security-whoisrecord.md), including the properties and relationships of each [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) object.
 
 ## Permissions
 
