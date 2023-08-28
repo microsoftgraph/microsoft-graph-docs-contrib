@@ -4,19 +4,19 @@
       "ChangeList": [
         {
           "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "sslCertificates",
           "ChangeType": "Addition",
-          "Description": "Added the **sslCertificates** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
-          "Target": "threatIntelligence"
+          "Description": "Added the **sslCertificates** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
+          "Target": "host"
         },
         {
           "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
           "ApiChange": "Relationship",
           "ChangedApiName": "sslCertificates",
           "ChangeType": "Addition",
-          "Description": "Added the **sslCertificates** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
-          "Target": "host"
+          "Description": "Added the **sslCertificates** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligence"
         },
         {
           "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
