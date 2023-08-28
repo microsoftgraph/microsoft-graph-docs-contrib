@@ -1,6 +1,6 @@
 ---
 title: "Get sslCertificate"
-description: "Read the properties and relationships of an sslCertificate object."
+description: "Get the properties and relationships of an sslCertificate object."
 author: "nblankenau"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Read the properties and relationships of an [sslCertificate](../resources/security-sslcertificate.md) object.
+Get the properties and relationships of an [sslCertificate](../resources/security-sslcertificate.md) object.
 
 ## Permissions
 
