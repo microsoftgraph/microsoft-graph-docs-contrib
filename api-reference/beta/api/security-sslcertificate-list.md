@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get a list of [microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) objects and their properties.
+Get a list of [sslCertificate](../resources/security-sslcertificate.md) objects and their properties.
 
 ## Permissions
 
