@@ -68,7 +68,7 @@ None.
 |passiveDnsRecords|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) collection|Retrieve details about [passiveDnsRecord](../resources/security-passivednsrecord.md) objects.<br/>**Note**: List retrieval is not yet supported.|
 | sslCertificates   | [microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) collection | |         
 |subdomains|[microsoft.graph.security.subdomain](../resources/security-subdomain.md) collection|Retrieve details about the [subdomain](../resources/security-subdomain.md).<br/>**Note**: List retrieval is not yet supported.|
-|vulnerabilities|[microsoft.graph.security.vulnerability](../resources/security-vulnerability.md) collection|Retrieve details about [vulnerabilities](../resources/security-vulnerability.md).<br/>**Note**: List retrieval is not yet supported.|                                                                       |
+|vulnerabilities|[microsoft.graph.security.vulnerability](../resources/security-vulnerability.md) collection|Retrieve details about [vulnerabilities](../resources/security-vulnerability.md).<br/>**Note**: List retrieval is not yet supported.                                                                       |
 
 ## JSON representation
 
