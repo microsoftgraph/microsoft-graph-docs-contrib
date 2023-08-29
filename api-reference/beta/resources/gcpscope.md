@@ -1,5 +1,5 @@
 ---
-title: "ticketInfo resource type"
+title: "gcpScope resource type"
 description: "**TODO: Add Description**"
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.
 doc_type: resourcePageType
 ---
 
-# ticketInfo resource type
+# gcpScope resource type
 
 Namespace: microsoft.graph
 
@@ -18,28 +18,24 @@ Namespace: microsoft.graph
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ticketApproverIdentityId|String|**TODO: Add Description**|
-|ticketNumber|String|**TODO: Add Description**|
-|ticketSubmitterIdentityId|String|**TODO: Add Description**|
-|ticketSystem|String|**TODO: Add Description**|
+|resourceType|String|**TODO: Add Description**|
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|**TODO: Add Description**|
 
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.ticketInfo"
+  "@odata.type": "microsoft.graph.gcpScope"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.ticketInfo",
-  "ticketNumber": "String",
-  "ticketSystem": "String",
-  "ticketSubmitterIdentityId": "String",
-  "ticketApproverIdentityId": "String"
+  "@odata.type": "#microsoft.graph.gcpScope",
+  "resourceType": "String"
 }
 ```
 

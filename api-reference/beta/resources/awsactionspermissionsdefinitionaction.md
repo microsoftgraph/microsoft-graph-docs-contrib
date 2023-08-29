@@ -1,5 +1,5 @@
 ---
-title: "ticketInfo resource type"
+title: "awsActionsPermissionsDefinitionAction resource type"
 description: "**TODO: Add Description**"
 author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.
 doc_type: resourcePageType
 ---
 
-# ticketInfo resource type
+# awsActionsPermissionsDefinitionAction resource type
 
 Namespace: microsoft.graph
 
@@ -15,31 +15,30 @@ Namespace: microsoft.graph
 
 **TODO: Add Description**
 
+
+Inherits from [awsPermissionsDefinitionAction](../resources/awspermissionsdefinitionaction.md).
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|ticketApproverIdentityId|String|**TODO: Add Description**|
-|ticketNumber|String|**TODO: Add Description**|
-|ticketSubmitterIdentityId|String|**TODO: Add Description**|
-|ticketSystem|String|**TODO: Add Description**|
+|assignToRoleId|String|**TODO: Add Description**|
 
 ## Relationships
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|statements|[awsStatement](../resources/awsstatement.md) collection|**TODO: Add Description**|
 
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.ticketInfo"
+  "@odata.type": "microsoft.graph.awsActionsPermissionsDefinitionAction"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.ticketInfo",
-  "ticketNumber": "String",
-  "ticketSystem": "String",
-  "ticketSubmitterIdentityId": "String",
-  "ticketApproverIdentityId": "String"
+  "@odata.type": "#microsoft.graph.awsActionsPermissionsDefinitionAction",
+  "assignToRoleId": "String"
 }
 ```
 
