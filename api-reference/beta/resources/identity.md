@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 title: "identity resource type"
 description: "Represents an identity of an actor."
 ms.localizationpriority: medium

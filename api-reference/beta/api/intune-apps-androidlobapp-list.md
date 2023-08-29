@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1931
+Content-Length: 1987
 
 {
   "value": [
@@ -118,7 +118,8 @@ Content-Length: 1931
       },
       "versionName": "Version Name value",
       "versionCode": "Version Code value",
-      "identityVersion": "Identity Version value"
+      "identityVersion": "Identity Version value",
+      "targetedPlatforms": "androidOpenSourceProject"
     }
   ]
 }
