@@ -65,6 +65,8 @@ Content-Type: application/json
 }
 ```
 
+> **Note:** The `/organization/{organizationId}/settings` path is deprecated in the beta experience. Going forward, use the `/admin/people` path.
+
 If successful, the response returns a `201 OK` response code and a **profileCardProperty** object in the response body. The value for the `Alias` attribute would be displayed on a user's profile card.
 
 ``` http
@@ -131,7 +133,7 @@ Content-Type: application/json
 }
 ```
 
-> **Note:** The `/organization/{organizationId}/settings` path is deprecated. Going forward, use the `/admin/people` path.
+> **Note:** The `/organization/{organizationId}/settings` path is deprecated in the beta experience. Going forward, use the `/admin/people` path.
 
 If a language is not supported, the property name will be shown with the default value.
 
@@ -172,6 +174,8 @@ The following example deletes the custom attribute `customAttribute5` from the o
 ``` http
 DELETE https://graph.microsoft.com/v1.0/admin/people/profileCardProperties/customAttribute5
 ```
+
+> **Note:** The `/organization/{organizationId}/settings` path is deprecated in the beta experience. Going forward, use the `/admin/people` path.
 
 #### Response
 
