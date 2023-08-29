@@ -9,7 +9,7 @@ doc_type: "resourcePageType"
 
 # profileCardAnnotation resource type
 
-Used to set a custom display name for fields that surface in a shared Microsoft 365 people experience. An administrator can define a default display name String and a set of alternative translations for the languages supported in their organization.
+Allows an administrator to customize the appearance of selected fields in a Microsoft 365 profile card. The administrator can define a default display name String and a set of alternative translations for the languages supported in their organization.
 
 ## Properties
 
