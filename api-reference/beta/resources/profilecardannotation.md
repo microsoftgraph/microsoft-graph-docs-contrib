@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used to set a custom display name for fields that surface in a shared Microsoft 365 people experieence. An administrator can define a default display name string and a set of alternative translations for the languages that they support in their organization.
+Used to set a custom display name for fields that surface in a shared Microsoft 365 people experience. An administrator can define a default display name String and a set of alternative translations for the languages supported in their organization.
 
 ## Properties
 
@@ -36,12 +36,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "displayName": "String",
-  "localizations": [
-    {
-      "displayName": "String",
-      "languageTag": "String"
-    }
-  ]
+  "localizations": [{ "@odata.type": "microsoft.graph.displayNameLocalization" }]
 }
 ```
 
