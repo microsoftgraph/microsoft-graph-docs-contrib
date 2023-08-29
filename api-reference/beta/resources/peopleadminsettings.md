@@ -1,6 +1,6 @@
 ---
 title: "peopleAdminSettings resource type"
-description: "Represents a setting to control people-related admin settings in the tenant"
+description: "Represents a setting to control people-related admin settings in the tenant."
 author: "rwaithera"
 ms.localizationpriority: medium
 ms.prod: "people"
