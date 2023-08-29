@@ -12,8 +12,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Create a new [authenticationEventListener](../resources/authenticationeventlistener.md) object. You can create one of the following subtypes that are derived from **authenticationEventListener**.
 
 - [onTokenIssuanceStartListener resource type](../resources/ontokenissuancestartlistener.md)
@@ -21,6 +19,8 @@ Create a new [authenticationEventListener](../resources/authenticationeventliste
 - [onAuthenticationMethodLoadStartListener resource type](../resources/onauthenticationmethodloadstartlistener.md)
 - [onAttributeCollectionListener resource type](../resources/onattributecollectionlistener.md)
 - [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md)
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Retrieve the properties and relationships of an [identityProvider](../resources/identityprovider.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

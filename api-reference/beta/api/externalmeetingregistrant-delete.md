@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 The meeting organizer removes an [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) from an online meeting which has [externalMeetingRegistration](../resources/externalmeetingregistration.md) enabled.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

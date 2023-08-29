@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 Create a role assignment request to represent the operation you want on a role assignment. The following table lists the operations.
 
 | Operation                                   | Type        |
@@ -29,6 +27,8 @@ Create a role assignment request to represent the operation you want on a role a
 | Extend a role assignment                    | AdminExtend |
 | Request to renew my expired role assignment | UserRenew   |
 | Renew an expired role assignment            | AdminRenew  |
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

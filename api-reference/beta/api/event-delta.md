@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Get a set of [event](../resources/event.md) resources that have been added, deleted, or updated in one or more calendars. 
 
 You can get specific types of these incremental changes in the events in all the calendars of a mailbox or in a specific calendar, or in an event collection of a **calendarView** (range of events defined by start and end dates) of a calendar. The calendar can be the default calendar or some other specified calendar of the user's. In the case of getting incremental changes on **calendarView**, the calendar can be a group calendar as well.
@@ -30,6 +28,8 @@ The following table lists the differences between the **delta** function on even
 | Response includes single instances and recurring series master. | Response includes single instances, and occurrences and exceptions of recurring series. |
 | Applies to events in user calendars but not group calendars. | Applies to events in user and group calendars. |
 | Currently available only in the beta version. | Available in the v1.0 and beta versions. |
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

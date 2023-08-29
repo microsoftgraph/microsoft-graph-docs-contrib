@@ -12,13 +12,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Get a collection of identity provider resources that are configured for a tenant, and that are derived from [identityProviderBase](../resources/identityproviderbase.md).
 
 For an Azure AD tenant, the providers can be [socialIdentityProviders](../resources/socialidentityprovider.md) or [builtinIdentityProviders](../resources/builtinidentityprovider.md) objects.
 
 For an Azure AD B2C, the providers can be [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) objects.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

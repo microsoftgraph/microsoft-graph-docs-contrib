@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Retrieve the simple directory **user** that corresponds to this **educationUser**.
 
 > [!NOTE]
 > If the delegated token is used, members can only see information about their own account. Use the `beta/education/me/users` resource in this case.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

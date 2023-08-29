@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 This action allows the organizer or attendee of a meeting [event](../resources/event.md) to forward the 
 meeting request to a new recipient. 
 
@@ -22,6 +20,8 @@ If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to an
 also sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's 
 copy of the meeting event. This convenience is not available when forwarding from an Outlook.com account.
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

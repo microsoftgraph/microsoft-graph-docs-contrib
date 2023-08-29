@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Update an [educationModule](../resources/educationmodule.md) object in a [class](../resources/educationclass.md).
 
 Only teachers in the class can perform this operation. Note that you can't use a PATCH request to change the status of a module. Use the [publish](../api/educationmodule-publish.md) action to change the module status.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

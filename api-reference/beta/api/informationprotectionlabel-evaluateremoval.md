@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 [!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
 Indicate to the consuming application what actions it should take to remove the label information.
@@ -27,6 +25,8 @@ Given [contentInfo](../resources/contentinfo.md) as an input, which includes exi
 * [removeContentHeaderAction](../resources/removecontentheaderaction.md)
 * [removeProtectionAction](../resources/removeprotectionaction.md)
 * [removeWatermarkAction](../resources/removewatermarkaction.md)
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

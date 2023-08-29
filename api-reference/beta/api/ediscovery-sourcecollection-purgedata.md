@@ -13,8 +13,6 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Permanently delete Microsoft Teams messages contained in a [sourceCollection](../resources//ediscovery-sourcecollection.md).
 
 >**Note:** This request purges Teams data only. It does not purge other types of data such as mailbox items.
@@ -29,6 +27,8 @@ You can collect and purge the following categories of Teams content:
 For more information about purging Teams messages, see:
 - [eDiscovery solution series: Data spillage scenario - Search and purge](/microsoft-365/compliance/data-spillage-scenariosearch-and-purge)
 - [Advanced eDiscovery workflow for content in Microsoft Teams](/microsoft-365/compliance/teams-workflow-in-advanced-ediscovery) 
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

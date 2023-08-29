@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [feature-rolloutpolicy-deprecate](../../includes/directory-featurerolloutpolicies-deprecate.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of [featureRolloutPolicy](../resources/featurerolloutpolicy.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

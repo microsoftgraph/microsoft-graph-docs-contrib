@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Retrieve a list of [threatAssessmentRequest](../resources/threatassessmentrequest.md) objects.
 
 A threat assessment request can be one of the following types:
@@ -23,6 +21,8 @@ A threat assessment request can be one of the following types:
 * [Email file](../resources/emailFileAssessmentRequest.md)
 * [File](../resources/fileAssessmentRequest.md)
 * [URL](../resources/urlAssessmentRequest.md)
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

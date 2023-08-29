@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Retrieve a list of [educationOutcome](../resources/educationoutcome.md) objects.  There are four types of outcomes: **educationPointsOutcome**, **educationFeedbackOutcome**, **educationRubricOutcome**, and **educationFeedbackResourceOutcome**. Only teachers, students, and applications with application permissions can perform this operation.
 
 A submission for a credit assignment (one that has no point value and no rubric) will have an [educationFeedbackOutcome](../resources/educationpointsoutcome.md). (It might also return an [educationPointsOutcome](../resources/educationpointsoutcome.md), but that outcome is ignored.)
@@ -28,6 +26,8 @@ A submission for an assignment with an attached rubric, if the rubric is a point
 A submission for a feedback resource will have an [educationFeedbackResourceOutcome](../resources/educationfeedbackresourceoutcome.md).
 
 All outcome types have a regular and a published property appropriate to that type of outcome; for example, **points** and **publishedPoints**, **feedback** and **publishedFeedback**. The regular property is the most recent value updated by the teacher; the published property is the most recent value returned to the student.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

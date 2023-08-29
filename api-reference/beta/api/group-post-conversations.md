@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Create a new [conversation](../resources/conversation.md) by including a thread and a post.
 
 Use [reply thread](conversationthread-reply.md) or [reply post](post-reply.md) to further post to that conversation.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

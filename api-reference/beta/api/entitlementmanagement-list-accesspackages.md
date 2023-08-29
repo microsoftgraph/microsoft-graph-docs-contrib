@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
-
 Retrieve a list of [accessPackage](../resources/accesspackage.md) objects.  The resulting list includes all the access packages that the caller has access to read, across all catalogs.
+
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 

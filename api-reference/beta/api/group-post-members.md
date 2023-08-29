@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Add a member to a security or Microsoft 365 group through the **members** navigation property.
 
 [!INCLUDE [groups-allowed-member-types](../../../concepts/includes/groups-allowed-member-types.md)]
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Activate an `inactive` [educationAssignment](../resources/educationassignment.md) to signal that the assignment has further action items for teachers and students. This action can only be performed by a teacher on currently inactive assignments.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

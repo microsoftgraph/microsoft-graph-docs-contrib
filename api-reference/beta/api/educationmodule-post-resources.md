@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Create a [resource](../resources/educationmoduleresource.md) in a [module](../resources/educationmodule.md). Only teachers can perform this operation.
 
 You can create the following types of module resources:
@@ -32,6 +30,8 @@ Every resource has an **@odata.type** property to indicate which type of resourc
 
 > [!IMPORTANT] 
 > To upload a module resource, you need to first [set up the resources folder](../api/educationmodule-setupresourcesfolder.md) for the [educationModule](../resources/educationmodule.md) where the files will be uploaded.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

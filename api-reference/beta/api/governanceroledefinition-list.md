@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [pim-v2ResourceRoles-deprecation](../../includes/pim-v2ResourceRoles-deprecation.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 Get a collection of [governanceRoleDefinitions](../resources/governanceroledefinition.md) on a resource.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

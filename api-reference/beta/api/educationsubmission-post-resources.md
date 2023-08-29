@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Add a [educationSubmissionResource](../resources/educationsubmissionresource.md) to a submission resource list.
 
 Only teachers and students can perform this operation.
@@ -25,6 +23,8 @@ To create a new file-based resource, upload the file to the resources folder ass
 
 > [!IMPORTANT] 
 > Before you can upload an assignment resource, you must [set up the resources folder](../api/educationassignment-setupresourcesfolder.md) for the [educationAssignment](../resources/educationassignment.md) to upload the files to.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

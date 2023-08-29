@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Get the properties and relationships of the specified [event](../resources/event.md) object.
 
 An app can get an event in another user's calendar if:
@@ -24,6 +22,8 @@ An app can get an event in another user's calendar if:
 
 Because the **event** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ### Support various time zones
 

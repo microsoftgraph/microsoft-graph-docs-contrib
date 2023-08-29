@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Get the properties and relationships of an [assignment](../resources/educationassignment.md). Only teachers, students, and applications with application permissions can perform this operation.
 
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 
 You can use the `Prefer` header in your request to get the `inactive` status in case the assignment is deactivated; otherwise, you will get an `unknownFutureValue` value in the response.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

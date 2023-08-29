@@ -13,9 +13,9 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Delete a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object. A custom task extension  can only be deleted if it is not referenced in any task objects in a lifecycle workflow.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

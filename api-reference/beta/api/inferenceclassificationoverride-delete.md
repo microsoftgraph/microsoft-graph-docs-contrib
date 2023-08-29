@@ -13,9 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Delete a [focused Inbox](../resources/manage-focused-inbox.md) override specified by its ID.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-Delete a [focused Inbox](../resources/manage-focused-inbox.md) override specified by its ID.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

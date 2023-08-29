@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 [!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
 Using [classification results](../resources/classificationresult.md), compute the [information protection label](../resources/informationprotectionlabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service.
@@ -36,6 +34,8 @@ To evaluate based on classification results, provide [contentInfo](../resources/
 * [removeContentHeaderAction](../resources/removecontentheaderaction.md)
 * [removeProtectionAction](../resources/removeprotectionaction.md)
 * [removeWatermarkAction](../resources/removewatermarkaction.md)
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
