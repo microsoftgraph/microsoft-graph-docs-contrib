@@ -3445,6 +3445,48 @@
           "CreatedDateTime": "2023-07-31T09:00:37.9148169Z",
           "WorkloadArea": "Device and app management",
           "SubArea": "Cloud PC"
-        }
+        },
+        {
+        "ChangeList": [
+            {
+                "Id": "cc0c0a79-a691-485d-b47c-8b0ee543ae6c",
+                "ApiChange": "Method",
+                "ChangedApiName": "getShiftWorkCloudPcAccessState",
+                "ChangeType": "Deprecation",
+                "Description": "Deprecated the `getShiftWorkCloudPcAccessState` method.",
+                "Target": "cloud PC"
+            },
+            {
+                "Id": "cc0c0a79-a691-485d-b47c-8b0ee543ae6c",
+                "ApiChange": "Method",
+                "ChangedApiName": "getFrontlineCloudPcAccessState",
+                "ChangeType": "Addition",
+                "Description": "Added the `getFrontlineCloudPcAccessState` member.",
+                "Target": "cloud PC"
+            },
+			{
+                "Id": "cc0c0a79-a691-485d-b47c-8b0ee543ae6c",
+                "ApiChange": "Enumeration",
+                "ChangedApiName": "shiftWorkCloudPcAccessState",
+                "ChangeType": "Deprecation",
+                "Description": "Deprecated the **shiftWorkCloudPcAccessState** enumeration type.",
+                "Target": "cloud PC"
+            },
+			{
+                "Id": "cc0c0a79-a691-485d-b47c-8b0ee543ae6c",
+                "ApiChange": "Enumeration",
+                "ChangedApiName": "frontlineCloudPcAccessState",
+                "ChangeType": "Addition",
+                "Description": "Added the **frontlineCloudPcAccessState** enumeration type.",
+                "Target": "cloud PC"
+            },
+        ],
+        "Id": "cc0c0a79-a691-485d-b47c-8b0ee543ae6c",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-08-29T07:34:41.3424906Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      }
     ]
 }
