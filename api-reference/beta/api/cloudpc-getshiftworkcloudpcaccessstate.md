@@ -1,5 +1,5 @@
 ---
-title: "cloudPC: getShiftWorkCloudPcAccessState"
+title: "cloudPC: getShiftWorkCloudPcAccessState" (deprecated)
 description: "Get the access state of a shift work Cloud PC. Callers can get the latest shift work Cloud PC accessState and determine if the shift work Cloud PC is accessible to the user."
 author: "ningjingbogithub"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# cloudPC: getShiftWorkCloudPcAccessState
+# cloudPC: getShiftWorkCloudPcAccessState (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -36,6 +36,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /me/cloudPCs/{cloudPCId}/getShiftWorkCloudPcAccessState
 ```
+> **Note:** The `getShiftWorkCloudPcAccessState` API is deprecated. Going forward, use the `getFrontlineCloudPcAccessState` API.
 
 ## Request headers
 |Name|Description|
