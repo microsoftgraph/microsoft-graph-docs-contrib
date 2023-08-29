@@ -20,8 +20,8 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get deleted chat](../api/deletedchat-get.md)|[deletedChat](../resources/deletedchat.md)|Read the properties and relationships of a [deletedChat](../resources/deletedchat.md) object.|
-|[undoDelete deleted chat](../api/deletedchat-undodelete.md)|None|Restore a deleted chat as a [chat](../resources/chat.md).|
+|[Get deletedChat](../api/deletedchat-get.md)|[deletedChat](../resources/deletedchat.md)|Read the properties and relationships of a [deletedChat](../resources/deletedchat.md) object.|
+|[undoDelete deletedChat](../api/deletedchat-undodelete.md)|None|Restore a deleted chat as a [chat](../resources/chat.md).|
 
 ## Properties
 |Property|Type|Description|
