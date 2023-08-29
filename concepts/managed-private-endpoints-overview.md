@@ -18,7 +18,7 @@ The following steps outline how to enable Azure V-net Integration Runtime (IR) t
 
 Proceed with the following steps to enable Azure V-net Integration Runtime (IR) to manage private endpoints in Data Connect:
 
-Step 1. Ensure that you've created a Synapse workspace and sign in to the Azure portal to configure an existing storage as part of the process, as shown in the following image:
+Step 1. Ensure that you've created a Synapse workspace, then sign in to the Azure portal to configure an existing storage as part of the process, as shown in the following image:
 
 ![Screenshot with the Basics tab highlighted, showing the first step to create a Synapse workspace.](images/create-synapse-workspace.png)
 
@@ -40,11 +40,11 @@ Step 3. Open the Synapse workspace. Browse to **Manage** > **Managed private end
 
 ![Screenshot showing how to create and name a new managed private endpoint.](images/create-new-managed-private-endpoint.png)
 
-- Note that the initial state will be provisioning of a private IP address from within the Managed Virtual Network, as show in the following image:
+- Note that the initial state will be provisioning of a private IP address from within the Managed Virtual Network, as shown in the following image:
 
 ![Screenshot showing the provisioning state of a new managed private endpoint.](images/managed-private-endpoint-provisioning-state.png)
 
-- After the endpoint is successfully provisioned, the approval state is **Pending**. Continue to Step 4 using the created name—rather than the name previously auto-generated in step 3, as shown in the following image:
+- After the endpoint is successfully provisioned, the approval state is **Pending**. Continue to Step 4 using the created name—rather than the name previously automatically generated in step 3, as shown in the following image:
 
 ![Screenshot showing the provisioning state of a new managed private endpoint.](images/managed-private-endpoint-approval-state-pending.png)
 
@@ -66,7 +66,7 @@ Step 5. In the storage account **Networking blade**, go to **Firewalls and virtu
 
 ![Screenshot showing the Firewalls and virtual networks tab highlighted, and configuration settings for public network access, firewall, and network rule exceptions.](images/firewalls-and-virtual-networks-configuration-settings.png)
 
-Step 6. Return to the previous Synapse workspace, and wait for the managed private endpoint to switch to **Approved**:
+Step 6. Return to the previous Synapse workspace and wait for the managed private endpoint to switch to **Approved**:
 
 ![Screenshot with the approved state of a managed private endpoint in a Synapse workspace, highlighted.](images/synapse-workspace-private-endpoint-approved-state.png)
 
