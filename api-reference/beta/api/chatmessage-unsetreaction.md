@@ -1,6 +1,6 @@
 ---
 title: "chatMessage: unsetReaction"
-description: "Unset areaction to a single message or message reply in a channel or a chat."
+description: "Unset a reaction to a single message or message reply in a channel or a chat."
 author: "sumanac"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account)| ChannelMessage.Send,  |
+|Delegated (work or school account)| ChannelMessage.Send  |
 |Delegated (personal Microsoft account)| Not supported. |
 |Application| Not supported. |
 
