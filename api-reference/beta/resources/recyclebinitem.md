@@ -1,53 +1,54 @@
 ---
-author: vanshisingh
-ms.date: 04/08/2023
-title: recycleBinItem resource type
-description: "RecycleBin Item Resource Type"
+author: "vanshisingh"
+title: "recycleBinItem resource type"
+description: "Provides information about a deleted item in a recycleBin."
 ms.localizationpriority: "medium"
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # recycleBinItem resource type
 
-The recycleBinItem resource provides information about a deleted item in the recycleBin.
+Provides information about a deleted item in a [recycleBin](recyclebin.md).
+
+## Methods
+
+| Method                                                  | Return Type                                                 | Description                                                                                                   |
+|:--------------------------------------------------------|:------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------|
+| [List recycleBinItems](../api/recyclebin-list-items.md) | [recycleBinItem](../resources/recyclebinitem.md) collection | Get a list of [recycleBinItems](../resources/recyclebinitem.md) under the specified site or storageContainer. |
 
 ## Properties
 
-| Property            | Type           | Description
-|:------------------- |:-------------- |:-----------------------------------------------
-| id                  | string         | Identifier of the delete transaction.
-| name                | string         | Name of the item.
-| deletedFromLocation | string         | Web site relative URL of the list or folder that originally contained the item.
-| size                | int64          | Size of the item in bytes.
-| deletedDateTime     | dateTimeOffset | Date and time of the item deletion.
+| Property            | Type           | Description                                                                                                                                                                                                           |
+|:--------------------|:---------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| deletedDateTime     | DateTimeOffset | Date and time when the item was deleted. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+| deletedFromLocation | String         | Website relative URL of the list or folder that originally contained the item.                                                                                                                                        |
+| id                  | String         | Unique identifier of the delete transaction.                                                                                                                                                                          |
+| name                | String         | Name of the item.                                                                                                                                                                                                     |
+| size                | Int64          | Size of the item in bytes.                                                                                                                                                                                            |
+
 
 ## JSON Representation
 
-Here is a JSON representation of a **microsoft.graph.recycleBinItem** resource.
+The following is a JSON representation of the resource.
 
 <!-- {
-"blockType": "resource",
-"keyProperty": "id",
-"baseType": "microsoft.graph.baseItem",
-"@odata.type": "microsoft.graph.recycleBinItem",
-"optionalProperties": []
+  "blockType": "resource",
+  "keyProperty": "id",
+  "baseType": "microsoft.graph.baseItem",
+  "@odata.type": "microsoft.graph.recycleBinItem",
+  "optionalProperties": []
 }-->
 
 ```json
 {
-  "id": "string",
-  "name": "string",
-  "deletedFromLocation": "string",
-  "size": 1024,
-  "deletedDateTime": "string (timestamp)"
+  "deletedDateTime": "String (timestamp)"
+  "deletedFromLocation": "String",
+  "id": "String (identifier)",
+  "name": "String",
+  "size": "Int64"
 }
 ```
-
-## Methods
-
-| Method                         | Example Request
-|:-------------------------------|:--------------------------------------------
-| [List recycleBin items](../api/recyclebin-list-items.md)     | GET /recycleBin/items
 
 
 
