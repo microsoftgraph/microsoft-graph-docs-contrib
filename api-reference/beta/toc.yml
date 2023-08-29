@@ -15310,13 +15310,12 @@ items:
                     - name: Get
                       href: api/directoryaudit-get.md
                 - name: Custom security attributes audit
+                  href: resources/customsecurityattributeaudit.md
                   items:
-                  - name: Custom security attributes audit
-                    href: resources/customsecurityattributeaudit.md
-                  - name: List custom security attribute audits
-                    href: api/customsecurityattributeaudit-list.md
                   - name: Get custom security attribute audit
                     href: api/customsecurityattributeaudit-get.md
+                  - name: List custom security attribute audits
+                    href: api/customsecurityattributeaudit-list.md
                 - name: Sign-in
                   href: resources/signin.md
                   items:
