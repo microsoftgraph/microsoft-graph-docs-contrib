@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Provides information about a deleted item in a [recycleBin](recyclebin.md).
 
+Inherits from [baseItem](baseitem.md).
+
 ## Methods
 
 | Method                                                  | Return Type                                                 | Description                                                                                                   |
