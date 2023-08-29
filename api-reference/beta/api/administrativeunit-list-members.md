@@ -40,7 +40,7 @@ GET /administrativeUnits/{id}/members
 GET /administrativeUnits/{id}/members/$ref
 ```
 ## Optional query parameters
-This method (when used without `$ref`) supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the users that are a member of the administrative unit. 
+This method (when used without `$ref`) supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the users that are a member of the administrative unit.
 
 `$search` is supported on the **displayName** and **description** properties only. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
@@ -69,9 +69,9 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
- 
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -109,7 +109,7 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
 #### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
- 
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -126,4 +126,10 @@ Content-type: application/json
 }
 ```
 
-
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api/administrativeunit-list-members.md:
+      Failed to parse enumeration values for type microsoft.graph.list. Table requires a column header named one of the following: Member, Name, Value"
+  ]
+} -->

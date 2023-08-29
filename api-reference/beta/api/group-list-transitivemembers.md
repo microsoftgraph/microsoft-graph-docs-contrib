@@ -442,16 +442,12 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!--
 {
   "type": "#page.annotation",
-  "description": "List transitive group members",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
   "suppressions": [
+    "Error: /api/group-list-transitivemembers.md:
+      Failed to parse enumeration values for type microsoft.graph.transitive. Table requires a column header named one of the following: Member, Name, Value"
   ]
 }
 -->
