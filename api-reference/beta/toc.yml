@@ -16312,7 +16312,7 @@ items:
                     href: resources/security-host.md
                   - name: Get
                     href: api/security-host-get.md
-                  - name: List children host pairs
+                  - name: List child host pairs
                     href: api/security-host-list-childhostpairs.md
                   - name: List host pairs
                     href: api/security-host-list-hostpairs.md
@@ -16356,7 +16356,7 @@ items:
                     href: api/security-host-list-hostpairs.md
                   - name: List parent host pairs
                     href: api/security-host-list-parenthostpairs.md
-                  - name: List children host pairs
+                  - name: List child host pairs
                     href: api/security-host-list-childhostpairs.md
               - name: Host tracker
                 items:
