@@ -1,6 +1,6 @@
 ---
 title: "peopleAdminSettings resource type"
-description: "Represents a setting to control people-related admin settings in the tenant"
+description: "Represents a setting to control people-related admin settings in the tenant."
 author: "rwaithera"
 ms.localizationpriority: medium
 ms.prod: "people"
@@ -38,6 +38,7 @@ Inherits from [entity](../resources/entity.md).
 ## JSON representation
 
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
