@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Make the scheduling page of a business available to external customers.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Set the **isPublished** property to `true`, and the **publicUrl** property to the URL of the scheduling page.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

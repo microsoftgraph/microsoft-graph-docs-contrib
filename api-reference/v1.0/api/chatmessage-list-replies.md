@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 List all the replies to a [message](../resources/chatmessage.md) in a [channel](../resources/channel.md) of a team.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 This method lists only the replies of the specified message, if any. To get the message itself, simply call [get channel message](chatmessage-get.md).
 
 > **Note**: This API supports subscribing to changes (create, update, and delete) using [change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatmessage).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

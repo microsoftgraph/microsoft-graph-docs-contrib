@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 Records a short audio response from the caller.
 A bot can utilize this to capture a voice response from a caller after they are prompted for a response.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 For further information on how to handle operations, please review [commsOperation](../resources/commsOperation.md)
 
 >**Note:** This is only supported for [calls](../resources/call.md) which are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
@@ -23,6 +21,8 @@ For further information on how to handle operations, please review [commsOperati
 This action is not intended to record the entire call. The maximum length of recording is 2 minutes. The recording is not saved permanently by the Cloud Communications Platform and is discarded shortly after the call ends. The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
 
 >**Note:** Any media collected may **not** be persisted. Make sure you are compliant with the laws and regulations of your area when it comes to call recording. Please consult with a legal counsel for more information.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -14,12 +14,12 @@ Namespace: microsoft.graph
 Update the metadata for a [bundle][] of [driveItems][driveItem] by ID.
 You can only update the following metadata:
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 * Bundle name
 * Album `coverImageItemId` (if applicable)
 
 Any other change requests will be ignored.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

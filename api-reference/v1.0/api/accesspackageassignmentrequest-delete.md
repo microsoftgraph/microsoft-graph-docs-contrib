@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Delete an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 This request can be made to remove a denied or completed request.  You cannot delete an access package assignment request if it has any **accessPackageAssignment** objects.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

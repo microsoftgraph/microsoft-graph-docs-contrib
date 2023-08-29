@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 Retrieve a single [chat](../resources/chat.md) (without its messages).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 This method supports federation. To access a chat, at least one chat member must belong to the tenant the request initiated from.
 
 >**Note:** This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

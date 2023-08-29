@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Read the properties, relationships, or raw contents of an attachment that is attached to a user [event](../resources/event.md), [message](../resources/message.md), or group [post](../resources/post.md). 
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 An attachment can be one of the following types:
 
 * A file. Programmatically, this is a [fileAttachment](../resources/fileattachment.md) resource. See [example 1](#example-1-get-the-properties-of-a-file-attachment).
@@ -22,6 +20,8 @@ An attachment can be one of the following types:
 * A link to a file stored in the cloud. Programmatically, this is a [referenceAttachment](../resources/referenceattachment.md) resource. See [example 5](#example-5-get-the-properties-of-a-reference-attachment).
 
 All these types of attachments are derived from the [attachment](../resources/attachment.md) resource. 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ### Get the raw contents of a file or item attachment
 You can append the path segment `/$value` to get the raw contents of a file or item attachment. 

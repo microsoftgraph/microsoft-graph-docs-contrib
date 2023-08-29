@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 Remove a key credential from an [application](../resources/application.md). This method along with [addKey](application-addkey.md) can be used by an application to automate rolling its expiring keys.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 > [!NOTE]
 > [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) and
 [Update servicePrincipal](../api/serviceprincipal-update.md) operations can continue to be used to add and update key credentials for any application with application or a user's context.
 
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

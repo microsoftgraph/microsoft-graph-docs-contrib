@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 Delete an [accessPackage](../resources/accesspackage.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 You cannot delete an access package if it has any **accessPackageAssignment**.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

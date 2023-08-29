@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 List all [app installations](../resources/teamsappinstallation.md) within a [chat](../resources/chat.md).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 > **Note**:
 If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then, effectively, the **teamsApp**s installed in the meeting will be listed.
 > [!NOTE]
 > The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

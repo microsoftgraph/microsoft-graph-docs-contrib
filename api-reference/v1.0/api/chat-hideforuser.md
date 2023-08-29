@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 Hide a [chat](../resources/chat.md) for a user.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 > **Note:** A chat is automatically unhidden for a user if an action such as *Send message* is taken at the chat level.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -13,9 +13,9 @@ Namespace: microsoft.graph.callRecords
 
 Retrieve the list of [sessions](../resources/callrecords-session.md) associated with a [callRecord](../resources/callrecords-callrecord.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 If the sessions list is truncated, a `sessions@odata.nextLink` value will be provided to retrieve the next page of sessions. The maximum page size for sessions is 60 entries.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

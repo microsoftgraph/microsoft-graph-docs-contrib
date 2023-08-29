@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Complete the message migration process by removing `migration mode` from a [channel](../resources/channel.md) in a team. `Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 After a **completeMigration** request is made, you cannot import additional messages into the team. You can add members to the team after the request returns a successful response.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
