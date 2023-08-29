@@ -3479,7 +3479,7 @@
                 "ChangeType": "Addition",
                 "Description": "Added the **frontlineCloudPcAccessState** enumeration type.",
                 "Target": "cloud PC"
-            },
+            }
         ],
         "Id": "cc0c0a79-a691-485d-b47c-8b0ee543ae6c",
         "Cloud": "Prod",
