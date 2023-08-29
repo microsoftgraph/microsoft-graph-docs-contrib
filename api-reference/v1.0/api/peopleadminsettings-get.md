@@ -56,12 +56,10 @@ If successful, this method returns a `200 OK` response code and the requested [p
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_peopleadminsettings"
 }-->
-
 ```http
 GET https://graph.microsoft.com/v1.0/admin/people
 ```
