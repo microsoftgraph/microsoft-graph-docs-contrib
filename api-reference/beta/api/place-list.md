@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Get a collection of the specified type of [place](../resources/place.md) objects defined in the tenant. 
 
 You can do the following for a given tenant:
@@ -35,6 +33,8 @@ The **room**, **workspace** and **roomList** resources are derived from the **pl
 By default, this operation returns up to 100 places per page. 
 
 Compared with the [findRooms](../api/user-findrooms.md) and [findRoomLists](../api/user-findroomlists.md) functions, this operation returns a richer payload for rooms and room lists. For details about how they compare, see [Using the places API](../resources/place.md#using-the-places-api).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Get the properties and relationships of a [place](../resources/place.md) object specified by either its ID or email address. 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 The **place** object can be one of the following types:
 
 * A [room](../resources/room.md), which includes rich properties such as an email address for the room, and accessibility, capacity, and device support. 
@@ -23,6 +21,8 @@ The **place** object can be one of the following types:
 * A [room list](../resources/roomlist.md), which includes an email address for the room list, and a navigation property to get the collection of **room** instances in that room list.
 
 The **room**, **workspace**, and **roomList** resources are derived from the **place** object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

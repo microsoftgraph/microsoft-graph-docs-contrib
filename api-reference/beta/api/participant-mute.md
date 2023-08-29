@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Mute a specific participant in the call.
 
 This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
@@ -22,6 +20,8 @@ This is a server mute, meaning that the server will drop all audio packets for t
 For more information about how to handle mute operations, see [muteParticipantOperation](../resources/muteParticipantoperation.md).
 
 > **Note:** This method is only supported for group calls.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

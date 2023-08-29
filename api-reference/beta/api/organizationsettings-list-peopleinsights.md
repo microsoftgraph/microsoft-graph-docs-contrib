@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Get the properties of an [insightsSettings](../resources/insightssettings.md) object for displaying or returning people insights in an organization.
 
 To learn how to customize privacy for people insights in an organization, see [Customize people insights privacy](/graph/insights-customize-people-insights-privacy).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

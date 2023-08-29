@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Retrieve the properties and relationships of the [message](../resources/message.md) object.
 
 For instance, you can get a message and expand all the [mention](../resources/mention.md) instances in the message. See an [example](#example-2-get-all-mentions-in-a-specific-message) below.
@@ -28,6 +26,8 @@ There are two scenarios where an app can get a message in another user's mail fo
 
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

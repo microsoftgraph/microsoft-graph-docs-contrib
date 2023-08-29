@@ -12,8 +12,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Get [itemAnalytics][] about the views that took place under this resource.
 The **itemAnalytics** resource is a convenient way to get activity stats for `allTime` and the `lastSevenDays`.
 For a custom time range or interval, use the [getActivitiesByInterval][] API.
@@ -22,6 +20,8 @@ For a custom time range or interval, use the [getActivitiesByInterval][] API.
 
 [itemAnalytics]: ../resources/itemanalytics.md
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

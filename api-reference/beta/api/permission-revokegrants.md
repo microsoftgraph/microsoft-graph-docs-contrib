@@ -12,8 +12,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by removing the specified [recipient][] from the link.
 
 >**Note:** This functionality is only available for sharing links scoped to users.
@@ -21,6 +19,8 @@ Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by r
 [listItem]: ../resources/listitem.md
 [driveItem]: ../resources/driveitem.md
 [recipient]: ../resources/driverecipient.md
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

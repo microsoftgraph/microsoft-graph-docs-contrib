@@ -12,8 +12,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Get newly created, updated, or deleted [list items](../resources/listitem.md) without having to perform a full read of the entire items collection.
 
 Your app begins by calling `delta` without any parameters.
@@ -30,6 +28,8 @@ Deleted items are returned with the [deleted facet](../resources/deleted.md). De
 Items with this property should be removed from your local state.
 
 > **Note:** You should only delete a folder locally if it's empty after syncing all the changes.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

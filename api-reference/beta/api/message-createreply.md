@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Create a draft to reply to the sender of a [message](../resources/message.md) in either JSON or MIME format.
 
 When using JSON format:
@@ -29,6 +27,8 @@ When using MIME format:
 [Send](../api/message-send.md) the draft message in a subsequent operation.
 
 Alternatively, [reply to a message](../api/message-reply.md) in a single operation.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

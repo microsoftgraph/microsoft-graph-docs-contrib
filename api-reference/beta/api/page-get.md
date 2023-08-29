@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Retrieve the properties and relationships of a [page](../resources/onenotepage.md) object.
 
 **Getting page information**
@@ -35,6 +33,8 @@ GET /me/onenote/pages/{id}/$value[?includeIDs=true]
 ```
 
 The `includeIDs=true` query option is used to [update pages](../api/page-update.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
