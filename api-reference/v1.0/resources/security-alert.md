@@ -33,7 +33,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 |alertWebUrl|String|URL for the alert page in the Microsoft 365 Defender portal.|
 |assignedTo|String|Owner of the **alert**, or null if no owner is assigned.|
 |category|String|The attack kill-chain category that the alert belongs to. Aligned with the MITRE ATT&CK framework.|
-|classification|[microsoft.graph.security.alertClassification](#alertclassification-values)|Specifies whether the alert represents a true threat. Possible values are: `unknown`, `falsePositive`, `truePositive`, `benignPositive`, `unknownFutureValue`.|
+|classification|[microsoft.graph.security.alertClassification](#alertclassification-values)|Specifies whether the alert represents a true threat. Possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
 |comments|[microsoft.graph.security.alertComment](security-alertComment.md) collection|Array of comments created by the Security Operations (SecOps) team during the alert management process.|
 |createdDateTime|DateTimeOffset|Time when Microsoft 365 Defender created the alert.|
 |description|String|String value describing each alert.|
