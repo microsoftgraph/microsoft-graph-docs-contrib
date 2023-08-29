@@ -7,6 +7,6 @@ ms.topic: include
 
 This API is supported in the following [national cloud deployments](../../concepts/deployments.md).
 
-- Microsoft Graph global service
-- Microsoft Graph for US Government L4
-- Microsoft Graph for US Government L5 (DOD)
+| Global service     | US Government L4   | US Government L5 (DOD) | China operated by 21Vianet |
+|--------------------|--------------------|------------------------|----------------------------|
+| :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:     | :x:                        |
