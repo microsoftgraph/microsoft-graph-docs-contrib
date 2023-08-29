@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Create a new [learningCourseActivity](../resources/learningcourseactivity.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 A learning course activity can be one of two types: 
 - [Assignment](../resources/learningassignment.md)
 - [Self-initiated](../resources/learningselfinitiatedcourse.md)
@@ -22,6 +20,8 @@ A learning course activity can be one of two types:
 Use this method to create either type of activity.
 
 >**Note**: Learning course activities can be managed by a provider only when **isCourseAcitvitySyncEnabled** is set to `true`.  To update the value, use the [Update learningProvider](../api/learningprovider-update.md) method.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

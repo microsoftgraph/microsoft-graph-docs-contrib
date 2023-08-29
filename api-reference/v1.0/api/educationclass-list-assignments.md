@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Retrieve a list of assignment objects. Only teachers, students, and applications with application permissions can perform this operation.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 A teacher or an application executing with application permissions can see all assignment objects for the class. Students can only see assignments that are assigned to them.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

@@ -13,10 +13,10 @@ Namespace: microsoft.graph
 
 Update the properties of domain object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 > **Important:**
 > Only verified domains can be updated.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

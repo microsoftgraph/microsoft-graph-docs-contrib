@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Retrieves a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects needed to enable services for the domain.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Use the returned list to add records to the zone file of the domain. This can be done through the domain registrar or DNS server configuration.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

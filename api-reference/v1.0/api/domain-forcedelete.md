@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Deletes a domain using an asynchronous long-running operation.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Prior to calling [forceDelete](domain-forcedelete.md), you must update or remove any references to **Exchange** as the provisioning service.
 
 The following actions are performed as part of this operation:
@@ -30,6 +28,8 @@ The following actions are performed as part of this operation:
 * If one of the `applications` to be renamed is a multi-tenant app, an error is returned.
 
 After the domain deletion completes, API operations for the deleted domain will return a HTTP 404 status code. To verify deletion of a domain, you can perform a [get domain](domain-get.md) operation.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

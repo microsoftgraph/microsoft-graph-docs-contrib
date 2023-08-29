@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 Calculate and list the documents that a user has viewed or modified. 
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 For the signed-in user:
 - This method includes documents that the user has modified; see [example 1](#example-1-return-documents-that-user-has-modified). 
 - Using an `$orderby` query parameter on the **lastAccessedDateTime** property returns the most recently viewed documents that the user might or might not not have modified; see [example 2](#example-2-return-the-most-recently-viewed-documents-that-the-signed-in-user-might-or-might-not-have-modified).
 
 For other users, this method includes only documents that the user has modified.
 
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

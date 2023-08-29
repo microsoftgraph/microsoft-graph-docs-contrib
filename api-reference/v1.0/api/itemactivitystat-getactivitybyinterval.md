@@ -12,11 +12,11 @@ Namespace: microsoft.graph
 
 Get a collection of [itemActivityStats][] resources for the activities that took place on this resource within the specified time interval.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 >**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).
 
 Analytics aggregates might not be available for all action types.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

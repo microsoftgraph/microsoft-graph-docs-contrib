@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.  Clients can use this API to determine whether a display name or mail nickname is valid before trying to [create](group-post-groups.md) a Microsoft 365 group. To validate the properties of an existing group, use the [group: validateProperties](group-validateproperties.md) function.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 The following policy validations are performed for the display name and mail nickname properties:
 1. Validate the prefix and suffix naming policy
 2. Validate the custom banned words policy
@@ -24,6 +22,8 @@ The following policy validations are performed for the display name and mail nic
 > Invalid characters are not part of the policy validations. The following characters are invalid: @ () \ \[] " ; : <> , SPACE.
 
 This API only returns the first validation failure that is encountered. If the properties fail multiple validations, only the first validation failure is returned. However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy. To learn more about configuring naming policies, see [Configure naming policy](/azure/active-directory/users-groups-roles/groups-naming-policy#configure-naming-policy-in-powershell).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

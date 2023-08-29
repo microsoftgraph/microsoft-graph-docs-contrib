@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Publish an education assignment.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Change the state of an [educationAssignment](../resources/educationassignment.md) from its original `draft` status to the `published` status. 
 
 You can change the state from `draft` to `scheduled` if the **assignment** is scheduled for a future date. 
@@ -24,6 +22,8 @@ Only a teacher in the class can make this call. When an assignment is in draft s
 The state of the assignment goes back to `draft` if there is any backend failure during publish process.
 
 To update the properties of a published **assignment**, see [update an assignment](../api/educationassignment-update.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

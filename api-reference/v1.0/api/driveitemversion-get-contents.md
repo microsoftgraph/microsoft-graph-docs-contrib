@@ -13,10 +13,10 @@ Namespace: microsoft.graph
 
 Retrieve the contents of a specific version of a [driveItem](../resources/driveitem.md).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 >**Note:** Getting the content of the current version is not supported. To do that, use the [Download the contents of a driveItem](driveitem-get-content.md) method.
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

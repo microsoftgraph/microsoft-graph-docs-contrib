@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [tls-1.2-required](../../includes/tls-1.2-required.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Retrieve a collection of [ThumbnailSet](../resources/thumbnailset.md) resources for a [DriveItem](../resources/driveitem.md) resource.
 
 A DriveItem can be represented by zero or more [ThumbnailSet](../resources/thumbnailset.md) resources.
@@ -31,6 +29,8 @@ Here are the most common ones:
 * Retrieve custom thumbnail sizes
 * Upload a custom thumbnail for an item
 * Determine if a custom uploaded thumbnail exists
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

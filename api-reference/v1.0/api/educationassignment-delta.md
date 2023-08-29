@@ -12,11 +12,11 @@ Namespace: microsoft.graph
 
 Get a list of newly created or updated [assignments](../resources/educationassignment.md) without having to perform a full read of the collection.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 A teacher or an application running with application permissions can see all **assignment** objects for the class. Students can only see **assignments** that are assigned to them.
 
 > **Note:** This method doesn't return deleted **assignments**.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

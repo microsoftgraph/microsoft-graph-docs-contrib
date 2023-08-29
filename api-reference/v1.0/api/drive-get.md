@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [Drive](../resources/drive.md) resource.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

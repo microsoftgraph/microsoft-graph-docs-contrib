@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of a group object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, specify them in a `$select` OData query option. The **hasMembersWithLicenseErrors** and **isArchived** properties are an exception and are not returned in the `$select` query.
 
 > **Note:** This request might have replication delays for groups that were recently created, updated, or deleted.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

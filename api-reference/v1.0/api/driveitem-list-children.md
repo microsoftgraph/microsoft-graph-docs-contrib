@@ -13,10 +13,10 @@ Namespace: microsoft.graph
 
 Return a collection of [DriveItems](../resources/driveitem.md) in the **children** relationship of a DriveItem.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 DriveItems with a non-null **folder** or **package** facet can have one or more child DriveItems.
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

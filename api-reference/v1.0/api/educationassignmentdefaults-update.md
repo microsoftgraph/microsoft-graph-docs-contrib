@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 Update the properties of an [educationAssignmentDefaults](../resources/educationassignmentdefaults.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Only teachers can update these settings.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

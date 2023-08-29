@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Retrieve the simple directory **user** that corresponds to this **educationUser**.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 >**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...v1.0/education/me/schools` resource in this case.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 A combination of permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

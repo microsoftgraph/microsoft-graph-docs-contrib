@@ -13,10 +13,10 @@ Namespace: microsoft.graph
 
 Validates the ownership of the domain.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 > **Important:**
 > Only applies to an unverified domain. For an unverified domain, the isVerified property of the [domain](../resources/domain.md) is false.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

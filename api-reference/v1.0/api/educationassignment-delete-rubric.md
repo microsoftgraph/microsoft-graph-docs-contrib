@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Remove an [educationRubric](../resources/educationrubric.md) from an [educationAssignment](../resources/educationassignment.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 This method does not delete the rubric itself and can only be performed by teachers.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

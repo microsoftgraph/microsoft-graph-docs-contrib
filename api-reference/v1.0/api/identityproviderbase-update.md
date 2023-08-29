@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 Update the properties of the specified identity provider configured in the tenant.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Among the types of providers derived from identityProviderBase, you can currently update a [socialIdentityProvider](../resources/socialidentityprovider.md) resource in Azure AD. In Azure AD B2C, this operation can currently update a [socialIdentityProvider](../resources/socialidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

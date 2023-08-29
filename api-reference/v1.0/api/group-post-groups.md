@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Create a new group as specified in the request body. You can create the following types of groups:
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 - Microsoft 365 group (unified group)
 - Security group
 
@@ -23,6 +21,8 @@ This operation returns by default only a subset of the properties for each group
 To get properties that are _not_ returned by default, do a [GET operation](group-get.md) and specify the properties in a `$select` OData query option.
 
 > **Note**: Although Microsoft Teams is built on Microsoft 365 groups, you can't currently create a team via this API. You can use the other group APIs to manage a team that has been created in the Microsoft Teams UI.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

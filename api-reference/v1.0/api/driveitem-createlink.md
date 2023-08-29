@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 You can use **createLink** action to share a [DriveItem](../resources/driveitem.md) via a sharing link.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.
 If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 
 DriveItem resources inherit sharing permissions from their ancestors.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

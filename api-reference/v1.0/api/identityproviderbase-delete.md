@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 Delete an identity provider resource that is of the type specified by the **id** in the request.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Among the types of providers derived from identityProviderBase, you can currently delete a [socialIdentityProvider](../resources/socialidentityprovider.md) resource in Azure AD. In Azure AD B2C, this operation can currently delete a [socialIdentityProvider](../resources/socialidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

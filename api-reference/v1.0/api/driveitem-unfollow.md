@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 Unfollow a [driveItem](../resources/driveitem.md).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 >**Note:** To follow an item, see [Follow Item](driveitem-follow.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

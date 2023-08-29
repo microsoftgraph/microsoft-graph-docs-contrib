@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Remove an [educationUser](../resources/educationuser.md) from an [educationClass](../resources/educationclass.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 > **Note:** Teachers _and_ students are in the class **members** collection. Before calling this API, ensure that the **educationUser** you are removing is not a teacher. Get the list of teachers by calling [educationclass_list_teachers](educationclass-list-teachers.md) and verifying the user ID of the user to be removed is not in the returned teacher list.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
