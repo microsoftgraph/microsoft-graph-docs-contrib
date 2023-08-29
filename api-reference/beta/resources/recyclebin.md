@@ -1,49 +1,47 @@
 ---
-author: vanshisingh
-ms.date: 04/08/2023
-title: recycleBin resource type
-description: "RecycleBin Resource Type"
+author: "vanshisingh"
+title: "recycleBin resource type"
+description: "Provides a list of recycleBinItems."
 ms.localizationpriority: "medium"
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+
 # recycleBin resource type
 
-The recycleBin resource provides a list of recycleBin Items.
+Provides a list of [recycleBinItems](recyclebinitem.md).
 
 ## Methods
 
-The **recycleBin** resource does not have any methods.
+None.
 
 ## Properties
 
-| Property | Type                                         | Description
-|:-------- |:-------------------------------------------- |:-----------------------------------------------
-| id       | string                                       | Key identifier for recycleBin. Returned only on $select.
+| Property | Type   | Description                                                                      |
+|:---------|:-------|:---------------------------------------------------------------------------------|
+| id       | String | The unique identifier for the **recycleBin** object. Returned only on `$select`. |
+
 
 ## Relationships
 
-| Property     | Type                                          | Description
-|:------------ |:--------------------------------------------- |:-----------------------------------------------
-| items        | [microsoft.graph.recycleBinItem](recyclebinitem.md) collection | List of the recycleBinitems deleted by the user.
+| Relationship | Type                                           | Description                                        |
+|:-------------|:-----------------------------------------------|:---------------------------------------------------|
+| items        | [recycleBinItem](recyclebinitem.md) collection | List of the **recycleBinItems** deleted by a user. |
 
 ## JSON Representation
 
-Here is a JSON representation of a **microsoft.graph.recycleBin** resource.
+The following is a JSON representation of the resource.
 
 <!-- {
-"blockType": "resource",
-"keyProperty": "id",
-"@odata.type": "microsoft.graph.recycleBin",
-"optionalProperties": []
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.recycleBin",
+  "optionalProperties": []
 }-->
 
 ```json
 {
-  "id": "string",
-  
-  /* relationships */
-  "items": [{ "@odata.type": "microsoft.graph.recycleBinItem" }]
+  "id": "String (identifier)"
 }
 ```
 
