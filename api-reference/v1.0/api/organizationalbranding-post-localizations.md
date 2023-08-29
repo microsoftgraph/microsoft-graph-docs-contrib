@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 Create a new [organizationalBrandingLocalization](../resources/organizationalBrandingLocalization.md) object. This creates a localized branding and at the same time, the default branding if it doesn't exist.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 The default branding is created only once. It's loaded when a localized branding isn't configured for the user's browser language. To retrieve the default branding, see [Get branding](organizationalbranding-get.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

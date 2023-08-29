@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Get details about Microsoft 365 active users.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - Active Users](https://support.office.com/client/Active-Users-fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

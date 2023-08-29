@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [message](../resources/message.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message). See also an [example](#example-4-get-mime-content) below.
 
 There are two scenarios where an app can get a message in another user's mail folder:
@@ -24,6 +22,8 @@ There are two scenarios where an app can get a message in another user's mail fo
 
 Since the **message** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **message** instance.
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

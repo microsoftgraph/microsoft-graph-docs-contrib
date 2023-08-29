@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Get the number of pages viewed across all sites.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - SharePoint site usage](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

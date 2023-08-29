@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Creates a [permissionGrantPolicy](../resources/permissiongrantpolicy.md). A permission grant policy is used to describe the conditions under which permissions can be granted (for example, during application consent).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 After creating the permission grant policy, you can [add include condition sets](permissiongrantpolicy-post-includes.md) to add matching rules, and [add exclude condition sets](permissiongrantpolicy-post-excludes.md) to add exclusion rules.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 
 Get a collection of the specified type of [place](../resources/place.md) objects defined in the tenant. For example, you can get all the rooms, all the room lists, or the rooms in a specific room list in the tenant.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 >**Note:** Rooms that are marked "Hidden from GAL" can't be retrieved through this endpoint.
 
 A **place** object can be one of the following types:
@@ -28,6 +26,8 @@ Both **room** and **roomList** are derived from the **place** object.
 By default, this operation returns 100 places per page.
 
 Compared with the [findRooms](/graph/api/user-findrooms) and [findRoomLists](/graph/api/user-findroomlists) functions, this operation returns a richer payload for rooms and room lists. See [details](../resources/place.md#using-the-places-api) for how they compare.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

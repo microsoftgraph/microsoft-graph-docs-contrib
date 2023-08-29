@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 Retrieve a list of printer shares associated with the [printer](../resources/printer.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 >**Note:** Currently, only **one** printer share per printer is supported.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

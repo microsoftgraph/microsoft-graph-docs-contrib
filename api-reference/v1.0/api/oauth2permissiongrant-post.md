@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 Create a delegated permission grant represented by an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 A delegated permission grant authorizes a client service principal (representing a client application) to access a resource service principal (representing an API), on behalf of a signed-in user, for the level of access limited by the delegated permissions which were granted.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

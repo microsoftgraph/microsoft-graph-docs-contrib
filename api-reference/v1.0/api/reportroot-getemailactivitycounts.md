@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Enables you to understand the trends of email activity (like how many were sent, read, and received) in your organization.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - Email Activity](https://support.office.com/client/Email-activity-1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

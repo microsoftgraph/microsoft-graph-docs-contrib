@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Clear the application's presence session for a user. If it is the user's only presence session, the user's presence will change to `Offline/Offline`.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 For details about presences sessions, see [presence: setPresence](presence-setpresence.md#presence-sessions).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 The following permission is required to call the API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

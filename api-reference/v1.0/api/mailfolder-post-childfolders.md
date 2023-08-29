@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Use this API to create a new child [mailFolder](../resources/mailfolder.md).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 If you intend a new folder to be hidden, you must set the **isHidden** property to `true` on creation.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

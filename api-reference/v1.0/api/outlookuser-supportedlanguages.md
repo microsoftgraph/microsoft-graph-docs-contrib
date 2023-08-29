@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 When setting up an Outlook client, the user selects the preferred language from this supported list. You can subsequently get the preferred language by 
 [getting the user's mailbox settings](user-get-mailboxsettings.md).
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

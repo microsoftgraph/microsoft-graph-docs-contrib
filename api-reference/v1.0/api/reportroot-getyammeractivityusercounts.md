@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Get the trends on the number of unique users who posted, read, and liked Yammer messages.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - Yammer Activity](https://support.office.com/client/Yammer-activity-c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

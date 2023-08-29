@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of a [place](../resources/place.md) object specified by either its ID or email address.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 The **place** object can be one of the following types:
 
 * A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support.
 * A [room list](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of **room** instances in that room list.
 
 Both **room** and **roomList** are derived from the [place](../resources/place.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

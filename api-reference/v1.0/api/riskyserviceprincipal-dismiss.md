@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 Dismiss the risk of one or more [riskyServicePrincipal](../resources/riskyserviceprincipal.md) objects. This action sets the targeted service principal account's risk level to `none`. You can dismiss up to 60 service principal accounts in one request.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 >**Note:** Using the riskyServicePrincipal API requires an Entra Workload Identity Premium license.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

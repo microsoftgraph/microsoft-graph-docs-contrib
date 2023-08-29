@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of the currently authenticated organization.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Since the **organization** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **organization** instance.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

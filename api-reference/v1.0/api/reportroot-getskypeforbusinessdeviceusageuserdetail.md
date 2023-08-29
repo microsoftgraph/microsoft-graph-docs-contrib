@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Get details about Skype for Business device usage by user.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - Skype for Business clients used](https://support.office.com/client/Skype-for-Business-clients-used-b9019c36-034f-40c7-acb0-c2a0400b03c3).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

@@ -13,10 +13,10 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a print service endpoint.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 > [!NOTE]
 > In order to use the Universal Print service, the user or app's tenant must have an active Universal Print subscription.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

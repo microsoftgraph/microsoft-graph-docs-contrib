@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Forward a message using either JSON or MIME format.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 When using JSON format, you can:
 - Specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
 - Specify either the `toRecipients` parameter or the **toRecipients** property of the `message` parameter. Specifying both or specifying neither will return an HTTP 400 Bad Request error.
@@ -26,6 +24,8 @@ When using MIME format:
 This method saves the message in the **Sent Items** folder.
 
 Alternatively, [create a draft to forward a message](../api/message-createforward.md), and [send](../api/message-send.md) it later.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

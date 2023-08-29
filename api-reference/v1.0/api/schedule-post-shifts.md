@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Create a new [shift](../resources/shift.md) instance in a [schedule](../resources/schedule.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 The duration of a shift cannot be less than 1 minute or longer than 24 hours.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

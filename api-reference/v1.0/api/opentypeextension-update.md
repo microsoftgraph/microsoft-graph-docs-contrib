@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Update an open extension ([openTypeExtension](../resources/opentypeextension.md) object) with the properties in the request body:
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 - If a property in the request body matches the name of an existing property in the extension, the data in the 
 extension is updated.
 - Otherwise that property and its data are added to the extension. 
@@ -22,6 +20,8 @@ extension is updated.
 The data in an extension can be primitive types, or arrays of primitive types.
 
 See the table in the [Permissions](#permissions) section for the list of resources that support open extensions.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

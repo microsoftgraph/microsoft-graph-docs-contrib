@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Create a draft to reply to the sender and all recipients of a [message](../resources/message.md) in either JSON or MIME format. 
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 When using JSON format:
 - Specify either a comment or the **body** property of the `message` parameter. Specifying both will return an HTTP 400 Bad Request error.
 - If the original message specifies a recipient in the **replyTo** property, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in the **replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties. 
@@ -27,6 +25,8 @@ When using MIME format:
 [Send](../api/message-send.md) the draft message in a subsequent operation.
 
 Alternatively, [reply-all to a message](../api/message-replyall.md) in a single action.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

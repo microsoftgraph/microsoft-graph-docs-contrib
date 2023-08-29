@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 
 Update the properties of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object, representing a delegated permission grant.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 An **oAuth2PermissionGrant** can be updated to change which delegated permissions are granted, by adding or removing items from the list in **scopes**.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Use this API to add an [attachment](../resources/attachment.md) to a message. 
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 An attachment can be one of the following types:
 
 * A file ([fileAttachment](../resources/fileattachment.md) resource).
@@ -28,6 +26,9 @@ You can add an attachment to an existing message by posting to its attachments c
 add an attachment to a message that is being [created and sent on the fly](../api/user-sendmail.md).
 
 This operation limits the size of the attachment you can add to under 3 MB.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
