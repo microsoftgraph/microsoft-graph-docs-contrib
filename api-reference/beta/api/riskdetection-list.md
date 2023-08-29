@@ -12,12 +12,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 Retrieve the properties of a collection of **riskDetection** objects.
 
 >[!NOTE]
 >You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

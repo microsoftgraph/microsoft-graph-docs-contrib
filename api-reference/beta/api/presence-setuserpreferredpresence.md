@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Set the preferred availability and activity status for a user. If the preferred presence of a user is set, the user's presence is the preferred presence.
 
 Preferred presence takes effect only when there is at least one [presence session](presence-setpresence.md#presence-sessions) of the user. Otherwise, the user's presence stays as Offline.
@@ -22,6 +20,8 @@ Preferred presence takes effect only when there is at least one [presence sessio
 A presence session can be created as a result of a successful [setPresence](presence-setpresence.md) operation, or if the user is signed in on a Teams client. 
 
 Read more about [presence sessions](presence-setpresence.md#presence-sessions) and their [time-out and expiration](presence-setpresence.md#timeout-expiration-and-keep-alive). 
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 The following permission is required to call the API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

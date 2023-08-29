@@ -13,9 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Retrieve the binary data of a file or image [resource](../resources/onenoteresource.md) object.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-Retrieve the binary data of a file or image [resource](../resources/onenoteresource.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

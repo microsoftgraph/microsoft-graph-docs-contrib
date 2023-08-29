@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
-
 In PIM for groups, retrieve the requests for membership or ownership assignments for the calling principal to groups that are governed by PIM.
+
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

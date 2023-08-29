@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects for an RBAC provider.
 
 The following RBAC providers are currently supported:
@@ -23,6 +21,8 @@ The following RBAC providers are currently supported:
 - directory (Azure AD) 
 - entitlement management (Azure AD)
 - Exchange Online
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

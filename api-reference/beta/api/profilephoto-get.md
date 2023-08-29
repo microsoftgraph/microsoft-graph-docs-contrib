@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Get the specified [profilePhoto](../resources/profilephoto.md) or its metadata (**profilePhoto** properties) from Microsoft 365.
 
 > **Note**: When attempting to GET a **user** photo, this operation first attempts to retrieve the specified photo from Microsoft 365. If the photo is not available in Microsoft 365, the API attempts to retrieve the photo from Azure Active Directory.
@@ -26,6 +24,8 @@ You can get the metadata of the largest available photo, or specify a size to ge
 If the size you request is not available, you can still get a smaller size that the user has uploaded and made available.
 For example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of the photo will be available for download.
 If the specified size is not available in the user's mailbox or in Azure Active Directory, the size 1x1 is returned with the rest of the  metadata.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
