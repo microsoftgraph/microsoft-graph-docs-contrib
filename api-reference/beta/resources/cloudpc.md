@@ -120,7 +120,7 @@ The following table lists the members of an `[evolvable enumeration](/graph/best
 |poweredOff|The Cloud PC status is power off.|
 |unknown|The Cloud PC status is unknown.|
 
-### shiftWorkCloudPcAccessState values (deprecated)
+### shiftWorkCloudPcAccessState values
 The following table lists the members of an [evolvable enumeration](#shiftworkcloudpcaccessstate-values). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `standbyMode`.
 
 |Member|Description|
