@@ -27,9 +27,9 @@ None.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|customSecurityAttributeAudits|[customSecurityAttributeAudit](../resources/customsecurityattributeaudit.md) collection|**TODO: Add Description**|
+|customSecurityAttributeAudits|[customSecurityAttributeAudit](../resources/customsecurityattributeaudit.md) collection|Represents a custom security attribute audit log.|
 |directoryAudits|[directoryAudit](../resources/directoryaudit.md) collection|Read-only. Nullable.|
-|provisioning|[provisioningObjectSummary](../resources/provisioningobjectsummary.md) collection|**TODO: Add Description**|
+|provisioning|[provisioningObjectSummary](../resources/provisioningobjectsummary.md) collection|Represents an action performed by the Azure AD Provisioning service and its associated properties.|
 |signIns|[signIn](../resources/signin.md) collection|Read-only. Nullable.|
 
 ## JSON representation
