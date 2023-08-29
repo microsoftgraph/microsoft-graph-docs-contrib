@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Delete a subscription.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 For the list of resources that support subscribing to change notifications, see the table in the [Permissions](#permissions) section.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

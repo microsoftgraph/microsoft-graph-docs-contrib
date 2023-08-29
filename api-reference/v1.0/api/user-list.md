@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Retrieve a list of [user](../resources/user.md) objects.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 >**Note:** This request might have replication delays for users that were recently created, updated, or deleted.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

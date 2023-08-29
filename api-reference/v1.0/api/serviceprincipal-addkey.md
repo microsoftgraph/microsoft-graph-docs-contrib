@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Adds a key credential to a [servicePrincipal](../resources/serviceprincipal.md). This method along with [removeKey](serviceprincipal-removekey.md) can be used by a servicePrincipal to automate rolling its expiring keys.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 > [!NOTE]
 > [Create servicePrincipal](../api/serviceprincipal-post-serviceprincipals.md) and
 [Update servicePrincipal](../api/serviceprincipal-update.md) operations can continue to be used to add and update key credentials for any servicePrincipal with or without a user's context.
@@ -22,6 +20,8 @@ Adds a key credential to a [servicePrincipal](../resources/serviceprincipal.md).
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed. 
 
 ServicePrincipals that don’t have any existing valid certificates (i.e.: no certificates have been added yet, or all certificates have expired), won’t be able to use this service action. [Update servicePrincipal](../api/serviceprincipal-update.md) can be used to perform an update instead.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a subscription.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 See the table in the [Permissions](#permissions) section for the list of resources that support subscribing to change notifications.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

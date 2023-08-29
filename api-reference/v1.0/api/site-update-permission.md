@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 Update an application [permission](../resources/permission.md) object on a site. 
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 >**Note:** You can't use this method to update a user site permission.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

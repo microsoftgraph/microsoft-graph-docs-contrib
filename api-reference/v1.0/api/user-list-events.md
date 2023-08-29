@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 Get a list of [event](../resources/event.md) objects in the user's mailbox. The list contains single 
 instance meetings and series masters.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 To get expanded event instances, you can [get the calendar view](calendar-list-calendarview.md), or 
 [get the instances of an event](event-list-instances.md).
 
@@ -25,6 +23,8 @@ There are two scenarios where an app can get events in another user's calendar:
 
 * If the app has application permissions, or,
 * If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user. See [details and an example](/graph/outlook-get-shared-events-calendars).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ### Support various time zones
 

@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 You can get a single resource instance expanded with a specific extended property, or a collection of resource instances
 that include extended properties matching a filter.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Using the query parameter `$expand` allows you to get the specified resource instance expanded with a specific extended
 property. Use a `$filter` and `eq` operator on the **id** property to specify the extended property. This is currently the only way to get the [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) object that represents an extended property.
 
@@ -45,6 +43,8 @@ As well as the following group resources:
 
 See [Extended properties overview](../resources/extended-properties-overview.md) for more information about when to use
 open extensions or extended properties, and how to specify extended properties.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 Depending on the resource you're getting the extended property from and the permission type (delegated or application) you request, the permission specified in the following table is the minimum required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

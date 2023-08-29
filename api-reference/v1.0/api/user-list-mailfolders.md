@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Get the mail folder collection directly under the root folder of the signed-in user. The returned collection includes any [mail search folders](../resources/mailsearchfolder.md) directly under the root.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 By default, this operation does not return hidden folders. Use a query parameter _includeHiddenFolders_ to include them in the response.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

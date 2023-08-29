@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 Use this API to assign an app role to a user. To grant an app role assignment to a user, you need three identifiers:
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 - `principalId`: The `id` of the user to whom you are assigning the app role.
 - `resourceId`: The `id` of the resource `servicePrincipal` that has defined the app role.
 - `appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the user.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

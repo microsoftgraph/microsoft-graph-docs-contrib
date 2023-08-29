@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [serviceUpdateMessage](../resources/serviceupdatemessage.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 This operation retrieves a specified service update message for the tenant. The operation returns an error if the message does not exist for the tenant.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

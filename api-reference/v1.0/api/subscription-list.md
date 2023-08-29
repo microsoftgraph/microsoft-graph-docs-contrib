@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of webhook subscriptions, based on the app ID, the user, and the user's role with a tenant.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 The content of the response depends on the context in which the app is calling; for details, see the scenarios in the [Permissions](#permissions) section.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

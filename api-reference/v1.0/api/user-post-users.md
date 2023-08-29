@@ -14,10 +14,10 @@ Namespace: microsoft.graph
 Create a new [user](../resources/user.md).
 The request body contains the user to create. At a minimum, you must specify the required properties for the user. You can optionally specify any other writable properties.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 >[!NOTE]
 >To create external users, use the [invitation API](invitation-post.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

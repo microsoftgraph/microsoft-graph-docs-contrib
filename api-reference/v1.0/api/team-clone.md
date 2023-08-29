@@ -16,8 +16,6 @@ Namespace: microsoft.graph
 Create a copy of a [team](../resources/team.md). This operation also creates a copy of the corresponding [group](../resources/group.md).
 You can specify which parts of the team to clone:
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 - **apps** - Copies Microsoft Teams apps that are installed in the team. 
 - **channels** – Copies the channel structure (but not the messages in the channel).
 - **members** – Copies the members and owners of the group.
@@ -32,6 +30,8 @@ Cloning is a long-running operation.
 After the POST clone returns, you need to GET the [operation](../resources/teamsasyncoperation.md) to see if it's "running" or "succeeded" or "failed". 
 You should continue to GET until the status is not "running". 
 The recommended delay between GETs is 5 seconds.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

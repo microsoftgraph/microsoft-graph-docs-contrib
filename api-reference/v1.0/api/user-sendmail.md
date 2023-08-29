@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Send the message specified in the request body using either JSON or MIME format.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 When using JSON format you can include a [file attachment](../resources/fileattachment.md) in the same **sendMail** action call.
 
 When using MIME format:
@@ -26,6 +24,8 @@ This method saves the message in the **Sent Items** folder.
 Alternatively, [create a draft message](../api/user-post-messages.md) to send later.
 
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see [here](/graph/outlook-things-to-know-about-send-mail).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

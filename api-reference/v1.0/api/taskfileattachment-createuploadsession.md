@@ -12,8 +12,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 Create an upload session to iteratively upload ranges of a file as an attachment to a [todoTask](../resources/todotask.md).
 
 As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries. The request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded. This allows the transfer to be resumed, in case the network connection is dropped during the upload.
@@ -27,6 +25,8 @@ The following are the steps to attach a file to a Microsoft To Do task using an 
 >**Note:** Use this approach to attach a file of any supported size between 0 MB to 25 MB.
 
 For an example that describes the end-to-end attachment process, see [attach files to a To Do task](/graph/todo-attachments).
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

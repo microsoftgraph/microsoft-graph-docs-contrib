@@ -13,9 +13,10 @@ Namespace: microsoft.graph
 
 Create a new contactFolder under the user's default contacts folder.
 
+You can also [create a new contactfolder as a child of any specified contact folder](contactfolder-post-childfolders.md).
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-You can also [create a new contactfolder as a child of any specified contact folder](contactfolder-post-childfolders.md).
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

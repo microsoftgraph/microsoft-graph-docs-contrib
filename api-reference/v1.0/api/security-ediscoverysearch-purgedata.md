@@ -13,8 +13,6 @@ Namespace: microsoft.graph.security
 
 Delete Microsoft Teams messages contained in an [eDiscovery search](../resources/security-ediscoverysearch.md).
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 >**Note:** This request purges Teams data only. It does not purge other types of data such as mailbox items.
 
 You can collect and purge the following categories of Teams content:
@@ -28,6 +26,8 @@ For more information about purging Teams messages, see:
 - [eDiscovery solution series: Data spillage scenario - Search and purge](/microsoft-365/compliance/data-spillage-scenariosearch-and-purge)
 - [eDiscovery (Premium) workflow for content in Microsoft Teams](/microsoft-365/compliance/teams-workflow-in-advanced-ediscovery) 
 
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 
 Assign an app role to a client service principal.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 App roles that are assigned to service principals are also known as [application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Application permissions can be granted directly with app role assignments, or through a [consent experience](/azure/active-directory/develop/application-consent-experience).
 
 To grant an app role assignment to a client service principal, you need three identifiers:
@@ -23,6 +21,8 @@ To grant an app role assignment to a client service principal, you need three id
 - `principalId`: The `id` of the client service principal to which you are assigning the app role.
 - `resourceId`: The `id` of the resource `servicePrincipal` (the API) which has defined the app role (the application permission).
 - `appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the client service principal.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

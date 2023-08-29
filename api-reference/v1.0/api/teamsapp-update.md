@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Update an [app](../resources/teamsapp.md) previously published to the Microsoft Teams app catalog. To update an app, the **distributionMethod** property for the app must be set to `organization`.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
