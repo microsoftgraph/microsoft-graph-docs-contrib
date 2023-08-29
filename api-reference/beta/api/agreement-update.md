@@ -13,9 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Update the properties of an [agreement](../resources/agreement.md) object.
+
 [!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
-Update the properties of an [agreement](../resources/agreement.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

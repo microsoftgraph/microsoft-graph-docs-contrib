@@ -13,8 +13,6 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Get aggregated report of usage and money spent for the audio conferencing dial-out service over a selected period as a collection of [pstnOnlineMeetingDialoutReport](../resources/callrecords-pstnonlinemeetingdialoutreport.md) entries.
 The report is aggregated by user, user location, destination context (domestic/international), and currency.
 
@@ -23,6 +21,8 @@ The report includes:
 - Cost: Communication credits spent over the selected period
 - Dial-out calls: Total number of dial-out calls over the selected period
 - Time of use: Total dial-out time (in seconds) over the selected period
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

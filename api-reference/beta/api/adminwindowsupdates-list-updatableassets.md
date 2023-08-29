@@ -12,13 +12,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Get a list of [updatableAsset](../resources/windowsupdates-updatableasset.md) objects and their properties.
 
 Listing updatable assets returns **updatableAsset** resources of the following derived types: [azureADDevice](../resources/windowsupdates-azureADDevice.md) and [updatableAssetGroup](../resources/windowsupdates-updatableassetGroup.md).
 
 Use [list azureADDevice resources](adminwindowsupdates-list-updatableassets-azureaddevice.md) or [list updatableAssetGroup resources](adminwindowsupdates-list-updatableassets-updatableassetgroup.md) to filter and get resources of only one of the derived types.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

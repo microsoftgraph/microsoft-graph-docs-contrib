@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Update the metadata for a [bundle][] of [driveItems][driveItem] by ID.
 You can only update the following metadata:
 
@@ -22,6 +20,8 @@ You can only update the following metadata:
 * Album `coverImageItemId` (if applicable)
 
 Any other change requests will be ignored.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

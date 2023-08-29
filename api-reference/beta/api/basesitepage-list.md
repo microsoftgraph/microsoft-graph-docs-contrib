@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Get the collection of [baseSitePage][] objects from the site pages [list][] in a [site][]. All pages in the site are returned (with pagination). Sort alphabetically by **name** in ascending order.
 
 > **Note:** The [baseSitePage][] specified is a parent type and does not have any instance. As a result, the returned data only consists of available subtypes that are provided as a list.
@@ -29,6 +27,8 @@ Get the collection of [baseSitePage][] objects from the site pages [list][] in a
 [sitepage]: ../resources/sitePage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

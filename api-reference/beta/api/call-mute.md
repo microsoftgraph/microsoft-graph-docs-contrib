@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Allows the application to mute itself.
 
 This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
@@ -22,6 +20,8 @@ This is a server mute, meaning that the server will drop all audio packets for t
 For more details about how to handle mute operations, see [muteParticipantOperation](../resources/muteparticipantoperation.md)
 
 > **Note:** This method is only supported for group calls.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -13,8 +13,6 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 Retrieve the properties and relationships of a [callRecord](../resources/callrecords-callrecord.md) object.
 
 There are two ways to get the **id** of a **callRecord**:
@@ -27,6 +25,8 @@ You can use the `$expand` query parameter to optionally include session and segm
 > [!WARNING]
 >
 > A call record is created after a call or meeting ends and will remain available for **30 days**. Requests for call records older than 30 days will receive a `404 Not Found` response.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

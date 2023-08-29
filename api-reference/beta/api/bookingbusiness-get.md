@@ -13,9 +13,10 @@ Namespace: microsoft.graph
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Get the properties and relationships of a [bookingBusiness](../resources/bookingbusiness.md) object.
+
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
-Get the properties and relationships of a [bookingBusiness](../resources/bookingbusiness.md) object.
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
