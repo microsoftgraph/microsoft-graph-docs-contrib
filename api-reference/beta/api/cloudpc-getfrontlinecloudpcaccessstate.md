@@ -54,7 +54,6 @@ If the Cloud PC has been provisioned as a dedicated device, this method returns 
 ## Examples
 
 ### Request
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpc.getFrontlineCloudPcAccessState"
