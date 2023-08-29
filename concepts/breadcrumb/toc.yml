@@ -1,3 +1,4 @@
+---
 - name: Microsoft Graph
   tocHref: /graph/
   topicHref: /graph/index

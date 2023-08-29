@@ -4,11 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphidentitygovernance "github.com/microsoftgraph/msgraph-sdk-go/identitygovernance"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-result, err := graphClient.IdentityGovernance().AccessReviews().DefinitionsById("accessReviewScheduleDefinition-id").InstancesById("accessReviewInstance-id").StagesById("accessReviewStage-id").DecisionsById("accessReviewInstanceDecisionItem-id").Get(context.Background(), nil)
+requestParameters := &graphidentitygovernance.IdentityGovernanceAccessReviewsDefinitionItemInstanceItemStageItemDecisionsFilterByCurrentUser(on='{on}')RequestBuilderGetQueryParameters{
+	Select: [] string {"accessReviewId","reviewedDateTime","decision","justification","recommendation","reviewedBy","target"},
+}
+configuration := &graphidentitygovernance.IdentityGovernanceAccessReviewsDefinitionItemInstanceItemStageItemDecisionsFilterByCurrentUser(on='{on}')RequestBuilderGetRequestConfiguration{
+	QueryParameters: requestParameters,
+}
+
+on := "reviewer"
+filterByCurrentUser, err := graphClient.IdentityGovernance().AccessReviews().Definitions().ByAccessReviewScheduleDefinitionId("accessReviewScheduleDefinition-id").Instances().ByAccessReviewInstanceId("accessReviewInstance-id").Stages().ByAccessReviewStageId("accessReviewStage-id").Decisions().FilterByCurrentUserWithOn(&on).Get(context.Background(), configuration)
 
 
 ```

@@ -63,61 +63,22 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2194
+Content-Length: 436
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.zebraFotaDeployment",
-    "id": "8bbfa8a0-a8a0-8bbf-a0a8-bf8ba0a8bf8b",
+    "id": "b694759b-759b-b694-9b75-94b69b7594b6",
     "displayName": "Display Name value",
     "description": "Description value",
-    "deploymentSettings": {
-      "@odata.type": "microsoft.graph.zebraFotaDeploymentSettings",
-      "deviceModel": "Device Model value",
-      "updateType": "latest",
-      "timeZoneOffsetInMinutes": 7,
-      "firmwareTargetArtifactDescription": "Firmware Target Artifact Description value",
-      "firmwareTargetBoardSupportPackageVersion": "Firmware Target Board Support Package Version value",
-      "firmwareTargetPatch": "Firmware Target Patch value",
-      "firmwareTargetOsVersion": "Firmware Target Os Version value",
-      "scheduleMode": "scheduled",
-      "scheduleDurationInDays": 6,
-      "downloadRuleNetworkType": "wifi",
-      "downloadRuleStartDateTime": "2016-12-31T23:59:33.2519835-08:00",
-      "installRuleStartDateTime": "2017-01-01T00:02:31.1558076-08:00",
-      "installRuleWindowStartTime": "11:57:19.2230000",
-      "installRuleWindowEndTime": "11:58:38.5330000",
-      "batteryRuleMinimumBatteryLevelPercentage": 8,
-      "batteryRuleRequireCharger": true
-    },
+    "deploymentSettings": "<Unknown None>",
     "deploymentAssignments": [
-      {
-        "@odata.type": "microsoft.graph.androidFotaDeploymentAssignment",
-        "id": "Id value",
-        "displayName": "Display Name value",
-        "target": {
-          "@odata.type": "microsoft.graph.androidFotaDeploymentAssignmentTarget",
-          "groupId": "Group Id value"
-        }
-      }
+      "<Unknown None>"
     ],
-    "deploymentStatus": {
-      "@odata.type": "microsoft.graph.zebraFotaDeploymentStatus",
-      "state": "createFailed",
-      "totalDevices": 12,
-      "totalCreated": 12,
-      "totalScheduled": 14,
-      "totalDownloading": 0,
-      "totalAwaitingInstall": 4,
-      "totalSucceededInstall": 5,
-      "totalCanceled": 13,
-      "totalUnknown": 12,
-      "totalFailedDownload": 3,
-      "totalFailedInstall": 2,
-      "completeOrCanceledDateTime": "2016-12-31T23:59:29.651377-08:00",
-      "cancelRequested": true,
-      "lastUpdatedDateTime": "2017-01-01T00:00:56.8321556-08:00"
-    }
+    "deploymentStatus": "<Unknown None>",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ]
   }
 }
 ```

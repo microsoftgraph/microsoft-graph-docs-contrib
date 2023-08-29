@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.Governance
 
 $params = @{
-	DisplayName = "Access Package New Name"
+	displayName = "Access Package New Name"
 }
 
 Update-MgEntitlementManagementAccessPackage -AccessPackageId $accessPackageId -BodyParameter $params

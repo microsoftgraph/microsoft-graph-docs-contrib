@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphserviceprincipals "github.com/microsoftgraph/msgraph-sdk-go/serviceprincipals"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewAddKeyPostRequestBody()
+
+requestBody := graphserviceprincipals.NewAddKeyPostRequestBody()
 keyCredential := graphmodels.NewKeyCredential()
 type := "AsymmetricX509Cert"
 keyCredential.SetType(&type) 
@@ -21,7 +30,7 @@ requestBody.SetPasswordCredential(&passwordCredential)
 proof := "eyJ0eXAiOiJ..."
 requestBody.SetProof(&proof) 
 
-result, err := graphClient.ServicePrincipalsById("servicePrincipal-id").AddKey().Post(context.Background(), requestBody, nil)
+addKey, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").AddKey().Post(context.Background(), requestBody, nil)
 
 
 ```

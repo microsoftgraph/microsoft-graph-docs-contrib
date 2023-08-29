@@ -6,19 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
-
-$requestConfiguration = new RecommendationsRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new RecommendationsRequestBuilderGetQueryParameters();
-$queryParameters->filter = "id eq '0cb31920-84b9-471f-a6fb-468c1a847088_Microsoft.Identity.IAM.Insights.TurnOffPerUserMFA'";
-$queryParameters->expand = ["impactedResources"];
-
-$requestConfiguration->queryParameters = $queryParameters;
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$requestResult = $graphServiceClient->directory()->recommendations()->get($requestConfiguration);
-
+$result = $graphServiceClient->directory()->recommendations()->byRecommendationId('recommendation-id')->get()->wait();
 
 ```

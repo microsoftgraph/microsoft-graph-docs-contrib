@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Groups
 
 $params = @{
-	"Members@odata.bind" = @(
+	"members@odata.bind" = @(
 		"https://graph.microsoft.com/v1.0/directoryObjects/{id}"
 		"https://graph.microsoft.com/v1.0/directoryObjects/{id}"
 		"https://graph.microsoft.com/v1.0/directoryObjects/{id}"

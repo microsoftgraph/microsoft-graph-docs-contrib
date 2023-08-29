@@ -43,6 +43,7 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md), or 
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
 | id                  | string   | A unique ID (not the team's app ID). |
+|consentedPermissionSet|[teamsAppPermissionSet](../resources/teamsapppermissionset.md)|The set of resource-specific permissions consented to while installing or upgrading the teamsApp.|
 
 ## Relationships
 
@@ -63,7 +64,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string"
+  "id": "string",
+  "consentedPermissionSet": "#microsoft.graph.teamsAppPermissionSet"
 }
 ```
 

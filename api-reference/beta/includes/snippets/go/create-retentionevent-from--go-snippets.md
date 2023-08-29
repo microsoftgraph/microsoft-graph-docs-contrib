@@ -4,21 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelssecurity "github.com/microsoftgraph/msgraph-beta-sdk-go/models/security"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewRetentionEvent()
+
+requestBody := graphmodelssecurity.NewRetentionEvent()
 displayName := "String"
 requestBody.SetDisplayName(&displayName) 
 description := "String"
 requestBody.SetDescription(&description) 
 
 
-eventQuery := graphmodels.NewEventQuery()
+eventQuery := graphmodelssecurity.NewEventQuery()
 
-eventQueries := []graphmodels.EventQueryable {
+eventQueries := []graphmodelssecurity.EventQueryable {
 	eventQuery,
-
 }
 requestBody.SetEventQueries(eventQueries)
 eventTriggerDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
@@ -27,19 +36,18 @@ createdBy := graphmodels.NewIdentitySet()
 requestBody.SetCreatedBy(createdBy)
 
 
-eventPropagationResult := graphmodels.NewEventPropagationResult()
+eventPropagationResult := graphmodelssecurity.NewEventPropagationResult()
 
-eventPropagationResults := []graphmodels.EventPropagationResultable {
+eventPropagationResults := []graphmodelssecurity.EventPropagationResultable {
 	eventPropagationResult,
-
 }
 requestBody.SetEventPropagationResults(eventPropagationResults)
-eventStatus := graphmodels.NewRetentionEventStatus()
+eventStatus := graphmodelssecurity.NewRetentionEventStatus()
 requestBody.SetEventStatus(eventStatus)
 lastStatusUpdateDateTime , err := time.Parse(time.RFC3339, "String (timestamp)")
 requestBody.SetLastStatusUpdateDateTime(&lastStatusUpdateDateTime) 
 
-result, err := graphClient.Security().Triggers().RetentionEvents().Post(context.Background(), requestBody, nil)
+retentionEvents, err := graphClient.Security().Triggers().RetentionEvents().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.DirectoryObjects
 
 $params = @{
-	SecurityEnabledOnly = $true
+	securityEnabledOnly = $true
 }
 
 Get-MgDirectoryObjectMemberObject -DirectoryObjectId $directoryObjectId -BodyParameter $params

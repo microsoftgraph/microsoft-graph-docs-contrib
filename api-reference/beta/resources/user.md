@@ -83,7 +83,6 @@ This resource supports:
 | [Get deleted user](../api/directory-deleteditems-get.md) | [directoryObject](directoryobject.md) collection | Retrieve a deleted user by ID. |
 | [Restore deleted user](../api/directory-deleteditems-delete.md) | [directoryObject](directoryobject.md) collection | Restore a user deleted in the tenant in the last 30 days. |
 | [Permanently delete user](../api/directory-deleteditems-restore.md) | [directoryObject](directoryobject.md) collection | Permanently delete a deleted user from the tenant. |
-| [activateServicePlan](../api/user-activateserviceplan.md) (deprecated) | None | Activate a service with a given `servicePlanId` and `skuId` for a given [user](user.md). |
 | **Drive** |||
 | [Get drive](../api/drive-get.md) | [drive](drive.md) | Retrieve the properties and relationships of a Drive resource. |
 | [List children](../api/driveitem-list-children.md) | [DriveItems](driveitem.md) | Return a collection of DriveItems in the children relationship of a DriveItem. |
@@ -141,6 +140,10 @@ This resource supports:
 | [Delete profile](../api/profile-delete.md) | None | Delete profile object from a user's account. |
 | **Schema extensions** |||
 | [Add schema extension values](/graph/extensibility-schema-groups) | None | Create a schema extension definition and then use it to add custom typed data to a resource. |
+| **Sponsors** |||
+| [Assign sponsors](../api/user-post-sponsors.md) | None | Assign a user a sponsor. |
+| [List sponsors](../api/user-list-sponsors.md) | [directoryObject](../resources/directoryobject.md) collection | Get the users and groups who are this user's sponsors. |
+| [Remove sponsors](../api/user-delete-sponsors.md) | None | Remove a user's sponsor. |
 | **Teamwork** |||
 |[List apps installed for user](../api/userteamwork-list-installedapps.md) | [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) collection | Lists apps installed in the personal scope of a user.|
 |[Get the installed app for user](../api/userteamwork-get-installedapps.md)| [userScopeTeamsAppInstallation](userscopeteamsappinstallation.md) | Lists the specified app installed in the personal scope of a user. |
@@ -148,6 +151,8 @@ This resource supports:
 |[Remove app for user](../api/userteamwork-delete-installedapps.md) | None | Removes (uninstalls) an app in the personal scope of a user.|
 |[Upgrade app installed for user](../api/userteamwork-teamsappinstallation-upgrade.md) | None | Upgrades to the latest version of the app installed in the personal scope of a user.|
 |[Get chat between user and app](../api/userscopeteamsappinstallation-get-chat.md)| [Chat](chat.md)| Lists one-on-one chat between the user and the app. |
+|[Get chat between user and app](../api/userscopeteamsappinstallation-get-chat.md)| [Chat](chat.md)| Lists one-on-one chat between the user and the app. |
+|[List permission grants](../api/user-list-permissiongrants.md)| [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection| List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) of a [user](../resources/user.md). |
 | **To-do tasks** |||
 |[Create task](../api/todotasklist-post-tasks.md)|[todoTask](todotask.md)| Create a [todoTask](todotask.md) in the specified task list.|
 |[Create task list](../api/todo-post-lists.md) | [todoTaskList](todotasklist.md) | Create a To Do task list in the user's mailbox. |
@@ -163,11 +168,10 @@ This resource supports:
 |[List cloudPCs](../api/user-list-cloudpcs.md)|[cloudPC](../resources/cloudpc.md) collection|List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user.|
 |[Get launch info](../api/cloudpc-getcloudpclaunchinfo.md)|[cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md)|Get the [cloudPCLaunchInfo](../resources/cloudpclaunchinfo.md) for the signed-in user.|
 
-
 ## Properties
 
 > [!IMPORTANT]
-> Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries#user-properties).
+> Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries#user-properties).
 
 | Property       | Type    | Description |
 |:---------------|:--------|:------------|
@@ -180,6 +184,7 @@ This resource supports:
 | birthday | DateTimeOffset | The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z` <br><br>Returned only on `$select`. |
 | businessPhones | String collection | The telephone numbers for the user. Only one number can be set for this property. <br><br>Read-only for users synced from on-premises directory. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 | city | String | The city in which the user is located. Maximum length is 128 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
+| cloudRealtimeCommunicationInfo | [cloudRealtimeCommunicationInfo](cloudrealtimecommunicationinfo.md) | Microsoft realtime communication information related to the user. <br> Supports `$filter` (`eq`, `ne`,`not`).|
 | companyName | String | The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length is 64 characters.<br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | consentProvidedForMinor | [consentProvidedForMinor](#consentprovidedforminor-values) | Sets whether consent has been obtained for minors. Allowed values: `null`, `Granted`, `Denied` and `NotRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. <br><br>Supports `$filter` (`eq`, `ne`, `not`, and `in`).|
 | country | String | The country/region in which the user is located; for example, `US` or `UK`. Maximum length is 128 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
@@ -204,6 +209,8 @@ This resource supports:
 | imAddresses | String collection | The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`).|
 | infoCatalogs | String collection | Identifies the info segments assigned to the user.  Supports `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
 | interests | String collection | A list for the user to describe their interests. <br><br>Returned only on `$select`. |
+| isLicenseReconciliationNeeded | Boolean | Indicates whether the user is pending an exchange mailbox license assignment. <br><br> Read-only. <br><br> Supports `$filter` (`eq` where `true` only).  |
+| isManagementRestricted| Boolean | `true` if the user is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is `false`. Read-only. <br/><br/> To manage a user who is a member of a restricted administrative unit, the calling app must be assigned the *Directory.Write.Restricted* permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.|
 | isResourceAccount | Boolean | Do not use – reserved for future use. |
 | jobTitle | String | The user's job title. Maximum length is 128 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not` , `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | lastPasswordChangeDateTime | DateTimeOffset | The time when this Azure AD user last changed their password or when their password was created, , whichever date the latest action was performed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. <br><br>Returned only on `$select`.  |
@@ -212,7 +219,7 @@ This resource supports:
 | mail | String | The SMTP address for the user, for example, `admin@contoso.com`. Changes to this property will also update the user's **proxyAddresses** collection to include the value as an SMTP address. This property cannot contain accent characters. <br/> **NOTE:** We do not recommend updating this property for Azure AD B2C user profiles. Use the **otherMails** property instead. <br><br> Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`, and `eq` on `null` values). |
 | mailboxSettings | [mailboxSettings](mailboxsettings.md) | Settings for the primary mailbox of the signed-in user. You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update-mailboxsettings.md) settings for sending automatic replies to incoming messages, locale, and time zone. For more information, see [User preferences for languages and regional formats](#user-preferences-for-languages-and-regional-formats). <br><br>Returned only on `$select`. |
 | mailNickname | String | The mail alias for the user. This property must be specified when a user is created. Maximum length is 64 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
-| mobilePhone | String | The primary cellular telephone number for the user. Read-only for users synced from on-premises directory. <br><br> Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
+| mobilePhone | String | The primary cellular telephone number for the user. Read-only for users synced from on-premises directory. <br><br> Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values) and `$search`.|
 | mySite | String | The URL for the user's personal site. <br><br>Returned only on `$select`. |
 | officeLocation | String | The office location in the user's place of business. Maximum length is 128 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
 | onPremisesDistinguishedName | String | Contains the on-premises Active Directory `distinguished name` or `DN`. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.  |
@@ -223,6 +230,7 @@ This resource supports:
 | onPremisesProvisioningErrors | [onPremisesProvisioningError](onpremisesprovisioningerror.md) collection | Errors when using Microsoft synchronization product during provisioning. <br> Supports `$filter` (`eq`, `not`, `ge`, `le`).|
 | onPremisesSamAccountName | String | Contains the on-premises `sAMAccountName` synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.<br><br> Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`).|
 | onPremisesSecurityIdentifier | String | Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only. Supports `$filter` (`eq` including on `null` values).  |
+|onPremisesSipInfo|[onPremisesSipInfo](../resources/onpremisessipinfo.md)|Contains all on-premises Session Initiation Protocol (SIP) information related to the user. Read-only.|
 | onPremisesSyncEnabled | Boolean | `true` if this user object is currently being synced from an on-premises Active Directory (AD); otherwise the user isn't being synced and can be managed in Azure Active Directory (Azure AD). Read-only. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `in`, and `eq` on `null` values). |
 | onPremisesUserPrincipalName | String | Contains the on-premises `userPrincipalName` synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`). |
 | otherMails | String collection | A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`.<br>NOTE: This property cannot contain accent characters.<br><br>Supports `$filter` (`eq`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`, `/$count eq 0`, `/$count ne 0`). |
@@ -239,32 +247,35 @@ This resource supports:
 | responsibilities | String collection | A list for the user to enumerate their responsibilities. <br><br>Returned only on `$select`. |
 | schools | String collection | A list for the user to enumerate the schools they have attended. <br><br>Returned only on `$select`. |
 |securityIdentifier| String | Security identifier (SID) of the user, used in Windows scenarios. <br><br>Read-only. Returned by default. <br>Supports `$select` and `$filter` (`eq`, `not`, `ge`, `le`, `startsWith`). |
-| showInAddressList | Boolean | **Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead.** Represents whether the user should be included in the Outlook global address list. See [Known issue](/graph/known-issues#showinaddresslist-property-is-out-of-sync-with-microsoft-exchange).|
+| serviceProvisioningErrors | [serviceProvisioningError](serviceprovisioningerror.md) collection | Errors published by a federated service describing a non-transient, service-specific error regarding the properties or link from a user object . <br> Supports `$filter` (`eq`, `not`, for isResolved and serviceInstance).|
+| showInAddressList | Boolean | **Do not use in Microsoft Graph. Manage this property through the Microsoft 365 admin center instead.** Represents whether the user should be included in the Outlook global address list. See [Known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=14972).|
 | signInSessionsValidFromDateTime | DateTimeOffset | Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use [revokeSignInSessions](../api/user-revokesigninsessions.md) to reset.|
 | skills | String collection | A list for the user to enumerate their skills. <br><br>Returned only on `$select`. |
-| signInActivity | [signInActivity](signinactivity.md) | Get the last signed-in date and request ID of the sign-in for a given user. Read-only.<br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *but*, not with any other filterable properties. **Note:** Details for this property require an Azure AD Premium P1/P2 license and the **AuditLog.Read.All** permission.<br><br>**Note:** <br/><li>There's a [known issue](/graph/known-issues#license-check-errors-for-azure-ad-activity-reports) with retrieving this property.<li>This property is not returned for a user who has never signed in or last signed in before April 2020.|
+| signInActivity | [signInActivity](signinactivity.md) | Get the last signed-in date and request ID of the sign-in for a given user. Read-only.<br><br>Returned only on `$select`. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *but* not with any other filterable properties. <br><br>**Note:** <br/><li> Details for this property require an Azure AD Premium P1/P2 license and the **AuditLog.Read.All** permission.<li>This property is not returned for a user who has never signed in or last signed in before April 2020.|
 | state | String | The state or province in the user's address. Maximum length is 128 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
 | streetAddress | String | The street address of the user's place of business. Maximum length is 1024 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
 | surname | String | The user's surname (family name or last name). Maximum length is 64 characters. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values). |
 | usageLocation | String | A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: `US`, `JP`, and `GB`. Not nullable. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values).|
-| userPrincipalName | String | The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md).<br>NOTE: This property cannot contain accent characters. Only the following characters are allowed `A - Z`, `a - z`, `0 - 9`, ` ' . - _ ! # ^ ~`. For the complete list of allowed characters, see [username policies](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts). <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`) and `$orderBy`.
+| userPrincipalName | String | The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the **verifiedDomains** property of [organization](organization.md).<br>NOTE: This property cannot contain accent characters. Only the following characters are allowed `A - Z`, `a - z`, `0 - 9`, `' . - _ ! # ^ ~`. For the complete list of allowed characters, see [username policies](/azure/active-directory/authentication/concept-sspr-policy#userprincipalname-policies-that-apply-to-all-user-accounts). <br><br>Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, `endsWith`) and `$orderBy`.
 | userType | String | A String value that can be used to classify user types in your directory, such as `Member` and `Guest`. <br><br>Supports `$filter` (`eq`, `ne`, `not`, `in`, and `eq` on `null` values). **NOTE:** For more information about the permissions for member and guest users, see [What are the default user permissions in Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#member-and-guest-users) |
 
 > [!TIP]
 > Directory extensions and associated data are returned by default; schema extensions and associated data returned only on `$select`; and open extensions and associated data returned only on `$expand`.
 
 ### mail and proxyAddresses properties
+
 **mail** and **proxyAddresses** are both email-related properties. **proxyAddresses** is a collection of addresses only relevant for Microsoft Exchange server. It's used to store a list of mail addresses for a user that are tied to a single mailbox. **mail** property is used as the user's email address for various purposes including user sign in and defines the primary proxy address.
- 
-Both **mail** and **proxyAddresses** can be retrieved through the [GET user](../api/user-get.md) API on MS Graph. **mail** can be updated via the [PATCH method of the Update user](../api/user-update.md) API, but **proxyAddresses** can't be updated via Microsoft Graph. When a user's **mail** property is updated, it triggers recalculation of **proxyAddresses** and the newly updated mail is set to be the primary proxy address, except in the following scenarios: 
- 
+
+Both **mail** and **proxyAddresses** can be retrieved through the [GET user](../api/user-get.md) API on MS Graph. **mail** can be updated via the [PATCH method of the Update user](../api/user-update.md) API, but **proxyAddresses** can't be updated via Microsoft Graph. When a user's **mail** property is updated, it triggers recalculation of **proxyAddresses** and the newly updated mail is set to be the primary proxy address, except in the following scenarios:
+
 1. If a user has a license that includes Microsoft Exchange, all their proxy addresses must belong to a verified domain on the tenant. Any that don't belong to verified domains are silently removed.
 2. A user's mail will NOT be set to the primary proxy address if the user is a guest and the primary proxy address contains the guest user UPN string with #EXT#.
 3. A user's mail will NOT be removed, even if they no longer have proxy addresses, if the user is a guest.
- 
+
 **proxyAddresses** are unique across directory objects (users, groups, and organizational contacts). If a user's **mail** property conflicts with one of the **proxyAddresses** of another object, you'll successfully update the **mail** property; however, the new mail value won't be added to the **proxyAddresses** collection.
 
 ### User preferences for languages and regional formats
+
 The **user** resource contains a [mailboxSettings](../resources/mailboxsettings.md) property which includes the user's preferred language, date and time formatting, default time zone, and other settings specifically for their primary Exchange mailbox. These preferences are targeted for mail clients and are only available if the user has a mailbox provisioned. You can choose to use **mailboxSettings** if your scenario focuses only on Outlook mail, calendar, contacts, or to-do tasks.
 
 In addition to **mailboxSettings**, **user** includes a relationship via [userSettings](../resources/usersettings.md) to [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md), the superset of language and regional formatting preferences that can be used by any application to provide the user with the best language and regional formatting experience. Use **userSettings** for a consistent experience across apps that tap into the Azure AD user profile to reflect the same user preferences.
@@ -272,6 +283,7 @@ In addition to **mailboxSettings**, **user** includes a relationship via [userSe
 ### Legal age group property definitions
 
 This section explains how the three age group properties (**legalAgeGroupClassification**, **ageGroup** and **consentProvidedForMinor**) are used by Azure AD administrators and enterprise application developers to meet age-related regulations:
+
 - The **legalAgeGroupClassification** property is read-only. It is used by enterprise application developers to ensure the correct handling of a user based on their legal age group. It is calculated based on the user's **ageGroup** and **consentProvidedForMinor** properties.
 - **ageGroup** and **consentProvidedForMinor** are optional properties used by Azure AD administrators to help ensure the use of an account is handled correctly based on the age-related regulatory rules governing the user's country or region.
 
@@ -312,9 +324,10 @@ For example: Cameron is administrator of a directory for an elementary school in
 
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
+|activities|[userActivity](projectrome-activity.md) collection|The user's activities across devices. Read-only. Nullable.|
 |agreementAcceptances|[agreementAcceptance](agreementacceptance.md) collection| The user's terms of use acceptance statuses. Read-only. Nullable.|
 |appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Represents the app roles a user has been granted for an application. Supports `$expand`. |
-|authentication|[authentication](../resources/authentication.md)|**TODO: Add Description**|
+|authentication|[authentication](../resources/authentication.md)|The authentication methods that are supported for the user.|
 |calendar|[calendar](calendar.md)|The user's primary calendar. Read-only.|
 |calendarGroups|[calendarGroup](calendargroup.md) collection|The user's calendar groups. Read-only. Nullable.|
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only. Nullable.|
@@ -336,18 +349,22 @@ For example: Cameron is administrator of a directory for an elementary school in
 |joinedTeams|[team](team.md) collection|The Microsoft Teams teams that the user is a member of. Read-only. Nullable.|
 |messages|[message](message.md) collection|The messages in a mailbox or folder. Read-only. Nullable.|
 |onenote|[onenote](onenote.md)| Read-only.|
+|onlineMeetings|[onlineMeeting](onlinemeeting.md) collection| Information about a meeting, including the URL used to join a meeting, the attendees' list, and the description. |
 |outlook|[outlookUser](outlookuser.md)| Selective Outlook services available to the user. Read-only. Nullable.|
 |ownedDevices|[directoryObject](directoryobject.md) collection|Devices that are owned by the user. Read-only. Nullable. Supports `$expand`.|
-|ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Read-only. Nullable. Supports `$expand` and `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`).|
-|pendingAccessReviewInstances|[accessReviewInstance](accessreviewinstance.md) | Navigation property to get list of access reviews pending approval by reviewer. |
+|ownedObjects|[directoryObject](directoryobject.md) collection|Directory objects that are owned by the user. Read-only. Nullable. Supports `$expand`, `$select` nested in `$expand`, and `$filter` (`/$count eq 0`, `/$count ne 0`, `/$count eq 1`, `/$count ne 1`).|
+|pendingAccessReviewInstances|[accessReviewInstance](accessreviewinstance.md) collection| Navigation property to get list of access reviews pending approval by reviewer. |
 |people|[person](person.md) collection| Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.|
+|permissionGrants|[resourceSpecificPermissionGrant](../resources/resourcespecificpermissiongrant.md) collection| List all resource-specific permission grants of a user. |
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
 |photos|[photo](photo.md) collection| Read-only. Nullable.|
 |planner|[plannerUser](planneruser.md)| Selective Planner services available to the user. Read-only. Nullable. |
 |profile |[profile](profile.md) | Represents properties that are descriptive of a user in a tenant. |
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable. Supports `$expand`.|
 |scopedRoleMemberOf|[scopedRoleMembership](scopedrolemembership.md) collection| The scoped-role administrative unit memberships for this user. Read-only. Nullable.|
+|security|[security](security.md) |Nullable.|
 |settings|[userSettings](usersettings.md) | Read-only. Nullable.|
+|sponsors|[directoryObject](../resources/directoryobject.md) collection|The users and groups that are responsible for this guest user's privileges in the tenant and keep the guest user's information and access updated. (HTTP Methods: GET, POST, DELETE.). Supports `$expand`.|
 |teamwork|[userTeamwork](userteamwork.md)| A container for Microsoft Teams features available for the user. Read-only. Nullable.|
 |todo|[todo](todo.md)|Represents the To Do services available to a user. |
 |transitiveMemberOf| [directoryObject](directoryobject.md) collection |  The groups, including nested groups, and directory roles that a user is a member of. Nullable.|
@@ -407,6 +424,9 @@ Here is a JSON representation of the resource
   "birthday": "String (timestamp)",
   "businessPhones": ["String"],
   "city": "String",
+  "cloudRealtimeCommunicationInfo": {
+    "@odata.type": "microsoft.graph.cloudRealtimeCommunicationInfo"
+  },
   "companyName": "String",
   "consentProvidedForMinor": "String",
   "country": "String",
@@ -431,6 +451,7 @@ Here is a JSON representation of the resource
   "id": "String (identifier)",
   "identities": [{"@odata.type": "microsoft.graph.objectIdentity"}],
   "interests": ["String"],
+  "isLicenseReconciliationNeeded": false,
   "isResourceAccount": false,
   "jobTitle": "String",
   "legalAgeGroupClassification": "String",
@@ -449,6 +470,9 @@ Here is a JSON representation of the resource
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSamAccountName": "String",
   "onPremisesSecurityIdentifier": "String",
+  "onPremisesSipInfo": {
+    "@odata.type": "microsoft.graph.onPremisesSipInfo"
+  },
   "onPremisesSyncEnabled": true,
   "onPremisesUserPrincipalName": "String",
   "otherMails": ["String"],
@@ -465,6 +489,7 @@ Here is a JSON representation of the resource
   "responsibilities": ["String"],
   "schools": ["String"],
   "securityIdentifier": "String",
+  "serviceProvisioningErrors": [{"@odata.type": "microsoft.graph.serviceProvisioningXmlError"}],
   "showInAddressList": true,
   "signInSessionsValidFromDateTime": "2019-02-07T21:53:13.084Z",
   "skills": ["String"],

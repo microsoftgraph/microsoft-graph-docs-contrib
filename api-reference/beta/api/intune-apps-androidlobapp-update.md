@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -33,8 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 PATCH /deviceAppManagement/mobileApps/{mobileAppId}
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
-PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
 ```
 
 ## Request headers
@@ -74,11 +72,12 @@ The following table shows the properties that are required when you create the [
 |fileName|String|The name of the main Lob application file. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |size|Int64|The total size, including all uploaded files. Inherited from [mobileLobApp](../resources/intune-apps-mobilelobapp.md)|
 |packageId|String|The package identifier.|
-|identityName|String|The Identity Name. This property is deprecated starting  in February 2023 (Release 2302).|
+|identityName|String|The Identity Name. This property is being deprecated in 2302(February 2023).|
 |minimumSupportedOperatingSystem|[androidMinimumOperatingSystem](../resources/intune-apps-androidminimumoperatingsystem.md)|The value for the minimum applicable operating system.|
 |versionName|String|The version name of Android Line of Business (LoB) app.|
 |versionCode|String|The version code of Android Line of Business (LoB) app.|
-|identityVersion|String|The identity version. This property is deprecated starting  in February 2023 (Release 2302).|
+|identityVersion|String|The identity version. This property is being deprecated in 2302(February 2023).|
+|targetedPlatforms|[androidTargetedPlatforms](../resources/intune-apps-androidtargetedplatforms.md)|The platforms to which the application can be targeted. If not specified, will defauilt to Android Device Administrator. Possible values are: `androidDeviceAdministrator`, `androidOpenSourceProject`, `unknownFutureValue`.|
 
 
 
@@ -92,7 +91,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1510
+Content-length: 1562
 
 {
   "@odata.type": "#microsoft.graph.androidLobApp",
@@ -145,7 +144,8 @@ Content-length: 1510
   },
   "versionName": "Version Name value",
   "versionCode": "Version Code value",
-  "identityVersion": "Identity Version value"
+  "identityVersion": "Identity Version value",
+  "targetedPlatforms": "androidOpenSourceProject"
 }
 ```
 
@@ -154,7 +154,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1682
+Content-Length: 1734
 
 {
   "@odata.type": "#microsoft.graph.androidLobApp",
@@ -210,6 +210,7 @@ Content-Length: 1682
   },
   "versionName": "Version Name value",
   "versionCode": "Version Code value",
-  "identityVersion": "Identity Version value"
+  "identityVersion": "Identity Version value",
+  "targetedPlatforms": "androidOpenSourceProject"
 }
 ```

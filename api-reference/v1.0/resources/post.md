@@ -1,7 +1,7 @@
 ---
 title: "post resource type"
 description: "Represents an individual Post item within a conversationThread entity."
-author: "dkershaw10"
+author: "mikemcleanlive"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: resourcePageType
@@ -44,7 +44,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |[Get post with multi-value extended property](../api/multivaluelegacyextendedproperty-get.md)  | [post](post.md) | Get a post that contains a multi-value extended property by using `$expand`. |
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |body|[itemBody](itembody.md)|The contents of the post. This is a default property. This property can be null.|
 |categories|String collection|The categories associated with the post.|
@@ -61,7 +61,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |sender|[recipient](recipient.md)|Contains the address of the sender. The value of Sender is assumed to be the address of the authenticated user in the case when Sender is not specified. This is a default property.|
 
 ## Relationships
-| Relationship | Type	|Description|
+| Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |attachments|[Attachment](attachment.md) collection| Read-only. Nullable. Supports `$expand`.|
 |extensions|[Extension](extension.md) collection|The collection of open extensions defined for the post. Read-only. Nullable. Supports `$expand`.|

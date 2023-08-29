@@ -26,9 +26,11 @@ RemoteAssistanceReporting resources represents the metadata of a given Remote As
 |remoteAssistanceSessionType|[remoteAssistanceSessionType](../resources/intune-remoteassistance-remoteassistancesessiontype.md)|Type of the remote assistance session that was held. Possible values are: `viewOnly`, `fullControl`, `elevation`. Possible values are: `viewOnly`, `fullControl`, `elevation`, `unattended`.|
 |helperEmail|String|Login email used by the helper to establish the session|
 |helperTenantId|String|Tenant id for the helper|
+|helperUserId|String|Helper's id|
 |helperFirstName|String|Helper's first name|
 |helperLastName|String|Helper's last name|
 |helperOs|String|Helper's operating system|
+|deviceId|String|Intune Device ID|
 |helperDeviceAadId|String|Helper's device AAD Id|
 |helperDeviceName|String|Helper's device name|
 |helperEnrollmentState|[enrollmentState](../resources/intune-shared-enrollmentstate.md)|Intune enrollment state of the helper's device. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`. Possible values are: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
@@ -61,9 +63,11 @@ Here is a JSON representation of the resource.
   "remoteAssistanceSessionType": "String",
   "helperEmail": "String",
   "helperTenantId": "String",
+  "helperUserId": "String",
   "helperFirstName": "String",
   "helperLastName": "String",
   "helperOs": "String",
+  "deviceId": "String",
   "helperDeviceAadId": "String",
   "helperDeviceName": "String",
   "helperEnrollmentState": "String",

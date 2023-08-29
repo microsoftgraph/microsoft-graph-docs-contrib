@@ -1,13 +1,13 @@
 ---
-title: "customExtensionHandler resource type"
+title: "customExtensionHandler resource type (deprecated)"
 description: "Defines when to execute a custom access package workflow extension."
-author: "currenmehta"
+author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# customExtensionHandler resource type
+# customExtensionHandler resource type (deprecated)
 
 Namespace: microsoft.graph
 
@@ -24,7 +24,7 @@ None.
 >
 > 1. To read the customExtensionHandler objects on a policy, append `?$expand=customExtensionHandlers` to a [GET accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-get.md) request. For example, `GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/4540a08f-8ab5-43f6-a923-015275799197?$expand=customExtensionHandlers`. For more details, see [Example 2: Retrieve the custom extension handlers for a policy](../api/accesspackageassignmentpolicy-get.md#example-2-retrieve-the-custom-extension-handlers-for-a-policy).
 >
-> 2. To delete the **customExtensionHandlers** objects from a policy, call the [Update accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-update.md) and specify the customExtensionHandlers property as an empty collection. For more details, see [Example 2: Remove the customExtensionHandlers from a policy](../api/accesspackageassignmentpolicy-update.md#example-2-remove-the-customextensionhandlers-from-a-policy).
+> 2. To delete the **customExtensionHandlers** objects from a policy, call the [Update accessPackageAssignmentPolicy](../api/accesspackageassignmentpolicy-update.md) and specify the customExtensionHandlers property as an empty collection. For more details, see [Example 2: Remove the customExtensionHandlers and verifiableCredentialSettings from a policy](../api/accesspackageassignmentpolicy-update.md#example-2-remove-the-customextensionhandlers-and-verifiablecredentialsettings-from-a-policy).
 
 ## Properties
 |Property|Type|Description|

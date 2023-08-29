@@ -4,24 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var type = "view";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var scope = "anonymous";
-
-var password = "String";
-
-var recipients = new List<DriveRecipient>()
+var requestBody = new Microsoft.Graph.Beta.Drives.Item.Items.Item.CreateLink.CreateLinkPostRequestBody
 {
-	new DriveRecipient
+	Type = "view",
+	Scope = "anonymous",
+	Password = "String",
+	Recipients = new List<DriveRecipient>
 	{
-	}
+		new DriveRecipient
+		{
+			OdataType = "microsoft.graph.driveRecipient",
+		},
+	},
+	SendNotification = true,
+	RetainInheritedPermissions = false,
 };
+var result = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].CreateLink.PostAsync(requestBody);
 
-await graphClient.Me.Drive.Items["{driveItem-id}"]
-	.CreateLink(type,scope,null,password,null,recipients,null)
-	.Request()
-	.PostAsync();
 
 ```

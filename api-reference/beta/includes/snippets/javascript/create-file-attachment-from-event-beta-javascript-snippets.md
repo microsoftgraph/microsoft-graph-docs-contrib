@@ -16,7 +16,7 @@ const attachment = {
     contentBytes: 'bWFjIGFuZCBjaGVlc2UgdG9kYXk='
 };
 
-await client.api('/me/events('AAMkAGI1AAAt9AHjAAA=')/attachments')
+await client.api('/me/events/AAMkAGI1AAAt9AHjAAA=/attachments')
 	.version('beta')
 	.post(attachment);
 

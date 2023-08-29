@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodelsidentitygovernance "github.com/microsoftgraph/msgraph-beta-sdk-go/models/identitygovernance"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewWorkflow()
+
+requestBody := graphmodelsidentitygovernance.NewWorkflow()
 category := graphmodels.JOINER_LIFECYCLEWORKFLOWCATEGORY 
 requestBody.SetCategory(&category) 
 description := "Configure new hire tasks for onboarding employees on their first day"
@@ -16,26 +25,23 @@ displayName := "Australia Onboard new hire employee"
 requestBody.SetDisplayName(&displayName) 
 isEnabled := true
 requestBody.SetIsEnabled(&isEnabled) 
-isSchedulingEnabled := false
+isSchedulingEnabled := true
 requestBody.SetIsSchedulingEnabled(&isSchedulingEnabled) 
-executionConditions := graphmodels.NewWorkflowExecutionConditions()
-additionalData := map[string]interface{}{
-scope := graphmodels.New()
+executionConditions := graphmodelsidentitygovernance.NewTriggerAndScopeBasedConditions()
+scope := graphmodelsidentitygovernance.NewRuleBasedSubjectSet()
 rule := "(country eq 'Australia')"
 scope.SetRule(&rule) 
-	executionConditions.SetScope(scope)
-trigger := graphmodels.New()
-timeBasedAttribute := "employeeHireDate"
+executionConditions.SetScope(scope)
+trigger := graphmodelsidentitygovernance.NewTimeBasedAttributeTrigger()
+timeBasedAttribute := graphmodels.EMPLOYEEHIREDATE_WORKFLOWTRIGGERTIMEBASEDATTRIBUTE 
 trigger.SetTimeBasedAttribute(&timeBasedAttribute) 
 offsetInDays := int32(0)
 trigger.SetOffsetInDays(&offsetInDays) 
-	executionConditions.SetTrigger(trigger)
-}
-executionConditions.SetAdditionalData(additionalData)
+executionConditions.SetTrigger(trigger)
 requestBody.SetExecutionConditions(executionConditions)
 
 
-task := graphmodels.NewTask()
+task := graphmodelsidentitygovernance.NewTask()
 continueOnError := false
 task.SetContinueOnError(&continueOnError) 
 description := "Enable user account in the directory"
@@ -50,7 +56,7 @@ arguments := []graphmodels.KeyValuePairable {
 
 }
 task.SetArguments(arguments)
-task1 := graphmodels.NewTask()
+task1 := graphmodelsidentitygovernance.NewTask()
 continueOnError := false
 task1.SetContinueOnError(&continueOnError) 
 description := "Send welcome email to new hire"
@@ -66,14 +72,13 @@ arguments := []graphmodels.KeyValuePairable {
 }
 task1.SetArguments(arguments)
 
-tasks := []graphmodels.Taskable {
+tasks := []graphmodelsidentitygovernance.Taskable {
 	task,
 	task1,
-
 }
 requestBody.SetTasks(tasks)
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().Post(context.Background(), requestBody, nil)
+workflows, err := graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -27,10 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | AdministrativeUnit.ReadWrite.All |
 
-To add a user, group, or device to an administrative unit, the calling principal must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
-
-* Privileged Role Administrator
-* Global Administrator
+To add a user, group, or device to an administrative unit, the calling user must be assigned the *Privileged Role Administrator* [Azure AD role](/azure/active-directory/roles/permissions-reference).
 
 ### Permissions to create a new group
 |Permission type      | Permissions (from least to most privileged)              |
@@ -39,11 +36,7 @@ To add a user, group, or device to an administrative unit, the calling principal
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.ReadWrite.All |
 
-To create a new group in an administrative unit, the calling principal must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
-
-* Privileged Role Administrator
-* Global Administrator
-* Groups Administrator
+To create a new group in an administrative unit, the calling user must be assigned the *Privileged Role Administrator* or *Groups Administrator* [Azure AD role](/azure/active-directory/roles/permissions-reference).
 
 ## HTTP request
 
@@ -66,7 +59,7 @@ POST /administrativeUnits/{id}/members
 | Content-type  | application/json. Required. |
 
 ### Adding an existing user or group
-In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md), [device](../resources/device.md), or [directoryObject](../resources/directoryobject.md) to be added.
+In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md), [device](../resources/device.md), or [directoryObject](../resources/directoryobject.md) to be added. If the administrative unit is a restricted management administrative unit (`isMemberManagementRestricted`=true), the group type must be an Azure AD security group. Only non-unified groups that are security enabled, not mail enabled, and not on-premises sync enabled are supported.
 
 ### Creating a new group
 The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group in the administrative unit.
@@ -115,24 +108,32 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-administrativeunits-members-ref-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/post-administrativeunits-members-ref-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/post-administrativeunits-members-ref-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-administrativeunits-members-ref-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-administrativeunits-members-ref-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-administrativeunits-members-ref-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-administrativeunits-members-ref-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-administrativeunits-members-ref-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/post-administrativeunits-members-ref-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-administrativeunits-members-ref-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-administrativeunits-members-ref-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -184,24 +185,32 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-administrativeunits-members-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/post-administrativeunits-members-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/post-administrativeunits-members-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-administrativeunits-members-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-administrativeunits-members-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-administrativeunits-members-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-administrativeunits-members-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/post-administrativeunits-members-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-administrativeunits-members-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-administrativeunits-members-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -226,37 +235,37 @@ Content-type: application/json
 
 {
    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
-	 "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
-	 "deletedDateTime": null,
-	 "classification": null,
-	 "createdDateTime": "2018-12-22T02:21:05Z",
-	 "description": "Self help community for golf",
-	 "displayName": "Golf Assist",
-	 "expirationDateTime": null,
-	 "groupTypes": [
-	     "Unified"
-	 ],
+     "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+     "deletedDateTime": null,
+     "classification": null,
+     "createdDateTime": "2018-12-22T02:21:05Z",
+     "description": "Self help community for golf",
+     "displayName": "Golf Assist",
+     "expirationDateTime": null,
+     "groupTypes": [
+         "Unified"
+     ],
    "isAssignableToRole": null,
-	 "mail": "golfassist@contoso.com",
-	 "mailEnabled": true,
-	 "mailNickname": "golfassist",
-	 "membershipRule": null,
-	 "membershipRuleProcessingState": null,
-	 "onPremisesLastSyncDateTime": null,
-	 "onPremisesSecurityIdentifier": null,
-	 "onPremisesSyncEnabled": null,
-	 "preferredDataLocation": "CAN",
-	 "preferredLanguage": null,
-	 "proxyAddresses": [
-	     "SMTP:golfassist@contoso.onmicrosoft.com"
-	 ],
-	 "renewedDateTime": "2018-12-22T02:21:05Z",
-	 "resourceBehaviorOptions": [],
-	 "resourceProvisioningOptions": [],
-	 "securityEnabled": false,
+     "mail": "golfassist@contoso.com",
+     "mailEnabled": true,
+     "mailNickname": "golfassist",
+     "membershipRule": null,
+     "membershipRuleProcessingState": null,
+     "onPremisesLastSyncDateTime": null,
+     "onPremisesSecurityIdentifier": null,
+     "onPremisesSyncEnabled": null,
+     "preferredDataLocation": "CAN",
+     "preferredLanguage": null,
+     "proxyAddresses": [
+         "SMTP:golfassist@contoso.onmicrosoft.com"
+     ],
+     "renewedDateTime": "2018-12-22T02:21:05Z",
+     "resourceBehaviorOptions": [],
+     "resourceProvisioningOptions": [],
+     "securityEnabled": false,
    "securityIdentifier": "S-1-12-1-1753967289-1089268234-832641959-555555555",
-	 "theme": null,
-	 "visibility": "Public",
-	 "onPremisesProvisioningErrors": []
+     "theme": null,
+     "visibility": "Public",
+     "onPremisesProvisioningErrors": []
 }
 ```

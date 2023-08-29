@@ -4,14 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  graphplanner "github.com/microsoftgraph/msgraph-beta-sdk-go/planner"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "return=representation")
 headers.Add("If-Match", "W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 
-configuration := &graphconfig.PlannerPlanItemDetailsRequestBuilderPatchRequestConfiguration{
+configuration := &graphplanner.PlannerPlanItemDetailsRequestBuilderPatchRequestConfiguration{
 	Headers: headers,
 }
 requestBody := graphmodels.NewPlannerPlanDetails()
@@ -31,7 +41,7 @@ category3 := null
 categoryDescriptions.SetCategory3(&category3) 
 requestBody.SetCategoryDescriptions(categoryDescriptions)
 
-result, err := graphClient.Planner().PlansById("plannerPlan-id").Details().Patch(context.Background(), requestBody, configuration)
+details, err := graphClient.Planner().Plans().ByPlannerPlanId("plannerPlan-id").Details().Patch(context.Background(), requestBody, configuration)
 
 
 ```

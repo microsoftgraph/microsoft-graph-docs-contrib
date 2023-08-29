@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAccessPackageAssignmentRequest()
 requestType := "AdminAdd"
@@ -21,7 +29,7 @@ accessPackageId := "a914b616-e04e-476b-aa37-91038f0b165b"
 accessPackageAssignment.SetAccessPackageId(&accessPackageId) 
 requestBody.SetAccessPackageAssignment(accessPackageAssignment)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Post(context.Background(), requestBody, nil)
+accessPackageAssignmentRequests, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

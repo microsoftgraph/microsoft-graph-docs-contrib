@@ -4,17 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphdevicemanagement "github.com/microsoftgraph/msgraph-beta-sdk-go/devicemanagement"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestParameters := &graphconfig.DeviceManagementVirtualEndpointExternalPartnerSettingsRequestBuilderGetQueryParameters{
+
+requestParameters := &graphdevicemanagement.DeviceManagementVirtualEndpointExternalPartnerSettingsRequestBuilderGetQueryParameters{
 	Select: [] string {"id","partnerId","enableConnection"},
 }
-configuration := &graphconfig.DeviceManagementVirtualEndpointExternalPartnerSettingsRequestBuilderGetRequestConfiguration{
+configuration := &graphdevicemanagement.DeviceManagementVirtualEndpointExternalPartnerSettingsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ExternalPartnerSettings().Get(context.Background(), configuration)
+externalPartnerSettings, err := graphClient.DeviceManagement().VirtualEndpoint().ExternalPartnerSettings().Get(context.Background(), configuration)
 
 
 ```

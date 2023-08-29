@@ -67,6 +67,8 @@ The following table shows the properties that are required when you create the m
 |updateScheduleType|[macOSSoftwareUpdateScheduleType](../resources/intune-deviceconfig-macossoftwareupdatescheduletype.md)|Update schedule type. Possible values are: `alwaysUpdate`, `updateDuringTimeWindows`, `updateOutsideOfTimeWindows`.|
 |customUpdateTimeWindows|[customUpdateTimeWindow](../resources/intune-deviceconfig-customupdatetimewindow.md) collection|Custom Time windows when updates will be allowed or blocked. This collection can contain a maximum of 20 elements.|
 |updateTimeWindowUtcOffsetInMinutes|Int32|Minutes indicating UTC offset for each update time window|
+|maxUserDeferralsCount|Int32|The maximum number of times the system allows the user to postpone an update before it’s installed. Supported values: 0 - 366. Valid values 0 to 365|
+|priority|[macOSPriority](../resources/intune-deviceconfig-macospriority.md)|The scheduling priority for downloading and preparing the requested update. Default: Low. Possible values: Null, Low, High. Possible values are: `low`, `high`, `unknownFutureValue`.|
 
 
 
@@ -80,7 +82,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1542
+Content-length: 1596
 
 {
   "@odata.type": "#microsoft.graph.macOSSoftwareUpdateConfiguration",
@@ -126,7 +128,9 @@ Content-length: 1542
       "endTime": "12:03:02.3740000"
     }
   ],
-  "updateTimeWindowUtcOffsetInMinutes": 2
+  "updateTimeWindowUtcOffsetInMinutes": 2,
+  "maxUserDeferralsCount": 5,
+  "priority": "high"
 }
 ```
 
@@ -135,7 +139,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1714
+Content-Length: 1768
 
 {
   "@odata.type": "#microsoft.graph.macOSSoftwareUpdateConfiguration",
@@ -184,6 +188,8 @@ Content-Length: 1714
       "endTime": "12:03:02.3740000"
     }
   ],
-  "updateTimeWindowUtcOffsetInMinutes": 2
+  "updateTimeWindowUtcOffsetInMinutes": 2,
+  "maxUserDeferralsCount": 5,
+  "priority": "high"
 }
 ```

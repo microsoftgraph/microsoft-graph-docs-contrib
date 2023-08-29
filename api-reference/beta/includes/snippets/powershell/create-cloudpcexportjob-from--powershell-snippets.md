@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Administration
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 
 $params = @{
-	ReportName = "TotalAggregatedRemoteConnectionReports"
-	Select = @(
+	reportName = "TotalAggregatedRemoteConnectionReports"
+	select = @(
 		"CloudPcId"
 		"ManagedDeviceName"
 		"UserPrincipalName"
@@ -17,6 +17,6 @@ $params = @{
 	)
 }
 
-New-MgDeviceManagementVirtualEndpointReportExportJob -BodyParameter $params
+New-MgBetaDeviceManagementVirtualEndpointReportExportJob -BodyParameter $params
 
 ```

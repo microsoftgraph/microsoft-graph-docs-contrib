@@ -4,21 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestFilter := "Extensions/any"
 
-requestParameters := &graphconfig.MeMessagesRequestBuilderGetQueryParameters{
+requestFilter := "Extensions/any(f:f/id eq 'Com.Contoso.Referral')"
+
+requestParameters := &graphusers.ItemMessagesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
-	Expand: [] string {"Extensions($filter=id%20eq%20'Com.Contoso.Referral')"},
+	Expand: [] string {"Extensions($filter=id eq 'Com.Contoso.Referral')"},
 }
-configuration := &graphconfig.MeMessagesRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemMessagesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Messages().Get(context.Background(), configuration)
+messages, err := graphClient.Me().Messages().Get(context.Background(), configuration)
 
 
 ```

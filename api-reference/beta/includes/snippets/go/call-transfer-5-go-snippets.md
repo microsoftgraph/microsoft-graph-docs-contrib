@@ -4,10 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphcommunications "github.com/microsoftgraph/msgraph-beta-sdk-go/communications"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewTransferPostRequestBody()
+
+requestBody := graphcommunications.NewTransferPostRequestBody()
 transferTarget := graphmodels.NewInvitationParticipantInfo()
 endpointType := graphmodels.DEFAULT_ENDPOINTTYPE 
 transferTarget.SetEndpointType(&endpointType) 
@@ -44,7 +53,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Communications().CallsById("call-id").Transfer().Post(context.Background(), requestBody, nil)
+graphClient.Communications().Calls().ByCallId("call-id").Transfer().Post(context.Background(), requestBody, nil)
 
 
 ```

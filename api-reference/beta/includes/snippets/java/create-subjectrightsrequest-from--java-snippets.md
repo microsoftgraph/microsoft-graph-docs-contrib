@@ -29,6 +29,14 @@ regulationsList.add("CCPA");
 subjectRightsRequest.regulations = regulationsList;
 SubjectRightsRequestAllSiteLocation siteLocations = new SubjectRightsRequestAllSiteLocation();
 subjectRightsRequest.siteLocations = siteLocations;
+LinkedList<User> approversList = new LinkedList<User>();
+User approvers = new User();
+approvers.id = "1B761ED2-AA7E-4D82-9CF5-C09D737B6167";
+approversList.add(approvers);
+UserCollectionResponse userCollectionResponse = new UserCollectionResponse();
+userCollectionResponse.value = approversList;
+UserCollectionPage userCollectionPage = new UserCollectionPage(userCollectionResponse, null);
+subjectRightsRequest.approvers = userCollectionPage;
 
 graphClient.privacy().subjectRightsRequests()
 	.buildRequest()

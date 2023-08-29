@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewGroupSetting()
 templateId := "62375ab9-6b52-47ed-826b-58e47e0e304b"
@@ -38,11 +46,10 @@ values := []graphmodels.SettingValueable {
 	settingValue1,
 	settingValue2,
 	settingValue3,
-
 }
 requestBody.SetValues(values)
 
-result, err := graphClient.GroupSettings().Post(context.Background(), requestBody, nil)
+groupSettings, err := graphClient.GroupSettings().Post(context.Background(), requestBody, nil)
 
 
 ```

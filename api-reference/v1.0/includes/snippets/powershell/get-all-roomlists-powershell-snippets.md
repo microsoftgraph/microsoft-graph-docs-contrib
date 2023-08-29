@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Calendar
 
-Get-MgPlace -PlaceId $placeId
+Get-MgPlaceAsRoomList
 
 ```

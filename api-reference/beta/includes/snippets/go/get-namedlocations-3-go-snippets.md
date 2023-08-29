@@ -4,20 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphidentity "github.com/microsoftgraph/msgraph-beta-sdk-go/identity"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 
 requestFilter := "createdDateTime ge 2019-09-01T00:00:00Z"
 
-requestParameters := &graphconfig.IdentityConditionalAccessNamedLocationsRequestBuilderGetQueryParameters{
+requestParameters := &graphidentity.IdentityConditionalAccessNamedLocationsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.IdentityConditionalAccessNamedLocationsRequestBuilderGetRequestConfiguration{
+configuration := &graphidentity.IdentityConditionalAccessNamedLocationsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Identity().ConditionalAccess().NamedLocations().Get(context.Background(), configuration)
+namedLocations, err := graphClient.Identity().ConditionalAccess().NamedLocations().Get(context.Background(), configuration)
 
 
 ```

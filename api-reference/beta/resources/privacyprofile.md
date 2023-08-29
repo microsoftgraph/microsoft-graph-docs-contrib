@@ -4,7 +4,7 @@ description: "Represents a company's privacy profile, which includes a privacy s
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "jumasure"
+author: "adimitui"
 ---
 
 # privacyProfile resource type

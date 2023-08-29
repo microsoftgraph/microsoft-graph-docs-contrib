@@ -6,18 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new ThreatAssessmentRequestRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new ThreatAssessmentRequestRequestBuilderGetQueryParameters();
+$queryParameters = ThreatAssessmentRequestRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["results"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->informationProtection()->threatAssessmentRequestsById('threatAssessmentRequest-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->informationProtection()->threatAssessmentRequests()->byThreatAssessmentRequestId('threatAssessmentRequest-id')->get($requestConfiguration)->wait();
 
 ```

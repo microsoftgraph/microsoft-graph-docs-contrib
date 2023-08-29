@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders/delta
 Prefer: odata.maxpagesize=2
 ```
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/mailfolder-delta-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/mailfolder-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -120,7 +124,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailfolders/delta?$skiptoken={_skipToken_}",
+  "@odata.nextLink":"https://graph.microsoft.com/beta/me/mailFolders/delta?$skiptoken={_skipToken_}",
   "value": [
     {
       "displayName": "displayName-value",

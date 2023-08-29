@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: root resource type
 ms.localizationpriority: medium
 description: "The root facet indicates that an object is the top-most one in its hierarchy."

@@ -1,10 +1,12 @@
 {
     "pathsToIgnore": [
+        "/adaptive-cards",
         "/aspnet",
         "/azure",
         "/compliance",
         "/cloud-app-security",
         "/concepts",
+        "/defender",
         "/defender-for-identity",
         "/deployedge",
         "/dotnet",

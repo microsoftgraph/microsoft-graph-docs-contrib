@@ -4,8 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewEducationAssignment()
 displayName := "Reading and review test 09.03 #5"
@@ -21,7 +30,7 @@ requestBody.SetDueDateTime(&dueDateTime)
 addedStudentAction := graphmodels.NONE_EDUCATIONADDEDSTUDENTACTION 
 requestBody.SetAddedStudentAction(&addedStudentAction) 
 
-result, err := graphClient.Education().ClassesById("educationClass-id").AssignmentsById("educationAssignment-id").Patch(context.Background(), requestBody, nil)
+assignments, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").Assignments().ByEducationAssignmentId("educationAssignment-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

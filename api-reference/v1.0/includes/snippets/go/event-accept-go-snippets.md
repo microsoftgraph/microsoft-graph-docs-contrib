@@ -4,16 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
-requestBody := graphmodels.NewAcceptPostRequestBody()
+
+requestBody := graphusers.NewItemAcceptPostRequestBody()
 comment := "comment-value"
 requestBody.SetComment(&comment) 
 sendResponse := true
 requestBody.SetSendResponse(&sendResponse) 
 
-graphClient.Me().EventsById("event-id").Accept().Post(context.Background(), requestBody, nil)
+graphClient.Me().Events().ByEventId("event-id").Accept().Post(context.Background(), requestBody, nil)
 
 
 ```

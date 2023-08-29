@@ -58,7 +58,7 @@ The following is an example of the request.
   "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com", "71d64d0e-7225-49b6-b0b1-070d476cda51"]
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/staffmembers/71d64d0e-7225-49b6-b0b1-070d476cda51
+GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/staffMembers/71d64d0e-7225-49b6-b0b1-070d476cda51
 ```
 
 ### Response

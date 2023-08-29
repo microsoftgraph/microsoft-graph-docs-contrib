@@ -52,6 +52,7 @@ The following table shows the properties that are required when you create the d
 |displayName|String|The user given display name|
 |description|String|The user given description|
 |isAssigned|Boolean|Signifies whether or not the intent is assigned to users|
+|isMigratingToConfigurationPolicy|Boolean|Signifies whether or not the intent is being migrated to the configurationPolicies endpoint|
 |lastModifiedDateTime|DateTimeOffset|When the intent was last modified|
 |templateId|String|The ID of the template this intent was created from (if any)|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
@@ -68,13 +69,14 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/intents
 Content-type: application/json
-Content-length: 266
+Content-length: 311
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntent",
   "displayName": "Display Name value",
   "description": "Description value",
   "isAssigned": true,
+  "isMigratingToConfigurationPolicy": true,
   "templateId": "Template Id value",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
@@ -87,7 +89,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 379
+Content-Length: 424
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementIntent",
@@ -95,6 +97,7 @@ Content-Length: 379
   "displayName": "Display Name value",
   "description": "Description value",
   "isAssigned": true,
+  "isMigratingToConfigurationPolicy": true,
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "templateId": "Template Id value",
   "roleScopeTagIds": [

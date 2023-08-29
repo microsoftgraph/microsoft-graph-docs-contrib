@@ -22,8 +22,8 @@ An item added to a Microsoft Graph [connection](externalconnectors-externalconne
 | [Create externalItem](../api/externalconnectors-externalconnection-put-items.md) | [externalItem](externalconnectors-externalitem.md) | Create an **externalItem**. |
 | [Get externalItem](../api/externalconnectors-externalitem-get.md)                | [externalItem](externalconnectors-externalitem.md) | Get an **externalItem**.    |
 | [Update externalItem](../api/externalconnectors-externalitem-update.md)          | [externalItem](externalconnectors-externalitem.md) | Update an **externalItem**. |
-| [Delete externalItem](../api/externalconnectors-externalitem-delete.md)          | None                            | Delete an externalItem. |
-|[addActivities](../api/externalconnectors-externalitem-addactivities.md)|[microsoft.graph.externalConnectors.externalActivityResult](../resources/externalconnectors-externalactivity.md) collection|Append additional instances of [externalActivity](../resources/externalconnectors-externalactivity.md) objects on an **externalItem**.|
+| [Delete externalItem](../api/externalconnectors-externalitem-delete.md)          | None                            | Delete an **externalItem**. |
+| [Add activities](../api/externalconnectors-externalitem-addactivities.md)         |[microsoft.graph.externalConnectors.externalActivityResult](../resources/externalconnectors-externalactivity.md) collection | Append additional instances of [externalActivity](../resources/externalconnectors-externalactivity.md) objects on an **externalItem**.|
 
 ## Properties
 
@@ -37,7 +37,7 @@ An item added to a Microsoft Graph [connection](externalconnectors-externalconne
 ## Relationships
 | Relationship | Type                                                     | Description |
 |:-------------|:---------------------------------------------------------|:---|
-| activities        | [microsoft.graph.externalConnectors.externalActivity](externalconnectors-externalactivity.md) collection               | Write-only property. Returns results. |
+| activities        | [microsoft.graph.externalConnectors.externalActivity](externalconnectors-externalactivity.md) collection               |  Returns a list of activities performed on the item. Write-only.  |
 
 ## JSON representation
 

@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewPrintTaskDefinition()
 displayName := "Test TaskDefinitionName"
@@ -15,7 +23,7 @@ displayName := "Requesting App Display Name"
 createdBy.SetDisplayName(&displayName) 
 requestBody.SetCreatedBy(createdBy)
 
-result, err := graphClient.Print().TaskDefinitionsById("printTaskDefinition-id").Patch(context.Background(), requestBody, nil)
+taskDefinitions, err := graphClient.Print().TaskDefinitions().ByPrintTaskDefinitionId("printTaskDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

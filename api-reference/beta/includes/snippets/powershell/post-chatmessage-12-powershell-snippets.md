@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
-	Body = @{
-		ContentType = "html"
-		Content = "<emoji alt="😶‍🌫️"></emoji>"
+	body = @{
+		contentType = "html"
+		content = "<emoji alt="😶‍🌫️"></emoji>"
 	}
 }
 
-New-MgChatMessage -ChatId $chatId -BodyParameter $params
+New-MgBetaChatMessage -ChatId $chatId -BodyParameter $params
 
 ```

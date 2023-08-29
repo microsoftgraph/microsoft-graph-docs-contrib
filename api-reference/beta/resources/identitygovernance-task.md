@@ -43,10 +43,6 @@ Inherits from [entity](../resources/entity.md).
 |taskDefinitionId|String|A unique template identifier for the task. For more information about the tasks that Lifecycle Workflows currently supports and their unique identifiers, see [supported tasks](../resources/identitygovernance-task.md#supported-tasks). Required.<br><br>Supports `$filter`(`eq`, `ne`).|
 
 ### Supported tasks
-<!-- Comment out CRR until we can resolve the links problem
-
-[!INCLUDE [identitygovernance-lifecycleworkflows-tasks](~/../azure_docs/includes/lifecycle-workflows-tasks-table.md)]
--->
 
 [!INCLUDE [lifecycle-workflows-tasks-table](../includes/identitygovernance-lifecycleworkflows-tasks-table.md)]
 

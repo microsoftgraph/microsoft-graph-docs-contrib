@@ -4,8 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewPlannerPlanConfiguration()
 defaultLanguage := "en-us"
@@ -30,11 +38,10 @@ buckets := []graphmodels.PlannerPlanConfigurationBucketDefinitionable {
 	plannerPlanConfigurationBucketDefinition1,
 	plannerPlanConfigurationBucketDefinition2,
 	plannerPlanConfigurationBucketDefinition3,
-
 }
 requestBody.SetBuckets(buckets)
 
-result, err := graphClient.Solutions().BusinessScenariosById("businessScenario-id").Planner().PlanConfiguration().Patch(context.Background(), requestBody, nil)
+planConfiguration, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().PlanConfiguration().Patch(context.Background(), requestBody, nil)
 
 
 ```

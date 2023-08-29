@@ -11,7 +11,7 @@ LinkedList<String> rolesList = new LinkedList<String>();
 rolesList.add("read");
 permission.roles = rolesList;
 
-graphClient.sites("{sitesId}").permissions("{permissionId}")
+graphClient.sites("f2d90359-865b-4b6c-8848-d2722dd630e5").permissions("2")
 	.buildRequest()
 	.patch(permission);
 

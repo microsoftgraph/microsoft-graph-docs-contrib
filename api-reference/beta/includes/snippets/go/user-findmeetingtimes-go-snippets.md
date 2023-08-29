@@ -4,16 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-configuration := &graphconfig.MeFindMeetingTimesRequestBuilderPostRequestConfiguration{
+configuration := &graphusers.ItemFindMeetingTimesRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
-requestBody := graphmodels.NewFindMeetingTimesPostRequestBody()
+requestBody := graphusers.NewItemFindMeetingTimesPostRequestBody()
 
 
 attendeeBase := graphmodels.NewAttendeeBase()
@@ -26,9 +36,8 @@ address := "alexw@contoso.onmicrosoft.com"
 emailAddress.SetAddress(&address) 
 attendeeBase.SetEmailAddress(emailAddress)
 
-attendees := []graphmodels.Objectable {
+attendees := []graphmodels.attendeeBaseable {
 	attendeeBase,
-
 }
 requestBody.SetAttendees(attendees)
 locationConstraint := graphmodels.NewLocationConstraint()
@@ -44,9 +53,8 @@ locationConstraintItem.SetResolveAvailability(&resolveAvailability)
 displayName := "Conf room Hood"
 locationConstraintItem.SetDisplayName(&displayName) 
 
-locations := []graphmodels.Objectable {
+locations := []graphmodels.locationConstraintItemable {
 	locationConstraintItem,
-
 }
 locationConstraint.SetLocations(locations)
 requestBody.SetLocationConstraint(locationConstraint)
@@ -71,7 +79,6 @@ timeSlot.SetEnd(end)
 
 timeSlots := []graphmodels.TimeSlotable {
 	timeSlot,
-
 }
 timeConstraint.SetTimeSlots(timeSlots)
 requestBody.SetTimeConstraint(timeConstraint)
@@ -81,10 +88,10 @@ meetingDuration , err := abstractions.ParseISODuration("PT1H")
 requestBody.SetMeetingDuration(&meetingDuration) 
 returnSuggestionReasons := true
 requestBody.SetReturnSuggestionReasons(&returnSuggestionReasons) 
-minimumAttendeePercentage := "100"
+minimumAttendeePercentage := float64(100)
 requestBody.SetMinimumAttendeePercentage(&minimumAttendeePercentage) 
 
-result, err := graphClient.Me().FindMeetingTimes().Post(context.Background(), requestBody, configuration)
+findMeetingTimes, err := graphClient.Me().FindMeetingTimes().Post(context.Background(), requestBody, configuration)
 
 
 ```
