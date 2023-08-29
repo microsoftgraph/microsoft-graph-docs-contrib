@@ -12,9 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 Read the configuration details for the [X.509 certificate authentication method](../resources/x509certificateauthenticationmethodconfiguration.md) in the [authentication methods policy](../resources/authenticationmethodspolicy.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

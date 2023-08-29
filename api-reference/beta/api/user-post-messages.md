@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Create a draft of a new message in either JSON or MIME format.
 
 When using JSON format, you can:
@@ -33,6 +31,8 @@ By default, this operation saves the draft in the Drafts folder.
 Alternatively, [send a new message](../api/user-sendmail.md) in a single action, or create a draft [to forward](../api/message-createforward.md), [to reply](../api/message-createreply.md) or [to reply-all](../api/message-createreplyall.md) to an existing message.
 
 >\* **Note:** S/MIME message payloads are currently limited to 4 MB. Submission attempts that exceed this limit will result in an`HTTP 413 Request Entity Too Large` error response.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

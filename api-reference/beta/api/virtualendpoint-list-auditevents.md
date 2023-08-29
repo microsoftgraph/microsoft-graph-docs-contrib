@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 List all the [cloudPcAuditEvent](../resources/cloudpcauditevent.md) objects for the tenant.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

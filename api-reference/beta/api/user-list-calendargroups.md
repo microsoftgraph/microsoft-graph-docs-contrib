@@ -13,9 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Get the user's calendar groups.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-Get the user's calendar groups.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

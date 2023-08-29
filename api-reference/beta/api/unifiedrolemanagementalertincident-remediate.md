@@ -12,8 +12,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Remediate or mitigate an incident of an alert. Run this action to fix an incident for a remediable alert, automatically applying the recommended **mitigationSteps**.
 
 The alert incident can be one of the following types that are derived from the [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) object:
@@ -25,6 +23,8 @@ The alert incident can be one of the following types that are derived from the [
 - [sequentialActivationRenewalsAlertIncident](../resources/sequentialactivationrenewalsalertincident.md)
 - [staleSignInAlertIncident](../resources/stalesigninalertincident.md)
 - [tooManyGlobalAdminsAssignedToTenantAlertIncident](../resources/toomanyglobaladminsassignedtotenantalertincident.md)
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

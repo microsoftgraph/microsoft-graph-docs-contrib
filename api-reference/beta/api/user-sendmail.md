@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Send the message specified in the request body using either JSON or MIME format.
 
 When using JSON format you can include an [attachment](../resources/attachment.md) and use a [mention](../resources/mention.md) to call out another user in the new message.
@@ -28,6 +26,8 @@ This method saves the message in the **Sent Items** folder.
 Alternatively, [create a draft message](../api/user-post-messages.md) to send later.
 
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see [here](/graph/outlook-things-to-know-about-send-mail).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

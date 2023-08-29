@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Create an [event](../resources/event.md) in the user's default calendar or specified calendar.
 
 By default, the **allowNewTimeProposals** property is set to true when an event is created, which means invitees can propose a different date/time for the event. See [Propose new meeting times](/graph/outlook-calendar-meeting-proposals) for more information on how to propose a time, and how to receive and accept a new time proposal.
@@ -46,6 +44,8 @@ Additionally, if the meeting location has been set up as a resource, or if the e
 4. Set the attendee **type** property as `resource`.
 5. Set the attendee **emailAddress** as the resource email address.
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Get a list of [event](../resources/event.md) objects from the user's default calendar or
 from a specified calendar. The list contains single instance meetings and series masters.
 
@@ -26,6 +24,8 @@ There are two scenarios where an app can get events in another user's calendar:
 * If the app has application permissions, or,
 * If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a calendar with that user, or, has given delegated access to that user. See [details and an example](/graph/outlook-get-shared-events-calendars).
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ### Support various time zones
 

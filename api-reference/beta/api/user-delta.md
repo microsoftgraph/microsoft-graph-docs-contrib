@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Get newly created, updated, or deleted users without having to perform a full read of the entire user collection. See [change tracking](/graph/delta-query-overview) for details.
 
 > [!NOTE]
 > Changes to the **licenseAssignmentStates** property are currently not tracked.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

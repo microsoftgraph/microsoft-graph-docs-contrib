@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 Create a new workbook session. 
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 Excel APIs can be called in one of two modes: 
 
 1. Persistent session - All changes made to the workbook are persisted (saved). This is the usual mode of operation. 
@@ -29,6 +27,8 @@ In some cases, creating a new session requires an indeterminate time to complete
 1. A `Prefer: respond-async` header is added to the request to indicate that it is a long-running operation.
 2. The response returns a `Location` header to specify the URL for polling the creation operation status. You can get the operation status by accessing the specified URL. The status will be one of the following: `notStarted`, `running`, `succeeded`, or `failed`.
 3. After the operation completes, you can request the status again and the response will show either `succeeded` or `failed`.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ### Error handling
 

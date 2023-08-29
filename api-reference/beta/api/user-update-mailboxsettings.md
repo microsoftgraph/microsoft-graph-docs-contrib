@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Enable, configure, or disable one or more of the following settings as part of a user's [mailboxSettings](../resources/mailboxsettings.md):
 
 - [automatic replies](../resources/automaticrepliessetting.md) (notify people automatically upon receipt of their email)
@@ -31,6 +29,8 @@ When updating the preferred time zone for a user, specify it in the Windows or [
 
 > [!TIP] 
 > You cannot create or delete any mailbox settings.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

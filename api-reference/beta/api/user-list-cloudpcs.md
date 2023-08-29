@@ -12,12 +12,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 List the [cloudPC](../resources/cloudpc.md) devices that are attributed to the signed-in user. 
 
 >[!NOTE]
 >This operation returns only the following properties: **id**, **displayName**, **imageDisplayName**, **servicePlanId**, **servicePlanName**, **servicePlanType**, **status**, **lastModifiedDateTime**, **aadDeviceId**, **statusDetails**, **gracePeriodEndDateTime**.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
