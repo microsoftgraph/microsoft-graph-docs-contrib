@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Publish an [app](../resources/teamsapp.md) to the Microsoft Teams app catalog.
 Specifically, this API publishes the app to your organization's catalog (the tenant app catalog);
 the created resource will have a **distributionMethod** property value of `organization`.
 
 The **requiresReview** property allows any user to submit an app for review by an administrator. Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Mark a [timeOffReason](../resources/timeoffreason.md) as inactive by setting the **isActive** property. Every team must include at least one **timeOffReason**.
 
 This method does not remove the specified **timeOffReason** instance. [timeOffItem](../resources/timeoffitem.md) instances that have been assigned this reason remain assigned to this reason.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

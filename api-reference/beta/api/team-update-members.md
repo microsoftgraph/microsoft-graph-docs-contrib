@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Update the role of a [conversationMember](../resources/conversationmember.md) in a [team](../resources/team.md).
 
 > [!NOTE]
 > Team members with the role of `guest` cannot be given the role of `owner`.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Update the properties of a [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object for an RBAC provider. You cannot update built-in roles. This feature requires an Azure AD Premium P1 or P2 license.
 
 The following RBAC providers are currently supported:
@@ -22,6 +20,8 @@ The following RBAC providers are currently supported:
 - device management (Intune)
 - directory (Azure AD) 
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Create a copy of a [team](../resources/team.md). This operation also creates a copy of the corresponding [group](../resources/group.md).
 You can specify which parts of the team to clone:
 
@@ -33,6 +31,8 @@ After the POST clone returns, you need to GET the [operation](../resources/teams
 returned by the Location: header to see if it's "running" or "succeeded" or "failed". 
 You should continue to GET until the status is not "running". 
 The recommended delay between GETs is 5 seconds.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 Get the properties and relationships of a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object of an RBAC provider. 
 
 The following RBAC providers are currently supported:
@@ -23,6 +21,8 @@ The following RBAC providers are currently supported:
 - directory (Azure AD directory roles)
 - entitlement management (Azure AD entitlement management)
 - Exchange Online
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

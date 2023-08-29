@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].
 
 [sitePage]: ../resources/sitePage.md
 [list]: ../resources/list.md
 [site]: ../resources/site.md
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

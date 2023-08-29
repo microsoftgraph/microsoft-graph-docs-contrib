@@ -13,9 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Gets the range object associated with the data body of the column.
+
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
-Gets the range object associated with the data body of the column.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

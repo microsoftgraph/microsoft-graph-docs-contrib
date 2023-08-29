@@ -12,8 +12,6 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Compute the [sensitivity label](../resources/security-sensitivitylabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set manually or explicitly by a user or service, rather than automatically based on file contents.
 
 Given [contentInfo](../resources/security-contentinfo.md), which includes existing content metadata [key-value pairs](../resources/security-keyvaluepair.md), and [labelingOptions](../resources/security-labelingoptions.md) as an input, the API returns an [informationProtectionAction](../resources/security-informationprotectionaction.md) object that contains one of more of the following: 
@@ -33,6 +31,8 @@ Given [contentInfo](../resources/security-contentinfo.md), which includes existi
 * [removeContentHeaderAction](../resources/security-removecontentheaderaction.md)
 * [removeProtectionAction](../resources/security-removeprotectionaction.md)
 * [removeWatermarkAction](../resources/security-removewatermarkaction.md)
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

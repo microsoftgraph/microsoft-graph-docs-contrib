@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 > [!IMPORTANT]
 > This API is in the process of being deprecated in favor of [Create team](../api/team-post.md), and will be removed by the end of 2019. For details about how to create a team from a group, see examples 4 and 5 in [Create team](../api/team-post.md).
 
@@ -24,6 +22,8 @@ In order to create a team, the group must have a least one owner.
 
 If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays.
 The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

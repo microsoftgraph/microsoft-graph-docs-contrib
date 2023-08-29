@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Retrieve a list of [appRoleAssignment](../resources/approleassignment.md) that users, groups, or client service principals have been granted for the given resource service principal.
 
 For example, if the resource service principal is the service principal for the Microsoft Graph API, this will return all service principals that have been granted any app-only permissions to Microsoft Graph.
@@ -22,6 +20,8 @@ For example, if the resource service principal is the service principal for the 
 If the resource service principal is an application that has app roles granted to users and groups, this will return all the users and groups assigned app roles for this application.
 
 >**Note** This request might have replication delays for app role assignments that were recently granted or removed.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

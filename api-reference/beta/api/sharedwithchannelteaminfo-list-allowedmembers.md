@@ -12,8 +12,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Get the list of [conversationMembers](../resources/conversationmember.md) who can access a shared [channel](../resources/channel.md).
 
 This method does not return the following [conversationMembers](../resources/conversationmember.md) from the [team](../resources/team.md):
@@ -24,6 +22,8 @@ This method does not return the following [conversationMembers](../resources/con
 > The membership ID returned by the server must be treated as an opaque string. The client should not try to parse or make any assumptions about this ID.
 >
 > The membership results can map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are only from the current tenant.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

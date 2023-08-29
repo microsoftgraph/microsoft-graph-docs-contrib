@@ -12,8 +12,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Get a list of the alert incidents. The alert incidents are a collection of any following type that is derived from the [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) object:
 
 - [invalidLicenseAlertIncident](../resources/invalidlicensealertincident.md)
@@ -24,6 +22,8 @@ Get a list of the alert incidents. The alert incidents are a collection of any f
 - [staleSignInAlertIncident](../resources/stalesigninalertincident.md)
 - [tooManyGlobalAdminsAssignedToTenantAlertIncident](../resources/toomanyglobaladminsassignedtotenantalertincident.md)
 
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

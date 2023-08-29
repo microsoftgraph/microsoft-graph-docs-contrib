@@ -12,8 +12,6 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Indicate to the consuming application what actions it should take to remove the label information.
 
 Given [contentInfo](../resources/contentinfo.md) as an input, which includes existing content metadata [key-value pairs](../resources/security-keyvaluepair.md), the API returns an [informationProtectionAction](../resources/security-informationprotectionaction.md) that contains some combination of one or more of the following: 
@@ -24,6 +22,8 @@ Given [contentInfo](../resources/contentinfo.md) as an input, which includes exi
 * [removeContentHeaderAction](../resources/security-removecontentheaderaction.md)
 * [removeProtectionAction](../resources/security-removeprotectionaction.md)
 * [removeWatermarkAction](../resources/security-removewatermarkaction.md)
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
