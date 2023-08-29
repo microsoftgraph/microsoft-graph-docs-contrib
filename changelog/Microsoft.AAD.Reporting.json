@@ -241,7 +241,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "customSecurityAttributeAudit",
           "ChangeType": "Addition",
-          "Description": "Added the [customSecurityAttributeAudit](https://learn.microsoft.com/en-us/graph/api/resources/customsecurityattributeaudit?view=graph-rest-beta) resource and its associated methods. Use this resource and its methods to retrieve audit logs relating to custom security attribute events.",
+          "Description": "Added the [customSecurityAttributeAudit](https://learn.microsoft.com/en-us/graph/api/resources/customsecurityattributeaudit?view=graph-rest-beta) resource and its associated methods. Use this resource and its methods to retrieve audit logs related to custom security attribute events.",
           "Target": "customSecurityAttributeAudit"
         }
       ],
