@@ -11930,7 +11930,7 @@ items:
                         href: api/orgcontact-list-memberof.md
                       - name: Get manager
                         href: api/orgcontact-get-manager.md
-              - name: People admin settings (preview)
+              - name: People admin settings
                 href: resources/peopleadminsettings.md
                 items:
                   - name: Get
@@ -11943,7 +11943,7 @@ items:
                         href: api/peopleadminsettings-list-pronouns.md
                       - name: Update
                         href: api/pronounssettings-update.md
-                  - name: Profile card customization (preview)
+                  - name: Profile card customization
                     items:
                       - name: Profile card property
                         href: resources/profilecardproperty.md
@@ -14945,7 +14945,7 @@ items:
                     href: api/personwebsite-update.md
                   - name: Delete
                     href: api/personwebsite-delete.md
-          - name: Profile card customization (preview)
+          - name: Profile card customization
             items:
               - name: Profile card property
                 href: resources/profilecardproperty.md
