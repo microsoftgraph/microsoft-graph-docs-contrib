@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-microsoft.graph.deviceManagement.getPortalNotifications(), err := graphClient.DeviceManagement().Monitoring().AlertRecords().MicrosoftGraphDeviceManagementGetPortalNotifications().Get(context.Background(), nil)
+microsoftGraphDeviceManagementGetPortalNotifications, err := graphClient.DeviceManagement().Monitoring().AlertRecords().MicrosoftGraphDeviceManagementGetPortalNotifications().Get(context.Background(), nil)
 
 
 ```
