@@ -61,7 +61,7 @@ GET /me/people/?$search=j
 
 The [profile](/graph/api/resources/profile) API represents the next generation in modeling and representing people in Microsoft 365 services. Profile data can be used together with people data to build customized experiences based on Microsoft Graph.
 
-## Why configure profile cards in your organization (preview)?
+## Why configure profile cards in your organization?
 
 Profile cards let users in an organization see information about one another, such as their names and contact information. Administrators can use the [profile card](/graph/api/resources/profilecardproperty) API to customize how information about their organization surfaces within Microsoft 365 people experiences.
 
@@ -109,7 +109,7 @@ Looking for the API reference for these services?
 - [Use the Microsoft Graph API to integrate people and workplace intelligence in an app (beta)](/graph/api/resources/social-overview?view=graph-rest-beta&preserve-view=true)
 - The People API [person](/graph/api/resources/person) resource
 - [Profile (preview)](/graph/api/resources/profile) resource
-- [Profile card property (preview)](/graph/api/resources/profilecardproperty) resource
+- [Profile card property](/graph/api/resources/profilecardproperty) resource
 - [Insights API](/graph/api/resources/officegraphinsights)
 - [Analytics API (preview)](/graph/api/resources/useranalytics)
 
