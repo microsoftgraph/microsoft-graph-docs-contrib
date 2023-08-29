@@ -13,9 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Retrieve a list of [administrativeUnit](../resources/administrativeunit.md) objects.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-Retrieve a list of [administrativeUnit](../resources/administrativeunit.md) objects.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

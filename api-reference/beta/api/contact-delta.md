@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Get a set of contacts that have been added, deleted, or updated in a specified folder.
 
 A **delta** function call for contacts in a folder is similar to a GET request, except that by appropriately 
@@ -22,6 +20,8 @@ applying [state tokens](/graph/delta-query-overview) in one or more of these cal
 you can query for incremental changes in the contacts in 
 that folder. This allows you to maintain and synchronize a local store of a user's contacts without 
 having to fetch the entire set of contacts from the server every time.  
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

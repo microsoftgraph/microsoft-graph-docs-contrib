@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Get a set of contact folders that have been added, deleted, or removed from the user's mailbox.
 
 A **delta** function call for contact folders in a mailbox is similar to a GET request, except that by appropriately 
 applying [state tokens](/graph/delta-query-overview) in one or more of these calls, 
 you can query for incremental changes in the contact folders. This allows you to maintain and synchronize 
 a local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Create a new thread in the specified conversation.
 
 A thread and post are created as specified. Use [reply thread](conversationthread-reply.md) to further post
 to that thread. Or, if you get the post ID, you can also [reply](post-reply.md) to that post in that thread.
 
 Note: You can also [start a new conversation by first creating a thread](group-post-threads.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

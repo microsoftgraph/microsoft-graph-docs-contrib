@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 This action allows you to obtain short-lived embeddable URLs for an item in order to render a temporary preview.
 
 If you want to obtain long-lived embeddable links, use the [createLink][] API instead.
@@ -22,6 +20,8 @@ If you want to obtain long-lived embeddable links, use the [createLink][] API in
 > **Note:** The **preview** action is currently only available on SharePoint and OneDrive for Business.
 
 [createLink]: driveitem-createlink.md
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

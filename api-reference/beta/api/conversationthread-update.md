@@ -13,9 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Lock or unlock a thread, to allow or avoid further posting to the thread.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-Lock or unlock a thread, to allow or avoid further posting to the thread.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

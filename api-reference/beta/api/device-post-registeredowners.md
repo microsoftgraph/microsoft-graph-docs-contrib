@@ -13,9 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Add a user as a registered owner of the device.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-Add a user as a registered owner of the device.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

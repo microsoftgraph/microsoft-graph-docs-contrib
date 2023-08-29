@@ -13,9 +13,9 @@ Namespace: microsoft.graph.ediscovery.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Retrieve the properties and relationships of a [reviewSet](../resources/ediscovery-reviewset.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

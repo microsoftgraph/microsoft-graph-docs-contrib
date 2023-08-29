@@ -13,9 +13,9 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Get a list of all notifications that one or more users can access, from the Microsoft Endpoint Manager admin center.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

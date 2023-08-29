@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 Update the role of a [conversationMember](../resources/conversationmember.md) in a 
 [team](../resources/team.md).
 or [channel](../resources/channel.md).
 
 > [!NOTE]
 > On channels, this operation is only supported on channels with a [channelMembershipType](../resources/channel.md#channelmembershiptype-values) of `private`. Calls with any other [channelMembershipType](../resources/channel.md#channelmembershiptype-values) will return a `400 Bad Request` response.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

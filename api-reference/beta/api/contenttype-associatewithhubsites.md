@@ -14,10 +14,10 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 Associate a [content type][contentType] with a list of hub sites.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 >**Note:** This feature is limited to tenants that have a SharePoint Syntex license.
   
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions  
 

@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Retrieve a list of recently deleted [application](../resources/application.md) and [group](../resources/group.md) objects owned by the specified user.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
-
 This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

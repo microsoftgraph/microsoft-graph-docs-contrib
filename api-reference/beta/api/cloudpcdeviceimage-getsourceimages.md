@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 Get [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) objects. View a list of all the managed image resources from your Azure Active Directory subscriptions.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

@@ -13,9 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) objects for a directory role.
+
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
-Retrieve a list of [scopedRoleMembership](../resources/scopedrolemembership.md) objects for a directory role.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

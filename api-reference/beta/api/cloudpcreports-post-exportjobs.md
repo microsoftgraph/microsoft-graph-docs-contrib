@@ -12,11 +12,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
-
 Create a new [cloudPcExportJob](../resources/cloudpcexportjob.md) resource to initiate downloading the entire or specified portion of a report.
 
 Use the [GET cloudPcExportJob](cloudpcexportjob-get.md) operation to verify the **exportJobStatus** property of the **cloudPcExportJob** resource. When the property result is `completed`, the report has finished downloading to the location specified by the **exportUrl** property. 
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

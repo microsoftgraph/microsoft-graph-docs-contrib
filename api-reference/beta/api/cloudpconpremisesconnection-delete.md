@@ -13,8 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
-
 Delete a specific [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 
 [!INCLUDE [on-premise-rename-note](../../includes/on-premise-rename-note.md)]
@@ -22,6 +20,8 @@ Delete a specific [cloudPcOnPremisesConnection](../resources/cloudpconpremisesco
 When you delete an Azure network connection, permissions to the service are removed from the specified Azure resources.
 
 You cannot delete an Azure network connection when it's in use, as indicated by the **inUse** property.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
