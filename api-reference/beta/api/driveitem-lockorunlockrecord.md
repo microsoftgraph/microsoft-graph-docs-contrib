@@ -77,9 +77,9 @@ PATCH https://graph.microsoft.com/beta/drives/22e064df-3562-4a3c-98c3-74721ca06a
 Content-Type: application/json
 
 {
-    "retentionSettings": {
-        "isRecordLocked": true
-    }
+  "retentionSettings": {
+    "isRecordLocked": true
+  }
 }
 ```
 
@@ -98,23 +98,22 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "name": "Retention label for Contracts",
-    "retentionSettings":
-    {
-        "behaviorDuringRetentionPeriod": "retain",
-        "isDeleteAllowed": false,
-        "isRecordLocked": true,
-        "isMetadataUpdateAllowed": false,
-        "isContentUpdateAllowed": false,
-        "isLabelUpdateAllowed": false
-    },
-    "isLabelAppliedExplicitly": false,
-    "labelAppliedDateTime": "2022-12-22T10:18:23.6580555+00:00",
-    "labelAppliedBy": {
-        "user": {
-            "id": "56d171c8-a92e-4359-9c4a-38b88ac7eabd",
-            "displayName": "Contoso Admin"
-        }
+  "name": "Retention label for Contracts",
+  "retentionSettings": {
+    "behaviorDuringRetentionPeriod": "retain",
+    "isDeleteAllowed": false,
+    "isRecordLocked": true,
+    "isMetadataUpdateAllowed": false,
+    "isContentUpdateAllowed": false,
+    "isLabelUpdateAllowed": false
+  },
+  "isLabelAppliedExplicitly": false,
+  "labelAppliedDateTime": "2022-12-22T10:18:23.6580555+00:00",
+  "labelAppliedBy": {
+    "user": {
+      "id": "56d171c8-a92e-4359-9c4a-38b88ac7eabd",
+      "displayName": "Contoso Admin"
     }
+  }
 }
 ```
