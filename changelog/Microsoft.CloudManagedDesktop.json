@@ -7,7 +7,7 @@
                     "ApiChange": "Enum type",
                     "ChangedApiName": "cloudPcReportName",
                     "ChangeType": "Addition",
-                    "Description": "Added the **cloudPcReportName** enumeration type.",
+                    "Description": "Added the **getRawRemoteConnectionReports** enumeration type.",
                     "Target": "cloudpc"
                 },
                 {
