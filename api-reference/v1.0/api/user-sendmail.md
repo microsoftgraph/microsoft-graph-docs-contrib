@@ -1,7 +1,7 @@
 ---
 title: "user: sendMail"
 description: "Send the message specified in the request body using either JSON or MIME format."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -44,7 +44,7 @@ POST /users/{id | userPrincipalName}/sendMail
 ```
 
 ## Request headers
-| Name       | Type | Description| 
+| Name       | Type | Description|
 |:---------------|:--------|:----------
 | Authorization  | string  | Bearer {token}. Required.|
 | Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content.|
