@@ -1064,6 +1064,9 @@ Namespace: microsoft.graph
 | unknownFutureValue              |
 | servicePrincipals               |
 | servicePrincipalRisk            |
+| authenticationFlows             |
+| insiderRisk                     |
+
 
 ### conditionalAccessStatus values
 
@@ -2755,6 +2758,9 @@ Possible values for user account types (group membership), per Windows definitio
 | otherExternalUser                 |
 | serviceProvider                   |
 | microsoftAdminPortals             |
+| deviceCodeFlow                    |
+| authenticationTransfer            |
+| insiderRisk                       |
 
 ### signInAccessType values
 
@@ -2773,6 +2779,24 @@ Possible values for user account types (group membership), per Windows definitio
 | :----- |
 | days   |
 | hours  |
+
+### originalTransferMethods values 
+
+|Member|
+|:---|
+|none|
+|deviceCodeFlow|
+|authenticationTransfer|
+|unknownFutureValue|
+
+### tokenProtectionStatus values 
+
+|Member|
+|:---|
+|none|
+|bound|
+|unbound|
+|unknownFutureValue|
 
 ### persistentBrowserSessionMode values
 
@@ -4037,6 +4061,32 @@ Possible values for user account types (group membership), per Windows definitio
 | request_retrieved     |
 | presentation_verified |
 | unknownFutureValue    |
+
+### labelKind values
+
+|Member|
+|:---|
+|all|
+|enumerated|
+|unknownFutureValue|
+
+### permissionKind values
+
+|Member|
+|:---|
+|all|
+|enumerated|
+|allPermissionsOnResourceApp|
+|unknownFutureValue|
+
+### resourceScopeType values
+
+|Member|
+|:---|
+|group|
+|chat|
+|tenant|
+|unknownFutureValue|
 
 ### allowedRolePrincipalTypes values
 
