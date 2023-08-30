@@ -3,7 +3,7 @@ title: "Update inferenceClassificationOverride"
 description: "Change the **classifyAs** field of a Focused Inbox override as specified. "
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: mail
 ---
 
@@ -108,7 +108,7 @@ Content-type: application/json
 ---
 
 ### Response
-The following is an example of the response. 
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
