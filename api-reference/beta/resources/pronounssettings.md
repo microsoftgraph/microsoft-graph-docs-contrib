@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents the _settings_ that manage the support of pronouns in an organization. By default, pronouns are **disabled**. If enabled, users can optionally add or update their pronouns.
 
-For more information on settings to manage pronouns support, see [Manage pronouns settings for an organization using the Microsoft Graph API](/graph/pronouns-configure-pronouns-availability).
+For more information about how to manage pronouns support, see [Manage pronouns settings for an organization using the Microsoft Graph API](/graph/pronouns-configure-pronouns-availability).
 
 Inherits from [entity](../resources/entity.md).
 
