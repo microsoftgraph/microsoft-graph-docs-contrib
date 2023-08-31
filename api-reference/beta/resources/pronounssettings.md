@@ -1,6 +1,6 @@
 ---
 title: "pronounsSettings resource type"
-description: "Represents a setting to control the availability of pronouns in the tenant"
+description: "Represents a setting to control the availability of pronouns in a tenant."
 author: "aymen-ms"
 ms.localizationpriority: medium
 ms.prod: "people"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the _settings_ that manage the support of pronouns in an organization. By default, pronouns are **disabled**. If enabled, users can optionally add or update their pronouns.
+Represents a setting to control the availability of pronouns in a tenant. By default, pronouns are **disabled**. If enabled, users can optionally add or update their pronouns.
 
 For more information about enabling pronouns support, see [Manage pronouns settings for an organization using the Microsoft Graph API](/graph/pronouns-configure-pronouns-availability).
 
@@ -28,7 +28,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledInOrganization|Boolean| `true` to enable pronouns in the organization, `false` otherwise. The default is `false`, and pronouns are disabled.|
+|isEnabledInOrganization|Boolean| `true` to enable pronouns in the organization; otherwise, `false`. Default value is `false`, and pronouns are disabled.|
 
 ## Relationships
 None.
