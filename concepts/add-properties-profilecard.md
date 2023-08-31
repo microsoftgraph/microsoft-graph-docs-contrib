@@ -197,13 +197,13 @@ You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/inst
 To get profile card properties configuration for an organization, use the following command.
 
 ```powershell
-   Get-MgAdminPeopleProfileCardProperty
+   Get-MgBetaAdminPeopleProfileCardProperty
 ```
 
 To get a profile card property configuration in an organization, use the following command.
 
 ```powershell
-   Get-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
+   Get-MgBetaAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
 ```
 
 > [!NOTE]
@@ -242,7 +242,7 @@ $params = @{
 	)
 }
 
-New-MgAdminPeopleProfileCardProperty -BodyParameter $params
+New-MgBetaAdminPeopleProfileCardProperty -BodyParameter $params
 ```
 
 ### Update profile card properties in your organization
@@ -272,7 +272,7 @@ $params = @{
 	)
 }
 
-Update-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
+Update-MgBetaAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
 ```
 
 ### Delete profile card properties in your organization
@@ -289,7 +289,7 @@ You can use the Microsoft Graph PowerShell module to remove profile card propert
 Use the following command, where you replace `$profileCardPropertyId` with the id of the property to be deleted.
 
 ```powershell
- Remove-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
+ Remove-MgBetaAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
 ```
 
 ## See also
