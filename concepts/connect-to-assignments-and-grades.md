@@ -51,6 +51,6 @@ Assignment API endpoints return a large amount of data. You can use the [filter]
 
 ## See also
 
-* [Overview of Microsoft Graph permissions - Microsoft Graph | Microsoft Learn](https://learn.microsoft.com/en-us/graph/permissions-overview?tabs=http), for App Only support. 
-* You should register your app with AAD [(Authentication and authorization basics - Microsoft Graph | Microsoft Learn)](https://learn.microsoft.com/en-us/graph/auth/auth-concepts#register-your-app-with-the-microsoft-identity-platform), and specify the necessary permissions.  
-* Adding the app to AAD application gallery makes easier for Admins to approve the App. [(Overview of the Azure Active Directory application gallery - Microsoft Entra | Microsoft Learn)](https://learn.microsoft.com/en-us/azure/active-directory/manage-apps/overview-application-gallery)
+* [Permissions overview](/graph/permissions-overview?tabs=http) 
+* [Authentication and authorization basics](/graph/auth/auth-concepts#register-your-app-with-the-microsoft-identity-platform) 
+* [Overview of the Azure Active Directory application gallery](/azure/active-directory/manage-apps/overview-application-gallery)
