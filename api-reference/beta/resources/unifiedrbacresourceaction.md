@@ -27,6 +27,7 @@ Represents an operation that an authorized principal is allowed to perform.
 |actionVerb|String|HTTP method for the action, such as `DELETE`, `GET`, `PATCH`, `POST`, `PUT`, or `null`. Supports `$filter` (`eq`) but not for `null` values. |
 |description|String|Description for the action. Supports `$filter` (`eq`). |
 |id|String|Unique identifier for an action within the resource namespace, such as `microsoft.insights-programs-update-patch`. Cannot include slash character (`/`). Case insensitive. Required. Supports `$filter` (`eq`). |
+|isPrivileged|Boolean|Flag indicating if the action is a sensitive resource action. Applies only for actions in the `microsoft.directory` resource namespace. Read-only. Supports `$filter` (`eq`).|
 |name|String|Name for the action within the resource namespace, such as `microsoft.insights/programs/update`. Can include slash character (`/`). Case insensitive. Required. Supports `$filter` (`eq`). |
 |resourceScopeId|String|Not implemented.|
 
@@ -55,6 +56,7 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "actionVerb": "String",
   "description": "String",
+  "isPrivileged": "Boolean",
   "name": "String",
   "resourceScopeId": "String"
 }
