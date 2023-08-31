@@ -44,6 +44,8 @@ PATCH /admin/people/profileCardProperties/{id}
 
 ## Request body
 
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |annotations|profileCardAnnotation collection| Any alternative or localized labels an administrator has chosen to specify.|
