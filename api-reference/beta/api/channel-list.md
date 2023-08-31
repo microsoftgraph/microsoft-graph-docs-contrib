@@ -133,7 +133,7 @@ Content-type: application/json
       "displayName": "General",
       "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
       "membershipType": "standard",
-      "email": someperson@microsoft.com,
+      "email": "someperson@microsoft.com",
       "moderationSettings": null
     }
   ]
@@ -290,7 +290,7 @@ Content-length: 262
             "isFavoriteByDefault": null,
             "webUrl": "https://teams.microsoft.com/l/channel/19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2/shared%20channel-01?groupId=6a720ba5-7373-463b-bc9f-4cd04b5c6742&tenantId=df81db53-c7e2-418a-8803-0e68d4b88607",
             "membershipType": "shared",
-            "email": someperson@microsoft.com,
+            "email": "someperson@microsoft.com",
             "moderationSettings": null
         }
     ]
