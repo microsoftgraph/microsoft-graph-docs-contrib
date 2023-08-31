@@ -144,6 +144,8 @@ items:
             href: /graph/migrate-exchange-web-services-authentication?context=graph/api/beta
           - name: API mapping
             href: /graph/migrate-exchange-web-services-api-mapping?context=graph/api/beta
+      - name: Outlook REST APIs
+        href: /outlook/rest/compare-graph?toc=/graph/api/toc.json
   - name: Use SDKs
     items:
       - name: Overview

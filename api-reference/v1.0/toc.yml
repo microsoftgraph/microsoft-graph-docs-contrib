@@ -144,6 +144,8 @@ items:
             href: /graph/migrate-exchange-web-services-authentication?context=graph/api/1.0
           - name: API mapping
             href: /graph/migrate-exchange-web-services-api-mapping?context=graph/api/1.0
+      - name: Outlook REST APIs
+        href: /outlook/rest/compare-graph?toc=/graph/api/toc.json
   - name: Use SDKs
     items:
       - name: Overview
@@ -5676,7 +5678,7 @@ items:
                       - name: Reprocess
                         href: api/accesspackageassignmentrequest-reprocess.md
                       - name: Resume
-                        href: api/accesspackageassignmentrequest-resume.md  
+                        href: api/accesspackageassignmentrequest-resume.md
                   - name: Access package catalog
                     href: resources/accesspackagecatalog.md
                     items:
