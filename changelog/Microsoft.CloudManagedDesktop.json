@@ -4,7 +4,7 @@
             "ChangeList": [
                 {
                     "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
-                    "ApiChange": "Enum type",
+                    "ApiChange": "Member",
                     "ChangedApiName": "cloudPcReportName",
                     "ChangeType": "Addition",
                     "Description": "Added the **getRawRemoteConnectionReports** enumeration type.",
