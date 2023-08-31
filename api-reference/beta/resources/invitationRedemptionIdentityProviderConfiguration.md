@@ -1,7 +1,7 @@
 ---
 title: "invitationRedemptionIdentityProviderConfiguration resource type"
 description: "Defines the invitation redemption provider configuration base type to set redemption flow settings for Azure AD B2B collaboration."
-author: "anandyadav"
+author: "jkdouglas"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -19,8 +19,8 @@ Defines the invitation redemption provider configuration base type to set redemp
 
 |Property|Type|Description|
 |:---|:---|:---|
-| primaryIdentityProviderPrecedenceOrder | b2bIdentityProvidersType collection | Collection of identity providers in priority order of preference to be used for guest user invitation redemption. |
-| fallbackIdentityProvider | b2bIdentityProvidersType | The fallback identity provider to be used in case no primary identity provider can be used for guest user invitation redemption. Possible values are: `defaultConfiguredIdp`, `EOTP`, or `MSA`. |
+| primaryIdentityProviderPrecedenceOrder | b2bIdentityProvidersType collection | Collection of identity providers in priority order of preference to be used for guest user invitation redemption. Possible values are: `azureActiveDirectory`, `externalFederation`, or `socialIdentityProviders`. |
+| fallbackIdentityProvider | b2bIdentityProvidersType | The fallback identity provider to be used in case no primary identity provider can be used for guest user invitation redemption. Possible values are: `defaultConfiguredIdp`, `emailOneTimePasscode`, or `microsoftAccount`. |
 
 ## Relationships
 

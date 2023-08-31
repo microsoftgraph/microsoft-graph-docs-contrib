@@ -4007,10 +4007,10 @@ Possible values for user account types (group membership), per Windows definitio
 
 |Member|
 |:-----|
-|AzureActiveDirectory|
-|ExternalFederation|
-|SocialIdentityProviders|
-|EmailOneTimePasscode|
-|MicrosoftAccount|
-|DefaultConfiguredIdp|
+|azureActiveDirectory|
+|externalFederation|
+|socialIdentityProviders|
+|emailOneTimePasscode|
+|microsoftAccount|
+|defaultConfiguredIdp|
 |unknownFutureValue|
