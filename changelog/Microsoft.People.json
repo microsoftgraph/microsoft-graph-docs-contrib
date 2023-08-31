@@ -373,7 +373,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "peopleAdminSetting",
           "ChangeType": "Addition",
-          "Description": "Added the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-1.0) resource",
+          "Description": "Added the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-1.0) resource and a supported method.",
           "Target": "peopleAdminSettings"
         },
         {
@@ -381,32 +381,8 @@
           "ApiChange": "Resource",
           "ChangedApiName": "pronounsSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [pronounsSettings](https://learn.microsoft.com/en-us/graph/api/resources/pronounsSettings?view=graph-rest-1.0) resource",
+          "Description": "Added the [pronounsSettings](https://learn.microsoft.com/en-us/graph/api/resources/pronounsSettings?view=graph-rest-1.0) resource and supported methods.",
           "Target": "pronounsSettings"
-        },
-        {
-          "Id": "c76057f0-1a05-42c7-af8e-df9b17700878",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/organizationsettings-list-pronounssettings?view=graph-rest-1.0) operation to the [pronounsSettings](https://learn.microsoft.com/en-us/graph/api/resources/pronounssettings?view=graph-rest-1.0) resource",
-          "Target": "pronounsSettings"
-        },
-        {
-          "Id": "c76057f0-1a05-42c7-af8e-df9b17700878",
-          "ApiChange": "Method",
-          "ChangedApiName": "PATCH",
-          "ChangeType": "Addition",
-          "Description": "Added the [update](https://learn.microsoft.com/en-us/graph/api/pronounssettings-update?view=graph-rest-1.0) operation to the [pronounsSettings](https://learn.microsoft.com/en-us/graph/api/resources/pronounssettings?view=graph-rest-1.0) resource",
-          "Target": "pronounsSettings"
-        },
-        {
-          "Id": "c76057f0-1a05-42c7-af8e-df9b17700878",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "pronounsSettings",
-          "ChangeType": "Addition",
-          "Description": "Added the **pronounsSettings** relationship to the [peopleAdminSettings](https://learn.microsoft.com/en-us/graph/api/resources/peopleadminsettings?view=graph-rest-1.0) resource.",
-          "Target": "organizationSettings"
         }
       ],
       "Id": "c76057f0-1a05-42c7-af8e-df9b17700878",
