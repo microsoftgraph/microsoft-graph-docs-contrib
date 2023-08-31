@@ -18,9 +18,11 @@ You can specify which parts of the team to clone:
 
 - **apps** - Copies Microsoft Teams apps that are installed in the team. 
 - **channels** – Copies the channel structure (but not the messages in the channel).
-- **members** – Copies the members and owners of the group.
+- **members** – Copies the members of the group.
 - **settings** – Copies all settings within the team, along with key group settings.
 - **tabs** – Copies the tabs within channels.
+
+> **Note**: If the team contains more than one Owner, the cloned team ends up having all but one of the Owners demoted to Members. Current workaround is to use the [Add member to team](team-post-members.md) after team cloning completes and "promote" the demoted Owners back up to Owners from Members.
 
 When tabs are cloned, they are put into an unconfigured state 
 -- they are displayed on the tab bar in Microsoft Teams, and the first time you open them, you'll go through the configuration screen. 
