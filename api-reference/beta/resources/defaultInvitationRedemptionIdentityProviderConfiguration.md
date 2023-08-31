@@ -1,6 +1,6 @@
 ---
 title: "defaultInvitationRedemptionIdentityProviderConfiguration resource type"
-description: "Defines the invitation redemption provider configuration base type to set redemption flow settings for Azure AD (Azure AD) B2B collaboration."
+description: "Defines the invitation redemption provider configuration to set redemption flow settings for Azure AD B2B collaboration."
 author: "anandyadav"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the invitation redemption provider configuration base type to set redemption flow settings for Azure AD (Azure AD) B2B collaboration.
+Defines the invitation redemption provider configuration to set redemption flow settings for Azure AD B2B collaboration.
 
 Inherits from [invitationRedemptionIdentityProviderConfiguration](../resources/invitationRedemptionIdentityProviderConfiguration.md)
 
