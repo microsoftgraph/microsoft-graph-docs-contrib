@@ -220,7 +220,7 @@ Content-Type: application/json
       "displayName": "Shared channel from Contoso",
       "membershipType": "shared",
       "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910",
-      "email": someperson@microsoft.com,
+      "email": "someperson@microsoft.com",
       "moderationSettings": null
     }
   ]
