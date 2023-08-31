@@ -18,7 +18,7 @@ You can specify which parts of the team to clone:
 
 - **apps** - Copies Microsoft Teams apps that are installed in the team. 
 - **channels** – Copies the channel structure (but not the messages in the channel).
-- **members** – Copies the members of the group.
+- **members** – Copies the members and owners of the group.
 - **settings** – Copies all settings within the team, along with key group settings.
 - **tabs** – Copies the tabs within channels.
 
