@@ -5,18 +5,18 @@
                 {
                     "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
                     "ApiChange": "Member",
-                    "ChangedApiName": "cloudPcReportName",
+                    "ChangedApiName": "rawRemoteConnectionReports",
                     "ChangeType": "Addition",
-                    "Description": "Added the **getRawRemoteConnectionReports** enumeration type.",
-                    "Target": "cloudpc"
+                    "Description": "Added the `rawRemoteConnectionReports` member to the **cloudPcReportName** enumeration.",
+                    "Target": "cloudPcReportName"
                 },
                 {
                     "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
                     "ApiChange": "Method",
                     "ChangedApiName": "getRawRemoteConnectionReports",
                     "ChangeType": "Addition",
-                    "Description": "Added the [getRawRemoteConnectionReports](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getrawremoteconnectionreports?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
-                    "Target": "cloudPC"
+                    "Description": "Added the [getRawRemoteConnectionReports](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getrawremoteconnectionreports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcReports"
                 }
             ],
             "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
