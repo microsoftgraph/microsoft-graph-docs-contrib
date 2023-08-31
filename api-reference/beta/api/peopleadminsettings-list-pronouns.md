@@ -8,7 +8,6 @@ doc_type: apiPageType
 ---
 
 # List pronounsSettings
-
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
