@@ -17,7 +17,7 @@ Delete an [accessPackageAssignmentRequest](../resources/accesspackageassignmentr
 
 This request can be made to remove a denied or completed request.  You cannot delete an access package assignment request if it has any **accessPackageAssignment** objects.
 
-[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
