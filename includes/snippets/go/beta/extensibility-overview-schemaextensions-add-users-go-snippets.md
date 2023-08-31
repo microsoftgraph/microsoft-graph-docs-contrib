@@ -22,7 +22,7 @@ displayName := "Adele Vance"
 requestBody.SetDisplayName(&displayName) 
 mailNickname := "AdeleV"
 requestBody.SetMailNickname(&mailNickname) 
-userPrincipalName := "AdeleV@m365x72712789.onmicrosoft.com"
+userPrincipalName := "AdeleV@contoso.com"
 requestBody.SetUserPrincipalName(&userPrincipalName) 
 passwordProfile := graphmodels.NewPasswordProfile()
 forceChangePasswordNextSignIn := false
@@ -42,7 +42,7 @@ extkmpdyld2_graphLearnCourses.SetCourseType(&courseType)
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Users().Post(context.Background(), requestBody, nil)
+users, err := graphClient.Users().Post(context.Background(), requestBody, nil)
 
 
 ```

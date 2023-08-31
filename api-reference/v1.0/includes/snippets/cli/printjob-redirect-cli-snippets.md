@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc print printers jobs redirect post --printer-id {printer-id} --print-job-id {printJob-id} --body '{\
   "destinationPrinterId": "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea",\
   "configuration": {\

@@ -4,7 +4,7 @@ description: "Contains information about the public part of a signing certificat
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "applications"
-author: "alamaral"
+author: "luleonpla"
 ---
 
 # selfSignedCertificate resource type

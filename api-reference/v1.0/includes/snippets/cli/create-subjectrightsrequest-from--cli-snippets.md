@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc privacy subject-rights-requests create --body '{\
     "type": "microsoft.graph.subjectRightsRequestType",\
     "dataSubjectType": "microsoft.graph.dataSubjectType",\

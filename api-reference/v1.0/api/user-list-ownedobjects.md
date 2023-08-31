@@ -91,7 +91,8 @@ GET https://graph.microsoft.com/v1.0/me/ownedObjects
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,11 +104,43 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.group",
+            "id": "6796bed1-721f-4734-9cf7-1df0d0f4e0d4",
+            "classification": "Confidential",
+            "groupTypes": [
+                "Unified"
+            ],
+            "resourceBehaviorOptions": [
+                "HideGroupInOutlook",
+                "SubscribeMembersToCalendarEventsDisabled",
+                "WelcomeEmailDisabled"
+            ],
+            "resourceProvisioningOptions": [
+                "Team"
+            ],
+            "securityEnabled": false
+        },
+        {
+            "@odata.type": "#microsoft.graph.group",
+            "id": "654c426a-2cdb-426c-9fd8-3e41014339ef",
+            "classification": null,
+            "groupTypes": [
+                "Unified"
+            ],
+            "resourceBehaviorOptions": [
+                "HideGroupInOutlook",
+                "SubscribeMembersToCalendarEventsDisabled",
+                "WelcomeEmailDisabled"
+            ],
+            "resourceProvisioningOptions": [
+                "Team"
+            ],
+            "securityEnabled": false
+        }
+    ]
 }
 ```
 

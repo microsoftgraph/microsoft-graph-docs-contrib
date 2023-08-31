@@ -43,7 +43,7 @@ Because Data Connect is designed to extract large amounts of data in bulk, some 
 >[!NOTE]
 >Your tenant admin will need to approve and consent within 24 hours of kicking off the pipeline. If the consent is not given within 24 hours, it will expire and you will need to restart the consent process by kicking off your pipelines again. The overhead time does not include time taken in consent approval.
 
-## In what regions is Microsoft Graph Data Connect available?
+## What regions is Microsoft Graph Data Connect available in?
 
 Microsoft Graph Data Connect is currently available in multiple regions across the following geographies: North America, Europe, Asia Pacific, United Kingdom/Great Britain, and Australia. Other regions will be available in the future.
 
@@ -74,22 +74,6 @@ Datasets for the OneDrive/SharePoint and Viva Insights are currently available f
 
 For information about datasets that are generally avaialble or in preview only, see [Dataset, regions, and sinks](/graph/data-connect-datasets#datasets).
 
-## How much do I have to pay for Microsoft Graph Data Connect?
-
-Microsoft Graph Data Connect consumption charges are billed monthly on a pay-as-you-go basis. The Data Connect billing unit is in a multiple of 1000s of objects, where 1 object maps to 1 individual instance of an entity in Microsoft 365. For example, 1 email == 1 object, 1 file == 1 object, 1 Teams chat message == 1 object, and so on. 
-
-Some datasets are available for free or are currently free in preview while other datasets are charged. Microsoft Graph Data Connect offers datasets across multiple different Microsoft 365 products and services. For details about datasets that are available through Microsoft Graph Data Connect, see [Dataset, regions, and sinks](/graph/data-connect-datasets#datasets). For details about billing, see the [Pricing page](https://azure.microsoft.com/pricing/details/graph-data-connect/).
-
-There is no charge for extraction of objects from the following datasets:
-- BasicDataSet_v0.User_v0
-- BasicDataSet_v0.User_v1
-- BasicDataSet_v0.MailboxSettings
-- BasicDataSet_v0.Manager
-- BasicDataSet_v0.DirectReport
-- BasicDataSet_v0.GroupDetails
-- BasicDataSet_v0.GroupMembers
-- BasicDataSet_v0.GroupOwners
-
 ## How is billing calculated?
 
 Microsoft Graph Data Connect charges customers on a monthly basis and also does fractionable rounding up when calculating the bill. Each pipeline run is billed separately.
@@ -97,10 +81,6 @@ Microsoft Graph Data Connect charges customers on a monthly basis and also does 
 For example, a customer has 20 pipeline runs within the month, each yielding 500 rows. In total, the customer runs pipelines for 10,000 rows that month. However, their bill will not be 10,000 rows/1000 rows = 10 units. 
 
 Instead, the customer will be billed for 20 units because Microsoft Graph Data Connect rounds up fractions. Because 500 rows /1000 rows = 0.5 and 0.5 is a fraction, it will rounds up to 1. The customer will be billed one unit per pipeline run, which results in 20 units billed in total.
-
-## Does my current Azure discount apply to the Microsoft Graph Data Connect monthly bill?
-
-Microsoft Graph Data Connect is offered through Azure and is currently available to Microsoft 365 customers. Your existing discounts can be applied to Microsoft Graph Data Connect charges because it is billed through Azure. For more information, reach out to your account manager.
 
 ##  What can I do if a dataset is not yet supported for my tenant?
 

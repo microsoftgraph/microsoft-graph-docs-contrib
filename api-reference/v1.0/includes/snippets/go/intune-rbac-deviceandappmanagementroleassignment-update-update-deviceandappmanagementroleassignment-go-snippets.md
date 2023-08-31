@@ -29,7 +29,7 @@ members := []string {
 }
 requestBody.SetMembers(members)
 
-result, err := graphClient.DeviceManagement().RoleAssignments().ByRoleAssignmentId("deviceAndAppManagementRoleAssignment-id").Patch(context.Background(), requestBody, nil)
+roleAssignments, err := graphClient.DeviceManagement().RoleAssignments().ByDeviceAndAppManagementRoleAssignmentId("deviceAndAppManagementRoleAssignment-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

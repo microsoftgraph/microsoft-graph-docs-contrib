@@ -19,7 +19,7 @@ requestBody := graphmodels.NewMobileAppCategory()
 displayName := "Display Name value"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.DeviceAppManagement().MobileAppCategories().ByMobileAppCategorieId("mobileAppCategory-id").Patch(context.Background(), requestBody, nil)
+mobileAppCategories, err := graphClient.DeviceAppManagement().MobileAppCategories().ByMobileAppCategoryId("mobileAppCategory-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

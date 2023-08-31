@@ -2,7 +2,7 @@
 title: "Create message"
 description: "Create a draft of a new message in either JSON or MIME format."
 ms.localizationpriority: high
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -68,7 +68,7 @@ If the request body includes malformed MIME content, this method returns `400 Ba
 
 ## Examples
 ### Example 1: Create a new message draft using JSON format
-#### Request 
+#### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -132,7 +132,7 @@ Content-type: application/json
 ---
 
 In the request body, supply a JSON representation of [message](../resources/message.md) object.
-#### Response 
+#### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

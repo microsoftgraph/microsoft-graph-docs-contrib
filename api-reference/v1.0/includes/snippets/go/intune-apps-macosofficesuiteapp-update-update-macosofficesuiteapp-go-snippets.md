@@ -43,7 +43,7 @@ requestBody.SetNotes(&notes)
 publishingState := graphmodels.PROCESSING_MOBILEAPPPUBLISHINGSTATE 
 requestBody.SetPublishingState(&publishingState) 
 
-result, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Patch(context.Background(), requestBody, nil)
+mobileApps, err := graphClient.DeviceAppManagement().MobileApps().ByMobileAppId("mobileApp-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

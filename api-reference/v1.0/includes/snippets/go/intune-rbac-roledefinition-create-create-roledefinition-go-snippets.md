@@ -47,7 +47,7 @@ requestBody.SetRolePermissions(rolePermissions)
 isBuiltIn := true
 requestBody.SetIsBuiltIn(&isBuiltIn) 
 
-result, err := graphClient.DeviceManagement().RoleDefinitions().Post(context.Background(), requestBody, nil)
+roleDefinitions, err := graphClient.DeviceManagement().RoleDefinitions().Post(context.Background(), requestBody, nil)
 
 
 ```

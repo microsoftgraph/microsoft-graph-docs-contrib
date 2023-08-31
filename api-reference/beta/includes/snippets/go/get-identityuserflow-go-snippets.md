@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Identity().UserFlows().ByUserFlowId("identityUserFlow-id").Get(context.Background(), nil)
+userFlows, err := graphClient.Identity().UserFlows().ByIdentityUserFlowId("identityUserFlow-id").Get(context.Background(), nil)
 
 
 ```

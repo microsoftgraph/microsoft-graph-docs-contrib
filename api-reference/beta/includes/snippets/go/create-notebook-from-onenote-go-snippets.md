@@ -19,7 +19,7 @@ requestBody := graphmodels.NewNotebook()
 displayName := "My Private notebook"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Me().Onenote().Notebooks().Post(context.Background(), requestBody, nil)
+notebooks, err := graphClient.Me().Onenote().Notebooks().Post(context.Background(), requestBody, nil)
 
 
 ```
