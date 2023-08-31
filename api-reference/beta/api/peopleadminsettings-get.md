@@ -86,7 +86,7 @@ Content-type: application/json
   "pronouns@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/people/pronouns/$entity",
   "profileCardProperties@odata.context": "https://graph.microsoft.com/beta/$metadata#admin/people/profileCardProperties/$entity",
   "pronouns": {
-      "isEnabledInOrganization": true
+    "isEnabledInOrganization": true
   },
   "profileCardProperties": [
     {
