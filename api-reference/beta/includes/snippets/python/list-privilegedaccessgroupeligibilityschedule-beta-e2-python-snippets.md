@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(request_adapter)
 
 query_params = EligibilitySchedulesRequestBuilder.EligibilitySchedulesRequestBuilderGetQueryParameters(
 		filter = "principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'",
@@ -16,8 +17,7 @@ request_configuration = EligibilitySchedulesRequestBuilder.EligibilitySchedulesR
 query_parameters = query_params,
 )
 
-
-result = await client.identity_governance.privileged_access.group.eligibility_schedules.get(request_configuration = request_configuration)
+result = await graph_client.identity_governance.privileged_access.group.eligibility_schedules.get(request_configuration = request_configuration)
 
 
 ```
