@@ -1,6 +1,6 @@
 ---
 title: "Update pronounsSettings"
-description: "Update the properties of a pronounsSettings object."
+description: "Update the properties of a pronounsSettings object in an organization."
 author: "aymen-ms"
 ms.localizationpriority: medium
 ms.prod: "people"
@@ -11,11 +11,12 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of a [pronounsSettings](../resources/pronounssettings.md) in an organization.
+Update the properties of a [pronounsSettings](../resources/pronounssettings.md) object in an organization.
 
 For more information on settings to manage pronouns support, see [Manage pronouns settings for an organization using the Microsoft Graph API](/graph/pronouns-configure-pronouns-availability).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -24,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a global administrator role.
+>**Note:** Using delegated permissions for this operation requires the signed-in user to have a Global Administrator role.
 
 ## HTTP request
 
@@ -37,19 +38,19 @@ PATCH /admin/people/pronouns
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply *only* the values for properties that should be updated. Existing properties that are not included in the request body will maintain their previous values.
 
-The following table specifies the properties that can be updated.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledInOrganization|Boolean|`true` to enable pronouns in the organization, `false` otherwise. The default is `false`, and pronouns are disabled. Required.|
+|isEnabledInOrganization|Boolean|`true` to enable pronouns in the organization; otherwise, `false`. Default value is `false`, and pronouns are disabled. Required.|
 
 ## Response
 
@@ -58,8 +59,9 @@ If successful, this method returns a `200 OK` response code and an updated [pron
 ## Examples
 
 ### Request
+
 The following is an example of a request.
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_pronounssettings"
@@ -75,7 +77,9 @@ Content-Type: application/json
 ```
 
 ### Response
-The following is an example of the response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
