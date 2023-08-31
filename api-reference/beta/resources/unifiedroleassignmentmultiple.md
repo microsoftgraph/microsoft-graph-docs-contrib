@@ -31,7 +31,7 @@ The following RBAC providers are currently supported:
 | [Create unifiedRoleAssignmentMultiple](../api/rbacapplicationmultiple-post-roleassignments.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | Create a new **unifiedRoleAssignmentMultiple** by posting to the **roleAssignment** collection. |
 | [Get unifiedRoleAssignmentMultiple](../api/unifiedroleassignmentmultiple-get.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | Read properties and relationships of **unifiedRoleAssignmentMultiple** object. |
 | [Update unifiedRoleAssignmentMultiple](../api/unifiedroleassignmentmultiple-update.md) | [unifiedRoleAssignmentMultiple](unifiedroleassignmentmultiple.md) | Update an existing **unifiedRoleAssignmentMultiple** object. |
-| [Delete unifiedRoleAssignmentMultiple](../api/unifiedroleassignmentmultiple-delete.md) | None | Delete unifiedRoleAssignmentMultiple object. |
+| [Delete unifiedRoleAssignmentMultiple](../api/unifiedroleassignmentmultiple-delete.md) | None | Delete **unifiedRoleAssignmentMultiple** object. |
 
 ## Properties
 
@@ -51,9 +51,9 @@ The following RBAC providers are currently supported:
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 | appScopes | [appScope](appscope.md) collection |Read-only collection with details of the app specific scopes when the assignment scopes are app specific. Containment entity. Read-only.  |
-| directoryScopes | [directoryObject](directoryobject.md) collection | Read-only collection referencing the directory objects that are scope of the assignment. Provided so that callers can get the directory objects using `$expand` at the same time as getting the role assignment. Read-only.  Supports `$expand`.|
-| principals| [directoryObject](directoryobject.md) collection | Read-only collection referencing the assigned principals. Provided so that callers can get the principals using `$expand` at the same time as getting the role assignment. Read-only.  Supports `$expand`.|
-| roleDefinition | [unifiedRoleDefinition](unifiedroledefinition.md) |Specifies the roleDefinition that the assignment is for. Provided so that callers can get the role definition using `$expand` at the same time as getting the role assignment.  Supports `$filter` (`eq` operator on **id**, **isBuiltIn**, and **displayName**, and `startsWith` operator on **displayName**)  and `$expand`. |
+| directoryScopes | [directoryObject](directoryobject.md) collection | Read-only collection that references the directory objects that are scope of the assignment. Provided so that callers can get the directory objects using `$expand` at the same time as getting the role assignment. Read-only.  Supports `$expand`.|
+| principals| [directoryObject](directoryobject.md) collection | Read-only collection that references the assigned principals. Provided so that callers can get the principals using `$expand` at the same time as getting the role assignment. Read-only.  Supports `$expand`.|
+| roleDefinition | [unifiedRoleDefinition](unifiedroledefinition.md) |Specifies the **roleDefinition** that the assignment is for. Provided so that callers can get the role definition using `$expand` at the same time as getting the role assignment.  Supports `$filter` (`eq` operator on **id**, **isBuiltIn**, and **displayName**, and `startsWith` operator on **displayName**)  and `$expand`. |
 
 
 ## JSON representation
