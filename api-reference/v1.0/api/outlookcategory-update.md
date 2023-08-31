@@ -2,7 +2,7 @@
 title: "Update Outlook category"
 description: "Update the writable property, **color**, of the specified outlookCategory object. You cannot modify the **displayName** property "
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -12,7 +12,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-Update the writable property, **color**, of the specified [outlookCategory](../resources/outlookcategory.md) object. You cannot modify the **displayName** property 
+Update the writable property, **color**, of the specified [outlookCategory](../resources/outlookcategory.md) object. You cannot modify the **displayName** property
 once you have created the category.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
@@ -39,7 +39,7 @@ PATCH /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body 
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body
 will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|

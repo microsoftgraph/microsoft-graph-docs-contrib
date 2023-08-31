@@ -2,7 +2,7 @@
 title: "Delete attachment"
 description: "Delete an attachment from a calendar event, mail message, or group post."
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

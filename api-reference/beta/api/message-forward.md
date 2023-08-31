@@ -2,7 +2,7 @@
 title: "message: forward"
 description: "Forward a message using either JSON or MIME format"
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -86,7 +86,7 @@ POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/forward
 Content-Type: application/json
 
 {
-  "message":{  
+  "message":{
     "isDeliveryReceiptRequested": true,
     "toRecipients":[
       {
@@ -97,7 +97,7 @@ Content-Type: application/json
       }
      ]
   },
-  "comment": "Dana, just want to make sure you get this." 
+  "comment": "Dana, just want to make sure you get this."
 }
 ```
 

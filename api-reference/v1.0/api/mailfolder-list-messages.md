@@ -2,7 +2,7 @@
 title: "List messages"
 description: "Get all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox."
 ms.localizationpriority: high
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

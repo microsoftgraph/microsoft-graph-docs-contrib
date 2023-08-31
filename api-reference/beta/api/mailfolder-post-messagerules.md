@@ -1,7 +1,7 @@
 ---
 title: "Create rule"
 description: "Create a messageRule object by specifying a set of conditions and actions. "
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a [messageRule](../resources/messagerule.md) object by specifying a set of conditions and actions. 
+Create a [messageRule](../resources/messagerule.md) object by specifying a set of conditions and actions.
 
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
 
@@ -42,7 +42,7 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 
 
 ## Request body
-In the request body, supply the parameters that are applicable to your rule. The following are body parameters that are typically used 
+In the request body, supply the parameters that are applicable to your rule. The following are body parameters that are typically used
 when creating rules. You can specify any other writable **messageRule** properties as appropriate in the request body.
 
 | Parameter       | Type|Description|
@@ -70,13 +70,13 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/me/mailFolders/inbox/messageRules
 Content-type: application/json
 
-{      
-    "displayName": "From partner",      
-    "sequence": 2,      
-    "isEnabled": true,          
+{
+    "displayName": "From partner",
+    "sequence": 2,
+    "isEnabled": true,
     "conditions": {
         "senderContains": [
-          "adele"       
+          "adele"
         ]
      },
      "actions": {
@@ -89,7 +89,7 @@ Content-type: application/json
            }
         ],
         "stopProcessingRules": true
-     }    
+     }
 }
 
 ```

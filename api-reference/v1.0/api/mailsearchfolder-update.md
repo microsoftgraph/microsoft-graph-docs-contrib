@@ -2,7 +2,7 @@
 title: "Update mailSearchFolder"
 description: "Update the writable properties of a mailSearchFolder object."
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

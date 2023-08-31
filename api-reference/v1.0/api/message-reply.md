@@ -2,7 +2,7 @@
 title: "message: reply"
 description: "Reply to the sender of a message using either JSON or MIME format."
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -85,7 +85,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/reply
 Content-Type: application/json
 
 {
-  "message":{  
+  "message":{
     "toRecipients":[
       {
         "emailAddress": {
@@ -101,7 +101,7 @@ Content-Type: application/json
       }
      ]
   },
-  "comment": "Samantha, Randi, would you name the group please?" 
+  "comment": "Samantha, Randi, would you name the group please?"
 }
 ```
 

@@ -4,7 +4,7 @@ description: "expand`."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: non-product-specific
-author: "abheek-das"
+author: "SuryaLashmiS"
 ---
 
 # Get multiValueLegacyExtendedProperty

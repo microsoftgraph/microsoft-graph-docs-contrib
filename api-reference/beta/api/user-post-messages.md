@@ -2,7 +2,7 @@
 title: "Create Message"
 description: "Create a draft of a new message in either JSON or MIME format."
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -237,7 +237,7 @@ Content-type: application/json
       }
     ],
     "mentions":[
-      {    
+      {
         "mentioned":{
           "name":"Dana Swope",
           "address":"danas@contoso.onmicrosoft.com"

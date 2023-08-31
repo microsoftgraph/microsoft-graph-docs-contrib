@@ -1,7 +1,7 @@
 ---
 title: "mailFolder: move"
 description: "Move a mailfolder and its contents to another mailfolder."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType

@@ -2,7 +2,7 @@
 title: "Create Outlook category"
 description: "Create an outlookCategory object in the user's master list of categories."
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -99,7 +99,7 @@ Content-Length: 70
 ---
 
 ### Response
-The following is an example of the response. 
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

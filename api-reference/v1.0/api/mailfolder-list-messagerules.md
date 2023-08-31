@@ -2,7 +2,7 @@
 title: "List rules"
 description: "Get all the messageRule objects defined for the user's inbox."
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
 ---
 
 ### Response
-The following is an example of the response. 
+The following is an example of the response.
 >**Note**: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

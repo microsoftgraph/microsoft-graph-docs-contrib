@@ -2,7 +2,7 @@
 title: "Create multi-value extended property"
 description: "Create one or more multi-value extended properties in a new or existing instance of a resource. "
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: non-product-specific
 doc_type: apiPageType
 ---
@@ -175,9 +175,9 @@ The request body includes the following for that multi-value extended property:
 
 
 # [HTTP](#tab/http)
-<!-- { 
-  "blockType": "request", 
-  "name" : "multivaluelegacyextendedpropertypostmultivalueextendedproperties_v1_e1" 
+<!-- {
+  "blockType": "request",
+  "name" : "multivaluelegacyextendedpropertypostmultivalueextendedproperties_v1_e1"
 } -->
 
 ```http
@@ -380,9 +380,9 @@ extended property:
 - **value** specifies `Palette` as an array of 3 string values, `["Green", "Aqua", "Blue"]`.
 
 # [HTTP](#tab/http)
-<!-- { 
-  "blockType": "request", 
-  "name" : "multivaluelegacyextendedpropertypostmultivalueextendedproperties_v1_e2" 
+<!-- {
+  "blockType": "request",
+  "name" : "multivaluelegacyextendedpropertypostmultivalueextendedproperties_v1_e2"
 } -->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2_as77AACHsLrBBBA=

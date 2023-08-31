@@ -2,7 +2,7 @@
 title: "message: createForward"
 description: "Create a draft to forward an existing message, in either JSON or MIME format."
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -58,7 +58,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 ## Request body
 This method does not require a request body.
 
-However, for creating a forward draft using MIME format, provide the MIME content with the applicable Internet message headers ("To", "CC", "BCC", "Subject"), all encoded in **base64** format in the request body. 
+However, for creating a forward draft using MIME format, provide the MIME content with the applicable Internet message headers ("To", "CC", "BCC", "Subject"), all encoded in **base64** format in the request body.
 
 ## Response
 

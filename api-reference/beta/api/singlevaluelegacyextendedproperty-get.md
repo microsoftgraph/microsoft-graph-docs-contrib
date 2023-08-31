@@ -4,7 +4,7 @@ description: "You can get a single resource instance expanded with a specific ex
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: non-product-specific
-author: "abheek-das"
+author: "SuryaLashmiS"
 ---
 
 # Get singleValueLegacyExtendedProperty
