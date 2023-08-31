@@ -2,7 +2,7 @@
 title: "message: createReply"
 description: "Create a draft to reply to a message, in either JSON or MIME format. "
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -47,7 +47,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ```
 
 ## Request headers
-| Name       | Type | Description| 
+| Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required.|
 | Content-Type | string  | Nature of the data in the body of an entity. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content. |
@@ -101,6 +101,10 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReply
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/message-createreply-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/message-createreply-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -116,6 +116,10 @@ Content-length: 325
 [!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-iosupdateconfiguration-update-update-iosupdateconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-iosupdateconfiguration-update-update-iosupdateconfiguration-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
