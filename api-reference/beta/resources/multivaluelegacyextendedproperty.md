@@ -4,7 +4,7 @@ description: "An extended property that contains a collection of values."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: non-product-specific
-author: "abheek-das"
+author: "SuryaLashmiS"
 ---
 
 # multiValueLegacyExtendedProperty resource type

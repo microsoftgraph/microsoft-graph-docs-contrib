@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "d21eab90-33dc-4a10-9760-31b5b3146313",
+          "ApiChange": "Property",
+          "ChangedApiName": "checkedOutBy",
+          "ChangeType": "Addition",
+          "Description": "Added the `checkedOutBy` property to the [publicationFacet](https://learn.microsoft.com/en-us/graph/api/resources/publicationFacet?view=graph-rest-beta) resource.",
+          "Target": "publicationFacet"
+        }
+      ],
+      "Id": "d21eab90-33dc-4a10-9760-31b5b3146313",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-04T09:24:40.9901309Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "63ec4567-ba38-4767-92ab-167f2d155951",
+          "ApiChange": "Property",
+          "ChangedApiName": "checkedOutBy",
+          "ChangeType": "Addition",
+          "Description": "Added the `checkedOutBy` property to the [publicationFacet](https://learn.microsoft.com/en-us/graph/api/resources/publicationFacet?view=graph-rest-1.0) resource.",
+          "Target": "publicationFacet"
+        }
+      ],
+      "Id": "63ec4567-ba38-4767-92ab-167f2d155951",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-08-04T09:24:40.9904868Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a8d1ea6c-3868-41c8-b499-ed81848134bd",
           "ApiChange": "Method",
           "ChangedApiName": "permanentDelete",
