@@ -81,7 +81,7 @@ Content-type: application/json
 
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/people/$entity",
-  "profileCardProperties@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/people/profileCardProperties/$entity"
+  "profileCardProperties@odata.context": "https://graph.microsoft.com/v1.0/$metadata#admin/people/profileCardProperties/$entity",
   "profileCardProperties": [
     {
       "directoryPropertyName": "CustomAttribute1",
