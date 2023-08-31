@@ -1,6 +1,6 @@
 ---
 title: "List pronounsSettings"
-description: "Read the properties and relationships of a pronounsSettings object."
+description: "Get the properties of the pronounsSettings resource for an organization."
 author: "aymen-ms"
 ms.localizationpriority: medium
 ms.prod: "people"
@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # List pronounsSettings
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -96,7 +97,7 @@ GET https://graph.microsoft.com/beta/admin/people/pronouns
 ---
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
