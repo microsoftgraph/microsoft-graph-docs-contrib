@@ -4,7 +4,7 @@ description: "Provides the city, state and country/region from where the sign-in
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "identity-and-access-reports"
-author: "SarahBar"
+author: "egreenberg14"
 ---
 
 # signInLocation resource type

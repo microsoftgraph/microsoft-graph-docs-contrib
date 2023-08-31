@@ -4,7 +4,7 @@ description: "Represents directory synchronization errors for the user, group, o
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "japere"
+author: "dhruvinrshah"
 ---
 
 # onPremisesProvisioningError resource type
