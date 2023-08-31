@@ -23,7 +23,7 @@ The following table lists the APIs and [change notification](/graph/api/subscrip
 | Teams Meeting APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content](/graph/api/callrecording-get#example-2-get-callrecording-content)</li></ul> | No model parameter |
 
 > [!NOTE]
-> Billing for these APIs started on July 5th, 2022. To set up an active Azure subscription for your application for billing purposes, see [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup). For more details, see [Payment and billing updates](#payment-and-billing).
+> To set up an active Azure subscription for your application for billing purposes, see [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup). For more details, see [Payment and billing updates](#payment-and-billing).
 
 ## Payment models
 
@@ -98,9 +98,9 @@ The following APIs support the `model=B` parameter.
 
 ### Evaluation mode (default) requirements
 
-The following APIs support evaluation mode. 
+The following APIs support evaluation mode. The evaluation quota is enforced per app, per tenant, per month. The quota is reset at the beginning of each calendar month, and any unused amount doesnt get carried over to the next month. 
 
-| APIs or or [change notification](/graph/api/subscription-post-subscriptions) `resources` | [Seeded capacity](#seeded-capacity) | [Price for additional use](#payment-and-billing) | Notes |
+| APIs or or [change notification](/graph/api/subscription-post-subscriptions) `resources` | Evaluation Quota | [Price for additional use](#payment-and-billing) | Notes |
 |:-----------------------------|:----------------|:-------|:------|
 | [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/chats/getAllMessges</li><li>/teams/getAllMessages</li><li>/users/{user-id}/chats/getAllMessages</li><li>/me/chats/getAllMessages</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMessages</li></ul> |  500 messages per month per tenant per app | N/A |
 | [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/chats/getAllMembers</li><li>/teams/getAllMembers</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMembers</li></ul> | 500 messages per month per tenant per app | N/A |
@@ -115,16 +115,17 @@ The following APIs support evaluation mode.
 
 Seeded capacity is the amount of capacity that an app can use before a consumption meter is charged. Capacity is pooled at the tenant level&mdash;the seeded capacity for all users in the tenant is compared against the app's usage in the tenant. Seeded capacity is per app per tenant&mdash;an app won't run out of seeded capacity if another app runs out. Seeded capacity is reset at the beginning of each calendar month, and any unused amount does not get carried over to the next month.
 
-| Billing model | Use cases | Seeded capacity | License required | Azure subscription required |
+| Payment model | Use cases | Seeded capacity | License required | Azure subscription required |
 |:-----------|:---------------|:---------------|:-----------|:-----------|
 | `model=A` | Security and Compliance | See [`model=A` requirements](#modela-requirements)| Yes (Microsoft 365 E5 eligible license) | Yes |
 | `model=B` | Backup and restore, migration, sentiment analysis, analytics and insights | None | No | Yes |
-| `evaluation model` | Backup and restore, migration, sentiment analysis, analytics and insights | 500 messages per month per app | No | No |
 
-## Payment requirements for meeting APIs
+Seeded capacity is not applicale to Teams Meeting APIs. Please see [Payment requirements for Meeting APIs](#payment-models-for-meeting-apis) for details.
+
+## Payment requirements for Meeting APIs
 
 This section describes the payment requirements for Teams Meeting transcript and recording APIs. These APIs do not support the model A and model B payment models and can be used by any application, irrespective of their use case. 
-These APIs support an [evaluation mode](#evaluation-mode-default-requirements) that apps can use. The following table summarizes the evaluation mode behavior.
+These APIs support an [evaluation mode](#evaluation-mode-default-requirements) that apps can use without configuring Azure billing setup. The following table summarizes the evaluation mode behavior.
 
 | Azure Billing Setup | Result |
 | -------- | -------- |
@@ -138,12 +139,10 @@ The following table lists the price for use for these APIs.
 | Teams Meeting Transcript APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent)</li></ul>  | None |  $0.024* per minute | The duration will be rounded down to nearest minute. |
 | Teams Meeting Recording APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content](/graph/api/callrecording-get#example-2-get-callrecording-content)</li></ul>  | None | $0.03* per minute | The duration will be rounded down to nearest minute. |
 
-*The price for use will be applicable from October 2, 2023. It is subject to change in the future.
+*The price for use will be applicable from October 3, 2023. It is subject to change in the future.
 
 
 ## Payment and billing
-
-On July 5, 2022, [billing changes for Teams APIs](https://devblogs.microsoft.com/microsoft365dev/upcoming-billing-changes-for-microsoft-graph-apis-for-teams-messages/) took effect. 
 
 If your applications are or will be using any of the aforementioned APIs or [change notification](/graph/api/subscription-post-subscriptions) `resources`, you must follow the steps described in [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup) to set up an active Azure subscription for billing purposes.
 
@@ -154,15 +153,14 @@ Note that the organization that owns the app registration is responsible for the
 In the event that incorrect licensing is detected, the API call will fail and data will not be returned.
 Specifically, for most APIs, attempting to GET messages for an unlicensed user will result in a `402` error code. 
 For change notifications, messages sent by unlicensed users will not generate a change notification. 
-Similarly, API calls and change notifications used in evaluation mode 
-in excess of the seeded capacity will fail.
+API calls and change notifications used in evaluation mode in excess of the evaluation quota will fail. 
 
 | Error code | Scenario | Sample error message |
 |:-----------|:-----------|:-----------------|
 | 402 (Payment Required) | Missing an active Azure billing subscription  |`...To call this API, the app must be associated with an Azure subscription, see https://aka.ms/teams-api-payment-requirements for details....`|
 | 402 (Payment Required) | Passing `model=A` without a Microsoft E5 license or without DLP enabled |`...needs a valid license to access this API...`, `...tenant needs a valid license to access this API...`|
 | 402 (Payment Required) | Calling Patch API passing `model=B` |`...query parameter 'model' does not support value 'B' for this API. Use billing model 'A'...`|
-| 402 (Payment Required) | `Evaluation mode` capacity exceeded |`...evaluation mode capacity has been exceeded. Use a valid billing model...`|
+| 402 (Payment Required) | `Evaluation mode` capacity exceeded |`...evaluation capacity for the month has exceeded. To continue beyond the evalution limits complete billing onboarding...`|
 
 > [!NOTE]
 > A successful API call does not mean that the required licensing is in place. Similarly, API success in evaluation model does not guarantee that the call is within seeded capacity.
