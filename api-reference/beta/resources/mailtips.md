@@ -2,7 +2,7 @@
 title: "mailTips resource type"
 description: "Informative messages about a recipient, that are displayed to users while they are composing a message. For example, an out-of-office message "
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Informative messages about a recipient, that are displayed to users while they are composing a message. For example, an out-of-office message 
+Informative messages about a recipient, that are displayed to users while they are composing a message. For example, an out-of-office message
 as an automatic reply for a message recipient.
 
 
