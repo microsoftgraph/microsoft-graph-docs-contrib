@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAlert()
@@ -40,7 +40,7 @@ vendor := "String"
 vendorInformation.SetVendor(&vendor) 
 requestBody.SetVendorInformation(vendorInformation)
 
-result, err := graphClient.Security().Alerts().ByAlertId("alert-id").Patch(context.Background(), requestBody, nil)
+alerts, err := graphClient.Security().Alerts().ByAlertId("alert-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

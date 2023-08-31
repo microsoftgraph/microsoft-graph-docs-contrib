@@ -70,11 +70,6 @@ var requestBody = new AccessReviewScheduleDefinition
 	},
 	Settings = new AccessReviewScheduleSettings
 	{
-		MailNotificationsEnabled = true,
-		ReminderNotificationsEnabled = true,
-		JustificationRequiredOnApproval = true,
-		DefaultDecisionEnabled = false,
-		DefaultDecision = "None",
 		InstanceDurationInDays = 4,
 		Recurrence = new PatternedRecurrence
 		{

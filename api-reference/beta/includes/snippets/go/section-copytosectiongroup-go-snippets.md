@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphusers.NewItemCopyToSectionGroupPostRequestBody()
@@ -23,7 +23,7 @@ requestBody.SetGroupId(&groupId)
 renameAs := "renameAs-value"
 requestBody.SetRenameAs(&renameAs) 
 
-result, err := graphClient.Me().Onenote().Sections().BySectionId("onenoteSection-id").CopyToSectionGroup().Post(context.Background(), requestBody, nil)
+copyToSectionGroup, err := graphClient.Me().Onenote().Sections().ByOnenoteSectionId("onenoteSection-id").CopyToSectionGroup().Post(context.Background(), requestBody, nil)
 
 
 ```

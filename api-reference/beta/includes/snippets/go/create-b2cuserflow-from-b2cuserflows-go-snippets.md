@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewB2cIdentityUserFlow()
@@ -23,7 +23,7 @@ requestBody.SetUserFlowType(&userFlowType)
 userFlowTypeVersion := float32(3)
 requestBody.SetUserFlowTypeVersion(&userFlowTypeVersion) 
 
-result, err := graphClient.Identity().B2cUserFlows().Post(context.Background(), requestBody, nil)
+b2cUserFlows, err := graphClient.Identity().B2cUserFlows().Post(context.Background(), requestBody, nil)
 
 
 ```

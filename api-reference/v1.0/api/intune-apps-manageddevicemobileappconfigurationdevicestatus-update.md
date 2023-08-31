@@ -65,6 +65,7 @@ If successful, this method returns a `200 OK` response code and an updated [mana
 ### Request
 Here is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- { "blockType": "request" , "name" : "intune_apps_manageddevicemobileappconfigurationdevicestatus_update_update_manageddevicemobileappconfigurationdevicestatus" }-->
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/deviceStatuses/{managedDeviceMobileAppConfigurationDeviceStatusId}
@@ -82,6 +83,40 @@ Content-length: 445
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-apps-manageddevicemobileappconfigurationdevicestatus-update-update-manageddevicemobileappconfigurationdevicestatus-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

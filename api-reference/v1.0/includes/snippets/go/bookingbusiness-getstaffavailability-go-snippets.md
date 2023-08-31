@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphsolutions.NewGetStaffAvailabilityPostRequestBody()
@@ -34,7 +34,7 @@ timeZone := "Pacific Standard Time"
 endDateTime.SetTimeZone(&timeZone) 
 requestBody.SetEndDateTime(endDateTime)
 
-result, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").GetStaffAvailability().Post(context.Background(), requestBody, nil)
+getStaffAvailability, err := graphClient.Solutions().BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").GetStaffAvailability().Post(context.Background(), requestBody, nil)
 
 
 ```

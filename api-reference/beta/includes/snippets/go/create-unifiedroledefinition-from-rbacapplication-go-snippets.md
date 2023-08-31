@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewUnifiedRoleDefinition()
@@ -35,7 +35,7 @@ requestBody.SetRolePermissions(rolePermissions)
 isEnabled := true
 requestBody.SetIsEnabled(&isEnabled) 
 
-result, err := graphClient.RoleManagement().Directory().RoleDefinitions().Post(context.Background(), requestBody, nil)
+roleDefinitions, err := graphClient.RoleManagement().Directory().RoleDefinitions().Post(context.Background(), requestBody, nil)
 
 
 ```

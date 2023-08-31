@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 Asynchronously assign a sensitivity label to a [driveItem][item-resource]. 
 
-This API is part of Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions and is considered a protected API. Protected APIs require you to have additional validation, beyond permission and consent, before you can use them. Before you call this API, you must [request access](https://aka.ms/PreviewSPOPremiumAPI). 
+This API is part of Microsoft SharePoint and OneDrive APIs that perform advanced premium administrative functions and is considered a protected API. Protected APIs require you to have additional validation, beyond permission and consent, before you can use them. Before you call this API, you must [Enable metered APIs and services in Microsoft Graph](/graph/metered-api-setup). 
 
 For more information about sensitivity labels from an administrator's perspective, see [Enable sensitivity labels for Office files in SharePoint and OneDrive](/microsoft-365/compliance/sensitivity-labels-sharepoint-onedrive-files?view=o365-worldwide&preserve-view=true).
 
@@ -85,6 +85,7 @@ The following table lists the possible values for the error types.
 The following is an example of a request.
 
 
+# [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "assignSensitivityLabel", "tags": "service.graph", "sampleKeys": ["016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U"] } -->
 ``` http
 POST https://graph.microsoft.com/v1.0/drive/root/items/016GVDAP3RCQS5VBQHORFIVU2ZMOSBL25U/assignSensitivityLabel
@@ -97,6 +98,11 @@ Content-Type: application/json
 }
 ```
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/assignsensitivitylabel-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPersonName()
 nickname := "Kesha"
 requestBody.SetNickname(&nickname) 
 
-result, err := graphClient.Me().Profile().Names().ByNameId("personName-id").Patch(context.Background(), requestBody, nil)
+names, err := graphClient.Me().Profile().Names().ByPersonNameId("personName-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

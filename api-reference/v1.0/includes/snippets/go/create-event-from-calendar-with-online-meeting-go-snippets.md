@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEvent()
@@ -61,7 +61,7 @@ requestBody.SetIsOnlineMeeting(&isOnlineMeeting)
 onlineMeetingProvider := graphmodels.TEAMSFORBUSINESS_ONLINEMEETINGPROVIDERTYPE 
 requestBody.SetOnlineMeetingProvider(&onlineMeetingProvider) 
 
-result, err := graphClient.Me().Calendars().ByCalendarId("calendar-id").Events().Post(context.Background(), requestBody, nil)
+events, err := graphClient.Me().Calendars().ByCalendarId("calendar-id").Events().Post(context.Background(), requestBody, nil)
 
 
 ```

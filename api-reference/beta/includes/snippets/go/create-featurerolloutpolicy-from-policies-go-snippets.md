@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewFeatureRolloutPolicy()
@@ -27,7 +27,7 @@ requestBody.SetIsEnabled(&isEnabled)
 isAppliedToOrganization := false
 requestBody.SetIsAppliedToOrganization(&isAppliedToOrganization) 
 
-result, err := graphClient.Policies().FeatureRolloutPolicies().Post(context.Background(), requestBody, nil)
+featureRolloutPolicies, err := graphClient.Policies().FeatureRolloutPolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

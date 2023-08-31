@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new DeltaRequestBuilderGetRequestConfiguration();
 $headers = [
@@ -16,12 +16,11 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 $queryParameters = DeltaRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->startdatetime = "{start_datetime}";
-$queryParameters->enddatetime = "{end_datetime}";
+$queryParameters->startDateTime = "{start_datetime}";
+$queryParameters->endDateTime = "{end_datetime}";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->me()->calendarView()->delta()->get($requestConfiguration);
-
+$result = $graphServiceClient->me()->calendarView()->delta()->get($requestConfiguration)->wait();
 
 ```

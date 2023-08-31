@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -30,7 +30,7 @@ configuration := &graphgroups.GroupItemTransitiveMembersGraph.groupRequestBuilde
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Groups().ByGroupId("group-id").TransitiveMembers().GraphGroup().Get(context.Background(), configuration)
+graphGroup, err := graphClient.Groups().ByGroupId("group-id").TransitiveMembers().GraphGroup().Get(context.Background(), configuration)
 
 
 ```

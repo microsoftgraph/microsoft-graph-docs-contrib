@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewTokenIssuancePolicy()
@@ -25,7 +25,7 @@ requestBody.SetDisplayName(&displayName)
 isOrganizationDefault := true
 requestBody.SetIsOrganizationDefault(&isOrganizationDefault) 
 
-result, err := graphClient.Policies().TokenIssuancePolicies().Post(context.Background(), requestBody, nil)
+tokenIssuancePolicies, err := graphClient.Policies().TokenIssuancePolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

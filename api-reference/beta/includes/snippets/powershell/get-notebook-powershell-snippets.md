@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Notes
+Import-Module Microsoft.Graph.Beta.Notes
 
 # A UPN can also be used as -UserId.
-Get-MgUserOnenoteNotebook -UserId $userId -NotebookId $notebookId
+Get-MgBetaUserOnenoteNotebook -UserId $userId -NotebookId $notebookId
 
 ```

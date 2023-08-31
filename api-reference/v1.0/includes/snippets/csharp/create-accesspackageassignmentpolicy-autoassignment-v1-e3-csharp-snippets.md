@@ -25,6 +25,8 @@ var requestBody = new AccessPackageAssignmentPolicy
 	AutomaticRequestSettings = new AccessPackageAutomaticRequestSettings
 	{
 		RequestAccessForAllowedTargets = true,
+		RemoveAccessWhenTargetLeavesAllowedTargets = true,
+		GracePeriodBeforeAccessRemoval = TimeSpan.Parse("P7D"),
 	},
 	AccessPackage = new AccessPackage
 	{

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelsexternalconnectors.NewExternalItem()
@@ -57,7 +57,7 @@ type := graphmodels.TEXT_EXTERNALITEMCONTENTTYPE
 content.SetType(&type) 
 requestBody.SetContent(content)
 
-result, err := graphClient.External().Connections().ByConnectionId("externalConnection-id").Items().ByItemId("externalItem-id").Put(context.Background(), requestBody, nil)
+items, err := graphClient.External().Connections().ByExternalConnectionId("externalConnection-id").Items().ByExternalItemId("externalItem-id").Put(context.Background(), requestBody, nil)
 
 
 ```

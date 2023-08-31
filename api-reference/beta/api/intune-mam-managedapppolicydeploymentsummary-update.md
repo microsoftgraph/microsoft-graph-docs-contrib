@@ -51,10 +51,10 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Not yet documented|
-|configurationDeployedUserCount|Int32|Not yet documented|
-|lastRefreshTime|DateTimeOffset|Not yet documented|
-|configurationDeploymentSummaryPerApp|[managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md) collection|Not yet documented|
+|displayName|String||
+|configurationDeployedUserCount|Int32||
+|lastRefreshTime|DateTimeOffset||
+|configurationDeploymentSummaryPerApp|[managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md) collection||
 |id|String|Key of the entity.|
 |version|String|Version of the entity.|
 

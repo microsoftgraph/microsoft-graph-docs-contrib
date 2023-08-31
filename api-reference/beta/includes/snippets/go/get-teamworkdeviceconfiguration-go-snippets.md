@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Teamwork().Devices().ByDeviceId("teamworkDevice-id").Configuration().Get(context.Background(), nil)
+configuration, err := graphClient.Teamwork().Devices().ByTeamworkDeviceId("teamworkDevice-id").Configuration().Get(context.Background(), nil)
 
 
 ```

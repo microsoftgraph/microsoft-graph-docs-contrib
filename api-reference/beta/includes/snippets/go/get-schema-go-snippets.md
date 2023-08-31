@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.External().Connections().ByConnectionId("externalConnection-id").Schema().Get(context.Background(), nil)
+schema, err := graphClient.External().Connections().ByExternalConnectionId("externalConnection-id").Schema().Get(context.Background(), nil)
 
 
 ```

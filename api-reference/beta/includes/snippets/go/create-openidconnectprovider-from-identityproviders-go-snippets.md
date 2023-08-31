@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewIdentityProvider()
@@ -47,7 +47,7 @@ requestBody.SetResponseType(&responseType)
 scope := "openid"
 requestBody.SetScope(&scope) 
 
-result, err := graphClient.IdentityProviders().Post(context.Background(), requestBody, nil)
+identityProviders, err := graphClient.IdentityProviders().Post(context.Background(), requestBody, nil)
 
 
 ```

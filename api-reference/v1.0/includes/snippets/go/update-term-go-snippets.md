@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelstermstore.NewTerm()
@@ -31,7 +31,7 @@ labels := []graphmodelstermstore.LocalizedLabelable {
 }
 requestBody.SetLabels(labels)
 
-result, err := graphClient.Sites().BySiteId("site-id").TermStore().Sets().BySetId("set-id").Terms().ByTermId("term-id").Patch(context.Background(), requestBody, nil)
+terms, err := graphClient.Sites().BySiteId("site-id").TermStore().Sets().BySetId("set-id").Terms().ByTermId("term-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

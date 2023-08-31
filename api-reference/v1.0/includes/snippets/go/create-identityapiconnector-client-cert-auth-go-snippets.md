@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewIdentityApiConnector()
@@ -27,7 +27,7 @@ password := "CertificatePassword"
 authenticationConfiguration.SetPassword(&password) 
 requestBody.SetAuthenticationConfiguration(authenticationConfiguration)
 
-result, err := graphClient.Identity().ApiConnectors().Post(context.Background(), requestBody, nil)
+apiConnectors, err := graphClient.Identity().ApiConnectors().Post(context.Background(), requestBody, nil)
 
 
 ```

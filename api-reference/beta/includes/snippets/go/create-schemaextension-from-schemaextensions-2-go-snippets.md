@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewSchemaExtension()
@@ -49,7 +49,7 @@ properties := []graphmodels.ExtensionSchemaPropertyable {
 }
 requestBody.SetProperties(properties)
 
-result, err := graphClient.SchemaExtensions().Post(context.Background(), requestBody, nil)
+schemaExtensions, err := graphClient.SchemaExtensions().Post(context.Background(), requestBody, nil)
 
 
 ```

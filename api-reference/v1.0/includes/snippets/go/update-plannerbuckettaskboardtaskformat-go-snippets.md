@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -28,7 +28,7 @@ requestBody := graphmodels.NewPlannerBucketTaskBoardTaskFormat()
 orderHint := "A6673H Ejkl!"
 requestBody.SetOrderHint(&orderHint) 
 
-result, err := graphClient.Planner().Tasks().ByTaskId("plannerTask-id").BucketTaskBoardFormat().Patch(context.Background(), requestBody, configuration)
+bucketTaskBoardFormat, err := graphClient.Planner().Tasks().ByPlannerTaskId("plannerTask-id").BucketTaskBoardFormat().Patch(context.Background(), requestBody, configuration)
 
 
 ```

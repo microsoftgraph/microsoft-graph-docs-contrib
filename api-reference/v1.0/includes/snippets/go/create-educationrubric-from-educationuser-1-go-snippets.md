@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEducationRubric()
@@ -117,7 +117,7 @@ qualities := []graphmodels.RubricQualityable {
 }
 requestBody.SetQualities(qualities)
 
-result, err := graphClient.Education().Me().Rubrics().Post(context.Background(), requestBody, nil)
+rubrics, err := graphClient.Education().Me().Rubrics().Post(context.Background(), requestBody, nil)
 
 
 ```

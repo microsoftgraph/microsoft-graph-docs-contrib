@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphusers.NewItemCheckMemberObjectsPostRequestBody()
@@ -24,7 +24,7 @@ ids := []string {
 }
 requestBody.SetIds(ids)
 
-result, err := graphClient.Me().CheckMemberObjects().Post(context.Background(), requestBody, nil)
+checkMemberObjects, err := graphClient.Me().CheckMemberObjects().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelssearch.NewBookmark()
@@ -62,7 +62,7 @@ requestBody.SetTargetedVariations(targetedVariations)
 state := graphmodels.PUBLISHED_ANSWERSTATE 
 requestBody.SetState(&state) 
 
-result, err := graphClient.Search().Bookmarks().Post(context.Background(), requestBody, nil)
+bookmarks, err := graphClient.Search().Bookmarks().Post(context.Background(), requestBody, nil)
 
 
 ```

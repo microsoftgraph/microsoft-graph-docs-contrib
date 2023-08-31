@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelssearch.NewAcronym()
@@ -27,7 +27,7 @@ requestBody.SetWebUrl(&webUrl)
 state := graphmodels.DRAFT_ANSWERSTATE 
 requestBody.SetState(&state) 
 
-result, err := graphClient.Search().Acronyms().Post(context.Background(), requestBody, nil)
+acronyms, err := graphClient.Search().Acronyms().Post(context.Background(), requestBody, nil)
 
 
 ```

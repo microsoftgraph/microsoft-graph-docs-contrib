@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewChat()
@@ -57,7 +57,7 @@ installedApps := []graphmodels.TeamsAppInstallationable {
 }
 requestBody.SetInstalledApps(installedApps)
 
-result, err := graphClient.Chats().Post(context.Background(), requestBody, nil)
+chats, err := graphClient.Chats().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewCustomAccessPackageWorkflowExtension()
@@ -33,7 +33,7 @@ resourceId := "f604bd15-f785-4309-ad7c-6fad18ddb6cb"
 authenticationConfiguration.SetResourceId(&resourceId) 
 requestBody.SetAuthenticationConfiguration(authenticationConfiguration)
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogs().ByAccessPackageCatalogId("accessPackageCatalog-id").CustomAccessPackageWorkflowExtensions().Post(context.Background(), requestBody, nil)
+customAccessPackageWorkflowExtensions, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageCatalogs().ByAccessPackageCatalogId("accessPackageCatalog-id").CustomAccessPackageWorkflowExtensions().Post(context.Background(), requestBody, nil)
 
 
 ```

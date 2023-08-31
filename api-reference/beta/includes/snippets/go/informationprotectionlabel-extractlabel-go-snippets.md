@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -87,7 +87,7 @@ additionalData := map[string]interface{}{
 contentInfo.SetAdditionalData(additionalData)
 requestBody.SetContentInfo(contentInfo)
 
-result, err := graphClient.InformationProtection().Policy().Labels().ExtractLabel().Post(context.Background(), requestBody, configuration)
+extractLabel, err := graphClient.InformationProtection().Policy().Labels().ExtractLabel().Post(context.Background(), requestBody, configuration)
 
 
 ```

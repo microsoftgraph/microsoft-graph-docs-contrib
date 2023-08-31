@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewGroupLifecyclePolicy()
@@ -23,7 +23,7 @@ requestBody.SetManagedGroupTypes(&managedGroupTypes)
 alternateNotificationEmails := "admin@contoso.com"
 requestBody.SetAlternateNotificationEmails(&alternateNotificationEmails) 
 
-result, err := graphClient.GroupLifecyclePolicies().ByGroupLifecyclePolicieId("groupLifecyclePolicy-id").Patch(context.Background(), requestBody, nil)
+groupLifecyclePolicies, err := graphClient.GroupLifecyclePolicies().ByGroupLifecyclePolicyId("groupLifecyclePolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewBookingStaffMember()
@@ -120,7 +120,7 @@ workingHours := []graphmodels.BookingWorkHoursable {
 }
 requestBody.SetWorkingHours(workingHours)
 
-result, err := graphClient.BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").StaffMembers().ByStaffMemberId("bookingStaffMember-id").Patch(context.Background(), requestBody, nil)
+staffMembers, err := graphClient.BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").StaffMembers().ByBookingStaffMemberId("bookingStaffMember-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

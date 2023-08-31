@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewBusinessScenarioTask()
@@ -41,7 +41,7 @@ externalBucketId := "deliveryBucket"
 businessScenarioProperties.SetExternalBucketId(&externalBucketId) 
 requestBody.SetBusinessScenarioProperties(businessScenarioProperties)
 
-result, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().Tasks().Post(context.Background(), requestBody, nil)
+tasks, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().Tasks().Post(context.Background(), requestBody, nil)
 
 
 ```

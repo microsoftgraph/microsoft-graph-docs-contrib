@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphdrives.NewAddPostRequestBody()
@@ -23,7 +23,7 @@ requestBody.SetSourceData(&sourceData)
 seriesBy := "Auto"
 requestBody.SetSeriesBy(&seriesBy) 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Worksheets().ByWorksheetId("workbookWorksheet-id").Charts().Add().Post(context.Background(), requestBody, nil)
+add, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Worksheets().ByWorkbookWorksheetId("workbookWorksheet-id").Charts().Add().Post(context.Background(), requestBody, nil)
 
 
 ```

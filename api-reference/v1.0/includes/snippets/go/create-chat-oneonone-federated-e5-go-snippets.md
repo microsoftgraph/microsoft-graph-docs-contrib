@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewChat()
@@ -47,7 +47,7 @@ members := []graphmodels.ConversationMemberable {
 }
 requestBody.SetMembers(members)
 
-result, err := graphClient.Chats().Post(context.Background(), requestBody, nil)
+chats, err := graphClient.Chats().Post(context.Background(), requestBody, nil)
 
 
 ```

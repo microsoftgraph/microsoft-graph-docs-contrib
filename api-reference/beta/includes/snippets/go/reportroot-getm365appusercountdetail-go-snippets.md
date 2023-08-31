@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
@@ -25,7 +25,8 @@ configuration := &graphreports.ReportsGetM365AppUserDetail(period='{period}')Req
 	QueryParameters: requestParameters,
 }
 
-graphClient.Reports().GetM365AppUserDetail(period='{period}')().Get(context.Background(), configuration)
+period := "{period}"
+graphClient.Reports().GetM365AppUserDetailWithPeriod(&period).Get(context.Background(), configuration)
 
 
 ```

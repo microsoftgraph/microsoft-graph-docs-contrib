@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Reports().AppCredentialSignInActivities().ByAppCredentialSignInActivitieId("appCredentialSignInActivity-id").Get(context.Background(), nil)
+appCredentialSignInActivities, err := graphClient.Reports().AppCredentialSignInActivities().ByAppCredentialSignInActivityId("appCredentialSignInActivity-id").Get(context.Background(), nil)
 
 
 ```

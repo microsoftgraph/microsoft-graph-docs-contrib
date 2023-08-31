@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(request_adapter)
 
 
 request_configuration = DelegatedAdminAccessAssignmentRequestBuilder.DelegatedAdminAccessAssignmentRequestBuilderDeleteRequestConfiguration(
@@ -15,8 +16,7 @@ headers = {
 
 )
 
-
-await client.tenant_relationships.delegated_admin_relationships.by_delegated_admin_relationship_id('delegatedAdminRelationship-id').acce_assignments.by_acces_assignment_id('delegatedAdminAccessAssignment-id').delete(request_configuration = request_configuration)
+await graph_client.tenant_relationships.delegated_admin_relationships.by_delegated_admin_relationship_id('delegatedAdminRelationship-id').acce_assignments.by_acces_assignment_id('delegatedAdminAccessAssignment-id').delete(request_configuration = request_configuration)
 
 
 ```

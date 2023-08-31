@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewCall()
@@ -79,7 +79,7 @@ allowConversationWithoutHost := true
 meetingInfo.SetAllowConversationWithoutHost(&allowConversationWithoutHost) 
 requestBody.SetMeetingInfo(meetingInfo)
 
-result, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
+calls, err := graphClient.Communications().Calls().Post(context.Background(), requestBody, nil)
 
 
 ```

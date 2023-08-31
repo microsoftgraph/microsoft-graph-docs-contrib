@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphusers.NewItemCreateReplyAllPostRequestBody()
@@ -34,7 +34,7 @@ requestBody.SetMessage(message)
 comment := "if the project gets approved, please take a look at the attached guidelines before you decide on the name."
 requestBody.SetComment(&comment) 
 
-result, err := graphClient.Me().Messages().ByMessageId("message-id").CreateReplyAll().Post(context.Background(), requestBody, nil)
+createReplyAll, err := graphClient.Me().Messages().ByMessageId("message-id").CreateReplyAll().Post(context.Background(), requestBody, nil)
 
 
 ```

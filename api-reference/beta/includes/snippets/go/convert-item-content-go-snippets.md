@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
@@ -25,7 +25,7 @@ configuration := &graphdrives.DriveItemItemItemContentRequestBuilderGetRequestCo
 	QueryParameters: requestParameters,
 }
 
-graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Content().Get(context.Background(), configuration)
+graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Content().Get(context.Background(), configuration)
 
 
 ```

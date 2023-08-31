@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewCloudPcExternalPartnerSetting()
 enableConnection := true
 requestBody.SetEnableConnection(&enableConnection) 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ExternalPartnerSettings().ByExternalPartnerSettingId("cloudPcExternalPartnerSetting-id").Patch(context.Background(), requestBody, nil)
+externalPartnerSettings, err := graphClient.DeviceManagement().VirtualEndpoint().ExternalPartnerSettings().ByCloudPcExternalPartnerSettingId("cloudPcExternalPartnerSetting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphtrustframework.NewGenerateKeyPostRequestBody()
@@ -25,7 +25,7 @@ requestBody.SetNbf(&nbf)
 exp := int64(1508969811)
 requestBody.SetExp(&exp) 
 
-result, err := graphClient.TrustFramework().KeySets().ByKeySetId("trustFrameworkKeySet-id").GenerateKey().Post(context.Background(), requestBody, nil)
+generateKey, err := graphClient.TrustFramework().KeySets().ByTrustFrameworkKeySetId("trustFrameworkKeySet-id").GenerateKey().Post(context.Background(), requestBody, nil)
 
 
 ```

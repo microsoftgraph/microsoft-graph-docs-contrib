@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphsecurity.NewUpdateAlertsPostRequestBody()
@@ -56,7 +56,7 @@ value := []graphmodels.alertable {
 }
 requestBody.SetValue(value)
 
-result, err := graphClient.Security().Alerts().UpdateAlerts().Post(context.Background(), requestBody, nil)
+updateAlerts, err := graphClient.Security().Alerts().UpdateAlerts().Post(context.Background(), requestBody, nil)
 
 
 ```

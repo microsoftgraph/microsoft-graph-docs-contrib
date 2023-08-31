@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphserviceprincipals.NewProvisionOnDemandPostRequestBody()
@@ -60,7 +60,7 @@ parameters := []graphmodels.SynchronizationJobApplicationParametersable {
 }
 requestBody.SetParameters(parameters)
 
-result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Synchronization().Jobs().ByJobId("synchronizationJob-id").ProvisionOnDemand().Post(context.Background(), requestBody, nil)
+provisionOnDemand, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Synchronization().Jobs().BySynchronizationJobId("synchronizationJob-id").ProvisionOnDemand().Post(context.Background(), requestBody, nil)
 
 
 ```

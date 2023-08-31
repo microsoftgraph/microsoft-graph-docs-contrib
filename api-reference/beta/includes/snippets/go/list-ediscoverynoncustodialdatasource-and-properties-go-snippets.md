@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphsecurity.SecurityCasesEdiscoveryCaseItemNoncustodialDataSourcesRequestBuilderGetQueryParameters{
@@ -22,7 +22,7 @@ configuration := &graphsecurity.SecurityCasesEdiscoveryCaseItemNoncustodialDataS
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").NoncustodialDataSources().Get(context.Background(), configuration)
+noncustodialDataSources, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").NoncustodialDataSources().Get(context.Background(), configuration)
 
 
 ```

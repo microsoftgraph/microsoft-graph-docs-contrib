@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Users().ByUserId("user-id").Settings().ShiftPreferences().Get(context.Background(), nil)
+shiftPreferences, err := graphClient.Users().ByUserId("user-id").Settings().ShiftPreferences().Get(context.Background(), nil)
 
 
 ```

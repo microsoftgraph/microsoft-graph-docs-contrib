@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Education().Me().Rubrics().ByRubricId("educationRubric-id").Delete(context.Background(), nil)
+graphClient.Education().Me().Rubrics().ByEducationRubricId("educationRubric-id").Delete(context.Background(), nil)
 
 
 ```

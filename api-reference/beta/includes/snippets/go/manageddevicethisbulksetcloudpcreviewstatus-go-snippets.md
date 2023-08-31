@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphdevicemanagement.NewBulkSetCloudPcReviewStatusPostRequestBody()
@@ -31,7 +31,7 @@ azureStorageAccountId := "/subscriptions/f68bd846-16ad-4b51-a7c6-c84944a3367c/re
 reviewStatus.SetAzureStorageAccountId(&azureStorageAccountId) 
 requestBody.SetReviewStatus(reviewStatus)
 
-result, err := graphClient.DeviceManagement().ManagedDevices().BulkSetCloudPcReviewStatus().Post(context.Background(), requestBody, nil)
+bulkSetCloudPcReviewStatus, err := graphClient.DeviceManagement().ManagedDevices().BulkSetCloudPcReviewStatus().Post(context.Background(), requestBody, nil)
 
 
 ```

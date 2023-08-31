@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelstermstore.NewSet()
 description := "mySet"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.TermStore().Sets().BySetId("set-id").Patch(context.Background(), requestBody, nil)
+sets, err := graphClient.TermStore().Sets().BySetId("set-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

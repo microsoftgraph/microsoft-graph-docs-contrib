@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewTokenLifetimePolicy()
@@ -25,7 +25,7 @@ requestBody.SetDisplayName(&displayName)
 isOrganizationDefault := true
 requestBody.SetIsOrganizationDefault(&isOrganizationDefault) 
 
-result, err := graphClient.Policies().TokenLifetimePolicies().ByTokenLifetimePolicieId("tokenLifetimePolicy-id").Patch(context.Background(), requestBody, nil)
+tokenLifetimePolicies, err := graphClient.Policies().TokenLifetimePolicies().ByTokenLifetimePolicyId("tokenLifetimePolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

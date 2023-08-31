@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Users().ByUserId("user-id").Authentication().TemporaryAccessPassMethods().ByTemporaryAccessPassMethodId("temporaryAccessPassAuthenticationMethod-id").Get(context.Background(), nil)
+temporaryAccessPassMethods, err := graphClient.Users().ByUserId("user-id").Authentication().TemporaryAccessPassMethods().ByTemporaryAccessPassAuthenticationMethodId("temporaryAccessPassAuthenticationMethod-id").Get(context.Background(), nil)
 
 
 ```

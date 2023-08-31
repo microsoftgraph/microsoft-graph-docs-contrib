@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
@@ -28,7 +28,7 @@ configuration := &graphusers.ItemPendingAccessReviewInstancesRequestBuilderGetRe
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().PendingAccessReviewInstances().Get(context.Background(), configuration)
+pendingAccessReviewInstances, err := graphClient.Me().PendingAccessReviewInstances().Get(context.Background(), configuration)
 
 
 ```

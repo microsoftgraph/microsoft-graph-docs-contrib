@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewCertificateBasedAuthConfiguration()
@@ -29,7 +29,7 @@ certificateAuthorities := []graphmodels.CertificateAuthorityable {
 }
 requestBody.SetCertificateAuthorities(certificateAuthorities)
 
-result, err := graphClient.Organization().ByOrganization().Id("organization-id").CertificateBasedAuthConfiguration().Post(context.Background(), requestBody, nil)
+certificateBasedAuthConfiguration, err := graphClient.Organization().ByOrganizationId("organization-id").CertificateBasedAuthConfiguration().Post(context.Background(), requestBody, nil)
 
 
 ```

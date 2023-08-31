@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewSubjectRightsRequest()
@@ -66,7 +66,7 @@ approvers := []graphmodels.Userable {
 }
 requestBody.SetApprovers(approvers)
 
-result, err := graphClient.Privacy().SubjectRightsRequests().Post(context.Background(), requestBody, nil)
+subjectRightsRequests, err := graphClient.Privacy().SubjectRightsRequests().Post(context.Background(), requestBody, nil)
 
 
 ```
