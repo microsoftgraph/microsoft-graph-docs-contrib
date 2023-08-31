@@ -134,6 +134,10 @@ Content-type: application/json
 }
 ```
 
+## Known issues
+
+- Query templates are supported only for SharePoint, OneDrive, or external items (i.e. site, drive, driveItem, list, listItem and externalItem). They are not supported for **message**, **chatMessage**, **event**, **person**, **bookmark**, **acronym** or **qna** types.
+
 ## Next steps
 
 - [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview)
