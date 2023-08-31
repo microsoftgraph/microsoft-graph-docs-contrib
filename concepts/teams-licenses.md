@@ -120,7 +120,7 @@ Seeded capacity is the amount of capacity that an app can use before a consumpti
 | `model=A` | Security and Compliance | See [`model=A` requirements](#modela-requirements)| Yes (Microsoft 365 E5 eligible license) | Yes |
 | `model=B` | Backup and restore, migration, sentiment analysis, analytics and insights | None | No | Yes |
 
-Seeded capacity is not applicale to Teams Meeting APIs. Please see [Payment requirements for Meeting APIs](#payment-requirements-for-meeting-apis) for details.
+Seeded capacity is not applicable to Teams Meeting APIs. Please see [Payment requirements for Meeting APIs](#payment-requirements-for-meeting-apis) for details.
 
 ## Payment requirements for Meeting APIs
 
