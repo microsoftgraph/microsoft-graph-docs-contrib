@@ -16326,6 +16326,8 @@ items:
                     href: api/security-host-list-passivedns.md
                   - name: List passive DNS reverse
                     href: api/security-host-list-passivednsreverse.md
+                  - name: List ports
+                    href: api/security-host-list-ports.md
                   - name: Get reputation
                     href: api/security-host-get-reputation.md
                   - name: List subdomains
@@ -16356,6 +16358,14 @@ items:
                     href: api/security-host-list-parenthostpairs.md
                   - name: List child host pairs
                     href: api/security-host-list-childhostpairs.md
+              - name: Host port
+                items:
+                  - name: Host port
+                    href: resources/security-hostport.md
+                  - name: Get
+                    href: api/security-hostport-get.md
+                  - name: List ports for a host
+                    href: api/security-host-list-ports.md
               - name: Host tracker
                 items:
                   - name: Host tracker
