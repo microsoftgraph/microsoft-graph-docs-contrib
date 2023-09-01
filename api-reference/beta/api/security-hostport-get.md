@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # Get hostPort
+
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -17,13 +18,14 @@ Namespace: microsoft.graph.security
 Read the properties and relationships of a [hostPort](../resources/security-hostport.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|ThreatIntelligence.Read.All.|
-|Delegated (personal Microsoft account)|Not supported.|
-|Application|ThreatIntelligence.Read.All.|
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | ThreatIntelligence.Read.All.                |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | ThreatIntelligence.Read.All.                |
 
 ## HTTP request
 
@@ -31,33 +33,37 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 GET /security/threatIntelligence/hostPorts/{hostPortId}
 ```
 
 ## Optional query parameters
+
 This method supports the `$select` and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 The following properties can be used for `$select` calls.
 
-|Property|Example|Notes|
-|:---|:---|:---|
-|All [hostPort](../resources/security-hostport.md) properties|`$select=id,firstSeenDateTime`|Use the name as it appears in the [hostPort](../resources/security-hostport.md) resource.|
-|mostRecentSslCertificate|`$select=mostRecentSslCertificate`|Does not support selecting on nested properties (for example `mostRecentSslCertificate/id`).|
-|host|`$select=host`|Does not support selecting on nested properties (for example `host/id`).|
+| Property                                                     | Example                            | Notes                                                                                        |
+| :----------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------------------------------------- |
+| All [hostPort](../resources/security-hostport.md) properties | `$select=id,firstSeenDateTime`     | Use the name as it appears in the [hostPort](../resources/security-hostport.md) resource.    |
+| mostRecentSslCertificate                                     | `$select=mostRecentSslCertificate` | Does not support selecting on nested properties (for example `mostRecentSslCertificate/id`). |
+| host                                                         | `$select=host`                     | Does not support selecting on nested properties (for example `host/id`).                     |
 
 The following properties can be used for `$expand` calls.
 
-|Property|Example|Notes|
-|:---|:---|:---|
-|mostRecentSslCertificate|`$expand=mostRecentSslCertificate`||
+| Property                 | Example                            | Notes |
+| :----------------------- | :--------------------------------- | :---- |
+| mostRecentSslCertificate | `$expand=mostRecentSslCertificate` |       |
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -67,27 +73,33 @@ If successful, this method returns a `200 OK` response code and a [hostPort](../
 ## Examples
 
 ### Request
+
 The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_hostport"
 }
 -->
-``` http
+
+```http
 GET https://graph.microsoft.com/beta/security/threatIntelligence/hostPorts/{hostPortId}
 ```
 
-
 ### Response
+
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.security.hostPort"
 }
 -->
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -133,4 +145,3 @@ Content-Type: application/json
   }
 }
 ```
-
