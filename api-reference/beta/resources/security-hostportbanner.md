@@ -1,9 +1,9 @@
 ---
 title: "hostPortBanner resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents a banner retrieved from scanning a port on a host."
+author: "angelo-moulic"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,16 +13,16 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents a banner retrieved from scanning a port on a host.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|banner|String|**TODO: Add Description**|
-|firstSeenDateTime|DateTimeOffset|**TODO: Add Description**|
-|lastSeenDateTime|DateTimeOffset|**TODO: Add Description**|
-|scanProtocol|String|**TODO: Add Description**|
-|timesObserved|Int32|**TODO: Add Description**|
+|banner|String|The text response received from a web component when scanning a **hostPort**.|
+|firstSeenDateTime|DateTimeOffset|The first date and time when Microsoft Defender Threat Intelligence observed the **hostPortBanner**. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.|
+|lastSeenDateTime|DateTimeOffset|The last date and time when Microsoft Defender Threat Intelligence observed the **hostPortBanner**. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.|
+|scanProtocol|String|The specific protocol used to scan the **hostPort**.|
+|timesObserved|Int32|The total amount of times Microsoft Defender Threat Intelligence has observed the **hostPortBanner** in all its scans.|
 
 ## Relationships
 None.

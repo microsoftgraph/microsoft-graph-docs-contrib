@@ -1,9 +1,9 @@
 ---
 title: "hostPort resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents the connection endpoints which direct data to and from the services running on a host."
+author: "angelo-moulic"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "security"
 doc_type: resourcePageType
 ---
 
@@ -13,45 +13,35 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+[!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-
-Inherits from [microsoft.graph.entity](../resources/entity.md).
+Represents the connection endpoints which direct data to and from the services running on a host.
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List hostPorts](../api/security-hostname-list-ports.md)|[microsoft.graph.security.hostPort](../resources/security-hostport.md) collection|Get a list of the [microsoft.graph.security.hostPort](../resources/security-hostport.md) objects and their properties.|
-|[Create hostPort](../api/security-hostname-post-ports.md)|[microsoft.graph.security.hostPort](../resources/security-hostport.md)|Create a new [microsoft.graph.security.hostPort](../resources/security-hostport.md) object.|
-|[Get hostPort](../api/security-hostport-get.md)|[microsoft.graph.security.hostPort](../resources/security-hostport.md)|Read the properties and relationships of a [microsoft.graph.security.hostPort](../resources/security-hostport.md) object.|
-|[Update hostPort](../api/security-hostport-update.md)|[microsoft.graph.security.hostPort](../resources/security-hostport.md)|Update the properties of a [microsoft.graph.security.hostPort](../resources/security-hostport.md) object.|
-|[Delete hostPort](../api/security-hostname-delete-ports.md)|None|Delete a [microsoft.graph.security.hostPort](../resources/security-hostport.md) object.|
-|[List host](../api/security-hostport-list-host.md)|[microsoft.graph.security.host](../resources/security-host.md) collection|Get the host resources from the host navigation property.|
-|[Add host](../api/security-hostport-post-host.md)|[microsoft.graph.security.host](../resources/security-host.md)|Add host by posting to the host collection.|
-|[Remove host](../api/security-hostport-delete-host.md)|None|Remove a [microsoft.graph.security.host](../resources/security-host.md) object.|
-|[List sslCertificate](../api/security-hostport-list-mostrecentsslcertificate.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) collection|Get the sslCertificate resources from the mostRecentSslCertificate navigation property.|
-|[Add sslCertificate](../api/security-hostport-post-mostrecentsslcertificate.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md)|Add mostRecentSslCertificate by posting to the mostRecentSslCertificate collection.|
-|[Remove sslCertificate](../api/security-hostport-delete-mostrecentsslcertificate.md)|None|Remove a [microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) object.|
+|[Get hostPort](../api/security-hostport-get.md)|[microsoft.graph.security.hostPort](../resources/security-hostport.md)|Read the properties and relationships of a **hostPort** object.|
+|[List hostPorts](../api/security-host-list-ports.md)|[microsoft.graph.security.hostPort](../resources/security-hostport.md) collection|Get a list of **hostPort** objects assoicated with a host.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|banners|[microsoft.graph.security.hostPortBanner](../resources/security-hostportbanner.md) collection|**TODO: Add Description**|
-|firstSeenDateTime|DateTimeOffset|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|lastScanDateTime|DateTimeOffset|**TODO: Add Description**|
-|lastSeenDateTime|DateTimeOffset|**TODO: Add Description**|
-|port|Int32|**TODO: Add Description**|
-|protocol|microsoft.graph.security.hostPortProtocol|**TODO: Add Description**.The possible values are: `tcp`, `udp`, `unknownFutureValue`.|
-|services|[microsoft.graph.security.hostPortComponent](../resources/security-hostportcomponent.md) collection|**TODO: Add Description**|
-|status|microsoft.graph.security.hostPortStatus|**TODO: Add Description**.The possible values are: `open`, `filtered`, `closed`, `unknownFutureValue`.|
-|timesObserved|Int32|**TODO: Add Description**|
+|banners|[microsoft.graph.security.hostPortBanner](../resources/security-hostportbanner.md) collection|The **hostPortBanners** retrieved from scanning the port.|
+|firstSeenDateTime|DateTimeOffset|The first date and time when Microsoft Defender Threat Intelligence observed the **hostPort**. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.|
+|id|String|A system-generated ID for the **hostPort**.|
+|lastScanDateTime|DateTimeOffset|The last date and time when Microsoft Defender Threat Intelligence scanned the **hostPort**. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.|
+|lastSeenDateTime|DateTimeOffset|The last date and time when Microsoft Defender Threat Intelligence observed the **hostPort**. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.|
+|port|Int32|The numerical identifier of the port which is standardized across the internet.|
+|protocol|microsoft.graph.security.hostPortProtocol|The general protocol used to scan the port. The possible values are: `tcp`, `udp`, `unknownFutureValue`.|
+|services|[microsoft.graph.security.hostPortComponent](../resources/security-hostportcomponent.md) collection|The **hostPortComponents** retrieved from scanning the port.|
+|status|microsoft.graph.security.hostPortStatus|The status of the port. The possible values are: `open`, `filtered`, `closed`, `unknownFutureValue`.|
+|timesObserved|Int32|The total amount of times Microsoft Defender Threat Intelligence has observed the **hostPort** in all its scans.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|host|[host](../resources/security-host.md)|**TODO: Add Description**|
-|mostRecentSslCertificate|[sslCertificate](../resources/security-sslcertificate.md)|**TODO: Add Description**|
+|host|[host](../resources/security-host.md)|The **host** related to this **hostPort**. This is a reverse navigation property. When navigating to **hostPorts** from a **host**, this should be assumed to be a return reference.|
+|mostRecentSslCertificate|[sslCertificate](../resources/security-sslcertificate.md)|The most recent **sslCertificate** used to communicate on the port|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -83,7 +73,14 @@ The following is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.security.hostPortComponent"
     }
-  ]
+  ],
+  "mostRecentSslCertificate": {
+    "@odata.type": "microsoft.graph.security.sslCertificate",
+  },
+  "host": {
+    "@odata.type": "microsoft.graph.security.host",
+  }
+
 }
 ```
 
