@@ -65,6 +65,7 @@ The following example creates a new multi-tenant organization.
 
 ### Request
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_multitenantorganization_from_"
@@ -79,6 +80,16 @@ Content-Type: application/json
   "description": "Multi-tenant organization between Contoso, Fabrikam, and Woodgrove Bank"
 }
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-multitenantorganization-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-multitenantorganization-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response
