@@ -4,3 +4,5 @@ toc_rel: ./toc.yml
 uhfHeaderId: MSDocsHeader-MSGraph
 metadata:
   default_moniker: graph-rest-1.0
+  monikers:
+  - graph-rest-1.0
