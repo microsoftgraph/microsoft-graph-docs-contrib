@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -25,7 +25,7 @@ requestBody.SetDirectoryScopeId(&directoryScopeId)
 appScopeId := null
 requestBody.SetAppScopeId(&appScopeId) 
 
-result, err := graphClient.RoleManagement().Exchange().RoleAssignments().Post(context.Background(), requestBody, nil)
+roleAssignments, err := graphClient.RoleManagement().Exchange().RoleAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

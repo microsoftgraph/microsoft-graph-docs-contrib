@@ -2,7 +2,7 @@
 title: "List rules"
 description: "Get all the messageRule objects defined for the user's inbox."
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -61,6 +61,10 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-messagerules-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-messagerules-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-messagerules-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -81,10 +85,14 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-messagerules-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-messagerules-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-The following is an example of the response. 
+The following is an example of the response.
 >**Note**: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

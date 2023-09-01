@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  "time"
@@ -56,7 +56,7 @@ requestBody.SetThreatType(&threatType)
 tlpLevel := graphmodels.GREEN_TLPLEVEL 
 requestBody.SetTlpLevel(&tlpLevel) 
 
-result, err := graphClient.Security().TiIndicators().Post(context.Background(), requestBody, nil)
+tiIndicators, err := graphClient.Security().TiIndicators().Post(context.Background(), requestBody, nil)
 
 
 ```

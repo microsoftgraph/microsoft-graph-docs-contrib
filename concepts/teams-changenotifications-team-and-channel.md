@@ -115,7 +115,17 @@ Content-Type: application/json
 ## Subscribe to changes in any channel of a particular team
 
 
-To get change notifications for all changes related to any channel in a particular team, subscribe to `/teams/{team-id}/channels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. Change notifications for private channels aren't supported in delegated context. In this case, a subscriber to this resource in delegated context will receive notifications only for standard channels under a particular team, not for private channels. Change notifications for shared channels aren't supported.
+To get change notifications for all changes related to any channel in a particular team, subscribe to `/teams/{team-id}/channels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+
+The following are examples of events that generate notifications for this resource:
+- The display name of a channel is updated in the team.
+- A private channel is created in the team.
+- A shared channel owned by this team is shared or unshared with another team.
+- A shared channel owned by another team is shared with this team.
+- The properties of a channel, such as **isFavoriteByDefault** or **description**, are updated.
+- A channel is deleted.
+
+>**Note:** For delegated context, only the authorized users will receive notifications for private/shared channels. For example, anyone who belongs to the team (except guests) can subscribe to this resource in delegated context, but only the users who have access to private and shared channels will receive notifications for events happening in those channels.
 
 
 ### Permissions

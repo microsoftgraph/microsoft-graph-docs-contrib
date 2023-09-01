@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Notes.ReadWrite.All, EduAssignments.ReadWrite.All | 
+|Application | EduAssignments.ReadWrite.All | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -63,6 +63,10 @@ POST https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationsubmission-unsubmit-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/educationsubmission-unsubmit-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationsubmission-unsubmit-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -81,6 +85,10 @@ POST https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/educationsubmission-unsubmit-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/educationsubmission-unsubmit-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

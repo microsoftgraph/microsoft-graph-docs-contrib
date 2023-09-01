@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: List the subsites for a SharePoint site
 ms.localizationpriority: high
 ms.prod: "sharepoint"
@@ -42,9 +42,9 @@ GET /sites/{site-id}/sites
 
 Do not supply a request body for this method.
 
-## Response 
+## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [site][] objects in the response body. 
+If successful, this method returns a `200 OK` response code and a collection of [site][] objects in the response body.
 
 ## Example
 
@@ -62,6 +62,10 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/sites
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-subsites-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-subsites-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -82,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/sites
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-subsites-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-subsites-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

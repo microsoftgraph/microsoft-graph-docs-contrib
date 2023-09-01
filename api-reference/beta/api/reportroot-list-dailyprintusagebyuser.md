@@ -55,11 +55,15 @@ The following is an example of the request.
   "name": "get_endpoints_4"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByUser
+GET https://graph.microsoft.com/beta/reports/dailyPrintUsageByUser
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-endpoints-4-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-endpoints-4-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -76,6 +80,14 @@ GET https://graph.microsoft.com/beta/print/reports/dailyPrintUsageByUser
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-endpoints-4-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-endpoints-4-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-endpoints-4-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

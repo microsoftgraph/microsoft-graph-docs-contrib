@@ -1,6 +1,6 @@
 ---
 title: "userExperienceAnalyticsWorkFromAnywhereMetric resource type"
-description: "The user experience analytics metric for work from anywhere report"
+description: "The user experience analytics metric for work from anywhere report."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-The user experience analytics metric for work from anywhere report
+The user experience analytics metric for work from anywhere report.
 
 ## Methods
 |Method|Return Type|Description|
@@ -29,12 +29,12 @@ The user experience analytics metric for work from anywhere report
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the user experience analytics work from anywhere metric.|
+|id|String|The unique identifier of the user experience analytics work from anywhere metric. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|metricDevices|[userExperienceAnalyticsWorkFromAnywhereDevice](../resources/intune-devices-userexperienceanalyticsworkfromanywheredevice.md) collection|The work from anywhere metric devices.|
+|metricDevices|[userExperienceAnalyticsWorkFromAnywhereDevice](../resources/intune-devices-userexperienceanalyticsworkfromanywheredevice.md) collection|The work from anywhere metric devices. Read-only.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

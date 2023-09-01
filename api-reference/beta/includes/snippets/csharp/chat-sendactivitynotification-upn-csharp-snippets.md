@@ -4,6 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Beta.Chats.Item.SendActivityNotification.SendActivityNotificationPostRequestBody
@@ -18,15 +20,10 @@ var requestBody = new Microsoft.Graph.Beta.Chats.Item.SendActivityNotification.S
 	{
 		Content = "Deployment requires your approval",
 	},
-	Recipient = new TeamworkNotificationRecipient
+	Recipient = new AadUserNotificationRecipient
 	{
 		OdataType = "microsoft.graph.aadUserNotificationRecipient",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"userId" , "jacob@contoso.com"
-			},
-		},
+		UserId = "jacob@contoso.com",
 	},
 	TemplateParameters = new List<KeyValuePair>
 	{

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -37,7 +37,7 @@ maxLength := int32(255)
 text.SetMaxLength(&maxLength) 
 requestBody.SetText(text)
 
-result, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Columns().Post(context.Background(), requestBody, nil)
+columns, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").Columns().Post(context.Background(), requestBody, nil)
 
 
 ```

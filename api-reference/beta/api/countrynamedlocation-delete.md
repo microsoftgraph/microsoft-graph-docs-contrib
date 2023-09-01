@@ -2,7 +2,7 @@
 title: "Delete countryNamedLocation"
 description: "Delete a countryNamedLocation object."
 ms.localizationpriority: medium
-author: "dkershaw10"
+author: "lisaychuang"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -19,6 +19,7 @@ Delete a [countryNamedLocation](../resources/countryNamedLocation.md) object.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Policy.Read.All and Policy.ReadWrite.ConditionalAccess |
@@ -67,6 +68,10 @@ DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocation
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-countrynamedlocation-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-countrynamedlocation-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-countrynamedlocation-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -85,6 +90,10 @@ DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/namedLocation
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-countrynamedlocation-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-countrynamedlocation-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -52,24 +52,24 @@ The following table shows the properties that are required when you create the d
 
 |Property|Type|Description|
 |:---|:---|:---|
-|applicability|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|Details which device setting is applicable on|
+|applicability|[deviceManagementConfigurationSettingApplicability](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingapplicability.md)|Details which device setting is applicable on. Supports: $filters.|
 |accessTypes|[deviceManagementConfigurationSettingAccessTypes](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingaccesstypes.md)|Read/write access mode of the setting. Possible values are: `none`, `add`, `copy`, `delete`, `get`, `replace`, `execute`.|
 |keywords|String collection|Tokens which to search settings on|
-|infoUrls|String collection|List of links more info for the setting can be found at|
+|infoUrls|String collection|List of links more info for the setting can be found at.|
 |occurrence|[deviceManagementConfigurationSettingOccurrence](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingoccurrence.md)|Indicates whether the setting is required or not|
 |baseUri|String|Base CSP Path|
 |offsetUri|String|Offset CSP Path from Base|
-|rootDefinitionId|String|Root setting definition if the setting is a child setting.|
-|categoryId|String|Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)|
-|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Setting type, for example, configuration and compliance. Possible values are: `none`, `configuration`, `compliance`.|
-|uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|Setting control type representation in the UX. Possible values are: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`.|
-|visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|Setting visibility scope to UX. Possible values are: `none`, `settingsCatalog`, `template`.|
+|rootDefinitionId|String|Root setting definition id if the setting is a child setting.|
+|categoryId|String|Specify category in which the setting is under. Support $filters.|
+|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Indicate setting type for the setting. Possible values are: configuration, compliance, reusableSetting. Each setting usage has separate API end-point to call. Possible values are: `none`, `configuration`, `compliance`, `unknownFutureValue`.|
+|uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|Setting control type representation in the UX. Possible values are: default, dropdown, smallTextBox, largeTextBox, toggle, multiheaderGrid, contextPane. Possible values are: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`, `unknownFutureValue`.|
+|visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|Setting visibility scope to UX. Possible values are: none, settingsCatalog, template. Possible values are: `none`, `settingsCatalog`, `template`, `unknownFutureValue`.|
 |referredSettingInformationList|[deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md) collection|List of referred setting information.|
 |id|String|Identifier for item|
-|description|String|Description of the item|
-|helpText|String|Help text of the item|
+|description|String|Description of the setting.|
+|helpText|String|Help text of the setting. Give more details of the setting.|
 |name|String|Name of the item|
-|displayName|String|Display name of the item|
+|displayName|String|Name of the setting. For example: Allow Toast.|
 |version|String|Item Version|
 
 

@@ -45,7 +45,16 @@ POST /identityGovernance/entitlementManagement/accessPackages
 
 ## Request body
 
-In the request body, supply a JSON representation of an [accessPackage](../resources/accesspackage.md) object.
+In the request body, supply a JSON representation of the [accessPackage](../resources/accesspackage.md) object.
+
+You can specify the following properties when creating an **accessPackage**.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|catalogId|String| Required. The ID of the catalog that's linked to this access package.|
+|displayName|String|Required. The display name of the access package.|
+|description|String|Optional. The description of the access package.|
+|isHidden|Boolean|Optional. Whether the access package is hidden from the requestor.|
 
 ## Response
 
@@ -78,6 +87,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackage-from-accesspackages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-accesspackage-from-accesspackages-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackage-from-accesspackages-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -96,6 +109,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackage-from-accesspackages-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accesspackage-from-accesspackages-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

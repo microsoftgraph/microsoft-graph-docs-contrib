@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -52,15 +52,14 @@ attendee.SetEmailAddress(emailAddress)
 type := graphmodels.REQUIRED_ATTENDEETYPE 
 attendee.SetType(&type) 
 
-attendees := []graphmodels.Objectable {
+attendees := []graphmodels.attendeeable {
 	attendee,
-
 }
 requestBody.SetAttendees(attendees)
 transactionId := "7E163156-7762-4BEB-A1C6-729EA81755A7"
 requestBody.SetTransactionId(&transactionId) 
 
-result, err := graphClient.Me().Calendars().ByCalendarId("calendar-id").Events().Post(context.Background(), requestBody, nil)
+events, err := graphClient.Me().Calendars().ByCalendarId("calendar-id").Events().Post(context.Background(), requestBody, nil)
 
 
 ```

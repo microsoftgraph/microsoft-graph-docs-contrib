@@ -19,7 +19,7 @@ Depending on the type of calendar that the event is in and the permission type (
 
 | Calendar | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
-| user calendar | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite |
+| user calendar | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite |
 | group calendar | Group.Read.All, Group.ReadWrite.All | Not supported. | Not supported. |
 
 ## HTTP request
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/{id
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarpermission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-calendarpermission-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-calendarpermission-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -98,6 +102,10 @@ GET https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/{id
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-calendarpermission-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-calendarpermission-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

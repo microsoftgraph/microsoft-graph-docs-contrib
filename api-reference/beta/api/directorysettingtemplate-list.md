@@ -2,7 +2,7 @@
 title: "List directorySettingTemplates"
 description: "This operation retrieves the list of available directorySettingTemplates objects."
 ms.localizationpriority: medium
-author: "adimitui"
+author: "Jordanndahl"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -62,6 +62,10 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directorysettingtemplates-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-directorysettingtemplates-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-directorysettingtemplates-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -80,6 +84,10 @@ GET https://graph.microsoft.com/beta/directorySettingTemplates
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-directorysettingtemplates-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-directorysettingtemplates-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

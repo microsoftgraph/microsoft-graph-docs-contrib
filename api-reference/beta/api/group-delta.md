@@ -2,7 +2,7 @@
 title: "group: delta"
 description: "Get newly created, updated, or deleted groups, including group membership changes, without having to perform a full read of the entire group collection. See Using Delta Query for details."
 ms.localizationpriority: medium
-author: "psaffaie"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -121,6 +121,10 @@ GET https://graph.microsoft.com/beta/groups/delta
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/group-delta-e1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/group-delta-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -135,6 +139,14 @@ GET https://graph.microsoft.com/beta/groups/delta
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/group-delta-e1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-delta-e1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/group-delta-e1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -204,6 +216,10 @@ GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,descriptio
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-with-selelct-e2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/group-delta-with-selelct-e2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/group-delta-with-selelct-e2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -218,6 +234,14 @@ GET https://graph.microsoft.com/beta/groups/delta?$select=displayName,descriptio
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/group-delta-with-selelct-e2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-delta-with-selelct-e2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/group-delta-with-selelct-e2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -270,6 +294,10 @@ Prefer: return=minimal
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-delta-minimal-e3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/group-delta-minimal-e3-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/group-delta-minimal-e3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -284,6 +312,14 @@ Prefer: return=minimal
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/group-delta-minimal-e3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/group-delta-minimal-e3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/group-delta-minimal-e3-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

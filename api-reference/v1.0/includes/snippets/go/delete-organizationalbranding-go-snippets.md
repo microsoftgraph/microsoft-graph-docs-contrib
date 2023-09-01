@@ -4,24 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Organization/Item/Branding"
+	  graphorganization "github.com/microsoftgraph/msgraph-sdk-go/organization"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewBrandingDeleteRequestBody()
+requestBody := graphorganization.NewBrandingDeleteRequestBody()
 additionalData := map[string]interface{}{
 	"id" : "0", 
 }
 requestBody.SetAdditionalData(additionalData)
 
-graphClient.Organization().ByOrganization().Id("organization-id").Branding().Delete(context.Background(), requestBody, nil)
+graphClient.Organization().ByOrganizationId("organization-id").Branding().Delete(context.Background(), requestBody, nil)
 
 
 ```

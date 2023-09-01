@@ -1,5 +1,200 @@
 {
     "changelog": [
+    {
+            "ChangeList": [
+                {
+                    "Id": "0361ec23-60ea-4fd8-a32c-6e7387ab5eeb",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcResizeValidationCode",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcResizeValidationCode** enumeration type.",
+                    "Target": "cloudPcResizeValidationResult"
+                },
+                {
+                    "Id": "0361ec23-60ea-4fd8-a32c-6e7387ab5eeb",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcResizeValidationResult",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcResizeValidationResult](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcResizeValidationResult?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcResizeValidationResult"
+                },
+                {
+                    "Id": "0361ec23-60ea-4fd8-a32c-6e7387ab5eeb",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "validateBulkResize",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [validateBulkResize](https://learn.microsoft.com/en-us/graph/api/cloudPC-validateBulkResize?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                }
+            ],
+            "Id": "0361ec23-60ea-4fd8-a32c-6e7387ab5eeb",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-06-28T06:58:17.7596296Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "6680777e-7bec-43ff-9ad6-cb258a40783d",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "powerState",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **powerState** property to the [cloudPc](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Target": "cloudpc"
+                },
+                {
+                    "Id": "6680777e-7bec-43ff-9ad6-cb258a40783d",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcPowerState",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cloudPcPowerState** enumeration type.",
+                    "Target": "cloudpc"
+                }
+            ],
+            "Id": "6680777e-7bec-43ff-9ad6-cb258a40783d",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-06-28T02:52:10.3002588Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "afeeb952-b86d-4670-bdfc-94a212be00e2",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resizePendingLicense` member to the **cloudPcStatus** enumeration.",
+                    "Target": "cloudPC"
+                },
+                {
+                    "Id": "afeeb952-b86d-4670-bdfc-94a212be00e2",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "bulkResize",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [bulkResize](https://learn.microsoft.com/en-us/graph/api/cloudPC-bulkResize?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudPC?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                }
+            ],
+            "Id": "afeeb952-b86d-4670-bdfc-94a212be00e2",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-06-27T06:58:17.7596296Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "b44e2995-4ab6-4714-85b6-6e3119d4c4cc",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "getProvisionedCloudPcs",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [getProvisionedCloudPcs](https://learn.microsoft.com/en-us/graph/api/cloudpc-getprovisionedcloudpcs?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                }
+            ],
+            "Id": "b44e2995-4ab6-4714-85b6-6e3119d4c4cc",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-06-27T05:55:14.173894Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "f03cfd52-fea8-41c5-9ac4-1825b4fcec0d",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcReportName",
+                    "ChangeType": "Change",
+                    "Description": "Added the ´noLicenseAvailableConnectivityFailureReport´ member to the **cloudPcReportName** enumeration type.",
+                    "Target": "cloudPcReportName"
+                }
+            ],
+            "Id": "f03cfd52-fea8-41c5-9ac4-1825b4fcec0d",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-06-13T10:36:40.1525853Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "72cfa695-5b49-404a-ab9e-c74a09557a11",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "correlationId",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **correlationId** property to the [cloudPcOnPremisesConnectionHealthCheck](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcOnPremisesConnectionHealthCheck?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheck"
+                }
+            ],
+            "Id": "72cfa695-5b49-404a-ab9e-c74a09557a11",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-06-12T05:55:14.173894Z",
+            "WorkloadArea": "Devices and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "bebbf84c-73de-4070-b44f-c670c25c4d4f",
+                    "ApiChange": "Parameter",
+                    "ChangedApiName": "LIST",
+                    "ChangeType": "Addition",
+                    "Description": "Enabled the `top` query parameter for the [LIST](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-list-cloudpcs?view=graph-rest-beta) operation of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Target": "cloudPC"
+                }
+            ],
+            "Id": "bebbf84c-73de-4070-b44f-c670c25c4d4f",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-06-05T05:55:14.173894Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+              {
+                "Id": "a244d924-f4ee-4f19-9e2d-a5a900ba82e5",
+                "ApiChange": "Property",
+                "ChangedApiName": "resetEnabled",
+                "ChangeType": "Addition",
+                "Description": "Added the **resetEnabled** property to the [cloudPcUserSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersetting?view=graph-rest-beta) resource.",
+                "Target": "cloudPcUserSetting"
+              }
+
+            ],
+            "Id": "a244d924-f4ee-4f19-9e2d-a5a900ba82e5",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-07-31T10:21:43.9533784Z",
+            "WorkloadArea": "Devices and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "f5cc2d2b-925e-47cc-865d-5713fdace6b9",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "vMware",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `vMware` member to the **cloudPcPartnerAgentName** enumeration.",
+                    "Target": "cloudPcPartnerAgentName"
+                }
+            ],
+            "Id": "f5cc2d2b-925e-47cc-865d-5713fdace6b9",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-05-25T03:34:35.6186992Z",
+            "WorkloadArea": "Devices and app management",
+            "SubArea": "Cloud PC"
+        },
         {
             "ChangeList": [
                 {
@@ -15,7 +210,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-03-21T05:55:14.173894Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -33,9 +228,9 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-03-21T03:56:27.4502681Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
-        },        
+        },
         {
             "ChangeList": [
                 {
@@ -66,8 +261,8 @@
             "Id": "a954cea4-2b1d-4be0-8767-537d7d9ec2f7",
             "Cloud": "Prod",
             "Version": "beta",
-            "CreatedDateTime": "2023-02-01T02:52:10.3002588Z",     
-            "WorkloadArea": "Devices and apps",
+            "CreatedDateTime": "2023-02-01T02:52:10.3002588Z",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -85,8 +280,44 @@
           "Cloud": "Prod",
           "Version": "beta",
           "CreatedDateTime": "2023-02-27T08:58:22.4957466Z",
-          "WorkloadArea": "Devices and apps",
+          "WorkloadArea": "Device and app management",
           "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "1fed1938-c3d6-4ba3-b1c0-79f3a48d6fa7",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "assignedUsers",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **assignedUsers** relationship to the [cloudPcProvisioningPolicyAssignment](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicyAssignment?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcProvisioningPolicyAssignment"
+                }
+            ],
+            "Id": "1fed1938-c3d6-4ba3-b1c0-79f3a48d6fa7",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-05-08T09:17:04.4951587Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "e998825a-ff8c-4207-baf4-2691323e4a82",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "cloudPcNamingTemplate",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `cloudPcNamingTemplate` property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcProvisioningPolicy?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcProvisioningPolicy"
+                }
+            ],
+            "Id": "e998825a-ff8c-4207-baf4-2691323e4a82",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-05-08T10:18:11.8846241Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
         },
         {
             "ChangeList":[
@@ -216,6 +447,42 @@
             "SubArea": "Cloud PC"
         },
         {
+          "ChangeList": [
+            {
+                "Id": "77007eae-49c9-451c-ab49-b690e3bd642e",
+                "ApiChange": "Member",
+                "ChangedApiName": "movingRegion",
+                "ChangeType": "Addition",
+                "Description": "Added the `movingRegion` member to the **cloudPcStatus** enumeration.",
+                "Target": "cloudPcStatus"
+            }
+          ],
+          "Id": "77007eae-49c9-451c-ab49-b690e3bd642e",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2023-06-26T00:00:00.1309263Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "32581844-a1d3-11ed-a8fc-0242ac120002",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "domainJoinConfigurations",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **domainJoinConfigurations** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcProvisioningPolicy"
+                }
+            ],
+            "Id": "32581844-a1d3-11ed-a8fc-0242ac120002",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-05-08T02:52:10.3002588Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [
                 {
                   "Id": "8827a05e-a654-47ca-b983-b28ba096b325",
@@ -271,7 +538,7 @@
             "Id": "dd8cc504-3861-450c-add5-763a11dd0266",
             "Cloud": "Prod",
             "Version": "beta",
-            "CreatedDateTime": "2023-01-04T02:22:10.3002588Z",     
+            "CreatedDateTime": "2023-01-04T02:22:10.3002588Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
@@ -368,7 +635,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-03-09T08:39:57.8868626Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -638,7 +905,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-06-01T08:30:16.9388044Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -656,7 +923,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-06-20T07:19:17.8395506Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -674,7 +941,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-05-11T04:10:23.6033442Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -692,7 +959,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-04-07T08:30:16.9388044Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -726,7 +993,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-03-17T06:57:48.3702162Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -760,7 +1027,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-04-27T14:13:04.317411Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -802,7 +1069,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-03-14T15:13:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -828,7 +1095,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-03-21T13:51:04.8137419Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -934,7 +1201,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-01-18T03:57:59.088Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -960,7 +1227,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-02-28T14:51:08.271Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1010,7 +1277,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-05-21T05:36:42.761938Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1060,7 +1327,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-02-28T09:03:11.8162423Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1094,7 +1361,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-02-15T14:13:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1120,7 +1387,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-03-21T15:38:03.127Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1162,7 +1429,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-05-11T14:13:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1204,7 +1471,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-12-09T15:13:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1238,7 +1505,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-11-04T11:40:20.512Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1312,7 +1579,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-11-04T11:55:50.282Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1354,7 +1621,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-12-01T01:39:23.272Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1372,7 +1639,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-12-06T11:09:07.127Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1478,7 +1745,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-11-30T01:21:26.512Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1512,7 +1779,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-11-05T06:40:50.582Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1546,7 +1813,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-11-05T05:11:26.863Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1580,7 +1847,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-12-06T06:22:12.122Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1614,7 +1881,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-10-25T05:40:39.582Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1664,7 +1931,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-10-25T08:18:27.582Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1690,7 +1957,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-09-28T06:40:50.582Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1708,7 +1975,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-08-18T03:38:51.582Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1726,7 +1993,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-07-12T15:14:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1744,7 +2011,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-07-09T14:30:43.735Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1770,7 +2037,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-05-20T10:21:56.735Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1812,7 +2079,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-06-16T07:29:44.182Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1830,7 +2097,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-07-07T13:13:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1848,7 +2115,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-06-09T15:14:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1882,7 +2149,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-06-03T17:52:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -1980,7 +2247,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-06-29T07:45:15.1242441Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2062,7 +2329,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-09-01T10:52:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2096,7 +2363,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-07-07T13:43:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2146,7 +2413,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-06-09T00:43:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2180,7 +2447,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-05-26T15:13:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2222,7 +2489,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-05-20T14:43:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2328,7 +2595,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-05-10T15:13:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2346,7 +2613,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-05-05T15:52:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2380,7 +2647,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-07-09T14:55:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2398,7 +2665,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-05-05T14:13:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2424,7 +2691,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-03-18T15:13:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2442,7 +2709,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-02-08T15:13:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2500,7 +2767,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-01-08T05:52:34.535Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2550,7 +2817,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2020-12-11T08:55:18.080Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2704,7 +2971,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2020-11-06T15:42:07.177Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2754,7 +3021,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-06-20T06:40:50.582Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2780,7 +3047,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-08-24T10:00:11.4963489Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2854,7 +3121,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-08-15T06:58:17.7596296Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2888,7 +3155,7 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2022-08-15T07:46:26.039Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2906,7 +3173,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-08-15T08:55:53.8274186Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2924,7 +3191,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-08-15T07:01:08.9526909Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2942,7 +3209,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-08-24T02:53:28.597151Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -2984,7 +3251,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-01-17T18:36:40.43263Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -3002,7 +3269,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-01-17T04:14:41.3424906Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -3052,7 +3319,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2022-10-12T18:36:40.43263Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
       {
@@ -3078,7 +3345,7 @@
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2022-11-08T10:52:16.0013428Z",
-        "WorkloadArea": "Devices and apps",
+        "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
       },
       {
@@ -3096,7 +3363,123 @@
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2023-03-21T10:52:16.0017488Z",
-        "WorkloadArea": "Devices and apps",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },
+      {
+        "ChangeList": [
+            {
+                "Id": "c186e5e6-a3eb-4b60-a015-1d9770c08954",
+                "ApiChange": "Property",
+                "ChangedApiName": "ssoCheckKerberosConfigurationError",
+                "ChangeType": "Addition",
+                "Description": "Added the **ssoCheckKerberosConfigurationError** member to the [cloudPcOnPremisesConnectionHealthCheckErrorType](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta#cloudpconpremisesconnectionhealthcheckerrortype-values) resource.",
+                "Target": "cloudPcOnPremisesConnection"
+            }
+        ],
+        "Id": "c186e5e6-a3eb-4b60-a015-1d9770c08954",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-04-25T04:14:41.3424906Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+    },
+    {
+        "ChangeList": [
+            {
+                "Id": "f65a6785-6042-4258-b9a4-385cfb2eb5d2",
+                "ApiChange": "Member",
+                "ChangedApiName": "informational",
+                "ChangeType": "Addition",
+                "Description": "Added the **informational** member to the [CloudPcOnPremisesConnectionStatus](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta#cloudpconpremisesconnectionstatus-values) resource.",
+                "Target": "CloudPcOnPremisesConnectionStatus"
+            }
+        ],
+        "Id": "f65a6785-6042-4258-b9a4-385cfb2eb5d2",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-08-08T04:14:41.3424906Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+    },
+    {   
+        "ChangeList": [
+          {
+            "Id": "2107ee19-7ed3-4480-936c-61a372e36751",
+            "ApiChange": "EnumType",
+            "ChangedApiName": "shiftWorkCloudPcAccessState",
+            "ChangeType": "Change",
+            "Description": "Renamed the `hibernated` member to `standbyMode` in the **shiftWorkCloudPcAccessState** enumeration type.",
+            "Target": "shiftWorkCloudPcAccessState"
+          }
+        ],
+        "Id": "2107ee19-7ed3-4480-936c-61a372e36751",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-05-24T08:27:16.0017488Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },
+      {
+        "ChangeList": [
+            {
+                "Id": "59abcc02-0b31-48a0-a44b-052a3d123267",
+                "ApiChange": "Member",
+                "ChangedApiName": "udpConnectivityCheckTurnUrlNotAllowListed",
+                "ChangeType": "Addition",
+                "Description": "Added the `udpConnectivityCheckTurnUrlNotAllowListed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+            },
+            {
+                "Id": "59abcc02-0b31-48a0-a44b-052a3d123267",
+                "ApiChange": "Member",
+                "ChangedApiName": "udpConnectivityCheckUrlsNotAllowListed",
+                "ChangeType": "Addition",
+                "Description": "Added the `udpConnectivityCheckUrlsNotAllowListed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+            }
+        ],
+        "Id": "59abcc02-0b31-48a0-a44b-052a3d123267",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-06-05T04:14:41.3424906Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },
+      {
+      "ChangeList": [
+            {
+              "Id": "33faed78-3754-43a7-a08a-4d6c9d5d741f",
+              "ApiChange": "Method",
+              "ChangedApiName": "getInaccessibleCloudPcReports",
+              "ChangeType": "Addition",
+              "Description": "Added the [getInaccessibleCloudPcReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports-getInaccessibleCloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+              "Target": "cloudPcReports"
+            }
+          ],
+          "Id": "33faed78-3754-43a7-a08a-4d6c9d5d741f",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2023-07-31T09:00:37.9148169Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
+     },
+     {
+        "ChangeList": [
+          {
+            "Id": "3cc32469-33d9-46be-a085-7fa1273af503",
+            "ApiChange": "Member",
+            "ChangedApiName": "inaccessibleCloudPcReports",
+            "ChangeType": "Addition",
+            "Description": "Added the `inaccessibleCloudPcReports` member to the **cloudPcReportName** enumeration.",
+            "Target": "cloudPcReportName"
+          }
+        ],
+        "Id": "3cc32469-33d9-46be-a085-7fa1273af503",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-07-06T03:57:35.2333537Z",
+        "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
       }
     ]

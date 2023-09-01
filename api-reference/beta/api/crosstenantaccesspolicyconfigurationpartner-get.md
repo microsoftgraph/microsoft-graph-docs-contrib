@@ -54,7 +54,6 @@ If successful, this method returns a `200 OK` response code and a [crossTenantAc
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -68,6 +67,10 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/9
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-crosstenantaccesspolicyconfigurationpartner-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-crosstenantaccesspolicyconfigurationpartner-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -90,6 +93,10 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/9
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-crosstenantaccesspolicyconfigurationpartner-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-crosstenantaccesspolicyconfigurationpartner-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -109,6 +116,7 @@ Content-Type: application/json
 {
   "tenantId": "9c5d131d-b1c3-4fc4-9e3f-c6557947d551",
   "inboundTrust": null,
+  "isInMultiTenantOrganization": false,
   "automaticUserConsentSettings":
   {
     "inboundAllowed": null,
@@ -135,6 +143,29 @@ Content-Type: application/json
       "targets": [
         {
           "target": "Office365",
+          "targetType": "application"
+        }
+      ]
+    }
+  },
+  "tenantRestrictions":
+  {
+    "usersAndGroups":
+    {
+      "accessType": "blocked",
+      "targets": [
+        {
+          "target": "AllUsers",
+          "targetType": "user"
+        }
+      ]
+    },
+    "applications":
+    {
+      "accessType": "blocked",
+      "targets": [
+        {
+          "target": "AllApplications",
           "targetType": "application"
         }
       ]

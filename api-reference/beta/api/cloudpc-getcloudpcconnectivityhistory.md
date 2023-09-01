@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{
 [!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcgetcloudpcconnectivityhistory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcgetcloudpcconnectivityhistory-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/cloudpcgetcloudpcconnectivityhistory-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -85,6 +89,14 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcgetcloudpcconnectivityhistory-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcgetcloudpcconnectivityhistory-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/cloudpcgetcloudpcconnectivityhistory-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

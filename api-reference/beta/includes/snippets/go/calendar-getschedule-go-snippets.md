@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  abstractions "github.com/microsoft/kiota-abstractions-go"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Me/Calendar/GetSchedule"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphusers "github.com/microsoftgraph/msgraph-beta-sdk-go/users"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
 	  //other-imports
 )
 
@@ -20,14 +20,13 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "outlook.timezone=\"Pacific Standard Time\"")
 
-configuration := &graphconfig.ItemCalendarGetScheduleRequestBuilderPostRequestConfiguration{
+configuration := &graphusers.ItemCalendarGetScheduleRequestBuilderPostRequestConfiguration{
 	Headers: headers,
 }
-requestBody := graphmodels.NewGetSchedulePostRequestBody()
+requestBody := graphusers.NewItemGetSchedulePostRequestBody()
 schedules := []string {
 	"adelev@contoso.onmicrosoft.com",
 	"meganb@contoso.onmicrosoft.com",
-
 }
 requestBody.SetSchedules(schedules)
 startTime := graphmodels.NewDateTimeTimeZone()
@@ -45,7 +44,7 @@ requestBody.SetEndTime(endTime)
 availabilityViewInterval := int32(60)
 requestBody.SetAvailabilityViewInterval(&availabilityViewInterval) 
 
-result, err := graphClient.Me().Calendar().GetSchedule().Post(context.Background(), requestBody, configuration)
+getSchedule, err := graphClient.Me().Calendar().GetSchedule().Post(context.Background(), requestBody, configuration)
 
 
 ```

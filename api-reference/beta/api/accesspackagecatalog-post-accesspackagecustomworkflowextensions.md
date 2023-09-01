@@ -49,9 +49,9 @@ You can specify the following properties when creating a **accessPackageCustomWo
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|Description for the customAccessPackageWorkflowExtension object.|
-|displayName|String|Display name for the customAccessPackageWorkflowExtension.|
-|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The type and details for configuring the endpoint to call the logic app's workflow.|  
-|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call to the logic app. For example, using OAuth client credentials flow.|
+|displayName|String|Required. Display name for the customAccessPackageWorkflowExtension.|
+|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Required. The type and details for configuring the endpoint to call the logic app's workflow.|  
+|authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Required. Configuration for securing the API call to the logic app. For example, using OAuth client credentials flow.|
 |callbackConfiguration|[customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md)|The callback configuration for a custom extension. This is suppoted for `accessPackageAssignmentRequestWorkflowExtension`. |
 
 You must also supply an **@odata.type** property with a value of the specific access package workflow extension type. For example, `"@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension"`.
@@ -79,29 +79,31 @@ POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/a
 Content-Type: application/json
 
 {
-   "value":{
-      "@odata.type":"#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
-      "displayName":"test_action_0124_email",
-      "description":"this is for graph testing only",
-      "endpointConfiguration":{
-         "@odata.type":"#microsoft.graph.logicAppTriggerEndpointConfiguration",
-         "subscriptionId":"38ab2ccc-3747-4567-b36b-9478f5602f0d",
-         "resourceGroupName":"test",
-         "logicAppWorkflowName":"elm-extension-email"
-      },
-      "authenticationConfiguration":{
-         "@odata.type":"#microsoft.graph.azureAdPopTokenAuthentication"
-      },
-      "callbackConfiguration":{
-         "@odata.type":"microsoft.graph.customExtensionCallbackConfiguration",
-         "durationBeforeTimeout":"PT1H"
-      }
-   }
+  "@odata.type": "#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",
+  "displayName": "test_action_0124_email",
+  "description": "this is for graph testing only",
+  "endpointConfiguration": {
+    "@odata.type": "#microsoft.graph.logicAppTriggerEndpointConfiguration",
+    "subscriptionId": "38ab2ccc-3747-4567-b36b-9478f5602f0d",
+    "resourceGroupName": "test",
+    "logicAppWorkflowName": "elm-extension-email"
+  },
+  "authenticationConfiguration": {
+    "@odata.type": "#microsoft.graph.azureAdPopTokenAuthentication"
+  },
+  "callbackConfiguration": {
+    "@odata.type": "microsoft.graph.customExtensionCallbackConfiguration",
+    "durationBeforeTimeout": "PT1H"
+  }
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentrequestworkflowextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-accesspackageassignmentrequestworkflowextension-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -118,6 +120,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageassignmentrequestworkflowextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accesspackageassignmentrequestworkflowextension-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -198,6 +204,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentworkflowextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-accesspackageassignmentworkflowextension-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageassignmentworkflowextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -212,6 +222,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageassignmentworkflowextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accesspackageassignmentworkflowextension-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

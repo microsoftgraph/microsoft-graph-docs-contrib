@@ -12,16 +12,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties of a [deviceLocalCredential](../resources/devicelocalcredential.md) for a specified device object. 
+Retrieve the properties of a [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) for a specified device object. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceLocalCredential.Read.All|
+|Delegated (work or school account)|DeviceLocalCredential.ReadBasic.All, DeviceLocalCredential.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceLocalCredential.Read.All|
+|Application|DeviceLocalCredential.ReadBasic.All, DeviceLocalCredential.Read.All|
+
+To access the actual passwords on the device, done by including `$select=credentials` as part of the query parameters, the app must be assigned the *DeviceLocalCredential.Read.All* permission and *DeviceLocalCredential.ReadBasic.All* is insufficient.
 
 [!INCLUDE [rbac-device-local-credentials-apis-read](../includes/rbac-for-apis/rbac-device-local-credentials-apis-read.md)]
 

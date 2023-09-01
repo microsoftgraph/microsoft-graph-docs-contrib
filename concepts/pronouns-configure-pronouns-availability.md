@@ -27,32 +27,39 @@ The end user experience with pronouns might evolve over time. For current inform
 Global administrators can decide whether to display pronouns that users set up in their profile cards. To enable this scenario, you set the [isEnabledInOrganization](/graph/api/resources/pronounssettings?view=graph-rest-beta&preserve-view=true#properties) property to `true`. When this property is set to `true`, pronouns are displayed for everyone within the organization. When this property is set to `false`, pronouns are not displayed for anyone within or outside the organization. The default setting is `false`.
 
 > [!IMPORTANT]
-> When you turn pronouns on or off, it can take up to six hours for users to see changes. For example, if you turn pronouns on, users cannot see the option to add pronouns on their profile card for up to six hours. If you turn pronouns off, any previously set pronouns might stay visible in Microsoft 365 (for example, on profile cards) for up to six hours.
+> When you turn pronouns on or off, it can take up to seven hours for users to see changes. For example, if you turn pronouns on, users cannot see the option to add pronouns on their profile card for up to seven hours. If you turn pronouns off, any previously set pronouns might stay visible in Microsoft 365 (for example, on profile cards) for up to seven hours.
 >
 > When you turn off pronouns, all pronouns data created by users is deleted. The data deletion process might take up to 30 days to complete. If you turn pronouns back on within that period, any hidden pronouns that have not yet been deleted from Microsoft servers become visible in Microsoft 365 experiences, such as profile cards.
 
-## Configure pronoun settings using PowerShell
+## Configure pronouns settings using PowerShell
 
-You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) to configure pronoun settings in your organization.
+You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/installation) to configure pronouns settings in your organization.
 
 ### Prerequisites
 
-- **PowerShell module** - Install [module version 1.24.0 or higher](https://www.powershellgallery.com/packages/Microsoft.Graph).
+- **PowerShell module** - Install [module version 2.3.0 or higher](https://www.powershellgallery.com/packages/Microsoft.Graph).
 - **.NET Framework** - Install [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework) or a higher version.
 
 > [!NOTE]
 > Because pronouns settings commands are only available in beta, switch to the beta profile before running the command.
 >
 > ```powershell
->    Select-MgProfile beta
+>    Install-Module -Name Microsoft.Graph.Beta -MinimumVersion 2.3.0
 > ```
 
 ### Confirm your current settings
 
-To get pronoun settings configuration for an organization, use the following command, and replace `$TenantId` with your Azure Active Directory tenant ID. You can retrieve this ID from the overview page of your Azure Active Directory.
+To get pronoun settings configuration for an organization, use the following command:
+
+> [!NOTE]
+> The get method requires `PeopleSettings.Read.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+>
+> ```powershell
+>    Connect-MgGraph -Scopes "PeopleSettings.Read.All"
+>
 
 ```powershell
-   Get-MgOrganizationSettingPronoun -OrganizationId $TenantId
+  Get-MgBetaAdminPeoplePronoun
 ```
 
 ### Enable pronouns in your organization
@@ -60,36 +67,36 @@ To get pronoun settings configuration for an organization, use the following com
 By default, pronouns are disabled. You can use the Microsoft Graph PowerShell module to make pronouns available in your organization.
 
 > [!NOTE]
-> The update method requires additional `Organization.ReadWrite.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+> The update method requires additional `PeopleSettings.ReadWrite.All` permissions. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
 >
 > ```powershell
->    Connect-MgGraph -Scopes "Organization.ReadWrite.All","Organization.Read.All"
+>    Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
 > ```
 
-Use the following command, where you replace `$TenantId` with your Azure Active Directory Tenant ID and specify `-IsEnabledInOrganization` as `true`.
+Use the following command, specify `-IsEnabledInOrganization` as `true`.
 
 ```powershell
-   Update-MgOrganizationSettingPronoun -OrganizationId $TenantId -IsEnabledInOrganization:$true
+  Update-MgBetaAdminPeoplePronoun -IsEnabledInOrganization:$true
 ```
 
 ### Disable pronouns in your organization
 
-Alternatively, you can make pronouns unavailable for your organization using the following command, where you replace `$TenantId` with your Azure Active Directory Tenant ID, and specify `-IsEnabledInOrganization` as `false`.
+Alternatively, you can make pronouns unavailable for your organization using the following command, where you specify `-IsEnabledInOrganization` as `false`.
 
 ```powershell
-   Update-MgOrganizationSettingPronoun -OrganizationId $TenantId -IsEnabledInOrganization:$false
+  Update-MgBetaAdminPeoplePronoun -IsEnabledInOrganization:$false
 ```
 
 ## Configure pronouns settings using the Microsoft Graph REST API
 
 ### Confirm your current settings
 
-Use the [get](/graph/api/organizationsettings-list-pronounssettings?view=graph-rest-beta&preserve-view=true) operation to return the current settings for pronouns in your organization.
+Use the [get](/graph/api/peopleadminsettings-list-pronouns?view=graph-rest-beta&preserve-view=true) operation to return the current settings for pronouns in your organization.
 
 The following example gets the current display settings, which have pronouns disabled. 
 
 ``` http
-GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/pronouns
+GET https://graph.microsoft.com/beta/admin/people/pronouns
 ```
 
 If successful, the response returns a `200 OK` response code and a [pronounsSettings](/graph/api/resources/pronounssettings?view=graph-rest-beta&preserve-view=true) resource in the response body.
@@ -108,7 +115,7 @@ Content-Type: application/json
 Use the [update](/graph/api/pronounssettings-update?view=graph-rest-beta&preserve-view=true) operation to enable pronouns in your organization.
 
 ``` http
-PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/pronouns
+PATCH https://graph.microsoft.com/beta/admin/people/pronouns
 Content-Type: application/json
 
 {
@@ -132,7 +139,7 @@ Content-Type: application/json
 Use the update operation to make pronouns unavailable in your organization.
 
 ``` http
-PATCH https://graph.microsoft.com/beta/organization/{organizationId}/settings/pronouns
+PATCH https://graph.microsoft.com/beta/admin/people/pronouns
 Content-Type: application/json
 
 {

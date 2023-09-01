@@ -18,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite    |
+|Delegated (work or school account) | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite    |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application | Calendars.Read, Calendars.ReadWrite |
+|Application | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -49,10 +49,12 @@ In the request body, provide a JSON object with the following parameters.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [scheduleInformation](../resources/scheduleinformation.md) objects for each object in the `schedules` parameter.
-## Example
-##### Request
-The following example gets the availability information for two users for the specified date, time, and time zone.
 
+> **Note**: When the user's calendar has a time slot that contains more than 1000 entries, a `5006` response code with the message "The result set contains too many calendar entries. The allowed size is 1000; the actual size is ..." will be returned. For details, see [KB 2962513](/exchange/troubleshoot/calendars/cannot-view-another-user-calendar-free-busy-information).
+ 
+## Examples
+### Request
+The following example gets the availability information for two users for the specified date, time, and time zone.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -82,6 +84,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/calendar-getschedule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/calendar-getschedule-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/calendar-getschedule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -102,9 +108,13 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/calendar-getschedule-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/calendar-getschedule-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

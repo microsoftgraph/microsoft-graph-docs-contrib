@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -21,7 +21,7 @@ requestBody.SetInvitedUserEmailAddress(&invitedUserEmailAddress)
 inviteRedirectUrl := "https://myapp.contoso.com"
 requestBody.SetInviteRedirectUrl(&inviteRedirectUrl) 
 
-result, err := graphClient.Invitations().Post(context.Background(), requestBody, nil)
+invitations, err := graphClient.Invitations().Post(context.Background(), requestBody, nil)
 
 
 ```

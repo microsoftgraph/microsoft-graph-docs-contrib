@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -21,7 +21,7 @@ requestBody.SetPhoneNumber(&phoneNumber)
 phoneType := graphmodels.MOBILE_AUTHENTICATIONPHONETYPE 
 requestBody.SetPhoneType(&phoneType) 
 
-result, err := graphClient.Me().Authentication().PhoneMethods().Post(context.Background(), requestBody, nil)
+phoneMethods, err := graphClient.Users().ByUserId("user-id").Authentication().PhoneMethods().Post(context.Background(), requestBody, nil)
 
 
 ```

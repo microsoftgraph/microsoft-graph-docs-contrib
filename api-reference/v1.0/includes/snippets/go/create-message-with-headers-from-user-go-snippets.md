@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -34,7 +34,6 @@ recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
 	recipient,
-
 }
 requestBody.SetToRecipients(toRecipients)
 
@@ -53,11 +52,10 @@ internetMessageHeader1.SetValue(&value)
 internetMessageHeaders := []graphmodels.InternetMessageHeaderable {
 	internetMessageHeader,
 	internetMessageHeader1,
-
 }
 requestBody.SetInternetMessageHeaders(internetMessageHeaders)
 
-result, err := graphClient.Me().Messages().Post(context.Background(), requestBody, nil)
+messages, err := graphClient.Me().Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

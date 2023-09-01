@@ -25,7 +25,7 @@ GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 ```
 
 > [!NOTE]
-> Certain unused old teams will not have **resourceProvisioningOptions** set. For details, see [known issues](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
+> Certain unused old teams will not have **resourceProvisioningOptions** set. For details, see [known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=13633).
 
 #### Response
 
@@ -87,7 +87,7 @@ GET /groups?$select=id,resourceProvisioningOptions
 ```
 
 > [!NOTE]
-> Certain unused old teams will not have **resourceProvisioningOptions** set. For details, see [known issues](known-issues.md#properties-are-missing-in-the-list-of-teams-that-a-user-has-joined).
+> Certain unused old teams will not have **resourceProvisioningOptions** set. For details, see [known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=13633).
 
 #### Response
 

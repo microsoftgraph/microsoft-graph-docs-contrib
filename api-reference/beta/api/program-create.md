@@ -4,7 +4,7 @@ description: "In the Azure AD access reviews feature, create a new program objec
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "markwahl-msft"
+author: "shubhamguptacal"
 ---
 
 # Create program (deprecated)
@@ -75,6 +75,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-program-from-programs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-program-from-programs-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-program-from-programs-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -93,6 +97,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-program-from-programs-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-program-from-programs-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -117,12 +125,12 @@ Content-type: application/json
 
 ## See also
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[List programs](program-list.md) |	[program](../resources/program.md) collection|	Get a collection of all the programs.|
-|[List programControls of a program](program-listcontrols.md) |		[programControl](../resources/programcontrol.md) collection|	Get a collection of the controls of a program.|
-|[Update program](program-update.md) |	[program](../resources/program.md)|	Update a program.|
-|[Create programControl](programcontrol-create.md) |		[programControl](../resources/programcontrol.md)	|	Add a programControl to a program.|
+|[List programs](program-list.md) |    [program](../resources/program.md) collection|    Get a collection of all the programs.|
+|[List programControls of a program](program-listcontrols.md) |        [programControl](../resources/programcontrol.md) collection|    Get a collection of the controls of a program.|
+|[Update program](program-update.md) |    [program](../resources/program.md)|    Update a program.|
+|[Create programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |    Add a programControl to a program.|
 
 <!--
 {

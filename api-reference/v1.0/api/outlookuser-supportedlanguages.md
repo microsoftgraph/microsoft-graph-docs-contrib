@@ -2,7 +2,7 @@
 title: "outlookUser: supportedLanguages"
 description: "Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server."
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
 
-When setting up an Outlook client, the user selects the preferred language from this supported list. You can subsequently get the preferred language by 
+When setting up an Outlook client, the user selects the preferred language from this supported list. You can subsequently get the preferred language by
 [getting the user's mailbox settings](user-get-mailboxsettings.md).
 
 
@@ -62,6 +62,10 @@ GET https://graph.microsoft.com/v1.0/me/outlook/supportedLanguages
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-supportedlanguages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/user-supportedlanguages-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-supportedlanguages-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -78,10 +82,18 @@ GET https://graph.microsoft.com/v1.0/me/outlook/supportedLanguages
 [!INCLUDE [sample-code](../includes/snippets/php/user-supportedlanguages-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-supportedlanguages-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/user-supportedlanguages-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

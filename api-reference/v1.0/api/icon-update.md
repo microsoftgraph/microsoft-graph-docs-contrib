@@ -53,6 +53,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "update_icon"
 }-->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/sort/fields/icon
 Content-type: application/json
@@ -64,11 +65,13 @@ Content-type: application/json
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.workbookIcon"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

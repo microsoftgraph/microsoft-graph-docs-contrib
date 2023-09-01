@@ -27,9 +27,10 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                                                          |
 | Application                            | Calls.JoinGroupCalls.Chat*, Calls.JoinGroupCallAsGuest.All, Calls.JoinGroupCall.All, Calls.Initiate.All, Calls.InitiateGroupCall.All |
 
-> **Notes:** For a call with app-hosted media, you need the Calls.AccessMedia.All or the Calls.AccessMedia.Chat* permission in addition to one of the permissions listed.
->
-> Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+> **Notes:** 
+> - For a call with app-hosted media, you need the Calls.AccessMedia.All permission in addition to one of the permissions listed in the previous table.
+> - Cloud Video Interop solutions that are [Certified for Microsoft Teams](/MicrosoftTeams/cloud-video-interop) have permission to call this API to join meetings for which they have meeting join links, similar to external users joining through a browser.
+> - Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -111,6 +112,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-call-service-hosted-media-1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -129,6 +134,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-call-service-hosted-media-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-call-service-hosted-media-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -442,6 +451,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-call-app-hosted-media-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-call-app-hosted-media-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-call-app-hosted-media-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -460,6 +473,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-call-app-hosted-media-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-call-app-hosted-media-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -624,6 +641,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-group-call-service-hosted-media-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-group-call-service-hosted-media-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-group-call-service-hosted-media-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -642,6 +663,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-group-call-service-hosted-media-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-group-call-service-hosted-media-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -797,6 +822,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-group-call-app-hosted-media-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-group-call-app-hosted-media-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-group-call-app-hosted-media-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -815,6 +844,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-group-call-app-hosted-media-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-group-call-app-hosted-media-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -964,6 +997,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/join-meeting-service-hosted-media-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/join-meeting-service-hosted-media-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/join-meeting-service-hosted-media-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -982,6 +1019,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/join-meeting-service-hosted-media-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/join-meeting-service-hosted-media-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -1182,6 +1223,8 @@ POST https://bot.contoso.com/callback
 Content-Type: application/json
 ```
 
+##### Delta roster disabled (default)
+
 <!-- {
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications",
@@ -1271,6 +1314,107 @@ Content-Type: application/json
 }
 ```
 
+##### Delta roster enabled
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications",
+  "truncated": true
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resource": "/app/calls/421f7700-f4ad-4ea9-a3fc-c1d2195675ad/participants",
+      "resourceUrl": "/communications/calls/421f7700-f4ad-4ea9-a3fc-c1d2195675ad/participants",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.deltaParticipants",
+          "participants": [
+            {
+              "@odata.type": "#microsoft.graph.participant",
+              "info": {
+                "@odata.type": "#microsoft.graph.participantInfo",
+                "identity": {
+                  "@odata.type": "#microsoft.graph.identitySet",
+                  "user": {
+                    "@odata.type": "#microsoft.graph.identity",
+                    "displayName": "John",
+                    "id": "112f7296-5fa4-42ca-bae8-6a692b15d4b8"
+                  }
+                },
+                "languageId": "en-US"
+              },
+              "mediaStreams": [
+                {
+                  "@odata.type": "#microsoft.graph.mediaStream",
+                  "mediaType": "audio",
+                  "sourceId": "1",
+                  "direction": "sendReceive",
+                  "serverMuted": false
+                },
+                {
+                  "@odata.type": "#microsoft.graph.mediaStream",
+                  "mediaType": "video",
+                  "sourceId": "2",
+                  "direction": "receiveOnly",
+                  "serverMuted": false
+                },
+                {
+                  "@odata.type": "#microsoft.graph.mediaStream",
+                  "mediaType": "videoBasedScreenSharing",
+                  "sourceId": "8",
+                  "direction": "receiveOnly",
+                  "serverMuted": false
+                }
+              ],
+              "isMuted": true,
+              "isInLobby": false,
+              "id": "0d7664b6-6432-43ed-8d27-d9e7adec188c",
+              "rosterSequenceNumber": 1
+            },
+            {
+              "@odata.type": "#microsoft.graph.participant",
+              "info": {
+                "@odata.type": "#microsoft.graph.participantInfo",
+                "identity": {
+                  "@odata.type": "#microsoft.graph.identitySet",
+                  "application": {
+                    "@odata.type": "#microsoft.graph.identity",
+                    "displayName": "Calling Bot",
+                    "id": "2891555a-92ff-42e6-80fa-6e1300c6b5c6"
+                  }
+                }
+              },
+              "mediaStreams": [
+                {
+                  "@odata.type": "#microsoft.graph.mediaStream",
+                  "mediaType": "audio",
+                  "sourceId": "10",
+                  "direction": "sendReceive",
+                  "serverMuted": false
+                }
+              ],
+              "isMuted": false,
+              "isInLobby": false,
+              "id": "05491616-385f-44a8-9974-18cc5f9933c1",
+              "rosterSequenceNumber": 1,
+              "removedState": {
+                "reason": "Removed from roster"
+              }
+            }
+          ],
+          "sequenceNumber": 1
+        }
+      ]
+    }
+  ]
+}
+```
+
 >**Note:** For join meeting scenarios apart from call state notifications, we receive roster notifications.
 
 ### Example 6: Join a scheduled meeting with joinMeetingId and passcode
@@ -1321,6 +1465,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/join-meeting-with-join-meeting-id-and-passcode-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/join-meeting-with-join-meeting-id-and-passcode-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/join-meeting-with-join-meeting-id-and-passcode-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -1339,6 +1487,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/join-meeting-with-join-meeting-id-and-passcode-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/join-meeting-with-join-meeting-id-and-passcode-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -1469,6 +1621,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/join-meeting-with-join-meeting-id-and-without-passcode-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/join-meeting-with-join-meeting-id-and-without-passcode-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/join-meeting-with-join-meeting-id-and-without-passcode-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -1487,6 +1643,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/join-meeting-with-join-meeting-id-and-without-passcode-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/join-meeting-with-join-meeting-id-and-without-passcode-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -1624,6 +1784,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/join-meeting-app-hosted-media-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/join-meeting-app-hosted-media-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/join-meeting-app-hosted-media-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -1642,6 +1806,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/join-meeting-app-hosted-media-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/join-meeting-app-hosted-media-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -1789,6 +1957,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/join-channel-meeting-service-hosted-media-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/join-channel-meeting-service-hosted-media-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/join-channel-meeting-service-hosted-media-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -1807,6 +1979,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/join-channel-meeting-service-hosted-media-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/join-channel-meeting-service-hosted-media-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -1973,6 +2149,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/join-channel-meeting-as-guest-service-hosted-media-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/join-channel-meeting-as-guest-service-hosted-media-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/join-channel-meeting-as-guest-service-hosted-media-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -1991,6 +2171,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/join-channel-meeting-as-guest-service-hosted-media-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/join-channel-meeting-as-guest-service-hosted-media-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -2091,6 +2275,7 @@ POST https://bot.contoso.com/callback
 Content-Type: application/json
 ```
 
+##### Delta roster disabled (default)
 <!-- {
   "blockType": "example",
   "@odata.type": "microsoft.graph.commsNotifications",
@@ -2139,7 +2324,62 @@ Content-Type: application/json
 }
 ```
 
-> **Note:** The application will not receive the roster for participants in the meeting until its admitted from lobby
+##### Delta roster enabled
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications",
+  "truncated": true
+}-->
+```json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "updated",
+      "resource": "/app/calls/421f7700-f4ad-4ea9-a3fc-c1d2195675ad/participants",
+      "resourceUrl": "/communications/calls/421f7700-f4ad-4ea9-a3fc-c1d2195675ad/participants",
+      "resourceData": [
+        {
+          "@odata.type": "#microsoft.graph.deltaParticipants",
+          "participants": [
+            {
+              "@odata.type": "#microsoft.graph.participant",
+              "info": {
+                "@odata.type": "#microsoft.graph.participantInfo",
+                "identity": {
+                  "@odata.type": "#microsoft.graph.identitySet",
+                  "guest": {
+                    "@odata.type": "#microsoft.graph.identity",
+                    "displayName": "Guest User",
+                    "id": "d7a3b999-17ac-4bca-9e77-e6a730d2ec2e"
+                  }
+                }
+              },
+              "mediaStreams": [
+                {
+                  "@odata.type": "#microsoft.graph.mediaStream",
+                  "mediaType": "audio",
+                  "sourceId": "10",
+                  "direction": "sendReceive",
+                  "serverMuted": false
+                }
+              ],
+              "isMuted": false,
+              "isInLobby": true,
+              "id": "05491616-385f-44a8-9974-18cc5f9933c1"
+            }
+          ],
+          "sequenceNumber": 2
+        }
+      ]
+    }
+  ]
+}
+```
+
+> **Note:** The application will not receive the roster for participants in the meeting until its admitted from lobby.
 
 ### Example 11: Create peer-to-peer PSTN call with service hosted media
 
@@ -2207,6 +2447,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-call-service-hosted-media-2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -2225,6 +2469,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-call-service-hosted-media-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-call-service-hosted-media-2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -2386,6 +2634,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-call-service-hosted-media-3-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-call-service-hosted-media-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -2404,6 +2656,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-call-service-hosted-media-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-call-service-hosted-media-3-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

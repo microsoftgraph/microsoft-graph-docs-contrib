@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -23,7 +23,7 @@ requestBody.SetRoleDefinitionId(&roleDefinitionId)
 directoryScopeId := "/661e1310-bd76-4795-89a7-8f3c8f855bfc"
 requestBody.SetDirectoryScopeId(&directoryScopeId) 
 
-result, err := graphClient.RoleManagement().Directory().RoleAssignments().Post(context.Background(), requestBody, nil)
+roleAssignments, err := graphClient.RoleManagement().Directory().RoleAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

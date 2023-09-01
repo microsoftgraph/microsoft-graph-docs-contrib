@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
 	signInPageText = "Default"
 	usernameHintText = "DefaultHint"
 }
 
-Update-MgOrganizationBranding -OrganizationId $organizationId -BodyParameter $params
+Update-MgBetaOrganizationBranding -OrganizationId $organizationId -BodyParameter $params
 
 ```

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -24,7 +24,6 @@ complianceUrl := "https://contoso.com/dlp-policy-page"
 policyTip.SetComplianceUrl(&complianceUrl) 
 matchedConditionDescriptions := []string {
 	"Credit Card Number",
-
 }
 policyTip.SetMatchedConditionDescriptions(matchedConditionDescriptions)
 policyViolation.SetPolicyTip(policyTip)
@@ -34,7 +33,7 @@ dlpAction := graphmodels.BLOCKACCESS_CHATMESSAGEPOLICYVIOLATIONDLPACTIONTYPES
 policyViolation.SetDlpAction(&dlpAction) 
 requestBody.SetPolicyViolation(policyViolation)
 
-result, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().ByMessageId("chatMessage-id").Patch(context.Background(), requestBody, nil)
+messages, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().ByChatMessageId("chatMessage-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

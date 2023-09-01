@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -26,7 +26,6 @@ accessReviewReviewerScope.SetQueryType(&queryType)
 
 reviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
-
 }
 requestBody.SetReviewers(reviewers)
 
@@ -45,11 +44,10 @@ accessReviewReviewerScope1.SetQueryType(&queryType)
 fallbackReviewers := []graphmodels.AccessReviewReviewerScopeable {
 	accessReviewReviewerScope,
 	accessReviewReviewerScope1,
-
 }
 requestBody.SetFallbackReviewers(fallbackReviewers)
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().ByDefinitionId("accessReviewScheduleDefinition-id").Instances().ByInstanceId("accessReviewInstance-id").Stages().ByStageId("accessReviewStage-id").Patch(context.Background(), requestBody, nil)
+stages, err := graphClient.IdentityGovernance().AccessReviews().Definitions().ByAccessReviewScheduleDefinitionId("accessReviewScheduleDefinition-id").Instances().ByAccessReviewInstanceId("accessReviewInstance-id").Stages().ByAccessReviewStageId("accessReviewStage-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

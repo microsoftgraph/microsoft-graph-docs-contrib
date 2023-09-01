@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/ge
 [!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreportsthisgetrealtimeremoteconnectionlatency-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcreportsthisgetrealtimeremoteconnectionlatency-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/cloudpcreportsthisgetrealtimeremoteconnectionlatency-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -88,8 +92,8 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/ge
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsthisgetrealtimeremoteconnectionlatency-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcreportsthisgetrealtimeremoteconnectionlatency-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/cloudpcreportsthisgetrealtimeremoteconnectionlatency-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

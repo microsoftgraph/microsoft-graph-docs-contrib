@@ -1,6 +1,6 @@
 ---
 title: "watermarkProtectionValues resource type"
-description: "Represents the reasons for a participant's restricted media experience."
+description: "Indicates whether a watermark is enabled for different content types in a meeting."
 author: "zihzhan-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -11,9 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Indicates whether a watermark should be applied to any content type. Please note this is not a security feature because it relies on the client application to implement the watermarking.
+Indicates that a watermark is enabled for this particular meeting. Any clients that don't support watermarks will have a restricted (audio-only) experience in the meeting.
 
 ## Properties
 

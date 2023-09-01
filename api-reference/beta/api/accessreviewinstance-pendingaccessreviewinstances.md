@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/beta/me/pendingAccessReviewInstances?$expand=def
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-accessreviewinstance-pendingapproval-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-accessreviewinstance-pendingapproval-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-accessreviewinstance-pendingapproval-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -79,6 +83,10 @@ GET https://graph.microsoft.com/beta/me/pendingAccessReviewInstances?$expand=def
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-accessreviewinstance-pendingapproval-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-accessreviewinstance-pendingapproval-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

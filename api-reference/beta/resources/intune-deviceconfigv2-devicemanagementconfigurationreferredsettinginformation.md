@@ -20,7 +20,7 @@ Referred setting information about reusable setting
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|settingDefinitionId|String|Setting definition id that is being referred to a setting. Applicable for reusable setting|
+|settingDefinitionId|String|Setting definition id that is being referred to a setting. Applicable for reusable setting.|
 
 ## Relationships
 None

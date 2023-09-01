@@ -1,10 +1,10 @@
 ---
 title: "authenticationMethodConfigurations"
 description: "authenticationMethodConfigurations object."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # authenticationMethodConfiguration resource type

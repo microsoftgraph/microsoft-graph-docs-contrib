@@ -54,7 +54,6 @@ If successful, this action returns a `204 No Content` response code. To confirm 
 
 ### Request
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -68,6 +67,10 @@ POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default/r
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -88,6 +91,10 @@ POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/default/r
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/crosstenantaccesspolicyconfigurationdefault-resettosystemdefault-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

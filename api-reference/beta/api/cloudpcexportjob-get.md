@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|CloudPC.ReadWrite.All|
+|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|CloudPC.ReadWrite.All|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## HTTP request
 
@@ -60,7 +60,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_cloudpcexportjob"
+  "name": "get_cloudpcexportjob",
+  "sampleKeys": ["TotalAggregatedRemoteConnectionReports__d39979c9-a0a2-4916-a158-1b984742ffff"]
 }
 -->
 ``` http
@@ -69,6 +70,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/ex
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpcexportjob-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-cloudpcexportjob-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -89,6 +94,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/ex
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcexportjob-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-cloudpcexportjob-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

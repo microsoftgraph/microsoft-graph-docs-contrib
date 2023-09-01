@@ -54,6 +54,7 @@ Here is an example of the request.
   "blockType": "request",
   "name": "delete_conversation_member"
 } -->
+
 ```http
 DELETE https://graph.microsoft.com/V1.0/teams/{id}/channels/{id}/members/{id}
 ```
@@ -65,6 +66,7 @@ Here is an example of the response.
 <!-- {
   "blockType": "response"
 } -->
+
 ```http
 HTTP/1.1 204 No Content
 ```

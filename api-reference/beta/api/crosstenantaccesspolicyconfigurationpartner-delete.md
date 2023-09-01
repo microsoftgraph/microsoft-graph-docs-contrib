@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Policy.ReadWrite.CrossTenantAccess|
-|Delegated (personal Microsoft account)|Not applicable|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.CrossTenantAccess|
 
 ## HTTP request
@@ -52,10 +52,9 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-If a configuration includes a [user synchronization policy](../resources/crosstenantidentitysyncpolicypartner.md), you must first [delete the user synchronization policy](./crosstenantidentitysyncpolicypartner-delete.md) before you can delete the partner-specific configuration.
-
 ### Request
 
+The following is an example of the request. If a configuration includes a [user synchronization policy](../resources/crosstenantidentitysyncpolicypartner.md), you must first [delete the user synchronization policy](./crosstenantidentitysyncpolicypartner-delete.md) before you can delete the partner-specific configuration.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -70,6 +69,10 @@ DELETE https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partner
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-crosstenantaccesspolicyconfigurationpartner-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-crosstenantaccesspolicyconfigurationpartner-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -92,9 +95,15 @@ DELETE https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partner
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-crosstenantaccesspolicyconfigurationpartner-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-crosstenantaccesspolicyconfigurationpartner-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

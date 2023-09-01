@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -24,10 +24,9 @@ description := "This is my first private channels"
 requestBody.SetDescription(&description) 
 
 
-conversationMember := graphmodels.NewConversationMember()
+conversationMember := graphmodels.NewAadUserConversationMember()
 roles := []string {
 	"owner",
-
 }
 conversationMember.SetRoles(roles)
 additionalData := map[string]interface{}{
@@ -37,11 +36,10 @@ conversationMember.SetAdditionalData(additionalData)
 
 members := []graphmodels.ConversationMemberable {
 	conversationMember,
-
 }
 requestBody.SetMembers(members)
 
-result, err := graphClient.Teams().ByTeamId("team-id").Channels().Post(context.Background(), requestBody, nil)
+channels, err := graphClient.Teams().ByTeamId("team-id").Channels().Post(context.Background(), requestBody, nil)
 
 
 ```

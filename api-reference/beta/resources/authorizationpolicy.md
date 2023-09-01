@@ -26,10 +26,10 @@ Represents a policy that can control Azure Active Directory authorization settin
 | Property | Type | Description |
 |-|-|-|
 |allowedToSignUpEmailBasedSubscriptions|Boolean| Indicates whether users can sign up for email based subscriptions. |
-|allowedToUseSSPR|Boolean| Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant. |
+|allowedToUseSSPR|Boolean| Indicates whether the Admin Self-Serve Password Reset feature is enabled on the tenant. |
 |allowEmailVerifiedUsersToJoinOrganization|Boolean| Indicates whether a user can join the tenant by email validation. |
 |allowInvitesFrom|allowInvitesFrom|Indicates who can invite external users to the organization. Possible values are: `none`, `adminsAndGuestInviters`, `adminsGuestInvitersAndAllMembers`, `everyone`. `everyone` is the default setting for all cloud environments except US Government. See more in the [table below](#allowinvitesfrom-values).|
-|allowUserConsentForRiskyApps|Boolean| Indicates whether [user consent for risky apps](/azure/active-directory/manage-apps/configure-risk-based-step-up-consent) is allowed. We recommend to keep this as `false`. |
+|allowUserConsentForRiskyApps|Boolean| Indicates whether [user consent for risky apps](/azure/active-directory/manage-apps/configure-risk-based-step-up-consent) is allowed. Default value is `false`. We recommend that you keep the value set to `false`. |
 |blockMsolPowerShell|Boolean| To disable the use of the [MSOnline PowerShell module](/powershell/module/msonline) set this property to `true`. This will also disable user-based access to the legacy service endpoint used by the MSOnline PowerShell module. This does not affect Azure AD Connect or Microsoft Graph. |
 |defaultUserRolePermissions|[defaultUserRolePermissions](defaultUserRolePermissions.md)| Specifies certain customizable permissions for default user role. |
 |description|String| Description of this policy.|
@@ -67,18 +67,18 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-   "id": "String (identifier)",
+  "allowEmailVerifiedUsersToJoinOrganization": "Boolean",
+  "allowInvitesFrom": "String",
+  "allowUserConsentForRiskyApps": "Boolean",
+  "allowedToSignUpEmailBasedSubscriptions": "Boolean",
+  "allowedToUseSSPR": "Boolean",
+  "blockMsolPowerShell": "Boolean",
+  "defaultUserRolePermissions": {"@odata.type": "microsoft.graph.defaultUserRolePermissions"},
   "description": "String",
   "displayName": "String",
   "enabledPreviewFeatures": "[String]",
   "guestUserRoleId": "Guid",
-  "allowUserConsentForRiskyApps": false,
-  "blockMsolPowerShell": true,
-  "defaultUserRolePermissions": {"@odata.type": "microsoft.graph.defaultUserRolePermissions"},
-  "allowedToUseSSPR": true,
-  "allowedToSignUpEmailBasedSubscriptions": true,
-  "allowEmailVerifiedUsersToJoinOrganization": true,
-  "allowInvitesFrom": "String",
+  "id": "String (identifier)",
   "permissionGrantPolicyIdsAssignedToDefaultUserRole": "[String]"
 }
 ```

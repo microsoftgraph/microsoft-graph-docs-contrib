@@ -1,7 +1,7 @@
 ---
 title: "post: reply"
 description: "Reply to a post and add a new post to the specified thread in a group conversation. You can specify "
-author: "dkershaw10"
+author: "mikemcleanlive"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -39,7 +39,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/reply
 ## Request body
 In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
+| Parameter       | Type    |Description|
 |:---------------|:--------|:----------|
 |post|[post](../resources/post.md)|The new post that is being replied with.|
 
@@ -119,6 +119,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-reply-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-reply-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-reply-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -137,6 +141,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/post-reply-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/post-reply-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/teamwork"
+	  graphteamwork "github.com/microsoftgraph/msgraph-beta-sdk-go/teamwork"
 	  //other-imports
 )
 
@@ -16,17 +16,17 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-requestFilter := "definitions/any"
+requestFilter := "definitions/any(a:a/languageTag eq 'en-US')"
 
-requestParameters := &graphconfig.TeamworkTeamTemplatesRequestBuilderGetQueryParameters{
+requestParameters := &graphteamwork.TeamworkTeamTemplatesRequestBuilderGetQueryParameters{
 	Expand: [] string {"definitions"},
 	Filter: &requestFilter,
 }
-configuration := &graphconfig.TeamworkTeamTemplatesRequestBuilderGetRequestConfiguration{
+configuration := &graphteamwork.TeamworkTeamTemplatesRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Teamwork().TeamTemplates().Get(context.Background(), configuration)
+teamTemplates, err := graphClient.Teamwork().TeamTemplates().Get(context.Background(), configuration)
 
 
 ```

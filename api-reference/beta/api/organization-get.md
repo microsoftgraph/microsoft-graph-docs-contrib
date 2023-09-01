@@ -124,6 +124,10 @@ GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be6
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-organization-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-organization-1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-organization-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -142,6 +146,10 @@ GET https://graph.microsoft.com/beta/organization/84841066-274d-4ec0-a5c1-276be6
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-organization-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-organization-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -175,6 +183,7 @@ Content-type: application/json
     "displayName": "Contoso",
     "isMultipleDataLocationsForServicesEnabled": null,
     "marketingNotificationEmails": [],
+    "onPremisesLastPasswordSyncDateTime": "2021-08-02T10:30:06Z",
     "onPremisesLastSyncDateTime": null,
     "onPremisesSyncEnabled": null,
     "partnerTenantType": "ResellerPartnerDelegatedAdmin",

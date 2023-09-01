@@ -2,7 +2,7 @@
 title: "Get conditionalAccessPolicy"
 description: "Retrieve the properties and relationships of a conditionalAccessPolicy object."
 ms.localizationpriority: medium
-author: "davidspooner"
+author: "lisaychuang"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-conditionalaccesspolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-conditionalaccesspolicy-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-conditionalaccesspolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -89,6 +93,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/policies/{id}
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-conditionalaccesspolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-conditionalaccesspolicy-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

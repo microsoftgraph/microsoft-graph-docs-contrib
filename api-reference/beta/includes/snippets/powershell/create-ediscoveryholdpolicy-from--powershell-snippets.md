@@ -4,10 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
-	displayname = "My legalHold with sources"
+	displayName = "My legalHold with sources"
 	description = "Created from Graph API"
 	"userSources@odata.bind" = @(
 		@{
@@ -22,6 +22,6 @@ $params = @{
 	)
 }
 
-New-MgSecurityCaseEdiscoveryCaseLegalHold -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
+New-MgBetaSecurityCaseEdiscoveryCaseLegalHold -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
 
 ```

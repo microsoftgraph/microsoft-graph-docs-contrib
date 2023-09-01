@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: List Drives
 ms.localizationpriority: high
@@ -32,7 +32,7 @@ To list the document libraries for a group, your app requests the **drives** rel
 <!-- {"blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/groups/{groupId}/drives
+GET /groups/{groupId}/drives
 ```
 
 ### List a site's drives
@@ -50,7 +50,7 @@ GET /sites/{siteId}/drives
 <!-- {"blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/users/{userId}/drives
+GET /users/{userId}/drives
 ```
 
 ### List the current user's drives
@@ -85,6 +85,10 @@ GET /me/drives
 [!INCLUDE [sample-code](../includes/snippets/csharp/enum-drives-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/enum-drives-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/enum-drives-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -105,10 +109,14 @@ GET /me/drives
 [!INCLUDE [sample-code](../includes/snippets/powershell/enum-drives-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/enum-drives-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-<!-- { "blockType": "response", 
+<!-- { "blockType": "response",
        "@odata.type": "Collection(microsoft.graph.drive)",
        "truncated": true } -->
 

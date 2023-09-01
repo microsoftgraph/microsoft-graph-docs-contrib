@@ -6,128 +6,88 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new BookingStaffMemberBase();
-$requestBody->set@odatatype('#microsoft.graph.bookingStaffMember');
+$requestBody = new BookingStaffMember();
+$requestBody->setOdataType('#microsoft.graph.bookingStaffMember');
+$workingHoursBookingWorkHours1 = new BookingWorkHours();
+$workingHoursBookingWorkHours1->setOdataType('#microsoft.graph.bookingWorkHours');
+$workingHoursBookingWorkHours1->setDay(new DayOfWeek('monday'));
+$workingHoursBookingWorkHours1->setTimeSlots([	]);
+$additionalData = [
+	'day@odata.type' => '#microsoft.graph.dayOfWeek',
+	'timeSlots@odata.type' => '#Collection(microsoft.graph.bookingWorkTimeSlot)',
+];
+$workingHoursBookingWorkHours1->setAdditionalData($additionalData);
+$workingHoursArray []= $workingHoursBookingWorkHours1;
+$workingHoursBookingWorkHours2 = new BookingWorkHours();
+$workingHoursBookingWorkHours2->setOdataType('#microsoft.graph.bookingWorkHours');
+$workingHoursBookingWorkHours2->setDay(new DayOfWeek('tuesday'));
+$timeSlotsBookingWorkTimeSlot1 = new BookingWorkTimeSlot();
+$timeSlotsBookingWorkTimeSlot1->setOdataType('#microsoft.graph.bookingWorkTimeSlot');
+$timeSlotsBookingWorkTimeSlot1->setEndTime(new Time('17:00:00.0000000'));
+$timeSlotsBookingWorkTimeSlot1->setStartTime(new Time('08:00:00.0000000'));
+$timeSlotsArray []= $timeSlotsBookingWorkTimeSlot1;
+$workingHoursBookingWorkHours2->setTimeSlots($timeSlotsArray);
 
 $additionalData = [
-		'workingHours' => $workingHours1 = new ();
-$		workingHours1->set@odatatype('#microsoft.graph.bookingWorkHours');
+'day@odata.type' => '#microsoft.graph.dayOfWeek',
+'timeSlots@odata.type' => '#Collection(microsoft.graph.bookingWorkTimeSlot)',
+];
+$workingHoursBookingWorkHours2->setAdditionalData($additionalData);
+$workingHoursArray []= $workingHoursBookingWorkHours2;
+$workingHoursBookingWorkHours3 = new BookingWorkHours();
+$workingHoursBookingWorkHours3->setOdataType('#microsoft.graph.bookingWorkHours');
+$workingHoursBookingWorkHours3->setDay(new DayOfWeek('wednesday'));
+$timeSlotsBookingWorkTimeSlot1 = new BookingWorkTimeSlot();
+$timeSlotsBookingWorkTimeSlot1->setOdataType('#microsoft.graph.bookingWorkTimeSlot');
+$timeSlotsBookingWorkTimeSlot1->setEndTime(new Time('17:00:00.0000000'));
+$timeSlotsBookingWorkTimeSlot1->setStartTime(new Time('08:00:00.0000000'));
+$timeSlotsArray []= $timeSlotsBookingWorkTimeSlot1;
+$workingHoursBookingWorkHours3->setTimeSlots($timeSlotsArray);
 
-$		workingHours1->setDay@odatatype('#microsoft.graph.dayOfWeek');
+$additionalData = [
+'day@odata.type' => '#microsoft.graph.dayOfWeek',
+'timeSlots@odata.type' => '#Collection(microsoft.graph.bookingWorkTimeSlot)',
+];
+$workingHoursBookingWorkHours3->setAdditionalData($additionalData);
+$workingHoursArray []= $workingHoursBookingWorkHours3;
+$workingHoursBookingWorkHours4 = new BookingWorkHours();
+$workingHoursBookingWorkHours4->setOdataType('#microsoft.graph.bookingWorkHours');
+$workingHoursBookingWorkHours4->setDay(new DayOfWeek('thursday'));
+$timeSlotsBookingWorkTimeSlot1 = new BookingWorkTimeSlot();
+$timeSlotsBookingWorkTimeSlot1->setOdataType('#microsoft.graph.bookingWorkTimeSlot');
+$timeSlotsBookingWorkTimeSlot1->setEndTime(new Time('17:00:00.0000000'));
+$timeSlotsBookingWorkTimeSlot1->setStartTime(new Time('08:00:00.0000000'));
+$timeSlotsArray []= $timeSlotsBookingWorkTimeSlot1;
+$workingHoursBookingWorkHours4->setTimeSlots($timeSlotsArray);
 
-$		workingHours1->setDay('monday');
+$additionalData = [
+'day@odata.type' => '#microsoft.graph.dayOfWeek',
+'timeSlots@odata.type' => '#Collection(microsoft.graph.bookingWorkTimeSlot)',
+];
+$workingHoursBookingWorkHours4->setAdditionalData($additionalData);
+$workingHoursArray []= $workingHoursBookingWorkHours4;
+$workingHoursBookingWorkHours5 = new BookingWorkHours();
+$workingHoursBookingWorkHours5->setOdataType('#microsoft.graph.bookingWorkHours');
+$workingHoursBookingWorkHours5->setDay(new DayOfWeek('friday'));
+$timeSlotsBookingWorkTimeSlot1 = new BookingWorkTimeSlot();
+$timeSlotsBookingWorkTimeSlot1->setOdataType('#microsoft.graph.bookingWorkTimeSlot');
+$timeSlotsBookingWorkTimeSlot1->setEndTime(new Time('17:00:00.0000000'));
+$timeSlotsBookingWorkTimeSlot1->setStartTime(new Time('08:00:00.0000000'));
+$timeSlotsArray []= $timeSlotsBookingWorkTimeSlot1;
+$workingHoursBookingWorkHours5->setTimeSlots($timeSlotsArray);
 
-$		workingHours1->setTimeSlots@odatatype('#Collection(microsoft.graph.bookingWorkTimeSlot)');
-
-$workingHours1->setTimeSlots([]);
-
-
-$workingHoursArray []= $workingHours1;
-$workingHours2 = new ();
-$	workingHours2->set@odatatype('#microsoft.graph.bookingWorkHours');
-
-$	workingHours2->setDay@odatatype('#microsoft.graph.dayOfWeek');
-
-$	workingHours2->setDay('tuesday');
-
-$	workingHours2->setTimeSlots@odatatype('#Collection(microsoft.graph.bookingWorkTimeSlot)');
-
-$timeSlots1 = new ();
-$	timeSlots1->set@odatatype('#microsoft.graph.bookingWorkTimeSlot');
-
-$	timeSlots1->setEndTime('17:00:00.0000000');
-
-$	timeSlots1->setStartTime('08:00:00.0000000');
-
-
-$timeSlotsArray []= $timeSlots1;
-$workingHours2->setTimeSlots($timeSlotsArray);
-
-
-
-$workingHoursArray []= $workingHours2;
-$workingHours3 = new ();
-$workingHours3->set@odatatype('#microsoft.graph.bookingWorkHours');
-
-$workingHours3->setDay@odatatype('#microsoft.graph.dayOfWeek');
-
-$workingHours3->setDay('wednesday');
-
-$workingHours3->setTimeSlots@odatatype('#Collection(microsoft.graph.bookingWorkTimeSlot)');
-
-$timeSlots1 = new ();
-$timeSlots1->set@odatatype('#microsoft.graph.bookingWorkTimeSlot');
-
-$timeSlots1->setEndTime('17:00:00.0000000');
-
-$timeSlots1->setStartTime('08:00:00.0000000');
-
-
-$timeSlotsArray []= $timeSlots1;
-$workingHours3->setTimeSlots($timeSlotsArray);
-
-
-
-$workingHoursArray []= $workingHours3;
-$workingHours4 = new ();
-$workingHours4->set@odatatype('#microsoft.graph.bookingWorkHours');
-
-$workingHours4->setDay@odatatype('#microsoft.graph.dayOfWeek');
-
-$workingHours4->setDay('thursday');
-
-$workingHours4->setTimeSlots@odatatype('#Collection(microsoft.graph.bookingWorkTimeSlot)');
-
-$timeSlots1 = new ();
-$timeSlots1->set@odatatype('#microsoft.graph.bookingWorkTimeSlot');
-
-$timeSlots1->setEndTime('17:00:00.0000000');
-
-$timeSlots1->setStartTime('08:00:00.0000000');
-
-
-$timeSlotsArray []= $timeSlots1;
-$workingHours4->setTimeSlots($timeSlotsArray);
-
-
-
-$workingHoursArray []= $workingHours4;
-$workingHours5 = new ();
-$workingHours5->set@odatatype('#microsoft.graph.bookingWorkHours');
-
-$workingHours5->setDay@odatatype('#microsoft.graph.dayOfWeek');
-
-$workingHours5->setDay('friday');
-
-$workingHours5->setTimeSlots@odatatype('#Collection(microsoft.graph.bookingWorkTimeSlot)');
-
-$timeSlots1 = new ();
-$timeSlots1->set@odatatype('#microsoft.graph.bookingWorkTimeSlot');
-
-$timeSlots1->setEndTime('17:00:00.0000000');
-
-$timeSlots1->setStartTime('08:00:00.0000000');
-
-
-$timeSlotsArray []= $timeSlots1;
-$workingHours5->setTimeSlots($timeSlotsArray);
-
-
-
-$workingHoursArray []= $workingHours5;
+$additionalData = [
+'day@odata.type' => '#microsoft.graph.dayOfWeek',
+'timeSlots@odata.type' => '#Collection(microsoft.graph.bookingWorkTimeSlot)',
+];
+$workingHoursBookingWorkHours5->setAdditionalData($additionalData);
+$workingHoursArray []= $workingHoursBookingWorkHours5;
 $requestBody->setWorkingHours($workingHoursArray);
 
 
-];
-$requestBody->setAdditionalData($additionalData);
-
-
-
-
-$result = $graphServiceClient->solutions()->bookingBusinessesById('bookingBusiness-id')->staffMembersById('bookingStaffMemberBase-id')->patch($requestBody);
-
+$result = $graphServiceClient->solutions()->bookingBusinesses()->byBookingBusinessId('bookingBusiness-id')->staffMembers()->byBookingStaffMemberBaseId('bookingStaffMemberBase-id')->patch($requestBody)->wait();
 
 ```

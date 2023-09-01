@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/Drives/Item/Items/Item/Workbook/Worksheets/Item/Protection/Protect"
+	  graphdrives "github.com/microsoftgraph/msgraph-sdk-go/drives"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewProtectPostRequestBody()
+requestBody := graphdrives.NewProtectPostRequestBody()
 options := graphmodels.NewWorkbookWorksheetProtectionOptions()
 allowFormatCells := true
 options.SetAllowFormatCells(&allowFormatCells) 
@@ -41,7 +42,7 @@ allowPivotTables := true
 options.SetAllowPivotTables(&allowPivotTables) 
 requestBody.SetOptions(options)
 
-graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Worksheets().ByWorksheetId("workbookWorksheet-id").Protection().Protect().Post(context.Background(), requestBody, nil)
+graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Worksheets().ByWorkbookWorksheetId("workbookWorksheet-id").Protection().Protect().Post(context.Background(), requestBody, nil)
 
 
 ```

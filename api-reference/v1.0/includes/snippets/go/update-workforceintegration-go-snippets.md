@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -33,7 +33,7 @@ requestBody.SetUrl(&url)
 supportedEntities := graphmodels.SUPPORTEDENTITIES-VALUE_WORKFORCEINTEGRATIONSUPPORTEDENTITIES 
 requestBody.SetSupportedEntities(&supportedEntities) 
 
-result, err := graphClient.Teamwork().WorkforceIntegrations().ByWorkforceIntegrationId("workforceIntegration-id").Patch(context.Background(), requestBody, nil)
+workforceIntegrations, err := graphClient.Teamwork().WorkforceIntegrations().ByWorkforceIntegrationId("workforceIntegration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

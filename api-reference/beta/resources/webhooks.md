@@ -2,7 +2,7 @@
 title: "Use the Microsoft Graph API to get change notifications"
 description: "Deliver change notifications to clients."
 ms.localizationpriority: medium
-author: "jumasure"
+author: "keylimesoda"
 doc_type: conceptualPageType
 ms.prod: "change-notifications"
 ms.date: 10/04/2022
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
-The Microsoft Graph REST API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe to and handle incoming notifications, see [Set up notifications for changes in user data](/graph/webhooks).
+The Microsoft Graph REST API can deliver change notifications to clients through various endpoints, including webhooks, Event Hubs, and Event Grid. To learn how to subscribe and receive notifications for your application, see [Set up notifications for changes in user data](/graph/webhooks).
 
 [!INCLUDE [change-notifications-supported-resources-expanded](../../../concepts/includes/change-notifications-supported-resources-expanded.md)]
 
@@ -28,9 +28,9 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [alert][], [baseTask][] (deprecated), [channel][], [chat][], [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [presence][], [chatMessage][] (preview), [team][], [todoTask][] |
+| Delegated - work or school account     | [alert][], [callTranscript][], [channel][], [chat][], [contact][], [conversation][], [conversationMember][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [presence][], [chatMessage][] (preview), [team][], [todoTask][], [baseTask][] (deprecated) |
 | Delegated - personal Microsoft account | [baseTask][] (deprecated), [contact][], [driveItem][], [list][], [event][], [message][], [todoTask][]                                   |
-| Application                            | [alert][], [channel][], [chat][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [onlinemeeting][], [printer][], [printTaskDefinition][], [team][] |
+| Application                            | [alert][], [callTranscript][], [channel][], [chat][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [conversationMember][], [onlineMeeting][], [printer][], [printTaskDefinition][], [team][] |
 
 ## See also
 
@@ -64,3 +64,4 @@ In general, subscription operations require read permission to the resource. For
 [todoTask]: ./todotask.md
 [To Do task]: ./todotask.md
 [onlineMeeting]: ./onlinemeeting.md
+[callTranscript]: ./calltranscript.md

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -27,7 +27,7 @@ externalObjectVersion := "000003"
 businessScenarioProperties.SetExternalObjectVersion(&externalObjectVersion) 
 requestBody.SetBusinessScenarioProperties(businessScenarioProperties)
 
-result, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().Tasks().ByTaskId("businessScenarioTask-id").Patch(context.Background(), requestBody, nil)
+tasks, err := graphClient.Solutions().BusinessScenarios().ByBusinessScenarioId("businessScenario-id").Planner().Tasks().ByBusinessScenarioTaskId("businessScenarioTask-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -2,7 +2,7 @@
 title: "Delete conditionalAccessPolicy"
 description: "Delete a conditionalAccessPolicy."
 ms.localizationpriority: medium
-author: "davidspooner"
+author: "lisaychuang"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -17,6 +17,7 @@ Delete a [conditionalAccessPolicy](../resources/conditionalaccesspolicy.md) obje
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type                        | Permissions (from least to most privileged)                    |
 |:--------------------------------------|:---------------------------------------------------------------|
 | Delegated (work or school account)     | Policy.Read.All and Policy.ReadWrite.ConditionalAccess |
@@ -65,6 +66,10 @@ DELETE https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-conditionalaccesspolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-conditionalaccesspolicy-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-conditionalaccesspolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -83,6 +88,10 @@ DELETE https://graph.microsoft.com/v1.0/identity/conditionalAccess/policies/{id}
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-conditionalaccesspolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-conditionalaccesspolicy-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

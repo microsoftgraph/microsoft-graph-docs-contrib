@@ -67,6 +67,10 @@ GET https://graph.microsoft.com/v1.0/reports/dailyPrintUsageByPrinter/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printusagebyprinter-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-printusagebyprinter-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-printusagebyprinter-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -87,6 +91,10 @@ GET https://graph.microsoft.com/v1.0/reports/dailyPrintUsageByPrinter/{id}
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-printusagebyprinter-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-printusagebyprinter-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -104,6 +112,7 @@ Content-Type: application/json
 {
     "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
     "printerId": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
+    "printerName": "printerName1",
     "usageDate": "Date",
     "completedBlackAndWhiteJobCount": 42,
     "completedColorJobCount": 0,

@@ -125,6 +125,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roleassignments-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-roleassignments-1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-roleassignments-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -143,6 +147,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$f
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-roleassignments-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-roleassignments-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -288,6 +296,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$f
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roleassignments-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-roleassignments-2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-roleassignments-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -306,6 +318,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$f
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-roleassignments-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-roleassignments-2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -367,6 +383,10 @@ GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleAs
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roleassignments-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-roleassignments-3-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-roleassignments-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -385,6 +405,10 @@ GET https://graph.microsoft.com/beta/roleManagement/entitlementManagement/roleAs
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-roleassignments-3-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-roleassignments-3-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -441,6 +465,10 @@ GET https://graph.microsoft.com/beta/roleManagement/exchange/roleAssignments?$fi
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roleassignments-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-roleassignments-4-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-roleassignments-4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -458,7 +486,11 @@ GET https://graph.microsoft.com/beta/roleManagement/exchange/roleAssignments?$fi
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-roleassignments-4-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-roleassignments-4-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -507,6 +539,132 @@ Content-type: application/json
 }
 ```
 
+
+### Example 4: List privileged role assignments
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_roleAssignments_isprivileged"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleAssignments?$expand=roleDefinition&$filter=roleDefinition/isPrivileged eq true
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleAssignments(roleDefinition())",
+    "value": [
+        {
+            "id": "{id}",
+            "principalId": "{principalId}",
+            "principalOrganizationId": "{principalOrganizationId}",
+            "resourceScope": "/",
+            "directoryScopeId": "/",
+            "roleDefinitionId": "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+            "roleDefinition": {
+                "id": "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+                "description": "Can manage Conditional Access capabilities.",
+                "displayName": "Conditional Access Administrator",
+                "isBuiltIn": true,
+                "isEnabled": true,
+                "isPrivileged": true,
+                "resourceScopes": [
+                    "/"
+                ],
+                "templateId": "b1be1c3e-b65d-4f19-8427-f6fa0d97feb9",
+                "version": "1",
+                "rolePermissions": [
+                    {
+                        "allowedResourceActions": [
+                            "microsoft.directory/namedLocations/create",
+                            "microsoft.directory/namedLocations/delete",
+                            "microsoft.directory/namedLocations/standard/read",
+                            "microsoft.directory/namedLocations/basic/update",
+                            "microsoft.directory/conditionalAccessPolicies/create",
+                            "microsoft.directory/conditionalAccessPolicies/delete",
+                            "microsoft.directory/conditionalAccessPolicies/standard/read",
+                            "microsoft.directory/conditionalAccessPolicies/owners/read",
+                            "microsoft.directory/conditionalAccessPolicies/policyAppliedTo/read",
+                            "microsoft.directory/conditionalAccessPolicies/basic/update",
+                            "microsoft.directory/conditionalAccessPolicies/owners/update",
+                            "microsoft.directory/conditionalAccessPolicies/tenantDefault/update"
+                        ],
+                        "condition": null
+                    }
+                ]
+            }
+        },
+        {
+            "id": "{id}",
+            "principalId": "{principalId}",
+            "principalOrganizationId": "{principalOrganizationId}",
+            "resourceScope": "/",
+            "directoryScopeId": "/",
+            "roleDefinitionId": "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+            "roleDefinition": {
+                "id": "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+                "description": "Can access to view, set and reset authentication method information for any non-admin user.",
+                "displayName": "Authentication Administrator",
+                "isBuiltIn": true,
+                "isEnabled": true,
+                "isPrivileged": true,
+                "resourceScopes": [
+                    "/"
+                ],
+                "templateId": "c4e39bd9-1100-46d3-8c65-fb160da0071f",
+                "version": "1",
+                "rolePermissions": [
+                    {
+                        "allowedResourceActions": [
+                            "microsoft.directory/users/authenticationMethods/create",
+                            "microsoft.directory/users/authenticationMethods/delete",
+                            "microsoft.directory/users/authenticationMethods/standard/restrictedRead",
+                            "microsoft.directory/users/authenticationMethods/basic/update",
+                            "microsoft.directory/deletedItems.users/restore",
+                            "microsoft.directory/users/delete",
+                            "microsoft.directory/users/disable",
+                            "microsoft.directory/users/enable",
+                            "microsoft.directory/users/invalidateAllRefreshTokens",
+                            "microsoft.directory/users/restore",
+                            "microsoft.directory/users/basic/update",
+                            "microsoft.directory/users/manager/update",
+                            "microsoft.directory/users/password/update",
+                            "microsoft.directory/users/userPrincipalName/update",
+                            "microsoft.azure.serviceHealth/allEntities/allTasks",
+                            "microsoft.azure.supportTickets/allEntities/allTasks",
+                            "microsoft.office365.serviceHealth/allEntities/allTasks",
+                            "microsoft.office365.supportTickets/allEntities/allTasks",
+                            "microsoft.office365.webPortal/allEntities/standard/read"
+                        ],
+                        "condition": null
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

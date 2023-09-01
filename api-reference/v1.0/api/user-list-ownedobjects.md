@@ -60,6 +60,10 @@ GET https://graph.microsoft.com/v1.0/me/ownedObjects
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-ownedobjects-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-ownedobjects-2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-ownedobjects-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -80,10 +84,15 @@ GET https://graph.microsoft.com/v1.0/me/ownedObjects
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-ownedobjects-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-ownedobjects-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here is an example of the response. 
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,11 +104,43 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "value": [
-    {
-      "id": "id-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryObjects",
+    "value": [
+        {
+            "@odata.type": "#microsoft.graph.group",
+            "id": "6796bed1-721f-4734-9cf7-1df0d0f4e0d4",
+            "classification": "Confidential",
+            "groupTypes": [
+                "Unified"
+            ],
+            "resourceBehaviorOptions": [
+                "HideGroupInOutlook",
+                "SubscribeMembersToCalendarEventsDisabled",
+                "WelcomeEmailDisabled"
+            ],
+            "resourceProvisioningOptions": [
+                "Team"
+            ],
+            "securityEnabled": false
+        },
+        {
+            "@odata.type": "#microsoft.graph.group",
+            "id": "654c426a-2cdb-426c-9fd8-3e41014339ef",
+            "classification": null,
+            "groupTypes": [
+                "Unified"
+            ],
+            "resourceBehaviorOptions": [
+                "HideGroupInOutlook",
+                "SubscribeMembersToCalendarEventsDisabled",
+                "WelcomeEmailDisabled"
+            ],
+            "resourceProvisioningOptions": [
+                "Team"
+            ],
+            "securityEnabled": false
+        }
+    ]
 }
 ```
 

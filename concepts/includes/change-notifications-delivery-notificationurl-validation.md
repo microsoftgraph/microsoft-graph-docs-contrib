@@ -1,19 +1,17 @@
 ---
 author: FaithOmbongi
-ms.author: ombongifaith
-ms.reviewer: jumasure
+ms.reviewer: ric.lewis
 ms.prod: "change-notifications"
 ms.topic: include
-ms.date: 02/23/2022
 ms.localizationpriority: high
 ---
 
 <!-- markdownlint-disable MD041-->
 <!-- Is the validation done during subscription renewal? -->
 
-When you create a subscription to receive change notifications through webhooks, Microsoft Graph first validates the notification endpoint that's provided in the **notificationUrl** property of the subscription request. The validation process occurs as follows:
+As part of creating a subscription to receive change notifications through webhooks, Microsoft Graph will attempt to validate the notification endpoint that's provided in the **notificationUrl** property of the subscription request. The validation process occurs as follows:
 
-1. Microsoft Graph encodes a validation token and includes it in a POST request to the notification URL as follows.
+1. When a subscription is requested, Microsoft Graph encodes a validation token and includes it in a POST request to the notification URL as follows.
 
     ```http
     Content-Type: text/plain; charset=utf-8
@@ -35,6 +33,8 @@ When you create a subscription to receive change notifications through webhooks,
     > [!IMPORTANT]
     > The validation token must be returned in plain text. If the client returns an encoded validation token, the validation fails.
 
-Additionally, you can use the [Microsoft Graph Postman collection](/graph/use-postman) to confirm that your endpoint properly implements the validation request. The **Subscription Validation** request in the **Misc** folder provides unit tests that validate the response provided by your endpoint.
+1. If the endpoint validation fails, Microsoft Graph doesn't create the subscription.
+
+Additionally, you can use the [Microsoft Graph Postman collection](/graph/use-postman) to confirm that your endpoint properly implements the validation request. The **notificationUrl** validation request in the **Misc** folder provides unit tests that validate the response provided by your endpoint.
 
 ![validation response test results](../images/change-notifications/validation-request-tests-results.png)

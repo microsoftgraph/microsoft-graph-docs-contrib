@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/delet
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-get-deleteditemcontainer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-get-deleteditemcontainer-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-get-deleteditemcontainer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -97,11 +101,15 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/delet
 [!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-get-deleteditemcontainer-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-get-deleteditemcontainer-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -169,6 +177,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/delet
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-get-deleteditemcontainer-select-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-get-deleteditemcontainer-select-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-get-deleteditemcontainer-select-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -189,11 +201,15 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/delet
 [!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-get-deleteditemcontainer-select-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-get-deleteditemcontainer-select-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -36,11 +36,10 @@ chatMessageHostedContent.SetAdditionalData(additionalData)
 
 hostedContents := []graphmodels.ChatMessageHostedContentable {
 	chatMessageHostedContent,
-
 }
 requestBody.SetHostedContents(hostedContents)
 
-result, err := graphClient.Chats().ByChatId("chat-id").Messages().Post(context.Background(), requestBody, nil)
+messages, err := graphClient.Chats().ByChatId("chat-id").Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

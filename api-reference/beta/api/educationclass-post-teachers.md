@@ -43,7 +43,7 @@ In the request body, supply a JSON representation of an [educationUser](../resou
 If successful, this method returns a `204 No Content` response code and an [educationClass](../resources/educationclass.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -63,6 +63,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-educationuser-from-educationclass-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-educationuser-from-educationclass-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -85,9 +89,13 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-educationuser-from-educationclass-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-educationuser-from-educationclass-2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 The following is an example of the response. 
 
 <!-- Add the educationClass object to the response -->
@@ -114,5 +122,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

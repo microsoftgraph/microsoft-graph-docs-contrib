@@ -4,9 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
+// Code snippets are only available for the latest version. Current version is 5.x
+
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.External.IndustryData.DataConnectors["{industryDataConnector-id}"].IndustryDataValidate.PostAsync();
+await graphClient.External.IndustryData.DataConnectors["{industryDataConnector-id}"].MicrosoftGraphIndustryDataValidate.PostAsync();
 
 
 ```

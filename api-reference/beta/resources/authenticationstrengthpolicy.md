@@ -1,7 +1,7 @@
 ---
 title: "authenticationStrengthPolicy resource type"
 description: "A collection of settings that define specific combinations of authentication methods and metadata. The authentication strength policy, when applied to a given scenario using Azure AD Conditional Access, defines which authentication methods must be used to authenticate in that scenario."
-author: "mmcla"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -25,9 +25,9 @@ Inherits from [entity](../resources/entity.md).
 |[Get authenticationStrengthPolicy](../api/authenticationstrengthpolicy-get.md)|[authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md)|Read the properties and relationships of an [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object.|
 |[Update authenticationStrengthPolicy](../api/authenticationstrengthpolicy-update.md)|[authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md)|Update the properties of a custom [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object. You can't update a built-in **authenticationStrengthPolicy** object. |
 |[Delete authenticationStrengthPolicy](../api/authenticationstrengthroot-delete-policies.md)|None|Delete a custom [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object. You can't delete a built-in **authenticationStrengthPolicy** object.|
-|[findByMethodMode](../api/authenticationstrengthpolicy-findbymethodmode.md)|[authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) collection|Find an [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) by allowed mode.|
+|[findByMethodMode](../api/authenticationstrengthpolicy-findbymethodmode.md) (deprecated)|[authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) collection|Find an [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) by allowed mode.|
 |[List usage](../api/authenticationstrengthpolicy-usage.md)|[authenticationStrengthUsage](../resources/authenticationstrengthusage.md)|Find all [conditionalAccessPolicies](../resources/conditionalaccesspolicy.md) that reference an authentication strength.|
-|[updateAllowedCombinations](../api/authenticationstrengthpolicy-updateallowedcombinations.md)|[updateAllowedCombinationsResult](../resources/updateallowedcombinationsresult.md)|Update the allowed [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) for a given [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md).|
+|[updateAllowedCombinations](../api/authenticationstrengthpolicy-updateallowedcombinations.md) |[updateAllowedCombinationsResult](../resources/updateallowedcombinationsresult.md)|Update the allowed [authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) for a given [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md).|
 |[List combinationConfigurations](../api/authenticationstrengthpolicy-list-combinationconfigurations.md)|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md) collection|Get the authenticationCombinationConfiguration resources from the combinationConfigurations navigation property.|
 |[Create authenticationCombinationConfiguration](../api/authenticationstrengthpolicy-post-combinationconfigurations.md)|[authenticationCombinationConfiguration](../resources/authenticationcombinationconfiguration.md)|Create a new authenticationCombinationConfiguration object.|
 

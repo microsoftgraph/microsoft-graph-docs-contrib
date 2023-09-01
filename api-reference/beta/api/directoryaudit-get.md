@@ -2,7 +2,7 @@
 title: "Get directoryAudit"
 description: "Describes the get method of the directoryAudit resource (entity) from the Microsoft Graph API (beta version)."
 ms.localizationpriority: medium
-author: "SarahBar"
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
@@ -19,6 +19,7 @@ Get a specific Azure Active Directory audit log item. This includes an audit log
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | AuditLog.Read.All and Directory.Read.All |
@@ -36,7 +37,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response. For details about how to use this parameters, see [OData query parameters](/graph/query-parameters).
+This method does not support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -72,6 +73,10 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryaudit-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-directoryaudit-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-directoryaudit-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -90,6 +95,10 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits/{id}
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-directoryaudit-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-directoryaudit-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

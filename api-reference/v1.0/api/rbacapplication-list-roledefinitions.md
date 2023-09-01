@@ -49,7 +49,7 @@ GET /roleManagement/directory/roleDefinitions
 To list role definitions for the entitlement management provider:
 <!-- { "blockType": "ignored" } -->
 ```http
-/roleManagement/entitlementManagement/roleDefinitions
+GET /roleManagement/entitlementManagement/roleDefinitions
 ```
 
 ## Optional query parameters
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-roledefinitions-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-roledefinitions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -107,6 +111,10 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-roledefinitions-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-roledefinitions-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -236,6 +244,10 @@ GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleDe
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-roledefinitions-entitlementmanagement-provider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-roledefinitions-entitlementmanagement-provider-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-roledefinitions-entitlementmanagement-provider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -253,7 +265,11 @@ GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleDe
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-roledefinitions-entitlementmanagement-provider-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-roledefinitions-entitlementmanagement-provider-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

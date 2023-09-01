@@ -50,7 +50,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |servers|[vpnServer](../resources/intune-deviceconfig-vpnserver.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements.|
 |fingerprint|String|Fingerprint is a string that will be used to verify the VPN server can be trusted, which is only applicable when connection type is Check Point Capsule VPN.|
 |customData|[keyValue](../resources/intune-deviceconfig-keyvalue.md) collection|Custom data when connection type is set to Citrix. This collection can contain a maximum of 25 elements.|
-|customKeyValueData|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Custom data when connection type is set to Citrix. This collection can contain a maximum of 25 elements.|
+|customKeyValueData|[keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md) collection|Custom data when connection type is set to Citrix. This collection can contain a maximum of 25 elements.|
 |authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`, `azureAD`.|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Proxy server.|
 |targetedPackageIds|String collection|Targeted App package IDs.|
@@ -58,6 +58,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |alwaysOn|Boolean|Whether or not to enable always-on VPN connection.|
 |alwaysOnLockdown|Boolean|If always-on VPN connection is enabled, whether or not to lock network traffic when that VPN is disconnected.|
 |microsoftTunnelSiteId|String|Microsoft Tunnel site ID.|
+|proxyExclusionList|String collection|List of hosts to exclude using the proxy on connections for. These hosts can use wildcards such as *.example.com.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -161,6 +162,9 @@ Here is a JSON representation of the resource.
   ],
   "alwaysOn": true,
   "alwaysOnLockdown": true,
-  "microsoftTunnelSiteId": "String"
+  "microsoftTunnelSiteId": "String",
+  "proxyExclusionList": [
+    "String"
+  ]
 }
 ```

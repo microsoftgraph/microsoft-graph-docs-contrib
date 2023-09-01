@@ -1,10 +1,10 @@
 ---
 title: "fido2AuthenticationMethodConfiguration resource type"
 description: "Represents a FIDO2 authentication methods policy"
-author: "mmcla"
+author: "calvinlui"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # fido2AuthenticationMethodConfiguration resource type

@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models//search"
+	  graphmodelssearch "github.com/microsoftgraph/msgraph-beta-sdk-go/models/search"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAcronym()
+requestBody := graphmodelssearch.NewAcronym()
 displayName := "DNN"
 requestBody.SetDisplayName(&displayName) 
 standsFor := "Deep Neural Network"
@@ -27,7 +27,7 @@ requestBody.SetWebUrl(&webUrl)
 state := graphmodels.DRAFT_ANSWERSTATE 
 requestBody.SetState(&state) 
 
-result, err := graphClient.Search().Acronyms().Post(context.Background(), requestBody, nil)
+acronyms, err := graphClient.Search().Acronyms().Post(context.Background(), requestBody, nil)
 
 
 ```

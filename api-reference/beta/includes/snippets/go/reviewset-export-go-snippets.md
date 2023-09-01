@@ -4,18 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Compliance/Ediscovery/Cases/Item/ReviewSets/Item/EdiscoveryExport"
+	  graphcompliance "github.com/microsoftgraph/msgraph-beta-sdk-go/compliance"
+	  graphmodelsediscovery "github.com/microsoftgraph/msgraph-beta-sdk-go/models/ediscovery"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewExportPostRequestBody()
+requestBody := graphcompliance.NewExportPostRequestBody()
 outputName := "2020-12-06 Contoso investigation export"
 requestBody.SetOutputName(&outputName) 
 description := "Export for the Contoso investigation"
@@ -25,7 +26,7 @@ requestBody.SetExportOptions(&exportOptions)
 exportStructure := graphmodels.DIRECTORY_EXPORTFILESTRUCTURE 
 requestBody.SetExportStructure(&exportStructure) 
 
-graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").ReviewSets().ByReviewSetId("reviewSet-id").EdiscoveryExport().Post(context.Background(), requestBody, nil)
+graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").ReviewSets().ByReviewSetId("reviewSet-id").MicrosoftGraphEdiscoveryExport().Post(context.Background(), requestBody, nil)
 
 
 ```

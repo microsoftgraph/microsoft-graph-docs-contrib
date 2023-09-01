@@ -50,11 +50,21 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 |previewType|String|This sets the type of preview that shows up on the task. Possible values are: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |recurrence|[plannerTaskRecurrence](../resources/plannertaskrecurrence.md)|Defines active or inactive recurrence for the task. `null` when the recurrence has never been defined for the task.|
 |referenceCount|Int32|Number of external references that exist on the task.|
+|specifiedCompletionRequirements|[plannerTaskCompletionRequirements](../resources/plannertask.md#plannertaskcompletionrequirements-values)|Indicates all the requirements specified on the **plannerTask**. Possible values are: `none`, `checklistCompletion`, `unknownFutureValue`. Read-only. The [plannerTaskCompletionRequirementDetails](plannertaskcompletionrequirementdetails.md) in [plannerTaskDetails](plannertaskdetails.md) has details of the requirements specified, if any. |
 |startDateTime|DateTimeOffset|Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |title|String|Title of the task.|
 
+### plannerTaskCompletionRequirements values
+
+| Member              | Description                                                    |
+|:--------------------|:---------------------------------------------------------------|
+| none                | No requirement.                                                |
+| checklistCompletion | Some or all of the checklist items are required to be checked. |
+| unknownFutureValue  | Evolvable enumeration sentinel value. Do not use.              |
+
 ## Relationships
-| Relationship | Type	|Description|
+
+| Relationship | Type |Description|
 |:---------------|:--------|:----------|
 |assignedToTaskBoardFormat|[plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by assignedTo.|
 |bucketTaskBoardFormat|[plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by bucket.|
@@ -62,6 +72,7 @@ Represents a Planner task in Microsoft 365. A Planner task is contained in a [pl
 |progressTaskBoardFormat|[plannerProgressTaskBoardTaskFormat](plannerprogresstaskboardtaskformat.md)| Read-only. Nullable. Used to render the task correctly in the task board view when grouped by progress.|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 
 <!-- {
@@ -92,11 +103,12 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "orderHint": "String",
   "percentComplete": "Int32",
-  "priority": "Int32",
   "planId": "String",
   "previewType": "String",
+  "priority": "Int32",
   "recurrence": {"@odata.type": "microsoft.graph.plannerTaskRecurrence"},
   "referenceCount": "Int32",
+  "specifiedCompletionRequirements": "String",
   "startDateTime": "String (timestamp)",
   "title": "String"
 }

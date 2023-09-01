@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|Not supported|
 
 > [!NOTE]
-> TeamworkAppSettings.* permissions might not be visible in the Azure portal. For details and workarounds, see [known issues](/graph/known-issues#teamworkappsettings-permissions-are-not-visible-in-the-azure-portal).
+> TeamworkAppSettings.* permissions might not be visible in the Azure portal. For details and workarounds, see [known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=14974).
 
 ## HTTP request
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/teamwork/teamsAppSettings
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-teamsappsettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-teamsappsettings-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-teamsappsettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -90,6 +94,10 @@ GET https://graph.microsoft.com/beta/teamwork/teamsAppSettings
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-teamsappsettings-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-teamsappsettings-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -112,7 +120,8 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.teamsAppSettings",
     "id": "65bdf003-0c4c-4bca-b102-0821ab0d1364",
     "allowUserRequestsForAppAccess": true,
-    "isChatResourceSpecificConsentEnabled": "true"
+    "isChatResourceSpecificConsentEnabled": "true",
+    "isUserPersonalScopeResourceSpecificConsentEnabled": "true"
   }
 }
 ```

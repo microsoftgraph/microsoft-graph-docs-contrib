@@ -3,7 +3,7 @@ title: "List overrides"
 description: "Get the Focused Inbox overrides that a user has set up to always classify messages from certain senders in specific ways."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: mail
 ---
 
@@ -60,6 +60,10 @@ GET https://graph.microsoft.com/beta/me/inferenceClassification/overrides
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-overrides-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-overrides-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-overrides-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -78,6 +82,10 @@ GET https://graph.microsoft.com/beta/me/inferenceClassification/overrides
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-overrides-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-overrides-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

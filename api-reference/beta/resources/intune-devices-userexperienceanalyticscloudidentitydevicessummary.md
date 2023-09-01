@@ -20,7 +20,7 @@ The user experience analytics work from anywhere cloud identity devices summary.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceWithoutCloudIdentityCount|Int32|The count of devices that are not cloud identity.|
+|deviceWithoutCloudIdentityCount|Int32|The count of devices that are not cloud identity. Read-only.|
 
 ## Relationships
 None

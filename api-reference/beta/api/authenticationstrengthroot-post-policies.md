@@ -1,7 +1,7 @@
 ---
 title: "Create authenticationStrengthPolicy"
 description: "Create a new custom authenticationStrengthPolicy object."
-author: "mmcla"
+author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -22,6 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Policy.ReadWrite.ConditionalAccess, Policy.ReadWrite.AuthenticationMethod|
+
+[!INCLUDE [rbac-authenticationstrength-apis-write](../includes/rbac-for-apis/rbac-authenticationstrength-apis-write.md)]
 
 ## HTTP request
 
@@ -85,6 +87,10 @@ Content-length: 239
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationstrengthpolicy-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-authenticationstrengthpolicy-from--cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-authenticationstrengthpolicy-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -103,6 +109,10 @@ Content-length: 239
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-authenticationstrengthpolicy-from--powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-authenticationstrengthpolicy-from--python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

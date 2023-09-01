@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.CloudCommunications
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 $params = @{
 	transferTarget = @{
@@ -30,6 +30,6 @@ $params = @{
 	region = "region-value"
 }
 
-Move-MgCommunicationCall -CallId $callId -BodyParameter $params
+Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "message: replyAll"
 description: "Reply to all recipients of a message using either JSON or MIME format."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -85,20 +85,24 @@ Content-Type: application/json
 
 {
     "message":{
-      "attachments": [ 
-        { 
-          "@odata.type": "#microsoft.graph.fileAttachment", 
-          "name": "guidelines.txt", 
-          "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk=" 
-        } 
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "name": "guidelines.txt",
+          "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+        }
       ]
     },
-    "comment": "Please take a look at the attached guidelines before you decide on the name." 
+    "comment": "Please take a look at the attached guidelines before you decide on the name."
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-replyall-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/message-replyall-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -119,6 +123,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/message-replyall-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/message-replyall-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

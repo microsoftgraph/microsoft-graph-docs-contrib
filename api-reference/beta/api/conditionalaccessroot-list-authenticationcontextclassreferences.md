@@ -2,7 +2,7 @@
 title: "List authenticationContextClassReferences"
 description: "Retrieve a list of authenticationContextClassReference objects."
 ms.localizationpriority: medium
-author: "bakerCaleb"
+author: "swetha-rai"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationCo
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-conditionalaccess-authenticationcontextclassreference-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-conditionalaccess-authenticationcontextclassreference-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-conditionalaccess-authenticationcontextclassreference-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -88,6 +92,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/authenticationCo
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-conditionalaccess-authenticationcontextclassreference-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-conditionalaccess-authenticationcontextclassreference-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-catalogentry-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-catalogentry-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-catalogentry-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -89,6 +93,10 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-catalogentry-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-catalogentry-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -120,11 +128,24 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
       "id": "d0c03fbb-43b9-4dff-840b-974ef227384d",
-      "displayName": "String",
-      "releaseDateTime": "String (timestamp)",
-      "deployableUntilDateTime": "String (timestamp)",
+      "displayName": "07/11/2023 - 2023.07 B SecurityUpdate for Windows 10 and later",
+      "catalogName": "2023-07 Cumulative Update for Windows 10 and later",
+      "shortName": "2023.07 B",
+      "releaseDateTime": "2023-07-11T00:00:00Z",
+      "deployableUntilDateTime": null,
       "isExpeditable": true,
-      "qualityUpdateClassification": "security"
+      "qualityUpdateClassification": "security",
+      "qualityUpdateCadence": "monthly",
+      "cveSeverityInformation": {
+        "maxSeverity": "critical",
+        "maxBaseScore": 9.8,
+        "exploitedCves": [
+          {
+            "number": "CVE-2023-32046",
+            "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-32046"
+          }
+        ]
+      }
     }
   ]
 }

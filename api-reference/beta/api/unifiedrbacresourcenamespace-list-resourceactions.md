@@ -34,7 +34,7 @@ GET /roleManagement/directory/resourceNamespaces/{unifiedRbacResourceNamespaceId
 ```
 
 ## Optional query parameters
-This method supports the `$filter`, `$select`, `$top`, and `$skipToken` OData query parameters to help customize the response. This method supports `$filter` (`eq`) for **actionVerb**, **description**, **id**, and **name** properties. This method returns a default page size of 100 **resourceActions** and supports `$top` and `$skipToken` for paging. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`, `$select`, `$top`, and `$skipToken` OData query parameters to help customize the response. This method supports `$filter` (`eq`) for **actionVerb**, **description**, **id**, **isPrivileged**, and **name** properties. This method returns a default page size of 100 **resourceActions** and supports `$top` and `$skipToken` for paging. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -50,11 +50,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get microsoft.directory actions
+### Example 1: List microsoft.directory actions
 
-The following example gets the actions for the resource namespace with the identifier of `microsoft.directory`.
+The following example lists the actions for the resource namespace with the identifier of `microsoft.directory`.
 
-This method returns a maximum of 100 actions. If there are more actions, you can use `@odata.nextLink` to get the next set of actions.
+This method returns a maximum of 100 actions. If there are more actions, you can use `@odata.nextLink` to get the next set of actions. To retrieve a larger set of actions, use the `$top` parameter.
 
 #### Request
 
@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedrbacresourceaction-directory-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-unifiedrbacresourceaction-directory-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -91,6 +95,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-unifiedrbacresourceaction-directory-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-unifiedrbacresourceaction-directory-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -115,6 +123,7 @@ Content-Type: application/json
             "actionVerb": null,
             "description": "Create and delete access reviews, and read and update all properties of access reviews in Azure AD",
             "id": "microsoft.directory-accessReviews-allProperties-allTasks",
+            "isPrivileged": false,
             "name": "microsoft.directory/accessReviews/allProperties/allTasks",
             "resourceScopeId": null
         },
@@ -122,6 +131,7 @@ Content-Type: application/json
             "actionVerb": "GET",
             "description": "Read all properties of access reviews",
             "id": "microsoft.directory-accessReviews-allProperties-read-get",
+            "isPrivileged": false,
             "name": "microsoft.directory/accessReviews/allProperties/read",
             "resourceScopeId": null
         },
@@ -129,6 +139,7 @@ Content-Type: application/json
             "actionVerb": null,
             "description": "Manage access reviews of application role assignments in Azure AD",
             "id": "microsoft.directory-accessReviews-definitions.applications-allProperties-allTasks",
+            "isPrivileged": false,
             "name": "microsoft.directory/accessReviews/definitions.applications/allProperties/allTasks",
             "resourceScopeId": null
         }
@@ -136,9 +147,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Get microsoft.insights actions
+### Example 2: List microsoft.insights actions
 
-The following example gets the actions for the resource namespace with the identifier of `microsoft.insights`.
+The following example lists the actions for the resource namespace with the identifier of `microsoft.insights`.
 
 #### Request
 
@@ -155,6 +166,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedrbacresourceaction-insights-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-unifiedrbacresourceaction-insights-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -177,6 +192,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-unifiedrbacresourceaction-insights-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-unifiedrbacresourceaction-insights-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -197,6 +216,7 @@ Content-Type: application/json
             "actionVerb": null,
             "description": "Manage all aspects of Insights app",
             "id": "microsoft.insights-allEntities-allProperties-allTasks",
+            "isPrivileged": false,
             "name": "microsoft.insights/allEntities/allProperties/allTasks",
             "resourceScopeId": null
         },
@@ -204,6 +224,7 @@ Content-Type: application/json
             "actionVerb": null,
             "description": "Read all aspects of Viva Insights",
             "id": "microsoft.insights-allEntities-allProperties-read",
+            "isPrivileged": false,
             "name": "microsoft.insights/allEntities/allProperties/read",
             "resourceScopeId": null
         },
@@ -211,6 +232,7 @@ Content-Type: application/json
             "actionVerb": "PATCH",
             "description": "Deploy and manage programs in Insights app",
             "id": "microsoft.insights-programs-allProperties-update-patch",
+            "isPrivileged": false,
             "name": "microsoft.insights/programs/allProperties/update",
             "resourceScopeId": null
         },
@@ -218,6 +240,7 @@ Content-Type: application/json
             "actionVerb": null,
             "description": "Run and manage queries in Viva Insights",
             "id": "microsoft.insights-queries-allProperties-allTasks",
+            "isPrivileged": false,
             "name": "microsoft.insights/queries/allProperties/allTasks",
             "resourceScopeId": null
         },
@@ -225,7 +248,67 @@ Content-Type: application/json
             "actionVerb": "GET",
             "description": "View reports and dashboard in Insights app",
             "id": "microsoft.insights-reports-allProperties-read-get",
+            "isPrivileged": false,
             "name": "microsoft.insights/reports/allProperties/read",
+            "resourceScopeId": null
+        }
+    ]
+}
+```
+
+### Example 3: List privileged actions
+
+The following example lists the actions that are privileged for the resource namespace with the identifier of `microsoft.directory`.
+
+This method returns a maximum of 100 actions. If there are more actions, you can use `@odata.nextLink` to get the next set of actions. To retrieve a larger set of actions, use the `$top` parameter.
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_unifiedrbacresourceaction_directory_isprivileged",
+  "sampleKeys": ["microsoft.directory"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/roleManagement/directory/resourceNamespaces/microsoft.directory/resourceActions?$filter=isPrivileged eq true
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.unifiedRbacResourceAction)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/resourceNamespaces('microsoft.directory')/resourceActions",
+    "value": [
+        {
+            "actionVerb": "PATCH",
+            "description": "Update application credentials",
+            "id": "microsoft.directory-applications-credentials-update-patch",
+            "isPrivileged": true,
+            "name": "microsoft.directory/applications/credentials/update",
+            "resourceScopeId": null
+        },
+        {
+            "actionVerb": null,
+            "description": "Manage all aspects of authorization policy",
+            "id": "microsoft.directory-authorizationPolicy-allProperties-allTasks",
+            "isPrivileged": true,
+            "name": "microsoft.directory/authorizationPolicy/allProperties/allTasks",
             "resourceScopeId": null
         }
     ]

@@ -27,16 +27,20 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## HTTP request
-Replace `{applicationObjectId}` with the **id** for the application object, also referred to as the **Object ID** in the Azure portal.
+
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal. Replace `{applicationObjectId}` with the **id** for the application object.
+
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /applications/{applicationObjectId}
+PATCH /applications(appId='{appId}')
 ```
 
 To update the logo, use the PUT method as follows.
 <!-- { "blockType": "ignored" } -->
 ```http
 PUT /applications/{applicationObjectId}/logo
+PUT /applications(appId='{appId}')/logo
 ```
 
 ## Request headers
@@ -96,6 +100,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-application-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-application-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-application-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -114,6 +122,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-application-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-application-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
