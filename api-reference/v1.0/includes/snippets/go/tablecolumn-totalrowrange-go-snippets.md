@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-totalRowRange(), err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Tables().ByWorkbookTableId("workbookTable-id").Columns().ByWorkbookTableColumnId("workbookTableColumn-id").TotalRowRange().Get(context.Background(), nil)
+totalRowRange, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Tables().ByWorkbookTableId("workbookTable-id").Columns().ByWorkbookTableColumnId("workbookTableColumn-id").TotalRowRange().Get(context.Background(), nil)
 
 
 ```
