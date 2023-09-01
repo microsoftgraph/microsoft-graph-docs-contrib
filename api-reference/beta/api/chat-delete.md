@@ -7,7 +7,7 @@ doc_type: apiPageType
 ms.localizationpriority: medium
 ---
 
-# chat: Delete
+# Delete chat
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
