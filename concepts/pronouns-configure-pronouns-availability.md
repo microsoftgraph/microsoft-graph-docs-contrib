@@ -96,7 +96,7 @@ Use the [get](/graph/api/peopleadminsettings-list-pronouns?view=graph-rest-1.0&p
 The following example gets the current display settings, which have pronouns disabled. 
 
 ``` http
-GET https://graph.microsoft.com/beta/admin/people/pronouns
+GET https://graph.microsoft.com/v1.0/admin/people/pronouns
 ```
 
 If successful, the response returns a `200 OK` response code and a [pronounsSettings](/graph/api/resources/pronounssettings?view=graph-rest-1.0&preserve-view=true) resource in the response body.
@@ -115,7 +115,7 @@ Content-Type: application/json
 Use the [update](/graph/api/pronounssettings-update?view=graph-rest-1.0&preserve-view=true) operation to enable pronouns in your organization.
 
 ``` http
-PATCH https://graph.microsoft.com/beta/admin/people/pronouns
+PATCH https://graph.microsoft.com/v1.0/admin/people/pronouns
 Content-Type: application/json
 
 {
