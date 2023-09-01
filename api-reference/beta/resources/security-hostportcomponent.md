@@ -25,7 +25,7 @@ Represents a web component that is running on a specific **hostPort**
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|component|[hostComponent](../resources/security-hostcomponent.md)|The **hostComponent** associated with this **hostPortComponent**.|
+|component|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md)|The **hostComponent** associated with this **hostPortComponent**.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
