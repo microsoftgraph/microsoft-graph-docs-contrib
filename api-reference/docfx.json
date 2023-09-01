@@ -165,7 +165,7 @@
       },
       {
         "files": [
-          "1.0.yml"
+          "context.yml"
         ],
         "src": "v1.0/",
         "dest": "api/",
