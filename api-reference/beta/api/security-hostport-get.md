@@ -117,7 +117,7 @@ Content-Type: application/json
         "lastSeenDateTime": "2023-08-09T12:59:13.00Z",
         "isRecent": true,
         "component": {
-          "id": "T3BlblNTSCQkOC4ycDEkJFJlbW90ZSBBY2Nlc3MkJDg1LjEzLjEzOS4xOA=="
+          "id": "T3BlblNTSCQkOC4ycDEkJFJlbW90ZSBBY2Nlc3MkJDg1LjEzLjEzOS4xOA==",
           "name": "OpenSSH",
           "version": "8.2p1",
           "category": "Remote Access"

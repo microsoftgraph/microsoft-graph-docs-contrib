@@ -124,7 +124,7 @@ Content-Type: application/json
           "lastSeenDateTime": "2023-07-18T22:13:54.00Z",
           "isRecent": true,
           "component": {
-            "id": "EVfwHhqkUQESmqrKSFHobDUHDAKBsWLf"
+            "id": "EVfwHhqkUQESmqrKSFHobDUHDAKBsWLf",
             "name": "scaffolding on HTTPServer2",
             "version": "",
             "category": "Server"
@@ -135,7 +135,7 @@ Content-Type: application/json
           "lastSeenDateTime": "2023-07-18T00:54:13.00Z",
           "isRecent": false,
           "component": {
-            "id": "ZobhjJgOwebxpsXdCUjfTpshygqgcfJj"
+            "id": "ZobhjJgOwebxpsXdCUjfTpshygqgcfJj",
             "name": "nginx",
             "version": "1.18.0",
             "category": "Server"
