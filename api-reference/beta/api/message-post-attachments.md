@@ -1,7 +1,7 @@
 ---
 title: "Add attachment"
 description: "Use this API to add an attachment to a message. "
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to add an [attachment](../resources/attachment.md) to a message. 
+Use this API to add an [attachment](../resources/attachment.md) to a message.
 
 An attachment can be one of the following types:
 
@@ -22,9 +22,9 @@ An attachment can be one of the following types:
 * A link to a file ([referenceAttachment](../resources/referenceattachment.md) resource).
 
 All these types of attachment resources are derived from the [attachment](../resources/attachment.md)
-resource. 
+resource.
 
-You can add an attachment to an existing [message](../resources/message.md) by posting to its attachments collection, or to a new 
+You can add an attachment to an existing [message](../resources/message.md) by posting to its attachments collection, or to a new
 message that is being [drafted](../api/user-post-messages.md), or [created and sent on the fly](../api/user-sendmail.md).
 
 >**Note**: This operation limits the size of the attachment you can add to under 3 MB.
@@ -128,7 +128,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [attachment](../resources/attachment.md) object.
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "name": "create_file_attachment_from_message_beta",
@@ -171,7 +171,7 @@ Content-type: application/json
 
 {
   "@odata.type": "#microsoft.graph.itemAttachment",
-  "name": "Holiday event", 
+  "name": "Holiday event",
   "item": {
     "@odata.type": "microsoft.graph.event",
     "subject": "Discuss gifts for children",
@@ -266,14 +266,14 @@ The attachment points to a folder on OneDrive.
 POST https://graph.microsoft.com/beta/me/messages/AAMkAGE1M88AADUv0uFAAA=/attachments
 Content-type: application/json
 
-{ 
-    "@odata.type": "#microsoft.graph.referenceAttachment", 
-    "name": "Personal pictures", 
-    "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics", 
-    "providerType": "oneDriveConsumer", 
-    "permission": "Edit", 
-    "isFolder": "True" 
-} 
+{
+    "@odata.type": "#microsoft.graph.referenceAttachment",
+    "name": "Personal pictures",
+    "sourceUrl": "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
+    "providerType": "oneDriveConsumer",
+    "permission": "Edit",
+    "isFolder": "True"
+}
 ```
 
 # [C#](#tab/csharp)

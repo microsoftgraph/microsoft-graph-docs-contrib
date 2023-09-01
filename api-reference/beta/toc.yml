@@ -1277,6 +1277,14 @@ items:
                     href: api/serviceprincipal-post-owners.md
                   - name: Remove owner
                     href: api/serviceprincipal-delete-owners.md
+              - name: Permission grant pre-approval policy
+                items:
+                  - name: List
+                    href: api/serviceprincipal-list-permissiongrantpreapprovalpolicies.md
+                  - name: Assign
+                    href: api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
+                  - name: Remove
+                    href: api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
               - name: Policies
                 items:
                   - name: Claims mapping policy
@@ -13989,6 +13997,19 @@ items:
                             href: api/permissiongrantpolicy-post-excludes.md
                           - name: Delete from excludes
                             href: api/permissiongrantpolicy-delete-excludes.md
+                  - name: Permission grant pre-approval policy
+                    href: resources/permissiongrantpreapprovalpolicy.md
+                    items:
+                    - name: Create
+                      href: api/policyroot-post-permissiongrantpreapprovalpolicies.md
+                    - name: List
+                      href: api/policyroot-list-permissiongrantpreapprovalpolicies.md
+                    - name: Get
+                      href: api/permissiongrantpreapprovalpolicy-get.md
+                    - name: Update
+                      href: api/permissiongrantpreapprovalpolicy-update.md
+                    - name: Delete
+                      href: api/permissiongrantpreapprovalpolicy-delete.md
                   - name: Token issuance policy
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -16291,7 +16312,7 @@ items:
                     href: resources/security-host.md
                   - name: Get
                     href: api/security-host-get.md
-                  - name: List children host pairs
+                  - name: List child host pairs
                     href: api/security-host-list-childhostpairs.md
                   - name: List host pairs
                     href: api/security-host-list-hostpairs.md
@@ -16333,7 +16354,7 @@ items:
                     href: api/security-host-list-hostpairs.md
                   - name: List parent host pairs
                     href: api/security-host-list-parenthostpairs.md
-                  - name: List children host pairs
+                  - name: List child host pairs
                     href: api/security-host-list-childhostpairs.md
               - name: Host tracker
                 items:

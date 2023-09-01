@@ -195,6 +195,7 @@ Content-type: application/json
             "displayName": "Helpdesk Administrator",
             "isBuiltIn": true,
             "isEnabled": true,
+            "isPrivileged": true,
             "templateId": "729827e3-9c14-49f7-bb1b-9608f156bbb8",
             "version": "1",
             "rolePermissions": [
@@ -224,6 +225,7 @@ Content-type: application/json
             "displayName": "Service Support Administrator",
             "isBuiltIn": true,
             "isEnabled": true,
+            "isPrivileged": false,
             "templateId": "f023fd81-a637-4b56-95fd-791ac0226033",
             "version": "1",
             "rolePermissions": [
@@ -250,6 +252,7 @@ Content-type: application/json
             "displayName": "Billing Administrator",
             "isBuiltIn": true,
             "isEnabled": true,
+            "isPrivileged": false,
             "templateId": "b0f54661-2d74-4c50-afa3-1ec803f12efe",
             "version": "1",
             "rolePermissions": [
@@ -629,6 +632,99 @@ Content-type: application/json
                     ],
                     "excludedResourceActions": [],
                     "condition": null
+                }
+            ]
+        }
+    ]
+}
+```
+
+### Example 5: List privileged role definitions
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_roledefinitions_isprivileged"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions?$filter=isPrivileged eq true
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions",
+    "value": [
+        {
+            "id": "aaf43236-0c0d-4d5f-883a-6955382ac081",
+            "description": "Can manage secrets for federation and encryption in the Identity Experience Framework (IEF).",
+            "displayName": "B2C IEF Keyset Administrator",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "isPrivileged": true,
+            "resourceScopes": [
+                "/"
+            ],
+            "templateId": "aaf43236-0c0d-4d5f-883a-6955382ac081",
+            "version": "1",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.directory/b2cTrustFrameworkKeySet/allProperties/allTasks"
+                    ],
+                    "condition": null
+                }
+            ],
+            "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('aaf43236-0c0d-4d5f-883a-6955382ac081')/inheritsPermissionsFrom",
+            "inheritsPermissionsFrom": [
+                {
+                    "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+                }
+            ]
+        },
+        {
+            "id": "be2f45a1-457d-42af-a067-6ec1fa63bc45",
+            "description": "Can configure identity providers for use in direct federation.",
+            "displayName": "External Identity Provider Administrator",
+            "isBuiltIn": true,
+            "isEnabled": true,
+            "isPrivileged": true,
+            "resourceScopes": [
+                "/"
+            ],
+            "templateId": "be2f45a1-457d-42af-a067-6ec1fa63bc45",
+            "version": "1",
+            "rolePermissions": [
+                {
+                    "allowedResourceActions": [
+                        "microsoft.directory/domains/federation/update",
+                        "microsoft.directory/identityProviders/allProperties/allTasks"
+                    ],
+                    "condition": null
+                }
+            ],
+            "inheritsPermissionsFrom@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/directory/roleDefinitions('be2f45a1-457d-42af-a067-6ec1fa63bc45')/inheritsPermissionsFrom",
+            "inheritsPermissionsFrom": [
+                {
+                    "id": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
                 }
             ]
         }
