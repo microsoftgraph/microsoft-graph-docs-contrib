@@ -33,6 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /education/users/delta
 ```
+All [properties](/graph/api/resources/educationuserdelta#properties) are supported for the query parameters `$filter` and `$orderby`.
 
 ## Request headers
 

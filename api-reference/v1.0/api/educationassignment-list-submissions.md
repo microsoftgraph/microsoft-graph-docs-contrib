@@ -37,6 +37,8 @@ This method supports the `$filter`,'$top', and `$select` OData query parameters 
 
 The following are the available `$expand` options for this method: `outcomes`, `resources`, `submittedResources`, and `*`, which includes all the previous options.
 
+All [properties](/graph/api/resources/educationassignmentsubmissions#properties) are supported for the query parameters `$filter` and `$orderby`.
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
