@@ -84,6 +84,14 @@ The following table lists scenarios for using PIM for groups to manage rules and
 
 For more information about using Microsoft Graph to configure rules, see [Overview of rules in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview). For examples of updating rules, see [Use PIM APIs in Microsoft Graph to update rules](/graph/how-to-pim-update-rules).
 
+## Group onboarding in PIM for Groups
+
+When you make an API call to add assignment to group using [Create assignmentScheduleRequest](../api/privilegedaccessgroup-post-assignmentschedulerequests.md) or [Create eligibilityScheduleRequest](../api/privilegedaccessgroup-post-eligibilityschedulerequests.md) or update PIM Policy (role settings) for a group using [Update unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-update.md) or [Update unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-update.md), group is onboarded to PIM automatically if it was not onboarded before. There is no need or possibility to onboard group through the API explicitly.
+
+It is possible to call |[List assignmentScheduleRequests](../api/privilegedaccessgroup-list-assignmentschedulerequests.md), [List assignmentSchedules](../api/privilegedaccessgroup-list-assignmentschedules.md), [List assignmentScheduleInstances](../api/privilegedaccessgroup-list-assignmentscheduleinstances.md), [List eligibilityScheduleRequests](../api/privilegedaccessgroup-list-eligibilityschedulerequests.md), [List eligibilitySchedules](../api/privilegedaccessgroup-list-eligibilityschedules.md), [List eligibilityScheduleInstances](../api/privilegedaccessgroup-list-eligibilityscheduleinstances.md) for both groups that are onboarded to PIM and groups that are not onboarded to PIM yet, but we recommend to do it only for groups that are onboarded to PIM to reduce the chance of being affected by throttling limits.
+
+Once group is onboarded to PIM, it is not possible to offboard it, but you can remove all eligible and time-bound assignments if necessary.
+
 ## PIM for groups and the group object
 
 Membership and ownership of any security and Microsoft 365 group (except dynamic groups and groups synchronized from on-premises) can be governed through PIM for groups. The group doesn't have to be role-assignable to be enabled in PIM for groups.
@@ -141,7 +149,7 @@ Calls to approval and approvalStep endpoints can be made only by approver of the
 
 - [What is Azure AD Identity Governance?](/azure/active-directory/governance/identity-governance-overview)
 - [What is Azure AD Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
-- [Privileged Identity Management (PIM) for groups (preview)](/azure/active-directory/privileged-identity-management/concept-pim-for-groups)
+- [Privileged Identity Management (PIM) for groups](/azure/active-directory/privileged-identity-management/concept-pim-for-groups)
   
   <!-- {
   "type": "#page.annotation",
