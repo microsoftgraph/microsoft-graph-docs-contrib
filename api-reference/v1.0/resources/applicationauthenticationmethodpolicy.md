@@ -27,8 +27,7 @@ A tenant default policy is a single object that always exists and is disabled by
 - **applicationRestrictions** allows targeting applications owned by the tenant (application objects).
 - **servicePrincipalRestrictions** allows targeting provisioned from another tenant (service principal objects.
 
-These properties allow the organization to either lock down apps that originate within a tenant or raise the quality bar for apps that are provisioned from outside the tenant boundary.
-
+These properties enable an organization to lock down credential usage in apps that originate from their tenant and provide a mechanism to control credential addition in externally provisioned applications to protect them from credential abuse. The application owner of a multi-tenant app could still use any type of credentials in their application object, but the policy only protects the service principal from credential abuse. 
 ## App management policy for applications and service principals
 
 App management policies are defined in the [appManagementPolicy](appmanagementpolicy.md) resource, which contains a collection of policies with varying restrictions or different enforcement dates from what's defined in tenant default policy. One of these policies can be assigned to an application or service principal, excluding them from the tenant default policy.
