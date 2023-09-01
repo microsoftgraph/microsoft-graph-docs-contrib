@@ -4,7 +4,7 @@ description: "Delete an attachment from a calendar event, message, Outlook task,
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "outlook"
-author: "abheek-das"
+author: "SuryaLashmiS"
 ---
 
 # Delete attachment

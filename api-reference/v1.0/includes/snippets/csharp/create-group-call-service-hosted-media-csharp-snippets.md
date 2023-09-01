@@ -73,7 +73,6 @@ var requestBody = new Call
 			},
 		},
 	},
-    TenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a",
 };
 var result = await graphClient.Communications.Calls.PostAsync(requestBody);
 

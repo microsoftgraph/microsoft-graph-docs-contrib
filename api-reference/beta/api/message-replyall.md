@@ -1,7 +1,7 @@
 ---
 title: "message: replyAll"
 description: "Reply to all recipients of a message using either JSON or MIME format."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -85,15 +85,15 @@ Content-Type: application/json
 
 {
     "message":{
-      "attachments": [ 
-        { 
-          "@odata.type": "#microsoft.graph.fileAttachment", 
-          "name": "guidelines.txt", 
-          "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk=" 
-        } 
+      "attachments": [
+        {
+          "@odata.type": "#microsoft.graph.fileAttachment",
+          "name": "guidelines.txt",
+          "contentBytes": "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+        }
       ]
     },
-    "comment": "Please take a look at the attached guidelines before you decide on the name." 
+    "comment": "Please take a look at the attached guidelines before you decide on the name."
 }
 ```
 
