@@ -52,6 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
+### Example 1: Get assignment categories
 ### Request
 
 The following is an example of the request.
@@ -133,7 +134,128 @@ Content-type: application/json
     ]
 }
 ```
+### Example 2: Using `$filter` to get assignment categories
 
+#### Request
+
+The following is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["2003c52e-807a-4186-9b49-60c573095461"],
+  "name": "get_class_categories_filter"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignmentCategories?$filter=id eq 'd4cb4f68-9136-48d3-9054-c1208ea274f0'
+```
+
+#### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationCategory",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignmentCategories",
+    "value": [
+        {
+            "displayName": "2022-11-09T20_16_24_105Z",
+            "id": "d4cb4f68-9136-48d3-9054-c1208ea274f0"
+        }
+    ]
+}
+```
+
+### Example 3: Using `$orderby` to get assignment categories
+
+#### Request
+
+The following is an example of the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["2003c52e-807a-4186-9b49-60c573095461"],
+  "name": "get_class_categories_orderby"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignmentCategories?$orderby=displayName
+```
+
+#### Response
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.educationCategory",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignmentCategories",
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignmentCategories?$orderby=displayName&$skiptoken=MyZRVkZCUVVGQlFVRk5aelJCUVVGQlFVRkJRWGxCUVVGQlIyZE1VMjFyVFVrMk1HbFNablZPTXpkdVRpOVlkejA5",
+    "value": [
+        {
+            "displayName": "2019-04-05T21_30_03_125Z",
+            "id": "0c3c2de5-d317-42b9-a4a7-dede7a87f6df"
+        },
+        {
+            "displayName": "2019-04-05T21_30_21'941Z",
+            "id": "ec2a0bfe-f7c5-4a33-a5ea-58db087cb1c7"
+        },
+        {
+            "displayName": "2019-04-17T18_46_15_996Z",
+            "id": "5d4458a4-0784-491b-b4eb-643daf3408d0"
+        },
+        {
+            "displayName": "2019-04-22T22_01_29_919Z",
+            "id": "012c321e-70af-4b56-8949-1d228cbbdf35"
+        },
+        {
+            "displayName": "2019-04-23T02_04_51_925Z",
+            "id": "72fc6ce0-af91-4eaf-b675-b979aa7540c2"
+        },
+        {
+            "displayName": "2019-04-24T18_24_54_540Z",
+            "id": "3c8b14c1-a118-44fb-a308-8175f3dec179"
+        },
+        {
+            "displayName": "2019-04-24T18_25_05_792Z",
+            "id": "328b7715-86d4-4580-aae7-3dc80f570b49"
+        },
+        {
+            "displayName": "2019-05-16T23_19_05_865Z",
+            "id": "c71c2e76-4af4-4794-a6eb-fe86d30d9209"
+        },
+        {
+            "displayName": "2019-05-16T23_19_06_340Z",
+            "id": "29d62f01-1d70-447f-8c03-2ef19d3911f6"
+        },
+        {
+            "displayName": "2019-05-16T23_19_06'504Z",
+            "id": "63219333-859a-45f0-9003-bc1512b8c6a5"
+        }
+    ]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
