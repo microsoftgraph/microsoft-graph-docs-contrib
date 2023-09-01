@@ -1,5 +1,5 @@
 ---
-title: "chat: Delete"
+title: "Delete chat"
 description: "Delete a chat object."
 author: "sthapliyal"
 ms.prod: "microsoft-teams"
