@@ -1,6 +1,6 @@
 ---
 title: "peopleAdminSettings resource type"
-description: "Represents a setting to control people-related admin settings in the tenant"
+description: "Represents a setting to control people-related admin settings in the tenant."
 author: "rwaithera"
 ms.localizationpriority: medium
 ms.prod: "people"
@@ -19,7 +19,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List pronounsSettings](../api/peopleadminsettings-list-pronouns.md)|[pronounsSettings](../resources/pronounssettings.md) collection|Get the [pronounsSettings](../resources/pronounssettings.md) resources from the pronouns navigation property.|
+|[List pronounsSettings](../api/peopleadminsettings-list-pronouns.md)|[pronounsSettings](../resources/pronounssettings.md) collection|Get the properties of the [pronounsSettings](../resources/pronounssettings.md) resource for an organization.|
 
 ## Properties
 
