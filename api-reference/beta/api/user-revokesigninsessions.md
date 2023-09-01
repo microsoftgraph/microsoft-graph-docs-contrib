@@ -50,10 +50,7 @@ This operation has no request content.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code.
-
->[!NOTE]
->This API has a [known issue](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-http-code). It returns a different HTTP response code.
+If successful, this method returns a 2xx series response code.
 
 ## Example
 The following example shows how to call this API.
@@ -73,6 +70,10 @@ POST https://graph.microsoft.com/beta/me/revokeSignInSessions
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-revokesigninsessionss-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/user-revokesigninsessionss-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-revokesigninsessionss-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -87,6 +88,10 @@ POST https://graph.microsoft.com/beta/me/revokeSignInSessions
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/user-revokesigninsessionss-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-revokesigninsessionss-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

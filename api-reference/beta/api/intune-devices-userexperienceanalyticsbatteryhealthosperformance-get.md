@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 394
+Content-Length: 630
 
 {
   "value": {
@@ -74,7 +74,13 @@ Content-Length: 394
     "osBuildNumber": "Os Build Number value",
     "averageMaxCapacityPercentage": 12,
     "averageEstimatedRuntimeInMinutes": 0,
-    "averageBatteryAgeInDays": 7
+    "averageBatteryAgeInDays": 7,
+    "meanFullBatteryDrainCount": 9,
+    "medianMaxCapacityPercentage": 11,
+    "medianEstimatedRuntimeInMinutes": 15,
+    "medianFullBatteryDrainCount": 11,
+    "osBatteryHealthScore": 4,
+    "osHealthStatus": "insufficientData"
   }
 }
 ```

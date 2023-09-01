@@ -19,6 +19,8 @@ Represents details of the managed identity that was used to sign into the target
 |Property|Type|Description|
 |:---|:---|:---|
 |associatedResourceId|String|The ARM resource ID of the Azure resource associated with the managed identity used for sign in.|
+|federatedTokenId|String|The unique ID of the federated token.|
+|federatedTokenIssuer|String|The issuer of the federated token.|
 |msiType|msiType|The possible values are: `none`, `userAssigned`, `systemAssigned`, `unknownFutureValue`.|
 
 ## Relationships
@@ -35,6 +37,9 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.managedIdentity",
   "msiType": "String",
-  "associatedResourceId": "String"
+  "associatedResourceId": "String",
+  "federatedTokenId": "String",
+  "federatedTokenIssuer": "String"
 }
 ```
+

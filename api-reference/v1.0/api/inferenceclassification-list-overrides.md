@@ -2,7 +2,7 @@
 title: "List overrides"
 description: "Get the overrides that a user has set up to always classify messages from certain senders in specific ways."
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: mail
 doc_type: apiPageType
 ---
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-overrides-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-overrides-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

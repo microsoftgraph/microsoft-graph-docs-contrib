@@ -1,7 +1,7 @@
 ---
 title: "bitlockerRecoveryKey resource type"
 description: "BitLocker recovery key resource"
-author: "hafowler"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
