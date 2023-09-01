@@ -101,7 +101,7 @@ You can use several CSS tokens to style a component if you want to override the 
 ```
 
 You can also use global tokens for customization that applies to all elements in the DOM. 
-MGT defines the following custom CSS global tokens.
+The toolkit defines the following custom CSS global tokens.
 
 ```html
 <mgt-file-list></mgt-file-list>
