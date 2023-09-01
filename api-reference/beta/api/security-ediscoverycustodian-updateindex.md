@@ -80,7 +80,10 @@ The following is an example of the response.
   "truncated": true
 }
 -->
-
+-->
+``` http
+HTTP/1.1 202 Accepted
+```
 
 ### Example 2: Index single custodian.
 #### Request
@@ -134,6 +137,6 @@ The following is an example of the response.
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 202 Accepted
 ```
 
