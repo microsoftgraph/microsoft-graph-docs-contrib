@@ -19,10 +19,10 @@ Represents the connection endpoints which direct data to and from the services r
 
 ## Methods
 
-| Method                                               | Return type                                                                       | Description                                                     |
-| :--------------------------------------------------- | :-------------------------------------------------------------------------------- | :-------------------------------------------------------------- |
-| [Get hostPort](../api/security-hostport-get.md)      | [microsoft.graph.security.hostPort](../resources/security-hostport.md)            | Read the properties and relationships of a **hostPort** object. |
-| [List hostPorts](../api/security-host-list-ports.md) | [microsoft.graph.security.hostPort](../resources/security-hostport.md) collection | Get a list of **hostPort** objects assoicated with a host.      |
+| Method                                                          | Return type                                                                       | Description                                                     |
+| :-------------------------------------------------------------- | :-------------------------------------------------------------------------------- | :-------------------------------------------------------------- |
+| [Get hostPort](../api/security-hostport-get.md)                 | [microsoft.graph.security.hostPort](../resources/security-hostport.md)            | Read the properties and relationships of a **hostPort** object. |
+| [List hostPorts for a host](../api/security-host-list-ports.md) | [microsoft.graph.security.hostPort](../resources/security-hostport.md) collection | Get a list of **hostPort** objects assoicated with a host.      |
 
 ## Properties
 

@@ -36,6 +36,14 @@
         },
         {
           "Id": "438613f9-1f47-4345-8cbf-ffdf75973e5b",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-host-list-ports?view=graph-rest-beta) operation to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
+          "Target": "host"
+        },
+        {
+          "Id": "438613f9-1f47-4345-8cbf-ffdf75973e5b",
           "ApiChange": "Resource",
           "ChangedApiName": "ports",
           "ChangeType": "Addition",
@@ -49,6 +57,14 @@
           "ChangeType": "Addition",
           "Description": "Added the [hostPort](https://learn.microsoft.com/en-us/graph/api/resources/security-hostPort?view=graph-rest-beta) resource",
           "Target": "hostPort"
+        },
+        {
+          "Id": "438613f9-1f47-4345-8cbf-ffdf75973e5b",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/security-hostport-get?view=graph-rest-beta) operation to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligence"
         },
         {
           "Id": "438613f9-1f47-4345-8cbf-ffdf75973e5b",
