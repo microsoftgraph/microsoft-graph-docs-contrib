@@ -5,6 +5,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```bash
 
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
-mgc users get --user-id {user-id} --select displayName,givenName,postalCode,identities
+mgc users get --user-id {user-id} --select "displayName,givenName,postalCode,identities"
 
 ```

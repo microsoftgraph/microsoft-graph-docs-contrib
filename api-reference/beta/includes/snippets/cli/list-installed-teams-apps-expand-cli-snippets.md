@@ -5,6 +5,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```bash
 
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
-mgc-beta teams installed-apps list --team-id {team-id} --expand "teamsAppDefinition(`$expand=bot)"
+mgc-beta teams installed-apps list --team-id {team-id} --expand "teamsAppDefinition(\$expand=bot)"
 
 ```
