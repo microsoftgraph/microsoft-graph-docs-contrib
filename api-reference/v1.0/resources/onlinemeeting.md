@@ -23,6 +23,10 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | [Delete onlineMeeting](../api/onlinemeeting-delete.md)             | None                              | Delete an **onlineMeeting** object.                                                                                    |
 | [Create or get onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an **onlineMeeting** object with a custom, external ID. If the meeting already exists, retrieve its properties. |
 
+> [!NOTE]
+> 
+> A bearer token is required for the Authorisation header for all these methods. For details about how to get the `token` for the `Authorization`, see [Get access on behalf of a user](/graph/auth-v2-user?tabs=http#3-request-an-access-token).
+
 ## Properties
 
 | Property              | Type                                          | Description                                                                                                                |
