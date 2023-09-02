@@ -1785,7 +1785,7 @@
         "ApiChange": "Member",
         "ChangedApiName": "labels",
         "ChangeType": "Addition",
-        "Description": "Added the 'iconUrl' enum member to **label ** enumeration in [Property Resource Type](https://learn.microsoft.com/en-us/graph/api/resources/externalconnectors-property?view=graph-rest-1.0#properties).",
+        "Description": "Added the `iconUrl` member to the **label** enumeration.",
         "Target": "contentExperienceType"
       }
     ],
