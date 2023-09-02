@@ -3,8 +3,6 @@
     {
       "ChangeList": [
         {
-      "ChangeList": [
-        {
           "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
           "ApiChange": "Relationship",
           "ChangedApiName": "sslCertificates",
