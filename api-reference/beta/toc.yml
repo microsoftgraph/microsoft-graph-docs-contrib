@@ -16332,6 +16332,8 @@ items:
                     href: api/security-host-list-subdomains.md
                   - name: List trackers
                     href: api/security-host-list-trackers.md
+                  - name: Get WHOIS for a host
+                    href: api/security-host-get-whois.md
               - name: Host component
                 items:
                   - name: Host component
@@ -16398,6 +16400,24 @@ items:
                     href: resources/security-vulnerabilitycomponent.md
                   - name: Get
                     href: api/security-vulnerabilitycomponent-get.md
+              - name: WHOIS record
+                items:
+                  - name: WHOIS record
+                    href: resources/security-whoisrecord.md
+                  - name: List
+                    href: api/security-whoisrecord-list.md
+                  - name: Get
+                    href: api/security-whoisrecord-get.md
+                  - name: Get WHOIS for a host
+                    href: api/security-host-get-whois.md
+              - name: WHOIS history record
+                items:
+                  - name: WHOIS history record
+                    href: resources/security-whoishistoryrecord.md
+                  - name: List
+                    href: api/security-whoisrecord-list-history.md
+                  - name: Get
+                    href: api/security-whoishistoryrecord-get.md
           - name: Threat intelligence indicator (preview)
             items:
               - name: Threat intelligence indicator
