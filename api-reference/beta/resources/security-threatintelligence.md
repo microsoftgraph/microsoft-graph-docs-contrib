@@ -46,6 +46,8 @@ The threat intelligence API allows you to operationalize intelligence found with
 |[List sslCertificates](../api/security-sslcertificate-list.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) collection |Get a list of [sslCertificate](../resources/security-sslcertificate.md) objects and their properties.|
 |[Get hostSslCertificate](../api/security-hostsslcertificate-get.md)|[microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) |Get the properties and relationships of a [hostSslCertificate](../resources/security-hostsslcertificate.md) object.|
 |[List hostSslCertificates](../api/security-hostsslcertificate-list-host.md)|[microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) collection |Get a list of [hostSslCertificate](../resources/security-hostsslcertificate.md) objects from the [host](../resources/security-host.md) navigation property.|
+| [List whoisRecords](../api/security-whoisrecord-list.md)                     |[microsoft.graph.security.whoisRecord](../resources/security-vulnerability.md) |Get a list of [whoisRecord](../resources/security-whoisrecord.md) objects.|
+| [Get whoisHistoryRecord](../api/security-whoishistoryrecord-get.md)          |[microsoft.graph.security.whoisHistoryRecord](../resources/security-whoishistoryrecord.md) |Read the properties and relationships of a [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) object.|
 
 ## Properties
 
@@ -56,7 +58,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |articleIndicators|[microsoft.graph.security.articleIndicator](../resources/security-articleindicator.md) collection|Refers to indicators of threat or compromise highlighted in an [article](../resources/security-article.md).<br/>**Note**: List retrieval is not yet supported.|
-|articles|[microsoft.graph.security.article](../resources/security-article.md) collection|A list of **article** objects.|
+|articles|[microsoft.graph.security.article](../resources/security-article.md) collection|A list of **article** objects.|<<<<<<< add-ssl-certs
 |hostComponents|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection|Retrieve details about [hostComponent](../resources/security-hostcomponent.md) objects.<br/>**Note**: List retrieval is not yet supported.|
 |hostCookies|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection|Retrieve details about [hostCookie](../resources/security-hostcookie.md) objects.<br/>**Note**: List retrieval is not yet supported.|
 |hostPairs|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Retrieve details about [hostTracker](../resources/security-hostpair.md) objects.<br/>**Note**: List retrieval is not yet supported.|
@@ -69,6 +71,8 @@ None.
 |sslCertificates| [microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) collection |Retrieve details about [sslCertificate](../resources/security-sslcertificate.md) objects.<br/>**Note**: List retrieval is not yet supported.|         
 |subdomains|[microsoft.graph.security.subdomain](../resources/security-subdomain.md) collection|Retrieve details about the [subdomain](../resources/security-subdomain.md).<br/>**Note**: List retrieval is not yet supported.|
 |vulnerabilities|[microsoft.graph.security.vulnerability](../resources/security-vulnerability.md) collection|Retrieve details about [vulnerabilities](../resources/security-vulnerability.md).<br/>**Note**: List retrieval is not yet supported.                                                                       |
+|whoisHistoryRecords|[microsoft.graph.security.whoisHistoryRecord](../resources/security-whoishistoryrecord.md) collection|Retrieve details about [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects.<br/>**Note:** List retrieval is not yet supported.|
+|whoisRecords|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) collection|A list of [whoisRecord](../resources/security-whoisrecord.md) objects.|
 
 ## JSON representation
 
