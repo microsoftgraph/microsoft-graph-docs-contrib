@@ -110,18 +110,8 @@ content-length: 26
 
 ---
 
-The following example shows how to use Power Automate to make this request.
-
-```http
-PATCH https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/members/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=
-content-type: application/json
-content-length: 26
-
-{
-  "@@odata.type":"#microsoft.graph.aadUserConversationMember",
-  "roles": ["owner"]
-}
-```
+> [!NOTE]
+> If you're using Power Automate to make this call, replace `@odata.type` with `@@odata.type`.
 
 ### Response
 
