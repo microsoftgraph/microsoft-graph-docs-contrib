@@ -222,11 +222,11 @@ The search API has the following limitations:
 - Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with Microsoft Search API operations.
 
 ## Schema change deprecation warning
+Effective August 31, 2023, the beta version of the [externalItem](./externalconnectors-externalitem.md) resource in the Microsoft Graph namespace will be deprecated. Going forward, use the version of the resource in the **Microsoft.Graph.ExternalConnectors** namespace. Make sure that you update any namespace dependencies before the specified date. Alternatively, consider transitioning to the v1.0 version of the API.
 
 **In the beta version**, properties used in a search request and response have been renamed or removed. In most cases, the original properties are being deprecated and replaced by the current properties, as listed in the following table.
 
-Start updating any existing apps to use current property and type names, and to get current property names in the response.
-For backward compatibility, the original properties and types are accessible and functional until **September 30, 2023**, after which they will be removed.
+We recommend that you update existing apps to use the current property and type names, and to get current property names in the response. For backward compatibility, the original properties and types are accessible and functional until **September 30, 2023**, after which they will be removed.
 
 | Resource                           | Change type   | Original property | Current property|
 |:-----------------------------------|:--------------|:------------------|:----------------|

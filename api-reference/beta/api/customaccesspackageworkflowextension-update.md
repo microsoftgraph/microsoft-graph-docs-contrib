@@ -1,7 +1,7 @@
 ---
 title: "Update customAccessPackageWorkflowExtension"
 description: "Update the properties of a customAccessPackageWorkflowExtension object."
-author: "currenmehta-zz"
+author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType

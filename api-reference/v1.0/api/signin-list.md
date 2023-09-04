@@ -2,7 +2,7 @@
 title: "List signIns"
 description: "Describes the list method of the signIn resource (entity) from the Microsoft Graph API."
 ms.localizationpriority: medium
-author: "besiler"
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
@@ -45,12 +45,12 @@ In addition to the delegated permissions, the signed-in user needs to belong to 
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET auditLogs/signIns
+GET /auditLogs/signIns
 ```
 
 ## Optional query parameters
 
-This method supports the `$top`, `$skiptoken`, and `$filter` OData Query Parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
+This method supports the `$top`, `$skiptoken`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Response
 
@@ -213,7 +213,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDi
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/list-signins-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

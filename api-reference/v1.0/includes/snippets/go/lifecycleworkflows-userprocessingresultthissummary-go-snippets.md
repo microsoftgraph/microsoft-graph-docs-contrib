@@ -15,7 +15,9 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().ByWorkflowId("workflow-id").UserProcessingResults().MicrosoftGraphIdentityGovernanceSummary(startDateTime={startDateTime},endDateTime={endDateTime})().Get(context.Background(), nil)
+startDateTime , err := time.Parse(time.RFC3339, "{startDateTime}")
+endDateTime , err := time.Parse(time.RFC3339, "{endDateTime}")
+microsoftGraphIdentityGovernanceSummary, err := graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().ByWorkflowId("workflow-id").UserProcessingResults().MicrosoftGraphIdentityGovernanceSummaryWithStartDateTimeWithEndDateTime(&startDateTime, &endDateTime).Get(context.Background(), nil)
 
 
 ```

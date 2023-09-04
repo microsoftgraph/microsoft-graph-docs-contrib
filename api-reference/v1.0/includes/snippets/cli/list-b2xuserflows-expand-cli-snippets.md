@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc identity b2x-user-flows list --expand identityProviders
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc identity b2x-user-flows list --expand "identityProviders"
 
 ```

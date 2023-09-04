@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-PATCH /sites/{sitesId}/pages/{sitePageId}
+PATCH /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage
 ```
 
 ## Request headers
@@ -44,6 +44,8 @@ PATCH /sites/{sitesId}/pages/{sitePageId}
 | Content-Type  | application/json. Required. |
 
 ## Request body
+
+> **Notes:** : To ensure successful parsing of the request body, the `@odata.type=#microsoft.graph.sitePage` must be included in the request body.
 
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
@@ -79,7 +81,7 @@ The following is an example of a request.
 -->
 
 ```http
-PATCH https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}
+PATCH https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage
 Content-Type: application/json
 
 {
@@ -90,32 +92,8 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-sitepage-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-sitepage-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-sitepage-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/update-sitepage-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-sitepage-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-sitepage-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-sitepage-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
