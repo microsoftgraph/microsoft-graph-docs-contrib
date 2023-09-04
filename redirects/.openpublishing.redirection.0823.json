@@ -1,0 +1,14 @@
+{
+  "redirections": [
+    {
+      "source_path_from_root": "/api-reference/beta/api/virtualeventregistrant-get.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/virtualeventregistration-get?view=graph-rest-beta",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/api-reference/beta/resources/virtualeventregistrant.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/graph/api/resources/virtualeventregistration?view=graph-rest-beta",
+      "redirect_document_id": false
+    }
+  ]
+}
