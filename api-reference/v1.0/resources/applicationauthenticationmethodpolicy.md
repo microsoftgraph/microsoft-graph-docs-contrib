@@ -54,11 +54,6 @@ The application authentication methods policy API offers the following restricti
 > [!Note]
 > All lifetime restrictions are expressed in ISO-8601 duration format (For example: P4DT12H30M5S).
 > Restricting customPasswordAddition restriction will block any legacy PowerShell modules that provide a client generated password secret for applications. This restriction still allows the application developer to request Azure AD-generated application password secrets.
-
-### Requirements
-
-- Management of application authentication method policies can be performed by a global administrator, application administrator, or cloud application administrator.
-- All app policy management operations require a [Workload identity premium license](https://learn.microsoft.com/en-us/azure/active-directory/workload-identities/workload-identities-faqs#what-is-the-cost-of-workload-identities-premium-plan).
   
 ### Single vs multi-tenant apps
 
@@ -77,6 +72,11 @@ Depending on whether your app is a single tenant or multitenant app, you apply t
 | Allows only single restriction object definition for all resources.                | Allows multiple policy objects to be defined, but only one can be applied to a resource.                                                            |
 | Allows distinction of restrictions for application objects vs. service principals. | Policy can be applied to either an application or service principal object.                                                                         |
 | Applies all restrictions configured to all apps or service principals.             | Applies only the restrictions configured in the resource policy to the specified app or service principal, and doesn't inherit from default policy. |
+
+## Requirements
+
+- Management of application authentication method policies can be performed by a global administrator, application administrator, or cloud application administrator.
+- All app policy management operations require a [Workload identity premium license](https://learn.microsoft.com/en-us/azure/active-directory/workload-identities/workload-identities-faqs#what-is-the-cost-of-workload-identities-premium-plan).
 
 ## Next steps
 
