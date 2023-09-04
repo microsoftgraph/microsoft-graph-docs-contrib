@@ -3,6 +3,136 @@
         {
             "ChangeList": [
                 {
+                    "Id": "ee924616-a2d1-41ae-9cf6-f0569fadb163",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "qualityUpdateCadence",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **qualityUpdateCadence** enumeration type.",
+                    "Target": "qualityUpdateCadence"
+                },
+                {
+                    "Id": "ee924616-a2d1-41ae-9cf6-f0569fadb163",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cveSeverityLevel",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cveSeverityLevel** enumeration type.",
+                    "Target": "cveSeverityLevel"
+                },
+                {
+                    "Id": "ee924616-a2d1-41ae-9cf6-f0569fadb163",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "ineligible",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `ineligible` member to the **monitoringSignal** enumeration.",
+                    "Target": "monitoringSignal"
+                },
+                {
+                    "Id": "ee924616-a2d1-41ae-9cf6-f0569fadb163",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "offerFallback",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `offerFallback` member to the **monitoringAction** enumeration.",
+                    "Target": "monitoringAction"
+                },
+                {
+                    "Id": "ee924616-a2d1-41ae-9cf6-f0569fadb163",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "buildNumber",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **buildNumber** property to the [featureUpdateCatalogEntry](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-featureUpdateCatalogEntry?view=graph-rest-beta) resource.",
+                    "Target": "featureUpdateCatalogEntry"
+                },
+                {
+                    "Id": "ee924616-a2d1-41ae-9cf6-f0569fadb163",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "catalogName",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **catalogName** property to the [qualityUpdateCatalogEntry](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-qualityUpdateCatalogEntry?view=graph-rest-beta) resource.",
+                    "Target": "qualityUpdateCatalogEntry"
+                },
+                {
+                    "Id": "ee924616-a2d1-41ae-9cf6-f0569fadb163",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "cveSeverityInformation",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **cveSeverityInformation** property to the [qualityUpdateCatalogEntry](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-qualityUpdateCatalogEntry?view=graph-rest-beta) resource.",
+                    "Target": "qualityUpdateCatalogEntry"
+                },
+                {
+                    "Id": "ee924616-a2d1-41ae-9cf6-f0569fadb163",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "qualityUpdateCadence",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **qualityUpdateCadence** property to the [qualityUpdateCatalogEntry](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-qualityUpdateCatalogEntry?view=graph-rest-beta) resource.",
+                    "Target": "qualityUpdateCatalogEntry"
+                },
+                {
+                    "Id": "ee924616-a2d1-41ae-9cf6-f0569fadb163",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "shortName",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **shortName** property to the [qualityUpdateCatalogEntry](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-qualityUpdateCatalogEntry?view=graph-rest-beta) resource.",
+                    "Target": "qualityUpdateCatalogEntry"
+                },
+                {
+                    "Id": "ee924616-a2d1-41ae-9cf6-f0569fadb163",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "productRevisions",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **productRevisions** relationship to the [qualityUpdateCatalogEntry](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-qualityUpdateCatalogEntry?view=graph-rest-beta) resource.",
+                    "Target": "qualityUpdateCatalogEntry"
+                },
+                {
+                    "Id": "ee924616-a2d1-41ae-9cf6-f0569fadb163",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "buildVersionDetails",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [buildVersionDetails](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-buildVersionDetails?view=graph-rest-beta) resource type.",
+                    "Target": "buildVersionDetails"
+                },
+                {
+                    "Id": "ee924616-a2d1-41ae-9cf6-f0569fadb163",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cveInformation",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cveInformation](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-cveInformation?view=graph-rest-beta) resource type.",
+                    "Target": "cveInformation"
+                },
+                {
+                    "Id": "ee924616-a2d1-41ae-9cf6-f0569fadb163",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "knowledgeBaseArticle",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [knowledgeBaseArticle](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-knowledgeBaseArticle?view=graph-rest-beta) resource type.",
+                    "Target": "knowledgeBaseArticle"
+                },
+                {
+                    "Id": "ee924616-a2d1-41ae-9cf6-f0569fadb163",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "productRevision",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [productRevision](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-productRevision?view=graph-rest-beta) resource type.",
+                    "Target": "productRevision"
+                },
+                {
+                    "Id": "ee924616-a2d1-41ae-9cf6-f0569fadb163",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "qualityUpdateCveSeverityInformation",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [qualityUpdateCveSeverityInformation](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-qualityUpdateCveSeverityInformation?view=graph-rest-beta) resource type.",
+                    "Target": "qualityUpdateCveSeverityInformation"
+                }
+            ],
+            "Id": "ee924616-a2d1-41ae-9cf6-f0569fadb163",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2023-08-31T01:25:48.971Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Device updates"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "0614e133-168d-11ec-bd5a-a13d1ed8c60f",
                     "ApiChange": "Property",
                     "ChangedApiName": "safeguard",
@@ -161,7 +291,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "softwareUpdateReference",
                     "ChangeType": "Addition",
-                    "Description": "Added the [softwareUpdateReference](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-softwareUpdateReference?view=graph-rest-beta) resource type.",
+                    "Description": "Added the **softwareUpdateReference** resource type.",
                     "Target": "softwareUpdateReference"
                 },
                 {
@@ -169,7 +299,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "windowsUpdateReference",
                     "ChangeType": "Addition",
-                    "Description": "Added the [windowsUpdateReference](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsUpdateReference?view=graph-rest-beta) resource type.",
+                    "Description": "Added the **windowsUpdateReference** resource type.",
                     "Target": "windowsUpdateReference"
                 },
                 {
@@ -177,7 +307,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "qualityUpdateReference",
                     "ChangeType": "Addition",
-                    "Description": "Added the [qualityUpdateReference](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-qualityUpdateReference?view=graph-rest-beta) resource type.",
+                    "Description": "Added the **qualityUpdateReference** resource type.",
                     "Target": "qualityUpdateReference"
                 },
                 {
@@ -185,7 +315,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "expeditedQualityUpdateReference",
                     "ChangeType": "Addition",
-                    "Description": "Added the [expeditedQualityUpdateReference](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-expeditedQualityUpdateReference?view=graph-rest-beta) resource type.",
+                    "Description": "Added the **expeditedQualityUpdateReference** resource type.",
                     "Target": "expeditedQualityUpdateReference"
                 },
                 {
@@ -193,7 +323,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "featureUpdateReference",
                     "ChangeType": "Addition",
-                    "Description": "Added the [featureUpdateReference](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-featureUpdateReference?view=graph-rest-beta) resource type.",
+                    "Description": "Added the **featureUpdateReference** resource type.",
                     "Target": "featureUpdateReference"
                 },
                 {
@@ -201,7 +331,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "rolloutSettings",
                     "ChangeType": "Addition",
-                    "Description": "Added the [rolloutSettings](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-rolloutSettings?view=graph-rest-beta) resource type.",
+                    "Description": "Added the **rolloutSettings** resource type.",
                     "Target": "rolloutSettings"
                 },
                 {
@@ -225,7 +355,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "windowsDeploymentSettings",
                     "ChangeType": "Addition",
-                    "Description": "Added the [windowsDeploymentSettings](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-windowsDeploymentSettings?view=graph-rest-beta) resource type.",
+                    "Description": "Added the **windowsDeploymentSettings** resource type.",
                     "Target": "windowsDeploymentSettings"
                 },
                 {
@@ -467,7 +597,7 @@
                     "ApiChange": "Relationship",
                     "ChangedApiName": "resourceConnections",
                     "ChangeType": "Addition",
-                    "Description": "Added the **resourceConnections** relationship to the [updates](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-updates?view=graph-rest-beta) resource.",
+                    "Description": "Added the **resourceConnections** relationship to the [updates](https://learn.microsoft.com/en-us/graph/api/resources/windowsupdates-resourceconnection?view=graph-rest-beta) resource.",
                     "Target": "updates"
                 }
             ],
@@ -757,7 +887,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "GET",
                     "ChangeType": "Change",
-                    "Description": "Removed the `$filter` query parameter from the default request URL for the [List azureADDevice resources](https://learn.microsoft.com/en-us/graph/api/windowsupdates-updates-list-updatableassets-azureaddevice?view=graph-rest-beta) method.",
+                    "Description": "Removed the `$filter` query parameter from the default request URL for the [List azureADDevice resources](https://learn.microsoft.com/en-us/graph/api/adminwindowsupdates-list-updatableassets?view=graph-rest-beta) method.",
                     "Target": "azureADDevice"
                 },
                 {
@@ -765,7 +895,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "GET",
                     "ChangeType": "Change",
-                    "Description": "Removed the `$filter` query parameter from the default request URL for the [List updatableAssetGroup resources](https://learn.microsoft.com/en-us/graph/api/windowsupdates-updates-list-updatableassets-updatableassetgroup?view=graph-rest-beta) method.",
+                    "Description": "Removed the `$filter` query parameter from the default request URL for the [List updatableAssetGroup resources](https://learn.microsoft.com/en-us/graph/api/adminwindowsupdates-list-updatableassets-updatableassetgroup?view=graph-rest-beta) method.",
                     "Target": "updatableAssetGroup"
                 },
                 {

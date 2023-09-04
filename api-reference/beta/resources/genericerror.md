@@ -4,7 +4,7 @@ description: "A general-purpose error."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: non-product-specific
-author: "abheek-das"
+author: "SuryaLashmiS"
 ---
 
 # genericError resource type

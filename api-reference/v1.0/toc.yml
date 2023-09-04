@@ -962,10 +962,10 @@ items:
                       - name: Get available extension properties
                         href: api/directoryobject-getavailableextensionproperties.md
               - name: Federated identity credentials
-                displayName: Workload identity federation, workload identities
                 items:
                   - name: Overview
                     href: resources/federatedidentitycredentials-overview.md
+                    displayName: Workload identity federation, workload identities
                   - name: Federated identity credentials
                     href: resources/federatedidentitycredential.md
                     items:
@@ -5095,6 +5095,8 @@ items:
                 href: api/driveitem-update.md
               - name: Delete item
                 href: api/driveitem-delete.md
+              - name: Permanently delete item
+                href: api/driveitem-permanentdelete.md
               - name: Restore item
                 href: api/driveitem-restore.md
               - name: Move item
@@ -5162,7 +5164,6 @@ items:
               - name: Delete permission
                 href: api/permission-delete.md
       - name: Identity and access
-        displayName: Azure AD, Microsoft identity platform, Identity and access
         items:
           - name: Overview
             displayName: Azure AD, Microsoft identity platform, Identity and access
@@ -5700,7 +5701,6 @@ items:
                       - name: List resource roles
                         href: api/accesspackagecatalog-list-resourceroles.md
                   - name: Access package custom workflow extension
-                    displayName: Custom authentication extensions
                     items:
                     - name: Assignment request workflow extension
                       href: resources/accesspackageassignmentrequestworkflowextension.md
@@ -5715,19 +5715,19 @@ items:
                         href: api/accesspackageassignmentrequestworkflowextension-update.md
                       - name: Delete
                         href: api/accesspackageassignmentrequestworkflowextension-delete.md
-                  - name: Assignment workflow extension
-                    href: resources/accesspackageassignmentworkflowextension.md
-                    items:
-                    - name: List
-                      href: api/accesspackagecatalog-list-accesspackagecustomworkflowextensions.md
-                    - name: Create
-                      href: api/accesspackagecatalog-post-accesspackagecustomworkflowextensions.md
-                    - name: Get
-                      href: api/accesspackageassignmentworkflowextension-get.md
-                    - name: Update
-                      href: api/accesspackageassignmentworkflowextension-update.md
-                    - name: Delete
-                      href: api/accesspackageassignmentworkflowextension-delete.md
+                    - name: Assignment workflow extension
+                      href: resources/accesspackageassignmentworkflowextension.md
+                      items:
+                      - name: List
+                        href: api/accesspackagecatalog-list-accesspackagecustomworkflowextensions.md
+                      - name: Create
+                        href: api/accesspackagecatalog-post-accesspackagecustomworkflowextensions.md
+                      - name: Get
+                        href: api/accesspackageassignmentworkflowextension-get.md
+                      - name: Update
+                        href: api/accesspackageassignmentworkflowextension-update.md
+                      - name: Delete
+                        href: api/accesspackageassignmentworkflowextension-delete.md
                   - name: Connected organization
                     href: resources/connectedorganization.md
                     items:
@@ -5785,11 +5785,30 @@ items:
                     items:
                       - name: List
                         href: api/entitlementmanagement-list-resourceenvironments.md
+                  - name: Access package resource
+                    href: resources/accesspackageresource.md
+                    items:
+                      - name: List
+                        href: api/accesspackagecatalog-list-resources.md
+                  - name: Access package resource role
+                    href: resources/accesspackageresourcerole.md
+                    items:
+                      - name: List
+                        href: api/accesspackagecatalog-list-resourceroles.md
+                  - name: Access package resource role scope
+                    href: resources/accesspackageresourcerolescope.md
+                    items:
+                      - name: List
+                        href: api/accesspackage-list-resourcerolescopes.md
+                      - name: Create
+                        href: api/accesspackage-post-resourcerolescopes.md
+                      - name: Delete
+                        href: api/accesspackage-delete-resourcerolescopes.md
               - name: Lifecycle workflows
-                displayName: LCW, Identity Governance, Joiner, Mover, Leaver
                 items:
                   - name: Overview
                     href: resources/identitygovernance-lifecycleworkflows-overview.md
+                    displayName: LCW, Identity Governance, Joiner, Mover, Leaver
                   - name: Workflow
                     items:
                       - name: Workflow
@@ -5841,7 +5860,6 @@ items:
                           - name: Update task
                             href: api/identitygovernance-task-update.md
                       - name: Reports
-                        displayName: Lifecycle Workflows
                         items:
                           - name: Overview
                             displayName: Lifecycle Workflows reporting
@@ -5925,10 +5943,10 @@ items:
                       - name: Update
                         href: api/identitygovernance-lifecyclemanagementsettings-update.md
               - name: Privileged Identity Management
-                displayName: Privileged Identity Management, PIM, Identity Governance
                 items:
                   - name: PIM for Azure AD Roles
                     href: resources/privilegedidentitymanagementv3-overview.md
+                    displayName: Privileged Identity Management, PIM, Identity Governance
                     items:
                       - name: Assignment schedule requests
                         href: resources/unifiedroleassignmentschedulerequest.md
@@ -8440,6 +8458,10 @@ items:
                 items:
                   - name: List for group
                     href: api/group-list-permissiongrants.md
+                  - name: List for team
+                    href: api/team-list-permissiongrants.md
+                  - name: List for chat
+                    href: api/chat-list-permissiongrants.md
               - name: Tab
                 href: resources/teamstab.md
                 items:
@@ -8761,6 +8783,10 @@ items:
                     href: api/chatmessage-softdelete.md
                   - name: Undo message deletion
                     href: api/chatmessage-undosoftdelete.md
+                  - name: Set message reaction
+                    href: api/chatmessage-setreaction.md
+                  - name: Unset message reaction
+                    href: api/chatmessage-unsetreaction.md
               - name: Chat
                 href: resources/chat.md
                 items:
@@ -8804,6 +8830,12 @@ items:
                     href: api/chat-post-pinnedmessages.md
                   - name: Unpin message
                     href: api/chat-delete-pinnedmessages.md
+                  - name: Set message reaction
+                    href: api/chatmessage-setreaction.md
+                  - name: Unset message reaction
+                    href: api/chatmessage-unsetreaction.md
+                  - name: List permission grants
+                    href: api/chat-list-permissiongrants.md
               - name: Chat message
                 href: resources/chatmessage.md
                 items:
@@ -8841,6 +8873,10 @@ items:
                     href: api/chat-post-pinnedmessages.md
                   - name: Unpin message
                     href: api/chat-delete-pinnedmessages.md
+                  - name: Set message reaction
+                    href: api/chatmessage-setreaction.md
+                  - name: Unset message reaction
+                    href: api/chatmessage-unsetreaction.md
               - name: Pinned chat message
                 href: resources/pinnedchatmessageinfo.md
                 items:
@@ -8897,6 +8933,8 @@ items:
                     href: /graph/teams-list-all-teams?context=graph/api/1.0
                   - name: Complete migration for team
                     href: api/team-completemigration.md
+                  - name: List permission grants
+                    href: api/team-list-permissiongrants.md
                   - name: Deleted team
                     href: resources/deletedteam.md
                     items:
