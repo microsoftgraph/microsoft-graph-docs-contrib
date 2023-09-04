@@ -53,7 +53,7 @@ The following table shows the parameters that can be used with this action.
 
 If successful, this action returns a `200 OK` response code and a collection of derivatives of [actionResultPart](../resources/actionresultpart.md) in the response body.
 
-This API returns a `200` response that indicates all members supplied were added to the team or a `207` response that indicates only some of the supplied members were added to the team. The caller should inspect the response payload to determine which member additions failed. The response body is a collection of derivatives of the [actionResultPart](../resources/actionresultpart.md) resource. The API returns an error code response when the request fails because of validation errors. This API returns an error code response on request failure. For details about Microsoft Graph errors, see [Microsoft Graph errors and resource types](errors.md).
+This API returns a `200` response that indicates all members supplied were added to the team or a `207` response that indicates only some of the supplied members were added to the team. The caller should inspect the response payload to determine which member additions failed. The response body is a collection of derivatives of the [actionResultPart](../resources/actionresultpart.md) resource. This API returns an error code response on request failure. For details about Microsoft Graph errors, see [Microsoft Graph errors and resource types](../../../concepts/errors.md).
 
 ## Examples
 
