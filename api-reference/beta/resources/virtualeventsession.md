@@ -21,7 +21,7 @@ Inherits from [onlineMeeting](../resources/onlinemeeting.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/virtualeventsession-get.md)|[virtualEventSession](../resources/virtualeventsession.md)|Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object.|
+|[Get virtualEventSession](../api/virtualeventsession-get.md)|[virtualEventSession](../resources/virtualeventsession.md)|Read the properties and relationships of a [virtualEventSession](../resources/virtualeventsession.md) object.|
 
 ## Properties
 
