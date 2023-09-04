@@ -53,12 +53,13 @@ The application authentication methods policy API offers the following restricti
 
 > [!Note]
 > All lifetime restrictions are expressed in ISO-8601 duration format (For example: P4DT12H30M5S).
-> Restricting customPasswordAddition restriction will block any legacy PowerShell modules that provide a client generated password secret for applications. This restriction still allows the application developer to request Azure AD generated application password secrets.
+> Restricting customPasswordAddition restriction will block any legacy PowerShell modules that provide a client generated password secret for applications. This restriction still allows the application developer to request Azure AD-generated application password secrets.
 
 ### Requirements
 
-- Management of Application authentication method policies can be performed by a Global administrator, Application administrator, or Cloud application administrator.
+- Management of application authentication method policies can be performed by a global administrator, application administrator, or cloud application administrator.
 - All app policy management operations require a [Workload identity premium license](https://learn.microsoft.com/en-us/azure/active-directory/workload-identities/workload-identities-faqs#what-is-the-cost-of-workload-identities-premium-plan).
+  
 ### Single vs multi-tenant apps
 
 Depending on whether your app is a single tenant or multitenant app, you apply the policy on either an application or the service principal object as follows:
