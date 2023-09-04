@@ -8,9 +8,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.Me.CalendarView.Delta.GetAsync((requestConfiguration) =>
+var deltaRequestBuilder = new Microsoft.Graph.Me.CalendarView.Delta.DeltaRequestBuilder("https://graph.microsoft.com/v1.0/me/calendarView/delta?$skiptoken=R0usmcCM996atia_s", graphClient.RequestAdapter);
+var result = await deltaRequestBuilder.GetAsync((requestConfiguration) =>
 {
-	requestConfiguration.QueryParameters.Skiptoken = "R0usmcCM996atia_s";
 	requestConfiguration.Headers.Add("Prefer", "odata.maxpagesize=2");
 });
 

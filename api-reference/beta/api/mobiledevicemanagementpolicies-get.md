@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/beta/policies/mobileDeviceManagementPolicies/ab9
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mobilitymanagementpolicy-forid-device-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-mobilitymanagementpolicy-forid-device-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-mobilitymanagementpolicy-forid-device-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

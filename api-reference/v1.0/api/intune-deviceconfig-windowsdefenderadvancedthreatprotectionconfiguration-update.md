@@ -106,6 +106,10 @@ Content-length: 267
 [!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update-update-windowsdefenderadvancedthreatprotectionconfiguration-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update-update-windowsdefenderadvancedthreatprotectionconfiguration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-windowsdefenderadvancedthreatprotectionconfiguration-update-update-windowsdefenderadvancedthreatprotectionconfiguration-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

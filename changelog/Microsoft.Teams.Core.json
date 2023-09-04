@@ -6649,6 +6649,32 @@
       "CreatedDateTime": "2022-08-14T17:17:00.1619923Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "73fea27f-569c-472e-b36b-1c1284e1b977",
+          "ApiChange": "Method",
+          "ChangedApiName": "setReaction",
+          "ChangeType": "Addition",
+          "Description": "Added the [setReaction](https://learn.microsoft.com/en-us/graph/api/chatmessage-setreaction?view=graph-rest-v1.0) method to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        },
+        {
+          "Id": "73fea27f-569c-472e-b36b-1c1284e1b977",
+          "ApiChange": "Method",
+          "ChangedApiName": "unsetReaction",
+          "ChangeType": "Addition",
+          "Description": "Added the [unsetReaction](https://learn.microsoft.com/en-us/graph/api/chatmessage-unsetreaction?view=graph-rest-v1.0) method to the [chatMessage](https://learn.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "73fea27f-569c-472e-b36b-1c1284e1b977",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-08-25T08:14:02.5231411Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
     }
   ]
 }
