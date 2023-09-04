@@ -98,7 +98,7 @@ The following APIs support the `model=B` parameter.
 
 ### Evaluation mode (default) requirements
 
-The following APIs support evaluation mode. The evaluation quota is enforced per app, per tenant, per month. The quota is reset at the beginning of each calendar month, and any unused amount doesnt get carried over to the next month. 
+The following APIs support evaluation mode. The evaluation quota is enforced per app, per tenant, per month. The quota is reset at the beginning of each calendar month, and any unused amount does not get carried over to the next month. 
 
 | APIs or or [change notification](/graph/api/subscription-post-subscriptions) `resources` | Evaluation Quota | [Price for additional use](#payment-and-billing) | Notes |
 |:-----------------------------|:----------------|:-------|:------|
