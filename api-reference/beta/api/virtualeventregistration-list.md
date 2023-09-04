@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of all [regisration records](../resources/virtualEventRegistration.md) of a [webinar](../resources/virtualEventWebinar.md).
+Get a list of all [regisration records](../resources/virtualeventregistration.md) of a [webinar](../resources/virtualeventwebinar.md).
 
 ## Permissions
 
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 > [!NOTE]
 >
-> To use application permissions for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and assign it to a user.The authorized application will access registration records from virtual events created by that specific user.
+> To use application permissions for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and assign it to a user. This allows the authorized application to access registration records from virtual events created by that specific user.
 
 ## HTTP request
 
@@ -41,7 +41,7 @@ GET /solutions/virtualEvents/webinars/{webinarId}/registrations
 
 ## Optional query parameters
 
-This method does not support the OData query parameters. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -55,7 +55,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [virtualEventRegistration](../resources/virtualEventRegistration.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [virtualEventRegistration](../resources/virtualeventregistration.md) objects in the response body.
 
 ## Examples
 
@@ -65,7 +65,8 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_virtualEventRegistrations"
+  "name": "list_virtualEventRegistrations",
+  "sampleKeys": ["f4b39f1c-520e-4e75-805a-4b0f2016a0c6@a1a56d21-a8a6-4a6b-97f8-ced53d30f143"]
 }
 -->
 ``` http
@@ -74,12 +75,13 @@ GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/f4b39f1c-5
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
+
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "collection(microsoft.graph.virtualEventRegistration)"
+  "@odata.type": "Collection(microsoft.graph.virtualEventRegistration)"
 }
 -->
 ``` http
