@@ -58,7 +58,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |articleIndicators|[microsoft.graph.security.articleIndicator](../resources/security-articleindicator.md) collection|Refers to indicators of threat or compromise highlighted in an [article](../resources/security-article.md).<br/>**Note**: List retrieval is not yet supported.|
-|articles|[microsoft.graph.security.article](../resources/security-article.md) collection|A list of **article** objects.|<<<<<<< add-ssl-certs
+|articles|[microsoft.graph.security.article](../resources/security-article.md) collection|A list of **article** objects.|
 |hostComponents|[microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection|Retrieve details about [hostComponent](../resources/security-hostcomponent.md) objects.<br/>**Note**: List retrieval is not yet supported.|
 |hostCookies|[microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection|Retrieve details about [hostCookie](../resources/security-hostcookie.md) objects.<br/>**Note**: List retrieval is not yet supported.|
 |hostPairs|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Retrieve details about [hostTracker](../resources/security-hostpair.md) objects.<br/>**Note**: List retrieval is not yet supported.|
