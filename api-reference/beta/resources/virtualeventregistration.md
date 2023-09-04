@@ -21,7 +21,8 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get virtualEventRegistration](../api/virtualeventregistration-get.md)|[virtualEventRegistration](../resources/virtualeventregistration.md)|Read the properties and relationships of a [virtualEventRegistration](../resources/virtualeventregistration.md) object.|
+|[List virtualEventRegistrations](../api/virtualeventregistration-list.md)|[virtualEventRegistration](../resources/virtualeventregistration.md) collection|Get a list of all [regisration records](../resources/virtualeventregistration.md) of a [webinar](../resources/virtualeventwebinar.md).|
+|[Get virtualEventRegistration](../api/virtualeventregistration-get.md)|[virtualEventRegistration](../resources/virtualeventregistration.md)|Get the properties and relationships of a [virtualEventRegistration](../resources/virtualeventregistration.md) object.|
 
 ## Properties
 
