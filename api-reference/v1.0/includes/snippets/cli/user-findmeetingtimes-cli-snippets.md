@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc users find-meeting-times post --user-id {user-id} --body '{\
   "attendees": [ \
     { \
@@ -42,7 +43,7 @@ mgc users find-meeting-times post --user-id {user-id} --body '{\
   "isOrganizerOptional": "false",\
   "meetingDuration": "PT1H",\
   "returnSuggestionReasons": "true",\
-  "minimumAttendeePercentage": "100"\
+  "minimumAttendeePercentage": 100\
 }\
 '
 

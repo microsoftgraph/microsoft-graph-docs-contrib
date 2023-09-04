@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-serviceprincipalsigninactivities-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-serviceprincipalsigninactivities-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-serviceprincipalsigninactivities-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -88,6 +92,10 @@ GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-serviceprincipalsigninactivities-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-serviceprincipalsigninactivities-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -185,6 +193,10 @@ GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities?$f
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-serviceprincipalsigninactivities-filter-appid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-serviceprincipalsigninactivities-filter-appid-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-serviceprincipalsigninactivities-filter-appid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -199,6 +211,10 @@ GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities?$f
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-serviceprincipalsigninactivities-filter-appid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-serviceprincipalsigninactivities-filter-appid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

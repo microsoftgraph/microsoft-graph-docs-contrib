@@ -19,7 +19,7 @@ requestBody := graphmodels.NewTiIndicator()
 description := "description-updated"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Security().TiIndicators().ByTiIndicatorId("tiIndicator-id").Patch(context.Background(), requestBody, nil)
+tiIndicators, err := graphClient.Security().TiIndicators().ByTiIndicatorId("tiIndicator-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 description: "Get a list of driveItem objects shared with the owner of a drive."
 title: "drive: sharedWithMe"
 ms.localizationpriority: medium

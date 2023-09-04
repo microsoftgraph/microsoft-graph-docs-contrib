@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Users().ByUserId("user-id").Authentication().WindowsHelloForBusinessMethods().Get(context.Background(), nil)
+windowsHelloForBusinessMethods, err := graphClient.Users().ByUserId("user-id").Authentication().WindowsHelloForBusinessMethods().Get(context.Background(), nil)
 
 
 ```

@@ -374,22 +374,18 @@ Content-Type: application/json
       "id": "876df28f-2e78-423b-94a5-44181bd0e225",
       "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
       "displayName": "Test App",
-      "distributionMethod": "organization",
+      "distributionMethod": "Organization",
       "appDefinitions": [
         {
           "id": "NGQyMGNiNDUtZWViYS00ZTEyLWE3YzktMGQ0NDgzYjYxNzU2IyMxLjAuMA==",
           "teamsAppId": "876df28f-2e78-423b-94a5-44181bd0e225",
-          "azureADAppId": null,
           "displayName": "Test App",
           "version": "1.0.1",
           "publishingState": "published",
-          "authorization": 
-          {
-            "requiredPermissionSet": 
-            {
-              "resourceSpecificPermissions": []
-            }
-          }
+          "shortDescription": "Types Of Cards.",
+          "description": "This sample shows the feature where user can send different types of cards using bot.",
+          "lastModifiedDateTime": "2020-11-23T21:36:00.9437445Z",
+          "createdBy": null 
         }
       ]
     }
@@ -478,9 +474,8 @@ Content-Type: application/json
                     "@odata.etag": "ImNOTW1CR2V1VzgwczlEblVidU00UHc9PSI=",
                     "id": "OGExZWQ3YTMtNWM3OC00NmIyLTg1MDQtZjlkYTAwYTFkMWE2IyMxLjAuOSMjUmVqZWN0ZWQ=",
                     "teamsAppId": "8a1ed7a3-5c78-46b2-8504-f9da00a1d1a6",
-                    "azureADAppId": null,
                     "displayName": "Ducks-3",
-                    "version": "1.0.9",
+                    "version": "1.0.9",                  
                     "publishingState": "rejected",
                     "shortDescription": "quaerat quasi magnam. slight change. 5",
                     "description": "Aliquid placeat animi debitis accusamus. Non perferendis ullam. Quis est consequuntur vitae provident. Sunt laudantium id aut. slight change 5",
@@ -517,8 +512,7 @@ Content-Type: application/json
                 {
                     "@odata.etag": "IkwzVDlMOTBSSEdTMFducHUyYkpjVmc9PSI=",
                     "id": "MzA5MDlkZWUtZjdkZC00Zjg5LThiM2ItNTVkZTJlMzI0ODljIyM2LjAuMCMjU3VibWl0dGVk",
-                    "teamsAppId": "30909dee-f7dd-4f89-8b3b-55de2e32489c",
-                    "azureADAppId": "d75abc57-8255-4309-9c29-a3c689e20341",
+                    "teamsAppId": "30909dee-f7dd-4f89-8b3b-55de2e32489c",                
                     "displayName": "Self-Install-App-E2E-Tests",
                     "version": "6.0.0",
                     "publishingState": "submitted",
@@ -560,14 +554,49 @@ The following example lists the apps with a given ID and returns the resource-sp
 
 The following is an example of a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp_with_rsc_permissions"
 }-->
 
-```http
+```msgraph-interactive
 GET  https://graph.microsoft.com/v1.0/appCatalogs/teamsApps?$filter=id+eq+'a5228c26-a9ae-4702-90e0-79a5246d2f7d'&$expand=appDefinitions($select=id,authorization)
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-with-rsc-permissions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-teamsapp-with-rsc-permissions-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-teamsapp-with-rsc-permissions-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-with-rsc-permissions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-with-rsc-permissions-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-teamsapp-with-rsc-permissions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-teamsapp-with-rsc-permissions-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-teamsapp-with-rsc-permissions-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -626,4 +655,6 @@ Content-Type: application/json
 
 - [List apps installed in a team](team-list-installedapps.md) <!-- - [List apps installed in a chat](chat-list-installedapps.md) -->
 - [List apps installed in the personal scope of a user](userteamwork-list-installedapps.md)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 - [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+

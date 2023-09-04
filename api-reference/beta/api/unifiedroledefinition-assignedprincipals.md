@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleDefinition: assignedPrincipals"
 description: "Get the list of security principals (users, groups, and service principals) directly or transitively assigned to a specific role for different scopes."
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -71,7 +71,7 @@ This method supports the `$count`, `$select`, `$filter`, and `$orderBy` OData qu
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|ConsistencyLevel|eventual. Required. For more information about the use of **ConsistencyLevel**, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).|
+|ConsistencyLevel|eventual. Required. For more information about the use of **ConsistencyLevel**, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).|
 
 ## Request body
 Do not supply a request body for this method.

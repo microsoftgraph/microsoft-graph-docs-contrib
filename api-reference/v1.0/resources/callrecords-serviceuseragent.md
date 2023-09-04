@@ -2,7 +2,7 @@
 title: "serviceUserAgent resource type"
 description: "The serviceUserAgent type"
 ms.localizationpriority: medium
-author: "williamlooney"
+author: "mcm223"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---
