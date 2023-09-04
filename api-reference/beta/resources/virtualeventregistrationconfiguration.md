@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the registration configuration of a virtual event.
+Represents the registration configuration of a [virtualEvent](../resources/virtualevent.md).
 
 Inherits from [entity](../resources/entity.md).
 
