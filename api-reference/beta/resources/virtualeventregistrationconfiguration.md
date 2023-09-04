@@ -1,6 +1,6 @@
 ---
 title: "virtualEventRegistrationConfiguration resource type"
-description: "Information about a virtual event registration configuration."
+description: "Represents the registration configuration of a virtual event."
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -15,12 +15,15 @@ Namespace: microsoft.graph
 
 Represents the registration configuration of a virtual event.
 
+Inherits from [entity](../resources/entity.md).
+
 ## Properties
 
-|Property|Type|Description|
-|:---|:---|:---|
-|capacity|Int32|Total capacity of the virtual event.|
-|registrationWebUrl|String|Registration URL of the virtual event.|
+| Property           | Type   | Description                                                                                                                  |
+|:-------------------|:-------|:-----------------------------------------------------------------------------------------------------------------------------|
+| capacity           | Int32  | Total capacity of the virtual event.                                                                                         |
+| id                 | String | Unique identifier for the **virtualEventRegistrationConfiguration** object. Inherited from [entity](../resources/entity.md). |
+| registrationWebUrl | String | Registration URL of the virtual event.                                                                                       |
 
 ## Relationships
 
@@ -31,6 +34,7 @@ Represents the registration configuration of a virtual event.
 ## JSON representation
 
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -42,7 +46,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventRegistration",
-  "capacity": "Integer",  
+  "capacity": "Int32",  
   "id": "String (identifier)",
   "registrationWebUrl": "String"
 }
