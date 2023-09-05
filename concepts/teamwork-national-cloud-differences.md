@@ -75,4 +75,3 @@ Membership | Guests are not supported in this cloud. So, the membership api's li
 |[Get transcript](/graph/api/calltranscript-get) | Not supported. |
 |[Get delta by organizer](/graph/api/calltranscript-delta) | Not supported. |
 |[List transcripts by organizer](/graph/api/onlinemeeting-getalltranscripts) | Not supported. |
-| 
