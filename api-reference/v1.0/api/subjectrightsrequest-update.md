@@ -123,9 +123,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "displayName": "Updated case name for Diego Siciliani",
-    "description": "This is an updated case",
-    "internalDueDateTime": "2022-07-20T22:42:28Z"
+  "displayName": "Updated case name for Diego Siciliani",
+  "description": "This is an updated case",
+  "internalDueDateTime": "2022-07-20T22:42:28Z"
 }
 ```
 
