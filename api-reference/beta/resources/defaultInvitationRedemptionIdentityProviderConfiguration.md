@@ -33,8 +33,7 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.defaultInvitationRedemptionIdentityProviderConfiguration",
-  "baseType": "microsoft.graph.invitationRedemptionIdentityProviderConfiguration"
+  "@odata.type": "microsoft.graph.defaultInvitationRedemptionIdentityProviderConfiguration"
 }
 -->
 

@@ -34,10 +34,12 @@ The following is a JSON representation of the resource.
   "@odata.type": "microsoft.graph.invitationRedemptionIdentityProviderConfiguration"
 }
 -->
-
 ``` json
 {
-  "primaryIdentityProviderPrecedenceOrder": ["String"],
+  "@odata.type": "#microsoft.graph.invitationRedemptionIdentityProviderConfiguration",
+  "primaryIdentityProviderPrecedenceOrder": [
+    "String"
+  ],
   "fallbackIdentityProvider": "String"
 }
 ```
