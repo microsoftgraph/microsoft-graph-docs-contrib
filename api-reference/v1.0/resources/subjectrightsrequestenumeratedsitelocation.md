@@ -35,9 +35,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.subjectRightsRequestEnumeratedSiteLocation",
-  "urls": [
-    "String"
-  ]
+  "urls": ["String"]
 }
 ```
 
