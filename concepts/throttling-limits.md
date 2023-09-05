@@ -14,9 +14,9 @@ Microsoft Graph allows you to access data in [multiple services](overview-major-
 
 Any request can be evaluated against multiple limits, depending on the scope of the limit (per app across all tenants, per tenant for all apps, per app per tenant, and so on), the request type (GET, POST, PATCH, and so on), and other factors. The first limit to be reached triggers throttling behavior. In addition to the service specific-limits described in the section, the following global limits apply:
 
-| Request type | Per app across all tenants  |
-| ------------ | ------------------------ |
-| Any          | 2000 requests per second |
+| Request type | Per app across all tenants      |
+|--------------|---------------------------------|
+| Any          | 130,000 requests per 10 seconds |
 
 > [!NOTE]
 > The specific limits described here are subject to change.
