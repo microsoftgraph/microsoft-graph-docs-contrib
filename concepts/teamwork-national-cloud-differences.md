@@ -12,12 +12,10 @@ This article describes Microsoft Teams API implementation differences between th
 
 For general information about national cloud availability for Microsoft Graph APIs, see [National cloud deployments](/graph/deployments).
 
-> [!NOTE]
-> Microsoft Teams APIs are not available in the Microsoft Cloud China operated by 21Vianet national cloud.
-
 ## Implementation differences in Microsoft Graph for US Government cloud
 
 This section describes implementation differences in the Microsoft Graph for US Government for all the available environments.
+
 
 |API    | Details              |
 |:--------------------|:---------------------------------------------------------|
@@ -47,3 +45,34 @@ This section describes implementation differences in the Microsoft Graph for US 
 | **Messages**            |                                                          |
 |[Soft delete a message](/graph/api/chatmessage-softdelete) | Not supported in the GCC High and DOD Environments. |
 |[List messages in a chat](/graph/api/chat-list-messages) | The `OrderBy` OData query parameter is not supported in the GCC environment. |
+
+## Implementation differences in Microsoft Graph for Microsoft China cloud
+
+This section describes implementation differences in the Microsoft Graph for the Microsoft China cloud.
+
+|API    | Details              |
+|:--------------------|:---------------------------------------------------------|
+**Apps**            |                                                          |
+[Apps in catalog](https://learn.microsoft.com/en-us/graph/api/resources/teamsapp?view=graph-rest-1.0) | Api's to manage apps in catalog like [Publish apps to catalog](https://learn.microsoft.com/en-us/graph/api/teamsapp-publish?view=graph-rest-1.0&tabs=http), [Delete app from catalog](https://learn.microsoft.com/en-us/graph/api/teamsapp-delete?view=graph-rest-1.0&tabs=http), [Update app in catalog](https://learn.microsoft.com/en-us/graph/api/teamsapp-update?view=graph-rest-1.0&tabs=http) are not supported.
+[App installation](https://learn.microsoft.com/en-us/graph/api/resources/teamsappinstallation?view=graph-rest-1.0) | Api's to manage app installation in all the scopes (user, chat and team) are not supported.
+[Resource specific permission grant](https://learn.microsoft.com/en-us/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-1.0) | Api's to list resource specific permission grants are not supported for all scopes(team, chat and group).
+**Activity Feed**            |                                                          |
+| [Activity Feed notifications](https://learn.microsoft.com/en-us/graph/teams-send-activityfeednotifications?tabs=http)| Api's to send activity feed notifications are not supported. |
+| **Tabs**            |                                                          |
+[Tabs](https://learn.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-1.0) | Api's to manage tabs in chat and channels are not supported.
+| **Channel**            |                                                          |
+[Channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) | Channel api's are not supported in context of Shared channels (channels with channelMembershipType's value as 'Shared').
+| **Chat**            |                                                          |
+|[List chats](/graph/api/chat-list)| The `OrderBy` OData query parameter is not supported. |
+| **Messaging**            |                                                          |
+[Export api's](https://learn.microsoft.com/en-us/microsoftteams/export-teams-content) | Api's to export chat and channel messages are not supported. 
+| **Team Membership**            |                                                          |
+Membership | Guests are not supported in this cloud. So, the membership api's like add guest to team / channel doesn't work.
+| **Change notifications**            |                                                          |
+[Change notifications](https://learn.microsoft.com/en-us/graph/api/resources/webhooks?view=graph-rest-1.0) | Change notifications are not supported for Microsoft Teams resources. 
+| **Meeting transcripts**            |                                                          |
+|[List transcripts](/graph/api/onlinemeeting-list-transcripts) | Not supported. |
+|[Get transcript](/graph/api/calltranscript-get) | Not supported. |
+|[Get delta by organizer](/graph/api/calltranscript-delta) | Not supported. |
+|[List transcripts by organizer](/graph/api/onlinemeeting-getalltranscripts) | Not supported. |
+| 
