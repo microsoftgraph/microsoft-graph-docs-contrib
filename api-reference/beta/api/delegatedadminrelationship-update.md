@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. A relationship can only be updated if it's in the `created` **status**.
+Update the properties of a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. A relationship can only be updated if it's in the `created` **status**. However, the autoExtendDuration property can be updated if the relationship is in either the 'created' or 'active' state.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,6 +50,7 @@ PATCH /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationsh
 |customer|[microsoft.graph.delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The display name and unique identifier of the customer of the relationship.|
 |displayName|String|The display name of the relationship used for ease of identification. Must be unique across *all* delegated admin relationships of the partner.|
 |duration|Duration|The duration of the relationship in ISO 8601 format. Must be a value between `P1D` and `P2Y` inclusive.|
+|autoExtendDuration|Duration| ISO 8601 format duration that dictates the duration by which the relationship's validity will be automatically extended.|
 
 
 ## Response
@@ -93,7 +94,8 @@ Content-Type: application/json
         "roleDefinitionId": "3a2c62db-5318-420d-8d74-23affee5d9d5"
       }
     ]
-  }
+  },
+  "autoExtendDuration": "P180D"
 }
 ```
 
@@ -171,7 +173,8 @@ Content-Type: application/json
         "roleDefinitionId": "3a2c62db-5318-420d-8d74-23affee5d9d5"
       }
     ]
-  }
+  },
+  "autoExtendDuration": "P180D"
 }
 ```
 
