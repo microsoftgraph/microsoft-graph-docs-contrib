@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/subjectRightsRequests{subjectRightsRequestId}/getFinalReport
-GET /privacy/subjectRightsRequests{subjectRightsRequestId}/getFinalReport
+GET /security/subjectRightsRequests/{subjectRightsRequestId}/getFinalReport
+GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalReport
 ```
 
 ## Request headers
