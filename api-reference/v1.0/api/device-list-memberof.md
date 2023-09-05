@@ -176,7 +176,7 @@ The following is an example of the request.
   "name": "get_video_count"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$search="displayName:Video"
+GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search="displayName:Video"
 ConsistencyLevel: eventual
 ```
 
@@ -222,7 +222,7 @@ The following is an example of the request.
   "name": "list_devices_memberof_startswith"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'A')
+GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'A')
 ConsistencyLevel: eventual
 ```
 

@@ -183,7 +183,7 @@ The following is an example of the request.
   "name": "get_video_count"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$search="displayName:Video"&$select=displayName,id
+GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$search="displayName:Video"&$select=displayName,id
 ConsistencyLevel: eventual
 ```
 
@@ -227,7 +227,7 @@ The following is an example of the request.
   "name": "list_devices_transitivememberof_startswith"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderBy=displayName&$filter=startswith(displayName, 'a')
+GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf/microsoft.graph.group?$count=true&$orderby=displayName&$filter=startswith(displayName, 'a')
 ConsistencyLevel: eventual
 ```
 
