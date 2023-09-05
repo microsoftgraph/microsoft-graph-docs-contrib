@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentResourceRoles().ByAccessPackageAssignmentResourceRoleId("accessPackageAssignmentResourceRole-id").Get(context.Background(), nil)
+accessPackageAssignmentResourceRoles, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignmentResourceRoles().ByAccessPackageAssignmentResourceRoleId("accessPackageAssignmentResourceRole-id").Get(context.Background(), nil)
 
 
 ```

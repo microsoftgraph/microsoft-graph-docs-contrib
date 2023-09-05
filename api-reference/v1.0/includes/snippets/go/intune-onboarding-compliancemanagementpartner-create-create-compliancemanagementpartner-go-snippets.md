@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewComplianceManagementPartner()
@@ -66,7 +66,7 @@ iosEnrollmentAssignments := []graphmodels.ComplianceManagementPartnerAssignmenta
 }
 requestBody.SetIosEnrollmentAssignments(iosEnrollmentAssignments)
 
-result, err := graphClient.DeviceManagement().ComplianceManagementPartners().Post(context.Background(), requestBody, nil)
+complianceManagementPartners, err := graphClient.DeviceManagement().ComplianceManagementPartners().Post(context.Background(), requestBody, nil)
 
 
 ```

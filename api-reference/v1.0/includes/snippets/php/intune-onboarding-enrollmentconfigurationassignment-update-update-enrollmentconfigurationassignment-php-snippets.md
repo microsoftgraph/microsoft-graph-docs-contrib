@@ -6,22 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EnrollmentConfigurationAssignment();
-$requestBody->set@odatatype('#microsoft.graph.enrollmentConfigurationAssignment');
-
+$requestBody->setOdataType('#microsoft.graph.enrollmentConfigurationAssignment');
 $target = new ConfigurationManagerCollectionAssignmentTarget();
-$target->set@odatatype('microsoft.graph.configurationManagerCollectionAssignmentTarget');
-
+$target->setOdataType('microsoft.graph.configurationManagerCollectionAssignmentTarget');
 $target->setCollectionId('Collection Id value');
-
-
 $requestBody->setTarget($target);
 
-
-$result = $graphServiceClient->deviceManagement()->deviceEnrollmentConfigurations()->byDeviceEnrollmentConfigurationId('deviceEnrollmentConfiguration-id')->assignments()->byAssignmentId('enrollmentConfigurationAssignment-id')->patch($requestBody);
-
+$result = $graphServiceClient->deviceManagement()->deviceEnrollmentConfigurations()->byDeviceEnrollmentConfigurationId('deviceEnrollmentConfiguration-id')->assignments()->byEnrollmentConfigurationAssignmentId('enrollmentConfigurationAssignment-id')->patch($requestBody)->wait();
 
 ```

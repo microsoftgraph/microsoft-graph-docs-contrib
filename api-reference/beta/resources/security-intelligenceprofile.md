@@ -30,11 +30,11 @@ The Microsoft Defender Threat Intelligence Profiles (Intel Profile) API provides
 |Property|Type|Description|
 |:---|:---|:---|
 |aliases|String collection|A list of commonly-known aliases for the threat intelligence included in the **intelligenceProfile**.|
+| countriesOrRegionsOfOrigin | [microsoft.graph.security.intelligenceProfileCountryOrRegionOfOrigin](../resources/security-intelligenceProfileCountryOrRegionOfOrigin.md) collection | The country/region of origin for the given actor or threat associated with this **intelligenceProfile**. |
 |description|[microsoft.graph.security.formattedContent](../resources/security-formattedcontent.md)|A synopsis of the threat actor. This property places the threat actor in wider context, tracing its discovery, history, significant campaigns, targeting, techniques of note, affiliations with governments, law enforcement countermeasures, and any areas of dispute among the security community regarding attribution.|
 |firstActiveDateTime|DateTimeOffset|The date and time when this **intelligenceProfile** was first active.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|The system generated ID for this **intelligenceProfile**.|
 |kind|microsoft.graph.security.intelligenceProfileKind|A categorization of the type of this **intelligenceProfile**. The possible values are: `actor`, `tool`, `unknownFutureValue`.|
-|sponsorStates|[microsoft.graph.security.intelligenceProfileSponsorState](../resources/security-intelligenceprofilesponsorstate.md) collection|Known states (such as a country or government) who have sponsored threat actors associated with this **intelligenceProfile**. This is also known as the country/region of origin for the given actor or threat.|
 |summary|[microsoft.graph.security.formattedContent](../resources/security-formattedcontent.md)|A short summary of this **intelligenceProfile**.|
 |targets|String collection|Known targets related to this **intelligenceProfile**.|
 |title|String|The title of this **intelligenceProfile**.|
@@ -62,17 +62,17 @@ The following is a JSON representation of the resource.
   "aliases": [
     "String"
   ],
+  "countriesOrRegionsOfOrigin": [
+    {
+      "@odata.type": "microsoft.graph.security.intelligenceProfileCountryOrRegionOfOrigin"
+    }
+  ],
   "description": {
     "@odata.type": "microsoft.graph.security.formattedContent"
   },
   "firstActiveDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "kind": "String",
-  "sponsorStates": [
-    {
-      "@odata.type": "microsoft.graph.security.intelligenceProfileSponsorState"
-    }
-  ],
   "summary": {
     "@odata.type": "microsoft.graph.security.formattedContent"
   },

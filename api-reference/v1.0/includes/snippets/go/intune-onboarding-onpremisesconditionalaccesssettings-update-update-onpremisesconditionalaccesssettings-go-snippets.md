@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewOnPremisesConditionalAccessSettings()
@@ -29,7 +29,7 @@ requestBody.SetExcludedGroups(excludedGroups)
 overrideDefaultRule := true
 requestBody.SetOverrideDefaultRule(&overrideDefaultRule) 
 
-result, err := graphClient.DeviceManagement().ConditionalAccessSettings().Patch(context.Background(), requestBody, nil)
+conditionalAccessSettings, err := graphClient.DeviceManagement().ConditionalAccessSettings().Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -2,7 +2,7 @@
 title: "conditionalAccessDeviceStates resource type"
 description: "Represents device states in the policy scope."
 ms.localizationpriority: medium
-author: "davidspooner"
+author: "SanDeo-MSFT"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
