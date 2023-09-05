@@ -36,12 +36,7 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.subjectRightsRequestEnumeratedMailboxLocation",
-  "userPrincipalNames": [
-    "String"
-  ]
-  "upns": [
-    "String"
-  ]
+  "upns": ["String"],
+  "userPrincipalNames": ["String"]
 }
 ```
-
