@@ -43,14 +43,14 @@ Depending on the RBAC provider and the permission type (delegated or application
 
 ## HTTP request
 
-To delete a unifiedRoleAssignmentMultiple for a Cloud PC provider:
+To delete a **unifiedRoleAssignmentMultiple** for a Cloud PC provider:
 <!-- { "blockType": "ignored" } -->
 
 ```http
 DELETE /roleManagement/cloudPC/roleAssignments/{id}
 ```
 
-To delete a unifiedRoleAssignmentMultiple for an Intune provider:
+To delete a **unifiedRoleAssignmentMultiple** for an Intune provider:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -74,6 +74,8 @@ If successful, this method returns a `204 No Content` response code. It does not
 ## Example
 
 ### Example 1: Delete a unifiedRoleAssignmentMultiple in an Intune provider
+
+The following example shows how to delete a [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) in an Intune provider.
 
 ### Request
 
@@ -140,8 +142,11 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Delete a unifiedRoleAssignmentMultiple in a Cloud PC provider
 
+The following example shows how to delete a [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) in a Cloud PC provider.
+
 ### Request
 
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -188,6 +193,8 @@ DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/{
 ---
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

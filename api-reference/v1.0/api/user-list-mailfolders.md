@@ -1,13 +1,13 @@
 ---
 title: List mailFolders
 description: Get the mail folder collection under the root folder of the signed-in user.
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "outlook"
 ---
 
-<!-- markdownlint-disable MD001 MD024 MD025 MD051-->
+<!-- markdownlint-disable MD001 MD022 MD024 MD025 MD051-->
 
 # List mailFolders
 
@@ -81,7 +81,7 @@ The following is an example of the request.
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders
 ```
-<!-- markdownlint-disable MD022 -->
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mailfolders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -115,7 +115,6 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-<!-- markdownlint-enable MD022 -->
 
 #### Response
 
@@ -242,7 +241,7 @@ This example uses the `includeHiddenFolders` query parameter to get a list of ma
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/me/mailFolders/?includeHiddenFolders=true
 ```
-<!-- markdownlint-disable MD022 -->
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-hiddenmailfolders-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -276,7 +275,6 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/?includeHiddenFolders=true
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-<!-- markdownlint-enable MD022 -->
 
 #### Response
 
