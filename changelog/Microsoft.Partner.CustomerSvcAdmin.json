@@ -184,7 +184,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-03-30T23:33:05.8733913Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "SubArea": "Partner customer administration"
     },
     {
       "ChangeList": [
@@ -234,7 +234,7 @@
       "Version": "beta",
       "CreatedDateTime": "2022-05-17T11:15:46.2343525Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "SubArea": "Partner customer administration"
     },    
     {
       "ChangeList": 
@@ -421,7 +421,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2023-02-02T09:00:05.8733913Z",
       "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "SubArea": "Partner customer administration"
     },
     {
       "ChangeList": [        
