@@ -58,8 +58,6 @@ The application authentication methods policy API offers the following restricti
 >
 > Applying the **customPasswordAddition** restriction will block any legacy PowerShell modules that add a client-generated password secret to applications or service principals. This restriction does not block Azure AD-generated application or service principal password secrets.
 
-### Licensing
-- All app policy management operations require a [Workload identity premium license](https://learn.microsoft.com/en-us/azure/active-directory/workload-identities/workload-identities-faqs#what-is-the-cost-of-workload-identities-premium-plan).
 ### Single vs multi-tenant apps
 
 Depending on whether your app is a single tenant or multitenant app, you apply the policy on either an application or the service principal object as follows:
@@ -77,6 +75,11 @@ Depending on whether your app is a single tenant or multitenant app, you apply t
 | Allows only single restriction object definition for all resources.                | Allows multiple policy objects to be defined, but only one can be applied to a resource.                                                            |
 | Allows distinction of restrictions for application objects vs. service principals. | Policy can be applied to either an application or service principal object.                                                                         |
 | Applies all restrictions configured to all apps or service principals.             | Applies only the restrictions configured in the resource policy to the specified app or service principal, and doesn't inherit from default policy. |
+
+## Requirements
+
+- Management of application authentication method policies can be performed by a global administrator, application administrator, or cloud application administrator.
+- All app policy management operations require a [Microsoft Entra Workload Identities Premium license](/azure/active-directory/workload-identities/workload-identities-faqs#what-is-the-cost-of-workload-identities-premium-plan).
 
 ## Next steps
 
