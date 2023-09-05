@@ -6,11 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->deviceManagement()->deviceManagementPartners()->byDeviceManagementPartnerId('deviceManagementPartner-id')->get();
-
+$result = $graphServiceClient->deviceManagement()->deviceManagementPartners()->byDeviceManagementPartnerId('deviceManagementPartner-id')->get()->wait();
 
 ```

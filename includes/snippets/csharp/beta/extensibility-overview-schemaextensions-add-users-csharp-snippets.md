@@ -13,7 +13,7 @@ var requestBody = new User
 	AccountEnabled = true,
 	DisplayName = "Adele Vance",
 	MailNickname = "AdeleV",
-	UserPrincipalName = "AdeleV@m365x72712789.onmicrosoft.com",
+	UserPrincipalName = "AdeleV@contoso.com",
 	PasswordProfile = new PasswordProfile
 	{
 		ForceChangePasswordNextSignIn = false,

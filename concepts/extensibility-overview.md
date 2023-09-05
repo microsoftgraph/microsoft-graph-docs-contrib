@@ -372,7 +372,7 @@ GET https://graph.microsoft.com/beta/users?$select=id,displayName,extension_b7d8
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/extensibility-overview-directoryextensions-get-users-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -644,7 +644,7 @@ POST https://graph.microsoft.com/beta/users
     "accountEnabled": true,
     "displayName": "Adele Vance",
     "mailNickname": "AdeleV",
-    "userPrincipalName": "AdeleV@m365x72712789.onmicrosoft.com",
+    "userPrincipalName": "AdeleV@contoso.com",
     "passwordProfile": {
         "forceChangePasswordNextSignIn": false,
         "password": "xWwvJ]6NMw+bWH-d"
@@ -662,7 +662,7 @@ POST https://graph.microsoft.com/beta/users
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/extensibility-overview-schemaextensions-add-users-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -721,7 +721,7 @@ PATCH https://graph.microsoft.com/beta/users/0668e673-908b-44ea-861d-0661297e1a3
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/extensibility-overview-schemaextensions-update-users-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -773,7 +773,7 @@ GET https://graph.microsoft.com/beta/users/0668e673-908b-44ea-861d-0661297e1a3e?
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/extensibility-overview-schemaextensions-get-user-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -1049,7 +1049,7 @@ The table below contrasts and compares the extension types, which should help yo
 | Limits | <li>15 predefined attributes per user or device resource instance | <li>100 extension values per resource instance | <li>Maximum of five definitions per owner app <br/><li> 100 extension values per resource instance (directory objects only) | <li>Two open extensions per creator app per resource instance<sup>3</sup> <br/><li> Max. of 2 Kb per open extension<sup>3</sup><li> For Outlook resources, each open extension is stored in a [MAPI named property][MAPI-named-property]<sup>4</sup> |
 
 > [!NOTE]
-> 
+>
 > <sup>1</sup> Due to an existing service limitation, delegates cannot create open extension-appended events in shared mailbox calendars. Attempts to do so will result in an `ErrorAccessDenied` response.
 >
 > <sup>2</sup> Only available in public preview for directory extensions.

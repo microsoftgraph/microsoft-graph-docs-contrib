@@ -21,13 +21,13 @@ https://graph.microsoft.com/v1.0/users?$top=5
 If the result contains more results, Microsoft Graph will return an `@odata.nextLink` property similar to the following along with the first page of results:
 
 ```json
-"@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27"
+"@odata.nextLink": "https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707 ... 6633B900000000000000000000%27"
 ```
 
 You can retrieve the next page of results by sending the URL value of the `@odata.nextLink` property to Microsoft Graph. 
 
 ```html
-https://graph.microsoft.com/v1.0/users?$top=5&$skiptoken=X%274453707 ... 6633B900000000000000000000%27
+https://graph.microsoft.com/v1.0/users?$skiptoken=X%274453707 ... 6633B900000000000000000000%27
 ```
 
 Microsoft Graph will continue to return a reference to the next page of results in the `@odata.nextLink` property with each response until all pages of the results have been read. To read all results, you must continue to call Microsoft Graph with the `@odata.nextLink` property returned in each response until the `@odata.nextLink` property is no longer returned.

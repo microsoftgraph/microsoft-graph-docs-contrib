@@ -15,7 +15,9 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-microsoft.graph.callRecords.getPstnBlockedUsersLog(fromDateTime={fromDateTime},toDateTime={toDateTime}), err := graphClient.Communications().CallRecords().MicrosoftGraphCallRecordsGetPstnBlockedUsersLog(fromDateTime={fromDateTime},toDateTime={toDateTime})().Get(context.Background(), nil)
+fromDateTime , err := time.Parse(time.RFC3339, "{fromDateTime}")
+toDateTime , err := time.Parse(time.RFC3339, "{toDateTime}")
+microsoftGraphCallRecordsGetPstnBlockedUsersLog, err := graphClient.Communications().CallRecords().MicrosoftGraphCallRecordsGetPstnBlockedUsersLogWithFromDateTimeWithToDateTime(&fromDateTime, &toDateTime).Get(context.Background(), nil)
 
 
 ```
