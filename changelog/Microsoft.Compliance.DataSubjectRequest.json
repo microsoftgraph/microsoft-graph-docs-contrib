@@ -2,6 +2,40 @@
   "changelog": [
     {
       "ChangeList": [
+         {
+          "Id": "b0fdba93-efca-407d-b7fc-12e792ece3f6",
+          "ApiChange": "Member",
+          "ChangedApiName": "approval",
+          "ChangeType": "Addition",
+          "Description": "Added the `approval` member to the **subjectRightsRequestStage** enumeration.",
+          "Target": "subjectRightsRequestStage"
+        },
+        {
+          "Id": "b0fdba93-efca-407d-b7fc-12e792ece3f6",
+          "ApiChange": "Property",
+          "ChangedApiName": "upns",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **upns** property of the [subjectRightsRequestEnumeratedMailboxLocation](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequestEnumeratedMailboxLocation?view=graph-rest-beta) resource. Use the **userPrincipalNames** property instead.",
+          "Target": "subjectRightsRequestEnumeratedMailboxLocation"
+        },
+        {
+          "Id": "b0fdba93-efca-407d-b7fc-12e792ece3f6",
+          "ApiChange": "Property",
+          "ChangedApiName": "upns",
+          "ChangeType": "Addition",
+          "Description": "Added the **userPrincipalNames** property to the [subjectRightsRequestEnumeratedMailboxLocation](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequestEnumeratedMailboxLocation?view=graph-rest-beta) resource.",
+          "Target": "subjectRightsRequestEnumeratedMailboxLocation"
+        }
+      ],
+      "Id": "b0fdba93-efca-407d-b7fc-12e792ece3f6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-24T22:01:07.8528874Z",
+      "WorkloadArea": "Compliance",
+      "SubArea": "Subject rights request"
+    },
+    {
+      "ChangeList": [
         {
           "Id": "b0fdba93-efca-407d-b7fc-12e792ece3f6",
           "ApiChange": "Member",
