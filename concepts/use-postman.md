@@ -13,7 +13,7 @@ You can use the Microsoft Graph Postman collection to get started with Microsoft
 
 ![Image of Postman](images/postman-screenshot.png)
 
-This article explains how to get up and running with Postman and Microsoft Graph. You can also explore Microsoft Graph APIs directly in your web browser by using [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+This first article explains how to set up your environment to run Microsoft Graph on Postman. Then, the following two articles detail instructions for running delegated permissions and app-only authentication. By the end of these articles, you'll have successfully run your first delegated request and application request with Microsoft Graph. You can also explore Microsoft Graph APIs directly in your web browser by using [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 For details about how to use Postman, follow the steps in this article or watch the following video.
 
@@ -57,11 +57,10 @@ To use this collection in your own developer tenant, create an Azure Active Dire
 1. Set the **Redirect URI** to `https://oauth.pstmn.io/v1/browser-callback`.
 1. Select **Register**.
 1. On the left menu, select **API Permissions**.
-1. On the horizontal menu, select **Add a permission**, select **Microsoft Graph**, and then select **Delegated Permissions**.
-1. Type `Mail.`, expand the **Mail** options, and then select `Mail.Read`.
-1. Select **Application permissions**, type `User.`, and then select **Application Permissions**.
-1. Expand the **User** options, and then select `User.Read.All`.
-1. Select **Add permissions**.
+1. On the horizontal menu, select **Add a permission**, and select **Microsoft Graph**.
+1. Select **Delegated Permissions** option, type `Mail.`, expand the **Mail** options, and then select `Mail.Read`.
+1. Select **Application permissions** option, type `User.`, expand the **User** options, and then select `User.Read.All`.
+1. Select **Add permissions** to add both permissions in steps 11 and 12.
 1. On the horizontal menu, select **Grant admin consent for**, and then select **Yes**.
 1. On the left menu, select **Overview**. From here, you can get the **application (client) ID** and **directory (tenant) ID**. You'll need these in step 4.
 1. On the left menu, select **Certificates and secrets**.
@@ -77,59 +76,19 @@ In this step, you set up the environment variables in Postman that you use to re
 1. Add a label for the fork. This can be any text.
 1. Under **Workspace**, ensure that **My Workspace** is selected in the dropdown list.
 1. Select **Fork Environment**.
-1. In `ClientID`, set the **Current value** to the application (client) ID value from step 3.16.
-1. In `ClientSecret`, set the **Current value** to the client secret value from step 3.18.
-1. In `TenantID`, set the **Current value** to the directory (tenant) ID value from step 3.16.
+1. In `ClientID`, set the **Current value** to the application (client) ID value from step 3.15.
+1. In `TenantID`, set the **Current value** to the directory (tenant) ID value from step 3.15.
+1. In `ClientSecret`, set the **Current value** to the client secret value from step 3.17.
 1. On the top right, select **Save**.
 1. Close the **Manage Environments** tab.
 1. On the top right, next to the eye icon, verify that **M365 Environment** is selected in the dropdown and not **No environment**.
 
-## Step 5: Get a delegated access token
+## Next steps
 
-Because this is the first time that you are running a request as a delegated authentication flow, you need to get an access token.
+Now that you have successfully set up the environment to run Microsoft Graph on Postman, proceed to the next article to run your first delegated request.
 
-1. Select the **Delegated** folder.
-1. Select the **Authorization** tab.
-1. In the **Configure New Token** section, select the **Configuration Options** tab. Make sure the call back URL matches with what you provided when you created the application registration. Leave all the fields as pre-configured, including the **Grant type**, which is set to `Authorization Code`.
-1. Scroll down on the right and select **Get New Access Token**.
-1. Sign in with your developer tenant administrator account.
-1. Select **Proceed**, and then select the **Use Token** button.
-
-You now have a valid access token to use for delegated requests.
-
-## Step 6: Run your first delegated request
-
-Inside the **Delegated** folder are requests for various Microsoft Graph workloads that you can call.
-
-1. Expand the **Delegated** folder, and then expand the **Mail** folder.
-1. Double-click **Get my messages** to open the request.
-1. On the top right, select **Send**.
-
-You have now successfully made a Microsoft Graph call using delegated authentication.
-
-## Step 7: Get an application access token
-
-Because this is the first time that you are running a request as an application authentication flow, you need to get an access token.
-
-1. Select the **Application** folder.
-1. Select the **Authorization** tab.
-1. In the **Configure New Token** section, select the **Configuration Options** tab. Leave all the fields as pre-configured, including the **Grant type**, which is set to `Client Credentials`.
-1. Scroll down on the right and select **Get New Access Token**.
-1. Select **Proceed**, and then select the **Use Token** button.
-
-You now have a valid access token to use for application requests.
-
-## Step 8: Run your first application request
-
-Inside the **Application** folder are requests for various Microsoft Graph workloads that you can call.
-
-1. Expand the **Application** folder, and then expand the **User** folder.
-1. Double-click **Get Users** to open the request.
-1. On the top right, select **Send**Access to OData is disabled.
-
-You have now successfully made a Microsoft Graph call using application authentication.
-
-You can follow these steps to make other requests to Microsoft Graph. Remember that you have to add permissions to your Azure AD application for other requests to work; otherwise, you get permission denied errors in your responses.
+- [Use Postman with Delegated Permissions](use-postman-with-delegated-permissions.md)
+- [Use Postman with App-only Authentication](use-postman-with-app-only-authentication.md)
 
 ### Contribute to the collection
 
