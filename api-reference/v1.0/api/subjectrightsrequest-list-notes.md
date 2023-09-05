@@ -110,18 +110,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "id": "D450C4F9-CC18-4784-9406-9372F4E05F7B",
-    "createdDateTime": "2022-05-10T22:42:28Z",
-    "author": {
-        "user": {
-            "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
-            "displayName": "srradmin@contoso.com"
-        }
-    },
-    "content": {
-        "content": "Please take a look at the files tagged with follow up",
-        "contentType": "text"
+  "id": "D450C4F9-CC18-4784-9406-9372F4E05F7B",
+  "createdDateTime": "2022-05-10T22:42:28Z",
+  "author": {
+    "user": {
+      "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+      "displayName": "srradmin@contoso.com"
     }
+  },
+  "content": {
+    "content": "Please take a look at the files tagged with follow up",
+    "contentType": "text"
+  }
 }
 ```
 
