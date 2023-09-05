@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|AppCertTrustConfiguration.Read.All, AppCertTrustConfiguration.ReadWrite.All|
 |Application|Not supported.|
 
-[!INCLUDE [app-cert-config-apis](../includes/app-cert-config-apis.md)]
+[!INCLUDE [app-cert-config-apis](../includes/rbac-for-apis/app-cert-config-apis.md)]
 ## HTTP request
 
 <!-- {
