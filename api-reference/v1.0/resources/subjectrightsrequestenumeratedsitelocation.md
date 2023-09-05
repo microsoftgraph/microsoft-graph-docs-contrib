@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents the properties for a subject rights request that defines specific sites (SharePoint sites, OneDrive for Business sites, and Microsoft Teams channels) as a search location.
 
 Inherits from [subjectRightsRequestSiteLocation](../resources/subjectrightsrequestsitelocation.md).
