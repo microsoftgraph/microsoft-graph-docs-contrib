@@ -93,7 +93,7 @@ Content-Type: application/json
      "visibility": "public"
 }
 ```
----
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/clone-team-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
