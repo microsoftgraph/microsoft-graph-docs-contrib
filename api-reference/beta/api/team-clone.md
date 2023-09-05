@@ -93,7 +93,7 @@ Content-Type: application/json
      "visibility": "public"
 }
 ```
-
+---
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/clone-team-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -127,6 +127,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 #### Response
 
 The following is an example of the response. Note: The response object shown here might be shortened for readability.
