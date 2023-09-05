@@ -13,7 +13,7 @@ You can use the Microsoft Graph Postman collection to get started with Microsoft
 
 ![Image of Postman](images/postman-screenshot.png)
 
-This first article explains how to set up your environment to run Microsoft Graph on Postman. Then, the following two articles detail instructions for running delegated permissions and app-only authentication. By the end of these articles, you'll have successfully run your first delegated request and application request with Microsoft Graph. You can also explore Microsoft Graph APIs directly in your web browser by using [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+This first article explains how to set up your environment to run Microsoft Graph on Postman. Then, the following two articles detail instructions for running [delegated permissions](use-postman-with-delegated-permissions.md) and [app-only authentication](use-postman-with-app-only-authentication.md). By the end of these articles, you'll have successfully run your first delegated request and application request with Microsoft Graph. You can also explore Microsoft Graph APIs directly in your web browser by using [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 For details about how to use Postman, follow the steps in this article or watch the following video.
 
