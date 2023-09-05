@@ -48,11 +48,10 @@ You can specify the following properties when creating a **cloudPcExportJob**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|reportName|cloudPcReportName|The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, `noLicenseAvailableConnectivityFailureReport`, `unknownFutureValue`. Optional.|
 |filter|String|The filter applied on the report. Optional.|
-|select|String collection|The selected columns of the report. Optional.|
 |format|String|The format of the exported report. Optional.|
-
+|reportName|cloudPcReportName|The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, `unknownFutureValue`, `noLicenseAvailableConnectivityFailureReport`, `inaccessibleCloudPcReports`. Optional.|
+|select|String collection|The selected columns of the report. Optional.|
 
 ## Response
 

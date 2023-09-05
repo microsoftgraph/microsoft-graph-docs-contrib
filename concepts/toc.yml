@@ -233,7 +233,7 @@ items:
               - name: Notification types and payloads
                 href: teams-change-notification-in-microsoft-teams-overview.md
                 displayName: change notifications, Teams, Microsoft Teams
-              - name: Call transcripts
+              - name: Call recordings and transcripts
                 href: teams-changenotifications-callrecording-and-calltranscript.md
               - name: Chat
                 href: teams-changenotifications-chat.md
