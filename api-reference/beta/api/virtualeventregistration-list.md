@@ -1,6 +1,6 @@
 ---
 title: "List virtualEventRegistrations"
-description: "Get a list of all regisration records of a webinar."
+description: "Get a list of all registration records of a webinar."
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of all [regisration records](../resources/virtualeventregistration.md) of a [webinar](../resources/virtualeventwebinar.md).
+Get a list of all [registration records](../resources/virtualeventregistration.md) of a [webinar](../resources/virtualeventwebinar.md).
 
 ## Permissions
 
