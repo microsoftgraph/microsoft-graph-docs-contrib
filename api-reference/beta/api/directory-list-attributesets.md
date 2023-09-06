@@ -39,7 +39,7 @@ GET /directory/attributeSets
 
 ## Optional query parameters
 
-This method supports the `$select`, `$top`, and `$orderBy` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$top`, and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -239,7 +239,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/directory/attributeSets?$orderBy=id
+GET https://graph.microsoft.com/beta/directory/attributeSets?$orderby=id
 ```
 
 # [C#](#tab/csharp)
