@@ -1,5 +1,5 @@
 ---
-title: "List notes"
+title: "List authoredNotes"
 description: "Get the authoredNote resources from the notes navigation property."
 author: "skadam-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "compliance"
 doc_type: apiPageType
 ---
 
-# List notes
+# List authoredNotes
 Namespace: microsoft.graph
 
 Get the list of authored notes assoicated with a subject rights request. 
