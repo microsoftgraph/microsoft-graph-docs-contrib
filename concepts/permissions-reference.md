@@ -986,6 +986,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _EduAssignments.ReadWriteBasic_ | Read and write users' class assignments without grades           | Allows the app to read and write assignments without grades on behalf of the user                                                                                                                                                                                                | Yes                    | No                          |
 | _EduAssignments.Read_           | Read users' view of class assignments and their grades           | Allows the app to read assignments and their grades on behalf of the user                                                                                                                                                                                                        | Yes                    | No                          |
 | _EduAssignments.ReadWrite_      | Read and write users' view of class assignments and their grades | Allows the app to read and write assignments and their grades on behalf of the user                                                                                                                                                                                              | Yes                    | No                          |
+| _EduCurricula.Read_             | Read the user's class modules and resources.                     | Allows the app to read the user's modules and resources on behalf of the signed-in user. | Yes                    | No                          |
+| _EduCurricula.ReadWrite_        | Read and write the user's class modules and resources.           | Allows the app to read and write user's modules and resources on behalf of the signed-in user. | Yes                    | No                          |
 | _EduRoster.ReadBasic_           | Read a limited subset of users' view of the roster               | Allows the app to read a limited subset of the properties from the structure of schools and classes in an organization's roster and a limited subset of properties about users to be read on behalf of the user. Includes name, status, education role, and email address. | Yes                    | No                          |
 | _EduRoster.Read_                | Read users' view of the roster                                   | Allows the app to read the structure of schools and classes in an organization's roster and education-specific information about users to be read on behalf of the user.                                                                                                         | Yes                    |
 | _EduRoster.ReadWrite_           | Read and write users' view of the roster                         | Allows the app to read and write the structure of schools and classes in an organization's roster and education-specific information about users to be read and written on behalf of the user.                                                                                   | Yes                    |
@@ -1000,6 +1002,8 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _EduAssignments.ReadWriteBasic.All_ | Create, read, update, and delete all class assignments without grades              | Allows the app to create, read, update and delete all class assignments without grades for all users without a signed-in user.          | Yes                    |
 | _EduAssignments.Read.All_           | Read all class assignments with grades              | Allows the app to read all class assignments with grades for all users without a signed-in user.                                                                    | Yes                    |
 | _EduAssignments.ReadWrite.All_      | Create, read, update, and delete all class assignments with grades            | Allows the app to create, read, update and delete all class assignments with grades for all users without a signed-in user.                    | Yes                    |
+| _EduCurricula.Read.All_             | Read all class modules and resources                | Allows the app to read all modules and resources, without a signed-in user.  | Yes |
+| _EduCurricula.ReadWrite.All_        | Read and write all class modules and resources      | Allows the app to read and write all modules and resources, without a signed-in user. | Yes |
 | _EduRoster.ReadBasic.All_           | Read a limited subset of the organization's roster. | Allows the app to read a limited subset of both the structure of schools and classes in an organization's roster and education-specific information about all users.          | Yes                    |
 | _EduRoster.Read.All_                | Read the organization's roster.                     | Allows the app to read the structure of schools and classes in the organization's roster and education-specific information about all users to be read.                       | Yes                    |
 | _EduRoster.ReadWrite.All_           | Read and write the organization's roster.           | Allows the app to read and write the structure of schools and classes in the organization's roster and education-specific information about all users to be read and written. | Yes                    |
@@ -1229,7 +1233,7 @@ The following usages are valid for both delegated and application permissions:
 #### Read risk events
 
 * Read all risk events generated for all users in the tenant (`GET /identityProtection/riskDetections`)
-* Read most recent 50 risk events (`GET /identityProtection/riskDetections?$orderBy=detectedDateTime desc&top=50`)
+* Read most recent 50 risk events (`GET /identityProtection/riskDetections?$orderby=detectedDateTime desc&top=50`)
 
 #### Read risky users
 
@@ -1584,6 +1588,25 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Multi-tenant organization permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _MultiTenantOrganization.ReadBasic.All_ | Read multi-tenant organization basic details and active tenants | Allows the app to read multi-tenant organization basic details and active tenants | No | No |
+| _MultiTenantOrganization.Read.All_ | Read multi-tenant organization details and tenants | Allows the app to read multi-tenant organization details and tenants | Yes | No |
+| _MultiTenantOrganization.ReadWrite.All_ | Read and write multi-tenant organization details and tenants | Allows the app to read and write multi-tenant organization details and tenants | Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:----------------|:------------------|:-------------|:-----------------------|
+| _MultiTenantOrganization.ReadBasic.All_ | Read multi-tenant organization basic details and active tenants | Allows the app to read multi-tenant organization basic details and active tenants | Yes |
+| _MultiTenantOrganization.Read.All_ | Read multi-tenant organization details and tenants | Allows the app to read multi-tenant organization details and tenants | Yes |
+| _MultiTenantOrganization.ReadWrite.All_ | Read and write multi-tenant organization details and tenants | Allows the app to read and write multi-tenant organization details and tenants | Yes |
+
+---
 
 ## Network access permissions
 
@@ -1942,7 +1965,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:----------------|:------------------|:-------------|:-----------------------|
 | _Policy.Read.All_ | Read your organization's policies | Allows the app to read all your organization's policies without a signed in user. | Yes |
 | _Policy.Read.PermissionGrant_ | Read consent and permission grant policies | Allows the app to read policies related to consent and permission grants for applications, without a signed-in user. | Yes |
-| _Policy.Read.ApplicationConfiguration_ | Read your organization's application configuration policies | Allows the app to read all your organization's application configuration policies without a signed in user. | Yes |
 | _Policy.ReadWrite.AccessReview_ | Read and write your organization's access review policy | Allows the app to read and write your organization's access review policy, without a signed-in user. | Yes |
 | _Policy.ReadWrite.ApplicationConfiguration_ | Read and write your organization's application configuration policies | Allows the app to read and write your organization's application configuration policies, without a signed-in user. | Yes |
 | _Policy.ReadWrite.AuthenticationFlows_ | Read and write your organization's authentication flow policies | Allows the app to read and write the authentication flow policies for the tenant, without a signed in user. | Yes |
@@ -2109,8 +2131,12 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
+| _RoleAssignmentSchedule.Read.Directory_ | Read all active role assignments and role schedules for your company's directory. | Allows the app to read the active role-based access control (RBAC) assignments and schedules for your company's directory, without a signed-in user. This includes reading directory role templates, and directory roles. | Yes |
+| _RoleEligibilitySchedule.Read.Directory_ | Read all eligible role assignments and role schedules for your company's directory. | Allows the app to read the eligible role-based access control (RBAC) assignments and schedules for your company's directory, without a signed-in user. This includes reading directory role templates, and directory roles. | Yes |
 | _RoleManagement.Read.All_ | Read role management data for all RBAC providers. | Allows the app to read the role-based access control (RBAC) settings for all supported [RBAC providers](/graph/api/resources/rolemanagement?view=graph-rest-beta&preserve-view=true), without a signed-in user. This includes reading role definitions and role assignments. | Yes |
 | _RoleManagement.Read.Directory_ | Read role management data for Azure AD. | Allows the app to read the role-based access control (RBAC) settings for your company's directory, without a signed-in user.  This includes reading directory role templates, directory roles and memberships. | Yes |
+| _RoleAssignmentSchedule.ReadWrite.Directory_ | Read, update, and delete all policies for privileged role assignments of your company's directory. | Allows the app to read, update, and delete policies for privileged role-based access control (RBAC) assignments of your company's directory, without a signed-in user. | Yes |
+| _RoleEligibilitySchedule.ReadWrite.Directory_ | Read, update, and delete all eligible role assignments and schedules for your company's directory. | Allows the app to read and manage the eligible role-based access control (RBAC) assignments and schedules for your company's directory, without a signed-in user. This includes managing eligible directory role membership, and reading directory role templates, directory roles and eligible memberships. | Yes |
 | _RoleManagement.ReadWrite.Directory_ | Read and write role management data for Azure AD. | Allows the app to read and manage the role-based access control (RBAC) settings for your company's directory, without a signed-in user. This includes instantiating directory roles and managing directory role membership, and reading directory role templates, directory roles and memberships. | Yes |
 | _RoleManagementAlert.Read.Directory_ | Read all alert data for your company's directory. | Allows the app to read all role-based access control (RBAC) alerts for your company's directory, without a signed-in user. This includes reading alert statuses, alert definitions, alert configurations and incidents that lead to an alert. | Yes |
 | _RoleManagementPolicy.Read.Directory_ | Read all policies for privileged role assignments of your company's directory. | Allows the app to read policies for privileged role-based access control (RBAC) assignments of your company's directory, without a signed-in user. | Yes |

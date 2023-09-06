@@ -32,7 +32,7 @@ GET /education/classes/{id}/assignments/{id}/resources
 
 ## Optional query parameters
 
-This method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData query parameters to help customize the response.
+This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData query parameters to help customize the response.
 For general information, see [OData query parameters](/graph/query-parameters).
 
 
@@ -63,6 +63,10 @@ GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-resources-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-resources-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
