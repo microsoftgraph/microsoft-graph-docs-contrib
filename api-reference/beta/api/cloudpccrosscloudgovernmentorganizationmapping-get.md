@@ -74,10 +74,6 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/crossCloud
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpccrosscloudgovernmentorganizationmapping-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-cloudpccrosscloudgovernmentorganizationmapping-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-cloudpccrosscloudgovernmentorganizationmapping-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "de6bd646-f2ab-44d0-b45c-21c58410c210",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Throttling",
+          "ChangeType": "Change",
+          "Description": "Increased the global throttling limits for all requests from 2,000 requests per second to 130,000 requests per 10 seconds per app across all tenants. However, the service-specific limits still apply. For more information, see the [Microsoft Graph service-specific throttling limits](https://learn.microsoft.com/graph/throttling-limits).",
+          "Target": "application"
+        }
+      ],
+      "Id": "de6bd646-f2ab-44d0-b45c-21c58410c210",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-09-05T00:00:00.1897204Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7c184bc2-56c6-4580-a706-636276e2b405",
           "ApiChange": "Resource",
           "ChangedApiName": "servicePrincipalLockConfiguration",
