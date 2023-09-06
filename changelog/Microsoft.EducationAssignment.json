@@ -3,6 +3,96 @@
     {
       "ChangeList": [
         {
+          "Id": "3e9f0779-4339-4ce3-afea-420ed8d03f50",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduCurricula.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduCurricula.ReadWrite.All` to the [Create](https://learn.microsoft.com/en-us/graph/api/educationclass-post-module) method of [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta).",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "3e9f0779-4339-4ce3-afea-420ed8d03f50",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduCurricula.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduCurricula.ReadWrite.All` to the [Update](https://learn.microsoft.com/en-us/graph/api/educationmodule-update) method of [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta).",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "3e9f0779-4339-4ce3-afea-420ed8d03f50",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduCurricula.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduCurricula.ReadWrite.All` to the [Publish](https://learn.microsoft.com/en-us/graph/api/educationmodule-publish) method of [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta).",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "3e9f0779-4339-4ce3-afea-420ed8d03f50",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduCurricula.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduCurricula.ReadWrite.All` to the [Pin](https://learn.microsoft.com/en-us/graph/api/educationmodule-pin) method of [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta).",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "3e9f0779-4339-4ce3-afea-420ed8d03f50",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduCurricula.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduCurricula.ReadWrite.All` to the [Unpin](https://learn.microsoft.com/en-us/graph/api/educationmodule-unpin) method of [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta).",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "3e9f0779-4339-4ce3-afea-420ed8d03f50",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduCurricula.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduCurricula.ReadWrite.All` to the [Delete](https://learn.microsoft.com/en-us/graph/api/educationmodule-delete) method of [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta).",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "3e9f0779-4339-4ce3-afea-420ed8d03f50",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduCurricula.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduCurricula.ReadWrite.All` to the [setUpResourcesFolder](https://learn.microsoft.com/en-us/graph/api/educationmodule-setupresourcesfolder) method of [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta).",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "3e9f0779-4339-4ce3-afea-420ed8d03f50",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduCurricula.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduCurricula.ReadWrite.All` to the [Create](https://learn.microsoft.com/en-us/graph/api/educationmodule-post-resources) method of [educationModuleResource](https://learn.microsoft.com/en-us/graph/api/resources/educationModuleResource?view=graph-rest-beta).",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "3e9f0779-4339-4ce3-afea-420ed8d03f50",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduCurricula.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduCurricula.ReadWrite.All` to the [Update](https://learn.microsoft.com/en-us/graph/api/educationmoduleresource-update) method of [educationModuleResource](https://learn.microsoft.com/en-us/graph/api/resources/educationModuleResource?view=graph-rest-beta).",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "3e9f0779-4339-4ce3-afea-420ed8d03f50",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduCurricula.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduCurricula.ReadWrite.All` to the [Delete](https://learn.microsoft.com/en-us/graph/api/educationmoduleresource-delete) method of [educationModuleResource](https://learn.microsoft.com/en-us/graph/api/resources/educationModuleResource?view=graph-rest-beta).",
+          "Target": "educationModule"
+        }
+      ],
+      "Id": "3e9f0779-4339-4ce3-afea-420ed8d03f50",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-09-05T00:00:00",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f42a2acd-7e06-4b84-abdd-5df825fc2845",
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWrite.All",
