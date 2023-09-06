@@ -5422,7 +5422,7 @@ items:
               - name: People admin settings
                 href: resources/peopleadminsettings.md
                 items:
-                  - name: Org control for pronouns settings
+                  - name: Pronouns settings
                     items:
                       - name: Pronouns settings
                         href: resources/pronounssettings.md
