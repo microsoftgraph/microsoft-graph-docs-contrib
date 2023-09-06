@@ -945,7 +945,7 @@ items:
               - name: API mapping
                 href: migrate-exchange-web-services-api-mapping.md
           - name: Outlook REST APIs
-            href: /outlook/rest/compare-graph?toc=/graph/toc.json
+            href: /outlook/rest/compare-graph?context=graph/context
       - name: Use SDKs
         items:
           - name: Overview
