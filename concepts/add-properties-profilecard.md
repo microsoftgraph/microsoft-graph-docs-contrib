@@ -194,6 +194,9 @@ You can use the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/inst
 
 > [!NOTE]
 > The PowerShell commands for the profile card properties are only available in beta. Switch to the beta profile before you run the following commands.
+> ```powershell
+>    Select-MgProfile beta
+> ```
 
 ### Confirm your current settings
 
