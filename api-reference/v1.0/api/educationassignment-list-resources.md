@@ -243,7 +243,7 @@ The following is an example of the request.
   "name": "get_resources_with_orderby"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/2be08d97-b140-4eec-8cbd-88238d571060/resources?$orderby=distributeForStudentWork
+GET https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2/resources?$orderby=createdDateTime
 ```
 
 ### Response
@@ -261,17 +261,18 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('2be08d97-b140-4eec-8cbd-88238d571060')/resources",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2')/resources",
+    "@microsoft.graph.tips": "Use $orderby to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<2003c52e-807a-4186-9b49-60c573095461>')/assignments('<8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2>')/resources?$orderby=distributeForStudentWork,resource",
     "value": [
         {
             "distributeForStudentWork": true,
-            "id": "777c1719-d464-4385-96f5-f031f8bd3b14",
+            "id": "781c546e-380d-4506-b093-97deca996bca",
             "resource": {
-                "@odata.type": "#microsoft.graph.educationExternalResource",
-                "displayName": "Forms Complete (Postman Test Dev)",
-                "createdDateTime": "2022-04-13T05:09:25.9909527Z",
-                "lastModifiedDateTime": "2022-04-13T05:09:25.9919046Z",
-                "webUrl": "https://forms.office.com/Pages/AssignmentsDesignPage.aspx#TopView=Preview&FormId=kowztj5TbU-jJ5lCY3EjmS7FAyB6gIZBm0lgxXMJVGFUQVhTUzlTNE9ITlVRM04xWjMyOVVIM1VVTCQlQCN0PWcu",
+                "@odata.type": "#microsoft.graph.educationWordResource",
+                "displayName": "Document1",
+                "createdDateTime": "2022-07-28T22:09:02.5774073Z",
+                "lastModifiedDateTime": "2022-07-28T22:09:02.5774271Z",
+                "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!IDwAYNkmlUucm64fxXxnzYYTuh2luKRDvUVGQBLOmvYGIrNA3ZPMS4f7fGlHPato/items/0173CEVEPI6IRKYUT6EZCLFQOSCI4UYNJQ",
                 "createdBy": {
                     "application": null,
                     "device": null,

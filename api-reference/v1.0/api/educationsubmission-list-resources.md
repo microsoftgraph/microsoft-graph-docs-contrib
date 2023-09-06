@@ -220,7 +220,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Using `$orderby` to get resources
+### Example 3: Using `$search` to get resources
 
 #### Request
 
@@ -233,7 +233,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2/submissions/57ef8ee2-4755-4351-66d0-8e37192870a5/resources?$orderby= id
+GET https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2/submissions/57ef8ee2-4755-4351-66d0-8e37192870a5/resources?$search=createdDateTime
 ```
 
 ##### Response
@@ -254,6 +254,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2')/submissions('57ef8ee2-4755-4351-66d0-8e37192870a5')/resources",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<2003c52e-807a-4186-9b49-60c573095461>')/assignments('<8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2>')/submissions('<57ef8ee2-4755-4351-66d0-8e37192870a5>')/resources?$select=assignmentResourceUrl,resource",
     "value": [
         {
             "assignmentResourceUrl": "https://assignments.onenote.com/api/v1.0/edu/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2/resources/781c546e-380d-4506-b093-97deca996bca",

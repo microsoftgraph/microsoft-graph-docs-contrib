@@ -701,7 +701,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/me/assignments?$orderby=status
+GET https://graph.microsoft.com/v1.0/education/me/assignments?$orderby=createdDateTime
 ```
 
 #### Response
@@ -722,111 +722,28 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/me/assignments",
-    "@odata.nextLink": "https://graph.microsoft.com/v1.0/education/me/assignments?$orderby=status&$skiptoken=MyZRVkZCUVVGQlFVRTJaMGxCUVVGQlFVRkJRWGxCUVVGQmJGZDRlVzV3TkZCS1JXVlpZMjVST1RoR1REZFFaejA5",
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/education/me/assignments?$orderby=createdDateTime&$skiptoken=MyZRVkZCUVVGQlFVRlVkMUZCUVVGQlFVRkJRWGxCUVVGQmNFRkhaMEY1ZFhOelJXRm1TRmRrWTBoT1MwVjVRVDA5",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/me/assignments?$select=addedStudentAction,addToCalendarAction",
     "value": [
         {
-            "classId": "2003c52e-807a-4186-9b49-60c573095461",
-            "displayName": "2022-04-14T05_08_50_854Z",
-            "closeDateTime": "2050-05-26T17:00:00Z",
-            "dueDateTime": "2050-05-18T17:00:00Z",
+            "classId": "b009a655-584c-4cb7-80dd-2cf04ec863d2",
+            "displayName": "2023-08-30T05:24:32.267Z2578",
+            "closeDateTime": null,
+            "dueDateTime": "2023-09-29T05:24:32.267Z",
             "assignDateTime": null,
-            "assignedDateTime": null,
+            "assignedDateTime": "2023-08-30T05:24:40.846Z",
             "allowLateSubmissions": true,
             "resourcesFolderUrl": null,
             "feedbackResourcesFolderUrl": null,
-            "createdDateTime": "2022-04-13T05:09:21.009Z",
-            "lastModifiedDateTime": "2022-10-19T23:02:21.3868802Z",
+            "createdDateTime": "2023-08-30T05:24:32.492Z",
+            "lastModifiedDateTime": "2023-08-30T05:24:40.905Z",
             "allowStudentsToAddResourcesToSubmission": false,
             "status": "assigned",
             "notificationChannelUrl": null,
-            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%222003c52e-807a-4186-9b49-60c573095461%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%222be08d97-b140-4eec-8cbd-88238d571060%5C%22%5D,%5C%22submissionId%5C%22%3Anull%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
+            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%22b009a655-584c-4cb7-80dd-2cf04ec863d2%5C%22,%5C%22assignmentIds%5C%22%3A%5B%5C%22e9d561aa-a6b2-4b53-8dcb-999f202d6bef%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22,%5C%22appId%5C%22%3A%5C%22de8bc8b5-d9f9-48b1-a8ad-b748da725064%5C%22%7D%22,%22channelId%22%3Anull%7D",
             "addToCalendarAction": "none",
             "addedStudentAction": "none",
-            "id": "2be08d97-b140-4eec-8cbd-88238d571060",
-            "instructions": null,
-            "assignTo": null,
-            "grading": {
-                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-                "maxPoints": 100
-            },
-            "createdBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-                    "displayName": null
-                }
-            },
-            "lastModifiedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
-                    "displayName": null
-                }
-            }
-        },
-        {
-            "classId": "2003c52e-807a-4186-9b49-60c573095461",
-            "displayName": "2022-04-14T02_07_33_835Z",
-            "closeDateTime": "2050-05-26T17:00:00Z",
-            "dueDateTime": "2050-05-18T17:00:00Z",
-            "assignDateTime": null,
-            "assignedDateTime": null,
-            "allowLateSubmissions": true,
-            "resourcesFolderUrl": null,
-            "feedbackResourcesFolderUrl": null,
-            "createdDateTime": "2022-04-13T02:07:33.972Z",
-            "lastModifiedDateTime": "2022-04-13T02:09:20.1336769Z",
-            "allowStudentsToAddResourcesToSubmission": false,
-            "status": "assigned",
-            "notificationChannelUrl": null,
-            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%222003c52e-807a-4186-9b49-60c573095461%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%227242e03e-048c-437b-8810-3e89b285a362%5C%22%5D,%5C%22submissionId%5C%22%3Anull%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
-            "addToCalendarAction": "none",
-            "addedStudentAction": "none",
-            "id": "7242e03e-048c-437b-8810-3e89b285a362",
-            "instructions": null,
-            "assignTo": null,
-            "grading": {
-                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-                "maxPoints": 100
-            },
-            "createdBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-                    "displayName": null
-                }
-            },
-            "lastModifiedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "AAAAAAAA-0123-4567-89AB-1B4BB48C3119",
-                    "displayName": null
-                }
-            }
-        },
-        {
-            "classId": "2003c52e-807a-4186-9b49-60c573095461",
-            "displayName": "2022-04-14T01_59_02_516Z",
-            "closeDateTime": "2050-05-26T17:00:00Z",
-            "dueDateTime": "2050-05-18T17:00:00Z",
-            "assignDateTime": null,
-            "assignedDateTime": null,
-            "allowLateSubmissions": true,
-            "resourcesFolderUrl": null,
-            "feedbackResourcesFolderUrl": null,
-            "createdDateTime": "2022-04-13T01:59:30.258Z",
-            "lastModifiedDateTime": "2022-04-13T02:02:47.719251Z",
-            "allowStudentsToAddResourcesToSubmission": false,
-            "status": "assigned",
-            "notificationChannelUrl": null,
-            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%222003c52e-807a-4186-9b49-60c573095461%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%2203a893d4-f64b-47e4-9e0c-afac4b357007%5C%22%5D,%5C%22submissionId%5C%22%3Anull%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
-            "addToCalendarAction": "none",
-            "addedStudentAction": "none",
-            "id": "03a893d4-f64b-47e4-9e0c-afac4b357007",
+            "id": "e9d561aa-a6b2-4b53-8dcb-999f202d6bef",
             "instructions": null,
             "assignTo": null,
             "grading": {
