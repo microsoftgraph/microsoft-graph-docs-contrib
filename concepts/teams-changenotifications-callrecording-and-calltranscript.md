@@ -79,7 +79,7 @@ Content-Type: application/json
 
 ## Subscribe to recordings available at the tenant level
 
-To get change notifications for any recording available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllRecordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription is supported only for regular and recurring meetings scheduled on the calendar.
+To get change notifications for any recording available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllRecordings`. This subscription is supported only for regular and recurring meetings scheduled on the calendar.
 
 ### Permissions
 
@@ -103,9 +103,7 @@ Content-Type: application/json
   "changeType": "created",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "resource": "communications/onlineMeetings/getAllRecordings",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
+  "includeResourceData": false,
   "expirationDateTime": "2023-04-11T11:00:00.0000000Z",
   "clientState": "{secretClientState}"
 }
@@ -113,7 +111,7 @@ Content-Type: application/json
 
 ## Subscribe to recordings available for a particular online meeting
 
-To get change notifications for any recording available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/recordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription is supported only for regular and recurring meetings scheduled on the calendar.
+To get change notifications for any recording available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/recordings`. This subscription is supported only for regular and recurring meetings scheduled on the calendar.
 
 ### Permissions
 
@@ -137,9 +135,7 @@ Content-Type: application/json
   "changeType": "created",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "resource": "communications/onlineMeetings/{onlineMeetingId}/recordings",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
+  "includeResourceData": false,
   "expirationDateTime": "2023-04-11T11:00:00.0000000Z",
   "clientState": "{secretClientState}"
 }
