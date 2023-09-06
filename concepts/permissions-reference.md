@@ -1233,7 +1233,7 @@ The following usages are valid for both delegated and application permissions:
 #### Read risk events
 
 * Read all risk events generated for all users in the tenant (`GET /identityProtection/riskDetections`)
-* Read most recent 50 risk events (`GET /identityProtection/riskDetections?$orderBy=detectedDateTime desc&top=50`)
+* Read most recent 50 risk events (`GET /identityProtection/riskDetections?$orderby=detectedDateTime desc&top=50`)
 
 #### Read risky users
 
