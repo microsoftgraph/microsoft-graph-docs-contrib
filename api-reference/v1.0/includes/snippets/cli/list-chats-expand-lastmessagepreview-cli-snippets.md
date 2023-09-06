@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc chats list --expand lastMessagePreview
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc chats list --expand "lastMessagePreview"
 
 ```

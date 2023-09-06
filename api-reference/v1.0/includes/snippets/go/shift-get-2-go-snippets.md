@@ -56,7 +56,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Users().ByUserId("user-id").Settings().ShiftPreferences().Patch(context.Background(), requestBody, nil)
+shiftPreferences, err := graphClient.Users().ByUserId("user-id").Settings().ShiftPreferences().Patch(context.Background(), requestBody, nil)
 
 
 ```

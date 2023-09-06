@@ -29,7 +29,7 @@ requestBody.SetSignInPageText(&signInPageText)
 usernameHintText := "DefaultHint"
 requestBody.SetUsernameHintText(&usernameHintText) 
 
-result, err := graphClient.Organization().ByOrganization().Id("organization-id").Branding().Patch(context.Background(), requestBody, configuration)
+branding, err := graphClient.Organization().ByOrganizationId("organization-id").Branding().Patch(context.Background(), requestBody, configuration)
 
 
 ```

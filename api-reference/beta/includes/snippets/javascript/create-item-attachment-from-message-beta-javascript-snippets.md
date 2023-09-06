@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const attachment = {
   '@odata.type': '#microsoft.graph.itemAttachment',
-  name: 'Holiday event', 
+  name: 'Holiday event',
   item: {
     '@odata.type': 'microsoft.graph.event',
     subject: 'Discuss gifts for children',

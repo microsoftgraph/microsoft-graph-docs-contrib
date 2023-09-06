@@ -30,7 +30,7 @@ GET /education/classes/{id}/assignments/{id}/resources
 
 ## Optional query parameters
 
-This method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData query parameters to help customize the response.
+This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData query parameters to help customize the response.
 For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/f4a941ff-9da6-4707-ba5b-0
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-resources-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-resources-1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

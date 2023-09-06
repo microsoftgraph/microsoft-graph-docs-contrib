@@ -27,7 +27,7 @@ select := []string {
 }
 requestBody.SetSelect(select)
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().Reports().ExportJobs().Post(context.Background(), requestBody, nil)
+exportJobs, err := graphClient.DeviceManagement().VirtualEndpoint().Reports().ExportJobs().Post(context.Background(), requestBody, nil)
 
 
 ```

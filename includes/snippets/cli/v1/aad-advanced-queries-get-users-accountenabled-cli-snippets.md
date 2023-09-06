@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc users list --filter accountEnabled eq false
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc users list --filter "accountEnabled eq false"
 
 ```

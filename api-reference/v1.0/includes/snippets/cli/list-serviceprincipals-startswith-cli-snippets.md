@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc service-principals list --filter "startswith(displayName, 'a')&`$count=true&`$top=1&`$orderby=displayName" --consistency-level eventual
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc service-principals list --top "1" --filter "startswith(displayName, 'a')" --count "true" --orderby "displayName" --consistency-level "eventual"
 
 ```

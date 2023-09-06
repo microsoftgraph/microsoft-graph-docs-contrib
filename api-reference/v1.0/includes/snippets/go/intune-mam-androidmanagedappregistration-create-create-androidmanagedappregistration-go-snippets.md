@@ -45,7 +45,7 @@ requestBody.SetAppIdentifier(appIdentifier)
 version := "Version value"
 requestBody.SetVersion(&version) 
 
-result, err := graphClient.DeviceAppManagement().ManagedAppRegistrations().Post(context.Background(), requestBody, nil)
+managedAppRegistrations, err := graphClient.DeviceAppManagement().ManagedAppRegistrations().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.DeviceAppManagement().ManagedEBooks().ByManagedEBookId("managedEBook-id").DeviceStates().ByDeviceStateId("deviceInstallState-id").Delete(context.Background(), nil)
+graphClient.DeviceAppManagement().ManagedEBooks().ByManagedEBookId("managedEBook-id").DeviceStates().ByDeviceInstallStateId("deviceInstallState-id").Delete(context.Background(), nil)
 
 
 ```

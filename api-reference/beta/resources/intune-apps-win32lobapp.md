@@ -182,6 +182,7 @@ Here is a JSON representation of the resource.
   "installExperience": {
     "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
     "runAsAccount": "String",
+    "maxRunTimeInMinutes": 1024,
     "deviceRestartBehavior": "String"
   },
   "returnCodes": [

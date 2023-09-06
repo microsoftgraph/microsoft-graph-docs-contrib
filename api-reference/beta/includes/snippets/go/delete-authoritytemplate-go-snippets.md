@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Security().Labels().Authorities().ByAuthoritieId("authorityTemplate-id").Delete(context.Background(), nil)
+graphClient.Security().Labels().Authorities().ByAuthorityTemplateId("authorityTemplate-id").Delete(context.Background(), nil)
 
 
 ```

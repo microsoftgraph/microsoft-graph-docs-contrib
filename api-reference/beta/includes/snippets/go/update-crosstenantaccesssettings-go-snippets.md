@@ -19,7 +19,7 @@ requestBody := graphmodelsnetworkaccess.NewCrossTenantAccessSettings()
 networkPacketTaggingStatus := graphmodels.ENABLED_STATUS 
 requestBody.SetNetworkPacketTaggingStatus(&networkPacketTaggingStatus) 
 
-result, err := graphClient.NetworkAccess().Settings().CrossTenantAccess().Patch(context.Background(), requestBody, nil)
+crossTenantAccess, err := graphClient.NetworkAccess().Settings().CrossTenantAccess().Patch(context.Background(), requestBody, nil)
 
 
 ```

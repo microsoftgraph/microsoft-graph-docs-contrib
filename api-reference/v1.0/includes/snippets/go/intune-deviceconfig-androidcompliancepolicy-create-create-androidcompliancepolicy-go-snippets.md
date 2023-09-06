@@ -65,7 +65,7 @@ requestBody.SetSecurityRequireUpToDateSecurityProviders(&securityRequireUpToDate
 securityRequireCompanyPortalAppIntegrity := true
 requestBody.SetSecurityRequireCompanyPortalAppIntegrity(&securityRequireCompanyPortalAppIntegrity) 
 
-result, err := graphClient.DeviceManagement().DeviceCompliancePolicies().Post(context.Background(), requestBody, nil)
+deviceCompliancePolicies, err := graphClient.DeviceManagement().DeviceCompliancePolicies().Post(context.Background(), requestBody, nil)
 
 
 ```

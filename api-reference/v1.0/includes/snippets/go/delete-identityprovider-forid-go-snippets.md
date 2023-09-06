@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Identity().IdentityProviders().ByIdentityProviderId("identityProviderBase-id").Delete(context.Background(), nil)
+graphClient.Identity().IdentityProviders().ByIdentityProviderBaseId("identityProviderBase-id").Delete(context.Background(), nil)
 
 
 ```

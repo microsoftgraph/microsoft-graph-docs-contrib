@@ -1,5 +1,5 @@
 ---
-title: "Clone a team"
+title: "team: clone"
 description: "Create a copy of a team. This operation also creates a copy of the corresponding group."
 author: "nkramer"
 ms.localizationpriority: medium
@@ -7,29 +7,25 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Clone a team
+# team: clone
 
 Namespace: microsoft.graph
-
-
 
 Create a copy of a [team](../resources/team.md). This operation also creates a copy of the corresponding [group](../resources/group.md).
 You can specify which parts of the team to clone:
 
-- **apps** - Copies Microsoft Teams apps that are installed in the team. 
+- **apps** - Copies Microsoft Teams apps that are installed in the team.
 - **channels** – Copies the channel structure (but not the messages in the channel).
 - **members** – Copies the members and owners of the group.
 - **settings** – Copies all settings within the team, along with key group settings.
 - **tabs** – Copies the tabs within channels.
 
-When tabs are cloned, they are put into an unconfigured state 
--- they are displayed on the tab bar in Microsoft Teams, and the first time you open them, you'll go through the configuration screen. 
-(If the person opening the tab does not have permission to configure apps, they will see a message explaining that the tab hasn't been configured.)
+> [!NOTE]
+> This method isn't supported for organization-wide teams.
 
-Cloning is a long-running operation.
-After the POST clone returns, you need to GET the [operation](../resources/teamsasyncoperation.md) to see if it's "running" or "succeeded" or "failed". 
-You should continue to GET until the status is not "running". 
-The recommended delay between GETs is 5 seconds.
+When tabs are cloned, they are put into an unconfigured state - they are displayed on the tab bar in Microsoft Teams, and the first time you open them, you'll go through the configuration screen. (If the person opening the tab does not have permission to configure apps, they will see a message explaining that the tab hasn't been configured.)
+
+Cloning is a long-running operation. After the POST clone returns, you need to GET the [operation](../resources/teamsasyncoperation.md) to see if it's "running" or "succeeded" or "failed". You should continue to GET until the status is not "running". The recommended delay between GETs is 5 seconds.
 
 ## Permissions
 
@@ -66,13 +62,16 @@ POST /teams/{id}/clone
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |A comma-separated list of the parts to clone. Legal parts are "apps, tabs, settings, channels, members".|
 |visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (optional)| Specifies the visibility of the group. Possible values are: **Private**, **Public**. If visibility is not specified, the visibility will be copied from the original team/group. If the team being cloned is an **educationClass** team, the visibility parameter is ignored, and the new group's visibility will be set to HiddenMembership.|
 
+> [!NOTE]
+> If the **description** property isn't specified in the request body, it takes the value of the **displayName** property from the request payload.
+
 ## Response
 
 If successful, this method will return a `202 Accepted` response code with a Location: header pointing to the [operation](../resources/teamsasyncoperation.md) resource.
 When the operation is complete, the operation resource will tell you the id of the created team.
 
 ## Example
-#### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -127,7 +126,7 @@ Content-Type: application/json
 
 ---
 
-#### Response
+### Response
 The following is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"

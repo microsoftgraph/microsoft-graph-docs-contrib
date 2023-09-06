@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceAppManagement().MdmWindowsInformationProtectionPolicies().ByMdmWindowsInformationProtectionPolicieId("mdmWindowsInformationProtectionPolicy-id").Get(context.Background(), nil)
+mdmWindowsInformationProtectionPolicies, err := graphClient.DeviceAppManagement().MdmWindowsInformationProtectionPolicies().ByMdmWindowsInformationProtectionPolicyId("mdmWindowsInformationProtectionPolicy-id").Get(context.Background(), nil)
 
 
 ```
