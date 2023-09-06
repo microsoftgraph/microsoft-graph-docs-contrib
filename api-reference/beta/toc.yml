@@ -16312,22 +16312,24 @@ items:
                     href: resources/security-host.md
                   - name: Get
                     href: api/security-host-get.md
+                  - name: Get reputation
+                    href: api/security-host-get-reputation.md
                   - name: List child host pairs
                     href: api/security-host-list-childhostpairs.md
-                  - name: List host pairs
-                    href: api/security-host-list-hostpairs.md
                   - name: List components
                     href: api/security-host-list-components.md
                   - name: List cookies
                     href: api/security-host-list-cookies.md
+                  - name: List host pairs
+                    href: api/security-host-list-hostpairs.md
+                  - name: List host SSL certificate
+                    href: api/security-hostsslcertificate-list-host.md
                   - name: List parent host pairs
                     href: api/security-host-list-parenthostpairs.md
                   - name: List passive DNS
                     href: api/security-host-list-passivedns.md
                   - name: List passive DNS reverse
                     href: api/security-host-list-passivednsreverse.md
-                  - name: Get reputation
-                    href: api/security-host-get-reputation.md
                   - name: List subdomains
                     href: api/security-host-list-subdomains.md
                   - name: List trackers
@@ -16358,6 +16360,14 @@ items:
                     href: api/security-host-list-parenthostpairs.md
                   - name: List child host pairs
                     href: api/security-host-list-childhostpairs.md
+              - name: Host SSL certificate
+                items:
+                - name: Host SSL certificate
+                  href: resources/security-hostsslcertificate.md
+                - name: List
+                  href: api/security-hostsslcertificate-list-host.md
+                - name: Get
+                  href: api/security-hostsslcertificate-get.md
               - name: Host tracker
                 items:
                   - name: Host tracker
@@ -16386,6 +16396,14 @@ items:
                     href: resources/security-passivednsrecord.md
                   - name: Get
                     href: api/security-passivednsrecord-get.md
+              - name: SSL certificate
+                items:
+                - name: SSL certificate
+                  href: resources/security-sslcertificate.md
+                - name: List
+                  href: api/security-sslcertificate-list.md
+                - name: Get
+                  href: api/security-sslcertificate-get.md
               - name: Subdomain
                 items:
                   - name: Subdomain
@@ -17398,7 +17416,7 @@ items:
                     href: api/presence-clearuserpreferredpresence.md
                   - name: Set user status message
                     href: api/presence-setstatusmessage.md
-              - name: Virtual event
+              - name: Virtual event (preview)
                 href: resources/virtualevent.md
                 items:
                   - name: Webinar

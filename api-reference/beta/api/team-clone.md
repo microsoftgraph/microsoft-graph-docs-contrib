@@ -127,6 +127,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 #### Response
 
 The following is an example of the response. Note: The response object shown here might be shortened for readability.

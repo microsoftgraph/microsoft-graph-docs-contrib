@@ -67,7 +67,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "user_add_teamsApp"
+  "name": "user_add_teamsApp_v1_e1"
 }-->
 
 ```http
@@ -135,7 +135,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "user_add_teamsApp_consent_resource_specific_permissions"
+  "name": "user_add_teamsApp_consent_resource_specific_permissions_v1_e2"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/users/5b649834-7412-4cce-9e69-176e95a394f5/teamwork/installedApps
