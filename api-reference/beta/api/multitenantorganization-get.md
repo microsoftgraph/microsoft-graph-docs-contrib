@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization
 
 ---
 
-
 ### Response
 
 <!-- {

@@ -16312,14 +16312,18 @@ items:
                     href: resources/security-host.md
                   - name: Get
                     href: api/security-host-get.md
+                  - name: Get reputation
+                    href: api/security-host-get-reputation.md
                   - name: List child host pairs
                     href: api/security-host-list-childhostpairs.md
-                  - name: List host pairs
-                    href: api/security-host-list-hostpairs.md
                   - name: List components
                     href: api/security-host-list-components.md
                   - name: List cookies
                     href: api/security-host-list-cookies.md
+                  - name: List host pairs
+                    href: api/security-host-list-hostpairs.md
+                  - name: List host SSL certificate
+                    href: api/security-hostsslcertificate-list-host.md
                   - name: List parent host pairs
                     href: api/security-host-list-parenthostpairs.md
                   - name: List passive DNS
@@ -16368,6 +16372,14 @@ items:
                     href: api/security-hostport-get.md
                   - name: List ports for a host
                     href: api/security-host-list-ports.md
+              - name: Host SSL certificate
+                items:
+                - name: Host SSL certificate
+                  href: resources/security-hostsslcertificate.md
+                - name: List
+                  href: api/security-hostsslcertificate-list-host.md
+                - name: Get
+                  href: api/security-hostsslcertificate-get.md
               - name: Host tracker
                 items:
                   - name: Host tracker
@@ -16396,6 +16408,14 @@ items:
                     href: resources/security-passivednsrecord.md
                   - name: Get
                     href: api/security-passivednsrecord-get.md
+              - name: SSL certificate
+                items:
+                - name: SSL certificate
+                  href: resources/security-sslcertificate.md
+                - name: List
+                  href: api/security-sslcertificate-list.md
+                - name: Get
+                  href: api/security-sslcertificate-get.md
               - name: Subdomain
                 items:
                   - name: Subdomain
@@ -17408,7 +17428,7 @@ items:
                     href: api/presence-clearuserpreferredpresence.md
                   - name: Set user status message
                     href: api/presence-setstatusmessage.md
-              - name: Virtual event
+              - name: Virtual event (preview)
                 href: resources/virtualevent.md
                 items:
                   - name: Webinar

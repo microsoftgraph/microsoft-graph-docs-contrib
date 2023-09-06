@@ -76,8 +76,8 @@ Next, configure the authentication provider that the Microsoft Graph Toolkit sho
 1. In the code editor, open the **src/index.tsx** file, and to the list of imports, add:
 
    ```TypeScript
-   import { Providers } from '@microsoft/mgt-element';
-   import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
+   import { Providers } from "@microsoft/mgt-element";
+   import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
    ```
 
 1. After the last `import` statement, initialize the Microsoft Graph Toolkit with MSAL provider.
