@@ -44,7 +44,7 @@ Represents the connection endpoints which direct data to and from the services r
 | Relationship             | Type                                                                               | Description                                                                                                                                                                          |
 | :----------------------- | :--------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | host                     | [microsoft.graph.security.host](../resources/security-host.md)                     | The **host** related to this **hostPort**. This is a reverse navigation property. When navigating to **hostPorts** from a **host**, this should be assumed to be a return reference. |
-| mostRecentSslCertificate | [microsoft.graph.security.sslcertificate](../resources/security-sslcertificate.md) | The most recent **sslCertificate** used to communicate on the port                                                                                                                   |
+| mostRecentSslCertificate | [microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) | The most recent **sslCertificate** used to communicate on the port                                                                                                                   |
 
 ## JSON representation
 
