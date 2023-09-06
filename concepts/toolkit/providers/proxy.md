@@ -15,7 +15,7 @@ Your backend service must expose an API that will be called for every call to Mi
 
 Your API implementation should then call Microsoft Graph on behalf of the user and return the results to the component.
 
-For an implementation example, see the [ASP.NET MVC sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/main/samples/proxy-provider-asp-net-core).
+For an implementation example, see the [ASP.NET MVC sample](https://github.com/pnp/mgt-samples/tree/main/samples/app/proxy-provider-asp-net-core).
 
 To learn more about authentication providers, see [providers](./providers.md).
 

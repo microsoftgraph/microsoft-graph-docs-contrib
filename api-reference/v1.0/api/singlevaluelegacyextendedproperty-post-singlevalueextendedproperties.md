@@ -2,7 +2,7 @@
 title: "Create single-value extended property"
 description: "Create one or more single-value extended properties in a new or existing instance of a resource. "
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: non-product-specific
 doc_type: apiPageType
 ---
@@ -344,7 +344,7 @@ Content-Type: application/json
 ```
 
 ### Example 2: Create a single-value extended property for a message
-#### Request 
+#### Request
 
 The second example creates one single-value extended property for the specified existing message. That extended property is the only element in the **singleValueExtendedProperties** array. The request body includes the following for the extended property:
 - **id** specifies the property type as `String`, the GUID, and the property named `Color`.
@@ -395,7 +395,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-message-and-svep-v1-e2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
