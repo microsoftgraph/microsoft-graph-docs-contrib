@@ -68,7 +68,7 @@ In the request body, provide a JSON object with the following parameters.
 >
 > - An error will be thrown if the **endDateTime** is provided without the **startDateTime** or if the **endDateTime** is earlier than the **startDateTime**.
 >
-> - If different users of the same tenant use the same **externalId** to run this API query, it creates different meeting instances with different IDs. `tenantId`, `userId`, and `externalId` together identifies a meeting with external ID.
+> -  When multiple users within the same tenant use the same externalId when executing this API query, it results in different meeting instances being generated, each with its own unique ID. The combination of `tenantId`, `userId`, and `externalId` collectively serves as the identifier for a meeting with an external ID.
 
 ## Response
 If successful, this method returns a `201 Created` response code if a new meeting is created, or a `200 OK` response code if an existing meeting is retrieved. In both cases, an [onlineMeeting](../resources/onlinemeeting.md) object is returned in the response body.
