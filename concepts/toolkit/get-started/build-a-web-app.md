@@ -60,7 +60,8 @@ Add the `mgt-msal2-provider` component to your HTML page and set the `client-id`
 To initialize the MSAL provider in your JavaScript, add the following code to your application:
 
 ```javascript
-import { Providers, Msal2Provider } from "@microsoft/mgt";
+import { Providers } from "@microsoft/mgt-element";
+import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
 
 Providers.globalProvider = new Msal2Provider({
   clientId: "<YOUR_CLIENT_ID>",
@@ -105,7 +106,8 @@ This is an example using the ES6 modules, the MSAL2 Provider initialized in HTML
 This is an example using the ES6 modules, the MSAL2 Provider initialized in JavaScript, and the Login component:
 
 ```javascript
-import { Providers, Msal2Provider } from "@microsoft/mgt";
+import { Providers } from "@microsoft/mgt-element";
+import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
 
 Providers.globalProvider = new Msal2Provider({
   clientId: "<YOUR_CLIENT_ID>",
@@ -169,7 +171,8 @@ If you're using the `mgt-loader` library, you can access the `Provider` and `Pro
 If you're using the toolkit via the npm packages, you can import the `Provider` and `ProviderState` from `@microsoft/mgt`.
 
 ```javascript
-import { Providers, ProviderState, Msal2Provider } from "@microsoft/mgt";
+import { Providers, ProviderState } from "@microsoft/mgt-element";
+import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
 
 Providers.globalProvider = new Msal2Provider({
   clientId: "<YOUR_CLIENT_ID>",
