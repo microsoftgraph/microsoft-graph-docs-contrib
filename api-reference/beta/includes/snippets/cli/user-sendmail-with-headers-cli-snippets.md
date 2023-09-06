@@ -19,14 +19,14 @@ mgc-beta users send-mail post --user-id {user-id} --body '{\
         }\
       }\
     ],\
-    "internetMessageHeaders":[\
+    "internetMessageHeaders": [\
       {\
-        "name":"x-custom-header-group-name",\
-        "value":"Nevada"\
+        "name": "x-custom-header-group-name",\
+        "value": "Nevada"\
       },\
       {\
-        "name":"x-custom-header-group-id",\
-        "value":"NV001"\
+        "name": "x-custom-header-group-id",\
+        "value": "NV001"\
       }\
     ]\
   }\
