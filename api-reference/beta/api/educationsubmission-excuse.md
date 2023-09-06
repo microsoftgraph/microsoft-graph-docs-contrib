@@ -13,11 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
- Teachers can mark a submission as excused to indicate that the submission has no further action for the student and will NOT be included in average grade calculations. Rubric selections and points feedback will be wiped. Only teachers can perform this action. 
+ Excuse a submission. Submission that are excused will not be included in average grade calculations, and rubric selections and points feedback will be deleted. Only teachers can perform this action. 
 
-If the Prefer: include-unknown-enum-members request header is provided, the excused submission retains the **excused** status. For more information, see the examples section.
+If the `Prefer: include-unknown-enum-members` request header is provided, the excused submission retains the **excused** status.
 
-If the Prefer: include-unknown-enum-members request header is not provided, the submission status changes to **returned**. For more information, see the examples section.
+Otherwise, the submission status changes to **returned**. For more information on this heading, see the [Examples](#examples) section.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
