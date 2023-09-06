@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new TimesOffRequestBuilderGetRequestConfiguration();
@@ -15,7 +15,6 @@ $queryParameters->filter = "sharedTimeOff/startDateTime ge 2019-03-11T00:00:00.0
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->timesOff()->get($requestConfiguration);
-
+$result = $graphServiceClient->teams()->byTeamId('team-id')->schedule()->timesOff()->get($requestConfiguration)->wait();
 
 ```

@@ -1,5 +1,5 @@
 ---
-title: "Clone a team"
+title: "team: clone"
 description: "Create a copy of a team. This operation also creates a copy of the corresponding group."
 author: "nkramer"
 ms.localizationpriority: medium
@@ -16,21 +16,18 @@ Namespace: microsoft.graph
 Create a copy of a [team](../resources/team.md). This operation also creates a copy of the corresponding [group](../resources/group.md).
 You can specify which parts of the team to clone:
 
-- **apps** - Copies Microsoft Teams apps that are installed in the team. 
+- **apps** - Copies Microsoft Teams apps that are installed in the team.
 - **channels** – Copies the channel structure (but not the messages in the channel).
 - **members** – Copies the members and owners of the group.
 - **settings** – Copies all settings within the team, along with key group settings.
 - **tabs** – Copies the tabs within channels.
 
-When tabs are cloned, they are put into an unconfigured state 
--- they are displayed on the tab bar in Microsoft Teams, and the first time you open them, you'll go through the configuration screen. 
-(If the person opening the tab does not have permission to configure apps, they will see a message explaining that the tab hasn't been configured.)
+> [!NOTE]
+> This method isn't supported for organization-wide teams.
 
-Cloning is a long-running operation.
-After the POST clone returns, you need to GET the [operation](../resources/teamsasyncoperation.md) 
-returned by the Location: header to see if it's "running" or "succeeded" or "failed". 
-You should continue to GET until the status is not "running". 
-The recommended delay between GETs is 5 seconds.
+When tabs are cloned, they are put into an unconfigured state - they are displayed on the tab bar in Microsoft Teams, and the first time you open them, you'll go through the configuration screen. (If the person opening the tab does not have permission to configure apps, they will see a message explaining that the tab hasn't been configured.)
+
+Cloning is a long-running operation. After the POST clone returns, you need to GET the [operation](../resources/teamsasyncoperation.md) returned by the Location: header to see if it's "running" or "succeeded" or "failed". You should continue to GET until the status is not "running". The recommended delay between GETs is 5 seconds.
 
 ## Permissions
 
@@ -58,7 +55,7 @@ POST /teams/{id}/clone
 
 ## Request body
 
-| Property	   | Type	|Description|
+| Property   | Type |Description|
 |:---------------|:--------|:----------|
 |classification|String (optional)|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](../resources/directorysetting.md) value, based on the [template definition](../resources/directorysettingtemplate.md). If classification is not specified, the classification will be copied from the original team/group.|
 |description|String (optional)|An optional description for the group. If this property is not specified, it will be left blank.|
@@ -101,6 +98,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/clone-team-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/clone-team-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/clone-team-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -126,8 +127,8 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+#### Response
 
-### Response
 The following is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
