@@ -80,7 +80,7 @@ This example shows how you can send an activity feed notification for a team. Th
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_for_team"
+  "name": "team_sendactivitynotification_for_team_beta_e1"
 }
 -->
 ``` http
@@ -162,7 +162,7 @@ Similar to the previous example, this example uses `entityUrl` for the `topic`. 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_entityurl_topic"
+  "name": "team_sendactivitynotification_entityurl_topic_beta_e1"
 }
 -->
 ``` http
@@ -249,7 +249,7 @@ Similar to the previous example, this example uses `entityUrl` for the `topic`. 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_upn"
+  "name": "team_sendactivitynotification_upn_beta_e3"
 }
 -->
 ``` http
@@ -335,7 +335,7 @@ As seen in the previous examples, you can link to different aspects of the team.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_set_topicsource_to_text"
+  "name": "team_sendactivitynotification_set_topicsource_to_text_beta_e4"
 }
 -->
 ``` http
@@ -422,7 +422,7 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_pending_fin_approve"
+  "name": "team_sendactivitynotification_pending_fin_approve_beta_e5"
 }
 -->
 
@@ -510,7 +510,7 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_6"
+  "name": "team_sendactivitynotification_beta_e6"
 }
 -->
 
@@ -600,7 +600,7 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_7"
+  "name": "team_sendactivitynotification_beta_e7"
 }
 -->
 
