@@ -456,6 +456,24 @@
       "CreatedDateTime": "2023-08-08T10:10:07.4078045Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Partner customer administration"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "dc7a0ac7-c74b-4473-84d8-47e35c796ce3",
+          "ApiChange": "Property",
+          "ChangedApiName": "autoExtendDuration",
+          "ChangeType": "Addition",
+          "Description": "Added the `autoExtendDuration` property to the [delegatedAdminRelationship](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminRelationship?view=graph-rest-beta) resource.",
+          "Target": "delegatedAdminRelationship"
+        }
+      ],
+      "Id": "dc7a0ac7-c74b-4473-84d8-47e35c796ce3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-09-06T09:22:59.3796631Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Partner customer administration"
     }
   ]
 }
