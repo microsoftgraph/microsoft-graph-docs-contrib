@@ -3,7 +3,7 @@
     {
       "ChangeList": [
          {
-          "Id": "b0fdba93-efca-407d-b7fc-12e792ece3f6",
+          "Id": "269e5da0-1864-497f-be83-ec8a9442ee66",
           "ApiChange": "Member",
           "ChangedApiName": "approval",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "subjectRightsRequestStage"
         },
         {
-          "Id": "b0fdba93-efca-407d-b7fc-12e792ece3f6",
+          "Id": "269e5da0-1864-497f-be83-ec8a9442ee66",
           "ApiChange": "Property",
           "ChangedApiName": "upns",
           "ChangeType": "Deprecation",
@@ -19,7 +19,7 @@
           "Target": "subjectRightsRequestEnumeratedMailboxLocation"
         },
         {
-          "Id": "b0fdba93-efca-407d-b7fc-12e792ece3f6",
+          "Id": "269e5da0-1864-497f-be83-ec8a9442ee66",
           "ApiChange": "Property",
           "ChangedApiName": "upns",
           "ChangeType": "Addition",
@@ -27,7 +27,7 @@
           "Target": "subjectRightsRequestEnumeratedMailboxLocation"
         }
       ],
-      "Id": "b0fdba93-efca-407d-b7fc-12e792ece3f6",
+      "Id": "269e5da0-1864-497f-be83-ec8a9442ee66",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-07-24T22:01:07.8528874Z",
@@ -43,6 +43,22 @@
           "ChangeType": "Addition",
           "Description": "Added the `approval` member to the **subjectRightsRequestStage** enumeration.",
           "Target": "subjectRightsRequestStage"
+        },
+        {
+          "Id": "b0fdba93-efca-407d-b7fc-12e792ece3f6",
+          "ApiChange": "Method",
+          "ChangedApiName": "subjectRightsRequest",
+          "ChangeType": "Addition",
+          "Description": "Changed the URL path from `/privacy` to `/security` in the following operations of the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-1.0) resource: [List](https://learn.microsoft.com/en-us/graph/api/subjectrightsrequest-list?view=graph-rest-1.0), [Create](https://learn.microsoft.com/en-us/graph/api/subjectrightsrequest-post?view=graph-rest-1.0), [Get](https://learn.microsoft.com/en-us/graph/api/subjectrightsrequest-get?view=graph-rest-1.0), [Update](https://learn.microsoft.com/en-us/graph/api/subjectrightsrequest-update?view=graph-rest-1.0), [getFinalAttachment](https://learn.microsoft.com/en-us/graph/api/subjectrightsrequest-getfinalattachment?view=graph-rest-1.0), and [getFinalReport](https://learn.microsoft.com/en-us/graph/api/subjectrightsrequest-getfinalreport?view=graph-rest-1.0). The `/privacy` path is deprecated and will stop returning data on March 30, 2025.",
+          "Target": "subjectRightsRequest"
+        },
+        {
+          "Id": "b0fdba93-efca-407d-b7fc-12e792ece3f6",
+          "ApiChange": "Method",
+          "ChangedApiName": "authoredNote",
+          "ChangeType": "Addition",
+          "Description": "Changed the URL path from `/privacy` to `/security` in the following operations of the [authoredNote](https://learn.microsoft.com/en-us/graph/api/resources/authoredNote?view=graph-rest-1.0) resource: [List](https://learn.microsoft.com/en-us/graph/api/subjectrightsrequest-list-notes?view=graph-rest-1.0) and [Create](https://learn.microsoft.com/en-us/graph/api/subjectrightsrequest-post-notes?view=graph-rest-1.0). The `/privacy` path is deprecated and will stop returning data on March 30, 2025.",
+          "Target": "authoredNote"
         },
         {
           "Id": "b0fdba93-efca-407d-b7fc-12e792ece3f6",
