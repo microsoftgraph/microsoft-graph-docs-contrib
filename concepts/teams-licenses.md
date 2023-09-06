@@ -20,7 +20,7 @@ The following table lists the APIs and [change notification](/graph/api/subscrip
 | [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/users/{user-id}/chats/getAllMessages</li><li>/me/chats/getAllMessages</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMessages</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMembers</li></ul> | B |
 | APIs: <ul><li>[GET /users/{user-id}/chats/getAllMessages](/graph/api/chats-getallmessages)</li><li>[GET /me/chats/getAllMessages](/graph/api/chats-getallmessages)</li><li>[GET /teams/{team-id}/channels/getAllMessages](/graph/api/channel-getallmessages)</li><li>[GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages](/graph/api/deletedteam-getallmessages)</li></ul> | A, B |
 | APIs, when updating the `policyViolation` property: <ul><li>[PATCH /teams/{team-id}/channels/{channel-id}/messages/{message-id}](/graph/api/chatmessage-update)</li><li>[PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}](/graph/api/chatmessage-update)</li><li>[PATCH /chats/{chatThread-id}/messages/{message-id}](/graph/api/chatmessage-update)</li></ul> | A |
-| Teams Meeting APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content](/graph/api/callrecording-get#example-2-get-callrecording-content)</li></ul> | No model parameter |
+| Teams meeting APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content](/graph/api/callrecording-get#example-2-get-callrecording-content)</li></ul> | No model parameter |
 
 > [!NOTE]
 > To set up an active Azure subscription for your application for billing purposes, see [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup). For more details, see [Payment and billing updates](#payment-and-billing).
@@ -100,7 +100,7 @@ The following APIs support the `model=B` parameter.
 
 The following APIs support evaluation mode. The evaluation quota is enforced per app, per tenant, per month. The quota is reset at the beginning of each calendar month, and any unused amount does not get carried over to the next month. 
 
-| APIs or or [change notification](/graph/api/subscription-post-subscriptions) `resources` | Evaluation Quota | [Price for additional use](#payment-and-billing) | Notes |
+| APIs or or [change notification](/graph/api/subscription-post-subscriptions) `resources` | Evaluation quota | [Price for additional use](#payment-and-billing) | Notes |
 |:-----------------------------|:----------------|:-------|:------|
 | [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/chats/getAllMessges</li><li>/teams/getAllMessages</li><li>/users/{user-id}/chats/getAllMessages</li><li>/me/chats/getAllMessages</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMessages</li></ul> |  500 messages per month per tenant per app | N/A |
 | [Change notification](/graph/api/subscription-post-subscriptions) `resources`: <ul><li>/chats/getAllMembers</li><li>/teams/getAllMembers</li><li>/appCatalogs/teamsApps/{app-id}/installedToChats/getAllMembers</li></ul> | 500 messages per month per tenant per app | N/A |
@@ -108,8 +108,8 @@ The following APIs support evaluation mode. The evaluation quota is enforced per
 | APIs: <ul><li>[GET /users/{user-id}/chats/getAllMessages](/graph/api/chats-getallmessages)</li><li>[GET /me/chats/getAllMessages](/graph/api/chats-getallmessages)</li></ul> | 500 messages per month per tenant per app | N/A |  Requests returning an empty list will be charged 1 message. |
 | APIs: <ul><li>[GET /teams/{team-id}/channels/getAllMessages](/graph/api/channel-getallmessages)</li><li>[GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages](/graph/api/deletedteam-getallmessages)</li></ul> |  500 messages per month per tenant per app | N/A |  Requests returning an empty list will be charged 1 message. |
 | APIs, when updating the `policyViolation` property: <ul><li>[PATCH /teams{team-id}/channels/{channel-id}/messages/{message-id}](/graph/api/chatmessage-update)</li><li>[PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}](/graph/api/chatmessage-update)</li><li>[PATCH /chats/{chatThread-id}/messages/{message-id}](/graph/api/chatmessage-update)</li></ul> |  500 messages per month per tenant per app | N/A |
-| Teams Meeting Transcript APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent)</li></ul>  |  600 minutes per month per tenant per app | N/A |
-| Teams Meeting Recording APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content](/graph/api/callrecording-get#example-2-get-callrecording-content)</li></ul>  |  600 minutes per month per tenant per app | N/A |
+| Teams meeting transcript APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent)</li></ul>  |  600 minutes per month per tenant per app | N/A |
+| Teams meeting recording APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content](/graph/api/callrecording-get#example-2-get-callrecording-content)</li></ul>  |  600 minutes per month per tenant per app | N/A |
 
 ## Seeded capacity
 
@@ -120,26 +120,27 @@ Seeded capacity is the amount of capacity that an app can use before a consumpti
 | `model=A` | Security and Compliance | See [`model=A` requirements](#modela-requirements)| Yes (Microsoft 365 E5 eligible license) | Yes |
 | `model=B` | Backup and restore, migration, sentiment analysis, analytics and insights | None | No | Yes |
 
-Seeded capacity is not applicable to Teams Meeting APIs. Please see [Payment requirements for Meeting APIs](#payment-requirements-for-meeting-apis) for details.
+Seeded capacity is not applicable for Teams meeting APIs. For details, see [Payment requirements for Meeting APIs](#payment-requirements-for-meeting-apis).
 
-## Payment requirements for Meeting APIs
+## Payment requirements for meeting APIs
 
-This section describes the payment requirements for Teams Meeting transcript and recording APIs. These APIs do not support the model A and model B payment models and can be used by any application, irrespective of their use case. 
-These APIs support an [evaluation mode](#evaluation-mode-default-requirements) that apps can use without configuring Azure billing setup. The following table summarizes the evaluation mode behavior.
+This section describes the payment requirements for Teams meeting transcript and recording APIs. These APIs do not support the model A and model B payment models and can be used by any application, regardless of the use case. 
 
-| Azure Billing Setup | Result |
+These APIs support an [evaluation mode](#evaluation-mode-default-requirements) that apps can use without configuring Azure billing. The following table summarizes the evaluation mode behavior.
+
+| Azure billing setup | Result |
 | -------- | -------- |
-| Not configured | Evaluation mode capacity will be available for download. Beyond that, the API will fail with error code: `402` (Payment Required). |
-| Configured | Unlimited meeting content will be available for download and priced based on per minute of content, as described below. Engineering RPS limits still apply. |
+| Not configured | Evaluation mode capacity will be available for download. Beyond that, the API will fail with error code `402` (Payment Required). |
+| Configured | Unlimited meeting content will be available for download and priced based on per minute of content, as described in the following table. Engineering RPS limits still apply. |
 
-The following table lists the price for use for these APIs.
+The following table lists the price for use for Teams meeting APIs.
 
 | APIs | [Seeded capacity](#seeded-capacity) | [Price for use](#payment-and-billing) | Notes |
 |:---------------------------------------------------------------|:----------------|:-------|:------|
 | Teams Meeting Transcript APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content)</li><li>[GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent)</li></ul>  | None |  $0.024* per minute | The duration will be rounded down to nearest minute. |
 | Teams Meeting Recording APIs: <ul><li>[GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content](/graph/api/callrecording-get#example-2-get-callrecording-content)</li></ul>  | None | $0.03* per minute | The duration will be rounded down to nearest minute. |
 
-*The price for use will be applicable from October 3, 2023. It is subject to change in the future.
+*The price for use is applicable starting October 3, 2023. The price for use is subject to change in the future.
 
 
 ## Payment and billing
