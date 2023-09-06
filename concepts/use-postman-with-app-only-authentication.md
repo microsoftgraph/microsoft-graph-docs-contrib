@@ -33,7 +33,7 @@ Inside the **Application** folder are requests for various Microsoft Graph workl
 
 You have now successfully made a Microsoft Graph call using application authentication.
 
-You can follow these steps to make other requests to Microsoft Graph. Remember that you have to add permissions to your Azure AD application for other requests to work; otherwise, you get permission denied errors in your responses. To find the right permissions for your request, check out [Microsoft Graph permissions reference](https://learn.microsoft.com/en-us/graph/permissions-reference?context=graph%2Fapi%2F1.0&view=graph-rest-1.0). 
+You can follow these steps to make other requests to Microsoft Graph. Remember that you have to add [permissions](permissions-reference.md) to your Azure AD application for other requests to work; otherwise, you get permission denied errors in your responses. To find the right permissions, check the Permissions section of the relevant API, and look for Application permission type.
 
 ### Contribute to the collection
 
