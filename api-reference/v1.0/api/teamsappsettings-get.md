@@ -18,8 +18,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|TeamworkAppSettings.Read.All, TeamworkAppSettings.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -48,9 +48,10 @@ If successful, this method returns a `200 OK` response code and a [teamsAppSetti
 
 ## Examples
 
-### Example 1: Get the tenant-wide settings for all Teams apps in the tenant.
+### Example 1: Get the tenant-wide settings for all Teams apps in the tenant
 
 #### Request
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -62,7 +63,7 @@ GET https://graph.microsoft.com/v1.0/teamwork/teamsAppSettings
 ```
 
 #### Response
-
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
