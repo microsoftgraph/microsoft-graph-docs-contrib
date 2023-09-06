@@ -33,6 +33,7 @@ Inherits from [delegatedAdminRelationship](../resources/delegatedadminrelationsh
 |isPartnerConsentPending|Boolean|Indicates the indirect reseller partner consent status. `true` indicates that the partner has yet to review the relationship; `false` indicates that the partner has already provided consent by approving or rejecting the relationship.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the relationship was last modified. Read-only. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
 |status|delegatedAdminRelationshipStatus|The status of the relationship. Read-only. The possible values are: `activating`, `active`, `approvalPending`, `approved`, `created`, `expired`, `expiring`, `terminated`, `terminating`, `terminationRequested`, `unknownFutureValue`. Supports `$orderBy`. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
+|autoExtendDuration|Duration| The `autoExtendDuration` of the relationship in ISO 8601 format. This property dictates the duration by which the relationship's validity will be automatically extended. Only `P0D`, `PT0S` or `P180D` are the valid values and the default value is `PT0S`. The value `PT0S` indicates that the relationship will expire when its end date is reached and will not be automatically extended.|
 
 ## Relationships
 
@@ -68,6 +69,7 @@ The following is a JSON representation of the resource.
   "indirectProviderTenantId": "String",
   "isPartnerConsentPending": "Boolean",
   "lastModifiedDateTime": "String (timestamp)",
-  "status": "String"
+  "status": "String",
+  "autoExtendDuration": "String"
 }
 ```
