@@ -150,7 +150,13 @@ Content-type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('b935e675-5e67-48b9-8d45-249d5f88e964')/onlineMeetings('MSpiOTM1ZTY3NS01ZTY3LTQ4YjktOGQ0NS0yNDlkNWY4OGU5NjQqMCoqMTk6bWVldGluZ19ZbU0zTnpJNU9USXRZakU0WlMwME1tUTNMVGt6TVRRdFkyWm1PRGRtWmpsaVptRTNAdGhyZWFkLnYy')/recordings/$entity",
     "id": "7e31db25-bc6e-4fd8-96c7-e01264e9b6fc",
-    "createdDateTime": "2023-04-10T08:13:17.5990966Z"
+    "createdDateTime": "2023-04-10T08:13:17.5990966Z",
+    "meetingOrganizer": {
+      "user": {
+        "id": "b935e675-5e67-48b9-8d45-249d5f88e964",
+        "displayName": null,
+      }
+    }
 }
 ```
 

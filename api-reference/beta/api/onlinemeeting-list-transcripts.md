@@ -136,15 +136,33 @@ Content-Type: application/json
     "value": [
         {
             "id": "MSMjMCMjZDAwYWU3NjUtNmM2Yi00NjQxLTgwMWQtMTkzMmFmMjEzNzdh",
-            "createdDateTime": "2021-09-17T06:09:24.8968037Z"
+            "createdDateTime": "2021-09-17T06:09:24.8968037Z",
+            "meetingOrganizer": {
+                "user": {
+                    "id": "ba321e0d-79ee-478d-8e28-85a19507f456",
+                    "displayName": null,
+                }
+            }
         },
         {
             "id": "MSMjMCMjMzAxNjNhYTctNWRmZi00MjM3LTg5MGQtNWJhYWZjZTZhNWYw",
-            "createdDateTime": "2021-09-16T18:58:58.6760692Z"
+            "createdDateTime": "2021-09-16T18:58:58.6760692Z",
+            "meetingOrganizer": {
+                "user": {
+                    "id": "ba321e0d-79ee-478d-8e28-85a19507f456",
+                    "displayName": null,
+                }
+            }
         },
         {
             "id": "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4",
-            "createdDateTime": "2021-09-16T18:56:00.9038309Z"
+            "createdDateTime": "2021-09-16T18:56:00.9038309Z",
+            "meetingOrganizer": {
+                "user": {
+                    "id": "ba321e0d-79ee-478d-8e28-85a19507f456",
+                    "displayName": null,
+                }
+            }
         }        
     ]
 }
