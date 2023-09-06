@@ -144,7 +144,7 @@ Content-Type: application/json
 
 ## Remarks
 
-Versions are returned in descending order (newest to oldest). The OData `$orderBy` query string parameter is not supported.
+Versions are returned in descending order (newest to oldest). The OData `$orderby` query string parameter is not supported.
 
 OneDrive does not preserve the complete metadata for previous versions of a file.
 
