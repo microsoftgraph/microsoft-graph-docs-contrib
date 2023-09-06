@@ -44,7 +44,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "deletedDateTime": "String (timestamp)"
+  "deletedDateTime": "String (timestamp)",
   "deletedFromLocation": "String",
   "id": "String (identifier)",
   "name": "String",
