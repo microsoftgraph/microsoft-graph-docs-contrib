@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Organization().ByOrganizationId("organization-id").Settings().ProfileCardProperties().ByProfileCardPropertyId("profileCardProperty-id").Delete(context.Background(), nil)
+graphClient.Admin().People().ProfileCardProperties().ByProfileCardPropertyId("profileCardProperty-id").Delete(context.Background(), nil)
 
 
 ```

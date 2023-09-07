@@ -33,7 +33,7 @@ GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{id}/resourc
 
 ## Optional query parameters
 
-This method supports OData query parameters to help customize the response. For example, to retrieve the access package resource scopes and environments for each resource, include `$expand=scopes,environment` in the query. To retrieve the available roles of a resource, include `$expand=roles`.  For general information, see [OData query parameters](/graph/query-parameters).
+This method supports OData query parameters to help customize the response. For example, to retrieve the access package resource scopes and environments for each resource, include `$expand=scopes,environment` in the query. To retrieve the available roles of a resource and its scope, include `$expand=roles,scopes`.  For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -51,7 +51,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: List all resources in a catalog
+
+#### Request
 
 The following is an example of the request, using `$expand` to return resource scopes of each resource.
 
@@ -99,7 +101,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ca
 
 ---
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -123,6 +125,71 @@ Content-type: application/json
       "displayName": "Faculty cafeteria ordering",
       "description": "Example application",
       "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
+      "scopes": [
+          {
+              "id": "452d78a7-69a5-482d-a82f-859a5169c55e",
+              "displayName": "Root",
+              "description": "Root Scope",
+              "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
+              "originSystem": "AadApplication",
+              "isRootScope": true
+          }
+      ]
+    }
+  ]
+}
+```
+
+### Example 2: Retrieve the roles and scopes of a single resource in a catalog
+
+
+#### Request
+
+The following is an example of the request, using `$expand` to return the roles and scopes of a single resource.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_accesspackageresources2"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/{catalogId}/resources?$expand=roles,scopes&$filter=id eq '{resourceId}'
+```
+
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResource",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "id": "400279ff-8e85-4dcf-b1d6-d3a6be372951",
+      "displayName": "Faculty cafeteria ordering",
+      "description": "Example application",
+      "originId": "2f1099a6-d4fc-4cc9-a0ef-ddd3f1bf0b7e",
+      "roles": [
+          {
+              "id": "5fc34d75-926c-458e-9967-060691c7f4ae",
+              "displayName": "admin",
+              "description": "Administrator in the application",
+              "originSystem": "AadApplication",
+              "originId": "2cab8bf6-3fa2-4cc5-b0a7-a401af9f6197"
+           }
+      ],
       "scopes": [
           {
               "id": "452d78a7-69a5-482d-a82f-859a5169c55e",
