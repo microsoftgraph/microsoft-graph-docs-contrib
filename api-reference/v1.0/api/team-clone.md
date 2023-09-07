@@ -20,12 +20,15 @@ You can specify which parts of the team to clone:
 - **settings** – Copies all settings within the team, along with key group settings.
 - **tabs** – Copies the tabs within channels.
 
+> **Note:** This method isn't supported for organization-wide teams.
+
 > [!NOTE]
-> This method isn't supported for organization-wide teams.
+> A known issue related to owners of cloned teams is associated with this method. For details, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/&search=18955).
 
-When tabs are cloned, they are put into an unconfigured state - they are displayed on the tab bar in Microsoft Teams, and the first time you open them, you'll go through the configuration screen. (If the person opening the tab does not have permission to configure apps, they will see a message explaining that the tab hasn't been configured.)
+When tabs are cloned, they are not configured. The tabs are displayed on the tab bar in Microsoft Teams, and the first time a user opens them, they must go through the configuration screen. 
+If the user who opens the tab does not have permission to configure apps, they will see a message that says that the tab is not configured.
 
-Cloning is a long-running operation. After the POST clone returns, you need to GET the [operation](../resources/teamsasyncoperation.md) to see if it's "running" or "succeeded" or "failed". You should continue to GET until the status is not "running". The recommended delay between GETs is 5 seconds.
+Cloning is a long-running operation. After the POST clone returns, you need to GET the [operation](../resources/teamsasyncoperation.md) returned by the `Location:` header to see if it's `running`, `succeeded`, or `failed`. You should continue to GET until the status is not `running`. The recommended delay between GETs is 5 seconds.
 
 ## Permissions
 
