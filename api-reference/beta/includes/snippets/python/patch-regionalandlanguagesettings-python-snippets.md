@@ -22,7 +22,7 @@ request_body = RegionalAndLanguageSettings(
 	),
 )
 
-result = await graph_client.me.settings.regional_and_language_settings.patch(request_body = request_body)
+result = await graph_client.me.settings.regional_and_language_settings.patch(body = request_body)
 
 
 ```

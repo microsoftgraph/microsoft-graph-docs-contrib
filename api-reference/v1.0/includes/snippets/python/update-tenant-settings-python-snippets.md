@@ -21,7 +21,7 @@ request_body = SharepointSettings(
 	personal_site_default_storage_limit_in_m_b = 120000,
 )
 
-result = await graph_client.admin.sharepoint.settings.patch(request_body = request_body)
+result = await graph_client.admin.sharepoint.settings.patch(body = request_body)
 
 
 ```

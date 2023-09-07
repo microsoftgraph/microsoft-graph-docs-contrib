@@ -16,7 +16,7 @@ request_body = EnrollmentConfigurationAssignment(
 	),
 )
 
-result = await graph_client.device_management.device_enrollment_configurations.by_device_enrollment_configuration_id('deviceEnrollmentConfiguration-id').assignments.post(request_body = request_body)
+result = await graph_client.device_management.device_enrollment_configurations.by_device_enrollment_configuration_id('deviceEnrollmentConfiguration-id').assignments.post(body = request_body)
 
 
 ```

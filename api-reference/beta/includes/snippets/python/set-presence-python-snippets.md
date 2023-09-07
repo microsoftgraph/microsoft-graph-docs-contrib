@@ -15,7 +15,7 @@ request_body = SetPresencePostRequestBody(
 	expiration_duration = "PT1H",
 )
 
-await graph_client.users.by_user_id('user-id').presence.set_presence.post(request_body = request_body)
+await graph_client.users.by_user_id('user-id').presence.set_presence.post(body = request_body)
 
 
 ```

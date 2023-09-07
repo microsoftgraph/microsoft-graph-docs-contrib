@@ -12,7 +12,7 @@ request_body = SourceSystemDefinition(
 	vendor = "LMS Vendor",
 )
 
-result = await graph_client.external.industry_data.source_systems.by_source_system_id('sourceSystemDefinition-id').patch(request_body = request_body)
+result = await graph_client.external.industry_data.source_systems.by_source_system_id('sourceSystemDefinition-id').patch(body = request_body)
 
 
 ```

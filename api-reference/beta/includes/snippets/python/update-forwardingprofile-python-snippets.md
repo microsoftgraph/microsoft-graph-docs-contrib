@@ -17,7 +17,7 @@ request_body = ForwardingProfile(
 	]
 )
 
-result = await graph_client.network_access.forwarding_profiles.by_forwarding_profile_id('forwardingProfile-id').patch(request_body = request_body)
+result = await graph_client.network_access.forwarding_profiles.by_forwarding_profile_id('forwardingProfile-id').patch(body = request_body)
 
 
 ```

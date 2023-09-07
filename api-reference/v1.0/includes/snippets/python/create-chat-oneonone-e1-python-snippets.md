@@ -32,7 +32,7 @@ request_body = Chat(
 	]
 )
 
-result = await graph_client.chats.post(request_body = request_body)
+result = await graph_client.chats.post(body = request_body)
 
 
 ```

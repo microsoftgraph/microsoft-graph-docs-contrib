@@ -9,13 +9,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new GroupRequestBuilderGetRequestConfiguration();
+$requestConfiguration = new GraphGroupRequestBuilderGetRequestConfiguration();
 $headers = [
 		'ConsistencyLevel' => 'eventual',
 	];
 $requestConfiguration->headers = $headers;
 
-$queryParameters = GroupRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters = GraphGroupRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->count = true;
 $requestConfiguration->queryParameters = $queryParameters;
 
