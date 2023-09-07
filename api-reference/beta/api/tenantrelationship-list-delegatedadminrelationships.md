@@ -208,6 +208,7 @@ Content-Type: application/json
         ]
       },
       "status": "approvalPending",
+      "autoExtendDuration": "PT0S",
       "createdDateTime": "2022-02-10T11:24:42.3148266Z",
       "lastModifiedDateTime": "2022-02-10T11:26:44.9941884Z",
       "activatedDateTime": null,
