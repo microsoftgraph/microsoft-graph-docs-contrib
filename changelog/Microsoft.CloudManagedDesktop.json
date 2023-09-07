@@ -3471,24 +3471,8 @@
           "ApiChange": "Permission",
           "ChangedApiName": "CloudPC.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the create operations of the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-beta&tabs=http) resource.",
-          "Target": "cloudPC"
-        },
-        {
-          "Id": "cd506d8f-eddb-4d12-859d-a7894452989e",
-          "ApiChange": "Permission",
-          "ChangedApiName": "CloudPC.ReadWrite.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the update operations of the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-update?view=graph-rest-beta&tabs=http) resource.",
-          "Target": "cloudPC"
-        },
-        {
-          "Id": "cd506d8f-eddb-4d12-859d-a7894452989e",
-          "ApiChange": "Permission",
-          "ChangedApiName": "CloudPC.ReadWrite.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the runHealthChecks operations of the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta&tabs=http) resource.",
-          "Target": "cloudPC"
+          "Description": "Added support for the application permission `CloudPC.ReadWrite.All` to the following operations of the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource: [POST](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-beta), [UPDATE](https://learn.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-update?view=graph-rest-beta), [DELETE](https://learn.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-delete?view=graph-rest-beta), and [runHealthChecks](https://learn.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta).",
+          "Target": "cloudPcOnPremisesConnection"
         }
       ],
       "Id": "cd506d8f-eddb-4d12-859d-a7894452989e",
