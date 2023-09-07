@@ -68,6 +68,10 @@ GET https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/{forwardin
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-forwardingprofile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-forwardingprofile-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-forwardingprofile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -89,7 +93,6 @@ GET https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/{forwardin
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of the response.

@@ -202,6 +202,7 @@ Content-type: application/json
     ]
 }
 ```
+
 ## Filters
 
 Filter parameters can help optimize the messages returned for a chat thread. The API GET supports filter parameters that allows a way to extract messages based on the sender user id, user type, application type, etc. The filter parameter supports messages sent by the following:
@@ -289,3 +290,7 @@ GET /users/{id}/chats/getAllMessages?$filter=from/application/applicationIdentit
 ```http
 GET /users/{id}/chats/getAllMessages?$filter=({any of the previous filters}) and (lastModifiedDateTime+gt+{date}+and+lastModifiedDateTime+lt+{date})
 ```
+
+## See also
+
+[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

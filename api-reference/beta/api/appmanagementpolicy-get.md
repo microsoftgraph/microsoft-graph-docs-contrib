@@ -25,6 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                             |
 | Application                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -69,6 +70,10 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-appmanagementpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-appmanagementpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

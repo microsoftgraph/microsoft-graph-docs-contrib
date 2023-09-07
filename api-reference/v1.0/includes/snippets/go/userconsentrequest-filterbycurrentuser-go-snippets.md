@@ -25,7 +25,8 @@ configuration := &graphidentitygovernance.IdentityGovernanceAppConsentAppConsent
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequests().ByAppConsentRequestId("appConsentRequest-id").UserConsentRequests().FilterByCurrentUser(on='{on}')().Get(context.Background(), configuration)
+on := "reviewer"
+filterByCurrentUser, err := graphClient.IdentityGovernance().AppConsent().AppConsentRequests().ByAppConsentRequestId("appConsentRequest-id").UserConsentRequests().FilterByCurrentUserWithOn(&on).Get(context.Background(), configuration)
 
 
 ```

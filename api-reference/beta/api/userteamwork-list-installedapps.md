@@ -29,6 +29,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | TeamsAppInstallation.ReadForUser.All, TeamsAppInstallation.ReadWriteSelfForUser.All, TeamsAppInstallation.ReadWriteForUser.All |
 
+> [!NOTE]
+>
+> If you plan to use the TeamsAppInstallation.ReadWriteSelfForUser.All permission, the following are required:
+>
+> - The app manifest must have the **webApplicationInfo** property.
+> - The app **id** given in the **webApplicationInfo** property and the app **id** used to generate the access token must match. Otherwise, the API returns an empty result.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -66,7 +73,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "user_list_teamsApps_2"
+  "name": "user_list_teamsApps_2_beta_e1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
@@ -74,6 +81,10 @@ GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/user-list-teamsapps-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -108,7 +119,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "name": "user_list_teamsApps_2",
+  "name": "user_list_teamsApps_2_beta_e1",
   "truncated": true,
   "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
@@ -139,7 +150,7 @@ In the following example, if an instance of an installed app has a [bot](../reso
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "user_list_teamsApps_details_2"
+  "name": "user_list_teamsApps_details_2_beta_e2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=teamsAppDefinition($expand=bot)
@@ -147,6 +158,10 @@ GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=t
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-details-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/user-list-teamsapps-details-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -182,7 +197,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "name": "user_list_teamsApps_details_2",
+  "name": "user_list_teamsApps_details_2_beta_e2",
   "truncated": true,
   "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
@@ -236,7 +251,7 @@ The following is an example of the request. In the example, the manifest ID of t
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "user_list_teamsApps_details_filter"
+  "name": "user_list_teamsApps_details_filter_beta_e3"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/97a5a533-833d-494b-b543-c0afe026cb96/teamwork/installedApps?$expand=teamsApp,teamsAppDefinition&$filter=teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'
@@ -244,6 +259,10 @@ GET https://graph.microsoft.com/beta/users/97a5a533-833d-494b-b543-c0afe026cb96/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-details-filter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/user-list-teamsapps-details-filter-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -279,7 +298,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "name": "user_list_teamsApps_details_filter",
+  "name": "user_list_teamsApps_details_filter_beta_e3",
   "truncated": true,
   "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
@@ -318,8 +337,11 @@ Content-type: application/json
     ]
 }
 ```
+
 ## See also
+
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 title: "List resource"
 ms.localizationpriority: high
 ms.prod: "sharepoint"
@@ -75,7 +75,7 @@ The **list** resource has the following relationships to other resources.
 | **contentTypes**  | Collection([contentType][])      | The collection of content types present in this list.
 | **drive**         | [drive][]                        | Only present on document libraries. Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 | **items**         | Collection([listItem][])         | All items contained in the list.
-| **operations** | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long-running operations on the list. 
+| **operations** | [richLongRunningOperation](../resources/richlongrunningoperation.md) collection | The collection of long-running operations on the list.
 | **subscriptions** | Collection([subscription][])     | The set of subscriptions on the list.
 
 [baseItem]: baseitem.md

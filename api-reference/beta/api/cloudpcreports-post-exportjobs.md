@@ -48,11 +48,10 @@ You can specify the following properties when creating a **cloudPcExportJob**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|reportName|cloudPcReportName|The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, `noLicenseAvailableConnectivityFailureReport`, `unknownFutureValue`. Optional.|
 |filter|String|The filter applied on the report. Optional.|
-|select|String collection|The selected columns of the report. Optional.|
 |format|String|The format of the exported report. Optional.|
-
+|reportName|cloudPcReportName|The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, `unknownFutureValue`, `noLicenseAvailableConnectivityFailureReport`, `inaccessibleCloudPcReports`. Optional.|
+|select|String collection|The selected columns of the report. Optional.|
 
 ## Response
 
@@ -90,6 +89,10 @@ Content-length: 315
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-cloudpcexportjob-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-cloudpcexportjob-from--cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-cloudpcexportjob-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -104,6 +107,10 @@ Content-length: 315
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-cloudpcexportjob-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-cloudpcexportjob-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

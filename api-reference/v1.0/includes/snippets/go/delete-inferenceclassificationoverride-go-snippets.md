@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().InferenceClassification().Overrides().ByOverrideId("inferenceClassificationOverride-id").Delete(context.Background(), nil)
+graphClient.Me().InferenceClassification().Overrides().ByInferenceClassificationOverrideId("inferenceClassificationOverride-id").Delete(context.Background(), nil)
 
 
 ```

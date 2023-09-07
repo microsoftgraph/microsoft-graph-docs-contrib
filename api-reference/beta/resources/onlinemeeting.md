@@ -26,7 +26,8 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 | [Update](../api/onlinemeeting-update.md) | [onlineMeeting](onlinemeeting.md) | Update the properties of an **onlineMeeting** object. |
 | [Delete](../api/onlinemeeting-delete.md) | None | Delete an **onlineMeeting** object. |
 | [Create or get onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting with a custom, external ID. If the meeting already exists, retrieve its properties. |
-| [List transcripts of an onlineMeeting](../api/onlinemeeting-list-transcripts.md) | [callTranscript](callTranscript.md) collection | Retrieve the list of transcripts of an **onlineMeeting**. |
+| [List transcripts of an onlineMeeting](../api/onlinemeeting-list-transcripts.md) | [callTranscript](calltranscript.md) collection | Retrieve the list of transcripts of an **onlineMeeting**. |
+| [List recordings of an onlineMeeting](../api/onlinemeeting-list-recordings.md) | [callRecording](callrecording.md) collection | Get the list of [callRecording](../resources/callrecording.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md). |
 
 ## Properties
 
@@ -107,10 +108,11 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
-| attendanceReports | [meetingAttendanceReport](meetingAttendanceReport.md) collection | The attendance reports of an online meeting. Read-only. |
+| attendanceReports | [meetingAttendanceReport](meetingattendancereport.md) collection | The attendance reports of an online meeting. Read-only. |
+| recordings | [callRecording](callrecording.md) collection | The recordings of an online meeting. Read-only. |
 | registration | [meetingRegistration](meetingregistration.md) | The registration that has been enabled for an online meeting. One online meeting can only have one registration enabled.|
-| meetingAttendanceReport (deprecated) | [meetingAttendanceReport](meetingAttendanceReport.md) | The attendance report of the latest online meeting session. Read-only. |
-| transcripts | [callTranscript](callTranscript.md) collection | The transcripts of an online meeting. Read-only. |
+| transcripts | [callTranscript](calltranscript.md) collection | The transcripts of an online meeting. Read-only. |
+| meetingAttendanceReport (deprecated) | [meetingAttendanceReport](meetingattendancereport.md) | The attendance report of the latest online meeting session. Read-only. |
 
 > [!TIP]
 >

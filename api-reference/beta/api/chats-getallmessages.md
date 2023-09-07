@@ -230,3 +230,7 @@ GET /users/{id}/chats/getAllMessages?$filter=from/application/applicationIdentit
 ```http
 GET /users/{id}/chats/getAllMessages?$filter=({any of the previous filters}) and (lastModifiedDateTime+gt+{date}+and+lastModifiedDateTime+lt+{date})
 ```
+
+## See also
+
+[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

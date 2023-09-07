@@ -2,7 +2,7 @@
 title: "List policies"
 description: "Retrieve a list of conditionalaccesspolicy objects."
 ms.localizationpriority: medium
-author: "davidspooner"
+author: "lisaychuang"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -33,7 +33,7 @@ GET /identity/conditionalAccess/policies
 
 ## Optional query parameters
 
-This method supports the `$skip`, `$top`, `$count`, `$filter`, `$orderBy`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$skip`, `$top`, `$count`, `$filter`, `$orderby`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

@@ -80,7 +80,7 @@ This example shows how you can send an activity feed notification for a team. Th
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_for_team"
+  "name": "team_sendactivitynotification_for_team_beta_e1"
 }
 -->
 ``` http
@@ -111,6 +111,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-for-team-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/team-sendactivitynotification-for-team-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -158,7 +162,7 @@ Similar to the previous example, this example uses `entityUrl` for the `topic`. 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_entityurl_topic"
+  "name": "team_sendactivitynotification_entityurl_topic_beta_e1"
 }
 -->
 ``` http
@@ -193,6 +197,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-entityurl-topic-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/team-sendactivitynotification-entityurl-topic-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -241,7 +249,7 @@ Similar to the previous example, this example uses `entityUrl` for the `topic`. 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_upn"
+  "name": "team_sendactivitynotification_upn_beta_e3"
 }
 -->
 ``` http
@@ -276,6 +284,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-upn-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/team-sendactivitynotification-upn-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -323,7 +335,7 @@ As seen in the previous examples, you can link to different aspects of the team.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_set_topicsource_to_text"
+  "name": "team_sendactivitynotification_set_topicsource_to_text_beta_e4"
 }
 -->
 ``` http
@@ -355,6 +367,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-set-topicsource-to-text-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/team-sendactivitynotification-set-topicsource-to-text-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -406,7 +422,7 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_pending_fin_approve"
+  "name": "team_sendactivitynotification_pending_fin_approve_beta_e5"
 }
 -->
 
@@ -438,6 +454,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-pending-fin-approve-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/team-sendactivitynotification-pending-fin-approve-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -490,7 +510,7 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_6"
+  "name": "team_sendactivitynotification_beta_e6"
 }
 -->
 
@@ -523,6 +543,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-6-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/team-sendactivitynotification-6-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -562,9 +586,103 @@ The following example shows the response.
 -->
 ``` http
 HTTP/1.1 204 No Content
+
+```
+
+### Example 7: Notify about pending finance approval requests in channel message reply location
+
+Similar to the previous example, this example uses `entityUrl` for the `topic`. However, this example links to a [channel message reply](../api/chatmessage-get.md#example-3-get-reply-to-a-message-in-a-channel). The channel message reply shows the status of the user's hotel reservation. Selecting the notification will take the user to the reply message in the channel, where they can check their reservation status.
+
+#### Request
+
+The following example shows the request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification_beta_e7"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/v1.0/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/messages/{messageId}/replies/{replyId}"
+    },
+    "activityType": "reservationStatusUpdated",
+    "previewText": {
+        "content": "You have moved up the queue"
+    },
+    "recipient": {
+        "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+        "userId": "jacob@contoso.com"
+    },
+    "templateParameters": [
+        {
+            "name": "reservationId",
+            "value": "TREEE433"
+        },
+        {
+            "name": "currentSlot",
+            "value": "23"
+        }
+    ]
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-7-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/team-sendactivitynotification-7-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-7-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-7-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-7-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-7-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-7-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/team-sendactivitynotification-7-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
 ```
 
 ## See also
 
 - [Activity feed notification C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-activity-feed/csharp)
 - [Activity feed notification Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-activity-feed/nodejs)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

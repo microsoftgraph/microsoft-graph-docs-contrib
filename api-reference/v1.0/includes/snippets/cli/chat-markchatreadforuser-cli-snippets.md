@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc chats mark-chat-read-for-user post --chat-id {chat-id} --body '{\
  "user": {\
     "id" : "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2",\

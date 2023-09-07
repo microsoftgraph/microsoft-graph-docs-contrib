@@ -19,7 +19,7 @@ requestBody := graphadmin.NewPublishPostRequestBody()
 revision := "1.0"
 requestBody.SetRevision(&revision) 
 
-result, err := graphClient.Admin().Edge().InternetExplorerMode().SiteLists().BySiteListId("browserSiteList-id").Publish().Post(context.Background(), requestBody, nil)
+publish, err := graphClient.Admin().Edge().InternetExplorerMode().SiteLists().ByBrowserSiteListId("browserSiteList-id").Publish().Post(context.Background(), requestBody, nil)
 
 
 ```

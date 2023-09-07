@@ -1,7 +1,7 @@
 ---
 title: "Get fido2AuthenticationMethod"
 description: "Read the properties and relationships of a fido2AuthenticationMethod object."
-author: "mmcla"
+author: "calvinlui"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -79,6 +79,10 @@ GET https://graph.microsoft.com/beta/me/authentication/fido2Methods/-2_GRUg2-HYz
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-fido2authenticationmethod-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-fido2authenticationmethod-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

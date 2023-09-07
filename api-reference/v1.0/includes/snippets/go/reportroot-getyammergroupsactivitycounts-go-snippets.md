@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Reports().GetYammerGroupsActivityCounts(period='{period}')().Get(context.Background(), nil)
+period := "{period}"
+graphClient.Reports().GetYammerGroupsActivityCountsWithPeriod(&period).Get(context.Background(), nil)
 
 
 ```
