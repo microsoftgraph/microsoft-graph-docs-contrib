@@ -12834,6 +12834,21 @@ items:
                             href: api/unifiedroleeligibilityscheduleinstance-get.md
                           - name: Filter by current user
                             href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
+                      - name: Assignment approval
+                        href: resources/approval.md
+                        items:
+                          - name: Get
+                            href: api/approval-get.md
+                          - name: Approval step
+                            items:
+                              - name: Approval step
+                                href: resources/approvalstep.md
+                              - name: List
+                                href: api/approval-list-steps.md
+                              - name: Get
+                                href: api/approvalstep-get.md
+                              - name: Update
+                                href: api/approvalstep-update.md
                       - name: Policies and rules
                         items:
                           - name: Policy
