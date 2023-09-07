@@ -11,7 +11,7 @@ graph_client = GraphServiceClient(request_adapter)
 request_body = ExportPostRequestBody(
 	output_name = "Export reviewset query via API",
 	description = "Export for the Contoso investigation 2",
-	export_options = ExportOptions.OriginalFiles | ExportOptions.FileInfo | ExportOptions.Tags,
+	export_options = ExportOptions.OriginalFiles | ExportOptions.Tags,
 	export_structure = ExportFileStructure.Directory,
 )
 

@@ -4,7 +4,7 @@ description: "Create one or more single-value extended properties in a new or ex
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: non-product-specific
-author: "abheek-das"
+author: "SuryaLashmiS"
 ---
 
 # Create single-value extended property

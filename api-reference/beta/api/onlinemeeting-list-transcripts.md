@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md).
+Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API does not support getting call transcripts from channel meetings. 
 
 > [!NOTE]
 > This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
@@ -39,8 +39,8 @@ To use application permissions for this API, tenant administrators must create a
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/onlineMeetings({meetingId})/transcripts
-GET /users({userId})/onlineMeetings({meetingId})/transcripts
+GET /me/onlineMeetings/{online-meeting-id}/transcripts
+GET /users/{user-id}/onlineMeetings/{online-meeting-id}/transcripts
 ```
 
 ## Optional query parameters
@@ -55,7 +55,7 @@ This method doesn't support any [OData query parameters](/graph/query-parameters
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

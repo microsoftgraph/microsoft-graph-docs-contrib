@@ -73,7 +73,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "user_list_teamsApps_2"
+  "name": "user_list_teamsApps_2_beta_e1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
@@ -119,7 +119,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "name": "user_list_teamsApps_2",
+  "name": "user_list_teamsApps_2_beta_e1",
   "truncated": true,
   "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
@@ -150,7 +150,7 @@ In the following example, if an instance of an installed app has a [bot](../reso
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "user_list_teamsApps_details_2"
+  "name": "user_list_teamsApps_details_2_beta_e2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=teamsAppDefinition($expand=bot)
@@ -197,7 +197,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "name": "user_list_teamsApps_details_2",
+  "name": "user_list_teamsApps_details_2_beta_e2",
   "truncated": true,
   "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true
@@ -251,7 +251,7 @@ The following is an example of the request. In the example, the manifest ID of t
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "user_list_teamsApps_details_filter"
+  "name": "user_list_teamsApps_details_filter_beta_e3"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/97a5a533-833d-494b-b543-c0afe026cb96/teamwork/installedApps?$expand=teamsApp,teamsAppDefinition&$filter=teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'
@@ -298,7 +298,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "name": "user_list_teamsApps_details_filter",
+  "name": "user_list_teamsApps_details_filter_beta_e3",
   "truncated": true,
   "@odata.type": "microsoft.graph.teamsAppInstallation",
   "isCollection": true

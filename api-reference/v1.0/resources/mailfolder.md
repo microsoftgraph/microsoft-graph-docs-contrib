@@ -2,7 +2,7 @@
 title: "mailFolder resource type"
 description: "A mail folder in a user's mailbox, such as Inbox and Drafts. Mail folders can contain messages, other Outlook items, and child mail folders."
 ms.localizationpriority: high
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -98,7 +98,7 @@ The default value of the `isHidden` property is `false`. You can set **isHidden*
 
 Hidden mail folders support all operations that are supported by a regular mail folder.
 
-By default, [listing mailFolders](../api/user-list-mailfolders.md) returns only mail folders that are not hidden. To include hidden mail folders in the response, use the query parameter `includeHiddenFolders=true`. Then use the **isHidden** property to identify whether a mail folder is hidden. 
+By default, [listing mailFolders](../api/user-list-mailfolders.md) returns only mail folders that are not hidden. To include hidden mail folders in the response, use the query parameter `includeHiddenFolders=true`. Then use the **isHidden** property to identify whether a mail folder is hidden.
 
 ## Relationships
 
