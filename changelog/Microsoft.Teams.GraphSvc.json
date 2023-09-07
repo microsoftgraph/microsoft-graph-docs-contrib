@@ -1321,8 +1321,16 @@
           "ApiChange": "Permission",
           "ChangedApiName": "OnlineMeetingTranscript.Read.Chat",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `OnlineMeetingTranscript.Read.Chat` to the read operations of the [Onlinemeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
-          "Target": "Onlinemeeting"
+          "Description": "Added support for the application permission `OnlineMeetingTranscript.Read.Chat` to the read operations of the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "d51c4dba-957b-47a8-9eb5-be042d0519fd",
+          "ApiChange": "Permission",
+          "ChangedApiName": "OnlineMeetingTranscript.Read.Chat",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `OnlineMeetingTranscript.Read.Chat` to the read operations of the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/calltranscript?view=graph-rest-beta) resource.",
+          "Target": "callTranscript"
         }
       ],
       "Id": "d51c4dba-957b-47a8-9eb5-be042d0519fd",
