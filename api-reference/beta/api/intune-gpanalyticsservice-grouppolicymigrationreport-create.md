@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create the g
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
+|id|String||
 |groupPolicyObjectId|Guid|The Group Policy Object GUID from GPO Xml content|
 |displayName|String|The name of Group Policy Object from the GPO Xml Content|
 |ouDistinguishedName|String|The distinguished name of the OU.|

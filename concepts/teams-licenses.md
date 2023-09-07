@@ -10,7 +10,7 @@ ms.prod: "microsoft-teams"
 
 This article describes the payment models and licensing requirements for Microsoft Teams APIs in Microsoft Graph. For a high-level description of metered APIs and services in Microsoft Graph, see [Overview of metered APIs and services in Microsoft Graph](metered-api-overview.md).
 
-Some APIs provide the option to choose a licensing and payment model via the `model` query parameter; others only support one model or do not support a licensing and payment model. 
+Some APIs provide the option to choose a licensing and payment model via the `model` query parameter; others only support one model or do not support a licensing and payment model.
 
 The following table lists the APIs and [change notification](/graph/api/subscription-post-subscriptions) `resources` that currently support payment models.
 
@@ -21,7 +21,12 @@ The following table lists the APIs and [change notification](/graph/api/subscrip
 | APIs: <ul><li>[GET /users/{user-id}/chats/getAllMessages](/graph/api/chats-getallmessages)</li><li>[GET /me/chats/getAllMessages](/graph/api/chats-getallmessages)</li><li>[GET /teams/{team-id}/channels/getAllMessages](/graph/api/channel-getallmessages)</li><li>[GET /teamwork/deletedTeams/{deletedTeamId}/channels/getAllMessages](/graph/api/deletedteam-getallmessages)</li></ul> | A, B |
 | APIs, when updating the `policyViolation` property: <ul><li>[PATCH /teams/{team-id}/channels/{channel-id}/messages/{message-id}](/graph/api/chatmessage-update)</li><li>[PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}](/graph/api/chatmessage-update)</li><li>[PATCH /chats/{chatThread-id}/messages/{message-id}](/graph/api/chatmessage-update)</li></ul> | A |
 
-
+| Scenario | APIs |
+|:---------|:-----|
+|[Export Teams content](/microsoftteams/export-teams-content)| [channel: getAllMessages](/graph/api/channel-getallmessages)</br>[chats: getAllMessages](/graph/api/chats-getallmessages) |
+| Update (DLP patch) | [Update channel](/graph/api/channel-patch)</br>[Update chat](/graph/api/chat-patch)</br>[Update chatMessage](/graph/api/chatmessage-update) |
+| [Create subscription (change notifications)](/graph/api/subscription-post-subscriptions) | [channel](/graph/api/resources/channel)</br>[chat](/graph/api/resources/chat)</br>[chatMessage](/graph/api/resources/chatmessage)</br>[conversationMember](/graph/api/resources/conversationmember) |
+| [Fetch meeting transcript and recording](/microsoftteams/platform/graph-api/meeting-transcripts/overview-transcripts) | [Get callTranscript content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content) </br> [Get callTranscript metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent) </br> [Get callRecording content](/graph/api/callrecording-get#example-2-get-callrecording-content) |
 
 > [!NOTE]
 > Billing for these APIs started on July 5th, 2022. To set up an active Azure subscription for your application for billing purposes, see [Enable metered Microsoft 365 APIs and services](/graph/metered-api-setup). For more details, see [Payment and billing updates](#payment-and-billing).
@@ -80,7 +85,7 @@ for instance has a **Free trial** link under the **Buy** button.
 You can get a free Microsoft 365 E5 developer sandbox subscription with 25 user licenses 
 through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
 
-> [!NOTE] 
+> [!NOTE]
 > The Microsoft Communications DLP [service plan](/azure/active-directory/enterprise-users/licensing-service-plan-reference) must be enabled before it can be licensed. You can manage licenses in the [Azure portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products) or the [Microsoft 365 admin center](https://admin.microsoft.com). You can also assign licenses to a group account by using [PowerShell and Microsoft Graph](/azure/active-directory/enterprise-users/licensing-ps-examples).
 
 ### `model=B` requirements
@@ -119,6 +124,40 @@ Seeded capacity is the amount of capacity that an app can use before a consumpti
 | `model=A` | Security and Compliance | See [`model=A` requirements](#modela-requirements)| Yes (Microsoft 365 E5 eligible license) | Yes |
 | `model=B` | Backup and restore, migration, sentiment analysis, analytics and insights | None | No | Yes |
 | `evaluation model` | Backup and restore, migration, sentiment analysis, analytics and insights | 500 messages per month per app | No | No |
+
+## Payment models for meeting APIs
+
+This section describes the payment models for Teams meeting transcript and recording APIs. The following table lists the APIs that currently support payment models.
+
+| Scenario | APIs |
+| ------ | ----- |
+| [Fetch meeting transcript and recording](/microsoftteams/platform/graph-api/meeting-transcripts/overview-transcripts) | [Get callTranscript content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content) </br> [Get callTranscript metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent) </br> [Get callRecording content](/graph/api/callrecording-get#example-2-get-callrecording-content) |
+
+These APIs include an evaluation quota that apps can use. When making requests to the API within the evaluation quota, apps do not have to pass any billing model information. The evaluation quota is enforced per app, per tenant, and per month. The quota is reset at the beginning of each calendar month, and any unused amount doesn't get carried over to the next month.
+
+When the evaluation quota is over, apps need to set up an active Azure subscription for billing purposes, as described in [enable metered APIs and services in Microsoft Graph](metered-api-setup.md). If the onboarding isn't completed, the following error occurs when apps call the metered APIs.
+
+**Error code**: `402` (Payment Required) </br>
+**Error string**: Evaluation mode capacity has been exceeded. To call this API, the app must be associated with an Azure subscription. For more information, see [payment models and licensing requirements for Microsoft Teams APIs](teams-licenses.md).
+
+The following table summarizes the evaluation mode behavior for transcript and recording APIs.
+
+| Azure Billing Setup | Model parameter | Result |
+| -------- | -------- | -------- |
+| Not configured | No parameter | Evaluation mode capacity will be available for download. Beyond that, the API will fail with error code: `402` (Payment Required). |
+| Configured | No parameter | Unlimited meeting content will be available for download. Engineering RPS limits still apply. |
+
+> [!NOTE]
+> These APIs do not support the model A and model B payment models.
+
+The following table lists the evaluation mode capacity and price for additional usage of these APIs.
+
+| API | Evaluation mode capacity  | Price for additional use  | Notes |
+| -------- | -------- | -------- | -------- |
+| [Get callTranscript content](/graph/api/calltranscript-get#example-2-get-a-calltranscript-content) </br> [Get callTranscript metadataContent](/graph/api/calltranscript-get#example-4-get-a-calltranscript-metadatacontent) | 600 minutes per app per tenant  | $0.0 per minute* | The duration will be rounded down to nearest minute. |
+| [Get callRecording content](/graph/api/callrecording-get#example-2-get-callrecording-content) | 600 minutes per app per tenant  | $0.0 per minute* | The duration will be rounded down to nearest minute. |
+
+*The price for additional use is subject to change in the future.
 
 ## Payment and billing
 

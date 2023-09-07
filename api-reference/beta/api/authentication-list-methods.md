@@ -2,7 +2,7 @@
 title: "List methods"
 description: "Retrieve a list of authentication methods registered to a user."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "jpettere"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -90,6 +90,10 @@ GET https://graph.microsoft.com/beta/me/authentication/methods
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-methods-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-methods-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: "driveItem: copy"
 ms.localizationpriority: medium
 ms.prod: "sharepoint"

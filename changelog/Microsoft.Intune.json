@@ -3,6 +3,320 @@
     {
       "ChangeList": [
         {
+          "Id": "ae03d0b6-3c74-459a-80fd-6f4e24dd7b88",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "androidTargetedPlatforms",
+          "ChangeType": "Addition",
+          "Description": "Added the **androidTargetedPlatforms** enumeration type.",
+          "Target": "androidTargetedPlatforms"
+        },
+        {
+          "Id": "ae03d0b6-3c74-459a-80fd-6f4e24dd7b88",
+          "ApiChange": "Property",
+          "ChangedApiName": "maxRunTimeInMinutes",
+          "ChangeType": "Addition",
+          "Description": "Added the `maxRunTimeInMinutes` property to the [win32LobAppInstallExperience](https://learn.microsoft.com/graph/api/resources/intune-apps-win32lobappinstallexperience?view=graph-rest-beta) resource.",
+          "Target": "win32LobAppInstallExperience"
+        },
+        {
+          "Id": "ae03d0b6-3c74-459a-80fd-6f4e24dd7b88",
+          "ApiChange": "Property",
+          "ChangedApiName": "targetedPlatforms",
+          "ChangeType": "Addition",
+          "Description": "Added the `targetedPlatforms` property to the [androidLobApp](https://learn.microsoft.com/graph/api/resources/intune-apps-androidlobapp?view=graph-rest-beta) resource.",
+          "Target": "androidLobApp"
+        },
+        {
+          "Id": "ae03d0b6-3c74-459a-80fd-6f4e24dd7b88",
+          "ApiChange": "Resource",
+          "ChangedApiName": "macOSMdatpApp",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **macOSMdatpApp** resource type.",
+          "Target": "macOSMdatpApp"
+        },
+        {
+          "Id": "ae03d0b6-3c74-459a-80fd-6f4e24dd7b88",
+          "ApiChange": "Resource",
+          "ChangedApiName": "macOSWebClip",
+          "ChangeType": "Addition",
+          "Description": "Added the [macOSWebClip](https://learn.microsoft.com/graph/api/resources/intune-macOSWebClip?view=graph-rest-beta) resource",
+          "Target": "macOSWebClip"
+        },
+        {
+          "Id": "ae03d0b6-3c74-459a-80fd-6f4e24dd7b88",
+          "ApiChange": "Property",
+          "ChangedApiName": "targetedPlatforms",
+          "ChangeType": "Addition",
+          "Description": "Added the `targetedPlatforms` property to the [managedAndroidLobApp](https://learn.microsoft.com/graph/api/resources/intune-apps-managedandroidlobapp?view=graph-rest-beta) resource.",
+          "Target": "managedAndroidLobApp"
+        },
+        {
+          "Id": "c3d40134-ee13-4e95-93e2-680df29265e0",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "androidDeviceOwnerDelegatedAppScopeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **androidDeviceOwnerDelegatedAppScopeType** enumeration type.",
+          "Target": "androidDeviceOwnerDelegatedAppScopeType"
+        },
+        {
+          "Id": "c3d40134-ee13-4e95-93e2-680df29265e0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "androidDeviceOwnerDelegatedScopeAppSetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [androidDeviceOwnerDelegatedScopeAppSetting](https://learn.microsoft.com/graph/api/resources/intune-androidDeviceOwnerDelegatedScopeAppSetting?view=graph-rest-beta) resource type.",
+          "Target": "androidDeviceOwnerDelegatedScopeAppSetting"
+        },
+        {
+          "Id": "c3d40134-ee13-4e95-93e2-680df29265e0",
+          "ApiChange": "Property",
+          "ChangedApiName": "androidDeviceOwnerDelegatedScopeAppSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the `androidDeviceOwnerDelegatedScopeAppSettings` property to the [androidDeviceOwnerGeneralDeviceConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "c3d40134-ee13-4e95-93e2-680df29265e0",
+          "ApiChange": "Property",
+          "ChangedApiName": "proxyExclusionList",
+          "ChangeType": "Addition",
+          "Description": "Added the `proxyExclusionList` property to the [androidDeviceOwnerVpnConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androiddeviceownervpnconfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidDeviceOwnerVpnConfiguration"
+        },
+        {
+          "Id": "c3d40134-ee13-4e95-93e2-680df29265e0",
+          "ApiChange": "Property",
+          "ChangedApiName": "blockUnifiedPasswordForWorkProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the `blockUnifiedPasswordForWorkProfile` property to the [androidForWorkGeneralDeviceConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androidforworkgeneraldeviceconfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidForWorkGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "c3d40134-ee13-4e95-93e2-680df29265e0",
+          "ApiChange": "Property",
+          "ChangedApiName": "blockUnifiedPasswordForWorkProfile",
+          "ChangeType": "Addition",
+          "Description": "Added the `blockUnifiedPasswordForWorkProfile` property to the [androidWorkProfileGeneralDeviceConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidWorkProfileGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "c3d40134-ee13-4e95-93e2-680df29265e0",
+          "ApiChange": "Property",
+          "ChangedApiName": "proxyExclusionList",
+          "ChangeType": "Addition",
+          "Description": "Added the `proxyExclusionList` property to the [androidWorkProfileVpnConfiguration](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-androidworkprofilevpnconfiguration?view=graph-rest-beta) resource.",
+          "Target": "androidWorkProfileVpnConfiguration"
+        },
+        {
+          "Id": "c3d40134-ee13-4e95-93e2-680df29265e0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "endpointPrivilegeManagementProvisioningStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **endpointPrivilegeManagementProvisioningStatus** relationship to the [deviceManagement](https://learn.microsoft.com/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta) resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "b9c47228-0645-4015-af41-f86cabacf930",
+          "ApiChange": "Member",
+          "ChangedApiName": "deviceConfigurationPolicies",
+          "ChangeType": "Addition",
+          "Description": "Added the `deviceConfigurationPolicies` member to the **deviceManagementConfigurationTemplateFamily** enumeration.",
+          "Target": "deviceManagementConfigurationTemplateFamily"
+        },
+        {
+          "Id": "2cf3809b-4228-466b-8df3-2dd21ed2bbd8",
+          "ApiChange": "Member",
+          "ChangedApiName": "notSetUp",
+          "ChangeType": "Addition",
+          "Description": "Added the `notSetUp` member to the **mobileThreatPartnerTenantState** enumeration.",
+          "Target": "mobileThreatPartnerTenantState"
+        },
+        {
+          "Id": "2cf3809b-4228-466b-8df3-2dd21ed2bbd8",
+          "ApiChange": "Member",
+          "ChangedApiName": "error",
+          "ChangeType": "Addition",
+          "Description": "Added the `error` member to the **mobileThreatPartnerTenantState** enumeration.",
+          "Target": "mobileThreatPartnerTenantState"
+        },
+        {
+          "Id": "e894abb4-65cb-43c7-9218-23a4cff3982d",
+          "ApiChange": "Member",
+          "ChangedApiName": "launchRemoteHelp",
+          "ChangeType": "Addition",
+          "Description": "Added the `launchRemoteHelp` member to the **remoteAction** enumeration.",
+          "Target": "remoteAction"
+        },
+        {
+          "Id": "e894abb4-65cb-43c7-9218-23a4cff3982d",
+          "ApiChange": "Member",
+          "ChangedApiName": "revokeAppleVppLicenses",
+          "ChangeType": "Addition",
+          "Description": "Added the `revokeAppleVppLicenses` member to the **remoteAction** enumeration.",
+          "Target": "remoteAction"
+        },
+        {
+          "Id": "e894abb4-65cb-43c7-9218-23a4cff3982d",
+          "ApiChange": "Member",
+          "ChangedApiName": "removeDeviceFirmwareConfigurationInterfaceManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `removeDeviceFirmwareConfigurationInterfaceManagement` member to the **remoteAction** enumeration.",
+          "Target": "remoteAction"
+        },
+        {
+          "Id": "e894abb4-65cb-43c7-9218-23a4cff3982d",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastCollectedDateTimeUtc",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `lastCollectedDateTimeUtc` property from the [deviceGeoLocation](https://learn.microsoft.com/graph/api/resources/intune-devices-devicegeolocation?view=graph-rest-beta) resource.",
+          "Target": "deviceGeoLocation"
+        },
+        {
+          "Id": "e894abb4-65cb-43c7-9218-23a4cff3982d",
+          "ApiChange": "Property",
+          "ChangedApiName": "securityPatchLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the `securityPatchLevel` property to the [managedDevice](https://learn.microsoft.com/graph/api/resources/intune-deviceconfig-retirescheduledmanageddevice?view=graph-rest-beta) resource.",
+          "Target": "managedDevice"
+        },
+        {
+          "Id": "e894abb4-65cb-43c7-9218-23a4cff3982d",
+          "ApiChange": "Property",
+          "ChangedApiName": "deviceBatteryCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `deviceBatteryCount` property to the [userExperienceAnalyticsBatteryHealthDevicePerformance](https://learn.microsoft.com/graph/api/resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsBatteryHealthDevicePerformance"
+        },
+        {
+          "Id": "e894abb4-65cb-43c7-9218-23a4cff3982d",
+          "ApiChange": "Property",
+          "ChangedApiName": "fullBatteryDrainCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `fullBatteryDrainCount` property to the [userExperienceAnalyticsBatteryHealthDevicePerformance](https://learn.microsoft.com/graph/api/resources/intune-devices-userexperienceanalyticsbatteryhealthdeviceperformance?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsBatteryHealthDevicePerformance"
+        },
+        {
+          "Id": "e894abb4-65cb-43c7-9218-23a4cff3982d",
+          "ApiChange": "Property",
+          "ChangedApiName": "meanFullBatteryDrainCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `meanFullBatteryDrainCount` property to the [userExperienceAnalyticsBatteryHealthModelPerformance](https://learn.microsoft.com/graph/api/resources/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsBatteryHealthModelPerformance"
+        },
+        {
+          "Id": "e894abb4-65cb-43c7-9218-23a4cff3982d",
+          "ApiChange": "Property",
+          "ChangedApiName": "medianEstimatedRuntimeInMinutes",
+          "ChangeType": "Addition",
+          "Description": "Added the `medianEstimatedRuntimeInMinutes` property to the [userExperienceAnalyticsBatteryHealthModelPerformance](https://learn.microsoft.com/graph/api/resources/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsBatteryHealthModelPerformance"
+        },
+        {
+          "Id": "e894abb4-65cb-43c7-9218-23a4cff3982d",
+          "ApiChange": "Property",
+          "ChangedApiName": "medianFullBatteryDrainCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `medianFullBatteryDrainCount` property to the [userExperienceAnalyticsBatteryHealthModelPerformance](https://learn.microsoft.com/graph/api/resources/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsBatteryHealthModelPerformance"
+        },
+        {
+          "Id": "e894abb4-65cb-43c7-9218-23a4cff3982d",
+          "ApiChange": "Property",
+          "ChangedApiName": "medianMaxCapacityPercentage",
+          "ChangeType": "Addition",
+          "Description": "Added the `medianMaxCapacityPercentage` property to the [userExperienceAnalyticsBatteryHealthModelPerformance](https://learn.microsoft.com/graph/api/resources/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsBatteryHealthModelPerformance"
+        },
+        {
+          "Id": "e894abb4-65cb-43c7-9218-23a4cff3982d",
+          "ApiChange": "Property",
+          "ChangedApiName": "modelHealthStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the `modelHealthStatus` property to the [userExperienceAnalyticsBatteryHealthModelPerformance](https://learn.microsoft.com/graph/api/resources/intune-devices-userexperienceanalyticsbatteryhealthmodelperformance?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsBatteryHealthModelPerformance"
+        },
+        {
+          "Id": "e894abb4-65cb-43c7-9218-23a4cff3982d",
+          "ApiChange": "Property",
+          "ChangedApiName": "meanFullBatteryDrainCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `meanFullBatteryDrainCount` property to the [userExperienceAnalyticsBatteryHealthOsPerformance](https://learn.microsoft.com/graph/api/resources/intune-devices-userexperienceanalyticsbatteryhealthosperformance?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsBatteryHealthOsPerformance"
+        },
+        {
+          "Id": "e894abb4-65cb-43c7-9218-23a4cff3982d",
+          "ApiChange": "Property",
+          "ChangedApiName": "medianEstimatedRuntimeInMinutes",
+          "ChangeType": "Addition",
+          "Description": "Added the `medianEstimatedRuntimeInMinutes` property to the [userExperienceAnalyticsBatteryHealthOsPerformance](https://learn.microsoft.com/graph/api/resources/intune-devices-userexperienceanalyticsbatteryhealthosperformance?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsBatteryHealthOsPerformance"
+        },
+        {
+          "Id": "e894abb4-65cb-43c7-9218-23a4cff3982d",
+          "ApiChange": "Property",
+          "ChangedApiName": "medianFullBatteryDrainCount",
+          "ChangeType": "Addition",
+          "Description": "Added the `medianFullBatteryDrainCount` property to the [userExperienceAnalyticsBatteryHealthOsPerformance](https://learn.microsoft.com/graph/api/resources/intune-devices-userexperienceanalyticsbatteryhealthosperformance?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsBatteryHealthOsPerformance"
+        },
+        {
+          "Id": "e894abb4-65cb-43c7-9218-23a4cff3982d",
+          "ApiChange": "Property",
+          "ChangedApiName": "medianMaxCapacityPercentage",
+          "ChangeType": "Addition",
+          "Description": "Added the `medianMaxCapacityPercentage` property to the [userExperienceAnalyticsBatteryHealthOsPerformance](https://learn.microsoft.com/graph/api/resources/intune-devices-userexperienceanalyticsbatteryhealthosperformance?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsBatteryHealthOsPerformance"
+        },
+        {
+          "Id": "e894abb4-65cb-43c7-9218-23a4cff3982d",
+          "ApiChange": "Property",
+          "ChangedApiName": "osBatteryHealthScore",
+          "ChangeType": "Addition",
+          "Description": "Added the `osBatteryHealthScore` property to the [userExperienceAnalyticsBatteryHealthOsPerformance](https://learn.microsoft.com/graph/api/resources/intune-devices-userexperienceanalyticsbatteryhealthosperformance?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsBatteryHealthOsPerformance"
+        },
+        {
+          "Id": "e894abb4-65cb-43c7-9218-23a4cff3982d",
+          "ApiChange": "Property",
+          "ChangedApiName": "osHealthStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the `osHealthStatus` property to the [userExperienceAnalyticsBatteryHealthOsPerformance](https://learn.microsoft.com/graph/api/resources/intune-devices-userexperienceanalyticsbatteryhealthosperformance?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsBatteryHealthOsPerformance"
+        },
+        {
+          "Id": "e894abb4-65cb-43c7-9218-23a4cff3982d",
+          "ApiChange": "Property",
+          "ChangedApiName": "medianImpactInMs2",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `medianImpactInMs2` property from the [userExperienceAnalyticsDeviceStartupProcessPerformance](https://learn.microsoft.com/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsDeviceStartupProcessPerformance"
+        },
+        {
+          "Id": "e894abb4-65cb-43c7-9218-23a4cff3982d",
+          "ApiChange": "Property",
+          "ChangedApiName": "totalImpactInMs2",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `totalImpactInMs2` property from the [userExperienceAnalyticsDeviceStartupProcessPerformance](https://learn.microsoft.com/graph/api/resources/intune-devices-userexperienceanalyticsdevicestartupprocessperformance?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsDeviceStartupProcessPerformance"
+        },
+        {
+          "Id": "c1b1a720-5a47-46d9-ae41-ac6fa0fd3901",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAutopilotDeploymentDeviceInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAutopilotDeploymentDeviceInformation](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) method to the [deviceManagementReports](https://learn.microsoft.com/graph/api/deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        }
+      ],
+      "Id": "ae03d0b6-3c74-459a-80fd-6f4e24dd7b88",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-26T04:19:31.2789822Z",
+      "WorkloadArea": "Device and app management",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d2a999b5-e95e-485e-8e48-6ab08fdee7ac",
           "ApiChange": "Property",
           "ChangedApiName": "isRemovable",

@@ -4,7 +4,7 @@ description: "A setting represented by a name/value pair."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "dkershaw10"
+author: "Jordanndahl"
 ---
 
 # settingValue resource type
@@ -17,7 +17,7 @@ A setting represented by a name/value pair.
 
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |name|string|Name of the setting (as defined by the directorySettingTemplate).|
 |value|string|Value of the setting.|
