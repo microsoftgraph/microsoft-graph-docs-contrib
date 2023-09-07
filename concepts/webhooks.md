@@ -60,6 +60,10 @@ The following table shows the maximum expiration times for subscriptions per res
 
 [!INCLUDE [change-notifications-subscription-lifetime](includes/change-notifications-subscription-lifetime.md)]
 
+### Latency
+
+[!INCLUDE [change-notifications-delivery-latency](includes/change-notifications-delivery-latency.md)]
+
 ## Code samples
 
 The following code samples are available on GitHub.
