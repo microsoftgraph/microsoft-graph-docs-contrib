@@ -81,6 +81,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/v1/change-notifications-lifecycle-notifications-lifecyclenotificationurl-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

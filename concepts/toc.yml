@@ -162,9 +162,9 @@ items:
               - name: Onboarding experience overview
                 href: onboarding-experience-overview.md
               - name: App registration
-                href: app-registration.md 
+                href: app-registration.md
               - name: App authorization
-                href: app-authorization.md 
+                href: app-authorization.md
               - name: Existing customer migration
                 href: existing-customer-migration.md  
           - name: Templates
@@ -228,30 +228,27 @@ items:
             href: webhooks-lifecycle.md
           - name: Rich notifications
             href: webhooks-with-resource-data.md
-          - name: Tutorials
-            displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
+          - name: Notifications for cloud printing
+            href: universal-print-webhook-notifications.md
+          - name: Notifications for Microsoft Teams resources
             items:
-              - name: Notifications for cloud printing
-                href: universal-print-webhook-notifications.md
-              - name: Notifications for Microsoft Teams resources
-                items:
-                  - name: Notification types and payloads
-                    href: teams-change-notification-in-microsoft-teams-overview.md
-                    displayName: change notifications, Teams, Microsoft Teams
-                  - name: Call transcripts
-                    href: teams-changenotifications-callrecording-and-calltranscript.md
-                  - name: Chat
-                    href: teams-changenotifications-chat.md
-                  - name: Chat and channel messages
-                    href: teams-changenotifications-chatmessage.md
-                  - name: Chat membership
-                    href: teams-changenotifications-chatmembership.md
-                  - name: Team and channel membership
-                    href: teams-changenotifications-teammembership.md
-                  - name: Teams and channels
-                    href: teams-changenotifications-team-and-channel.md
-              - name: Notifications for Outlook resources
-                href: outlook-change-notifications-overview.md
+              - name: Notification types and payloads
+                href: teams-change-notification-in-microsoft-teams-overview.md
+                displayName: change notifications, Teams, Microsoft Teams
+              - name: Call recordings and transcripts
+                href: teams-changenotifications-callrecording-and-calltranscript.md
+              - name: Chat
+                href: teams-changenotifications-chat.md
+              - name: Chat and channel messages
+                href: teams-changenotifications-chatmessage.md
+              - name: Chat membership
+                href: teams-changenotifications-chatmembership.md
+              - name: Team and channel membership
+                href: teams-changenotifications-teammembership.md
+              - name: Teams and channels
+                href: teams-changenotifications-team-and-channel.md
+          - name: Notifications for Outlook resources
+            href: outlook-change-notifications-overview.md
       - name: Change tracking
         items:
           - name: Overview
@@ -469,7 +466,7 @@ items:
           - name: Identity and sign-in
             items:
               - name: Configure a custom claim provider token issuance event
-                href: /azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json&context=graph/context
+                href: /azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json&context=graph/context&tabs=microsoft-graph
               - name: Authentication methods
                 href: authenticationmethods-get-started.md
                 displayName: identity, authenticate, sign-in, sign in, signin
@@ -949,6 +946,8 @@ items:
                 href: migrate-exchange-web-services-authentication.md
               - name: API mapping
                 href: migrate-exchange-web-services-api-mapping.md
+          - name: Outlook REST APIs
+            href: /outlook/rest/compare-graph?context=graph/context
       - name: Use SDKs
         items:
           - name: Overview
