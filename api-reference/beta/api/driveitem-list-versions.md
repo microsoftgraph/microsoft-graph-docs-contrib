@@ -64,6 +64,10 @@ GET /me/drive/items/{item-id}/versions
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-previous-versions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-previous-versions-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-previous-versions-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -142,7 +146,7 @@ Content-Type: application/json
 
 ## Remarks
 
-Versions are returned in descending order (newest to oldest). The OData `$orderBy` query string parameter is not supported.
+Versions are returned in descending order (newest to oldest). The OData `$orderby` query string parameter is not supported.
 
 OneDrive does not preserve the complete metadata for previous versions of a file.
 

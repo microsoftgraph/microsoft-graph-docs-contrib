@@ -1,7 +1,7 @@
 ---
 title: "Get delegatedAdminRelationshipRequest"
 description: "Read the properties and relationships of a delegatedAdminRelationshipRequest object."
-author: "adtangir"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: apiPageType
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelations
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-delegatedadminrelationshiprequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-delegatedadminrelationshiprequest-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

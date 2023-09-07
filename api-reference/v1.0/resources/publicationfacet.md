@@ -24,7 +24,8 @@ The **publicationFacet** resource provides details on the published status of a 
 ```json
 {
   "level": "published | checkout",
-  "versionId": "string"
+  "versionId": "string",
+  "checkedOutBy": { "@odata.type": "microsoft.graph.identitySet" }
 }
 ```
 
@@ -34,6 +35,7 @@ The **publicationFacet** resource provides details on the published status of a 
 | :------------ | :----- | :---------- |
 | **level**     | String | The state of publication for this document. Either `published` or `checkout`. Read-only.  |
 | **versionId** | String | The unique identifier for the version that is visible to the current caller. Read-only.  |
+| **checkedOutBy**   | microsoft.graph.identitySet | User who has checked out the file.                               |
 
 
 <!-- {
