@@ -136,31 +136,43 @@ Content-Type: application/json
     "value": [
         {
             "id": "MSMjMCMjZDAwYWU3NjUtNmM2Yi00NjQxLTgwMWQtMTkzMmFmMjEzNzdh",
+            "meetingId": "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ",
+            "meetingOrganizerId": "ba321e0d-79ee-478d-8e28-85a19507f456",
             "createdDateTime": "2021-09-17T06:09:24.8968037Z",
             "meetingOrganizer": {
                 "user": {
+                    "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
                     "id": "ba321e0d-79ee-478d-8e28-85a19507f456",
                     "displayName": null,
+                    "userIdentityType": "aadUser",
                 }
             }
         },
         {
             "id": "MSMjMCMjMzAxNjNhYTctNWRmZi00MjM3LTg5MGQtNWJhYWZjZTZhNWYw",
+            "meetingId": "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ",
+            "meetingOrganizerId": "ba321e0d-79ee-478d-8e28-85a19507f456",
             "createdDateTime": "2021-09-16T18:58:58.6760692Z",
             "meetingOrganizer": {
                 "user": {
+                    "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
                     "id": "ba321e0d-79ee-478d-8e28-85a19507f456",
                     "displayName": null,
+                    "userIdentityType": "aadUser",
                 }
             }
         },
         {
             "id": "MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4",
+            "meetingId": "MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ",
+            "meetingOrganizerId": "ba321e0d-79ee-478d-8e28-85a19507f456",
             "createdDateTime": "2021-09-16T18:56:00.9038309Z",
             "meetingOrganizer": {
                 "user": {
+                    "@odata.type": "#Microsoft.Teams.GraphSvc.teamworkUserIdentity",
                     "id": "ba321e0d-79ee-478d-8e28-85a19507f456",
                     "displayName": null,
+                    "userIdentityType": "aadUser",
                 }
             }
         }        
