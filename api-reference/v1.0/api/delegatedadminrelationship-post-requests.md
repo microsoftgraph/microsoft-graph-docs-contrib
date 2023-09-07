@@ -1,7 +1,7 @@
 ---
 title: "Create requests"
 description: "Create a new delegatedAdminRelationshipRequest object."
-author: "koravva"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: apiPageType
