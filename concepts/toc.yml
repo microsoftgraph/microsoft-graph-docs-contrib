@@ -174,16 +174,16 @@ items:
             href: data-connect-users-and-groups.md
           - name: Security, privacy, and compliance
             items:
-              - name: Managed private endpoints overview
+              - name: Managed private endpoints
                 href: managed-private-endpoints-overview.md
               - name: Microsoft 365 audit logs 
                 href: microsoft365-audit-logs.md  
-          - name: Microsoft Graph Data Connect FAQ
+          - name: Data Connect FAQ
             href: data-connect-faq.md
-            displayName: Microsoft Graph Data Connect, frequently asked questions
+            displayName: Microsoft Graph Data Connect frequently asked questions
           - name: Data Connect troubleshooting
             href: data-connect-troubleshooting.md
-            displayName: Microsoft Graph Data Connect Troubleshooting
+            displayName: Microsoft Graph Data Connect troubleshooting
       - name: Calendar
         items:
           - name: Overview
