@@ -17,7 +17,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodels.NewDeviceManagementReports()
 
-result, err := graphClient.DeviceManagement().Reports().Patch(context.Background(), requestBody, nil)
+reports, err := graphClient.DeviceManagement().Reports().Patch(context.Background(), requestBody, nil)
 
 
 ```

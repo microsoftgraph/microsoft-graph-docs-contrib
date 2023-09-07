@@ -1,7 +1,7 @@
 ---
 title: "authenticationAppPolicyDetails resource type"
 description: "Provides details of the Azure AD policies applied to a user and client authentication app during the authentication step."
-author: "besiler"
+author: "egreenberg14"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType

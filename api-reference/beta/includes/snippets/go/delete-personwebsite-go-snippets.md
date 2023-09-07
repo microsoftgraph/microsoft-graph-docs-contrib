@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().Profile().Websites().ByWebsiteId("personWebsite-id").Delete(context.Background(), nil)
+graphClient.Me().Profile().Websites().ByPersonWebsiteId("personWebsite-id").Delete(context.Background(), nil)
 
 
 ```

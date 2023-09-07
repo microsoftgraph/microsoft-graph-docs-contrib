@@ -19,7 +19,7 @@ requestBody := graphmodels.NewMailboxSettings()
 delegateMeetingMessageDeliveryOptions := graphmodels.SENDTODELEGATEANDPRINCIPAL_DELEGATEMEETINGMESSAGEDELIVERYOPTIONS 
 requestBody.SetDelegateMeetingMessageDeliveryOptions(&delegateMeetingMessageDeliveryOptions) 
 
-result, err := graphClient.Users().ByUserId("user-id").MailboxSettings().Patch(context.Background(), requestBody, nil)
+mailboxSettings, err := graphClient.Users().ByUserId("user-id").MailboxSettings().Patch(context.Background(), requestBody, nil)
 
 
 ```

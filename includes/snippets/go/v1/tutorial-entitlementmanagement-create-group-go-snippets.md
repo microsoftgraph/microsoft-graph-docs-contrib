@@ -27,7 +27,7 @@ requestBody.SetMailNickname(&mailNickname)
 securityEnabled := true
 requestBody.SetSecurityEnabled(&securityEnabled) 
 
-result, err := graphClient.Groups().Post(context.Background(), requestBody, nil)
+groups, err := graphClient.Groups().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -2,7 +2,7 @@
 title: "accessReviewDecision resource type (deprecated)"
 description: "The accessReviewDecision represents an Azure AD access review decision of a particular entity's access."
 ms.localizationpriority: medium
-author: "markwahl-msft"
+author: "shubhamguptacal"
 ms.prod: "governance"
 doc_type: resourcePageType
 ---
@@ -56,10 +56,10 @@ None.  Objects of this type can be retrieved from an access review using the [de
 
 ## See also
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[List accessReview decisions](../api/accessreview-listdecisions.md) |		[accessReviewDecision](accessreviewdecision.md) collection|	Get the decisions of an accessReview.|
-|[List my accessReview decisions](../api/accessreview-listmydecisions.md) |		[accessReviewDecision](accessreviewdecision.md) collection|	As a reviewer, get my decisions of an accessReview.|
+|[List accessReview decisions](../api/accessreview-listdecisions.md) |        [accessReviewDecision](accessreviewdecision.md) collection|    Get the decisions of an accessReview.|
+|[List my accessReview decisions](../api/accessreview-listmydecisions.md) |        [accessReviewDecision](accessreviewdecision.md) collection|    As a reviewer, get my decisions of an accessReview.|
 
 ## JSON representation
 

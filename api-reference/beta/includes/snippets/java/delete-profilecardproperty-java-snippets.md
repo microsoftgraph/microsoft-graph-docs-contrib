@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.organization("{organizationId}").settings().profileCardProperties("fax")
+graphClient.admin().people().profileCardProperties("fax")
 	.buildRequest()
 	.delete();
 

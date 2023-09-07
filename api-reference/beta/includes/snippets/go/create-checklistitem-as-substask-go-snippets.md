@@ -19,7 +19,7 @@ requestBody := graphmodels.NewChecklistItem()
 displayName := "Final sign-off from the team"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Me().Todo().Lists().ByListId("todoTaskList-id").Tasks().ByTaskId("todoTask-id").ChecklistItems().Post(context.Background(), requestBody, nil)
+checklistItems, err := graphClient.Me().Todo().Lists().ByTodoTaskListId("todoTaskList-id").Tasks().ByTodoTaskId("todoTask-id").ChecklistItems().Post(context.Background(), requestBody, nil)
 
 
 ```
