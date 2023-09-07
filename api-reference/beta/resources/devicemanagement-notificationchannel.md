@@ -50,6 +50,10 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.deviceManagement.notificationChannel",
   "notificationChannelType": "String",
-  "notificationReceivers": [{"@odata.type": "#microsoft.graph.deviceManagement.notificationReceiver"}]
+  "notificationReceivers": [
+    {
+        "@odata.type": "#microsoft.graph.deviceManagement.notificationReceiver"
+    }
+  ]
 }
 ```
