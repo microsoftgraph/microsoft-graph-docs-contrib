@@ -149,7 +149,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request adding an application's role to an access package's list of resource roles.  The access package resource for the application must already have been added to the access package catalog containing this access package. The `role`, `resource` and `scope` can be obtained by a [list of the resources of a catalog](accesspackagecatalog-list-resources.md?view=graph-rest-1.0&tabs=http#example-2-retrieve-the-roles-and-scopes-of-a-single-resource-in-a-catalog&preserve-view=true).
+The following is an example of the request adding an application's role to an access package's list of resource roles.  The access package resource for the application must already have been added to the access package catalog containing this access package. The `role`, `resource` and `scope` can be obtained by a [list of the resources of a catalog](accesspackagecatalog-list-resources.md?view=graph-rest-1.0&tabs=http&preserve-view=true#example-2-retrieve-the-roles-and-scopes-of-a-single-resource-in-a-catalog).
 
 <!-- {
   "blockType": "request",
@@ -209,7 +209,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request adding membership of a group to an access package's list of resource roles.  The access package resource for the group must already have been added to the access package catalog containing this access package.  The `role`, `resource` and `scope` can be obtained by a [list of the resources of a catalog](accesspackagecatalog-list-resources.md?view=graph-rest-1.0&tabs=http#example-3-retrieve-the-roles-and-scopes-of-a-single-resource-in-a-catalog-by-origin-id&preserve-view=true).
+The following is an example of the request adding membership of a group to an access package's list of resource roles.  The access package resource for the group must already have been added to the access package catalog containing this access package.  The `role`, `resource` and `scope` can be obtained by a [list of the resources of a catalog](accesspackagecatalog-list-resources.md?view=graph-rest-1.0&tabs=http&preserve-view=true#example-3-retrieve-the-roles-and-scopes-of-a-single-resource-in-a-catalog-by-origin-id).
 
 <!-- {
   "blockType": "request",
