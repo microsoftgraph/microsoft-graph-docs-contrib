@@ -144,6 +144,8 @@ items:
             href: /graph/migrate-exchange-web-services-authentication?context=graph/api/beta
           - name: API mapping
             href: /graph/migrate-exchange-web-services-api-mapping?context=graph/api/beta
+      - name: Outlook REST APIs
+        href: /outlook/rest/compare-graph?context=graph/context
   - name: Use SDKs
     items:
       - name: Overview
@@ -12832,6 +12834,21 @@ items:
                             href: api/unifiedroleeligibilityscheduleinstance-get.md
                           - name: Filter by current user
                             href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
+                      - name: Assignment approval
+                        href: resources/approval.md
+                        items:
+                          - name: Get
+                            href: api/approval-get.md
+                          - name: Approval step
+                            items:
+                              - name: Approval step
+                                href: resources/approvalstep.md
+                              - name: List
+                                href: api/approval-list-steps.md
+                              - name: Get
+                                href: api/approvalstep-get.md
+                              - name: Update
+                                href: api/approvalstep-update.md
                       - name: Policies and rules
                         items:
                           - name: Policy
@@ -16312,26 +16329,30 @@ items:
                     href: resources/security-host.md
                   - name: Get
                     href: api/security-host-get.md
+                  - name: Get reputation
+                    href: api/security-host-get-reputation.md
                   - name: List child host pairs
                     href: api/security-host-list-childhostpairs.md
-                  - name: List host pairs
-                    href: api/security-host-list-hostpairs.md
                   - name: List components
                     href: api/security-host-list-components.md
                   - name: List cookies
                     href: api/security-host-list-cookies.md
+                  - name: List host pairs
+                    href: api/security-host-list-hostpairs.md
+                  - name: List host SSL certificate
+                    href: api/security-hostsslcertificate-list-host.md
                   - name: List parent host pairs
                     href: api/security-host-list-parenthostpairs.md
                   - name: List passive DNS
                     href: api/security-host-list-passivedns.md
                   - name: List passive DNS reverse
                     href: api/security-host-list-passivednsreverse.md
-                  - name: Get reputation
-                    href: api/security-host-get-reputation.md
                   - name: List subdomains
                     href: api/security-host-list-subdomains.md
                   - name: List trackers
                     href: api/security-host-list-trackers.md
+                  - name: Get WHOIS for a host
+                    href: api/security-host-get-whois.md
               - name: Host component
                 items:
                   - name: Host component
@@ -16356,6 +16377,14 @@ items:
                     href: api/security-host-list-parenthostpairs.md
                   - name: List child host pairs
                     href: api/security-host-list-childhostpairs.md
+              - name: Host SSL certificate
+                items:
+                - name: Host SSL certificate
+                  href: resources/security-hostsslcertificate.md
+                - name: List
+                  href: api/security-hostsslcertificate-list-host.md
+                - name: Get
+                  href: api/security-hostsslcertificate-get.md
               - name: Host tracker
                 items:
                   - name: Host tracker
@@ -16384,6 +16413,14 @@ items:
                     href: resources/security-passivednsrecord.md
                   - name: Get
                     href: api/security-passivednsrecord-get.md
+              - name: SSL certificate
+                items:
+                - name: SSL certificate
+                  href: resources/security-sslcertificate.md
+                - name: List
+                  href: api/security-sslcertificate-list.md
+                - name: Get
+                  href: api/security-sslcertificate-get.md
               - name: Subdomain
                 items:
                   - name: Subdomain
@@ -16398,6 +16435,24 @@ items:
                     href: resources/security-vulnerabilitycomponent.md
                   - name: Get
                     href: api/security-vulnerabilitycomponent-get.md
+              - name: WHOIS record
+                items:
+                  - name: WHOIS record
+                    href: resources/security-whoisrecord.md
+                  - name: List
+                    href: api/security-whoisrecord-list.md
+                  - name: Get
+                    href: api/security-whoisrecord-get.md
+                  - name: Get WHOIS for a host
+                    href: api/security-host-get-whois.md
+              - name: WHOIS history record
+                items:
+                  - name: WHOIS history record
+                    href: resources/security-whoishistoryrecord.md
+                  - name: List
+                    href: api/security-whoisrecord-list-history.md
+                  - name: Get
+                    href: api/security-whoishistoryrecord-get.md
           - name: Threat intelligence indicator (preview)
             items:
               - name: Threat intelligence indicator
@@ -17378,7 +17433,7 @@ items:
                     href: api/presence-clearuserpreferredpresence.md
                   - name: Set user status message
                     href: api/presence-setstatusmessage.md
-              - name: Virtual event
+              - name: Virtual event (preview)
                 href: resources/virtualevent.md
                 items:
                   - name: Webinar
@@ -17582,6 +17637,8 @@ items:
                     href: api/chat-get.md
                   - name: Update chat
                     href: api/chat-patch.md
+                  - name: Delete
+                    href: api/chat-delete.md
                   - name: List members
                     href: api/chat-list-members.md
                   - name: Add member
@@ -17674,6 +17731,13 @@ items:
                     href: api/chat-post-pinnedmessages.md
                   - name: Unpin message
                     href: api/chat-delete-pinnedmessages.md
+              - name: Deleted chat
+                href: resources/deletedchat.md
+                items:
+                  - name: Get
+                    href: api/deletedchat-get.md
+                  - name: Undo delete
+                    href: api/deletedchat-undodelete.md
               - name: Team
                 href: resources/team.md
                 items:

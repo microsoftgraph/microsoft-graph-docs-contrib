@@ -40,7 +40,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{id}/resourceRoleS
 
 ## Request body
 
-In the request body, supply a JSON representation of an [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) object.  Include in the object the relationships to an [accessPackageResourceRole](../resources/accesspackageresourcerole.md) object, which can be obtained from a request to [list access package resource roles of a resource in a catalog](accesspackagecatalog-list-resourceroles.md), and an [accessPackageResourceScope](../resources/accesspackageresourcescope.md) object, which can be obtained from a request to [list access package resources](accesspackagecatalog-list-resources.md) with `$expand=scopes`.
+In the request body, supply a JSON representation of an [accessPackageResourceRoleScope](../resources/accesspackageresourcerolescope.md) object.  Include in the object the relationships to an [accessPackageResourceRole](../resources/accesspackageresourcerole.md) object and an [accessPackageResourceScope](../resources/accesspackageresourcescope.md) object, which can be obtained from a request to [list access package resources a catalog](accesspackagecatalog-list-resourceroles.md), with `$expand=roles,scopes`.
 
 ## Response
 
@@ -140,6 +140,67 @@ Content-type: application/json
 
 {
    "id": "6646a29e-da03-49f6-bcd9-dec124492de3_5ae0ae7c-d0a5-42aa-ab37-1f15e9a61d33",
+    "createdDateTime": "2023-06-28T01:19:48.4216782Z"
+}
+```
+
+
+### Example 2: Add an application role to an access package
+
+#### Request
+
+The following is an example of the request adding an application's role to an access package's list of resource roles.  The access package resource for the application must already have been added to the access package catalog containing this access package.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerolescope_from_accesspackageapp"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackages/cdd5f06b-752a-4c9f-97a6-82f4eda6c76d/resourceRoleScopes
+Content-type: application/json
+
+{
+    "role": {
+        "id": "cde82ecb-e461-496b-98fb-4f807c7ca640",
+        "displayName": "Standard User",
+        "description": "Standard User",
+        "originSystem": "AadApplication",
+        "originId": "a29a7690-b3c4-4ed5-96c6-f640cde06fb8",
+        "resource": {
+            "id": "5f80c0c7-a180-4521-b585-18200048a0d8",
+            "originId": "e81d7f57-0840-45e1-894b-f505c1bdcc1f",
+            "originSystem": "AadApplication"
+        }
+    },
+    "scope": {
+        "id": "dbeb8772-9907-4e95-a28e-a8d70dbcda69",
+        "originId": "e81d7f57-0840-45e1-894b-f505c1bdcc1f",
+        "originSystem": "AadApplication",
+        "isRootScope": true
+    }
+}
+```
+
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRoleScope"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+   "id": "cde82ecb-e461-496b-98fb-4f807c7ca640_dbeb8772-9907-4e95-a28e-a8d70dbcda69",
     "createdDateTime": "2023-06-28T01:19:48.4216782Z"
 }
 ```
