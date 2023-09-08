@@ -4,26 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Subscription()
-request_body.change_type = 'created'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.notification_url = 'https://webhook.azurewebsites.net/api/send/myNotifyClient'
+request_body = Subscription(
+	change_type = "created",
+	notification_url = "https://webhook.azurewebsites.net/api/send/myNotifyClient",
+	resource = "me/mailFolders('Inbox')/messages",
+	expiration_date_time = "2016-11-20T18:23:45.9356913Z",
+	client_state = "secretClientValue",
+	latest_supported_tls_version = "v1_2",
+)
 
-request_body.resource = 'me/mailFolders(\'Inbox\')/messages'
-
-request_body.expirationDateTime = DateTime('2016-11-20T18:23:45.9356913Z')
-
-request_body.client_state = 'secretClientValue'
-
-request_body.latest_supported_tls_version = 'v1_2'
-
-
-
-
-result = await client.subscriptions.post(request_body = request_body)
+result = await graph_client.subscriptions.post(body = request_body)
 
 
 ```

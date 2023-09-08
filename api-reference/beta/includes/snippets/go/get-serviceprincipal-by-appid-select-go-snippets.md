@@ -22,7 +22,8 @@ configuration := &graphserviceprincipals(appid='{appid}').ServicePrincipals(appI
 	QueryParameters: requestParameters,
 }
 
-servicePrincipals(appId='{appId}'), err := graphClient.ServicePrincipals(appId='{appId}')().Get(context.Background(), configuration)
+appId := "{appId}"
+servicePrincipals, err := graphClient.ServicePrincipalsWithAppId(&appId).Get(context.Background(), configuration)
 
 
 ```

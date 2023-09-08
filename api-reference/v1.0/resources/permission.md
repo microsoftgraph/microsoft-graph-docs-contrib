@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Permission
 ms.localizationpriority: high
@@ -56,7 +56,7 @@ Here is a JSON representation of the resource
   "roles": ["string"],
   "shareId": "string",
   "expirationDateTime": "string (timestamp)",
-  "hasPassword": "boolean"  
+  "hasPassword": "boolean"
 }
 ```
 
@@ -80,7 +80,7 @@ Here is a JSON representation of the resource
 
 The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.
 
-Permissions with a [**link**][SharingLink] facet represent sharing links created on the item. 
+Permissions with a [**link**][SharingLink] facet represent sharing links created on the item.
 Sharing links contain a unique token that provides access to the item for anyone with the link.
 
 Permissions with an [**invitation**][SharingInvitation] facet represent permissions added by inviting specific users or groups to have access to the file.

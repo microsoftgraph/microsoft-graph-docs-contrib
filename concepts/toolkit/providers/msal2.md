@@ -140,7 +140,7 @@ To call the custom APIs, request that API scope.
 ```
 or via Javascript/Typescript
 ```ts
-import { prepScopes } from "@microsoft/mgt";
+import { prepScopes } from "@microsoft/mgt-element";
 
 graphClient
   .api("https://myapi.com/v1.0/api")

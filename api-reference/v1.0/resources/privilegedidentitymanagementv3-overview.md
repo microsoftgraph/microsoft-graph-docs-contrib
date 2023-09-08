@@ -16,6 +16,8 @@ The PIM for Azure AD roles APIs allow you to govern privileged access and limit 
 
 > [!NOTE]
 > To manage Azure resource roles use the [Azure Resource Manager (ARM) APIs for PIM](/rest/api/authorization/privileged-role-eligibility-rest-sample).
+>
+> PIM APIs for managing security alerts for Azure AD roles are available on the `beta` endpoint only. For more information, see [Security alerts for Azure AD roles](/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta#security-alerts-for-azure-ad-roles&preserve-view=true).
 
 ## PIM APIs for managing active role assignments
 

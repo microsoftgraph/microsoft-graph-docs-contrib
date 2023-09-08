@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "The driveItem resource represents a file, folder, or other item stored in a drive."
 title: driveItem
 ms.localizationpriority: medium
@@ -23,7 +23,7 @@ There are two primary ways of addressing a **driveItem** resource:
 * By file system path using `/drive/root:/path/to/file`
 
 For more information, see [addressing driveItems](/graph/onedrive-addressing-driveitems).
-                                                
+
 **DriveItem** resources have facets modeled as properties that provide data about the driveItem's identities and capabilities.
 For example:
 
@@ -167,7 +167,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
        "keyProperty": "id", "openType": true } -->
 
 ```json
-{  
+{
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "bundle": { "@odata.type": "microsoft.graph.bundle" },
   "content": { "@odata.type": "Edm.Stream" },
