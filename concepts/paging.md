@@ -1,6 +1,6 @@
 ---
 title: "Paging Microsoft Graph data in your app "
-description: "odata.nextLink` property in the response that contains a URL to the next page of results. "
+description: "Use data in the odata.nextLink property in the response to retrieve the next page of results. "
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: dkershaw
@@ -10,7 +10,7 @@ ms.custom: graphiamtop20, scenarios:getting-started
 
 # Paging Microsoft Graph data in your app 
 
-Some queries against Microsoft Graph return multiple pages of data either due to server-side paging or due to the use of the `$top` query parameter to specifically limit the page size in a request. When more than one query request is required to retrieve all the results, Microsoft Graph returns an `@odata.nextLink` property in the response that contains a URL to the next page of results. 
+Some GET queries against Microsoft Graph return multiple pages of data either due to server-side paging or due to the use of the `$top` query parameter to specifically limit the page size in a request. When more than one query request is required to retrieve all the results, Microsoft Graph returns an `@odata.nextLink` property in the response that contains a URL to the next page of results.
 
 For example, the following URL requests all the users in an organization with a page size of 5, specified with the `$top` query parameter:
 
