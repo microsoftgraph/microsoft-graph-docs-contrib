@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [pronounsSettings](../resources/pronounssettings.md) object in an organization.
 
-For more information on settings to manage pronouns support, see [Manage pronouns settings for an organization using the Microsoft Graph API](/graph/pronouns-configure-pronouns-availability).
+For more information about settings for management of pronouns, see [Manage pronouns settings for an organization using the Microsoft Graph API](/graph/pronouns-configure-pronouns-availability).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
