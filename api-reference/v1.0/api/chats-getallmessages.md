@@ -32,6 +32,79 @@ The following permissions are required to call this API. To learn more, includin
 GET /users/{id | user-principal-name}/chats/getAllMessages
 ```
 
+Get messages sent by **application type**
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{id}/chats/getAllMessages?$filter=from/application/applicationIdentityType eq '{appType}' 
+```
+
+Get messages sent by **user id**
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{id}/chats/getAllMessages?$filter=from/user/id eq '{oid}'
+```
+
+Get messages sent by **anonymous guest users**
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{id}/chats/getAllMessages?$filter=from/user/userIdentityType eq 'anonymousGuest'  
+```
+
+Get messages sent by **external/federated users**
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{id}/chats/getAllMessages?$filter=from/user/userIdentityType eq 'federatedUser'
+```
+
+Get **control(system event)** messages
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{id}/chats/getAllMessages?$filter=messageType eq 'systemEventMessage'
+```
+
+Get messages sent by **application type** or **user id**
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{id}/chats/getAllMessages?$filter=from/application/applicationIdentityType eq '{appType}' or from/user/id eq '{oid}'
+```
+
+Get messages sent by **application type** or **anonymous guest users**
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{id}/chats/getAllMessages?$filter=from/application/applicationIdentityType eq '{appType}' or from/user/userIdentityType eq 'anonymousGuest' 
+```
+
+Get messages sent by **application type** or **external/federated users**
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{id}/chats/getAllMessages?$filter=from/application/applicationIdentityType eq '{appType}' or from/user/userIdentityType eq 'federatedUser'
+```
+
+Get messages sent by **application type**, **anonymous guest users** or **external/federated users**
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{id}/chats/getAllMessages?$filter=from/application/applicationIdentityType eq '{appType}' or from/user/userIdentityType eq 'anonymousGuest' or from/user/userIdentityType eq 'federatedUser'
+```
+
+Get messages sent by **user id** or **anonymous guest users**
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{id}/chats/getAllMessages?$filter=from/user/id eq '{oid}' or from/user/userIdentityType eq 'anonymousGuest'
+```
+
+Get messages sent by **user id** or **external/federated users**
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{id}/chats/getAllMessages?$filter=from/user/id eq '{oid}' or from/user/userIdentityType eq 'federatedUser'
+```
+
+Get messages sent by **application type**, **user id**, **anonymous guest users** or **external/federated users**
+<!-- { "blockType": "ignored" } -->
+```http
+GET /users/{id}/chats/getAllMessages?$filter=from/application/applicationIdentityType eq '{appType}' or from/user/id eq '{oid}' or from/user/userIdentityType eq 'anonymousGuest' or from/user/userIdentityType eq 'federatedUser'
+```
+</br>
+
 ## Optional query parameters
 
 You can use `model` query parameter, which supports the values `A` and `B`, based on the preferred [licensing and payment model](/graph/teams-licenses),
@@ -201,94 +274,6 @@ Content-type: application/json
         }
     ]
 }
-```
-
-## Filters
-
-Filter parameters can help optimize the messages returned for a chat thread. The API GET supports filter parameters that allows a way to extract messages based on the sender user id, user type, application type, etc. The filter parameter supports messages sent by the following:
-
-* users (multiple user Id filters supported in the same request)
-
-* applications (bots, tenantBots, connectors, etc.)
-
-* anonymous users
-
-* federated users (guest/external access users)
-
-These parameters are part of the request’s `$filter`. If none of these parameters are present in the request, the messages from all the users present in the specified user chats will be returned.
-
-The filtering scenarios that are supported are as follows:
-</br>
-
-* Messages sent by specified application type (bots/tenantBots/connectors, etc.) 
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/application/applicationIdentityType eq '{appType}' 
-```
-</br>
-
-* Messages sent by specified user id
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/user/id eq '{oid}'
-```
-</br>
-
-* Messages sent by anonymous users
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/user/userIdentityType eq 'anonymousGuest'  
-```
-</br>
-
-* Messages sent by guest/external users
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/user/userIdentityType eq 'federatedUser'
-```
-</br>
-
-* Messages sent by specified application type or specified user id
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/application/applicationIdentityType eq '{appType}' or from/user/id eq '{oid}'
-```
-</br>
-
-* Messages sent by specified application type or anonymous users
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/application/applicationIdentityType eq '{appType}' or from/user/userIdentityType eq 'anonymousGuest' 
-```
-</br>
-
-* Messages sent by specified application type or guest/external users
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/application/applicationIdentityType eq '{appType}' or from/user/userIdentityType eq 'federatedUser'
-```
-</br>
-
-* Messages sent by specified application type, anonymous or guest/external users
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/application/applicationIdentityType eq '{appType}' or from/user/userIdentityType eq 'anonymousGuest' or from/user/userIdentityType eq 'federatedUser'
-```
-</br>
-
-* Messages sent by specified user id or anonymous users
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/user/id eq '<oid>' or from/user/userIdentityType eq 'anonymousGuest'
-```
-</br>
-
-* Messages sent by specified user id or guest/external users
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/user/id eq '<oid>' or from/user/userIdentityType eq 'federatedUser'
-```
-</br>
-
-* Messages sent by specified application type, specified user id, anonymous or guest/external users
-```http
-GET /users/{id}/chats/getAllMessages?$filter=from/application/applicationIdentityType eq '{appType}' or from/user/id eq '{oid}' or from/user/userIdentityType eq 'anonymousGuest' or from/user/userIdentityType eq 'federatedUser'
-```
-</br>
-
-* All the previous scenarios can be combined with the tame range filters
-```http
-GET /users/{id}/chats/getAllMessages?$filter=({any of the previous filters}) and (lastModifiedDateTime+gt+{date}+and+lastModifiedDateTime+lt+{date})
 ```
 
 ## See also
