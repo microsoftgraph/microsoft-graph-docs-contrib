@@ -63,14 +63,14 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.virtualEventRegistrant",
+  "@odata.type": "microsoft.graph.virtualEventRegistration",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.virtualEventRegistrant",
+  "@odata.type": "#microsoft.graph.virtualEventRegistration",
   "cancelationDateTime": "String (timestamp)",
   "email": "String",
   "firstName": "String",
