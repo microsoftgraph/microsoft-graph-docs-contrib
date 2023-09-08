@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceAppManagement().ManagedEBooks().Get(context.Background(), nil)
+managedEBooks, err := graphClient.DeviceAppManagement().ManagedEBooks().Get(context.Background(), nil)
 
 
 ```

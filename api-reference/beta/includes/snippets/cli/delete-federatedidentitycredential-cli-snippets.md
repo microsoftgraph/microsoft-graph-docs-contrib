@@ -1,0 +1,10 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```bash
+
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc-beta applications federated-identity-credentials delete --application-id {application-id} --federated-identity-credential-id {federatedIdentityCredential-id}
+
+```

@@ -2,7 +2,7 @@
 title: "credentialUserRegistrationCount resource type"
 description: "Represents the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication capabilities."
 ms.localizationpriority: medium
-author: "besiler"
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---

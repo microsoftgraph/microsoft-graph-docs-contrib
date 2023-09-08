@@ -19,7 +19,7 @@ requestBody := graphmodels.NewTeamsAppSettings()
 allowUserRequestsForAppAccess := true
 requestBody.SetAllowUserRequestsForAppAccess(&allowUserRequestsForAppAccess) 
 
-result, err := graphClient.Teamwork().TeamsAppSettings().Patch(context.Background(), requestBody, nil)
+teamsAppSettings, err := graphClient.Teamwork().TeamsAppSettings().Patch(context.Background(), requestBody, nil)
 
 
 ```

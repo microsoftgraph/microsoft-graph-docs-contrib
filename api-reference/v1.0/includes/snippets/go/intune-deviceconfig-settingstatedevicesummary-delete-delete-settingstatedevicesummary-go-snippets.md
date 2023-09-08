@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").DeviceSettingStateSummaries().ByDeviceSettingStateSummarieId("settingStateDeviceSummary-id").Delete(context.Background(), nil)
+graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").DeviceSettingStateSummaries().BySettingStateDeviceSummaryId("settingStateDeviceSummary-id").Delete(context.Background(), nil)
 
 
 ```

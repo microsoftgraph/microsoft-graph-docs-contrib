@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 description: "Represents a previous version of an item or entity."
 title: "baseItemVersion resource type"
 ms.localizationpriority: medium
