@@ -118,6 +118,7 @@ HTTP/1.1 204 No Content
 
 #### Invite a participant to an existing call
 
+> **Note:** Provide a `participantId` on the [invitationParticipantInfo](../resources/invitationparticipantinfo.md) so that you can use it to cancel the invitation later.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -133,7 +134,6 @@ Content-Length: 464
   "participants": [
     {
       "@odata.type": "#microsoft.graph.invitationParticipantInfo",
-      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
       "identity": {
         "@odata.type": "#microsoft.graph.identitySet",
         "user": {
@@ -141,7 +141,8 @@ Content-Length: 464
           "id": "278405a3-f568-4b3e-b684-009193463064",
           "identityProvider": "AAD"
         }
-      }
+      },
+      "participantId": "a7ebfb2d-871e-419c-87af-27290b22e8db"
     }
   ],
   "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
@@ -205,7 +206,7 @@ Content-Type: application/json
     {
       "endpointType": null,
       "id": null,
-      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
+      "participantId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
       "identity": {
         "user": {
           "id": "278405a3-f568-4b3e-b684-009193463064",
@@ -229,7 +230,7 @@ Content-Type: application/json
   "name": "delete-participant_before-added-to-roster"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/{id}
+DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/a7ebfb2d-871e-419c-87af-27290b22e8db
 ```
 
 # [C#](#tab/csharp)
