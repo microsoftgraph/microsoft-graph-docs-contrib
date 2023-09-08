@@ -41,3 +41,51 @@ None.
 |lifecycleWorkflows|[microsoft.graph.identityGovernance.lifecycleWorkflowsContainer](identitygovernance-lifecycleworkflowscontainer.md)| Container for Lifecycle Workflow resources, including [workflow](identitygovernance-workflow.md), [customTaskExtension](identitygovernance-customtaskextension.md), and [lifecycleManagementSettings](identitygovernance-lifecyclemanagementsettings.md).|
 |roleManagementAlerts|[roleManagementAlert](rolemanagementalert.md)| Container for the base resources that expose the security alerts relating to Privileged Identity Management (PIM) for Azure AD roles.|
 |privilegedAccess|[privilegedAccess](privilegedaccess.md)| Container for the base resources that expose the API and features related to Privileged Identity Management (PIM) for Groups.|
+
+
+# identityGovernance resource type
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+**TODO: Add Description**
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Get identityGovernance](../api/identitygovernance-get.md)|[identityGovernance](../resources/identitygovernance.md)|Read the properties and relationships of an [identityGovernance](../resources/identitygovernance.md) object.|
+|[Update identityGovernance](../api/identitygovernance-update.md)|[identityGovernance](../resources/identitygovernance.md)|Update the properties of an [identityGovernance](../resources/identitygovernance.md) object.|
+|[List permissionsAnalyticsAggregation](../api/identitygovernance-list-permissionsanalytics.md)|[permissionsAnalyticsAggregation](../resources/permissionsanalyticsaggregation.md) collection|Get the permissionsAnalyticsAggregation resources from the permissionsAnalytics navigation property.|
+|[Create permissionsAnalyticsAggregation](../api/identitygovernance-post-permissionsanalytics.md)|[permissionsAnalyticsAggregation](../resources/permissionsanalyticsaggregation.md)|Create a new permissionsAnalyticsAggregation object.|
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+
+## Relationships
+|Relationship|Type|Description|
+|:---|:---|:---|
+|accessReviews|[accessReviewSet](../resources/accessreviewset.md)|**TODO: Add Description**|
+|appConsent|[appConsentApprovalRoute](../resources/appconsentapprovalroute.md)|**TODO: Add Description**|
+|entitlementManagement|[entitlementManagement](../resources/entitlementmanagement.md)|**TODO: Add Description**|
+|lifecycleWorkflows|[lifecycleWorkflowsContainer](../resources/identitygovernance-lifecycleworkflowscontainer.md)|**TODO: Add Description**|
+|permissionsAnalytics|[permissionsAnalyticsAggregation](../resources/permissionsanalyticsaggregation.md)|**TODO: Add Description**|
+|privilegedAccess|[privilegedAccessRoot](../resources/privilegedaccessroot.md)|**TODO: Add Description**|
+|roleManagementAlerts|[roleManagementAlert](../resources/rolemanagementalert.md)|**TODO: Add Description**|
+|termsOfUse|[termsOfUseContainer](../resources/termsofusecontainer.md)|**TODO: Add Description**|
+
+## JSON representation
+The following is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.identityGovernance",
+  "openType": false
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.identityGovernance"
+}
+```
