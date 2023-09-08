@@ -10,7 +10,7 @@ ms.prod: "data-connect"
 
 This article explains the concept of groups in Microsoft Graph Data Connect and the options for scope selection. Scope selection allows you to specify how to extract objects; for example, you can extract objects for all users in a Microsoft 365 tenant or select groups in the Microsoft 365 tenant. For more information, see [Demystifying User Scopes](https://devblogs.microsoft.com/microsoft365dev/microsoft-graph-data-connect-demystifying-user-scopes/#:~:text=The%20user%20scope%20option%20lets%20you%20either%20specify,Azure%20Active%20Directory%20Security%20or%20Microsoft%20365%20groups).
 
-You can create and manage several different types of groups in the Microsoft 365 admin center; for details, see [Compare groups](https://learn.microsoft.com/en-us/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide). The following types of groups are applicable to Microsoft Graph Data Connect:
+You can create and manage several different types of groups in the Microsoft 365 admin center; for details, see [Compare groups](/microsoft-365/admin/create-groups/compare-groups?view=o365-worldwide&preserve-view=true). The following types of groups are applicable to Microsoft Graph Data Connect:
 
 *  **Microsoft 365 Groups** - Used for collaboration between users, both inside and outside your company. They include collaboration services such as SharePoint and Planner.
 * **Distribution groups** - Used for sending email notifications to a group of people.
