@@ -17588,6 +17588,8 @@ items:
                     href: api/chatmessage-get.md
                   - name: Get messages across all channels
                     href: api/channel-getallmessages.md
+                  - name: Get primary channel
+                    href: api/team-get-primarychannel.md
                   - name: List channel messages
                     href: api/channel-list-messages.md
                   - name: List members

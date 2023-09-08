@@ -8745,6 +8745,8 @@ items:
                     href: api/channel-get-members.md
                   - name: Get message reply
                     href: api/chatmessage-get.md
+                  - name: Get primary channel
+                    href: api/team-get-primarychannel.md  
                   - name: List channel messages
                     href: api/channel-list-messages.md
                   - name: List members
