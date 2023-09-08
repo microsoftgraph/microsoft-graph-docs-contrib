@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewMessage()
@@ -27,7 +27,7 @@ requestBody.SetBody(body)
 inferenceClassification := graphmodels.OTHER_INFERENCECLASSIFICATIONTYPE 
 requestBody.SetInferenceClassification(&inferenceClassification) 
 
-result, err := graphClient.Me().Messages().ByMessageId("message-id").Patch(context.Background(), requestBody, nil)
+messages, err := graphClient.Me().Messages().ByMessageId("message-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

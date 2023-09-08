@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphusers.NewItemTranslateExchangeIdsPostRequestBody()
@@ -27,7 +27,7 @@ requestBody.SetSourceIdType(&sourceIdType)
 targetIdType := graphmodels.RESTIMMUTABLEENTRYID_EXCHANGEIDFORMAT 
 requestBody.SetTargetIdType(&targetIdType) 
 
-result, err := graphClient.Me().TranslateExchangeIds().Post(context.Background(), requestBody, nil)
+translateExchangeIds, err := graphClient.Me().TranslateExchangeIds().Post(context.Background(), requestBody, nil)
 
 
 ```

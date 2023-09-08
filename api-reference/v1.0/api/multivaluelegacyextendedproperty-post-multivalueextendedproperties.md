@@ -2,7 +2,7 @@
 title: "Create multi-value extended property"
 description: "Create one or more multi-value extended properties in a new or existing instance of a resource. "
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: non-product-specific
 doc_type: apiPageType
 ---
@@ -172,9 +172,10 @@ The request body includes the following for that multi-value extended property:
 - **value** which specifies `Recreation` as an array of 3 string values, `["Food", "Hiking", "Swimming"]`.
 
 
-<!-- { 
-  "blockType": "request", 
-  "name" : "multivaluelegacyextendedpropertypostmultivalueextendedproperties_v1_e1" 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name" : "multivaluelegacyextendedpropertypostmultivalueextendedproperties_v1_e1"
 } -->
 
 ```http
@@ -219,6 +220,40 @@ Content-Type: application/json
   ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -342,9 +377,10 @@ extended property:
 - **id** specifies the property as an array of strings with the specified GUID and the name `Palette`.
 - **value** specifies `Palette` as an array of 3 string values, `["Green", "Aqua", "Blue"]`.
 
-<!-- { 
-  "blockType": "request", 
-  "name" : "multivaluelegacyextendedpropertypostmultivalueextendedproperties_v1_e2" 
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name" : "multivaluelegacyextendedpropertypostmultivalueextendedproperties_v1_e2"
 } -->
 ```http
 PATCH https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2_as77AACHsLrBBBA=
@@ -359,6 +395,40 @@ Content-Type: application/json
     ]
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/multivaluelegacyextendedpropertypostmultivalueextendedproperties-v1-e2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
@@ -26,7 +26,7 @@ configuration := &graphteamwork.TeamworkTeamTemplatesRequestBuilderGetRequestCon
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Teamwork().TeamTemplates().Get(context.Background(), configuration)
+teamTemplates, err := graphClient.Teamwork().TeamTemplates().Get(context.Background(), configuration)
 
 
 ```

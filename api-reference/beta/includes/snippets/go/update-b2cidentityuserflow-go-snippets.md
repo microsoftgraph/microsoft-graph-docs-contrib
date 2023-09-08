@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewB2cIdentityUserFlow()
@@ -21,7 +21,7 @@ requestBody.SetIsLanguageCustomizationEnabled(&isLanguageCustomizationEnabled)
 defaultLanguageTag := "en"
 requestBody.SetDefaultLanguageTag(&defaultLanguageTag) 
 
-result, err := graphClient.Identity().B2cUserFlows().ByB2cUserFlowId("b2cIdentityUserFlow-id").Patch(context.Background(), requestBody, nil)
+b2cUserFlows, err := graphClient.Identity().B2cUserFlows().ByB2cIdentityUserFlowId("b2cIdentityUserFlow-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

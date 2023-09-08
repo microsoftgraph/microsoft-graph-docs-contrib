@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -32,7 +32,7 @@ configuration := &graphdirectory.DirectoryDeletedItemsGraph.groupRequestBuilderG
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Directory().DeletedItems().GraphGroup().Get(context.Background(), configuration)
+graphGroup, err := graphClient.Directory().DeletedItems().GraphGroup().Get(context.Background(), configuration)
 
 
 ```

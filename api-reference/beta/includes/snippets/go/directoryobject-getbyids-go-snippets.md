@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphdirectoryobjects.NewGetByIdsPostRequestBody()
@@ -30,7 +30,7 @@ types := []string {
 }
 requestBody.SetTypes(types)
 
-result, err := graphClient.DirectoryObjects().GetByIds().Post(context.Background(), requestBody, nil)
+getByIds, err := graphClient.DirectoryObjects().GetByIds().Post(context.Background(), requestBody, nil)
 
 
 ```

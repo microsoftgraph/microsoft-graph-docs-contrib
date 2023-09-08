@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
@@ -25,7 +25,8 @@ configuration := &graphreports.ReportsGetTeamsTeamCounts(period='{period}')Reque
 	QueryParameters: requestParameters,
 }
 
-graphClient.Reports().GetTeamsTeamCounts(period='{period}')().Get(context.Background(), configuration)
+period := "{period}"
+graphClient.Reports().GetTeamsTeamCountsWithPeriod(&period).Get(context.Background(), configuration)
 
 
 ```

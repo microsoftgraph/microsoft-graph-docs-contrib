@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Reports().ServicePrincipalSignInActivities().ByServicePrincipalSignInActivitieId("servicePrincipalSignInActivity-id").Get(context.Background(), nil)
+servicePrincipalSignInActivities, err := graphClient.Reports().ServicePrincipalSignInActivities().ByServicePrincipalSignInActivityId("servicePrincipalSignInActivity-id").Get(context.Background(), nil)
 
 
 ```

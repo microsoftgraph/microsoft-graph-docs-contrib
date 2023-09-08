@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Reports().DailyPrintUsageByUser().ByDailyPrintUsageByUser().Id("printUsageByUser-id").Get(context.Background(), nil)
+dailyPrintUsageByUser, err := graphClient.Reports().DailyPrintUsageByUser().ByPrintUsageByUserId("printUsageByUser-id").Get(context.Background(), nil)
 
 
 ```

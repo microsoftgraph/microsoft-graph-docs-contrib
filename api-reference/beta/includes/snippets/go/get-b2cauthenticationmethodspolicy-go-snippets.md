@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Policies().B2cAuthenticationMethodsPolicy().Get(context.Background(), nil)
+b2cAuthenticationMethodsPolicy, err := graphClient.Policies().B2cAuthenticationMethodsPolicy().Get(context.Background(), nil)
 
 
 ```

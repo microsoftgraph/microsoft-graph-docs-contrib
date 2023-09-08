@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
@@ -26,7 +26,7 @@ configuration := &graphidentitygovernance.IdentityGovernanceRoleManagementAlerts
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().RoleManagementAlerts().AlertConfigurations().Get(context.Background(), configuration)
+alertConfigurations, err := graphClient.IdentityGovernance().RoleManagementAlerts().AlertConfigurations().Get(context.Background(), configuration)
 
 
 ```

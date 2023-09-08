@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewSkillProficiency()
@@ -31,7 +31,7 @@ collaborationTags := []string {
 }
 requestBody.SetCollaborationTags(collaborationTags)
 
-result, err := graphClient.Me().Profile().Skills().Post(context.Background(), requestBody, nil)
+skills, err := graphClient.Me().Profile().Skills().Post(context.Background(), requestBody, nil)
 
 
 ```

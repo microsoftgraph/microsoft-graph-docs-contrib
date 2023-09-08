@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewTodoTask()
@@ -37,7 +37,7 @@ linkedResources := []graphmodels.LinkedResourceable {
 }
 requestBody.SetLinkedResources(linkedResources)
 
-result, err := graphClient.Me().Todo().Lists().ByListId("todoTaskList-id").Tasks().Post(context.Background(), requestBody, nil)
+tasks, err := graphClient.Me().Todo().Lists().ByTodoTaskListId("todoTaskList-id").Tasks().Post(context.Background(), requestBody, nil)
 
 
 ```

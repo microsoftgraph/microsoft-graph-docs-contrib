@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Teams().ByTeamId("team-id").Schedule().TimesOff().ByTimesOff().Id("timeOff-id").Delete(context.Background(), nil)
+graphClient.Teams().ByTeamId("team-id").Schedule().TimesOff().ByTimeOffId("timeOff-id").Delete(context.Background(), nil)
 
 
 ```

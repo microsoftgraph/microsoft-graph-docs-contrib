@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPermission()
@@ -21,7 +21,7 @@ roles := []string {
 }
 requestBody.SetRoles(roles)
 
-result, err := graphClient.Sites().BySiteId("site-id").Permissions().ByPermissionId("permission-id").Patch(context.Background(), requestBody, nil)
+permissions, err := graphClient.Sites().BySiteId("site-id").Permissions().ByPermissionId("permission-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

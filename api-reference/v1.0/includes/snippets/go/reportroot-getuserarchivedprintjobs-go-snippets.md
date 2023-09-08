@@ -11,11 +11,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Reports().GetUserArchivedPrintJobs(userId='{userId}',startDateTime={startDateTime},endDateTime={endDateTime})().Get(context.Background(), nil)
+userId := "{userId}"
+startDateTime , err := time.Parse(time.RFC3339, "{startDateTime}")
+endDateTime , err := time.Parse(time.RFC3339, "{endDateTime}")
+getUserArchivedPrintJobs, err := graphClient.Reports().GetUserArchivedPrintJobsWithUserIdWithStartDateTimeWithEndDateTime(&userId, &startDateTime, &endDateTime).Get(context.Background(), nil)
 
 
 ```

@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleInstances().Get(context.Background(), nil)
+roleAssignmentScheduleInstances, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleInstances().Get(context.Background(), nil)
 
 
 ```

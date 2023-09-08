@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Directory().FederationConfigurations().ByFederationConfigurationId("identityProviderBase-id").Delete(context.Background(), nil)
+graphClient.Directory().FederationConfigurations().ByIdentityProviderBaseId("identityProviderBase-id").Delete(context.Background(), nil)
 
 
 ```

@@ -12,12 +12,12 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := grapheducation.NewSetUpFeedbackResourcesFolderPostRequestBody()
 
-result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().ByAssignmentId("educationAssignment-id").SetUpFeedbackResourcesFolder().Post(context.Background(), requestBody, nil)
+setUpFeedbackResourcesFolder, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").Assignments().ByEducationAssignmentId("educationAssignment-id").SetUpFeedbackResourcesFolder().Post(context.Background(), requestBody, nil)
 
 
 ```

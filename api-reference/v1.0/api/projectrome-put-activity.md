@@ -55,6 +55,7 @@ If successful, this method returns the `201 Created` response code if the activi
 
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
     "blockType": "request",
     "name": "upsert_activity_v1_e1"
@@ -94,6 +95,12 @@ Content-type: application/json
   }
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/upsert-activity-v1-e1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -158,6 +165,7 @@ This example creates a new activity and a history item for that activity in one 
 
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
     "blockType": "request",
     "name": "upsert_activity2_v1_e2"
@@ -204,6 +212,12 @@ Content-type: application/json
   ]
 }
 ```
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/upsert-activity2-v1-e2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

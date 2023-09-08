@@ -6,38 +6,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PlannerTask();
 $assignments = new PlannerAssignments();
 $additionalData = [
-		'fbab97d0-4932-4511-b675-204639209557' => $assignments = new Fbab97d0-4932-4511-b675-204639209557();
-$		assignments->set@odatatype('#microsoft.graph.plannerAssignment');
-
-$		assignments->setOrderHint('N9917 U2883!');
-
-
-$assignments->setFbab97d0-4932-4511-b675-204639209557($fbab97d0-4932-4511-b675-204639209557);
-
+	'fbab97d0-4932-4511-b675-204639209557' => [
+		'@odata.type' => '#microsoft.graph.plannerAssignment',
+		'orderHint' => 'N9917 U2883!',
+	],
 ];
 $assignments->setAdditionalData($additionalData);
-
-
-
 $requestBody->setAssignments($assignments);
 $appliedCategories = new PlannerAppliedCategories();
 $additionalData = [
-		'category3' => true,
-		'category4' => false,
+	'category3' => true,
+	'category4' => false,
 ];
 $appliedCategories->setAdditionalData($additionalData);
-
-
-
 $requestBody->setAppliedCategories($appliedCategories);
-
-$requestConfiguration = new PlannerTaskRequestBuilderPatchRequestConfiguration();
+$requestConfiguration = new PlannerTaskItemRequestBuilderPatchRequestConfiguration();
 $headers = [
 		'Prefer' => 'return=representation',
 		'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',
@@ -45,7 +34,6 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->planner()->tasks()->byTaskId('plannerTask-id')->patch($requestBody, $requestConfiguration);
-
+$result = $graphServiceClient->planner()->tasks()->byPlannerTaskId('plannerTask-id')->patch($requestBody, $requestConfiguration)->wait();
 
 ```

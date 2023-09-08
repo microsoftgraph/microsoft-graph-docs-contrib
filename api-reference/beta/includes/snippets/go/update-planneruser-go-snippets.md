@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -50,7 +50,7 @@ jd8S5gOaFk2S8aWCIAJz42QAAxtD.SetPlanTitle(&planTitle)
 recentPlanReferences.SetAdditionalData(additionalData)
 requestBody.SetRecentPlanReferences(recentPlanReferences)
 
-result, err := graphClient.Me().Planner().Patch(context.Background(), requestBody, configuration)
+planner, err := graphClient.Me().Planner().Patch(context.Background(), requestBody, configuration)
 
 
 ```

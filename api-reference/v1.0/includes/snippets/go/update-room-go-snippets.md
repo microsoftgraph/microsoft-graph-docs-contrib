@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPlace()
@@ -27,7 +27,7 @@ requestBody.SetCapacity(&capacity)
 isWheelChairAccessible := false
 requestBody.SetIsWheelChairAccessible(&isWheelChairAccessible) 
 
-result, err := graphClient.Places().ByPlaceId("place-id").Patch(context.Background(), requestBody, nil)
+places, err := graphClient.Places().ByPlaceId("place-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

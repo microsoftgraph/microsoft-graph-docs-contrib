@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewUserSettings()
 contributionToContentDiscoveryDisabled := true
 requestBody.SetContributionToContentDiscoveryDisabled(&contributionToContentDiscoveryDisabled) 
 
-result, err := graphClient.Me().Settings().Patch(context.Background(), requestBody, nil)
+settings, err := graphClient.Me().Settings().Patch(context.Background(), requestBody, nil)
 
 
 ```

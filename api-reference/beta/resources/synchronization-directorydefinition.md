@@ -28,7 +28,7 @@ Inherits from [entity](../resources/entity.md).
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Discover directoryDefinition](../api/directorydefinition-discover.md) | [directoryDefinition](synchronization-directorydefinition.md) |Discover the schema and supported properties of the directory.|
+|[Discover directoryDefinition](../api/synchronization-directorydefinition-discover.md) | [directoryDefinition](synchronization-directorydefinition.md) |Discover the schema and supported properties of the directory.|
 
 ## Properties
 

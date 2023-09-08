@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphgroups.GroupsDelta()RequestBuilderGetQueryParameters{
@@ -22,7 +22,7 @@ configuration := &graphgroups.GroupsDelta()RequestBuilderGetRequestConfiguration
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Groups().Delta().Get(context.Background(), configuration)
+delta, err := graphClient.Groups().Delta().Get(context.Background(), configuration)
 
 
 ```

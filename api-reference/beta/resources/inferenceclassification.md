@@ -4,7 +4,7 @@ description: "Classification of a user's messages to enable focus on those that 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: mail
-author: "abheek-das"
+author: "SuryaLashmiS"
 ---
 
 # inferenceClassification resource type

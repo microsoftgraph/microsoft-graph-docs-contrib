@@ -136,6 +136,9 @@ Content-type: application/json
     },
     "serviceName": "Catered bento",
     "serviceNotes": "Customer requires punctual service.",
+    "staffMemberIds": [
+      "8ee1c803-a1fa-406d-8259-7ab53233f148"
+    ],
     "startDateTime": {
         "@odata.type": "#microsoft.graph.dateTimeTimeZone",
         "dateTime": "2018-05-01T12:00:00.0000000+00:00",
@@ -197,16 +200,20 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/bookingbusinesspostappointments-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/bookingbusinesspostappointments-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/bookingbusinesspostappointments-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/bookingbusinesspostappointments-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/bookingbusinesspostappointments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/bookingbusinesspostappointments-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/bookingbusinesspostappointments-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -252,7 +259,9 @@ Content-type: application/json
     "serviceNotes": "Customer requires punctual service.",
     "optOutOfCustomerEmail": false,
     "anonymousJoinWebUrl": null,
-    "staffMemberIds": [],
+    "staffMemberIds": [
+      "8ee1c803-a1fa-406d-8259-7ab53233f148"
+    ],
     "startDateTime": {
         "dateTime": "2018-05-01T12:00:00.0000000Z",
         "timeZone": "UTC"

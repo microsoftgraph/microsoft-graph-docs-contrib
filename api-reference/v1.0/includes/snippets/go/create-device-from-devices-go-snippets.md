@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDevice()
@@ -39,7 +39,7 @@ requestBody.SetOperatingSystem(&operatingSystem)
 operatingSystemVersion := "1"
 requestBody.SetOperatingSystemVersion(&operatingSystemVersion) 
 
-result, err := graphClient.Devices().Post(context.Background(), requestBody, nil)
+devices, err := graphClient.Devices().Post(context.Background(), requestBody, nil)
 
 
 ```

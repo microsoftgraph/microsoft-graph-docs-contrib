@@ -57,17 +57,7 @@ $user = $graph->createRequest("GET", "/me")
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-```python
-from azure.identity.aio import EnvironmentCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
-from msgraph import GraphRequestAdapter, GraphServiceClient
-
-credential=EnvironmentCredential()
-auth_provider = AzureIdentityAuthenticationProvider(credential)
-
-adapter = GraphRequestAdapter(auth_provider)
-client = GraphServiceClient(adapter)
-```
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="DeviceCodeSnippet":::
 
 # [TypeScript](#tab/typescript)
 

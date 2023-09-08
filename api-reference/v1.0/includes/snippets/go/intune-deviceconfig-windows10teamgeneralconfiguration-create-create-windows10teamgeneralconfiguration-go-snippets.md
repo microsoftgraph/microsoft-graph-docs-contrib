@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDeviceConfiguration()
@@ -63,7 +63,7 @@ requestBody.SetWelcomeScreenBackgroundImageUrl(&welcomeScreenBackgroundImageUrl)
 welcomeScreenMeetingInformation := graphmodels.SHOWORGANIZERANDTIMEONLY_WELCOMESCREENMEETINGINFORMATION 
 requestBody.SetWelcomeScreenMeetingInformation(&welcomeScreenMeetingInformation) 
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
+deviceConfigurations, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
 
 
 ```

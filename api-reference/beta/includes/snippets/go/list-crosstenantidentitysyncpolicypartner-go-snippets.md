@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphpolicies.PoliciesCrossTenantAccessPolicyPartnersRequestBuilderGetQueryParameters{
@@ -23,7 +23,7 @@ configuration := &graphpolicies.PoliciesCrossTenantAccessPolicyPartnersRequestBu
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().Get(context.Background(), configuration)
+partners, err := graphClient.Policies().CrossTenantAccessPolicy().Partners().Get(context.Background(), configuration)
 
 
 ```

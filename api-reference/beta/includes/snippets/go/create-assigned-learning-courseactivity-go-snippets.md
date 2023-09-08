@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewLearningCourseActivity()
@@ -50,7 +50,7 @@ requestBody.SetNotes(notes)
 status := graphmodels.NOTSTARTED_COURSESTATUS 
 requestBody.SetStatus(&status) 
 
-result, err := graphClient.EmployeeExperience().LearningProviders().ByLearningProviderId("learningProvider-id").LearningCourseActivities().Post(context.Background(), requestBody, nil)
+learningCourseActivities, err := graphClient.EmployeeExperience().LearningProviders().ByLearningProviderId("learningProvider-id").LearningCourseActivities().Post(context.Background(), requestBody, nil)
 
 
 ```

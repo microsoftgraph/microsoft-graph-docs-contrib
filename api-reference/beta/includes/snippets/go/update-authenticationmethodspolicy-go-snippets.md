@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAuthenticationMethodsPolicy()
@@ -55,7 +55,7 @@ voiceReportingCode := int32(0)
 reportSuspiciousActivitySettings.SetVoiceReportingCode(&voiceReportingCode) 
 requestBody.SetReportSuspiciousActivitySettings(reportSuspiciousActivitySettings)
 
-result, err := graphClient.Policies().AuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
+authenticationMethodsPolicy, err := graphClient.Policies().AuthenticationMethodsPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

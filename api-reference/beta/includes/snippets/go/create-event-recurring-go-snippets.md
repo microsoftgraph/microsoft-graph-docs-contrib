@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEvent()
@@ -78,7 +78,7 @@ attendees := []graphmodels.attendeeable {
 }
 requestBody.SetAttendees(attendees)
 
-result, err := graphClient.Me().Events().Post(context.Background(), requestBody, nil)
+events, err := graphClient.Me().Events().Post(context.Background(), requestBody, nil)
 
 
 ```

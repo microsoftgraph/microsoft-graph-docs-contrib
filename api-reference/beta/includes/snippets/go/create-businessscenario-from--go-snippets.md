@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewBusinessScenario()
@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 uniqueName := "com.contoso.apps.ordertracking"
 requestBody.SetUniqueName(&uniqueName) 
 
-result, err := graphClient.Solutions().BusinessScenarios().Post(context.Background(), requestBody, nil)
+businessScenarios, err := graphClient.Solutions().BusinessScenarios().Post(context.Background(), requestBody, nil)
 
 
 ```

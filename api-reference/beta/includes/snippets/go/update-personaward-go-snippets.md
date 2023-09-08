@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPersonAward()
@@ -21,7 +21,7 @@ requestBody.SetIssuingAuthority(&issuingAuthority)
 thumbnailUrl := "https://iabm.io/sdhdfhsdhshsd.jpg"
 requestBody.SetThumbnailUrl(&thumbnailUrl) 
 
-result, err := graphClient.Users().ByUserId("user-id").Profile().Awards().ByAwardId("personAward-id").Patch(context.Background(), requestBody, nil)
+awards, err := graphClient.Users().ByUserId("user-id").Profile().Awards().ByPersonAwardId("personAward-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

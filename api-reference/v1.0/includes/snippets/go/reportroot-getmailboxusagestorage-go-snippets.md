@@ -11,11 +11,12 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Reports().GetMailboxUsageStorage(period='{period}')().Get(context.Background(), nil)
+period := "{period}"
+graphClient.Reports().GetMailboxUsageStorageWithPeriod(&period).Get(context.Background(), nil)
 
 
 ```

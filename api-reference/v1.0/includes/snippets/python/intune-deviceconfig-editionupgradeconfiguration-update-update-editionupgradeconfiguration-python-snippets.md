@@ -4,30 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = EditionUpgradeConfiguration()
-request_body.@odata_type = '#microsoft.graph.editionUpgradeConfiguration'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.description = 'Description value'
+request_body = EditionUpgradeConfiguration(
+	odata_type = "#microsoft.graph.editionUpgradeConfiguration",
+	description = "Description value",
+	display_name = "Display Name value",
+	version = 7,
+	license_type = EditionUpgradeLicenseType.LicenseFile,
+	target_edition = Windows10EditionType.Windows10EnterpriseN,
+	license = "License value",
+	product_key = "Product Key value",
+)
 
-request_body.display_name = 'Display Name value'
-
-request_body.Version = 7
-
-request_body.licensetype(EditionUpgradeLicenseType.LicenseFile('editionupgradelicensetype.licensefile'))
-
-request_body.targetedition(Windows10EditionType.Windows10EnterpriseN('windows10editiontype.windows10enterprisen'))
-
-request_body.license = 'License value'
-
-request_body.product_key = 'Product Key value'
-
-
-
-
-result = await client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(body = request_body)
 
 
 ```

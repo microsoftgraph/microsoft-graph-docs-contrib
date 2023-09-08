@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Search().Bookmarks().Get(context.Background(), nil)
+bookmarks, err := graphClient.Search().Bookmarks().Get(context.Background(), nil)
 
 
 ```

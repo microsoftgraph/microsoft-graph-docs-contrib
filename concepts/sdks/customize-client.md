@@ -28,34 +28,11 @@ The Microsoft Graph SDK client configures a default set of middleware that allow
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-```python
-# using Azure.Identity
-# https://learn.microsoft.com/en-us/python/api/azure-identity/azure.identity.interactivebrowsercredential
-interactive_credential = InteractiveBrowserCredential()
-scopes = ['https://graph.microsoft.com/.default']
-authProvider = AzureIdentityAuthenticationProvider(interactive_credential, scopes=scopes)
+:::code language="python" source="./snippets/python/src/snippets/custom_clients.py" id="CustomMiddlewareSnippet":::
 
-# Get default middleware
-middleware = GraphClientFactory.get_default_middleware(options=None)
+## Custom middleware
 
-# Remove a default handler
-retry_handler = [handler for handler in middleware if isinstance(handler, RetryHandler)][0]
-middleware.remove(retry_handler)
-
-# Add custom middleware
-# Implement a custom middleware by extending the BaseMiddleware class
-# https://github.com/microsoft/kiota-http-go/blob/main/kiota_http/middleware/middleware.py
-middleware.append(MyCustomMiddleware())
-
-# Create an HTTP client with the middleware
-http_client = GraphClientFactory().create_with_custom_middleware(middleware)
-
-# Create a request adapter with the HTTP client
-adapter = GraphRequestAdapter(auth_provider=authProvider, client=http_client)
-
-# Create Graph client
-client = GraphServiceClient(adapter)
-```
+:::code language="python" source="./snippets/python/src/snippets/middleware/custom_middleware.py" id="CustomMiddlewareSnippet":::
 
 ## [TypeScript](#tab/typescript)
 
@@ -86,31 +63,7 @@ Some environments require client applications to use a HTTP proxy before they ca
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-```python
-# using Azure.Identity
-# https://learn.microsoft.com/en-us/python/api/azure-identity/azure.identity.interactivebrowsercredential
-interactive_credential = InteractiveBrowserCredential()
-scopes = ['https://graph.microsoft.com/.default']
-authProvider = AzureIdentityAuthenticationProvider(interactive_credential, scopes=scopes)
-
-# Proxy URLs
-proxies = {
-    'http://': 'http://proxy-url',
-    'https://': 'http://proxy-url'
-}
-
-# Create a custom HTTP client with the proxies
-http_client = AsyncClient(proxies=proxies)
-
-# Apply Graph default middleware to HTTP client
-http_client = GraphClientFactory.create_with_default_middleware(client=http_client)
-
-# Create a request adapter with the HTTP client
-adapter = GraphRequestAdapter(auth_provider=authProvider, client=http_client)
-
-# Create Graph client
-client = GraphServiceClient(adapter)
-```
+:::code language="python" source="./snippets/python/src/snippets/custom_clients.py" id="ProxySnippet":::
 
 ## [TypeScript](#tab/typescript)
 

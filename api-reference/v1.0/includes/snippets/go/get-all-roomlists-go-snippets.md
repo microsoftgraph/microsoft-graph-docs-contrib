@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Places().GraphRoomList().Get(context.Background(), nil)
+graphRoomList, err := graphClient.Places().GraphRoomList().Get(context.Background(), nil)
 
 
 ```

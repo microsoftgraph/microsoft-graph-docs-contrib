@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEducationSchool()
@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 description := "Magnate school for the arts. Los Angeles School District"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Education().Schools().BySchoolId("educationSchool-id").Patch(context.Background(), requestBody, nil)
+schools, err := graphClient.Education().Schools().ByEducationSchoolId("educationSchool-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

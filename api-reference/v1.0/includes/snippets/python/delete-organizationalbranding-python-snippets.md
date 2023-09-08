@@ -4,20 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = BrandingDeleteRequestBody()
-additional_data = [
-'id' => '0', 
-];
-request_body.additional_data(additional_data)
+graph_client = GraphServiceClient(request_adapter)
 
+request_body = BrandingDeleteRequestBody(
+	additional_data = {
+			"id" : "0",
+	}
+)
 
-
-
-
-await client.organization.by_organization_id('organization-id').branding.delete(request_body = request_body)
+await graph_client.organization.by_organization_id('organization-id').branding.delete(body = request_body)
 
 
 ```

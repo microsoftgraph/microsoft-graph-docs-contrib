@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").ContentTypes().GetCompatibleHubContentTypes().Get(context.Background(), nil)
+getCompatibleHubContentTypes, err := graphClient.Sites().BySiteId("site-id").Lists().ByListId("list-id").ContentTypes().GetCompatibleHubContentTypes().Get(context.Background(), nil)
 
 
 ```

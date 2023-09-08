@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
@@ -25,7 +25,7 @@ configuration := &graphusers.UserItemChatsGetAllMessages()RequestBuilderGetReque
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Users().ByUserId("user-id").Chats().GetAllMessages().Get(context.Background(), configuration)
+getAllMessages, err := graphClient.Users().ByUserId("user-id").Chats().GetAllMessages().Get(context.Background(), configuration)
 
 
 ```

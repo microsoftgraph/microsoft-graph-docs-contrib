@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Teams().ByTeamId("team-id").Schedule().Shifts().ByShiftId("shift-id").Get(context.Background(), nil)
+shifts, err := graphClient.Teams().ByTeamId("team-id").Schedule().Shifts().ByShiftId("shift-id").Get(context.Background(), nil)
 
 
 ```

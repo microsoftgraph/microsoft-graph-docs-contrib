@@ -1,7 +1,7 @@
 ---
 title: "getManagedDevicesWithAppFailures function"
 description: "Retrieves the list of devices with failed apps"
-author: "dougeby"
+author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieves the list of devices with failed apps
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -60,20 +60,28 @@ GET https://graph.microsoft.com/v1.0/users/{usersId}/getManagedDevicesWithAppFai
 [!INCLUDE [sample-code](../includes/snippets/csharp/intune-troubleshooting-user-getmanageddeviceswithappfailures-getmanageddeviceswithappfailures-function-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/intune-troubleshooting-user-getmanageddeviceswithappfailures-getmanageddeviceswithappfailures-function-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/intune-troubleshooting-user-getmanageddeviceswithappfailures-getmanageddeviceswithappfailures-function-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-troubleshooting-user-getmanageddeviceswithappfailures-getmanageddeviceswithappfailures-function-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/intune-troubleshooting-user-getmanageddeviceswithappfailures-getmanageddeviceswithappfailures-function-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/intune-troubleshooting-user-getmanageddeviceswithappfailures-getmanageddeviceswithappfailures-function-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-troubleshooting-user-getmanageddeviceswithappfailures-getmanageddeviceswithappfailures-function-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/intune-troubleshooting-user-getmanageddeviceswithappfailures-getmanageddeviceswithappfailures-function-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-troubleshooting-user-getmanageddeviceswithappfailures-getmanageddeviceswithappfailures-function-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

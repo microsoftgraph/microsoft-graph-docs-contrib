@@ -4,25 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = WebAccount()
-request_body.description = 'My Github contributions!'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.user_id = 'innocenty.popov'
+request_body = WebAccount(
+	description = "My Github contributions!",
+	user_id = "innocenty.popov",
+	service = ServiceInformation(
+		name = "GitHub",
+		web_url = "https://github.com",
+	),
+)
 
-service = ServiceInformation()
-service.name = 'GitHub'
-
-service.web_url = 'https://github.com'
-
-
-request_body.service = service
-
-
-
-result = await client.me.profile.web_accounts.post(request_body = request_body)
+result = await graph_client.me.profile.web_accounts.post(body = request_body)
 
 
 ```

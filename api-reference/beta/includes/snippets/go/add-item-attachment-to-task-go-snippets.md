@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAttachment()
@@ -41,7 +41,7 @@ end.SetTimeZone(&timeZone)
 item.SetEnd(end)
 requestBody.SetItem(item)
 
-result, err := graphClient.Me().Outlook().Tasks().ByTaskId("outlookTask-id").Attachments().Post(context.Background(), requestBody, nil)
+attachments, err := graphClient.Me().Outlook().Tasks().ByOutlookTaskId("outlookTask-id").Attachments().Post(context.Background(), requestBody, nil)
 
 
 ```

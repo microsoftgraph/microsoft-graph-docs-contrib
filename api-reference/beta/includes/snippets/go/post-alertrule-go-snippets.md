@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelsdevicemanagement.NewAlertRule()
@@ -77,7 +77,7 @@ notificationChannels := []graphmodelsdevicemanagement.NotificationChannelable {
 }
 requestBody.SetNotificationChannels(notificationChannels)
 
-result, err := graphClient.DeviceManagement().Monitoring().AlertRules().Post(context.Background(), requestBody, nil)
+alertRules, err := graphClient.DeviceManagement().Monitoring().AlertRules().Post(context.Background(), requestBody, nil)
 
 
 ```

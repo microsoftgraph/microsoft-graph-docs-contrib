@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Sites().BySiteId("site-id").TermStore().Groups().ByGroupId("group-id").Sets().Get(context.Background(), nil)
+sets, err := graphClient.Sites().BySiteId("site-id").TermStore().Groups().ByGroupId("group-id").Sets().Get(context.Background(), nil)
 
 
 ```

@@ -11,11 +11,12 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Reports().GetSharePointSiteUsageStorage(period='{period}')().Get(context.Background(), nil)
+period := "{period}"
+graphClient.Reports().GetSharePointSiteUsageStorageWithPeriod(&period).Get(context.Background(), nil)
 
 
 ```

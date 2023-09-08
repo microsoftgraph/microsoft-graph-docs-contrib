@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewTenantAppManagementPolicy()
@@ -81,7 +81,7 @@ keyCredentials := []graphmodels.KeyCredentialConfigurationable {
 applicationRestrictions.SetKeyCredentials(keyCredentials)
 requestBody.SetApplicationRestrictions(applicationRestrictions)
 
-result, err := graphClient.Policies().DefaultAppManagementPolicy().Patch(context.Background(), requestBody, nil)
+defaultAppManagementPolicy, err := graphClient.Policies().DefaultAppManagementPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

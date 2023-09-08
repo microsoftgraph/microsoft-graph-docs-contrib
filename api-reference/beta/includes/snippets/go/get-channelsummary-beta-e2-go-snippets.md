@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphteams.TeamItemChannelItemRequestBuilderGetQueryParameters{
@@ -22,7 +22,7 @@ configuration := &graphteams.TeamItemChannelItemRequestBuilderGetRequestConfigur
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Get(context.Background(), configuration)
+channels, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Get(context.Background(), configuration)
 
 
 ```

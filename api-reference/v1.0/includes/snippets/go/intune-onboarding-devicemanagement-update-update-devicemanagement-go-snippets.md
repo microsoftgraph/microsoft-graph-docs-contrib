@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDeviceManagement()
@@ -61,7 +61,7 @@ privacyUrl := "https://example.com/privacyUrl/"
 intuneBrand.SetPrivacyUrl(&privacyUrl) 
 requestBody.SetIntuneBrand(intuneBrand)
 
-result, err := graphClient.DeviceManagement().Patch(context.Background(), requestBody, nil)
+deviceManagement, err := graphClient.DeviceManagement().Patch(context.Background(), requestBody, nil)
 
 
 ```

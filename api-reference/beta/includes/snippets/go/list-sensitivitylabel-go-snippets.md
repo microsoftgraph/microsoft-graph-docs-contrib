@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Users().ByUserId("user-id").Security().InformationProtection().SensitivityLabels().Get(context.Background(), nil)
+sensitivityLabels, err := graphClient.Users().ByUserId("user-id").Security().InformationProtection().SensitivityLabels().Get(context.Background(), nil)
 
 
 ```

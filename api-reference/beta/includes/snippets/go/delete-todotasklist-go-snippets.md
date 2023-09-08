@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().Todo().Lists().ByListId("todoTaskList-id").Delete(context.Background(), nil)
+graphClient.Me().Todo().Lists().ByTodoTaskListId("todoTaskList-id").Delete(context.Background(), nil)
 
 
 ```

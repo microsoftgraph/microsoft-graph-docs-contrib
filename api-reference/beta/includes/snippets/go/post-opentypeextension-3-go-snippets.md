@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewExtension()
@@ -25,7 +25,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Groups().ByGroupId("group-id").Events().ByEventId("event-id").Extensions().Post(context.Background(), requestBody, nil)
+extensions, err := graphClient.Groups().ByGroupId("group-id").Events().ByEventId("event-id").Extensions().Post(context.Background(), requestBody, nil)
 
 
 ```

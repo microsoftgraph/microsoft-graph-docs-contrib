@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphdevicemanagement.NewBulkRestoreCloudPcPostRequestBody()
@@ -28,7 +28,7 @@ requestBody.SetRestorePointDateTime(&restorePointDateTime)
 timeRange := graphmodels.BEFORE_RESTORETIMERANGE 
 requestBody.SetTimeRange(&timeRange) 
 
-result, err := graphClient.DeviceManagement().ManagedDevices().BulkRestoreCloudPc().Post(context.Background(), requestBody, nil)
+bulkRestoreCloudPc, err := graphClient.DeviceManagement().ManagedDevices().BulkRestoreCloudPc().Post(context.Background(), requestBody, nil)
 
 
 ```

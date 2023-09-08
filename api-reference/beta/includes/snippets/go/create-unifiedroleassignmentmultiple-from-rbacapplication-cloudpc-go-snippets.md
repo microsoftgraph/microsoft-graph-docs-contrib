@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewUnifiedRoleAssignmentMultiple()
@@ -28,7 +28,7 @@ principalIds := []string {
 }
 requestBody.SetPrincipalIds(principalIds)
 
-result, err := graphClient.RoleManagement().CloudPC().RoleAssignments().Post(context.Background(), requestBody, nil)
+roleAssignments, err := graphClient.RoleManagement().CloudPC().RoleAssignments().Post(context.Background(), requestBody, nil)
 
 
 ```

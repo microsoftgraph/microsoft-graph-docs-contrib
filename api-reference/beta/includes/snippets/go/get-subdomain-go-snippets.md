@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Security().ThreatIntelligence().Subdomains().BySubdomainId("subdomain-id").Get(context.Background(), nil)
+subdomains, err := graphClient.Security().ThreatIntelligence().Subdomains().BySubdomainId("subdomain-id").Get(context.Background(), nil)
 
 
 ```
