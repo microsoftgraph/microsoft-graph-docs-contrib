@@ -59,16 +59,16 @@ The following is a JSON representation of the resource.
     "printerId": "String (identifier)",
     "printerName": "String (identifier)",
     "usageDate": "String (timestamp)",
-    "completedBlackAndWhiteJobCount": 123456,
-    "completedColorJobCount": 123456,
-    "completedJobCount": 123456,
-    "incompleteJobCount": 123456,
-    "pageCount": 123456,
-    "blackAndWhitePageCount": 123456,
-    "colorPageCount": 123456,
-    "mediaSheetCount": 123456,
-    "doubleSidedSheetCount": 123456,
-    "singleSidedSheetCount": 123456
+    "completedBlackAndWhiteJobCount": "Integer",
+    "completedColorJobCount": "Integer",
+    "completedJobCount": "Integer",
+    "incompleteJobCount": "Integer",
+    "pageCount": "Integer",
+    "blackAndWhitePageCount": "Integer",
+    "colorPageCount": "Integer",
+    "mediaSheetCount": "Integer",
+    "doubleSidedSheetCount": "Integer",
+    "singleSidedSheetCount": "Integer"
 }
 ```
 
