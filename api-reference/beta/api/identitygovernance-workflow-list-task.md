@@ -39,7 +39,7 @@ GET /identityGovernance/lifecycleWorkflows/workflow/{workflowId}/tasks
 
 ## Optional query parameters
 
-This method supports the `$search`, `$orderBy`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$search`, `$orderby`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

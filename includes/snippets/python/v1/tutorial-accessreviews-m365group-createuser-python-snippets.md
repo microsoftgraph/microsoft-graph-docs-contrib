@@ -4,29 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = User()
-request_body.account_enabled = True
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.display_name = 'Aline Dupuy'
+request_body = User(
+	account_enabled = True,
+	display_name = "Aline Dupuy",
+	mail_nickname = "AlineD",
+	user_principal_name = "AlineD@contoso.com",
+	password_profile = PasswordProfile(
+		force_change_password_next_sign_in = True,
+		password = "xWwvJ]6NMw+bWH-d",
+	),
+)
 
-request_body.mail_nickname = 'AlineD'
-
-request_body.user_principal_name = 'AlineD@contoso.com'
-
-password_profile = PasswordProfile()
-password_profile.force_change_password_next_sign_in = True
-
-password_profile.password = 'xWwvJ]6NMw+bWH-d'
-
-
-request_body.password_profile = password_profile
-
-
-
-result = await client.users.post(request_body = request_body)
+result = await graph_client.users.post(body = request_body)
 
 
 ```

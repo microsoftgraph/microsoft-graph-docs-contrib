@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsHelloForBusinessAuthenticationMethod"
 description: "Deletes a windowsHelloForBusinessAuthenticationMethod object."
-author: "mmcla"
+author: "calvinlui"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

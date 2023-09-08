@@ -268,6 +268,10 @@ Content-length: 4303
 [!INCLUDE [sample-code](../includes/snippets/powershell/intune-mam-windowsinformationprotectionpolicy-create-create-windowsinformationprotectionpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-mam-windowsinformationprotectionpolicy-create-create-windowsinformationprotectionpolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

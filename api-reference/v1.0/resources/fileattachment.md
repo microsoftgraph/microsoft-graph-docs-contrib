@@ -2,7 +2,7 @@
 title: "fileAttachment resource type"
 description: "A file (such as a text file or Word document) attached to an event, message, or post."
 ms.localizationpriority: high
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -12,7 +12,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 A file (such as a text file or Word document) attached to a user [event](../resources/event.md),
-[message](../resources/message.md), or [post](../resources/post.md). 
+[message](../resources/message.md), or [post](../resources/post.md).
 
 When creating a file attachment, include the following in the request body:
 

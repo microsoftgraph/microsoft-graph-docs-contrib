@@ -242,6 +242,14 @@ Content-length: 3905
 [!INCLUDE [sample-code](../includes/snippets/php/intune-mam-mdmwindowsinformationprotectionpolicy-update-update-mdmwindowsinformationprotectionpolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-mam-mdmwindowsinformationprotectionpolicy-update-update-mdmwindowsinformationprotectionpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-mam-mdmwindowsinformationprotectionpolicy-update-update-mdmwindowsinformationprotectionpolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

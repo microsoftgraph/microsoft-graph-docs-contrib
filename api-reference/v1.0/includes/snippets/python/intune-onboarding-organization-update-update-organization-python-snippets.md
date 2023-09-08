@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Organization()
-request_body.@odata_type = '#microsoft.graph.organization'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.mobiledevicemanagementauthority(MdmAuthority.Intune('mdmauthority.intune'))
+request_body = Organization(
+	odata_type = "#microsoft.graph.organization",
+	mobile_device_management_authority = MdmAuthority.Intune,
+)
 
-
-
-
-result = await client.organization.by_organization_id('organization-id').patch(request_body = request_body)
+result = await graph_client.organization.by_organization_id('organization-id').patch(body = request_body)
 
 
 ```

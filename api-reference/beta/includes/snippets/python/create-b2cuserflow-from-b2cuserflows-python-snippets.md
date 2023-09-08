@@ -4,20 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = B2cIdentityUserFlow()
-request_body.id = 'Customer'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.userflowtype(UserFlowType.SignUpOrSignIn('userflowtype.signuporsignin'))
+request_body = B2cIdentityUserFlow(
+	id = "Customer",
+	user_flow_type = UserFlowType.SignUpOrSignIn,
+	user_flow_type_version = 3,
+)
 
-request_body.UserFlowTypeVersion = 3
-
-
-
-
-result = await client.identity.b2c_user_flows.post(request_body = request_body)
+result = await graph_client.identity.b2c_user_flows.post(body = request_body)
 
 
 ```

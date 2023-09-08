@@ -4,6 +4,7 @@
       "source_path": "openpublishing/docs/concepts/data-connect-policies.md/",
       "redirect_url": "https://azure.microsoft.com/en-us/pricing/details/graph-data-connect/",
       "redirect_document_id": true
+<<<<<<< HEAD
     },
     {
       "source_path_from_root": "/api-reference/beta/api/virtualeventregistrant-get.md",
@@ -17,3 +18,8 @@
     }
   ]
 }
+=======
+    }
+  ]
+}
+>>>>>>> 0ca80723c054fe741bee4ab0187a4f0f3d9f3375
