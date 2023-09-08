@@ -37,13 +37,12 @@ To use application permission for this API, tenant administrators must create an
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
-
 Get a single transcript of an online meeting.
 
 ```http
 GET /me/onlineMeetings/{meetingId}/transcripts/{transcriptId}
 GET /users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}
+
 ```
 
 Get the content of a single transcript of an online meeting.
@@ -51,6 +50,7 @@ Get the content of a single transcript of an online meeting.
 ```http
 GET me/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
 GET users/{userId}/onlineMeetings/{meetingId}/transcripts/{transcriptId}/content
+
 ```
 
 ## Request headers
@@ -76,6 +76,7 @@ If successful, this method returns a `200 OK` response code and a [callTranscrip
 #### Request
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript",
@@ -84,6 +85,7 @@ If successful, this method returns a `200 OK` response code and a [callTranscrip
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/users/ba321e0d-79ee-478d-8e28-85a19507f456/onlineMeetings/MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ/transcripts/MSMjMCMjNzU3ODc2ZDYtOTcwMi00MDhkLWFkNDItOTE2ZDNmZjkwZGY4
+
 ```
 
 ---
