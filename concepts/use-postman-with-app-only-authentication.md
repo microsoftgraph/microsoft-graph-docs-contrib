@@ -37,7 +37,13 @@ You have now successfully run a Microsoft Graph request using application authen
 
 You can follow the previous steps to run other requests to Microsoft Graph. Note that you have to add [permissions](permissions-reference.md) to your Azure Active Directory application for other requests to work; otherwise, you get permission denied errors in your responses. To find the right permissions, check the **Permissions** section of the relevant API and look for the application permission type.
 
-## Contributing to the collection
+## Next steps
+
+Now that you have successfully made a Microsoft Graph call using application authentication, proceed to the next article to run your first delegated request.
+
+- [Use delegated authentication with Postman for Microsoft Graph](use-postman-with-delegated-permissions.md)
+
+### Contributing to the collection
 
 If you want to contribute your own requests to the Microsoft Graph Postman collection, you need a Postman license. You can make your changes to the forked collection, and then hover over the collection top node and select **Create pull request**.
 
