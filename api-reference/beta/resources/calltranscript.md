@@ -33,7 +33,7 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 | id| String| The unique identifier for the transcript. Read-only.|
 | meetingId | String | The unique identifier of the online meeting related to this transcript. Read-only.|
 | meetingOrganizerId| String| The unique identifier of the organizer of the **onlineMeeting** related to this transcript. Read-only.|
-| meetingOrganizer| IdentitySet| The unique details of the organizer of the **onlineMeeting** related to this transcript. Read-only.|
+| meetingOrganizer| IdentitySet| The identity information of the organizer of the **onlineMeeting** related to this transcript. Read-only.|
 | metadataContent| Stream| The time-aligned metadata of the utterances in the transcript. Read-only.|
 | transcriptContentUrl| String| The URL which can be used to access the content of the transcript. Read-only.|
 
