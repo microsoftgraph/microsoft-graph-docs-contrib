@@ -1,43 +1,45 @@
 ---
-title: "Use Postman for Microsoft Graph with App-only Authentication"
-description: "Postman is an API platform for building and using APIs. Use the Microsoft Graph Postman collection to run an application request."
+title: "Use app-only authentication with Postman for Microsoft Graph"
+description: "Learn how to use app-only (application) authentication with Postman for Microsoft Graph to run requests without a signed-in user."
 author: "jasonjoh"
 ms.localizationpriority: high
 ---
 
-# Use Postman for Microsoft Graph with App-only Authentication
+# Use app-only authentication with Postman for Microsoft Graph
 
-In the last article, you made a [Microsoft Graph call using delegated authentication](use-postman-with-delegated-permissions.md). In this article, you'll learn to make a Microsoft Graph call using application authentication.
+This article describes how you can use app-only (application) authentication with Postman for Microsoft Graph to run requests without a signed-in user.
 
-If you haven't completed the setup instructions detailed in this article: [Use Postman with the Microsoft Graph API](use-postman.md), complete those steps before returning to this article.
+## Prerequisite
+
+Complete the setup instructions in the [Use Postman with the Microsoft Graph API](use-postman.md) article, before you can continue with this tutorial.
 
 ## Step 1: Get an application access token
 
-The first time you run a request as an application authentication flow, you need to get an access token. To do so:
+The first time you run a request as an application authentication flow, you need to get an access token:
 
 1. Select the **Application** folder.
 1. Select the **Authorization** tab.
-1. In the **Configure New Token** section, leave all the fields as preconfigured, including the **Grant type**, which is set to `Client Credentials`.
+1. In the **Configure New Token** section, leave all the fields as preconfigured, including the **Grant type** that is set to `Client Credentials`.
 1. Scroll down on the right and select **Get New Access Token**.
 1. Select **Proceed**, and then select the **Use Token** button.
 
-You now have a valid access token to use for application requests.
+You have now a valid access token to use for application requests.
 
 ## Step 2: Run your first application request
 
-Inside the **Application** folder are requests for various Microsoft Graph workloads that you can call.
+The **Application** folder contains many requests for Microsoft Graph workloads that you can consume:
 
 1. Expand the **Application** folder, and then expand the **User** folder.
 1. Double-click **Get Users** to open the request.
 1. On the top right, select **Send**Access to OData is disabled.
 
-You have now successfully made a Microsoft Graph call using application authentication.
+You have now successfully run a Microsoft Graph request using application authentication.
 
-You can follow these steps to make other requests to Microsoft Graph. Remember that you have to add [permissions](permissions-reference.md) to your Azure AD application for other requests to work; otherwise, you get permission denied errors in your responses. To find the right permissions, check the Permissions section of the relevant API, and look for Application permission type.
+You can follow the previous steps to run other requests to Microsoft Graph. Note that you have to add [permissions](permissions-reference.md) to your Azure Active Directory application for other requests to work; otherwise, you get permission denied errors in your responses. To find the right permissions, check the **Permissions** section of the relevant API and look for the application permission type.
 
-### Contribute to the collection
+## Contributing to the collection
 
-If you want to contribute your own requests, you need a Postman license. You can make your changes to the forked collection, and then hover over the collection top node and select **Create pull request**.
+If you want to contribute your own requests to the Microsoft Graph Postman collection, you need a Postman license. You can make your changes to the forked collection, and then hover over the collection top node and select **Create pull request**.
 
 ## Known issues
 
