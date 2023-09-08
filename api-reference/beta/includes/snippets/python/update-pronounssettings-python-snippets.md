@@ -12,7 +12,7 @@ request_body = PronounsSettings(
 	is_enabled_in_organization = True,
 )
 
-result = await graph_client.admin.people.pronouns.patch(request_body = request_body)
+result = await graph_client.admin.people.pronouns.patch(body = request_body)
 
 
 ```

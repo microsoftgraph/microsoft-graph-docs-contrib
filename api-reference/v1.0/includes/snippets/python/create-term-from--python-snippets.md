@@ -18,7 +18,7 @@ request_body = Term(
 	]
 )
 
-result = await graph_client.sites.by_site_id('site-id').term_store.sets.by_set_id('set-id').children.post(request_body = request_body)
+result = await graph_client.sites.by_site_id('site-id').term_store.sets.by_set_id('set-id').children.post(body = request_body)
 
 
 ```

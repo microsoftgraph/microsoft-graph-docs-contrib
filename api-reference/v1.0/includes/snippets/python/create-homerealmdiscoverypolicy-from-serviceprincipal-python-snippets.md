@@ -12,7 +12,7 @@ request_body = ReferenceCreate(
 	odata_id = "https://graph.microsoft.com/v1.0/policies/homeRealmDiscoveryPolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9",
 )
 
-await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').home_realm_discovery_policies.ref.post(request_body = request_body)
+await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').home_realm_discovery_policies.ref.post(body = request_body)
 
 
 ```

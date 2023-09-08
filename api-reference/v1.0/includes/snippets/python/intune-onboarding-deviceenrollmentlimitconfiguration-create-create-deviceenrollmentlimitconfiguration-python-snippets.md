@@ -17,7 +17,7 @@ request_body = DeviceEnrollmentLimitConfiguration(
 	limit = 5,
 )
 
-result = await graph_client.device_management.device_enrollment_configurations.post(request_body = request_body)
+result = await graph_client.device_management.device_enrollment_configurations.post(body = request_body)
 
 
 ```

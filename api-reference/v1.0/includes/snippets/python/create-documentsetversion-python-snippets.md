@@ -13,7 +13,7 @@ request_body = DocumentSetVersion(
 	should_capture_minor_version = False,
 )
 
-result = await graph_client.sites.by_site_id('site-id').lists.by_list_id('list-id').items.by_item_id('listItem-id').document_set_versions.post(request_body = request_body)
+result = await graph_client.sites.by_site_id('site-id').lists.by_list_id('list-id').items.by_item_id('listItem-id').document_set_versions.post(body = request_body)
 
 
 ```

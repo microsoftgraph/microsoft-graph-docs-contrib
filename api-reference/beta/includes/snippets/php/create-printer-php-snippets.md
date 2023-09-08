@@ -21,6 +21,6 @@ $certificateSigningRequest->setTransportKey('{sampleTransportKey}');
 $requestBody->setCertificateSigningRequest($certificateSigningRequest);
 $requestBody->setConnectorId(null);
 
-$graphServiceClient->print()->printers()->create()->post($requestBody)->wait();
+$graphServiceClient->escapedPrint()->printers()->create()->post($requestBody)->wait();
 
 ```

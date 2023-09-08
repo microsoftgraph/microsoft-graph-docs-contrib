@@ -16,7 +16,7 @@ request_body = CustomAppScope(
 	),
 )
 
-result = await graph_client.role_management.exchange.custom_app_scopes.by_custom_app_scope_id('customAppScope-id').patch(request_body = request_body)
+result = await graph_client.role_management.exchange.custom_app_scopes.by_custom_app_scope_id('customAppScope-id').patch(body = request_body)
 
 
 ```

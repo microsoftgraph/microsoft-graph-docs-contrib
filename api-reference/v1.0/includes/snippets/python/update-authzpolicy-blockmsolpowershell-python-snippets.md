@@ -12,7 +12,7 @@ request_body = AuthorizationPolicy(
 	block_msol_power_shell = True,
 )
 
-result = await graph_client.policies.authorization_policy.patch(request_body = request_body)
+result = await graph_client.policies.authorization_policy.patch(body = request_body)
 
 
 ```
