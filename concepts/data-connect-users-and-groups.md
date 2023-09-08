@@ -28,7 +28,7 @@ The following are the options for user-scoped datasets:
     * **All users in the tenant**: Returns data for all the users in the tenant. Data is extracted for individual users in the selected group. For details, see [User selection and filtering capabilities](/graph/data-connect-filtering).
     * **All users in the tenant with a scope filter**: Returns data for all the users in the tenant that are part of the scope filter applied. Data is extracted for individual users from the selected filter (group).
         * A scope Filter can help filter the users. If it's left empty, all data for all users is returned. 
-    *	**Select groups from the Microsoft 365 tenant**: Data is extracted for individual users in the group.
+    *    **Select groups from the Microsoft 365 tenant**: Data is extracted for individual users in the group.
 
 #### Example
 
@@ -83,15 +83,15 @@ Use the following steps to search for the types of groups in your tenant to help
 
     ![Screenshot of the ADF portal with the returned list of groups and group IDs highlighted](images/data-connect-groups-2.png)
 
-3. In a new tab, go to the [Azure homepage](https://www.portal.azure.com) and choose **Azure Active Directory**.
+3. In a new tab, go to the [Microsoft Entra admin center](https://entra.microsoft.com) > Under **Identity**, select **Overview**.
 
     ![Screenshot of the Azure homepage with Azure Active Directory hihglighted](images/data-connect-groups-2.5.png)
 
 4. On the Overview tab, paste the group ID copied from step 2, and then and choose the **Groups** tab.
 
-    ![Screenshot of the Azure portal with the group ID field and Groups tab highlighted](images/data-connect-groups-3.png)
+    ![Screenshot of the Microsoft Entra admin center with the group ID field and Groups tab highlighted](images/data-connect-groups-3.png)
 
 5. In the **Type** field for the group, verify the type of group that you have.
 
-    ![Screenshot of the group in the Azure portal with the Type field highlighted](images/data-connect-groups-4.png)
+    ![Screenshot of the group in the Microsoft Entra with the Type field highlighted](images/data-connect-groups-4.png)
  

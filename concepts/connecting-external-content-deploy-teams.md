@@ -40,9 +40,9 @@ Ensure that the **webApplicationInfo** property is added to the manifest. After 
   }
 }
 ```
-	
+    
 ## Update Azure Active Directory permissions
-In the Azure portal, go to the app registration and update the app permissions to include the Microsoft Graph permissions `ExternalConnection.ReadWrite.OwnedBy` and `ExternalItem.ReadWrite.OwnedBy`, as shown in the following example.
+In the Microsoft Entra admin center, go to the app registration and update the app permissions to include the Microsoft Graph permissions `ExternalConnection.ReadWrite.OwnedBy` and `ExternalItem.ReadWrite.OwnedBy`, as shown in the following example.
 ![updated Azure Active Directory permissions](images/connectors-images/AADperms-TAC-connectors.png)
 
 ## Handle Microsoft Graph webhook notifications
