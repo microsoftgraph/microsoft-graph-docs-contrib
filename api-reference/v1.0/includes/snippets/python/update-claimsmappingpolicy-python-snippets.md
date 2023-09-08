@@ -12,7 +12,7 @@ request_body = ClaimsMappingPolicy(
 	display_name = "UpdateClaimsPolicy",
 )
 
-result = await graph_client.policies.claim_mapping_policies.by_claim_mapping_policie_id('claimsMappingPolicy-id').patch(request_body = request_body)
+result = await graph_client.policies.claim_mapping_policies.by_claim_mapping_policie_id('claimsMappingPolicy-id').patch(body = request_body)
 
 
 ```

@@ -9,8 +9,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new ListRequestBuilderGetRequestConfiguration();
-$queryParameters = ListRequestBuilderGetRequestConfiguration::createQueryParameters();
+$requestConfiguration = new ListItemRequestBuilderGetRequestConfiguration();
+$queryParameters = ListItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","name","lastModifiedDateTime"];
 $queryParameters->expand = ["columns(select=name,description)","items",")"];
 $requestConfiguration->queryParameters = $queryParameters;

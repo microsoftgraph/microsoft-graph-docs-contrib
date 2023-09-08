@@ -17,7 +17,7 @@ request_body = CloudPcDeviceImage(
 	source_image_resource_id = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c58ffff/resourceGroups/Example/providers/Microsoft.Compute/images/exampleImage",
 )
 
-result = await graph_client.device_management.virtual_endpoint.device_images.post(request_body = request_body)
+result = await graph_client.device_management.virtual_endpoint.device_images.post(body = request_body)
 
 
 ```

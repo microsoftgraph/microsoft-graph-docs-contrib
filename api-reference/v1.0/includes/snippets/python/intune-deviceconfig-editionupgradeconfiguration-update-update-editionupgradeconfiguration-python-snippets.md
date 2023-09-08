@@ -19,7 +19,7 @@ request_body = EditionUpgradeConfiguration(
 	product_key = "Product Key value",
 )
 
-result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(body = request_body)
 
 
 ```

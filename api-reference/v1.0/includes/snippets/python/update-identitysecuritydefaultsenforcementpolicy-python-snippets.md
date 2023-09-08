@@ -12,7 +12,7 @@ request_body = IdentitySecurityDefaultsEnforcementPolicy(
 	is_enabled = False,
 )
 
-result = await graph_client.policies.identity_security_default_enforcement_policy.patch(request_body = request_body)
+result = await graph_client.policies.identity_security_default_enforcement_policy.patch(body = request_body)
 
 
 ```

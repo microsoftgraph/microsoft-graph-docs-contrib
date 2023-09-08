@@ -14,7 +14,7 @@ request_body = ExternalGroup(
 	description = "The product marketing team",
 )
 
-result = await graph_client.external.connections.by_connection_id('externalConnection-id').groups.post(request_body = request_body)
+result = await graph_client.external.connections.by_connection_id('externalConnection-id').groups.post(body = request_body)
 
 
 ```

@@ -16,7 +16,7 @@ request_body = FileAssessmentRequest(
 	content_data = "VGhpcyBpcyBhIHRlc3QgZmlsZQ==",
 )
 
-result = await graph_client.information_protection.threat_assessment_requests.post(request_body = request_body)
+result = await graph_client.information_protection.threat_assessment_requests.post(body = request_body)
 
 
 ```
