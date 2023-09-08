@@ -4,29 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = AgreementFileLocalization()
-request_body.file_name = 'Contoso ToU for guest users (French)'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.language = 'fr-FR'
+request_body = AgreementFileLocalization(
+	file_name = "Contoso ToU for guest users (French)",
+	language = "fr-FR",
+	is_default = False,
+	is_major_version = False,
+	display_name = "Contoso ToU for guest users (French)",
+	file_data = AgreementFileData(
+		data = base64.urlsafe_b64decode("base64JVBERi0xLjUKJb/3ov4KNCAwIG9iago8PCAvTGluZWFyaX//truncated-binary-data"),
+	),
+)
 
-request_body.is_default = False
-
-request_body.is_major_version = False
-
-request_body.display_name = 'Contoso ToU for guest users (French)'
-
-file_data = AgreementFileData()
-file_data.Data(base64_decode('base64JVBERi0xLjUKJb/3ov4KNCAwIG9iago8PCAvTGluZWFyaX//truncated-binary-data'))
-
-
-request_body.file_data = file_data
-
-
-
-result = await client.identity_governance.term_of_use.agreements.by_agreement_id('agreement-id').files.post(request_body = request_body)
+result = await graph_client.identity_governance.term_of_use.agreements.by_agreement_id('agreement-id').files.post(body = request_body)
 
 
 ```

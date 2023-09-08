@@ -85,6 +85,8 @@ Administrators can use ApplicationAccessPolicy cmdlets to control online meeting
 - OnlineMeetings.Read.All
 - OnlineMeetings.ReadWrite.All
 - OnlineMeetingArtifact.Read.All
+- OnlineMeetingTranscript.Read.All
+- OnlineMeetingRecording.Read.All
 - VirtualEvent.Read.All
 
 For more information about configuring application access policy, see the [PowerShell cmdlet reference for New-ApplicationAccessPolicy](/powershell/module/skype/new-csapplicationaccesspolicy).

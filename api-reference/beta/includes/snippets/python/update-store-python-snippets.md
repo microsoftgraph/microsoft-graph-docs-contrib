@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Store()
-request_body.default_language_tag = 'en-US'
+graph_client = GraphServiceClient(request_adapter)
 
+request_body = Store(
+	default_language_tag = "en-US",
+)
 
-
-
-result = await client.term_store.patch(request_body = request_body)
+result = await graph_client.term_store.patch(body = request_body)
 
 
 ```

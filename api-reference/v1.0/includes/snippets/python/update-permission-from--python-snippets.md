@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Permission()
-request_body.Roles(['read', ])
+graph_client = GraphServiceClient(request_adapter)
 
+request_body = Permission(
+	roles = [
+		"read",
+	]
+)
 
-
-
-result = await client.sites.by_site_id('site-id').permissions.by_permission_id('permission-id').patch(request_body = request_body)
+result = await graph_client.sites.by_site_id('site-id').permissions.by_permission_id('permission-id').patch(body = request_body)
 
 
 ```

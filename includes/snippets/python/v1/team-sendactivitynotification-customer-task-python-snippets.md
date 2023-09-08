@@ -4,47 +4,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = SendActivityNotificationPostRequestBody()
-topic = TeamworkActivityTopic()
-topic.source(TeamworkActivityTopicSource.Text('teamworkactivitytopicsource.text'))
+graph_client = GraphServiceClient(request_adapter)
 
-topic.value = 'Deployment Approvals Channel'
+request_body = SendActivityNotificationPostRequestBody(
+	topic = TeamworkActivityTopic(
+		source = TeamworkActivityTopicSource.Text,
+		value = "Deployment Approvals Channel",
+		web_url = "https://teams.microsoft.com/l/message/19:448cfd2ac2a7490a9084a9ed14cttr78c@thread.skype/1605223780000?tenantId=c8b1bf45-3834-4ecf-971a-b4c755ee677d&groupId=d4c2a937-f097-435a-bc91-5c1683ca7245&parentMessageId=1605223771864&teamName=Approvals&channelName=Azure%20DevOps&createdTime=1605223780000",
+	),
+	activity_type = "approvalRequired",
+	preview_text = ItemBody(
+		content = "New deployment requires your approval",
+	),
+	recipient = AadUserNotificationRecipient(
+		odata_type = "microsoft.graph.aadUserNotificationRecipient",
+		user_id = "569363e2-4e49-4661-87f2-16f245c5d66a",
+	),
+	template_parameters = [
+		KeyValuePair(
+			name = "deploymentId",
+			value = "6788662",
+		),
+	]
+)
 
-topic.web_url = 'https://teams.microsoft.com/l/message/19:448cfd2ac2a7490a9084a9ed14cttr78c@thread.skype/1605223780000?tenantId=c8b1bf45-3834-4ecf-971a-b4c755ee677d&groupId=d4c2a937-f097-435a-bc91-5c1683ca7245&parentMessageId=1605223771864&teamName=Approvals&channelName=Azure%20DevOps&createdTime=1605223780000'
-
-
-request_body.topic = topic
-request_body.activity_type = 'approvalRequired'
-
-preview_text = ItemBody()
-preview_text.content = 'New deployment requires your approval'
-
-
-request_body.preview_text = preview_text
-recipient = AadUserNotificationRecipient()
-recipient.@odata_type = 'microsoft.graph.aadUserNotificationRecipient'
-
-recipient.user_id = '569363e2-4e49-4661-87f2-16f245c5d66a'
-
-
-request_body.recipient = recipient
-template_parameters_key_value_pair1 = KeyValuePair()
-template_parameters_key_value_pair1.name = 'deploymentId'
-
-template_parameters_key_value_pair1.value = '6788662'
-
-
-templateParametersArray []= templateParametersKeyValuePair1;
-request_body.templateparameters(templateParametersArray)
-
-
-
-
-
-await client.teams.by_team_id('team-id').send_activity_notification.post(request_body = request_body)
+await graph_client.teams.by_team_id('team-id').send_activity_notification.post(body = request_body)
 
 
 ```

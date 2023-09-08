@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 title: "Add item to a bundle"
 description: "Add item to a bundle of driveItems."
 ms.localizationpriority: medium
