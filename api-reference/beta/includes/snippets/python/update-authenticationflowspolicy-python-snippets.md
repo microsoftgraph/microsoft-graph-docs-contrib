@@ -14,7 +14,7 @@ request_body = AuthenticationFlowsPolicy(
 	),
 )
 
-result = await graph_client.policies.authentication_flow_policy.patch(request_body = request_body)
+result = await graph_client.policies.authentication_flow_policy.patch(body = request_body)
 
 
 ```

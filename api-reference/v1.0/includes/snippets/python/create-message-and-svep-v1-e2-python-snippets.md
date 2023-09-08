@@ -17,7 +17,7 @@ request_body = Message(
 	]
 )
 
-result = await graph_client.me.messages.by_message_id('message-id').patch(request_body = request_body)
+result = await graph_client.me.messages.by_message_id('message-id').patch(body = request_body)
 
 
 ```

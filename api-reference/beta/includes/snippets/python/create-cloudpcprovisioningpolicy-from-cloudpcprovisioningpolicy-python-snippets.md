@@ -40,7 +40,7 @@ request_body = CloudPcProvisioningPolicy(
 	provisioning_type = CloudPcProvisioningType.Dedicated,
 )
 
-result = await graph_client.device_management.virtual_endpoint.provisioning_policies.post(request_body = request_body)
+result = await graph_client.device_management.virtual_endpoint.provisioning_policies.post(body = request_body)
 
 
 ```

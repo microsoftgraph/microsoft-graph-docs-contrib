@@ -25,7 +25,7 @@ request_body = Simulation(
 	}
 )
 
-result = await graph_client.security.attack_simulation.simulations.post(request_body = request_body)
+result = await graph_client.security.attack_simulation.simulations.post(body = request_body)
 
 
 ```

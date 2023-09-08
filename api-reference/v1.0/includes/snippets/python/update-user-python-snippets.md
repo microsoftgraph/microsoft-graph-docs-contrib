@@ -15,7 +15,7 @@ request_body = User(
 	office_location = "18/2111",
 )
 
-result = await graph_client.me.patch(request_body = request_body)
+result = await graph_client.me.patch(body = request_body)
 
 
 ```

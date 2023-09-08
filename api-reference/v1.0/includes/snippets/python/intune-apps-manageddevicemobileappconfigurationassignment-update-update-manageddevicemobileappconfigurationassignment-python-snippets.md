@@ -15,7 +15,7 @@ request_body = ManagedDeviceMobileAppConfigurationAssignment(
 	),
 )
 
-result = await graph_client.device_app_management.mobile_app_configurations.by_mobile_app_configuration_id('managedDeviceMobileAppConfiguration-id').assignments.by_assignment_id('managedDeviceMobileAppConfigurationAssignment-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.mobile_app_configurations.by_mobile_app_configuration_id('managedDeviceMobileAppConfiguration-id').assignments.by_assignment_id('managedDeviceMobileAppConfigurationAssignment-id').patch(body = request_body)
 
 
 ```

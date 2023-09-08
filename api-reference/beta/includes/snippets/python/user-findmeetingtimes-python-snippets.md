@@ -56,7 +56,7 @@ headers = {
 
 )
 
-result = await graph_client.me.find_meeting_times.post(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.me.find_meeting_times.post(body = request_body, request_configuration = request_configuration)
 
 
 ```

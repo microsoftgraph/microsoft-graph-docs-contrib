@@ -20,7 +20,7 @@ request_body = ConversationThread(
 	]
 )
 
-result = await graph_client.groups.by_group_id('group-id').conversations.by_conversation_id('conversation-id').threads.post(request_body = request_body)
+result = await graph_client.groups.by_group_id('group-id').conversations.by_conversation_id('conversation-id').threads.post(body = request_body)
 
 
 ```

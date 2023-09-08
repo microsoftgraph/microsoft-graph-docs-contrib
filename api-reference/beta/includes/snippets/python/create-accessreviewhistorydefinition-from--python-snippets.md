@@ -35,7 +35,7 @@ request_body = AccessReviewHistoryDefinition(
 	]
 )
 
-result = await graph_client.identity_governance.acce_reviews.history_definitions.post(request_body = request_body)
+result = await graph_client.identity_governance.acce_reviews.history_definitions.post(body = request_body)
 
 
 ```

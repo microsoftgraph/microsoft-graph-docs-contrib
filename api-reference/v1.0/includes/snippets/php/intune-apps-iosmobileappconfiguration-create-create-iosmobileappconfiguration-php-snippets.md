@@ -15,7 +15,7 @@ $requestBody->setTargetedMobileApps(['Targeted Mobile Apps value', 	]);
 $requestBody->setDescription('Description value');
 $requestBody->setDisplayName('Display Name value');
 $requestBody->setVersion(7);
-$requestBody->setEncodedSettingXml(base64_decode('ZW5jb2RlZFNldHRpbmdYbWw='));
+$requestBody->setEncodedSettingXml(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('ZW5jb2RlZFNldHRpbmdYbWw=')));
 $settingsAppConfigurationSettingItem1 = new AppConfigurationSettingItem();
 $settingsAppConfigurationSettingItem1->setOdataType('microsoft.graph.appConfigurationSettingItem');
 $settingsAppConfigurationSettingItem1->setAppConfigKey('App Config Key value');

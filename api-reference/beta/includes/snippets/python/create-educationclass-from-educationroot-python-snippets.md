@@ -18,7 +18,7 @@ request_body = EducationClass(
 	mail_nickname = "fineartschool.net",
 )
 
-result = await graph_client.education.classes.post(request_body = request_body)
+result = await graph_client.education.classes.post(body = request_body)
 
 
 ```

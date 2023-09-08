@@ -124,7 +124,7 @@ request_body = PlannerTaskConfiguration(
 	),
 )
 
-result = await graph_client.solutions.busine_scenarios.by_busine_scenario_id('businessScenario-id').planner.task_configuration.patch(request_body = request_body)
+result = await graph_client.solutions.busine_scenarios.by_busine_scenario_id('businessScenario-id').planner.task_configuration.patch(body = request_body)
 
 
 ```

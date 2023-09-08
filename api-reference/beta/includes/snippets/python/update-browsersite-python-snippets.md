@@ -17,7 +17,7 @@ request_body = BrowserSite(
 	comment = "Updating to Edge.",
 )
 
-result = await graph_client.admin.edge.internet_explorer_mode.site_lists.by_site_list_id('browserSiteList-id').sites.by_site_id('browserSite-id').patch(request_body = request_body)
+result = await graph_client.admin.edge.internet_explorer_mode.site_lists.by_site_list_id('browserSiteList-id').sites.by_site_id('browserSite-id').patch(body = request_body)
 
 
 ```
