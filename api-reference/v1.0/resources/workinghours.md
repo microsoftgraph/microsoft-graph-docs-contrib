@@ -23,6 +23,20 @@ to the destination time zone so that Outlook time values are displayed in local 
 When other people request work meetings with you in your usual place of work, they can still respect your working hours in the
 appropriate time zone.
 
+[Note] 
+
+This property will return the legacy work hours experience, recently a new experience was introduced that replaces the legacy work hours experience,
+but legacy work hours will continue to be supported.  Because the legacy experience supports only a single start time and end time for the entire work week,
+the legacy work hours will approximate the modern work hours and location.  
+
+If a user sets a modern work hours and location experince, the times for the legacy work hours will be configured to the minimum start time and maximum end time of the modern work hours.  
+
+Until a user sets up modern working hours, changes to legacy working hours will also update the times in their modern working hours.  However, once a user sets up (or updates) their modern working hours,
+future changes to legacy working hours will not propagate and overwrite the modern working hours.  
+
+The exception to this rule is working hours time zone.  Whenever the legacy working hours time zone changes, it will update the time zone for the modern working hours.
+This is to ensure that others can view accurate availability when a user on a legacy client travels across time zones.
+
 
 ## Properties
 | Property	   | Type	|Description|
