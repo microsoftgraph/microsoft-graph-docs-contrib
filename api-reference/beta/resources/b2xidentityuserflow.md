@@ -4,7 +4,7 @@ description: "Represents a self-service sign up user flow within an Azure Active
 ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: "identity-and-sign-in"
-author: "jkdouglas"
+author: "nanguil"
 ---
 
 # b2xIdentityUserFlow resource type
