@@ -54,9 +54,9 @@ If successful, this action returns a 202 Accepted response code.
 
 ## Examples
 
-### Example 1: Bulk index custodians.
+### Example 1: Bulk index custodians
 #### Request
-The following is an example of a request.
+The following example shows the request.
 
 <!-- {
   "blockType": "request",
@@ -74,20 +74,19 @@ Content-Type: application/json
 }
 ```
 #### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
 }
 -->
--->
 ``` http
 HTTP/1.1 202 Accepted
 ```
 
-### Example 2: Index single custodian.
+### Example 2: Index single custodian
 #### Request
-The following is an example of a request.
+The following example shows the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -134,7 +133,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-41
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
