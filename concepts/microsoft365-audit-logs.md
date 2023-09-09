@@ -10,9 +10,9 @@ ms.custom: scenarios:getting-started
 # Use Microsoft 365 audit logs with Microsoft Graph Data Connect
 
 
-Microsoft Graph Data Connect (Data Connect) customers build large-scale data applications with sensitive Microsoft 365 content. It's important for Data Connect customers to apply industry-standard best practices for compliance across security, privacy, and governance. Microsoft 365 audit logs offer you a detailed understanding of different applications that access this sensitive data to address any compliance concerns.
+Microsoft Graph Data Connect (Data Connect) customers build large-scale data applications with sensitive Microsoft 365 content. Data Connect customers must apply industry-standard best practices for compliance across security, privacy, and governance. Microsoft 365 audit logs offer  a detailed understanding of different applications that access this sensitive data, to help you address any compliance concerns.
 
-Make use of Microsoft 365 audit logs with Data Connect to track authorization and data extraction events. For details about how to improve your overall audit experience with audit logs in the Microsoft Compliance Center, see [Audit logs for all Data Connect application access and approvals](https://devblogs.microsoft.com/microsoft365dev/security-governance-and-privacy-built-into-microsoft-graph-data-connect/#audit-logs-for-all-data-connect-application-access-and-approvals). Export your data in CSV files for better clarity and enable audit logs with an E3 license to [Set up Microsoft Purview Audit (Standard)](/purview/audit-standard-setup) or with an E5 license to [Set up Microsoft Purview Audit (Premium)](/purview/audit-premium-setup).
+Make use of Microsoft 365 audit logs with Data Connect to track authorization and data extraction events. For details about how to improve your overall audit experience in the Microsoft Compliance Center, see [Audit logs for all Data Connect application access and approvals](https://devblogs.microsoft.com/microsoft365dev/security-governance-and-privacy-built-into-microsoft-graph-data-connect/#audit-logs-for-all-data-connect-application-access-and-approvals). Export your data to .csv files for better clarity and enable audit logs with an E3 license to [Set up Microsoft Purview Audit (Standard)](/purview/audit-standard-setup) or with an E5 license to [Set up Microsoft Purview Audit (Premium)](/purview/audit-premium-setup).
 
 > [!NOTE]
 > Microsoft 365 global admins have access to the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149), which hosts Microsoft 365 audit logs. If you're working with Data Connect applications and need access to audit logs, see [Assign permissions to search the audit log](https://github.com/purview/audit-standard-setup#step-2-assign-permissions-to-search-the-audit-log).
@@ -62,12 +62,12 @@ Use Microsoft 365 audit logs to track and audit admin authorization actions on D
 
 Track your data extraction events through pipeline runs that are generated in Data Connect applications. 
 
-### How to search for operations audit logs for Data Connect
+### Search for operation audit logs for Data Connect
 
 1. Go to the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149) and sign in.
 
 > [!NOTE]
-> Verify beforehand that you have Microsoft 365 admin privileges or authorization to access sensitive log data.
+> Verify that you have Microsoft 365 admin privileges or authorization to access sensitive log data.
 
 2. In the left pane of the compliance portal, select **Audit**.
 
