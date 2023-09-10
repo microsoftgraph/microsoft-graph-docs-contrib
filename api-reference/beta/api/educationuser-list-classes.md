@@ -1,6 +1,6 @@
 ---
 title: "List classes"
-description: "Retrieve a list of class objects. Note that if the delegated token is used, members can only see information about their own classes. "
+description: "Retrieve a list of class objects. Note that if the delegated token is used, members can only see information about their own classes."
 ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a collection of educationClass resources.
+Retrieve a collection of [educationClass](../resources/educationclass.md) resources.
 
 ## Permissions
 
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 > [!NOTE]
-> When delegated permissions are used, only educationClass resources that the authentication user is a member will be returned.
+> When delegated permissions are used, only **educationClass** resources that the authentication user is a member will be returned.
 
 ## HTTP request
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-##### Request
+### Request
 
 The following is an example of the request.
 
@@ -106,7 +106,7 @@ GET https://graph.microsoft.com/beta/education/me/classes
 
 ---
 
-##### Response
+### Response
 
 The following is an example of the response.
 
