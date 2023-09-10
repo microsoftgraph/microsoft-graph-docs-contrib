@@ -1,6 +1,6 @@
 ---
 title: "List classes"
-description: "Retrieve a list of class objects. Note that if the delegated token is used, members can only see information about their own classes."
+description: "Get the educationClass resources an educationUser is a member of."
 ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a collection of [educationClass](../resources/educationclass.md) resources.
+Get the [educationClass](../resources/educationclass.md) resources an [educationUser](../resources/educationuser.md) is a member of.
 
 ## Permissions
 
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 > [!NOTE]
-> When delegated permissions are used, only **educationClass** resources that the authentication user is a member will be returned.
+> Note that if the delegated token is used, members can only see information about their own classes.
 
 ## HTTP request
 
