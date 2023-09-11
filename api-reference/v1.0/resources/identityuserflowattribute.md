@@ -4,7 +4,7 @@ description: "Represents user flow attributes in an Azure Active Directory tenan
 ms.localizationpriority: high
 doc_type: resourcePageType
 ms.prod: "identity-and-sign-in"
-author: "jkdouglas"
+author: "nanguil"
 ---
 
 # identityUserFlowAttribute resource type
