@@ -4,28 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = StartHoldMusicPostRequestBody()
-custom_prompt = MediaPrompt()
-custom_prompt.@odata_type = '#microsoft.graph.mediaPrompt'
+graph_client = GraphServiceClient(request_adapter)
 
-custom_promptmedia_info = MediaInfo()
-custom_promptmedia_info.@odata_type = '#microsoft.graph.mediaInfo'
+request_body = StartHoldMusicPostRequestBody(
+	custom_prompt = MediaPrompt(
+		odata_type = "#microsoft.graph.mediaPrompt",
+		media_info = MediaInfo(
+			odata_type = "#microsoft.graph.mediaInfo",
+			uri = "https://bot.contoso.com/onHold.wav",
+		),
+	),
+	client_context = "d45324c1-fcb5-430a-902c-f20af696537c",
+)
 
-custom_promptmedia_info.uri = 'https://bot.contoso.com/onHold.wav'
-
-
-custom_prompt.media_info = custom_promptmedia_info
-
-request_body.custom_prompt = custom_prompt
-request_body.client_context = 'd45324c1-fcb5-430a-902c-f20af696537c'
-
-
-
-
-result = await client.communications.calls.by_call_id('call-id').participants.by_participant_id('participant-id').start_hold_music.post(request_body = request_body)
+result = await graph_client.communications.calls.by_call_id('call-id').participants.by_participant_id('participant-id').start_hold_music.post(body = request_body)
 
 
 ```

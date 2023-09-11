@@ -4,22 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Workflow()
-request_body.description = 'Configure new hire tasks for onboarding employees on their first day'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.display_name = 'Australia Onboard new hire employee'
+request_body = Workflow(
+	description = "Configure new hire tasks for onboarding employees on their first day",
+	display_name = "Australia Onboard new hire employee",
+	is_enabled = True,
+	is_scheduling_enabled = False,
+)
 
-request_body.is_enabled = True
-
-request_body.is_scheduling_enabled = False
-
-
-
-
-result = await client.identity_governance.lifecycle_workflows.workflows.by_workflow_id('workflow-id').patch(request_body = request_body)
+result = await graph_client.identity_governance.lifecycle_workflows.workflows.by_workflow_id('workflow-id').patch(body = request_body)
 
 
 ```
