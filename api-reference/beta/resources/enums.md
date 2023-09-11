@@ -1136,6 +1136,7 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### x509CertificateAuthenticationMode values
+
 |Member|
 |:---|
 |x509CertificateSingleFactor|
@@ -1143,10 +1144,19 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### x509CertificateRuleType values
+
 |Member|
 |:---|
 |issuerSubject|
 |policyOID|
+|unknownFutureValue|
+
+### x509CertificateIssuerHintsState values
+
+|Member|
+|:---|
+|disabled|
+|enabled|
 |unknownFutureValue|
 
 ### anniversaryType values

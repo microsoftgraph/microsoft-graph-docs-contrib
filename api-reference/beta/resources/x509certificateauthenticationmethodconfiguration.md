@@ -32,6 +32,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |state|authenticationMethodState|The possible values are: `enabled`, `disabled`. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
 |certificateUserBindings|[x509CertificateUserBinding](../resources/x509certificateuserbinding.md) collection|Defines fields in the X.509 certificate that map to attributes of the Azure AD user object in order to bind the certificate to the user. The **priority** of the object determines the order in which the binding is carried out. The first binding that matches will be used and the rest ignored. |
 |authenticationModeConfiguration|[x509CertificateAuthenticationModeConfiguration](../resources/x509certificateauthenticationmodeconfiguration.md)|Defines strong authentication configurations. This configuration includes the default authentication mode and the different rules for strong authentication bindings. |
+|issuerHintsConfiguration|[x509CertificateIssuerHintsConfiguration](../resources/x509certificateissuerhintsconfiguration.md)|Determines the subject names of all the trust certificate authorities in the trust store to be sent back as hints to the client side to filter the certificates shown in certificate picker.|
 
 
 ## Relationships
@@ -61,6 +62,9 @@ The following is a JSON representation of the resource.
   ],
   "authenticationModeConfiguration": {
     "@odata.type": "microsoft.graph.x509CertificateAuthenticationModeConfiguration"
+  },
+  "issuerHintsConfiguration": {
+    "@odata.type": "microsoft.graph.x509CertificateIssuerHintsConfiguration"
   }
 }
 ```
