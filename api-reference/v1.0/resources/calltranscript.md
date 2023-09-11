@@ -34,7 +34,7 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON is the representation of the resource.
 
 <!-- {
   "blockType": "resource",
