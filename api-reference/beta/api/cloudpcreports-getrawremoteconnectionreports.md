@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a Cloud PC's raw real-time remote connection report without any calculation or aggregation, such as roundTripTime, available bandwidth. This API is different from getRemoteConnectionHistoricalReports. The getRemoteConnectionHistoricalReports API will return the report that hourly aggregates the raw event data, while getRawRemoteConnectionReports API will directly return the raw event data. The getRawRemoteConnectionReports API aims to give users a clearer and detailed insight into their remote connections.
+Get a Cloud PC's raw real-time remote connection report without any calculation or aggregation, such as roundTripTime or available bandwidth.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
