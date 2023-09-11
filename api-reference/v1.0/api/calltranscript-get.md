@@ -75,8 +75,6 @@ If successful, this method returns a `200 OK` response code and a [callTranscrip
 ### Example 1: Get a callTranscript
 #### Request
 
-# [HTTP](#tab/http)
-
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript",
@@ -114,7 +112,6 @@ Content-type: application/json
 ### Example 2: Get a callTranscript content
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_content",
@@ -151,7 +148,6 @@ WEBVTT
 ### Example 3: Get a callTranscript content specifying $format query param
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_content_format",
@@ -186,7 +182,7 @@ WEBVTT
 
 ### Example 4: Get a callTranscript metadataContent
 #### Request
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_callTranscript_metadatacontent",
