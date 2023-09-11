@@ -130,7 +130,7 @@ In order to test your app, MSAL requires the page to be hosted in a web server f
 
 If you're just getting started and want to play around, you can use [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code or any similar lightweight development server. Download the extension and open your HTML file using live server.
 
-> **Note:** Make sure the **redirect URI** in your app registration is set to the localhost port your application is hosted on. Go to your app registration in the [Azure portal](https://portal.azure.com), click **Authentication** under manage, and add the correct **redirect URI**.
+> **Note:** Make sure the **redirect URI** in your app registration is set to the localhost port your application is hosted on. Go to your app registration in the [Microsoft Entra admin center](https://entra.microsoft.com), click **Authentication** under manage, and add the correct **redirect URI**.
 
 ## Track a user's sign in state
 
