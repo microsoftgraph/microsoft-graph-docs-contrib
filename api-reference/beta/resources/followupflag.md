@@ -4,7 +4,7 @@ description: "Allows setting a flag for the user to follow up on an item later. 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: mail
-author: "abheek-das"
+author: "SuryaLashmiS"
 ---
 
 # followupFlag resource type

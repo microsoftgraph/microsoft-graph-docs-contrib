@@ -45,18 +45,15 @@ PUT /policies/deviceRegistrationPolicy
 
 ## Request body
 
-In the request body, supply *only* the values for properties that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values.
-
-The following table specifies the properties that can be updated.
-
+In the request body, supply a JSON representation of a [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) object with all the updatable properties. The following table specifies the properties that can be updated.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|userDeviceQuota|Int32|Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations. |
-|multiFactorAuthConfiguration|multiFactorAuthConfiguration|Specifies the authentication policy for a user to complete registration using Azure AD Join or Azure AD registered within your organization. Possible values are: `notRequired` or `required`. |
-|azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD registration within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview). If Intune is enabled this property cannot be modified.|
-|azureADJoin|[azureAdJoinPolicy](../resources/azureadjoinpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD Join within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview).|
-|localAdminPassword|[localAdminPasswordSettings](../resources/localadminpasswordsettings.md)| Specifies the setting for **Local Admin Password Solution (LAPS)** within your organization.|
+|userDeviceQuota|Int32| Required. Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations. Required. |
+|multiFactorAuthConfiguration|multiFactorAuthConfiguration| Required. Specifies the authentication policy for a user to complete registration using Azure AD Join or Azure AD registered within your organization. Possible values are: `notRequired` or `required`. |
+|azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)| Required. Specifies the authorization policy for controlling registration of new devices using Azure AD registration within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview). If Intune is enabled this property cannot be modified.|
+|azureADJoin|[azureAdJoinPolicy](../resources/azureadjoinpolicy.md)| Required. Specifies the authorization policy for controlling registration of new devices using Azure AD Join within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview).|
+|localAdminPassword|[localAdminPasswordSettings](../resources/localadminpasswordsettings.md)|  Required. Specifies the setting for **Local Admin Password Solution (LAPS)** within your organization.|
 
 ## Response
 

@@ -4,24 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = OAuth2PermissionGrant()
-request_body.client_id = 'b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.consent_type = 'Principal'
+request_body = OAuth2PermissionGrant(
+	client_id = "b0d9b9e3-0ecf-4bfd-8dab-9273dd055a94",
+	consent_type = "Principal",
+	resource_id = "7ea9e944-71ce-443d-811c-71e8047b557a",
+	principal_id = "3fbd929d-8c56-4462-851e-0eb9a7b3a2a5",
+	scope = "User.Read.All Group.Read.All",
+)
 
-request_body.resource_id = '7ea9e944-71ce-443d-811c-71e8047b557a'
-
-request_body.principal_id = '3fbd929d-8c56-4462-851e-0eb9a7b3a2a5'
-
-request_body.scope = 'User.Read.All Group.Read.All'
-
-
-
-
-result = await client.oauth2_permission_grants.post(request_body = request_body)
+result = await graph_client.oauth2_permission_grants.post(body = request_body)
 
 
 ```
