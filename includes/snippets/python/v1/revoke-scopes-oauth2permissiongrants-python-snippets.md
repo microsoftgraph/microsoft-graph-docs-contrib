@@ -12,7 +12,7 @@ request_body = OAuth2PermissionGrant(
 	scope = "User.Read.All",
 )
 
-result = await graph_client.oauth2_permission_grants.by_oauth2_permission_grant_id('oAuth2PermissionGrant-id').patch(request_body = request_body)
+result = await graph_client.oauth2_permission_grants.by_oauth2_permission_grant_id('oAuth2PermissionGrant-id').patch(body = request_body)
 
 
 ```

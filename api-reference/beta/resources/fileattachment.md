@@ -4,7 +4,7 @@ description: "A file (such as a text file or Word document) attached to an event
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "outlook"
-author: "abheek-das"
+author: "SuryaLashmiS"
 ---
 
 # fileAttachment resource type
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 [!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
 A file (such as a text file or Word document) attached to a user [event](../resources/event.md),
-[message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md). 
+[message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).
 
 When creating a file attachment, include the following in the request body:
 

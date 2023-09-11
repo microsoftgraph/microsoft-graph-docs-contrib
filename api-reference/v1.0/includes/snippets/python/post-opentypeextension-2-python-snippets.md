@@ -18,7 +18,7 @@ request_body = OpenTypeExtension(
 	}
 )
 
-result = await graph_client.me.messages.by_message_id('message-id').extensions.post(request_body = request_body)
+result = await graph_client.me.messages.by_message_id('message-id').extensions.post(body = request_body)
 
 
 ```

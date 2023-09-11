@@ -13,7 +13,7 @@ request_body = RefreshPostRequestBody(
 	scope_type = "DirectoryRole",
 )
 
-await graph_client.identity_governance.role_management_alerts.alerts.refresh.post(request_body = request_body)
+await graph_client.identity_governance.role_management_alerts.alerts.refresh.post(body = request_body)
 
 
 ```

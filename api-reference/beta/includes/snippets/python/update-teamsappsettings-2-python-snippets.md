@@ -13,7 +13,7 @@ request_body = TeamsAppSettings(
 	allow_user_requests_for_app_access = True,
 )
 
-result = await graph_client.teamwork.team_app_settings.patch(request_body = request_body)
+result = await graph_client.teamwork.team_app_settings.patch(body = request_body)
 
 
 ```

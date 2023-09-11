@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new AccessPackageAssignmentRequestsRequestBuilderGetRequestConfiguration();
 $queryParameters = AccessPackageAssignmentRequestsRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->expand = ["requestor($expand=connectedOrganization)"];
+$queryParameters->expand = ["requestor(\$expand=connectedOrganization)"];
 $queryParameters->filter = "(requestState eq 'PendingApproval')";
 $requestConfiguration->queryParameters = $queryParameters;
 

@@ -15,7 +15,7 @@ request_body = AuthenticationContextClassReference(
 	is_available = True,
 )
 
-result = await graph_client.identity.conditional_access.authentication_context_cla_references.by_authentication_context_clas_reference_id('authenticationContextClassReference-id').patch(request_body = request_body)
+result = await graph_client.identity.conditional_access.authentication_context_cla_references.by_authentication_context_clas_reference_id('authenticationContextClassReference-id').patch(body = request_body)
 
 
 ```
