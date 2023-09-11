@@ -58,16 +58,10 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
-<<<<<<< HEAD
-| presenters | [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Presenters' information of the webinar. Inherited from [microsoft.graph.virtualEvent](../resources/virtualevent.md)|
+| presenters | [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Presenters' information of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md).|
 | registrationConfiguration | [virtualEventRegistration](../resources/virtualeventregistrationconfiguration.md) | Registration configuration of the webinar. |
 | registrations | [virtualEventRegistration](../resources/virtualeventregistration.md) collection | Registration records of the webinar. |
-| sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the webinar. Inherited from [microsoft.graph.virtualEvent](../resources/virtualevent.md) |
-=======
-| presenters | [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Presenters' information of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md).|
-| registration | [virtualEventRegistration](../resources/virtualeventregistration.md) | Registration configuration of the webinar. |
 | sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
->>>>>>> 0ca80723c054fe741bee4ab0187a4f0f3d9f3375
 
 ## JSON representation
 
