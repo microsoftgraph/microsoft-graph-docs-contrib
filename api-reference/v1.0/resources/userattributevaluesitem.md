@@ -1,7 +1,7 @@
 ---
 title: "userAttributeValuesItem resource type"
 description: "Represents user flow attribute values within a user flow."
-author: "jkdouglas"
+author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

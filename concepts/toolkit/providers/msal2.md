@@ -183,10 +183,9 @@ For details about how to register an app and get a client ID, see [Create an Azu
 
 ## Migrating from MSAL Provider to MSAL2 Provider
 To migrate an application that's using MSAL provider to the MSAL2 Provider:
-1. Go to the Azure portal at https://portal.azure.com.
-1. From the menu, select **Azure Active Directory**.
-1. From the Azure Active Directory menu, select **App registrations**.
-1. Select the app registration of the app that you're currently using. 
+1. Go to the [Microsoft Entra admin center](https://entra.microsoft.com).
+1. Expand the **Identity** menu > expand **Applications** > select **App registrations**.
+1. Select the app registration of the app to migrate. 
 1. Go to **Authentication** on the left menu.
 1. Under **Platform configurations**, click on **Add a platform** and select **Single-page Application**.
 1. Remove all the redirect URIs that you have currently registered under **Web**, and instead add them under **Single-page application**.
