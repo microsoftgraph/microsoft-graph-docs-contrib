@@ -57,10 +57,10 @@ To use this collection in your own developer tenant, create an Azure Active Dire
 1. Set the **Redirect URI** to `https://oauth.pstmn.io/v1/browser-callback`.
 1. Select **Register**.
 1. On the left menu, select **API Permissions**.
-1. On the horizontal menu, select **Add a permission**, and select **Microsoft Graph**.
-1. Select **Delegated Permissions** option, type `Mail.`, expand the **Mail** options, and then select `Mail.Read`.
-1. Select **Application permissions** option, type `User.`, expand the **User** options, and then select `User.Read.All`.
-1. Select **Add permissions** to add both permissions in steps 11 and 12.
+1. On the horizontal menu, select **Add a permission**, and choose **Microsoft Graph**.
+1. Select the **Delegated permissions** option, type `Mail.`, expand the **Mail** options, and then select `Mail.Read`.
+1. Select the **Application permissions** option, type `User.`, expand the **User** options, and then select `User.Read.All`.
+1. Select **Add permissions** to add both permissions from the previous steps.
 1. On the horizontal menu, select **Grant admin consent for**, and then select **Yes**.
 1. On the left menu, select **Overview**. From here, you can get the **application (client) ID** and **directory (tenant) ID**. You'll need these in step 4.
 1. On the left menu, select **Certificates and secrets**.
@@ -85,14 +85,14 @@ In this step, you set up the environment variables in Postman that you use to re
 
 ## Next steps
 
-Now that you have successfully set up the environment to run Microsoft Graph on Postman, proceed to the next article to run your first delegated request.
+Now that you have successfully set up the environment to run Microsoft Graph on Postman, continue with the authentication steps:
 
-- [Use Postman with Delegated Permissions](use-postman-with-delegated-permissions.md)
-- [Use Postman with App-only Authentication](use-postman-with-app-only-authentication.md)
+- [Use delegated authentication with Postman for Microsoft Graph](use-postman-with-delegated-permissions.md)
+- [Use app-only (application) authentication with Postman for Microsoft Graph](use-postman-with-app-only-authentication.md)
 
-### Contribute to the collection
+## Contributing to the collection
 
-If you want to contribute your own requests, you need a Postman license. You can make your changes to the forked collection, and then hover over the collection top node and select **Create pull request**.
+If you want to contribute your own requests to the Microsoft Graph Postman collection, you need a Postman license. You can make your changes to the forked collection, and then hover over the collection top node and select **Create pull request**.
 
 ## Known issues
 
