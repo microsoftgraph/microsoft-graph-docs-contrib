@@ -9,7 +9,7 @@ ms.localizationpriority: high
 <!-- markdownlint-disable MD041-->
 <!-- Is the validation done during subscription renewal? -->
 
-When you send a request to create a subscription to get change notifications through webhooks, Microsoft Graph will check if the **notificationUrl** property in your subscription request is valid. This is how the validation process works:
+When you send a request to create a subscription to get change notifications through webhooks, Microsoft Graph checks if the **notificationUrl** property in your subscription request is valid. The validation process works as follows:
 
 > [!NOTE]
 > If you're subscribing to [lifecycle notifications](webhooks-lifecycle.md) as well, Microsoft Graph will also validate the **lifecycleNotificationUrl**.
