@@ -109,6 +109,7 @@ Content-Type: application/json
   }
 ]
 ```
+An activity can also be added to an item in the same request that creates the item. The activity is added as another entity just like `acl` and `content`. If you choose to add an activitiy this way, you need to include the `@odata.type` for the activity, or the request will fail. In order for an activity to surface in Office.com, it must have a timestamp of less than 7 days ago. End-users can only see activities in Office.com for items they have access to and have an activity on (e.g., shared with them, created, edited, etc.).
 
 ## Update an item
 
