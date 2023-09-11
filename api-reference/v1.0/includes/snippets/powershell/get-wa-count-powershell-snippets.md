@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Users
 
-Get-MgUser -Search "displayName:wa" -Sort "displayName" -CountVariable CountVar -ConsistencyLevel eventual 
+Get-MgUser -Search '"displayName:wa"' -Sort "displayName" -CountVariable CountVar -ConsistencyLevel eventual 
 
 
 ```

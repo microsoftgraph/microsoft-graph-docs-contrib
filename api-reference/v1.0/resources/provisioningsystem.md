@@ -18,8 +18,8 @@ Represents the system that a user was provisioned to or from. For example, when 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|details|[detailsInfo](detailsinfo.md)|Details of the system.|
 |displayName|String|Name of the system that a user was provisioned to or from.|
+|details|[detailsInfo](detailsinfo.md)|Details of the system.|
 |id|String|Identifier of the system that a user was provisioned to or from.|
 
 ## JSON representation
@@ -37,7 +37,9 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "details": {"@odata.type": "microsoft.graph.detailsInfo"},
+  "details": {
+    "@odata.type": "microsoft.graph.detailsInfo"
+  },
   "displayName": "String",
   "id": "String"
 }

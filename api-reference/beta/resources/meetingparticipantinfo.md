@@ -19,7 +19,7 @@ Contains information about a participant in a meeting.
 
 | Property | Type             | Description                 |
 | :------- | :-------------------- | :------------------------------ |
-| identity | [identitySet](identityset.md) | Identity information of the participant.           |
+| identity | [communicationsIdentitySet](communicationsIdentitySet.md) | Identity information of the participant. Only the **user** property is used for [onlineMeeting](onlinemeeting.md) participants.          |
 | upn      | String                        | User principal name of the participant.             |
 | role     | [onlineMeetingRole](#onlinemeetingrole-values)     | Specifies the participant's role in the meeting.|
 
@@ -52,7 +52,7 @@ The following is a JSON representation of the resource.
 }-->
 ```json
 {
-  "identity": {"@odata.type": "#microsoft.graph.identitySet"},
+  "identity": {"@odata.type": "#microsoft.graph.communicationsIdentitySet"},
   "upn": "String",
   "role": "String"
 }

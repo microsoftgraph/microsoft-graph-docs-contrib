@@ -38,6 +38,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[Add app in chat](../api/chat-post-installedapps.md) | | Add (install) an app in a chat (and associated meeting).|
 |[Upgrade app in chat](../api/chat-teamsappinstallation-upgrade.md) | None | Update to the latest version of the app installed in chat (and associated meeting).|
 |[Uninstall app from chat](../api/chat-delete-installedapps.md) | None | Remove (uninstall) app from a chat (and associated meeting).|
+|[List permission grants](../api/chat-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions that have been granted to the apps in this chat.|
 | **Tabs** |||
 |[List tabs in chat](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | List tabs pinned to a chat (and associated meeting).|
 |[Get tab in chat](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | Get a specific tab pinned to a chat (and associated meeting).|
@@ -62,6 +63,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 | onlineMeetingInfo | [teamworkOnlineMeetingInfo](../resources/teamworkonlinemeetinginfo.md) | Represents details about an online meeting. If the chat isn't associated with an online meeting, the property is empty. Read-only.|
 | tenantId| String | The identifier of the tenant in which the chat was created. Read-only.|
 | topic| String|  (Optional) Subject or topic for the chat. Only available for group chats.|
+| viewpoint|[chatViewpoint](../resources/chatviewpoint.md)|Represents caller-specific information about the chat, such as last message read date and time. This property is populated only when the request is made in a delegated context.|
 | webUrl | String| The URL for the chat in Microsoft Teams. The URL should be treated as an opaque blob, and not parsed. Read-only. |
 
 ### chatType values 
@@ -78,8 +80,10 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
 | installedApps | [teamsAppInstallation](teamsappinstallation.md) collection | A collection of all the apps in the chat. Nullable. |
+| lastMessagePreview | [chatMessageInfo](chatmessageinfo.md)| Preview of the last message sent in the chat. Null if no messages have been sent in the chat. Currently, only the [list chats](../api/chat-list.md) operation supports this property.|
 | members | [conversationMember](conversationmember.md) collection | A collection of all the members in the chat. Nullable. |
 | messages | [chatMessage](chatmessage.md) collection | A collection of all the messages in the chat. Nullable. |
+| permissionGrants| [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection| A collection of permissions granted to apps for the chat.|
 | pinnedMessages | [pinnedChatMessageInfo](pinnedchatmessageinfo.md) collection | A collection of all the pinned messages in the chat. Nullable. |
 | tabs | [teamsTab](teamstab.md) collection | A collection of all the tabs in the chat. Nullable. |
 
@@ -95,16 +99,20 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string (identifier)",
-  "topic": "string",
   "createdDateTime": "dateTimeOffset",
-  "lastUpdatedDateTime": "dateTimeOffset",
   "chatType": "string",
-  "webUrl": "string",
-  "tenantId": "string",
+  "id": "string (identifier)",
+  "lastUpdatedDateTime": "dateTimeOffset",
   "onlineMeetingInfo": {
     "@odata.type": "microsoft.graph.teamworkOnlineMeetingInfo"
-  }
+  },
+  "tenantId": "string",
+  "topic": "string",
+  
+  "viewpoint": {
+    "@odata.type": "microsoft.graph.chatViewpoint"
+  },
+  "webUrl": "string",
 }
 ```
 
@@ -112,6 +120,9 @@ The following is a JSON representation of the resource.
 
 - [channel](channel.md)
 - [chatMessage](chatmessage.md)
+- [Chat lifecycle C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-chat-lifecycle/csharp)
+- [Chat lifecycle Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-chat-lifecycle/nodejs)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

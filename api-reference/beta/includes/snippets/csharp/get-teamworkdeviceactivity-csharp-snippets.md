@@ -4,10 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var teamworkDeviceActivity = await graphClient.Teamwork.Devices["{teamworkDevice-id}"].Activity
-	.Request()
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Teamwork.Devices["{teamworkDevice-id}"].Activity.GetAsync();
+
 
 ```

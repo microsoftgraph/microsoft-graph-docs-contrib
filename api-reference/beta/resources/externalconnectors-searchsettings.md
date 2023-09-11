@@ -49,7 +49,7 @@ The following is a JSON representation of the resource.
       "layout": {"type": "AdaptiveCard","version": "1.0","body": [{"type": "TextBlock","text": "A contoso ticket."}]},
       "priority": 0
     },
-        {
+    {
       "id": "String (identifier)",
       "rules": [
         {

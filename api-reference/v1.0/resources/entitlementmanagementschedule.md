@@ -31,13 +31,13 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.entitlementManagementSchedule",
-  "startDateTime": "String (timestamp)",
   "expiration": {
     "@odata.type": "microsoft.graph.expirationPattern"
   },
   "recurrence": {
     "@odata.type": "microsoft.graph.patternedRecurrence"
-  }
+  },
+  "startDateTime": "String (timestamp)"
 }
 ```
 

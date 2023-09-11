@@ -20,7 +20,7 @@ addExclusionsList.add("String");
 LinkedList<String> removeExclusionsList = new LinkedList<String>();
 removeExclusionsList.add("String");
 
-graphClient.admin().windows().updates().deployments("{deploymentId}").audience()
+graphClient.admin().windows().updates().deployments("b5171742-1742-b517-4217-17b5421717b5").audience()
 	.updateAudienceById(DeploymentAudienceUpdateAudienceByIdParameterSet
 		.newBuilder()
 		.withMemberEntityType(memberEntityType)

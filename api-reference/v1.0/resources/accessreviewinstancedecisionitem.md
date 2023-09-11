@@ -45,7 +45,9 @@ Inherits from [entity](../resources/entity.md).
 |reviewedDateTime|DateTimeOffset| The timestamp when the review decision occurred. Supports `$select`. Read-only.|
 
 ## Relationships
-None.
+| Relationship | Type	|Description|
+|:---------------|:--------|:----------|
+| insights |[governanceInsight](governanceinsight.md) collection | Insights are recommendations to reviewers on whether to approve or deny a decision. There can be multiple insights associated with an **accessReviewInstanceDecisionItem**. |
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -60,24 +62,24 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItem",
-  "id": "String (identifier)",
   "accessReviewId": "String",
-  "reviewedBy": {
-    "@odata.type": "microsoft.graph.userIdentity"
-  },
-  "reviewedDateTime": "String (timestamp)",
-  "decision": "String",
-  "justification": "String",
   "appliedBy": {
     "@odata.type": "microsoft.graph.userIdentity"
   },
   "appliedDateTime": "String (timestamp)",
   "applyResult": "String",
-  "recommendation": "String",
+  "decision": "String",
+  "id": "String (identifier)",
+  "justification": "String",
   "principal": {
     "@odata.type": "microsoft.graph.identity"
   },
   "principalLink": "String",
+  "reviewedBy": {
+    "@odata.type": "microsoft.graph.userIdentity"
+  },
+  "reviewedDateTime": "String (timestamp)",
+  "recommendation": "String",
   "resource": {
     "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItemResource"
   },

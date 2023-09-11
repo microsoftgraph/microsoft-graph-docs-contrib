@@ -1,7 +1,7 @@
 ---
 title: "macOSAzureAdSingleSignOnExtension resource type"
 description: "Represents an Azure AD-type Single Sign-On extension profile for macOS devices."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -53,9 +53,3 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
-

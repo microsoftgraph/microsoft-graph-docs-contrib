@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let userProcessingResults = await client.api('/identityGovernance/lifecycleWorkflows/workflows/{workflowid}/userProcessingResults')
+let userProcessingResults = await client.api('/identityGovernance/lifecycleWorkflows/workflows/156ce798-1eb6-4e0a-8515-e79f54d04390/userProcessingResults')
 	.version('beta')
 	.get();
 

@@ -80,6 +80,8 @@ The CSV file has the following headers for columns.
 - Yammer Posted Message Count
 - Yammer Read Message Count
 - Yammer Liked Message Count
+- Teams Channel Messages Count
+- Teams Meetings Organized Count
 - Exchange Mailbox Total Item Count
 - Exchange Mailbox Storage Used (Byte)
 - SharePoint Total File Count
@@ -92,6 +94,8 @@ The following columns are not supported in Microsoft Graph China operated by 21V
 - Yammer Posted Message Count
 - Yammer Read Message Count
 - Yammer Liked Message Count
+- Teams Channel Messages Count
+- Teams Meetings Organized Count
 
 ### JSON
 
@@ -102,6 +106,8 @@ The following properties in **[office365GroupsActivityDetail](../resources/offic
 - yammerPostedMessageCount
 - yammerReadMessageCount
 - yammerLikedMessageCount
+- teamsChannelMessagesCount
+- teamsMeetingsOrganizedCount
 
 The default page size for this request is 200 items.
 
@@ -150,7 +156,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Member Count,External Member Count,Exchange Received Email Count,SharePoint Active File Count,Yammer Posted Message Count,Yammer Read Message Count,Yammer Liked Message Count,Exchange Mailbox Total Item Count,Exchange Mailbox Storage Used (Byte),SharePoint Total File Count,SharePoint Site Storage Used (Byte),Group Id,Report Period
+Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Activity Date,Group Type,Member Count,External Member Count,Exchange Received Email Count,SharePoint Active File Count,Yammer Posted Message Count,Yammer Read Message Count,Yammer Liked Message Count,Teams Channel Messages Count,Teams Meetings Organized Count,Exchange Mailbox Total Item Count,Exchange Mailbox Storage Used (Byte),SharePoint Total File Count,SharePoint Site Storage Used (Byte),Group Id,Report Period
 ```
 
 ### JSON
@@ -207,6 +213,8 @@ Content-Length: 674
       "yammerPostedMessageCount": 0, 
       "yammerReadMessageCount": 0, 
       "yammerLikedMessageCount": 0, 
+      "teamsChannelMessagesCount": 0,
+      "teamsMeetingsOrganizedCount": 0,
       "exchangeMailboxTotalItemCount": 343, 
       "exchangeMailboxStorageUsedInBytes": 3724609, 
       "sharePointTotalFileCount": 0, 

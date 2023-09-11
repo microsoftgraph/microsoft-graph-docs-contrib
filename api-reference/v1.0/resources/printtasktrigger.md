@@ -24,8 +24,9 @@ For details about how to use this resource to add pull printing support to Unive
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The printTaskTrigger's identifier. Read-only.|
 |event|printEvent|The Universal Print event that will cause a new [printTask](printtask.md) to be triggered. Valid values are described in the following table.|
+|id|String|The printTaskTrigger's identifier. Read-only.|
+
 
 ### printEvent values
 

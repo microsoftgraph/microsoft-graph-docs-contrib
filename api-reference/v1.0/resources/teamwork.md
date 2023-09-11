@@ -13,6 +13,12 @@ Namespace: microsoft.graph
 
 A container for the range of Microsoft Teams functionalities that are available for the organization.
 
+## Methods
+
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List deletedTeams](../api/teamwork-list-deletedteams.md)|[deletedTeam](../resources/deletedteam.md) collection|Get a list of the [deletedTeam](../resources/deletedteam.md) objects and their properties.|
+
 ## Properties
 
 | Property | Type | Description |
@@ -21,7 +27,9 @@ A container for the range of Microsoft Teams functionalities that are available 
 
 ## Relationships
 
-None.
+| Relationship | Type | Description |
+|:---------------|:--------|:----------|
+|deletedTeams|[deletedTeam](../resources/deletedteam.md) collection| The deleted team.|
 
 ## JSON representation
 

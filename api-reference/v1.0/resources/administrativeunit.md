@@ -42,12 +42,12 @@ This resource supports:
 ## Properties
 
 > [!IMPORTANT]
-> Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries#administrative-unit-properties).
+> Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries#administrative-unit-properties).
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |description|String|An optional description for the administrative unit. Supports `$filter` (`eq`, `ne`, `in`, `startsWith`), `$search`.|
-|displayName|String|Display name for the administrative unit. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderBy`.|
+|displayName|String|Display name for the administrative unit. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`, `startsWith`, and `eq` on `null` values), `$search`, and `$orderby`.|
 |id|String|Unique identifier for the administrative unit. Read-only. Supports `$filter` (`eq`).|
 |visibility|String|Controls whether the administrative unit and its members are hidden or public. Can be set to `HiddenMembership`. If not set (value is `null`), the default behavior is public. When set to `HiddenMembership`, only members of the administrative unit can list other members of the administrative unit.|
 
@@ -57,8 +57,8 @@ This resource supports:
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|extensions|[extension](extension.md) collection|The collection of open extensions defined for this administrative unit. Nullable.|
 |members|[directoryObject](directoryobject.md) collection|Users and groups that are members of this administrative unit. Supports `$expand`.|
+|extensions|[extension](extension.md) collection|The collection of open extensions defined for this administrative unit. Nullable.|
 |scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) collection| Scoped-role members of this administrative unit. |
 
 ## JSON representation

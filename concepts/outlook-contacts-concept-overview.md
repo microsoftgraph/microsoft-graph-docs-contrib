@@ -31,7 +31,7 @@ The contacts API lets you get contact items of the signed-in user, or of the use
 
 ### Leverage people API in Microsoft Graph to make better use of all people data
 
-You can use the typical CRUD operations for an Outlook [contact](/graph/api/resources/contact) to create and manage contacts. As part of Microsoft Graph, you can also use the [people API](people-example.md) that looks at a user's Outlook contacts, as well as social networks, organization directory, and people from recent communication, and return information about people from all these sources that are most relevant to the user. Take advantage of this additional intelligence in people picker scenarios.
+You can use the typical CRUD operations for an Outlook [contact](/graph/api/resources/contact) to create and manage contacts. As part of Microsoft Graph, you can also use the [people API](people-insights-overview.md) that looks at a user's Outlook contacts, as well as social networks, organization directory, and people from recent communication, and return information about people from all these sources that are most relevant to the user. Take advantage of this additional intelligence in people picker scenarios.
 
 ### Take advantage of other shared features and conveniences in Microsoft Graph
 

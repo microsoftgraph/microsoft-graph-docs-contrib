@@ -2,7 +2,7 @@
 title: "callRecord resource type"
 description: "The callRecord type"
 ms.localizationpriority: medium
-author: "williamlooney"
+author: "mcm223"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---
@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph.callRecords
 
-Represents a single peer-to-peer call or a group call between multiple participants, sometimes referred to as an online meeting.
+Represents a single peer-to-peer call or a group call between multiple participants, sometimes referred to as an online meeting. A call record is created after a call or meeting ends.
 
 ## Methods
 

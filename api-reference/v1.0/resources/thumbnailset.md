@@ -1,10 +1,10 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: ThumbnailSet
 ms.localizationpriority: medium
 description: "The ThumbnailSet resource is a keyed collection of thumbnail resources."
-ms.prod: ""
+ms.prod: sites-and-lists
 doc_type: resourcePageType
 ---
 

@@ -2,7 +2,7 @@
 title: "conditionalAccessSessionControls resource type"
 description: "Represents a complex type of session controls that is enforced after sign-in."
 ms.localizationpriority: medium
-author: "davidspooner"
+author: "lisaychuang"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
@@ -49,9 +49,9 @@ The following is a JSON representation of the resource.
 {
   "applicationEnforcedRestrictions": {"@odata.type": "microsoft.graph.applicationEnforcedRestrictionsSessionControl"},
   "cloudAppSecurity": {"@odata.type": "microsoft.graph.cloudAppSecuritySessionControl"},
+  "disableResilienceDefaults": false,
   "persistentBrowser": {"@odata.type": "microsoft.graph.persistentBrowserSessionControl"},
-  "signInFrequency": {"@odata.type": "microsoft.graph.signInFrequencySessionControl"},
-  "disableResilienceDefaults": false
+  "signInFrequency": {"@odata.type": "microsoft.graph.signInFrequencySessionControl"}
 }
 ```
 

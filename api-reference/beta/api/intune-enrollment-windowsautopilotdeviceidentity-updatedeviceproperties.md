@@ -1,7 +1,7 @@
 ---
 title: "updateDeviceProperties action"
 description: "Updates properties on Autopilot devices."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Updates properties on Autopilot devices.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -49,13 +49,13 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|userPrincipalName|String|Not yet documented|
-|addressableUserName|String|Not yet documented|
-|groupTag|String|Not yet documented|
-|displayName|String|Not yet documented|
-|deviceAccountUpn|String|Not yet documented|
-|deviceAccountPassword|String|Not yet documented|
-|deviceFriendlyName|String|Not yet documented|
+|userPrincipalName|String||
+|addressableUserName|String||
+|groupTag|String||
+|displayName|String||
+|deviceAccountUpn|String||
+|deviceAccountPassword|String||
+|deviceFriendlyName|String||
 
 
 
@@ -88,9 +88,3 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
-
-
-
-

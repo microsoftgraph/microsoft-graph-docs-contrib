@@ -68,6 +68,8 @@ The CSV file has the following headers for columns.
 - Yammer Messages Posted
 - Yammer Messages Read
 - Yammer Messages Liked
+- Teams Channel Messages
+- Teams Meetings Organized
 - Report Date
 - Report Period
 
@@ -76,6 +78,8 @@ The following columns are not supported in Microsoft Graph China operated by 21V
 - Yammer Messages Posted
 - Yammer Messages Read
 - Yammer Messages Liked
+- Teams Channel Messages
+- Teams Meetings Organized
 
 ### JSON
 
@@ -86,6 +90,8 @@ The following properties in **[office365GroupsActivityCounts](../resources/offic
 - yammerMessagesPosted
 - yammerMessagesRead
 - yammerMessagesLiked
+- teamsChannelMessages
+- teamsMeetingsOrganized
 
 ## Example
 
@@ -132,7 +138,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Exchange Emails Received,Yammer Messages Posted,Yammer Messages Read,Yammer Messages Liked,Report Date,Report Period
+Report Refresh Date,Exchange Emails Received,Yammer Messages Posted,Yammer Messages Read,Yammer Messages Liked,Teams Channel Messages,Teams Meetings Organized,Report Date,Report Period
 ```
 
 ### JSON
@@ -180,6 +186,8 @@ Content-Length: 310
       "yammerMessagesPosted": 0, 
       "yammerMessagesRead": 0, 
       "yammerMessagesLiked": 0, 
+      "teamsChannelMessages": 0, 
+      "teamsMeetingsOrganized": 0, 
       "reportDate": "2017-09-01", 
       "reportPeriod": "7"
     }

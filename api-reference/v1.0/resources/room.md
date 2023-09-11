@@ -31,8 +31,8 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 | bookingType            | [bookingType](#bookingtype-values)                | Type of room. Possible values are `standard`, and `reserved`. |
 | building               | String                                            | Specifies the building name or building number that the room is in. |
 | capacity               | Int32                                             | Specifies the capacity of the room. |
-| displayName            | String                                            | The name associated with the room. |
 | displayDeviceName      | String                                            | Specifies the name of the display device in the room. |
+| displayName            | String                                            | The name associated with the room. |
 | emailAddress           | String                                            | Email address of the room. |
 | floorLabel             | String                                            | Specifies a descriptive label for the floor, for example, P. |
 | floorNumber            | Int32                                             | Specifies the floor number that the room is on. |
@@ -49,8 +49,8 @@ In Exchange Online, each room is associated with a room mailbox. Derived from [p
 
 | Value    | Description                                               |
 |:---------|:----------------------------------------------------------|
-| standard | The room is available and can be reserved. This is the default value. |
 | reserved | The room is available only on a first come, first served basis. It cannot be reserved.|
+| standard | The room is available and can be reserved. This is the default value. |
 
 ## Relationships
 

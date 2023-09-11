@@ -1,7 +1,7 @@
 ---
 title: "deviceGuardVirtualizationBasedSecurityHardwareRequirementState enum type"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -25,9 +25,3 @@ Not yet documented
 |dmaProtectionRequired|2|DMA protection required|
 |hyperVNotSupportedForGuestVM|4|HyperV not supported for Guest VM|
 |hyperVNotAvailable|8|HyperV feature is not available|
-
-
-
-
-
-

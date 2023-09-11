@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var securityEnabledOnly = false;
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.DirectoryObjects["{directoryObject-id}"]
-	.GetMemberGroups(securityEnabledOnly)
-	.Request()
-	.PostAsync();
+var requestBody = new Microsoft.Graph.DirectoryObjects.Item.GetMemberGroups.GetMemberGroupsPostRequestBody
+{
+	SecurityEnabledOnly = false,
+};
+var result = await graphClient.DirectoryObjects["{directoryObject-id}"].GetMemberGroups.PostAsync(requestBody);
+
 
 ```

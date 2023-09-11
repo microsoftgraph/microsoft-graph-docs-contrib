@@ -62,13 +62,49 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "name": "bookingbusinesslistcalendarview",
   "sampleKeys": ["Contosolunchdelivery@contoso.onmicrosoft.com"]
 }-->
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdelivery@contoso.onmicrosoft.com/calendarView?start=2018-04-30T00:00:00Z&end=2018-05-10T00:00:00Z
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/bookingbusinesslistcalendarview-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/bookingbusinesslistcalendarview-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/bookingbusinesslistcalendarview-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/bookingbusinesslistcalendarview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/bookingbusinesslistcalendarview-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/bookingbusinesslistcalendarview-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/bookingbusinesslistcalendarview-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/bookingbusinesslistcalendarview-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 
@@ -94,6 +130,7 @@ Content-type: application/json
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
             "isLocationOnline": true,
             "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTlhZTE3MDUtODk0Yy00MGZkLTlhNzktN2FmYTk3MDUxNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
+            "anonymousJoinWebUrl": null,
             "customers": [
                 {
                     "@odata.type": "#microsoft.graph.bookingCustomerInformation",
@@ -102,6 +139,7 @@ Content-type: application/json
                     "emailAddress": "adelev@proseware.com",
                     "phone": "213-555-0156",
                     "notes": null,
+                    "smsNotificationsEnabled": true,
                     "location": {
                         "displayName": "Customer",
                         "locationEmailAddress": null,
@@ -135,7 +173,7 @@ Content-type: application/json
             "preBuffer": "PT5M",
             "postBuffer": "PT10M",
             "priceType": "fixedPrice",
-            "price": 10,
+            "price": 10.0,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
             "staffMemberIds": [],
@@ -176,6 +214,7 @@ Content-type: application/json
             "selfServiceAppointmentId": "00000000-0000-0000-0000-000000000000",
             "isLocationOnline": true,
             "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDUtODk0Yy00MGZkLTlhNzktN2xNmE2%40thread.v2/0?context=%7b%22Tid%22%3a%22995fa18c-b557-4694-8d07-b89779d6dc77%22%2c%22Oid%22%3a%22d4d260ab-989d-490e-b121-e2066391807a%22%7d",
+            "anonymousJoinWebUrl": null,
             "customers": [
                 {
                     "@odata.type": "#microsoft.graph.bookingCustomerInformation",
@@ -184,6 +223,7 @@ Content-type: application/json
                     "emailAddress": "jordanm@contoso.com",
                     "phone": "213-555-0199",
                     "notes": null,
+                    "smsNotificationsEnabled": true,
                     "location": {
                         "displayName": "Customer",
                         "locationEmailAddress": null,
@@ -217,7 +257,7 @@ Content-type: application/json
             "preBuffer": "PT5M",
             "postBuffer": "PT10M",
             "priceType": "fixedPrice",
-            "price": 10,
+            "price": 10.0,
             "serviceNotes": null,
             "optOutOfCustomerEmail": false,
             "staffMemberIds": [],

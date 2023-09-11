@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsAppHealthOSVersionPerformance resource type"
 description: "The user experience analytics device OS version performance entity contains OS version performance details."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -29,12 +29,12 @@ The user experience analytics device OS version performance entity contains OS v
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The unique identifier of the user experience analytics OS version performance object.|
-|osVersion|String|The OS version installed on the device.|
-|osBuildNumber|String|The OS build number installed on the device.|
-|activeDeviceCount|Int32|The number of active devices for the OS version. Valid values -2147483648 to 2147483647|
-|meanTimeToFailureInMinutes|Int32|The mean time to failure for the OS version in minutes. Valid values -2147483648 to 2147483647|
-|osVersionAppHealthScore|Double|The app health score of the OS version. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|id|String|The unique identifier of the user experience analytics OS version performance object. Supports: $select, $OrderBy. Read-only.|
+|osVersion|String|The OS version installed on the device. Supports: $select, $OrderBy. Read-only.|
+|osBuildNumber|String|The OS build number installed on the device. Supports: $select, $OrderBy. Read-only.|
+|activeDeviceCount|Int32|The number of active devices for the OS version. Valid values 0 to 2147483647. Supports: $filter, $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647|
+|meanTimeToFailureInMinutes|Int32|The mean time to failure for the application in minutes. Valid values 0 to 2147483647. Supports: $filter, $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647|
+|osVersionAppHealthScore|Double|The application health score of the OS version. Valid values 0 to 100. Supports: $filter, $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |osVersionAppHealthStatus|String|The overall app health status of the OS version.|
 
 ## Relationships
@@ -60,9 +60,3 @@ Here is a JSON representation of the resource.
   "osVersionAppHealthStatus": "String"
 }
 ```
-
-
-
-
-
-

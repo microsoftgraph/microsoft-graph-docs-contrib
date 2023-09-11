@@ -1,13 +1,13 @@
 ---
-title: "Configuring the invitation message"
+title: "invitedUserMessageInfo resource type"
 description: "The invitedUserMessageInfo object allows you to configure the invitation message."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "identity-and-sign-in"
-author: "Sammak"
+author: "ppolkadots"
 ---
 
-# Configuring the invitation message
+# invitedUserMessageInfo resource type
 
 Namespace: microsoft.graph
 

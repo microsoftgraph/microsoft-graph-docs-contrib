@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var contentType = "https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/0x0101";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Sites["{site-id}"].Lists["{list-id}"].ContentTypes
-	.AddCopy(contentType)
-	.Request()
-	.PostAsync();
+var requestBody = new Microsoft.Graph.Sites.Item.Lists.Item.ContentTypes.AddCopy.AddCopyPostRequestBody
+{
+	ContentType = "https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/0x0101",
+};
+var result = await graphClient.Sites["{site-id}"].Lists["{list-id}"].ContentTypes.AddCopy.PostAsync(requestBody);
+
 
 ```

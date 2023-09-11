@@ -1,7 +1,7 @@
 ---
 title: "executeAction action"
-description: "Not yet documented"
-author: "dougeby"
+description: ""
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
 
-## Prerequisites
+
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -51,17 +51,17 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|actionName|[managedDeviceRemoteAction](../resources/intune-devices-manageddeviceremoteaction.md)|Not yet documented|
-|keepEnrollmentData|Boolean|Not yet documented|
-|keepUserData|Boolean|Not yet documented|
-|persistEsimDataPlan|Boolean|Not yet documented|
-|deviceIds|String collection|Not yet documented|
-|notificationTitle|String|Not yet documented|
-|notificationBody|String|Not yet documented|
-|deviceName|String|Not yet documented|
-|carrierUrl|String|Not yet documented|
-|deprovisionReason|String|Not yet documented|
-|organizationalUnitPath|String|Not yet documented|
+|actionName|[managedDeviceRemoteAction](../resources/intune-devices-manageddeviceremoteaction.md)||
+|keepEnrollmentData|Boolean||
+|keepUserData|Boolean||
+|persistEsimDataPlan|Boolean||
+|deviceIds|String collection||
+|notificationTitle|String||
+|notificationBody|String||
+|deviceName|String||
+|carrierUrl|String||
+|deprovisionReason|String||
+|organizationalUnitPath|String||
 
 
 
@@ -120,9 +120,3 @@ Content-Length: 385
   }
 }
 ```
-
-
-
-
-
-

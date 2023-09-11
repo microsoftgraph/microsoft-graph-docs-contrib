@@ -20,11 +20,11 @@ Represents a preview of a [chatMessage](../resources/chatmessage.md) resource. T
 |:---|:---|:---|
 |body|[itemBody](../resources/itembody.md)|Body of the [chatMessage](../resources/chatmessage.md). This will still contain markers for @mentions and attachments even though the object does not return @mentions and attachments.|
 |createdDateTime|DateTimeOffset|Date time object representing the time at which message was created.|
+|eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Read-only.  If present, represents details of an event that happened in a chat, a channel, or a team, for example, members were added, and so on. For event messages, the **messageType** property will be set to `systemEventMessage`.|
 |from|[chatMessageFromIdentitySet](../resources/chatmessagefromidentityset.md)|Information about the sender of the message.|
 |id|String|ID of the [chatMessage](../resources/chatmessage.md).|
 |isDeleted|Boolean|If set to `true`, the original message has been deleted.|
 |messageType|chatMessageType|The type of chat message. The possible values are: `message`, `unknownFutureValue`, `systemEventMessage`.|
-|eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Read-only.  If present, represents details of an event that happened in a chat, a channel, or a team, for example, members were added, and so on. For event messages, the **messageType** property will be set to `systemEventMessage`.|
 
 ## Relationships
 None.

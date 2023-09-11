@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var itemPhone = new ItemPhone
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new ItemPhone
 {
 	DisplayName = "Car Phone",
-	Number = "+7 499 342 22 13"
+	Number = "+7 499 342 22 13",
 };
+var result = await graphClient.Me.Profile.Phones.PostAsync(requestBody);
 
-await graphClient.Me.Profile.Phones
-	.Request()
-	.AddAsync(itemPhone);
 
 ```

@@ -4,27 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var transferTarget = new InvitationParticipantInfo
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Communications.Calls.Item.Transfer.TransferPostRequestBody
 {
-	Identity = new IdentitySet
+	TransferTarget = new InvitationParticipantInfo
 	{
-		User = new Identity
+		Identity = new IdentitySet
 		{
-			Id = "550fae72-d251-43ec-868c-373732c2704f",
-			DisplayName = "Heidi Steen"
-		}
+			User = new Identity
+			{
+				Id = "550fae72-d251-43ec-868c-373732c2704f",
+				DisplayName = "Heidi Steen",
+			},
+		},
+		AdditionalData = new Dictionary<string, object>
+		{
+			{
+				"endpointType" , "default"
+			},
+		},
 	},
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"endpointType", "default"}
-	}
 };
+await graphClient.Communications.Calls["{call-id}"].Transfer.PostAsync(requestBody);
 
-await graphClient.Communications.Calls["{call-id}"]
-	.Transfer(transferTarget,null)
-	.Request()
-	.PostAsync();
 
 ```

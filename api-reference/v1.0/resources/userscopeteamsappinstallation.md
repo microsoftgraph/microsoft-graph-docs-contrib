@@ -38,9 +38,10 @@ This type inherits from [teamsAppInstallation](teamsappinstallation.md).
 
 | Relationship   | Type    | Description |
 |:---------------|:--------|:----------|
+|chat |[chat](chat.md) | The chat between the user and Teams app. | 
 |teamsApp|[teamsApp](teamsapp.md)| The app that is installed. |
 |teamsAppDefinition|[teamsAppDefinition](teamsappdefinition.md)| The details of this version of the app. |
-|chat |[chat](chat.md) | The chat between the user and Teams app. | 
+
 
 ## JSON representation
 

@@ -41,11 +41,12 @@ In the context of eDiscovery, represents a user and all of their digital assets,
 |createdDateTime|DateTimeOffset|Date and time when the custodian was added to the case.|
 |displayName|String|Display name of the custodian.|
 |email|String|Email address of the custodian.|
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the custodian.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
 |id|String|The ID for the custodian in the specified case. Read-only.|
 |lastModifiedDateTime|DateTimeOffset|Date and time the custodian object was last modified|
 |releasedDateTime|DateTimeOffset|Date and time the custodian was released from the case.|
 |status|microsoft.graph.security.custodianStatus|Status of the custodian. Possible values are: `active`, `released`.|
-|holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the custodian.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
+
 
 ### custodianStatus values
 

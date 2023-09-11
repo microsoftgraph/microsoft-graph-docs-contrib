@@ -1,7 +1,7 @@
 ---
 title: "automaticUpdateMode enum type"
 description: "Possible values for automatic update mode."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -27,9 +27,3 @@ Possible values for automatic update mode.
 |autoInstallAndRebootAtScheduledTime|4|Auto-install and reboot at scheduled time.|
 |autoInstallAndRebootWithoutEndUserControl|5|Auto-install and restart without end-user control|
 |windowsDefault|6|Reset to Windows default value.|
-
-
-
-
-
-

@@ -15,9 +15,10 @@ This article describes implementation and operational limits for Microsoft Graph
 
 | Limit type | Limit |
 | ---------- | ----- |
-| [Connection](/graph/api/resources/externalconnectors-externalconnection) resources per Microsoft 365 tenant | 10 for search, 15 for compliance |
+| [Connection](/graph/api/resources/externalconnectors-externalconnection) resources per Microsoft 365 tenant | 30 |
 | [Items](/graph/api/resources/externalconnectors-externalitem) per connection | 5,000,000 |
 | Connection byte size | 500 GB |
+| Items per tenant | 50,000,000 |
 
 ## Schema limits
 
@@ -31,6 +32,7 @@ This article describes implementation and operational limits for Microsoft Graph
 | ---------- | ----- |
 | [External groups](/graph/api/resources/externalconnectors-externalgroup) per Microsoft 365 tenant | 100,000 | 
 | Requests allowed per second (requests/sec) in the group administration [throttling](#throttling) threshold | 1,000 |
+| [External groups](/graph/api/resources/externalconnectors-externalgroup) per user for search query | 10,000 | 
 
 ## Item ingestion
 
@@ -38,6 +40,7 @@ This article describes implementation and operational limits for Microsoft Graph
 | ---------- | ----- |
 | Throughput limit to ingest items through a connection | 25 items/sec |
 | Item size; this limit applies to the request body when [ingesting and indexing an item](/graph/api/externalconnectors-externalconnection-put-items) | 4 MB |
+| Number of [activities](/graph/api/resources/externalconnectors-externalactivity); this is the [throttling](#throttling) threshold per activities call | 20 activities |
 | Property size | N/A |
 
 ## Throttling

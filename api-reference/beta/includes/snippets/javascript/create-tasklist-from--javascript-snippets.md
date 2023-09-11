@@ -10,13 +10,13 @@ const options = {
 
 const client = Client.init(options);
 
-const baseTaskList = {
+const lists = {
     '@odata.type': '#microsoft.graph.taskList',
     displayName: 'Shopping list'
 };
 
 await client.api('/me/tasks/lists')
 	.version('beta')
-	.post(baseTaskList);
+	.post(lists);
 
 ```

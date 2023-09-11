@@ -16,7 +16,9 @@ Namespace: microsoft.graph
 Connects Microsoft security products, services, and partners to streamline security operations and improve threat protection, detection, and response capabilities.
 
 ## Methods
-None.
+|Method|Return type|Description|
+|:---|:---|:---|
+|[runHuntingQuery](../api/security-security-runhuntingquery.md)|[microsoft.graph.security.huntingQueryResults](../resources/security-huntingqueryresults.md)|Queries a specified set of event, activity, or entity data supported by Microsoft 365 Defender to proactively look for specific threats in your environment.|
 
 ## Properties
 None.

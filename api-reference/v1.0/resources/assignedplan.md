@@ -2,7 +2,7 @@
 title: "assignedPlan resource type"
 description: "The **assignedPlans** property of both the user entity and the organization entity is a collection of **assignedPlan**."
 ms.localizationpriority: medium
-author: "jconley76"
+author: "frank-masuelli"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
@@ -35,6 +35,7 @@ The following table describes the possible statuses for the **capabilityStatus**
 | Suspended | Unavailable for assignment but any data associated with the capability must be preserved. |
 | LockedOut | Unavailable for all administrators and users for assignment but any data associated with the capability must be preserved. This is the state after `Suspended` and if the license isn't renewed, it is the final state before the plan is `Deleted`. |
 | Deleted | Unavailable and any data associated with the capability may be deleted. |
+
 
 ## JSON representation
 

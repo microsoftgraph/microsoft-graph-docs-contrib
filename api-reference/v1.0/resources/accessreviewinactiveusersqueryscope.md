@@ -38,9 +38,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.accessReviewInactiveUsersQueryScope",
+  "inactiveDuration": "String (duration)",
   "query": "String",
-  "queryType": "String",
   "queryRoot": "String",
-  "inactiveDuration": "String (duration)"
+  "queryType": "String"
+  
 }
 ```

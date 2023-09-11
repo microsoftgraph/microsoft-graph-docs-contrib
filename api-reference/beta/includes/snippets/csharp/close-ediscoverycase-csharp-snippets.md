@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"]
-	.Close()
-	.Request()
-	.PostAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].MicrosoftGraphSecurityClose.PostAsync();
+
 
 ```

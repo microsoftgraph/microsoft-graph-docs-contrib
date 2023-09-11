@@ -1,6 +1,6 @@
 ---
 title: "List learningContents"
-description: "Get a list of the learningContent objects and their properties."
+description: "Get a list of the learningContent resources and their properties."
 author: "malabikaroy"
 ms.localizationpriority: medium
 ms.prod: "employee-learning"
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|LearningContent.Read.All|
+|Delegated (work or school account)|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|LearningContent.Read.All|
+|Application|LearningContent.Read.All, LearningContent.ReadWrite.All|
 
 ## HTTP request
 
@@ -58,36 +58,43 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_learningcontent"
+  "name": "list_learningcontent",
+  "sampleKeys": ["13727311-e7bb-470d-8b20-6a23d9030d70"]
 }
 -->
 ``` http
-GET /employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents 
+GET https://graph.microsoft.com/beta/employeeExperience/learningProviders/13727311-e7bb-470d-8b20-6a23d9030d70/learningContents 
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-learningcontent-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-learningcontent-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-learningcontent-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-learningcontent-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-learningcontent-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-learningcontent-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-learningcontent-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-learningcontent-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-learningcontent-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
-
-
 
 ### Response
 The following is an example of the response.
@@ -107,6 +114,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#learningProviders('13727311-e7bb-470d-8b20-6a23d9030d70')/learningContents",
     "value": [
         {
+            "id": "99029577-a660-46b6-ba58-3ce4d21d5f50",
             "externalId": "LP4771",
             "title": "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",
             "description": "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.",
@@ -119,7 +127,10 @@ Content-type: application/json
             "format": "Book",
             "createdDateTime": "2018-01-01T00:00:00",
             "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
-            "contributor": "Scott Simpson",
+            "contributors": [
+                "Lina Wagner",
+                "Lisa Richter"
+            ], 
             "additionalTags": [
                 "Create private or public teams",
                 "Add members to teams"
@@ -134,6 +145,7 @@ Content-type: application/json
             "isSearchable": false
         },
         {
+            "id": "77029588-a660-46b6-ba58-3ce4d21d5678",
             "externalId": "LP4772",
             "title": "Manage classes, resources, assessment, and planning in Microsoft Teams with Beedle",
             "description": "A module to guide users through the various teaching and learning enhancements that Beedle provides within Microsoft Teams, with many examples of everyday application.",
@@ -146,7 +158,10 @@ Content-type: application/json
             "format": "Book",
             "createdDateTime": "2018-01-01T00:00:00",
             "lastModifiedDateTime": "2021-04-01T04:26:06.1995367Z",
-            "contributor": "Scott Simpson",
+            "contributors": [
+                "Lina Wagner",
+                "Lisa Richter"
+            ], 
             "additionalTags": [
                 "Create private or public teams",
                 "Add members to teams"

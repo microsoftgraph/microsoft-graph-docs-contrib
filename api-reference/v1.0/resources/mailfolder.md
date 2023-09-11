@@ -2,7 +2,7 @@
 title: "mailFolder resource type"
 description: "A mail folder in a user's mailbox, such as Inbox and Drafts. Mail folders can contain messages, other Outlook items, and child mail folders."
 ms.localizationpriority: high
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -88,7 +88,7 @@ The `TotalItemCount` and `UnreadItemCount` properties of a folder allow you to c
 They let you avoid queries like the following that can incur significant latency:
 
 ```http
-https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filter=isread%20eq%20false
+https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messages?$count=true&$filter=isread%20eq%20false
 ```
 
 Mail folders in Outlook can contain more than one type of items, for example, the Inbox can contain meeting request items which are distinct from mail items. `TotalItemCount` and `UnreadItemCount` include items in a mail folder irrespective of their item types.
@@ -98,7 +98,7 @@ The default value of the `isHidden` property is `false`. You can set **isHidden*
 
 Hidden mail folders support all operations that are supported by a regular mail folder.
 
-By default, [listing mailFolders](../api/user-list-mailfolders.md) returns only mail folders that are not hidden. To include hidden mail folders in the response, use the query parameter `includeHiddenFolders=true`. Then use the **isHidden** property to identify whether a mail folder is hidden. 
+By default, [listing mailFolders](../api/user-list-mailfolders.md) returns only mail folders that are not hidden. To include hidden mail folders in the response, use the query parameter `includeHiddenFolders=true`. Then use the **isHidden** property to identify whether a mail folder is hidden.
 
 ## Relationships
 

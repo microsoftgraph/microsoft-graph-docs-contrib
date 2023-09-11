@@ -21,6 +21,9 @@ call.targets = targetsList;
 LinkedList<Modality> requestedModalitiesList = new LinkedList<Modality>();
 requestedModalitiesList.add(Modality.AUDIO);
 call.requestedModalities = requestedModalitiesList;
+OutgoingCallOptions callOptions = new OutgoingCallOptions();
+callOptions.isContentSharingNotificationEnabled = true;
+call.callOptions = callOptions;
 ServiceHostedMediaConfig mediaConfig = new ServiceHostedMediaConfig();
 call.mediaConfig = mediaConfig;
 

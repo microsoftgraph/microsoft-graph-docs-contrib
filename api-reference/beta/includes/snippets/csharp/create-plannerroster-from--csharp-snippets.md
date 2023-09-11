@@ -4,14 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var plannerRoster = new PlannerRoster
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new PlannerRoster
 {
+	OdataType = "#microsoft.graph.plannerRoster",
 };
+var result = await graphClient.Planner.Rosters.PostAsync(requestBody);
 
-await graphClient.Planner.Rosters
-	.Request()
-	.AddAsync(plannerRoster);
 
 ```

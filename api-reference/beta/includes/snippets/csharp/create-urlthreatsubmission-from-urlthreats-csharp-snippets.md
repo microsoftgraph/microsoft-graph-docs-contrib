@@ -4,16 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var urlThreatSubmission = new UrlThreatSubmission
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Models.Security.UrlThreatSubmission
 {
-	Category = Microsoft.Graph.Security.SubmissionCategory.Phishing,
-	WebUrl = "http://phishing.contoso.com"
+	OdataType = "#microsoft.graph.urlThreatSubmission",
+	Category = Microsoft.Graph.Beta.Models.Security.SubmissionCategory.Phishing,
+	WebUrl = "http://phishing.contoso.com",
 };
+var result = await graphClient.Security.ThreatSubmission.UrlThreats.PostAsync(requestBody);
 
-await graphClient.Security.ThreatSubmission.UrlThreats
-	.Request()
-	.AddAsync(urlThreatSubmission);
 
 ```

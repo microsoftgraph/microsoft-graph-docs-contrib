@@ -1,7 +1,7 @@
 ---
 title: "delegatedAdminRelationshipCustomerParticipant resource type"
 description: "Represents identification details of a customer in a delegated admin relationship."
-author: "adtangir"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: resourcePageType
@@ -18,7 +18,7 @@ Represents identification details of a customer in a delegated admin relationshi
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The display name of the customer tenant as set by Azure AD. Read only|
+|displayName|String|The display name of the customer tenant as set by Azure AD. Read-only|
 |tenantId|String|The Azure AD-assigned tenant ID of the customer tenant.|
 
 ## Relationships

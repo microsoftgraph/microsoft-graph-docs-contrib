@@ -84,7 +84,7 @@ Depending on your app scenario, you can use the places API within the context of
 
 ## Take advantage of social intelligence and other developer conveniences in Microsoft Graph
 
-Use the [people API](people-example.md) in Microsoft Graph to connect to [people data](/graph/api/resources/person) which is based on a user's communication and collaboration patterns and business relationships. You can implement controls such as a people picker and suggest persons relevant to the user when organizing meetings on the user's behalf.
+Use the [people API](people-insights-overview.md) in Microsoft Graph to connect to [people data](/graph/api/resources/person) which is based on a user's communication and collaboration patterns and business relationships. You can implement controls such as a people picker and suggest persons relevant to the user when organizing meetings on the user's behalf.
 
 Save overhead in storing and managing app data in external data stores. With Microsoft Graph, you can store custom app data as [open extensions](extensibility-overview.md#open-extensions) in individual resource instances. If you require the data to be typed or would like to be able to share the typed schema, you can store custom app data in [schema extensions](extensibility-overview.md#schema-extensions).
 

@@ -1,7 +1,7 @@
 ---
 title: "importedDeviceIdentity resource type"
 description: "The importedDeviceIdentity resource represents a unique hardware identity of a device that has been pre-staged for pre-enrollment configuration."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -66,9 +66,3 @@ Here is a JSON representation of the resource.
   "platform": "String"
 }
 ```
-
-
-
-
-
-

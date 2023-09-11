@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users.Functions
+Import-Module Microsoft.Graph.Beta.Users.Functions
 
-Get-MgUserDelta -Property "displayName,jobTitle,mobilePhone" 
+Get-MgBetaUserDelta -Property "displayName,jobTitle,mobilePhone" 
 
 ```

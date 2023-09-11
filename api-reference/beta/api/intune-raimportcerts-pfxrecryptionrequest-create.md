@@ -1,7 +1,7 @@
 ---
 title: "Create pfxRecryptionRequest"
 description: "Create a new pfxRecryptionRequest object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [pfxRecryptionRequest](../resources/intune-raimportcerts-pfxrecryptionrequest.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -48,18 +48,18 @@ The following table shows the properties that are required when you create the p
 
 |Property|Type|Description|
 |:---|:---|:---|
-|tenantId|Guid|Not yet documented|
-|userId|Guid|Not yet documented|
-|deviceId|Guid|Not yet documented|
-|profileId|Guid|Not yet documented|
-|thumbprint|String|Not yet documented|
-|deviceKeyThumbprint|String|Not yet documented|
-|status|Int32|Not yet documented|
-|sourceType|Int32|Not yet documented|
-|createdTime|DateTimeOffset|Not yet documented|
-|lastModifiedTime|DateTimeOffset|Not yet documented|
-|isDeleted|Boolean|Not yet documented|
-|eTag|String|Not yet documented|
+|tenantId|Guid||
+|userId|Guid||
+|deviceId|Guid||
+|profileId|Guid||
+|thumbprint|String||
+|deviceKeyThumbprint|String||
+|status|Int32||
+|sourceType|Int32||
+|createdTime|DateTimeOffset||
+|lastModifiedTime|DateTimeOffset||
+|isDeleted|Boolean||
+|eTag|String||
 
 
 
@@ -115,9 +115,3 @@ Content-Length: 574
   "eTag": "ETag value"
 }
 ```
-
-
-
-
-
-

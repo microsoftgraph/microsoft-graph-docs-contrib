@@ -1,6 +1,6 @@
 ---
 title: "chatMessage resource type"
-description: "Represents an individual chat message in a channel or chat entity. The chat message can be a root chat message or part of a thread that is defined by the **replyToId** property in the chat message."
+description: "Represents an individual chat message in a channel or chat entity."
 doc_type: resourcePageType
 ms.localizationpriority: medium
 author: "RamjotSingh"
@@ -27,16 +27,20 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |[Create subscription for new channel messages](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Listen for new, edited, and deleted messages, and reactions to them. |
 |[Get message in channel](../api/chatmessage-get.md) | [chatMessage](chatmessage.md) | Get a single root message in a channel.|
 |[Send message in channel](../api/chatmessage-post.md) | [chatMessage](chatmessage.md)| Create a new root message in a channel.|
-|[Update message in channel](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the properties of a chat message.|
-|[Delete message in channel](../api/chatmessage-softdelete.md)|[chatMessage](chatmessage.md)| Delete the message in a channel.|
-|[Undo the deletion of a message in channel](../api/chatmessage-undoSoftdelete.md)|[chatMessage](chatmessage.md)| Undelete the message in a channel.|
+|[Update message in channel](../api/chatmessage-update.md)| None | Update the properties of a chat message.|
+|[Delete message in channel](../api/chatmessage-softdelete.md)| None | Delete the message in a channel.|
+|[Undo the deletion of a message in channel](../api/chatmessage-undoSoftdelete.md)|None| Undelete the message in a channel.|
+|[Set reaction to a message in channel](../api/chatmessage-setreaction.md)|None| Set reaction to a message in a channel.|
+|[Unset reaction to a message in channel](../api/chatmessage-unsetreaction.md)|None| Unset reaction to a message in a channel.|
 |**Channel message replies**| | |
 |[List replies to message](../api/chatmessage-list-replies.md) | [chatMessage](chatmessage.md) collection| List of all replies to a chat message in channel.|
 |[Get reply message in channel](../api/chatmessage-get.md) | [chatMessage](chatmessage.md) | Get a single reply message in a channel.|
 |[Reply to a message in channel](../api/chatmessage-post-replies.md) | [chatMessage](chatmessage.md)| Reply to an existing chat message in a channel.|
 |[Update reply message](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the properties of a chat message.|
 |[Delete reply message in channel](../api/chatmessage-softdelete.md)|[chatMessage](chatmessage.md)| Delete the single reply message in a channel.|
-|[Undo deletion of a reply message in channel](../api/chatmessage-undoSoftdelete.md)|[chatMessage](chatmessage.md)| Undelete the single reply message in a channel.
+|[Undo deletion of a reply message in channel](../api/chatmessage-undoSoftdelete.md)|[chatMessage](chatmessage.md)| Undelete the single reply message in a channel.|
+|[Set reaction to a reply message in channel](../api/chatmessage-setreaction.md)|[chatMessage](chatmessage.md)| Set reaction to a reply message in a channel.|
+|[Unset reaction to a reply message in channel](../api/chatmessage-unsetreaction.md)|[chatMessage](chatmessage.md)| Unset reaction to a reply message in a channel.|
 |**Chat messages**| | |
 |[List messages in chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | List chat messages in a chat. |
 |[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single chat message in a chat. |
@@ -47,6 +51,8 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |[Update message in chat](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the properties of a chat message.|
 |[Delete message in chat](../api/chatmessage-softdelete.md)|[chatMessage](chatmessage.md)| Delete the message of a chat.|
 |[Undo the deletion of a message in chat](../api/chatmessage-undoSoftdelete.md)|[chatMessage](chatmessage.md)| Undelete the message in a chat.|
+|[Set reaction to a message in chat](../api/chatmessage-setreaction.md)|[chatMessage](chatmessage.md)| Set reaction to a message in a chat.|
+|[Unset reaction to a message in chat](../api/chatmessage-unsetreaction.md)|[chatMessage](chatmessage.md)| Unset reaction to a message in a chat.|
 |**Hosted content**| | |
 |[List all hosted content](../api/chatmessage-list-hostedcontents.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) collection| Get all hosted contents associated with a message.|
 |[Get hosted content](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Get hosted content (and its bytes) for a message.|
@@ -64,12 +70,13 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |etag| string | Read-only. Version number of the chat message. |
 |eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Read-only.  If present, represents details of an event that happened in a **chat**, a **channel**, or a **team**, for example, adding new members. For event messages, the **messageType** property will be set to `systemEventMessage`.|
 |from|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| Details of the sender of the chat message. Can only be set during [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).|
-|id|String| Read-only. Unique ID of the message.|
+|id|String| Read-only. Unique ID of the message. IDs are unique within a chat/channel/reply-to-message, but might be duplicated in other chats/channels/reply-to-messages.|
 |importance|string | The importance of the chat message. The possible values are: `normal`, `high`, `urgent`.|
 |lastEditedDateTime|dateTimeOffset|Read only. Timestamp when edits to the chat message were made. Triggers an "Edited" flag in the Teams UI. If no edits are made the value is `null`.|
 |lastModifiedDateTime|dateTimeOffset|Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed. |
 |locale|string|Locale of the chat message set by the client. Always set to `en-us`.|
 |mentions|[chatMessageMention](chatmessagemention.md) collection| List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.|
+|messageHistory|[chatMessageHistoryItem](../resources/chatmessagehistoryitem.md) collection|List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
 |messageType|chatMessageType|The type of chat message. The possible values are: `message`, `chatEvent`, `typing`, `unknownFutureValue`, `systemEventMessage`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `systemEventMessage`.|
 |onBehalfOf|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| User attribution of the message when [bot](/microsoftteams/platform/messaging-extensions/how-to/action-commands/respond-to-task-module-submit?tabs=dotnet%2Cdotnet-1#user-attribution-for-bots-messages) sends a message on behalf of a user.|
 |policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |Defines the properties of a policy violation set by a data loss prevention (DLP) application.|
@@ -83,8 +90,8 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 
 | Relationship   | Type    | Description |
 |:---------------|:--------|:----------|
-|replies|[chatMessage](chatmessage.md)| Replies for a specified message. Supports `$expand` for channel messages. |
-|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Content in a message hosted by Microsoft Teams - for example, images or code snippets. |
+|replies|[chatMessage](chatmessage.md) collection| Replies for a specified message. Supports `$expand` for channel messages. |
+|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md) collection| Content in a message hosted by Microsoft Teams - for example, images or code snippets. |
 
 ## JSON representation
 
@@ -111,31 +118,30 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "id": "string (identifier)",
-  "replyToId": "string (identifier)",
-  "from": {"@odata.type": "microsoft.graph.chatMessageFromIdentitySet"},
-  "etag": "string",
-  "messageType": "string",
-  "createdDateTime": "string (timestamp)",
-  "lastModifiedDateTime": "string (timestamp)",
-  "lastEditedDateTime": "string (timestamp)",
-  "deletedDateTime": "string (timestamp)",
-  "subject": "string",
-  "body": {"@odata.type": "microsoft.graph.itemBody"},
-  "summary": "string",
   "attachments": [{"@odata.type": "microsoft.graph.chatMessageAttachment"}],
-  "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
-  "onBehalfOf": {"@odata.type": "microsoft.graph.chatMessageFromIdentitySet"},
-  "importance": "string",
-  "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
-  "locale": "string",
-  "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
-  "chatId": "string",
+  "body": {"@odata.type": "microsoft.graph.itemBody"},
   "channelIdentity": {"@odata.type": "microsoft.graph.channelIdentity"},
-  "webUrl": "string",
-  "eventDetail": {
-    "@odata.type": "microsoft.graph.eventMessageDetail"
-  }
+  "chatId": "String",
+  "createdDateTime": "String (timestamp)",
+  "deletedDateTime": "String (timestamp)",
+  "etag": "String",
+  "eventDetail": {"@odata.type": "microsoft.graph.eventMessageDetail"},
+  "from": {"@odata.type": "microsoft.graph.chatMessageFromIdentitySet"},
+  "id": "String (identifier)",
+  "importance": "String",
+  "lastEditedDateTime": "String (timestamp)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "locale": "String",
+  "mentions": [{"@odata.type": "microsoft.graph.chatMessageMention"}],
+  "messageHistory": [{"@odata.type": "microsoft.graph.chatMessageHistoryItem"}],
+  "messageType": "String",
+  "onBehalfOf": {"@odata.type": "microsoft.graph.chatMessageFromIdentitySet"},
+  "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
+  "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
+  "replyToId": "String (identifier)",
+  "subject": "String",
+  "summary": "String",
+  "webUrl": "String"
 }
 ```
 

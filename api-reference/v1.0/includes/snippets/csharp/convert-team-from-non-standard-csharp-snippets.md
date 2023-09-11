@@ -4,20 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var team = new Team
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Team
 {
 	DisplayName = "My Class Team",
 	Description = "My Class Team’s Description",
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"template@odata.bind", "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')"}
-	}
+		{
+			"template@odata.bind" , "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')"
+		},
+	},
 };
+var result = await graphClient.Teams.PostAsync(requestBody);
 
-await graphClient.Teams
-	.Request()
-	.AddAsync(team);
 
 ```

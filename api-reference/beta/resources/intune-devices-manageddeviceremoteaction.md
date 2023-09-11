@@ -1,7 +1,7 @@
 ---
 title: "managedDeviceRemoteAction enum type"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -20,25 +20,22 @@ Not yet documented
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|retire|0|Not yet documented|
-|delete|1|Not yet documented|
-|fullScan|2|Not yet documented|
-|quickScan|3|Not yet documented|
-|signatureUpdate|4|Not yet documented|
-|wipe|5|Not yet documented|
-|customTextNotification|6|Not yet documented|
-|rebootNow|7|Not yet documented|
-|setDeviceName|8|Not yet documented|
-|syncDevice|9|Not yet documented|
+|retire|0|Name of the retire action.|
+|delete|1|Name of the delete action.|
+|fullScan|2|Name of the full Scan action.|
+|quickScan|3|Name of the Quick Scan action.|
+|signatureUpdate|4|Signature Update action|
+|wipe|5|Name of the wipe action.|
+|customTextNotification|6|Name of the Custom Text Notification action.|
+|rebootNow|7|Name of the reboot now action.|
+|setDeviceName|8|Set Device Name action.|
+|syncDevice|9|Sync Device action.|
 |deprovision|10|Name of the deprovision action.|
 |disable|11|Name of the disable action.|
 |reenable|12|Name of the reenable action.|
 |moveDeviceToOrganizationalUnit|13|Name of the moveDevicesToOU action.|
 |activateDeviceEsim|14|Name of action to Activate eSIM on the device.|
 |collectDiagnostics|15|Name of the collectDiagnostics action.|
-
-
-
-
-
-
+|initiateMobileDeviceManagementKeyRecovery|16|Name of action to initiate MDM key recovery|
+|initiateOnDemandProactiveRemediation|17|Name of action to initiate On Demand Proactive Remediation|
+|unknownFutureValue|18|Evolvable enum member|

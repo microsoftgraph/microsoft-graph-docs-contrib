@@ -4,33 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Sites
+Import-Module Microsoft.Graph.Beta.Sites
 
 $params = @{
-	Name = "Events.aspx"
-	Title = "Team Events"
-	PublishingState = @{
-		Level = "checkedOut"
-		VersionId = "0.1"
-	}
-	WebParts = @(
-		@{
-			Type = "rte"
-			Data = @{
-				InnerHTML = "<p>Here are the team's upcoming events:</p>"
-			}
-		}
-		@{
-			Type = "d1d91016-032f-456d-98a4-721247c305e8"
-			Data = @{
-				Title = "Events"
-				Description = "Display upcoming events"
-				DataVersion = "1.0"
-			}
-		}
-	)
+	"@odata.type" = "#microsoft.graph.sitePage"
+	name = "test.aspx"
+	title = "test"
+	pageLayout = "article"
+	showComments = $true
+	showRecommendedPages = $false
 }
 
-New-MgSitePage -SiteId $siteId -BodyParameter $params
+New-MgBetaSitePage -SiteId $siteId -BodyParameter $params
 
 ```

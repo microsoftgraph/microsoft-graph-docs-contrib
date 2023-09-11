@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package assignment request is created by a user who wants to obtain an access package assignment. This request can include a schedule for when the user would like to have an assignment.  An access package assignment that results from such a request also has a schedule.
 
-In PIM, use this resource to define the schedule for when the principal will have an eligible or active role assignment.
+In [PIM for Azure AD roles](privilegedidentitymanagementv3-overview.md) and [PIM for Groups](privilegedidentitymanagement-for-groups-api-overview.md), use this resource to define the schedule for when the principal will have an eligible or active role assignment.
 
 ## Properties
 

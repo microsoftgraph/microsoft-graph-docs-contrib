@@ -1,7 +1,7 @@
 ---
 title: "windowsUpdateNotificationDisplayOption enum type"
 description: "Windows Update Notification Display Options"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -25,9 +25,3 @@ Windows Update Notification Display Options
 |restartWarningsOnly|2|Turn off all notifications, excluding restart warnings.|
 |disableAllNotifications|3|Turn off all notifications, including restart warnings.|
 |unknownFutureValue|4|Evolvable enum member|
-
-
-
-
-
-

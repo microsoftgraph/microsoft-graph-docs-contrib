@@ -4,8 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  "time"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
 
 requestBody := graphmodels.NewAccessReviewHistoryDefinition()
 displayName := "Last quarter's group reviews April 2021"
@@ -20,59 +29,37 @@ decisions := []graphmodels.AccessReviewHistoryDecisionFilterable {
 	accessReviewHistoryDecisionFilter := graphmodels.NOTREVIEWED_ACCESSREVIEWHISTORYDECISIONFILTER 
 	requestBody.SetAccessReviewHistoryDecisionFilter(&accessReviewHistoryDecisionFilter) 
 	accessReviewHistoryDecisionFilter := graphmodels.NOTNOTIFIED_ACCESSREVIEWHISTORYDECISIONFILTER 
-	requestBody.SetAccessReviewHistoryDecisionFilter(&accessReviewHistoryDecisionFilter) 
-
+	requestBody.SetAccessReviewHistoryDecisionFilter(&accessReviewHistoryDecisionFilter)
 }
 requestBody.SetDecisions(decisions)
-scheduleSettings := graphmodels.NewAccessReviewHistoryScheduleSettings()
-reportRange := "P1M"
-scheduleSettings.SetReportRange(&reportRange) 
-recurrence := graphmodels.NewPatternedRecurrence()
-pattern := graphmodels.NewRecurrencePattern()
-type := graphmodels.MONTHLY_RECURRENCEPATTERNTYPE 
-pattern.SetType(&type) 
-interval := int32(1)
-pattern.SetInterval(&interval) 
-recurrence.SetPattern(pattern)
-range := graphmodels.NewRecurrenceRange()
-type := graphmodels.NOEND_RECURRENCERANGETYPE 
-range.SetType(&type) 
-startDate := 2018-08-03T21:02:30.667Z
-range.SetStartDate(&startDate) 
-additionalData := map[string]interface{}{
-	"count" : int32(0) , 
-}
-range.SetAdditionalData(additionalData)
-recurrence.SetRange(range)
-scheduleSettings.SetRecurrence(recurrence)
-requestBody.SetScheduleSettings(scheduleSettings)
+reviewHistoryPeriodStartDateTime , err := time.Parse(time.RFC3339, "2021-01-01T00:00:00Z")
+requestBody.SetReviewHistoryPeriodStartDateTime(&reviewHistoryPeriodStartDateTime) 
+reviewHistoryPeriodEndDateTime , err := time.Parse(time.RFC3339, "2021-04-30T23:59:59Z")
+requestBody.SetReviewHistoryPeriodEndDateTime(&reviewHistoryPeriodEndDateTime) 
 
 
-accessReviewScope := graphmodels.NewAccessReviewScope()
-additionalData := map[string]interface{}{
-	"queryType" : "MicrosoftGraph", 
-	"query" : "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')", 
-	queryRoot := null
+accessReviewScope := graphmodels.NewAccessReviewQueryScope()
+queryType := "MicrosoftGraph"
+accessReviewScope.SetQueryType(&queryType) 
+query := "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, 'accessPackageAssignments')"
+accessReviewScope.SetQuery(&query) 
+queryRoot := null
 accessReviewScope.SetQueryRoot(&queryRoot) 
-}
-accessReviewScope.SetAdditionalData(additionalData)
-accessReviewScope1 := graphmodels.NewAccessReviewScope()
-additionalData := map[string]interface{}{
-	"queryType" : "MicrosoftGraph", 
-	"query" : "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')", 
-	queryRoot := null
+accessReviewScope1 := graphmodels.NewAccessReviewQueryScope()
+queryType := "MicrosoftGraph"
+accessReviewScope1.SetQueryType(&queryType) 
+query := "/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')"
+accessReviewScope1.SetQuery(&query) 
+queryRoot := null
 accessReviewScope1.SetQueryRoot(&queryRoot) 
-}
-accessReviewScope1.SetAdditionalData(additionalData)
 
 scopes := []graphmodels.AccessReviewScopeable {
 	accessReviewScope,
 	accessReviewScope1,
-
 }
 requestBody.SetScopes(scopes)
 
-result, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitions().Post(context.Background(), requestBody, nil)
+historyDefinitions, err := graphClient.IdentityGovernance().AccessReviews().HistoryDefinitions().Post(context.Background(), requestBody, nil)
 
 
 ```

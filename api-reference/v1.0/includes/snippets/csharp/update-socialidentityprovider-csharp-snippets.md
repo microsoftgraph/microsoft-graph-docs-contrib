@@ -4,15 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var identityProviderBase = new SocialIdentityProvider
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new SocialIdentityProvider
 {
-	ClientSecret = "1111111111111"
+	OdataType = "#microsoft.graph.socialIdentityProvider",
+	ClientSecret = "1111111111111",
 };
+var result = await graphClient.Identity.IdentityProviders["{identityProviderBase-id}"].PatchAsync(requestBody);
 
-await graphClient.Identity.IdentityProviders["{identityProviderBase-id}"]
-	.Request()
-	.UpdateAsync(identityProviderBase);
 
 ```

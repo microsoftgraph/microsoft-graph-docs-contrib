@@ -2,7 +2,7 @@
 title: "Use the Microsoft Search API to query data"
 description: "Using the search API, apps can search Microsoft 365 data in the context of the authenticated user"
 ms.localizationpriority: high
-author: "nmoreau"
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: resourcePageType
 ---
@@ -28,6 +28,7 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Get the most relevant emails](#get-the-most-relevant-emails) | **enableTopResults** |
 |[Get selected properties](#get-selected-properties) | **fields** |
 |[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
+|[Collapse search results](#collapse-search-results)| **collapseProperties**|
 |[Sort search results](#sort-search-results)| **sortProperties** |
 |[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
 |[Request spelling correction](#request-spelling-correction)| **queryAlterationOptions** |
@@ -40,6 +41,7 @@ The following table describes the types available to query and the supported per
 
 | EntityType | Permission scope required to access the items| Source| Comment|
 |:------------------|:---------|:---------|:---------|
+|[chatMessage](chatmessage.md)|Chat.Read, Chat.ReadWrite, ChannelMessage.Read.All|Teams|Teams messages.|
 |[message](message.md)|Mail.Read, Mail.ReadWrite| Exchange Online| Email messages.|
 |[event](event.md) |Calendars.Read, Calendars.ReadWrite| Exchange Online|Calendar events. |
 |[drive](drive.md)|Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All| SharePoint | Document libraries.|
@@ -47,6 +49,8 @@ The following table describes the types available to query and the supported per
 |[list](list.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | Lists. Note that document libraries are also returned as lists. |
 |[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | List items. Note that files and folders are also returned as list items; **listItem** is the super class of **driveItem**. |
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites in SharePoint.|
+|[Bookmarks](/graph/api/resources/search-bookmark)|Bookmark.Read.All|Microsoft Search|Microsoft Search bookmarks in your organization.|
+|[Acronyms](/graph/api/resources/search-acronym)|Acronym.Read.All|Microsoft Search|Microsoft Search acronyms in your organization.|
 
 ## Page search results
 
@@ -97,12 +101,25 @@ If you do not specify any **fields** in the request,  you will get the default s
 
 ## Keyword Query Language (KQL) support
 
-Specify free text keywords, operators (such as `AND`, `OR`), and property restrictions in KQL syntax in the actual search query string (**query** property of the **query** request body). The syntax and command depend on the entity types (in the **entityTypes** property) you target in the same **query** request body.
+Specify free text keywords, operators (such as `AND`, `OR`), and property restrictions in KQL syntax in the actual search query string (**query** property of the **query** request body). The [XRANK](/graph/search-concept-xrank) operator boosts the dynamic rank of items based on certain term occurrences within the match expression, without changing which items match the query. The syntax and command depend on the entity types (in the **entityTypes** property) you target in the same **query** request body.
 
 Depending on the entity type, the searchable properties vary. For details, see:
 
 - [Email properties](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-email-properties)
 - [Site properties](/microsoft-365/compliance/keyword-queries-and-search-conditions#searchable-site-properties)
+
+## Collapse search results
+
+The **collapseProperties** property contains a set of criteria, fields, and limit size used to collapse results in a response body. Using **collapseProperties** only impacts the recall but not ranking/sorting actions.
+
+The [query](../api/search-query.md) method lets you customize the collapse property by specifying **collapseProperties** on the `requests` parameter, which is a collection of [collapseProperty](collapseproperty.md) objects. This allows you to specify a set of one or more collapse properties.
+
+Note that collapsing results is currently supported for the following entity types: [driveItem](driveitem.md), [listItem](listitem.md), [drive](drive.md), [list](list.md), [site](site.md), [externalItem](externalconnectors-externalitem.md).
+
+To use the collapse clause effectively, the properties you apply it to must be queryable, and either sortable or refinable.
+When using multi-level collapse,  it's important to note that each subsequent property's limit size specified in a multi-level request should be equal to or smaller than the previous one. If a subsequent property's limit size exceeds the previous one, the server will respond with an `HTTP 400 Bad Request` error.
+
+See [collapse search results](/graph/search-concept-collapse) for more collapse results examples. 
 
 ## Sort search results
 
@@ -163,27 +180,45 @@ The search API has the following limitations:
 
 - The **query** method is defined to allow passing a collection of one or more **searchRequest** instances at once. However, the service currently supports only a single [searchRequest](./searchrequest.md) at a time.
 
-- The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. However, currently the only supported combination is for SharePoint and OneDrive entityTypes: **driveItem**, **drive**, **site**, **list**, **listItem**.
-Any combinations involving **message**, **event**, SharePoint and OneDrive types , or **externalItem** are currently not supported.  
+- The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. The following table lists the combinations that are supported.
+
+| Entity Type |message     | chatMessage| drive       | driveItem  | event      |externalItem | list       | listItem   | person     | site       |
+|-------------|------------|------------|-------------|------------|------------|-------------|------------|------------|------------|------------|
+|  message    |     True   |     -      |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |
+| chatMessage |     -      |     True   |      -      |       -    |      -     |       -     |      -     |       -    |      -     |     -      |
+|    drive    |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
+|  driveItem  |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
+|   event     |     -      |     -      |      -      |       -    |    True    |       -     |      -     |    -       |      -     |     -      |
+|externalItem |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
+|   list      |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
+|  listItem   |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
+|   person    |     -      |     -      |      -      |       -    |    -       |       -     |      -     |    -       |     True   |     -      |
+|    site     |     -      |     -      |      True   |     True   |    -       |   True      |   True     |    True    |      -     |  True      |
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 
-- The search API does not support custom sort for **message**, **event** or  **externalItem**.
+- The search API does not support custom sort for **message**, **chatMessage**, **event**, **person**, or **externalItem**.
 
 - The search API does not support aggregations for **message**, **event**, **site** or **drive**.
 
-- Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with the operation of the Microsoft Search API.
+- The search API does not support xrank for **message**,**chatMessage**, **event**, **person**, or **externalItem**.
+
+- Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with Microsoft Search API operations.
 
 ## See also
 
 - Learn more about a few key use cases:
+  - [Search Teams messages](/graph/search-concept-chat-messages)
   - [Search Outlook messages](/graph/search-concept-messages)
   - [Search calendar events](/graph/search-concept-events)
   - [Search content in SharePoint and OneDrive](/graph/search-concept-files)
+  - [Collapse search results](/graph/search-concept-collapse)
   - [Sort search results](/graph/search-concept-sort)
   - [Refine search results](/graph/search-concept-aggregation)
   - [Request spelling correction](/graph/search-concept-speller)
   - [Use search display layout](/graph/search-concept-display-layout)
+  - [Search content with application permission](/graph/search-concept-searchall)
+  - [XRANK search results](/graph/search-concept-xrank)
 
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

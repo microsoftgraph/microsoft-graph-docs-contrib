@@ -1,7 +1,7 @@
 ---
 title: "winGetAppInstallExperience resource type"
 description: "Represents the install experience settings associated with WinGet apps. This is used to ensure the desired install experiences on the target device are taken into account. Required at creation time."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -38,9 +38,3 @@ Here is a JSON representation of the resource.
   "runAsAccount": "String"
 }
 ```
-
-
-
-
-
-

@@ -1,5 +1,5 @@
 ---
-author: "FaithOmbongi"
+author: "dougeby"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
@@ -15,6 +15,6 @@ ms.topic: include
 
 The preceding limits apply to the following resources:  
 
-| <!-- fake header-->                                                                                                                                                                                                                                                                                                                                                                            |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <!-- fake header--> |
+|---|
 | <ul> <li> [windowsFeatureUpdateCatalogItem](/graph/api/resources/intune-softwareupdate-windowsfeatureupdatecatalogitem) <li> [windowsFeatureUpdateProfile](/graph/api/resources/intune-softwareupdate-windowsfeatureupdateprofile) <li> [windowsFeatureUpdateProfileAssignment](/graph/api/resources/intune-softwareupdate-windowsfeatureupdateprofileassignment) <li> [windowsQualityUpdateCatalogItem](/graph/api/resources/intune-softwareupdate-windowsqualityupdatecatalogitem) <li> [windowsQualityUpdateProfile](/graph/api/resources/intune-softwareupdate-windowsqualityupdateprofile) <li> [windowsQualityUpdateProfileAssignment](/graph/api/resources/intune-softwareupdate-windowsqualityupdateprofileassignment) <li> [windowsUpdateCatalogItem](/graph/api/resources/intune-softwareupdate-windowsupdatecatalogitem)  </ul> |

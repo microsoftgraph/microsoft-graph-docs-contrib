@@ -1,7 +1,7 @@
 ---
 title: "androidDeviceOwnerEnrollmentProfile resource type"
 description: "Enrollment Profile used to enroll Android Enterprise devices using Google's Cloud Management."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -25,8 +25,9 @@ Enrollment Profile used to enroll Android Enterprise devices using Google's Clou
 |[Create androidDeviceOwnerEnrollmentProfile](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-create.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)|Create a new [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object.|
 |[Delete androidDeviceOwnerEnrollmentProfile](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-delete.md)|None|Deletes a [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md).|
 |[Update androidDeviceOwnerEnrollmentProfile](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-update.md)|[androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)|Update the properties of a [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) object.|
-|[revokeToken action](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md)|None|Not yet documented|
-|[createToken action](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md)|None|Not yet documented|
+|[revokeToken action](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-revoketoken.md)|None||
+|[createToken action](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-createtoken.md)|None||
+|[getDefaultTeamsDeviceNonGmsEnrollmentProfile action](../api/intune-androidforwork-androiddeviceownerenrollmentprofile-getdefaultteamsdevicenongmsenrollmentprofile.md)|[enrollmentProfileForNonGmsTeamsDevice](../resources/intune-androidforwork-enrollmentprofilefornongmsteamsdevice.md)||
 
 ## Properties
 |Property|Type|Description|
@@ -52,6 +53,7 @@ Enrollment Profile used to enroll Android Enterprise devices using Google's Clou
 |wifiPassword|String|String that contains the wi-fi login password|
 |wifiSecurityType|[aospWifiSecurityType](../resources/intune-androidforwork-aospwifisecuritytype.md)|String that contains the wi-fi security type. Possible values are: `none`, `wpa`, `wep`.|
 |wifiHidden|Boolean|Boolean that indicates if hidden wifi networks are enabled|
+|isTeamsDeviceProfile|Boolean|Boolean indicating if this profile is an Android AOSP for Teams device profile.|
 
 ## Relationships
 None
@@ -93,12 +95,7 @@ Here is a JSON representation of the resource.
   "wifiSsid": "String",
   "wifiPassword": "String",
   "wifiSecurityType": "String",
-  "wifiHidden": true
+  "wifiHidden": true,
+  "isTeamsDeviceProfile": true
 }
 ```
-
-
-
-
-
-

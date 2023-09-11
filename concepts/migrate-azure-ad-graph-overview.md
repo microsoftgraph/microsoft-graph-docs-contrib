@@ -1,15 +1,23 @@
 ---
 title: "Migrate from Azure Active Directory (Azure AD) Graph to Microsoft Graph"
 description: "Learn how to migrate yor apps from Azure Active Directory (Azure AD) Graph to Microsoft Graph before Azure AD Graph is retired."
-author: "dkershaw10"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: dkershaw
 ms.localizationpriority: medium
 ms.prod: "applications"
+ms.date: 06/22/2023
 ---
 
 # Migrate your apps from Azure AD Graph to Microsoft Graph
 
+
 > [!IMPORTANT]
-> Azure Active Directory (Azure AD) Graph is deprecated but won't be retired on June 30, 2022 as [previously announced](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/update-your-applications-to-use-microsoft-authentication-library/ba-p/1257363). Listening closely to your feedback about the challenges of migrating such a critical dependency, we're delaying the retirement date through at least the end of this year, 2022. We’ll provide a retirement update mid-calendar year including releasing more tools to help you to migrate your apps. However, the Azure AD Graph licensing assignment APIs will be retired on March 31, 2023 as [recently announced](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/migrate-your-apps-to-access-the-license-managements-apis-from/ba-p/2464366).
+> Azure Active Directory (Azure AD) Graph is deprecated. Going forward, we will make no further investment in Azure AD Graph, and Azure AD Graph APIs have no SLA or maintenance commitment beyond security-related fixes. Investments in new features and functionalities will only be made in Microsoft Graph.
+>
+> June 30, 2023 will mark the end of the three-year deprecation period for Azure AD Graph. Before June 30, 2023, existing applications using Azure AD Graph will not be impacted. After June 30, 2023, Azure AD Graph will enter its retirement phase where we will retire it in incremental steps to allow you sufficient time to migrate your applications to Microsoft Graph APIs. The first step in this plan, and at a later date that we will announce, we will block the creation of any new applications using Azure AD Graph.
+>
+> For more details on the latest announcement, see [Important: Azure AD Graph Retirement and Powershell Module Deprecation](https://aka.ms/aadgraphupdate).
 
 ## Why use Microsoft Graph?
 
@@ -21,13 +29,13 @@ Microsoft Graph has all the capabilities that have been available in Azure AD Gr
 
 Switch to Microsoft Graph to take advantage of these enhanced capabilities and:
 
-- [Microsoft 365 group management](/graph/office365-groups-concept-overview).
+- [Microsoft 365 group management](/graph/microsoft365-groups-concept-overview).
 - [External user invitations](/graph/api/resources/invitation).
 - The ability to [restore users, Microsoft 365 groups, applications, and service principals](/graph/api/resources/directory) after they've been deleted.
 - [Webhook notifications on users and groups](/graph/webhooks).
 - Advanced license management features including [group-based licensing](/graph/api/group-assignlicense).
 - Identity governance features such as:
-  - [Privileged identity management](/graph/api/resources/privilegedidentitymanagement-root) (PIM) to elevate users to privileged roles only when needed and for a limited time period.
+  - [Privileged identity management](/graph/api/resources/privilegedidentitymanagementv3-overview) (PIM) to elevate users to privileged roles only when needed and for a limited time period.
   - [Access reviews](/graph/api/resources/accessreviewsv2-overview) for one-time or recurring access reviews for attestation of user's access rights.
   - [Terms-of-use](/graph/api/resources/agreement) to enable organizations to present information for legal or compliance requirements, like disclaimer notices.
 - Security features such as:

@@ -20,7 +20,6 @@ const setOrder = {
 };
 
 await client.api('/identity/b2xUserFlows/{id}/userAttributeAssignments/setOrder')
-	.version('beta')
 	.post(setOrder);
 
 ```

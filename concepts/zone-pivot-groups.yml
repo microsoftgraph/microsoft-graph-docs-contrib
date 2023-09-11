@@ -1,0 +1,10 @@
+# YamlMime:ZonePivotGroups
+groups:
+- id: grant-api-permissions
+  title: Grant either app-only or delegated API permissions
+  prompt: Choose the permission type to grant to your app
+  pivots:
+  - id: grant-application-permissions
+    title: Application permissions
+  - id: grant-delegated-permissions
+    title: Delegated permissions

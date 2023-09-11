@@ -1,7 +1,7 @@
 ---
 title: "Get deviceCompliancePolicy"
 description: "Read properties and relationships of the deviceCompliancePolicy object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -84,13 +84,3 @@ Content-Length: 433
   }
 }
 ```
-
-
-
-
-
-
-
-
-
-

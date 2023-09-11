@@ -9,6 +9,10 @@ on:
   push:
     branches:
       - "snippet-generation/*"
+      - "remove-unused-snippets/*"
+
+permissions:
+  contents: read  #  to fetch code (actions/checkout)
 
 jobs:
   create-pull-request:
@@ -24,7 +28,7 @@ jobs:
         
     - name: Get token
       id: get_token
-      uses: microsoftgraph/get-app-token@v1.0.0
+      uses: microsoftgraph/get-app-token@v1.0.2
       with:
         application-id: ${{ secrets.APPLICATION_ID }}
         application-private-key: ${{ secrets.APPLICATION_PRIVATE_KEY }}

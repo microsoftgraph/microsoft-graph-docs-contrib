@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var outlookCategory = new OutlookCategory
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new OutlookCategory
 {
 	DisplayName = "Project expenses",
-	Color = CategoryColor.Preset9
+	Color = CategoryColor.Preset9,
 };
+var result = await graphClient.Me.Outlook.MasterCategories.PostAsync(requestBody);
 
-await graphClient.Me.Outlook.MasterCategories
-	.Request()
-	.AddAsync(outlookCategory);
 
 ```

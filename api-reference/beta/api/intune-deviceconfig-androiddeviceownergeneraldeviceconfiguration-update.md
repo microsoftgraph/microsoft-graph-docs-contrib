@@ -1,7 +1,7 @@
 ---
 title: "Update androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Update the properties of a androidDeviceOwnerGeneralDeviceConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -142,7 +142,7 @@ The following table shows the properties that are required when you create the [
 |networkEscapeHatchAllowed|Boolean|Indicates whether or not the device will allow connecting to a temporary network connection at boot time.|
 |nfcBlockOutgoingBeam|Boolean|Indicates whether or not to block NFC outgoing beam.|
 |passwordBlockKeyguard|Boolean|Indicates whether or not the keyguard is disabled.|
-|passwordBlockKeyguardFeatures|[androidKeyguardFeature](../resources/intune-deviceconfig-androidkeyguardfeature.md) collection|List of device keyguard features to block. This collection can contain a maximum of 7 elements. Possible values are: `notConfigured`, `camera`, `notifications`, `unredactedNotifications`, `trustAgents`, `fingerprint`, `remoteInput`, `allFeatures`, `face`, `iris`, `biometrics`.|
+|passwordBlockKeyguardFeatures|[androidKeyguardFeature](../resources/intune-deviceconfig-androidkeyguardfeature.md) collection|List of device keyguard features to block. This collection can contain a maximum of 11 elements. Possible values are: `notConfigured`, `camera`, `notifications`, `unredactedNotifications`, `trustAgents`, `fingerprint`, `remoteInput`, `allFeatures`, `face`, `iris`, `biometrics`.|
 |passwordExpirationDays|Int32|Indicates the amount of time that a password can be set for before it expires and a new password will be required. Valid values 1 to 365|
 |passwordMinimumLength|Int32|Indicates the minimum length of the password required on the device. Valid values 4 to 16|
 |passwordMinimumLetterCharacters|Int32|Indicates the minimum number of letter characters required for device password. Valid values 1 to 16|
@@ -195,6 +195,9 @@ The following table shows the properties that are required when you create the [
 |workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Indicates the number of times a user can enter an incorrect work profile password before the device is wiped. Valid values 4 to 11|
 |workProfilePasswordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Indicates the minimum password quality required on the work profile password. Possible values are: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `customPassword`.|
 |workProfilePasswordRequireUnlock|[androidDeviceOwnerRequiredPasswordUnlock](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordunlock.md)|Indicates the timeout period after which a work profile must be unlocked using a form of strong authentication. Possible values are: `deviceDefault`, `daily`, `unkownFutureValue`.|
+|locateDeviceUserlessDisabled|Boolean|Indicates whether or not LocateDevice for userless (COSU) devices is disabled.|
+|locateDeviceLostModeEnabled|Boolean|Indicates whether or not LocateDevice for devices with lost mode (COBO, COPE) is enabled.|
+|androidDeviceOwnerDelegatedScopeAppSettings|[androidDeviceOwnerDelegatedScopeAppSetting](../resources/intune-deviceconfig-androiddeviceownerdelegatedscopeappsetting.md) collection|Specifies the list of managed apps with app details and its associated delegated scope(s). This collection can contain a maximum of 500 elements.|
 
 
 
@@ -208,7 +211,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 10090
+Content-length: 10640
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -469,7 +472,24 @@ Content-length: 10090
   "workProfilePasswordPreviousPasswordCountToBlock": 15,
   "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
   "workProfilePasswordRequiredType": "required",
-  "workProfilePasswordRequireUnlock": "daily"
+  "workProfilePasswordRequireUnlock": "daily",
+  "locateDeviceUserlessDisabled": true,
+  "locateDeviceLostModeEnabled": true,
+  "androidDeviceOwnerDelegatedScopeAppSettings": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerDelegatedScopeAppSetting",
+      "appDetail": {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      },
+      "appScopes": [
+        "certificateInstall"
+      ]
+    }
+  ]
 }
 ```
 
@@ -478,7 +498,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10262
+Content-Length: 10812
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -742,12 +762,23 @@ Content-Length: 10262
   "workProfilePasswordPreviousPasswordCountToBlock": 15,
   "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
   "workProfilePasswordRequiredType": "required",
-  "workProfilePasswordRequireUnlock": "daily"
+  "workProfilePasswordRequireUnlock": "daily",
+  "locateDeviceUserlessDisabled": true,
+  "locateDeviceLostModeEnabled": true,
+  "androidDeviceOwnerDelegatedScopeAppSettings": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerDelegatedScopeAppSetting",
+      "appDetail": {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      },
+      "appScopes": [
+        "certificateInstall"
+      ]
+    }
+  ]
 }
 ```
-
-
-
-
-
-

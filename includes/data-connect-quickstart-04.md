@@ -4,11 +4,11 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD002 MD041 -->
 
-In this step you'll create an Azure Storage account where Microsoft Graph Data Connect will store the data extracted from Microsoft 365 for further processing.
+In this step you will create an Azure Storage account where Microsoft Graph Data Connect will store the data extracted from Microsoft 365 for further processing.
 
 1. Open a browser and go to your [Azure portal](https://portal.azure.com/).
 
-1. Sign in using an account with **[Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator)** or **[Application Developer](/azure/active-directory/roles/permissions-reference#application-developer)** role to your Azure portal.
+1. Sign in using an account with an **[Application developer](/azure/active-directory/roles/permissions-reference#application-developer)** role to your Azure portal.
 
 1. On the sidebar navigation, select **Create a resource**.
 
@@ -30,7 +30,7 @@ In this step you'll create an Azure Storage account where Microsoft Graph Data C
     > [!NOTE]
     >  Ensure that within the **Networking** tab, only the **Enable public access from all networks** is enabled. Other types of network access are supported; however, we're working on removing additional restrictions required for them. For the time being, only select the first option. For questions about additional network access, contact the [Data Connect team](mailto:dataconnect@microsoft.com).
 
-    ![Screenshot of the Create a storage account page with Networking and Enable public access from all networks highlighted](../concepts/images/data-connect-azure-storageaccount-create.png](../concepts/images/data-connect-azure-storage-network-new.png)
+    ![Screenshot of the Create a storage account page with Networking and Enable public access from all networks highlighted](../concepts/images/data-connect-azure-storage-network-new.png)
 
 1. Review that the settings match those shown in the previous steps and select **Create** to finalize.
 
@@ -46,7 +46,7 @@ In this step you'll create an Azure Storage account where Microsoft Graph Data C
         3. Click **+ Select members**, and in the right pane that displays, search for the application (Microsoft Graph data connect Data Transfer) that you previously created, and click **Select**.
     5. Select **Review + assign**.
 
-      <!--  ![A screenshot showing the proper role assignment to the application for Microsoft Graph Data Connect in the Azure Storage account in the Azure portal.](../concepts/images/data-connect-azure-storage-role.png) -->
+    ![A screenshot showing the proper role assignment to the application for Microsoft Graph Data Connect in the Azure Storage account in the Azure portal.](../concepts/images/data-connect-azure-storage-role.png)
 
 1. Create a new container in the **mgdcdemoap** Azure Storage account.
 
@@ -57,4 +57,4 @@ In this step you'll create an Azure Storage account where Microsoft Graph Data C
         - **Name**: m365mails
         - **Public access level**: Private (no anonymous access)
 
-       <!-- ![A screenshot showing the creation of a new container called m365mails in the Storage account blob containers in the Azure portal.](../concepts/images/data-connect-azure-storage-container.png) -->
+        ![A screenshot showing the creation of a new container called m365mails in the Storage account blob containers in the Azure portal.](../concepts/images/data-connect-azure-storage-container.png) 

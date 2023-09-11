@@ -4,31 +4,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var channel = new Channel
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Channel
 {
+	OdataType = "#Microsoft.Graph.channel",
 	MembershipType = ChannelMembershipType.Private,
 	DisplayName = "My First Private Channel",
 	Description = "This is my first private channels",
-	Members = new ChannelMembersCollectionPage()
+	Members = new List<ConversationMember>
 	{
 		new AadUserConversationMember
 		{
-			Roles = new List<String>()
+			OdataType = "#microsoft.graph.aadUserConversationMember",
+			Roles = new List<string>
 			{
-				"owner"
+				"owner",
 			},
-			AdditionalData = new Dictionary<string, object>()
+			AdditionalData = new Dictionary<string, object>
 			{
-				{"user@odata.bind", "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"}
-			}
-		}
-	}
+				{
+					"user@odata.bind" , "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
+				},
+			},
+		},
+	},
 };
+var result = await graphClient.Teams["{team-id}"].Channels.PostAsync(requestBody);
 
-await graphClient.Teams["{team-id}"].Channels
-	.Request()
-	.AddAsync(channel);
 
 ```

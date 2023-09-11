@@ -1,7 +1,7 @@
 ---
 title: "deviceConfigurationGroupAssignment resource type"
 description: "Device configuration group assignment."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -54,9 +54,3 @@ Here is a JSON representation of the resource.
   "excludeGroup": true
 }
 ```
-
-
-
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "macOSProcessIdentifierType enum type"
 description: "Process identifier types for MacOS Privacy Preferences"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -22,9 +22,3 @@ Process identifier types for MacOS Privacy Preferences
 |:---|:---|:---|
 |bundleID|1|Indicates an app with a bundle ID.|
 |path|2|Indicates a file path for a process.|
-
-
-
-
-
-

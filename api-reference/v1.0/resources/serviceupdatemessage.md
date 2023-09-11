@@ -34,7 +34,7 @@ Inherits from [serviceAnnouncementBase](../resources/serviceannouncementbase.md)
 |:---|:---|:---|
 |actionRequiredByDateTime|DateTimeOffset|The expected deadline of the action for the message.|
 |attachmentsArchive|Stream|The zip file that contains all attachments for a message.|
-|body|[itemBody](../resources/itembody.md)|The content type and content of the service message body.|
+|body|[itemBody](../resources/itembody.md)|The content type and content of the service message body. The supported value for the contentType property is `html`.|
 |category|serviceUpdateCategory|The service message category. Possible values are: `preventOrFixIssue`, `planForChange`, `stayInformed`, `unknownFutureValue`.|
 |details|Collection([keyValuePair](../resources/keyvaluepair.md))|Additional details about service message. This property doesn't support filters. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|
 |endDateTime|DateTimeOffset|The end time of the service message. Inherited from [serviceAnnouncementBase](../resources/serviceannouncementbase.md).|

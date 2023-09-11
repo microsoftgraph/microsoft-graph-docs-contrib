@@ -31,6 +31,8 @@ Namespace: microsoft.graph
 | yammerPostedMessageCount          | Int64   | The number of messages posted to Yammer groups. |
 | yammerReadMessageCount            | Int64   | The number of messages read in Yammer groups. |
 | yammerLikedMessageCount           | Int64   | The number of messages liked in Yammer groups. |
+| teamsChannelMessagesCount         | Int64   | The number of channel messages in Teams team. |
+| teamsMeetingsOrganizedCount       | Int64   | The number of meetings organized in Teams team. |
 | exchangeMailboxTotalItemCount     | Int64   | The number of items in the group mailbox. |
 | exchangeMailboxStorageUsedInBytes | Int64   | The storage used of the group mailbox.   |
 | sharePointTotalFileCount          | Int64   | The total number of files in SharePoint Group site. |
@@ -62,6 +64,8 @@ The following is a JSON representation of the resource.
   "yammerPostedMessageCount": 1024, 
   "yammerReadMessageCount": 1024, 
   "yammerLikedMessageCount": 1024, 
+  "teamsChannelMessagesCount": 1024,
+  "teamsMeetingsOrganizedCount": 1024,
   "exchangeMailboxTotalItemCount": 1024, 
   "exchangeMailboxStorageUsedInBytes": 1024, 
   "sharePointTotalFileCount": 1024, 

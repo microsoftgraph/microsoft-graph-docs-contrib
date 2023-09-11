@@ -1,7 +1,7 @@
 ---
 title: "externalMeetingRegistration resource type"
-description: "Contains information about external meeting registration."
-author: "mkhribech"
+description: "Represents external registration details of an online meeting."
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents external registration details of an online meeting.
+Represents external registration details of an [onlineMeeting](../resources/onlinemeeting.md).
 
 Inherits from [meetingRegistrationBase](meetingregistrationbase.md).
 
@@ -58,8 +58,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.externalMeetingRegistration",
-  "allowedRegistrant": "String",
-
-  "registrants": [{ "@odata.type": "microsoft.graph.externalMeetingRegistrant" }]
+  "allowedRegistrant": "String"
 }
 ```

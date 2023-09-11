@@ -1,7 +1,7 @@
 ---
 title: "Update managedAppPolicyDeploymentSummary"
 description: "Update the properties of a managedAppPolicyDeploymentSummary object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [managedAppPolicyDeploymentSummary](../resources/intune-mam-managedapppolicydeploymentsummary.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -51,10 +51,10 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Not yet documented|
-|configurationDeployedUserCount|Int32|Not yet documented|
-|lastRefreshTime|DateTimeOffset|Not yet documented|
-|configurationDeploymentSummaryPerApp|[managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md) collection|Not yet documented|
+|displayName|String||
+|configurationDeployedUserCount|Int32||
+|lastRefreshTime|DateTimeOffset||
+|configurationDeploymentSummaryPerApp|[managedAppPolicyDeploymentSummaryPerApp](../resources/intune-mam-managedapppolicydeploymentsummaryperapp.md) collection||
 |id|String|Key of the entity.|
 |version|String|Version of the entity.|
 
@@ -117,9 +117,3 @@ Content-Length: 638
   "version": "Version value"
 }
 ```
-
-
-
-
-
-

@@ -19,8 +19,8 @@ Inherits from [apiAuthenticationConfigurationBase](../resources/apiauthenticatio
 
 |Property|Type|Description|
 |:---|:---|:---|
-|username|String| The username. |
 |password|String| The password. It is not returned in the responses. |
+|username|String| The username. |
 
 ## Relationships
 

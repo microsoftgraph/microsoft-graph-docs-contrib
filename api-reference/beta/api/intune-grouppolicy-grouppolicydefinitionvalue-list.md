@@ -1,7 +1,7 @@
 ---
 title: "List groupPolicyDefinitionValues"
 description: "List properties and relationships of the groupPolicyDefinitionValue objects."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [groupPolicyDefinitionValue](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -75,9 +75,3 @@ Content-Length: 355
   ]
 }
 ```
-
-
-
-
-
-

@@ -41,12 +41,13 @@ To associate a domain with a tenant:
 |[Delete domain](../api/domain-delete.md) | None |Deletes a domain.|
 |[ForceDelete domain](../api/domain-forcedelete.md)|None|Deletes a domain using an asynchronous operation.|
 |[Verify domain](../api/domain-verify.md)|[domain](domain.md)|Validates the ownership of the domain.|
+|[Promote domain](../api/domain-promote.md)|Boolean|Promote a verified subdomain to the root domain.|
 
 ## Properties
 
 | Property   | Type | Description |
 |:---------------|:--------|:----------|
-|authenticationType|String| Indicates the configured authentication type for the domain. The value is either `Managed` or `Federated`. `Managed` indicates a cloud managed domain where Azure AD performs user authentication. `Federated` indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services. This property is read-only and is not nullable. |
+|authenticationType|String| Indicates the configured authentication type for the domain. The value is either `Managed` or `Federated`. `Managed` indicates a cloud managed domain where Azure AD performs user authentication. `Federated` indicates authentication is federated with an identity provider such as the tenant's on-premises Active Directory via Active Directory Federation Services. Not nullable. |
 |availabilityStatus|String| This property is always `null` except when the [verify](../api/domain-verify.md) action is used. When the [verify](../api/domain-verify.md) action is used, a **domain** entity is returned in the response. The **availabilityStatus** property of the **domain** entity in the response is either `AvailableImmediately` or `EmailVerifiedDomainTakeoverScheduled`.|
 |id|String| The fully qualified name of the domain. Key, immutable, not nullable, unique. |
 |isAdminManaged|Boolean| The value of the property is `false` if the DNS record management of the domain has been delegated to Microsoft 365. Otherwise, the value is `true`. Not nullable |
@@ -56,8 +57,8 @@ To associate a domain with a tenant:
 |isVerified|Boolean| `true` if the domain has completed domain ownership verification. Not nullable |
 |passwordNotificationWindowInDays|Int32|Specifies the number of days before a user receives notification that their password will expire. If the property is not set, a default value of 14 days will be used.|
 |passwordValidityPeriodInDays|Int32| Specifies the length of time that a password is valid before it must be changed. If the property is not set, a default value of 90 days will be used. |
-|supportedServices|String collection| The capabilities assigned to the domain. Can include `0`, `1` or more of following values: `Email`, `Sharepoint`, `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`, `SharePointDefaultDomain`, `FullRedelegation`, `SharePointPublic`, `OrgIdAuthentication`, `Yammer`, `Intune`. The values which you can add/remove using Graph API include: `Email`, `OfficeCommunicationsOnline`, `Yammer`. Not nullable.|
 |state|[domainState](domainstate.md)| Status of asynchronous operations scheduled for the domain. |
+|supportedServices|String collection| The capabilities assigned to the domain. Can include `0`, `1` or more of following values: `Email`, `Sharepoint`, `EmailInternalRelayOnly`, `OfficeCommunicationsOnline`, `SharePointDefaultDomain`, `FullRedelegation`, `SharePointPublic`, `OrgIdAuthentication`, `Yammer`, `Intune`. The values which you can add/remove using Graph API include: `Email`, `OfficeCommunicationsOnline`, `Yammer`. Not nullable.|
 
 ## Relationships
 

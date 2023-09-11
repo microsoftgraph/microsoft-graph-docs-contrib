@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 
 $params = @{
-	MessageIds = @(
+	messageIds = @(
 		"MC172851"
 		"MC167983"
 	)
 }
 
-Invoke-MgUnarchiveServiceAnnouncementMessage -BodyParameter $params
+Invoke-MgBetaUnarchiveServiceAnnouncementMessage -BodyParameter $params
 
 ```

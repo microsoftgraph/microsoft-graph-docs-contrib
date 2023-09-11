@@ -7,9 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 $params = @{
-	"@odata.id" = "https://graph.microsoft.com/v1.0/groups/{id}"
+	"@odata.type" = "#microsoft.graph.group"
+	description = "Self help community for golf"
+	displayName = "Golf Assist"
+	groupTypes = @(
+		"Unified"
+	)
+	mailEnabled = $true
+	mailNickname = "golfassist"
+	securityEnabled = $false
 }
 
-New-MgDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
+New-MgDirectoryAdministrativeUnitMember -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
 
 ```

@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /policies/authorizationPolicy/authorizationPolicy
+GET /policies/authorizationPolicy
 ```
 
 ## Request headers
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and the single [auth
 The following is an example of the request.
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizationPolicy
+GET https://graph.microsoft.com/beta/policies/authorizationPolicy
 ```
 ---
 
@@ -81,6 +81,7 @@ Content-type: application/json
     "description": "Used to manage authorization related settings across the company.",
     "enabledPreviewFeatures": [],
     "guestUserRoleId": "10dae51f-b6af-4016-8d66-8c2a99b929b3",
+    "allowUserConsentForRiskyApps": false,
     "blockMsolPowerShell": ""
     "defaultUserRolePermissions": {
         "allowedToCreateApps": true,

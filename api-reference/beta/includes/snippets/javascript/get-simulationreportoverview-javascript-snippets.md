@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let simulationReportOverview = await client.api('/security/attackSimulation/simulations/{id}/report/overview')
+let simulationReportOverview = await client.api('/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/report/overview')
 	.version('beta')
 	.get();
 

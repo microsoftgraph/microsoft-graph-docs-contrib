@@ -4,11 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var organizationalBranding = await graphClient.Organization["{organization-id}"].Branding
-	.Request()
-	.Header("Accept-Language","fr-FR")
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Organization["{organization-id}"].Branding.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.Headers.Add("Accept-Language", "fr-FR");
+});
+
 
 ```

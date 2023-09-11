@@ -59,7 +59,7 @@ where files are shared, and where tabs are added.
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
 |description|String|Optional textual description for the channel.|
-|displayName|String|Channel name as it will appear to the user in Microsoft Teams.|
+|displayName|String|Channel name as it will appear to the user in Microsoft Teams. The maximum length is 50 characters.|
 |id|String|The channel's unique identifier. Read-only.|
 |isFavoriteByDefault|Boolean|Indicates whether the channel should automatically be marked 'favorite' for all members of the team. Can only be set programmatically with [Create team](../api/team-post.md). Default: `false`.|
 |email|String| The email address for sending messages to the channel. Read-only.|
@@ -67,6 +67,7 @@ where files are shared, and where tabs are added.
 |membershipType|[channelMembershipType](../resources/channel.md#channelmembershiptype-values)|The type of the channel. Can be set during creation and can't be changed. The possible values are: `standard`, `private`, `unknownFutureValue`, `shared`. The default value is `standard`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `shared`.|
 |createdDateTime|dateTimeOffset|Read only. Timestamp at which the channel was created.|
 |moderationSettings|[channelModerationSettings](../resources/channelmoderationsettings.md)|Settings to configure channel moderation to control who can start new posts and reply to posts in that channel.|
+|summary|[channelSummary](../resources/channelsummary.md)|Contains summary information about the channel, including number of guests, members, owners, and an indicator for members from other tenants. The **summary** property will only be returned if it is specified in the `$select` clause of the [Get channel](../api/channel-get.md) method.|
 |tenantId |string | The ID of the Azure Active Directory tenant. |
 
 ### channelMembershipType values
@@ -140,3 +141,8 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+## See also
+
+- [Channel lifecycle C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-channel-lifecycle/csharp)
+- [Channel lifecycle Node.js sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/blob/main/samples/graph-channel-lifecycle/nodejs)

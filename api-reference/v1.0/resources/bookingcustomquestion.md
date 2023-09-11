@@ -51,9 +51,9 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.bookingCustomQuestion",
-  "id": "String (identifier)",
-  "displayName": "String",
   "answerInputType": {"@odata.type": "microsoft.graph.answerInputType"},
-  "answerOptions": ["String"]
+  "answerOptions": ["String"],
+  "displayName": "String",
+  "id": "String (identifier)"
 }
 ```

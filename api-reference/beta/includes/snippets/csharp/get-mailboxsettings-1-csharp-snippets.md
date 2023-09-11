@@ -4,13 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var me = await graphClient.Me
-	.Request()
-	.Select("MailboxSettings")
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
 
-var mailboxSettings = me.MailboxSettings;
+var result = await graphClient.Me.MailboxSettings.GetAsync();
+
 
 ```

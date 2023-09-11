@@ -1,10 +1,10 @@
 ---
 title: "fido2AuthenticationMethod resource type"
 description: "A representation of a FIDO2 security key registered to a user. FIDO2 is a sign-in authentication method."
-author: "mmcla"
+author: "calvinlui"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # fido2AuthenticationMethod resource type
@@ -15,6 +15,7 @@ Namespace: microsoft.graph
 
 A representation of a FIDO2 security key registered to a user. FIDO2 is a sign-in authentication method.
 
+This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
 
 ## Methods
 |Method|Return type|Description|

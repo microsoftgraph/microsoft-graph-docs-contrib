@@ -1,7 +1,7 @@
 ---
 title: "deviceType enum type"
 description: "Device type."
-author: "dougeby"
+author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: enumPageType
@@ -45,7 +45,3 @@ Device type.
 |palm|101|Palm.|
 |unknown|255|Represents that the device type is unknown.|
 |cloudPC|257|Cloud PC device.|
-
-
-
-

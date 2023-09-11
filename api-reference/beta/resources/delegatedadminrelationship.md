@@ -1,7 +1,7 @@
 ---
 title: "delegatedAdminRelationship resource type"
 description: "Represents the details of the delegated administrative privileges that a Microsoft partner has in a customer tenant."
-author: "adtangir"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: resourcePageType
@@ -28,7 +28,7 @@ Represents a delegated admin relationship between a partner and customer.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details containing the identifiers of the administrative roles that the partner admin is requesting in the customer tenant.|
+|accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details that contain the identifiers of the administrative roles that the partner admin is requesting in the customer tenant.|
 |activatedDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the relationship became active. Read-only.|
 |createdDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the relationship was created. Read-only.|
 |customer|[delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The display name and unique identifier of the customer of the relationship. This is configured either by the partner at the time the relationship is created or by the system after the customer approves the relationship. Cannot be changed by the customer.|
@@ -37,7 +37,7 @@ Represents a delegated admin relationship between a partner and customer.
 |endDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the **status** of relationship changes to either `terminated` or `expired`. Calculated as `endDateTime = activatedDateTime + duration`. Read-only.|
 |id|String|The unique identifier of the relationship. Read-only. Inherited from [entity](../resources/entity.md).|
 |lastModifiedDateTime|DateTimeOffset|The date and time in ISO 8601 format and in UTC time when the relationship was last modified. Read-only.|
-|status|delegatedAdminRelationshipStatus|The status of the relationship. Read Only. The possible values are: `activating`, `active`, `approvalPending`, `approved`, `created`, `expired`, `expiring`, `terminated`, `terminating`, `terminationRequested`, `unknownFutureValue`. Supports `$orderBy`.|
+|status|delegatedAdminRelationshipStatus|The status of the relationship. Read Only. The possible values are: `activating`, `active`, `approvalPending`, `approved`, `created`, `expired`, `expiring`, `terminated`, `terminating`, `terminationRequested`, `unknownFutureValue`. Supports `$orderby`.|
 
 ### delegatedAdminRelationshipStatus values 
 | Member | Description |
@@ -73,20 +73,15 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.delegatedAdminRelationship",
-  "id": "String (identifier)",
+  "accessDetails": {"@odata.type": "microsoft.graph.delegatedAdminAccessDetails"},
+  "activatedDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
+  "customer": {"@odata.type": "microsoft.graph.delegatedAdminRelationshipCustomerParticipant"},
   "displayName": "String",
   "duration": "String",
-  "customer": {
-    "@odata.type": "microsoft.graph.delegatedAdminRelationshipCustomerParticipant"
-  },
-  "accessDetails": {
-    "@odata.type": "microsoft.graph.delegatedAdminAccessDetails"
-  },
-  "status": "String",
-  "createdDateTime": "String (timestamp)",
+  "endDateTime": "String (timestamp)",
+  "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
-  "activatedDateTime": "String (timestamp)",
-  "endDateTime": "String (timestamp)"
+  "status": "String"
 }
 ```
-

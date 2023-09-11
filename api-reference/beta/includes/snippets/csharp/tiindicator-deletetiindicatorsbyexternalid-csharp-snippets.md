@@ -4,17 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var value = new List<String>()
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Security.TiIndicators.DeleteTiIndicatorsByExternalId.DeleteTiIndicatorsByExternalIdPostRequestBody
 {
-	"externalId-value1",
-	"externalId-value2"
+	Value = new List<string>
+	{
+		"externalId-value1",
+		"externalId-value2",
+	},
 };
+var result = await graphClient.Security.TiIndicators.DeleteTiIndicatorsByExternalId.PostAsync(requestBody);
 
-await graphClient.Security.TiIndicators
-	.DeleteTiIndicatorsByExternalId(value)
-	.Request()
-	.PostAsync();
 
 ```

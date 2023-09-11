@@ -6,25 +6,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new GroupRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new GroupRequestBuilderGetQueryParameters();
-$queryParameters->count = true;
-$queryParameters->orderBy = ["displayName"];
-$queryParameters->filter = "startswith(displayName,%20'A')";
-
+$requestConfiguration = new GraphGroupRequestBuilderGetRequestConfiguration();
 $headers = [
-'ConsistencyLevel' => 'eventual',
-];
-
-$requestConfiguration->queryParameters = $queryParameters;
+		'ConsistencyLevel' => 'eventual',
+	];
 $requestConfiguration->headers = $headers;
 
+$queryParameters = GraphGroupRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->count = true;
+$queryParameters->orderby = ["displayName"];
+$queryParameters->filter = "startswith(displayName, 'A')";
+$requestConfiguration->queryParameters = $queryParameters;
 
-$requestResult = $graphServiceClient->devicesById('device-id')->memberOf()->group()->get($requestConfiguration);
 
+$result = $graphServiceClient->devices()->byDeviceId('device-id')->memberOf()->graphGroup()->get($requestConfiguration)->wait();
 
 ```

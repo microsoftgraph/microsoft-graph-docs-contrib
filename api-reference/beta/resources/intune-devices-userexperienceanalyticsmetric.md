@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsMetric resource type"
 description: "The user experience analytics metric contains the score and units of a metric of a user experience anlaytics category."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -31,7 +31,7 @@ The user experience analytics metric contains the score and units of a metric of
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics metric.|
 |value|Double|The value of the user experience analytics metric.|
-|unit|String|The unit of the user experience analytics metric.|
+|unit|String|The unit of the user experience analytics metric. Examples: none, percentage, count, seconds, score.|
 
 ## Relationships
 None
@@ -52,9 +52,3 @@ Here is a JSON representation of the resource.
   "unit": "String"
 }
 ```
-
-
-
-
-
-

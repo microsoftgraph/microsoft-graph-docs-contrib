@@ -1,6 +1,6 @@
 ---
 title: "membershipOutlierInsight resource type"
-description: "In the Azure AD access reviews, the membershipOutlierInsight resource represents insights provided to reviewers based on whether a user is a peer outlier in relation to other group members."
+description: "In the Azure AD access reviews, the membershipOutlierInsight resource represents insights provided to reviewers based on whether a user has low affiliation with other users within the group."
 author: "shubhamguptacal"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
-Represents an insight provided to reviewers based on whether a user is a peer outlier in relation to other group members.
+Represents an insight provided to reviewers based on whether a user has low affiliation with other users within the group.
 
 Inherits from [governanceInsight](governanceinsight.md).
 
@@ -33,6 +33,8 @@ Inherits from [governanceInsight](governanceinsight.md).
 |:---|:---|:---|
 |container|[directoryObject](../resources/directoryobject.md)| Navigation link to the container directory object. For example, to a group.|
 |member|[directoryObject](../resources/directoryobject.md)| Navigation link to a member object. For example, to a user.|
+|lastModifiedBy|[user](../resources/user.md)| Navigation link to a member object who modified the record. For example, to a user.|
+
 
 ## JSON representation
 The following is a JSON representation of the resource.

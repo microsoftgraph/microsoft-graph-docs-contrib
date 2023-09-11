@@ -4,27 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var tenantCustomizedInformation = new Microsoft.Graph.ManagedTenants.TenantCustomizedInformation
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Models.ManagedTenants.TenantCustomizedInformation
 {
+	OdataType = "#microsoft.graph.managedTenants.tenantCustomizedInformation",
 	TenantId = "String",
-	Contacts = new List<Microsoft.Graph.ManagedTenants.TenantContactInformation>()
+	Contacts = new List<Microsoft.Graph.Beta.Models.ManagedTenants.TenantContactInformation>
 	{
-		new TenantContactInformation
+		new Microsoft.Graph.Beta.Models.ManagedTenants.TenantContactInformation
 		{
+			OdataType = "microsoft.graph.managedTenants.tenantContactInformation",
 			Name = "String",
 			Title = "String",
 			Email = "String",
 			Phone = "String",
-			Notes = "String"
-		}
+			Notes = "String",
+		},
 	},
-	Website = "String"
+	Website = "String",
 };
+var result = await graphClient.TenantRelationships.ManagedTenants.TenantsCustomizedInformation["{tenantCustomizedInformation-id}"].PatchAsync(requestBody);
 
-await graphClient.TenantRelationships.ManagedTenants.TenantsCustomizedInformation["{managedTenants.tenantCustomizedInformation-id}"]
-	.Request()
-	.UpdateAsync(tenantCustomizedInformation);
 
 ```

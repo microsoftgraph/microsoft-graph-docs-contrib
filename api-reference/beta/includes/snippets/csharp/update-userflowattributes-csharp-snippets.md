@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var identityUserFlowAttribute = new IdentityUserFlowAttribute
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new IdentityUserFlowAttribute
 {
-	Description = "Your new hobby"
+	Description = "Your new hobby",
 };
+var result = await graphClient.Identity.UserFlowAttributes["{identityUserFlowAttribute-id}"].PatchAsync(requestBody);
 
-await graphClient.Identity.UserFlowAttributes["{identityUserFlowAttribute-id}"]
-	.Request()
-	.UpdateAsync(identityUserFlowAttribute);
 
 ```

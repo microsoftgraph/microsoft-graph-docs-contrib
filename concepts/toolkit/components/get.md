@@ -1,11 +1,11 @@
 ---
-title: "Get component in the Microsoft Graph Toolkit"
+title: "Get component in Microsoft Graph Toolkit"
 description: "A Get component allows you to make any GET query from Microsoft Graph directly in your HTML."
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
 
-# Get component in the Microsoft Graph Toolkit
+# Get component in Microsoft Graph Toolkit
 
 You can use `mgt-get` to make any GET query from Microsoft Graph directly in your HTML. The component does not provide a default UI and requires that you write a template.
 
@@ -65,7 +65,7 @@ The `mgt-get` component supports several [templates](../customize-components/tem
 
 ## Microsoft Graph permissions
 
-Permissions required by this component depend on the data that you want to retrieve with it from Microsoft Graph. For more information about permissions, see the Microsoft Graph [permissions reference](../../permissions-reference.md).
+Permissions required by this component depend on the data that you want to retrieve with it from Microsoft Graph. For more information about permissions, see Microsoft Graph [permissions reference](../../permissions-reference.md).
 
 ## Authentication
 
@@ -80,3 +80,7 @@ To enable and configure the cache, use the `cacheEnabled` and `cacheInvalidation
 |`response`|Complete response retrieved from Microsoft Graph for the query specified in the `resource` property of `mgt-get`|
 
 See [Caching](../customize-components/cache.md) for more details.
+
+## Localization
+
+The control does not expose any localization variables.

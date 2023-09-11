@@ -13,9 +13,9 @@ const client = Client.init(options);
 const forward = {
   ToRecipients: [
       {
-        emailAddress: {
-          address: 'danas@contoso.onmicrosoft.com',
-          name: 'Dana Swope'
+        EmailAddress: {
+          Address: 'danas@contoso.onmicrosoft.com',
+          Name: 'Dana Swope'
         }
       }
      ],

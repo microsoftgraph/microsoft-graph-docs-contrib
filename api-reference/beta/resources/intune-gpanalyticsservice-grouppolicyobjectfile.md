@@ -1,7 +1,7 @@
 ---
 title: "groupPolicyObjectFile resource type"
 description: "The Group Policy Object file uploaded by admin."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -35,6 +35,7 @@ The Group Policy Object file uploaded by admin.
 |createdDateTime|DateTimeOffset|The date and time at which the GroupPolicy was first uploaded.|
 |lastModifiedDateTime|DateTimeOffset|The date and time at which the GroupPolicyObjectFile was last modified.|
 |content|String|The Group Policy Object file content.|
+|roleScopeTagIds|String collection|The list of scope tags for the configuration.|
 
 ## Relationships
 None
@@ -55,12 +56,9 @@ Here is a JSON representation of the resource.
   "ouDistinguishedName": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
-  "content": "String"
+  "content": "String",
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
-
-
-
-
-
-

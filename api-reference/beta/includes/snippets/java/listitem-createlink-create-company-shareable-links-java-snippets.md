@@ -19,6 +19,7 @@ graphClient.sites("{siteId}").lists("{listId}").items("{itemId}")
 		.withPassword(null)
 		.withRecipients(null)
 		.withRetainInheritedPermissions(null)
+		.withSendNotification(null)
 		.build())
 	.buildRequest()
 	.post();

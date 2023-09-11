@@ -1,7 +1,7 @@
 ---
 title: "Create deviceManagementCachedReportConfiguration"
 description: "Create a new deviceManagementCachedReportConfiguration object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [deviceManagementCachedReportConfiguration](../resources/intune-reporting-devicemanagementcachedreportconfiguration.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -49,14 +49,14 @@ The following table shows the properties that are required when you create the d
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for this entity|
-|reportName|String|Name of the report|
+|reportName|String|Name of the report. This property is read-only.|
 |filter|String|Filters applied on report creation.|
 |select|String collection|Columns selected from the report|
 |orderBy|String collection|Ordering of columns in the report|
 |metadata|String|Caller-managed metadata associated with the report|
-|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the cached report. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
-|lastRefreshDateTime|DateTimeOffset|Time that the cached report was last refreshed|
-|expirationDateTime|DateTimeOffset|Time that the cached report expires|
+|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the cached report. This property is read-only. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
+|lastRefreshDateTime|DateTimeOffset|Time that the cached report was last refreshed. This property is read-only.|
+|expirationDateTime|DateTimeOffset|Time that the cached report expires. This property is read-only.|
 
 
 
@@ -113,9 +113,3 @@ Content-Length: 467
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00"
 }
 ```
-
-
-
-
-
-

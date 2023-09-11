@@ -1,7 +1,7 @@
 ---
 title: "deployment resource type"
 description: "Represents the deployment of content to a set of devices."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType
@@ -18,8 +18,8 @@ Represents the deployment of content to a set of devices.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List deployments](../api/windowsupdates-updates-list-deployments.md)|[microsoft.graph.windowsUpdates.deployment](../resources/windowsupdates-deployment.md) collection|Get a list of the [deployment](../resources/windowsupdates-deployment.md) objects and their properties.|
-|[Create deployment](../api/windowsupdates-updates-post-deployments.md)|[microsoft.graph.windowsUpdates.deployment](../resources/windowsupdates-deployment.md)|Create a new [deployment](../resources/windowsupdates-deployment.md) object.|
+|[List deployments](../api/adminwindowsupdates-list-deployments.md)|[microsoft.graph.windowsUpdates.deployment](../resources/windowsupdates-deployment.md) collection|Get a list of the [deployment](../resources/windowsupdates-deployment.md) objects and their properties.|
+|[Create deployment](../api/adminwindowsupdates-post-deployments.md)|[microsoft.graph.windowsUpdates.deployment](../resources/windowsupdates-deployment.md)|Create a new [deployment](../resources/windowsupdates-deployment.md) object.|
 |[Get deployment](../api/windowsupdates-deployment-get.md)|[microsoft.graph.windowsUpdates.deployment](../resources/windowsupdates-deployment.md)|Read the properties and relationships of a [deployment](../resources/windowsupdates-deployment.md) object.|
 |[Update deployment](../api/windowsupdates-deployment-update.md)|[microsoft.graph.windowsUpdates.deployment](../resources/windowsupdates-deployment.md)|Update the properties of a [deployment](../resources/windowsupdates-deployment.md) object.|
 |[Delete deployment](../api/windowsupdates-deployment-delete.md)|None|Deletes a [deployment](../resources/windowsupdates-deployment.md) object.|

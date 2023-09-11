@@ -1,7 +1,7 @@
 ---
 title: "exportDeviceAndAppManagementData function"
-description: "Not yet documented"
-author: "dougeby"
+description: ""
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Permissions
 
@@ -52,8 +52,8 @@ The following table shows the parameters that can be used with this function.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|skip|Int32|Not yet documented|
-|top|Int32|Not yet documented|
+|skip|Int32||
+|top|Int32||
 
 ## Response
 
@@ -85,14 +85,3 @@ Content-Length: 143
   }
 }
 ```
-
-
-
-
-
-
-
-
-
-
-

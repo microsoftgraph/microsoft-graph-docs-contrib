@@ -1,7 +1,7 @@
 ---
 title: "bitlockerRecoveryKey resource type"
 description: "BitLocker recovery key resource"
-author: "hafowler"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
@@ -45,11 +45,11 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.bitlockerRecoveryKey",
-  "id": "String (identifier)",
   "createdDateTime": "String (timestamp)",
-  "volumeType": "String",
   "deviceId": "String",
-  "key": "String"
+  "id": "String (identifier)",
+  "key": "String",
+  "volumeType": "String"
 }
 ```
 

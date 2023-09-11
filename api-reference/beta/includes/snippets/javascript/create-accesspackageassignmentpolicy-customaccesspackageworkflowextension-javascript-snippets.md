@@ -32,7 +32,7 @@ const accessPackageAssignmentPolicy = {
     {
       stage: 'assignmentRequestCreated',
       customExtension: {
-        id: '219f57b6-7983-45a1-be01-2c228b7a43f8' //customAccessPackageWorkflowExtension.id
+        id: '219f57b6-7983-45a1-be01-2c228b7a43f8'
       }
     },
     {

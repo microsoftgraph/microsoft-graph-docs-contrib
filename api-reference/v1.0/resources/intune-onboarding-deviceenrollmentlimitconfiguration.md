@@ -1,7 +1,7 @@
 ---
 title: "deviceEnrollmentLimitConfiguration resource type"
 description: "Device Enrollment Configuration that restricts the number of devices a user can enroll"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -65,10 +65,3 @@ Here is a JSON representation of the resource.
   "limit": 1024
 }
 ```
-
-
-
-
-
-
-

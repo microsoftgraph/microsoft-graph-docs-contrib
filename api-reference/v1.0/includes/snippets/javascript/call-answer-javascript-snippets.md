@@ -19,6 +19,10 @@ const answer = {
   acceptedModalities: [
     'audio'
   ],
+  callOptions: {
+    '@odata.type': '#microsoft.graph.incomingCallOptions',
+    isContentSharingNotificationEnabled: true
+  },
   participantCapacity: 200
 };
 

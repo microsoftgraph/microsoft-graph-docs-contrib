@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var userAccountInformation = new UserAccountInformation
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new UserAccountInformation
 {
 	AllowedAudiences = AllowedAudiences.Organization,
-	CountryCode = "NO"
+	CountryCode = "NO",
 };
+var result = await graphClient.Me.Profile.Account.PostAsync(requestBody);
 
-await graphClient.Me.Profile.Account
-	.Request()
-	.AddAsync(userAccountInformation);
 
 ```

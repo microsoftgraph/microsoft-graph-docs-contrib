@@ -2,7 +2,7 @@
 title: "bucketAggregationRange resource type"
 description: "Specifies the lower and upper limit to a range for aggregating search results. Applies only to refiners of the date or numeric type"
 ms.localizationpriority: medium
-author: "nmoreau"
+author: "njerigrevious"
 ms.prod: "search"
 doc_type: "resourcePageType"
 ---

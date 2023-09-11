@@ -20,7 +20,7 @@ const sendMail = {
     toRecipients: [
       {
         emailAddress: {
-          address: 'fannyd@contoso.onmicrosoft.com'
+          address: 'frannis@contoso.onmicrosoft.com'
         }
       }
     ],

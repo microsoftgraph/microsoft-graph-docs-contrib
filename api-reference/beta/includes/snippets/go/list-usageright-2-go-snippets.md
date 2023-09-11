@@ -4,17 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-requestParameters := &msgraphsdk.UsageRightsRequestBuilderGetQueryParameters{
-	Filter: "state%20in%20('active',%20'suspended')%20and%20serviceIdentifier%20in%20('ABCD')",
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  graphdevices "github.com/microsoftgraph/msgraph-beta-sdk-go/devices"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+
+requestFilter := "state in ('active', 'suspended') and serviceIdentifier in ('ABCD')"
+
+requestParameters := &graphdevices.DeviceItemUsageRightsRequestBuilderGetQueryParameters{
+	Filter: &requestFilter,
 }
-options := &msgraphsdk.UsageRightsRequestBuilderGetRequestConfiguration{
+configuration := &graphdevices.DeviceItemUsageRightsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
-deviceId := "device-id"
-result, err := graphClient.DevicesById(&deviceId).UsageRights().GetWithRequestConfigurationAndResponseHandler(options, nil)
+
+usageRights, err := graphClient.Devices().ByDeviceId("device-id").UsageRights().Get(context.Background(), configuration)
 
 
 ```

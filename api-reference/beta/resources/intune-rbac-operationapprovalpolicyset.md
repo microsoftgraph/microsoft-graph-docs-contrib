@@ -1,7 +1,7 @@
 ---
 title: "operationApprovalPolicySet resource type"
 description: "Contains the pair of OperationApprovalPolicyType and OperationApprovalPolicyPlatform determining the set of applicable OperationApprovalPolicies for a user"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -40,9 +40,3 @@ Here is a JSON representation of the resource.
   "policyPlatform": "String"
 }
 ```
-
-
-
-
-
-

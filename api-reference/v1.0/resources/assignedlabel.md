@@ -2,7 +2,7 @@
 title: "assignedLabel resource type"
 description: "Represents a sensitivity label assigned to an Microsoft 365 group."
 ms.localizationpriority: medium
-author: "psaffaie"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: resourcePageType
 ---
@@ -17,8 +17,8 @@ Represents a sensitivity label assigned to an Microsoft 365 group. Sensitivity l
 
 | Property    | Type   | Description                               |
 | :---------- | :----- | :---------------------------------------- |
-| labelId     | String | The unique identifier of the label.       |
 | displayName | String | The display name of the label. Read-only. |
+| labelId     | String | The unique identifier of the label.       |
 
 ## JSON representation
 
@@ -33,8 +33,8 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "labelId": "String",
-  "displayName": "String"
+  "displayName": "String",
+  "labelId": "String"
 }
 ```
 

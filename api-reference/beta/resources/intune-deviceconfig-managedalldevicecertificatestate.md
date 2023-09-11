@@ -1,7 +1,7 @@
 ---
 title: "managedAllDeviceCertificateState resource type"
 description: "Not yet documented"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -30,7 +30,7 @@ Not yet documented
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the entity.|
-|certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-deviceconfig-certificaterevocationstatus.md)|Revoke status. Possible values are: `none`, `pending`, `issued`, `failed`, `revoked`.|
+|certificateRevokeStatus|[certificateRevocationStatus](../resources/intune-shared-certificaterevocationstatus.md)|Revoke status. Possible values are: `none`, `pending`, `issued`, `failed`, `revoked`.|
 |certificateRevokeStatusLastChangeDateTime|DateTimeOffset|The time the revoke status was last changed|
 |managedDeviceDisplayName|String|Device display name|
 |userPrincipalName|String|User principal name|
@@ -72,9 +72,3 @@ Here is a JSON representation of the resource.
   "certificateIssuanceDateTime": "String (timestamp)"
 }
 ```
-
-
-
-
-
-

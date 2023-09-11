@@ -10,8 +10,6 @@ ms.prod: search
 
 # Create, update, and delete connections in Microsoft Graph
 
-Connections from external services to the Microsoft Search service are represented by the [externalConnection](/graph/api/resources/externalconnectors-externalconnection) resource in Microsoft Graph.
-
 The Microsoft Graph connectors platform offers an intuitive way to add your external data into Microsoft Graph. A connection is a logical container for your external data that an administrator can manage as a single unit.
 
 After a connection has been created, you can add your content from any external data source such as an on-premises content source or an external SaaS service. You can only view and manage the connections that you [created](/graph/api/externalconnectors-external-post-connections) or were explicitly authorized to manage. A search admin can view and manage all the connections in the tenant from the Modern Admin Center.
@@ -66,14 +64,25 @@ The first step for an application to add items to the search index is to create 
 Before an application can add items to the search index, it must create and configure a connection:
 
 1. [Create a connection](/graph/api/externalconnectors-external-post-connections) with a unique ID, display name, and description.
-2. [Register a schema](/graph/api/externalconnectors-externalconnection-post-schema) to define the fields that will be included in the index.
+1. [Register a schema](/graph/api/externalconnectors-externalconnection-post-schema) to define the fields that will be included in the index.
+   > **Note:** For information about updating the schema for an existing connection, see [Schema update capabilities](/graph/connecting-external-content-manage-schema#schema-update-capabilities).
 
-> [!NOTE]
-> For information about updating the schema for an existing connection, see [Schema update capabilities](/graph/connecting-external-content-manage-schema#schema-update-capabilities).
+## Connection settings
+You can configure the default connection settings for each enabled content experience. When enabled, these settings affect the content experiences.
+
+### Search settings
+You can define how search results are displayed in the Microsoft Search results page by supplying the default search display templates for your content in [searchSettings](/graph/api/resources/externalconnectors-searchsettings). A set of search display templates can be used to display distinct kinds of search results differently. A search display template has a result layout built using Adaptive Cards and rules that specify one or more conditions. When these conditions are met, the layout will be applied to the search result and displayed on the results page.
+
+### Activity settings
+In [activity settings](/graph/api/resources/externalconnectors-activitysettings), you can provide a way for Microsoft 365 apps to detect **share activity**, which will enable your content to be recommended to users who interact with that content the most. The way to do this is to add a [urlToItemResolver](/graph/api/resources/externalconnectors-urltoitemresolverbase), which will allow a URL from the connection detected within Microsoft 365 apps to be resolved to its respective item ID on the [externalItem](/graph/api/resources/externalconnectors-externalitem). 
+
+The following image shows how your item might appear within recommendation experiences across Microsoft 365.
+
+![Screenshot of a recommended item with share activity](./images/connectors-images/share-activity-recommendation-example.png)
 
 ## Update a connection
 
-To change the display name or description of an existing connection, you can [update the connection](/graph/api/externalconnectors-externalconnection-update).
+To change the display name, description, or enabled content experiences for an existing connection, you can [update the connection](/graph/api/externalconnectors-externalconnection-update).
 
 ## Delete a connection
 

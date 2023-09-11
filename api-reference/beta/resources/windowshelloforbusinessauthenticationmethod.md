@@ -1,7 +1,7 @@
 ---
 title: "windowsHelloForBusinessAuthenticationMethod resource type"
 description: "A representation of a Windows Hello for Business instance registered to a user. Windows Hello for Business is a sign-in authentication method."
-author: "mmcla"
+author: "calvinlui"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 A representation of a Windows Hello for Business authentication method registered to a user. Windows Hello for Business is a sign-in authentication method for Windows devices.
 
-Inherits from [authenticationMethod](../resources/authenticationmethod.md).
+This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
 
 ## Methods
 |Method|Return type|Description|

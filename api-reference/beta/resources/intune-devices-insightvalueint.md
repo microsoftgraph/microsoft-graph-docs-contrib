@@ -1,7 +1,7 @@
 ---
 title: "insightValueInt resource type"
 description: "The value in an user experience analytics insight."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -23,7 +23,7 @@ Inherits from [userExperienceAnalyticsInsightValue](../resources/intune-devices-
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|value|Int32|Not yet documented|
+|value|Int32|The int value of the user experience analytics insight.|
 
 ## Relationships
 None
@@ -41,9 +41,3 @@ Here is a JSON representation of the resource.
   "value": 1024
 }
 ```
-
-
-
-
-
-

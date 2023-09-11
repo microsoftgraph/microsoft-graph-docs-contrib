@@ -13,7 +13,7 @@ const client = Client.init(options);
 const uploadSession = {
   AttachmentItem: {
     attachmentType: 'file',
-    name: 'scenary', 
+    name: 'scenary',
     size: 7208534,
     isInline: true,
     contentId: 'my_inline_picture'
@@ -21,6 +21,7 @@ const uploadSession = {
 };
 
 await client.api('/me/messages/AAMkAGUwNjQ4ZjIxLTQ3Y2YtNDViMi1iZjc4LTMA=/attachments/createUploadSession')
+	.version('beta')
 	.post(uploadSession);
 
 ```

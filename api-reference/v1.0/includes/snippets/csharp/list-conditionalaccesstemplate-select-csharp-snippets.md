@@ -1,0 +1,18 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```csharp
+
+// Code snippets are only available for the latest version. Current version is 5.x
+
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Identity.ConditionalAccess.Templates.GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Select = new string []{ "name","description","id","scenarios" };
+	requestConfiguration.QueryParameters.Filter = "scenarios has 'secureFoundation'";
+});
+
+
+```

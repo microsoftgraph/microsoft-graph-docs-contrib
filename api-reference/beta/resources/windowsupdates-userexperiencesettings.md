@@ -1,7 +1,7 @@
 ---
 title: "userExperienceSettings resource type"
 description: "Settings controlling the user's update experience on a device."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: resourcePageType

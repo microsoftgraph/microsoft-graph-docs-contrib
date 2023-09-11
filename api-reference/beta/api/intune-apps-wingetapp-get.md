@@ -1,7 +1,7 @@
 ---
 title: "Get winGetApp"
 description: "Read properties and relationships of the winGetApp object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [winGetApp](../resources/intune-apps-wingetapp.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -33,8 +33,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceAppManagement/mobileApps/{mobileAppId}
-GET /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstallStatusId}/app
-GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInstallStatusId}/app
 ```
 
 ## Optional query parameters
@@ -65,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1198
+Content-Length: 1242
 
 {
   "value": {
@@ -96,6 +94,7 @@ Content-Length: 1198
     "dependentAppCount": 1,
     "supersedingAppCount": 3,
     "supersededAppCount": 2,
+    "manifestHash": "Manifest Hash value",
     "packageIdentifier": "Package Identifier value",
     "installExperience": {
       "@odata.type": "microsoft.graph.winGetAppInstallExperience",
@@ -104,9 +103,3 @@ Content-Length: 1198
   }
 }
 ```
-
-
-
-
-
-

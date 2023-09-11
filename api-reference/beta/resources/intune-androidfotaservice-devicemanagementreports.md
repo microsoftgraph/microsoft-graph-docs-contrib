@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementReports resource type"
 description: "Device management reports entity"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -22,7 +22,7 @@ Device management reports entity
 |:---|:---|:---|
 |[Get deviceManagementReports](../api/intune-androidfotaservice-devicemanagementreports-get.md)|[deviceManagementReports](../resources/intune-androidfotaservice-devicemanagementreports.md)|Read properties and relationships of the [deviceManagementReports](../resources/intune-androidfotaservice-devicemanagementreports.md) object.|
 |[Update deviceManagementReports](../api/intune-androidfotaservice-devicemanagementreports-update.md)|[deviceManagementReports](../resources/intune-androidfotaservice-devicemanagementreports.md)|Update the properties of a [deviceManagementReports](../resources/intune-androidfotaservice-devicemanagementreports.md) object.|
-|[getZebraFotaDeploymentReport action](../api/intune-androidfotaservice-devicemanagementreports-getzebrafotadeploymentreport.md)|Stream|Not yet documented|
+|[getZebraFotaDeploymentReport action](../api/intune-androidfotaservice-devicemanagementreports-getzebrafotadeploymentreport.md)|Stream||
 
 ## Properties
 |Property|Type|Description|
@@ -44,9 +44,3 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deviceManagementReports"
 }
 ```
-
-
-
-
-
-

@@ -1,6 +1,6 @@
 ---
 title: "educationTeamsAppResource resource type"
-description: "Corresponds to an [installed Microsoft Teams app](teamsappinstallation.md). This allows education service users to create and share assignments with embedded Teams applications."
+description: "Corresponds to an installed Microsoft Teams app."
 author: "adarshgh"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -13,25 +13,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An education resource that corresponds to an [installed Microsoft Teams app](teamsappinstallation.md). This allows education service users to create and share assignments with embedded Teams applications, such as YouTube or FlipGrid.
+Corresponds to an [installed Microsoft Teams app](teamsappinstallation.md). This allows education service users to create and share assignments with embedded Teams applications, such as YouTube or Flip.
 
-For information about using FlipGrid for education on Microsoft Teams, see [introduction to FlipGrid](https://education.microsoft.com/en-us/resource/13cb22b1).
+For information about using Flip for education on Microsoft Teams, see [introduction to Flip](/training/educator-center/product-guides/flip).
 
-Inherites from [educationResource](educationresource.md).
+Inherits from [educationResource](educationresource.md).
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|displayName|string|The display name of the resource.|
-|appId|string|Teams App ID of the application.|
-|appIconWebUrl|string|URL that points to the app's icon.|
-|teamsEmbeddedContentUrl|string|URL for the app resource that will be opened by Teams.|
-|webUrl|string|URL for the app resource that can be opened in the browser.|
-|createdBy|String|The display name of the user that created this resource. Inherited from **educationResource**.|
-|createdDateTime|DateTimeOffset|Date time the resoruce was added. Inherited from **educationResource**.|
-|lastModifiedBy|[identitySet](identityset.md)|The last user to modify the resource. Inherited from **educationResource**.|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the resource was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from **educationResource**.|
 
+| Property                | Type                          | Description                                                                                    |
+|:------------------------|:------------------------------|:-----------------------------------------------------------------------------------------------|
+| appIconWebUrl           | String                        | URL that points to the icon of the app.                                                        |
+| appId                   | String                        | Teams app ID of the application.                                                               |
+| createdBy               | [identitySet](identityset.md) | Identity of the user who created this resource. Inherited from **educationResource**.     |
+| createdDateTime         | DateTimeOffset                | The date and time when the resource was added. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from **educationResource**. |
+| displayName             | String                        | The display name of the resource. Inherited from **educationResource**.                        |
+| lastModifiedBy          | [identitySet](identityset.md) | Identity of the user who last modified the resource. Inherited from **educationResource**.     |
+| lastModifiedDateTime    | DateTimeOffset                | The date and time when the resource was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from **educationResource**. |
+| teamsEmbeddedContentUrl | String                        | URL for the app resource that will be opened by Teams.                                         |
+| webUrl                  | String                        | URL for the app resource that can be opened in the browser.                                    |
 
 ## JSON representation
 
@@ -47,17 +47,16 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "displayName": "String",
-  "appId": "Unique String",
-  "appIconWebUrl": "String URL",
-  "teamsEmbeddedContentUrl": "String URL",
-  "webUrl": "String URL",
+  "appIconWebUrl": "String",
+  "appId": "String",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
   "createdDateTime": "String (timestamp)",
+  "displayName": "String",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
-  "lastModifiedDateTime": "String (timestamp)"  
+  "lastModifiedDateTime": "String (timestamp)",
+  "teamsEmbeddedContentUrl": "String",
+  "webUrl": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -65,12 +64,10 @@ The following is a JSON representation of the resource.
 <!--
 {
   "type": "#page.annotation",
-  "description": "educationExcelResource resource",
+  "description": "educationTeamsAppResource resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
   "suppressions": []
 }
 -->
-
-

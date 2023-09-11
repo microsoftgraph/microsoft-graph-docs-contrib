@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var documentSetVersion = new DocumentSetVersion
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new DocumentSetVersion
 {
 	Comment = "v1",
-	ShouldCaptureMinorVersion = false
+	ShouldCaptureMinorVersion = false,
 };
+var result = await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{listItem-id}"].DocumentSetVersions.PostAsync(requestBody);
 
-await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{listItem-id}"].DocumentSetVersions
-	.Request()
-	.AddAsync(documentSetVersion);
 
 ```

@@ -34,8 +34,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.domainIdentitySource",
-  "domainName": "String",
-  "displayName": "String"
+  "displayName": "String",
+  "domainName": "String"
 }
 ```
 

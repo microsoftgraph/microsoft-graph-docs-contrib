@@ -4,19 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var emailAddresses = new List<String>()
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Me.GetMailTips.GetMailTipsPostRequestBody
 {
-	"danas@contoso.onmicrosoft.com",
-	"fannyd@contoso.onmicrosoft.com"
+	EmailAddresses = new List<string>
+	{
+		"danas@contoso.onmicrosoft.com",
+		"fannyd@contoso.onmicrosoft.com",
+	},
+	MailTipsOptions = MailTipsType.AutomaticReplies | MailTipsType.MailboxFullStatus,
 };
+var result = await graphClient.Me.GetMailTips.PostAsync(requestBody);
 
-var mailTipsOptions = MailTipsType.AutomaticReplies | MailTipsType.MailboxFullStatus;
-
-await graphClient.Me
-	.GetMailTips(emailAddresses,mailTipsOptions)
-	.Request()
-	.PostAsync();
 
 ```
