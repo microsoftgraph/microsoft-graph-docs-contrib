@@ -32,12 +32,8 @@ Reference base type [onlineMeeting](../resources/onlinemeeting.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-<<<<<<< HEAD
-|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [microsoft.graph.onlineMeeting](../resources/onlinemeeting.md).|
+|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of this virtual event session. Inherited from [onlineMeeting](../resources/onlinemeeting.md).|
 |registrations|[virtualEventRegistration](../resources/meetingattendancereport.md) collection|Registration records of this virtual event session.|
-=======
-|attendanceReports|[meetingAttendanceReport](../resources/meetingattendancereport.md) collection|Attendance reports of the virtual event session. Inherited from [onlineMeeting](../resources/onlinemeeting.md).|
->>>>>>> 0ca80723c054fe741bee4ab0187a4f0f3d9f3375
 
 ## JSON representation
 
