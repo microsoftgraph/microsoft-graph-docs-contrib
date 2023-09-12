@@ -19,10 +19,13 @@ Inherits from [delegatedAdminRelationship](../resources/delegatedadminrelationsh
 
 ## Properties
 
+The value is represented in ISO 8601 format for durations.
+
 |Property|Type|Description|
 |:---|:---|:---|
 |accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details that contain the identifiers of the administrative roles that the partner administrator requests in the customer tenant. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
 |activatedDateTime|DateTimeOffset|The date and time when the relationship was actived. Read-only. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
+|autoExtendDuration|Duration| The duration by which the validity of the relationship is automatically extended, denoted in ISO 8601 format. Supported values are: `P0D`, `PT0S`, `P180D`. Default value is `PT0S`. `PT0S` indicates that the relationship expires when its end date is reached and it is not automatically extended. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
 |createdDateTime|DateTimeOffset|The date and time when the relationship was created. Read-only. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
 |customer|[delegatedAdminRelationshipCustomerParticipant](../resources/delegatedadminrelationshipcustomerparticipant.md)|The display name and unique identifier of the customer of the relationship. This is configured either by the partner at the time the relationship is created or by the system after the customer approves the relationship. Cannot be changed by the customer. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
 |displayName|String|The display name of the relationship used for ease of identification. Must be unique across *all* delegated admin relationships of the partner. This is set by the partner only when the relationship is in the `created` **status** and cannot be changed by the customer. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
@@ -33,7 +36,6 @@ Inherits from [delegatedAdminRelationship](../resources/delegatedadminrelationsh
 |isPartnerConsentPending|Boolean|Indicates the indirect reseller partner consent status. `true` indicates that the partner has yet to review the relationship; `false` indicates that the partner has already provided consent by approving or rejecting the relationship.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the relationship was last modified. Read-only. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
 |status|delegatedAdminRelationshipStatus|The status of the relationship. Read-only. The possible values are: `activating`, `active`, `approvalPending`, `approved`, `created`, `expired`, `expiring`, `terminated`, `terminating`, `terminationRequested`, `unknownFutureValue`. Supports `$orderBy`. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
-|autoExtendDuration|Duration| The `autoExtendDuration` of the relationship in ISO 8601 format. This property dictates the duration by which the relationship's validity will be automatically extended. Only `P0D`, `PT0S` or `P180D` are the valid values and the default value is `PT0S`. The value `PT0S` indicates that the relationship will expire when its end date is reached and will not be automatically extended. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
 
 ## Relationships
 
@@ -60,6 +62,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.resellerDelegatedAdminRelationship",
   "accessDetails": {"@odata.type": "microsoft.graph.delegatedAdminAccessDetails"},
   "activatedDateTime": "String (timestamp)",
+  "autoExtendDuration": "String",
   "createdDateTime": "String (timestamp)",
   "customer": {"@odata.type": "microsoft.graph.delegatedAdminRelationshipCustomerParticipant"},
   "displayName": "String",
@@ -69,7 +72,6 @@ The following is a JSON representation of the resource.
   "indirectProviderTenantId": "String",
   "isPartnerConsentPending": "Boolean",
   "lastModifiedDateTime": "String (timestamp)",
-  "status": "String",
-  "autoExtendDuration": "String"
+  "status": "String"
 }
 ```
