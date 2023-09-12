@@ -84,7 +84,7 @@
       "branch_mapping": {}
     },
     {
-      "path_to_root": "azure-monitor-ref",
+      "path_to_root": "azure-reference-other",
       "url": "https://github.com/MicrosoftDocs/azure-reference-other",
       "branch": "main",
       "branch_mapping": {}
