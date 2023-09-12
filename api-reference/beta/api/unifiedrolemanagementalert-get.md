@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ale
 [!INCLUDE [sample-code](../includes/snippets/java/get-unifiedrolemanagementalert-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedrolemanagementalert-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-unifiedrolemanagementalert-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

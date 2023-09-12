@@ -28,7 +28,7 @@ request_body = AndroidManagedAppRegistration(
 	version = "Version value",
 )
 
-result = await graph_client.device_app_management.managed_app_registrations.post(request_body = request_body)
+result = await graph_client.device_app_management.managed_app_registrations.post(body = request_body)
 
 
 ```

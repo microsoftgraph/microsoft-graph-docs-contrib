@@ -25,10 +25,10 @@ $additionalData = [
 ];
 $sourceIdentity->setAdditionalData($additionalData);
 $source->setIdentity($sourceIdentity);
-$Source->setCountryCode(null);
-$Source->setEndpointType(null);
-$Source->setRegion(null);
-$Source->setLanguageId(null);
+$source->setCountryCode(null);
+$source->setEndpointType(null);
+$source->setRegion(null);
+$source->setLanguageId(null);
 $requestBody->setSource($source);
 $targetsInvitationParticipantInfo1 = new InvitationParticipantInfo();
 $targetsInvitationParticipantInfo1->setOdataType('#microsoft.graph.invitationParticipantInfo');

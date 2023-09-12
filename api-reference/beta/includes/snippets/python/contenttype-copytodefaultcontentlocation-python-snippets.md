@@ -18,7 +18,7 @@ request_body = CopyToDefaultContentLocationPostRequestBody(
 	destination_file_name = "newname.txt",
 )
 
-await graph_client.sites.by_site_id('site-id').content_types.by_content_type_id('contentType-id').copy_to_default_content_location.post(request_body = request_body)
+await graph_client.sites.by_site_id('site-id').content_types.by_content_type_id('contentType-id').copy_to_default_content_location.post(body = request_body)
 
 
 ```

@@ -22,7 +22,7 @@ request_body = ColumnDefinition(
 	),
 )
 
-result = await graph_client.sites.by_site_id('site-id').lists.by_list_id('list-id').columns.post(request_body = request_body)
+result = await graph_client.sites.by_site_id('site-id').lists.by_list_id('list-id').columns.post(body = request_body)
 
 
 ```

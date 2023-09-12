@@ -21,7 +21,7 @@ request_body = Set(
 	]
 )
 
-result = await graph_client.sites.by_site_id('site-id').term_store.sets.post(request_body = request_body)
+result = await graph_client.sites.by_site_id('site-id').term_store.sets.post(body = request_body)
 
 
 ```

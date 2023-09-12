@@ -31,7 +31,7 @@ headers = {
 
 )
 
-result = await graph_client.tenant_relationships.delegated_admin_relationships.by_delegated_admin_relationship_id('delegatedAdminRelationship-id').acce_assignments.by_acces_assignment_id('delegatedAdminAccessAssignment-id').patch(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.tenant_relationships.delegated_admin_relationships.by_delegated_admin_relationship_id('delegatedAdminRelationship-id').acce_assignments.by_acces_assignment_id('delegatedAdminAccessAssignment-id').patch(body = request_body, request_configuration = request_configuration)
 
 
 ```

@@ -19,7 +19,7 @@ request_body = LifecycleManagementSettings(
 	}
 )
 
-result = await graph_client.identity_governance.lifecycle_workflows.settings.patch(request_body = request_body)
+result = await graph_client.identity_governance.lifecycle_workflows.settings.patch(body = request_body)
 
 
 ```

@@ -72,7 +72,7 @@ $requestBody->setFirewallProfilePrivate($firewallProfilePrivate);
 $requestBody->setDefenderAttackSurfaceReductionExcludedPaths(['Defender Attack Surface Reduction Excluded Paths value', 	]);
 $requestBody->setDefenderGuardedFoldersAllowedAppPaths(['Defender Guarded Folders Allowed App Paths value', 	]);
 $requestBody->setDefenderAdditionalGuardedFolders(['Defender Additional Guarded Folders value', 	]);
-$requestBody->setDefenderExploitProtectionXml(base64_decode('ZGVmZW5kZXJFeHBsb2l0UHJvdGVjdGlvblhtbA=='));
+$requestBody->setDefenderExploitProtectionXml(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('ZGVmZW5kZXJFeHBsb2l0UHJvdGVjdGlvblhtbA==')));
 $requestBody->setDefenderExploitProtectionXmlFileName('Defender Exploit Protection Xml File Name value');
 $requestBody->setDefenderSecurityCenterBlockExploitProtectionOverride(true);
 $requestBody->setAppLockerApplicationControl(new AppLockerApplicationControlType('enforceComponentsAndStoreApps'));

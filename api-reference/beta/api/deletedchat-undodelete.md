@@ -96,7 +96,6 @@ POST https://graph.microsoft.com/beta/teamwork/deletedChats/19:64dedcac16b74a209
 
 ---
 
-
 ### Response
 The following is an example of the response.
 <!-- {

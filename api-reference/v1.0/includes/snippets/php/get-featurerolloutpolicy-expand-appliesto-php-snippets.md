@@ -9,8 +9,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new FeatureRolloutPolicyRequestBuilderGetRequestConfiguration();
-$queryParameters = FeatureRolloutPolicyRequestBuilderGetRequestConfiguration::createQueryParameters();
+$requestConfiguration = new FeatureRolloutPolicyItemRequestBuilderGetRequestConfiguration();
+$queryParameters = FeatureRolloutPolicyItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["appliesTo"];
 $requestConfiguration->queryParameters = $queryParameters;
 
