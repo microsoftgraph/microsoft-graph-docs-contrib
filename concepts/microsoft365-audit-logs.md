@@ -9,7 +9,6 @@ ms.custom: scenarios:getting-started
 
 # Use Microsoft 365 audit logs with Microsoft Graph Data Connect
 
-
 Microsoft Graph Data Connect (Data Connect) customers build large-scale data applications with sensitive Microsoft 365 content. Data Connect customers must apply industry-standard best practices for compliance across security, privacy, and governance. Microsoft 365 audit logs offer  a detailed understanding of different applications that access this sensitive data, to help you address any compliance concerns.
 
 Make use of Microsoft 365 audit logs with Data Connect to track authorization and data extraction events. For details about how to improve your overall audit experience in the Microsoft Compliance Center, see [Audit logs for all Data Connect application access and approvals](https://devblogs.microsoft.com/microsoft365dev/security-governance-and-privacy-built-into-microsoft-graph-data-connect/#audit-logs-for-all-data-connect-application-access-and-approvals). Export your data to .csv files for better clarity and enable audit logs with an E3 license to [Set up Microsoft Purview Audit (Standard)](/purview/audit-standard-setup) or with an E5 license to [Set up Microsoft Purview Audit (Premium)](/purview/audit-premium-setup).
@@ -21,16 +20,16 @@ Make use of Microsoft 365 audit logs with Data Connect to track authorization an
 
 Use Microsoft 365 audit logs to track and audit admin authorization actions on Data Connect apps. Use the following steps to search for authorization events audit logs for Data Connect:
 
-1. Go to the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149), and sign in with the correct privileges.
+Step 1. Go to the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149), and sign in with the correct privileges.
 
-2. In the left pane of the compliance portal, choose **Audit**.
+Step 2. In the left pane of the compliance portal, choose **Audit**.
 
 ![Screenshot with the Audit UI highlighted in the left pane of the Microsoft Purview compliance portal.](images/microsoft-purview-portal-audit-ui.png).
 
 > [!NOTE]
 > For details about audit log search fields, see [Search the audit log](https://github.com/purview/audit-log-search?view=o365-worldwide#search-the-audit-log).
 
-3. Enter values in the following fields:
+Step 3. Enter values in the following fields:
 
 - **Activities-friendly names: Approved or denied the app** — Scopes events related to changes in authorization (consent).
 - **Activities-operation names: ConsentModificationRequest** — Scopes events related to changes in authorization (consent).
@@ -40,17 +39,15 @@ Use Microsoft 365 audit logs to track and audit admin authorization actions on D
 
 ![Screenshot shows audit log search fields highlighted in the Audit UI of the compliance portal.](images/microsoft-purview-portal-audit-log-search-fields-highlighted.png).
 
-4. Rows appear that range from the time period you input previously to the current date. To view details about a time range, choose a row of results.
+Step 4. Rows appear that range from the time period you input previously to the current date. To view details about a time range, choose a row of results.
 
 ![Screenshot shows audit log search fields with details regarding time ranges highlighted.](images/microsoft-purview-portal-audit-log-time-range-details.png).
 
-5. A new window opens that contains search results related to an authorization event.
+Step 5. A new window opens that contains search results related to an authorization event.
 
 ![Screenshot shows audit log search results with an authorization event highlighted.](images/microsoft-purview-portal-audit-log-search-results-highlighted.png).
 
-6. Choose a sample result to see more details. You can also choose **Export** to export the results to a .csv file. To understand your audit logs and the schema provided in the details, see the schema in [Data Connect audit logs support](https://github.com/office/office-365-management-api/office-365-management-activity-api-schema#microsoftgraphdataconnectconsent-complex-type) and [dataset schema](https://github.com/office/office-365-management-api/office-365-management-activity-api-schema#complex-type-mgdcdataset).
-
-
+Step 6. Choose a sample result to see more details. You can also choose **Export** to export the results to a .csv file. To understand your audit logs and the schema provided in the details, see the schema in [Data Connect audit logs support](https://github.com/office/office-365-management-api/office-365-management-activity-api-schema#microsoftgraphdataconnectconsent-complex-type) and [dataset schema](https://github.com/office/office-365-management-api/office-365-management-activity-api-schema#complex-type-mgdcdataset).
 
 ![Screenshot shows audit log search results with details in side pane selected.](images/microsoft-purview-portal-audit-log-side-pane-details.png).
 
@@ -58,25 +55,27 @@ Use Microsoft 365 audit logs to track and audit admin authorization actions on D
 
 ![Screenshot shows audit log search results with metadata details in side pane selected.](images/microsoft-purview-portal-audit-log-side-pane-metadata-details.png).
 
-## Operation: pipeline run events
+## Pipeline run events
 
-Track your data extraction events through pipeline runs that are generated in Data Connect applications. 
+Track your data extraction events through pipeline runs that are generated in Data Connect applications.
 
 ### Search for operation audit logs for Data Connect
 
-1. Go to the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149) and sign in.
+To search the generated pipeline runs for Data Connect operations:
+
+Step 1. Go to the [Microsoft Purview compliance portal](https://go.microsoft.com/fwlink/p/?linkid=2077149) and sign in.
 
 > [!NOTE]
 > Verify that you have Microsoft 365 admin privileges or authorization to access sensitive log data.
 
-2. In the left pane of the compliance portal, select **Audit**.
+Step 2. In the left pane of the compliance portal, select **Audit**.
 
 ![Screenshot shows audit log search results with metadata details in side pane selected.](images/microsoft-purview-portal-audit-pane-details.png).
 
 > [!TIP]
 > For details about audit log search fields, see [searching the audit log in Microsoft 365](https://github.com/purview/audit-log-search?view=o365-worldwide#search-the-audit-log).
 
-3. Verify that you have the following fields entered:
+Step 3. Verify that you've entered data in the following fields:
 
 - **Activities-friendly names: Extraction Run** — Scopes events related to extraction.
 - **Activities-operation names: DataAccessRequestOperation** — Scopes events to view data access requests.
@@ -86,4 +85,4 @@ Track your data extraction events through pipeline runs that are generated in Da
 
 ![Screenshot shows audit log search fields inputs, highlighted.](images/microsoft-purview-portal-audit-log-search-fields-inputs-highlighted.png).
 
-4. View the details of your audit logs. Choose an audit log row to view details about the log event. To understand your audit logs and the schema provided in the details, see the schema in [Data Connect audit logs support](https://github.com/office/office-365-management-api/office-365-management-activity-api-schema#microsoftgraphdataconnectconsent-complex-type).
+Step 4. View the details of your audit logs. Choose an audit log row to view details about the log event. To understand your audit logs and the schema provided in the details, see the schema in [Data Connect audit logs support](https://github.com/office/office-365-management-api/office-365-management-activity-api-schema#microsoftgraphdataconnectconsent-complex-type).
