@@ -120,9 +120,9 @@ MicrosoftGraphActivity
 | limit 20
 ```
 
-## Join Microsoft Graph activity logs and other audit logs
+## Join Microsoft Graph activity logs and sign-in logs
 
-In the Logs Analytics interface, you can correlate the Microsoft Graph activity logs and other logs like sign-in logs and Azure AD activity reports. For example, you can join the Microsoft Graph activity logs with Azure AD activity reports to identify the user who made the request. The following query joins the Microsoft Graph activity logs with Azure AD audit logs to identify the user who made the request.
+In the Logs Analytics interface, you can use Kusto queries to correlate the Microsoft Graph activity logs and sign-in logs to identify the user who made the request as shown in the following example:
 
 ```kusto
 MicrosoftGraphActivityLogs
