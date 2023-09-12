@@ -61,7 +61,7 @@ The amount of data logged and, thus, the cost incurred, can vary significantly d
 
 A Microsoft Graph activity log event uses about 1 KB of data storage. For a tenant with 100,000 users, which would incur about 1.5 million events per day, you would need about 1.4 GB of data storage per day. Because writes occur in five-minute batches, you can anticipate around 9,000 write operations per month.
 
-The following table contains a cost estimate in USD of, depending on the size of the tenant, a general-purpose v2 storage account in West US for at least one year of retention. To create a more accurate estimate for the data volume that you anticipate for your application, use the [Azure storage pricing calculator](/pricing/details/storage/blobs/).
+The following table contains a cost estimate in USD of, depending on the size of the tenant, a general-purpose v2 storage account in West US for at least one year of retention. To create a more accurate estimate for the data volume that you anticipate for your application, use the [Azure storage pricing calculator](https://azure.microsoft.com/pricing/details/storage/blobs).
 
 | Number of users | Events per day | Volume of data per month | Cost per month | Cost per year |
 |-----------------|----------------|--------------------------|----------------|---------------|
