@@ -17,7 +17,7 @@ request_body = AddMembersPostRequestBody(
 	]
 )
 
-await graph_client.admin.windows.updates.updatable_assets.by_updatable_asset_id('updatableAsset-id').microsoft_graph_window_update_add_members.post(request_body = request_body)
+await graph_client.admin.windows.updates.updatable_assets.by_updatable_asset_id('updatableAsset-id').microsoft_graph_window_update_add_members.post(body = request_body)
 
 
 ```

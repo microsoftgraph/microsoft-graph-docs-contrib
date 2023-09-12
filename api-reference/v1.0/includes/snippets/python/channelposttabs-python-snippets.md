@@ -21,7 +21,7 @@ request_body = TeamsTab(
 	}
 )
 
-result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').tabs.post(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').tabs.post(body = request_body)
 
 
 ```

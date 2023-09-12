@@ -16,7 +16,7 @@ request_body = EnrollmentConfigurationAssignment(
 	),
 )
 
-result = await graph_client.device_management.device_enrollment_configurations.by_device_enrollment_configuration_id('deviceEnrollmentConfiguration-id').assignments.by_assignment_id('enrollmentConfigurationAssignment-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_enrollment_configurations.by_device_enrollment_configuration_id('deviceEnrollmentConfiguration-id').assignments.by_assignment_id('enrollmentConfigurationAssignment-id').patch(body = request_body)
 
 
 ```

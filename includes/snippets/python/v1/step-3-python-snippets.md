@@ -14,7 +14,7 @@ request_body = ChatMessage(
 	),
 )
 
-result = await graph_client.chats.by_chat_id('chat-id').messages.post(request_body = request_body)
+result = await graph_client.chats.by_chat_id('chat-id').messages.post(body = request_body)
 
 
 ```

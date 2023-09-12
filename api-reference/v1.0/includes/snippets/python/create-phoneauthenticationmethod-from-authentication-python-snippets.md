@@ -13,7 +13,7 @@ request_body = PhoneAuthenticationMethod(
 	phone_type = AuthenticationPhoneType.Mobile,
 )
 
-result = await graph_client.users.by_user_id('user-id').authentication.phone_methods.post(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').authentication.phone_methods.post(body = request_body)
 
 
 ```

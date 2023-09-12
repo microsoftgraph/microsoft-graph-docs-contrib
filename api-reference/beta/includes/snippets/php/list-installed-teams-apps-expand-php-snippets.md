@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new InstalledAppsRequestBuilderGetRequestConfiguration();
 $queryParameters = InstalledAppsRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->expand = ["teamsAppDefinition($expand=bot)"];
+$queryParameters->expand = ["teamsAppDefinition(\$expand=bot)"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 

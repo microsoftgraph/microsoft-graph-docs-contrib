@@ -144,6 +144,8 @@ items:
             href: /graph/migrate-exchange-web-services-authentication?context=graph/api/beta
           - name: API mapping
             href: /graph/migrate-exchange-web-services-api-mapping?context=graph/api/beta
+      - name: Outlook REST APIs
+        href: /outlook/rest/compare-graph?context=graph/context
   - name: Use SDKs
     items:
       - name: Overview
@@ -12840,6 +12842,21 @@ items:
                             href: api/unifiedroleeligibilityscheduleinstance-get.md
                           - name: Filter by current user
                             href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
+                      - name: Assignment approval
+                        href: resources/approval.md
+                        items:
+                          - name: Get
+                            href: api/approval-get.md
+                          - name: Approval step
+                            items:
+                              - name: Approval step
+                                href: resources/approvalstep.md
+                              - name: List
+                                href: api/approval-list-steps.md
+                              - name: Get
+                                href: api/approvalstep-get.md
+                              - name: Update
+                                href: api/approvalstep-update.md
                       - name: Policies and rules
                         items:
                           - name: Policy
@@ -16320,22 +16337,24 @@ items:
                     href: resources/security-host.md
                   - name: Get
                     href: api/security-host-get.md
+                  - name: Get reputation
+                    href: api/security-host-get-reputation.md
                   - name: List child host pairs
                     href: api/security-host-list-childhostpairs.md
-                  - name: List host pairs
-                    href: api/security-host-list-hostpairs.md
                   - name: List components
                     href: api/security-host-list-components.md
                   - name: List cookies
                     href: api/security-host-list-cookies.md
+                  - name: List host pairs
+                    href: api/security-host-list-hostpairs.md
+                  - name: List host SSL certificate
+                    href: api/security-hostsslcertificate-list-host.md
                   - name: List parent host pairs
                     href: api/security-host-list-parenthostpairs.md
                   - name: List passive DNS
                     href: api/security-host-list-passivedns.md
                   - name: List passive DNS reverse
                     href: api/security-host-list-passivednsreverse.md
-                  - name: Get reputation
-                    href: api/security-host-get-reputation.md
                   - name: List subdomains
                     href: api/security-host-list-subdomains.md
                   - name: List trackers
@@ -16366,6 +16385,14 @@ items:
                     href: api/security-host-list-parenthostpairs.md
                   - name: List child host pairs
                     href: api/security-host-list-childhostpairs.md
+              - name: Host SSL certificate
+                items:
+                - name: Host SSL certificate
+                  href: resources/security-hostsslcertificate.md
+                - name: List
+                  href: api/security-hostsslcertificate-list-host.md
+                - name: Get
+                  href: api/security-hostsslcertificate-get.md
               - name: Host tracker
                 items:
                   - name: Host tracker
@@ -16394,6 +16421,14 @@ items:
                     href: resources/security-passivednsrecord.md
                   - name: Get
                     href: api/security-passivednsrecord-get.md
+              - name: SSL certificate
+                items:
+                - name: SSL certificate
+                  href: resources/security-sslcertificate.md
+                - name: List
+                  href: api/security-sslcertificate-list.md
+                - name: Get
+                  href: api/security-sslcertificate-get.md
               - name: Subdomain
                 items:
                   - name: Subdomain
@@ -17406,7 +17441,7 @@ items:
                     href: api/presence-clearuserpreferredpresence.md
                   - name: Set user status message
                     href: api/presence-setstatusmessage.md
-              - name: Virtual event
+              - name: Virtual event (preview)
                 href: resources/virtualevent.md
                 items:
                   - name: Webinar
@@ -18331,6 +18366,8 @@ items:
                 href: api/worksheet-list-charts.md
               - name: Add chart
                 href: api/worksheet-post-charts.md
+              - name: List tasks
+                href: api/workbookworksheet-list-tasks.md
           - name: Range
             href: resources/workbookrange.md
             items:
@@ -18411,3 +18448,17 @@ items:
                 href: api/nameditem-add.md
               - name: List range
                 href: api/nameditem-range.md
+          - name: Workbook document task
+            href: resources/workbookdocumenttask.md
+            items:
+              - name: List
+                href: api/workbookworksheet-list-tasks.md
+              - name: Get
+                href: api/workbookdocumenttask-get.md
+          - name: Workbook document task change
+            href: resources/workbookdocumenttaskchange.md
+            items:
+              - name: List
+                href: api/workbookdocumenttask-list-changes.md
+              - name: Get
+                href: api/workbookdocumenttaskchange-get.md

@@ -16,7 +16,7 @@ request_body = Domain(
 	]
 )
 
-result = await graph_client.domains.by_domain_id('domain-id').patch(request_body = request_body)
+result = await graph_client.domains.by_domain_id('domain-id').patch(body = request_body)
 
 
 ```

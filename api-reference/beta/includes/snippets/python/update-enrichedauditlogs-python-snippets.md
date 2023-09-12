@@ -21,7 +21,7 @@ request_body = EnrichedAuditLogs(
 	),
 )
 
-result = await graph_client.network_access.settings.enriched_audit_logs.patch(request_body = request_body)
+result = await graph_client.network_access.settings.enriched_audit_logs.patch(body = request_body)
 
 
 ```
