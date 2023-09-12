@@ -21,8 +21,6 @@ To access the Microsoft Graph activity logs, you need the appropriate privileges
 
 - An Azure AD Premium P1 or P2 tenant license in your tenant.
 - An administrator with one of the following Azure AD administrator roles listed in the order of least to most privileged role.
-  - Security Reader - To read the logs
-  - Global Reader - To read the logs
   - Security Administrator – To configure diagnostic settings and read the logs
   - Global Administrator – To configure diagnostic settings and read the logs
 - An Azure subscription with one of the following log destinations are configured:
@@ -125,6 +123,20 @@ MicrosoftGraphActivity
 ## Join Microsoft Graph activity logs and other audit logs
 
 In the Logs Analytics interface, you can correlate the Microsoft Graph activity logs and other logs like sign-in logs and Azure AD activity reports. For example, you can join the Microsoft Graph activity logs with Azure AD activity reports to identify the user who made the request. The following query joins the Microsoft Graph activity logs with Azure AD audit logs to identify the user who made the request.
+
+```kusto
+MicrosoftGraphActivityLogs
+| where TimeGenerated > ago(8d)
+| extend ObjectId = iff(isempty( UserId),ServicePrincipalId, UserId)
+| extend ObjectType = iff(isempty( UserId),"ServicePrincipalId", "UserId")
+| summarize by ObjectType, ObjectId, SignInActivityId
+| join kind=leftouter (union SigninLogs, AADNonInteractiveUserSignInLogs, AADServicePrincipalSignInLogs, AADManagedIdentitySignInLogs, ADFSSignInLogs
+    | where TimeGenerated > ago(15d)
+    | summarize arg_max(TimeGenerated, *) by UniqueTokenIdentifier
+    )
+    on $left.SignInActivityId == $right.UniqueTokenIdentifier
+| project-reorder ObjectType, UserPrincipalName,ObjectId, SignInActivityId, Category
+```
 
 <!--
 ## Limitations
