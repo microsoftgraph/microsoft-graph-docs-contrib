@@ -60,7 +60,7 @@ The following request sets the presence status message as "Hey I'm currently in 
 }-->
 
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/setStatusMessage
+POST https://graph.microsoft.com/v1.0/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/setStatusMessage
 Content-Type: application/json
 
 {
@@ -101,7 +101,7 @@ The following request sets the presence status message as "Hey I'm currently in 
   "name": "setstatusmessage-another-user"
 }-->
 ```msgraph-interactive
-POST https://graph.microsoft.com/beta/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/setStatusMessage
+POST https://graph.microsoft.com/v1.0/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/setStatusMessage
 Content-Type: application/json
 
 {
@@ -137,7 +137,7 @@ This request should be executed on behalf of another user.
   "name": "setstatusmessage-another-user-get-presence"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence
+GET https://graph.microsoft.com/v1.0/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence
 ```
 
 ---
