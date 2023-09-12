@@ -156,44 +156,6 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Using `$orderby` to get categories
-
-#### Request
-The following is an example of the request.
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "sampleKeys": ["77c30802-3e00-4e91-975f-f2aaa2c5a569","c3307ea8-1343-4109-aeb9-92b9a74bf131"],  
-  "name": "get_assignment_categories_with_orderby"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/77c30802-3e00-4e91-975f-f2aaa2c5a569/assignments/c3307ea8-1343-4109-aeb9-92b9a74bf131/categories?$orderby=id
-```
-
-### Response
-The following is an example of the response. 
-
->**Note:** The response object shown here might be shortened for readability.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationCategory",
-  "isCollection": true
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('77c30802-3e00-4e91-975f-f2aaa2c5a569')/assignments('c3307ea8-1343-4109-aeb9-92b9a74bf131')/categories",
-    "value": [
-        {
-            "displayName": "test category",
-            "id": "74b03ab5-5832-4f99-89f5-d52da13d93f7"
-        }
-    ]
-}
-```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

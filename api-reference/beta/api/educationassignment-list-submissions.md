@@ -583,17 +583,72 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('2be08d97-b140-4eec-8cbd-88238d571060')/resources",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('131eeaaa-829e-4c6c-9cf3-491b1320fe4d')/resources",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<2003c52e-807a-4186-9b49-60c573095461>')/assignments('<131eeaaa-829e-4c6c-9cf3-491b1320fe4d>')/resources?$select=distributeForStudentWork,resource",
     "value": [
         {
-            "distributeForStudentWork": true,
-            "id": "777c1719-d464-4385-96f5-f031f8bd3b14",
+            "distributeForStudentWork": false,
+            "id": "bc98d7cd-7cf3-449c-b1b9-3a9683024d4e",
             "resource": {
-                "@odata.type": "#microsoft.graph.educationExternalResource",
-                "displayName": "Forms Complete (Postman Test Dev)",
-                "createdDateTime": "2022-04-13T05:09:25.9909527Z",
-                "lastModifiedDateTime": "2022-04-13T05:09:25.9919046Z",
-                "webUrl": "https://forms.office.com/Pages/AssignmentsDesignPage.aspx#TopView=Preview&FormId=kowztj5TbU-jJ5lCY3EjmS7FAyB6gIZBm0lgxXMJVGFUQVhTUzlTNE9ITlVRM04xWjMyOVVIM1VVTCQlQCN0PWcu",
+                "@odata.type": "#microsoft.graph.educationMediaResource",
+                "displayName": "WSU2-1.png",
+                "createdDateTime": "2023-09-07T13:03:14.8070185Z",
+                "lastModifiedDateTime": "2023-09-07T13:03:14.8070418Z",
+                "fileUrl": "https://graph.microsoft.com/beta/drives/b!IDwAYNkmlUucm64fxXxnzYYTuh2luKRDvUVGQBLOmvYGIrNA3ZPMS4f7fGlHPato/items/0173CEVEP5WXB7SESQPFF3VM2DR7VA4KUD",
+                "createdBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                        "displayName": null
+                    }
+                },
+                "lastModifiedBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                        "displayName": null
+                    }
+                }
+            }
+        },
+        {
+            "distributeForStudentWork": false,
+            "id": "b6f15112-dd9d-4841-befd-75d3df5cb28f",
+            "resource": {
+                "@odata.type": "#microsoft.graph.educationWordResource",
+                "displayName": "ad.docx",
+                "createdDateTime": "2023-09-07T13:03:15.8433922Z",
+                "lastModifiedDateTime": "2023-09-07T13:03:15.8434186Z",
+                "fileUrl": "https://graph.microsoft.com/beta/drives/b!IDwAYNkmlUucm64fxXxnzYYTuh2luKRDvUVGQBLOmvYGIrNA3ZPMS4f7fGlHPato/items/0173CEVEM3MHQL4F5XLNFKRHNXRW4PPJIV",
+                "createdBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                        "displayName": null
+                    }
+                },
+                "lastModifiedBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                        "displayName": null
+                    }
+                }
+            }
+        },
+        {
+            "distributeForStudentWork": false,
+            "id": "4288e8ea-1f90-4a0f-b915-b69fc823ce59",
+            "resource": {
+                "@odata.type": "#microsoft.graph.educationLinkResource",
+                "displayName": "https://dfgdrgdt",
+                "createdDateTime": "2023-09-07T15:41:08.9008331Z",
+                "lastModifiedDateTime": "2023-09-07T15:41:08.9008543Z",
+                "link": "https://dfgdrgdt",
                 "createdBy": {
                     "application": null,
                     "device": null,

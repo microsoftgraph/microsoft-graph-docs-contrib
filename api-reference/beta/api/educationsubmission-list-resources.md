@@ -191,14 +191,14 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2')/submissions('57ef8ee2-4755-4351-66d0-8e37192870a5')/resources",
     "value": [
         {
-            "assignmentResourceUrl": "https://assignments.onenote.com/api/v1.0/edu/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2/resources/781c546e-380d-4506-b093-97deca996bca",
+            "assignmentResourceUrl": "https://assignments.onenote.com/api/beta/edu/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2/resources/781c546e-380d-4506-b093-97deca996bca",
             "id": "c4682401-6866-4962-94d9-7499782a13e9",
             "resource": {
                 "@odata.type": "#microsoft.graph.educationWordResource",
                 "displayName": "Document1",
                 "createdDateTime": "2022-07-28T22:10:23.713329Z",
                 "lastModifiedDateTime": "2022-07-28T22:10:23.7133476Z",
-                "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!IDwAYNkmlUucm64fxXxnzYYTuh2luKRDvUVGQBLOmvYqism21WrdQ4Aijx5lDIKE/items/0173CEVEIK3DYCBRKZLZEYKAGP73TAVKM2",
+                "fileUrl": "https://graph.microsoft.com/beta/drives/b!IDwAYNkmlUucm64fxXxnzYYTuh2luKRDvUVGQBLOmvYqism21WrdQ4Aijx5lDIKE/items/0173CEVEIK3DYCBRKZLZEYKAGP73TAVKM2",
                 "createdBy": {
                     "application": null,
                     "device": null,
@@ -234,7 +234,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2/submissions/57ef8ee2-4755-4351-66d0-8e37192870a5/resources?$orderby= id
+GET https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/131eeaaa-829e-4c6c-9cf3-491b1320fe4d/submissions/603e719d-4bcd-7b78-be60-1194b3921b50/resources?$orderby=resource/createdDateTime
 ```
 
 ##### Response
@@ -254,17 +254,45 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2')/submissions('57ef8ee2-4755-4351-66d0-8e37192870a5')/resources",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('131eeaaa-829e-4c6c-9cf3-491b1320fe4d')/submissions('603e719d-4bcd-7b78-be60-1194b3921b50')/resources",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<2003c52e-807a-4186-9b49-60c573095461>')/assignments('<131eeaaa-829e-4c6c-9cf3-491b1320fe4d>')/submissions('<603e719d-4bcd-7b78-be60-1194b3921b50>')/resources?$select=assignmentResourceUrl,resource",
     "value": [
         {
-            "assignmentResourceUrl": "https://assignments.onenote.com/api/v1.0/edu/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2/resources/781c546e-380d-4506-b093-97deca996bca",
-            "id": "c4682401-6866-4962-94d9-7499782a13e9",
+            "assignmentResourceUrl": null,
+            "id": "8d3829c0-cf39-4e7e-b193-229ed0da2e5a",
+            "resource": {
+                "@odata.type": "#microsoft.graph.educationLinkResource",
+                "displayName": "https://efwrr",
+                "createdDateTime": "2023-09-07T15:46:13.9731771Z",
+                "lastModifiedDateTime": "2023-09-07T15:46:13.973187Z",
+                "link": "https://efwrr",
+                "createdBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                        "displayName": null
+                    }
+                },
+                "lastModifiedBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                        "displayName": null
+                    }
+                }
+            }
+        },
+        {
+            "assignmentResourceUrl": null,
+            "id": "4df04ce7-1443-4c2a-8f6d-a5807b297b4b",
             "resource": {
                 "@odata.type": "#microsoft.graph.educationWordResource",
-                "displayName": "Document1",
-                "createdDateTime": "2022-07-28T22:10:23.713329Z",
-                "lastModifiedDateTime": "2022-07-28T22:10:23.7133476Z",
-                "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!IDwAYNkmlUucm64fxXxnzYYTuh2luKRDvUVGQBLOmvYqism21WrdQ4Aijx5lDIKE/items/0173CEVEIK3DYCBRKZLZEYKAGP73TAVKM2",
+                "displayName": "Reading Progress KT_2023-04-21.docx",
+                "createdDateTime": "2023-09-07T15:46:14.9525866Z",
+                "lastModifiedDateTime": "2023-09-07T15:46:14.9525978Z",
+                "fileUrl": "https://graph.microsoft.com/beta/drives/b!IDwAYNkmlUucm64fxXxnzYYTuh2luKRDvUVGQBLOmvYqism21WrdQ4Aijx5lDIKE/items/0173CEVEIR3GGIGO7GDJFINDPHXRAPQ3M3",
                 "createdBy": {
                     "application": null,
                     "device": null,

@@ -77,7 +77,7 @@ Content-type: application/json
 {
   "value": [
     {
-      "assignmentResourceUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
+      "assignmentResourceUrl": "https://graph.microsoft.com/beta/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
       "id": "f2387c3b-ec39-4bf2-a399-d7242677f024",
       "resource": {
           "@odata.type": "#microsoft.graph.educationLinkResource",
@@ -136,7 +136,7 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('03a893d4-f64b-47e4-9e0c-afac4b357007')/submissions('be6280d6-cf92-d58e-6ca4-44babfcb2394')/submittedResources",
     "value": [
         {
-            "assignmentResourceUrl": "https://assignments.onenote.com/api/v1.0/edu/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/03a893d4-f64b-47e4-9e0c-afac4b357007/resources/45361b68-2777-42b1-aa4b-7054ce6de136",
+            "assignmentResourceUrl": "https://assignments.onenote.com/api/beta/edu/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/03a893d4-f64b-47e4-9e0c-afac4b357007/resources/45361b68-2777-42b1-aa4b-7054ce6de136",
             "id": "6d6e204d-d976-452e-a76b-14a43f77dc65",
             "resource": {
                 "@odata.type": "#microsoft.graph.educationExternalResource",
@@ -175,7 +175,7 @@ The following is an example of the request.
   "name": "get_submittedresources_orderby"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/03a893d4-f64b-47e4-9e0c-afac4b357007/submissions/be6280d6-cf92-d58e-6ca4-44babfcb2394/submittedResources?$orderby=id
+GET https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/131eeaaa-829e-4c6c-9cf3-491b1320fe4d/submissions/603e719d-4bcd-7b78-be60-1194b3921b50/submittedResources?$orderby=resource/createdDateTime
 ```
 
 ##### Response
@@ -193,22 +193,23 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('03a893d4-f64b-47e4-9e0c-afac4b357007')/submissions('be6280d6-cf92-d58e-6ca4-44babfcb2394')/submittedResources",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('131eeaaa-829e-4c6c-9cf3-491b1320fe4d')/submissions('603e719d-4bcd-7b78-be60-1194b3921b50')/submittedResources",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<2003c52e-807a-4186-9b49-60c573095461>')/assignments('<131eeaaa-829e-4c6c-9cf3-491b1320fe4d>')/submissions('<603e719d-4bcd-7b78-be60-1194b3921b50>')/submittedResources?$select=assignmentResourceUrl,resource",
     "value": [
         {
-            "assignmentResourceUrl": "https://assignments.onenote.com/api/v1.0/edu/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/03a893d4-f64b-47e4-9e0c-afac4b357007/resources/45361b68-2777-42b1-aa4b-7054ce6de136",
-            "id": "6d6e204d-d976-452e-a76b-14a43f77dc65",
+            "assignmentResourceUrl": null,
+            "id": "8d3829c0-cf39-4e7e-b193-229ed0da2e5a",
             "resource": {
-                "@odata.type": "#microsoft.graph.educationExternalResource",
-                "displayName": "Forms Complete (Postman Test Dev)",
-                "createdDateTime": "2022-04-13T02:00:32.0613061Z",
-                "lastModifiedDateTime": "2022-04-13T02:00:32.0623064Z",
-                "webUrl": "https://forms.office.com/Pages/AssignmentsDesignPage.aspx#TopView=Preview&FormId=kowztj5TbU-jJ5lCY3EjmS7FAyB6gIZBm0lgxXMJVGFUMVlZVFM2MDRCVk1NOFlRU0xJRExDWDVTQyQlQCN0PWcu",
+                "@odata.type": "#microsoft.graph.educationLinkResource",
+                "displayName": "https://efwrr",
+                "createdDateTime": "2023-09-07T15:46:18.7652482Z",
+                "lastModifiedDateTime": "2023-09-07T15:46:18.7652624Z",
+                "link": "https://efwrr",
                 "createdBy": {
                     "application": null,
                     "device": null,
                     "user": {
-                        "id": "51cf5a99-d234-4e43-96de-cd65df14bfa1",
+                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
                         "displayName": null
                     }
                 },
@@ -216,7 +217,34 @@ Content-type: application/json
                     "application": null,
                     "device": null,
                     "user": {
-                        "id": "51cf5a99-d234-4e43-96de-cd65df14bfa1",
+                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                        "displayName": null
+                    }
+                }
+            }
+        },
+        {
+            "assignmentResourceUrl": null,
+            "id": "4df04ce7-1443-4c2a-8f6d-a5807b297b4b",
+            "resource": {
+                "@odata.type": "#microsoft.graph.educationWordResource",
+                "displayName": "Reading Progress KT_2023-04-21.docx",
+                "createdDateTime": "2023-09-07T15:46:18.7652542Z",
+                "lastModifiedDateTime": "2023-09-07T15:46:28.7052498Z",
+                "fileUrl": "https://graph.microsoft.com/beta/drives/b!IDwAYNkmlUucm64fxXxnzYYTuh2luKRDvUVGQBLOmvYqism21WrdQ4Aijx5lDIKE/items/0173CEVEPIQNUEHE2FA5DIYJNDTFR4V4HK",
+                "createdBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                        "displayName": null
+                    }
+                },
+                "lastModifiedBy": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
                         "displayName": null
                     }
                 }

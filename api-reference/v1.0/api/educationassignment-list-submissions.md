@@ -401,7 +401,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Using `$search` to get submissions
+### Example 3: Using `$orderby` to get submissions
 
 ### Request
 The following is an example of the request.
@@ -409,11 +409,11 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["2003c52e-807a-4186-9b49-60c573095461","2be08d97-b140-4eec-8cbd-88238d571060"],
+  "sampleKeys": ["2003c52e-807a-4186-9b49-60c573095461"],
   "name": "get_resources_with_orderby"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2/submissions?$orderby=createdDateTime
+GET https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/131eeaaa-829e-4c6c-9cf3-491b1320fe4d/submissions?$orderby=submittedDateTime
 ```
 
 ### Response
@@ -431,33 +431,141 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2')/submissions",
-    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<2003c52e-807a-4186-9b49-60c573095461>')/assignments('<8f5311bb-ee1e-4bf0-9827-3fd8c57bdde2>')/submissions?$orderby=createdDateTime,submissions",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('2003c52e-807a-4186-9b49-60c573095461')/assignments('131eeaaa-829e-4c6c-9cf3-491b1320fe4d')/submissions",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<2003c52e-807a-4186-9b49-60c573095461>')/assignments('<131eeaaa-829e-4c6c-9cf3-491b1320fe4d>')/submissions?$select=reassignedBy,reassignedDateTime",
     "value": [
         {
-            "distributeForStudentWork": true,
-            "id": "781c546e-380d-4506-b093-97deca996bca",
-            "resource": {
-                "@odata.type": "#microsoft.graph.educationWordSubmissions",
-                "displayName": "Document1",
-                "createdDateTime": "2022-07-28T22:09:02.5774073Z",
-                "lastModifiedDateTime": "2022-07-28T22:09:02.5774271Z",
-                "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!IDwAYNkmlUucm64fxXxnzYYTuh2luKRDvUVGQBLOmvYGIrNA3ZPMS4f7fGlHPato/items/0173CEVEPI6IRKYUT6EZCLFQOSCI4UYNJQ",
-                "createdBy": {
-                    "application": null,
-                    "device": null,
-                    "user": {
-                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-                        "displayName": null
-                    }
-                },
-                "lastModifiedBy": {
-                    "application": null,
-                    "device": null,
-                    "user": {
-                        "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
-                        "displayName": null
-                    }
+            "status": "submitted",
+            "submittedDateTime": "2023-09-07T15:46:18.765279Z",
+            "unsubmittedDateTime": null,
+            "returnedDateTime": null,
+            "reassignedDateTime": null,
+            "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!IDwAYNkmlUucm64fxXxnzYYTuh2luKRDvUVGQBLOmvYqism21WrdQ4Aijx5lDIKE/items/0173CEVEMACGLQOVTLDZDJ44PCTAI7BHVN",
+            "id": "603e719d-4bcd-7b78-be60-1194b3921b50",
+            "recipient": {
+                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                "userId": "61243ddb-6f39-499d-b232-9fa8cef26b3a"
+            },
+            "submittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            },
+            "unsubmittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "returnedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "reassignedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            }
+        },
+        {
+            "status": "submitted",
+            "submittedDateTime": "2023-09-07T15:42:42.4239713Z",
+            "unsubmittedDateTime": null,
+            "returnedDateTime": null,
+            "reassignedDateTime": null,
+            "resourcesFolderUrl": null,
+            "id": "e2e96b7c-df5e-2151-2842-86a7c1d6330e",
+            "recipient": {
+                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                "userId": "51cf5a99-d234-4e43-96de-cd65df14bfa1"
+            },
+            "submittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            },
+            "unsubmittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "returnedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "reassignedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            }
+        },
+        {
+            "status": "submitted",
+            "submittedDateTime": "2023-09-08T11:57:22.879375Z",
+            "unsubmittedDateTime": null,
+            "returnedDateTime": null,
+            "reassignedDateTime": null,
+            "resourcesFolderUrl": null,
+            "id": "492ae35a-a257-f3c2-521b-ae52b32721f9",
+            "recipient": {
+                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
+                "userId": "0c5122e8-5d65-4cc8-89cd-5fe5bc35310f"
+            },
+            "submittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": "fffafb29-e8bc-4de3-8106-be76ed2ad499",
+                    "displayName": null
+                }
+            },
+            "unsubmittedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "returnedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
+                }
+            },
+            "reassignedBy": {
+                "application": null,
+                "device": null,
+                "user": {
+                    "id": null,
+                    "displayName": null
                 }
             }
         }
