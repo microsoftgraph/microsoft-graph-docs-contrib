@@ -6,12 +6,12 @@ ms.reviewer: yiheguo
 ms.localizationpriority: high
 ms.prod: "applications"
 doc_type: conceptualPageType
-ms.date: 07/11/2023
+ms.date: 09/12/2023
 ---
 
 # Access Microsoft Graph activity logs (preview)
 
-**Microsoft Graph activity logs** are an audit trail of all HTTP requests that the Microsoft Graph service received and processed for a tenant. The logs are stored in Azure Monitor Logs and tenant administrators can analyze them through the Log Analytics interface. Tenant admins can also configure exports to destinations like Azure Storage for long-term storage or use Azure Event Hubs to export to external SIEM tools for alerting, analysis, or archival.
+**Microsoft Graph activity logs** are an audit trail of all HTTP requests that the Microsoft Graph service received and processed for a tenant. Tenant administrators can enable the collection and configure downstream destinations for these logs using diagnostic settings in Azure Monitor. This allows the logs to be stored in Log Analytics for analysis, exported to Azure Storage for long-term storage, or streamed with Azure Event Hubs to external SIEM tools for alerting, analysis, or archival.
 
 All logs for API requests made from line of business applications, API clients, SDKs, and Microsoft applications like Outlook, Teams, or the Entra portal are available.
 
@@ -19,51 +19,22 @@ All logs for API requests made from line of business applications, API clients, 
 
 To access the Microsoft Graph activity logs, you need the appropriate privileges.
 
-- An Azure subscription to access the storage destination resources.
-  - [Required] An Azure Monitor Log Analytics workspace in your Azure subscription
-  - To stream to an alternative description, you need an Azure Storage Account or Azure Event Hubs namespace.
 - An Azure AD Premium P1 or P2 tenant license in your tenant.
-- A user with one of the following Azure AD administrator roles listed in the order of least to most privileged role.
+- A administrator with one of the following Azure AD administrator roles listed in the order of least to most privileged role.
   - Security Reader - To read the logs
   - Global Reader - To read the logs
   - Security Administrator – To configure diagnostic settings and read the logs
   - Global Administrator – To configure diagnostic settings and read the logs
-- Understand how to send logs to a Log Analytics workspace. For more information, see [Stream logs to Azure Monitor](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics).
+- An Azure subscription with one of the following log destinations configured:
+  - An Azure Log Analytics workspace to send logs to Azure Monitor
+  - An Azure Storage Account that you have ListKeys permissions for
+  - An Azure Event Hubs namespace to integrate with third-party solutions
 
 ## What data is available in the Microsoft Graph activity logs?
 
 The following data relating to API requests is available for Microsoft Graph activity logs on the Logs Analytics interface.
 
-<!--To use CRR to avoid duplication once the API Doctor link validation is fixed. -->
-
-| Column | Type | Description |
-| --- | --- | --- |
-| AadTenantId | String | The Azure AD tenant ID. |
-| ApiVersion | String | The API version of the event. |
-| AppId | String | The identifier for the application. |
-| _BilledSize | Real | The record size in bytes. |
-| ClientRequestId | String | Optional. The client request identifier when sent. If no client request identifier is sent, the value will be equal to the operation identifier. |
-| DurationMs | Int | The duration of the request in milliseconds. |
-| IpAddress | String | The IP address of the client from where the request occurred. |
-| _IsBillable | String | Specifies whether ingesting the data is billable. When _IsBillable is *false* ingestion isn't billed to your Azure account. |
-| Location | String | The name of the region that served the request. |
-| OperationId | String | The identifier for the batch. For non-batched requests, this will be unique per request. For batched requests, this will be the same for all requests in the batch. |
-| RequestId | String | The identifier representing the request. |
-| RequestMethod | String | The HTTP method of the event. |
-| RequestUri | String | The URI of the request. |
-| ResponseSizeBytes | Int | The size of the response in Bytes. |
-| ResponseStatusCode | Int | The HTTP response status code for the event. |
-| Roles | String | The roles in token claims. |
-| Scopes | String | The scopes in token claims. |
-| ServicePrincipalId | String | The identifier of the servicePrincipal making the request. |
-| SignInActivityId | String | The identifier representing the sign-in activitys. |
-| SourceSystem | String | The type of agent the event was collected by. For example, *OpsManager* for Windows agent, either direct connect or Operations Manager, *Linux* for all Linux agents, or *Azure* for Azure Diagnostics. |
-| TenantId | String | The Log Analytics workspace ID. |
-| TimeGenerated | Datetime | The date and time the request was received. |
-| TokenIssuedAt | Datetime | The timestamp the token was issued at. |
-| Type | String | The name of the table. |
-| UserAgent | String | The user agent information related to request. |
-| UserId | String | The identifier of the user making the request. |
+[!INCLUDE [microsoftgraphactivitylogs-include](~/../azure-monitor-ref/includes/microsoftgraphactivitylogs-include.md)]
 
 ## Sample audit scenarios for Microsoft Graph activity logs
 
