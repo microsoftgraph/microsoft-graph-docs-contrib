@@ -480,7 +480,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "resellerDelegatedAdminRelationship",
           "ChangeType": "Addition",
-          "Description": "Added the [resellerDelegatedAdminRelationship](https://learn.microsoft.com/en-us/graph/api/resources/resellerDelegatedAdminRelationship?view=graph-rest-1.0) resource",
+          "Description": "Added the [resellerDelegatedAdminRelationship](https://learn.microsoft.com/en-us/graph/api/resources/resellerDelegatedAdminRelationship?view=graph-rest-1.0) resource type.",
           "Target": "resellerDelegatedAdminRelationship"
         }
       ],
