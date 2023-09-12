@@ -15,7 +15,7 @@ request_body = UnifiedRoleEligibilityScheduleRequest(
 	principal_id = "071cc716-8147-4397-a5ba-b2105951cc0b",
 )
 
-result = await graph_client.role_management.directory.role_eligibility_schedule_requests.post(request_body = request_body)
+result = await graph_client.role_management.directory.role_eligibility_schedule_requests.post(body = request_body)
 
 
 ```

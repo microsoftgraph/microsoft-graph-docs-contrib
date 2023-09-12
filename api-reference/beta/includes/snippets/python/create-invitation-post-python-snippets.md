@@ -13,7 +13,7 @@ request_body = Invitation(
 	invite_redirect_url = "https://myapp.contoso.com",
 )
 
-result = await graph_client.invitations.post(request_body = request_body)
+result = await graph_client.invitations.post(body = request_body)
 
 
 ```

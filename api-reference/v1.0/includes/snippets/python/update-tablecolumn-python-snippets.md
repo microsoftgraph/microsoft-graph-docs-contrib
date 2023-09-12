@@ -14,7 +14,7 @@ request_body = WorkbookTableColumn(
 	values = "values-value",
 )
 
-result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.tables.by_table_id('workbookTable-id').columns.by_column_id('workbookTableColumn-id').patch(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.tables.by_table_id('workbookTable-id').columns.by_column_id('workbookTableColumn-id').patch(body = request_body)
 
 
 ```

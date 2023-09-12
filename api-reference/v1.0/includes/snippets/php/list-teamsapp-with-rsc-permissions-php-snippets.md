@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestConfiguration = new TeamsAppsRequestBuilderGetRequestConfiguration();
 $queryParameters = TeamsAppsRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->filter = "id eq 'a5228c26-a9ae-4702-90e0-79a5246d2f7d'";
-$queryParameters->expand = ["appDefinitions($select=id,authorization)"];
+$queryParameters->expand = ["appDefinitions(\$select=id,authorization)"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 

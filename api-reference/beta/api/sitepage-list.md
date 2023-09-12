@@ -40,7 +40,7 @@ GET /sites/{site-id}/pages/microsoft.graph.sitePage
 
 ## Optional query parameters
 
-This method supports the `$count`, `$expand`, `$filter`, `$orderBy`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. 
+This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$select`, and `$top` [OData query parameters](/graph/query-parameters) to help customize the response. 
 
 ## Request headers
 

@@ -31,7 +31,7 @@ request_body = ProjectParticipation(
 	),
 )
 
-result = await graph_client.me.profile.projects.post(request_body = request_body)
+result = await graph_client.me.profile.projects.post(body = request_body)
 
 
 ```

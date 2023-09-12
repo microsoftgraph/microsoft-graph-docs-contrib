@@ -19,7 +19,7 @@ request_body = ManagedDeviceMobileAppConfigurationDeviceStatus(
 	user_principal_name = "User Principal Name value",
 )
 
-result = await graph_client.device_app_management.mobile_app_configurations.by_mobile_app_configuration_id('managedDeviceMobileAppConfiguration-id').device_statuses.by_device_statuse_id('managedDeviceMobileAppConfigurationDeviceStatus-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.mobile_app_configurations.by_mobile_app_configuration_id('managedDeviceMobileAppConfiguration-id').device_statuses.by_device_statuse_id('managedDeviceMobileAppConfigurationDeviceStatus-id').patch(body = request_body)
 
 
 ```

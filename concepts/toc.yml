@@ -162,11 +162,11 @@ items:
               - name: Onboarding experience overview
                 href: onboarding-experience-overview.md
               - name: App registration
-                href: app-registration.md 
+                href: app-registration.md
               - name: App authorization
-                href: app-authorization.md 
+                href: app-authorization.md
               - name: Existing customer migration
-                href: existing-customer-migration.md  
+                href: existing-customer-migration.md
           - name: Integrate with PAM
             href: data-connect-pam.md
             displayName: Privileged Access Management
@@ -944,6 +944,8 @@ items:
                 href: migrate-exchange-web-services-authentication.md
               - name: API mapping
                 href: migrate-exchange-web-services-api-mapping.md
+          - name: Outlook REST APIs
+            href: /outlook/rest/compare-graph?context=graph/context
       - name: Use SDKs
         items:
           - name: Overview

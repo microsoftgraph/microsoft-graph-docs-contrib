@@ -15,7 +15,7 @@ request_body = UnfavoritePostRequestBody(
 	]
 )
 
-result = await graph_client.admin.service_announcement.messages.unfavorite.post(request_body = request_body)
+result = await graph_client.admin.service_announcement.messages.unfavorite.post(body = request_body)
 
 
 ```

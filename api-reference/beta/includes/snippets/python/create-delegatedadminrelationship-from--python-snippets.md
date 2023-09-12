@@ -27,7 +27,7 @@ request_body = DelegatedAdminRelationship(
 	),
 )
 
-result = await graph_client.tenant_relationships.delegated_admin_relationships.post(request_body = request_body)
+result = await graph_client.tenant_relationships.delegated_admin_relationships.post(body = request_body)
 
 
 ```

@@ -31,7 +31,7 @@ request_body = RecordResponsePostRequestBody(
 	]
 )
 
-result = await graph_client.communications.calls.by_call_id('call-id').record_response.post(request_body = request_body)
+result = await graph_client.communications.calls.by_call_id('call-id').record_response.post(body = request_body)
 
 
 ```

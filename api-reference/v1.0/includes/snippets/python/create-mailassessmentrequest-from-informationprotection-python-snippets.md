@@ -16,7 +16,7 @@ request_body = MailAssessmentRequest(
 	message_uri = "https://graph.microsoft.com/v1.0/users/c52ce8db-3e4b-4181-93c4-7d6b6bffaf60/messages/AAMkADU3MWUxOTU0LWNlOTEt=",
 )
 
-result = await graph_client.information_protection.threat_assessment_requests.post(request_body = request_body)
+result = await graph_client.information_protection.threat_assessment_requests.post(body = request_body)
 
 
 ```

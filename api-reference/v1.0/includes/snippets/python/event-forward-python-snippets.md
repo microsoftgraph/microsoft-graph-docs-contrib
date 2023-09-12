@@ -20,7 +20,7 @@ request_body = ForwardPostRequestBody(
 	comment = "Dana, hope you can make this meeting.",
 )
 
-await graph_client.me.events.by_event_id('event-id').forward.post(request_body = request_body)
+await graph_client.me.events.by_event_id('event-id').forward.post(body = request_body)
 
 
 ```

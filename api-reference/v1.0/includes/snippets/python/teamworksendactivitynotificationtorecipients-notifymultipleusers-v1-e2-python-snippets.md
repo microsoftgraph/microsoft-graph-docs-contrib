@@ -40,7 +40,7 @@ request_body = SendActivityNotificationToRecipientsPostRequestBody(
 	]
 )
 
-await graph_client.teamwork.send_activity_notification_to_recipients.post(request_body = request_body)
+await graph_client.teamwork.send_activity_notification_to_recipients.post(body = request_body)
 
 
 ```

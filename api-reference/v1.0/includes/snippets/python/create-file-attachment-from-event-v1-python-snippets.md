@@ -14,7 +14,7 @@ request_body = FileAttachment(
 	content_bytes = base64.urlsafe_b64decode("base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="),
 )
 
-result = await graph_client.me.events.by_event_id('event-id').attachments.post(request_body = request_body)
+result = await graph_client.me.events.by_event_id('event-id').attachments.post(body = request_body)
 
 
 ```

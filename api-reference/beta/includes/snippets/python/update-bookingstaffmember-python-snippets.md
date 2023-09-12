@@ -83,7 +83,7 @@ request_body = BookingStaffMember(
 	]
 )
 
-result = await graph_client.booking_businesses.by_booking_businesse_id('bookingBusiness-id').staff_members.by_staff_member_id('bookingStaffMember-id').patch(request_body = request_body)
+result = await graph_client.booking_businesses.by_booking_businesse_id('bookingBusiness-id').staff_members.by_staff_member_id('bookingStaffMember-id').patch(body = request_body)
 
 
 ```

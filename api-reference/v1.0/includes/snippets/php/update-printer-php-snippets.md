@@ -20,6 +20,6 @@ $additionalData = [
 ];
 $requestBody->setAdditionalData($additionalData);
 
-$result = $graphServiceClient->print()->printers()->byPrinterId('printer-id')->patch($requestBody)->wait();
+$result = $graphServiceClient->escapedPrint()->printers()->byPrinterId('printer-id')->patch($requestBody)->wait();
 
 ```
