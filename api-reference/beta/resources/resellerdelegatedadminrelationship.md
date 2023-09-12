@@ -19,8 +19,6 @@ Inherits from [delegatedAdminRelationship](../resources/delegatedadminrelationsh
 
 ## Properties
 
-The value is represented in ISO 8601 format for durations.
-
 |Property|Type|Description|
 |:---|:---|:---|
 |accessDetails|[delegatedAdminAccessDetails](../resources/delegatedadminaccessdetails.md)|The access details that contain the identifiers of the administrative roles that the partner administrator requests in the customer tenant. Inherited from [delegatedAdminRelationship](../resources/delegatedadminrelationship.md).|
