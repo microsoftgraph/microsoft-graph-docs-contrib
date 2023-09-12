@@ -433,7 +433,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions to the [educationAssignment: post-resources](https://learn.microsoft.com/en-us/graph/api/educationassignment-post-resources?view=graph-rest-beta).",
+          "Description": "Added support for the policy-based application permission of `EduAssignments.ReadWrite.All'",
           "Target": "educationAssignment"
         },
         {
@@ -441,7 +441,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions to the [educationAssignment: setupresourcesfolder](https://learn.microsoft.com/en-us/graph/api/educationassignment-setupresourcesfolder?view=graph-rest-beta).",
+          "Description": "Added support for the policy-based application permission of `EduAssignments.ReadWrite.All'",
           "Target": "educationAssignment"
         },
         {
@@ -449,7 +449,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions to the [educationAssignment: update](https://learn.microsoft.com/en-us/graph/api/educationassignment-update?view=graph-rest-beta).",
+          "Description": "Added support for the policy-based application permission of `EduAssignments.ReadWrite.All'",
           "Target": "educationAssignment"
         }
       ],
@@ -547,7 +547,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions to the [educationAssignment: post-resources](https://learn.microsoft.com/en-us/graph/api/educationassignment-post-resources?view=graph-rest-1.0).",
+          "Description": "Added support for the policy-based application permission of `EduAssignments.ReadWrite.All'",
           "Target": "educationAssignment"
         },
         {
@@ -555,7 +555,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions to the [educationAssignment: setupresourcesfolder](https://learn.microsoft.com/en-us/graph/api/educationassignment-setupresourcesfolder?view=graph-rest-1.0).",
+          "Description": "Added support for the policy-based application permission of `EduAssignments.ReadWrite.All'",
           "Target": "educationAssignment"
         },
         {
@@ -563,7 +563,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions to the [educationAssignment: update](https://learn.microsoft.com/en-us/graph/api/educationassignment-update?view=graph-rest-1.0).",
+          "Description": "Added support for the policy-based application permission of `EduAssignments.ReadWrite.All'",
           "Target": "educationAssignment"
         },
         {
@@ -571,7 +571,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions to the [educationAssignment: delete](https://learn.microsoft.com/en-us/graph/api/educationassignment-delete?view=graph-rest-1.0).",
+          "Description": "Added support for the policy-based application permission of `EduAssignments.ReadWrite.All'",
           "Target": "educationAssignment"
         }
       ],
