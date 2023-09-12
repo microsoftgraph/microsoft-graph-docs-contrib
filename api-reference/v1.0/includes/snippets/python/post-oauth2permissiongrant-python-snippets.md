@@ -15,7 +15,7 @@ request_body = OAuth2PermissionGrant(
 	scope = "DelegatedPermissionGrant.ReadWrite.All",
 )
 
-result = await graph_client.oauth2_permission_grants.post(request_body = request_body)
+result = await graph_client.oauth2_permission_grants.post(body = request_body)
 
 
 ```

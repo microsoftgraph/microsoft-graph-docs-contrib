@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new EnterpriseCodeSigningCertificate();
 $requestBody->setOdataType('#microsoft.graph.enterpriseCodeSigningCertificate');
-$requestBody->setContent(base64_decode('Y29udGVudA=='));
+$requestBody->setContent(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('Y29udGVudA==')));
 $requestBody->setStatus(new CertificateStatus('provisioned'));
 $requestBody->setSubjectName('Subject Name value');
 $requestBody->setSubject('Subject value');

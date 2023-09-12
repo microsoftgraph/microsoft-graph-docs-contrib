@@ -16,7 +16,7 @@ request_body = SetCloudPcReviewStatusPostRequestBody(
 	),
 )
 
-await graph_client.device_management.managed_devices.by_managed_device_id('managedDevice-id').set_cloud_pc_review_status.post(request_body = request_body)
+await graph_client.device_management.managed_devices.by_managed_device_id('managedDevice-id').set_cloud_pc_review_status.post(body = request_body)
 
 
 ```

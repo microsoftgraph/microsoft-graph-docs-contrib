@@ -16,7 +16,7 @@ request_body = ConfirmSafePostRequestBody(
 	]
 )
 
-await graph_client.audit_logs.sign_ins.confirm_safe.post(request_body = request_body)
+await graph_client.audit_logs.sign_ins.confirm_safe.post(body = request_body)
 
 
 ```

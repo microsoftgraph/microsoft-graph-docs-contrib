@@ -22,7 +22,7 @@ request_body = TodoTask(
 	]
 )
 
-result = await graph_client.me.todo.lists.by_list_id('todoTaskList-id').tasks.post(request_body = request_body)
+result = await graph_client.me.todo.lists.by_list_id('todoTaskList-id').tasks.post(body = request_body)
 
 
 ```

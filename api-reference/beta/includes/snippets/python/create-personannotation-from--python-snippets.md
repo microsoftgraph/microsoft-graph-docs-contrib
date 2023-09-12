@@ -16,7 +16,7 @@ request_body = PersonAnnotation(
 	display_name = "About Me",
 )
 
-result = await graph_client.me.profile.notes.post(request_body = request_body)
+result = await graph_client.me.profile.notes.post(body = request_body)
 
 
 ```

@@ -565,6 +565,6 @@ HTTP/1.1 204 No Content
 
 ## See also
 
-- [Automate employee onboarding tasks before their first day of work with Azure portal](/azure/active-directory/governance/tutorial-onboard-custom-workflow-portal)
+- [Automate employee onboarding tasks before their first day of work with the Microsoft Entra admin center](/azure/active-directory/governance/tutorial-onboard-custom-workflow-portal)
 - [Overview of Azure AD Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-overview)
 - [Overview of reporting in Azure AD Lifecycle Workflows](/graph/api/resources/identitygovernance-lifecycleworkflows-reporting-overview)

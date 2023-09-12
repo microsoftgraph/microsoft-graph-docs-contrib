@@ -39,7 +39,7 @@ request_body = EducationUser(
 	),
 )
 
-result = await graph_client.education.users.post(request_body = request_body)
+result = await graph_client.education.users.post(body = request_body)
 
 
 ```

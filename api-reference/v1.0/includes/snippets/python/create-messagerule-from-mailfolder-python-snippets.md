@@ -30,7 +30,7 @@ request_body = MessageRule(
 	),
 )
 
-result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').message_rules.post(request_body = request_body)
+result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').message_rules.post(body = request_body)
 
 
 ```

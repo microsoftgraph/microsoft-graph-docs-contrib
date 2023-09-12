@@ -15,7 +15,7 @@ request_body = Extension(
 	}
 )
 
-result = await graph_client.users.by_user_id('user-id').extensions.by_extension_id('extension-id').patch(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').extensions.by_extension_id('extension-id').patch(body = request_body)
 
 
 ```

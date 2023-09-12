@@ -1,0 +1,15 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```python
+
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(request_adapter)
+
+
+result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').doe_user_have_access(user_id='@user_id',tenant_id='@tenant_id',user_principal_name='@user_principal_name'.get()
+
+
+```

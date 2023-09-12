@@ -14,7 +14,7 @@ request_body = AddPasswordPostRequestBody(
 	),
 )
 
-result = await graph_client.applications.by_application_id('application-id').add_password.post(request_body = request_body)
+result = await graph_client.applications.by_application_id('application-id').add_password.post(body = request_body)
 
 
 ```

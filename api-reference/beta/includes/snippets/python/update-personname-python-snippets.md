@@ -12,7 +12,7 @@ request_body = PersonName(
 	nickname = "Kesha",
 )
 
-result = await graph_client.me.profile.names.by_name_id('personName-id').patch(request_body = request_body)
+result = await graph_client.me.profile.names.by_name_id('personName-id').patch(body = request_body)
 
 
 ```

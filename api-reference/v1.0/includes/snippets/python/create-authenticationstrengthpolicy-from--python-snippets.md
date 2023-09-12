@@ -18,7 +18,7 @@ request_body = AuthenticationStrengthPolicy(
 	]
 )
 
-result = await graph_client.policies.authentication_strength_policies.post(request_body = request_body)
+result = await graph_client.policies.authentication_strength_policies.post(body = request_body)
 
 
 ```
