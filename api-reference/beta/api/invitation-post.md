@@ -2,7 +2,7 @@
 title: "Create invitation"
 description: "Use this API to create a new invitation. Invitation adds an external user to the organization."
 ms.localizationpriority: medium
-author: "Sammak"
+author: "ppolkadots"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -77,6 +77,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-invitation-post-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-invitation-post-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

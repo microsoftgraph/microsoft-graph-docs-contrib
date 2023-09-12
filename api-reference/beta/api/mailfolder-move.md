@@ -1,7 +1,7 @@
 ---
 title: "mailFolder: move"
 description: "Move a mailfolder and its contents to another mailfolder."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -78,6 +78,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/mailfolder-move-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/mailfolder-move-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

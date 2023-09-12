@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc reports get-office365activations-user-detail get
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc reports get-office365-activations-user-detail get
 
 ```

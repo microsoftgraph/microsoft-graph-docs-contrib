@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the alert definition that contains the description, impact, and measures to mitigate or prevent a security alert from being triggered in your tenant in PIM for Azure AD roles.
+Represents the alert definition that contains the description, impact, and measures to mitigate or prevent a security [alert](unifiedrolemanagementalert.md) from being triggered in your tenant in [Privileged Identity Management (PIM) for Azure AD roles](privilegedidentitymanagementv3-overview.md).
 
 Inherits from [entity](../resources/entity.md).
 

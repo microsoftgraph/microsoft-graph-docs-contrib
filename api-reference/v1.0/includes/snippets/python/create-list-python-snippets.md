@@ -4,40 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = List()
-request_body.display_name = 'Books'
+graph_client = GraphServiceClient(request_adapter)
 
-columns_column_definition1 = ColumnDefinition()
-columns_column_definition1.name = 'Author'
+request_body = List_(
+	display_name = "Books",
+	columns = [
+		ColumnDefinition(
+			name = "Author",
+			text = TextColumn(
+			),
+		),
+		ColumnDefinition(
+			name = "PageCount",
+			number = NumberColumn(
+			),
+		),
+	]
+	list = ListInfo(
+		template = "genericList",
+	),
+)
 
-columns_column_definition1text = TextColumn()
-
-columns_column_definition1.text = columns_column_definition1text
-
-columnsArray []= columnsColumnDefinition1;
-columns_column_definition2 = ColumnDefinition()
-columns_column_definition2.name = 'PageCount'
-
-columns_column_definition2number = NumberColumn()
-
-columns_column_definition2.number = columns_column_definition2number
-
-columnsArray []= columnsColumnDefinition2;
-request_body.columns(columnsArray)
-
-
-list = ListInfo()
-list.template = 'genericList'
-
-
-request_body.list = list
-
-
-
-result = await client.sites.by_site_id('site-id').lists.post(request_body = request_body)
+result = await graph_client.sites.by_site_id('site-id').lists.post(body = request_body)
 
 
 ```

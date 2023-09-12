@@ -3,7 +3,7 @@ title: "List b2xIdentityUserFlows"
 description: "Retrieve a list of b2xIdentityUserFlow objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "jkdouglas"
+author: "nanguil"
 ms.prod: "identity-and-sign-in"
 ---
 
@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-b2xuserflows-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-b2xuserflows-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -162,6 +166,10 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows?$expand=identityProvi
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-b2xuserflows-expand-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-b2xuserflows-expand-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

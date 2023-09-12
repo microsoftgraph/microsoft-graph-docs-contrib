@@ -4,7 +4,7 @@ description: "Represents a user's override for how incoming messages from a spec
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: mail
-author: "abheek-das"
+author: "SuryaLashmiS"
 ---
 
 # inferenceClassificationOverride resource type

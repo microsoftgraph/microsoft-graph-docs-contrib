@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(request_adapter)
 
 
-
-await client.reports.get_skype_for_busines_peer_to_peer_activity_counts(period='{period}'.get()
+await graph_client.reports.get_skype_for_busines_peer_to_peer_activity_counts(period='{period}'.get()
 
 
 ```

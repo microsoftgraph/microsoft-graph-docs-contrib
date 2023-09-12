@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: Get listItem
 description: Returns the metadata for an item in a SharePoint list.
 ms.localizationpriority: high
@@ -55,7 +55,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 Do not supply a request body for this method.
 
-## Response 
+## Response
 
 If successful, this method returns a `200 OK` response code and an [item][] in the response body.
 

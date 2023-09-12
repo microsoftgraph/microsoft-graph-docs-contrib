@@ -1,7 +1,7 @@
 ---
 title: "Get delegatedAdminCustomer"
 description: "Read the properties of a delegatedAdminCustomer object."
-author: "koravva"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: apiPageType
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/v1.0/tenantRelationships/delegatedAdminCustomers
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-delegatedadmincustomer-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-delegatedadmincustomer-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -4,7 +4,7 @@ description: "List all available sites in an organization or list the sites that
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 ---
 
 # List sites

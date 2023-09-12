@@ -117,7 +117,7 @@ Each tenant defines a tenant-wide [schedule](identitygovernance-lifecyclemanagem
 
 ## License checks
 
-To preview the Lifecycle Workflows feature, you must have an Azure AD Premium P2 license in your tenant. The tenant where Lifecycle Workflows are being created must have a valid purchased, or trial, Azure AD Premium P2 license. For more information about the license requirements, see: [Lifecycle Workflows license requirements](/azure/active-directory/governance/lifecycle-workflows-deployment#licenses).
+Using this feature requires Microsoft Entra ID Governance licenses. To find the right license for your requirements, see [Compare generally available features of Micorosft Azure AD](https://www.microsoft.com/security/business/identity-access-management/azure-ad-pricing).
 
 ## Role and application permission authorization checks
 

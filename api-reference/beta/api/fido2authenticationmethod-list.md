@@ -1,7 +1,7 @@
 ---
 title: "List fido2AuthenticationMethod"
 description: "Retrieve a list of the fido2AuthenticationMethod objects and their properties."
-author: "mmcla"
+author: "calvinlui"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/me/authentication/fido2Methods
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-fido2authenticationmethod-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-fido2authenticationmethod-2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-fido2authenticationmethod-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -96,6 +100,10 @@ GET https://graph.microsoft.com/beta/me/authentication/fido2Methods
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-fido2authenticationmethod-2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-fido2authenticationmethod-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

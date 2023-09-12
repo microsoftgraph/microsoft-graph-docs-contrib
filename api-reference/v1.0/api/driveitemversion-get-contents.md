@@ -3,7 +3,7 @@ title: "Download contents of a driveItemVersion resource"
 description: "Retrieve the contents of a specific version of a driveItem."
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 doc_type: apiPageType
 ---
 
@@ -84,6 +84,10 @@ GET /me/drive/items/{item-id}/versions/{version-id}/content
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-version-contents-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-version-contents-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

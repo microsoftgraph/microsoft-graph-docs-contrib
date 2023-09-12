@@ -4,7 +4,7 @@ description: "In the Azure AD access reviews feature, list all the programContro
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "markwahl-msft"
+author: "shubhamguptacal"
 ---
 
 # List programControls of a program (deprecated)
@@ -58,6 +58,10 @@ GET https://graph.microsoft.com/beta/programs/673a7379-9c38-4f01-bd9d-4fda7260b8
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-programcontrol-from-program-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-programcontrol-from-program-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

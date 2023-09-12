@@ -4,48 +4,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Conversation()
-request_body.topic = 'Take your wellness days and rest'
+graph_client = GraphServiceClient(request_adapter)
 
-threads_conversation_thread1 = ConversationThread()
-posts_post1 = Post()
-posts_post1body = ItemBody()
-posts_post1body.contenttype(BodyType.Html('bodytype.html'))
+request_body = Conversation(
+	topic = "Take your wellness days and rest",
+	threads = [
+		ConversationThread(
+			posts = [
+				Post(
+					body = ItemBody(
+						content_type = BodyType.Html,
+						content = "Contoso cares about you: Rest and Recharge",
+					),
+					new_participants = [
+						Recipient(
+							email_address = EmailAddress(
+								name = "Adele Vance",
+								address = "AdeleV@contoso.onmicrosoft.com",
+							),
+						),
+					]
+				),
+			]
+		),
+	]
+)
 
-posts_post1body.content = 'Contoso cares about you: Rest and Recharge'
-
-
-posts_post1.body = posts_post1body
-new_participants_recipient1 = Recipient()
-new_participants_recipient1email_address = EmailAddress()
-new_participants_recipient1email_address.name = 'Adele Vance'
-
-new_participants_recipient1email_address.address = 'AdeleV@contoso.onmicrosoft.com'
-
-
-new_participants_recipient1.email_address = new_participants_recipient1email_address
-
-newParticipantsArray []= newParticipantsRecipient1;
-posts_post1.newparticipants(newParticipantsArray)
-
-
-
-postsArray []= postsPost1;
-threads_conversation_thread1.posts(postsArray)
-
-
-
-threadsArray []= threadsConversationThread1;
-request_body.threads(threadsArray)
-
-
-
-
-
-result = await client.groups.by_group_id('group-id').conversations.post(request_body = request_body)
+result = await graph_client.groups.by_group_id('group-id').conversations.post(body = request_body)
 
 
 ```

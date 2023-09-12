@@ -4,27 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = StartBreakPostRequestBody()
-notes = ItemBody()
-notes.contenttype(BodyType.Text('bodytype.text'))
+graph_client = GraphServiceClient(request_adapter)
 
-notes.content = 'start break smaple notes'
+request_body = StartBreakPostRequestBody(
+	notes = ItemBody(
+		content_type = BodyType.Text,
+		content = "start break smaple notes",
+	),
+	additional_data = {
+			"at_aproved_location" : True,
+	}
+)
 
-
-request_body.notes = notes
-additional_data = [
-'at_aproved_location' => true,
-];
-request_body.additional_data(additional_data)
-
-
-
-
-
-result = await client.teams.by_team_id('team-id').schedule.time_cards.by_time_card_id('timeCard-id').start_break.post(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').schedule.time_cards.by_time_card_id('timeCard-id').start_break.post(body = request_body)
 
 
 ```

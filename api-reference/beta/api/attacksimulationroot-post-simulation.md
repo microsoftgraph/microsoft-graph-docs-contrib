@@ -88,7 +88,6 @@ Content-type: application/json
   "durationInDays": 7,
   "attackTechnique": "credentialHarvesting",
   "status": "scheduled",
-  "durationInDays": "3",
   "includedAccountTarget": {
     "@odata.type": "#microsoft.graph.addressBookAccountTargetContent",
     "type" : "addressBook",
@@ -101,6 +100,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-simulation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-simulation-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

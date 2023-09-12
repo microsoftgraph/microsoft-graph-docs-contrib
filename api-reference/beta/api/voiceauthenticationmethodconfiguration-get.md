@@ -1,7 +1,7 @@
 ---
 title: "Get voiceAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of a voiceAuthenticationMethodConfiguration object."
-author: "jpettere"
+author: "luc-msft"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -64,6 +64,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-voiceauthenticationmethodconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-voiceauthenticationmethodconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
