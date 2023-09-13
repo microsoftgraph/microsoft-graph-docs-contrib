@@ -35,7 +35,7 @@ The following table lists scenarios for using PIM for groups APIs to manage acti
 | A principal queries their membership or ownership assignment requests and the details <br/><br/> An approver queries membership or ownership requests waiting for their approval and details of these requests | [privilegedAccessGroupAssignmentScheduleRequest: filterByCurrentUser](../api/privilegedaccessgroupassignmentschedulerequest-filterbycurrentuser.md) |
 | A principal cancels a membership or ownership assignment request they created | [privilegedAccessGroupAssignmentScheduleRequest: cancel](../api/privilegedaccessgroupassignmentschedulerequest-cancel.md) |
 | An approver gets details for approval request, including information about approval steps | [Get approval](../api/approval-get.md) |
-| An approver approves or denies approval request by approving or denying approval step | [Update approvalStep](../api/approvalstep-update.md) |
+| An approver approves or denies approval request by approving or denying approval step | [Update approvalStep](../api/approvalstage-update.md) |
 
 ## PIM for groups APIs for managing eligible assignments of group owners and members
 
