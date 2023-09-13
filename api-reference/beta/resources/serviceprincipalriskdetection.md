@@ -52,6 +52,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |servicePrincipalId|String|The unique identifier for the service principal. Supports `$filter` (`eq`).|
 |source|String|Source of the risk detection. For example, `identityProtection`.|
 |tokenIssuerType|tokenIssuerType|Indicates the type of token issuer for the detected sign-in risk. The possible values are: `AzureAD`.|
+|mitreTechniqueId|String|The ID of the MITRE ATT&CK technique for this risk detection. |
 
 ## Relationships
 None.
