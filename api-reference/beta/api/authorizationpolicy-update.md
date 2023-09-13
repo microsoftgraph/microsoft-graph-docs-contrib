@@ -138,7 +138,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_authorizationpolicy_blockmsolpowershell
+  "name": "update_authorizationpolicy_blockmsolpowershell"
 }-->
 
 ```http

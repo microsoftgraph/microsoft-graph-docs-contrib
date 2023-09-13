@@ -133,7 +133,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "update_authorizationpolicy_defaultuserrolepermissions"
+  "name": "update_authorizationpolicy_defaultuserrolepermissions_allowedtocreateapps"
 }-->
 
 ```http
@@ -230,7 +230,7 @@ The following is an example of the request that allows user consent to apps, sub
 
 <!-- {
   "blockType": "request",
-  "name": "update_authorizationpolicy_defaultuserrolepermissions"
+  "name": "update_authorizationpolicy_defaultuserrolepermissions_permissiongrantpoliciesassigned"
 }-->
 
 ```http
