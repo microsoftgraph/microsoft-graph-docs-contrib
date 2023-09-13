@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Represents a request specific to a delegated admin relationship between a partner and a customer. It allows the Microsoft partner administrator to take actions on a relationship such as locking a relationship for approval or terminating a relationship. It also allows the Microsoft indirect reseller partner administrator to approve or reject a relationship created for them by a Microsoft indirect provider partner.
 
+Base type of [resellerDelegatedAdminRelationship](resellerdelegatedadminrelationship.md).
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
