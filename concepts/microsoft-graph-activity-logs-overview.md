@@ -34,60 +34,44 @@ The following data relating to API requests is available for Microsoft Graph act
 
 [!INCLUDE [microsoftgraphactivitylogs-include](~/../azure-reference-other/azure-monitor-ref/includes/microsoftgraphactivitylogs-include.md)]
 
-## Sample audit scenarios for Microsoft Graph activity logs
+## Common use cases for Microsoft Graph activity logs
 
-- To get full visibility into the transactions made by line of business apps and other API clients that you have consented to in the tenant.
-- To analyze client app behavior that led to throttling.
-- To investigate requests that a compromised user or app made in your tenant.
-- Query for anomalous API request behavior by a client application or user​.
-- To discover the actual requests made by a user or app and correlate the information with sign in or directory audit logs.
-- To discover the permissions that a calling app was granted when they initiated a request.
-- To trigger alerts in Azure Monitor Log Analytics based on signals and patterns in the logs.
+- Get full visibility into the transactions made by applications and other API clients that you have consented to in the tenant
+- Identify the activities that a compromised user account conducted in your tenant
+- Build detections and behavioral analysis to identify suspicious or anomalous use of Microsoft Graph APIs
+- Investigate unexpected or unnecessarily privileged assignment of application permissions 
+- Identify problematic or unexpected behaviors for client applications such as extreme call volumes
+- Correlate Graph requests made by a user or app with sign in information
 
 ## Configure to receive the Microsoft Graph activity logs
 
-You can configure to stream the logs through either the Entra portal or the Azure Resource Manager APIs. For more information, see the guidance in the following articles.
+You can configure to stream the logs through either the Diagnostic Setting in Entra portal or the Azure Resource Manager APIs. For more information, see the guidance in the following articles.
 
 - [Integrate activity logs with Azure Monitor logs](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)
 - [Configure diagnosticSettings through the Azure Resource Manager API](/azure/templates/microsoft.insights/diagnosticsettings?pivots=deployment-language-arm-template)
 
+See the following aricles for guidance on configuring the storage destionantions: 
+
+- [Azure Log Analytics Workspace](/azure/active-directory/reports-monitoring/tutorial-configure-log-analytics-workspace)
+- [Azure Stroage](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal)
+- [Azure Event Hub](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-create)
+
 ## Cost planning estimates
 
-If you already have an Azure AD P1 license, you need an Azure subscription to set up the storage account, Log Analytics workspace, or Event Hubs. The Azure subscription comes at no cost, but you have to pay to utilize Azure resources. These resources could include the storage account that you use for archival and the Event Hubs that you use for streaming.
+If you already have an Azure AD P1 license, you need an Azure subscription to set up the Log Analytics workspace, Storage account, or Event Hubs. The Azure subscription comes at no cost, but you have to pay to utilize Azure resources.
 
-The amount of data logged and, thus, the cost incurred, can vary significantly depending on the tenant size and the applications your organization is using that interact with Microsoft Graph APIs. These estimations should be used for general consideration only.
+The amount of data logged and, thus, the cost incurred, can vary significantly depending on the tenant size and the applications your organization is using that interact with Microsoft Graph APIs. Here are some estimations for log data size to aid the price calculation, note that these estimations should be used for general consideration only.
 
-### Azure Storage size and cost estimates for Microsoft Graph activity logs
+| Users in tenant | Storage GiB/month | EventHubs Messages/month | Azure Monitor Logs GiB/month | 
+|-----------------|----------------|--------------------------|----------------|
+| 1000    | 14                     | 62K         | 15         |
+| 100000 | 1000                     | 4.8M       | 1200      |
 
-A Microsoft Graph activity log event uses about 1 KB of data storage. For a tenant with 100,000 users, which would incur about 1.5 million events per day, you would need about 1.4 GB of data storage per day. Because writes occur in five-minute batches, you can anticipate around 9,000 write operations per month.
+See pricing calculations for respective services:
 
-The following table contains a cost estimate in USD of, depending on the size of the tenant, a general-purpose v2 storage account in West US for at least one year of retention. To create a more accurate estimate for the data volume that you anticipate for your application, use the [Azure storage pricing calculator](https://azure.microsoft.com/pricing/details/storage/blobs).
-
-| Number of users | Events per day | Volume of data per month | Cost per month | Cost per year |
-|-----------------|----------------|--------------------------|----------------|---------------|
-| 1,000           | 500,000        | 14 GB                    | $0.30          | $3.62         |
-| 100,000         | 40M            | 1 TB                     | $18.48         | $221.78       |
-
-### Event Hubs messages and cost estimates for Microsoft Graph activity logs
-
-Events are batched into five-minute intervals and sent as a single message that contains all the events within that timeframe. A message in the Event Hubs has a maximum size of 256 KB. If the total size of all the messages within the timeframe exceeds that volume, multiple messages are sent.
-For example, about 400-500 events per second might occur for a large tenant of more than 100,000 users, a rate that equates to roughly 140,000 events every five minutes. Microsoft Graph Activity logs are about 1 KB per event, which equates to 136 MB of data. Therefore, 545 messages are sent to the event hub in that five-minute interval. 
-
-The following table contains estimated costs per month for a basic event hub in West US. The volume of event data can vary from tenant to tenant, based on factors like user Microsoft 365 application usage. To calculate an accurate estimate of the data volume that you anticipate for your application, use the [Event Hubs pricing calculator](https://azure.microsoft.com/pricing/details/event-hubs/).
-
-| Number of users | Events per second | Events per five minutes | Volume per interval | Message per month | Cost per month |
-|--|--|--|--|--|--|
-| 1,000 | 6 | 1,800 | 1.8 MB | 62,000 | $10.8 |
-| 100,000 | 460 | 140,000 | 1.33 MB | 4,800,000 | $10.94 |
-
-### Azure Monitor Logs cost estimates for Microsoft Graph activity logs
-
-| Number of users | Events per day | Events per month (30 days) | Cost per month in USD (est.) |
-|--|--|--|-:|
-| 1,000 | 500,000 | 15 million | As Basic logs: $6.60 <br/> As Analytics Logs: $29.61 <br/> Monthly Retention: $1.29 |
-| 100,000 | 40,000,000 | 1.2 billion | As Basic logs: $527.86 <br/> As Analytics Logs: $2,368.93 <br/> Monthly Retention: $103.00 |
-
-To review costs related to managing the Azure Monitor logs, see [Azure Monitor Logs pricing details](/azure/azure-monitor/logs/cost-logs#pricing-model).
+- [Log Analytics pricing details](/azure/azure-monitor/logs/cost-logs#pricing-model).
+- [Azure Storage pricing](https://azure.microsoft.com/pricing/details/storage/blobs).
+- [Event Hubs pricing](https://azure.microsoft.com/pricing/details/event-hubs/)
 
 ## Latency expectations
 
@@ -95,54 +79,44 @@ The latency is measured from the time the Microsoft Graph request is made to the
 
 ## Azure Monitor Logs query examples
 
-If you send Microsoft Graph Activity Logs to a Log Analytics workspace, you can build queries for the logs in Kusto Query Language (KQL). For more information about queries in Azure Monitor Logs, see [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview). You can use these queries for data exploration, to build alert rules, build Azure dashboards, or integrate into your custom applications using the Azure Monitor Logs API or Query SDK.
+If you send Microsoft Graph Activity Logs to a Log Analytics workspace, you can build queries for the logs in Kusto Query Language (KQL). For more information about queries in Log Analytics Workspace, see [Analyze Azure AD activity logs with Log Analytics](azure/active-directory/reports-monitoring/howto-analyze-activity-logs-log-analytics). You can use these queries for data exploration, to build alert rules, build Azure dashboards, or integrate into your custom applications using the Azure Monitor Logs API or Query SDK.
 
-The following Kusto query identifies high numbers of requests to /users APIs by app and principal.
-
-```kusto
-MicrosoftGraphActivity
-| where TimeGenerated >= ago(2h)
-| where RequestUri contains "/users"
-| summarize NumRequests=count(RequestId) by appId, servicePrincipalId, UserId
-| Sort by NumRequests desc
-| limit 20
+The following Kusto query identifies the top 20 entities making failing with requests to groups resources:
 ```
-
-The following Kusto query counts failed requests to different Groups entities by app and principals.
-
-```kusto
-MicrosoftGraphActivity
-| where TimeGenerated >= ago(2h)
+MicrosoftGraphActivityLogs
+| where TimeGenerated >= ago(3d)
 | where ResponseStatusCode==403
 | where RequestUri contains "/groups"
-| summarize UniqueRequests=count_distinct(RequestId) by appId, servicePrincipalId, UserId
-| Sort by UniqueRequests desc
+| summarize UniqueRequests=count_distinct(RequestId) by AppId, ServicePrincipalId, UserId
+| sort by UniqueRequests desc
 | limit 20
 ```
 
-## Join Microsoft Graph activity logs and sign-in logs
-
-In the Logs Analytics interface, you can use Kusto queries to correlate the Microsoft Graph activity logs and sign-in logs to identify the user who made the request as shown in the following example:
-
-```kusto
+The following Kusto query identifies resources queried or modified by potentially risky users:
+```
 MicrosoftGraphActivityLogs
-| where TimeGenerated > ago(8d)
-| extend ObjectId = iff(isempty( UserId),ServicePrincipalId, UserId)
-| extend ObjectType = iff(isempty( UserId),"ServicePrincipalId", "UserId")
-| summarize by ObjectType, ObjectId, SignInActivityId
-| join kind=leftouter (union SigninLogs, AADNonInteractiveUserSignInLogs, AADServicePrincipalSignInLogs, AADManagedIdentitySignInLogs, ADFSSignInLogs
-    | where TimeGenerated > ago(15d)
-    | summarize arg_max(TimeGenerated, *) by UniqueTokenIdentifier
-    )
-    on $left.SignInActivityId == $right.UniqueTokenIdentifier
-| project-reorder ObjectType, UserPrincipalName,ObjectId, SignInActivityId, Category
+| where TimeGenerated > ago(30d)
+| join AADRiskyUsers on $left.UserId == $right.Id
+| extend resourcePath = replace_string(replace_string(replace_regex(tostring(parse_url(RequestUri).Path), @'(\/)+','/'),'v1.0/',''),'beta/','')
+| summarize RequestCount=dcount(RequestId) by UserId, RiskState, resourcePath, RequestMethod, ResponseStatusCod
 ```
 
-<!--
-## Limitations
+The following Kusto query allows you to correlate the Microsoft Graph activity logs and sign-in logs:
+```
+MicrosoftGraphActivityLogs
+| where TimeGenerated > ago(7d)
+| join kind=leftouter (union SigninLogs, AADNonInteractiveUserSignInLogs, AADServicePrincipalSignInLogs, AADManagedIdentitySignInLogs, ADFSSignInLogs
+    | where TimeGenerated > ago(7d)
+    )
+    on $left.SignInActivityId == $right.UniqueTokenIdentifier
+```
 
-Some Microsoft Graph services communicate with other Microsoft services through Microsoft Graph APIs for background data reads or writes. Currently, the Microsoft Graph activity logs include logs for all requests to Microsoft Graph APIs for resources in your tenant. While the Microsoft Graph activity logs give you insights into the use of Microsoft Graph APIs in your tenant, we recommend using Azure AD and Microsoft 365 audit logs to analyze changes to tracked resources in your tenant, regardless of the source of the request.
+## Limitations
+<!--
+- Some Microsoft Graph services communicate with other Microsoft services through Microsoft Graph APIs for background data reads or writes. Currently, the Microsoft Graph activity logs include logs for all requests to Microsoft Graph APIs for resources in your tenant. While the Microsoft Graph activity logs give you insights into the use of Microsoft Graph APIs in your tenant, we recommend using Azure AD and Microsoft 365 audit logs to analyze changes to tracked resources in your tenant, regardless of the source of the request. 
 -->
+- The Microsoft Graph Activity Log feature allows the tenant administrators to collect logs for the resource tenant. Meaning that if you have a multi-tenant application, this feature would not allow you to see the activities your application is performing in another tenant
+- The Microsoft Graph Activity Log feature exposed through Diagnostic Setting does not include a filtering capability. However, options are available to reduce costs in Azure Log Analytics Workspace, see: [Workspact transformation] (/azure/azure-monitor/logs/tutorial-workspace-transformations-portal)
 
 ## See also
 
