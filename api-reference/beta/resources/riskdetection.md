@@ -53,6 +53,7 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |userDisplayName|string|Name of the user. |
 |userPrincipalName|string|The user principal name (UPN) of the user. |
 |additionalInfo|string|Additional information associated with the risk detection in JSON format. |
+|mitreTechniqueId|string|The ID of the MITRE ATT&CK technique for this risk detection. |
 |riskType (deprecated)|riskEventType|List of risk event types.<br />**Note:** This property is deprecated. Use **riskEventType** instead. |
 
 ### riskEventType values
