@@ -12,7 +12,7 @@ request_body = Store(
 	default_language_tag = "en-US",
 )
 
-result = await graph_client.term_store.patch(request_body = request_body)
+result = await graph_client.term_store.patch(body = request_body)
 
 
 ```

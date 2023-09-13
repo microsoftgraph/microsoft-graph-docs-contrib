@@ -13,7 +13,7 @@ request_body = ReprovisionPostRequestBody(
 	os_version = CloudPcOperatingSystem.Windows10,
 )
 
-await graph_client.device_management.virtual_endpoint.cloud_p_cs.by_cloud_p_c_id('cloudPC-id').reprovision.post(request_body = request_body)
+await graph_client.device_management.virtual_endpoint.cloud_p_cs.by_cloud_p_c_id('cloudPC-id').reprovision.post(body = request_body)
 
 
 ```

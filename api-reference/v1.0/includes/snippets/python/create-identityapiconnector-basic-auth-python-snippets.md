@@ -18,7 +18,7 @@ request_body = IdentityApiConnector(
 	),
 )
 
-result = await graph_client.identity.api_connectors.post(request_body = request_body)
+result = await graph_client.identity.api_connectors.post(body = request_body)
 
 
 ```

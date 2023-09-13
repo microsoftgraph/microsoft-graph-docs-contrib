@@ -16,7 +16,7 @@ $requestBody->setDisplayName('Display Name value');
 $requestBody->setVersion(7);
 $requestBody->setPayloadName('Payload Name value');
 $requestBody->setPayloadFileName('Payload File Name value');
-$requestBody->setPayload(base64_decode('cGF5bG9hZA=='));
+$requestBody->setPayload(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('cGF5bG9hZA==')));
 
 $result = $graphServiceClient->deviceManagement()->deviceConfigurations()->post($requestBody)->wait();
 

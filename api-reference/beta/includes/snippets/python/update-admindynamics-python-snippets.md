@@ -18,7 +18,7 @@ request_body = AdminDynamics(
 	),
 )
 
-result = await graph_client.admin.dynamics.patch(request_body = request_body)
+result = await graph_client.admin.dynamics.patch(body = request_body)
 
 
 ```

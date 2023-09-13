@@ -17,7 +17,7 @@ request_body = AddToReviewSetPostRequestBody(
 	}
 )
 
-await graph_client.compliance.ediscovery.cases.by_case_id('case-id').review_sets.by_review_set_id('reviewSet-id').microsoft_graph_ediscovery_add_to_review_set.post(request_body = request_body)
+await graph_client.compliance.ediscovery.cases.by_case_id('case-id').review_sets.by_review_set_id('reviewSet-id').microsoft_graph_ediscovery_add_to_review_set.post(body = request_body)
 
 
 ```

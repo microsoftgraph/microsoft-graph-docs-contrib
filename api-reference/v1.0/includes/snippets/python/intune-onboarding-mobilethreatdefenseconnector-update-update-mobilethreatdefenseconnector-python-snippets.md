@@ -27,7 +27,7 @@ request_body = MobileThreatDefenseConnector(
 	microsoft_defender_for_endpoint_attach_enabled = True,
 )
 
-result = await graph_client.device_management.mobile_threat_defense_connectors.by_mobile_threat_defense_connector_id('mobileThreatDefenseConnector-id').patch(request_body = request_body)
+result = await graph_client.device_management.mobile_threat_defense_connectors.by_mobile_threat_defense_connector_id('mobileThreatDefenseConnector-id').patch(body = request_body)
 
 
 ```

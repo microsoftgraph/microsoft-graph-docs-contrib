@@ -24,7 +24,7 @@ request_body = DeviceManagementExportJob(
 	expiration_date_time = "2016-12-31T23:57:57.2481234-08:00",
 )
 
-result = await graph_client.device_management.reports.export_jobs.by_export_job_id('deviceManagementExportJob-id').patch(request_body = request_body)
+result = await graph_client.device_management.reports.export_jobs.by_export_job_id('deviceManagementExportJob-id').patch(body = request_body)
 
 
 ```
