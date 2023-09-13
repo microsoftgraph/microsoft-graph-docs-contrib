@@ -21,12 +21,13 @@ To access the Microsoft Graph activity logs, you need the appropriate privileges
 
 - An Azure AD Premium P1 or P2 tenant license in your tenant.
 - An administrator with one of the following Azure AD administrator roles listed in the order of least to most privileged role.
-  - Security Administrator – To configure diagnostic settings and read the logs
-  - Global Administrator – To configure diagnostic settings and read the logs
+  - Security Administrator – To configure diagnostic settings
+  - Global Administrator – To configure diagnostic settings
 - An Azure subscription with one of the following log destinations are configured:
   - An Azure Log Analytics workspace to send logs to Azure Monitor
   - An Azure Storage Account that you have ListKeys permissions for
   - An Azure Event Hubs namespace to integrate with third-party solutions
+-  Permission to access data in the corresponding log destinations
 
 ## What data is available in the Microsoft Graph activity logs?
 
@@ -79,13 +80,13 @@ The latency is measured from the time the Microsoft Graph request is made to the
 
 ## Azure Monitor Logs query examples
 
-If you send Microsoft Graph Activity Logs to a Log Analytics workspace, you can build queries for the logs in Kusto Query Language (KQL). For more information about queries in Log Analytics Workspace, see [Analyze Azure AD activity logs with Log Analytics](azure/active-directory/reports-monitoring/howto-analyze-activity-logs-log-analytics). You can use these queries for data exploration, to build alert rules, build Azure dashboards, or integrate into your custom applications using the Azure Monitor Logs API or Query SDK.
+If you send Microsoft Graph Activity Logs to a Log Analytics workspace, you can build queries for the logs in Kusto Query Language (KQL). For more information about queries in Log Analytics Workspace, see [Analyze Azure AD activity logs with Log Analytics] (https://learn.microsoft.com/en-us/azure/active-directory/reports-monitoring/howto-analyze-activity-logs-log-analytics). You can use these queries for data exploration, to build alert rules, build Azure dashboards, or integrate into your custom applications using the Azure Monitor Logs API or Query SDK.
 
-The following Kusto query identifies the top 20 entities making failing with requests to groups resources:
+The following Kusto query identifies the top 20 entities making requests to groups resources that are failing due to authorization:
 ```
 MicrosoftGraphActivityLogs
 | where TimeGenerated >= ago(3d)
-| where ResponseStatusCode==403
+| where ResponseStatusCode == 401 or ResponseStatusCode == 403 
 | where RequestUri contains "/groups"
 | summarize UniqueRequests=count_distinct(RequestId) by AppId, ServicePrincipalId, UserId
 | sort by UniqueRequests desc
@@ -98,10 +99,10 @@ MicrosoftGraphActivityLogs
 | where TimeGenerated > ago(30d)
 | join AADRiskyUsers on $left.UserId == $right.Id
 | extend resourcePath = replace_string(replace_string(replace_regex(tostring(parse_url(RequestUri).Path), @'(\/)+','/'),'v1.0/',''),'beta/','')
-| summarize RequestCount=dcount(RequestId) by UserId, RiskState, resourcePath, RequestMethod, ResponseStatusCod
+| summarize RequestCount=dcount(RequestId) by UserId, RiskState, resourcePath, RequestMethod, ResponseStatusCode
 ```
 
-The following Kusto query allows you to correlate the Microsoft Graph activity logs and sign-in logs:
+The following Kusto query allows you to correlate the Microsoft Graph activity logs and sign-in logs. Note that your Graph activity logs from Microsoft applications will not have matching sign in log entries. To learn more, see [Sign-in logs known limitations] (/azure/active-directory/reports-monitoring/concept-sign-ins#known-limitations)
 ```
 MicrosoftGraphActivityLogs
 | where TimeGenerated > ago(7d)
@@ -110,6 +111,7 @@ MicrosoftGraphActivityLogs
     )
     on $left.SignInActivityId == $right.UniqueTokenIdentifier
 ```
+
 
 ## Limitations
 <!--
