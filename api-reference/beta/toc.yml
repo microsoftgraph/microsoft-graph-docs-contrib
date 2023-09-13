@@ -15332,7 +15332,7 @@ items:
                   - name: Get
                     href: api/customsecurityattributeaudit-get.md
                   - name: List
-                    href: api/customsecurityattributeaudit-list.md
+                    href: api/auditlogroot-list-customsecurityattributeaudits.md
                 - name: Sign-in
                   href: resources/signin.md
                   items:
