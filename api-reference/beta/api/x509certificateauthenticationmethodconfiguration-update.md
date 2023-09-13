@@ -46,10 +46,10 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/x
 
 |Property|Type|Description|
 |:---|:---|:---|
-|state|authenticationMethodState|The possible values are: `enabled`, `disabled`. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
-|certificateUserBindings|[x509CertificateUserBinding](../resources/x509certificateuserbinding.md) collection|Defines fields in the X.509 certificate that map to attributes of the Azure AD user object in order to bind the certificate to the user. The **priority** of the object determines the order in which the binding is carried out. The first binding that matches will be used and the rest ignored. |
 |authenticationModeConfiguration|[x509CertificateAuthenticationModeConfiguration](../resources/x509certificateauthenticationmodeconfiguration.md)|Defines strong authentication configurations. This configuration includes the default authentication mode and the different rules for strong authentication bindings. |
-|issuerHintsConfiguration|[x509CertificateIssuerHintsConfiguration](../resources/x509certificateissuerhintsconfiguration.md)|Determines the subject names of all the trust certificate authorities in the trust store to be sent back as hints to the client side to filter the certificates shown in certificate picker.|
+|certificateUserBindings|[x509CertificateUserBinding](../resources/x509certificateuserbinding.md) collection|Defines fields in the X.509 certificate that map to attributes of the Azure AD user object in order to bind the certificate to the user. The **priority** of the object determines the order in which the binding is carried out. The first binding that matches will be used and the rest ignored. |
+|issuerHintsConfiguration|[x509CertificateIssuerHintsConfiguration](../resources/x509certificateissuerhintsconfiguration.md)|Determines whether issuer(CA) hints are sent back to the client side to filter the certificates shown in certificate picker. |
+|state|authenticationMethodState|The possible values are: `enabled`, `disabled`. |
 
 >**Note:** The `@odata.type` property with a value of `#microsoft.graph.x509CertificateAuthenticationMethodConfiguration` must be included in the body.
 

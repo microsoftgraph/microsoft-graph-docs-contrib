@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Determines the subject names of all the trust certificate authorities in the trust store to be sent back as hints to the client side to filter the certificates shown in certificate picker.
+Determines whether issuer(CA) hints are sent back to the client side to filter the certificates shown in certificate picker.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|state|x509CertificateIssuerHintsState|Determines whether the issuer hints feature is enabled or disabled.The possible values are: `disabled`, `enabled`, `unknownFutureValue`.|
+|state|x509CertificateIssuerHintsState|The possible values are: `disabled`, `enabled`, `unknownFutureValue`.|
 
 ## Relationships
 None.
