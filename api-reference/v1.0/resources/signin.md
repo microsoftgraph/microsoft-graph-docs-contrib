@@ -25,7 +25,7 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 ## Properties
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|appDisplayName|String|App name displayed in the Azure Portal. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
+|appDisplayName|String|App name displayed in the Microsoft Entra admin center. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |appId|String|Unique GUID representing the app ID in the Azure Active Directory. <br/><br/> Supports `$filter` (`eq`).|
 |appliedConditionalAccessPolicies|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|Provides a list of conditional access policies that are triggered by the corresponding sign-in activity.|
 |clientAppUsed|String|Identifies the client used for the sign-in activity. Modern authentication clients include `Browser`, `modern clients`. Legacy authentication clients include `Exchange ActiveSync`, `IMAP`, `MAPI`, `SMTP`, `POP`, and `other clients`. <br/><br/> Supports `$filter` (`eq`).|
