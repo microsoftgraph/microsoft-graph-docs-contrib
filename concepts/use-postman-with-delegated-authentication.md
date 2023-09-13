@@ -35,14 +35,13 @@ The **Delegated** folder contains many requests for Microsoft Graph workloads th
 1. On the top right, select **Send**.
 
 You have now successfully run a Microsoft Graph request using delegated authentication.
+You can follow the previous steps to run other requests to Microsoft Graph. Note that you have to add [permissions](permissions-reference.md) to your Azure Active Directory application for other requests to work; otherwise, you get permission denied errors in your responses. To find the right permissions, check the **Permissions** section of the relevant API and look for the delegated permission type.
 
 ## Next steps
 
 Now that you have successfully made a Microsoft Graph call using delegated authentication, proceed to the next article to run your first application request.
 
 - [Use app-only authentication with Postman for Microsoft Graph](use-postman-with-app-only-authentication.md)
-
-You can follow these steps to make other requests to Microsoft Graph. Remember that you have to add [permissions](permissions-reference.md) to your Azure AD application for other requests to work; otherwise, you get permission denied errors in your responses. To find the right permissions, check the Permissions section of the relevant API, and look for Application permission type.
 
 ### Contributing to the collection
 
@@ -60,4 +59,6 @@ See [403 Forbidden "Access to OData is disabled."](resolve-auth-errors.md#403-fo
 
 ## See also
 
+- [Use Postman with the Microsoft Graph API](use-postman.md)
+- [Use app-only authentication with Postman for Microsoft Graph](use-postman-with-app-only-authentication.md)
 - [Use Postman with the Microsoft Graph connectors API](connecting-external-content-connectors-api-postman.md)

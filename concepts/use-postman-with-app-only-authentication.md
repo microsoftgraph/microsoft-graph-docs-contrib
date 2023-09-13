@@ -31,7 +31,7 @@ The **Application** folder contains many requests for Microsoft Graph workloads 
 
 1. Expand the **Application** folder, and then expand the **User** folder.
 1. Double-click **Get Users** to open the request.
-1. On the top right, select **Send**Access to OData is disabled.
+1. On the top right, select **Send**.
 
 You have now successfully run a Microsoft Graph request using application authentication.
 
@@ -41,7 +41,7 @@ You can follow the previous steps to run other requests to Microsoft Graph. Note
 
 Now that you have successfully made a Microsoft Graph call using application authentication, proceed to the next article to run your first delegated request.
 
-- [Use delegated authentication with Postman for Microsoft Graph](use-postman-with-delegated-permissions.md)
+- [Use delegated authentication with Postman for Microsoft Graph](use-postman-with-delegated-authentication.md)
 
 ### Contributing to the collection
 
@@ -59,4 +59,6 @@ See [403 Forbidden "Access to OData is disabled."](resolve-auth-errors.md#403-fo
 
 ## See also
 
+- [Use Postman with the Microsoft Graph API](use-postman.md)
+- [Use delegated authentication with Postman for Microsoft Graph](use-postman-with-delegated-authentication.md)
 - [Use Postman with the Microsoft Graph connectors API](connecting-external-content-connectors-api-postman.md)

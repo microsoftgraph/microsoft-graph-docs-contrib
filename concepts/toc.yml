@@ -883,8 +883,8 @@ items:
                 href: use-postman.md
               - name: Set up app-only authentication
                 href: use-postman-with-app-only-authentication.md
-              - name: Set up delegated permissions 
-                href: use-postman-with-delegated-permissions.md
+              - name: Set up delegated authentication 
+                href: use-postman-with-delegated-authentication.md
       - name: Migrate
         items:
           - name: Azure AD Graph
