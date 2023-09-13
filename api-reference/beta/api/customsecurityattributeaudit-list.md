@@ -38,7 +38,7 @@ GET /auditLogs/customSecurityAttributeAudits
 
 ## Optional query parameters
 
-This method supports the `$filter` (`eq`, `ge`, `le`, `startswith`), `$top`, `$orderby`, and `skiptoken` OData query parameters to help customize the response. Default and maximum for `$top` is 100. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` (`eq`, `ge`, `le`, `startswith`), `$top`, `$orderby`, and `skiptoken` OData query parameters to help customize the response. The default page size and maximum for `$top` is 100 objects. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
