@@ -38,7 +38,7 @@ headers = {
 
 )
 
-result = await graph_client.me.planner.patch(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.me.planner.patch(body = request_body, request_configuration = request_configuration)
 
 
 ```

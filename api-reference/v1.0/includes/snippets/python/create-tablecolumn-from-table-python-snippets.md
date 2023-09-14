@@ -15,7 +15,7 @@ request_body = WorkbookTableColumn(
 	values = "values-value",
 )
 
-result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.tables.by_table_id('workbookTable-id').columns.post(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.tables.by_table_id('workbookTable-id').columns.post(body = request_body)
 
 
 ```

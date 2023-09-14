@@ -14,7 +14,7 @@ request_body = IdentityProvider(
 	}
 )
 
-result = await graph_client.identity_providers.by_identity_provider_id('identityProvider-id').patch(request_body = request_body)
+result = await graph_client.identity_providers.by_identity_provider_id('identityProvider-id').patch(body = request_body)
 
 
 ```

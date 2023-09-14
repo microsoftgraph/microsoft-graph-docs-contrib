@@ -12,7 +12,7 @@ request_body = AddPostRequestBody(
 	name = "name-value",
 )
 
-result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.worksheets.add.post(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.worksheets.add.post(body = request_body)
 
 
 ```

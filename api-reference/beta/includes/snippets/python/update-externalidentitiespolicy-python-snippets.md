@@ -12,7 +12,7 @@ request_body = ExternalIdentitiesPolicy(
 	allow_external_identities_to_leave = False,
 )
 
-result = await graph_client.policies.external_identitie_policy.patch(request_body = request_body)
+result = await graph_client.policies.external_identitie_policy.patch(body = request_body)
 
 
 ```

@@ -29,7 +29,7 @@ request_body = EdiscoveryHoldPolicy(
 	}
 )
 
-result = await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').legal_holds.post(request_body = request_body)
+result = await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').legal_holds.post(body = request_body)
 
 
 ```

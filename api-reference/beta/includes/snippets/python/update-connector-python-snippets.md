@@ -20,7 +20,7 @@ request_body = PrintConnector(
 	),
 )
 
-result = await graph_client.print.connectors.by_connector_id('printConnector-id').patch(request_body = request_body)
+result = await graph_client.print.connectors.by_connector_id('printConnector-id').patch(body = request_body)
 
 
 ```

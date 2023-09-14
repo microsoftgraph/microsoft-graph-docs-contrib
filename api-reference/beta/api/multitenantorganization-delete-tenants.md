@@ -104,7 +104,6 @@ DELETE https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganizat
 
 ---
 
-
 ### Response
 
 <!-- {

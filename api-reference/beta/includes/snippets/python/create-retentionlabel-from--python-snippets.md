@@ -36,7 +36,7 @@ request_body = RetentionLabel(
 	),
 )
 
-result = await graph_client.security.labels.retention_labels.post(request_body = request_body)
+result = await graph_client.security.labels.retention_labels.post(body = request_body)
 
 
 ```

@@ -13,7 +13,7 @@ request_body = OutlookCategory(
 	color = CategoryColor.Preset9,
 )
 
-result = await graph_client.me.outlook.master_categories.post(request_body = request_body)
+result = await graph_client.me.outlook.master_categories.post(body = request_body)
 
 
 ```

@@ -21,7 +21,7 @@ request_body = CreateReplyAllPostRequestBody(
 	comment = "if the project gets approved, please take a look at the attached guidelines before you decide on the name.",
 )
 
-result = await graph_client.me.messages.by_message_id('message-id').create_reply_all.post(request_body = request_body)
+result = await graph_client.me.messages.by_message_id('message-id').create_reply_all.post(body = request_body)
 
 
 ```

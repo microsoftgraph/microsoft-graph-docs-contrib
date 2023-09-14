@@ -1,7 +1,7 @@
 ---
 title: "delegatedAdminServiceManagementDetail resource type"
 description: "Contains the management details of a service in the customer tenant that's managed by delegated administration."
-author: "koravva"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: resourcePageType
