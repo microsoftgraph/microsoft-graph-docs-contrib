@@ -34,7 +34,7 @@ For example:
 
 Items with the **folder** facet act as containers of items and therefore have a `children` reference pointing to a collection of **driveItems** under the folder.
 
->**Note:** In OneDrive for Business or SharePoint document libraries, the **cTag** property is not returned, if the **driveItem** has a [folder][] facet.
+>**Note:** In OneDrive for Business or SharePoint document libraries, the **cTag** property isn't returned, if the **driveItem** has a [folder][] facet.
 
 
 ## Methods
@@ -85,9 +85,9 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | audio                | [audio][]          | Audio metadata, if the item is an audio file. Read-only. Only on OneDrive Personal.
 | bundle               | [bundle][]         | Bundle metadata, if the item is a bundle. Read-only.
 | content              | Stream             | The content stream, if the item represents a file.
-| createdBy            | [identitySet][]    | Identity of the user, device, and application which created the item. Read-only.
+| createdBy            | [identitySet][]    | Identity of the user, device, and application, which created the item. Read-only.
 | createdDateTime      | DateTimeOffset     | Date and time of item creation. Read-only.
-| cTag                 | String             | An eTag for the content of the item. This eTag is not changed if only the metadata is changed. **Note** This property is not returned if the item is a folder. Read-only.
+| cTag                 | String             | An eTag for the content of the item. This eTag isn't changed if only the metadata is changed. **Note** This property isn't returned if the item is a folder. Read-only.
 | deleted              | [deleted][]        | Information about the deleted state of the item. Read-only.
 | description          | String             | Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.
 | eTag                 | String             | eTag for the entire item (metadata + content). Read-only.
@@ -96,7 +96,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | folder               | [folder][]         | Folder metadata, if the item is a folder. Read-only.
 | id                   | String             | The unique identifier of the item within the Drive. Read-only.
 | image                | [image][]          | Image metadata, if the item is an image. Read-only.
-| lastModifiedBy       | [identitySet][]    | Identity of the user, device, and application which last modified the item. Read-only.
+| lastModifiedBy       | [identitySet][]    | Identity of the user, device, and application, which last modified the item. Read-only.
 | lastModifiedDateTime | DateTimeOffset     | Date and time at which the item was last modified. Read-only.
 | location             | [geoCoordinates][] | Location metadata, if the item has location data. Read-only.
 | malware              | [malware][]        | Malware metadata, if the item was detected to contain malware. Read-only.
@@ -106,7 +106,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | parentReference      | [itemReference][]  | Parent information, if the item has a parent. Read-write.
 | pendingOperations    | [pendingOperations][] | If present, indicates that indicates that one or more operations that may affect the state of the driveItem are pending completion. Read-only.
 | photo                | [photo][]          | Photo metadata, if the item is a photo. Read-only.
-| publication          | [publicationFacet][] | Provides information about the published or checked-out state of an item, in locations that support such actions. This property is not returned by default. Read-only. |
+| publication          | [publicationFacet][] | Provides information about the published or checked-out state of an item, in locations that support such actions. This property isn't returned by default. Read-only. |
 | remoteItem           | [remoteItem][]     | Remote item data, if the item is shared from a drive other than the one being accessed. Read-only.
 | root                 | [root][]           | If this property is non-null, it indicates that the driveItem is the top-most driveItem in the drive.
 | searchResult         | [searchResult][]   | Search metadata, if the item is from a search result. Read-only.
@@ -138,28 +138,28 @@ The eTag value is only modified when the folder's properties are changed, except
 | subscriptions      | [subscription][] collection | The set of subscriptions on the item. Only supported on the root of a drive.
 | thumbnails         | [thumbnailSet][] collection | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
 | versions           | [driveItemVersion][] collection | The list of previous versions of the item. For more info, see [getting previous versions][]. Read-only. Nullable.
-| workbook           | [workbook][]                | For files that are Excel spreadsheets, accesses the workbook API to work with the spreadsheet's contents. Nullable.
+| workbook           | [workbook][]                | For files that are Excel spreadsheets, access to the workbook API to work with the spreadsheet's contents. Nullable.
 
 ## Instance Attributes
 
 Instance attributes are properties with special behaviors.
-These properties are temporary and either a) define behavior the service should perform or b) provide short-term property values, like a download URL for an item that expires.
+These properties are temporary and either define behavior the service should perform or provide short-term property values, like a download URL for an item that expires.
 
 | Property name                     | Type   | Description
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.conflictBehavior | string | The conflict resolution behavior for actions that create a new item. You can use the values *fail*, *replace*, or *rename*. The default for PUT is *replace*. An item will never be returned with this annotation. Write-only.
-| @microsoft.graph.downloadUrl      | string | A URL that can be used to download this file's content. Authentication is not required with this URL. Read-only.
-| @microsoft.graph.sourceUrl        | string | When issuing a PUT request, this instance annotation can be used to instruct the service to download the contents of the URL, and store it as the file. Write-only.
+| @microsoft.graph.conflictBehavior | string | The conflict resolution behavior for actions that create a new item. You can use the values *fail*, *replace*, or *rename*. The default for PUT is *replace*. An item is never returned with this annotation. Write-only.
+| @microsoft.graph.downloadUrl      | string | A URL that can be used to download this file's content. Authentication isn't required with this URL. Read-only.
+| @microsoft.graph.sourceUrl        | string | This instance annotation can be used to instruct the service to download the contents of the URL when issuing a PUT request, and stores it as the file. Write-only.
 
 **Note:** The @microsoft.graph.downloadUrl value is a short-lived URL and can't be cached.
-The URL will only be available for a short period of time (1 hour) before it is invalidated.
+The URL is only available for a short period of time (1 hour) before it's invalidated.
 Removing file permissions for a user may not immediately invalidate the URL.
 
 >**Note:** The parameter @microsoft.graph.conflictBehavior should be included in the URL instead of the body of the request.
 
 ## JSON representation
 
-Here is a JSON representation of a **driveItem** resource.
+This shows a JSON representation of a **driveItem** resource.
 
 The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits properties from that resource.
 
