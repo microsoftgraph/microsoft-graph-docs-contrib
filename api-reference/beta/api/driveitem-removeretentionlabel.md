@@ -48,17 +48,17 @@ DELETE /drives/{drive-id}/items/{id}/retentionLabel
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of a request.
+The following shows an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -73,7 +73,7 @@ DELETE https://graph.microsoft.com/beta/drives/22e064df-3562-4a3c-98c3-74721ca06
 
 ### Response
 
-The following is an example of the response.
+The following shows an example of the response.
 
 <!-- {
   "blockType": "response",
