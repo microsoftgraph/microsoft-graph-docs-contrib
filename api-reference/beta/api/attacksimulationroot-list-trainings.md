@@ -94,7 +94,7 @@ Content-Type: application/json
       "type": "dataPrivacy",
       "tags": [],
       "availabilityStatus": "available",
-      "hasEvaluation": "false",
+      "hasEvaluation": false,
       "supportedLocales": [
         "en-us",
         "de-de"
