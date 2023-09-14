@@ -7,7 +7,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduCurricula.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `EduCurricula.ReadWrite.All` to the following operations of the [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta) resource: [Create](https://learn.microsoft.com/en-us/graph/api/educationclass-post-module?view=graph-rest-beta), [Update](https://learn.microsoft.com/en-us/graph/api/educationmodule-update?view=graph-rest-beta), [Delete](https://learn.microsoft.com/en-us/graph/api/educationmodule-delete?view=graph-rest-beta), [Publish](https://learn.microsoft.com/en-us/graph/api/educationmodule-publish?view=graph-rest-beta), [Pin](https://learn.microsoft.com/en-us/graph/api/educationmodule-pin?view=graph-rest-beta), [Unpin](https://learn.microsoft.com/en-us/graph/api/educationmodule-unpin?view=graph-rest-beta), and [setUpResourcesFolder](https://learn.microsoft.com/en-us/graph/api/educationmodule-setupresourcesfolder?view=graph-rest-beta).",
+          "Description": "Added support for the application permission `EduCurricula.ReadWrite.All` to the following operations of the [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta) resource: [Create](https://learn.microsoft.com/en-us/graph/api/educationclass-post-module?view=graph-rest-beta), [Update](https://learn.microsoft.com/en-us/graph/api/educationmodule-update?view=graph-rest-beta), [Delete](https://learn.microsoft.com/en-us/graph/api/educationmodule-delete?view=graph-rest-beta), [publish](https://learn.microsoft.com/en-us/graph/api/educationmodule-publish?view=graph-rest-beta), [pin](https://learn.microsoft.com/en-us/graph/api/educationmodule-pin?view=graph-rest-beta), [unpin](https://learn.microsoft.com/en-us/graph/api/educationmodule-unpin?view=graph-rest-beta), and [setUpResourcesFolder](https://learn.microsoft.com/en-us/graph/api/educationmodule-setupresourcesfolder?view=graph-rest-beta).",
           "Target": "educationModule"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduCurricula.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `EduCurricula.ReadWrite.All` to the following operations of the [educationModuleResource](https://learn.microsoft.com/en-us/graph/api/resources/educationModuleResource?view=graph-rest-beta) resource: [Create](https://learn.microsoft.com/en-us/graph/api/educationmodule-post-resources), [Update](https://learn.microsoft.com/en-us/graph/api/educationmoduleresource-update), and [Delete](https://learn.microsoft.com/en-us/graph/api/educationmoduleresource-delete).",
+          "Description": "Added support for the application permission `EduCurricula.ReadWrite.All` to the following operations of the [educationModuleResource](https://learn.microsoft.com/en-us/graph/api/resources/educationModuleResource?view=graph-rest-beta) resource: [Create](https://learn.microsoft.com/en-us/graph/api/educationmodule-post-resources?view=graph-rest-beta), [Update](https://learn.microsoft.com/en-us/graph/api/educationmoduleresource-update?view=graph-rest-beta), and [Delete](https://learn.microsoft.com/en-us/graph/api/educationmoduleresource-delete?view=graph-rest-beta).",
           "Target": "educationModuleResource"
         }
       ],
