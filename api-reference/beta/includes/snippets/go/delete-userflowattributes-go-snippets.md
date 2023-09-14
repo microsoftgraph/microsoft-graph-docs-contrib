@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Identity().UserFlowAttributes().ByUserFlowAttributeId("identityUserFlowAttribute-id").Delete(context.Background(), nil)
+graphClient.Identity().UserFlowAttributes().ByIdentityUserFlowAttributeId("identityUserFlowAttribute-id").Delete(context.Background(), nil)
 
 
 ```

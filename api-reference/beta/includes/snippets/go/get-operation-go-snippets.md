@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Users().ByUserId("user-id").Authentication().Operations().ByOperationId("longRunningOperation-id").Get(context.Background(), nil)
+operations, err := graphClient.Users().ByUserId("user-id").Authentication().Operations().ByLongRunningOperationId("longRunningOperation-id").Get(context.Background(), nil)
 
 
 ```

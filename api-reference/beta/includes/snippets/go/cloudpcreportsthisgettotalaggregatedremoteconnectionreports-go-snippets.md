@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphdevicemanagement.NewGetTotalAggregatedRemoteConnectionReportsPostRequestBody()
@@ -28,7 +28,6 @@ select := []string {
 	"UserPrincipalName",
 	"TotalUsageInHour",
 	"DaysSinceLastSignIn",
-
 }
 requestBody.SetSelect(select)
 

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPersonAnnualEvent()
@@ -21,7 +21,7 @@ requestBody.SetType(&type)
 date := 1980-01-08
 requestBody.SetDate(&date) 
 
-result, err := graphClient.Me().Profile().Anniversaries().Post(context.Background(), requestBody, nil)
+anniversaries, err := graphClient.Me().Profile().Anniversaries().Post(context.Background(), requestBody, nil)
 
 
 ```

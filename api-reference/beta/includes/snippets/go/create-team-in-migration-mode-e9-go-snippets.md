@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewTeam()
@@ -29,7 +29,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Teams().Post(context.Background(), requestBody, nil)
+teams, err := graphClient.Teams().Post(context.Background(), requestBody, nil)
 
 
 ```

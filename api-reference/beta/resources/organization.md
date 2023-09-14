@@ -15,15 +15,12 @@ Namespace: microsoft.graph
 
 Represents the Azure Active Directory tenant that the user or application is signed in to. Only the read and update operations are supported on this resource; create and delete are not supported. Inherits from [directoryObject](directoryobject.md).
 
-This resource lets you add your own data to custom properties using [extensions](/graph/extensibility-overview).
-
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get organization](../api/organization-get.md) | [organization](organization.md) collection|Read properties and relationships of organization object.|
 |[Update organization](../api/organization-update.md) | None | Update organization object. The only properties that can be updated are: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones**, and **privacyProfile**. |
-| [Get organization settings](../api/organizationsettings-get.md) | [organizationSettings](organizationsettings.md) | Read the organization settings object. |
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
@@ -66,8 +63,8 @@ This resource lets you add your own data to custom properties using [extensions]
 | preferredLanguage | String | The preferred language for the organization. Should follow ISO 639-1 Code; for example `en`. |
 | privacyProfile | [privacyProfile](privacyprofile.md) | The privacy profile of an organization. |
 | provisionedPlans | [provisionedPlan](provisionedplan.md) collection | Not nullable. |
-| securityComplianceNotificationMails | String collection ||
-| securityComplianceNotificationPhones | String collection ||
+| securityComplianceNotificationMails | String collection | Not nullable.|
+| securityComplianceNotificationPhones | String collection | Not nullable.|
 | state | String | State name of the address for the organization. |
 | street | String | Street name of the address for organization. |
 | technicalNotificationMails |String collection | Not nullable. |
@@ -92,7 +89,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) collection| Navigation property to manage certificate-based authentication configuration. Only a single instance of certificateBasedAuthConfiguration can be created in the collection.  |
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the organization resource. Nullable.| 
-|branding|[organizationalBranding](organizationalbranding.md) collection| Resource to manage the default branding for the organization. Nullable.|
+|branding|[organizationalBranding](organizationalbranding.md)| Resource to manage the default branding for the organization. Nullable.|
 |settings|[organizationSettings](organizationsettings.md) | Retrieve the properties and relationships of organizationSettings object. Nullable.|
 
 ## JSON representation

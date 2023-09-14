@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Applications
+Import-Module Microsoft.Graph.Beta.Applications
 
-Remove-MgApplicationAppManagementPolicyByRef -ApplicationId $applicationId -AppManagementPolicyId $appManagementPolicyId
+Remove-MgBetaApplicationAppManagementPolicyByRef -ApplicationId $applicationId -AppManagementPolicyId $appManagementPolicyId
 
 ```

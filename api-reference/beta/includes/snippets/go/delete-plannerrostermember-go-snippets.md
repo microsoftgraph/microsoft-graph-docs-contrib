@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Planner().Rosters().ByRosterId("plannerRoster-id").Members().ByMemberId("plannerRosterMember-id").Delete(context.Background(), nil)
+graphClient.Planner().Rosters().ByPlannerRosterId("plannerRoster-id").Members().ByPlannerRosterMemberId("plannerRosterMember-id").Delete(context.Background(), nil)
 
 
 ```

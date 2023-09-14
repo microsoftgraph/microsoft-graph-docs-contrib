@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Beta.Groups.Item.AssignLicense.AssignLicen
 	{
 		new AssignedLicense
 		{
-			DisabledPlans = new List<113feb6c-3fe4-4440-bddc-54d774bf0318>
+			DisabledPlans = new List<Guid?>
 			{
 				Guid.Parse("113feb6c-3fe4-4440-bddc-54d774bf0318"),
 				Guid.Parse("14ab5db5-e6c4-4b20-b4bc-13e36fd2227f"),
@@ -23,14 +23,14 @@ var requestBody = new Microsoft.Graph.Beta.Groups.Item.AssignLicense.AssignLicen
 		},
 		new AssignedLicense
 		{
-			DisabledPlans = new List<A413a9ff-720c-4822-98ef-2f37c2a21f4c>
+			DisabledPlans = new List<Guid?>
 			{
 				Guid.Parse("a413a9ff-720c-4822-98ef-2f37c2a21f4c"),
 			},
 			SkuId = Guid.Parse("c7df2760-2c81-4ef7-b578-5b5392b571df"),
 		},
 	},
-	RemoveLicenses = new List<String>
+	RemoveLicenses = new List<string>
 	{
 	},
 };

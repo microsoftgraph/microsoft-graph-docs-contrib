@@ -11,11 +11,12 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().Assignments().ByAssignmentId("accessPackageAssignment-id").Get(context.Background(), nil)
+on := "target"
+filterByCurrentUser, err := graphClient.IdentityGovernance().EntitlementManagement().Assignments().FilterByCurrentUserWithOn(&on).Get(context.Background(), nil)
 
 
 ```

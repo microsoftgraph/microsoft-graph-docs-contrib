@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
@@ -27,7 +27,7 @@ configuration := &graphteams.TeamsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Teams().Get(context.Background(), configuration)
+teams, err := graphClient.Teams().Get(context.Background(), configuration)
 
 
 ```

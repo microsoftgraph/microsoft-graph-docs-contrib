@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
@@ -25,7 +25,7 @@ configuration := &graphusers.ItemCalendarEventsRequestBuilderGetRequestConfigura
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Calendar().Events().Get(context.Background(), configuration)
+events, err := graphClient.Me().Calendar().Events().Get(context.Background(), configuration)
 
 
 ```

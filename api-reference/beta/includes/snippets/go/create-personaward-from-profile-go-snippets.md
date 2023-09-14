@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPersonAward()
@@ -29,7 +29,7 @@ requestBody.SetThumbnailUrl(&thumbnailUrl)
 webUrl := "https://www.iabm.io"
 requestBody.SetWebUrl(&webUrl) 
 
-result, err := graphClient.Me().Profile().Awards().Post(context.Background(), requestBody, nil)
+awards, err := graphClient.Me().Profile().Awards().Post(context.Background(), requestBody, nil)
 
 
 ```

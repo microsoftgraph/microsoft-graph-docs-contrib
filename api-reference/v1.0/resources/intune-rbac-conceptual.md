@@ -2,7 +2,7 @@
 title: "Role-based access control in Microsoft Intune"
 description: "Intune's role-based access control determines who can perform actions on Intune objects and make changes for managed applications, users and devices.   "
 ms.localizationpriority: medium
-author: "dougeby"
+author: "jaiprakashmb"
 ms.prod: "intune"
 doc_type: conceptualPageType
 ---
@@ -16,4 +16,3 @@ Namespace: microsoft.graph
 Intune's role-based access control determines who can perform actions on Intune objects and make changes for managed applications, users and devices.   
 
 Use Graph resources to manage role-based access in Intune. See the table of content for a list of resources.
-

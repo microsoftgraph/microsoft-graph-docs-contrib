@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphgroups.NewForwardPostRequestBody()
@@ -29,13 +29,12 @@ address := "address-value"
 emailAddress.SetAddress(&address) 
 recipient.SetEmailAddress(emailAddress)
 
-toRecipients := []graphgroups.Recipientable {
+toRecipients := []graphmodels.Recipientable {
 	recipient,
-
 }
 requestBody.SetToRecipients(toRecipients)
 
-graphClient.Groups().ByGroupId("group-id").Threads().ByThreadId("conversationThread-id").Posts().ByPostId("post-id").Forward().Post(context.Background(), requestBody, nil)
+graphClient.Groups().ByGroupId("group-id").Threads().ByConversationThreadId("conversationThread-id").Posts().ByPostId("post-id").Forward().Post(context.Background(), requestBody, nil)
 
 
 ```

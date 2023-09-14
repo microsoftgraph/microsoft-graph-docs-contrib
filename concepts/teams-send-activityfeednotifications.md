@@ -36,6 +36,10 @@ Activity feed APIs work with a [Teams app](/microsoftteams/platform/overview). T
 - Activity types must be declared in the `activities` section. For details, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 - The Teams app must be installed for the recipient, either personally, or in a [team](/graph/api/resources/team) or [chat](/graph/api/resources/chat) they are part of. For more information, see [Teams app installation](/graph/api/resources/teamsappinstallation).
 
+### Permissions
+
+You can use delegated or application permissions to send activity notifications. When you use application permissions, we recommend that you use [resource-specific consent (RSC)](/microsoftteams/platform/graph-api/rsc/resource-specific-consent) because the `TeamsActivity.Send.User` permission allows the user to consent to send activity notifications. You must declare RSC permissions in your Teams app [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
+
 ### Teams app manifest changes
 
 This section describes the changes that need to be added to Teams app manifest. Note that you must be using the [Teams app manifest](/microsoftteams/platform/resources/schema/manifest-schema) version `1.7` or greater.
@@ -58,7 +62,7 @@ This section describes the changes that need to be added to Teams app manifest. 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |id|string|Azure AD app ID (client ID).|
-|resource|string|Resource associated with the Azure AD app. Also known as reply or redirect URL in the Azure Portal.|
+|resource|string|Resource associated with the Azure AD app. Also known as reply or Redirect URI in the Microsoft Entra admin center app registration overview.|
 
 > [!NOTE]
 > You might get an error if multiple Teams apps in the same scope (team, chat or user) are using the same Azure AD app. Make sure that you're using unique Azure AD apps.
@@ -92,6 +96,36 @@ This section describes the changes that need to be added to Teams app manifest. 
 > [!NOTE]
 > `actor` is a special parameter that always takes the name of the caller. In delegated calls, `actor` is the user's name. In application-only calls, it takes the name of the Teams app.
 
+#### authorization section changes
+
+```json
+"authorization": 
+{ 
+  "permissions": { 
+    "resourceSpecific": [ 
+      {
+        "type": "Application", 
+         "name": "TeamsActivity.Send.User" 
+      }, 
+      { 
+        "type": "Application",
+        "name": "TeamsActivity.Send.Group"
+      }, 
+      { 
+        "type": "Application", 
+        "name": "TeamsActivity.Send.Chat" 
+      } 
+    ] 
+  }
+} 
+
+```
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|type|string|The type of the resource-specific consent (RSC) permission.|
+|name|string|The name of the RSC permission. For more information, see [Supported RSC permissions](/microsoftteams/platform/graph-api/rsc/resource-specific-consent#supported-rsc-permissions) |
+
 ### Install the Teams app
 
 Teams apps can be installed in a team, a chat, or for a user personally, and can be distributed in multiple ways. For details, see [Teams app distribution methods](/microsoftteams/platform/concepts/deploy-and-publish/overview). Typically, [sideloading](/microsoftteams/platform/concepts/deploy-and-publish/apps-upload) is preferred for development purposes. After development, you can choose the right distribution method based on whether you want to distribute to one tenant or to all tenants.
@@ -99,6 +133,9 @@ Teams apps can be installed in a team, a chat, or for a user personally, and can
 You can also use [Teams app installation](/graph/api/resources/teamsappinstallation) APIs to manage Teams app installations.
 
 ## Send activity feed notifications to users
+
+> [!NOTE]
+> To show activity feed notifications on iOS and Android clients, the app must be included in the allow list. Only third-party apps are supported.
 
 Because a Teams app can be installed for a user, in a team, or in a chat, the notifications can be sent in these three contexts as well:
 
@@ -154,31 +191,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/chat-sendactivitynotification-for-task-created-in-chat-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/chat-sendactivitynotification-for-task-created-in-chat-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/chat-sendactivitynotification-for-task-created-in-chat-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/chat-sendactivitynotification-for-task-created-in-chat-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/chat-sendactivitynotification-for-task-created-in-chat-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/chat-sendactivitynotification-for-task-created-in-chat-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/chat-sendactivitynotification-for-task-created-in-chat-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/chat-sendactivitynotification-for-task-created-in-chat-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/chat-sendactivitynotification-for-task-created-in-chat-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/chat-sendactivitynotification-for-task-created-in-chat-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/chat-sendactivitynotification-for-task-created-in-chat-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/chat-sendactivitynotification-for-task-created-in-chat-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/chat-sendactivitynotification-for-task-created-in-chat-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/chat-sendactivitynotification-for-task-created-in-chat-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/chat-sendactivitynotification-for-task-created-in-chat-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -216,7 +257,7 @@ Content-Type: application/json
     },
     "activityType": "taskCreated",
     "previewText": {
-    	"content": "New Task Created"
+        "content": "New Task Created"
     },
     "recipient": {
         "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
@@ -232,31 +273,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-task-created-in-teams-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/team-sendactivitynotification-task-created-in-teams-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-task-created-in-teams-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-task-created-in-teams-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/team-sendactivitynotification-task-created-in-teams-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-task-created-in-teams-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/team-sendactivitynotification-task-created-in-teams-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-task-created-in-teams-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/team-sendactivitynotification-task-created-in-teams-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/team-sendactivitynotification-task-created-in-teams-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-task-created-in-teams-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/team-sendactivitynotification-task-created-in-teams-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/team-sendactivitynotification-task-created-in-teams-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/team-sendactivitynotification-task-created-in-teams-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/team-sendactivitynotification-task-created-in-teams-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -316,31 +361,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-customer-task-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/team-sendactivitynotification-customer-task-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-customer-task-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-customer-task-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/team-sendactivitynotification-customer-task-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-customer-task-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/team-sendactivitynotification-customer-task-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-customer-task-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/team-sendactivitynotification-customer-task-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/team-sendactivitynotification-customer-task-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-customer-task-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/team-sendactivitynotification-customer-task-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/team-sendactivitynotification-customer-task-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/team-sendactivitynotification-customer-task-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/team-sendactivitynotification-customer-task-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -389,31 +438,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-about-event-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/team-sendactivitynotification-about-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-about-event-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-about-event-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/team-sendactivitynotification-about-event-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-about-event-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/team-sendactivitynotification-about-event-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-about-event-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/team-sendactivitynotification-about-event-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/team-sendactivitynotification-about-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-about-event-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/team-sendactivitynotification-about-event-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/team-sendactivitynotification-about-event-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/team-sendactivitynotification-about-event-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/team-sendactivitynotification-about-event-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -463,31 +516,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-channelmember-about-event-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/team-sendactivitynotification-channelmember-about-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-channelmember-about-event-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-channelmember-about-event-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/team-sendactivitynotification-channelmember-about-event-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-channelmember-about-event-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/team-sendactivitynotification-channelmember-about-event-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-channelmember-about-event-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/team-sendactivitynotification-channelmember-about-event-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/team-sendactivitynotification-channelmember-about-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-channelmember-about-event-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/team-sendactivitynotification-channelmember-about-event-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/team-sendactivitynotification-channelmember-about-event-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/team-sendactivitynotification-channelmember-about-event-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/team-sendactivitynotification-channelmember-about-event-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -537,31 +594,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/chat-sendactivitynotification-chatmember-about-event-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/chat-sendactivitynotification-chatmember-about-event-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/chat-sendactivitynotification-chatmember-about-event-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/chat-sendactivitynotification-chatmember-about-event-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/chat-sendactivitynotification-chatmember-about-event-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/chat-sendactivitynotification-chatmember-about-event-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/chat-sendactivitynotification-chatmember-about-event-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/chat-sendactivitynotification-chatmember-about-event-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/chat-sendactivitynotification-chatmember-about-event-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/chat-sendactivitynotification-chatmember-about-event-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/chat-sendactivitynotification-chatmember-about-event-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/chat-sendactivitynotification-chatmember-about-event-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/chat-sendactivitynotification-chatmember-about-event-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/chat-sendactivitynotification-chatmember-about-event-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/chat-sendactivitynotification-chatmember-about-event-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -604,18 +665,18 @@ Content-Type: application/json
         "content": "Internal spending team has a pending finance approval requests"
     },
     "recipients": [
-    	{
-        	"@odata.type": "microsoft.graph.aadUserNotificationRecipient",
-        	"userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
-    	},
-    	{
-        	"@odata.type": "microsoft.graph.aadUserNotificationRecipient",
-        	"userId": "ab88234e-0874-477c-9638-d144296ed04f"
-    	},
-    	{
-        	"@odata.type": "microsoft.graph.aadUserNotificationRecipient",
-        	"userId": "01c64f53-69aa-42c7-9b7f-9f75195d6bfc"
-    	}
+        {
+            "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+            "userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
+        },
+        {
+            "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+            "userId": "ab88234e-0874-477c-9638-d144296ed04f"
+        },
+        {
+            "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+            "userId": "01c64f53-69aa-42c7-9b7f-9f75195d6bfc"
+        }
     ],
     "templateParameters": [
         {
@@ -627,31 +688,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/teamwork-sendactivitynotificationtorecipients-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/v1/teamwork-sendactivitynotificationtorecipients-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/teamwork-sendactivitynotificationtorecipients-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/teamwork-sendactivitynotificationtorecipients-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/v1/teamwork-sendactivitynotificationtorecipients-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/teamwork-sendactivitynotificationtorecipients-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/v1/teamwork-sendactivitynotificationtorecipients-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/teamwork-sendactivitynotificationtorecipients-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/v1/teamwork-sendactivitynotificationtorecipients-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/v1/teamwork-sendactivitynotificationtorecipients-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/teamwork-sendactivitynotificationtorecipients-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/v1/teamwork-sendactivitynotificationtorecipients-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/teamwork-sendactivitynotificationtorecipients-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/teamwork-sendactivitynotificationtorecipients-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/v1/teamwork-sendactivitynotificationtorecipients-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

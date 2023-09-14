@@ -8,18 +8,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new BookingCustomerBase
+var requestBody = new BookingCustomer
 {
 	OdataType = "#microsoft.graph.bookingCustomer",
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"displayName" , "Adele"
-		},
-		{
-			"emailAddress" , "adele@relecloud.com"
-		},
-	},
+	DisplayName = "Adele",
+	EmailAddress = "adele@relecloud.com",
 };
 var result = await graphClient.Solutions.BookingBusinesses["{bookingBusiness-id}"].Customers["{bookingCustomerBase-id}"].PatchAsync(requestBody);
 

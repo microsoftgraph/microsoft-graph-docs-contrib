@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewReferenceCreate()
 odataId := "https://graph.microsoft.com/v1.0/groups/{groupId}"
 requestBody.SetOdataId(&odataId) 
 
-graphClient.Print().Shares().ByShareId("printerShare-id").AllowedGroups().Ref().Post(context.Background(), requestBody, nil)
+graphClient.Print().Shares().ByPrinterShareId("printerShare-id").AllowedGroups().Ref().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsWorkflowItemRunItemUserProcessingResultsRequestBuilderGetQueryParameters{
@@ -22,7 +22,7 @@ configuration := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsWo
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().ByWorkflowId("workflow-id").Runs().ByRunId("run-id").UserProcessingResults().Get(context.Background(), configuration)
+userProcessingResults, err := graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().ByWorkflowId("workflow-id").Runs().ByRunId("run-id").UserProcessingResults().Get(context.Background(), configuration)
 
 
 ```

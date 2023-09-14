@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphgroups.NewReplyPostRequestBody()
@@ -26,22 +26,19 @@ body.SetContent(&content)
 post.SetBody(body)
 
 
-attachment := graphmodels.NewAttachment()
+attachment := graphmodels.NewFileAttachment()
 name := "Another file as attachment"
 attachment.SetName(&name) 
-additionalData := map[string]interface{}{
-	"contentBytes" : "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu", 
-}
-attachment.SetAdditionalData(additionalData)
+contentBytes := []byte("vGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu")
+attachment.SetContentBytes(&contentBytes) 
 
 attachments := []graphmodels.Attachmentable {
 	attachment,
-
 }
 post.SetAttachments(attachments)
 requestBody.SetPost(post)
 
-graphClient.Groups().ByGroupId("group-id").Threads().ByThreadId("conversationThread-id").Reply().Post(context.Background(), requestBody, nil)
+graphClient.Groups().ByGroupId("group-id").Threads().ByConversationThreadId("conversationThread-id").Reply().Post(context.Background(), requestBody, nil)
 
 
 ```

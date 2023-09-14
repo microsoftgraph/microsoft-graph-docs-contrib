@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewCustomSecurityAttributeDefinition()
@@ -54,11 +54,10 @@ allowedValues := []graphmodels.AllowedValueable {
 	allowedValue,
 	allowedValue1,
 	allowedValue2,
-
 }
 requestBody.SetAllowedValues(allowedValues)
 
-result, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Post(context.Background(), requestBody, nil)
+customSecurityAttributeDefinitions, err := graphClient.Directory().CustomSecurityAttributeDefinitions().Post(context.Background(), requestBody, nil)
 
 
 ```

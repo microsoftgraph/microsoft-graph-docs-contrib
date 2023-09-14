@@ -80,3 +80,7 @@ To enable and configure the cache, use the `cacheEnabled` and `cacheInvalidation
 |`response`|Complete response retrieved from Microsoft Graph for the query specified in the `resource` property of `mgt-get`|
 
 See [Caching](../customize-components/cache.md) for more details.
+
+## Localization
+
+The control does not expose any localization variables.

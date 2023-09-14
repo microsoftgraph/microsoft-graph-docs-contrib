@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewGroupSetting()
@@ -28,11 +28,10 @@ settingValue.SetValue(&value)
 
 values := []graphmodels.SettingValueable {
 	settingValue,
-
 }
 requestBody.SetValues(values)
 
-result, err := graphClient.Groups().ByGroupId("group-id").Settings().Post(context.Background(), requestBody, nil)
+settings, err := graphClient.Groups().ByGroupId("group-id").Settings().Post(context.Background(), requestBody, nil)
 
 
 ```

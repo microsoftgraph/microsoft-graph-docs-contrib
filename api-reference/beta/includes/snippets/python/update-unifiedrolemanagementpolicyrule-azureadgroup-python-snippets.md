@@ -4,38 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = UnifiedRoleManagementPolicyRule()
-request_body.@odata_type = '#microsoft.graph.unifiedRoleManagementPolicyExpirationRule'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.id = 'Expiration_EndUser_Assignment'
+request_body = UnifiedRoleManagementPolicyExpirationRule(
+	odata_type = "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
+	id = "Expiration_EndUser_Assignment",
+	is_expiration_required = True,
+	maximum_duration = "PT1H45M",
+	target = UnifiedRoleManagementPolicyRuleTarget(
+		caller = "EndUser",
+		operations = [
+			"All",
+		]
+		level = "Assignment",
+		inheritable_settings = [
+		]
+		enforced_settings = [
+		]
+	),
+)
 
-target = UnifiedRoleManagementPolicyRuleTarget()
-target.caller = 'EndUser'
-
-target.Operations(['All', ])
-
-target.level = 'Assignment'
-
-target.InheritableSettings([])
-
-target.EnforcedSettings([])
-
-
-request_body.target = target
-additional_data = [
-'is_expiration_required' => true,
-'maximum_duration' => 'PT1H45M', 
-];
-request_body.additional_data(additional_data)
-
-
-
-
-
-result = await client.policies.role_management_policies.by_role_management_policie_id('unifiedRoleManagementPolicy-id').rules.by_rule_id('unifiedRoleManagementPolicyRule-id').patch(request_body = request_body)
+result = await graph_client.policies.role_management_policies.by_role_management_policie_id('unifiedRoleManagementPolicy-id').rules.by_rule_id('unifiedRoleManagementPolicyRule-id').patch(body = request_body)
 
 
 ```

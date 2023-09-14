@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEvent()
@@ -52,13 +52,12 @@ attendee.SetEmailAddress(emailAddress)
 type := graphmodels.REQUIRED_ATTENDEETYPE 
 attendee.SetType(&type) 
 
-attendees := []graphmodels.Objectable {
+attendees := []graphmodels.attendeeable {
 	attendee,
-
 }
 requestBody.SetAttendees(attendees)
 
-result, err := graphClient.Groups().ByGroupId("group-id").Events().Post(context.Background(), requestBody, nil)
+events, err := graphClient.Groups().ByGroupId("group-id").Events().Post(context.Background(), requestBody, nil)
 
 
 ```

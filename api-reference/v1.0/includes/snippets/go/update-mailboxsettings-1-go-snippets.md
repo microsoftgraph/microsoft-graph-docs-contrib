@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewMailboxSettings()
@@ -37,7 +37,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Me().MailboxSettings().Patch(context.Background(), requestBody, nil)
+mailboxSettings, err := graphClient.Me().MailboxSettings().Patch(context.Background(), requestBody, nil)
 
 
 ```

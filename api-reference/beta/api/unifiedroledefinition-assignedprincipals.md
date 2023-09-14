@@ -1,7 +1,7 @@
 ---
 title: "unifiedRoleDefinition: assignedPrincipals"
 description: "Get the list of security principals (users, groups, and service principals) directly or transitively assigned to a specific role for different scopes."
-author: "abhijeetsinha"
+author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -65,13 +65,13 @@ You can also combine all the supported function parameters in one request for fi
 
 ## Optional query parameters
 
-This method supports the `$count`, `$select`, `$filter`, and `$orderBy` OData query parameters to help customize the response. You can also filter by the type of object using OData casting. For example, `/assignedPrincipals(transitive=false)/microsoft.graph.user` and `/assignedPrincipals(transitive=true)/microsoft.graph.servicePrincipal/$count`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$select`, `$filter`, and `$orderby` OData query parameters to help customize the response. You can also filter by the type of object using OData casting. For example, `/assignedPrincipals(transitive=false)/microsoft.graph.user` and `/assignedPrincipals(transitive=true)/microsoft.graph.servicePrincipal/$count`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|ConsistencyLevel|eventual. Required. For more information about the use of **ConsistencyLevel**, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).|
+|ConsistencyLevel|eventual. Required. For more information about the use of **ConsistencyLevel**, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).|
 
 ## Request body
 Do not supply a request body for this method.
@@ -153,12 +153,12 @@ Using the same scenario, the following examples show the counts that will be ret
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/644ef478-e28f-4e28-b9dc-3fdde9aa0b1f/assignedPrincipals(directoryScopeType='administrativeUnit', directoryScopeId ='d0c2e067-9ae9-4dbf-a280-51a51c46f432')
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/unifiedroledefinition-assignedprincipals-scope-role-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/unifiedroledefinition-assignedprincipals-scope-role-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/unifiedroledefinition-assignedprincipals-scope-role-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -200,12 +200,12 @@ Content-Type: application/json
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/644ef478-e28f-4e28-b9dc-3fdde9aa0b1f/assignedPrincipals
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/unifiedroledefinition-assignedprincipals-allscopes-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/unifiedroledefinition-assignedprincipals-allscopes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/unifiedroledefinition-assignedprincipals-allscopes-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -264,12 +264,12 @@ Content-Type: application/json
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/644ef478-e28f-4e28-b9dc-3fdde9aa0b1f/assignedPrincipals(directoryScopeType='tenant')/microsoft.graph.user
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/unifiedroledefinition-assignedprincipals-scope-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/unifiedroledefinition-assignedprincipals-scope-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/unifiedroledefinition-assignedprincipals-scope-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -314,12 +314,12 @@ The following example gets the directly assigned principals and displays an inli
 GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/644ef478-e28f-4e28-b9dc-3fdde9aa0b1f/assignedPrincipals?$count=true
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/unifiedroledefinition-assignedprincipals-minimumpermission-count-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/unifiedroledefinition-assignedprincipals-minimumpermission-count-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/unifiedroledefinition-assignedprincipals-minimumpermission-count-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

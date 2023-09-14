@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewContactMergeSuggestions()
 isEnabled := false
 requestBody.SetIsEnabled(&isEnabled) 
 
-result, err := graphClient.Me().Settings().ContactMergeSuggestions().Patch(context.Background(), requestBody, nil)
+contactMergeSuggestions, err := graphClient.Me().Settings().ContactMergeSuggestions().Patch(context.Background(), requestBody, nil)
 
 
 ```

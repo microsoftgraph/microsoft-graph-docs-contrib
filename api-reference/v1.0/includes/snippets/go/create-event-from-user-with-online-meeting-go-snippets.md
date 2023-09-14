@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -60,9 +60,8 @@ attendee.SetEmailAddress(emailAddress)
 type := graphmodels.REQUIRED_ATTENDEETYPE 
 attendee.SetType(&type) 
 
-attendees := []graphmodels.Objectable {
+attendees := []graphmodels.attendeeable {
 	attendee,
-
 }
 requestBody.SetAttendees(attendees)
 allowNewTimeProposals := true
@@ -72,7 +71,7 @@ requestBody.SetIsOnlineMeeting(&isOnlineMeeting)
 onlineMeetingProvider := graphmodels.TEAMSFORBUSINESS_ONLINEMEETINGPROVIDERTYPE 
 requestBody.SetOnlineMeetingProvider(&onlineMeetingProvider) 
 
-result, err := graphClient.Me().Events().Post(context.Background(), requestBody, configuration)
+events, err := graphClient.Me().Events().Post(context.Background(), requestBody, configuration)
 
 
 ```

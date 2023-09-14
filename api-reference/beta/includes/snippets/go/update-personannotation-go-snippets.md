@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPersonAnnotation()
 allowedAudiences := graphmodels.ORGANIZATION_ALLOWEDAUDIENCES 
 requestBody.SetAllowedAudiences(&allowedAudiences) 
 
-result, err := graphClient.Users().ByUserId("user-id").Profile().Notes().ByNoteId("personAnnotation-id").Patch(context.Background(), requestBody, nil)
+notes, err := graphClient.Users().ByUserId("user-id").Profile().Notes().ByPersonAnnotationId("personAnnotation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

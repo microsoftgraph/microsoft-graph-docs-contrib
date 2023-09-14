@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPersonAnnualEvent()
 allowedAudiences := graphmodels.CONTACTS_ALLOWEDAUDIENCES 
 requestBody.SetAllowedAudiences(&allowedAudiences) 
 
-result, err := graphClient.Me().Profile().Anniversaries().ByAnniversarieId("personAnnualEvent-id").Patch(context.Background(), requestBody, nil)
+anniversaries, err := graphClient.Me().Profile().Anniversaries().ByPersonAnnualEventId("personAnnualEvent-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -12,7 +12,7 @@ author: DarrelMiller
 [Batching](../json-batching.md) is a way of combining multiple requests into a single HTTP request. The requests are combined in a single JSON payload, which is sent via POST to the `\$batch` endpoint. Microsoft Graph SDKs have a set of classes to simplify how you create batch payloads and parse batch response payloads.
 
 > [!IMPORTANT]
-> For current limitations with JSON batching in Microsoft Graph, see [Known Issues](../known-issues.md#json-batching).
+> For current limitations with JSON batching in Microsoft Graph, see [Known Issues](https://developer.microsoft.com/en-us/graph/known-issues/?filterBy=JSON%20batching&search=).
 
 ## Create a batch request
 
@@ -30,17 +30,17 @@ This example shows how to send multiple requests in a batch that are not depende
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/BatchRequests.cs" id="SimpleBatchSnippet":::
 
-### [TypeScript](#tab/typescript)
+### [Go](#tab/go)
 
-:::code language="typescript" source="./snippets/typescript/src/snippets/batchRequests.ts" id="SimpleBatchSnippet":::
+:::code language="go" source="./snippets/go/src/snippets/batch_requests.go" id="SimpleBatchSnippet":::
 
 ### [Java](#tab/java)
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/BatchRequests.java" id="SimpleBatchSnippet":::
 
-### [Go](#tab/go)
+### [TypeScript](#tab/typescript)
 
-:::code language="go" source="./snippets/go/src/snippets/batch_requests.go" id="SimpleBatchSnippet":::
+:::code language="typescript" source="./snippets/typescript/src/snippets/batchRequests.ts" id="SimpleBatchSnippet":::
 
 ---
 
@@ -55,16 +55,16 @@ This example shows how to send multiple requests in a batch that are dependent o
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/BatchRequests.cs" id="DependentBatchSnippet":::
 
-### [TypeScript](#tab/typescript)
+### [Go](#tab/go)
 
-:::code language="typescript" source="./snippets/typescript/src/snippets/batchRequests.ts" id="DependentBatchSnippet":::
+:::code language="go" source="./snippets/go/src/snippets/batch_requests.go" id="DependentBatchSnippet":::
 
 ### [Java](#tab/java)
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/BatchRequests.java" id="DependentBatchSnippet":::
 
-### [Go](#tab/go)
+### [TypeScript](#tab/typescript)
 
-:::code language="go" source="./snippets/go/src/snippets/batch_requests.go" id="DependentBatchSnippet":::
+:::code language="typescript" source="./snippets/typescript/src/snippets/batchRequests.ts" id="DependentBatchSnippet":::
 
 ---

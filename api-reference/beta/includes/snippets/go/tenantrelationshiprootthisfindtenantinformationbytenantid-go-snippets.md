@@ -11,11 +11,12 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.TenantRelationships().FindTenantInformationByTenantId(tenantId='{tenantId}')().Get(context.Background(), nil)
+tenantId := "{tenantId}"
+findTenantInformationByTenantId, err := graphClient.TenantRelationships().FindTenantInformationByTenantIdWithTenantId(&tenantId).Get(context.Background(), nil)
 
 
 ```

@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Teamwork().DeletedTeams().ByDeletedTeamId("deletedTeam-id").Channels().GetAllMessages().Get(context.Background(), nil)
+getAllMessages, err := graphClient.Teamwork().DeletedTeams().ByDeletedTeamId("deletedTeam-id").Channels().GetAllMessages().Get(context.Background(), nil)
 
 
 ```

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPlace()
@@ -45,7 +45,7 @@ altitudeAccuracy := null
 geoCoordinates.SetAltitudeAccuracy(&altitudeAccuracy) 
 requestBody.SetGeoCoordinates(geoCoordinates)
 
-result, err := graphClient.Places().ByPlaceId("place-id").Patch(context.Background(), requestBody, nil)
+places, err := graphClient.Places().ByPlaceId("place-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

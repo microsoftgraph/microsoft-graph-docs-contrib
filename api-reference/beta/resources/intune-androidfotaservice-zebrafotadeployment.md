@@ -25,7 +25,7 @@ The Zebra FOTA deployment entity that describes settings, deployment device grou
 |[Create zebraFotaDeployment](../api/intune-androidfotaservice-zebrafotadeployment-create.md)|[zebraFotaDeployment](../resources/intune-androidfotaservice-zebrafotadeployment.md)|Create a new [zebraFotaDeployment](../resources/intune-androidfotaservice-zebrafotadeployment.md) object.|
 |[Delete zebraFotaDeployment](../api/intune-androidfotaservice-zebrafotadeployment-delete.md)|None|Deletes a [zebraFotaDeployment](../resources/intune-androidfotaservice-zebrafotadeployment.md).|
 |[Update zebraFotaDeployment](../api/intune-androidfotaservice-zebrafotadeployment-update.md)|[zebraFotaDeployment](../resources/intune-androidfotaservice-zebrafotadeployment.md)|Update the properties of a [zebraFotaDeployment](../resources/intune-androidfotaservice-zebrafotadeployment.md) object.|
-|[cancel action](../api/intune-androidfotaservice-zebrafotadeployment-cancel.md)|Boolean|Not yet documented|
+|[cancel action](../api/intune-androidfotaservice-zebrafotadeployment-cancel.md)|Boolean||
 
 ## Properties
 |Property|Type|Description|

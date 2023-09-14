@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAuthenticationFlowsPolicy()
@@ -21,7 +21,7 @@ isEnabled := true
 selfServiceSignUp.SetIsEnabled(&isEnabled) 
 requestBody.SetSelfServiceSignUp(selfServiceSignUp)
 
-result, err := graphClient.Policies().AuthenticationFlowsPolicy().Patch(context.Background(), requestBody, nil)
+authenticationFlowsPolicy, err := graphClient.Policies().AuthenticationFlowsPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /admin/windows/updates/catalog/entries
 ```
 ## Optional query parameters
-This method supports some of the [OData query parameters](/graph/query-parameters) to help customize the response, including `$count`, `$filter`, `$orderBy`, `$select`, `$skip`, and `$top`.
+This method supports some of the [OData query parameters](/graph/query-parameters) to help customize the response, including `$count`, `$filter`, `$orderby`, `$select`, `$skip`, and `$top`.
 
 To use a query parameter on a property that is not inherited from **catalogEntry**, include the full resource type for the property. For example, to filter on the **version** property of [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md) that equals 'Windows 11, version 22H2' , use `?$filter=microsoft.graph.windowsUpdates.featureUpdateCatalogEntry/version eq 'Windows 11, version 22H2'`.
 
@@ -71,24 +71,28 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-catalogentry-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-catalogentry-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-catalogentry-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-catalogentry-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-catalogentry-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-catalogentry-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-catalogentry-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-catalogentry-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-catalogentry-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-catalogentry-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -124,11 +128,24 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
       "id": "d0c03fbb-43b9-4dff-840b-974ef227384d",
-      "displayName": "String",
-      "releaseDateTime": "String (timestamp)",
-      "deployableUntilDateTime": "String (timestamp)",
+      "displayName": "07/11/2023 - 2023.07 B SecurityUpdate for Windows 10 and later",
+      "catalogName": "2023-07 Cumulative Update for Windows 10 and later",
+      "shortName": "2023.07 B",
+      "releaseDateTime": "2023-07-11T00:00:00Z",
+      "deployableUntilDateTime": null,
       "isExpeditable": true,
-      "qualityUpdateClassification": "security"
+      "qualityUpdateClassification": "security",
+      "qualityUpdateCadence": "monthly",
+      "cveSeverityInformation": {
+        "maxSeverity": "critical",
+        "maxBaseScore": 9.8,
+        "exploitedCves": [
+          {
+            "number": "CVE-2023-32046",
+            "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-32046"
+          }
+        ]
+      }
     }
   ]
 }

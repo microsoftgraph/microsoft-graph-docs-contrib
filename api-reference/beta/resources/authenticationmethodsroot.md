@@ -1,7 +1,7 @@
 ---
 title: "authenticationMethodsRoot resource type"
-description: "Container for navigation properties for Azure AD authentication methods resources."
-author: "besiler"
+description: "Container for navigation properties of resources for Azure Active Directory authentication methods."
+author: "egreenberg14"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Container for navigation properties for Azure AD authentication methods resources.
+Container for navigation properties of resources for Azure Active Directory authentication methods.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -22,17 +22,21 @@ Inherits from [entity](../resources/entity.md).
 None.
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String| A unique identifier. Inherited from [entity](../resources/entity.md).|
+|id|String| The unique identifier. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|userRegistrationDetails|[userRegistrationDetails](../resources/userRegistrationDetails.md)| Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of (such as multi-factor authentication, self-service password reset, and passwordless authentication).|
+|userRegistrationDetails|[userRegistrationDetails](../resources/userregistrationdetails.md)| Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of (such as multi-factor authentication, self-service password reset, and passwordless authentication).|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
+
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelsindustrydata.NewSourceSystemDefinition()
@@ -54,11 +54,10 @@ userMatchingSetting1.SetAdditionalData(additionalData)
 userMatchingSettings := []graphmodelsindustrydata.UserMatchingSettingable {
 	userMatchingSetting,
 	userMatchingSetting1,
-
 }
 requestBody.SetUserMatchingSettings(userMatchingSettings)
 
-result, err := graphClient.External().IndustryData().SourceSystems().Post(context.Background(), requestBody, nil)
+sourceSystems, err := graphClient.External().IndustryData().SourceSystems().Post(context.Background(), requestBody, nil)
 
 
 ```

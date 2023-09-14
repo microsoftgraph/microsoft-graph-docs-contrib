@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Users().ByUserId("user-id").TransitiveMemberOf().Get(context.Background(), nil)
+transitiveMemberOf, err := graphClient.Users().ByUserId("user-id").TransitiveMemberOf().Get(context.Background(), nil)
 
 
 ```

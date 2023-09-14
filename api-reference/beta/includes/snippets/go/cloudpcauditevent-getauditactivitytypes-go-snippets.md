@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().AuditEvents().GetAuditActivityTypes().Get(context.Background(), nil)
+getAuditActivityTypes, err := graphClient.DeviceManagement().VirtualEndpoint().AuditEvents().GetAuditActivityTypes().Get(context.Background(), nil)
 
 
 ```

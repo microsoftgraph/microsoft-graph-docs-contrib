@@ -6,136 +6,74 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestBody = new AuthenticationEventsFlow();
-$requestBody->set@odatatype('#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow');
+$requestBody = new ExternalUsersSelfServiceSignUpEventsFlow();
+$requestBody->setOdataType('#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow');
+$onAttributeCollection = new OnAttributeCollectionExternalUsersSelfServiceSignUp();
+$onAttributeCollection->setOdataType('#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp');
+$onAttributeCollectionAttributeCollectionPage = new AuthenticationAttributeCollectionPage();
+$onAttributeCollectionAttributeCollectionPage->setCustomStringsFileId(null);
+$viewsAuthenticationAttributeCollectionPageViewConfiguration1 = new AuthenticationAttributeCollectionPageViewConfiguration();
+$viewsAuthenticationAttributeCollectionPageViewConfiguration1->setTitle(null);
+$viewsAuthenticationAttributeCollectionPageViewConfiguration1->setDescription(null);
+$inputsAuthenticationAttributeCollectionInputConfiguration1 = new AuthenticationAttributeCollectionInputConfiguration();
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setAttribute('email');
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setLabel('Email Address');
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setInputType(new AuthenticationAttributeCollectionInputType('text'));
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setDefaultValue(null);
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setHidden(true);
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setEditable(false);
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setWriteToDirectory(true);
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setRequired(true);
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setValidationRegEx('^[a-zA-Z0-9.!#$%&amp;&#8217;\'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$');
+$inputsAuthenticationAttributeCollectionInputConfiguration1->setOptions([	]);
+$inputsArray []= $inputsAuthenticationAttributeCollectionInputConfiguration1;
+$inputsAuthenticationAttributeCollectionInputConfiguration2 = new AuthenticationAttributeCollectionInputConfiguration();
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setAttribute('displayName');
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setLabel('Display Name');
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setInputType(new AuthenticationAttributeCollectionInputType('text'));
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setDefaultValue(null);
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setHidden(false);
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setEditable(true);
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setWriteToDirectory(true);
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setRequired(false);
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setValidationRegEx('^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$');
+$inputsAuthenticationAttributeCollectionInputConfiguration2->setOptions([	]);
+$inputsArray []= $inputsAuthenticationAttributeCollectionInputConfiguration2;
+$inputsAuthenticationAttributeCollectionInputConfiguration3 = new AuthenticationAttributeCollectionInputConfiguration();
+$inputsAuthenticationAttributeCollectionInputConfiguration3->setAttribute('city');
+$inputsAuthenticationAttributeCollectionInputConfiguration3->setLabel('City');
+$inputsAuthenticationAttributeCollectionInputConfiguration3->setInputType(new AuthenticationAttributeCollectionInputType('text'));
+$inputsAuthenticationAttributeCollectionInputConfiguration3->setDefaultValue(null);
+$inputsAuthenticationAttributeCollectionInputConfiguration3->setHidden(false);
+$inputsAuthenticationAttributeCollectionInputConfiguration3->setEditable(true);
+$inputsAuthenticationAttributeCollectionInputConfiguration3->setWriteToDirectory(true);
+$inputsAuthenticationAttributeCollectionInputConfiguration3->setRequired(false);
+$inputsAuthenticationAttributeCollectionInputConfiguration3->setValidationRegEx('^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$');
+$inputsAuthenticationAttributeCollectionInputConfiguration3->setOptions([	]);
+$inputsArray []= $inputsAuthenticationAttributeCollectionInputConfiguration3;
+$inputsAuthenticationAttributeCollectionInputConfiguration4 = new AuthenticationAttributeCollectionInputConfiguration();
+$inputsAuthenticationAttributeCollectionInputConfiguration4->setAttribute('extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor');
+$inputsAuthenticationAttributeCollectionInputConfiguration4->setLabel('Favorite color');
+$inputsAuthenticationAttributeCollectionInputConfiguration4->setInputType(new AuthenticationAttributeCollectionInputType('text'));
+$inputsAuthenticationAttributeCollectionInputConfiguration4->setDefaultValue(null);
+$inputsAuthenticationAttributeCollectionInputConfiguration4->setHidden(false);
+$inputsAuthenticationAttributeCollectionInputConfiguration4->setEditable(true);
+$inputsAuthenticationAttributeCollectionInputConfiguration4->setWriteToDirectory(true);
+$inputsAuthenticationAttributeCollectionInputConfiguration4->setRequired(false);
+$inputsAuthenticationAttributeCollectionInputConfiguration4->setValidationRegEx('^.*');
+$inputsAuthenticationAttributeCollectionInputConfiguration4->setOptions([	]);
+$inputsArray []= $inputsAuthenticationAttributeCollectionInputConfiguration4;
+$viewsAuthenticationAttributeCollectionPageViewConfiguration1->setInputs($inputsArray);
 
-$additionalData = [
-		'onAttributeCollection' => $requestBody = new OnAttributeCollection();
-$		requestBody->set@odatatype('#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp');
+$viewsArray []= $viewsAuthenticationAttributeCollectionPageViewConfiguration1;
+$onAttributeCollectionAttributeCollectionPage->setViews($viewsArray);
 
-$attributeCollectionPage = new AttributeCollectionPage();
-		$AttributeCollectionPage->setCustomStringsFileId(null);
-
-$views1 = new ();
-		$views1->setTitle(null);
-
-		$views1->setDescription(null);
-
-$inputs1 = new ();
-$		inputs1->setAttribute('email');
-
-$		inputs1->setLabel('Email Address');
-
-$		inputs1->setInputType('text');
-
-		$inputs1->setDefaultValue(null);
-
-		$inputs1->setHidden(true);
-
-		$inputs1->setEditable(false);
-
-		$inputs1->setWriteToDirectory(true);
-
-		$inputs1->setRequired(true);
-
-$		inputs1->setValidationRegEx('^[a-zA-Z0-9.!#$%&amp;&#8217;\'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$');
-
-$inputs1->setOptions([]);
-
-
-$inputsArray []= $inputs1;
-$inputs2 = new ();
-$	inputs2->setAttribute('displayName');
-
-$	inputs2->setLabel('Display Name');
-
-$	inputs2->setInputType('text');
-
-	$inputs2->setDefaultValue(null);
-
-	$inputs2->setHidden(false);
-
-	$inputs2->setEditable(true);
-
-	$inputs2->setWriteToDirectory(true);
-
-	$inputs2->setRequired(false);
-
-$	inputs2->setValidationRegEx('^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$');
-
-$inputs2->setOptions([]);
-
-
-$inputsArray []= $inputs2;
-$inputs3 = new ();
-$inputs3->setAttribute('city');
-
-$inputs3->setLabel('City');
-
-$inputs3->setInputType('text');
-
-$inputs3->setDefaultValue(null);
-
-$inputs3->setHidden(false);
-
-$inputs3->setEditable(true);
-
-$inputs3->setWriteToDirectory(true);
-
-$inputs3->setRequired(false);
-
-$inputs3->setValidationRegEx('^[a-zA-Z_][0-9a-zA-Z_ ]*[0-9a-zA-Z_]+$');
-
-$inputs3->setOptions([]);
-
-
-$inputsArray []= $inputs3;
-$inputs4 = new ();
-$inputs4->setAttribute('extension_6ea3bc85aec24b1c92ff4a117afb6621_Favoritecolor');
-
-$inputs4->setLabel('Favorite color');
-
-$inputs4->setInputType('text');
-
-$inputs4->setDefaultValue(null);
-
-$inputs4->setHidden(false);
-
-$inputs4->setEditable(true);
-
-$inputs4->setWriteToDirectory(true);
-
-$inputs4->setRequired(false);
-
-$inputs4->setValidationRegEx('^.*');
-
-$inputs4->setOptions([]);
-
-
-$inputsArray []= $inputs4;
-$views1->setInputs($inputsArray);
-
-
-
-$viewsArray []= $views1;
-$attributeCollectionPage->setViews($viewsArray);
-
-
-
-$requestBody->setAttributeCollectionPage($attributeCollectionPage);
-
+$onAttributeCollection->setAttributeCollectionPage($onAttributeCollectionAttributeCollectionPage);
 $requestBody->setOnAttributeCollection($onAttributeCollection);
 
-];
-$requestBody->setAdditionalData($additionalData);
-
-
-
-
-$result = $graphServiceClient->identity()->authenticationEventsFlows()->byAuthenticationEventsFlowId('authenticationEventsFlow-id')->patch($requestBody);
-
+$result = $graphServiceClient->identity()->authenticationEventsFlows()->byAuthenticationEventsFlowId('authenticationEventsFlow-id')->patch($requestBody)->wait();
 
 ```

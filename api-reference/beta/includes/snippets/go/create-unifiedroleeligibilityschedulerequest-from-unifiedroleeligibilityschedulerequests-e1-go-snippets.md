@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewUnifiedRoleEligibilityScheduleRequest()
@@ -37,7 +37,7 @@ expiration.SetType(&type)
 scheduleInfo.SetExpiration(expiration)
 requestBody.SetScheduleInfo(scheduleInfo)
 
-result, err := graphClient.RoleManagement().Directory().RoleEligibilityScheduleRequests().Post(context.Background(), requestBody, nil)
+roleEligibilityScheduleRequests, err := graphClient.RoleManagement().Directory().RoleEligibilityScheduleRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

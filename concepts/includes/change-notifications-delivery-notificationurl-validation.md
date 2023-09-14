@@ -1,7 +1,6 @@
 ---
 author: FaithOmbongi
-ms.author: ombongifaith
-ms.reviewer: keylimesoda
+ms.reviewer: ric.lewis
 ms.prod: "change-notifications"
 ms.topic: include
 ms.localizationpriority: high
@@ -10,9 +9,9 @@ ms.localizationpriority: high
 <!-- markdownlint-disable MD041-->
 <!-- Is the validation done during subscription renewal? -->
 
-When you create a subscription to receive change notifications through webhooks, Microsoft Graph first validates the notification endpoint that's provided in the **notificationUrl** property of the subscription request. The validation process occurs as follows:
+As part of creating a subscription to receive change notifications through webhooks, Microsoft Graph will attempt to validate the notification endpoint that's provided in the **notificationUrl** property of the subscription request. The validation process occurs as follows:
 
-1. Microsoft Graph encodes a validation token and includes it in a POST request to the notification URL as follows.
+1. When a subscription is requested, Microsoft Graph encodes a validation token and includes it in a POST request to the notification URL as follows.
 
     ```http
     Content-Type: text/plain; charset=utf-8

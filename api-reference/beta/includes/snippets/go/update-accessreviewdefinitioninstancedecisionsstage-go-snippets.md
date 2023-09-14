@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAccessReviewInstanceDecisionItem()
@@ -21,7 +21,7 @@ requestBody.SetDecision(&decision)
 justification := "This person is still on my team"
 requestBody.SetJustification(&justification) 
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Definitions().ByDefinitionId("accessReviewScheduleDefinition-id").Instances().ByInstanceId("accessReviewInstance-id").Stages().ByStageId("accessReviewStage-id").Decisions().ByDecisionId("accessReviewInstanceDecisionItem-id").Patch(context.Background(), requestBody, nil)
+decisions, err := graphClient.IdentityGovernance().AccessReviews().Definitions().ByAccessReviewScheduleDefinitionId("accessReviewScheduleDefinition-id").Instances().ByAccessReviewInstanceId("accessReviewInstance-id").Stages().ByAccessReviewStageId("accessReviewStage-id").Decisions().ByAccessReviewInstanceDecisionItemId("accessReviewInstanceDecisionItem-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

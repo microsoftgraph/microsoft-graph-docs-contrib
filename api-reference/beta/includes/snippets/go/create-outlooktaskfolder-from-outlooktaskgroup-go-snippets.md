@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewOutlookTaskFolder()
 name := "Cooking"
 requestBody.SetName(&name) 
 
-result, err := graphClient.Me().Outlook().TaskGroups().ByTaskGroupId("outlookTaskGroup-id").TaskFolders().Post(context.Background(), requestBody, nil)
+taskFolders, err := graphClient.Me().Outlook().TaskGroups().ByOutlookTaskGroupId("outlookTaskGroup-id").TaskFolders().Post(context.Background(), requestBody, nil)
 
 
 ```

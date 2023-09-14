@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewApplication()
 displayName := "Display name"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Applications().Post(context.Background(), requestBody, nil)
+applications, err := graphClient.Applications().Post(context.Background(), requestBody, nil)
 
 
 ```

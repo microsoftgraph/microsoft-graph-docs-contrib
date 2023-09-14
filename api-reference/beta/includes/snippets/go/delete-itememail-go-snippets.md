@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().Profile().Emails().ByEmailId("itemEmail-id").Delete(context.Background(), nil)
+graphClient.Me().Profile().Emails().ByItemEmailId("itemEmail-id").Delete(context.Background(), nil)
 
 
 ```

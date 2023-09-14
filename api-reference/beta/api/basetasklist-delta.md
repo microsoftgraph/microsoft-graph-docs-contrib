@@ -86,12 +86,12 @@ If successful, this function returns a `200 OK` response code and a [baseTaskLis
 GET https://graph.microsoft.com/beta/me/tasks/lists/delta
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/basetasklist-delta-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/basetasklist-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/basetasklist-delta-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -123,3 +123,18 @@ Content-Type: application/json
 }
 ```
 
+<!-- {
+  "type": "#page.annotation",
+  "description": "baseTaskList: delta",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+    "Error: microsoft.graph.microsoft.graph/me:
+      /me/tasks/lists/delta
+      Uri path requires navigating into unknown object hierarchy: missing property 'tasks' on 'user'. Possible issues:
+  	 1) Doc bug where 'tasks' isn't defined on the resource.
+  	 2) Doc bug where 'tasks' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+  	 3) Doc bug where 'user' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
+  ]
+}-->

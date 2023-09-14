@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphserviceprincipals.NewValidateCredentialsPostRequestBody()
@@ -30,14 +30,13 @@ synchronizationSecretKeyStringValuePair1.SetKey(&key)
 value := "password-value"
 synchronizationSecretKeyStringValuePair1.SetValue(&value) 
 
-credentials := []graphserviceprincipals.SynchronizationSecretKeyStringValuePairable {
+credentials := []graphmodels.SynchronizationSecretKeyStringValuePairable {
 	synchronizationSecretKeyStringValuePair,
 	synchronizationSecretKeyStringValuePair1,
-
 }
 requestBody.SetCredentials(credentials)
 
-graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Synchronization().Jobs().ByJobId("synchronizationJob-id").ValidateCredentials().Post(context.Background(), requestBody, nil)
+graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Synchronization().Jobs().BySynchronizationJobId("synchronizationJob-id").ValidateCredentials().Post(context.Background(), requestBody, nil)
 
 
 ```

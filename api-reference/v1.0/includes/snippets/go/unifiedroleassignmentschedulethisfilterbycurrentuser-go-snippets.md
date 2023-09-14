@@ -11,11 +11,12 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentSchedules().ByRoleAssignmentScheduleId("unifiedRoleAssignmentSchedule-id").Get(context.Background(), nil)
+on := "principal"
+filterByCurrentUser, err := graphClient.RoleManagement().Directory().RoleAssignmentSchedules().FilterByCurrentUserWithOn(&on).Get(context.Background(), nil)
 
 
 ```

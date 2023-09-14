@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphdrives.NewInvitePostRequestBody()
@@ -23,9 +23,8 @@ driveRecipient := graphmodels.NewDriveRecipient()
 email := "robin@contoso.org"
 driveRecipient.SetEmail(&email) 
 
-recipients := []graphdrives.DriveRecipientable {
+recipients := []graphmodels.DriveRecipientable {
 	driveRecipient,
-
 }
 requestBody.SetRecipients(recipients)
 message := "Here's the file that we're collaborating on."
@@ -36,7 +35,6 @@ sendInvitation := true
 requestBody.SetSendInvitation(&sendInvitation) 
 roles := []string {
 	"write",
-
 }
 requestBody.SetRoles(roles)
 password := "password123"
@@ -44,7 +42,7 @@ requestBody.SetPassword(&password)
 expirationDateTime := "2018-07-15T14:00:00.000Z"
 requestBody.SetExpirationDateTime(&expirationDateTime) 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Invite().Post(context.Background(), requestBody, nil)
+invite, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Invite().Post(context.Background(), requestBody, nil)
 
 
 ```
