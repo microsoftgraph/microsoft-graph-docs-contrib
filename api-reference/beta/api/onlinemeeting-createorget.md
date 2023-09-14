@@ -66,12 +66,10 @@ In the request body, provide a JSON object with the following parameters.
 > **Notes:**
 >
 > - If the **startDateTime** and **endDateTime** are not provided, the **startDateTime** will default to the current dateTime value and **endDateTime** value will equal the **startDateTime** + 1 hour.
->
 > - If the **startDateTime** is provided, but **endDateTime** is not, the **endDateTime** value will equal the **startDateTime** + 1 hour.
->
-> - An error will be thrown if the **endDateTime** is provided without the **startDateTime** or if the **endDateTime** is earlier than the **startDateTime**.
->
+> - An error is thrown if the **endDateTime** is provided without the **startDateTime** or if the **endDateTime** is earlier than the **startDateTime**.
 > - Currently **chatInfo** is only supported in beta.
+> - When multiple users within the same tenant use the same **externalId** to run this query, different meeting instances are generated, each with its own unique ID. The combination of **tenantId**, **userId**, and **externalId** serves as the identifier for a meeting with an external ID.
 
 ## Response
 If successful, this method returns a `201 Created` response code if a new meeting is created, or a `200 OK` response code if an existing meeting is retrieved. In both cases, an [onlineMeeting](../resources/onlinemeeting.md) object is returned in the response body.

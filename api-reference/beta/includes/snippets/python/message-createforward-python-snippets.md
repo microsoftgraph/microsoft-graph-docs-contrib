@@ -23,7 +23,7 @@ request_body = CreateForwardPostRequestBody(
 	comment = "Dana, just want to make sure you get this; you'll need this if the project gets approved.",
 )
 
-result = await graph_client.me.messages.by_message_id('message-id').create_forward.post(request_body = request_body)
+result = await graph_client.me.messages.by_message_id('message-id').create_forward.post(body = request_body)
 
 
 ```

@@ -14,7 +14,7 @@ request_body = AuthenticationCombinationConfiguration(
 	]
 )
 
-result = await graph_client.identity.conditional_access.authentication_strength.policies.by_policie_id('authenticationStrengthPolicy-id').combination_configurations.by_combination_configuration_id('authenticationCombinationConfiguration-id').patch(request_body = request_body)
+result = await graph_client.identity.conditional_access.authentication_strength.policies.by_policie_id('authenticationStrengthPolicy-id').combination_configurations.by_combination_configuration_id('authenticationCombinationConfiguration-id').patch(body = request_body)
 
 
 ```

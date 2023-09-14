@@ -16,7 +16,7 @@ request_body = GetPlanPostRequestBody(
 	),
 )
 
-result = await graph_client.solutions.busine_scenarios.by_busine_scenario_id('businessScenario-id').planner.get_plan.post(request_body = request_body)
+result = await graph_client.solutions.busine_scenarios.by_busine_scenario_id('businessScenario-id').planner.get_plan.post(body = request_body)
 
 
 ```

@@ -9,8 +9,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new MeetingAttendanceReportRequestBuilderGetRequestConfiguration();
-$queryParameters = MeetingAttendanceReportRequestBuilderGetRequestConfiguration::createQueryParameters();
+$requestConfiguration = new MeetingAttendanceReportItemRequestBuilderGetRequestConfiguration();
+$queryParameters = MeetingAttendanceReportItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["attendanceRecords"];
 $requestConfiguration->queryParameters = $queryParameters;
 

@@ -20,7 +20,7 @@ request_body = DeviceAndAppManagementRoleAssignment(
 	]
 )
 
-result = await graph_client.device_management.role_assignments.post(request_body = request_body)
+result = await graph_client.device_management.role_assignments.post(body = request_body)
 
 
 ```

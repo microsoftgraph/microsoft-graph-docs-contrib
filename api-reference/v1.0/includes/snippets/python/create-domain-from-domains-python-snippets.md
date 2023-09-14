@@ -12,7 +12,7 @@ request_body = Domain(
 	id = "contoso.com",
 )
 
-result = await graph_client.domains.post(request_body = request_body)
+result = await graph_client.domains.post(body = request_body)
 
 
 ```

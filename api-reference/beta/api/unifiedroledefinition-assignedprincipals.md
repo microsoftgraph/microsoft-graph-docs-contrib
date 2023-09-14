@@ -65,7 +65,7 @@ You can also combine all the supported function parameters in one request for fi
 
 ## Optional query parameters
 
-This method supports the `$count`, `$select`, `$filter`, and `$orderBy` OData query parameters to help customize the response. You can also filter by the type of object using OData casting. For example, `/assignedPrincipals(transitive=false)/microsoft.graph.user` and `/assignedPrincipals(transitive=true)/microsoft.graph.servicePrincipal/$count`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$select`, `$filter`, and `$orderby` OData query parameters to help customize the response. You can also filter by the type of object using OData casting. For example, `/assignedPrincipals(transitive=false)/microsoft.graph.user` and `/assignedPrincipals(transitive=true)/microsoft.graph.servicePrincipal/$count`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

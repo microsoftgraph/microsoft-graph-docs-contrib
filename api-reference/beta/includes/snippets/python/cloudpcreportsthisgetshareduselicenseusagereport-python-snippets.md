@@ -21,7 +21,7 @@ request_body = GetSharedUseLicenseUsageReportPostRequestBody(
 	top = 100,
 )
 
-await graph_client.device_management.virtual_endpoint.reports.get_shared_use_license_usage_report.post(request_body = request_body)
+await graph_client.device_management.virtual_endpoint.reports.get_shared_use_license_usage_report.post(body = request_body)
 
 
 ```

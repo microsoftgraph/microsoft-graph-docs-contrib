@@ -12,7 +12,7 @@ request_body = ServicePrincipal(
 	app_id = "fc876dd1-6bcb-4304-b9b6-18ddf1526b62",
 )
 
-result = await graph_client.service_principals.post(request_body = request_body)
+result = await graph_client.service_principals.post(body = request_body)
 
 
 ```

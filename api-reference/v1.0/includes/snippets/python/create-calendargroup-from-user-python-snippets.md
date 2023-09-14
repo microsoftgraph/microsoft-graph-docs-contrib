@@ -12,7 +12,7 @@ request_body = CalendarGroup(
 	name = "Personal events",
 )
 
-result = await graph_client.me.calendar_groups.post(request_body = request_body)
+result = await graph_client.me.calendar_groups.post(body = request_body)
 
 
 ```
