@@ -79,6 +79,7 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "@odata.context": "https://graph.microsoft.com/{version}/$metadata#certificateBasedApplicationConfigurations({id})/trustedCertificateAuthorities/$entity",
   "@odata.id": "https://graph.microsoft.com/v2/.../trustedCertificateAuthorities/54a5974a-7cb0-432c-b10c-aff55fe62825",

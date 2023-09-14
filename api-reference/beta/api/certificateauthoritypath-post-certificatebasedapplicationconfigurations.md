@@ -72,6 +72,7 @@ If successful, this method returns a `200 OK` response code and a [certificateBa
 ``` http
 POST https://graph.microsoft.com/beta/certificateAuthorityPath/certificateBasedApplicationConfigurations
 Content-Type: application/json
+
 {
   "displayName": "Tenant Trusted Certificate Chain of Trust for Application Configuration",
   "description": "The Trusted Certificate Chain of Trust containing a certificate chain used by the Tenant app policy, to only allow application certificates from this issuer.",
@@ -96,6 +97,7 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
+
 {
   "value": {
     "@odata.type": "#microsoft.graph.certificateBasedApplicationConfiguration",
