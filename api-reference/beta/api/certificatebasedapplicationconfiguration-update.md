@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|AppCertTrustConfiguration.Read.All, AppCertTrustConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|AppCertTrustConfiguration.Read.All, AppCertTrustConfiguration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
 [!INCLUDE [app-cert-config-apis](../includes/rbac-for-apis/app-cert-config-apis.md)]
@@ -66,6 +66,7 @@ The following is an example of a request.
 ``` http
 PATCH /directory/certificateAuthorities/certificateBasedApplicationConfigurations/d5b0af1c-9376-6b66-16b6-e402965862c1
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.certificateBasedApplicationConfiguration",
   "displayName": "New display name",

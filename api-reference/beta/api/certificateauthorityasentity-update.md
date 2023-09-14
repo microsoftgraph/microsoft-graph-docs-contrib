@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|AppCertTrustConfiguration.Read.All, AppCertTrustConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|AppCertTrustConfiguration.Read.All, AppCertTrustConfiguration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
 [!INCLUDE [app-cert-config-apis](../includes/rbac-for-apis/app-cert-config-apis.md)]
@@ -66,6 +66,7 @@ The following is an example of a request.
 ``` http
 PATCH /directory/certificateAuthorities/certificateBasedApplicationConfigurations/0a6a9b97-b84c-406a-a703-14d699d1fbb1/trustedCertificateAuthorities/a55a2232-07a4-4b40-8914-a120f46a633e
 Content-Type: application/json
+
 {
   "isRootAuthority": true
 }

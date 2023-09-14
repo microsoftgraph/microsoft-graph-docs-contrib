@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|AppCertTrustConfiguration.Read.All, AppCertTrustConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|AppCertTrustConfiguration.Read.All, AppCertTrustConfiguration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
 [!INCLUDE [app-cert-config-apis](../includes/rbac-for-apis/app-cert-config-apis.md)]
@@ -79,6 +79,7 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#directory/certificateAuthorities/certificateBasedApplicationConfigurations('e47a3693-e84f-48bf-8c54-767c56ad46c1')/trustedCertificateAuthorities",
     "value": [

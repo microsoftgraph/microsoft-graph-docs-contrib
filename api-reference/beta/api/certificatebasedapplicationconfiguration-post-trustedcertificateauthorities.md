@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|AppCertTrustConfiguration.Read.All, AppCertTrustConfiguration.ReadWrite.All|
-|Delegated (personal Microsoft account)|AppCertTrustConfiguration.Read.All, AppCertTrustConfiguration.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
 [!INCLUDE [app-cert-config-apis](../includes/rbac-for-apis/app-cert-config-apis.md)]
@@ -74,6 +74,7 @@ The following is an example of a request.
 ``` http
 POST directory/certificateAuthorities/certificateBasedApplicationConfigurations/0a6a9b97-b84c-406a-a703-14d699d1fbb1/trustedCertificateAuthorities
 Content-Type: application/json
+
 {
   "isRootAuthority": true,
   "certificate": "MIIGrDCCBJSgAwIBAgITWgACAdWQXvWynRA6/AABAAIB....",
@@ -95,6 +96,7 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 {
   "@odata.type": "#microsoft.graph.certificateAuthorityAsEntity",
   "certificate": "MIIGrDCCBJSgAwIBAgITWgACAdWQXvWynRA6/AABAAIB",
