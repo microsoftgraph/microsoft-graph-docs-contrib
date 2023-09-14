@@ -6,22 +6,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc-beta users send-mail post --user-id {user-id} --body '{\
-  "Message": {\
+  "message": {\
     "subject": "Project kickoff",\
-    "toRecipients":[\
+    "toRecipients": [\
       {\
-          "emailAddress":{\
-              "name":"Samantha Booth",\
-              "address":"samanthab@contoso.onmicrosoft.com"\
-          }\
+        "emailAddress": {\
+          "name": "Samantha Booth",\
+          "address": "samanthab@contoso.onmicrosoft.com"\
+        }\
       }\
     ],\
-    "mentions":[\
+    "mentions": [\
       {\
-        "mentioned":{\
-          "name":"Dana Swope",\
-          "address":"danas@contoso.onmicrosoft.com"\
-         }\
+        "mentioned": {\
+          "name": "Dana Swope",\
+          "address": "danas@contoso.onmicrosoft.com"\
+        }\
       }\
     ]\
   }\

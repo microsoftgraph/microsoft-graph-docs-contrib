@@ -19,7 +19,7 @@ request_body = DeviceManagement(
 	intune_account_id = UUID("cf1549a1-49a1-cf15-a149-15cfa14915cf"),
 )
 
-result = await graph_client.device_management.patch(request_body = request_body)
+result = await graph_client.device_management.patch(body = request_body)
 
 
 ```

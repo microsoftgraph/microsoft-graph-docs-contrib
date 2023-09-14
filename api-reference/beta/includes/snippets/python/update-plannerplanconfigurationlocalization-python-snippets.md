@@ -31,7 +31,7 @@ request_body = PlannerPlanConfigurationLocalization(
 	]
 )
 
-result = await graph_client.solutions.busine_scenarios.by_busine_scenario_id('businessScenario-id').planner.plan_configuration.localizations.by_localization_id('plannerPlanConfigurationLocalization-id').patch(request_body = request_body)
+result = await graph_client.solutions.busine_scenarios.by_busine_scenario_id('businessScenario-id').planner.plan_configuration.localizations.by_localization_id('plannerPlanConfigurationLocalization-id').patch(body = request_body)
 
 
 ```

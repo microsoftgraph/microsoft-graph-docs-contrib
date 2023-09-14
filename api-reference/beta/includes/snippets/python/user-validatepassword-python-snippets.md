@@ -12,7 +12,7 @@ request_body = ValidatePasswordPostRequestBody(
 	password = "1234567890",
 )
 
-result = await graph_client.users.validate_password.post(request_body = request_body)
+result = await graph_client.users.validate_password.post(body = request_body)
 
 
 ```

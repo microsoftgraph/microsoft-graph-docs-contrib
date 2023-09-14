@@ -15,7 +15,7 @@ request_body = LinkedResource(
 	display_name = "Microsoft",
 )
 
-result = await graph_client.me.todo.lists.by_list_id('todoTaskList-id').tasks.by_task_id('todoTask-id').linked_resources.by_linked_resource_id('linkedResource-id').patch(request_body = request_body)
+result = await graph_client.me.todo.lists.by_list_id('todoTaskList-id').tasks.by_task_id('todoTask-id').linked_resources.by_linked_resource_id('linkedResource-id').patch(body = request_body)
 
 
 ```

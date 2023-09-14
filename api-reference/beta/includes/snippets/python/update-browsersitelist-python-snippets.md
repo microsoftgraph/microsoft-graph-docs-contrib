@@ -13,7 +13,7 @@ request_body = BrowserSiteList(
 	description = "Production site list for team A",
 )
 
-result = await graph_client.admin.edge.internet_explorer_mode.site_lists.by_site_list_id('browserSiteList-id').patch(request_body = request_body)
+result = await graph_client.admin.edge.internet_explorer_mode.site_lists.by_site_list_id('browserSiteList-id').patch(body = request_body)
 
 
 ```

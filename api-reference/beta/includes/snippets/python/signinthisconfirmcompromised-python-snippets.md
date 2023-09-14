@@ -16,7 +16,7 @@ request_body = ConfirmCompromisedPostRequestBody(
 	]
 )
 
-await graph_client.audit_logs.sign_ins.confirm_compromised.post(request_body = request_body)
+await graph_client.audit_logs.sign_ins.confirm_compromised.post(body = request_body)
 
 
 ```

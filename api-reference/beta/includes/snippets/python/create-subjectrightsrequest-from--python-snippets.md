@@ -39,7 +39,7 @@ request_body = SubjectRightsRequest(
 	]
 )
 
-result = await graph_client.privacy.subject_right_requests.post(request_body = request_body)
+result = await graph_client.privacy.subject_right_requests.post(body = request_body)
 
 
 ```
