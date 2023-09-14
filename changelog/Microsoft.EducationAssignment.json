@@ -1,6 +1,6 @@
 {
-    "changelog": [
-      {
+  "changelog": [
+    {
         "ChangeList": [
             {
                 "ApiChange": "Permission",
@@ -41,7 +41,7 @@
                 "Description": "Added support for the application permission `EduAssignments.ReadWrite.All` to the [Delete assignment resource](https://learn.microsoft.com/en-us/graph/api/educationassignmentresource-delete?view=graph-rest-beta) method of [assignment resource](https://learn.microsoft.com/en-us/graph/api/resources/educationassignmentresource?view=graph-rest-beta).",
                 "Id": "7e0f7bd3-2622-4187-9545-d7eb5a652eaa",
                 "Target": "educationAssignmentResource"
-            },
+            }
         ],
         "Cloud": "prd",
         "CreatedDateTime": "2023-09-14T00:00:00",
