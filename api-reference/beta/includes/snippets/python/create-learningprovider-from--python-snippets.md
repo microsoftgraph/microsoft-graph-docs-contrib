@@ -18,7 +18,7 @@ request_body = LearningProvider(
 	is_course_activity_sync_enabled = True,
 )
 
-result = await graph_client.employee_experience.learning_providers.post(request_body = request_body)
+result = await graph_client.employee_experience.learning_providers.post(body = request_body)
 
 
 ```

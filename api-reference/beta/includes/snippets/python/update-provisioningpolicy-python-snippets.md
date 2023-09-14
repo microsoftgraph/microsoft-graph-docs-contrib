@@ -21,7 +21,7 @@ request_body = CloudPcProvisioningPolicy(
 	),
 )
 
-result = await graph_client.device_management.virtual_endpoint.provisioning_policies.by_provisioning_policie_id('cloudPcProvisioningPolicy-id').patch(request_body = request_body)
+result = await graph_client.device_management.virtual_endpoint.provisioning_policies.by_provisioning_policie_id('cloudPcProvisioningPolicy-id').patch(body = request_body)
 
 
 ```

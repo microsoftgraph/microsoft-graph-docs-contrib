@@ -3,7 +3,7 @@ title: "Delete b2xIdentityUserFlow"
 description: "Delete a b2xIdentityUserFlow object."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "jkdouglas"
+author: "nanguil"
 ms.prod: "identity-and-sign-in"
 ---
 

@@ -15,7 +15,7 @@ request_body = DriveItem(
 	name = "new-item-name.txt",
 )
 
-result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').patch(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').patch(body = request_body)
 
 
 ```

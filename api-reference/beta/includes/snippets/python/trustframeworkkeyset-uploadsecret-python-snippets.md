@@ -15,7 +15,7 @@ request_body = UploadSecretPostRequestBody(
 	exp = 1508973711,
 )
 
-result = await graph_client.trust_framework.key_sets.by_key_set_id('trustFrameworkKeySet-id').upload_secret.post(request_body = request_body)
+result = await graph_client.trust_framework.key_sets.by_key_set_id('trustFrameworkKeySet-id').upload_secret.post(body = request_body)
 
 
 ```
