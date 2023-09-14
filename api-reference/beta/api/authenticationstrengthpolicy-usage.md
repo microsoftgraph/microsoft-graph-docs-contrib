@@ -66,6 +66,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/{au
 [!INCLUDE [sample-code](../includes/snippets/csharp/authenticationstrengthpolicythisusage-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/authenticationstrengthpolicythisusage-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/authenticationstrengthpolicythisusage-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

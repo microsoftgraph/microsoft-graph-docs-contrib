@@ -21,7 +21,7 @@ collectionId := "Collection Id value"
 target.SetCollectionId(&collectionId) 
 requestBody.SetTarget(target)
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").Assignments().ByAssignmentId("deviceConfigurationAssignment-id").Patch(context.Background(), requestBody, nil)
+assignments, err := graphClient.DeviceManagement().DeviceConfigurations().ByDeviceConfigurationId("deviceConfiguration-id").Assignments().ByDeviceConfigurationAssignmentId("deviceConfigurationAssignment-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

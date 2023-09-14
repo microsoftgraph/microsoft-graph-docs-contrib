@@ -93,7 +93,7 @@ requestBody.SetFaceIdBlocked(&faceIdBlocked)
 customBrowserProtocol := "Custom Browser Protocol value"
 requestBody.SetCustomBrowserProtocol(&customBrowserProtocol) 
 
-result, err := graphClient.DeviceAppManagement().IosManagedAppProtections().Post(context.Background(), requestBody, nil)
+iosManagedAppProtections, err := graphClient.DeviceAppManagement().IosManagedAppProtections().Post(context.Background(), requestBody, nil)
 
 
 ```

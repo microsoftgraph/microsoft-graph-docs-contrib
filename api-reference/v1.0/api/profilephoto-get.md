@@ -63,7 +63,7 @@ The following tables show the least privileged permission or permissions require
 > [!NOTE]
 > 
 > - Metadata operation is not supported for personal Microsoft accounts.
-> - There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
+> - An app with only application permissions cannot access a group's photo.
 > - Retrieving a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 
 ## HTTP request

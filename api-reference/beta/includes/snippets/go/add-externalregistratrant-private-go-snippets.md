@@ -23,7 +23,7 @@ requestBody.SetTenantId(&tenantId)
 userId := "cc515404-b55c-466e-b896-992c918ecc01"
 requestBody.SetUserId(&userId) 
 
-result, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Registration().Registrants().Post(context.Background(), requestBody, nil)
+registrants, err := graphClient.Me().OnlineMeetings().ByOnlineMeetingId("onlineMeeting-id").Registration().Registrants().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,40 +4,35 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Alert()
-request_body.assigned_to = 'String'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.closedDateTime = DateTime('String (timestamp)')
-
-request_body.Comments(['String', ])
-
-request_body.feedback(AlertFeedback.@odata.type: microsoft.graph.alertFeedback('alertfeedback.@odata.type: microsoft.graph.alertfeedback'))
-
-request_body.status(AlertStatus.@odata.type: microsoft.graph.alertStatus('alertstatus.@odata.type: microsoft.graph.alertstatus'))
-
-request_body.Tags(['String', ])
-
-vendor_information = SecurityVendorInformation()
-vendor_information.provider = 'String'
-
-vendor_information.vendor = 'String'
-
-
-request_body.vendor_information = vendor_information
-
+request_body = Alert(
+	assigned_to = "String",
+	closed_date_time = "String (timestamp)",
+	comments = [
+		"String",
+	]
+	feedback = AlertFeedback.Unknown,
+	status = AlertStatus.Unknown,
+	tags = [
+		"String",
+	]
+	vendor_information = SecurityVendorInformation(
+		provider = "String",
+		vendor = "String",
+	),
+)
 
 request_configuration = AlertRequestBuilder.AlertRequestBuilderPatchRequestConfiguration(
 headers = {
-'Prefer' : "return=representation",
+		'Prefer' : "return=representation",
 }
 
 )
 
-
-result = await client.security.alerts.by_alert_id('alert-id').patch(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.security.alerts.by_alert_id('alert-id').patch(body = request_body, request_configuration = request_configuration)
 
 
 ```

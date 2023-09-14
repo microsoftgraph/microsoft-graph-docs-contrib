@@ -91,7 +91,7 @@ appRoles := []graphmodels.AppRoleable {
 }
 requestBody.SetAppRoles(appRoles)
 
-result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Patch(context.Background(), requestBody, nil)
+servicePrincipals, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

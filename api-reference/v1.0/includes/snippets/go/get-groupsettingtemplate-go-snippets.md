@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.GroupSettingTemplates().ByGroupSettingTemplateId("groupSettingTemplate-id").Get(context.Background(), nil)
+groupSettingTemplates, err := graphClient.GroupSettingTemplates().ByGroupSettingTemplateId("groupSettingTemplate-id").Get(context.Background(), nil)
 
 
 ```

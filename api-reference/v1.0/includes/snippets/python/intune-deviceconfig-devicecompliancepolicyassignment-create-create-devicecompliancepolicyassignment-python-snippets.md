@@ -4,23 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = DeviceCompliancePolicyAssignment()
-request_body.@odata_type = '#microsoft.graph.deviceCompliancePolicyAssignment'
+graph_client = GraphServiceClient(request_adapter)
 
-target = ConfigurationManagerCollectionAssignmentTarget()
-target.@odata_type = 'microsoft.graph.configurationManagerCollectionAssignmentTarget'
+request_body = DeviceCompliancePolicyAssignment(
+	odata_type = "#microsoft.graph.deviceCompliancePolicyAssignment",
+	target = ConfigurationManagerCollectionAssignmentTarget(
+		odata_type = "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+		collection_id = "Collection Id value",
+	),
+)
 
-target.collection_id = 'Collection Id value'
-
-
-request_body.target = target
-
-
-
-result = await client.device_management.device_compliance_policies.by_device_compliance_policie_id('deviceCompliancePolicy-id').assignments.post(request_body = request_body)
+result = await graph_client.device_management.device_compliance_policies.by_device_compliance_policie_id('deviceCompliancePolicy-id').assignments.post(body = request_body)
 
 
 ```

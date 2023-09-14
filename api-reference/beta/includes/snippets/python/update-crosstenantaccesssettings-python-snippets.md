@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = CrossTenantAccessSettings()
-request_body.@odata_type = '#microsoft.graph.networkaccess.crossTenantAccessSettings'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.networkpackettaggingstatus(Status.Enabled('status.enabled'))
+request_body = CrossTenantAccessSettings(
+	odata_type = "#microsoft.graph.networkaccess.crossTenantAccessSettings",
+	network_packet_tagging_status = Status.Enabled,
+)
 
-
-
-
-result = await client.network_access.settings.cros_tenant_access.patch(request_body = request_body)
+result = await graph_client.network_access.settings.cros_tenant_access.patch(body = request_body)
 
 
 ```

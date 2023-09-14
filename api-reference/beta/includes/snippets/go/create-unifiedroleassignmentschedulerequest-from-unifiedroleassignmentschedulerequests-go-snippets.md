@@ -35,7 +35,7 @@ expiration.SetType(&type)
 scheduleInfo.SetExpiration(expiration)
 requestBody.SetScheduleInfo(scheduleInfo)
 
-result, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().Post(context.Background(), requestBody, nil)
+roleAssignmentScheduleRequests, err := graphClient.RoleManagement().Directory().RoleAssignmentScheduleRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc device-management mobile-threat-defense-connectors create --body '{\
   "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",\
   "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",\

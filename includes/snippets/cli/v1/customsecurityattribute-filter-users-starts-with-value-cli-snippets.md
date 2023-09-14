@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc users list --count "true&`$select=id,displayName,customSecurityAttributes&`$filter=startsWith(customSecurityAttributes/Marketing/EmployeeId,'GS')" --consistency-level eventual
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc users list --filter "startsWith(customSecurityAttributes/Marketing/EmployeeId,'GS')" --count "true" --select "id,displayName,customSecurityAttributes" --consistency-level "eventual"
 
 ```
