@@ -144,7 +144,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Update bannerLogo for the default branding
 
-The following request updates the banner logo for the default branding.
+The following request updates the banner logo for the default branding. For all Stream types, a PUT verb is used, and the localization is put into the URL.
 
 #### Request
 
@@ -160,7 +160,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo
+PUT https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/0/bannerLogo
 Content-Type: image/jpeg
 
 <Image>
