@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a shared-use service plan that can be used by up to three Cloud PCs.
+Represents a shared-use service plan that can be used by up to three Cloud PCs. The cloudPcSharedUseServicePlan is deprecated and will not be supported starting October 08, 2023. This entity will not be included in the API response. Please use [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md).
 
 ## Methods
 
