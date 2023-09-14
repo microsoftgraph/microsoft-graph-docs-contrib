@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Get change notifications for Microsoft Teams call records
 
-Change notifications in Microsoft Graph support subscriptions to call records, allowing you to receive a continuous feed of call records as they are created or updated. Call records provide usage and diagnostic information about the calls and online meetings that occur within your organization when using Microsoft Teams or Skype for Business. Usage and diagnostic data can be consumed to produce custom reporting for your business to help monitor adoption or to troubleshoot call quality issues.
+Change notifications in Microsoft Graph enable subscriptions to call records, providing a continuous stream of call record updates as they are created or modified. Call records offer valuable usage and diagnostic insights into your organization's calls and online meetings when using Microsoft Teams or Skype for Business. This data can be harnessed for custom reporting, facilitating the monitoring of adoption and the troubleshooting of call quality issues.
 
 ### Permissions
 
