@@ -13,7 +13,7 @@ request_body = EducationClass(
 	display_name = "World History Level 1",
 )
 
-result = await graph_client.education.classes.by_classe_id('educationClass-id').patch(request_body = request_body)
+result = await graph_client.education.classes.by_classe_id('educationClass-id').patch(body = request_body)
 
 
 ```

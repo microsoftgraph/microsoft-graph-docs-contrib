@@ -30,7 +30,7 @@ request_body = AddPostRequestBody(
 	]
 )
 
-result = await graph_client.teams.by_team_id('team-id').members.add.post(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').members.add.post(body = request_body)
 
 
 ```

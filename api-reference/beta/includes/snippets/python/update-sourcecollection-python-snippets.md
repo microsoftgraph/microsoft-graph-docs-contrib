@@ -12,7 +12,7 @@ request_body = SourceCollection(
 	display_name = "Quarterly Financials search",
 )
 
-result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').source_collections.by_source_collection_id('sourceCollection-id').patch(request_body = request_body)
+result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').source_collections.by_source_collection_id('sourceCollection-id').patch(body = request_body)
 
 
 ```

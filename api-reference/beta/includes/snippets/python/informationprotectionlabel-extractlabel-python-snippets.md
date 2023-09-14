@@ -66,7 +66,7 @@ headers = {
 
 )
 
-result = await graph_client.information_protection.policy.labels.extract_label.post(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.information_protection.policy.labels.extract_label.post(body = request_body, request_configuration = request_configuration)
 
 
 ```

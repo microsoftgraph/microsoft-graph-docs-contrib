@@ -12,7 +12,7 @@ request_body = ReviewSet(
 	display_name = "My Reviewset 3",
 )
 
-result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').review_sets.post(request_body = request_body)
+result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').review_sets.post(body = request_body)
 
 
 ```

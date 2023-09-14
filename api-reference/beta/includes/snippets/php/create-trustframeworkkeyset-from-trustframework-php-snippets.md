@@ -16,7 +16,7 @@ $keysTrustFrameworkKey1->setK('k-value');
 $keysTrustFrameworkKey1->setX5c(['x5c-value', 	]);
 $keysTrustFrameworkKey1->setX5t('x5t-value');
 $keysTrustFrameworkKey1->setKty('kty-value');
-$keysTrustFrameworkKey1->setUse('use-value');
+$keysTrustFrameworkKey1->setEscapedUse('use-value');
 $keysTrustFrameworkKey1->setExp(99);
 $keysTrustFrameworkKey1->setNbf(99);
 $keysTrustFrameworkKey1->setKid('kid-value');

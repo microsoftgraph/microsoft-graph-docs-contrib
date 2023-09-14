@@ -74,7 +74,7 @@ request_body = EducationRubric(
 	]
 )
 
-result = await graph_client.education.me.rubrics.post(request_body = request_body)
+result = await graph_client.education.me.rubrics.post(body = request_body)
 
 
 ```

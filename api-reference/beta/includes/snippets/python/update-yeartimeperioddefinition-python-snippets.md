@@ -13,7 +13,7 @@ request_body = YearTimePeriodDefinition(
 	id = "ebf18762-ab92-487e-21d1-08daddab28bb",
 )
 
-result = await graph_client.external.industry_data.years.by_year_id('yearTimePeriodDefinition-id').patch(request_body = request_body)
+result = await graph_client.external.industry_data.years.by_year_id('yearTimePeriodDefinition-id').patch(body = request_body)
 
 
 ```

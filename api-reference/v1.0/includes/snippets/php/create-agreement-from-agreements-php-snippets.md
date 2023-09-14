@@ -17,7 +17,7 @@ $filesAgreementFileLocalization1->setFileName('TOU.pdf');
 $filesAgreementFileLocalization1->setLanguage('en');
 $filesAgreementFileLocalization1->setIsDefault(true);
 $filesAgreementFileLocalization1FileData = new AgreementFileData();
-$filesAgreementFileLocalization1FileData->setData(base64_decode('SGVsbG8gd29ybGQ=//truncated-binary'));
+$filesAgreementFileLocalization1FileData->setData(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('SGVsbG8gd29ybGQ=//truncated-binary')));
 $filesAgreementFileLocalization1->setFileData($filesAgreementFileLocalization1FileData);
 $filesArray []= $filesAgreementFileLocalization1;
 $requestBody->setFiles($filesArray);

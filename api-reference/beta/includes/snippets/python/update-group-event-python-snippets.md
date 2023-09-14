@@ -20,7 +20,7 @@ request_body = Event(
 	is_reminder_on = True,
 )
 
-result = await graph_client.groups.by_group_id('group-id').events.by_event_id('event-id').patch(request_body = request_body)
+result = await graph_client.groups.by_group_id('group-id').events.by_event_id('event-id').patch(body = request_body)
 
 
 ```

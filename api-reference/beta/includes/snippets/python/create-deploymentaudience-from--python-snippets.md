@@ -11,7 +11,7 @@ graph_client = GraphServiceClient(request_adapter)
 request_body = DeploymentAudience(
 )
 
-result = await graph_client.admin.windows.updates.deployment_audiences.post(request_body = request_body)
+result = await graph_client.admin.windows.updates.deployment_audiences.post(body = request_body)
 
 
 ```

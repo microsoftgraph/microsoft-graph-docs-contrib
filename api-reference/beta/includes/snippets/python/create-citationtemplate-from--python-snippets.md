@@ -18,7 +18,7 @@ request_body = CitationTemplate(
 	citation_jurisdiction = "String",
 )
 
-result = await graph_client.security.labels.citations.post(request_body = request_body)
+result = await graph_client.security.labels.citations.post(body = request_body)
 
 
 ```

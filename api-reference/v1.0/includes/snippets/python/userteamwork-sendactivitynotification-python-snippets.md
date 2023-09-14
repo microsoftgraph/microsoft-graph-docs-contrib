@@ -25,7 +25,7 @@ request_body = SendActivityNotificationPostRequestBody(
 	]
 )
 
-await graph_client.users.by_user_id('user-id').teamwork.send_activity_notification.post(request_body = request_body)
+await graph_client.users.by_user_id('user-id').teamwork.send_activity_notification.post(body = request_body)
 
 
 ```

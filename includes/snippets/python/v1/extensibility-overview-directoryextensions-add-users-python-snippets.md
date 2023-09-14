@@ -22,7 +22,7 @@ request_body = User(
 	}
 )
 
-result = await graph_client.users.post(request_body = request_body)
+result = await graph_client.users.post(body = request_body)
 
 
 ```

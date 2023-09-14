@@ -19,7 +19,7 @@ request_body = RetentionLabel(
 	default_record_behavior = DefaultRecordBehavior.StartLocked,
 )
 
-result = await graph_client.security.labels.retention_labels.by_retention_label_id('retentionLabel-id').patch(request_body = request_body)
+result = await graph_client.security.labels.retention_labels.by_retention_label_id('retentionLabel-id').patch(body = request_body)
 
 
 ```

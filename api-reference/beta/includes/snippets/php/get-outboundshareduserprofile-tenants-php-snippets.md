@@ -10,6 +10,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->directory()->outboundSharedUserProfiles()->byOutboundSharedUserProfileId('outboundSharedUserProfile-userId')->tenants()->get()->wait();
+$result = $graphServiceClient->directory()->outboundSharedUserProfiles()->byOutboundSharedUserProfileUserId('outboundSharedUserProfile-userId')->tenants()->get()->wait();
 
 ```
