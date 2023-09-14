@@ -19,7 +19,7 @@ The first time you run a request as a delegated authentication flow, you need to
 
 1. Select the **Delegated** folder.
 1. Select the **Authorization** tab.
-1. In the **Configure New Token** section, make sure the callback URL matches with what you provided when you created the application registration (URL listed in [Use Postman with the Microsoft Graph API](https://learn.microsoft.com/en-us/graph/use-postman#step-3-create-an-azure-ad-application) step 3.7). Leave all the fields as preconfigured, including the **Grant type** that is set to `Authorization Code`.
+1. In the **Configure New Token** section, make sure the callback URL matches with what you provided when you created the application registration, for example, `https://oauth.pstmn.io/v1/browser-callback`. Leave all the fields as preconfigured, including the **Grant type** that is set to `Authorization Code`.
 1. Scroll down on the right and select **Get New Access Token**.
 1. Sign in with your developer tenant administrator account.
 1. Select **Proceed**, and then select the **Use Token** button.
