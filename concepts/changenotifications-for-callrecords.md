@@ -37,7 +37,7 @@ Content-Type: application/json
 
 Change notifications for call records support both `create` and `update` notification types. A call record is created after a call or meeting ends and will remain available for 30 days. Because portions of a call record rely on client-side signals that can be delayed or interrupted by network issues, a call record may be updated with new or revised attributes after its initial creation. These changes will result in an `update` notification and the record will increment its `version` field to reflect that a change has occurred.
 
-The latency of change notifications and the maximum expiry period of a subscription are defined in the [change notifications overview](/graph/webhooks).
+The latency of change notifications and the maximum subscription expiration period are defined in the [change notifications overview](/graph/webhooks).
 
 ## Example notification
 
