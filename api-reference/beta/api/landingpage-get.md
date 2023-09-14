@@ -66,7 +66,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/landingPages/{landingPageId}
+GET https://graph.microsoft.com/beta/security/attackSimulation/landingPages/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc
 ```
 
 ### Response

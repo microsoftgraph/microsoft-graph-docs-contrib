@@ -4164,9 +4164,9 @@ Possible values for user account types (group membership), per Windows definitio
 
 | Member                     | Value |
 | :------------------------- | :---- |
-| weekly                     | 7     |
-| biWeekly                   | 14    |
-| monthly                    | 30    |
+| week					     | 7     |
+| fortnite                   | 14    |
+| month                      | 30    |
 | unknownFutureValue         | 100   |
 
 

@@ -1,6 +1,6 @@
 ---
 title: "oAuthConsentAppDetail resource type"
-description: "Details required for oAuth technique"
+description: "Details required for oAuth technique. Admin can configure scope, name and logo for phish app which is associated to a simulation"
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Details required for oAuth technique
+Details required for oAuth technique. Admin can customised scope, name and logo for phish app which is associated to a simulation. 
 
 ## Properties
 

@@ -91,7 +91,7 @@ Content-Type: application/json
     "displayName": "Alex Waber"
   },
   "subject": "Congrats for reporting phsih!"
-  "emailContent": "{\"landingPage\":\"<\!DOCTYPE html\> test <\html lang='en'<\/html>\"}",
+  "emailContent": "<meta http-equiv=\"Content-Type\" content=\"text/html>\">"
   "locale": "en-us",
   "language": "English",
   "isDefaultLanguage": "true"

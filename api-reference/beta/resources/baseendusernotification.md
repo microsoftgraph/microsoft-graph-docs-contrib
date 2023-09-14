@@ -19,7 +19,7 @@ Represents details about an end user notification.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|defaultLanguage|String|Language|
+|defaultLanguage|String|The default language for the end user notification.|
 
 ## Relationships
 

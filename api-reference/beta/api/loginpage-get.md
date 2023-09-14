@@ -65,7 +65,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/loginPages/{loginPageId}
+GET https://graph.microsoft.com/beta/security/attackSimulation/loginPages/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc
 ```
 
 ### Response
@@ -85,7 +85,6 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
     "id": "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
     "diplayName": "AttackSimTest loginPage",
     "description": "AttackSim Test loginPage",
@@ -104,7 +103,6 @@ Content-Type: application/json
       "displayName": "Alex Waber"
     },
     "lastModifiedDateTime": "2021-10-07T12:23:18.8157586Z",
-    "content": "{\"login\":\"<\!DOCTYPE html\> test <\html lang='en'<\/html>\"}"
-  }
+    "content": "<meta http-equiv=\"Content-Type\" content=\"text/html>\">"
 }
 ```

@@ -86,7 +86,7 @@ Content-Type: application/json
 
 {
   "id": "1cdfcb49-1065-46a6-b1c3-672071e20a6b-de-de",
-  "content": "{\"landingPage\":\"<\!DOCTYPE html\> test <\html lang='en'<\/html>\"}",
+  "content": "<meta http-equiv=\"Content-Type\" content=\"text/html>\">",
   "language": "en-us",
   "isDefaultLanguage": "true"
 }

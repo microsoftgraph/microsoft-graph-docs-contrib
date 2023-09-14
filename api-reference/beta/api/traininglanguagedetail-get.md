@@ -1,6 +1,6 @@
 ---
 title: "Get trainingLanguageDetail"
-description: "Read the properties and relationships of a trainingLanguageDetail object."
+description: "Get the language details about an attack simulation training for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [trainingLanguageDetail](../resources/traininglanguagedetail.md) object.
+Get the language details[trainingLanguageDetail](../resources/traininglanguagedetail.md) about an attack simulation training for a tenant.
 
 ## Permissions
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/attackSimulation/trainings/{trainingId}/languageDetails/{trainingLanguageDetailId}
+GET /security/attackSimulation/trainings/6f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc/languageDetails/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc
 ```
 
 ## Optional query parameters
@@ -65,7 +65,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/trainings/{trainingId}/languageDetails/{trainingLanguageDetailId}
+GET https://graph.microsoft.com/beta/security/attackSimulation/trainings/3f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc/languageDetails/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc
 ```
 
 ### Response

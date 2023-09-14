@@ -31,10 +31,10 @@ Inherits from [entity](../resources/entity.md).
 |[Update simulation](../api/simulation-update.md)|[simulation](../resources/simulation.md)|Update the properties of a [simulation](../resources/simulation.md) object.|
 |[Delete simulation](../api/simulation-delete.md)|None|Delete a [simulation](../resources/simulation.md) object.|
 |[Get payload](../api/payload-get.md)|None|Get a [payload](../resources/payload.md) object.|
-|[Get endUserNotificationSetting](../api/payload-get.md)|None|Get a [payload](../resources/payload.md) object.|
-|[Get loginPage](../api/payload-get.md)|None|Get a [payload](../resources/payload.md) object.|
-|[Get landingPage](../api/payload-get.md)|None|Get a [payload](../resources/payload.md) object.|
-|[Get trainingSetting](../api/payload-get.md)|None|Get a [payload](../resources/payload.md) object.|
+|[Get loginPage](../api/loginPage-get.md)|None|Get a [loginPage](../resources/loginPage.md) object.|
+|[Get landingPage](../api/landingPage-get.md)|None|Get a [landingPage](../resources/landingPage.md) object.|
+|[Get endUserNotificationSetting](../api/endUserNotificationSetting-get.md)|None|Get a [endUserNotificationSetting](../resources/endUserNotificationSetting.md) object.|
+|[Get trainingSetting](../api/trainingSetting-get.md)|None|Get a [trainingSetting](../resources/trainingSetting.md) object.|
 
 ## Properties
 

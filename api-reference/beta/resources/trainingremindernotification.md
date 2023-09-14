@@ -1,6 +1,6 @@
 ---
 title: "trainingReminderNotification resource type"
-description: "Training reminder end user notification setting for simulation creation."
+description: "Training reminder end user notification setting for simulation creation. Notification content details for a reminder about taking taking a training."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Training reminder end user notification setting for simulation creation.
+Training reminder end user notification setting for simulation creation. Notification content details for a reminder about taking taking a training.
 
 Inherits from [baseEndUserNotification](../resources/baseendusernotification.md).
 
@@ -22,7 +22,7 @@ Inherits from [baseEndUserNotification](../resources/baseendusernotification.md)
 |Property|Type|Description|
 |:---|:---|:---|
 |defaultLanguage|String|Default language. Inherited from [baseEndUserNotification](../resources/baseendusernotification.md).|
-|deliveryFrequency|notificationDeliveryFrequency|Frequency. Possible values are: `unknown`, `weekly`, `biWeekly`, `unknownFutureValue`.|
+|deliveryFrequency|notificationDeliveryFrequency|Configurable frequency for the reminder email introduced during simulation created. Possible values are: `unknown`, `weekly`, `biWeekly`, `unknownFutureValue`.|
 
 ## Relationships
 

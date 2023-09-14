@@ -39,7 +39,7 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who last modified the training.|
 |lastModifiedDateTime|DateTimeOffset|Date and time when the training was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |source|simulationContentSource|Source. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
-|supportedLocales|String collection|Supported locales.|
+|supportedLocales|String collection|Supported locales for content for the associated training.|
 |tags|String collection|Training tags.|
 |type|trainingType|The type of training. Possible values are: `unknown`, `phishing`, `unknownFutureValue`.|
 
@@ -47,7 +47,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|languageDetails|[trainingLanguageDetail](../resources/traininglanguagedetail.md) collection|**TODO: Add Description**|
+|languageDetails|[trainingLanguageDetail](../resources/traininglanguagedetail.md) collection|Language specific details on a training.|
 
 ## JSON representation
 

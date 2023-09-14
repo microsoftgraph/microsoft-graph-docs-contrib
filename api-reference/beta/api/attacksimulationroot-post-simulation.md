@@ -60,6 +60,7 @@ The following table shows the properties that are required when you create the s
 |landingPage|[landingPage](../resources/landingpage.md)|The landing page associated with the attack simulation and training campaign.|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation and training campaign.|
 |launchDateTime|DateTimeOffset|Date and time of the launch/start of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
+|payloadDeliveryPlatform|payloadDeliveryPlatform|Method of delivery of the phishing payload used in the attack simulation and training campaign. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |loginPage|[loginPage](../resources/loginpage.md)|The login page associated with the attack simulation and training campaign.|
 |oAuthConsentAppDetail|[oAuthConsentAppDetail](../resources/oauthconsentappdetail.md)|Details required for the `oAuthConsentGrant` technique.|
 |payload|[payload](../resources/payload.md)|The payload associated with the attack simulation and training campaign.|

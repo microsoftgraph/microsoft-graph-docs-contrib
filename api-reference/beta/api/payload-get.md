@@ -95,7 +95,7 @@ Content-Type: application/json
   "status": "draft",
   "source": "tenant",
   "language": "en",
-  "predictedCompromiseRate": 20,
+  "predictedCompromiseRate": 20.0,
   "complexity": "medium",
   "technique": "credentialHarvesting",
   "createdBy": {
