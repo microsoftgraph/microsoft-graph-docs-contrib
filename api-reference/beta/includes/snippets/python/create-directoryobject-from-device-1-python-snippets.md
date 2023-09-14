@@ -12,7 +12,7 @@ request_body = ReferenceCreate(
 	odata_id = "https://graph.microsoft.com/beta/directoryObjects/{id}",
 )
 
-await graph_client.devices.by_device_id('device-id').registered_owners.ref.post(request_body = request_body)
+await graph_client.devices.by_device_id('device-id').registered_owners.ref.post(body = request_body)
 
 
 ```

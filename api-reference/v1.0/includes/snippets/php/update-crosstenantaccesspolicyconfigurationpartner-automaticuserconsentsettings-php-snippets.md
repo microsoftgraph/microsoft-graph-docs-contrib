@@ -15,6 +15,6 @@ $automaticUserConsentSettings->setInboundAllowed(true);
 $automaticUserConsentSettings->setOutboundAllowed(true);
 $requestBody->setAutomaticUserConsentSettings($automaticUserConsentSettings);
 
-$result = $graphServiceClient->policies()->crossTenantAccessPolicy()->partners()->byCrossTenantAccessPolicyConfigurationPartnerId('crossTenantAccessPolicyConfigurationPartner-tenantId')->patch($requestBody)->wait();
+$result = $graphServiceClient->policies()->crossTenantAccessPolicy()->partners()->byCrossTenantAccessPolicyConfigurationPartnerTenantId('crossTenantAccessPolicyConfigurationPartner-tenantId')->patch($requestBody)->wait();
 
 ```

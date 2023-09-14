@@ -12,7 +12,7 @@ request_body = MarkAsJunkPostRequestBody(
 	move_to_junk = True,
 )
 
-result = await graph_client.me.messages.by_message_id('message-id').mark_a_junk.post(request_body = request_body)
+result = await graph_client.me.messages.by_message_id('message-id').mark_a_junk.post(body = request_body)
 
 
 ```

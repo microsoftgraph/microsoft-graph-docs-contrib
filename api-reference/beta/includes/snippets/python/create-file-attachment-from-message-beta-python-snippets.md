@@ -14,7 +14,7 @@ request_body = FileAttachment(
 	content_bytes = base64.urlsafe_b64decode("a0b1c76de9f7="),
 )
 
-result = await graph_client.me.messages.by_message_id('message-id').attachments.post(request_body = request_body)
+result = await graph_client.me.messages.by_message_id('message-id').attachments.post(body = request_body)
 
 
 ```

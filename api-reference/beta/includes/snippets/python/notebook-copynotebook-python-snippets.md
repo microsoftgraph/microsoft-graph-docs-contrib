@@ -13,7 +13,7 @@ request_body = CopyNotebookPostRequestBody(
 	rename_as = "renameAs-value",
 )
 
-result = await graph_client.me.onenote.notebooks.by_notebook_id('notebook-id').copy_notebook.post(request_body = request_body)
+result = await graph_client.me.onenote.notebooks.by_notebook_id('notebook-id').copy_notebook.post(body = request_body)
 
 
 ```

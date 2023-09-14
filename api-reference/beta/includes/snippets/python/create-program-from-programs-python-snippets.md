@@ -13,7 +13,7 @@ request_body = Program(
 	description = "test description",
 )
 
-result = await graph_client.programs.post(request_body = request_body)
+result = await graph_client.programs.post(body = request_body)
 
 
 ```

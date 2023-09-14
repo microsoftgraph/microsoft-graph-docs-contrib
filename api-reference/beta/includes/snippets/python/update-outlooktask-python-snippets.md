@@ -22,7 +22,7 @@ headers = {
 
 )
 
-result = await graph_client.me.outlook.tasks.by_task_id('outlookTask-id').patch(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.me.outlook.tasks.by_task_id('outlookTask-id').patch(body = request_body, request_configuration = request_configuration)
 
 
 ```
