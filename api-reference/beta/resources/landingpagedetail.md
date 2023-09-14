@@ -21,7 +21,6 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List landingPageDetails](../api/landingpage-list-details.md)|[landingPageDetail](../resources/landingpagedetail.md) collection|Get a list of the [landingPageDetail](../resources/landingpagedetail.md) objects and their properties.|
 |[Get landingPageDetail](../api/landingpagedetail-get.md)|[landingPageDetail](../resources/landingpagedetail.md)|Read the properties and relationships of a [landingPageDetail](../resources/landingpagedetail.md) object.|
 
 ## Properties

@@ -33,8 +33,6 @@ Inherits from [entity](../resources/entity.md).
 |[Get payload](../api/payload-get.md)|None|Get a [payload](../resources/payload.md) object.|
 |[Get loginPage](../api/loginPage-get.md)|None|Get a [loginPage](../resources/loginPage.md) object.|
 |[Get landingPage](../api/landingPage-get.md)|None|Get a [landingPage](../resources/landingPage.md) object.|
-|[Get endUserNotificationSetting](../api/endUserNotificationSetting-get.md)|None|Get a [endUserNotificationSetting](../resources/endUserNotificationSetting.md) object.|
-|[Get trainingSetting](../api/trainingSetting-get.md)|None|Get a [trainingSetting](../resources/trainingSetting.md) object.|
 
 ## Properties
 
