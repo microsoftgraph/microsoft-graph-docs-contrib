@@ -1,9 +1,9 @@
 ---
 title: "List cloudPcFrontLineServicePlans"
 description: "Get a list of the cloudPcFrontLineServicePlan objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "Guoan Tang"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## HTTP request
 
@@ -79,10 +79,10 @@ Content-Type: application/json
   "value": [
     {
       "@odata.type": "#microsoft.graph.cloudPcFrontLineServicePlan",
-      "id": "fb22de5e-1ac7-731e-e4d2-dffb38ffb261",
-      "displayName": "String",
-      "usedCount": "Integer",
-      "totalCount": "Integer"
+      "id": "dd3801e2-4aa1-4b16-a44b-243e55497584",
+      "displayName": "Cloud PC Frontline 4vCPU/16GB/128GB",
+      "usedCount": 10,
+      "totalCount": 30
     }
   ]
 }

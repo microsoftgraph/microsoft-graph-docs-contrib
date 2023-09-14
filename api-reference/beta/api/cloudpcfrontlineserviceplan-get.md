@@ -1,13 +1,14 @@
 ---
 title: "Get cloudPcFrontLineServicePlan"
 description: "Read the properties and relationships of a cloudPcFrontLineServicePlan object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "Guoan Tang"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
 # Get cloudPcFrontLineServicePlan
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,13 +16,14 @@ Namespace: microsoft.graph
 Read the properties and relationships of a [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from least to most privileged)|
-|:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | CloudPC.Read.All, CloudPC.ReadWrite.All     |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | CloudPC.Read.All, CloudPC.ReadWrite.All     |
 
 ## HTTP request
 
@@ -29,19 +31,23 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 GET /deviceManagement/virtualEndpoint/frontLineServicePlans/{cloudPcFrontLineServicePlanId}
 ```
 
 ## Optional query parameters
+
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -51,38 +57,43 @@ If successful, this method returns a `200 OK` response code and a [cloudPcFrontL
 ## Examples
 
 ### Request
+
 The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_cloudpcfrontlineserviceplan"
 }
 -->
-``` http
+
+```http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/frontLineServicePlans/{cloudPcFrontLineServicePlanId}
 ```
 
-
 ### Response
+
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+
+> **Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.cloudPcFrontLineServicePlan"
 }
 -->
-``` http
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.cloudPcFrontLineServicePlan",
-    "id": "fb22de5e-1ac7-731e-e4d2-dffb38ffb261",
-    "displayName": "String",
-    "usedCount": "Integer",
-    "totalCount": "Integer"
+    "id": "dd3801e2-4aa1-4b16-a44b-243e55497584",
+    "displayName": "Cloud PC Frontline 4vCPU/16GB/128GB",
+    "usedCount": 10,
+    "totalCount": 30
   }
 }
 ```
-
