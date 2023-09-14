@@ -1,6 +1,6 @@
 ---
 title: "virtualEventWebinar resource type"
-description: "Information about a virtual event webinar."
+description: "Contains information about a virtual event webinar."
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -58,9 +58,9 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
-| presenters | [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Presenters' information of the webinar. Inherited from [microsoft.graph.virtualEvent](../resources/virtualevent.md)|
+| presenters | [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Presenters' information of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md).|
 | registration | [virtualEventRegistration](../resources/virtualeventregistration.md) | Registration configuration of the webinar. |
-| sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the webinar. Inherited from [microsoft.graph.virtualEvent](../resources/virtualevent.md) |
+| sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 
 ## JSON representation
 
@@ -76,24 +76,14 @@ Here's a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.virtualEventWebinar",
-  "id": "String (identifier)",
-  "status": "String",
-  "displayName": "String",
-  "description": "String",
-  "startDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "endDateTime": {
-    "@odata.type": "microsoft.graph.dateTimeTimeZone"
-  },
-  "createdBy": {
-    "@odata.type": "microsoft.graph.communicationsIdentitySet"
-  },
   "audience": "String",
-  "coOrganizers": [
-    {
-      "@odata.type": "microsoft.graph.communicationsUserIdentity"
-    }
-  ]
+  "coOrganizers": [{"@odata.type": "microsoft.graph.communicationsUserIdentity"}],
+  "createdBy": {"@odata.type": "microsoft.graph.communicationsIdentitySet"},
+  "description": "String",
+  "displayName": "String",
+  "endDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "id": "String (identifier)",
+  "startDateTime": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "status": "String"
 }
 ```

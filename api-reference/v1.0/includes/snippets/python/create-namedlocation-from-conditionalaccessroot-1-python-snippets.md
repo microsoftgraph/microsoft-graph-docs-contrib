@@ -4,37 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = IpNamedLocation()
-request_body.@odata_type = '#microsoft.graph.ipNamedLocation'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.display_name = 'Untrusted IP named location'
+request_body = IpNamedLocation(
+	odata_type = "#microsoft.graph.ipNamedLocation",
+	display_name = "Untrusted IP named location",
+	is_trusted = False,
+	ip_ranges = [
+		IPv4CidrRange(
+			odata_type = "#microsoft.graph.iPv4CidrRange",
+			cidr_address = "12.34.221.11/22",
+		),
+		IPv6CidrRange(
+			odata_type = "#microsoft.graph.iPv6CidrRange",
+			cidr_address = "2001:0:9d38:90d6:0:0:0:0/63",
+		),
+	]
+)
 
-request_body.is_trusted = False
-
-ip_ranges_ip_range1 = IPv4CidrRange()
-ip_ranges_ip_range1.@odata_type = '#microsoft.graph.iPv4CidrRange'
-
-ip_ranges_ip_range1.cidr_address = '12.34.221.11/22'
-
-
-ipRangesArray []= ipRangesIpRange1;
-ip_ranges_ip_range2 = IPv6CidrRange()
-ip_ranges_ip_range2.@odata_type = '#microsoft.graph.iPv6CidrRange'
-
-ip_ranges_ip_range2.cidr_address = '2001:0:9d38:90d6:0:0:0:0/63'
-
-
-ipRangesArray []= ipRangesIpRange2;
-request_body.ipranges(ipRangesArray)
-
-
-
-
-
-result = await client.identity.conditional_access.named_locations.post(request_body = request_body)
+result = await graph_client.identity.conditional_access.named_locations.post(body = request_body)
 
 
 ```

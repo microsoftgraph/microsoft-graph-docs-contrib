@@ -4,7 +4,7 @@ description: "The result of an ID format conversion performed by the translateEx
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "outlook"
-author: "abheek-das"
+author: "SuryaLashmiS"
 ---
 
 # convertIdResult resource type

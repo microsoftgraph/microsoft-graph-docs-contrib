@@ -4,40 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = IosMobileAppConfiguration()
-request_body.@odata_type = '#microsoft.graph.iosMobileAppConfiguration'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.TargetedMobileApps(['Targeted Mobile Apps value', ])
+request_body = IosMobileAppConfiguration(
+	odata_type = "#microsoft.graph.iosMobileAppConfiguration",
+	targeted_mobile_apps = [
+		"Targeted Mobile Apps value",
+	]
+	description = "Description value",
+	display_name = "Display Name value",
+	version = 7,
+	encoded_setting_xml = base64.urlsafe_b64decode("ZW5jb2RlZFNldHRpbmdYbWw="),
+	settings = [
+		AppConfigurationSettingItem(
+			odata_type = "microsoft.graph.appConfigurationSettingItem",
+			app_config_key = "App Config Key value",
+			app_config_key_type = MdmAppConfigKeyType.IntegerType,
+			app_config_key_value = "App Config Key Value value",
+		),
+	]
+)
 
-request_body.description = 'Description value'
-
-request_body.display_name = 'Display Name value'
-
-request_body.Version = 7
-
-request_body.EncodedSettingXml(base64_decode('ZW5jb2RlZFNldHRpbmdYbWw='))
-
-settings_app_configuration_setting_item1 = AppConfigurationSettingItem()
-settings_app_configuration_setting_item1.@odata_type = 'microsoft.graph.appConfigurationSettingItem'
-
-settings_app_configuration_setting_item1.app_config_key = 'App Config Key value'
-
-settings_app_configuration_setting_item1.appconfigkeytype(MdmAppConfigKeyType.IntegerType('mdmappconfigkeytype.integertype'))
-
-settings_app_configuration_setting_item1.app_config_key_value = 'App Config Key Value value'
-
-
-settingsArray []= settingsAppConfigurationSettingItem1;
-request_body.settings(settingsArray)
-
-
-
-
-
-result = await client.device_app_management.mobile_app_configurations.post(request_body = request_body)
+result = await graph_client.device_app_management.mobile_app_configurations.post(body = request_body)
 
 
 ```

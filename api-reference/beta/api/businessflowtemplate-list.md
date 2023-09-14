@@ -4,7 +4,7 @@ description: "In the Azure AD access reviews feature, list all the businessFlowT
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "jyothig123"
+author: "shubhamguptacal"
 ---
 
 # List businessFlowTemplates (deprecated)
@@ -58,6 +58,10 @@ GET https://graph.microsoft.com/beta/businessFlowTemplates
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-businessflowtemplate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-businessflowtemplate-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

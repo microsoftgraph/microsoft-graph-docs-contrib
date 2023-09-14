@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: Download a file
 ms.localizationpriority: high
 ms.prod: "sharepoint"
