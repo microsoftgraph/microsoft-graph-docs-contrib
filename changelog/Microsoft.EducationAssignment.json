@@ -7,7 +7,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `EduAssignments.ReadWrite.All` to the [Create](https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments?view=graph-rest-beta) method of [assignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta).",
+          "Description": "Added support for the application permission `EduAssignments.ReadWrite.All` to the [Create](https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments) method of [assignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment).",
           "Target": "educationAssignment"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWriteBasic.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `EduAssignments.ReadWriteBasic.All` to the [Create](https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments?view=graph-rest-beta) method of [assignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta).",
+          "Description": "Added support for the application permission `EduAssignments.ReadWriteBasic.All` to the [Create](https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments) method of [assignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment).",
           "Target": "educationAssignment"
         }
       ],
@@ -427,30 +427,6 @@
           "ChangeType": "Addition",
           "Description": "Added support for application permissions to the [educationSubmission: unsubmit](https://learn.microsoft.com/en-us/graph/api/educationsubmission-unsubmit?view=graph-rest-beta).",
           "Target": "educationSubmission"
-        },
-        {
-          "Id": "eb466795-411f-49ba-94e3-506df82141b3",
-          "ApiChange": "Permission",
-          "ChangedApiName": "EduAssignments.ReadWrite.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the policy-based application permission of `EduAssignments.ReadWrite.All'",
-          "Target": "educationAssignment"
-        },
-        {
-          "Id": "d0e5c7ed-e1cd-453b-bfd2-3ec9473a635c",
-          "ApiChange": "Permission",
-          "ChangedApiName": "EduAssignments.ReadWrite.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the policy-based application permission of `EduAssignments.ReadWrite.All'",
-          "Target": "educationAssignment"
-        },
-        {
-          "Id": "aee14082-1b25-4621-aa0e-d11a3f57192a",
-          "ApiChange": "Permission",
-          "ChangedApiName": "EduAssignments.ReadWrite.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the policy-based application permission of `EduAssignments.ReadWrite.All'",
-          "Target": "educationAssignment"
         }
       ],
       "Id": "b8528e3b-c132-4de7-a673-2f624927e011",
@@ -541,38 +517,6 @@
           "ChangeType": "Addition",
           "Description": "Added support for application permissions to the [educationSubmission: unsubmit](https://learn.microsoft.com/en-us/graph/api/educationsubmission-unsubmit?view=graph-rest-1.0).",
           "Target": "educationSubmission"
-        },
-        {
-          "Id": "84f65bbc-0a45-4cdf-8164-45c617c2e2fc",
-          "ApiChange": "Permission",
-          "ChangedApiName": "EduAssignments.ReadWrite.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the policy-based application permission of `EduAssignments.ReadWrite.All'",
-          "Target": "educationAssignment"
-        },
-        {
-          "Id": "b1b2b143-4da7-4f27-9163-2bc80ac98e5e",
-          "ApiChange": "Permission",
-          "ChangedApiName": "EduAssignments.ReadWrite.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the policy-based application permission of `EduAssignments.ReadWrite.All'",
-          "Target": "educationAssignment"
-        },
-        {
-          "Id": "905e115f-a754-4e7c-9543-c096b7138f17",
-          "ApiChange": "Permission",
-          "ChangedApiName": "EduAssignments.ReadWrite.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the policy-based application permission of `EduAssignments.ReadWrite.All'",
-          "Target": "educationAssignment"
-        },
-        {
-          "Id": "101020c3-3a1e-46ae-ac46-9c25848193d9",
-          "ApiChange": "Permission",
-          "ChangedApiName": "EduAssignments.ReadWrite.All",
-          "ChangeType": "Addition",
-          "Description": "Added support for the policy-based application permission of `EduAssignments.ReadWrite.All'",
-          "Target": "educationAssignment"
         }
       ],
       "Id": "0e262ff3-3b29-4a2b-a44b-39ed5f2e676d",
