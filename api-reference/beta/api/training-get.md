@@ -1,4 +1,3 @@
-
 ---
 title: "Get training"
 description: "Get an attack simulation training for a tenant."
