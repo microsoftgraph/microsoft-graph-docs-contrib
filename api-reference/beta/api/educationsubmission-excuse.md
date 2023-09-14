@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
- Excuse a submission. Submissions that are excused will not be included in average grade calculations, and rubric selections and points feedback will be deleted. Only teachers can perform this action. 
+ Excuse a submission. Excused submissions are not included in average grade calculations, and rubric selections and points feedback will be deleted. Only teachers can perform this action. 
 
 If the `Prefer: include-unknown-enum-members` request header is provided, the excused submission retains the **excused** status. Otherwise, the submission status changes to **returned**. For more information on this heading, see the [Examples](#examples) section.
 
@@ -49,7 +49,7 @@ If successful, this method returns a `200 Ok` response code and an [educationSub
 ### Example 1: Request with optional Prefer header
 
 #### Request
-The following is an example of the request with Header Prefer: include-unknown-enum-members.
+Here's an example of the request with Header Prefer: include-unknown-enum-members.
 
 <!-- {
   "blockType": "request",
@@ -62,7 +62,7 @@ Prefer: include-unknown-enum-members
 ```
 
 #### Response
-The following is an example of the response when `Prefer: include-unknown-enum-members` is provided in the request header. 
+Here's an example of the response when `Prefer: include-unknown-enum-members` is provided in the request header. 
 
 <!-- {
   "blockType": "response",
@@ -133,10 +133,10 @@ HTTP/1.1 200 Ok
 ```
 
 ### Example 2: Request without the Prefer request header
-The following example shows how to call this method.
+Here's an example that shows how to call this method.
 
 #### Request
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "request",
