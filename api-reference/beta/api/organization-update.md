@@ -31,6 +31,12 @@ The calling user must also be in one of the following [Azure AD roles](/azure/ac
 * Partner Tier2 Support
 * Billing Administrator
 
+**Note**: To update `onPremisesSyncEnabled` property requires that the calling user must be one of 
+
+* Global Administrator
+* Directory Synchronization Accounts
+* Hybrid Identity Administrator
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -54,6 +60,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property  | Type |Description|
 |:---------------|:--------|:----------|
 |marketingNotificationEmails|String collection|                                        **Notes**: not nullable.            |
+|onPremisesSyncEnabled|Boolean|                                        **Notes**: nullable.            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|The privacy profile of an organization (set statementUrl and contactEmail).            |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String collection||
@@ -82,6 +89,7 @@ Content-type: application/json
 
 {
   "marketingNotificationEmails" : ["marketing@contoso.com"],
+  "onPremisesSyncEnabled" : true,
   "privacyProfile" :
     {
       "contactEmail":"alice@contoso.com",
