@@ -148,7 +148,7 @@ POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-
 ```
 
 #### Response
-The following is an example of the response when Prefer: include-unknown-enum-members is NOT provided in the request header and the submission hasn't been excused before.
+Here's an example of the response when Prefer: include-unknown-enum-members is NOT provided in the request header, and the submission hasn't been excused before.
 
 <!-- {
   "blockType": "response",
