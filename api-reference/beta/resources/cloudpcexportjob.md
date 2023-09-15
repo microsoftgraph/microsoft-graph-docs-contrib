@@ -48,7 +48,7 @@ Represents the export job for downloading a specified Cloud PC report.
 
 | Member                                 | Description                                                         |
 | :------------------------------------- | :------------------------------------------------------------------ |
-| remoteConnectionHistoricalReports      | The historical remote connections report.                           |
+| remoteConnectionHistoricalReports      | The historical aggregated remote connections report.                           |
 | dailyAggregatedRemoteConnectionReports | The daily aggregated remote connections report.                     |
 | totalAggregatedRemoteConnectionReports | The total aggregated remote connections report.                     |
 | sharedUseLicenseUsageReport            | Indicates daily/hourly aggregated shared use license usage report.  |
