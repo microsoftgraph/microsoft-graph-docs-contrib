@@ -22,6 +22,8 @@ You can use the authentication method APIs to manage a user's authentication met
 
 The APIs are a key tool to manage your users' authentication methods.
 
+Note that we don't recommend using these APIs for scenarios where you might need to iterate over your entire user population for auditing or security check purposes. For these types of scenarios we recommend leveraging the [authentication method registration and usage reporting APIs](/graph/api/resources/authenticationmethods-usage-insights-overview).
+
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
