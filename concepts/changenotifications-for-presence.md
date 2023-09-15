@@ -100,6 +100,7 @@ Notifications for presence event changes are expected when a subscribed user pre
 Presence notifications with resource data will have the following additional properties encrypted in the payload:
 - The availability, or base presence information (Available, Away, Busy)
 - The activity, or information that’s supplemental to the availability (InAMeeting, InACall)
+
 **Note** The availability and activity can be the same value.
 
 For possible combinations of availability and activity, see [Presence properties](/graph/api/resources/presence).
@@ -144,5 +145,5 @@ For possible combinations of availability and activity, see [Presence properties
 
 ## See also
 - [View the presence resource type](/graph/api/resources/presence)
-- [Learn about change notifications through webhooks](graph/change-notifications-delivery-webhooks)
-- [Learn about change notifications API in Microsoft Graph](graph/api/resources/webhooks)
+- [Learn about change notifications through webhooks](change-notifications-delivery-webhooks.md)
+- [Learn about change notifications API in Microsoft Graph](/graph/api/resources/webhooks)
