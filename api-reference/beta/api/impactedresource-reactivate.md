@@ -1,9 +1,9 @@
 ---
 title: "impactedResource: reactivate"
 description: "Reactivate an accidentally dismissed, completed, or postponed impactedResource object."
-author: "hafowler"
+author: "ddeeps2610"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -69,6 +69,10 @@ POST https://graph.microsoft.com/beta/directory/recommendations/0cb31920-84b9-47
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/impactedresourcethisreactivate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/impactedresourcethisreactivate-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

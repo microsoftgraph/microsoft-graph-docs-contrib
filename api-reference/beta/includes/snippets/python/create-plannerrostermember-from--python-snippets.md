@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = PlannerRosterMember()
-request_body.@odata_type = '#microsoft.graph.plannerRosterMember'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.user_id = 'String'
+request_body = PlannerRosterMember(
+	odata_type = "#microsoft.graph.plannerRosterMember",
+	user_id = "String",
+)
 
-
-
-
-result = await client.planner.rosters.by_roster_id('plannerRoster-id').members.post(request_body = request_body)
+result = await graph_client.planner.rosters.by_roster_id('plannerRoster-id').members.post(body = request_body)
 
 
 ```

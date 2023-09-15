@@ -4,22 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = MobilityManagementPolicy()
-request_body.@odata_type = '#microsoft.graph.mobilityManagementPolicy'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.compliance_url = 'https://portal.mg.contoso.com/?portalAction=Compliance'
+request_body = MobilityManagementPolicy(
+	odata_type = "#microsoft.graph.mobilityManagementPolicy",
+	compliance_url = "https://portal.mg.contoso.com/?portalAction=Compliance",
+	discovery_url = "https://enrollment.mg.contoso.com/enrollmentserver/discovery.svc",
+	terms_of_use_url = "https://portal.mg.contoso.com/TermsofUse.aspx",
+)
 
-request_body.discovery_url = 'https://enrollment.mg.contoso.com/enrollmentserver/discovery.svc'
-
-request_body.terms_of_use_url = 'https://portal.mg.contoso.com/TermsofUse.aspx'
-
-
-
-
-result = await client.policies.mobile_app_management_policies.by_mobile_app_management_policie_id('mobilityManagementPolicy-id').patch(request_body = request_body)
+result = await graph_client.policies.mobile_app_management_policies.by_mobile_app_management_policie_id('mobilityManagementPolicy-id').patch(body = request_body)
 
 
 ```

@@ -2,7 +2,7 @@
 title: "List assigned homeRealmDiscoveryPolicies"
 description: "List homeRealmDiscoveryPolicies that are assigned to a service principal."
 ms.localizationpriority: medium
-author: "hpsin"
+author: "nickludwig"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---

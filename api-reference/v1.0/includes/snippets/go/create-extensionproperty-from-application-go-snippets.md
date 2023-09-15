@@ -25,7 +25,7 @@ targetObjects := []string {
 }
 requestBody.SetTargetObjects(targetObjects)
 
-result, err := graphClient.Applications().ByApplicationId("application-id").ExtensionProperties().Post(context.Background(), requestBody, nil)
+extensionProperties, err := graphClient.Applications().ByApplicationId("application-id").ExtensionProperties().Post(context.Background(), requestBody, nil)
 
 
 ```

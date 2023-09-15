@@ -78,7 +78,7 @@ tasks := []graphmodelsidentitygovernance.Taskable {
 }
 requestBody.SetTasks(tasks)
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().Post(context.Background(), requestBody, nil)
+workflows, err := graphClient.IdentityGovernance().LifecycleWorkflows().Workflows().Post(context.Background(), requestBody, nil)
 
 
 ```

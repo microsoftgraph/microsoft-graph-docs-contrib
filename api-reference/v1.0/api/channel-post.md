@@ -16,7 +16,7 @@ Create a new [channel](../resources/channel.md) in a team, as specified in the r
 If you're creating a private channel, you can add a maximum of 200 members.
 
 > [!NOTE]
-> Some special characters in the channel name will cause the [Get filesFolder](/graph/api/channel-get-filesfolder) API to return an error. For details, see [Known issues](/graph/known-issues#create-channel).
+> Some special characters in the channel name will cause the [Get filesFolder](/graph/api/channel-get-filesfolder) API to return an error. For details, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=16692).
 
 ## Permissions
 
@@ -206,6 +206,8 @@ Content-type: application/json
 
 ---
 
+> **Note:** To add a guest account to the channel, for the **roles** property, use the value `guest`.
+
 #### Response
 
 The following is an example of the response.
@@ -388,6 +390,8 @@ Content-type: application/json
 
 ---
 
+>  **Note:** To add a guest account to the channel, for the **roles** property, use the value `guest`.
+
 #### Response
 
 The following is an example of the response.
@@ -483,6 +487,8 @@ Content-type: application/json
 
 ---
 
+>  **Note:** To add a guest account to the channel, for the **roles** property, use the value `guest`.
+
 #### Response
 
 The following is an example of the response.
@@ -511,3 +517,7 @@ Content-Length: 0
   ]
 }
 -->
+
+## See also
+
+[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

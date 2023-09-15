@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc chats get --chat-id {chat-id} --expand members
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc chats get --chat-id {chat-id} --expand "members"
 
 ```

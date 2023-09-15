@@ -23,7 +23,7 @@ requestBody.SetAzureResourceGroupName(&azureResourceGroupName)
 workspaceName := "my-workspace"
 requestBody.SetWorkspaceName(&workspaceName) 
 
-result, err := graphClient.Admin().Windows().Updates().ResourceConnections().Post(context.Background(), requestBody, nil)
+resourceConnections, err := graphClient.Admin().Windows().Updates().ResourceConnections().Post(context.Background(), requestBody, nil)
 
 
 ```

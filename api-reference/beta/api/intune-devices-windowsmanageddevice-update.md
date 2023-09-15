@@ -129,6 +129,7 @@ The following table shows the properties that are required when you create the [
 |specificationVersion|String|Specification version. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|Device join type Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `unknown`, `azureADJoined`, `azureADRegistered`, `hybridAzureADJoined`.|
 |skuFamily|String|Device sku family Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
+|securityPatchLevel|String|This indicates the security patch level of the operating system. These special updates contain important security fixes. For iOS/MacOS they are in (a) format. For android its in 2017-08-07 format. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |skuNumber|Int32|Device sku number, see also: https://learn.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo. Valid values 0 to 2147483647. This property is read-only. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
 |managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Device management features Inherited from [managedDevice](../resources/intune-devices-manageddevice.md). Possible values are: `none`, `microsoftManagedDesktop`.|
 |chromeOSDeviceInfo|[chromeOSDeviceProperty](../resources/intune-devices-chromeosdeviceproperty.md) collection|List of properties of the ChromeOS Device. Default is an empty list. To retrieve actual values GET call needs to be made, with device id and included in select parameter. Inherited from [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -148,7 +149,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 9145
+Content-length: 9200
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -348,6 +349,7 @@ Content-length: 9145
   "specificationVersion": "Specification Version value",
   "joinType": "azureADJoined",
   "skuFamily": "Sku Family value",
+  "securityPatchLevel": "Security Patch Level value",
   "skuNumber": 9,
   "managementFeatures": "microsoftManagedDesktop",
   "chromeOSDeviceInfo": [
@@ -370,7 +372,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9194
+Content-Length: 9249
 
 {
   "@odata.type": "#microsoft.graph.windowsManagedDevice",
@@ -571,6 +573,7 @@ Content-Length: 9194
   "specificationVersion": "Specification Version value",
   "joinType": "azureADJoined",
   "skuFamily": "Sku Family value",
+  "securityPatchLevel": "Security Patch Level value",
   "skuNumber": 9,
   "managementFeatures": "microsoftManagedDesktop",
   "chromeOSDeviceInfo": [

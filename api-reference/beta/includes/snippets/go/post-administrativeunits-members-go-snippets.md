@@ -31,7 +31,7 @@ requestBody.SetMailNickname(&mailNickname)
 securityEnabled := false
 requestBody.SetSecurityEnabled(&securityEnabled) 
 
-result, err := graphClient.AdministrativeUnits().ByAdministrativeUnitId("administrativeUnit-id").Members().Post(context.Background(), requestBody, nil)
+members, err := graphClient.AdministrativeUnits().ByAdministrativeUnitId("administrativeUnit-id").Members().Post(context.Background(), requestBody, nil)
 
 
 ```
