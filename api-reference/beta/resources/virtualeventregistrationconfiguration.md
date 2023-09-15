@@ -38,14 +38,14 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.virtualEventRegistration",
+  "@odata.type": "microsoft.graph.virtualEventRegistrationConfiguration",
   "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.virtualEventRegistration",
+  "@odata.type": "#microsoft.graph.virtualEventRegistrationConfiguration",
   "capacity": "Int32",  
   "id": "String (identifier)",
   "registrationWebUrl": "String"
