@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc users messages create --user-id {user-id} --body '{\
     "subject":"9/8/2018: concert",\
     "body":{\

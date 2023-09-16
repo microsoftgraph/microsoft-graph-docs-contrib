@@ -1,7 +1,7 @@
 ---
 title: "userRegistrationFeatureSummary resource type"
 description: "Represents the summary of users capable of multi-factor authentication, self-service password reset, and passwordless authentication in an organization."
-author: "besiler"
+author: "egreenberg14"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType

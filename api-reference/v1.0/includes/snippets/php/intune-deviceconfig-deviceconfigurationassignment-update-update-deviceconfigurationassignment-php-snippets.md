@@ -6,22 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new DeviceConfigurationAssignment();
-$requestBody->set@odatatype('#microsoft.graph.deviceConfigurationAssignment');
-
+$requestBody->setOdataType('#microsoft.graph.deviceConfigurationAssignment');
 $target = new ConfigurationManagerCollectionAssignmentTarget();
-$target->set@odatatype('microsoft.graph.configurationManagerCollectionAssignmentTarget');
-
+$target->setOdataType('microsoft.graph.configurationManagerCollectionAssignmentTarget');
 $target->setCollectionId('Collection Id value');
-
-
 $requestBody->setTarget($target);
 
-
-$result = $graphServiceClient->deviceManagement()->deviceConfigurations()->byDeviceConfigurationId('deviceConfiguration-id')->assignments()->byAssignmentId('deviceConfigurationAssignment-id')->patch($requestBody);
-
+$result = $graphServiceClient->deviceManagement()->deviceConfigurations()->byDeviceConfigurationId('deviceConfiguration-id')->assignments()->byDeviceConfigurationAssignmentId('deviceConfigurationAssignment-id')->patch($requestBody)->wait();
 
 ```

@@ -49,6 +49,7 @@ For more information about working with groups and members in teams, see [Use th
 |[Get app installed in team](../api/team-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Get the specified app installed in a team.|
 |[Upgrade app installed in team](../api/team-teamsappinstallation-upgrade.md) | None | Upgrade the app installed in a team to the latest version.|
 |[Remove app from team](../api/team-delete-installedapps.md) | None | Remove (uninstall) an app from a team.|
+|[List permission grants](../api/team-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions that have been granted to apps to access the team.|
 
 ## Properties
 
@@ -97,6 +98,7 @@ For a POST request example, see [Request (create team in migration state)](/micr
 |schedule|[schedule](schedule.md)| The schedule of shifts for this team.|
 |tags|[teamworkTag](teamworktag.md) collection|The tags associated with the team.|
 |template|[teamsTemplate](teamstemplate.md)| The template this team was created from. See [available templates](/MicrosoftTeams/get-started-with-teams-templates). |
+|permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection| A collection of permissions granted to apps to access the team.|
 
 ## JSON representation
 

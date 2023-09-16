@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewUser()
 deviceEnrollmentLimit := int32(5)
 requestBody.SetDeviceEnrollmentLimit(&deviceEnrollmentLimit) 
 
-result, err := graphClient.Users().Post(context.Background(), requestBody, nil)
+users, err := graphClient.Users().Post(context.Background(), requestBody, nil)
 
 
 ```
