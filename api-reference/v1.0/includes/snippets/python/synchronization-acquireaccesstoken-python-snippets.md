@@ -16,7 +16,7 @@ request_body = AcquireAccessTokenPostRequestBody(
 	]
 )
 
-await graph_client.applications.by_application_id('application-id').synchronization.acquire_acces_token.post(request_body = request_body)
+await graph_client.applications.by_application_id('application-id').synchronization.acquire_acces_token.post(body = request_body)
 
 
 ```

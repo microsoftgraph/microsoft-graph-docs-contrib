@@ -17,7 +17,7 @@ request_body = SchedulingGroup(
 	]
 )
 
-result = await graph_client.teams.by_team_id('team-id').schedule.scheduling_groups.post(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').schedule.scheduling_groups.post(body = request_body)
 
 
 ```

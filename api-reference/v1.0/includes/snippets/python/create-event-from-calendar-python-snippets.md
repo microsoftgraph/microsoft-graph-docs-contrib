@@ -37,7 +37,7 @@ request_body = Event(
 	transaction_id = "7E163156-7762-4BEB-A1C6-729EA81755A7",
 )
 
-result = await graph_client.me.calendars.by_calendar_id('calendar-id').events.post(request_body = request_body)
+result = await graph_client.me.calendars.by_calendar_id('calendar-id').events.post(body = request_body)
 
 
 ```

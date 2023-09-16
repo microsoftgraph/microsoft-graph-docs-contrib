@@ -14,7 +14,7 @@ request_body = OnlineMeeting(
 	subject = "User Token Meeting",
 )
 
-result = await graph_client.me.online_meetings.post(request_body = request_body)
+result = await graph_client.me.online_meetings.post(body = request_body)
 
 
 ```

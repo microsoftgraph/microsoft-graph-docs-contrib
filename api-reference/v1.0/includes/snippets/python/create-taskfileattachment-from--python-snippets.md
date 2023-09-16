@@ -15,7 +15,7 @@ request_body = TaskFileAttachment(
 	content_type = "image/gif",
 )
 
-result = await graph_client.me.todo.lists.by_list_id('todoTaskList-id').tasks.by_task_id('todoTask-id').attachments.post(request_body = request_body)
+result = await graph_client.me.todo.lists.by_list_id('todoTaskList-id').tasks.by_task_id('todoTask-id').attachments.post(body = request_body)
 
 
 ```

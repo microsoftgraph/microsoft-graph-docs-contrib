@@ -16,7 +16,7 @@ request_body = ChangeDeploymentStatusPostRequestBody(
 	status = "String",
 )
 
-result = await graph_client.tenant_relationships.managed_tenants.management_action_tenant_deployment_statuses.microsoft_graph_managed_tenant_change_deployment_status.post(request_body = request_body)
+result = await graph_client.tenant_relationships.managed_tenants.management_action_tenant_deployment_statuses.microsoft_graph_managed_tenant_change_deployment_status.post(body = request_body)
 
 
 ```

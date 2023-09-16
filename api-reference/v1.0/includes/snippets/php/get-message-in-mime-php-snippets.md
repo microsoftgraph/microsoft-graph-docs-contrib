@@ -10,6 +10,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$graphServiceClient->me()->messages()->byMessageId('message-id')->value()->get()->wait();
+$graphServiceClient->me()->messages()->byMessageId('message-id')->content()->get()->wait();
 
 ```

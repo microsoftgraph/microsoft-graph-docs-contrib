@@ -13,7 +13,7 @@ request_body = EdiscoveryCase(
 	description = "Updated description",
 )
 
-result = await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').patch(request_body = request_body)
+result = await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').patch(body = request_body)
 
 
 ```

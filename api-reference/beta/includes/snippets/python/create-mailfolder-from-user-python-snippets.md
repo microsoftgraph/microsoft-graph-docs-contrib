@@ -13,7 +13,7 @@ request_body = MailFolder(
 	is_hidden = True,
 )
 
-result = await graph_client.me.mail_folders.post(request_body = request_body)
+result = await graph_client.me.mail_folders.post(body = request_body)
 
 
 ```

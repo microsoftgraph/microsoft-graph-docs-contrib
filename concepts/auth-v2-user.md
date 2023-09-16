@@ -7,7 +7,7 @@ ms.reviewer: jackson.woods
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20
-ms.date: 06/09/2023
+ms.date: 09/08/2023
 ---
 
 # Get access on behalf of a user
@@ -39,11 +39,11 @@ For an app to get authorization and access to Microsoft Graph using the authoriz
 
 ## 1. Register the app
 
-Before the app can call the Microsoft identity platform endpoints or Microsoft Graph, it must be properly registered. [Follow the steps to register your app](./auth-register-app-v2.md) on the Azure portal.
+Before the app can call the Microsoft identity platform endpoints or Microsoft Graph, it must be properly registered. [Follow the steps to register your app](./auth-register-app-v2.md) on the Microsoft Entra admin center.
 
 From the app registration, save the following values:
 
-- The application ID (referred to as Object ID on the Azure portal) assigned by the app registration portal.
+- The application ID (referred to as Object ID on the Microsoft Entra admin center) assigned by the app registration portal.
 - A redirect URI (or reply URL) for the app to receive responses from Azure AD.
 - A client secret (application password), a certificate, or a federated identity credential. This property isn't needed for public clients like native, mobile and single page applications.
 

@@ -15,7 +15,7 @@ request_body = SnoozeReminderPostRequestBody(
 	),
 )
 
-await graph_client.me.events.by_event_id('event-id').snooze_reminder.post(request_body = request_body)
+await graph_client.me.events.by_event_id('event-id').snooze_reminder.post(body = request_body)
 
 
 ```
