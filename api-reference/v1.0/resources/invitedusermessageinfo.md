@@ -1,4 +1,4 @@
-il.com---
+---
 title: "invitedUserMessageInfo resource type"
 description: "The invitedUserMessageInfo object allows you to configure the invitation message."
 ms.localizationpriority: medium
