@@ -23,7 +23,7 @@ In this tutorial, you learn how to generate a risky sign-in and remediate the ri
 To successfully complete this tutorial, make sure that you have the required prerequisites:
 
 - You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
-- This tutorial uses the Tor browser to sign in to the Azure portal anonymously. You can use any anonymous browser to accomplish the task. To download the Tor browser, see [Download Tor Browser](https://www.torproject.org/download/).
+- This tutorial uses the Tor browser to sign in to the Microsoft Entra admin center anonymously. You can use any anonymous browser to accomplish the task. To download the Tor browser, see [Download Tor Browser](https://www.torproject.org/download/).
 - Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
 - Grant yourself the following delegated permissions: `IdentityRiskEvent.Read.All`, `IdentityRiskyUser.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ConditionalAccess`, and `User.ReadWrite.All`.
 
@@ -115,14 +115,14 @@ Content-type: application/json
 
 ### Trigger a risk detection
 
-One way to trigger a risk detection on a user account is to sign in to the Azure portal anonymously. In this tutorial, the Tor browser is used to sign in anonymously. 
+One way to trigger a risk detection on a user account is to sign in to the Microsoft Entra admin center anonymously. In this tutorial, the Tor browser is used to sign in anonymously. 
 
 1. Open the browser and enter `portal.azure.com` for the site address.
 2. Sign in to the portal using the credentials for the **MyTestUser1** account that you previously created. You will be asked to change the existing password.
 
 ### List risk detections
 
-When you signed in to the Azure portal using the anonymous browser, an `anonymizedIPAddress` risk event was detected. You can use the `$filter` query parameter to get only the risk detections that are associated with the **MyTestUser1** user account.
+When you signed in to the Microsoft Entra admin center using the anonymous browser, an `anonymizedIPAddress` risk event was detected. You can use the `$filter` query parameter to get only the risk detections that are associated with the **MyTestUser1** user account.
 
 #### Request
 
@@ -521,7 +521,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/tutorial-riskdetection-block-user-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -590,7 +590,7 @@ With this conditional access policy in place, the **MyTestUser1** account is now
 
 ## Step 5: Dismiss risky users
 
-If you believe the user is not at risk, and you don’t want to enforce a conditional access policy, you can manually dismiss the risky user.
+If you believe the user is not at risk, and you don't want to enforce a conditional access policy, you can manually dismiss the risky user.
 
 ### Dismiss the risky user
 

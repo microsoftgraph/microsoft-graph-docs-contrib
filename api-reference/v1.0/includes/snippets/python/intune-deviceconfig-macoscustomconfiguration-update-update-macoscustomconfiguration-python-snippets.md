@@ -4,28 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = MacOSCustomConfiguration()
-request_body.@odata_type = '#microsoft.graph.macOSCustomConfiguration'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.description = 'Description value'
+request_body = MacOSCustomConfiguration(
+	odata_type = "#microsoft.graph.macOSCustomConfiguration",
+	description = "Description value",
+	display_name = "Display Name value",
+	version = 7,
+	payload_name = "Payload Name value",
+	payload_file_name = "Payload File Name value",
+	payload = base64.urlsafe_b64decode("cGF5bG9hZA=="),
+)
 
-request_body.display_name = 'Display Name value'
-
-request_body.Version = 7
-
-request_body.payload_name = 'Payload Name value'
-
-request_body.payload_file_name = 'Payload File Name value'
-
-request_body.Payload(base64_decode('cGF5bG9hZA=='))
-
-
-
-
-result = await client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(body = request_body)
 
 
 ```

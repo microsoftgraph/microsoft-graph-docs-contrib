@@ -22,7 +22,7 @@ Device management reports entity
 |:---|:---|:---|
 |[Get deviceManagementReports](../api/intune-androidfotaservice-devicemanagementreports-get.md)|[deviceManagementReports](../resources/intune-androidfotaservice-devicemanagementreports.md)|Read properties and relationships of the [deviceManagementReports](../resources/intune-androidfotaservice-devicemanagementreports.md) object.|
 |[Update deviceManagementReports](../api/intune-androidfotaservice-devicemanagementreports-update.md)|[deviceManagementReports](../resources/intune-androidfotaservice-devicemanagementreports.md)|Update the properties of a [deviceManagementReports](../resources/intune-androidfotaservice-devicemanagementreports.md) object.|
-|[getZebraFotaDeploymentReport action](../api/intune-androidfotaservice-devicemanagementreports-getzebrafotadeploymentreport.md)|Stream|Not yet documented|
+|[getZebraFotaDeploymentReport action](../api/intune-androidfotaservice-devicemanagementreports-getzebrafotadeploymentreport.md)|Stream||
 
 ## Properties
 |Property|Type|Description|

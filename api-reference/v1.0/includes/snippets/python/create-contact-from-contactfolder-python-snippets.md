@@ -4,26 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Contact()
-request_body.parent_folder_id = 'parentFolderId-value'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.birthday = DateTime('datetime-value')
+request_body = Contact(
+	parent_folder_id = "parentFolderId-value",
+	birthday = "datetime-value",
+	file_as = "fileAs-value",
+	display_name = "displayName-value",
+	given_name = "givenName-value",
+	initials = "initials-value",
+)
 
-request_body.file_as = 'fileAs-value'
-
-request_body.display_name = 'displayName-value'
-
-request_body.given_name = 'givenName-value'
-
-request_body.initials = 'initials-value'
-
-
-
-
-result = await client.me.contact_folders.by_contact_folder_id('contactFolder-id').contacts.post(request_body = request_body)
+result = await graph_client.me.contact_folders.by_contact_folder_id('contactFolder-id').contacts.post(body = request_body)
 
 
 ```

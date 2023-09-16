@@ -18,7 +18,7 @@ Teams message search also looks for attachments. The [supported file types](/Sha
 ### Example 1: Search Teams chat message
 
 #### Request
-The following example queries Teams chat messages in the signed-in user's Teams chat storage that contain the string "test" in any part of the chat message (the sender name,  message body, or any attachments). The query returns the first 25 results. The search results are ordered by descending **dateTime**.
+The following example queries Teams chat messages in the signed-in user's Teams chat storage that contains the string "test" in any part of the chat message (the sender name,  message body, or any attachments). The query returns the first 25 results. The search results are ordered by descending **dateTime**.
 
 
 # [HTTP](#tab/http)
@@ -53,7 +53,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/basicsearchteamsmessage-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -267,12 +267,12 @@ You can use the following  scope terms in your [Keyword Query Language (KQL)](/s
 | Scope Terms                           | Description   | Example   |
 |:-----------------------------------|:--------------|:--------------------|
 | from | Search only for messages sent by scoped person. | from:bob |
-| hasAttachment      | Search only for messages that contain or don't containt attachments. | hasAttachment:true |
-| IsRead       | Search only for messages that were or were not read. | IsRead:true | 
-| IsMentioned        | Search only for messages that did or did not mention you. | IsMentioned:true | 
-| mentions      | Search only for messages that mentioned somebody. | mentions:497b7a2a9e1a48d780e82965d2fc3a81 (This is user id without '-')| 
+| hasAttachment      | Search only for messages that contain or don't contain attachments. | hasAttachment:true |
+| IsRead       | Search only for messages that were or weren't read. | IsRead:true | 
+| IsMentioned        | Search only for messages that did or didn't mention you. | IsMentioned:true | 
+| mentions      | Search only for messages that mentioned somebody. | mentions:497b7a2a9e1a48d780e82965d2fc3a81 (This is user ID without '-')| 
 | sent | Search only for messages sent to the scoped date range. | sent > 2022-07-14 | 
-| to | Search only for messages sent to the scoped person, partially supported for the 1-on-1 message. | to:bob |
+| to | Search only for messages sent to the scoped person, partially supported for the one-on-one message. | to:bob |
 
 
 
@@ -400,14 +400,14 @@ Content-type: application/json
 ## Known limitations
 
 - You can access only the signed-in user's Teams message or the message the user is included in.
-- The search Teams API does not return all properties defined in [chatMessage](/graph/api/resources/chatmessage). You can use the [Teams API](/graph/api/chatmessage-get) to retrieve more details about any single message.
+- The search Teams API doesn't return all properties defined in [chatMessage](/graph/api/resources/chatmessage). You can use the [Teams API](/graph/api/chatmessage-get) to retrieve more details about any single message.
 - For Teams messages, the **total** property of the [searchHitsContainer](/graph/api/resources/searchhitscontainer) type contains the number of results on the page, not the total number of matching results.
-- Sorting results is not supported for messages.
+- Sorting results isn't supported for messages.
 - You can't use this API with other entity types at this time.
 
 ## JSON representation
 
-The following is a JSON representation of all retrievable properties currently available for [chatMessage](/graph/api/resources/chatmessage) search.
+Here's a JSON representation of all retrievable properties currently available for [chatMessage](/graph/api/resources/chatmessage) search.
 
 ```json
 {

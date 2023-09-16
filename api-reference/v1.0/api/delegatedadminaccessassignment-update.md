@@ -1,7 +1,7 @@
 ---
 title: "Update delegatedAdminAccessAssignment"
 description: "Update the properties of a delegatedAdminAccessAssignment object."
-author: "koravva"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: apiPageType

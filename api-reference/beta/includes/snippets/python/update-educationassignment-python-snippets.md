@@ -4,29 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = EducationAssignment()
-request_body.display_name = 'Reading and review test 09.03 #5'
+graph_client = GraphServiceClient(request_adapter)
 
-instructions = EducationItemBody()
-instructions.contenttype(BodyType.Text('bodytype.text'))
+request_body = EducationAssignment(
+	display_name = "Reading and review test 09.03 #5",
+	instructions = EducationItemBody(
+		content_type = BodyType.Text,
+		content = "Read chapter 5 and write your review",
+	),
+	due_date_time = "2021-09-10T00:00:00Z",
+	added_student_action = EducationAddedStudentAction.None,
+	add_to_calendar_action = EducationAddToCalendarOptions.StudentsAndPublisher,
+)
 
-instructions.content = 'Read chapter 5 and write your review'
-
-
-request_body.instructions = instructions
-request_body.dueDateTime = DateTime('2021-09-10T00:00:00Z')
-
-request_body.addedstudentaction(EducationAddedStudentAction.None('educationaddedstudentaction.none'))
-
-request_body.addtocalendaraction(EducationAddToCalendarOptions.StudentsAndPublisher('educationaddtocalendaroptions.studentsandpublisher'))
-
-
-
-
-result = await client.education.classes.by_classe_id('educationClass-id').assignments.by_assignment_id('educationAssignment-id').patch(request_body = request_body)
+result = await graph_client.education.classes.by_classe_id('educationClass-id').assignments.by_assignment_id('educationAssignment-id').patch(body = request_body)
 
 
 ```

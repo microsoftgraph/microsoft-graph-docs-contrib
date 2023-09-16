@@ -7,6 +7,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
 # A UPN can also be used as -UserId.
-Invoke-MgBetaInvalidateUserRefreshToken -UserId $userId
+Invoke-MgBetaInvalidateAllUserRefreshToken -UserId $userId
 
 ```

@@ -3,7 +3,7 @@ title: "Working with SharePoint sites in Microsoft Graph"
 description: "The SharePoint API in Microsoft Graph supports the following core scenarios:"
 ms.localizationpriority: high
 ms.prod: "sharepoint"
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 doc_type: conceptualPageType
 ---
 

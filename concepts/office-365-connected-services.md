@@ -47,11 +47,11 @@ Download the [Microsoft Graph ASP.NET Connected Services MVC App Sample](https:/
 
 1. Enter the domain of your developer account and choose **Next**.  
     
-    Go to your [Azure Active Directory (Azure AD)](https://aad.portal.azure.com) admin center in the Azure Portal to find your domain name. Sign in and select the **Azure Active Directory >  Overview** menu item. The field **Primary domain** in **Basic information** section contains your domain name.
+    Go Microsoft Entra admin center to find your domain name. Sign in, expand the **Identity** menu > select **Overview**. The field **Primary domain** in **Basic information** section contains your domain name.
 
  > **Tip:** If your primary address is `admin@contoso.onmicrosoft.com`, your domain is `contoso.onmicrosoft.com`. 
     
-2. Select **Create a new Azure AD application** and choose **Next**.
+2. Select **Create a new application registration** and complete the process of creating an app registration.
 3. For this tutorial, select the following permissions:
 
     - Select the **Calendars** tab and check the box **Read your calendars** to grant your application the `Calendar.Read` permission.

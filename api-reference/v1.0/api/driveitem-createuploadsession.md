@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: "driveItem: createUploadSession"
 ms.localizationpriority: high
 ms.prod: "sharepoint"

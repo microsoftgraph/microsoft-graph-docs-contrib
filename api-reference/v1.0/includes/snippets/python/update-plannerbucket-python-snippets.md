@@ -4,13 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = PlannerBucket()
-request_body.name = 'Development'
+graph_client = GraphServiceClient(request_adapter)
 
-
+request_body = PlannerBucket(
+	name = "Development",
+)
 
 request_configuration = PlannerBucketRequestBuilder.PlannerBucketRequestBuilderPatchRequestConfiguration(
 headers = {
@@ -20,8 +20,7 @@ headers = {
 
 )
 
-
-result = await client.planner.buckets.by_bucket_id('plannerBucket-id').patch(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.planner.buckets.by_bucket_id('plannerBucket-id').patch(body = request_body, request_configuration = request_configuration)
 
 
 ```

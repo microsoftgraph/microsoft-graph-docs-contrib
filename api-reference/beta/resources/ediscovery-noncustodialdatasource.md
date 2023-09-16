@@ -1,6 +1,6 @@
 ---
 title: "noncustodialDataSource resource type"
-description: "Non-custodial data sources lets you add data to a case without having to associate it to a custodian"
+description: "Noncustodial data sources let you add data to a case without having to associate it to a custodian"
 author: "mahage-msft"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.ediscovery
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Non-custodial data sources let you add data to a case without having to associate it to a custodian. To learn more, visit [Add non-custodial data sources to an Advanced eDiscovery case
+Noncustodial data sources let you add data to a case without having to associate it to a custodian. To learn more, visit [Add noncustodial data sources to an Advanced eDiscovery case
 ](/microsoft-365/compliance/non-custodial-data-sources)
 
 Inherits from [dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).
@@ -24,7 +24,7 @@ Inherits from [dataSourceContainer](../resources/ediscovery-datasourcecontainer.
 |:---|:---|:---|
 |[List noncustodialDataSources](../api/ediscovery-noncustodialdatasource-list.md)|[microsoft.graph.ediscovery.noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md) collection|Get a list of the [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md) objects and their properties.|
 |[Get noncustodialDataSource](../api/ediscovery-noncustodialdatasource-get.md)|[microsoft.graph.ediscovery.noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md)|Read the properties and relationships of a [noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md) object.|
-|[Release dataSource](../api/ediscovery-noncustodialdatasource-release.md)|None|Releases a non-custodial data source.|
+|[Release dataSource](../api/ediscovery-noncustodialdatasource-release.md)|None|Releases a noncustodial data source.|
 |[List dataSource](../api/ediscovery-noncustodialdatasource-list-datasource.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|Get the dataSource resources from the dataSource navigation property.|
 |[Create dataSource](../api/ediscovery-noncustodialdatasource-post.md)|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|Create a new dataSource object.|
 
@@ -32,7 +32,7 @@ Inherits from [dataSourceContainer](../resources/ediscovery-datasourcecontainer.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|applyHoldToSource|Boolean|Indicates if hold is applied to non-custodial data source (such as mailbox or site).|
+|applyHoldToSource|Boolean|Indicates if hold is applied to noncustodial data source (such as mailbox or site).|
 |createdDateTime|DateTimeOffset|Created date and time of the nonCustodialDataSource. Inherited from [microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).|
 |displayName|String|Display name of the noncustodialDataSource. Inherited from [microsoft.graph.ediscovery.dataSourceContainer](../resources/ediscovery-datasourcecontainer.md).|
 |id|String|Unique identifier of the nonCustodialDataSource. Inherited from [entity](../resources/entity.md).|
@@ -44,11 +44,11 @@ Inherits from [dataSourceContainer](../resources/ediscovery-datasourcecontainer.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|dataSource|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|User source or SharePoint site data source as non-custodial data source.|
+|dataSource|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md)|User source or SharePoint site data source as noncustodial data source.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
