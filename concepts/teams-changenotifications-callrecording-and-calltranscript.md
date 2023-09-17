@@ -162,7 +162,7 @@ For notifications with resource data, the payload looks like the following. This
     {
       "subscriptionId": "516220d0-0f88-46cc-ac39-02b687687526",
       "changeType": "created",
-      "clientState": "ClientSecret",
+      "clientState": "<<--SpecifiedClientState-->>",
       "subscriptionExpirationDateTime": "2023-09-17T08:13:26.3265566+00:00",
       "resource": "communications/onlineMeetings('MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19aalk0TXpRNU9UQXRZamxqWWkwMFpESXdMVGczTkdZdFptUTNNRGhtWm1FMk9EVTNAdGhyZWFkLnYy')/transcripts('MSMjMCMjOGIzMmI0MzktY2QxNy00ODc1LTg1NWQtYzA1MDM0ZmFkZWMx')",
       "resourceData": {
@@ -215,7 +215,7 @@ For notifications with resource data, the payload looks like the following. This
     {
       "subscriptionId": "7a62d59e-a789-4dd7-9c85-cf7d6567890d",
       "changeType": "created",
-      "clientState": "ClientSecret",
+      "clientState": "<<--SpecifiedClientState-->>",
       "subscriptionExpirationDateTime": "2023-09-17T08:20:06.9211285+00:00",
       "resource": "communications/onlineMeetings('MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19NMk0zTlRReFkySXRaamsyWmkwME5UTTRMV0l4TTJFdE1EQmtPV1E1TW1Rek0yRXhAdGhyZWFkLnYy')/recordings('VjIjIzE5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgyNDMyYjU3Yi0wYWJkLTQzZGItYWE3Yi0xNmVhZGQxMTVkMzQwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwMDZhODllMWZkYmJlZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDA5NzUzYzg5ZWI3MmJkNDJiYWZjMTVkZDA4NWNmNWJlIyNjZmNjNTBjMy0zODllLTQyOTUtOWRiNy1mMjkwYWY2NDJlNzI=')",
       "resourceData": {
@@ -239,7 +239,6 @@ For notifications with resource data, the payload looks like the following. This
 ```
 
 The decrypted notification payload looks like the following. The payload conforms to the [recording](/graph/api/resources/callrecording) schema. The payload is similar to those returned by GET operations.
-// TODO
 ```json
 {
   "id": "VjIjIzE5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgyNDMyYjU3Yi0wYWJkLTQzZGItYWE3Yi0xNmVhZGQxMTVkMzQwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwMDZhODllMWZkYmJlZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDA5NzUzYzg5ZWI3MmJkNDJiYWZjMTVkZDA4NWNmNWJlIyNjZmNjNTBjMy0zODllLTQyOTUtOWRiNy1mMjkwYWY2NDJlNzI=",
@@ -289,8 +288,8 @@ For notifications without resource data, the payload looks like the following. T
 {
   "subscriptionId": "6aa5ced2-0a5a-4643-9274-3109c731d986",
   "changeType": "created",
-  "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34",
-  "clientState": "ClientSecret",
+  "tenantId": "<<--TenantForWhichNotificationWasSent-->>",
+  "clientState": "<<--SpecifiedClientState-->>",
   "subscriptionExpirationDateTime": "2023-09-17T08:27:05.0241757+00:00",
   "resource": "communications/onlineMeetings('MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19NMk0zTlRReFkySXRaamsyWmkwME5UTTRMV0l4TTJFdE1EQmtPV1E1TW1Rek0yRXhAdGhyZWFkLnYy')/recordings('VjIjIzE5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgyNDMyYjU3Yi0wYWJkLTQzZGItYWE3Yi0xNmVhZGQxMTVkMzQwNDAwMDAwMDgyMDBFMDAwNzRDNUI3MTAxQTgyRTAwODAwMDAwMDAwMDZhODllMWZkYmJlZDkwMTAwMDAwMDAwMDAwMDAwMDAxMDAwMDAwMDA5NzUzYzg5ZWI3MmJkNDJiYWZjMTVkZDA4NWNmNWJlIyNjZmNjNTBjMy0zODllLTQyOTUtOWRiNy1mMjkwYWY2NDJlNzI=')",
   "resourceData": {
