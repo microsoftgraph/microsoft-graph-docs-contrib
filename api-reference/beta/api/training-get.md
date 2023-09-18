@@ -12,6 +12,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get an attack simulation [training](../resources/training.md) for a tenant. 
 
 ## Permissions
