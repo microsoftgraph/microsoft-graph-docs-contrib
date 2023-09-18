@@ -1,15 +1,15 @@
 ---
-title: "Get change notifications for Microsoft Teams presence updates"
-description: "Use change notifications in Microsoft Graph to enable you to subscribe to presence changes for Microsoft Teams users."
+title: "Get change notifications for presence updates in Microsoft Teams"
+description: "Use change notifications in Microsoft Graph to subscribe to presence changes for Microsoft Teams users."
 author: "awang119"
 ms.localizationpriority: high
 ms.prod: "cloud-communications"
 ms.custom: "scenarios:getting-started"
 ---
 
-# Get change notifications for Microsoft Teams user presence changes
+# Get change notifications for presence updates in Microsoft Teams
 
-Change notifications in Microsoft Graph enable you to subscribe to user changes in [Presence for Microsoft Teams](https://learn.microsoft.com/en-us/microsoftteams/presence-admins). Change notifications provide an alternative to polling for presence by using the [GET presence](/graph/api/presence-get) and [POST getPresencesByUserId](/graph/api/cloudcommunications-getpresencesbyuserid).
+Change notifications in Microsoft Graph let you subscribe to user changes in [Presence for Microsoft Teams](https://learn.microsoft.com/en-us/microsoftteams/presence-admins). Change notifications provide an alternative to polling for presence by using the [GET presence](/graph/api/presence-get) and [POST getPresencesByUserId](/graph/api/cloudcommunications-getpresencesbyuserid).
 
 Use webhooks to subscribe to user's presence and receive notifications when changes occur. For general information on webhooks, see [Microsoft Graph API change notifications](/graph/api/resources/webhooks).
 

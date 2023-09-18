@@ -288,4 +288,4 @@ HTTP/1.1 200 OK
 -->
 
 ## See also
-- [Get change notifications for Microsoft Teams user presence changes](/graph/changenotifications-for-presence)
+- [Get change notifications for presence updates in Microsoft Teams](/graph/changenotifications-for-presence)
