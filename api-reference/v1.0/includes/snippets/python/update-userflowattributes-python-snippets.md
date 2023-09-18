@@ -12,7 +12,7 @@ request_body = IdentityUserFlowAttribute(
 	description = "Your new hobby",
 )
 
-result = await graph_client.identity.user_flow_attributes.by_user_flow_attribute_id('identityUserFlowAttribute-id').patch(request_body = request_body)
+result = await graph_client.identity.user_flow_attributes.by_user_flow_attribute_id('identityUserFlowAttribute-id').patch(body = request_body)
 
 
 ```

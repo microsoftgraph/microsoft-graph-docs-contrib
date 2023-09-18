@@ -15,7 +15,7 @@ request_body = DeleteTiIndicatorsByExternalIdPostRequestBody(
 	]
 )
 
-result = await graph_client.security.ti_indicators.delete_ti_indicator_by_external_id.post(request_body = request_body)
+result = await graph_client.security.ti_indicators.delete_ti_indicator_by_external_id.post(body = request_body)
 
 
 ```

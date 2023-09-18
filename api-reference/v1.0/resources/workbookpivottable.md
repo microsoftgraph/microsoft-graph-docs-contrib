@@ -19,7 +19,7 @@ Represents an Excel PivotTable.
 |:---------------|:--------|:----------|
 |[Get workbookPivotTable](../api/workbookpivottable-get.md) | [workbookPivotTable](workbookpivottable.md) |Read properties and relationships of workbookPivotTable object.|
 |[Refresh](../api/workbookpivottable-refresh.md)|None|Refreshes the PivotTable.	|
-|[Refreshall](../api/workbookpivottable-refreshall.md)|None|Refresh all tables within given worksheet. Note that this action is available only on the pivot table collection.|
+|[Refreshall](../api/workbookpivottable-refreshall.md)|None|Refresh all tables within given worksheet. This action is available only on the pivot table collection.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -33,7 +33,7 @@ Represents an Excel PivotTable.
 |worksheet|[WorkbookWorksheet](worksheet.md)| The worksheet containing the current PivotTable. Read-only.	|
 
 ## JSON representation
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

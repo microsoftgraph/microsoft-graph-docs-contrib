@@ -13,7 +13,7 @@ request_body = TentativelyAcceptPostRequestBody(
 	send_response = True,
 )
 
-await graph_client.me.events.by_event_id('event-id').tentatively_accept.post(request_body = request_body)
+await graph_client.me.events.by_event_id('event-id').tentatively_accept.post(body = request_body)
 
 
 ```

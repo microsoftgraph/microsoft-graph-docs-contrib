@@ -15,7 +15,7 @@ request_body = MessageRule(
 	),
 )
 
-result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').message_rules.by_message_rule_id('messageRule-id').patch(request_body = request_body)
+result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').message_rules.by_message_rule_id('messageRule-id').patch(body = request_body)
 
 
 ```

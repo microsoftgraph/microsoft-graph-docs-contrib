@@ -16,7 +16,7 @@ request_body = PersonCertification(
 	web_url = "https://www.iame.io/blackbelt",
 )
 
-result = await graph_client.me.profile.certifications.post(request_body = request_body)
+result = await graph_client.me.profile.certifications.post(body = request_body)
 
 
 ```

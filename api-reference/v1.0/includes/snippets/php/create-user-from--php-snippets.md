@@ -12,6 +12,6 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new ReferenceCreate();
 $requestBody->setOdataId('https://graph.microsoft.com/v1.0/users/{userId}');
 
-$graphServiceClient->print()->shares()->byPrinterShareId('printerShare-id')->allowedUsers()->ref()->post($requestBody)->wait();
+$graphServiceClient->escapedPrint()->shares()->byPrinterShareId('printerShare-id')->allowedUsers()->ref()->post($requestBody)->wait();
 
 ```

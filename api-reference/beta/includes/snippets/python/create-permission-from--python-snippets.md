@@ -22,7 +22,7 @@ request_body = Permission(
 	]
 )
 
-result = await graph_client.sites.by_site_id('site-id').permissions.post(request_body = request_body)
+result = await graph_client.sites.by_site_id('site-id').permissions.post(body = request_body)
 
 
 ```

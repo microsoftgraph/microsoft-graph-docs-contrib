@@ -20,7 +20,7 @@ request_body = Message(
 	body_preview = "bodyPreview-value",
 )
 
-result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').messages.post(request_body = request_body)
+result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').messages.post(body = request_body)
 
 
 ```

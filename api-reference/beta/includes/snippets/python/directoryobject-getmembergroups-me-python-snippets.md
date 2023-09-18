@@ -12,7 +12,7 @@ request_body = GetMemberGroupsPostRequestBody(
 	security_enabled_only = True,
 )
 
-result = await graph_client.me.get_member_groups.post(request_body = request_body)
+result = await graph_client.me.get_member_groups.post(body = request_body)
 
 
 ```

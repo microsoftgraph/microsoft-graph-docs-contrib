@@ -12,7 +12,7 @@ request_body = OnenoteSection(
 	display_name = "Section name",
 )
 
-result = await graph_client.me.onenote.notebooks.by_notebook_id('notebook-id').sections.post(request_body = request_body)
+result = await graph_client.me.onenote.notebooks.by_notebook_id('notebook-id').sections.post(body = request_body)
 
 
 ```

@@ -21,7 +21,7 @@ request_body = CreatePostRequestBody(
 	connector_id = None,
 )
 
-await graph_client.print.printers.create.post(request_body = request_body)
+await graph_client.print.printers.create.post(body = request_body)
 
 
 ```

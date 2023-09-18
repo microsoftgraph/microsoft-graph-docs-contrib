@@ -35,7 +35,7 @@ request_body = Windows10TeamGeneralConfiguration(
 	welcome_screen_meeting_information = WelcomeScreenMeetingInformation.ShowOrganizerAndTimeOnly,
 )
 
-result = await graph_client.device_management.device_configurations.post(request_body = request_body)
+result = await graph_client.device_management.device_configurations.post(body = request_body)
 
 
 ```

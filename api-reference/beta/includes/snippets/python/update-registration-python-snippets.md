@@ -24,7 +24,7 @@ request_body = MeetingRegistration(
 	]
 )
 
-result = await graph_client.me.online_meetings.by_online_meeting_id('onlineMeeting-id').registration.patch(request_body = request_body)
+result = await graph_client.me.online_meetings.by_online_meeting_id('onlineMeeting-id').registration.patch(body = request_body)
 
 
 ```

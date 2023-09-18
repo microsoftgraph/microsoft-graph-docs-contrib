@@ -17,7 +17,7 @@ request_body = Subscription(
 	latest_supported_tls_version = "v1_2",
 )
 
-result = await graph_client.subscriptions.post(request_body = request_body)
+result = await graph_client.subscriptions.post(body = request_body)
 
 
 ```

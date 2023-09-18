@@ -1,6 +1,6 @@
 ---
 title: "virtualEventRegistrant resource type"
-description: "Information about a virtual event registrant."
+description: "Represents an attendee who has registered for a virtual event."
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -34,23 +34,23 @@ Inherits from [entity](../resources/entity.md).
 |lastName|String|Last name of the registrant.|
 |registrationDateTime|DateTimeOffset|Time in UTC when the registrant registers for the virtual event.|
 |registrationQuestionAnswers|[virtualEventRegistrationQuestionAnswer](../resources/virtualeventregistrationquestionanswer.md) collection|The registrant's answer to the registration questions.|
-|status|[virtualEventAttendeeRegistrationStatus](#virtualeventattendeeregistrationstatus-values)|Registration status of the registrant. Read-only.|
+|status|[virtualEventAttendeeRegistrationStatus](#virtualeventattendeeregistrationstatus-values)|Registration status of the registrant. Read-only. Possible values are: `registered`, `canceled`, `waitlisted`, `pendingApproval`, `rejectedByOrganizer`, `unknownFutureValue`. |
 |userId|String|The registrant's AAD user ID. Only appears when the registrant is registered in AAD.|
 
 ### virtualEventAttendeeRegistrationStatus values
 
 | Value | Description |
 | ----- | ----------- |
-| `registered` | The attendee has successfully registered for the virtual event. |
-| `canceled` | The attendee has canceled registeration for the virtual event. |
-| `waitlisted` | Waitlist has been enabled and the virtual event is at full capacity. The attendee is placed on the waitlist. |
-| `pendingApproval` | Manual approval has been enabled and the attendee is pending approval from the organizer. |
-| `rejectedByOrganizer` | Manual approval has been enabled and the attendee is rejected by the organizer. |
-| `unknownFutureValue` | Evolvable enumeration sentinel value. Do not use. |
+| registered | The attendee has successfully registered for the virtual event. |
+| canceled | The attendee has canceled registration for the virtual event. |
+| waitlisted | Waitlist has been enabled and the virtual event is at full capacity. The attendee is placed on the waitlist. |
+| pendingApproval | Manual approval has been enabled and the attendee is pending approval from the organizer. |
+| rejectedByOrganizer | Manual approval has been enabled and the attendee is rejected by the organizer. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

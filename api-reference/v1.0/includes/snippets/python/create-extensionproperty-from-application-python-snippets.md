@@ -16,7 +16,7 @@ request_body = ExtensionProperty(
 	]
 )
 
-result = await graph_client.applications.by_application_id('application-id').extension_properties.post(request_body = request_body)
+result = await graph_client.applications.by_application_id('application-id').extension_properties.post(body = request_body)
 
 
 ```

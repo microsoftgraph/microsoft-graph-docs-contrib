@@ -31,7 +31,7 @@ request_body = Application(
 	service_management_reference = "Owners aliases: Finance @ contosofinance@contoso.com; The Phone Company HR consulting @ hronsite@thephone-company.com;",
 )
 
-result = await graph_client.applications.by_application_id('application-id').patch(request_body = request_body)
+result = await graph_client.applications.by_application_id('application-id').patch(body = request_body)
 
 
 ```
