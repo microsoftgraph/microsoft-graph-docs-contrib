@@ -19,7 +19,7 @@ Inherits from [apiAuthenticationConfigurationBase](../resources/apiauthenticatio
 
 |Property|Type|Description|
 |:---|:---|:---|
-|password|String| The password. It is not returned in the responses. |
+|password|String| The password. It isn't returned in the responses. |
 |username|String| The username. |
 
 ## Relationships
@@ -28,7 +28,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.basicAuthentication"
