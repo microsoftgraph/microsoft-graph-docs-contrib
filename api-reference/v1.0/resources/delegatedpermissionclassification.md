@@ -19,14 +19,14 @@ Delegated permission classifications can be used in combination with user consen
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
-| classification | permissionClassificationType | The classification value being given. Possible value: `low`. Does not support `$filter`. |
+| classification | permissionClassificationType | The classification value being given. Possible value: `low`. Doesn't support `$filter`. |
 | id | String | A unique identifier for the **delegatedPermissionClassification** Key. Not nullable. Read-only. |
-| permissionId | String | The unique identifier (**id**) for the delegated permission listed in the **oauth2PermissionScopes** collection of the [servicePrincipal](servicePrincipal.md). Required on create. Does not support `$filter`. |
-| permissionName | String | The claim value (**value**) for the delegated permission listed in the **oauth2PermissionScopes** collection of the [servicePrincipal](servicePrincipal.md). Does not support `$filter`. |
+| permissionId | String | The unique identifier (**id**) for the delegated permission listed in the **oauth2PermissionScopes** collection of the [servicePrincipal](servicePrincipal.md). Required on create. Doesn't support `$filter`. |
+| permissionName | String | The claim value (**value**) for the delegated permission listed in the **oauth2PermissionScopes** collection of the [servicePrincipal](servicePrincipal.md). Doesn't support `$filter`. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
