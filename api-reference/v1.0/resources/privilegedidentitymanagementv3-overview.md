@@ -126,7 +126,7 @@ The tenant where Privileged Identity Management is being used must have sufficie
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: /resources/delegatedadminrelationships-api-overview.md:
+    "Error: /resources/privilegedidentitymanagementv3-overview.md:
       Exception processing links.
       Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')"
   ]

@@ -80,7 +80,7 @@ The [terms of use APIs](/graph/api/resources/agreement) in Microsoft Graph allow
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: /resources/delegatedadminrelationships-api-overview.md:
+    "Error: /resources/identitygovernance-overview.md:
       Exception processing links.
       Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')"
   ]
