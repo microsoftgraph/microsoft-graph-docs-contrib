@@ -53,7 +53,7 @@ To subscribe to a single user's presence, you can set the resource in the subscr
 ```
 
 ### Subscribe to multiple users' presence
-Bulk subscriptions for user presences can be created by setting the subscription resource value to `/communications/presences?$filter=id in ('{id}', '{id}',...)` where the {id} represents a user IDs GUID of users. A maximum of 650 users can be subscribed at once in a single subscription. Changes in presence for user IDs will cause a notification to be sent.
+Bulk subscriptions for user presence can be created by setting the subscription resource value to `/communications/presences?$filter=id in ('{id}', '{id}',...)` where the {id} represents a user IDs GUID of users. A maximum of 650 users can be subscribed in a single subscription. Presence changes for user IDs will generate a notification. 
 
 ### Payload example
 
