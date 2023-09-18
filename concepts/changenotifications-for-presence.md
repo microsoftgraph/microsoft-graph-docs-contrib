@@ -9,7 +9,7 @@ ms.custom: "scenarios:getting-started"
 
 # Get change notifications for Microsoft Teams user presence changes
 
-Presence refers to the status of the user and this information allows users to see which users are active and likely to engage with them. It adds a new level of transparency to how we communicate with each other. Change notifications in Microsoft Graph enable you to subscribe to user changes in Presence for Microsoft Teams. Change notifications provide an alternative to polling for presence by using the [GET presence](/graph/api/presence-get) and [POST getPresencesByUserId](/graph/api/cloudcommunications-getpresencesbyuserid).
+Change notifications in Microsoft Graph enable you to subscribe to user changes in [Presence for Microsoft Teams](https://learn.microsoft.com/en-us/microsoftteams/presence-admins). Change notifications provide an alternative to polling for presence by using the [GET presence](/graph/api/presence-get) and [POST getPresencesByUserId](/graph/api/cloudcommunications-getpresencesbyuserid).
 
 Use webhooks to subscribe to user's presence and receive notifications when changes occur. For general information on webhooks, see [Microsoft Graph API change notifications](/graph/api/resources/webhooks).
 
@@ -48,7 +48,7 @@ To subscribe to a single user's presence, you can set the resource in the subscr
     "includeResourceData": true,
     "encryptionCertificate": "{encryption certificate}",
     "encryptionCertificateId": "{certificate id}",
-    "clientState": "Single presence subscription"
+    "clientState": "{secret client state}"
 }
 ```
 
@@ -67,7 +67,7 @@ Bulk subscriptions for user presences can be achieved by setting the subscriptio
     "includeResourceData": true,
     "encryptionCertificate": "{encryption certificate}",
     "encryptionCertificateId": "{certificate id}",
-    "clientState": "Bulk presence subscription"
+    "clientState": "{secret client state}"
 }
 ```
 
