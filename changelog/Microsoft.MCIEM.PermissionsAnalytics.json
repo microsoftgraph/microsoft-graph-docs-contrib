@@ -1,0 +1,30 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "e7a57b71-f516-44a6-9267-21433e765224",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "awsRoleTrustEntityType",
+          "ChangeType": "Addition",
+          "Description": "Added the **awsRoleTrustEntityType** enumeration type.",
+          "Target": "awsRoleTrustEntityType"
+        },
+        {
+          "Id": "e7a57b71-f516-44a6-9267-21433e765224",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "awsRoleType",
+          "ChangeType": "Addition",
+          "Description": "Added the **awsRoleType** enumeration type.",
+          "Target": "awsRoleType"
+        }
+      ],
+      "Id": "e7a57b71-f516-44a6-9267-21433e765224",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-09-08T13:05:43.8339321Z",
+      "WorkloadArea": "Microsoft.MCIEM.PermissionsAnalytics",
+      "SubArea": ""
+    }
+  ]
+}
