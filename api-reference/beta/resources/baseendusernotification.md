@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Represents details about an end user notification.
 
+Base type of [positiveReinforcementNotification](../resources/positivereinforcementnotification.md), [simulationNotification](../resources/simulationnotification.md), and [trainingReminderNotification](../resources/trainingremindernotification.md).
+
 ## Properties
 
 |Property|Type|Description|
