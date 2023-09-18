@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 An abstract type that represents a training setting for simulation creation.
 
+Base type of [customTrainingSetting](../resources/customtrainingsetting.md), [microsoftCustomTrainingSetting](../resources/microsoftcustomtrainingsetting.md), [microsoftManagedTrainingSetting](../resources/microsoftmanagedtrainingsetting.md), [microsoftTrainingAssignmentMapping](../resources/microsofttrainingassignmentmapping.md), and [noTrainingSetting](../resources/notrainingsetting.md).
+
 ## Properties
 
 |Property|Type|Description|
