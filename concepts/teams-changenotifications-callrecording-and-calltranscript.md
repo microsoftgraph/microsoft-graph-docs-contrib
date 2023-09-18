@@ -15,7 +15,7 @@ This article describes scenarios for the **transcript** and **recording** resour
 
 ## Subscribe to transcripts available at the tenant level
 
-To get change notifications for any transcript available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllTranscripts`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription is supported only for meetings scheduled on the calendar.
+To get change notifications for any transcript available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllTranscripts`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription is supported only for scheduled [onlineMeeting](/graph/api/resources/onlinemeeting). This subscription is not supported for channel meetings.
 
 ### Permissions
 
@@ -49,7 +49,7 @@ Content-Type: application/json
 
 ## Subscribe to transcripts available for a particular online meeting
 
-To get change notifications for any transcript available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/transcripts`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription is supported only for meetings scheduled on the calendar.
+To get change notifications for any transcript available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/transcripts`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription is supported only for scheduled [onlineMeeting](/graph/api/resources/onlinemeeting). This subscription is not supported for channel meetings.
 
 ### Permissions
 
@@ -83,7 +83,7 @@ Content-Type: application/json
 
 ## Subscribe to recordings available at the tenant level
 
-To get change notifications for any recording available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllRecordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription is supported only for regular and recurring meetings scheduled on the calendar.
+To get change notifications for any recording available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllRecordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription is supported only for scheduled [onlineMeeting](/graph/api/resources/onlinemeeting). This subscription is not supported for channel meetings.
 
 ### Permissions
 
@@ -117,7 +117,7 @@ Content-Type: application/json
 
 ## Subscribe to recordings available for a particular online meeting
 
-To get change notifications for any recording available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/recordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription is supported only for regular and recurring meetings scheduled on the calendar.
+To get change notifications for any recording available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/recordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription is supported only for scheduled [onlineMeeting](/graph/api/resources/onlinemeeting). This subscription is not supported for channel meetings.
 
 ### Permissions
 
@@ -150,7 +150,7 @@ Content-Type: application/json
 ```
 ## Notification payloads
 
-Depending on your subscription, you can either get the notification with resource data, or without it. Subscribing with resource data allows you to get the [transcript](/graph/api/resources/calltranscript) or [recording](/graph/api/resources/callrecording) details along with the notification.
+Depending on your subscription, you can either get the notification with resource data, or without it. Subscribing with resource data allows you to get the [transcript](/graph/api/resources/calltranscript) or [recording](/graph/api/resources/callrecording) metadata along with the notification.
 
 ### Notifications with resource data
 
