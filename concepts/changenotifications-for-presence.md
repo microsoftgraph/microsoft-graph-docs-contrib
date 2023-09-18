@@ -23,9 +23,9 @@ Use webhooks to subscribe to user's presence and receive notifications when chan
 
 ## Subscribeable resource types for presence
 
-All subscriptions outlined have a max expiration time of an hour. A subscription can be renewed using the [Update subscription API](/graph/api/subscription-update) before expiry or alternatively a new subscription can be created for the same resource after expiration. Presence subscriptions do support notifications with resource data which allows more detailed information to be delievered along with change notifications. For more information about [Set up change notifications with resource data](webhooks-with-resource-data.md).
+All subscriptions outlined have a maximum expiration time of an hour. A subscription can be renewed using the [Update subscription API](/graph/api/subscription-update) before it expires, or a new subscription can be created for the same resource after expiration. Presence subscriptions support notifications with resource data, allowing more detailed information to be delivered along with change notifications. For more information, see [Set up change notifications with resource data](webhooks-with-resource-data.md).
 
-The following resource strings are supported to subscription. For more details on creating a subscription see [Create subscription](/graph/api/subscription-post-subscriptions).
+The following resource strings are supported by subscriptions. For more information, see [Create subscription](/graph/api/subscription-post-subscriptions).
 
 | Presence subscription type                    | Resource URL                                                   | Supported change types |
 |:--------------------------------------------- |:-------------------------------------------------------------- |:---------------------- |
@@ -34,7 +34,7 @@ The following resource strings are supported to subscription. For more details o
 
 ### Subscribe to a single user’s presence 
 
-To subscribe to a single user's presence, you can set the resource in the subscription payload to `communications/presences/{id}`. Where the {id} field must be replaced with the user ID GUID of user's presence. Making this subscription will allow change notifications to be delivered when the user presence changes.
+To subscribe to a single user's presence, you can set the resource in the subscription payload to `communications/presences/{id}` where the {id} field must be replaced with the user ID GUID of the user's presence. This subscription will deliver change notifications when the user presence changes.
 
 ### Payload example
 
@@ -53,7 +53,7 @@ To subscribe to a single user's presence, you can set the resource in the subscr
 ```
 
 ### Subscribe to multiple users' presence
-Bulk subscriptions for user presences can be achieved by setting the subscription resource value to `/communications/presences?$filter=id in ('{id}', '{id}',...)` where the {id} represents a user IDs GUID of users. A maximum of 650 users can be subscribed at once in a single subscription. Changes in presence for user ids will cause a notification to be sent.
+Bulk subscriptions for user presences can be created by setting the subscription resource value to `/communications/presences?$filter=id in ('{id}', '{id}',...)` where the {id} represents a user IDs GUID of users. A maximum of 650 users can be subscribed at once in a single subscription. Changes in presence for user IDs will cause a notification to be sent.
 
 ### Payload example
 
@@ -73,9 +73,9 @@ Bulk subscriptions for user presences can be achieved by setting the subscriptio
 
 ## Receiving presence event notifications
 
-Notifications for presence event changes are expected when a subscribed user presence experiences a change in a user's availability and activity.
+Change notifications for presence events are expected when a subscribed user presence experiences a change in a user's availability and activity.
 
-### Basic presence notification example
+### Basic presence notifications example
 ```json
 {
   "value": [{
