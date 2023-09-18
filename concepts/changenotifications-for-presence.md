@@ -95,7 +95,7 @@ Notifications for presence event changes are expected when a subscribed user pre
 }
 ```
 
-### Presence notification with resource data example
+### Presence notifications with resource data example
 
 Presence notifications with resource data have the following additional properties encrypted in the payload:
 - Availability or base presence information (available, away, busy)
