@@ -1,7 +1,7 @@
 ---
 title: "Get Outlook category"
 description: "Get the properties and relationships of the specified outlookCategory object."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/me/outlook/masterCategories/de912e4d-c790-4
 ---
 
 ### Response
-The following is an example of the response. 
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

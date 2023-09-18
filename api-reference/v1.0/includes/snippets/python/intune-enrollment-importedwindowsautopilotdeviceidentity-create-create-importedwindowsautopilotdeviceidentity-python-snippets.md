@@ -25,7 +25,7 @@ request_body = ImportedWindowsAutopilotDeviceIdentity(
 	assigned_user_principal_name = "Assigned User Principal Name value",
 )
 
-result = await graph_client.device_management.imported_window_autopilot_device_identities.post(request_body = request_body)
+result = await graph_client.device_management.imported_window_autopilot_device_identities.post(body = request_body)
 
 
 ```

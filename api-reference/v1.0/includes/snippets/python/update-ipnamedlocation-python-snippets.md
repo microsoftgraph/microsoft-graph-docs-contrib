@@ -20,7 +20,7 @@ request_body = IpNamedLocation(
 	]
 )
 
-result = await graph_client.identity.conditional_access.named_locations.by_named_location_id('namedLocation-id').patch(request_body = request_body)
+result = await graph_client.identity.conditional_access.named_locations.by_named_location_id('namedLocation-id').patch(body = request_body)
 
 
 ```

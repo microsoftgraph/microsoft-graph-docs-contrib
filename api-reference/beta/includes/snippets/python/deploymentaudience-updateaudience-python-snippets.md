@@ -17,7 +17,7 @@ request_body = UpdateAudiencePostRequestBody(
 	]
 )
 
-await graph_client.admin.windows.updates.deployment_audiences.by_deployment_audience_id('deploymentAudience-id').microsoft_graph_window_update_update_audience.post(request_body = request_body)
+await graph_client.admin.windows.updates.deployment_audiences.by_deployment_audience_id('deploymentAudience-id').microsoft_graph_window_update_update_audience.post(body = request_body)
 
 
 ```

@@ -73,7 +73,7 @@ echo "Notification Url:\n${notificationUrl}"
 <!-- End of "Use Azure CLI" tab-->
 
 <!-- Start of "Use the Azure portal" tab-->
-# [Use the Azure portal](#tab/change-notifications-eventhubs--azure-portal)
+# [Use the Azure portal](#tab/change-notifications-eventhubs-azure-portal)
 
 ##### Configuring the Azure Event Hub
 
@@ -167,8 +167,9 @@ Before you can receive the notifications in your application, you'll need to cre
     ]
 }
 ```
+
 ### Subscriptions for rich notifications with large payloads
-The maximum message size for Event Hubs is 1 MB.  When you use [rich notifications](https://learn.microsoft.com/en-us/graph/webhooks-with-resource-data?tabs=csharp), you might expect notifications that exceeed this 1 MB limit.  To receive notifications larger than 1 MB through Event Hubs, you must also add a blob storage account to your subscription request.
+The maximum message size for Event Hubs is 1 MB.  When you use [rich notifications](/graph/webhooks-with-resource-data?tabs=csharp), you might expect notifications that exceeed this 1 MB limit.  To receive notifications larger than 1 MB through Event Hubs, you must also add a blob storage account to your subscription request.
 
 #### Set up storage and create subscription
 1.  [Create a storage account](/azure/storage/common/storage-account-create).

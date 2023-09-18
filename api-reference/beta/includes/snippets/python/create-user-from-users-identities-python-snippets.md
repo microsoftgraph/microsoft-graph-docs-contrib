@@ -34,7 +34,7 @@ request_body = User(
 	password_policies = "DisablePasswordExpiration",
 )
 
-result = await graph_client.users.post(request_body = request_body)
+result = await graph_client.users.post(body = request_body)
 
 
 ```

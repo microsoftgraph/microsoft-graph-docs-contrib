@@ -20,7 +20,7 @@ headers = {
 
 )
 
-result = await graph_client.organization.by_organization_id('organization-id').branding.patch(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.organization.by_organization_id('organization-id').branding.patch(body = request_body, request_configuration = request_configuration)
 
 
 ```

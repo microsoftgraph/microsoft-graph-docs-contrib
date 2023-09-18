@@ -13,7 +13,7 @@ request_body = EducationModule(
 	description = "updated for description",
 )
 
-result = await graph_client.education.classes.by_classe_id('educationClass-id').modules.by_module_id('educationModule-id').patch(request_body = request_body)
+result = await graph_client.education.classes.by_classe_id('educationClass-id').modules.by_module_id('educationModule-id').patch(body = request_body)
 
 
 ```

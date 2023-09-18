@@ -12,7 +12,7 @@ request_body = ForceDeletePostRequestBody(
 	disable_user_accounts = True,
 )
 
-await graph_client.domains.by_domain_id('domain-id').force_delete.post(request_body = request_body)
+await graph_client.domains.by_domain_id('domain-id').force_delete.post(body = request_body)
 
 
 ```

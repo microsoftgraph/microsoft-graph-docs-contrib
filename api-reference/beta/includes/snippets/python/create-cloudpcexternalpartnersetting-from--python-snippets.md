@@ -14,7 +14,7 @@ request_body = CloudPcExternalPartnerSetting(
 	enable_connection = True,
 )
 
-result = await graph_client.device_management.virtual_endpoint.external_partner_settings.post(request_body = request_body)
+result = await graph_client.device_management.virtual_endpoint.external_partner_settings.post(body = request_body)
 
 
 ```
