@@ -156,7 +156,6 @@ Calls to approval and approvalStep endpoints can be made only by approver of the
       Exception processing links.
       Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')",
     "Error: /resources/privilegedidentitymanagement-for-groups-api-overview.md:
-      Exception processing links.
       Failed to parse enumeration values for type microsoft.graph.and. Table requires a column header named one of the following: Member, Name, Value"
   ]
 } -->
