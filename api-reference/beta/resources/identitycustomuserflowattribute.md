@@ -1,6 +1,6 @@
 ---
 title: "identityCustomUserFlowAttribute resource type"
-description: "Represents a custom user flow attribute in Azure Active Directory tenants that can be used in your self-service sign-up user flows."
+description: "Represents a custom user flow attribute in Azure AD for workforce tenants, Azure AD for customers tenants, and Azure AD B2C tenants that can be used in self-service sign-up user flows."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a custom user flow attribute in Azure Active Directory tenants that can be used in your self-service sign-up user flows. These attributes cannot be modified and are read-only.
+Represents a custom user flow attribute in Azure AD for workforce tenants, Azure AD for customers tenants, and Azure AD B2C tenants that can be used in self-service sign-up user flows.
 
 Inherits from [identityUserFlowAttribute](../resources/identityuserflowattribute.md).
 
