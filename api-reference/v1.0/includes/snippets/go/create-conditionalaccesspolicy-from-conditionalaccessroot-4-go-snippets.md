@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewConditionalAccessPolicy()
@@ -44,7 +44,7 @@ builtInControls := []graphmodels.ConditionalAccessGrantControlable {
 grantControls.SetBuiltInControls(builtInControls)
 requestBody.SetGrantControls(grantControls)
 
-result, err := graphClient.Identity().ConditionalAccess().Policies().Post(context.Background(), requestBody, nil)
+policies, err := graphClient.Identity().ConditionalAccess().Policies().Post(context.Background(), requestBody, nil)
 
 
 ```

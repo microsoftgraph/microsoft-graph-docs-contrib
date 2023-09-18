@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelswindowsupdates.NewResourceConnection()
@@ -23,7 +23,7 @@ requestBody.SetAzureResourceGroupName(&azureResourceGroupName)
 workspaceName := "my-workspace"
 requestBody.SetWorkspaceName(&workspaceName) 
 
-result, err := graphClient.Admin().Windows().Updates().ResourceConnections().Post(context.Background(), requestBody, nil)
+resourceConnections, err := graphClient.Admin().Windows().Updates().ResourceConnections().Post(context.Background(), requestBody, nil)
 
 
 ```

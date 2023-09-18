@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphdirectory.NewGetUserOwnedObjectsPostRequestBody()
@@ -21,7 +21,7 @@ requestBody.SetUserId(&userId)
 type := "Group"
 requestBody.SetType(&type) 
 
-result, err := graphClient.Directory().DeletedItems().GetUserOwnedObjects().Post(context.Background(), requestBody, nil)
+getUserOwnedObjects, err := graphClient.Directory().DeletedItems().GetUserOwnedObjects().Post(context.Background(), requestBody, nil)
 
 
 ```

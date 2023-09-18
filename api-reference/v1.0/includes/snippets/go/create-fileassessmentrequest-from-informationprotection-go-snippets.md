@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewThreatAssessmentRequest()
@@ -25,7 +25,7 @@ requestBody.SetFileName(&fileName)
 contentData := "VGhpcyBpcyBhIHRlc3QgZmlsZQ=="
 requestBody.SetContentData(&contentData) 
 
-result, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(context.Background(), requestBody, nil)
+threatAssessmentRequests, err := graphClient.InformationProtection().ThreatAssessmentRequests().Post(context.Background(), requestBody, nil)
 
 
 ```

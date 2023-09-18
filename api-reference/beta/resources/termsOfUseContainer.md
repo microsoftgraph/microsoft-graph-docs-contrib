@@ -4,7 +4,7 @@ description: "Container for the relationships that expose the terms of use API a
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "raprakasMSFT"
+author: "AlexFilipin"
 ---
 
 # termsOfUseContainer resource type

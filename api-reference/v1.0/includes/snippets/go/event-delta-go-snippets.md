@@ -13,26 +13,26 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
 headers.Add("Prefer", "odata.maxpagesize=2")
 
 
-requestStartdatetime := "{start_datetime}"
-requestEnddatetime := "{end_datetime}"
+requestStartDateTime := "{start_datetime}"
+requestEndDateTime := "{end_datetime}"
 
 requestParameters := &graphusers.ItemCalendarViewDelta()RequestBuilderGetQueryParameters{
-	Startdatetime: &requestStartdatetime,
-	Enddatetime: &requestEnddatetime,
+	StartDateTime: &requestStartDateTime,
+	EndDateTime: &requestEndDateTime,
 }
 configuration := &graphusers.ItemCalendarViewDelta()RequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().CalendarView().Delta().Get(context.Background(), configuration)
+delta, err := graphClient.Me().CalendarView().Delta().Get(context.Background(), configuration)
 
 
 ```

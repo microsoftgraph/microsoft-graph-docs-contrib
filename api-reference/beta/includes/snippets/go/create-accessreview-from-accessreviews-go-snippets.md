@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAccessReview()
@@ -78,7 +78,7 @@ autoReviewSettings.SetNotReviewedResult(&notReviewedResult)
 settings.SetAutoReviewSettings(autoReviewSettings)
 requestBody.SetSettings(settings)
 
-result, err := graphClient.AccessReviews().Post(context.Background(), requestBody, nil)
+accessReviews, err := graphClient.AccessReviews().Post(context.Background(), requestBody, nil)
 
 
 ```

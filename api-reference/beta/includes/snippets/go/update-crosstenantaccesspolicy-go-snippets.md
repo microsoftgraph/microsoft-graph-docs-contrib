@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewCrossTenantAccessPolicy()
@@ -22,7 +22,7 @@ allowedCloudEndpoints := []string {
 }
 requestBody.SetAllowedCloudEndpoints(allowedCloudEndpoints)
 
-result, err := graphClient.Policies().CrossTenantAccessPolicy().Patch(context.Background(), requestBody, nil)
+crossTenantAccessPolicy, err := graphClient.Policies().CrossTenantAccessPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

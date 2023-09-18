@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelssearch.NewQna()
@@ -60,7 +60,7 @@ requestBody.SetPlatforms(platforms)
 state := graphmodels.PUBLISHED_ANSWERSTATE 
 requestBody.SetState(&state) 
 
-result, err := graphClient.Search().Qnas().Post(context.Background(), requestBody, nil)
+qnas, err := graphClient.Search().Qnas().Post(context.Background(), requestBody, nil)
 
 
 ```

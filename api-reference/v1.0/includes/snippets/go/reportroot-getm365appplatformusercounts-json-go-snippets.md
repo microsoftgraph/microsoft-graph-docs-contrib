@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
@@ -25,7 +25,8 @@ configuration := &graphreports.ReportsGetM365AppPlatformUserCounts(period='{peri
 	QueryParameters: requestParameters,
 }
 
-graphClient.Reports().GetM365AppPlatformUserCounts(period='{period}')().Get(context.Background(), configuration)
+period := "{period}"
+graphClient.Reports().GetM365AppPlatformUserCountsWithPeriod(&period).Get(context.Background(), configuration)
 
 
 ```

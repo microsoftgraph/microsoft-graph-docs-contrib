@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAuthenticationEventListener()
@@ -41,7 +41,7 @@ customExtension.SetId(&id)
 handler.SetCustomExtension(customExtension)
 requestBody.SetHandler(handler)
 
-result, err := graphClient.Identity().AuthenticationEventListeners().Post(context.Background(), requestBody, nil)
+authenticationEventListeners, err := graphClient.Identity().AuthenticationEventListeners().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelsexternalconnectors.NewSchema()
@@ -60,7 +60,7 @@ properties := []graphmodelsexternalconnectors.Propertyable {
 }
 requestBody.SetProperties(properties)
 
-result, err := graphClient.External().Connections().ByConnectionId("externalConnection-id").Schema().Patch(context.Background(), requestBody, nil)
+schema, err := graphClient.External().Connections().ByExternalConnectionId("externalConnection-id").Schema().Patch(context.Background(), requestBody, nil)
 
 
 ```

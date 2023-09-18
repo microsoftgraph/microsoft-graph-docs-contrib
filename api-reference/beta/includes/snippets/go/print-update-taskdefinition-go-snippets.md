@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPrintTaskDefinition()
@@ -23,7 +23,7 @@ displayName := "Requesting App Display Name"
 createdBy.SetDisplayName(&displayName) 
 requestBody.SetCreatedBy(createdBy)
 
-result, err := graphClient.Print().TaskDefinitions().ByTaskDefinitionId("printTaskDefinition-id").Patch(context.Background(), requestBody, nil)
+taskDefinitions, err := graphClient.Print().TaskDefinitions().ByPrintTaskDefinitionId("printTaskDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

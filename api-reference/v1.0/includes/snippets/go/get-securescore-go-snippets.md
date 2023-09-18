@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Security().SecureScores().BySecureScoreId("secureScore-id").Get(context.Background(), nil)
+secureScores, err := graphClient.Security().SecureScores().BySecureScoreId("secureScore-id").Get(context.Background(), nil)
 
 
 ```

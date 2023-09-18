@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphsearch.NewQueryPostRequestBody()
@@ -48,7 +48,7 @@ requests := []graphmodels.SearchRequestable {
 }
 requestBody.SetRequests(requests)
 
-result, err := graphClient.Search().Query().Post(context.Background(), requestBody, nil)
+query, err := graphClient.Search().Query().Post(context.Background(), requestBody, nil)
 
 
 ```

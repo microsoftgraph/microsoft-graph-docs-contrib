@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphusers.NewItemCreateOrGetPostRequestBody()
@@ -45,7 +45,7 @@ attendees := []graphmodels.MeetingParticipantInfoable {
 participants.SetAttendees(attendees)
 requestBody.SetParticipants(participants)
 
-result, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(context.Background(), requestBody, nil)
+createOrGet, err := graphClient.Me().OnlineMeetings().CreateOrGet().Post(context.Background(), requestBody, nil)
 
 
 ```

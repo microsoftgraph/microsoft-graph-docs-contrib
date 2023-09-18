@@ -61,7 +61,22 @@ Working with synchronization API primarily involves accessing the [synchronizati
 
 ### Authorization
 
-The Azure AD synchronization API uses OAuth 2.0 for authorization. Before making any requests to the API, you need to get an access token. For more information, see [Get access tokens to call Microsoft Graph](/graph/auth/). To access synchronization resources, your application needs Directory.ReadWrite.All permissions. For more information, see [Directory permissions](/graph/permissions-reference#directory-permissions).
+To work with the Azure AD synchronization APIs, Microsoft Graph supports the following granular permissions:
+
+- Synchronization.Read.All
+- Synchronization.ReadWrite.All
+- Application.ReadWrite.OwnedBy
+- Application.Read.All
+- Application.ReadWrite.All
+
+And the following [Azure AD directory roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+
+- Application Administrator
+- Cloud Application Administrator
+- Hybrid Identity Administrator
+- Global Administrator
+
+For more information about the privileges you need to call each API, visit the respective API reference documentation.
 
 ### Find the service principal object by display name
 

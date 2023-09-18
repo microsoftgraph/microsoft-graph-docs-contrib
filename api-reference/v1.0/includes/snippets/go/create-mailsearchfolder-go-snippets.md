@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewMailFolder()
@@ -27,7 +27,7 @@ requestBody.SetSourceFolderIds(sourceFolderIds)
 filterQuery := "contains(subject, 'weekly digest')"
 requestBody.SetFilterQuery(&filterQuery) 
 
-result, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").ChildFolders().Post(context.Background(), requestBody, nil)
+childFolders, err := graphClient.Me().MailFolders().ByMailFolderId("mailFolder-id").ChildFolders().Post(context.Background(), requestBody, nil)
 
 
 ```

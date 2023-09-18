@@ -66,6 +66,7 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 ### Request
 Here is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- { "blockType": "request" , "name" : "intune_reporting_devicemanagementreports_getsettingnoncompliancereport_getsettingnoncompliancereport_action" }-->
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/reports/getSettingNonComplianceReport
@@ -91,6 +92,16 @@ Content-length: 278
   "filter": "Filter value"
 }
 ```
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/intune-reporting-devicemanagementreports-getsettingnoncompliancereport-getsettingnoncompliancereport-action-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/intune-reporting-devicemanagementreports-getsettingnoncompliancereport-getsettingnoncompliancereport-action-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.

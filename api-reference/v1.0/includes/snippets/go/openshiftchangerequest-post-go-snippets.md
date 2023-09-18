@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -29,7 +29,7 @@ requestBody.SetSenderMessage(&senderMessage)
 openShiftId := "577b75d2-a927-48c0-a5d1-dc984894e7b8"
 requestBody.SetOpenShiftId(&openShiftId) 
 
-result, err := graphClient.Teams().ByTeamId("team-id").Schedule().OpenShiftChangeRequests().Post(context.Background(), requestBody, configuration)
+openShiftChangeRequests, err := graphClient.Teams().ByTeamId("team-id").Schedule().OpenShiftChangeRequests().Post(context.Background(), requestBody, configuration)
 
 
 ```

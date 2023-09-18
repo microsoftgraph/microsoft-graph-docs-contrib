@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphdrives.NewCheckinPostRequestBody()
 comment := "Updating the latest guidelines"
 requestBody.SetComment(&comment) 
 
-graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Checkin().Post(context.Background(), requestBody, nil)
+graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Checkin().Post(context.Background(), requestBody, nil)
 
 
 ```

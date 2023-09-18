@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphserviceprincipals.NewAddTokenSigningCertificatePostRequestBody()
@@ -22,7 +22,7 @@ requestBody.SetDisplayName(&displayName)
 endDateTime , err := time.Parse(time.RFC3339, "2024-01-25T00:00:00Z")
 requestBody.SetEndDateTime(&endDateTime) 
 
-result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").AddTokenSigningCertificate().Post(context.Background(), requestBody, nil)
+addTokenSigningCertificate, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").AddTokenSigningCertificate().Post(context.Background(), requestBody, nil)
 
 
 ```

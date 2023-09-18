@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewUnifiedRoleAssignmentMultiple()
@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 description := "A new roleAssignment"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.RoleManagement().CloudPC().RoleAssignments().ByRoleAssignmentId("unifiedRoleAssignmentMultiple-id").Patch(context.Background(), requestBody, nil)
+roleAssignments, err := graphClient.RoleManagement().CloudPC().RoleAssignments().ByUnifiedRoleAssignmentMultipleId("unifiedRoleAssignmentMultiple-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

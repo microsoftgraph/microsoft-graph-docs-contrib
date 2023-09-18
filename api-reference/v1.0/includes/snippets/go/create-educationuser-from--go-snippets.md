@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEducationUser()
@@ -100,7 +100,7 @@ requestBody.SetUserType(&userType)
 onPremisesInfo := graphmodels.NewEducationOnPremisesInfo()
 requestBody.SetOnPremisesInfo(onPremisesInfo)
 
-result, err := graphClient.Education().Users().Post(context.Background(), requestBody, nil)
+users, err := graphClient.Education().Users().Post(context.Background(), requestBody, nil)
 
 
 ```

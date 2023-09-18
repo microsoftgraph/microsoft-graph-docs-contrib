@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAttachment()
@@ -27,7 +27,7 @@ requestBody.SetContentLocation(&contentLocation)
 contentBytes := []byte("base64-contentBytes-value")
 requestBody.SetContentBytes(&contentBytes) 
 
-result, err := graphClient.Me().Messages().ByMessageId("message-id").Attachments().Post(context.Background(), requestBody, nil)
+attachments, err := graphClient.Me().Messages().ByMessageId("message-id").Attachments().Post(context.Background(), requestBody, nil)
 
 
 ```

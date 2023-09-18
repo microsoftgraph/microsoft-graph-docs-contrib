@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Policies().ActivityBasedTimeoutPolicies().ByActivityBasedTimeoutPolicieId("activityBasedTimeoutPolicy-id").Delete(context.Background(), nil)
+graphClient.Policies().ActivityBasedTimeoutPolicies().ByActivityBasedTimeoutPolicyId("activityBasedTimeoutPolicy-id").Delete(context.Background(), nil)
 
 
 ```

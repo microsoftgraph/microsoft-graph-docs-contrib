@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewSchedulingGroup()
@@ -26,7 +26,7 @@ userIds := []string {
 }
 requestBody.SetUserIds(userIds)
 
-result, err := graphClient.Teams().ByTeamId("team-id").Schedule().SchedulingGroups().Post(context.Background(), requestBody, nil)
+schedulingGroups, err := graphClient.Teams().ByTeamId("team-id").Schedule().SchedulingGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

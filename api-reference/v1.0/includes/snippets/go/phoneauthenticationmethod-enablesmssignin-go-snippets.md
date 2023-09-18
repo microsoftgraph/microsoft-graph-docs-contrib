@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().Authentication().PhoneMethods().ByPhoneMethodId("phoneAuthenticationMethod-id").EnableSmsSignIn().Post(context.Background(), nil)
+graphClient.Me().Authentication().PhoneMethods().ByPhoneAuthenticationMethodId("phoneAuthenticationMethod-id").EnableSmsSignIn().Post(context.Background(), nil)
 
 
 ```

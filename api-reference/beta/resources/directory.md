@@ -45,10 +45,11 @@ Inherits from [entity](entity.md).
 | deleteditems                       | [directoryObject](directoryobject.md) collection                                         | Recently deleted items. Read-only. Nullable.                                                                              |
 | featureRolloutPolicies             | [featureRolloutPolicy](featurerolloutpolicy.md) collection                               | Nullable.                                                                                                                 |
 | federationConfigurations           | [identityProviderBase](../resources/identityproviderbase.md) collection                  | Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol. |
-| inboundSharedUserProfiles             | [inboundSharedUserProfile](inboundshareduserprofile.md) collection                               | A collection of external Azure AD users whose profile data has been shared with the Azure AD tenant. Nullable.                                                                                                                 |
+| inboundSharedUserProfiles          | [inboundSharedUserProfile](inboundshareduserprofile.md) collection                       | A collection of external Azure AD users whose profile data has been shared with the Azure AD tenant. Nullable.            |
 | onPremisesSynchronization          | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | A container for on-premises directory synchronization functionalities that are available for the organization.            |
-| outboundSharedUserProfile             | [outboundSharedUserProfile](outboundshareduserprofile.md) collection                               | A collection of Azure AD users whose profile data has been shared with an external Azure AD tenant. Nullable.                                                                                                                 |
-| recommendations                    | [recommendation](../resources/recommendation.md) collection                              | List of recommended improvements to improve tenant posture.             |
+| outboundSharedUserProfile          | [outboundSharedUserProfile](outboundshareduserprofile.md) collection                     | A collection of Azure AD users whose profile data has been shared with an external Azure AD tenant. Nullable.             |
+| recommendations                    | [recommendation](../resources/recommendation.md) collection                              | List of recommended improvements to improve tenant posture.                                                               |
+| subscriptions                      | [companySubscription](companysubscription.md) collection                                       | List of commercial subscriptions that an organization has acquired.                                                       |
 
 ## JSON representation
 
@@ -79,5 +80,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

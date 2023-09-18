@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Profile().Phones().ByPhoneId("itemPhone-id").Get(context.Background(), nil)
+phones, err := graphClient.Me().Profile().Phones().ByItemPhoneId("itemPhone-id").Get(context.Background(), nil)
 
 
 ```

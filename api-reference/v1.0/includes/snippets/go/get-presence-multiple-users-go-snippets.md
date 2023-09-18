@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphcommunications.NewGetPresencesByUserIdPostRequestBody()
@@ -22,7 +22,7 @@ ids := []string {
 }
 requestBody.SetIds(ids)
 
-result, err := graphClient.Communications().GetPresencesByUserId().Post(context.Background(), requestBody, nil)
+getPresencesByUserId, err := graphClient.Communications().GetPresencesByUserId().Post(context.Background(), requestBody, nil)
 
 
 ```

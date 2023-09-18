@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.DeviceManagement.Actions
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 
 $params = @{
 	reportName = "SharedUseLicenseUsageReport"
@@ -19,6 +19,6 @@ $params = @{
 	top = 100
 }
 
-Get-MgDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport -BodyParameter $params
+Get-MgBetaDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport -BodyParameter $params
 
 ```

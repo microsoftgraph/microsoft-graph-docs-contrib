@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.TenantRelationships().DelegatedAdminCustomers().ByDelegatedAdminCustomerId("delegatedAdminCustomer-id").ServiceManagementDetails().Get(context.Background(), nil)
+serviceManagementDetails, err := graphClient.TenantRelationships().DelegatedAdminCustomers().ByDelegatedAdminCustomerId("delegatedAdminCustomer-id").ServiceManagementDetails().Get(context.Background(), nil)
 
 
 ```

@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: The list resource represents a list in a site.
 title: List resource
 ms.localizationpriority: medium
@@ -107,9 +107,9 @@ The **list** resource has the following relationships to other resources.
 
 The following is a JSON representation of the resource.
 
-<!-- { "blockType": "resource", 
+<!-- { "blockType": "resource",
        "@odata.type": "microsoft.graph.list",
-       "keyProperty": "id", 
+       "keyProperty": "id",
        "optionalProperties": [ "items", "drive"] } -->
 
 ```json

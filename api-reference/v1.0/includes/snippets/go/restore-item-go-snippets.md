@@ -7,13 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 import (
 	  "context"
-	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphdrives "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/models"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphdrives "github.com/microsoftgraph/msgraph-sdk-go/drives"
+	  graphmodels "github.com/microsoftgraph/msgraph-sdk-go/models"
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphdrives.NewRestorePostRequestBody()
@@ -24,7 +24,7 @@ requestBody.SetParentReference(parentReference)
 name := "String"
 requestBody.SetName(&name) 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Restore().Post(context.Background(), requestBody, nil)
+restore, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Restore().Post(context.Background(), requestBody, nil)
 
 
 ```

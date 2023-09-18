@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDomain()
 id := "contoso.com"
 requestBody.SetId(&id) 
 
-result, err := graphClient.Domains().Post(context.Background(), requestBody, nil)
+domains, err := graphClient.Domains().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphgrouplifecyclepolicies.NewRemoveGroupPostRequestBody()
 groupId := "ffffffff-ffff-ffff-ffff-ffffffffffff"
 requestBody.SetGroupId(&groupId) 
 
-result, err := graphClient.GroupLifecyclePolicies().ByGroupLifecyclePolicieId("groupLifecyclePolicy-id").RemoveGroup().Post(context.Background(), requestBody, nil)
+removeGroup, err := graphClient.GroupLifecyclePolicies().ByGroupLifecyclePolicyId("groupLifecyclePolicy-id").RemoveGroup().Post(context.Background(), requestBody, nil)
 
 
 ```

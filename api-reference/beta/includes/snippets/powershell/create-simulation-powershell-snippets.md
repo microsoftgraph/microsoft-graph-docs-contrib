@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 
 $params = @{
 	displayName = "Graph Simulation"
@@ -12,7 +12,6 @@ $params = @{
 	durationInDays = 7
 	attackTechnique = "credentialHarvesting"
 	status = "scheduled"
-	durationInDays = "3"
 	includedAccountTarget = @{
 		"@odata.type" = "#microsoft.graph.addressBookAccountTargetContent"
 		type = "addressBook"
@@ -22,6 +21,6 @@ $params = @{
 	}
 }
 
-New-MgSecurityAttackSimulation -BodyParameter $params
+New-MgBetaSecurityAttackSimulation -BodyParameter $params
 
 ```

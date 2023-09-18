@@ -4,43 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = EducationUser()
-related_contacts_related_contact1 = RelatedContact()
-related_contacts_related_contact1.display_name = 'Father Time'
+graph_client = GraphServiceClient(request_adapter)
 
-related_contacts_related_contact1.email_address = 'father@time.com'
+request_body = EducationUser(
+	related_contacts = [
+		RelatedContact(
+			display_name = "Father Time",
+			email_address = "father@time.com",
+			mobile_phone = "4251231234",
+			relationship = ContactRelationship.Guardian,
+			access_consent = True,
+		),
+		RelatedContact(
+			display_name = "Mother Nature",
+			email_address = "mother@nature.co.uk",
+			mobile_phone = "3251231234",
+			relationship = ContactRelationship.Parent,
+			access_consent = True,
+		),
+	]
+)
 
-related_contacts_related_contact1.mobile_phone = '4251231234'
-
-related_contacts_related_contact1.relationship(ContactRelationship.Guardian('contactrelationship.guardian'))
-
-related_contacts_related_contact1.access_consent = True
-
-
-relatedContactsArray []= relatedContactsRelatedContact1;
-related_contacts_related_contact2 = RelatedContact()
-related_contacts_related_contact2.display_name = 'Mother Nature'
-
-related_contacts_related_contact2.email_address = 'mother@nature.co.uk'
-
-related_contacts_related_contact2.mobile_phone = '3251231234'
-
-related_contacts_related_contact2.relationship(ContactRelationship.Parent('contactrelationship.parent'))
-
-related_contacts_related_contact2.access_consent = True
-
-
-relatedContactsArray []= relatedContactsRelatedContact2;
-request_body.relatedcontacts(relatedContactsArray)
-
-
-
-
-
-result = await client.education.users.by_user_id('educationUser-id').patch(request_body = request_body)
+result = await graph_client.education.users.by_user_id('educationUser-id').patch(body = request_body)
 
 
 ```

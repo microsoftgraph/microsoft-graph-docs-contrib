@@ -6,48 +6,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new ContentApproval();
-$requestBody->set@odatatype('#microsoft.graph.windowsUpdates.contentApproval');
-
+$requestBody->setOdataType('#microsoft.graph.windowsUpdates.contentApproval');
 $content = new CatalogContent();
-$content->set@odatatype('#microsoft.graph.windowsUpdates.catalogContent');
-
+$content->setOdataType('#microsoft.graph.windowsUpdates.catalogContent');
 $contentCatalogEntry = new FeatureUpdateCatalogEntry();
-$contentCatalogEntry->set@odatatype('#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry');
-
+$contentCatalogEntry->setOdataType('#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry');
 $contentCatalogEntry->setId('6b7e60db-a8e4-426a-9aed-bd12b5c0b9d4');
-
-
 $content->setCatalogEntry($contentCatalogEntry);
-
 $requestBody->setContent($content);
 $deploymentSettings = new DeploymentSettings();
-
 $requestBody->setDeploymentSettings($deploymentSettings);
 $additionalData = [
-		'schedule' => $requestBody = new Schedule();
-$		requestBody->setStartDateTime('String (timestamp)');
-
-$gradualRollout = new GradualRollout();
-$		gradualRollout->set@odatatype('#microsoft.graph.windowsUpdates.dateDrivenRolloutSettings');
-
-$		gradualRollout->setEndDateTime('String (timestamp)');
-
-
-$requestBody->setGradualRollout($gradualRollout);
-
-$requestBody->setSchedule($schedule);
-
+	'schedule' => [
+		'startDateTime' => 'String (timestamp)',
+		'gradualRollout' => [
+			'@odata.type' => '#microsoft.graph.windowsUpdates.dateDrivenRolloutSettings',
+			'endDateTime' => 'String (timestamp)',
+		],
+	],
 ];
 $requestBody->setAdditionalData($additionalData);
 
-
-
-
-$result = $graphServiceClient->admin()->windows()->updates()->updatePolicies()->byUpdatePolicieId('updatePolicy-id')->complianceChanges()->post($requestBody);
-
+$result = $graphServiceClient->admin()->windows()->updates()->updatePolicies()->byUpdatePolicyId('updatePolicy-id')->complianceChanges()->post($requestBody)->wait();
 
 ```

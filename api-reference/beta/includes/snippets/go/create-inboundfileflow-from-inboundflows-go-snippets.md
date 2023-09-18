@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelsindustrydata.NewInboundFlow()
@@ -31,7 +31,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.External().IndustryData().InboundFlows().Post(context.Background(), requestBody, nil)
+inboundFlows, err := graphClient.External().IndustryData().InboundFlows().Post(context.Background(), requestBody, nil)
 
 
 ```

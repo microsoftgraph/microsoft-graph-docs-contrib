@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewIdentityProviderBase()
@@ -27,7 +27,7 @@ requestBody.SetKeyId(&keyId)
 certificateData := "******"
 requestBody.SetCertificateData(&certificateData) 
 
-result, err := graphClient.Identity().IdentityProviders().Post(context.Background(), requestBody, nil)
+identityProviders, err := graphClient.Identity().IdentityProviders().Post(context.Background(), requestBody, nil)
 
 
 ```

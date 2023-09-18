@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
 	isGroupOwnerManagementEnabled = $true
 }
 
-Update-MgIdentityGovernanceAccessReviewPolicy -BodyParameter $params
+Update-MgBetaIdentityGovernanceAccessReviewPolicy -BodyParameter $params
 
 ```

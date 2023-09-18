@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewOrganization()
@@ -39,7 +39,7 @@ technicalNotificationMails := []string {
 }
 requestBody.SetTechnicalNotificationMails(technicalNotificationMails)
 
-result, err := graphClient.Organization().ByOrganization().Id("organization-id").Patch(context.Background(), requestBody, nil)
+organization, err := graphClient.Organization().ByOrganizationId("organization-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewConditionalAccessPolicy()
@@ -159,7 +159,7 @@ signInFrequency.SetIsEnabled(&isEnabled)
 sessionControls.SetSignInFrequency(signInFrequency)
 requestBody.SetSessionControls(sessionControls)
 
-result, err := graphClient.Identity().ConditionalAccess().Policies().Post(context.Background(), requestBody, nil)
+policies, err := graphClient.Identity().ConditionalAccess().Policies().Post(context.Background(), requestBody, nil)
 
 
 ```
