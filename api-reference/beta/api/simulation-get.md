@@ -310,8 +310,8 @@ Content-Type: application/json
   "trainingCompletionDuration": "month",
   "completionDateTime": "0001-01-01T00:00:00Z",
   "settingType": "microsoftManaged"
-}```
-
+}
+```
 
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/endUserNotificationSetting
