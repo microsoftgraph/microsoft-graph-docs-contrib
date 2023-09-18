@@ -4162,12 +4162,12 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### trainingCompletionDuration values
 
-| Member                     | Value |
-| :------------------------- | :---- |
-| week					     | 7     |
-| fortnite                   | 14    |
-| month                      | 30    |
-| unknownFutureValue         | 100   |
+| Member             |
+| :------------------|
+| week					     |
+| fortnite           |
+| month              |
+| unknownFutureValue |
 
 
 ### trainingSettingType values
