@@ -1,6 +1,6 @@
 ---
-title: "Get change notifications for Microsoft Teams Presence updates"
-description: "Use change notifications in Microsoft Graph to enable you to subscribe to Presence changes for Microsoft Teams users."
+title: "Get change notifications for Microsoft Teams presence updates"
+description: "Use change notifications in Microsoft Graph to enable you to subscribe to presence changes for Microsoft Teams users."
 author: "awang119"
 ms.localizationpriority: high
 ms.prod: "cloud-communications"
@@ -144,6 +144,6 @@ For possible combinations of availability and activity, see [Presence properties
 ```
 
 ## See also
-- [View the presence resource type](/graph/api/resources/presence)
+- [Learn about the presence resource type](/graph/api/resources/presence)
 - [Learn about change notifications through webhooks](change-notifications-delivery-webhooks.md)
 - [Learn about change notifications API in Microsoft Graph](/graph/api/resources/webhooks)
