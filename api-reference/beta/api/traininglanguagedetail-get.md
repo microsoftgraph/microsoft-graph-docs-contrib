@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/attackSimulation/trainings/6f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc/languageDetails/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc
+GET /security/attackSimulation/trainings/{trainingId}/languageDetails/{trainingLanguageDetailId}
 ```
 
 ## Optional query parameters
