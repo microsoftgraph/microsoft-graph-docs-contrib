@@ -289,7 +289,6 @@ Content-Type: application/json
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/trainingSetting
 ```
----
 
 #### Response
 
@@ -307,18 +306,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/simulations('d93188b6-6473-4fdb-a73f-48d0dbdd0df6')/trainingSetting",
-    "trainingCompletionDuration": "month",
-    "completionDateTime": "0001-01-01T00:00:00Z",
-    "settingType": "microsoftManaged"
-}
-```
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/simulations('d93188b6-6473-4fdb-a73f-48d0dbdd0df6')/trainingSetting",
+  "trainingCompletionDuration": "month",
+  "completionDateTime": "0001-01-01T00:00:00Z",
+  "settingType": "microsoftManaged"
+}```
 
 
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/endUserNotificationSetting
 ```
----
 
 #### Response
 
@@ -336,9 +333,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/simulations('d93188b6-6473-4fdb-a73f-48d0dbdd0df6')/endUserNotificationSetting",
-    "settingType": "noNotification",
-    "positiveReinforcement": null,
-    "notificationPreference": "unknown"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/simulations('d93188b6-6473-4fdb-a73f-48d0dbdd0df6')/endUserNotificationSetting",
+  "settingType": "noNotification",
+  "positiveReinforcement": null,
+  "notificationPreference": "unknown"
 }
 ```
