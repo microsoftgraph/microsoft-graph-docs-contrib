@@ -132,7 +132,7 @@ For more information about possible combinations of availability and activity, s
 }
 ```
 
-### Decrypted notification with resource data example
+### Decrypted notifications with resource data example
 ```json
 {
     "@odata.id": "users/{User Id}/presence",
