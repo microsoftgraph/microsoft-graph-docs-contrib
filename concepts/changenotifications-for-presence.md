@@ -97,13 +97,13 @@ Notifications for presence event changes are expected when a subscribed user pre
 
 ### Presence notification with resource data example
 
-Presence notifications with resource data will have the following additional properties encrypted in the payload:
-- The availability, or base presence information (Available, Away, Busy)
-- The activity, or information that’s supplemental to the availability (InAMeeting, InACall)
+Presence notifications with resource data have the following additional properties encrypted in the payload:
+- Availability or base presence information (available, away, busy)
+- Activity or information that’s supplemental to the availability (in a meeting, incall)
 
 **Note** The availability and activity can be the same value.
 
-For possible combinations of availability and activity, see [Presence properties](/graph/api/resources/presence).
+For more information about possible combinations of availability and activity, see [Presence properties](/graph/api/resources/presence).
 
 ```json
 {
