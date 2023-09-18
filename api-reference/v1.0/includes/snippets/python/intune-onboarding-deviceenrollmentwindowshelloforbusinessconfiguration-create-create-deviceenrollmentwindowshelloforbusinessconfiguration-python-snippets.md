@@ -4,48 +4,31 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = DeviceEnrollmentWindowsHelloForBusinessConfiguration()
-request_body.@odata_type = '#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.display_name = 'Display Name value'
+request_body = DeviceEnrollmentWindowsHelloForBusinessConfiguration(
+	odata_type = "#microsoft.graph.deviceEnrollmentWindowsHelloForBusinessConfiguration",
+	display_name = "Display Name value",
+	description = "Description value",
+	priority = 8,
+	version = 7,
+	pin_minimum_length = 0,
+	pin_maximum_length = 0,
+	pin_uppercase_characters_usage = WindowsHelloForBusinessPinUsage.Required,
+	pin_lowercase_characters_usage = WindowsHelloForBusinessPinUsage.Required,
+	pin_special_characters_usage = WindowsHelloForBusinessPinUsage.Required,
+	state = Enablement.Enabled,
+	security_device_required = True,
+	unlock_with_biometrics_enabled = True,
+	remote_passport_enabled = True,
+	pin_previous_block_count = 5,
+	pin_expiration_in_days = 3,
+	enhanced_biometrics_state = Enablement.Enabled,
+)
 
-request_body.description = 'Description value'
-
-request_body.Priority = 8
-
-request_body.Version = 7
-
-request_body.PinMinimumLength = 0
-
-request_body.PinMaximumLength = 0
-
-request_body.pinuppercasecharactersusage(WindowsHelloForBusinessPinUsage.Required('windowshelloforbusinesspinusage.required'))
-
-request_body.pinlowercasecharactersusage(WindowsHelloForBusinessPinUsage.Required('windowshelloforbusinesspinusage.required'))
-
-request_body.pinspecialcharactersusage(WindowsHelloForBusinessPinUsage.Required('windowshelloforbusinesspinusage.required'))
-
-request_body.state(Enablement.Enabled('enablement.enabled'))
-
-request_body.security_device_required = True
-
-request_body.unlock_with_biometrics_enabled = True
-
-request_body.remote_passport_enabled = True
-
-request_body.PinPreviousBlockCount = 5
-
-request_body.PinExpirationInDays = 3
-
-request_body.enhancedbiometricsstate(Enablement.Enabled('enablement.enabled'))
-
-
-
-
-result = await client.device_management.device_enrollment_configurations.post(request_body = request_body)
+result = await graph_client.device_management.device_enrollment_configurations.post(body = request_body)
 
 
 ```

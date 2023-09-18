@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Subscription()
-request_body.expirationDateTime = DateTime('2016-03-22T11:00:00.0000000Z')
+graph_client = GraphServiceClient(request_adapter)
 
+request_body = Subscription(
+	expiration_date_time = "2016-03-22T11:00:00.0000000Z",
+)
 
-
-
-result = await client.subscriptions.by_subscription_id('subscription-id').patch(request_body = request_body)
+result = await graph_client.subscriptions.by_subscription_id('subscription-id').patch(body = request_body)
 
 
 ```

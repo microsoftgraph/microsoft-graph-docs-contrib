@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Beta.Users.Actions
 
 $params = @{
-	Message = @{
+	message = @{
 		subject = "Project kickoff"
 		toRecipients = @(
 			@{

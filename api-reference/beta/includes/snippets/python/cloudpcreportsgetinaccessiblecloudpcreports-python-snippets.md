@@ -4,24 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = GetInaccessibleCloudPcReportsPostRequestBody()
-request_body.filter = 'region eq \'westus2\''
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.OrderBy(['cloudPcId', ])
+request_body = GetInaccessibleCloudPcReportsPostRequestBody(
+	filter = "region eq 'westus2'",
+	order_by = [
+		"cloudPcId",
+	]
+	select = [
+		"cloudPcId",
+		"aadDeviceId",
+		"cloudPcName",
+		"userPrincipalName",
+		"provisioningStatus",
+		"region",
+		"deviceHealthStatus",
+		"deviceHealthStatusDateTime",
+		"recentDeviceHealthFailureCount",
+		"recentConnectionFailureCount",
+		"systemStatus",
+		"systemStatusDateTime",
+	]
+	top = 10,
+	skip = 0,
+)
 
-request_body.Select(['cloudPcId', 'aadDeviceId', 'cloudPcName', 'userPrincipalName', 'provisioningStatus', 'region', 'deviceHealthStatus', 'deviceHealthStatusDateTime', 'recentDeviceHealthFailureCount', 'recentConnectionFailureCount', 'systemStatus', 'systemStatusDateTime', ])
-
-request_body.Top = 10
-
-request_body.Skip = 0
-
-
-
-
-await client.device_management.virtual_endpoint.reports.get_inaccessible_cloud_pc_reports.post(request_body = request_body)
+await graph_client.device_management.virtual_endpoint.reports.get_inaccessible_cloud_pc_reports.post(body = request_body)
 
 
 ```
