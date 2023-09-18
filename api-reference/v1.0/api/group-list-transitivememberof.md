@@ -1,6 +1,6 @@
 ---
 title: "List group transitive memberOf"
-description: "Get groups that the group is a member of.  This operation is transitive and will also include all groups that this groups is a nested member of. Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups."
+description: "Get groups that the group is a member of.  This operation is transitive and will also include all groups that this group is a nested member of. Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups."
 author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get groups that the group is a member of. This operation is transitive and will also include all groups that this groups is a nested member of. Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.
+Get groups that the group is a member of. This operation is transitive and will also include all groups that this group is a nested member of. Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.
 
 ## Permissions
 
@@ -48,7 +48,7 @@ Some queries are supported only when you use the **ConsistencyLevel** header set
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 
@@ -109,7 +109,7 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -139,7 +139,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -153,7 +153,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response"
@@ -170,7 +170,7 @@ Content-type: text/plain
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -184,7 +184,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response"
@@ -201,7 +201,7 @@ Content-type: text/plain
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -215,7 +215,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -246,7 +246,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -260,7 +260,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
