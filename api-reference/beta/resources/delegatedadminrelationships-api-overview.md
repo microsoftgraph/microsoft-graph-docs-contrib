@@ -103,14 +103,9 @@ This section describes the ways that Microsoft partners can use the GDAP APIs to
 | Get service management details for a delegated admin customer | [List serviceManagementDetails](../api/delegatedadmincustomer-list-servicemanagementdetails.md) |
 
 
-### Lifecycle of a GDAP Relationship Access Assignment
+## Permissions
 
-The status of the Delegated Admin access assignment. The status transitions are as follows:
-
-![Delegated Admin access assignment status transition diagram](access-assignment-status-transitions.png)
-
-1. [Create delegatedAdminAccessAssignment](../api/delegatedadminrelationship-post-accessassignments.md)
-2. [Delete delegatedAdminAccessAssignment](../api/delegatedadminaccessassignment-delete.md)
+To manage delegated admin relationships, the calling principal must be in the partner tenant and be granted the appropriate [granular delegated admin privileges permissions](/graph/permissions-reference#granular-delegated-admin-privileges-gdap-permissions).
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
@@ -118,22 +113,6 @@ The status of the Delegated Admin access assignment. The status transitions are 
 
 <!-- End of: Link to ZT guidance -->
 
-## Permissions
-
-To manage delegated admin relationships, the calling principal must be in the partner tenant and be granted the appropriate [granular delegated admin privileges permissions](/graph/permissions-reference#granular-delegated-admin-privileges-gdap-permissions).
-
 ## See also
 
 + [Introduction to granular delegated admin privileges (GDAP)](/partner-center/gdap-introduction)
-
-<!-- {
-  "type": "#page.annotation",
-  "description": "",
-  "keywords": "",
-  "section": "documentation",
-  "suppressions": [
-    "Error: /resources/delegatedadminrelationships-api-overview.md:
-      Exception processing links.
-      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')"
-  ]
-} -->
