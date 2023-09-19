@@ -36,7 +36,7 @@ Inherits from [entity](../resources/entity.md).
 |isDefaultLangauge|Boolean|Indicates whether the training has a default language.|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who last modified the details.|
 |lastModifiedDateTime|DateTimeOffset|Date and time when the **trainingLanguageDetail** was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|locale|String|Content locale for training detail. Tells the language details for the training.|
+|locale|String|Content locale for the training detail.|
 
 ## Relationships
 
