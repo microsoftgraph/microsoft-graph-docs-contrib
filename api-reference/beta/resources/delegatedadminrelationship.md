@@ -80,7 +80,7 @@ The following is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)",
   "customer": {"@odata.type": "microsoft.graph.delegatedAdminRelationshipCustomerParticipant"},
   "displayName": "String",
-  "duration": "String",
+  "duration": "String (duration)",
   "endDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastModifiedDateTime": "String (timestamp)",
