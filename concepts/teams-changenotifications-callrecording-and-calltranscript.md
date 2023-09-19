@@ -110,7 +110,9 @@ Content-Type: application/json
   "changeType": "created",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "resource": "communications/onlineMeetings/getAllRecordings",
-  "includeResourceData": false,
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
   "expirationDateTime": "2023-04-11T11:00:00.0000000Z",
   "clientState": "{secretClientState}"
 }
@@ -142,7 +144,9 @@ Content-Type: application/json
   "changeType": "created",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
   "resource": "communications/onlineMeetings/{onlineMeetingId}/recordings",
-  "includeResourceData": false,
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
   "expirationDateTime": "2023-04-11T11:00:00.0000000Z",
   "clientState": "{secretClientState}"
 }
