@@ -13,6 +13,14 @@
                 {
                     "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
                     "ApiChange": "Method",
+                    "ChangedApiName": "getRemoteConnectionHistoricalReports",
+                    "ChangeType": "Change",
+                    "Description": "Changed the description of the [getRemoteConnectionHistoricalReports](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getremoteconnectionhistoricalreports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcReports"
+                },
+                {
+                    "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
+                    "ApiChange": "Method",
                     "ChangedApiName": "getRawRemoteConnectionReports",
                     "ChangeType": "Addition",
                     "Description": "Added the [getRawRemoteConnectionReports](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getrawremoteconnectionreports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource.",
