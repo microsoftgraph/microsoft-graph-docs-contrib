@@ -43,11 +43,11 @@ In the request body, supply an array of JSON objects with the id parameter menti
 ## Response 
 
 * If the request is successful, this method returns an array of sites that were followed.  
-* If an error occurred while following any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites were unable to be followed.
+* If an error occurred while following any of the specified sites, this method returns a `207` status code and the response body contains an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites were unable to be followed.
 
 ## Example
 
-The following example shows how to follow multiple sites. 
+Here's and example that shows how to follow multiple sites. 
 
 ### Request
 
@@ -124,7 +124,7 @@ Content-type: application/json
 }
 ```
 
-If an error occured, it returns the following JSON response 
+If an error occurred, it returns the following JSON response 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
