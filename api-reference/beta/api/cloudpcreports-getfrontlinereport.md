@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: getFrontlineReport"
-description: "Get the frontline reports, such as real-time reports or historical data reports."
+description: "Get the Windows 365 Frontline reports, such as real-time or historical data reports."
 author: "rbayetov"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the [Frontline](https://www.microsoft.com/en/windows-365/frontline) reports, such as real-time report or historical data report.
+Get the [Windows 365 Frontline](https://www.microsoft.com/en/windows-365/frontline) reports, such as real-time or historical data reports.
 
 ## Permissions
 
@@ -67,7 +67,7 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 
 ### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 
 # [HTTP](#tab/http)
@@ -94,7 +94,7 @@ Content-length: 199
 
 ### Response
 
-The following is an example of the response
+Here's an example of the response
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
