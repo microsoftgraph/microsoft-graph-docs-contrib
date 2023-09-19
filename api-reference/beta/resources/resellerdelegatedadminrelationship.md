@@ -60,7 +60,7 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.resellerDelegatedAdminRelationship",
   "accessDetails": {"@odata.type": "microsoft.graph.delegatedAdminAccessDetails"},
   "activatedDateTime": "String (timestamp)",
-  "autoExtendDuration": "String",
+  "autoExtendDuration": "String (duration)",
   "createdDateTime": "String (timestamp)",
   "customer": {"@odata.type": "microsoft.graph.delegatedAdminRelationshipCustomerParticipant"},
   "displayName": "String",
