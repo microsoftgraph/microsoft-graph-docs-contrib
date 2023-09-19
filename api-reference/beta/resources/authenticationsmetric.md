@@ -1,9 +1,9 @@
 ---
 title: "authenticationsMetric resource type"
 description: "Insights for authentications for a specific period."
-author: "kingjuli"
+author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -21,19 +21,19 @@ Insights for authentications for a specific period.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List dailyAuthenticationsMetrics](../api/dailyuserinsightmetricsroot-list-authentications.md)|Daily [authenticationsMetric](../resources/authenticationsmetric.md) collection|Get a list of the daily [authenticationsMetric](../resources/authenticationsmetric.md) objects and their properties.|
-|[List monthlyAuthenticationsMetrics](../api/monthlyuserinsightmetricsroot-list-authentications.md)|Monthly [authenticationsMetric](../resources/authenticationsmetric.md) collection|Get a list of the monthly [authenticationsMetric](../resources/authenticationsmetric.md) objects and their properties.|
+|[List daily authenticationsMetrics](../api/dailyuserinsightmetricsroot-list-authentications.md)|Daily [authenticationsMetric](../resources/authenticationsmetric.md) collection|Get a list of the daily [authenticationsMetric](../resources/authenticationsmetric.md) objects and their properties.|
+|[List monthly authenticationsMetrics](../api/monthlyuserinsightmetricsroot-list-authentications.md)|Monthly [authenticationsMetric](../resources/authenticationsmetric.md) collection|Get a list of the monthly [authenticationsMetric](../resources/authenticationsmetric.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| `id`            | `string`     | Identifier for the user insight.                                    |
-| `factDate`      | `Edm.Date`   | The date of the user insight.                                       |
-| `attemptsCount` | `Edm.Int64`  | Number of authentication requests made. (Filterable)                |
-| `successCount`  | `Edm.Int64`  | Number of successful authentication requests. (Filterable)          |
-| `os`            | `Edm.String` | The device plaform that the customers used. (Filterable)            |
-| `country`       | `Edm.String` | The source country of the customers who authenticated. (Filterable) |
-| `appId`         | `Edm.String` | The app id. (Filterable)                                            |
+| id | String | Identifier for the user insight.  |
+| factDate | Date | The date of the user insight. |
+| attemptsCount | Int64 | Number of authentication requests made. (Filterable) |
+| successCount | Int64 | Number of successful authentication requests. (Filterable) |
+| os | String | The device plaform that the customers used. (Filterable) |
+| country | String | The source country of the customers who authenticated. (Filterable) |
+| appId | String | The app id. (Filterable) |
 
 ## Relationships
 None.

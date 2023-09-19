@@ -1,13 +1,13 @@
 ---
-title: "List monthlyAuthentications"
+title: "List authentications"
 description: "Get the authenticationsMetric resources from the authentications navigation property."
-author: "kingjuli"
+author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
-# List monthlyAuthentications
+# List authentications
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -20,8 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Insights-UserMetrics.Read.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Application|Insights-UserMetrics.Read.All|
+
+[!INCLUDE [Insights-UserMetrics permissions](../../../concepts/permissions-reference.md#insights-usermetrics-permissions)]
 
 ## HTTP request
 

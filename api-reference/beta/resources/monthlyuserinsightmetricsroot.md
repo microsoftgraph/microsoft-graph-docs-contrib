@@ -1,9 +1,9 @@
 ---
 title: "monthlyUserInsightMetricsRoot resource type"
 description: "This entity will contain all available insights with a monthly cadence as seen in the userInsightsRoot entity."
-author: "kingjuli"
+author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This entity will contain all available insights with a monthly cadence as seen in the `userInsightsRoot` entity.
+This entity will contain all available insights with a monthly cadence as seen in the userInsightsRoot entity.
 
 ## Methods
 |Method|Return type|Description|
@@ -29,14 +29,14 @@ This entity will contain all available insights with a monthly cadence as seen i
 ## Relationships
 |Property|Type|Description|
 |:---|:---|:---|
-| `userCount`            | `Collection(self.userCount)`                  | Summary of total users over a specified time period |
-| `summary`              | `Collection(self.insightSummary)`             | Summary of all usage insights for specified time period |
-| `signUps`              | `Collection(self.userSignUpMetric)`           | Total registrations for specified time period |
-| `activeUsers`          | `Collection(self.activeUsersMetric)`          | Insight for active users for specified time period |
-| `activeUsersBreakdown` | `Collection(self.activeUsersBreakdownMetric)` | Insight for the breakdown of users who were active for specified time period |
-| `authentications`      | `Collection(self.authenticationsMetric)`      | Insights for authentications for specified time period |
-| `mfaCompletions`       | `Collection(self.mfaCompletionMetric)`        | Insights for MFA calls for specified time period |
-| `requests`             | `Collection(self.userRequestsMetric)`         | Insights for all user requests to a tenant for specified time period |
+|activeUsers|[activeUsersMetric](../resources/activeusersmetric.md) collection| Insight for active users for specified time period.|
+|activeUsersBreakdown|[activeUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) collection| Insight for the breakdown of users who were active for specified time period.|
+|authentications|[authenticationsMetric](../resources/authenticationsmetric.md) collection| Insights for authentications for specified time period.|
+|mfaCompletions|[mfaCompletionMetric](../resources/mfacompletionmetric.md) collection| Insights for MFA calls for specified time period.|
+|requests|[userRequestsMetric](../resources/userrequestsmetric.md) collection| Insights for all user requests to a tenant for specified time period.|
+|userCount| [userRequestsMetric](../resources/usercountmetric.md) collection| Summary of total users over a specified time period.|
+|signUps|[userSignUpMetric](../resources/usersignupmetric.md) collection| Total registrations for specified time period.|
+||summary|[insightSummary](../resources/insightsummary.md) collection| Summary of all usage insights for specified time period.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

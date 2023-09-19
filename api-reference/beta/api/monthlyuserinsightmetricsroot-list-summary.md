@@ -1,18 +1,18 @@
 ---
-title: "List userCountMetrics"
-description: "Get a list of the userCountMetric objects and their properties."
+title: "List summary"
+description: "Get the insightSummary resources from the summary navigation property."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
-# List userCountMetrics
+# List summary
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [userCountMetric](../resources/usercountmetric.md) objects and their properties.
+Get the insightSummary resources from the summary navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /reports/userInsights/daily/userCount
+GET /reports/userInsightsRoot/monthly/summary
 ```
 
 ## Optional query parameters
@@ -47,7 +47,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [userCountMetric](../resources/usercountmetric.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [insightSummary](../resources/insightsummary.md) objects in the response body.
 
 ## Examples
 
@@ -55,11 +55,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_usercountmetric"
+  "name": "list_insightsummary"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/reports/userInsights/daily/userCount
+GET https://graph.microsoft.com/beta//reports/userInsightsRoot/monthly/summary
 ```
 
 
@@ -69,7 +69,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.AAD.Reporting.userCountMetric)"
+  "@odata.type": "Collection(Microsoft.AAD.Reporting.insightSummary)"
 }
 -->
 ``` http
@@ -79,10 +79,18 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.AAD.Reporting.userCountMetric",
-      "id": "9bf0ee43-c44c-d3bb-2559-47d849b63d84",
+      "@odata.type": "#Microsoft.AAD.Reporting.insightSummary",
+      "id": "9db498ba-cc11-0738-014e-adba1118fdad",
       "factDate": "Date",
-      "count": "Integer"
+      "activeUsers": "Integer",
+      "authenticationRequests": "Integer",
+      "authenticationCompletions": "Integer",
+      "securityTextRequests": "Integer",
+      "securityTextCompletions": "Integer",
+      "securityVoiceRequests": "Integer",
+      "securityVoiceCompletions": "Integer",
+      "os": "String",
+      "appId": "String"
     }
   ]
 }

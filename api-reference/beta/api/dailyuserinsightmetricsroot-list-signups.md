@@ -1,18 +1,18 @@
 ---
-title: "List dailySignUps"
-description: "Get the userSignUpMetric resources from the signUps navigation property."
-author: "kingjuli"
+title: "List userSignUpMetrics"
+description: "Get a list of the userSignUpMetric objects and their properties."
+author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
-# List dailySignUps
+# List userSignUpMetrics
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the daily userSignUpMetric resources from the signUps navigation property.
+Get a list of the [userSignUpMetric](../resources/usersignupmetric.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -20,8 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Insights-UserMetrics.Read.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Application|Insights-UserMetrics.Read.All|
+
+[!INCLUDE [Insights-UserMetrics permissions](../../../concepts/permissions-reference.md#insights-usermetrics-permissions)]
 
 ## HTTP request
 
@@ -34,7 +35,7 @@ GET /reports/userInsights/daily/signUps
 ```
 
 ## Optional query parameters
-This method supports the $filter, $select, server-side paging through a large response and in-clause filter OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

@@ -14350,26 +14350,6 @@ items:
               href: api/authenticationconditionsapplications-post-includeapplications.md
             - name: Remove applications
               href: api/authenticationconditionapplication-delete.md
-        - name: User insights for Azure AD for customers (preview)
-          items:
-            - name: Total users
-              href: resources/usercountmetric.md
-            - name: Active users
-              href: resources/activeusersmetric.md
-            - name: Active users breakdown
-              href: resources/activeusersbreakdownmetric.md
-            - name: User signup
-              href: resources/usersignupmetric.md
-            - name: User requests
-              href: resources/userrequestsmetric.md
-            - name: User authentications
-              href: resources/authenticationsmetric.md
-            - name: MFA completions
-              href: resources/mfacompletionmetric.md
-            - name: Daily active users
-              href: resources/dailyuserinsightmetricsroot.md
-            - name: Monthly active users
-              href: resources/monthlyuserinsightmetricsroot.md
       - name: Partner customer administration
         items:
         - name: Granular delegated admin privileges
@@ -15356,6 +15336,26 @@ items:
             href: api/reportroot-list-appcredentialsigninactivities.md
           - name: Get
             href: api/appcredentialsigninactivity-get.md
+        - name: Application user activity (preview)
+          items:
+            - name: Total users
+              href: resources/usercountmetric.md
+            - name: Active users
+              href: resources/activeusersmetric.md
+            - name: Active users breakdown
+              href: resources/activeusersbreakdownmetric.md
+            - name: User signup
+              href: resources/usersignupmetric.md
+            - name: User requests
+              href: resources/userrequestsmetric.md
+            - name: User authentications
+              href: resources/authenticationsmetric.md
+            - name: MFA completions
+              href: resources/mfacompletionmetric.md
+            - name: Daily active users
+              href: resources/dailyuserinsightmetricsroot.md
+            - name: Monthly active users
+              href: resources/monthlyuserinsightmetricsroot.md
         - name: Application sign-in
           items:
           - name: Sign-in summary

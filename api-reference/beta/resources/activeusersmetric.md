@@ -1,9 +1,9 @@
 ---
 title: "activeUsersMetric resource type"
 description: "Insights for users who were active for a specific period. This is calculated as count of all users who made at least one authentication request in that period."
-author: "kingjuli"
+author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -22,16 +22,16 @@ Insights for users who were active for a specific period. This is calculated as 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List dailyActiveUsersMetric](../api/dailyuserinsightmetricsroot-list-activeusers.md)|[dailyActiveUsersMetric](../resources/activeusersmetric.md) collection|Get a list of the daily [activeUsersMetric](../resources/activeusersmetric.md) objects and their properties.|
-|[List monthlyActiveUsersMetric](../api/monthlyuserinsightsmetricsroot-list-activeusers.md)|[activeUsersMetric](../resources/activeusersmetric.md) collection|Get a list of the monthly [activeUsersMetric](../resources/activeusersmetric.md) objects and their properties.|
+|[List daily activeUsersMetrics](../api/dailyuserinsightmetricsroot-list-activeusers.md)|[daily activeUsersMetrics](../resources/activeusersmetric.md) collection|Get a list of the daily [activeUsersMetric](../resources/activeusersmetric.md) objects and their properties.|
+|[List monthly activeUsersMetrics](../api/monthlyuserinsightsmetricsroot-list-activeusers.md)|[monthly activeUsersMetric](../resources/activeusersmetric.md) collection|Get a list of the monthly [activeUsersMetric](../resources/activeusersmetric.md) objects and their properties.|
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| `id`       | `string`    | Identifier for the user insight. |
-| `factDate` | `Edm.Date`  | Day of the insight.              |
-| `count`    | `Edm.Int64` | Number of users.                 |
+| id     | string    | Identifier for the user insight.|
+| factDate | Date  | Day of the insight.|
+| count   | Int64 | Number of users.|
 
 ## Relationships
 None.

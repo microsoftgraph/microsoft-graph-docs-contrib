@@ -1,18 +1,18 @@
 ---
-title: "List dailyActiveUsers"
-description: "Get the daily activeUsersMetric resources from the activeUsers navigation property."
-author: "kingjuli"
+title: "List activeUsersMetrics"
+description: "Get a list of the activeUsersMetric objects and their properties."
+author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
-# List dailyActiveUsers
+# List activeUsersMetrics
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the dailyActiveUsersMetric resources from the activeUsers navigation property.
+Get a list of the [activeUsersMetric](../resources/activeusersmetric.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -20,8 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Insights-UserMetrics.Read.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Application|Insights-UserMetrics.Read.All|
+
+[!INCLUDE [Insights-UserMetrics permissions](../../../concepts/permissions-reference.md#insights-usermetrics-permissions)]
 
 ## HTTP request
 

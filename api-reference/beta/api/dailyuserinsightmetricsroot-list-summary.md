@@ -1,27 +1,28 @@
 ---
-title: "List summary"
-description: "Get the insightSummary resources from the summary navigation property."
-author: "kingjuli"
+title: "List insightSummaries"
+description: "Get a list of the insightSummary objects and their properties."
+author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
-# List summary
+# List insightSummaries
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the insightSummary resources from the summary navigation property.
+Get a list of the [insightSummary](../resources/insightsummary.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Insights-UserMetrics.Read.All|
+|Application|Insights-UserMetrics.Read.All|
+
+[!INCLUDE [Insights-UserMetrics permissions](../../../concepts/permissions-reference.md#insights-usermetrics-permissions)]
 
 ## HTTP request
 
@@ -30,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /userInsightsRoot/monthly/summary
+daily GET /userInsightsRoot/daily/summary
 ```
 
 ## Optional query parameters
@@ -58,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/userInsightsRoot/monthly/summary
+GET https://graph.microsoft.com/beta/userInsightsRoot/daily/summary
 ```
 
 

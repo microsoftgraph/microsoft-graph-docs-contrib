@@ -1,9 +1,9 @@
 ---
 title: "userRequestsMetric resource type"
 description: "Insights for all user requests to a tenant for a specific period"
-author: "kingjuli"
+author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -21,16 +21,15 @@ Insights for all user requests to a tenant for a specific period. This involves 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List dailyUserRequestsMetrics](../api/dailyuserinsightmetricsroot-list-requests.md)|Daily [userRequestsMetric](../resources/userrequestsmetric.md) collection|Get a list of the daily [userRequestsMetric](../resources/userrequestsmetric.md) objects and their properties.|
-|[List monthlyUserRequestsMetrics](../api/monthlyuserinsightmetricsroot-list-requests.md)| Monthly [userRequestsMetric](../resources/userrequestsmetric.md) collection|Get a list of the monthly [userRequestsMetric](../resources/userrequestsmetric.md) objects and their properties.|
+|[List daily userRequestsMetric](../api/dailyuserinsightmetricsroot-list-requests.md)|Daily [userRequestsMetric](../resources/userrequestsmetric.md) collection|Get a list of the daily [userRequestsMetric](../resources/userrequestsmetric.md) objects and their properties.|
+|[List monthly userRequestsMetric](../api/monthlyuserinsightmetricsroot-list-requests.md)| Monthly [userRequestsMetric](../resources/userrequestsmetric.md) collection|Get a list of the monthly [userRequestsMetric](../resources/userrequestsmetric.md) objects and their properties.|
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|`factDate`|`Date`|The date of the user insight|
-|`id`|`String`|Identifier for the user insight|
-|`requestCount`|`Int64`|Number of requests that came to the tenant. (Filterable)|
+|factDate|Date|The date of the user insight|
+|id|String|Identifier for the user insight|
 
 ## Relationships
 None.

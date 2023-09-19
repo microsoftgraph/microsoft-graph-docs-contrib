@@ -1,9 +1,9 @@
 ---
 title: "Get insightSummary"
 description: "Read the properties and relationships of an insightSummary object."
-author: "kingjuli"
+author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Insights-UserMetrics.Read.All|
+|Application|Insights-UserMetrics.Read.All|
+
+[!INCLUDE [Insights-UserMetrics permissions](../../../concepts/permissions-reference.md#insights-usermetrics-permissions)]
 
 ## HTTP request
 
@@ -58,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/insightSummary
+GET https://graph.microsoft.com/beta/reports/insightSummary
 ```
 
 

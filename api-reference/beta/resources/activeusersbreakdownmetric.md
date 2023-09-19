@@ -1,9 +1,9 @@
 ---
 title: "activeUsersBreakdownMetric resource type"
 description: "Insights of the total users in the tenant over time."
-author: "kingjuli"
+author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -22,17 +22,17 @@ Insights for users who were active for a specific period. This is calculated as 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List dailyActiveUsersBreakdownMetric](../api/dailyuserinsightmetricsroot-list-activeusersbreakdown.md)|[dailyActiveUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) collection|Get a list of the daily [activeUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) objects and their properties.|
-|[List monthlyActiveUsersBreakdownMetric](../api/monthlyuserinsightmetricsroot-list-activeusersbreakdown.md)|[monthlyActiveUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) collection|Get a list of the daily [activeUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) objects and their properties.|
+|[List daily activeUsersBreakdownMetrics](../api/dailyuserinsightmetricsroot-list-activeusersbreakdown.md)|[daily activeUsersBreakdownMetrics](../resources/activeusersbreakdownmetric.md) collection|Get a list of the daily [activeUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) objects and their properties.|
+|[List monthly activeUsersBreakdownMetrics](../api/monthlyuserinsightmetricsroot-list-activeusersbreakdown.md)|[monthly activeUsersBreakdownMetrics](../resources/activeusersbreakdownmetric.md) collection|Get a list of the monthly [activeUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| `appId`    | `String` | Application id the users authenticated to.              
-| `appName`  | `Edm.String` | Application name the users authenticated to.            
-| `count`    | `Edm.Int64`  | Number of users.                                        
-| `factDate` | `Edm.Date`   | Day of the insight.                                     
-| `os`       | `Edm.String` | The device plaform that the customers used. (Filterable)
+| appId    | String | Application id the users authenticated to.|              
+| appName  | String | Application name the users authenticated to. |           
+| count    | Int64  | Number of users.|                                     
+| factDate | Date   | Day of the insight. |                                   
+| os       | String | The device plaform that the customers used. (Filterable)|
 
 ## Relationships
 None.

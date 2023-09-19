@@ -1,9 +1,9 @@
 ---
 title: "insightSummary resource type"
 description: "Summary of all usage insights for a specific time period."
-author: "kingjuli"
+author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Summary of all usage insights for a specific time period.
 
 > **_NOTE:_**
-> A user (in `activeUsers`) may be counted more that once if they use multiple device platforms. This shall be communicated to the customer.
+> A user (in activeUsers) may be counted more that once if they use multiple device platforms. This shall be communicated to the customer.
 > This endpoint is meant to provide a summary of the insights. A breakdown of each insight is available in the latter entities.
 
 ## Methods
@@ -28,17 +28,17 @@ Summary of all usage insights for a specific time period.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|activeUsers|Int64|**TODO: Add Description**|
-|appId|String|**TODO: Add Description**|
-|authenticationCompletions|Int64|**TODO: Add Description**|
-|authenticationRequests|Int64|**TODO: Add Description**|
-|factDate|Date|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|os|String|**TODO: Add Description**|
-|securityTextCompletions|Int64|**TODO: Add Description**|
-|securityTextRequests|Int64|**TODO: Add Description**|
-|securityVoiceCompletions|Int64|**TODO: Add Description**|
-|securityVoiceRequests|Int64|**TODO: Add Description**|
+|activeUsers|Int64|Daily active users.|
+|appId|String|Application id the users sent requests to.|
+|authenticationCompletions|Int64|Daily authentication completions.|
+|authenticationRequests|Int64|Daily authentication requests.|
+|factDate|Date|Day/Month of the insight.|
+|id|String|Identifier for the insight.|
+|os|String|The device plaform that the customers used. (Filterable)|
+|securityTextCompletions|Int64|Daily MFA SMS completions.|
+|securityTextRequests|Int64|Daily MFA SMS requests.|
+|securityVoiceCompletions|Int64|Daily MFA Voice completions.|
+|securityVoiceRequests|Int64|Daily MFA Voice requests.|
 
 ## Relationships
 None.

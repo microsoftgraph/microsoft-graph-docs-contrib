@@ -1,9 +1,9 @@
 ---
 title: "userSignUpMetric resource type"
 description: "Insights for user sign ups for a specific period."
-author: "kingjuli"
+author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -21,17 +21,17 @@ Insights for user sign ups for a specific period.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List dailyUserSignUpMetrics](../api/dailyuserinsightmetricsroot-list-signups.md)|[dailyUserSignUpMetric](../resources/usersignupmetric.md) collection|Get a list of the daily [userSignUpMetric](../resources/usersignupmetric.md) objects and their properties.|
-|[List monthlyUserSignUpMetrics](../api/monthlyuserinsightmetricsroot-list-signups.md)|[monthlyUserSignUpMetric](../resources/usersignupmetric.md) collection|Get a list of the daily [userSignUpMetric](../resources/usersignupmetric.md) objects and their properties.|
+|[List daily userSignUpMetrics](../api/dailyuserinsightmetricsroot-list-signups.md)|[daily userSignUpMetrics](../resources/usersignupmetric.md) collection|Get a list of the daily [userSignUpMetric](../resources/usersignupmetric.md) objects and their properties.|
+|[List monthly userSignUpMetrics](../api/monthlyuserinsightmetricsroot-list-signups.md)|[monthly userSignUpMetrics](../resources/usersignupmetric.md) collection|Get a list of the monthly [userSignUpMetric](../resources/usersignupmetric.md) objects and their properties.|
 |
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|`count`|`Int64`|Number of users who signed up|
-|`factDate`|`Date`|The date of the user insight|
-|`id`|`String`|Identifier for the user insight|
-|`os`|`String`|The device plaform that the customers used|
+|count|Int64|Number of users who signed up.|
+|factDate|Date|The date of the user insight.|
+|id|String|Identifier for the user insight.|
+|os|String|The device plaform that the customers used.|
 
 ## Relationships
 None.

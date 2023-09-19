@@ -1,13 +1,13 @@
 ---
-title: "List monthlyMfaCompletions"
+title: "List mfaCompletions"
 description: "Get the mfaCompletionMetric resources from the mfaCompletions navigation property."
 author: "kingjuli"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
-# List monthlyMfaCompletions
+# List mfaCompletions
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -20,8 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Insights-UserMetrics.Read.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Application|Insights-UserMetrics.Read.All|
+
+[!INCLUDE [Insights-UserMetrics permissions](../../../concepts/permissions-reference.md#insights-usermetrics-permissions)]
 
 ## HTTP request
 
@@ -34,7 +35,7 @@ GET /reports/userInsights/monthly/mfaCompletions
 ```
 
 ## Optional query parameters
-This method supports the $filter, $select, server-side paging through a large response, and in-clause filter OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

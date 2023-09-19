@@ -1,9 +1,9 @@
 ---
 title: "userCountMetric resource type"
 description: "Insights of the total users in the tenant over time."
-author: "kingjuli"
+author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "identity-and-sign-in"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -23,9 +23,9 @@ Insights of the total users in the tenant over time.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| `id`       | `Edm.String` | Identifier for the insight.|
-| `factDate` | `Edm.Date`   | Date of the insight.|
-| `count`    | `string`     | Total users in the tenant at over time.|
+| id|String| Identifier for the insight.|
+| factDate|Date| Date of the insight.|
+| count|String| Total users in the tenant at over time.|
 ## Relationships
 None.
 
