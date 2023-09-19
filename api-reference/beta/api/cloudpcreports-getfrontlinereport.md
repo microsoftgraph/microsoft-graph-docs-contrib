@@ -70,7 +70,6 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 Here's an example of a request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "cloudpcreportsthis.getFrontlineReport"
