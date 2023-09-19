@@ -27,7 +27,7 @@ This type has the following properties:
 | isApprovalJustificationRequired | Boolean | Specifies whether the reviewer must provide justification for the approval. The default value is `true`. |
 | isEnabled| Boolean | If true, access reviews are required for assignments from this policy. |
 | recurrenceType | String | The interval for recurrence, such as `monthly` or `quarterly`. |
-| reviewerType | String | Who should be asked to do the review, either `Self` or `Reviewers`. |
+| reviewerType | String | Who should be asked to do the review, either `Self`, `Reviewers` or `Manager`. |
 | reviewers | [userSet](userset.md) collection | If the reviewerType is `Reviewers`, this collection specifies the users who will be reviewers, either by ID or as members of a group, using a collection of [singleUser](singleuser.md) and [groupMembers](groupmembers.md). |
 | startDateTime | DateTimeOffset | When the first review should start. |
 

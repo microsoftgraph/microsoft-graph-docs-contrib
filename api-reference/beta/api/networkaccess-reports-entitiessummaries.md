@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/beta/networkAccess/reports/entitiesSummaries(sta
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportsthisentitiessummaries-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/reportsthisentitiessummaries-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/reportsthisentitiessummaries-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -97,7 +101,6 @@ GET https://graph.microsoft.com/beta/networkAccess/reports/entitiesSummaries(sta
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of the response.

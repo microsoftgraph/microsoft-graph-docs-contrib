@@ -1,7 +1,9 @@
 ---
 title: "Authentication and authorization basics"
 description: "To call Microsoft Graph, you must register your app with the Microsoft identity platform, request permissions, and acquire an access token."
-author: "jackson-woods"
+author: "FaithOmbongi"
+ms.author: ombongifaith
+ms.reviewer: jackson.woods
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20
@@ -16,7 +18,7 @@ This article provides an overview of the Microsoft identity platform, access tok
 
 ## Register the application
 
-Before your app can get an access token from the Microsoft identity platform, it must be registered in the [Azure portal](https://portal.azure.com/). Registration integrates your app with the Microsoft identity platform and establishes the information that it uses to get tokens, including:
+Before your app can get an access token from the Microsoft identity platform, it must be registered in the [Microsoft Entra admin center](https://entra.microsoft.com/). Registration integrates your app with the Microsoft identity platform and establishes the information that it uses to get tokens, including:
 
 - **Application ID**: A unique identifier assigned by the Microsoft identity platform.
 - **Redirect URI/URL**: One or more endpoints at which your app receives responses from the Microsoft identity platform. (For native and mobile apps, the URI is assigned by the Microsoft identity platform.)

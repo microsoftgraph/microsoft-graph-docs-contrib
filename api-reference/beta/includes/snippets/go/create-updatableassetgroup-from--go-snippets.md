@@ -17,7 +17,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 requestBody := graphmodelswindowsupdates.NewUpdatableAsset()
 
-result, err := graphClient.Admin().Windows().Updates().UpdatableAssets().Post(context.Background(), requestBody, nil)
+updatableAssets, err := graphClient.Admin().Windows().Updates().UpdatableAssets().Post(context.Background(), requestBody, nil)
 
 
 ```

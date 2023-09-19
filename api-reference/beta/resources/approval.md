@@ -19,6 +19,8 @@ In [userConsentRequests](../resources/userconsentrequest.md), the approval objec
 
 In [Role management](../resources/rolemanagement.md), the approval object for decisions to approve or deny role assignments.
 
+In [PIM for Azure AD roles](../resources/privilegedidentitymanagementv3-overview.md), the approval object for decisions to approve or deny requests to activate eligible roles.
+
 In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), the approval object for decisions to approve or deny requests to activate group membership or ownership.
 
 ## Methods
@@ -31,7 +33,7 @@ In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-ove
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The identifier of the approval object. <br/><li> In entitlement management, it is the same identifier as the identifier of the [access package assignment request](accesspackageassignmentrequest.md). <li>In PIM for groups, it is the same identifier as the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).|
+|id|String|The identifier of the approval object. <br/><li> In entitlement management, it is the same identifier as the identifier of the [access package assignment request](accesspackageassignmentrequest.md). <li>In PIM for Azure AD roles, it is the same identifier as the identifier of the [assignment schedule request](../resources/unifiedroleassignmentschedulerequest.md). <li>In PIM for groups, it is the same identifier as the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).|
 
 ## Relationships
 |Relationship|Type|Description|

@@ -6,24 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new AdminAppsAndServices();
-$requestBody->set@odatatype('#microsoft.graph.adminAppsAndServices');
-
+$requestBody->setOdataType('#microsoft.graph.adminAppsAndServices');
 $settings = new AppsAndServicesSettings();
-$settings->set@odatatype('microsoft.graph.appsAndServicesSettings');
-
+$settings->setOdataType('microsoft.graph.appsAndServicesSettings');
 $settings->setIsOfficeStoreEnabled(false);
-
 $settings->setIsAppAndServicesTrialEnabled(false);
-
-
 $requestBody->setSettings($settings);
 
-
-$result = $graphServiceClient->admin()->appsAndServices()->patch($requestBody);
-
+$result = $graphServiceClient->admin()->appsAndServices()->patch($requestBody)->wait();
 
 ```

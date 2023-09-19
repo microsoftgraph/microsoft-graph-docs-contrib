@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = SocialIdentityProvider()
-request_body.@odata_type = '#microsoft.graph.socialIdentityProvider'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.client_secret = '1111111111111'
+request_body = SocialIdentityProvider(
+	odata_type = "#microsoft.graph.socialIdentityProvider",
+	client_secret = "1111111111111",
+)
 
-
-
-
-result = await client.identity.identity_providers.by_identity_provider_id('identityProviderBase-id').patch(request_body = request_body)
+result = await graph_client.identity.identity_providers.by_identity_provider_id('identityProviderBase-id').patch(body = request_body)
 
 
 ```

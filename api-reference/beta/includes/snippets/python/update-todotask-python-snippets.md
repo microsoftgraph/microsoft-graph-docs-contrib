@@ -4,21 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = TodoTask()
-due_date_time = DateTimeTimeZone()
-due_date_time.date_time = '2020-07-25T16:00:00'
+graph_client = GraphServiceClient(request_adapter)
 
-due_date_time.time_zone = 'Eastern Standard Time'
+request_body = TodoTask(
+	due_date_time = DateTimeTimeZone(
+		date_time = "2020-07-25T16:00:00",
+		time_zone = "Eastern Standard Time",
+	),
+)
 
-
-request_body.due_date_time = due_date_time
-
-
-
-result = await client.me.todo.lists.by_list_id('todoTaskList-id').tasks.by_task_id('todoTask-id').patch(request_body = request_body)
+result = await graph_client.me.todo.lists.by_list_id('todoTaskList-id').tasks.by_task_id('todoTask-id').patch(body = request_body)
 
 
 ```

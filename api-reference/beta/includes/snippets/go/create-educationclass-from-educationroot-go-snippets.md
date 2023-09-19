@@ -31,7 +31,7 @@ requestBody.SetExternalSource(&externalSource)
 mailNickname := "fineartschool.net"
 requestBody.SetMailNickname(&mailNickname) 
 
-result, err := graphClient.Education().Classes().Post(context.Background(), requestBody, nil)
+classes, err := graphClient.Education().Classes().Post(context.Background(), requestBody, nil)
 
 
 ```

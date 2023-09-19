@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().InferenceClassification().Overrides().Get(context.Background(), nil)
+overrides, err := graphClient.Me().InferenceClassification().Overrides().Get(context.Background(), nil)
 
 
 ```

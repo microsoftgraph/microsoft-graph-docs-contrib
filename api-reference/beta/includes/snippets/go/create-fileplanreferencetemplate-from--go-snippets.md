@@ -22,7 +22,7 @@ requestBody.SetDisplayName(&displayName)
 createdBy := graphmodels.NewIdentitySet()
 requestBody.SetCreatedBy(createdBy)
 
-result, err := graphClient.Security().Labels().FilePlanReferences().Post(context.Background(), requestBody, nil)
+filePlanReferences, err := graphClient.Security().Labels().FilePlanReferences().Post(context.Background(), requestBody, nil)
 
 
 ```

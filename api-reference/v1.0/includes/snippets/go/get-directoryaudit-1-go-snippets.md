@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.AuditLogs().DirectoryAudits().ByDirectoryAuditId("directoryAudit-id").Get(context.Background(), nil)
+directoryAudits, err := graphClient.AuditLogs().DirectoryAudits().ByDirectoryAuditId("directoryAudit-id").Get(context.Background(), nil)
 
 
 ```

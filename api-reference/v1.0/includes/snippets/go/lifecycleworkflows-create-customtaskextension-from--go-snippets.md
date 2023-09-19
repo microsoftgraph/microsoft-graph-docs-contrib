@@ -48,7 +48,7 @@ timeoutDuration , err := abstractions.ParseISODuration("PT5M")
 callbackConfiguration.SetTimeoutDuration(&timeoutDuration) 
 requestBody.SetCallbackConfiguration(callbackConfiguration)
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().CustomTaskExtensions().Post(context.Background(), requestBody, nil)
+customTaskExtensions, err := graphClient.IdentityGovernance().LifecycleWorkflows().CustomTaskExtensions().Post(context.Background(), requestBody, nil)
 
 
 ```

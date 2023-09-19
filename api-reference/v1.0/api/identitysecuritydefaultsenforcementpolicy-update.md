@@ -2,7 +2,7 @@
 title: "Update identitySecurityDefaultsEnforcementPolicy"
 description: "Update the properties of an identitySecurityDefaultsEnforcementPolicy object."
 ms.localizationpriority: medium
-author: "rohinigoyal1"
+author: "Sammak"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.Read.All and Policy.ReadWrite.ConditionalAccess |
+| Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.SecurityDefaults, Policy.ReadWrite.ConditionalAccess |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Policy.Read.All and Policy.ReadWrite.ConditionalAccess |
+| Application                            | Policy.Read.All, Policy.ReadWrite.SecurityDefaults, Policy.ReadWrite.ConditionalAccess |
 
 ## HTTP request
 

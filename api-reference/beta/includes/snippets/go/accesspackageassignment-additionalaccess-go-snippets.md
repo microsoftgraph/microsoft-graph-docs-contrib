@@ -22,7 +22,9 @@ configuration := &graphidentitygovernance.IdentityGovernanceEntitlementManagemen
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignments().AdditionalAccess(accessPackageId='{accessPackageId}',incompatibleAccessPackageId='{incompatibleAccessPackageId}')().Get(context.Background(), configuration)
+accessPackageId := "{accessPackageId}"
+incompatibleAccessPackageId := "{incompatibleAccessPackageId}"
+additionalAccess, err := graphClient.IdentityGovernance().EntitlementManagement().AccessPackageAssignments().AdditionalAccessWithAccessPackageIdWithIncompatibleAccessPackageId(&accessPackageId, &incompatibleAccessPackageId).Get(context.Background(), configuration)
 
 
 ```

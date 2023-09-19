@@ -3,7 +3,7 @@ title: "Delete identityUserFlowAttribute"
 description: "Delete an identityUserFlowAttribute."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "jkdouglas"
+author: "nanguil"
 ms.prod: "identity-and-sign-in"
 ---
 
@@ -27,8 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 The work or school account needs to belong to one of the following roles:
 
-* Global administrator
-* External Identity User Flow Attribute administrator
+* Global Administrator
+* External Identity User Flow Attribute Administrator
 
 ## HTTP request
 
@@ -71,6 +71,10 @@ DELETE https://graph.microsoft.com/beta/identity/userFlowAttributes/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-userflowattributes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-userflowattributes-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
