@@ -4,7 +4,7 @@ description: "Delete an attachment from a calendar event, message, Outlook task,
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "outlook"
-author: "abheek-das"
+author: "SuryaLashmiS"
 ---
 
 # Delete attachment
@@ -142,6 +142,10 @@ DELETE https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-attachment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-attachment-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -1,7 +1,7 @@
 ---
 title: "Get delegatedAdminRelationshipRequest"
 description: "Read the properties and relationships of a delegatedAdminRelationshipRequest object."
-author: "koravva"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: apiPageType
@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/tenantRelationships/delegatedAdminRelations
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-delegatedadminrelationshiprequest-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-delegatedadminrelationshiprequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

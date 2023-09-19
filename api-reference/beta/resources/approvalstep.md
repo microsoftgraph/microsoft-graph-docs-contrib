@@ -17,6 +17,8 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), the app
 
 In [userConsentRequests](../resources/userconsentrequest.md), the approval  decisions associated with a request.
 
+In [PIM for Azure AD roles](../resources/privilegedidentitymanagementv3-overview.md), the approval decisions associated with requests to activate eligible roles.
+
 In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), the approval decisions associated with requests to activate group membership or ownership.
 
 ## Methods
@@ -43,7 +45,7 @@ In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-ove
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|approval|[approval](../resources/approval.md) collection| The approval object for decisions associated with the `accessPackageAssignmentRequest` in entitlement management or the `assignmentScheduleRequest` in PIM for groups.|
+|approval|[approval](../resources/approval.md) collection| The approval object for decisions associated with the `accessPackageAssignmentRequest` in entitlement management, the `roleAssignmentScheduleRequest` in PIM for Azure AD roles, or the `assignmentScheduleRequest` in PIM for groups.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
