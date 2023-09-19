@@ -25,12 +25,12 @@ Inherits from [privilegedAccessScheduleInstance](../resources/privilegedaccesssc
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|accessId|privilegedAccessGroupRelationships|The identifier of the membership or ownership eligibility relationship to the group. Required. The possible values are: `owner`, `member`.|
-|eligibilityScheduleId|String|The identifier of the [privilegedAccessGroupEligibilitySchedule](privilegedaccessgroupeligibilityschedule.md) from which this instance was created. Required.|
+|accessId|privilegedAccessGroupRelationships|The identifier of the membership or ownership eligibility relationship to the group. Required. The possible values are: `owner`, `member`. Supports `$filter` (`eq`).|
+|eligibilityScheduleId|String|The identifier of the [privilegedAccessGroupEligibilitySchedule](privilegedaccessgroupeligibilityschedule.md) from which this instance was created. Required. Supports `$filter` (`eq`, `ne`).|
 |endDateTime|DateTimeOffset|When the schedule instance ends. Required.|
-|groupId|String|The identifier of the group representing the scope of the membership or ownership eligibility through PIM for groups. Required.|
-|id|String|The identifier of the access assignment schedule instance. Required. Inherited from [entity](../resources/entity.md).|
-|memberType|privilegedAccessGroupMemberType|Indicates whether the assignment is derived from a group assignment. It can further imply whether the calling principal can manage the assignment schedule. Required. The possible values are: `direct`, `group`, `unknownFutureValue`.|
+|groupId|String|The identifier of the group representing the scope of the membership or ownership eligibility through PIM for groups. Required. Supports `$filter` (`eq`).|
+|id|String|The identifier of the access assignment schedule instance. Required. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`).|
+|memberType|privilegedAccessGroupMemberType|Indicates whether the assignment is derived from a group assignment. It can further imply whether the calling principal can manage the assignment schedule. Required. The possible values are: `direct`, `group`, `unknownFutureValue`. Supports `$filter` (`eq`).|
 |principalId|String|The identifier of the principal whose membership or ownership eligibility to the group is managed through PIM for groups. Required.|
 |startDateTime|DateTimeOffset|When this instance starts. Required.|
 
