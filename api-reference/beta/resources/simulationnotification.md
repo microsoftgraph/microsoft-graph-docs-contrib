@@ -1,6 +1,6 @@
 ---
 title: "simulationNotification resource type"
-description: "Simulation reinforcement end user notification setting for simulation creation. Content of the notification for users who are part of a simulation."
+description: "Represents the content of a notification that targets users who are part of a simulation."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Simulation reinforcement end user notification setting for simulation creation.Content of the notification for users who are part of a simulation.
+Represents the content of a notification that targets users who are part of a simulation.
 
 Inherits from [baseEndUserNotification](../resources/baseendusernotification.md).
 
