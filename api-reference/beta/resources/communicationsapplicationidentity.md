@@ -24,11 +24,11 @@ Inherits from [identity](identity.md).
 | id | String | Inherited from **identity**. The application's client ID from Azure Active Directory. |
 | displayName | String | Inherited from **identity**. The display name associated with the application. |
 | applicationType | String | First party Microsoft application presenting this **identity**. |
-| hidden | Boolean | True if the participant would not like to be shown in other participants' rosters. |
+| hidden | Boolean | True if the participant wouldn't like to be shown in other participants' rosters. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
