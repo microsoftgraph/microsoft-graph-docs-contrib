@@ -30,6 +30,7 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 | meetingId | String | The unique identifier of the online meeting related to this transcript. Read-only.|
 | metadataContent| Stream| The time-aligned metadata of the utterances in the transcript. Read-only.|
 | transcriptContentUrl| String| The URL that can be used to access the content of the transcript. Read-only.|
+| meetingOrganizer| IdentitySet| The identity information of the organizer of the **onlineMeeting** related to this transcript. Read-only.|
 
 ## JSON representation
 
@@ -47,6 +48,7 @@ The following JSON is the representation of the resource.
   "createdDateTime": "DateTimeOffset",  
   "id": "String (identifier)",
   "meetingId": "String",
+  "meetingOrganizer": "IdentitySet",
   "metadataContent": "Stream",
   "transcriptContentUrl": "String"
 }
