@@ -31,8 +31,8 @@ Inherits from [entity](../resources/entity.md).
 |[Update simulation](../api/simulation-update.md)|[simulation](../resources/simulation.md)|Update the properties of a [simulation](../resources/simulation.md) object.|
 |[Delete simulation](../api/simulation-delete.md)|None|Delete a [simulation](../resources/simulation.md) object.|
 |[Get payload](../api/payload-get.md)|None|Get a [payload](../resources/payload.md) object.|
-|[Get loginPage](../api/loginPage-get.md)|None|Get a [loginPage](../resources/loginPage.md) object.|
-|[Get landingPage](../api/landingPage-get.md)|None|Get a [landingPage](../resources/landingPage.md) object.|
+|[Get loginPage](../api/loginpage-get.md)|None|Get a [loginPage](../resources/loginpage.md) object.|
+|[Get landingPage](../api/landingpage-get.md)|None|Get a [landingPage](../resources/landingpage.md) object.|
 
 ## Properties
 
