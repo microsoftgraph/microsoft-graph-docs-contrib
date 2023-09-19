@@ -29,9 +29,9 @@
         {
           "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
           "ApiChange": "Relationship",
-          "ChangedApiName": "registrants",
-          "ChangeType": "Change",
-          "Description": "Renamed the **registrants** relationship of the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinar?view=graph-rest-beta) resource to **registrations**.",
+          "ChangedApiName": "registrations",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrations** relationship to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinar?view=graph-rest-beta) resource.",
           "Target": "virtualEventWebinar"
         },
         {
@@ -55,8 +55,16 @@
           "ApiChange": "Relationship",
           "ChangedApiName": "registrants",
           "ChangeType": "Deletion",
-          "Description": "Deleted the **registrants** relationship to the [virtualEventRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrationConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Deleted the **registrants** relationship from the [virtualEventRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrationConfiguration?view=graph-rest-beta) resource.",
           "Target": "virtualEventRegistrationConfiguration"
+        },
+        {
+          "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "questions",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the **questions** relationship from the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
         }
       ],
       "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
