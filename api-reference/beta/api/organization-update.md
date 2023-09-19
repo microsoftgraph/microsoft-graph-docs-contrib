@@ -31,7 +31,7 @@ The calling user must also be in one of the following [Azure AD roles](/azure/ac
 * Partner Tier2 Support
 * Billing Administrator
 
-**Note**: To update `onPremisesSyncEnabled` property requires that the calling user must be one of 
+**Note**: To update the **onPremisesSyncEnabled** property requires that the calling user to have one of the following Azure AD roles: 
 
 * Global Administrator
 * Directory Synchronization Accounts
