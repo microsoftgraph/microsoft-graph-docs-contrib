@@ -1,6 +1,6 @@
 ---
 title: "trainingReminderNotification resource type"
-description: "Training reminder end user notification setting for simulation creation. Notification content details for a reminder about taking taking a training."
+description: "Represents notification content details for a training reminder during a simulation creation."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Training reminder end user notification setting for simulation creation. Notification content details for a reminder about taking taking a training.
+Represents notification content details for a training reminder during a simulation creation.
 
 Inherits from [baseEndUserNotification](../resources/baseendusernotification.md).
 
