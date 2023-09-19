@@ -3,7 +3,7 @@
     {
       "ChangeList": [
         {
-          "Id": "438613f9-1f47-4345-8cbf-ffdf75973e5b",
+          "Id": "a9a67281-e206-43ef-92d1-ad9375b97d1b",
           "ApiChange": "Enumeration",
           "ChangedApiName": "hostPortProtocol",
           "ChangeType": "Addition",
@@ -11,7 +11,7 @@
           "Target": "hostPortProtocol"
         },
         {
-          "Id": "438613f9-1f47-4345-8cbf-ffdf75973e5b",
+          "Id": "a9a67281-e206-43ef-92d1-ad9375b97d1b",
           "ApiChange": "Enumeration",
           "ChangedApiName": "hostPortStatus",
           "ChangeType": "Addition",
@@ -19,7 +19,7 @@
           "Target": "hostPortStatus"
         },
         {
-          "Id": "438613f9-1f47-4345-8cbf-ffdf75973e5b",
+          "Id": "a9a67281-e206-43ef-92d1-ad9375b97d1b",
           "ApiChange": "Resource",
           "ChangedApiName": "hostPortBanner",
           "ChangeType": "Addition",
@@ -27,7 +27,7 @@
           "Target": "hostPortBanner"
         },
         {
-          "Id": "438613f9-1f47-4345-8cbf-ffdf75973e5b",
+          "Id": "a9a67281-e206-43ef-92d1-ad9375b97d1b",
           "ApiChange": "Resource",
           "ChangedApiName": "hostPortComponent",
           "ChangeType": "Addition",
@@ -35,7 +35,7 @@
           "Target": "hostPortComponent"
         },
         {
-          "Id": "438613f9-1f47-4345-8cbf-ffdf75973e5b",
+          "Id": "a9a67281-e206-43ef-92d1-ad9375b97d1b",
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
@@ -43,7 +43,7 @@
           "Target": "host"
         },
         {
-          "Id": "438613f9-1f47-4345-8cbf-ffdf75973e5b",
+          "Id": "a9a67281-e206-43ef-92d1-ad9375b97d1b",
           "ApiChange": "Resource",
           "ChangedApiName": "ports",
           "ChangeType": "Addition",
@@ -51,7 +51,7 @@
           "Target": "host"
         },
         {
-          "Id": "438613f9-1f47-4345-8cbf-ffdf75973e5b",
+          "Id": "a9a67281-e206-43ef-92d1-ad9375b97d1b",
           "ApiChange": "Resource",
           "ChangedApiName": "hostPort",
           "ChangeType": "Addition",
@@ -59,7 +59,7 @@
           "Target": "hostPort"
         },
         {
-          "Id": "438613f9-1f47-4345-8cbf-ffdf75973e5b",
+          "Id": "a9a67281-e206-43ef-92d1-ad9375b97d1b",
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
@@ -67,7 +67,7 @@
           "Target": "threatIntelligence"
         },
         {
-          "Id": "438613f9-1f47-4345-8cbf-ffdf75973e5b",
+          "Id": "a9a67281-e206-43ef-92d1-ad9375b97d1b",
           "ApiChange": "Resource",
           "ChangedApiName": "hostPorts",
           "ChangeType": "Addition",
@@ -75,7 +75,7 @@
           "Target": "threatIntelligence"
         }
       ],
-      "Id": "438613f9-1f47-4345-8cbf-ffdf75973e5b",
+      "Id": "a9a67281-e206-43ef-92d1-ad9375b97d1b",
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-09-01T14:46:49.921165Z",
