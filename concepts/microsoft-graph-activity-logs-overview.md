@@ -74,10 +74,6 @@ See pricing calculations for respective services:
 - [Azure Storage pricing](https://azure.microsoft.com/pricing/details/storage/blobs).
 - [Event Hubs pricing](https://azure.microsoft.com/pricing/details/event-hubs/)
 
-## Latency expectations
-
-The latency is measured from the time the Microsoft Graph request is made to the time it's available in the Azure Monitor logs. 95th percentile latency for Microsoft Graph activity logs is approximately two minutes while the 99th percentile latency is approximately five minutes.
-
 ## Azure Monitor Logs query examples
 
 If you send Microsoft Graph Activity Logs to a Log Analytics workspace, you can build queries for the logs in Kusto Query Language (KQL). For more information about queries in Log Analytics Workspace, see [Analyze Azure AD activity logs with Log Analytics] (https://learn.microsoft.com/en-us/azure/active-directory/reports-monitoring/howto-analyze-activity-logs-log-analytics). You can use these queries for data exploration, to build alert rules, build Azure dashboards, or integrate into your custom applications using the Azure Monitor Logs API or Query SDK.
