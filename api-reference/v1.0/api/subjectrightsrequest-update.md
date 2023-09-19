@@ -23,15 +23,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
-
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 PATCH /security/subjectRightsRequests/{subjectRightsRequestId}
-PATCH /privacy/subjectRightsRequests/{subjectRightsRequestId}
 ```
 
 ## Request headers
