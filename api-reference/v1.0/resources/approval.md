@@ -18,8 +18,8 @@ In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-ove
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get approval](../api/approval-get.md) | [approval](approval.md) | Retrieve the properties of an **approval** object in entitlement management. |
-|[filterByCurrentUser](../api/approval-filterbycurrentuser.md)| [approval](approval.md) collection| Retrieve the **approval** objects for an approver in entitlement management.|
+|[Get approval](../api/approval-get.md) | [approval](approval.md) | Retrieve the properties of an **approval** object in entitlement management and PIM. |
+|[filterByCurrentUser](../api/approval-filterbycurrentuser.md)| [approval](approval.md) collection| Retrieve the **approval** objects for an approver in entitlement management and PIM.|
 
 ## Properties
 
