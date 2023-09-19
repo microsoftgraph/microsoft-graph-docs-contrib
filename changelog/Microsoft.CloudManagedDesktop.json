@@ -31,7 +31,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "getSharedUseLicenseUsageReport",
                     "ChangeType": "Deprecation",
-                    "Description": "Added deprecation notice to the [getSharedUseLicenseUsageReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getSharedUseLicenseUsageReport?view=graph-rest-beta) method of the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+                    "Description": "Deprecated the [getSharedUseLicenseUsageReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getSharedUseLicenseUsageReport?view=graph-rest-beta) method of the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
                     "Target": "cloudPcReports"
                 }
             ],
