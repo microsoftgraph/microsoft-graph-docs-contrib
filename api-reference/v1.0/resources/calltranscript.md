@@ -17,7 +17,7 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 
 |  Method       |  Return Type  | Description|
 |:---------------|:--------|:----------|
-|[List callTranscripts](../api/onlinemeeting-list-transcripts.md) | [callTranscript](calltranscript.md) collection | Get the list of [callTranscript](../resources/calltranscript.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md).| 
+|[List callTranscripts](../api/onlinemeeting-list-transcripts.md) | [callTranscript](calltranscript.md) collection | Get the list of [callTranscript](../resources/calltranscript.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md).|
 |[Get callTranscript](../api/calltranscript-get.md) | [callTranscript](calltranscript.md) | Get a [callTranscript](../resources/calltranscript.md) object associated with an [onlineMeeting](../resources/onlinemeeting.md).|
 
 ## Properties
@@ -28,7 +28,6 @@ Represents a transcript associated with an [online meeting](onlinemeeting.md).
 | createdDateTime| DateTimeOffset|  Date and time at which the transcript was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 | id| String| The unique identifier for the transcript. Read-only.|
 | meetingId | String | The unique identifier of the online meeting related to this transcript. Read-only.|
-| meetingOrganizerId| String| The unique identifier of the organizer of the **onlineMeeting** related to this transcript. Read-only.|
 | metadataContent| Stream| The time-aligned metadata of the utterances in the transcript. Read-only.|
 | transcriptContentUrl| String| The URL that can be used to access the content of the transcript. Read-only.|
 
@@ -48,7 +47,6 @@ The following JSON is the representation of the resource.
   "createdDateTime": "DateTimeOffset",  
   "id": "String (identifier)",
   "meetingId": "String",
-  "meetingOrganizerId": "String",
   "metadataContent": "Stream",
   "transcriptContentUrl": "String"
 }
