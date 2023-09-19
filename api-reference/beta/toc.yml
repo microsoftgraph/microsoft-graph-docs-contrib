@@ -16422,11 +16422,11 @@ items:
                     href: resources/security-hostpair.md
                   - name: Get
                     href: api/security-hostpair-get.md
-                  - name: List host pairs for a host
+                  - name: List for a host
                     href: api/security-host-list-hostpairs.md
-                  - name: List parent host pairs
+                  - name: List for a host as child
                     href: api/security-host-list-parenthostpairs.md
-                  - name: List child host pairs
+                  - name: List for a host as parent
                     href: api/security-host-list-childhostpairs.md
               - name: Host SSL certificate
                 items:
