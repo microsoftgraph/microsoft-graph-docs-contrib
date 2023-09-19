@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents the connection endpoints which direct data to and from the services running on a host.
+Represents the connection endpoints that direct data to and from the services running on a host.
 
 ## Methods
 
