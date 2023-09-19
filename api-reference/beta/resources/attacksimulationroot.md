@@ -20,8 +20,8 @@ Namespace: microsoft.graph
 | **Attack simulation operation** |  |  |
 |[Get attackSimulationOperation](../api/attacksimulationoperation-get.md)|[attackSimulationOperation](../resources/attacksimulationoperation.md)|Get an attack simulation campaign operation for a tracking ID.|
 | **End user notification** |  |  |
-|[List endUserNotification](../api/attacksimulationroot-list-endusernotifications.md)|[endUserNotification](../resources/endusernotification.md) collection|Get a list of the [endUserNotification](../resources/endusernotification.md) objects and their properties.|
-|[Get endUserNotification](../api/endusernotification-get.md)|[endUserNotification](../resources/endusernotification.md) |Read the properties and relationships of an [endUserNotificationDetail](../resources/endusernotificationdetail.md) object.|
+|[List endUserNotification](../api/attacksimulationroot-list-endusernotifications.md)|[endUserNotification](../resources/endusernotification.md) collection|Get a list of [endUserNotification](../resources/endusernotification.md) objects and their properties.|
+|[Get endUserNotification](../api/endusernotification-get.md)|[endUserNotification](../resources/endusernotification.md) |Read the properties and relationships of an [endUserNotification](../resources/endusernotification.md) object.|
 | **Landing page** |  |  |
 |[List landingPages](../api/attacksimulationroot-list-landingpage.md)|[landingPage](../resources/landingpage.md) collection|Get a list of the [landingPage](../resources/landingpage.md) objects and their properties.|
 |[Get landingPage](../api/landingpage-get.md)|[landingPage](../resources/landingpage.md) |Get a [landingPage](../resources/landingpage.md) associated with an attack simulation campaign for a tenant.|
@@ -30,7 +30,7 @@ Namespace: microsoft.graph
 |[Get loginPage](../api/loginpage-get.md)|[loginPage](../resources/loginpage.md) |Get a [loginPage](../resources/loginpage.md) associated with an attack simulation campaign for a tenant.|
 | **Payload** |  |  |
 |[List payloads](../api/attacksimulationroot-list-payloads.md)|[payload](../resources/payload.md) collection|Get the payload resources from the payloads navigation property.|
-|[Get payloads](../api/payload-get.md)|[payload](../resources/payload.md)|Get the payload resource from the payloads navigation property.|
+|[Get payload](../api/payload-get.md)|[payload](../resources/payload.md)|Get the payload resource from the payloads navigation property.|
 | **Simulation** |  |  |
 |[List simulations](../api/attacksimulationroot-list-simulations.md)|[simulation](../resources/simulation.md) collection|Get a list of attack simulation campaigns for a tenant.|
 |[Get simulations](../api/simulation-get.md)|[simulation](../resources/simulation.md) |Get an attack simulation campaigns for a tenant.|
@@ -42,6 +42,7 @@ Namespace: microsoft.graph
 |[Get simulationAutomations](../api/simulationautomation-get.md)|[simulationAutomation](../resources/simulationautomation.md) |Get an attack simulation automations for a tenant.|
 | **Training** |  |  |
 |[List trainings](../api/attacksimulationroot-list-trainings.md)|[training](../resources/training.md) collection|Get a list of the [training](../resources/training.md) objects and their properties.|
+
 
 ## Properties
 
