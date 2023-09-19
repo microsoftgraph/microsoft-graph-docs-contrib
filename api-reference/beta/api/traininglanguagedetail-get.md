@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the language details[trainingLanguageDetail](../resources/traininglanguagedetail.md) about an attack simulation training for a tenant.
+Get the [language details](../resources/traininglanguagedetail.md) about an attack simulation training for a tenant.
 
 ## Permissions
 
