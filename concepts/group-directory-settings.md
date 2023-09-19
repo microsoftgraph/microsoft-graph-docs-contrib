@@ -13,12 +13,13 @@ ms.date: 06/08/2022
 Group settings (also called *directory settings* in `beta`) are a collection of settings that allow you to configure either tenant-wide or object-specific allowed behaviors for specific Azure AD objects like Microsoft 365 groups.
 
 There are eight groups of setting templates with each setting template including a collection of individual settings.
+
 + Group.Unified
 + Group.Unified.Guest
 + Application
 + Custom Policy Settings
 + Consent Policy Settings
-+ Password Rule Settings
++ Password Rule Settings - For more information, see [Configure custom banned passwords for Azure Active Directory password protection](/azure/active-directory/authentication/tutorial-configure-custom-password-protection)
 + Prohibited Names Restricted Settings
 + Prohibited Names Settings
 
@@ -63,6 +64,7 @@ Only one setting is available in this collection.
 | Setting name | Type | Description |
 |--|--|--|
 | AllowToAddGuests | Boolean | Indicates whether guest users can be added to all or specific Microsoft 365 groups. The default setting is `true`. This setting can be overwritten when: <br/><li>**EnableMIPLabels** is `true` and a guest policy is applied when a sensitivity label is assigned to a group </ul><li>**AllowToAddGuests** is `false` at the tenant-level, the group-level setting is overwritten </ul> |
+
 
 ## Next steps
 
