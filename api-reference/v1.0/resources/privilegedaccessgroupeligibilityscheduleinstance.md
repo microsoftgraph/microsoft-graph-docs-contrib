@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessGroupEligibilityScheduleInstance resource type"
-description: "Represents an instance of a provisioned membership or ownership assignment in PIM for groups."
+description: "Represents an instance of a provisioned membership or ownership eligibility in PIM for groups."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
