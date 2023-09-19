@@ -26,7 +26,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 
 ## Properties
 
-| Property              | Type                                          | Description                                                                                                                |
+| Property   | Type  | Description  |
 | :-------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | allowAttendeeToEnableCamera     | Boolean                       | Indicates whether attendees can turn on their camera.                          |
 | allowAttendeeToEnableMic     | Boolean                       | Indicates whether attendees can turn on their microphone.                          |
@@ -53,7 +53,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | startDateTime         | DateTime                                      | The meeting start time in UTC.                                                                                             |
 | subject               | String                                        | The subject of the online meeting.                                                                                         |
 | videoTeleconferenceId | String                                        | The video teleconferencing ID. Read-only.                                                                                  |
-| watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether a watermark should be applied to a content type by the client application. |                                                                |
+| watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether a watermark should be applied to a content type by the client application. |
 
 ### onlineMeetingPresenters values
 
