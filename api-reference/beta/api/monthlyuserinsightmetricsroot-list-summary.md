@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Insights-UserMetrics.Read.All|
 |Application|Insights-UserMetrics.Read.All|
 
-[!INCLUDE [Insights-UserMetrics permissions](../../../concepts/permissions-reference.md)]
+[
 
 ## HTTP request
 

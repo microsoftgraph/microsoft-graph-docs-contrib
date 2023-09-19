@@ -1,5 +1,5 @@
 ---
-ttitle: "List activeUsersBreakdownMetrics"
+title: "List activeUsersBreakdownMetrics"
 description: "Get a list of the activeUsersBreakdownMetric objects and their properties."
 author: "srutto"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
-# List activeUsersBreakdownMetrics
+# List daily activeUsersBreakdownMetrics
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Insights-UserMetrics.Read.All|
 |Application|Insights-UserMetrics.Read.All|
 
-[!INCLUDE [Insights-UserMetrics permissions](../../../concepts/permissions-reference.md)]
+[
 
 ## HTTP request
 
