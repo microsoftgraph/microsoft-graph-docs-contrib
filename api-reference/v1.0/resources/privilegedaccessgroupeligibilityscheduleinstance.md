@@ -31,7 +31,7 @@ Inherits from [privilegedAccessScheduleInstance](../resources/privilegedaccesssc
 |groupId|String|The identifier of the group representing the scope of the membership or ownership eligibility through PIM for groups. Required. Supports `$filter` (`eq`).|
 |id|String|The identifier of the access assignment schedule instance. Required. Inherited from [entity](../resources/entity.md). Supports `$filter` (`eq`, `ne`).|
 |memberType|privilegedAccessGroupMemberType|Indicates whether the assignment is derived from a group assignment. It can further imply whether the calling principal can manage the assignment schedule. Required. The possible values are: `direct`, `group`, `unknownFutureValue`. Supports `$filter` (`eq`).|
-|principalId|String|The identifier of the principal whose membership or ownership eligibility to the group is managed through PIM for groups. Required.|
+|principalId|String|The identifier of the principal whose membership or ownership eligibility to the group is managed through PIM for groups. Required. Supports `$filter` (`eq`).|
 |startDateTime|DateTimeOffset|When this instance starts. Required.|
 
 ## Relationships
