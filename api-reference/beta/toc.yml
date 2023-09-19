@@ -10327,7 +10327,7 @@ items:
                     href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
                   - name: Get real time remote connection status
                     href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md
-                  - name: Get shared-use license usage report (Deprecated)
+                  - name: Get shared-use license usage report (deprecated)
                     href: api/cloudpcreports-getshareduselicenseusagereport.md
                   - name: Get Frontline report
                     href: api/cloudpcreports-getfrontlinereport.md
