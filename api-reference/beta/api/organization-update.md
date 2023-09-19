@@ -60,7 +60,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property  | Type |Description|
 |:---------------|:--------|:----------|
 |marketingNotificationEmails|String collection|                                        **Notes**: not nullable.            |
-|onPremisesSyncEnabled|Boolean|                                        **Notes**: nullable.            |
+|onPremisesSyncEnabled|Boolean|`true` to enable this object to be synced from an on-premises directory; `false` to disable syncing from an on-premises directory; Nullable. `null` if this object has never been synced from an on-premises directory (default).            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|The privacy profile of an organization (set statementUrl and contactEmail).            |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String collection||
