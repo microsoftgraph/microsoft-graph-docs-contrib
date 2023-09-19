@@ -518,6 +518,7 @@ Namespace: microsoft.graph
 | Member                |
 | :-------------------- |
 | asymmetricKeyLifetime |
+| trustedCertificateAuthority |
 | unknownFutureValue    |
 
 ### synchronizationSecret values
