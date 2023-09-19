@@ -6,7 +6,7 @@ ms.reviewer: yiheguo
 ms.localizationpriority: high
 ms.prod: "applications"
 doc_type: conceptualPageType
-ms.date: 09/12/2023
+ms.date: 09/19/2023
 ---
 
 # Access Microsoft Graph activity logs (preview)
@@ -41,7 +41,7 @@ The following data relating to API requests is available for Microsoft Graph act
 - Build detections and behavioral analysis to identify suspicious or anomalous use of Microsoft Graph APIs
 - Investigate unexpected or suspicious privileged assignment of application permissions
 - Identify problematic or unexpected behaviors for client applications such as extreme call volumes
-- Correlate Graph requests made by a user or app with sign in information
+- Correlate Graph requests made by a user or app with sign-in information
 
 ## Configure to receive the Microsoft Graph activity logs
 
@@ -99,14 +99,13 @@ MicrosoftGraphActivityLogs
 | summarize RequestCount=dcount(RequestId) by UserId, RiskState, resourcePath, RequestMethod, ResponseStatusCode
 ```
 
-The following Kusto query allows you to correlate the Microsoft Graph activity logs and sign-in logs. Your Graph activity logs from Microsoft applications won't have matching sign in log entries. To learn more, see [Sign-in logs known limitations](/azure/active-directory/reports-monitoring/concept-sign-ins#known-limitations).
+The following Kusto query allows you to correlate the Microsoft Graph activity logs and sign-in logs. Activity logs from Microsoft applications may not all have matching sign in log entries. For more information, see [Sign-in logs known limitations](/azure/active-directory/reports-monitoring/concept-sign-ins#known-limitations).
 
 ```kusto
 MicrosoftGraphActivityLogs
 | where TimeGenerated > ago(7d)
 | join kind=leftouter (union SigninLogs, AADNonInteractiveUserSignInLogs, AADServicePrincipalSignInLogs, AADManagedIdentitySignInLogs, ADFSSignInLogs
-    | where TimeGenerated > ago(7d)
-    )
+    | where TimeGenerated > ago(7d))
     on $left.SignInActivityId == $right.UniqueTokenIdentifier
 ```
 
