@@ -18,7 +18,7 @@ request_body = ExternalItem(
 	]
 )
 
-result = await graph_client.external.connections.by_connection_id('externalConnection-id').items.by_item_id('externalItem-id').put(request_body = request_body)
+result = await graph_client.external.connections.by_connection_id('externalConnection-id').items.by_item_id('externalItem-id').put(body = request_body)
 
 
 ```

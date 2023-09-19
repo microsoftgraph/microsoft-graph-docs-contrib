@@ -33,7 +33,7 @@ request_body = SendMailPostRequestBody(
 	),
 )
 
-await graph_client.me.send_mail.post(request_body = request_body)
+await graph_client.me.send_mail.post(body = request_body)
 
 
 ```

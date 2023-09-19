@@ -14,7 +14,7 @@ request_body = UnifiedRoleAssignment(
 	app_scope_id = "/AccessPackageCatalog/beedadfe-01d5-4025-910b-84abb9369997",
 )
 
-result = await graph_client.role_management.entitlement_management.role_assignments.post(request_body = request_body)
+result = await graph_client.role_management.entitlement_management.role_assignments.post(body = request_body)
 
 
 ```

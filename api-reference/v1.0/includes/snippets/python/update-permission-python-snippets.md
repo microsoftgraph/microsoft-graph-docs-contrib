@@ -14,7 +14,7 @@ request_body = Permission(
 	]
 )
 
-result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').permissions.by_permission_id('permission-id').patch(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').permissions.by_permission_id('permission-id').patch(body = request_body)
 
 
 ```

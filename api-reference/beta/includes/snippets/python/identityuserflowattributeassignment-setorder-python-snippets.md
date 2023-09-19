@@ -17,7 +17,7 @@ request_body = SetOrderPostRequestBody(
 	),
 )
 
-await graph_client.identity.b2c_user_flows.by_b2c_user_flow_id('b2cIdentityUserFlow-id').user_attribute_assignments.set_order.post(request_body = request_body)
+await graph_client.identity.b2c_user_flows.by_b2c_user_flow_id('b2cIdentityUserFlow-id').user_attribute_assignments.set_order.post(body = request_body)
 
 
 ```

@@ -9,8 +9,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new UserScopeTeamsAppInstallationRequestBuilderGetRequestConfiguration();
-$queryParameters = UserScopeTeamsAppInstallationRequestBuilderGetRequestConfiguration::createQueryParameters();
+$requestConfiguration = new UserScopeTeamsAppInstallationItemRequestBuilderGetRequestConfiguration();
+$queryParameters = UserScopeTeamsAppInstallationItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["teamsAppDefinition"];
 $requestConfiguration->queryParameters = $queryParameters;
 
