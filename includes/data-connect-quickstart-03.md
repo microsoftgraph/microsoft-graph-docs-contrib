@@ -11,7 +11,7 @@ In this exercise, you will learn how to create an Azure Active Directory (Azure 
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) with at least the *Application Administrator* or*Application Developer* role.
 
-1. Expand the **Identity** menu > Select **Applications** > **App registrations** > **New registration**.
+1. Expand the **Identity** menu > select **Applications** > **App registrations** > **New registration**.
 
 1. Use the following values to create a new Azure AD application and select **Register**.
 

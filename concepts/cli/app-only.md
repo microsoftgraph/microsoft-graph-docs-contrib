@@ -33,7 +33,7 @@ You can register the application in the [Microsoft Entra admin center](https://e
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
 
-1. Expand the **Identity** menu > Select **Applications** > **App registrations** > **New registration**.
+1. Expand the **Identity** menu > select **Applications** > **App registrations** > **New registration**.
 
 1. On the **Register an application** page, set the values as follows.
 

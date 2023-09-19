@@ -49,7 +49,7 @@ You don't need the agent if you're using the Postman for Windows app. If you ope
 To use this collection in your own developer tenant, create an Azure Active Directory (Azure AD) application and give it the appropriate permissions for the requests that you want to call. If you don't have a developer tenant, you can sign up for one through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
-1. Expand the **Identity** menu > Select **Applications** > **App registrations** > **New registration**.
+1. Expand the **Identity** menu > select **Applications** > **App registrations** > **New registration**.
 1. Set the **Application name** to `Postman`.
 1. From the dropdown menu, select **Web**.
 1. Set the **Redirect URI** to `https://oauth.pstmn.io/v1/browser-callback`.

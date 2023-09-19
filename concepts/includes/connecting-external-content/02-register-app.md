@@ -12,7 +12,7 @@ In this section you will register an application that supports app-only authenti
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
 
-1. Expand the **Identity** menu > Select **Applications** > **App registrations** > **New registration**.
+1. Expand the **Identity** menu > select **Applications** > **App registrations** > **New registration**.
 
 1. Enter a name for your application, for example, `Parts Inventory Connector`.
 
