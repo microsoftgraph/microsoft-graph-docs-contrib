@@ -85,7 +85,7 @@ Inherits from [entity](../resources/entity.md).
 |linkInAttachment| Attack technique that involves an end user clicking a URL link in an attachment. |
 |linkToMalwareFile| Attack technique that involves an end user clicking a URL link to a malware file. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
-|oAuthConsentGrant|  Attack technique that involves an end user giving access consent to an app.|
+|oAuthConsentGrant|  Attack technique that involves an end user who gives access consent to an app.|
 
 ### simulationAttackType values
 
