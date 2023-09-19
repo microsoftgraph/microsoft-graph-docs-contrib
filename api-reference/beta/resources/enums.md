@@ -4164,7 +4164,7 @@ Possible values for user account types (group membership), per Windows definitio
 
 | Member             |
 | :------------------|
-| week					     |
+| week               |
 | fortnite           |
 | month              |
 | unknownFutureValue |
