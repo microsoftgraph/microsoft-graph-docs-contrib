@@ -469,4 +469,4 @@ Content-Type: application/json
 
 + [Overview of role management through the privileged identity management (PIM) API](/graph/api/resources/privilegedidentitymanagementv3-overview)
 + [Overview of rules for Azure AD roles in privileged identity management (PIM) APIs in Microsoft Graph](identity-governance-pim-rules-overview.md)
-+ [Configure Azure AD role settings in Privileged Identity Management - Azure portal](/azure/active-directory/privileged-identity-management/pim-how-to-change-default-settings)
++ [Configure Azure AD role settings using the Microsoft Entra admin center](/azure/active-directory/privileged-identity-management/pim-how-to-change-default-settings)

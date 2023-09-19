@@ -13,7 +13,7 @@ $requestBody = new Device();
 $requestBody->setAccountEnabled(false);
 $alternativeSecurityIdsAlternativeSecurityId1 = new AlternativeSecurityId();
 $alternativeSecurityIdsAlternativeSecurityId1->setType(2);
-$alternativeSecurityIdsAlternativeSecurityId1->setKey(base64_decode('base64Y3YxN2E1MWFlYw=='));
+$alternativeSecurityIdsAlternativeSecurityId1->setKey(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('base64Y3YxN2E1MWFlYw==')));
 $alternativeSecurityIdsArray []= $alternativeSecurityIdsAlternativeSecurityId1;
 $requestBody->setAlternativeSecurityIds($alternativeSecurityIdsArray);
 

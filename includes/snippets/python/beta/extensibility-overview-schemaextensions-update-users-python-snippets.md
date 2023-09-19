@@ -17,7 +17,7 @@ request_body = User(
 	}
 )
 
-result = await graph_client.users.by_user_id('user-id').patch(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').patch(body = request_body)
 
 
 ```

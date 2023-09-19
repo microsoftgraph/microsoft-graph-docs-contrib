@@ -20,7 +20,7 @@ request_body = Group(
 	security_enabled = False,
 )
 
-result = await graph_client.administrative_units.by_administrative_unit_id('administrativeUnit-id').members.post(request_body = request_body)
+result = await graph_client.administrative_units.by_administrative_unit_id('administrativeUnit-id').members.post(body = request_body)
 
 
 ```

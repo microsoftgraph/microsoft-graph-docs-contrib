@@ -16,7 +16,7 @@ request_body = Incident(
 	]
 )
 
-result = await graph_client.security.incidents.by_incident_id('incident-id').patch(request_body = request_body)
+result = await graph_client.security.incidents.by_incident_id('incident-id').patch(body = request_body)
 
 
 ```

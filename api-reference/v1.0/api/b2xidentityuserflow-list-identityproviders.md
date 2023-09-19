@@ -3,7 +3,7 @@ title: "List identityProviders"
 description: "List all identityProviders in a b2xIdentityUserFlow."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "jkdouglas"
+author: "nanguil"
 ms.prod: "identity-and-sign-in"
 ---
 

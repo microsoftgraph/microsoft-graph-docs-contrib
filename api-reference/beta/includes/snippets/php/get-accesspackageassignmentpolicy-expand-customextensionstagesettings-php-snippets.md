@@ -9,9 +9,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new AccessPackageAssignmentPolicyRequestBuilderGetRequestConfiguration();
-$queryParameters = AccessPackageAssignmentPolicyRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->expand = ["customExtensionStageSettings($expand=customExtension)"];
+$requestConfiguration = new AccessPackageAssignmentPolicyItemRequestBuilderGetRequestConfiguration();
+$queryParameters = AccessPackageAssignmentPolicyItemRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->expand = ["customExtensionStageSettings(\$expand=customExtension)"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 

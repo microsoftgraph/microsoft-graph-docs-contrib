@@ -100,7 +100,6 @@ GET https://graph.microsoft.com/beta/tenantRelationships/multiTenantOrganization
 
 ---
 
-
 ### Response
 
 The following example shows the response before an added tenant joins a multi-tenant organization.

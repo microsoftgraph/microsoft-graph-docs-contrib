@@ -16,7 +16,7 @@ request_body = ItemPatent(
 	web_url = "https://patents.gov/3954432633",
 )
 
-result = await graph_client.me.profile.patents.post(request_body = request_body)
+result = await graph_client.me.profile.patents.post(body = request_body)
 
 
 ```

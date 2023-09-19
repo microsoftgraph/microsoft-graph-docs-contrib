@@ -13,7 +13,7 @@ request_body = EducationModule(
 	description = "Description for Module 2",
 )
 
-result = await graph_client.education.classes.by_classe_id('educationClass-id').modules.post(request_body = request_body)
+result = await graph_client.education.classes.by_classe_id('educationClass-id').modules.post(body = request_body)
 
 
 ```

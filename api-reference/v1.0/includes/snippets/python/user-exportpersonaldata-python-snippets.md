@@ -12,7 +12,7 @@ request_body = ExportPersonalDataPostRequestBody(
 	storage_location = "storageLocation-value",
 )
 
-await graph_client.users.by_user_id('user-id').export_personal_data.post(request_body = request_body)
+await graph_client.users.by_user_id('user-id').export_personal_data.post(body = request_body)
 
 
 ```

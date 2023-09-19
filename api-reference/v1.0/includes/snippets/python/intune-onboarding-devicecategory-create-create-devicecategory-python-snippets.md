@@ -14,7 +14,7 @@ request_body = DeviceCategory(
 	description = "Description value",
 )
 
-result = await graph_client.device_management.device_categories.post(request_body = request_body)
+result = await graph_client.device_management.device_categories.post(body = request_body)
 
 
 ```

@@ -28,7 +28,7 @@ request_body = CreateReplyPostRequestBody(
 	comment = "Samantha, Randi, would you name the group if the project is approved, please?",
 )
 
-result = await graph_client.me.messages.by_message_id('message-id').create_reply.post(request_body = request_body)
+result = await graph_client.me.messages.by_message_id('message-id').create_reply.post(body = request_body)
 
 
 ```

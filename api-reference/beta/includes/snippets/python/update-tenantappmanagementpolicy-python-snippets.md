@@ -48,7 +48,7 @@ request_body = TenantAppManagementPolicy(
 	),
 )
 
-result = await graph_client.policies.default_app_management_policy.patch(request_body = request_body)
+result = await graph_client.policies.default_app_management_policy.patch(body = request_body)
 
 
 ```

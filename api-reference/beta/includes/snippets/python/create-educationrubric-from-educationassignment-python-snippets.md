@@ -12,7 +12,7 @@ request_body = ReferenceUpdate(
 	odata_id = "https://graph.microsoft.com/v1.0/education/me/rubrics/{id}",
 )
 
-await graph_client.education.classes.by_classe_id('educationClass-id').assignments.by_assignment_id('educationAssignment-id').rubric.ref.put(request_body = request_body)
+await graph_client.education.classes.by_classe_id('educationClass-id').assignments.by_assignment_id('educationAssignment-id').rubric.ref.put(body = request_body)
 
 
 ```

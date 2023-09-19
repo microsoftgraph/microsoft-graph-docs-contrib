@@ -14,7 +14,7 @@ request_body = PlannerBucket(
 	order_hint = " !",
 )
 
-result = await graph_client.planner.buckets.post(request_body = request_body)
+result = await graph_client.planner.buckets.post(body = request_body)
 
 
 ```

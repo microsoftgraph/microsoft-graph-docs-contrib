@@ -17,7 +17,7 @@ request_body = BulkRestoreCloudPcPostRequestBody(
 	time_range = RestoreTimeRange.Before,
 )
 
-result = await graph_client.device_management.managed_devices.bulk_restore_cloud_pc.post(request_body = request_body)
+result = await graph_client.device_management.managed_devices.bulk_restore_cloud_pc.post(body = request_body)
 
 
 ```

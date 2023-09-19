@@ -22,7 +22,7 @@ request_body = Application(
 	}
 )
 
-await graph_client.applications.by_application_id('application-id').patch(request_body = request_body)
+await graph_client.applications.by_application_id('application-id').patch(body = request_body)
 
 
 ```
