@@ -83,7 +83,7 @@ The following is an example of a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/hostPorts/{hostPortId}
+GET https://graph.microsoft.com/beta/security/threatIntelligence/hostPorts/ODUuMTMuMTM5LjE4JCQyMQ==
 ```
 
 ### Response
