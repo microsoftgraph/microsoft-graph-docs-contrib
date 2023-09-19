@@ -14,7 +14,7 @@ request_body = ValidatePropertiesPostRequestBody(
 	on_behalf_of_user_id = UUID("onBehalfOfUserId-value"),
 )
 
-await graph_client.groups.by_group_id('group-id').validate_properties.post(request_body = request_body)
+await graph_client.groups.by_group_id('group-id').validate_properties.post(body = request_body)
 
 
 ```

@@ -25,7 +25,7 @@ $requestBody->setColumns($columnsArray);
 
 $list = new ListInfo();
 $list->setTemplate('genericList');
-$requestBody->setList($list);
+$requestBody->setEscapedList($list);
 
 $result = $graphServiceClient->sites()->bySiteId('site-id')->lists()->post($requestBody)->wait();
 

@@ -27,7 +27,7 @@ request_body = BookingAppointment(
 	),
 )
 
-result = await graph_client.booking_businesses.by_booking_businesse_id('bookingBusiness-id').appointments.by_appointment_id('bookingAppointment-id').patch(request_body = request_body)
+result = await graph_client.booking_businesses.by_booking_businesse_id('bookingBusiness-id').appointments.by_appointment_id('bookingAppointment-id').patch(body = request_body)
 
 
 ```

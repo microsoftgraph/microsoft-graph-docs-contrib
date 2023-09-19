@@ -23,7 +23,7 @@ request_body = AccessPackageResourceRequest(
 	request_type = "AdminAdd",
 )
 
-result = await graph_client.identity_governance.entitlement_management.acces_package_resource_requests.post(request_body = request_body)
+result = await graph_client.identity_governance.entitlement_management.acces_package_resource_requests.post(body = request_body)
 
 
 ```

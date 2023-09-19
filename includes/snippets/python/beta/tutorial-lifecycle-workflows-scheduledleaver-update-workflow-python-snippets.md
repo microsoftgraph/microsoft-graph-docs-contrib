@@ -13,7 +13,7 @@ request_body = Workflow(
 	is_scheduling_enabled = True,
 )
 
-result = await graph_client.identity_governance.lifecycle_workflows.workflows.by_workflow_id('workflow-id').patch(request_body = request_body)
+result = await graph_client.identity_governance.lifecycle_workflows.workflows.by_workflow_id('workflow-id').patch(body = request_body)
 
 
 ```

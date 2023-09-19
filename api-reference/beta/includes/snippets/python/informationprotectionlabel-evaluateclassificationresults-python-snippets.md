@@ -35,7 +35,7 @@ headers = {
 
 )
 
-result = await graph_client.information_protection.policy.labels.evaluate_classification_results.post(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.information_protection.policy.labels.evaluate_classification_results.post(body = request_body, request_configuration = request_configuration)
 
 
 ```

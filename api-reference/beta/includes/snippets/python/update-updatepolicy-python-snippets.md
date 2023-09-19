@@ -24,7 +24,7 @@ request_body = UpdatePolicy(
 	),
 )
 
-result = await graph_client.admin.windows.updates.update_policies.by_update_policie_id('updatePolicy-id').patch(request_body = request_body)
+result = await graph_client.admin.windows.updates.update_policies.by_update_policie_id('updatePolicy-id').patch(body = request_body)
 
 
 ```

@@ -34,7 +34,7 @@ request_body = ProvisionOnDemandPostRequestBody(
 	]
 )
 
-result = await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').synchronization.jobs.by_job_id('synchronizationJob-id').provision_on_demand.post(request_body = request_body)
+result = await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').synchronization.jobs.by_job_id('synchronizationJob-id').provision_on_demand.post(body = request_body)
 
 
 ```

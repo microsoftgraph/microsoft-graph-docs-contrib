@@ -25,7 +25,7 @@ request_body = DriveItem(
 	}
 )
 
-result = await graph_client.drives.by_drive_id('drive-id').bundles.post(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').bundles.post(body = request_body)
 
 
 ```

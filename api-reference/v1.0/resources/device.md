@@ -70,7 +70,7 @@ This resource is an open type that allows other properties to be passed in. You 
 |profileType|deviceProfileType|The profile type of the device. Possible values: `RegisteredDevice` (default), `SecureVM`, `Printer`, `Shared`, `IoT`.|
 |registrationDateTime|DateTimeOffset|Date and time of when the device was registered. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |systemLabels|String collection| List of labels applied to the device by the system. Supports `$filter` (`/$count eq 0`, `/$count ne 0`). |
-|trustType|String| Type of trust for the joined device. Read-only. Possible values:  `Workplace` (indicates *bring your own personal devices*), `AzureAd` (Cloud only joined devices), `ServerAd` (on-premises domain joined devices joined to Azure AD). For more details, see [Introduction to device management in Azure Active Directory](/azure/active-directory/device-management-introduction) |
+|trustType|String| Type of trust for the joined device. Read-only. Possible values:  `Workplace` (indicates *bring your own personal devices*), `AzureAd` (Cloud only joined devices), `ServerAd` (on-premises domain joined devices joined to Azure AD). For more details, see [Introduction to device management in Azure Active Directory](/azure/active-directory/device-management-introduction). |
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -83,7 +83,7 @@ This resource is an open type that allows other properties to be passed in. You 
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+The following is a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
@@ -100,33 +100,33 @@ Here is a JSON representation of the resource
 
 ```json
 {
-  "accountEnabled": true,
+  "accountEnabled": "Boolean",
   "alternativeSecurityIds": [{"@odata.type": "microsoft.graph.alternativeSecurityId"}],
   "approximateLastSignInDateTime": "String (timestamp)",
   "complianceExpirationDateTime": "String (timestamp)",
-  "deviceCategory": "string",
-  "deviceId": "string",
-  "deviceMetadata": "string",
-  "deviceOwnership": "string",
-  "deviceVersion": 1024,
-  "displayName": "string",
-  "enrollmentProfileName": "string",
+  "deviceCategory": "String",
+  "deviceId": "String",
+  "deviceMetadata": "String",
+  "deviceOwnership": "String",
+  "deviceVersion": "Int32",
+  "displayName": "String",
+  "enrollmentProfileName": "String",
   "extensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
-  "id": "string (identifier)",
-  "isCompliant": true,
-  "isManaged": true,
-  "manufacturer": "string",
-  "mdmAppId": "string",
-  "model": "string",
+  "id": "String (identifier)",
+  "isCompliant": "Boolean",
+  "isManaged": "Boolean",
+  "manufacturer": "String",
+  "mdmAppId": "String",
+  "model": "String",
   "onPremisesLastSyncDateTime": "String (timestamp)",
-  "onPremisesSyncEnabled": true,
-  "operatingSystem": "string",
-  "operatingSystemVersion": "string",
-  "physicalIds": ["string"],
-  "profileType": "string",
+  "onPremisesSyncEnabled": "Boolean",
+  "operatingSystem": "String",
+  "operatingSystemVersion": "String",
+  "physicalIds": ["String"],
+  "profileType": "String",
   "registrationDateTime": "String (timestamp)",
-  "systemLabels": ["string"],
-  "trustType": "string"
+  "systemLabels": ["String"],
+  "trustType": "String"
 }
 ```
 
