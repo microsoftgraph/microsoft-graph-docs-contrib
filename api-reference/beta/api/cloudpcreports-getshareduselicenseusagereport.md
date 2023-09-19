@@ -35,7 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 POST /deviceManagement/virtualEndpoint/reports/getSharedUseLicenseUsageReport
 ```
 
-> **Note:** The `getSharedUseLicenseUsageReport` API is deprecated. Going forward, use the `getFrontlineReport` API.
+>[!CAUTION] 
+>The `getSharedUseLicenseUsageReport` API is deprecated. Going forward, use the `getFrontlineReport` API.
 
 ## Request headers
 
