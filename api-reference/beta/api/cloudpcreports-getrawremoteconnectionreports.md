@@ -33,7 +33,6 @@ Get a Cloud PC's raw real-time remote connection report without any calculation,
 <Action Name="getRawRemoteConnectionReports" IsBound="true">
     <Parameter Name="bindingParameter" Type="Collection(microsoft.graph.cloudPcReports)"/>
     <Parameter Name="filter" Type="Edm.String"/>
-
     <Parameter Name="select" Type="Collection(String)"/>
     <Parameter Name="search" Type="Edm.String"/>
     <Parameter Name="groupBy" Type="Collection(String)"/>
