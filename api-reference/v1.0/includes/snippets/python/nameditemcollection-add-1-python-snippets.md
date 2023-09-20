@@ -14,7 +14,7 @@ request_body = AddPostRequestBody(
 	comment = "Comment for the named item",
 )
 
-result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.names.add.post(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.names.add.post(body = request_body)
 
 
 ```

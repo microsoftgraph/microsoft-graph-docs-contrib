@@ -14,7 +14,7 @@ request_body = DismissPostRequestBody(
 	]
 )
 
-await graph_client.identity_protection.risky_service_principals.dismiss.post(request_body = request_body)
+await graph_client.identity_protection.risky_service_principals.dismiss.post(body = request_body)
 
 
 ```

@@ -17,7 +17,7 @@ request_body = Printer(
 	),
 )
 
-result = await graph_client.print.printers.by_printer_id('printer-id').patch(request_body = request_body)
+result = await graph_client.print.printers.by_printer_id('printer-id').patch(body = request_body)
 
 
 ```

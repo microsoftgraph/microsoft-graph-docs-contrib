@@ -22,7 +22,7 @@ request_body = UnifiedRoleAssignmentScheduleRequest(
 	),
 )
 
-result = await graph_client.role_management.directory.role_assignment_schedule_requests.post(request_body = request_body)
+result = await graph_client.role_management.directory.role_assignment_schedule_requests.post(body = request_body)
 
 
 ```

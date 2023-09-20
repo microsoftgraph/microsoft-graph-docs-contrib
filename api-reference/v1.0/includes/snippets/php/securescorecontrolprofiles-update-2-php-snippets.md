@@ -12,8 +12,8 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new SecureScoreControlProfile();
 $vendorInformation = new SecurityVendorInformation();
 $vendorInformation->setProvider('SecureScore');
-$VendorInformation->setProviderVersion(null);
-$VendorInformation->setSubProvider(null);
+$vendorInformation->setProviderVersion(null);
+$vendorInformation->setSubProvider(null);
 $vendorInformation->setVendor('Microsoft');
 $requestBody->setVendorInformation($vendorInformation);
 $additionalData = [

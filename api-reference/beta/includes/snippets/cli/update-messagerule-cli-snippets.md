@@ -10,7 +10,7 @@ mgc-beta users mail-folders message-rules patch --user-id {user-id} --mail-folde
     "actions": {\
         "markImportance": "high"\
      }\
-} \
+}\
 '
 
 ```

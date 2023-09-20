@@ -29,7 +29,7 @@ request_body = DeviceManagementPartner(
 	]
 )
 
-result = await graph_client.device_management.device_management_partners.post(request_body = request_body)
+result = await graph_client.device_management.device_management_partners.post(body = request_body)
 
 
 ```

@@ -13,7 +13,7 @@ request_body = RemoveKeyPostRequestBody(
 	proof = "eyJ0eXAiOiJ...",
 )
 
-await graph_client.applications.by_application_id('application-id').remove_key.post(request_body = request_body)
+await graph_client.applications.by_application_id('application-id').remove_key.post(body = request_body)
 
 
 ```

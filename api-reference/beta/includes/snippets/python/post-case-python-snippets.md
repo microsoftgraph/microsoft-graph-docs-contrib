@@ -12,7 +12,7 @@ request_body = Case(
 	display_name = "My Case 1",
 )
 
-result = await graph_client.compliance.ediscovery.cases.post(request_body = request_body)
+result = await graph_client.compliance.ediscovery.cases.post(body = request_body)
 
 
 ```

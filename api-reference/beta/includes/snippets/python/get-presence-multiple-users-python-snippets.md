@@ -15,7 +15,7 @@ request_body = GetPresencesByUserIdPostRequestBody(
 	]
 )
 
-result = await graph_client.communications.get_presence_by_user_id.post(request_body = request_body)
+result = await graph_client.communications.get_presence_by_user_id.post(body = request_body)
 
 
 ```

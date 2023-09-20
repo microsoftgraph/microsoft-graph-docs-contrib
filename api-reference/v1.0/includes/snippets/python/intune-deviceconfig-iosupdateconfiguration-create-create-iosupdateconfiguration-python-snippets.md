@@ -21,7 +21,7 @@ request_body = IosUpdateConfiguration(
 	utc_time_offset_in_minutes = 6,
 )
 
-result = await graph_client.device_management.device_configurations.post(request_body = request_body)
+result = await graph_client.device_management.device_configurations.post(body = request_body)
 
 
 ```

@@ -13,7 +13,7 @@ request_body = InternalDomainFederation(
 	federated_idp_mfa_behavior = FederatedIdpMfaBehavior.AcceptIfMfaDoneByFederatedIdp,
 )
 
-result = await graph_client.domains.by_domain_id('domain-id').federation_configuration.by_federation_configuration_id('internalDomainFederation-id').patch(request_body = request_body)
+result = await graph_client.domains.by_domain_id('domain-id').federation_configuration.by_federation_configuration_id('internalDomainFederation-id').patch(body = request_body)
 
 
 ```
