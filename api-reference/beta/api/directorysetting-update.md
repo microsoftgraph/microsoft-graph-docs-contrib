@@ -67,7 +67,7 @@ In the request body, supply the values for relevant fields that should be update
 
 If successful, this method returns a `204 No Content` response code.
 
-## Example
+## Example 1
 ### Request
 Here is an example of the request.
 
@@ -120,6 +120,78 @@ Content-type: application/json
 
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-directorysetting-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+### Response
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Update directorysetting",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
+## Example 2
+### Request
+The following example shows how to update the Banned Password list using MS Graph Explorer.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_directorysetting"
+}-->
+
+```msgraph-interactive
+PATCH https://graph.microsoft.com/beta/Settings/e40f3033-9c35-4a1d-a1e1-5a8565a51193
+Content-type: application/json
+
+  {
+    "values": [
+        {
+            "name": "BannedPasswordCheckOnPremisesMode",
+            "value": "Audit"
+        },
+        {
+            "name": "EnableBannedPasswordCheckOnPremises",
+            "value": "True"
+        },
+        {
+            "name": "EnableBannedPasswordCheck",
+            "value": "True"
+        },
+        {
+            "name": "LockoutDurationInSeconds",
+            "value": "60"
+        },
+        {
+            "name": "LockoutThreshold",
+            "value": "10"
+        },
+        {
+            "name": "BannedPasswordList",
+            "value": "pwd1\tpwd2\tpwd3\tpwd4"
+        }
+    ]
+}
+
+```
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-directorysetting-powershell1-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
