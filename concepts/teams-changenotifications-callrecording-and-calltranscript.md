@@ -15,7 +15,7 @@ This article describes scenarios for the **transcript** and **recording** resour
 
 ## Subscribe to transcripts available at the tenant level
 
-To get change notifications for any transcript available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllTranscripts`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription is supported only for scheduled [onlineMeeting](/graph/api/resources/onlinemeeting). This subscription is not supported for channel meetings.
+To get change notifications for any transcript available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllTranscripts`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
 
 ### Permissions
 
@@ -49,7 +49,7 @@ Content-Type: application/json
 
 ## Subscribe to transcripts available for a particular online meeting
 
-To get change notifications for any transcript available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/transcripts`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription is supported only for scheduled [onlineMeeting](/graph/api/resources/onlinemeeting). This subscription is not supported for channel meetings.
+To get change notifications for any transcript available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/transcripts`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
 
 ### Permissions
 
@@ -83,7 +83,7 @@ Content-Type: application/json
 
 ## Subscribe to recordings available at the tenant level
 
-To get change notifications for any recording available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllRecordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription is supported only for scheduled [onlineMeeting](/graph/api/resources/onlinemeeting). This subscription is not supported for channel meetings.
+To get change notifications for any recording available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllRecordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
 
 ### Permissions
 
@@ -117,7 +117,7 @@ Content-Type: application/json
 
 ## Subscribe to recordings available for a particular online meeting
 
-To get change notifications for any recording available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/recordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription is supported only for scheduled [onlineMeeting](/graph/api/resources/onlinemeeting). This subscription is not supported for channel meetings.
+To get change notifications for any recording available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/recordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
 
 ### Permissions
 
