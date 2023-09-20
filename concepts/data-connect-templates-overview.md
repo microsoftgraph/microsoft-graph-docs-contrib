@@ -13,11 +13,14 @@ Collaboration and communication activities generate a massive amount of rich dat
 The Microsoft Graph Data Connect templates can help you realize possibilities with your Microsoft 365 data, and accelerate time to added value. Each template contains resources that are specific to different use cases and business scenarios. You can use these templates to help get started with:
 
 - Entity Sentiment Analysis
-  - Analyze the entities and sentiments therein from communications by integrating with Azure Cognitive Services.
+  - Extract entities from Outlook and Teams data. Then, analyze how users feel about those entities.
+  - Sets up Synapse Workspace, Apache Spark Pool, Azure Datalake Storage Account, and Azure Congitive Services resources.
 - Organizational Network Analysis
   - Identify collaboration and communication patterns that are key for organizations to achieve real business agility.
+  - Sets up Synapse Workspace, Apache Spark Pool, and Azure Datalake Storage Account resources.
 - Information Oversharing
   - Secure your business by identifying patterns of information oversharing and fraud in your Microsoft 365 data.
+  - Sets up Synapse Workspace, Apache Spark Pool, and Azure Datalake Storage Account resources.
 
 The templates help you quickly provision Azure resources and provide data pipelines and samples that you can use to realize value right away.
 
