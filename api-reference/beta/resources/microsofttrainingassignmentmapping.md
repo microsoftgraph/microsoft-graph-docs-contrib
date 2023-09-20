@@ -22,9 +22,7 @@ Inherits from [trainingSetting](../resources/trainingsetting.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |assignedTo|trainingAssignedTo collection|A user collection that specifies to whom the training should be assigned. Possible values are: `none`, `allUsers`, `clickedPayload`, `compromised`, `reportedPhish`, `readButNotClicked`, `didNothing`, `unknownFutureValue`. |
-|completionDateTime|DateTimeOffset|The completion date time of the training. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |settingType|trainingSettingType|Type of training setting. The possible values are: `microsoftCustom`, `microsoftManaged`, `noTraining`, `custom`, `unknownFutureValue`. Inherited from [trainingSetting](../resources/trainingsetting.md).|
-|trainingCompletionDuration|trainingCompletionDuration|The training completion duration that needs to be provided before scheduling the training. Possible values are: `week`, `fortnite`, `month`, `unknownFutureValue`.|
 
 ## Relationships
 

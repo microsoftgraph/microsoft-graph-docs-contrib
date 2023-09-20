@@ -15835,6 +15835,34 @@ items:
                     href: resources/attacksimulationoperation.md
                   - name: Get
                     href: api/attacksimulationoperation-get.md
+              - name: End User Notification
+                items:
+                  - name: endusernotification
+                    href: resources/endusernotification.md
+                  - name: List
+                    href: api/attacksimulationroot-list-endusernotifications.md
+                  - name: Get
+                    href: api/endusernotification-get.md
+                  - name: Get endusernotification detail
+                    href: api/endusernotificationdetail-get.md
+              - name: Landingpage
+                items:
+                  - name: landingpage
+                    href: resources/landingpage.md
+                  - name: List
+                    href: api/attacksimulationroot-list-landingpage.md
+                  - name: Get
+                    href: api/landingpage-get.md
+                  - name: Get landingpage detail
+                    href: api/landingpage-get.md
+              - name: LoginPage
+                items:
+                  - name: loginPage
+                    href: resources/loginPage.md
+                  - name: List
+                    href: api/attacksimulationroot-list-loginPage.md
+                  - name: Get
+                    href: api/loginPage-get.md
               - name: Payload
                 items:
                   - name: Payload
@@ -15845,6 +15873,16 @@ items:
                     href: api/payload-get.md
                   - name: Get payload detail
                     href: api/payloaddetail-get.md
+              - name: Training
+                items:
+                  - name: Training
+                    href: resources/training.md
+                  - name: List
+                    href: api/attacksimulationroot-list-trainings.md
+                  - name: Get
+                    href: api/training-get.md
+                  - name: Get training language detail
+                    href: api/traininglanguagedetail-get.md
               - name: Reports
                 items:
                   - name: Attack simulation reports

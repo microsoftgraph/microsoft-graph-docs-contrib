@@ -55,7 +55,7 @@ The following table shows the properties that are required when you create the s
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the attack simulation and training campaign.|
 |displayName|String|Display name of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
 |durationInDays|Int32|Simulation duration in days. Optional.|
-|endUserNotificationSetting|[endUserNotificationSetting](../resources/endusernotificationsetting.md)|End user notification setting detail.|
+|endUserNotificationSetting|[endUserNotificationSetting](../resources/endusernotificationsetting.md)|The end user notification setting for the attack simulation and training campaign.|
 |includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users targeted in the simulation.|
 |landingPage|[landingPage](../resources/landingpage.md)|The landing page associated with the attack simulation and training campaign.|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation and training campaign.|
@@ -65,7 +65,7 @@ The following table shows the properties that are required when you create the s
 |payload|[payload](../resources/payload.md)|The payload associated with the attack simulation and training campaign.|
 |payloadDeliveryPlatform|payloadDeliveryPlatform|Method of delivery of the phishing payload used in the attack simulation and training campaign. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |status|[simulationStatus](../resources/simulation.md#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
-|trainingSetting|[trainingSetting](../resources/trainingsetting.md)|Training setting detail.|
+|trainingSetting|[trainingSetting](../resources/trainingsetting.md)|The training setting for the attack simulation and training campaign.|
 
 ## Response
 

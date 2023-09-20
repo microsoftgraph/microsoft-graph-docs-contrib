@@ -64,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/trainings/{trainingId}
+GET https://graph.microsoft.com/beta/security/attackSimulation/trainings/21b2b7d1-11ae-a7a8-99c8-9029a4e70cc9
 ```
 
 ### Response
@@ -84,30 +84,40 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.training",
-    "id": "21b2b7d1-11ae-a7a8-99c8-9029a4e70cc9",
-    "displayName": "String",
-    "description": "String",
-    "durationInMinutes": "Integer",
-    "source": "String",
-    "type": "String",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/trainings/$entity",
+    "id": "db8175cd-bafe-433a-a823-a2d6dd6c5e6a",
+    "displayName": "Mass Market Phishing - Amazon Gift Card",
+    "description": "Mass Market Phishing - Amazon Gift Card",
+    "durationInMinutes": 3,
+    "source": "global",
+    "type": "unknown",
     "tags": [
-      "String"
+        "CredentialHarvesting",
+        "DriveByUrl",
+        "Compliance",
+        "Basic",
+        "Phishing"
     ],
-    "availabilityStatus": "String",
+    "availabilityStatus": "available",
     "supportedLocales": [
-      "String"
+        "tr",
+        "pl",
+        "fa",
+        "da",
+        "nl"
     ],
-    "hasEvaluation": "Boolean",
+    "hasEvaluation": false,
+    "createdDateTime": "2020-09-18T06:54:46.1930597Z",
+    "lastModifiedDateTime": "2023-03-28T12:01:33.3568194Z",
     "createdBy": {
-      "@odata.type": "microsoft.graph.emailIdentity"
+        "email": "yibsu",
+        "id": null,
+        "displayName": null
     },
-    "createdDateTime": "String (timestamp)",
     "lastModifiedBy": {
-      "@odata.type": "microsoft.graph.emailIdentity"
-    },
-    "lastModifiedDateTime": "String (timestamp)"
-  }
+        "email": "yibsu",
+        "id": null,
+        "displayName": null
+    }
 }
 ```

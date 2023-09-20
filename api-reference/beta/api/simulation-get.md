@@ -18,11 +18,11 @@ Get an attack simulation campaign for a tenant.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | AttackSimulation.Read.All                   |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | AttackSimulation.Read.All                   |
+| Permission type                        | Permissions (from least to most privileged)                            |
+|:---------------------------------------|:-----------------------------------------------------------------------|
+| Delegated (work or school account)     | AttackSimulation.Read.All, AttackSimulation.ReadWrite.All              |
+| Delegated (personal Microsoft account) | Not supported.                                                         |
+| Application                            | AttackSimulation.Read.All, AttackSimulation.ReadWrite.All              |
 
 ## HTTP request
 
@@ -286,6 +286,21 @@ Content-Type: application/json
 }
 ```
 
+### Example 4: Get training setting details
+
+The following example shows how to get training setting details for a simulation.
+
+#### Request
+
+The following is an example of a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_simulation_trainingSetting"
+}
+-->
+
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/trainingSetting
 ```
@@ -313,6 +328,20 @@ Content-Type: application/json
 }
 ```
 
+### Example 5: Get end user notification setting 
+
+The following example shows how to get end user notification setting details for a simulation.
+
+#### Request
+
+The following is an example of a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_simulation_endUserNotificationSetting"
+}
+-->
 ``` http
 GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/endUserNotificationSetting
 ```

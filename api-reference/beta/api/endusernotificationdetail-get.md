@@ -64,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/endUserNotifications/details/{endUserNotificationDetailId}
+GET https://graph.microsoft.com/beta/security/attackSimulation/endUserNotifications/details/1cdfcb49-1065-46a6-b1c3-672071e20a6b
 ```
 
 ### Response
