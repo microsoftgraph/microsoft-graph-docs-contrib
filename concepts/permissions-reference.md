@@ -2894,21 +2894,6 @@ _ThreatIntelligence.Read.All_: Get host reputation information, without a signed
 
 ---
 
-## Trusted certificate authority configuration permissions
-
-#### Delegated permissions
-
-|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
-|:----------------|:------------------|:-------------|:-----------------------|:--------------|
-|_AppCertTrustConfiguration.Read.All_| Read all trusted certificate authorities| Allows the app to read configuration of trusted certificate authorities for applications on behalf of the signed-in user. | Yes | Yes |
-|_AppCertTrustConfiguration.ReadWrite.All_| Manage all trusted certificate authorities| Allows the app to read and write configuration of trusted certificate authorities for applications on behalf of the signed-in user. | Yes | Yes |
-
-#### Application permissions
-
-None.
-
----
-
 ## Universal Print permissions
 
 #### Delegated permissions
