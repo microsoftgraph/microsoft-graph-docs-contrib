@@ -1,4 +1,4 @@
-ata---
+---
 title: "List signIns"
 description: "Describes the list method of the signIn resource (entity) from the Microsoft Graph API."
 ms.localizationpriority: medium
