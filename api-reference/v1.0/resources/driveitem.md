@@ -66,6 +66,10 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [Check out](../api/driveitem-checkout.md)                                    | `POST /drives/{driveId}/items/{itemId}/checkout`
 | [Extract sensitivity labels](../api/driveitem-extractsensitivitylabels.md)   | `POST /drive/items/{item-id}/extractSensitivityLabels` | Extract one or more sensitivity labels assigned to a drive item and update the metadata of a drive item with the latest details of the assigned label.
 | [Assign sensitivity label](../api/driveitem-assignsensitivitylabel.md)       | `POST /drive/items/{item-id}/assignSensitivityLabel` | Asynchronously assign a sensitivity label to a driveItem.
+| [Get retention label](../api/driveitem-getretentionlabel.md)                 | `GET /drives/{drive-id}/items/{id}/retentionLabel`                |
+| [Set retention label](../api/driveitem-setretentionlabel.md)                 | `PATCH /drives/{drive-id}/items/{id}/retentionLabel`              |
+| [Remove retention label](../api/driveitem-removeretentionlabel.md)           | `DELETE /drives/{drive-id}/items/{id}/retentionLabel`             |
+| [Lock or unlock record](../api/driveitem-lockorunlockrecord.md)              | `PATCH /drives/{drive-id}/items/{id}/retentionLabel`              |
 
 ## Properties
 
@@ -120,6 +124,7 @@ The eTag value is only modified when the folder's properties are changed, except
 | createdByUser      | [user][]                    | Identity of the user who created the item. Read-only.
 | lastModifiedByUser | [user][]                    | Identity of the user who last modified the item. Read-only.
 | listItem           | [listItem][]                | For drives in SharePoint, the associated document library list item. Read-only. Nullable.
+| retentionLabel     | [itemRetentionLabel][]      | Information about retention label and settings enforced on the **driveItem**. Read-write.
 | permissions        | [permission][] collection   | The set of permissions for the item. Read-only. Nullable.
 | subscriptions      | [subscription][] collection | The set of subscriptions on the item. Only supported on the root of a drive.
 | thumbnails         | [thumbnailSet][] collection | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
@@ -192,6 +197,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "analytics": {"@odata.type": "microsoft.graph.itemAnalytics"},
   "children": [{ "@odata.type": "microsoft.graph.driveItem" }],
   "createdByUser": { "@odata.type": "microsoft.graph.user" },
+  "itemRetentionLabel": [{ "@odata.type": "microsoft.graph.itemRetentionLabel" }],
   "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
   "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
@@ -237,6 +243,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 [itemActivity]: itemactivity.md
 [itemAnalytics]: itemanalytics.md
 [itemReference]: itemreference.md
+[itemRetentionLabel]: itemretentionlabel.md
 [geoCoordinates]: geocoordinates.md
 [listItem]: listitem.md
 [malware]: malware.md
