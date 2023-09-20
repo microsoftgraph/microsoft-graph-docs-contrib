@@ -54,6 +54,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a new [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object in the response body. 
 
+If no user flow attributes are assigned to the user flow, this method returns a `400 Bad Request` error code.
+
 ## Examples
 
 #### Request
