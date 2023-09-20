@@ -59,6 +59,10 @@ GET https://graph.microsoft.com/beta/planner/plans/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-plannerplan-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-plannerplan-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-plannerplan-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -77,6 +81,10 @@ GET https://graph.microsoft.com/beta/planner/plans/{id}
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-plannerplan-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-plannerplan-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -110,6 +118,11 @@ Content-type: application/json
     "containerId": "ebf3b108-5234-4e22-b93d-656d7dae5874",
     "type": "group"
   },
+  "sharedWithContainers": [
+    {
+      "@odata.type": "microsoft.graph.plannerSharedWithContainer"
+    }
+  ],
   "title": "title-value",
   "id": "xqQg5FS2LkCp935s-FIFm2QAFkHM"
 }

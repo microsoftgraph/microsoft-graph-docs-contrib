@@ -2,7 +2,7 @@
 title: "List memberOf"
 description: "Retrieve the connectorgroup the connector is a member of."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinrshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
@@ -60,6 +60,10 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 [!INCLUDE [sample-code](../includes/snippets/csharp/connector-get-memberof-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/connector-get-memberof-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/connector-get-memberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -78,6 +82,10 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/connector-get-memberof-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/connector-get-memberof-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

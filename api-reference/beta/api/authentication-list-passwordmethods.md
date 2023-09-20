@@ -2,7 +2,7 @@
 title: "List passwordMethods"
 description: "Retrieve a list of passwordauthenticationmethod objects."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "zhvolosh"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/me/authentication/passwordMethods
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-passwordmethods-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-passwordmethods-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-passwordmethods-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -107,6 +111,10 @@ GET https://graph.microsoft.com/beta/me/authentication/passwordMethods
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-passwordmethods-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-passwordmethods-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

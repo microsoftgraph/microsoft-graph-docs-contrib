@@ -44,6 +44,7 @@ This method supports some of the OData query parameters to help customize the re
 |:----------|:----------|
 | Authorization | Bearer {token}. Required. |
 | Content-type | application/json. Required. |
+| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
 In the request body, provide a JSON representation of a new [openShiftChangeRequest](../resources/openshiftchangerequest.md) object.

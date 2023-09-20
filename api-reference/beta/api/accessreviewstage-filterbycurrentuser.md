@@ -41,7 +41,7 @@ The following table shows the parameters that can be used with this function.
 |:---|:---|:---|
 |on|accessReviewStageFilterByCurrentUserOptions|Filters results based on the calling user. Allowed value is `reviewer`. This returns all accessReviewStage objects on the accessReviewInstance where the calling user is a reviewer. Required.|
 
-This function also supports the `$select`, `$filter`, `$orderBy`, `$skip` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This function also supports the `$select`, `$filter`, `$orderby`, `$skip` and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -73,6 +73,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/csharp/accessreviewstage-filterbycurrentuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/accessreviewstage-filterbycurrentuser-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accessreviewstage-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -89,8 +93,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/php/accessreviewstage-filterbycurrentuser-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/accessreviewstage-filterbycurrentuser-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/accessreviewstage-filterbycurrentuser-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -34,7 +34,7 @@ GET /tenantRelationships/delegatedAdminCustomers
 ```
 
 ## Optional query parameters
-This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select`, `$filter`, `$top`, `$orderby`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
 
 `$top` supports up to 300 objects.
 
@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminCustomers
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-delegatedadmincustomer-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-delegatedadmincustomer-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-delegatedadmincustomer-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -84,6 +88,14 @@ GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminCustomers
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-delegatedadmincustomer-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-delegatedadmincustomer-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-delegatedadmincustomer-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

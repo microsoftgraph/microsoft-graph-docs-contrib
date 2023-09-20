@@ -2,7 +2,7 @@
 title: "subscription resource type"
 description: "A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:"
 ms.localizationpriority: medium
-author: "jumasure"
+author: "keylimesoda"
 doc_type: resourcePageType
 ms.prod: "change-notifications"
 
@@ -16,11 +16,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
-A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph. 
+A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph.
 
-[!INCLUDE [change-notifications-supported-resources](../../../concepts/includes/change-notifications-supported-resources-flat.md)]
-
-For the possible resource path values for each supported resource, see [Use the Microsoft Graph API to get change notifications](webhooks.md). To learn how to use lifecycle notifications, see [Reduce missing subscriptions and change notifications](/graph/webhooks-lifecycle).
+For more information about subscriptions and change notifications, including resources that support change notifications, see [Set up notifications for changes in resource data](webhooks.md).
 
 ## Methods
 
@@ -47,7 +45,7 @@ For the possible resource path values for each supported resource, see [Use the 
 | id | String | Optional. Unique identifier for the subscription. Read-only. |
 | includeResourceData | Boolean | Optional. When set to `true`, change notifications [include resource data](/graph/webhooks-with-resource-data) (such as content of a chat message). |
 | latestSupportedTlsVersion | String | Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by **notificationUrl**, supports. The possible values are: `v1_0`, `v1_1`, `v1_2`, `v1_3`. </br></br>For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set [timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. </br></br>For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to `v1_2`. |
-| lifecycleNotificationUrl | String | Optional. The URL of the endpoint that receives lifecycle notifications, including `subscriptionRemoved`, `reauthorizationRequired`, and `missed` notifications. This URL must make use of the HTTPS protocol. |
+| lifecycleNotificationUrl | String | Required for Teams resources if the `expirationDateTime` value is more than 1 hour from now; optional otherwise. The URL of the endpoint that receives lifecycle notifications, including `subscriptionRemoved`, `reauthorizationRequired`, and `missed` notifications. This URL must make use of the HTTPS protocol. For more information, see [Reduce missing subscriptions and change notifications](/graph/webhooks-lifecycle).|
 | notificationContentType | String | Optional. Desired **content-type** for Microsoft Graph change notifications for supported resource types. The default content-type is `application/json`. |
 | notificationQueryOptions | String | Optional.  OData query options for specifying the value for the targeting resource. Clients receive notifications when the resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the **notificationQueryOptions** property. For example, when the print job is completed or when a print job resource `isFetchable` property value becomes `true` etc. <br/><br/> Supported only for Universal Print Service. For more information, see [Subscribe to change notifications from cloud printing APIs using Microsoft Graph](/graph/universal-print-webhook-notifications). |
 | notificationUrl | String | Required. The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol. Any query string parameter included in the notificationUrl property will be included in the HTTP POST request when Microsoft Graph sends the change notifications.|

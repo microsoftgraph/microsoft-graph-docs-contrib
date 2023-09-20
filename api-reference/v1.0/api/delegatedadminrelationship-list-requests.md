@@ -1,7 +1,7 @@
 ---
 title: "List requests"
 description: "Get a list of the delegatedAdminRelationshipRequest objects and their properties."
-author: "koravva"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: apiPageType
@@ -67,6 +67,10 @@ GET https://graph.microsoft.com/v1.0/tenantRelationships/delegatedAdminRelations
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-delegatedadminrelationshiprequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-delegatedadminrelationshiprequest-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-delegatedadminrelationshiprequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -81,6 +85,14 @@ GET https://graph.microsoft.com/v1.0/tenantRelationships/delegatedAdminRelations
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-delegatedadminrelationshiprequest-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-delegatedadminrelationshiprequest-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-delegatedadminrelationshiprequest-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

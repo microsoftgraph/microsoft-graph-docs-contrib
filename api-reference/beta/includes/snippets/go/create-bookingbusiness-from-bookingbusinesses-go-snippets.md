@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -41,7 +41,7 @@ requestBody.SetWebSiteUrl(&webSiteUrl)
 defaultCurrencyIso := "USD"
 requestBody.SetDefaultCurrencyIso(&defaultCurrencyIso) 
 
-result, err := graphClient.BookingBusinesses().Post(context.Background(), requestBody, nil)
+bookingBusinesses, err := graphClient.BookingBusinesses().Post(context.Background(), requestBody, nil)
 
 
 ```

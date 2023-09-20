@@ -6,11 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 
-$result = $graphServiceClient->administrativeUnitsById('administrativeUnit-id')->scopedRoleMembersById('scopedRoleMembership-id')->get();
-
+$result = $graphServiceClient->administrativeUnits()->byAdministrativeUnitId('administrativeUnit-id')->scopedRoleMembers()->byScopedRoleMembershipId('scopedRoleMembership-id')->get()->wait();
 
 ```

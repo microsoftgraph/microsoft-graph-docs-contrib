@@ -43,14 +43,14 @@ Depending on the RBAC provider and the permission type (delegated or application
 
 ## HTTP request
 
-To delete a unifiedRoleAssignmentMultiple for a Cloud PC provider:
+To delete a **unifiedRoleAssignmentMultiple** for a Cloud PC provider:
 <!-- { "blockType": "ignored" } -->
 
 ```http
 DELETE /roleManagement/cloudPC/roleAssignments/{id}
 ```
 
-To delete a unifiedRoleAssignmentMultiple for an Intune provider:
+To delete a **unifiedRoleAssignmentMultiple** for an Intune provider:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -75,6 +75,8 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ### Example 1: Delete a unifiedRoleAssignmentMultiple in an Intune provider
 
+The following example shows how to delete a [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) in an Intune provider.
+
 ### Request
 
 The following is an example of the request.
@@ -93,6 +95,10 @@ DELETE https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssi
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-unifiedroleassignmentmultiple-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-unifiedroleassignmentmultiple-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -115,6 +121,10 @@ DELETE https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssi
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-unifiedroleassignmentmultiple-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-unifiedroleassignmentmultiple-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -132,8 +142,11 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Delete a unifiedRoleAssignmentMultiple in a Cloud PC provider
 
+The following example shows how to delete a [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) in a Cloud PC provider.
+
 ### Request
 
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -147,6 +160,10 @@ DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/{
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-unifiedroleassignmentmultiple-cloudpc-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-unifiedroleassignmentmultiple-cloudpc-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -169,9 +186,15 @@ DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/{
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-unifiedroleassignmentmultiple-cloudpc-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-unifiedroleassignmentmultiple-cloudpc-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
+
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

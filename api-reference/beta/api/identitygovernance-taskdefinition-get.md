@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskD
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-get-taskdefinition-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-get-taskdefinition-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-get-taskdefinition-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -95,11 +99,15 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/taskD
 [!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-get-taskdefinition-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-get-taskdefinition-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

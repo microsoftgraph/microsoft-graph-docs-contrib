@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-5634-925f-022c42e20265/
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-sharedwithchannelteaminfo-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-sharedwithchannelteaminfo-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-sharedwithchannelteaminfo-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -88,6 +92,10 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-5634-925f-022c42e20265/
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-sharedwithchannelteaminfo-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-sharedwithchannelteaminfo-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

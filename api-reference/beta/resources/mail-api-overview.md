@@ -2,7 +2,7 @@
 title: "Use the Outlook mail REST API"
 description: "Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account."
 ms.localizationpriority: high
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: conceptualPageType
 ---
@@ -84,7 +84,5 @@ The mail API can open up new ways for you to engage with users:
 - [Outlook mail API overview](/graph/outlook-mail-concept-overview)
 - Drill down on the [methods](../resources/message.md#methods), [properties](../resources/message.md#properties), and [relationships](../resources/message.md#relationships) of the [message](../resources/message.md) and [mailFolder](../resources/mailfolder.md) resources.
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-
-Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/partners).
 
 

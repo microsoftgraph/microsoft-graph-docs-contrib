@@ -34,7 +34,7 @@ GET /tenantRelationships/managedTenants/cloudPcsOverview/{cloudPcOverviewId}
 ```
 
 ## Optional query parameters
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$apply`, `$count`, `$filter`, `$orderBy`, `$select`, `$skip`, and `$top`.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$apply`, `$count`, `$filter`, `$orderby`, `$select`, `$skip`, and `$top`.
 
 ## Request headers
 |Name|Description|
@@ -66,6 +66,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/cloudPcs
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpcoverview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-cloudpcoverview-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-cloudpcoverview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -84,6 +88,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/managedTenants/cloudPcs
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-cloudpcoverview-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-cloudpcoverview-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

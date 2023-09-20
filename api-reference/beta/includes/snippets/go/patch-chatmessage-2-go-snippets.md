@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -111,7 +111,6 @@ chatMessageMention1.SetMentioned(mentioned)
 mentions := []graphmodels.ChatMessageMentionable {
 	chatMessageMention,
 	chatMessageMention1,
-
 }
 requestBody.SetMentions(mentions)
 reactions := []graphmodels.ChatMessageReactionable {
@@ -123,7 +122,7 @@ messageHistory := []graphmodels.ChatMessageHistoryItemable {
 }
 requestBody.SetMessageHistory(messageHistory)
 
-result, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().ByMessageId("chatMessage-id").Patch(context.Background(), requestBody, nil)
+messages, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Messages().ByChatMessageId("chatMessage-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Send activity feed notifications to multiple users, in bulk. 
+Send activity feed notifications to multiple users, in bulk.
 
 For more details about sending notifications and the requirements for doing so, see
 [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
@@ -23,11 +23,13 @@ For more details about sending notifications and the requirements for doing so, 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-| :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | TeamsActivity.Send                          |
-| Delegated (personal Microsoft account) | Not Supported.                              |
-| Application                            | TeamsActivity.Send                          |
+| Permission type                        | Permissions (from least to most privileged)  |
+| :------------------------------------- | :------------------------------------------- |
+| Delegated (work or school account)     | TeamsActivity.Send                           |
+| Delegated (personal Microsoft account) | Not supported.                               |
+| Application                            | TeamsActivity.Send, TeamsActivity.Send.User  |
+
+>**Note:** The `TeamsActivity.Send.User` permission uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent). RSC permissions pertain to the individual recipients in the payload.
 
 ## HTTP request
 
@@ -130,6 +132,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/teamwork-sendactivitynotificationtorecipients-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/teamwork-sendactivitynotificationtorecipients-1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/teamwork-sendactivitynotificationtorecipients-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -148,6 +154,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/teamwork-sendactivitynotificationtorecipients-1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/teamwork-sendactivitynotificationtorecipients-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -219,6 +229,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/teamwork-sendactivitynotificationtorecipients-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/teamwork-sendactivitynotificationtorecipients-2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/teamwork-sendactivitynotificationtorecipients-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -237,6 +251,10 @@ Content-Type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/teamwork-sendactivitynotificationtorecipients-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/teamwork-sendactivitynotificationtorecipients-2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

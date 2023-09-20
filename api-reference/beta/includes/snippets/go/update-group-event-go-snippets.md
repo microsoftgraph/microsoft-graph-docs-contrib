@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -33,7 +33,7 @@ requestBody.SetReminderMinutesBeforeStart(&reminderMinutesBeforeStart)
 isReminderOn := true
 requestBody.SetIsReminderOn(&isReminderOn) 
 
-result, err := graphClient.Groups().ByGroupId("group-id").Events().ByEventId("event-id").Patch(context.Background(), requestBody, nil)
+events, err := graphClient.Groups().ByGroupId("group-id").Events().ByEventId("event-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

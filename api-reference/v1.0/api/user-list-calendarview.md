@@ -18,9 +18,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite    |
-|Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite    |
-|Application | Calendars.Read, Calendars.ReadWrite |
+|Delegated (work or school account) | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite    |
+|Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite    |
+|Application | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite |
 
 ## HTTP request
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=2020-01-01T19
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-get-calendarview-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/user-get-calendarview-e1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/user-get-calendarview-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -106,6 +110,10 @@ GET https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=2020-01-01T19
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/user-get-calendarview-e1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/user-get-calendarview-e1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

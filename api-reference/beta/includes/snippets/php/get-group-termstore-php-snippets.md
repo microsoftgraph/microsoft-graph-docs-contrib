@@ -6,16 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new GroupRequestBuilderGetRequestConfiguration();
-$queryParameters = GroupRequestBuilderGetRequestConfiguration::createQueryParameters();
+$requestConfiguration = new GroupItemRequestBuilderGetRequestConfiguration();
+$queryParameters = GroupItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["*","parentSiteId"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->sitesById('site-id')->termStore()->groupsById('group-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->sites()->bySiteId('site-id')->termStore()->groups()->byGroupId('group-id')->get($requestConfiguration)->wait();
 
 ```

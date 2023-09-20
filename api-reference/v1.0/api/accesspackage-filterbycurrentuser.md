@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/csharp/accesspackage-filterbycurrentuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/accesspackage-filterbycurrentuser-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accesspackage-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -86,8 +90,8 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/php/accesspackage-filterbycurrentuser-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/accesspackage-filterbycurrentuser-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/accesspackage-filterbycurrentuser-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

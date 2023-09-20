@@ -1,7 +1,7 @@
 ---
 title: "List groupLifecyclePolicies"
 description: "List all the groupLifecyclePolicies."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/beta/groupLifecyclePolicies
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-grouplifecyclepolicy-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-grouplifecyclepolicy-2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-grouplifecyclepolicy-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -88,6 +92,10 @@ GET https://graph.microsoft.com/beta/groupLifecyclePolicies
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-grouplifecyclepolicy-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-grouplifecyclepolicy-2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

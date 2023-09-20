@@ -1,7 +1,7 @@
 ---
 title: "Delete mailFolder"
 description: "Delete the specified mailFolder or mailSearchFolder."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -63,6 +63,10 @@ DELETE https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-mailfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-mailfolder-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-mailfolder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -81,6 +85,10 @@ DELETE https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-mailfolder-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-mailfolder-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

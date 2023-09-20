@@ -2,7 +2,7 @@
 title: "reportRoot: getAzureADApplicationSignInSummary"
 description: "Retrieve the properties and relationships of an applicationSigninSummary object."
 ms.localizationpriority: medium
-author: "besiler"
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-applicationsigninsummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-applicationsigninsummary-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-applicationsigninsummary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -81,8 +85,8 @@ GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(
 [!INCLUDE [sample-code](../includes/snippets/php/get-applicationsigninsummary-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-applicationsigninsummary-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-applicationsigninsummary-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

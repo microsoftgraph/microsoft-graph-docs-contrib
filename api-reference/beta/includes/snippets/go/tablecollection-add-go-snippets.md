@@ -4,24 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphmodels "github.com/microsoftgraph/msgraph-beta-sdk-go/Drives/Item/Items/Item/Workbook/Tables/Add"
+	  graphdrives "github.com/microsoftgraph/msgraph-beta-sdk-go/drives"
 	  //other-imports
 )
 
 graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphmodels.NewAddPostRequestBody()
+requestBody := graphdrives.NewAddPostRequestBody()
 address := "Sheet1!A1:D5"
 requestBody.SetAddress(&address) 
 hasHeaders := true
 requestBody.SetHasHeaders(&hasHeaders) 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().Tables().Add().Post(context.Background(), requestBody, nil)
+add, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Tables().Add().Post(context.Background(), requestBody, nil)
 
 
 ```

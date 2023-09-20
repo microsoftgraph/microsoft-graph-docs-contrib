@@ -2,7 +2,7 @@
 title: "Remove homeRealmDiscoveryPolicy"
 description: "Remove a homeRealmDiscoveryPolicy from a servicePrincipal."
 ms.localizationpriority: medium
-author: "hpsin"
+author: "nickludwig"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
@@ -17,6 +17,7 @@ Remove a [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) fr
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Policy.Read.All and Application.ReadWrite.All, Policy.ReadWrite.ApplicationConfiguration and Application.ReadWrite.All |
@@ -69,6 +70,10 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/homeRealmDiscover
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-homerealmdiscoverypolicy-from-serviceprincipal-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-homerealmdiscoverypolicy-from-serviceprincipal-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-homerealmdiscoverypolicy-from-serviceprincipal-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -87,6 +92,10 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/homeRealmDiscover
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-homerealmdiscoverypolicy-from-serviceprincipal-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-homerealmdiscoverypolicy-from-serviceprincipal-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

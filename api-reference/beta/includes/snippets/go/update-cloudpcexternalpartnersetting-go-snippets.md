@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -19,7 +19,7 @@ requestBody := graphmodels.NewCloudPcExternalPartnerSetting()
 enableConnection := true
 requestBody.SetEnableConnection(&enableConnection) 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().ExternalPartnerSettings().ByExternalPartnerSettingId("cloudPcExternalPartnerSetting-id").Patch(context.Background(), requestBody, nil)
+externalPartnerSettings, err := graphClient.DeviceManagement().VirtualEndpoint().ExternalPartnerSettings().ByCloudPcExternalPartnerSettingId("cloudPcExternalPartnerSetting-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

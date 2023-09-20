@@ -39,6 +39,7 @@ POST /teams/{teamId}/schedule/share
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json. Required.  |
+| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
 
@@ -52,7 +53,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
 
 ## Example
 
@@ -81,6 +82,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-share-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/schedule-share-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/schedule-share-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -101,6 +106,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/schedule-share-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/schedule-share-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -113,7 +122,7 @@ The following is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 204 No content
+HTTP/1.1 200 OK
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -130,3 +139,6 @@ HTTP/1.1 204 No content
 }
 -->
 
+## See also
+
+[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

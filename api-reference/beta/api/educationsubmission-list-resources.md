@@ -36,7 +36,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 
 ## Optional query parameters
 
-This method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData query parameters to help customize the response.For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData query parameters to help customize the response.For general information, see [OData query parameters](/graph/query-parameters).
 
 
 ## Request headers
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/sub
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-resources-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-resources-2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-resources-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -92,6 +96,10 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/sub
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-resources-2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-resources-2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

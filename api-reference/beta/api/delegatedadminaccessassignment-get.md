@@ -1,7 +1,7 @@
 ---
 title: "Get delegatedAdminAccessAssignment"
 description: "Read the properties of a delegatedAdminAccessAssignment object."
-author: "adtangir"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: apiPageType
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a [delegatedAdmi
 <!-- {
   "blockType": "request",
   "name": "get_delegatedadminaccessassignment",
-  "sampleKeys": ["72a7ae7e-4887-4e34-9755-2e1e9b26b943-63f017cb-9e0d-4f14-94bd-4871902b3409", "a9d6cf90-083a-47dc-ace2-1da98be3f344"]
+  "sampleKeys": ["72a7ae7e-4887-4e34-9755-2e1e9b26b943-63f017cb-9e0d-4f14-94bd-4871902b3409", "da9d6cf90-083a-47dc-ace2-1da98be3f344"]
 }
 -->
 ``` http
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelations
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-delegatedadminaccessassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-delegatedadminaccessassignment-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -81,6 +85,14 @@ GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelations
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-delegatedadminaccessassignment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-delegatedadminaccessassignment-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-delegatedadminaccessassignment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

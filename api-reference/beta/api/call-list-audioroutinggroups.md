@@ -1,7 +1,7 @@
 ---
 title: "List audio routing groups"
 description: "Retrieve a list of audioRoutingGroup objects."
-author: "rahulva-msft"
+author: "hanknguyen"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -10,8 +10,6 @@ doc_type: apiPageType
 # List audio routing groups
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of **audioRoutingGroup** objects.
 
@@ -65,6 +63,10 @@ GET https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroup
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-audioroutinggroups-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-audioroutinggroups-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-audioroutinggroups-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -83,6 +85,10 @@ GET https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroup
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-audioroutinggroups-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-audioroutinggroups-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -134,5 +140,3 @@ Content-Length: 302
   ]
 }
 -->
-
-

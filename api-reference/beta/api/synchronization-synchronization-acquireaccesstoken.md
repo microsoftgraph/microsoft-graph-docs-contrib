@@ -7,7 +7,7 @@ ms.prod: "applications"
 doc_type: apiPageType
 ---
 
-# acquireAccessToken
+# synchronization: acquireAccessToken
 Namespace: microsoft.graph
 
 Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.
@@ -82,6 +82,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/synchronization-acquireaccesstoken-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/synchronization-acquireaccesstoken-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/synchronization-acquireaccesstoken-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -102,10 +106,13 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/synchronization-acquireaccesstoken-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/synchronization-acquireaccesstoken-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

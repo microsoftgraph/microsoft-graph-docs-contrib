@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -19,7 +19,7 @@ requestBody := graphmodels.NewAuthorizationPolicy()
 allowEmailVerifiedUsersToJoinOrganization := false
 requestBody.SetAllowEmailVerifiedUsersToJoinOrganization(&allowEmailVerifiedUsersToJoinOrganization) 
 
-result, err := graphClient.Policies().AuthorizationPolicy().Patch(context.Background(), requestBody, nil)
+authorizationPolicy, err := graphClient.Policies().AuthorizationPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

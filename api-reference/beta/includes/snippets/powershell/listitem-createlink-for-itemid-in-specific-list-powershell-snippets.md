@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Sites
+Import-Module Microsoft.Graph.Beta.Sites
 
 $params = @{
 	type = "view"
@@ -19,6 +19,6 @@ $params = @{
 	retainInheritedPermissions = $false
 }
 
-New-MgSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
+New-MgBetaSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
 
 ```

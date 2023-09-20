@@ -6,17 +6,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new ListRequestBuilderGetRequestConfiguration();
-$queryParameters = ListRequestBuilderGetRequestConfiguration::createQueryParameters();
+$requestConfiguration = new ListItemRequestBuilderGetRequestConfiguration();
+$queryParameters = ListItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","name","lastModifiedDateTime"];
 $queryParameters->expand = ["columns(select=name,description)","items",")"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->sitesById('site-id')->listsById('list-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->sites()->bySiteId('site-id')->lists()->byListId('list-id')->get($requestConfiguration)->wait();
 
 ```

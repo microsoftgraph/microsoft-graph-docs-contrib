@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	subject = $null
@@ -17,7 +17,7 @@ $params = @{
 			id = "74d20c7f34aa4a7fb74e2b30004247c5"
 			contentType = "application/vnd.microsoft.card.thumbnail"
 			contentUrl = $null
-			content = "{
+			content = '{
   "title": "This is an example of posting a card",
   "subtitle": "<h3>This is the subtitle</h3>",
   "text": "Here is some body text. <br>\r\nAnd a <a href=\"http://microsoft.com/\">hyperlink</a>. <br>\r\nAnd below that is some buttons:",
@@ -30,13 +30,13 @@ $params = @{
       "value": "login"
     }
   ]
-}"
+}'
 			name = $null
 			thumbnailUrl = $null
 		}
 	)
 }
 
-New-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```

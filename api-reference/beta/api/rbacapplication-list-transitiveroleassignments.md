@@ -51,7 +51,7 @@ This method supports the `$count`, `$filter` (`eq`), and `$select` OData query p
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token} Required. |
-| ConsistencyLevel | eventual. This header, `$count`, and `$filter` are required. For more information about the use of **ConsistencyLevel**, `$count`, and `$filter`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries). |
+| ConsistencyLevel | eventual. This header, `$count`, and `$filter` are required. For more information about the use of **ConsistencyLevel**, `$count`, and `$filter`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries). |
 
 ## Request body
 
@@ -80,7 +80,7 @@ For the examples in this section, consider the following role assignment scenari
 
 #### Request
 
-The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` and `$filter` query parameters. For more information about the use of **ConsistencyLevel**, `$count`, and `$filter`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` and `$filter` query parameters. For more information about the use of **ConsistencyLevel**, `$count`, and `$filter`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 
 # [HTTP](#tab/http)
@@ -96,6 +96,10 @@ ConsistencyLevel: eventual
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-all-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedroleassignment-all-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -116,6 +120,10 @@ ConsistencyLevel: eventual
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignment-all-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-unifiedroleassignment-all-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -166,7 +174,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` and `$filter` query parameters. For more information about the use of **ConsistencyLevel**, `$count`, and `$filter`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` and `$filter` query parameters. For more information about the use of **ConsistencyLevel**, `$count`, and `$filter`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 
 # [HTTP](#tab/http)
@@ -182,6 +190,10 @@ ConsistencyLevel: eventual
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-transitive-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedroleassignment-transitive-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -202,6 +214,10 @@ ConsistencyLevel: eventual
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignment-transitive-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-unifiedroleassignment-transitive-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -246,7 +262,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` and `$filter` query parameters. For more information about the use of **ConsistencyLevel**, `$count`, and `$filter`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` and `$filter` query parameters. For more information about the use of **ConsistencyLevel**, `$count`, and `$filter`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 
 # [HTTP](#tab/http)
@@ -262,6 +278,10 @@ ConsistencyLevel: eventual
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-tenantscoped-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedroleassignment-tenantscoped-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -282,6 +302,10 @@ ConsistencyLevel: eventual
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignment-tenantscoped-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-unifiedroleassignment-tenantscoped-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -25,6 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | IdentityRiskyUser.ReadWrite.All |
 
+[!INCLUDE [rbac-identity-protection-apis-write](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-write.md)]
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -69,6 +71,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/confirm-riskyuser-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/confirm-riskyuser-1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/confirm-riskyuser-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -83,6 +89,10 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/confirm-riskyuser-1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/confirm-riskyuser-1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

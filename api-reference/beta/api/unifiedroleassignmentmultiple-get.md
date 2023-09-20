@@ -99,6 +99,10 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentmultiple-intune-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedroleassignmentmultiple-intune-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleassignmentmultiple-intune-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -117,6 +121,10 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignmentmultiple-intune-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-unifiedroleassignmentmultiple-intune-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -168,6 +176,10 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentmultiple-in-intune-provider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedroleassignmentmultiple-in-intune-provider-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleassignmentmultiple-in-intune-provider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -186,6 +198,10 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignmentmultiple-in-intune-provider-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-unifiedroleassignmentmultiple-in-intune-provider-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -250,6 +266,10 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-with-expand-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedroleassignment-with-expand-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleassignment-with-expand-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -268,6 +288,10 @@ GET https://graph.microsoft.com/beta/roleManagement/deviceManagement/roleAssignm
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignment-with-expand-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-unifiedroleassignment-with-expand-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -351,6 +375,10 @@ GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/dbe9
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentmultiple-cloud-pc-provider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedroleassignmentmultiple-cloud-pc-provider-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleassignmentmultiple-cloud-pc-provider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -369,6 +397,10 @@ GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/dbe9
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignmentmultiple-cloud-pc-provider-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-unifiedroleassignmentmultiple-cloud-pc-provider-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -425,6 +457,10 @@ GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/dbe9
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-cloud-pc-provider-expand-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedroleassignment-cloud-pc-provider-expand-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-unifiedroleassignment-cloud-pc-provider-expand-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -443,6 +479,10 @@ GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/dbe9
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedroleassignment-cloud-pc-provider-expand-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-unifiedroleassignment-cloud-pc-provider-expand-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

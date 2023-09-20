@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -19,7 +19,7 @@ requestBody := graphmodels.NewPersonAnnotation()
 allowedAudiences := graphmodels.ORGANIZATION_ALLOWEDAUDIENCES 
 requestBody.SetAllowedAudiences(&allowedAudiences) 
 
-result, err := graphClient.Users().ByUserId("user-id").Profile().Notes().ByNoteId("personAnnotation-id").Patch(context.Background(), requestBody, nil)
+notes, err := graphClient.Users().ByUserId("user-id").Profile().Notes().ByPersonAnnotationId("personAnnotation-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

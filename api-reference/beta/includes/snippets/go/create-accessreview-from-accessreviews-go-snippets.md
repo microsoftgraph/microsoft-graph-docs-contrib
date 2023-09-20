@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  "time"
@@ -45,7 +45,6 @@ accessReviewReviewer1.SetId(&id)
 reviewers := []graphmodels.AccessReviewReviewerable {
 	accessReviewReviewer,
 	accessReviewReviewer1,
-
 }
 requestBody.SetReviewers(reviewers)
 settings := graphmodels.NewAccessReviewSettings()
@@ -79,7 +78,7 @@ autoReviewSettings.SetNotReviewedResult(&notReviewedResult)
 settings.SetAutoReviewSettings(autoReviewSettings)
 requestBody.SetSettings(settings)
 
-result, err := graphClient.AccessReviews().Post(context.Background(), requestBody, nil)
+accessReviews, err := graphClient.AccessReviews().Post(context.Background(), requestBody, nil)
 
 
 ```

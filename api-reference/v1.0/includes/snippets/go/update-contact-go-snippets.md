@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  "time"
@@ -30,7 +30,7 @@ requestBody.SetHomeAddress(homeAddress)
 birthday , err := time.Parse(time.RFC3339, "1974-07-22")
 requestBody.SetBirthday(&birthday) 
 
-result, err := graphClient.Me().Contacts().ByContactId("contact-id").Patch(context.Background(), requestBody, nil)
+contacts, err := graphClient.Me().Contacts().ByContactId("contact-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -3,7 +3,7 @@ title: "List identityUserFlowAttributes"
 description: "Retrieve a list of identityUserFlowAttribute objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "jkdouglas"
+author: "nanguil"
 ms.prod: "identity-and-sign-in"
 ---
 
@@ -27,8 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 The work or school account needs to belong to one of the following roles:
 
-* Global administrator
-* External Identity User Flow Attribute administrator
+* Global Administrator
+* External Identity User Flow Attribute Administrator
 
 ## HTTP request
 
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/identity/userFlowAttributes
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-userflowattributes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-userflowattributes-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-userflowattributes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -92,6 +96,10 @@ GET https://graph.microsoft.com/beta/identity/userFlowAttributes
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-userflowattributes-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-userflowattributes-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

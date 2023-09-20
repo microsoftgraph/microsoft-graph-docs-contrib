@@ -34,18 +34,18 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
 
 ## Response
 
-If successful, this method returns `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns `200 OK` response code. It doesn't return anything in the response body.
 
 ## Example
-Here is an example of how to call this API.
+Here's an example of how to call this API.
 ##### Request
-Here is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -58,6 +58,10 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|na
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablesort-clear-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/tablesort-clear-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -76,10 +80,14 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|na
 [!INCLUDE [sample-code](../includes/snippets/php/tablesort-clear-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/tablesort-clear-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
-Here is an example of the response. 
+Here's an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true

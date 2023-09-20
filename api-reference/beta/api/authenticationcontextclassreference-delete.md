@@ -1,7 +1,7 @@
 ---
 title: "Delete authenticationContextClassReference"
 description: "Delete an authenticationContextClassReference object."
-author: "bakerCaleb"
+author: "swetha-rai"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -53,7 +53,8 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_authenticationcontextclassreference"
+  "name": "delete_authenticationcontextclassreference",
+  "sampleKeys": ["c1"]
 }
 -->
 ``` http
@@ -62,6 +63,10 @@ DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/authenticatio
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-authenticationcontextclassreference-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-authenticationcontextclassreference-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -82,6 +87,10 @@ DELETE https://graph.microsoft.com/beta/identity/conditionalAccess/authenticatio
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-authenticationcontextclassreference-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-authenticationcontextclassreference-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

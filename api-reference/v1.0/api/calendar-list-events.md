@@ -28,7 +28,7 @@ Depending on the type of calendar that the events are in and the permission type
 
 | Calendar | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
-| user calendar | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite | Calendars.Read, Calendars.ReadWrite |
+| user calendar | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite |
 | group calendar | Group.Read.All, Group.ReadWrite.All | Not supported. | Not supported. |
 
 ## HTTP request
@@ -86,6 +86,10 @@ GET https://graph.microsoft.com/v1.0/me/calendar/events
 [!INCLUDE [sample-code](../includes/snippets/csharp/listingcalendarevents-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/listingcalendarevents-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/listingcalendarevents-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -100,6 +104,14 @@ GET https://graph.microsoft.com/v1.0/me/calendar/events
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/listingcalendarevents-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/listingcalendarevents-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/listingcalendarevents-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -157,6 +169,10 @@ GET https://graph.microsoft.com/v1.0/me/calendar/events?$filter=startsWith(subje
 [!INCLUDE [sample-code](../includes/snippets/csharp/calendar-list-events-filteronsubject-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/calendar-list-events-filteronsubject-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/calendar-list-events-filteronsubject-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -171,6 +187,14 @@ GET https://graph.microsoft.com/v1.0/me/calendar/events?$filter=startsWith(subje
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/calendar-list-events-filteronsubject-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/calendar-list-events-filteronsubject-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/calendar-list-events-filteronsubject-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

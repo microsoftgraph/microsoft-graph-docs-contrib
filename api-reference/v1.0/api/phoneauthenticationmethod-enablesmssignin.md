@@ -2,7 +2,7 @@
 title: "phoneAuthenticationMethod: enableSmsSignIn"
 description: "Enable SMS sign-in for a mobile phone number registered to a user."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "luc-msft"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -92,6 +92,10 @@ POST https://graph.microsoft.com/v1.0/me/authentication/phoneMethods/3179e48a-75
 [!INCLUDE [sample-code](../includes/snippets/csharp/phoneauthenticationmethod-enablesmssignin-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/phoneauthenticationmethod-enablesmssignin-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/phoneauthenticationmethod-enablesmssignin-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -110,6 +114,10 @@ POST https://graph.microsoft.com/v1.0/me/authentication/phoneMethods/3179e48a-75
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/phoneauthenticationmethod-enablesmssignin-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/phoneauthenticationmethod-enablesmssignin-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

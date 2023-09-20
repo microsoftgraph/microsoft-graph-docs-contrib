@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Devices.CloudPrint
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
-Get-MgPrintService -PrintServiceId $printServiceId
+Get-MgBetaPrintService -PrintServiceId $printServiceId
 
 ```

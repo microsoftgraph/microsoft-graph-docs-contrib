@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Search
+Import-Module Microsoft.Graph.Beta.Search
 
 $params = @{
 	baseType = "microsoft.graph.externalItem"
@@ -33,6 +33,6 @@ $params = @{
 	)
 }
 
-Update-MgExternalConnectionSchema -ExternalConnectionId $externalConnectionId -BodyParameter $params
+Update-MgBetaExternalConnectionSchema -ExternalConnectionId $externalConnectionId -BodyParameter $params
 
 ```

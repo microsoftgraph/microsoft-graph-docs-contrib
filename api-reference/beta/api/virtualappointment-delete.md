@@ -7,14 +7,14 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Delete virtualAppointment
+# Delete virtualAppointment (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-  > The Virtual appointment resource and supporting methods are deprecated and will stop returning data on May 31, 2023.
+> The **virtualAppointment** resource and supporting methods are deprecated and will stop returning data on June 30, 2023. We recommend that you update existing apps that use this API to use the new [Get join link](../api/virtualappointment-getvirtualappointmentjoinweburl.md) function.
 
 Delete a [virtualAppointment](../resources/virtualappointment.md) object.
 
@@ -67,7 +67,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/me/onlineMeeting/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment
+DELETE https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/virtualAppointment
 ```
 
 # [Java](#tab/java)

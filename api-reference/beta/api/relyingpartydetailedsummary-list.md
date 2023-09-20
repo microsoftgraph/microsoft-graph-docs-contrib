@@ -2,7 +2,7 @@
 title: "List relyingPartyDetailedSummary"
 description: "Retrieve a list of relyingPartyDetailedSummary objects."
 ms.localizationpriority: medium
-author: "besiler"
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
 doc_type: "apiPageType"
 ---
@@ -82,6 +82,10 @@ GET https://graph.microsoft.com/beta/reports/getRelyingPartyDetailedSummary(peri
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-relyingpartydetailedsummary-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-relyingpartydetailedsummary-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-relyingpartydetailedsummary-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -98,8 +102,8 @@ GET https://graph.microsoft.com/beta/reports/getRelyingPartyDetailedSummary(peri
 [!INCLUDE [sample-code](../includes/snippets/php/get-relyingpartydetailedsummary-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-relyingpartydetailedsummary-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-relyingpartydetailedsummary-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

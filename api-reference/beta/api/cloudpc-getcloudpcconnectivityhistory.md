@@ -44,7 +44,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs/{id}/getCloudPcConnectivityHistor
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcConnec
 
 ### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 
 # [HTTP](#tab/http)
@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcgetcloudpcconnectivityhistory-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcgetcloudpcconnectivityhistory-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -87,11 +91,19 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcgetcloudpcconnectivityhistory-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcgetcloudpcconnectivityhistory-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/cloudpcgetcloudpcconnectivityhistory-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

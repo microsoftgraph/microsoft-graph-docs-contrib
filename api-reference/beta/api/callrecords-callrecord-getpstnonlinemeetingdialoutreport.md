@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnOnlineMee
 [!INCLUDE [sample-code](../includes/snippets/csharp/callrecordthisgetpstnonlinemeetingdialoutreport-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/callrecordthisgetpstnonlinemeetingdialoutreport-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/callrecordthisgetpstnonlinemeetingdialoutreport-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -109,6 +113,10 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnOnlineMee
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/callrecordthisgetpstnonlinemeetingdialoutreport-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/callrecordthisgetpstnonlinemeetingdialoutreport-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -2,7 +2,7 @@
 title: "Get publishedResource"
 description: "Retrieve the properties and relationships of a [publishedResource](../resources/publishedresource.md) object."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinrshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
@@ -71,6 +71,10 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/p
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-publishedresource-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-publishedresource-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-publishedresource-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -89,6 +93,10 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning/p
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-publishedresource-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-publishedresource-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

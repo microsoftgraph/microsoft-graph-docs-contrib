@@ -87,6 +87,10 @@ GET https://graph.microsoft.com/beta/planner/plans/-W4K7hIak0WlAwgJCn1sEWQABgjH/
 [!INCLUDE [sample-code](../includes/snippets/csharp/plannerbucketthisdelta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/plannerbucketthisdelta-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/plannerbucketthisdelta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -101,6 +105,10 @@ GET https://graph.microsoft.com/beta/planner/plans/-W4K7hIak0WlAwgJCn1sEWQABgjH/
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/plannerbucketthisdelta-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/plannerbucketthisdelta-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

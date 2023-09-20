@@ -33,7 +33,9 @@ Retrieve a list of participant objects in the call.
 GET /app/calls/{id}/participants
 GET /communications/calls/{id}/participants
 ```
-> **Note:** The `/app` path is deprecated. Going forward, use the `/communications` path.
+> **Notes:**
+> - The `/app` path is deprecated. Going forward, use the `/communications` path.
+> - This request does not support peer-to-peer calls.
 
 ## Optional query parameters
 
@@ -71,6 +73,10 @@ GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-participants-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-participants-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-participants-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -89,6 +95,10 @@ GET https://graph.microsoft.com/beta/communications/calls/7531d31f-d10d-44de-802
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-participants-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-participants-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

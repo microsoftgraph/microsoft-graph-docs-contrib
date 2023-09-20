@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 [!INCLUDE [sample-code](../includes/snippets/csharp/unifiedroleeligibilityscheduleinstance-filterbycurrentuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/unifiedroleeligibilityscheduleinstance-filterbycurrentuser-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/unifiedroleeligibilityscheduleinstance-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -90,8 +94,8 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleEligibilitySch
 [!INCLUDE [sample-code](../includes/snippets/php/unifiedroleeligibilityscheduleinstance-filterbycurrentuser-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/unifiedroleeligibilityscheduleinstance-filterbycurrentuser-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/unifiedroleeligibilityscheduleinstance-filterbycurrentuser-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

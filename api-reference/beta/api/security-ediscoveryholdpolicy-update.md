@@ -75,6 +75,10 @@ PATCH https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-ediscoveryholdpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-ediscoveryholdpolicy-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-ediscoveryholdpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -89,6 +93,10 @@ PATCH https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-4
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-ediscoveryholdpolicy-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-ediscoveryholdpolicy-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

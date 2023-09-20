@@ -3,7 +3,7 @@ title: "Get identityUserFlowAttribute"
 description: "Retrieve the properties and relationships of an identityUserFlowAttribute object."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "jkdouglas"
+author: "nanguil"
 ms.prod: "identity-and-sign-in"
 ---
 
@@ -27,8 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 The work or school account needs to belong to one of the following roles:
 
-* Global administrator
-* External Identity User Flow Attribute administrator
+* Global Administrator
+* External Identity User Flow Attribute Administrator
 
 ## HTTP request
 
@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a JSON representation of the [identityUserFlowAttribute](../resources/identityuserflowattribute.md) in the response body.
+If successful, this method returns a `200 OK` response code and a [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object in the response body.
 
 ## Examples
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/identity/userFlowAttributes/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-userflowattributes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-userflowattributes-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-userflowattributes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -90,6 +94,10 @@ GET https://graph.microsoft.com/beta/identity/userFlowAttributes/{id}
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-userflowattributes-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-userflowattributes-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

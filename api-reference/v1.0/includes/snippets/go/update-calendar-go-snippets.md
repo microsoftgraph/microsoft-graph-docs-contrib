@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
@@ -19,7 +19,7 @@ requestBody := graphmodels.NewCalendar()
 name := "Social events"
 requestBody.SetName(&name) 
 
-result, err := graphClient.Me().Calendar().Patch(context.Background(), requestBody, nil)
+calendar, err := graphClient.Me().Calendar().Patch(context.Background(), requestBody, nil)
 
 
 ```

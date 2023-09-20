@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /sites/{sitesId}/pages/{sitePageId}/canvasLayout/verticalSection
+GET /sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/verticalSection
 ```
 
 ## Optional query parameters
@@ -61,43 +61,11 @@ If successful, this method returns a `200 OK` response code and a [verticalSecti
 
 The following is an example of a request.
 
+<!-- { "blockType": "ignored" } -->
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_verticalsection_e1"
-}
--->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/canvasLayout/verticalSection
+```http
+GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/verticalSection
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-verticalsection-e1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-verticalsection-e1-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-verticalsection-e1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-verticalsection-e1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-verticalsection-e1-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-verticalsection-e1-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -117,10 +85,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.verticalSection",
-    "emphasis": "neutral"
-  }
+  "@odata.type": "#microsoft.graph.verticalSection",
+  "emphasis": "neutral"
 }
 ```
 
@@ -129,43 +95,11 @@ Content-Type: application/json
 
 With `select` and `expand` statements, you can retrieve verticalSection metadata and associated webParts in a single request.
 
+<!-- { "blockType": "ignored" } -->
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_verticalsection_e2"
-}
--->
-
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/canvasLayout/verticalSection?select=emphasis,expand=webparts
+```http
+GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsoft.graph.sitePage/canvasLayout/verticalSection?select=emphasis,expand=webparts
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-verticalsection-e2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-verticalsection-e2-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-verticalsection-e2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-verticalsection-e2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-verticalsection-e2-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-verticalsection-e2-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 #### Response
 
@@ -181,14 +115,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.verticalSection",
-    "emphasis": "neutral",
-    "webparts":[{
-      "@odata.type": "#microsoft.graph.textWebPart",
-      "id": "1212fc8d-dd6b-408a-8d5d-9f1cc787efbb",
-      "innerHtml": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel.</p>"
-    }]
-  }
+  "emphasis": "neutral",
+  "webparts":[{
+    "id": "1212fc8d-dd6b-408a-8d5d-9f1cc787efbb",
+    "innerHtml": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel.</p>"
+  }]
 }
 ```

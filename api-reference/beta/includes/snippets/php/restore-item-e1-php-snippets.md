@@ -6,20 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new RestorePostRequestBody();
 $parentReference = new ItemReference();
 $parentReference->setId('String');
-
-
 $requestBody->setParentReference($parentReference);
 $requestBody->setName('String');
 
-
-
-$result = $graphServiceClient->drivesById('drive-id')->itemsById('driveItem-id')->restore()->post($requestBody);
-
+$result = $graphServiceClient->drives()->byDriveId('drive-id')->items()->byDriveItemId('driveItem-id')->restore()->post($requestBody)->wait();
 
 ```

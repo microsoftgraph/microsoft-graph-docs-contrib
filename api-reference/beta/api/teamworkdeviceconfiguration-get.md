@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/beta/teamwork/devices/e19229ed-29ed-e192-ed29-92
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-teamworkdeviceconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-teamworkdeviceconfiguration-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-teamworkdeviceconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -88,6 +92,10 @@ GET https://graph.microsoft.com/beta/teamwork/devices/e19229ed-29ed-e192-ed29-92
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-teamworkdeviceconfiguration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-teamworkdeviceconfiguration-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

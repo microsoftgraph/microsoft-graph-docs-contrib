@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Track changes in a drive item and its children over time."
 ms.date: 09/10/2017
 title: "driveItem: delta"
@@ -15,15 +15,15 @@ Namespace: microsoft.graph
 
 Track changes in a [driveItem](../resources/driveitem.md) and its children over time.
 
-Your app begins by calling `delta` without any parameters. 
+Your app begins by calling `delta` without any parameters.
 The service starts enumerating the drive's hierarchy, returning pages of items and either an `@odata.nextLink` or an `@odata.deltaLink`, as described below.
 Your app should continue calling with the `@odata.nextLink` until you no longer see an `@odata.nextLink` returned, or you see a response with an empty set of changes.
 
 After you have finished receiving all the changes, you may apply them to your local state.
 To check for changes in the future, call `delta` again with the `@odata.deltaLink` from the previous response.
 
-Deleted items are returned with the [`deleted` facet](../resources/deleted.md). 
-Items with this property set should be removed from your local state. 
+Deleted items are returned with the [`deleted` facet](../resources/deleted.md).
+Items with this property set should be removed from your local state.
 
 **Note:** you should only delete a folder locally if it is empty after syncing all the changes.
 
@@ -102,6 +102,10 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-delta-first-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-item-delta-first-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-item-delta-first-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -116,6 +120,14 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-item-delta-first-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-item-delta-first-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-item-delta-first-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -175,6 +187,10 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta(token='1230919asd190410
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-delta-last-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-item-delta-last-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-item-delta-last-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -189,6 +205,14 @@ GET https://graph.microsoft.com/beta/me/drive/root/delta(token='1230919asd190410
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-item-delta-last-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-item-delta-last-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-item-delta-last-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -242,7 +266,7 @@ This can be useful if your app only wants to know about changes, and doesn't nee
 To retrieve the latest deltaLink, call `delta` with a query string parameter `?token=latest`.
 
 > **Note:** If you are trying to maintain a full local representation of the items in a folder or a drive, you must use `delta` for the initial enumeration.
-Other approaches, such as paging through the `children` collection of a folder, are not guaranteed to return every single item if any writes take place during the enumeration. 
+Other approaches, such as paging through the `children` collection of a folder, are not guaranteed to return every single item if any writes take place during the enumeration.
 Using `delta` is the only way to guarantee that you've read all of the data you need to.
 
 #### Request
@@ -256,6 +280,10 @@ GET /me/drive/root/delta?token=latest
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-delta-with-latest-token-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-delta-with-latest-token-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -272,6 +300,14 @@ GET /me/drive/root/delta?token=latest
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-delta-with-latest-token-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-delta-with-latest-token-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-delta-with-latest-token-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -313,6 +349,10 @@ GET /me/drive/root/delta?token=2021-09-29T20%3A00%3A00Z
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-delta-timestamp-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-delta-timestamp-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-delta-timestamp-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -327,6 +367,14 @@ GET /me/drive/root/delta?token=2021-09-29T20%3A00%3A00Z
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-delta-timestamp-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-delta-timestamp-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-delta-timestamp-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -365,7 +413,7 @@ Content-type: application/json
 * Delta query will not return some DriveItem properties, depending on the operation and service type, as shown in the following tables.
 
     **OneDrive for Business**
-    
+
     | Operation type | Properties omitted by delta query |
     |---------|----------|
     | Create/Modify | `ctag` |
@@ -373,7 +421,7 @@ Content-type: application/json
 
 
     **OneDrive (consumer)**
-    
+
     | Operation type | Properties omitted by delta query |
     |---------|----------|
     | Create/Modify | n/a |

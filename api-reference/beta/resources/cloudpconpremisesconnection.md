@@ -38,7 +38,7 @@ Represents a defined collection of Azure resource information that can be used t
 |adDomainUsername|String|The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: `admin@contoso.com`. Optional.|
 |alternateResourceUrl|String|The interface URL of the partner service's resource that links to this Azure network connection. Returned only on `$select`.|
 |displayName|String|The display name for the Azure network connection.|
-|healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|The status of the most recent health check done on the Azure network connection. For example, if status is `passed`, the Azure network connection has passed all checks run by the service. Possible values are: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Read-only.|
+|healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|The status of the most recent health check done on the Azure network connection. For example, if status is `passed`, the Azure network connection has passed all checks run by the service. Possible values are: `pending`, `running`, `passed`, `failed`,  `warning`, `informational`, `unknownFutureValue`. Read-only.|
 |healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|The details of the connection's health checks and the corresponding results. Returned only on `$select`. For an example that shows how to get the **inUse** property, see [Example 2: Get the selected properties of an Azure network connection, including healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md). Read-only.|
 |id|String|Unique identifier for the Azure network connection. Read-only.|
 |inUse|Boolean|When `true`, the Azure network connection is in use. When `false`, the connection is not in use. You cannot delete a connection that’s in use. Returned only on `$select`. For an example that shows how to get the **inUse** property, see [Example 2: Get the selected properties of an Azure network connection, including healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md). Read-only.|
@@ -75,9 +75,10 @@ Represents a defined collection of Azure resource information that can be used t
 |:---|:---|
 |pending|Created and waiting for health checks.|
 |running|Health checks are running.|
-|passed|Health checks passed.|
-|failed|Health checks failed.|
-|warning|Health checks passed with warning.|
+|passed|Health checks notify the customer that the Azure network connection is operating as intended. Customer can provision their Cloud PC without any issue.|
+|failed|Health checks notify the customer that the Azure network connection isn't properly configured or functioning. Provisioning will fail. The customer needs to identify the issue and resolve it using the guidance provided by Azure network connection for provisioning to be successful.|
+|warning|Health checks notify the customer that the Azure network connection isn't configured as per the Microsoft best practice guidance, such as endpoint connectivity. The customer should configure Cloud PC required endpoints before provisioning a Cloud PC. It will not affect the provisioning of the customer's Cloud PC but might affect the customer's experience.|
+|informational|Health checks provide information to the customer about current or associated prerequisite checks on Cloud PC add-on features such as Single Sign-On. This will not affect the provisioning of the customer's Cloud PC, but the information is intended to optimize the user experience.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 
 ## Relationships
@@ -117,6 +118,7 @@ The following is a JSON representation of the resource.
         "endDateTime": "String (timestamp)",
         "errorType": "String",
         "recommendedAction": "String",
+        "correlationId": "String",
         "startDateTime": "String (timestamp)",
         "status": "String"
       }

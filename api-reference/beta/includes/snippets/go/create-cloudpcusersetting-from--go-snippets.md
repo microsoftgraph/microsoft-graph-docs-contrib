@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -29,7 +29,7 @@ userRestoreEnabled := true
 restorePointSetting.SetUserRestoreEnabled(&userRestoreEnabled) 
 requestBody.SetRestorePointSetting(restorePointSetting)
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettings().Post(context.Background(), requestBody, nil)
+userSettings, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettings().Post(context.Background(), requestBody, nil)
 
 
 ```

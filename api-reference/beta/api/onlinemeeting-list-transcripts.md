@@ -13,11 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with an [onlineMeeting](../resources/onlinemeeting.md).
+Retrieve the list of [callTranscript](../resources/calltranscript.md) objects associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API does not support getting call transcripts from channel meetings. 
 
-> **Notes:** 
-> - In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
-> - This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
+> [!NOTE]
+> This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 ## Permissions
 
@@ -27,9 +26,11 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | OnlineMeetingTranscript.Read.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | OnlineMeetingTranscript.Read.All |
+|Application | OnlineMeetingTranscript.Read.All, OnlineMeetingTranscript.Read.Chat |
 
-To use application permission for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings and/or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+> **Note:** The application permission `OnlineMeetingTranscript.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+
+To use application permissions for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 > [!NOTE]
 > This API works for a meeting only if the meeting has not expired. For more details, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
@@ -38,20 +39,13 @@ To use application permission for this API, tenant administrators must create an
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/onlineMeetings({meetingId})/transcripts
-GET /users({userId})/onlineMeetings({meetingId})/transcripts
+GET /me/onlineMeetings/{online-meeting-id}/transcripts
+GET /users/{user-id}/onlineMeetings/{online-meeting-id}/transcripts
 ```
 
 ## Optional query parameters
 
-This method supports the `$skipToken` and `$top` [OData query parameters](/graph/query-parameters) to help customize the response.
-
-### Supported query patterns
-
-| Pattern                | Supported | Syntax                                 | Notes |
-| ---------------------- | ------- | -------------------------------------- | ----- |
-| Server-side pagination |     ✓     | `@odata.nextLink`                      | You will get a continuation token in the response, when a result set spans multiple pages. |
-| Page limit             |     ✓     | `/transcripts?$top=20` | Get transcripts with page size 20. Default page limit is 10. Max page limit is 100. |
+This method doesn't support any [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -61,7 +55,7 @@ This method supports the `$skipToken` and `$top` [OData query parameters](/graph
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -86,6 +80,10 @@ GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-calltranscripts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-calltranscripts-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-calltranscripts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -104,6 +102,10 @@ GET https://graph.microsoft.com/beta/users/ba321e0d-79ee-478d-8e28-85a19507f456/
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-calltranscripts-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-calltranscripts-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -125,7 +127,6 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('ba321e0d-79ee-478d-8e28-85a19507f456')/onlineMeetings('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/transcripts",
     "@odata.count": 3,
-    "@odata.nextLink": "https://graph.microsoft.com/beta/users('ba321e0d-79ee-478d-8e28-85a19507f456')/onlineMeetings('MSo1N2Y5ZGFjYy03MWJmLTQ3NDMtYjQxMy01M2EdFGkdRWHJlQ')/transcripts?$skiptoken=MSMjMCMjMjAyMS0wOS0xNlQxMzo1OToyNy4xMjEwMzgzWg%3d%3d",
     "value": [
         {
             "id": "MSMjMCMjZDAwYWU3NjUtNmM2Yi00NjQxLTgwMWQtMTkzMmFmMjEzNzdh",

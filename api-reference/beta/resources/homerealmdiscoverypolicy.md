@@ -2,7 +2,7 @@
 title: "homeRealmDiscoveryPolicy resource type"
 description: "Represents a policy to control Azure Active Directory authentication behavior for federated users."
 ms.localizationpriority: medium
-author: "hpsin"
+author: "nickludwig"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---

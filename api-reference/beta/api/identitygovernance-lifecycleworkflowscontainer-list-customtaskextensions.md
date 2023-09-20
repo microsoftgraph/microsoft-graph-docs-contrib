@@ -39,7 +39,7 @@ GET /identityGovernance/lifecycleWorkflows/customTaskExtensions
 
 ## Optional query parameters
 
-This method supports the `$select` `$search`, `$orderBy`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` `$search`, `$orderby`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/custo
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-customtaskextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-list-customtaskextension-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-customtaskextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -95,11 +99,15 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/custo
 [!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-customtaskextension-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-list-customtaskextension-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

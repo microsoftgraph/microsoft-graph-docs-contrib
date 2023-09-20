@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab90ba
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mobilitymanagementpolicy-forid-app-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-mobilitymanagementpolicy-forid-app-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-mobilitymanagementpolicy-forid-app-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -88,6 +92,10 @@ GET https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab90ba
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-mobilitymanagementpolicy-forid-app-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-mobilitymanagementpolicy-forid-app-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

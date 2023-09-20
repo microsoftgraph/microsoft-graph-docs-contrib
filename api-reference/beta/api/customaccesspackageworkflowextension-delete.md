@@ -1,7 +1,7 @@
 ---
 title: "Delete customAccessPackageWorkflowExtension"
 description: "Delete a customAccessPackageWorkflowExtension object."
-author: "currenmehta-zz"
+author: "vikama-microsoft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -66,6 +66,10 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-customaccesspackageworkflowextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-customaccesspackageworkflowextension-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-customaccesspackageworkflowextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -84,6 +88,10 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-customaccesspackageworkflowextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-customaccesspackageworkflowextension-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

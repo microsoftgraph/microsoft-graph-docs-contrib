@@ -2,7 +2,7 @@
 title: "List messages"
 description: "List all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox or drive."
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -63,6 +63,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/messages
 [!INCLUDE [sample-code](../includes/snippets/csharp/mailfolder-get-messages-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/mailfolder-get-messages-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/mailfolder-get-messages-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -81,6 +85,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/messages
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/mailfolder-get-messages-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/mailfolder-get-messages-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

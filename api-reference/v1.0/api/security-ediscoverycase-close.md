@@ -69,6 +69,10 @@ POST https://graph.microsoft.com/security/cases/ediscoveryCases/061b9a92-8926-4b
 [!INCLUDE [sample-code](../includes/snippets/csharp/close-ediscoverycase-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/close-ediscoverycase-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/close-ediscoverycase-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -83,6 +87,14 @@ POST https://graph.microsoft.com/security/cases/ediscoveryCases/061b9a92-8926-4b
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/close-ediscoverycase-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/close-ediscoverycase-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/close-ediscoverycase-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

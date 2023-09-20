@@ -1,7 +1,7 @@
 ---
 title: "Get delegatedAdminRelationship"
 description: "Read the properties of a delegatedAdminRelationship object."
-author: "adtangir"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: apiPageType
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object in the response body. The response object can also include a [resellerDelegatedAdminRelationship](../resources/resellerdelegatedadminrelationship.md) object.
 
 The **delegatedAdminRelationship** object also contains an **@odata.etag** property as per RFC2616.
  
@@ -69,6 +69,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelations
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-delegatedadminrelationship-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-delegatedadminrelationship-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-delegatedadminrelationship-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -83,6 +87,14 @@ GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminRelations
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-delegatedadminrelationship-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-delegatedadminrelationship-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-delegatedadminrelationship-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

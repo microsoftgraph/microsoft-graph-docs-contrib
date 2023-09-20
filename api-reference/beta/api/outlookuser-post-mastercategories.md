@@ -2,7 +2,7 @@
 title: "Create Outlook category"
 description: "Create an outlookCategory object in the user's master list of categories."
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -67,6 +67,10 @@ Content-Length: 70
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-outlookcategory-from-outlookuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-outlookcategory-from-outlookuser-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-outlookcategory-from-outlookuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -87,10 +91,14 @@ Content-Length: 70
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-outlookcategory-from-outlookuser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-outlookcategory-from-outlookuser-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-The following is an example of the response. 
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

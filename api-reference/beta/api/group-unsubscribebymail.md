@@ -2,7 +2,7 @@
 title: "group: unsubscribeByMail"
 description: "Calling this method will disable the current user to receive email notifications for this group about new posts, events, and files in that group."
 ms.localizationpriority: medium
-author: "psaffaie"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -69,6 +69,10 @@ POST https://graph.microsoft.com/beta/groups/{id}/unsubscribeByMail
 [!INCLUDE [sample-code](../includes/snippets/csharp/group-unsubscribebymail-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/group-unsubscribebymail-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/group-unsubscribebymail-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -87,6 +91,10 @@ POST https://graph.microsoft.com/beta/groups/{id}/unsubscribeByMail
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/group-unsubscribebymail-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/group-unsubscribebymail-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

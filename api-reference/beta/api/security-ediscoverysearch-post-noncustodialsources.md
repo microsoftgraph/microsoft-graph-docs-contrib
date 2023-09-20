@@ -8,7 +8,7 @@ doc_type: "apiPageType"
 ---
 
 
-# Add Add noncustodialDataSources
+# Add noncustodialDataSources
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -57,7 +57,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -74,14 +74,6 @@ Content-Type: application/json
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoverynoncustodialdatasource-no-content-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/create-ediscoverynoncustodialdatasource-no-content-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-ediscoverynoncustodialdatasource-no-content-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -90,14 +82,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/javascript/create-ediscoverynoncustodialdatasource-no-content-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/create-ediscoverynoncustodialdatasource-no-content-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

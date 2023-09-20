@@ -2,7 +2,7 @@
 title: "Update identitySecurityDefaultsEnforcementPolicy"
 description: "Update the properties of an identitySecurityDefaultsEnforcementPolicy object."
 ms.localizationpriority: medium
-author: "rohinigoyal1"
+author: "Sammak"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -17,11 +17,12 @@ Update the properties of an [identitySecurityDefaultsEnforcementPolicy](../resou
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+<!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Policy.Read.All and Policy.ReadWrite.ConditionalAccess |
+| Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.SecurityDefaults, Policy.ReadWrite.ConditionalAccess |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Policy.Read.All and Policy.ReadWrite.ConditionalAccess |
+| Application                            | Policy.Read.All, Policy.ReadWrite.SecurityDefaults, Policy.ReadWrite.ConditionalAccess |
 
 ## HTTP request
 
@@ -76,6 +77,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-identitysecuritydefaultsenforcementpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-identitysecuritydefaultsenforcementpolicy-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-identitysecuritydefaultsenforcementpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -94,6 +99,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-identitysecuritydefaultsenforcementpolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-identitysecuritydefaultsenforcementpolicy-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

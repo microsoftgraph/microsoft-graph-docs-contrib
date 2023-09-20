@@ -25,6 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
 
+[!INCLUDE [rbac-permission-grant-preapproval-policy-read](../includes/rbac-for-apis/rbac-permission-grant-preapproval-policy-read.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -73,6 +75,10 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-permissiongrantpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-permissiongrantpolicy-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-permissiongrantpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -93,11 +99,15 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-permissiongrantpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-permissiongrantpolicy-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
 
-The following is an example of the response. The policy has two `includes` condition sets, one which matches with delegated permission classified `low` for client apps registered in this tenant, and the other which matches delegated permissions classified `low` for apps from verified publishers (regardless of which tenant the app is registered in).
+The following is an example of the response. The policy has two `includes` condition sets, one that matches with delegated permission classified `low` for client apps registered in this tenant, and the other that matches delegated permissions classified `low` for apps from verified publishers (regardless of which tenant the app is registered in).
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -127,7 +137,11 @@ Content-type: application/json
             "clientApplicationTenantIds": [ "11e37ee2-48fe-42e0-aab9-07d0bb165353" ],
             "clientApplicationPublisherIds": [ "all" ],
             "clientApplicationsFromVerifiedPublisherOnly": false,
-            "certifiedClientApplicationsOnly": false
+            "certifiedClientApplicationsOnly": false,
+            "scopeSensitivityLabels": {
+                "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+                "labelKind": "all"
+            }
         },
         {
             "id": "8ce99f96-730c-4ebd-8397-07ee65942b97",
@@ -139,7 +153,11 @@ Content-type: application/json
             "clientApplicationTenantIds": [ "all" ],
             "clientApplicationPublisherIds": [ "all" ],
             "clientApplicationsFromVerifiedPublisherOnly": true,
-            "certifiedClientApplicationsOnly": false
+            "certifiedClientApplicationsOnly": false,
+            "scopeSensitivityLabels": {
+                "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+                "labelKind": "all"
+            }
         }
     ],
     "excludes": []

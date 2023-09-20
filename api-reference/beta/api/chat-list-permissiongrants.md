@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission Type                        | Permissions (from least to most privileged)                                                                                                                                                        |
 | :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | ResourceSpecificPermissionGrant.ReadForChat, TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat                                    |
+| Delegated (work or school account)     | TeamsAppInstallation.ReadForChat, TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat                                    |
 | Delegated (personal Microsoft account) | Not supported.                                                                                                                                                                                     |
-| Application                            | TeamsAppInstallation.Read.Chat*, Chat.Manage.Chat*, ResourceSpecificPermissionGrant.ReadForChat.All, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
+| Application                            | TeamsAppInstallation.Read.Chat*, Chat.Manage.Chat*, TeamsAppInstallation.ReadForChat.All, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/chats/19:089ac694c48647c68035aae675cf78ab@t
 [!INCLUDE [sample-code](../includes/snippets/csharp/chat-list-permission-grants-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/chat-list-permission-grants-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/chat-list-permission-grants-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -90,6 +94,10 @@ GET https://graph.microsoft.com/beta/chats/19:089ac694c48647c68035aae675cf78ab@t
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/chat-list-permission-grants-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/chat-list-permission-grants-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -148,5 +156,7 @@ Content-type: application/json
 ```
 
 ## See also
-- [List permission grants of a team](team-list-permissionGrants.md)
-- [List permission grants of a group](group-list-permissionGrants.md)
+
+- [List permission grants of a group](group-list-permissiongrants.md)
+- [List permission grants of a team](team-list-permissiongrants.md)
+- [List permission grants of a user](user-list-permissiongrants.md)

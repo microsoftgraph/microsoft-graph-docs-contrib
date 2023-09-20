@@ -32,6 +32,7 @@ Every **accessReviewInstance** contains a list of [decisions](accessreviewinstan
 |[stop](../api/accessreviewinstance-stop.md) | None. | Manually stop an accessReviewInstance. |
 |[acceptRecommendations](../api/accessreviewinstance-acceptrecommendations.md) | None. | Allows the calling user to accept the decision recommendation for each NotReviewed accessReviewInstanceDecisionItem that they are the reviewer on for a specific accessReviewInstance. |
 |[applyDecisions](../api/accessreviewinstance-applydecisions.md) | None. | Manually apply decisions on an accessReviewInstance. |
+|[stopApplyDecisions](../api/accessreviewinstance-stopapplydecisions.md) | None. |Allows the calling user to stop the apply decision action on a specific accessReviewInstance. |
 |[batchRecordDecisions](../api/accessreviewinstance-batchrecorddecisions.md)|None|Review batches of principals or resources in one call.|
 |[resetDecisions](../api/accessreviewinstance-resetdecisions.md)|None|Resets all decision items on an instance to `notReviewed`.|
 |[List stages](../api/accessreviewinstance-list-stages.md)|[accessReviewStage](../resources/accessreviewstage.md) collection| Retrieve the stages in a multi-stage access review instance.|
@@ -57,7 +58,7 @@ Every **accessReviewInstance** contains a list of [decisions](accessreviewinstan
 |:---------------|:--------|:----------|
 | contactedReviewers   |[accessReviewReviewer](../resources/accessreviewreviewer.md) collection| Returns the collection of reviewers who were contacted to complete this review. While the **reviewers** and **fallbackReviewers** properties of the **accessReviewScheduleDefinition** might specify group owners or managers as **reviewers**, **contactedReviewers** returns their individual identities. Supports `$select`. Read-only. |
 | definition               |[accessReviewScheduleDefinition](accessreviewscheduledefinition.md)          | There is exactly one **accessReviewScheduleDefinition** associated with each instance. It is the parent schedule for the instance, where instances are created for each recurrence of a review definition and each group selected to review by the definition. |
-|stages|[accessReviewStage](accessreviewstage.md) collection| If the instance has multiple stages, this returns the collection of stages. A new stage will only be created when the previous stage ends. The existence, number, and settings of stages on a review instance are created based on the [accessReviewStageSettings](accessreviewstagesettings.md) on the parent [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). |
+| stages|[accessReviewStage](accessreviewstage.md) collection| If the instance has multiple stages, this returns the collection of stages. A new stage will only be created when the previous stage ends. The existence, number, and settings of stages on a review instance are created based on the [accessReviewStageSettings](accessreviewstagesettings.md) on the parent [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). |
 | decisions               |[accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection        | Each user reviewed in an **accessReviewInstance** has a decision item representing if they were approved, denied, or not yet reviewed. |
 
 ## JSON representation

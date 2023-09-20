@@ -4,7 +4,7 @@ description: "Delete an attachment from a calendar event, message, Outlook task,
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "outlook"
-author: "abheek-das"
+author: "SuryaLashmiS"
 ---
 
 # Delete attachment
@@ -144,6 +144,10 @@ DELETE https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-attachment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-attachment-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-attachment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -162,6 +166,10 @@ DELETE https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-attachment-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-attachment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite |
-|Delegated (personal Microsoft account) | Calendars.Read, Calendars.ReadWrite    |
-|Application | Calendars.Read, Calendars.ReadWrite |
+|Delegated (work or school account) | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite |
+|Delegated (personal Microsoft account) | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite  |
+|Application | Calendars.ReadBasic, Calendars.Read, Calendars.ReadWrite |
 
 ## HTTP request
 
@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-calendarview-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-calendarview-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-calendarview-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -115,6 +119,10 @@ GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-calendarview-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-calendarview-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

@@ -64,6 +64,10 @@ DELETE https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-parent-from-ediscoveryreviewtag-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-parent-from-ediscoveryreviewtag-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-parent-from-ediscoveryreviewtag-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -82,6 +86,10 @@ DELETE https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/58399dff-
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-parent-from-ediscoveryreviewtag-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-parent-from-ediscoveryreviewtag-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

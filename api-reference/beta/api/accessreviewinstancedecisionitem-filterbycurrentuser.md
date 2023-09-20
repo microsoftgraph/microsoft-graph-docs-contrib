@@ -55,7 +55,7 @@ The following table shows the query parameters that can be used with this method
 
 
 ## Optional query parameters
-This method supports the `$select`, `$filter`, `$orderBy`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, `$orderby`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 The default page size for this API is 100 **accessReviewInstanceDecisionItem** objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
@@ -91,6 +91,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/csharp/accessreviewinstancedecisionitem-filterbycurrentuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/accessreviewinstancedecisionitem-filterbycurrentuser-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstancedecisionitem-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -107,8 +111,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/php/accessreviewinstancedecisionitem-filterbycurrentuser-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/accessreviewinstancedecisionitem-filterbycurrentuser-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/accessreviewinstancedecisionitem-filterbycurrentuser-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -188,6 +192,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/csharp/accessreviewinstancedecisionitem-filterbycurrentuser-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/accessreviewinstancedecisionitem-filterbycurrentuser-2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/accessreviewinstancedecisionitem-filterbycurrentuser-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -204,8 +212,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 [!INCLUDE [sample-code](../includes/snippets/php/accessreviewinstancedecisionitem-filterbycurrentuser-2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/accessreviewinstancedecisionitem-filterbycurrentuser-2-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/accessreviewinstancedecisionitem-filterbycurrentuser-2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

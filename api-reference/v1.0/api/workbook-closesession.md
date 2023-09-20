@@ -33,10 +33,10 @@ workbook-session-id: {session-id}
 | Name                | Description                      |
 |:--------------------|:---------------------------------|
 | Authorization       | Bearer {token}. Required.        |
-| workbook-session-id | Workbook session Id to be closed |
+| workbook-session-id | Workbook session ID to be closed |
 
 ## Request body
-This API does not require any request body.
+This API doesn't require any request body.
 
 ## Response
 
@@ -44,7 +44,7 @@ If successful, this method returns `204 No Content` response code.
 
 ## Example
 ##### Request
-Here is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -65,6 +65,10 @@ workbook-session-id: {session-id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/close-workbook-session-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/close-workbook-session-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/close-workbook-session-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -81,13 +85,17 @@ workbook-session-id: {session-id}
 [!INCLUDE [sample-code](../includes/snippets/php/close-workbook-session-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/close-workbook-session-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-Note that workbook-session-id header is required.
+Workbook-session-id header is required.
 
 
 ##### Response
-Here is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

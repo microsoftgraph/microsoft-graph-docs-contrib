@@ -3,7 +3,7 @@ title: "List b2xIdentityUserFlows"
 description: "Retrieve a list of b2xIdentityUserFlow objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "jkdouglas"
+author: "nanguil"
 ms.prod: "identity-and-sign-in"
 ---
 
@@ -38,7 +38,7 @@ GET /identity/b2xUserFlows
 
 ## Optional query parameters
 
-You can use `$expand` to expand specific user flow properties that are not expanded by default. For more information, see [OData query parameters](/graph/query-parameters).
+You can use `$expand` to expand specific user flow properties that aren't expanded by default. For more information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -48,7 +48,7 @@ You can use `$expand` to expand specific user flow properties that are not expan
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -76,6 +76,10 @@ GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-b2xuserflows-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-b2xuserflows-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -98,11 +102,15 @@ GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-b2xuserflows-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-b2xuserflows-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 
@@ -138,7 +146,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -154,6 +162,10 @@ GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows?$expand=identityProvi
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-b2xuserflows-expand-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-b2xuserflows-expand-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -176,11 +188,15 @@ GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows?$expand=identityProvi
 [!INCLUDE [sample-code](../includes/snippets/powershell/list-b2xuserflows-expand-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-b2xuserflows-expand-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 

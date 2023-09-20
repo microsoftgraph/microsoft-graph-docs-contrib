@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /contacts/{id}/memberOf
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$select`, `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the groups the contact is a member of. You can use `$search` on the **displayName** property. The default and maximum page sizes are 100 and 999 objects respectively.
 
 ## Request headers
 | Name       | Type | Description|
@@ -62,6 +62,10 @@ GET https://graph.microsoft.com/beta/contacts/{id}/memberOf
 [!INCLUDE [sample-code](../includes/snippets/csharp/contact-get-memberof-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/contact-get-memberof-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/contact-get-memberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -80,6 +84,10 @@ GET https://graph.microsoft.com/beta/contacts/{id}/memberOf
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/contact-get-memberof-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/contact-get-memberof-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

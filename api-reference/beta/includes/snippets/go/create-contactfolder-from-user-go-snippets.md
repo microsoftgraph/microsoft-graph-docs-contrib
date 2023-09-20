@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
+
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
@@ -21,7 +21,7 @@ requestBody.SetParentFolderId(&parentFolderId)
 displayName := "Important contacts"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Me().ContactFolders().Post(context.Background(), requestBody, nil)
+contactFolders, err := graphClient.Me().ContactFolders().Post(context.Background(), requestBody, nil)
 
 
 ```

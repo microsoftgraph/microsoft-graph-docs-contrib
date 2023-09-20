@@ -1,7 +1,7 @@
 ---
 title: "Delete groupLifecyclePolicy"
 description: "Delete a groupLifecyclePolicy."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
@@ -69,6 +69,10 @@ DELETE https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-grouplifecyclepolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-grouplifecyclepolicy-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-grouplifecyclepolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -87,6 +91,10 @@ DELETE https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/delete-grouplifecyclepolicy-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-grouplifecyclepolicy-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

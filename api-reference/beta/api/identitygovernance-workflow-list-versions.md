@@ -39,7 +39,7 @@ GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/versions
 
 ## Optional query parameters
 
-This method supports the `$select`, `$count`, `$search`, `$orderBy`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$count`, `$search`, `$orderby`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -77,6 +77,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-workflowversion-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-list-workflowversion-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-workflowversion-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -97,11 +101,15 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-workflowversion-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-list-workflowversion-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -170,6 +178,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-workflowversion-select-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-list-workflowversion-select-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-workflowversion-select-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -188,6 +200,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-workflowversion-select-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-list-workflowversion-select-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

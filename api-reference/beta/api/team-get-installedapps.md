@@ -64,11 +64,15 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET /teams/{id}/installedApps/{id}
+GET https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-installed-teams-apps-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-installed-teams-apps-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -89,6 +93,10 @@ GET /teams/{id}/installedApps/{id}
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-installed-teams-apps-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-installed-teams-apps-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -139,6 +147,10 @@ GET https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}?$expand=teams
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-installed-teams-apps-expand-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-installed-teams-apps-expand-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-installed-teams-apps-expand-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -157,6 +169,10 @@ GET https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}?$expand=teams
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-installed-teams-apps-expand-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-installed-teams-apps-expand-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -203,7 +219,7 @@ The following example gets the list of any [resource-specific permissions that w
 <!-- {
   "blockType": "request",
   "name": "get_installedApps_in_team_select_consentedPermissionSet",
-  "sampleKeys": ["19%5bd86ec7f6b247d3b9e519b0bfef5d03%40thread.v2"]
+  "sampleKeys": ["19%5bd86ec7f6b247d3b9e519b0bfef5d03%40thread.v2", "N2VlYjVhOTUtZjYwMi00ODYxLWFiNjctNDk3MTRmYTVhMDIwIyMxYzI1NmE2NS04M2E2LTRiNWMtOWNjZi03OGY4YWZiNmYxZTg="]
 }
 -->
 
@@ -213,6 +229,10 @@ GET https://graph.microsoft.com/beta/teams/19%5bd86ec7f6b247d3b9e519b0bfef5d03%4
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-installedapps-in-team-select-consentedpermissionset-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-installedapps-in-team-select-consentedpermissionset-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -233,6 +253,10 @@ GET https://graph.microsoft.com/beta/teams/19%5bd86ec7f6b247d3b9e519b0bfef5d03%4
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-installedapps-in-team-select-consentedpermissionset-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-installedapps-in-team-select-consentedpermissionset-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -273,6 +297,8 @@ Content-type: application/json
 ## See also
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
 - [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Calendars.Read.Shared, Calendars.ReadWrite.Shared    |
+|Delegated (work or school account) | Calendars.Read, Calendars.ReadWrite    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
@@ -176,12 +176,16 @@ Content-Type: application/json
   "isOrganizerOptional": "false",
   "meetingDuration": "PT1H",
   "returnSuggestionReasons": "true",
-  "minimumAttendeePercentage": "100"
+  "minimumAttendeePercentage": 100
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-findmeetingtimes-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/user-findmeetingtimes-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -200,8 +204,8 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/user-findmeetingtimes-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/user-findmeetingtimes-powershell-snippets.md)]
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/user-findmeetingtimes-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
