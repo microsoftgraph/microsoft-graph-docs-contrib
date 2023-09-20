@@ -13,7 +13,7 @@ request_body = UnifiedRoleAssignmentMultiple(
 	description = "A new roleAssignment",
 )
 
-result = await graph_client.role_management.cloud_p_c.role_assignments.by_role_assignment_id('unifiedRoleAssignmentMultiple-id').patch(request_body = request_body)
+result = await graph_client.role_management.cloud_p_c.role_assignments.by_role_assignment_id('unifiedRoleAssignmentMultiple-id').patch(body = request_body)
 
 
 ```

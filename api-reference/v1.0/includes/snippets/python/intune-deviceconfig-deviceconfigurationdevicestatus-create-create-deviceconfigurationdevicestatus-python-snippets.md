@@ -19,7 +19,7 @@ request_body = DeviceConfigurationDeviceStatus(
 	user_principal_name = "User Principal Name value",
 )
 
-result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').device_statuses.post(request_body = request_body)
+result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').device_statuses.post(body = request_body)
 
 
 ```

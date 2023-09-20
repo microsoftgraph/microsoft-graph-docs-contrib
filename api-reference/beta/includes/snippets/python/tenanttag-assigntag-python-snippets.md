@@ -14,7 +14,7 @@ request_body = AssignTagPostRequestBody(
 	]
 )
 
-result = await graph_client.tenant_relationships.managed_tenants.tenant_tags.by_tenant_tag_id('tenantTag-id').microsoft_graph_managed_tenant_assign_tag.post(request_body = request_body)
+result = await graph_client.tenant_relationships.managed_tenants.tenant_tags.by_tenant_tag_id('tenantTag-id').microsoft_graph_managed_tenant_assign_tag.post(body = request_body)
 
 
 ```

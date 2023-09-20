@@ -22,7 +22,7 @@ request_body = PlayPromptPostRequestBody(
 	]
 )
 
-result = await graph_client.communications.calls.by_call_id('call-id').play_prompt.post(request_body = request_body)
+result = await graph_client.communications.calls.by_call_id('call-id').play_prompt.post(body = request_body)
 
 
 ```

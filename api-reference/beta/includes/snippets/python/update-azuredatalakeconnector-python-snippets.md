@@ -13,7 +13,7 @@ request_body = AzureDataLakeConnector(
 	display_name = "API Monitor 60201009",
 )
 
-result = await graph_client.external.industry_data.data_connectors.by_data_connector_id('industryDataConnector-id').patch(request_body = request_body)
+result = await graph_client.external.industry_data.data_connectors.by_data_connector_id('industryDataConnector-id').patch(body = request_body)
 
 
 ```

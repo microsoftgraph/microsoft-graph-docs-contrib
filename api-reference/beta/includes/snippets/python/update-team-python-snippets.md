@@ -26,7 +26,7 @@ request_body = Team(
 	),
 )
 
-result = await graph_client.teams.by_team_id('team-id').patch(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').patch(body = request_body)
 
 
 ```
