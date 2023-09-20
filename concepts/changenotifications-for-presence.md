@@ -34,7 +34,7 @@ The following resource strings support subscriptions. For more information, see 
 
 ### Subscribe to a single user’s presence 
 
-To subscribe to a single user's presence, you can set the resource in the subscription payload to `communications/presences/{id}` where the {ID} field must be replaced with the user ID GUID of the user's presence. This subscription delivers change notifications when the user presence changes.
+To subscribe to a single user's presence, you can set the resource in the subscription payload to `communications/presences/{id}` where the {id} field must be replaced with the user ID GUID of the user's presence. This subscription delivers change notifications when the user presence changes.
 
 ### Payload example
 
