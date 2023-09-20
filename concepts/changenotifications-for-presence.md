@@ -43,7 +43,7 @@ To subscribe to a single user's presence, you can set the resource in the subscr
     "changeType": "updated",
     "notificationUrl": "https://webhook.contoso.com/api",
     "lifecycleNotificationUrl": "https://webhook.contoso.com/api",
-    "resource": "communications/presences/{id}}",
+    "resource": "communications/presences/{id}",
     "expirationDateTime": "2023-09-14T10:00:00.0000000Z",
     "includeResourceData": true,
     "encryptionCertificate": "{encryption certificate}",
