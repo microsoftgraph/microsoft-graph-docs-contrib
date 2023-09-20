@@ -1,6 +1,6 @@
 ---
 title: "List monthly userRequestsMetrics"
-description: "Get a list of the userRequestsMetric objects and their properties."
+description: "Get a list of the monthly userRequestsMetric objects and their properties."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"

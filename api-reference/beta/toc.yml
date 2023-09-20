@@ -15310,6 +15310,26 @@ items:
                           href: api/reportroot-list-applicationsignindetailedsummary.md
                         - name: Get
                           href: api/applicationsignindetailedsummary-get.md
+                - name: Application user activity (preview)
+                  items:
+                    - name: Total users
+                      href: resources/usercountmetric.md
+                    - name: Active users
+                      href: resources/activeusersmetric.md
+                    - name: Active users breakdown
+                      href: resources/activeusersbreakdownmetric.md
+                    - name: User signup
+                      href: resources/usersignupmetric.md
+                    - name: User requests
+                      href: resources/userrequestsmetric.md
+                    - name: User authentications
+                      href: resources/authenticationsmetric.md
+                    - name: MFA completions
+                      href: resources/mfacompletionmetric.md
+                    - name: Daily active users
+                      href: resources/dailyuserinsightmetricsroot.md
+                    - name: Monthly active users
+                      href: resources/monthlyuserinsightmetricsroot.md
                 - name: Azure AD SLA attainment
                   items:
                     - name: Azure AD authentication
@@ -16661,26 +16681,6 @@ items:
             href: api/reportroot-list-appcredentialsigninactivities.md
           - name: Get
             href: api/appcredentialsigninactivity-get.md
-        - name: Application user activity (preview)
-          items:
-            - name: Total users
-              href: resources/usercountmetric.md
-            - name: Active users
-              href: resources/activeusersmetric.md
-            - name: Active users breakdown
-              href: resources/activeusersbreakdownmetric.md
-            - name: User signup
-              href: resources/usersignupmetric.md
-            - name: User requests
-              href: resources/userrequestsmetric.md
-            - name: User authentications
-              href: resources/authenticationsmetric.md
-            - name: MFA completions
-              href: resources/mfacompletionmetric.md
-            - name: Daily active users
-              href: resources/dailyuserinsightmetricsroot.md
-            - name: Monthly active users
-              href: resources/monthlyuserinsightmetricsroot.md
         - name: Application sign-in
           items:
           - name: Sign-in summary

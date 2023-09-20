@@ -22,10 +22,6 @@ Application insights for all user requests to a tenant for a specific period. Th
 |[List dailyUserInsightMetricsRoot](../api/userinsightsroot-list-daily.md)|[dailyUserInsightMetricsRoot](../resources/dailyuserinsightmetricsroot.md) collection|Get the dailyUserInsightMetricsRoot resources from the daily navigation property.|
 |[List monthlyUserInsightMetricsRoot](../api/userinsightsroot-list-monthly.md)|[monthlyUserInsightMetricsRoot](../resources/monthlyuserinsightmetricsroot.md) collection|Get the monthlyUserInsightMetricsRoot resources from the monthly navigation property.|
 
-## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
