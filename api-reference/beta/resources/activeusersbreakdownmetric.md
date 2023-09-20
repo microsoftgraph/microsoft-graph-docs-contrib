@@ -1,6 +1,6 @@
 ---
 title: "activeUsersBreakdownMetric resource type"
-description: "Insights of the total users in the tenant over time."
+description: "Insights breakdown of the total users in the tenant over time."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"

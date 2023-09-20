@@ -1,18 +1,18 @@
 ---
-title: "List activeUsersBreakdown"
-description: "Get the activeUsersBreakdownMetric resources from the activeUsersBreakdown navigation property."
+title: "List monthlyUserInsightMetricsRoot"
+description: "Get the monthlyUserInsightMetricsRoot resources from the monthly navigation property."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
-doc_type: apiPageType
+doc_type: resourcePageType
 ---
 
-# List monthly activeUsersBreakdown
+# List monthlyUserInsightMetricsRoot
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the activeUsersBreakdownMetric resources from the activeUsersBreakdown navigation property.
+Get the monthlyUserInsightMetricsRoot resources from the monthly navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /reports/userInsights/monthly/activeUsersBreakdown
+GET /reports/userInsights/monthly
 ```
 
 ## Optional query parameters
@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [activeUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [monthlyUserInsightMetricsRoot](../resources/monthlyuserinsightmetricsroot.md) objects in the response body.
 
 ## Examples
 
@@ -53,11 +53,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_activeusersbreakdownmetric"
+  "name": "list_monthlyuserinsightmetricsroot"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/reports/userInsights/monthly/activeUsersBreakdown
+GET https://graph.microsoft.com/beta/reports/userInsights/monthly
 ```
 
 
@@ -67,7 +67,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.AAD.Reporting.activeUsersBreakdownMetric)"
+  "@odata.type": "Collection(Microsoft.AAD.Reporting.monthlyUserInsightMetricsRoot)"
 }
 -->
 ``` http
@@ -77,13 +77,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.AAD.Reporting.activeUsersBreakdownMetric",
-      "id": "5e8880da-5611-89c3-ffde-36ba559e00b3",
-      "factDate": "Date",
-      "count": "Integer",
-      "appId": "String",
-      "appName": "String",
-      "os": "String"
+      "@odata.type": "#Microsoft.AAD.Reporting.monthlyUserInsightMetricsRoot"
     }
   ]
 }
