@@ -3,6 +3,120 @@
     {
       "ChangeList": [
         {
+          "Id": "10ee1198-da2a-42d1-a856-952faa40ec96",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "threatIntelligence/hosts/childHostPairs",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligence/hosts/childHostPairs](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "security"
+        },
+        {
+          "Id": "10ee1198-da2a-42d1-a856-952faa40ec96",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "threatIntelligence/hosts/components",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligence/hosts/components](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "security"
+        },
+        {
+          "Id": "10ee1198-da2a-42d1-a856-952faa40ec96",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "threatIntelligence/hosts/cookies",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligence/hosts/cookies](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "security"
+        },
+        {
+          "Id": "10ee1198-da2a-42d1-a856-952faa40ec96",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "threatIntelligence/hosts/hostPairs",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligence/hosts/hostPairs](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "security"
+        },
+        {
+          "Id": "10ee1198-da2a-42d1-a856-952faa40ec96",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "threatIntelligence/hosts/parentHostPairs",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligence/hosts/parentHostPairs](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "security"
+        },
+        {
+          "Id": "10ee1198-da2a-42d1-a856-952faa40ec96",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "threatIntelligence/hosts/passiveDns",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligence/hosts/passiveDns](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "security"
+        },
+        {
+          "Id": "10ee1198-da2a-42d1-a856-952faa40ec96",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "threatIntelligence/hosts/passiveDnsReverse",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligence/hosts/passiveDnsReverse](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "security"
+        },
+        {
+          "Id": "10ee1198-da2a-42d1-a856-952faa40ec96",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "threatIntelligence/hosts/sslCertificates",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligence/hosts/sslCertificates](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "security"
+        },
+        {
+          "Id": "10ee1198-da2a-42d1-a856-952faa40ec96",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "threatIntelligence/hosts/subdomains",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligence/hosts/subdomains](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "security"
+        },
+        {
+          "Id": "10ee1198-da2a-42d1-a856-952faa40ec96",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "threatIntelligence/hosts/trackers",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligence/hosts/trackers](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "security"
+        },
+        {
+          "Id": "10ee1198-da2a-42d1-a856-952faa40ec96",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "threatIntelligence/hosts/whois",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligence/hosts/whois](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "security"
+        },
+        {
+          "Id": "10ee1198-da2a-42d1-a856-952faa40ec96",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "threatIntelligence/hostSslCertificates/host",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligence/hostSslCertificates/host](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "security"
+        },
+        {
+          "Id": "10ee1198-da2a-42d1-a856-952faa40ec96",
+          "ApiChange": "NavigationPropertyBinding",
+          "ChangedApiName": "threatIntelligence/hostSslCertificates/sslCertificate",
+          "ChangeType": "Addition",
+          "Description": "Added the [threatIntelligence/hostSslCertificates/sslCertificate](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Target": "security"
+        }
+      ],
+      "Id": "10ee1198-da2a-42d1-a856-952faa40ec96",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-09-20T14:56:23.0103416Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Threat Intelligence"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
           "ApiChange": "Relationship",
           "ChangedApiName": "sslCertificates",
