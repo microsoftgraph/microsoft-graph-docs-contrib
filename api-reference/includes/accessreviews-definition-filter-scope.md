@@ -23,4 +23,4 @@ The value of `{object}` can be one of the following:
 |`accessPackageAssignments`  |List every accessReviewScheduleDefinition on an access package.|
 |`roleAssignmentScheduleInstances`  |List every accessReviewScheduleDefinition for principals that are assigned to a privileged role.|
 
-The `$filter` query parameter is not supported on **accessReviewInactiveUserQueryScope** or **principalResourceMembershipScope**.
+The `$filter` query parameter isn't supported on **accessReviewInactiveUserQueryScope** or **principalResourceMembershipScope**.

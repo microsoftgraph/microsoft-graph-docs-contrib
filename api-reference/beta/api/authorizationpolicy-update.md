@@ -44,7 +44,7 @@ PATCH /policies/authorizationPolicy/authorizationPolicy
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -52,7 +52,7 @@ In the request body, supply the values for relevant fields that should be update
 |allowUserConsentForRiskyApps|Boolean| Indicates whether [user consent for risky apps](/azure/active-directory/manage-apps/configure-risk-based-step-up-consent) is allowed. Default value is `false`. We recommend that you keep the value set to `false`.|
 |allowedToSignUpEmailBasedSubscriptions|Boolean| Indicates whether users can sign up for email-based subscriptions. |
 |allowedToUseSSPR|Boolean| Indicates whether users can use the Self-Serve Password Reset feature on the tenant. |
-|blockMsolPowerShell|Boolean| To disable the use of MSOL PowerShell, set this property to `true`. This also disables user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure Active Directory Connect or Microsoft Graph. |
+|blockMsolPowerShell|Boolean| To disable the use of MSOL PowerShell, set this property to `true`. This also disables user-based access to the legacy service endpoint used by MSOL PowerShell. This doesn't affect Azure Active Directory Connect or Microsoft Graph. |
 |defaultUserRolePermissions|[defaultUserRolePermissions](../resources/defaultUserRolePermissions.md)| Specifies certain customizable permissions for default user role. |
 |description|String| Description of this policy. |
 |displayName|String| Display name for this policy. |
@@ -62,7 +62,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -70,7 +70,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 #### Request
 
-The following is an example of the request. In this example, guest access level is modified to Restricted Guest User.
+Here's an example of the request. In this example, guest access level is modified to Restricted Guest User.
 
 <!-- {
   "blockType": "request",
@@ -87,7 +87,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response"
@@ -101,7 +101,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -120,7 +120,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response"
@@ -134,7 +134,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -151,7 +151,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response"
@@ -165,7 +165,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -184,7 +184,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response"
@@ -198,7 +198,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -215,7 +215,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response"
@@ -229,7 +229,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 <!-- {
@@ -249,7 +249,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response"
@@ -263,7 +263,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request that allows user consent to apps, subject to the built-in [app consent policy](/azure/active-directory/manage-apps/manage-app-consent-policies) `microsoft-user-default-low`, which allows delegated permissions classified "low", for client apps from verified publishers or registered in the same tenant.
+Here's an example of the request that allows user consent to apps, subject to the built-in [app consent policy](/azure/active-directory/manage-apps/manage-app-consent-policies) `microsoft-user-default-low`, which allows delegated permissions classified "low", for client apps from verified publishers or registered in the same tenant.
 
 <!-- {
   "blockType": "request",
@@ -282,7 +282,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response"

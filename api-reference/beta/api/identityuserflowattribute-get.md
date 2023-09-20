@@ -27,8 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 The work or school account needs to belong to one of the following roles:
 
-* Global administrator
-* External Identity User Flow Attribute administrator
+* Global Administrator
+* External Identity User Flow Attribute Administrator
 
 ## HTTP request
 

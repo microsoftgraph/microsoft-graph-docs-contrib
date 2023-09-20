@@ -18,13 +18,13 @@ Represents settings for governing how to rollout content to devices.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|durationBetweenOffers|Duration|The duration between each set of devices being offered the update. The value is represented in ISO 8601 format for duration. Default value is `P1D` (1 day).|
+|durationBetweenOffers|Duration|The duration between each set of devices being offered the update. The value is represented in ISO 8601 format for duration. Default value is `P1D` (one day).|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUpdates.gradualRolloutSettings"
