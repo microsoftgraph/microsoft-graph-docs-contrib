@@ -27,9 +27,9 @@ The following table provides a summary of subscribable virtual event types, the 
 |:-------------------------------------------------------|:------------------------------------------------------------------------------------------|:--------------------------|:---------------------------|
 | All events (tenant-level)                              | `solutions/virtualEvents/events`                                                          | created                   | Application                |
 | All events (tenant-level by organizer/coorganizer IDs) | `solutions/virtualEvents/events/getEventsFromOrganizers(organizerIds=['id1', 'id2'])`     | created                   | Application                |
-| The events of a specific webinar                       | `solutions/virtualEvents/webinars/{webinarId}`                                            | updated                   | Application, Delegated     |
-| The session events of a webinar                        | `solutions/virtualEvents/webinars/{webinarId}/sessions`                                   | created, updated          | Application, Delegated     |
-| The registration events of a webinar                   | `solutions/virtualEvents/webinars/{webinarId}/registrations`                              | created, updated          | Application, Delegated     |
+| The events of a specific webinar                       | `solutions/virtualEvents/webinars/{webinarId}`                                            | updated                   | Application, delegated     |
+| The session events of a webinar                        | `solutions/virtualEvents/webinars/{webinarId}/sessions`                                   | created, updated          | Application, delegated     |
+| The registration events of a webinar                   | `solutions/virtualEvents/webinars/{webinarId}/registrations`                              | created, updated          | Application, delegated     |
 
 >**Note:** Replace values in with parenthesis with actual values.
 
