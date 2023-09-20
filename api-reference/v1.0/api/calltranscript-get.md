@@ -17,7 +17,7 @@ Retrieving the transcript returns the metadata of the single transcript associat
 
 > [!NOTE]
 >
-> * This is a metered API. For more information, see [payment models for meeting APIs](/graph/teams-licenses#payment-models-for-meeting-apis). Existing customers as of August 9, 2023 get two months grace period (till October 9, 2023) before the billing enforcements apply.
+> * This is a metered API. For more information, see [payment models for meeting APIs](/graph/teams-licenses#payment-models-for-meeting-apis).
 > * This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
 ## Permissions
