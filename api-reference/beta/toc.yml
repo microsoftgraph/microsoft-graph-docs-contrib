@@ -16703,6 +16703,26 @@ items:
             href: resources/servicelevelagreementroot.md
           - name: Get Azure AD authentication
             href: api/azureadauthentication-get.md
+        - name: Application user activity (preview)
+          items:
+          - name: Total users
+            href: resources/usercountmetric.md
+          - name: Active users
+            href: resources/activeusersmetric.md
+          - name: Active users breakdown
+            href: resources/activeusersbreakdownmetric.md
+          - name: User signup
+            href: resources/usersignupmetric.md
+          - name: User requests
+            href: resources/userrequestsmetric.md
+          - name: User authentications
+            href: resources/authenticationsmetric.md
+          - name: MFA completions
+            href: resources/mfacompletionmetric.md
+          - name: Daily active users
+            href: resources/dailyuserinsightmetricsroot.md
+          - name: Monthly active users
+            href: resources/monthlyuserinsightmetricsroot.md
         - name: Registration and usage
           items:
           - name: Overview
