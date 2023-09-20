@@ -3304,7 +3304,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "VirtualEvent.Read",
           "ChangeType": "Addition",
-          "Description": "Added support for the user-delegated permissions `VirtualEvent.Read` within the subscriptions of the [virtual events](https://learn.microsoft.com/en-us/graph/api/resources/virtualevent?view=graph-rest-beta) resource.",
+          "Description": "Added support for the user-delegated permissions `VirtualEvent.Read` within the subscriptions of the [virtual event](https://learn.microsoft.com/en-us/graph/api/resources/virtualevent?view=graph-rest-beta) resource.",
           "Target": "virtualEvent"
         }
       ],
