@@ -1,6 +1,6 @@
 ---
 title: "Delete smsAuthenticationMethodConfiguration"
-description: "Delete a smsAuthenticationMethodConfiguration object."
+description: "Delete an smsAuthenticationMethodConfiguration object."
 author: "luc-msft"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -39,7 +39,7 @@ DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -48,7 +48,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+Here's an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -94,7 +94,7 @@ DELETE https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/aut
 ---
 
 ### Response
-The following is an example of the response
+Here's an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true
