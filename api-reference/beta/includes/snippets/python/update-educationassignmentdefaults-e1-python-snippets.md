@@ -14,7 +14,7 @@ request_body = EducationAssignmentDefaults(
 	notification_channel_url = "https://graph.microsoft.com/beta/teams('id')/channels('id')",
 )
 
-result = await graph_client.education.classes.by_classe_id('educationClass-id').assignment_defaults.patch(request_body = request_body)
+result = await graph_client.education.classes.by_classe_id('educationClass-id').assignment_defaults.patch(body = request_body)
 
 
 ```

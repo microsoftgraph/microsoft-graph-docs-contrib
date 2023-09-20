@@ -14,7 +14,7 @@ request_body = CrossTenantIdentitySyncPolicyPartner(
 	),
 )
 
-result = await graph_client.policies.cro_tenant_acce_policy.partners.by_partner_id('crossTenantAccessPolicyConfigurationPartner-tenantId').identity_synchronization.patch(request_body = request_body)
+result = await graph_client.policies.cro_tenant_acce_policy.partners.by_partner_id('crossTenantAccessPolicyConfigurationPartner-tenantId').identity_synchronization.patch(body = request_body)
 
 
 ```

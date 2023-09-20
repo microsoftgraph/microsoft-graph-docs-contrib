@@ -14,7 +14,7 @@ request_body = CopyToNotebookPostRequestBody(
 	rename_as = "renameAs-value",
 )
 
-result = await graph_client.me.onenote.sections.by_section_id('onenoteSection-id').copy_to_notebook.post(request_body = request_body)
+result = await graph_client.me.onenote.sections.by_section_id('onenoteSection-id').copy_to_notebook.post(body = request_body)
 
 
 ```

@@ -78,10 +78,9 @@ You can find your existing app ID/client IDs or provision new ones by signing in
 
 If you're building an application that will support Azure AD users, and you do not use a converged application ID issued through the [Application registration portal](https://apps.dev.microsoft.com), you will need to provide the GUID for the application ID of your Azure app. To find the GUID for your tenant: 
 
-1. Sign in to the [Azure portal](https://portal.azure.com). 
-2. Select **Azure Active Directory**.
-3. Under **Manage**, select **App registrations**. 
-4. Select your app from the list and view your Application ID (GUID) listed under **Essentials**.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
+1. Expand the **Identity** menu > select **Applications** > **App registrations** > **New registration**.
+1. Select your app from the list and view your Application ID (GUID) listed under **Essentials**.
 
 ### Step 4: Configure support for cross-platform push notifications (optional) 
 If you've opted to configure your cross-device app in the Windows Dev Center, you can enable support for cross-platform push notifications by providing the credentials you use with the APIs for Android and iOS push messaging platforms. These are required if you're using the Project Rome SDKs for iOS and Android and you want to do more than publish user activities. If you're using Project Rome APIs for Microsoft Graph only, you don't need to perform this step. You can associate up to 10 sets of credentials per platform. 
@@ -121,7 +120,7 @@ The JSON file itself must be named **cross-platform-app-identifiers** and hosted
  
 The file will allow for multiple JSON objects with the same platform identifier. For example, an iPhone app and an iPad app should be listed as separate JSON objects, each with a platform value of iOS. The web platform identifier is shown in the following example.
  
-You don't need to include a JSON object for all platforms. Only include JSON objects for platforms where your application is using Project Rome APIs. For example, if you don't have an app client for the Android platform, you don’t need an entry in the file for Android.
+You don't need to include a JSON object for all platforms. Only include JSON objects for platforms where your application is using Project Rome APIs. For example, if you don't have an app client for the Android platform, you don't need an entry in the file for Android.
  
 The following example includes all the valid platform identifiers currently accepted. JSON objects that include an invalid platform value will be stripped out.  
 
@@ -165,12 +164,11 @@ You can find your existing app ID/client IDs or provision new ones by signing in
 > [!NOTE]
 > If you're building an application that supports Azure AD users, and you do not use a converged application ID issued through the [Application Registration Portal](https://apps.dev.microsoft.com), you will need to provide the GUID for the application ID of your Azure app. This type of ID should also be configured as platform type "msa". 
 
-To find the GUID in the Azure Portal for your tenant: 
+To find the GUID in the Microsoft Entra admin center  for your tenant: 
 
-1. Sign in to the [Azure portal](https://portal.azure.com).
-2. Select **Azure Active Directory**. 
-3. Under **Manage**, select **App registrations**.
-4. Select your app from the list. You can view your application ID (GUID) under **Essentials**.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a global administrator.
+1. Expand the **Identity** menu > Select **Applications** > **App registrations**.
+1. Select your app from the list. You can view your application ID (GUID) under **Essentials**.
 
 #### Encoding the cross-platform-app-identifiers file 
 If you're not seeing activities resume in the correct native applications across platforms, or you're unable to read activities published by all members in the group, your JSON file might not be getting parsed appropriately. When outputting this file, make sure you're saving the cross-platform-app-identifiers file with "Unicode (UTF-8 without signature) - Codepage 65001" encoding.

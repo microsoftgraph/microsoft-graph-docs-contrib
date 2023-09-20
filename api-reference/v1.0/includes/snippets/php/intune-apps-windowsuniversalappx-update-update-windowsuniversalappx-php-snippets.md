@@ -17,7 +17,7 @@ $requestBody->setPublisher('Publisher value');
 $largeIcon = new MimeContent();
 $largeIcon->setOdataType('microsoft.graph.mimeContent');
 $largeIcon->setType('Type value');
-$LargeIcon->setValue(base64_decode('dmFsdWU='));
+$largeIcon->setValue(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('dmFsdWU=')));
 $requestBody->setLargeIcon($largeIcon);
 $requestBody->setIsFeatured(true);
 $requestBody->setPrivacyInformationUrl('https://example.com/privacyInformationUrl/');
@@ -37,9 +37,9 @@ $requestBody->setIdentityResourceIdentifier('Identity Resource Identifier value'
 $requestBody->setIsBundle(true);
 $minimumSupportedOperatingSystem = new WindowsMinimumOperatingSystem();
 $minimumSupportedOperatingSystem->setOdataType('microsoft.graph.windowsMinimumOperatingSystem');
-$minimumSupportedOperatingSystem->setV8_0(true);
-$minimumSupportedOperatingSystem->setV8_1(true);
-$minimumSupportedOperatingSystem->setV10_0(true);
+$minimumSupportedOperatingSystem->setV80(true);
+$minimumSupportedOperatingSystem->setV81(true);
+$minimumSupportedOperatingSystem->setV100(true);
 $requestBody->setMinimumSupportedOperatingSystem($minimumSupportedOperatingSystem);
 $requestBody->setIdentityVersion('Identity Version value');
 

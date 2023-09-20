@@ -39,7 +39,7 @@ request_body = Conversation(
 	]
 )
 
-result = await graph_client.groups.by_group_id('group-id').conversations.post(request_body = request_body)
+result = await graph_client.groups.by_group_id('group-id').conversations.post(body = request_body)
 
 
 ```

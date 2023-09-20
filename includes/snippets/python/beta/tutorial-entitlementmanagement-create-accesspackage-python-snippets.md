@@ -14,7 +14,7 @@ request_body = AccessPackage(
 	description = "Access to resources for the campaign",
 )
 
-result = await graph_client.identity_governance.entitlement_management.acces_packages.post(request_body = request_body)
+result = await graph_client.identity_governance.entitlement_management.acces_packages.post(body = request_body)
 
 
 ```

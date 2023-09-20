@@ -13,7 +13,7 @@ request_body = UploadPkcs12PostRequestBody(
 	password = "password-value",
 )
 
-result = await graph_client.trust_framework.key_sets.by_key_set_id('trustFrameworkKeySet-id').upload_pkcs12.post(request_body = request_body)
+result = await graph_client.trust_framework.key_sets.by_key_set_id('trustFrameworkKeySet-id').upload_pkcs12.post(body = request_body)
 
 
 ```

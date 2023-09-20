@@ -34,7 +34,7 @@ request_body = CrossTenantAccessPolicyConfigurationPartner(
 	),
 )
 
-result = await graph_client.policies.cro_tenant_acce_policy.partners.post(request_body = request_body)
+result = await graph_client.policies.cro_tenant_acce_policy.partners.post(body = request_body)
 
 
 ```

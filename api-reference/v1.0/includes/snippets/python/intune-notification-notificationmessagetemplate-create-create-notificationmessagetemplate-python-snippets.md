@@ -18,7 +18,7 @@ request_body = NotificationMessageTemplate(
 	]
 )
 
-result = await graph_client.device_management.notification_message_templates.post(request_body = request_body)
+result = await graph_client.device_management.notification_message_templates.post(body = request_body)
 
 
 ```

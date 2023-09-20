@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new RootRequestBuilderGetRequestConfiguration();
 $queryParameters = RootRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->expand = ["children($select=id,name)"];
+$queryParameters->expand = ["children(\$select=id,name)"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 

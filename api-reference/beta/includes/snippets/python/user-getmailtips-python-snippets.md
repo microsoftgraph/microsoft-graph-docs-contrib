@@ -16,7 +16,7 @@ request_body = GetMailTipsPostRequestBody(
 	mail_tips_options = MailTipsType.AutomaticReplies | MailTipsType.MailboxFullStatus,
 )
 
-result = await graph_client.me.get_mail_tips.post(request_body = request_body)
+result = await graph_client.me.get_mail_tips.post(body = request_body)
 
 
 ```

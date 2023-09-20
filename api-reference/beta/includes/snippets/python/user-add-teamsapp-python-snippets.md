@@ -14,7 +14,7 @@ request_body = UserScopeTeamsAppInstallation(
 	}
 )
 
-result = await graph_client.users.by_user_id('user-id').teamwork.installed_apps.post(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').teamwork.installed_apps.post(body = request_body)
 
 
 ```

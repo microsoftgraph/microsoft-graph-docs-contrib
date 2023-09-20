@@ -14,7 +14,7 @@ $requestBody->setOdataType('#microsoft.graph.externalUsersSelfServiceSignUpEvent
 $onAttributeCollection = new OnAttributeCollectionExternalUsersSelfServiceSignUp();
 $onAttributeCollection->setOdataType('#microsoft.graph.onAttributeCollectionExternalUsersSelfServiceSignUp');
 $onAttributeCollectionAttributeCollectionPage = new AuthenticationAttributeCollectionPage();
-$OnAttributeCollectionAttributeCollectionPage->setCustomStringsFileId(null);
+$onAttributeCollectionAttributeCollectionPage->setCustomStringsFileId(null);
 $viewsAuthenticationAttributeCollectionPageViewConfiguration1 = new AuthenticationAttributeCollectionPageViewConfiguration();
 $viewsAuthenticationAttributeCollectionPageViewConfiguration1->setTitle(null);
 $viewsAuthenticationAttributeCollectionPageViewConfiguration1->setDescription(null);

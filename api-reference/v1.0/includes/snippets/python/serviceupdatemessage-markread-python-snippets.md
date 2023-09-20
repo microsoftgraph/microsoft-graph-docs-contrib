@@ -15,7 +15,7 @@ request_body = MarkReadPostRequestBody(
 	]
 )
 
-result = await graph_client.admin.service_announcement.messages.mark_read.post(request_body = request_body)
+result = await graph_client.admin.service_announcement.messages.mark_read.post(body = request_body)
 
 
 ```
