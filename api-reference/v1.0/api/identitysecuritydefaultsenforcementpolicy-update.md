@@ -1,4 +1,4 @@
-t about d---
+---
 title: "Update identitySecurityDefaultsEnforcementPolicy"
 description: "Update the properties of an identitySecurityDefaultsEnforcementPolicy object."
 ms.localizationpriority: medium
