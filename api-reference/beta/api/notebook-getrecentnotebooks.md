@@ -38,7 +38,7 @@ The `{id | userPrincipalName}` for the user must match the user encoded in the a
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|includePersonalNotebooks|Boolean|Include notebooks owned by the user. Set to `true` to include notebooks owned by the user; otherwise, set to `false`. If you don't include the `includePersonalNotebooks` parameter, your request will return a `400` error response.|
+|includePersonalNotebooks|Boolean|Include notebooks owned by the user. Set to `true` to include notebooks owned by the user; otherwise, set to `false`. If you don't include the `includePersonalNotebooks` parameter, your request returns a `400` error response.|
 
 ## Request headers
 | Name       | Description|
@@ -46,7 +46,7 @@ The `{id | userPrincipalName}` for the user must match the user encoded in the a
 | Authorization  | Bearer {code}|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 A successful response returns a `200 OK` that contains a JSON collection of **recentNotebooks**.
