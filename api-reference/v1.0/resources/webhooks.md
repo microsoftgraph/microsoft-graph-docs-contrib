@@ -24,9 +24,9 @@ In general, subscription operations require read permission to the resource. For
 
 | Permission type                        | Supported resource types                                                      |
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
-| Delegated - work or school account     | [alert][], [channel][], [contact][], [conversation][], [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [team][], [todoTask][], [user][]|
+| Delegated - work or school account     | [alert][], [callRecording][], [callTranscript][], [channel][], [contact][], [conversation][], [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [team][], [todoTask][], [user][]|
 | Delegated - personal Microsoft account | [contact][], [driveItem][], [event][], [list][], [message][], [todoTask][]                                        |
-| Application                            | [alert][], [callRecord][], [channel][], [chatMessage][], [contact][], [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [printer][], [printTaskDefinition][], [team][], [user][]|
+| Application                            | [alert][], [callRecord][], [callRecording][], [callTranscript][], [channel][], [chatMessage][], [contact][], [conversationMember][], [driveItem][], [event][], [group][], [list][], [message][], [printer][], [printTaskDefinition][], [team][], [user][]|
 
 ## See also
 
@@ -57,3 +57,5 @@ In general, subscription operations require read permission to the resource. For
 [team]: ./team.md
 [To Do task]: ./todotask.md
 [todoTask]: ./todotask.md
+[callTranscript]: ./calltranscript.md
+[callRecording]: ./callrecording.md
