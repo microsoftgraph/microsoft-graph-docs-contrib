@@ -111,8 +111,7 @@ Content-Type: application/json
       "countryOrRegion": null,
       "postalCode": null,
       "state": null,
-      "street": null,
-      "type": "unknown"
+      "street": null
     }
   },
   "admin": {
@@ -126,8 +125,7 @@ Content-Type: application/json
       "countryOrRegion": "US",
       "postalCode": "98052",
       "state": "WA",
-      "street": "123 Fake St.",
-      "type": "unknown"
+      "street": "123 Fake St."
     }
   },
   "registrar": {
@@ -149,8 +147,7 @@ Content-Type: application/json
       "countryOrRegion": "US",
       "postalCode": "98052",
       "state": "WA",
-      "street": "123 Fake St.",
-      "type": "unknown"
+      "street": "123 Fake St."
     }
   },
   "technical": {
@@ -164,8 +161,7 @@ Content-Type: application/json
       "countryOrRegion": "US",
       "postalCode": "98052",
       "state": "WA",
-      "street": "123 Fake St.",
-      "type": "unknown"
+      "street": "123 Fake St."
     }
   },
   "nameservers": [

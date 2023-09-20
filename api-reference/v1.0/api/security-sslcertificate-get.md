@@ -106,8 +106,7 @@ Content-Type: application/json
         "postalCode": null,
         "postOfficeBox": null,
         "state": "WA",
-        "street": null,
-        "type": "unknown"
+        "street": null
       },
       "email": null,
       "givenName": null,
@@ -132,8 +131,7 @@ Content-Type: application/json
         "postalCode": null,
         "postOfficeBox": null,
         "state": null,
-        "street": null,
-        "type": "unknown"
+        "street": null
       },
       "email": null,
       "givenName": null,

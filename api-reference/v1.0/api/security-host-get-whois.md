@@ -112,8 +112,7 @@ Content-Type: application/json
             "countryOrRegion": null,
             "postalCode": null,
             "state": null,
-            "street": null,
-            "type": "unknown"
+            "street": null
         }
     },
     "admin": {
@@ -127,8 +126,7 @@ Content-Type: application/json
             "countryOrRegion": "US",
             "postalCode": "98052",
             "state": "WA",
-            "street": "One Microsoft Way",
-            "type": "unknown"
+            "street": "One Microsoft Way"
         }
     },
     "registrar": {
@@ -142,8 +140,7 @@ Content-Type: application/json
             "countryOrRegion": "US",
             "postalCode": "83646",
             "state": "ID",
-            "street": "3540 E Longwing Ln",
-            "type": "unknown"
+            "street": "3540 E Longwing Ln"
         }
     },
     "registrant": {
@@ -157,8 +154,7 @@ Content-Type: application/json
             "countryOrRegion": "US",
             "postalCode": "98052",
             "state": "WA",
-            "street": "One Microsoft Way",
-            "type": "unknown"
+            "street": "One Microsoft Way"
         }
     },
     "technical": {
@@ -172,8 +168,7 @@ Content-Type: application/json
             "countryOrRegion": "US",
             "postalCode": "98052",
             "state": "WA",
-            "street": "One Microsoft Way",
-            "type": "unknown"
+            "street": "One Microsoft Way"
         }
     },
     "nameservers": [
@@ -212,4 +207,3 @@ Content-Type: application/json
     }
 }
 ```
-
