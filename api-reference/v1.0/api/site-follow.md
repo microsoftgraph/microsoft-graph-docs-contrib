@@ -32,7 +32,7 @@ POST /users/{user-id}/followedSites/add
 
 ## Request body
 
-In the request body, supply an array of JSON objects with the id parameter mentioned in the table below. 
+In the request body, supply an array of JSON objects with the ID parameter mentioned in the table below. 
 
 
 | Name                 | Value  | Description                                                            |
@@ -124,7 +124,7 @@ Content-type: application/json
 }
 ```
 
-If an error occured, it returns the following JSON response 
+If an error occurred, it returns the following JSON response 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
