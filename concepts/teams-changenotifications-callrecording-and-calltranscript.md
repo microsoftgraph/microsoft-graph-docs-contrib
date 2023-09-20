@@ -192,22 +192,22 @@ The decrypted notification payload looks like the following. The payload conform
 
 ```json
 {
-    "id": "MSMjMCMjOGIzMmI0MzktY2QxNy00ODc1LTg1NWQtYzA1MDM0ZmFkZWMx",
-    "meetingId": "MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19aalk0TXpRNU9UQXRZamxqWWkwMFpESXdMVGczTkdZdFptUTNNRGhtWm1FMk9EVTNAdGhyZWFkLnYy",
-    "meetingOrganizerId": "976f4b31-fd01-4e0b-9178-29cc40c14438",
-    "transcriptContentUrl": "communications/onlineMeetings/MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19aalk0TXpRNU9UQXRZamxqWWkwMFpESXdMVGczTkdZdFptUTNNRGhtWm1FMk9EVTNAdGhyZWFkLnYy/transcripts/MSMjMCMjOGIzMmI0MzktY2QxNy00ODc1LTg1NWQtYzA1MDM0ZmFkZWMx/content",
-    "createdDateTime": null,
-    "meetingOrganizer": {
-      "application": null,
-      "device": null,
-      "user": {
-        "userIdentityType": "aadUser",
-        "id": "976f4b31-fd01-4e0b-9178-29cc40c14438",
-        "displayName": null,
-        "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
-      }
+  "id": "MSMjMCMjOGIzMmI0MzktY2QxNy00ODc1LTg1NWQtYzA1MDM0ZmFkZWMx",
+  "meetingId": "MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19aalk0TXpRNU9UQXRZamxqWWkwMFpESXdMVGczTkdZdFptUTNNRGhtWm1FMk9EVTNAdGhyZWFkLnYy",
+  "meetingOrganizerId": "976f4b31-fd01-4e0b-9178-29cc40c14438",
+  "transcriptContentUrl": "communications/onlineMeetings/MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19aalk0TXpRNU9UQXRZamxqWWkwMFpESXdMVGczTkdZdFptUTNNRGhtWm1FMk9EVTNAdGhyZWFkLnYy/transcripts/MSMjMCMjOGIzMmI0MzktY2QxNy00ODc1LTg1NWQtYzA1MDM0ZmFkZWMx/content",
+  "createdDateTime": null,
+  "meetingOrganizer": {
+    "application": null,
+    "device": null,
+    "user": {
+      "userIdentityType": "aadUser",
+      "id": "976f4b31-fd01-4e0b-9178-29cc40c14438",
+      "displayName": null,
+      "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34"
     }
   }
+}
 ```
 
 For notifications with resource data, the payload looks like the following. This payload is for a recording available for an online meeting.
