@@ -27,15 +27,15 @@ The following table provides a summary of subscribable virtual event types, the 
 |:-------------------------------------------------------|:------------------------------------------------------------------------------------------|:--------------------------|:---------------------------|
 | All events (tenant-level)                              | `solutions/virtualEvents/events`                                                          | created                   | Application                |
 | All events (tenant-level by organizer/coorganizer IDs) | `solutions/virtualEvents/events/getEventsFromOrganizers(organizerIds=['id1', 'id2'])`     | created                   | Application                |
-| The events of a specific webinar                       | `solutions/virtualEvents/webinars/{webinarId}`                                            | updated                   | Application, Delegated     |
-| The session events of a webinar                        | `solutions/virtualEvents/webinars/{webinarId}/sessions`                                   | created, updated          | Application, Delegated     |
-| The registration events of a webinar                   | `solutions/virtualEvents/webinars/{webinarId}/registrations`                              | created, updated          | Application, Delegated     |
+| The events of a specific webinar                       | `solutions/virtualEvents/webinars/{webinarId}`                                            | updated                   | Application, delegated     |
+| The session events of a webinar                        | `solutions/virtualEvents/webinars/{webinarId}/sessions`                                   | created, updated          | Application, delegated     |
+| The registration events of a webinar                   | `solutions/virtualEvents/webinars/{webinarId}/registrations`                              | created, updated          | Application, delegated     |
 
 >**Note:** Replace values in with parenthesis with actual values.
 
 ## Subscribe to all events created in a tenant
 
-You can specify subscriptions for all events of a unique app and tenant in the subscription payload by using the following syntax: `solutions/virtualEvents/events`. The subscription designates the notification URL to receive all event-created notifications in a tenant for virtual events. Only event-created notifications are supported for this subscription. A tenant can only have one type of this subscription per application. User delegated virtual event permissions are restricted from creating this type of subscription.
+You can specify subscriptions for all events of a unique app and tenant in the subscription payload by using the following syntax: `solutions/virtualEvents/events`. The subscription designates the notification URL to receive all event-created notifications in a tenant for virtual events. Only event-created notifications are supported for this subscription. A tenant can only have one type of subscription per application. User-delegated virtual event permissions are restricted from creating this type of subscription.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -54,7 +54,7 @@ Content-Type: application/json
 ## Subscribe to all events created in a tenant with relevant organizers
 
 You can subscribe to all events that include any members of a set of organizers or coorganizers by using the following resource: 
-`solutions/virtualEvents/events/getEventsFromOrganizers(organizerIds=['id1', 'id2'])`. These subscriptions receive any created notifications for all virtual events for a set of organizer or coorganizer IDs. This subscription is considered a subscription to all events created in a tenant. User delegated virtual event permissions are restricted from creating this type of subscription.
+`solutions/virtualEvents/events/getEventsFromOrganizers(organizerIds=['id1', 'id2'])`. These subscriptions receive any created notifications for all virtual events for a set of organizer or coorganizer IDs. This subscription is considered a subscription to all events created in a tenant. User-delegated virtual event permissions are restricted from creating this type of subscription.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -75,7 +75,7 @@ Content-Type: application/json
 To receive updated notifications for a particular webinar, you need to create a subscription for that unique webinar by using the following resource:  `solutions/virtualEvents/webinars/{webinarId}`.
 
 An application can have only one subscription per webinar inside a tenant.
-A user delegated token can create a single subscription to webinar update events per webinar inside a tenant for the consenting user. Subscripition creation is restricted to webinar organizers or co-organizers of the same tenant as webinar organizer.
+A user-delegated token allows you to set up one subscription for receiving webinar update notifications within a tenant, but it's only available for users who have organized or co-organized webinars in the same tenant as the event host.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -96,7 +96,7 @@ Content-Type: application/json
 To subscribe to notifications for sessions that are created or updated in a webinar, specify the resource as `solutions/virtualEvents/webinars/{webinarId}/sessions`.
 
 An application can only have a single session level subscription per webinar in a tenant.
-A user delegated token can create a single subscription to all sessions events per webinar inside a tenant for the consenting user. Subscripition creation is restricted to webinar organizers or co-organizers of the same tenant as webinar organizer.
+A user-delegated token allows you to set up one subscription for receiving webinar update notifications within a tenant, but it's only available for users who have organized or co-organized webinars in the same tenant as the event host.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -121,7 +121,7 @@ For information about how to subscribe to meeting call events of a specific sess
 To subscribe to notifications for registration events of a webinar, specify the resource as `solutions/virtualEvents/webinars/{webinarId}/registrations`.
 
 An application can only have a single registration level subscription per webinar inside a tenant.
-A user delegated token can create a single subscription to all registration events per webinar inside a tenant for the consenting user. Subscripition creation is restricted to webinar organizers or co-organizers of the same tenant as webinar organizer.
+A user-delegated token allows you to set up one subscription for receiving webinar update notifications within a tenant, but it's only available for users who have organized or co-organized webinars in the same tenant as the event host.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
