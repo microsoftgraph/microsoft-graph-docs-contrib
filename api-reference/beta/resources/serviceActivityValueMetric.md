@@ -7,7 +7,7 @@ ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
-# serviceLevelAgreementAttainment resource type
+# serviceActivityValueMetric resource type
 
 Namespace: microsoft.graph
 
@@ -31,12 +31,12 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.serviceLevelAgreementAttainment"
+  "@odata.type": "microsoft.graph.serviceActivityValueMetric"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.serviceLevelAgreementAttainment",
+  "@odata.type": "#microsoft.graph.serviceActivityValueMetric",
   "intervalStartDateTime": "DateTimeOffset",
   "value": "Int64"
 }
