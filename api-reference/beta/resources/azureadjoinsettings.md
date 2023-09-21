@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the policy scope of the Entra ID (Azure AD) tenant that controls the ability for users and groups to register device identities to your organization using Entra Join.
+Represents the policy scope of the Entra ID (Azure AD) tenant that controls the ability for users and groups to register device identities to your organization using Entra join.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedToJoin|[deviceRegistrationMembership](../resources/deviceregistrationmembership.md)|Determines if Entra join is allowed. The possible values are `noDeviceRegistrationMembership` meaning no users/groups are allowed to do Entra join, `allDeviceRegistrationMembership` meaning all users/groups are allowed to do Entra join and `enumeratedDeviceRegistrationMembership` meaning specified users/groups are allowed to do Entra join.  |
+|allowedToJoin|[deviceRegistrationMembership](../resources/deviceregistrationmembership.md)|Determines if Entra join is allowed. The possible values are `noDeviceRegistrationMembership` meaning no users/groups are allowed to do Entra join, `allDeviceRegistrationMembership` meaning all users/groups are allowed to do Entra join and `enumeratedDeviceRegistrationMembership` meaning enumerated users/groups are allowed to do Entra join.  |
 |isAdminConfigurable|Boolean|Determines if Entra ID administrators can modify this policy.|
 
 ## Relationships
