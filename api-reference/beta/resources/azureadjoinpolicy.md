@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 
 Represents the policy scope of the Azure Active Directory (Azure AD) tenant that controls the ability for users and groups to register device identities to your organization using Azure AD Join.
 
+> [!CAUTION]
+> This resource type is deprecated. Use [azureADJoinSettings](../resources/azureadjoinsettings.md) instead.
+> 
 ## Properties
 
 |Property|Type|Description|
