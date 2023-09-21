@@ -34,9 +34,9 @@ For each recommendation, you have the following data:
 
 Eight types of recommendations are currently available in Azure AD recommendations. These recommendations are identified in a **recommendationType** property that's part of the **recommendation** object in Microsoft Graph.
 
-The following table lists the recommendation types that are available, and maps the Microsoft Graph values to the user-friendly names that are used on the Azure portal.
+The following table lists the recommendation types that are available, and maps the Microsoft Graph values to the user-friendly names that are used on the Microsoft Entra admin center.
 
-| recommendationType          | Friendly name in the Azure portal                                                                              | Comments                                                                                                                                                                        |
+| recommendationType          | Friendly name in the Microsoft Entra admin center                                                                              | Comments                                                                                                                                                                        |
 |-----------------------------|----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | adfsAppsMigration           | Migrate your eligible applications from AD FS to Azure AD for more security, productivity and automation       | For more information, see [Migrate apps from ADFS to Azure AD](/azure/active-directory/reports-monitoring/recommendation-migrate-apps-from-adfs-to-azure-ad)                    |
 | switchFromPerUserMFA        | Convert per-user MFA to Conditional Access MFA                                                                 | For more information, see [Convert per-user MFA to Conditional Access MFA](/azure/active-directory/reports-monitoring/recommendation-turn-off-per-user-mfa)                     |
