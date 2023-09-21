@@ -115,6 +115,10 @@ Use the following Microsoft Graph resources to manage PIM alerts.
 
 For more information about working with security alerts for Azure AD roles, see [Configure security alerts for Azure AD roles in Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts).
 
+## Audit logs
+
+All activities made through PIM for Azure AD roles are logged in Azure AD audit logs and you can read through the [List directory audits](/graph/api/directoryaudit-list) API.
+
 <!-- Start of: Link to ZT guidance: H2 section -->
 
 [!INCLUDE [zero-trust](~/../azure_docs/includes/active-directory-zero-trust.md)]
