@@ -10344,7 +10344,7 @@ items:
                 items:
                   - name: List
                     href: api/virtualendpoint-list-serviceplans.md
-              - name: Cloud PC shared-use service plan
+              - name: Cloud PC shared-use service plan (deprecated)
                 href: resources/cloudpcshareduseserviceplan.md
                 items:
                   - name: List
