@@ -1,36 +1,36 @@
 ---
-author: "vanshisingh"
-title: "List recycleBinItems"
-description: "Get a list of recycleBinItems under the specified site or storageContainer."
+author: vanshisingh
+ms.date: 02/08/2023
+title: Get recycleBinItem 
+description: Retrieve the list of recycleBinItem
 ms.localizationpriority: "medium"
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
+# Get recycleBinItem
 
-# List recycleBinItems
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Get a list of [recycleBinItems](../resources/recyclebinitem.md) objects and their properties.
+Retrieve the list of [recycleBinItem](../resources/recyclebinitem.md) resources under the specified site or storageContainer.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions.
 
-| Permission type                        | Permissions (from least to most privileged)                                                                                          |
-|:---------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| Delegated (work or school account)     | Files.Read, Files.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+|Permission type                       | Permissions (from least to most privileged)|
+|:-------------------------------------|:-----------------------------------------|
+|Delegated (work or school account)    | Files.Read, Files.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All  |
+|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All  |
+|Application                           | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All  |
 
+
+<!-- {
+"blockType": "ignored",
+}-->
 
 ## HTTP request
-
-<!-- { "blockType": "ignored" } -->
 
 ``` http
 GET /sites/{siteId}/recycleBin/items
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -40,63 +40,45 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request Body
 
-Do not supply a request body for this method.
+Do not supply a request body for this method
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [recycleBinItem](../resources/recyclebinitem.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and returns a collection of [microsoft.graph.recycleBinItem](../resources/recyclebinitem.md) in the response body.
 
 ## Examples
 
+The following example requests the list of recycleBin items under a specific site.
+
 ### Request
-The following is an example of a request.
 <!-- {
-  "blockType": "request",
-  "name": "list_recyclebinitem"
-}
--->
+"blockType": "ignored"
+}-->
+
 ``` http
-GET https://graph.microsoft.com/beta/sites/{sitesId}/recycleBin/items
+GET https://graph.microsoft.com/v1.0/sites/contoso.sharepoint.com,48f1898f-77d9-4a1b-bddc-1f49bb6dc134,7206fc09-e4af-48b3-8730-ed7321396d7a/recycleBin/items
 ```
 
+<!-- {
+"blockType": "ignored"
+}-->
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.recycleBinItem)"
-}
--->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.recycleBinItem",
-      "id": "dd933af6-2ec8-31cb-876d-2ce30211a898",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "createdDateTime": "String (timestamp)",
-      "description": "String",
-      "eTag": "String",
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "lastModifiedDateTime": "String (timestamp)",
-      "name": "String",
-      "parentReference": {
-        "@odata.type": "microsoft.graph.itemReference"
-      },
-      "webUrl": "String",
-      "size": "Integer",
-      "deletedDateTime": "String (timestamp)",
-      "deletedFromLocation": "String"
-    }
-  ]
+    "id": "825e764f-c118-438f-b5c4-b8fbe60ab569",
+    "name": "file1.txt",
+    "size": 469,
+    "deletedDateTime": "2023-03-27T12:06:59Z",
+    "deletedFromLocation": "Shared Documents/folder1"
 }
 ```
+
+
+<!-- {
+"type": "#page.annotation",
+"section": "documentation"
+}-->
