@@ -1,7 +1,7 @@
 ---
 title: "cloudPcFrontLineServicePlan resource type"
 description: "Represents a servicePlan that can be used by up to 3 users."
-author: "GuoanTang"
+author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: resourcePageType
