@@ -1,7 +1,7 @@
 ---
 title: "Get cloudPcFrontLineServicePlan"
 description: "Get the properties and relationships of a cloudPcFrontLineServicePlan object."
-author: "Guoan Tang"
+author: "GuoanTang"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
 doc_type: apiPageType
