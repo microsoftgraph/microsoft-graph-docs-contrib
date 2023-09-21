@@ -20,7 +20,7 @@ headers = {
 
 )
 
-result = await graph_client.planner.buckets.by_bucket_id('plannerBucket-id').patch(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.planner.buckets.by_bucket_id('plannerBucket-id').patch(body = request_body, request_configuration = request_configuration)
 
 
 ```

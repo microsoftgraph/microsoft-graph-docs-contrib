@@ -14,7 +14,7 @@ request_body = TimeOffReason(
 	is_active = True,
 )
 
-result = await graph_client.teams.by_team_id('team-id').schedule.time_off_reasons.post(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').schedule.time_off_reasons.post(body = request_body)
 
 
 ```

@@ -20,7 +20,7 @@ $vendorInformation = new SecurityVendorInformation();
 $vendorInformation->setProvider('String');
 $vendorInformation->setVendor('String');
 $requestBody->setVendorInformation($vendorInformation);
-$requestConfiguration = new AlertRequestBuilderPatchRequestConfiguration();
+$requestConfiguration = new AlertItemRequestBuilderPatchRequestConfiguration();
 $headers = [
 		'Prefer' => 'return=representation',
 	];

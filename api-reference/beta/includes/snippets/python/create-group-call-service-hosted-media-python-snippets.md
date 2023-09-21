@@ -58,7 +58,7 @@ request_body = Call(
 	tenant_id = "aa67bd4c-8475-432d-bd41-39f255720e0a",
 )
 
-result = await graph_client.communications.calls.post(request_body = request_body)
+result = await graph_client.communications.calls.post(body = request_body)
 
 
 ```

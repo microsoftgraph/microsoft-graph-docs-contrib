@@ -12,7 +12,7 @@ request_body = EducationGradingCategory(
 	display_name = "Quiz-1",
 )
 
-result = await graph_client.education.classes.by_classe_id('educationClass-id').assignment_settings.grading_categories.by_grading_categorie_id('educationGradingCategory-id').patch(request_body = request_body)
+result = await graph_client.education.classes.by_classe_id('educationClass-id').assignment_settings.grading_categories.by_grading_categorie_id('educationGradingCategory-id').patch(body = request_body)
 
 
 ```

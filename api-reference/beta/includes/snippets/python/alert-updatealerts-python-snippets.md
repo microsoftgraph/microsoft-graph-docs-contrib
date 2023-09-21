@@ -38,7 +38,7 @@ request_body = UpdateAlertsPostRequestBody(
 	]
 )
 
-result = await graph_client.security.alerts.update_alerts.post(request_body = request_body)
+result = await graph_client.security.alerts.update_alerts.post(body = request_body)
 
 
 ```

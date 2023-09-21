@@ -12,7 +12,7 @@ request_body = TeamsTab(
 	display_name = "My Contoso Tab - updated again",
 )
 
-result = await graph_client.chats.by_chat_id('chat-id').tabs.by_tab_id('teamsTab-id').patch(request_body = request_body)
+result = await graph_client.chats.by_chat_id('chat-id').tabs.by_tab_id('teamsTab-id').patch(body = request_body)
 
 
 ```

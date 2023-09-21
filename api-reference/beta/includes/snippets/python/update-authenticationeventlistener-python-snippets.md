@@ -18,7 +18,7 @@ request_body = OnTokenIssuanceStartListener(
 	priority = 500,
 )
 
-result = await graph_client.identity.authentication_event_listeners.by_authentication_event_listener_id('authenticationEventListener-id').patch(request_body = request_body)
+result = await graph_client.identity.authentication_event_listeners.by_authentication_event_listener_id('authenticationEventListener-id').patch(body = request_body)
 
 
 ```

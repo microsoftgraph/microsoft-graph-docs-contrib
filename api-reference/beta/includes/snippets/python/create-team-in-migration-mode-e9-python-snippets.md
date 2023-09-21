@@ -18,7 +18,7 @@ request_body = Team(
 	}
 )
 
-result = await graph_client.teams.post(request_body = request_body)
+result = await graph_client.teams.post(body = request_body)
 
 
 ```

@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new ProfileRequestBuilderGetRequestConfiguration();
 $queryParameters = ProfileRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->expand = ["names($select=first,last)","skills($select=displayName)"];
+$queryParameters->expand = ["names(\$select=first,last)","skills(\$select=displayName)"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
