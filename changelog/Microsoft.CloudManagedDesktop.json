@@ -7,7 +7,7 @@
               "ApiChange": "Property",
               "ChangedApiName": "selfServiceEnabled",
               "ChangeType": "Deprecation",
-              "Description": "Deprecated the **selfServiceEnabled** property of the [cloudPcUserSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersetting?view=graph-rest-beta) resource. The **selfServiceEnabled** property is deprecated and will stop returning data on Dec 1st, 2023.",
+              "Description": "Deprecated the **selfServiceEnabled** property of the [cloudPcUserSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersetting?view=graph-rest-beta) resource. The **selfServiceEnabled** property is deprecated and will stop returning data on December 1st, 2023.",
               "Target": "cloudPcUserSetting"
             }
           ],
