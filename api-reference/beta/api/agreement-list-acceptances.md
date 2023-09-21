@@ -1,7 +1,7 @@
 ---
 title: "List acceptances"
 description: "Get the details about the acceptance records for a specific agreement."
-author: "raprakasMSFT"
+author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: apiPageType
@@ -64,6 +64,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/94
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-agreementacceptance-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-agreementacceptance-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

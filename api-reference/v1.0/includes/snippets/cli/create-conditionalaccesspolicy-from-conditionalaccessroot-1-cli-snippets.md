@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc identity conditional-access policies create --body '{\
     "displayName": "Access to EXO requires MFA",\
     "state": "enabled",\

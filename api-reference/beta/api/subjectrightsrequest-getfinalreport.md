@@ -42,7 +42,7 @@ GET /privacy/subjectRightsRequests{subjectRightsRequestId}/getFinalReport
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -64,6 +64,10 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRight
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/subjectrightsrequest-getfinalreport-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/subjectrightsrequest-getfinalreport-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

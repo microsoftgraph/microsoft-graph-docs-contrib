@@ -33,7 +33,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Security().SecureScoreControlProfiles().BySecureScoreControlProfileId("secureScoreControlProfile-id").Patch(context.Background(), requestBody, nil)
+secureScoreControlProfiles, err := graphClient.Security().SecureScoreControlProfiles().BySecureScoreControlProfileId("secureScoreControlProfile-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

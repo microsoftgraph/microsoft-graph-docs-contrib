@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDeviceCompliancePolicySettingStateSummary()
@@ -37,7 +37,7 @@ requestBody.SetErrorDeviceCount(&errorDeviceCount)
 conflictDeviceCount := int32(3)
 requestBody.SetConflictDeviceCount(&conflictDeviceCount) 
 
-result, err := graphClient.DeviceManagement().DeviceCompliancePolicySettingStateSummaries().ByDeviceCompliancePolicySettingStateSummarieId("deviceCompliancePolicySettingStateSummary-id").Patch(context.Background(), requestBody, nil)
+deviceCompliancePolicySettingStateSummaries, err := graphClient.DeviceManagement().DeviceCompliancePolicySettingStateSummaries().ByDeviceCompliancePolicySettingStateSummaryId("deviceCompliancePolicySettingStateSummary-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

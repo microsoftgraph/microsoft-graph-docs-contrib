@@ -2,7 +2,7 @@
 title: "application: unsetVerifiedPublisher"
 description: "Unset the verified publisher of an application."
 ms.localizationpriority: medium
-author: "jesakowi"
+author: "xurobertMSFT"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
@@ -23,7 +23,7 @@ Unset the [verifiedPublisher](../resources/verifiedPublisher.md) previously set 
 
 ## HTTP request
 
-You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 <!-- { "blockType": "ignored" } -->
 
 ```http

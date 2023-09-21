@@ -1,7 +1,7 @@
 ---
 title: "Create federatedIdentityCredential"
 description: "Create a new federatedIdentityCredential object for an application."
-author: "shahzad-khalid"
+author: "nickludwig"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /applications/{id}/federatedIdentityCredentials

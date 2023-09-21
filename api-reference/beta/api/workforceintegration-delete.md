@@ -38,6 +38,7 @@ DELETE /teamwork/workforceIntegrations/{workforceIntegrationId}
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token} |
+| MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
 
@@ -65,6 +66,10 @@ DELETE https://graph.microsoft.com/beta/teamwork/workforceIntegrations/{workforc
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-workforceintegration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-workforceintegration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

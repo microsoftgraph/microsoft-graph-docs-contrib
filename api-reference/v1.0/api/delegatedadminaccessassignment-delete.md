@@ -1,7 +1,7 @@
 ---
 title: "Delete delegatedAdminAccessAssignment"
 description: "Delete a delegatedAdminAccessAssignment object."
-author: "koravva"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: apiPageType
@@ -82,6 +82,10 @@ If-Match: W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-delegatedadminaccessassignment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-delegatedadminaccessassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

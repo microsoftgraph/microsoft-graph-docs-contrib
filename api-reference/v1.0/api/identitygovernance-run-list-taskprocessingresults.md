@@ -37,7 +37,7 @@ GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/runs/{runId}/t
 
 ## Optional query parameters
 
-This method supports the `$select`, `$orderBy`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$orderby`, `$expand`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -93,6 +93,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-list-run-taskprocessingresult-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-run-taskprocessingresult-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -187,6 +191,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-list-run-taskprocessingresult-select-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-run-taskprocessingresult-select-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

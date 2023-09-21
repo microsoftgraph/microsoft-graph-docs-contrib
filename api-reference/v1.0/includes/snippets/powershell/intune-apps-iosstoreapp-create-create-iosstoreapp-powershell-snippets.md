@@ -43,6 +43,6 @@ $params = @{
 	}
 }
 
-New-MgDeviceAppMgtMobileApp -BodyParameter $params
+New-MgDeviceAppManagementMobileApp -BodyParameter $params
 
 ```

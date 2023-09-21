@@ -1,0 +1,104 @@
+---
+title: "Update synchronizationTemplate"
+description: "Update (override) the synchronization template associated with a given application."
+ms.localizationpriority: medium
+doc_type: apiPageType
+author: "ArvindHarinder1"
+ms.prod: "applications"
+---
+
+# Update synchronizationTemplate
+
+Namespace: microsoft.graph
+
+Update (override) the synchronization template associated with a given application.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|Synchronization.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Application.ReadWrite.OwnedBy, Synchronization.ReadWrite.All|
+
+[!INCLUDE [rbac-synchronization-apis](../includes/rbac-for-apis/rbac-synchronization-apis.md)]
+
+### HTTP Request
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH applications/{id}/synchronization/templates/{templateId}
+```
+
+## Request headers
+
+| Name           | Type    | Description|
+|:---------------|:--------|:-----------|
+| Authorization  | string  | Bearer {token}. Required. |
+
+## Request body
+
+In the request body, supply the [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) object to replace the existing template. Make sure all properties are provided. Missing properties will be erased.
+
+### Response
+
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+
+### Examples
+
+##### Request
+The following is an example of a request. 
+
+>**Note:** The request object shown here is shortened for readability. Include all the properties in an actual call.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "update_synchronizationtemplate"
+}-->
+```http
+PUT https://graph.microsoft.com/v1.0/applications/{id}/synchronization/templates/{templateId}
+Authorization: Bearer <token>
+Content-type: application/json
+
+{
+    "id": "Slack",
+    "applicationId": "{id}",
+    "factoryTag": "CustomSCIM"
+}
+```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-synchronizationtemplate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-synchronizationtemplate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+##### Response
+The following is an example of a response.
+<!-- {
+  "blockType": "response"
+} -->
+```http
+HTTP/1.1 204 No Content
+```
+
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "Update synchronizationtemplate",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": [
+  ]
+}
+-->
+
+

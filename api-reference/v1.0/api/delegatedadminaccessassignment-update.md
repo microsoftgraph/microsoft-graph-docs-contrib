@@ -1,7 +1,7 @@
 ---
 title: "Update delegatedAdminAccessAssignment"
 description: "Update the properties of a delegatedAdminAccessAssignment object."
-author: "koravva"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: apiPageType
@@ -115,6 +115,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-delegatedadminaccessassignment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-delegatedadminaccessassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

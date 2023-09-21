@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of an agreement object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "raprakasMSFT"
+author: "AlexFilipin"
 ---
 
 # Get agreement
@@ -61,6 +61,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/0e
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-agreement-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-agreement-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -128,6 +132,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/09
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-agreement-files-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-agreement-files-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

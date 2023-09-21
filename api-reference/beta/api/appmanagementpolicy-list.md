@@ -25,6 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                                             |
 | Application                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 
+
 ## Optional query parameters
 
 This method supports the `$select`, `$filter`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
@@ -70,6 +71,10 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-appmanagementpolicies-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-appmanagementpolicies-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -129,7 +134,7 @@ Content-type: application/json
                },
                {
                   "restrictionType": "passwordLifetime",
-                  "maxLifetime": "P4DT12H30M5S",
+                  "maxLifetime": "P90D",
                   "restrictForAppsCreatedAfterDateTime": "2017-10-19T10:37:00Z"
                },
                {
@@ -139,7 +144,7 @@ Content-type: application/json
                },
                {
                   "restrictionType": "symmetricKeyLifetime",
-                  "maxLifetime": "P4D",
+                  "maxLifetime": "P30D",
                   "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
                }
             ],

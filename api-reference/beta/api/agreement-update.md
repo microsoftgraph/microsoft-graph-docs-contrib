@@ -4,7 +4,7 @@ description: "Update the properties of an agreement object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "raprakasMSFT"
+author: "AlexFilipin"
 ---
 
 # Update agreement
@@ -66,6 +66,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-agreement-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-agreement-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -25,6 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
 
+[!INCLUDE [rbac-permission-grant-preapproval-policy-read](../includes/rbac-for-apis/rbac-permission-grant-preapproval-policy-read.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -70,6 +72,10 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-permissiongrantpolicies-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-permissiongrantpolicies-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -132,7 +138,11 @@ Content-type: application/json
           "clientApplicationTenantIds": [ "all" ],
           "clientApplicationPublisherIds": [ "all" ],
           "clientApplicationsFromVerifiedPublisherOnly": true,
-          "certifiedClientApplicationsOnly": false
+          "certifiedClientApplicationsOnly": false,
+          "scopeSensitivityLabels": {
+              "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+              "labelKind": "all"
+          }
         }
       ],
       "excludes": []
@@ -151,7 +161,11 @@ Content-type: application/json
           "clientApplicationIds": [ "all" ],
           "clientApplicationTenantIds": [ "all" ],
           "clientApplicationPublisherIds": [ "all" ],
-          "clientApplicationsFromVerifiedPublisherOnly": false
+          "clientApplicationsFromVerifiedPublisherOnly": false,
+          "scopeSensitivityLabels": {
+              "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+              "labelKind": "all"
+          }
         },
         {
           "id": "08619a19-ae6f-406c-b9a0-ea6af1f1558d",
@@ -163,7 +177,11 @@ Content-type: application/json
           "clientApplicationTenantIds": [ "all" ],
           "clientApplicationPublisherIds": [ "all" ],
           "clientApplicationsFromVerifiedPublisherOnly": false,
-          "certifiedClientApplicationsOnly": false
+          "certifiedClientApplicationsOnly": false,
+          "scopeSensitivityLabels": {
+              "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+              "labelKind": "all"
+          }
         }
       ],
       "excludes": []

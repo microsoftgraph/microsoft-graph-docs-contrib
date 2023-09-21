@@ -2,7 +2,7 @@
 title: "phoneAuthenticationMethod: disableSmsSignIn"
 description: "Disable SMS sign-in for a mobile phone registered to a user."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "luc-msft"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -106,6 +106,10 @@ POST https://graph.microsoft.com/v1.0/me/authentication/phoneMethods/3179e48a-75
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/phoneauthenticationmethod-disablesmssignin-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/phoneauthenticationmethod-disablesmssignin-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -25,6 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Policy.ReadWrite.ApplicationConfiguration   |
 
+[!INCLUDE [rbac-app-auth-method-policy-apis](../includes/rbac-for-apis/rbac-app-auth-method-policy-apis.md)]
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -90,7 +92,7 @@ Content-Type: application/json
             },
             {
                 "restrictionType": "passwordLifetime",
-                "maxLifetime": "P4DT12H30M5S",
+                "maxLifetime": "P90D",
                 "restrictForAppsCreatedAfterDateTime": "2017-01-01T10:37:00Z"
             },
             {
@@ -105,7 +107,7 @@ Content-Type: application/json
             },
             {
                 "restrictionType": "symmetricKeyLifetime",
-                "maxLifetime": "P40D",
+                "maxLifetime": "P30D",
                 "restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z"
             }
         ],
@@ -114,7 +116,7 @@ Content-Type: application/json
                 "restrictionType": "asymmetricKeyLifetime",
                 "maxLifetime": "P30D",
                 "restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z"
-            },
+            }
         ]
     }
 }
@@ -122,6 +124,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-tenantappmanagementpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-tenantappmanagementpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

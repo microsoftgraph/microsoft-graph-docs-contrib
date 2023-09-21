@@ -69,7 +69,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9637
+Content-Length: 9694
 
 {
   "value": {
@@ -271,6 +271,7 @@ Content-Length: 9637
     "specificationVersion": "Specification Version value",
     "joinType": "azureADJoined",
     "skuFamily": "Sku Family value",
+    "securityPatchLevel": "Security Patch Level value",
     "skuNumber": 9,
     "managementFeatures": "microsoftManagedDesktop",
     "chromeOSDeviceInfo": [

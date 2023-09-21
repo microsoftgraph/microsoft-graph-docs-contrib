@@ -1,7 +1,7 @@
 ---
 title: "List languages"
 description: "Retrieve a list of languages supported for customization within a B2X user flow."
-author: "jkdouglas"
+author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -72,6 +72,10 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_PartnerSignUp/l
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-userflowlanguageconfiguration-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-userflowlanguageconfiguration-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

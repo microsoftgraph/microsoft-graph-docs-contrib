@@ -4,23 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = EducationSubmissionResource()
-resource = EducationExcelResource()
-resource.@odata_type = '#microsoft.graph.educationExcelResource'
+graph_client = GraphServiceClient(request_adapter)
 
-resource.display_name = 'userAgeGroup QueryParameter Test.xlsx'
+request_body = EducationSubmissionResource(
+	resource = EducationExcelResource(
+		odata_type = "#microsoft.graph.educationExcelResource",
+		display_name = "userAgeGroup QueryParameter Test.xlsx",
+		file_url = "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RONPUDM2CZKNRF3TGHYUM7Z64WE",
+	),
+)
 
-resource.file_url = 'https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RONPUDM2CZKNRF3TGHYUM7Z64WE'
-
-
-request_body.resource = resource
-
-
-
-result = await client.education.classes.by_classe_id('educationClass-id').assignments.by_assignment_id('educationAssignment-id').submissions.by_submission_id('educationSubmission-id').resources.post(request_body = request_body)
+result = await graph_client.education.classes.by_classe_id('educationClass-id').assignments.by_assignment_id('educationAssignment-id').submissions.by_submission_id('educationSubmission-id').resources.post(body = request_body)
 
 
 ```

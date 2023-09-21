@@ -4,7 +4,7 @@ description: "Create a new agreement object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "raprakasMSFT"
+author: "AlexFilipin"
 ---
 
 # Create agreement
@@ -85,6 +85,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-agreement-from-agreements-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-agreement-from-agreements-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

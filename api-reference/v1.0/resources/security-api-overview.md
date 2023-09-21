@@ -178,8 +178,6 @@ The Microsoft Graph security API can open up new ways for you to engage with dif
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer). Under **Sample Queries**, choose **show more samples** and set the Security category to **on**.
 - Try [subscribing to and receiving notifications](/graph/webhooks) on entity changes.
 
-Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/partners).
-
 ## See also
 
 [Code and contribute](https://github.com/microsoftgraph/security-api-solutions/blob/master/CONTRIBUTING.md) to these Microsoft Graph security API samples:

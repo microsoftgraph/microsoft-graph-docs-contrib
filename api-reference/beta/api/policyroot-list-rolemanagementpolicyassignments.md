@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments?$f
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedrolemanagementpolicyassignment-directory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-unifiedrolemanagementpolicyassignment-directory-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-unifiedrolemanagementpolicyassignment-directory-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -175,6 +179,10 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments?$f
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedrolemanagementpolicyassignment-directory-expand-all-relationships-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-unifiedrolemanagementpolicyassignment-directory-expand-all-relationships-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-unifiedrolemanagementpolicyassignment-directory-expand-all-relationships-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -234,7 +242,7 @@ Content-Type: application/json
         "scopeType": "DirectoryRole",
         "lastModifiedDateTime": "2023-03-23T21:44:08.813Z",
         "lastModifiedBy": {
-          "displayName": "Weijie Lin",
+          "displayName": "Allan Deyoung",
           "id": null
         },
         "rules": [
@@ -564,6 +572,10 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments?$f
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedrolemanagementpolicyassignment-azureadgroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-unifiedrolemanagementpolicyassignment-azureadgroup-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-unifiedrolemanagementpolicyassignment-azureadgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -642,6 +654,10 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments?$f
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedrolemanagementpolicyassignment-azureadgroup-expand-all-relationships-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-unifiedrolemanagementpolicyassignment-azureadgroup-expand-all-relationships-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

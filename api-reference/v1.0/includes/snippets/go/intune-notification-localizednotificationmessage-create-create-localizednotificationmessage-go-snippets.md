@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewLocalizedNotificationMessage()
@@ -25,7 +25,7 @@ requestBody.SetMessageTemplate(&messageTemplate)
 isDefault := true
 requestBody.SetIsDefault(&isDefault) 
 
-result, err := graphClient.DeviceManagement().NotificationMessageTemplates().ByNotificationMessageTemplateId("notificationMessageTemplate-id").LocalizedNotificationMessages().Post(context.Background(), requestBody, nil)
+localizedNotificationMessages, err := graphClient.DeviceManagement().NotificationMessageTemplates().ByNotificationMessageTemplateId("notificationMessageTemplate-id").LocalizedNotificationMessages().Post(context.Background(), requestBody, nil)
 
 
 ```

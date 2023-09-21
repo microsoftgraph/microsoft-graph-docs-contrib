@@ -38,7 +38,7 @@ GET /security/threatIntelligence/articles
 
 ## Optional query parameters
 
-This method supports the `$count`, `$select`, `$search`, `$top`, `$skip`, and `$orderBy` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$select`, `$search`, `$top`, `$skip`, and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 > **Note:** Currently, the `$search` OData query parameter only supports single-term searches.
 
@@ -95,6 +95,10 @@ GET https://graph.microsoft.com/v1.0/security/threatIntelligence/articles
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-article-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-article-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

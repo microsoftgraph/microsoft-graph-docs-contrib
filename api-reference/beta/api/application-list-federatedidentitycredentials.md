@@ -1,7 +1,7 @@
 ---
 title: "List federatedIdentityCredentials"
 description: "Get a list of the federatedIdentityCredential objects and their properties."
-author: "shahzad-khalid"
+author: "nickludwig"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /applications/{id}/federatedIdentityCredentials
@@ -65,6 +65,10 @@ GET https://graph.microsoft.com/beta/applications/bcd7c908-1c4d-4d48-93ee-ff3834
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-federatedidentitycredential-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-federatedidentitycredential-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

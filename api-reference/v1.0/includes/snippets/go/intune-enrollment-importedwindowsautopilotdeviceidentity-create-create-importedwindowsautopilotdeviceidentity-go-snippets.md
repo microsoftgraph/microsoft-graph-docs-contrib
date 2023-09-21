@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewImportedWindowsAutopilotDeviceIdentity()
@@ -39,7 +39,7 @@ requestBody.SetState(state)
 assignedUserPrincipalName := "Assigned User Principal Name value"
 requestBody.SetAssignedUserPrincipalName(&assignedUserPrincipalName) 
 
-result, err := graphClient.DeviceManagement().ImportedWindowsAutopilotDeviceIdentities().Post(context.Background(), requestBody, nil)
+importedWindowsAutopilotDeviceIdentities, err := graphClient.DeviceManagement().ImportedWindowsAutopilotDeviceIdentities().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -2,7 +2,7 @@
 title: "Get signIn"
 description: "Describes the get method of the signIn resource (entity) from the Microsoft Graph API."
 ms.localizationpriority: medium
-author: "besiler"
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
@@ -58,7 +58,7 @@ This method supports OData query parameters to help customize the response. For 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and [signIn](../reso
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -117,7 +117,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns/66ea54eb-6301-4ee5-be62-f
 
 ### Response
 
-Here is an example of the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {

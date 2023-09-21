@@ -51,7 +51,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs/getProvisionedCloudPCs(groupId='{
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPC](../r
 
 ### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -75,6 +75,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/g
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcgetprovisionedcloudpcs-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcgetprovisionedcloudpcs-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -101,7 +105,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/g
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

@@ -1,7 +1,7 @@
 ---
 title: "Delete emailAuthenticationMethod"
 description: "Deletes a user's emailAuthenticationMethod object."
-author: "mmcla"
+author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
