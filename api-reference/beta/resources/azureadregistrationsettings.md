@@ -18,7 +18,7 @@ Represents the policy scope of the Entra ID (Azure AD) tenant that controls the 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedToRegister|[deviceRegistrationMembership](../resources/deviceregistrationmembership.md)|Determines if Entra registered is allowed. The possible values are `noDeviceRegistrationMembership` meaning no users/groups are allowed to do Entra registered, `allDeviceRegistrationMembership` meaning all users/groups are allowed to do Entra registered and `enumeratedDeviceRegistrationMembership` meaning specified users/groups are allowed to do Entra registered.  |
+|allowedToRegister|[deviceRegistrationMembership](../resources/deviceregistrationmembership.md)|Determines if Entra registered is allowed. The possible values are `noDeviceRegistrationMembership` meaning no users/groups are allowed to do Entra registered, `allDeviceRegistrationMembership` meaning all users/groups are allowed to do Entra registered and `enumeratedDeviceRegistrationMembership` meaning enumerated users/groups are allowed to do Entra registered.  |
 |isAdminConfigurable|Boolean|Determines if Entra ID administrators can modify this policy.|
 
 ## Relationships
