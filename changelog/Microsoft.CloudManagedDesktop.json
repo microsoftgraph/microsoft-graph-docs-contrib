@@ -129,7 +129,7 @@
               "ApiChange": "Resource",
               "ChangedApiName": "cloudPcFrontLineServicePlan",
               "ChangeType": "Addition",
-              "Description": "Added the [cloudPcFrontLineServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/intune-cloudPcFrontLineServicePlan?view=graph-rest-beta) resource and supported methods.",
+              "Description": "Added the [cloudPcFrontLineServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcFrontLineServicePlan?view=graph-rest-beta) resource and supported methods.",
               "Target": "cloudPcFrontLineServicePlan"
             },
             {
