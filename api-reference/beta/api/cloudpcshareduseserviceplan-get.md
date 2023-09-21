@@ -1,5 +1,5 @@
 ---
-title: "Get cloudPcSharedUseServicePlan"
+title: "Get cloudPcSharedUseServicePlan (deprecated)"
 description: "Read the properties and relationships of a cloudPcSharedUseServicePlan object."
 author: "GuoanTang"
 ms.localizationpriority: medium
@@ -7,13 +7,16 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# Get cloudPcSharedUseServicePlan
+# Get cloudPcSharedUseServicePlan (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) object. The cloudPcSharedUseServicePlan is deprecated and will not be supported starting October 08, 2023. This entity will not be included in the API response. Please use [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md).
+> [!CAUTION]
+> The **cloudPcSharedUseServicePlan** resource is deprecated and will stop returning data on Oct 8th, 2023. Please use the [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) instead.
+
+Read the properties and relationships of a [cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) object.
 
 ## Permissions
 
