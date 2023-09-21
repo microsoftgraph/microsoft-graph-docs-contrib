@@ -1392,81 +1392,55 @@
     },
     {
       "ChangeList": [
-          {
-            "Id": "8a566519-e115-4081-8f15-bc92112e8d64",
-            "ApiChange": "Property",
-            "ChangedApiName": "meetingOrganizer",
-            "ChangeType": "Addition",
-            "Description": "Added the `meetingOrganizer` property to the [callRecording](https://learn.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-1.0) resource.",
-            "Target": "callRecording"
-          },
-          {
-            "Id": "8a566519-e115-4081-8f15-bc92112e8d64",
-            "ApiChange": "Property",
-            "ChangedApiName": "meetingOrganizer",
-            "ChangeType": "Addition",
-            "Description": "Added the `meetingOrganizer` property to the [callTranscript](https://learn.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-1.0) resource.",
-            "Target": "callTranscript"
-          }
-        ],
-        "Id": "8a566519-e115-4081-8f15-bc92112e8d64",
-        "Cloud": "Prod",
-        "Version": "v1.0",
-        "CreatedDateTime": "2023-09-04T09:31:18.7436605Z",
-        "WorkloadArea": "Teamwork and communications",
-        "SubArea": "Calls and online meetings"
-      },
-      {
-        "ChangeList": [
-          {
-            "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
-            "ApiChange": "Resource",
-            "ChangedApiName": "callTranscript",
-            "ChangeType": "Addition",
-            "Description": "Added the [callTranscript](https://docs.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-1.0) resource type.",
-            "Target": "callTranscript"
-          },
-          {
-            "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
-            "ApiChange": "Method",
-            "ChangedApiName": "LIST",
-            "ChangeType": "Addition",
-            "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/callTranscript-list?view=graph-rest-1.0) operation to the [callTranscript] resource.",
-            "Target": "callTranscript"
-          },
-          {
-            "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
-            "ApiChange": "Method",
-            "ChangedApiName": "GET",
-            "ChangeType": "Addition",
-            "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/callTranscript-get?view=graph-rest-1.0) operation to the [callTranscript] resource.",
-            "Target": "callTranscript"
-          }
-        ],
-        "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
-        "Cloud": "prd",
-        "Version": "v1.0",
-        "CreatedDateTime": "2022-08-01T17:37:11Z",
-        "WorkloadArea": "Teamwork",
-        "SubArea": ""
-      },
-      {
-        "ChangeList": [
-          {
-            "Id": "ac7992ce-3a29-456a-88b9-934313fdd0ea",
-            "ApiChange": "Relationship",
-            "ChangedApiName": "transcripts",
-            "ChangeType": "Addition",
-            "Description": "Added the **transcripts** navigation property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
-            "Target": "onlineMeeting"
-          }
-        ],
-        "Id": "ac7992ce-3a29-456a-88b9-934313fdd0ea",
-        "Cloud": "Prod",
-        "Version": "v1.0",
-        "CreatedDateTime": "2022-08-01T12:09:10.9478462Z",
-        "WorkloadArea": "Cloud communications",
-        "SubArea": "Online meeting"
-      }
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callTranscript",
+          "ChangeType": "Addition",
+          "Description": "Added the [callTranscript](https://docs.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-1.0) resource type.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/callTranscript-list?view=graph-rest-1.0) operation to the [callTranscript] resource.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/callTranscript-get?view=graph-rest-1.0) operation to the [callTranscript] resource.",
+          "Target": "callTranscript"
+        }
+      ],
+      "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-01T17:37:11Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ac7992ce-3a29-456a-88b9-934313fdd0ea",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "transcripts",
+          "ChangeType": "Addition",
+          "Description": "Added the **transcripts** navigation property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "ac7992ce-3a29-456a-88b9-934313fdd0ea",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2022-08-01T12:09:10.9478462Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
+    }
   ]
 }
