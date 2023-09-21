@@ -53,37 +53,41 @@ Now that you're signed in, you can start making calls to Microsoft Graph.
 
 ### Get the signed-in user
 
-In this section, you'll locate the signed-in user and get their user ID. You'll need that to use as a parameter to the other commands you'll use later. Start by running the following command.
+In this section, you'll locate the signed-in user and get their user ID. You'll need that to use as a parameter to the other commands you'll use later. Start by running the following command. Replace `<your-display-name>` with the signed-in user's display name.
 
 ```bash
-mgc me get
+mgc users list --filter "displayName eq '<your-display-name>'"
 ```
 
 This command outputs a JSON representation of the signed-in user.
 
 ```json
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
-  "businessPhones": [
-    "\u002B1 412 555 0109"
-  ],
-  "displayName": "Megan Bowen",
-  "givenName": "Megan",
-  "jobTitle": "Marketing Manager",
-  "mail": "MeganB@contoso.com",
-  "mobilePhone": null,
-  "officeLocation": "12/1110",
-  "preferredLanguage": "en-US",
-  "surname": "Bowen",
-  "userPrincipalName": "MeganB@contoso.com",
-  "id": "4db673f0-3c2a-4d45-a9d9-3a4a8c63af6e"
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+  "value": [
+    {
+      "businessPhones": [
+        "\u002B1 412 555 0109"
+      ],
+      "displayName": "Megan Bowen",
+      "givenName": "Megan",
+      "jobTitle": "Marketing Manager",
+      "mail": "MeganB@contoso.com",
+      "mobilePhone": null,
+      "officeLocation": "12/1110",
+      "preferredLanguage": "en-US",
+      "surname": "Bowen",
+      "userPrincipalName": "MeganB@contoso.com",
+      "id": "4db673f0-3c2a-4d45-a9d9-3a4a8c63af6e"
+    }
+  ]
 }
 ```
 
 You can use an [OData query parameters](../query-parameters.md) to customize the response. For example, to request only the user's display name, you can use the `--select` option.
 
 ```bash
-mgc me get --select displayName
+mgc users get --user-id <user-id> --select displayName
 ```
 
 ### List the user's joined teams
@@ -91,7 +95,7 @@ mgc me get --select displayName
 Now use the `mgc me joined-teams list` command to list the user's joined teams.
 
 ```bash
-mgc me joined-teams list --select displayName,id
+mgc users joined-teams list --user-id <user-id> --select displayName,id
 ```
 
 ```json
