@@ -1,6 +1,6 @@
 ---
 title: "Get cloudPcFrontLineServicePlan"
-description: "Read the properties and relationships of a cloudPcFrontLineServicePlan object."
+description: "Get the properties and relationships of a cloudPcFrontLineServicePlan object."
 author: "Guoan Tang"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) object.
+Get the properties and relationships of a [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) object.
 
 ## Permissions
 
@@ -72,7 +72,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/frontLineS
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
