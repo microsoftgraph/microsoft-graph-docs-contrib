@@ -14,6 +14,10 @@ Namespace: microsoft.graph
 
 Represents the policy scope of the Azure Active Directory (Azure AD) tenant that controls the ability for users and groups to register device identities to your organization using **Azure AD registered**. For more information, see [What is a device identity?](/azure/active-directory/devices/overview).
 
+> [!CAUTION]
+> This resource type is deprecated. Use [azureADRegistrationSettings](../resources/azureadregistrationsettings.md) instead.
+> 
+
 ## Properties
 
 |Property|Type|Description|
