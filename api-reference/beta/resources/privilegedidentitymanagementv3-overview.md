@@ -89,15 +89,15 @@ For more information about using Microsoft Graph to configure rules, see [Overvi
 
 PIM for Azure AD roles generates alerts when it detects suspicious or unsafe settings for Azure AD roles in your tenant. The following seven alert types are available:
 
-| Alert | Microsoft Graph alert configuration resource | Microsoft Graph alert incident resource |
-|--|--|--|
-| Too many global administrators in the tenant | [tooManyGlobalAdminsAssignedToTenantAlertConfiguration](/graph/api/resources/toomanyglobaladminsassignedtotenantalertconfiguration) | [tooManyGlobalAdminsAssignedToTenantAlertIncident](/graph/api/resources/toomanyglobaladminsassignedtotenantalertincident) |
-| Invalid license alerts that limit the use of PIM | [invalidLicenseAlertConfiguration](/graph/api/resources/invalidlicensealertconfiguration) | [invalidLicenseAlertIncident](/graph/api/resources/invalidlicensealertincident) |
-| Roles configured for activation without requiring multifactor authentication | [noMfaOnRoleActivationAlertConfiguration](/graph/api/resources/nomfaonroleactivationalertconfiguration) | [noMfaOnRoleActivationAlertIncident](/graph/api/resources/nomfaonroleactivationalertincident) |
-| Users with unused eligible or active Azure AD role assignments | [redundantAssignmentAlertConfiguration](/graph/api/resources/redundantassignmentalertconfiguration) | [redundantAssignmentAlertIncident](/graph/api/resources/redundantassignmentalertincident) |
-| Azure AD roles being assigned outside of Privileged Identity Management | [rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration](/graph/api/resources/rolesassignedoutsideprivilegedidentitymanagementalertconfiguration) | [rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident](/graph/api/resources/rolesassignedoutsideprivilegedidentitymanagementalertincident) |
-| Azure AD roles being activated too frequently | [sequentialActivationRenewalsAlertConfiguration](/graph/api/resources/sequentialactivationrenewalsalertconfiguration) | [sequentialActivationRenewalsAlertIncident](/graph/api/resources/sequentialactivationrenewalsalertincident) |
-| Potential stale accounts in a privileged role | [staleSignInAlertConfiguration](/graph/api/resources/stalesigninalertconfiguration) | [staleSignInAlertIncident](/graph/api/resources/stalesigninalertincident) |
+| Alert | Microsoft Graph resources (alert configuration / incidents) |
+|--|--|
+| Too many global administrators in the tenant | [tooManyGlobalAdminsAssignedToTenantAlertConfiguration](/graph/api/resources/toomanyglobaladminsassignedtotenantalertconfiguration) / [tooManyGlobalAdminsAssignedToTenantAlertIncident](/graph/api/resources/toomanyglobaladminsassignedtotenantalertincident) |
+| Invalid license alerts that limit the use of PIM | [invalidLicenseAlertConfiguration](/graph/api/resources/invalidlicensealertconfiguration) / [invalidLicenseAlertIncident](/graph/api/resources/invalidlicensealertincident) |
+| Roles configured for activation without requiring multifactor authentication | [noMfaOnRoleActivationAlertConfiguration](/graph/api/resources/nomfaonroleactivationalertconfiguration) / [noMfaOnRoleActivationAlertIncident](/graph/api/resources/nomfaonroleactivationalertincident) |
+| Users with unused eligible or active Azure AD role assignments | [redundantAssignmentAlertConfiguration](/graph/api/resources/redundantassignmentalertconfiguration) / [redundantAssignmentAlertIncident](/graph/api/resources/redundantassignmentalertincident) |
+| Azure AD roles being assigned outside of Privileged Identity Management | [rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration](/graph/api/resources/rolesassignedoutsideprivilegedidentitymanagementalertconfiguration) / [rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident](/graph/api/resources/rolesassignedoutsideprivilegedidentitymanagementalertincident) |
+| Azure AD roles being activated too frequently | [sequentialActivationRenewalsAlertConfiguration](/graph/api/resources/sequentialactivationrenewalsalertconfiguration) / [sequentialActivationRenewalsAlertIncident](/graph/api/resources/sequentialactivationrenewalsalertincident) |
+| Potential stale accounts in a privileged role | [staleSignInAlertConfiguration](/graph/api/resources/stalesigninalertconfiguration) / [staleSignInAlertIncident](/graph/api/resources/stalesigninalertincident) |
 
 For more information about these alerts including the severity rating and triggers, see, [Configure security alerts for Azure AD roles in PIM](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts).
 
