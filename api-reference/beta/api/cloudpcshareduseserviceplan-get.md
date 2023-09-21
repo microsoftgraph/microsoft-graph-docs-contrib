@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> The **cloudPcSharedUseServicePlan** resource is deprecated and will stop returning data on Oct 8th, 2023. Please use the [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) instead.
+> The **cloudPcSharedUseServicePlan** resource is deprecated and will stop returning data on October 8th, 2023. Please use the [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) instead.
 
 Read the properties and relationships of a [cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) object.
 
