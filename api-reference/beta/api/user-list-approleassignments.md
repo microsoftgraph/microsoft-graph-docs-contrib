@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that a user has been granted. This operation also returns app roles assigned to groups that the user is a direct member of.
 
 > [!IMPORTANT]
-> To ensure complete results for users with many indirect app role assignments, use the **ConsistencyLevel** header set to `eventual` and `$count`, as described in [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries#group-properties). See [Example 1](#example-1-list-approleassignments-granted-to-a-user) for an example.
+> To ensure complete results for users with many indirect app role assignments, set the **ConsistencyLevel** header to `eventual` and `$count`, as described in [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries#group-properties). See [Example 1](#example-1-list-approleassignments-granted-to-a-user) for an example.
 
 ## Permissions
 
@@ -48,7 +48,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-Here is an example of the request to retrieve all app role assignments granted to the user, and to groups where the user is a direct member.
+Here's an example of the request to retrieve all app role assignments granted to the user, and to groups where the user is a direct member.
 
 
 # [HTTP](#tab/http)
@@ -112,7 +112,7 @@ Content-type: application/json
 
 #### Request
 
-Here is an example of the request to retrieve the app roles that have been assigned to a user, filtering by a `resourceId`, which is a GUID type.
+Here's an example of the request to retrieve the app roles that have been assigned to a user, filtering by a `resourceId`, which is a GUID type.
 
 
 # [HTTP](#tab/http)
