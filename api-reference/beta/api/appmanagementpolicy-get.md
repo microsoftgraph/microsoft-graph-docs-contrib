@@ -133,7 +133,7 @@ Content-type: application/json
                },
                {
                   "restrictionType": "passwordLifetime",
-                  "maxLifetime": "P4DT12H30M5S",
+                  "maxLifetime": "P90D",
                   "restrictForAppsCreatedAfterDateTime": "2017-10-19T10:37:00Z"
                },
                {
@@ -143,7 +143,7 @@ Content-type: application/json
                },
                {
                   "restrictionType": "symmetricKeyLifetime",
-                  "maxLifetime": "P4D",
+                  "maxLifetime": "P30D",
                   "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
                }
             ],
