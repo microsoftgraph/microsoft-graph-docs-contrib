@@ -1,6 +1,6 @@
 ---
 title: "approval: filterByCurrentUser"
-description: "Get the approval resources"
+description: "Get the approval resources."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
