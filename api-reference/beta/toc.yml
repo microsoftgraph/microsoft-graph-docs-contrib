@@ -14299,18 +14299,34 @@ items:
                     href: api/authenticationeventsflow-update.md
                   - name: Delete user flow
                     href: api/authenticationeventsflow-delete.md
-                  - name: List identity providers
-                    href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md
-                  - name: Add identity provider
-                    href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders.md
-                  - name: Remove identity provider
-                    href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-delete-identityproviders.md
-                  - name: List attributes
-                    href: api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
-                  - name: Add attributes
-                    href: api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
-                  - name: Remove attributes
-                    href: api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
+                  - name: Identity providers
+                    items:
+                    - name: List identity providers in a user flow
+                      href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md
+                    - name: Add identity provider to a user flow
+                      href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders.md
+                    - name: Remove identity provider from a user flow
+                      href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-delete-identityproviders.md
+                  - name: User flow attributes
+                    items:
+                      - name: User flow attribute
+                        href: resources/identityuserflowattribute.md
+                      - name: List
+                        href: api/identityuserflowattribute-list.md
+                      - name: Create
+                        href: api/identityuserflowattribute-post.md
+                      - name: Get
+                        href: api/identityuserflowattribute-get.md
+                      - name: Update
+                        href: api/identityuserflowattribute-update.md
+                      - name: Delete
+                        href: api/identityuserflowattribute-delete.md
+                      - name: List attributes in a user flow
+                        href: api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
+                      - name: Add attributes to a user flow
+                        href: api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
+                      - name: Remove attributes from a user flow
+                        href: api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
                   - name: Authentication condition applications
                     href: resources/authenticationconditionapplication.md
                     items:
@@ -17488,11 +17504,10 @@ items:
                   - name: Registration
                     href: resources/virtualeventregistration.md
                     items:
-                      - name: Registrants
-                        href: resources/virtualeventregistrant.md
-                        items:
-                          - name: Get
-                            href: api/virtualeventregistrant-get.md
+                      - name: List
+                        href: api/virtualeventregistration-list.md
+                      - name: Get
+                        href: api/virtualeventregistration-get.md
           - name: Devices (preview)
             items:
               - name: Provisioned device
