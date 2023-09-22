@@ -13,7 +13,7 @@ request_body = User(
 	device_enrollment_limit = 5,
 )
 
-result = await graph_client.users.post(request_body = request_body)
+result = await graph_client.users.post(body = request_body)
 
 
 ```

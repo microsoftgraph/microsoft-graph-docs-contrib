@@ -24,7 +24,7 @@ request_body = TenantCustomizedInformation(
 	website = "String",
 )
 
-result = await graph_client.tenant_relationships.managed_tenants.tenant_customized_information.by_tenant_customized_information_id('tenantCustomizedInformation-id').patch(request_body = request_body)
+result = await graph_client.tenant_relationships.managed_tenants.tenant_customized_information.by_tenant_customized_information_id('tenantCustomizedInformation-id').patch(body = request_body)
 
 
 ```

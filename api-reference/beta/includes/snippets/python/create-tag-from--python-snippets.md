@@ -16,7 +16,7 @@ request_body = Tag(
 	}
 )
 
-result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').tags.post(request_body = request_body)
+result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').tags.post(body = request_body)
 
 
 ```

@@ -23,7 +23,7 @@ request_body = LegalHold(
 	display_name = "String",
 )
 
-result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').legal_holds.post(request_body = request_body)
+result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').legal_holds.post(body = request_body)
 
 
 ```

@@ -13,7 +13,7 @@ $requestBody = new EvaluateApplicationPostRequestBody();
 $contentInfo = new ContentInfo();
 $contentInfo->setOdataType('#microsoft.graph.security.contentInfo');
 $contentInfo->setContentFormat('File');
-$ContentInfo->setIdentifier(null);
+$contentInfo->setIdentifier(null);
 $contentInfo->setState(new ContentState('rest'));
 $metadataKeyValuePair1 = new KeyValuePair();
 $metadataKeyValuePair1->setOdataType('#microsoft.graph.security.keyValuePair');
@@ -76,7 +76,7 @@ $additionalData = [
 ];
 $labelingOptions->setAdditionalData($additionalData);
 $requestBody->setLabelingOptions($labelingOptions);
-$requestConfiguration = new EvaluateApplicationRequestBuilderPostRequestConfiguration();
+$requestConfiguration = new MicrosoftEvaluateApplicationRequestBuilderPostRequestConfiguration();
 $headers = [
 	'User-Agent' => 'ContosoLobApp/1.0',
 ];

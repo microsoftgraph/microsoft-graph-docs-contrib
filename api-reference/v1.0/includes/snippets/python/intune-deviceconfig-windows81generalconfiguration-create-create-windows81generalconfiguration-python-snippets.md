@@ -48,7 +48,7 @@ request_body = Windows81GeneralConfiguration(
 	work_folders_url = "https://example.com/workFoldersUrl/",
 )
 
-result = await graph_client.device_management.device_configurations.post(request_body = request_body)
+result = await graph_client.device_management.device_configurations.post(body = request_body)
 
 
 ```
