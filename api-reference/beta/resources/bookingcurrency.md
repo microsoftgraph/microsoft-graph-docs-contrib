@@ -1,4 +1,4 @@
-using ---
+---
 title: "bookingCurrency resource type"
 description: "Represents a monetary currency supported by a bookingBusiness."
 ms.localizationpriority: medium
@@ -27,7 +27,7 @@ Represents a monetary currency supported by a [bookingBusiness](bookingbusiness.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String| A 3-character currency code, based on [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html). For example, the currency code for the US dollar is USD, and for the Australian dollar is AUD. Read-only.|
+|id|String| A three character currency code, based on [ISO 4217](https://www.iso.org/iso-4217-currency-codes.html). For example, the currency code for the US dollar is USD, and for the Australian dollar is AUD. Read-only.|
 |symbol|String| The currency symbol. For example, the currency symbol for the US dollar and for the Australian dollar is $.  |
 
 ## Relationships

@@ -48,7 +48,7 @@ This method supports only the `$select` OData query parameter to help customize 
 |Accept-Language|A valid ISO 639-1 locale or `0` for the default locale. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -324,7 +324,7 @@ HTTP/1.1 404 Not Found
 
 ### Example 3: Get organizational branding for the French locale
 
-In the following example, the **Accept-Language** header is used specify to retrieve the `fr-FR` localization branding.
+In the following example, the **Accept-Language** header is used to specify to retrieve the `fr-FR` localization branding.
 
 #### Request
 
@@ -408,7 +408,7 @@ Content-Type: application/json
 
 ### Example 4: Get the bannerLogo for the default locale
 
-The following example returns the **bannerLogo** object for the default locale. To retrieve Stream object types for example, **bannerLogo**, use the [Get organizationalBrandingLocalizationmethod](organizationalbrandinglocalization-get.md). You may specify the value of **id** as `default` or `0` in the request URL. If the property is not set, the request returns an empty response.
+The following example returns the **bannerLogo** object for the default locale. To retrieve Stream object types for example, **bannerLogo**, use the [Get organizationalBrandingLocalizationmethod](organizationalbrandinglocalization-get.md). You may specify the value of **id** as `default` or `0` in the request URL. If the property isn't set, the request returns an empty response.
 
 #### Request
 
@@ -440,9 +440,9 @@ Content-Type: image/*
 <Image>
 ```
 
-### Example 5: Get the bannerLogo for the default locale when it is not set
+### Example 5: Get the bannerLogo for the default locale when it isn't set
 
-The following example returns the **bannerLogo** object which hadn't been set for the default locale.
+The following example returns the **bannerLogo** object that hadn't been set for the default locale.
 
 #### Request
 

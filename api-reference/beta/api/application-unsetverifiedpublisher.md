@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Unset the the [verifiedPublisher](../resources/verifiedPublisher.md) previously set on an [application](../resources/application.md), removing all verified publisher properties. For more information, see [Publisher verification](/azure/active-directory/develop/publisher-verification-overview).
+Unset the [verifiedPublisher](../resources/verifiedPublisher.md) previously set on an [application](../resources/application.md), removing all verified publisher properties. For more information, see [Publisher verification](/azure/active-directory/develop/publisher-verification-overview).
 
 ## Permissions
 
@@ -40,7 +40,7 @@ POST /applications(appId='{appId}')/unsetVerifiedPublisher
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

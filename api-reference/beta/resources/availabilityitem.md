@@ -1,4 +1,4 @@
-Tony ---
+---
 title: "availabilityItem resource type"
 description: "Indicates the status of a staff member for a given time slot."
 author: "kwekua"

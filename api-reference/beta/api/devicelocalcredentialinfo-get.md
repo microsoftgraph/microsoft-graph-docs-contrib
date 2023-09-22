@@ -49,7 +49,7 @@ GET /deviceLocalCredentials/{deviceId}
 This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -57,10 +57,10 @@ If successful, this method returns a `200 OK` response code and a [deviceLocalCr
 
 ## Examples
 
-### Example 1: Get a device's local adminstrator account credential info
+### Example 1: Get a device's local administrator account credential info
 
 #### Request
-Here's an example of the request. This example does not return the **credentials** property.
+Here's an example of the request. This example doesn't return the **credentials** property.
 
 <!-- {
   "blockType": "request",
@@ -100,7 +100,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get the device local adminstrator account credential info with the **credentials** property
+### Example 2: Get the device local administrator account credential info with the **credentials** property
 
 #### Request
 Here's an example of the request.

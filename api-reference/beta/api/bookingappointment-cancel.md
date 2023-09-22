@@ -43,13 +43,13 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|cancellationMessage|String|A message to acknowledge with the customer that the appointment has been cancelled.|
+|cancellationMessage|String|A message to acknowledge with the customer that the appointment has been canceled.|
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
-If you attempt to cancel an appointment that does not exist, this method returns `HTTP 404 Not Found`.
+If you attempt to cancel an appointment that doesn't exist, this method returns `HTTP 404 Not Found`.
 
 ## Example
 
