@@ -1,6 +1,6 @@
 ---
 title: "Create identityUserFlowAttribute"
-description: "Create a new identityUserFlowAttribute object."
+description: "Create a new custom identityUserFlowAttribute object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "nanguil"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object.
+Create a new custom [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object.
 
 ## Permissions
 
@@ -124,7 +124,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -134,7 +134,7 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 201 Created
-Location: https://graph.microsoft.com/beta/identity/userFlowAttributes/extension_7a95ecd9489b4fb9a45722b913c4703b_Hobby
+Location: "/identity/userFlowAttributes('extension_d09380e2b4c642b9a203fb816a04a7ad_Hobby')"
 Content-type: application/json
 
 {
