@@ -25,7 +25,7 @@ Current **targetProduct** support includes the following:
      - [List tiIndicators](../api/tiindicators-list.md)
      - [Update](../api/tiindicator-update.md)
      - [Delete](../api/tiindicator-delete.md)
-- **Azure Sentinel** – Please refer this document to [Connect your threat intelligence platform to Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/connect-threat-intelligence-tip). Please note that the Security API exclusively accepts TiIndicator requests from existing customers.
+- **Azure Sentinel** – Please refer this document to [Connect your threat intelligence platform to Microsoft Sentinel](/azure/sentinel/connect-threat-intelligence-tip). Please note that the Security API exclusively accepts TiIndicator requests from existing customers.
 
   > [!NOTE]
   >The following indicator types are supported by Microsoft Defender for Endpoint targetProduct:
