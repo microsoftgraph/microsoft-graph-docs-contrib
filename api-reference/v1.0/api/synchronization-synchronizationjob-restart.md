@@ -26,10 +26,13 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP Request
 
-`{servicePrincipalId}` refers to the **id** of the service principal object. **id** is referred to as the **Object ID** of the enterprise application in the Azure portal.
+`{servicePrincipalId}` refers to the **id** of the service principal object. **id** is referred to as the **Object ID** of the enterprise application in app registrations in the Microsoft Entra admin center.
+
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/restart
+POST /servicePrincipals(appId='{appId}')/synchronization/jobs/{jobId}/restart
 ```
 
 ## Request headers

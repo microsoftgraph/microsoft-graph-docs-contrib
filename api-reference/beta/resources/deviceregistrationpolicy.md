@@ -44,7 +44,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The Here's is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
