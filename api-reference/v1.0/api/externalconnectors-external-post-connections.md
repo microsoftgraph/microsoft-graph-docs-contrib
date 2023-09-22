@@ -113,7 +113,7 @@ Content-Type: application/json
 ---
 
 ### Response
-The following is an example of the response.
+The following is an example of the response. It is important to note that in the response payload, `id`, `name`, and `description` are system generated properties. They are not referring to the properties in the connection that was just created.
 <!-- {
   "blockType": "response",
   "truncated": true,
