@@ -20,7 +20,7 @@ request_body = UnifiedRoleDefinition(
 	]
 )
 
-result = await graph_client.role_management.directory.role_definitions.by_role_definition_id('unifiedRoleDefinition-id').patch(request_body = request_body)
+result = await graph_client.role_management.directory.role_definitions.by_role_definition_id('unifiedRoleDefinition-id').patch(body = request_body)
 
 
 ```

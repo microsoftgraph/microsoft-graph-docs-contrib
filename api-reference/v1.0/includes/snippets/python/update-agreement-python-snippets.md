@@ -13,7 +13,7 @@ request_body = Agreement(
 	is_viewing_before_acceptance_required = True,
 )
 
-result = await graph_client.identity_governance.term_of_use.agreements.by_agreement_id('agreement-id').patch(request_body = request_body)
+result = await graph_client.identity_governance.term_of_use.agreements.by_agreement_id('agreement-id').patch(body = request_body)
 
 
 ```

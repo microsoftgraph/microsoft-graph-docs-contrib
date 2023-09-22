@@ -13,7 +13,7 @@ request_body = PublishedResource(
 	resource_name = "domain1.contoso.com",
 )
 
-result = await graph_client.on_premise_publishing_profiles.by_on_premise_publishing_profile_id('onPremisesPublishingProfile-id').published_resources.post(request_body = request_body)
+result = await graph_client.on_premise_publishing_profiles.by_on_premise_publishing_profile_id('onPremisesPublishingProfile-id').published_resources.post(body = request_body)
 
 
 ```

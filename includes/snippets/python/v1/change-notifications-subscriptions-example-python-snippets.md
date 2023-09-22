@@ -17,7 +17,7 @@ request_body = Subscription(
 	client_state = "SecretClientState",
 )
 
-result = await graph_client.subscriptions.post(request_body = request_body)
+result = await graph_client.subscriptions.post(body = request_body)
 
 
 ```

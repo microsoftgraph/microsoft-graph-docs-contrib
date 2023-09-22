@@ -19,7 +19,7 @@ request_body = AudioRoutingGroup(
 	]
 )
 
-result = await graph_client.communications.calls.by_call_id('call-id').audio_routing_groups.post(request_body = request_body)
+result = await graph_client.communications.calls.by_call_id('call-id').audio_routing_groups.post(body = request_body)
 
 
 ```

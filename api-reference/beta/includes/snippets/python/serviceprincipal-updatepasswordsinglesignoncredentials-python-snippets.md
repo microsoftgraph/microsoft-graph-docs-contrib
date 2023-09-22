@@ -24,7 +24,7 @@ request_body = UpdatePasswordSingleSignOnCredentialsPostRequestBody(
 	]
 )
 
-await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').update_password_single_sign_on_credentials.post(request_body = request_body)
+await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').update_password_single_sign_on_credentials.post(body = request_body)
 
 
 ```

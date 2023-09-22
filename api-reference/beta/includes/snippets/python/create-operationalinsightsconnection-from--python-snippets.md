@@ -15,7 +15,7 @@ request_body = OperationalInsightsConnection(
 	workspace_name = "my-workspace",
 )
 
-result = await graph_client.admin.windows.updates.resource_connections.post(request_body = request_body)
+result = await graph_client.admin.windows.updates.resource_connections.post(body = request_body)
 
 
 ```

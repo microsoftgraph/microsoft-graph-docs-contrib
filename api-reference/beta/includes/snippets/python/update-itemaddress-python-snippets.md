@@ -13,7 +13,7 @@ request_body = ItemAddress(
 	display_name = "Secret Hideout",
 )
 
-result = await graph_client.users.by_user_id('user-id').profile.addresses.by_addresse_id('itemAddress-id').patch(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').profile.addresses.by_addresse_id('itemAddress-id').patch(body = request_body)
 
 
 ```

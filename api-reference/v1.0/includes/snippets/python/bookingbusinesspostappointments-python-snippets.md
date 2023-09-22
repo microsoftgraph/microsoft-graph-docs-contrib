@@ -148,7 +148,7 @@ request_body = BookingAppointment(
 	}
 )
 
-result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').appointments.post(request_body = request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').appointments.post(body = request_body)
 
 
 ```

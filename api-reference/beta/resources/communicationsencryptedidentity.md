@@ -1,6 +1,6 @@
 --- 
 title: "communicationsEncryptedIdentity resource type"
-description: "Represents the identity of a user whose underlying identity is not available to the application due to privacy restrictions."
+description: "Represents the identity of a user whose underlying identity isn't available to the application due to privacy restrictions."
 author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity of a user whose underlying identity is not available to the application due to privacy restrictions. For example, in a group call, participants other than the one who invited a Skype Consumer user will not have access to the identity of that user in the call roster.
+Represents the identity of a user whose underlying identity isn't available to the application due to privacy restrictions. For example, in a group call, participants other than the one who invited a Skype Consumer user won't have access to the identity of that user in the call roster.
 
 Inherits from [identity](identity.md).
 
@@ -26,7 +26,7 @@ Inherits from [identity](identity.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

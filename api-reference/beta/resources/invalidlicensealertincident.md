@@ -1,6 +1,6 @@
 ---
 title: "invalidLicenseAlertIncident resource type"
-description: "Represents the details of an alert incident that is triggered if the current tenant does not have a valid Azure AD Premium P2 license."
+description: "Represents the details of an alert incident that is triggered if the current tenant doesn't have a valid Azure AD Premium P2 license."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an alert incident that is triggered if the current tenant does not have a valid Azure AD Premium P2 license.
+Represents the details of an alert incident that is triggered if the current tenant doesn't have a valid Azure AD Premium P2 license.
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
 
@@ -27,7 +27,7 @@ Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanag
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
