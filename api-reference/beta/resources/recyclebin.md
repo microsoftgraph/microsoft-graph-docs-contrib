@@ -9,18 +9,19 @@ doc_type: apiPageType
 
 # recycleBin resource type
 
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Provides a list of [recycleBinItems](recyclebinitem.md).
 
-## Methods
-
-None.
+Inherits from [baseItem](baseitem.md).
 
 ## Properties
 
 | Property | Type   | Description                                                                      |
 |:---------|:-------|:---------------------------------------------------------------------------------|
-| id       | String | The unique identifier for the **recycleBin** object. Returned only on `$select`. |
-
+| id       | String | The unique identifier for the **recycleBin** object. Returned only on `$select`. Inherited from [baseItem](baseitem.md). |
 
 ## Relationships
 
@@ -36,6 +37,7 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.recycleBin",
+  "baseType": "microsoft.graph.baseItem",
   "optionalProperties": []
 }-->
 
