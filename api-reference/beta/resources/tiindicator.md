@@ -25,7 +25,6 @@ Current **targetProduct** support includes the following:
      - [List tiIndicators](../api/tiindicators-list.md)
      - [Update](../api/tiindicator-update.md)
      - [Delete](../api/tiindicator-delete.md)
-- **Azure Sentinel** – Please refer this document to [Connect your threat intelligence platform to Microsoft Sentinel](/azure/sentinel/connect-threat-intelligence-tip). Please note that the Security API exclusively accepts TiIndicator requests from existing customers.
 
   > [!NOTE]
   >The following indicator types are supported by Microsoft Defender for Endpoint targetProduct:
@@ -35,6 +34,8 @@ Current **targetProduct** support includes the following:
 
    There's a limit of 15,000 indicators per tenant for Microsoft Defender for Endpoint.
 
+- **Microsoft Sentinel** – Please note that the Graph Security tiIndicator API is limited to accepting TiIndicator requests solely from existing customers. For detailed instructions on how to send your threat intelligent indicators to Microsoft Sentinel, please review this document to [Connect your threat intelligence platform to Microsoft Sentinel](/azure/sentinel/connect-threat-intelligence-tip), which outlines the most up-to-date method.
+  
 For details about the types of indicators supported and limits on indicator counts per tenant, see [Manage indicators](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
 
 ## Methods
