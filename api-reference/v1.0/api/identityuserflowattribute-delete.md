@@ -1,6 +1,6 @@
 ---
 title: "Delete identityUserFlowAttribute"
-description: "Delete an identityUserFlowAttribute."
+description: "Delete a custom identityUserFlowAttribute."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "nanguil"
@@ -11,7 +11,7 @@ ms.prod: "identity-and-sign-in"
 
 Namespace: microsoft.graph
 
-Delete an [identityUserFlowAttribute](../resources/identityuserflowattribute.md). Only custom user flow attributes can be deleted.
+Delete a custom [identityUserFlowAttribute](../resources/identityuserflowattribute.md).
 
 ## Permissions
 
