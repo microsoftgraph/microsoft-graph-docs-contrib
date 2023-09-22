@@ -59,7 +59,7 @@ Inherits from [entity](../resources/entity.md).
 |payloadDeliveryPlatform|payloadDeliveryPlatform|Method of delivery of the phishing payload used in the attack simulation and training campaign. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |report|[simulationReport](../resources/simulationreport.md)|Report of the attack simulation and training campaign.|
 |status|[simulationStatus](#simulationstatus-values)|Status of the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `running`, `scheduled`, `succeeded`, `failed`, `cancelled`, `excluded`, `unknownFutureValue`.|
-|trainingSetting|[trainingSetting](../resources/trainingSetting.md)|Details about the training settings for a simulation.|
+|trainingSetting|[trainingSetting](../resources/trainingsetting.md)|Details about the training settings for a simulation.|
 
 ### simulationStatus values
 
