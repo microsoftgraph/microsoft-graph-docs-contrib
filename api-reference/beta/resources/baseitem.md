@@ -18,6 +18,8 @@ Resources that derive from **baseItem** include:
 
 * [drive](drive.md)
 * [driveItem](driveitem.md)
+* [recycleBin](../resources/recyclebin.md)
+* [recycleBinItem](../resources/recyclebinitem.md)
 * [site](site.md)
 * [sharedDriveItem](shareddriveitem.md)
 
