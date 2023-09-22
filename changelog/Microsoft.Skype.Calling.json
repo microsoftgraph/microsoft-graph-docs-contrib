@@ -3,6 +3,80 @@
     {
       "ChangeList": [
         {
+          "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventRegistration",
+          "ChangeType": "Change",
+          "Description": "Renamed the **virtualEventRegistration** resource to the [virtualEventRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistrationConfiguration"
+        },
+        {
+          "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventRegistrant",
+          "ChangeType": "Change",
+          "Description": "Renamed the **virtualEventRegistrant** resource to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "registration",
+          "ChangeType": "Change",
+          "Description": "Renamed the **registration** relationship of the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinar?view=graph-rest-beta) resource to **registrationConfiguration**.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "registrations",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrations** relationship to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinar?view=graph-rest-beta) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "registrations",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrations** relationship to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sessions",
+          "ChangeType": "Addition",
+          "Description": "Added the **sessions** relationship to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "registrants",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the **registrants** relationship from the [virtualEventRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistrationConfiguration"
+        },
+        {
+          "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "questions",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the **questions** relationship from the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        }
+      ],
+      "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-03T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "b6dc9e4b-3c6d-4946-be20-90fac94839c2",
           "ApiChange": "Method",
           "ChangedApiName": "virtualEventSession",
