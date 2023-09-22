@@ -136,7 +136,7 @@ Content-type: application/json
           "displayName": "Hobby",
           "description": "Your hobby",
           "userFlowAttributeType": "custom",
-          "dataType": "string",
+          "dataType": "string"
       },
     ]
 }
