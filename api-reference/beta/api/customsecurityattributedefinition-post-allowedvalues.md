@@ -122,7 +122,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

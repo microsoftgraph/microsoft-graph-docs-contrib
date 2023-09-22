@@ -1,4 +1,4 @@
----
+using ---
 title: "bookingCurrency resource type"
 description: "Represents a monetary currency supported by a bookingBusiness."
 ms.localizationpriority: medium
@@ -36,7 +36,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

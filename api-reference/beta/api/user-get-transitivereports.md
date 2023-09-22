@@ -44,7 +44,7 @@ This method supports the `$filter` query parameter for only the **accountEnabled
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a count of trans
 
 ### Request
 
-The following is an example of the request. The `$count` query segment is required.
+Here's an example of the request. The `$count` query segment is required.
 
 
 # [HTTP](#tab/http)
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/users/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4/
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 <!-- {
   "blockType": "response"
 } -->

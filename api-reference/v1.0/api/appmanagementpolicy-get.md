@@ -40,7 +40,7 @@ GET /policies/appManagementPolicies/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a single [appMan
 
 ### Request
 
-The following is an example of the request.  From the response, the app management policy defines the following restrictions for application and service principal objects:
+The Here's an example of the request.  From the response, the app management policy defines the following restrictions for application and service principal objects:
 
 - Blocks creating of new passwords after 2019-10-19 at 10:37 AM UTC time.
 - Limits password secrets for apps created after 2019-10-19 at 10:37 AM UTC time to less than 4 days, 12 hours, 30 minutes and 5 seconds.
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/v1.0/policies/appManagementPolicies/{id}
 
 ### Response
 
-The following is an example of the response.
+The Here's an example of the response.
 
 <!-- {
   "blockType": "response",

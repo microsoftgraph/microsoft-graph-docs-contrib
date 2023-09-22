@@ -71,7 +71,7 @@ If successful, this method returns `201, Created` response code and a new [perso
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 
@@ -130,7 +130,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

@@ -47,7 +47,7 @@ If successful, this method returns a `200 Ok` response code and an [educationMod
 The following example shows how to call this API.
 
 ### Request
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,7 +95,7 @@ POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-
 ---
 
 ### Response
-The following is an example of a response.
+Here's an example of a response.
 
 <!-- {
   "blockType": "response",

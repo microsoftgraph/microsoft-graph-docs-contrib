@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and a [deviceLocalCr
 ### Example 1: Get a device's local adminstrator account credential info
 
 #### Request
-The following is an example of the request. This example does not return the **credentials** property.
+Here's an example of the request. This example does not return the **credentials** property.
 
 <!-- {
   "blockType": "request",
@@ -76,7 +76,7 @@ ocp-client-version: "1.2"
 
 
 #### Response
-The following is an example of the response.
+Here's an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -103,7 +103,7 @@ Content-type: application/json
 ### Example 2: Get the device local adminstrator account credential info with the **credentials** property
 
 #### Request
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -118,7 +118,7 @@ ocp-client-version: "1.2"
 ```
 
 #### Response
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

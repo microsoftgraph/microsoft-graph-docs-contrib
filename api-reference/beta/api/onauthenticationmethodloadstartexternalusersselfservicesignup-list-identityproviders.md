@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a new [identityP
 ## Examples
 
 #### Request
-The following is an example of a request.
+Here's an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37
 ---
 
 #### Response
-The following is an example of the response
+Here's an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,

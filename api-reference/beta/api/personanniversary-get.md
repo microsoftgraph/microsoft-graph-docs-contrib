@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and the requested [p
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/me/profile/anniversaries/{id}
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

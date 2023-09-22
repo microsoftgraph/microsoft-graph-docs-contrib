@@ -55,7 +55,7 @@ If you attempt to cancel an appointment that does not exist, this method returns
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -107,7 +107,7 @@ Content-type: application/json
 ---
 
 ### Response
-The following is an example of the response.
+Here's an example of the response.
 <!-- {
   "blockType": "response"
 } -->

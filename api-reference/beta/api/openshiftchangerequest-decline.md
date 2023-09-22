@@ -58,7 +58,7 @@ The following example shows how to call this API.
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -87,7 +87,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 <!-- {
   "blockType": "response"
 } -->
