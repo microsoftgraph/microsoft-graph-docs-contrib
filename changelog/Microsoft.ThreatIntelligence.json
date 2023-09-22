@@ -118,14 +118,6 @@
       "ChangeList": [
         {
           "Id": "541c1216-7521-4a72-ac7e-7c9ab9c46e69",
-          "ApiChange": "Resource",
-          "ChangedApiName": "physicalAddress",
-          "ChangeType": "Addition",
-          "Description": "Added the [physicalAddress](https://learn.microsoft.com/en-us/graph/api/resources/physicalAddress?view=graph-rest-1.0) resource type.",
-          "Target": "physicalAddress"
-        },
-        {
-          "Id": "541c1216-7521-4a72-ac7e-7c9ab9c46e69",
           "ApiChange": "NavigationPropertyBinding",
           "ChangedApiName": "threatIntelligence/hosts/childHostPairs",
           "ChangeType": "Addition",
