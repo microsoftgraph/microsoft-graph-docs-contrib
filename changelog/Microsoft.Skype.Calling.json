@@ -3296,6 +3296,24 @@
       "CreatedDateTime": "2023-08-07T07:44:49.7319267Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ac7992ce-3a29-456a-88b9-934313fdd0ea",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "transcripts",
+          "ChangeType": "Addition",
+          "Description": "Added the **transcripts** navigation property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "ac7992ce-3a29-456a-88b9-934313fdd0ea",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-09-21T15:37:11Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": "Online meeting"
     }
   ]
 }
