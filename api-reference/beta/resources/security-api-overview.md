@@ -148,7 +148,7 @@ Threat indicators, also referred to as indicators of compromise (IoCs), represen
 The [tiIndicators](tiindicator.md) entity allows customers to feed threat indicators to Microsoft security solutions to enable block and alert actions on malicious activity or allow, which suppresses actions for indicators determined not to be relevant to an organization. When sending indicators, both the Microsoft solution that will utilize the indicator and the action to be taken on that indicator are specified.
 
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) – Enables you to alert and/or block on threat indicators associated with malicious activity. You can also allow an indicator for ignoring the indicator from automated investigations. For details about the types of indicators supported and limits on indicator counts per tenant, see [Manage indicators](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
-- [Azure Sentinel](/azure/sentinel/overview) – Please review this document to [Connect your threat intelligence platform to Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/connect-threat-intelligence-tip). Please note that the Security API exclusively accepts TiIndicator requests from existing customers.
+- [Microsoft Sentinel](/azure/sentinel/overview) – Please review this document to [Connect your threat intelligence platform to Microsoft Sentinel](https://learn.microsoft.com/en-us/azure/sentinel/connect-threat-intelligence-tip). Please note that the Security API exclusively accepts TiIndicator requests from existing customers.
 
 ## Threat submission
 
