@@ -15886,34 +15886,39 @@ items:
                     href: resources/attacksimulationoperation.md
                   - name: Get
                     href: api/attacksimulationoperation-get.md
-              - name: End User Notification
+              - name: End user notification
                 items:
-                  - name: endusernotification
+                  - name: End user notification
                     href: resources/endusernotification.md
                   - name: List
                     href: api/attacksimulationroot-list-endusernotifications.md
                   - name: Get
                     href: api/endusernotification-get.md
-                  - name: Get endusernotification detail
-                    href: api/endusernotificationdetail-get.md
-              - name: Landingpage
+              - name: End user notification detail
                 items:
-                  - name: landingpage
+                  - name: End user notification detail
+                  - name: Get
+                    href: api/endusernotificationdetail-get.md
+              - name: Landing page
+                items:
+                  - name: Landing page
                     href: resources/landingpage.md
                   - name: List
                     href: api/attacksimulationroot-list-landingpage.md
                   - name: Get
                     href: api/landingpage-get.md
-                  - name: Get landingpage detail
-                    href: api/landingpage-get.md
-              - name: LoginPage
-                items:
-                  - name: loginPage
-                    href: resources/loginPage.md
-                  - name: List
-                    href: api/attacksimulationroot-list-loginPage.md
+              - name: Landing page detail
+                items: 
                   - name: Get
-                    href: api/loginPage-get.md
+                    href: api/landingpagedetail-get.md
+              - name: Login page
+                items:
+                  - name: Login page
+                    href: resources/loginpage.md
+                  - name: List
+                    href: api/attacksimulationroot-list-loginpage.md
+                  - name: Get
+                    href: api/loginpage-get.md
               - name: Payload
                 items:
                   - name: Payload
@@ -15932,7 +15937,9 @@ items:
                     href: api/attacksimulationroot-list-trainings.md
                   - name: Get
                     href: api/training-get.md
-                  - name: Get training language detail
+              - name: Training language detail
+                items:
+                  - name: Get
                     href: api/traininglanguagedetail-get.md
               - name: Reports
                 items:
