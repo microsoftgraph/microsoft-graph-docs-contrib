@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API does not support getting call recordings from channel meetings. 
+Get a [callRecording](../resources/callrecording.md) object associated with a scheduled [onlineMeeting](../resources/onlinemeeting.md). This API doesn't support getting call recordings from channel meetings. 
 
 For a recording, this API returns the metadata of the single recording associated with the online meeting. For the content of a recording, this API returns the stream of bytes associated with the recording.
 
@@ -37,10 +37,10 @@ One of the following permissions is required to call this API. To learn more, in
 > * In delegated permission scenarios, [getting callRecording content](#example-2-get-callrecording-content)  is supported only for the meeting organizer. Meeting participants don't have permission to download meeting recordings. For more information, see [permissions or role-based access](/microsoftteams/tmr-meeting-recording-change). Tenant admins can unblock meeting participants to download meeting recording. For more information, see [block the download of Teams meeting recording files](/MicrosoftTeams/block-download-meeting-recording).
 > * The application permission `OnlineMeetingRecording.Read.Chat` uses [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
-To use application permissions for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+To use application permissions for this API, tenant administrators must create an application access policy and grant it to a user. This authorizes the app configured in the policy to fetch online meetings or online meeting artifacts on behalf of that user (with the user ID specified in the request path). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 > [!NOTE]
-> This API works for a meeting only if the meeting has not expired. For more details, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
+> This API works for a meeting only if the meeting has not expired. For more information, see [Limits and specifications for Microsoft Teams](/microsoftteams/limits-specifications-teams#meeting-expiration).
 
 ## HTTP request
 
@@ -60,7 +60,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/recordings/{recordingId}/content
 
 ## Optional query parameters
 
-This method does not support the [OData query parameters](/graph/query-parameters) to customize the response.
+This method doesn't support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -70,7 +70,7 @@ This method does not support the [OData query parameters](/graph/query-parameter
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
