@@ -145,12 +145,12 @@ The threat intelligence APIs (preview) allow you to operationalize intelligence 
 
 Threat indicators, also referred to as indicators of compromise (IoCs), represent data about known threats, such as malicious files, URLs, domains, and IP addresses. Customers can generate indicators through internal threat intelligence gathering or acquire indicators from threat intelligence communities, licensed feeds, and other sources. These indicators are then used in various security tools to defend against related threats.
 
-The [tiIndicator](tiindicator.md) entity allows customers to feed threat indicators to Microsoft security solutions to take a block or alert action on a malicious activity, or to allow the activity that has been determined to be irrelevant to the organization by suppressing actions for the indicator. To send an indicator, specify the Microsoft security solution intended to utilize the indicator and the action to take for that indicator.
+The [tiIndicator](tiindicator.md) entity allows customers to feed threat indicators to Microsoft security solutions to take a block or alert action on a malicious activity, or to allow the activity that has been determined to be irrelevant to the organization and suppress actions for the indicator. To send an indicator, specify the Microsoft security solution intended to utilize the indicator and the action to take for that indicator.
 
 Threat indicators sent via the Microsoft Graph security API are available today in the following products:
 
 - [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) – Enables you to alert and/or block on threat indicators associated with malicious activity. You can also allow an indicator for ignoring the indicator from automated investigations. For details about the types of indicators supported and limits on indicator counts per tenant, see [Manage indicators](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators).
-- [Microsoft Sentinel](/azure/sentinel/overview) – Only existing customers can use the **tiIndicator** API to send threat intelligence indicators to Microsoft Sentinel. For the most up-to-date, detailed instructions on how to send threat intelligent indicators to Microsoft Sentinel, see [Connect your threat intelligence platform to Microsoft Sentinel](/azure/sentinel/connect-threat-intelligence-tip).
+- [Microsoft Sentinel](/azure/sentinel/overview) – Only existing customers can use the [tiIndicator](tiindicator.md) API to send threat intelligence indicators to Microsoft Sentinel. For the most up-to-date, detailed instructions on how to send threat intelligent indicators to Microsoft Sentinel, see [Connect your threat intelligence platform to Microsoft Sentinel](/azure/sentinel/connect-threat-intelligence-tip).
   
 ## Threat submission
 

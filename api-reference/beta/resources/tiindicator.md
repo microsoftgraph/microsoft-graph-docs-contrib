@@ -17,7 +17,7 @@ Represents data used to identify malicious activities.
 
 If your organization works with threat indicators, either by generating your own, obtaining them from open source feeds, sharing with partner organizations or communities, or by purchasing feeds of data, you might want to use these indicators in various security tools for matching with log data. The **tiIndicators** entity allows you to upload your threat indicators to Microsoft security tools for the actions of allow, block, or alert.
 
-Threat indicators uploaded via **tiIndicators** are used with Microsoft threat intelligence to provide a customized security solution for your organization. When using the **tiIndicators** entity, specify the Microsoft security solution you want to utilize the indicators via the **targetProduct** property, and specify the action (allow, block, or alert) to which the security solution should apply the indicators via the **action** property.
+Threat indicators uploaded via **tiIndicator** are used with Microsoft threat intelligence to provide a customized security solution for your organization. When using the **tiIndicator** entity, specify the Microsoft security solution you want to utilize the indicators via the **targetProduct** property, and specify the action (allow, block, or alert) to which the security solution should apply the indicators via the **action** property.
 
 Currently, **targetProduct** supports the following products:
 
