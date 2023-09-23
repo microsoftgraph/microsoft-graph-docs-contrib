@@ -17328,6 +17328,8 @@ items:
                         href: resources/callrecords-callrecord.md
                       - name: Get
                         href: api/callrecords-callrecord-get.md
+                      - name: List
+                        href: api/callrecords-callrecord-list.md
                   - name: Direct routing calls
                     items:
                       - name: Direct routing log row
