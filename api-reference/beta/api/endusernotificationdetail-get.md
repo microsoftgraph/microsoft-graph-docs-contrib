@@ -90,7 +90,7 @@ Content-Type: application/json
     "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
     "displayName": "Alex Waber"
   },
-  "subject": "Congrats for reporting phsih!",
+  "subject": "Congrats for reporting phish!",
   "emailContent": "<meta http-equiv=\"Content-Type\" content=\"text/html>\">",
   "locale": "en-us",
   "language": "English",
