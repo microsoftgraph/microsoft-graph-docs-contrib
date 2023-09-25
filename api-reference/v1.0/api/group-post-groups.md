@@ -66,7 +66,7 @@ The following table shows the properties that are required when you create the [
 | displayName     | String  | The name to display in the address book for the group. Maximum length: 256 characters. Required.                                                                                                                                                                                                                                           |
 | mailEnabled     | Boolean | Set to `true` for mail-enabled groups. Required.                                                                                                                                                                                                                                                                                           |
 | mailNickname    | String  | The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : <> , SPACE`. Required. |
-| securityEnabled | Boolean | Set to `true` for security-enabled groups, including Microsoft 365 groups. Required. **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.                                                                                                                                    |
+| securityEnabled | Boolean | Set to `true` for security-enabled groups, including Microsoft 365 groups. Required. **Note:** Groups created using the Microsoft Entra admin center or the Azure portal always have **securityEnabled** initially set to `true`.                                                                                                                                    |
 
 > [!IMPORTANT]
 >
@@ -173,30 +173,30 @@ Content-type: application/json
 
 {
     "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
-	  "deletedDateTime": null,
-	  "classification": null,
-	  "createdDateTime": "2018-12-22T00:51:37Z",
-	  "description": "Self help community for library",
-	  "displayName": "Library Assist",
-	  "groupTypes": [
-	      "Unified"
-	  ],
-	  "mail": "library7423@contoso.com",
-	  "mailEnabled": true,
-	  "mailNickname": "library",
-	  "onPremisesLastSyncDateTime": null,
-	  "onPremisesSecurityIdentifier": null,
-	  "onPremisesSyncEnabled": null,
-	  "preferredDataLocation": "CAN",
-	  "proxyAddresses": [
-	      "SMTP:library7423@contoso.com"
-	  ],
-	  "renewedDateTime": "2018-12-22T00:51:37Z",
-	  "resourceBehaviorOptions": [],
-	  "resourceProvisioningOptions": [],
-	  "securityEnabled": false,
-	  "visibility": "Public",
-	  "onPremisesProvisioningErrors": []
+      "deletedDateTime": null,
+      "classification": null,
+      "createdDateTime": "2018-12-22T00:51:37Z",
+      "description": "Self help community for library",
+      "displayName": "Library Assist",
+      "groupTypes": [
+          "Unified"
+      ],
+      "mail": "library7423@contoso.com",
+      "mailEnabled": true,
+      "mailNickname": "library",
+      "onPremisesLastSyncDateTime": null,
+      "onPremisesSecurityIdentifier": null,
+      "onPremisesSyncEnabled": null,
+      "preferredDataLocation": "CAN",
+      "proxyAddresses": [
+          "SMTP:library7423@contoso.com"
+      ],
+      "renewedDateTime": "2018-12-22T00:51:37Z",
+      "resourceBehaviorOptions": [],
+      "resourceProvisioningOptions": [],
+      "securityEnabled": false,
+      "visibility": "Public",
+      "onPremisesProvisioningErrors": []
 }
 ```
 

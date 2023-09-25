@@ -3,7 +3,7 @@ title: "Update identityUserFlowAttribute"
 description: "Update properties of an identityUserFlowAttribute."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "jkdouglas"
+author: "nanguil"
 ms.prod: "identity-and-sign-in"
 ---
 

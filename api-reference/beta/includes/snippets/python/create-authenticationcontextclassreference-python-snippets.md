@@ -15,7 +15,7 @@ request_body = AuthenticationContextClassReference(
 	is_available = True,
 )
 
-result = await graph_client.identity.conditional_access.authentication_context_clas_references.post(request_body = request_body)
+result = await graph_client.identity.conditional_access.authentication_context_clas_references.post(body = request_body)
 
 
 ```

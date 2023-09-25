@@ -37,7 +37,7 @@ GET /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## Optional query parameters
 
-This method does not support OData query parameters to customize the response.
+This method doesn't support OData query parameters to customize the response.
 
 ## Request headers
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and the requested [o
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/teams/3d88b7a2-f988-4f4b-bb34-d66df66af126/
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

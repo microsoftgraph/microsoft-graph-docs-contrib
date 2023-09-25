@@ -15,6 +15,6 @@ $createdBy = new AppIdentity();
 $createdBy->setDisplayName('Requesting App Display Name');
 $requestBody->setCreatedBy($createdBy);
 
-$result = $graphServiceClient->print()->taskDefinitions()->post($requestBody)->wait();
+$result = $graphServiceClient->escapedPrint()->taskDefinitions()->post($requestBody)->wait();
 
 ```

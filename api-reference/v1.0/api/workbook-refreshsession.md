@@ -36,11 +36,11 @@ POST /me/drive/root:/{item-path}:/workbook/refreshSession
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| workbook-session-id | Workbook session Id to be refreshed. Required. |
+| workbook-session-id | Workbook session ID to be refreshed. Required. |
 
 ## Request body
 
-This API does not require any request body.
+This API doesn't require a request body.
 
 ## Response
 
@@ -48,7 +48,7 @@ If successful, this method returns `204 No Content` response code.
 
 ## Example
 ##### Request
-Here is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +99,7 @@ Note that workbook-session-id header is required.
 
 
 ##### Response
-Here is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

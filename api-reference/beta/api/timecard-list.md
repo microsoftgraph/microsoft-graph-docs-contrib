@@ -39,7 +39,7 @@ GET /teams/{teamId}/schedule/timeCards
 
 ## Optional query parameters
 
-This method supports the `$filter`, `$orderBy`, `$top`, `$skipToken` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter`, `$orderby`, `$top`, `$skipToken` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

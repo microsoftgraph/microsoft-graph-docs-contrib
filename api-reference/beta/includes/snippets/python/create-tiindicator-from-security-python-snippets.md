@@ -30,7 +30,7 @@ request_body = TiIndicator(
 	tlp_level = TlpLevel.Green,
 )
 
-result = await graph_client.security.ti_indicators.post(request_body = request_body)
+result = await graph_client.security.ti_indicators.post(body = request_body)
 
 
 ```

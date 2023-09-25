@@ -43,7 +43,7 @@ PATCH /print/shares/{id}
 | Content-type  | application/json. Required.|
 
 ## Request body
-In the request body, supply the values for relevant [printerShare](../resources/printershare.md) fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant [printerShare](../resources/printershare.md) fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 Following properties can be updated: 
 
@@ -51,13 +51,13 @@ Following properties can be updated:
 |:-------------|:------------|:------------|
 |printer|microsoft.graph.printer|The printer that this printer share is related to. Use the `printer@odata.bind` syntax as shown in the following example to update which printer this printer share is associated with.|
 |displayName|String|The name of the printer share that print clients should display.|
-|allowAllUsers|Boolean|	If true, all users and groups will be granted access to this printer share. This supersedes the allow lists defined by the allowedUsers and allowedGroups navigation properties.|
+|allowAllUsers|Boolean|	If true, all users and groups are granted access to this printer share. This supersedes the allow lists defined by the allowedUsers and allowedGroups navigation properties.|
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [printerShare](../resources/printershare.md) object in the response body.
 ## Example
 ##### Request
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -110,7 +110,7 @@ Content-type: application/json
 ---
 
 ##### Response
-The following is an example of the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

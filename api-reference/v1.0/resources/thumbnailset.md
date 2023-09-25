@@ -13,11 +13,11 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 The **ThumbnailSet** resource is a keyed collection of [thumbnail](thumbnail.md) resources.
-It is used to represent a set of thumbnails associated with a DriveItem.
+It's used to represent a set of thumbnails associated with a DriveItem.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
@@ -47,7 +47,7 @@ Here is a JSON representation of the resource.
 
 | Property | Type                      | Description                                                                       |
 |:---------|:--------------------------|:----------------------------------------------------------------------------------|
-| id       | String                    | The id within the item. Read-only.                                                |
+| id       | String                    | The ID within the item. Read-only.                                                |
 | large    | [Thumbnail](thumbnail.md) | A 1920x1920 scaled thumbnail.                                                     |
 | medium   | [Thumbnail](thumbnail.md) | A 176x176 scaled thumbnail.                                                       |
 | small    | [Thumbnail](thumbnail.md) | A 48x48 cropped thumbnail.                                                        |

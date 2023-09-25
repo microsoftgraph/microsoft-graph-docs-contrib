@@ -18,7 +18,7 @@ request_body = CloudPcOrganizationSettings(
 	),
 )
 
-result = await graph_client.device_management.virtual_endpoint.organization_settings.patch(request_body = request_body)
+result = await graph_client.device_management.virtual_endpoint.organization_settings.patch(body = request_body)
 
 
 ```

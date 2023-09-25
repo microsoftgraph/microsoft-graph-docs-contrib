@@ -17,7 +17,7 @@ request_body = DeviceConfigurationUserStatus(
 	user_principal_name = "User Principal Name value",
 )
 
-result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').user_statuses.by_user_statuse_id('deviceConfigurationUserStatus-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').user_statuses.by_user_statuse_id('deviceConfigurationUserStatus-id').patch(body = request_body)
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "Get userFlowLanguageConfiguration"
 description: "Read the properties and relationships of a userFlowLanguageConfiguration object."
-author: "jkdouglas"
+author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

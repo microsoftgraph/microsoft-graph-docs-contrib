@@ -14,7 +14,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get the list of [hostPair](../resources/security-hostpair.md) resources associated with a host, where that host is *either* the *parent* or the *child*.
+Get the list of [hostPair](../resources/security-hostpair.md) resources associated with a specified host, where that host is *either* the *parent* or the *child*.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

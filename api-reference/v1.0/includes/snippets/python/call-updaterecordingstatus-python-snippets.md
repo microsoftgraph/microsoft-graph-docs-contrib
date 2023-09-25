@@ -13,7 +13,7 @@ request_body = UpdateRecordingStatusPostRequestBody(
 	status = RecordingStatus.NotRecording | RecordingStatus.Recording | RecordingStatus.Failed,
 )
 
-result = await graph_client.communications.calls.by_call_id('call-id').update_recording_status.post(request_body = request_body)
+result = await graph_client.communications.calls.by_call_id('call-id').update_recording_status.post(body = request_body)
 
 
 ```

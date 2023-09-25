@@ -29,6 +29,14 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
+### For PIM for Azure AD roles
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | RoleAssignmentSchedule.Read.Directory, RoleAssignmentSchedule.ReadWrite.Directory |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
+
 ### Permissions required for calling this API for PIM for groups
 
 | Permission type                        | Permissions (from least to most privileged) |
@@ -44,6 +52,13 @@ To get an approval step in entitlement management:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/steps/{id}
+```
+
+To get an approval step in PIM for Azure AD roles:
+
+<!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/directory/roleAssignmentApprovals/{id}/steps/{id}
 ```
 
 To get an approval step in PIM for groups:

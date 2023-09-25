@@ -39,7 +39,7 @@ GET /auditLogs/directoryAudits/{id}
 
 ## Optional query parameters
 
-This method does not support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method doesn't support any OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -49,7 +49,7 @@ This method does not support any OData query parameters to help customize the re
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and [directoryAudit]
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/auditLogs/directoryAudits/{id}
 
 ### Response
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 <!-- {
   "blockType": "response",

@@ -61,7 +61,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_certificatebasedauthconfigurations"
+  "name": "list_certificatebasedauthconfigurations"
 }-->
 
 ```msgraph-interactive

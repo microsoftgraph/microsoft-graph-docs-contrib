@@ -27,7 +27,7 @@ request_body = BusinessScenarioTask(
 	),
 )
 
-result = await graph_client.solutions.busine_scenarios.by_busine_scenario_id('businessScenario-id').planner.tasks.post(request_body = request_body)
+result = await graph_client.solutions.busine_scenarios.by_busine_scenario_id('businessScenario-id').planner.tasks.post(body = request_body)
 
 
 ```

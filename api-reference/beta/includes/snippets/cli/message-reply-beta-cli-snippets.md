@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc-beta users messages reply post --user-id {user-id} --message-id {message-id} --body '{\
-  "message":{  \
+  "message":{\
     "toRecipients":[\
       {\
         "emailAddress": {\
@@ -22,7 +22,7 @@ mgc-beta users messages reply post --user-id {user-id} --message-id {message-id}
       }\
      ]\
   },\
-  "comment": "Samantha, Randi, would you name the group please?" \
+  "comment": "Samantha, Randi, would you name the group please?"\
 }\
 \
 '

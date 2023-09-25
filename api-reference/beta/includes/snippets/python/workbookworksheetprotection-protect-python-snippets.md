@@ -24,7 +24,7 @@ request_body = ProtectPostRequestBody(
 	),
 )
 
-await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.worksheets.by_worksheet_id('workbookWorksheet-id').protection.protect.post(request_body = request_body)
+await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.worksheets.by_worksheet_id('workbookWorksheet-id').protection.protect.post(body = request_body)
 
 
 ```

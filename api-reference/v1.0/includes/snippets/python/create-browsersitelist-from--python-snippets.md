@@ -13,7 +13,7 @@ request_body = BrowserSiteList(
 	description = "Production site list for team A",
 )
 
-result = await graph_client.admin.edge.internet_explorer_mode.site_lists.post(request_body = request_body)
+result = await graph_client.admin.edge.internet_explorer_mode.site_lists.post(body = request_body)
 
 
 ```
