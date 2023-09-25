@@ -7,19 +7,11 @@ ms.localizationpriority: medium
 In this exercise, you will learn how to create an Azure Active Directory (Azure AD) application. This serves as the security principal to run the data extraction process with Microsoft Graph Data Connect.
 
 
-## Create a Microsoft Azure Active Directory application 
+## Create a Microsoft Azure Active Directory application
 
-1. Open a browser and go to your [Azure portal](https://portal.azure.com/).
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) with at least the *Application Administrator* or*Application Developer* role.
 
-1. Sign in using an account with [Application Administrator](/azure/active-directory/roles/permissions-reference#application-administrator) or [Application Developer](/azure/active-directory/roles/permissions-reference#application-developer) role to your Azure portal.
-
-1. On the home page, select the **Azure Active Directory** service.
-
-1. On the Azure AD **Overview** page, select **App registrations** from the **Manage** section of the left navigation pane. Ensure that you're signed-in with your "developer" account.
-
-1. Select the **New registration** button.
-
-    ![A screenshot that shows the App registrations in the Azure Active Directory service in the Azure portal.](../concepts/images/data-connect-azure-aad-app-reg.png)
+1. Expand the **Identity** menu > select **Applications** > **App registrations** > **New registration**.
 
 1. Use the following values to create a new Azure AD application and select **Register**.
 
