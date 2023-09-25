@@ -19,7 +19,7 @@ passwordCredentials.restrictForAppsCreatedAfterDateTime = OffsetDateTimeSerializ
 passwordCredentialsList.add(passwordCredentials);
 PasswordCredentialConfiguration passwordCredentials1 = new PasswordCredentialConfiguration();
 passwordCredentials1.restrictionType = AppCredentialRestrictionType.PASSWORD_LIFETIME;
-passwordCredentials1.maxLifetime = DatatypeFactory.newInstance().newDuration("P4DT12H30M5S");
+passwordCredentials1.maxLifetime = DatatypeFactory.newInstance().newDuration("P90D");
 passwordCredentials1.restrictForAppsCreatedAfterDateTime = OffsetDateTimeSerializer.deserialize("2014-10-19T10:37:00Z");
 passwordCredentialsList.add(passwordCredentials1);
 PasswordCredentialConfiguration passwordCredentials2 = new PasswordCredentialConfiguration();
@@ -29,7 +29,7 @@ passwordCredentials2.restrictForAppsCreatedAfterDateTime = OffsetDateTimeSeriali
 passwordCredentialsList.add(passwordCredentials2);
 PasswordCredentialConfiguration passwordCredentials3 = new PasswordCredentialConfiguration();
 passwordCredentials3.restrictionType = AppCredentialRestrictionType.SYMMETRIC_KEY_LIFETIME;
-passwordCredentials3.maxLifetime = DatatypeFactory.newInstance().newDuration("P4D");
+passwordCredentials3.maxLifetime = DatatypeFactory.newInstance().newDuration("P30D");
 passwordCredentials3.restrictForAppsCreatedAfterDateTime = OffsetDateTimeSerializer.deserialize("2014-10-19T10:37:00Z");
 passwordCredentialsList.add(passwordCredentials3);
 restrictions.passwordCredentials = passwordCredentialsList;
@@ -39,6 +39,15 @@ keyCredentials.restrictionType = AppKeyCredentialRestrictionType.ASYMMETRIC_KEY_
 keyCredentials.maxLifetime = DatatypeFactory.newInstance().newDuration("P90D");
 keyCredentials.restrictForAppsCreatedAfterDateTime = OffsetDateTimeSerializer.deserialize("2014-10-19T10:37:00Z");
 keyCredentialsList.add(keyCredentials);
+KeyCredentialConfiguration keyCredentials1 = new KeyCredentialConfiguration();
+keyCredentials1.restrictionType = AppKeyCredentialRestrictionType.TRUSTED_CERTIFICATE_AUTHORITY;
+keyCredentials1.restrictForAppsCreatedAfterDateTime = OffsetDateTimeSerializer.deserialize("2019-10-19T10:37:00Z");
+LinkedList<String> certificateBasedApplicationConfigurationIdsList = new LinkedList<String>();
+certificateBasedApplicationConfigurationIdsList.add("eec5ba11-2fc0-4113-83a2-ed986ed13743");
+certificateBasedApplicationConfigurationIdsList.add("bb8e164b-f9ed-4b98-bc45-65eddc14f4c1");
+keyCredentials1.certificateBasedApplicationConfigurationIds = certificateBasedApplicationConfigurationIdsList;
+keyCredentials1.maxLifetime = DatatypeFactory.newInstance().newDuration("null");
+keyCredentialsList.add(keyCredentials1);
 restrictions.keyCredentials = keyCredentialsList;
 appManagementPolicy.restrictions = restrictions;
 
