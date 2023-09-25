@@ -23,14 +23,14 @@ For details about using app-only access for unattended scenarios, see [Use app-o
 
 ### Determine required permission scopes
 
-Each API in Microsoft Graph is protected by one or more permission scopes. The user signing in must consent to one of the required scopes for the APIs you plan to use. In this example, you'll use the following APIs:
+Each API in Microsoft Graph is protected by one or more permission scopes. The user signing in must consent to one of the required scopes for the APIs you plan to use. This example uses the following APIs:
 
 - [Get user](/graph/api/user-get?view=graph-rest-1.0&preserve-view=true) to find the user ID of the logged-in user
 - [List joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-1.0&preserve-view=true) to get the Teams the user is a member of.
 - [List channels](/graph/api/channel-list?view=graph-rest-1.0&preserve-view=true) to get the channels in a Team.
 - [Send message](/graph/api/channel-post-messages?view=graph-rest-1.0&preserve-view=true) to send a message to a Team channel.
 
-The `User.Read`, `Team.ReadBasic.All`, `Channel.ReadBasic.All`, and `ChannelMessage.Send` permission scopes will enable these calls.
+The `User.Read`, `Team.ReadBasic.All`, `Channel.ReadBasic.All`, and `ChannelMessage.Send` permission scopes enable these calls.
 
 ### Sign in
 
@@ -53,37 +53,41 @@ Now that you're signed in, you can start making calls to Microsoft Graph.
 
 ### Get the signed-in user
 
-In this section, you'll locate the signed-in user and get their user ID. You'll need that to use as a parameter to the other commands you'll use later. Start by running the following command.
+In this section, you'll locate the signed-in user and get their user ID. You'll need that to use as a parameter to the other commands you'll use later. Start by running the following command. Replace `<your-display-name>` with the signed-in user's display name.
 
 ```bash
-mgc me get
+mgc users list --filter "displayName eq '<your-display-name>'"
 ```
 
 This command outputs a JSON representation of the signed-in user.
 
 ```json
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
-  "businessPhones": [
-    "\u002B1 412 555 0109"
-  ],
-  "displayName": "Megan Bowen",
-  "givenName": "Megan",
-  "jobTitle": "Marketing Manager",
-  "mail": "MeganB@contoso.com",
-  "mobilePhone": null,
-  "officeLocation": "12/1110",
-  "preferredLanguage": "en-US",
-  "surname": "Bowen",
-  "userPrincipalName": "MeganB@contoso.com",
-  "id": "4db673f0-3c2a-4d45-a9d9-3a4a8c63af6e"
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+  "value": [
+    {
+      "businessPhones": [
+        "\u002B1 412 555 0109"
+      ],
+      "displayName": "Megan Bowen",
+      "givenName": "Megan",
+      "jobTitle": "Marketing Manager",
+      "mail": "MeganB@contoso.com",
+      "mobilePhone": null,
+      "officeLocation": "12/1110",
+      "preferredLanguage": "en-US",
+      "surname": "Bowen",
+      "userPrincipalName": "MeganB@contoso.com",
+      "id": "4db673f0-3c2a-4d45-a9d9-3a4a8c63af6e"
+    }
+  ]
 }
 ```
 
 You can use an [OData query parameters](../query-parameters.md) to customize the response. For example, to request only the user's display name, you can use the `--select` option.
 
 ```bash
-mgc me get --select displayName
+mgc users get --user-id <user-id> --select displayName
 ```
 
 ### List the user's joined teams
@@ -91,7 +95,7 @@ mgc me get --select displayName
 Now use the `mgc me joined-teams list` command to list the user's joined teams.
 
 ```bash
-mgc me joined-teams list --select displayName,id
+mgc users joined-teams list --user-id <user-id> --select displayName,id
 ```
 
 ```json
@@ -123,7 +127,7 @@ mgc me joined-teams list --select displayName,id
 }
 ```
 
-Compare this command to the previous command used to get the signed-in user. Instead of `get`, this command uses `list`. This is because this command will return multiple items. Select one of the user's joined teams and copy its `id`.
+Select one of the user's joined teams and copy its `id`.
 
 ### List team channels
 
