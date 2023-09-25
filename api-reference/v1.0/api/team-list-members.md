@@ -17,7 +17,7 @@ Get the [conversationMember](../resources/conversationmember.md) collection of a
 >
 > The membership results could map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are from the current tenant only.
 >
->A known issue related to new tenants getting 401 is associated with this method. For details, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/&search=19164).
+>This API has a known issue where new tenants encounter a 401 error when using this method. For more information, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/&search=19164).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
