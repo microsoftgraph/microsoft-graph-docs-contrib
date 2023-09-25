@@ -95,6 +95,7 @@ This section describes the changes that need to be added to Teams app manifest. 
 
 > [!NOTE]
 > `actor` is a special parameter that always takes the name of the caller. In delegated calls, `actor` is the user's name. In application-only calls, it takes the name of the Teams app.
+>
 > A reserved `systemDefault` ActivityType is already available by default. This `systemDefault` activityType does not support templatization and does not need to be defined in activities section of the manifest in advance. Even without providing this `systemDefault` default Activity type, the `systemDefault` default Activity type will be available for sending customizable default notifications. For more information, see [Send customizable activity feed notifications](#example-8-notify-a-user-about-a-customizable-notification-in-a-team).
 
 #### authorization section changes
