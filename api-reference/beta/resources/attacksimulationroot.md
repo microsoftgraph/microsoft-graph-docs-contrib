@@ -52,7 +52,7 @@ None.
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|endUserNotifications|[endUserNotification](../resources/endusernotification.md) collection|Represents an attack simulation training end user's notification.|
+|endUserNotifications|[endUserNotification](../resources/endusernotification.md) collection|Represents an end user's notification for an attack simulation training.|
 |landingPages|[landingPage](../resources/landingpage.md) collection|Represents an attack simulation training landing page.|
 |loginPages|[loginPage](../resources/loginpage.md) collection|Represents an attack simulation training login page.|
 |operations|[attackSimulationOperation](../resources/attacksimulationoperation.md) collection|Represents an attack simulation training operation.|
