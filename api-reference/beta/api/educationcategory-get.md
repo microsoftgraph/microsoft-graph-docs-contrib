@@ -109,7 +109,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.educationCategory)"
+  "@odata.type": "microsoft.graph.educationCategory"
 } -->
 
 ```http
