@@ -1,4 +1,4 @@
---
+---
 title: "workbookChartAxes resource type"
 description: "Represents the chart axes."
 author: "lumine2008"
