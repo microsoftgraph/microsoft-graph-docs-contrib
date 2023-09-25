@@ -48,7 +48,7 @@ This method supports the `$expand` OData query parameter to expand the details o
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,11 +56,11 @@ If successful, this method returns a `200 OK` response code and an [authenticati
 
 ## Examples
 
-### Example 1: Get an authenticationListener by id
+### Example 1: Get an authenticationListener by ID
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart/{id}
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -103,11 +103,11 @@ Content-Type: application/json
 
 ### Example 2: Expand invokeUserFlowListener for a specific authenticationListener
 
-The following example gets the listener by id for the onSignupStart event and expands the user flow that is invoked.
+The following example gets the listener by ID for the onSignupStart event and expands the user flow that is invoked.
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -121,7 +121,7 @@ GET https://graph.microsoft.com/beta/identity/events/onSignupStart/{id}?$expand=
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
