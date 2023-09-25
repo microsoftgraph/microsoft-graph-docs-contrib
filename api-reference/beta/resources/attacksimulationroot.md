@@ -43,8 +43,6 @@ Namespace: microsoft.graph
 | **Training** |  |  |
 |[List trainings](../api/attacksimulationroot-list-trainings.md)|[training](../resources/training.md) collection|Get a list of the [training](../resources/training.md) objects and their properties.|
 |[Get training](../api/training-get.md)|[training](../resources/training.md)|Get an attack simulation [training](../resources/training.md) for a tenant. |
-| **Training language detail** |  |  |
-|[Get trainingLanguageDetail](../api/traininglanguagedetail-get.md)|[trainingLanguageDetail](../resources/traininglanguagedetail.md) |Get the [language details](../resources/traininglanguagedetail.md) about an attack simulation training for a tenant.|
 
 ## Properties
 
