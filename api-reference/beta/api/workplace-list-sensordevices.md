@@ -3,7 +3,7 @@ title: "List workplaceSensorDevices"
 description: "Get a list of the workplace sensor devices created for a tenant."
 author: "ms-amakumar"
 ms.localizationpriority: medium
-ms.prod: "places"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 

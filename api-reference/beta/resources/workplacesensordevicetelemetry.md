@@ -3,7 +3,7 @@ title: "workplaceSensorDeviceTelemetry resource type"
 description: "Sensor device telemetry represents the data collected and reported by a sensor on a device, such as occupancy, people count, inferred occupancy, temperature, and more."
 author: "ms-amakumar"
 ms.localizationpriority: medium
-ms.prod: "places"
+ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 

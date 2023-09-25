@@ -3,7 +3,7 @@ title: "workplaceSensorDevice resource type"
 description: "A sensor device is a type of hardware that can host one or more sensors. Each sensor can collect and report data about physical or environmental conditions, such as occupancy, people count, inferred occupancy, temperature, and more."
 author: "ms-amakumar"
 ms.localizationpriority: medium
-ms.prod: "places"
+ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 

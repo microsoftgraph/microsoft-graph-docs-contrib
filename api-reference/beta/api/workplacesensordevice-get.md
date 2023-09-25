@@ -3,7 +3,7 @@ title: "Get workplaceSensorDevice"
 description: "Get the properties of a workplace sensor device. For example, you can use this method to get the device details like tags, mac address, and sensors on the device."
 author: "ms-amakumar"
 ms.localizationpriority: medium
-ms.prod: "places"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 

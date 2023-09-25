@@ -3,7 +3,7 @@ title: "workplace resource type"
 description: "**TODO: Add Description**"
 author: "ms-amakumar"
 ms.localizationpriority: medium
-ms.prod: "places"
+ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 

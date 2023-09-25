@@ -3,7 +3,7 @@ title: "Update workplaceSensorDevice"
 description: "Update the properties of a workplace sensor device."
 author: "ms-amakumar"
 ms.localizationpriority: medium
-ms.prod: "places"
+ms.prod: "outlook"
 doc_type: apiPageType
 ---
 

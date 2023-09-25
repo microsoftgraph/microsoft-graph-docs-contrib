@@ -3,7 +3,7 @@ title: "workplaceSensor resource type"
 description: "A sensor on a device is a resource that measures and reports various physical or environmental conditions, such as occupancy, people count, inferred occupancy, temperature, and more."
 author: "ms-amakumar"
 ms.localizationpriority: medium
-ms.prod: "places"
+ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
