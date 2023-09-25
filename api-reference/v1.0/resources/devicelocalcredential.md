@@ -18,8 +18,8 @@ Represents the local administrator account credential of a device object in Azur
 |:---|:---|:---|
 |accountName|String| The name of the local admin account for which LAPS is enabled.|
 |accountSid|String|The SID of the local admin account for which LAPS is enabled.|
-|backupDateTime|DateTimeOffset|When the local adminstrator account credential for the device object was backed up to Azure Active Directory.|
-|passwordBase64|String|The password for the local administrator account that is backed up to Azure Active Directory and returned as a base 64 encoded value.|
+|backupDateTime|DateTimeOffset|When the local administrator account credential for the device object was backed up to Azure Active Directory.|
+|passwordBase64|String|The password for the local administrator account that is backed up to Azure Active Directory and returned as a Base64 encoded value.|
 
 
 ## Relationships
