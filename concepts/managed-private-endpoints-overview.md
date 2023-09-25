@@ -42,7 +42,7 @@ Use the following steps to enable Azure V-net Integration Runtime (IR) to manage
 
 - Note the initial state will be provisioning of a private IP address from within the Managed Virtual Network.
 
-   ![Screenshot showing the provisioning state of a new managed private endpoint.](images/managed-private-endpoint-provisioning-state.png)
+   ![Screenshot showing the provisioning state of a new managed private endpoint that is pending.](images/managed-private-endpoint-provisioning-state.png)
 
 - After the endpoint is successfully provisioned, the approval state is **Pending**. Continue to Step 4, and use the created name rather than the name generated in step 3.
 
