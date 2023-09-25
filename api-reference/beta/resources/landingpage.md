@@ -23,7 +23,6 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List landingPages](../api/attacksimulationroot-list-landingpage.md)|[landingPage](../resources/landingpage.md) collection|Get a list of the [landingPage](../resources/landingpage.md) objects and their properties.|
 |[Get landingPage](../api/landingpage-get.md)|[landingPage](../resources/landingpage.md)|Get a [landingPage](../resources/landingpage.md) associated with an attack simulation campaign for a tenant.|
-|[Get landingPageDetail](../api/landingpagedetail-get.md)|[landingPageDetail](../resources/landingpagedetail.md)|Read the properties and relationships of a [landingPageDetail](../resources/landingpagedetail.md) object.|
 
 ## Properties
 
@@ -45,7 +44,6 @@ Inherits from [entity](../resources/entity.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|details|[landingPageDetail](../resources/landingpagedetail.md) collection|Represents landing page details.|
 
 ## JSON representation
 

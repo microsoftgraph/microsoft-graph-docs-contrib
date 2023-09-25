@@ -23,7 +23,6 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |[List endUserNotifications](../api/attacksimulationroot-list-endusernotifications.md)|[endUserNotification](../resources/endusernotification.md) collection|Get a list of [endUserNotification](../resources/endusernotification.md) objects and their properties.|
 |[Get endUserNotification](../api/endusernotification-get.md)|[endUserNotification](../resources/endusernotification.md)|Read the properties and relationships of an [endUserNotification](../resources/endusernotification.md) object.|
-|[Get endUserNotificationDetail](../api/endusernotificationdetail-get.md)|[endUserNotificationDetail](../resources/endusernotificationdetail.md)|Get details about an [end user notification](../resources/endusernotificationdetail.md).|
 
 ## Properties
 
@@ -45,7 +44,6 @@ Inherits from [entity](../resources/entity.md).
 
 |Relationship|Type|Description|
 |:---|:---|:---|
-|details|[endUserNotificationDetail](../resources/endusernotificationdetail.md) collection|Represents **endUserNotification** details.|
 
 ## JSON representation
 

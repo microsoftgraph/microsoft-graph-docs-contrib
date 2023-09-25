@@ -21,7 +21,6 @@ Inherits from [entity](../resources/entity.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-[Get endUserNotificationDetail](../api/endusernotificationdetail-get.md)|[endUserNotificationDetail](../resources/endusernotificationdetail.md)|Get details about an [end user notification](../resources/endusernotificationdetail.md).|
 
 ## Properties
 

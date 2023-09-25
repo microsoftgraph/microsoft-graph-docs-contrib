@@ -15894,11 +15894,6 @@ items:
                     href: api/attacksimulationroot-list-endusernotifications.md
                   - name: Get
                     href: api/endusernotification-get.md
-              - name: End user notification detail
-                items:
-                  - name: End user notification detail
-                  - name: Get
-                    href: api/endusernotificationdetail-get.md
               - name: Landing page
                 items:
                   - name: Landing page
@@ -15907,10 +15902,6 @@ items:
                     href: api/attacksimulationroot-list-landingpage.md
                   - name: Get
                     href: api/landingpage-get.md
-              - name: Landing page detail
-                items: 
-                  - name: Get
-                    href: api/landingpagedetail-get.md
               - name: Login page
                 items:
                   - name: Login page
