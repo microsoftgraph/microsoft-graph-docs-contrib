@@ -1,0 +1,80 @@
+---
+title: "Delete custom property from fileStorageContainer"
+description: "Delete custom property from fileStorageContainer"
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.localizationpriority: medium
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+doc_type: apiPageType
+---
+
+# fileStorageContainer: delete-customproperty
+Namespace: microsoft.graph
+
+Delete one or multiple custom properties from a fileStorageContainer by assigning **null** to the properties.
+
+The application calling this API must have pewrmissions to enumerate permissions on fileStorageContainer of the containerType the fileStoreageContainer belongs to.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|FileStorageContainer.Selected|
+|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
+|Application|FileStorageContainer.Selected|
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /storage/fileStorage/containers/{containerId}/customProperties
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-type}| application/json. Required.|
+
+## Request body
+In the request body, supply the custom properties for deletion by setting them to null.
+
+## Response
+
+If successful, this action returns a `200 OK` response code.
+
+## Examples
+
+### Request
+The following is an example of deleting multiple custom properties.
+<!-- {
+  "blockType": "request",
+  "name": "filestoragecontainerthis.delete-customproperty"
+}
+-->
+``` http
+PATCH /storage/fileStorage/containers/{containerId}/customProperties
+Content-type: application/json
+
+{
+  "clientUniqueId": null,
+  "color": null
+}
+```
+
+### Response
+The following is an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 200 Ok
+{
+}
+```
+

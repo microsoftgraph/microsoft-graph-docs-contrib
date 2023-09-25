@@ -1,0 +1,83 @@
+---
+title: "fileStorageContainer: activate"
+description: "Activate a file storage container"
+author: "tonchan-msft"
+ms.localizationpriority: medium
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+doc_type: apiPageType
+---
+
+# fileStorageContainer: activate
+Namespace: microsoft.graph
+
+
+Activate a file storage container. The application calling this API must have pewrmissions to enumerate permissions on fileStorageContainer of the containerType the fileStoreageContainer belongs to.
+
+File storage containers are created in an inactive state, indicated by the container's status property. A container must be activated in 24 hours after creation or will be automatically deleted. Upon successful activation, the container's status property is set to "active".
+
+A file storage container can be activated by either calling the activate API, or calling any API that mutates the container or its content.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). The application calling this API must have permissions to update containers of the containerType the container belongs to.
+
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|FileStorageContainer.Selected|
+|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
+|Application|FileStorageContainer.Selected|
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /storage/fileStorage/containers/{containerId}/activate
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Response
+
+If successful, this action returns a `204 No Content` response code.
+
+## Examples
+
+### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "filestoragecontainerthis.activate"
+}
+-->
+``` http
+POST /storage/fileStorage/containers/{containerId}/activate
+```
+
+
+### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+## Other activation methods
+A fileStorageContainer can be activated by calling any API that mutates the container or its content, including:
+
+|Task name|Example Request|
+|:---|:---|
+|Update a fileStorageContainer|FileStorageContainer.Selected|PATCH /storage/fileStorage/containers/{containerId}|
+|Add a Permission to a fileStorageContainer|POST /storage/fileStorage/containers/{containerId}/permissions|
+|Create or update a custom property of a fileStorageContainer|PATCH /storage/fileStorage/containers/{containerId}/customProperties|
+|Create a new file or folder in container's drive|POST /drives/{driveId}/items/{itemId}/children|
