@@ -42,7 +42,7 @@ PATCH /workplace/sensorDevices/{id}
 ## Request body
 [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
-In the request body, supply the complete [workplaceSensorDevice](../resources/workplacesensordevice.md) updated JSON. Partial updates are not supported. Any optional property that is omitted will be set to null. To add new sensors, append a new sensor object to the existing sensors collection. Any sensor object that is removed from the collection will be deleted from the device.
+In the request body, provide the entire JSON for the [workplaceSensorDevice](../resources/workplacesensordevice.md) object with all fields updated. Partial updates are not supported. If any optional property is excluded, it will be set to null. To add new sensors, append a new sensor object to the existing sensor collection. Conversely, if a sensor object is removed from the collection, it will be deleted from the device.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -53,7 +53,7 @@ In the request body, supply the complete [workplaceSensorDevice](../resources/wo
 |manufacturer|String|The manufacturer for the device. Required.|
 |ipV4Address|String|The IPv4 Address for the device. Optional.|
 |ipV6Address|String|The IPv6 Address for the device. Optional.|
-|placeId|String|The unique identifier of the place where the device is located. If the device is in a room with a mailbox, this property should match the ExternalDirectoryObjectId or AAD object Id of the room mailbox. Optional.|
+|placeId|String|The unique identifier of the place where the device is located. If the device is installed in a room featuring a mailbox, this property should match the ExternalDirectoryObjectId or AAD object Id of the room mailbox. Optional.|
 |tags|String collection|A list of custom tags associated with the device. Supports $filter. Optional.|
 |sensors|[workplaceSensor](../resources/workplacesensor.md) collection|A list of sensors associated with the device that collect and report data about physical or environmental conditions, such as occupancy, people count, inferred occupancy, temperature etc. Required.|
 
@@ -105,7 +105,6 @@ Content-Type: application/json
 
 #### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -194,7 +193,6 @@ Content-Type: application/json
 
 #### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -282,7 +280,6 @@ Content-Type: application/json
 
 #### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -46,7 +46,7 @@ You can specify the following properties when creating a **workplaceSensorDevice
 
 |Property|Type|Description|
 |:---|:---|:---|
-|deviceId|String|The device identifier set by the user at the time of creation. This is an alternate key that can be used to reference the device object. Required.|
+|deviceId|String|The device identifier set by the user at the time of creation. It is an alternate key that can be used to reference the device object. Required.|
 |displayName|String|The display name for the device. Optional.|
 |description|String|The description for the device. Optional.|
 |macAddress|String|The MAC address for the device. Optional.|
@@ -104,7 +104,6 @@ Content-Type: application/json
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

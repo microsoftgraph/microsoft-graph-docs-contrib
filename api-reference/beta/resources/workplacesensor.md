@@ -19,7 +19,7 @@ A sensor on a device is a resource that measures and reports various physical or
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name for the sensor.|
-|placeId|String| The unique identifier of the place that the sensor detects. If the device is in a room with a mailbox, this property should match the ExternalDirectoryObjectId or AAD object Id of the room mailbox. If the sensor detects the same place as the device's location, the property can be omitted. The default value is device's place identifier. |
+|placeId|String| The unique identifier of the place that the sensor detects. If the device is installed in a room featuring a mailbox, this property should match the ExternalDirectoryObjectId or AAD object Id of the room mailbox. If the sensor detects the same place as the device's location, the property can be omitted. The default value is device's place identifier. |
 |sensorId|String| The unique identifier of the sensor on the device. Optional. If the device has multiple sensors of the same type, the property must be provided to identify each sensor. If the device has only one sensor of a type, the property can be omitted. The default value is the sensor type. |
 |sensorType|workplaceSensorType|The type of the sensor.The possible values are: `occupancy`, `peopleCount`, `inferredOccupancy`, `heartbeat`.|
 

@@ -65,7 +65,6 @@ GET https://graph.microsoft.com/beta/workplace/sensorDevices/ade7078f-4bf5-4239-
 
 ### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

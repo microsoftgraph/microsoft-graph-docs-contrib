@@ -39,7 +39,7 @@ Inherits from [entity](../resources/entity.md).
 |ipV6Address|String| The IPv6 Address for the device. |
 |macAddress|String| The MAC address for the device. |
 |manufacturer|String| The manufacturer for the device. |
-|placeId|String| The unique identifier of the place where the device is located. If the device is in a room with a mailbox, this property should match the ExternalDirectoryObjectId or AAD object Id of the room mailbox. |
+|placeId|String| The unique identifier of the place where the device is located. If the device is installed in a room featuring a mailbox, this property should match the ExternalDirectoryObjectId or AAD object Id of the room mailbox. |
 |sensors|[workplaceSensor](../resources/workplacesensor.md) collection| A list of sensors associated with the device that collect and report data about physical or environmental conditions, such as occupancy, people count, inferred occupancy, temperature etc. |
 |tags|String collection| A list of custom tags associated with the device. Supports $filter. |
 

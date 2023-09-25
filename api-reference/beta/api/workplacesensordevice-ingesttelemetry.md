@@ -42,7 +42,7 @@ POST /workplace/sensorDevices/ingestTelemetry
 ## Request body
 In the request body, supply a JSON representation of the parameters. 
 
-The sensorId property can be omitted from the [workplaceSensorDeviceTelemetry](../resources/workplacesensordevicetelemetry.md) object for a device that has unique sensor types. The sensorType value will be used as the default value for the sensorId. This is consistent with how a device is created without providing the sensorId.
+The sensorId property may be omitted within the [workplaceSensorDeviceTelemetry](../resources/workplacesensordevicetelemetry.md) object for devices with unique sensor types. When this property is omitted, the sensorType value serves as the default identifier, consistent with the behavior of creating a device without specifying a sensorId.
 
 The following table shows the parameters that can be used with this action.
 
@@ -55,7 +55,7 @@ The following table shows the parameters that can be used with this action.
 If successful, this action returns a `204 No Content` response code.
 
 ## Examples
-### Example 1: Send sensor telemtry for a device with unique sensor types.
+### Example 1: Send sensor telemetry for a device with unique sensor types.
 
 #### Request
 The following is an example of a request.
@@ -82,7 +82,6 @@ Content-Type: application/json
 
 #### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -92,7 +91,7 @@ The following is an example of the response
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Send sensor telemetry for a device that has multiple sensors of same type.
+### Example 2: Send sensor telemetry for a device that has multiple sensors of the same type.
 
 #### Request
 The following is an example of a request.
@@ -128,7 +127,6 @@ Content-Type: application/json
 
 #### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -172,7 +170,6 @@ Content-Type: application/json
 
 #### Response
 The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
