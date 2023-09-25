@@ -13,7 +13,6 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
 
 ## Methods
 |Method|Return type|Description|
