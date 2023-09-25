@@ -149,7 +149,7 @@ Content-type: application/json
   "qualities": [
     {
       "qualityId": "bbf3fb4a-a794-4b51-a1ad-c22fb891c5d8",
-      "weight": 50,
+      "weight": 50.0,
       "description": {
         "content": "Argument",
         "contentType": "text"
@@ -173,7 +173,7 @@ Content-type: application/json
     },
     {
       "qualityId": "ebe97fd7-47f7-4e9a-b31b-221ad731fc5a",
-      "weight": 50,
+      "weight": 50.0,
       "description": {
         "content": "Spelling and Grammar",
         "contentType": "text"
