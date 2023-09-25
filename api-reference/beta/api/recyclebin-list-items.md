@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [recycleBinItems](../resources/recyclebinitem.md) under the specified site or storageContainer.
+Get a list of [recycleBinItems](../resources/recyclebinitem.md) objects and their properties.
 
 ## Permissions
 
@@ -34,6 +34,7 @@ GET /sites/{siteId}/recycleBin/items
 
 ## Optional query parameters
 
+This method supports some of the OData query parameters to help customize the response.
 
 ## Request headers
 
