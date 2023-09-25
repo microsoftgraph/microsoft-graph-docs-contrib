@@ -748,7 +748,6 @@ This example notifies the team owner to take a short break. Modify the `previewT
 
 #### Request
 
-# HTTP
 <!-- {
   "blockType": "request",
   "name": "team_sendactivitynotification_take_a_break"
