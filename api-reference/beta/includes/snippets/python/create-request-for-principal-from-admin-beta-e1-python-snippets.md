@@ -23,7 +23,7 @@ request_body = PrivilegedAccessGroupEligibilityScheduleRequest(
 	justification = "Assign eligible request.",
 )
 
-result = await graph_client.identity_governance.privileged_access.group.eligibility_schedule_requests.post(request_body = request_body)
+result = await graph_client.identity_governance.privileged_access.group.eligibility_schedule_requests.post(body = request_body)
 
 
 ```

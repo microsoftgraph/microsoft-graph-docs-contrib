@@ -1,7 +1,7 @@
 ---
 title: "Delete messageRule"
 description: "Delete the specified messageRule object."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -93,7 +93,7 @@ DELETE https://graph.microsoft.com/beta/me/mailFolders/inbox/messageRules/AQAAAJ
 ---
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "isEmpty": true

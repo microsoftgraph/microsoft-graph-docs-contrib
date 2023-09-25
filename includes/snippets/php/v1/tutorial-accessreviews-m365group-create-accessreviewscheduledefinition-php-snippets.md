@@ -63,7 +63,7 @@ $settingsRecurrence->setPattern($settingsRecurrencePattern);
 $settingsRecurrenceRange = new RecurrenceRange();
 $settingsRecurrenceRange->setType(new RecurrenceRangeType('numbered'));
 $settingsRecurrenceRange->setNumberOfOccurrences(0);
-$SettingsRecurrenceRange->setRecurrenceTimeZone(null);
+$settingsRecurrenceRange->setRecurrenceTimeZone(null);
 $settingsRecurrenceRange->setStartDate(new Date('2021-02-10'));
 $settingsRecurrenceRange->setEndDate(new Date('2022-12-21'));
 $settingsRecurrence->setRange($settingsRecurrenceRange);

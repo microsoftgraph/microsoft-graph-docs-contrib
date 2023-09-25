@@ -28,7 +28,7 @@ request_body = ReplyPostRequestBody(
 	comment = "Samantha, Randi, would you name the group please?",
 )
 
-await graph_client.me.messages.by_message_id('message-id').reply.post(request_body = request_body)
+await graph_client.me.messages.by_message_id('message-id').reply.post(body = request_body)
 
 
 ```

@@ -16,6 +16,6 @@ $requestBody->setMailNickname('libassist');
 $requestBody->setPartsToClone(new ClonableTeamParts('apps,tabs,settings,channels,members'));
 $requestBody->setVisibility(new TeamVisibilityType('public'));
 
-$graphServiceClient->teams()->byTeamId('team-id')->clone()->post($requestBody)->wait();
+$graphServiceClient->teams()->byTeamId('team-id')->escapedClone()->post($requestBody)->wait();
 
 ```

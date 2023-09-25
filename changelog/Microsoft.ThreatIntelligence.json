@@ -3,6 +3,170 @@
     {
       "ChangeList": [
         {
+          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sslCertificates",
+          "ChangeType": "Addition",
+          "Description": "Added the **sslCertificates** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
+          "Target": "host"
+        },
+        {
+          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sslCertificates",
+          "ChangeType": "Addition",
+          "Description": "Added the **sslCertificates** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligence"
+        },
+        {
+          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "hostSslCertificates",
+          "ChangeType": "Addition",
+          "Description": "Added the **hostSslCertificates** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligence"
+        },
+        {
+          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hostSslCertificate",
+          "ChangeType": "Addition",
+          "Description": "Added the [hostSslCertificate](https://learn.microsoft.com/en-us/graph/api/resources/security-hostSslCertificate?view=graph-rest-beta) resource and supported methods.",
+          "Target": "hostSslCertificate"
+        },
+        {
+          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hostSslCertificatePort",
+          "ChangeType": "Addition",
+          "Description": "Added the [hostSslCertificatePort](https://learn.microsoft.com/en-us/graph/api/resources/security-hostSslCertificatePort?view=graph-rest-beta) resource type.",
+          "Target": "hostSslCertificatePort"
+        },
+        {
+          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sslCertificate",
+          "ChangeType": "Addition",
+          "Description": "Added the [sslCertificate](https://learn.microsoft.com/en-us/graph/api/resources/security-sslCertificate?view=graph-rest-beta) resource and supported methods.",
+          "Target": "sslCertificate"
+        },
+        {
+          "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sslCertificateEntity",
+          "ChangeType": "Addition",
+          "Description": "Added the [sslCertificateEntity](https://learn.microsoft.com/en-us/graph/api/resources/security-sslCertificateEntity?view=graph-rest-beta) resource type.",
+          "Target": "sslCertificateEntity"
+        }
+      ],
+      "Id": "44a9dd27-1cf3-4649-ad21-73b99fadbdc9",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-09-01T15:12:01.1311209Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Threat intelligence"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [Get whoisRecord for a host](https://learn.microsoft.com/en-us/graph/api/security-host-get-whois?view=graph-rest-beta) method to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
+          "Target": "host"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "whois",
+          "ChangeType": "Addition",
+          "Description": "Added the **whois** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
+          "Target": "host"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "whoisHistoryRecords",
+          "ChangeType": "Addition",
+          "Description": "Added the **whoisHistoryRecords** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligence"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "whoisRecords",
+          "ChangeType": "Addition",
+          "Description": "Added the **whoisRecords** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
+          "Target": "threatIntelligence"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "whois",
+          "ChangeType": "Addition",
+          "Description": "Added the **whois** relationship to the [hostname](https://learn.microsoft.com/en-us/graph/api/resources/security-hostname?view=graph-rest-beta) resource.",
+          "Target": "hostname"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "whois",
+          "ChangeType": "Addition",
+          "Description": "Added the **whois** relationship to the [ipAddress](https://learn.microsoft.com/en-us/graph/api/resources/security-ipaddress?view=graph-rest-beta) resource.",
+          "Target": "ipAddress"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "whoisBaseRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [whoisBaseRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-whoisBaseRecord?view=graph-rest-beta) resource type.",
+          "Target": "whoisBaseRecord"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "whoisHistoryRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [whoisHistoryRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-whoisHistoryRecord?view=graph-rest-beta) resource and supported methods.",
+          "Target": "whoisHistoryRecord"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "whoisContact",
+          "ChangeType": "Addition",
+          "Description": "Added the [whoisContact](https://learn.microsoft.com/en-us/graph/api/resources/security-whoisContact?view=graph-rest-beta) resource type.",
+          "Target": "whoisContact"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "whoisNameserver",
+          "ChangeType": "Addition",
+          "Description": "Added the [whoisNameserver](https://learn.microsoft.com/en-us/graph/api/resources/security-whoisNameserver?view=graph-rest-beta) resource type.",
+          "Target": "whoisNameserver"
+        },
+        {
+          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "whoisRecord",
+          "ChangeType": "Addition",
+          "Description": "Added the [whoisRecord](https://learn.microsoft.com/en-us/graph/api/resources/security-whoisRecord?view=graph-rest-beta) resource and supported methods.",
+          "Target": "whoisRecord"
+        }
+      ],
+      "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-09-01T17:17:05.3179214Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Threat intelligence"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
           "ApiChange": "Relationship",
           "ChangedApiName": "childHostPairs",
@@ -26,7 +190,7 @@
           "Description": "Added the **parentHostPairs** navigation property to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
           "Target": "host"
         },
-         {
+        {
           "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
           "ApiChange": "Method",
           "ChangedApiName": "GET",
@@ -50,7 +214,7 @@
           "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-host-list-parenthostpairs?view=graph-rest-beta) operation to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatintelligence?view=graph-rest-beta) resource.",
           "Target": "threatIntelligence"
         },
-         {
+        {
           "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
           "ApiChange": "Method",
           "ChangedApiName": "GET",
@@ -58,7 +222,7 @@
           "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/security-hostpair-get?view=graph-rest-beta) operation to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatintelligence?view=graph-rest-beta) resource.",
           "Target": "threatIntelligence"
         },
-         {
+        {
           "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
           "ApiChange": "Method",
           "ChangedApiName": "GET",
@@ -136,7 +300,7 @@
       "Version": "beta",
       "CreatedDateTime": "2023-08-04T20:24:39.6442065Z",
       "WorkloadArea": "Security",
-      "SubArea": "Threat Intelligence"
+      "SubArea": "Threat intelligence"
     },
     {
       "ChangeList": [
