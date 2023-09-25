@@ -80,7 +80,7 @@ Content-type: application/json
 {
   "displayName": "Hobby",
   "description": "Your hobby",
-  "dataType": "string",
+  "dataType": "string"
 }
 ```
 
