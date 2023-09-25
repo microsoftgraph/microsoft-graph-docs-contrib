@@ -21,6 +21,170 @@
     {
       "ChangeList": [
         {
+          "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventRegistration",
+          "ChangeType": "Change",
+          "Description": "Renamed the **virtualEventRegistration** resource to the [virtualEventRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistrationConfiguration"
+        },
+        {
+          "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
+          "ApiChange": "Resource",
+          "ChangedApiName": "virtualEventRegistrant",
+          "ChangeType": "Change",
+          "Description": "Renamed the **virtualEventRegistrant** resource to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "registration",
+          "ChangeType": "Change",
+          "Description": "Renamed the **registration** relationship of the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinar?view=graph-rest-beta) resource to **registrationConfiguration**.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "registrations",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrations** relationship to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinar?view=graph-rest-beta) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "registrations",
+          "ChangeType": "Addition",
+          "Description": "Added the **registrations** relationship to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        },
+        {
+          "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "sessions",
+          "ChangeType": "Addition",
+          "Description": "Added the **sessions** relationship to the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        },
+        {
+          "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "registrants",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the **registrants** relationship from the [virtualEventRegistrationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistrationConfiguration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistrationConfiguration"
+        },
+        {
+          "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "questions",
+          "ChangeType": "Deletion",
+          "Description": "Deleted the **questions** relationship from the [virtualEventRegistration](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventRegistration?view=graph-rest-beta) resource.",
+          "Target": "virtualEventRegistration"
+        }
+      ],
+      "Id": "7a36d6d3-232d-4ddc-b3d4-43cf2672c217",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-03T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b6dc9e4b-3c6d-4946-be20-90fac94839c2",
+          "ApiChange": "Method",
+          "ChangedApiName": "virtualEventSession",
+          "ChangeType": "Addition",
+          "Description": "Added the [LIST](https://learn.microsoft.com/en-us/graph/api/virtualeventregistrant-list?view=graph-rest-beta) operation to the [virtualEventSession](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventSession?view=graph-rest-beta) resource.",
+          "Target": "virtualEventSession"
+        }
+      ],
+      "Id": "b6dc9e4b-3c6d-4946-be20-90fac94839c2",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-11T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "939f058a-8f58-4a85-9b45-90fe16b62ee2",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowParticipantsToChangeName",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowParticipantsToChangeName** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "939f058a-8f58-4a85-9b45-90fe16b62ee2",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-08-01T00:39:09.0935047Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3d99b5f0-e0dd-4a84-a278-b8afa35e33fc",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "meetingChatHistoryDefaultMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **meetingChatHistoryDefaultMode** enumeration type.",
+          "Target": "meetingChatHistoryDefaultMode"
+        }
+      ],
+      "Id": "3d99b5f0-e0dd-4a84-a278-b8afa35e33fc",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-08-01T00:41:00.8271612Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3f3d03df-a0c3-4d63-82b9-4bc912be0152",
+          "ApiChange": "Property",
+          "ChangedApiName": "shareMeetingChatHistoryDefault",
+          "ChangeType": "Addition",
+          "Description": "Added the **shareMeetingChatHistoryDefault** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-1.0) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "3f3d03df-a0c3-4d63-82b9-4bc912be0152",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-08-01T00:41:00.8275068Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5bd55826-eb41-4116-820d-8629374e4ceb",
+          "ApiChange": "Property",
+          "ChangedApiName": "anonymizeIdentityForRoles",
+          "ChangeType": "Addition",
+          "Description": "Added the **anonymizeIdentityForRoles** property to the [onlineMeeting](https://learn.microsoft.com/en-us/graph/api/resources/onlineMeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "5bd55826-eb41-4116-820d-8629374e4ceb",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-06-27T02:06:59.705919Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "af2b778c-bcb4-4003-8412-f8b511443dc5",
           "ApiChange": "Property",
           "ChangedApiName": "allowRecording",
