@@ -9,16 +9,18 @@ ms.custom: scenarios:getting-started
 
 # Managed private endpoints in Microsoft Graph Data Connect
 
-This article describes how to enable Azure V-net Integration Runtime (IR) to manage private endpoints in Microsoft Graph Data Connect (Data Connect). We recommend that customers use Azure Synapse workspaces to enable Azure V-net IR in mapping data flow. Azure Data Factory (Data Factory) is compatible with Azure V-net IR. With Azure V-Net IR, customers no longer need to add public IP addresses to an allow list, and customers can close their destination storage accounts to the public network and set up their data extraction over a private virtual network. This helps to ensure that data extraction from Data Connect to the customer's storage account is more secure.
+This article describes how to enable Azure V-net Integration Runtime (IR) to manage private endpoints in Microsoft Graph Data Connect (Data Connect). We recommend that customers use Azure Synapse workspaces to enable Azure V-net IR in mapping data flow. Azure Data Factory (Data Factory) is compatible with Azure V-net IR. 
+
+With Azure V-Net IR, customers no longer need to add public IP addresses to an allow list, and customers can close their destination storage accounts to the public network to set up their data extraction over a private virtual network. This helps to ensure that data extraction from Data Connect to the customer's storage account is more secure.
 
 > [!NOTE]
-> Managed private endpoints are only supported with Azure V-Net IR. Existing Azure Synapse or Azure Data Factory (ADF) flows with copy activity and Azure public IR require that you add IP addresses to an allow list.
+> Managed private endpoints are only supported in Mapping Data Flows (MDF) within your Azure Synapse or Azure Data Factory (ADF) workspaces. Existing Azure Synapse or ADF workspaces with copy activity require you to allow list IP addresses to enable access through select protected networks.
 
 ## Enable Azure V-net IR for Azure Synapse
 
-Use the following steps to enable Azure V-net Integration Runtime (IR) to manage private endpoints in Data Connect:
+Use the following steps to enable Azure V-net Integration Runtime (IR) to manage private endpoints within MDF in Data Connect:
 
-1. Create a Synapse workspace, and then sign in to the Azure portal to configure an existing storage account.
+1. Create a Synapse (or ADF) workspace, and then sign in to the Azure portal to configure an existing storage account. Our example below demonstrates this capability in Synapse.
 
    ![Screenshot with the Basics tab highlighted, showing the first step to create a Synapse workspace.](images/create-synapse-workspace.png)
 
@@ -75,3 +77,5 @@ The managed private endpoint shows as successfully created and linked to the des
 7. Verify the available integration runtime is configured to **Managed Virtual Network** (configured by default).
 
    ![Screenshot with the Managed Virtual Network highlighted, successfully configured to available integration runtime.](images/integration-runtime-configured-managed-virtual-network.png)
+
+After these steps, v-net IR in MDF should be enabled within your Synapse (or ADF) workspace. Please reach out to the [Data Connect team](mailto:dataconnect@microsoft.com) for any questions!
