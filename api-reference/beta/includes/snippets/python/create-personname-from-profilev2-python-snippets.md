@@ -17,7 +17,7 @@ request_body = PersonName(
 	maiden = None,
 )
 
-result = await graph_client.me.profile.names.post(request_body = request_body)
+result = await graph_client.me.profile.names.post(body = request_body)
 
 
 ```

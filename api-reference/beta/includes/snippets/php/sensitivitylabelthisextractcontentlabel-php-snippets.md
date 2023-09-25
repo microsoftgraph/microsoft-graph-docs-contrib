@@ -48,7 +48,7 @@ $additionalData = [
 ];
 $contentInfo->setAdditionalData($additionalData);
 $requestBody->setContentInfo($contentInfo);
-$requestConfiguration = new ExtractContentLabelRequestBuilderPostRequestConfiguration();
+$requestConfiguration = new MicrosoftExtractContentLabelRequestBuilderPostRequestConfiguration();
 $headers = [
 	'User-Agent' => 'ContosoLOBApp/1.0',
 ];

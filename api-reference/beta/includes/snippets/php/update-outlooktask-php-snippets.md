@@ -14,7 +14,7 @@ $dueDateTime = new DateTimeTimeZone();
 $dueDateTime->setDateTime('2016-05-06T16:00:00');
 $dueDateTime->setTimeZone('Eastern Standard Time');
 $requestBody->setDueDateTime($dueDateTime);
-$requestConfiguration = new OutlookTaskRequestBuilderPatchRequestConfiguration();
+$requestConfiguration = new OutlookTaskItemRequestBuilderPatchRequestConfiguration();
 $headers = [
 		'Prefer' => 'outlook.timezone="Eastern Standard Time"',
 	];

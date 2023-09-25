@@ -27,7 +27,7 @@ request_body = OpenIdConnectIdentityProvider(
 	scope = "openid",
 )
 
-result = await graph_client.identity.identity_providers.post(request_body = request_body)
+result = await graph_client.identity.identity_providers.post(body = request_body)
 
 
 ```

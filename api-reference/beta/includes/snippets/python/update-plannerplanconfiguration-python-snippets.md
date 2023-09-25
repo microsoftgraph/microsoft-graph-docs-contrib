@@ -27,7 +27,7 @@ request_body = PlannerPlanConfiguration(
 	]
 )
 
-result = await graph_client.solutions.busine_scenarios.by_busine_scenario_id('businessScenario-id').planner.plan_configuration.patch(request_body = request_body)
+result = await graph_client.solutions.busine_scenarios.by_busine_scenario_id('businessScenario-id').planner.plan_configuration.patch(body = request_body)
 
 
 ```

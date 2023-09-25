@@ -12,7 +12,7 @@ request_body = OutlookCategory(
 	color = CategoryColor.Preset15,
 )
 
-result = await graph_client.me.outlook.master_categories.by_master_categorie_id('outlookCategory-id').patch(request_body = request_body)
+result = await graph_client.me.outlook.master_categories.by_master_categorie_id('outlookCategory-id').patch(body = request_body)
 
 
 ```

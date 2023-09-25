@@ -14,9 +14,9 @@ Microsoft Graph allows you to access data in [multiple services](overview-major-
 
 Any request can be evaluated against multiple limits, depending on the scope of the limit (per app across all tenants, per tenant for all apps, per app per tenant, and so on), the request type (GET, POST, PATCH, and so on), and other factors. The first limit to be reached triggers throttling behavior. In addition to the service specific-limits described in the section, the following global limits apply:
 
-| Request type | Per app across all tenants  |
-| ------------ | ------------------------ |
-| Any          | 2000 requests per second |
+| Request type | Per app across all tenants      |
+|--------------|---------------------------------|
+| Any          | 130,000 requests per 10 seconds |
 
 > [!NOTE]
 > The specific limits described here are subject to change.
@@ -39,6 +39,22 @@ The preceding limits apply to the following resources:
 - [educationSubmission](/graph/api/resources/educationsubmission)
 - [trending](/graph/api/resources/insights-trending)
 - [educationResource](/graph/api/resources/educationresource)
+
+## Bookings service limits
+
+The Bookings service applies limits to each app ID and mailbox combination, specifically when a particular app accesses a particular booking mailbox. Exceeding the limit for one mailbox does not affect the ability of the application to access another mailbox.
+
+| Limit      | Applies to    |
+| -------------- | ------------ |
+| Four concurrent requests  | v1.0 and beta endpoints   |
+
+The preceding limits apply to the following resources:
+- [business](/graph/api/resources/bookingbusiness)
+- [appointment](/graph/api/resources/bookingappointment)
+- [customQuestion](/graph/api/resources/bookingcustomquestion)
+- [customer](/graph/api/resources/bookingcustomer)
+- [service](/graph/api/resources/bookingservice)
+- [staffMember](/graph/api/resources/bookingstaffmember)
 
 ## Cloud communication service limits
 
