@@ -2,7 +2,7 @@
 title: "emailAddress resource type"
 description: "The name and email address of a contact or message recipient."
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---

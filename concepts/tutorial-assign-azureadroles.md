@@ -13,7 +13,7 @@ ms.date: 12/20/2022
 
 Microsoft Graph PIM API enables organizations to manage privileged access to resources in Azure Active Directory (Azure AD). It also helps to manage the risks of privileged access by limiting when access is active, managing the scope of access, and providing an auditable log of privileged access.
 
-In this tutorial, a fictitious company called Contoso Limited wishes to have its IT Helpdesk manage the lifecycle of employees’ access. The company has identified the Azure AD User Administrator role as the appropriate privileged role required by IT Helpdesk, and will use the PIM API to assign the role.
+In this tutorial, a fictitious company called Contoso Limited wishes to have its IT Helpdesk manage the lifecycle of employees' access. The company has identified the Azure AD User Administrator role as the appropriate privileged role required by IT Helpdesk, and will use the PIM API to assign the role.
 
 You'll create a role-assignable security group for IT Helpdesk and using the PIM API, assign the security group eligibility to the User Administrator role. By assigning the eligible role to a security group, Contoso has a more efficient way to manage administrator access to resources such as Azure AD roles. For example:
 
@@ -37,7 +37,7 @@ To complete this tutorial, you need the following resources and privileges:
 
 ## Step 1: Create a test user
 
-Create a user who must reset their password at first sign in. From this step, record the value of the new user's **id** for use in the next step. After creating the user, visit the Azure portal and enable multifactor authentication (MFA) for the user. For more information about enabling MFA, see the [See also](#see-also) section.
+Create a user who must reset their password at first sign in. From this step, record the value of the new user's **id** for use in the next step. After creating the user, visit the Microsoft Entra admin center and enable multifactor authentication (MFA) for the user. For more information about enabling MFA, see the [See also](#see-also) section.
 
 
 ### Request
@@ -120,7 +120,7 @@ Content-type: application/json
 
 ## Step 2: Create a security group that can be assigned an Azure AD role
 
-Create a group that’s assignable to an Azure AD role. Assign yourself as the group owner and both you and Aline (the user created in Step 1) as members.
+Create a group that's assignable to an Azure AD role. Assign yourself as the group owner and both you and Aline (the user created in Step 1) as members.
 
 ### Request: Create a role-assignable group
 

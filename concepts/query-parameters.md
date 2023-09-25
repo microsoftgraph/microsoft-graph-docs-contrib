@@ -7,7 +7,7 @@ ms.reviewer: Luca.Spolidoro
 ms.prod: "applications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 12/08/2022
+ms.date: 08/22/2023
 ---
 
 # Use query parameters to customize responses
@@ -61,6 +61,9 @@ The following OData 4.0 capabilities are URL segments, not query parameters.
 ## Encoding query parameters
 
 The values of query parameters should be percent-encoded as per [RFC 3986](https://www.rfc-editor.org/rfc/rfc3986#section-2.2). For example, all reserved characters in query strings must be percent-encoded. Many HTTP clients, browsers, and tools (such as the [Graph Explorer][graph-explorer]) will help you with this. If a query is failing, one possible cause is failure to encode the query parameter values appropriately. In some cases, you may have to double-encode the values.
+
+> [!NOTE]
+> There's a known issue related to encoding ampersand (&) symbols in `$search` expressions on the `v1.0` endpoint. For more information about the issue and the recommended workaround, see [Known issue: $search for directory objects fails for encoded ampersand (&) character](https://developer.microsoft.com/en-us/graph/known-issues/?search=18185).
 
 For example, an unencoded URL looks like this:
 
@@ -239,7 +242,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/query-parameters-escaped-quotes-example-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -257,7 +260,7 @@ Use the `$count` query parameter to retrieve the count of the total number of it
 3. In a `$filter` expression with equality operators to retrieve a collection of data where the filtered property is an empty collection. See [Use the $filter query parameter to filter a collection of objects](/graph/filter-query-parameter).
 
 > [!NOTE]
-> 1. On resources that derive from [directoryObject](/graph/api/resources/directoryobject), `$count` is only supported in an advanced query. See [Advanced query capabilities in Azure AD directory objects](/graph/aad-advanced-queries).
+> 1. On resources that derive from [directoryObject](/graph/api/resources/directoryobject), `$count` is only supported in an advanced query. See [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 > 2. Use of `$count` is not supported in Azure AD B2C tenants.
 
 For example, the following request returns both the **contact** collection of the current user, and the number of items in the **contact** collection in the `@odata.count` property.
@@ -564,7 +567,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$orderby=from/emailAddress/addr
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/query-parameters-defaultorderby-collection-example-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -672,7 +675,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 ---
 
 > [!NOTE] 
-> Combining `$orderby` and `$filter` query parameters is supported for directory objects. See [Advanced query capabilities in Azure AD directory objects](/graph/aad-advanced-queries).
+> Combining `$orderby` and `$filter` query parameters is supported for directory objects. See [Advanced query capabilities in directory objects](/graph/aad-advanced-queries).
 
 ## search parameter
 
@@ -681,6 +684,12 @@ Use the `$search` query parameter to restrict the results of a request to match 
 ## select parameter
 
 Use the `$select` query parameter to return a set of properties that are different than the default set for an individual resource or a collection of resources. With `$select`, you can specify a subset or a superset of the default properties.
+
+When you make a GET request without using `$select` to limit the amount of properties data, Microsoft Graph includes a **@microsoft.graph.tips** property that provides a best practice recommendation for using `$select` similar to the following message:
+
+```html
+"@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET groups?$select=appMetadata,assignedLabels",
+```
 
 For example, when retrieving the messages of the signed-in user, you can specify that only the **from** and **subject** properties be returned:
 
@@ -719,7 +728,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/v1/query-parameters-select-example-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -892,7 +901,7 @@ However, it is important to note that query parameters specified in a request mi
 
 ## See also
 
-- [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries)
+- [Advanced query capabilities on directory objects](/graph/aad-advanced-queries)
 - [Use the $search query parameter to match a search criterion](/graph/search-query-parameter)
 - [Query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?filterBy=Query%20parameters&search=)
 - [Training module: Optimize data usage when using Microsoft Graph with query parameters](/training/modules/optimize-data-usage)

@@ -5,7 +5,7 @@ author: "Jordanndahl"
 ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: conceptualPageType
-ms.date: 12/15/2022
+ms.date: 09/12/2023
 ---
 
 # Working with groups in Microsoft Graph
@@ -141,7 +141,7 @@ The dynamic membership rules are specified through the **membershipRule** proper
 
 - The `Property` is defined following this syntax: `object.property`. For example `user.department` or `device.accountEnabled`.
 - The rule syntax supports various operators. For more information, see [Supported expression operators](/azure/active-directory/enterprise-users/groups-dynamic-membership).
-- A `Value` of type String must be enclosed in double quotes ("). You must use a backslash to escape any double quotes inside double quotes. This requirement doesn't apply when using the rule builder in the Azure portal because the expression isn't enclosed in double quotes.
+- A `Value` of type String must be enclosed in double quotes ("). You must use a backslash to escape any double quotes inside double quotes. This requirement doesn't apply when using the rule builder in the Microsoft Entra admin center because the expression isn't enclosed in double quotes.
 
 The following example shows shows a complete rule.
 
@@ -180,6 +180,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/groups-overview-createdynamicgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/groups-overview-createdynamicgroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

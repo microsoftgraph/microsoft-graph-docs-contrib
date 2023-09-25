@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = MovePostRequestBody()
-request_body.destination_id = 'deleteditems'
+graph_client = GraphServiceClient(request_adapter)
 
+request_body = MovePostRequestBody(
+	destination_id = "deleteditems",
+)
 
-
-
-result = await client.me.messages.by_message_id('message-id').move.post(request_body = request_body)
+result = await graph_client.me.messages.by_message_id('message-id').move.post(body = request_body)
 
 
 ```

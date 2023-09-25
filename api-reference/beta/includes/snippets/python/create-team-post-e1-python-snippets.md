@@ -4,24 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Team()
-request_body.display_name = 'My Sample Team'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.description = 'My Sample Team’s Description'
+request_body = Team(
+	display_name = "My Sample Team",
+	description = "My Sample Team’s Description",
+	additional_data = {
+			"template@odata_bind" : "https://graph.microsoft.com/beta/teamsTemplates('standard')",
+	}
+)
 
-additional_data = [
-'template@odata_bind' => 'https://graph.microsoft.com/beta/teamsTemplates(\'standard\')', 
-];
-request_body.additional_data(additional_data)
-
-
-
-
-
-result = await client.teams.post(request_body = request_body)
+result = await graph_client.teams.post(body = request_body)
 
 
 ```

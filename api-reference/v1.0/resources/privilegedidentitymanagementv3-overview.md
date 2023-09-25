@@ -16,6 +16,8 @@ The PIM for Azure AD roles APIs allow you to govern privileged access and limit 
 
 > [!NOTE]
 > To manage Azure resource roles use the [Azure Resource Manager (ARM) APIs for PIM](/rest/api/authorization/privileged-role-eligibility-rest-sample).
+>
+> PIM APIs for managing security alerts for Azure AD roles are available on the `beta` endpoint only. For more information, see [Security alerts for Azure AD roles](/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta#security-alerts-for-azure-ad-roles&preserve-view=true).
 
 ## PIM APIs for managing active role assignments
 
@@ -84,9 +86,11 @@ The following table lists scenarios for using PIM to manage Azure AD rules and t
 
 For more information about using Microsoft Graph to configure rules, see [Overview of rules for Azure AD roles in PIM APIs](/graph/identity-governance-pim-rules-overview). For examples of updating rules, see [Use PIM APIs to update Azure AD rules](/graph/how-to-pim-update-rules).
 
-## PIM and identity security with Zero Trust
+<!-- Start of: Link to ZT guidance: H2 section -->
 
-PIM APIs support organizations to adopt a Zero Trust approach to secure the identities in their organization. For more information about Zero Trust, see [Securing identity with Zero Trust](/security/zero-trust/deploy/identity#secure-privileged-access-with-privileged-identity-management).
+[!INCLUDE [zero-trust](~/../azure_docs/includes/active-directory-zero-trust.md)]
+
+<!-- End of: Link to ZT guidance -->
 
 ## Permissions and privileges
 
@@ -113,3 +117,17 @@ The tenant where Privileged Identity Management is being used must have sufficie
   + [Use PIM APIs to update Azure AD rules](/graph/how-to-pim-update-rules)
 + Follow these tutorials to learn more about using PIM APIs
   + [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles)
+
+
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "",
+  "keywords": "",
+  "section": "documentation",
+  "suppressions": [
+    "Error: /resources/privilegedidentitymanagementv3-overview.md:
+      Exception processing links.
+      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')"
+  ]
+} -->

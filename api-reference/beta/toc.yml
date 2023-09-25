@@ -144,6 +144,8 @@ items:
             href: /graph/migrate-exchange-web-services-authentication?context=graph/api/beta
           - name: API mapping
             href: /graph/migrate-exchange-web-services-api-mapping?context=graph/api/beta
+      - name: Outlook REST APIs
+        href: /outlook/rest/compare-graph?context=graph/context
   - name: Use SDKs
     items:
       - name: Overview
@@ -1046,10 +1048,10 @@ items:
                   - name: Remove key
                     href: api/application-removekey.md
               - name: Federated identity credentials
-                displayName: Workload identity federation, workload identities
                 items:
                   - name: Overview
                     href: resources/federatedidentitycredentials-overview.md
+                    displayName: Workload identity federation, workload identities
                   - name: Federated identity credentials
                     href: resources/federatedidentitycredential.md
                     items:
@@ -1277,6 +1279,14 @@ items:
                     href: api/serviceprincipal-post-owners.md
                   - name: Remove owner
                     href: api/serviceprincipal-delete-owners.md
+              - name: Permission grant pre-approval policy
+                items:
+                  - name: List
+                    href: api/serviceprincipal-list-permissiongrantpreapprovalpolicies.md
+                  - name: Assign
+                    href: api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
+                  - name: Remove
+                    href: api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
               - name: Policies
                 items:
                   - name: Claims mapping policy
@@ -11153,58 +11163,68 @@ items:
           - name: Drive items
             href: resources/driveitem.md
             items:
-              - name: List children
-                href: api/driveitem-list-children.md
               - name: Get item
                 href: api/driveitem-get.md
-              - name: Get thumbnails
-                href: api/driveitem-list-thumbnails.md
-              - name: Check in files
-                href: api/driveitem-checkin.md
-              - name: Check out files
-                href: api/driveitem-checkout.md
-              - name: Create folder
-                href: api/driveitem-post-children.md
               - name: Update item
                 href: api/driveitem-update.md
               - name: Delete item
                 href: api/driveitem-delete.md
-              - name: Restore item
-                href: api/driveitem-restore.md
-              - name: Move item
-                href: api/driveitem-move.md
-              - name: Copy item
-                href: api/driveitem-copy.md
-              - name: Download file
-                href: api/driveitem-get-content.md
+              - name: Assign sensitivity label
+                href: api/driveitem-assignsensitivitylabel.md
+              - name: Check in files
+                href: api/driveitem-checkin.md
+              - name: Check out files
+                href: api/driveitem-checkout.md
               - name: Convert file
                 href: api/driveitem-get-content-format.md
-              - name: Upload
-                href: api/driveitem-put-content.md
-              - name: Resumable Upload
+              - name: Copy item
+                href: api/driveitem-copy.md
+              - name: Create folder
+                href: api/driveitem-post-children.md
+              - name: Download file
+                href: api/driveitem-get-content.md
+              - name: Extract sensitivity labels
+                href: api/driveitem-extractsensitivitylabels.md
+              - name: Follow item
+                href: api/driveitem-follow.md
+              - name: Get activities by interval
+                href: api/itemactivity-getbyinterval.md
+              - name: Get item analytics
+                href: api/itemanalytics-get.md
+              - name: Get preview link
+                href: api/driveitem-preview.md
+              - name: Get retention label
+                href: api/driveitem-getretentionlabel.md 
+              - name: Get thumbnails
+                href: api/driveitem-list-thumbnails.md
+              - name: List children
+                href: api/driveitem-list-children.md
+              - name: List versions
+                href: api/driveitem-list-versions.md
+              - name: Lock or unlock record
+                href: api/driveitem-lockorunlockrecord.md
+              - name: Move item
+                href: api/driveitem-move.md
+              - name: Permanently delete item
+                href: api/driveitem-permanentdelete.md              
+              - name: Preview item
+                href: api/driveitem-preview.md
+              - name: Remove retention label
+                href: api/driveitem-removeretentionlabel.md
+              - name: Restore item
+                href: api/driveitem-restore.md
+              - name: Resumable upload
                 href: api/driveitem-createuploadsession.md
               - name: Search items
                 href: api/driveitem-search.md
+              - name: Set retention label
+                href: api/driveitem-setretentionlabel.md
               - name: Track changes
                 href: api/driveitem-delta.md
-              - name: Get preview link
-                href: api/driveitem-preview.md
-              - name: List versions
-                href: api/driveitem-list-versions.md
-              - name: Follow item
-                href: api/driveitem-follow.md
               - name: Unfollow item
                 href: api/driveitem-unfollow.md
-              - name: Get item analytics
-                href: api/itemanalytics-get.md
-              - name: Get activities by interval
-                href: api/itemactivity-getbyinterval.md
-              - name: Preview item
-                href: api/driveitem-preview.md
-              - name: Extract sensitivity labels
-                href: api/driveitem-extractsensitivitylabels.md
-              - name: Assign sensitivity label
-                href: api/driveitem-assignsensitivitylabel.md
+              - name: Upload
+                href: api/driveitem-put-content.md
           - name: Bundles
             href: resources/bundle.md
             items:
@@ -11473,7 +11493,6 @@ items:
               - name: Delete vendor
                 href: api/dynamics-vendor-delete.md
       - name: Identity and access
-        displayName: Azure AD, Microsoft identity platform, Identity and access
         items:
           - name: Overview
             displayName: Azure AD, Microsoft identity platform, Identity and access
@@ -12044,7 +12063,6 @@ items:
                   - name: Find tenant by tenant ID
                     href: api/tenantrelationship-findtenantinformationbytenantid.md
           - name: Network access
-            displayName: ZTNA, Global Secure Access, Microsoft Entra Internet Access, Microsoft Entra Private Access
             items:
               - name: Overview
                 displayName: ZTNA, Global Secure Access, Microsoft Entra Internet Access, Microsoft Entra Private Access
@@ -12506,7 +12524,6 @@ items:
                       - name: List resource roles
                         href: api/accesspackagecatalog-list-accesspackageresourceroles.md
                   - name: Access package custom workflow extension
-                    displayName: Custom authentication extensions
                     items:
                       - name: Assignment request workflow extension
                         href: resources/accesspackageassignmentrequestworkflowextension.md
@@ -12548,6 +12565,16 @@ items:
                         href: api/entitlementmanagement-list-accesspackageresourceenvironment.md
                       - name: Get
                         href: api/accesspackageresourceenvironment-get.md
+                  - name: Access package resource
+                    href: resources/accesspackageresource.md
+                    items:
+                      - name: List
+                        href: api/accesspackagecatalog-list-accesspackageresources.md
+                  - name: Access package resource role
+                    href: resources/accesspackageresourcerole.md
+                    items:
+                      - name: List
+                        href: api/accesspackagecatalog-list-accesspackageresourceroles.md
                   - name: Access package resource role scope
                     href: resources/accesspackageresourcerolescope.md
                     items:
@@ -12555,7 +12582,7 @@ items:
                         href: api/accesspackage-list-accesspackageresourcerolescopes.md
                       - name: Create
                         href: api/accesspackage-post-accesspackageresourcerolescopes.md
-                      - name: Create
+                      - name: Delete
                         href: api/accesspackage-delete-accesspackageresourcerolescopes.md
                   - name: Access package subject
                     href: resources/accesspackagesubject.md
@@ -12610,10 +12637,10 @@ items:
                       - name: Update
                         href: api/entitlementmanagementsettings-update.md
               - name: Lifecycle workflows
-                displayName: LCW, Identity Governance, Joiner, Mover, Leaver
                 items:
                   - name: Overview
                     href: resources/identitygovernance-lifecycleworkflows-overview.md
+                    displayName: LCW, Identity Governance, Joiner, Mover, Leaver
                   - name: Workflow
                     items:
                       - name: Workflow
@@ -12665,7 +12692,6 @@ items:
                           - name: Update task
                             href: api/identitygovernance-task-update.md
                       - name: Reports
-                        displayName: Lifecycle Workflows
                         items:
                           - name: Overview
                             displayName: Lifecycle Workflows reporting
@@ -12749,10 +12775,10 @@ items:
                       - name: Update
                         href: api/identitygovernance-lifecyclemanagementsettings-update.md
               - name: Privileged Identity Management iteration 3
-                displayName: Privileged Identity Management, PIM, Identity Governance
                 items:
                   - name: PIM for Azure AD Roles
                     href: resources/privilegedidentitymanagementv3-overview.md
+                    displayName: Privileged Identity Management, PIM, Identity Governance
                     items:
                       - name: Assignment schedule requests
                         href: resources/unifiedroleassignmentschedulerequest.md
@@ -12816,6 +12842,21 @@ items:
                             href: api/unifiedroleeligibilityscheduleinstance-get.md
                           - name: Filter by current user
                             href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
+                      - name: Assignment approval
+                        href: resources/approval.md
+                        items:
+                          - name: Get
+                            href: api/approval-get.md
+                          - name: Approval step
+                            items:
+                              - name: Approval step
+                                href: resources/approvalstep.md
+                              - name: List
+                                href: api/approval-list-steps.md
+                              - name: Get
+                                href: api/approvalstep-get.md
+                              - name: Update
+                                href: api/approvalstep-update.md
                       - name: Policies and rules
                         items:
                           - name: Policy
@@ -13613,6 +13654,63 @@ items:
                 items:
                   - name: Create invitation
                     href: api/invitation-post.md
+              - name: Multi-tenant organization
+                items:
+                - name: Overview
+                  displayName: Multi-tenant organization, MTO
+                  href: resources/multitenantorganization-overview.md
+                - name: Multi-tenant organization
+                  items:
+                  - name: Multi-tenant organization
+                    href: resources/multitenantorganization.md
+                  - name: Create
+                    href: api/tenantrelationship-put-multitenantorganization.md
+                  - name: Get
+                    href: api/multitenantorganization-get.md
+                  - name: Update
+                    href: api/multitenantorganization-update.md
+                - name: Tenant
+                  items:
+                  - name: Tenant
+                    href: resources/multitenantorganizationmember.md
+                  - name: List
+                    href: api/multitenantorganization-list-tenants.md
+                  - name: Add
+                    href: api/multitenantorganization-post-tenants.md
+                  - name: Get
+                    href: api/multitenantorganizationmember-get.md
+                  - name: Update
+                    href: api/multitenantorganizationmember-update.md
+                  - name: Remove
+                    href: api/multitenantorganization-delete-tenants.md
+                - name: Join request
+                  items:
+                  - name: Join request
+                    href: resources/multitenantorganizationjoinrequestrecord.md
+                  - name: Get
+                    href: api/multitenantorganizationjoinrequestrecord-get.md
+                  - name: Update
+                    href: api/multitenantorganizationjoinrequestrecord-update.md
+                - name: Partner configuration template
+                  items:
+                  - name: Partner configuration template
+                    href: resources/multitenantorganizationpartnerconfigurationtemplate.md
+                  - name: Get
+                    href: api/multitenantorganizationpartnerconfigurationtemplate-get.md
+                  - name: Update
+                    href: api/multitenantorganizationpartnerconfigurationtemplate-update.md
+                  - name: Reset
+                    href: api/multitenantorganizationpartnerconfigurationtemplate-resettodefaultsettings.md
+                - name: Identity sync policy template
+                  items:
+                  - name: Identity sync policy template
+                    href: resources/multitenantorganizationidentitysyncpolicytemplate.md
+                  - name: Get
+                    href: api/multitenantorganizationidentitysyncpolicytemplate-get.md
+                  - name: Update
+                    href: api/multitenantorganizationidentitysyncpolicytemplate-update.md
+                  - name: Reset
+                    href: api/multitenantorganizationidentitysyncpolicytemplate-resettodefaultsettings.md
               - name: Organization
                 href: resources/organization.md
                 items:
@@ -13748,6 +13846,15 @@ items:
                             href: api/fido2authenticationmethodconfiguration-update.md
                           - name: Delete
                             href: api/fido2authenticationmethodconfiguration-delete.md
+                      - name: Hardware OATH policy
+                        href: resources/hardwareoathAuthenticationMethodConfiguration.md
+                        items:
+                          - name: Get
+                            href: api/hardwareoathAuthenticationMethodConfiguration-get.md
+                          - name: Update
+                            href: api/hardwareoathAuthenticationMethodConfiguration-update.md
+                          - name: Delete
+                            href: api/hardwareoathAuthenticationMethodConfiguration-delete.md
                       - name: Microsoft Authenticator policy
                         href: resources/microsoftauthenticatorauthenticationmethodconfiguration.md
                         items:
@@ -13915,6 +14022,19 @@ items:
                             href: api/permissiongrantpolicy-post-excludes.md
                           - name: Delete from excludes
                             href: api/permissiongrantpolicy-delete-excludes.md
+                  - name: Permission grant pre-approval policy
+                    href: resources/permissiongrantpreapprovalpolicy.md
+                    items:
+                    - name: Create
+                      href: api/policyroot-post-permissiongrantpreapprovalpolicies.md
+                    - name: List
+                      href: api/policyroot-list-permissiongrantpreapprovalpolicies.md
+                    - name: Get
+                      href: api/permissiongrantpreapprovalpolicy-get.md
+                    - name: Update
+                      href: api/permissiongrantpreapprovalpolicy-update.md
+                    - name: Delete
+                      href: api/permissiongrantpreapprovalpolicy-delete.md
                   - name: Token issuance policy
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -14150,18 +14270,34 @@ items:
                     href: api/authenticationeventsflow-update.md
                   - name: Delete user flow
                     href: api/authenticationeventsflow-delete.md
-                  - name: List identity providers
-                    href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md
-                  - name: Add identity provider
-                    href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders.md
-                  - name: Remove identity provider
-                    href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-delete-identityproviders.md
-                  - name: List attributes
-                    href: api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
-                  - name: Add attributes
-                    href: api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
-                  - name: Remove attributes
-                    href: api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
+                  - name: Identity providers
+                    items:
+                    - name: List identity providers in a user flow
+                      href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-list-identityproviders.md
+                    - name: Add identity provider to a user flow
+                      href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-post-identityproviders.md
+                    - name: Remove identity provider from a user flow
+                      href: api/onauthenticationmethodloadstartexternalusersselfservicesignup-delete-identityproviders.md
+                  - name: User flow attributes
+                    items:
+                      - name: User flow attribute
+                        href: resources/identityuserflowattribute.md
+                      - name: List
+                        href: api/identityuserflowattribute-list.md
+                      - name: Create
+                        href: api/identityuserflowattribute-post.md
+                      - name: Get
+                        href: api/identityuserflowattribute-get.md
+                      - name: Update
+                        href: api/identityuserflowattribute-update.md
+                      - name: Delete
+                        href: api/identityuserflowattribute-delete.md
+                      - name: List attributes in a user flow
+                        href: api/onattributecollectionexternalusersselfservicesignup-list-attributes.md
+                      - name: Add attributes to a user flow
+                        href: api/onattributecollectionexternalusersselfservicesignup-post-attributes.md
+                      - name: Remove attributes from a user flow
+                        href: api/onattributecollectionexternalusersselfservicesignup-delete-attributes.md
                   - name: Authentication condition applications
                     href: resources/authenticationconditionapplication.md
                     items:
@@ -16217,26 +16353,30 @@ items:
                     href: resources/security-host.md
                   - name: Get
                     href: api/security-host-get.md
-                  - name: List children host pairs
+                  - name: Get reputation
+                    href: api/security-host-get-reputation.md
+                  - name: List child host pairs
                     href: api/security-host-list-childhostpairs.md
-                  - name: List host pairs
-                    href: api/security-host-list-hostpairs.md
                   - name: List components
                     href: api/security-host-list-components.md
                   - name: List cookies
                     href: api/security-host-list-cookies.md
+                  - name: List host pairs
+                    href: api/security-host-list-hostpairs.md
+                  - name: List host SSL certificate
+                    href: api/security-hostsslcertificate-list-host.md
                   - name: List parent host pairs
                     href: api/security-host-list-parenthostpairs.md
                   - name: List passive DNS
                     href: api/security-host-list-passivedns.md
                   - name: List passive DNS reverse
                     href: api/security-host-list-passivednsreverse.md
-                  - name: Get reputation
-                    href: api/security-host-get-reputation.md
                   - name: List subdomains
                     href: api/security-host-list-subdomains.md
                   - name: List trackers
                     href: api/security-host-list-trackers.md
+                  - name: Get WHOIS for a host
+                    href: api/security-host-get-whois.md
               - name: Host component
                 items:
                   - name: Host component
@@ -16255,12 +16395,20 @@ items:
                     href: resources/security-hostpair.md
                   - name: Get
                     href: api/security-hostpair-get.md
-                  - name: List host pairs for a host
+                  - name: List for a host
                     href: api/security-host-list-hostpairs.md
-                  - name: List parent host pairs
+                  - name: List for a host as child
                     href: api/security-host-list-parenthostpairs.md
-                  - name: List children host pairs
+                  - name: List for a host as parent
                     href: api/security-host-list-childhostpairs.md
+              - name: Host SSL certificate
+                items:
+                - name: Host SSL certificate
+                  href: resources/security-hostsslcertificate.md
+                - name: List
+                  href: api/security-hostsslcertificate-list-host.md
+                - name: Get
+                  href: api/security-hostsslcertificate-get.md
               - name: Host tracker
                 items:
                   - name: Host tracker
@@ -16289,6 +16437,14 @@ items:
                     href: resources/security-passivednsrecord.md
                   - name: Get
                     href: api/security-passivednsrecord-get.md
+              - name: SSL certificate
+                items:
+                - name: SSL certificate
+                  href: resources/security-sslcertificate.md
+                - name: List
+                  href: api/security-sslcertificate-list.md
+                - name: Get
+                  href: api/security-sslcertificate-get.md
               - name: Subdomain
                 items:
                   - name: Subdomain
@@ -16303,6 +16459,24 @@ items:
                     href: resources/security-vulnerabilitycomponent.md
                   - name: Get
                     href: api/security-vulnerabilitycomponent-get.md
+              - name: WHOIS record
+                items:
+                  - name: WHOIS record
+                    href: resources/security-whoisrecord.md
+                  - name: List
+                    href: api/security-whoisrecord-list.md
+                  - name: Get
+                    href: api/security-whoisrecord-get.md
+                  - name: Get WHOIS for a host
+                    href: api/security-host-get-whois.md
+              - name: WHOIS history record
+                items:
+                  - name: WHOIS history record
+                    href: resources/security-whoishistoryrecord.md
+                  - name: List
+                    href: api/security-whoisrecord-list-history.md
+                  - name: Get
+                    href: api/security-whoishistoryrecord-get.md
           - name: Threat intelligence indicator (preview)
             items:
               - name: Threat intelligence indicator
@@ -17283,7 +17457,7 @@ items:
                     href: api/presence-clearuserpreferredpresence.md
                   - name: Set user status message
                     href: api/presence-setstatusmessage.md
-              - name: Virtual event
+              - name: Virtual event (preview)
                 href: resources/virtualevent.md
                 items:
                   - name: Webinar
@@ -17301,11 +17475,10 @@ items:
                   - name: Registration
                     href: resources/virtualeventregistration.md
                     items:
-                      - name: Registrants
-                        href: resources/virtualeventregistrant.md
-                        items:
-                          - name: Get
-                            href: api/virtualeventregistrant-get.md
+                      - name: List
+                        href: api/virtualeventregistration-list.md
+                      - name: Get
+                        href: api/virtualeventregistration-get.md
           - name: Devices (preview)
             items:
               - name: Provisioned device
@@ -17487,6 +17660,8 @@ items:
                     href: api/chat-get.md
                   - name: Update chat
                     href: api/chat-patch.md
+                  - name: Delete
+                    href: api/chat-delete.md
                   - name: List members
                     href: api/chat-list-members.md
                   - name: Add member
@@ -17579,6 +17754,13 @@ items:
                     href: api/chat-post-pinnedmessages.md
                   - name: Unpin message
                     href: api/chat-delete-pinnedmessages.md
+              - name: Deleted chat
+                href: resources/deletedchat.md
+                items:
+                  - name: Get
+                    href: api/deletedchat-get.md
+                  - name: Undo delete
+                    href: api/deletedchat-undodelete.md
               - name: Team
                 href: resources/team.md
                 items:
@@ -18199,6 +18381,8 @@ items:
                 href: api/worksheet-list-charts.md
               - name: Add chart
                 href: api/worksheet-post-charts.md
+              - name: List tasks
+                href: api/workbookworksheet-list-tasks.md
           - name: Range
             href: resources/workbookrange.md
             items:
@@ -18279,3 +18463,17 @@ items:
                 href: api/nameditem-add.md
               - name: List range
                 href: api/nameditem-range.md
+          - name: Workbook document task
+            href: resources/workbookdocumenttask.md
+            items:
+              - name: List
+                href: api/workbookworksheet-list-tasks.md
+              - name: Get
+                href: api/workbookdocumenttask-get.md
+          - name: Workbook document task change
+            href: resources/workbookdocumenttaskchange.md
+            items:
+              - name: List
+                href: api/workbookdocumenttask-list-changes.md
+              - name: Get
+                href: api/workbookdocumenttaskchange-get.md

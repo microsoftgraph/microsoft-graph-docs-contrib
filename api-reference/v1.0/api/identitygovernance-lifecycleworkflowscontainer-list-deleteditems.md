@@ -37,7 +37,7 @@ GET /identityGovernance/lifecycleWorkflows/deletedItems/workflows/
 
 ## Optional query parameters
 
-This method supports the `$select`, `$search`, `$orderBy`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$search`, `$orderby`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -187,7 +187,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/delet
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-deleteditemcontainer-select-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
