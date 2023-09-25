@@ -39,7 +39,11 @@ POST /users/{userId}/onlineMeetings
 ```
 
 > [!NOTE]
+<<<<<<< HEAD
 >- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+=======
+>- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+>>>>>>> 41ea870097f52b604869cda08a9b6db33e04d064
 
 ## Request headers
 
