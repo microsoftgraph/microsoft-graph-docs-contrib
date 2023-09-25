@@ -1,6 +1,6 @@
 ---
 title: "positiveReinforcementNotification resource type"
-description: "Represents positive reinforcement end user notification setting for simulation creation."
+description: "Represents positive reinforcement settings for an end user notification during simulation creation."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents positive reinforcement end user notification setting for simulation creation. Admins can configure the notification details for a user who identify the phish message successfully.
+Represents positive reinforcement settings for an end user notification during simulation creation. Admins can configure the notification details for a user who identifies the phish message successfully.
 
 Inherits from [baseEndUserNotification](../resources/baseendusernotification.md).
 
