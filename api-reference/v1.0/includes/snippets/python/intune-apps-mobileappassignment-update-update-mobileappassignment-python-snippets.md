@@ -20,7 +20,7 @@ request_body = MobileAppAssignment(
 	),
 )
 
-result = await graph_client.device_app_management.mobile_apps.by_mobile_app_id('mobileApp-id').assignments.by_assignment_id('mobileAppAssignment-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.mobile_apps.by_mobile_app_id('mobileApp-id').assignments.by_assignment_id('mobileAppAssignment-id').patch(body = request_body)
 
 
 ```

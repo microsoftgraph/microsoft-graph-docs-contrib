@@ -15,7 +15,7 @@ request_body = UnifiedRoleAssignment(
 	app_scope_id = None,
 )
 
-result = await graph_client.role_management.exchange.role_assignments.post(request_body = request_body)
+result = await graph_client.role_management.exchange.role_assignments.post(body = request_body)
 
 
 ```

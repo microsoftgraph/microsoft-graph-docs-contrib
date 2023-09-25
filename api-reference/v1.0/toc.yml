@@ -144,6 +144,8 @@ items:
             href: /graph/migrate-exchange-web-services-authentication?context=graph/api/1.0
           - name: API mapping
             href: /graph/migrate-exchange-web-services-api-mapping?context=graph/api/1.0
+      - name: Outlook REST APIs
+        href: /outlook/rest/compare-graph?context=graph/context
   - name: Use SDKs
     items:
       - name: Overview
@@ -5676,7 +5678,7 @@ items:
                       - name: Reprocess
                         href: api/accesspackageassignmentrequest-reprocess.md
                       - name: Resume
-                        href: api/accesspackageassignmentrequest-resume.md  
+                        href: api/accesspackageassignmentrequest-resume.md
                   - name: Access package catalog
                     href: resources/accesspackagecatalog.md
                     items:
@@ -8777,6 +8779,10 @@ items:
                     href: api/chatmessage-softdelete.md
                   - name: Undo message deletion
                     href: api/chatmessage-undosoftdelete.md
+                  - name: Set message reaction
+                    href: api/chatmessage-setreaction.md
+                  - name: Unset message reaction
+                    href: api/chatmessage-unsetreaction.md
               - name: Chat
                 href: resources/chat.md
                 items:
@@ -8820,6 +8826,10 @@ items:
                     href: api/chat-post-pinnedmessages.md
                   - name: Unpin message
                     href: api/chat-delete-pinnedmessages.md
+                  - name: Set message reaction
+                    href: api/chatmessage-setreaction.md
+                  - name: Unset message reaction
+                    href: api/chatmessage-unsetreaction.md
                   - name: List permission grants
                     href: api/chat-list-permissiongrants.md
               - name: Chat message
@@ -8859,6 +8869,10 @@ items:
                     href: api/chat-post-pinnedmessages.md
                   - name: Unpin message
                     href: api/chat-delete-pinnedmessages.md
+                  - name: Set message reaction
+                    href: api/chatmessage-setreaction.md
+                  - name: Unset message reaction
+                    href: api/chatmessage-unsetreaction.md
               - name: Pinned chat message
                 href: resources/pinnedchatmessageinfo.md
                 items:

@@ -16,7 +16,7 @@ request_body = Deployment(
 	),
 )
 
-result = await graph_client.admin.windows.updates.deployments.by_deployment_id('deployment-id').patch(request_body = request_body)
+result = await graph_client.admin.windows.updates.deployments.by_deployment_id('deployment-id').patch(body = request_body)
 
 
 ```

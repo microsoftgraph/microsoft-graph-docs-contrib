@@ -41,17 +41,17 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|startCell|string|The start cell. This is where the chart will be moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.|
+|startCell|string|The start cell. This is where the chart is moved to. The start cell is the top-left or top-right cell, depending on the user's right-to-left display settings.|
 |endCell|string|Optional. The end cell. If specified, the chart's width and height will be set to fully cover up this cell/range.|
 
 ## Response
 
-If successful, this method returns `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns `200 OK` response code. It doesn't return anything in the response body.
 
 ## Example
-Here is an example of how to call this API.
+Here's an example of how to call this API.
 ##### Request
-Here is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +99,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. 
+Here's an example of the response. 
 <!-- {
   "blockType": "response"
 } -->

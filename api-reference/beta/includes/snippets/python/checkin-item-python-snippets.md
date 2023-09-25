@@ -12,7 +12,7 @@ request_body = CheckinPostRequestBody(
 	comment = "Updating the latest guidelines",
 )
 
-await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').checkin.post(request_body = request_body)
+await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').checkin.post(body = request_body)
 
 
 ```

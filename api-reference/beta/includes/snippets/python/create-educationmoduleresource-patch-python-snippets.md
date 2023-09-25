@@ -14,7 +14,7 @@ request_body = EducationModuleResource(
 	),
 )
 
-result = await graph_client.education.classes.by_classe_id('educationClass-id').modules.by_module_id('educationModule-id').resources.by_resource_id('educationModuleResource-id').patch(request_body = request_body)
+result = await graph_client.education.classes.by_classe_id('educationClass-id').modules.by_module_id('educationModule-id').resources.by_resource_id('educationModuleResource-id').patch(body = request_body)
 
 
 ```

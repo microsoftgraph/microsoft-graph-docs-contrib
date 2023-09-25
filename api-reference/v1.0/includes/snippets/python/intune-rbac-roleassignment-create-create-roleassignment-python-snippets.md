@@ -17,7 +17,7 @@ request_body = RoleAssignment(
 	]
 )
 
-result = await graph_client.device_management.role_definitions.by_role_definition_id('roleDefinition-id').role_assignments.post(request_body = request_body)
+result = await graph_client.device_management.role_definitions.by_role_definition_id('roleDefinition-id').role_assignments.post(body = request_body)
 
 
 ```

@@ -115,6 +115,12 @@ For example, when retrieving the messages of the signed-in user, you can specify
 GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 ```
 
+When you make a GET request without using `$select` to limit the amount of properties data, Microsoft Graph includes a **@microsoft.graph.tips** property that provides a best practice recommendation for using `$select` similar to the following message:
+
+```html
+"@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET groups?$select=appMetadata,assignedLabels",
+```
+
 ### Getting minimal responses
 
 For some operations, such as PUT and PATCH (and in some cases POST), if your application doesn't need to make use of a response payload, you can ask the API to return minimal data. Note that some services already return a `204 No Content` response for PUT and PATCH operations.

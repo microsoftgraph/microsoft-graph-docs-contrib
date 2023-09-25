@@ -13,7 +13,7 @@ request_body = PlannerRosterMember(
 	user_id = "String",
 )
 
-result = await graph_client.planner.rosters.by_roster_id('plannerRoster-id').members.post(request_body = request_body)
+result = await graph_client.planner.rosters.by_roster_id('plannerRoster-id').members.post(body = request_body)
 
 
 ```
