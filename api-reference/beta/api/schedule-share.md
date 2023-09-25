@@ -50,18 +50,18 @@ In the request body, provide a JSON object with the following parameters.
 |Parameter                   |Type           |Description  |
 |-----------------------|-------------------|--------------|
 | notifyTeam	        |`Boolean`             |Indicates whether the entire team should get a visible notification of this action, or only employees that have a shift assigned to them that was shared. Required.       |
-| startDateTime         |`DateTimeOffset`   |The start time to share shifts on the schedule from. Required.   |
-| endDateTime           |`DateTimeOffset`   | The end time to share shifts on the schedule until.   |
+| startDateTime         |`DateTimeOffset`   |The start time from which to share shifts on the schedule. Required.   |
+| endDateTime           |`DateTimeOffset`   | The end time until which to share shifts on the schedule.   |
 
 ## Response
 
-If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code. It doesn't return anything in the response body.
 
 ## Example
 
 #### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -115,7 +115,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 <!-- {
   "blockType": "response"
