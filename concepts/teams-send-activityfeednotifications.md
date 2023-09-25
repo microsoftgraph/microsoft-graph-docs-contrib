@@ -33,7 +33,10 @@ The following example shows how these components together provide the details ab
 Activity feed APIs work with a [Teams app](/microsoftteams/platform/overview). The following are the requirements for sending activity feed notifications:
 
 - The Teams app manifest must have the Azure AD app ID added to the `webApplicationInfo` section. For details, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
-- Activity types must be declared in the `activities` section. For details, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
+- Activity notifications can be sent with or without a template in manifest.
+  - By default, you can use activity notification APIs without declaring `activities` section in manifest. `systemDefault` is a reserved Activity Type for
+default activity notifications. See Example [Send customizable activity feed notifications](#example-8-notify-a-user-about-a-customizable-notification-in-a-team).
+  - If you want to send templated notification which is the traditional mode, Activity types must be declared in the [activities](#activities-section-changes) section. For details, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 - The Teams app must be installed for the recipient, either personally, or in a [team](/graph/api/resources/team) or [chat](/graph/api/resources/chat) they are part of. For more information, see [Teams app installation](/graph/api/resources/teamsappinstallation).
 
 ### Permissions
@@ -96,7 +99,7 @@ This section describes the changes that need to be added to Teams app manifest. 
 > [!NOTE]
 > * `actor` is a special parameter that always takes the name of the caller. In delegated calls, `actor` is the user's name. In application-only calls, it takes the name of the Teams app.
 >
-> * A reserved `systemDefault` ActivityType is already available by default. This `systemDefault` activityType does not support templatization and does not need to be defined in activities section of the manifest in advance. Even without providing this `systemDefault` default Activity type, the `systemDefault` default Activity type will be available for sending customizable default notifications. For more information, see [Send customizable activity feed notifications](#example-8-notify-a-user-about-a-customizable-notification-in-a-team).
+> * A reserved `systemDefault` ActivityType should not be provided in `activities` section of the manifest. This is a reserved ActivityType for default activity notifications. See Example [Send customizable activity feed notifications](#example-8-notify-a-user-about-a-customizable-notification-in-a-team).
 
 #### authorization section changes
 
@@ -736,13 +739,7 @@ HTTP/1.1 202 Accepted
 ```
 
 ### Example 8: Notify a user about a customizable Notification in a team
-
-This example shows how you can send an activity feed notification for a team with a flexibility of having runtime title. The reserved `systemDefault` ActivityType used here, is a reserved ActivityType which is not provided in the Manifest. Having a runtime title provides developers to have higher flexibility. Runtime title could be used for different event, mostly use this reserved runtime title for experimenting tweaks and purposes. Use this when "activityTypes" and "TemplatedText" is not specified in the manifest. see [Activities](#activities-section-changes).
-
-
-> [!NOTE]
->
-> Use `systemDefault` Actviity type with caution. This is a reserved activity type and should be used in a controlled manner. As a matter of fact, this should only be used for experimenting purposes, when App Developers are trying to onboard/upgarde/modify the new or existing `TemplatedText`. Once the verification is done, App Owners must go through the manifest Updation Process to include the new `activityTypes` and `TemplatedText` in the manifest. see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
+This example shows how you can send a default activity notification for a team without templated text in manifest. You have the flexibility to provide a runtime title. For details on `systemDefault` see [Reserved Activity Types](#reserved-activity-types).
 
 This example notifies the team owner to take a short break. Modify the `previewText` and `value` in `templateParameters` to customize the notification for various scenarios.
 
@@ -791,6 +788,12 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 204 No Content
 ```
+
+## Reserved Activity Types
+
+- `systemDefault` ActivityType is a reserved ActivityType which is not supported in the Manifest. It is a reserved string and it should not be used in the manifest while declaring [Activities](#activities-section-changes).
+- Use default activity notification for experimenting purposes or occasional notifications.
+- Recurring and large batch of notifications should still use templated notifications that require activity templates in manifest.
 
 ## Customize how the notifications alert you
 
