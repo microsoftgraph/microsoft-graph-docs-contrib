@@ -1565,7 +1565,7 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
-        "content": "<span contenteditable=\"false\" title=\"Face in clouds\" type=\"(faceinclouds)\" class=\"animated-emoticon-50-faceinclouds\"><img itemscope=\"\" itemtype=\"http://schema.skype.com/Emoji\" itemid=\"faceinclouds\" src=\"https://statics.teams.cdn.office.net/evergreen-assets/personal-expressions/v2/assets/emoticons/faceinclouds/default/50_f.png\" title=\"Face in clouds\" alt=\"😶‍🌫️\" style=\"width:50px;height:50px;\"></span>"
+        "content": "<emoji id=\"faceinclouds\" alt=\"😶‍🌫️\" title=\"Face in clouds\"></emoji>"
     },
     "attachments": [],
     "mentions": [],
