@@ -13,7 +13,7 @@ request_body = TenantTag(
 	description = "Tenants that we are currently onboarding",
 )
 
-result = await graph_client.tenant_relationships.managed_tenants.tenant_tags.by_tenant_tag_id('tenantTag-id').patch(request_body = request_body)
+result = await graph_client.tenant_relationships.managed_tenants.tenant_tags.by_tenant_tag_id('tenantTag-id').patch(body = request_body)
 
 
 ```

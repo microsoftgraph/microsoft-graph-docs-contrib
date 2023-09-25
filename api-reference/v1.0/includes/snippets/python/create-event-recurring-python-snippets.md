@@ -51,7 +51,7 @@ request_body = Event(
 	allow_new_time_proposals = True,
 )
 
-result = await graph_client.me.events.post(request_body = request_body)
+result = await graph_client.me.events.post(body = request_body)
 
 
 ```

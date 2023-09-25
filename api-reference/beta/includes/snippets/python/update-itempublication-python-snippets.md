@@ -13,7 +13,7 @@ request_body = ItemPublication(
 	thumbnail_url = "https://iabm.io/sdhdfhsdhshsd.jpg",
 )
 
-result = await graph_client.users.by_user_id('user-id').profile.publications.by_publication_id('itemPublication-id').patch(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').profile.publications.by_publication_id('itemPublication-id').patch(body = request_body)
 
 
 ```

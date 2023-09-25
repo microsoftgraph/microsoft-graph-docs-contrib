@@ -12,7 +12,7 @@ request_body = InferenceClassificationOverride(
 	classify_as = InferenceClassificationType.Focused,
 )
 
-result = await graph_client.me.inference_classification.overrides.by_override_id('inferenceClassificationOverride-id').patch(request_body = request_body)
+result = await graph_client.me.inference_classification.overrides.by_override_id('inferenceClassificationOverride-id').patch(body = request_body)
 
 
 ```

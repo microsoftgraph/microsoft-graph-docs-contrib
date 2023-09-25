@@ -27,14 +27,14 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
-|onboardingErrorMessage|String|Reflects a message to the user in case of an error.|
+|onboardingErrorMessage|String|Reflects a message to the user if there's an error.|
 |onboardingStatus|microsoft.graph.networkaccess.onboardingStatus|Reflects the tenant onboarding status. The possible values are: `offboarded`, `offboardingInProgress`, `onboardingInProgress`, `onboarded`, `onboardingErrorOccurred`, `offboardingErrorOccurred`.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

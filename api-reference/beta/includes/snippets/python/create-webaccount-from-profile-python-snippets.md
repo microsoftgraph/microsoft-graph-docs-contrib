@@ -17,7 +17,7 @@ request_body = WebAccount(
 	),
 )
 
-result = await graph_client.me.profile.web_accounts.post(request_body = request_body)
+result = await graph_client.me.profile.web_accounts.post(body = request_body)
 
 
 ```

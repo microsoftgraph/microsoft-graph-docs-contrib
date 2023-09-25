@@ -62,7 +62,7 @@ This section describes the changes that need to be added to Teams app manifest. 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |id|string|Azure AD app ID (client ID).|
-|resource|string|Resource associated with the Azure AD app. Also known as reply or redirect URL in the Azure Portal.|
+|resource|string|Resource associated with the Azure AD app. Also known as reply or Redirect URI in the Microsoft Entra admin center app registration overview.|
 
 > [!NOTE]
 > You might get an error if multiple Teams apps in the same scope (team, chat or user) are using the same Azure AD app. Make sure that you're using unique Azure AD apps.
@@ -257,7 +257,7 @@ Content-Type: application/json
     },
     "activityType": "taskCreated",
     "previewText": {
-    	"content": "New Task Created"
+        "content": "New Task Created"
     },
     "recipient": {
         "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
@@ -665,18 +665,18 @@ Content-Type: application/json
         "content": "Internal spending team has a pending finance approval requests"
     },
     "recipients": [
-    	{
-        	"@odata.type": "microsoft.graph.aadUserNotificationRecipient",
-        	"userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
-    	},
-    	{
-        	"@odata.type": "microsoft.graph.aadUserNotificationRecipient",
-        	"userId": "ab88234e-0874-477c-9638-d144296ed04f"
-    	},
-    	{
-        	"@odata.type": "microsoft.graph.aadUserNotificationRecipient",
-        	"userId": "01c64f53-69aa-42c7-9b7f-9f75195d6bfc"
-    	}
+        {
+            "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+            "userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
+        },
+        {
+            "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+            "userId": "ab88234e-0874-477c-9638-d144296ed04f"
+        },
+        {
+            "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+            "userId": "01c64f53-69aa-42c7-9b7f-9f75195d6bfc"
+        }
     ],
     "templateParameters": [
         {

@@ -13,7 +13,7 @@ request_body = CrossTenantAccessSettings(
 	network_packet_tagging_status = Status.Enabled,
 )
 
-result = await graph_client.network_access.settings.cros_tenant_access.patch(request_body = request_body)
+result = await graph_client.network_access.settings.cros_tenant_access.patch(body = request_body)
 
 
 ```

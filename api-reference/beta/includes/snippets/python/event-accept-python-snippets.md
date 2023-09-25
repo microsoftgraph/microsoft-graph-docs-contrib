@@ -13,7 +13,7 @@ request_body = AcceptPostRequestBody(
 	send_response = True,
 )
 
-await graph_client.me.events.by_event_id('event-id').accept.post(request_body = request_body)
+await graph_client.me.events.by_event_id('event-id').accept.post(body = request_body)
 
 
 ```

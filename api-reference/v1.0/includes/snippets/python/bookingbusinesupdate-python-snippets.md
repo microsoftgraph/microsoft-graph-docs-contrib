@@ -19,7 +19,7 @@ request_body = BookingBusiness(
 	),
 )
 
-result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').patch(request_body = request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').patch(body = request_body)
 
 
 ```

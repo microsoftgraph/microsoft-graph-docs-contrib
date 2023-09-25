@@ -20,7 +20,7 @@ request_body = EducationModuleResource(
 	),
 )
 
-result = await graph_client.education.classes.by_classe_id('educationClass-id').modules.by_module_id('educationModule-id').resources.post(request_body = request_body)
+result = await graph_client.education.classes.by_classe_id('educationClass-id').modules.by_module_id('educationModule-id').resources.post(body = request_body)
 
 
 ```

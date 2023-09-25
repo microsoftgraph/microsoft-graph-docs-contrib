@@ -27,7 +27,7 @@ request_body = List_(
 	),
 )
 
-result = await graph_client.sites.by_site_id('site-id').lists.post(request_body = request_body)
+result = await graph_client.sites.by_site_id('site-id').lists.post(body = request_body)
 
 
 ```

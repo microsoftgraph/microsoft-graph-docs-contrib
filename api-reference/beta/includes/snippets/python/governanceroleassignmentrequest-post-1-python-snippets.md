@@ -22,7 +22,7 @@ request_body = GovernanceRoleAssignmentRequest(
 	),
 )
 
-result = await graph_client.privileged_access.by_privileged_acce_id('privilegedAccess-id').role_assignment_requests.post(request_body = request_body)
+result = await graph_client.privileged_access.by_privileged_acce_id('privilegedAccess-id').role_assignment_requests.post(body = request_body)
 
 
 ```

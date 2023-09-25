@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory|
 
-If the caller does not have the permission to read properties for some of the objects included in the result set, the response will follow the [limited information returned for inaccessible member objects](/graph/permissions-overview#limited-information-returned-for-inaccessible-member-objects) pattern.
+If the caller doesn't have the permission to read properties for some of the objects included in the result set, the response follows the [limited information returned for inaccessible member objects](/graph/permissions-overview#limited-information-returned-for-inaccessible-member-objects) pattern.
 
 To read the properties that may require permissions for the object, grant the permissions to retrieve information about the object. For more information, see permissions for [users](user-list.md#permissions), [groups](group-list.md#permissions), and [service principals](serviceprincipal-list.md#permissions).
 
@@ -65,7 +65,7 @@ You can also combine all the supported function parameters in one request for fi
 
 ## Optional query parameters
 
-This method supports the `$count`, `$select`, `$filter`, and `$orderBy` OData query parameters to help customize the response. You can also filter by the type of object using OData casting. For example, `/assignedPrincipals(transitive=false)/microsoft.graph.user` and `/assignedPrincipals(transitive=true)/microsoft.graph.servicePrincipal/$count`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$select`, `$filter`, and `$orderby` OData query parameters to help customize the response. You can also filter by the type of object using OData casting. For example, `/assignedPrincipals(transitive=false)/microsoft.graph.user` and `/assignedPrincipals(transitive=true)/microsoft.graph.servicePrincipal/$count`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -74,7 +74,7 @@ This method supports the `$count`, `$select`, `$filter`, and `$orderBy` OData qu
 |ConsistencyLevel|eventual. Required. For more information about the use of **ConsistencyLevel**, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -114,7 +114,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/64
 
 #### Response
 
-The above request will return a count of 6 representing the following role assignments:
+The above request returns a count of 6 representing the following role assignments:
 + Two direct role assignments to User1 at Scope1 and Scope2
 + Two transitive role assignments to User1 through Group1 and Group2
 + Two transitive role assignments to User 2 and User3 through Group3.
@@ -129,7 +129,7 @@ Content-type: text/plain
 6
 ```
 
-Using the same scenario, the following examples show the counts that will be returned for each query pattern:
+Based on the same scenario, the following examples show the counts that are returned for each query pattern:
 
 | Example | Count |
 | --- | ---|
