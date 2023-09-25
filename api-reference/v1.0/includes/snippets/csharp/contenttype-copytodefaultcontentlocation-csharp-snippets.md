@@ -4,22 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var sourceFile = new ItemReference
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Sites.Item.ContentTypes.Item.CopyToDefaultContentLocation.CopyToDefaultContentLocationPostRequestBody
 {
-	SharepointIds = new SharepointIds
+	SourceFile = new ItemReference
 	{
-		ListId = "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0",
-		ListItemId = "2"
-	}
+		SharepointIds = new SharepointIds
+		{
+			ListId = "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0",
+			ListItemId = "2",
+		},
+	},
+	DestinationFileName = "newname.txt",
 };
+await graphClient.Sites["{site-id}"].ContentTypes["{contentType-id}"].CopyToDefaultContentLocation.PostAsync(requestBody);
 
-var destinationFileName = "newname.txt";
-
-await graphClient.Sites["{site-id}"].ContentTypes["{contentType-id}"]
-	.CopyToDefaultContentLocation(sourceFile,destinationFileName)
-	.Request()
-	.PostAsync();
 
 ```

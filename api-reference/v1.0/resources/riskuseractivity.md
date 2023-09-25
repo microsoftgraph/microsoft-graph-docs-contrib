@@ -1,7 +1,7 @@
 ---
 title: "riskUserActivity resource type"
 description: "riskUserActivity detections"
-author: "ebasseri"
+author: "tracyshi"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

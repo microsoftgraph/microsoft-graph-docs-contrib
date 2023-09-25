@@ -1,7 +1,7 @@
 ---
 title: "meetingRegistrant resource type"
 description: "Represents a meeting registrant who has enrolled in an online meeting."
-author: "mkhribech"
+author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "featureTarget resource type"
 description: "Defines a single group, Azure AD role, or administrative unit that is included or excluded in the settings specified in the authenticationMethodFeatureConfiguration object."
-author: "mjsantani"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -32,8 +32,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.featureTarget",
-  "targetType": "String",
-  "id": "String (identifier)"
+  "id": "String (identifier)",
+  "targetType": "String"
 }
 ```
 

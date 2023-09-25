@@ -5,7 +5,7 @@ manager: harshkum
 ms.localizationpriority: medium
 doc_type: conceptualPageType
 ms.prod: search
-description: "Learn how to use the Microsoft Graph connectors SDK (preview) to build a custom connector in C#."
+description: "Learn how to use the Microsoft Graph connectors SDK to build a custom connector in C#."
 ---
 
 # Build a custom Microsoft Graph connector in C#
@@ -15,7 +15,7 @@ This article describes how to use the Microsoft Graph connector SDK to build a c
 ## Prerequisites
 
 1. Download, install, and complete the setup for the [Microsoft Graph connector agent](/microsoftsearch/graph-connector-agent).
-2. Install [Visual Studio](https://visualstudio.microsoft.com/) 2019 or later with the [.NET Core 3.1 SDK](https://dotnet.microsoft.com/en-us/download).
+2. Install [Visual Studio](https://visualstudio.microsoft.com/) 2019 or later with the [.NET 7.0 SDK](https://dotnet.microsoft.com/download).
 3. Download the ApplianceParts.csv file from the [custom connector sample repo](https://github.com/microsoftgraph/msgraph-connectors-sdk/blob/main/C%23%20sample/CustomConnector/ApplianceParts.csv).
 
 ## Install the extension
@@ -166,7 +166,7 @@ The **ValidateAuthentication** method is used to validate the credentials and th
 
 The **ValidateCustomConfiguration** method is used to validate any other parameters required for the connection. The connector you're building doesn't require any extra parameters; therefore, the method will validate that the extra parameters are empty.
 
-1. Update the **alidateCustomConfiguration** method in ConnectionManagementServiceImpl.cs with the following code.
+1. Update the **ValidateCustomConfiguration** method in ConnectionManagementServiceImpl.cs with the following code.
 
     ```csharp
     public override Task<ValidateCustomConfigurationResponse> ValidateCustomConfiguration(ValidateCustomConfigurationRequest request, ServerCallContext context)

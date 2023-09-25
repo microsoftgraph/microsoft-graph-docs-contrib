@@ -23,8 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|AccessReview.ReadWrite.All|
 
-The signed-in user must also be in a directory role that permits them to read an access review to retrieve any data.  For more details, see the role and permission requirements for [access reviews](../resources/accessreviewsv2-overview.md).
-
+[!INCLUDE [rbac-access-reviews-apis-write](../includes/rbac-for-apis/rbac-access-reviews-apis-write.md)]
 ## HTTP request
 
 <!-- {
@@ -55,25 +54,13 @@ The following table shows the required properties used to create an [accessRevie
 |reviewHistoryPeriodStartDateTime  | DateTimeOffset  | A timestamp. Reviews starting on or after this date will be included in the fetched history data. Only required if **scheduleSettings** is not defined.  |
 |reviewHistoryPeriodEndDateTime  | DateTimeOffset  | A timestamp. Reviews starting on or before this date will be included in the fetched history data. Only required if **scheduleSettings** is not defined.  |
 |scopes|[accessReviewQueryScope](../resources/accessreviewqueryscope.md) collection| Used to filter which reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. Required. <br> For more, see [Supported scope queries for accessReviewHistoryDefinition](#supported-scope-queries-for-accessreviewhistorydefinition). |
-| scheduleSettings  |[accessReviewHistoryScheduleSettings](../resources/accessReviewHistoryScheduleSettings.md)| The settings for a recurring access review history definition series. Only required if **reviewHistoryPeriodStartDateTime** or **reviewHistoryPeriodEndDateTime** are not defined. Not supported yet.|
+| scheduleSettings |[accessReviewHistoryScheduleSettings](../resources/accessReviewHistoryScheduleSettings.md)| **Not supported yet.** The settings for a recurring access review history definition series. Only required if **reviewHistoryPeriodStartDateTime** or **reviewHistoryPeriodEndDateTime** are not defined. |
 
 ### Supported scope queries for accessReviewHistoryDefinition
 
 The **scopes** property of [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) is based on **accessReviewQueryScope**, a resource that allows you to configure different resources in it's **query** property. These resources then represent the scope of the history definition and dictate the type of review history data that is included in the downloadable CSV file which is generated when the history definition's [accessReviewHistoryInstances](../resources/accessreviewhistoryinstance.md) are created.
 
-Use the following format for the **query** property:
-
-```http
-/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '{object}')
-```
-
-The value of `{object}` is one of the resources that can be configured in an **accessReviewScheduleDefinition**. For example, the following includes every accessReviewScheduleDefinition review result on individual groups (and excludes definitions scoped to all Microsoft 365 groups with guest users).
-
-```http
-/identityGovernance/accessReviews/definitions?$filter=contains(scope/query, '/groups')
-```
-
-For more supported values, see Use the [$filter query parameter on accessReviewScheduleDefinition](accessreviewset-list-definitions.md#use-the-filter-query-parameter).
+[!INCLUDE [accessreviews-definition-filter-scope](../../includes/accessreviews-definition-filter-scope.md)]
 
 ## Response
 
@@ -105,20 +92,8 @@ Content-Type: application/json
     "notReviewed",
     "notNotified"
   ],
-  "scheduleSettings": {
-      "reportRange": "P1M",
-      "recurrence": {
-          "pattern": {
-              "type": "monthly",
-              "interval": 1
-          },
-          "range": {
-              "type": "noEnd",
-              "startDate": "2018-08-03T21:02:30.667Z",
-              "count": 0
-          }
-        }
-  },
+  "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
+  "reviewHistoryPeriodEndDateTime": "2021-04-30T23:59:59Z",
   "scopes": [
     {
       "@odata.type": "#microsoft.graph.accessReviewQueryScope",
@@ -136,24 +111,39 @@ Content-Type: application/json
 }
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewhistorydefinition-from--javascript-snippets.md)]
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreviewhistorydefinition-from--csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewhistorydefinition-from--java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-accessreviewhistorydefinition-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-accessreviewhistorydefinition-from--go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accessreviewhistorydefinition-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreviewhistorydefinition-from--javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-accessreviewhistorydefinition-from--php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewhistorydefinition-from--powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accessreviewhistorydefinition-from--python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 
@@ -173,20 +163,8 @@ Content-Type: application/json
     "@odata.type": "#microsoft.graph.accessReviewHistoryDefinition",
     "id": "b2cb022f-b7e1-40f3-9854-c65a40861c38",
     "displayName": "Last quarter's group reviews April 2021",
-    "scheduleSettings": {
-        "reportRange": "P1M",
-        "recurrence": {
-            "pattern": {
-                "type": "monthly",
-                "interval": 1
-            },
-            "range": {
-                "type": "noEnd",
-                "startDate": "2018-08-03T21:02:30.667Z",
-                "count": 0
-            }
-        }
-    },
+    "reviewHistoryPeriodStartDateTime": "2021-01-01T00:00:00Z",
+    "reviewHistoryPeriodEndDateTime": "2021-04-30T23:59:59Z",
     "decisions": [
         "approve",
         "deny",

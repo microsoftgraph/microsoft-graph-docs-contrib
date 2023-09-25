@@ -4,20 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestFilter := "isof('microsoft.graph.windowsUpdates.azureADDevice')"
 
-requestParameters := &graphconfig.UpdatableAssetsRequestBuilderGetQueryParameters{
-	Filter: &requestFilter,
-}
-configuration := &graphconfig.UpdatableAssetsRequestBuilderGetRequestConfiguration{
-	QueryParameters: requestParameters,
-}
-
-result, err := graphClient.Admin().Windows().Updates().UpdatableAssets().Get(context.Background(), configuration)
+updatableAssets, err := graphClient.Admin().Windows().Updates().UpdatableAssets().ByUpdatableAssetId("updatableAsset-id").Get(context.Background(), nil)
 
 
 ```

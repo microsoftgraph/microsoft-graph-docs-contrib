@@ -1,7 +1,7 @@
 ---
 title: "appleVppTokenTroubleshootingEvent resource type"
 description: "Event representing an Apple Vpp Token Troubleshooting Event."
-author: "dougeby"
+author: "jaiprakashmb"
 ms.localizationpriority: medium
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -80,7 +80,3 @@ Here is a JSON representation of the resource.
   "tokenId": "String"
 }
 ```
-
-
-
-

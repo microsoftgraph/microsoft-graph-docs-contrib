@@ -34,7 +34,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.authenticationMethodsRegistrationCampaignIncludeTarget",
   "id": "String (identifier)",
-  "targetType": "String",
-  "targetedAuthenticationMethod": "String"
+  "targetedAuthenticationMethod": "String",
+  "targetType": "String"
 }
 ```

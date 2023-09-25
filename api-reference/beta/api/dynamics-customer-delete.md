@@ -1,9 +1,9 @@
 ---
-title: Delete customers 
-description: Deletes a customers object from Dynamics 365 Business Central.
-services: project-madeira
+title: "Delete customers" 
+description: "Delete a customers object from Dynamics 365 Business Central."
+services: "project-madeira"
 documentationcenter: ''
-author: SusanneWindfeldPedersen
+author: "SusanneWindfeldPedersen"
 ms.localizationpriority: medium
 ms.prod: "dynamics-365-business-central"
 doc_type: apiPageType
@@ -38,31 +38,28 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 |Header         |Value                     |
 |---------------|--------------------------|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **customers**, the **customers** will not be updated. |
+|If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the **customers**, the **customers** won't be updated. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns ```204 No Content``` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
-**Request**
+### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 ```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/customers/{id}
 ```
 
-**Response** 
+### Response
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 ```http
 HTTP/1.1 204 No Content
 ```
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "remoteAssistancePartner resource type"
 description: "RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -56,6 +56,3 @@ Here is a JSON representation of the resource.
   "lastConnectionDateTime": "String (timestamp)"
 }
 ```
-
-
-

@@ -1,7 +1,7 @@
 ---
 title: "Software updates with the Windows Update for Business deployment service"
 description: "Software updates are the primary type of content the deployment service deploys. You can look in a catalog to find specific updates that are available to deploy."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: conceptualPageType
@@ -15,11 +15,11 @@ You might already be familiar with the [Microsoft Update Catalog](https://www.ca
 
 ## Windows update categories
 
-In general, there are two high-level categories of Windows 10 updates: feature updates and quality updates. Falling into the quality updates category includes security updates, driver updates, and others.
+In general, there are three high-level categories of Windows updates: feature updates, quality updates, and driver updates. Quality updates category includes security updates.
 
-The deployment service [catalog](/graph/api/resources/windowsupdates-catalog?view=graph-rest-beta&preserve-view=true) also categorizes updates as feature and quality updates. [Quality update catalog entries](/graph/api/resources/windowsupdates-qualityupdatecatalogentry?view=graph-rest-beta&preserve-view=true) define security and non-security updates in a specific way and exclude driver updates. Note that the definition is different from the Microsoft Update Catalog. See [quality updates](#quality-updates) below for more details.
+The deployment service [catalog](/graph/api/resources/windowsupdates-catalog?view=graph-rest-beta&preserve-view=true) also categorizes updates as feature, quality, and driver updates. [Quality update catalog entries](/graph/api/resources/windowsupdates-qualityupdatecatalogentry?view=graph-rest-beta&preserve-view=true) define security and non-security updates in a specific way and exclude driver updates. Note that the definition is different from the Microsoft Update Catalog. See [quality updates](#quality-updates) below for more details.
 
-Effectively, the deployment service currently deploys only feature updates and _security_ quality updates as defined in its catalog. The service currently does not deploy non-security quality updates or driver updates.
+Effectively, the deployment service currently deploys only feature updates, _security_ quality updates, and driver updates as defined in its catalog. The service currently does not deploy non-security quality updates.
 
 To learn more about Windows 10 updates and servicing, see [Quick guide to Windows as a service](/windows/deployment/update/waas-quick-start).
 
@@ -70,7 +70,7 @@ Below are some examples of feature updates in the deployment service catalog.
 | Feature Update to Windows 10, version 1903 | 1903    |
 | Feature Update to Windows 10, version 1809 | 1809    |
 
-Once you identify a desired version, assign it as content to a deployment using a [featureUpdateReference](/graph/api/resources/windowsupdates-featureupdatereference) and specifying the **version** property.
+Once you identify a desired version, assign it as content to a deployment using [catalogContent](/graph/api/resources/windowsupdates-catalogcontent).
 
 ### Quality updates
 
@@ -97,7 +97,7 @@ The entries from the Microsoft Update Catalog corresponding to a quality update 
 | 2021-03 Cumulative Update for Windows 10 Version 1909 for x86-based Systems (KB5000808) | Windows 10, version 1903 and later | Security Updates |
 | 2021-03 Cumulative Update for Windows 10 Version 1809 for x64-based Systems (KB5000822) | Windows 10, Windows 10 LTSB        | Security Updates |
 
-Once you have identified the desired update, assign it as content to a deployment using a [qualityUpdateReference](/graph/api/resources/windowsupdates-qualityupdatereference) and specifying the **releaseDateTime** and **classification** properties.
+Once you have identified the desired update, assign it as content to a deployment using [catalogContent](/graph/api/resources/windowsupdates-catalogContent).
 
 ## Examples
 

@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: DriveRecipient
 ms.localizationpriority: medium
@@ -22,20 +22,20 @@ The recipients resource has these properties.
 
 | Property name | Type   | Description                                                                                             |
 |:--------------|:-------|:--------------------------------------------------------------------------------------------------------|
-| email         | String | The email address for the recipient, if the recipient has an associated email address.                  |
 | alias         | String | The alias of the domain object, for cases where an email address is unavailable (e.g. security groups). |
+| email         | String | The email address for the recipient, if the recipient has an associated email address.                  |
 | objectId      | String | The unique identifier for the recipient in the directory.                                               |
 
 ## JSON representation
 
-<!-- { 
-  "blockType": "resource", 
-  "@odata.type": "microsoft.graph.driveRecipient", 
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.driveRecipient",
   "optionalProperties": ["alias", "objectId", "email"] } -->
 ```json
 {
-  "email": "string",
   "alias": "string",
+  "email": "string",
   "objectId": "string",
 }
 ```

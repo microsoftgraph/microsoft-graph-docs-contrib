@@ -4,18 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var appManagementPolicy = new AppManagementPolicy
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Models.ReferenceCreate
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.id", "https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}"}
-	}
+	OdataId = "https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}",
 };
+await graphClient.Applications["{application-id}"].AppManagementPolicies.Ref.PostAsync(requestBody);
 
-await graphClient.Applications["{application-id}"].AppManagementPolicies.References
-	.Request()
-	.AddAsync(appManagementPolicy);
 
 ```

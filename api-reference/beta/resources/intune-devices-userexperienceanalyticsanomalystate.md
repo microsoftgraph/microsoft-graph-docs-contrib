@@ -1,7 +1,7 @@
 ---
 title: "userExperienceAnalyticsAnomalyState enum type"
 description: "Indicates the state of the anomaly. Eg: anomaly severity can be new, active, disabled, removed or other."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType
@@ -26,8 +26,3 @@ Indicates the state of the anomaly. Eg: anomaly severity can be new, active, dis
 |removed|3|Indicates the state of anomaly is removed.|
 |other|4|Indicates the state of anomaly is undefined.|
 |unknownFutureValue|5|Evolvable enumeration sentinel value. Do not use.|
-
-
-
-
-

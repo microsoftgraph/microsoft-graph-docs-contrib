@@ -34,8 +34,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.azureActiveDirectoryTenant",
-  "tenantId": "String",
-  "displayName": "String"
+  "displayName": "String",
+  "tenantId": "String"
 }
 ```
 

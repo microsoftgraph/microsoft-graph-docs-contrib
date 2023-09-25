@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "sites-and-lists"
 doc_type: "resourcePageType"
 ---
-# mediaSource resouce type
+# mediaSource resource type
 
 The **mediaSource** resource contains metadata about the source of media (audio or video) drive item.
 

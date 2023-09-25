@@ -1,0 +1,20 @@
+name: Changelog link validation
+
+on:
+  pull_request_target:
+    branches: [ main, live ]
+    
+permissions:
+  pull-requests: write
+  
+jobs:
+  check_pull_request:
+    name: Check files for broken links
+    runs-on: ubuntu-latest
+    steps:
+    - name: Validate files
+      id: validate
+      with:
+        repoToken: ${{ secrets.GITHUB_TOKEN }}
+        changeLogDirectory: changelog
+      uses: microsoftgraph/changelog-link-check@v1.0.3

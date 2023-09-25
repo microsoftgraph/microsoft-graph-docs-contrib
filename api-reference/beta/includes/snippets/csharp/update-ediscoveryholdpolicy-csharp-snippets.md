@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var ediscoveryHoldPolicy = new Microsoft.Graph.Security.EdiscoveryHoldPolicy
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Microsoft.Graph.Beta.Models.Security.EdiscoveryHoldPolicy
 {
 	Description = "updated description",
-	ContentQuery = "bazooka bazooka"
 };
+var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].LegalHolds["{ediscoveryHoldPolicy-id}"].PatchAsync(requestBody);
 
-await graphClient.Security.Cases.EdiscoveryCases["{security.ediscoveryCase-id}"].LegalHolds["{security.ediscoveryHoldPolicy-id}"]
-	.Request()
-	.UpdateAsync(ediscoveryHoldPolicy);
 
 ```

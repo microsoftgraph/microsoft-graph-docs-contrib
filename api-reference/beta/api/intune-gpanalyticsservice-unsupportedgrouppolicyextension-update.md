@@ -1,7 +1,7 @@
 ---
 title: "Update unsupportedGroupPolicyExtension"
 description: "Update the properties of a unsupportedGroupPolicyExtension object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [unsupportedGroupPolicyExtension](../resources/intune-gpanalyticsservice-unsupportedgrouppolicyextension.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
+|id|String||
 |settingScope|[groupPolicySettingScope](../resources/intune-gpanalyticsservice-grouppolicysettingscope.md)|Setting Scope of the unsupported extension. Possible values are: `unknown`, `device`, `user`.|
 |namespaceUrl|String|Namespace Url of the unsupported extension.|
 |extensionType|String|ExtensionType of the unsupported extension.|
@@ -93,8 +93,3 @@ Content-Length: 285
   "nodeName": "Node Name value"
 }
 ```
-
-
-
-
-

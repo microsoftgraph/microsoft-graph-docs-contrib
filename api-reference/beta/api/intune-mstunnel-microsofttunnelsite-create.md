@@ -1,7 +1,7 @@
 ---
 title: "Create microsoftTunnelSite"
 description: "Create a new microsoftTunnelSite object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Create a new [microsoftTunnelSite](../resources/intune-mstunnel-microsofttunnelsite.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -58,7 +58,6 @@ The following table shows the properties that are required when you create the m
 |upgradeAutomatically|Boolean|The site's automatic upgrade setting. True for automatic upgrades, false for manual control|
 |upgradeAvailable|Boolean|The site provides the state of when an upgrade is available|
 |internalNetworkProbeUrl|String|The site's Internal Network Access Probe URL|
-|enableCertificatePinning|Boolean|When set to true, certificate pinning will be enforced on connections between the Microsoft Tunnel server and Microsoft Tunnel clients. When set to false, certificate pinning will be disabled.|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance|
 
 
@@ -73,7 +72,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/microsoftTunnelSites
 Content-type: application/json
-Content-length: 561
+Content-length: 524
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelSite",
@@ -86,7 +85,6 @@ Content-length: 561
   "upgradeAutomatically": true,
   "upgradeAvailable": true,
   "internalNetworkProbeUrl": "https://example.com/internalNetworkProbeUrl/",
-  "enableCertificatePinning": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ]
@@ -98,7 +96,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 610
+Content-Length: 573
 
 {
   "@odata.type": "#microsoft.graph.microsoftTunnelSite",
@@ -112,14 +110,8 @@ Content-Length: 610
   "upgradeAutomatically": true,
   "upgradeAvailable": true,
   "internalNetworkProbeUrl": "https://example.com/internalNetworkProbeUrl/",
-  "enableCertificatePinning": true,
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ]
 }
 ```
-
-
-
-
-

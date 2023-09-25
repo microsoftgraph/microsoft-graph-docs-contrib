@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-In the traditional Azure AD B2B collaboration, any invited user from an organization could use their identity to access resources in external organizations. Administrators didn't have control over the user identities in their tenant that are allowed to sign in to external organizations. These limited controls made it difficult to prevent identities from your organization from being used in unauthorized ways.
+In the traditional Azure AD (Azure Active Directory) B2B collaboration, any invited user from an organization could use their identity to access resources in external organizations. Administrators didn't have control over the user identities in their tenant that are allowed to sign in to external organizations. These limited controls made it difficult to prevent identities from your organization from being used in unauthorized ways.
 
 **Cross-tenant access settings** let you control and manage collaboration between users in your organization and other organizations. The control can be on either **outbound access** (how your users collaborate with other organizations), **inbound access** (how other organizations collaborate with you), or both.
 
@@ -46,6 +46,19 @@ Inbound trust settings enable you to trust the MFA external users perform in the
 For example, when you configure your trust settings to trust MFA, your MFA policies are still applied to external users, but users who have already completed MFA in their home tenants won't have to complete MFA again in your tenant.
 
 Inbound trust settings also enable you to trust devices that are compliant, or hybrid Azure AD joined in their home directories. With inbound trust settings in cross-tenant access settings, you can now protect access to your apps and resources by requiring that external users use compliant, or hybrid Azure AD joined devices.
+
+## Inbound cross-tenant sync in cross-tenant access settings
+
+You can enable cross-tenant synchronization to synchronize users from a partner tenant. Cross-tenant synchronization is a one-way synchronization service in Azure AD that automates the creation, update, and deletion of B2B collaboration users across tenants in an organization. You create a user synchronization policy to streamline collaboration between users in multi-tenant organizations. Partner user synchronization settings are defined using the [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md) resource type.
+
+## Collaborate with organizations using Azure Active Directory in different Microsoft clouds
+
+Cross-tenant access settings is used to enable collaboration with Azure AD organizations in separate Microsoft clouds. The `allowedCloudEndpoints` property enables you to specify which Microsoft clouds you'd like to extend your collaboration to. B2B collaboration is supported between the following Microsoft clouds:
+
++ Microsoft Azure commercial and Microsoft Azure Government
++ Microsoft Azure commercial and Microsoft Azure China
+
+Learn more about [collaborating with organizations from a different Microsoft cloud](/azure/active-directory/external-identities/cross-cloud-settings).
 
 ## Interpreting the API response
 

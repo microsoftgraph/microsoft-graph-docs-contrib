@@ -1,6 +1,6 @@
 ---
 title: "Delete educationFeedbackResourceOutcome"
-description: "Delete a feedback resource from a submission. This can only be done by a teacher."
+description: "Delete a feedback resource from a submission."
 author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.prod: "education"
@@ -36,7 +36,7 @@ DELETE /education/classes/{classId}/assignments/{assignmentId}/submissions/{subm
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Don't supply a request body for this method.
+Do not supply a request body for this method.
 
 ## Response
 If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
@@ -59,28 +59,35 @@ DELETE https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-856
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationfeedbackresourceoutcome-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationfeedbackresourceoutcome-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-educationfeedbackresourceoutcome-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-educationfeedbackresourceoutcome-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-educationfeedbackresourceoutcome-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-educationfeedbackresourceoutcome-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-educationfeedbackresourceoutcome-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationfeedbackresourceoutcome-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-educationfeedbackresourceoutcome-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-educationfeedbackresourceoutcome-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/delete-educationfeedbackresourceoutcome-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 The following is an example of the response.

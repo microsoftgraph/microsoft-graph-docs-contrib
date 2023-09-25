@@ -1,7 +1,7 @@
 ---
 title: "managedEBook resource type"
 description: "An abstract class containing the base properties for Managed eBook."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -22,7 +22,7 @@ An abstract class containing the base properties for Managed eBook.
 |:---|:---|:---|
 |[List managedEBooks](../api/intune-books-managedebook-list.md)|[managedEBook](../resources/intune-books-managedebook.md) collection|List properties and relationships of the [managedEBook](../resources/intune-books-managedebook.md) objects.|
 |[Get managedEBook](../api/intune-books-managedebook-get.md)|[managedEBook](../resources/intune-books-managedebook.md)|Read properties and relationships of the [managedEBook](../resources/intune-books-managedebook.md) object.|
-|[assign action](../api/intune-books-managedebook-assign.md)|None|Not yet documented|
+|[assign action](../api/intune-books-managedebook-assign.md)|None||
 
 ## Properties
 |Property|Type|Description|
@@ -74,8 +74,3 @@ Here is a JSON representation of the resource.
   "privacyInformationUrl": "String"
 }
 ```
-
-
-
-
-

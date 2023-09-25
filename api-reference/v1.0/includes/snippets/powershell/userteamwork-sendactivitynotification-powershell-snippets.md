@@ -7,18 +7,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	Topic = @{
-		Source = "entityUrl"
-		Value = "https://graph.microsoft.com/v1.0/users/{userId}/teamwork/installedApps/{installationId}"
+	topic = @{
+		source = "entityUrl"
+		value = "https://graph.microsoft.com/v1.0/users/{userId}/teamwork/installedApps/{installationId}"
 	}
-	ActivityType = "taskCreated"
-	PreviewText = @{
-		Content = "New Task Created"
+	activityType = "taskCreated"
+	previewText = @{
+		content = "New Task Created"
 	}
-	TemplateParameters = @(
+	templateParameters = @(
 		@{
-			Name = "taskId"
-			Value = "Task 12322"
+			name = "taskId"
+			value = "Task 12322"
 		}
 	)
 }

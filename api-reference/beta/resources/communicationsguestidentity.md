@@ -1,7 +1,7 @@
 --- 
 title: "communicationsGuestIdentity resource type"
 description: "Represents the identity of a participant who joined the communication without authentication."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -26,7 +26,7 @@ Inherits from [identity](identity.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

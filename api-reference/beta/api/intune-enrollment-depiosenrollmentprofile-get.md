@@ -1,7 +1,7 @@
 ---
 title: "Get depIOSEnrollmentProfile"
 description: "Read properties and relationships of the depIOSEnrollmentProfile object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 Read properties and relationships of the [depIOSEnrollmentProfile](../resources/intune-enrollment-depiosenrollmentprofile.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2569
+Content-Length: 2730
 
 {
   "value": {
@@ -94,6 +94,12 @@ Content-Length: 2569
     "screenTimeScreenDisabled": true,
     "deviceNameTemplate": "Device Name Template value",
     "configurationWebUrl": true,
+    "enabledSkipKeys": [
+      "Enabled Skip Keys value"
+    ],
+    "enrollmentTimeAzureAdGroupIds": [
+      "7f64eb6c-eb6c-7f64-6ceb-647f6ceb647f"
+    ],
     "iTunesPairingMode": "allow",
     "managementCertificates": [
       {
@@ -132,8 +138,3 @@ Content-Length: 2569
   }
 }
 ```
-
-
-
-
-

@@ -4,12 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var getCredentialUsageSummary = await graphClient.Reports
-	.GetCredentialUsageSummary("D30")
-	.Request()
-	.Filter("feature eq 'registration'")
-	.GetAsync();
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var result = await graphClient.Reports.GetCredentialUsageSummaryWithPeriod("{period}").GetAsync((requestConfiguration) =>
+{
+	requestConfiguration.QueryParameters.Filter = "feature eq 'registration'";
+});
+
 
 ```

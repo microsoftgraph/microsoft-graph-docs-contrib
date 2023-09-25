@@ -4,20 +4,28 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
+
+import (
+	  "context"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphusers "github.com/microsoftgraph/msgraph-sdk-go/users"
+	  //other-imports
+)
+
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestIncludeHiddenFolders := true
 
-requestParameters := &graphconfig.MailFoldersRequestBuilderGetQueryParameters{
+requestIncludeHiddenFolders := "true"
+
+requestParameters := &graphusers.ItemMailFoldersRequestBuilderGetQueryParameters{
 	IncludeHiddenFolders: &requestIncludeHiddenFolders,
 }
-configuration := &graphconfig.MailFoldersRequestBuilderGetRequestConfiguration{
+configuration := &graphusers.ItemMailFoldersRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().MailFolders().Get(context.Background(), configuration)
+mailFolders, err := graphClient.Me().MailFolders().Get(context.Background(), configuration)
 
 
 ```

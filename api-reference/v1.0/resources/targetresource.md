@@ -17,16 +17,16 @@ Represents target resource types associated with audit activity.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|String|Indicates the unique ID of the resource.|
 |displayName|String|Indicates the visible name defined for the resource. Typically specified when the resource is created.|
+|groupType|groupType|When **type** is set to `Group`, this indicates the group type. Possible values are: `unifiedGroups`, `azureAD`, and `unknownFutureValue`|
+|id|String|Indicates the unique ID of the resource.|
+|modifiedProperties|[modifiedProperty](modifiedproperty.md) collection|Indicates name, old value and new value of each attribute that changed. Property values depend on the operation **type**.|
 |type|String|Describes the resource type.  Example values include `Application`, `Group`, `ServicePrincipal`, and `User`.|
 |userPrincipalName|String|When **type** is set to `User`, this includes the user name that initiated the action; `null` for other types.|
-|groupType|groupType|When **type** is set to `Group`, this indicates the group type. Possible values are: `unifiedGroups`, `azureAD`, and `unknownFutureValue`|
-|modifiedProperties|[modifiedProperty](modifiedproperty.md) collection|Indicates name, old value and new value of each attribute that changed. Property values depend on the operation **type**.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

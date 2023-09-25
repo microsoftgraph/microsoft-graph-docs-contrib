@@ -1,7 +1,7 @@
 ---
 title: "Manage monitoring rules using the Windows Update for Business deployment service"
 description: "Use the Windows Update for Business deployment service to create a monitoring rule or resume deployments paused by a monitoring rule."
-author: "aarononeal"
+author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
 doc_type: conceptualPageType
@@ -15,7 +15,7 @@ Monitoring rules are compatible with deployments of Windows 10 feature updates.
 
 ## Step 1: Create a monitoring rule
 
-You can create a [monitoring rule](/graph/api/resources/windowsupdates-monitoringrule) for a deployment by configuring the [monitoring settings](/graph/api/resources/windowsupdates-monitoringsettings). Each [deployment](/graph/api/resources/windowsupdates-deployments) can have one active monitoring rule at a time.
+You can create a [monitoring rule](/graph/api/resources/windowsupdates-monitoringrule) for a deployment by configuring the [monitoring settings](/graph/api/resources/windowsupdates-monitoringsettings). Each [deployment](/graph/api/resources/windowsupdates-deployment) can have one active monitoring rule at a time.
 
 Monitoring rules consist of three components:
 * **signal**: The type of update issue to be monitored by the deployment service.
@@ -33,11 +33,14 @@ Content-type: application/json
 {
     "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
     "content": {
-        "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-        "version": "20H2"
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+        "catalogEntry": {
+            "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+            "id": "catalog/entries/1"
+        }
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "monitoring": {
             "monitoringRules": [
                 {
@@ -73,11 +76,11 @@ Content-Type: application/json
         "effectiveSinceDate": "String (timestamp)"
     },
     "content": {
-        "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-        "version": "20H2"
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent"
+        }
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "monitoring": {
             "monitoringRules": [
                 {
@@ -88,9 +91,8 @@ Content-Type: application/json
                 }
             ]
         },
-        "rollout": null,
-        "userExperience": null,
-        "safeguard": null
+        "schedule": null,
+        "userExperience": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -114,7 +116,7 @@ Content-Type: application/json
 {
     "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "monitoring": {
             "monitoringRules": []
         }
@@ -144,17 +146,16 @@ Content-Type: application/json
         "effectiveSinceDate": "String (timestamp)"
     },
     "content": {
-        "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-        "version": "20H2"
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+        }
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "monitoring": {
             "monitoringRules": []
         },
-        "rollout": null,
-        "userExperience": null,
-        "safeguard": null
+        "schedule": null,
+        "userExperience": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"
@@ -175,7 +176,7 @@ Content-Type: application/json
 {
     "@odata.type": "#microsoft.graph.windowsUpdates.deployment",
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "monitoring": {
             "monitoringRules": [
                 {
@@ -211,11 +212,11 @@ Content-Type: application/json
         "effectiveSinceDate": "String (timestamp)"
     },
     "content": {
-        "@odata.type": "microsoft.graph.windowsUpdates.featureUpdateReference",
-        "version": "20H2"
+        "@odata.type": "#microsoft.graph.windowsUpdates.catalogContent",
+        }
     },
     "settings": {
-        "@odata.type": "microsoft.graph.windowsUpdates.windowsDeploymentSettings",
+        "@odata.type": "microsoft.graph.windowsUpdates.deploymentSettings",
         "monitoring": {
             "monitoringRules": [
                 {
@@ -226,9 +227,8 @@ Content-Type: application/json
                 }
             ]
         },
-        "rollout": null,
-        "userExperience": null,
-        "safeguard": null
+        "schedule": null,
+        "userExperience": null
     },
     "createdDateTime": "String (timestamp)",
     "lastModifiedDateTime": "String (timestamp)"

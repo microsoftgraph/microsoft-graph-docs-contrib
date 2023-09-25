@@ -4,7 +4,7 @@ description: "Represents an eDiscovery search."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # ediscoverySearch resource type

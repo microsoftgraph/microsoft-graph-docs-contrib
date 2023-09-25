@@ -25,6 +25,18 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | Organization.ReadWrite.All |
 
+The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+
+* Global Administrator
+* Partner Tier2 Support
+* Billing Administrator
+
+**Note**: To update the **onPremisesSyncEnabled** property requires that the calling user to have one of the following Azure AD roles: 
+
+* Global Administrator
+* Directory Synchronization Accounts
+* Hybrid Identity Administrator
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -48,6 +60,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property  | Type |Description|
 |:---------------|:--------|:----------|
 |marketingNotificationEmails|String collection|                                        **Notes**: not nullable.            |
+|onPremisesSyncEnabled|Boolean|`true` to enable this object to be synced from an on-premises directory; `false` to disable syncing from an on-premises directory; Nullable. `null` if this object has never been synced from an on-premises directory (default).            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|The privacy profile of an organization (set statementUrl and contactEmail).            |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String collection||
@@ -76,6 +89,7 @@ Content-type: application/json
 
 {
   "marketingNotificationEmails" : ["marketing@contoso.com"],
+  "onPremisesSyncEnabled" : true,
   "privacyProfile" :
     {
       "contactEmail":"alice@contoso.com",
@@ -91,28 +105,35 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-organization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-organization-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-organization-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-organization-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-organization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-organization-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-organization-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-organization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-organization-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-organization-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-organization-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ##### Response
 

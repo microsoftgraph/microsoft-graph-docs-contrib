@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
-Get-MgDevice -Search "displayName:Android" -CountVariable CountVar -ConsistencyLevel eventual 
+Get-MgDevice -Search '"displayName:Android"' -CountVariable CountVar -ConsistencyLevel eventual 
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "getGlobalScriptHighestAvailableVersion action"
 description: "Update the Proprietary Device Health Script"
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the Proprietary Device Health Script
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -66,8 +66,3 @@ Content-Length: 68
   "value": "Get Global Script Highest Available Version value"
 }
 ```
-
-
-
-
-

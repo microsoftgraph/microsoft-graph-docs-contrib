@@ -4,22 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var cloudPcUserSetting = new CloudPcUserSetting
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new CloudPcUserSetting
 {
+	OdataType = "#microsoft.graph.cloudPcUserSetting",
 	DisplayName = "Example",
 	SelfServiceEnabled = true,
 	RestorePointSetting = new CloudPcRestorePointSetting
 	{
 		FrequencyInHours = 16,
-		UserRestoreEnabled = true
+		UserRestoreEnabled = true,
 	},
-	LocalAdminEnabled = false
+	LocalAdminEnabled = false,
+	ResetEnabled = true,
 };
+var result = await graphClient.DeviceManagement.VirtualEndpoint.UserSettings["{cloudPcUserSetting-id}"].PatchAsync(requestBody);
 
-await graphClient.DeviceManagement.VirtualEndpoint.UserSettings["{cloudPcUserSetting-id}"]
-	.Request()
-	.UpdateAsync(cloudPcUserSetting);
 
 ```

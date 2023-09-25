@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const directoryObject = {
-  '@odata.type': '#Microsoft.Graph.Group',
+  '@odata.type': '#microsoft.graph.group',
   description: 'Self help community for golf',
   displayName: 'Golf Assist',
   groupTypes: [

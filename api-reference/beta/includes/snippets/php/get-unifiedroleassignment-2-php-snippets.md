@@ -6,18 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new UnifiedRoleAssignmentRequestBuilderGetRequestConfiguration();
-
-$queryParameters = new UnifiedRoleAssignmentRequestBuilderGetQueryParameters();
+$requestConfiguration = new UnifiedRoleAssignmentItemRequestBuilderGetRequestConfiguration();
+$queryParameters = UnifiedRoleAssignmentItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["roleDefinition"];
-
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$requestResult = $graphServiceClient->roleManagement()->directory()->roleAssignmentsById('unifiedRoleAssignment-id')->get($requestConfiguration);
-
+$result = $graphServiceClient->roleManagement()->directory()->roleAssignments()->byUnifiedRoleAssignmentId('unifiedRoleAssignment-id')->get($requestConfiguration)->wait();
 
 ```

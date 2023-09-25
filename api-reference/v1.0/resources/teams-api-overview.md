@@ -23,6 +23,7 @@ Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-i
 | Connect bots to calls and implement interactive voice response (IVR) | [IVR scenarios](../resources/calls-api-ivr-overview.md) |  |
 | Create and retrieve online meetings or check users presence and activity | [onlineMeetings](../resources/onlinemeeting.md), [presence](../resources/presence.md) | [create onlineMeetings](../api/application-post-onlinemeetings.md), [meetingAttendanceReport](../resources/meetingattendancereport.md)
 | Create and manage workforce integration with shifts, schedules, time cards or time off in your organization | [workforceIntegration](../resources/workforceintegration.md), [schedule](../resources/schedule.md), [shift](../resources/shift.md), [timeOff](../resources/timeoff.md), [timeOffReason](../resources/timeoffreason.md) | [create workforceIntegration](../api/workforceintegration-post.md), [create schedule](../api/schedule-post-schedulinggroups.md), [create shift](../api/schedule-post-shifts.md), [create timeOff](../api/schedule-post-timesoff.md) |
+| Use the employee learning API to integrate with Viva Learning | [employee learning](../resources/viva-learning-api-overview.md), [learningProvider](../resources/learningprovider.md), [learningContent](../resources/learningcontent.md) | [list learningProviders](../api/employeeexperience-list-learningproviders.md), [list learningContents](../api/learningprovider-list-learningcontents.md) |
 
 ## Microsoft Teams limits
 
@@ -54,7 +55,7 @@ The following are the differences at the API level between teams and groups:
 - Group conversations are available only to Microsoft 365 groups. This feature is hierarchically represented by the [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md), and [post](../resources/post.md) resources.
 - The [List joined teams](../api/user-list-joinedteams.md) method applies only to Microsoft Teams.
 - [Calling](../resources/call.md) and [online meeting](../resources/onlinemeeting.md) APIs apply only to Microsoft Teams.
-- See also the [known issues](/graph/known-issues) for these APIs.
+- See also the [known issues](https://developer.microsoft.com/en-us/graph/known-issues) for these APIs.
 
 ## Membership changes in Microsoft Teams
 

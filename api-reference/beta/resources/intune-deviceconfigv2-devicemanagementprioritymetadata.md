@@ -1,7 +1,7 @@
 ---
 title: "deviceManagementPriorityMetaData resource type"
-description: "Not yet documented"
-author: "dougeby"
+description: "Priority metadata of the policy."
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -15,11 +15,12 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+Priority metadata of the policy.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|priority|Int32|Priority of the policy. Valid values 1 to 500|
 
 ## Relationships
 None
@@ -33,11 +34,7 @@ Here is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.deviceManagementPriorityMetaData"
+  "@odata.type": "#microsoft.graph.deviceManagementPriorityMetaData",
+  "priority": 1024
 }
 ```
-
-
-
-
-

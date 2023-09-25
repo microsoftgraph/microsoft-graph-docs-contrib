@@ -4,29 +4,38 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```go
 
-//THE GO SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-graphClient := msgraphsdk.NewGraphServiceClient(requestAdapter)
 
-headers := map[string]string{
-	"ConsistencyLevel": "eventual",
-}
+import (
+	  "context"
+	  abstractions "github.com/microsoft/kiota-abstractions-go"
+	  msgraphsdk "github.com/microsoftgraph/msgraph-sdk-go"
+	  graphdevices "github.com/microsoftgraph/msgraph-sdk-go/devices"
+	  //other-imports
+)
 
-requestFilter := "startswith(displayName,%20'a')"
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+
+
+headers := abstractions.NewRequestHeaders()
+headers.Add("ConsistencyLevel", "eventual")
+
+
+requestFilter := "startswith(displayName, 'a')"
 requestCount := true
 requestTop := int32(1)
 
-requestParameters := &graphconfig.DevicesRequestBuilderGetQueryParameters{
+requestParameters := &graphdevices.DevicesRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Count: &requestCount,
 	Top: &requestTop,
 	Orderby: [] string {"displayName"},
 }
-configuration := &graphconfig.DevicesRequestBuilderGetRequestConfiguration{
+configuration := &graphdevices.DevicesRequestBuilderGetRequestConfiguration{
 	Headers: headers,
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Devices().Get(context.Background(), configuration)
+devices, err := graphClient.Devices().Get(context.Background(), configuration)
 
 
 ```

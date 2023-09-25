@@ -4,15 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var todoTaskList = new TodoTaskList
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new TodoTaskList
 {
-	DisplayName = "Travel items"
+	DisplayName = "Travel items",
 };
+var result = await graphClient.Me.Todo.Lists.PostAsync(requestBody);
 
-await graphClient.Me.Todo.Lists
-	.Request()
-	.AddAsync(todoTaskList);
 
 ```

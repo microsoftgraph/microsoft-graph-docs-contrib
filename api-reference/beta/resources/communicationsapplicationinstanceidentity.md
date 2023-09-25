@@ -1,7 +1,7 @@
 --- 
 title: "communicationsApplicationInstanceIdentity resource type"
 description: "Represents the identity of an instance of an application."
-author: "mkhribech"
+author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -24,11 +24,11 @@ Inherits from [identity](identity.md).
 | id | String | Inherited from **identity**. The object ID of the resource account user in Azure Active Directory. |
 | displayName | String | Inherited from **identity**. The display name associated with the resource account. |
 | tenantId | String | The application's tenant ID. |
-| hidden | Boolean | True if the participant would not like to be shown in other participants' rosters. |
+| hidden | Boolean | True if the participant wouldn't like to be shown in other participants' rosters. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

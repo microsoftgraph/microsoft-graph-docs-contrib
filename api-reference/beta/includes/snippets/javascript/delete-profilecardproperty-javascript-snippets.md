@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/organization/{organizationId}/settings/profileCardProperties/fax')
+await client.api('/admin/people/profileCardProperties/fax')
 	.version('beta')
 	.delete();
 

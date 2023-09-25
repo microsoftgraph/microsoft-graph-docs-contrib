@@ -1,7 +1,7 @@
 ---
 title: "List win32LobApps"
 description: "List properties and relationships of the win32LobApp objects."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,14 +17,14 @@ Namespace: microsoft.graph
 
 List properties and relationships of the [win32LobApp](../resources/intune-apps-win32lobapp.md) objects.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4144
+Content-Length: 4179
 
 {
   "value": [
@@ -155,6 +155,7 @@ Content-Length: 4144
       "installExperience": {
         "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
         "runAsAccount": "user",
+        "maxRunTimeInMinutes": 3,
         "deviceRestartBehavior": "allow"
       },
       "returnCodes": [
@@ -182,8 +183,3 @@ Content-Length: 4144
   ]
 }
 ```
-
-
-
-
-

@@ -4,13 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var verifiedPublisherId = "1234567";
+var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Applications["{application-id}"]
-	.SetVerifiedPublisher(verifiedPublisherId)
-	.Request()
-	.PostAsync();
+var requestBody = new Microsoft.Graph.Beta.Applications.Item.SetVerifiedPublisher.SetVerifiedPublisherPostRequestBody
+{
+	VerifiedPublisherId = "1234567",
+};
+await graphClient.Applications["{application-id}"].SetVerifiedPublisher.PostAsync(requestBody);
+
 
 ```

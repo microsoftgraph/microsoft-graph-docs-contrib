@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Summarizes the results of the synchronization job run.
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |activityIdentifier           |String |Identifier of the job run.|
 |countEntitled                |Int64  |Count of processed entries that were assigned for this application.|
@@ -29,7 +29,7 @@ Summarizes the results of the synchronization job run.
 |countImportedDeltas          |Int64  |Count of imported delta-changes.|
 |countImportedReferenceDeltas |Int64  |Count of imported delta-changes pertaining to reference changes.|
 |error                        |[synchronizationError](synchronization-synchronizationerror.md)|If an error was encountered, contains a **synchronizationError** object with details.|
-|state                        |String |Code summarizing the result of this run. Possible values are: `Succeeded`, `Failed`, `EntryLevelErrors`.|
+|state                        |synchronizationTaskExecutionResult |Code summarizing the result of this run. Possible values are: `Succeeded`, `Failed`, `EntryLevelErrors`.|
 |timeBegan                    |DateTimeOffset|Time when this job run began. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |timeEnded                    |DateTimeOffset|Time when this job run ended. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
@@ -57,12 +57,13 @@ The following is a JSON representation of the resource.
   "countImported": 1024,
   "countImportedDeltas": 1024,
   "countImportedReferenceDeltas": 1024,
-  "error": {"@odata.type": "microsoft.graph.synchronizationError"},
+  "error": {
+    "@odata.type": "microsoft.graph.synchronizationError"
+  },
   "state": "String",
   "timeBegan": "String (timestamp)",
   "timeEnded": "String (timestamp)"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

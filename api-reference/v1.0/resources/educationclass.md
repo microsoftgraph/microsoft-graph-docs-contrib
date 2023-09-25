@@ -30,17 +30,17 @@ Inherits from [entity](../resources/entity.md).
 
 | Property             | Type                                           | Description                                                        |
 | :------------------- | :--------------------------------------------- | :----------------------------------------------------------------- |
-| id                   | String                                         | Object identifier. Inherited from [entity](../resources/entity.md). |
-| displayName          | String                                         | Name of the class.                                                 |
-| mailNickname         | String                                         | Mail name for sending email to all members, if this is enabled.    |
-| description          | String                                         | Description of the class.                                          |
-| createdBy            | [identitySet](../resources/identityset.md)     | Entity who created the class                                       |
 | classCode            | String                                         | Class code used by the school to identify the class.               |
-| externalName         | String                                         | Name of the class in the syncing system.                           |
+| createdBy            | [identitySet](../resources/identityset.md)     | Entity who created the class                                       |
+| description          | String                                         | Description of the class.                                          |
+| displayName          | String                                         | Name of the class.                                                 |
 | externalId           | String                                         | ID of the class from the syncing system.                           |
 | externalSource       | educationExternalSource                        | How this class was created. Possible values are: `sis`, `manual`.  |
 | externalSourceDetail | String                                         | The name of the external source this resources was generated from. |
+| externalName         | String                                         | Name of the class in the syncing system.                           |
 | grade                | String                                         | Grade level of the class.                                          |
+| id                   | String                                         | Object identifier. Inherited from [entity](../resources/entity.md). |
+| mailNickname         | String                                         | Mail name for sending email to all members, if this is enabled.    |
 | term                 | [educationTerm](../resources/educationterm.md) | Term for this class.                                               |
 
 ## Relationships
@@ -48,13 +48,13 @@ Inherits from [entity](../resources/entity.md).
 | Relationship | Type                                                          | Description                                               |
 | :----------- | :------------------------------------------------------------ | :-------------------------------------------------------- |
 | assignments  | [educationAssignment](educationAssignment.md) collection | All assignments associated with this class. Nullable.     |
+|assignmentCategories| [educationCategory](educationcategory.md) collection | All categories associated with this class. Nullable. |
+|assignmentDefaults| [educationAssignmentDefaults](educationassignmentdefaults.md) collection | Specifies class-level defaults respected by new assignments created in the class. |
+|assignmentSettings| [educationAssignmentSettings](educationassignmentsettings.md) collection | Specifies class-level assignments settings. |
 | group        | [group](../resources/group.md)                                | The underlying Microsoft 365 group object.                |
 | members      | [educationUser](../resources/educationuser.md) collection     | All users in the class. Nullable.                         |
 | schools      | [educationSchool](../resources/educationschool.md) collection | All schools that this class is associated with. Nullable. |
 | teachers     | [educationUser](../resources/educationuser.md) collection     | All teachers in the class. Nullable.                      |
-|assignmentCategories| [educationCategory](educationcategory.md) collection | All categories associated with this class. Nullable. |
-|assignmentDefaults| [educationAssignmentDefaults](educationassignmentdefaults.md) collection | Specifies class-level defaults respected by new assignments created in the class. |
-|assignmentSettings| [educationAssignmentSettings](educationassignmentsettings.md) collection | Specifies class-level assignments settings. |
 
 ## JSON representation
 
@@ -72,10 +72,8 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.educationClass",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "mailNickname": "String",
   "description": "String",
+  "displayName": "String",
   "createdBy": {
     "@odata.type": "microsoft.graph.identitySet"
   },
@@ -85,6 +83,8 @@ The following is a JSON representation of the resource.
   "externalSource": "String",
   "externalSourceDetail": "String",
   "grade": "String",
+  "id": "String (identifier)",
+  "mailNickname": "String",
   "term": {
     "@odata.type": "microsoft.graph.educationTerm"
   }

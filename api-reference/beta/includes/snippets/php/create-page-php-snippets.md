@@ -6,106 +6,109 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new SitePage();
-$requestBody->setName('Events.aspx');
-
-$requestBody->setTitle('Team Events');
-
-$publishingState = new PublicationFacet();
-$publishingState->setLevel('checkedOut');
-
-$publishingState->setVersionId('0.1');
-
-
-$requestBody->setPublishingState($publishingState);
-$webPartsWebPart1 = new WebPart();
-$webPartsWebPart1->setType('rte');
-
-$webPartsWebPart1Data = new SitePageData();
+$requestBody->setOdataType('#microsoft.graph.sitePage');
+$requestBody->setName('test.aspx');
+$requestBody->setTitle('test');
+$requestBody->setPageLayout(new PageLayoutType('article'));
+$requestBody->setShowComments(true);
+$requestBody->setShowRecommendedPages(false);
+$titleArea = new TitleArea();
+$titleArea->setEnableGradientEffect(true);
+$titleArea->setImageWebUrl('/_LAYOUTS/IMAGES/VISUALTEMPLATETITLEIMAGE.JPG');
+$titleArea->setLayout(new TitleAreaLayoutType('colorBlock'));
+$titleArea->setShowAuthor(true);
+$titleArea->setShowPublishedDate(false);
+$titleArea->setShowTextBlockAboveTitle(false);
+$titleArea->setTextAboveTitle('TEXT ABOVE TITLE');
+$titleArea->setTextAlignment(new TitleAreaTextAlignmentType('left'));
 $additionalData = [
-'innerHTML' => '<p>Here are the team\'s upcoming events:</p>', 
+	'imageSourceType' => 2,
+	'title' => 'sample1',
 ];
-$webPartsWebPart1Data->setAdditionalData($additionalData);
-
-
-
-$webPartsWebPart1->setData($webPartsWebPart1Data);
-
-$webPartsArray []= $webPartsWebPart1;
-$webPartsWebPart2 = new WebPart();
-$webPartsWebPart2->setType('d1d91016-032f-456d-98a4-721247c305e8');
-
-$webPartsWebPart2Data = new SitePageData();
+$titleArea->setAdditionalData($additionalData);
+$requestBody->setTitleArea($titleArea);
+$canvasLayout = new CanvasLayout();
+$horizontalSectionsHorizontalSection1 = new HorizontalSection();
+$horizontalSectionsHorizontalSection1->setLayout(new HorizontalSectionLayoutType('oneThirdRightColumn'));
+$horizontalSectionsHorizontalSection1->setId('1');
+$horizontalSectionsHorizontalSection1->setEmphasis(new SectionEmphasisType('none'));
+$columnsHorizontalSectionColumn1 = new HorizontalSectionColumn();
+$columnsHorizontalSectionColumn1->setId('1');
+$columnsHorizontalSectionColumn1->setWidth(8);
+$webpartsWebPart1 = new WebPart();
+$webpartsWebPart1->setId('6f9230af-2a98-4952-b205-9ede4f9ef548');
 $additionalData = [
-'title' => 'Events', 
-'description' => 'Display upcoming events', 
-'serverProcessedContent' => $webPartsWebPart2Data = new ServerProcessedContent();
-$htmlStrings = new HtmlStrings();
-
-$webPartsWebPart2Data->setHtmlStrings($htmlStrings);
-$searchablePlainTexts = new SearchablePlainTexts();
-$		searchablePlainTexts->setTitle('');
-
-
-$webPartsWebPart2Data->setSearchablePlainTexts($searchablePlainTexts);
-$imageSources = new ImageSources();
-
-$webPartsWebPart2Data->setImageSources($imageSources);
-$links = new Links();
-$		links->setBaseUrl('https://www.contoso.com/sites/Engineering');
-
-
-$webPartsWebPart2Data->setLinks($links);
-$componentDependencies = new ComponentDependencies();
-$		componentDependencies->setLayoutComponentId('8ac0c53c-e8d0-4e3e-87d0-7449eb0d4027');
-
-
-$webPartsWebPart2Data->setComponentDependencies($componentDependencies);
-
-$webPartsWebPart2Data->setServerProcessedContent($serverProcessedContent);
-
-'dataVersion' => '1.0', 
-'properties' => $webPartsWebPart2Data = new Properties();
-$		webPartsWebPart2Data->setSelectedListId('032e08ab-89b0-4d8f-bc10-73094233615c');
-
-$		webPartsWebPart2Data->setSelectedCategory('');
-
-		$webPartsWebPart2Data->setDateRangeOption(0);
-
-$		webPartsWebPart2Data->setStartDate('');
-
-$		webPartsWebPart2Data->setEndDate('');
-
-		$webPartsWebPart2Data->setIsOnSeeAllPage(false);
-
-$		webPartsWebPart2Data->setLayoutId('FilmStrip');
-
-$		webPartsWebPart2Data->setDataProviderId('Event');
-
-$		webPartsWebPart2Data->setWebId('0764c419-1ecc-4126-ba32-0c25ae0fffe8');
-
-$		webPartsWebPart2Data->setSiteId('6b4ffc7a-cfc2-4a76-903a-1cc3686dee23');
-
-
-$webPartsWebPart2Data->setProperties($properties);
-
+	'innerHtml' => '<p><b>Hello!</b></p>',
 ];
-$webPartsWebPart2Data->setAdditionalData($additionalData);
+$webpartsWebPart1->setAdditionalData($additionalData);
+$webpartsArray []= $webpartsWebPart1;
+$columnsHorizontalSectionColumn1->setWebparts($webpartsArray);
 
+$columnsArray []= $columnsHorizontalSectionColumn1;
+$columnsHorizontalSectionColumn2 = new HorizontalSectionColumn();
+$columnsHorizontalSectionColumn2->setId('2');
+$columnsHorizontalSectionColumn2->setWidth(4);
+$webpartsWebPart1 = new WebPart();
+$webpartsWebPart1->setId('73d07dde-3474-4545-badb-f28ba239e0e1');
+$additionalData = [
+'webPartType' => 'd1d91016-032f-456d-98a4-721247c305e8',
+'data' => [
+	'dataVersion' => '1.9',
+	'description' => 'Show an image on your page',
+	'title' => 'Image',
+	'properties' => [
+		'imageSourceType' => 2,
+		'altText' => '',
+		'overlayText' => '',
+		'siteid' => '0264cabe-6b92-450a-b162-b0c3d54fe5e8',
+		'webid' => 'f3989670-cd37-4514-8ccb-0f7c2cbe5314',
+		'listid' => 'bdb41041-eb06-474e-ac29-87093386bb14',
+		'uniqueid' => 'd9f94b40-78ba-48d0-a39f-3cb23c2fe7eb',
+		'imgWidth' => 4288,
+		'imgHeight' => 2848,
+		'fixAspectRatio' => false,
+		'captionText' => '',
+		'alignment' => 'Center',
+	],
+	'serverProcessedContent' => [
+		'imageSources' => [
+				[
+					'key' => 'imageSource',
+					'value' => '/_LAYOUTS/IMAGES/VISUALTEMPLATEIMAGE1.JPG',
+				],
+			],
+		'customMetadata' => [
+				[
+					'key' => 'imageSource',
+					'value' => [
+						'siteid' => '0264cabe-6b92-450a-b162-b0c3d54fe5e8',
+						'webid' => 'f3989670-cd37-4514-8ccb-0f7c2cbe5314',
+						'listid' => 'bdb41041-eb06-474e-ac29-87093386bb14',
+						'uniqueid' => 'd9f94b40-78ba-48d0-a39f-3cb23c2fe7eb',
+						'width' => '4288',
+						'height' => '2848',
+					],
+				],
+			],
+	],
+],
+];
+$webpartsWebPart1->setAdditionalData($additionalData);
+$webpartsArray []= $webpartsWebPart1;
+$columnsHorizontalSectionColumn2->setWebparts($webpartsArray);
 
+$columnsArray []= $columnsHorizontalSectionColumn2;
+$horizontalSectionsHorizontalSection1->setColumns($columnsArray);
 
-$webPartsWebPart2->setData($webPartsWebPart2Data);
+$horizontalSectionsArray []= $horizontalSectionsHorizontalSection1;
+$canvasLayout->setHorizontalSections($horizontalSectionsArray);
 
-$webPartsArray []= $webPartsWebPart2;
-$requestBody->setWebParts($webPartsArray);
+$requestBody->setCanvasLayout($canvasLayout);
 
-
-
-
-$requestResult = $graphServiceClient->sitesById('site-id')->pages()->post($requestBody);
-
+$result = $graphServiceClient->sites()->bySiteId('site-id')->pages()->post($requestBody)->wait();
 
 ```

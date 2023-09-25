@@ -51,10 +51,15 @@ If successful, this method returns a `200 OK` response code and the single [auth
 
 The following is an example of the request.
 
-```http
+<!-- {
+  "blockType": "request",
+  "name": "get_authorizationpolicy"
+}
+-->
+
+```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 ```
----
 
 ### Response
 
@@ -74,20 +79,25 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authorizationPolicy/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET policies/authorizationPolicy?$select=allowedToSignUpEmailBasedSubscriptions,allowedToUseSSPR",
     "id": "authorizationPolicy",
     "allowInvitesFrom": "everyone",
     "allowedToSignUpEmailBasedSubscriptions": true,
     "allowedToUseSSPR": true,
-    "allowEmailVerifiedUsersToJoinOrganization": true,
-    "blockMsolPowerShell": null,
+    "allowEmailVerifiedUsersToJoinOrganization": false,
+    "allowUserConsentForRiskyApps": null,
+    "blockMsolPowerShell": false,
     "displayName": "Authorization Policy",
     "description": "Used to manage authorization related settings across the company.",
+    "guestUserRoleId": "10dae51f-b6af-4016-8d66-8c2a99b929b3",
     "defaultUserRolePermissions": {
-        "allowedToCreateApps": true,
+        "allowedToCreateApps": false,
         "allowedToCreateSecurityGroups": true,
+        "allowedToCreateTenants": true,
+        "allowedToReadBitlockerKeysForOwnedDevice": true,
         "allowedToReadOtherUsers": true,
         "permissionGrantPoliciesAssigned": [
-            "just-user-read"
+            "ManagePermissionGrantsForSelf.microsoft-user-default-legacy"
         ]
     }
 }

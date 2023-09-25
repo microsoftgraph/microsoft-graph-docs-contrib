@@ -41,11 +41,10 @@ Inherits from [entity](../resources/entity.md).
 | endDateTime | DateTimeOffset | DateTime when review instance is scheduled to end.The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Supports `$select`. Read-only.|
 | fallbackReviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist. Supports `$select`.|
 | id | String | Unique identifier of the instance. Supports `$select`. Read-only.|
+| reviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This collection of access review scopes is used to define who the reviewers are. Supports `$select`. For examples of options for assigning reviewers, see [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept).|
 | scope | [accessReviewScope](accessreviewscope.md) | Created based on **scope** and **instanceEnumerationScope** at the accessReviewScheduleDefinition level. Defines the scope of users reviewed in a group. Supports `$select` and `$filter` (`contains` only). Read-only. |
 | startDateTime | DateTimeOffset | DateTime when review instance is scheduled to start. May be in the future. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Supports `$select`. Read-only. |
 | status | String | Specifies the status of an accessReview. Possible values: `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`. Supports `$select`, `$orderby`, and `$filter` (`eq` only). Read-only.|
-| reviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This collection of access review scopes is used to define who the reviewers are. Supports `$select`. For examples of options for assigning reviewers, see [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept).|
-
 
 ## Relationships
 
@@ -71,29 +70,30 @@ Here is a JSON representation of the resource.
 ```json
 {
  "@odata.type": "#microsoft.graph.accessReviewInstance",
- "id": "string (identifier)",
+ "contactedReviewers": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewReviewer"
+    }
+  ],
  "displayName": "string",
- "startDateTime": "string (timestamp)",
  "endDateTime": "string (timestamp)",
- "status": "string",
- "scope": {
-    "@odata.type": "microsoft.graph.accessReviewScope"
-  },
+ "fallbackReviewers": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
+    }
+  ],
+  "id": "string (identifier)",
   "reviewers": [
     {
       "@odata.type": "microsoft.graph.accessReviewReviewerScope"
     }
   ],
-  "fallbackReviewers": [
-    {
-      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
-    }
-  ],
-  "contactedReviewers": [
-    {
-      "@odata.type": "microsoft.graph.accessReviewReviewer"
-    }
-  ]
+  "scope": {
+    "@odata.type": "microsoft.graph.accessReviewScope"
+  },
+  "startDateTime": "string (timestamp)",
+  "status": "string"
+  
 }
 ```
 

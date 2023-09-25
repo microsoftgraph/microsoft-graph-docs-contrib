@@ -1,7 +1,7 @@
 ---
 title: "deviceCompliancePolicySettingStateSummary resource type"
 description: "Device Compilance Policy Setting State summary across the account."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: resourcePageType
@@ -44,7 +44,7 @@ Device Compilance Policy Setting State summary across the account.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|deviceComplianceSettingStates|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) collection|Not yet documented|
+|deviceComplianceSettingStates|[deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) collection||
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -70,8 +70,3 @@ Here is a JSON representation of the resource.
   "conflictDeviceCount": 1024
 }
 ```
-
-
-
-
-

@@ -13,7 +13,13 @@ Namespace: microsoft.graph.deviceManagement
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the rules that IT administrators can configure to trigger alerts.
+Represents a rule that an IT administrator with the appropriate roles can configure to monitor issues and trigger alerts on the Microsoft Endpoint Manager admin center.
+
+When the threshold of an **alertRule** is reached, an [alertRecord](devicemanagement-alertrecord.md) is generated and stored, and administrators receive notifications via defined notification channels.
+
+For more information, see the [monitoring](devicemanagement-monitoring.md) resource.
+
+[!INCLUDE [monitoring-api-support-solicit](../includes/monitoring-api-support-solicit.md)]
 
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -26,16 +32,15 @@ Represents the rules that IT administrators can configure to trigger alerts.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|alertRuleTemplate|[microsoft.graph.deviceManagement.alertRuleTemplate](#alertruletemplate-values)|The rule template of the alert event. The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `unknownFutureValue`.|
+|alertRuleTemplate|[microsoft.graph.deviceManagement.alertRuleTemplate](#alertruletemplate-values)|The rule template of the alert event. The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `unknownFutureValue`, `cloudPcInGracePeriodScenario`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `cloudPcInGracePeriodScenario`.|
 |description|String|The rule description.|
 |displayName|String|The display name of the rule.|
 |enabled|Boolean|The status of the rule that indicates whether the rule is enabled or disabled. If `true`, the rule is enabled; otherwise, the rule is disabled.|
 |id|String|The unique identifier for the alert rule. Inherited from [entity](../resources/entity.md).|
-|isSystemRule|Boolean|Indicates whether the rule is a system rule. If `true`, the rule is a system rule; otherwise, the rule is a custom defined rule and can be edited. System rules are built-in and only 
-a few properties can be edited.|
+|isSystemRule|Boolean|Indicates whether the rule is a system rule. If `true`, the rule is a system rule; otherwise, the rule is a custom defined rule and can be edited. System rules are built-in and only a few properties can be edited.|
 |notificationChannels|[microsoft.graph.deviceManagement.notificationChannel](../resources/devicemanagement-notificationchannel.md) collection|The notification channels of the rule selected by the user.|
 |severity|[microsoft.graph.deviceManagement.ruleSeverityType](#ruleseveritytype-values)|The severity of the rule. The possible values are: `unknown`, `informational`, `warning`, `critical`, `unknownFutureValue`.|
-|threshold|[microsoft.graph.deviceManagement.ruleThreshold](../resources/devicemanagement-rulethreshold.md)|The threshold of the rule.|
+|threshold|[microsoft.graph.deviceManagement.ruleThreshold](../resources/devicemanagement-rulethreshold.md)|The conditions to send alerts. For example, send alert when provisioning has failed for greater than or equal to 6 Cloud PCs.|
 
 ### alertRuleTemplate values
 
@@ -45,6 +50,7 @@ a few properties can be edited.|
 |cloudPcImageUploadScenario|Indicates that the alert rule was triggered for an issue with the process to upload the Cloud PC image. For a system rule, the alert rule was triggered for a failure to upload the Cloud PC image.|
 |cloudPcOnPremiseNetworkConnectionCheckScenario|Indicates that the alert rule was triggered for an issue with the on-premises network connection check. For a system rule, the alert rule was triggered for a failure with the on-premises network connection.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|cloudPcInGracePeriodScenario |Indicates that the alert rule was triggered when the Cloud PC entered the grace period.|
 
 ### ruleSeverityType values
 

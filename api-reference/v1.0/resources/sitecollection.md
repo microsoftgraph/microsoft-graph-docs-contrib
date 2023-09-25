@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: SiteCollection
 ms.localizationpriority: medium
@@ -39,8 +39,8 @@ Here is a JSON representation of the resource.
 
 | Property name        | Type     | Description
 |:---------------------|:---------|:---------------------------------------------------
-| **hostname**         | string   | The hostname for the site collection. Read-only.
 | **dataLocationCode** | string   | The geographic region code for where this site collection resides. Read-only.
+| **hostname**         | string   | The hostname for the site collection. Read-only.
 | **root**             | [root][] | If present, indicates that this is a root site collection in SharePoint. Read-only.
 
 [root]: root.md

@@ -1,7 +1,7 @@
 ---
 title: "Update groupPolicySettingMapping"
 description: "Update the properties of a groupPolicySettingMapping object."
-author: "dougeby"
+author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -17,7 +17,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [groupPolicySettingMapping](../resources/intune-gpanalyticsservice-grouppolicysettingmapping.md) object.
 
-## Prerequisites
+## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -48,7 +48,7 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
+|id|String||
 |parentId|String|Parent Id of the group policy setting.|
 |childIdList|String collection|List of Child Ids of the group policy setting.|
 |settingName|String|The name of this group policy setting.|
@@ -149,8 +149,3 @@ Content-Length: 1072
   "admxSettingDefinitionId": "Admx Setting Definition Id value"
 }
 ```
-
-
-
-
-

@@ -2,8 +2,8 @@
 title: "timeZoneBase resource type"
 description: "The basic representation of a time zone."
 ms.localizationpriority: medium
-author: "abheek-das"
-ms.prod: ""
+author: "SuryaLashmiS"
+ms.prod: outlook
 doc_type: resourcePageType
 ---
 

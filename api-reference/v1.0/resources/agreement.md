@@ -4,7 +4,7 @@ description: "Represents a tenant's customizable terms of use agreement that is 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "raprakasMSFT"
+author: "AlexFilipin"
 ---
 
 # agreement resource type
@@ -60,14 +60,14 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.agreement",
-  "id": "String (identifier)",
   "displayName": "String",
+  "id": "String (identifier)",
+  "isPerDeviceAcceptanceRequired": "Boolean",
+  "isViewingBeforeAcceptanceRequired": "Boolean",
   "termsExpiration": {
     "@odata.type": "microsoft.graph.termsExpiration"
   },
-  "userReacceptRequiredFrequency": "String (duration)",
-  "isViewingBeforeAcceptanceRequired": "Boolean",
-  "isPerDeviceAcceptanceRequired": "Boolean"
+  "userReacceptRequiredFrequency": "String (duration)"
 }
 ```
 

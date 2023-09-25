@@ -1,10 +1,10 @@
 ---
 title: "fido2KeyRestrictions resource type"
 description: "Represents the key restrictions that are enforced as part of the FIDO2 security keys authentication methods policy."
-author: "mmcla"
+author: "calvinlui"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
-doc_type: "apiPageType"
+doc_type: resourcePageType
 ---
 
 # fido2KeyRestrictions resource type
@@ -33,10 +33,10 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.fido2KeyRestrictions",
-  "isEnforced": "Boolean",
-  "enforcementType": "String",
   "aaGuids": [
     "String"
-  ]
+  ],
+  "enforcementType": "String",
+  "isEnforced": "Boolean"
 }
 ```

@@ -1,7 +1,7 @@
 ---
 title: "federatedIdentityCredential resource type"
 description: "References an application's federated identity credentials. These federated identity credentials are used in workload identity federation when exchanging a token from a trusted issuer for an access token linked to an application registered on Azure AD."
-author: "shahzad-khalid"
+author: "nickludwig"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: resourcePageType
@@ -55,12 +55,12 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.federatedIdentityCredential",
-  "name": "String",
-  "issuer": "String",
-  "subject": "String",
-  "description": "String",
   "audiences": [
     "String"
-  ]
+  ],
+  "description": "String",
+  "issuer": "String",
+  "name": "String",
+  "subject": "String"
 }
 ```

@@ -4,19 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var printTaskDefinition = new PrintTaskDefinition
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new PrintTaskDefinition
 {
 	DisplayName = "Test TaskDefinitionName",
 	CreatedBy = new AppIdentity
 	{
-		DisplayName = "Requesting App Display Name"
-	}
+		DisplayName = "Requesting App Display Name",
+	},
 };
+var result = await graphClient.Print.TaskDefinitions.PostAsync(requestBody);
 
-await graphClient.Print.TaskDefinitions
-	.Request()
-	.AddAsync(printTaskDefinition);
 
 ```

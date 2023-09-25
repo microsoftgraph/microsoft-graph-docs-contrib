@@ -4,18 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var group = new Group
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new Group
 {
-	AdditionalData = new Dictionary<string, object>()
+	AdditionalData = new Dictionary<string, object>
 	{
-		{"members@odata.bind", "[\"https://graph.microsoft.com/v1.0/directoryObjects/{id}\",\"https://graph.microsoft.com/v1.0/directoryObjects/{id}\",\"https://graph.microsoft.com/v1.0/directoryObjects/{id}\"]"}
-	}
+		{
+			"members@odata.bind" , new List<string>
+			{
+				"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+				"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+				"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+			}
+		},
+	},
 };
+var result = await graphClient.Groups["{group-id}"].PatchAsync(requestBody);
 
-await graphClient.Groups["{group-id}"]
-	.Request()
-	.UpdateAsync(group);
 
 ```

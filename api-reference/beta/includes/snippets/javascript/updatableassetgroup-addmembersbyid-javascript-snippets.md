@@ -19,7 +19,7 @@ const addMembersById = {
   memberEntityType: '#microsoft.graph.windowsUpdates.azureADDevice'
 };
 
-await client.api('/admin/windows/updates/updatableAssets/{updatableAssetGroupId}/addMembersById')
+await client.api('/admin/windows/updates/updatableAssets/f5ba7065-7065-f5ba-6570-baf56570baf5/addMembersById')
 	.version('beta')
 	.post(addMembersById);
 

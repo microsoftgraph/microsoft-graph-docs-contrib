@@ -4,16 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```csharp
 
-GraphServiceClient graphClient = new GraphServiceClient( authProvider );
+// Code snippets are only available for the latest version. Current version is 5.x
 
-var personCertification = new PersonCertification
+var graphClient = new GraphServiceClient(requestAdapter);
+
+var requestBody = new PersonCertification
 {
 	IssuingAuthority = "International Academy of Marketing Excellence",
-	IssuingCompany = "International Academy of Marketing Excellence"
+	IssuingCompany = "International Academy of Marketing Excellence",
 };
+var result = await graphClient.Users["{user-id}"].Profile.Certifications["{personCertification-id}"].PatchAsync(requestBody);
 
-await graphClient.Users["{user-id}"].Profile.Certifications["{personCertification-id}"]
-	.Request()
-	.UpdateAsync(personCertification);
 
 ```
