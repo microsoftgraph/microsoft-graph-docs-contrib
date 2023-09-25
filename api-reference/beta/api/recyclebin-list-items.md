@@ -34,7 +34,7 @@ GET /sites/{siteId}/recycleBin/items
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response.
+This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -77,11 +77,30 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "id": "825e764f-c118-438f-b5c4-b8fbe60ab569",
-  "name": "file1.txt",
-  "size": 469,
-  "deletedDateTime": "2023-03-27T12:06:59Z",
-  "deletedFromLocation": "Shared Documents/folder1"
+   "value": [
+    {
+      "@odata.type": "#microsoft.graph.recycleBinItem",
+      "id": "dd933af6-2ec8-31cb-876d-2ce30211a898",
+      "createdBy": {
+        "@odata.type": "microsoft.graph.identitySet"
+      },
+      "createdDateTime": "String (timestamp)",
+      "description": "String",
+      "eTag": "String",
+      "lastModifiedBy": {
+        "@odata.type": "microsoft.graph.identitySet"
+      },
+      "lastModifiedDateTime": "String (timestamp)",
+      "name": "String",
+      "parentReference": {
+        "@odata.type": "microsoft.graph.itemReference"
+      },
+      "webUrl": "String",
+      "size": "Integer",
+      "deletedDateTime": "String (timestamp)",
+      "deletedFromLocation": "String"
+    }
+  ]
 }
 ```
 
