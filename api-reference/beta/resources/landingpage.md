@@ -61,22 +61,16 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.landingPage",
-  "id": "String (identifier)",
-  "displayName": "String",
-  "description": "String",
-  "locale": "String",
-  "status": "microsoft.graph.simulationContentStatus",
-  "source": "microsoft.graph.simulationContentSource",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.emailIdentity"
-  },
+  "createdBy": {"@odata.type": "microsoft.graph.emailIdentity"},
   "createdDateTime": "String (timestamp)",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.emailIdentity"
-  },
+  "description": "String",
+  "displayName": "String",
+  "id": "String (identifier)",
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.emailIdentity"},
   "lastModifiedDateTime": "String (timestamp)",
-  "supportedLocales": [
-    "String"
-  ]
+  "locale": "String",
+  "source": "microsoft.graph.simulationContentSource",
+  "status": "microsoft.graph.simulationContentStatus",
+  "supportedLocales": ["String"]
 }
 ```
