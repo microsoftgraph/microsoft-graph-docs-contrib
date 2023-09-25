@@ -59,7 +59,8 @@ Inherits from [virtualEvent](../resources/virtualevent.md).
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
 | presenters | [virtualEventPresenter](../resources/virtualeventpresenter.md) collection | Presenters' information of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md).|
-| registration | [virtualEventRegistration](../resources/virtualeventregistration.md) | Registration configuration of the webinar. |
+| registrationConfiguration | [virtualEventRegistrationConfiguration](../resources/virtualeventregistrationconfiguration.md) | Registration configuration of the webinar. |
+| registrations | [virtualEventRegistration](../resources/virtualeventregistration.md) collection | Registration records of the webinar. |
 | sessions | [virtualEventSession](../resources/virtualeventsession.md)  collection | Sessions of the webinar. Inherited from [virtualEvent](../resources/virtualevent.md). |
 
 ## JSON representation
