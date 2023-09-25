@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [module](../resources/educationmodule.md) in a [class](../resources/educationclass.md).
 
-Only teachers in a class can create a module. Modules start in the `draft` state, which means that students will not see the modules until publication.
+Only teachers in a class can create a module. Modules start in the `draft` state, which means that students won't see the modules until publication.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +47,7 @@ If successful, this method returns a `201 OK` response code and an [educationMod
 ## Example
 
 ### Request
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +99,7 @@ Content-type: application/json
 ---
 
 ### Response
-The following is an example of the response.
+Here's an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

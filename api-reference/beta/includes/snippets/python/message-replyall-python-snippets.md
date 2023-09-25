@@ -21,7 +21,7 @@ request_body = ReplyAllPostRequestBody(
 	comment = "Please take a look at the attached guidelines before you decide on the name.",
 )
 
-await graph_client.me.messages.by_message_id('message-id').reply_all.post(request_body = request_body)
+await graph_client.me.messages.by_message_id('message-id').reply_all.post(body = request_body)
 
 
 ```

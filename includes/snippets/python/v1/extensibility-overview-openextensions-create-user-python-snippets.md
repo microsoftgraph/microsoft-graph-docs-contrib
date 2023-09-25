@@ -19,7 +19,7 @@ request_body = OpenTypeExtension(
 	}
 )
 
-result = await graph_client.users.by_user_id('user-id').extensions.post(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').extensions.post(body = request_body)
 
 
 ```

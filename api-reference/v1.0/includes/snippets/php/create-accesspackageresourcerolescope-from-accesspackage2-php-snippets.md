@@ -13,7 +13,7 @@ $requestBody = new AccessPackageResourceRoleScope();
 $role = new AccessPackageResourceRole();
 $role->setId('6646a29e-da03-49f6-bcd9-dec124492de3');
 $role->setDisplayName('Contributors');
-$Role->setDescription(null);
+$role->setDescription(null);
 $role->setOriginSystem('SharePointOnline');
 $role->setOriginId('4');
 $roleResource = new AccessPackageResource();

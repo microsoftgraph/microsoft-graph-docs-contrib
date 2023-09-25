@@ -14,7 +14,7 @@ request_body = IdentityUserFlowAttribute(
 	data_type = IdentityUserFlowAttributeDataType.String,
 )
 
-result = await graph_client.identity.user_flow_attributes.post(request_body = request_body)
+result = await graph_client.identity.user_flow_attributes.post(body = request_body)
 
 
 ```

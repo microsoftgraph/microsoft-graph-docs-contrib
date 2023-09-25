@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 [!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
-Delete an identity provider from a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object. For self-service sign up user flows, the values can be `Google-OAUTH` or `Facebook-OAUTH`.
+Delete an identity provider from a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object. For self-service sign-up user flows, the values can be `Google-OAUTH` or `Facebook-OAUTH`.
 
 ## Permissions
 
@@ -47,17 +47,17 @@ DELETE /identity/b2xUserFlows/{id}/identityProviders/{id}/$ref
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error is returned with specific details.
 
 ## Example
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -84,7 +84,7 @@ DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_PartnerSignU
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

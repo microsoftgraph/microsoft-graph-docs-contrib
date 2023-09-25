@@ -9,8 +9,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new UserProcessingResultRequestBuilderGetRequestConfiguration();
-$queryParameters = UserProcessingResultRequestBuilderGetRequestConfiguration::createQueryParameters();
+$requestConfiguration = new UserProcessingResultItemRequestBuilderGetRequestConfiguration();
+$queryParameters = UserProcessingResultItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","failedTasksCount","processingStatus","totalTasksCount","totalUnprocessedTasksCount","subject"];
 $requestConfiguration->queryParameters = $queryParameters;
 

@@ -21,7 +21,7 @@ headers = {
 
 )
 
-result = await graph_client.security.ti_indicators.by_ti_indicator_id('tiIndicator-id').patch(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.security.ti_indicators.by_ti_indicator_id('tiIndicator-id').patch(body = request_body, request_configuration = request_configuration)
 
 
 ```

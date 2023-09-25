@@ -17,7 +17,7 @@ request_body = AppRoleAssignmentsPostRequestBody(
 	}
 )
 
-await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').app_role_assignments.post(request_body = request_body)
+await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').app_role_assignments.post(body = request_body)
 
 
 ```

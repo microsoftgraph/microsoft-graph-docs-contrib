@@ -22,7 +22,7 @@ request_body = AdminForms(
 	),
 )
 
-result = await graph_client.admin.forms.patch(request_body = request_body)
+result = await graph_client.admin.forms.patch(body = request_body)
 
 
 ```

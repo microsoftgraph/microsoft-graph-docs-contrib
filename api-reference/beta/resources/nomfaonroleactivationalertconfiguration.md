@@ -1,6 +1,6 @@
 ---
 title: "noMfaOnRoleActivationAlertConfiguration resource type"
-description: "Represents an alert configuration that is triggered if roles do not require multi-factor authentication for activation."
+description: "Represents an alert configuration that is triggered if roles don't require multi-factor authentication for activation."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert configuration that is triggered if roles do not require multi-factor authentication for activation. Without multi-factor authentication, privileged roles can be activated more easily by compromised users.
+Represents an alert configuration that is triggered if roles don't require multi-factor authentication for activation. Without multi-factor authentication, privileged roles can be activated more easily by compromised users.
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
 
@@ -32,7 +32,7 @@ Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrole
 |alertDefinition|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)| The definition of the alert that contains its description, impact, and measures to mitigate or prevent it. Supports `$expand`.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

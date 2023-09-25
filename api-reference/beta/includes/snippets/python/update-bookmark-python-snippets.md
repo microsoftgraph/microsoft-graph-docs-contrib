@@ -12,7 +12,7 @@ request_body = Bookmark(
 	description = "Book a fancy vacation in Tuscany or browse museums in Florence.",
 )
 
-result = await graph_client.search.bookmarks.by_bookmark_id('bookmark-id').patch(request_body = request_body)
+result = await graph_client.search.bookmarks.by_bookmark_id('bookmark-id').patch(body = request_body)
 
 
 ```

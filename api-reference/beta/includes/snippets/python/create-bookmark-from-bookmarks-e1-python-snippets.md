@@ -37,7 +37,7 @@ request_body = Bookmark(
 	state = AnswerState.Published,
 )
 
-result = await graph_client.search.bookmarks.post(request_body = request_body)
+result = await graph_client.search.bookmarks.post(body = request_body)
 
 
 ```

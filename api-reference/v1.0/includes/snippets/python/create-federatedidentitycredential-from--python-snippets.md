@@ -17,7 +17,7 @@ request_body = FederatedIdentityCredential(
 	]
 )
 
-result = await graph_client.applications.by_application_id('application-id').federated_identity_credentials.post(request_body = request_body)
+result = await graph_client.applications.by_application_id('application-id').federated_identity_credentials.post(body = request_body)
 
 
 ```
