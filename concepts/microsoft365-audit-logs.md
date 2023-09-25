@@ -70,7 +70,7 @@ Step 1. Go to the [Microsoft Purview compliance portal](https://go.microsoft.com
 
 Step 2. In the left pane of the compliance portal, select **Audit**.
 
-![Screenshot shows audit log search results with metadata details in side pane selected.](images/microsoft-purview-portal-audit-pane-details.png).
+![Screenshot shows audit log search results with metadata details in the pane selected.](images/microsoft-purview-portal-audit-pane-details.png).
 
 > [!TIP]
 > For details about audit log search fields, see [searching the audit log in Microsoft 365](https://github.com/purview/audit-log-search?view=o365-worldwide#search-the-audit-log).
