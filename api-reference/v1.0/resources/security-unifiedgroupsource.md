@@ -26,7 +26,7 @@ None.
 |createdDateTime|DateTimeOffset|The date and time the **unifiedGroupSource** was created.|
 |displayName|String|The display name of the unified group, which is the name of the group.|
 |holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the **unifiedGroupSource**. The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
-|id|String|The ID of the **unifiedGroupSource**. This is not the ID of the actual group.|
+|id|String|The ID of the **unifiedGroupSource**. This isn't the ID of the actual group.|
 |includedSources|microsoft.graph.security.sourceType|Specifies which sources are included in this group. Possible values are: `mailbox`, `site`.|
 
 
@@ -42,7 +42,7 @@ None.
 |group|[group](../resources/group.md)|Represents a group.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
