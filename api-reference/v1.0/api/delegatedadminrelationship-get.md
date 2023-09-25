@@ -44,7 +44,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object in the response body. The response object can also include a [resellerDelegatedAdminRelationship](../resources/resellerdelegatedadminrelationship.md) object.
 
 The **delegatedAdminRelationship** object also contains an **@odata.etag** property as per RFC2616.
  
