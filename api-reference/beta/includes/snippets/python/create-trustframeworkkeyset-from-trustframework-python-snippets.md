@@ -34,7 +34,7 @@ request_body = TrustFrameworkKeySet(
 	]
 )
 
-result = await graph_client.trust_framework.key_sets.post(request_body = request_body)
+result = await graph_client.trust_framework.key_sets.post(body = request_body)
 
 
 ```

@@ -20,7 +20,7 @@ request_body = InboundFileFlow(
 	}
 )
 
-result = await graph_client.external.industry_data.inbound_flows.post(request_body = request_body)
+result = await graph_client.external.industry_data.inbound_flows.post(body = request_body)
 
 
 ```

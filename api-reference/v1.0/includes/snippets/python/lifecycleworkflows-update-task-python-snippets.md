@@ -13,7 +13,7 @@ request_body = Task(
 	display_name = "Update marketing day 1 add users to Group set up",
 )
 
-result = await graph_client.identity_governance.lifecycle_workflows.workflows.by_workflow_id('workflow-id').tasks.by_task_id('task-id').patch(request_body = request_body)
+result = await graph_client.identity_governance.lifecycle_workflows.workflows.by_workflow_id('workflow-id').tasks.by_task_id('task-id').patch(body = request_body)
 
 
 ```

@@ -15,7 +15,7 @@ request_body = DismissPostRequestBody(
 	]
 )
 
-await graph_client.risky_users.dismiss.post(request_body = request_body)
+await graph_client.risky_users.dismiss.post(body = request_body)
 
 
 ```

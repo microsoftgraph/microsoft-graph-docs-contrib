@@ -12,7 +12,7 @@ request_body = OutlookTaskGroup(
 	name = "Personal Tasks",
 )
 
-result = await graph_client.me.outlook.task_groups.by_task_group_id('outlookTaskGroup-id').patch(request_body = request_body)
+result = await graph_client.me.outlook.task_groups.by_task_group_id('outlookTaskGroup-id').patch(body = request_body)
 
 
 ```

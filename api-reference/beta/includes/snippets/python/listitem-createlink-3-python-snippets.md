@@ -12,7 +12,7 @@ request_body = CreateLinkPostRequestBody(
 	type = "embed",
 )
 
-result = await graph_client.sites.by_site_id('site-id').lists.by_list_id('list-id').items.by_item_id('listItem-id').create_link.post(request_body = request_body)
+result = await graph_client.sites.by_site_id('site-id').lists.by_list_id('list-id').items.by_item_id('listItem-id').create_link.post(body = request_body)
 
 
 ```

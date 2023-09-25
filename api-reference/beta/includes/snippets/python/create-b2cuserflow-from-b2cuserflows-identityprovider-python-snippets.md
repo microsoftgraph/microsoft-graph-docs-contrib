@@ -26,7 +26,7 @@ headers = {
 
 )
 
-result = await graph_client.identity.b2c_user_flows.post(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.identity.b2c_user_flows.post(body = request_body, request_configuration = request_configuration)
 
 
 ```

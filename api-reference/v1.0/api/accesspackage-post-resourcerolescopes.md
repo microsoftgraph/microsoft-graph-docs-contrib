@@ -149,8 +149,9 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request adding an application's role to an access package's list of resource roles.  The access package resource for the application must already have been added to the access package catalog containing this access package.
+The following is an example of the request adding an application's role to an access package's list of resource roles.  The access package resource for the application must already have been added to the access package catalog containing this access package. The `role`, `resource` and `scope` can be obtained by a [list of the resources of a catalog](accesspackagecatalog-list-resources.md).
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_accesspackageresourcerolescope_from_accesspackageapp"
@@ -182,6 +183,39 @@ Content-type: application/json
 }
 ```
 
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageresourcerolescope-from-accesspackageapp-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-accesspackageresourcerolescope-from-accesspackageapp-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageresourcerolescope-from-accesspackageapp-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageresourcerolescope-from-accesspackageapp-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageresourcerolescope-from-accesspackageapp-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-accesspackageresourcerolescope-from-accesspackageapp-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageresourcerolescope-from-accesspackageapp-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accesspackageresourcerolescope-from-accesspackageapp-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 
@@ -201,6 +235,104 @@ Content-type: application/json
 
 {
    "id": "cde82ecb-e461-496b-98fb-4f807c7ca640_dbeb8772-9907-4e95-a28e-a8d70dbcda69",
-    "createdDateTime": "2023-06-28T01:19:48.4216782Z"
+   "createdDateTime": "2023-06-28T01:19:48.4216782Z"
+}
+```
+
+### Example 3: Add group membership to an access package
+
+#### Request
+
+The following is an example of the request adding membership of a group to an access package's list of resource roles.  The access package resource for the group must already have been added to the access package catalog containing this access package.  The `role`, `resource` and `scope` can be obtained by a [list of the resources of a catalog](accesspackagecatalog-list-resources.md).
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageresourcerolescope_from_accesspackagegroup"
+}-->
+
+```http
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackages/cdd5f06b-752a-4c9f-97a6-82f4eda6c76d/resourceRoleScopes
+Content-type: application/json
+
+{
+    "role": {
+        "id": "748f8431-c7c6-404d-8564-df67aa8cfc5e",
+        "displayName": "Member",
+        "originSystem": "AadGroup",
+        "originId": "Member_0282e19d-bf41-435d-92a4-99bab93af305",
+        "resource": {
+            "id": "b16e0e71-17b4-4ebd-a3cd-8a468542e418",
+            "displayName": "example group",
+            "description": "a group whose members are to be assigned via an access package",
+            "originId": "0282e19d-bf41-435d-92a4-99bab93af305",
+            "originSystem": "AadGroup"
+        }
+    },
+    "scope": {
+        "id": "83b3e3e9-c8b3-481b-ad80-53e29d1eda9c",
+        "displayName": "Root",
+        "description": "Root Scope",
+        "originId": "0282e19d-bf41-435d-92a4-99bab93af305",
+        "originSystem": "AadGroup",
+        "isRootScope": true
+    }
+}
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageresourcerolescope-from-accesspackagegroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-accesspackageresourcerolescope-from-accesspackagegroup-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-accesspackageresourcerolescope-from-accesspackagegroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageresourcerolescope-from-accesspackagegroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageresourcerolescope-from-accesspackagegroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-accesspackageresourcerolescope-from-accesspackagegroup-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-accesspackageresourcerolescope-from-accesspackagegroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accesspackageresourcerolescope-from-accesspackagegroup-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageResourceRoleScope"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+   "id": "748f8431-c7c6-404d-8564-df67aa8cfc5e_83b3e3e9-c8b3-481b-ad80-53e29d1eda9c",
+   "createdDateTime": "2023-06-28T01:19:48.4216782Z"
 }
 ```

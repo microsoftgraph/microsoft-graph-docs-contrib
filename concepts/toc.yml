@@ -898,7 +898,13 @@ items:
               - name: Work with Graph Explorer
                 href: graph-explorer/graph-explorer-features.md
           - name: Use Postman
-            href: use-postman.md
+            items:
+              - name: Get started with Postman
+                href: use-postman.md
+              - name: Set up delegated authentication 
+                href: use-postman-with-delegated-authentication.md
+              - name: Set up app-only authentication
+                href: use-postman-with-app-only-authentication.md
       - name: Migrate
         items:
           - name: Azure AD Graph

@@ -13,7 +13,7 @@ request_body = CloudPcExternalPartnerSetting(
 	enable_connection = True,
 )
 
-result = await graph_client.device_management.virtual_endpoint.external_partner_settings.by_external_partner_setting_id('cloudPcExternalPartnerSetting-id').patch(request_body = request_body)
+result = await graph_client.device_management.virtual_endpoint.external_partner_settings.by_external_partner_setting_id('cloudPcExternalPartnerSetting-id').patch(body = request_body)
 
 
 ```

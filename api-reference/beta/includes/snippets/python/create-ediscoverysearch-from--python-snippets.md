@@ -24,7 +24,7 @@ request_body = EdiscoverySearch(
 	}
 )
 
-result = await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').searches.post(request_body = request_body)
+result = await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').searches.post(body = request_body)
 
 
 ```

@@ -52,13 +52,17 @@ You manage the subscription using the [subscription resource type](/graph/api/re
 
 [!INCLUDE [change-notifications-supported-resources-expanded](includes/change-notifications-supported-resources-expanded.md)]
 
-### Subscription lifetime
+## Subscription lifetime
 
 Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time; Otherwise, they need to create a new subscription. Apps can also unsubscribe at any time to stop getting change notifications.
 
 The following table shows the maximum expiration times for subscriptions per resource in Microsoft Graph.
 
 [!INCLUDE [change-notifications-subscription-lifetime](includes/change-notifications-subscription-lifetime.md)]
+
+## Latency
+
+[!INCLUDE [change-notifications-delivery-latency](includes/change-notifications-delivery-latency.md)]
 
 ## Code samples
 
