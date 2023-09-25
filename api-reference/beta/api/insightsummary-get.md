@@ -67,7 +67,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Microsoft.AAD.Reporting.insightSummary"
+  "@odata.type": "microsoft.graph.insightSummary"
 }
 -->
 ``` http
@@ -76,7 +76,7 @@ Content-Type: application/json
 
 {
   "value": {
-    "@odata.type": "#Microsoft.AAD.Reporting.insightSummary",
+    "@odata.type": "#microsoft.graph.insightSummary",
     "id": "9db498ba-cc11-0738-014e-adba1118fdad",
     "factDate": "Date",
     "activeUsers": "Integer",

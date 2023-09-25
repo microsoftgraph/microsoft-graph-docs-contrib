@@ -67,7 +67,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.AAD.Reporting.mfaCompletionMetric)"
+  "@odata.type": "Collection(microsoft.graph.mfaCompletionMetric)"
 }
 -->
 ``` http
@@ -77,7 +77,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.AAD.Reporting.mfaCompletionMetric",
+      "@odata.type": "#microsoft.graph.mfaCompletionMetric",
       "id": "87675ec1-a1c5-712f-7b62-af3e5bcd0b51",
       "factDate": "Date",
       "attemptsCount": "Integer",

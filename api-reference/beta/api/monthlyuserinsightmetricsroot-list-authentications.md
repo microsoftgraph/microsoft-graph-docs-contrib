@@ -67,7 +67,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.AAD.Reporting.authenticationsMetric)"
+  "@odata.type": "Collection(microsoft.graph.authenticationsMetric)"
 }
 -->
 ``` http
@@ -77,7 +77,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.AAD.Reporting.authenticationsMetric",
+      "@odata.type": "#microsoft.graph.authenticationsMetric",
       "id": "42fb9ea3-0785-cd40-cdfd-f5ae80ee7ce8",
       "factDate": "Date",
       "attemptsCount": "Integer",

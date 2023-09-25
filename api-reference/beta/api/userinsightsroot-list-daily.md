@@ -67,7 +67,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(Microsoft.AAD.Reporting.dailyUserInsightMetricsRoot)"
+  "@odata.type": "Collection(microsoft.graph.dailyUserInsightMetricsRoot)"
 }
 -->
 ``` http
@@ -77,7 +77,7 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#Microsoft.AAD.Reporting.dailyUserInsightMetricsRoot"
+      "@odata.type": "#microsoft.graph.dailyUserInsightMetricsRoot"
     }
   ]
 }
