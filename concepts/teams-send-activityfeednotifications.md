@@ -94,7 +94,7 @@ This section describes the changes that need to be added to Teams app manifest. 
 |templateText|string|Template text for the activity notification. You can declare your parameters by encapsulating parameters in `{}`.|
 
 > [!NOTE]
-> `actor` is a special parameter that always takes the name of the caller. In delegated calls, `actor` is the user's name. In application-only calls, it takes the name of the Teams app.
+> * `actor` is a special parameter that always takes the name of the caller. In delegated calls, `actor` is the user's name. In application-only calls, it takes the name of the Teams app.
 >
 > * A reserved `systemDefault` ActivityType is already available by default. This `systemDefault` activityType does not support templatization and does not need to be defined in activities section of the manifest in advance. Even without providing this `systemDefault` default Activity type, the `systemDefault` default Activity type will be available for sending customizable default notifications. For more information, see [Send customizable activity feed notifications](#example-8-notify-a-user-about-a-customizable-notification-in-a-team).
 
@@ -737,9 +737,11 @@ HTTP/1.1 202 Accepted
 
 ### Example 8: Notify a user about a customizable Notification in a team
 
-This example shows how you can send an activity feed notification for a team with a flexibility of having runtime title. The reserved `systemDefault` ActivityType used here, is a reserved ActivityType which is not provided in the Manifest. Having a runtime title provides developers to have higher flexibility. Runtime title could be used for different event, mostly use this reserved runtime title for experimenting tweaks and purposes. Use this when "activityTypes" and "TemplatedText" is not specified in the manifest. see [activities](#activities-section-changes).
+This example shows how you can send an activity feed notification for a team with a flexibility of having runtime title. The reserved `systemDefault` ActivityType used here, is a reserved ActivityType which is not provided in the Manifest. Having a runtime title provides developers to have higher flexibility. Runtime title could be used for different event, mostly use this reserved runtime title for experimenting tweaks and purposes. Use this when "activityTypes" and "TemplatedText" is not specified in the manifest. see [Activities](#activities-section-changes).
+
 
 > [!NOTE]
+>
 > Use `systemDefault` Actviity type with caution. This is a reserved activity type and should be used in a controlled manner. As a matter of fact, this should only be used for experimenting purposes, when App Developers are trying to onboard/upgarde/modify the new or existing `TemplatedText`. Once the verification is done, App Owners must go through the manifest Updation Process to include the new `activityTypes` and `TemplatedText` in the manifest. see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 
 This example notifies the team owner to take a short break. Modify the `previewText` and `value` in `templateParameters` to customize the notification for various scenarios.
