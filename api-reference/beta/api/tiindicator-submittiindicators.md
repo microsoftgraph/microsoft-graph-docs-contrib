@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

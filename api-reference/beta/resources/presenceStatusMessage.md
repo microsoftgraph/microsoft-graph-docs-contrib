@@ -19,13 +19,13 @@ Represents a presence status message related to the [presence](presence.md) of a
 
 | Property       | Type           | Description                                 | 
 | -------------- | -------------- | ------------------------------------------- | 
-| expiryDateTime | [microsoft.graph.dateTimeTimeZone](datetimetimezone.md) | Time in which the status message expires.<br/>If not provided, the status message does not expire.<br/><br/>**expiryDateTime.dateTime** should not include time zone.<br/><br/>**expiryDateTime** is not available when requesting presence of another user. |
+| expiryDateTime | [microsoft.graph.dateTimeTimeZone](datetimetimezone.md) | Time in which the status message expires.<br/>If not provided, the status message doesn't expire.<br/><br/>**expiryDateTime.dateTime** shouldn't include time zone.<br/><br/>**expiryDateTime** isn't available when requesting presence of another user. |
 | message | [microsoft.graph.itemBody](itembody.md) | Status message item.<br/><br/> The only supported format currently is `message.contentType = 'text'`. |
-| publishedDateTime | DateTimeOffset |Time in which the status message was published.<br/>Read-only.<br/><br/>**publishedDateTime** is not available when requesting presence of another user. |
+| publishedDateTime | DateTimeOffset |Time in which the status message was published.<br/>Read-only.<br/><br/>**publishedDateTime** isn't available when requesting presence of another user. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

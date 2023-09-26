@@ -15,6 +15,8 @@ Retrieve a list of recently deleted [application](../resources/application.md) a
 
 This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn
