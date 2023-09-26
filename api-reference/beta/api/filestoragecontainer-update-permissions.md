@@ -3,11 +3,11 @@ title: "Update fileStoreContainer permissions"
 description: "Update fileStorageContainer permissions"
 author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# fileStorageContainer: update-permissions
+# Update fileStoreContainer permission
 Namespace: microsoft.graph
 
 
