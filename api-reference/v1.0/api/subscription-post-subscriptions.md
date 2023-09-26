@@ -179,7 +179,6 @@ The following are valid values for the resource property of the subscription:
 |:------ |:----- |
 |[Call records](../resources/callrecords-callrecord.md)|`communications/callRecords`|
 |[callTranscript](../resources/calltranscript.md) | `communications/onlineMeetings/getAllTranscripts`, `communications/onlineMeetings/{onlineMeetingId}/transcripts`|
-|[callRecording](../resources/callrecording.md) | `communications/onlineMeetings/getAllRecordings`, `communications/onlineMeetings/{onlineMeetingId}/recordings`|
 |[Chat message](../resources/chatmessage.md) | `chats/{id}/messages`, `chats/getAllMessages`, `teams/{id}/channels/{id}/messages`, `teams/getAllMessages` |
 |[Contacts](../resources/contact.md)|`me/contacts`|
 |[Conversations](../resources/conversation.md)|`groups('{id}')/conversations`|
