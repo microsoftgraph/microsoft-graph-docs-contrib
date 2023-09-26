@@ -3,7 +3,7 @@ title: "Delete fileStorageContainer"
 description: "Delete a fileStorageContainer object."
 author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "files"
 doc_type: apiPageType
 ---
 
