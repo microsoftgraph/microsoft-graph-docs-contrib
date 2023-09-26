@@ -17,6 +17,8 @@ Create a SharePoint folder to upload files for a given [educationModule](../reso
 
 The teacher determines what resources to upload to the SharePoint folder for the module.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -29,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /education/classes/{classId}/modules/{{moduleId}}/setUpResourcesFolder
+POST /education/classes/{classId}/modules/{moduleId}/setUpResourcesFolder
 ```
 
 ## Request headers

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get the number of Microsoft Teams activities by activity type. The activities are performed by Microsoft Teams licensed users.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get a list of supported Cloud PC remote actions for a specific Cloud PC device, including the action names and capabilities.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
