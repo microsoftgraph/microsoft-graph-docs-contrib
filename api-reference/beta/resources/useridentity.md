@@ -26,7 +26,7 @@ None.  You would include objects of this type in the body of a request when [cre
 
 | Property          | Type   | Description                                                                            |
 |:------------------|:-------|:---------------------------------------------------------------------------------------|
-| displayName       | String | The identity's display name. Note that this may not always be available or up-to-date. |
+| displayName       | String | The identity's display name. This may not always be available or up-to-date. |
 | id                | String | Unique identifier for the identity. Nullable.                                                   |
 | ipAddress         | String | Indicates the client IP address used by user performing the activity (audit log only). |
 | userPrincipalName | String | The userPrincipalName attribute of the user.                                           |
@@ -49,7 +49,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the type.
+Here's a JSON representation of the type.
 
 <!-- {
   "blockType": "resource",

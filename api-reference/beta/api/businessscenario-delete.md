@@ -45,7 +45,7 @@ DELETE /solutions/businessScenarios/{businessScenarioId}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -55,7 +55,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -104,7 +104,7 @@ DELETE https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c686
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
