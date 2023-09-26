@@ -44,7 +44,7 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [applicationSignInSummary](../resources/applicationsigninsummary.md) objects in the response body.
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Example
 
 ##### Request
-The following is an example of the request.
+Here's an example  of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/reports/getAzureADApplicationSignInSummary(
 ---
 
 ### Response
-The following is an example of the response.
+Here's an example  of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

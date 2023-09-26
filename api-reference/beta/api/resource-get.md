@@ -41,7 +41,7 @@ GET /sites/{id}/onenote/resources/{id}/content
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and the image or fil
 Note: Images won't render directly in a browser because they require authorization to retrieve them, like the rest of the page content.
 ## Example
 ##### Request
-Here is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/me/onenote/resources/{id}/content
 ---
 
 ##### Response
-Here is an example of the response.
+Here's an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

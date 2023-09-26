@@ -21,7 +21,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 |[Get accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-get.md)|[accessPackageAssignmentRequest](accesspackageassignmentrequest.md)|Read properties and relationships of an **accessPackageAssignmentRequest** object. |
 |[Delete accessPackageAssignmentRequest](../api/accesspackageassignmentrequest-delete.md)|None|Delete an **accessPackageAssignmentRequest**. |
 |[filterByCurrentUser](../api/accesspackageassignmentrequest-filterbycurrentuser.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|Retrieve the list of **accessPackageAssignmentRequest** objects filtered on the signed-in user.|
-|[cancel](../api/accesspackageassignmentrequest-cancel.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|Cancel an **accessPackageAssignmentRequest** object that is in a cancellable state.|
+|[cancel](../api/accesspackageassignmentrequest-cancel.md)|[accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) collection|Cancel an **accessPackageAssignmentRequest** object that is in a cancelable state.|
 |[reprocess](../api/accesspackageassignmentrequest-reprocess.md) | None | Automatically retry a user’s request for access to an access package.|
 
 ## Properties
@@ -32,8 +32,8 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 |customExtensionCalloutInstances|[customExtensionCalloutInstance](customextensioncalloutinstance.md) collection|Information about all the custom extension calls that were made during the access package assignment workflow.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Supports `$filter`.|
 |id|String|Read-only.|
-|requestType|accessPackageRequestType|The type of the request. The possible values are: `notSpecified`, `userAdd`, `UserExtend`, `userUpdate`, `userRemove`, `adminAdd`, `adminUpdate`, `adminRemove`, `systemAdd`, `systemUpdate`, `systemRemove`, `onBehalfAdd` (not supported), `unknownFutureValue`. A request from the user themselves would have requestType of `userAdd`, `userUpdate` or `userRemove`. This property cannot be changed once set.|
-|schedule|[entitlementManagementSchedule](../resources/entitlementmanagementschedule.md)|The range of dates that access is to be assigned to the requestor. This property cannot be changed once set.|
+|requestType|accessPackageRequestType|The type of the request. The possible values are: `notSpecified`, `userAdd`, `UserExtend`, `userUpdate`, `userRemove`, `adminAdd`, `adminUpdate`, `adminRemove`, `systemAdd`, `systemUpdate`, `systemRemove`, `onBehalfAdd` (not supported), `unknownFutureValue`. A request from the user themselves would have requestType of `userAdd`, `userUpdate` or `userRemove`. This property can't be changed once set.|
+|schedule|[entitlementManagementSchedule](../resources/entitlementmanagementschedule.md)|The range of dates that access is to be assigned to the requestor. This property can't be changed once set.|
 |state|accessPackageRequestState|The state of the request. The possible values are: `submitted`, `pendingApproval`, `delivering`, `delivered`, `deliveryFailed`, `denied`, `scheduled`, `canceled`, `partiallyDelivered`, `unknownFutureValue`. Read-only. Supports `$filter` (`eq`). |
 |status|String|More information on the request processing status. Read-only.|
 
@@ -45,7 +45,7 @@ In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an acce
 |requestor|[accessPackageSubject](../resources/accesspackagesubject.md)|The subject who requested or, if a direct assignment, was assigned. Read-only. Nullable. Supports `$expand`.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
