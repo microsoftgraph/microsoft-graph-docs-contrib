@@ -13,7 +13,12 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents a pair of parent-child hosts in which the child host is able to be reached via the parent host. For example, if `contoso.com` redirects to `microsoft.com`, then `contoso.com` represents the parent host and `microsoft.com` the child host.
+Represents a pair of parent-child hosts in which the child host is able to be reached via the parent host. For example, if `contoso.com` redirects to `microsoft.com`, then `contoso.com` represents the parent host and `microsoft.com` the child host. 
+
+The hostPair API also includes the **linkKind** of the relationship. An example of this may be `redirect`.
+
+Further information about hostPairs can be found in the [Defender Threat Intelligence Learn Page](/defender/threat-intelligence/data-sets#host-pairs).
+
 
 ## Methods
 
