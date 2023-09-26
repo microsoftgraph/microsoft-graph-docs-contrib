@@ -17,6 +17,8 @@ Get a list of the [unifiedRoleEligibilityScheduleRequest](../resources/unifiedRo
 > [!NOTE]
 > This method doesn't retrieve objects for groups that the currently signed in user is member of, and which have the eligible assignment.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

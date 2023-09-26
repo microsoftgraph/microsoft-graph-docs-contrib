@@ -17,6 +17,8 @@ Make the scheduling page of this business available to external customers.
 
 Set the **isPublished** property to true, and **publicUrl** property to the URL of the scheduling page.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
