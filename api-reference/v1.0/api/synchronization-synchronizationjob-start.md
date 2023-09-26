@@ -1,6 +1,6 @@
 ---
 title: "Start synchronizationJob"
-description: "Start an existing synchronization job. If the job is in a paused state, it will continue processing changes from the point where it was paused. If the job is in quarantine, the quarantine status will be cleared."
+description: "Start an existing synchronization job. If the job is in a paused state, it continues processing changes from the point where it was paused. If the job is in quarantine, the quarantine status is cleared."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "ArvindHarinder1"
@@ -11,7 +11,7 @@ ms.prod: "applications"
 
 Namespace: microsoft.graph
 
-Start an existing synchronization job. If the job is in a paused state, it will continue processing changes from the point where it was paused. If the job is in quarantine, the quarantine status will be cleared. Do not create scripts to call the start job continuously while it's running because that can cause the service to stop running. Use the start job only when the job is currently paused or in quarantine. 
+Start an existing synchronization job. If the job is in a paused state, it continues processing changes from the point where it was paused. If the job is in quarantine, the quarantine status is cleared. Don't create scripts to call the start job continuously while it's running because that can cause the service to stop running. Use the start job only when the job is currently paused or in quarantine. 
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -40,16 +40,16 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/start
 
 ## Request body
 
-Do not supply a request body for this method. 
+Don't supply a request body for this method. 
 
 ## Response
 
-If successful, returns a `204 No Content` response. It does not return anything in the response body.
+If successful, returns a `204 No Content` response. It doesn't return anything in the response body.
 
 ## Example
 
 ##### Request
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,7 +95,7 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/job
 ---
 
 ##### Response
-The following is an example of a response.
+Here's an example of a response.
 <!-- {
   "blockType": "response"
 } -->

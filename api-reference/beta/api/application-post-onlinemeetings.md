@@ -41,7 +41,11 @@ POST /users/{userId}/onlineMeetings
 ```
 
 > [!NOTE]
+<<<<<<< HEAD
+>- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+=======
 >- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+>>>>>>> 41ea870097f52b604869cda08a9b6db33e04d064
 
 ## Request headers
 
@@ -51,7 +55,7 @@ POST /users/{userId}/onlineMeetings
 | Content-type    | application/json. Required. |
 | Accept-Language | Language. Optional.         |
 
-If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header. The default content will be in English.
+If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header. The default content is in English.
 
 ## Request body
 In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.
@@ -69,7 +73,7 @@ If successful, this method returns a `201 Created` response code and an [onlineM
 
 #### Request
 
-The following is an example of a request.
+Here's an example  of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -123,7 +127,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -190,7 +194,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of a request.
+Here's an example  of a request.
 
 ```http
 POST https://graph.microsoft.com/beta/me/onlineMeetings
@@ -211,7 +215,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 > **Note:** The response object shown here has been shortened for readability. All the properties will be returned from an actual call.
 
@@ -290,11 +294,11 @@ The following is an example of the response.
 
 ### Example 3: Create an online meeting that requires a passcode
 
-The following example shows how to add a passcode to a meeting. The passcode is used when you join a meeting with a **joinMeetingId**. For more details, see [joinMeetingIdSettings](../resources/joinmeetingidsettings.md).
+The following example shows how to add a passcode to a meeting. The passcode is used when you join a meeting with a **joinMeetingId**. For more information, see [joinMeetingIdSettings](../resources/joinmeetingidsettings.md).
 
 #### Request
 
-The following is an example of a request.
+Here's an example  of a request.
 
 >**Note:** The passcode is automatically generated and a custom passcode is not supported.
 
@@ -355,7 +359,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -410,13 +414,13 @@ Content-Type: application/json
 ```
 
 
-### Example 4: Create an online meeting that does not require a passcode
+### Example 4: Create an online meeting that doesn't require a passcode
 
-When **isPasscodeRequired** is set to `false` or when **joinMeetingIdSettings** is not specified in the request, the generated online meeting will not have a passcode.
+When **isPasscodeRequired** is set to `false` or when **joinMeetingIdSettings** isn't specified in the request, the generated online meeting won't have a passcode.
 
 #### Request
 
-The following is an example of a request.
+Here's an example  of a request.
 
 
 # [HTTP](#tab/http)
@@ -488,7 +492,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
