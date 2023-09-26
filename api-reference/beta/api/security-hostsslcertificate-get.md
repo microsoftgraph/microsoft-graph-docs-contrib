@@ -108,7 +108,6 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/hostSslCertific
 
 ---
 
-
 ### Response
 
 The following is an example of the response.
