@@ -7,7 +7,7 @@ ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.
 doc_type: apiPageType
 ---
 
-# fileStorageContainer: activate
+# Activate fileStorageContainer
 Namespace: microsoft.graph
 
 
