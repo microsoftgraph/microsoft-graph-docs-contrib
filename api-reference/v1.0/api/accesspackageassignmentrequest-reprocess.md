@@ -15,6 +15,8 @@ In [Azure AD entitlement management](../resources/entitlementmanagement-overview
 
 You can only reprocess a request within 14 days from the time the original request was completed. For requests completed more than 14 days, you will need to ask the users to cancel the request(s) and make a new request in the [MyAccess](https://myaccess.microsoft.com/) portal.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

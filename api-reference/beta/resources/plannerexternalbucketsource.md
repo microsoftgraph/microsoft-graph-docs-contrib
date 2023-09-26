@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Contains information about the relationship of a [plannerBucket](plannerbucket.md) to a user experience outside of Planner. This allows surfacing or syncing buckets in Planner with other experiences to track work in the context of that experience. 
 
-You can display data in a **plannerExternalBucketSource** in a user interface to sync information for an external service, or to simply point to where a task was created in the external service. 
+You can display data in a **plannerExternalBucketSource** in a user interface to sync information for an external service, or to point to where a task was created in the external service. 
 
 The combination of the **contextScenarioId** and **externalObjectId** properties is unique within a tenant. If creation is called with existing **contextScenarioId** and **externalObjectId** values, the existing object is returned with no modifications.
 
@@ -31,7 +31,7 @@ This type is derived from [plannerBucketCreation](plannerBucketCreation.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.plannerExternalBucketSource"

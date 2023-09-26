@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a list of [recentNotebook](../resources/recentnotebook.md) instances that have been accessed by the signed-in user.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -26,8 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
-GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
+GET /me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks={includePersonalNotebooks})
+GET /users/{id | userPrincipalName}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks={includePersonalNotebooks})
 ```
 
 The `{id | userPrincipalName}` for the user must match the user encoded in the authorization token used to make the request.
@@ -123,7 +125,7 @@ Content-Length: 1110
   ]
 }
 ```
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
