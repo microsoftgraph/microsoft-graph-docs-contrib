@@ -21,7 +21,7 @@ This type has the following properties:
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| accessReviewTimeoutBehavior | [accessReviewTimeoutBehavior](#accessreviewtimeoutbehavior-values) | The default decision to apply if the request is not reviewed within the period specified in **durationInDays**. The possible values are: `acceptAccessRecommendation`, `keepAccess`, `removeAccess`, and `unknownFutureValue`. |
+| accessReviewTimeoutBehavior | [accessReviewTimeoutBehavior](#accessreviewtimeoutbehavior-values) | The default decision to apply if the request isn't reviewed within the period specified in **durationInDays**. The possible values are: `acceptAccessRecommendation`, `keepAccess`, `removeAccess`, and `unknownFutureValue`. |
 | durationInDays | Int32 | The number of days within which reviewers should provide input.|
 | isAccessRecommendationEnabled | Boolean | Specifies whether to display recommendations to the reviewer. The default value is `true` |
 | isApprovalJustificationRequired | Boolean | Specifies whether the reviewer must provide justification for the approval. The default value is `true`. |
@@ -35,14 +35,14 @@ This type has the following properties:
 
 | Member | Description |
 |:---------------|:--------|:----------|
-| acceptAccessRecommendation | The review decision to take recommendations from access review to accept/remove access to access package. The general rule for AR recommendations is if last user sign in more than 30 days, it is recommended to remove access to that user. |
+| acceptAccessRecommendation | The review decision to take recommendations from access review to accept/remove access to access package. The general rule for AR recommendations is if last user sign in more than 30 days, it's recommended to remove access to that user. |
 | keepAccess | The review decision is to keep current access. |
 | removeAccess | The review decision is to remove access to access package. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.assignmentReviewSettings"

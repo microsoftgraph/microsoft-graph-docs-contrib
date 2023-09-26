@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) of a [user](../resources/user.md). This list specifies the Azure Active Directory apps that have access to the **user**, along with the corresponding kind of resource-specific access that each app has.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

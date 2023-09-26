@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get the details of all role management policy assignments made in PIM for Azure AD roles and PIM for groups.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

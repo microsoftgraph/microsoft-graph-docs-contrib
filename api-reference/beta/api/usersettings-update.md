@@ -18,6 +18,8 @@ Users in the same organization can have different settings based on their prefer
 To get the user current settings, see [current user settings](usersettings-get.md). 
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ### Batch request
 
 It's also possible to opt out multiple users from Delve through a batch request.

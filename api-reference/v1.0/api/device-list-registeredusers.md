@@ -15,6 +15,8 @@ Retrieve a list of users that are registered users of the device.
 
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
