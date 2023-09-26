@@ -17,6 +17,8 @@ Get a list of [meetingAttendanceReport](../resources/meetingAttendanceReport.md)
 >
 > This method does not support channel meetings, and only returns up to 50 of the most recent reports.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
