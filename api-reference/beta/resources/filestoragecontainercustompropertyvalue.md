@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 
 
-The **fileStorageContainerCustomPropertyValue** resource contains the custom propety values stored in a [fileStorageContainerCustomPropertyDictionary](../resources/fileStorageContainerCustomPropertyDictionary) resource.
+The **fileStorageContainerCustomPropertyValue** resource contains the custom propety values stored in a [fileStorageContainerCustomPropertyDictionary](../resources/fileStorageContainerCustomPropertyDictionary.md) resource.
 
 ## Properties
 |Property|Type|Description|
