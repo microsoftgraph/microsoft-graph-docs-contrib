@@ -25,7 +25,7 @@ Represents an entity related to an [sslCertificate](../resources/security-sslcer
 |email|String|An email for this entity.|
 |givenName|String|If the entity is a person, this is the person's given name (first name).|
 |organizationName|String|If the entity is an organization, this is the name of the organization.|
-|organizationUnitName|String|If the entity is an organization, this indicates whether a unit in the organization is named on the entity.|
+|organizationUnitName|String|If the entity is an organization, this communicates if a unit in the organization is named on the entity.|
 |serialNumber|String|A serial number assigned to the entity; usually only available if the entity is the issuer.|
 |surname|String|If the entity is a person, this is the person's surname (last name).|
 
