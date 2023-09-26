@@ -55,6 +55,10 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/closeSession
 workbook-session-id: {session-id}
 Content-type: application/json
+
+{
+
+}
 ```
 
 Note that workbook-session-id header is required. 
