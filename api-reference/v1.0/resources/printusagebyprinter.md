@@ -23,20 +23,20 @@ Describes print activity for a printer during a specified time period (usageDate
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The ID of this usage summary.|
-|printerID|String|The ID of the printer represented by these statistics.|
-|printerName|String|The name of the printer represented by these statistics.|
-|usageDate|Date|The date associated with these statistics.|
-|completedBlackAndWhiteJobCount|Int64|The number of black and white print jobs completed by the printer.|
-|completedColorJobCount|Int64|The number of color print jobs completed by the printer.|
-|incompleteJobCount|Int64|The number of print jobs that were queued for the printer, but not completed.|
-|completedJobCount|Int64|The number of print jobs that were completed by the printer.|
-|pageCount|Int64|The estimated number of pages printed based on reporting by the printer.|
 |blackAndWhitePageCount|Int64|The estimated number of black and white pages printed based on reporting by the printer.|
 |colorPageCount|Int64|The estimated number of color pages printed based on reporting by the printer.|
-|mediaSheetCount|Int64|The estimated number of media sheets printed based on reporting by the printer.|
+|completedBlackAndWhiteJobCount|Int64|The number of black and white print jobs completed by the printer.|
+|completedColorJobCount|Int64|The number of color print jobs completed by the printer.|
+|completedJobCount|Int64|The number of print jobs that were completed by the printer.|
 |doubleSidedSheetCount|Int64|The estimated number of double-sided media sheets printed based on reporting by the printer.|
+|id|String|The ID of this usage summary.|
+|incompleteJobCount|Int64|The number of print jobs that were queued for the printer, but not completed.|
+|mediaSheetCount|Int64|The estimated number of media sheets printed based on reporting by the printer.|
+|pageCount|Int64|The estimated number of pages printed based on reporting by the printer.|
+|printerID|String|The ID of the printer represented by these statistics.|
+|printerName|String|The name of the printer represented by these statistics.|
 |singleSidedSheetCount|Int64|The estimated number of single-sided media sheets printed based on reporting by the printer.|
+|usageDate|Date|The date associated with these statistics.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
