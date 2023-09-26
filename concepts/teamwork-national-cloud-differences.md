@@ -53,23 +53,23 @@ This section describes implementation differences in the Microsoft Graph for the
 |API    | Details              |
 |:--------------------|:---------------------------------------------------------|
 **Apps**            |                                                          |
-[Apps in catalog](https://learn.microsoft.com/en-us/graph/api/resources/teamsapp?view=graph-rest-1.0) | Api's to manage apps in catalog like [Publish apps to catalog](https://learn.microsoft.com/en-us/graph/api/teamsapp-publish?view=graph-rest-1.0&tabs=http), [Delete app from catalog](https://learn.microsoft.com/en-us/graph/api/teamsapp-delete?view=graph-rest-1.0&tabs=http), [Update app in catalog](https://learn.microsoft.com/en-us/graph/api/teamsapp-update?view=graph-rest-1.0&tabs=http) are not supported.
-[App installation](https://learn.microsoft.com/en-us/graph/api/resources/teamsappinstallation?view=graph-rest-1.0) | Api's to manage app installation in all the scopes (user, chat and team) are not supported.
-[Resource specific permission grant](https://learn.microsoft.com/en-us/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-1.0) | Api's to list resource specific permission grants are not supported for all scopes(team, chat and group).
+[Apps in catalog](/graph/api/resources/teamsapp) | Api's to manage apps in catalog like [Publish apps to catalog](/graph/api/teamsapp-publish), [Delete app from catalog](/graph/api/teamsapp-delete), [Update app in catalog](/graph/api/teamsapp-update) are not supported.
+[App installation](/graph/api/resources/teamsappinstallation) | Api's to manage app installation in all the scopes (user, chat and team) are not supported.
+[Resource specific permission grant](/graph/api/resources/resourcespecificpermissiongrant) | Api's to list resource specific permission grants are not supported for all scopes(team, chat and group).
 **Activity Feed**            |                                                          |
-| [Activity Feed notifications](https://learn.microsoft.com/en-us/graph/teams-send-activityfeednotifications?tabs=http)| Api's to send activity feed notifications are not supported. |
+| [Activity Feed notifications](/graph/teams-send-activityfeednotifications)| Api's to send activity feed notifications are not supported. |
 | **Tabs**            |                                                          |
-[Tabs](https://learn.microsoft.com/en-us/graph/api/resources/teamstab?view=graph-rest-1.0) | Api's to manage tabs in chat and channels are not supported.
+[Tabs](/graph/api/resources/teamstab) | Api's to manage tabs in chat and channels are not supported.
 | **Channel**            |                                                          |
-[Channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) | Channel api's are not supported in context of Shared channels (channels with channelMembershipType's value as 'Shared').
+[Channel](/graph/api/resources/channel) | Channel api's are not supported in context of Shared channels (channels with channelMembershipType's value as 'Shared').
 | **Chat**            |                                                          |
 |[List chats](/graph/api/chat-list)| The `OrderBy` OData query parameter is not supported. |
 | **Messaging**            |                                                          |
-[Export api's](https://learn.microsoft.com/en-us/microsoftteams/export-teams-content) | Api's to export chat and channel messages are not supported. 
+[Export api's](/microsoftteams/export-teams-content) | Api's to export chat and channel messages are not supported. 
 | **Team Membership**            |                                                          |
 Membership | Guests are not supported in this cloud. So, the membership api's like add guest to team / channel doesn't work.
 | **Change notifications**            |                                                          |
-[Change notifications](https://learn.microsoft.com/en-us/graph/api/resources/webhooks?view=graph-rest-1.0) | Change notifications are not supported for Microsoft Teams resources. 
+[Change notifications](/graph/api/resources/webhooks) | Change notifications are not supported for Microsoft Teams resources. 
 | **Meeting transcripts**            |                                                          |
 |[List transcripts](/graph/api/onlinemeeting-list-transcripts) | Not supported. |
 |[Get transcript](/graph/api/calltranscript-get) | Not supported. |
