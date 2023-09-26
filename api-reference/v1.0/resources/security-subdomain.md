@@ -17,22 +17,22 @@ Represents an internet domain that is part of a primary domain. For example, `le
 
 ## Methods
 
-| Method                                                                | Return type                                                                         | Description                                                                                                                 |
-| :-------------------------------------------------------------------- | :---------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------- |
+|Method|Return type|Description|
+|:---|:---|:---|
 | [Get subdomain](../api/security-subdomain-get.md)                     | [microsoft.graph.security.subdomain](../resources/security-subdomain.md)            | Read the properties and relationships of a [subdomain](../resources/security-subdomain.md) object. |
-| [List subdomains for a host](../api/security-host-list-subdomains.md) | [microsoft.graph.security.subdomain](../resources/security-subdomain.md) collection | Get a list of **subdomain** resources of a host.                                                                            |
+| [List subdomains for a host](../api/security-host-list-subdomains.md) | [microsoft.graph.security.subdomain](../resources/security-subdomain.md) collection | Get a list of **subdomain** resources of a host. |
 
 ## Properties
 
-| Property          | Type           | Description                                                                                                                                                                                                                                                                          |
-| :---------------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|Property|Type|Description|
+|:---|:---|:---|
 | firstSeenDateTime | DateTimeOffset | The date and time when Microsoft Defender Threat Intelligence first observed the subdomain. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-| id                | String         | A system-generated ID for the subdomain.                                                                                                                                                                                                                                         |
+| id                | String         | A system-generated ID for the subdomain. |
 
 ## Relationships
 
-| Relationship | Type                                                           | Description                               |
-| :----------- | :------------------------------------------------------------- | :---------------------------------------- |
+| Relationship | Type | Description |
+| :--- | :--- | :--- |
 | host         | [microsoft.graph.security.host](../resources/security-host.md) | The host of the subdomain. |
 
 ## JSON representation
