@@ -61,7 +61,7 @@ The following example shows the request.
   "name": "delete-specific_call_participant"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/communications/calls/{id}/participants/{id}
+DELETE https://graph.microsoft.com/beta/communications/calls/112f7296-5fa4-42ca-bae8-6a692b15d4b8/participants/a7ebfb2d-871e-419c-87af-27290b22e8db
 ```
 
 # [C#](#tab/csharp)
@@ -132,7 +132,7 @@ HTTP/1.1 204 No Content
   "name": "cancel-participant-invite-noninvited"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/communications/calls/{id}/participants/invite
+POST https://graph.microsoft.com/beta/communications/calls/112f7296-5fa4-42ca-bae8-6a692b15d4b8/participants/invite
 Content-Type: application/json
 Content-Length: 464
 
@@ -237,7 +237,7 @@ Content-Type: application/json
   "name": "delete-participant_before_invited_to_roster"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/communications/calls/{id}/participants/a7ebfb2d-871e-419c-87af-27290b22e8db
+DELETE https://graph.microsoft.com/beta/communications/calls/112f7296-5fa4-42ca-bae8-6a692b15d4b8/participants/a7ebfb2d-871e-419c-87af-27290b22e8db
 ```
 
 # [C#](#tab/csharp)
