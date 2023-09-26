@@ -28,9 +28,9 @@ Represents a pair of parent-child hosts in which the child host is able to be re
 
 |Property|Type|Description|
 |:---|:---|:---|
-|firstSeenDateTime|DateTimeOffset|The date and time when Microsoft Defender Threat Intelligence first observed the **hostPair**. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is `2014-01-01T00:00:00Z`.|
+|firstSeenDateTime|DateTimeOffset|The date and time when Microsoft Defender Threat Intelligence first observed the **hostPair**. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String|A system-generated ID for the **hostPair**.|
-|lastSeenDateTime|DateTimeOffset|The date and time when Microsoft Defender Threat Intelligence last observed the **hostPair**. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is `2014-01-01T00:00:00Z`.|
+|lastSeenDateTime|DateTimeOffset|The date and time when Microsoft Defender Threat Intelligence last observed the **hostPair**. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |linkKind|String|The reason the two hosts are identified as **hostPairs**.|
 
 ## Relationships
