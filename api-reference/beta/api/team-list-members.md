@@ -19,7 +19,7 @@ The membership IDs returned by the server must be treated as opaque strings. The
 In the future, membership results may include users from various tenants, as indicated in the response. Clients should avoid assuming that all members exclusively belong to the current tenant.
 
 > [!NOTE] 
-> This API has a known issue where new tenants encounter a 401 error when using this method. For more information, see `[Known issues](https://developer.microsoft.com/en-us/graph/known-issues/&search=19164)`.
+> This API has a known issue where new tenants encounter a 401 error when using this method. For more information, see `[Known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=19164)`.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
