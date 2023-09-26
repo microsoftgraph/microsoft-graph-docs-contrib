@@ -39,23 +39,15 @@
           "ApiChange": "Resource",
           "ChangedApiName": "workplaceSensorDevice",
           "ChangeType": "Addition",
-          "Description": "Added the [workplaceSensorDevice](https://learn.microsoft.com/en-us/graph/api/resources/workplaceSensorDevice?view=graph-rest-beta) resource",
+          "Description": "Added the [workplaceSensorDevice](https://learn.microsoft.com/en-us/graph/api/resources/workplaceSensorDevice?view=graph-rest-beta) resource and supported methods",
           "Target": "workplaceSensorDevice"
-        },
-        {
-          "Id": "67d4720a-8fd3-415d-bc76-1f71ca43e1e0",
-          "ApiChange": "Method",
-          "ChangedApiName": "ingestTelemetry",
-          "ChangeType": "Addition",
-          "Description": "Added the [ingestTelemetry](https://learn.microsoft.com/en-us/graph/api/ingestTelemetry?view=graph-rest-beta) method to the [ingestTelemetry](https://learn.microsoft.com/en-us/graph/api/ingestTelemetry?view=graph-rest-beta) resource.",
-          "Target": "ingestTelemetry"
         },
         {
           "Id": "67d4720a-8fd3-415d-bc76-1f71ca43e1e0",
           "ApiChange": "Singleton",
           "ChangedApiName": "workplace",
           "ChangeType": "Addition",
-          "Description": "Added the [workplace](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource",
+          "Description": "Added the [workplace](https://learn.microsoft.com/en-us/?view=graph-rest-beta) resource and supported methods",
           "Target": "EntityContainer"
         }
       ],
