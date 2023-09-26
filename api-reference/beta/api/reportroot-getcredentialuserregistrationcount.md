@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Report the current state of how many users in your organization are registered for self-service password reset and multi-factor authentication (MFA) capabilities.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
