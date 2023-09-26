@@ -1,6 +1,6 @@
 ---
 title: "clone action"
-description: ""
+description: "Intune Deviceconfigv2 Devicemanagementreusablepolicysetting Clone Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

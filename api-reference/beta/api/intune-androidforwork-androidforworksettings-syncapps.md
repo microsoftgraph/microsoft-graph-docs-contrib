@@ -1,6 +1,6 @@
 ---
 title: "syncApps action"
-description: ""
+description: "Intune Androidforwork Androidforworksettings Syncapps Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

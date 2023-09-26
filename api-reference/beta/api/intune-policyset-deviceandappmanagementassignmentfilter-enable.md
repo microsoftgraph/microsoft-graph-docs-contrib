@@ -1,6 +1,6 @@
 ---
 title: "enable action"
-description: ""
+description: "Intune Policyset Deviceandappmanagementassignmentfilter Enable Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

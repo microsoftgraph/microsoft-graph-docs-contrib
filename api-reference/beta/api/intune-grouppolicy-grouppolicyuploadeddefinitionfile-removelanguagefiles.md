@@ -1,6 +1,6 @@
 ---
 title: "removeLanguageFiles action"
-description: ""
+description: "Intune Grouppolicy Grouppolicyuploadeddefinitionfile Removelanguagefiles Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

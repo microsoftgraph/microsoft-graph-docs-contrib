@@ -1,6 +1,6 @@
 ---
 title: "setScheduledRetireState action"
-description: ""
+description: "Intune Deviceconfig Devicecompliancepolicy Setscheduledretirestate Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

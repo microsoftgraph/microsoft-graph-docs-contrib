@@ -1,6 +1,6 @@
 ---
 title: "getCachedReport action"
-description: ""
+description: "Intune Reporting Devicemanagementreports Getcachedreport Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

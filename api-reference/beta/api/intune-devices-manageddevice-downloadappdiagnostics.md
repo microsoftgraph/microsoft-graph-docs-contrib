@@ -1,6 +1,6 @@
 ---
 title: "downloadAppDiagnostics action"
-description: ""
+description: "Intune Devices Manageddevice Downloadappdiagnostics Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -1,6 +1,6 @@
 ---
 title: "getRequestStatus action"
-description: ""
+description: "Intune Rbac Operationapprovalrequest Getrequeststatus Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

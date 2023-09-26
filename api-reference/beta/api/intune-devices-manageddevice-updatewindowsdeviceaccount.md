@@ -1,6 +1,6 @@
 ---
 title: "updateWindowsDeviceAccount action"
-description: ""
+description: "Intune Devices Manageddevice Updatewindowsdeviceaccount Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

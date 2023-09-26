@@ -1,6 +1,6 @@
 ---
 title: "enableGlobalScripts action"
-description: ""
+description: "Intune Devices Devicehealthscript Enableglobalscripts Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

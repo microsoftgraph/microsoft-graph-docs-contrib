@@ -1,6 +1,6 @@
 ---
 title: "triggerDeviceScopeAction action"
-description: ""
+description: "Intune Devices Userexperienceanalyticsdevicescope Triggerdevicescopeaction Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -1,6 +1,6 @@
 ---
 title: "syncLicenseCounts action"
-description: ""
+description: "Intune Onboarding Vpptoken Synclicensecounts Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

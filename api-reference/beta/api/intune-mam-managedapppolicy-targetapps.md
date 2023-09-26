@@ -1,6 +1,6 @@
 ---
 title: "targetApps action"
-description: ""
+description: "Intune Mam Managedapppolicy Targetapps Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

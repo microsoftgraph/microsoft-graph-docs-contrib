@@ -1,6 +1,6 @@
 ---
 title: "assignedAccessMultiModeProfiles action"
-description: ""
+description: "Intune Shared Deviceconfiguration Assignedaccessmultimodeprofiles Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -1,6 +1,6 @@
 ---
 title: "managedDeviceEnrollmentTopFailures function"
-description: ""
+description: "Intune Shared Reportroot Manageddeviceenrollmenttopfailures Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

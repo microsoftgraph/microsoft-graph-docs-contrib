@@ -1,6 +1,6 @@
 ---
 title: "approveFotaApps action"
-description: ""
+description: "Intune Androidfotaservice Zebrafotaconnector Approvefotaapps Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

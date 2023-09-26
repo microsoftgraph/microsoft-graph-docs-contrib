@@ -1,6 +1,6 @@
 ---
 title: "disconnect action"
-description: ""
+description: "Intune Androidfotaservice Zebrafotaconnector Disconnect Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

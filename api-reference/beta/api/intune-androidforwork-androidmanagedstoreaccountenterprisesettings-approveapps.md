@@ -1,6 +1,6 @@
 ---
 title: "approveApps action"
-description: ""
+description: "Intune Androidforwork Androidmanagedstoreaccountenterprisesettings Approveapps Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

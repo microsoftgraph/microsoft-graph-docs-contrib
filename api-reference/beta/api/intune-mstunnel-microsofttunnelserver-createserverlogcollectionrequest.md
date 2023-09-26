@@ -1,6 +1,6 @@
 ---
 title: "createServerLogCollectionRequest action"
-description: ""
+description: "Intune Mstunnel Microsofttunnelserver Createserverlogcollectionrequest Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -1,6 +1,6 @@
 ---
 title: "setDefaultProfile action"
-description: ""
+description: "Intune Enrollment Enrollmentprofile Setdefaultprofile Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

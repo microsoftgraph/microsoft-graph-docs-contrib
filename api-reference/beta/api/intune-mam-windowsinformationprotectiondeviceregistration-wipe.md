@@ -1,6 +1,6 @@
 ---
 title: "wipe action"
-description: ""
+description: "Intune Mam Windowsinformationprotectiondeviceregistration Wipe Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

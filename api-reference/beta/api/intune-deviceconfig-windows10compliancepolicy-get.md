@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2208
+Content-Length: 2375
 
 {
   "value": {
@@ -95,6 +95,10 @@ Content-Length: 2208
     "bitLockerEnabled": true,
     "secureBootEnabled": true,
     "codeIntegrityEnabled": true,
+    "memoryIntegrityEnabled": true,
+    "kernelDmaProtectionEnabled": true,
+    "virtualizationBasedSecurityEnabled": true,
+    "firmwareProtectionEnabled": true,
     "storageRequireEncryption": true,
     "activeFirewallRequired": true,
     "defenderEnabled": true,

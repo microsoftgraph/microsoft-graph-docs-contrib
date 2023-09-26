@@ -1,6 +1,6 @@
 ---
 title: "hasCustomRoleScopeTag function"
-description: ""
+description: "Intune Rbac Rolescopetag Hascustomrolescopetag Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

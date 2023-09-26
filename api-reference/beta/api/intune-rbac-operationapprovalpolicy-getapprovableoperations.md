@@ -1,6 +1,6 @@
 ---
 title: "getApprovableOperations function"
-description: ""
+description: "Intune Rbac Operationapprovalpolicy Getapprovableoperations Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

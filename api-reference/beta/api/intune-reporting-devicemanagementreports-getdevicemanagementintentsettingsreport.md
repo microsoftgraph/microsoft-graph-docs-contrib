@@ -1,6 +1,6 @@
 ---
 title: "getDeviceManagementIntentSettingsReport action"
-description: ""
+description: "Intune Reporting Devicemanagementreports Getdevicemanagementintentsettingsreport Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -1,6 +1,6 @@
 ---
 title: "requestSignupUrl action"
-description: ""
+description: "Intune Androidforwork Androidforworksettings Requestsignupurl Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

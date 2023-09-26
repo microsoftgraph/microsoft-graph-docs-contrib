@@ -1,6 +1,6 @@
 ---
 title: "getPlatformSupportedProperties function"
-description: ""
+description: "Intune Policyset Deviceandappmanagementassignmentfilter Getplatformsupportedproperties Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

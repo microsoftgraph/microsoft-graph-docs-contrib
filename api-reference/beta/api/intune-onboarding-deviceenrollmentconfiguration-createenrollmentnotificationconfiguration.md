@@ -1,6 +1,6 @@
 ---
 title: "createEnrollmentNotificationConfiguration action"
-description: ""
+description: "Intune Onboarding Deviceenrollmentconfiguration Createenrollmentnotificationconfiguration Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

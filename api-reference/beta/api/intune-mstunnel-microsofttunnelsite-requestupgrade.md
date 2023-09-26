@@ -1,6 +1,6 @@
 ---
 title: "requestUpgrade action"
-description: ""
+description: "Intune Mstunnel Microsofttunnelsite Requestupgrade Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

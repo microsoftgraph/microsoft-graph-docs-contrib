@@ -1,6 +1,6 @@
 ---
 title: "validateComplianceScript action"
-description: ""
+description: "Intune Deviceconfig Devicecompliancepolicy Validatecompliancescript Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

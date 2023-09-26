@@ -1,6 +1,6 @@
 ---
 title: "uploadNewVersion action"
-description: ""
+description: "Intune Grouppolicy Grouppolicyuploadeddefinitionfile Uploadnewversion Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

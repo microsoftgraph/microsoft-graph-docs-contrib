@@ -1,6 +1,6 @@
 ---
 title: "connect action"
-description: ""
+description: "Intune Chromebooksync Chromeosonboardingsettings Connect Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

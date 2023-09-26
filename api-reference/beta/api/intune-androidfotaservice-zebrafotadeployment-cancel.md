@@ -1,6 +1,6 @@
 ---
 title: "cancel action"
-description: ""
+description: "Intune Androidfotaservice Zebrafotadeployment Cancel Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -1,6 +1,6 @@
 ---
 title: "moveDevicesToOU action"
-description: ""
+description: "Intune Devices Manageddevice Movedevicestoou Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

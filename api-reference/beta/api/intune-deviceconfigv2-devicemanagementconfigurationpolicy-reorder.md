@@ -1,6 +1,6 @@
 ---
 title: "reorder action"
-description: ""
+description: "Intune Deviceconfigv2 Devicemanagementconfigurationpolicy Reorder Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -1,6 +1,6 @@
 ---
 title: "executeAction action"
-description: ""
+description: "Intune Devices Manageddevice Executeaction Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

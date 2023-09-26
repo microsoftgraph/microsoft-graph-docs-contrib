@@ -1,6 +1,6 @@
 ---
 title: "createMigrationReport action"
-description: ""
+description: "Intune Gpanalyticsservice Grouppolicymigrationreport Createmigrationreport Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

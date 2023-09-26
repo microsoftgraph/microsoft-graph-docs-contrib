@@ -1,6 +1,6 @@
 ---
 title: "getZebraFotaDeploymentReport action"
-description: ""
+description: "Intune Androidfotaservice Devicemanagementreports Getzebrafotadeploymentreport Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

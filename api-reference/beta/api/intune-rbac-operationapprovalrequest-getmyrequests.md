@@ -1,6 +1,6 @@
 ---
 title: "getMyRequests function"
-description: ""
+description: "Intune Rbac Operationapprovalrequest Getmyrequests Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

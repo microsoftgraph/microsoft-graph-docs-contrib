@@ -1,6 +1,6 @@
 ---
 title: "reenable action"
-description: ""
+description: "Intune Devices Manageddevice Reenable Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

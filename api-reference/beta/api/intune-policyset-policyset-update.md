@@ -1,6 +1,6 @@
 ---
 title: "update action"
-description: ""
+description: "Intune Policyset Policyset Update Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

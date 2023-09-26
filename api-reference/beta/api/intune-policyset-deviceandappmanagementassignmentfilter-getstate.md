@@ -1,6 +1,6 @@
 ---
 title: "getState function"
-description: ""
+description: "Intune Policyset Deviceandappmanagementassignmentfilter Getstate Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

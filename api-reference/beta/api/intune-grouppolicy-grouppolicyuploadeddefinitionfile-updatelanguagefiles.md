@@ -1,6 +1,6 @@
 ---
 title: "updateLanguageFiles action"
-description: ""
+description: "Intune Grouppolicy Grouppolicyuploadeddefinitionfile Updatelanguagefiles Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -1,6 +1,6 @@
 ---
 title: "remove action"
-description: ""
+description: "Intune Grouppolicy Grouppolicyuploadeddefinitionfile Remove Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

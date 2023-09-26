@@ -1,6 +1,6 @@
 ---
 title: "compare function"
-description: ""
+description: "Intune Deviceintent Devicemanagementintent Compare Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

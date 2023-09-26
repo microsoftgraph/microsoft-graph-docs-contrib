@@ -1,6 +1,6 @@
 ---
 title: "getRemoteAssistanceMonitorAvgSessionTimeReport action"
-description: ""
+description: "Intune Remoteassistance Devicemanagementreports Getremoteassistancemonitoravgsessiontimereport Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

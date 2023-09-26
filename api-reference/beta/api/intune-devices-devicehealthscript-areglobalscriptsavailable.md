@@ -1,6 +1,6 @@
 ---
 title: "areGlobalScriptsAvailable function"
-description: ""
+description: "Intune Devices Devicehealthscript Areglobalscriptsavailable Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -1,6 +1,6 @@
 ---
 title: "userExperienceAnalyticsSummarizedDeviceScopes function"
-description: ""
+description: "Intune Devices Devicemanagement Userexperienceanalyticssummarizeddevicescopes Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

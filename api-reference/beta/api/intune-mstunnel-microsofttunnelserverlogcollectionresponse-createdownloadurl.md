@@ -1,6 +1,6 @@
 ---
 title: "createDownloadUrl action"
-description: ""
+description: "Intune Mstunnel Microsofttunnelserverlogcollectionresponse Createdownloadurl Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

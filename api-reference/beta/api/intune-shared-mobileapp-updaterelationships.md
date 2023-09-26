@@ -1,6 +1,6 @@
 ---
 title: "updateRelationships action"
-description: ""
+description: "Intune Shared Mobileapp Updaterelationships Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -1,6 +1,6 @@
 ---
 title: "exportDeviceAndAppManagementData function"
-description: ""
+description: "Intune Shared User Exportdeviceandappmanagementdata Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

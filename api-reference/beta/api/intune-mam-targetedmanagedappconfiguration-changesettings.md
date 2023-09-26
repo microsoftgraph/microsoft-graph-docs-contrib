@@ -1,6 +1,6 @@
 ---
 title: "changeSettings action"
-description: ""
+description: "Intune Mam Targetedmanagedappconfiguration Changesettings Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
