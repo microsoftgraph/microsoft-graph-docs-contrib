@@ -12,6 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 <!-- markdownlint-disable MD001 -->
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ### Delete an app from your organization's app catalog
 
 Delete an [app](../resources/teamsapp.md) from an organization's app catalog (the tenant app catalog). To delete an app, the **distributionMethod** property for the app must be set to `organization`.
