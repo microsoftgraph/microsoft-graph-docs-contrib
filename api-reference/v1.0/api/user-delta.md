@@ -16,6 +16,8 @@ Get newly created, updated, or deleted users without having to perform a full re
 > [!NOTE]
 > Changes to the **licenseAssignmentStates** property are currently not tracked.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

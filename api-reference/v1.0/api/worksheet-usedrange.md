@@ -11,7 +11,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+
 The used range is the smallest range that encompasses any cells that have a value or formatting assigned to them. If the worksheet is blank, this function returns the top left cell.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

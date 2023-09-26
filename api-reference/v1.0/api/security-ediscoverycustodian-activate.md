@@ -15,6 +15,8 @@ Namespace: microsoft.graph.security
 Activate a custodian that has been released from a case to make them part of the case again. For details, see [Manage custodians in an eDiscovery (Premium) case](/microsoft-365/compliance/manage-new-custodians#re-activate-custodian).
 
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

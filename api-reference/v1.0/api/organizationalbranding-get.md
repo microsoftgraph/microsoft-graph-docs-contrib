@@ -16,6 +16,8 @@ If the **Accept-Language** header is set to an existing locale identified by the
 
 This method retrieves only non-Stream properties, for example, **usernameHintText** and **signInPageText**. To retrieve Stream types of the default branding, for example, **bannerLogo** and **backgroundImage**, use the [GET organizationalBrandingLocalization](organizationalbrandinglocalization-get.md) method.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
