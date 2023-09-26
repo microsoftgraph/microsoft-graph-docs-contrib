@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Create an [outlookCategory](../resources/outlookcategory.md) object in the user's master list of categories.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

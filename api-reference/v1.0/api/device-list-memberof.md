@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get groups and administrative units that this device is a direct member of. This operation is not transitive.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

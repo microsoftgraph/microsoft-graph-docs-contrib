@@ -15,6 +15,8 @@ Namespace: microsoft.graph.externalConnectors
 
 Update the properties of an [externalitem](../resources/externalconnectors-externalitem.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
