@@ -52,7 +52,7 @@ The following table shows the parameters that can be used with this function.
 |:---|:---|:---|
 |inclusiveStartDateTime|DateTimeOffset|Sets the starting date and time in UTC. The allowed earliest start time is 30 days in the past.|
 |exclusiveEndDateTime|DateTimeOffset|Sets the ending date and time in UTC.|
-|aggregationIntervalInMinute|Int32|Aggregation interval in minute. The defaul value is 15, which sets the data to be aggregated into 15-minute sets. Allowed values are 5, 10, 15 and 30.|
+|aggregationIntervalInMinute|Int32|Aggregation interval in minutes. The default value is 15, which sets the data to be aggregated into 15-minute sets. Allowed values are 5, 10, 15 and 30.|
 
 ## Request headers
 

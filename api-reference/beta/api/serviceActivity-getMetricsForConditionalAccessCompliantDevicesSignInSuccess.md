@@ -1,6 +1,6 @@
 ---
 title: "serviceActivity: getMetricsForConditionalAccessCompliantDevicesSignInSuccess"
-description: "Get the number of user authentication requests that successfully satisfy a Conditional Access policy that requiring device compliance. Compliant devices are managed by Microsoft Intune and can be mobile iOS/Android devices, tablets, or cloud Microsoft Entra-joined computers (not hybrid)."
+description: "Get the number of user authentication requests that successfully satisfy a Conditional Access policy requiring device compliance. Compliant devices are managed by Microsoft Intune and can be mobile iOS/Android devices, tablets, or cloud Microsoft Entra-joined computers (not hybrid)."
 author: zachpeng
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of user authentication requests that successfully satisfy a Conditional Access policy that requiring device compliance. Compliant devices are managed by Microsoft Intune and can be mobile iOS/Android devices, tablets, or cloud Microsoft Entra-joined computers (not hybrid).
+Get the number of user authentication requests that successfully satisfy a Conditional Access policy requiring device compliance. Compliant devices are managed by Microsoft Intune and can be mobile iOS/Android devices, tablets, or cloud Microsoft Entra-joined computers (not hybrid).
 
 ## Permissions
 
@@ -52,7 +52,7 @@ The following table shows the parameters that can be used with this function.
 |:---|:---|:---|
 |inclusiveStartDateTime|DateTimeOffset|Sets the starting date and time in UTC. The allowed earliest start time is 30 days in the past.|
 |exclusiveEndDateTime|DateTimeOffset|Sets the ending date and time in UTC.|
-|aggregationIntervalInMinute|Int32|Aggregation interval in minute. The defaul value is 15, which sets the data to be aggregated into 15-minute sets. Allowed values are 5, 10, 15 and 30.|
+|aggregationIntervalInMinute|Int32|Aggregation interval in minutes. The default value is 15, which sets the data to be aggregated into 15-minute sets. Allowed values are 5, 10, 15 and 30.|
 
 ## Request headers
 
