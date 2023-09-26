@@ -15930,6 +15930,8 @@ items:
                     href: api/training-get.md
               - name: Training language detail
                 items:
+                  - name: Training language detail
+                    href: resources/traininglanguagedetail.md
                   - name: Get
                     href: api/traininglanguagedetail-get.md
               - name: Reports
