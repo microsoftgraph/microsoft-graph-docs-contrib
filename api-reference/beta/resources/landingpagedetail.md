@@ -17,11 +17,6 @@ Represents an attack simulation landing page detail.
 
 Inherits from [entity](../resources/entity.md).
 
-## Methods
-
-|Method|Return type|Description|
-|:---|:---|:---|
-
 ## Properties
 
 |Property|Type|Description|
