@@ -35,44 +35,40 @@ One of the following permissions is required to call this API. To learn more, in
 GET /security/threatIntelligence/sslCertificates
 ```
 
-## Query parameters
-
-In the request URL, the `$search` parameter must be included in order to search on a specific field. The following fields are supported.
-
-| Field                        |
-|:-----------------------------|
-| fingerprint                  |
-| issuer/alternativeName       |
-| issuer/commonName            |
-| issuer/country               |
-| issuer/emailAddress          |
-| issuer/givenName             |
-| issuer/localityName          |
-| issuer/organizationName      |
-| issuer/organizationUnitName  |
-| issuer/province              |
-| issuer/serialNumber          |
-| issuer/stateOrProvinceName   |
-| issuer/streetAddress         |
-| issuer/surname               |
-| name                         |
-| serialNumber                 |
-| sha1                         |
-| subject/alternativeName      |
-| subject/commonName           |
-| subject/country              |
-| subject/emailAddress         |
-| subject/givenName            |
-| subject/localityName         |
-| subject/organizationName     |
-| subject/organizationUnitName |
-| subject/province             |
-| subject/serialNumber         |
-| subject/stateOrProvinceName  |
-| subject/streetAddress        |
-| subject/surname              |
+## Optional query parameters
 
 This method also supports the `$count`, `$select`, `$orderBy`, `$top`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+| Name     | Description                                                                                                                                                                                                                    |
+| :------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| $count   | `$count` is supported to return a holistic count of the number of [sslCertificate](../resources/security-sslcertificate.md) objects. `$count` is supported as a query parameter (`?$count=true`) or as a path parameter (`/$count`). |
+| $orderby | `$orderby` supports some properties of the **sslCertificate** resource. For details, see [Supported properties with $orderby](#supported-properties-with-orderby).                                                                |
+| $search  | `$search` is **required** in the request URL of this API. The API currently only supports searching by one field in a call. For details, see [Supported properties with $search](#supported-properties-with-search).           |
+| $select  | `$select` is supported to limit the properties returned in this query.                                                                                                                                                         |
+| $skip    | `$skip` is supported to skip over elements in pages. Combine with `$top` to perform pagination or use the `@odata.nextLink` for server-side pagination.                                                                        |
+| $top     | `$top` is supported to limit the number of elements per page. Combine with `$skip` to perform pagination or use the `@odata.nextLink` for server-side pagination.                                                              |
+
+### Supported properties with $orderby
+
+The following properties can be used for `$orderby` calls.
+
+| Property             | Example                              | Notes                                           |
+| :------------------- | :----------------------------------- | :---------------------------------------------- |
+| firstSeenDateTime   | `$orderby=firstSeenDateTime desc`   |                                                 |
+| lastSeenDateTime | `$orderby=lastSeenDateTime desc` |                                                 |
+
+### Supported properties with $search
+
+The following properties can be used for `$search` calls.
+
+| Property    | Example                                     | Notes                                                                                                    |
+| :---------- | :------------------------------------------ | :--------------------------------------------------------------------------------------------------------|
+| fingerprint       | `$search="fingerprint:a3b59e5fe884ee1f34d98eef858e3fb662ac104a"`          | The `fingerprint` value should not contain any colons (:). Removing those will support a search as though they were included. |
+| issuer       | `$search="issuer/commonName:Contoso"`          | The `$search` must target a specific field of the [sslCertificateEntity](../resources/security-sslcertificateentity.md). |
+| serialNumber       | `$search="serialNumber:abc123"`          | The value used for `$search` will match a `serialNumber` of an [sslCertificate](../resources/security-sslcertificate.md). |
+| sha1       | `$search="sha1:abc123"`          | The value used for `$search` will match a `sha1` of an [sslCertificate](../resources/security-sslcertificate.md). |
+| subject       | `$search="subject/commonName:Contoso"`          | The `$search` must target a specific field of the [sslCertificateEntity](../resources/security-sslcertificateentity.md). |
+
 
 ## Request headers
 
