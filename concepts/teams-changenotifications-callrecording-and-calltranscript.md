@@ -99,7 +99,7 @@ One of the following permissions is required to subscribe to `communications/onl
 The following example shows how to subscribe to recordings available at the tenant level.
 
 ```http
-POST https://graph.microsoft.com/v1.0/subscriptions
+POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
 
 {
@@ -131,7 +131,7 @@ One of the following permissions is required to subscribe to `communications/onl
 The following example shows how to subscribe to recordings available for a particular online meeting.
 
 ```http
-POST https://graph.microsoft.com/v1.0/subscriptions
+POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
 
 {
