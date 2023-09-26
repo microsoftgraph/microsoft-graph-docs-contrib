@@ -3,7 +3,7 @@ title: "Update custom property of a fileStorageContainer "
 description: "Update custom property of a fileStorageContainer"
 author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.prod: "*files"
+ms.prod: "files"
 doc_type: apiPageType
 ---
 
@@ -48,7 +48,8 @@ PATCH /storage/fileStorage/containers/{containerId}/customProperties
 ## Request body
 In the request body, supply the custom properties for update and the new values for the relevant fields. 
 
-The following properties on custom properties can be modified/
+The following properties on custom properties can be modified.
+
 |Property|Type|Description|
 |:---|:---|:---|
 |value|String|Value of the custom property.|
