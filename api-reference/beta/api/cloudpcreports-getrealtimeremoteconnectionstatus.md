@@ -40,7 +40,7 @@ In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|cloudPcId|String|The id of the Cloud PC.|
+|cloudPcId|String|The ID of the Cloud PC.|
 
 
 ## Request headers
@@ -49,7 +49,7 @@ In the request URL, provide the following query parameters with values.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -58,7 +58,7 @@ If successful, this function returns a `200 OK` response code and a Stream in th
 ## Examples
 
 ### Request
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/ge
 ---
 
 ### Response
-The following is an example of the response
+Here's an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
