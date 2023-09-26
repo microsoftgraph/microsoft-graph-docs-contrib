@@ -18,6 +18,8 @@ If you're creating a private channel, you can add a maximum of 200 members.
 > [!NOTE]
 > Some special characters in the channel name will cause the [Get filesFolder](/graph/api/channel-get-filesfolder) API to return an error. For details, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=16692).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -206,6 +208,8 @@ Content-type: application/json
 
 ---
 
+> **Note:** To add a guest account to the channel, for the **roles** property, use the value `guest`.
+
 #### Response
 
 The following is an example of the response.
@@ -388,6 +392,8 @@ Content-type: application/json
 
 ---
 
+>  **Note:** To add a guest account to the channel, for the **roles** property, use the value `guest`.
+
 #### Response
 
 The following is an example of the response.
@@ -482,6 +488,8 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+>  **Note:** To add a guest account to the channel, for the **roles** property, use the value `guest`.
 
 #### Response
 

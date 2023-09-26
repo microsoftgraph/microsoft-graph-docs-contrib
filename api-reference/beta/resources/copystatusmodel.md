@@ -1,6 +1,6 @@
 ---
 title: "copyStatusModel resource type"
-description: "Here is a JSON representation of the copyStatusModel resource."
+description: "Here's a JSON representation of the copyStatusModel resource."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: non-product-specific
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

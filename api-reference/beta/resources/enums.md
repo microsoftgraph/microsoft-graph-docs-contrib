@@ -364,6 +364,50 @@ Namespace: microsoft.graph
 | group  |
 
 
+### multiTenantOrganizationMemberProcessingStatus values
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|succeeded|
+|failed|
+|unknownFutureValue|
+
+### multiTenantOrganizationMemberRole values
+
+|Member|
+|:---|
+|owner|
+|member|
+|unknownFutureValue|
+
+### multiTenantOrganizationMemberState values
+
+|Member|
+|:---|
+|pending|
+|active|
+|removed|
+|unknownFutureValue|
+
+### multiTenantOrganizationState values
+
+|Member|
+|:---|
+|active|
+|inactive|
+|unknownFutureValue|
+
+### templateApplicationLevel values
+
+|Member|
+|:---|
+|none|
+|newPartners|
+|existingPartners|
+|unknownFutureValue|
+
 ### accessPackageFilterByCurrentUserOptions values
 
 | Member             |
@@ -422,6 +466,7 @@ Namespace: microsoft.graph
 | strictEnforcement  |
 | disabled           |
 | unknownFutureValue |
+|strictLocation|
 
 ### msiType values
 
@@ -465,6 +510,7 @@ Namespace: microsoft.graph
 | Member                |
 | :-------------------- |
 | asymmetricKeyLifetime |
+| trustedCertificateAuthority |
 | unknownFutureValue    |
 
 ### synchronizationSecret values
@@ -1019,6 +1065,9 @@ Namespace: microsoft.graph
 | unknownFutureValue              |
 | servicePrincipals               |
 | servicePrincipalRisk            |
+| authenticationFlows             |
+| insiderRisk                     |
+
 
 ### conditionalAccessStatus values
 
@@ -1329,6 +1378,13 @@ Namespace: microsoft.graph
 | studentsAndTeamOwners |
 | unknownFutureValue    |
 | studentsOnly          |
+
+### educationModuleStatus values
+
+| Member             |
+| :----------------- |
+| draft              |
+| published          |
 
 ### educationAssignmentStatus values
 
@@ -2703,6 +2759,9 @@ Possible values for user account types (group membership), per Windows definitio
 | otherExternalUser                 |
 | serviceProvider                   |
 | microsoftAdminPortals             |
+| deviceCodeFlow                    |
+| authenticationTransfer            |
+| insiderRisk                       |
 
 ### signInAccessType values
 
@@ -2721,6 +2780,24 @@ Possible values for user account types (group membership), per Windows definitio
 | :----- |
 | days   |
 | hours  |
+
+### originalTransferMethods values 
+
+|Member|
+|:---|
+|none|
+|deviceCodeFlow|
+|authenticationTransfer|
+|unknownFutureValue|
+
+### tokenProtectionStatus values 
+
+|Member|
+|:---|
+|none|
+|bound|
+|unbound|
+|unknownFutureValue|
 
 ### persistentBrowserSessionMode values
 
@@ -3592,8 +3669,10 @@ Possible values for user account types (group membership), per Windows definitio
 | Member             |
 | :----------------- |
 | lockForApproval    |
+| approve            |
 | terminate          |
 | unknownFutureValue |
+| reject             |
 
 ### delegatedAdminRelationshipRequestStatus values
 
@@ -3987,6 +4066,32 @@ Possible values for user account types (group membership), per Windows definitio
 | request_retrieved     |
 | presentation_verified |
 | unknownFutureValue    |
+
+### labelKind values
+
+|Member|
+|:---|
+|all|
+|enumerated|
+|unknownFutureValue|
+
+### permissionKind values
+
+|Member|
+|:---|
+|all|
+|enumerated|
+|allPermissionsOnResourceApp|
+|unknownFutureValue|
+
+### resourceScopeType values
+
+|Member|
+|:---|
+|group|
+|chat|
+|tenant|
+|unknownFutureValue|
 
 ### allowedRolePrincipalTypes values
 

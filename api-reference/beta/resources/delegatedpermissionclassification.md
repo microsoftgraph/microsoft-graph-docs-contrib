@@ -28,7 +28,7 @@ Delegated permission classifications can be used in combination with user consen
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

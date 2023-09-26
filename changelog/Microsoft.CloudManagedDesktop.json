@@ -31,7 +31,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-06-28T06:58:17.7596296Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -56,12 +56,12 @@
             "Id": "6680777e-7bec-43ff-9ad6-cb258a40783d",
             "Cloud": "Prod",
             "Version": "beta",
-            "CreatedDateTime": "2023-06-28T02:52:10.3002588Z",     
+            "CreatedDateTime": "2023-06-28T02:52:10.3002588Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
-            "ChangeList": [            
+            "ChangeList": [
                 {
                     "Id": "afeeb952-b86d-4670-bdfc-94a212be00e2",
                     "ApiChange": "Member",
@@ -83,7 +83,7 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-06-27T06:58:17.7596296Z",
-            "WorkloadArea": "Devices and apps",
+            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -180,6 +180,24 @@
         {
             "ChangeList": [
                 {
+                    "Id": "f5cc2d2b-925e-47cc-865d-5713fdace6b9",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "vMware",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `vMware` member to the **cloudPcPartnerAgentName** enumeration.",
+                    "Target": "cloudPcPartnerAgentName"
+                }
+            ],
+            "Id": "f5cc2d2b-925e-47cc-865d-5713fdace6b9",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-05-25T03:34:35.6186992Z",
+            "WorkloadArea": "Devices and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "7f706f6a-ee66-49b5-9325-f55149f952ac",
                     "ApiChange": "Property",
                     "ChangedApiName": "provisioningType",
@@ -212,7 +230,7 @@
             "CreatedDateTime": "2023-03-21T03:56:27.4502681Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
-        },        
+        },
         {
             "ChangeList": [
                 {
@@ -243,7 +261,7 @@
             "Id": "a954cea4-2b1d-4be0-8767-537d7d9ec2f7",
             "Cloud": "Prod",
             "Version": "beta",
-            "CreatedDateTime": "2023-02-01T02:52:10.3002588Z",     
+            "CreatedDateTime": "2023-02-01T02:52:10.3002588Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
@@ -429,7 +447,7 @@
             "SubArea": "Cloud PC"
         },
         {
-          "ChangeList": [            
+          "ChangeList": [
             {
                 "Id": "77007eae-49c9-451c-ab49-b690e3bd642e",
                 "ApiChange": "Member",
@@ -460,7 +478,7 @@
             "Id": "32581844-a1d3-11ed-a8fc-0242ac120002",
             "Cloud": "Prod",
             "Version": "beta",
-            "CreatedDateTime": "2023-05-08T02:52:10.3002588Z",     
+            "CreatedDateTime": "2023-05-08T02:52:10.3002588Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
@@ -520,7 +538,7 @@
             "Id": "dd8cc504-3861-450c-add5-763a11dd0266",
             "Cloud": "Prod",
             "Version": "beta",
-            "CreatedDateTime": "2023-01-04T02:22:10.3002588Z",     
+            "CreatedDateTime": "2023-01-04T02:22:10.3002588Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
@@ -3368,6 +3386,24 @@
     },
     {
         "ChangeList": [
+            {
+                "Id": "f65a6785-6042-4258-b9a4-385cfb2eb5d2",
+                "ApiChange": "Member",
+                "ChangedApiName": "informational",
+                "ChangeType": "Addition",
+                "Description": "Added the **informational** member to the [CloudPcOnPremisesConnectionStatus](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta#cloudpconpremisesconnectionstatus-values) resource.",
+                "Target": "CloudPcOnPremisesConnectionStatus"
+            }
+        ],
+        "Id": "f65a6785-6042-4258-b9a4-385cfb2eb5d2",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-08-08T04:14:41.3424906Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+    },
+    {   
+        "ChangeList": [
           {
             "Id": "2107ee19-7ed3-4480-936c-61a372e36751",
             "ApiChange": "EnumType",
@@ -3411,7 +3447,7 @@
         "SubArea": "Cloud PC"
       },
       {
-      "ChangeList": [          
+      "ChangeList": [
             {
               "Id": "33faed78-3754-43a7-a08a-4d6c9d5d741f",
               "ApiChange": "Method",
@@ -3427,6 +3463,24 @@
           "CreatedDateTime": "2023-07-31T09:00:37.9148169Z",
           "WorkloadArea": "Device and app management",
           "SubArea": "Cloud PC"
-        }
+     },
+     {
+        "ChangeList": [
+          {
+            "Id": "3cc32469-33d9-46be-a085-7fa1273af503",
+            "ApiChange": "Member",
+            "ChangedApiName": "inaccessibleCloudPcReports",
+            "ChangeType": "Addition",
+            "Description": "Added the `inaccessibleCloudPcReports` member to the **cloudPcReportName** enumeration.",
+            "Target": "cloudPcReportName"
+          }
+        ],
+        "Id": "3cc32469-33d9-46be-a085-7fa1273af503",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-07-06T03:57:35.2333537Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      }
     ]
 }

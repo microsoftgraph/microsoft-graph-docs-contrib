@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Delete a currency object from Dynamics 365 Business Central.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -39,19 +41,19 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 |Header|Value|
 |------|-----|
 |Authorization  |Bearer {token}. Required. |
-|If-Match       |Required. When this request header is included and the eTag provided does not match the current tag on the **currencies**, the **currencies** will not be updated. |
+|If-Match       |Required. When this request header is included and the eTag provided doesn't match the current tag on the **currencies**, the **currencies** won't be updated. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 ```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/currencies/{id}
@@ -59,7 +61,7 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/currencies/{id
 
 ### Response
 
-The following is an example of the response. 
+Here's an example of the response. 
 
 ```http
 HTTP/1.1 204 No Content

@@ -31,6 +31,7 @@ A permission grant condition set contains several conditions. For an event to ma
 | clientApplicationPublisherIds | String collection | A list of Microsoft Partner Network (MPN) IDs for verified publishers of the client application, or a list with the single value `all` to match with client apps from any publisher. Default is the single value `all`. |
 | clientApplicationsFromVerifiedPublisherOnly | Boolean | Set to `true` to only match on client applications with a [verified publisher](/azure/active-directory/develop/publisher-verification-overview). Set to `false` to match on any client app, even if it does not have a verified publisher. Default is `false`. |
 | certifiedClientApplicationsOnly | Boolean | Set to `true` to only match on client applications that are [Microsoft 365 certified](/microsoft-365-app-certification/docs/enterprise-app-certification-guide). Set to `false` to match on any other client app. Default is `false`. |
+| scopeSensitivityLabels | [scopeSensitivityLabels](scopeSensitivityLabels.md) | Defines the sensitivity labels for groups that are included in a [permissionGrantPreApprovalPolicy](../resources/permissiongrantpreapprovalpolicy.md). |
 
 ## JSON representation
 
@@ -51,6 +52,10 @@ A permission grant condition set contains several conditions. For an event to ma
     "clientApplicationTenantIds": [ "string" ],
     "clientApplicationPublisherIds": [ "string" ],
     "clientApplicationsFromVerifiedPublisherOnly": false,
-    "certifiedClientApplicationsOnly": false
+    "certifiedClientApplicationsOnly": false,
+    "scopeSensitivityLabels": {
+        "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+        "labelKind": "all"
+    }
 }
 ```

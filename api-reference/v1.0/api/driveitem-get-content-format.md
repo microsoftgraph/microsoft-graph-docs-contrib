@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Convert to other formats
 ms.localizationpriority: high
@@ -17,6 +17,8 @@ Use this API to retrieve the contents of an item in a specific format.
 Not all files can be converted into all formats.
 
 To download the item in its original format, see [download an item's contents](driveitem-get-content.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

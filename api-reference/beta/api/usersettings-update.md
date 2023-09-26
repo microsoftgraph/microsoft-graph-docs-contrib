@@ -18,9 +18,11 @@ Users in the same organization can have different settings based on their prefer
 To get the user current settings, see [current user settings](usersettings-get.md). 
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ### Batch request
 
-It's also possible to opt-out multiple users from Delve through a batch request.
+It's also possible to opt out multiple users from Delve through a batch request.
 To learn more, see [JSON batching](/graph/json-batching).
 
 >**Important**: Only members of the [organization management](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) role group can update multiple users. 
@@ -58,7 +60,7 @@ PATCH /users/{id | userPrincipalName}/settings/
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or are recalculated based on changes to other property values. For best performance, you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
@@ -68,7 +70,7 @@ In the request body, supply the values for relevant fields that should be update
 
 ##### Request
 
-Here is an example request on how to opt-out a user from Delve and disable his contribution on content relevancy for the whole organization.
+Here's an example request on how to opt out a user from Delve and disable the user's contribution on content relevancy for the whole organization.
 
 ```http
 PATCH https://graph.microsoft.com/beta/me/settings
@@ -81,7 +83,7 @@ Content-type: application/json
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here's an example of the response. Note: The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK

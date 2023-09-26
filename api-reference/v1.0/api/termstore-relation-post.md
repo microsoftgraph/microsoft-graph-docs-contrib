@@ -12,6 +12,8 @@ Namespace: microsoft.graph.termStore
 
 Create a new [relation](../resources/termstore-relation.md) object. These are used to create pinned and reused relations between terms or between a term and set. If you create a pinned/reused term between term and set, then **fromTerm**  must be set to *null* in the post body.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
