@@ -17,6 +17,8 @@ Update the properties of the specified [onlineMeeting](../resources/onlinemeetin
 
 Please see [Request body](#request-body) section for the list of properties that support updating.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 | Permission type                        | Permissions (from least to most privileged) |

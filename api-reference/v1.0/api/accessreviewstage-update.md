@@ -18,6 +18,8 @@ To update an **accessReviewStage**, its **status** must be `NotStarted`, `Initia
 > 
 > Updating an **accessReviewStage** will update only that stage. The parent **accessReviewInstance** and any future **accessReviewStage** objects won't change. To make updates that apply to all future instances and stages, update the parent [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

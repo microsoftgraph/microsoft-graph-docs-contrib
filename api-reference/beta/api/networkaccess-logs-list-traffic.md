@@ -14,6 +14,8 @@ Namespace: microsoft.graph.networkaccess
 
 Get a list of log events for traffic routed through the Global Secure Access services.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
