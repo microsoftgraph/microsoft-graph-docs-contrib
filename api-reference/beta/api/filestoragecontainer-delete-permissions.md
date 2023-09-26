@@ -1,5 +1,5 @@
 ---
-title: "Delete permissions from a fileStorageContainer"
+title: "Delete permissions from fileStorageContainer"
 description: "Delete permissions from a fileStorageContainer"
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# fileStorageContainer: delete-permissions
+# Delete permissions from fileStorageContainer
 Namespace: microsoft.graph
 
 Remove permission from a **fileStorageContainer**.
