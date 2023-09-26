@@ -7,7 +7,7 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Add custom property to a fileStorageContainer
+# Add custom property to fileStorageContainer
 Namespace: microsoft.graph
 
 Add custom property to a fileStorageContainer. 
