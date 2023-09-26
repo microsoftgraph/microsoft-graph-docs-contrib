@@ -15,6 +15,8 @@ Retrieve the properties and relationships of a [Drive](../resources/drive.md) re
 
 A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

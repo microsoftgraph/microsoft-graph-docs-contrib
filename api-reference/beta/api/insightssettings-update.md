@@ -19,6 +19,8 @@ To learn more about customizing insights privacy for your organization, see:
 -  [Customize item insights privacy](/graph/insights-customize-item-insights-privacy) 
 -  [Customize people insights privacy](/graph/insights-customize-people-insights-privacy)
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 To update settings for contact insights, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).

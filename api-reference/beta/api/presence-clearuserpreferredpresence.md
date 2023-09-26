@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Clear the preferred availability and activity status for a user.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 The following permission is required to call the API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

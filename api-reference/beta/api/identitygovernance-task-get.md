@@ -15,6 +15,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a specific task from a [workflow](../resources/identitygovernance-workflow.md) or [workflowVersion](../resources/identitygovernance-workflowversion.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,7 +37,7 @@ Fetch tasks for a lifecycle workflow.
 }
 -->
 ``` http
-GET /identityGovernance/lifecycleWorkflows/workflow/{workflowId}/tasks/{taskId}
+GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/tasks/{taskId}
 ```
 
 Fetch tasks for a lifecycle workflow version.
