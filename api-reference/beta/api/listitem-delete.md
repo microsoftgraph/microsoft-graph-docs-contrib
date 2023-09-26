@@ -17,6 +17,8 @@ Removes an item from a [list][].
 
 [list]: ../resources/list.md
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 To delete an item, the user must have granted the application write access to the item to be deleted.
