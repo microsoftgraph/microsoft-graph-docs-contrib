@@ -11295,7 +11295,7 @@ items:
               - name: Update custom property
                 href: api/filestoragecontainer-update-customproperty.md
               - name: Delete custom property
-                href: filestoragecontainer-delete-customproperty.md
+                href: api/filestoragecontainer-delete-customproperty.md
       - name: Financials (preview)
         items:
           - name: Overview
