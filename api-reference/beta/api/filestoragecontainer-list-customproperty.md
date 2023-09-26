@@ -7,7 +7,7 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# "List fileStorageContainer custom property
+# List fileStorageContainer custom property
 Namespace: microsoft.graph
 
 List the custom properties on a fileStorageContainer. Caller can either retrieve all custom properties or get specific property by name.
