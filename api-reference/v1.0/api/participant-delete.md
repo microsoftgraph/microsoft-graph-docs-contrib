@@ -118,7 +118,7 @@ HTTP/1.1 204 No Content
 
 #### Invite a participant to an existing call
 
-> **Note:** Provide a `participantId` on the [invitationParticipantInfo](../resources/invitationparticipantinfo.md) so that you can use it to cancel the invitation later.
+> **Note:** Provide a value for the `participantId` member of the [invitationParticipantInfo](../resources/invitationparticipantinfo.md) so that you can use it to cancel the invitation later.
 
 # [HTTP](#tab/http)
 <!-- {
