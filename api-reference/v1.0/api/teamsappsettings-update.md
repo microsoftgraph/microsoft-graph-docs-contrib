@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the properties of a [teamsAppSettings](../resources/teamsappsettings.md) object.
+Update the tenant-wide [teamsAppSettings](../resources/teamsappsettings.md) for all Teams apps in the tenant.
 
 ## Permissions
 
