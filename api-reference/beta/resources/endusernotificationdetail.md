@@ -17,11 +17,6 @@ Represents details about end user language specific content.
 
 Inherits from [entity](../resources/entity.md).
 
-## Methods
-
-|Method|Return type|Description|
-|:---|:---|:---|
-
 ## Properties
 
 |Property|Type|Description|
