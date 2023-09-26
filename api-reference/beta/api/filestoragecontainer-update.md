@@ -1,9 +1,9 @@
 ---
 title: "Update fileStorageContainer"
 description: "Update the properties of a fileStorageContainer object."
-author: "tonchan-msft*"
+author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.prod: "files*"
+ms.prod: "files"
 doc_type: apiPageType
 ---
 
