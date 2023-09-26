@@ -53,21 +53,21 @@ This section describes implementation differences in the Microsoft Graph for the
 |API    | Details              |
 |:--------------------|:---------------------------------------------------------|
 **Apps**            |                                                          |
-[Apps in catalog](/graph/api/resources/teamsapp) | Api's to manage apps in catalog like [Publish apps to catalog](/graph/api/teamsapp-publish), [Delete app from catalog](/graph/api/teamsapp-delete), [Update app in catalog](/graph/api/teamsapp-update) are not supported.
-[App installation](/graph/api/resources/teamsappinstallation) | Api's to manage app installation in all the scopes (user, chat and team) are not supported.
-[Resource specific permission grant](/graph/api/resources/resourcespecificpermissiongrant) | Api's to list resource specific permission grants are not supported for all scopes(team, chat and group).
+[Apps in catalog](/graph/api/resources/teamsapp) | APIs to manage apps in catalog, such as [Publish apps to catalog](/graph/api/teamsapp-publish), [Delete app from catalog](/graph/api/teamsapp-delete), and [Update app in catalog](/graph/api/teamsapp-update), are not supported.
+[App installation](/graph/api/resources/teamsappinstallation) | APIs to manage app installation in all the scopes (user, chat and team) are not supported.
+[Resource specific permission grant](/graph/api/resources/resourcespecificpermissiongrant) | APIs to list resource specific permission grants are not supported for all scopes(team, chat and group).
 **Activity Feed**            |                                                          |
-| [Activity Feed notifications](/graph/teams-send-activityfeednotifications)| Api's to send activity feed notifications are not supported. |
+| [Activity Feed notifications](/graph/teams-send-activityfeednotifications)| APIs to send activity feed notifications are not supported. |
 | **Tabs**            |                                                          |
-[Tabs](/graph/api/resources/teamstab) | Api's to manage tabs in chat and channels are not supported.
+[Tabs](/graph/api/resources/teamstab) | APIs to manage tabs in chat and channels are not supported.
 | **Channel**            |                                                          |
-[Channel](/graph/api/resources/channel) | Channel api's are not supported in context of Shared channels (channels with channelMembershipType's value as 'Shared').
+[Channel](/graph/api/resources/channel) | Channel APIs are not supported in context of Shared channels (channels with channelMembershipType's value as 'Shared').
 | **Chat**            |                                                          |
 |[List chats](/graph/api/chat-list)| The `OrderBy` OData query parameter is not supported. |
 | **Messaging**            |                                                          |
-[Export api's](/microsoftteams/export-teams-content) | Api's to export chat and channel messages are not supported. 
+[Export content](/microsoftteams/export-teams-content) | APIs to export chat and channel messages are not supported. 
 | **Team Membership**            |                                                          |
-Membership | Guests are not supported in this cloud. So, the membership api's like add guest to team / channel doesn't work.
+Membership | Guests are not supported in this cloud. So, the membership APIs like add guest to team / channel are not supported.
 | **Change notifications**            |                                                          |
 [Change notifications](/graph/api/resources/webhooks) | Change notifications are not supported for Microsoft Teams resources. 
 | **Meeting transcripts**            |                                                          |
