@@ -3,7 +3,7 @@ title: "fileStorageContainer resource type"
 description: "fileStorageContainer resource type"
 author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.prod: "*files"
+ms.prod: "files"
 doc_type: resourcePageType
 ---
 
