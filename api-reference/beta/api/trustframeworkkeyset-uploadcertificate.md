@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Upload a certificate to a [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). The input is a base-64 encoded value of the certificate contents. This method returns [trustFrameworkKey](../resources/trustframeworkkey.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

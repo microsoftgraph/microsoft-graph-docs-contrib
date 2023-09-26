@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Permanently delete a [driveItem](../resources/driveitem.md) by using its ID.
 If you delete items using this method, they're permanently removed and won't be sent to the recycle bin. Therefore, they can't be restored afterward.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

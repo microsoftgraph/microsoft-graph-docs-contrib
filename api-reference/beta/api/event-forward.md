@@ -21,6 +21,8 @@ also sends a message to notify the organizer of the forwarding, and adds the rec
 copy of the meeting event. This convenience is not available when forwarding from an Outlook.com account.
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

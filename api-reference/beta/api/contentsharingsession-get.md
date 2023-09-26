@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a [contentSharingSession](../resources/contentsharingsession.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 | Permission type | Permissions (from least to most privileged) |
