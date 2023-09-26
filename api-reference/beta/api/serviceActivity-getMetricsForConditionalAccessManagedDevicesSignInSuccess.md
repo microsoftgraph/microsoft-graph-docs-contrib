@@ -1,6 +1,6 @@
 ---
 title: "serviceActivity: getMetricsForConditionalAccessManagedDevicesSignInSuccess"
-description: "Get the number of user authentication requests that successfully satisfy a Conditional Access policy that requires devices be managed. Managed devices are computers joined to and managed by your on-premises directory and hybrid joined to Microsoft Entra."
+description: "Get the number of user authentication requests that successfully satisfy a Conditional Access policy requiring devices to be managed. Managed devices are computers joined to and managed by your on-premisis directory and hybrid devices joined to Microsoft Entra."
 author: zachpeng
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of user authentication requests that successfully satisfy a Conditional Access policy that requires devices be managed. Managed devices are computers joined to and managed by your on-premises directory and hybrid joined to Microsoft Entra.
+Get the number of user authentication requests that successfully satisfy a Conditional Access policy requiring devices to be managed. Managed devices are computers joined to and managed by your on-premisis directory and hybrid devices joined to Microsoft Entra.
 
 ## Permissions
 
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | Reports.Read.All |
 | Application                            | Reports.Read.All |
 
-In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference):
+In addition to the delegated permissions, the signed-in user who is accessing the data needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference):
 
 + Global Administrator
 + Global Reader
@@ -50,9 +50,9 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|inclusiveStartDateTime|DateTimeOffset|Sets the starting date and time in UTC. The allowed earliest start time is 30 days from now.|
+|inclusiveStartDateTime|DateTimeOffset|Sets the starting date and time in UTC. The allowed earliest start time is 30 days in the past.|
 |exclusiveEndDateTime|DateTimeOffset|Sets the ending date and time in UTC.|
-|aggregationIntervalInMinute|Int32|Aggregation interavl in minute. Defaul value is 15. Allowed values are 5, 10, 15 and 30.|
+|aggregationIntervalInMinute|Int32|Aggregation interval in minute. The defaul value is 15, which sets the data to be aggregated into 15-minute sets. Allowed values are 5, 10, 15 and 30.|
 
 ## Request headers
 
