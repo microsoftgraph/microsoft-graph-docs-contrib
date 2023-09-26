@@ -1,7 +1,7 @@
 ---
 title: "Add permission"
 description: "Add permission to a fileStorageContainer instance"
-author: "tochan-msft"
+author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
 doc_type: apiPageType
