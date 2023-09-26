@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Delete a printer share (unshare the associated [printer](../resources/printer.md)). This action can't be undone. If the [printer](../resources/printer.md) is shared again in the future, any Windows users who had previously installed the [printer](../resources/printer.md) needs to discover and reinstall it.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

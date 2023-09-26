@@ -1,6 +1,6 @@
 ---
 title: "Get accessPackageSubject"
-description: "Get the properties of an accessPackageSubject object."
+description: "Gets the properties of an accessPackageSubject object."
 author: "aakanshanagwani"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get an existing [accessPackageSubject](../resources/accesspackagesubject.md) object properties.
+Get the properties of an existing [accessPackageSubject](../resources/accesspackagesubject.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -42,7 +44,7 @@ GET /identityGovernance/entitlementManagement/subjects(objectId='{objectIdOfUser
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -63,7 +65,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/su
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

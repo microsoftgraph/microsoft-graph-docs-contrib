@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 Complete the message migration process by removing `migration mode` from a [team](../resources/team.md). `Migration mode` is a special state where certain operations are barred, like message POST and membership operations during the data migration process.
 
-After a **completeMigration** request is made, you cannot import additional messages into the team. You can add members to the team after the request returns a successful response.
+After a **completeMigration** request is made, you can't import additional messages into the team. You can add members to the team after the request returns a successful response.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -39,17 +41,17 @@ POST /teams/{team-id}/completeMigration
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
 ### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 <!-- markdownlint-disable MD025 -->
 <!-- markdownlint-disable MD022 -->
 
@@ -103,7 +105,7 @@ POST https://graph.microsoft.com/v1.0/teams/57fb72d0-d811-46f4-8947-305e6072eaa5
 <!-- markdownlint-disable MD024 -->
 ### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
