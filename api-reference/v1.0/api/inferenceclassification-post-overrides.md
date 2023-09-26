@@ -2,7 +2,7 @@
 title: "Create inferenceClassificationOverride"
 description: "Create an override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified "
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: mail
 doc_type: apiPageType
 ---
@@ -19,6 +19,8 @@ as specified in the override.
 - If an override already exists with the same SMTP address, then the **classifyAs** and **name** fields of that override are updated with the provided values.
 - The maximum number of overrides supported for a mailbox is 1000, based on unique sender SMTP addresses.
 - The POST operation supports creating only one override at a time.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

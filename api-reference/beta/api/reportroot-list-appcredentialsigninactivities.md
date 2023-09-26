@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get a list of [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) objects that contains recent activity of application credentials.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -71,6 +73,10 @@ GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-appcredentialsigninactivities-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-appcredentialsigninactivities-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-appcredentialsigninactivities-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -85,6 +91,10 @@ GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-appcredentialsigninactivities-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-appcredentialsigninactivities-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -165,6 +175,10 @@ GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities?$filt
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-appcredentialsigninactivities-filter-keyid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-appcredentialsigninactivities-filter-keyid-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-appcredentialsigninactivities-filter-keyid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -179,6 +193,10 @@ GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities?$filt
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-appcredentialsigninactivities-filter-keyid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-appcredentialsigninactivities-filter-keyid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -240,6 +258,10 @@ GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities?$filt
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-appcredentialsigninactivities-filter-appid-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-appcredentialsigninactivities-filter-appid-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-appcredentialsigninactivities-filter-appid-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -254,6 +276,10 @@ GET https://graph.microsoft.com/beta/reports/appCredentialSignInActivities?$filt
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-appcredentialsigninactivities-filter-appid-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-appcredentialsigninactivities-filter-appid-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

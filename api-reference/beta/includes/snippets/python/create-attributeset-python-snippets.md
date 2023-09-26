@@ -4,20 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = AttributeSet()
-request_body.id = 'Engineering'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.description = 'Attributes for engineering team'
+request_body = AttributeSet(
+	id = "Engineering",
+	description = "Attributes for engineering team",
+	max_attributes_per_set = 25,
+)
 
-request_body.MaxAttributesPerSet = 25
-
-
-
-
-result = await client.directory.attribute_sets.post(request_body = request_body)
+result = await graph_client.directory.attribute_sets.post(body = request_body)
 
 
 ```

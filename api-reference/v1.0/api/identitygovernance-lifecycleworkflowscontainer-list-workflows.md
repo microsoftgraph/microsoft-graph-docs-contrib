@@ -13,6 +13,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a list of workflow resources that are associated with lifecycle workflows.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -37,7 +39,7 @@ GET /identityGovernance/lifecycleWorkflows/workflows
 
 ## Optional query parameters
 
-This method supports the `$search`, `$orderBy`, and `$filter` OData query parameters to help customize the response. `$expand` is supported by the **createdBy** and **lastModifiedBy** relationships only. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$search`, `$orderby`, and `$filter` OData query parameters to help customize the response. `$expand` is supported by the **createdBy** and **lastModifiedBy** relationships only. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -93,6 +95,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-list-workflow-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-workflow-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -226,6 +232,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/lifecycleWorkflows/workf
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-list-workflow-select-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-list-workflow-select-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

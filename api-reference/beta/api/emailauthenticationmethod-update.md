@@ -1,7 +1,7 @@
 ---
 title: "Update emailAuthenticationMethod"
 description: "Update the properties of an emailAuthenticationMethod object."
-author: "mmcla"
+author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -14,18 +14,10 @@ Namespace: microsoft.graph
 
 Update a user's email address associated with an [email Authentication Method](../resources/emailauthenticationmethod.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
-### Permissions acting on self
-
-|Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
-
-### Permissions acting on other users
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:---------------------------------------|:-------------------------|
@@ -35,15 +27,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
-Users without one of the supported Azure AD roles cannot update their own email authentication method.
+Users cannot update their own email authentication method.
 
 ## HTTP request
-
-Update the email method for your own account. For a signed-in user to update their own authentication method, they must have satisfied a multi-factor authentication requirement during sign in.
-<!-- {  "blockType": "ignored" } -->
-``` http
-PATCH /me/authentication/emailMethods/{id}
-```
 
 Update the email authentication method for another user's account.
 <!-- {  "blockType": "ignored" } -->
@@ -94,6 +80,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-emailauthenticationmethod-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-emailauthenticationmethod-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

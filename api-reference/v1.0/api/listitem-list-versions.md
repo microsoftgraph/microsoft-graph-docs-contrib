@@ -3,7 +3,7 @@ title: "Listing versions of a ListItem"
 description: "SharePoint can be configured to retain the history for list items."
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 doc_type: apiPageType
 ---
 
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 SharePoint can be configured to retain the history for list items.
 
 Previous versions may be retained for a finite period of time depending on admin settings which may be unique per user or location.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

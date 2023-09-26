@@ -29,7 +29,7 @@ None.
 |lists|[baseTaskList](../resources/basetasklist.md) collection|The task lists in the users mailbox.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

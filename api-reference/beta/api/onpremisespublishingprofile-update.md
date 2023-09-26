@@ -2,7 +2,7 @@
 title: "Update onPremisesPublishingProfile"
 description: "Update the properties of an onPremisesPublishingProfile object."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinrshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /onPremisesPublishingProfiles/{publishingType}/hybridAgentUpdaterConfiguration
+PATCH /onPremisesPublishingProfiles/{profile-id}/hybridAgentUpdaterConfiguration
 ```
 
 ## Request headers
@@ -100,7 +100,7 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Update deferUpdate in the hybridAgentUpdaterConfiguration 
+### Example 2: Update deferUpdate in the hybridAgentUpdaterConfiguration
 
 The following example updates **deferUpdate** in the **hybridAgentUpdaterConfiguration**.
 

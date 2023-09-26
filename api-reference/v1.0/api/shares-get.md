@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Access shared items
 ms.localizationpriority: medium
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Access a shared [DriveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.
 
 To use a sharing URL with this API, your app needs to [transform the URL into a sharing token](#encoding-sharing-urls).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

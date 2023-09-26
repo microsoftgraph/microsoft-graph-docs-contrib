@@ -4,7 +4,7 @@ description: "Use the **extensionSchemaProperty** resource to define a property'
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "extensions"
-author: "keylimesoda"
+author: "dkershaw10"
 ---
 
 # extensionSchemaProperty resource type
@@ -17,7 +17,7 @@ Use the **extensionSchemaProperty** resource to define a property's name and its
 
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 |name|String| The name of the strongly typed property defined as part of a schema extension.|
 |type|String| The type of the property that is defined as part of a schema extension.  Allowed values are `Binary`, `Boolean`, `DateTime`, `Integer` or `String`. See the table below for more details.|
@@ -34,7 +34,7 @@ The following data types are supported when defining a property in a schema exte
 | String | 256 characters maximum. |
 
 ## JSON representation
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

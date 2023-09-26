@@ -2,7 +2,7 @@
 title: "List extensionProperties (directory extensions)"
 description: "Retrieve a list of directory extension definitions."
 ms.localizationpriority: medium
-author: "sureshja"
+author: "dkershaw10"
 ms.prod: "extensions"
 doc_type: "apiPageType"
 ---
@@ -12,6 +12,8 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 Retrieve the list of directory extension definitions, represented by [extensionProperty](../resources/extensionproperty.md) objects on an [application](../resources/application.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

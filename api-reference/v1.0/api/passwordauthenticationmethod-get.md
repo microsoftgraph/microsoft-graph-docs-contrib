@@ -2,7 +2,7 @@
 title: "Get passwordAuthenticationMethod"
 description: "Retrieve a user's passwordAuthenticationMethod object."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "zhvolosh"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 
 Retrieve a password that's registered to a user, represented by a [passwordAuthenticationMethod](../resources/passwordauthenticationmethod.md) object. For security, the password itself will never be returned in the object and the **password** property is always `null`.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

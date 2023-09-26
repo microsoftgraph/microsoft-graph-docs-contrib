@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = PersonName()
-request_body.nickname = 'Kesha'
+graph_client = GraphServiceClient(request_adapter)
 
+request_body = PersonName(
+	nickname = "Kesha",
+)
 
-
-
-result = await client.me.profile.names.by_name_id('personName-id').patch(request_body = request_body)
+result = await graph_client.me.profile.names.by_name_id('personName-id').patch(body = request_body)
 
 
 ```

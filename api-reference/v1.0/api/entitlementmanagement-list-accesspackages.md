@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [accessPackage](../resources/accesspackage.md) objects.  The resulting list includes all the access packages that the caller has access to read, across all catalogs.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,7 +37,7 @@ GET /identityGovernance/entitlementManagement/accessPackages
 
 ## Optional query parameters
 
-This method supports the `$select` and `$filter` OData query parameters to help customize the response. For example, to search for access packages with a particular name, include a filter such as `$filter=contains(tolower(displayName),'team')` in the query. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For example, to search for access packages with a particular name, include a filter such as `$filter=contains(tolower(displayName),'team')` in the query. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

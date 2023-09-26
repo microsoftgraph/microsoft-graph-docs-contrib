@@ -29,7 +29,7 @@ requestBody.SetComment(&comment)
 path := "/"
 requestBody.SetPath(&path) 
 
-result, err := graphClient.Admin().Edge().InternetExplorerMode().SiteLists().BySiteListId("browserSiteList-id").SharedCookies().Post(context.Background(), requestBody, nil)
+sharedCookies, err := graphClient.Admin().Edge().InternetExplorerMode().SiteLists().ByBrowserSiteListId("browserSiteList-id").SharedCookies().Post(context.Background(), requestBody, nil)
 
 
 ```

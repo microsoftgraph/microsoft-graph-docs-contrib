@@ -1,14 +1,14 @@
-id: 
+id:
 name: GitOps.PullRequestIssueManagement
 description: GitOps.PullRequestIssueManagement primitive
-owner: 
+owner:
 resource: repository
 disabled: false
-where: 
+where:
 configuration:
   resourceManagementConfiguration:
     scheduledSearches:
-    - description: 
+    - description:
       frequencies:
       - hourly:
           hour: 1
@@ -29,8 +29,6 @@ configuration:
           label: changes requested
       - isNotLabeledWith:
           label: awaiting internal response
-      - hasLabel:
-          label: internal
       - isNotLabeledWith:
           label: content review in progress
       - isNotLabeledWith:
@@ -40,7 +38,7 @@ configuration:
           label: do not merge
       - addReply:
           reply: >-
-            Thanks for your pull request, ${issueAuthor}! I've added the **do not merge** label as a default status. 
+            Thanks for your pull request, ${issueAuthor}! I've added the **do not merge** label as a default status.
 
 
             Please add the **ready for content review** label to start a review. Your PR won't be reviewed until you add this label.
@@ -53,15 +51,13 @@ configuration:
 
 
             For details, see the [Content review process summary](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow).
-    - description: 
+    - description:
       frequencies:
       - daily:
           time: 11:0
       filters:
       - isOpen
       - isPullRequest
-      - isNotLabeledWith:
-          label: external
       - hasLabel:
           label: do not merge
       - noActivitySince:
@@ -77,7 +73,7 @@ configuration:
 
 
             If you still intend to merge this pull request eventually, please add a comment to keep this open, and update the status labels accordingly.
-    - description: 
+    - description:
       frequencies:
       - daily:
           time: 11:0
@@ -91,7 +87,7 @@ configuration:
           days: 7
       actions:
       - closeIssue
-    - description: 
+    - description:
       frequencies:
       - hourly:
           hour: 6
@@ -108,7 +104,7 @@ configuration:
       - addReply:
           reply: This issue has been closed due to inactivity. If the issue is still present, please provide the requested information to reopen the issue.
       - closeIssue
-    - description: 
+    - description:
       frequencies:
       - hourly:
           hour: 3
@@ -121,7 +117,7 @@ configuration:
           days: 1
       actions:
       - closeIssue
-    - description: 
+    - description:
       frequencies:
       - hourly:
           hour: 3
@@ -132,7 +128,7 @@ configuration:
       actions:
       - addLabel:
           label: MSTeams-Developer-Support
-    - description: 
+    - description:
       frequencies:
       - hourly:
           hour: 6
@@ -148,17 +144,17 @@ configuration:
       actions:
       - addReply:
           reply: >
-            Hello, @${issueAuthor}. 
+            Hello, @${issueAuthor}.
 
 
-            Your PR has been in "Changes requested" state for more than 2 weeks. 
+            Your PR has been in "Changes requested" state for more than 2 weeks.
 
 
-            Please address the feedback left by your reviewer. Feel free to ping your reviewer on the side if you have any questions. 
+            Please address the feedback left by your reviewer. Feel free to ping your reviewer on the side if you have any questions.
 
 
             Thank you!
-    - description: 
+    - description:
       frequencies:
       - hourly:
           hour: 6
@@ -174,7 +170,7 @@ configuration:
       actions:
       - addReply:
           reply: >-
-            Hello, @${issueAuthor}. 
+            Hello, @${issueAuthor}.
 
 
             Your PR was approved by your reviewer more than 2 weeks ago.
@@ -196,48 +192,29 @@ configuration:
             label: 'request: feature'
       then:
       - addReply:
-          reply: "This issue will be closed because we only accept document content feedback in this repository's issue list. This issues list is not intended for service issues, questions, or service feedback.\n\nIf you have service issues and want to raise a support request, and if one of the following applies:\n- You are an administrator of an active Azure subscription - raise a new technical support ticket at the **[Azure Admin Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq)**.\n- You are an administrator of an Office 365 or Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.\n\nIf you would like to ask a question about Microsoft Graph, please visit [Microsoft Q&A](https://aka.ms/askGraph). \n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).\n\nIf you are looking to provide feedback or raise issues on Microsoft Graph SDKs, please visit the [respective Github repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sdk&type=&language=). "
+          reply: "This issue will be closed because we only accept document content feedback in this repository's issue list. This issues list is not intended for service issues, questions, or service feedback.\n\nIf you have service issues and want to raise a support request, and if one of the following applies:\n- You are an administrator of an active Azure subscription - raise a new technical support ticket at the **[Azure Admin Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq)**.\n- You are an administrator of an Office 365 or Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.\n- You are an administrator of a Microsoft Entra service - raise a new technical support ticket through the **[Microsoft Entra admin center](https://entra.microsoft.com/#view/Microsoft_Azure_Support/NewSupportRequestV3Blade/callerName/ActiveDirectory/issueType/technical)**.\n\nIf you would like to ask a question about Microsoft Graph, please visit [Microsoft Q&A](https://aka.ms/askGraph). \n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).\n\nIf you are looking to provide feedback or raise issues on Microsoft Graph SDKs, please visit the [respective Github repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sdk&type=&language=). "
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - not:
           bodyContains:
             pattern: 'Content Source:'
             isRegex: False
+      - not:
+          activitySenderHasAssociation:
+            association: MEMBER
+      - not:
+          isActivitySender:
+            user: graph-github-task-automation[bot]
       - isAction:
           action: Opened
+      - isOpen
       then:
       - addReply:
-          reply: "This issue will be closed because we do not support feedback captured directly from the GitHub new issue page. Also, this issues list is not intended for service issues, questions, or service feedback.\n\nTo provide feedback on [Microsoft Graph documentation](https://learn.microsoft.com/graph/overview), please scroll to the **Feedback** section at the bottom of the related documentation page. You can click **This page** and create new feedback there. This gives the team the necessary context of your feedback.\n\nIf you have service issues and want to raise a support request, and if one of the following applies:\n- You are an administrator of an active Azure subscription - raise a new technical support ticket at the **[Azure Admin Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq)**.\n- You are an administrator of an Office 365 or Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.\n\nIf you would like to ask a question about Microsoft Graph, please visit [Microsoft Q&A](https://aka.ms/askGraph). \n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).\n\nIf you are looking to provide feedback or raise issues on Microsoft Graph SDKs, please visit the [respective Github repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sdk&type=&language=). "
+          reply: "This issue will be closed because we do not support feedback captured directly from the GitHub new issue page. Also, this issues list is not intended for service issues, questions, or service feedback.\n\nTo provide feedback on [Microsoft Graph documentation](https://learn.microsoft.com/graph/overview), please scroll to the **Feedback** section at the bottom of the related documentation page. You can click **This page** and create new feedback there. This gives the team the necessary context of your feedback.\n\nIf you have service issues and want to raise a support request, and if one of the following applies:\n- You are an administrator of an active Azure subscription - raise a new technical support ticket at the **[Azure Admin Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq)**.\n- You are an administrator of an Office 365 or Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.\n- You are an administrator of a Microsft Entra service - raise a new technical support ticket at the **[Microsoft Entra admin center](https://entra.microsoft.com/#view/Microsoft_Azure_Support/NewSupportRequestV3Blade/callerName/ActiveDirectory/issueType/technical)**.\n\nIf you would like to ask a question about Microsoft Graph, please visit [Microsoft Q&A](https://aka.ms/askGraph). \n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).\n\nIf you are looking to provide feedback or raise issues on Microsoft Graph SDKs, please visit the [respective Github repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sdk&type=&language=). "
       - closeIssue
-      description: 
-    - if:
-      - payloadType: Pull_Request
-      - activitySenderHasAssociation:
-          association: Member
-      - isAction:
-          action: Opened
-      then:
-      - addLabel:
-          label: internal
-      description: 
-    - if:
-      - payloadType: Pull_Request
-      - not:
-          activitySenderHasAssociation:
-            association: Member
-      - not:
-          activitySenderHasAssociation:
-            association: Owner
-      - isAction:
-          action: Opened
-      then:
-      - addLabel:
-          label: external
-      - addReply:
-          reply: Thanks for your contribution ${issueAuthor}! Please see [CONTRIBUTING.md](https://github.com/microsoftgraph/microsoft-graph-docs/blob/main/CONTRIBUTING.md) for guidelines.
-      description: 
+      description:
     - if:
       - payloadType: Pull_Request
       - not:
@@ -248,7 +225,7 @@ configuration:
       then:
       - removeLabel:
           label: no recent activity
-      description: 
+      description:
     - if:
       - payloadType: Issue_Comment
       - isOpen
@@ -259,7 +236,7 @@ configuration:
       then:
       - removeLabel:
           label: no recent activity
-      description: 
+      description:
     - if:
       - payloadType: Issue_Comment
       - hasLabel:
@@ -267,7 +244,7 @@ configuration:
       then:
       - removeLabel:
           label: no recent activity
-      description: 
+      description:
     - if:
       - payloadType: Pull_Request
       - isOpen
@@ -290,15 +267,12 @@ configuration:
             Thanks!
 
             Microsoft Graph Docs Team
-      description: 
+      description:
     - if:
       - payloadType: Pull_Request
       - labelAdded:
           label: ready for content review
       - isOpen
-      - not:
-          hasLabel:
-            label: external
       then:
       - addReply:
           reply: >-
@@ -306,15 +280,12 @@ configuration:
 
 
             Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow?anchor=content-review-process-summary).
-      description: 
+      description:
     - if:
       - payloadType: Pull_Request
       - labelAdded:
           label: content review complete
       - isOpen
-      - not:
-          hasLabel:
-            label: external
       then:
       - removeLabel:
           label: ready for content review
@@ -324,7 +295,7 @@ configuration:
           label: changes requested
       - addReply:
           reply: >-
-            Thank you for your work in this PR, @${issueAuthor}. 
+            Thank you for your work in this PR, @${issueAuthor}.
 
 
             When the updates in this PR are ready for external customers to use, please replace the **do not merge** label with **ready to merge**.
@@ -333,22 +304,19 @@ configuration:
             Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow?anchor=content-review-process-summary).
       - removeLabel:
           label: content review in progress
-      description: 
+      description:
     - if:
       - payloadType: Pull_Request
       - labelAdded:
           label: changes requested
       - isOpen
-      - not:
-          hasLabel:
-            label: external
       then:
       - addReply:
           reply: >-
-            @${issueAuthor}, your content reviewer has requested changes to your pull request. Please review feedback and address accordingly as soon as possible to keep your pull request moving forward. 
+            @${issueAuthor}, your content reviewer has requested changes to your pull request. Please review feedback and address accordingly as soon as possible to keep your pull request moving forward.
 
 
-            Once you have addressed the feedback, please add the `review feedback addressed` label and select the **Re-request review** icon. 
+            Once you have addressed the feedback, please add the `review feedback addressed` label and select the **Re-request review** icon.
 
 
             If you cannot add labels, please add a comment with `#feedback-addressed` to the pull request.
@@ -357,14 +325,14 @@ configuration:
             Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow?anchor=content-review-process-summary).
       - assignTo:
           author: True
-      description: 
+      description:
     - if:
       - payloadType: Pull_Request
       - labelAdded:
           label: review feedback addressed
       - isOpen
       then: []
-      description: 
+      description:
     - if:
       - payloadType: Pull_Request
       - or:
@@ -373,7 +341,7 @@ configuration:
         - isAction:
             action: Null
       then: []
-      description: 
+      description:
     - if:
       - payloadType: Issue_Comment
       - isActivitySender:
@@ -384,7 +352,7 @@ configuration:
       then:
       - addLabel:
           label: review feedback addressed
-      description: 
+      description:
     - if:
       - payloadType: Pull_Request
       - labelAdded:
@@ -393,19 +361,21 @@ configuration:
       then:
       - removeLabel:
           label: ready for content review
-      description: 
+      description:
     - if:
       - payloadType: Pull_Request
       - or:
         - labelAdded:
             label: 'area: Azure AD'
         - labelAdded:
+            label: 'area: Entra'
+        - labelAdded:
             label: 'area: identity'
       - isOpen
       then:
       - requestReview:
           reviewer: 'FaithOmbongi '
-      description: 
+      description:
     - if:
       - payloadType: Pull_Request
       - isOpen
@@ -416,7 +386,7 @@ configuration:
       then:
       - removeLabel:
           label: review feedback addressed
-      description: 
+      description:
     - if:
       - payloadType: Pull_Request
       - isOpen
@@ -427,7 +397,7 @@ configuration:
       then:
       - removeLabel:
           label: changes requested
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -449,7 +419,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -471,7 +441,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -493,7 +463,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -515,7 +485,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -537,7 +507,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -559,7 +529,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -581,7 +551,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -603,7 +573,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -625,7 +595,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -647,7 +617,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -669,7 +639,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -691,7 +661,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -713,7 +683,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -735,7 +705,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -757,7 +727,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -779,7 +749,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -801,7 +771,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -823,7 +793,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -845,7 +815,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -867,7 +837,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -889,7 +859,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -911,7 +881,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -933,7 +903,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -955,7 +925,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -977,7 +947,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -999,7 +969,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -1021,7 +991,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -1043,7 +1013,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -1065,7 +1035,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -1087,7 +1057,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -1109,7 +1079,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -1131,7 +1101,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -1153,7 +1123,7 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description: 
+      description:
     - if:
       - payloadType: Issue_Comment
       - isActivitySender:
@@ -1165,7 +1135,7 @@ configuration:
       then:
       - addLabel:
           label: ready for content review
-      description: 
+      description:
     - if:
       - payloadType: Issues
       - or:
@@ -1186,6 +1156,6 @@ configuration:
 
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
-      description: 
-onFailure: 
-onSuccess: 
+      description:
+onFailure:
+onSuccess:

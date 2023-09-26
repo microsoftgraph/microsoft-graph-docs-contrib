@@ -4,25 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Message()
-request_body.subject = 'subject-value'
+graph_client = GraphServiceClient(request_adapter)
 
-body = ItemBody()
-body.contenttype(BodyType.Text('bodytype.text'))
+request_body = Message(
+	subject = "subject-value",
+	body = ItemBody(
+		content_type = BodyType.Text,
+		content = "content-value",
+	),
+	inference_classification = InferenceClassificationType.Other,
+)
 
-body.content = 'content-value'
-
-
-request_body.body = body
-request_body.inferenceclassification(InferenceClassificationType.Other('inferenceclassificationtype.other'))
-
-
-
-
-result = await client.me.messages.by_message_id('message-id').patch(request_body = request_body)
+result = await graph_client.me.messages.by_message_id('message-id').patch(body = request_body)
 
 
 ```

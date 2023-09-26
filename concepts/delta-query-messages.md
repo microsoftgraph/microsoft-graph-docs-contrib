@@ -1,7 +1,7 @@
 ---
 title: "Get incremental changes to messages in a folder"
 description: "Use delta query to track changes of messages in a folder hierarchy by tracking each folder individually. Example shows how to synchronize messages in a folder."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
@@ -42,7 +42,7 @@ when you begin the next round.
 
 The rest of this article includes 2 examples:
 - See [example 1](#example-1-synchronize-messages-in-a-folder) to learn how to use the `@odata.nextLink` and `@odata.deltaLink` URLs.
-- See [example 2](#example-2-synchronize-messages-in-a-folder-based-on-change-type) to learn how to incrementally get only messages created since the initial round. 
+- See [example 2](#example-2-synchronize-messages-in-a-folder-based-on-change-type) to learn how to incrementally get only messages created since the initial round.
 
 ### Use query parameters in a delta query for messages
 
@@ -353,7 +353,7 @@ The first round involves a series of 2 requests to synchronize all 4 messages in
 - [Sample initial request with specified change type](#sample-initial-request-with-specified-change-type) and [response](#sample-initial-response-with-specified-change-type)
 - [Sample second request with specified change type](#sample-second-request-with-specified-change-type) and [response](#sample-second-response-with-specified-change-type)
 
-After the first round, two more messages are created, one message is deleted, and another is marked as read. 
+After the first round, two more messages are created, one message is deleted, and another is marked as read.
 
 The second round of synchronization returns only the changes in the folder of the `created` change type (the two new messages created), without returning the other messages that have remained the same, deleted, or updated since the last sync.
 

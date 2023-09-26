@@ -1,5 +1,5 @@
 ---
-title: "List files (localized agreement files)"
+title: "List files (terms of use agreement files)"
 description: "Retrieve all localized files related to an agreement."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -7,12 +7,14 @@ ms.prod: "governance"
 author: "AlexFilipin"
 ---
 
-# List files (localized agreement files)
+# List files (terms of use agreement files)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve all localized files related to an agreement.
+Retrieve all files related to an agreement. This includes the default file and all localized files.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -65,6 +67,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements/94
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-agreementfilelocalization-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-agreementfilelocalization-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

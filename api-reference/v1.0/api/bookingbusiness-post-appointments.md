@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Create a new [bookingAppointment](../resources/bookingappointment.md) for the specified [bookingBusiness](../resources/bookingbusiness.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -136,6 +138,9 @@ Content-type: application/json
     },
     "serviceName": "Catered bento",
     "serviceNotes": "Customer requires punctual service.",
+    "staffMemberIds": [
+      "8ee1c803-a1fa-406d-8259-7ab53233f148"
+    ],
     "startDateTime": {
         "@odata.type": "#microsoft.graph.dateTimeTimeZone",
         "dateTime": "2018-05-01T12:00:00.0000000+00:00",
@@ -256,7 +261,9 @@ Content-type: application/json
     "serviceNotes": "Customer requires punctual service.",
     "optOutOfCustomerEmail": false,
     "anonymousJoinWebUrl": null,
-    "staffMemberIds": [],
+    "staffMemberIds": [
+      "8ee1c803-a1fa-406d-8259-7ab53233f148"
+    ],
     "startDateTime": {
         "dateTime": "2018-05-01T12:00:00.0000000Z",
         "timeZone": "UTC"

@@ -2,7 +2,7 @@
 title: "List customAppScopes"
 description: "Get a list of customAppScope objects for an RBAC provider."
 ms.localizationpriority: medium
-author: "bili1"
+author: "cubika"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 Get a list of [customAppScope](../resources/customappscope.md) objects for an RBAC provider.
 
 Currently only the Exchange Online RBAC provider is supported.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -77,6 +79,10 @@ GET https://graph.microsoft.com/beta/roleManagement/exchange/customAppScopes
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-customappscope-exchangeonlineprovider-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-customappscope-exchangeonlineprovider-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

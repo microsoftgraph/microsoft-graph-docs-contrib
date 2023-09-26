@@ -1,7 +1,7 @@
 ---
 title: "message: forward"
 description: "Forward a message using either JSON or MIME format."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -25,6 +25,8 @@ This method saves the message in the **Sent Items** folder.
 
 Alternatively, [create a draft to forward a message](../api/message-createforward.md), and [send](../api/message-send.md) it later.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -43,7 +45,7 @@ POST /me/mailFolders/{id}/messages/{id}/forward
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 ```
 ## Request headers
-| Name       | Type | Description| 
+| Name       | Type | Description|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {token}. Required |
 | Content-Type | string  | Nature of the data in the body of an entity.  Required. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content. |

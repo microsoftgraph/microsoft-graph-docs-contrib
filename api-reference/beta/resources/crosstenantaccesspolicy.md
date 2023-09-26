@@ -38,6 +38,7 @@ Inherits from [tenantRelationshipAccessPolicyBase](../resources/tenantrelationsh
 |:---|:---|:---|
 |default|[crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md)|Defines the default configuration for how your organization interacts with external Azure Active Directory organizations.|
 |partners|[crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) collection|Defines partner-specific configurations for external Azure Active Directory organizations.|
+|templates|[policyTemplate](../resources/policytemplate.md)|Represents the base policy in the directory for multi-tenant organization settings.|
 
 ## JSON representation
 

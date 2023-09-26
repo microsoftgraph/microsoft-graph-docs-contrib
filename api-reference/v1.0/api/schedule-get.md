@@ -20,6 +20,8 @@ During schedule provisioning, clients can use the GET method to get the schedule
 
 Clients can also inspect the configuration of the schedule.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -150,3 +152,6 @@ Content-type: application/json
 }
 -->
 
+## See also
+
+[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

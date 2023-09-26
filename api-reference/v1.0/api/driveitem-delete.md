@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Delete a file or folder
 ms.localizationpriority: medium
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Delete a [DriveItem](../resources/driveitem.md) by using its ID or path.
 Note that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

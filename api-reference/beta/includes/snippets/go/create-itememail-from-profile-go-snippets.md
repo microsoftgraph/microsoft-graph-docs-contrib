@@ -19,7 +19,7 @@ requestBody := graphmodels.NewItemEmail()
 address := "Innocenty.Popov@adventureworks.com"
 requestBody.SetAddress(&address) 
 
-result, err := graphClient.Me().Profile().Emails().Post(context.Background(), requestBody, nil)
+emails, err := graphClient.Me().Profile().Emails().Post(context.Background(), requestBody, nil)
 
 
 ```

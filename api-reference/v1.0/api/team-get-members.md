@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a [conversationMember](../resources/conversationmember.md) from a [team](../resources/team.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -141,3 +143,4 @@ Content-type: application/json
 ## See also
 
 - [Get member of channel](channel-get-members.md)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

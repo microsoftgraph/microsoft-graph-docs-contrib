@@ -41,7 +41,7 @@ gradingCategories := []graphmodels.EducationGradingCategoryable {
 }
 requestBody.SetGradingCategories(gradingCategories)
 
-result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").AssignmentSettings().Patch(context.Background(), requestBody, nil)
+assignmentSettings, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").AssignmentSettings().Patch(context.Background(), requestBody, nil)
 
 
 ```

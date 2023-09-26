@@ -15,6 +15,8 @@ Namespace: microsoft.graph.deviceManagement
 
 Get a list of all notifications that one or more users can access, from the Microsoft Endpoint Manager admin center.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -68,6 +70,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/ge
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/alertrecordthisgetportalnotifications-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/alertrecordthisgetportalnotifications-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

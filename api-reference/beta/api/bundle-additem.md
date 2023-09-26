@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 title: "Add item to a bundle"
 description: "Add item to a bundle of driveItems."
 ms.localizationpriority: medium
@@ -17,6 +17,8 @@ Add an additional [driveItem][] from a drive to a [bundle][].
 
 [bundle]: ../resources/bundle.md
 [driveItem]: ../resources/driveItem.md
+
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 

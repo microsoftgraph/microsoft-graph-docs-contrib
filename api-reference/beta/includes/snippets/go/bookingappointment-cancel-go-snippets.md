@@ -19,7 +19,7 @@ requestBody := graphbookingbusinesses.NewCancelPostRequestBody()
 cancellationMessage := "Your appointment has been successfully cancelled. Please call us again."
 requestBody.SetCancellationMessage(&cancellationMessage) 
 
-graphClient.BookingBusinesses().ByBookingBusinesseId("bookingBusiness-id").Appointments().ByAppointmentId("bookingAppointment-id").Cancel().Post(context.Background(), requestBody, nil)
+graphClient.BookingBusinesses().ByBookingBusinessId("bookingBusiness-id").Appointments().ByBookingAppointmentId("bookingAppointment-id").Cancel().Post(context.Background(), requestBody, nil)
 
 
 ```

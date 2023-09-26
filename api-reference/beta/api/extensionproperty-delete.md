@@ -2,7 +2,7 @@
 title: "Delete extensionProperty (directory extension)"
 description: "Delete a directory extension definition."
 ms.localizationpriority: medium
-author: "sureshja"
+author: "dkershaw10"
 ms.prod: "extensions"
 doc_type: "apiPageType"
 ---
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a directory extension definition represented by an [extensionProperty](../resources/extensionproperty.md) object. You can delete only directory extensions that aren't synced from on-premises active directory (AD).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -66,6 +68,10 @@ DELETE https://graph.microsoft.com/beta/applications/fd918e4b-c821-4efb-b50a-5ed
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-extensionproperty-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-extensionproperty-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

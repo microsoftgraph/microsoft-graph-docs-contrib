@@ -3,6 +3,72 @@
     {
       "ChangeList": [
         {
+          "Id": "5472d980-5acf-4663-b1af-c7d22e28d1b3",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "task",
+          "ChangeType": "Addition",
+          "Description": "Added the **task** relationship to the [workbookComment](https://learn.microsoft.com/en-us/graph/api/resources/workbookComment?view=graph-rest-beta) resource.",
+          "Target": "workbookComment"
+        },
+        {
+          "Id": "5472d980-5acf-4663-b1af-c7d22e28d1b3",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "task",
+          "ChangeType": "Addition",
+          "Description": "Added the **task** relationship to the [workbookCommentReply](https://learn.microsoft.com/en-us/graph/api/resources/workbookCommentReply?view=graph-rest-beta) resource.",
+          "Target": "workbookCommentReply"
+        },
+        {
+          "Id": "5472d980-5acf-4663-b1af-c7d22e28d1b3",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "tasks",
+          "ChangeType": "Addition",
+          "Description": "Added the **tasks** relationship to the [workbookWorksheet](https://learn.microsoft.com/en-us/graph/api/resources/workbookWorksheet?view=graph-rest-beta) resource.",
+          "Target": "workbookWorksheet"
+        },
+        {
+          "Id": "5472d980-5acf-4663-b1af-c7d22e28d1b3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workbookDocumentTaskSchedule",
+          "ChangeType": "Addition",
+          "Description": "Added the [workbookDocumentTaskSchedule](https://learn.microsoft.com/en-us/graph/api/resources/workbookDocumentTaskSchedule?view=graph-rest-beta) resource type.",
+          "Target": "workbookDocumentTaskSchedule"
+        },
+        {
+          "Id": "5472d980-5acf-4663-b1af-c7d22e28d1b3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workbookEmailIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added the [workbookEmailIdentity](https://learn.microsoft.com/en-us/graph/api/resources/workbookEmailIdentity?view=graph-rest-beta) resource type.",
+          "Target": "workbookEmailIdentity"
+        },
+        {
+          "Id": "5472d980-5acf-4663-b1af-c7d22e28d1b3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workbookDocumentTask",
+          "ChangeType": "Addition",
+          "Description": "Added the [workbookDocumentTask](https://learn.microsoft.com/en-us/graph/api/resources/workbookDocumentTask?view=graph-rest-beta) resource and supported methods.",
+          "Target": "workbookDocumentTask"
+        },
+        {
+          "Id": "5472d980-5acf-4663-b1af-c7d22e28d1b3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workbookDocumentTaskChange",
+          "ChangeType": "Addition",
+          "Description": "Added the [workbookDocumentTaskChange](https://learn.microsoft.com/en-us/graph/api/resources/workbookDocumentTaskChange?view=graph-rest-beta) resource and supported methods.",
+          "Target": "workbookDocumentTaskChange"
+        }
+      ],
+      "Id": "5472d980-5acf-4663-b1af-c7d22e28d1b3",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-09-07T22:02:13.6368034Z",
+      "WorkloadArea": "Workbooks and charts",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "528f2219-8a0a-4952-b469-1d4f554b3dc9",
           "ApiChange": "Method",
           "ChangedApiName": "tableRowOperationResult",

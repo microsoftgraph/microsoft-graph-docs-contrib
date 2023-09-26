@@ -6,28 +6,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PlannerPlanDetails();
 $sharedWith = new PlannerUserIds();
 $additionalData = [
-		'6463a5ce-2119-4198-9f2a-628761df4a62' => true,
-		'd95e6152-f683-4d78-9ff5-67ad180fea4a' => false,
+	'6463a5ce-2119-4198-9f2a-628761df4a62' => true,
+	'd95e6152-f683-4d78-9ff5-67ad180fea4a' => false,
 ];
 $sharedWith->setAdditionalData($additionalData);
-
-
-
 $requestBody->setSharedWith($sharedWith);
 $categoryDescriptions = new PlannerCategoryDescriptions();
 $categoryDescriptions->setCategory1('Indoors');
-
-$CategoryDescriptions->setCategory3(null);
-
-
+$categoryDescriptions->setCategory3(null);
 $requestBody->setCategoryDescriptions($categoryDescriptions);
-
 $requestConfiguration = new DetailsRequestBuilderPatchRequestConfiguration();
 $headers = [
 		'Prefer' => 'return=representation',
@@ -36,7 +29,6 @@ $headers = [
 $requestConfiguration->headers = $headers;
 
 
-$result = $graphServiceClient->planner()->plans()->byPlanId('plannerPlan-id')->details()->patch($requestBody, $requestConfiguration);
-
+$result = $graphServiceClient->planner()->plans()->byPlannerPlanId('plannerPlan-id')->details()->patch($requestBody, $requestConfiguration)->wait();
 
 ```

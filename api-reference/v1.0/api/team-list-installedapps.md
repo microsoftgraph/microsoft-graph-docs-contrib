@@ -13,9 +13,10 @@ Namespace: microsoft.graph
 
 Retrieve a list of [apps installed](../resources/teamsappinstallation.md) in the specified [team](../resources/team.md).
 
-
 > [!NOTE]
 > The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -23,11 +24,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadWriteForTeam, Group.Read.All**, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
+|Delegated (work or school account) | TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadWriteForTeam,  TeamsAppInstallation.ReadWriteAndConsentSelfForTeam, TeamsAppInstallation.ReadWriteAndConsentForTeam, Group.Read.All<sup>1</sup>, Group.ReadWrite.All<sup>1</sup>, Directory.Read.All<sup>1</sup>, Directory.ReadWrite.All<sup>1</sup> |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | TeamsAppInstallation.Read.Group*, TeamsAppInstallation.ReadWriteSelfForTeam.All, TeamsAppInstallation.ReadForTeam.All, TeamsAppInstallation.ReadWriteForTeam.All, Group.Read.All**, Group.ReadWrite.All**, Directory.Read.All**, Directory.ReadWrite.All** |
+|Delegated (work or school account) | TeamsAppInstallation.ReadForTeam, TeamsAppInstallation.ReadWriteSelfForTeam, TeamsAppInstallation.ReadWriteForTeam,  TeamsAppInstallation.ReadWriteAndConsentSelfForTeam, TeamsAppInstallation.ReadWriteAndConsentForTeam, Group.Read.All<sup>1</sup>, Group.ReadWrite.All<sup>1</sup>, Directory.Read.All<sup>1</sup>, Directory.ReadWrite.All<sup>1</sup> |
 
-[!INCLUDE [teamwork-permissions-note](../../../includes/teamwork-permissions-note.md)]
+[!INCLUDE [teams-app-installation-permission-note](../../../includes/teams-app-installation-permission-note.md)]
 
 ## HTTP request
 
@@ -221,7 +222,7 @@ Content-type: application/json
             "displayName":"Power Automate Actions",
             "version":"1.0.2",
             "requiredResourceSpecificApplicationPermissions":[
-               
+
             ],
             "publishingState":"published",
             "shortDescription":"Be more productive with Microsoft Flow",
@@ -239,7 +240,7 @@ Content-type: application/json
             "displayName":"SharePoint Pages",
             "version":"1.2",
             "requiredResourceSpecificApplicationPermissions":[
-               
+
             ],
             "publishingState":"published",
             "shortDescription":"Add a tab for a SharePoint news article or page.",
@@ -257,7 +258,7 @@ Content-type: application/json
             "displayName":"OneNote",
             "version":"1.0.0",
             "requiredResourceSpecificApplicationPermissions":[
-               
+
             ],
             "publishingState":"published",
             "shortDescription":"Capture and share ideas, to-do lists and other notes with your team.",
@@ -319,6 +320,10 @@ GET https://graph.microsoft.com/v1.0/teams/acda442c-78d2-491b-8204-4ef5019c0193/
 
 ---
 
+>[!NOTE]
+>
+> This example applies to sideloaded or organizational apps. The **externalId** value is empty for apps with a **distributionMethod** type of `store`. When apps are published to the global store, the **id** of the app matches the **id** in the app manifest.
+
 #### Response
 
 The following is an example of the response.
@@ -354,7 +359,7 @@ Content-type: application/json
             "displayName":"YPA",
             "version":"6.0.0",
             "requiredResourceSpecificApplicationPermissions":[
-               
+
             ],
             "publishingState":"published",
             "shortDescription":"A conversational smart assistant from MSX that surfaces real-time insights.",
@@ -366,6 +371,104 @@ Content-type: application/json
    ]
 }
 ```
+
+### Example 4: Get the set of resource specific permissions consented for the apps installed in the specified team
+
+The following example gets the list of any [resource-specific permissions that were granted to an app](../resources/teamsAppResourceSpecificPermission.md) as part of installation. A `$select` query parameter is required to show the consented permission set.
+
+#### Request
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_installed_apps_in_team_select_consentedPermissionSet"
+}
+-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/teams/7eeb5a95-f602-4861-ab67-49714fa5a020/installedApps?$select=consentedPermissionSet,id
+```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-installed-apps-in-team-select-consentedpermissionset-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-installed-apps-in-team-select-consentedpermissionset-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/list-installed-apps-in-team-select-consentedpermissionset-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-installed-apps-in-team-select-consentedpermissionset-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-installed-apps-in-team-select-consentedpermissionset-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/list-installed-apps-in-team-select-consentedpermissionset-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-installed-apps-in-team-select-consentedpermissionset-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/list-installed-apps-in-team-select-consentedpermissionset-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+#### Response
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "name": "list_installed_apps_in_team_select_consentedPermissionSet",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamsAppInstallation",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/teams('7eeb5a95-f602-4861-ab67-49714fa5a020')/installedApps(consentedPermissionSet,id)",
+    "@odata.count": 70,
+    "value": [
+        {
+            "id": "N2VlYjVhOTUtZjYwMi00ODYxLWFiNjctNDk3MTRmYTVhMDIwIyMwMDAwMTAxNi1kZTA1LTQ5MmUtOTEwNi00ODI4ZmM4YTg2ODc=",
+            "consentedPermissionSet": null
+        },
+        {
+            "id": "N2VlYjVhOTUtZjYwMi00ODYxLWFiNjctNDk3MTRmYTVhMDIwIyMxYzI1NmE2NS04M2E2LTRiNWMtOWNjZi03OGY4YWZiNmYxZTg=",
+            "consentedPermissionSet": {
+                "resourceSpecificPermissions": [
+                    {
+                        "permissionValue": "ChannelMeeting.ReadBasic.Group",
+                        "permissionType": "delegated"
+                    },
+                    {
+                        "permissionValue": "ChannelMeetingStage.Write.Group",
+                        "permissionType": "delegated"
+                    }
+                ]
+            }
+        },
+    ]
+}
+```
+
+## See also
+
+- [List apps in catalog](appcatalogs-list-teamsapps.md)
+- [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -377,6 +480,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
-## See also
-- [List apps in catalog](appcatalogs-list-teamsapps.md)

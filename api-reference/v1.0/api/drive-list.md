@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: List Drives
 ms.localizationpriority: high
@@ -12,6 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Retrieve the list of [Drive](../resources/drive.md) resources available for a target User, Group, or [Site](../resources/site.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -116,7 +118,7 @@ GET /me/drives
 ---
 
 ### Response
-<!-- { "blockType": "response", 
+<!-- { "blockType": "response",
        "@odata.type": "Collection(microsoft.graph.drive)",
        "truncated": true } -->
 

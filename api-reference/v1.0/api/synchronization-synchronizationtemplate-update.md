@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update (override) the synchronization template associated with a given application.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -51,6 +53,7 @@ The following is an example of a request.
 
 >**Note:** The request object shown here is shortened for readability. Include all the properties in an actual call.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_synchronizationtemplate"
@@ -67,6 +70,15 @@ Content-type: application/json
 }
 ```
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-synchronizationtemplate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-synchronizationtemplate-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ##### Response
 The following is an example of a response.

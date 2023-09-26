@@ -1,7 +1,7 @@
 ---
 title: "Delete fido2AuthenticationMethod"
 description: "Deletes a fido2AuthenticationMethod object."
-author: "mmcla"
+author: "calvinlui"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -11,6 +11,8 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 Deletes a user's [FIDO2 Security Key Authentication Method](../resources/fido2authenticationmethod.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

@@ -1,7 +1,7 @@
 ---
 title: "Update organizationalBranding"
 description: "Update the properties of an organizationalBranding object."
-author: "AlexanderMars"
+author: "quievey"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -11,6 +11,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Update the properties of the default branding object specified by the [organizationalBranding](../resources/organizationalbranding.md) resource.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -15,6 +15,8 @@ Read the properties and relationships of a [riskDetection](../resources/riskdete
 >[!NOTE]
 >You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -23,6 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | IdentityRiskEvent.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | IdentityRiskEvent.Read.All |
+
+[!INCLUDE [rbac-identity-protection-apis-read](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
 
 ## HTTP request
 
