@@ -3,7 +3,7 @@ title: "fileStorageContainer resource type"
 description: "fileStorageContainer resource type"
 author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "*files"
 doc_type: resourcePageType
 ---
 
@@ -20,6 +20,7 @@ The **fileStorageContainer** resource represents a file storage container. A fil
 * **Status** specifies the current state of the container. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours.
 
 ##Permission roles enumeration
+
 |Role|Details|
 |:---|:---|
 |reader|Provides the abililty to read the contents inside a storage container.|
@@ -36,6 +37,7 @@ FileStorageContainer can be either user-owned (in Consumer space only) and tenan
 * PrincipalOwners cannot resign from the containers.
 
 ##Container status enumeration
+
 |Status|Details|
 |:---|:---|
 |inactive|The container is inactive.|
@@ -61,6 +63,7 @@ FileStorageContainer can be either user-owned (in Consumer space only) and tenan
 |[Delete fileStorageContainer custom property](../api/filestoragecontainer-delete-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Delete custom property from a fileStorageContainer.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |containerTypeId|Guid|Container type of the fileStorageContainer. Read-only.|
@@ -74,6 +77,7 @@ FileStorageContainer can be either user-owned (in Consumer space only) and tenan
 |viewpoint|[fileStorageContainerViewpoint](../resources/filestoragecontainerviewpoint.md)|Data specific to the current user. Read-Write.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |drive|[drive](../resources/drive.md)|The fileStorageContainer's drive resource. Read-only.|
