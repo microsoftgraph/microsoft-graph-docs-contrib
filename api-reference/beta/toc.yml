@@ -1625,13 +1625,13 @@ items:
                       - name: Create
                         href: api/workplace-post-sensordevices.md
                       - name: Get
-                        href: resources/workplacesensordevice-get.md
+                        href: api/workplacesensordevice-get.md
                       - name: Update
-                        href: resources/workplacesensordevice-update.md
+                        href: api/workplacesensordevice-update.md
                       - name: Delete
-                        href: resources/workplace-delete-sensordevices.md
+                        href: api/workplace-delete-sensordevices.md
                       - name: Ingest Telemetry
-                        href: resources/workplacesensordevice-ingesttelemetry.md
+                        href: api/workplacesensordevice-ingesttelemetry.md
       - name: Change notifications
         items:
           - name: Overview

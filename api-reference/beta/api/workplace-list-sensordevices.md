@@ -40,7 +40,7 @@ This method supports the `$filter` (**deviceId**, **displayName**, **description
 
 | Pattern                | Syntax                                 | Notes |
 | ---------------------- | -------------------------------------- | ----- |
-| Server-side pagination | `@odata.nextLink`                      | You'll get a continuation token in the response, when a result set spans multiple pages. |
+| Server-side pagination | `@odata.nextLink`                      | You will get a continuation token in the response, when a result set spans multiple pages. |
 | Filter                 | `/workplace/sensorDevices?$filter=Tags/Any(x: cast(x, 'String') eq 'Building A')` | Filter devices based on the tags. |
 | Filter                 | `/workplace/sensorDevices?$filter=cast(manufacturer, 'String') eq 'Contoso'` | Filter devices based on the manufacturer of the device. |
 | Filter                 | `/workplace/sensorDevices?$filter=cast(deviceId, 'String') eq 'contoso_9D6816'` |  Filter devices based on the user provided device identifier.|

@@ -53,7 +53,7 @@ You can specify the following properties when creating a **workplaceSensorDevice
 |manufacturer|String|The manufacturer for the device. Required.|
 |ipV4Address|String|The IPv4 Address for the device. Optional.|
 |ipV6Address|String|The IPv6 Address for the device. Optional.|
-|placeId|String|The unique identifier of the place where the device is located. If the device is installed in a room featuring a mailbox, this property should match the ExternalDirectoryObjectId or AAD object Id of the room mailbox. Optional.|
+|placeId|String|The unique identifier of the place where the device is located. If the device is installed in a room featuring a mailbox, this property should match the ExternalDirectoryObjectId or Entra ID object Id of the room mailbox. Optional.|
 |tags|String collection|A list of custom tags associated with the device. Supports $filter. Optional.|
 |sensors|[workplaceSensor](../resources/workplacesensor.md) collection|A list of sensors associated with the device that collect and report data about physical or environmental conditions, such as occupancy, people count, inferred occupancy, temperature etc. Required.|
 

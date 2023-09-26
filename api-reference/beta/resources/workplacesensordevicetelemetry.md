@@ -19,11 +19,11 @@ Sensor device telemetry represents the data collected and reported by a sensor o
 
 |Property|Type|Description|
 |:---|:---|:---|
-|boolValue|Boolean|The sensor’s value as a true or false statement. Use this for sensors that report binary values, such as occupancy or heartbeat.|
+|boolValue|Boolean|The sensor’s value as a true or false statement. Use it for sensors that report binary values, such as occupancy or heartbeat.|
 |deviceId|String|The user-defined unique identifier for the device provided at the time of creation. Do not use the system generated device's identifier.|
-|intValue|Int32|The sensor’s value as an integer number. Use this for sensors that report numerical values, such as people count. |
+|intValue|Int32|The sensor’s value as an integer number. Use it for sensors that report numerical values, such as people count. |
 |sensorId|String|The unique identifier of the sensor on the device. Optional. If the device has multiple sensors of the same type, the property must be provided to identify each sensor. If the device has unique sensor types, the property can be omitted. The default value is the sensor type.|
-|sensorType|workplaceSensorType| The type of the sensor.The possible values are: `occupancy`, `peopleCount`, `inferredOccupancy`, `heartbeat`.|
+|sensorType|workplaceSensorType| The type of sensor.The possible values are: `occupancy`, `peopleCount`, `inferredOccupancy`, `heartbeat`.|
 |timestamp|DateTimeOffset|The date and time when the sensor measured and reported its value. The value must be a valid date and time in ISO 8601 format, such as 2023-09-25T08:11:05Z. |
 
 ## Relationships
