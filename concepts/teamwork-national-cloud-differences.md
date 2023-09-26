@@ -53,15 +53,15 @@ This section describes implementation differences in the Microsoft Graph for the
 |API    | Details              |
 |:--------------------|:---------------------------------------------------------|
 **Apps**            |                                                          |
-[Apps in catalog](/graph/api/resources/teamsapp) | APIs to manage apps in catalog, such as [Publish apps to catalog](/graph/api/teamsapp-publish), [Delete app from catalog](/graph/api/teamsapp-delete), and [Update app in catalog](/graph/api/teamsapp-update), are not supported.
-[App installation](/graph/api/resources/teamsappinstallation) | APIs to manage app installation in all the scopes (user, chat and team) are not supported.
-[Resource specific permission grant](/graph/api/resources/resourcespecificpermissiongrant) | APIs to list resource specific permission grants are not supported for all scopes(team, chat and group).
+[Apps in catalog](/graph/api/resources/teamsapp) | APIs to manage apps in a catalog, such as [Publish apps to catalog](/graph/api/teamsapp-publish), [Delete app from catalog](/graph/api/teamsapp-delete), and [Update app in catalog](/graph/api/teamsapp-update), are not supported.
+[App installation](/graph/api/resources/teamsappinstallation) | APIs to manage app installation in are not supported in any scope.
+[Resource specific permission grant](/graph/api/resources/resourcespecificpermissiongrant) | APIs to list resource specific permission grants are not supported for any scopes.
 **Activity Feed**            |                                                          |
 | [Activity Feed notifications](/graph/teams-send-activityfeednotifications)| APIs to send activity feed notifications are not supported. |
 | **Tabs**            |                                                          |
 [Tabs](/graph/api/resources/teamstab) | APIs to manage tabs in chat and channels are not supported.
 | **Channel**            |                                                          |
-[Channel](/graph/api/resources/channel) | Channel APIs are not supported in context of Shared channels (channels with channelMembershipType's value as 'Shared').
+[Channel](/graph/api/resources/channel) | Channel APIs are not supported in the context of Shared channels, which are channels with a **channelMembershipType** value ofas `Shared`.
 | **Chat**            |                                                          |
 |[List chats](/graph/api/chat-list)| The `OrderBy` OData query parameter is not supported. |
 | **Messaging**            |                                                          |
