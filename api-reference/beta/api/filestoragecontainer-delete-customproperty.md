@@ -1,9 +1,9 @@
 ---
 title: "Delete custom property from fileStorageContainer"
 description: "Delete custom property from fileStorageContainer"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "files"
 doc_type: apiPageType
 ---
 
