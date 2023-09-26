@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [alert](../resources/alert.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -56,7 +58,7 @@ The following table lists the `$filter` keywords by each vendor name. Even thoug
 | Azure Security Center | ASC |
 | Microsoft Defender for Cloud Apps | MCAS |
 | Azure Active Directory Identity Protection | IPC |
-| Azure Sentinel | Azure Sentinel |
+| Microsoft Sentinel | Azure Sentinel |
 | Microsoft Defender for Endpoint | Microsoft Defender ATP |
 | Office 365 |  Not currently supported. |
 

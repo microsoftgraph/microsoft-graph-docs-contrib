@@ -14,6 +14,8 @@ Namespace: microsoft.graph.networkaccess
 
 Retrieve a list of forwarding rules within a forwarding policy.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -32,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /networkaccess/forwardingPolicy/{forwardingPolicyId}/policyRules/
+GET /networkaccess/forwardingPolicies/{forwardingPolicyId}/policyRules/
 ```
 
 ## Optional query parameters
@@ -60,7 +62,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkaccess/forwardingPolicy/{forwardingPolicyId}/policyRules
+GET https://graph.microsoft.com/beta/networkaccess/forwardingPolicies/{forwardingPolicyId}/policyRules
 ```
 
 
