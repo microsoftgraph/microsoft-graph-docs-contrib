@@ -1,13 +1,13 @@
 ---
-title: "Update custom property on a fileStorageContainer "
-description: "Update custom property on a fileStorageContainer"
+title: "Update custom property of a fileStorageContainer "
+description: "Update custom property of a fileStorageContainer"
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 doc_type: apiPageType
 ---
 
-# fileStorageContainer: update-customproperty
+# Update custom property of fileStorageContainer
 Namespace: microsoft.graph
 
 
