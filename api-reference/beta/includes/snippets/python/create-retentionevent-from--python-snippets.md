@@ -32,7 +32,7 @@ request_body = RetentionEvent(
 	last_status_update_date_time = "String (timestamp)",
 )
 
-result = await graph_client.security.triggers.retention_events.post(request_body = request_body)
+result = await graph_client.security.triggers.retention_events.post(body = request_body)
 
 
 ```

@@ -15,7 +15,7 @@ request_body = MobilityManagementPolicy(
 	terms_of_use_url = "https://portal.uem.contoso.com/TermsofUse.aspx",
 )
 
-result = await graph_client.policies.mobile_device_management_policies.by_mobile_device_management_policie_id('mobilityManagementPolicy-id').patch(request_body = request_body)
+result = await graph_client.policies.mobile_device_management_policies.by_mobile_device_management_policie_id('mobilityManagementPolicy-id').patch(body = request_body)
 
 
 ```

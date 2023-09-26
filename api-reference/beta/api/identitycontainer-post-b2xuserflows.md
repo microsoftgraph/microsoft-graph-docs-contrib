@@ -3,7 +3,7 @@ title: "Create b2xIdentityUserFlow"
 description: "Create a new b2xIdentityUserFlow object."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "jkdouglas"
+author: "nanguil"
 ms.prod: "identity-and-sign-in"
 ---
 
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -51,15 +53,15 @@ In the request body, provide a JSON representation of a [b2xIdentityUserFlow](..
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|id|String|Required. The name of the user flow. The name will be pre-pended with `B2X_1` after creation.|
-|userFlowType|String|Required. The type of user flow you are creating. This value will always be `signUpOrSignIn`.|
+|id|String|Required. The name of the user flow. The name will be prepended with `B2X_1` after creation.|
+|userFlowType|String|Required. The type of user flow you're creating. This value will always be `signUpOrSignIn`.|
 |userFlowTypeVersion|Float|Required. The version of the user flow. This value will always be 1.|
 |identityProviders|[identityProvider](../resources/identityprovider.md) collection|Optional. The identity providers you want to include in the user flow.|
 |apiConnectorConfiguration|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)|Optional. Configuration for enabling an API connector for use as part of the user flow.|
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a Location header with a URI to the [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object created for this request, with the `B2X_1` prefix added to the name. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `201 Created` response code and a Location header with a URI to the [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object created for this request, with the `B2X_1` prefix added to the name. If unsuccessful, a `4xx` error is returned with specific details.
 
 ## Examples
 
@@ -67,7 +69,7 @@ If successful, this method returns a `201 Created` response code and a Location 
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -120,7 +122,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 
@@ -146,7 +148,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -206,7 +208,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 
@@ -232,7 +234,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -293,7 +295,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 

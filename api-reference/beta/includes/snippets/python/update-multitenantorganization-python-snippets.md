@@ -13,7 +13,7 @@ request_body = MultiTenantOrganization(
 	description = "Multi-tenant organization between Contoso, Fabrikam, and Woodgrove Bank",
 )
 
-result = await graph_client.tenant_relationships.multi_tenant_organization.patch(request_body = request_body)
+result = await graph_client.tenant_relationships.multi_tenant_organization.patch(body = request_body)
 
 
 ```

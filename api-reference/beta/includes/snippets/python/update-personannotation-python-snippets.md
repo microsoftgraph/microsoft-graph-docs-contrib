@@ -12,7 +12,7 @@ request_body = PersonAnnotation(
 	allowed_audiences = AllowedAudiences.Organization,
 )
 
-result = await graph_client.users.by_user_id('user-id').profile.notes.by_note_id('personAnnotation-id').patch(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').profile.notes.by_note_id('personAnnotation-id').patch(body = request_body)
 
 
 ```

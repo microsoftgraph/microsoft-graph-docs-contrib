@@ -15,7 +15,7 @@ request_body = AuthorizationPolicy(
 	),
 )
 
-result = await graph_client.policies.authorization_policy.patch(request_body = request_body)
+result = await graph_client.policies.authorization_policy.patch(body = request_body)
 
 
 ```

@@ -14,7 +14,7 @@ $message = new Message();
 $attachmentsAttachment1 = new FileAttachment();
 $attachmentsAttachment1->setOdataType('#microsoft.graph.fileAttachment');
 $attachmentsAttachment1->setName('guidelines.txt');
-$attachmentsAttachment1->setContentBytes(base64_decode('bWFjIGFuZCBjaGVlc2UgdG9kYXk='));
+$attachmentsAttachment1->setContentBytes(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('bWFjIGFuZCBjaGVlc2UgdG9kYXk=')));
 $attachmentsArray []= $attachmentsAttachment1;
 $message->setAttachments($attachmentsArray);
 

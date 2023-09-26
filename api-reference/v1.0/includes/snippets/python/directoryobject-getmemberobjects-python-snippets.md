@@ -12,7 +12,7 @@ request_body = GetMemberObjectsPostRequestBody(
 	security_enabled_only = True,
 )
 
-result = await graph_client.directory_objects.by_directory_object_id('directoryObject-id').get_member_objects.post(request_body = request_body)
+result = await graph_client.directory_objects.by_directory_object_id('directoryObject-id').get_member_objects.post(body = request_body)
 
 
 ```

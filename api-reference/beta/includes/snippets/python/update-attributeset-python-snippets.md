@@ -13,7 +13,7 @@ request_body = AttributeSet(
 	max_attributes_per_set = 20,
 )
 
-result = await graph_client.directory.attribute_sets.by_attribute_set_id('attributeSet-id').patch(request_body = request_body)
+result = await graph_client.directory.attribute_sets.by_attribute_set_id('attributeSet-id').patch(body = request_body)
 
 
 ```

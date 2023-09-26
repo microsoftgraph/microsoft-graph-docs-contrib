@@ -40,7 +40,7 @@ request_body = Qna(
 	state = AnswerState.Published,
 )
 
-result = await graph_client.search.qnas.post(request_body = request_body)
+result = await graph_client.search.qnas.post(body = request_body)
 
 
 ```

@@ -12,7 +12,7 @@ request_body = OutlookTaskFolder(
 	name = "Volunteer",
 )
 
-result = await graph_client.me.outlook.task_folders.post(request_body = request_body)
+result = await graph_client.me.outlook.task_folders.post(body = request_body)
 
 
 ```

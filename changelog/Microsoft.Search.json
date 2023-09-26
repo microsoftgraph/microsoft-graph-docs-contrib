@@ -1775,6 +1775,24 @@
   "CreatedDateTime": "2023-07-25T17:03:43.000Z",
   "WorkloadArea": "Search",
   "SubArea": ""
-}
+  },
+{
+    "ChangeList": [
+      {
+        "Id": "429c062a-4b3f-4ea1-ab45-d399ff6818cc",
+        "ApiChange": "Member",
+        "ChangedApiName": "labels",
+        "ChangeType": "Addition",
+        "Description": "Added the `iconUrl` member to the **label** enumeration.",
+        "Target": "contentExperienceType"
+      }
+    ],
+    "Id": "429c062a-4b3f-4ea1-ab45-d399ff6818cc",
+    "Cloud": "Prod",
+    "Version": "v1.0",
+    "CreatedDateTime": "2023-09-06T17:03:43.000Z",
+    "WorkloadArea": "Search",
+    "SubArea": ""
+  }
   ]
 }

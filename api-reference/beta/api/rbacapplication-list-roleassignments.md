@@ -20,6 +20,8 @@ The following RBAC providers are currently supported:
 - entitlement management (Azure AD)
 - Exchange Online
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 
