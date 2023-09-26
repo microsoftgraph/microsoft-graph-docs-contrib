@@ -17,6 +17,8 @@ Pin an [educationModule](../resources/educationmodule.md) in the classwork list.
 
 Only teachers can perform this action and only one module at a time can be pinned in the classwork list.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

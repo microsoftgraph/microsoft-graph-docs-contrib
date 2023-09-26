@@ -21,6 +21,8 @@ as specified in the override.
 >- The maximum number of overrides supported for a mailbox is 1000, based on unique sender SMTP addresses.
 >- The POST operation supports creating only one override at a time.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
