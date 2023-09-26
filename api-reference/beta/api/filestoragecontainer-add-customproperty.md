@@ -1,13 +1,13 @@
 ---
 title: "Add custom property to a fileStorageContainer"
 description: "Add custom property to a fileStorageContainer"
-author: "tonchan-ms"
+author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# fileStorageContainer: add-customproperty
+# Add custom property to a fileStorageContainer
 Namespace: microsoft.graph
 
 Add custom property to a fileStorageContainer. 
