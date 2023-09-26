@@ -829,7 +829,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "teamsAppSettings",
           "ChangeType": "Addition",
-          "Description": "Added the [teamsAppSettings](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppSettings?view=graph-rest-1.0) resource",
+          "Description": "Added the [teamsAppSettings](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppSettings?view=graph-rest-1.0) resource and associated methods.",
           "Target": "teamsAppSettings"
         },
         {

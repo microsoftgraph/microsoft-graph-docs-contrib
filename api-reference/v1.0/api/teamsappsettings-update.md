@@ -22,8 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|TeamworkAppSettings.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -56,10 +56,10 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Allow Teams users to request admins for access to certain Teams Apps.
+The following example shows how to allow Teams users to request access to certain Teams apps.
 
-#### Request
-
+### Request
+The following example shows the request.
 <!-- {
   "blockType": "request",
   "name": "update_teamsappsettings_2"
@@ -75,7 +75,8 @@ Content-Type: application/json
 }
 ```
 
-#### Response
+### Response
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
