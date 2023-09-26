@@ -8014,6 +8014,8 @@ items:
                 items:
                   - name: Article indicator
                     href: resources/security-articleindicator.md
+                  - name: List
+                    href: api/security-article-list-indicators.md
                   - name: Get
                     href: api/security-articleindicator-get.md
               - name: Host
@@ -8050,12 +8052,16 @@ items:
                 items:
                   - name: Host component
                     href: resources/security-hostcomponent.md
+                  - name: List
+                    href: api/security-host-list-components.md
                   - name: Get
                     href: api/security-hostcomponent-get.md
               - name: Host cookie
                 items:
                   - name: Host cookie
                     href: resources/security-hostcookie.md
+                  - name: List
+                    href: api/security-host-list-cookies.md
                   - name: Get
                     href: api/security-hostcookie-get.md
               - name: Host pair
@@ -8082,6 +8088,8 @@ items:
                 items:
                   - name: Host tracker
                     href: resources/security-hosttracker.md
+                  - name: List
+                    href: api/security-host-list-trackers.md
                   - name: Get
                     href: api/security-hosttracker-get.md
               - name: Intelligence profile
@@ -8098,12 +8106,16 @@ items:
                 items:
                   - name: Intelligence profile indicator
                     href: resources/security-intelligenceprofileindicator.md
+                  - name: List
+                    href: api/security-intelligenceprofile-list-indicators.md
                   - name: Get
                     href: api/security-intelligenceprofileindicator-get.md
               - name: Passive DNS record
                 items:
                   - name: Passive DNS record
                     href: resources/security-passivednsrecord.md
+                  - name: List
+                    href: api/security-host-list-passivedns.md
                   - name: Get
                     href: api/security-passivednsrecord-get.md
               - name: SSL certificate
@@ -8118,10 +8130,10 @@ items:
                 items:
                   - name: Subdomain
                     href: resources/security-subdomain.md
+                  - name: List
+                    href: api/security-host-list-subdomains.md
                   - name: Get
                     href: api/security-subdomain-get.md
-                  - name: List subdomains for a host
-                    href: api/security-host-list-subdomains.md
               - name: Vulnerability
                 items:
                   - name: Vulnerability
@@ -8134,6 +8146,8 @@ items:
                 items:
                   - name: Vulnerability component
                     href: resources/security-vulnerabilitycomponent.md
+                  - name: List
+                    href: api/security-vulnerability-list-components.md
                   - name: Get
                     href: api/security-vulnerabilitycomponent-get.md
               - name: WHOIS record
