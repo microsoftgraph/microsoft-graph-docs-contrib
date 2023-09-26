@@ -19,6 +19,8 @@ Delete an [app](../resources/teamsapp.md) from an organization's app catalog (th
 
 You can also use this API to remove a submitted app from the review process.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

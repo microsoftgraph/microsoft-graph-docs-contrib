@@ -20,6 +20,8 @@ The maximum and default page size is 1,000 objects and by default, the most rece
 [!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -61,7 +63,7 @@ This method supports the `$top`, `$skiptoken`, and `$filter` OData query paramet
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -70,11 +72,11 @@ If successful, this method returns a `200 OK` response code and collection of [s
 ## Examples
 
 ### Example 1: List all sign-ins
-In this example, the response object shows the user signed in using MFA which was triggered by a conditional access policy, and the primary authentication method is through FIDO.
+In this example, the response object shows the user signed in using MFA that was triggered by a conditional access policy, and the primary authentication method is through FIDO.
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -256,7 +258,7 @@ Content-type: application/json
 
 ### Example 2: Retrieve the first 10 sign-ins to apps with the appDisplayName that starts with 'Azure'
 
-In this example, the response object shows the user signed in using only their primary authentication method—a cloud password. The response includes a `@odata.nextLink` property which contains a URL that can be used to retrieve the next 10 results.
+In this example, the response object shows the user signed in using only their primary authentication method—a cloud password. The response includes a `@odata.nextLink` property that contains a URL that can be used to retrieve the next 10 results.
 
 #### Request
 
@@ -418,9 +420,9 @@ Content-type: application/json
 
 
 
-### Example 3: Retrieve the first 10 sign-ins where the signInEventType is not interactiveUser starting with the latest sign-in
+### Example 3: Retrieve the first 10 sign-ins where the signInEventType isn't interactiveUser starting with the latest sign-in
 
-In this example, the response includes a `@odata.nextLink` property which contains a URL that can be used to retrieve the next 10 results.
+In this example, the response includes a `@odata.nextLink` property that contains a URL that can be used to retrieve the next 10 results.
 
 #### Request
 

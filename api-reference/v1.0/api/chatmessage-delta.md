@@ -28,6 +28,8 @@ State tokens are completely opaque to the client. To proceed with a round of cha
 
 For more information, see the [delta query](/graph/delta-query-overview) documentation.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

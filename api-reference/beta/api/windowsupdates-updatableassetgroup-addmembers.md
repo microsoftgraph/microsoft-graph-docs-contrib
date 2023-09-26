@@ -20,6 +20,8 @@ Adding an Azure AD device as a member of an updatable asset group automatically 
 
 You can also use the method [addMembersById](windowsupdates-updatableassetgroup-addmembersbyid.md) to add members.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
