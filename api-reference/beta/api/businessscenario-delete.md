@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Delete a [businessScenario](../resources/businessscenario.md) object. The deletion of a scenario causes all data associated with the scenario to be deleted.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

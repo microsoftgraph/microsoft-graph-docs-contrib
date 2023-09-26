@@ -15,6 +15,8 @@ Retrieve the properties and relationships of webhook subscriptions, based on the
 
 The content of the response depends on the context in which the app is calling; for details, see the scenarios in the [Permissions](#permissions) section.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 This API supports the following permission scopes; to learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

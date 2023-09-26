@@ -18,6 +18,8 @@ Get the status of a command on a device. For the  full list of status codes, see
 > [!CAUTION]
 > This API is deprecated and stopped returning data on September 30, 2020.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

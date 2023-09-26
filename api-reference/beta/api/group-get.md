@@ -17,6 +17,8 @@ Get the properties and relationships of a [group](../resources/group.md) object.
 
 This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that aren't_ returned by default, specify them in a `$select` OData query option. The **hasMembersWithLicenseErrors** and **isArchived** properties are an exception and aren't returned in the `$select` query. Because the **group** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **group** instance.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

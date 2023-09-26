@@ -19,6 +19,8 @@ We recommend that you send a request in shorter time intervals (every 15 minutes
 
 Attempting to send a request to a call that has already ended will result in a `404 Not-Found` error. The resources related to the call should be cleaned up on the application side.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions may be required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

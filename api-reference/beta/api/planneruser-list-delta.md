@@ -21,6 +21,8 @@ The return value of this method might contain heterogeneous types of objects fro
 
 For more information about tracking changes in Microsoft Graph data, see [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

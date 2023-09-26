@@ -16,6 +16,8 @@ Depending on the service and configuration, a new version can be created for eac
 
 Previous versions of a document may be retained for a finite period of time depending on admin settings that may be unique per user or location.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

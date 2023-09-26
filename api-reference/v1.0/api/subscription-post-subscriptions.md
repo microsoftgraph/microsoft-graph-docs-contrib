@@ -17,6 +17,8 @@ To identify the resources for which you can create subscriptions and the limitat
 
 Some resources support rich notifications, that is, notifications that include resource data. For more information about these resources, see [Set up change notifications that include resource data: Supported resources](/graph/webhooks-with-resource-data#supported-resources).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 Creating a subscription requires read scope to the resource. For example, to get change notifications on messages, your app needs the `Mail.Read` permission. 

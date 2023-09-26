@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get all provisioned Cloud PCs of a specific service plan for users under an Azure Active Directory (Azure AD) user group.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

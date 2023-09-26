@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get the number of Microsoft Teams user activities over the selected period. The activity types are team chat messages, private chat messages, calls, meetings, meetings organized, meetings attended, audio duration, video duration, screen share duration, post messages, and reply messages.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

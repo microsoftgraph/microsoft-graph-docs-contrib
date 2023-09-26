@@ -15,6 +15,8 @@ Complete the message migration process by removing `migration mode` from a [chan
 
 After a **completeMigration** request is made, you can't import additional messages into the team. You can add members to the team after the request returns a successful response.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 The following permission is required to call this API. To learn more, *see* [Permissions](/graph/permissions-reference).
