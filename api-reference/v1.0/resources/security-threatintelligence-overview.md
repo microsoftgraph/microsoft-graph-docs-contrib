@@ -23,12 +23,28 @@ To call the threat intelligence APIs in Microsoft Graph, your app needs to acqui
 
 The following describes some common use cases for the threat intelligence APIs.
 
+The threat intelligence APIs fall into a few main categories:
+
+* Written details about a Threat or Threat Actor, such as **article** or **intelligenceProfile**
+* Properties about a **host**, such as **hostCookie**, **passiveDns**, or **whois**
+
+
 | Use cases                               | REST resources                                                      | See also                                                                               |
 | :-------------------------------------- | :------------------------------------------------------------------ | :------------------------------------------------------------------------------------- |
-| Read information about a host           | [host](../resources/security-host.md)                               | [Methods of host](../resources/security-host.md#methods)                               |
 | Read articles about threat intelligence | [article](../resources/security-article.md)                         | [Methods of article](../resources/security-article.md#methods)                         |
-| Read intelligence profiles              | [intelligenceProfile](../resources/security-intelligenceprofile.md) | [Methods of intelligenceProfile](../resources/security-intelligenceprofile.md#methods) |
+| Read information about a host that is currently or was previously available on the internet and Microsoft Defender Threat Intelligence has detected. A host has further references to details like the host's Reputation, any cookies associated with the host, Passive DNS entries, and more.           | [host](../resources/security-host.md)                               | [Methods of host](../resources/security-host.md#methods)                               |
+| Read information about web components observed on a **host**.           | [hostComponent](../resources/security-hostcomponent.md)                               | [Methods of hostComponent](../resources/security-hostcomponent.md#methods)                               |
+| Read information about cookies observed on a **host**.           | [hostCookie](../resources/security-hostcookie.md)                               | [Methods of hostCookie](../resources/security-hostcookie.md#methods)                               |
+| Discover referencial host pairs observed about a host. HostPairs include details such as information about HTTP Redirections, consumption of CSS or Images from a host, and more.           | [hostPair](../resources/security-hostpair.md)                               | [Methods of hostPair](../resources/security-hostpair.md#methods)                               |
+| Read SSL Certificate data that has been observered on a host. These details specifically relate the SSL Certificate information, as well as information about the relationship between a **host** and the SSL Certificate.           | [hostSslCertificate](../resources/security-hostsslcertificate.md)                               | [Methods of hostSslCertificate](../resources/security-hostsslcertificate.md#methods)                               |
+| Read Internet trackers observed on a **host**.          | [hostTracker](../resources/security-hosttracker.md)                               | [Methods of hosttracker](../resources/security-hosttracker.md#methods)                               |
+| Read intelligence profiles about Threat Actors and common tools of compromise.              | [intelligenceProfile](../resources/security-intelligenceprofile.md) | [Methods of intelligenceProfile](../resources/security-intelligenceprofile.md#methods) |
+| Read Passive DNS (PDNS) records about a **host**.           | [passiveDnsRecord](../resources/security-passivednsrecord.md)                               | [Methods of passiveDnsRecord](../resources/security-passivednsrecord.md#methods)                               |
+| Read SSL Certificate data. This information is standalone from the details about how the SSL Certificate relates to a **host**.          | [sslCertificate](../resources/security-sslcertificate.md)                               | [Methods of sslCertificate](../resources/security-sslcertificate.md#methods)                               |
+| Read Subdomain details for a **host**.          | [subdomain](../resources/security-subdomain.md)                               | [Methods of subdomain](../resources/security-subdomain.md#methods)                               |
 | Read details about a vulnerability      | [vulnerability](../resources/security-vulnerability.md)             | [Methods of vulnerability](../resources/security-vulnerability.md#methods)             |
+| Read WHOIS details for a **host**.          | [whoisRecord](../resources/security-whoisrecord.md)                               | [Methods of whoisRecord](../resources/security-whoisrecord.md#methods)                               |
+
 
 ## What's new
 
