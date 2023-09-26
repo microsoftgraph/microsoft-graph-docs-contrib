@@ -15,7 +15,7 @@ request_body = ConditionalAccessSettings(
 	}
 )
 
-result = await graph_client.network_access.settings.conditional_access.patch(request_body = request_body)
+result = await graph_client.network_access.settings.conditional_access.patch(body = request_body)
 
 
 ```

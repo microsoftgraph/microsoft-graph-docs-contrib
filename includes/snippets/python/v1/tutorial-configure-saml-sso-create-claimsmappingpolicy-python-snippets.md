@@ -16,7 +16,7 @@ request_body = ClaimsMappingPolicy(
 	is_organization_default = False,
 )
 
-result = await graph_client.policies.claim_mapping_policies.post(request_body = request_body)
+result = await graph_client.policies.claim_mapping_policies.post(body = request_body)
 
 
 ```

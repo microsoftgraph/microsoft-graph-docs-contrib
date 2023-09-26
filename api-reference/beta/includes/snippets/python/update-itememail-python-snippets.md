@@ -13,7 +13,7 @@ request_body = ItemEmail(
 	type = EmailType.Work,
 )
 
-result = await graph_client.users.by_user_id('user-id').profile.emails.by_email_id('itemEmail-id').patch(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').profile.emails.by_email_id('itemEmail-id').patch(body = request_body)
 
 
 ```

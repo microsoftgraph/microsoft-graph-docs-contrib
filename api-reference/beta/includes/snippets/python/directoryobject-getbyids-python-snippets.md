@@ -22,7 +22,7 @@ request_body = GetByIdsPostRequestBody(
 	]
 )
 
-result = await graph_client.directory_objects.get_by_ids.post(request_body = request_body)
+result = await graph_client.directory_objects.get_by_ids.post(body = request_body)
 
 
 ```

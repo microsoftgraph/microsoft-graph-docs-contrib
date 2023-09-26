@@ -1,6 +1,6 @@
 ---
 title: "Get administrativeUnit"
-description: "Retrieve the simple directory **administrativeUnit** that corresponds to this **educationSchool**."
+description: "Retrieve the directory **administrativeUnit** that corresponds to this **educationSchool**."
 ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
@@ -13,9 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the simple directory **administrativeUnit** that corresponds to this **educationSchool**.
+Retrieve the directory **administrativeUnit** that corresponds to this **educationSchool**.
 
 >**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...beta/education/me/schools` resource in this case.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 A combination of permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,12 +40,12 @@ GET /education/schools/{id}/administrativeUnit
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and an [administrativeUnit](../resources/administrativeunit.md) object in the response body.
 ## Example
 ##### Request
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -89,7 +91,7 @@ GET https://graph.microsoft.com/beta/education/schools/2961761D-8094-4183-A9F6-8
 ---
 
 ##### Response
-The following is an example of the response. 
+Here's an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 

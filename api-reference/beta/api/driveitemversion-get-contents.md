@@ -17,6 +17,8 @@ Retrieve the contents of a specific version of a [driveItem](../resources/drivei
 
 >**Note:** Getting the content of the current version is not supported. Instead, use the [driveItem content endpoint](driveitem-get-content.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,12 +44,12 @@ GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
 
 ## Response
 
-Returns a `302 Found` response redirecting to a pre-authenticated download URL for the bytes of the file.
+Returns a `302 Found` response redirecting to a preauthenticated download URL for the bytes of the file.
 
-To download the contents of the file your application will need to follow the `Location` header in the response.
-Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immedately.
+To download the contents of the file your application needs to follow the `Location` header in the response.
+Many HTTP client libraries will automatically follow the 302 redirection and start downloading the file immediately.
 
-Pre-authenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to download.
+Preauthenticated download URLs are only valid for a short period of time (a few minutes) and don't require an `Authorization` header to download.
 
 ## Example
 
@@ -99,7 +101,7 @@ GET /me/drive/items/{item-id}/versions/{version-id}/content
 
 ### Response
 
-This returns a redirect to where the contents of the version can be downloaded.
+Returns a redirect to where the contents of the version can be downloaded.
 
 <!-- { "blockType": "response", "isEmpty": true  } -->
 
@@ -111,7 +113,7 @@ Location: https://onedrive.com/34FF49D6...
 
 ## Remarks
 
-OneDrive does not preserve the complete metadata for previous versions of a file.
+OneDrive doesn't preserve the complete metadata for previous versions of a file.
 
 When your app retrieves the list of available versions for a file, a [driveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.
 

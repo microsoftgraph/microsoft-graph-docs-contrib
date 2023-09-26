@@ -38,7 +38,7 @@ request_body = SourceSystemDefinition(
 	]
 )
 
-result = await graph_client.external.industry_data.source_systems.post(request_body = request_body)
+result = await graph_client.external.industry_data.source_systems.post(body = request_body)
 
 
 ```

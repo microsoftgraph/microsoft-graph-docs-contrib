@@ -20,13 +20,13 @@ Inherits from [onInteractiveAuthFlowStartHandler](../resources/oninteractiveauth
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isSignUpAllowed|Boolean|Optional. Specifes whether the authentication flow includes an option to sign up (create account) as well as sign in. Default value is `false` meaning only sign in is enabled.|
+|isSignUpAllowed|Boolean|Optional. Specifies whether the authentication flow includes an option to sign up (create account) and sign in. Default value is `false` meaning only sign in is enabled.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.onInteractiveAuthFlowStartExternalUsersSelfServiceSignUp"

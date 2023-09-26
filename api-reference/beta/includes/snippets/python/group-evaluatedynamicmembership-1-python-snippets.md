@@ -12,7 +12,7 @@ request_body = EvaluateDynamicMembershipPostRequestBody(
 	member_id = "319b41e8-d9e4-42f8-bdc9-741113f48b33",
 )
 
-result = await graph_client.groups.by_group_id('group-id').evaluate_dynamic_membership.post(request_body = request_body)
+result = await graph_client.groups.by_group_id('group-id').evaluate_dynamic_membership.post(body = request_body)
 
 
 ```

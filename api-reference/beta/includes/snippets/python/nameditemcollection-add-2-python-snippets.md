@@ -14,7 +14,7 @@ request_body = AddFormulaLocalPostRequestBody(
 	comment = "Comment for the named item",
 )
 
-result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.names.add_formula_local.post(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.names.add_formula_local.post(body = request_body)
 
 
 ```

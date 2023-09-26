@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property in a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) to enable or disable an API connector in a user flow. Each relationship of the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) corresponds to a specific step in the user flow that can be configured to call an API connector. You configure an API connector for a particular step one at a time as shown below.
+Update the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property in a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) to enable or disable an API connector in a user flow. Each relationship of the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) corresponds to a specific step in the user flow that can be configured to call an API connector. You configure an API connector for a particular step 1 at a time as shown below.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -56,11 +58,11 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Example 1: Enable API connector for Post IDP Federation on sign up
+### Example 1: Enable API connector for Post IDP Federation on sign-up
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -116,7 +118,7 @@ Content-Type: application/json
 
 #### Response 
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -127,11 +129,11 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Enable API connector for Post Attribute Collection on sign up
+### Example 2: Enable API connector for Post Attribute Collection on sign-up
 
 #### Request 
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -187,7 +189,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -198,11 +200,11 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 3: Disable an API connector for Post Attribute Collection on sign up
+### Example 3: Disable an API connector for Post Attribute Collection on sign-up
 
 #### Request 
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 
@@ -257,7 +259,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

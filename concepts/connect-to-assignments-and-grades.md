@@ -48,3 +48,9 @@ For assignments, [delta queries](/graph/api/educationassignment-delta) are suppo
 ## Filtering data
 
 Assignment API endpoints return a large amount of data. You can use the [filter](/graph/query-parameters#filter-parameter) [OData query parameter](/graph/query-parameters) to handle the data as needed. 
+
+## See also
+
+* [Permissions overview](/graph/permissions-overview?tabs=http) 
+* [Authentication and authorization basics](/graph/auth/auth-concepts#register-your-app-with-the-microsoft-identity-platform) 
+* [Overview of the Azure Active Directory application gallery](/azure/active-directory/manage-apps/overview-application-gallery)

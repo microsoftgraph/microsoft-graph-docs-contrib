@@ -260,7 +260,7 @@ Use the `$count` query parameter to retrieve the count of the total number of it
 3. In a `$filter` expression with equality operators to retrieve a collection of data where the filtered property is an empty collection. See [Use the $filter query parameter to filter a collection of objects](/graph/filter-query-parameter).
 
 > [!NOTE]
-> 1. On resources that derive from [directoryObject](/graph/api/resources/directoryobject), `$count` is only supported in an advanced query. See [Advanced query capabilities in Azure AD directory objects](/graph/aad-advanced-queries).
+> 1. On resources that derive from [directoryObject](/graph/api/resources/directoryobject), `$count` is only supported in an advanced query. See [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 > 2. Use of `$count` is not supported in Azure AD B2C tenants.
 
 For example, the following request returns both the **contact** collection of the current user, and the number of items in the **contact** collection in the `@odata.count` property.
@@ -675,7 +675,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 ---
 
 > [!NOTE] 
-> Combining `$orderby` and `$filter` query parameters is supported for directory objects. See [Advanced query capabilities in Azure AD directory objects](/graph/aad-advanced-queries).
+> Combining `$orderby` and `$filter` query parameters is supported for directory objects. See [Advanced query capabilities in directory objects](/graph/aad-advanced-queries).
 
 ## search parameter
 
@@ -684,6 +684,12 @@ Use the `$search` query parameter to restrict the results of a request to match 
 ## select parameter
 
 Use the `$select` query parameter to return a set of properties that are different than the default set for an individual resource or a collection of resources. With `$select`, you can specify a subset or a superset of the default properties.
+
+When you make a GET request without using `$select` to limit the amount of properties data, Microsoft Graph includes a **@microsoft.graph.tips** property that provides a best practice recommendation for using `$select` similar to the following message:
+
+```html
+"@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET groups?$select=appMetadata,assignedLabels",
+```
 
 For example, when retrieving the messages of the signed-in user, you can specify that only the **from** and **subject** properties be returned:
 
@@ -895,7 +901,7 @@ However, it is important to note that query parameters specified in a request mi
 
 ## See also
 
-- [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries)
+- [Advanced query capabilities on directory objects](/graph/aad-advanced-queries)
 - [Use the $search query parameter to match a search criterion](/graph/search-query-parameter)
 - [Query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?filterBy=Query%20parameters&search=)
 - [Training module: Optimize data usage when using Microsoft Graph with query parameters](/training/modules/optimize-data-usage)

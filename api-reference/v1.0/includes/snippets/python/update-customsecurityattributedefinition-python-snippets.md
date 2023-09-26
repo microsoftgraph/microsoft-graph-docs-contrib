@@ -12,7 +12,7 @@ request_body = CustomSecurityAttributeDefinition(
 	description = "Target completion date (YYYY/MM/DD)",
 )
 
-result = await graph_client.directory.custom_security_attribute_definitions.by_custom_security_attribute_definition_id('customSecurityAttributeDefinition-id').patch(request_body = request_body)
+result = await graph_client.directory.custom_security_attribute_definitions.by_custom_security_attribute_definition_id('customSecurityAttributeDefinition-id').patch(body = request_body)
 
 
 ```

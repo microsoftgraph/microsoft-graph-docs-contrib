@@ -12,7 +12,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 $requestBody = new EvaluateRemovalPostRequestBody();
 $contentInfo = new ContentInfo();
 $contentInfo->setOdataType('#microsoft.graph.security.contentInfo');
-$ContentInfo->setIdentifier(null);
+$contentInfo->setIdentifier(null);
 $contentInfo->setState(new ContentState('rest'));
 $metadataKeyValuePair1 = new KeyValuePair();
 $metadataKeyValuePair1->setName('MSIP_Label_836ff34f-b604-4a62-a68c-d6be4205d569_Enabled');
@@ -53,7 +53,7 @@ $downgradeJustification = new DowngradeJustification();
 $downgradeJustification->setJustificationMessage('The information has been declassified.');
 $downgradeJustification->setIsDowngradeJustified(true);
 $requestBody->setDowngradeJustification($downgradeJustification);
-$requestConfiguration = new EvaluateRemovalRequestBuilderPostRequestConfiguration();
+$requestConfiguration = new MicrosoftEvaluateRemovalRequestBuilderPostRequestConfiguration();
 $headers = [
 	'User-Agent' => 'ContosoLOBApp/1.0',
 ];

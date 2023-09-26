@@ -9,9 +9,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new AccessPackageRequestBuilderGetRequestConfiguration();
-$queryParameters = AccessPackageRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->expand = ["resourceRoleScopes($expand=role,scope)"];
+$requestConfiguration = new AccessPackageItemRequestBuilderGetRequestConfiguration();
+$queryParameters = AccessPackageItemRequestBuilderGetRequestConfiguration::createQueryParameters();
+$queryParameters->expand = ["resourceRoleScopes(\$expand=role,scope)"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
