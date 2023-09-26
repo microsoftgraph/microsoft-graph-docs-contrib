@@ -7,7 +7,7 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# fileStorageContainer: delete-customproperty
+# Delete custom property from fileStorageContainer
 Namespace: microsoft.graph
 
 Delete one or multiple custom properties from a fileStorageContainer by assigning **null** to the properties.
