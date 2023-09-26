@@ -231,7 +231,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "endUserNotificationDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [endUserNotificationDetail](https://learn.microsoft.com/en-us/graph/api/resources/endUserNotificationDetail?view=graph-rest-beta) resource and a supported method.",
+          "Description": "Added the [endUserNotificationDetail](https://learn.microsoft.com/en-us/graph/api/resources/endUserNotificationDetail?view=graph-rest-beta) resource type.",
           "Target": "endUserNotificationDetail"
         },
         {
@@ -247,7 +247,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "landingPageDetail",
           "ChangeType": "Addition",
-          "Description": "Added the [landingPageDetail](https://learn.microsoft.com/en-us/graph/api/resources/landingPageDetail?view=graph-rest-beta) resource and supported methods.",
+          "Description": "Added the [landingPageDetail](https://learn.microsoft.com/en-us/graph/api/resources/landingPageDetail?view=graph-rest-beta) resource type.",
           "Target": "landingPageDetail"
         },
         {
