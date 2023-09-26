@@ -3,7 +3,7 @@ title: "List fileStorageContainers"
 description: "Get a list of the fileStorageContainer objects and their properties."
 author: "tonchan-msft"
 ms.localizationpriority: medium
-ms.prod: "files*"
+ms.prod: "files"
 doc_type: apiPageType
 ---
 
