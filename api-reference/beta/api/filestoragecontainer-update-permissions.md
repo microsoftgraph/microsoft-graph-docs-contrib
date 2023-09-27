@@ -10,13 +10,14 @@ doc_type: apiPageType
 # Update fileStoreContainer permission
 Namespace: microsoft.graph
 
+> [!IMPORTANT]
+> APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
 
-
-Update the existing permission in a fileStorageContainer by patching the permission resource.
+Update the existing permission for a fileStorageContainer by patching the permission resource.
 
 Only the **roles** property can be updated this way. 
 
-The application calling this API must have permission to update permissions to fileStorageContainers of the containerType the fileStorageContainer belongs to.
+The application calling this API must have permission to update permissions for fileStorageContainers of the respective container type.
 
 
 ## Permissions
