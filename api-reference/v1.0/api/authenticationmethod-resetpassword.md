@@ -18,6 +18,8 @@ This flow writes the new password to Azure Active Directory and pushes it to on-
 
 This reset is a long-running operation and will return a **Location** header with a link where the caller can periodically check for the status of the reset operation.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
