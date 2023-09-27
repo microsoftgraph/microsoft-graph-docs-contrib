@@ -19,7 +19,7 @@ Change notifications in Microsoft Graph enable subscriptions to call records, pr
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
 |Application | CallRecords.Read.All | v1.0 |
 
-### Example subscription
+### Examples
 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
