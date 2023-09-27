@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Delete an [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object that's not published or used by a conditional access policy.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,18 +40,18 @@ DELETE /identity/conditionalAccess/authenticationContextClassReferences/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
-This method will return a `403 Forbidden` error code when deleting a published authenticationContextClassReference (where **isAvailable** is set to `true`). If authenticationContextClassReference, though unpublished, is used by any Conditional Access policy, this method will return a `400 Bad Request` error code.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
+This method returns a `403 Forbidden` error code when deleting a published authenticationContextClassReference (where **isAvailable** is set to `true`). If authenticationContextClassReference, though unpublished, is used by any Conditional Access policy, this method returns a `400 Bad Request` error code.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -99,7 +101,7 @@ DELETE /identity/conditionalAccess/authenticationContextClassReferences/c1
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

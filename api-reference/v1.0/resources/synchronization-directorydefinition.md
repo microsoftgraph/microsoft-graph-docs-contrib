@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Provides the synchronization engine information about a directory and its objects. This resource tells the synchronization engine, for example, that the directory has objects named **user** and **group**, which attributes are supported for those objects, and the types for those attributes. In order for the object and attribute to participate in [synchronization rules](synchronization-synchronizationrule.md) and [object mappings](synchronization-objectmapping.md), they must be defined as part of the directory definition.
 
-In general, the default [synchronization schema](synchronization-synchronizationschema.md) provided as part of the [synchronization template](synchronization-synchronizationtemplate.md) will define the most commonly used objects and attributes for that directory. However, if the directory supports the addition of custom attributes, you might want to expand the default definition with your own custom objects or attributes. For more information, see the following articles.
+In general, the default [synchronization schema](synchronization-synchronizationschema.md) provided as part of the [synchronization template](synchronization-synchronizationtemplate.md) defines the most commonly used objects and attributes for that directory. However, if the directory supports the addition of custom attributes, you might want to expand the default definition with your own custom objects or attributes. For more information, see the following articles.
 
 - [Configure synchronization with custom attributes](/graph/synchronization-configure-with-custom-target-attributes)
 - [Configure synchronization with directory extension attributes](/graph/synchronization-configure-with-directory-extension-attributes).
@@ -36,13 +36,13 @@ Inherits from [entity](../resources/entity.md).
 |name           |String     |Name of the directory. Must be unique within the [synchronization schema](synchronization-synchronizationschema.md). Not nullable.|
 |objects        |[objectDefinition](synchronization-objectdefinition.md) collection    |Collection of objects supported by the directory.|
 |readOnly|Boolean| Whether this object is read-only.|
-|version|String|Read only value that indicates version discovered. `null` if discovery has not yet occurred.|
+|version|String|Read only value that indicates version discovered. `null` if discovery hasn't yet occurred.|
 |discoveryDateTime|DateTimeOffset| Represents the discovery date and time using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |discoverabilities|directoryDefinitionDiscoverabilities| Read-only value indicating what type of discovery the app supports. The possible values are: `None`, `AttributeNames`, `AttributeDataTypes`, `AttributeReadOnly`, `ReferenceAttributes`, `UnknownFutureValue`. This is a multi-valued object.| 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

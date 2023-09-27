@@ -17,6 +17,8 @@ Get the properties of an [insightsSettings](../resources/insightssettings.md) ob
 
 To learn how to customize privacy for people insights in an organization, see [Customize people insights privacy in Microsoft Graph](/graph/insights-customize-people-insights-privacy).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).

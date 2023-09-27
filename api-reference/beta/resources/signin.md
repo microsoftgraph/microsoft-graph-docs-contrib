@@ -30,7 +30,7 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 ## Properties
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|appDisplayName|String|The application name displayed in the Azure portal. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
+|appDisplayName|String|The application name displayed in the Microsoft Entra admin center. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |appId|String|The application identifier in Azure Active Directory. <br/><br/> Supports `$filter` (`eq`).|
 |appliedConditionalAccessPolicies|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|A list of conditional access policies that are triggered by the corresponding sign-in activity.|
 |appliedEventListeners|[appliedAuthenticationEventListener](../resources/appliedauthenticationeventlistener.md) collection|Detailed information about the listeners, such as Azure Logic Apps and Azure Functions, that were triggered by the corresponding events in the sign-in event.|

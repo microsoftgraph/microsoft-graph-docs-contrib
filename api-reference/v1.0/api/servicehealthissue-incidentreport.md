@@ -14,6 +14,8 @@ Provide the Post-Incident Review (PIR) document of a specified service issue for
 
 An issue only with status of `PostIncidentReviewPublished` indicates that the PIR document exists for the issue. The operation returns an error if the specified issue doesn't exist for the tenant or if PIR document does not exist for the issue.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
