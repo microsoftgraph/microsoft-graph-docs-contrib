@@ -17,6 +17,8 @@ Create a new [conversation](../resources/conversation.md) by including a thread 
 
 Use [reply thread](conversationthread-reply.md) or [reply post](post-reply.md) to further post to that conversation.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -1,7 +1,7 @@
 ---
 title: "message: unsubscribe"
 description: "Submits a email request on behalf of the signed-in user to unsubscribe from an email distribution list. Uses the information in the `List-Unsubscribe` header."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -24,6 +24,8 @@ Setting that header would also set the **unsubscribeEnabled** property of the [m
 If the **unsubscribeEnabled** property of a message is `true`, you can use the **unsubscribe** action to unsubscribe the user from similar future messages as managed by the message sender.
 
 A successful **unsubscribe** action moves the message to the **Deleted Items** folder. The actual exclusion of the user from future mail distribution is managed by the sender.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -100,7 +102,7 @@ POST https://graph.microsoft.com/beta/me/messages/{id}/unsubscribe
 ---
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -15,7 +15,7 @@ request_body = PlannerPlan(
 	title = "title-value",
 )
 
-result = await graph_client.planner.plans.post(request_body = request_body)
+result = await graph_client.planner.plans.post(body = request_body)
 
 
 ```

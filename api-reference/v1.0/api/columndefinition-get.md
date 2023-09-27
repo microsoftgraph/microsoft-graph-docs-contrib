@@ -15,6 +15,8 @@ Retrieve the metadata for a [site][], a [list][], or a [contentType][] [column][
 
   
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
   

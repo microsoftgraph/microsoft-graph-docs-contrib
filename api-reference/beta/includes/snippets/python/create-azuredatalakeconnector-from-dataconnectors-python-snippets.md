@@ -16,7 +16,7 @@ request_body = AzureDataLakeConnector(
 	}
 )
 
-result = await graph_client.external.industry_data.data_connectors.post(request_body = request_body)
+result = await graph_client.external.industry_data.data_connectors.post(body = request_body)
 
 
 ```

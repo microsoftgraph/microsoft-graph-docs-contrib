@@ -5,6 +5,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```bash
 
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
-mgc-beta oauth2permission-grants delta get
+mgc-beta oauth2-permission-grants delta get
 
 ```

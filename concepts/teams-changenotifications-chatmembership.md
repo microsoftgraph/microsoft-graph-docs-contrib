@@ -13,6 +13,9 @@ Change notifications enable you to subscribe to changes (create and delete) in c
 
 Continue with this article about scenarios for the **conversationMember** resource in the [chat](/graph/api/resources/chat) context. Or, find out about [change notifications for other Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
+> [!NOTE]
+> If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise your subscription request will fail with the following error message: *lifecycleNotificationUrl is a required property for subscription creation on this resource when the expirationDateTime value is set to greater than 1 hour*.
+
 ## Subscribe to changes in membership of any chat at tenant level
 
 To get change notifications for membership changes in any chat across the tenant, subscribe to `/chats/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
@@ -117,21 +120,21 @@ For notifications with resource data, the payload looks like the following. This
 {
     "value": [{
         "subscriptionId": "c0125ef2-7a87-4e94-aa71-b995510f369b",
-		"changeType": "Created",
-		"clientState": "<<--SpecifiedClientState-->>",
-		"subscriptionExpirationDateTime": "2021-06-03T11:04:58.5537601+00:00",
-		"resource": "chats('19:1273a016-201d-4f95-8083-1b7f99b3edeb_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces')/members('MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOToxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWJfOTc2ZjRiMzEtZmQwMS00ZTBiLTkxNzgtMjljYzQwYzE0NDM4QHVucS5nYmwuc3BhY2VzIyMyZmM2MDY2My0xOWEyLTRhYTQtODUyYy1mN2JhNGU5MGFkYTI=')",
-		"resourceData": {
-			"id": "MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOToxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWJfOTc2ZjRiMzEtZmQwMS00ZTBiLTkxNzgtMjljYzQwYzE0NDM4QHVucS5nYmwuc3BhY2VzIyMyZmM2MDY2My0xOWEyLTRhYTQtODUyYy1mN2JhNGU5MGFkYTI=",
-			"@odata.type": "#microsoft.graph.aadUserConversationMember",
-			"@odata.id": "chats('19:1273a016-201d-4f95-8083-1b7f99b3edeb_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces')/members('MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOToxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWJfOTc2ZjRiMzEtZmQwMS00ZTBiLTkxNzgtMjljYzQwYzE0NDM4QHVucS5nYmwuc3BhY2VzIyMyZmM2MDY2My0xOWEyLTRhYTQtODUyYy1mN2JhNGU5MGFkYTI=')"
-		},
-		"EncryptedContent": {
-			"data": "<<--EncryptedContent-->>",
-			"dataKey": "<<--EnryptedDataKeyUsedForEncryptingContent-->>",
-			"encryptionCertificateId": "<<--IdOfTheCertificateUsedForEncryptingDataKey-->>",
-			"encryptionCertificateThumbprint": "<<--ThumbprintOfTheCertificateUsedForEncryptingDataKey-->>"
-		},
+        "changeType": "Created",
+        "clientState": "<<--SpecifiedClientState-->>",
+        "subscriptionExpirationDateTime": "2021-06-03T11:04:58.5537601+00:00",
+        "resource": "chats('19:1273a016-201d-4f95-8083-1b7f99b3edeb_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces')/members('MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOToxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWJfOTc2ZjRiMzEtZmQwMS00ZTBiLTkxNzgtMjljYzQwYzE0NDM4QHVucS5nYmwuc3BhY2VzIyMyZmM2MDY2My0xOWEyLTRhYTQtODUyYy1mN2JhNGU5MGFkYTI=')",
+        "resourceData": {
+            "id": "MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOToxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWJfOTc2ZjRiMzEtZmQwMS00ZTBiLTkxNzgtMjljYzQwYzE0NDM4QHVucS5nYmwuc3BhY2VzIyMyZmM2MDY2My0xOWEyLTRhYTQtODUyYy1mN2JhNGU5MGFkYTI=",
+            "@odata.type": "#microsoft.graph.aadUserConversationMember",
+            "@odata.id": "chats('19:1273a016-201d-4f95-8083-1b7f99b3edeb_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces')/members('MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOToxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWJfOTc2ZjRiMzEtZmQwMS00ZTBiLTkxNzgtMjljYzQwYzE0NDM4QHVucS5nYmwuc3BhY2VzIyMyZmM2MDY2My0xOWEyLTRhYTQtODUyYy1mN2JhNGU5MGFkYTI=')"
+        },
+        "EncryptedContent": {
+            "data": "<<--EncryptedContent-->>",
+            "dataKey": "<<--EnryptedDataKeyUsedForEncryptingContent-->>",
+            "encryptionCertificateId": "<<--IdOfTheCertificateUsedForEncryptingDataKey-->>",
+            "encryptionCertificateThumbprint": "<<--ThumbprintOfTheCertificateUsedForEncryptingDataKey-->>"
+        },
         "tenantId": "<<--TenantForWhichNotificationWasSent-->>"
     }],
     "validationTokens": ["<<--ValidationTokens-->>"]
@@ -145,15 +148,15 @@ The decrypted notification payload looks like the following. The payload conform
 ```json
 {
     "userId": "2fc60663-19a2-4aa4-852c-f7ba4e90ada2",
-	"email": null,
-	"tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34",
-	"id": "MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOToxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWJfOTc2ZjRiMzEtZmQwMS00ZTBiLTkxNzgtMjljYzQwYzE0NDM4QHVucS5nYmwuc3BhY2VzIyMyZmM2MDY2My0xOWEyLTRhYTQtODUyYy1mN2JhNGU5MGFkYTI=",
-	"roles": [
-	"Owner"
-	],
-	"displayName": null,
-	"visibleHistoryStartDateTime": "1970-01-01T00:00:00Z",
-	"user": null
+    "email": null,
+    "tenantId": "2432b57b-0abd-43db-aa7b-16eadd115d34",
+    "id": "MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOToxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWJfOTc2ZjRiMzEtZmQwMS00ZTBiLTkxNzgtMjljYzQwYzE0NDM4QHVucS5nYmwuc3BhY2VzIyMyZmM2MDY2My0xOWEyLTRhYTQtODUyYy1mN2JhNGU5MGFkYTI=",
+    "roles": [
+    "Owner"
+    ],
+    "displayName": null,
+    "visibleHistoryStartDateTime": "1970-01-01T00:00:00Z",
+    "user": null
 }
 ```
 
@@ -164,20 +167,20 @@ The following payload describes the information sent in the request for notifica
 ```json
 {
     "subscriptionId": "cae901f1-ad1d-41b1-95b7-37029ed327bf",
-	"changeType": "Created",
-	"tenantId": "<<--TenantForWhichNotificationWasSent-->>",
-	"clientState": "<<--SpecifiedClientState-->>",
-	"subscriptionExpirationDateTime": "2021-06-03T10:58:54.7656077+00:00",
-	"resource": "chats('19:1273a016-201d-4f95-8083-1b7f99b3edeb_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces')/members('MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOToxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWJfOTc2ZjRiMzEtZmQwMS00ZTBiLTkxNzgtMjljYzQwYzE0NDM4QHVucS5nYmwuc3BhY2VzIyMyZmM2MDY2My0xOWEyLTRhYTQtODUyYy1mN2JhNGU5MGFkYTI=')",
-	"resourceData": {
-		"id": "MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOToxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWJfOTc2ZjRiMzEtZmQwMS00ZTBiLTkxNzgtMjljYzQwYzE0NDM4QHVucS5nYmwuc3BhY2VzIyMyZmM2MDY2My0xOWEyLTRhYTQtODUyYy1mN2JhNGU5MGFkYTI=",
-		"@odata.type": "#microsoft.graph.aadUserConversationMember",
-		"@odata.id": "chats('19:1273a016-201d-4f95-8083-1b7f99b3edeb_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces')/members('MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOToxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWJfOTc2ZjRiMzEtZmQwMS00ZTBiLTkxNzgtMjljYzQwYzE0NDM4QHVucS5nYmwuc3BhY2VzIyMyZmM2MDY2My0xOWEyLTRhYTQtODUyYy1mN2JhNGU5MGFkYTI=')"
-	}
+    "changeType": "Created",
+    "tenantId": "<<--TenantForWhichNotificationWasSent-->>",
+    "clientState": "<<--SpecifiedClientState-->>",
+    "subscriptionExpirationDateTime": "2021-06-03T10:58:54.7656077+00:00",
+    "resource": "chats('19:1273a016-201d-4f95-8083-1b7f99b3edeb_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces')/members('MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOToxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWJfOTc2ZjRiMzEtZmQwMS00ZTBiLTkxNzgtMjljYzQwYzE0NDM4QHVucS5nYmwuc3BhY2VzIyMyZmM2MDY2My0xOWEyLTRhYTQtODUyYy1mN2JhNGU5MGFkYTI=')",
+    "resourceData": {
+        "id": "MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOToxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWJfOTc2ZjRiMzEtZmQwMS00ZTBiLTkxNzgtMjljYzQwYzE0NDM4QHVucS5nYmwuc3BhY2VzIyMyZmM2MDY2My0xOWEyLTRhYTQtODUyYy1mN2JhNGU5MGFkYTI=",
+        "@odata.type": "#microsoft.graph.aadUserConversationMember",
+        "@odata.id": "chats('19:1273a016-201d-4f95-8083-1b7f99b3edeb_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces')/members('MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOToxMjczYTAxNi0yMDFkLTRmOTUtODA4My0xYjdmOTliM2VkZWJfOTc2ZjRiMzEtZmQwMS00ZTBiLTkxNzgtMjljYzQwYzE0NDM4QHVucS5nYmwuc3BhY2VzIyMyZmM2MDY2My0xOWEyLTRhYTQtODUyYy1mN2JhNGU5MGFkYTI=')"
+    }
 }
 ```
 
-The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the chat member details. GET calls will always return the current state of the chat member details. If the chat member details has changed between when the notification is sent and when the chat member details were retrieved, the operation will return the updated chat member details.
+The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload for the chat member details. GET calls always return the current state of the chat member details. If the chat member details changes between when the notification is sent and when the chat member details are retrieved, the operation returns the updated chat member details.
 
 ## See also
 - [Microsoft Graph change notifications](webhooks.md)

@@ -18,7 +18,7 @@ Provides information about workbook session.
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here's a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",
@@ -37,7 +37,7 @@ Here is a JSON representation of the resource
 
 | Property | Type  | Description                               |
 |:---------|:------|:------------------------------------------|
-| id  | string | Id of the workbook session. |
+| id  | string | ID of the workbook session. |
 | persistChanges | string |  `true` for persistent session. `false` for non-persistent session (view mode) |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

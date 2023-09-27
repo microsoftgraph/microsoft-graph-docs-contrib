@@ -13,7 +13,7 @@ request_body = GetUserOwnedObjectsPostRequestBody(
 	type = "Group",
 )
 
-result = await graph_client.directory.deleted_items.get_user_owned_objects.post(request_body = request_body)
+result = await graph_client.directory.deleted_items.get_user_owned_objects.post(body = request_body)
 
 
 ```

@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 Retrieve the requests for active role assignments to principals. The active assignments include those made through [assignments and activation requests](rbacapplication-post-roleassignmentschedulerequests.md), and directly through the [role assignments API](../resources/unifiedroleassignment.md). The role assignments can be permanently active with or without an expiry date, or temporarily active after user activation of eligible assignments.
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -16,6 +16,8 @@ Get a list of [catalogEntry](../resources/windowsupdates-catalogentry.md) resour
 
 Currently, this operation returns entries of the [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md) or [qualityUpdateCatalog](../resources/windowsupdates-qualityupdatecatalogentry.md) types, inherited from **catalogEntry**. 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -35,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /admin/windows/updates/catalog/entries
 ```
 ## Optional query parameters
-This method supports some of the [OData query parameters](/graph/query-parameters) to help customize the response, including `$count`, `$filter`, `$orderBy`, `$select`, `$skip`, and `$top`.
+This method supports some of the [OData query parameters](/graph/query-parameters) to help customize the response, including `$count`, `$filter`, `$orderby`, `$select`, `$skip`, and `$top`.
 
 To use a query parameter on a property that is not inherited from **catalogEntry**, include the full resource type for the property. For example, to filter on the **version** property of [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md) that equals 'Windows 11, version 22H2' , use `?$filter=microsoft.graph.windowsUpdates.featureUpdateCatalogEntry/version eq 'Windows 11, version 22H2'`.
 
@@ -128,11 +130,24 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.qualityUpdateCatalogEntry",
       "id": "d0c03fbb-43b9-4dff-840b-974ef227384d",
-      "displayName": "String",
-      "releaseDateTime": "String (timestamp)",
-      "deployableUntilDateTime": "String (timestamp)",
+      "displayName": "07/11/2023 - 2023.07 B SecurityUpdate for Windows 10 and later",
+      "catalogName": "2023-07 Cumulative Update for Windows 10 and later",
+      "shortName": "2023.07 B",
+      "releaseDateTime": "2023-07-11T00:00:00Z",
+      "deployableUntilDateTime": null,
       "isExpeditable": true,
-      "qualityUpdateClassification": "security"
+      "qualityUpdateClassification": "security",
+      "qualityUpdateCadence": "monthly",
+      "cveSeverityInformation": {
+        "maxSeverity": "critical",
+        "maxBaseScore": 9.8,
+        "exploitedCves": [
+          {
+            "number": "CVE-2023-32046",
+            "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-32046"
+          }
+        ]
+      }
     }
   ]
 }

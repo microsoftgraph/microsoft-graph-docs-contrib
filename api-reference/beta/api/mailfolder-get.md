@@ -1,7 +1,7 @@
 ---
 title: "Get mailFolder"
 description: "Retrieve the properties and relationships of a message folder object."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -19,6 +19,8 @@ The following list shows the two existing scenarios where an app can get another
 
 * If the app has application permissions, or,
 * If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user. For more details, see [Get Outlook messages in a shared or delegated folder](/graph/outlook-share-messages-folders).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

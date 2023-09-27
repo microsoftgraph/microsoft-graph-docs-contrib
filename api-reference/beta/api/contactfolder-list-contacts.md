@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get all the contacts in the signed-in user's mailbox (.../me/contacts), or from the specified contact folder.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

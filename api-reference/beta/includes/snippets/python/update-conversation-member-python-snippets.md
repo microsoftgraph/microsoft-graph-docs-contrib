@@ -15,7 +15,7 @@ request_body = AadUserConversationMember(
 	]
 )
 
-result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').members.by_member_id('conversationMember-id').patch(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').members.by_member_id('conversationMember-id').patch(body = request_body)
 
 
 ```

@@ -12,6 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get the list of directory objects that are owned by the user.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -38,14 +41,14 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Accept  | application/json|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -91,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/me/ownedObjects
 ---
 
 ##### Response
-Here is an example of the response. 
+Here's an example of the response. 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

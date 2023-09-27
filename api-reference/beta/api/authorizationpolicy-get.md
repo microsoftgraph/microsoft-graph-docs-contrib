@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties of an [authorizationPolicy](../resources/authorizationpolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -53,10 +55,14 @@ If successful, this method returns a `200 OK` response code and the single [auth
 
 The following is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "get_authorizationpolicy"
+}-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/policies/authorizationPolicy
 ```
----
 
 ### Response
 
@@ -75,24 +81,32 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authorizationPolicy/$entity",
-    "id": "authorizationPolicy",
-    "displayName": "Authorization Policy",
-    "description": "Used to manage authorization related settings across the company.",
-    "enabledPreviewFeatures": [],
-    "guestUserRoleId": "10dae51f-b6af-4016-8d66-8c2a99b929b3",
-    "allowUserConsentForRiskyApps": false,
-    "blockMsolPowerShell": ""
-    "defaultUserRolePermissions": {
-        "allowedToCreateApps": true,
-        "allowedToCreateSecurityGroups": false,
-        "allowedToReadOtherUsers": true
-    }
-    "allowedToSignUpEmailBasedSubscriptions": false,
-    "allowedToUseSSPR": true,
-    "allowEmailVerifiedUsersToJoinOrganization": true,
-    "permissionGrantPolicyIdsAssignedToDefaultUserRole": [
-        "managePermissionGrantsForSelf.microsoft-user-default-low"
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authorizationPolicy",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET policies/authorizationPolicy?$select=allowedToSignUpEmailBasedSubscriptions,allowedToUseSSPR",
+    "value": [
+        {
+            "id": "authorizationPolicy",
+            "allowInvitesFrom": "everyone",
+            "allowedToSignUpEmailBasedSubscriptions": true,
+            "allowedToUseSSPR": true,
+            "allowEmailVerifiedUsersToJoinOrganization": false,
+            "allowUserConsentForRiskyApps": null,
+            "blockMsolPowerShell": false,
+            "description": "Used to manage authorization related settings across the company.",
+            "displayName": "Authorization Policy",
+            "enabledPreviewFeatures": [],
+            "guestUserRoleId": "10dae51f-b6af-4016-8d66-8c2a99b929b3",
+            "permissionGrantPolicyIdsAssignedToDefaultUserRole": [
+                "ManagePermissionGrantsForSelf.microsoft-user-default-legacy"
+            ],
+            "defaultUserRolePermissions": {
+                "allowedToCreateApps": false,
+                "allowedToCreateSecurityGroups": true,
+                "allowedToCreateTenants": true,
+                "allowedToReadBitlockerKeysForOwnedDevice": true,
+                "allowedToReadOtherUsers": true
+            }
+        }
     ]
 }
 ```

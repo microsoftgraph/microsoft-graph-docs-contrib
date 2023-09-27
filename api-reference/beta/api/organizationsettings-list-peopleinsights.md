@@ -1,6 +1,6 @@
 ---
 title: "List peopleInsights"
-description: "Retrieve properties of an insightsSettings object for displaying or returning people insights in an organization."
+description: "Get the properties of an insightsSettings object for displaying or returning people insights in an organization."
 author: "simonhult"
 ms.localizationpriority: medium
 ms.prod: "insights"
@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 Get the properties of an [insightsSettings](../resources/insightssettings.md) object for displaying or returning people insights in an organization.
 
-To learn how to customize privacy for people insights in an organization, see [Customize people insights privacy](/graph/insights-customize-people-insights-privacy).
+To learn how to customize privacy for people insights in an organization, see [Customize people insights privacy in Microsoft Graph](/graph/insights-customize-people-insights-privacy).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -46,11 +48,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [insightsSettings](../resources/insightssettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [insightsSettings](../resources/insightssettings.md) object in the response body.
 
 ## Example 
+
 ### Request
 
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -98,7 +102,8 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/peop
 
 ### Response
 
-Here is an example of the response. 
+The following is an example of the response. 
+
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

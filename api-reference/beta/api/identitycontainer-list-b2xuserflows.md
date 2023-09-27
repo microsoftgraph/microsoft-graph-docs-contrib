@@ -3,7 +3,7 @@ title: "List b2xIdentityUserFlows"
 description: "Retrieve a list of b2xIdentityUserFlow objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "jkdouglas"
+author: "nanguil"
 ms.prod: "identity-and-sign-in"
 ---
 
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) objects.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -40,7 +42,7 @@ GET /identity/b2xUserFlows
 
 ## Optional query parameters
 
-You can use `$expand` to expand specific user flow properties that are not expanded by default.
+You can use `$expand` to expand specific user flow properties that aren't expanded by default.
 
 For more information, see [OData query parameters](/graph/query-parameters).
 
@@ -52,7 +54,7 @@ For more information, see [OData query parameters](/graph/query-parameters).
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -64,7 +66,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -114,7 +116,7 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 
@@ -150,7 +152,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -200,7 +202,7 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows?$expand=identityProvi
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
 

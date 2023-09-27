@@ -23,6 +23,8 @@ There are two scenarios where an app can get an event in another user's calendar
 Since the **event** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in an **event** instance.
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ### Support various time zones
 
 For all GET operations that return events, you can use the `Prefer: outlook.timezone` header to specify the time zone for the event start and end times in the response. 

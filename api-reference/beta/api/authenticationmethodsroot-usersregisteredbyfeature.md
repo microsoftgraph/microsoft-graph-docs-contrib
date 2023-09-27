@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get the number of users capable of multi-factor authentication, self-service password reset, and passwordless authentication.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 The following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

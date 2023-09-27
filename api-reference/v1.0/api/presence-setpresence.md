@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Set the state of a user's presence session as an application.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ### Presence sessions
 A user can have multiple presence sessions because the user can be on multiple Teams clients (desktop, mobile, and web). Each Teams client has an independent presence session and the user's presence is an aggregated state from all the sessions behind.
 

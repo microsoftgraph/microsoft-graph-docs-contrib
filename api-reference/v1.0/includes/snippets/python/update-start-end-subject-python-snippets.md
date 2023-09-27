@@ -14,7 +14,7 @@ request_body = OnlineMeeting(
 	subject = "Patch Meeting Subject",
 )
 
-result = await graph_client.me.online_meetings.by_online_meeting_id('onlineMeeting-id').patch(request_body = request_body)
+result = await graph_client.me.online_meetings.by_online_meeting_id('onlineMeeting-id').patch(body = request_body)
 
 
 ```

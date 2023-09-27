@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get the list of [timeOff](../resources/timeoff.md) instances in a [schedule](../resources/schedule.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

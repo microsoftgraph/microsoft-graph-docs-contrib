@@ -18,7 +18,7 @@ request_body = AadUserConversationMember(
 	}
 )
 
-result = await graph_client.chats.by_chat_id('chat-id').members.post(request_body = request_body)
+result = await graph_client.chats.by_chat_id('chat-id').members.post(body = request_body)
 
 
 ```
