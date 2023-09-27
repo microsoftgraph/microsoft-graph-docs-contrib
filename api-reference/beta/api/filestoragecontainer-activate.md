@@ -11,14 +11,16 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-Activate a fileStorageContainer. The application calling this API must have pewrmissions to enumerate permissions on fileStorageContainer of the containerType the fileStoreageContainer belongs to.
+Activate a fileStorageContainer. 
 
 FileStorageContainers are created in an inactive state, indicated by the container's status property. A container must be activated in 24 hours after creation or will be automatically deleted. Upon successful activation, the container's status property is set to "active".
 
 A fileStorageContainer can be activated by either calling the activate API, or calling any API that mutates the container or its content.
 
+The application calling this API must have write permission to containers of the containerType the container belongs to.
+
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). The application calling this API must have permissions to update containers of the containerType the container belongs to.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). 
 
 
 |Permission type|Permissions (from least to most privileged)|
