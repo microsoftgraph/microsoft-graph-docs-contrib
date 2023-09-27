@@ -51,7 +51,7 @@ The latency of change notifications and the maximum subscription expiration peri
         "resource":"communications/callRecords/{Call id}",
         "subscriptionExpirationDateTime":"2023-02-28T00:00:00.000+00:00",
         "resourceData":{
-            "@odata.type":"#Microsoft.Graph.callrecord",
+            "@odata.type":"#Microsoft.Graph.callRecord",
             "@odata.id":"communications/callRecords/{Call id}",
             "id":"{Call id}"
         },
