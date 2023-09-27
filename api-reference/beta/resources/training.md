@@ -31,14 +31,14 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |availabilityStatus|trainingAvailabilityStatus|Training availability status.Possible values are: `unknown`, `notAvailable`, `available`, `archive`, `delete`, `unknownFutureValue`.|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the training.|
-|createdDateTime|DateTimeOffset|Date and time when the training was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|createdDateTime|DateTimeOffset|Date and time when the training was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|The description for the training.|
 |displayName|String|The display name for the training.|
 |durationInMinutes|Int32|Training duration.|
 |hasEvaluation|Boolean|Indicates whether the training has any evaluation.|
 |id|String|Unique identifier for the **training** object. Inherited from [entity](../resources/entity.md).|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who last modified the training.|
-|lastModifiedDateTime|DateTimeOffset|Date and time when the training was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastModifiedDateTime|DateTimeOffset|Date and time when the training was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |source|simulationContentSource|Training content source. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
 |supportedLocales|String collection|Supported locales for content for the associated training.|
 |tags|String collection|Training tags.|
