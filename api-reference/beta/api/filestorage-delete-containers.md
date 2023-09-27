@@ -10,9 +10,10 @@ doc_type: apiPageType
 # Delete fileStorageContainer
 Namespace: microsoft.graph
 
+> [!IMPORTANT]
+> APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
 
-
-Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object. This is a non-restorable deletion. The application calling this API must have permissions to delete containers of the containerType the container belongs to.
+Delete a [fileStorageContainer](../resources/filestoragecontainer.md). This is a non-restorable deletion. The application calling this API must have permissions to delete containers of the respective container type.
 
 
 ## Permissions
@@ -22,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
 |Delegated (personal Microsoft account)|FileStorageContainer.Selected|
-|Application|**TODO: Provide applicable permissions.**|
+|Application|FileStorageContainer.Selected|
 
 ## HTTP request
 
