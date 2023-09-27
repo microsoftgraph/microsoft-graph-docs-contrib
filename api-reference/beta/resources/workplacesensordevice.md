@@ -1,6 +1,6 @@
 ---
 title: "workplaceSensorDevice resource type"
-description: "A sensor device is a type of hardware that can host one or more sensors. Each sensor can collect and report data about physical or environmental conditions, such as occupancy, people count, inferred occupancy, temperature, and more."
+description: "Represents a hardware capable of hosting multiple sensors that collect and report data on physical or environmental conditions, including occupancy, headcount, inferred occupancy, temperature, and more."
 author: "ms-amakumar"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A sensor device is a type of hardware that can host one or more sensors. Each sensor can collect and report data about physical or environmental conditions, such as occupancy, people count, inferred occupancy, temperature, and more.
-
+Represents a hardware capable of hosting multiple sensors that collect and report data on physical or environmental conditions, including occupancy, headcount, inferred occupancy, temperature, and more.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -41,7 +40,7 @@ Inherits from [entity](../resources/entity.md).
 |manufacturer|String| The manufacturer for the device. |
 |placeId|String| The unique identifier of the place where the device is located. If the device is installed in a room featuring a mailbox, this property should match the ExternalDirectoryObjectId or Entra ID object Id of the room mailbox. |
 |sensors|[workplaceSensor](../resources/workplacesensor.md) collection| A list of sensors associated with the device that collect and report data about physical or environmental conditions, such as occupancy, people count, inferred occupancy, temperature etc. |
-|tags|String collection| A list of custom tags associated with the device. Supports $filter. |
+|tags|String collection| A list of custom tags associated with the device. |
 
 ## Relationships
 None.

@@ -1,6 +1,6 @@
 ---
 title: "workplaceSensor resource type"
-description: "A sensor on a device is a resource that measures and reports various physical or environmental conditions, such as occupancy, people count, inferred occupancy, temperature, and more."
+description: "Represents sensor on a hardware that collect and report data on physical or environmental conditions, including occupancy, headcount, inferred occupancy, temperature, and more."
 author: "ms-amakumar"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A sensor on a device is a resource that measures and reports various physical or environmental conditions, such as occupancy, people count, inferred occupancy, temperature, and more.
+Represents sensor on a hardware that collect and report data on physical or environmental conditions, including occupancy, headcount, inferred occupancy, temperature, and more.
 
 ## Properties
 |Property|Type|Description|

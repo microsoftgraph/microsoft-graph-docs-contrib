@@ -1614,24 +1614,26 @@ items:
                 href: api/place-get.md
               - name: Update place
                 href: api/place-update.md
+          - name: Workplace (preview)
+            items:
               - name: Workplace
+                href: resources/workplace.md
+              - name: Sensor device
                 items:
-                  - name: Workplace Sensor Device
-                    items:
-                      - name: Workplace Sensor Device
-                        href: resources/workplacesensordevice.md
-                      - name: List
-                        href: api/workplace-list-sensordevices.md
-                      - name: Create
-                        href: api/workplace-post-sensordevices.md
-                      - name: Get
-                        href: api/workplacesensordevice-get.md
-                      - name: Update
-                        href: api/workplacesensordevice-update.md
-                      - name: Delete
-                        href: api/workplace-delete-sensordevices.md
-                      - name: Ingest Telemetry
-                        href: api/workplacesensordevice-ingesttelemetry.md
+                  - name: Sensor device
+                    href: resources/workplacesensordevice.md
+                  - name: List sensor devices
+                    href: api/workplace-list-sensordevices.md
+                  - name: Create sensor device
+                    href: api/workplace-post-sensordevices.md
+                  - name: Get sensor device
+                    href: api/workplacesensordevice-get.md
+                  - name: Update sensor device
+                    href: api/workplacesensordevice-update.md
+                  - name: Delete sensor device
+                    href: api/workplace-delete-sensordevices.md
+                  - name: Ingest telemetry
+                    href: api/workplacesensordevice-ingesttelemetry.md    
       - name: Change notifications
         items:
           - name: Overview

@@ -1,6 +1,6 @@
 ---
 title: "List workplaceSensorDevices"
-description: "Get a list of the workplace sensor devices created for a tenant."
+description: "Retrieve a list of workplace sensor devices created for a tenant."
 author: "ms-amakumar"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the workplace sensor devices created for a tenant.
+Retrieve a list of workplace sensor devices created for a tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

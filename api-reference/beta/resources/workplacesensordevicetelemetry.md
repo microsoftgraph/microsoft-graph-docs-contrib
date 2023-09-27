@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Sensor device telemetry represents the data collected and reported by a sensor on a device, such as occupancy, people count, inferred occupancy, temperature, and more.
+Represents the data collected and reported by a sensor on on physical or environmental conditions, including occupancy, headcount, inferred occupancy, temperature, and more.
 
 ## Properties
 
