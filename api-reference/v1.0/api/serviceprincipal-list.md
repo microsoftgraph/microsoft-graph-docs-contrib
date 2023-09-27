@@ -158,7 +158,7 @@ ConsistencyLevel: eventual
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true
 } -->
 ```http

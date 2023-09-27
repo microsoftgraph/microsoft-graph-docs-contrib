@@ -276,7 +276,7 @@ ConsistencyLevel: eventual
 Here's an example of the response.
 
 <!-- {
-  "blockType": "response",
+  "blockType": "ignored",
   "truncated": true
 } -->
 ```http

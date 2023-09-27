@@ -470,10 +470,8 @@ ConsistencyLevel: eventual
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user",
-  "isCollection": true
+  "blockType": "ignored",
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
