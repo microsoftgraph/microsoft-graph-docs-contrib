@@ -29,12 +29,12 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the notification.|
-|createdDateTime|DateTimeOffset|Date and time when the notification was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|createdDateTime|DateTimeOffset|Date and time when the notification was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|Description of the notification as defined by the user.|
 |displayName|String|Name of the notification as defined by the user.|
 |id|String|Unique identifier for the **endUserNotification** object. Inherited from [entity](../resources/entity.md).|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who last modified the notification.|
-|lastModifiedDateTime|DateTimeOffset|Date and time when the notification was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastModifiedDateTime|DateTimeOffset|Date and time when the notification was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |notificationType|endUserNotificationType|Type of notification. Possible values are: `unknown`, `positiveReinforcement`, `noTraining`, `trainingAssignment`, `trainingReminder`, `unknownFutureValue`.|
 |source|simulationContentSource|The source of the content. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
 |status|simulationContentStatus|The status of the notification. Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
