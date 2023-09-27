@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Represents an abstract type that provides the ability to launch a realistic phishing attack that organizations can learn from.
+
 ## Methods
 
 |Method|Return type|Description|
