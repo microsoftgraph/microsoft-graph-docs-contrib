@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # States, transitions, and limitations for submissions in Microsoft Graph
 
-Submissions are an important part in the interaction between teachers' and students' actions. about the changes in the submission states during the process flow and which education APIs in Microsoft Graph are involved.
+Submissions are an important part of the interaction between teachers' and students' actions. About the changes in the submission state during the process flow and which education APIs in Microsoft Graph are involved.
 
 ## Submission states and transitions
 
