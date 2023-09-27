@@ -21,6 +21,8 @@ Change notifications in Microsoft Graph enable subscriptions to call records, pr
 
 ### Examples
 
+#### Example 1: Subscriptions
+
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
@@ -39,8 +41,7 @@ Change notifications for call records support both `create` and `update` notific
 
 The latency of change notifications and the maximum subscription expiration period are defined in the [change notifications overview](/graph/webhooks).
 
-## Example notification
-
+#### Example 2: Notifications
 ```json
 {
     "value":[{
