@@ -823,6 +823,40 @@
       "SubArea": ""
     },
     {
+    "ChangeList": [
+        {
+          "Id": "e0bcac9c-8d0e-4b23-8bbf-e50150848d35",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppSettings](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppSettings?view=graph-rest-1.0) resource and associated methods.",
+          "Target": "teamsAppSettings"
+        },
+        {
+          "Id": "e0bcac9c-8d0e-4b23-8bbf-e50150848d35",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowUserRequestsForAppAccess",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowUserRequestsForAppAccess** property to the [teamsAppSettings](https://learn.microsoft.com/en-us/graph/api/resources/teamsAppSettings?view=graph-rest-1.0) resource.",
+          "Target": "teamsAppSettings"
+        },
+        {
+          "Id": "e0bcac9c-8d0e-4b23-8bbf-e50150848d35",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppSettings** relationship to the [teamwork](https://learn.microsoft.com/en-us/graph/api/resources/teamwork?view=graph-rest-1.0) resource.",
+          "Target": "teamwork"
+        }
+      ],
+      "Id": "e0bcac9c-8d0e-4b23-8bbf-e50150848d35",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-09-26T19:01:04.2041846Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": ""
+    },
+    {
       "ChangeList": [
         {
           "Id": "a7335048-e158-4657-8495-2f32cc86ca9e",

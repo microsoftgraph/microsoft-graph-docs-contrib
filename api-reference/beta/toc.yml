@@ -10316,7 +10316,9 @@ items:
               - name: Cloud PC reports
                 items:
                   - name: Cloud PC reports
-                    href: resources/cloudpcreports.md
+                    href: resources/cloudpcreports.md                  
+                  - name: Get connection quality reports
+                    href: api/cloudpcreports-getconnectionqualityreports.md
                   - name: Get daily aggregated remote connection reports
                     href: api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
                   - name: Get historical remote connection reports
