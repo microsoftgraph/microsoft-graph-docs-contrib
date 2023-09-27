@@ -11,11 +11,12 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+> [!IMPORTANT]
+> APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
 
+The **fileStorageContainerCustomPropertyDictionary** resource is a [dictionary](https://github.com/microsoft/api-guidelines/blob/vNext/graph/patterns/dictionary.md) storing custom properties of the fileStorageContainer in key/value pairs. 
 
-The **fileStorageContainerCustomPropertyDictionary** resource is a [dictionary](https://github.com/microsoft/api-guidelines/blob/vNext/graph/patterns/dictionary.md) storing custom properties of the file storage container in key/value pairs. 
-
-It consists of keys (custom property names) and [fileStorageContainerCustomPropertyValue](../resources/fileStorageContainerCustomPropertyValue.md) values (custom property values).
+Each custom property consists of keys (custom property names) and [fileStorageContainerCustomPropertyValue](../resources/fileStorageContainerCustomPropertyValue.md) values (custom property values).
 
 
 ## Properties
