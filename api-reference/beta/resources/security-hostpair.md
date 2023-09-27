@@ -21,9 +21,10 @@ Represents a pair of parent-child hosts in which the child host is able to be re
 |Method|Return type|Description|
 |:---|:---|:---|
 |[Get hostPair](../api/security-hostpair-get.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md)|Read the properties and relationships of a **hostPair** object.|
-|[List childHostPairs for a host](../api/security-host-list-childhostpairs.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Get a list of **hostPair** objects associated with a host, where that host is the *parent* and has an outgoing pairing to a *child*.|
-|[List hostPairs for a host](../api/security-host-list-hostpairs.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Get a list of **hostPair** objects associated with a host, where the host is either the parent *or* child.|
-|[List parentHostPairs for a host](../api/security-host-list-parenthostpairs.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Get a list of **hostPair** objects associated with a host, where that host is the *child* and has an incoming pairing with a *parent*.|
+|[List hostPairs for a host](../api/security-host-list-hostpairs.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Get a list of **hostPair** objects associated with a specified host, where the host is either the parent *or* child.|
+|[List parentHostPairs for a host as child](../api/security-host-list-parenthostpairs.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Get a list of **hostPair** objects associated with a host, where that host is the *child* and has an incoming pairing with a *parent*.|
+|[List childHostPairs for a host as parent](../api/security-host-list-childhostpairs.md)|[microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection|Get a list of **hostPair** objects associated with a host, where that host is the *parent* and has an outgoing pairing to a *child*.|
+
 
 ## Properties
 |Property|Type|Description|

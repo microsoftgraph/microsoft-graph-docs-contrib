@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Create a new table. The range source address determines the worksheet under which the table will be added. If the table can't be added (for example, because the address is invalid, or the table would overlap with another table), an error is thrown.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Error Handling
 
 This request might occasionally receive a 504 HTTP error. The appropriate response to this error is to repeat the request.

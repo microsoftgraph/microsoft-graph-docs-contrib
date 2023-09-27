@@ -22,8 +22,8 @@ Inherits from [entity](../resources/entity.md).
 |[Create subjectRightsRequest](../api/subjectRightsRequest-post.md)|[subjectRightsRequest](../resources/subjectRightsRequest.md)|Create a new [subjectRightsRequest](../resources/subjectRightsRequest.md) object.|
 |[Get subjectRightsRequest](../api/subjectRightsRequest-get.md)|[subjectRightsRequest](../resources/subjectRightsRequest.md)|Read the properties and relationships of a [subjectRightsRequest](../resources/subjectRightsRequest.md) object.|
 |[Update subjectRightsRequest](../api/subjectRightsRequest-update.md)|[subjectRightsRequest](../resources/subjectRightsRequest.md)|Update the properties of a [subjectRightsRequest](../resources/subjectRightsRequest.md) object.|
-|[getFinalAttachment](../api/subjectRightsRequest-getfinalattachment.md)|Stream|Get the final attachment for the request. The attachment is a zip file that contains all the files that where included by the privacy administrator.|
-|[getFinalReport](../api/subjectRightsRequest-getfinalreport.md)|Stream|Get the final report for the request. The report is a text file that contains information about the files that where included by the privacy administrator.|
+|[getFinalAttachment](../api/subjectRightsRequest-getfinalattachment.md)|Stream|Get the final attachment for the request. The attachment is a zip file that contains all the files that the privacy administrator included.|
+|[getFinalReport](../api/subjectRightsRequest-getfinalreport.md)|Stream|Get the final report for the request. The report is a text file that contains information about the files that the privacy administrator included.|
 |[List notes](../api/subjectRightsRequest-list-notes.md)|[authoredNote](../resources/authorednote.md) collection|Get the authoredNote resources from the notes navigation property.|
 |[Create authoredNote](../api/subjectRightsRequest-post-notes.md)|[authoredNote](../resources/authorednote.md)|Create a new authoredNote object.|
 
@@ -43,19 +43,19 @@ Inherits from [entity](../resources/entity.md).
 |internalDueDateTime|DateTimeOffset|The date and time when the request is internally due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Identity information for the entity that last modified the request.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the request was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|regulations|String collection|List of regulations that this request will fulfill.|
+|regulations|String collection|List of regulations that this request fulfills.|
 |stages|[subjectRightsRequestStageDetail](../resources/subjectRightsRequeststagedetail.md) collection|Information about the different stages for the request.|
-|status|subjectRightsRequestStatus|The status of the request.. Possible values are: `active`, `closed`, `unknownFutureValue`.|
+|status|subjectRightsRequestStatus|The status of the request. Possible values are: `active`, `closed`, `unknownFutureValue`.|
 |type|subjectRightsRequestType|The type of the request. Possible values are: `export`, `delete`,  `access`, `tagForAction`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|notes|[authoredNote](../resources/authorednote.md) collection|List of notes associcated with the request.|
+|notes|[authoredNote](../resources/authorednote.md) collection|List of notes associated with the request.|
 |team|[team](../resources/team.md)|Information about the Microsoft Teams team that was created for the request.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

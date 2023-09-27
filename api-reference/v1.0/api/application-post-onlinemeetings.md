@@ -16,6 +16,8 @@ Create an online meeting on behalf of a user.
 > [!TIP]
 > This API creates a standalone meeting that is not associated with any event on the user's calendar; therefore, meetings created via this API will not show on the user's calendar.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,11 @@ POST /users/{userId}/onlineMeetings
 ```
 
 > [!NOTE]
->- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+<<<<<<< HEAD
+>- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+=======
+>- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+>>>>>>> 41ea870097f52b604869cda08a9b6db33e04d064
 
 ## Request headers
 | Name          | Description               |
@@ -47,7 +53,7 @@ POST /users/{userId}/onlineMeetings
 | Content-type  | application/json. Required. |
 | Accept-Language  | Language. Optional. |
 
-If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header. The default content will be in English.
+If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header. The default content is in English.
 
 ## Request body
 In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.
@@ -67,7 +73,7 @@ The following example creates an online meeting with a user token.
 
 #### Request
 
-The following is an example of a request.
+Here's an example  of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -121,7 +127,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 > **Note:** The response object shown here might be shortened for readability. 
 
@@ -191,7 +197,7 @@ Content-Type: application/json
 }-->
 #### Request
 
-The following is an example of a request.
+Here's an example  of a request.
 
 ```http
 POST https://graph.microsoft.com/v1.0/me/onlineMeetings
@@ -212,7 +218,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 > **Note:** The response object shown here has been shortened for readability. 
 
@@ -296,11 +302,11 @@ The following is an example of the response.
 
 ### Example 3: Create an online meeting that requires a passcode
 
-The following example shows how to add a passcode to a meeting. The passcode is used when you join a meeting with a **joinMeetingId**. For more details, see [joinMeetingIdSettings](../resources/joinmeetingidsettings.md).
+The following example shows how to add a passcode to a meeting. The passcode is used when you join a meeting with a **joinMeetingId**. For more information, see [joinMeetingIdSettings](../resources/joinmeetingidsettings.md).
 
 #### Request
 
-The following is an example of a request.
+Here's an example  of a request.
 
 >**Note:** The passcode is automatically generated and a custom passcode is not supported.
 
@@ -361,7 +367,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -415,13 +421,13 @@ Content-Type: application/json
 }
 ```
 
-### Example 4: Create an online meeting that does not require a passcode
+### Example 4: Create an online meeting that doesn't require a passcode
 
-When **isPasscodeRequired** is set to `false` or when **joinMeetingIdSettings** is not specified in the request, the generated online meeting will not have a passcode.
+When **isPasscodeRequired** is set to `false` or when **joinMeetingIdSettings** isn't specified in the request, the generated online meeting won't have a passcode.
 
 #### Request
 
-The following is an example of a request.
+Here's an example  of a request.
 
 
 # [HTTP](#tab/http)
@@ -493,7 +499,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

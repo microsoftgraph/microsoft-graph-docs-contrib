@@ -1,6 +1,6 @@
 ---
 title: "workbookRange: columnsBefore"
-description: "Gets a certain number of columns to the left of the given range."
+description: "Gets a specific number of columns to the left of the given range."
 author: "lumine2008"
 ms.localizationpriority: medium
 ms.prod: "excel"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Gets a certain number of columns to the left of the given range.
+Gets a specific number of columns to the left of the given range.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,15 +45,15 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/columnsBefore(co
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns `200 OK` response code and [workbookRange](../resources/workbookrange.md) object in the response body.
 
 ## Example
-Here is an example of how to call this API.
+Here's an example of how to call this API.
 ##### Request
-Here is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -75,7 +75,7 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/c
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here's an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

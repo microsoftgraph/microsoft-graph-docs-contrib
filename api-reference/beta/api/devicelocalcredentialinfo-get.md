@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) for a specified device object. 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -49,7 +51,7 @@ GET /deviceLocalCredentials/{deviceId}
 This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -57,10 +59,10 @@ If successful, this method returns a `200 OK` response code and a [deviceLocalCr
 
 ## Examples
 
-### Example 1: Get a device's local adminstrator account credential info
+### Example 1: Get a device's local administrator account credential info
 
 #### Request
-The following is an example of the request. This example does not return the **credentials** property.
+Here's an example of the request. This example doesn't return the **credentials** property.
 
 <!-- {
   "blockType": "request",
@@ -76,7 +78,7 @@ ocp-client-version: "1.2"
 
 
 #### Response
-The following is an example of the response.
+Here's an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -100,10 +102,10 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get the device local adminstrator account credential info with the **credentials** property
+### Example 2: Get the device local administrator account credential info with the **credentials** property
 
 #### Request
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -118,7 +120,7 @@ ocp-client-version: "1.2"
 ```
 
 #### Response
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
