@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Create a new [fileStorageContainer](../resources/filestoragecontainer.md) object. 
 
-For Delegated calls, the calling user will be set as the owner (for tenant-owned contaienrs in Enterprise space) and the principalOwner (for user-owned containers in Consumer space) of the container. Respective container type identified by containerTypeId must be enabled in the tenant and the calling application must have permission to create containers of that type.
+For Delegated calls, the calling user will be set as the owner of the container. Respective container type identified by containerTypeId must be enabled in the tenant and the calling application must have permission to create containers of that type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -61,7 +61,7 @@ If successful, this method returns a `201 Created` response code and a [fileStor
 ## Examples
 
 ### Request
-The following is an example of creating a tenant-owned fileStorageContainer in the Enterprise space.
+The following is an example of creating a fileStorageContainer.
 <!-- {
   "blockType": "request",
   "name": "create_filestoragecontainer_from_filestoragecontainers"
@@ -75,7 +75,6 @@ Content-Type: application/json
   "displayName": "My Application Storage Container",
   "description": "Description of My Application Storage Container",
   "containerTypeId": "91710488-5756-407f-9046-fbe5f0b4de73"
-}
 }
 ```
 
@@ -105,68 +104,3 @@ Content-type: application/json
 
 ```
 
-### Request
-The following is an example of creating a user-owned fileStorageContainer in the Consumer space and expand its permission property.
-<!-- {
-  "blockType": "request",
-  "name": "create_filestoragecontainer_from_filestoragecontainers"
-}
--->
-``` http
-POST https://graph.microsoft.com/beta/storage/fileStorage/containers?$expand=permissions
-Content-Type: application/json
-
-{
-  "displayName": "John's Workspace Container",
-  "containerTypeId": "91710488-5756-407f-9046-fbe5f0b4de73",
-  "permissions": [
-    {
-      "roles": ["principalOwner"],
-      "grantedToV2": {
-        "user": {
-          "userPrincipalName": "john@outlook.com"
-        }
-      }
-    }
-  ]
-}
-```
-
-
-### Response
-The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.fileStorageContainer"
-}
--->
-``` http
-HTTP/1.1 201 Created
-Content-type: application/json
-
-{
-  "@odata.type": "#microsoft.graph.fileStorageContainer",
-  "id": "b!TckuKYHX5EiTvYXxBORoY4cAt3c7WkdMmKCnkhiBBn4ZULWQpZP8T60xBpwpdMmw",
-  "displayName": "John's Workspace Container",
-  "description": "",
-  "containerTypeId": "91710488-5756-407f-9046-fbe5f0b4de73",
-  "status": "inactive",
-  "createdDateTime": "2022-07-23T16:40:50.124Z",
-  "permissions": [
-    {
-      "id": "b3duZXJfaTowIy5mfG1lbWJlcnNoaXB8YWRtaW5Ab2lkY3Rlc3QuY2NzY3RwLm5ldA",
-      "roles": ["principalOwner"],
-      "grantedToV2": {
-        "user": {
-          "id": "2fn94f64b16e",
-          "userPrincipalName": "john@outlook.com",
-          "displayName": "John Doe",
-          "email": "john@outlook.com"
-        }
-      }
-    }
-  ]
-}
-```
