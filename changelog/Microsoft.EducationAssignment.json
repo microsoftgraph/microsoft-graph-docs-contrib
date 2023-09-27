@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "3e9f0779-4339-4ce3-afea-420ed8d03f50",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduCurricula.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduCurricula.ReadWrite.All` to the following operations of the [educationModule](https://learn.microsoft.com/en-us/graph/api/resources/educationModule?view=graph-rest-beta) resource: [POST](https://learn.microsoft.com/en-us/graph/api/educationclass-post-module?view=graph-rest-beta), [UPDATE](https://learn.microsoft.com/en-us/graph/api/educationmodule-update?view=graph-rest-beta), [DELETE](https://learn.microsoft.com/en-us/graph/api/educationmodule-delete?view=graph-rest-beta), [publish](https://learn.microsoft.com/en-us/graph/api/educationmodule-publish?view=graph-rest-beta), [pin](https://learn.microsoft.com/en-us/graph/api/educationmodule-pin?view=graph-rest-beta), [unpin](https://learn.microsoft.com/en-us/graph/api/educationmodule-unpin?view=graph-rest-beta), and [setUpResourcesFolder](https://learn.microsoft.com/en-us/graph/api/educationmodule-setupresourcesfolder?view=graph-rest-beta).",
+          "Target": "educationModule"
+        },
+        {
+          "Id": "3e9f0779-4339-4ce3-afea-420ed8d03f50",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduCurricula.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduCurricula.ReadWrite.All` to the following operations of the [educationModuleResource](https://learn.microsoft.com/en-us/graph/api/resources/educationModuleResource?view=graph-rest-beta) resource: [POST](https://learn.microsoft.com/en-us/graph/api/educationmodule-post-resources?view=graph-rest-beta), [UPDATE](https://learn.microsoft.com/en-us/graph/api/educationmoduleresource-update?view=graph-rest-beta), and [DELETE](https://learn.microsoft.com/en-us/graph/api/educationmoduleresource-delete?view=graph-rest-beta).",
+          "Target": "educationModuleResource"
+        }
+      ],
+      "Id": "3e9f0779-4339-4ce3-afea-420ed8d03f50",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-09-26T00:00:00",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "f42a2acd-7e06-4b84-abdd-5df825fc2845",
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWrite.All",
