@@ -60,7 +60,7 @@ The latency of change notifications and the maximum subscription expiration peri
 }
 ```
 
-- The **Call id** property corresponds to a specific [call record resource](/graph/api/resources/callrecords-callrecord), which can be retrieved using the [Get callRecord](/graph/api/callrecords-callrecord-get) API.
+- The **Call ID** property corresponds to a specific [call record resource](/graph/api/resources/callrecords-callrecord), which can be retrieved using the [Get callRecord](/graph/api/callrecords-callrecord-get) API.
 
 ## See also
 
