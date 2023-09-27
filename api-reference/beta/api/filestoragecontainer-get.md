@@ -1,6 +1,6 @@
 ---
 title: "Get a fileStorageContainer"
-description: "Retrieve the metadata of a fileStorageContainer."
+description: "Retrieve the properties of a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -10,9 +10,12 @@ doc_type: apiPageType
 # Get fileStorageContainer
 Namespace: microsoft.graph
 
-Retrieve the metadata for a [fileStorageContainer](../resources/filestoragecontainer.md) object.
+> [!IMPORTANT]
+> APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
 
-The application calling this API must have read permission to fileStorageContainers of the containerType the fileStoreageContainer belongs to.
+Retrieve the properties of a [fileStorageContainer](../resources/filestoragecontainer.md).
+
+The application calling this API must have read permission to fileStorageContainers of the respective container type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). 
