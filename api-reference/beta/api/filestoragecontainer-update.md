@@ -10,11 +10,12 @@ doc_type: apiPageType
 # Update fileStorageContainer
 Namespace: microsoft.graph
 
-
+> [!IMPORTANT]
+> APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
 
 Update the properties of a [fileStorageContainer](../resources/filestoragecontainer.md) object.
 
-The application calling this API must have read/write permissions to fileStorageContainers of the containerType the fileStoreageContainer belongs to.
+The application calling this API must have read/write permissions to fileStorageContainers of the respective container type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -60,7 +61,7 @@ The following is an example of a request.
 }
 -->
 ``` http
- PATCH /storage/fileStorage/containers/{containerId}
+PATCH /storage/fileStorage/containers/{containerId}
 Content-Type: application/json
 
 {
