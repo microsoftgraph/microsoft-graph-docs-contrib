@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 
 
-Adds [permission](../resources/permission.md) objects to an existing fileStorageContainer. The application calling this API must have permissions to manage access to containers of the containerType the container belongs to.
+Adds [permission](../resources/permission.md) objects to an existing fileStorageContainer. The application calling this API must have permission to add permissions to fileStorageContainers of the containerType the fileStorageContainer belongs to.
 
 
 ## Permissions
