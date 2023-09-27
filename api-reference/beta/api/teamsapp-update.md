@@ -17,6 +17,8 @@ Update an [app](../resources/teamsapp.md) previously published to the Microsoft 
 
 This API specifically updates an app published to your organization's app catalog (the tenant app catalog).  
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

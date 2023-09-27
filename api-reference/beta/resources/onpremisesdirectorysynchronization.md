@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A container for on-premises directory synchronization functionalities that are available for the organization. Only the read and update operations are supported on this resource; create and delete are not supported.
+A container for on-premises directory synchronization functionalities that are available for the organization. Only the read and update operations are supported on this resource; create and delete aren't supported.
 
 ## Methods
 
@@ -36,7 +36,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
