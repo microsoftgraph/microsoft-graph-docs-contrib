@@ -26,6 +26,8 @@ You can use the `$expand` query parameter to optionally include session and segm
 >
 > A call record is created after a call or meeting ends and will remain available for **30 days**. Requests for call records older than 30 days will receive a `404 Not Found` response.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

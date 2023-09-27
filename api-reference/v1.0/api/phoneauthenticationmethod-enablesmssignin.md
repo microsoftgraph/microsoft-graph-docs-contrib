@@ -17,6 +17,8 @@ Enable SMS sign-in for an existing `mobile` phone number registered to a user. T
 * The phone must be unique in the SMS sign-in system (no one else can also be using that number).
 * The user must be enabled for SMS sign-in in the [authentication methods](/azure/active-directory/authentication/concept-authentication-methods) policy.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

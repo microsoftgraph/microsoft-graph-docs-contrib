@@ -15,6 +15,8 @@ Retrieve the list of [sessions](../resources/callrecords-session.md) associated 
 
 If the sessions list is truncated, a `sessions@odata.nextLink` value will be provided to retrieve the next page of sessions. The maximum page size for sessions is 60 entries.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

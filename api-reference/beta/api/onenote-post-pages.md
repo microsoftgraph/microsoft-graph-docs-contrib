@@ -21,6 +21,8 @@ The `POST /onenote/pages` operation is used only to create pages in the current 
 
 > **Note:** There is a limit to the number of pages that can be added to a section using this API. For details, see [Create OneNote pages](/graph/onenote-create-page) for all limitations with this API.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get the properties of an [insightsSettings](../resources/insightssettings.md) object for displaying or returning contact insights in an organization.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
