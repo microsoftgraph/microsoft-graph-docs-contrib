@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Promote a verified subdomain to the root domain. A verified domain has its **isVerified** property set to `true`.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

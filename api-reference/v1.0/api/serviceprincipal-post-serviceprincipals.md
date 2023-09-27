@@ -16,6 +16,8 @@ Create a new [servicePrincipal](../resources/serviceprincipal.md) object.
 > [!IMPORTANT]
 > Adding [**passwordCredential**](../resources/passwordcredential.md) when creating servicePrincipals is not supported. Use the [addPassword](serviceprincipal-addpassword.md) method to add passwords or secrets for a servicePrincipal.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

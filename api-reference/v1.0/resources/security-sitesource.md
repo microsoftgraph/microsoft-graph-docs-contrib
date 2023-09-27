@@ -24,7 +24,7 @@ None.
 |:---|:---|:---|
 |createdBy|[identitySet](../resources/identityset.md)|The user who created the **siteSource**.|
 |createdDateTime|DateTimeOffset|The date and time the **siteSource** was created.|
-|displayName|String|The display name of the **siteSource**. This will be the name of the SharePoint site.|
+|displayName|String|The display name of the **siteSource**. This is the name of the SharePoint site.|
 |id|String| The ID of the **siteSource**. |
 |holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the **siteSource**. The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`.|
 
@@ -34,7 +34,7 @@ None.
 |site|[site](../resources/site.md)|The SharePoint site associated with the **siteSource**.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

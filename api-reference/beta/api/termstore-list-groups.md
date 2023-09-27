@@ -14,6 +14,8 @@ Namespace: microsoft.graph.termStore
 
 Get the list of [group](../resources/termstore-group.md) objects of a [store](../resources/termstore-store.md)
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

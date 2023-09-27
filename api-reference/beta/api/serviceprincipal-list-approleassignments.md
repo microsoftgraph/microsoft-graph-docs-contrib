@@ -20,6 +20,8 @@ App roles that are assigned to service principals are also known as [application
 
 >**Note** This request might have replication delays for app role assignments that were recently granted or removed.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

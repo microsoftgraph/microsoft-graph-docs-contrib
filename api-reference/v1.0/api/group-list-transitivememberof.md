@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get groups that the group is a member of. This operation is transitive and will also include all groups that this group is a nested member of. Unlike getting a user's Microsoft 365 groups, this returns all types of groups, not just Microsoft 365 groups.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -12,7 +12,9 @@ Namespace: microsoft.graph
 
 List the [sites](../resources/site.md) that have been followed by the signed in user.
 
->**Note:** This API has a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=15193) and might return incorrect results. 
+> **Note:** This API has a [known issue](https://developer.microsoft.com/graph/known-issues/?search=15193) and might return incorrect results.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -27,8 +27,16 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 GET /me/drive/items/{id}/workbook/worksheets/{id}/range(address={address})/visibleView/itemAt(index={n})
 GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range(address={address})/visibleView/itemAt(index={n})
-
 ```
+
+## Function parameters
+
+The following table shows the parameters that can be used with this function.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|index|Int32|Index value of the object to be retrieved. Zero-indexed.|
+
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
@@ -36,11 +44,8 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range(address={address
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
-In the request URL, provide following query parameters with values.
 
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|index|Int32|Index of the item to be returned.|
+Do not supply a request body for this method.
 
 ## Response
 

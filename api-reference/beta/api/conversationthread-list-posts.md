@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 Get the posts of the specified thread. You can specify both the parent conversation and the thread, or, 
 you can specify the thread without referencing the parent conversation.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

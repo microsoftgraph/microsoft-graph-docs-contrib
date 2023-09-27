@@ -15,6 +15,8 @@ Namespace: microsoft.graph.industryData
 
 Get a list of long-running [file validation operations](../resources/industrydata-filevalidateoperation.md) and their statuses.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
