@@ -263,10 +263,10 @@ Here's an example of the request. This request requires the **ConsistencyLevel**
 >**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
 
 <!-- {
-  "blockType": "ignored",
-  "name": "get_count_only"
+  "blockType": "request",
+  "name": "get_count_only_v1_e3"
 } -->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/users/$count
 ConsistencyLevel: eventual
 ```
@@ -276,7 +276,8 @@ ConsistencyLevel: eventual
 Here's an example of the response.
 
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

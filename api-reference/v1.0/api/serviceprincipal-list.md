@@ -158,7 +158,8 @@ ConsistencyLevel: eventual
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response"
+  "blockType": "response",
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK
