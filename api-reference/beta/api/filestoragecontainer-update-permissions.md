@@ -16,7 +16,7 @@ Update the existing permission in a fileStorageContainer by patching the permiss
 
 Only the **roles** property can be updated this way. 
 
-The application calling this API must have permissions to manage access to containers of the containerType the container belongs to.
+The application calling this API must have permission to update permissions to fileStorageContainers of the containerType the fileStorageContainer belongs to.
 
 
 ## Permissions
