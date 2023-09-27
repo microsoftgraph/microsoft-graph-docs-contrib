@@ -90,7 +90,7 @@ You can't onboard a group to PIM for groups explicitly. When you request to add 
 
 You can call [List assignmentScheduleRequests](../api/privilegedaccessgroup-list-assignmentschedulerequests.md), [List assignmentSchedules](../api/privilegedaccessgroup-list-assignmentschedules.md), [List assignmentScheduleInstances](../api/privilegedaccessgroup-list-assignmentscheduleinstances.md), [List eligibilityScheduleRequests](../api/privilegedaccessgroup-list-eligibilityschedulerequests.md), [List eligibilitySchedules](../api/privilegedaccessgroup-list-eligibilityschedules.md), and [List eligibilityScheduleInstances](../api/privilegedaccessgroup-list-eligibilityscheduleinstances.md) APIs for both groups that are onboarded to PIM and groups that aren't onboarded to PIM yet, but we recommend doing it only for groups that are onboarded to PIM to reduce the chances of getting throttled
 
-After group onboarding, Ids of the PIM Policies and Policy Assignments of the specific group. Call [List unifiedRoleManagementPolicies](../api/policyroot-list-rolemanagementpolicies.md) and [List unifiedRoleManagementPolicyAssignments](../api/policyroot-list-rolemanagementpolicyassignments.md) to get the updated Ids.
+After group onboarding, Ids of the PIM Policies and Policy Assignments of the specific group change. Call [List unifiedRoleManagementPolicies](../api/policyroot-list-rolemanagementpolicies.md) and [List unifiedRoleManagementPolicyAssignments](../api/policyroot-list-rolemanagementpolicyassignments.md) to get the updated Ids.
 
 Once group is onboarded to PIM, you can't offboard it, but you can remove all eligible and time-bound assignments as necessary.
 
