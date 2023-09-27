@@ -145,10 +145,10 @@ The following is an example of the request. This request requires the **Consiste
 >**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
 
 <!-- {
-  "blockType": "ignored",
-  "name": "get_count_only"
+  "blockType": "request",
+  "name": "get_sp_count_only_v1_e2"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/v1.0/servicePrincipals/$count
 ConsistencyLevel: eventual
 ```
