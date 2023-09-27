@@ -1,14 +1,14 @@
 ---
 author: Yadong1106
-description: "Create a new page template in the templates folder list in a site."
+description: "Create a new page template in the templates folder in a site."
 ms.date: 05/07/2018
-title: Create a new page in a SharePoint site
+title: Create a new page template in a site
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
-# Create a page in the site pages list of a site
+# Create a page template in a site
 
 Namespace: microsoft.graph
 

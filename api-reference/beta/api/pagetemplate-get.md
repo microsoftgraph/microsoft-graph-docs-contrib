@@ -8,7 +8,7 @@ ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
 
-# Get SitePage
+# Get page template
 
 Namespace: microsoft.graph
 

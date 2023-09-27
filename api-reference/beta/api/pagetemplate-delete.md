@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Delete baseSitePage
+# Delete page template
 
 Namespace: microsoft.graph
 
