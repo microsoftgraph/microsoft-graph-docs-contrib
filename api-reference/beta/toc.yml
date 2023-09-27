@@ -11279,7 +11279,7 @@ items:
               - name: Get file storage container
                 href: api/filestoragecontainer-get.md
               - name: Get drive
-                href: api/filestoragecontainer-list-drive.md
+                href: api/filestoragecontainer-get-drive.md
               - name: Add permissions
                 href: api/filestoragecontainer-post-permissions.md
               - name: List permissions
