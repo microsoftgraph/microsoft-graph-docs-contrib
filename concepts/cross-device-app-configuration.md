@@ -78,10 +78,9 @@ You can find your existing app ID/client IDs or provision new ones by signing in
 
 If you're building an application that will support Azure AD users, and you do not use a converged application ID issued through the [Application registration portal](https://apps.dev.microsoft.com), you will need to provide the GUID for the application ID of your Azure app. To find the GUID for your tenant: 
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com). 
-2. Select **Identity**.
-3. Under **Applications**, select **App registrations**. 
-4. Select your app from the list and view your Application ID (GUID) listed under **Essentials**.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
+1. Expand the **Identity** menu > select **Applications** > **App registrations** > **New registration**.
+1. Select your app from the list and view your Application ID (GUID) listed under **Essentials**.
 
 ### Step 4: Configure support for cross-platform push notifications (optional) 
 If you've opted to configure your cross-device app in the Windows Dev Center, you can enable support for cross-platform push notifications by providing the credentials you use with the APIs for Android and iOS push messaging platforms. These are required if you're using the Project Rome SDKs for iOS and Android and you want to do more than publish user activities. If you're using Project Rome APIs for Microsoft Graph only, you don't need to perform this step. You can associate up to 10 sets of credentials per platform. 

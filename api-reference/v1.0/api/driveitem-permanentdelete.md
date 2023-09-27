@@ -12,7 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Permanently delete a [driveItem](../resources/driveitem.md) by using its ID.
-Note that if you delete items using this method, they will be permanently removed and won't be sent to the recycle bin. Therefore, they cannot be restored afterward.
+If you delete items using this method, they are permanently removed and won't be sent to the recycle bin. Therefore, they can't be restored afterward.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -39,11 +41,11 @@ POST /drives/{drive-id}/items/{item-id}/permanentDelete
 | Accept  | application/json |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 

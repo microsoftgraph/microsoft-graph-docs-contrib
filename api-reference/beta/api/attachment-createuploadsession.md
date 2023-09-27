@@ -35,6 +35,8 @@ See [attach large files to Outlook messages or events](/graph/outlook-large-atta
 > Be aware of a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13644) if you're attaching a large file to a message or event in a shared or delegated mailbox.
 
 
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
