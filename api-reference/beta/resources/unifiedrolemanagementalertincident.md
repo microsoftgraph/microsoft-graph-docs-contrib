@@ -20,7 +20,7 @@ This abstract type is inherited by the following derived types:
 - [invalidLicenseAlertIncident](invalidlicensealertincident.md)
 - [noMfaOnRoleActivationAlertIncident](nomfaonroleactivationalertincident.md)
 - [redundantAssignmentAlertIncident](redundantassignmentalertincident.md)
-- [rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration](rolesassignedoutsideprivilegedidentitymanagementalertconfiguration.md)
+- [rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident](rolesassignedoutsideprivilegedidentitymanagementalertincident.md)
 - [sequentialActivationRenewalsAlertIncident](sequentialactivationrenewalsalertincident.md)
 - [staleSignInAlertIncident](stalesigninalertincident.md)
 - [tooManyGlobalAdminsAssignedToTenantAlertIncident](toomanyglobaladminsassignedtotenantalertincident.md)
