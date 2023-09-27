@@ -27,6 +27,7 @@ One of the following permissions is required to call these APIs. To learn more, 
 > **Note:**
 > * Maximum of 650 user IDs are supported per API request.
 > * The maximum request rate of this API is 1500 API requests in a 30 second period, per application per tenant.
+> * This API allows you to only subscribe as a user to another user's presence. In this case, if an app wants to use the subscription APIs, they have to use some dummy users to subscribe to all the users' presence they are interested in and aggregate that data.
 
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
