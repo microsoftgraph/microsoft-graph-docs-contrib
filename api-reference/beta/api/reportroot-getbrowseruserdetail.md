@@ -17,6 +17,8 @@ Get a report that provides the browser (Microsoft Edge) used by users when they 
 
 > **Note:** For details about different report views and names, see [Microsoft 365 Reports in the admin center - Microsoft browser usage](/microsoft-365/admin/activity-reports/browser-usage-report).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

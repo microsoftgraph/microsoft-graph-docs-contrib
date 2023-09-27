@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Get a collection of [information protection labels](../resources/informationprotectionlabel.md) available to the user or to the organization.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
