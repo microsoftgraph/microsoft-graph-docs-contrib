@@ -121,8 +121,8 @@ Throttling is based on a token bucket algorithm, which works by adding individua
 
 | Limit type | Resource unit quota | Write quota |
 | ---------- | ----------- | -------------- |
-| application+tenant pair | S: 3,500 requests per 10 seconds <br/> M: 5,000 requests per 10 seconds <br/> L: 8,000 requests per 10 seconds | 3,000 requests per 2 minutes and 30 seconds |
-| application | 150,000 requests per 20 seconds  | 70,000 requests per 5 minutes|
+| application+tenant pair | S: 3,500 ResourceUnits per 10 seconds <br/> M: 5,000 ResourceUnits per 10 seconds <br/> L: 8,000 ResourceUnits per 10 seconds | 3,000 requests per 2 minutes and 30 seconds |
+| application | 150,000 ResourceUnits per 20 seconds  | 35,000 requests per 5 minutes|
 | tenant | Not Applicable | 18,000 requests per 5 minutes |
 
 > [!NOTE]
