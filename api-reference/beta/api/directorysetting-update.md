@@ -67,9 +67,11 @@ In the request body, supply the values for relevant fields that should be update
 
 If successful, this method returns a `204 No Content` response code.
 
-## Example 1
-### Request
-Here is an example of the request.
+## Examples
+
+### Example 1: Update directory settings
+#### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -124,7 +126,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 <!-- {
   "blockType": "response"
 } -->
@@ -145,9 +147,9 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-## Example 2
-### Request
-The following example shows how to update the Banned Password list using MS Graph Explorer.
+### Example 2: Update the banned password list
+#### Request
+The following example shows how to update the banned password list using Microsoft Graph Explorer.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -196,7 +198,7 @@ Content-type: application/json
 
 ---
 
-### Response
+#### Response
 <!-- {
   "blockType": "response"
 } -->
