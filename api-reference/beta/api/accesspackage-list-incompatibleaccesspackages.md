@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of the [accessPackage](../resources/accesspackage.md) objects that have been marked as incompatible on an [accessPackage](../resources/accesspackage.md).  
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

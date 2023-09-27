@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object. To retrieve a localization branding object, specify the value of **id** in the URL.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -37,7 +39,7 @@ GET /organization/{organizationId}/branding/localizations/{organizationalBrandin
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -49,7 +51,7 @@ If successful, this method returns a `200 OK` response code and an [organization
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -99,7 +101,7 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -134,7 +136,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -183,7 +185,7 @@ GET https://graph.microsoft.com/v1.0/organization/99b24e1b-abec-4598-9d63-a2baf0
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -205,11 +207,11 @@ Content-Type: application/json
 
 ### Example 3: Get the bannerLogo for the default locale
 
-The following example returns the **bannerLogo** object for the default locale. You may specify the **id** as `default` or `0` in the request URL. If the object is not set, the request returns an empty response.
+The following example returns the **bannerLogo** object for the default locale. You may specify the **id** as `default` or `0` in the request URL. If the object isn't set, the request returns an empty response.
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -223,7 +225,7 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -240,11 +242,11 @@ Content-Type: image/*
 
 ### Example 4: Get the bannerLogo for the fr-FR locale
 
-The following example returns the **bannerLogo** object for the `fr-FR` locale whose bannerLogo is not set.
+The following example returns the **bannerLogo** object for the `fr-FR` locale whose bannerLogo isn't set.
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -294,7 +296,7 @@ GET https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249c0f
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

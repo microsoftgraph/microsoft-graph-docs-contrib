@@ -34,7 +34,7 @@ The following data types are supported when defining a property in a schema exte
 | String | 256 characters maximum. |
 
 ## JSON representation
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

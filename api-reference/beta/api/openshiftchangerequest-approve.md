@@ -1,6 +1,6 @@
 ---
 title: "openShiftChangeRequest: approve"
-description: "Approve an openshift request."
+description: "Approve an open shift request."
 ms.localizationpriority: medium
 author: "akumar39"
 ms.prod: "microsoft-teams"
@@ -51,7 +51,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -59,7 +59,7 @@ The following example shows how to call this API.
 
 ### Request
 
-The following is an example of a request.
+Here's an example  of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -88,7 +88,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 <!-- {
   "blockType": "response"
 } -->
