@@ -17,6 +17,8 @@ Update an [educationModule](../resources/educationmodule.md) object in a [class]
 
 Only teachers in the class can perform this operation. Note that you can't use a PATCH request to change the status of a module. Use the [publish](../api/educationmodule-publish.md) action to change the module status.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -24,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EduCurricula.ReadWrite  |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not supported. |
+|Application | EduCurricula.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

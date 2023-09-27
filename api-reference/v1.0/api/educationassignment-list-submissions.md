@@ -15,6 +15,8 @@ List all the submissions associated with an [assignment](../resources/educationa
 
 A teacher or an application with application permissions can get all the submissions while a student can only get submissions that they are associated with.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
