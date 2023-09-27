@@ -30,13 +30,13 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |content|String|The HTML content of the login page.|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the login page.|
-|createdDateTime|DateTimeOffset|Date and time when the login page was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|createdDateTime|DateTimeOffset|Date and time when the login page was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|Description about the login page.|
 |displayName|String|Display name of the login page.|
 |id|String|Unique identifier for the **loginPage** object. Inherited from [entity](../resources/entity.md).|
 |language|String|The content language of the login page.|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who last modified the login page.|
-|lastModifiedDateTime|DateTimeOffset|Date and time when the login page was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastModifiedDateTime|DateTimeOffset|Date and time when the login page was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |source|simulationContentSource|The source of the content. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
 |status|simulationContentStatus|The login page status. Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
 
