@@ -10,9 +10,12 @@ doc_type: apiPageType
 # Delete permissions from fileStorageContainer
 Namespace: microsoft.graph
 
+> [!IMPORTANT]
+> APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
+
 Remove permission from a **fileStorageContainer**.
 
-The application calling this API must have permissions to manage access to containers of the containerType the container belongs to.
+The application calling this API must have permission to delete permissions from fileStorageContainers of the respective container type.
 
 
 ## Permissions
