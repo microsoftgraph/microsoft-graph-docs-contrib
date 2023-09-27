@@ -396,7 +396,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "RecordsManagement.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `RecordsManagement.Read.All` to the read operations of the [retentionLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionlabel?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `RecordsManagement.ReadWrite.All` to the read operations of the [retentionLabel](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionlabel?view=graph-rest-beta) resource.",
           "Target": "retentionLabel"
         },
         {
@@ -412,7 +412,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "RecordsManagement.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `RecordsManagement.Read.All` to the read operations of the [retentionEventType](https://learn.microsoft.com/en-us/graph/api/resources/security-retentioneventtype?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `RecordsManagement.ReadWrite.All` to the read operations of the [retentionEventType](https://learn.microsoft.com/en-us/graph/api/resources/security-retentioneventtype?view=graph-rest-beta) resource.",
           "Target": "retentionEventType"
         },
         {
@@ -428,7 +428,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "RecordsManagement.ReadWrite.All",
           "ChangeType": "Addition",
-          "Description": "Added support for the application permission `RecordsManagement.Read.All` to the read operations of the [retentionEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionevent?view=graph-rest-beta) resource.",
+          "Description": "Added support for the application permission `RecordsManagement.ReadWrite.All` to the read operations of the [retentionEvent](https://learn.microsoft.com/en-us/graph/api/resources/security-retentionevent?view=graph-rest-beta) resource.",
           "Target": "retentionEvent"
         }
          ],
