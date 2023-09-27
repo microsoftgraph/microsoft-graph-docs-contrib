@@ -26,6 +26,8 @@ If there is more than one task group, and you want to get all the tasks in a spe
 [get all the task folders in that task group](outlooktaskgroup-list-taskfolders.md),
 and then get the tasks in each of these task folders.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

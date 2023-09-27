@@ -17,6 +17,8 @@ Delete an [educationRubric](../resources/educationrubric.md) from an [educationA
 
 This method does not delete the rubric itself and can only be performed by teachers.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
