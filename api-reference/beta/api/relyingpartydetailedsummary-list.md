@@ -30,13 +30,13 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /reports/getRelyingPartyDetailedSummary
+GET /reports/getRelyingPartyDetailedSummary(period='period_value')
 ```
 ## Function parameters
 
 | Parameter | Description |
 |:----------|:----------|
-| period | The supported values are: D1, D7, D30. These values follow the format Dn where n represents the number of days over which the report is aggregated.|
+| period | Required. The supported values are: D1, D7, D30. These values follow the format Dn where n represents the number of days over which the report is aggregated.|
 
 ## Optional query parameters
 
