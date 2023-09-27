@@ -75,7 +75,7 @@ Content-Type: application/json
 To receive updated notifications for a particular webinar, you need to create a subscription for that unique webinar by using the following resource:  `solutions/virtualEvents/webinars/{webinarId}`.
 
 An application can have only one subscription per webinar inside a tenant.
-A user-delegated token allows you to set up one subscription for receiving webinar update notifications within a tenant, but it's only available for users who have organized or co-organized webinars in the same tenant as the event host.
+A user-delegated token allows you to set up one subscription for receiving webinar update notifications within a tenant, but the subscription is only available for users who have organized or co-organized webinars in the same tenant as the event host.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -96,7 +96,7 @@ Content-Type: application/json
 To subscribe to notifications for sessions that are created or updated in a webinar, specify the resource as `solutions/virtualEvents/webinars/{webinarId}/sessions`.
 
 An application can only have a single session level subscription per webinar in a tenant.
-A user-delegated token allows you to set up one subscription for receiving webinar update notifications within a tenant, but it's only available for users who have organized or co-organized webinars in the same tenant as the event host.
+A user-delegated token allows you to set up one subscription for receiving webinar update notifications within a tenant, but the subscription is only available for users who have organized or co-organized webinars in the same tenant as the event host.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -121,7 +121,7 @@ For information about how to subscribe to meeting call events of a specific sess
 To subscribe to notifications for registration events of a webinar, specify the resource as `solutions/virtualEvents/webinars/{webinarId}/registrations`.
 
 An application can only have a single registration level subscription per webinar inside a tenant.
-A user-delegated token allows you to set up one subscription for receiving webinar update notifications within a tenant, but it's only available for users who have organized or co-organized webinars in the same tenant as the event host.
+A user-delegated token allows you to set up one subscription for receiving webinar update notifications within a tenant, but the subscription is only available for users who have organized or co-organized webinars in the same tenant as the event host.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
