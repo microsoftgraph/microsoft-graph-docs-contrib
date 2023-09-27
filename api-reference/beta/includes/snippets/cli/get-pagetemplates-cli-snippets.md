@@ -1,0 +1,10 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```bash
+
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc-beta pages temlates get --site-id {site-id} --page-template-id {pagetemplate-id}
+
+```
