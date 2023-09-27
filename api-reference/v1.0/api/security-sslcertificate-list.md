@@ -32,42 +32,42 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/threatIntelligence/sslCertificates
+GET /security/threatIntelligence/sslCertificates?$search="{property_name}:{property_value}"
 ```
 
 ## Optional query parameters
 
-This method also supports the `$count`, `$select`, `$orderBy`, `$top`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$select`, `$orderBy`, `$top`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name     | Description                                                                                                                                                                                                                    |
 | :------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| $count   | `$count` is supported to return a holistic count of the number of [sslCertificate](../resources/security-sslcertificate.md) objects. `$count` is supported as a query parameter (`?$count=true`) or as a path parameter (`/$count`). |
-| $orderby | `$orderby` supports some properties of the **sslCertificate** resource. For details, see [Supported properties with $orderby](#supported-properties-with-orderby).                                                                |
-| $search  | `$search` is **required** in the request URL of this API. The API currently only supports searching by one field in a call. For details, see [Supported properties with $search](#supported-properties-with-search).           |
-| $select  | `$select` is supported to limit the properties returned in this query.                                                                                                                                                         |
-| $skip    | `$skip` is supported to skip over elements in pages. Combine with `$top` to perform pagination or use the `@odata.nextLink` for server-side pagination.                                                                        |
-| $top     | `$top` is supported to limit the number of elements per page. Combine with `$skip` to perform pagination or use the `@odata.nextLink` for server-side pagination.                                                              |
+| $count   | Returns a holistic count of the number of [sslCertificate](../resources/security-sslcertificate.md) objects. You can specify `$count` as a query parameter (`?$count=true`) or as a path parameter (`/$count`). |
+| $orderby | Supports some properties of the **sslCertificate** resource, as listed in [Properties that support $orderby](#properties-that-support-orderby).                                                                |
+| $search  | **Required** parameter. Currently supports searching by only one property in a call. For details, see [Properties that support $search](#properties-that-support-search).           |
+| $select  | Limits the properties returned in this query.                                                                                                                                                         |
+| $skip    | Skips over elements in pages. You can combine with `$top` to perform pagination or use the URL returned in `@odata.nextLink` for server-side pagination.                                                                        |
+| $top     | Limits the number of elements per page. You can combine with `$skip` to perform pagination or use the URL returned in `@odata.nextLink` for server-side pagination.                                                              |
 
-### Supported properties with $orderby
+### Properties that support $orderby
 
-The following properties can be used for `$orderby` calls.
+Use any of the following properties with the `$orderby` query parameter.
 
-| Property             | Example                              | Notes                                           |
-| :------------------- | :----------------------------------- | :---------------------------------------------- |
-| firstSeenDateTime   | `$orderby=firstSeenDateTime desc`   |                                                 |
-| lastSeenDateTime | `$orderby=lastSeenDateTime desc` |                                                 |
+| Property             | Example                              | 
+| :------------------- | :----------------------------------- |
+| firstSeenDateTime   | `$orderby=firstSeenDateTime desc`   |
+| lastSeenDateTime | `$orderby=lastSeenDateTime desc` |
 
-### Supported properties with $search
+### Properties that support $search
 
-The following properties can be used for `$search` calls.
+Use any of the following properties with the `$search` query parameter.
 
 | Property    | Example                                     | Notes                                                                                                    |
 | :---------- | :------------------------------------------ | :--------------------------------------------------------------------------------------------------------|
-| fingerprint       | `$search="fingerprint:a3b59e5fe884ee1f34d98eef858e3fb662ac104a"`          | The `fingerprint` value should not contain any colons (:). Removing those will support a search as though they were included. |
-| issuer       | `$search="issuer/commonName:Contoso"`          | The `$search` must target a specific field of the [sslCertificateEntity](../resources/security-sslcertificateentity.md). |
-| serialNumber       | `$search="serialNumber:abc123"`          | The value used for `$search` will match a `serialNumber` of an [sslCertificate](../resources/security-sslcertificate.md). |
-| sha1       | `$search="sha1:abc123"`          | The value used for `$search` will match a `sha1` of an [sslCertificate](../resources/security-sslcertificate.md). |
-| subject       | `$search="subject/commonName:Contoso"`          | The `$search` must target a specific field of the [sslCertificateEntity](../resources/security-sslcertificateentity.md). |
+| fingerprint       | `$search="fingerprint:a3b59e5fe884ee1f34d98eef858e3fb662ac104a"`          | Do not include any colon (:) in the **fingerprint** property value in the search string. Simply remove any colon in the property value portion of the search string, if it exists. |
+| issuer       | `$search="issuer/commonName:Contoso"`          | Specify in the search string a specific property of the [sslCertificateEntity](../resources/security-sslcertificateentity.md) type. |
+| serialNumber       | `$search="serialNumber:abc123"`          | Returns [sslCertificate](../resources/security-sslcertificate.md) resources with the **serialNumber** property matching the property value in the search string. |
+| sha1       | `$search="sha1:abc123"`          | Returns [sslCertificate](../resources/security-sslcertificate.md) resources with the **sha1** property matching the property value in the search string.|
+| subject       | `$search="subject/commonName:Contoso"`          | Specify in the search string a specific property of the [sslCertificateEntity](../resources/security-sslcertificateentity.md) type. |
 
 
 ## Request headers
