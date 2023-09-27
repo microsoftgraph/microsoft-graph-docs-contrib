@@ -11,9 +11,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-Retrieve the list of [fileStorageContainer](../resources/filestoragecontainer.md) objects visible to the caller. ContainerTypeId filter parameter is required. The application calling these APIs must have permissions to read containers of containerType identified by containerTypeId.
+Retrieve the list of [fileStorageContainer](../resources/filestoragecontainer.md) objects visible to the caller. ContainerTypeId filter parameter is required. The application calling these APIs must have read permission to read fileStorageContainers of containerType identified by containerTypeId.
 
-Note: Only a limited subset of properties will be returned for each fileStorageContainer instance. $expand operation is not supported for drive, permissions and customProperties properties.
+Note: Only a limited subset of properties will be returned for each fileStorageContainer. $expand operation is not supported for drive, permissions and customProperties properties.
 
 
 ## Permissions
