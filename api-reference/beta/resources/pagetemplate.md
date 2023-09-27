@@ -1,19 +1,18 @@
 ---
-title: "sitePage resource type"
-description: Represents a site page in the sitePages list.
-author: Sangle7
+title: "page template resource type"
+description: Represents a page template in the templates folder
+author: Yadong1106
 ms.localizationpriority: medium
 ms.prod: sharepoint
-doc_type: resourcePageType
+doc_type: resourcePageTemplateType
 ---
 
-# sitePage resource type
+# page template resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This resource represents a page in the sitePages [list](../resources/list.md).
 It contains the title, layout, and a collection of [webPart](../resources/webpart.md)s.
 
 Inherits from [baseSitePage](../resources/basesitepage.md).

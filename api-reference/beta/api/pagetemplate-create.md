@@ -5,7 +5,7 @@ ms.date: 05/07/2018
 title: Create a new page template in a site
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
-doc_type: apiPageType
+doc_type: apiPageTemplateType
 ---
 
 # Create a page template in a site

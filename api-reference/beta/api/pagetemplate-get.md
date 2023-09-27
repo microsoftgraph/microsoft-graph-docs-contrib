@@ -5,7 +5,7 @@ ms.date: 03/15/2018
 title: Get page template
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
-doc_type: apiPageType
+doc_type: apiPageTemplateType
 ---
 
 # Get page template

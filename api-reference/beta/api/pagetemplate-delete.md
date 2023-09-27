@@ -4,7 +4,7 @@ description: "Delete a page template from the templates folder in a site."
 title: "Delete pageTemplate"
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
-doc_type: apiPageType
+doc_type: apiPageTemplateType
 ---
 # Delete page template
 

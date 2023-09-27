@@ -4,10 +4,10 @@ description: "Update the properties of a pageTemplate object."
 author: Yadong1106
 ms.localizationpriority: medium
 ms.prod: sharepoint
-doc_type: apiPageType
+doc_type: apiPageTemplateType
 ---
 
-# Update sitePage
+# Update page template
 
 Namespace: microsoft.graph
 
