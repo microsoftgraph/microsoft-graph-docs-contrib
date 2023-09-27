@@ -19,7 +19,7 @@ The **fileStorageContainer** resource represents a file storage container. A fil
 * **Permissions** specifies the users who own or can access the container. 
 * **Status** specifies the current state of the container. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours.
 
-##Permission roles enumeration
+## Permission roles enumeration
 
 |Role|Details|
 |:---|:---|
@@ -27,14 +27,6 @@ The **fileStorageContainer** resource represents a file storage container. A fil
 |writer|Proviodes the ability to read and modify the content inside a storage container.|
 |manager|Provides the ability to read and modify the content inside a storage container, and manage the permissions to the container.|
 |owner|Provides the ability to read and modify the content inside a storage container, manage the permission to the container, and delete and restore the container.|
-|principalOwner|Provides same ability as owner role. Container's lifecycle is tied to the principalOwner.|
-
-FileStorageContainer can be either user-owned (in Consumer space only) and tenant-owned (in Enterprise space only). The following applies to user-owned containers:
-* Each container must have one and only one principalOwner.
-* The principalOwner is assigned at container creation time and is immutable.
-* A user can be the principalOwner for multiple containers.
-* Only principalOwners can delete their containers.
-* PrincipalOwners cannot resign from the containers.
 
 ##Container status enumeration
 
