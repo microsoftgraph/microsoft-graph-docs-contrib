@@ -12,10 +12,10 @@ Namespace: microsoft.graph
 
 Retrieve the metadata for a [fileStorageContainer](../resources/filestoragecontainer.md) object.
 
-The application calling this API must have pewrmissions to read from fileStorageContainer of the containerType the fileStoreageContainer belongs to.
+The application calling this API must have read permission to fileStorageContainers of the containerType the fileStoreageContainer belongs to.
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). The application calling this API must have permissions to get containers of the containerType the container belongs to.
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). 
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
