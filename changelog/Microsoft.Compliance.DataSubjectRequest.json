@@ -48,7 +48,7 @@
           "Id": "b0fdba93-efca-407d-b7fc-12e792ece3f6",
           "ApiChange": "Method",
           "ChangedApiName": "subjectRightsRequest",
-          "ChangeType": "Addition",
+          "ChangeType": "Change",
           "Description": "Changed the URL path from `/privacy` to `/security` in the following operations of the [subjectRightsRequest](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequest?view=graph-rest-1.0) resource: [LIST](https://learn.microsoft.com/en-us/graph/api/subjectrightsrequest-list?view=graph-rest-1.0), [POST](https://learn.microsoft.com/en-us/graph/api/subjectrightsrequest-post?view=graph-rest-1.0), [GET](https://learn.microsoft.com/en-us/graph/api/subjectrightsrequest-get?view=graph-rest-1.0), [UPDATE](https://learn.microsoft.com/en-us/graph/api/subjectrightsrequest-update?view=graph-rest-1.0), [getFinalAttachment](https://learn.microsoft.com/en-us/graph/api/subjectrightsrequest-getfinalattachment?view=graph-rest-1.0), and [getFinalReport](https://learn.microsoft.com/en-us/graph/api/subjectrightsrequest-getfinalreport?view=graph-rest-1.0). The `/privacy` path is deprecated and will stop returning data on March 30, 2025.",
           "Target": "subjectRightsRequest"
         },
@@ -56,7 +56,7 @@
           "Id": "b0fdba93-efca-407d-b7fc-12e792ece3f6",
           "ApiChange": "Method",
           "ChangedApiName": "authoredNote",
-          "ChangeType": "Addition",
+          "ChangeType": "Change",
           "Description": "Changed the URL path from `/privacy` to `/security` in the following operations of the [authoredNote](https://learn.microsoft.com/en-us/graph/api/resources/authoredNote?view=graph-rest-1.0) resource: [LIST](https://learn.microsoft.com/en-us/graph/api/subjectrightsrequest-list-notes?view=graph-rest-1.0) and [POST](https://learn.microsoft.com/en-us/graph/api/subjectrightsrequest-post-notes?view=graph-rest-1.0). The `/privacy` path is deprecated and will stop returning data on March 30, 2025.",
           "Target": "authoredNote"
         },
