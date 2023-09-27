@@ -276,8 +276,9 @@ ConsistencyLevel: eventual
 Here's an example of the response.
 
 <!-- {
-  "blockType": "ignored",
-  "truncated": true
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "String"
 } -->
 ```http
 HTTP/1.1 200 OK
