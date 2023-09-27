@@ -60,7 +60,7 @@ GET /storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId}
 ```
 
 ### Request
-The following is an example of enumerating Consumer containers of a given type the calling user has access to.
+The following is an example of enumerating user-owned containers of a given type the calling user has access to.
 <!-- {
   "blockType": "request",
   "name": "list_filestoragecontainer"
@@ -71,7 +71,7 @@ GET /storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId}
 ```
 
 ### Request
-The following is an example of enumerating Consumer containers of a given type the calling user is the principle owner of.
+The following is an example of enumerating user-owned containers of a given type the calling user is the principle owner of.
 <!-- {
   "blockType": "request",
   "name": "list_filestoragecontainer"
