@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 Create a new [fileStorageContainer](../resources/filestoragecontainer.md) object. 
 
-For Delegated calls, the calling user will be set as the owner of the container. Respective container type identified by containerTypeId must be enabled in the tenant and the calling application must have permission to create containers of that type.
+Respective container type identified by containerTypeId must be enabled in the tenant. The calling application must have permission to create fileStorageContainers of that containerType.
+
+For Delegated calls, the calling user will be set as the owner of the fileStorageContainer. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
