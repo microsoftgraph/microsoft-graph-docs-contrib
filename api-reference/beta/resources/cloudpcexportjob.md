@@ -57,8 +57,8 @@ Represents the export job for downloading a specified Cloud PC report.
 | sharedUseLicenseUsageRealTimeReport    | Indicates real-time data for shared use license usage.              |
 | unknownFutureValue                     | Evolvable enumeration sentinel value. Do not use.                   |
 | noLicenseAvailableConnectivityFailureReport | Indicates the Cloud PCs that failed to connect because no licenses were available. |
-| frontlineLicenseUsageReport                 | Indicates daily/hourly aggregated frontline license usage report.                   |
-| frontlineLicenseUsageRealTimeReport         | Indicates real-time data for frontline license usage.                             |
+| frontlineLicenseUsageReport                 | The daily/hourly aggregated Windows 365 Frontline license usage report.                   |
+| frontlineLicenseUsageRealTimeReport         | The real-time data for Windows 365 Frontline license usage.                             |
 | inaccessibleCloudPcReports             | Indicates the Cloud PCs that are inaccessible. |
 
 ## Relationships
