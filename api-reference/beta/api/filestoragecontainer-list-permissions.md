@@ -1,6 +1,6 @@
 ---
-title: "List permissions of a fileStorageContainer"
-description: "Get the set of permissions of a fileStorageContainer."
+title: "List permissions for a fileStorageContainer"
+description: "Get the set of permissions for a fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -10,8 +10,12 @@ doc_type: apiPageType
 # List permissions
 Namespace: microsoft.graph
 
+> [!IMPORTANT]
+> APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
 
-Enumerate permissions of an existing fileStorageContainer. The application calling this API must have permision to enumerate permissions on fileStorageContainers of the containerType the fileStoreageContainer belongs to.
+Enumerate permissions for an existing fileStorageContainer. 
+
+The application calling this API must have permision to enumerate permissions for fileStorageContainers of the respective container type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
