@@ -92,7 +92,7 @@ Content-Type: application/json
 ## Add activities to an item
 To add activities to an item, you call the [addActivities](/graph/api/externalconnectors-externalitem-addactivities) endpoint, with the same unique identifier for that item in the URL.
 
-For example, if Joe Bloggs with Azure AD ID `18948b93-d3ed-4307-9981-10fc36a08a52` commented on the helpdesk ticket with ticket number `SR00145` on April 11, 2022 at 4:25PM, the request to send that activity might look like the following.
+For example, if an individual with Azure AD ID `18948b93-d3ed-4307-9981-10fc36a08a52` commented on the helpdesk ticket with ticket number `SR00145` on April 11, 2022 at 4:25PM, the request to send that activity might look like the following.
 
 ```http
 POST /external/connections/contosohelpdesk/items/SR00145/addActivities
