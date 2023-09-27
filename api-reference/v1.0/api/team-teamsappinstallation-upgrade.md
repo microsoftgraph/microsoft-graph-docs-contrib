@@ -48,7 +48,7 @@ POST /teams/{team-id}/installedApps/{app-installation-id}/upgrade
 
 In the request body, supply a JSON representation of the parameters.
 
-The following table shows additional parameters that can be used with the upgrade action.
+The following table shows more parameters that can be used with the upgrade action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|

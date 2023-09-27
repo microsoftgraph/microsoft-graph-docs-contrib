@@ -16,7 +16,7 @@ Reset a user's password, represented by a [password authentication method](../re
 
 This flow writes the new password to Azure Active Directory and pushes it to on-premises Active Directory if configured using password writeback. The admin can either provide a new password or have the system generate one. The user is prompted to change their password on their next sign in.
 
-This reset is a long-running operation and will return a **Location** header with a link where the caller can periodically check for the status of the reset operation.
+This reset is a long-running operation and returns a **Location** header with a link where the caller can periodically check for the status of the reset operation.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -129,7 +129,7 @@ Location: https://graph.microsoft.com/v1.0/users/6ea91a8d-e32e-41a1-b7bd-d2d185e
 
 ### Example 2: System-generated password
 
-The following example shows how to call this API when the caller does not submit a password.
+The following example shows how to call this API when the caller doesn't submit a password.
 
 #### Request
 
