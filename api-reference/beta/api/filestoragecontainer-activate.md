@@ -10,6 +10,8 @@ doc_type: apiPageType
 # Activate fileStorageContainer
 Namespace: microsoft.graph
 
+> [!IMPORTANT]
+> APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
 
 Activate a fileStorageContainer. 
 
@@ -17,7 +19,7 @@ FileStorageContainers are created in an inactive state, indicated by the contain
 
 A fileStorageContainer can be activated by either calling the activate API, or calling any API that mutates the container or its content.
 
-The application calling this API must have write permission to containers of the containerType the container belongs to.
+The application calling this API must have write permission to containers of the respective container type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). 
