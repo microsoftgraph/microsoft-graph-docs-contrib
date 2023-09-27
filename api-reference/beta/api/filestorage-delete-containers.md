@@ -14,8 +14,6 @@ Namespace: microsoft.graph
 
 Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object. This is a non-restorable deletion. The application calling this API must have permissions to delete containers of the containerType the container belongs to.
 
-For Delegated calls, if container has a principalOwner member then the fileStorageContainer can only be deleted by its principalOwner. A principalOwner member is always present for each container in the Consumer space.
-
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
