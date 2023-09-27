@@ -54,7 +54,7 @@ It includes the following capabilities:
 
 >[!Note]
 > The following capabilities are not currently available:
-> - Graph based data source traversal during crawls; for example, traversing through folder structures.
+> - Graph-based data source traversal during crawls; for example, traversing through folder structures.
 > - The ability to manage search permissions based on access control from your data source.
 
 You can get started in C# with our sample connector or in other supported languages using the contracts from the [Microsoft Graph connectors SDK page in GitHub](https://github.com/microsoftgraph/msgraph-connectors-sdk).
