@@ -1,6 +1,6 @@
 ---
 title: "List fileStorageContainers"
-description: "Get a list of the fileStorageContainer objects and their properties."
+description: "Get a list of fileStorageContainers and their properties."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -10,8 +10,10 @@ doc_type: apiPageType
 # List fileStorageContainers
 Namespace: microsoft.graph
 
+> [!IMPORTANT]
+> APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
 
-Retrieve the list of [fileStorageContainer](../resources/filestoragecontainer.md) objects visible to the caller. ContainerTypeId filter parameter is required. The application calling these APIs must have read permission to read fileStorageContainers of containerType identified by containerTypeId.
+Retrieve the list of [fileStorageContainer](../resources/filestoragecontainer.md) objects visible to the caller. ContainerTypeId filter parameter is required. The application calling these APIs must have read permission to fileStorageContainers of the respective container type.
 
 Note: Only a limited subset of properties will be returned for each fileStorageContainer. $expand operation is not supported for drive, permissions and customProperties properties.
 
@@ -57,28 +59,6 @@ The following is an example of enumerating all tenant-owned containers of a give
 -->
 ``` http
 GET /storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId}
-```
-
-### Request
-The following is an example of enumerating user-owned containers of a given type the calling user has access to.
-<!-- {
-  "blockType": "request",
-  "name": "list_filestoragecontainer"
-}
--->
-``` http
-GET /storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId}
-```
-
-### Request
-The following is an example of enumerating user-owned containers of a given type the calling user is the principle owner of.
-<!-- {
-  "blockType": "request",
-  "name": "list_filestoragecontainer"
-}
--->
-``` http
-GET /storage/fileStorage/containers?$filter=containerTypeId eq {containerTypeId} and viewpoint/effectiveRole eq 'principalOwner'
 ```
 
 ### Response
