@@ -29,12 +29,12 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the landing page.|
-|createdDateTime|DateTimeOffset|Date and time when the landing page was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|createdDateTime|DateTimeOffset|Date and time when the landing page was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|Description of the landing page as defined by the user.|
 |displayName|String|The display name of the landing page.|
 |id|String|Unique identifier for the **landingPage** object. Inherited from [entity](../resources/entity.md).|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Email identity of the user who last modified the landing page.|
-|lastModifiedDateTime|DateTimeOffset|Date and time when the landing page was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastModifiedDateTime|DateTimeOffset|Date and time when the landing page was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |locale|String|Content locale.|
 |source|simulationContentSource|The source of the content. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
 |status|simulationContentStatus|The status of the simulation. Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
