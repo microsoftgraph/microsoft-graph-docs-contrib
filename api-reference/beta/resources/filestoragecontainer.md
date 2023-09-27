@@ -11,12 +11,15 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+> [!IMPORTANT]
+> APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
 
-The **fileStorageContainer** resource represents a file storage container. A file storeage container is a shared file storage space that can be used by a user or a group of users via an application. All file system objects in a fileStorageContainer are returned as |[driveItem](../resources/driveItem.md)| resources. 
+
+The **fileStorageContainer** resource represents a file storage container. A file storeage container is a shared file storage space that can be used by a user or a group of users via an application. All file system objects in a fileStorageContainer are returned as [driveItem](../resources/driveItem.md) resources. 
 
 **FileStorageContainer** resources have properties that provide data about the fileStorageContainer's status and access setting. This includes:
 * **ContainerType** specifies the application workload that owns or can access of all containers of that container type. Each container must have only one container type. 
-* **Permissions** specifies the users who own or can access the container. 
+* **Permissions** specifies the role a user is assigned to and the corresponding access priviledges. 
 * **Status** specifies the current state of the container. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours.
 
 ## Permission roles enumeration
@@ -38,14 +41,14 @@ The **fileStorageContainer** resource represents a file storage container. A fil
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List fileStorageContainers](../api/filestorage-list-containers.md)|[fileStorageContainer](../resources/filestoragecontainer.md) collection|Get a list of the [fileStorageContainer](../resources/filestoragecontainer.md) objects and their properties.|
+|[List fileStorageContainers](../api/filestorage-list-containers.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Get a list of the [fileStorageContainer](../resources/filestoragecontainer.md) objects and their properties.|
 |[Create fileStorageContainer](../api/filestoragecontainer-post-filestoragecontainers.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Create a new [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Get fileStorageContainer](../api/filestoragecontainer-get.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Read the properties and relationships of a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Update fileStorageContainer](../api/filestoragecontainer-update.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Update the properties of a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Delete fileStorageContainer](../api/filestorage-delete-containers.md)|None|Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Activate fileStorageContainer](../api/filestoragecontainer-activate.md)|None|Activate a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
-|[Get drive](../api/filestoragecontainer-get-drive.md)|[drive](../resources/drive.md) collection|Get the drive resources from the drive navigation property.|
-|[List permissions](../api/filestoragecontainer-list-permissions.md)|[permission](../resources/permission.md) collection|Retreive the list of permissions on a fileStorageContainer.|
+|[Get drive](../api/filestoragecontainer-get-drive.md)|[drive](../resources/drive.md)|Get the drive resources from the drive navigation property.|
+|[List permissions](../api/filestoragecontainer-list-permissions.md)|[permission](../resources/permission.md)|Retreive the list of permissions on a fileStorageContainer.|
 |[Create permissions](../api/filestoragecontainer-post-permissions.md)|[permission](../resources/permission.md)|Add the permission to a fileStorageContainer.|
 |[Update permissions](../api/filestoragecontainer-post-permissions.md)|[permission](../resources/permission.md)|Update the permission on a fileStorageContainer.|
 |[Delete permissions](../api/filestoragecontainer-post-permissions.md)|[permission](../resources/permission.md)|Delete fhte permission from a fileStorageContainer.|
@@ -72,7 +75,7 @@ The **fileStorageContainer** resource represents a file storage container. A fil
 |Relationship|Type|Description|
 |:---|:---|:---|
 |drive|[drive](../resources/drive.md)|The fileStorageContainer's drive resource. Read-only.|
-|permissions|[permission](../resources/permission.md) collection|Permissions of users in the fileStorageContainer. Read-write.|
+|permissions|[permission](../resources/permission.md)|Permissions of users in the fileStorageContainer. Read-write.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
