@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
- Excuse a submission. Excused submissions are not included in average grade calculations, and rubric selections and points feedback will be deleted. Only teachers can perform this action. 
+ Excuse a submission. Excused submissions aren't included in average grade calculations. Grading rubrics and feedback are deleted. Only teachers can perform this action. 
 
 If the `Prefer: include-unknown-enum-members` request header is provided, the excused submission retains the **excused** status. Otherwise, the submission status changes to **returned**. For more information on this heading, see the [Examples](#examples) section.
 
