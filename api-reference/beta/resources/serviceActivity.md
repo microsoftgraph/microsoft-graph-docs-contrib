@@ -1,7 +1,7 @@
 ---
 title: "serviceActivity resource type"
-description: "A placeholder to allow for the desired URL path for Microsoft Entra service activity."
-author: "zachpeng"
+description: "A placeholder to allow for the desired URL path for the Microsoft Entra service activity."
+author: "Zacharypeng"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
@@ -13,31 +13,27 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A placeholder to allow for the desired URL path for Microsoft Entra service activity .
+A placeholder to allow for the desired URL path for the Microsoft Entra service activity.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-
-|Method|Return Type|Description|
+|Method|Return type|Description|
 |:---|:---|:---|
-|[getMetricsForMfaSignInSuccess](../api/serviceActivity-getMetricsForMfaSignInSuccess.md)|[serviceActivityValueMetric](./serviceActivityValueMetric.md) collection|Number of times users successfully completing interactive MFA sign ins using Microsoft Entra MFA cloud service.|
-|[getMetricsForMfaSignInFailure](../api/serviceActivity-getMetricsForMfaSignInFailure.md)|[serviceActivityValueMetric](./serviceActivityValueMetric.md) collection|Number of times users failed to complete interactive MFA sign ins using Microsoft Entra MFA cloud service. A failure sign-in case can be users abandoning or canceling MFA requests, refreshing MFA sessions without doing interactive MFA, or using passwordless methods do not count at this time.|
-|[getMetricsForConditionalAccessManagedDevicesSignInSuccess](../api/serviceActivity-getMetricsForConditionalAccessManagedDevicesSignInSuccess.md)|[serviceActivityValueMetric](./serviceActivityValueMetric.md) collection|Number of user authentication requests that successfully satisfy a Conditional Access policy that requires devices be managed. Managed devices are computers joined to and managed by your on-premises directory and hybrid joined to Microsoft Entra.|
-|[getMetricsForConditionalAccessCompliantDevicesSignInSuccess](../api/serviceActivity-getMetricsForConditionalAccessCompliantDevicesSignInSuccess.md)|[serviceActivityValueMetric](./serviceActivityValueMetric.md) collection|Number of user authentication requests that successfully satisfy a Conditional Access policy that requires devices compliance. Compliant devices are managed by Microsoft Intune and can be mobile iOS/Android devices, tablets, or cloud Microsoft Entra joined computers (not hybrid).|
-|[getMetricsForSamlSignInSuccess](../api/serviceActivity-getMetricsForSamlSignInSuccess.md)|[serviceActivityValueMetric](./serviceActivityValueMetric.md) collection|Number of SAML 2.0 authentication successfully processed by the Microsoft Entra cloud service for the tenant. This health signal currently does not include WS-FED/SAML 1.1 apps integrated with Microsoft Entra.|
+|[getMetricsForMfaSignInSuccess](../api/serviceactivity-getmetricsformfasigninsuccess.md)|[serviceActivityValueMetric](../resources/serviceactivityvaluemetric.md) collection|Get the number of times users successfully completed interactive MFA sign-ins using the Microsoft Entra MFA cloud service over a given time range.|
+|[getMetricsForMfaSignInFailure](../api/serviceactivity-getmetricsformfasigninfailure.md)|[serviceActivityValueMetric](../resources/serviceactivityvaluemetric.md) collection|Get the number of times users fail to complete interactive MFA sign-ins using the Microsoft Entra MFA cloud service over a given time range. A failure sign-in case can be users abandoning or canceling MFA requests, refreshing MFA sessions without doing interactive MFA, or using passwordless methods that are not counted as MFA sign-ins.|
+|[getMetricsForConditionalAccessManagedDevicesSignInSuccess](../api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess.md)|[serviceActivityValueMetric](../resources/serviceactivityvaluemetric.md) collection|Get the number of user authentication requests, over a given time range, that successfully satisfy a Conditional Access policy requiring devices to be managed. Managed devices are computers joined to and managed by your on-premises directory and hybrid devices joined to Microsoft Entra.|
+|[getMetricsForConditionalAccessCompliantDevicesSignInSuccess](../api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md)|[serviceActivityValueMetric](../resources/serviceactivityvaluemetric.md) collection|Get the number of user authentication requests, over a given time range that successfully satisfy a Conditional Access policy requiring device compliance. Compliant devices are managed by Microsoft Intune and can be mobile iOS/Android devices, tablets, or cloud Microsoft Entra-joined computers (not hybrid).|
+|[getMetricsForSamlSignInSuccess](../api/serviceactivity-getmetricsforsamlsigninsuccess.md)|[serviceActivityValueMetric](../resources/serviceactivityvaluemetric.md) collection|Get the number of SAML 2.0 authentication successfully processed by the Microsoft Entra cloud service for the tenant over a given time range. This data currently does not include WS-FED/SAML 1.1 apps integrated with the Microsoft Entra.|
 
 ## Properties
-
 None.
 
 ## Relationships
-
 None.
 
 ## JSON representation
-
-This entity can not be viewed as it is only a placeholder.
+The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.serviceActivity",
@@ -47,6 +43,6 @@ This entity can not be viewed as it is only a placeholder.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.serviceActivity",
+  "@odata.type": "#microsoft.graph.serviceActivity"
 }
 ```
