@@ -28,7 +28,7 @@ The **fileStorageContainer** resource represents a file storage container. A fil
 |manager|Provides the ability to read and modify the content inside a storage container, and manage the permissions to the container.|
 |owner|Provides the ability to read and modify the content inside a storage container, manage the permission to the container, and delete and restore the container.|
 
-##Container status enumeration
+## Container status enumeration
 
 |Status|Details|
 |:---|:---|
@@ -44,7 +44,7 @@ The **fileStorageContainer** resource represents a file storage container. A fil
 |[Update fileStorageContainer](../api/filestoragecontainer-update.md)|[fileStorageContainer](../resources/filestoragecontainer.md)|Update the properties of a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Delete fileStorageContainer](../api/filestorage-delete-containers.md)|None|Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Activate fileStorageContainer](../api/filestoragecontainer-activate.md)|None|Activate a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
-|[List drive](../api/filestoragecontainer-list-drive.md)|[drive](../resources/drive.md) collection|Get the drive resources from the drive navigation property.|
+|[Get drive](../api/filestoragecontainer-get-drive.md)|[drive](../resources/drive.md) collection|Get the drive resources from the drive navigation property.|
 |[List permissions](../api/filestoragecontainer-list-permissions.md)|[permission](../resources/permission.md) collection|Retreive the list of permissions on a fileStorageContainer.|
 |[Create permissions](../api/filestoragecontainer-post-permissions.md)|[permission](../resources/permission.md)|Add the permission to a fileStorageContainer.|
 |[Update permissions](../api/filestoragecontainer-post-permissions.md)|[permission](../resources/permission.md)|Update the permission on a fileStorageContainer.|
@@ -63,10 +63,9 @@ The **fileStorageContainer** resource represents a file storage container. A fil
 |customProperties|[fileStorageContainerCustomPropertyDictionary](../resources/filestoragecontainercustompropertydictionary.md)|Custom property collection for the fileStorageContainer. Read-write.|
 |description|String|Provides a user-visible description of the fileStorageContainer. Read-write.|
 |displayName|String|The display name of the fileStorageContainer. Read-write.|
-|externalGroupId|Guid|The group associated with the fileStorageContainer. Optional and for Consumer space only. Immutable once set.|
 |id|String|The unique stable identifier of the filerStorageContainer. Read-only.|
 |status|fileStorageContainerStatus|Status of the fileStorageContainer. Read-only.|
-|viewpoint|[fileStorageContainerViewpoint](../resources/filestoragecontainerviewpoint.md)|Data specific to the current user. Read-Write.|
+|viewpoint|[fileStorageContainerViewpoint](../resources/filestoragecontainerviewpoint.md)|Data specific to the current user. Read-only.|
 
 ## Relationships
 
@@ -91,7 +90,6 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "description": "String",
   "containerTypeId": "Guid",
-  "externalGroupId": "Guid",
   "customProperties": {
     "@odata.type": "microsoft.graph.fileStorageContainerCustomPropertyDictionary"
   },
