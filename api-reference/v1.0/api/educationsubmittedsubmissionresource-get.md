@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 Retrieve a [submitted resource](../resources/educationsubmissionresource.md). Only teachers, students, and applications with application permissions can perform this operation.
 
-Resources are available to a teacher or an application with application permissions after a student submits it, and are available to the student after the teacher returns the submission. Note that teachers can leave notes in some resources.
+Resources are available to a teacher or an application with application permissions after a student submits it, and are available to the student after the teacher returns the submission. Teachers can leave notes in some resources.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,14 +43,14 @@ This method supports the `$select` OData query parameters to help customize the 
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and an [educationSubmissionResource](../resources/educationsubmissionresource.md) object in the response body. Otherwise, returns a `404 Not found` response code.
 
 ## Example
 ### Request
-The following is an example of the request.
+Here's an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -94,7 +96,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/f973bc68-2adb-4cf7-8b15-a
 ---
 
 ### Response
-The following is an example of the response. 
+Here's an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 

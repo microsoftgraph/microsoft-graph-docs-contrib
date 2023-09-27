@@ -19,6 +19,8 @@ This method changes the status of the submission from `working` to `submitted`. 
 
 A teacher can also submit a student's assignment on their behalf.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

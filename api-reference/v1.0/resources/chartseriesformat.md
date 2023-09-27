@@ -23,13 +23,13 @@ None
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](chartfill.md)|Represents the fill format of a chart series, which includes background formating information. Read-only.|
+|fill|[WorkbookChartFill](chartfill.md)|Represents the fill format of a chart series, which includes background formatting information. Read-only.|
 |line|[WorkbookChartLineFormat](chartlineformat.md)|Represents line formatting. Read-only.|
 
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",

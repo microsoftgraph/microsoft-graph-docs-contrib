@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get the total aggregated remote connection usage of a Cloud PC during a given time span.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

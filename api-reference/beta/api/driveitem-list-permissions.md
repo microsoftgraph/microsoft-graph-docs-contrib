@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 List the effective sharing permissions on a [driveItem](../resources/driveitem.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Access to sharing permissions
 
 The permissions collection includes potentially sensitive information and may not be available for every caller.
