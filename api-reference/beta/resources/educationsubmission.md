@@ -33,8 +33,8 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 |[return](../api/educationsubmission-return.md)|[educationSubmission](educationsubmission.md)|A teacher uses return to indicate that the grades/feedback can be shown to the student.|
 |[reassign](../api/educationsubmission-reassign.md)|[educationSubmission](educationsubmission.md)|Reassign the submission to the student with feedback for review.|
 |[Set up submission specific resources folder](../api/educationsubmission-setupResourcesFolder.md) |[educationSubmission](educationsubmission.md) | Create a SharePoint folder (under pre-defined location) to upload files as submission resources. |
-|[submit](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|A student uses submit to turn in the **assignment**. This will copy the resources into the **submittedResources** folder for grading and updates the status.|
-|[unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|A student uses the unsubmit to move the state of the submission from submitted back to working. This will copy the resources into the **workingResources** folder for grading and updates the status.|
+|[submit](../api/educationsubmission-submit.md)|[educationSubmission](educationsubmission.md)|A student uses submit to turn in the **assignment**. This operation copies the resources into the **submittedResources** folder for grading and updates the status.|
+|[unsubmit](../api/educationsubmission-unsubmit.md)|[educationSubmission](educationsubmission.md)|A student uses the unsubmit to move the state of the submission from submitted back to working. This operation copies the resources into the **workingResources** folder for grading and updates the status.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -62,7 +62,7 @@ If [setUpResourcesFolder](../api/educationsubmission-setupResourcesFolder.md) ha
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
