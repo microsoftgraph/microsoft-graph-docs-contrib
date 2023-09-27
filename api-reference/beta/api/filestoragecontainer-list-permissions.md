@@ -11,7 +11,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-Enumerate permissions of an existing fileStorageContainer. The application calling this API must have permision to enumerate permissions on fileStorageContainer of the containerType the fileStoreageContainer belongs to.
+Enumerate permissions of an existing fileStorageContainer. The application calling this API must have permision to enumerate permissions on fileStorageContainers of the containerType the fileStoreageContainer belongs to.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
