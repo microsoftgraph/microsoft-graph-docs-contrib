@@ -42,7 +42,7 @@ POST /appCatalogs/teamsApps
 To publish an app that requires a review:
 
 ```http
-POST /appCatalogs/teamsApps?requiresReview:{Boolean}
+POST /appCatalogs/teamsApps?requiresReview={Boolean}
 ```
 
 ## Query parameters
