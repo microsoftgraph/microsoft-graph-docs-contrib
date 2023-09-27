@@ -1,6 +1,6 @@
 ---
-title: "Update custom property of a fileStorageContainer "
-description: "Update custom property of a fileStorageContainer"
+title: "Update custom property on a fileStorageContainer "
+description: "Update custom property on a fileStorageContainer"
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -10,16 +10,16 @@ doc_type: apiPageType
 # Update custom property of fileStorageContainer
 Namespace: microsoft.graph
 
+> [!IMPORTANT]
+> APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
 
-
-Update one or multiple custom properties on a fileStorageContainer. Only the **value** and **isSearchable** properties on the custom properties can be updated. 
+Update one or multiple custom properties on a fileStorageContainer. Only the **value** and **isSearchable** attributes of custom properties can be updated. 
 
 Only the custom properties specified in the request body are updated. If a custom property specified in the request body does not exist on the container, it will be created. 
 
 Updating a custom property to null deletes the property from the container.
 
-The application calling this API must have read/write permissions to fileStorageContainers of the containerType the fileStorageContainer belongs to.
-
+The application calling this API must have read/write permissions to fileStorageContainers of the respective container type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
