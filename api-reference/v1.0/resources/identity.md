@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 title: "identity resource type"
 ms.localizationpriority: medium
 description: "Represents an identity of an actor."
@@ -20,7 +20,7 @@ In this case, the **displayName** property for the identity will be returned, bu
 
 | Property    | Type   | Description                                                                                                                                                                                                                                                                                                           |
 |:------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName | String | The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md).     |
+| displayName | String | The display name of the identity. The display name might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md).     |
 | id          | String | Unique identifier for the identity.                                                                                                                                                                                                                                                                                   |
 
 ## JSON representation

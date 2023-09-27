@@ -4,27 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = CitationTemplate()
-request_body.@odata_type = '#microsoft.graph.security.citationTemplate'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.display_name = 'String'
+request_body = CitationTemplate(
+	odata_type = "#microsoft.graph.security.citationTemplate",
+	display_name = "String",
+	created_by = IdentitySet(
+		odata_type = "microsoft.graph.identitySet",
+	),
+	citation_url = "String",
+	citation_jurisdiction = "String",
+)
 
-created_by = IdentitySet()
-created_by.@odata_type = 'microsoft.graph.identitySet'
-
-
-request_body.created_by = created_by
-request_body.citation_url = 'String'
-
-request_body.citation_jurisdiction = 'String'
-
-
-
-
-result = await client.security.labels.citations.post(request_body = request_body)
+result = await graph_client.security.labels.citations.post(body = request_body)
 
 
 ```

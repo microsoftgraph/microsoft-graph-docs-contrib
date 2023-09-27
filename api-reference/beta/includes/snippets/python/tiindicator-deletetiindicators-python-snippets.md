@@ -4,16 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = DeleteTiIndicatorsPostRequestBody()
-request_body.Value(['id-value1', 'id-value2', ])
+graph_client = GraphServiceClient(request_adapter)
 
+request_body = DeleteTiIndicatorsPostRequestBody(
+	value = [
+		"id-value1",
+		"id-value2",
+	]
+)
 
-
-
-result = await client.security.ti_indicators.delete_ti_indicators.post(request_body = request_body)
+result = await graph_client.security.ti_indicators.delete_ti_indicators.post(body = request_body)
 
 
 ```

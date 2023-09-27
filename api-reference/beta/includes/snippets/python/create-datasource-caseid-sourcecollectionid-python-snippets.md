@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = UserSource()
-request_body.@odata_type = 'microsoft.graph.ediscovery.userSource'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.email = 'badguy@contoso.com'
+request_body = UserSource(
+	odata_type = "microsoft.graph.ediscovery.userSource",
+	email = "badguy@contoso.com",
+)
 
-
-
-
-result = await client.compliance.ediscovery.cases.by_case_id('case-id').source_collections.by_source_collection_id('sourceCollection-id').additional_sources.post(request_body = request_body)
+result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').source_collections.by_source_collection_id('sourceCollection-id').additional_sources.post(body = request_body)
 
 
 ```

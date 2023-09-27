@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Grant users access to a link represented by a [permission][].
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,6 +30,29 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /shares/{encoded-sharing-url}/permission/grant
+```
+
+### Path parameters
+
+| Parameter Name                 | Value    | Description                                                                         |
+|:-------------------------------|:---------|:------------------------------------------------------------------------------------|
+| **encoded-sharing-url** | `string` | Required. A properly encoded sharing URL. |
+
+### Encoding sharing URLs
+
+To encode a sharing URL, use the following logic:
+
+1. First, use base64 encode the URL.
+2. Convert the base64 encoded result to [unpadded base64url format](https://en.wikipedia.org/wiki/Base64) by removing `=` characters
+   from the end of the value, replacing `/` with `_` and `+` with `-`.)
+3. Append `u!` to be beginning of the string.
+
+As an example, to encode a URL in C#:
+
+```csharp
+string sharingUrl = "https://onedrive.live.com/redir?resid=1231244193912!12&authKey=1201919!12921!1";
+string base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(sharingUrl));
+string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
 ```
 
 ## Request headers

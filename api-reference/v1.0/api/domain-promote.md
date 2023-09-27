@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Promote a verified subdomain to the root domain. A verified domain has its **isVerified** property set to `true`.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -88,6 +90,10 @@ POST https://graph.microsoft.com/v1.0/domains/contoso.com/promote
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/domain-promote-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/domain-promote-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

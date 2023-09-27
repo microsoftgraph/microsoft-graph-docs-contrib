@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 Stop the apply decision action on a [accessReviewInstance](../resources/accessreviewinstance.md) when the decision is in the process of being applied. 
 You can stop the apply decision action only when the review is created with autoapply and autoreview settings, and the remediation option to disable and delete users. When you call this API on a current instance of a recurrence, it will not affect future instances. 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -56,6 +58,10 @@ POST  https://graph.microsoft.com/beta/identityGovernance/accessReviews/definiti
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/stop-applydecisions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/stop-applydecisions-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

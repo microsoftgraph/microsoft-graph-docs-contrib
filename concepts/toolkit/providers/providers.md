@@ -42,7 +42,8 @@ You can use the component version of the provider directly in your HTML. Behind 
 Initializing your provider in your JavaScript code enables you to provide more options. To do this, create a new provider instance and set the value of the `Providers.globalProvider` property to the provider you'd like to use. The following example shows how to use the MSAL2 provider.
 
 ```js
-import { Providers, Msal2Provider } from "@microsoft/mgt";
+import { Providers } from "@microsoft/mgt-element";
+import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
 Providers.globalProvider = new Msal2Provider({
   clientId: "YOUR_CLIENT_ID",
 });
@@ -64,7 +65,8 @@ We recommend adding all the permission scopes your application needs to the `sco
 If you're initializing the provider in code, provide the permission scopes in an array in the `scopes` property.
 
 ```js
-import {Providers, Msal2Provider } from "@microsoft/mgt";
+import { Providers } from "@microsoft/mgt-element";
+import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
 Providers.globalProvider = new Msal2Provider({
   clientId: 'YOUR_CLIENT_ID'
   scopes:['user.read','people.read']
@@ -72,6 +74,49 @@ Providers.globalProvider = new Msal2Provider({
 ```
 
 You can find the list of permission scopes required by each component in the **Microsoft Graph permissions** section of each component's documentation page.
+
+## Custom hosts
+
+You can specify custom hosts for the Microsoft Graph client. This allows you to call non-Microsoft Graph Azure AD-secured APIs. When you specify custom hosts, make sure that you request the scope for the access token.
+
+```HTML
+<script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
+<mgt-msal2-provider client-id="YOUR_CLIENT_ID"
+                    custom-hosts="myapi.com,anotherapi.com"
+></mgt-msal2-provider>
+```
+
+If you're initializing the provider in code, provide the host names in an array in the `customHosts` property.
+
+```ts
+import { Providers } from "@microsoft/mgt-element";
+import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
+Providers.globalProvider = new Msal2Provider({
+  clientId: 'YOUR_CLIENT_ID',
+  customHosts: ['myapi.com','anotherapi.com']
+});
+```
+
+>**Note:** these are host names, not URIs.
+
+To call the custom APIs, request that API scope.
+
+```HTML
+<mgt-get resource="https://myapi.com/v1.0/api" scopes="api://CUSTOM_API_GUID/SCOPE">
+  ...
+</mgt-get>
+```
+Or via Javascript/Typescript:
+
+```ts
+import { prepScopes } from "@microsoft/mgt-element";
+
+graphClient
+  .api("https://myapi.com/v1.0/api")
+  .middlewareOptions(prepScopes("api://CUSTOM_API_GUID/SCOPE"))
+  .get();
+...
+```
 
 ## Provider state
 
@@ -88,7 +133,7 @@ export enum ProviderState {
 In some scenarios, you will want to show certain functionality or perform an action only after a user has successfully signed in. You can access and check the provider state, as shown in the following example.
 
 ```js
-import { Providers, ProviderState } from "@microsoft/mgt";
+import { Providers, ProviderState } from "@microsoft/mgt-element";
 
 //assuming a provider has already been initialized
 
@@ -100,7 +145,7 @@ if (Providers.globalProvider.state === ProviderState.SignedIn) {
 You can also use the `Providers.onProviderUpdated` method to get notified whenever the state of the provider changes.
 
 ```js
-import { Providers, ProviderState } from "@microsoft/mgt";
+import { Providers, ProviderState } from "@microsoft/mgt-element";
 
 //assuming a provider has already been initialized
 
@@ -122,7 +167,7 @@ Providers.removeProviderUpdatedListener(providerStateChanged);
 Each provider exposes a function called `getAccessToken` that can retrieve the current access token or retrieve a new access token for the provided scopes. The following example shows how to get a new access token with the `User.Read` permission scope.
 
 ```js
-import { Providers, ProviderState } from "@microsoft/mgt";
+import { Providers, ProviderState } from "@microsoft/mgt-element";
 
 //assuming a provider has already been initialized
 
@@ -138,7 +183,7 @@ if (Providers.globalProvider.state === ProviderState.SignedIn) {
 All components can access Microsoft Graph without any customization required as long as you initialize a provider (as described in the previous sections). If you want to make your own calls to Microsoft Graph, you can do so by getting a reference to the same Microsoft Graph SDK used by the components. First, get a reference to the global `IProvider` and then use the `graph` object as shown:
 
 ```js
-import { Providers } from "@microsoft/mgt";
+import { Providers } from "@microsoft/mgt-element";
 
 let provider = Providers.globalProvider;
 if (provider) {
@@ -150,7 +195,7 @@ if (provider) {
 There might be cases where you need to pass additional permissions, depending on the API you're calling. The following example shows how to do this.
 
 ```js
-import { prepScopes } from "@microsoft/mgt";
+import { prepScopes } from "@microsoft/mgt-element";
 
 graphClient
   .api("me")

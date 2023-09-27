@@ -34,7 +34,7 @@ None.
 |policy|[microsoft.graph.networkaccess.policy](../resources/networkaccess-policy.md)|Policy. |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

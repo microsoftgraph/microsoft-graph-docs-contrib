@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: Get a driveItem resource
 ms.localizationpriority: high
 ms.prod: "sharepoint"
@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Retrieve the metadata for a [driveItem](../resources/driveitem.md) in a [drive](../resources/drive.md) by file system path or ID.
 `item-id` is the ID of a driveItem. It may also be the unique ID of a [SharePoint list item](../resources/listitem.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

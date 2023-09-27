@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Remove access to an item
 ms.localizationpriority: medium
@@ -15,6 +15,8 @@ Remove access to a [DriveItem](../resources/driveitem.md).
 
 Only sharing permissions that are **not** inherited can be deleted.
 The **inheritedFrom** property must be `null`.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -104,7 +106,7 @@ HTTP/1.1 204 No Content
 
 ## Remarks
 
-* [Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive Personal) cannot create or modify permissions on the root DriveItem. 
+* [Drives](../resources/drive.md) with a **driveType** of `personal` (OneDrive Personal) cannot create or modify permissions on the root DriveItem.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

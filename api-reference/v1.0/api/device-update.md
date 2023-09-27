@@ -15,6 +15,8 @@ Update the properties of a registered device.
 
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -127,7 +129,6 @@ HTTP/1.1 204 No Content
 ### Example 2:  Write extensionAttributes on a device
 
 #### Request
-
 
 # [HTTP](#tab/http)
 <!-- {

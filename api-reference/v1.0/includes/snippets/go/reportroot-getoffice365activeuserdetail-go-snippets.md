@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Reports().GetOffice365ActiveUserDetail(period='{period}')().Get(context.Background(), nil)
+period := "{period}"
+graphClient.Reports().GetOffice365ActiveUserDetailWithPeriod(&period).Get(context.Background(), nil)
 
 
 ```

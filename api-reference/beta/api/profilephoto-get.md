@@ -25,6 +25,8 @@ If the size you request is not available, you can still get a smaller size that 
 For example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of the photo will be available for download.
 If the specified size is not available in the user's mailbox or in Azure Active Directory, the size 1x1 is returned with the rest of the  metadata.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
@@ -70,7 +72,7 @@ The following tables show the least privileged permission or permissions require
 > [!NOTE]
 > 
 > - Metadata operation is not supported for personal Microsoft accounts.
-> - There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
+> - An app with only application permissions cannot access a group's photo.
 > - Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 > - Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
 > - Retrieving a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.

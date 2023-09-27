@@ -4,30 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = DeviceConfigurationDeviceStateSummary()
-request_body.@odata_type = '#microsoft.graph.deviceConfigurationDeviceStateSummary'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.UnknownDeviceCount = 2
+request_body = DeviceConfigurationDeviceStateSummary(
+	odata_type = "#microsoft.graph.deviceConfigurationDeviceStateSummary",
+	unknown_device_count = 2,
+	not_applicable_device_count = 8,
+	compliant_device_count = 4,
+	remediated_device_count = 5,
+	non_compliant_device_count = 7,
+	error_device_count = 0,
+	conflict_device_count = 3,
+)
 
-request_body.NotApplicableDeviceCount = 8
-
-request_body.CompliantDeviceCount = 4
-
-request_body.RemediatedDeviceCount = 5
-
-request_body.NonCompliantDeviceCount = 7
-
-request_body.ErrorDeviceCount = 0
-
-request_body.ConflictDeviceCount = 3
-
-
-
-
-result = await client.device_management.device_configuration_device_state_summaries.patch(request_body = request_body)
+result = await graph_client.device_management.device_configuration_device_state_summaries.patch(body = request_body)
 
 
 ```

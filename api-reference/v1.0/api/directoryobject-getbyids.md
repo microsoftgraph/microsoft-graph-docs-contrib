@@ -11,15 +11,14 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Return the directory objects specified in a list of IDs.
-
->[!NOTE]
->This API has a [known issue](/graph/known-issues#incomplete-objects-when-using-getbyids-request). Not all directory objects returned are the full objects containing all their properties.
+Return the directory objects specified in a list of IDs. Only [a subset of user properties are returned by default in v1.0](../resources/users.md#common-properties).
 
 Some common uses for this function are to:
 
 * Resolve IDs returned by functions (that return collections of IDs) such as [getMemberObjects](directoryobject-getmemberobjects.md) or [getMemberGroups](directoryobject-getmembergroups.md)  to their backing directory objects.
 * Resolve IDs persisted in an external store by the application to their backing directory objects.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

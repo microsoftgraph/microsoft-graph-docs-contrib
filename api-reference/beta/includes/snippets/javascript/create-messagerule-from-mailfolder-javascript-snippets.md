@@ -11,12 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const messageRule = {
-    displayName: 'From partner',      
-    sequence: 2,      
-    isEnabled: true,          
+    displayName: 'From partner',
+    sequence: 2,
+    isEnabled: true,
     conditions: {
         senderContains: [
-          'adele'       
+          'adele'
         ]
      },
      actions: {
@@ -29,7 +29,7 @@ const messageRule = {
            }
         ],
         stopProcessingRules: true
-     }    
+     }
 };
 
 await client.api('/me/mailFolders/inbox/messageRules')

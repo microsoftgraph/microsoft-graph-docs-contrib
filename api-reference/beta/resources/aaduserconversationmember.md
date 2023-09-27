@@ -41,7 +41,7 @@ Represents an Azure Active Directory user in a [team](team.md) or a [channel](ch
 |:---------------|:--------|:----------|
 |id| String | Read-only. Unique ID of the user.|
 |displayName| String | The display name of the user. |
-|roles| String collection | The roles for that user. |
+|roles| String collection | The roles of the user such as owner, member, or guest. |
 |userId| String | The GUID of the user. |
 |email| String  | The email address of the user. |
 |tenantId| string  | TenantId which the Azure AD user belongs to. |

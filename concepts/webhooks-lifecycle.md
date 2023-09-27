@@ -198,12 +198,11 @@ The following steps represent the flow of an authorization challenge for an acti
 ### Additional information
 
 - Authorization challenges don't replace the need to renew a subscription before it expires.
-
-    While you can choose to renew a subscription when you receive an authorization challenge, Microsoft Graph may not challenge all of your subscriptions. For example, a subscription that doesn't have any activity and has no change notifications pending delivery may not signal any reauthorization challenges to your app. Make sure to [renew subscriptions](/graph/api/subscription-update) before they expire.
+    The lifecycles of access tokens and subscription expiration are not the same. Your access token may expire before your subscription. It is important to be prepared to regularly reauthorize your endpoint to refresh your access token. Reauthorizing your endpoint will not renew your subscription. However, [renewing your subscription](/graph/api/subscription-update) will also reauthorize your endpoint.
 
 - The frequency of authorization challenges is subject to change.
 
-    Don't assume the frequency of authorization challenges. These lifecycle notifications tell you when to take actions, saving you from having to track which subscriptions require reauthorization. Be ready to handle authorization challenges from once every few minutes for every subscription to rarely for some of your subscriptions.
+    Don't assume the frequency of authorization challenges. These lifecycle notifications tell you when to take action, saving you from having to track which subscriptions require reauthorization. Be ready to handle authorization challenges from once every few minutes for every subscription to rarely for some of your subscriptions.
 
 ## Responding to subscriptionRemoved notifications
 

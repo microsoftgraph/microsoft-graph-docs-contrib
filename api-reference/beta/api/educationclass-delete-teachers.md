@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Remove a teacher from a class.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +51,7 @@ If successful, this method returns a `204 No Content` response code and an empty
 
 ## Example
 
-##### Request
+### Request
 
 The following is an example of the request.
 
@@ -75,7 +77,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/{id}/teachers/14012
 
 ---
 
-##### Response
+### Response
 
 The following is an example of the response. 
 

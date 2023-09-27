@@ -1,6 +1,6 @@
 ---
 title: "profileCardProperty resource type"
-description: "Used to designate either a new property to surface in a shared, people experience or one that will have a custom display name or annotation applied to it. An administrator can define a default display name string and a set of alternative translations for the languages that they support in their organization."
+description: "Represents an attribute of a user on the Microsoft 365 profile card for an organization to surface in a shared, people experience."
 ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
@@ -21,11 +21,11 @@ For more information on adding properties to the profile card for an organizatio
 
 | Method       | Return Type | Description |
 |:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
-| [List](../api/organizationsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Get a collection of **profileCardProperty** resources of an organization. |
-| [Create](../api/organizationsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Create a new **profileCardProperty** resource for an organization. |
-| [Get](../api/profilecardproperty-get.md) | [profileCardProperty](profilecardproperty.md) | Read the properties and relationships of a **profileCardProperty** resource, which contains the profile card customizations that exist in a Microsoft 365 organization for a given field. |
-| [Update](../api/profilecardproperty-update.md)               | [profileCardProperty](profilecardproperty.md) | Update a **profileCardProperty** object.                               |
-| [Delete](../api/profilecardproperty-delete.md)               | None                                          | Delete a **profileCardProperty** object.                               |
+| [List profileCardProperties](../api/peopleadminsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) collection | Get a collection of [profileCardProperty](../resources/profilecardproperty.md) resources for an organization. |
+| [Create profileCardProperty](../api/peopleadminsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Create a new [profileCardProperty](../resources/profilecardproperty.md) for an organization. |
+| [Get profileCardProperty](../api/profilecardproperty-get.md) | [profileCardProperty](profilecardproperty.md) | Retrieve the properties of a [profileCardProperty](../resources/profilecardproperty.md) entity. |
+| [Update profileCardProperty](../api/profilecardproperty-update.md)               | [profileCardProperty](profilecardproperty.md) | Update the properties of a [profileCardProperty](../resources/profilecardproperty.md) object, identified by its **directoryPropertyName** property.                               |
+| [Delete profileCardProperty](../api/profilecardproperty-delete.md)               | None                                          | Delete the [profileCardProperty](../resources/profilecardproperty.md) object specified by its **directoryPropertyName** from the organization's profile card, and remove any localized customizations for that property.                               |
 
 ## Properties
 
@@ -52,28 +52,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "annotations": [
-    {
-      "displayName": "String",
-      "localizations": [
-        {
-          "languageTag": "String",
-          "displayName": "String"
-        }
-      ]
-    }
-  ],
+  "annotations": [{ "@odata.type": "microsoft.graph.profileCardAnnotation" }],
   "directoryPropertyName": "String"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "profileCardProperty resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-
