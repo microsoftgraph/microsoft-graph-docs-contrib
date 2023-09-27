@@ -36,7 +36,7 @@ GET /reports/getRelyingPartyDetailedSummary(period='period_value')
 
 | Parameter | Description |
 |:----------|:----------|
-| period | **Mandatory**. The supported values are: D1, D7, D30. These values follow the format Dn where n represents the number of days over which the report is aggregated.|
+| period | Required. The supported values are: D1, D7, D30. These values follow the format Dn where n represents the number of days over which the report is aggregated.|
 
 ## Optional query parameters
 
