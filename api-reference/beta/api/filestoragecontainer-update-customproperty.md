@@ -12,13 +12,13 @@ Namespace: microsoft.graph
 
 
 
-Update one or multiple custom properties on a fileStorageContainer instance. Only the **value** and **isSearchable** properties on the custom properties can be updated. 
+Update one or multiple custom properties on a fileStorageContainer. Only the **value** and **isSearchable** properties on the custom properties can be updated. 
 
 Only the custom properties specified in the request body are updated. If a custom property specified in the request body does not exist on the container, it will be created. 
 
 Updating a custom property to null deletes the property from the container.
 
-The application calling this API must have permissions to access the contents of containers of the containerType the container belongs to.
+The application calling this API must have read/write permissions to fileStorageContainers of the containerType the fileStorageContainer belongs to.
 
 
 ## Permissions
