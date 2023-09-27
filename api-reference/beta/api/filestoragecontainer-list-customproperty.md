@@ -1,6 +1,6 @@
 ---
 title: "List fileStorageContainer custom property"
-description: "List the custom properties on a fileStorageContainer"
+description: "List the custom properties of a fileStorageContainer"
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -10,9 +10,12 @@ doc_type: apiPageType
 # List fileStorageContainer custom property
 Namespace: microsoft.graph
 
-List the custom properties on a fileStorageContainer. Caller can either retrieve all custom properties or get specific property by name.
+> [!IMPORTANT]
+> APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
 
-The application calling this API must have read permission to fileStorageContainers of the containerType the fileStorageContainer belongs to.
+List the custom properties of a fileStorageContainer. Caller can either retrieve all custom properties or get specific property by name.
+
+The application calling this API must have read permission to fileStorageContainers of the respective container type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
