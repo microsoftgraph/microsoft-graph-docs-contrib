@@ -40,7 +40,7 @@ Insights for MFA calls for a specific period.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

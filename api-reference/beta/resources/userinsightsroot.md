@@ -29,7 +29,7 @@ Application insights for all user requests to a tenant for a specific period. Th
 |monthly|[monthlyUserInsightMetricsRoot](../resources/monthlyuserinsightmetricsroot.md)|All available insights with a monthly cadence as seen in the userInsightsRoot entity.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

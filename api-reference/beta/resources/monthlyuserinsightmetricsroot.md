@@ -39,7 +39,7 @@ This entity will contain all available insights with a monthly cadence as seen i
 ||summary|[insightSummary](../resources/insightsummary.md) collection| Summary of all usage insights for specified time period.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -39,7 +39,7 @@ This entity will contain all available insights with a daily cadence as seen in 
 |userCount|[userCountMetric](../resources/usercountmetric.md) collection|Get the userCountMetric resources from the userCount navigation property.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
