@@ -8,7 +8,7 @@ where:
 configuration:
   resourceManagementConfiguration:
     scheduledSearches:
-    - description:
+    - description: Add do not merge label to pull requests without a status label
       frequencies:
       - hourly:
           hour: 1
@@ -38,20 +38,20 @@ configuration:
           label: do not merge
       - addReply:
           reply: >-
-            Thanks for your pull request, ${issueAuthor}! I've added the **do not merge** label as a default status.
+            > [!NOTE]
+            > The following guidance is for Microsoft employees only. Community contributors can ignore this message, our content reviewer will manage the status.
 
+            Thanks for your pull request, ${issueAuthor}! I've added the **do not merge** label as a default status.
 
             Please add the **ready for content review** label to start a review. Your PR won't be reviewed until you add this label.
 
-
             After the content review is complete and the updates in this PR are ready for external customers to use, please replace the **do not merge** label with **ready to merge**.
 
-
-            **Note:** Pull requests will not be merged until the **ready to merge** label is set.
-
+            > [!NOTE]
+            > Pull requests will not be merged until the **ready to merge** label is set.
 
             For details, see the [Content review process summary](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow).
-    - description:
+    - description: Add no recent activity label to pull requests labeled do not merge with no activity for 60 days
       frequencies:
       - daily:
           time: 11:0
@@ -71,9 +71,8 @@ configuration:
           reply: >-
             This PR has been automatically marked as stale because it has been labeled "do not merge" but has not had any activity for **60 days**. It will be closed if no further activity occurs **within 7 days of this comment**.
 
-
             If you still intend to merge this pull request eventually, please add a comment to keep this open, and update the status labels accordingly.
-    - description:
+    - description: Close pull requests with no recent activity label with no activity for 7 days
       frequencies:
       - daily:
           time: 11:0
@@ -87,7 +86,7 @@ configuration:
           days: 7
       actions:
       - closeIssue
-    - description:
+    - description: Close issues with needs more info label with no activity for 14 days
       frequencies:
       - hourly:
           hour: 6
@@ -104,7 +103,7 @@ configuration:
       - addReply:
           reply: This issue has been closed due to inactivity. If the issue is still present, please provide the requested information to reopen the issue.
       - closeIssue
-    - description:
+    - description: Close pull requests with pr-expired label with no activity for 1 day
       frequencies:
       - hourly:
           hour: 3
@@ -117,7 +116,7 @@ configuration:
           days: 1
       actions:
       - closeIssue
-    - description:
+    - description: Add MSTeams-Developer-Support to issues and pull requests assigned to nkramer
       frequencies:
       - hourly:
           hour: 3
@@ -128,7 +127,7 @@ configuration:
       actions:
       - addLabel:
           label: MSTeams-Developer-Support
-    - description:
+    - description: Add reminder to pull requests with changes requested label with no activity for 14 days
       frequencies:
       - hourly:
           hour: 6
@@ -146,15 +145,12 @@ configuration:
           reply: >
             Hello, @${issueAuthor}.
 
-
             Your PR has been in "Changes requested" state for more than 2 weeks.
-
 
             Please address the feedback left by your reviewer. Feel free to ping your reviewer on the side if you have any questions.
 
-
             Thank you!
-    - description:
+    - description: Add reminder to pull requests with content review complete label with no activity for 14 days
       frequencies:
       - hourly:
           hour: 6
@@ -181,7 +177,8 @@ configuration:
 
             Thank you!
     eventResponderTasks:
-    - if:
+    - description: 'Close issues when they are labeled question, serviceissue, or request: feature'
+      if:
       - payloadType: Issues
       - or:
         - labelAdded:
@@ -194,8 +191,8 @@ configuration:
       - addReply:
           reply: "This issue will be closed because we only accept document content feedback in this repository's issue list. This issues list is not intended for service issues, questions, or service feedback.\n\nIf you have service issues and want to raise a support request, and if one of the following applies:\n- You are an administrator of an active Azure subscription - raise a new technical support ticket at the **[Azure Admin Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq)**.\n- You are an administrator of an Office 365 or Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.\n- You are an administrator of a Microsoft Entra service - raise a new technical support ticket through the **[Microsoft Entra admin center](https://entra.microsoft.com/#view/Microsoft_Azure_Support/NewSupportRequestV3Blade/callerName/ActiveDirectory/issueType/technical)**.\n\nIf you would like to ask a question about Microsoft Graph, please visit [Microsoft Q&A](https://aka.ms/askGraph). \n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).\n\nIf you are looking to provide feedback or raise issues on Microsoft Graph SDKs, please visit the [respective Github repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sdk&type=&language=). "
       - closeIssue
-      description:
-    - if:
+    - description: Close issues that are not opened through the Learn page's feedback button
+      if:
       - payloadType: Issues
       - not:
           bodyContains:
@@ -214,8 +211,8 @@ configuration:
       - addReply:
           reply: "This issue will be closed because we do not support feedback captured directly from the GitHub new issue page. Also, this issues list is not intended for service issues, questions, or service feedback.\n\nTo provide feedback on [Microsoft Graph documentation](https://learn.microsoft.com/graph/overview), please scroll to the **Feedback** section at the bottom of the related documentation page. You can click **This page** and create new feedback there. This gives the team the necessary context of your feedback.\n\nIf you have service issues and want to raise a support request, and if one of the following applies:\n- You are an administrator of an active Azure subscription - raise a new technical support ticket at the **[Azure Admin Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq)**.\n- You are an administrator of an Office 365 or Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.\n- You are an administrator of a Microsft Entra service - raise a new technical support ticket at the **[Microsoft Entra admin center](https://entra.microsoft.com/#view/Microsoft_Azure_Support/NewSupportRequestV3Blade/callerName/ActiveDirectory/issueType/technical)**.\n\nIf you would like to ask a question about Microsoft Graph, please visit [Microsoft Q&A](https://aka.ms/askGraph). \n\nIf you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).\n\nIf you are looking to provide feedback or raise issues on Microsoft Graph SDKs, please visit the [respective Github repo](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=sdk&type=&language=). "
       - closeIssue
-      description:
-    - if:
+    - description: Remove no recent activity label if pull request is updated
+      if:
       - payloadType: Pull_Request
       - not:
           isAction:
@@ -225,67 +222,35 @@ configuration:
       then:
       - removeLabel:
           label: no recent activity
-      description:
-    - if:
+    - description: Remove no recent activity label if issue receives a comment
+      if:
       - payloadType: Issue_Comment
       - isOpen
-      - hasLabel:
-          label: no recent activity
-      - isActivitySender:
-          issueAuthor: True
-      then:
-      - removeLabel:
-          label: no recent activity
-      description:
-    - if:
-      - payloadType: Issue_Comment
       - hasLabel:
           label: no recent activity
       then:
       - removeLabel:
           label: no recent activity
-      description:
-    - if:
-      - payloadType: Pull_Request
-      - isOpen
-      - labelAdded:
-          label: pr-expired
-      then:
-      - addReply:
-          reply: >-
-            @${issueAuthor}, in an effort to better serve our documentation contributors, we are auditing all long-running open pull requests. This pull request has been identified as having no recent activity and being opened prior to 2021. To keep our docs review team focused on active requests, **we will close this pull request in 24 hours**.
-
-
-            If the changes you submitted in this pull request are no longer relevant or needed, no action is required. If these changes are still needed, please take one of the following actions.
-
-
-            - Reopen this pull request, resolve all merge conflicts, address all review comments, and set the `ready for content review` label ASAP to request a review from our team.
-
-            - Create a new pull request and reimplement your changes against the current state of the repository.
-
-
-            Thanks!
-
-            Microsoft Graph Docs Team
-      description:
-    - if:
+    - description: Add acknowledgement of labeling pull request with ready for content review
+      if:
       - payloadType: Pull_Request
       - labelAdded:
           label: ready for content review
       - isOpen
+      - activitySenderHasAssociation: CONTRIBUTOR
       then:
       - addReply:
           reply: >-
-            Thank you for indicating that your pull request is ready for content review, @${issueAuthor}. It has been added to the **Content Review** project and an available reviewer will be assigned in the next 15 business days, depending on demand. You can monitor the status of your pull request in the editorial process [here](https://github.com/orgs/microsoftgraph/projects/15).
-
+            Thank you for indicating that your pull request is ready for content review, @${issueAuthor}. It has been added to the **Content Review** project and an available reviewer will be assigned in the next 15 business days, depending on demand.
 
             Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow?anchor=content-review-process-summary).
-      description:
-    - if:
+    - description: Remove status labels and add reply when pull request is labeled with content review complete
+      if:
       - payloadType: Pull_Request
       - labelAdded:
           label: content review complete
       - isOpen
+      - activitySenderHasAssociation: CONTRIBUTOR
       then:
       - removeLabel:
           label: ready for content review
@@ -297,52 +262,32 @@ configuration:
           reply: >-
             Thank you for your work in this PR, @${issueAuthor}.
 
-
             When the updates in this PR are ready for external customers to use, please replace the **do not merge** label with **ready to merge**.
-
 
             Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow?anchor=content-review-process-summary).
       - removeLabel:
           label: content review in progress
-      description:
-    - if:
+    - description: Add prompt for internal users to make requested changes
+      if:
       - payloadType: Pull_Request
       - labelAdded:
           label: changes requested
       - isOpen
+      - activitySenderHasAssociation: CONTRIBUTOR
       then:
       - addReply:
           reply: >-
             @${issueAuthor}, your content reviewer has requested changes to your pull request. Please review feedback and address accordingly as soon as possible to keep your pull request moving forward.
 
-
             Once you have addressed the feedback, please add the `review feedback addressed` label and select the **Re-request review** icon.
 
-
             If you cannot add labels, please add a comment with `#feedback-addressed` to the pull request.
-
 
             Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow?anchor=content-review-process-summary).
       - assignTo:
           author: True
-      description:
-    - if:
-      - payloadType: Pull_Request
-      - labelAdded:
-          label: review feedback addressed
-      - isOpen
-      then: []
-      description:
-    - if:
-      - payloadType: Pull_Request
-      - or:
-        - isAction:
-            action: Closed
-        - isAction:
-            action: Null
-      then: []
-      description:
-    - if:
+    - description: 'Add review feedback addressed label if author comments #feedback-addressed'
+      if:
       - payloadType: Issue_Comment
       - isActivitySender:
           issueAuthor: True
@@ -352,8 +297,8 @@ configuration:
       then:
       - addLabel:
           label: review feedback addressed
-      description:
-    - if:
+    - description: Remove ready for content review label when pull request is labeled content review in progress
+      if:
       - payloadType: Pull_Request
       - labelAdded:
           label: content review in progress
@@ -361,8 +306,8 @@ configuration:
       then:
       - removeLabel:
           label: ready for content review
-      description:
-    - if:
+    - description: When Identity-related label is added to a pull request request review from FaithOmbongi
+      if:
       - payloadType: Pull_Request
       - or:
         - labelAdded:
@@ -375,8 +320,8 @@ configuration:
       then:
       - requestReview:
           reviewer: 'FaithOmbongi '
-      description:
-    - if:
+    - description: When changes requested label is added remove review feedback addressed label
+      if:
       - payloadType: Pull_Request
       - isOpen
       - labelAdded:
@@ -386,8 +331,8 @@ configuration:
       then:
       - removeLabel:
           label: review feedback addressed
-      description:
-    - if:
+    - description: When review feedback addressed label is added remove changes requested label
+      if:
       - payloadType: Pull_Request
       - isOpen
       - labelAdded:
@@ -397,8 +342,8 @@ configuration:
       then:
       - removeLabel:
           label: changes requested
-      description:
-    - if:
+    - description: Close and redirect Teams questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -416,11 +361,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-teamwork.html)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect files questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -441,8 +385,8 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect mail questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -463,8 +407,8 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect calendar questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -485,8 +429,8 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect toolkit questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -507,8 +451,8 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect cloud communications questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -529,8 +473,8 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect tasks and plans questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -551,8 +495,8 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect security questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -573,8 +517,8 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect sites and lists questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -595,15 +539,15 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect OneNote questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
           - hasLabel:
               label: Q&A
           - labelAdded:
-              label: 'area: open extensions'
+              label: 'area: onenote'
         - and:
           - hasLabel:
               label: 'area: onenote'
@@ -617,8 +561,8 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect corporate management questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -636,11 +580,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-corporate-mgmt.html)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect users questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -658,11 +601,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-users.html)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect reports questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -680,11 +622,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-reports.html)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect insights questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -702,11 +643,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-insights.html)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect extensions questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -724,11 +664,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-extensions.html)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect change notifications questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -746,11 +685,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-change-notifications.html)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect bookings questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -768,11 +706,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-customer-booking.html)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect people questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -790,11 +727,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-people.html)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect query parameters questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -812,11 +748,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-query-parameters.html)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect workbooks and charts questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -834,11 +769,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-workbooks.html)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect search questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -856,11 +790,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-search.html)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect todo questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -878,11 +811,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-todo.html)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect compliance questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -900,11 +832,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-compliance.html)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect intune questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -925,8 +856,8 @@ configuration:
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect authentication questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -944,11 +875,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-authentication.html)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect groups questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -966,11 +896,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-groups.html)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect identity questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -988,11 +917,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-identity.html)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect governance questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -1010,11 +938,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-governance.html)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect notag questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -1032,11 +959,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/products/graph)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect batch requests questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -1054,11 +980,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-batching.html)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect notifications questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -1076,11 +1001,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-notifications.html)
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect education questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -1098,11 +1022,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-education.html).
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
+    - description: Close and redirect SDK questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -1120,23 +1043,10 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-sdk.html).
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
-      description:
-    - if:
-      - payloadType: Issue_Comment
-      - isActivitySender:
-          issueAuthor: True
-      - isOpen
-      - commentContains:
-          pattern: '#sign-off'
-          isRegex: False
-      then:
-      - addLabel:
-          label: ready for content review
-      description:
-    - if:
+    - description: Close and redirect applications questions to Q&A
+      if:
       - payloadType: Issues
       - or:
         - and:
@@ -1154,8 +1064,19 @@ configuration:
           reply: >-
             This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-applications.html).
 
-
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
-      description:
+    - description: 'Add ready for content review label if author comments #sign-off'
+      if:
+      - payloadType: Issue_Comment
+      - isActivitySender:
+          issueAuthor: True
+      - isOpen
+      - commentContains:
+          pattern: '#sign-off'
+          isRegex: False
+      then:
+      - addLabel:
+          label: ready for content review
+    - description:
 onFailure:
 onSuccess:
