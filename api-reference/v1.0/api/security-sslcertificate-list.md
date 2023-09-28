@@ -37,13 +37,13 @@ GET /security/threatIntelligence/sslCertificates?$search="{property_name}:{prope
 
 ## Optional query parameters
 
-This method supports the `$count`, `$select`, `$orderBy`, `$top`, and `$skip` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$orderby`, `$select`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name     | Description                                                                                                                                                                                                                    |
 | :------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | $count   | Returns a holistic count of the number of [sslCertificate](../resources/security-sslcertificate.md) objects. You can specify `$count` as a query parameter (`?$count=true`) or as a path parameter (`/$count`). |
 | $orderby | Supports some properties of the **sslCertificate** resource, as listed in [Properties that support $orderby](#properties-that-support-orderby).                                                                |
-| $search  | **Required** parameter. Currently supports searching by only one property in a call. For details, see [Properties that support $search](#properties-that-support-search).           |
+| $search  | **Required** parameter. Currently supports searching by only one property in a call. <br> Do not include any colon (':') in the search string; simply remove any colon from the property value in the search string, if it exists. <br> For more information, see [Properties that support $search](#properties-that-support-search).           |
 | $select  | Limits the properties returned in this query.                                                                                                                                                         |
 | $skip    | Skips over elements in pages. You can combine with `$top` to perform pagination or use the URL returned in `@odata.nextLink` for server-side pagination.                                                                        |
 | $top     | Limits the number of elements per page. You can combine with `$skip` to perform pagination or use the URL returned in `@odata.nextLink` for server-side pagination.                                                              |
@@ -63,7 +63,7 @@ Use any of the following properties with the `$search` query parameter.
 
 | Property    | Example                                     | Notes                                                                                                    |
 | :---------- | :------------------------------------------ | :--------------------------------------------------------------------------------------------------------|
-| fingerprint       | `$search="fingerprint:a3b59e5fe884ee1f34d98eef858e3fb662ac104a"`          | Do not include any colon (:) in the **fingerprint** property value in the search string. Simply remove any colon in the property value portion of the search string, if it exists. |
+| fingerprint       | `$search="fingerprint:a3b59e5fe884ee1f34d98eef858e3fb662ac104a"`          | **fingerprint** property values may contain colon (':'). In general, do not include any colon (:) in a search string. Simply remove any colon from the search string, if it exists. |
 | issuer       | `$search="issuer/commonName:Contoso"`          | Specify in the search string a specific property of the [sslCertificateEntity](../resources/security-sslcertificateentity.md) type. |
 | serialNumber       | `$search="serialNumber:abc123"`          | Returns [sslCertificate](../resources/security-sslcertificate.md) resources with the **serialNumber** property matching the property value in the search string. |
 | sha1       | `$search="sha1:abc123"`          | Returns [sslCertificate](../resources/security-sslcertificate.md) resources with the **sha1** property matching the property value in the search string.|
