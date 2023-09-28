@@ -6,7 +6,7 @@ ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "governance"
-ms.date: 09/21/2023
+ms.date: 09/27/2023
 ---
 
 # Manage security alerts for Azure AD roles using PIM
@@ -17,9 +17,10 @@ For more information about API resources for managing PIM security alerts, see [
 
 ## Prerequisites
 
-- Least privileged permission for read operations: *RoleManagementAlert.Read.Directory*
-- Least privileged permission for write operations: *RoleManagementAlert.ReadWrite.Directory*
-- Least privileged Azure AD role: *Privileged Role Administrator*
++ Have an understanding of [PIM for Azure AD roles APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) or [PIM for groups APIs](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview).
++ In this article, you call the APIs in a [delegated scenario](/graph/auth-v2-user).
+  + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. Use an account with at least the *Privileged Role Administrator* role.
+  + Grant yourself the *RoleManagementAlert.ReadWrite.Directory* delegated permission.
 
 <!--
 Consider moving this to the API Overview (replace existing) and keeping this article to the how-to steps only.
@@ -181,6 +182,7 @@ Content-Type: application/json
 ## Get a security alert and expand the relationships to read the definition, configuration, and incidents
 
 ### Request
+
 You can read the security alert and its definition, configuration, and related incidents in the tenant by either expanding all relationships using the wildcard character (*), or by expanding the relationships individually using `$expand=alertDefinition,alertConfiguration,alertIncidents`.
 
 This request helps you avoid retrieving the alert definition, configuration, and incidents separately, and then correlating them to the alert.
@@ -310,8 +312,6 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ale
 
 ### Response
 
-<!-- Riana: this response is different from what we documented. -->
-
 Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -404,8 +404,6 @@ Content-Type: application/json
 The request returns a `204 No Content` response.
 
 ## Refresh an alert type
-
-<!-- We need to document at the top of the article https://learn.microsoft.com/en-us/graph/api/unifiedrolemanagementalert-refresh?view=graph-rest-beta&tabs=http that this task is a long running operation and the alert info will not be updated until the operation completes. Currently, the info is hidden in the "Response section" -->
 
 When you refresh an alert type, PIM scans the tenant for incidents that match the alert type. This request is a long-running operation and returns a **Location** header that you can use to poll the status of the operation - whether the alert was refreshed or failed. PIM includes alerts that you previously dismissed in the refresh operation, reactives dismissed alerts (updates **isActive** to `true`), and generates new incidents.
 
