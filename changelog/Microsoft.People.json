@@ -378,7 +378,7 @@
         },
         {
           "Id": "71ebad7b-fc20-4469-b895-ddeef0ee54a0",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "photo",
           "ChangeType": "Addition",
           "Description": "Added support for deleting **photo** of a [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
