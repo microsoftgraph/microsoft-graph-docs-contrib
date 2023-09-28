@@ -92,7 +92,7 @@ HTTP/1.1 200 OK
 
 ### Example 2: Set status message of another user
 
-The following request sets the presence status message as "Hey I'm currently in a meeting." for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`. Then presence for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3` is obtained on behalf of other user via a [getPresence](presence-get.md) request.
+The following request sets the presence status message as "Hey I am available now" for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3`. Then in Example 3 presence for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3` is obtained on behalf of another user via a [getPresence](presence-get.md) request.
 
 #### Request
 
@@ -127,8 +127,8 @@ Content-Type: application/json
 HTTP/1.1 200 OK
 ```
 
-### Example 3:  Get another user presence
-This request should be executed on behalf of another user.
+### Example 3: Get another user presence
+This is a continuation of Example 2. Presence for user `fa8bf3dc-eca7-46b7-bad1-db199b62afc3` is obtained on behalf of another user via a [getPresence](presence-get.md) request.
 
 #### Request
 
