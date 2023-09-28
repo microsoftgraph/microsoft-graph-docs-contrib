@@ -32,7 +32,7 @@ This is an abstract type. In use, [fido2combinationConfigurations](fido2combinat
 ## Relationships
 |id|String|A unique system-generated identifier.|
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

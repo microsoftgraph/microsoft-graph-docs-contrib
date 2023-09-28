@@ -1,6 +1,6 @@
 ---
 title: "itemCategories resource type"
-description: "Represents a category for a number of items in Dynamics 365 Business Central."
+description: "Represents a category for many items in Dynamics 365 Business Central."
 services: "project-madeira"
 documentationcenter: ""
 author: "SusanneWindfeldPedersen"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a category for a number of items in Dynamics 365 Business Central.
+Represents a category for many items in Dynamics 365 Business Central.
 
 ## Methods
 
@@ -32,7 +32,7 @@ Represents a category for a number of items in Dynamics 365 Business Central.
 |:-------------------|:-------|:-----------------------------------------------|
 |code                |String  |The item category code.                          |
 |displayName         |String  |The display name of the item category.                |
-|id                  |String  |The unique ID of the item category. Non-editable.|
+|id                  |String  |The unique ID of the item category. Noneditable.|
 |lastModifiedDateTime|Datetime|The date and time when the item category was last modified. Read-Only.|  
 
 
@@ -42,7 +42,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 ```json
 {

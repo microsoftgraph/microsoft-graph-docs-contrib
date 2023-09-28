@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Delete a [bookingService](../resources/bookingservice.md) object in the specified [bookingBusiness](../resources/bookingbusiness.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -33,15 +35,15 @@ DELETE /solutions/bookingBusinesses/{id}/services/{id}
 | Authorization  | Bearer {code}|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 ### Request
-The following is an example of the request.
+Here's an example  of the request.
 
 <!-- {
   "blockType": "request",
@@ -52,7 +54,7 @@ DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunch
 ```
 
 ### Response
-The following is an example of the response.
+Here's an example  of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

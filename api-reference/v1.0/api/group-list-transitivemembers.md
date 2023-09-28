@@ -15,6 +15,8 @@ Get a list of the group's members. A group can have different object types as me
 
 This operation is transitive and returns a flat list of all nested members. An attempt to filter by an OData cast that represents an unsupported member type returns a `400 Bad Request` error with the `Request_UnsupportedQuery` code.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,11 +41,11 @@ GET /groups/{id}/transitiveMembers
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, `$top`, and `$filter`. You can use `$search` on the **displayName** and **description** properties. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, `$top`, and `$filter`. You can use `$search` on the **displayName** and **description** properties. You can also filter the results on the OData type, such as `microsoft.graph.user` or `microsoft.graph.group`.
 
 This API returns up to 100 member objects by default. The maximum page size that you can request through the `$top` query parameter is 999 objects.
 
-To filter the results on the OData type, such as `microsoft.graph.user` or `microsoft.graph.group`, you must use the [advanced query parameters](/graph/aad-advanced-queries). That is, the **ConsistencyLevel** header set to `eventual` and the `$count=true` query string.
+Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 
@@ -436,14 +438,12 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
-  "description": "List transitive group members",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
   "suppressions": [
+    "Error: /api/group-list-transitivemembers.md:
+      Failed to parse enumeration values for type microsoft.graph.transitive. Table requires a column header named one of the following: Member, Name, Value"
   ]
-}-->
+}
+-->

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert configuration that is triggered if a user goes over a specified number of days without activating a role. Assigning users privileged roles that they do not need increases the risks of a security attack. It is also easier for security threats to remain unnoticed in accounts that are not actively used.
+Represents an alert configuration that is triggered if a user goes over a specified number of days without activating a role. Assigning users privileged roles that they don't need increases the risks of a security attack. It's also easier for security threats to remain unnoticed in accounts that aren't actively used.
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
 
@@ -33,7 +33,7 @@ Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrole
 |alertDefinition|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)| The definition of the alert that contains its description, impact, and measures to mitigate or prevent it. Supports `$expand`.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

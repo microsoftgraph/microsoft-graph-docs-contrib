@@ -1,7 +1,7 @@
 ---
 title: "identityUserFlowAttribute resource type"
-description: "Represents user flow attributes in an Azure Active Directory tenant and an Azure AD B2C tenant."
-ms.localizationpriority: high
+description: "Represents attributes that can be added to a user flow in an Azure AD workforce tenant, an Azure AD for customers tenant, and an Azure AD B2C tenant."
+ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "identity-and-sign-in"
 author: "nanguil"
@@ -11,9 +11,11 @@ author: "nanguil"
 
 Namespace: microsoft.graph
 
-Represents user flow attributes in an Azure Active Directory (Azure AD) tenant.
+Represents attributes that can be added to a user flow in an Azure AD workforce tenant, an Azure AD for customers tenant, and an Azure AD B2C tenant.
 
-Configuring user flow attributes in your Azure AD tenant allows you to collect information about a user during sign-up. You can choose to collect a built-in set of attributes. For example, given name, surname, city, and postal code. You can also configure custom user flow attributes to collect information from a user that is not built in to the directory. Custom user flow attributes are an abstraction over [Azure Active Directory schema extensions](/azure/active-directory/develop/active-directory-schema-extensions).
+Configuring user flow attributes in your Azure AD or Azure AD B2C tenant allows you to collect information about a user during sign-up. You can choose to collect a built-in set of attribute; for example, Given Name, Surname, City, and Postal Code; or you can configure custom user flow attributes. Custom user flow attributes are an abstraction over [directory extensions](/graph/extensibility-overview#directory-azure-ad-extensions).
+
+[identityBuiltInUserFlowAttributes](../resources/identitybuiltinuserflowattribute.md) and [identityCustomUserFlowAttributes](../resources/identitycustomuserflowattribute.md) both inherit from this base type.
 
 ## Methods
 
@@ -29,15 +31,15 @@ Configuring user flow attributes in your Azure AD tenant allows you to collect i
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|dataType|identityUserFlowAttributeDataType|The data type of the user flow attribute. This cannot be modified after the custom user flow attribute is created. The supported values for **dataType** are: `string` , `boolean` , `int64` , `stringCollection` , `dateTime`.|
+|dataType|identityUserFlowAttributeDataType|The data type of the user flow attribute. This can't be modified after the custom user flow attribute is created. The supported values for **dataType** are: `string` , `boolean` , `int64` , `stringCollection` , `dateTime`, `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`, `ne`).|
+|displayName|String|The display name of the user flow attribute. <br/><br/> Supports `$filter` (`eq`, `ne`). |
 |description|String|The description of the user flow attribute that's shown to the user at the time of sign-up.|
-|displayName|String|The display name of the user flow attribute.|
-|id|String|The identifier of the user flow attribute. This is a read-only attribute that is automatically created.|
-|userFlowAttributeType|identityUserFlowAttributeType|The type of the user flow attribute. This is a read-only attribute that is automatically set. Depending on the type of attribute, the values for this property will be `builtIn`, `custom`, or `required`.|
+|id|String|The identifier of the user flow attribute. This is a read-only attribute that is automatically created. <br/><br/> Supports `$filter` (`eq`, `ne`). |
+|userFlowAttributeType|identityUserFlowAttributeType|The type of the user flow attribute. This is a read-only attribute that is automatically set. Depending on the type of attribute, the values for this property are `builtIn`, `custom`, `required`, `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`, `ne`). |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

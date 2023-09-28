@@ -17,6 +17,8 @@ Get the last [addToReviewSetOperation](../resources/ediscovery-addtoreviewsetope
 
 >**Note:** This method only lists the last operation; it does not return a history of all operations.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

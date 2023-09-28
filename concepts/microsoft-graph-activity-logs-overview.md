@@ -37,15 +37,15 @@ The following data relating to API requests is available for Microsoft Graph act
 ## Common use cases for Microsoft Graph activity logs
 
 - Get full visibility into the transactions made by applications and other API clients that you have consented to in the tenant.
-- Identify the activities that a compromised user account conducted in your tenant
-- Build detections and behavioral analysis to identify suspicious or anomalous use of Microsoft Graph APIs
-- Investigate unexpected or suspicious privileged assignment of application permissions
-- Identify problematic or unexpected behaviors for client applications such as extreme call volumes
-- Correlate Graph requests made by a user or app with sign-in information
+- Identify the activities that a compromised user account conducted in your tenant.
+- Build detections and behavioral analysis to identify suspicious or anomalous use of Microsoft Graph APIs.
+- Investigate unexpected or suspicious privileged assignment of application permissions.
+- Identify problematic or unexpected behaviors for client applications such as extreme call volumes.
+- Correlate Microsoft Graph requests made by a user or app with sign-in information.
 
 ## Configure to receive the Microsoft Graph activity logs
 
-You can configure to stream the logs through either the Diagnostic Setting in Entra portal or the Azure Resource Manager APIs. For more information, see the guidance in the following articles.
+You can configure to stream the logs through either the Diagnostic Setting in Entra portal or the Azure Resource Manager APIs. For more information, see the guidance in the following articles:
 
 - [Integrate activity logs with Azure Monitor logs](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)
 - [Configure diagnosticSettings through the Azure Resource Manager API](/azure/templates/microsoft.insights/diagnosticsettings?pivots=deployment-language-arm-template)
@@ -60,14 +60,14 @@ The following articles guide you to configure the storage destinations:
 
 If you already have an Azure AD P1 license, you need an Azure subscription to set up the Log Analytics workspace, Storage account, or Event Hubs. The Azure subscription comes at no cost, but you have to pay to utilize Azure resources.
 
-The amount of data logged and, thus, the cost incurred, can vary significantly depending on the tenant size and the applications in your tenant that interact with Microsoft Graph APIs. Here are some estimates for log data size to aid the price calculation. Use these estimations for general consideration only.
+The amount of data logged and, thus, the cost incurred, can vary significantly depending on the tenant size and the applications in your tenant that interact with Microsoft Graph APIs. The following table provides some estimates for log data size to aid the price calculation. Use these estimations for general consideration only.
 
 | Users in tenant | Storage GiB/month | Event Hubs Messages/month | Azure Monitor Logs GiB/month |
 |-----------------|-------------------|---------------------------|------------------------------|
 | 1000            | 14                | 62K                       | 15                           |
 | 100000          | 1000              | 4.8M                      | 1200                         |
 
-See pricing calculations for respective services:
+See the following pricing calculations for respective services:
 
 - [Log Analytics pricing details](/azure/azure-monitor/logs/cost-logs#pricing-model)
 - [Azure Storage pricing](https://azure.microsoft.com/pricing/details/storage/blobs)
