@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get a list of [passiveDnsRecord](../resources/security-passivednsrecord.md) resources.
+Get a list of [passiveDnsRecord](../resources/security-passivednsrecord.md) resources, as a result of a reverse passive DNS retrieval. While a forward DNS lookup queries the IP address of a certain hostname, a reverse DNS lookup queries a specific hostname of an IP address.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
