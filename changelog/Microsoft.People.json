@@ -386,7 +386,7 @@
         },
         {
           "Id": "71ebad7b-fc20-4469-b895-ddeef0ee54a0",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "photo",
           "ChangeType": "Addition",
           "Description": "Added support for deleting **photo** of a [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
@@ -420,7 +420,7 @@
         },
         {
           "Id": "14a780c1-d222-4476-acc0-3c5b6425f040",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "photo",
           "ChangeType": "Addition",
           "Description": "Added support for deleting **photo** of a [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
