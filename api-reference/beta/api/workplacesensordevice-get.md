@@ -31,7 +31,6 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /workplace/sensorDevices/{id}
-GET /workplace/sensorDevices/(deviceId='{deviceId}')
 ```
 
 ## Optional query parameters

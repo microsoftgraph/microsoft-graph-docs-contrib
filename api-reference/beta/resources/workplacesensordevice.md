@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String| The description of the device. |
-|deviceId|String| The device identifier set by the user at the time of creation. It is an alternate key that can be used to reference the device object. |
+|deviceId|String| The user-defined unique identifier of the device provided at the time of creation. |
 |displayName|String| The display name of the device. |
 |id|String| The unique identifier of the device. It is system generated and the user cannot change it. Inherited from [entity](../resources/entity.md).|
 |ipV4Address|String| The IPv4 Address of the device. |

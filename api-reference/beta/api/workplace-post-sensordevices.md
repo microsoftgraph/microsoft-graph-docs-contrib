@@ -47,7 +47,7 @@ You can specify the following properties when creating a **workplaceSensorDevice
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|The description of the device. Optional.|
-|deviceId|String|The device identifier set by the user at the time of creation. It is an alternate key that can be used to reference the device object. Required.|
+|deviceId|String|The user-defined unique identifier of the device provided at the time of creation. Required.|
 |displayName|String|The display name of the device. Optional.|
 |ipV4Address|String|The IPv4 Address of the device. Optional.|
 |ipV6Address|String|The IPv6 Address of the device. Optional.|
