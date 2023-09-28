@@ -1071,7 +1071,7 @@ configuration:
       - addReply:
           reply: >-
             > [!NOTE]
-            > The following guidance is for Microsoft employees only. Community contributors can ignore this message, our content reviewer will manage the status.
+            > The following guidance is for Microsoft employees only. Community contributors can ignore this message; our content team will manage the status.
 
             Thanks for your pull request, ${issueAuthor}! I've added the **do not merge** label as a default status.
 
