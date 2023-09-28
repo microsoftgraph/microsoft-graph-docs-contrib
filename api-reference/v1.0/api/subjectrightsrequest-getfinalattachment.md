@@ -100,6 +100,6 @@ GET https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests/{subjectRight
 }
 -->
 ``` http
-HTTP/1.1 200 
+HTTP/1.1 200 OK
 ```
 
