@@ -26,7 +26,7 @@ request_body = EducationAssignment(
 	allow_students_to_add_resources_to_submission = True,
 )
 
-result = await graph_client.education.classes.by_classe_id('educationClass-id').assignments.post(request_body = request_body)
+result = await graph_client.education.classes.by_classe_id('educationClass-id').assignments.post(body = request_body)
 
 
 ```

@@ -16,6 +16,8 @@ Get the list of security principals (users, groups, and service principals) that
 
 To list the direct and transitive role assignments for a specific principal, use the [List transitiveRoleAssignments](rbacapplication-list-transitiveroleassignments.md) API.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -25,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory|
 
-If the caller does not have the permission to read properties for some of the objects included in the result set, the response will follow the [limited information returned for inaccessible member objects](/graph/permissions-overview#limited-information-returned-for-inaccessible-member-objects) pattern.
+If the caller doesn't have the permission to read properties for some of the objects included in the result set, the response follows the [limited information returned for inaccessible member objects](/graph/permissions-overview#limited-information-returned-for-inaccessible-member-objects) pattern.
 
 To read the properties that may require permissions for the object, grant the permissions to retrieve information about the object. For more information, see permissions for [users](user-list.md#permissions), [groups](group-list.md#permissions), and [service principals](serviceprincipal-list.md#permissions).
 
@@ -37,7 +39,7 @@ To read the properties that may require permissions for the object, grant the pe
 }
 -->
 ``` http
-GET /roleManagement/directory/roleDefinitions/{unifiedRoleDefinitionId}/assignedPrincipals
+GET /roleManagement/directory/roleDefinitions/{unifiedRoleDefinitionId}/assignedPrincipals(transitive=@transitive,directoryScopeType='@directoryScopeType',directoryScopeId='@directoryScopeId')
 ```
 
 ## Function parameters
@@ -74,7 +76,7 @@ This method supports the `$count`, `$select`, `$filter`, and `$orderby` OData qu
 |ConsistencyLevel|eventual. Required. For more information about the use of **ConsistencyLevel**, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -114,7 +116,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions/64
 
 #### Response
 
-The above request will return a count of 6 representing the following role assignments:
+The above request returns a count of 6 representing the following role assignments:
 + Two direct role assignments to User1 at Scope1 and Scope2
 + Two transitive role assignments to User1 through Group1 and Group2
 + Two transitive role assignments to User 2 and User3 through Group3.
@@ -129,7 +131,7 @@ Content-type: text/plain
 6
 ```
 
-Using the same scenario, the following examples show the counts that will be returned for each query pattern:
+Based on the same scenario, the following examples show the counts that are returned for each query pattern:
 
 | Example | Count |
 | --- | ---|

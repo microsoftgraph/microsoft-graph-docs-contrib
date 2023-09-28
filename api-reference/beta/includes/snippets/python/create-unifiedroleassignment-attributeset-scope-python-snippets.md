@@ -15,7 +15,7 @@ request_body = UnifiedRoleAssignment(
 	directory_scope_id = "/attributeSets/Engineering",
 )
 
-result = await graph_client.role_management.directory.role_assignments.post(request_body = request_body)
+result = await graph_client.role_management.directory.role_assignments.post(body = request_body)
 
 
 ```

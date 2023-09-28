@@ -18,7 +18,7 @@ $requestBody->setPublishedDateTime(new \DateTime('2016-12-31T23:58:16.1180489-08
 $largeCover = new MimeContent();
 $largeCover->setOdataType('microsoft.graph.mimeContent');
 $largeCover->setType('Type value');
-$LargeCover->setValue(base64_decode('dmFsdWU='));
+$largeCover->setValue(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('dmFsdWU=')));
 $requestBody->setLargeCover($largeCover);
 $requestBody->setInformationUrl('https://example.com/informationUrl/');
 $requestBody->setPrivacyInformationUrl('https://example.com/privacyInformationUrl/');

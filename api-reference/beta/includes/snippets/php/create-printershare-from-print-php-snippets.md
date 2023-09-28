@@ -16,6 +16,6 @@ $additionalData = [
 ];
 $requestBody->setAdditionalData($additionalData);
 
-$result = $graphServiceClient->print()->shares()->post($requestBody)->wait();
+$result = $graphServiceClient->escapedPrint()->shares()->post($requestBody)->wait();
 
 ```

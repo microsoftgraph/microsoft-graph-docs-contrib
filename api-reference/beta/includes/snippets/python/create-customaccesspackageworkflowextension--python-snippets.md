@@ -23,7 +23,7 @@ request_body = CustomAccessPackageWorkflowExtension(
 	),
 )
 
-result = await graph_client.identity_governance.entitlement_management.acce_package_catalogs.by_acce_package_catalog_id('accessPackageCatalog-id').custom_acces_package_workflow_extensions.post(request_body = request_body)
+result = await graph_client.identity_governance.entitlement_management.acce_package_catalogs.by_acce_package_catalog_id('accessPackageCatalog-id').custom_acces_package_workflow_extensions.post(body = request_body)
 
 
 ```

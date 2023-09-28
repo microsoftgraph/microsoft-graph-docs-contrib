@@ -40,7 +40,7 @@ request_body = Deployment(
 	),
 )
 
-result = await graph_client.admin.windows.updates.deployments.post(request_body = request_body)
+result = await graph_client.admin.windows.updates.deployments.post(body = request_body)
 
 
 ```

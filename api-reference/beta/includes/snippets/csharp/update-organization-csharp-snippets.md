@@ -14,6 +14,7 @@ var requestBody = new Organization
 	{
 		"marketing@contoso.com",
 	},
+	OnPremisesSyncEnabled = true,
 	PrivacyProfile = new PrivacyProfile
 	{
 		ContactEmail = "alice@contoso.com",

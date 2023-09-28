@@ -18,7 +18,7 @@ request_body = MailSearchFolder(
 	filter_query = "contains(subject, 'weekly digest')",
 )
 
-result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').child_folders.post(request_body = request_body)
+result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').child_folders.post(body = request_body)
 
 
 ```

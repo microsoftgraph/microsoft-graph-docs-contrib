@@ -17,7 +17,7 @@ request_body = GovernanceRoleSetting(
 	]
 )
 
-result = await graph_client.privileged_access.by_privileged_acce_id('privilegedAccess-id').role_settings.by_role_setting_id('governanceRoleSetting-id').patch(request_body = request_body)
+result = await graph_client.privileged_access.by_privileged_acce_id('privilegedAccess-id').role_settings.by_role_setting_id('governanceRoleSetting-id').patch(body = request_body)
 
 
 ```
