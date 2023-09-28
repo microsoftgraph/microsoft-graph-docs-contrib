@@ -791,14 +791,14 @@ HTTP/1.1 204 No Content
 ## Reserved activity types
 
 - The `systemDefault` activity type is reserved and cannot be used in the manifest while declaring [Activities](#activities-section-changes).
-- Pros of using `systemDefault` activity type:
-  - Easily test out new scenarios and/or try out the activity feed notification APIs quickly without defining activity types in your app's manifest.
-  - For Store apps, saves time by not having to add/edit/remove activity types in your app's manifest, since the `systemDefault` activity type is available for use out of the box.
-- Cons of using `systemDefault` activity type:
-  - Cannot leverage built-in localization feature from manifests.
-  - If only sending this customizable notifications with `systemDefault` activity type, users can turn off all notifications from your app with just one toggle from the Microsoft Teams client settings, which would cut off further communication from your app to your app's users.
-- Recurring and large batch of notifications should still use templated notifications that require activity templates in manifest.
-- The `systemDefault` reserved activity type may be used regardless of whether activity types are defined in your app's manifest.
+- You can use the `systemDefault` activity type to:
+  - Easily test out new scenarios and/or quickly try out the activity feed notification APIs without defining activity types in your app's manifest.
+  - For Store apps, it saves time and streamline the process since you don't need to constantly adjust activity types in your app's manifest. The `systemDefault` activity type is ready to use from the get-go.
+- Keep in mind that with the `systemDefault` activity type you cannot:
+  - Utilize the built-in localization features provided by manifests.
+  - Rely solely on sending customizable notifications with the  `systemDefault` activity type. Users can turn off all notifications from your app with a single toggle in the Microsoft Teams client settings, which could hinder communication between your app and its users.
+- Recurring and large batch of notifications should still use templated notifications since they require activity templates in the manifest.
+- The `systemDefault` reserved activity type remains available for use, regardless of the activity types listed in your app's manifest.
 
 ## Customize how the notifications alert you
 
