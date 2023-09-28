@@ -371,7 +371,7 @@
         {
           "Id": "71ebad7b-fc20-4469-b895-ddeef0ee54a0",
           "ApiChange": "Method",
-          "ChangedApiName": "GET",
+          "ChangedApiName": "DELETE",
           "ChangeType": "Addition",
           "Description": "Added the [delete] operation to the [profilePhoto](https://learn.microsoft.com/en-us/graph/api/resources/profilephoto?view=graph-rest-beta) resource.",
           "Target": "profilePhoto"
