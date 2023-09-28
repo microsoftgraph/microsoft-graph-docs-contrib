@@ -39,7 +39,7 @@ GET /admin/windows/updates/catalog/entries
 ## Optional query parameters
 This method supports some of the [OData query parameters](/graph/query-parameters) to help customize the response, including `$count`, `$filter`, `$orderby`, `$select`, `$skip`, and `$top`.
 
-To use a query parameter on a property that is not inherited from **catalogEntry**, include the full resource type for the property. For example, to filter on the **version** property of [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md) that equals 'Windows 11, version 22H2' , use `?$filter=microsoft.graph.windowsUpdates.featureUpdateCatalogEntry/version eq 'Windows 11, version 22H2'`.
+To use a query parameter on a property that isn't inherited from **catalogEntry**, include the full resource type for the property. For example, to filter on the **version** property of [featureUpdateCatalogEntry](../resources/windowsupdates-featureupdatecatalogentry.md) that equals 'Windows 11, version 22H2' , use `?$filter=microsoft.graph.windowsUpdates.featureUpdateCatalogEntry/version eq 'Windows 11, version 22H2'`.
 
 ## Request headers
 |Name|Description|
@@ -47,7 +47,7 @@ To use a query parameter on a property that is not inherited from **catalogEntry
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/admin/windows/updates/catalog/entries
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
