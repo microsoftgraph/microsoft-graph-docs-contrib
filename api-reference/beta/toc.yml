@@ -16355,9 +16355,9 @@ items:
                 items:
                   - name: Host
                     href: resources/security-host.md
-                  - name: Get
+                  - name: Get host
                     href: api/security-host-get.md
-                  - name: Get reputation
+                  - name: Get host reputation
                     href: api/security-host-get-reputation.md
                   - name: List components
                     href: api/security-host-list-components.md
@@ -16447,10 +16447,12 @@ items:
                 items:
                   - name: Passive DNS record
                     href: resources/security-passivednsrecord.md
-                  - name: List
-                    href: api/security-host-list-passivedns.md
-                  - name: Get
+                  - name: Get passive DNS record
                     href: api/security-passivednsrecord-get.md
+                  - name: List passive DNS
+                    href: api/security-host-list-passivedns.md
+                  - name: List passive DNS reverse
+                    href: api/security-host-list-passivednsreverse.md
               - name: SSL certificate
                 items:
                 - name: SSL certificate

@@ -8114,10 +8114,12 @@ items:
                 items:
                   - name: Passive DNS record
                     href: resources/security-passivednsrecord.md
-                  - name: List
-                    href: api/security-host-list-passivedns.md
-                  - name: Get
+                  - name: Get passive DNS record
                     href: api/security-passivednsrecord-get.md
+                  - name: List passive DNS
+                    href: api/security-host-list-passivedns.md
+                  - name: List passive DNS reverse
+                    href: api/security-host-list-passivednsreverse.md
               - name: SSL certificate
                 items:
                 - name: SSL certificate
@@ -8138,7 +8140,7 @@ items:
                 items:
                   - name: Vulnerability
                     href: resources/security-vulnerability.md
-                  - name: Get
+                  - name: Get vulnerability
                     href: api/security-vulnerability-get.md
                   - name: List vulnerability components
                     href: api/security-vulnerability-list-components.md
