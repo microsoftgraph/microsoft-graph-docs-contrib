@@ -34,7 +34,7 @@ Activity feed APIs work with a [Teams app](/microsoftteams/platform/overview). T
 
 - The Teams app manifest must have the Azure AD app ID added to the `webApplicationInfo` section. For details, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 - Activity notifications can be sent with or without activity types declared in the app manifest.
-  - By default, you can use the activity notification APIs without declaring the `activities` section in the manifest. The `systemDefault` activity type is a reserved activity type that allows you to provide `free-form` text in the `Actor+Reason` line of the activity feed notification.  See Example [Send customizable activity feed notifications](#example-8-send-a-notification-to-a-user-using-the-systemdefault-activity-type).
+  - By default, you can use the activity notification APIs without declaring the `activities` section in the manifest. The `systemDefault` activity type is a reserved activity type that allows you to provide free-form text in the `Actor+Reason` line of the activity feed notification.  See Example [Send customizable activity feed notifications](#example-8-send-a-notification-to-a-user-using-the-systemdefault-activity-type).
   - If you want to send a templated notification which is the traditional mode, activity types must be declared in the [activities](#activities-section-changes) section. For details, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 - The Teams app must be installed for the recipient, either personally, or in a [team](/graph/api/resources/team) or [chat](/graph/api/resources/chat) they are part of. For more information, see [Teams app installation](/graph/api/resources/teamsappinstallation).
 
@@ -98,7 +98,7 @@ This section describes the changes that need to be added to Teams app manifest. 
 > [!NOTE]
 > * `actor` is a special parameter that always takes the name of the caller. In delegated calls, `actor` is the user's name. In application-only calls, it takes the name of the Teams app.
 >
-> * The reserved `systemDefault` activity type should not be provided in the `activities` section of the manifest. This is a reserved activity type that can be used to provide `free-form` text in the `Actor+Reason` line of the activity feed notification. See Example [Send customizable activity feed notifications](#example-8-send-a-notification-to-a-user-using-the-systemdefault-activity-type).
+> * The reserved `systemDefault` activity type should not be provided in the `activities` section of the manifest. This is a reserved activity type that can be used to provide free-form text in the `Actor+Reason` line of the activity feed notification. See Example [Send customizable activity feed notifications](#example-8-send-a-notification-to-a-user-using-the-systemdefault-activity-type).
 
 #### authorization section changes
 
