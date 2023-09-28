@@ -3,42 +3,6 @@
     {
       "ChangeList": [
         {
-          "Id": "b815c0c9-ec8e-47d0-989a-e3ef828d2de2",
-          "ApiChange": "Property",
-          "ChangedApiName": "getallmessages",
-          "ChangeType": "Change",
-          "Description": "Added new $filter parameters to the [getAllMessages](https://learn.microsoft.com/en-us/graph/api/chats-getallmessages?view=graph-rest-v10) method.",
-          "Target": "chats-getallmessages"
-        }
-      ],
-      "Id": "b815c0c9-ec8e-47d0-989a-e3ef828d2de2",
-      "Cloud": "prd",
-      "Version": "v1.0",
-      "CreatedDateTime": "2023-07-18T16:32:49.407Z",
-      "WorkloadArea": "Teamwork and communications",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
-          "Id": "d0daa394-dfdf-45f7-87e0-ec5a54544ded",
-          "ApiChange": "Property",
-          "ChangedApiName": "getallmessages",
-          "ChangeType": "Change",
-          "Description": "Added new $filter parameters to the [getAllMessages](https://learn.microsoft.com/en-us/graph/api/chats-getallmessages?view=graph-rest-beta) method.",
-          "Target": "chats-getallmessages"
-        }
-      ],
-      "Id": "d0daa394-dfdf-45f7-87e0-ec5a54544ded",
-      "Cloud": "prd",
-      "Version": "beta",
-      "CreatedDateTime": "2023-07-18T16:32:49.407Z",
-      "WorkloadArea": "Teamwork and communications",
-      "SubArea": ""
-    },
-    {
-      "ChangeList": [
-        {
           "Id": "0c77d8f1-df1c-439e-b4c7-4dbdd871c586",
           "ApiChange": "Property",
           "ChangedApiName": "user",
