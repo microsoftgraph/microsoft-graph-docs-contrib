@@ -17,6 +17,8 @@ The bot is expected to answer or reject the call before the call times out. The 
 
 This API does not end existing calls that have already been answered. Use [delete call](../api/call-delete.md) to end a call.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

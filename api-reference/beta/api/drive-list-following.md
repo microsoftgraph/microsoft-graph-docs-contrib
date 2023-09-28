@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 List the [items](../resources/driveitem.md) that have been followed by the signed in user.
 This collection includes items that are in the user's drive as well as items they have access to from other drives.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
