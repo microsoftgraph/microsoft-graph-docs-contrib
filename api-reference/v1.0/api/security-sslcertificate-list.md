@@ -63,7 +63,7 @@ Use any of the following properties with the `$search` query parameter.
 
 | Property    | Example                                     | Notes                                                                                                    |
 | :---------- | :------------------------------------------ | :--------------------------------------------------------------------------------------------------------|
-| fingerprint       | `$search="fingerprint:a3b59e5fe884ee1f34d98eef858e3fb662ac104a"`          | **fingerprint** property values may contain colon (':'). In general, do not include any colon (:) in a search string. Simply remove any colon from the search string, if it exists. |
+| fingerprint       | `$search="fingerprint:a3b59e5fe884ee1f34d98eef858e3fb662ac104a"`          | **fingerprint** property values may contain a colon (':'). In general, do not include any colon (:) in a search string. Simply remove it from the property value in the search string, if it exists. |
 | issuer       | `$search="issuer/commonName:Contoso"`          | Specify in the search string a specific property of the [sslCertificateEntity](../resources/security-sslcertificateentity.md) type. |
 | serialNumber       | `$search="serialNumber:abc123"`          | Returns [sslCertificate](../resources/security-sslcertificate.md) resources with the **serialNumber** property matching the property value in the search string. |
 | sha1       | `$search="sha1:abc123"`          | Returns [sslCertificate](../resources/security-sslcertificate.md) resources with the **sha1** property matching the property value in the search string.|
