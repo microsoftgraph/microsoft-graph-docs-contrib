@@ -25,7 +25,7 @@ For more details about the bot registration process, see [Registering a calling 
 
 To make things easier later, it's helpful to understand the different [types of permissions](/azure/active-directory/develop/v1-permissions-and-consent#types-of-permissions) within Azure AD. Apps with delegated permissions require a signed-in user. Application-based permissions don't need a signed-in user, and can often run as a background service.
 
-After you register your bot, if you'd like to [add your bot to Microsoft Teams](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot), make sure you understand how to use [Developer Portal for Teams](/microsoftteams/platform/concepts/build-and-test/teams-developer-portal) and define the required metadata.
+After you register your bot, if you'd like to [add your bot to Microsoft Teams](/microsoftteams/platform/concepts/calls-and-meetings/registering-calling-bot), make sure you understand how to use the [Developer portal for teams](/microsoftteams/platform/concepts/build-and-test/teams-developer-portal) and define the required metadata.
 
 ## Manage the state of the bot
 
