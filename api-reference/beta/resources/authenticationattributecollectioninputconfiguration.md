@@ -23,17 +23,17 @@ Represents the display configuration of attributes being collected on an attribu
 |editable|Boolean|Whether the attribute is editable by the end user. |
 |hidden|Boolean|Whether the attribute is displayed to the end user.|
 |inputType|authenticationAttributeCollectionInputType|The type of input field. The possible values are: `text`, `radioSingleSelect`, `checkboxMultiSelect`, `boolean`, `checkboxSingleSelect`, `unknownFutureValue`.|
-|label|String|The label of the attribute field that will be displayed to end user, unless overridden.|
+|label|String|The label of the attribute field that is displayed to end user, unless overridden.|
 |options|[authenticationAttributeCollectionOptionConfiguration](../resources/authenticationattributecollectionoptionconfiguration.md) collection|The option values for certain multiple-option input types.|
 |required|Boolean|Whether the field is required.|
 |validationRegEx|String|The regex for the value of the field.|
-|writeToDirectory|Boolean|Whether the value collected will be stored.|
+|writeToDirectory|Boolean|Whether the value collected is stored.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.authenticationAttributeCollectionInputConfiguration"

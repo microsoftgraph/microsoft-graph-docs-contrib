@@ -10316,7 +10316,9 @@ items:
               - name: Cloud PC reports
                 items:
                   - name: Cloud PC reports
-                    href: resources/cloudpcreports.md
+                    href: resources/cloudpcreports.md                  
+                  - name: Get connection quality reports
+                    href: api/cloudpcreports-getconnectionqualityreports.md
                   - name: Get daily aggregated remote connection reports
                     href: api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
                   - name: Get historical remote connection reports
@@ -14108,33 +14110,6 @@ items:
                     href: api/trustframework-put-trustframeworkpolicy.md
                   - name: Delete
                     href: api/trustframeworkpolicy-delete.md
-              - name: Trusted certificate authorities for apps (preview)
-                items:
-                - name: Certificate-based app configuration
-                  href: resources/certificatebasedapplicationconfiguration.md
-                - name: List
-                  href: api/certificateauthoritypath-list-certificatebasedapplicationconfigurations.md
-                - name: Create
-                  href: api/certificateauthoritypath-post-certificatebasedapplicationconfigurations.md
-                - name: Get
-                  href: api/certificatebasedapplicationconfiguration-get.md
-                - name: Update
-                  href: api/certificatebasedapplicationconfiguration-update.md
-                - name: Delete
-                  href: api/certificatebasedapplicationconfiguration-delete.md
-                - name: Certificate authority
-                  href: resources/certificateauthorityasentity.md
-                  items:
-                  - name: List
-                    href: api/certificatebasedapplicationconfiguration-list-trustedcertificateauthorities.md
-                  - name: Create
-                    href: api/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities.md
-                  - name: Get
-                    href: api/certificateauthorityasentity-get.md
-                  - name: Update
-                    href: api/certificateauthorityasentity-update.md
-                  - name: Delete
-                    href: api/certificateauthorityasentity-delete.md
               - name: User flows for Azure AD and Azure AD B2C
                 items:
                   - name: User flow (deprecated)
