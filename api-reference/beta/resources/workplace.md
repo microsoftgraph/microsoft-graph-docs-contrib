@@ -18,8 +18,8 @@ Represents a workplace in a tenant.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List sensorDevices](../api/workplace-list-sensordevices.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md) collection|Get the workplaceSensorDevice resources from the sensorDevices navigation property.|
-|[Create workplaceSensorDevice](../api/workplace-post-sensordevices.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md)|Create a new workplace sensor device.|
+|[List sensorDevices](../api/workplace-list-sensordevices.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md) collection|Retrieve a list of sensor devices created for a tenant.|
+|[Create workplaceSensorDevice](../api/workplace-post-sensordevices.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md)|Create a new sensor device.|
 
 <!-- ## Properties
 |Property|Type|Description|
