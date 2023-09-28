@@ -25,7 +25,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 
 > [!NOTE]
 > 
-> A bearer token is required for the Authorisation header for all these methods. For details about how to get the `token` for the `Authorization`, see [Get access on behalf of a user](/graph/auth-v2-user?tabs=http#3-request-an-access-token).
+> A bearer token is required for the `Authorization` header for all the methods listed in the previous table. For details about how to get the `token` for the `Authorization` header, see [Get access on behalf of a user](/graph/auth-v2-user?tabs=http#3-request-an-access-token).
 
 ## Properties
 
