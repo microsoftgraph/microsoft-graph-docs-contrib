@@ -16,8 +16,8 @@ Namespace: microsoft.graph
 Defines the attributes of a logic app that can be called at various stages of an access package request cycle. You can integrate logic apps with entitlement management to broaden your governance workflows beyond the core entitlement management use cases. 
 
 The following use cases can be integrated with logic apps in the [access package assignment](accesspackageassignment.md) workflow:
-- When an [access package assignment will expire in fourteen days](accesspackageassignment.md)
-- When an [access package assignment will expire in one day](accesspackageassignment.md)
+- When an [access package assignment expires in fourteen days](accesspackageassignment.md)
+- When an [access package assignment expires in one day](accesspackageassignment.md)
 
 Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 
@@ -49,7 +49,7 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

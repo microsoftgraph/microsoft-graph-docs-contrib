@@ -17,6 +17,8 @@ Get the properties and relationships of a [module](../resources/educationModule.
 
 Students can only see published modules; teachers and applications with application permissions can see all modules in a class.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

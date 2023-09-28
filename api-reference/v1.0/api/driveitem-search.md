@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Sites.Read.All, Sites.ReadWrite.All     |
+|Application | Sites.Read.All, Sites.ReadWrite.All |
 
 >**Note:** This method does not support the Sites.Selected application permission.
 

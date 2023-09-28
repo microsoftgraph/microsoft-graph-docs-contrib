@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve an [educationCategory](../resources/educationcategory.md) object. Only teachers, students, and applications with application permissions can perform this operation.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -106,7 +108,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.educationCategory)"
+  "@odata.type": "microsoft.graph.educationCategory"
 } -->
 ```http
 HTTP/1.1 200 OK

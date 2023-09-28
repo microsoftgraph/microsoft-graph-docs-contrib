@@ -18,12 +18,12 @@ Describes the status of the provisioning summary event.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|errorInformation|[provisioningErrorInfo](provisioningErrorInfo.md)| If status is not success/ skipped details for the error are contained in this.|
+|errorInformation|[provisioningErrorInfo](provisioningErrorInfo.md)| If status isn't success/ skipped details for the error are contained in this.|
 |status|provisioningResult| Possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
