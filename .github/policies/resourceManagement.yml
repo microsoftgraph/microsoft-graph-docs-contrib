@@ -8,49 +8,6 @@ where:
 configuration:
   resourceManagementConfiguration:
     scheduledSearches:
-    - description: Add do not merge label to pull requests without a status label
-      frequencies:
-      - hourly:
-          hour: 1
-      filters:
-      - isOpen
-      - isPullRequest
-      - isNotLabeledWith:
-          label: do not merge
-      - isNotLabeledWith:
-          label: ready to merge
-      - isNotLabeledWith:
-          label: ready for content review
-      - isNotLabeledWith:
-          label: blocked
-      - isNotLabeledWith:
-          label: changelog required
-      - isNotLabeledWith:
-          label: changes requested
-      - isNotLabeledWith:
-          label: awaiting internal response
-      - isNotLabeledWith:
-          label: content review in progress
-      - isNotLabeledWith:
-          label: content review complete
-      actions:
-      - addLabel:
-          label: do not merge
-      - addReply:
-          reply: >-
-            > [!NOTE]
-            > The following guidance is for Microsoft employees only. Community contributors can ignore this message, our content reviewer will manage the status.
-
-            Thanks for your pull request, ${issueAuthor}! I've added the **do not merge** label as a default status.
-
-            Please add the **ready for content review** label to start a review. Your PR won't be reviewed until you add this label.
-
-            After the content review is complete and the updates in this PR are ready for external customers to use, please replace the **do not merge** label with **ready to merge**.
-
-            > [!NOTE]
-            > Pull requests will not be merged until the **ready to merge** label is set.
-
-            For details, see the [Content review process summary](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow).
     - description: Add no recent activity label to pull requests labeled do not merge with no activity for 60 days
       frequencies:
       - daily:
@@ -237,7 +194,8 @@ configuration:
       - labelAdded:
           label: ready for content review
       - isOpen
-      - activitySenderHasAssociation: CONTRIBUTOR
+      - activitySenderHasAssociation:
+          association: MEMBER
       then:
       - addReply:
           reply: >-
@@ -250,7 +208,8 @@ configuration:
       - labelAdded:
           label: content review complete
       - isOpen
-      - activitySenderHasAssociation: CONTRIBUTOR
+      - activitySenderHasAssociation:
+          association: MEMBER
       then:
       - removeLabel:
           label: ready for content review
@@ -273,7 +232,8 @@ configuration:
       - labelAdded:
           label: changes requested
       - isOpen
-      - activitySenderHasAssociation: CONTRIBUTOR
+      - activitySenderHasAssociation:
+          association: MEMBER
       then:
       - addReply:
           reply: >-
@@ -1077,6 +1037,52 @@ configuration:
       then:
       - addLabel:
           label: ready for content review
-    - description:
+    - description: Add do not merge label to new pull requests opened by contributors
+      if:
+      - payloadType: Pull_Request
+      - isOpen
+      - isAction:
+          action: Opened
+      - activitySenderHasAssociation:
+          association: MEMBER
+      - not:
+          or:
+            - hasLabel:
+                label: do not merge
+            - hasLabel:
+                label: ready to merge
+            - hasLabel:
+                label: ready for content review
+            - hasLabel:
+                label: blocked
+            - hasLabel:
+                label: changelog required
+            - hasLabel:
+                label: changes requested
+            - hasLabel:
+                label: awaiting internal response
+            - hasLabel:
+                label: content review in progress
+            - hasLabel:
+                label: content review complete
+      then:
+      - addLabel:
+          label: do not merge
+      - addReply:
+          reply: >-
+            > [!NOTE]
+            > The following guidance is for Microsoft employees only. Community contributors can ignore this message, our content reviewer will manage the status.
+
+            Thanks for your pull request, ${issueAuthor}! I've added the **do not merge** label as a default status.
+
+            Please add the **ready for content review** label to start a review. Your PR won't be reviewed until you add this label.
+
+            After the content review is complete and the updates in this PR are ready for external customers to use, please replace the **do not merge** label with **ready to merge**.
+
+            > [!NOTE]
+            > Pull requests will not be merged until the **ready to merge** label is set.
+
+            For details, see the [Content review process summary](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow).
+
 onFailure:
 onSuccess:
