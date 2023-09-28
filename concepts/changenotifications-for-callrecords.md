@@ -41,7 +41,7 @@ Change notifications for call records support both `create` and `update` notific
 
 The latency of change notifications and the maximum subscription expiration period are defined in the [change notifications overview](/graph/webhooks).
 
-#### Example 2: Subscription notification
+### Example 2: Subscription notification
 ```json
 {
     "value":[{
