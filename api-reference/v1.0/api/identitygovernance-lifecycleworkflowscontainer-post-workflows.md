@@ -13,6 +13,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Create a new [workflow](../resources/identitygovernance-workflow.md) object. You can create up to 50 workflows in a tenant.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

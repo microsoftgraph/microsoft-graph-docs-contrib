@@ -34,8 +34,8 @@ Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).
 |createdBy|[identitySet](../resources/identityset.md)| The user who initiated the export operation. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
 |createdDateTime|DateTimeOffset| The date and time the export was created. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
 |description|String| The description provided for the export. |
-|exportOptions|microsoft.graph.ediscovery.exportOptions| The options provided for the export. For more details, see [reviewSet: export](../api/ediscovery-reviewset-export.md). Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
-|exportStructure|microsoft.graph.ediscovery.exportFileStructure|The options provided that specify the structure of the export. For more details, see [reviewSet: export](../api/ediscovery-reviewset-export.md). Possible values are: `none`, `directory`, `pst`.|
+|exportOptions|microsoft.graph.ediscovery.exportOptions| The options provided for the export. For more information, see [reviewSet: export](../api/ediscovery-reviewset-export.md). Possible values are: `originalFiles`, `text`, `pdfReplacement`, `fileInfo`, `tags`.|
+|exportStructure|microsoft.graph.ediscovery.exportFileStructure|The options provided specify the structure of the export. For more information, see [reviewSet: export](../api/ediscovery-reviewset-export.md). Possible values are: `none`, `directory`, `pst`.|
 |id|String| The ID for the operation. Read-only. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
 |outputName|String| The name provided for the export.|
 |percentProgress|Int32| The progress of the operation. Inherited from [caseOperation](../resources/ediscovery-caseoperation.md).|
@@ -67,7 +67,7 @@ Inherits from [caseOperation](../resources/ediscovery-caseoperation.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

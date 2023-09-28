@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an updated [open
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -107,7 +107,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

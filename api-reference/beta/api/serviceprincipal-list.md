@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [servicePrincipal](../resources/serviceprincipal.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -148,10 +150,10 @@ The following is an example of the request. This request requires the **Consiste
 >**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
 
 <!-- {
-  "blockType": "ignored",
-  "name": "get_count_only"
+  "blockType": "request",
+  "name": "get_sp_count_only_beta_e2"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/servicePrincipals/$count
 ConsistencyLevel: eventual
 ```
@@ -162,7 +164,8 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "String"
 } -->
 ```http
 HTTP/1.1 200 OK
