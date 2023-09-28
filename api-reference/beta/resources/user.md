@@ -405,6 +405,7 @@ The following is a JSON representation of the resource.
     "ownedDevices",
     "ownedObjects",
     "photo",
+    "photos",
     "profile",
     "registeredDevices"
   ],
@@ -524,6 +525,7 @@ The following is a JSON representation of the resource.
   "outlook": {"@odata.type": "microsoft.graph.outlookUser"},
   "ownedDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "photo": {"@odata.type": "microsoft.graph.profilePhoto"},
+  "photos": { "@odata.type": "microsoft.graph.profilePhoto" },
   "profile": {"@odata.type": "microsoft.graph.profile"},
   "registeredDevices": [{"@odata.type": "microsoft.graph.directoryObject"}],
   "signInActivity": {"@odata.type": "microsoft.graph.signInActivity"}
