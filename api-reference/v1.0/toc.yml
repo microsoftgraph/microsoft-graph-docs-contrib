@@ -8026,18 +8026,18 @@ items:
                     href: api/security-host-get.md
                   - name: Get host reputation
                     href: api/security-host-get-reputation.md
-                  - name: List host pairs for a host as parent
-                    href: api/security-host-list-childhostpairs.md
                   - name: List components
                     href: api/security-host-list-components.md
                   - name: List cookies
                     href: api/security-host-list-cookies.md
                   - name: List host pairs for a host
                     href: api/security-host-list-hostpairs.md
-                  - name: List host SSL certificates
-                    href: api/security-hostsslcertificate-list-host.md
                   - name: List host pairs for a host as child
                     href: api/security-host-list-parenthostpairs.md
+                  - name: List host pairs for a host as parent
+                    href: api/security-host-list-childhostpairs.md
+                  - name: List host SSL certificates
+                    href: api/security-hostsslcertificate-list-host.md
                   - name: List passive DNS
                     href: api/security-host-list-passivedns.md
                   - name: List passive DNS reverse
@@ -8046,7 +8046,7 @@ items:
                     href: api/security-host-list-subdomains.md
                   - name: List trackers
                     href: api/security-host-list-trackers.md
-                  - name: Get WHOIS for a host
+                  - name: List WHOIS records for a host
                     href: api/security-host-get-whois.md
               - name: Host component
                 items:
@@ -8154,10 +8154,10 @@ items:
                 items:
                   - name: WHOIS record
                     href: resources/security-whoisrecord.md
-                  - name: List
-                    href: api/security-whoisrecord-list.md
-                  - name: Get
+                  - name: Get WHOIS record
                     href: api/security-whoisrecord-get.md
+                  - name: List WHOIS records
+                    href: api/security-whoisrecord-list.md
                   - name: List WHOIS records for a host
                     href: api/security-host-get-whois.md
               - name: WHOIS history record
