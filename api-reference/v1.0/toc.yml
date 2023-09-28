@@ -8004,39 +8004,39 @@ items:
                 items:
                   - name: Article
                     href: resources/security-article.md
-                  - name: Get
+                  - name: Get article
                     href: api/security-article-get.md
-                  - name: List
+                  - name: List articles
                     href: api/security-article-list.md
-                  - name: List article indicators
+                  - name: List indicators
                     href: api/security-article-list-indicators.md
               - name: Article indicator
                 items:
                   - name: Article indicator
                     href: resources/security-articleindicator.md
-                  - name: List
+                  - name: List indicators
                     href: api/security-article-list-indicators.md
-                  - name: Get
+                  - name: Get article indicator
                     href: api/security-articleindicator-get.md
               - name: Host
                 items:
                   - name: Host
                     href: resources/security-host.md
-                  - name: Get
+                  - name: Get host
                     href: api/security-host-get.md
-                  - name: Get reputation
+                  - name: Get host reputation
                     href: api/security-host-get-reputation.md
-                  - name: List child host pairs
+                  - name: List host pairs for a host as parent
                     href: api/security-host-list-childhostpairs.md
                   - name: List components
                     href: api/security-host-list-components.md
                   - name: List cookies
                     href: api/security-host-list-cookies.md
-                  - name: List host pairs
+                  - name: List host pairs for a host
                     href: api/security-host-list-hostpairs.md
-                  - name: List host SSL certificate
+                  - name: List host SSL certificates
                     href: api/security-hostsslcertificate-list-host.md
-                  - name: List parent host pairs
+                  - name: List host pairs for a host as child
                     href: api/security-host-list-parenthostpairs.md
                   - name: List passive DNS
                     href: api/security-host-list-passivedns.md
@@ -8070,11 +8070,11 @@ items:
                     href: resources/security-hostpair.md
                   - name: Get
                     href: api/security-hostpair-get.md
-                  - name: List host pairs for a host
+                  - name: List for a host
                     href: api/security-host-list-hostpairs.md
-                  - name: List parent host pairs
+                  - name: List for a host as child
                     href: api/security-host-list-parenthostpairs.md
-                  - name: List child host pairs
+                  - name: List for a host as parent
                     href: api/security-host-list-childhostpairs.md
               - name: Host SSL certificate
                 items:
@@ -8096,19 +8096,19 @@ items:
                 items:
                   - name: Intelligence profile
                     href: resources/security-intelligenceprofile.md
-                  - name: Get
+                  - name: Get intelligence profile
                     href: api/security-intelligenceprofile-get.md
-                  - name: List
+                  - name: List intelligence profiles
                     href: api/security-intelligenceprofile-list.md
-                  - name: List intelligence profile indicators
+                  - name: List indicators
                     href: api/security-intelligenceprofile-list-indicators.md
               - name: Intelligence profile indicator
                 items:
                   - name: Intelligence profile indicator
                     href: resources/security-intelligenceprofileindicator.md
-                  - name: List
+                  - name: List indicators
                     href: api/security-intelligenceprofile-list-indicators.md
-                  - name: Get
+                  - name: Get intelligence profile indicator
                     href: api/security-intelligenceprofileindicator-get.md
               - name: Passive DNS record
                 items:
@@ -8158,7 +8158,7 @@ items:
                     href: api/security-whoisrecord-list.md
                   - name: Get
                     href: api/security-whoisrecord-get.md
-                  - name: Get WHOIS for a host
+                  - name: List WHOIS records for a host
                     href: api/security-host-get-whois.md
               - name: WHOIS history record
                 items:
