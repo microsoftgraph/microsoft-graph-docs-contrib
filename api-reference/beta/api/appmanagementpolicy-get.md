@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Read the properties of an [appManagementPolicy](../resources/appManagementPolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,7 +44,7 @@ GET /policies/appManagementPolicies/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -52,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a single [appMan
 
 ### Request
 
-The following is an example of the request.  From the response, the app management policy defines the following restrictions for application and service principal objects:
+Here's an example of the request.  From the response, the app management policy defines the following restrictions for application and service principal objects:
 
 - Blocks creating of new passwords after 2019-10-19 at 10:37 AM UTC time.
 - Limits password secrets for apps created after 2019-10-19 at 10:37 AM UTC time to less than 4 days, 12 hours, 30 minutes and 5 seconds.
@@ -104,7 +106,7 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

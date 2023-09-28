@@ -15,6 +15,8 @@ Namespace: microsoft.graph.security
 
 Get a list of [sensitivityLabel](../resources/security-sensitivitylabel.md) objects associated with a user or organization.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

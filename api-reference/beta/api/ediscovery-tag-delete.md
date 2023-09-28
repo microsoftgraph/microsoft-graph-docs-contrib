@@ -15,6 +15,8 @@ Namespace: microsoft.graph.ediscovery
 
 Delete a [tag](../resources/ediscovery-tag.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,7 +44,7 @@ In the request URL, provide the following required query parameter.
 
 | Parameter     | Type    | Description                                                                              |
 |:--------------|:--------|:-----------------------------------------------------------------------------------------|
-| forcedelete   | Boolean | If set to true, the tag and children will be deleted, if false, and the tag has children, the delete will fail. |
+| forcedelete   | Boolean | If set to true, the tag and children are deleted, if false, and the tag has children, the delete fails. |
 
 ## Request headers
 
@@ -52,7 +54,7 @@ In the request URL, provide the following required query parameter.
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

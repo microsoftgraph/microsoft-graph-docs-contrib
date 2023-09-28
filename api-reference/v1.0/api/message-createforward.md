@@ -26,6 +26,8 @@ When using MIME format:
 
 Alternatively, [forward a message](../api/message-forward.md) in a single operation.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

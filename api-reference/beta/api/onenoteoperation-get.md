@@ -21,6 +21,8 @@ If the status is `completed`, the `resourceLocation` property contains the resou
 
 If the status is `failed`, the error and `@api.diagnostics` properties provide error information.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

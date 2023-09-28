@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get the number of unique Microsoft Teams licensed or non-licensed users by device type over the selected time period.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
