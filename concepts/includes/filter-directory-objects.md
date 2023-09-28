@@ -330,6 +330,6 @@ The following table shows support for `$filter` by other extension properties on
 | [Open extensions](/graph/extensibility-overview#open-extensions)                         | ![NotSupported][NS] | ![NotSupported][NS] | ![NotSupported][NS] |
 | [Directory extensions](/graph/extensibility-overview#directory-azure-ad-extensions)      | ![Default][RDS]     |                     | ![Advanced][AQP]    |
 
-[RDS]: ../concepts/images/yesandnosymbols/greencheck.svg
-[AQP]: ../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg
-[NS]: ../concepts/images/yesandnosymbols/no.svg
+[RDS]: ../images/yesandnosymbols/greencheck.svg
+[AQP]: ../images/yesandnosymbols/whitecheck-in-greencircle.svg
+[NS]: ../images/yesandnosymbols/no.svg
