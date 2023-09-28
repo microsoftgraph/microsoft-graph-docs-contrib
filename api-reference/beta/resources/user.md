@@ -129,6 +129,7 @@ This resource supports:
 | **Photo** |||
 | [Get photo](../api/profilephoto-get.md) | [profilePhoto](profilephoto.md) | Get the specified profilePhoto or its metadata (profilePhoto properties). |
 | [Update profilephoto](../api/profilephoto-update.md) | None | Update the photo for any user in the tenant including the signed-in user, or the specified group or contact. |
+| [Delete profilephoto](../api/profilephoto-delete.md) | None | Delete the photo for any user in the tenant including the signed-in user or the specified group. |
 | **Planner** |||
 | [Get plannerUser](../api/planneruser-get.md) | [plannerUser](planneruser.md) | Retrieve the properties and relationships of a plannerUser object. |
 | [List favoritePlans](../api/planneruser-list-favoriteplans.md) | [plannerPlan](plannerplan.md) collection | Retrieve a list of plannerPlans that are marked as favorite by a user. |
@@ -357,7 +358,7 @@ For example: Cameron is administrator of a directory for an elementary school in
 |people|[person](person.md) collection| Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.|
 |permissionGrants|[resourceSpecificPermissionGrant](../resources/resourcespecificpermissiongrant.md) collection| List all resource-specific permission grants of a user. |
 |photo|[profilePhoto](profilephoto.md)| The user's profile photo. Read-only.|
-|photos|[photo](photo.md) collection| Read-only. Nullable.|
+|photos|[profilePhoto](profilephoto.md)| The collection of the user's profile photos in different sizes. Read-only.|
 |planner|[plannerUser](planneruser.md)| Selective Planner services available to the user. Read-only. Nullable. |
 |profile |[profile](profile.md) | Represents properties that are descriptive of a user in a tenant. |
 |registeredDevices|[directoryObject](directoryobject.md) collection|Devices that are registered for the user. Read-only. Nullable. Supports `$expand`.|
