@@ -11261,8 +11261,8 @@ items:
                 href: api/permission-update.md
               - name: Delete permission
                 href: api/permission-delete.md
-          - name: Recycle bin
-            href: resources/recyclebin.md
+          - name: Recycle bin item
+            href: resources/recyclebinitem.md
             items:
               - name: List
                 href: api/recyclebin-list-items.md
