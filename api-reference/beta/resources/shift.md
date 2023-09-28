@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 A unit of scheduled work in a [schedule](schedule.md).
 
-The duration of a shift cannot be less than 1 minute or longer than 24 hours.
+The duration of a shift can't be less than 1 minute or longer than 24 hours.
 
 ## Methods
 
@@ -43,7 +43,7 @@ The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
