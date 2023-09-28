@@ -47,12 +47,12 @@ In the request body, provide a JSON representation of the ID of the [identityPro
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error is returned with specific details.
 
 ## Examples
 
 #### Request
-The following is an example of a request that adds Google as identity provider option for account creation.
+Here's an example of a request that adds Google as identity provider option for account creation.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -78,7 +78,7 @@ POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc3
 ---
 
 #### Response
-The following is an example of the response
+Here's an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true
