@@ -53,8 +53,8 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|cloudPcIds|String collection|The selected Cloud PC id list to be validated. The max count is 2000.|
-|targetServicePlanId|String|The target service plan id of the resize configuration with the new vCPU and storage size.|
+|cloudPcIds|String collection|The selected Cloud PC ID list to be validated. The max count is 2000.|
+|targetServicePlanId|String|The target service plan ID of the resize configuration with the new vCPU and storage size.|
 
 ## Response
 
@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and the requested [c
 
 ### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -122,7 +122,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

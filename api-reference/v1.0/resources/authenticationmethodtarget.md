@@ -25,7 +25,7 @@ A collection of groups that are enabled to use an authentication method as part 
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
