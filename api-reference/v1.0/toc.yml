@@ -300,6 +300,8 @@ items:
             href: /graph/toolkit/customize-components/disambiguation?context=graph/api/1.0
       - name: Upgrading to v3
         href: /graph/toolkit/upgrade?context=graph/api/1.0
+  - name: Microsoft Graph activity logs (preview)
+    href: /graph/microsoft-graph-activity-logs-overview?context=graph/api/1.0
   - name: Configure Connected Services
     displayName: Configure Connected Services in Visual Studio
     href: /graph/office-365-connected-services?context=graph/api/1.0
