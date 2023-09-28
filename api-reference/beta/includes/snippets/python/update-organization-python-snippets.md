@@ -12,6 +12,7 @@ request_body = Organization(
 	marketing_notification_emails = [
 		"marketing@contoso.com",
 	]
+	on_premises_sync_enabled = True,
 	privacy_profile = PrivacyProfile(
 		contact_email = "alice@contoso.com",
 		statement_url = "https://contoso.com/privacyStatement",
