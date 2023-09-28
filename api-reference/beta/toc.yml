@@ -12066,6 +12066,33 @@ items:
                     href: api/tenantrelationship-findtenantinformationbydomainname.md
                   - name: Find tenant by tenant ID
                     href: api/tenantrelationship-findtenantinformationbytenantid.md
+              - name: Trusted certificate authorities for apps (preview)
+                items:
+                  - name: Certificate-based app configuration
+                    href: resources/certificatebasedapplicationconfiguration.md
+                  - name: List
+                    href: api/certificateauthoritypath-list-certificatebasedapplicationconfigurations.md
+                  - name: Create
+                    href: api/certificateauthoritypath-post-certificatebasedapplicationconfigurations.md
+                  - name: Get
+                    href: api/certificatebasedapplicationconfiguration-get.md
+                  - name: Update
+                    href: api/certificatebasedapplicationconfiguration-update.md
+                  - name: Delete
+                    href: api/certificatebasedapplicationconfiguration-delete.md
+                  - name: Certificate authority
+                    href: resources/certificateauthorityasentity.md
+                    items:
+                    - name: List
+                      href: api/certificatebasedapplicationconfiguration-list-trustedcertificateauthorities.md
+                    - name: Create
+                      href: api/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities.md
+                    - name: Get
+                      href: api/certificateauthorityasentity-get.md
+                    - name: Update
+                      href: api/certificateauthorityasentity-update.md
+                    - name: Delete
+                      href: api/certificateauthorityasentity-delete.md 
           - name: Network access
             items:
               - name: Overview
