@@ -1618,19 +1618,19 @@ items:
             items:
               - name: Workplace
                 href: resources/workplace.md
-              - name: Sensor devices
+              - name: Sensor device
                 items:
                   - name: Sensor device
                     href: resources/workplacesensordevice.md
-                  - name: List
+                  - name: List sensor devices
                     href: api/workplace-list-sensordevices.md
-                  - name: Create
+                  - name: Create sensor device
                     href: api/workplace-post-sensordevices.md
-                  - name: Get
+                  - name: Get sensor device
                     href: api/workplacesensordevice-get.md
-                  - name: Update
+                  - name: Update sensor device
                     href: api/workplacesensordevice-update.md
-                  - name: Delete
+                  - name: Delete sensor device
                     href: api/workplace-delete-sensordevices.md
                   - name: Ingest telemetry
                     href: api/workplacesensordevice-ingesttelemetry.md    
