@@ -373,7 +373,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "DELETE",
           "ChangeType": "Addition",
-          "Description": "Added the [delete] operation to the [profilePhoto](https://learn.microsoft.com/en-us/graph/api/resources/profilephoto?view=graph-rest-beta) resource.",
+          "Description": "Added the [delete] (https://learn.microsoft.com/en-us/graph/api/profilephoto-delete.md?view=graph-rest-beta) operation to the [profilePhoto](https://learn.microsoft.com/en-us/graph/api/resources/profilephoto?view=graph-rest-beta) resource.",
           "Target": "profilePhoto"
         },
         {
