@@ -247,7 +247,7 @@ GET https://graph.microsoft.com/beta/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/
 ---
 
 #### Response
-Since this presence request does not qualify as a [self presence](presence-get.md#example-1-get-your-own-presence-information) request, `statusMessage.expiryDateTime` and `statusMessage.publishedDateTime` properties are not included in the response body.
+Because this request gets the presence status for another user, the `statusMessage.expiryDateTime` and `statusMessage.publishedDateTime` properties are not included in the response body.
 
 <!-- {
   "blockType": "response",
