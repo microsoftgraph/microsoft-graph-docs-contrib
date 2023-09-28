@@ -11261,11 +11261,6 @@ items:
                 href: api/permission-update.md
               - name: Delete permission
                 href: api/permission-delete.md
-          - name: Recycle bin item
-            href: resources/recyclebinitem.md
-            items:
-              - name: List
-                href: api/recyclebin-list-items.md
       - name: Financials (preview)
         items:
           - name: Overview
@@ -16820,6 +16815,11 @@ items:
                     href: api/webpart-getposition.md
                   - name: Get by position
                     href: api/sitepage-getwebpartsbyposition.md
+          - name: Recycle bin item
+            href: resources/recyclebinitem.md
+            items:
+              - name: List
+                href: api/recyclebin-list-items.md
           - name: Rich long-running operation
             items:
               - name: Rich long-running operation
