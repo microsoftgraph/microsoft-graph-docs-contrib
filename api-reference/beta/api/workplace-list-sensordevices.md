@@ -44,7 +44,7 @@ This method supports the `$filter` (**deviceId**, **displayName**, **description
 | Filter                 | `/workplace/sensorDevices?$filter=Tags/Any(x: cast(x, 'String') eq 'Building A')` | Filter devices based on the tags. |
 | Filter                 | `/workplace/sensorDevices?$filter=cast(manufacturer, 'String') eq 'Contoso'` | Filter devices based on the manufacturer of the device. |
 | Filter                 | `/workplace/sensorDevices?$filter=cast(deviceId, 'String') eq 'contoso_9D6816'` |  Filter devices based on the user provided device identifier.|
-| Page limit             | `/workplace/sensorDevices?$top=10` | Get devices with a page size of 10. Default page size is 10. |
+| Page limit             | `/workplace/sensorDevices?$top=20` | Get devices with a page size of 20. Default page size is 10. |
 
 
 ## Request headers

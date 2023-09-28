@@ -40,22 +40,24 @@ PATCH /workplace/sensorDevices/{id}
 |Content-Type|application/json. Required.|
 
 ## Request body
-[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+<!-- [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)] -->
 
-In the request body, provide the entire JSON for the [workplaceSensorDevice](../resources/workplacesensordevice.md) object with all fields updated. Partial updates are not supported. If any optional property is excluded, it will be set to null. To add new sensors, append a new sensor object to the existing sensor collection. Conversely, if a sensor object is removed from the collection, it will be deleted from the device.
+In the request body, provide the entire JSON for the [workplaceSensorDevice](../resources/workplacesensordevice.md) object with updated fields. Partial updates are not supported. If any optional property is excluded, it will be set to null. To add new sensors, append a new sensor object to the existing sensor collection. Conversely, if a sensor object is removed from the collection, it will be deleted from the device.
+
+The following table specifies the properties that can be updated.
 
 |Property|Type|Description|
 |:---|:---|:---|
+|description|String|The description of the device. Optional.|
 |deviceId|String|The device identifier set by the user at the time of creation. Required. Read-Only.|
-|displayName|String|The display name for the device. Optional.|
-|description|String|The description for the device. Optional.|
-|macAddress|String|The MAC address for the device. Optional.|
-|manufacturer|String|The manufacturer for the device. Required.|
-|ipV4Address|String|The IPv4 Address for the device. Optional.|
-|ipV6Address|String|The IPv6 Address for the device. Optional.|
+|displayName|String|The display name of the device. Optional.|
+|ipV4Address|String|The IPv4 Address of the device. Optional.|
+|ipV6Address|String|The IPv6 Address of the device. Optional.|
+|macAddress|String|The MAC address of the device. Optional.|
+|manufacturer|String|The manufacturer of the device. Required.|
 |placeId|String|The unique identifier of the place where the device is located. If the device is installed in a room featuring a mailbox, this property should match the ExternalDirectoryObjectId or Entra ID object Id of the room mailbox. Optional.|
-|tags|String collection|A list of custom tags associated with the device. Supports $filter. Optional.|
 |sensors|[workplaceSensor](../resources/workplacesensor.md) collection|A list of sensors associated with the device that collect and report data about physical or environmental conditions, such as occupancy, people count, inferred occupancy, temperature etc. Required.|
+|tags|String collection|A list of custom tags associated with the device. Supports $filter. Optional.|
 
 
 ## Response

@@ -20,7 +20,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List workplaceSensorDevices](../api/workplace-list-sensordevices.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md) collection|Get a list of all workplace sensor devices created for a tenant.|
+|[List workplaceSensorDevices](../api/workplace-list-sensordevices.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md) collection|Retrieve a list of all workplace sensor devices created for a tenant.|
 |[Create workplaceSensorDevice](../api/workplace-post-sensordevices.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md)|Create a new workplace sensor device.|
 |[Get workplaceSensorDevice](../api/workplacesensordevice-get.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md)|Read the properties of a workplace sensor device.|
 |[Update workplaceSensorDevice](../api/workplacesensordevice-update.md)|[workplaceSensorDevice](../resources/workplacesensordevice.md)|Update the properties of a workplace sensor device.|
@@ -30,14 +30,14 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String| The description for the device. |
+|description|String| The description of the device. |
 |deviceId|String| The device identifier set by the user at the time of creation. It is an alternate key that can be used to reference the device object. |
-|displayName|String| The display name for the device. |
-|id|String| The unique identifier for the device. It is system generated and the user cannot change it. Inherited from [entity](../resources/entity.md).|
-|ipV4Address|String| The IPv4 Address for the device. |
-|ipV6Address|String| The IPv6 Address for the device. |
-|macAddress|String| The MAC address for the device. |
-|manufacturer|String| The manufacturer for the device. |
+|displayName|String| The display name of the device. |
+|id|String| The unique identifier of the device. It is system generated and the user cannot change it. Inherited from [entity](../resources/entity.md).|
+|ipV4Address|String| The IPv4 Address of the device. |
+|ipV6Address|String| The IPv6 Address of the device. |
+|macAddress|String| The MAC address of the device. |
+|manufacturer|String| The manufacturer of the device. |
 |placeId|String| The unique identifier of the place where the device is located. If the device is installed in a room featuring a mailbox, this property should match the ExternalDirectoryObjectId or Entra ID object Id of the room mailbox. |
 |sensors|[workplaceSensor](../resources/workplacesensor.md) collection| A list of sensors associated with the device that collect and report data about physical or environmental conditions, such as occupancy, people count, inferred occupancy, temperature etc. |
 |tags|String collection| A list of custom tags associated with the device. |

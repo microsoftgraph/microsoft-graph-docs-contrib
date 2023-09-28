@@ -28,7 +28,7 @@ Represents a workplace in a tenant.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|sensorDevices|[workplaceSensorDevice](../resources/workplacesensordevice.md) collection|A collection of workplace sensor devices.|
+|sensorDevices|[workplaceSensorDevice](../resources/workplacesensordevice.md) collection|A collection of sensor devices.|
 
 <!-- ## JSON representation
 The following is a JSON representation of the resource. -->
