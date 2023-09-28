@@ -13,17 +13,17 @@
         {
           "Id": "269e5da0-1864-497f-be83-ec8a9442ee66",
           "ApiChange": "Property",
-          "ChangedApiName": "upns",
-          "ChangeType": "Deprecation",
-          "Description": "Deprecated the **upns** property of the [subjectRightsRequestEnumeratedMailboxLocation](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequestEnumeratedMailboxLocation?view=graph-rest-beta) resource. Use the **userPrincipalNames** property instead.",
+          "ChangedApiName": "userPrincipalNames",
+          "ChangeType": "Addition",
+          "Description": "Added the **userPrincipalNames** property to the [subjectRightsRequestEnumeratedMailboxLocation](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequestEnumeratedMailboxLocation?view=graph-rest-beta) resource.",
           "Target": "subjectRightsRequestEnumeratedMailboxLocation"
         },
         {
           "Id": "269e5da0-1864-497f-be83-ec8a9442ee66",
           "ApiChange": "Property",
           "ChangedApiName": "upns",
-          "ChangeType": "Addition",
-          "Description": "Added the **userPrincipalNames** property to the [subjectRightsRequestEnumeratedMailboxLocation](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequestEnumeratedMailboxLocation?view=graph-rest-beta) resource.",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the **upns** property of the [subjectRightsRequestEnumeratedMailboxLocation](https://learn.microsoft.com/en-us/graph/api/resources/subjectRightsRequestEnumeratedMailboxLocation?view=graph-rest-beta) resource. Going forward, use the **userPrincipalNames** property instead.",
           "Target": "subjectRightsRequestEnumeratedMailboxLocation"
         }
       ],
