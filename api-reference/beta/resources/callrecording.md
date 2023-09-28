@@ -33,6 +33,7 @@ Represents a recording associated with an [online meeting](onlinemeeting.md).
 | id | String | The unique identifier for the recording. Read-only. Inherited from [entity](../resources/entity.md).|
 | meetingId | String | The unique identifier of the **onlineMeeting** related to this recording. Read-only.|
 | meetingOrganizerId| String| The unique identifier of the organizer of the **onlineMeeting** related to this recording. Read-only.|
+| meetingOrganizer| IdentitySet| The identity information of the organizer of the **onlineMeeting** related to this recording. Read-only.|
 | recordingContentUrl| String| The URL which can be used to access the content of the recording. Read-only.|
 
 ## JSON representation
@@ -54,6 +55,7 @@ The following is a JSON representation of the resource:
   "id": "String (identifier)",
   "meetingId": "String",
   "meetingOrganizerId": "String",
+  "meetingOrganizer": "IdentitySet",
   "recordingContentUrl": "String"
 }
 ```

@@ -39,7 +39,7 @@ Represents a trend of compliant and non-compliant devices for a given managed te
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

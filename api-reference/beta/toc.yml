@@ -300,6 +300,8 @@ items:
             href: /graph/toolkit/customize-components/disambiguation?context=graph/api/beta
       - name: Upgrading to v3
         href: /graph/toolkit/upgrade?context=graph/api/beta
+  - name: Microsoft Graph activity logs (preview)
+    href: /graph/microsoft-graph-activity-logs-overview?context=graph/api/beta
   - name: Configure Connected Services
     displayName: Configure Connected Services in Visual Studio
     href: /graph/office-365-connected-services?context=graph/api/beta
@@ -10316,7 +10318,9 @@ items:
               - name: Cloud PC reports
                 items:
                   - name: Cloud PC reports
-                    href: resources/cloudpcreports.md
+                    href: resources/cloudpcreports.md                  
+                  - name: Get connection quality reports
+                    href: api/cloudpcreports-getconnectionqualityreports.md
                   - name: Get daily aggregated remote connection reports
                     href: api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
                   - name: Get historical remote connection reports
