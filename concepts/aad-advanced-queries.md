@@ -7,7 +7,7 @@ ms.reviewer: Luca.Spolidoro
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 04/14/2023
+ms.date: 09/28/2023
 ---
 
 # Advanced query capabilities on Azure AD objects
@@ -176,7 +176,7 @@ The following tables summarize support for `$filter` operators by properties of 
 + The **null value** column indicates that the property is nullable and filterable using `null`.
 + Properties that are not listed here do not support `$filter` at all.
 
-[!INCLUDE [filter-directory-objects](../includes/filter-directory-objects.md)]
+[!INCLUDE [filter-directory-objects](includes/filter-directory-objects.md)]
 
 ## Support for sorting by properties of Azure AD (directory) objects
 
