@@ -110,7 +110,7 @@ Content-Type: application/json
 ]
 ```
 
-You can also add an activity to an item in the same request that creates the item. Add the activity as another entity, just like `acl` and `content`. If you choose to add an activity this way, include the `@odata.type` for the activity, or the request will fail. Activities with timestamps older than seven days won't surface in Office.com. End-users can only see activities in Office.com for items they have access to and have an activity on (for example, shared with them, created, edited, and so on).
+You can also add an activity to an item in the same request that creates the item. Add the activity as another entity, just like `acl` and `content`. If you choose to add an activity this way, include the `@odata.type` for the activity, or the request will fail. Activities with timestamps older than seven days won't surface in Office.com. End users can only see activities in Office.com for items they have access to and have an activity on (for example, shared with them, created, edited, and so on).
 
 ## Update an item
 
