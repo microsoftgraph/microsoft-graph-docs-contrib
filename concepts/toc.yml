@@ -1130,7 +1130,7 @@ items:
                 href: toolkit/customize-components/disambiguation.md
           - name: Upgrading to v3
             href: toolkit/upgrade.md
-      - name: Microsoft Graph activity logs
+      - name: Microsoft Graph activity logs (preview)
         href: microsoft-graph-activity-logs-overview.md
       - name: Configure Connected Services
         displayName: Configure Connected Services in Visual Studio
