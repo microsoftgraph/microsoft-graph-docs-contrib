@@ -16,7 +16,7 @@ The SDK includes the framework and contract components to help you write the cod
 
 The connectors SDK enables you to create custom Microsoft Graph connectors directly within the Visual Studio integrated development environment (IDE). It provides everything you need to build, debug, and deploy your custom connector.
 
-Items ingested through connections built with the SDK consume your item quota. To learn more about how to determine how much item quota you have and how to purchase more quota, please refer to our [licensing requirements and pricing](https://learn.microsoft.com/en-us/microsoftsearch/licensing). 
+Items ingested through connections built with the SDK consume your item quota. To learn more about how to determine how much item quota you have and how to purchase more quota, see [licensing requirements and pricing](/microsoftsearch/licensing). 
 
 ## Components
 
