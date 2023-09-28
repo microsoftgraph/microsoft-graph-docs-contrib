@@ -738,7 +738,7 @@ HTTP/1.1 202 Accepted
 ```
 
 ### Example 8: Send a notification to a user using the systemDefault activity type
-This example shows how you can send an activity notification for a team without activity types defined in the manifest. You have the flexibility to provide free-form text here. For details on `systemDefault` see [Reserved Activity Types](#reserved-activity-types).
+This example shows how you can send an activity notification for a team without activity types defined in the manifest. You have the flexibility to provide free-form text here. For more information, see [Reserved activity types](#reserved-activity-types).
 
 This example notifies the team owner to take a short break. Modify the `value` in `templateParameters` to customize the notification for various scenarios.
 
