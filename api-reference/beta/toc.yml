@@ -16337,17 +16337,19 @@ items:
                 items:
                   - name: Article
                     href: resources/security-article.md
-                  - name: Get
+                  - name: Get article
                     href: api/security-article-get.md
-                  - name: List
+                  - name: List articles
                     href: api/security-article-list.md
-                  - name: List article indicators
+                  - name: List indicators
                     href: api/security-article-list-indicators.md
               - name: Article indicator
                 items:
                   - name: Article indicator
                     href: resources/security-articleindicator.md
-                  - name: Get
+                  - name: List indicators
+                    href: api/security-article-list-indicators.md
+                  - name: Get article indicator
                     href: api/security-articleindicator-get.md
               - name: Host
                 items:
@@ -16357,18 +16359,18 @@ items:
                     href: api/security-host-get.md
                   - name: Get reputation
                     href: api/security-host-get-reputation.md
-                  - name: List child host pairs
-                    href: api/security-host-list-childhostpairs.md
                   - name: List components
                     href: api/security-host-list-components.md
                   - name: List cookies
                     href: api/security-host-list-cookies.md
-                  - name: List host pairs
+                  - name: List host pairs for a host
                     href: api/security-host-list-hostpairs.md
-                  - name: List host SSL certificate
-                    href: api/security-hostsslcertificate-list-host.md
-                  - name: List parent host pairs
+                  - name: List host pairs for a host as child
                     href: api/security-host-list-parenthostpairs.md
+                  - name: List host pairs for a host as parent
+                    href: api/security-host-list-childhostpairs.md
+                  - name: List host SSL certificates
+                    href: api/security-hostsslcertificate-list-host.md
                   - name: List passive DNS
                     href: api/security-host-list-passivedns.md
                   - name: List passive DNS reverse
@@ -16377,18 +16379,22 @@ items:
                     href: api/security-host-list-subdomains.md
                   - name: List trackers
                     href: api/security-host-list-trackers.md
-                  - name: Get WHOIS for a host
+                  - name: List WHOIS records for a host
                     href: api/security-host-get-whois.md
               - name: Host component
                 items:
                   - name: Host component
                     href: resources/security-hostcomponent.md
+                  - name: List
+                    href: api/security-host-list-components.md
                   - name: Get
                     href: api/security-hostcomponent-get.md
               - name: Host cookie
                 items:
                   - name: Host cookie
                     href: resources/security-hostcookie.md
+                  - name: List
+                    href: api/security-host-list-cookies.md
                   - name: Get
                     href: api/security-hostcookie-get.md
               - name: Host pair
@@ -16423,22 +16429,26 @@ items:
                 items:
                   - name: Intelligence profile
                     href: resources/security-intelligenceprofile.md
-                  - name: Get
+                  - name: Get intelligence profile
                     href: api/security-intelligenceprofile-get.md
-                  - name: List
+                  - name: List intelligence profiles
                     href: api/security-intelligenceprofile-list.md
-                  - name: List intelligence profile indicators
+                  - name: List indicators
                     href: api/security-intelligenceprofile-list-indicators.md
               - name: Intelligence profile indicator
                 items:
                   - name: Intelligence profile indicator
                     href: resources/security-intelligenceprofileindicator.md
-                  - name: Get
+                  - name: List indicators
+                    href: api/security-intelligenceprofile-list-indicators.md
+                  - name: Get intelligence profile indicator
                     href: api/security-intelligenceprofileindicator-get.md
               - name: Passive DNS record
                 items:
                   - name: Passive DNS record
                     href: resources/security-passivednsrecord.md
+                  - name: List
+                    href: api/security-host-list-passivedns.md
                   - name: Get
                     href: api/security-passivednsrecord-get.md
               - name: SSL certificate
@@ -16453,25 +16463,35 @@ items:
                 items:
                   - name: Subdomain
                     href: resources/security-subdomain.md
+                  - name: List
+                    href: api/security-host-list-subdomains.md
                   - name: Get
                     href: api/security-subdomain-get.md
-                  - name: List subdomains for a host
-                    href: api/security-host-list-subdomains.md
+              - name: Vulnerability
+                items:
+                  - name: Vulnerability
+                    href: resources/security-vulnerability.md
+                  - name: Get vulnerability
+                    href: api/security-vulnerability-get.md
+                  - name: List vulnerability components
+                    href: api/security-vulnerability-list-components.md
               - name: Vulnerability component
                 items:
                   - name: Vulnerability component
                     href: resources/security-vulnerabilitycomponent.md
+                  - name: List
+                    href: api/security-vulnerability-list-components.md
                   - name: Get
                     href: api/security-vulnerabilitycomponent-get.md
               - name: WHOIS record
                 items:
                   - name: WHOIS record
                     href: resources/security-whoisrecord.md
-                  - name: List
-                    href: api/security-whoisrecord-list.md
-                  - name: Get
+                  - name: Get WHOIS record
                     href: api/security-whoisrecord-get.md
-                  - name: Get WHOIS for a host
+                  - name: List WHOIS records
+                    href: api/security-whoisrecord-list.md
+                  - name: List WHOIS records for a host
                     href: api/security-host-get-whois.md
               - name: WHOIS history record
                 items:
