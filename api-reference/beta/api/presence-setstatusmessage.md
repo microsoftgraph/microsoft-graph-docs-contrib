@@ -44,7 +44,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter       | Type            |  Description                                 |
 | --------------- | --------------- |------------------------------------------- |
-| `statusMessage` | [microsoft.graph.presenceStatusMessage](../resources/presencestatusmessage.md) |It can be set to display the presence status message of a user. |
+| `statusMessage` | [microsoft.graph.presenceStatusMessage](../resources/presencestatusmessage.md) | Contains the presence status message of the user. |
 
 ## Response
 If successful, this method returns a `200 OK` response code.
