@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and an updated [work
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_workplacesensordevice"
+  "name": "update_workplacesensordevice_tags"
 }
 -->
 ``` http
@@ -154,7 +154,7 @@ Content-Type: application/json
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_workplacesensordevice"
+  "name": "update_workplacesensordevice_new_sensor"
 }
 -->
 ``` http
@@ -247,7 +247,7 @@ Content-Type: application/json
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "update_workplacesensordevice"
+  "name": "update_workplacesensordevice_remove_sensor"
 }
 -->
 ``` http
