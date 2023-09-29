@@ -19,7 +19,7 @@ Represents the export job for downloading a specified Cloud PC report.
 
 | Method                                                              | Return type                                          | Description                                                                                             |
 | :------------------------------------------------------------------ | :--------------------------------------------------- | :------------------------------------------------------------------------------------------------------ |
-| [Create cloudPcExportJob](../api/cloudpcreports-post-exportjobs.md) | [cloudPcExportJob](../resources/cloudpcexportjob.md) | Create a new [cloudPcExportJob](../resources/cloudpcexportjob.md) object to initiate downloading the entire or specified portion of a report. |
+| [Create cloudPcExportJob](../api/cloudpcreports-post-exportjobs.md) | [cloudPcExportJob](../resources/cloudpcexportjob.md) | Create a new [cloudPcExportJob](../resources/cloudpcexportjob.md) object to initiate downloading the entire or a specified portion of a report. |
 | [Get cloudPcExportJob](../api/cloudpcexportjob-get.md)              | [cloudPcExportJob](../resources/cloudpcexportjob.md) | Read the properties and relationships of a [cloudPcExportJob](../resources/cloudpcexportjob.md) object. |
 
 ## Properties
@@ -42,7 +42,7 @@ Represents the export job for downloading a specified Cloud PC report.
 | :----------------- | :---------------------------------------------------- |
 | notStarted         | The export job doesn't start yet.                     |
 | inProgress         | The export job is in progress.                        |
-| completed          | The export job is completed with export URL returned. |
+| completed          | The export job is completed with the export URL returned. |
 | failed             | The export job has failed.                            |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use.     |
 
@@ -69,7 +69,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
