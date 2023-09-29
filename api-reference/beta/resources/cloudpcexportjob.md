@@ -69,7 +69,7 @@ None.
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
