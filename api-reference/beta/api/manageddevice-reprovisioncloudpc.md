@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This API is obsolete, it will be removed on September 30, 2034. Please use [reprovision](../api/cloudpc-reprovision.md) instead.
+> [!CAUTION]
+> This API is deprecated and will stop returning data on September 30, 2034. Please, use the [reprovision](../api/cloudpc-reprovision.md) API instead.
 
 Reprovision a Cloud PC with an Intune [managed device](../resources/cloudpc.md) ID.
 
