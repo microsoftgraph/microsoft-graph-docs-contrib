@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph.security
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
 Get the history for a [whoisRecord](../resources/security-whoisrecord.md), as represented by a collection of [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) resources.
@@ -70,7 +68,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_whoishistoryrecord",
@@ -78,19 +75,9 @@ The following is an example of a request.
 }
 -->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.com/whois/history
+```http
+GET https://graph.microsoft.com/v1.0/security/threatIntelligence/hosts/contoso.com/whois/history
 ```
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-whoishistoryrecord-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-whoishistoryrecord-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -136,8 +123,7 @@ Content-Type: application/json
           "countryOrRegion": null,
           "postalCode": null,
           "state": null,
-          "street": null,
-          "type": "unknown"
+          "street": null
         }
       },
       "admin": {
@@ -151,8 +137,7 @@ Content-Type: application/json
           "countryOrRegion": "US",
           "postalCode": "98052",
           "state": "WA",
-          "street": "123 Fake St.",
-          "type": "unknown"
+          "street": "123 Fake St."
         }
       },
       "registrar": {
@@ -174,8 +159,7 @@ Content-Type: application/json
           "countryOrRegion": "US",
           "postalCode": "98052",
           "state": "WA",
-          "street": "123 Fake St.",
-          "type": "unknown"
+          "street": "123 Fake St."
         }
       },
       "technical": {
@@ -189,8 +173,7 @@ Content-Type: application/json
           "countryOrRegion": "US",
           "postalCode": "98052",
           "state": "WA",
-          "street": "123 Fake St.",
-          "type": "unknown"
+          "street": "123 Fake St."
         }
       },
       "nameservers": [
