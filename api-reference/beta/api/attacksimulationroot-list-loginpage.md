@@ -1,19 +1,19 @@
 ---
-title: "Get payloadDetail"
-description: "Get an attack simulation campaign payload detail for a tenant."
+title: "List loginPages"
+description: "Get a list of the loginPage objects and their properties."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Get payloadDetail
+# List loginPages
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get an attack simulation campaign payload detail for a tenant.
+Get a list of the [loginPage](../resources/loginpage.md) objects and their properties.
 
 ## Permissions
 
@@ -32,12 +32,13 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/attackSimulation/payloads/{payloadId}/detail
+GET /security/attackSimulation/loginPages?$filter=source eq 'tenant'
 ```
 
 ## Optional query parameters
 
-This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
+This method supports the `$count`, `$filter`, `$orderby`, `$skipToken`, `$top`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
+If the result set spans multiple pages, the response body contains an `@odata.nextLink` that you can use to page through the result set.
 
 ## Request headers
 
@@ -51,7 +52,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [payloadDetail](../resources/payloaddetail.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [loginPage](../resources/loginpage.md) objects in the response body.
 
 ## Examples
 
@@ -61,12 +62,11 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_payloadDetail",
-  "sampleKeys": ["f1b13829-3829-f1b1-2938-b1f12938b1a"]
+  "name": "list_loginpages"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/payload/f1b13829-3829-f1b1-2938-b1f12938b1a/detail
+GET https://graph.microsoft.com/beta/security/attackSimulation/loginPages?$filter=source eq 'tenant'
 ```
 
 ### Response
@@ -74,10 +74,11 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/payload/f1b13829-
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.payloadDetail"
+  "@odata.type": "Collection(microsoft.graph.loginPage)"
 }
 -->
 ``` http
@@ -85,25 +86,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/payloads/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc/detail",
-  "fromName": "faiza",
-  "fromEmail": "faiza@contoso.com",
-  "addIsExternalSender": false,
-  "subject": "Payload Detail",
-  "content": "<meta http-equiv=\"Content-Type\" content=\"text/html>\">",
-  "phishingUrl": "http://www.widgetsinc10+.com",
-  "coachMarks": [
+  "value": [
     {
-      "indicator": "URL hyperlinking",
-      "description": "URL hyperlinking hides the true URL behind text; the text can also look like another link",
+      "id": "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
+      "diplayName": "AttackSimTest loginPage",
+      "description": "AttackSim Test loginPage",
+      "status": "draft",
+      "source": "tenant",
       "language": "en",
-      "order": "0",
-      "isValid": true,
-      "coachmarkLocation": {
-        "offset": 144,
-        "length": 6,
-        "type": "messageBody"
-      }
+      "createdBy": {
+        "email": "alexwaber@contoso.com",
+        "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
+        "displayName": "Alex Waber"
+      },
+      "createdDateTime": "2022-01-12T03:15:01.5906699Z",
+      "lastModifiedBy": {
+        "email": "alexwaber@contoso.com",
+        "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
+        "displayName": "Alex Waber"
+      },
+      "lastModifiedDateTime": "2021-10-07T12:23:18.8157586Z"
     }
   ]
 }

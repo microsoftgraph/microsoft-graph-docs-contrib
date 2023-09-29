@@ -1,21 +1,19 @@
 ---
-title: "Get payload"
-description: "Get an attack simulation campaign payload for a tenant."
+title: "Get training"
+description: "Get an attack simulation training for a tenant."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
-doc_type: apiPageType
+doc_type: resourcePageType
 ---
 
-# Get payload
+# Get training
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get an attack simulation campaign payload for a tenant.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+Get an attack simulation [training](../resources/training.md) for a tenant. 
 
 ## Permissions
 
@@ -34,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/attackSimulation/payloads/{payloadId}
+GET /security/attackSimulation/trainings/{trainingId}
 ```
 
 ## Optional query parameters
@@ -53,22 +51,20 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [payload](../resources/payload.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [training](../resources/training.md) object in the response body.
 
 ## Examples
 
 ### Request
 
 The following is an example of a request.
-
 <!-- {
   "blockType": "request",
-  "name": "get_payload",
-  "sampleKeys": ["f1b13829-3829-f1b1-2938-b1f12938b1a"]
+  "name": "get_training"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/payload/f1b13829-3829-f1b1-2938-b1f12938b1a
+GET https://graph.microsoft.com/beta/security/attackSimulation/trainings/21b2b7d1-11ae-a7a8-99c8-9029a4e70cc9
 ```
 
 ### Response
@@ -76,10 +72,11 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/payload/f1b13829-
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.payload"
+  "@odata.type": "microsoft.graph.training"
 }
 -->
 ``` http
@@ -87,37 +84,40 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/payloads/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
-  "id": "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
-  "name": "AttackSimTest Payload",
-  "description": "AttackSim Test Payload",
-  "simulationAttackType": "social",
-  "platform": "email",
-  "isAutomated": null,
-  "status": "draft",
-  "source": "tenant",
-  "language": "en",
-  "predictedCompromiseRate": 20.0,
-  "complexity": "medium",
-  "technique": "credentialHarvesting",
-  "createdBy": {
-    "email": "faiza@contoso.com",
-    "id": "121212",
-    "displayName": "Faiza"
-  },
-  "createdDateTime": "2022-01-12T03:15:01.5906699Z",
-  "lastModifiedBy": {
-    "email": "faiza@contoso.com",
-    "id": "121212",
-    "displayName": "Faiza"
-  },
-  "lastModifiedDateTime": "2021-10-07T12:23:18.8157586Z",
-  "theme": "personalizedOffer",
-  "brand": "microsoft",
-  "industry": "IT",
-  "isCurrentEvent": false,
-  "isControversial": false,
-  "detail": null,
-  "payloadTags": []
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/trainings/$entity",
+    "id": "db8175cd-bafe-433a-a823-a2d6dd6c5e6a",
+    "displayName": "Mass Market Phishing - Amazon Gift Card",
+    "description": "Mass Market Phishing - Amazon Gift Card",
+    "durationInMinutes": 3,
+    "source": "global",
+    "type": "unknown",
+    "tags": [
+        "CredentialHarvesting",
+        "DriveByUrl",
+        "Compliance",
+        "Basic",
+        "Phishing"
+    ],
+    "availabilityStatus": "available",
+    "supportedLocales": [
+        "tr",
+        "pl",
+        "fa",
+        "da",
+        "nl"
+    ],
+    "hasEvaluation": false,
+    "createdDateTime": "2020-09-18T06:54:46.1930597Z",
+    "lastModifiedDateTime": "2023-03-28T12:01:33.3568194Z",
+    "createdBy": {
+        "email": "yibsu",
+        "id": null,
+        "displayName": null
+    },
+    "lastModifiedBy": {
+        "email": "yibsu",
+        "id": null,
+        "displayName": null
+    }
 }
 ```
