@@ -33,6 +33,10 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 > 
 > A bearer token is required for the `Authorization` header for all the methods listed in the previous table. For details about how to get the `token` for the `Authorization` header, see [Get access on behalf of a user](/graph/auth-v2-user?tabs=http#3-request-an-access-token).
 
+> [!CAUTION] 
+> 
+> Graph Online Meeting APIs that support Microsoft Teams live event is deprecated and will stop functioning on September 30, 2024. New Graph APIs will replace this in Spring of 2024. 
+
 ## Properties
 
 | Property              | Type                                          | Description    |
