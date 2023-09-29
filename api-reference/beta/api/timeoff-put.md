@@ -51,6 +51,15 @@ PUT /teams/{teamId}/schedule/timesOff/{timeOffId}
 
 In the request body, supply a JSON representation of a [timeOff](../resources/timeoff.md) object.
 
+**Difference between the `sharedTimeOff` and `draftTimeOff`:**
+
+* The `sharedTimeOff` entity is visible to all team members.
+* The `draftTimeOff` entity is for draft changes only visible to team owners. The `draftTimeOff` changes need to be shared with team members for visibility.
+* When the `draftTimeOff` changes are shared, the content from the `draftTimeOff` entity is copied into the `sharedTimeOff` entity.
+* Changes to the shared entity are restricted when there's a draft waiting. You can only make changes to the shared entity when the draft entity is empty.
+* Updates to the shared entity prompt notifications for the affected user within the Teams client notifications are presented through both the activity feed and mobile notifications.
+* For a streamlined user experience, it is advisable to make further changes to the draft entities, thereby mitigating notification alerts. You can then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.
+
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [timeOff](../resources/timeoff.md) object in the response body.
@@ -142,17 +151,6 @@ Content-type: application/json
   }
 }
 ```
-
-**Difference between the `sharedTimeOff` and `draftTimeOff`:**
-
-* The `sharedTimeOff` entity is visible to all team members.
-* The `draftTimeOff` entity is for draft changes only visible to team owners. The `draftTimeOff` changes need to be shared with team members for visibility.
-* When the `draftTimeOff` changes are shared, the content from the `draftTimeOff` entity is copied into the `sharedTimeOff` entity.
-* Changes to the shared entity are restricted when there's a draft waiting. You can only make changes to the shared entity when the draft entity is empty.
-* Updates to the shared entity prompt notifications for the affected user within the Teams client—notifications are presented through both the activity feed and mobile notifications.
-*For a streamlined user experience, it is advisable to make further changes to the draft entities, thereby mitigating notification alerts. You can then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.
-
-The same rules are applicable to shift APIs, including both the `sharedShift` and `draftShift` entities.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

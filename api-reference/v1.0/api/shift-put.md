@@ -47,6 +47,15 @@ PUT /teams/{teamId}/schedule/shifts/{shiftId}
 
 In the request body, supply a JSON representation of a [shift](../resources/shift.md) object.
 
+**Difference between the `sharedShift` and `draftShift`:**
+
+* The `sharedShift` entity is visible to all team members.
+* The `draftShift` entity is for draft changes only visible to team owners. The `draftShift` changes need to be shared with team members for visibility.
+* When the `draftShift` changes are shared, the content from the `draftShift` entity is copied into the `sharedShift` entity.
+* Changes to the shared entity are restricted when there's a draft waiting. You can only make changes to the shared entity when the draft entity is empty.
+* Updates to the shared entity prompt notifications for the affected user within the Teams client notifications are presented through both the activity feed and mobile notifications.
+* For a streamlined user experience, it is advisable to make further changes to the draft entities, thereby mitigating notification alerts. You can then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.
+
 ## Response
 
 If successful, this method returns a `204 No Content` response code and empty content. If the request specifies the `Prefer` header with `return=representation` preference, then this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
