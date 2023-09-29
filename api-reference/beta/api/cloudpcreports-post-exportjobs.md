@@ -67,7 +67,7 @@ The following example shows how to create an export job to download the `TotalAg
 
 #### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -128,7 +128,7 @@ Content-length: 315
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -166,7 +166,7 @@ The following example shows how to create an export job to download the `RemoteC
 
 #### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -199,7 +199,7 @@ Content-length: 315
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
