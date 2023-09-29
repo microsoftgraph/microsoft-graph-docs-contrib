@@ -107,8 +107,6 @@ The following is an example of a request.
 GET https://graph.microsoft.com/v1.0/security/threatIntelligence/whoisRecords?$search="admin/address/state:WA&$orderby=registrationDateTime desc"
 ```
 
----
-
 ### Response
 
 The following is an example of the response.
