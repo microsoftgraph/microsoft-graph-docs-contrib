@@ -7,7 +7,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "reprovisionCloudPc",
                     "ChangeType": "Deprecation",
-                    "Description": "Deprecated the **reprovisionCloudPc** API. Use [reprovision](https://learn.microsoft.com/en-us/graph/api/cloudPC-reprovision?view=graph-rest-beta) instead",
+                    "Description": "Deprecated the **reprovisionCloudPc** API. Goind forward, use the [reprovision](https://learn.microsoft.com/en-us/graph/api/cloudpc-reprovision?view=graph-rest-beta) API instead.",
                     "Target": "cloudPc"
                 },
                 {
@@ -15,7 +15,7 @@
                     "ApiChange": "Method",
                     "ChangedApiName": "restoreCloudPc",
                     "ChangeType": "Deprecation",
-                    "Description": "Deprecated the **restoreCloudPc** API. Use [restore](https://learn.microsoft.com/en-us/graph/api/cloudPC-restore?view=graph-rest-beta) instead",
+                    "Description": "Deprecated the **restoreCloudPc** API. Going forward, use the [restore](https://learn.microsoft.com/en-us/graph/api/cloudpc-restore?view=graph-rest-beta) API instead.",
                     "Target": "cloudPc"
                 }
             ],
