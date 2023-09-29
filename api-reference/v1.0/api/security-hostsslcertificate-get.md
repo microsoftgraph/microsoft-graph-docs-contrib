@@ -69,8 +69,6 @@ The following is an example of a request.
 GET https://graph.microsoft.com/v1.0/security/threatIntelligence/hostSslCertificates/Y29udG9zby5jb20xNTUwMGZiOTY1NTE1MDVmMWVkYjI0ZGQzYjM2ZmNmZmRiNzY1ODMzYjgxMTg=
 ```
 
----
-
 
 ### Response
 
