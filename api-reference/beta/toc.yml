@@ -10331,7 +10331,7 @@ items:
                     href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md
                   - name: Get shared-use license usage reports (deprecated)
                     href: api/cloudpcreports-getshareduselicenseusagereport.md
-                  - name: Get Frontline reports
+                  - name: Get Windows 365 Frontline reports
                     href: api/cloudpcreports-getfrontlinereport.md
                   - name: Get total aggregated remote connection reports
                     href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
