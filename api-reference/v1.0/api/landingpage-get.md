@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get a [landingPage](../resources/landingpage.md) associated with an attack simulation campaign for a tenant.
 
 ## Permissions
@@ -66,7 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/landingPages/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc
+GET https://graph.microsoft.com/v1.0/security/attackSimulation/landingPages/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc
 ```
 
 ### Response

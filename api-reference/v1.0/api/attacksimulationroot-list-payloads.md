@@ -87,32 +87,6 @@ The following is an example of a request.
 GET https://graph.microsoft.com/v1.0/security/attackSimulation/payloads?$filter=source eq 'Tenant'
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-payload-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/list-payload-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/list-payload-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/list-payload-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/list-payload-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/list-payload-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 ### Response
 
 The following is an example of a response.
@@ -129,8 +103,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/payloads?$filter=source eq 'Tenant'",
-  "@odata.nextLink": "https://graph.microsoft.com/beta/security/attackSimulation/payloads?$filter=source+eq+%27Tenant%27&$skiptoken=MyZRVkZCUVVGQlFVRXZMeTh2THk4dkx5OHZPSGxCUVVGQk4yZDZMMFZwZFRjcmF6WjJURk14TWtKVk9WYzNaejA5",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#security/attackSimulation/payloads?$filter=source eq 'Tenant'",
+  "@odata.nextLink": "https://graph.microsoft.com/v1.0/security/attackSimulation/payloads?$filter=source+eq+%27Tenant%27&$skiptoken=MyZRVkZCUVVGQlFVRXZMeTh2THk4dkx5OHZPSGxCUVVGQk4yZDZMMFZwZFRjcmF6WjJURk14TWtKVk9WYzNaejA5",
   "value": [
     {
       "id": "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",

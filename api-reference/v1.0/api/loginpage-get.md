@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get a [loginPage](../resources/loginpage.md) associated with an attack simulation campaign for a tenant. Login pages are shown to users in attack simulations that use _credential harvest_ and _link in attachment_ social engineering techniques.
 
 ## Permissions
@@ -65,7 +63,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/loginPages/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc
+GET https://graph.microsoft.com/v1.0/security/attackSimulation/loginPages/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc
 ```
 
 ### Response

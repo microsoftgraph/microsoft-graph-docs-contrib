@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents a notification setting when no training is selected on a simulation creation.
 
 Inherits from [endUserNotificationSetting](../resources/endusernotificationsetting.md).

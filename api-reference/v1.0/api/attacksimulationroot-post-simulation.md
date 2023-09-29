@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Create an attack simulation campaign for a tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -86,14 +84,14 @@ The following is an example of the request.
 -->
 
 ```http
-POST https://graph.microsoft.com/beta/security/attackSimulation/simulations
+POST https://graph.microsoft.com/v1.0/security/attackSimulation/simulations
 Content-type: application/json
 
 {
   "displayName": "Graph Simulation",
-  "payload@odata.bind": "https://graph.microsoft.com/beta/security/attacksimulation/payloads/12345678-9abc-def0-123456789a",
-  "loginPage@odata.bind": "https://graph.microsoft.com/beta/security/attacksimulation/loginPages/1w345678-9abc-def0-123456789a",
-  "landingPage@odata.bind": "https://graph.microsoft.com/beta/security/attacksimulation/landingPages/1c345678-9abc-def0-123456789a",
+  "payload@odata.bind": "https://graph.microsoft.com/v1.0/security/attacksimulation/payloads/12345678-9abc-def0-123456789a",
+  "loginPage@odata.bind": "https://graph.microsoft.com/v1.0/security/attacksimulation/loginPages/1w345678-9abc-def0-123456789a",
+  "landingPage@odata.bind": "https://graph.microsoft.com/v1.0/security/attacksimulation/landingPages/1c345678-9abc-def0-123456789a",
   "durationInDays": "3",
   "attackTechnique": "credentialHarvesting",
   "status": "scheduled",
@@ -112,12 +110,12 @@ Content-type: application/json
     "settingType": "noTraining",
     "positiveReinforcement": {
       "deliveryPreference": "deliverAfterCampaignEnd",
-      "endUserNotification": "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a",
+      "endUserNotification": "https://graph.microsoft.com/v1.0/security/attacksimulation/endUserNotifications/1ewer3678-9abc-def0-123456789a",
       "defaultLanguage": "en"
     },
     "simulationNotification": {
       "targettedUserType": "compromised",
-      "endUserNotification@odata.bind": "https://graph.microsoft.com/beta/security/attacksimulation/endUserNotifications/12wer3678-9abc-def0-123456789a",
+      "endUserNotification@odata.bind": "https://graph.microsoft.com/v1.0/security/attacksimulation/endUserNotifications/12wer3678-9abc-def0-123456789a",
       "defaultLanguage": "en"
     }
   }

@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents an end user notification setting provided by an administrator during a simulation creation.
 
 Base type of [noTrainingNotificationSetting](../resources/notrainingnotificationsetting.md) and [trainingNotificationSetting](../resources/trainingnotificationsetting.md).

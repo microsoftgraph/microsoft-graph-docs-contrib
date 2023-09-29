@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents details about an end user notification.
 
 Base type of [positiveReinforcementNotification](../resources/positivereinforcementnotification.md), [simulationNotification](../resources/simulationnotification.md), and [trainingReminderNotification](../resources/trainingremindernotification.md).

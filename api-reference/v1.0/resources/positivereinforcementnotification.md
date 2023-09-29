@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents positive reinforcement settings for an end user notification during simulation creation. Admins can configure the notification details for a user who identifies the phish message successfully.
 
 Inherits from [baseEndUserNotification](../resources/baseendusernotification.md).

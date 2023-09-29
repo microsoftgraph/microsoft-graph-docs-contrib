@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Read the properties and relationships of an [endUserNotification](../resources/endusernotification.md) object.
 
 ## Permissions
@@ -65,7 +63,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/endUserNotifications
+GET https://graph.microsoft.com/v1.0/security/attackSimulation/endUserNotifications
 ```
 
 ### Response

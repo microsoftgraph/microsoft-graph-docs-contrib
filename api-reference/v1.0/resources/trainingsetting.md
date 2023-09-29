@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 An abstract type that represents a training setting for simulation creation.
 
 Base type of [customTrainingSetting](../resources/customtrainingsetting.md), [microsoftCustomTrainingSetting](../resources/microsoftcustomtrainingsetting.md), [microsoftManagedTrainingSetting](../resources/microsoftmanagedtrainingsetting.md), [microsoftTrainingAssignmentMapping](../resources/microsofttrainingassignmentmapping.md), and [noTrainingSetting](../resources/notrainingsetting.md).

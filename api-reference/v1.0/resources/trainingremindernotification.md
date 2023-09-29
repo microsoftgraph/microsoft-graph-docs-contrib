@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents notification content details for a training reminder during a simulation creation.
 
 Inherits from [baseEndUserNotification](../resources/baseendusernotification.md).

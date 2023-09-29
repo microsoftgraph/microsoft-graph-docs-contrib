@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Get an attack simulation campaign payload for a tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -68,7 +66,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/payload/f1b13829-3829-f1b1-2938-b1f12938b1a
+GET https://graph.microsoft.com/v1.0/security/attackSimulation/payload/f1b13829-3829-f1b1-2938-b1f12938b1a
 ```
 
 ### Response
@@ -87,7 +85,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/payloads/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#security/attackSimulation/payloads/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
   "id": "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
   "name": "AttackSimTest Payload",
   "description": "AttackSim Test Payload",
