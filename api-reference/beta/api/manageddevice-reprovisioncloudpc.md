@@ -1,5 +1,5 @@
 ---
-title: "managedDevice: reprovisionCloudPc"
+title: "managedDevice: reprovisionCloudPc (deprecated)"
 description: "Reprovision Cloud PC with an Intune managed device ID. "
 author: "RuiHou105"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# managedDevice: reprovisionCloudPc
+# managedDevice: reprovisionCloudPc (deprecated)
 
 Namespace: microsoft.graph
 
