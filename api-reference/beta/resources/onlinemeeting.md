@@ -49,11 +49,11 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 | allowTranscription | Boolean | Indicates whether transcription is enabled for the meeting. |
 | allowRecording | Boolean | Indicates whether recording is enabled for the meeting. |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a meeting. |
-| alternativeRecording  | Stream | The content stream of the alternative recording of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
+| alternativeRecording (deprecated) | Stream | The content stream of the alternative recording of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
 | anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity will be anonymized in the meeting. Possible values are: `attendee`. The `attendee` value cannot be removed through a PATCH operation once added.|
 | attendeeReport (deprecated)       | Stream | The content stream of the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only.   |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. |
-| broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Settings related to a live event.      |
+| broadcastSettings (deprecated)   | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Settings related to a live event.      |
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with this online meeting.  |
 | creationDateTime      | DateTime | The meeting creation time in UTC. Read-only.     |
 | endDateTime           | DateTime | The meeting end time in UTC.   |
@@ -67,7 +67,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 | lobbyBypassSettings | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby. |
 | participants | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting. This includes the organizer and the attendees. |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
-| recording | Stream | The content stream of the recording of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
+| recording (deprecated) | Stream | The content stream of the recording of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
 | shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) | Specifies whether meeting chat history is shared with participants.  Possible values are: `all`, `none`, `unknownFutureValue`. |
 | startDateTime | DateTime | The meeting start time in UTC. |
 | subject | String | The subject of the online meeting. |
