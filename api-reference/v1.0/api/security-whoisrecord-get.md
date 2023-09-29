@@ -71,7 +71,6 @@ The following is an example of a request.
 GET https://graph.microsoft.com/v1.0/security/threatIntelligence/whoisRecords/Y29udG9zby5jb20kJDY5NjQ3ODEyMDc3NDY1NzI0MzM=
 ```
 
----
 
 ### Response
 
