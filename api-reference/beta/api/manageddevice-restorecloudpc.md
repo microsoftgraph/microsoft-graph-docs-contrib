@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> This API is deprecated and will stop returning data on September 30, 2034. Please, use the [restore](../api/cloudpc-restore.md) API instead.
+> This API is deprecated and will stop returning data on September 30, 2023. Please, use the [restore](../api/cloudpc-restore.md) API instead.
 
 Restore a Cloud PC device to a previous state with an Intune [managed device](../resources/cloudpc.md) ID.
 
