@@ -7,17 +7,13 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Get whoisRecord 
+# Get whoisRecord
 
 Namespace: microsoft.graph.security
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
 Get the current [whoisRecord](../resources/security-whoisrecord.md) resource for a [host](../resources/security-host.md).
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -63,7 +59,6 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_host_whois",
@@ -71,40 +66,8 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.com/whois
+GET https://graph.microsoft.com/v1.0/security/threatIntelligence/hosts/contoso.com/whois
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-host-whois-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-host-whois-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-host-whois-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-host-whois-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-host-whois-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-host-whois-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-host-whois-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-host-whois-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
@@ -125,7 +88,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.security.whoisRecord",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.security.whoisRecord",
     "id": "Y29udG9zby5jb20kJDY5NjQ3ODEyMDc3NDY1NzI0MzM=",
     "expirationDateTime": "2023-08-31T00:00:00Z",
     "registrationDateTime": "2022-07-30T09:43:19Z",
@@ -149,8 +112,7 @@ Content-Type: application/json
             "countryOrRegion": null,
             "postalCode": null,
             "state": null,
-            "street": null,
-            "type": "unknown"
+            "street": null
         }
     },
     "admin": {
@@ -164,8 +126,7 @@ Content-Type: application/json
             "countryOrRegion": "US",
             "postalCode": "98052",
             "state": "WA",
-            "street": "One Microsoft Way",
-            "type": "unknown"
+            "street": "One Microsoft Way"
         }
     },
     "registrar": {
@@ -179,8 +140,7 @@ Content-Type: application/json
             "countryOrRegion": "US",
             "postalCode": "83646",
             "state": "ID",
-            "street": "3540 E Longwing Ln",
-            "type": "unknown"
+            "street": "3540 E Longwing Ln"
         }
     },
     "registrant": {
@@ -194,8 +154,7 @@ Content-Type: application/json
             "countryOrRegion": "US",
             "postalCode": "98052",
             "state": "WA",
-            "street": "One Microsoft Way",
-            "type": "unknown"
+            "street": "One Microsoft Way"
         }
     },
     "technical": {
@@ -209,8 +168,7 @@ Content-Type: application/json
             "countryOrRegion": "US",
             "postalCode": "98052",
             "state": "WA",
-            "street": "One Microsoft Way",
-            "type": "unknown"
+            "street": "One Microsoft Way"
         }
     },
     "nameservers": [
@@ -249,4 +207,3 @@ Content-Type: application/json
     }
 }
 ```
-
