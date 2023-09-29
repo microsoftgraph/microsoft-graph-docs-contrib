@@ -8028,6 +8028,8 @@ items:
                     href: api/security-host-get.md
                   - name: Get host reputation
                     href: api/security-host-get-reputation.md
+                  - name: Get WHOIS records for a host
+                    href: api/security-host-get-whois.md
                   - name: List components
                     href: api/security-host-list-components.md
                   - name: List cookies
@@ -8048,8 +8050,6 @@ items:
                     href: api/security-host-list-subdomains.md
                   - name: List trackers
                     href: api/security-host-list-trackers.md
-                  - name: List WHOIS records for a host
-                    href: api/security-host-get-whois.md
               - name: Host component
                 items:
                   - name: Host component
