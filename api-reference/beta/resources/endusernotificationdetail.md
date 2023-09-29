@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents details about end user language specific content.
+Represents details about end user language-specific content.
 
 Inherits from [entity](../resources/entity.md).
 
