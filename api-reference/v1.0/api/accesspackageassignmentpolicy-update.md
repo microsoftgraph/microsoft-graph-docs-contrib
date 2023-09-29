@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update an existing [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object to change one or more of its properties, such as the display name or description.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -45,6 +47,7 @@ The following table shows the properties that are required when you update an [a
 
 |Property|Type|Description|
 |:---|:---|:---|
+|accessPackage|[accessPackage](../resources/accesspackage.md)|Access package containing this policy. Only the **id** property is required.|
 |displayName|String|The display name of the policy. Required.|
 |description|String|The description of the policy. Required.|
 |allowedTargetScope|allowedTargetScope|Who is allowed to request the access package through this policy. The possible values are: `notSpecified`, `specificDirectoryUsers`, `specificConnectedOrganizationUsers`, `specificDirectoryServicePrincipals`, `allMemberUsers`, `allDirectoryUsers`, `allDirectoryServicePrincipals`, `allConfiguredConnectedOrganizationUsers`, `allExternalUsers`, `unknownFutureValue`. Required.|

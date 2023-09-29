@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: "driveItem: copy"
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
@@ -11,6 +11,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

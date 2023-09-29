@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get the final report for a subject rights request. The report is a text file that contains information about the files that were included by the privacy administrator.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /privacy/subjectRightsRequests{subjectRightsRequestId}/getFinalReport
+GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalReport
 ```
 
 ## Request headers
@@ -37,7 +39,7 @@ GET /privacy/subjectRightsRequests{subjectRightsRequestId}/getFinalReport
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

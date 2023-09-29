@@ -2,7 +2,7 @@
 title: "webApplicationSegment resource type"
 description: "Represents the segment configurations that are allowed for an on-premises wildcard application published through Azure AD Application Proxy."
 ms.localizationpriority: medium
-author: "dhruvinshah"
+author: "dhruvinrshah"
 ms.prod: "applications"
 doc_type: "resourcePageType"
 ---

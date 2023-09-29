@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = MarkAsJunkPostRequestBody()
-request_body.move_to_junk = True
+graph_client = GraphServiceClient(request_adapter)
 
+request_body = MarkAsJunkPostRequestBody(
+	move_to_junk = True,
+)
 
-
-
-result = await client.me.messages.by_message_id('message-id').mark_a_junk.post(request_body = request_body)
+result = await graph_client.me.messages.by_message_id('message-id').mark_a_junk.post(body = request_body)
 
 
 ```

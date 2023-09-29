@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), retrieve the properties and relationships of an  [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -69,6 +71,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-accesspackageassignmentrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-accesspackageassignmentrequest-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -129,12 +135,13 @@ Content-type: application/json
             "type": "notSpecified"
         }
     },
-    "customExtensionHandlerInstances": [
+    "customExtensionCalloutInstances": [
         {
-            "status": "requestReceived",
+            "status": "callbackReceived",
             "externalCorrelationId": "08585600902100964604743022906CU13",
             "customExtensionId": "e59ef33d-7bc4-4b15-8d3c-01153de8a498",
-            "stage": "assignmentRequestCreated"
+            "id": "3C49CE50-E02C-4254-81E6-834328DF72DC",
+            "detail": "Request has been allowed"
         }
     ]
 }

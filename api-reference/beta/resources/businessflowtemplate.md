@@ -4,7 +4,7 @@ description: "In the Azure AD access reviews feature, the `businesFlowTemplate` 
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "markwahl-msft"
+author: "shubhamguptacal"
 ---
 
 # businessFlowTemplate resource type (deprecated)
@@ -22,12 +22,12 @@ The business flow template objects are automatically generated when the global a
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
 |[List businessFlowTemplates](../api/businessflowtemplate-list.md) | [businessFlowTemplate](businessflowtemplate.md) collection| Get the business flow templates appropriate to access reviews.|
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 | id                     |String                | The feature-assigned identifier of the business flow template. These values are case sensitive.                                      |
 | displayName            |String                | The name of the business flow template                                                             |
@@ -39,14 +39,14 @@ None.
 
 ## See also
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[Create accessReview](../api/accessreview-create.md) |	[accessReview](accessreview.md) |	Create a new accessReview. |
+|[Create accessReview](../api/accessreview-create.md) |    [accessReview](accessreview.md) |    Create a new accessReview. |
 
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

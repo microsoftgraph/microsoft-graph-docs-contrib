@@ -38,7 +38,8 @@ Initializing the MSAL2 provider in HTML is the simplest way to create a new prov
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | client-id                    | String client ID (see Creating an app/client ID). Required.                                                                                                                                                                                                           |
 | login-type                   | Enumeration between `redirect` and `popup` - default value is `redirect`. Optional.                                                                                                                                                                                   |
-| scopes                       | Comma separated strings for scopes the user must consent to on sign in. Optional.                                                                                                                                                                                     |
+| scopes                       | Comma-separated strings for scopes that the user must consent to when they sign in. Optional.
+| custom-hosts                 | Comma-seperated strings for additional domains that the Microsoft Graph client can call. Optional.                                                                                                                                                                                     |
 | authority                    | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
 | redirect-uri                 | Redirect URI string - by default the current window URI is used. Optional.                                                                                                                                                                                            |
 | prompt                       | Type of prompt to use for login, between ```SELECT_ACCOUNT```, ```CONSENT``` and ```LOGIN```. Default is ```SELECT_ACCOUNT```. Optional.
@@ -67,6 +68,7 @@ This option makes sense when the Microsoft Graph Toolkit is responsible for all 
 interface Msal2Config {
   clientId: string;
   scopes?: string[];
+  customHosts?: string[];
   authority?: string;
   redirectUri?: string;
   loginType?: LoginType; // LoginType.Popup or LoginType.Redirect (redirect is default)
@@ -89,6 +91,7 @@ Be sure to understand opportunities for collisions when using this option. By it
 interface Msal2PublicClientApplicationConfig {
   publicClientApplication: PublicClientApplication;
   scopes?: string[];
+  customHosts?: string[];
   authority?: string;
   redirectUri?: string;
   loginType?: LoginType; // LoginType.Popup or LoginType.Redirect (redirect is default)
@@ -128,7 +131,51 @@ Alternatively:
 </mgt-msal2-provider>
 ```
 
-Then use the toolkit as usual.
+To call the custom APIs, request that API scope.
+
+```HTML
+<mgt-get resource="https://myapi.com/v1.0/api" scopes="api://CUSTOM_API_GUID/SCOPE">
+  ...
+</mgt-get>
+```
+or via Javascript/Typescript
+```ts
+import { prepScopes } from "@microsoft/mgt-element";
+
+graphClient
+  .api("https://myapi.com/v1.0/api")
+  .middlewareOptions(prepScopes("api://CUSTOM_API_GUID/SCOPE"))
+  .get();
+...
+```
+
+#### Use custom hosts to call different Azure AD-secured endpoints
+
+If you want to call your own custom Azure AD secured endpoints, pass those domains to the underlying Microsoft Graph client.
+
+```ts
+import {Providers, Msal2Provider} from '@microsoft/mgt'
+
+const config: Msal2Config = {
+  clientId: '2dfea037-xxx-c05708a1b241',
+  customHosts: ['mydomain.com'] //array of domains, not urls!
+  ... // rest of the config
+}
+
+Providers.globalProvider = new Msal2Provider(config);
+```
+
+Alternatively:
+
+```html
+<mgt-msal2-provider
+      client-id="2dfea037-xxx-c05708a1b241"
+      redirect-uri="http://localhost:3000"
+      custom-hosts="mydomain.com"
+      scopes="user.read,user.read.all">
+</mgt-msal2-provider>
+```
+
 
 ## Creating an app/client ID
 
@@ -136,10 +183,9 @@ For details about how to register an app and get a client ID, see [Create an Azu
 
 ## Migrating from MSAL Provider to MSAL2 Provider
 To migrate an application that's using MSAL provider to the MSAL2 Provider:
-1. Go to the Azure portal at https://portal.azure.com.
-1. From the menu, select **Azure Active Directory**.
-1. From the Azure Active Directory menu, select **App registrations**.
-1. Select the app registration of the app that you're currently using. 
+1. Go to the [Microsoft Entra admin center](https://entra.microsoft.com).
+1. Expand the **Identity** menu > expand **Applications** > select **App registrations**.
+1. Select the app registration of the app to migrate. 
 1. Go to **Authentication** on the left menu.
 1. Under **Platform configurations**, click on **Add a platform** and select **Single-page Application**.
 1. Remove all the redirect URIs that you have currently registered under **Web**, and instead add them under **Single-page application**.

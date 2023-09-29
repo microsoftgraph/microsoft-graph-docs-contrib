@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get the properties of an [insightsSettings](../resources/insightssettings.md) object for displaying or returning contact insights in an organization.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -66,6 +68,10 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/cont
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-insightssettingscontactrequest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-insightssettingscontactrequest-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-insightssettingscontactrequest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -80,6 +86,10 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/cont
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-insightssettingscontactrequest-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-insightssettingscontactrequest-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

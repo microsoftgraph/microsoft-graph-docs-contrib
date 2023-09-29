@@ -6,21 +6,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CountryNamedLocation();
-$requestBody->set@odatatype('#microsoft.graph.countryNamedLocation');
-
+$requestBody->setOdataType('#microsoft.graph.countryNamedLocation');
 $requestBody->setDisplayName('Updated named location without unknown countries and regions');
-
-$requestBody->setCountriesAndRegions(['CA', 'IN', ]);
-
+$requestBody->setCountriesAndRegions(['CA', 'IN', 	]);
 $requestBody->setIncludeUnknownCountriesAndRegions(false);
 
-
-
-$result = $graphServiceClient->identity()->conditionalAccess()->namedLocations()->byNamedLocationId('namedLocation-id')->patch($requestBody);
-
+$result = $graphServiceClient->identity()->conditionalAccess()->namedLocations()->byNamedLocationId('namedLocation-id')->patch($requestBody)->wait();
 
 ```

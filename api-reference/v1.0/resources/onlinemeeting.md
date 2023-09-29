@@ -23,6 +23,10 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | [Delete onlineMeeting](../api/onlinemeeting-delete.md)             | None                              | Delete an **onlineMeeting** object.                                                                                    |
 | [Create or get onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an **onlineMeeting** object with a custom, external ID. If the meeting already exists, retrieve its properties. |
 
+> [!NOTE]
+> 
+> A bearer token is required for the `Authorization` header for all the methods listed in the previous table. For details about how to get the `token` for the `Authorization` header, see [Get access on behalf of a user](/graph/auth-v2-user?tabs=http#3-request-an-access-token).
+
 ## Properties
 
 | Property              | Type                                          | Description                                                                                                                |
@@ -31,6 +35,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | allowAttendeeToEnableMic     | Boolean                       | Indicates whether attendees can turn on their microphone.                          |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)                       | Specifies who can be a presenter in a meeting. Possible values are listed in the following table.                          |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. |
+| allowParticipantsToChangeName | Boolean | Specifies if participants are allowed to rename themselves in an instance of the meeting. |
 | allowTeamworkReactions | Boolean | Indicates whether Teams reactions are enabled for the meeting. |
 | attendeeReport | Stream | The content stream of the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only.                                                   |
@@ -47,10 +52,11 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting   lobby.                                                               |
 | participants          | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting.  This includes the organizer and the attendees.                       |
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
+| shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) | Specifies whether meeting chat history is shared with participants. Possible values are: `all`, `none`, `unknownFutureValue`. |
 | startDateTime         | DateTime                                      | The meeting start time in UTC.                                                                                             |
 | subject               | String                                        | The subject of the online meeting.                                                                                         |
 | videoTeleconferenceId | String                                        | The video teleconferencing ID. Read-only.                                                                                  |
-| watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether a watermark should be applied to a content type by the client application. |                                                                |
+| watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether a watermark should be applied to a content type by the client application. |
 
 ### onlineMeetingPresenters values
 
@@ -73,6 +79,14 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | enabled            | Meeting chat is enabled.                                               |
 | disabled           | Meeting chat is disabled.                                              |
 | limited            | Meeting chat is enabled but only for the duration of the meeting call. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                      |
+
+### meetingChatHistoryDefaultMode values
+
+| Value              | Description                                                            |
+| ------------------ | ---------------------------------------------------------------------- |
+| all                | All meeting chat history is shared.                                    |
+| none               | No meeting chat history is shared.                                     |
 | unknownFutureValue | Evolvable enumeration sentinel value. Do not use.                      |
 
 ## Relationships

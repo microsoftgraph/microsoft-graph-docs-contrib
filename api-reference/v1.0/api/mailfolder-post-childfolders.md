@@ -1,7 +1,7 @@
 ---
 title: "Create child folder"
 description: "Use this API to create a new child mailfolder."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Use this API to create a new child [mailFolder](../resources/mailfolder.md).
 
 If you intend a new folder to be hidden, you must set the **isHidden** property to `true` on creation.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

@@ -2,7 +2,7 @@
 title: "Get subscribedSku"
 description: "Retrieve a specific commercial subscription that an organization has acquired."
 ms.localizationpriority: medium
-author: "jconley76"
+author: "frank-masuelli"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -12,6 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get a specific commercial subscription that an organization has acquired.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -109,6 +111,7 @@ Content-type: application/json
     "id": "48a80680-7326-48cd-9935-b556b81d3a4e_c7df2760-2c81-4ef7-b578-5b5392b571df",
     "prepaidUnits": {
         "enabled": 25,
+        "lockedOut": 0,
         "suspended": 0,
         "warning": 0
     },

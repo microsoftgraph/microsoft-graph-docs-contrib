@@ -31,8 +31,8 @@ Metadata for the given object.
 |IsSynchronizationAgentRequired |Indicates whether an on-premises synchronization agent is required for this synchronization job. |
 |IsSynchronizationInPreview  |Indicates whether provisioning for this enterprise application is generally available.  |
 |OAuthSettings |A JSON containing values necessary for OAuth authentication, such as the token exchange URI and client identifier.  |
-|SynchronizationLearnMoreIbizaFwLink |The documentation link that's displayed in the Azure portal.  |
-|ConfigurationFields |A JSON containing the textbox configuration names that are displayed in the Azure portal. |
+|SynchronizationLearnMoreIbizaFwLink |The documentation link that's displayed in the Microsoft Entra admin center.  |
+|ConfigurationFields |A JSON containing the textbox configuration names that are displayed in the Microsoft Entra admin center. |
 
 ## JSON representation
 
