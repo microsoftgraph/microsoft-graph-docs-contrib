@@ -142,7 +142,8 @@ Content-Type: application/json
    "id":"7e1b4346-85a6-4bdd-abe3-d11c5d420efe",
    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#communications/calls('7531d31f-d10d-44de-802f-c569dbca451c')/participants/$entity",
    "metadata":null,
-   "recordingInfo":null
+   "recordingInfo":null,
+   "preferredDisplayName":null
 }
 ```
 

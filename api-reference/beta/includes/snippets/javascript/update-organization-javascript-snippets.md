@@ -12,6 +12,7 @@ const client = Client.init(options);
 
 const organization = {
   marketingNotificationEmails: ['marketing@contoso.com'],
+  onPremisesSyncEnabled: true,
   privacyProfile: 
     {
       contactEmail: 'alice@contoso.com',
