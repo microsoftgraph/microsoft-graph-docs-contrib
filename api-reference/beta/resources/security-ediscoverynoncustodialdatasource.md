@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryNoncustodialDataSource resource type"
-description: "Non-custodial data sources lets you add data to a case without having to associate it to a custodian."
+description: "Noncustodial data sources let you add data to a case without having to associate it to a custodian."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -38,7 +38,7 @@ Inherits from [dataSourceContainer](../resources/security-datasourcecontainer.md
 |lastModifiedDateTime|DateTimeOffset|Last modified date and time of the nonCustodialDataSource. Inherited from [microsoft.graph.security.datasourcecontainer](../resources/security-datasourcecontainer.md).|
 |releasedDateTime|DateTimeOffset|Date and time that the nonCustodialDataSource was released from the case. Inherited from [microsoft.graph.security.datasourcecontainer](../resources/security-datasourcecontainer.md).|
 |status|microsoft.graph.security.dataSourceContainerStatus|Latest status of the nonCustodialDataSource. Inherited from [microsoft.graph.security.datasourcecontainer](../resources/security-datasourcecontainer.md). Possible values are: `Active`, `Released`.|
-|holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the nonCustodialDataSource.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the nonCustodialDataSource. The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -47,7 +47,7 @@ Inherits from [dataSourceContainer](../resources/security-datasourcecontainer.md
 |lastIndexOperation|[microsoft.graph.security.ediscoveryIndexOperation](../resources/security-ediscoveryindexoperation.md)|Operation entity that represents the latest indexing for the non-custodial data source.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

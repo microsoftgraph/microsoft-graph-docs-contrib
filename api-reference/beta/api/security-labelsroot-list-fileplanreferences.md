@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Get a list of the [filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

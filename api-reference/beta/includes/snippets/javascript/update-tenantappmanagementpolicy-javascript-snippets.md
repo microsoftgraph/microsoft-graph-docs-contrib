@@ -21,7 +21,7 @@ const tenantAppManagementPolicy = {
             },
             {
                 restrictionType: 'passwordLifetime',
-                maxLifetime: 'P4DT12H30M5S',
+                maxLifetime: 'P90D',
                 restrictForAppsCreatedAfterDateTime: '2017-01-01T10:37:00Z'
             },
             {
@@ -36,7 +36,7 @@ const tenantAppManagementPolicy = {
             },
             {
                 restrictionType: 'symmetricKeyLifetime',
-                maxLifetime: 'P40D',
+                maxLifetime: 'P30D',
                 restrictForAppsCreatedAfterDateTime: '2015-01-01T10:37:00Z'
             }
         ],
@@ -45,7 +45,7 @@ const tenantAppManagementPolicy = {
                 restrictionType: 'asymmetricKeyLifetime',
                 maxLifetime: 'P30D',
                 restrictForAppsCreatedAfterDateTime: '2015-01-01T10:37:00Z'
-            },
+            }
         ]
     }
 };

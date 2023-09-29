@@ -30,6 +30,8 @@ When updating the preferred time zone for a user, specify it in the Windows or [
 > [!TIP]
 > You cannot create or delete any mailbox settings.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [appManagementPolicy](../resources/appManagementPolicy.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -134,7 +136,7 @@ Content-type: application/json
                },
                {
                   "restrictionType": "passwordLifetime",
-                  "maxLifetime": "P4DT12H30M5S",
+                  "maxLifetime": "P90D",
                   "restrictForAppsCreatedAfterDateTime": "2017-10-19T10:37:00Z"
                },
                {
@@ -144,7 +146,7 @@ Content-type: application/json
                },
                {
                   "restrictionType": "symmetricKeyLifetime",
-                  "maxLifetime": "P4D",
+                  "maxLifetime": "P30D",
                   "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
                }
             ],

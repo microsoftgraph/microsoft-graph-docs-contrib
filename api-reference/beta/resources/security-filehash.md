@@ -32,7 +32,7 @@ Represents a file hash value that is reported as part of a security detection al
 | sha1                   | SHA1 hash type.                                                       |
 | sha256                 | SHA256 hash type.                                                     |
 | sha256ac               | SHA256 authenticode hash type.                                        |
-| unknownFutureValue     | Evolvable enumeration sentinel value. Do not use.                     |
+| unknownFutureValue     | Evolvable enumeration sentinel value. Don't use.                     |
 
 
 ## Relationships
@@ -41,7 +41,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.fileHash"

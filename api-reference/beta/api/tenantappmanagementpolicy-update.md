@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [tenantAppManagementPolicy](../resources/tenantAppManagementPolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -92,7 +94,7 @@ Content-Type: application/json
             },
             {
                 "restrictionType": "passwordLifetime",
-                "maxLifetime": "P4DT12H30M5S",
+                "maxLifetime": "P90D",
                 "restrictForAppsCreatedAfterDateTime": "2017-01-01T10:37:00Z"
             },
             {
@@ -107,7 +109,7 @@ Content-Type: application/json
             },
             {
                 "restrictionType": "symmetricKeyLifetime",
-                "maxLifetime": "P40D",
+                "maxLifetime": "P30D",
                 "restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z"
             }
         ],
@@ -116,7 +118,7 @@ Content-Type: application/json
                 "restrictionType": "asymmetricKeyLifetime",
                 "maxLifetime": "P30D",
                 "restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z"
-            },
+            }
         ]
     }
 }
