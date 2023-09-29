@@ -69,8 +69,6 @@ The following is an example of a request.
 GET https://graph.microsoft.com/v1.0/security/threatIntelligence/hosts/contoso.com/sslCertificates?$count=true&$top=1&$skip=5
 ```
 
----
-
 ### Response
 
 The following is an example of the response.
