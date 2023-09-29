@@ -67,6 +67,8 @@ GET https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,48f1898f-77d9-
 
 ### Response
 
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
