@@ -47,7 +47,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a meeting. |
 | alternativeRecording  | Stream | The content stream of the alternative recording of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
 | anonymizeIdentityForRoles    | onlineMeetingRole collection | Specifies whose identity will be anonymized in the meeting. Possible values are: `attendee`. The `attendee` value cannot be removed through a PATCH operation once added.|
-| attendeeReport        | Stream | The content stream of the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only.   |
+| attendeeReport (deprecated)       | Stream | The content stream of the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only.   |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only. |
 | broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Settings related to a live event.      |
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with this online meeting.  |
@@ -55,7 +55,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 | endDateTime           | DateTime | The meeting end time in UTC.   |
 | externalId            | String | The external ID. A custom ID. Optional.      |
 | id | String | The default ID associated with the online meeting. Read-only.    |
-| isBroadcast | Boolean | Indicates whether this is a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). |
+| isBroadcast (deprecated) | Boolean | Indicates whether this is a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). |
 | isEntryExitAnnounced  | Boolean | Indicates whether to announce when callers join or leave. |
 | joinInformation | [itemBody](itembody.md) | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only. |
 | joinMeetingIdSettings | [joinMeetingIdSettings](joinmeetingidsettings.md) | Specifies the **joinMeetingId**, the meeting passcode, and the requirement for the passcode. Once an **onlineMeeting** is created, the **joinMeetingIdSettings** cannot be modified. To make any changes to this property, the meeting needs to be canceled and a new one needs to be created. |
@@ -142,14 +142,12 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
   "allowedPresenters": "String",
   "alternativeRecording": "Stream",
   "anonymizeIdentityForRoles": ["String"],
-  "attendeeReport": "Stream",
   "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
   "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
   "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "id": "String (identifier)",  
-  "isBroadcast": "Boolean",
   "isEntryExitAnnounced": "Boolean",
   "joinInformation": {"@odata.type": "microsoft.graph.itemBody"},
   "joinMeetingIdSettings": {"@odata.type": "microsoft.graph.joinMeetingIdSettings"},
