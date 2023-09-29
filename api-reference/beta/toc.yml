@@ -10210,13 +10210,13 @@ items:
                     href: api/cloudpc-rename.md
                   - name: Reprovision
                     href: api/cloudpc-reprovision.md
-                  - name: Reprovision remotely
+                  - name: Reprovision remotely (deprecated)
                     href: api/manageddevice-reprovisioncloudpc.md
                   - name: Resize remotely
                     href: api/manageddevice-resizecloudpc.md
                   - name: Restore
                     href: api/cloudpc-restore.md
-                  - name: Restore remotely
+                  - name: Restore remotely (deprecated)
                     href: api/manageddevice-restorecloudpc.md
                   - name: Set review status
                     href: api/manageddevice-setcloudpcreviewstatus.md
