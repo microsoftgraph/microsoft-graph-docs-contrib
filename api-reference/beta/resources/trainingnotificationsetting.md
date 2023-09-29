@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a training notification setting.
+Represents the settings associated with a training notification.
 
 Inherits from [endUserNotificationSetting](../resources/endusernotificationsetting.md).
 
