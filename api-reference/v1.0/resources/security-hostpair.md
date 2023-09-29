@@ -19,7 +19,7 @@ Host pair relationships shared at an earlier point, or currently share a connect
 
 The **linkKind** property notes the reason to identify the hosts as a parent-child pair. An example of this may be `redirect`.
 
-For more information on host pairs, see the Microsoft Defender Threat Intelligence documentation for [data sets](/defender/threat-intelligence/data-sets#host-pairs).
+For more information about host pairs, see the Microsoft Defender Threat Intelligence documentation for [data sets](/defender/threat-intelligence/data-sets#host-pairs).
 
 
 ## Methods
