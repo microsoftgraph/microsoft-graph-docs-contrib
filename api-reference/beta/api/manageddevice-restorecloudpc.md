@@ -1,5 +1,5 @@
 ---
-title: "managedDevice: restoreCloudPc"
+title: "managedDevice: restoreCloudPc (deprecated)"
 description: "Restore a Cloud PC device to a previous state with an Intune managed device ID."
 author: "rongting"
 ms.localizationpriority: medium
@@ -7,12 +7,14 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# managedDevice: restoreCloudPc
+# managedDevice: restoreCloudPc (deprecated)
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This API is obsolete, it will be removed on September 30, 2034. Please use [restore](../api/cloudpc-restore.md) instead.
+> [!CAUTION]
+> This API is deprecated and will stop returning data on September 30, 2034. Please, use the [restore](../api/cloudpc-restore.md) API instead.
 
 Restore a Cloud PC device to a previous state with an Intune [managed device](../resources/cloudpc.md) ID.
 
