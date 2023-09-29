@@ -19,9 +19,9 @@ Inherits from [baseItem](baseitem.md).
 
 ## Methods
 
-| Method                                                  | Return Type                                                 | Description                                                                                                   |
-|:--------------------------------------------------------|:------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------|
-| [List recycleBinItems](../api/recyclebin-list-items.md) | [recycleBinItem](../resources/recyclebinitem.md) collection | Get a list of [recycleBinItems](../resources/recyclebinitem.md) under the specified site or storageContainer. |
+| Method                                                  | Return Type                                                 | Description                                                                                  |
+|:--------------------------------------------------------|:------------------------------------------------------------|:---------------------------------------------------------------------------------------------|
+| [List recycleBinItems](../api/recyclebin-list-items.md) | [recycleBinItem](../resources/recyclebinitem.md) collection |Get a list of [recycleBinItems](../resources/recyclebinitem.md) objects and their properties. |
 
 ## Properties
 
