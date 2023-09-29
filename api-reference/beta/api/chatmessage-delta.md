@@ -26,7 +26,7 @@ A GET request with the delta function returns either:
 - A `@odata.nextLink` (that contains a URL with a **delta** function call and a `skipToken`), or
 - A `@odata.deltaLink` (that contains a URL with a **delta** function call and `deltaToken`).
 
-State tokens are completely opaque to the client. To proceed with a round of change tracking, simply copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL returned from the last GET request to the next delta function call for that same calendar view. A `@odata.deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `@odata.deltaLink` URL when you begin the to retrieve additional changes (messages changed or posted after acquiring `@odata.deltaLink`).
+State tokens are opaque to the client. To proceed with a round of change tracking, copy and apply the `@odata.nextLink` or `@odata.deltaLink` URL returned from the last GET request to the next delta function call for that same calendar view. A `@odata.deltaLink` returned in a response signifies that the current round of change tracking is complete. You can save and use the `@odata.deltaLink` URL when you begin the to retrieve additional changes (messages changed or posted after acquiring `@odata.deltaLink`).
 
 For more information, see the [delta query](/graph/delta-query-overview) documentation.
 
@@ -69,7 +69,7 @@ The following [OData query parameters](/graph/query-parameters) are supported by
 - `$top`, represents maximum number of messages to fetch in a call. The upper limit is **50**.
 - `$skip`, represents how many messages to skip at the beginning of the list.
 - `$filter` allows returning messages that meet a certain criteria. The only property that supports filtering is `lastModifiedDateTime`, and only the **gt** operator is supported. For example, `../messages/delta?$filter=lastModifiedDateTime gt 2019-02-27T07:13:28.000z` will fetch any **reply chain (each channel post message and associated reply messages)** created or changed after the specified date time.
-- `$expand` allows expanding properties for each channel message. Only **replies** is supported. If a channel messsage contains more than 1000 replies, `replies@odata.nextLink` will be provided for pagination. 
+- `$expand` allows expanding properties for each channel message. Only **replies** is supported. If a channel message contains more than 1000 replies, `replies@odata.nextLink` is provided for pagination. 
 
 > **Note:** For `$expand` query parameter, please refer to [List Channel Messages](channel-list-messages.md#example-3-request-with-top-and-expand-query-options-on-replies).
 
@@ -80,7 +80,7 @@ The following [OData query parameters](/graph/query-parameters) are supported by
 
 ## Request Body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -98,13 +98,13 @@ The following example shows a series of three requests to synchronize the messag
 
 For brevity, the sample responses show only a subset of the properties for an event. In an actual call, most event properties are returned.
 
-See also what you'll do [to retrieve additional changes](#example-2-retrieving-additional-changes).
+See also what you can do [to retrieve additional changes](#example-2-retrieving-additional-changes).
 
 #### Initial request
 
-In this example, the channel messages are being synchronized for the first time, so the initial sync request does not include any state token. This round will return all the events in that calendar view.
+In this example, the channel messages are being synchronized for the first time, so the initial sync request doesn't include any state token, and returns all the events in that calendar view.
 
-The request specifies the optional request header, odata.top, returning 2 events at a time.
+The request specifies the optional request header, odata.top, returning two events at a time.
 
 
 # [HTTP](#tab/http)
@@ -312,7 +312,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 #### Second request response
 
-The second response returns the next 2 messages and a `@odata.nextLink` response header with a `skipToken`, indicates there are more messages in the channel to get.
+The second response returns the next two messages and a `@odata.nextLink` response header with a `skipToken`, indicates there are more messages in the channel to get.
 
 <!-- {
   "blockType": "response",
@@ -575,7 +575,7 @@ Content-type: application/json
 
 ### Example 2: Retrieving additional changes
 
-Using the `@odata.deltaLink` from the last request in the last round, you will be able to get only those messages that have changed (by being added, or updated) in that channel since then. Your request will look like the following, assuming you prefer to keep the same maximum page size in the response:
+Using the `@odata.deltaLink` from the last request in the last round, you'll be able to get only those messages that have changed (by being added, or updated) in that channel since then. Your request looks like the following, assuming you prefer to keep the same maximum page size in the response:
 
 #### Request
 
