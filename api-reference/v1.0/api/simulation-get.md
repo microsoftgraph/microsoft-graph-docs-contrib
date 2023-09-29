@@ -146,8 +146,6 @@ The following example shows how to get included account targets (users) for an a
 #### Request
 
 The following is an example of a request.
-
-# [HTTP]
 <!-- {
   "blockType": "request",
   "name": "get_simulation_includedAccountTarget"
@@ -188,8 +186,6 @@ The following example shows how to get excluded account targets (users) for an a
 #### Request
 
 The following is an example of a request.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_simulation_excludedAccountTarget"

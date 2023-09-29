@@ -69,8 +69,6 @@ The following example shows how to update an attack simulation campaign for a te
 #### Request
 
 The following is an example of a request.
-
-# [HTTP]
 <!-- {
   "blockType": "request",
   "name": "update_simulation",
@@ -128,7 +126,6 @@ The following example shows how to schedule an attack simulation campaign. The s
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_simulation_from_draft_to_scheduled",
@@ -185,8 +182,6 @@ The following example shows how to cancel an attack simulation campaign for a te
 #### Request
 
 The following is an example of a request.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_simulation_cancel",
@@ -226,8 +221,6 @@ The following example shows how to exclude an attack simulation campaign for a t
 #### Request
 
 The following is an example of a request.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_simulation_exclude",
