@@ -147,7 +147,7 @@ The following example shows how to get included account targets (users) for an a
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
+# [HTTP]
 <!-- {
   "blockType": "request",
   "name": "get_simulation_includedAccountTarget"

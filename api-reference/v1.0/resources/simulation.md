@@ -94,6 +94,15 @@ Inherits from [entity](../resources/entity.md).
 |endpoint| Attack on endpoints of a corporate network, such as desktops, laptops, mobile phones, and Internet of Things (IoT) devices. |
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
+### simulationContentSource values
+
+|Member|Description |
+|:---|:---|
+|unknown| The simulation content source is not defined. |
+|global| The simulation content source is global. |
+|tenant| The simulation content source is tenant. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+
 ## Relationships
 None.
 

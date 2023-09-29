@@ -70,7 +70,7 @@ The following example shows how to update an attack simulation campaign for a te
 
 The following is an example of a request.
 
-# [HTTP](#tab/http)
+# [HTTP]
 <!-- {
   "blockType": "request",
   "name": "update_simulation",
