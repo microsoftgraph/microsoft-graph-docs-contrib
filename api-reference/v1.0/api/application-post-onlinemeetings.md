@@ -189,7 +189,7 @@ Content-Type: application/json
     }  
 ```
 
-### Example 2: Create a Microsoft Teams live event with user token
+### Example 2: Create a Microsoft Teams live event with user token (deprecated)
 
 <!-- {
   "blockType": "request",
