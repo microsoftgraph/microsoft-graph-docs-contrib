@@ -69,7 +69,6 @@ The following is an example of a request.
 GET https://graph.microsoft.com/v1.0/security/threatIntelligence/subdomains/bG9naW4uY29udG9zby5jb20kJGNvbnRvc28uY29t
 ```
 
----
 
 ### Response
 
