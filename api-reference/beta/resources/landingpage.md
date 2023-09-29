@@ -42,8 +42,7 @@ Inherits from [entity](../resources/entity.md).
 
 ## Relationships
 
-|Relationship|Type|Description|
-|:---|:---|:---|
+None.
 
 ## JSON representation
 
