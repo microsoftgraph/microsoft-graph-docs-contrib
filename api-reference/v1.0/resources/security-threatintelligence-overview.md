@@ -21,13 +21,12 @@ To call the threat intelligence APIs in Microsoft Graph, your app needs to acqui
 
 ## Common use cases
 
-The following describes some common use cases for the threat intelligence APIs.
-
 The threat intelligence APIs fall into a few main categories:
 
-* Written details about a Threat or Threat Actor, such as **article** or **intelligenceProfile**
-* Properties about a **host**, such as **hostCookie**, **passiveDns**, or **whois**
+* Written details about a threat or threat actor, such as [article](../resources/security-article.md) and [intelligenceProfile](../resources/security-intelligenceprofile.md).
+* Properties about a [host](../resources/security-host.md), such as **hostCookie**, **passiveDns**, or **whois**.
 
+The following table lists some common use cases for the threat intelligence APIs.
 
 | Use cases                               | REST resources                                                      | See also                                                                               |
 | :-------------------------------------- | :------------------------------------------------------------------ | :------------------------------------------------------------------------------------- |
