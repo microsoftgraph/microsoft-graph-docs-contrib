@@ -1,21 +1,19 @@
 ---
-title: "Get payload"
-description: "Get an attack simulation campaign payload for a tenant."
+title: "Get endUserNotification"
+description: "Read the properties and relationships of an endUserNotification object."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
-doc_type: apiPageType
+doc_type: resourcePageType
 ---
 
-# Get payload
+# Get endUserNotification
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get an attack simulation campaign payload for a tenant.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+Read the properties and relationships of an [endUserNotification](../resources/endusernotification.md) object.
 
 ## Permissions
 
@@ -34,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/attackSimulation/payloads/{payloadId}
+GET /security/attackSimulation/endUserNotifications
 ```
 
 ## Optional query parameters
@@ -53,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [payload](../resources/payload.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [endUserNotification](../resources/endusernotification.md) object in the response body.
 
 ## Examples
 
@@ -63,12 +61,11 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_payload",
-  "sampleKeys": ["f1b13829-3829-f1b1-2938-b1f12938b1a"]
+  "name": "get_endusernotification"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/security/attackSimulation/payload/f1b13829-3829-f1b1-2938-b1f12938b1a
+GET https://graph.microsoft.com/beta/security/attackSimulation/endUserNotifications
 ```
 
 ### Response
@@ -76,10 +73,11 @@ GET https://graph.microsoft.com/beta/security/attackSimulation/payload/f1b13829-
 The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.payload"
+  "@odata.type": "microsoft.graph.endUserNotification"
 }
 -->
 ``` http
@@ -87,37 +85,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/payloads/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
-  "id": "2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc",
-  "name": "AttackSimTest Payload",
-  "description": "AttackSim Test Payload",
-  "simulationAttackType": "social",
-  "platform": "email",
-  "isAutomated": null,
-  "status": "draft",
-  "source": "tenant",
-  "language": "en",
-  "predictedCompromiseRate": 20.0,
-  "complexity": "medium",
-  "technique": "credentialHarvesting",
+  "id": "1cdfcb49-1065-46a6-b1c3-672071e20a6b",
+  "displayName": "Microsoft End User Notification Page",
+  "description": "Microsoft End User Notification ",
+  "notificationType": "PositiveReinforcement",
+  "status": "Ready",
+  "source": "Global",
   "createdBy": {
-    "email": "faiza@contoso.com",
-    "id": "121212",
-    "displayName": "Faiza"
+    "email": "alexwaber@contoso.com",
+    "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
+    "displayName": "Alex Waber"
   },
   "createdDateTime": "2022-01-12T03:15:01.5906699Z",
   "lastModifiedBy": {
-    "email": "faiza@contoso.com",
-    "id": "121212",
-    "displayName": "Faiza"
+    "email": "alexwaber@contoso.com",
+    "id": "1rdfcb49-1065-46a6-b1c3-672071e20a6b",
+    "displayName": "Alex Waber"
   },
   "lastModifiedDateTime": "2021-10-07T12:23:18.8157586Z",
-  "theme": "personalizedOffer",
-  "brand": "microsoft",
-  "industry": "IT",
-  "isCurrentEvent": false,
-  "isControversial": false,
-  "detail": null,
-  "payloadTags": []
+  "supportedLocales": [
+    "en-us",
+    "de-de"
+  ]
 }
 ```
