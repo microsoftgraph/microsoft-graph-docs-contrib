@@ -1,9 +1,9 @@
 ---
 title: "Get awsPolicy"
 description: "Read the properties and relationships of an awsPolicy object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: mrudulahg01
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [awsPolicy](../resources/awspolicy.md) object.
+Read the properties and relationships of a single [awsPolicy](../resources/awspolicy.md) object in an AWS authorization system. An AWS policy is an object in AWS that defines the permissions of the associated entity or resource. When a principal, such as a user, makes a request, the policies and their associated permissions determine whether the request is allowed or denied.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+[!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
 
 ## HTTP request
 
@@ -30,11 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /awsPolicy
+GET /external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/policies/{awsPolicyId}
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -50,7 +49,9 @@ If successful, this method returns a `200 OK` response code and an [awsPolicy](.
 
 ## Examples
 
-### Request
+### Example 1: Retrieve the details of an AWS policy through its id.
+
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -58,17 +59,17 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/awsPolicy
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz
 ```
 
 
-### Response
+#### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.awsPolicy"
+  "@odata.type": "Collection(microsoft.graph.awsPolicy)"
 }
 -->
 ``` http
@@ -76,13 +77,15 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.awsPolicy",
-    "id": "e6f05d91-e4f4-d073-4ada-6b80588aef17",
-    "externalId": "String",
-    "displayName": "String",
-    "awsPolicyType": "String"
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/policies",
+  "value": [
+    {
+      "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz",
+      "externalId": "arn:aws:iam::377596131774:policy/AAA-listPutGetAllBuckets",
+      "displayName": "AAA-listPutGetAllBuckets",
+      "awsPolicyType": "custom"
+    }
+  ]
 }
 ```
 

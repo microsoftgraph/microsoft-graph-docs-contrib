@@ -1,9 +1,9 @@
 ---
 title: "List awsPolicies"
-description: "Get a list of the awsPolicy objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "List all awsPolicy objects and their properties for a specific AWS authorization system."
+author: mrudulahg01
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [awsPolicy](../resources/awspolicy.md) objects and their properties.
+List all [awsPolicy](../resources/awspolicy.md) objects and their properties for a specific AWS authorization system. An AWS policy is an object in AWS that defines the permissions of the associated entity or resource. When a principal, such as a user, makes a request, the policies and their associated permissions determine whether the request is allowed or denied.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+[!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
 
 ## HTTP request
 
@@ -30,10 +32,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/policies
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -49,20 +52,24 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
-The following is an example of a request.
+### Example 1: List all policies for an AWS account.
+
+#### Request
+
+The following request lists all the policies for an example AWS account.
+
 <!-- {
   "blockType": "request",
   "name": "list_awspolicy"
 }
 -->
 ``` http
-
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/policies
 ```
 
 
-### Response
-The following is an example of the response
+#### Response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -75,13 +82,151 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/policies",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.awsPolicy",
-      "id": "e6f05d91-e4f4-d073-4ada-6b80588aef17",
-      "externalId": "String",
-      "displayName": "String",
-      "awsPolicyType": "String"
+      "id": "YXJuOmF3czppYW06OmF3czpwb2xpY3kvQWRtaW5pc3RyYXRvckFjY2Vzcw==",
+      "externalId": "arn:aws:iam::aws:policy/AdministratorAccess",
+      "displayName": "AdministratorAccess",
+      "awsPolicyType": "system"
+    },
+    {
+      "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz",
+      "externalId": "arn:aws:iam::377596131774:policy/AAA-listPutGetAllBuckets",
+      "displayName": "AAA-listPutGetAllBuckets",
+      "awsPolicyType": "custom"
+    }
+  ]
+}
+```
+
+### Example 2: List all policies in an AWS authorization system with a specific name.
+
+#### Request
+
+The following request lists all policies in an AWS authorization system with the name `AdministratorAccess`.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_awspolicy"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/policies?$filter=displayName eq 'AdministratorAccess'
+```
+
+
+#### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.awsPolicy)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/policies",
+  "value": [
+    {
+      "id": "YXJuOmF3czppYW06OmF3czpwb2xpY3kvQWRtaW5pc3RyYXRvckFjY2Vzcw==",
+      "externalId": "arn:aws:iam::aws:policy/AdministratorAccess",
+      "displayName": "AdministratorAccess",
+      "awsPolicyType": "system"
+    }
+  ]
+}
+```
+
+### Example 3: List all policies in an AWS authorization system with names containing a specific string.
+
+#### Request
+
+The following request lists all policies in an AWS authorization system where the name contains `Buckets`.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_awspolicy"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/policies?$filter=contains(displayName, 'Buckets')
+```
+
+
+#### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.awsPolicy)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/policies",
+  "value": [
+    {
+      "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz",
+      "externalId": "arn:aws:iam::377596131774:policy/AAA-listPutGetAllBuckets",
+      "displayName": "AAA-listPutGetAllBuckets",
+      "awsPolicyType": "custom"
+    }
+  ]
+}
+```
+
+### Example 4: List all custom policies in an AWS authorization system.
+
+#### Request
+
+This example request returns all custom policies in an AWS authorization system.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_awspolicy"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/roles?$filter=type eq 'custom'
+```
+
+
+#### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.awsPolicy)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/policies",
+  "value": [
+    {
+      "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpwb2xpY3kvQUFBLWxpc3RQdXRHZXRBbGxCdWNrZXRz",
+      "externalId": "arn:aws:iam::377596131774:policy/AAA-listPutGetAllBuckets",
+      "displayName": "AAA-listPutGetAllBuckets",
+      "awsPolicyType": "custom"
+    },
+    {
+      "id": "YXJuOmF3czppb2xpY3kvQzU5NjEzMTc3NDpwb2xpY3kvQUFBLWxp",
+      "externalId": "arn:aws:iam::377596131774:policy/BBB-GetAllBuckets",
+      "displayName": "BBB-GetAllBuckets",
+      "awsPolicyType": "custom"
     }
   ]
 }

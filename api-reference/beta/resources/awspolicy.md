@@ -1,9 +1,9 @@
 ---
 title: "awsPolicy resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: Represents an AWS policy in an AWS authorization system.
+author: mrudulahg01
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,27 +13,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an AWS policy in an AWS authorization system. An AWS policy is an object in AWS that defines the permissions of the associated entity or resource. When a principal, such as a user, makes a request, the policies and their associated permissions determine whether the request is allowed or denied.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List awsPolicies](../api/awsauthorizationsystem-list-policies.md)|[awsPolicy](../resources/awspolicy.md) collection|Get a list of the [awsPolicy](../resources/awspolicy.md) objects and their properties.|
-|[Create awsPolicy](../api/awsauthorizationsystem-post-policies.md)|[awsPolicy](../resources/awspolicy.md)|Create a new [awsPolicy](../resources/awspolicy.md) object.|
-|[Get awsPolicy](../api/awspolicy-get.md)|[awsPolicy](../resources/awspolicy.md)|Read the properties and relationships of an [awsPolicy](../resources/awspolicy.md) object.|
-|[Update awsPolicy](../api/awspolicy-update.md)|[awsPolicy](../resources/awspolicy.md)|Update the properties of an [awsPolicy](../resources/awspolicy.md) object.|
-|[Delete awsPolicy](../api/awsauthorizationsystem-delete-policies.md)|None|Delete an [awsPolicy](../resources/awspolicy.md) object.|
+|[List awsPolicies](../api/awsauthorizationsystem-list-policies.md)|[awsPolicy](../resources/awspolicy.md) collection|List all [awsPolicy](../resources/awspolicy.md) objects and their properties for a specific AWS authorization system.|
+|[Get awsPolicy](../api/awspolicy-get.md)|[awsPolicy](../resources/awspolicy.md)|Read the properties and relationships of a single [awsPolicy](../resources/awspolicy.md) object in an AWS authorization system.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|awsPolicyType|awsPolicyType|**TODO: Add Description**.The possible values are: `system`, `custom`, `unknownFutureValue`.|
-|displayName|String|**TODO: Add Description**|
-|externalId|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|awsPolicyType|awsPolicyType|The type of an AWS policy. The possible values are: `system`, `custom`, `unknownFutureValue`. Read-only.|
+|displayName|String|The display name of an AWS policy. Read-only.|
+|externalId|String|The identifier of an AWS policy as defined by AWS. Read-only.|
+|id|String|The unique encoded identifier for an AWS policy. Read-only. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.
