@@ -134,7 +134,7 @@ GET https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/
 
 #### Response
 
-Here is an example of the response.
+Here is an example of the response. While the "lastUpdatedDateTime" field is available in the initial response from the "https://graph.microsoft.com/v1.0/chats" endpoint, it may not reflect the most current update timestamp accurately. For the most accurate and up-to-date information on the thread's last updated date and time, always use the "$expand=lastMessagePreview" query parameter to fetch the latest "lastUpdatedDateTime" from the "lastMessagePreview" object within the response. This ensures you have the most reliable information when working with chat threads in the Microsoft Graph API. 
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
