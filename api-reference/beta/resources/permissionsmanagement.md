@@ -18,12 +18,7 @@ Namespace: microsoft.graph
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get permissionsManagement](../api/permissionsmanagement-get.md)|[permissionsManagement](../resources/permissionsmanagement.md)|Read the properties and relationships of a [permissionsManagement](../resources/permissionsmanagement.md) object.|
-|[Update permissionsManagement](../api/permissionsmanagement-update.md)|[permissionsManagement](../resources/permissionsmanagement.md)|Update the properties of a [permissionsManagement](../resources/permissionsmanagement.md) object.|
-|[List permissionsRequestChanges](../api/permissionsmanagement-list-permissionsrequestchanges.md)|[permissionsRequestChange](../resources/permissionsrequestchange.md) collection|Get the permissionsRequestChange resources from the permissionsRequestChanges navigation property.|
-|[Create permissionsRequestChange](../api/permissionsmanagement-post-permissionsrequestchanges.md)|[permissionsRequestChange](../resources/permissionsrequestchange.md)|Create a new permissionsRequestChange object.|
-|[List scheduledPermissionsRequests](../api/permissionsmanagement-list-scheduledpermissionsrequests.md)|[scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md) collection|Get the scheduledPermissionsRequest resources from the scheduledPermissionsRequests navigation property.|
-|[Create scheduledPermissionsRequest](../api/permissionsmanagement-post-scheduledpermissionsrequests.md)|[scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md)|Create a new scheduledPermissionsRequest object.|
+None.
 
 ## Properties
 |Property|Type|Description|

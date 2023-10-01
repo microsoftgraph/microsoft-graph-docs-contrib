@@ -22,10 +22,7 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List permissionsRequestChanges](../api/permissionsmanagement-list-permissionsrequestchanges.md)|[permissionsRequestChange](../resources/permissionsrequestchange.md) collection|Get a list of the [permissionsRequestChange](../resources/permissionsrequestchange.md) objects and their properties.|
-|[Create permissionsRequestChange](../api/permissionsmanagement-post-permissionsrequestchanges.md)|[permissionsRequestChange](../resources/permissionsrequestchange.md)|Create a new [permissionsRequestChange](../resources/permissionsrequestchange.md) object.|
 |[Get permissionsRequestChange](../api/permissionsrequestchange-get.md)|[permissionsRequestChange](../resources/permissionsrequestchange.md)|Read the properties and relationships of a [permissionsRequestChange](../resources/permissionsrequestchange.md) object.|
-|[Update permissionsRequestChange](../api/permissionsrequestchange-update.md)|[permissionsRequestChange](../resources/permissionsrequestchange.md)|Update the properties of a [permissionsRequestChange](../resources/permissionsrequestchange.md) object.|
-|[Delete permissionsRequestChange](../api/permissionsmanagement-delete-permissionsrequestchanges.md)|None|Delete a [permissionsRequestChange](../resources/permissionsrequestchange.md) object.|
 
 ## Properties
 |Property|Type|Description|

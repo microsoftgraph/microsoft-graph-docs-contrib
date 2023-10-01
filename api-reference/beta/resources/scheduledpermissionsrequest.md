@@ -21,11 +21,7 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List scheduledPermissionsRequests](../api/permissionsmanagement-list-scheduledpermissionsrequests.md)|[scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md) collection|Get a list of the [scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md) objects and their properties.|
 |[Create scheduledPermissionsRequest](../api/permissionsmanagement-post-scheduledpermissionsrequests.md)|[scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md)|Create a new [scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md) object.|
-|[Get scheduledPermissionsRequest](../api/scheduledpermissionsrequest-get.md)|[scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md)|Read the properties and relationships of a [scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md) object.|
-|[Update scheduledPermissionsRequest](../api/scheduledpermissionsrequest-update.md)|[scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md)|Update the properties of a [scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md) object.|
-|[Delete scheduledPermissionsRequest](../api/permissionsmanagement-delete-scheduledpermissionsrequests.md)|None|Delete a [scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md) object.|
 |[cancelAll](../api/scheduledpermissionsrequest-cancelall.md)|None|**TODO: Add Description**|
 
 ## Properties
