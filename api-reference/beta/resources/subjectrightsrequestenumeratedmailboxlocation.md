@@ -21,7 +21,7 @@ Inherits from [subjectRightsRequestMailboxLocation](../resources/subjectrightsre
 |Property|Type|Description|
 |:---|:---|:---|
 |userPrincipalNames|String collection|Collection of mailboxes that should be included in the search. Includes the user principal name (UPN) of each mailbox, for example, `Monica.Thompson@contoso.com`.|
-|upns (deprecated) |String collection|Collection of mailboxes that should be included in the search. Includes the UPN of each mailbox, for example, `Monica.Thompson@contoso.com`. Going forward, use the **userPrincipalNames** property. If you specify either **upns** or **userPrincipalNames** the same values are populated automatically to the other property.|
+|upns (deprecated) |String collection|Collection of mailboxes that should be included in the search. Includes the UPN of each mailbox, for example, `Monica.Thompson@contoso.com`. Going forward, use the **userPrincipalNames** property. If you specify either **upns** or **userPrincipalNames**, the same values are populated automatically to the other property.|
 
 ## Relationships
 None.
