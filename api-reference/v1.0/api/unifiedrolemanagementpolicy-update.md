@@ -383,7 +383,7 @@ Content-Type: application/json
     "scopeType": "Group",
     "lastModifiedDateTime": "2023-10-01T23:29:43.687Z",
     "lastModifiedBy": {
-        "displayName": Test User 1,
+        "displayName": "Test User 1",
         "id": null
     }
 }
