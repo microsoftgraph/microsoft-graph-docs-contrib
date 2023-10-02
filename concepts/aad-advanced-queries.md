@@ -7,18 +7,18 @@ ms.reviewer: Luca.Spolidoro
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 04/14/2023
+ms.date: 09/28/2023
 ---
 
 # Advanced query capabilities on Azure AD objects
 
 As Azure Active Directory (Azure AD) continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Azure Active Directory (Azure AD) objects, also called directory objects, and their properties. For example, the addition of **not** (`not`), **not equals** (`ne`), and **ends with** (`endsWith`) operators on the `$filter` query parameter.
 
-The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, these properties are now indexed in a separate store. This separate indexing allows Azure AD to increase support and improve the performance of the query requests. However, these advanced query capabilities are not available by default but, the requestor must also set the **ConsistencyLevel** header to `eventual` *and*, with the exception of `$search`, use the `$count` query parameter. The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
+The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, these properties are now indexed in a separate store. This separate indexing allows Azure AD to increase support and improve the performance of the query requests. However, these advanced query capabilities aren't available by default but, the requestor must also set the **ConsistencyLevel** header to `eventual` *and*, except for `$search`, use the `$count` query parameter. The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
 
 For example, to retrieve only inactive user accounts, you can run either of these queries that use the `$filter` query parameter.
 
-**Option 1:** Use the `$filter` query parameter with the `eq` operator. This request will work by default, that is, the request does not require the advanced query parameters.
+**Option 1:** Use the `$filter` query parameter with the `eq` operator. This request works by default, that is, the request doesn't require the advanced query parameters.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
 
 ---
 
-**Option 2:** Use the `$filter` query parameter with the `ne` operator. This request is not supported by default because the `ne` operator is only supported in advanced queries. Therefore, you must add the **ConsistencyLevel** header set to `eventual` *and* use the `$count=true` query string.
+**Option 2:** Use the `$filter` query parameter with the `ne` operator. This request isn't supported by default because the `ne` operator is only supported in advanced queries. Therefore, you must add the **ConsistencyLevel** header set to `eventual` *and* use the `$count=true` query string.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -160,10 +160,10 @@ Properties of directory objects behave differently in their support for query pa
 + The `endsWith` operator is supported only with advanced query parameters by **mail**, **otherMails**, **userPrincipalName**, and **proxyAddresses** properties.
 + Getting empty collections (`/$count eq 0`, `/$count ne 0`) and collections with less than one object (`/$count eq 1`, `/$count ne 1`) is supported only with advanced query parameters.
 + The `not` and `ne` negation operators are supported only with advanced query parameters.
-  + All properties that support the `eq` operator also support the `ne` or `not` operators.
+  + All properties that support the `eq` operator also supports the `ne` or `not` operators.
   + For queries that use the `any` lambda operator, use the `not` operator. See [Filter using lambda operators](/graph/filter-query-parameter#filter-using-lambda-operators).
 
-The following tables summarize support for `$filter` operators by properties of directory objects and indicates where querying is supported through advanced query capabilities.
+The following tables summarize support for `$filter` operators by properties of directory objects, and indicates where querying is supported through advanced query capabilities.
 
 **Legend**
 
@@ -171,12 +171,12 @@ The following tables summarize support for `$filter` operators by properties of 
 + ![Requires advanced query parameters.](../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg) The `$filter` operator **requires** *advanced query parameters*, which are:
   + `ConsistencyLevel=eventual` header
   + `$count=true` query string
-+ ![Not supported.](../concepts/images/yesandnosymbols/no.svg) The `$filter` operator is not supported on that property. [Send us feedback](https://aka.ms/MsGraphAADSurveyDocs) to request that this property support `$filter` for your scenarios.
-+ Blank cells indicate that the query is not valid for that property.
++ ![Not supported.](../concepts/images/yesandnosymbols/no.svg) The `$filter` operator isn't supported on that property. [Send us feedback](https://aka.ms/MsGraphAADSurveyDocs) to request that this property support `$filter` for your scenarios.
++ Blank cells indicate that the query isn't valid for that property.
 + The **null value** column indicates that the property is nullable and filterable using `null`.
-+ Properties that are not listed here do not support `$filter` at all.
++ Properties that aren't listed here don't support `$filter` at all.
 
-[!INCLUDE [filter-directory-objects](../includes/filter-directory-objects.md)]
+[!INCLUDE [filter-directory-objects](includes/filter-directory-objects.md)]
 
 ## Support for sorting by properties of Azure AD (directory) objects
 
@@ -216,7 +216,7 @@ The following table summarizes support for `$orderby` by properties of directory
 
 ## Error handling for advanced queries on directory objects
 
-Counting directory objects is only supported using the advanced queries parameters. If the `ConsistencyLevel=eventual` header is not specified, the request returns an error when the `$count` URL segment is used or silently ignores the `$count` query parameter (`?$count=true`) if it's used.
+Counting directory objects is only supported using the advanced queries parameters. If the `ConsistencyLevel=eventual` header isn't specified, the request returns an error when the `$count` URL segment is used or silently ignores the `$count` query parameter (`?$count=true`) if it's used.
 
 
 # [HTTP](#tab/http)
@@ -281,7 +281,7 @@ GET https://graph.microsoft.com/v1.0/users/$count
 }
 ```
 
-For directory objects, `$search` works only in advanced queries. If the **ConsistencyLevel** header is not specified, the request returns an error.
+For directory objects, `$search` works only in advanced queries. If the **ConsistencyLevel** header isn't specified, the request returns an error.
 
 
 # [HTTP](#tab/http)
@@ -401,7 +401,7 @@ GET https://graph.microsoft.com/beta/users?$filter=endsWith(userPrincipalName,'%
 }
 ```
 
-If a property has not been indexed to support a query parameter, even if the advanced query parameters are specified, the request returns an error.
+If a property hasn't been indexed to support a query parameter, even if the advanced query parameters are specified, the request returns an error.
 
 
 # [HTTP](#tab/http)
@@ -462,9 +462,7 @@ ConsistencyLevel: eventual
 }
 ```
 
-However, it is important to note that query parameters specified in a request might fail silently.
-This can be true for unsupported query parameters as well as for unsupported combinations of query parameters.
-In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect. For example, in the following example, the `@odata.count` parameter is missing even if the query is successful.
+However, a request that includes query parameters might fail silently. For example, for unsupported query parameters and for unsupported combinations of query parameters. In these cases, examine the data returned by the request to determine whether the query parameters you specified had the desired effect. For example, in the following example, the `@odata.count` parameter is missing even if the query is successful.
 
 
 # [HTTP](#tab/http)
@@ -521,7 +519,7 @@ Content-type: application/json
       "displayName":"Oscar Ward",
       "mail":"oscarward@contoso.com",
       "userPrincipalName":"oscarward@contoso.com"
-    },
+    }
   ]
 }
 ```
@@ -532,8 +530,6 @@ Content-type: application/json
 + [Query parameter limitations](https://developer.microsoft.com/en-us/graph/known-issues/?search=13635)
 + [Use the $search query parameter to match a search criterion](/graph/search-query-parameter#using-search-on-directory-object-collections)
 + [Explore advanced query capabilities for Azure AD objects with the .NET SDK](https://github.com/microsoftgraph/dotnet-aad-query-sample/)
-
-
 
 [RDS]: ../concepts/images/yesandnosymbols/greencheck.svg
 [AQP]: ../concepts/images/yesandnosymbols/whitecheck-in-greencircle.svg
