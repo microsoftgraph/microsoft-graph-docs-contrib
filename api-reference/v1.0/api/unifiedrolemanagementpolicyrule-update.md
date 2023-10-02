@@ -160,11 +160,30 @@ Content-Type: application/json
 #### Response
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRule"
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/roleManagementPolicies('DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9')/rules/$entity",
+    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
+    "id": "Expiration_EndUser_Assignment",
+    "isExpirationRequired": true,
+    "maximumDuration": "PT1H45M",
+    "target": {
+        "caller": "EndUser",
+        "operations": [
+            "All"
+        ],
+        "level": "Assignment",
+        "inheritableSettings": [],
+        "enforcedSettings": []
+    }
+}
 ```
 
 ## See also
@@ -211,9 +230,28 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRule"
 }
 -->
-```http
-HTTP/1.1 204 No Content
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/roleManagementPolicies('Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369')/rules/$entity",
+    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
+    "id": "Expiration_EndUser_Assignment",
+    "isExpirationRequired": true,
+    "maximumDuration": "PT1H45M",
+    "target": {
+        "caller": "EndUser",
+        "operations": [
+            "All"
+        ],
+        "level": "Assignment",
+        "inheritableSettings": [],
+        "enforcedSettings": []
+    }
+}
 ```
