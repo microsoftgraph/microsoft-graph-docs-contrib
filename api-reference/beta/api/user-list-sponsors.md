@@ -57,11 +57,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example: Get sponsors
+### Request
 
-The following example shows a request to get the sponsors.
-
-#### Request
+Here's an example of a request that shows how to get the sponsors.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -107,9 +105,9 @@ GET https://graph.microsoft.com/beta/users/025e5e3e-e5b7-4eb4-ba1f-4e5b0579f1a2/
 
 ---
 
-#### Response
+### Response
 
-The following is an example of the response.
+Here's an example of the response.
 >**Note**: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
