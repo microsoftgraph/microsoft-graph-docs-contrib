@@ -48,7 +48,7 @@ Don't supply a request body for this method.
 
 ## Response
 
-If successful, this function will redirect to the Microsoft Azure blob storage link with the SAS token and return a `200` response code.
+If successful, this function will redirect to the Microsoft Azure blob storage link with the SAS token and return a `200 OK` response code.
 
 ## Examples
 
@@ -61,7 +61,7 @@ If successful, this function will redirect to the Microsoft Azure blob storage l
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
+GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/4ef5e3e6-545b-4b5f-a8b4-ff4f9980d7a9/getFinalAttachment
 ```
 
 # [C#](#tab/csharp)
@@ -102,6 +102,6 @@ GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRight
 }
 -->
 ``` http
-HTTP/1.1 200 
+HTTP/1.1 200 OK
 ```
 
