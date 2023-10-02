@@ -42,7 +42,7 @@ PATCH /workplace/sensorDevices/{id}
 ## Request body
 <!-- [!INCLUDE [table-intro](../../includes/update-property-table-intro.md)] -->
 
-In the request body, provide the entire JSON for the [workplaceSensorDevice](../resources/workplacesensordevice.md) object with updated fields. Partial updates are not supported. If any optional property is excluded, it will be set to null. To add new sensors, append a new sensor object to the existing sensor collection. Conversely, if a sensor object is removed from the collection, it will be deleted from the device.
+In the request body, provide the entire JSON for the [workplaceSensorDevice](../resources/workplacesensordevice.md) object with updated fields. Partial updates aren't supported. If any optional property is excluded, it's set to null. To add new sensors, append a new sensor object to the existing sensor collection. Conversely, if a sensor object is removed from the collection, it's deleted from the device.
 
 The following table specifies the properties that can be updated.
 

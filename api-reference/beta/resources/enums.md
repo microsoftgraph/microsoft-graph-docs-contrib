@@ -4112,8 +4112,8 @@ Possible values for user account types (group membership), per Windows definitio
 
 | Member | Value| Description |
 |:---------------|:--------|:----------|
-|occupancy|0|The sensor detects if the place is occupied or not. Use this for motion sensors or other binary sensors that measure occupancy of a place.|
-|peopleCount|1|The sensor counts the number of people in the place. Use this for sensors that report people count as a number.|
-|inferredOccupancy|2|The sensor estimates the occupancy status of the place based on other clues, such as the presence of a laptop or a backpack. Use this for sensors that do not directly detect motion or people count.|
+|occupancy|0|The sensor detects if the place is occupied or not. Use it for motion sensors or other binary sensors that measure occupancy of a place.|
+|peopleCount|1|The sensor counts the number of people in the place. Use it for sensors that report people count as a number.|
+|inferredOccupancy|2|The sensor estimates the occupancy status of the place based on other clues, such as the presence of a laptop or a backpack. Use it for sensors that don't directly detect motion or people count.|
 |unknownFutureValue|3|Evolvable enumeration sentinel value. Do not use.|
-|heartbeat|4|The sensor reports the heartbeat of the device. This indicates if the device is online or not. Use this for sensors that monitor the device’s status.|
+|heartbeat|4|The sensor reports the heartbeat of the device. It indicates if the device is online or not. Use it for sensors that monitor the device’s status.|

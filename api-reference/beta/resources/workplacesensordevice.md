@@ -1,6 +1,6 @@
 ---
 title: "workplaceSensorDevice resource type"
-description: "Represents a hardware capable of hosting multiple sensors that collect and report data on physical or environmental conditions, including occupancy, headcount, inferred occupancy, temperature, and more."
+description: "Represents hardware capable of hosting multiple sensors that collect and report data on physical or environmental conditions, including occupancy, headcount, inferred occupancy, temperature, and more."
 author: "ms-amakumar"
 ms.localizationpriority: medium
 ms.prod: "outlook"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a hardware capable of hosting multiple sensors that collect and report data on physical or environmental conditions, including occupancy, headcount, inferred occupancy, temperature, and more.
+Represents hardware capable of hosting multiple sensors that collect and report data on physical or environmental conditions, including occupancy, headcount, inferred occupancy, temperature, and more.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -33,7 +33,7 @@ Inherits from [entity](../resources/entity.md).
 |description|String| The description of the device. |
 |deviceId|String| The user-defined unique identifier of the device provided at the time of creation. |
 |displayName|String| The display name of the device. |
-|id|String| The unique identifier of the device. It is system generated and the user cannot change it. Inherited from [entity](../resources/entity.md).|
+|id|String| The unique identifier of the device. It's system generated and the user can't change it. Inherited from [entity](../resources/entity.md).|
 |ipV4Address|String| The IPv4 Address of the device. |
 |ipV6Address|String| The IPv6 Address of the device. |
 |macAddress|String| The MAC address of the device. |
