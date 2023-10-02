@@ -25,7 +25,7 @@ The threat intelligence API allows you to operationalize intelligence found with
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List articles](../api/security-article-list.md)|[microsoft.graph.security.article](../resources/security-article.md) collection|Get a list of **article** objects, including their properties and relationships.|
+|[List articles](../api/security-threatintelligence-list-articles.md)|[microsoft.graph.security.article](../resources/security-article.md) collection|Get a list of **article** objects, including their properties and relationships.|
 |[Get article](../api/security-article-get.md)|[microsoft.graph.security.article](../resources/security-article.md) |Read the properties and relationships of an **article** object.|
 |[Get articleIndicator](../api/security-articleindicator-get.md)|[microsoft.graph.security.articleIndicator](../resources/security-articleindicator.md) |Get the **articleIndicator** resources from the **articleIndicators** navigation property.|
 |[Get host](../api/security-host-get.md)|[microsoft.graph.security.host](../resources/security-host.md) |Get a list of **host** resources.|
