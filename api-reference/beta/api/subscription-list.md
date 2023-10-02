@@ -77,7 +77,7 @@ Response results are based on the context of the calling app. The following sect
 
 ### Basic scenarios
 
-Most commonly, an application wants to retrieve subscriptions that it originally created for the currently signed-in user, or for all users in the directory (work/school accounts). These scenarios do not require any special permissions beyond the ones the app used originally to create its subscriptions.
+Most commonly, an application wants to retrieve subscriptions that it originally created for the currently signed-in user, or for all users in the directory (work/school accounts). These scenarios don't require any special permissions beyond the ones the app used originally to create its subscriptions.
 
 | Context of the calling app | Response contains |
 |:-----|:---------------- |
@@ -104,7 +104,7 @@ GET /subscriptions
 
 ## Optional query parameters
 
-This method does not support the [OData query parameters](/graph/query-parameters) to help customize the response.
+This method doesn't support the [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -114,7 +114,7 @@ This method does not support the [OData query parameters](/graph/query-parameter
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -171,7 +171,7 @@ GET https://graph.microsoft.com/beta/subscriptions
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 >**Note:** The response shown here might be shortened for readability.
 

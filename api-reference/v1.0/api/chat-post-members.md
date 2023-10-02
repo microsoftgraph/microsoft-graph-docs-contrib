@@ -52,7 +52,7 @@ If successful, this method returns a `201 Created` response code and a Location 
 
 #### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 
 
@@ -110,7 +110,7 @@ content-type: application/json
 
 #### Response
 
-Here is an example of the response.
+Here's an example of the response.
 
 <!--
 {
@@ -128,7 +128,7 @@ Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzM
 
 #### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 
 
@@ -185,7 +185,7 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response.
+Here's an example of the response.
 
 <!--
 {
@@ -203,7 +203,7 @@ Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzM
 
 #### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 
 
@@ -261,7 +261,7 @@ content-type: application/json
 
 #### Response
 
-Here is an example of the response.
+Here's an example of the response.
 
 <!--
 {
@@ -279,7 +279,7 @@ Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzM
 
 #### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -336,7 +336,7 @@ content-type: application/json
 
 #### Response
 
-Here is an example of the response.
+Here's an example of the response.
 
 <!--
 {
@@ -350,11 +350,11 @@ HTTP/1.1 201 Created
 Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
-### Example 5: Add an in-tenant guest user to a chat, sharing no chat history
+### Example 5: Add an in-tenant guest to a chat, sharing no chat history
 
 #### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -411,7 +411,7 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response.
+Here's an example of the response.
 
 <!--
 {
@@ -425,11 +425,11 @@ HTTP/1.1 201 Created
 Location: /chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiZDlkYTQ2MzIzYWY0MjUzOTZkMGZhNjcyMDAyODk4NEB0aHJlYWQudjIjIzQ4YmY5ZDUyLWRjYTctNGE1Zi04Mzk4LTM3Yjk1Y2M3YmQ4Mw==
 ```
 
-### Example 6: Add a out-of-tenant external user to a chat, sharing no chat history
+### Example 6: Add an out-of-tenant external user to a chat, sharing no chat history
 
 #### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 
 
@@ -489,7 +489,7 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response.
+Here's an example of the response.
 
 <!--
 {

@@ -60,7 +60,7 @@ The preceding limits apply to the following resources:
 
 | Resource      | Limits per app    |
 | -------------- | ------------ |
-| [Calls](/graph/api/resources/call) | 10,000 calls/month and 100 concurrent calls   |
+| [Calls](/graph/api/resources/call) | 15,000 requests in a 60 second period, per application per tenant |
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
 | [Presence](/graph/api/resources/presence)   | 1500 requests in a 30 second period, per application per tenant |
 | [Virtual event](/graph/api/resources/virtualevent) | 10,000 requests/app each month |
@@ -121,8 +121,8 @@ Throttling is based on a token bucket algorithm, which works by adding individua
 
 | Limit type | Resource unit quota | Write quota |
 | ---------- | ----------- | -------------- |
-| application+tenant pair | S: 3,500 requests per 10 seconds <br/> M: 5,000 requests per 10 seconds <br/> L: 8,000 requests per 10 seconds | 3,000 requests per 2 minutes and 30 seconds |
-| application | 150,000 requests per 20 seconds  | 70,000 requests per 5 minutes|
+| application+tenant pair | S: 3,500 ResourceUnits per 10 seconds <br/> M: 5,000 ResourceUnits per 10 seconds <br/> L: 8,000 ResourceUnits per 10 seconds | 3,000 requests per 2 minutes and 30 seconds |
+| application | 150,000 ResourceUnits per 20 seconds  | 35,000 requests per 5 minutes|
 | tenant | Not Applicable | 18,000 requests per 5 minutes |
 
 > [!NOTE]

@@ -17,6 +17,12 @@ Namespace: microsoft.graph.security
 
 Represents a pair of parent-child hosts in which the child host is able to be reached via the parent host. For example, if contoso.com redirects to microsoft.com, then contoso.com would be the parent host and microsoft.com the child host.
 
+Host pair relationships shared at an earlier point, or currently share a connection observed from a Microsoft crawl. A parent host leads to the child host perhaps through a simple top-level redirect (HTTP 302), or something more complex like an iframe or script source reference. In other instances, a web crawl may reveal odd behaviors such as host pair relationships between IP addresses and domains/hosts that go against DNS standards.
+
+The **linkKind** property notes the reason to identify the hosts as a parent-child pair. An example of this may be `redirect`.
+
+For more information about host pairs, see the Microsoft Defender Threat Intelligence documentation for [data sets](/defender/threat-intelligence/data-sets#host-pairs).
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -32,7 +38,7 @@ Represents a pair of parent-child hosts in which the child host is able to be re
 |firstSeenDateTime|DateTimeOffset|The first date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.|
 |id|String|A system-generated ID for the hostPair.|
 |lastSeenDateTime|DateTimeOffset|The last date and time when Microsoft Defender Threat Intelligence observed the hostPair. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.|
-|linkKind|String|The reason the two hosts are identified as hostPairs.|
+|linkKind|String|The reason that two hosts are identified as hostPair.|
 
 ## Relationships
 |Relationship|Type|Description|
