@@ -37,7 +37,7 @@ The threat intelligence API allows you to operationalize intelligence found with
 |[List parentHostPairs](../api/security-host-list-parenthostpairs.md)|[microsoft.graph.security.host](../resources/security-hostpair.md) |Get a list of **hostPair** resources.|
 |[Get hostTracker](../api/security-hosttracker-get.md)|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) |Get a list of **hostTracker** resources.|
 |[Get intelProfileIndicators](../api/security-intelligenceprofileindicator-get.md)|[microsoft.graph.security.intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md) collection|Get a list of **intelligenceProfileIndicator** resources.|
-|[List intelProfiles](../api/security-intelligenceprofile-list.md)|[microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) collection|Get a list of **intelligenceProfile** resources.|
+|[List intelProfiles](../api/security-threatintelligence-list-intelprofiles.md)|[microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) collection|Get a list of **intelligenceProfile** resources.|
 |[Get hostTracker](../api/security-hosttracker-get.md)|[microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) |Get a list of **hostTracker** resources.|
 |[Get passiveDnsRecord](../api/security-passivednsrecord-get.md)|[microsoft.graph.security.passiveDnsRecord](../resources/security-passivednsrecord.md) |Get the properties and relationships of a **hostTracker** object.|
 |[Get subdomain](../api/security-subdomain-get.md)|[microsoft.graph.security.subdomain](../resources/security-subdomain.md) |Get the properties and relationships of a **subdomain** object.|
