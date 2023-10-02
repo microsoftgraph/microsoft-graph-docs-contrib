@@ -81,8 +81,6 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.subjectRightsRequest",
   "assignedTo": "String",
-  "approvers":[{"@odata.type": "microsoft.graph.user"}],
-  "collaborators":[{"@odata.type": "microsoft.graph.user"}],
   "closedDateTime": "String (timestamp)",
   "contentQuery": "String",
   "createdBy": {"@odata.type": "microsoft.graph.identitySet"},
@@ -92,6 +90,7 @@ The following is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "externalId": "String",
+  "history": [{"@odata.type": "microsoft.graph.subjectRightsRequestHistory"}],
   "id": "String (identifier)",
   "includeAllVersions": "Boolean",
   "includeAuthoredContent": "Boolean",
@@ -105,7 +104,6 @@ The following is a JSON representation of the resource.
   "siteLocations":["@odata.type":"microsoft.graph.subjectRightsRequestSiteLocation"],
   "stages": [{"@odata.type": "microsoft.graph.subjectRightsRequestStageDetail"}],
   "status": "String",
-  "team": {"@odata.type": "microsoft.graph.team"},
   "type": "String"
 }
 ```
