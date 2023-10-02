@@ -1,17 +1,17 @@
 --- 
-title: "communicationsEncryptedIdentity resource type"
-description: "Represents the identity of a user whose underlying identity isn't available to the application due to privacy restrictions."
+title: "communicationsGuestIdentity resource type"
+description: "Represents the identity of a participant who joined the communication without authentication."
 author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
-# communicationsEncryptedIdentity resource type
+# communicationsGuestIdentity resource type
 
 Namespace: microsoft.graph
 
-Represents the identity of a user whose underlying identity isn't available to the application due to privacy restrictions. For example, in a group call, participants other than the one who invited a Skype Consumer user won't have access to the identity of that user in the call roster.
+Represents the identity of a participant who joined the communication without authentication.
 
 Inherits from [identity](identity.md).
 
@@ -19,8 +19,8 @@ Inherits from [identity](identity.md).
 
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id | String | Inherited from **identity**. The user's encrypted identifier. |
-| displayName | String | Inherited from **identity**. The display name associated with the user. |
+| id | String | Inherited from **identity**. A unique guid identifying the guest user. |
+| displayName | String | Inherited from **identity**. The display name associated with the guest user. |
 
 ## JSON representation
 
@@ -28,7 +28,7 @@ Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.communicationsEncryptedIdentity",
+  "@odata.type": "microsoft.graph.communicationsGuestIdentity",
   "optionalProperties": [
     "displayName"
   ],

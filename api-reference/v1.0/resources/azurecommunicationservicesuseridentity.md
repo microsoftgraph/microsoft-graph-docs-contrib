@@ -1,17 +1,17 @@
 --- 
-title: "communicationsEncryptedIdentity resource type"
-description: "Represents the identity of a user whose underlying identity isn't available to the application due to privacy restrictions."
+title: "azureCommunicationServicesUserIdentity resource type"
+description: "Represents the identity of a participant who joined the communication via Azure Communication Services."
 author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
 ---
 
-# communicationsEncryptedIdentity resource type
+# azureCommunicationServicesUserIdentity resource type
 
 Namespace: microsoft.graph
 
-Represents the identity of a user whose underlying identity isn't available to the application due to privacy restrictions. For example, in a group call, participants other than the one who invited a Skype Consumer user won't have access to the identity of that user in the call roster.
+Represents the identity of a participant who joined the communication via Azure Communication Services.
 
 Inherits from [identity](identity.md).
 
@@ -19,23 +19,26 @@ Inherits from [identity](identity.md).
 
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id | String | Inherited from **identity**. The user's encrypted identifier. |
+| id | String | Inherited from **identity**. A unique ID identifying the user. |
 | displayName | String | Inherited from **identity**. The display name associated with the user. |
+| azureCommunicationServicesResourceId | String |  The Azure Communication Services resource ID associated with the user. |
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.communicationsEncryptedIdentity",
+  "@odata.type": "microsoft.graph.azureCommunicationServicesUserIdentity",
   "optionalProperties": [
-    "displayName"
+    "displayName",
+    "azureCommunicationServicesResourceId"
   ],
 } -->
 ```json
 {
   "id": "String",
-  "displayName": "String"
+  "displayName": "String",
+  "azureCommunicationServicesResourceId": "String"
 }
 ```
