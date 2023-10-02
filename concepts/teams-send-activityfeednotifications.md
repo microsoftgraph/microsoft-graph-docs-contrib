@@ -793,7 +793,7 @@ HTTP/1.1 204 No Content
 - The `systemDefault` activity type is reserved and cannot be used in the manifest while declaring [Activities](#activities-section-changes).
 - You can use the `systemDefault` activity type to:
   - Easily test out new scenarios and/or quickly try out the activity feed notification APIs without defining activity types in your app's manifest.
-  - For Store apps, it saves time and streamline the process since you don't need to constantly adjust activity types in your app's manifest. The `systemDefault` activity type is ready to use from the get-go.
+  - For Store apps, it saves time and streamlines the process since you don't need to adjust activity types in your app's manifest constantly. The `systemDefault` activity type is ready to use from the get-go.
 - Keep in mind that with the `systemDefault` activity type you cannot:
   - Utilize the built-in localization features provided by manifests.
   - Rely solely on sending customizable notifications with the  `systemDefault` activity type. Users can turn off all notifications from your app with a single toggle in the Microsoft Teams client settings, which could hinder communication between your app and its users.
