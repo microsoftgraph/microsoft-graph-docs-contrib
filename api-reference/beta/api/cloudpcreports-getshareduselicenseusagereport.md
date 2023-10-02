@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Get a usage report on shared-use licenses, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.
 
 >[!CAUTION] 
->This API is deprecated. Going forward, use the [getFrontlineReport](cloudpcreports-getfrontlinereport) API.
+>This API is deprecated. Going forward, use the [getFrontlineReport](cloudpcreports-getfrontlinereport.md) API.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
