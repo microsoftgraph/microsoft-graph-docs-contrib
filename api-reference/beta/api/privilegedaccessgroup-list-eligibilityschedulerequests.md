@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 [!INCLUDE [rbac-pim-groups-apis-read-eligibilityschedulerequests](../includes/rbac-for-apis/rbac-pim-groups-apis-read-eligibilityschedulerequests.md)]
 
 ## HTTP request
-
+In app-only scenarios, include `?$filter='{principaId}'` or `$filter='{groupId}'` to retrieve the requests for a specific principal or group. In delegated scenarios, not including a filter returns the requests where the `principalId` is the signed-in user's, similar to [privilegedAccessGroupEligibilityScheduleRequest: filterByCurrentUser](privilegedaccessgroupeligibilityschedulerequest-filterbycurrentuser.md) with `(on='principal')`.
 <!-- {
   "blockType": "ignored"
 }
