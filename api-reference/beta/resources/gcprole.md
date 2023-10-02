@@ -1,20 +1,18 @@
 ---
 title: "gcpRole resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents a GCP role in a GCP authorization system."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
 # gcpRole resource type
-
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents a GCP role in a GCP authorization system.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -22,19 +20,16 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List gcpRoles](../api/gcpauthorizationsystem-list-roles.md)|[gcpRole](../resources/gcprole.md) collection|Get a list of the [gcpRole](../resources/gcprole.md) objects and their properties.|
-|[Create gcpRole](../api/gcpauthorizationsystem-post-roles.md)|[gcpRole](../resources/gcprole.md)|Create a new [gcpRole](../resources/gcprole.md) object.|
 |[Get gcpRole](../api/gcprole-get.md)|[gcpRole](../resources/gcprole.md)|Read the properties and relationships of a [gcpRole](../resources/gcprole.md) object.|
-|[Update gcpRole](../api/gcprole-update.md)|[gcpRole](../resources/gcprole.md)|Update the properties of a [gcpRole](../resources/gcprole.md) object.|
-|[Delete gcpRole](../api/gcpauthorizationsystem-delete-roles.md)|None|Delete a [gcpRole](../resources/gcprole.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
-|externalId|String|**TODO: Add Description**|
-|gcpRoleType|gcpRoleType|**TODO: Add Description**.The possible values are: `system`, `custom`, `unknownFutureValue`.|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|scopes|[gcpScope](../resources/gcpscope.md) collection|**TODO: Add Description**|
+|displayName|String|The name of the GCP role.|
+|externalId|String|The id of the GCP role as defined by GCP.|
+|gcpRoleType|gcpRoleType|The type of GCP role. The possible values are: `system`, `custom`, `unknownFutureValue`.|
+|id|String|The unique encoded identifier for a GCP role. Read-only. Inherited from [entity](../resources/entity.md).|
+|scopes|[gcpScope](../resources/gcpscope.md) collection|Resources that an identity assigned this GCP role can perform actions on.|
 
 ## Relationships
 None.
