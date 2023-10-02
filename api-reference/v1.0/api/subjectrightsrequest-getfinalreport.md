@@ -32,8 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/subjectRightsRequests/{subjectRightsRequestId}/getFinalReport
-GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalReport
+GET /security/subjectRightsRequests/4EF5E3E6-545B-4B5F-A8B4-FF4F9980D7A9/getFinalReport
+GET /privacy/subjectRightsRequests/4EF5E3E6-545B-4B5F-A8B4-FF4F9980D7A9/getFinalReport
 ```
 
 ## Request headers
