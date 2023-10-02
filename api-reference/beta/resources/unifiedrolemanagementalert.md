@@ -48,9 +48,6 @@ For more information about working with security alerts for Azure AD roles using
 |alertDefinition|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)|Contains the description, impact, and measures to mitigate or prevent the security alert from being triggered in your tenant. Supports `$expand`.|
 |alertIncidents|[unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) collection|Represents the incidents of this type of alert that have been triggered in Privileged Identity Management (PIM) for Azure AD roles in the tenant. Supports `$expand`.|
 
-## See also
-+ [Manage security alerts for Azure AD roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
-
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
@@ -74,4 +71,7 @@ The following is a JSON representation of the resource.
   "lastScannedDateTime": "String (timestamp)"
 }
 ```
+
+## See also
++ [Manage security alerts for Azure AD roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
 
