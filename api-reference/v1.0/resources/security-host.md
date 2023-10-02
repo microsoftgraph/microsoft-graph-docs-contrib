@@ -38,7 +38,7 @@ Inherits from [artifact](../resources/security-artifact.md).
 | [Get reputation](../api/security-host-get-reputation.md)                 | [microsoft.graph.security.hostReputation](../resources/security-hostreputation.md)                | Get the properties and relationships of a **hostReputation** object.                                              |
 | [List subdomains](../api/security-host-list-subdomains.md)               | [microsoft.graph.security.subdomain](../resources/security-subdomain.md) collection               | Get a list of **subdomain** resources.                                                                            |
 | [List trackers](../api/security-host-list-trackers.md)                   | [microsoft.graph.security.hostTracker](../resources/security-hosttracker.md) collection           | Get a list of **hostTracker** resources.                                                                          |
-| [List hostSslCertificates](../api/security-hostsslcertificate-list-host.md)                   | [microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) collection           | Get a list of [hostSslCertificate](../resources/security-hostsslcertificate.md) objects from the [host](../resources/security-host.md) navigation property.                                | 
+| [List hostSslCertificates](../api/security-host-list-sslcertificates.md)                   | [microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) collection           | Get a list of [hostSslCertificate](../resources/security-hostsslcertificate.md) objects from the [host](../resources/security-host.md) navigation property.                                | 
 
 ## Properties
 
