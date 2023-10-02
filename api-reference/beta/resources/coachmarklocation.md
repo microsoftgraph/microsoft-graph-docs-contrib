@@ -33,11 +33,11 @@ Represents details about a coachmark location.
 |externalTag| Coachmark from external tag. |
 |displayName| Coachmark from display name. |
 |messageBody| Coachmark from email body. |
-|unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
+|unknownFutureValue| Evolvable enumeration sentinel value. Don't use. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.coachmarkLocation"

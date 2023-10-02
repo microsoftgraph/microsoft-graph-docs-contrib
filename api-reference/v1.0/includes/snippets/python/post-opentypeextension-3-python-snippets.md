@@ -18,7 +18,7 @@ request_body = OpenTypeExtension(
 	}
 )
 
-result = await graph_client.groups.by_group_id('group-id').events.by_event_id('event-id').extensions.post(request_body = request_body)
+result = await graph_client.groups.by_group_id('group-id').events.by_event_id('event-id').extensions.post(body = request_body)
 
 
 ```

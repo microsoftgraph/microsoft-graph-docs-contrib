@@ -23,6 +23,8 @@ Find more information in the [delta query](/graph/delta-query-overview) document
 
 To learn more about using the Microsoft Teams export APIs to export content, see [Export content with the Microsoft Teams export APIs](/microsoftteams/export-teams-content).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 The following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

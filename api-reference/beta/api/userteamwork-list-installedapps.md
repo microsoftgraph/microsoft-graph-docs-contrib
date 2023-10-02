@@ -19,6 +19,8 @@ Retrieve the list of [apps](../resources/teamsappinstallation.md) installed in t
 > - The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
 > - This API works differently in one or more national clouds. For details, see [Implementation differences in national clouds](/graph/teamwork-national-cloud-differences). 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -80,35 +82,35 @@ GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-2-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-2-beta-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/user-list-teamsapps-2-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/user-list-teamsapps-2-beta-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/user-list-teamsapps-2-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/user-list-teamsapps-2-beta-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/user-list-teamsapps-2-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/user-list-teamsapps-2-beta-e1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/user-list-teamsapps-2-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-list-teamsapps-2-beta-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/user-list-teamsapps-2-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/user-list-teamsapps-2-beta-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/user-list-teamsapps-2-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-list-teamsapps-2-beta-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/user-list-teamsapps-2-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/user-list-teamsapps-2-beta-e1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -157,35 +159,35 @@ GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=t
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-details-2-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-details-2-beta-e2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/user-list-teamsapps-details-2-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/user-list-teamsapps-details-2-beta-e2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/user-list-teamsapps-details-2-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/user-list-teamsapps-details-2-beta-e2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/user-list-teamsapps-details-2-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/user-list-teamsapps-details-2-beta-e2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/user-list-teamsapps-details-2-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-list-teamsapps-details-2-beta-e2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/user-list-teamsapps-details-2-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/user-list-teamsapps-details-2-beta-e2-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/user-list-teamsapps-details-2-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-list-teamsapps-details-2-beta-e2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/user-list-teamsapps-details-2-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/user-list-teamsapps-details-2-beta-e2-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -258,35 +260,35 @@ GET https://graph.microsoft.com/beta/users/97a5a533-833d-494b-b543-c0afe026cb96/
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-details-filter-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/user-list-teamsapps-details-filter-beta-e3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/user-list-teamsapps-details-filter-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/user-list-teamsapps-details-filter-beta-e3-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/user-list-teamsapps-details-filter-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/user-list-teamsapps-details-filter-beta-e3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/user-list-teamsapps-details-filter-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/user-list-teamsapps-details-filter-beta-e3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/user-list-teamsapps-details-filter-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/user-list-teamsapps-details-filter-beta-e3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/user-list-teamsapps-details-filter-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/user-list-teamsapps-details-filter-beta-e3-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/user-list-teamsapps-details-filter-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/user-list-teamsapps-details-filter-beta-e3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/user-list-teamsapps-details-filter-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/user-list-teamsapps-details-filter-beta-e3-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

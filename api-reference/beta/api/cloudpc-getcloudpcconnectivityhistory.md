@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get the connectivity history of a specific Cloud PC.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,7 +46,7 @@ GET /deviceManagement/virtualEndpoint/cloudPCs/{id}/getCloudPcConnectivityHistor
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -54,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcConnec
 
 ### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 
 # [HTTP](#tab/http)
@@ -103,7 +105,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/cloudPCs/{
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

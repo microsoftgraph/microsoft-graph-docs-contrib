@@ -1,6 +1,6 @@
 ---
 title: "profilePhoto resource type"
-description: "Repesents a profile photo of a user, group, team, or Outlook contact accessed from Exchange Online or Azure Active Directory (Azure AD)."
+description: "Represents a profile photo of a user, group, team, or Outlook contact accessed from Exchange Online or Azure Active Directory (Azure AD)."
 ms.localizationpriority: medium
 author: "kristinmcleod"
 ms.prod: "people"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Repesents a profile photo of a user, group, team, or Outlook contact accessed from Exchange Online or Azure Active Directory (Azure AD). The data is binary and not encoded in base-64.
+Represents a profile photo of a user, group, team, or Outlook contact accessed from Exchange Online or Azure Active Directory (Azure AD). The data is binary and not encoded in base-64.
 
 
 ## Methods
@@ -38,7 +38,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",

@@ -18,7 +18,7 @@ request_body = EducationAssignment(
 	added_student_action = EducationAddedStudentAction.None,
 )
 
-result = await graph_client.education.classes.by_classe_id('educationClass-id').assignments.by_assignment_id('educationAssignment-id').patch(request_body = request_body)
+result = await graph_client.education.classes.by_classe_id('educationClass-id').assignments.by_assignment_id('educationAssignment-id').patch(body = request_body)
 
 
 ```

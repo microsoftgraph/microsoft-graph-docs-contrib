@@ -15,6 +15,6 @@ $status->setState(new PrintTaskProcessingState('completed'));
 $status->setDescription('completed');
 $requestBody->setStatus($status);
 
-$result = $graphServiceClient->print()->taskDefinitions()->byPrintTaskDefinitionId('printTaskDefinition-id')->tasks()->byPrintTaskId('printTask-id')->patch($requestBody)->wait();
+$result = $graphServiceClient->escapedPrint()->taskDefinitions()->byPrintTaskDefinitionId('printTaskDefinition-id')->tasks()->byPrintTaskId('printTask-id')->patch($requestBody)->wait();
 
 ```

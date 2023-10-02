@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new FilterByCurrentUserWithOnRequestBuilderGetRequestConfiguration();
 $queryParameters = FilterByCurrentUserWithOnRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->expand = ["instance($expand=definition)"];
+$queryParameters->expand = ["instance(\$expand=definition)"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 

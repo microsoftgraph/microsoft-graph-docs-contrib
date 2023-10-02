@@ -19,7 +19,7 @@ request_body = LearningSelfInitiatedCourse(
 	status = CourseStatus.InProgress,
 )
 
-result = await graph_client.employee_experience.learning_providers.by_learning_provider_id('learningProvider-id').learning_course_activities.by_learning_course_activitie_id('learningCourseActivity-id').patch(request_body = request_body)
+result = await graph_client.employee_experience.learning_providers.by_learning_provider_id('learningProvider-id').learning_course_activities.by_learning_course_activitie_id('learningCourseActivity-id').patch(body = request_body)
 
 
 ```

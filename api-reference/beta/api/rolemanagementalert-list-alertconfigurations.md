@@ -22,6 +22,8 @@ Get a list of the alert configurations. The alert configurations are a collectio
 - [staleSignInAlertConfiguration](../resources/stalesigninalertconfiguration.md)
 - [tooManyGlobalAdminsAssignedToTenantAlertConfiguration](../resources/toomanyglobaladminsassignedtotenantalertconfiguration.md)
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

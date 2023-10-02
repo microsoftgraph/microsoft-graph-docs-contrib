@@ -70,7 +70,7 @@ headers = {
 
 )
 
-result = await graph_client.information_protection.policy.labels.evaluate_removal.post(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.information_protection.policy.labels.evaluate_removal.post(body = request_body, request_configuration = request_configuration)
 
 
 ```

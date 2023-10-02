@@ -18,7 +18,7 @@ request_body = UnenrollAssetsPostRequestBody(
 	]
 )
 
-await graph_client.admin.windows.updates.updatable_assets.microsoft_graph_window_update_unenroll_assets.post(request_body = request_body)
+await graph_client.admin.windows.updates.updatable_assets.microsoft_graph_window_update_unenroll_assets.post(body = request_body)
 
 
 ```

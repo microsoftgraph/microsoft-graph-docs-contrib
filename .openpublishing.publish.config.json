@@ -48,6 +48,12 @@
       "branch_mapping": {}
     },
     {
+      "path_to_root": "azure_docs",
+      "url": "https://github.com/MicrosoftDocs/azure-docs/",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
       "path_to_root": "concepts/sdks/snippets/dotnet",
       "url": "https://github.com/microsoftgraph/msgraph-snippets-dotnet",
       "branch": "main",
@@ -80,6 +86,12 @@
     {
       "path_to_root": "concepts/includes/connecting-external-content/snippets",
       "url": "https://github.com/microsoftgraph/msgraph-search-connector-sample",
+      "branch": "main",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "azure-reference-other",
+      "url": "https://github.com/MicrosoftDocs/azure-reference-other",
       "branch": "main",
       "branch_mapping": {}
     }

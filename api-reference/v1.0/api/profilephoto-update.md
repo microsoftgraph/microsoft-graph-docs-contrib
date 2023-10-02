@@ -16,6 +16,10 @@ Update the photo for the specified contact, group, team, or user in a tenant. Th
 Due to the current limit of 4 MB on the total size of each REST request, the size of the photo you can add is also limited to 4 MB. 
 You can use either PATCH or PUT for this operation.
 
+> **Note:** This operation supports only a user's work or school mailboxes and not personal mailboxes.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).

@@ -14,7 +14,7 @@ request_body = Case(
 	external_id = "Updated externalId",
 )
 
-result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').patch(request_body = request_body)
+result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').patch(body = request_body)
 
 
 ```

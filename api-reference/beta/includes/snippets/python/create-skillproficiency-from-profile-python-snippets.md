@@ -20,7 +20,7 @@ request_body = SkillProficiency(
 	]
 )
 
-result = await graph_client.me.profile.skills.post(request_body = request_body)
+result = await graph_client.me.profile.skills.post(body = request_body)
 
 
 ```

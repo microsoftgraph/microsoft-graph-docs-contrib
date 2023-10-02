@@ -45,7 +45,7 @@ request_body = IosStoreApp(
 	),
 )
 
-result = await graph_client.device_app_management.mobile_apps.post(request_body = request_body)
+result = await graph_client.device_app_management.mobile_apps.post(body = request_body)
 
 
 ```

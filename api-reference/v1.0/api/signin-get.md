@@ -16,6 +16,8 @@ Retrieve a specific Azure AD user sign-in event for your tenant. Sign-ins that a
 [!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -58,7 +60,7 @@ This method supports OData query parameters to help customize the response. For 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -68,7 +70,7 @@ If successful, this method returns a `200 OK` response code and [signIn](../reso
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -117,7 +119,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns/66ea54eb-6301-4ee5-be62-f
 
 ### Response
 
-Here is an example of the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {

@@ -27,7 +27,7 @@ You can use the synchronization APIs in Microsoft Graph to manage identity synch
 For more information about synchronization in Azure AD, see:
 
 * [Automate user provisioning and deprovisioning to SaaS applications with Azure Active Directory](/azure/active-directory/active-directory-saas-app-provisioning)
-* [Managing user account provisioning for enterprise apps in the Azure portal](/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
+* [Managing user account provisioning for enterprise apps in the Microsoft Entra admin center](/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
 
 You can also try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) in a sample tenant or your own tenant.
 

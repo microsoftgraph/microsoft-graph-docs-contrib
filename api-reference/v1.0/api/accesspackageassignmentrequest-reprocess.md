@@ -11,9 +11,11 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), callers can automatically retry a user's request for access to an access package. It is performed on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object whose **requestState** is in a `DeliveryFailed` or `PartiallyDelivered` state. 
+In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), callers can automatically retry a user's request for access to an access package. It's performed on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object whose **requestState** is in a `DeliveryFailed` or `PartiallyDelivered` state. 
 
 You can only reprocess a request within 14 days from the time the original request was completed. For requests completed more than 14 days, you will need to ask the users to cancel the request(s) and make a new request in the [MyAccess](https://myaccess.microsoft.com/) portal.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -43,7 +45,7 @@ POST /identityGovernance/entitlementManagement/assignmentRequests/{id}/reprocess
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -53,7 +55,7 @@ If successful, this method returns a  `202 Accepted` response code and retries t
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -100,7 +102,7 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/a
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 
 <!-- {

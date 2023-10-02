@@ -19,6 +19,8 @@ If you want to obtain long-lived embeddable links, use the [createLink][] API in
 
 [createLink]: driveitem-createlink.md
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API.

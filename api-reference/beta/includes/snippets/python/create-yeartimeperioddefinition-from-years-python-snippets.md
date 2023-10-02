@@ -17,7 +17,7 @@ request_body = YearTimePeriodDefinition(
 	),
 )
 
-result = await graph_client.external.industry_data.years.post(request_body = request_body)
+result = await graph_client.external.industry_data.years.post(body = request_body)
 
 
 ```

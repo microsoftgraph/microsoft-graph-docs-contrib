@@ -18,6 +18,8 @@ The maximum and default page size is 1,000 objects and by default, the most rece
 [!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -62,7 +64,7 @@ If successful, this method returns a `200 OK` response code and collection of [s
 
 #### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -110,7 +112,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 
 #### Response
 
-Here is an example of the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -196,7 +198,7 @@ Content-type: application/json
 
 #### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -244,7 +246,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDi
 
 #### Response
 
-Here is an example of the response. The response includes a `@odata.nextLink` property which contains a URL that can be used to retrieve the next 10 results.
+Here's an example of the response. The response includes a `@odata.nextLink` property that contains a URL that can be used to retrieve the next 10 results.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
