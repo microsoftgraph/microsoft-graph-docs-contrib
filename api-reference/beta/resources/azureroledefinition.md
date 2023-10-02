@@ -1,9 +1,9 @@
 ---
 title: "azureRoleDefinition resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents an Azure role in an Azure authorization system."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an Azure role in an Azure authorization system.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -22,19 +21,16 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List azureRoleDefinitions](../api/azureauthorizationsystem-list-roledefinitions.md)|[azureRoleDefinition](../resources/azureroledefinition.md) collection|Get a list of the [azureRoleDefinition](../resources/azureroledefinition.md) objects and their properties.|
-|[Create azureRoleDefinition](../api/azureauthorizationsystem-post-roledefinitions.md)|[azureRoleDefinition](../resources/azureroledefinition.md)|Create a new [azureRoleDefinition](../resources/azureroledefinition.md) object.|
 |[Get azureRoleDefinition](../api/azureroledefinition-get.md)|[azureRoleDefinition](../resources/azureroledefinition.md)|Read the properties and relationships of an [azureRoleDefinition](../resources/azureroledefinition.md) object.|
-|[Update azureRoleDefinition](../api/azureroledefinition-update.md)|[azureRoleDefinition](../resources/azureroledefinition.md)|Update the properties of an [azureRoleDefinition](../resources/azureroledefinition.md) object.|
-|[Delete azureRoleDefinition](../api/azureauthorizationsystem-delete-roledefinitions.md)|None|Delete an [azureRoleDefinition](../resources/azureroledefinition.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignableScopes|String collection|**TODO: Add Description**|
-|azureRoleDefinitionType|azureRoleDefinitionType|**TODO: Add Description**.The possible values are: `system`, `custom`, `unknownFutureValue`.|
-|displayName|String|**TODO: Add Description**|
-|externalId|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|assignableScopes|String collection|Scopes at which the Azure role can be assigned.|
+|azureRoleDefinitionType|azureRoleDefinitionType|Type of Azure role.The possible values are: `system`, `custom`, `unknownFutureValue`.|
+|displayName|String|Name of the Azure role.|
+|externalId|String|Identifier of an Azure role defined by Azure.|
+|id|String|Encoded identifier of an Azure role definition. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.

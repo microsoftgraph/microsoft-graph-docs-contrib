@@ -1,7 +1,7 @@
 ---
 title: "awsPolicy resource type"
-description: Represents an AWS policy in an AWS authorization system.
-author: mrudulahg01
+description: "Represents an AWS policy in an AWS authorization system."
+author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
