@@ -82,7 +82,7 @@ If successful, this method returns a `200 OK` response code and a [sharedDriveIt
 
 ### Request
 
-Here is an example of the request to retrieve a shared item:
+Here's an example of the request to retrieve a shared item:
 
 
 # [HTTP](#tab/http)
@@ -128,7 +128,7 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 
 ### Response
 
-Here is an example of the response.
+Here's an example of the response.
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.sharedDriveItem" } -->
 
@@ -151,7 +151,7 @@ Content-type: application/json
 ## Access the shared item directly
 
 While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md).
-The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.
+The **SharedDriveItem** resource includes a **root** and **items** relationships that can access content within the scope of the shared item.
 
 ## Example (single file)
 
@@ -299,12 +299,12 @@ Content-Type: application/json
 
 ## Error Responses
 
-Read the [Error Responses][error-response] topic for more information about
+Read the [Error Responses][error-response] article for more information about
 how errors are returned.
 
 ## Remarks
 
-* For OneDrive for Business and SharePoint, the Shares API always requires authentication and cannot be used to access anonymously shared content without a user context.
+* For OneDrive for Business and SharePoint, the Shares API always requires authentication and can't be used to access anonymously shared content without a user context.
 
 [error-response]: /graph/errors
 

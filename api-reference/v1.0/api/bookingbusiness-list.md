@@ -37,7 +37,7 @@ GET /solutions/bookingBusinesses
 
 ## Optional query parameters
 
-This method supports the `$count` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$count` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 This method also supports the `query` parameter which accepts a string value. This parameter limits the GET results to businesses that match the specified string. For more details, see [Example 2](#example-2-use-query-to-get-one-or-more-matching-bookings-businesses-in-a-tenant).
 

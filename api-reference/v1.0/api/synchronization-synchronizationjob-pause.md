@@ -40,16 +40,16 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/pause
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, returns a `204 No Content` response. It does not return anything in the response body.
+If successful, returns a `204 No Content` response. It doesn't return anything in the response body.
 
 ## Example
 
 ### Request
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,7 +95,7 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/job
 ---
 
 ### Response
-The following is an example of a response.
+Here's an example of a response.
 <!-- {
   "blockType": "response"
 } -->

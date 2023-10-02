@@ -27,6 +27,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 | [Clear presence](../api/presence-clearpresence.md)                                   |                                                 | Clear an application's presence session for a user. |
 | [Set user preferred presence](../api/presence-setuserpreferredpresence.md)           |                                                 | Set the preferred availability and activity status for a user.                    |
 | [Clear user preferred presence](../api/presence-clearuserpreferredpresence.md)       |                                                 | Clear the preferred availability and activity status for a user.                  |
+| [Set user status message](../api/presence-setstatusmessage.md) | | Set a presence status message for a user. |
 
 ## Properties
 
@@ -35,6 +36,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks).
 | activity     | string collection | The supplemental information to a user's availability. Possible values are `Available`, `Away`, `BeRightBack`, `Busy`, `DoNotDisturb`, `InACall`, `InAConferenceCall`, `Inactive`, `InAMeeting`, `Offline`, `OffWork`, `OutOfOffice`, `PresenceUnknown`, `Presenting`, `UrgentInterruptionsOnly`. |
 | availability | string collection | The base presence information for a user. Possible values are `Available`, `AvailableIdle`,  `Away`, `BeRightBack`, `Busy`, `BusyIdle`, `DoNotDisturb`, `Offline`, `PresenceUnknown`                                                                                                              |
 | id           | string            | The user object id                                                                                                                                                                                                                                                                                |
+| statusMessage | [microsoft.graph.presenceStatusMessage](presenceStatusMessage.md) | The presence status message of a user. |
 
 >**Note:** To learn more about the different presence states, see [User presence in Teams](/microsoftteams/presence-admins). 
 
@@ -56,6 +58,7 @@ The following is a JSON representation of the resource.
 {
    "id":"string",
    "availability":"string",
-   "activity":"string"
+   "activity":"string",
+   "statusMessage":{"@odata.type": "#microsoft.graph.presenceStatusMessage"}
 }
 ```
