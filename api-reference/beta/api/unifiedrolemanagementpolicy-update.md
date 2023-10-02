@@ -229,11 +229,11 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies/$entity",
     "id": "DirectoryRole_2132228a-d66e-401c-ab8a-a8ae31254a36_0f8c4bbc-4f1a-421c-b63d-a68f571b7fab",
-    "displayName": "Directory",
-    "description": "Directory",
+    "displayName": "DirectoryRole",
+    "description": "DirectoryRole",
     "isOrganizationDefault": false,
     "scopeId": "/",
-    "scopeType": "Directory",
+    "scopeType": "DirectoryRole",
     "lastModifiedDateTime": "2023-10-01T19:27:32.663Z",
     "lastModifiedBy": {
         "displayName": "Test User 1",
