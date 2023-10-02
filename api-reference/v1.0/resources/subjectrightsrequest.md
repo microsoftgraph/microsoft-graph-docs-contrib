@@ -98,10 +98,10 @@ The following is a JSON representation of the resource.
   "internalDueDateTime": "String (timestamp)",
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
-  "mailboxLocations":["@odata.type":"microsoft.graph.subjectRightsRequestMailboxLocation"],
+  "mailboxLocations":[{"@odata.type":"microsoft.graph.subjectRightsRequestMailboxLocation"}],
   "pauseAfterEstimate":"Boolean",
   "regulations": ["String"],
-  "siteLocations":["@odata.type":"microsoft.graph.subjectRightsRequestSiteLocation"],
+  "siteLocations":[{"@odata.type":"microsoft.graph.subjectRightsRequestSiteLocation"}],
   "stages": [{"@odata.type": "microsoft.graph.subjectRightsRequestStageDetail"}],
   "status": "String",
   "type": "String"
