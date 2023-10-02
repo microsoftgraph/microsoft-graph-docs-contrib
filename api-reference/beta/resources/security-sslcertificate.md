@@ -23,7 +23,7 @@ Inherits from [artifact](../resources/security-artifact.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List sslCertificates](../api/security-sslcertificate-list.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) collection|Get a list of [sslCertificate](../resources/security-sslcertificate.md) objects and their properties.|
+|[List sslCertificates](../api/security-threatintelligence-list-sslcertificates.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) collection|Get a list of [sslCertificate](../resources/security-sslcertificate.md) objects and their properties.|
 |[Get sslCertificate](../api/security-sslcertificate-get.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md)|Get the properties and relationships of an [sslCertificate](../resources/security-sslcertificate.md) object.|
 
 ## Properties
