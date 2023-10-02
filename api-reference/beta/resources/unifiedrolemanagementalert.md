@@ -19,6 +19,8 @@ Each security alert in PIM for Azure AD roles is of one of several types describ
 
 Inherits from [entity](../resources/entity.md).
 
+For more information about working with security alerts for Azure AD roles using PIM APIs, see [Manage security alerts for Azure AD roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -45,6 +47,9 @@ Inherits from [entity](../resources/entity.md).
 |alertConfiguration|[unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md)|The configuration of the alert in PIM for Azure AD roles. Alert configurations are pre-defined and cannot be created or deleted, but some configurations can be modified. Supports `$filter` for the **isEnabled** property and `$expand`.|
 |alertDefinition|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)|Contains the description, impact, and measures to mitigate or prevent the security alert from being triggered in your tenant. Supports `$expand`.|
 |alertIncidents|[unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md) collection|Represents the incidents of this type of alert that have been triggered in Privileged Identity Management (PIM) for Azure AD roles in the tenant. Supports `$expand`.|
+
+## See also
++ [Manage security alerts for Azure AD roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
 
 ## JSON representation
 The following is a JSON representation of the resource.
