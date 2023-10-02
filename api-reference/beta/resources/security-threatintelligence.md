@@ -46,7 +46,7 @@ The threat intelligence API allows you to operationalize intelligence found with
 |[List sslCertificates](../api/security-threatintelligence-list-sslcertificates.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) collection |Get a list of [sslCertificate](../resources/security-sslcertificate.md) objects and their properties.|
 |[Get hostSslCertificate](../api/security-hostsslcertificate-get.md)|[microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) |Get the properties and relationships of a [hostSslCertificate](../resources/security-hostsslcertificate.md) object.|
 |[List hostSslCertificates](../api/security-host-list-sslcertificates.md)|[microsoft.graph.security.hostSslCertificate](../resources/security-hostsslcertificate.md) collection |Get a list of [hostSslCertificate](../resources/security-hostsslcertificate.md) objects from the [host](../resources/security-host.md) navigation property.|
-| [List whoisRecords](../api/security-whoisrecord-list.md)                     |[microsoft.graph.security.whoisRecord](../resources/security-vulnerability.md) |Get a list of [whoisRecord](../resources/security-whoisrecord.md) objects.|
+| [List whoisRecords](../api/security-threatintelligence-list-whoisrecords.md)                     |[microsoft.graph.security.whoisRecord](../resources/security-vulnerability.md) |Get a list of [whoisRecord](../resources/security-whoisrecord.md) objects.|
 | [Get whoisHistoryRecord](../api/security-whoishistoryrecord-get.md)          |[microsoft.graph.security.whoisHistoryRecord](../resources/security-whoishistoryrecord.md) |Read the properties and relationships of a [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) object.|
 
 ## Properties
