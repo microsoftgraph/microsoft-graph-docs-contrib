@@ -32,8 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /security/subjectRightsRequests/4EF5E3E6-545B-4B5F-A8B4-FF4F9980D7A9/getFinalAttachment
-GET /privacy/subjectRightsRequests/4EF5E3E6-545B-4B5F-A8B4-FF4F9980D7A9/getFinalAttachment
+GET /security/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
+GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
 ```
 
 ## Request headers
@@ -59,7 +59,7 @@ If successful, this function will redirect to the Microsoft Azure blob storage l
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalAttachment
+GET https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests/4ef5e3e6-545b-4b5f-a8b4-ff4f9980d7a9/getFinalAttachment
 ```
 
 # [C#](#tab/csharp)
