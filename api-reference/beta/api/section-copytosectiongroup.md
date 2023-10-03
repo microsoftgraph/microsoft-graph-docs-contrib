@@ -62,9 +62,9 @@ In the request body, provide a JSON object that contains the parameters that you
 If successful, this method returns a `202 Accepted` response code and an `Operation-Location` header. Poll the Operation-Location endpoint to [get the status of the copy operation](onenoteoperation-get.md).
 
 ## Example
-Here is an example of how to call this API.
+Here's an example of how to call this API.
 ##### Request
-Here is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -117,7 +117,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response.
+Here's an example of the response.
 <!-- {
   "blockType": "response"
 } -->
