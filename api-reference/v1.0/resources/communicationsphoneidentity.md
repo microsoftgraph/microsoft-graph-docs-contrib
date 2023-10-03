@@ -17,10 +17,10 @@ Inherits from [identity](identity.md).
 
 ## Properties
 
-| Property                       | Type                        | Description                                                                                                                                       |
-| :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id | String | Inherited from **identity**. The user's E.164 telephone number. |
-| displayName | String | Inherited from **identity**. The display name associated with the phone number. |
+| Property                       | Type                        | Description    |
+| :----------------------------- | :---------------------------| :--------------|
+| displayName | String | The display name associated with the phone number. Inherited from **identity**. |
+| id | String | The user's E.164 telephone number. Inherited from **identity**. |
 
 ## JSON representation
 
@@ -35,7 +35,7 @@ The following is a JSON representation of the resource.
 } -->
 ```json
 {
-  "id": "String",
+  "id": "String (identifier)",
   "displayName": "String"
 }
 ```
