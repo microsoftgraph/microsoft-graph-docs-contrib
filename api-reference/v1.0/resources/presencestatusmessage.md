@@ -23,7 +23,7 @@ Represents a presence status message related to the [presence](presence.md) of a
 
 ## JSON representation
 
-Here's a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
