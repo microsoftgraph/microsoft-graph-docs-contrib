@@ -39,6 +39,6 @@ The following is a JSON representation of the resource.
 {
   "azureCommunicationServicesResourceId": "String",
   "displayName": "String",
-  "id": "String"
+  "id": "String (identifier)"
 }
 ```
