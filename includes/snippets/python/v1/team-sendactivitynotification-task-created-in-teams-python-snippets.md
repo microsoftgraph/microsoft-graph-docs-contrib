@@ -29,7 +29,7 @@ request_body = SendActivityNotificationPostRequestBody(
 	]
 )
 
-await graph_client.teams.by_team_id('team-id').send_activity_notification.post(request_body = request_body)
+await graph_client.teams.by_team_id('team-id').send_activity_notification.post(body = request_body)
 
 
 ```

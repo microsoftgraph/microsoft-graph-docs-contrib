@@ -12,7 +12,7 @@ request_body = ReferenceUpdate(
 	odata_id = "https://graph.microsoft.com/v1.0/identity/apiConnectors/{id}",
 )
 
-await graph_client.identity.b2x_user_flows.by_b2x_user_flow_id('b2xIdentityUserFlow-id').api_connector_configuration.post_attribute_collection.ref.put(request_body = request_body)
+await graph_client.identity.b2x_user_flows.by_b2x_user_flow_id('b2xIdentityUserFlow-id').api_connector_configuration.post_attribute_collection.ref.put(body = request_body)
 
 
 ```

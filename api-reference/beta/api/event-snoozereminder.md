@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Postpone a reminder for an [event](../resources/event.md) in a user [calendar](../resources/calendar.md) until a new time.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

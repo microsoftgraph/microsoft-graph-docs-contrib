@@ -12,6 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Gets a row based on its position in the collection.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -25,24 +28,30 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/items/{id}/workbook/tables/{id|name}/rows/itemAt
-POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/itemAt
-POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/itemAt
-POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/itemAt
-
+GET /me/drive/items/{id}/workbook/tables/{id|name}/rows/itemAt(index={index})
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/itemAt(index={index})
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/itemAt(index={index})
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/itemAt(index={index})
 ```
+
+## Function parameters
+
+The following table shows the parameters that can be used with this function.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|index|Int32|Index value of the object to be retrieved. Zero-indexed.|
+
 ## Request headers
+
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
-In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|index|Int32|Index value of the object to be retrieved. Zero-indexed.|
+Do not supply a request body for this method.|
 
 ## Response
 
@@ -59,12 +68,7 @@ Here is an example of the request.
   "name": "tablerowcollection_itemat",
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/itemAt
-Content-type: application/json
-
-{
-  "index": 4
-}
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/rows/itemAt(index=4)
 ```
 
 # [JavaScript](#tab/javascript)

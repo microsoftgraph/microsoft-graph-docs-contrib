@@ -18,7 +18,7 @@ request_body = AadUserConversationMember(
 	}
 )
 
-result = await graph_client.teams.by_team_id('team-id').members.post(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').members.post(body = request_body)
 
 
 ```

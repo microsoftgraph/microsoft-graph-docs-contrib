@@ -21,7 +21,7 @@ request_body = ItemAddress(
 	),
 )
 
-result = await graph_client.me.profile.addresses.post(request_body = request_body)
+result = await graph_client.me.profile.addresses.post(body = request_body)
 
 
 ```

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties of an [authorizationPolicy](../resources/authorizationpolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -54,7 +56,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "policies_authorizationPolicy_get"
+  "name": "get_authorizationpolicy"
 }
 -->
 
@@ -63,38 +65,36 @@ GET https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/policies-authorizationpolicy-get-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-authorizationpolicy-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/policies-authorizationpolicy-get-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/get-authorizationpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/policies-authorizationpolicy-get-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/get-authorizationpolicy-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/policies-authorizationpolicy-get-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-authorizationpolicy-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/policies-authorizationpolicy-get-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-authorizationpolicy-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/policies-authorizationpolicy-get-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/get-authorizationpolicy-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/policies-authorizationpolicy-get-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-authorizationpolicy-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/policies-authorizationpolicy-get-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/get-authorizationpolicy-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 
@@ -116,21 +116,25 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/authorizationPolicy/$entity",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET policies/authorizationPolicy?$select=allowedToSignUpEmailBasedSubscriptions,allowedToUseSSPR",
     "id": "authorizationPolicy",
     "allowInvitesFrom": "everyone",
     "allowedToSignUpEmailBasedSubscriptions": true,
     "allowedToUseSSPR": true,
-    "allowEmailVerifiedUsersToJoinOrganization": true,
-    "allowUserConsentForRiskyApps": false,
-    "blockMsolPowerShell": null,
+    "allowEmailVerifiedUsersToJoinOrganization": false,
+    "allowUserConsentForRiskyApps": null,
+    "blockMsolPowerShell": false,
     "displayName": "Authorization Policy",
     "description": "Used to manage authorization related settings across the company.",
+    "guestUserRoleId": "10dae51f-b6af-4016-8d66-8c2a99b929b3",
     "defaultUserRolePermissions": {
-        "allowedToCreateApps": true,
+        "allowedToCreateApps": false,
         "allowedToCreateSecurityGroups": true,
+        "allowedToCreateTenants": true,
+        "allowedToReadBitlockerKeysForOwnedDevice": true,
         "allowedToReadOtherUsers": true,
         "permissionGrantPoliciesAssigned": [
-            "just-user-read"
+            "ManagePermissionGrantsForSelf.microsoft-user-default-legacy"
         ]
     }
 }

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Set the the [verifiedPublisher](../resources/verifiedPublisher.md) on an [application](../resources/application.md). For more information, including prerequisites to setting a verified publisher, see [Publisher verification](/azure/active-directory/develop/publisher-verification-overview).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -25,7 +27,7 @@ Set the the [verifiedPublisher](../resources/verifiedPublisher.md) on an [applic
 
 ## HTTP request
 
-You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /applications/{id}/setVerifiedPublisher

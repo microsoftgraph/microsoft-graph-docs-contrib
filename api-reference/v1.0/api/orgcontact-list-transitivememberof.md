@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get groups that this [organizational contact](../resources/orgcontact.md) is a member of. The API request is transitive, and returns all groups the organizational contact is a nested member of.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -23,7 +23,7 @@ request_body = UnifiedRoleDefinition(
 	}
 )
 
-result = await graph_client.role_management.cloud_p_c.role_definitions.post(request_body = request_body)
+result = await graph_client.role_management.cloud_p_c.role_definitions.post(body = request_body)
 
 
 ```

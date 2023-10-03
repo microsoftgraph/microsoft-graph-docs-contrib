@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# Get whoisRecord for a host
+# Get whoisRecord 
 
 Namespace: microsoft.graph.security
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph.security
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
 Get the current [whoisRecord](../resources/security-whoisrecord.md) resource for a [host](../resources/security-host.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -53,7 +55,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) object in the response body.
 
 ## Examples
 

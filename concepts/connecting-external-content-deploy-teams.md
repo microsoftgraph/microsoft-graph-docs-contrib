@@ -21,7 +21,7 @@ To enable the simplified admin experience in the Teams admin center:
 5. Validate the experience by enabling the Microsoft Graph Connector in the Teams admin center.
 
 ## Update the Teams app manifest
-In the Teams app manifest, at the root, at the same level as properties like **name**, **description**, and **icons**, add the **graphConnector** property (introduced in [v1.11](https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json) of the app manifest) with a **notificationUrl**. This field contains the URL to which Microsoft Graph connector notifications for the application are sent.
+In the Teams app manifest, at the root, at the same level as properties like **name**, **description**, and **icons**, add the **graphConnector** property (introduced in [v1.11](https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json) of the app manifest) with a **notificationUrl**. This field contains the URL to which Microsoft Graph connector notifications for the application are sent. The app manifest version must be [v1.13](https://developer.microsoft.com/en-us/json-schemas/teams/v1.13/MicrosoftTeams.schema.json) or higher for the simplified admin experience to work.
 
 Ensure that the **webApplicationInfo** property is added to the manifest. After you update the manifest, upload it by sideloading the app or publishing the app to the store.
 
@@ -40,9 +40,9 @@ Ensure that the **webApplicationInfo** property is added to the manifest. After 
   }
 }
 ```
-	
-## Update Azure Active Directory permissions
-In the Azure portal, go to the app registration and update the app permissions to include the Microsoft Graph permissions `ExternalConnection.ReadWrite.OwnedBy` and `ExternalItem.ReadWrite.OwnedBy`, as shown in the following example.
+    
+## Update Microsoft Graph permissions
+In the [Microsoft Entra admin center](https://entra.microsoft.com) > expand the **Identity** menu > select **Applications** > **App registrations** > select your app registration > select **API permissions** > select **Add a permission** > select **Microsoft Graph**. Select the `ExternalConnection.ReadWrite.OwnedBy` and `ExternalItem.ReadWrite.OwnedBy` Microsoft Graph permissions as shown in the following example.
 ![updated Azure Active Directory permissions](images/connectors-images/AADperms-TAC-connectors.png)
 
 ## Handle Microsoft Graph webhook notifications
@@ -65,9 +65,9 @@ Keep the following tips in mind:
 
 To handle "connector enable" notifications:
 
-* Determine which Microsoft Graph connections to create (how many connections and which schema for each connection) by using the [External connection List API](/graph/api/externalconnectors-externalconnection-list?view=graph-rest-beta&tabs=http) to query for all connections. Determine whether to create all connections from scratch, resume creation of connections (in resiliency flow), or no-op (when all desired connections are already in the **ready** state).
+* Determine which Microsoft Graph connections to create (how many connections and which schema for each connection) by using the [External connection List API](/graph/api/externalconnectors-externalconnection-list?view=graph-rest-beta&preserve-view=true&tabs=http) to query for all connections. Determine whether to create all connections from scratch, resume creation of connections (in resiliency flow), or no-op (when all desired connections are already in the **ready** state).
 * The [connection](/graph/api/externalconnectors-external-post-connections) is created in a **draft** state. Pass the **connectorsTicket** opaque encoded string to the connection creation API in the `GraphConnectors-Ticket` HTTP header.
-* [Register the schema](/graph/api/externalconnectors-externalconnection-post-schema?view=graph-rest-beta&tabs=http). 
+* [Register the schema](/graph/api/externalconnectors-externalconnection-post-schema?view=graph-rest-beta&preserve-view=true&tabs=http). 
 * After a successful schema creation or update, the connection should reach a **ready** state.
 
 ### Handling "connector disable" notification
@@ -75,7 +75,7 @@ To handle "connector enable" notifications:
 To handle "connector disable" notifications:
 
 * Determine which Microsoft Graph connections to delete by using the [External connection List API](/graph/api/externalconnectors-externalconnection-list) to query for all connections.
-* Delete all connections by using the [External connection Delete API](/graph/api/externalconnectors-externalconnection-delete?view=graph-rest-beta&tabs=http).
+* Delete all connections by using the [External connection Delete API](/graph/api/externalconnectors-externalconnection-delete?view=graph-rest-beta&preserve-view=true&tabs=http).
 * We recommend that you build resiliency logic to retry the deleted connection to verify that it is deleted.
 
 #### Request

@@ -12,7 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Refresh incidents on all security alerts or on a single security alert in Privileged Identity Management (PIM) for Azure AD roles.
+Refresh incidents on all security alerts or on a single security alert in Privileged Identity Management (PIM) for Azure AD roles. This task is a long-running operation and the unifiedRoleManagementAlert object will be updated only when the operation completes.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-pim-alerts-apis-write](../includes/rbac-for-apis/rbac-pim-alerts-apis-write.md)]
 
-## HTTP requests
+## HTTP request
 
 To refresh incidents on all alerts, use the following request.
 <!-- {
@@ -65,7 +67,7 @@ For refreshing a single alert, do not specify a request body.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code with a 'Location' header which specifies the URL for polling the operation status.
+If successful, this action returns a `202 Accepted` response code with a **Location** header which specifies the URL for polling the operation status.
 
 ## Examples
 

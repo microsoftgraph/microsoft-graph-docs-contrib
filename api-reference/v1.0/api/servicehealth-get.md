@@ -14,6 +14,8 @@ Retrieve the properties and relationships of a [serviceHealth](../resources/serv
 
 This operation provides the health information of a specified service for a tenant.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

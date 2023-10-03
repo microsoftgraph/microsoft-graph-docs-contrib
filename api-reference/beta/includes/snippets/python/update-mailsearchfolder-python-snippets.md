@@ -13,7 +13,7 @@ request_body = MailSearchFolder(
 	filter_query = "contains(subject, 'Analytics')",
 )
 
-result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').patch(request_body = request_body)
+result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').patch(body = request_body)
 
 
 ```

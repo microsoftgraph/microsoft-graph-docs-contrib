@@ -15,7 +15,7 @@ request_body = PrinterShare(
 	}
 )
 
-result = await graph_client.print.shares.post(request_body = request_body)
+result = await graph_client.print.shares.post(body = request_body)
 
 
 ```

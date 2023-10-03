@@ -19,7 +19,7 @@ Represents a content type in SharePoint. Content types allow you to define a set
 
 | Property          | Type                 | Description|
 |:------------------|:---------------------|:----------------------------------|
-|   associatedHubsUrls         | String collection | List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.|
+|   associatedHubsUrls         | String collection | List of canonical URLs for hub sites with which this content type is associated to. This contains all hub sites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.|
 |   documentSet         | [documentSet][]      | [Document Set](/sharepoint/governance/document-set-planning#about-document-sets) metadata.|
 |   documentTemplate    | [documentSetContent][] | Document template metadata. To make sure that documents have consistent content across a site and its subsites, you can associate a Word, Excel, or PowerPoint template with a site content type.|
 |   description     | String               | The descriptive text for the item.|
@@ -32,8 +32,8 @@ Represents a content type in SharePoint. Content types allow you to define a set
 |   order           | [contentTypeOrder][] | Specifies the order in which the content type appears in the selection UI.|
 |   parentId        | String               | The unique identifier of the content type.|
 |   propagateChanges     | Boolean              | If `true`, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.|
-|   readOnly        | Boolean              | If `true`, the content type cannot be modified unless this value is first set to `false`.|
-|   sealed          | Boolean              | If `true`, the content type cannot be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.|
+|   readOnly        | Boolean              | If `true`, the content type can't be modified unless this value is first set to `false`.|
+|   sealed          | Boolean              | If `true`, the content type can't be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.|
 
 ## Relationships
 
@@ -45,7 +45,7 @@ Represents a content type in SharePoint. Content types allow you to define a set
 |   columnPositions         | [columnDefinition][] collection | Column order information in a content type.|
 |   columns       | [columnDefinition][] collection  | The collection of column definitions for this contentType.|
 
-For more details, see [Introduction to content types and content type publishing][contentTypeIntro].
+For more information, see [Introduction to content types and content type publishing][contentTypeIntro].
 
 [columnLink]: columnlink.md
 [contentTypeIntro]: https://support.office.com/article/Introduction-to-content-types-and-content-type-publishing-e1277a2e-a1e8-4473-9126-91a0647766e5
@@ -58,7 +58,7 @@ For more details, see [Introduction to content types and content type publishing
 
 ## JSON representation
 
-The following is a JSON representation of a resource.
+Here's a JSON representation of a resource.
 
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.contentType","keyProperty":"id" } -->
 
