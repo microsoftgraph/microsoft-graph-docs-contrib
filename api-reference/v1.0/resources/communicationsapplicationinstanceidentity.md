@@ -19,10 +19,10 @@ Inherits from [identity](identity.md).
 
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id | String | The object ID of the resource account user in Azure Active Directory. Inherited from **identity**. |
 | displayName | String | The display name associated with the resource account. Inherited from **identity**. |
-| tenantId | String | The tenant ID of the application. |
 | hidden | Boolean | `True` if the participant shouldn't be shown in other participants' rosters. |
+| id | String | The object ID of the resource account user in Azure Active Directory. Inherited from **identity**. |
+| tenantId | String | The tenant ID of the application. |
 
 ## JSON representation
 
