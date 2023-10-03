@@ -79,7 +79,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/eligibilityScheduleInstances",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/privilegedAccess/group/eligibilityScheduleInstances",
   "value": [
     {
       "id": "2b5ed229-4072-478d-9504-a047ebd4b07d_member_326a4063-93c5-4998-9537-969b8cd50297",
