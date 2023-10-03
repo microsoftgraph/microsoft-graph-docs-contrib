@@ -59,7 +59,7 @@ PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code and an [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) object in the response body.
 
 ## Examples
 
