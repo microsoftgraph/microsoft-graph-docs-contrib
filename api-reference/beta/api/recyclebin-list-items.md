@@ -85,14 +85,6 @@ Content-Type: application/json
       "name": "document.docx",
       "size": 1024,
       "deletedDateTime": "2022-04-25T20:11:51Z"
-      "title": "my document"
-      "deletedBy": {
-        "user": {
-          "displayName": "Tenant Admin User",
-          "id": "12"
-          "userPrincipalName": "ksam@microsoft.com"
-        }
-      }
     }
   ]
 }
