@@ -11,18 +11,16 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Represents the identity of a user whose underlying identity isn't available to the application due to privacy restrictions. For example, in a group call, participants other than the one who invited a Skype Consumer user won't have access to the identity of that user in the call roster.
+Represents the identity of a user whose underlying identity isn't available to the application due to privacy restrictions. For example, in a group call, participants other than the one who invited a Skype consumer user don't have access to the identity of that user in the call roster.
 
 Inherits from [identity](identity.md).
 
 ## Properties
 
-| Property                       | Type                        | Description                                                                                                                                       |
-| :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id | String | Inherited from **identity**. The user's encrypted identifier. |
-| displayName | String | Inherited from **identity**. The display name associated with the user. |
+| Property                       | Type                        | Description                     |
+| :----------------------------- | :---------------------------| :-------------------------------|
+| displayName | String | The display name associated with the user. Inherited from **identity**. |
+| id | String | The user's encrypted identifier. Inherited from **identity**. |
 
 ## JSON representation
 
@@ -37,7 +35,7 @@ Here's a JSON representation of the resource.
 } -->
 ```json
 {
-  "id": "String",
-  "displayName": "String"
+  "displayName": "String",
+  "id": "String (identifier)"
 }
 ```
