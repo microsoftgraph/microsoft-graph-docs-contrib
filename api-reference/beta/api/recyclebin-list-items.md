@@ -81,26 +81,18 @@ Content-Type: application/json
 {
    "value": [
     {
-      "@odata.type": "#microsoft.graph.recycleBinItem",
-      "id": "dd933af6-2ec8-31cb-876d-2ce30211a898",
-      "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "createdDateTime": "String (timestamp)",
-      "description": "String",
-      "eTag": "String",
-      "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
-      },
-      "lastModifiedDateTime": "String (timestamp)",
-      "name": "String",
-      "parentReference": {
-        "@odata.type": "microsoft.graph.itemReference"
-      },
-      "webUrl": "String",
-      "size": "Integer",
-      "deletedDateTime": "String (timestamp)",
-      "deletedFromLocation": "String"
+      "id": "5d625d33-338c-4a77-a98a-3e287116440c",
+      "name": "document.docx",
+      "size": 1024,
+      "deletedDateTime": "2022-04-25T20:11:51Z"
+      "title": "my document"
+      "deletedBy": {
+        "user": {
+          "displayName": "Tenant Admin User",
+          "id": "12"
+          "userPrincipalName": "ksam@microsoft.com"
+        }
+      }
     }
   ]
 }
