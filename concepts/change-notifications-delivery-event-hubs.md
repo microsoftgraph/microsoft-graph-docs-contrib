@@ -16,7 +16,7 @@ Good examples of high throughput scenarios include applications subscribing to a
 
 The article guides you through the process of managing your Microsoft Graph subscription and how to receive change notifications through Azure Event Hubs.
 
-## Using Azure Event Hubs to receive change notifications
+## Using Azure Event Hubs to receive change notification
 
 [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs) is a popular real-time events ingestion and distribution service built for scale. You can use Azure Events Hubs instead of traditional webhooks to receive change notifications.  
 Using Azure Event Hubs to receive change notifications differs from webhooks in a few ways, including:
@@ -26,14 +26,14 @@ Using Azure Event Hubs to receive change notifications differs from webhooks in 
 - You'll need to provision an Azure Event Hub.
 - You'll need to provision an Azure Key Vault.
 
-### Set up the Azure KeyVault and Azure Event Hubs
+## Set up the Azure KeyVault and Azure Event Hubs
 
 This section will walk you through the setup of required Azure services.
 
 <!-- Start of "Use Azure CLI" tab-->
 # [Use Azure CLI](#tab/change-notifications-eventhubs-azure-cli)
 
-The [Azure CLI](/cli/azure/what-is-azure-cli) allows you to script and automate adminstrative tasks in Azure. The CLI can be [installed on your local computer](/cli/azure/install-azure-cli) or run directly from the [Azure Cloud Shell](/azure/cloud-shell/quickstart).
+The [Azure CLI](/cli/azure/what-is-azure-cli) allows you to script and automate administrative tasks in Azure. The CLI can be [installed on your local computer](/cli/azure/install-azure-cli) or run directly from the [Azure Cloud Shell](/azure/cloud-shell/quickstart).
 
 ```azurecli
 # --------------
@@ -68,7 +68,7 @@ notificationUrl="EventHub:${keyvaulturi}secrets/${keyvaultsecretname}?tenantId=$
 echo "Notification Url:\n${notificationUrl}"
 ```
 
-> **Note:** The script provided here is compatible with Linux based shells, Windows WSL, and Azure Cloud Shell. It will require some updates to run in Windows shells.
+> **Note:** The script provided here is compatible with Linux-based shells, Windows WSL, and Azure Cloud Shell. It will require some updates to run in Windows shells.
 
 <!-- End of "Use Azure CLI" tab-->
 
@@ -77,7 +77,7 @@ echo "Notification Url:\n${notificationUrl}"
 
 ##### Configuring the Azure Event Hub
 
-In this section you will:
+In this section, you will:
 
 - Create an Azure Event Hub namespace.
 - Add a hub to that namespace that will relay and deliver notifications.
@@ -103,7 +103,7 @@ Steps:
 In order to access the Event Hub securely and to allow for key rotations, Microsoft Graph gets the connection string to the Event Hub through Azure Key Vault.  
 In this section, you will:
 
-- Create an Azure Key Vault to store secret.
+- Create an Azure Key Vault to store the secret.
 - Add the connection string to the Event Hub as a secret.
 - Add an access policy for Microsoft Graph to access the secret.
 
@@ -125,11 +125,11 @@ Steps:
 <!-- End of "Use the Azure portal" tab-->
 ---
 
-### Creating the subscription and receiving notifications
+## Creating the subscription and receiving notifications
 
-After you create the required Azure KeyVault and Azure Event Hubs services, you will be able to create your subscription and start receiving change notifications via Azure Event Hubs.
+After you create the required Azure KeyVault and Azure Event Hub services, you will be able to create your subscription and start receiving change notifications via Azure Event Hubs.
 
-#### Creating the subcription
+#### Creating the subscription
 
 Subscriptions to change notifications with Event Hubs are almost identical to change notifications with webhooks. The key difference is that they rely on Event Hubs to deliver notifications. All other operations are similar, including [subscription creation](/graph/api/subscription-post-subscriptions).  
 
@@ -168,21 +168,21 @@ Before you can receive the notifications in your application, you'll need to cre
 }
 ```
 
-### Subscriptions for rich notifications with large payloads
+## Subscriptions for rich notifications with large payloads
 The maximum message size for Event Hubs is 1 MB.  When you use [rich notifications](/graph/webhooks-with-resource-data?tabs=csharp), you might expect notifications that exceeed this 1 MB limit.  To receive notifications larger than 1 MB through Event Hubs, you must also add a blob storage account to your subscription request.
 
-#### Set up storage and create subscription
+### Set up storage and create a subscription
 1.  [Create a storage account](/azure/storage/common/storage-account-create).
 2.  [Create a container in that storage account](/azure/storage/blobs/blob-containers-portal) and assign it a name.
 3.  [Retrieve the storage account access keys or connection string](/azure/storage/common/storage-account-keys-manage#view-account-access-keys).
 4.  Add the connection string to the key vault and give it a name (this is the secret name).
 5.  Create or recreate your subscription, now including the **blobStoreUrl** property in the following syntax: `blobStoreUrl: "https://<azurekeyvaultname>.vault.azure.net/secrets/<secretname>?tenantId=<domainname>"`
 
-#### Receiving notifications
+### Receiving notifications
 When Event Hubs receives a notification payload that is larger than 1 MB, the Event Hubs notification will not contain the **resource**, **resourceData**, and **encryptedContent** properties that are included in rich notifications. The Event Hubs notification will instead contain an **additionalPayloadStorageId** property with an ID that points to the blob in your storage account where these properties have been stored.
 
 
-### What happens if the Microsoft Graph Change Tracking application is missing?
+## What if the Microsoft Graph Change Tracking application is missing?
 
 It's possible that the **Microsoft Graph Change Tracking** service principal is missing from your tenant, depending on when the tenant was created and administrative operations. The service principal's globally unique **appId** is `0bf30f3b-4a52-48df-9a82-234910c4a086` and you can use this value to confirm whether it exists or create it if it doesn't.
 
