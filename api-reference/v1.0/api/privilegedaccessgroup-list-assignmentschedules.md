@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/privilegedAccess/group/assignmentSchedules?$filter=groupId eq 'groupId'
-GET /identityGovernance/privilegedAccess/group/assignmentSchedules?$filter=principalId eq 'principalId'
+GET /identityGovernance/privilegedAccess/group/assignmentSchedules?$filter=groupId eq '{groupId}'
+GET /identityGovernance/privilegedAccess/group/assignmentSchedules?$filter=principalId eq '{principalId}'
 ```
 
 ## Query parameters
