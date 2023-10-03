@@ -1,9 +1,9 @@
 ---
 title: "awsAuthorizationSystemResource resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents an AWS resource in an AWS authorization system."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an AWS resource in an AWS authorization system.
 
 Inherits from [authorizationSystemResource](../resources/authorizationsystemresource.md).
 
@@ -22,30 +21,21 @@ Inherits from [authorizationSystemResource](../resources/authorizationsystemreso
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List awsAuthorizationSystemResources](../api/awsauthorizationsystem-list-resources.md)|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) collection|Get a list of the [awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) objects and their properties.|
-|[Create awsAuthorizationSystemResource](../api/awsauthorizationsystem-post-resources.md)|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md)|Create a new [awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) object.|
 |[Get awsAuthorizationSystemResource](../api/awsauthorizationsystemresource-get.md)|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md)|Read the properties and relationships of an [awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) object.|
-|[Update awsAuthorizationSystemResource](../api/awsauthorizationsystemresource-update.md)|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md)|Update the properties of an [awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) object.|
-|[Delete awsAuthorizationSystemResource](../api/awsauthorizationsystem-delete-resources.md)|None|Delete an [awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) object.|
-|[List authorizationSystem](../api/awsauthorizationsystemresource-list-authorizationsystem.md)|[authorizationSystem](../resources/authorizationsystem.md) collection|Get the authorizationSystem resources from the authorizationSystem navigation property.|
-|[Add authorizationSystem](../api/awsauthorizationsystemresource-post-authorizationsystem.md)|[authorizationSystem](../resources/authorizationsystem.md)|Add authorizationSystem by posting to the authorizationSystem collection.|
-|[Remove authorizationSystem](../api/awsauthorizationsystemresource-delete-authorizationsystem.md)|None|Remove an [authorizationSystem](../resources/authorizationsystem.md) object.|
-|[List authorizationSystemTypeService](../api/awsauthorizationsystemresource-list-service.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) collection|Get the authorizationSystemTypeService resources from the service navigation property.|
-|[Add authorizationSystemTypeService](../api/awsauthorizationsystemresource-post-service.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|Add service by posting to the service collection.|
-|[Remove authorizationSystemTypeService](../api/awsauthorizationsystemresource-delete-service.md)|None|Remove an [authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
-|externalId|String|**TODO: Add Description** Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|resourceType|String|**TODO: Add Description** Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
+|displayName|String|The name of the resource. Read-only. Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
+|externalId|String|The id of the resource as defined by the authorization system provider. Read-only. Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
+|id|String|The unique encoded identifier of the resource. Inherited from [entity](../resources/entity.md). Read-only.|
+|resourceType|String|The type of the resource. Read-only. Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|**TODO: Add Description** Inherited from [microsoft.graph.authorizationSystemResource](../resources/authorizationsystemresource.md)|
-|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|**TODO: Add Description**|
+|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|The authorization system that the resource is in. Inherited from [microsoft.graph.authorizationSystemResource](../resources/authorizationsystemresource.md)|
+|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|The service associated with the resource in an AWS authorization system.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
