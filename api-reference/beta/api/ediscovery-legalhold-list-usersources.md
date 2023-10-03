@@ -15,6 +15,8 @@ Namespace: microsoft.graph.ediscovery
 
 Get the list of [userSource](../resources/ediscovery-usersource.md) objects associated with a legal hold.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

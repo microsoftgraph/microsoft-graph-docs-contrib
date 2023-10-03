@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update the role of a [conversationMember](../resources/conversationmember.md) in a [team](../resources/team.md) or [channel](../resources/channel.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -37,11 +39,11 @@ PATCH /teams/{id}/channels/{id}/members/{id}
 
 ## Request body
 
-In the request body, supply the values for the relevant fields to update. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for the relevant fields to update. Existing properties that aren't included in the request body maintains their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|roles|string collection|The roles for that user. Must be "owner" or empty. Guest users must always have role "guest" and cannot change. |
+|roles|string collection|The roles for that user. Must be "owner" or empty. Guest users must always have role "guest" and can't change. |
 
 ## Response
 
@@ -51,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 
 ### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -71,7 +73,7 @@ content-length: 26
 
 ### Response
 
-Here is an example of the response.
+Here's an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

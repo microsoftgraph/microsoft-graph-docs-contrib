@@ -1,6 +1,6 @@
 ---
 title: "dispositionReviewStage resource type"
-description: "Represents a multi-level review process where the reviewers indicate at each stage of the disposition whether to delete or further retain the content item.."
+description: "Represents a multi-level review process where the reviewers indicate at each stage of the disposition whether to delete or further retain the content item."
 author: "sseth"
 ms.localizationpriority: medium
 ms.prod: "compliance"
@@ -36,7 +36,7 @@ For details, see [Disposition of content](/microsoft-365/compliance/disposition)
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

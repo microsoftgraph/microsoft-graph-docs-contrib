@@ -16,6 +16,8 @@ Get a set of [todoTaskList](../resources/todotasklist.md) resources that have be
 A **delta** function call for **todoTaskList** is similar to a GET request, except that by appropriately applying [state tokens](/graph/delta-query-overview) in one or more of these calls, 
 you can query for incremental changes in the **todoTaskList**. This allows you to maintain and synchronize a local store of a user's **todoTaskList** without having to fetch all the **todoTaskList** from the server every time.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

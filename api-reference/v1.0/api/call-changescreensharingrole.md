@@ -15,6 +15,8 @@ Allow applications to share screen content with the participants of a group call
 
 > **Note:** This is only supported for group calls that use App-Hosted Media.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

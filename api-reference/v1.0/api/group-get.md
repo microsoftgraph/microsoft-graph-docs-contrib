@@ -13,9 +13,11 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of a group object.
 
-This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, specify them in a `$select` OData query option. The **hasMembersWithLicenseErrors** and **isArchived** properties are an exception and are not returned in the `$select` query.
+This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that aren't_ returned by default, specify them in a `$select` OData query option. The **hasMembersWithLicenseErrors** and **isArchived** properties are an exception and aren't returned in the `$select` query.
 
 > **Note:** This request might have replication delays for groups that were recently created, updated, or deleted.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -37,7 +39,7 @@ GET /groups/{id}
 
 ## Optional query parameters
 
-You can use `$select` to get specific group properties, including those that are not returned by default. Extension properties also support query parameters as follows:
+You can use `$select` to get specific group properties, including those that aren't returned by default. Extension properties also support query parameters as follows:
 
 | Extension type       | Comments                                                                       |
 |----------------------|--------------------------------------------------------------------------------|
@@ -55,7 +57,7 @@ For more information on OData query options, see [OData Query Parameters](/graph
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -69,7 +71,7 @@ Return all default properties.
 
 #### Request
 
-The following is an example of a GET request.
+Here's an example of a GET request.
 
 
 # [HTTP](#tab/http)
@@ -119,7 +121,7 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 
 #### Response
 
-The following is an example of the response. It includes only the default properties.
+Here's an example of the response. It includes only the default properties.
 
 > **Note:** The response object shown here might be shortened for readability. All the default properties are returned in an actual call.
 
@@ -177,13 +179,13 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Return additional properties by using $select
+### Example 2: Return more properties by using $select
 
-Return additional properties by using `$select`.
+Return more properties by using `$select`.
 
 #### Request
 
-The following is an example of a GET request.
+Here's an example of a GET request.
 
 # [HTTP](#tab/http)
 
@@ -233,7 +235,7 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 
 #### Response
 
-The following is an example of the response which includes the requested non-default properties.
+Here's an example of the response that includes the requested non-default properties.
 
 <!-- {
   "blockType": "response",

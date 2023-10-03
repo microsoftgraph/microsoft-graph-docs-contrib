@@ -35,7 +35,7 @@ passwordCredentialConfiguration.SetRestrictForAppsCreatedAfterDateTime(&restrict
 passwordCredentialConfiguration1 := graphmodels.NewPasswordCredentialConfiguration()
 restrictionType := graphmodels.PASSWORDLIFETIME_APPCREDENTIALRESTRICTIONTYPE 
 passwordCredentialConfiguration1.SetRestrictionType(&restrictionType) 
-maxLifetime , err := abstractions.ParseISODuration("P4DT12H30M5S")
+maxLifetime , err := abstractions.ParseISODuration("P90D")
 passwordCredentialConfiguration1.SetMaxLifetime(&maxLifetime) 
 restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2014-10-19T10:37:00Z")
 passwordCredentialConfiguration1.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
@@ -49,7 +49,7 @@ passwordCredentialConfiguration2.SetRestrictForAppsCreatedAfterDateTime(&restric
 passwordCredentialConfiguration3 := graphmodels.NewPasswordCredentialConfiguration()
 restrictionType := graphmodels.SYMMETRICKEYLIFETIME_APPCREDENTIALRESTRICTIONTYPE 
 passwordCredentialConfiguration3.SetRestrictionType(&restrictionType) 
-maxLifetime , err := abstractions.ParseISODuration("P4D")
+maxLifetime , err := abstractions.ParseISODuration("P30D")
 passwordCredentialConfiguration3.SetMaxLifetime(&maxLifetime) 
 restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2014-10-19T10:37:00Z")
 passwordCredentialConfiguration3.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
