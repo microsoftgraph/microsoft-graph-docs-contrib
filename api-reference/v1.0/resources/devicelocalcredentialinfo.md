@@ -23,8 +23,8 @@ Represents local administrator credential information for all device objects in 
 |Property|Type|Description|
 |:---|:---|:---|
 |credentials|[deviceLocalCredential](../resources/devicelocalcredential.md) collection|The credentials of the device's local administrator account backed up to Azure Active Directory.|
-|id|String| ID of the device that the local credentials are associated with Key. This is same as **deviceId** in the [device](device.md) object.|
 |deviceName|String|Display name of the device that the local credentials are associated with.|
+|id|String| ID of the device that the local credentials are associated with Key. This is same as **deviceId** in the [device](device.md) object.|
 |lastBackupDateTime|DateTimeOffset|When the local administrator account credential was backed up to Azure Active Directory.|
 |refreshDateTime|DateTimeOffset|When the local administrator account credential will be refreshed and backed up to Azure Active Directory.|
 
