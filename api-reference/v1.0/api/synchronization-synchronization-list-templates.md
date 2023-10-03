@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 List the synchronization templates associated with a given application or service principal.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -39,16 +41,16 @@ GET applications/{id}/synchronization/templates
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ### Response
 
-If successful, this method returns a `200 OK` response code and acollection of [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) objects in the response body.
 
 ### Example
 
 ##### Request
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -94,7 +96,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/temp
 ---
 
 ##### Response
-The following is an example of a response.
+Here's an example of a response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned in an actual call.
 <!-- {
   "blockType": "response",

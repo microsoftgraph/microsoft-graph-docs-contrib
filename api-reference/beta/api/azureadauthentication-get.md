@@ -14,12 +14,15 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [azureADAuthentication](../resources/azureadauthentication.md) object to find the level of Azure AD authentication availability for your tenant. The Azure AD Service Level Agreement (SLA) commits to at least 99.99% authentication availability, as described in [Azure Active Directory SLA performance](/azure/active-directory/reports-monitoring/reference-azure-ad-sla-performance). This object provides you with your tenant’s actual performance against this commitment.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Reports.Read.All |
+| Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Reports.Read.All |
 
 In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):

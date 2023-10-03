@@ -19,6 +19,8 @@ The workflow engine periodically evaluates the users that meet the execution con
 
 The API is only supported for workflows with [trigger and scope based](../resources/identitygovernance-triggerandscopebasedconditions.md) [execution conditions](../resources/identitygovernance-workflowexecutionconditions.md). Furthermore, results are only returned if the workflows schedule (isSchedulingEnabled) is enabled.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -52,9 +52,9 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns `200 OK` response code and [Range](../resources/workbookrange.md) object in the response body.
 
 ## Example
-Here is an example of how to call this API.
+Here's an example of how to call this API.
 ##### Request
-Here is an example of the request.
+Here's an example of the request.
 <!-- {
   "blockType": "request",
   "name": "range_intersection"
@@ -69,7 +69,7 @@ Content-type: application/json
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here's an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

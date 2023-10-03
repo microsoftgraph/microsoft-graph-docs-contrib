@@ -17,6 +17,8 @@ Delete an [accessPackageAssignmentRequestWorkflowExtension](../resources/accessp
 2. Use the access package catalog ID and retrieve the ID of the **accessPackageCustomWorkflowExtension** object that you want to delete by running the [List accessPackageCustomWorkflowExtensions](accesspackagecatalog-list-accesspackagecustomworkflowextensions.md) operation.
 3. Call the [Update accessPackageAssignmentPolicy](accesspackageassignmentpolicy-update.md) operation to remove the custom workflow extension object from the policy. For an example, see [Example 3: Remove the customExtensionStageSettings from a policy](accesspackageassignmentpolicy-update.md#example-3-remove-the-customextensionstagesettings-from-a-policy).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

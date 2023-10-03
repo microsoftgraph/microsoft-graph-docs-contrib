@@ -1,5 +1,5 @@
 ---
-title: Create customerPaymentJournals 
+title: Create customerPaymentJournals
 description: Creates a customer payments journal object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Creates a customer payment journal object in Dynamics 365 Business Central.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -29,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-POST /financials/companies/{id}/customerPaymentJournals/{id}
+POST /financials/companies/{id}/customerPaymentJournals
 ```
 
 ## Optional query parameters
