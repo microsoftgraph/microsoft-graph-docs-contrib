@@ -56,7 +56,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-Here's an example of a request.
+The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -79,7 +79,7 @@ DELETE https://graph.microsoft.com/beta/users/{user-id}/sponsors/{directory-obje
 
 ### Response
 
-Here's an example of the response.
+The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
