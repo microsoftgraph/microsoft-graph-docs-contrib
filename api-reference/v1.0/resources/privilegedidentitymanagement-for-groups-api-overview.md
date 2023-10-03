@@ -5,7 +5,7 @@ author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
-ms.date: 09/13/2023
+ms.date: 10/03/2023
 ---
 
 # Govern membership and ownership of groups using PIM for groups
@@ -90,9 +90,9 @@ You can't onboard a group to PIM for groups explicitly. When you request to add 
 
 You can call [List assignmentScheduleRequests](../api/privilegedaccessgroup-list-assignmentschedulerequests.md), [List assignmentSchedules](../api/privilegedaccessgroup-list-assignmentschedules.md), [List assignmentScheduleInstances](../api/privilegedaccessgroup-list-assignmentscheduleinstances.md), [List eligibilityScheduleRequests](../api/privilegedaccessgroup-list-eligibilityschedulerequests.md), [List eligibilitySchedules](../api/privilegedaccessgroup-list-eligibilityschedules.md), and [List eligibilityScheduleInstances](../api/privilegedaccessgroup-list-eligibilityscheduleinstances.md) APIs for both groups that are onboarded to PIM and groups that aren't onboarded to PIM yet, but we recommend doing it only for groups that are onboarded to PIM to reduce the chances of getting throttled
 
-After group onboarding, Ids of the PIM Policies and Policy Assignments of the specific group change. Call [Get unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-get.md), [Get unifiedRoleManagementPolicyAssignment](../api/unifiedrolemanagementpolicyassignment-get.md) to get the updated Ids.
+After PIM onboards a group, IDs of the PIM policies and policy assignments of the specific group change. Call the [Get unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-get.md) or [Get unifiedRoleManagementPolicyAssignment](../api/unifiedrolemanagementpolicyassignment-get.md) API to get the updated IDs.
 
-Once group is onboarded to PIM, you can't offboard it, but you can remove all eligible and time-bound assignments as necessary.
+Once PIM onboards a group, you can't offboard it, but you can remove all eligible and time-bound assignments as necessary.
 
 ## PIM for groups and the group object
 
