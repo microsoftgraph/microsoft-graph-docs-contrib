@@ -184,9 +184,19 @@ When Event Hubs receives a notification payload that is larger than 1 MB, the Ev
 
 ### What happens if the Microsoft Graph Change Tracking application is missing?
 
-It's possible that the **Microsoft Graph Change Tracking** service principal is missing from your tenant, depending on when the tenant was created and administrative operations. To resolve this issue, run [the following query](https://developer.microsoft.com/en-us/graph/graph-explorer?request=servicePrincipals&method=POST&version=v1.0&GraphUrl=https://graph.microsoft.com&requestBody=eyJhcHBJZCI6IjBiZjMwZjNiLTRhNTItNDhkZi05YTgyLTIzNDkxMGM0YTA4NiJ9) in [Microsoft Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer).
+It's possible that the **Microsoft Graph Change Tracking** service principal is missing from your tenant, depending on when the tenant was created and administrative operations. The service principal's globally unique **appId** is `0bf30f3b-4a52-48df-9a82-234910c4a086` and you can use this value to confirm whether it exists or create it if it doesn't.
 
-Query details: `0bf30f3b-4a52-48df-9a82-234910c4a086` is the global appId for the Microsoft Graph Change Tracking application.
+To confirm whether the service principal exists in your tenant, run the following query. If the service principal exists, the request returns a `200 OK` response code and the corresponding **Microsoft Graph Change Tracking** object in the response body.
+
+<!-- {
+  "blockType": "request",
+  "name": "change-notifications-eventhubs-get-changetrackingapp-sp"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='0bf30f3b-4a52-48df-9a82-234910c4a086')
+```
+
+If the service principal doesn't exist, create it as follows.
 
 # [HTTP](#tab/http)
 <!-- {
