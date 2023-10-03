@@ -17,11 +17,11 @@ Inherits from [identity](identity.md).
 
 ## Properties
 
-| Property                       | Type                        | Description                                                                                                                                       |
-| :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| azureCommunicationServicesResourceId | String |  The Azure Communication Services resource ID associated with the user. |
-| displayName | String | The display name associated with the user. Inherited from **identity**. |
-| id | String | The unique identifier for the user. Inherited from **identity**. |
+| Property                             | Type   | Description                                                             |
+|:-------------------------------------|:-------|:------------------------------------------------------------------------|
+| azureCommunicationServicesResourceId | String | The Azure Communication Services resource ID associated with the user.  |
+| displayName                          | String | The display name associated with the user. Inherited from **identity**. |
+| id                                   | String | The unique identifier for the user. Inherited from **identity**.        |
 
 ## JSON representation
 
