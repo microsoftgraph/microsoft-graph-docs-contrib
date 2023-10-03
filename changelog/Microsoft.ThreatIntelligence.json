@@ -376,14 +376,6 @@
       "ChangeList": [
         {
           "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [Get whoisRecord for a host](https://learn.microsoft.com/en-us/graph/api/security-host-get-whois?view=graph-rest-beta) method to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
-          "Target": "host"
-        },
-        {
-          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
           "ApiChange": "Relationship",
           "ChangedApiName": "whois",
           "ChangeType": "Addition",
