@@ -1,7 +1,7 @@
 ---
 author: "vanshisingh"
 description: "Get newly created, updated, or deleted list items without having to perform a full read of the entire items collection."
-title: "lisItem: delta"
+title: "listItem: delta"
 ms.localizationpriority: "medium"
 ms.prod: "sharepoint"
 doc_type: apiPageType
