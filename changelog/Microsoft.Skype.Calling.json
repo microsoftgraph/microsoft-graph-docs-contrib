@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "azureCommunicationServicesUserIdentity",
           "ChangeType": "Addition",
-          "Description": "Added the [azureCommunicationServicesUserIdentity](https://docs.microsoft.com/en-us/graph/api/resources/azurecommunicationservicesuseridentity?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the [azureCommunicationServicesUserIdentity](https://docs.microsoft.com/en-us/graph/api/resources/azurecommunicationservicesuseridentity?view=graph-rest-1.0) resource type.",
           "Target": "azureCommunicationServicesUserIdentity"
         },
         {
@@ -15,7 +15,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "communicationsApplicationIdentity",
           "ChangeType": "Addition",
-          "Description": "Added the [communicationsApplicationIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsapplicationidentity?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the [communicationsApplicationIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsapplicationidentity?view=graph-rest-1.0) resource type.",
           "Target": "communicationsApplicationIdentity"
         },
         {
@@ -23,7 +23,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "communicationsApplicationInstanceIdentity",
           "ChangeType": "Addition",
-          "Description": "Added the [communicationsApplicationInstanceIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsapplicationinstanceidentity?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the [communicationsApplicationInstanceIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsapplicationinstanceidentity?view=graph-rest-1.0) resource type.",
           "Target": "communicationsApplicationInstanceIdentity"
         },
         {
@@ -31,7 +31,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "communicationsEncryptedIdentity",
           "ChangeType": "Addition",
-          "Description": "Added the [communicationsEncryptedIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsencryptedidentity?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the [communicationsEncryptedIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsencryptedidentity?view=graph-rest-1.0) resource type.",
           "Target": "communicationsEncryptedIdentity"
         },
         {
@@ -39,7 +39,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "communicationsGuestIdentity",
           "ChangeType": "Addition",
-          "Description": "Added the [communicationsGuestIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsguestidentity?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the [communicationsGuestIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsguestidentity?view=graph-rest-1.0) resource type.",
           "Target": "communicationsGuestIdentity"
         },
         {
@@ -47,7 +47,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "communicationsIdentitySet",
           "ChangeType": "Addition",
-          "Description": "Added the [communicationsIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/communicationsidentityset?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the [communicationsIdentitySet](https://docs.microsoft.com/en-us/graph/api/resources/communicationsidentityset?view=graph-rest-1.0) resource type.",
           "Target": "communicationsIdentitySet"
         },
         {
@@ -55,7 +55,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "communicationsPhoneIdentity",
           "ChangeType": "Addition",
-          "Description": "Added the [communicationsPhoneIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsphoneidentity?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the [communicationsPhoneIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsphoneidentity?view=graph-rest-1.0) resource type.",
           "Target": "communicationsPhoneIdentity"
         },
         {
@@ -63,7 +63,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "communicationsUserIdentity",
           "ChangeType": "Addition",
-          "Description": "Added the [communicationsUserIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsuseridentity?view=graph-rest-v1.0) resource type.",
+          "Description": "Added the [communicationsUserIdentity](https://docs.microsoft.com/en-us/graph/api/resources/communicationsuseridentity?view=graph-rest-1.0) resource type.",
           "Target": "communicationsUserIdentity"
         }
       ],
