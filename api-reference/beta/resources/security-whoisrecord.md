@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents a WHOIS record that contains information about a registered [host](../resources/security-host.md), the contacts for the registered **host**, and other metadata about the registration.
+Represents a WHOIS record that Microsoft Defender Threat Intelligence has detected, and that contains information about a registered [host](../resources/security-host.md), the contacts for the registered **host**, and other metadata about the registration.
 
 Inherits from [whoisBaseRecord](../resources/security-whoisbaserecord.md).
 

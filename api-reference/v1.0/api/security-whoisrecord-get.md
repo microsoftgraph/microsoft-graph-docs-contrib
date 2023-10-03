@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 Get the specified [whoisRecord](../resources/security-whoisrecord.md) resource. 
 
-You can identify a [host](../resources/security-host.md) and get its current **whoisRecord**. Or, you can specify an **id** value to get the corresponding **whoisRecord** which has been detected by Microsoft Defender Threat Intelligence.
+You can identify a [host](../resources/security-host.md) and get its current **whoisRecord**. Or, you can specify an **id** value to get the corresponding **whoisRecord**.
 
 
 ## Permissions
