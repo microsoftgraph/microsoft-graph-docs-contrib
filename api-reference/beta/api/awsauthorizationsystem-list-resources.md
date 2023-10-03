@@ -1,6 +1,6 @@
 ---
 title: "List awsAuthorizationSystemResources"
-description: "Get a list of the awsAuthorizationSystemResource objects and their properties for a provided AWS authorization system."
+description: "List the awsAuthorizationSystemResource objects and their properties for a provided AWS authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) objects and their properties for a provided AWS authorization system.
+List the [awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) objects and their properties for a provided AWS authorization system.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get an AWS resource for a provided AWS authorization system.
+### Example 1: List the AWS resources for a provided AWS authorization system.
 
 #### Request
 The following is an example of a request.

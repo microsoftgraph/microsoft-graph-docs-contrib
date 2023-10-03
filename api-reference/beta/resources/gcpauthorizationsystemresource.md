@@ -1,9 +1,9 @@
 ---
 title: "gcpAuthorizationSystemResource resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents a GCP resource in an GCP authorization system."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents a GCP resource in a GCP authorization system.
 
 Inherits from [authorizationSystemResource](../resources/authorizationsystemresource.md).
 
@@ -22,30 +21,22 @@ Inherits from [authorizationSystemResource](../resources/authorizationsystemreso
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List gcpAuthorizationSystemResources](../api/gcpauthorizationsystem-list-resources.md)|[gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md) collection|Get a list of the [gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md) objects and their properties.|
-|[Create gcpAuthorizationSystemResource](../api/gcpauthorizationsystem-post-resources.md)|[gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md)|Create a new [gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md) object.|
 |[Get gcpAuthorizationSystemResource](../api/gcpauthorizationsystemresource-get.md)|[gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md)|Read the properties and relationships of a [gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md) object.|
-|[Update gcpAuthorizationSystemResource](../api/gcpauthorizationsystemresource-update.md)|[gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md)|Update the properties of a [gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md) object.|
-|[Delete gcpAuthorizationSystemResource](../api/gcpauthorizationsystem-delete-resources.md)|None|Delete a [gcpAuthorizationSystemResource](../resources/gcpauthorizationsystemresource.md) object.|
-|[List authorizationSystem](../api/gcpauthorizationsystemresource-list-authorizationsystem.md)|[authorizationSystem](../resources/authorizationsystem.md) collection|Get the authorizationSystem resources from the authorizationSystem navigation property.|
-|[Add authorizationSystem](../api/gcpauthorizationsystemresource-post-authorizationsystem.md)|[authorizationSystem](../resources/authorizationsystem.md)|Add authorizationSystem by posting to the authorizationSystem collection.|
-|[Remove authorizationSystem](../api/gcpauthorizationsystemresource-delete-authorizationsystem.md)|None|Remove an [authorizationSystem](../resources/authorizationsystem.md) object.|
-|[List authorizationSystemTypeService](../api/gcpauthorizationsystemresource-list-service.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) collection|Get the authorizationSystemTypeService resources from the service navigation property.|
-|[Add authorizationSystemTypeService](../api/gcpauthorizationsystemresource-post-service.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|Add service by posting to the service collection.|
-|[Remove authorizationSystemTypeService](../api/gcpauthorizationsystemresource-delete-service.md)|None|Remove an [authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description** Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
-|externalId|String|**TODO: Add Description** Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|resourceType|String|**TODO: Add Description** Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
+|:---|:---|:---|
+|displayName|String|The name of the resource. Read-only. Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
+|externalId|String|The id of the resource as defined by the authorization system provider. Read-only. Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
+|id|String|The unique encoded identifier of the resource. Inherited from [entity](../resources/entity.md). Read-only.|
+|resourceType|String|The type of the resource. Read-only. Inherited from [authorizationSystemResource](../resources/authorizationsystemresource.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|**TODO: Add Description** Inherited from [microsoft.graph.authorizationSystemResource](../resources/authorizationsystemresource.md)|
-|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|**TODO: Add Description**|
+|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|The authorization system that the resource is in. Inherited from [microsoft.graph.authorizationSystemResource](../resources/authorizationsystemresource.md)|
+|service|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|The service associated with the resource in an GCP authorization system.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

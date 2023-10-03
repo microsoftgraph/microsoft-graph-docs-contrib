@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and an [azureAuthori
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_awsauthorizationsystemresource"
+  "name": "get_azureauthorizationsystemresource"
 }
 -->
 ``` http
@@ -72,7 +72,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.awsAuthorizationSystemResource"
+  "@odata.type": "microsoft.graph.azureAuthorizationSystemResource"
 }
 -->
 ``` http
@@ -104,7 +104,7 @@ Returns collection of all azureRbacEntitlement objects, which represent the comb
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_awsauthorizationsystemresource"
+  "name": "get_azureauthorizationsystemresource"
 }
 -->
 ``` http
@@ -118,7 +118,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.awsAuthorizationSystemResource"
+  "@odata.type": "microsoft.graph.azureAuthorizationSystemResource"
 }
 -->
 ``` http

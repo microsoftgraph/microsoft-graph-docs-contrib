@@ -1,6 +1,6 @@
 ---
 title: "List azureAuthorizationSystemResources"
-description: "Get a list of the azureAuthorizationSystemResource objects and their properties for a provided Azure authorization system."
+description: "List the azureAuthorizationSystemResource objects and their properties for a provided Azure authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [azureAuthorizationSystemResource](../resources/azureauthorizationsystemresource.md) objects and their properties for a provided Azure authorization system.
+List the [azureAuthorizationSystemResource](../resources/azureauthorizationsystemresource.md) objects and their properties for a provided Azure authorization system.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_awsauthorizationsystemresource"
+  "name": "list_azureauthorizationsystemresource"
 }
 -->
 ``` http
@@ -72,7 +72,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.awsAuthorizationSystemResource)"
+  "@odata.type": "Collection(microsoft.graph.azureAuthorizationSystemResource)"
 }
 -->
 ``` http
@@ -113,7 +113,7 @@ Returns collection of all azureAuthorizationSystemResource entities for a provid
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_awsauthorizationsystemresource"
+  "name": "get_azureauthorizationsystemresource"
 }
 -->
 ``` http
@@ -127,7 +127,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.awsAuthorizationSystemResource"
+  "@odata.type": "microsoft.graph.azureAuthorizationSystemResource"
 }
 -->
 ``` http
