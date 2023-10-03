@@ -19,9 +19,9 @@ Inherits from [identity](identity.md).
 
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id | String | Inherited from **identity**. A unique ID identifying the user. |
-| displayName | String | Inherited from **identity**. The display name associated with the user. |
 | azureCommunicationServicesResourceId | String |  The Azure Communication Services resource ID associated with the user. |
+| displayName | String | The display name associated with the user. Inherited from **identity**. |
+| id | String | The unique identifier for the user. Inherited from **identity**. |
 
 ## JSON representation
 
@@ -37,8 +37,8 @@ The following is a JSON representation of the resource.
 } -->
 ```json
 {
-  "id": "String",
+  "azureCommunicationServicesResourceId": "String",
   "displayName": "String",
-  "azureCommunicationServicesResourceId": "String"
+  "id": "String"
 }
 ```
