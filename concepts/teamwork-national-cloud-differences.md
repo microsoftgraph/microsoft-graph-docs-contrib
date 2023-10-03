@@ -67,7 +67,7 @@ This section describes implementation differences in the Microsoft Graph for the
 | **Messaging**            |                                                          |
 [Export content](/microsoftteams/export-teams-content) | APIs to export chat and channel messages are not supported. 
 | **Team Membership**            |                                                          |
-Membership | Membership APIs to add, delete guests are not supported.
+Membership | Membership APIs to add and delete guests are not supported.
 | **Change notifications**            |                                                          |
 [Change notifications](/graph/api/resources/webhooks) | Change notifications are not supported for Microsoft Teams resources. 
 | **Meeting transcripts**            |                                                          |
