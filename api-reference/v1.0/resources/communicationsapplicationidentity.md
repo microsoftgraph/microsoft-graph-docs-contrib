@@ -42,6 +42,6 @@ Here's a JSON representation of the resource.
   "applicationType": "String",
   "displayName": "String",
   "hidden": "Boolean",
-  "id": "String"
+  "id": "String (identifier)"
 }
 ```
