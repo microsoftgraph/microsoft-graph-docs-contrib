@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /identityGovernance/privilegedAccess/group/eligibilityScheduleRequests
 ```
 
-## Optional query parameters
+## Query parameters
 This method requires the `$filter` (`eq`) query parameter to scope the request to a **principalId** or a **groupId**.
 
 This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
