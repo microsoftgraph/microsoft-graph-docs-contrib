@@ -128,6 +128,7 @@ Content-type: application/json
             "appDisplayName": "",
             "dataType": "String",
             "isSyncedFromOnPremises": false,
+            "isMultiValued": true,
             "name": "extension_25883231668a43a780b25685c3f874bc_jobGroup",
             "targetObjects": [
                 "User"
@@ -139,6 +140,7 @@ Content-type: application/json
             "appDisplayName": "",
             "dataType": "String",
             "isSyncedFromOnPremises": false,
+            "isMultiValued": true,
             "name": "extension_25883231668a43a780b25685c3f874bc_cpiminternal_useAccountEnabledForPhone",
             "targetObjects": [
                 "User"
