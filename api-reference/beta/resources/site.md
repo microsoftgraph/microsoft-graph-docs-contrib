@@ -114,6 +114,7 @@ The `root` identifier always references the root site for a given target, as fol
 | **sites**           | Collection([site][])                                                            | The collection of the sub-sites under this site.                                                                                           |
 | **termStore**       | [microsoft.graph.termStore.store]                                               | The termStore under this site.                                                                                                             |
 | **externalColumns** | Collection([columnDefinition][])                                                | The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site. |
+| **recyclebin** | Collection([recyclebin][])                                                | The collection of recyclebin items under the site. |
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
@@ -130,6 +131,7 @@ The `root` identifier always references the root site for a given target, as fol
 [sharepointIds]: sharepointids.md
 [siteCollection]: sitecollection.md
 [microsoft.graph.termStore.store]: termstore-store.md
+[recyclebin]: recyclebin-list-items.md
 
 ## JSON representation
 
