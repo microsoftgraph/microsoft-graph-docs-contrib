@@ -1,9 +1,9 @@
 ---
 title: "Get azureAuthorizationSystemResource"
-description: "Read the properties and relationships of an azureAuthorizationSystemResource object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Read the properties and relationships of an azureAuthorizationSystemResource object for a provided Azure authorization system."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [azureAuthorizationSystemResource](../resources/azureauthorizationsystemresource.md) object.
+Read the properties and relationships of an [azureAuthorizationSystemResource](../resources/azureauthorizationsystemresource.md) object for a provided Azure authorization system.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+[!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
 
 ## HTTP request
 
@@ -30,10 +32,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /external/authorizationSystems/{computedId}/graph.azureAuthorizationSystem/resources/{resourceId}
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$expand` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -49,25 +52,27 @@ If successful, this method returns a `200 OK` response code and an [azureAuthori
 
 ## Examples
 
-### Request
+### Example 1: Get an Azure resource for a provided Azure authorization system.
+
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_azureauthorizationsystemresource"
+  "name": "get_awsauthorizationsystemresource"
 }
 -->
 ``` http
-
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.azureAuthorizationSystem/resources/L3N1YnNjcmlwdGlvbnMvZTE2MGIzNGItMmEwZi00MWY2
 ```
 
 
-### Response
-The following is an example of the response
+#### Response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.azureAuthorizationSystemResource"
+  "@odata.type": "microsoft.graph.awsAuthorizationSystemResource"
 }
 -->
 ``` http
@@ -75,13 +80,65 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.azureAuthorizationSystemResource",
-    "id": "24a8b14b-ae75-cec8-cf1e-3f8aafce6caa",
-    "externalId": "String",
-    "displayName": "String",
-    "resourceType": "String"
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/resources",
+  "value": [
+    {
+      "id": "L3N1YnNjcmlwdGlvbnMvZTE2MGIzNGItMmEwZi00MWY2",
+      "externalId": "/subscriptions/e160b34b-2a0f-41f6-aaf3-09c5a9f43768/resourceGroups/2eResourceGroup/providers/Microsoft.Network/virtualNetworks/2eResourceGroup-vnet",
+      "displayName": "2eResourceGroup/2eResourceGroup-vnet",
+      "resourceType": "virtualNetworks",
+      "service": {
+        "id": "Microsoft.Network"
+      }
+    }
+  ]
+}
+```
+
+### Example 2: Get entitlements for a specific Azure resource.
+
+Returns collection of all azureRbacEntitlement objects, which represent the combination of an Azure role definition that grants an identity access to an authorized system resource, the associated identity, and an optional source identity where the assigned permission was inherited.
+
+#### Request
+
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "get_awsauthorizationsystemresource"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/microsoft.graph.azureAuthorizationSystem/resources/{resourceId}/entitlements
+```
+
+
+#### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.awsAuthorizationSystemResource"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/microsoft.graph.azureAuthorizationSystem/resources/{resourceId}/entitlements",
+  "value": [
+    {
+      "@odata.type": "microsoft.graph.azureRbacEntitlement",
+      "id": "YXJuOmF3czpzMzo6OjAwLXNldHRpbmdzLWFsbC1icC1ub25lLWFjbC1vd25lci1lbmNyeXB0aW9uLW5vbmU=",
+      "identity@odata.bind": "https://graph.microsoft.com/beta/external/authorizationSystem/{computedId}/microsoft.graph.azureAuthorizationSystem/associatedIdentities/all/{identityId}",
+      "sourceIdentity@odata.bind": "https://graph.microsoft.com/beta/external/authorizationSystem/{computedId}/microsoft.graph.azureAuthorizationSystem/associatedIdentities/all/{sourceIdentityId}",
+      "azureRoleDefinition@odata.bind": "https://graph.microsoft.com/beta/external/authorizationSystem/{computedId}/microsoft.graph.azureAuthorizationSystem/roleDefinitions/{rolePolicyId}",
+      "lastUsedDateTime": "1549311775000"
+    },
+    ...
+  ],
+  "@odata.nextLink": https://graph.microsoft.com/beta/external/authorizationSystem/{computedId}/resources/{resourceId}/microsoft.graph.azureAuthorizationSystem/entitlements?$skiptoken={encodedPageTokenEntitlements}
 }
 ```
 
