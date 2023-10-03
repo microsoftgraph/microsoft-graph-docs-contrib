@@ -13,7 +13,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get a list of [passiveDnsRecord](../resources/security-passivednsrecord.md) resources associated to a host.
+Get a list of [passiveDnsRecord](../resources/security-passivednsrecord.md) resources associated with a [host](../resources/security-host.md).
+
+This is a forward DNS lookup which queries the IP address of the specified host using its hostname. 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
