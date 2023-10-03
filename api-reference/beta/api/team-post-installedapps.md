@@ -18,7 +18,7 @@ Install an [app](../resources/teamsapp.md) to the specified [team](../resources/
 > [!NOTE]
 > Installing an app with resource-specific consent (RSC) permissions isn't supported in an application context. If you install an app with RSC permissions, it will return the error `412 - Precondition Failed` with `Failed to execute TeamsGraphService backend request IsUserAuthorizedToGrantGroupResourceSpecificPermissionsRequest.Workload Unknown`.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
