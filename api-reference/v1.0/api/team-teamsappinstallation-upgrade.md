@@ -16,7 +16,7 @@ Upgrade an [app installation](../resources/teamsappinstallation.md) in a [team](
 > **Note:**
 > - Currently, upgrading an app that requires resource-specific consent permissions is not supported in an application context.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

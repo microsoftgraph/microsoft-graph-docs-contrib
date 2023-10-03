@@ -17,7 +17,7 @@ Retrieve the list of [tabs](../resources/teamstab.md) in the specified [channel]
 
 > **Note**: The Files tab is native to a channel or chat and isn't returned by this API.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
