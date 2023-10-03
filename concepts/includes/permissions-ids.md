@@ -466,6 +466,11 @@ ms.date: 09/08/2023
 | Place.Read.All                                          | Application | 913b9306-0ce1-42b8-9137-6a7df690a760 |
 | Place.Read.All                                          | Delegated   | cb8f45a0-5c2e-4ea1-b803-84b870a7d7ec |
 | Place.ReadWrite.All                                     | Delegated   | 4c06a06a-098a-4063-868e-5dfee3827264 |
+| PlaceDevice.Read.All                                    | Application | 8b724a84-ceac-4fd9-897e-e31ba8f2d7a3 |
+| PlaceDevice.Read.All                                    | Delegated   | 4c7f93d2-6b0b-4e05-91aa-87842f0a2142 |
+| PlaceDevice.ReadWrite.All                               | Application | 2d510721-5c4e-43cd-bfdb-ac0f8819fb92 |
+| PlaceDevice.ReadWrite.All                               | Delegated   | eafd6a71-e95a-4f8a-bb6e-fb84ab7fbd9e |
+| PlaceDeviceTelemetry.ReadWrite.All                      | Application | 27fc435f-44e2-4b30-bf3c-e0ce74aed618 |
 | Policy.Read.All                                         | Application | 246dd0d5-5bd0-4def-940b-0421030a5b68 |
 | Policy.Read.All                                         | Delegated   | 572fea84-0151-49b2-9301-11cb16974376 |
 | Policy.Read.ConditionalAccess                           | Application | 37730810-e9ba-4e46-b07e-8ca78d182097 |

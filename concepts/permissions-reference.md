@@ -1937,6 +1937,25 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
+## Place Devices permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _PlaceDevice.Read.All_ |   Read all workplace devices | Allows the app to read all workplace devices, on behalf of the signed-in user. |Yes | No |
+| _Place.ReadWrite.All_ |   Read and write all workplace devices | Allows the app to read and write all workplace devices, on behalf of the signed-in user. |Yes | No |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
+| _PlaceDevice.Read.All_ |   Read all workplace devices | Allows the app to read all workplace devices, without a signed-in user. | Yes |
+| _PlaceDevice.ReadWrite.All_ |   Read and write all workplace devices | Allows the app to read and write all workplace devices, without a signed-in user. | Yes |
+| _PlaceDeviceTelemetry.ReadWrite.All_ |   Read and write telemetry for all workplace devices. | Allows the app to read and write telemetry for all workplace devices, without a signed-in user. | Yes |
+
+---
+
 ## Policy permissions
 
 #### Delegated permissions
