@@ -8,8 +8,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 graph_client = GraphServiceClient(request_adapter)
 
+request_body = UpgradePostRequestBody(
+)
 
-await graph_client.teams.by_team_id('team-id').installed_apps.by_installed_app_id('teamsAppInstallation-id').upgrade.post()
+await graph_client.teams.by_team_id('team-id').installed_apps.by_installed_app_id('teamsAppInstallation-id').upgrade.post(body = request_body)
 
 
 ```
