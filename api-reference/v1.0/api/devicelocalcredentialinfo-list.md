@@ -70,7 +70,7 @@ ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
 
-#### Response
+### Response
 The following is an example of the response.
 
 <!-- {
