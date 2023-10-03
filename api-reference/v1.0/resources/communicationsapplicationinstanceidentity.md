@@ -41,7 +41,7 @@ Here's a JSON representation of the resource.
 {
   "displayName": "String",
   "hidden": "Boolean",
-  "id": "String",
+  "id": "String (identifier)",
   "tenantId": "String"
 }
 ```
