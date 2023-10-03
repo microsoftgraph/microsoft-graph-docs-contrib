@@ -34,7 +34,7 @@ GET /identityGovernance/privilegedAccess/group/assignmentSchedules?$filter=group
 GET /identityGovernance/privilegedAccess/group/assignmentSchedules?$filter=principalId eq 'principalId'
 ```
 
-## Optional query parameters
+## Query parameters
 This method requires the `$filter` (`eq`) query parameter to scope the request to a **principalId** or a **groupId**.
 
 This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
