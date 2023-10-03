@@ -186,7 +186,7 @@ When Event Hubs receives a notification payload that is larger than 1 MB, the Ev
 
 It's possible that the **Microsoft Graph Change Tracking** service principal is missing from your tenant, depending on when the tenant was created and administrative operations. The service principal's globally unique **appId** is `0bf30f3b-4a52-48df-9a82-234910c4a086` and you can use this value to confirm whether it exists or create it if it doesn't.
 
-To confirm whether the service principal exists in your tenant, run the following query. If the service principal exists, the request returns a `200 OK` response code and the corresponding **Microsoft Graph Change Tracking** object in the response body.
+To confirm whether the service principal exists in your tenant, run the following query. If the service principal exists, the request returns a `200 OK` response code and the corresponding **Microsoft Graph Change Tracking** object in the response body. You must grant the calling app the *Application.Read.All* permission to run this operation.
 
 <!-- {
   "blockType": "request",
@@ -196,9 +196,8 @@ To confirm whether the service principal exists in your tenant, run the followin
 GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='0bf30f3b-4a52-48df-9a82-234910c4a086')
 ```
 
-If the service principal doesn't exist, create it as follows.
+If the service principal doesn't exist, create it as follows. You must grant the calling app the *Application.ReadWrite.All* permission to run this operation.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "change-notifications-eventhubs-create-changetrackingapp-sp"
@@ -209,47 +208,6 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals
 {
     "appId": "0bf30f3b-4a52-48df-9a82-234910c4a086"
 }
-```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/v1/change-notifications-eventhubs-create-changetrackingapp-sp-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/v1/change-notifications-eventhubs-create-changetrackingapp-sp-cli-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/v1/change-notifications-eventhubs-create-changetrackingapp-sp-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/v1/change-notifications-eventhubs-create-changetrackingapp-sp-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/v1/change-notifications-eventhubs-create-changetrackingapp-sp-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/v1/change-notifications-eventhubs-create-changetrackingapp-sp-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/v1/change-notifications-eventhubs-create-changetrackingapp-sp-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-> **Note:** You can get an access denied running this query. In this case, select the gear icon next to your account name in the top left corner. Then select **Select Permissions** and search for **Application.ReadWrite.All**. Check the permission and select **Consent**. After consenting to this new permission, run the request again.
-
-> **Note:** This API only works with a school or work account, not with a personal account. Make sure that you are signed in with an account on your domain.
-
-Alternatively, you can use the [New-MgServicePrincipal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true) cmdlet in Microsoft Graph PowerShell to add the missing service principal. The following is an example script.
-
-```PowerShell
-Connect-Graph -Scopes "Application.ReadWrite.All"
-New-MgServicePrincipal -AppId "0bf30f3b-4a52-48df-9a82-234910c4a086"
 ```
 
 ## Next steps
