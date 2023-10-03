@@ -81,7 +81,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_host_whois",
+  "name": "get_whois_for_host",
   "sampleKeys": ["contoso.com"]
 }
 -->
