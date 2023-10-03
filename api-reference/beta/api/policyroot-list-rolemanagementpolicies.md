@@ -55,7 +55,7 @@ To retrieve details of all role management policies scoped to a group:
 GET /policies/roleManagementPolicies?$filter=scopeId eq '{groupId}' and scopeType eq 'Group'
 ```
 
-## Optional query parameters
+## Query parameters
 This method requires the `$filter` (`eq`) query parameter to scope the request to a **scopeId** and a **scopeType**. 
 
 - To retrieve policies in PIM for Azure AD roles, the **scopeId** must be `/` and **scopeType** can be either `Directory` or `DirectoryRole`. 

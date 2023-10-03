@@ -61,7 +61,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/assignmentSchedules?filter=principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'
+GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/assignmentSchedules?$filter=groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d' and principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'
 ```
 
 
@@ -79,10 +79,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/privilegedAccess/group/assignmentSchedules",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.privilegedAccessGroupAssignmentSchedule",
-      "id": "8ba569e8-7024-f5f8-91ec-9b75d92897f1",
+      "id": "2b5ed229-4072-478d-9504-a047ebd4b07d_member_dce168aa-2909-4f10-8cc9-c98e82d8b507",
       "scheduleInfo": {
         "startDateTime": "2022-04-11T11:50:06.343Z",
         "recurrence": null,
@@ -94,7 +94,7 @@ Content-Type: application/json
       },
       "createdDateTime": "2023-01-11T11:50:06.343Z",
       "modifiedDateTime": null,
-      "createdUsing": "String",
+      "createdUsing": null,
       "status": "Provisioned",
       "accessId": "member",
       "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",

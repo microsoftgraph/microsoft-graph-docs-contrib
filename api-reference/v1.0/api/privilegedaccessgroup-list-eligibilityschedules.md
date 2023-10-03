@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Retrieve all eligibility schedules
+### Example 1: Retrieve all eligibility schedules scoped to a group and a principal
 
 #### Request
 The following is an example of a request.
@@ -63,7 +63,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/eligibilitySchedules?filter=principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'
+GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/eligibilitySchedules?$filter=groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d' and principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'
 ```
 
 
@@ -81,11 +81,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/privilegedAccess/group/eligibilitySchedules/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/privilegedAccess/group/eligibilitySchedules",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.privilegedAccessGroupEligibilitySchedule",
-      "id": "8ba569e8-7024-f5f8-91ec-9b75d92897f1",
+      "id": "2b5ed229-4072-478d-9504-a047ebd4b07d_member_4cc1a00f-3e44-48ae-9bb5-fba55c9a7a5c",
       "scheduleInfo": {
           "startDateTime": "2022-04-12T14:44:50.287Z",
           "recurrence": null,
@@ -108,7 +107,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Retrieve specific properties of all eligibility schedules
+### Example 2: Retrieve specific properties of all eligibility schedules scoped to a group and a principal
 
 #### Request
 The following is an example of a request.
@@ -118,7 +117,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/eligibilitySchedules?filter=principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'&$select=accessId,principalId,groupId
+GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/eligibilitySchedules?filter=groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d' and principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'&$select=accessId,principalId,groupId
 ```
 
 
@@ -136,10 +135,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/privilegedAccess/group/eligibilitySchedules/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/privilegedAccess/group/eligibilitySchedules(accessId,principalId,groupId)",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.privilegedAccessGroupEligibilitySchedule",
       "accessId": "member",
       "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
       "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
