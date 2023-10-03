@@ -18,6 +18,8 @@ Get a list of [certificateBasedAuthConfiguration](../resources/certificateBasedA
 > [!NOTE]
 > Only a single instance of certificateBasedAuthConfiguration can exist in the collection. It always has a fixed ID with a value of '29728ade-6ae4-4ee9-9103-412912537da5'.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -67,35 +69,35 @@ GET https://graph.microsoft.com/beta/organization/{id}/certificateBasedAuthConfi
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-certificatebasedauthconfigurations-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-certificatebasedauthconfigurations-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/get-certificatebasedauthconfigurations-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/list-certificatebasedauthconfigurations-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-certificatebasedauthconfigurations-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/list-certificatebasedauthconfigurations-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-certificatebasedauthconfigurations-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-certificatebasedauthconfigurations-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-certificatebasedauthconfigurations-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-certificatebasedauthconfigurations-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/get-certificatebasedauthconfigurations-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/list-certificatebasedauthconfigurations-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-certificatebasedauthconfigurations-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-certificatebasedauthconfigurations-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/get-certificatebasedauthconfigurations-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/list-certificatebasedauthconfigurations-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

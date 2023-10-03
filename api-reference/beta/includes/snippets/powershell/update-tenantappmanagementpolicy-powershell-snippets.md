@@ -17,7 +17,7 @@ $params = @{
 			}
 			@{
 				restrictionType = "passwordLifetime"
-				maxLifetime = "P4DT12H30M5S"
+				maxLifetime = "P90D"
 				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2017-01-01T10:37:00Z")
 			}
 			@{
@@ -32,7 +32,7 @@ $params = @{
 			}
 			@{
 				restrictionType = "symmetricKeyLifetime"
-				maxLifetime = "P40D"
+				maxLifetime = "P30D"
 				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
 			}
 		)

@@ -20,6 +20,8 @@ If a sharing link of the specified type already exists for the app, this action 
 
 **listItem** resources inherit sharing permissions from the [list](../resources/list.md) the item resides in.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [permissions](/graph/permissions-reference).
 

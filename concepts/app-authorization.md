@@ -18,18 +18,18 @@ The landing page of the Data Connect applications portal provides a quick view o
 
 ![Screenshot of a quick view of apps in the Data Connect portal.](images/authorization-app-summary-table.png)
 
-You'll find the following types of applications in the portal:
+You find the following types of applications in the portal:
 
-- **Single-tenant apps** — Applications that are registered in your tenant, and require access to data. These apps are typically enterprise scenarios.
+- **Single-tenant apps—Applications that are registered in your tenant, and require access to data. These apps are typically enterprise scenarios.
 - **Multi-tenant applications** — Applications that are hosted in another tenant, and require access to data from your tenant. These apps are typically ISV scenarios. Review these apps carefully. When you authorize multi-tenant apps, data from your tenant can be migrated to the app developer's tenant.
 
-All single-tenant apps are populated in the table by default. Only approved, denied, or expired multi-tenant apps are included in the table. Other apps might be shown in the table with the following statuses:
+All single-tenant apps are populated in the table by default. Only approved, denied, or expired multitenant apps are included in the table. Other apps might be shown in the table with the following statuses:
 
-- **Pending authorization** — Apps that haven't been acted upon yet. This status is only possible for single-tenant apps. Apps in this state will always fail at runtime.
+- **Pending authorization**—Apps that haven't been acted upon yet. This status is only possible for single-tenant apps. Apps in this state will always fail at runtime.
 - **Approved** — Apps that an admin has approved to access Microsoft 365 data for your tenant.
-- **Denied** — Apps that an admin has denied to access Microsoft 365 data for your tenant. Apps in this state will always fail at runtime.
-- **Expired** — Apps that an admin has approved to access Microsoft 365 data for your tenant, but the approval expired. Apps in this state will always fail at runtime.
-- **Update available** — Apps that an admin has previously reviewed and acted upon, but have since been updated. Apps in this state will continue working as per previous authorization. When the admin provides a new approval, the new definition of the app will overwrite the old one.
+- **Denied**—Apps that an admin has denied accessing Microsoft 365 data for your tenant. Apps in this state will always fail at runtime.
+- **Expired**—Apps that an admin has approved to access Microsoft 365 data for your tenant, but the approval expired. Apps in this state will always fail at runtime.
+- **Update available**—Apps that an admin has previously reviewed and acted upon, but have since been updated. Apps in this state continue working as per previous authorization. When the admin provides a new approval, the new definition of the app overwrites the old one.
 
 ### App details view
 
@@ -39,36 +39,36 @@ Select an app from the table to launch the app details view, which provides more
 
 First, the wizard shows overview information about the application:
 
-- **Developer** — The user name of the developer who registered the application.
+- **Developer**—The user name of the developer who registered the application.
 
-- **Data destination** — The sink where the data will be delivered. If approved, this app can move the requested data to any location within the listed sink.
+- **Data destination**—The sink where the data will be delivered. If approved, this app can move the requested data to any location within the listed sink.
 
-- **App publisher** — The Azure AD tenant ID where the app is registered. For single-tenant apps, this should be the same Azure AD tenant ID as your tenant.
+- **App publisher**—The Azure AD tenant ID where the app is registered. For single-tenant apps, this should be the same Azure AD tenant ID as your tenant.
 
 ![Screenshot showing the app details view for a teams call records dataset sample in Data Connect portal.](images/authorization-app-details-dataset.png)
 
 Next, the wizard includes multiple dataset steps, one step per dataset registered in the app. Each page shows you relevant information for each dataset. For example:
 
-- **Columns** — Specifies columns the app intends to extract via Data Connect. If approved, this app can extract any subset of approved columns for the specified dataset.
+- **Columns**—Specifies columns the app intends to extract via Data Connect. If approved, this app can extract any subset of approved columns for the specified dataset.
 
-- **Scope** — Specifies the scope (user selection) the app intends to extract via Data Connect. For details about scopes, see [Use Microsoft Graph Data Connect to define the scope of a dataset](./data-connect-users-and-groups.md).
+- **Scope**—Specifies the scope (user selection) the app intends to extract via Data Connect. For details about scopes, see [Use Microsoft Graph Data Connect to define the scope of a dataset](./data-connect-users-and-groups.md).
 
 For details about how authorization works with different scopes, see [Authorization validation during pipeline runtime](#authorization-validation-during-pipeline-runtime).
 
 ![Screenshot showing authorization validation review page in Data Connect portal.](images/authorization-app-details-review.png)
 
-Finally, the wizard confirms some key information on the app for you to review. You can select **Approve**, **Decline**, or **Cancel**. An action on an app is all or nothing. Authorizing an app means you are authorizing all access specified in the previous steps.
+Finally, the wizard confirms some key information on the app for you to review. You can select **Approve**, **Decline**, or **Cancel**. An action on an app is all or nothing. Authorizing an app means you're authorizing all access specified in the previous steps.
 
 When authorizing an app, you might encounter these error messages:
 
 - `App approver and owner cannot be the same user.`
 - `App registration not found. It is possible someone deleted this app.`
 
-If an unexpected error occurs, the error message will include an error code. Make a note of this error code to share with Microsoft support.
+If an unexpected error occurs, the error message includes an error code. Make a note of this error code to share with Microsoft support.
 
-### Discovering multi-tenant applications
+### Discovering multitenant applications
 
-To discover multi-tenant applications, select **Add new multi-tenant app** above the app summary table. If your tenant is enabled for cross-tenant data migration, you'll see two text boxes. After you enter the application ID and tenant ID, choose **Find**, and the portal will launch the app details view for the app you're searching for.
+To discover multitenant applications, select **Add new multi-tenant app** above the app summary table. If your tenant is enabled for cross-tenant data migration, you'll see two text boxes. After you enter the application ID and tenant ID, choose **Find**, and the portal will launch the app details view for the app you're searching for.
 
 ![Screenshot showing page for adding a multi-tenant app in Data Connect portal.](images/authorization-multitenant-app-search.png)
 
@@ -86,7 +86,7 @@ The Microsoft Graph Data Connect app authorization experience is integrated with
 
 ### Authorization validation during pipeline runtime
 
-At runtime, Data Connect validates incoming requests against all authorizations in the tenant. If a matching authorization is found, the job proceeds. If no authorization is discovered, the job fails. Data Connect no longer stalls on `ConsentPending` when awaiting authorization. If authorization validation fails, you'll receive a specific error message regarding why your job failed to match existing app authorizations.
+At runtime, Data Connect validates incoming requests against all authorizations in the tenant. If a matching authorization is found, the job proceeds. If no authorization is discovered, the job fails. Data Connect no longer stalls on `ConsentPending` when awaiting authorization. If authorization validation fails, you receive a specific error message regarding why your job failed to match existing app authorizations.
 
 Authorization validations applied during runtime include:
 
