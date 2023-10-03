@@ -185,118 +185,7 @@ Content-Type: application/json
     }  
 ```
 
-### Example 2: Create a Microsoft Teams live event with user token (deprecated)
-
-<!-- {
-  "blockType": "request",
-  "name": "create-live-event-user-token"
-}-->
-#### Request
-
-Here's an example  of a request.
-
-```http
-POST https://graph.microsoft.com/v1.0/me/onlineMeetings
-Content-Type: application/json
-
-{
-  "subject":"User Token Live Event",
-  "startDateTime":"2021-08-20T14:00:34.2444915+00:00",
-  "endDateTime":"2021-08-20T15:00:34.2464912+00:00",
-  "isBroadcast": true,
-  "broadcastSettings": {
-    "allowedAudience": "everyone",
-    "isRecordingEnabled": true,
-    "isAttendeeReportEnabled": true
-  }
-}
-```
-
-#### Response
-
-Here's an example  of the response.
-
-> **Note:** The response object shown here has been shortened for readability. 
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onlineMeeting"
-} -->
-```json
-{
-  "id": "(redacted)",
-  "creationDateTime": "2020-12-02T14:30:34.2444915Z",
-  "startDateTime": "2021-08-20T14:00:34.2444915Z",
-  "endDateTime": "2021-08-20T15:00:34.2464912Z",
-  "joinWebUrl": "(redacted)",
-  "subject": "User Token Live Event",
-  "autoAdmittedUsers": "EveryoneInCompany",
-  "isEntryExitAnnounced": true,
-  "allowedPresenters": "organization",
-  "videoTeleconferenceId": "(redacted)",
-  "participants": {
-    "organizer": {
-      "upn": "(redacted)",
-      "role": "producer",
-      "identity": {
-        "user": {
-          "id": "dc17674c-81d9-4ada442e4622",
-          "displayName": null,
-          "tenantId": "909c6581-5130cb3582cde38",
-          "identityProvider": "AAD"
-        }
-      }
-    },
-    "attendees": [
-      {
-        "upn": "(redacted)",
-        "role": "producer",
-        "identity": {
-          "user": {
-            "id": "dc17674c-81d9--8f6a442e4622",
-            "displayName": null,
-            "tenantId": "909c6581-51f3-fcb3582cde38",
-            "identityProvider": "AAD"
-          }
-        }
-      }
-    ],
-    "producers": [
-      {
-        "upn": "(redacted)",
-        "role": "producer",
-        "identity": {
-          "user": {
-            "id": "dc17674c-81d9-4adf6a442e4622",
-            "displayName": null,
-            "tenantId": "909c6581-5f3-fcb3582cde38",
-            "identityProvider": "AAD"
-          }
-        }
-      }
-    ],
-    "contributors": []
-  },
-  "lobbyBypassSettings": {
-    "scope": "organization",
-    "isDialInBypassEnabled": false
-  },
-  "joinMeetingIdSettings": {
-    "isPasscodeRequired": false,
-    "joinMeetingId": "1234567890",
-    "passcode": null
-  },
-  "isBroadcast": true,
-  "broadcastSettings": {
-    "allowedAudience": "organization",
-    "isRecordingEnabled": true,
-    "isAttendeeReportEnabled": true
-  }
-}
-```
-
-### Example 3: Create an online meeting that requires a passcode
+### Example 2: Create an online meeting that requires a passcode
 
 The following example shows how to add a passcode to a meeting. The passcode is used when you join a meeting with a **joinMeetingId**. For more information, see [joinMeetingIdSettings](../resources/joinmeetingidsettings.md).
 
@@ -417,7 +306,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 4: Create an online meeting that doesn't require a passcode
+### Example 3: Create an online meeting that doesn't require a passcode
 
 When **isPasscodeRequired** is set to `false` or when **joinMeetingIdSettings** isn't specified in the request, the generated online meeting won't have a passcode.
 
