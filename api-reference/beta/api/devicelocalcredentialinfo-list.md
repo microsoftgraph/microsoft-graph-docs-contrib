@@ -35,11 +35,11 @@ To get a list of deviceLocalCredentialInfo within the tenant:
 }
 -->
 ``` http
-GET /deviceLocalCredentials
 GET /directory/deviceLocalCredentials
+GET /deviceLocalCredentials
 ```
 > [!CAUTION]
-> We're introducing breaking changes before end of year where GET /deviceLocalCredentials will be deprecated. Use GET /directory/deviceLocalCredentials instead.
+> We're introducing breaking changes at the end of 2023, where GET /deviceLocalCredentials will be deprecated. Use GET /directory/deviceLocalCredentials instead.
 >
 
 ## Optional query parameters
