@@ -1,7 +1,7 @@
 ---
 author: "vanshisingh"
 title: "List recycleBinItems"
-description: "Get a list of recycleBinItems under the specified site or storageContainer."
+description: "Get a list of recycleBinItems under the specified site."
 ms.localizationpriority: "medium"
 ms.prod: "sharepoint"
 doc_type: apiPageType
