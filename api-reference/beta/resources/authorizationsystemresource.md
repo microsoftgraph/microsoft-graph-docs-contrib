@@ -1,9 +1,9 @@
 ---
 title: "authorizationSystemResource resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents a resource in an authorization system."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,34 +13,28 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents a resource in an authorization system.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List authorizationSystemResources](../api/authorizationsystemresource-list.md)|[authorizationSystemResource](../resources/authorizationsystemresource.md) collection|Get a list of the [authorizationSystemResource](../resources/authorizationsystemresource.md) objects and their properties.|
-|[Get authorizationSystemResource](../api/authorizationsystemresource-get.md)|[authorizationSystemResource](../resources/authorizationsystemresource.md)|Read the properties and relationships of an [authorizationSystemResource](../resources/authorizationsystemresource.md) object.|
-|[Update authorizationSystemResource](../api/authorizationsystemresource-update.md)|[authorizationSystemResource](../resources/authorizationsystemresource.md)|Update the properties of an [authorizationSystemResource](../resources/authorizationsystemresource.md) object.|
-|[Delete authorizationSystemResource](../api/authorizationsystemresource-delete.md)|None|Delete an [authorizationSystemResource](../resources/authorizationsystemresource.md) object.|
-|[List authorizationSystem](../api/authorizationsystemresource-list-authorizationsystem.md)|[authorizationSystem](../resources/authorizationsystem.md) collection|Get the authorizationSystem resources from the authorizationSystem navigation property.|
-|[Add authorizationSystem](../api/authorizationsystemresource-post-authorizationsystem.md)|[authorizationSystem](../resources/authorizationsystem.md)|Add authorizationSystem by posting to the authorizationSystem collection.|
-|[Remove authorizationSystem](../api/authorizationsystemresource-delete-authorizationsystem.md)|None|Remove an [authorizationSystem](../resources/authorizationsystem.md) object.|
+|[List authorizationSystemResources](../api/authorizationsystemresource-list.md)|[authorizationSystemResource](../resources/authorizationsystemresource.md) collection|List all resources for a specific authorization system.|
+|[Get authorizationSystemResource](../api/authorizationsystemresource-get.md)|[authorizationSystemResource](../resources/authorizationsystemresource.md)|Get a single resource in an authorization system.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|**TODO: Add Description**|
-|externalId|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|resourceType|String|**TODO: Add Description**|
+|displayName|String|The name of the resource. Read-only.|
+|externalId|String|The id of the resource as defined by the authorization system provider. Read-only.|
+|id|String|The unique encoded identifier of the resource. Inherited from [entity](../resources/entity.md). Read-only.|
+|resourceType|String|The type of the resource. Read-only.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|**TODO: Add Description**|
+|authorizationSystem|[authorizationSystem](../resources/authorizationsystem.md)|The authorization system that the resource is in.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
