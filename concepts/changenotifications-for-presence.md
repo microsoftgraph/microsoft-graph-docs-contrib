@@ -36,7 +36,7 @@ The following resource strings support subscriptions. For more information, see 
 
 To subscribe to a single user's presence, you can set the resource in the subscription payload to `communications/presences/{id}` where the {id} field must be replaced with the user ID GUID of the user's presence. This subscription delivers change notifications when the user presence changes.
 
-### Payload example
+### Example: Single user presence subscription payload
 
 ```json
 {
@@ -55,7 +55,7 @@ To subscribe to a single user's presence, you can set the resource in the subscr
 ### Subscribe to multiple users' presence
 Bulk subscriptions for user presence can be created by setting the subscription resource value to `/communications/presences?$filter=id in ('{id}', '{id}',...)` where the {id} represents a user IDs GUID of users. A maximum of 650 users can be subscribed in a single subscription. Presence changes for user IDs generate a notification. 
 
-### Payload example
+### Example: Multiple user presence subscription payload
 
 ```json
 {
@@ -75,7 +75,7 @@ Bulk subscriptions for user presence can be created by setting the subscription 
 
 Change notifications for presence events are expected when a subscribed user presence experiences a change in a user's availability and activity.
 
-### Basic presence notifications example
+### Example: Basic presence notifications
 ```json
 {
   "value": [{
@@ -95,7 +95,7 @@ Change notifications for presence events are expected when a subscribed user pre
 }
 ```
 
-### Presence notifications with resource data example
+### Example: Presence notifications with resource data 
 
 Presence notifications with resource data have the following additional properties encrypted in the payload:
 - Availability or base presence information (available, away, busy)
@@ -132,7 +132,7 @@ For more information about possible combinations of availability and activity, s
 }
 ```
 
-### Decrypted notifications with resource data example
+### Example: Decrypted notifications with resource data
 ```json
 {
     "@odata.id": "users/{User Id}/presence",
