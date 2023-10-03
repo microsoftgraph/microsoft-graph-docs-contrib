@@ -131,7 +131,7 @@ The `root` identifier always references the root site for a given target, as fol
 [sharepointIds]: sharepointids.md
 [siteCollection]: sitecollection.md
 [microsoft.graph.termStore.store]: termstore-store.md
-[recyclebin]: recyclebin-list-items.md
+[recyclebin]: recyclebin.md
 
 ## JSON representation
 
