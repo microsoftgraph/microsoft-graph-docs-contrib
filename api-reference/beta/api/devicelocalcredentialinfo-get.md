@@ -36,8 +36,12 @@ To get the device local credential for a specific device object:
 }
 -->
 ``` http
+GET directory/deviceLocalCredentials/{deviceId}
 GET /deviceLocalCredentials/{deviceId}
 ```
+> [!CAUTION]
+> We're introducing breaking changes at the end of 2023, where GET /deviceLocalCredentials/{deviceId} will be deprecated. Use GET /directory/deviceLocalCredentials/{deviceId} instead.
+>
 
 ## Request headers
 |Name|Description|
@@ -70,7 +74,7 @@ Here's an example of the request. This example doesn't return the **credentials*
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceLocalCredentials/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
+GET https://graph.microsoft.com/beta/directory/deviceLocalCredentials/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
 User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
@@ -113,7 +117,7 @@ Here's an example of the request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceLocalCredentials/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=credentials
+GET https://graph.microsoft.com/beta/directory/deviceLocalCredentials/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=credentials
 User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
