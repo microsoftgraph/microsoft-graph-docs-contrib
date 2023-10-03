@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Create a new [cloudPcExportJob](../resources/cloudpcexportjob.md) resource to initiate downloading the entire or specified portion of a report.
 
-Use the [GET cloudPcExportJob](cloudpcexportjob-get.md) operation to verify the **exportJobStatus** property of the **cloudPcExportJob** resource. When the property result is `completed`, the report has finished downloading to the location specified by the **exportUrl** property. 
+Use the [GET cloudPcExportJob](cloudpcexportjob-get.md) operation to verify the **exportJobStatus** property of the **cloudPcExportJob** resource. When the property result is `completed`, the report has finished downloading to the location specified by the **exportUrl** property.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -52,7 +52,7 @@ You can specify the following properties when creating a **cloudPcExportJob**.
 |:---|:---|:---|
 |filter|String|The filter applied on the report. Optional.|
 |format|String|The format of the exported report. Optional.|
-|reportName|cloudPcReportName|The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, `unknownFutureValue`, `noLicenseAvailableConnectivityFailureReport`, `inaccessibleCloudPcReports`. Optional.|
+|reportName|cloudPcReportName|The report name. The possible values are: `remoteConnectionHistoricalReports`, `dailyAggregatedRemoteConnectionReports`, `totalAggregatedRemoteConnectionReports`, `sharedUseLicenseUsageReport`, `sharedUseLicenseUsageRealTimeReport`, `unknownFutureValue`,  `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`,  `remoteConnectionQualityReports`, `inaccessibleCloudPcReports`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `noLicenseAvailableConnectivityFailureReport`, `frontlineLicenseUsageReport`, `frontlineLicenseUsageRealTimeReport`, `inaccessibleCloudPcReports`.|
 |select|String collection|The selected columns of the report. Optional.|
 
 ## Response
@@ -61,13 +61,18 @@ If successful, this method returns a `201 Created` response code and a [cloudPcE
 
 ## Examples
 
-### Request
+### Example 1: Create an export job to download the TotalAggregatedRemoteConnectionReports report
+
+The following example shows how to create an export job to download the `TotalAggregatedRemoteConnectionReports` report.
+
+#### Request
+
 The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_cloudpcexportjob_from_"
+  "name": "create_cloudpcexportjob_from_example1"
 }
 -->
 ``` http
@@ -78,11 +83,11 @@ Content-length: 315
 {
   "reportName": "TotalAggregatedRemoteConnectionReports",
   "select": [
-      "CloudPcId",
-      "ManagedDeviceName",
-      "UserPrincipalName",
-      "DaysSinceLastSignIn",
-      "TotalUsageInHour"
+    "CloudPcId",
+    "ManagedDeviceName",
+    "UserPrincipalName",
+    "DaysSinceLastSignIn",
+    "TotalUsageInHour"
   ]
 }
 ```
@@ -121,9 +126,10 @@ Content-length: 315
 
 ---
 
-### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+#### Response
+
+The following is an example of the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -135,22 +141,98 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/virtualEndpoint/reports/exportJobs/$entity",
-    "id": "TotalAggregatedRemoteConnectionReports__d39979c9-a0a2-4916-a158-1b984742ffff",
-    "reportName": "totalAggregatedRemoteConnectionReports",
-    "filter": null,
-    "select": [
-        "CloudPcId",
-        "ManagedDeviceName",
-        "UserPrincipalName",
-        "DaysSinceLastSignIn",
-        "TotalUsageInHour"
-    ],
-    "format": null,
-    "expirationDateTime": "0001-01-01T00:00:00Z",
-    "requestDateTime": "2022-09-16T12:00:06.5137388Z",
-    "exportJobStatus": "inProgress",
-    "exportUrl": null
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/virtualEndpoint/reports/exportJobs/$entity",
+  "id": "TotalAggregatedRemoteConnectionReports__d39979c9-a0a2-4916-a158-1b984742ffff",
+  "reportName": "totalAggregatedRemoteConnectionReports",
+  "filter": null,
+  "select": [
+    "CloudPcId",
+    "ManagedDeviceName",
+    "UserPrincipalName",
+    "DaysSinceLastSignIn",
+    "TotalUsageInHour"
+  ],
+  "format": null,
+  "expirationDateTime": "0001-01-01T00:00:00Z",
+  "requestDateTime": "2022-09-16T12:00:06.5137388Z",
+  "exportJobStatus": "inProgress",
+  "exportUrl": null
 }
 ```
 
+### Example 2: Create an export job to download the RemoteConnectionQualityReports report.
+
+The following example shows how to create an export job to download the `RemoteConnectionQualityReports` report.
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "create_cloudpcexportjob_from_example2"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/exportJobs
+Content-Type: application/json
+Content-length: 315
+
+{
+  "reportName": "RemoteConnectionQualityReports",
+  "select": [
+    "CloudPcId",
+    "ManagedDeviceName",
+    "AvgRoundTripTimeInMsP50",
+    "LastConnectionRoundTripTimeInMs",
+    "AvgAvailableBandwidthInMBpsP50",
+    "LastConnectionAvailableBandWidthInMSps",
+    "AvgRemoteSignInTimeInSecP50",
+    "UDPConnectionPercentage",
+    "LastConnectionGateway",
+    "LastConnectionProtocol",
+    "EventDateTime"
+  ],
+  "filter": "EventDateTime gt datetime'2023-06-14T07:40:41.694Z'"
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.cloudPcExportJob"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#deviceManagement/virtualEndpoint/reports/exportJobs/$entity",
+  "id": "RemoteConnectionQualityReports__85678957-6202-4e29-97e6-eb26ef07f330",
+  "reportName": "remoteConnectionQualityReports",
+  "filter": "EventDateTime gt datetime'2023-06-14T07:40:41.694Z'",
+  "select": [
+    "CloudPcId",
+    "ManagedDeviceName",
+    "AvgRoundTripTimeInMsP50",
+    "LastConnectionRoundTripTimeInMs",
+    "AvgAvailableBandwidthInMBpsP50",
+    "LastConnectionAvailableBandWidthInMSps",
+    "AvgRemoteSignInTimeInSecP50",
+    "UDPConnectionPercentage",
+    "LastConnectionGateway",
+    "LastConnectionProtocol",
+    "EventDateTime"
+  ],
+  "format": null,
+  "expirationDateTime": null,
+  "requestDateTime": "2023-06-14T07:40:41.694Z",
+  "exportJobStatus": "inProgress",
+  "exportUrl": null
+}
+```

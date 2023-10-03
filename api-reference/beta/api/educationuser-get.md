@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 > [!IMPORTANT]
-> When using Delegated permission scopes, Graph will only return a limited set of properties: `id`, `primaryRole`, `accountEnabled`, `displayName`, `givenName`, `surname`, `userPrincipalName`, `userType`, `onPremisesInfo`, `student/externalId`, `teacher/externalId`. If your application requires additional properties, you must use Application permission scopes.
+> If you use the delegated permission scopes, Graph only returns a limited set of properties: **id**, **primaryRole**, **accountEnabled**, **displayName**, **givenName**, **surname**, **userPrincipalName**, **userType**, **onPremisesInfo**, **student/externalId**, **teacher/externalId**. If your application requires additional properties, you must use application permission scopes.
 
 ## HTTP request
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and an [educationUse
 
 ## Example
 
-##### Request
+### Request
 
 The following is an example of the request.
 
@@ -112,7 +112,7 @@ GET https://graph.microsoft.com/beta/education/users/13012
 
 ---
 
-##### Response
+### Response
 
 The following is an example of the response.
 
@@ -157,7 +157,7 @@ Content-type: application/json
     "postalCode": "98055",
     "state": "CA",
     "street": "12345 Main St."
-  },
+  }
 }
 ```
 
