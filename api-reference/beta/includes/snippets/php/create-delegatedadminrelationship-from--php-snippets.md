@@ -26,6 +26,7 @@ $unifiedRolesArray []= $unifiedRolesUnifiedRole2;
 $accessDetails->setUnifiedRoles($unifiedRolesArray);
 
 $requestBody->setAccessDetails($accessDetails);
+$requestBody->setAutoExtendDuration(new \DateInterval('P180D'));
 
 $result = $graphServiceClient->tenantRelationships()->delegatedAdminRelationships()->post($requestBody)->wait();
 
