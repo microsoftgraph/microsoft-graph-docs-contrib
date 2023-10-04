@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of [recycleBinItems](../resources/recyclebinitem.md) objects and their properties.
+Get a list of [recycleBinItems](../resources/recyclebinitem.md) under the specified site.
 
 ## Permissions
 
