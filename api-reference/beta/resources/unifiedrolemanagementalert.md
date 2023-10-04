@@ -19,6 +19,8 @@ Each security alert in PIM for Azure AD roles is of one of several types describ
 
 Inherits from [entity](../resources/entity.md).
 
+For more information about working with security alerts for Azure AD roles using PIM APIs, see [Manage security alerts for Azure AD roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
+
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -69,4 +71,7 @@ The following is a JSON representation of the resource.
   "lastScannedDateTime": "String (timestamp)"
 }
 ```
+
+## See also
++ [Manage security alerts for Azure AD roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
 
