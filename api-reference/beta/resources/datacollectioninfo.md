@@ -1,9 +1,9 @@
 ---
 title: "dataCollectionInfo resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents the different statuses of an authorizationSystem related to Microsoft Entra Permissions Management."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,25 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents the different statuses of an authorizationSystem related to Microsoft Entra Permissions Management.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List dataCollectionInfoes](../api/authorizationsystem-list-datacollectioninfo.md)|[dataCollectionInfo](../resources/datacollectioninfo.md) collection|Get a list of the [dataCollectionInfo](../resources/datacollectioninfo.md) objects and their properties.|
-|[Create dataCollectionInfo](../api/authorizationsystem-post-datacollectioninfo.md)|[dataCollectionInfo](../resources/datacollectioninfo.md)|Create a new [dataCollectionInfo](../resources/datacollectioninfo.md) object.|
-|[Get dataCollectionInfo](../api/datacollectioninfo-get.md)|[dataCollectionInfo](../resources/datacollectioninfo.md)|Read the properties and relationships of a [dataCollectionInfo](../resources/datacollectioninfo.md) object.|
-|[Update dataCollectionInfo](../api/datacollectioninfo-update.md)|[dataCollectionInfo](../resources/datacollectioninfo.md)|Update the properties of a [dataCollectionInfo](../resources/datacollectioninfo.md) object.|
-|[Delete dataCollectionInfo](../api/authorizationsystem-delete-datacollectioninfo.md)|None|Delete a [dataCollectionInfo](../resources/datacollectioninfo.md) object.|
+None.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|entitlements|[entitlementsDataCollectionInfo](../resources/entitlementsdatacollectioninfo.md)|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|entitlements|[entitlementsDataCollectionInfo](../resources/entitlementsdatacollectioninfo.md)|Represents the combination of an assigned permission that grants an identity access to an authorized system resource, the associated identity, and an optional source identity where the assigned permission was inherited. Read-only.|
 
 ## Relationships
 None.
@@ -49,7 +43,6 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.dataCollectionInfo",
-  "id": "String (identifier)",
   "entitlements": {
     "@odata.type": "microsoft.graph.entitlementsDataCollectionInfo"
   }

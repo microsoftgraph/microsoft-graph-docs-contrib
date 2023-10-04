@@ -1,9 +1,9 @@
 ---
 title: "external resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Used for the path based routing for authorizationSystems."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,28 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Used for the path based routing for authorizationSystems.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List externals](../api/external-list.md)|[external](../resources/external.md) collection|Get a list of the [external](../resources/external.md) objects and their properties.|
-|[Get external](../api/external-get.md)|[external](../resources/external.md)|Read the properties and relationships of an [external](../resources/external.md) object.|
-|[Update external](../api/external-update.md)|[external](../resources/external.md)|Update the properties of an [external](../resources/external.md) object.|
-|[Delete external](../api/external-delete.md)|None|Delete an [external](../resources/external.md) object.|
+None.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+None.
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|connections|[externalConnection](../resources/externalconnection.md) collection|**TODO: Add Description**|
+None.
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -48,8 +38,7 @@ The following is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.external",
-  "id": "String (identifier)"
+  "@odata.type": "#microsoft.graph.external"
 }
 ```
 

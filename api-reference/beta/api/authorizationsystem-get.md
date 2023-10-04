@@ -1,9 +1,9 @@
 ---
 title: "Get authorizationSystem"
 description: "Read the properties and relationships of an authorizationSystem object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [authorizationSystem](../resources/authorizationsystem.md) object.
+Read the properties and relationships of an [authorizationSystem](../resources/authorizationsystem.md) object. Gets a single authorizationSystem if the calling user has access to it in EPM.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+[!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
 
 ## HTTP request
 
@@ -30,13 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /authorizationSystemResource/authorizationSystem
-GET /authorizationSystemIdentity/authorizationSystem
 GET /external/authorizationSystems/{authorizationSystemId}
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -60,7 +57,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/authorizationSystemResource/authorizationSystem
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{base64}
 ```
 
 
@@ -78,12 +75,14 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.authorizationSystem",
-    "id": "1feed070-9621-c5c7-a78c-6dc53cf3b0e1",
-    "authorizationSystemId": "String",
-    "authorizationSystemName": "String",
-    "authorizationSystemType": "String"
+  "id": "{base64}",
+  "authorizationSystemId": "956987887735",
+  "authorizationSystemName": "cloudknox-development",
+  "authorizationSystemType": "aws",
+  "dataCollectionInfo": {
+    "entitlements": {
+      "@odata.type": "microsoft.graph.noEntitlementsDataCollection"
+    }
   }
 }
 ```
