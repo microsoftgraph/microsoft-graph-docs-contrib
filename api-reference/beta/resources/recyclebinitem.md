@@ -19,19 +19,19 @@ Inherits from [baseItem](baseitem.md).
 
 ## Methods
 
-| Method                                                  | Return Type                                                 | Description                                                                                  |
-|:--------------------------------------------------------|:------------------------------------------------------------|:---------------------------------------------------------------------------------------------|
-| [List recycleBinItems](../api/recyclebin-list-items.md) | [recycleBinItem](../resources/recyclebinitem.md) collection |Get a list of [recycleBinItems](../resources/recyclebinitem.md) objects and their properties. |
+| Method                                                  | Return Type                                                 | Description                                                                              |
+|:--------------------------------------------------------|:------------------------------------------------------------|:-----------------------------------------------------------------------------------------|
+| [List recycleBinItems](../api/recyclebin-list-items.md) | [recycleBinItem](../resources/recyclebinitem.md) collection |Get a list of [recycleBinItems](../resources/recyclebinitem.md) under the specified site. |
 
 ## Properties
 
-| Property            | Type           | Description                                                                                                                                                                                                           |
-|:--------------------|:---------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| deletedDateTime     | DateTimeOffset | Date and time when the item was deleted. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
-| deletedFromLocation | String         | Relative URL of the list or folder that originally contained the item.                                                                                                                                                |
-| id                  | String         | Unique identifier of the delete transaction. Inherited from [baseItem](baseitem.md).                                                                                                                                  |
-| name                | String         | Name of the item. Inherited from [baseItem](baseitem.md).                                                                                                                                                             |
-| size                | Int64          | Size of the item in bytes.                                                                                                                                                                                            |
+| Property            | Type           | Description                                                                                                                                                                                                      |
+|:--------------------|:---------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| deletedDateTime     | DateTimeOffset | Date and time when the item was deleted. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+| deletedFromLocation | String         | Relative URL of the list or folder that originally contained the item.                                                                                                                                           |
+| id                  | String         | Unique identifier of the delete transaction. Inherited from [baseItem](baseitem.md).                                                                                                                             |
+| name                | String         | Name of the item. Inherited from [baseItem](baseitem.md).                                                                                                                                                        |
+| size                | Int64          | Size of the item in bytes.                                                                                                                                                                                       |
 
 ## JSON Representation
 
