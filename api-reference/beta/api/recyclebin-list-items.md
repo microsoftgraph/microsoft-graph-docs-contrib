@@ -34,7 +34,7 @@ GET /sites/{siteId}/recycleBin/items
 
 ## Optional query parameters
 
-This method supports the $select, $search, and $top OData query parameters to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the $select and $top OData query parameters to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
