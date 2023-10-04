@@ -1,9 +1,9 @@
 ---
 title: "authorizationSystemTypeService resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents a service in an authorization system."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents a service in an authorization system. Services are defined by the auth system type (AWS, Azure, GCP) and not defined by the authorization system.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -22,23 +21,17 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List authorizationSystemTypeServices](../api/awsauthorizationsystem-list-services.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) collection|Get a list of the [authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) objects and their properties.|
-|[Create authorizationSystemTypeService](../api/awsauthorizationsystem-post-services.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|Create a new [authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) object.|
 |[Get authorizationSystemTypeService](../api/authorizationsystemtypeservice-get.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|Read the properties and relationships of an [authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) object.|
-|[Update authorizationSystemTypeService](../api/authorizationsystemtypeservice-update.md)|[authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md)|Update the properties of an [authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) object.|
-|[Delete authorizationSystemTypeService](../api/awsauthorizationsystem-delete-services.md)|None|Delete an [authorizationSystemTypeService](../resources/authorizationsystemtypeservice.md) object.|
-|[List actions](../api/authorizationsystemtypeservice-list-actions.md)|[authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md) collection|Get the authorizationSystemTypeAction resources from the actions navigation property.|
-|[Add authorizationSystemTypeAction](../api/authorizationsystemtypeservice-post-actions.md)|[authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md)|Add actions by posting to the actions collection.|
-|[Remove actions](../api/authorizationsystemtypeservice-delete-actions.md)|None|Remove an [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|id|String|The identifier of the service. Read-only. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|actions|[authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md) collection|**TODO: Add Description**|
+|actions|[authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md) collection|List of actions for the service in an authorization system.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
