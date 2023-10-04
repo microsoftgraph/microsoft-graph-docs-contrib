@@ -81,11 +81,11 @@ Content-Type: application/json
 {
    "value": [
     {
-        "deletedDateTime": "2022-04-25T20:11:51Z",
-        "deletedFromLocation": "List/TestList",
-        "id": "5d625d33-338c-4a77-a98a-3e287116440c",
-        "name": "TestItem",
-        "size": 412
+        "id": "825e764f-c118-438f-b5c4-b8fbe60ab569",
+        "name": "file1.txt",
+        "size": 469,
+        "deletedDateTime": "2023-03-27T12:06:59Z",
+        "deletedFromLocation": "Shared Documents/folder1"
     }
   ]
 }
