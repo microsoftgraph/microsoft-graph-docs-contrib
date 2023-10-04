@@ -9,8 +9,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new SourceCollectionRequestBuilderGetRequestConfiguration();
-$queryParameters = SourceCollectionRequestBuilderGetRequestConfiguration::createQueryParameters();
+$requestConfiguration = new SourceCollectionItemRequestBuilderGetRequestConfiguration();
+$queryParameters = SourceCollectionItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["addToReviewSetOperation","custodianSources","lastEstimateStatisticsOperation"];
 $requestConfiguration->queryParameters = $queryParameters;
 

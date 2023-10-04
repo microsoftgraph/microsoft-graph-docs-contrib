@@ -14,7 +14,7 @@ request_body = PinnedChatMessageInfo(
 	}
 )
 
-result = await graph_client.chats.by_chat_id('chat-id').pinned_messages.post(request_body = request_body)
+result = await graph_client.chats.by_chat_id('chat-id').pinned_messages.post(body = request_body)
 
 
 ```

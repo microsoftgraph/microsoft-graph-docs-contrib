@@ -30,7 +30,7 @@ request_body = QueryPostRequestBody(
 	]
 )
 
-result = await graph_client.search.query.post(request_body = request_body)
+result = await graph_client.search.query.post(body = request_body)
 
 
 ```

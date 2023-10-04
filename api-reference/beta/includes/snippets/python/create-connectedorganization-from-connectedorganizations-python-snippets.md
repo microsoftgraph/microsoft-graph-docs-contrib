@@ -21,7 +21,7 @@ request_body = ConnectedOrganization(
 	state = ConnectedOrganizationState.Proposed,
 )
 
-result = await graph_client.identity_governance.entitlement_management.connected_organizations.post(request_body = request_body)
+result = await graph_client.identity_governance.entitlement_management.connected_organizations.post(body = request_body)
 
 
 ```

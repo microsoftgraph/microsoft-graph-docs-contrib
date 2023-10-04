@@ -9,8 +9,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new CloudPCRequestBuilderGetRequestConfiguration();
-$queryParameters = CloudPCRequestBuilderGetRequestConfiguration::createQueryParameters();
+$requestConfiguration = new CloudPCItemRequestBuilderGetRequestConfiguration();
+$queryParameters = CloudPCItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","displayName","imageDisplayName","lastModifiedDateTime","lastRemoteActionResult","lastLoginResult","connectivityResult"];
 $requestConfiguration->queryParameters = $queryParameters;
 

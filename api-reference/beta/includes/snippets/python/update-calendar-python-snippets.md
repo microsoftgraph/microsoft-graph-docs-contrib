@@ -12,7 +12,7 @@ request_body = Calendar(
 	name = "Social events",
 )
 
-result = await graph_client.me.calendar.patch(request_body = request_body)
+result = await graph_client.me.calendar.patch(body = request_body)
 
 
 ```

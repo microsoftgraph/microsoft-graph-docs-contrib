@@ -12,9 +12,11 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Delete a [bundle][] of driveItems by using its **id**.
-Note that deleting a bundle using this method permanently deletes the bundle and does not move it to the Recycle Bin.
-It does not, however, remove the items that were referenced by the bundle.
-They will remain in their parent folders.
+Deleting a bundle using this method permanently deletes the bundle and doesn't move it to the Recycle Bin.
+It doesn't, however, remove the items that were referenced by the bundle.
+They remain in their parent folders.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -39,15 +41,15 @@ DELETE /drive/items/{bundle-id}
 | Name          | Description  |
 |:------------- |:------------ |
 | Authorization | Bearer {token}. Required. |
-| if-match      | eTag. Optional. If this request header is included and the eTag (or cTag) provided does not match the current tag on the bundle, a `412 Precondition Failed` response is returned and the bundle will not be deleted.|
+| if-match      | eTag. Optional. If this request header is included and the eTag (or cTag) provided doesn't match the current tag on the bundle, a `412 Precondition Failed` response is returned and the bundle won't be deleted.|
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 For information about error responses, see [Microsoft Graph error responses and resource types][error-response].
 
@@ -55,7 +57,7 @@ For information about error responses, see [Microsoft Graph error responses and 
 
 ### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "delete-bundle" } -->
@@ -99,7 +101,7 @@ DELETE https://graph.microsoft.com/v1.0/drive/items/{bundle-id}
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- { "blockType": "response" } -->
 

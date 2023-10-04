@@ -26,7 +26,7 @@ Represents an account object in Dynamics 365 Business Central.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|blocked|Boolean|Specifies that entries cannot be posted to the G/L account. `True` indicates that the account is blocked and posting is not allowed.|
+|blocked|Boolean|Specifies that entries can't be posted to the G/L account. `True` indicates that the account is blocked and posting isn't allowed.|
 |category|String|Specifies the category of the G/L account. Maximum size is 20.|
 |displayName|String|Specifies the name of the G/L account. Maximum size is 50.|
 |id|GUID|The unique identifier for the account.|
@@ -39,7 +39,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 
 ```json

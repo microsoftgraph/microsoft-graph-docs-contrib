@@ -13,7 +13,7 @@ request_body = ContactFolder(
 	display_name = "displayName-value",
 )
 
-result = await graph_client.me.contact_folders.by_contact_folder_id('contactFolder-id').patch(request_body = request_body)
+result = await graph_client.me.contact_folders.by_contact_folder_id('contactFolder-id').patch(body = request_body)
 
 
 ```

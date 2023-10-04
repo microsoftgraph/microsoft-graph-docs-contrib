@@ -1,5 +1,5 @@
 ---
-title: "List intelligenceProfileIndicators"
+title: "List indicators"
 description: "Get the intelligenceProfileIndicator resources from the indicators navigation property."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# List intelligenceProfileIndicators
+# List indicators
 
 Namespace: microsoft.graph.security
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph.security
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
 Get the [intelligenceProfileIndicator](../resources/security-intelligenceprofileindicator.md) resources from the **indicators** navigation property of an [intelligenceProfile](../resources/security-intelligenceprofile.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

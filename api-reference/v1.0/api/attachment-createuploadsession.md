@@ -2,7 +2,7 @@
 title: "attachment: createUploadSession"
 description: "Create an upload session to iteratively upload ranges of a file so as to attach the file to the specified message."
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: "apiPageType"
 ---
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified Outlook item. The item can be a [message](../resources/message.md) or [event](../resources/event.md).
 
-Use this approach to attach a file if the file size is between 3 MB and 150 MB. To attach a file that's smaller than 3 MB, do a `POST` operation on the **attachments** navigation property of the Outlook item; see how to do this [for a message](message-post-attachments.md) or [for an event](event-post-attachments.md). 
+Use this approach to attach a file if the file size is between 3 MB and 150 MB. To attach a file that's smaller than 3 MB, do a `POST` operation on the **attachments** navigation property of the Outlook item; see how to do this [for a message](message-post-attachments.md) or [for an event](event-post-attachments.md).
 
-As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries. Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded. This allows transfer to be resumed, in case the network connection is dropped during upload. 
+As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries. Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded. This allows transfer to be resumed, in case the network connection is dropped during upload.
 
 The following are the steps to attach a file to an Outlook item using an upload session:
 
@@ -27,10 +27,12 @@ The following are the steps to attach a file to an Outlook item using an upload 
 See [attach large files to Outlook messages or events](/graph/outlook-large-attachments) for an example.
 
 > [!TIP]
-> Exchange Online lets administrators customize the message size limit for Microsoft 365 mailboxes,  including any message attachments. By default, this message size limit is 35 MB. Find out how to [customize the maximum message size](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) to support attachments larger than the default limit for your tenant. 
+> Exchange Online lets administrators customize the message size limit for Microsoft 365 mailboxes,  including any message attachments. By default, this message size limit is 35 MB. Find out how to [customize the maximum message size](https://www.microsoft.com/microsoft-365/blog/2015/04/15/office-365-now-supports-larger-email-messages-up-to-150-mb) to support attachments larger than the default limit for your tenant.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Be aware of a [known issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13644) if you're attaching a large file to a message or event in a shared or delegated mailbox.
+
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -44,7 +46,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To create an upload session for attaching a file to an **event**: 
+To create an upload session for attaching a file to an **event**:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -52,7 +54,7 @@ POST /me/events/{id}/attachments/createUploadSession
 POST /users/{id | userPrincipalName}/events/{id}/attachments/createUploadSession
 ```
 
-To create an upload session for attaching a file to a **message**: 
+To create an upload session for attaching a file to a **message**:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -79,7 +81,7 @@ In the request body, provide a JSON object with the following parameters.
 
 If successful, this method returns a `201 Created` response code and a new [uploadSession](../resources/uploadsession.md) object in the response body.
 
->**Note**: 
+>**Note**:
 >
 >The **uploadUrl** property returned as part of the **uploadSession** response object is an opaque URL for subsequent `PUT` queries to upload byte ranges of the file. It contains the appropriate auth token for subsequent `PUT` queries that expire by **expirationDateTime**. Do not customize this URL.
 >
@@ -109,7 +111,7 @@ Content-type: application/json
 {
   "AttachmentItem": {
     "attachmentType": "file",
-    "name": "flower", 
+    "name": "flower",
     "size": 3483322
   }
 }
@@ -197,7 +199,7 @@ Content-type: application/json
 {
   "AttachmentItem": {
     "attachmentType": "file",
-    "name": "scenary", 
+    "name": "scenary",
     "size": 7208534,
     "isInline": true,
     "contentId": "my_inline_picture"

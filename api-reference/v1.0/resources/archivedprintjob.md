@@ -1,6 +1,6 @@
 ---
 title: archivedPrintJob resource type
-description: A record of a 'final state' (completed, aborted, or canceled) print job that is used for reporting purposes. This is not an active print job."
+description: A record of a 'final state' (completed, aborted, or canceled) print job that is used for reporting purposes. This isn't an active print job."
 author: nilakhan
 ms.localizationpriority: medium
 ms.prod: cloud-printing
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-A record of a "final state" (completed, aborted, or canceled) print job that is used for reporting purposes. This is not an active print job.
+A record of a "final state" (completed, aborted, or canceled) print job that is used for reporting purposes. This isn't an active print job.
 
 ## Properties
 | Property     | Type        | Description |
@@ -29,7 +29,7 @@ A record of a "final state" (completed, aborted, or canceled) print job that is 
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

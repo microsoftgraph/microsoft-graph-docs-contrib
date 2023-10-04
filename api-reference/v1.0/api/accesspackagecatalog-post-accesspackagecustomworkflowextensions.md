@@ -11,9 +11,11 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create a new [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) or [accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md) object and add it to an existing [accessPackageCatalog](../resources/accesspackagecatalog.md) object.  
+Create a new [accessPackageAssignmentRequestWorkflowExtension](../resources/accesspackageassignmentrequestworkflowextension.md) or [accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md) object and add it to an existing [accessPackageCatalog](../resources/accesspackagecatalog.md) object.
 
 You must explicitly provide an `@odata.type` property that indicates whether the object is an  **accessPackageAssignmentRequestWorkflowExtension** or an **accessPackageAssignmentWorkflowExtension**.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -32,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/accessPackageCustomWorkflowExtensions
+POST /identityGovernance/entitlementManagement/catalogs/{catalogId}/customWorkflowExtensions
 ```
 
 ## Request headers
@@ -52,7 +54,7 @@ You can specify the following properties when creating a **accessPackageCustomWo
 |:---|:---|:---|
 |description|String|Description for the customAccessPackageWorkflowExtension object.|
 |displayName|String|Required. Display name for the customAccessPackageWorkflowExtension.|
-|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Required. The type and details for configuring the endpoint to call the logic app's workflow.|  
+|endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|Required. The type and details for configuring the endpoint to call the logic app's workflow.|
 |authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Required. Configuration for securing the API call to the logic app. For example, using OAuth client credentials flow.|
 |callbackConfiguration|[customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md)|The callback configuration for a custom extension. This is supported for `accessPackageAssignmentRequestWorkflowExtension`. |
 
@@ -77,7 +79,7 @@ The following is an example of a access package assignment request custom workfl
 -->
 
 ``` http
-POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/accessPackagecustomWorkflowExtensions
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customWorkflowExtensions
 Content-Type: application/json
 
 {
@@ -137,7 +139,7 @@ Content-Type: application/json
          "durationBeforeTimeout":"PT1H"
       }
    }
-} 
+}
 ```
 
 ### Example 2: Create a custom extension for use with an access package assignment
@@ -152,7 +154,7 @@ The following is an example of a access package assignment custom workflow exten
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/accessPackagecustomWorkflowExtensions
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customWorkflowExtensions
 Content-Type: application/json
 
 {

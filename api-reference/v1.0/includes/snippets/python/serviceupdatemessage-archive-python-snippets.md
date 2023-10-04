@@ -15,7 +15,7 @@ request_body = ArchivePostRequestBody(
 	]
 )
 
-result = await graph_client.admin.service_announcement.messages.archive.post(request_body = request_body)
+result = await graph_client.admin.service_announcement.messages.archive.post(body = request_body)
 
 
 ```

@@ -15,7 +15,7 @@ request_body = ManagedAppOperation(
 	version = "Version value",
 )
 
-result = await graph_client.device_app_management.managed_app_registrations.by_managed_app_registration_id('managedAppRegistration-id').operations.post(request_body = request_body)
+result = await graph_client.device_app_management.managed_app_registrations.by_managed_app_registration_id('managedAppRegistration-id').operations.post(body = request_body)
 
 
 ```

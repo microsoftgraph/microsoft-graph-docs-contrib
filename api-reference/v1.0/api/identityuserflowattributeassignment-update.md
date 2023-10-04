@@ -1,7 +1,7 @@
 ---
 title: "Update identityUserFlowAttributeAssignment"
 description: "Update the properties of a userAttributeAssignments object."
-author: "jkdouglas"
+author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -12,6 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Update the properties of a identityUserFlowAttributeAssignment object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

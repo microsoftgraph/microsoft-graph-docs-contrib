@@ -28,7 +28,7 @@ request_body = RoomList(
 	),
 )
 
-result = await graph_client.places.by_place_id('place-id').patch(request_body = request_body)
+result = await graph_client.places.by_place_id('place-id').patch(body = request_body)
 
 
 ```

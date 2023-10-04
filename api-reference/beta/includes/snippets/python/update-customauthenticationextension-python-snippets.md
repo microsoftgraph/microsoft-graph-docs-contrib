@@ -30,7 +30,7 @@ request_body = OnTokenIssuanceStartCustomExtension(
 	]
 )
 
-result = await graph_client.identity.custom_authentication_extensions.by_custom_authentication_extension_id('customAuthenticationExtension-id').patch(request_body = request_body)
+result = await graph_client.identity.custom_authentication_extensions.by_custom_authentication_extension_id('customAuthenticationExtension-id').patch(body = request_body)
 
 
 ```

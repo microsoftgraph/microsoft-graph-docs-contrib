@@ -99,7 +99,7 @@ request_body = BookingStaffMember(
 	}
 )
 
-result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').staff_members.post(request_body = request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').staff_members.post(body = request_body)
 
 
 ```

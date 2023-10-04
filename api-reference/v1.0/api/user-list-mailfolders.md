@@ -1,7 +1,7 @@
 ---
 title: List mailFolders
 description: Get the mail folder collection under the root folder of the signed-in user.
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "outlook"
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 Get the mail folder collection directly under the root folder of the signed-in user. The returned collection includes any [mail search folders](../resources/mailsearchfolder.md) directly under the root.
 
 By default, this operation does not return hidden folders. Use a query parameter `includeHiddenFolders` to include them in the response. This operation does not return all mail folders in a mailbox, only the child folders of the root folder. To return all mail folders in a mailbox, each child folder must be [traversed separately](mailfolder-list-childfolders.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
