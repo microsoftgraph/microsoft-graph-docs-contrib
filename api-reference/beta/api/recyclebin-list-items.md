@@ -34,7 +34,7 @@ GET /sites/{siteId}/recycleBin/items
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters (for example, `$search`, `$select`, and `$top`) to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the $select, $search, and $top OData query parameters to customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -81,18 +81,11 @@ Content-Type: application/json
 {
    "value": [
     {
-      "id": "5d625d33-338c-4a77-a98a-3e287116440c",
-      "name": "document.docx",
-      "size": 1024,
-      "deletedDateTime": "2022-04-25T20:11:51Z",
-      "title": "My document",
-      "deletedBy": {
-        "user": {
-          "displayName": "Tenant Admin User",
-          "id": "801f0925-43ac-4ae7-94b2-514653421ec1",
-          "userPrincipalName": "max.morin@contoso.com"
-        }
-      }
+        "deletedDateTime": "2022-04-25T20:11:51Z",
+        "deletedFromLocation": "List/TestList",
+        "id": "5d625d33-338c-4a77-a98a-3e287116440c",
+        "name": "TestItem",
+        "size": 412
     }
   ]
 }
