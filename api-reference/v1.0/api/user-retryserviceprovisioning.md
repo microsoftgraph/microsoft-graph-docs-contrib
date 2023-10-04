@@ -38,7 +38,7 @@ POST /users/{id}/retryServiceProvisioning
 
 ## Request body
 
-This operation has no request content.
+Do not supply a request body for this method.
 
 ## Response
 
