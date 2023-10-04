@@ -19,7 +19,7 @@ requestBody := graphmodelssecurity.NewEdiscoveryReviewSet()
 displayName := "My review set 2"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").ReviewSets().Post(context.Background(), requestBody, nil)
+reviewSets, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").ReviewSets().Post(context.Background(), requestBody, nil)
 
 
 ```

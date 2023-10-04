@@ -32,14 +32,14 @@ Represents a registration question associated with a [virtualEventRegistration](
 | ----- | ----------- |
 | text | The registration question accepts single-line text. |
 | multilineText | The registration question accepts multi-line text. |
-| singleChoice | The registration question accepts one anwer from a list of options. |
-| multiChoice | The registration question accepts more than one answers from a list of options. |
-| boolean | The registration question accepts a yes or no answer. |
-| unknownFutureValue | Evolvable enumeration sentinel value. Do not use. |
+| singleChoice | The registration question accepts one answer from a list of options. |
+| multiChoice | The registration question accepts more than one answer from a list of options. |
+| boolean | The registration question accepts a yes, or no answer. |
+| unknownFutureValue | Evolvable enumeration sentinel value. Don't use. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -2,7 +2,7 @@
 title: "phoneAuthenticationMethod: disableSmsSignIn"
 description: "Disable SMS sign-in for a mobile phone registered to a user."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "luc-msft"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -12,6 +12,8 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 Disable SMS sign-in for an existing `mobile` phone number registered to a user. The number will no longer be available for SMS sign-in, which can prevent your user from signing in.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

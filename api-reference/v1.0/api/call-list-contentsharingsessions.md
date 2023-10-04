@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [contentSharingSession](../resources/contentsharingsession.md) objects in a call.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 | Permission type                        | Permissions (from least to most privileged)                                                              |
@@ -82,6 +84,10 @@ GET https://graph.microsoft.com/v1.0/communications/calls/7531d31f-d10d-44de-802
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-contentsharingsessions-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-contentsharingsessions-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

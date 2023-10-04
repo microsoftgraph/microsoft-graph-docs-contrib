@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
-mgc policies role-management-policy-assignments list --filter scopeId eq '/' and scopeType eq 'Directory'
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc policies role-management-policy-assignments list --filter "scopeId eq '/' and scopeType eq 'Directory'"
 
 ```

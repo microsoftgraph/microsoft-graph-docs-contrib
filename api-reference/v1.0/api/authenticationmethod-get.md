@@ -2,7 +2,7 @@
 title: "Get authenticationMethod"
 description: "Retrieve the properties and relationships of an authenticationMethod object."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "jpettere"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -12,6 +12,8 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 Retrieve the properties and relationships of an [authenticationMethod](../resources/authenticationmethod.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

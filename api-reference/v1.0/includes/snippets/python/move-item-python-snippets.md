@@ -4,21 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = DriveItem()
-parent_reference = ItemReference()
-parent_reference.id = '{new-parent-folder-id}'
+graph_client = GraphServiceClient(request_adapter)
 
+request_body = DriveItem(
+	parent_reference = ItemReference(
+		id = "{new-parent-folder-id}",
+	),
+	name = "new-item-name.txt",
+)
 
-request_body.parent_reference = parent_reference
-request_body.name = 'new-item-name.txt'
-
-
-
-
-result = await client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').patch(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').patch(body = request_body)
 
 
 ```

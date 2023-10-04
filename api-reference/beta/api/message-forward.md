@@ -2,7 +2,7 @@
 title: "message: forward"
 description: "Forward a message using either JSON or MIME format"
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -26,6 +26,8 @@ When using MIME format:
 This method saves the message in the **Sent Items** folder.
 
 Alternatively, [create a draft to forward a message](../api/message-createforward.md), and [send](../api/message-send.md) it later.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -84,7 +86,7 @@ POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAH5JaLAAA=/forward
 Content-Type: application/json
 
 {
-  "message":{  
+  "message":{
     "isDeliveryReceiptRequested": true,
     "toRecipients":[
       {
@@ -95,12 +97,16 @@ Content-Type: application/json
       }
      ]
   },
-  "comment": "Dana, just want to make sure you get this." 
+  "comment": "Dana, just want to make sure you get this."
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-forward-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/message-forward-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

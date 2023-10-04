@@ -1,7 +1,7 @@
 ---
 title: "List recoveryKeys"
 description: "Get a list of the bitlockerRecoveryKey objects and their properties."
-author: "hafowler"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) objects and their properties. 
 
 This operation does not return the **key** property. For information about how to read the **key** property, see [Get bitlockerRecoveryKey](bitlockerrecoverykey-get.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

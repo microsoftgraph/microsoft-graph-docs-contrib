@@ -2,7 +2,7 @@
 title: "Update homerealmdiscoverypolicy"
 description: "Update the properties of homeRealmDiscoveryPolicy object."
 ms.localizationpriority: medium
-author: "hpsin"
+author: "nickludwig"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 
 Update the properties of a [homeRealmDiscoveryPolicy](../resources/homerealmdiscoverypolicy.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

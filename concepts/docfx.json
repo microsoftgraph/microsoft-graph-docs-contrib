@@ -14,6 +14,7 @@
           "concepts/sdks/snippets/java/**",
           "concepts/sdks/snippets/python/**",
           "concepts/sdks/snippets/typescript/**",
+          "concepts/includes/connecting-external-content/snippets/**",
           "README.md",
           "LICENSE",
           "LICENSE-CODE",
@@ -41,7 +42,7 @@
     "externalReference": [],
     "globalMetadata": {
       "feedback_system": "GitHub",
-      "feedback_github_repo": "microsoftgraph/microsoft-graph-docs",
+      "feedback_github_repo": "microsoftgraph/microsoft-graph-docs-contrib",
       "feedback_product_url": "https://developer.microsoft.com/graph/support",
       "breadcrumb_path": "/graph/breadcrumb/toc.json",
       "author": "MSGraphDocsVteam",

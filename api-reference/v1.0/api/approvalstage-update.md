@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), approve or deny an [approvalStage](../resources/approvalstage.md) object in an [approval](../resources/approval.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +51,7 @@ The following table shows the properties that are required for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code in the response body. IOf the caller does not have the right permissions, the method returns a `403 Forbidden` response code, or if the approval id is not found, the method returns `404 Not found`. If the request has already been approved by another approver in the same approval stage, the method returns `409 Conflict` response code.
+If successful, this method returns a `204 No Content` response code in the response body. If the caller doesn't have the right permissions, the method returns a `403 Forbidden` response code, or if the approval ID isn't found, the method returns `404 Not found`. If the request has already been approved by another approver in the same approval stage, the method returns `409 Conflict` response code.
 
 ## Examples
 
@@ -103,7 +105,7 @@ PATCH https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

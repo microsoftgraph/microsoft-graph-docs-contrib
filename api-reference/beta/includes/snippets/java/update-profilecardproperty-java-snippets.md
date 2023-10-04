@@ -18,7 +18,7 @@ annotations.localizations = localizationsList;
 annotationsList.add(annotations);
 profileCardProperty.annotations = annotationsList;
 
-graphClient.organization("{organizationId}").settings().profileCardProperties("CustomAttribute1")
+graphClient.admin().people().profileCardProperties("CustomAttribute1")
 	.buildRequest()
 	.patch(profileCardProperty);
 

@@ -1,5 +1,5 @@
 ---
-title: "Assign sponsors"
+title: "Add sponsor"
 description: "Assign a user a sponsor."
 author: "sadia353"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "users"
 doc_type: apiPageType
 ---
 
-# Assign sponsors
+# Add sponsor
 
 Namespace: microsoft.graph
 
@@ -48,7 +48,7 @@ In the request body, supply a JSON object and pass an `@odata.id` parameter with
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -56,9 +56,10 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 #### Request
 
-The following is an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [user](../resources/user.md) object to be assigned as a sponsor.
+Here's an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [user](../resources/user.md) object to be assigned as a sponsor.
 
-The following is an example of a request.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_userSponsors"
@@ -73,9 +74,19 @@ Content-Type: application/json
 }
 ```
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-usersponsors-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-usersponsors-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 <!-- {
   "blockType": "response"
 } -->
@@ -87,9 +98,9 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [group](../resources/group.md) object to be assigned as a sponsor.
+Here's an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [group](../resources/group.md) object to be assigned as a sponsor.
 
-The following is an example of a request.
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_groupSponsors"
@@ -104,9 +115,19 @@ Content-Type: application/json
 }
 ```
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-groupsponsors-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-groupsponsors-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 <!-- {
   "blockType": "response"
 } -->

@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 In PIM, request for a role eligibility for a principal through the [unifiedRoleEligibilityScheduleRequest](../resources/unifiedroleeligibilityschedulerequest.md) object. This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -19,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|RoleEligibilitySchedule.ReadWrite.Directory|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|RoleManagement.ReadWrite.Directory|
+|Application|RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 
 ## HTTP request
 

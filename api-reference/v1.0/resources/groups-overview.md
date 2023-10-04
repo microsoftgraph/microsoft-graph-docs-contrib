@@ -127,7 +127,7 @@ Content-type: application/json
 
 ## Group membership
 
-Not all object types can be members of both Microsoft 365 and security groups.
+Membership to groups can be statically assigned or dynamic. Not all object types can be members of both Microsoft 365 and security groups.
 
 [!INCLUDE [groups-allowed-member-types](../../../concepts/includes/groups-allowed-member-types.md)]
 
@@ -141,7 +141,7 @@ The dynamic membership rules are specified through the **membershipRule** proper
 
 - The `Property` is defined following this syntax: `object.property`. For example `user.department` or `device.accountEnabled`.
 - The rule syntax supports various operators. For more information, see [Supported expression operators](/azure/active-directory/enterprise-users/groups-dynamic-membership).
-- A `Value` of type String must be enclosed in double quotes ("). You must use a backslash to escape any double quotes inside double quotes. This requirement doesn't apply when using the rule builder in the Azure portal because the expression isn't enclosed in double quotes.
+- A `Value` of type String must be enclosed in double quotes ("). You must use a backslash to escape any double quotes inside double quotes. This requirement doesn't apply when using the rule builder in the Microsoft Entra admin center because the expression isn't enclosed in double quotes.
 
 The following example shows a complete rule.
 

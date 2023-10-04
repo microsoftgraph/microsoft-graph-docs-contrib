@@ -25,7 +25,8 @@ configuration := &graphreports.ReportsGetM365AppUserCounts(period='{period}')Req
 	QueryParameters: requestParameters,
 }
 
-graphClient.Reports().GetM365AppUserCounts(period='{period}')().Get(context.Background(), configuration)
+period := "{period}"
+graphClient.Reports().GetM365AppUserCountsWithPeriod(&period).Get(context.Background(), configuration)
 
 
 ```

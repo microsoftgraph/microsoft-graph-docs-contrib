@@ -4,6 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```bash
 
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
 mgc tenant-relationships delegated-admin-relationships create --body '{\
   "displayName": "Contoso admin relationship",\
   "duration": "P730D",\

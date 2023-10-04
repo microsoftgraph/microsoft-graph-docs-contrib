@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of participant objects in the call.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 | Permission type | Permissions (from least to most privileged) |
@@ -30,6 +32,7 @@ Retrieve a list of participant objects in the call.
 ```http
 GET /communications/calls/{id}/participants
 ```
+> **Note:** This request does not support peer-to-peer calls.
 
 ## Optional query parameters
 

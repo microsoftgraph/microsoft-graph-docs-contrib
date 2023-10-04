@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Delete a [citationTemplate](../resources/security-citationtemplate.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -30,8 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /security/labels/citations/{citationTemplateId}/$ref
-DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/citationTemplate/$ref
+DELETE /security/labels/citations/{citationTemplateId}
+DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/citationTemplate
 ```
 
 ## Request headers
@@ -64,6 +66,10 @@ DELETE https://graph.microsoft.com/beta/security/labels/citations/{citationTempl
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-citationtemplate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-citationtemplate-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-citationtemplate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -78,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/security/labels/citations/{citationTempl
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-citationtemplate-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-citationtemplate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

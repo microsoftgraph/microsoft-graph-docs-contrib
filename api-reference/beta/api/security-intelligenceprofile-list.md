@@ -1,5 +1,5 @@
 ---
-title: "List intelligenceProfiles"
+title: "List intelProfiles"
 description: "Get a list of the intelligenceProfile objects and their properties."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# List intelligenceProfiles
+# List intelProfiles
 
 Namespace: microsoft.graph.security
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph.security
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
 Get a list of the [intelligenceProfile](../resources/security-intelligenceprofile.md) objects and their properties.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -39,7 +41,7 @@ GET /security/threatIntelligence/intelProfiles
 
 ## Optional query parameters
 
-This method supports the `$count`, `$select`, `$search`, `$top`, `$skip`, `$orderBy`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$select`, `$search`, `$top`, `$skip`, `$orderby`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -74,6 +76,10 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/intelProfiles
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-intelligenceprofile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-intelligenceprofile-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-intelligenceprofile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -88,6 +94,10 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/intelProfiles
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-intelligenceprofile-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-intelligenceprofile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -128,9 +138,9 @@ Content-Type: application/json
         "Government",
         "Humanitarian"
       ],
-      "sponsorStates": [
+      "countriesOrRegionsOfOrigin": [
         {
-          "@odata.type": "microsoft.graph.security.intelligenceProfileSponsorState",
+          "@odata.type": "microsoft.graph.security.countriesOrRegionsOfOrigin",
           "label": "Country/Region",
           "code": "Country/Region code"
         }

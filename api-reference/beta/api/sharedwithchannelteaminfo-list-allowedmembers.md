@@ -23,6 +23,8 @@ This method does not return the following [conversationMembers](../resources/con
 >
 > The membership results can map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are only from the current tenant.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -78,6 +80,10 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-5634-925f-022c42e20265/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-conversationmember-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-conversationmember-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

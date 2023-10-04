@@ -4,30 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Contact()
-request_body.given_name = 'Pavel'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.surname = 'Bansky'
+request_body = Contact(
+	given_name = "Pavel",
+	surname = "Bansky",
+	email_addresses = [
+		EmailAddress(
+			address = "pavelb@fabrikam.onmicrosoft.com",
+			name = "Pavel Bansky",
+		),
+	]
+	business_phones = [
+		"+1 732 555 0102",
+	]
+)
 
-email_addresses_email_address1 = EmailAddress()
-email_addresses_email_address1.address = 'pavelb@fabrikam.onmicrosoft.com'
-
-email_addresses_email_address1.name = 'Pavel Bansky'
-
-
-emailAddressesArray []= emailAddressesEmailAddress1;
-request_body.emailaddresses(emailAddressesArray)
-
-
-request_body.BusinessPhones(['+1 732 555 0102', ])
-
-
-
-
-result = await client.me.contacts.post(request_body = request_body)
+result = await graph_client.me.contacts.post(body = request_body)
 
 
 ```

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Confirm one or more [riskyUser](../resources/riskyuser.md) objects as compromised. This action sets the targeted user's risk level to high.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -22,6 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | IdentityRiskyUser.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | IdentityRiskyUser.ReadWrite.All |
+
+[!INCLUDE [rbac-identity-protection-apis-write](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-write.md)]
 
 ## HTTP request
 

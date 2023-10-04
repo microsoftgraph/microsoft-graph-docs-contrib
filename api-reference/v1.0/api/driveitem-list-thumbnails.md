@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Retrieve thumbnails for a file or folder
 ms.localizationpriority: medium
@@ -29,6 +29,8 @@ Here are the most common ones:
 * Retrieve custom thumbnail sizes
 * Upload a custom thumbnail for an item
 * Determine if a custom uploaded thumbnail exists
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -109,7 +111,7 @@ GET /me/drive/items/{item-id}/thumbnails
 
 ---
 
-This returns an array of available **thumbnailSets** for the item. 
+This returns an array of available **thumbnailSets** for the item.
 Any item in a drive can have zero or more thumbnails.
 
 **Note:** You can use the _select_ query string parameter to control which thumbnail sizes are returned in the **ThumbnailSet**.

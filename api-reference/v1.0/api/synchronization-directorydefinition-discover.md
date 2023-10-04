@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Discover the latest schema definition for provisioning to an application. 
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -94,7 +96,6 @@ POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/job
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

@@ -2,7 +2,7 @@
 title: "Update authenticationContextClassReference"
 description: "Create a new or update the properties of an authenticationContextClassReference object."
 ms.localizationpriority: medium
-author: "bakerCaleb"
+author: "swetha-rai"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -12,6 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Create an [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object, if the ID has not been used. If ID has been used, this call updates the [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -24,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application                            | Policy.ReadWrite.ConditionalAccess |
 
 > [!NOTE]
-> This API has a [known issue](/graph/known-issues#permissions) related to permissions.
+> This method has a [known permissions issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13671) and may require consent to multiple permissions.
 
 ## HTTP request
 

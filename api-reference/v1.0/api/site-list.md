@@ -4,7 +4,7 @@ description: "List all available sites in an organization or list the sites that
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 ---
 
 # List sites
@@ -27,6 +27,8 @@ If you want to list all sites across all geographies, refer to [getAllSites][].
 [getAllSites]: ../api/site-getallsites.md
 
 For more guidance about building applications that use site discovery for scanning purposes, see [Best practices for discovering files and detecting changes at scale](/onedrive/developer/rest-api/concepts/scan-guidance?view=odsp-graph-online&preserve-view=true).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

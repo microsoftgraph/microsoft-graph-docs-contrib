@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve the [app](../resources/teamsappinstallation.md) installed in the specified [team](../resources/team.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -297,6 +299,7 @@ Content-type: application/json
 
 - [List apps in catalog](appcatalogs-list-teamsapps.md)
 - [Request resource-specific consent for apps](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
+- [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -308,3 +311,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

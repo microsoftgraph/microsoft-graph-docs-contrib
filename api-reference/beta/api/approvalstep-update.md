@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Apply approve or deny decision on an [approvalStep](../resources/approvalStep.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,6 +26,14 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
+
+### For PIM for Azure AD roles
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | RoleAssignmentSchedule.ReadWrite.Directory |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -42,6 +52,13 @@ To update an approval decision in entitlement management:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/steps/{id}
+```
+
+To update an approval decision in PIM for Azure AD roles:
+
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /roleManagement/directory/roleAssignmentApprovals/{id}/steps/{id}
 ```
 
 To update an approval decision in PIM for groups:
@@ -89,6 +106,10 @@ PATCH https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/patch-approvalstep-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/patch-approvalstep-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

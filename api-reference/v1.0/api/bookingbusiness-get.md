@@ -12,6 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get the properties and relationships of a [bookingBusiness](../resources/bookingbusiness.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -29,7 +32,7 @@ GET /solutions/bookingBusinesses/{id}
 
 ## Optional query parameters
 
-This method supports the $count and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$count` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
