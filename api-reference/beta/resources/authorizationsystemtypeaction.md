@@ -1,9 +1,9 @@
 ---
 title: "authorizationSystemTypeAction resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents an action in an authorization system."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents an action in an authorization system. Named authorizationSystemTypeAction because actions are defined by the auth system type (AWS, Azure, GCP) and not defined by the authorization system.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -22,19 +21,16 @@ Inherits from [entity](../resources/entity.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List authorizationSystemTypeActions](../api/authorizationsystemtypeservice-list-actions.md)|[authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md) collection|Get a list of the [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md) objects and their properties.|
-|[Create authorizationSystemTypeAction](../api/authorizationsystemtypeservice-post-actions.md)|[authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md)|Create a new [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md) object.|
 |[Get authorizationSystemTypeAction](../api/authorizationsystemtypeaction-get.md)|[authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md)|Read the properties and relationships of an [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md) object.|
-|[Update authorizationSystemTypeAction](../api/authorizationsystemtypeaction-update.md)|[authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md)|Update the properties of an [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md) object.|
-|[Delete authorizationSystemTypeAction](../api/authorizationsystemtypeservice-delete-actions.md)|None|Delete an [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionType|authorizationSystemActionType|**TODO: Add Description**.The possible values are: `delete`, `read`, `unknownFutureValue`.|
-|externalId|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|resourceTypes|String collection|**TODO: Add Description**|
-|severity|authorizationSystemActionSeverity|**TODO: Add Description**.The possible values are: `normal`, `high`, `unknownFutureValue`.|
+|actionType|authorizationSystemActionType|The type of action. The possible values are: `delete`, `read`, `unknownFutureValue`.|
+|externalId|String|The display name of an action. Read-only.|
+|id|String|The unique encoded identifier for an action. Read-only. Inherited from [entity](../resources/entity.md).|
+|resourceTypes|String collection|The resource types the action can be performed on.|
+|severity|authorizationSystemActionSeverity|The severity of the action. The possible values are: `normal`, `high`, `unknownFutureValue`.|
 
 ## Relationships
 None.

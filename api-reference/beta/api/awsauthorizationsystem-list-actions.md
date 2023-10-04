@@ -1,9 +1,9 @@
 ---
 title: "List awsAuthorizationSystemTypeActions"
-description: "Get a list of the awsAuthorizationSystemTypeAction objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "List the awsAuthorizationSystemTypeAction objects and their properties."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [awsAuthorizationSystemTypeAction](../resources/awsauthorizationsystemtypeaction.md) objects and their properties.
+List the [awsAuthorizationSystemTypeAction](../resources/awsauthorizationsystemtypeaction.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+[!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
 
 ## HTTP request
 
@@ -30,10 +32,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/actions
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -49,7 +52,11 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: List All AWS Actions
+
+Returns collection of all authorizationSystemTypeAction entities for a provided AWS authorization system.
+
+#### Request
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -57,12 +64,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/actions
 ```
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -75,16 +82,195 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/actions",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.awsAuthorizationSystemTypeAction",
-      "id": "5e9953de-90ac-13f7-5799-adb97065ca0a",
-      "externalId": "String",
-      "resourceTypes": [
-        "String"
-      ],
-      "severity": "String",
-      "actionType": "String"
+      "@odata.type": "graph.awsAuthorizationSystemTypeAction",
+      "id": "ZWMyOkFjY2VwdFJlc2VydmVkSW5zdGFuY2VzRXhjaGFuZ2VRdW90ZQ==",
+      "externalId": "ec2:AcceptReservedInstancesExchangeQuote",
+      "resourceTypes": ["reserved-instances"],
+      "severity": "high",
+      "actionType": null,
+      "service": {
+        "id": "ec2"
+      }
+    }
+    {
+      "@odata.type": "graph.awsAuthorizationSystemTypeAction",
+      "id": "ZWMyOkFsbG9jYXRlQWRkcmVzcw==",
+      "externalId": "ec2:AllocateAddress"
+      "resourceTypes": ["ipv4pool-ec2"],
+      "severity": "normal",
+      "actionType": null,
+      "service": {
+        "id": "ec2"
+      }
+    },
+    {
+      "@odata.type": "graph.awsAuthorizationSystemTypeAction",
+      "id": "ZWMyOkRlbGV0ZVJvdXRl",
+      "externalId": "ec2:DeleteRoute",
+      "resourceTypes": ["route-table", "prefix-list"],
+      "severity": "high",
+      "actionType": "delete",
+      "service": {
+        "id": "ec2"
+      }
+    },
+    {
+      "@odata.type": "graph.awsAuthorizationSystemTypeAction",
+      "id": "czM6QWJvcnRNdWx0aXBhcnRVcGxvYWQ=",
+      "externalId": "s3:AbortMultipartUpload",
+      "resourceTypes": ["object"],
+      "severity": "normal",
+      "actionType": null,
+      "service": {
+        "id": "s3"
+      }
+    },
+    {
+      "@odata.type": "graph.awsAuthorizationSystemTypeAction",
+      "id": "czM6Q29tcGxldGVNdWx0aXBhcnRVcGxvYWQ=",
+      "externalId": "s3:CompleteMultipartUpload",
+      "resourceTypes": ["bucket"],
+      "severity": "high",
+      "actionType": null,
+      "service": {
+        "id": "s3"
+      }
+    },
+    {
+      "@odata.type": "graph.awsAuthorizationSystemTypeAction",
+      "id": "czM6Q29weU9iamVjdA==",
+      "externalId": "s3:CopyObject",
+      "resourceTypes": ["bucket"],
+      "severity": "high",
+      "actionType": null,
+      "service": {
+        "id": "s3"
+      }
+    }
+  ]
+}
+```
+
+### Example 2: List AWS Actions For A Specific Service
+
+Returns collection of all awsAuthorizationSystemTypeAction entities for a provided AWS authorization system and service the action is performed on (e.g., "ec2").
+
+#### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_awsauthorizationsystemtypeaction"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/actions?$filter=service/id eq 'ec2'
+```
+
+
+### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.awsAuthorizationSystemTypeAction)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/actions?$filter=service/id eq 'ec2'",
+  "value": [
+    {
+      "id": "ZWMyOkFjY2VwdFJlc2VydmVkSW5zdGFuY2VzRXhjaGFuZ2VRdW90ZQ==",
+      "externalId": "ec2:AcceptReservedInstancesExchangeQuote",
+      "resourceTypes": ["reserved-instances"],
+      "severity": "high",
+      "actionType": null,
+      "service": {
+        "id": "ec2"
+      }
+    }
+    {
+      "id": "ZWMyOkFsbG9jYXRlQWRkcmVzcw==",
+      "externalId": "ec2:AllocateAddress"
+      "resourceTypes": ["ipv4pool-ec2"],
+      "severity": "normal",
+      "actionType": null,
+      "service": {
+        "id": "ec2"
+      }
+    },
+    {
+      "id": "ZWMyOkRlbGV0ZVJvdXRl",
+      "externalId": "ec2:DeleteRoute",
+      "resourceTypes": ["route-table", "prefix-list"],
+      "severity": "high",
+      "actionType": "delete",
+      "service": {
+        "id": "ec2"
+      }
+    }
+  ]
+}
+```
+
+### Example 3: List AWS High Risk Delete Actions for a Specific Service
+
+Returns collection of all awsAuthorizationSystemTypeAction entities for a provided AWS authorization system and the service the action is performed on (e.g., "ec2") where action is a high risk delete action.
+
+#### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_awsauthorizationsystemtypeaction"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/actions?$filter=service/id eq 'ec2' and severity eq 'high' and actionType eq 'delete'
+```
+
+
+### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.awsAuthorizationSystemTypeAction)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/actions?$filter=service/id eq 'ec2' and severity eq 'high' and actionType eq 'delete'",
+  "value": [
+    {
+      "id": "ZWMyOkRlbGV0ZUN1c3RvbWVyR2F0ZXdheQ==",
+      "externalId": "ec2:DeleteCustomerGateway",
+      "resourceTypes": ["customer-gateway"],
+      "severity": "high",
+      "actionType": "delete",
+      "service": {
+        "id": "ec2"
+      }
+    },
+    {
+      "id": "ZWMyOkRlbGV0ZVJvdXRl",
+      "externalId": "ec2:DeleteRoute",
+      "resourceTypes": ["route-table", "prefix-list"],
+      "severity": "high",
+      "actionType": "delete",
+      "service": {
+        "id": "ec2"
+      }
     }
   ]
 }

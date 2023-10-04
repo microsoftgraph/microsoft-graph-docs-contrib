@@ -1,9 +1,9 @@
 ---
 title: "Get awsAuthorizationSystemTypeAction"
 description: "Read the properties and relationships of an awsAuthorizationSystemTypeAction object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+[!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
 
 ## HTTP request
 
@@ -30,11 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /awsAuthorizationSystemTypeAction
+GET /external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/actions/{awsAuthorizationSystemTypeActionId}
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +57,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/awsAuthorizationSystemTypeAction
+GET https://graph.microsoft.com/beta/external/authorizationSystems/{computedId}/graph.awsAuthorizationSystem/actions/ZWMyOkFjY2VwdFJlc2VydmVkSW5zdGFuY2VzRXhjaGFuZ2VRdW90ZQ
 ```
 
 
@@ -76,16 +75,20 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.awsAuthorizationSystemTypeAction",
-    "id": "5e9953de-90ac-13f7-5799-adb97065ca0a",
-    "externalId": "String",
-    "resourceTypes": [
-      "String"
-    ],
-    "severity": "String",
-    "actionType": "String"
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#external/authorizationSystems/{computedId}/actions",
+  "value": [
+    {
+      "@odata.type": "graph.awsAuthorizationSystemTypeAction",
+      "id": "ZWMyOkFjY2VwdFJlc2VydmVkSW5zdGFuY2VzRXhjaGFuZ2VRdW90ZQ",
+      "externalId": "ec2:AcceptReservedInstancesExchangeQuote",
+      "resourceTypes": ["reserved-instances"],
+      "severity": "high",
+      "actionType": null,
+      "service": {
+        "id": "ec2"
+      }
+    }
+  ]
 }
 ```
 
