@@ -81,7 +81,7 @@ The following example shows how to call this API when the caller submits a passw
 
 The following is an example of the request.
 
-[HTTP](#tab/http)
+# [HTTP](#tab/http)
 
 <!-- {
   "blockType": "request",
