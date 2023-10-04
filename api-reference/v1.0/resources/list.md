@@ -39,11 +39,11 @@ Represents a list in a [site](site.md). This resource contains the top level pro
 | id                   | String                            | The unique identifier of the item. Read-only. Inherited from [baseItem](baseitem.md).                 |
 | lastModifiedBy       | [identitySet](identityset.md)     | Identity of the last modifier of this item. Read-only. Inherited from [baseItem](baseitem.md).        |
 | lastModifiedDateTime | DateTimeOffset                    | The date and time when the item was last modified. Read-only. Inherited from [baseItem](baseitem.md). |
-| list                 | [listInfo](listinfo.md)           | Provides additional details about the list.                                                           |
+| list                 | [listInfo](listinfo.md)           | Contains more details about the list.                                                                 |
 | name                 | String                            | The name of the item. Read-only. Inherited from [baseItem](baseitem.md).                              |
 | parentReference      | [itemReference](itemreference.md) | Parent information if the item has a parent. Read-write. Inherited from [baseItem](baseitem.md).      |
 | sharepointIds        | [sharepointIds](sharepointids.md) | Returns identifiers useful for SharePoint REST compatibility. Read-only.                              |
-| system               | [systemFacet](systemfacet.md)     | If present, indicates that this is a system-managed list. Read-only.                                  |
+| system               | [systemFacet](systemfacet.md)     | If present, indicates that the list is system-managed. Read-only.                                     |
 | webUrl               | String                            | URL that displays the item in the browser. Read-only. Inherited from [baseItem](baseitem.md).         |
 
 ## Relationships
