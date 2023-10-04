@@ -1,9 +1,9 @@
 ---
 title: "awsPermissionsDefinition resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "AWS Specific Permissions Definition that extends permissionsDefinition that requires AWS Specific ActionInfo."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,21 +13,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+AWS Specific Permissions Definition that extends permissionsDefinition that requires AWS Specific ActionInfo
 
 Inherits from [permissionsDefinition](../resources/permissionsdefinition.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionInfo|[awsPermissionsDefinitionAction](../resources/awspermissionsdefinitionaction.md)|**TODO: Add Description**|
-|authorizationSystemInfo|[permissionsDefinitionAuthorizationSystem](../resources/permissionsdefinitionauthorizationsystem.md)|**TODO: Add Description** Inherited from [permissionsDefinition](../resources/permissionsdefinition.md).|
+|actionInfo|[awsPermissionsDefinitionAction](../resources/awspermissionsdefinitionaction.md)|The actions the identity will have as part of the permission.|
+|authorizationSystemInfo|[permissionsDefinitionAuthorizationSystem](../resources/permissionsdefinitionauthorizationsystem.md)|Info about the authorization system to assign permissions on. Inherited from [permissionsDefinition](../resources/permissionsdefinition.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identityInfo|[permissionsDefinitionAuthorizationSystemIdentity](../resources/permissionsdefinitionauthorizationsystemidentity.md)|**TODO: Add Description** Inherited from [microsoft.graph.permissionsDefinition](../resources/permissionsdefinition.md)|
+|identityInfo|[permissionsDefinitionAuthorizationSystemIdentity](../resources/permissionsdefinitionauthorizationsystemidentity.md)|The identity receiving the actionInfo. Inherited from [microsoft.graph.permissionsDefinition](../resources/permissionsdefinition.md)|
 
 ## JSON representation
 The following is a JSON representation of the resource.

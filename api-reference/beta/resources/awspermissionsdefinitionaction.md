@@ -1,9 +1,9 @@
 ---
 title: "awsPermissionsDefinitionAction resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "RAbstract Complex Type that represents the action to take in a permissionsDefinition if the request is approved specific for AWS."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,15 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-This is an abstract type.
-
+Abstract Complex Type that represents the action to take in a permissionsDefinition if the request is approved specific for AWS.
 
 Inherits from [permissionsDefinitionAction](../resources/permissionsdefinitionaction.md).
 
 ## Properties
 |Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
 None.

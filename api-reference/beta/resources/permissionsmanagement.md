@@ -1,9 +1,9 @@
 ---
 title: "permissionsManagement resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Used for the path based routing with path prefix permissionsManagement that leads to permissionsRequest."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,22 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Used for the path based routing with path prefix permissionsManagement that leads to permissionsRequest.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
 None.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
+None.
 
 ## Relationships
-|Relationship|Type|Description|
-|:---|:---|:---|
-|permissionsRequestChanges|[permissionsRequestChange](../resources/permissionsrequestchange.md) collection|**TODO: Add Description**|
-|scheduledPermissionsRequests|[scheduledPermissionsRequest](../resources/scheduledpermissionsrequest.md) collection|**TODO: Add Description**|
+None.
 
 ## JSON representation
 The following is a JSON representation of the resource.

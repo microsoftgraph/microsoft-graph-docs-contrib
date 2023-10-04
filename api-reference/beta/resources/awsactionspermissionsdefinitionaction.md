@@ -1,9 +1,9 @@
 ---
 title: "awsActionsPermissionsDefinitionAction resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "An awsPermissionsDefinitionAction that will allow permissions requests with AWS Actions."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,20 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+An awsPermissionsDefinitionAction that will allow permissions requests with AWS Actions.
 
 Inherits from [awsPermissionsDefinitionAction](../resources/awspermissionsdefinitionaction.md).
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|assignToRoleId|String|**TODO: Add Description**|
+|assignToRoleId|String|AWS Statements|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|statements|[awsStatement](../resources/awsstatement.md) collection|**TODO: Add Description**|
+|statements|[awsStatement](../resources/awsstatement.md) collection|Role to assign to.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

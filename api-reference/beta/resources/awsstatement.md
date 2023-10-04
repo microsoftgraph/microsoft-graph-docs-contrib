@@ -1,9 +1,9 @@
 ---
 title: "awsStatement resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Specifies a single AWS Statement."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,26 +13,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Specifies a single AWS Statement.
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List awsStatements](../api/awsstatement-list.md)|[awsStatement](../resources/awsstatement.md) collection|Get a list of the [awsStatement](../resources/awsstatement.md) objects and their properties.|
-|[Get awsStatement](../api/awsstatement-get.md)|[awsStatement](../resources/awsstatement.md)|Read the properties and relationships of an [awsStatement](../resources/awsstatement.md) object.|
-|[Update awsStatement](../api/awsstatement-update.md)|[awsStatement](../resources/awsstatement.md)|Update the properties of an [awsStatement](../resources/awsstatement.md) object.|
-|[Delete awsStatement](../api/awsstatement-delete.md)|None|Delete an [awsStatement](../resources/awsstatement.md) object.|
+None.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actions|String collection|**TODO: Add Description**|
-|condition|[awsCondition](../resources/awscondition.md)|**TODO: Add Description**|
-|effect|awsStatementEffect|**TODO: Add Description**.The possible values are: `allow`, `deny`, `unknownFutureValue`.|
-|notActions|String collection|**TODO: Add Description**|
-|notResources|String collection|**TODO: Add Description**|
-|resources|String collection|**TODO: Add Description**|
-|statementId|String|**TODO: Add Description**|
+|actions|String collection|AWS Actions.|
+|condition|[awsCondition](../resources/awscondition.md)|AWS condition block|
+|effect|awsStatementEffect|AWS Action Effect (Allow or Deny). The possible values are: `allow`, `deny`, `unknownFutureValue`.|
+|notActions|String collection|AWS Not Actions|
+|notResources|String collection|AWS Not Resources|
+|resources|String collection|AWS Resources|
+|statementId|String|AWS Statement Id.|
 
 ## Relationships
 None.

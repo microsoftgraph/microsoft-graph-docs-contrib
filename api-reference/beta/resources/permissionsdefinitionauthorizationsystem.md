@@ -1,9 +1,9 @@
 ---
 title: "permissionsDefinitionAuthorizationSystem resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents the authorization system that the permissions will be requested on."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Represents the authorization system that the permissions will be requested on.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|authorizationSystemId|String|**TODO: Add Description**|
-|authorizationSystemType|String|**TODO: Add Description**|
+|authorizationSystemId|String|The Authorization System Id.|
+|authorizationSystemType|String|The Authorization System Type.|
 
 ## Relationships
 None.
