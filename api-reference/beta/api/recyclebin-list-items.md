@@ -19,11 +19,11 @@ Get a list of [recycleBinItems](../resources/recyclebinitem.md) objects and thei
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type                        | Permissions (from least to most privileged)|
-|:--------------------------------------|:-------------------------------------------|
-|Delegated (work or school account)     |Files.Read, Files.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All|
-|Delegated (personal Microsoft account) |Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All|
-|Application                            |Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All|
+| Permission type                        | Permissions (from least to most privileged)                                                           |
+|:---------------------------------------|:------------------------------------------------------------------------------------------------------|
+| Delegated (work or school account)     | Files.Read, Files.Read.All, Files.ReadWrite, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+| Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All                                      |
+| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                              |
 
 ## HTTP request
 
@@ -44,7 +44,7 @@ This method supports some of the OData query parameters (for example, $search, $
 
 ## Request Body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -85,12 +85,12 @@ Content-Type: application/json
       "name": "document.docx",
       "size": 1024,
       "deletedDateTime": "2022-04-25T20:11:51Z",
-      "title": "my document",
+      "title": "My document",
       "deletedBy": {
         "user": {
           "displayName": "Tenant Admin User",
-          "id": "12",
-          "userPrincipalName": "ksam@microsoft.com"
+          "id": "801f0925-43ac-4ae7-94b2-514653421ec1",
+          "userPrincipalName": "max.morin@contoso.com"
         }
       }
     }
