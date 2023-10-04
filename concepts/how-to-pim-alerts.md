@@ -1,6 +1,6 @@
 ---
-title: "Manage security alerts for Azure AD roles using PIM"
-description: "Learn how to manage security alerts for Azure AD roles using PIM."
+title: "Manage security alerts for Azure AD roles using PIM APIs"
+description: "Learn how to manage security alerts for Azure AD roles using PIM APIs."
 author: FaithOmbongi
 ms.reviewer: rianakarim
 ms.localizationpriority: medium
@@ -9,7 +9,7 @@ ms.prod: "governance"
 ms.date: 09/27/2023
 ---
 
-# Manage security alerts for Azure AD roles using PIM
+# Manage security alerts for Azure AD roles using PIM APIs
 
 Privileged Identity Management (PIM) for Azure AD roles generates alerts when it detects suspicious or unsafe settings for Azure AD roles in your tenant. This article describes scenarios for managing PIM alerts using Microsoft Graph.
 
@@ -500,4 +500,4 @@ HTTP/1.1 200 OK
 
 ## See also
 
-+ [Tutorial: Assign Azure AD roles through PIM](tutorial-assign-azureadroles.md)
++ [Tutorial: Assign Azure AD roles through PIM](tutorial-assign-azureadroles.md).
