@@ -1,9 +1,9 @@
 ---
 title: "permissionsRequestChange resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents a change event of the scheduledPermissionsRequest entity."
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents a change event of the scheduledPermissionsRequest entity.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -27,12 +26,12 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|activeOccurrenceStatus|permissionsRequestOccurrenceStatus|**TODO: Add Description**.The possible values are: `grantingFailed`, `granted`, `granting`, `revoked`, `revoking`, `revokingFailed`, `unknownFutureValue`.|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|modificationDateTime|DateTimeOffset|**TODO: Add Description**|
-|permissionsRequestId|String|**TODO: Add Description**|
-|statusDetail|statusDetail|**TODO: Add Description**.The possible values are: `submitted`, `approved`, `completed`, `canceled`, `rejected`, `unknownFutureValue`.|
-|ticketId|String|**TODO: Add Description**|
+|activeOccurrenceStatus|permissionsRequestOccurrenceStatus|The status of the active occurence of the schedule if one exists. The possible values are: `grantingFailed`, `granted`, `granting`, `revoked`, `revoking`, `revokingFailed`, `unknownFutureValue`.|
+|id|String|Unique Id of the Permissions Request Change Event within EPM. Inherited from [entity](../resources/entity.md).|
+|modificationDateTime|DateTimeOffset|Time when the scheduledPermissionsRequest change occurred.|
+|permissionsRequestId|String|The Id of the scheduledPermissionsRequest.|
+|statusDetail|statusDetail|The status that the request changed to. The possible values are: `submitted`, `approved`, `completed`, `canceled`, `rejected`, `unknownFutureValue`.|
+|ticketId|String|Represents the ticketing system Id.|
 
 ## Relationships
 None.

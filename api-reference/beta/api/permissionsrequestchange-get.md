@@ -1,9 +1,9 @@
 ---
 title: "Get permissionsRequestChange"
 description: "Read the properties and relationships of a permissionsRequestChange object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported.|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+[!INCLUDE [epm-rbac-servicenow-apis-read](../includes/rbac-for-apis/epm-rbac-servicenow-apis-read.md)]
 
 ## HTTP request
 
@@ -30,11 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /permissionsManagement/permissionsRequestChanges/{permissionsRequestChangeId}
+GET /beta/identityGovernance/permissionsManagement/permissionsRequestChanges/{permissionsRequestChangeId}
 ```
-
-## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -50,6 +49,8 @@ If successful, this method returns a `200 OK` response code and a [permissionsRe
 
 ## Examples
 
+Retrieving a single changelog of a scheduled permissions request.
+
 ### Request
 The following is an example of a request.
 <!-- {
@@ -58,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/permissionsManagement/permissionsRequestChanges/{permissionsRequestChangeId}
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsManagement/permissionsRequestChanges/00000000-0000-0000-0000-000000000001
 ```
 
 
@@ -76,15 +77,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.permissionsRequestChange",
-    "id": "a03dd245-0607-518a-5ba5-fb339e9388f6",
-    "modificationDateTime": "String (timestamp)",
-    "statusDetail": "String",
-    "activeOccurrenceStatus": "String",
-    "ticketId": "String",
-    "permissionsRequestId": "String"
-  }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#permissionsRequestChanges",
+  "id": "00000000-0000-0000-0000-000000000001",
+  "modificationDateTime": "2023-02-06T12:15:00Z",
+  "statusDetail": "submitted",
+  "ticketId": "INC1234567",
+  "permissionsRequestId": "00000000-0000-0000-0000-000000000001"
 }
 ```
 
