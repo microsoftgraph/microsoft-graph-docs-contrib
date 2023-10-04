@@ -17,7 +17,7 @@ Use webhooks to subscribe to user's presence and receive notifications when chan
 
 | Permission type                       | Permissions (from least to most privileged)              | Supported versions |
 |:--------------------------------------|:---------------------------------------------------------|:-------------------|
-| Delegated (work or school account)    | Presence.Read.All.                                       | V1, Beta.          |
+| Delegated (work or school account)    | Presence.Read.All.                                       | V1, beta.          |
 | Delegated (personal Microsoft account)| Not supported.                                           | Not supported.     |
 | Application                           | Not supported.                                           | Not supported.     |
 
