@@ -27,7 +27,7 @@ Teams live event attendee report **(deprecated)** and Teams live event recording
 
 > [!CAUTION]
 > 
-> Graph Online Meeting APIs that support Microsoft Teams live event is deprecated and will stop functioning on September 30, 2024. New Graph APIs will replace this in Spring of 2024. For more information see the [blog post](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-teams-live-events-api-on-microsoft-graph/). 
+> The online meeting APIs that support Microsoft Teams live events stopped returning data on September 30, 2024. For details about the removal of these APIs and upcoming new APIs to replace them, see the [Deprecation of Teams live events API on Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-teams-live-events-api-on-microsoft-graph/) blog post. 
 
 ## Permissions
 
