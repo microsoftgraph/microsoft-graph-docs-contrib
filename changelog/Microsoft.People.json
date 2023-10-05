@@ -381,15 +381,15 @@
           "ApiChange": "Method",
           "ChangedApiName": "DELETE",
           "ChangeType": "Addition",
-          "Description": "Added the [delete] (https://learn.microsoft.com/en-us/graph/api/profilephoto-delete.md?view=graph-rest-beta) operation to the [user] (https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
+          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/profilephoto-delete.md?view=graph-rest-beta) operation to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) resource.",
           "Target": "user"
         },
         {
           "Id": "71ebad7b-fc20-4469-b895-ddeef0ee54a0",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "photo",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
           "ChangeType": "Addition",
-          "Description": "Added support for deleting **photo** of a [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
+          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/profilephoto-delete.md?view=graph-rest-beta) operation to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) resource.",
           "Target": "group"
         }
       ],
