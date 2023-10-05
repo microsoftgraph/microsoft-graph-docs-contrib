@@ -144,6 +144,6 @@ For more information about possible combinations of availability and activity, s
 ```
 
 ## See also
-- [Learn about the presence resource type](/graph/api/resources/presence)
-- [Learn about change notifications through webhooks](change-notifications-delivery-webhooks.md)
-- [Learn about change notifications API in Microsoft Graph](/graph/api/resources/webhooks)
+- [Presence](/graph/api/resources/presence)
+- [Change notifications through webhooks](change-notifications-delivery-webhooks.md)
+- [Microsoft Graph API change notifications](/graph/api/resources/webhooks)
