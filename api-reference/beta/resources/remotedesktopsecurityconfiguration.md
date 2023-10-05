@@ -20,7 +20,6 @@ Inherits from [entity](../resources/entity.md).
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List remoteDesktopSecurityConfigurations](../api/serviceprincipal-list-remotedesktopsecurityconfiguration.md)|[remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) collection|Get a list of the [remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) objects and their properties.|
 |[Create remoteDesktopSecurityConfiguration](../api/serviceprincipal-post-remotedesktopsecurityconfiguration.md)|[remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md)|Create a new [remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) object.|
 |[Get remoteDesktopSecurityConfiguration](../api/remotedesktopsecurityconfiguration-get.md)|[remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md)|Read the properties and relationships of a [remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) object.|
 |[Update remoteDesktopSecurityConfiguration](../api/remotedesktopsecurityconfiguration-update.md)|[remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md)|Update the properties of a [remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) object.|
