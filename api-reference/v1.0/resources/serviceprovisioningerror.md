@@ -21,7 +21,7 @@ Base type of [serviceProvisioningXmlError](../resources/serviceprovisioningxmler
 | :-------------- | :------------- | :--------------------------------------------------------------------------------------------------- |
 | createdDateTime | DateTimeOffset | The date and time at which the error occurred.                                                       |
 | isResolved      | Boolean        | Indicates whether the Error has been attended to.                                                    |
-| serviceInstance | String         | Qualified service instance (e.g., "SharePoint/Dublin") that published the service error information. |
+| serviceInstance | String         | Qualified service instance (for example, "SharePoint/Dublin") that published the service error information. |
 
 ## JSON representation
 
