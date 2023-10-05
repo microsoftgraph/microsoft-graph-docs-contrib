@@ -45,7 +45,7 @@ const regionalAndLanguageSettings = {
         languageOverrides: [
             {
                 languageTag: 'fr',
-                translationBehavior: 'Yes' 
+                translationBehavior: 'Yes'
             }
         ]
      }
