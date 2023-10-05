@@ -26,10 +26,10 @@ Entity that represents the bulk action which will be applied to cloudPcs specifi
 |Property|Type|Description|
 |:---|:---|:---|
 |actionSummary|[CloudPcBulkActionSummary](../resources/cloudpcbulkactionsummary.md)|Run summary of this bulk action|
-|cloudPcIds|Guid collection|Id of cloudPcs this bulk action will apply to|
-|createdDateTime|DateTimeOffset|Time when this bulk action was created|
-|displayName|String|Name of this bulk action|
-|id|Guid|Id of this bulk action|
+|cloudPcIDs|Guid collection|ID of cloudPcs the bulk action applies to.|
+|createdDateTime|DateTimeOffset|Time when the bulk action was created.|
+|displayName|String|Name of the bulk action.|
+|iD|Guid|ID of the bulk action.|
 
 ## Relationships
 None.
