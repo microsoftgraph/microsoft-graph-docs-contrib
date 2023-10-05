@@ -101,7 +101,8 @@ Presence notifications with resource data have the following additional properti
 - Availability or base presence information (available, away, busy)
 - Activity or information that’s supplemental to the availability (in a meeting, in call)
 
-**Note** The availability and activity can be the same value.
+> [Note]:
+> The availability and activity can be the same value.
 
 For more information about possible combinations of availability and activity, see [Presence properties](/graph/api/resources/presence).
 
