@@ -1,6 +1,6 @@
 ---
 title: "Get remoteDesktopSecurityConfiguration"
-description: "Read the properties and relationships of a remoteDesktopSecurityConfiguration object."
+description: "Read the properties and relationships of a remoteDesktopSecurityConfiguration object on a servicePrincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) object.
+Read the properties and relationships of a [remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) object on a servicePrincipal. This includes if RDS Entra ID authentication protocol is enabled or not for RDP to Microsoft Entra joined or Microsoft Entra hybird joined devices and if any of those target device hosts have been configured for SSO.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguration
+GET https://graph.microsoft.com/beta/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration
 ```
 
 
@@ -79,7 +79,12 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.remoteDesktopSecurityConfiguration",
     "id": "ca738153-c98a-f822-a7d1-5a6e1058462b",
-    "isRemoteDesktopProtocolEnabled": "Boolean"
+    "isRemoteDesktopProtocolEnabled": "true",
+    "targetDeviceGroups": : [
+      {
+        "id": "1a9db3ab-0acf-4808-99ae-e8ed581cb2e0",
+        "displayName": "Device Group A"
+      }
   }
 }
 ```
