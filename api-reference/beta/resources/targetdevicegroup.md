@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This represents the targetDeviceGroup that is configured for the remoteDesktopSecurityConfiguration object on the servicePrincipal. This configuration enables SSO using the RDS Entra ID authentication protocol when a user authenticates over RDP to a Microsoft Entra joined or Microsoft Entra hybrid joined devices that are member of the targetDeviceGroup.
+This configuration represents the targetDeviceGroup for the remoteDesktopSecurityConfiguration object on the servicePrincipal. This configuration enables SSO using the RDS Entra ID authentication protocol when a user authenticates over RDP to a Microsoft Entra joined or Microsoft Entra hybrid joined devices that are member of the targetDeviceGroup.
 
 Inherits from [entity](../resources/entity.md).
 
