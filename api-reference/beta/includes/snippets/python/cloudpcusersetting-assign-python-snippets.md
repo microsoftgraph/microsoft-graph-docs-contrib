@@ -20,7 +20,7 @@ request_body = AssignPostRequestBody(
 	]
 )
 
-await graph_client.device_management.virtual_endpoint.user_settings.by_user_setting_id('cloudPcUserSetting-id').assign.post(request_body = request_body)
+await graph_client.device_management.virtual_endpoint.user_settings.by_user_setting_id('cloudPcUserSetting-id').assign.post(body = request_body)
 
 
 ```

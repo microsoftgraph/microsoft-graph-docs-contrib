@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleManagementAlertIncident resource type"
-description: "An abstract type that represents the details of a security alert incident in Privileged Identity Management (PIM) for Azure AD roles."
+description: "An abstract type that represents the details of a security alert incident in your tenant in Privileged Identity Management (PIM) for Azure AD roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -20,12 +20,14 @@ This abstract type is inherited by the following derived types:
 - [invalidLicenseAlertIncident](invalidlicensealertincident.md)
 - [noMfaOnRoleActivationAlertIncident](nomfaonroleactivationalertincident.md)
 - [redundantAssignmentAlertIncident](redundantassignmentalertincident.md)
-- [rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration](rolesassignedoutsideprivilegedidentitymanagementalertconfiguration.md)
+- [rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident](rolesassignedoutsideprivilegedidentitymanagementalertincident.md)
 - [sequentialActivationRenewalsAlertIncident](sequentialactivationrenewalsalertincident.md)
 - [staleSignInAlertIncident](stalesigninalertincident.md)
 - [tooManyGlobalAdminsAssignedToTenantAlertIncident](toomanyglobaladminsassignedtotenantalertincident.md)
 
 Inherits from [entity](../resources/entity.md).
+
+For more information about working with security alerts for Azure AD roles using PIM APIs, see [Manage security alerts for Azure AD roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
 
 ## Methods
 |Method|Return type|Description|
@@ -58,4 +60,7 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
+
+## See also
++ [Manage security alerts for Azure AD roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
 

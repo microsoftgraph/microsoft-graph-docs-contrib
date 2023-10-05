@@ -7,7 +7,7 @@ ms.reviewer: rianakarim
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "governance"
-ms.date: 06/07/2023
+ms.date: 09/27/2023
 ---
 
 # Update rules in PIM using Microsoft Graph
@@ -24,8 +24,12 @@ If successful, all requests return `204 No Content` response codes.
 ## Prerequisites
 
 + Have an understanding of [PIM for Azure AD roles APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) or [PIM for groups APIs](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview).
-+ Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the *Global Administrator* or *Privileged Role Administrator* roles.
-+ To manage the rules for Azure AD roles, grant yourself the `RoleManagementPolicy.ReadWrite.Directory` delegated permission. To manage the rules for groups, grant yourself the `RoleManagementPolicy.ReadWrite.AzureADGroup` delegated permission.
++ In this article, you call the APIs in a [delegated scenario](/graph/auth-v2-user).
+  + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. Use an account with at least the *Privileged Role Administrator* role.
+  + Depending on operations you want to carry out, grant yourself one of the following delegated permissions:
+    + To manage the rules for Azure AD roles: *RoleManagementPolicy.ReadWrite.Directory*
+    + To manage the rules for groups: *RoleManagementPolicy.ReadWrite.AzureADGroup*
+
 
 ## Example 1: Update the activation maximum duration
 
@@ -469,4 +473,4 @@ Content-Type: application/json
 
 + [Overview of role management through the privileged identity management (PIM) API](/graph/api/resources/privilegedidentitymanagementv3-overview)
 + [Overview of rules for Azure AD roles in privileged identity management (PIM) APIs in Microsoft Graph](identity-governance-pim-rules-overview.md)
-+ [Configure Azure AD role settings in Privileged Identity Management - Azure portal](/azure/active-directory/privileged-identity-management/pim-how-to-change-default-settings)
++ [Configure Azure AD role settings using the Microsoft Entra admin center](/azure/active-directory/privileged-identity-management/pim-how-to-change-default-settings)

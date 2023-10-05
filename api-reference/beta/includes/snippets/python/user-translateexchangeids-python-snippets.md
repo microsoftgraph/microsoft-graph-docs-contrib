@@ -17,7 +17,7 @@ request_body = TranslateExchangeIdsPostRequestBody(
 	target_id_type = ExchangeIdFormat.RestImmutableEntryId,
 )
 
-result = await graph_client.me.translate_exchange_ids.post(request_body = request_body)
+result = await graph_client.me.translate_exchange_ids.post(body = request_body)
 
 
 ```

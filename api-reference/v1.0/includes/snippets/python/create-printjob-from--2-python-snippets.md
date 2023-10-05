@@ -42,7 +42,7 @@ request_body = PrintJob(
 	),
 )
 
-result = await graph_client.print.shares.by_share_id('printerShare-id').jobs.post(request_body = request_body)
+result = await graph_client.print.shares.by_share_id('printerShare-id').jobs.post(body = request_body)
 
 
 ```

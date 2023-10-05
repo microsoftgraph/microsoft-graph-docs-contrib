@@ -31,7 +31,8 @@ $unifiedRolesArray []= $unifiedRolesUnifiedRole4;
 $accessDetails->setUnifiedRoles($unifiedRolesArray);
 
 $requestBody->setAccessDetails($accessDetails);
-$requestConfiguration = new DelegatedAdminRelationshipRequestBuilderPatchRequestConfiguration();
+$requestBody->setAutoExtendDuration(new \DateInterval('P180D'));
+$requestConfiguration = new DelegatedAdminRelationshipItemRequestBuilderPatchRequestConfiguration();
 $headers = [
 	'If-Match' => 'W/"JyI0NzAwNjg0NS0wMDAwLTE5MDAtMDAwMC02MGY0Yjg4MzAwMDAiJw=="',
 ];

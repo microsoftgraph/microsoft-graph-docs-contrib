@@ -25,9 +25,10 @@ request_body = DelegatedAdminRelationship(
 			),
 		]
 	),
+	auto_extend_duration = "P180D",
 )
 
-result = await graph_client.tenant_relationships.delegated_admin_relationships.post(request_body = request_body)
+result = await graph_client.tenant_relationships.delegated_admin_relationships.post(body = request_body)
 
 
 ```

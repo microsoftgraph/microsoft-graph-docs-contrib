@@ -31,26 +31,26 @@ As further described in the [Supported permissions and additional resources](#su
 ## Configure ApplicationAccessPolicy
 
 To configure an application access policy and limit the scope of application permissions:
-1.	Connect to Exchange Online PowerShell. For details, see [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps&preserve-view=true).
+1.    Connect to Exchange Online PowerShell. For details, see [Connect to Exchange Online PowerShell](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps&preserve-view=true).
 
-2.	Identify the app’s client ID and a mail-enabled security group to restrict the app’s access to.
+2.   Identify the app's client ID and a mail-enabled security group to restrict the app's access to.
 
-    - Identify the app’s application (client) ID in the [Azure app registration portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
-    - Create a new mail-enabled security group or use an existing one and identify the email address for the group.
+     - Identify the app's application (client) ID in the [Microsoft Entra admin center > app registrations page](https://entra.microsoft.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade/).
+     - Create a new mail-enabled security group or use an existing one and identify the email address for the group.
 
-3.	Create an application access policy.
+3.   Create an application access policy.
 
-    Run the following command, replacing the arguments for **AppId**, **PolicyScopeGroupId**, and **Description**.
-    ```powershell
-    New-ApplicationAccessPolicy -AppId e7e4dbfc-046f-4074-9b3b-2ae8f144f59b -PolicyScopeGroupId EvenUsers@contoso.com -AccessRight RestrictAccess -Description "Restrict this app to members of distribution group EvenUsers."
-    ```
-4.	Test the newly created application access policy.
+     Run the following command, replacing the arguments for **AppId**, **PolicyScopeGroupId**, and **Description**.
+     ```powershell
+     New-ApplicationAccessPolicy -AppId e7e4dbfc-046f-4074-9b3b-2ae8f144f59b -PolicyScopeGroupId EvenUsers@contoso.com -AccessRight RestrictAccess -Description "Restrict this app to members of distribution group EvenUsers."
+     ```
+4.   Test the newly created application access policy.
 
-    Run the following command, replacing the arguments for **Identity** and **AppId**.
-    ```powershell
-    Test-ApplicationAccessPolicy -Identity user1@contoso.com -AppId e7e4dbfc-046-4074-9b3b-2ae8f144f59b
-    ```
-    The output of this command will indicate whether the app has access to User1’s mailbox.
+     Run the following command, replacing the arguments for **Identity** and **AppId**.
+     ```powershell
+     Test-ApplicationAccessPolicy -Identity user1@contoso.com -AppId e7e4dbfc-046-4074-9b3b-2ae8f144f59b
+     ```
+     The output of this command will indicate whether the app has access to User1's mailbox.
 
 > [!NOTE]
 > Changes to application access policies can take longer than 1 hour to take effect in Microsoft Graph REST API calls, even when `Test-ApplicationAccessPolicy` shows positive results.

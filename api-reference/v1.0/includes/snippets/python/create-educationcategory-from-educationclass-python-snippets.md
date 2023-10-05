@@ -12,7 +12,7 @@ request_body = EducationCategory(
 	display_name = "Quizzes",
 )
 
-result = await graph_client.education.classes.by_classe_id('educationClass-id').assignment_categories.post(request_body = request_body)
+result = await graph_client.education.classes.by_classe_id('educationClass-id').assignment_categories.post(body = request_body)
 
 
 ```

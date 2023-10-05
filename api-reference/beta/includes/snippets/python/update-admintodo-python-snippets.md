@@ -18,7 +18,7 @@ request_body = AdminTodo(
 	),
 )
 
-result = await graph_client.admin.todo.patch(request_body = request_body)
+result = await graph_client.admin.todo.patch(body = request_body)
 
 
 ```

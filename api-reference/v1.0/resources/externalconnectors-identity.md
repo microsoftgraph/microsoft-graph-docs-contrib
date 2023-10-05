@@ -23,14 +23,14 @@ Represents an [identity](externalconnectors-identity.md) used to set permissions
 
 | Property       | Type                    | Description                                                          |
 |:---------------|:------------------------|:---------------------------------------------------------------------|
-| id             | String                  | The unique ID of the identity. It would be the objectId property in case of Azure Active Directory (Azure AD) users or groups and the **id** property of the **externalGroup** in the case of external groups.                                    |
+| id             | String                  | The unique ID of the identity. It would be the objectId property for Azure Active Directory (Azure AD) users or groups and the **id** property of the **externalGroup** in the case of external groups.                                    |
 | type           | microsoft.graph.externalConnectors.identityType | The type of identity. Possible values are: `user` or `group` for Azure AD identities and `externalgroup` for groups in an external system. |
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

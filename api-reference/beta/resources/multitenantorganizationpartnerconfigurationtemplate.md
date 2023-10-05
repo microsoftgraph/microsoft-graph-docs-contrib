@@ -1,6 +1,6 @@
 ---
 title: "multiTenantOrganizationPartnerConfigurationTemplate resource type"
-description: "Defines an optional cross-tenant access policy template with inbound and outbound partner configuration settings for multi-tenant organization tenants."
+description: "Defines an optional cross-tenant access policy template with inbound and outbound partner configuration settings for multitenant organization tenants."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines an optional cross-tenant access policy template with inbound and outbound partner configuration settings for multi-tenant organization tenants. Each tenant has its own template. For more information, see [crossTenantAccessPolicyConfigurationPartner resource type](../resources/crosstenantaccesspolicyconfigurationpartner.md).
+Defines an optional cross-tenant access policy template with inbound and outbound partner configuration settings for multitenant organization tenants. Each tenant has its own template. For more information, see [crossTenantAccessPolicyConfigurationPartner resource type](../resources/crosstenantaccesspolicyconfigurationpartner.md).
 
-* If your tenant is joining a multi-tenant organization, the template is applicable to the partner configuration settings for all multi-tenant organization tenants.
-* If another tenant joins your multi-tenant organization, the template is applicable only to the partner configuration settings of the newly joined multi-tenant organization tenant.
+* If your tenant is joining a multitenant organization, the template is applicable to the partner configuration settings for all multitenant organization tenants.
+* If another tenant joins your multitenant organization, the template is applicable only to the partner configuration settings of the newly joined multitenant organization tenant.
 
 Whether the template is applied to the partner configuration settings of relevant tenants is configurable with the `templateApplicationLevel` property.
 
-* If the template is configured to apply, it is only applied to partner configuration properties where the corresponding template property has a non-null value.
+* If the template is configured to apply, it's only applied to partner configuration properties where the corresponding template property has a non-null value.
 
 In its default and unconfigured state, where all template properties (other than `templateApplicationLevel`) are null, the template has no effect on partner configuration settings.
 
@@ -35,19 +35,19 @@ In its default and unconfigured state, where all template properties (other than
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|ID of the template. Key.|
-|automaticUserConsentSettings|[inboundOutboundPolicyConfiguration](../resources/inboundoutboundpolicyconfiguration.md)|Determines the partner-specific configuration for automatic user consent settings. Unless specifically configured, the **inboundAllowed** and **outboundAllowed** properties are `null` and inherit from the default settings, which is always `false`.|
+|automaticUserConsentSettings|[inboundOutboundPolicyConfiguration](../resources/inboundoutboundpolicyconfiguration.md)|Determines the partner-specific configuration for automatic user consent settings. Unless configured, the **inboundAllowed** and **outboundAllowed** properties are `null` and inherit from the default settings, which is always `false`.|
 |b2bCollaborationInbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your partner-specific configuration for users from other organizations accessing your resources via Azure AD B2B collaboration.|
 |b2bCollaborationOutbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B collaboration.|
 |b2bDirectConnectInbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your partner-specific configuration for users from other organizations accessing your resources via Azure B2B direct connect.|
 |b2bDirectConnectOutbound|[crossTenantAccessPolicyB2BSetting](../resources/crosstenantaccesspolicyb2bsetting.md)|Defines your partner-specific configuration for users in your organization going outbound to access resources in another organization via Azure AD B2B direct connect.|
 |inboundTrust|[crossTenantAccessPolicyInboundTrust](../resources/crosstenantaccesspolicyinboundtrust.md)|Determines the partner-specific configuration for trusting other Conditional Access claims from external Azure AD organizations.|
-|templateApplicationLevel|templateApplicationLevel|Specifies whether the template will be applied to partner configuration settings of certain tenants. The possible values are: `none`, `newPartners`, `existingPartners`, `unknownFutureValue`. You can also specify multiple values like `newPartners,existingPartners` (default). `none` indicates the template is not applied to any new or existing partner tenants. `newPartners` indicates the template is applied to new partner tenants. `existingPartners` indicates the template is applied to existing partner tenants, those who already had partner-specific partner configurations in place.|
+|templateApplicationLevel|templateApplicationLevel|Specifies whether the template will be applied to partner configuration settings of certain tenants. The possible values are: `none`, `newPartners`, `existingPartners`, `unknownFutureValue`. You can also specify multiple values like `newPartners,existingPartners` (default). `none` indicates the template isn't applied to any new or existing partner tenants. `newPartners` indicates the template is applied to new partner tenants. `existingPartners` indicates the template is applied to existing partner tenants, those who already had partner-specific partner configurations in place.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

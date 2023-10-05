@@ -24,7 +24,7 @@ headers = {
 
 )
 
-result = await graph_client.planner.tasks.by_task_id('plannerTask-id').assigned_to_task_board_format.patch(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.planner.tasks.by_task_id('plannerTask-id').assigned_to_task_board_format.patch(body = request_body, request_configuration = request_configuration)
 
 
 ```

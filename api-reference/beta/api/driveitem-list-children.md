@@ -18,6 +18,8 @@ Return a collection of [DriveItems](../resources/driveitem.md) in the **children
 DriveItems with a non-null **folder** or **package** facet can have one or more child DriveItems.
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

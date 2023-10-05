@@ -12,6 +12,7 @@ request_body = Organization(
 	marketing_notification_emails = [
 		"marketing@contoso.com",
 	]
+	on_premises_sync_enabled = True,
 	privacy_profile = PrivacyProfile(
 		contact_email = "alice@contoso.com",
 		statement_url = "https://contoso.com/privacyStatement",
@@ -27,7 +28,7 @@ request_body = Organization(
 	]
 )
 
-result = await graph_client.organization.by_organization_id('organization-id').patch(request_body = request_body)
+result = await graph_client.organization.by_organization_id('organization-id').patch(body = request_body)
 
 
 ```

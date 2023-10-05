@@ -12,7 +12,7 @@ request_body = ReportRoot(
 	odata_type = "#microsoft.graph.reportRoot",
 )
 
-result = await graph_client.reports.patch(request_body = request_body)
+result = await graph_client.reports.patch(body = request_body)
 
 
 ```

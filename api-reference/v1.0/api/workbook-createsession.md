@@ -28,6 +28,8 @@ In some cases, creating a new session requires an indeterminate time to complete
 2. The response returns a `Location` header to specify the URL for polling the creation operation status. You can get the operation status by accessing the specified URL. The status will be one of the following: `notStarted`, `running`, `succeeded`, or `failed`.
 3. After the operation completes, you can request the status again and the response will show either `succeeded` or `failed`.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Error handling
 
 This request might occasionally receive a 504 HTTP error. The appropriate response to this error is to repeat the request.

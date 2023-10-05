@@ -22,6 +22,8 @@ For the signed-in user:
 For other users, this method includes only documents that the user has modified.
 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -72,7 +74,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
   See the available container types and types you can filter by in [resourceVisualization](../resources/insights-resourcevisualization.md).
 
-- Use the `$orderBy` query parameter to sort documents last viewed or modified _by the signed-in user_, based on the **lastAccessedDateTime** property:
+- Use the `$orderby` query parameter to sort documents last viewed or modified _by the signed-in user_, based on the **lastAccessedDateTime** property:
   <!-- { "blockType": "ignored" } -->
   `https://graph.microsoft.com/beta/me/insights/used?$orderby=LastUsed/LastAccessedDateTime desc`
 

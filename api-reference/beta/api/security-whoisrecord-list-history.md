@@ -1,5 +1,5 @@
 ---
-title: "List whoisHistoryRecords"
+title: "List history"
 description: "Get a list of whoisHistoryRecord objects for a whoisRecord, including the properties and relationships of each whoisHistoryRecord object."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# List whoisHistoryRecords for a whoisRecord
+# List history
 
 Namespace: microsoft.graph.security
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get a list of [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects for a [whoisRecord](../resources/security-whoisrecord.md), including the properties and relationships of each [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) object.
+Get the history for a [whoisRecord](../resources/security-whoisrecord.md), as represented by a collection of [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) resources.
 
 ## Permissions
 
@@ -36,7 +36,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /security/threatIntelligence/hosts/{hostId}/whois/history
-GET /security/threatIntelligence/whoisRecord/{id}/history
+GET /security/threatIntelligence/whoisRecords/{id}/history
 ```
 
 ## Optional query parameters
@@ -70,6 +70,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of a request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_whoishistoryrecord",
@@ -77,9 +78,19 @@ The following is an example of a request.
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.com/whois/history
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-whoishistoryrecord-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-whoishistoryrecord-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

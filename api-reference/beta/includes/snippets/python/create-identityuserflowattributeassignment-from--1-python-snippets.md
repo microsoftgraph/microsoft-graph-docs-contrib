@@ -20,7 +20,7 @@ request_body = IdentityUserFlowAttributeAssignment(
 	),
 )
 
-result = await graph_client.identity.b2c_user_flows.by_b2c_user_flow_id('b2cIdentityUserFlow-id').user_attribute_assignments.post(request_body = request_body)
+result = await graph_client.identity.b2c_user_flows.by_b2c_user_flow_id('b2cIdentityUserFlow-id').user_attribute_assignments.post(body = request_body)
 
 
 ```

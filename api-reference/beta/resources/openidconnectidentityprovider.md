@@ -42,7 +42,7 @@ Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 |metadataUrl|String|The URL for the metadata document of the OpenID Connect identity provider. Every OpenID Connect identity provider describes a metadata document that contains most of the information required to perform sign-in. This includes information such as the URLs to use and the location of the service's public signing keys. The OpenID Connect metadata document is always located at an endpoint that ends in `.well-known/openid-configuration`. Provide the metadata URL for the OpenID Connect identity provider you add. Read-only. Required.|
 |responseMode|[openIdConnectResponseMode](#openidconnectresponsemode-values)|The response mode defines the method used to send data back from the custom identity provider to Azure AD B2C. Possible values: `form_post`, `query`. Required.|
 |responseType|[openIdConnectResponseTypes](#openidconnectresponsetypes-values)|The response type describes the type of information sent back in the initial call to the authorization_endpoint of the custom identity provider. Possible values: `code` , `id_token` , `token`.  Required.|
-|scope|String|Scope defines the information and permissions you are looking to gather from your custom identity provider. OpenID Connect requests must contain the openid scope value in order to receive the ID token from the identity provider. Without the ID token, users are not able to sign in to Azure AD B2C using the custom identity provider. Other scopes can be appended, separated by a space. For more details about the scope limitations see [RFC6749 Section 3.3](https://tools.ietf.org/html/rfc6749#section-3.3). Required.|
+|scope|String|Scope defines the information and permissions you are looking to gather from your custom identity provider. OpenID Connect requests must contain the openid scope value in order to receive the ID token from the identity provider. Without the ID token, users are not able to sign in to Azure AD B2C using the custom identity provider. Other scopes can be appended, separated by a space. For more details about the scope limitations, see [RFC6749 Section 3.3](https://tools.ietf.org/html/rfc6749#section-3.3). Required.|
 
 ### openIdConnectResponseMode values
 |Member|Description|
@@ -54,13 +54,13 @@ Inherits from [identityProviderBase](../resources/identityproviderbase.md).
 ### openIdConnectResponseTypes values
 |Member|Description|
 :--------|:----------|
-|code|As per the authorization code flow, a code will be returned back to Azure AD B2C. Azure AD B2C proceeds to call the token_endpoint to exchange the code for the token.|
+|code|As per the authorization code flow, a code is returned back to Azure AD B2C. Azure AD B2C proceeds to call the token_endpoint to exchange the code for the token.|
 |id_token|An ID token is returned back to Azure AD B2C from the custom identity provider.|
 |token|An access token is returned back to Azure AD B2C from the custom identity provider. (This value is not supported by Azure AD B2C at the moment)|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

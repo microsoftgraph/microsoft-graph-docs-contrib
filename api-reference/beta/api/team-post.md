@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Create a new [team](../resources/team.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -57,7 +59,7 @@ If successful, this API returns a `202 Accepted` response that contains a link t
 
 ### Example 1: Delegated permissions
 
-The following is an example of a minimal request. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.
+Here's an example of a minimal request. By omitting other properties, the client is implicitly taking defaults from the pre-defined template represented by `template`.
 
 #### Request
 
@@ -131,7 +133,7 @@ Content-Length: 0
 
 ### Example 2: Application permissions
 
-The following is an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.
+Here's an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.
 
 #### Request
 <!-- markdownlint-disable MD025 -->
@@ -362,7 +364,7 @@ The following example shows how you can create a new [team](../resources/team.md
 A few things to note about this call:
 
 * In order to create a team, the group you're creating it from must have a least one owner.
-* The team that's created will always inherit from the group's display name, visibility, specialization, and members. Therefore, when making this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **members@odata.bind** properties will return an error.
+* The team that's created will always inherit from the group's display name, visibility, specialization, and members. Therefore, when making this call with the **group@odata.bind** property, the inclusion of team **displayName**, **visibility**, **specialization**, or **members@odata.bind** properties return an error.
 * If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays. We recommend that you retry the Create team call three times, with a 10 second delay between calls.
 
 #### Request
@@ -433,7 +435,7 @@ Content-Length: 0
 
 ### Example 5: Create a team from a group with multiple channels, installed apps, and pinned tabs
 
-The following is a request that converts an existing group with extended properties which will create the team with multiple channels, installed apps, and pinned tabs.
+The following is a request that converts an existing group with extended properties that create the team with multiple channels, installed apps, and pinned tabs.
 
 To learn more about supported base template types and supported properties, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
@@ -530,9 +532,9 @@ Content-Length: 0
 
 ### Example 6: Create a team with a non-standard base template type
 
-Base template types are special templates that Microsoft created for specific industries. These base templates often contain proprietary apps that aren't available in the store and team properties that are not yet supported individually in Microsoft Teams templates.
+Base template types are special templates that Microsoft created for specific industries. These base templates often contain proprietary apps that aren't available in the store and team properties that aren't yet supported individually in Microsoft Teams templates.
 
-To create a team from a non-standard base template, you’ll want to change the `template@odata.bind` property in the request body from `standard` to point to the specific base template you’d like to create.
+To create a team from a non-standard base template, you want to change the `template@odata.bind` property in the request body from `standard` to point to the specific base template you’d like to create.
 
 To learn more about supported base template types, see [Get started with Teams templates](/MicrosoftTeams/get-started-with-teams-templates).
 
@@ -604,7 +606,7 @@ Content-Length: 0
 ### Example 7: Create a team with a localized non-standard base template type 
 Base template types can be localized to your preferred language choice, which enables you to create templates in your preferred language. 
 
-Choose your team template from the defintion list returned by the [List definitions](/graph/api/teamtemplate-list-definitions) operation.
+Choose your team template from the definition list returned by the [List definitions](/graph/api/teamtemplate-list-definitions) operation.
 
 #### Request
 
@@ -781,7 +783,7 @@ The following example shows how to create a team for imported messages.
 
 >**Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.
 
->**Note:** Teams created in migration mode only support the `standard` template.
+>**Note:** Teams created in migration mode only supports the `standard` template.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -864,7 +866,7 @@ The following are common reasons for this response:
 
 ### Example 10: Application permissions using user principal name
 
-The following is an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.
+Here's an example of a minimal request using application permissions. By omitting other properties, the client is implicitly taking defaults from the predefined template represented by `template`. When issuing a request with application permissions, a [user](../resources/user.md) must be specified in the `members` collection.
 
 #### Request
 

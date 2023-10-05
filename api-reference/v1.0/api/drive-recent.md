@@ -12,7 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 List a set of items that have been recently used by the signed in user.
-This collection includes items that are in the user's drive as well as items they have access to from other drives.
+This collection includes items that are in the user's drive and items they have access to from other drives.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -32,7 +34,7 @@ GET /me/drive/recent
 ```
 
 ## Response
-This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.
+This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items that the owner of the drive has recently accessed.
 
 ## Examples
 
@@ -129,8 +131,8 @@ Content-Type: application/json
 
 ## Remarks
 
-Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive.
-To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:
+Some driveItems returned from the **recent** action includes the **remoteItem** facet that indicates that items are from another drive.
+To access the original driveItem object, you'll need to make a request using the information provided in **remoteItem** in the following format:
 
 <!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 

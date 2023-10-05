@@ -14,9 +14,9 @@ Microsoft Graph allows you to access data in [multiple services](overview-major-
 
 Any request can be evaluated against multiple limits, depending on the scope of the limit (per app across all tenants, per tenant for all apps, per app per tenant, and so on), the request type (GET, POST, PATCH, and so on), and other factors. The first limit to be reached triggers throttling behavior. In addition to the service specific-limits described in the section, the following global limits apply:
 
-| Request type | Per app across all tenants  |
-| ------------ | ------------------------ |
-| Any          | 2000 requests per second |
+| Request type | Per app across all tenants      |
+|--------------|---------------------------------|
+| Any          | 130,000 requests per 10 seconds |
 
 > [!NOTE]
 > The specific limits described here are subject to change.
@@ -40,11 +40,27 @@ The preceding limits apply to the following resources:
 - [trending](/graph/api/resources/insights-trending)
 - [educationResource](/graph/api/resources/educationresource)
 
+## Bookings service limits
+
+The Bookings service applies limits to each app ID and mailbox combination, specifically when a particular app accesses a particular booking mailbox. Exceeding the limit for one mailbox does not affect the ability of the application to access another mailbox.
+
+| Limit      | Applies to    |
+| -------------- | ------------ |
+| Four concurrent requests  | v1.0 and beta endpoints   |
+
+The preceding limits apply to the following resources:
+- [business](/graph/api/resources/bookingbusiness)
+- [appointment](/graph/api/resources/bookingappointment)
+- [customQuestion](/graph/api/resources/bookingcustomquestion)
+- [customer](/graph/api/resources/bookingcustomer)
+- [service](/graph/api/resources/bookingservice)
+- [staffMember](/graph/api/resources/bookingstaffmember)
+
 ## Cloud communication service limits
 
 | Resource      | Limits per app    |
 | -------------- | ------------ |
-| [Calls](/graph/api/resources/call) | 10,000 calls/month and 100 concurrent calls   |
+| [Calls](/graph/api/resources/call) | 15,000 requests in a 60 second period, per application per tenant |
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
 | [Presence](/graph/api/resources/presence)   | 1500 requests in a 30 second period, per application per tenant |
 | [Virtual event](/graph/api/resources/virtualevent) | 10,000 requests/app each month |
@@ -105,8 +121,8 @@ Throttling is based on a token bucket algorithm, which works by adding individua
 
 | Limit type | Resource unit quota | Write quota |
 | ---------- | ----------- | -------------- |
-| application+tenant pair | S: 3,500 requests per 10 seconds <br/> M: 5,000 requests per 10 seconds <br/> L: 8,000 requests per 10 seconds | 3,000 requests per 2 minutes and 30 seconds |
-| application | 150,000 requests per 20 seconds  | 70,000 requests per 5 minutes|
+| application+tenant pair | S: 3,500 ResourceUnits per 10 seconds <br/> M: 5,000 ResourceUnits per 10 seconds <br/> L: 8,000 ResourceUnits per 10 seconds | 3,000 requests per 2 minutes and 30 seconds |
+| application | 150,000 ResourceUnits per 20 seconds  | 35,000 requests per 5 minutes|
 | tenant | Not Applicable | 18,000 requests per 5 minutes |
 
 > [!NOTE]

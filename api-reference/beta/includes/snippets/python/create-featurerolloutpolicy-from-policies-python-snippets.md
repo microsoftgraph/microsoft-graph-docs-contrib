@@ -16,7 +16,7 @@ request_body = FeatureRolloutPolicy(
 	is_applied_to_organization = False,
 )
 
-result = await graph_client.policies.feature_rollout_policies.post(request_body = request_body)
+result = await graph_client.policies.feature_rollout_policies.post(body = request_body)
 
 
 ```

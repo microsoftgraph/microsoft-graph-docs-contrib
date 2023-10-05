@@ -13,7 +13,7 @@ request_body = Custodian(
 	apply_hold_to_sources = True,
 )
 
-result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').custodians.post(request_body = request_body)
+result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').custodians.post(body = request_body)
 
 
 ```
