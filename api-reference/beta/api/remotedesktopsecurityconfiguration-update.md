@@ -1,6 +1,6 @@
 ---
 title: "Update remoteDesktopSecurityConfiguration"
-description: "Update the properties of a remoteDesktopSecurityConfiguration object on a servicePincipal."
+description: "Update the properties of a remoteDesktopSecurityConfiguration object on the servicePincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) object on a servicePrincipal. This allows to enable or disable RDS Entra ID authentication protocol for RDP to Microsoft Entra joined and Microsoft Entra hybrid joined devices.
+Update the properties of a [remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) object on the servicePrincipal. This configuration allows enabling or disabling RDS Entra ID authentication protocol for RDP to Microsoft Entra joined and Microsoft Entra hybrid joined devices.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +45,7 @@ PATCH /servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguratio
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isRemoteDesktopProtocolEnabled|Boolean| Determines if remote desktop protocol is enabled or not. Required.|
+|isRemoteDesktopProtocolEnabled|Boolean| Whether RDS Entra ID authentication protocol for RDP is enabled or not. Required.|
 
 
 
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and an updated [remo
 ## Examples
 
 ### Request
-The following is an example of a request.
+Here's an example of the request.
 <!-- {
   "blockType": "request",
   "name": "update_remotedesktopsecurityconfiguration"
@@ -74,7 +74,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
