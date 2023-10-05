@@ -1,5 +1,5 @@
 ---
-title: "List whoisHistoryRecords"
+title: "List history"
 description: "Get a list of whoisHistoryRecord objects for a whoisRecord, including the properties and relationships of each whoisHistoryRecord object."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# List whoisHistoryRecords for a whoisRecord
+# List history
 
 Namespace: microsoft.graph.security
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get a list of [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) objects for a [whoisRecord](../resources/security-whoisrecord.md), including the properties and relationships of each [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) object.
+Get the history for a [whoisRecord](../resources/security-whoisrecord.md), as represented by a collection of [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) resources.
 
 ## Permissions
 
@@ -36,7 +36,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /security/threatIntelligence/hosts/{hostId}/whois/history
-GET /security/threatIntelligence/whoisRecord/{id}/history
+GET /security/threatIntelligence/whoisRecords/{id}/history
 ```
 
 ## Optional query parameters

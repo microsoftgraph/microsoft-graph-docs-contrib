@@ -1560,6 +1560,14 @@ Namespace: microsoft.graph
 | policyOID          |
 | unknownFutureValue |
 
+### x509CertificateIssuerHintsState values
+
+|Member|
+|:---|
+|disabled|
+|enabled|
+|unknownFutureValue|
+
 ### anniversaryType values
 
 | Member             |
@@ -4063,6 +4071,130 @@ Possible values for user account types (group membership), per Windows definitio
 |voiceAlternateMobile|
 |voiceOffice|
 |sms|
+|unknownFutureValue|
+
+### endUserNotificationPreference values
+
+|Member|
+|:---|
+|unknown|
+|microsoft|
+|custom|
+|unknownFutureValue|
+
+### endUserNotificationSettingType values
+
+|Member|
+|:---|
+|unknown|
+|noTraining|
+|trainingSelected|
+|noNotification|
+|unknownFutureValue|
+
+### endUserNotificationType values
+
+|Member|
+|:---|
+|unknown|
+|positiveReinforcement|
+|noTraining|
+|trainingAssignment|
+|trainingReminder|
+|unknownFutureValue|
+
+### notificationDeliveryFrequency values
+
+|Member|
+|:---|
+|unknown|
+|weekly|
+|biWeekly|
+|unknownFutureValue|
+
+### notificationDeliveryPreference values
+
+|Member|
+|:---|
+|unknown|
+|deliverImmedietly|
+|deliverAfterCampaignEnd|
+|unknownFutureValue|
+
+### oAuthAppScope values
+
+|Member|
+|:---|
+|unknown|
+|readCalendar|
+|readContact|
+|readMail|
+|readAllChat|
+|readAllFile|
+|readAndWriteMail|
+|sendMail|
+|unknownFutureValue|
+
+### targettedUserType values
+
+|Member|
+|:---|
+|unknown|
+|clicked|
+|compromised|
+|allUsers|
+|unknownFutureValue|
+
+### trainingAssignedTo values
+
+|Member|
+|:---|
+|none|
+|allUsers|
+|clickedPayload|
+|compromised|
+|reportedPhish|
+|readButNotClicked|
+|didNothing|
+|unknownFutureValue|
+
+### trainingAvailabilityStatus values
+
+|Member|
+|:---|
+|unknown|
+|notAvailable|
+|available|
+|archive|
+|delete|
+|unknownFutureValue|
+
+### trainingCompletionDuration values
+
+| Member             |
+| :------------------|
+| week               |
+| fortnite           |
+| month              |
+| unknownFutureValue |
+
+
+### trainingSettingType values
+
+|Member|
+|:---|
+|microsoftCustom|
+|microsoftManaged|
+|noTraining|
+|custom|
+|unknownFutureValue|
+
+### trainingType values
+
+|Member|
+|:---|
+|unknown|
+|phishing|
 |unknownFutureValue|
 
 ### verifiableCredentialPresentationStatusCode values
