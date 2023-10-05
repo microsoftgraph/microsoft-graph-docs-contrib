@@ -1,6 +1,6 @@
 ---
 title: "targetDeviceGroup resource type"
-description: "This represents the target device group configured for the remote desktop security configuration resource on the servicePrincipal."
+description: "This represents the targetDeviceGroup configured for the remoteDesktopSecurityConfiguration object on the servicePrincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This represents the target device group that is configured for the remote desktop security configuration resource on the servicePrincipal. This enables SSO using the RDS Entra ID authentication protocol when a user authenticates over RDP to a Microsoft Entra joined or Microsoft Entra hybrid joined devices that is a member of configured target device group.
+This represents the targetDeviceGroup that is configured for the remoteDesktopSecurityConfiguration object on the servicePrincipal. This configuration enables SSO using the RDS Entra ID authentication protocol when a user authenticates over RDP to a Microsoft Entra joined or Microsoft Entra hybrid joined devices that are member of the targetDeviceGroup.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -36,7 +36,7 @@ Inherits from [entity](../resources/entity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -52,4 +52,3 @@ The following is a JSON representation of the resource.
   "displayName": "String"
 }
 ```
-
