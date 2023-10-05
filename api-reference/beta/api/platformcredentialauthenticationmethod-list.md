@@ -43,13 +43,13 @@ One of the following permissions is required to call this API. To learn more, in
 Retrieve details of your own Platform Credential authentication methods.
 <!-- { "blockType": "ignored" } -->
 ``` http
-GET /me/authentication/platformCredentialAuthenticationMethods
+GET /me/authentication/platformCredentialMethods
 ```
 
 Retrieve details of your own or another user's Platform Credential authentication methods.
 <!-- { "blockType": "ignored" } -->
 ``` http
-GET /users/{id | userPrincipalName}/authentication/platformCredentialAuthenticationMethods
+GET /users/{id | userPrincipalName}/authentication/platformCredentialMethods
 ```
 
 ## Optional query parameters
@@ -68,54 +68,4 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [platformCredentialAuthenticationMethod](../resources/platformcredentialauthenticationmethod.md) objects in the response body.
 
-## Examples
-
-### Request
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "list_platformcredentialauthenticationmethod",
-  "sampleKeys": ["annie@contoso.com"]
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/users/annie@contoso.com/authentication/platformCredentialAuthenticationMethods
-```
-
----
-
-### Response
-**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.platformCredentialAuthenticationMethod)"
-}
--->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.platformCredentialAuthenticationMethod",
-      "id": "b5e01f81-1f81-b5e0-811f-e0b5811fe0b5",
-      "displayName": "Jordan's Macbook Pro",
-      "createdDateTime": "2020-11-27T23:12:49Z",
-      "keyStrength": "normal",
-      "platform": "macOS"
-    },
-    {
-      "@odata.type": "#microsoft.graph.platformCredentialAuthenticationMethod",
-      "id": "e6dab818-e68d-433e-89d5-547357870cb2",
-      "displayName": "Joe's MacBook Pro",
-      "createdDateTime": "2020-12-25T02:20:13Z",
-      "keyStrength": "normal",
-      "platform": "macOS"
-    }
-  ]
-}
-```
 

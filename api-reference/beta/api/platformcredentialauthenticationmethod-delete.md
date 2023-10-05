@@ -64,31 +64,3 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `204 No Content` response code.
 
-## Examples
-
-### Request
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "delete_platformcredentialauthenticationmethod",
-  "sampleKeys": ["kim@contoso.com", "_jpuR-TGZtk6aQCLF3BQjA2"]
-}
--->
-``` http
-DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/platformCredentialMethods/_jpuR-TGZtk6aQCLF3BQjA2
-```
-
----
-
-### Response
-**Note:** The response object shown here might be shortened for readability.
-<!-- {
-  "blockType": "response",
-  "truncated": true
-}
--->
-``` http
-HTTP/1.1 204 No Content
-```
-
