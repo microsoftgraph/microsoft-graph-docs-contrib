@@ -1,7 +1,7 @@
 ---
 title: "platformCredentialAuthenticationMethod resource type"
 description: "A representation of a Platform Credential instance registered to a user on macOS. Platform Credential is a sign-in authentication method."
-author: "veenasoman"
+author: "Veena11"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

@@ -1,7 +1,7 @@
 ---
 title: "List platformCredentialAuthenticationMethods"
 description: "Get a list of the platformCredentialAuthenticationMethod objects and their properties."
-author: "veenasoman"
+author: "Veena11"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

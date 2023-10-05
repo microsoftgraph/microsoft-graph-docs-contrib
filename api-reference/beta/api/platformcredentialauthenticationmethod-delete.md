@@ -1,7 +1,7 @@
 ---
 title: "Delete platformCredentialAuthenticationMethod"
 description: "Deletes a platformCredentialAuthenticationMethod object."
-author: "veenasoman"
+author: "Veena11"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
