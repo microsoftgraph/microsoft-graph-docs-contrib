@@ -1,6 +1,6 @@
 ---
 title: "Delete targetDeviceGroup"
-description: "Delete a targetDeviceGroup object."
+description: "Delete a targetDeviceGroup object for the remoteDesktopSecurityConfiguration object on the servicePrincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [targetDeviceGroup](../resources/targetdevicegroup.md) object.
+Delete a [targetDeviceGroup](../resources/targetdevicegroup.md) object for the remoteDesktopSecurityConfiguration object on the servicePrincipal. Microsoft Entra joined or Microsoft Entra hybrid joined devices that belong to the target device group that was removed from remoteDesktopSecurityConfiguration will not get SSO when user authenticates to these devices over RDP using RDS Entra ID authentication protocol.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -55,7 +55,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-DELETE https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguration/targetDeviceGroups/{targetDeviceGroupId}
+DELETE https://graph.microsoft.com/beta/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration/targetDeviceGroups/1a9db3ab-0acf-4808-99ae-e8ed581cb2e0/$ref
 ```
 
 
@@ -70,4 +70,3 @@ The following is an example of the response
 ``` http
 HTTP/1.1 204 No Content
 ```
-
