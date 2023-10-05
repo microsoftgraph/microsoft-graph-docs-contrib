@@ -44,8 +44,8 @@ This API doesn't require any request body.
 If successful, this method returns `204 No Content` response code.
 
 ## Example
-##### Request
-Here's an example of the request.
+### Request
+Here is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,11 +92,11 @@ workbook-session-id: {session-id}
 
 ---
 
-Note that workbook-session-id header is required.
+Note that workbook-session-id header is required. 
 
 
-##### Response
-Here's an example of the response.
+### Response
+Here is an example of the response. 
 
 <!-- {
   "blockType": "response",

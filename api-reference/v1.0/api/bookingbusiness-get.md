@@ -32,7 +32,7 @@ GET /solutions/bookingBusinesses/{id}
 
 ## Optional query parameters
 
-This method supports the $count and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$count` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 

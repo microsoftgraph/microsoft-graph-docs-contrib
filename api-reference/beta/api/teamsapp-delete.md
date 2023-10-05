@@ -19,7 +19,7 @@ Delete an [app](../resources/teamsapp.md) from an organization's app catalog (th
 
 You can also use this API to remove a submitted app from the review process.
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -33,7 +33,10 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.|
 | Application                            | Not supported. |
 
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> **Note:**
+>
+> * Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> * You can only use the `AppCatalog.Submit` permission to delete app definitions in review.
 
 ## HTTP request
 

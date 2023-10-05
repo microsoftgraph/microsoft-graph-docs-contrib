@@ -15,6 +15,8 @@ Namespace: microsoft.graph.security
 
 Represents an internet domain that is part of a primary domain. For example, learn.microsoft.com is a subdomain of microsoft.com. 
 
+For every subdomain, there can be a new set of IP addresses to which the domain resolves. This can be a great data source for finding related infrastructure.
+
 ## Methods
 
 | Method                                                                | Return type                                                                         | Description                                                                                                                 |

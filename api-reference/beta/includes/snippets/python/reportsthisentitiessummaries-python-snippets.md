@@ -9,7 +9,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 graph_client = GraphServiceClient(request_adapter)
 
 query_params = EntitiesSummariesWithStartDateTimeWithEndDateTimeRequestBuilder.EntitiesSummariesWithStartDateTimeWithEndDateTimeRequestBuilderGetQueryParameters(
-		filter = "trafficType  eq 'microsoft365'",
+		filter = "trafficType eq 'microsoft365'",
 )
 
 request_configuration = EntitiesSummariesWithStartDateTimeWithEndDateTimeRequestBuilder.EntitiesSummariesWithStartDateTimeWithEndDateTimeRequestBuilderGetRequestConfiguration(
