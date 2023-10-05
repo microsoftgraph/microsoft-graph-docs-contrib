@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-POST /external/connections/{id}/schema
+PATCH /external/connections/{id}/schema
 ```
 In the request body, supply a JSON representation of a [schema](../resources/externalconnectors-schema.md) object.
 
@@ -54,7 +54,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/external/connections/contosohr/schema
+PATCH https://graph.microsoft.com/v1.0/external/connections/contosohr/schema
 Content-type: application/json
 
 {
