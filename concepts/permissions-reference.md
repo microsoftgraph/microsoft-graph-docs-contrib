@@ -1937,7 +1937,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 ---
 
-## Place Devices permissions
+## Place devices permissions
 
 #### Delegated permissions
 
@@ -1952,6 +1952,15 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _PlaceDevice.Read.All_ |   Read all workplace devices | Allows the app to read all workplace devices, without a signed-in user. | Yes |
 | _PlaceDevice.ReadWrite.All_ |   Read and write all workplace devices | Allows the app to read and write all workplace devices, without a signed-in user. | Yes |
+
+---
+
+## Place device telemetry permissions
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required |
+|:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _PlaceDeviceTelemetry.ReadWrite.All_ |   Read and write telemetry for all workplace devices. | Allows the app to read and write telemetry for all workplace devices, without a signed-in user. | Yes |
 
 ---
