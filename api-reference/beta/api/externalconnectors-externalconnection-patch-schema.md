@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /external/connections/{id}/schema
+PATCH /external/connections/{id}/schema
 ```
 
 ## Request headers
@@ -67,7 +67,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/external/connections/contosohr/schema
+PATCH https://graph.microsoft.com/beta/external/connections/contosohr/schema
 Content-type: application/json
 
 {
