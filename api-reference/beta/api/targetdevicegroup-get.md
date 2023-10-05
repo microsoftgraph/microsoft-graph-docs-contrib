@@ -1,6 +1,6 @@
 ---
 title: "Get targetDeviceGroup"
-description: "Read the properties and relationships of a targetDeviceGroup object."
+description: "Read the properties and relationships of a targetDeviceGroup object for the remoteDesktopSecurityConfiguration object on the servicePrincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [targetDeviceGroup](../resources/targetdevicegroup.md) object.
+Read the properties and relationships of a [targetDeviceGroup](../resources/targetdevicegroup.md) object for the remoteDesktopSecurityConfiguration object on the servicePrincipal.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -59,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguration/targetDeviceGroups/{targetDeviceGroupId}
+GET https://graph.microsoft.com/beta/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration/targetDeviceGroups/b9e4eae4-b781-45a1-ce65-f2dd8ac3b696
 ```
 
 
@@ -80,7 +80,7 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.targetDeviceGroup",
     "id": "b9e4eae4-b781-45a1-ce65-f2dd8ac3b696",
-    "displayName": "String"
+    "displayName": "Device Group A"
   }
 }
 ```
