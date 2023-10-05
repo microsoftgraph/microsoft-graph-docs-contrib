@@ -30,6 +30,7 @@ request_body = DelegatedAdminRelationship(
 			),
 		]
 	),
+	auto_extend_duration = "P180D",
 )
 
 request_configuration = DelegatedAdminRelationshipRequestBuilder.DelegatedAdminRelationshipRequestBuilderPatchRequestConfiguration(

@@ -33,7 +33,7 @@ mgc-beta teamwork send-activity-notification-to-recipients post --body '{\
             "name": "pendingRequestCount",\
             "value": "5"\
         }\
-    ] \
+    ]\
 }\
 '
 
