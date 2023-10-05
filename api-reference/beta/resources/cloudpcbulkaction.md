@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkAction resource type"
-description: "Entity that represents the bulk action which will be applied to cloudPcs specified in parameter."
+description: "Represents the bulk action applied to cloudPCs specified in a parameter."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
