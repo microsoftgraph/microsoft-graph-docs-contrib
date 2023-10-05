@@ -100,6 +100,9 @@ The `mgt-taxonomy-picker` component defines the following CSS custom properties 
 .taxonomy-picker {
   --taxonomy-picker-background-color: grey;
   --taxonomy-picker-list-max-height: 200px;
+  --taxonomy-picker-background-color: black;
+  --taxonomy-picker-placeholder-color: white;
+  
 }
 ```
 
