@@ -62,7 +62,7 @@ This resource is an open type that allows other properties to be passed in. You 
 |enrollmentProfileName|String|Enrollment profile applied to the device. For example, `Apple Device Enrollment Profile`, `Device enrollment - Corporate device identifiers`, or `Windows Autopilot profile name`. This property is set by Intune.|
 |enrollmentType|String|Enrollment type of the device. This property is set by Intune. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`.|
 | extensionAttributes | [onPremisesExtensionAttributes](onpremisesextensionattributes.md) | Contains extension attributes 1-15 for the device. The individual extension attributes are not selectable. These properties are mastered in cloud and can be set during creation or update of a device object in Azure AD. <br><br>Supports `$filter` (`eq`, `not`, `startsWith`, and `eq` on `null` values).|
-|hostnames|String collection| List of hostNames for the device.|
+|hostnames|String collection| List of hostnames for the device.|
 |id|String|The unique identifier for the device. Inherited from [directoryObject](directoryobject.md). Key, Not nullable. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `in`). |
 |isCompliant|Boolean|`true` if the device complies with Mobile Device Management (MDM) policies; otherwise, `false`. Read-only. This can only be updated by Intune for any device OS type or by an [approved MDM app](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices. Supports `$filter` (`eq`, `ne`, `not`).|
 |isManaged|Boolean|`true` if the device is managed by a Mobile Device Management (MDM) app; otherwise, `false`. This can only be updated by Intune for any device OS type or by an [approved MDM app](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices. Supports `$filter` (`eq`, `ne`, `not`). |
@@ -130,7 +130,7 @@ The following is a JSON representation of the resource.
   "enrollmentProfileName": "String",
   "enrollmentType": "String",
   "extensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
-  "hostNames" : ["String"],
+  "hostnames" : ["String"],
   "id": "String (identifier)",
   "isCompliant": "Boolean",
   "isManaged": "Boolean",
