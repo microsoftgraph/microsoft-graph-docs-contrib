@@ -420,10 +420,10 @@
         },
         {
           "Id": "14a780c1-d222-4476-acc0-3c5b6425f040",
-          "ApiChange": "Relationship",
-          "ChangedApiName": "photo",
+          "ApiChange": "Method",
+          "ChangedApiName": "DELETE",
           "ChangeType": "Addition",
-          "Description": "Added support for deleting **photo** of a [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
+          "Description": "Added the [delete](https://learn.microsoft.com/en-us/graph/api/profilephoto-delete.md?view=graph-rest-1.0) to the [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0) resource.",
           "Target": "group"
         }
       ],
