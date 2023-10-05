@@ -125,7 +125,7 @@ If successful, this method returns a `200 OK` response code or a `204 No Content
 
 #### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
