@@ -1,6 +1,6 @@
 ---
 title: "List targetDeviceGroups"
-description: "Get a list of the targetDeviceGroup objects and their properties."
+description: "Get a list of the targetDeviceGroup objects and their properties on the remoteDesktopSecurityConfiguration resource on the servicePirncipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [targetDeviceGroup](../resources/targetdevicegroup.md) objects and their properties.
+Get a list of the [targetDeviceGroup](../resources/targetdevicegroup.md) objects and their properties on the remoteDesktopSecurityConfiguration resource on the servicePrincipal. Microsoft Entra joined or Microsoft Entra hybrid joined devices that belong to any of the targetDeviceGroup are configured for SSO when a user connects to these devices over RDP using RDS Entra ID authentication protocol.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguration/targetDeviceGroups
+GET https://graph.microsoft.com/beta/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration/targetDeviceGroups
 ```
 
 
@@ -80,7 +80,7 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.targetDeviceGroup",
       "id": "b9e4eae4-b781-45a1-ce65-f2dd8ac3b696",
-      "displayName": "String"
+      "displayName": "Device Group A"
     }
   ]
 }
