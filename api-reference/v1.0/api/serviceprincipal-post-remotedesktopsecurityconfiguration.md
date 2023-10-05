@@ -1,0 +1,95 @@
+---
+title: "Create remoteDesktopSecurityConfiguration"
+description: "Create a new remoteDesktopSecurityConfiguration object on the servicePrincipal."
+author: "SanDeo-MSFT"
+ms.localizationpriority: medium
+ms.prod: "applications"
+doc_type: apiPageType
+---
+
+# Create remoteDesktopSecurityConfiguration
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Create a new remoteDesktopSecurityConfiguration object on the servicePrincipal. This configuration is used to enable the new [Remote Desktop Services (RDS) Entra ID authentication protcol](https://learn.microsoft.com/openspecs/windows_protocols/ms-rdpbcgr/dc43f040-d75d-49a9-90c6-0c9999281136) to authenticate a user to [Microsoft Entra joined](https://learn.microsoft.com/azure/active-directory/devices/concept-directory-join) or [Microsoft Entra hybrid joined](https://learn.microsoft.com/azure/active-directory/devices/concept-hybrid-join) devices.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account) | Application-RemoteDesktopConfig.ReadWrtite.All, Application.ReadWrite.All, Directory.ReadWrite.All |
+|Delegated (personal Microsoft account) | Not supported. |
+|Application | Application-RemoteDesktopConfig.ReadWrtite.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+POST /servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguration
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
+## Request body
+In the request body, supply a JSON representation of the [remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) object.
+
+You can specify the following properties when creating a **remoteDesktopSecurityConfiguration**.
+
+|Property|Type|Description|
+|:---|:---|:---|
+|isRemoteDesktopProtocolEnabled|Boolean|Determine if remote desktop protocol is enabled or not. Required.|
+
+
+
+## Response
+
+If successful, this method returns a `201 Created` response code and a [remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) object in the response body.
+
+## Examples
+
+### Request
+Here's an example of the request.
+<!-- {
+  "blockType": "request",
+  "name": "create_remotedesktopsecurityconfiguration_from_"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.remoteDesktopSecurityConfiguration",
+  "isRemoteDesktopProtocolEnabled": "true"
+}
+```
+
+
+### Response
+Here's an example of the response.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.remoteDesktopSecurityConfiguration"
+}
+-->
+``` http
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.remoteDesktopSecurityConfiguration",
+  "id": "ca738153-c98a-f822-a7d1-5a6e1058462b",
+  "isRemoteDesktopProtocolEnabled": "true"
+}
+```
+
