@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Entity that represents the bulk action which will be applied to cloudPcs specified in parameter. This is an abstract type.
+Represents the bulk action applied to cloudPCs specified in a parameter. This resource is an abstract type.
 
 ## Methods
 |Method|Return type|Description|
