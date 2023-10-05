@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of a [remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) object on a servicePrincipal. This includes if RDS Entra ID authentication protocol is enabled or not for RDP to Microsoft Entra joined or Microsoft Entra hybird joined devices and if any of those target device hosts have been configured for SSO.
+Read the properties and relationships of a [remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) object on a servicePrincipal. This configuration will inform if RDS Entra ID authentication protocol is enabled or not for RDP to Microsoft Entra joined or Microsoft Entra hybrid joined devices and if any targetDeviceGroups have been configured for SSO.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,7 +42,7 @@ This method supports some of the OData query parameters to help customize the re
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a [remoteDesktop
 ## Examples
 
 ### Request
-The following is an example of a request.
+Here's an example of the request.
 <!-- {
   "blockType": "request",
   "name": "get_remotedesktopsecurityconfiguration"
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/00af5dfb-85da-4b41-a677-0
 
 
 ### Response
-The following is an example of the response
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
