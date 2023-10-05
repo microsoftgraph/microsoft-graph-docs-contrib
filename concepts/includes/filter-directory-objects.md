@@ -12,7 +12,7 @@ author: "FaithOmbongi"
 | description                   | ![Advanced][AQP] | ![Advanced][AQP] | ![Advanced][AQP]    |
 | displayName                   | ![Default][RDS]  | ![Default][RDS]  | ![Advanced][AQP]    |
 | isMemberManagementRestricted  | ![Default][RDS]  |                  | ![NotSupported][NS] |
-| scopedRoleMembers/any(s:s/id) | ![Default][RDS]  |                  | ![NotSupported][NS] |
+| scopedRoleMembers/any(s:s/id) | ![Default][RDS]  |                  |                     |
 
 ## Application properties
 
@@ -20,7 +20,7 @@ author: "FaithOmbongi"
 |-----------------------------------------------|---------------------|---------------------|-----------------|---------------------|
 | appId                                         | ![Default][RDS]     |                     |                 | ![NotSupported][NS] |
 | createdDateTime                               | ![Default][RDS]     |                     | ![Default][RDS] | ![Advanced][AQP]    |
-| createdOnBehalfOf/id                          | ![Default][RDS]     |                     |                 | ![NotSupported][NS] |
+| createdOnBehalfOf/id                          | ![Default][RDS]     |                     |                 |                     |
 | description                                   | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![Advanced][AQP]    |
 | disabledByMicrosoftStatus                     | ![Default][RDS]     |                     |                 | ![NotSupported][NS] |
 | displayName                                   | ![Default][RDS]     | ![Default][RDS]     |                 | ![Advanced][AQP]    |
@@ -117,11 +117,11 @@ The following properties of the **device** entity support `$count` of a collecti
 
 | Property                                                   | eq               | startsWith       | ge/le            | eq Null             |
 |------------------------------------------------------------|------------------|------------------|------------------|---------------------|
-| appRoleAssignments/any(a:a/id)                             | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |
+| appRoleAssignments/any(a:a/id)                             | ![Default][RDS]  |                  |                  |                     |
 | assignedLicenses/any(a:a/skuId)                            | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |
 | classification                                             | ![Default][RDS]  | ![Default][RDS]  |                  | ![NotSupported][NS] |
 | createdByAppId                                             | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |
-| createdOnBehalfOf/id                                       | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |
+| createdOnBehalfOf/id                                       | ![Default][RDS]  |                  |                  |                     |
 | description                                                | ![Advanced][AQP] | ![Advanced][AQP] |                  | ![Advanced][AQP]    |
 | displayName                                                | ![Default][RDS]  | ![Default][RDS]  |                  | ![Advanced][AQP]    |
 | expirationDateTime                                         | ![Advanced][AQP] |                  | ![Advanced][AQP] | ![NotSupported][NS] |
@@ -146,7 +146,7 @@ The following properties of the **device** entity support `$count` of a collecti
 | resourceProvisioningOptions/any(p:p)                       | ![Default][RDS]  |                  |                  |                     |
 | securityEnabled                                            | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |
 | settings/any(s:s/displayName)                              | ![Default][RDS]  | ![Default][RDS]  |                  | ![NotSupported][NS] |
-| settings/any(s:s/id)                                       | ![Default][RDS]  |                  |                  | ![NotSupported][NS] |
+| settings/any(s:s/id)                                       | ![Default][RDS]  |                  |                  |                     |
 | uniqueName                                                 | ![Default][RDS]  | ![Default][RDS]  |                  | ![NotSupported][NS] |
 
 The following properties of the **group** entity support `$count` of a collection in a filter expression.
@@ -169,7 +169,7 @@ The following properties of the **group** entity support `$count` of a collectio
 | jobTitle                                                   | ![Default][RDS]  | ![Default][RDS]  |                 | ![Advanced][AQP]    |
 | mail                                                       | ![Default][RDS]  | ![Default][RDS]  |                 | ![Advanced][AQP]    |
 | mailNickname                                               | ![Default][RDS]  | ![Default][RDS]  |                 | ![Advanced][AQP]    |
-| manager/id                                                 | ![Default][RDS]  |                  |                 | ![NotSupported][NS] |
+| manager/id                                                 | ![Default][RDS]  |                  |                 |                     |
 | onPremisesLastSyncDateTime                                 | ![Default][RDS]  |                  | ![Default][RDS] | ![NotSupported][NS] |
 | onPremisesProvisioningErrors/any(o:o/category)             | ![Default][RDS]  |                  |                 | ![NotSupported][NS] |
 | onPremisesProvisioningErrors/any(o:o/propertyCausingError) | ![Default][RDS]  |                  |                 | ![NotSupported][NS] |
@@ -192,12 +192,12 @@ The following properties of the **orgContact** entity support `$count` of a coll
 | alternativeNames/any(p:p)                      | ![Default][RDS]     | ![Default][RDS]     |                 |                     |
 | appId                                          | ![Default][RDS]     |                     |                 | ![NotSupported][NS] |
 | appOwnerOrganizationId                         | ![Advanced][AQP]    |                     |                 | ![NotSupported][NS] |
-| appRoleAssignedTo/any(a:a/id)                  | ![Default][RDS]     |                     |                 | ![NotSupported][NS] |
+| appRoleAssignedTo/any(a:a/id)                  | ![Default][RDS]     |                     |                 |                     |
 | appRoleAssignmentRequired                      | ![Advanced][AQP]    |                     |                 | ![NotSupported][NS] |
-| appRoleAssignments/any(a:a/id)                 | ![Default][RDS]     |                     |                 | ![NotSupported][NS] |
+| appRoleAssignments/any(a:a/id)                 | ![Default][RDS]     |                     |                 |                     |
 | applicationTemplateId                          | ![Default][RDS]     |                     |                 | ![NotSupported][NS] |
-| createdObjects/any(c:c/id)                     | ![Advanced][AQP]    |                     |                 | ![NotSupported][NS] |
-| delegatedPermissionClassifications/any(d:d/id) | ![Default][RDS]     |                     |                 | ![NotSupported][NS] |
+| createdObjects/any(c:c/id)                     | ![Advanced][AQP]    |                     |                 |                     |
+| delegatedPermissionClassifications/any(d:d/id) | ![Default][RDS]     |                     |                 |                     |
 | description                                    | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![Advanced][AQP]    |
 | displayName                                    | ![Default][RDS]     | ![Default][RDS]     |                 | ![Advanced][AQP]    |
 | federatedIdentityCredentials/any(f:f/issuer)   | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![NotSupported][NS] |
@@ -207,7 +207,7 @@ The following properties of the **orgContact** entity support `$count` of a coll
 | info/logoUrl                                   | ![NotSupported][NS] | ![NotSupported][NS] |                 | ![Advanced][AQP]    |
 | info/termsOfServiceUrl                         | ![Advanced][AQP]    | ![NotSupported][NS] |                 | ![NotSupported][NS] |
 | notes                                          | ![Advanced][AQP]    | ![Advanced][AQP]    |                 | ![Advanced][AQP]    |
-| oauth2PermissionGrants/any(o:o/id)             | ![Default][RDS]     |                     |                 | ![NotSupported][NS] |
+| oauth2PermissionGrants/any(o:o/id)             | ![Default][RDS]     |                     |                 |                     |
 | preferredSingleSignOnMode                      | ![Default][RDS]     |                     |                 | ![NotSupported][NS] |
 | preferredTokenSigningKeyEndDateTime            | ![Default][RDS]     |                     | ![Default][RDS] | ![NotSupported][NS] |
 | publisherName                                  | ![Default][RDS]     | ![Default][RDS]     |                 | ![NotSupported][NS] |
@@ -230,7 +230,7 @@ The following properties of the **servicePrincipal** entity support `$count` of 
 |---------------------------------------------------------------------|---------------------|---------------------|------------------|---------------------|
 | accountEnabled                                                      | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
 | ageGroup                                                            | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
-| appRoleAssignments/any(a:a/id)                                      | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
+| appRoleAssignments/any(a:a/id)                                      | ![Default][RDS]     |                     |                  |                     |
 | assignedLicenses/any(a:a/skuId)                                     | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
 | assignedPlans/any(a:a/capabilityStatus)                             | ![Advanced][AQP]    |                     |                  | ![NotSupported][NS] |
 | assignedPlans/any(a:a/service)                                      | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![NotSupported][NS] |
@@ -243,7 +243,7 @@ The following properties of the **servicePrincipal** entity support `$count` of 
 | consentProvidedForMinor                                             | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
 | country                                                             | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
 | createdDateTime                                                     | ![Default][RDS]     |                     | ![Default][RDS]  | ![Advanced][AQP]    |
-| createdObjects/any(c:c/id)                                          | ![Advanced][AQP]    |                     |                  | ![NotSupported][NS] |
+| createdObjects/any(c:c/id)                                          | ![Advanced][AQP]    |                     |                  |                     |
 | creationType                                                        | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
 | department                                                          | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
 | displayName                                                         | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
@@ -264,12 +264,12 @@ The following properties of the **servicePrincipal** entity support `$count` of 
 | isLicenseReconciliationNeeded                                       | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
 | isResourceAccount                                                   | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
 | jobTitle                                                            | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
-| licenseDetails/any(l:l/id)                                          | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
+| licenseDetails/any(l:l/id)                                          | ![Default][RDS]     |                     |                  |                     |
 | mail                                                                | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
 | mailNickname                                                        | ![Default][RDS]     | ![Default][RDS]     |                  | ![Advanced][AQP]    |
-| manager/id                                                          | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
+| manager/id                                                          | ![Default][RDS]     |                     |                  |                     |
 | mobilePhone                                                         | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![Advanced][AQP]    |
-| oauth2PermissionGrants/any(o:o/id)                                  | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
+| oauth2PermissionGrants/any(o:o/id)                                  | ![Default][RDS]     |                     |                  |                     |
 | officeLocation                                                      | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![Advanced][AQP]    |
 | onPremisesExtensionAttributes/extensionAttribute1                   | ![Advanced][AQP]    | ![NotSupported][NS] |                  | ![Advanced][AQP]    |
 | onPremisesExtensionAttributes/extensionAttribute10                  | ![Advanced][AQP]    | ![NotSupported][NS] |                  | ![Advanced][AQP]    |
@@ -303,7 +303,7 @@ The following properties of the **servicePrincipal** entity support `$count` of 
 | provisionedPlans/any(p:p/provisioningStatus)                        | ![Advanced][AQP]    |                     |                  | ![NotSupported][NS] |
 | provisionedPlans/any(p:p/service)                                   | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![NotSupported][NS] |
 | proxyAddresses/any(p:p)                                             | ![Default][RDS]     | ![Default][RDS]     |                  |                     |
-| scopedRoleMemberOf/any(s:s/id)                                      | ![Default][RDS]     |                     |                  | ![NotSupported][NS] |
+| scopedRoleMemberOf/any(s:s/id)                                      | ![Default][RDS]     |                     |                  |                     |
 | showInAddressList                                                   | ![Advanced][AQP]    |                     |                  | ![NotSupported][NS] |
 | state                                                               | ![Default][RDS]     |                     |                  | ![Advanced][AQP]    |
 | streetAddress                                                       | ![Advanced][AQP]    | ![Advanced][AQP]    |                  | ![Advanced][AQP]    |
@@ -328,7 +328,7 @@ The following table shows support for `$filter` by other extension properties on
 |------------------------------------------------------------------------------------------|---------------------|---------------------|---------------------|
 | [Schema extensions](/graph/extensibility-overview#schema-extensions)                     | ![Advanced][AQP]    | ![Advanced][AQP]    | ![Advanced][AQP]    |
 | [Open extensions](/graph/extensibility-overview#open-extensions)                         | ![NotSupported][NS] | ![NotSupported][NS] | ![NotSupported][NS] |
-| [Directory extensions](/graph/extensibility-overview#directory-azure-ad-extensions)      | ![Default][RDS]     |                     | ![Advanced][AQP]    |
+| [Directory extensions](/graph/extensibility-overview#directory-azure-ad-extensions)      | ![Default][RDS]     | ![Advanced][AQP]    | ![Advanced][AQP]    |
 
 [RDS]: ../images/yesandnosymbols/greencheck.svg
 [AQP]: ../images/yesandnosymbols/whitecheck-in-greencircle.svg
