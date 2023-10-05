@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) object on a servicePrincipal. Removing remoteDesktopSecurityConfiguration object on servicePrincipal will disable RDS Entra ID authentication protocol for RDP to Microsoft Entra joined and Microsoft Entra hybrid joined devices and also remove any target device groups that were configured for SSO.
+Delete a [remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) object on a servicePrincipal. Removing remoteDesktopSecurityConfiguration object on the servicePrincipal will disable RDS Entra ID authentication protocol for RDP to Microsoft Entra joined and Microsoft Entra hybrid joined devices. This will also remove any target device groups that were configured for SSO.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +39,7 @@ DELETE /servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfigurati
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -48,7 +48,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+Here's an example of the request.
 <!-- {
   "blockType": "request",
   "name": "delete_remotedesktopsecurityconfiguration"
@@ -60,8 +60,7 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/00af5dfb-85da-4b41-a67
 
 
 ### Response
-The following is an example of the response
->**Note:** The response object shown here might be shortened for readability.
+Here's an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -70,4 +69,3 @@ The following is an example of the response
 ``` http
 HTTP/1.1 204 No Content
 ```
-
