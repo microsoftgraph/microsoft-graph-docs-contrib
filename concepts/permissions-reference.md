@@ -1953,6 +1953,11 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _PlaceDevice.Read.All_ |   Read all workplace devices | Allows the app to read all workplace devices, without a signed-in user. | Yes |
 | _PlaceDevice.ReadWrite.All_ |   Read and write all workplace devices | Allows the app to read and write all workplace devices, without a signed-in user. | Yes |
 
+### Remarks
+
+For an app with delegated permissions to write workplace devices, the signed-in user must be a member of one of the following Azure AD administrator roles: Global Administrator or Exchange Online management roles: TenantPlacesManagement.
+
+
 ---
 
 ## Place device telemetry permissions
