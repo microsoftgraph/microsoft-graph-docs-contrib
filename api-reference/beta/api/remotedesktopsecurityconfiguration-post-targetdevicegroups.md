@@ -1,6 +1,6 @@
 ---
 title: "Create targetDeviceGroup"
-description: "Create a new targetDeviceGroup object ."
+description: "Create a new targetDeviceGroup object for the remoteDesktopSecurityConfiguration object on the servicePrincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new [targetDeviceGroup](../resources/targetdevicegroup.md) object.
+Create a new [targetDeviceGroup](../resources/targetdevicegroup.md) object for the remoteDesktopSecurityConfiguration object on the servicePrincipal.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -58,7 +58,7 @@ If successful, this method returns a `201 Created` response code and a [targetDe
 ## Examples
 
 ### Request
-The following is an example of a request.
+Here's an example of the request.
 <!-- {
   "blockType": "request",
   "name": "create_targetdevicegroup_from_"
@@ -77,7 +77,7 @@ Content-Type: application/json
 
 
 ### Response
-The following is an example of the response
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -92,7 +92,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.targetDeviceGroup",
   "id": "b9e4eae4-b781-45a1-ce65-f2dd8ac3b696",
-  "displayName": "String"
+  "displayName": "Device Group A"
 }
 ```
 
