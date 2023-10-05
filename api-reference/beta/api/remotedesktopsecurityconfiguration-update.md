@@ -1,6 +1,6 @@
 ---
 title: "Update remoteDesktopSecurityConfiguration"
-description: "Update the properties of a remoteDesktopSecurityConfiguration object."
+description: "Update the properties of a remoteDesktopSecurityConfiguration object on a servicePincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) object.
+Update the properties of a [remoteDesktopSecurityConfiguration](../resources/remotedesktopsecurityconfiguration.md) object on a servicePrincipal. This allows to enable or disable RDS Entra ID authentication protocol for RDP to Microsoft Entra joined and Microsoft Entra hybrid joined devices.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -63,12 +63,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-PATCH https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguration
+PATCH https://graph.microsoft.com/beta/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.remoteDesktopSecurityConfiguration",
-  "isRemoteDesktopProtocolEnabled": "Boolean"
+  "isRemoteDesktopProtocolEnabled": "true"
 }
 ```
 
@@ -88,7 +88,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.remoteDesktopSecurityConfiguration",
   "id": "ca738153-c98a-f822-a7d1-5a6e1058462b",
-  "isRemoteDesktopProtocolEnabled": "Boolean"
+  "isRemoteDesktopProtocolEnabled": "true"
 }
 ```
 
