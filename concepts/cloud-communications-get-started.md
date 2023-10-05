@@ -12,7 +12,7 @@ You can use the cloud communications API in Microsoft Graph to build bots to res
 
 ## Prerequisites
 
-Before you get started, it is helpful to familiarize yourself with the following:
+Before you get started, it's helpful to familiarize yourself with the following:
 
 - [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)
 (Azure AD) and how the service helps employees sign in and access resources.
@@ -31,7 +31,7 @@ After you register your bot, if you'd like to [add your bot to Microsoft Teams](
 
 After registering your bot, decide whether you want your audio and video-based media to be [application-hosted or service-hosted](cloud-communications-media.md). At a high level, this involves deciding whether or not you want to access a live-stream of raw media.
 
-Next, you can decide whether it's best for your bot to be [stateful or stateless](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/StateManagement.html).
+Next, you can decide whether your bot should be [stateful or stateless](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/StateManagement.html).
 
 ### Stateless bots
 
@@ -41,16 +41,16 @@ On the other hand, a shared cache, such as REDIS, needs to be accessible to all 
 
 ### Stateful bots
 
-A virtual machine can handle only one bot instance at a time. Because all the states are on one machine, there aren't any extra memory checks or REDIS cache checks.
+A virtual machine can handle only one bot instance at a time. Because all the states are on one machine, there aren't any extra memory or REDIS cache checks.
 
-The drawback is that because the bot instance is just on one machine, it isn't as resilient.
+The drawback is that it isn't as resilient because the bot instance is just on one machine.
 
 > [!NOTE]
-> Service-hosted media bots can be stateful or stateless. Application-hosted media bots must be stateful in order to use the [Bot Media SDK](https://www.nuget.org/packages/Microsoft.Skype.Bots.Media).
+> Service-hosted media bots can be stateful or stateless. Application-hosted media bots must be stateful to use the [Bot Media SDK](https://www.nuget.org/packages/Microsoft.Skype.Bots.Media).
 
 ## Use the SDKs
 
-The following SDKs are available in C#. We will provide support for other languages in the future.
+The following SDKs are available in C#. We'll provide support for other languages in the future.
 
 - If you're using **stateless** bots, install the [Graph Communications Core SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Core).
 - If you're using **stateful** bots, install the [Graph Communications Calling SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls).
@@ -63,7 +63,7 @@ For more examples, see the [Communications samples repository](https://microsoft
 
 ## Privacy and compliance
 
-In the requests to our APIs, sensitive data should not be sent in any client-side generated IDs (such as scenario IDs, request IDs, or other correlation IDs) in headers or the request body. These IDs will be logged on the server side for diagnostics.
+In the requests to our APIs, sensitive data shouldn't be sent in client-side generated IDs (such as scenario IDs, request IDs, or other correlation IDs) in headers or the request body. These IDs are logged on the server side for diagnostics.
 
 ## See also
 
