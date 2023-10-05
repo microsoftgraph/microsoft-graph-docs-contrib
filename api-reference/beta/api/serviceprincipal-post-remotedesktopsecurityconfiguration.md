@@ -1,6 +1,6 @@
 ---
 title: "Create remoteDesktopSecurityConfiguration"
-description: "Create a new remoteDesktopSecurityConfiguration object."
+description: "Create a new remoteDesktopSecurityConfiguration object on the servicePrincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Create a new remoteDesktopSecurityConfiguration object.
+Create a new remoteDesktopSecurityConfiguration object on the servicePrincipal. This configuration is used to enable the new [Remote Desktop Services (RDS) Entra ID authentication protcol](https://learn.microsoft.com/openspecs/windows_protocols/ms-rdpbcgr/dc43f040-d75d-49a9-90c6-0c9999281136) to authenticate a user to [Microsoft Entra joined](https://learn.microsoft.com/azure/active-directory/devices/concept-directory-join) or [Microsoft Entra hybrid joined](https://learn.microsoft.com/azure/active-directory/devices/concept-hybrid-join) devices.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -64,12 +64,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguration
+POST https://graph.microsoft.com/beta/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.remoteDesktopSecurityConfiguration",
-  "isRemoteDesktopProtocolEnabled": "Boolean"
+  "isRemoteDesktopProtocolEnabled": "true"
 }
 ```
 
@@ -90,7 +90,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.remoteDesktopSecurityConfiguration",
   "id": "ca738153-c98a-f822-a7d1-5a6e1058462b",
-  "isRemoteDesktopProtocolEnabled": "Boolean"
+  "isRemoteDesktopProtocolEnabled": "true"
 }
 ```
 
