@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new MicrosoftEntitiesSummariesWithStartDateTimeWithEndDateTimeRequestBuilderGetRequestConfiguration();
 $queryParameters = MicrosoftEntitiesSummariesWithStartDateTimeWithEndDateTimeRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "trafficType  eq 'microsoft365'";
+$queryParameters->filter = "trafficType eq 'microsoft365'";
 $requestConfiguration->queryParameters = $queryParameters;
 
 
