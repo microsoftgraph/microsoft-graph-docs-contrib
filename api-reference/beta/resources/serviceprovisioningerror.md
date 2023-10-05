@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an abstract base type for service provisioning errors which are information published by a federated service describing a non-transient, service-specific error for the [user](user.md), [group](group.md), or [organizational contact](orgcontact.md) entities regarding the properties or link from an object that requires an explicit administrator action to resolve.
+An abstract base type that represents information published by a federated service that describes a non-transient, service-specific error for the [user](user.md), [group](group.md), or [organizational contact](orgcontact.md)  that requires an explicit administrator action to resolve.
 
 Base type of [serviceProvisioningXmlError](../resources/serviceprovisioningxmlerror.md).
 
@@ -23,7 +23,7 @@ Base type of [serviceProvisioningXmlError](../resources/serviceprovisioningxmler
 | :-------------- | :------------- | :--------------------------------------------------------------------------------------------------- |
 | createdDateTime | DateTimeOffset | The date and time at which the error occurred.                                                       |
 | isResolved      | Boolean        | Indicates whether the Error has been attended to.                                                    |
-| serviceInstance | String         | Qualified service instance (e.g., "SharePoint/Dublin") that published the service error information. |
+| serviceInstance | String         | Qualified service instance (for example, "SharePoint/Dublin") that published the service error information. |
 
 ## JSON representation
 
