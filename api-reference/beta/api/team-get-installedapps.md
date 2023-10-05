@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the [app](../resources/teamsappinstallation.md) installed in the specified [team](../resources/team.md).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
