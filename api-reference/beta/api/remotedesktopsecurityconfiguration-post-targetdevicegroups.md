@@ -1,6 +1,6 @@
 ---
 title: "Create targetDeviceGroup"
-description: "Create a new targetDeviceGroup object."
+description: "Create a new targetDeviceGroup object ."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -46,8 +46,8 @@ You can specify the following properties when creating a **targetDeviceGroup**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Object ID of the group in the directory.|
-|displayName|String|Display name of the group.|
+|id|String|Object ID of the group in the directory. Required.|
+|displayName|String|Display name of the group. Required.|
 
 
 
@@ -65,13 +65,13 @@ The following is an example of a request.
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/remoteDesktopSecurityConfiguration/targetDeviceGroups
+POST https://graph.microsoft.com/beta/servicePrincipals/00af5dfb-85da-4b41-a677-0c6b86dd34f8/remoteDesktopSecurityConfiguration/targetDeviceGroups
 Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.targetDeviceGroup",
   "id": "b9e4eae4-b781-45a1-ce65-f2dd8ac3b696",
-  "displayName": "String"
+  "displayName": "Device Group A"
 }
 ```
 
