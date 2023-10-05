@@ -10,7 +10,11 @@ const options = {
 
 const client = Client.init(options);
 
+const extensionProperty = {
+
+};
+
 await client.api('/directoryObjects/getAvailableExtensionProperties')
-	.post();
+	.post(extensionProperty);
 
 ```
