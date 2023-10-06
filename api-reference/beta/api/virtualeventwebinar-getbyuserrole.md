@@ -1,19 +1,19 @@
 ---
 title: "virtualEventWebinar: getByUserIdAndRole"
-description: "List all webinars where the specified user is the organizer/co-organizer"
+description: "List all webinars where I am the organizer/co-organizer"
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# virtualEventWebinar: getByUserIdAndRole
+# virtualEventWebinar: getByUserRole
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Function to get a [virtualEventWebinar](../resources/virtualeventwebinar.md) collection where the specified user is the organizer or a co-organizer.
+Function to get a [virtualEventWebinar](../resources/virtualeventwebinar.md) collection where I am the organizer or a co-organizer.
 
 ## Permissions
 
@@ -21,13 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Not supported.|
+|Delegated (work or school account)|VirtualEvent.Read|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|VirtualEvent.Read.All|
-
-> [!IMPORTANT]
->
-> To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and assign it to a the organizer/coorganizer of the webinar. The list of results will only contain webinars of which the organizer/co-organizer has been assigned an valid application access policy.
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -36,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /solutions/virtualEvents/webinars/getByUserIdAndRole(userId='{userId}', role='{role}')
+GET /solutions/virtualEvents/webinars/getByUserRole(role={role})
 ```
 
 ## Function parameters
@@ -45,8 +41,7 @@ In the request URL, provide the following query parameters with values. The foll
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userId|String|The ID of the specified user in Azure Active Directory.|
-|role|String|User role of the specified user in the webinar. Possible values are: `organizer`, `coOrganizer`.|
+|role|String|My user role in the webinar. Possible values are: `organizer`, `coOrganizer`.|
 
 ## Request headers
 
@@ -65,14 +60,15 @@ If successful, this function returns a `200 OK` response code and a [virtualEven
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "virtualeventwebinarthis.getbyuseridandrole"
+  "name": "virtualeventwebinarthis.getbyuserrole"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/getByUserIdAndRole(userId='b7ef013a-c73c-4ec7-8ccb-e56290f45f68', role='organizer')
+GET https://graph.microsoft.com/beta/me/virtualEvents/webinars/getByUserRole(role='organizer')
 ```
 
 ### Response

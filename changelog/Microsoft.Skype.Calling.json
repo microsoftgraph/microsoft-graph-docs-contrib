@@ -7,7 +7,15 @@
           "ApiChange": "Method",
           "ChangedApiName": "getByUserIdAndRole",
           "ChangeType": "Addition",
-          "Description": "Added the [getByUserIdAndRole](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-getbyuseridandrole?view=graph-rest-beta) function to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) resource type.",
+          "Description": "Added the [getByUserIdAndRole](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-getbyuseridandrole?view=graph-rest-beta) function to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "2b4cd7a5-2095-4ca3-80b0-da96df6c7e90",
+          "ApiChange": "Method",
+          "ChangedApiName": "getByUserRole",
+          "ChangeType": "Addition",
+          "Description": "Added the [getByUserRole](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-getbyuserrole?view=graph-rest-beta) function to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinar?view=graph-rest-betaa&preserve-view=true) resource.",
           "Target": "virtualEventWebinar"
         }
       ],
