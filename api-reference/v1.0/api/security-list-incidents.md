@@ -17,6 +17,8 @@ Attacks are typically inflicted on different types of entities, such as devices,
 
 This operation allows you to filter and sort through incidents to create an informed cyber security response. It exposes a collection of incidents that were flagged in your network, within the time range you specified in your environment retention policy. The most recent incidents are displayed at the top of the list.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -305,9 +307,15 @@ Content-Type: application/json
                         "rbacGroupName": "UnassignedGroup",
                         "onboardingStatus": "onboarded",
                         "defenderAvStatus": "unknown",
+                        "ipInterfaces": [
+                            "1.1.1.1"
+                        ],
                         "loggedOnUsers": [],
                         "roles": [
                             "compromised"
+                        ],
+                        "detailedRoles": [
+                          "Main device"
                         ],
                         "tags": [
                             "Test Machine"
@@ -328,6 +336,9 @@ Content-Type: application/json
                         "detectionStatus": "detected",
                         "mdeDeviceId": "73e7e2de709dff64ef64b1d0c30e67fab63279db",
                         "roles": [],
+                        "detailedRoles": [
+                          "Referred in command line",
+                        ],
                         "tags": [],
                         "fileDetails": {
                             "sha1": "5f1e8acedc065031aad553b710838eb366cfee9a",
@@ -354,6 +365,7 @@ Content-Type: application/json
                         "detectionStatus": "detected",
                         "mdeDeviceId": "73e7e2de709dff64ef64b1d0c30e67fab63279db",
                         "roles": [],
+                        "detailedRoles": [],
                         "tags": [],
                         "imageFile": {
                             "sha1": "5f1e8acedc065031aad553b710838eb366cfee9a",
@@ -392,6 +404,7 @@ Content-Type: application/json
                         "registryKey": "SYSTEM\\CONTROLSET001\\CONTROL\\WMI\\AUTOLOGGER\\SENSEAUDITLOGGER",
                         "registryHive": "HKEY_LOCAL_MACHINE",
                         "roles": [],
+                        "detailedRoles": [],
                         "tags": [],
                     }
                 ]

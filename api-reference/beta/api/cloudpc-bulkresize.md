@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: bulkResize"
-description: "Bulk resize a set of Cloud PC devices."
+description: "Bulk resizes a set of Cloud PC devices."
 author: "Aria Zhang (yuzhang3)"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Perform a bulk resize action to resize a group of [cloudPCs](../resources/cloudpc.md) that have successfully passed [validation](cloudpc-validatebulkresize.md). If any devices cannot be resized, those devices will indicate "resize failed". The remaining devices will be `provisioned` for the resize process.
+Perform a bulk resize action to resize a group of [cloudPCs](../resources/cloudpc.md) that have successfully passed [validation](cloudpc-validatebulkresize.md). If any devices can't be resized, those devices indicate "resize failed". The remaining devices are `provisioned` for the resize process.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -62,7 +64,7 @@ If successful, this method returns a `200 OK` response code and the requested [c
 
 ### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -85,6 +87,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcbulkresize-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcbulkresize-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -115,7 +121,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

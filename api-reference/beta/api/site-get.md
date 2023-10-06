@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Retrieve properties and relationships for a site resource."
 title: Get a SharePoint Site
 ms.localizationpriority: medium
@@ -27,7 +27,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Sites.Read.All, Sites.ReadWrite.All |
 
-## Get the tenant's root site
+## HTTP request
+
+### Get the tenant's root site
 
 To access the root SharePoint site within a tenant:
 
@@ -38,7 +40,7 @@ GET /sites/root
 GET /sites/contoso.sharepoint.com
 ```
 
-## Access a site by server-relative URL
+### Access a site by server-relative URL
 
 If you have the server-relative URL for a **site** resource, you can construct a request as follows:
 
@@ -46,7 +48,7 @@ If you have the server-relative URL for a **site** resource, you can construct a
 GET /sites/{hostname}:/{server-relative-path}
 ```
 
-## Access a group team site
+### Access a group team site
 
 To access the team site for a group:
 
@@ -68,6 +70,10 @@ GET /sites/{site-id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-site-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-site-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

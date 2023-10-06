@@ -6,17 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
-$graphServiceClient = new GraphServiceClient($requestAdapter);
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new CrossTenantAccessSettings();
-$requestBody->set@odatatype('#microsoft.graph.networkaccess.crossTenantAccessSettings');
-
+$requestBody->setOdataType('#microsoft.graph.networkaccess.crossTenantAccessSettings');
 $requestBody->setNetworkPacketTaggingStatus(new Status('enabled'));
 
-
-
-$result = $graphServiceClient->networkAccess()->settings()->crossTenantAccess()->patch($requestBody);
-
+$result = $graphServiceClient->networkAccess()->settings()->crossTenantAccess()->patch($requestBody)->wait();
 
 ```

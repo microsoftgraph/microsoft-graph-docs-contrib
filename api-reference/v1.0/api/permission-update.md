@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Change sharing permissions
 ms.localizationpriority: medium
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Update the properties of a sharing permission by patching the permission resource.
 
 Only the **roles** property can be modified this way.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

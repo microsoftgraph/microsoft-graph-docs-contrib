@@ -17,6 +17,8 @@ Read the properties and relationships of a [userFlowLanguageConfiguration](../re
 
 **Note:** To retrieve a language supported for customization, you must first enable language customization on your Azure AD B2C user flow. For more information, see [Update b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md). Language customization is enabled by default in [Azure Active Directory user flows](../resources/b2xidentityuserflow.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -79,6 +81,10 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/langua
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-userflowlanguageconfiguration-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-userflowlanguageconfiguration-3-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -32,11 +32,10 @@ An app role assignment where the assigned principal is a service principal is an
 |[Grant an appRole to a user](../api/user-post-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md)|Create a new [appRoleAssignment](../resources/approleassignment.md) object.|
 |[Grant an appRole to a service principal](../api/serviceprincipal-post-approleassignments.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Create a new [appRoleAssignment](../resources/approleassignment.md) object.|
 |[Grant a user, group, or client service principal an appRoleAssignment for a resource service principal](../api/serviceprincipal-post-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Create a new [appRoleAssignment](../resources/approleassignment.md) object.
-|[List appRoleAssignments granted to users, groups, and client service principals for a resource service principal](../api/serviceprincipal-list-approleassignedto.md)|[appRoleAssignment](../resources/approleassignment.md) collection|Get a list of the [appRoleAssignment](../resources/approleassignment.md) objects and their properties.|
 |[Get appRoleAssignment](../api/approleassignment-get.md)|[appRoleAssignment](../resources/approleassignment.md)|Get a new [appRoleAssignment](../resources/approleassignment.md) object.|
-|[Dlete an appRoleAssignment from a group](../api/group-delete-approleassignments.md)|None|Delete an [appRoleAssignment](../resources/approleassignment.md) object.|
+|[Delete an appRoleAssignment from a group](../api/group-delete-approleassignments.md)|None|Delete an [appRoleAssignment](../resources/approleassignment.md) object.|
 |[Delete an appRoleAssignment from a user](../api/user-delete-approleassignments.md)|None|Delete an [appRoleAssignment](../resources/approleassignment.md) object.|
-|[Delete an appRoleAssignment from a service principal](../api/user-delete-approleassignments.md)|None|Delete an [appRoleAssignment](../resources/approleassignment.md) object.|
+|[Delete an appRoleAssignment from a service principal](../api/serviceprincipal-delete-approleassignments.md)|None|Delete an [appRoleAssignment](../resources/approleassignment.md) object.|
 |[Delete an appRoleAssignment granted to a user, group, or client service principal for a resource service principal](../api/serviceprincipal-delete-approleassignedto.md)|None|Delete an [appRoleAssignment](../resources/approleassignment.md) object.|
 
 ## Properties

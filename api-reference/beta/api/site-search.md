@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Search across a SharePoint tenant for sites that match keywords provided."
 ms.date: 09/10/2017
 title: Find SharePoint sites by keyword
@@ -18,6 +18,8 @@ Search across a SharePoint tenant for [sites][] that match keywords provided.
 The only property that works for sorting is **createdDateTime**. The search filter is a free text search that uses multiple properties when retrieving the search results.
 
 [sites]: ../resources/site.md
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -67,6 +69,10 @@ GET https://graph.microsoft.com/beta/sites?search={query}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-permission-that-match-query-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-permission-that-match-query-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

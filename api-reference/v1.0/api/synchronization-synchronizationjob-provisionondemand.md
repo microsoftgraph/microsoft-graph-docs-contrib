@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Select a user and provision the account on-demand. The rate limit for this API is 5 requests per 10 seconds. 
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -119,7 +121,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.
@@ -298,7 +299,6 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 >**Note:** The response object shown here might be shortened for readability.

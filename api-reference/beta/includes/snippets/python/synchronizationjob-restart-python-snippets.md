@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = RestartPostRequestBody()
-criteria = SynchronizationJobRestartCriteria()
-criteria.resetscope(SynchronizationJobRestartScope.Watermark, Escrows, QuarantineState('synchronizationjobrestartscope.watermark, escrows, quarantinestate'))
+graph_client = GraphServiceClient(request_adapter)
 
-
-request_body.criteria = criteria
-
+request_body = RestartPostRequestBody(
+	criteria = SynchronizationJobRestartCriteria(
+		reset_scope = SynchronizationJobRestartScope.Watermark | SynchronizationJobRestartScope.Escrows | SynchronizationJobRestartScope.QuarantineState,
+	),
+)
 
 request_configuration = RestartRequestBuilder.RestartRequestBuilderPostRequestConfiguration(
 headers = {
@@ -22,8 +21,7 @@ headers = {
 
 )
 
-
-await client.service_principals.by_service_principal_id('servicePrincipal-id').synchronization.jobs.by_job_id('synchronizationJob-id').restart.post(request_body = request_body, request_configuration = request_configuration)
+await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').synchronization.jobs.by_job_id('synchronizationJob-id').restart.post(body = request_body, request_configuration = request_configuration)
 
 
 ```

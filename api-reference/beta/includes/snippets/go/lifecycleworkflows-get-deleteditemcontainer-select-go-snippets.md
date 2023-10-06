@@ -22,7 +22,7 @@ configuration := &graphidentitygovernance.IdentityGovernanceLifecycleWorkflowsDe
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().LifecycleWorkflows().DeletedItems().Workflows().ByWorkflowId("workflow-id").Get(context.Background(), configuration)
+workflows, err := graphClient.IdentityGovernance().LifecycleWorkflows().DeletedItems().Workflows().ByWorkflowId("workflow-id").Get(context.Background(), configuration)
 
 
 ```

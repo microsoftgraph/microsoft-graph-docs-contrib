@@ -2,7 +2,7 @@
 title: "List signIns"
 description: "Describes the list method of the signIn resource (entity) from the Microsoft Graph API."
 ms.localizationpriority: medium
-author: "besiler"
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
@@ -17,6 +17,8 @@ The maximum and default page size is 1,000 objects and by default, the most rece
 
 [!INCLUDE [GDPR-related-guidance](../../includes/gdpr-msgraph-export-note.md)]
 
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -45,12 +47,12 @@ In addition to the delegated permissions, the signed-in user needs to belong to 
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET auditLogs/signIns
+GET /auditLogs/signIns
 ```
 
 ## Optional query parameters
 
-This method supports the `$top`, `$skiptoken`, and `$filter` OData Query Parameters to help customize the response. For details about how to use these parameters, see [OData query parameters](/graph/query-parameters).
+This method supports the `$top`, `$skiptoken`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Response
 
@@ -62,7 +64,7 @@ If successful, this method returns a `200 OK` response code and collection of [s
 
 #### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -110,7 +112,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 
 #### Response
 
-Here is an example of the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -196,7 +198,7 @@ Content-type: application/json
 
 #### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -213,7 +215,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDi
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/list-signins-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -244,7 +246,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns?&$filter=startsWith(appDi
 
 #### Response
 
-Here is an example of the response. The response includes a `@odata.nextLink` property which contains a URL that can be used to retrieve the next 10 results.
+Here's an example of the response. The response includes a `@odata.nextLink` property that contains a URL that can be used to retrieve the next 10 results.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {

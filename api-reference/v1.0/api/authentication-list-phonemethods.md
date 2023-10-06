@@ -2,7 +2,7 @@
 title: "List phoneMethods"
 description: "Retrieve a list of phone authentication method objects for a user."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "luc-msft"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -12,6 +12,8 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 Retrieve a list of [phone authentication method](../resources/phoneauthenticationmethod.md) objects for a user. This will return up to three objects, as a user can have up to three phones usable for authentication. This method is available only for standard Azure AD and B2B users, but not B2C users.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

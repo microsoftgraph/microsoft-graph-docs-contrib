@@ -2,7 +2,7 @@
 title: "List credentialUserRegistrationDetails"
 description: "Get a list of credentialUserRegistrationDetails objects for a given tenant."
 ms.localizationpriority: medium
-author: "besiler"
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
 doc_type: "apiPageType"
 ---
@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 > The credential user registration details API is deprecated and will stop returning data on June 30, 2024. Use the [User registration details](../resources/userregistrationdetails.md) API instead.
 
 Get a list of [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) objects for a given tenant.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -85,6 +87,10 @@ GET https://graph.microsoft.com/beta/reports/credentialUserRegistrationDetails
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-credentialuserregistrationdetails-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-credentialuserregistrationdetails-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

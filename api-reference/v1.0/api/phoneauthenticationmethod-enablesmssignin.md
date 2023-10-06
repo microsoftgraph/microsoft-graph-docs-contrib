@@ -2,7 +2,7 @@
 title: "phoneAuthenticationMethod: enableSmsSignIn"
 description: "Enable SMS sign-in for a mobile phone number registered to a user."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "luc-msft"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -16,6 +16,8 @@ Enable SMS sign-in for an existing `mobile` phone number registered to a user. T
 * The phone must have `"phoneType": "mobile"`.
 * The phone must be unique in the SMS sign-in system (no one else can also be using that number).
 * The user must be enabled for SMS sign-in in the [authentication methods](/azure/active-directory/authentication/concept-authentication-methods) policy.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

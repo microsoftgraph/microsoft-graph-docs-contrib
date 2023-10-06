@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a list of [claimsMappingPolicy](../resources/claimsmappingpolicy.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 
 > [!IMPORTANT]
-> This method has a [known permissions issue](/graph/known-issues#claims-mapping-policy) and may require consent to both permissions.
+> This method has a [known permissions issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=13678) and may require consent to both permissions.
 
 ## HTTP request
 

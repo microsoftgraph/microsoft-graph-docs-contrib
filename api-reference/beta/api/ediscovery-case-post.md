@@ -18,6 +18,8 @@ Create a new [case](../resources/ediscovery-case.md) object.
 >[!NOTE]
 >Starting in September 2021, this API will create a large case type. To learn more about large cases, see [Use the new case format in eDiscovery](/microsoft-365/compliance/advanced-ediscovery-new-case-format). For details, see the [Changes to the Microsoft 365 advanced eDiscovery create case API](https://devblogs.microsoft.com/microsoft365dev/changes-to-the-microsoft-365-advanced-ediscovery-create-case-api-beta/) blog post.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -77,6 +79,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-case-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-case-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

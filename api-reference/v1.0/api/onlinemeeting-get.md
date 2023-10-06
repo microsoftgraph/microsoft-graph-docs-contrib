@@ -16,9 +16,15 @@ Retrieve the properties and relationships of an [onlineMeeting](../resources/onl
 For example, you can:
 
 - Get details of an online meeting using [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id),  [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl), or [joinMeetingId](#example-4-retrieve-an-online-meeting-by-joinmeetingid).
-- Use the `/attendeeReport` path to get the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link, as shown in [example 5](#example-5-fetch-attendee-report-of-a-teams-live-event).
+- Use the `/attendeeReport` path to get the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link. **(deprecated)**
 
-Teams live event attendee report is an online meeting artifact. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
+Teams live event attendee report **(deprecated)** is an online meeting artifact. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
+
+> [!CAUTION]
+> 
+> The online meeting APIs that support Microsoft Teams live events stopped returning data on September 30, 2024. For details about the removal of these APIs and upcoming new APIs to replace them, see the [Deprecation of Teams live events API on Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-teams-live-events-api-on-microsoft-graph/) blog post.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -66,7 +72,7 @@ GET /me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{join
 GET /users/{userId}/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'
 ```
 
-To get the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) with delegated (`/me`) and app (`/users/{userId}`) permission:
+To get the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) with delegated (`/me`) and app (`/users/{userId}`) permission: **(deprecated)**
 <!-- { "blockType": "ignored" }-->
 
 ```http
@@ -75,12 +81,12 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 ```
 
 > [!NOTE]
-> - `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
-> - `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
+> - **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+> - **meetingId** is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 > - **videoTeleconferenceId** is generated for Cloud-Video-Interop licensed users and can be found in an [onlineMeeting](../resources/onlinemeeting.md) object. For details, see [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up).
 > - \* This scenario only supports application token and doesn't support application access policy.
-> - `joinWebUrl` must be URL encoded.
->- `joinMeetingId` is the meeting ID to be used to join a meeting.
+> - **joinWebUrl** must be URL encoded.
+>- **joinMeetingId** is the meeting ID to be used to join a meeting.
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -102,7 +108,7 @@ If successful, this method returns a `200 OK` response code. The response also i
 
 - If you fetch an online meeting by meeting ID, this method returns an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 - If you fetch an online meeting by **videoTeleconferenceId** or **joinWebUrl**, this method returns a collection that contains only one [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
-- If you fetch the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events), this method returns a `Location` header that indicates the URI to the attendee report.
+- If you fetch the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events), this method returns a `Location` header that indicates the URI to the attendee report. **(deprecated)**
 
 > [!NOTE]
 >- **joinMeetingIdSettings** might not be generated for some prescheduled meetings if the meeting was created before this feature was supported.
@@ -583,7 +589,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 5: Fetch attendee report of a Teams live event
+### Example 5: Fetch attendee report of a Teams live event (deprecated)
 
 The following example shows a request to download an attendee report.
 

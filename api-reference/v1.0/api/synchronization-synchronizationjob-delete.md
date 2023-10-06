@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Stop the synchronization job, and permanently delete all the state associated with it. Synchronized accounts are left as-is.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -91,7 +93,6 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/j
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ##### Response
 The following is an example of the response. 

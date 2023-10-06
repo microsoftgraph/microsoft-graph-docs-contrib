@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get all the [educationAssignmentResource](../resources/educationassignmentresource.md) objects associated with an [assignment](../resources/educationassignment.md). Only teachers, students, and applications with application permissions can perform this operation.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -30,7 +32,7 @@ GET /education/classes/{id}/assignments/{id}/resources
 
 ## Optional query parameters
 
-This method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData query parameters to help customize the response.
+This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData query parameters to help customize the response.
 For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers

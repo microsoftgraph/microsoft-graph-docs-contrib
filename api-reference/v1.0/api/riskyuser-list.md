@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get a list of the [riskyUser](../resources/riskyuser.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -20,6 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | IdentityRiskyUser.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | IdentityRiskyUser.Read.All |
+
+[!INCLUDE [rbac-identity-protection-apis-read](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
 
 ## HTTP request
 

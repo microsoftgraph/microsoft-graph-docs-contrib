@@ -1,7 +1,7 @@
 ---
 title: "List audio routing groups"
 description: "Retrieve a list of audioRoutingGroup objects."
-author: "rahulva-msft"
+author: "hanknguyen"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -11,9 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Retrieve a list of **audioRoutingGroup** objects.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -63,6 +63,10 @@ GET https://graph.microsoft.com/beta/communications/calls/{id}/audioRoutingGroup
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-audioroutinggroups-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-audioroutinggroups-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -138,5 +142,3 @@ Content-Length: 302
   ]
 }
 -->
-
-

@@ -2,7 +2,7 @@
 title: "Assign publishedResource to onPremisesAgentGroup"
 description: "Assign a **publishedResource** object to an **onPremisesAgentGroup** object."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinrshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Assign a [publishedResource](../resources/publishedresource.md) object to [onPremisesAgentGroup](../resources/onpremisesagentgroup.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}/agentGroups/$ref
+POST /onPremisesPublishingProfiles/{profile-id}/publishedResources/{resource-id}/agentGroups/$ref
 ```
 
 ## Request headers

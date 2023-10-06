@@ -1,7 +1,7 @@
 ---
 title: "Delete emailAuthenticationMethod"
 description: "Deletes a user's emailAuthenticationMethod object."
-author: "mmcla"
+author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -11,6 +11,8 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 Deletes a user's [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

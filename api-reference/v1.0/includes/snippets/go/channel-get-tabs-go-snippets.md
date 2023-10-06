@@ -22,7 +22,7 @@ configuration := &graphteams.TeamItemChannelItemTabItemRequestBuilderGetRequestC
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Tabs().ByTabId("teamsTab-id").Get(context.Background(), configuration)
+tabs, err := graphClient.Teams().ByTeamId("team-id").Channels().ByChannelId("channel-id").Tabs().ByTeamsTabId("teamsTab-id").Get(context.Background(), configuration)
 
 
 ```

@@ -14,6 +14,8 @@ Namespace: microsoft.graph.networkaccess
 
 Retrieve information about a specific link between a forwarding policy and a forwarding profile.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -68,6 +70,10 @@ GET https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/{profileId
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-forwardingpolicylink-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-forwardingpolicylink-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-forwardingpolicylink-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -89,7 +95,6 @@ GET https://graph.microsoft.com/beta/networkAccess/forwardingProfiles/{profileId
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of the response.

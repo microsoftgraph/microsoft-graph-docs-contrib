@@ -31,6 +31,7 @@ var requestBody = new DelegatedAdminRelationship
 			},
 		},
 	},
+	AutoExtendDuration = TimeSpan.Parse("P180D"),
 };
 var result = await graphClient.TenantRelationships.DelegatedAdminRelationships.PostAsync(requestBody);
 

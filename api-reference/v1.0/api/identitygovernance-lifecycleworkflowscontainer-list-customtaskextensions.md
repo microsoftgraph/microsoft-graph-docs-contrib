@@ -13,6 +13,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a list of the [customTaskExtension](../resources/identitygovernance-customtaskextension.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -37,7 +39,7 @@ GET /identityGovernance/lifecycleWorkflows/customTaskExtensions
 
 ## Optional query parameters
 
-This method supports the `$select` `$search`, `$orderBy`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` `$search`, `$orderby`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 

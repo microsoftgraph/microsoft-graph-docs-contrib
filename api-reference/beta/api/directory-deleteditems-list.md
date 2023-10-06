@@ -17,6 +17,8 @@ Retrieve a list of recently deleted directory objects. Currently, deleted items 
 
 >**Note:** Deleted security groups are deleted permanently and can't be retrieved through this API.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 The following table shows the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -45,27 +47,27 @@ The OData cast type is a required part of the URI and calling `GET /directory/de
 
 ## Optional query parameters
 
-This method supports the query parameters that are supported by the resource that is specified by the OData cast. That is, `$count`, `$expand`, `$filter`, `$orderBy`, `$search`, `$select`, and `$top` query parameters. This API returns 100 objects by default and supports returning up to 999 objects per page using `$top`. 
+This method supports the query parameters that are supported by the resource that is specified by the OData cast. That is, `$count`, `$expand`, `$filter`, `$orderby`, `$search`, `$select`, and `$top` query parameters. This API returns 100 objects by default and supports returning up to 999 objects per page using `$top`. 
 
 Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For example:
 
 ```msgraph-interactive
-https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?&$count=true&$orderBy=deletedDateTime desc&$select=id,displayName,deletedDateTime
+https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?&$count=true&$orderby=deletedDateTime desc&$select=id,displayName,deletedDateTime
 ConsistencyLevel: eventual
 ```
 
-This example requires the **ConsistencyLevel** header because the `$orderBy` and `$count` query parameters are used in the query.
+This example requires the **ConsistencyLevel** header because the `$orderby` and `$count` query parameters are used in the query.
 
-### Examples using the $orderBy OData query parameter
+### Examples using the $orderby OData query parameter
 
-The `$orderBy` OData query parameter is supported on the **deletedDateTime**, **displayName**, and **userPrincipalName** properties of the deleted object types. On the **deletedDateTime** property, the query requires adding the [advanced query parameters](/graph/aad-advanced-queries) (**ConsistencyLevel** header set to `true` and `$count=true` query string).
+The `$orderby` OData query parameter is supported on the **deletedDateTime**, **displayName**, and **userPrincipalName** properties of the deleted object types. On the **deletedDateTime** property, the query requires adding the [advanced query parameters](/graph/aad-advanced-queries) (**ConsistencyLevel** header set to `true` and `$count=true` query string).
 
-| OData cast | Properties supporting $orderBy | Example |
+| OData cast | Properties supporting $orderby | Example |
 | :--- | :--- | :--- |
-| microsoft.graph.user | deletedDateTime, displayName, userPrincipalName | /directory/deletedItems/microsoft.graph.user?$orderBy=userPrincipalName |
-| microsoft.graph.group | deletedDateTime, displayName | /directory/deletedItems/microsoft.graph.group?$orderBy=deletedDateTime asc&$count=true |
-| microsoft.graph.application | deletedDateTime, displayName | /directory/deletedItems/microsoft.graph.application?$orderBy=displayName |
-| microsoft.graph.device | deletedDateTime, displayName | /directory/deletedItems/microsoft.graph.device?$orderBy=deletedDateTime&$count=true |
+| microsoft.graph.user | deletedDateTime, displayName, userPrincipalName | /directory/deletedItems/microsoft.graph.user?$orderby=userPrincipalName |
+| microsoft.graph.group | deletedDateTime, displayName | /directory/deletedItems/microsoft.graph.group?$orderby=deletedDateTime asc&$count=true |
+| microsoft.graph.application | deletedDateTime, displayName | /directory/deletedItems/microsoft.graph.application?$orderby=displayName |
+| microsoft.graph.device | deletedDateTime, displayName | /directory/deletedItems/microsoft.graph.device?$orderby=deletedDateTime&$count=true |
 
 ## Request headers
 | Name      |Description|
@@ -96,6 +98,10 @@ GET https://graph.microsoft.com/beta/directory/deleteditems/microsoft.graph.grou
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-directory-deleteditems-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-directory-deleteditems-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -164,12 +170,16 @@ Content-type: application/json
   "name": "list_directory_deleteditems_count"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?$count=true&$orderBy=deletedDateTime asc&$select=id,displayName,deletedDateTime
+GET https://graph.microsoft.com/beta/directory/deletedItems/microsoft.graph.group?$count=true&$orderby=deletedDateTime asc&$select=id,displayName,deletedDateTime
 ConsistencyLevel: eventual
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-directory-deleteditems-count-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-directory-deleteditems-count-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

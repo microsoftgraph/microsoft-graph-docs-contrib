@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [printer](../resources/printer.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -36,7 +38,7 @@ GET /print/shares/{id}/printer
 ## Optional query parameters
 This method supports some of the OData query parameters including $select, $expand to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-e.g. 
+for example 
 ```http
 GET /print/printers/{id}?$select=id,displayName,capabilities
 ```
@@ -46,14 +48,14 @@ GET /print/printers/{id}?$select=id,displayName,capabilities
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a [printer](../resources/printer.md) object in the response body.
-By default, the response will not contain [printerCapabilities](../resources/printerCapabilities.md). To get **printerCapabilities**, use the `$select` query parameter. 
+By default, the response won't contain [printerCapabilities](../resources/printerCapabilities.md). To get **printerCapabilities**, use the `$select` query parameter. 
 
 ## Example
 ### Request
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -66,6 +68,10 @@ GET https://graph.microsoft.com/beta/print/printers/{id}
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printer-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-printer-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -95,7 +101,7 @@ GET https://graph.microsoft.com/beta/print/printers/{id}
 ---
 
 ### Response
-The following is an example of the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -174,7 +180,7 @@ Content-type: application/json
 }
 ```
 
-The following is an example of the response, when using $select=id,displayName,capabilities
+Here's an example of the response, when using $select=id,displayName,capabilities
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

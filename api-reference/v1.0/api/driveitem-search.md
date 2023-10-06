@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 07/07/2020
 title: Search for files
 ms.localizationpriority: high
@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All    |
-|Delegated (personal Microsoft account) | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All    |
-|Application | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
+|Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
+|Delegated (personal Microsoft account) | Sites.Read.All, Sites.ReadWrite.All     |
+|Application | Sites.Read.All, Sites.ReadWrite.All |
 
 >**Note:** This method does not support the Sites.Selected application permission.
 
@@ -173,7 +173,7 @@ GET /me/drive/search(q='Contoso Project')
 ### Response
 
 Responses when searching from the **drive** resource may include items outside of the drive (items shared with the current user).
-These items will include the [**remoteItem**](../resources/remoteitem.md) facet to indicate they are stored outside of the target drive. 
+These items will include the [**remoteItem**](../resources/remoteitem.md) facet to indicate they are stored outside of the target drive.
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 

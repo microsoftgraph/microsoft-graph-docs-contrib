@@ -1,7 +1,7 @@
 ---
 title: "List licenseDetails"
 description: "Retrieve a list of licenseDetails objects."
-author: "jconley76"
+author: "frank-masuelli"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [licenseDetails](../resources/licensedetails.md) objects for enterprise users. This API returns details for licenses that are directly assigned and those transitively assigned through memberships in licensed groups.
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

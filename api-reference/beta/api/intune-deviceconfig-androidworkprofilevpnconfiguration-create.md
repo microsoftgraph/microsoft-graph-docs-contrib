@@ -75,6 +75,7 @@ The following table shows the properties that are required when you create the a
 |alwaysOn|Boolean|Whether or not to enable always-on VPN connection.|
 |alwaysOnLockdown|Boolean|If always-on VPN connection is enabled, whether or not to lock network traffic when that VPN is disconnected.|
 |microsoftTunnelSiteId|String|Microsoft Tunnel site ID.|
+|proxyExclusionList|String collection|List of hosts to exclude using the proxy on connections for. These hosts can use wildcards such as *.example.com.|
 
 
 
@@ -88,7 +89,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2422
+Content-length: 2489
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileVpnConfiguration",
@@ -168,7 +169,10 @@ Content-length: 2422
   ],
   "alwaysOn": true,
   "alwaysOnLockdown": true,
-  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
+  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
+  "proxyExclusionList": [
+    "Proxy Exclusion List value"
+  ]
 }
 ```
 
@@ -177,7 +181,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2594
+Content-Length: 2661
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileVpnConfiguration",
@@ -260,6 +264,9 @@ Content-Length: 2594
   ],
   "alwaysOn": true,
   "alwaysOnLockdown": true,
-  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
+  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
+  "proxyExclusionList": [
+    "Proxy Exclusion List value"
+  ]
 }
 ```

@@ -4,7 +4,7 @@ description: "In the Azure AD access reviews feature, the program control type i
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "markwahl-msft"
+author: "shubhamguptacal"
 ---
 
 # programControlType resource type (deprecated)
@@ -22,12 +22,12 @@ The program control type objects are automatically generated when the global adm
 
 ## Methods
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
 |[List programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) collection| List program control types. |
 
 ## Properties
-| Property	   | Type	|Description|
+| Property       | Type    |Description|
 |:---------------|:--------|:----------|
 | id                     |String                | The feature-assigned identifier of the program control type                                      |
 | displayName            |String                | The name of the program control type                                                             |
@@ -40,9 +40,9 @@ None.
 
 ## See also
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[Create programControl](../api/programcontrol-create.md) |		[programControl](programcontrol.md)	|	Add a programControl to a program.|
+|[Create programControl](../api/programcontrol-create.md) |        [programControl](programcontrol.md)    |    Add a programControl to a program.|
 
 
 ## JSON representation

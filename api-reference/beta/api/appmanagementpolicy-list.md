@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [appManagementPolicy](../resources/appManagementPolicy.md) objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,6 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 | Delegated (personal Microsoft account) | Not supported.                                             |
 | Application                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+
 
 ## Optional query parameters
 
@@ -70,6 +73,10 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-appmanagementpolicies-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-appmanagementpolicies-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -129,7 +136,7 @@ Content-type: application/json
                },
                {
                   "restrictionType": "passwordLifetime",
-                  "maxLifetime": "P4DT12H30M5S",
+                  "maxLifetime": "P90D",
                   "restrictForAppsCreatedAfterDateTime": "2017-10-19T10:37:00Z"
                },
                {
@@ -139,7 +146,7 @@ Content-type: application/json
                },
                {
                   "restrictionType": "symmetricKeyLifetime",
-                  "maxLifetime": "P4D",
+                  "maxLifetime": "P30D",
                   "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
                }
             ],
@@ -148,6 +155,15 @@ Content-type: application/json
                   "restrictionType": "asymmetricKeyLifetime",
                   "maxLifetime": "P90D",
                   "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
+               },
+               {
+                  "restrictionType": "trustedCertificateAuthority",
+                  "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z",
+                  "certificateBasedApplicationConfigurationIds": [
+                     "eec5ba11-2fc0-4113-83a2-ed986ed13743",
+                     "bb8e164b-f9ed-4b98-bc45-65eddc14f4c1"
+                  ],
+                  "maxLifetime": null
                }
             ]
          }

@@ -19,6 +19,8 @@ You can use either PATCH or PUT for this operation.
 
 > **Note:** This operation supports only a user's work or school mailboxes and not personal mailboxes.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -61,7 +63,7 @@ The following tables show the least privileged permission or permissions require
 
 > [!NOTE]
 >
-> - There is currently a [known issue](/graph/known-issues#groups) with accessing group photos using application permissions.
+> - An app with only application permissions cannot update a group's photo.
 > - To update the photo of any user in the organization, your app must have the *User.ReadWrite.All* application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](/graph/auth-v2-service). Updating the photo of the signed-in user only requires *User.ReadWrite* permission.
 > - Updating a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 

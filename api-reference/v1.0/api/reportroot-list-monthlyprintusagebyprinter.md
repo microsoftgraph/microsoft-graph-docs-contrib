@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of monthly print usage summaries, grouped by [printer](../resources/printer.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -113,6 +115,7 @@ Content-Type: application/json
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
       "printerId": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
+      "printerName": "printerName1",
       "usageDate": "Date",
       "completedBlackAndWhiteJobCount": 42,
       "completedColorJobCount": 0,

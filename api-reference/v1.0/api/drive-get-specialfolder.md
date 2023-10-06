@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Get Special Folders
 ms.localizationpriority: medium
@@ -18,6 +18,8 @@ Special folders provide simple aliases to access well-known folders in OneDrive 
 Special folders are automatically created the first time an application attempts to write to one, if it doesn't already exist. If a user deletes one, it is recreated when written to again.
 
 > **Note:**  If you have read-only permissions and request a special folder that doesn't exist, you'll receive a `403 Forbidden` error.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -48,6 +50,7 @@ The follow special folder names are available in OneDrive and OneDrive for Busin
 | Camera Roll | `cameraroll` | The Camera Roll Backup folder.                                           |
 | App Root    | `approot`    | The application's personal folder. Usually in `/Apps/{Application Name}` |
 | Music       | `music`      | The Music folder.                                                        |
+| Recordings  | `recordings` | The Recordings folder. This option is only available in OneDrive for Business and SharePoint Online. |
 
 
 ### Optional query parameters

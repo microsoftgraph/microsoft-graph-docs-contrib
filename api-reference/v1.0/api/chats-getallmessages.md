@@ -15,6 +15,8 @@ Get all [messages](../resources/chatmessage.md) from all [chats](../resources/ch
 
 [!INCLUDE [teams-metered-apis](../../includes/teams-metered-apis.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 The following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -202,3 +204,7 @@ Content-type: application/json
     ]
 }
 ```
+
+## See also
+
+[Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)

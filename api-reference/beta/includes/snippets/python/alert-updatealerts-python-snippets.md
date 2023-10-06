@@ -4,55 +4,41 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = UpdateAlertsPostRequestBody()
-value_alert1 = Alert()
-value_alert1.assigned_to = 'String'
+graph_client = GraphServiceClient(request_adapter)
 
-value_alert1.closedDateTime = DateTime('String (timestamp)')
+request_body = UpdateAlertsPostRequestBody(
+	value = [
+		Alert(
+			assigned_to = "String",
+			closed_date_time = "String (timestamp)",
+			comments = [
+				"String",
+			]
+			feedback = AlertFeedback(
+				additional_data = {
+						"@odata_type" : "microsoft.graph.alertFeedback",
+				}
+			),
+			id = "String (identifier)",
+			status = AlertStatus(
+				additional_data = {
+						"@odata_type" : "microsoft.graph.alertStatus",
+				}
+			),
+			tags = [
+				"String",
+			]
+			vendor_information = SecurityVendorInformation(
+				provider = "String",
+				vendor = "String",
+			),
+		),
+	]
+)
 
-value_alert1.Comments(['String', ])
-
-value_alert1feedback = AlertFeedback()
-additional_data = [
-'@odata_type' => 'microsoft.graph.alertFeedback', 
-];
-value_alert1feedback.additional_data(additional_data)
-
-
-
-value_alert1.feedback = value_alert1feedback
-value_alert1.id = 'String (identifier)'
-
-value_alert1status = AlertStatus()
-additional_data = [
-'@odata_type' => 'microsoft.graph.alertStatus', 
-];
-value_alert1status.additional_data(additional_data)
-
-
-
-value_alert1.status = value_alert1status
-value_alert1.Tags(['String', ])
-
-value_alert1vendor_information = SecurityVendorInformation()
-value_alert1vendor_information.provider = 'String'
-
-value_alert1vendor_information.vendor = 'String'
-
-
-value_alert1.vendor_information = value_alert1vendor_information
-
-valueArray []= valueAlert1;
-request_body.value(valueArray)
-
-
-
-
-
-result = await client.security.alerts.update_alerts.post(request_body = request_body)
+result = await graph_client.security.alerts.update_alerts.post(body = request_body)
 
 
 ```
