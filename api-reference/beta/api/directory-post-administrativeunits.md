@@ -53,7 +53,7 @@ You can specify the following properties when creating an **administrativeUnit**
 |:---------------|:--------|:----------|
 | description | String | Description for the administrative unit. Optional. |
 | displayName | String | Display name for the administrative unit. Required. |
-| isMemberManagementRestricted | Boolean | `true` if members of this administrative unit should be treated as sensitive, which requires specific permissions to manage. Default value is `false`. Use this property to define administrative units whose roles don't inherit from tenant-level administrators, and management of individual member objects is limited to administrators scoped to a restricted management administrative unit. Immutable, so cannot be changed later. Optional. |
+| isMemberManagementRestricted | Boolean | `true` if members of this administrative unit should be treated as sensitive, which requires specific permissions to manage. Default value is `false`. Use this property to define administrative units whose roles don't inherit from tenant-level administrators, and management of individual member objects is limited to administrators scoped to a restricted management administrative unit. Immutable, so can't be changed later. Optional. |
 | membershipRule | String | Dynamic membership rule for the administrative unit. For more about the rules that you can use for dynamic administrative units and dynamic groups, see [Using attributes to create advanced rules](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/). Optional. |
 | membershipRuleProcessingState | String | Used to control whether the dynamic membership rule is actively processed. Set to `On` when you want the dynamic membership rule to be active and `Paused` if you want to stop updating membership dynamically. Optional. |
 | membershipType | String | Membership type for the administrative unit. Can be `dynamic` or `assigned`. Optional. |
@@ -152,7 +152,7 @@ Content-type: application/json
 
 ### Example 2: Create a restricted management administrative unit
 
-The following example creates a new restricted management administrative unit. The `isMemberManagementRestricted` property is immutable, so cannot be changed later.
+The following example creates a new restricted management administrative unit. The `isMemberManagementRestricted` property is immutable, so can't be changed later.
 
 #### Request
 # [HTTP](#tab/http)

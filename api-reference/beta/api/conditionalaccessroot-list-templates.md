@@ -45,7 +45,7 @@ This method supports the `$filter` and `$select` OData query parameters to help 
 | Accept-Language | Language. Optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Example 1: List all conditional access policy templates
 
 #### Request
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/templates
 ---
 
 #### Response
-The following is an example of the response
+Here's an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -183,7 +183,7 @@ Content-Type: application/json
 ### Example 2: List name, description, id, scenarios of templates whose scenarios contain "secureFoundation"
 
 #### Request
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -230,7 +230,7 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/templates?$selec
 ---
 
 #### Response
-The following is an example of the response
+Here's an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

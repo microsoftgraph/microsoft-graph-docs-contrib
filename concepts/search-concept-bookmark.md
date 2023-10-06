@@ -76,8 +76,8 @@ Content-type: application/json
 
 ## Known issues
 
-- Sorting, aggregation and pagination are not supported for bookmark searches.
-- Combination search with non-Answer entityTypes (i.e. driveItem, list) is not supported. Only combination search with the other Answer entityTypes bookmarks, qna and acronym is supported.
+- Sorting, aggregation and pagination aren't supported for bookmark searches.
+- Combination search with non-Answer entityTypes (that is, driveItem, list) isn't supported. Only combination search with the other Answer entityTypes bookmarks, qna and acronym is supported.
 
 ## Next steps
 

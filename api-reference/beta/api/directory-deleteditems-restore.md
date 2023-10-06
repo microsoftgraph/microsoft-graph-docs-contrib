@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a recently deleted [application](../resources/application.md), [group](../resources/group.md), [servicePrincipal](../resources/serviceprincipal.md), [administrative unit](../resources/administrativeunit.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md). If an item was accidentally deleted, you can fully restore the item. This is not applicable to security groups, which are deleted permanently.
+Restore a recently deleted [application](../resources/application.md), [group](../resources/group.md), [servicePrincipal](../resources/serviceprincipal.md), [administrative unit](../resources/administrativeunit.md), or [user](../resources/user.md) object from [deleted items](../resources/directory.md). If an item was accidentally deleted, you can fully restore the item. This isn't applicable to security groups, which are deleted permanently.
 
-A recently deleted item will remain available for up to 30 days. After 30 days, the item is permanently deleted.
+A recently deleted item remains available for up to 30 days. After 30 days, the item is permanently deleted.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -46,7 +46,7 @@ POST /directory/deleteditems/{id}/restore
 | Content-type | application/json |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

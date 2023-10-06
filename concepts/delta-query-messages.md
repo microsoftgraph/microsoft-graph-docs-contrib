@@ -13,7 +13,7 @@ Delta query lets you query for additions, deletions, or updates to messages in a
 [delta](/graph/api/message-delta) function calls. Delta data enables you to maintain
 and synchronize a local store of a user's messages without having to fetch the entire set of the user's messages from the server every time.
 
-Synchronizing message items in a local store can use the **delta** query for the initial full synchronization as well as subsequent incremental synchronizations. Typically, you would do an initial full synchronization of all the messages in a folder (for example, the user's Inbox), and then, get incremental changes to that folder periodically.
+Synchronizing message items in a local store can use the **delta** query for the initial full synchronization and subsequent incremental synchronizations. Typically, you would do an initial full synchronization of all the messages in a folder (for example, the user's Inbox), and then, get incremental changes to that folder periodically.
 
 To get incremental changes of only a certain type - messages that are created, updated, or deleted since the initial sync - do an initial round of synchronization of all the messages in the folder, and then get incremental changes of a specific desired type in subsequent rounds. Specify the desired change type as a query option in the initial **delta** request; Microsoft Graph automatically encodes any OData and custom query options into the @odata.nextLink or @odata.deltaLink provided in the response.
 
@@ -34,8 +34,8 @@ A GET request with the **delta** function returns either:
 - A `@odata.nextLink` (that contains a URL with a **delta** function call and a _skipToken_), or
 - A `@odata.deltaLink` (that contains a URL with a **delta** function call and _deltaToken_).
 
-These tokens are [state tokens](delta-query-overview.md#state-tokens) that are completely opaque to the client.
-To proceed with a round of change tracking, simply copy and apply the URL returned from the last GET
+These tokens are [state tokens](delta-query-overview.md#state-tokens) that are opaque to the client.
+To proceed with a round of change tracking, copy and apply the URL returned from the last GET
 request to the next **delta** function call for the same folder. A `@odata.deltaLink` returned in a response
 signifies that the current round of change tracking is complete. You can save and use the `@odata.deltaLink` URL
 when you begin the next round.
@@ -52,7 +52,7 @@ The rest of this article includes 2 examples:
   - The only supported `$filter` expressions are `$filter=receivedDateTime+ge+{value}`
   or `$filter=receivedDateTime+gt+{value}`.
   - Applying `$filter` in a delta query returns only up to 5,000 messages.
-  - The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you do not include an `$orderby` expression, the return order is not guaranteed.
+  - The only supported `$orderby` expression is `$orderby=receivedDateTime+desc`. If you don't include an `$orderby` expression, the return order isn't guaranteed.
 - There is no support for `$search`.
 
 Additionally, to return only certain type of changes (created, updated or deleted) in the delta query's response, you can optionally filter the desired type of change using a custom query option `changeType`. Possible values are `created`, `updated` or `deleted`.
@@ -112,8 +112,8 @@ After the first round, one of the messages is deleted, and another is marked as 
 
 ### Sample initial request
 
-In this example, the specified folder is being synchronized for the first time, so the initial sync request does not include any state token.
-This round will return all the messages in that folder.
+In this example, the specified folder is being synchronized for the first time, so the initial sync request doesn't include any state token.
+This round returns all the messages in that folder.
 
 The first request specifies the following:
 
@@ -257,7 +257,7 @@ Prefer: odata.maxpagesize=2
 
 ### Sample third and final response
 
-The third response returns the only remaining message in the folder, and a `@odata.deltaLink` URL which indicates
+The third response returns the only remaining message in the folder, and a `@odata.deltaLink` URL that indicates
 synchronization is complete for the time being for this folder. Save and use the `@odata.deltaLink` URL to
 [synchronize the same folder in the next round](#synchronize-messages-in-the-same-folder-in-the-next-round).
 
@@ -293,7 +293,7 @@ synchronization is complete for the time being for this folder. Save and use the
 ### Synchronize messages in the same folder in the next round
 
 Using the `@odata.deltaLink` from the [last request](#sample-third-request) in the last round,
-you will be able to get only those messages that have changed (by being added, deleted, or updated) in that folder since then.
+you are able to get only those messages that have changed (by being added, deleted, or updated) in that folder since then.
 Your first request in the next round will look like the following, assuming you prefer to keep the same maximum page size in the response:
 
 <!-- {
@@ -359,8 +359,8 @@ The second round of synchronization returns only the changes in the folder of th
 
 ### Sample initial request with specified change type
 
-In this example, the specified folder is being synchronized for the first time, so the initial sync request does not include any state token.
-This round will return all the messages in that folder.
+In this example, the specified folder is being synchronized for the first time, so the initial sync request doesn't include any state token.
+This round returns all the messages in that folder.
 
 The first request specifies the following:
 
@@ -444,7 +444,7 @@ Prefer: odata.maxpagesize=2
 
 ### Sample second response with specified change type
 
-The second response returns the next 2 messages in the folder and `@odata.deltaLink` URL which indicates
+The second response returns the next 2 messages in the folder and `@odata.deltaLink` URL that indicates
 synchronization is complete for the time being for this folder. Save and use the `@odata.deltaLink` URL to
 [synchronize the same folder in the next round](#synchronize-messages-in-the-same-folder-in-the-next-round-based-on-specified-change-type).
 
@@ -493,7 +493,7 @@ synchronization is complete for the time being for this folder. Save and use the
 ### Synchronize messages in the same folder in the next round based on specified change type
 
 Using the `@odata.deltaLink` from the [last response](#sample-second-response-with-specified-change-type) in the last round,
-you will be able to get only those messages that have been added in that folder since then.
+you are able to get only those messages that have been added in that folder since then.
 Your first request in the next round will look like the following, assuming you prefer to keep the same maximum page size in the response:
 
 <!-- {
@@ -507,7 +507,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGUwNc4LTMzAAA=/messages
 Prefer: odata.maxpagesize=2
 ```
 
-The response contains a `@odata.deltaLink`. This indicates that all changes in the remote mail folder are now synchronized. Two messages were added since the last sync. The messages updated & deleted since the last sync are not returned in this delta response.
+The response contains a `@odata.deltaLink`. This indicates that all changes in the remote mail folder are now synchronized. Two messages were added since the last sync. The messages updated & deleted since the last sync aren't returned in this delta response.
 
 <!-- {
   "blockType": "response",
