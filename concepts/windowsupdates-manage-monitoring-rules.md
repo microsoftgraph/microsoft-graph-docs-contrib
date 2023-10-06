@@ -22,7 +22,7 @@ Monitoring rules consist of three components:
 * **threshold**: When this percentage of devices emit the specified signal, the monitoring rule is triggered.
 * **action**: The action to take when the monitoring rule is triggered.
 
-Below is an example of creating a monitoring rule for a deployment at the same time as creating the deployment.
+Here's an example of creating a monitoring rule for a deployment at the same time as creating the deployment.
 
 ### Request
 
@@ -165,7 +165,7 @@ Content-Type: application/json
 ### Example: Resume deployment by updating a monitoring rule threshold
 Another way to resume the deployment is to change the threshold of the relevant monitoring rule. When the new threshold is reached, the action (in this case, `pauseDeployment`) will be triggered again. 
 
-Below is an example of resuming the deployment by changing the monitoring rule threshold. This example also illustrates how to edit any existing monitoring rule, even if its threshold has not yet been met, as well as how to create a monitoring rule on a deployment that does not have one.
+Here's an example of resuming the deployment by changing the monitoring rule threshold. This example also illustrates how to edit any existing monitoring rule, even if its threshold has not yet been met, as well as how to create a monitoring rule on a deployment that does not have one.
 
 #### Request
 

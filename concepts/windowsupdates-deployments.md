@@ -9,7 +9,7 @@ doc_type: conceptualPageType
 
 # Deployments in the Windows Update for Business deployment service
 
-Deployments are the foundation of the Windows Update for Business deployment service. Through a deployment you can target a set of devices to receive specific content from Windows Update, such as a [software update](windowsupdates-software-updates.md).
+Deployments are the foundation of the Windows Update for Business deployment service. Through a deployment, you can target a set of devices to receive specific content from Windows Update, such as a [software update](windowsupdates-software-updates.md).
 
 Deployments have the following key aspects:
 
@@ -21,7 +21,7 @@ Deployments have the following key aspects:
 
 ## Create a deployment with content and an audience
 
-Because content and audience are key to the definition of a deployment, you are required to assign both at the time of creation. While content and audience assignments cannot be changed later, device membership within an audience can.
+Because content and audience are key to the definition of a deployment, you're required to assign both at the time of creation. While content and audience assignments cannot be changed later, device membership within an audience can.
 
 To learn more about creating a deployment, see [Deploy a feature update](/graph/windowsupdates-deploy-update), [Deploy an expedited security update](/graph/windowsupdates-deploy-expedited-update), and [Manage driver update](/graph/windowsupdates-manage-driver-update).
 
@@ -55,7 +55,7 @@ Deployments move through lifecycle states as described in the following table.
 |-------------|---------------------------------------------------------------------------------------------------|
 | `scheduled` | The deployment is waiting for offer conditions to be met to start offering the update to devices. |
 | `offering`  | The deployment is offering the update to devices.                                                 |
-| `paused`    | The deployment is paused and prevented from offering the update to devices until it is unpaused.  |
+| `paused`    | The deployment is paused and prevented from offering the update to devices until it's unpaused.  |
 | `faulted`   | The deployment is not offering the update to devices due to a reason the service cannot resolve.  |
 
 

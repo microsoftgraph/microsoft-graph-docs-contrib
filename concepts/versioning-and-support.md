@@ -20,7 +20,7 @@ When an API is marked as deprecated, we strongly recommend that you migrate to t
 
 ### API contract and nonbackward compatible changes
 
-Microsoft Graph has a log of changes across versions. These changes are listed in the [Microsoft Graph Changelog](changelog.md). As new functionality and data are added to Microsoft Graph, we'll increment the API version number for any nonbackward compatible changes to the API.
+Microsoft Graph has a log of changes across versions. These changes are listed in the [Microsoft Graph Changelog](changelog.md). As new functionality and data are added to Microsoft Graph, we increment the API version number for any nonbackward compatible changes to the API.
 
 The following are examples of nonbackward compatible changes:
 
@@ -49,7 +49,7 @@ The following versions of the Microsoft Graph API are currently available.
 ### Beta version
 In general, APIs debut in the beta version and are accessible in the `https://graph.microsoft.com/beta` endpoint. For beta API documentation, see [Microsoft Graph beta endpoint reference](/graph/api/overview?view=graph-rest-beta&preserve-view=true). Expect breaking changes and deprecation of APIs in the beta version from time to time. Don't take a production dependency on beta APIs.
 
-We make no guarantees that a beta feature will be promoted to the current version. When the Microsoft Graph API team believes that a beta feature is ready for general availability, we'll add that feature to the latest current version. If the promotion of the feature would result in a breaking change to the current version, the version number is incremented, with the new version becoming the current version.
+We make no guarantees that a beta feature will be promoted to the current version. When the Microsoft Graph API team believes that a beta feature is ready for general availability, we add that feature to the latest current version. If the promotion of the feature would result in a breaking change to the current version, the version number is incremented, with the new version becoming the current version.
 Our developer community can post feature requests on the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph), including requests for new features and requests to promote existing beta APIs to the current version.
 
 ### Current version
