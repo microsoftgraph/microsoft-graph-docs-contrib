@@ -50,7 +50,7 @@ PATCH /admin/people/pronouns
 
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledInOrganization|Boolean|`true` to enable pronouns in the organization; otherwise, `false`. Default value is `false`, and pronouns are disabled. Required.|
+|isEnabledInOrganization|Boolean|`true` to enable pronouns in the organization; otherwise, `false`. The default value is `false`, and pronouns are disabled. Required.|
 
 ## Response
 
