@@ -32,13 +32,8 @@ To configure your connector for Context IQ:
 - Add [user activities](/graph/api/externalconnectors-externalitem-addactivities) on your items. For supported activity types, see [externalActivity](/graph/api/resources/externalconnectors-externalactivity). The platform uses these activities to determine which users interacted most recently with which items. Items with activities performed by a given user have a higher likelihood of being displayed to that user in the experience.
 - Add a [urlToItemrResolver](/graph/api/resources/externalconnectors-urltoitemresolverbase) in [activitySettings](/graph/api/resources/externalconnectors-activitysettings) when you [create your connection](/graph/connecting-external-content-manage-connections#create-a-connection). A `urlToItemResolver` will enable the platform to become aware when users share URLs from your external content with each other. The experience will have a higher likelihood of displaying content that has been shared with that user.
 
-## Microsoft 365 Copilot (limited preview)
+## Microsoft 365 Copilot
 [Microsoft 365 Copilot](https://blogs.microsoft.com/blog/2023/03/16/introducing-microsoft-365-copilot-your-copilot-for-work/) with Microsoft Graph connectors allows users to easily find, summarize, and learn important details about *all* content relevant to a user's natural language prompts. 
-
-> [!NOTE]
-> - Microsoft Graph connectors with Microsoft 365 Copilot is in early access preview. When you get access to the [developer preview program](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR06na7ADVcFBoFXEJ5M8YD1UNkdQODE5VDNKOUQ2UlBSVUJJRlJDVktTVS4u), you'll get details about how to test your Microsoft Graph connector with Microsoft 365 Copilot.
-> 
-> - Only customers who are part of the [Microsoft 365 Copilot early access program](https://blogs.microsoft.com/blog/2023/05/09/introducing-the-microsoft-365-copilot-early-access-program-and-2023-microsoft-work-trend-index/) will have Microsoft 365 Copilot enabled in their tenants in the coming months.
 
 To make sure that Microsoft 365 Copilot uses your content effectively:
 - Add a [urlToItemResolver](/graph/api/resources/externalconnectors-urltoitemresolverbase) in [activitySettings](/graph/api/resources/externalconnectors-activitysettings) when you [create your connection](/graph/connecting-external-content-manage-connections#create-a-connection). A `urlToItemResolver` enables the platform to detect when users share URLs from your external content with each other. Microsoft 365 Copilot will have a higher likelihood of displaying content that has been shared with that user. 
