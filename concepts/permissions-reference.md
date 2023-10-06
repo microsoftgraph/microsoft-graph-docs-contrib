@@ -3205,30 +3205,30 @@ This section shows some common scenarios that target [user](/graph/api/resources
 | App wants to create a group through AAD Graph |   _Group.ReadWrite.All_ | Read and write all groups|
 
 
-## Insights-UserMetrics permissions
+## Insights-UserMetric permissions
 
 #### Delegated permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
-| _Insights-UserMetrics.Read.All_ | Read user metrics insights | Allows an app to read user metrics insights, such as daily and monthly active users, on behalf of the signed-in user. | Yes | No |
+| _Insights-UserMetric.Read.All_ | Read user metrics insights | Allows an app to read user metrics insights, such as daily and monthly active users, on behalf of the signed-in user. | Yes | No |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|
-| _Insights-UserMetrics.Read.All_ | Read all user metrics insights | Allows an app to read all user metrics insights, such as daily and monthly active users, without a signed-in user. | Yes |
+| _Insights-UserMetric.Read.All_ | Read all user metrics insights | Allows an app to read all user metrics insights, such as daily and monthly active users, without a signed-in user. | Yes |
 
 ### Remarks
-- Insights-UserMetrics permissions are only valid for work or school accounts.
+- Insights-UserMetric permissions are only valid for work or school accounts.
 - For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user one of these Azure AD Built-in administrator role: Application Administrator, Cloud Application Administrator, Company Administrator, Global Readers, Reports Reader, Security Administrator, Security Reader, or Security Operator.
 
 ### Example usage
 
 #### Application
 
-* _Insights-UserMetrics.Read.All_: Read all daily authentications metrics insights for the month (`GET /reports/userInsights/daily/authentications`).
-* _Insights-UserMetrics.Read.All_: Read all daily summaries for appId "ab1cd2e3-f4g5-67h8-i9jk-b748da123456"(`GET /reports/userInsights/daily/summary?$filter=appId eq 'ab1cd2e3-f4g5-67h8-i9jk-b748da123456'`).
+* _Insights-UserMetric.Read.All_: Read all daily authentications metrics insights for the month (`GET /reports/userInsights/daily/authentications`).
+* _Insights-UserMetric.Read.All_: Read all daily summaries for appId "ab1cd2e3-f4g5-67h8-i9jk-b748da123456"(`GET /reports/userInsights/daily/summary?$filter=appId eq 'ab1cd2e3-f4g5-67h8-i9jk-b748da123456'`).
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
