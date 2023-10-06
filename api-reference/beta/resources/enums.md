@@ -1360,6 +1360,17 @@ Namespace: microsoft.graph
 | weak    |
 | unknown |
 
+### authenticationMethodPlatform values
+
+| Member  |
+| :------ |
+| windows |
+| macOS   |
+| iOS     |
+| android |
+| linux   |
+| unknown |
+
 ### authenticationContextDetail values
 
 | Member              |
