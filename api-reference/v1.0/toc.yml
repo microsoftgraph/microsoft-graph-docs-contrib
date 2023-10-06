@@ -9023,8 +9023,6 @@ items:
                     href: api/teams-list.md
                   - name: List your associated teams
                     href: api/associatedteaminfo-list.md
-                  - name: Get primary channel
-                    href: api/team-get-primarychannel.md
                   - name: Get team photo
                     href: api/profilephoto-get.md
                   - name: Update team photo

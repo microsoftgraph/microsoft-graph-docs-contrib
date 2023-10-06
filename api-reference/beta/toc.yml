@@ -17902,8 +17902,6 @@ items:
                     href: api/associatedteaminfo-list.md
                   - name: List all teams in an organization
                     href: api/teams-list.md
-                  - name: Get primary channel
-                    href: api/team-get-primarychannel.md
                   - name: Get team photo
                     href: api/profilephoto-get.md
                   - name: Update team photo
