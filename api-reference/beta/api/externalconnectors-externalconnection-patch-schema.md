@@ -59,7 +59,6 @@ If successful, this method returns a `202 Accepted` response code and a URL in t
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_schema_from_connection_async",
@@ -97,8 +96,6 @@ Content-type: application/json
   ]
 }
 ```
-
----
 
 <!-- markdownlint-disable MD024 -->
 #### Response
