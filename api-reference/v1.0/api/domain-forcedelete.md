@@ -25,9 +25,9 @@ The following actions are performed as part of this operation:
 
 * If the number of objects to be renamed is greater than 1000, an error is returned.
 
-* If one of the `applications` to be renamed is a multi-tenant app, an error is returned.
+* If one of the `applications` to be renamed is a multitenant app, an error is returned.
 
-After the domain deletion completes, API operations for the deleted domain will return a HTTP 404 status code. To verify deletion of a domain, you can perform a [get domain](domain-get.md) operation.
+After the domain deletion completes, API operations for the deleted domain will return an HTTP 404 status code. To verify deletion of a domain, you can perform a [get domain](domain-get.md) operation.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -70,7 +70,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter | Type | Description |
 |:---------------|:--------|:----------|
-|`disableUserAccounts`|`Boolean`| Option to disable user accounts which are renamed. If a user account is disabled, the user will not be allowed to sign in. If set to **true** the `users` updated as part of this operation will be disabled.  Default value is **true**. |
+|`disableUserAccounts`|`Boolean`| Option to disable user accounts that are renamed. If a user account is disabled, the user won't be allowed to sign in. If set to **true** the `users` updated as part of this operation will be disabled.  Default value is **true**. |
 
 ## Response body
 

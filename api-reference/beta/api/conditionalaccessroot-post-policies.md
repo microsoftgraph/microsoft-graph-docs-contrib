@@ -61,7 +61,7 @@ If successful, this method returns a `201 Created` response code and a new [cond
 ### Example 1: Require MFA to access Exchange Online outside of trusted locations
 
 #### Request
-The following example shows a common request to require multi-factor authentication for access to Exchange Online from modern authentication clients outside of trusted locations for a particular group.
+The following example shows a common request to require multifactor authentication for access to Exchange Online from modern authentication clients outside of trusted locations for a particular group.
 
 >**Note:** You must set up your trusted locations before using this operation.
 
@@ -211,7 +211,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Block access to Exchange Online from non-trusted regions
+### Example 2: Block access to Exchange Online from nontrusted regions
 
 #### Request
 The following example shows a request to block access to Exchange Online from non-trusted/unknown regions.
@@ -633,12 +633,12 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Require MFA to Exchange Online from non-complaint devices
+### Example 4: Require MFA to Exchange Online from non-compliant devices
 
 >**Note:** We are deprecating the **deviceStates** condition, and it may be removed in the future. Going forward, use **devices** condition.
 
 #### Request
-The following example shows a request to require MFA to Exchange Online from non-complaint devices.
+The following example shows a request to require MFA to Exchange Online from non-compliant devices.
 
 
 # [HTTP](#tab/http)
