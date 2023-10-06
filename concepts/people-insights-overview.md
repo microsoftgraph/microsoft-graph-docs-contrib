@@ -13,7 +13,7 @@ Microsoft Graph applications can use the people API to retrieve the people who a
 
 Along with generating this insight, the people API also provides fuzzy matching search support and the ability to retrieve the list of users relevant to another user in the signed-in user's organization.
 
-The people API is particularly useful for people picking scenarios, such as composing an email or creating a meeting. For example, you can use the people API in email compose scenarios.
+The people API is useful for people picking scenarios, such as composing an email or creating a meeting. For example, you can use the people API in email compose scenarios.
 
 ## Including a person as relevant or "working-with"
  
@@ -38,7 +38,7 @@ The ranking doesn’t change based on who User A is (the person looking at someo
  
 In order for User C to appear, the profile owner must be in a relatively small group or distribution list with that user that is public (meaning the membership list is available in the directory).
  
-People external to the organization do not show on the profile owner's list. People they email or meet with, but who are not part of the same organization, do not show up as people the owner works with either.
+People external to the organization don't show on the profile owner's list. People they email or meet with, but who aren't part of the same organization, don't show up as people the owner works with either.
 
 ## Disabling "working-with"
 Administrators can manage the display or return of people relevant to a profile owner at two levels:
@@ -52,7 +52,7 @@ For more information, see [customize people insight privacy control](insights-cu
 
 ## Authorization
 
-To call the people API in Microsoft Graph, your app will need the appropriate permissions:
+To call the people API in Microsoft Graph, your app needs the appropriate permissions:
 
 * People.Read - Use to make general people API calls; for example, `https://graph.microsoft.com/v1.0/me/people/`. People.Read requires end user consent.
 * People.Read.All - Required to retrieve the people most relevant to a specified user in the signed-in user’s organization (`https://graph.microsoft.com/v1.0/users/{id}/people`) calls. People.Read.All requires admin consent.
@@ -855,7 +855,7 @@ Content-type: application/json
 
 ## Search people
 
-The requests in this section allow you to search for people relevant to the signed-in user (`/me`) and other users in the signed-in user’s organization. These requests require the People.Read permission, with the exception of searching other users’ relevant people, which requires People.Read.All. By default, each response returns 10 records, but you can change this by using the *$top* parameter.
+The requests in this section allow you to search for people relevant to the signed-in user (`/me`) and other users in the signed-in user’s organization. These requests require the People.Read permission, except for searching other users’ relevant people, which requires People.Read.All. By default, each response returns 10 records, but you can change this by using the *$top* parameter.
 
 ### Use search to select people
 
@@ -976,7 +976,7 @@ Content-type: application/json
 
 ### Perform a fuzzy search
 
-Searches implement a fuzzy matching algorithm. They will return results based on an exact match and also on inferences about the intent of the search. For example, imagine a user with a display name of "Tyler Lee" and an email address of tylerle@example.com who is in the **people** collection of the signed-in user. All of the following searches will return this user Tyler as one of the results.
+Searches implement a fuzzy matching algorithm. They return results based on an exact match and also on inferences about the intent of the search. For example, imagine a user with a display name of "Tyler Lee" and an email address of tylerle@example.com who is in the **people** collection of the signed-in user. All of the following searches return this user Tyler as one of the results.
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler"                //matches both Tyler's name and email

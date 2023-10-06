@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Get the list of [hostPair](../resources/security-hostpair.md) resources associated with a host, where that host is the *child* and has an incoming pairing with a *parent*.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

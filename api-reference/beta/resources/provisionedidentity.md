@@ -22,11 +22,11 @@ Describes the identity associated with the provisioning object summary event. In
 |details|[detailsInfo](detailsinfo.md)|Details of the identity.|
 |displayName|String|Display name of the identity. Inherited from [identity](../resources/identity.md). Supports `$filter` (`eq`, `contains`).|
 |id|String|Uniquely identifies the identity. Inherited from [identity](../resources/identity.md). Supports `$filter` (`eq`, `contains`).|
-|identityType|String|Type of identity that has been provisioned, such as 'user' or 'group'. Supports `$filter` (`eq`, `contains`).|
+|identityType|String|Type of identity that has been provisioned, such as 'user' or 'group.' Supports `$filter` (`eq`, `contains`).|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

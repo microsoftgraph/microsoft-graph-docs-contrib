@@ -28,9 +28,9 @@ The following are the steps to onboard:
 
 The simplified Data Connect onboarding experience includes process efficiencies and improved developer workflows, as well as Azure portal improvements that further enable a more intuitive and informative developer experience:
 
-- Authorization is provided before any pipeline runs. If authorization is not granted, the pipeline fails right away. This eliminates extra runtime, which incurs ADF runtime costs and waiting on manual approval, and minimizes runtime authorization creation failures.
+- Authorization is provided before any pipeline runs. If authorization isn't granted, the pipeline fails right away. This eliminates extra runtime, which incurs ADF runtime costs and waiting on manual approval, and minimizes runtime authorization creation failures.
 
-- Service principal owner licenses are not required. This removes requirements for service principal owners to be Microsoft 365 users with an E5 license, and removes license requirements. Azure AD application ownership is required to update and delete app registrations with Data Connect.
+- Service principal owner licenses aren't required. This removes requirements for service principal owners to be Microsoft 365 users with an E5 license, and removes license requirements. Azure AD application ownership is required to update and delete app registrations with Data Connect.
 
 - Admins don't need an E5 license. A user authorizing an app is required to be a global admin to access the [Data Connect app registration portal](https://admin.microsoft.com/Adminportal/Home?#/Settings/MGDCAdminCenter), and approve apps for Data Connect.
 
@@ -38,9 +38,9 @@ The simplified Data Connect onboarding experience includes process efficiencies 
 
 - Data Connect is evolving to a per-app authorization model, which functionally means one admin authorization per customer scenario. A single app registration encapsulates all datasets that an app requires, along with per dataset controls for columns and scopes. This also means that a single authorization is required to enable a scenario.
 
-- You can renew an app authorization before the expiry date. This is not supported in Privileged Access Management (PAM).
+- You can renew an app authorization before the expiry date. This isn't supported in Privileged Access Management (PAM).
 
-- Multi-tenant apps can initiate cross-tenant data movement with Data Connect. This enables ISVs to make use of Data Connect to extract Microsoft 365 data to bring value to customers.
+- Multitenant apps can initiate cross-tenant data movement with Data Connect. This enables ISVs to make use of Data Connect to extract Microsoft 365 data to bring value to customers.
 
 ## Confirm your tenant experience
 <!-- Update 8/17/2023 changed date per developer guidance to August 17, 2023. -->
@@ -51,4 +51,4 @@ If you're able to access the experience and you don't see the following warning 
 
 ![The highlighted warning displayed for users if their organization is not using the new tenant experience.](./images/M365-admin-center-highlighted-warning.png)
 
-If your tenant is not yet using the simplified experience, for details about how to migrate, see [Migrate to the updated Microsoft Graph Data Connect onboarding experience](./existing-customer-migration.md).
+If your tenant isn't yet using the simplified experience, for details about how to migrate, see [Migrate to the updated Microsoft Graph Data Connect onboarding experience](./existing-customer-migration.md).
