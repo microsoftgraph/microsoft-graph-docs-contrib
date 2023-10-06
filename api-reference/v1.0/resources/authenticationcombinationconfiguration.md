@@ -26,7 +26,7 @@ This is an abstract type. In use, [fido2combinationConfigurations](fido2combinat
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appliesToCombinations|authenticationMethodModes collection|Which authentication method combinations this configuration applies to. Must be an **allowedCombinations** object that's defined for the [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md). The only possible value for fido2combinationConfigurations is `"fido2"`.|
+|appliesToCombinations|authenticationMethodModes collection|Which authentication method combinations this configuration applies to. Must be an **allowedCombinations** object that's defined for the [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md). The only possible value for `fido2combinationConfigurations` is `"fido2"`.|
 |id|String|A unique system-generated identifier.|
 
 ## Relationships

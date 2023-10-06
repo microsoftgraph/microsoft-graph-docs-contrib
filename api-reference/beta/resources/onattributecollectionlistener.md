@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used for configuring the collection of attributes during user sign up as defined in the **onAttributeCollection** event in an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) user flow type. This includes which attributes to collect and how to display them.
+Used for configuring the collection of attributes during user sign-up as defined in the **onAttributeCollection** event in an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) user flow type. This includes which attributes to collect and how to display them.
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 
@@ -35,7 +35,7 @@ Inherits from [authenticationEventListener](../resources/authenticationeventlist
 |conditions|[authenticationConditions](../resources/authenticationconditions.md)|Required. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |priority|Int32|Required. Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
 |authenticationEventsFlowId|String| Inherited from [authenticationEventListener](../resources/authenticationeventlistener.md).|
-|handler|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|Required. Configuration for what to invoke if the event resolves to this listener. This lets us define potential handler configurations per-event.|
+|handler|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|Required. Configuration for what to invoke if the event resolves to this listener.|
 
 
 ## Relationships
