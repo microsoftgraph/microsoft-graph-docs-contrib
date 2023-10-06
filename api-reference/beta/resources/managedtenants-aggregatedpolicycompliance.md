@@ -40,7 +40,7 @@ Represents an aggregate view of device compliance for a managed tenant.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

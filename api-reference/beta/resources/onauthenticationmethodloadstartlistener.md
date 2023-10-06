@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Used for configuring what authentication methods are enabled for the authentication flow as defined in the **onAuthenticationMethodLoadStart** event in an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) user flow type. If this listener is not specified, the default option will be email one time passcode (OTP).
+Used for configuring what authentication methods are enabled for the authentication flow as defined in the **onAuthenticationMethodLoadStart** event in an [externalUsersSelfServiceSignUpEventsFlow](externalUsersSelfServiceSignUpEventsFlow.md) user flow type. If this listener isn't specified, the default option is email one time passcode (OTP).
 
 Inherits from [authenticationEventListener](../resources/authenticationeventlistener.md).
 
@@ -40,7 +40,7 @@ Inherits from [authenticationEventListener](../resources/authenticationeventlist
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

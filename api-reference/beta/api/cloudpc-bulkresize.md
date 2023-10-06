@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: bulkResize"
-description: "Bulk resize a set of Cloud PC devices."
+description: "Bulk resizes a set of Cloud PC devices."
 author: "Aria Zhang (yuzhang3)"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and the requested [c
 
 ### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
