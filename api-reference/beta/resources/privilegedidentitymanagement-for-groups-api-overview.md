@@ -86,13 +86,13 @@ For more information about using Microsoft Graph to configure rules, see [Overvi
 
 ## Onboarding groups to PIM for groups
 
-You can't onboard a group to PIM for groups explicitly. When you request to add assignment to group using [Create assignmentScheduleRequest](../api/privilegedaccessgroup-post-assignmentschedulerequests.md) or [Create eligibilityScheduleRequest](../api/privilegedaccessgroup-post-eligibilityschedulerequests.md), or you update PIM policy (role settings) for a group using [Update unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-update.md) or [Update unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-update.md), the group is onboarded to PIM automatically if it wasn't onboarded before.
+You can't onboard a group to PIM for groups explicitly. When you make a request to add an assignment to a group by using [Create assignmentScheduleRequest](../api/privilegedaccessgroup-post-assignmentschedulerequests.md) or [Create eligibilityScheduleRequest](../api/privilegedaccessgroup-post-eligibilityschedulerequests.md), or you update PIM policy (role settings) for a group by using [Update unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-update.md) or [Update unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-update.md), the group is onboarded to PIM automatically if it wasn't onboarded before.
 
 You can call [List assignmentScheduleRequests](../api/privilegedaccessgroup-list-assignmentschedulerequests.md), [List assignmentSchedules](../api/privilegedaccessgroup-list-assignmentschedules.md), [List assignmentScheduleInstances](../api/privilegedaccessgroup-list-assignmentscheduleinstances.md), [List eligibilityScheduleRequests](../api/privilegedaccessgroup-list-eligibilityschedulerequests.md), [List eligibilitySchedules](../api/privilegedaccessgroup-list-eligibilityschedules.md), and [List eligibilityScheduleInstances](../api/privilegedaccessgroup-list-eligibilityscheduleinstances.md) APIs for both groups that are onboarded to PIM and groups that aren't onboarded to PIM yet, but we recommend doing it only for groups that are onboarded to PIM to reduce the chances of getting throttled
 
 After PIM onboards a group, IDs of the PIM policies and policy assignments of the specific group change. Call the [Get unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-get.md) or [Get unifiedRoleManagementPolicyAssignment](../api/unifiedrolemanagementpolicyassignment-get.md) API to get the updated IDs.
 
-Once PIM onboards a group, you can't offboard it, but you can remove all eligible and time-bound assignments as necessary.
+After PIM onboards a group, you can't offboard it, but you can remove all eligible and time-bound assignments as necessary.
 
 ## PIM for groups and the group object
 
