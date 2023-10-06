@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Delete a [certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md) object. You can't delete all items in the collection because this collection requires at least one object that is a root authority to always persist.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

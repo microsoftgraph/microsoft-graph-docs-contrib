@@ -27,13 +27,13 @@ You can use several attributes to change the behavior of the component. The requ
 | placeholder               | placeholder             | The placeholder rendered in the picker (for example, `Select a user` or `Select a task list`).                                                                                                                                        |
 | key-name                  | keyName                 | The key to be rendered in the picker (for example, `displayName`).                                                                                                                                                                    |
 | selected-value            | selectedValue           | Optional. The value to be set as the currently selected option in the picker. Must be present in the options provided from the Microsoft Graph query.                                                                                 |
-| scopes                    | scopes                  | Optional array of strings if using the property or a comma delimited scope if using the attribute. The component will use these scopes (with a supported provider) to ensure that the user has consented to the right permission.     |
+| scopes                    | scopes                  | Optional array of strings if using the property or a comma delimited scope if using the attribute. The component uses these scopes (with a supported provider) to ensure that the user has consented to the right permission.     |
 | version                   | version                 | Optional API version to use when making the GET request. Default is `v1.0`.                                                                                                                                                           |
 | max-pages                 | maxPages                | Optional number of pages (for resources that support paging). Default is 3. Setting this value to 0 will get all pages.                                                                                                               |
-| cache-enabled             | cacheEnabled            | Optional Boolean. When set, it indicates that the response from the resource will be cached. Overriden if `refresh()` is called or if `pollingRate` is in use. Default is `false`.                                                    |
+| cache-enabled             | cacheEnabled            | Optional Boolean. When set, it indicates that the response from the resource will be cached. Override if `refresh()` is called or if `pollingRate` is in use. Default is `false`.                                                    |
 | cache-invalidation-period | cacheInvalidationPeriod | Optional number of milliseconds. When set in combination with `cacheEnabled`, the delay before the cache reaches its invalidation period will be modified by this value. Default is `0` and will use the default invalidation period. |
 | N/A                       | response                | Read-only response from Microsoft Graph if request was successful.                                                                                                                                                                    |
-| N/A                       | error                   | Read-only error from Microsoft Graph if request was not successful.                                                                                                                                                                   |
+| N/A                       | error                   | Read-only error from Microsoft Graph if request wasn't successful.                                                                                                                                                                   |
 
 ## CSS custom properties
 
@@ -80,7 +80,7 @@ The `mgt-picker` component supports several [templates](../customize-components/
 
 | Data type | Data context                    | Description                                                         |
 | --------- | ------------------------------- | ------------------------------------------------------------------- |
-| error     | The error from Microsoft Graph. | This template will be used if there is an error making the request. |
+| error     | The error from Microsoft Graph. | This template is used if there is an error making the request. |
 | loading   | N/A                             | This template is used while the request is being made.              |
 | no-data   | N/A                             | This template is used when the request returned no data.            |
 
@@ -112,7 +112,7 @@ The control uses the global authentication provider described in the [authentica
 
 ## Cache
 
-To enable and configure the cache, use the `cacheEnabled` and `cacheInvalidationPeriod` properties. By default, the `mgt-picker` component does not cache any responses.
+To enable and configure the cache, use the `cacheEnabled` and `cacheInvalidationPeriod` properties. By default, the `mgt-picker` component doesn't cache any responses.
 
 | Object store | Cached data                                                                                                         | Remarks |
 | ------------ | ------------------------------------------------------------------------------------------------------------------- | ------- |

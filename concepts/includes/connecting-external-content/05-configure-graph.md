@@ -4,7 +4,7 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD041 -->
 
-In this section you will configure the Microsoft Graph SDK client to use app-only authentication.
+In this section, you configure the Microsoft Graph SDK client to use app-only authentication.
 
 ## Create a helper class
 
