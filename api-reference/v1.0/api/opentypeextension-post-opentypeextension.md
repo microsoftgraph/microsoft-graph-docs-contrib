@@ -118,7 +118,7 @@ new **openTypeExtension** object, provide a JSON representation of the relevant 
 Depending on the operation, the response code can be `201 Created` or `202 Accepted`.
 
 When you create an extension using the same operation that you use to create a resource instance, the operation returns the same response code that it returns when you use the operation to create the resource instance without the extension.
-Refer to the corresponding topics for creating the instance, as listed [above](#create-an-extension-in-a-new-resource-instance).
+Refer to the corresponding articles for creating the instance, as listed [above](#create-an-extension-in-a-new-resource-instance).
 
 ### Response body
 
@@ -203,7 +203,7 @@ POST https://graph.microsoft.com/v1.0/me/messages
 
 ### Response 1
 
-Here is the response for the first example. The response body includes properties of the new message,
+Here's the response for the first example. The response body includes properties of the new message,
 and the following for the new extension:
 
 - The **id** property with the fully qualified name of `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.
@@ -337,7 +337,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi
 
 ### Response 2
 
-Here is the response for the second example. The response body includes the following for the new extension:
+Here's the response for the second example. The response body includes the following for the new extension:
 
 - The default property **extensionName**.
 - The **id** property with the fully qualified name of `microsoft.graph.openTypeExtension.Com.Contoso.Referral`.
@@ -612,7 +612,7 @@ POST https://graph.microsoft.com/v1.0/groups/37df2ff0-0de0-4c33-8aee-75289364aef
 
 ### Response 5
 
-Here is the response from the fifth example which contains the new conversation and a thread ID. This new thread contains an automatically
+Here is the response from the fifth example that contains the new conversation and a thread ID. This new thread contains an automatically
 created post, which in turn contains the new extension.
 
 Note: The response object shown here might be shortened for readability.

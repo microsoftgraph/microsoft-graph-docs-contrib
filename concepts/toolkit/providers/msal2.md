@@ -23,7 +23,7 @@ You can initialize the MSAL2 Provider in HTML or JavaScript.
 
 ### Initialize in your HTML page
 
-Initializing the MSAL2 provider in HTML is the simplest way to create a new provider. Use the `mgt-msal2-provider` component to set the **client-id** and other properties. This will create a new `PublicClientApplication` instance that will be used for all authentication and acquiring tokens.
+Initializing the MSAL2 provider in HTML is the simplest way to create a new provider. Use the `mgt-msal2-provider` component to set the **client-id** and other properties. This creates a new `PublicClientApplication` instance that is used for all authentication and acquiring tokens.
 
 ```html
     <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"
@@ -39,7 +39,7 @@ Initializing the MSAL2 provider in HTML is the simplest way to create a new prov
 | client-id                    | String client ID (see Creating an app/client ID). Required.                                                                                                                                                                                                           |
 | login-type                   | Enumeration between `redirect` and `popup` - default value is `redirect`. Optional.                                                                                                                                                                                   |
 | scopes                       | Comma-separated strings for scopes that the user must consent to when they sign in. Optional.
-| custom-hosts                 | Comma-seperated strings for additional domains that the Microsoft Graph client can call. Optional.                                                                                                                                                                                     |
+| custom-hosts                 | Comma-separated strings for additional domains that the Microsoft Graph client can call. Optional.                                                                                                                                                                                     |
 | authority                    | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
 | redirect-uri                 | Redirect URI string - by default the current window URI is used. Optional.                                                                                                                                                                                            |
 | prompt                       | Type of prompt to use for login, between ```SELECT_ACCOUNT```, ```CONSENT``` and ```LOGIN```. Default is ```SELECT_ACCOUNT```. Optional.
@@ -83,7 +83,7 @@ interface Msal2Config {
 
 #### Pass an existing `PublicClientApplication` in the `publicClientApplication` property.
 
-Use this when your app uses MSAL functionality beyond what's exposed by the `Msal2Provider` and other Microsoft Graph Toolkit features. This is particularly appropriate if a framework automatically instantiates and exposes a `PublicClientApplication` for you; for example, when using [msal-angular](/azure/active-directory/develop/tutorial-v2-angular). For further guidance, see the `angular-app` sample in the Microsoft Graph Toolkit [repo](https://github.com/microsoftgraph/microsoft-graph-toolkit).
+Use this when your app uses MSAL functionality beyond what's exposed by the `Msal2Provider` and other Microsoft Graph Toolkit features. This is appropriate if a framework automatically instantiates and exposes a `PublicClientApplication` for you; for example, when using [msal-angular](/azure/active-directory/develop/tutorial-v2-angular). For more information, see the `angular-app` sample in the Microsoft Graph Toolkit [repo](https://github.com/microsoftgraph/microsoft-graph-toolkit).
 
 Be sure to understand opportunities for collisions when using this option. By its very nature, there is a risk that the `Msal2Provider` can change the state of a session; for example, by having the user sign in or consent to additional scopes. Make sure that your app and other frameworks respond gracefully to these changes in state, or consider using a [custom provider](./custom.md) instead.
 
@@ -187,7 +187,7 @@ To migrate an application that's using MSAL provider to the MSAL2 Provider:
 1. Expand the **Identity** menu > expand **Applications** > select **App registrations**.
 1. Select the app registration of the app to migrate. 
 1. Go to **Authentication** on the left menu.
-1. Under **Platform configurations**, click on **Add a platform** and select **Single-page Application**.
+1. Under **Platform configurations**, select on **Add a platform** and select **Single-page Application**.
 1. Remove all the redirect URIs that you have currently registered under **Web**, and instead add them under **Single-page application**.
 1. In your code, replace `MSALProvider` with `MSAL2Provider`.
 

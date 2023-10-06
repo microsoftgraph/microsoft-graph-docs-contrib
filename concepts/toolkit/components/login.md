@@ -12,7 +12,7 @@ A Login component is a button and flyout control to facilitate Microsoft identit
 - When user is not signed in, the control is a simple button to initiate the sign in process.
 - When user is signed in, the control displays the current signed in user name, profile image, and email. When clicked, a flyout is opened with a command to sign out.
 
-You can also allow signing in with multiple accounts. This will list all your signed in accounts and give you an option to sign in with other new accounts.
+You can also allow signing in with multiple accounts. This lists all your signed in accounts and give you an option to sign in with other new accounts.
 
 ## Example
 
@@ -43,7 +43,7 @@ loginControl.userDetails = {
 };
 ```
 
-Setting `userDetails` to `null` will go to the signed out state.
+Setting `userDetails` to `null` goes to the signed out state.
 
 ## CSS custom properties
 
@@ -135,7 +135,7 @@ For more complex scenarios or a truly custom UX, this component exposes several 
 | renderButton                 | Renders the button chrome.                                |
 | renderButtonContent          | Renders the button content.                               |
 | renderSignedInButtonContent  | Render the button content when the user is signed in.     |
-| renderSignedOutButtonContent | Render the button content when the user is not signed in. |
+| renderSignedOutButtonContent | Render the button content when the user isn't signed in. |
 | renderFlyout                 | Renders the flyout chrome.                                |
 | renderFlyoutContent          | Renders the flyout content.                               |
 | renderFlyoutPersonDetails    | Render the flyout person details.                         |
