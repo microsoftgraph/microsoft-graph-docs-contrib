@@ -16,6 +16,8 @@ Reset the cross-tenant access policy template with inbound and outbound partner 
 
 In its reset state, the template has no impact on partner configuration settings, other than that an unconfigured partner configuration is created if needed, for every multi-tenant organization tenant.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
