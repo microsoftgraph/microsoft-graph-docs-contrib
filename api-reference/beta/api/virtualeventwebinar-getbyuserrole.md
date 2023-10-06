@@ -1,5 +1,5 @@
 ---
-title: "virtualEventWebinar: getByUserIdAndRole"
+title: "virtualEventWebinar: getByUserRole"
 description: "List all webinars where I am the organizer/co-organizer"
 author: "awang119"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# virtualEventWebinar: getByUserRole
+# Collection of webinars: getByUserRole
 
 Namespace: microsoft.graph
 

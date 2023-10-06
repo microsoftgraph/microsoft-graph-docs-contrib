@@ -7,7 +7,7 @@ ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# virtualEventWebinar: getByUserIdAndRole
+# Collection of webinars: getByUserIdAndRole
 
 Namespace: microsoft.graph
 
