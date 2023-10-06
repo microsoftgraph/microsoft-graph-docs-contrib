@@ -10,11 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const workbookChartPoint = {
-  index: 8
-};
-
-await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points/itemAt')
-	.post(workbookChartPoint);
+let workbookChartPoint = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points/itemAt(index=8)')
+	.get();
 
 ```

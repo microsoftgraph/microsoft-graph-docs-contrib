@@ -17,7 +17,9 @@ Update the phone number associated with a [phone authentication method](../resou
 
 You can't change a phone's type. To change a phone's type, add a new number of the desired type and then delete the object with the original type.
 
-If a user is enabled by policy to use SMS to sign in and the `mobile` number is changed, the system will attempt to register the number for use in that system.
+If a user is enabled by policy to use SMS to sign in and the `mobile` number is changed, the system attempts to register the number for use in that system.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -31,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-authentication-methods-apis-write-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-write-others.md)]
 
-Users cannot update their own phone authentication method.
+Users can't update their own phone authentication method.
 
 ## HTTP request
 
@@ -55,11 +57,11 @@ The value of `phoneMethodId` corresponding to the phoneType to update is one of 
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will be recalculated based on changes to other property values.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body will be recalculated based on changes to other property values.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|phoneNumber|String|The phone number to text or call for authentication. Phone numbers use the format "+\<country code\> \<number\>x\<extension\>", with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.|
+|phoneNumber|String|The phone number to text or call for authentication. Phone numbers use the format "+\<country code\> \<number\>x\<extension\>", with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they don't match the required format.|
 |phoneType|string| Possible values are: `mobile`, `alternateMobile`, or `office`.|
 
 ## Response
@@ -70,7 +72,7 @@ If successful, this method returns a `200 OK` response code and an updated [phon
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -125,7 +127,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

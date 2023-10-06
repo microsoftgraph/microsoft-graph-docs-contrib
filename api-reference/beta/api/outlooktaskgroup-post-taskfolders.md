@@ -17,6 +17,9 @@ Namespace: microsoft.graph
 
 
 Create an Outlook task folder under a specified [outlookTaskGroup](../resources/outlooktaskgroup.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

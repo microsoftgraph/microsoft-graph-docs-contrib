@@ -84,6 +84,8 @@ items:
             displayName: monetize, charge, cost, pricing
           - name: List of metered APIs
             href: metered-api-list.md
+      - name: Microsoft Graph activity logs
+        href: microsoft-graph-activity-logs-overview.md
       - name: Versioning and support
         href: versioning-and-support.md
       - name: Terms of use
@@ -522,6 +524,9 @@ items:
                   - name: Assign Azure AD roles using PIM
                     href: tutorial-assign-azureadroles.md
                     displayName: PIM, privileged identity management
+                  - name: Manage security alerts for Azure AD roles
+                    href: how-to-pim-alerts.md
+                    displayName: PIM alerts, privileged identity management
       - name: Industry data ETL (preview)
         href: industrydata-concept-overview.md
       - name: Mail
@@ -1142,6 +1147,8 @@ items:
                 href: toolkit/customize-components/disambiguation.md
           - name: Upgrading to v3
             href: toolkit/upgrade.md
+      - name: Microsoft Graph activity logs (preview)
+        href: microsoft-graph-activity-logs-overview.md
       - name: Configure Connected Services
         displayName: Configure Connected Services in Visual Studio
         href: office-365-connected-services.md

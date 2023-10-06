@@ -16,7 +16,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-requestFilter := "trafficType  eq 'microsoft365'"
+requestFilter := "trafficType eq 'microsoft365'"
 
 requestParameters := &graphnetworkaccess.NetworkAccessReportsMicrosoft.graph.networkaccess.entitiesSummaries(startDateTime={startDateTime},endDateTime={endDateTime})RequestBuilderGetQueryParameters{
 	Filter: &requestFilter,

@@ -15,6 +15,8 @@ Get the properties and relationships of an [assignment](../resources/educationas
 
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

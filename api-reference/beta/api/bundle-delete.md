@@ -18,6 +18,8 @@ Deleting a bundle using this method permanently deletes the bundle and doesn't m
 It doesn't, however, remove the items that were referenced by the bundle.
 They'll remain in their parent folders.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
