@@ -28,7 +28,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isEnabledInOrganization|Boolean| `true` to enable pronouns in the organization; otherwise, `false`. Default value is `false`, and pronouns are disabled.|
+|isEnabledInOrganization|Boolean| `true` to enable pronouns in the organization; otherwise, `false`. The default value is `false`, and pronouns are disabled.|
 
 ## Relationships
 None.
