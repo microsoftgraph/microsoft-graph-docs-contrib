@@ -12068,6 +12068,33 @@ items:
                     href: api/tenantrelationship-findtenantinformationbydomainname.md
                   - name: Find tenant by tenant ID
                     href: api/tenantrelationship-findtenantinformationbytenantid.md
+              - name: Trusted certificate authorities for apps (preview)
+                items:
+                  - name: Certificate-based app configuration
+                    href: resources/certificatebasedapplicationconfiguration.md
+                  - name: List
+                    href: api/certificateauthoritypath-list-certificatebasedapplicationconfigurations.md
+                  - name: Create
+                    href: api/certificateauthoritypath-post-certificatebasedapplicationconfigurations.md
+                  - name: Get
+                    href: api/certificatebasedapplicationconfiguration-get.md
+                  - name: Update
+                    href: api/certificatebasedapplicationconfiguration-update.md
+                  - name: Delete
+                    href: api/certificatebasedapplicationconfiguration-delete.md
+                  - name: Certificate authority
+                    href: resources/certificateauthorityasentity.md
+                    items:
+                    - name: List
+                      href: api/certificatebasedapplicationconfiguration-list-trustedcertificateauthorities.md
+                    - name: Create
+                      href: api/certificatebasedapplicationconfiguration-post-trustedcertificateauthorities.md
+                    - name: Get
+                      href: api/certificateauthorityasentity-get.md
+                    - name: Update
+                      href: api/certificateauthorityasentity-update.md
+                    - name: Delete
+                      href: api/certificateauthorityasentity-delete.md 
           - name: Network access
             items:
               - name: Overview
@@ -16676,6 +16703,8 @@ items:
                 href: api/sitesettings-get.md
               - name: List all sites
                 href: api/site-getallsites.md
+              - name: List recycle bin items
+                href: api/recyclebin-list-items.md
           - name: List
             items:
               - name: List
@@ -16858,6 +16887,11 @@ items:
                     href: api/webpart-getposition.md
                   - name: Get by position
                     href: api/sitepage-getwebpartsbyposition.md
+          - name: Recycle bin item (preview)
+            href: resources/recyclebinitem.md
+            items:
+              - name: List
+                href: api/recyclebin-list-items.md
           - name: Rich long-running operation
             items:
               - name: Rich long-running operation
@@ -17433,7 +17467,7 @@ items:
                         href: api/callrecording-delta.md
                       - name: List recordings by organizer
                         href: api/onlinemeeting-getallrecordings.md
-                  - name: Call transcript (preview)
+                  - name: Call transcript
                     items:
                       - name: Call transcript
                         href: resources/calltranscript.md

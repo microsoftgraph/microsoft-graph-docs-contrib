@@ -39,13 +39,13 @@ Granular controls let you determine the users, groups, and apps, both in your or
 
 ## Default cross-tenant access settings
 
-Default cross-tenant access settings determine your stance for inbound and outbound collaboration as well as tenant restrictions with all other Azure AD organizations. Any external collaboration with an organization not listed explicitly in your cross-tenant access settings will inherit these default settings. Default settings are defined using the [crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md) resource type.
+Default cross-tenant access settings determine your stance for inbound and outbound collaboration and tenant restrictions with all other Azure AD organizations. Any external collaboration with an organization not listed explicitly in your cross-tenant access settings inherit these default settings. Default settings are defined using the [crossTenantAccessPolicyConfigurationDefault](../resources/crosstenantaccesspolicyconfigurationdefault.md) resource type.
 
 By default, Azure AD assigns all Azure AD tenants a service default configuration for cross-tenant access settings. You can override these service defaults with your own configuration to suit your organization. You can confirm whether you're using the service default settings or have modified the default settings by looking at the **isServiceDefault** property returned when you query the default endpoint.
 
 ## Partner cross-tenant access settings
 
-Partner-specific cross-tenant access settings determine your stance for inbound and outbound collaboration as well as tenant restrictions with a specific Azure AD organization. Any collaboration with this organization will inherit these partner-specific settings. Partner settings are defined using the [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) resource type.
+Partner-specific cross-tenant access settings determine your stance for inbound and outbound collaboration and tenant restrictions with a specific Azure AD organization. Any collaboration with this organization inherits these partner-specific settings. Partner settings are defined using the [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) resource type.
 
 Even though you have added a partner to your cross-tenant access settings, some of your default settings will still apply. For example, if you configure only **b2bCollaborationInbound** for a partner in your cross-tenant access settings, all other settings for that partner configuration will be inherited from the default cross-tenant access settings. When querying the partner endpoint, any property on the partner object that is `null` means that for that property, it's inheriting settings from the default policy.
 
@@ -59,11 +59,11 @@ Inbound trust settings also enable you to trust devices that are compliant, or h
 
 ## Inbound cross-tenant sync in cross-tenant access settings
 
-You can enable cross-tenant synchronization to synchronize users from a partner tenant. Cross-tenant synchronization is a one-way synchronization service in Azure AD that automates the creation, update, and deletion of B2B collaboration users across tenants in an organization. You create a user synchronization policy to streamline collaboration between users in multi-tenant organizations. Partner user synchronization settings are defined using the [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md) resource type.
+You can enable cross-tenant synchronization to synchronize users from a partner tenant. Cross-tenant synchronization is a one-way synchronization service in Azure AD that automates the creation, update, and deletion of B2B collaboration users across tenants in an organization. You create a user synchronization policy to streamline collaboration between users in multitenant organizations. Partner user synchronization settings are defined using the [crossTenantIdentitySyncPolicyPartner](../resources/crosstenantidentitysyncpolicypartner.md) resource type.
 
 ## Collaborate with organizations using Azure Active Directory in different Microsoft clouds
 
-Cross-tenant access settings is used to enable collaboration with Azure AD organizations in separate Microsoft clouds. The `allowedCloudEndpoints` property enables you to specify which Microsoft clouds you'd like to extend your collaboration to. B2B collaboration is supported between the following Microsoft clouds:
+Cross-tenant access settings are used to enable collaboration with Azure AD organizations in separate Microsoft clouds. The `allowedCloudEndpoints` property enables you to specify which Microsoft clouds you'd like to extend your collaboration to. B2B collaboration is supported between the following Microsoft clouds:
 
 + Microsoft Azure commercial and Microsoft Azure Government
 + Microsoft Azure commercial and Microsoft Azure China
@@ -354,7 +354,7 @@ The cross-tenant access settings API can be used to set up multiple configuratio
 
 ## Cross-tenant access settings vs tenant restrictions
 
-Cross-tenant access settings outbound controls are for controlling how **your organization's accounts** are used for accessing resources in other Azure AD organizations. Tenant Restrictions are for controlling how your employees use **other Azure AD organizations' accounts while the employee is on your networks or devices**. Critically, outbound controls work all the time because they're associated with your accounts, while Tenant Restrictions require additional signals to be injected into the authentication requests to be enforced, because tenant restrictions are scoped to networks and devices, not accounts. Learn more about [tenant restrictions](/azure/active-directory/manage-apps/tenant-restrictions).
+Cross-tenant access settings outbound controls are for controlling how **your organization's accounts** are used for accessing resources in other Azure AD organizations. Tenant Restrictions are for controlling how your employees use **other Azure AD organizations' accounts while the employee is on your networks or devices**. Critically, outbound controls work all the time because they're associated with your accounts, while Tenant Restrictions require more signals to be injected into the authentication requests to be enforced, because tenant restrictions are scoped to networks and devices, not accounts. Learn more about [tenant restrictions](/azure/active-directory/manage-apps/tenant-restrictions).
 
 ## Next steps
 

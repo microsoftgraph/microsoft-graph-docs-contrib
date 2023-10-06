@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the status of a tenant joining a multi-tenant organization. Before a tenant added to a multi-tenant organization can participate in the multi-tenant organization the administrator of the tenant must join the multi-tenant organization.
+Defines the status of a tenant joining a multi-tenant organization. Before a tenant added to a multi-tenant organization can participate in the multi-tenant organization, the administrator of the tenant must join the multi-tenant organization.
 
 ## Methods
 |Method|Return type|Description|
@@ -33,7 +33,7 @@ Defines the status of a tenant joining a multi-tenant organization. Before a ten
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
