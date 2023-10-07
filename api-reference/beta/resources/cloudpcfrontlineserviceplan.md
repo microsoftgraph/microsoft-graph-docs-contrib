@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a servicePlan that can be used by up to 3 users. This **servicePlan** type provides an allotment of 3 Cloud PCs for the admin to provision and cannot be assigned to a specific user. This new servicePlan allows our service to create a concept of a time-share across these provisioned users, where customers can deploy a larger number of users, and Win365 will enforce a limit on active users at a given time, effectively creating an innovative way to provide the personalized experience of a Cloud PC along with the improved economics of sharing.
+Represents a servicePlan that provides an allotment of 3 Cloud PCs for the admin to provision to up to 3 users, but cannot be assigned to a specific user. This **servicePlan** enables the service to create a concept of a time-share across these provisioned users, where customers can deploy a larger number of users. Windows 365 enforces a limit on active users at a given time, effectively creating an innovative way to provide the personalized experience of a Cloud PC along with the improved economics of sharing.
 
 ## Methods
 

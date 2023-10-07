@@ -38,7 +38,7 @@ GET /deviceManagement/virtualEndpoint/frontLineServicePlans/{cloudPcFrontLineSer
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -67,7 +67,7 @@ The following is an example of a request.
 -->
 
 ```http
-GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/frontLineServicePlans/{cloudPcFrontLineServicePlanId}
+GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/frontLineServicePlans/dd3801e2-4aa1-4b16-a44b-243e55497584
 ```
 
 ### Response
@@ -85,7 +85,6 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 200 OK
-Content-Type: application/json
 
 {
   "value": {
