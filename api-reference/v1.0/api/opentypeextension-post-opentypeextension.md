@@ -285,7 +285,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 ### Example 2: Create an extension in the specified message
 #### Request
 
-The follwoing example creates an extension in the specified message. The request body includes the following for the
+The following example creates an extension in the specified message. The request body includes the following for the
 extension:
 
 - The type `microsoft.graph.openTypeExtension`.
