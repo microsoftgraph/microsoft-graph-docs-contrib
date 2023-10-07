@@ -7592,7 +7592,7 @@ items:
                   - name: Schema
                     href: resources/externalconnectors-schema.md
                   - name: Create
-                    href: api/externalconnectors-schema-create.md
+                    href: api/externalconnectors-externalconnection-patch-schema.md
                   - name: Get
                     href: api/externalconnectors-schema-get.md
               - name: External activity
@@ -7608,7 +7608,7 @@ items:
                   - name: External item
                     href: resources/externalconnectors-externalitem.md
                   - name: Create
-                    href: api/externalconnectors-externalitem-create.md
+                    href: api/externalconnectors-externalconnection-put-items.md
                   - name: Get
                     href: api/externalconnectors-externalitem-get.md
                   - name: Update
@@ -7636,7 +7636,7 @@ items:
                   - name: Create
                     href: api/externalconnectors-externalgroup-post-members.md
                   - name: Delete
-                    href: api/externalconnectors-identity-delete.md
+                    href: api/externalconnectors-externalgroupmember-delete.md
       - name: Security
         items:
           - name: Overview
@@ -8748,7 +8748,7 @@ items:
                   - name: Set user preferred presence
                     href: api/presence-setuserpreferredpresence.md
                   - name: Clear user preferred presence
-                    href: api/presence-clearuserpreferredpresence.md            
+                    href: api/presence-clearuserpreferredpresence.md
                   - name: Set user status message
                     href: api/presence-setstatusmessage.md
           - name: Employee learning

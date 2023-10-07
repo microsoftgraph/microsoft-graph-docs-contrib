@@ -4,7 +4,7 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD041 -->
 
-In this section you will add methods to [manage external connections](../../connecting-external-content-manage-connections.md).
+In this section you add methods to [manage external connections](../../connecting-external-content-manage-connections.md).
 
 ## Create a connection
 

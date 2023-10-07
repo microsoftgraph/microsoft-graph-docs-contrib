@@ -10318,7 +10318,7 @@ items:
               - name: Cloud PC reports
                 items:
                   - name: Cloud PC reports
-                    href: resources/cloudpcreports.md                  
+                    href: resources/cloudpcreports.md
                   - name: Get connection quality reports
                     href: api/cloudpcreports-getconnectionqualityreports.md
                   - name: Get daily aggregated remote connection reports
@@ -11200,7 +11200,7 @@ items:
               - name: Get preview link
                 href: api/driveitem-preview.md
               - name: Get retention label
-                href: api/driveitem-getretentionlabel.md 
+                href: api/driveitem-getretentionlabel.md
               - name: Get thumbnails
                 href: api/driveitem-list-thumbnails.md
               - name: List children
@@ -11212,7 +11212,7 @@ items:
               - name: Move item
                 href: api/driveitem-move.md
               - name: Permanently delete item
-                href: api/driveitem-permanentdelete.md              
+                href: api/driveitem-permanentdelete.md
               - name: Preview item
                 href: api/driveitem-preview.md
               - name: Remove retention label
@@ -12094,7 +12094,7 @@ items:
                     - name: Update
                       href: api/certificateauthorityasentity-update.md
                     - name: Delete
-                      href: api/certificateauthorityasentity-delete.md 
+                      href: api/certificateauthorityasentity-delete.md
           - name: Network access
             items:
               - name: Overview
@@ -15761,7 +15761,7 @@ items:
                   - name: Schema
                     href: resources/externalconnectors-schema.md
                   - name: Create
-                    href: api/externalconnectors-externalconnection-post-schema.md
+                    href: api/externalconnectors-externalconnection-patch-schema.md
                   - name: Get
                     href: api/externalconnectors-schema-get.md
                   - name: Update
@@ -16699,6 +16699,8 @@ items:
                 href: api/sitesettings-get.md
               - name: List all sites
                 href: api/site-getallsites.md
+              - name: List recycle bin items
+                href: api/recyclebin-list-items.md
           - name: List
             items:
               - name: List
@@ -16881,6 +16883,11 @@ items:
                     href: api/webpart-getposition.md
                   - name: Get by position
                     href: api/sitepage-getwebpartsbyposition.md
+          - name: Recycle bin item (preview)
+            href: resources/recyclebinitem.md
+            items:
+              - name: List
+                href: api/recyclebin-list-items.md
           - name: Rich long-running operation
             items:
               - name: Rich long-running operation

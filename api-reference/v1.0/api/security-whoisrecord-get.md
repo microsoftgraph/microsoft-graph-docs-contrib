@@ -20,6 +20,8 @@ Specify the desired **whoisRecord** in one of the following two ways:
 - Specify an **id** value to get the corresponding **whoisRecord**.
 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
