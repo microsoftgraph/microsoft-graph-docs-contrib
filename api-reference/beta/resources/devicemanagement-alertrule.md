@@ -32,7 +32,7 @@ For more information, see the [monitoring](devicemanagement-monitoring.md) resou
 
 |Property|Type|Description|
 |:---|:---|:---|
-|alertRuleTemplate|[microsoft.graph.deviceManagement.alertRuleTemplate](#alertruletemplate-values)|The rule template of the alert event. The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `unknownFutureValue`, `cloudPcInGracePeriodScenario`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `cloudPcInGracePeriodScenario`.|
+|alertRuleTemplate|[microsoft.graph.deviceManagement.alertRuleTemplate](#alertruletemplate-values)|The rule template of the alert event. The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `cloudPcInGracePeriodScenario`, `cloudPcFrontlineInsufficientLicensesScenario`, `cloudPcInaccessibleScenario`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `cloudPcInGracePeriodScenario`.|
 |description|String|The rule description.|
 |displayName|String|The display name of the rule.|
 |enabled|Boolean|The status of the rule that indicates whether the rule is enabled or disabled. If `true`, the rule is enabled; otherwise, the rule is disabled.|
@@ -40,7 +40,8 @@ For more information, see the [monitoring](devicemanagement-monitoring.md) resou
 |isSystemRule|Boolean|Indicates whether the rule is a system rule. If `true`, the rule is a system rule; otherwise, the rule is a custom defined rule and can be edited. System rules are built-in and only a few properties can be edited.|
 |notificationChannels|[microsoft.graph.deviceManagement.notificationChannel](../resources/devicemanagement-notificationchannel.md) collection|The notification channels of the rule selected by the user.|
 |severity|[microsoft.graph.deviceManagement.ruleSeverityType](#ruleseveritytype-values)|The severity of the rule. The possible values are: `unknown`, `informational`, `warning`, `critical`, `unknownFutureValue`.|
-|threshold|[microsoft.graph.deviceManagement.ruleThreshold](../resources/devicemanagement-rulethreshold.md)|The conditions to send alerts. For example, send alert when provisioning has failed for greater than or equal to 6 Cloud PCs.|
+|threshold|[microsoft.graph.deviceManagement.ruleThreshold](../resources/devicemanagement-rulethreshold.md)|The conditions to send alerts. For example, send alert when provisioning has failed for greater than or equal to 6 Cloud PCs. This property is deprecated. Should use conditions instead.|
+|conditions|[microsoft.graph.deviceManagement.ruleCondition](../resources/devicemanagement-rulecondition.md) collection|he conditions of the rule. Conditions are used to determine whether alerts should be send or not. For example, send alert when provisioning has failed for greater than or equal to 6 Cloud PCs.|
 
 ### alertRuleTemplate values
 
@@ -51,6 +52,8 @@ For more information, see the [monitoring](devicemanagement-monitoring.md) resou
 |cloudPcOnPremiseNetworkConnectionCheckScenario|Indicates that the alert rule was triggered for an issue with the on-premises network connection check. For a system rule, the alert rule was triggered for a failure with the on-premises network connection.|
 |unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
 |cloudPcInGracePeriodScenario |Indicates that the alert rule was triggered when the Cloud PC entered the grace period.|
+|cloudPcFrontlineInsufficientLicensesScenario| Indicates that the alert rule was triggered for the Fronline Cloud PCs where Cloud PC connections has reached max concurrency limit.|
+|cloudPcInaccessibleScenario| Indicates that the alert rule was triggered when Cloud PCs could not connect due to host health failure, connection errors, zone outage, under provisioning/restoring device status.|
 
 ### ruleSeverityType values
 
@@ -94,6 +97,11 @@ The following is a JSON representation of the resource.
   "severity": "String",
   "threshold": {
     "@odata.type": "microsoft.graph.deviceManagement.ruleThreshold"
-  }
+  },
+  "condition": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagement.ruleCondition"
+    }
+  ]
 }
 ```

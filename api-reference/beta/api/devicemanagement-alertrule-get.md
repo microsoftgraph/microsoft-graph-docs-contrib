@@ -130,6 +130,15 @@ Content-Type: application/json
         "operator": "greaterOrEqual",
         "target": 2
     },
+    "conditions": [
+        {
+            "relationshipType": "or",
+            "conditionCategory": "imageUploadFailures",
+            "aggregation": "count",
+            "operator": "greaterOrEqual",
+            "thresholdValue": "2"
+        }
+    ],
     "notificationChannels": [
         {
             "notificationChannelType": "portal",
