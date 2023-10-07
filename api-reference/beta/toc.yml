@@ -16410,13 +16410,13 @@ items:
                     href: api/security-article-get.md
                   - name: List articles
                     href: api/security-article-list.md
-                  - name: List indicators
+                  - name: List article indicators
                     href: api/security-article-list-indicators.md
               - name: Article indicator
                 items:
                   - name: Article indicator
                     href: resources/security-articleindicator.md
-                  - name: List indicators
+                  - name: List article indicators
                     href: api/security-article-list-indicators.md
                   - name: Get article indicator
                     href: api/security-articleindicator-get.md
@@ -16428,8 +16428,8 @@ items:
                     href: api/security-host-get.md
                   - name: Get host reputation
                     href: api/security-host-get-reputation.md
-                  - name: Get WHOIS record for a host
-                    href: api/security-host-get-whois.md
+                  - name: Get WHOIS record
+                    href: api/security-whoisrecord-get.md
                   - name: List components
                     href: api/security-host-list-components.md
                   - name: List cookies
@@ -16558,12 +16558,10 @@ items:
                 items:
                   - name: WHOIS record
                     href: resources/security-whoisrecord.md
-                  - name: Get WHOIS record
-                    href: api/security-whoisrecord-get.md
-                  - name: Get WHOIS record for a host
-                    href: api/security-host-get-whois.md
-                  - name: List WHOIS records
+                  - name: List
                     href: api/security-whoisrecord-list.md
+                  - name: Get
+                    href: api/security-whoisrecord-get.md
               - name: WHOIS history record
                 items:
                   - name: WHOIS history record
