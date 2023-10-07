@@ -14,6 +14,8 @@ Namespace: microsoft.graph.networkaccess
 
 Removes the link between the branch and the CPE device, effectively removing the connection and associated configuration between them.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -32,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLinkId}/$ref
+DELETE /networkAccess/connectivity/branches/{branchSiteId}/deviceLinks/{deviceLinkId}
 ```
 
 ## Request headers

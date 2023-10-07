@@ -19,6 +19,8 @@ For more information about how to handle unmute operations, see [unmuteParticipa
 
 > **Note:** This method is only supported for group calls.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 | Permission type                        | Permissions (from least to most privileged) |

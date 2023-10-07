@@ -18,8 +18,8 @@ Requests to index data are performed on behalf of an application without the pre
 The use cases for the APIs in this section involve building [Microsoft Graph connectors](/microsoftsearch/connectors-overview), which involves the following primary steps:
 
 1. [Create a connection](../api/externalconnectors-external-post-connections.md) to an external data source.
-2. [Create and register a schema](../api/externalconnectors-schema-create.md) that describes the type and how to index the external data.
-3. [Index the data](../api/externalconnectors-externalitem-create.md) as an external item.
+2. [Create and register a schema](../api/externalconnectors-externalconnection-patch-schema.md) that describes the type and how to index the external data.
+3. [Index the data](../api/externalconnectors-externalconnection-put-items.md) as an external item.
 
 | Use cases                                        | REST resources                              | See also |
 |:-------------------------------------------------|:--------------------------------------------|:--|
@@ -33,7 +33,7 @@ The use cases for the APIs in this section involve building [Microsoft Graph con
 
 The following are current known limitations:
 
-- Organizations are limited to a maximum of 10 connections (reach out if you need more).
+- Organizations are limited to a maximum of 30 connections. (If you need more connections, complete the [Request form](https://aka.ms/GraphConnectorsHigherCapacity).)
 - You can create up to 25 `externalItem` resources items per second.
 - An application is limited to 25 concurrent operations on a connection.
 - Connections have a capacity limit of 5,000,000 items or ~350 GB of data.

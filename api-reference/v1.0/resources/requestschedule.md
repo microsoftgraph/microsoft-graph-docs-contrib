@@ -1,6 +1,6 @@
 ---
 title: "requestSchedule resource type"
-description: "In PIM, use this resource to define the schedule for when the principal will have an eligible or active role."
+description: "In PIM, use this resource to define the schedule for when the principal has an eligible or active role."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -24,7 +24,7 @@ In PIM when creating or updating a [unifiedRoleAssignmentScheduleRequest](unifie
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.requestSchedule"

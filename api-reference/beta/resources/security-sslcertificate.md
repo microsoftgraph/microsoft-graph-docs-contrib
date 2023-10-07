@@ -30,13 +30,13 @@ Inherits from [artifact](../resources/security-artifact.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|expirationDateTime|DateTimeOffset|The date and time when a certificate expires. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|expirationDateTime|DateTimeOffset|The date and time when a certificate expires. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |fingerprint|String|A hash of the certificate calculated on the data and signature.|
-|firstSeenDateTime|DateTimeOffset|The first date and time that this **sslCertificate** was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|firstSeenDateTime|DateTimeOffset|The first date and time when this **sslCertificate** was observed. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |id|String| The system-generated ID for this **sslCertificate**. Inherited from [artifact](../resources/security-artifact.md).|
-|issueDateTime|DateTimeOffset|The date and time when a certificate was issued. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|issuer|[microsoft.graph.security.sslCertificateEntity](../resources/security-sslcertificateentity.md)|The entity granting this certificate.|
-|lastSeenDateTime|DateTimeOffset|The most recent date and time that this **sslCertificate** was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|issueDateTime|DateTimeOffset|The date and time when a certificate was issued. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|issuer|[microsoft.graph.security.sslCertificateEntity](../resources/security-sslcertificateentity.md)|The entity that grants this certificate.|
+|lastSeenDateTime|DateTimeOffset|The most recent date and time when this **sslCertificate** was observed. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |serialNumber|String|The serial number associated with an SSL certificate.|
 |sha1|String|A SHA-1 hash of the certificate. **Note:** This is not the signature.|
 |subject|[microsoft.graph.security.sslCertificateEntity](../resources/security-sslcertificateentity.md)|The person, site, machine, and so on, this certificate is for.|

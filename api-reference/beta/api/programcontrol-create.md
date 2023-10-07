@@ -24,6 +24,8 @@ Prior to making this request, the caller must have previously
 - [retrieved the list of program control types](programcontroltype-list.md), to have the value of `controlTypeId` to include in the request.
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Enable the user to update their password. Any user can update their password without belonging to any administrator role.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

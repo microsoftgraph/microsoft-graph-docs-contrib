@@ -23,6 +23,7 @@ unifiedRoles1.roleDefinitionId = "3a2c62db-5318-420d-8d74-23affee5d9d5";
 unifiedRolesList.add(unifiedRoles1);
 accessDetails.unifiedRoles = unifiedRolesList;
 delegatedAdminRelationship.accessDetails = accessDetails;
+delegatedAdminRelationship.autoExtendDuration = DatatypeFactory.newInstance().newDuration("P180D");
 
 graphClient.tenantRelationships().delegatedAdminRelationships()
 	.buildRequest()
