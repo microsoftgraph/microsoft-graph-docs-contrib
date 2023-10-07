@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Subscribe to DTMF (dual-tone multi-frequency signaling). This allows you to be notified when the user presses keys on a "Dialpad".
+Subscribe to DTMF (dual-tone multi-frequency signaling) to allow you to be notified when the user presses keys on a "Dialpad".
 
 > [!Note]
 > The **subscribeToTone** action is supported only for [calls](../resources/call.md) that are initiated with [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md).
@@ -135,7 +135,7 @@ Location: https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-40
 
 ##### Notification - tone notification
 
-The notification contain information of the tone pressed in the [toneinfo](../resources/toneinfo.md) resource.
+The notification contains information of the tone pressed in the [toneinfo](../resources/toneinfo.md) resource.
 
 ```http
 POST https://bot.contoso.com/api/calls
