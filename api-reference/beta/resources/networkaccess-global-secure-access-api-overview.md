@@ -5,6 +5,7 @@ author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
+ms.custom: zt-include
 ---
 
 # Secure access to cloud, public, and private apps using Microsoft Graph network access APIs
@@ -100,6 +101,25 @@ You can also retrieve summarized counts of traffic relating to devices, users, t
 
 The Global Secure Access services enable you to enrich the [Microsoft 365 audit logs](/microsoft-365/compliance/audit-log-search?view=o365-worldwide&preserve-view=true) with network traffic information. With enriched traffic logs, you can review network diagnostic data, performance data, and security events relevant to Microsoft 365 apps. Traffic relating to the following three Microsoft 365 workloads can be enriched with network traffic information: SharePoint, Microsoft Teams, and Exchange Online.
 
+<!-- Start of: Link to ZT guidance: H2 section -->
+
+[!INCLUDE [zero-trust](~/../azure_docs/includes/active-directory-zero-trust.md)]
+
+<!-- End of: Link to ZT guidance -->
+
 ## See also
 
 - [What is Global Secure Access?](/azure/global-secure-access/overview-what-is-global-secure-access)
+
+
+<!-- {
+  "type": "#page.annotation",
+  "description": "",
+  "keywords": "",
+  "section": "documentation",
+  "suppressions": [
+    "Error: /resources/networkaccess-global-secure-access-api-overview.md:
+      Exception processing links.
+      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')"
+  ]
+} -->

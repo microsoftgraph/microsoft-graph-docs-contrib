@@ -6,6 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
 ms.date: 06/07/2023
+ms.custom: zt-include
 ---
 
 # Govern membership and ownership of groups using PIM for groups
@@ -102,9 +103,11 @@ When a principal's *temporary active* membership or ownership of a group expires
 - The principal's details are automatically removed from the **members** and **owners** relationships.
 - If changes to the group are tracked using the [Get delta](../api/group-delta.md) and [Get delta for directory objects](../api/directoryobject-delta.md) functions, an `@odata.nextLink` indicates the removed group member or owner.
 
-## PIM for groups and identity security with Zero Trust
+<!-- Start of: Link to ZT guidance: H2 section -->
 
-PIM APIs support organizations to adopt a Zero Trust approach to secure the identities in their organization. For more information about Zero Trust, see [Securing identity with Zero Trust](/security/zero-trust/deploy/identity#secure-privileged-access-with-privileged-identity-management).
+[!INCLUDE [zero-trust](~/../azure_docs/includes/active-directory-zero-trust.md)]
+
+<!-- End of: Link to ZT guidance -->
 
 ## Permissions and privileges
 
@@ -143,12 +146,16 @@ Calls to approval and approvalStep endpoints can be made only by approver of the
 - [What is Azure AD Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
 - [Privileged Identity Management (PIM) for groups (preview)](/azure/active-directory/privileged-identity-management/concept-pim-for-groups)
   
-  <!-- {
+<!-- {
   "type": "#page.annotation",
-  "description": "Govern membership and ownership of groups using privileged identity management (PIM) for groups",
+  "description": "",
+  "keywords": "",
   "section": "documentation",
   "suppressions": [
     "Error: /resources/privilegedidentitymanagement-for-groups-api-overview.md:
+      Exception processing links.
+      Link Definition was null. Link text: !INCLUDE zero-trust (Parameter 'Definition')",
+    "Error: /resources/privilegedidentitymanagement-for-groups-api-overview.md:
       Failed to parse enumeration values for type microsoft.graph.and. Table requires a column header named one of the following: Member, Name, Value"
   ]
-}-->
+} -->

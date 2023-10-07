@@ -20,6 +20,8 @@ For more information, see [Use Azure AD groups to manage role assignments](/azur
 > [!NOTE]
 > This request might have replication delays for role assignments that were recently created, updated, or deleted.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

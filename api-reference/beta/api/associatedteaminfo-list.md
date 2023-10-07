@@ -17,6 +17,8 @@ Currently, a [user](../resources/user.md) can be associated with a [team](../res
 * A [user](../resources/user.md) can be a direct member of a [team](../resources/team.md).
 * A [user](../resources/user.md) can be a member of a shared [channel](../resources/channel.md) that is hosted inside a [team](../resources/team.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

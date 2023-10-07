@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Upload a plain text secret to a [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). Examples of secrets are application secrets in Azure Active Directory, Google, Facebook, or any other identity provider. his method returns [trustFrameworkKey](../resources/trustframeworkkey.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
