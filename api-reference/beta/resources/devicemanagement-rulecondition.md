@@ -1,5 +1,5 @@
 ---
-title: "ruleConstion resource type"
+title: "ruleCondition resource type"
 description: "Include information about an alert rule's conditions."
 author: "zhishending"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
-# ruleThreshold resource type
+# ruleCondition resource type
 
 Namespace: microsoft.graph.deviceManagement
 
@@ -21,8 +21,8 @@ Include information about conditions of an [alert rule](devicemanagement-alertru
 
 |Property|Type|Description|
 |:---|:---|:---|
-|relationshipType|[microsoft.graph.deviceManagement.realtionshipType](#relationshipType-values)| Indicates the relationship type.  Possible values are: `and`, `or`.|
-|conditionCategory|[microsoft.graph.deviceManagement.conditionCategory](#conditionCategory-values)|Indicates the property target of the alert rule condition. Possible values are :  `provisionFailures`,`imageUploadFailures`, `azureNetworkConnectionCheckFailures`,  `cloudPcInGracePeriod`,`frontlineInsufficientLicenses`,`cloudPcConnectionErrors`,`cloudPcHostHealthCheckFailures`,`cloudPcZoneOutage`,`unknownFutureValue`.|
+|relationshipType|[microsoft.graph.deviceManagement.realtionshipType](#relationshiptype-values)| Indicates the relationship type.  Possible values are: `and`, `or`.|
+|conditionCategory|[microsoft.graph.deviceManagement.conditionCategory](#conditioncategory-values)|Indicates the property target of the alert rule condition. Possible values are :  `provisionFailures`,`imageUploadFailures`, `azureNetworkConnectionCheckFailures`,  `cloudPcInGracePeriod`,`frontlineInsufficientLicenses`,`cloudPcConnectionErrors`,`cloudPcHostHealthCheckFailures`,`cloudPcZoneOutage`,`unknownFutureValue`.|
 |aggregation|[microsoft.graph.deviceManagement.aggregationType](#aggregationtype-values)|Indicates the built-in aggregation methods. The possible values are: `count`, `percentage`, `affectedCloudPcCount`, `affectedCloudPcPercentage`, `unknownFutureValue`.|
 |operator|[microsoft.graph.deviceManagement.operatorType](#operatortype-values)|Indicates the built-in operator. The possible values are: `greaterOrEqual`, `equal`, `greater`, `less`, `lessOrEqual`, `notEqual`, `unknownFutureValue`.|
 |thresholdValue|String|Indicates the threshold value of the alert condition. Threshold value could be a number in string form or string like "WestUS".|
