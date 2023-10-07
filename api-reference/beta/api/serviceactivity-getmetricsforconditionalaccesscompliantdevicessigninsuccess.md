@@ -47,9 +47,9 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|inclusiveStartDateTime|DateTimeOffset|Sets the starting date and time in UTC. The allowed earliest start time is 30 days in the past.|
-|exclusiveEndDateTime|DateTimeOffset|Sets the ending date and time in UTC.|
-|aggregationIntervalInMinute|Int32|Aggregation interval in minutes. The default value is 15, which sets the data to be aggregated into 15-minute sets. Allowed values are 5, 10, 15 and 30.|
+|inclusiveIntervalStartDateTime|DateTimeOffset|Sets the starting date and time in UTC. The allowed earliest start time is 30 days in the past.|
+|exclusiveIntervalEndDateTime|DateTimeOffset|Sets the ending date and time in UTC.|
+|aggregationIntervalInMinutes|Int32|Aggregation interval in minutes. This parameter is optional. The default value is 15, which sets the data to be aggregated into 15-minute sets. Allowed values are 5, 10, 15 and 30.|
 
 
 ## Request headers
@@ -74,7 +74,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForConditionalAccessCompliantDevicesSignInSuccess(inclusiveStartDateTime=2023-01-01T00:00:00Z,exclusiveEndDateTime=2023-01-01T00:20:00Z,aggregationIntervalInMinute=10)
+GET https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForConditionalAccessCompliantDevicesSignInSuccess(inclusiveIntervalStartDateTime=2023-01-01T00:00:00Z,exclusiveIntervalEndDateTime=2023-01-01T00:20:00Z,aggregationIntervalInMinutes=10)
 ```
 
 

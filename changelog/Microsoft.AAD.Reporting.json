@@ -2749,7 +2749,15 @@
     {
       "ChangeList": [
         {
-          "Id": "0218d03d-4ede-4e0f-b759-bc8469e53b45",
+          "Id": "dbe9e6bd-57ef-430e-b9a6-3669472052da",
+          "ApiChange": "Resource",
+          "ChangedApiName": "serviceActivityValueMetric",
+          "ChangeType": "Addition",
+          "Description": "Added the [serviceActivityValueMetric](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivityValueMetric?view=graph-rest-beta) resource type.",
+          "Target": "serviceActivityValueMetric"
+        },
+        {
+          "Id": "dbe9e6bd-57ef-430e-b9a6-3669472052da",
           "ApiChange": "Resource",
           "ChangedApiName": "serviceActivity",
           "ChangeType": "Addition",
@@ -2757,7 +2765,7 @@
           "Target": "reportRoot"
         },
         {
-          "Id": "0218d03d-4ede-4e0f-b759-bc8469e53b45",
+          "Id": "dbe9e6bd-57ef-430e-b9a6-3669472052da",
           "ApiChange": "Resource",
           "ChangedApiName": "serviceActivity",
           "ChangeType": "Addition",
@@ -2765,15 +2773,7 @@
           "Target": "serviceActivity"
         },
         {
-          "Id": "0218d03d-4ede-4e0f-b759-bc8469e53b45",
-          "ApiChange": "Resource",
-          "ChangedApiName": "serviceActivityValueMetric",
-          "ChangeType": "Addition",
-          "Description": "Added the [serviceActivityValueMetric](https://learn.microsoft.com/en-us/graph/api/resources/serviceActivityValueMetric?view=graph-rest-beta) resource",
-          "Target": "serviceActivityValueMetric"
-        },
-        {
-          "Id": "0218d03d-4ede-4e0f-b759-bc8469e53b45",
+          "Id": "dbe9e6bd-57ef-430e-b9a6-3669472052da",
           "ApiChange": "Method",
           "ChangedApiName": "getMetricsForConditionalAccessCompliantDevicesSignInSuccess",
           "ChangeType": "Addition",
@@ -2781,7 +2781,7 @@
           "Target": "getMetricsForConditionalAccessCompliantDevicesSignInSuccess"
         },
         {
-          "Id": "0218d03d-4ede-4e0f-b759-bc8469e53b45",
+          "Id": "dbe9e6bd-57ef-430e-b9a6-3669472052da",
           "ApiChange": "Method",
           "ChangedApiName": "getMetricsForConditionalAccessManagedDevicesSignInSuccess",
           "ChangeType": "Addition",
@@ -2789,7 +2789,7 @@
           "Target": "getMetricsForConditionalAccessManagedDevicesSignInSuccess"
         },
         {
-          "Id": "0218d03d-4ede-4e0f-b759-bc8469e53b45",
+          "Id": "dbe9e6bd-57ef-430e-b9a6-3669472052da",
           "ApiChange": "Method",
           "ChangedApiName": "getMetricsForMfaSignInFailure",
           "ChangeType": "Addition",
@@ -2797,7 +2797,7 @@
           "Target": "getMetricsForMfaSignInFailure"
         },
         {
-          "Id": "0218d03d-4ede-4e0f-b759-bc8469e53b45",
+          "Id": "dbe9e6bd-57ef-430e-b9a6-3669472052da",
           "ApiChange": "Method",
           "ChangedApiName": "getMetricsForMfaSignInSuccess",
           "ChangeType": "Addition",
@@ -2805,7 +2805,7 @@
           "Target": "getMetricsForMfaSignInSuccess"
         },
         {
-          "Id": "0218d03d-4ede-4e0f-b759-bc8469e53b45",
+          "Id": "dbe9e6bd-57ef-430e-b9a6-3669472052da",
           "ApiChange": "Method",
           "ChangedApiName": "getMetricsForSamlSignInSuccess",
           "ChangeType": "Addition",
@@ -2813,10 +2813,10 @@
           "Target": "getMetricsForSamlSignInSuccess"
         }
       ],
-      "Id": "0218d03d-4ede-4e0f-b759-bc8469e53b45",
+      "Id": "dbe9e6bd-57ef-430e-b9a6-3669472052da",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-09-26T20:06:41.3762013Z",
+      "CreatedDateTime": "2023-10-06T19:42:37.8361251Z",
       "WorkloadArea": "Reports and audit",
       "SubArea": "Identity and access reports"
     }
