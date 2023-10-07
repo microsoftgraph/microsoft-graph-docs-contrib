@@ -36,12 +36,12 @@ Derived from [attachment](attachment.md).
 |:---------------|:--------|:----------|
 |contentBytes|Edm.Binary|The base64-encoded contents of the file.|
 |contentId|String|The ID of the attachment in the Exchange store.|
-|contentLocation|String|Do not use this property as it is not supported.|
+|contentLocation|String|Don't use this property as it isn't supported.|
 |contentType|String|The content type of the attachment.|
 |id|String|The attachment ID.|
-|isInline|Boolean|Set to `true` if this is an inline attachment.|
+|isInline|Boolean|Set to `true` if the attachment is an inline attachment.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the attachment was last modified.|
-|name|String|The name representing the text that is displayed below the icon representing the embedded attachment.This does not need to be the actual file name.|
+|name|String|The name representing the text that is displayed below the icon representing the embedded attachment and doesn't need to be the actual file name.|
 |size|Int32|The size in bytes of the attachment.|
 
 ## Relationships
@@ -50,7 +50,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource
+Here's a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",

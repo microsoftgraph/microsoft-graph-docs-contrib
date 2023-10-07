@@ -16,6 +16,8 @@ Get the instances (occurrences) of an event for a specified time range.
 If the event is a `seriesMaster` type, this returns the 
 occurrences and exceptions of the event in the specified time range.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 Get the properties and relationships of the [eventMessage](../resources/eventmessage.md) object. Apply the `$expand` parameter on the **event**
 navigation property to get the associated [event](../resources/event.md) in an attendee's calendar.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ### Get the event message body in HTML or text format
 
 Event message bodies can be in HTML or text format.

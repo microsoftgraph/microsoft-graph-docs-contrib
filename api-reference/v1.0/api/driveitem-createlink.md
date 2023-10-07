@@ -18,6 +18,8 @@ If a sharing link of the specified type already exists for the app, the existing
 
 DriveItem resources inherit sharing permissions from their ancestors.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

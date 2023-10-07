@@ -21,6 +21,8 @@ Remove a tenant from a multi-tenant organization. A tenant can be removed in the
 
 To allow for asynchronous processing, you must wait for **up to 2 hours** before removal of a tenant is completed.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

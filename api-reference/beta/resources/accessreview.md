@@ -71,7 +71,7 @@ Whether these relationships are present on an object, depends upon whether the o
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

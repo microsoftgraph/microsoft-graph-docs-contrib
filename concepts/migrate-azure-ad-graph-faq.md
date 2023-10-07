@@ -30,7 +30,7 @@ If you own an application's source code, search for the `https://graph.windows.n
 ### Step 2: Check the app's API permissions on the Microsoft Entra admin center
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a global administrator.
-1. Expand the **Identity** menu > Select **Applications** > **App registrations**.
+1. Expand the **Identity** menu > select **Applications** > **App registrations**.
 1. In the **App registrations** window, enable the **App registrations search preview**. Select the **All Applications** tab then select the **Add filters** option. Choose the **Application (client) ID** option from the list of available filters and select **Apply**.  A filter pops up.
 1. In the text box, enter the app ID you retrieved in Step 1 and select **Apply**. The list has narrowed down to the specified app.
 
@@ -39,7 +39,7 @@ If you own an application's source code, search for the `https://graph.windows.n
 1. Select the app. This reveals the app's menu.
 1. From the left pane of the window, select **API permissions**. This reveals configured API permissions for your app, including Azure AD Graph permissions.
 
-    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/configuredPermissions.png" alt-text="An app's API permissions list from the Microsoft Entr admin center." border="true":::
+    :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/configuredPermissions.png" alt-text="An app's API permissions list from the Microsoft Entra admin center." border="true":::
 
 
 ## As an IT admin, how do I identify apps in my tenant that use Azure AD Graph?
@@ -52,9 +52,8 @@ Check your network server traffic logs through a filter proxy for any apps calli
 
 ### Method 2: Use the App registrations menu of the Microsoft Entra admin center
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a global administrator.
-1. Expand the **Identity** menu.
-1. Select **Applications** > **App registrations**.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
+1. Expand the **Identity** menu > select **Applications** > **App registrations**.
 1. In the **App registrations** window, enable the **App registrations search preview**. Select the **All Applications** tab then select the **Add filters** option. Choose the **Requested API** option from the list of available filters and select **Apply**. The **Requested API** filter pops up.
 
     :::image type="content" source="/graph/images/aadgraph-to-msgraph-migration/RequestedAPI.png" alt-text="Filter apps by their requested API." border="true":::
@@ -71,7 +70,7 @@ Download and run [this PowerShell script](https://github.com/microsoft/AzureADGr
 ## Microsoft sent me an email with a list of App IDs for apps using Azure AD Graph. How do I find the details of each app, including its owner?
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a global administrator.
-1. Expand the **Identity** menu > Select **Applications** > **App registrations**.
+1. Expand the **Identity** menu > select **Applications** > **App registrations**.
 1. In the **App registrations** window, enable the **App registrations search preview**. Select the **All Applications** tab then select the **Add filters** option. Choose the **Application (client) ID** option from the list of available filters and select **Apply**.  A filter pops up.
 1. Enter an app ID in the text box and select **Apply**. The list has narrowed down to the specified app.
 
@@ -92,7 +91,7 @@ The email you receive includes the tenant IDs linked to the app IDs. Follow thes
     1. From the list, use the **Switch** tab to switch to the directory whose Directory ID matches the tenant ID you received in the email. The active directory is marked **Current**.
     1. Close the window.
 1. In the relevant directory, expand the **Identity** menu > select **Overview**.
-1. On the **Overview** window, select **Properties**.
+1. In the **Overview** window, select **Properties**.
 1. In the **Tenant properties** window, first verify the value of Tenant ID matches a tenant ID you received in the email. Retrieve the **Technical contact** details to contact the tenant so they can be aware of the deprecation.
 
     :::image type="content" source="images/aadgraph-to-msgraph-migration/tenantTechnicalContact.png" alt-text="Find the technical contact for a tenant" border="true":::
@@ -106,7 +105,7 @@ To migrate your apps from Azure AD Graph to Microsoft Graph, follow the [App mig
 First, confirm the full list of apps owned by your tenant or third-party applications integrated in your tenant.
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a global administrator.
-1. Expand the **Identity** menu > Select **Applications** > **App registrations**.
+1. Expand the **Identity** menu > select **Applications** > **App registrations**.
 1. In the App registrations window, select the **All Applications** tab.
 1. Select the app to reveal the app's menu.
 1. From the left pane of the window, menu options reveal the app's details including its Owners.

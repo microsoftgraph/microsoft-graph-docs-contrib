@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get [groups](../resources/group.md), [directory roles](../resources/directoryrole.md), and [administrative units](../resources/administrativeunit.md) that the user is a member of through either direct or transitive membership.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +49,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -59,7 +61,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 
 #### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 
@@ -108,7 +110,7 @@ GET https://graph.microsoft.com/beta/users/{id}/transitiveMemberOf
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -148,7 +150,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -162,7 +164,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 <!-- {
   "blockType": "response",
@@ -182,7 +184,7 @@ Content-type: text/plain
 
 #### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -196,7 +198,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 <!-- {
   "blockType": "response",
@@ -214,7 +216,7 @@ Content-type: text/plain
 
 #### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -228,7 +230,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -259,7 +261,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -273,7 +275,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

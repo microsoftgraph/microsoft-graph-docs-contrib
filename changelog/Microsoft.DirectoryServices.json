@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "6e41743f-c9a0-4ee7-bcb8-a09ab773585b",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Change",
+          "Description": "Added the capability to update the **onPremisesSyncEnabled** property of the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) entity.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "6e41743f-c9a0-4ee7-bcb8-a09ab773585b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-09-18T00:00:00.1897204Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "de6bd646-f2ab-44d0-b45c-21c58410c210",
           "ApiChange": "Resource",
           "ChangedApiName": "Throttling",
@@ -7778,7 +7796,7 @@
       "Id": "c022f245-26dd-4fd7-81f2-4297d5a37c6d",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-05-02T19:15:17.4911623Z",
+      "CreatedDateTime": "2023-10-03T00:00:00.4911623Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },

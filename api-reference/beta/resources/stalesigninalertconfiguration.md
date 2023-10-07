@@ -1,6 +1,6 @@
 ---
 title: "staleSignInAlertConfiguration resource type"
-description: "Represents an alert configuration that is triggered if there are accounts in a privileged role that have not signed into Azure AD within a specified period."
+description: "Represents an alert configuration that is triggered if there are accounts in a privileged role that haven't signed into Azure AD within a specified period."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert configuration that is triggered if there are accounts in a privileged role that have not signed into Azure AD within a specified period. These accounts might be service or shared accounts that are not being maintained and are vulnerable to security threats.
+Represents an alert configuration that is triggered if there are accounts in a privileged role that haven't signed into Azure AD within a specified period. These accounts might be service or shared accounts that aren't being maintained and are vulnerable to security threats.
 
 Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).
 
@@ -21,7 +21,7 @@ Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrole
 |Property|Type|Description|
 |:---|:---|:---|
 |alertDefinitionId|String|The identifier of an alert definition. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md). Supports `$filter` (`eq`, `ne`).|
-|duration|Duration|The number of days to look back from current timestamp within which the account has not signed in.|
+|duration|Duration|The number of days to look back from current timestamp within which the account hasn't signed in.|
 |id|String|The identifier of the alert configuration. Inherited from [entity](../resources/entity.md).|
 |isEnabled|Boolean|`true` if the alert is enabled. Setting it to `false` disables PIM scanning the tenant to identify instances that trigger this alert. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
 |scopeId|String|The identifier of the scope to which the alert is related. Only `/` is supported to represent the tenant scope. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md). Supports `$filter` (`eq`, `ne`).|
@@ -33,7 +33,7 @@ Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrole
 |alertDefinition|[unifiedRoleManagementAlertDefinition](../resources/unifiedrolemanagementalertdefinition.md)| The definition of the alert that contains its description, impact, and measures to mitigate or prevent it. Supports `$expand`.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

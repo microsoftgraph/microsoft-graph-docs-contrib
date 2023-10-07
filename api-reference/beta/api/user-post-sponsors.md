@@ -48,7 +48,7 @@ In the request body, supply a JSON object and pass an `@odata.id` parameter with
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -56,9 +56,9 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 #### Request
 
-The following is an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [user](../resources/user.md) object to be assigned as a sponsor.
+Here's an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [user](../resources/user.md) object to be assigned as a sponsor.
 
-The following is an example of a request.
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -86,7 +86,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 <!-- {
   "blockType": "response"
 } -->
@@ -98,9 +98,8 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [group](../resources/group.md) object to be assigned as a sponsor.
+Here's an example of the request. The request body is a JSON object with an `@odata.id` parameter and the read URL for the [group](../resources/group.md) object to be assigned as a sponsor.
 
-The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -128,7 +127,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 <!-- {
   "blockType": "response"
 } -->

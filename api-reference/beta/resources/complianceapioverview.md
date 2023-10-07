@@ -29,7 +29,7 @@ Explore the [Microsoft 365 eDiscovery APIs](ediscovery-ediscoveryapioverview.md)
 
 Records management in Microsoft Purview provides the ability to manage regulatory, legal, and business-critical records across corporate data. It helps organizations manage retention and deletion of data to meet their legal obligations and compliance regulations, and increases efficiency by enabling the regular disposition of items that no longer have to be retained.
 
-For more details, see [Microsoft Purview records management](/microsoft-365/compliance/records-management).
+For more information, see [Microsoft Purview records management](/microsoft-365/compliance/records-management).
 
 The records management API is defined in the OData subnamespace, microsoft.graph.security.
 Explore the [Microsoft Purview records management APIs](security-recordsManagement-overview.md).
