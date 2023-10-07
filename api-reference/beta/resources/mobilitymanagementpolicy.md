@@ -1,6 +1,6 @@
 ---
 title: "mobilityManagementPolicy resource type"
-description: "A mobility management policy represents an auto-enrollment policy for a mobility management application configured in Azure AD."
+description: "A mobility management policy represents an autoenrollment policy for a mobility management application configured in Azure AD."
 author: "ravennMSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In Azure AD, a mobility management policy represents an auto-enrollment configuration for a mobility management (MDM or MAM) application. These policies are only applicable to devices based on Windows 10 OS and its derivatives (Surface Hub, Hololens etc.). [Auto-enrollment](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) enables organizations to automatically enroll devices into their chosen mobility management application as part of [Azure AD join](/azure/active-directory/devices/concept-azure-ad-join) or [Azure AD register](/azure/active-directory/devices/concept-azure-ad-register) process on Windows 10 devices.
+In Azure AD, a mobility management policy represents an autoenrollment configuration for a mobility management (MDM or MAM) application. These policies are only applicable to devices based on Windows 10 OS and its derivatives (Surface Hub, HoloLens etc.). [Autoenrollment](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) enables organizations to automatically enroll devices into their chosen mobility management application as part of [Azure AD join](/azure/active-directory/devices/concept-azure-ad-join) or [Azure AD register](/azure/active-directory/devices/concept-azure-ad-register) process on Windows 10 devices.
 
 ## Methods
 
