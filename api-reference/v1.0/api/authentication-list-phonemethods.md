@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [phone authentication method](../resources/phoneauthenticationmethod.md) objects for a user. This will return up to three objects, as a user can have up to three phones usable for authentication. This method is available only for standard Azure AD and B2B users, but not B2C users.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

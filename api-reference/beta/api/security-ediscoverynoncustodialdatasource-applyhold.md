@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Start the process of applying hold on [eDiscovery non-custodial data sources](../resources/security-ediscoverynoncustodialdatasource.md). After the operation is created, you can get the status by retrieving the `Location` parameter from the response headers. The location provides a URL that returns an [eDiscoveryHoldOperation](../resources/security-ediscoveryholdoperation.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

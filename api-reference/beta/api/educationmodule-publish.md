@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 Change the state of an [educationModule](../resources/educationmodule.md) from its original `draft` status to the `published` status.
 
-Only teachers in the class can perform this operation. When a module is in draft status, students will not see the module. When you call this API, the module appears in the student's classwork list.
+Only teachers in the class can perform this operation. When a module is in draft status, students won't see the module. When you call this API, the module appears in the student's class work list.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EduCurricula.ReadWrite  |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not supported. | 
+|Application | EduCurricula.ReadWrite.All | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +49,7 @@ If successful, this method returns a `200 Ok` response code and an [educationMod
 The following example shows how to call this API.
 
 ### Request
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,7 +97,7 @@ POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-
 ---
 
 ### Response
-The following is an example of a response.
+Here's an example of a response.
 
 <!-- {
   "blockType": "response",

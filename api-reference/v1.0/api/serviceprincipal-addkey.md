@@ -21,6 +21,8 @@ As part of the request validation for this method, a proof of possession of an e
 
 ServicePrincipals that don’t have any existing valid certificates (i.e.: no certificates have been added yet, or all certificates have expired), won’t be able to use this service action. [Update servicePrincipal](../api/serviceprincipal-update.md) can be used to perform an update instead.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 |Permission type      | Permissions (from least to most privileged)              |
@@ -32,7 +34,7 @@ ServicePrincipals that don’t have any existing valid certificates (i.e.: no ce
 
 ## HTTP request
 
-You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
+You can address the service principal using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 
 <!-- { "blockType": "ignored" } -->
 

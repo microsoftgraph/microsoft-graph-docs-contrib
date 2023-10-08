@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of participant objects in the call.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 | Permission type | Permissions (from least to most privileged) |

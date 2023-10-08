@@ -17,7 +17,7 @@ The disambiguation feature enables you to build web parts using the latest versi
 
 When building SharePoint Framework web parts using React, any component that imports from the `@microsoft/mgt-react` library must be asynchronously loaded after configuring the disambiguation setting. The `lazyLoadComponent` helper function exists to facilitate using `React.lazy` and `React.Suspense` to lazy load these components from the top-level web part. The `lazyLoadComponent` function is provided in the `@microsft/mgt-spfx-utils` package. Because the disambiguation value is only used when rendering the web component, there is no change to the way a given component is referenced in React code.
 
-The following example shows a minimal web part that shows how to use Microsoft Graph Toolkit with disambiguation in React-based SharePoint Framework web parts. For a more complete examples, see the [React SharePoint Web Part Sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/blob/main/samples/sp-webpart/src/webparts/mgtDemo/MgtDemoWebPart.ts).
+The following example shows a minimal web part that shows how to use Microsoft Graph Toolkit with disambiguation in React-based SharePoint Framework web parts. For a more complete examples, see the [React SharePoint Web Part Sample](https://github.com/pnp/mgt-samples/blob/main/samples/app/sp-webpart/src/webparts/mgtDemo/MgtDemoWebPart.ts).
 
 ```ts
 // [...] trimmed for brevity

@@ -20,6 +20,8 @@ Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by r
 [driveItem]: ../resources/driveitem.md
 [recipient]: ../resources/driverecipient.md
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

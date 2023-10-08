@@ -20,6 +20,8 @@ Create a new [application](../resources/application.md) object.
 >
 > Do not share application client IDs (**appId**) in API documentation or code samples.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

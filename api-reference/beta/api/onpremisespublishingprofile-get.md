@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of an [onPremisesPublishingProfile](../resources/onpremisespublishingprofile.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /onPremisesPublishingProfiles/{publishingType}/
+GET /onPremisesPublishingProfiles/{profile-id}/
 ```
 
 ## Optional query parameters

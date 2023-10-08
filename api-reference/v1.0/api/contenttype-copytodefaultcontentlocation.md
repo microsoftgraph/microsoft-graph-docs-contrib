@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Copy a file to a default content location in a [content type][contentType]. The file can then be added as a default file or template via a POST operation.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions  
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

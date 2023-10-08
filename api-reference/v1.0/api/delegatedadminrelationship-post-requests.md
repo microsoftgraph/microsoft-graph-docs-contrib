@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Create a new [delegatedAdminRelationshipRequest](../resources/delegatedadminrelationshiprequest.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -44,7 +46,7 @@ You can specify the following properties when creating a **delegatedAdminRelatio
 
 |Property|Type|Description|
 |:---|:---|:---|
-|action|delegatedAdminRelationshipRequestAction|The action to be performed on the delegated admin relationship. Required. The possible values are: `lockForApproval`, `terminate`.|
+|action|delegatedAdminRelationshipRequestAction|The action to be performed on the delegated admin relationship. Required. The possible values are: `lockForApproval`, `approve`, `terminate`, `unknownFutureValue`, `reject`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `reject`. For a partner to finalize a relationship in the `created` **status**, set the **action** to `lockForApproval`. For a partner to terminate a relationship in the `active` **status**, set the **action** to `terminate`. For an indirect reseller to approve a relationship created by an indirect provider in the `approvalPending` **status**, set the **action** to `approve`. For an indirect reseller to reject a relationship created by an indirect provider in the `approvalPending` **status**, set the **action** to `reject`.|
 
 ## Response
 

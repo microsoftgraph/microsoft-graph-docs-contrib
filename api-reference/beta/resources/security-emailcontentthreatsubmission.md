@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a threat submission related to the content of an email. This is created when the submission is made using email file content.
+Represents a threat submission related to the content of an email, and is created when the submission is made using email file content.
 
 Inherits from [emailThreatSubmission](../resources/security-emailthreatsubmission.md).
 
@@ -26,7 +26,7 @@ Inherits from [emailThreatSubmission](../resources/security-emailthreatsubmissio
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
