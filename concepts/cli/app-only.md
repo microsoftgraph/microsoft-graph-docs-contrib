@@ -29,15 +29,13 @@ You'll need an X.509 certificate installed in your user's trusted store on the m
 
 ### Register the application
 
-You can register the application in the [Azure Active Directory portal](https://aad.portal.azure.com).
+You can register the application in the [Microsoft Entra admin center](https://entra.microsoft.com).
 
-1. Open a browser, go to the [Azure Active Directory admin center](https://aad.portal.azure.com), and sign in using a Microsoft 365 tenant organization admin.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
 
-1. In the left pane, select **Azure Active Directory**, and under **Manage**, select **App registrations**.
+1. Expand the **Identity** menu > select **Applications** > **App registrations** > **New registration**.
 
-    ![A screenshot of the App registrations](../images/cli/aad-portal-app-registrations.png)
-
-1. Select **New registration**. On the **Register an application** page, set the values as follows.
+1. On the **Register an application** page, set the values as follows.
 
     - Set **Name** to `Graph CLI App-Only`.
     - Set **Supported account types** to **Accounts in this organizational directory only**.

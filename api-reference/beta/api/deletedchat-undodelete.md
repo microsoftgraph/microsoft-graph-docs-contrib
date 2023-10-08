@@ -16,6 +16,8 @@ Restore a  [deletedChat](../resources/deletedchat.md) to an active [chat](../res
 
 >**Note:** This operation is not supported for non-admin users.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

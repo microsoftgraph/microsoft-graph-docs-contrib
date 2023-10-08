@@ -1,6 +1,6 @@
 ---
 title: "noMfaOnRoleActivationAlertIncident resource type"
-description: "Represents the details of an alert incident that is triggered if roles do not require multi-factor authentication for activation."
+description: "Represents the details of an alert incident that is triggered if roles don't require multi-factor authentication for activation."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the details of an alert incident that is triggered if roles do not require multi-factor authentication for activation.
+Represents the details of an alert incident that is triggered if roles don't require multi-factor authentication for activation.
 
 Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanagementalertincident.md).
 
@@ -28,7 +28,7 @@ Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanag
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

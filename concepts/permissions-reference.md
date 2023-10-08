@@ -1286,7 +1286,7 @@ The following usages are valid for both delegated and application permissions:
 * _IdentityUserFlow.Read.All_: Read all user attribute assignments in an Azure AD B2C user flow (`GET beta/identity/b2cUserFlows/{id}/userAttributeAssignments`)
 * _IdentityUserFlow.ReadWrite.All_: Create a new user flow in an Azure AD B2C tenant (`POST beta/identity/b2cUserFlows`)
 * _IdentityUserFlow.ReadWrite.All_: Create a new user flow in an Azure Active Directory (Azure AD) tenant (`POST beta/identity/b2xUserflows`)
-* _IdentitytUserFlow.ReadWrite.All_: Add an identity provider to an Azure AD B2C user flow (`PATCH beta/identity/b2cUserFlows/{id}/identityProviders/$ref`)
+* _IdentityUserFlow.ReadWrite.All_: Add an identity provider to an Azure AD B2C user flow (`PATCH beta/identity/b2cUserFlows/{id}/identityProviders/$ref`)
 * _IdentityUserFlow.ReadWrite.All_: Remove an identity provider from an Azure AD B2C user flow (`DELETE beta/identity/b2cUserFlows/{id}/identityProviders/{id}`)
 * _IdentityUserFlow.ReadWrite.All_: Create a user attribute assignment in an Azure AD B2C user flow (`POST beta/identity/b2cUserFlows/{id}/userAttributeAssignments`)
 
@@ -2058,14 +2058,14 @@ For an app with delegated permissions to read programs and program controls, the
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_RecordsManagement.Read.All_ |Read Records Management configuration, labels, and policies |Allows the application to read any data from Records Management, such as configuration, labels, and policies on behalf of the signed-in user. |Yes |
-|_RecordsManagement.ReadWrite.All_ | Read and write Records Management configuration, labels, and policies | Allow the application to create, update and delete any data from Records Management, such as configuration, labels, and policies on behalf of the signed-in user. |Yes |
+|_RecordsManagement.ReadWrite.All_ | Read and write Records Management configuration, labels, and policies | Allows the application to create, update and delete any data from Records Management, such as configuration, labels, and policies on behalf of the signed-in user. |Yes |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_RecordsManagement.Read.All_ |Read Records Management configuration, labels and policies |Allows the application to read any data from Records Management, such as configuration, labels, and policies without the signed in user. |Yes |
-|_RecordsManagement.ReadWrite.All_ | Read and write Records Management configuration, labels and policies |Allow the application to create, update and delete any data from Records Management, such as configuration, labels, and policies without the signed in user. |Yes |
+|_RecordsManagement.ReadWrite.All_ | Read and write Records Management configuration, labels and policies |Allows the application to create, update and delete any data from Records Management, such as configuration, labels, and policies without the signed in user. |Yes |
 
 ### Example usage
 
@@ -2903,7 +2903,11 @@ _ThreatIntelligence.Read.All_: Get host reputation information, without a signed
 
 #### Application permissions
 
-None.
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_AppCertTrustConfiguration.Read.All_| Read all trusted certificate authorities| Allows the app to read configuration of trusted certificate authorities for applications, without a signed-in user. | Yes | Yes |
+|_AppCertTrustConfiguration.ReadWrite.All_| Manage all trusted certificate authorities| Allows the app to read and write configuration of trusted certificate authorities for applications, without a signed-in user. | Yes | Yes |
+
 
 ---
 

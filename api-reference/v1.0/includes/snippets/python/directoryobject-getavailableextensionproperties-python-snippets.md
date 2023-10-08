@@ -8,8 +8,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 graph_client = GraphServiceClient(request_adapter)
 
+request_body = GetAvailableExtensionPropertiesPostRequestBody(
+)
 
-result = await graph_client.directory_objects.get_available_extension_properties.post()
+result = await graph_client.directory_objects.get_available_extension_properties.post(body = request_body)
 
 
 ```

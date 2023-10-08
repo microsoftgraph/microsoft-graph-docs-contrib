@@ -4,7 +4,7 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD041 -->
 
-In this step, you will search for parts in SharePoint.
+In this step, you search for parts in SharePoint.
 
 1. Go to the root SharePoint site for your tenant.
 2. Using the search box at the top of the page, search for **hinge**.

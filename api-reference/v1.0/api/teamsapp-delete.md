@@ -12,6 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 <!-- markdownlint-disable MD001 -->
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ### Delete an app from your organization's app catalog
 
 Delete an [app](../resources/teamsapp.md) from an organization's app catalog (the tenant app catalog). To delete an app, the **distributionMethod** property for the app must be set to `organization`.
@@ -27,10 +30,13 @@ One of the following permissions is required to call this API. To learn more, in
 | Permission Type                        | Permissions (from least to most privileged)|
 |:----------------------------------     |:-------------|
 | Delegated (work or school account) | AppCatalog.Submit, AppCatalog.ReadWrite.All, Directory.ReadWrite.All** |
-| Delegated (personal Microsoft account) | Not supported|
+| Delegated (personal Microsoft account) | Not supported.|
 | Application                            | Not supported. |
 
-> **Note**: Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> **Note:**
+>
+> * Permissions marked with ** are supported only for backward compatibility. We recommend that you update your solutions to use an alternative permission listed in the previous table and avoid using these permissions going forward.
+> * You can only use the `AppCatalog.Submit` permission to delete app definitions in review.
 
 ## HTTP request
 

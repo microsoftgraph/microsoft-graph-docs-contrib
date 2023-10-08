@@ -15,6 +15,8 @@ Get a list of [attendanceRecord](../resources/attendancerecord.md) objects and t
 > [!TIP]
 > A more convenient way to retrieve attendance records is to get them in line with an attendance report by using the `expand` query option. For an example and more details, see [Get meetingAttendanceReport](meetingattendancereport-get.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ GET /users/{userId}/onlineMeetings/{meetingId}/attendanceReports/{reportId}/atte
 
 > [!TIP]
 >
->- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+>- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
 >- `reportId` is the **id** of an [meetingAttendanceReport](../resources/meetingAttendanceReport.md) object.
 
