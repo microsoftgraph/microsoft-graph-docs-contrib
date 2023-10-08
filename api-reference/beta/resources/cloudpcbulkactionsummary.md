@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkActionSummary resource type"
-description: "Run summary of bulk action"
+description: "Represents a run summary of bulk actions"
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,16 +13,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Run summary of bulk action
+Represents a run summary of bulk actions.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|failedCount|Int32|Indicates count of cloudPcs where the action is failed|
-|inProgressCount|Int32|Indicates count of cloudPcs where the action is in progress|
-|notSupportedCount|Int32|Indicates count of cloudPcs where the action is not supported|
-|pendingCount|Int32|Indicates count of cloudPcs where the action is pending|
-|successfulCount|Int32|Indicates count of cloudPcs where the action is successful|
+|failedCount|Int32|The number of cloudPcs where the action failed.|
+|inProgressCount|Int32|The number of cloudPcs where the action is in progress.|
+|notSupportedCount|Int32|The number of cloudPcs where the action is not supported.|
+|pendingCount|Int32|The number of cloudPcs where the action is pending.|
+|successfulCount|Int32|The number of cloudPcs where the action is successful.|
 
 ## Relationships
 None.

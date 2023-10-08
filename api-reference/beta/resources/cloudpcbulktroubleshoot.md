@@ -1,9 +1,9 @@
 ---
 title: "cloudPcBulkTroubleshoot resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "This defines the entity for perform bulk troubleshoot action with executeAction API and it inherits from CloudPcBulkAction base type. This triggers/initiates action to Troubleshoot specific Cloud PC. Check the Cloud PC and SessionHost health status."
+author: "Guoan-Tang"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "cloud-pc"
 doc_type: resourcePageType
 ---
 
@@ -13,27 +13,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+This defines the entity for perform bulk troubleshoot action with executeAction API and it inherits from CloudPcBulkAction base type. This triggers/initiates action to Troubleshoot specific Cloud PC. Check the Cloud PC and SessionHost health status.
 
-
-Inherits from [cloudPcBulkAction](../resources/intune-cloudpcbulkaction.md).
+Inherits from [cloudPcBulkAction](../resources/cloudpcbulkaction.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[List cloudPcBulkTroubleshoots](../api/intune-cloudpcbulktroubleshoot-list.md)|[cloudPcBulkTroubleshoot](../resources/intune-cloudpcbulktroubleshoot.md) collection|Get a list of the [cloudPcBulkTroubleshoot](../resources/intune-cloudpcbulktroubleshoot.md) objects and their properties.|
-|[Get cloudPcBulkTroubleshoot](../api/intune-cloudpcbulktroubleshoot-get.md)|[cloudPcBulkTroubleshoot](../resources/intune-cloudpcbulktroubleshoot.md)|Read the properties and relationships of a [cloudPcBulkTroubleshoot](../resources/intune-cloudpcbulktroubleshoot.md) object.|
-|[Update cloudPcBulkTroubleshoot](../api/intune-cloudpcbulktroubleshoot-update.md)|[cloudPcBulkTroubleshoot](../resources/intune-cloudpcbulktroubleshoot.md)|Update the properties of a [cloudPcBulkTroubleshoot](../resources/intune-cloudpcbulktroubleshoot.md) object.|
-|[Delete cloudPcBulkTroubleshoot](../api/intune-cloudpcbulktroubleshoot-delete.md)|None|Delete a [cloudPcBulkTroubleshoot](../resources/intune-cloudpcbulktroubleshoot.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionSummary|[cloudPcBulkActionSummary](../resources/intune-cloudpcbulkactionsummary.md)|**TODO: Add Description** Inherited from [cloudPcBulkAction](../resources/intune-cloudpcbulkaction.md).|
-|cloudPcIds|String collection|**TODO: Add Description** Inherited from [cloudPcBulkAction](../resources/intune-cloudpcbulkaction.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [cloudPcBulkAction](../resources/intune-cloudpcbulkaction.md).|
-|displayName|String|**TODO: Add Description** Inherited from [cloudPcBulkAction](../resources/intune-cloudpcbulkaction.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|actionSummary|[cloudPcBulkActionSummary](../resources/the numbercloudpcbulkactionsummary.md)|Inherited from [cloudPcBulkAction](../resources/the numbercloudpcbulkaction.md).|
+|cloudPcIds|String collection|from [cloudPcBulkAction](../resources/the numbercloudpcbulkaction.md).|
+|createdDateTime|DateTimeOffset|from [cloudPcBulkAction](../resources/the numbercloudpcbulkaction.md).|
+|displayName|String|from [cloudPcBulkAction](../resources/the numbercloudpcbulkaction.md).|
+|id|String|from [entity](../resources/entity.md).|
 
 ## Relationships
 None.

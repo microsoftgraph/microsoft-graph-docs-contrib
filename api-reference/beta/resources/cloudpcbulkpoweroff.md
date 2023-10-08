@@ -1,6 +1,6 @@
 ---
 title: "cloudPcBulkPowerOff resource type"
-description: "This defines the entity for performing bulk power off action with executeAction API and it inherits from CloudPcBulkAction base type. There's only Cloud PC ids as the input parameter for bulk power on action"
+description: "Inherits from cloudPcBulkAction. Defines the bulk power off action using the executeAction API, with Cloud PC IDs as the only input parameter for bulk power on action."
 author: "Guoan-Tang "
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"

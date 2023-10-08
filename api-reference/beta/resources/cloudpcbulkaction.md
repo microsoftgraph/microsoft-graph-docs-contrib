@@ -25,7 +25,7 @@ Represents the bulk action applied to cloudPCs specified in a parameter. This re
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionSummary|[CloudPcBulkActionSummary](../resources/cloudpcbulkactionsummary.md)|Run summary of this bulk action|
+|actionSummary|[cloudPcBulkActionSummary](../resources/cloudpcbulkactionsummary.md)|Run summary of this bulk action|
 |cloudPcIDs|Guid collection|ID of cloudPcs the bulk action applies to.|
 |createdDateTime|DateTimeOffset|Time when the bulk action was created.|
 |displayName|String|Name of the bulk action.|
