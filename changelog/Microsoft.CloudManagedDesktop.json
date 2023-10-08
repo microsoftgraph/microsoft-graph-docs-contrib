@@ -1,6 +1,6 @@
 {
     "changelog": [
-        {
+      {
             "ChangeList": [
                 {
                     "Id": "4d35dcf2-2f6c-413d-a4c4-c7770152a77b",
@@ -42,7 +42,7 @@
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },  
-        {
+      {
             "ChangeList": [
                 {
                     "Id": "6ec2ebe8-8f0c-4595-a8bb-5a40c631fcb8",
@@ -65,6 +65,96 @@
             "Cloud": "Prod",
             "Version": "beta",
             "CreatedDateTime": "2023-09-29T06:58:17.7596296Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkAction",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkAction](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkAction?view=graph-rest-beta) resource",
+                    "Target": "cloudPcBulkAction"
+                },
+                {
+                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bulkActions",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **bulkActions** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
+                    "Target": "virtualEndpoint"
+                },
+                {
+                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkActionSummary",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkActionSummary](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkActionSummary?view=graph-rest-beta) resource type.",
+                    "Target": "cloudPcBulkActionSummary"
+                },
+                {
+                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkPowerOff",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkPowerOff](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkPowerOff?view=graph-rest-beta) resource",
+                    "Target": "cloudPcBulkPowerOff"
+                },
+                {
+                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkPowerOn",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkPowerOn](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkPowerOn?view=graph-rest-beta) resource",
+                    "Target": "cloudPcBulkPowerOn"
+                },
+                {
+                    "Id": "4f804311-d5a3-4BB8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkReprovision",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkReprovision](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkReprovision?view=graph-rest-beta) resource",
+                    "Target": "cloudPcBulkReprovision"
+                },
+                {
+                    "Id": "4f804311-d5a3-4BB8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkResize",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkResize](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkResize?view=graph-rest-beta) resource",
+                    "Target": "cloudPcBulkResize"
+                },
+                {
+                    "Id": "4f804311-d5a3-4BB8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkRestart",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkRestart](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkRestart?view=graph-rest-beta) resource",
+                    "Target": "cloudPcBulkRestart"
+                },
+                {
+                    "Id": "4f804311-d5a3-4BB8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkRestore",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkRestore](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkRestore?view=graph-rest-beta) resource",
+                    "Target": "cloudPcBulkRestore"
+                },
+                {
+                    "Id": "4f804311-d5a3-4BB8-b0d1-74b80fcb1ad2",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcBulkTroubleshoot",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcBulkTroubleshoot](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkTroubleshoot?view=graph-rest-beta) resource",
+                    "Target": "cloudPcBulkTroubleshoot"
+                }
+            ],
+            "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-05-21T05:55:14.173894Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
@@ -254,14 +344,15 @@
         },
         {
             "ChangeList": [
-                {
-                    "Id": "a244d924-f4ee-4f19-9e2d-a5a900ba82e5",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "resetEnabled",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **resetEnabled** property to the [cloudPcUserSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersetting?view=graph-rest-beta) resource.",
-                    "Target": "cloudPcUserSetting"
-                }
+              {
+                "Id": "a244d924-f4ee-4f19-9e2d-a5a900ba82e5",
+                "ApiChange": "Property",
+                "ChangedApiName": "resetEnabled",
+                "ChangeType": "Addition",
+                "Description": "Added the **resetEnabled** property to the [cloudPcUserSetting](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcusersetting?view=graph-rest-beta) resource.",
+                "Target": "cloudPcUserSetting"
+              }
+
             ],
             "Id": "a244d924-f4ee-4f19-9e2d-a5a900ba82e5",
             "Cloud": "Prod",
@@ -286,96 +377,6 @@
             "Version": "beta",
             "CreatedDateTime": "2023-05-25T03:34:35.6186992Z",
             "WorkloadArea": "Devices and app management",
-            "SubArea": "Cloud PC"
-        },
-        {
-            "ChangeList": [
-                {
-                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "cloudPcBulkAction",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcBulkAction](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkAction?view=graph-rest-beta) resource",
-                    "Target": "cloudPcBulkAction"
-                },
-                {
-                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "bulkActions",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **bulkActions** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
-                    "Target": "virtualEndpoint"
-                },
-                {
-                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "cloudPcBulkActionSummary",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcBulkActionSummary](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkActionSummary?view=graph-rest-beta) resource type.",
-                    "Target": "cloudPcBulkActionSummary"
-                },
-                {
-                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "cloudPcBulkPowerOff",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcBulkPowerOff](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkPowerOff?view=graph-rest-beta) resource",
-                    "Target": "cloudPcBulkPowerOff"
-                },
-                {
-                    "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "cloudPcBulkPowerOn",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcBulkPowerOn](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkPowerOn?view=graph-rest-beta) resource",
-                    "Target": "cloudPcBulkPowerOn"
-                },
-                {
-                    "Id": "5a121ac5-758b-4439-84b4-1b2585f3092b",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "cloudPcBulkReprovision",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcBulkReprovision](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkReprovision?view=graph-rest-beta) resource",
-                    "Target": "cloudPcBulkReprovision"
-                },
-                {
-                    "Id": "5a121ac5-758b-4439-84b4-1b2585f3092b",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "cloudPcBulkResize",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcBulkResize](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkResize?view=graph-rest-beta) resource",
-                    "Target": "cloudPcBulkResize"
-                },
-                {
-                    "Id": "5a121ac5-758b-4439-84b4-1b2585f3092b",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "cloudPcBulkRestart",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcBulkRestart](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkRestart?view=graph-rest-beta) resource",
-                    "Target": "cloudPcBulkRestart"
-                },
-                {
-                    "Id": "5a121ac5-758b-4439-84b4-1b2585f3092b",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "cloudPcBulkRestore",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcBulkRestore](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkRestore?view=graph-rest-beta) resource",
-                    "Target": "cloudPcBulkRestore"
-                },
-                {
-                    "Id": "5a121ac5-758b-4439-84b4-1b2585f3092b",
-                    "ApiChange": "Resource",
-                    "ChangedApiName": "cloudPcBulkTroubleshoot",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [cloudPcBulkTroubleshoot](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcBulkTroubleshoot?view=graph-rest-beta) resource",
-                    "Target": "cloudPcBulkTroubleshoot"
-                }
-            ],
-            "Id": "4f804311-d5a3-4bb8-b0d1-74b80fcb1ad2",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2023-05-21T05:55:14.173894Z",
-            "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
         {
@@ -449,22 +450,22 @@
             "SubArea": "Cloud PC"
         },
         {
-            "ChangeList": [
+          "ChangeList": [
                 {
-                    "Id": "bf31e677-d3ae-4c1c-8be3-72900113ccd4",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "regionGroup",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **regionGroup** property to the [cloudPcDomainJoinConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcDomainJoinConfiguration?view=graph-rest-beta) resource.",
-                    "Target": "cloudPcDomainJoinConfiguration"
+                "Id": "bf31e677-d3ae-4c1c-8be3-72900113ccd4",
+                "ApiChange": "Property",
+                "ChangedApiName": "regionGroup",
+                "ChangeType": "Addition",
+                "Description": "Added the **regionGroup** property to the [cloudPcDomainJoinConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcDomainJoinConfiguration?view=graph-rest-beta) resource.",
+                "Target": "cloudPcDomainJoinConfiguration"
                 }
             ],
-            "Id": "bf31e677-d3ae-4c1c-8be3-72900113ccd4",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2023-02-27T08:58:22.4957466Z",
-            "WorkloadArea": "Device and app management",
-            "SubArea": "Cloud PC"
+          "Id": "bf31e677-d3ae-4c1c-8be3-72900113ccd4",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2023-02-27T08:58:22.4957466Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
         },
         {
             "ChangeList": [
@@ -503,7 +504,7 @@
             "SubArea": "Cloud PC"
         },
         {
-            "ChangeList": [
+            "ChangeList":[
                 {
                     "Id": "2f259fea-fe5f-4a3f-984f-80afdebf768d",
                     "ApiChange": "Method",
@@ -511,8 +512,7 @@
                     "ChangeType": "Addition",
                     "Description": "Added the [start](https://learn.microsoft.com/en-us/graph/api/cloudpc-start?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "cloudPC"
-                },
-                {
+                },                {
                     "Id": "2f259fea-fe5f-4a3f-984f-80afdebf768d",
                     "ApiChange": "Method",
                     "ChangedApiName": "stop",
@@ -521,15 +521,15 @@
                     "Target": "cloudPC"
                 }
             ],
-            "Id": "2f259fea-fe5f-4a3f-984f-80afdebf768d",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2023-04-12T13:48:16.9388044Z",
-            "WorkloadArea": "Device and app management",
-            "SubArea": "Cloud PC"
+            "Id":"2f259fea-fe5f-4a3f-984f-80afdebf768d",
+            "Cloud":"Prod",
+            "Version":"beta",
+            "CreatedDateTime":"2023-04-12T13:48:16.9388044Z",
+            "WorkloadArea":"Device and app management",
+            "SubArea":"Cloud PC"
         },
         {
-            "ChangeList": [
+            "ChangeList":[
                 {
                     "Id": "31b20e34-5130-4eec-84c6-7abd2794d009",
                     "ApiChange": "Method",
@@ -547,38 +547,38 @@
                     "Target": "cloudPC"
                 }
             ],
-            "Id": "31b20e34-5130-4eec-84c6-7abd2794d009",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2023-04-12T17:04:16.9388044Z",
-            "WorkloadArea": "Device and app management",
-            "SubArea": "Cloud PC"
+            "Id":"31b20e34-5130-4eec-84c6-7abd2794d009",
+            "Cloud":"Prod",
+            "Version":"beta",
+            "CreatedDateTime":"2023-04-12T17:04:16.9388044Z",
+            "WorkloadArea":"Device and app management",
+            "SubArea":"Cloud PC"
         },
         {
-            "ChangeList": [
+            "ChangeList":[
                 {
-                    "Id": "11f6eaa2-2243-4bbf-ac1d-1ab333a64741",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "enableSingleSignOn",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **enableSingleSignOn** property to the [cloudPcOrganizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcorganizationsettings?view=graph-rest-beta) resource.",
-                    "Target": "cloudPcOrganizationSettings"
+                    "Id":"11f6eaa2-2243-4bbf-ac1d-1ab333a64741",
+                    "ApiChange":"Property",
+                    "ChangedApiName":"enableSingleSignOn",
+                    "ChangeType":"Addition",
+                    "Description":"Added the **enableSingleSignOn** property to the [cloudPcOrganizationSettings](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcorganizationsettings?view=graph-rest-beta) resource.",
+                    "Target":"cloudPcOrganizationSettings"
                 },
                 {
-                    "Id": "11f6eaa2-2243-4bbf-ac1d-1ab333a64741",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "enableSingleSignOn",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **enableSingleSignOn** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
-                    "Target": "cloudPcProvisioningPolicy"
+                    "Id":"11f6eaa2-2243-4bbf-ac1d-1ab333a64741",
+                    "ApiChange":"Property",
+                    "ChangedApiName":"enableSingleSignOn",
+                    "ChangeType":"Addition",
+                    "Description":"Added the **enableSingleSignOn** property to the [cloudPcProvisioningPolicy](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
+                    "Target":"cloudPcProvisioningPolicy"
                 }
             ],
-            "Id": "11f6eaa2-2243-4bbf-ac1d-1ab333a64741",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2023-02-08T08:30:16.9388044Z",
-            "WorkloadArea": "Device and app management",
-            "SubArea": "Cloud PC"
+            "Id":"11f6eaa2-2243-4bbf-ac1d-1ab333a64741",
+            "Cloud":"Prod",
+            "Version":"beta",
+            "CreatedDateTime":"2023-02-08T08:30:16.9388044Z",
+            "WorkloadArea":"Device and app management",
+            "SubArea":"Cloud PC"
         },
         {
             "ChangeList": [
@@ -631,22 +631,22 @@
             "SubArea": "Cloud PC"
         },
         {
-            "ChangeList": [
-                {
-                    "Id": "77007eae-49c9-451c-ab49-b690e3bd642e",
-                    "ApiChange": "Member",
-                    "ChangedApiName": "movingRegion",
-                    "ChangeType": "Addition",
-                    "Description": "Added the `movingRegion` member to the **cloudPcStatus** enumeration.",
-                    "Target": "cloudPcStatus"
-                }
-            ],
-            "Id": "77007eae-49c9-451c-ab49-b690e3bd642e",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2023-06-26T00:00:00.1309263Z",
-            "WorkloadArea": "Device and app management",
-            "SubArea": "Cloud PC"
+          "ChangeList": [
+            {
+                "Id": "77007eae-49c9-451c-ab49-b690e3bd642e",
+                "ApiChange": "Member",
+                "ChangedApiName": "movingRegion",
+                "ChangeType": "Addition",
+                "Description": "Added the `movingRegion` member to the **cloudPcStatus** enumeration.",
+                "Target": "cloudPcStatus"
+            }
+          ],
+          "Id": "77007eae-49c9-451c-ab49-b690e3bd642e",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2023-06-26T00:00:00.1309263Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
         },
         {
             "ChangeList": [
@@ -669,12 +669,12 @@
         {
             "ChangeList": [
                 {
-                    "Id": "8827a05e-a654-47ca-b983-b28ba096b325",
-                    "ApiChange": "Enumeration",
-                    "ChangedApiName": "cloudPcDiskEncryptionState",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **cloudPcDiskEncryptionState** enumeration type.",
-                    "Target": "cloudPcDiskEncryptionState"
+                  "Id": "8827a05e-a654-47ca-b983-b28ba096b325",
+                  "ApiChange": "Enumeration",
+                  "ChangedApiName": "cloudPcDiskEncryptionState",
+                  "ChangeType": "Addition",
+                  "Description": "Added the **cloudPcDiskEncryptionState** enumeration type.",
+                  "Target": "cloudPcDiskEncryptionState"
                 },
                 {
                     "Id": "8827a05e-a654-47ca-b983-b28ba096b325",
@@ -784,7 +784,7 @@
                     "Id": "9b44d7d0-5380-11ed-bdc3-0242ac120002",
                     "ApiChange": "Property",
                     "ChangedApiName": "provisioningType",
-                    "ChangeType": "Addition",
+                    "ChangeType":"Addition",
                     "Description": "Added the **provisioningType** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "cloudPc"
                 }
@@ -802,7 +802,7 @@
                     "Id": "cd4e114e-6354-438a-bde7-b92378954f0c",
                     "ApiChange": "Property",
                     "ChangedApiName": "windows365SwitchCompatible",
-                    "ChangeType": "Addition",
+                    "ChangeType":"Addition",
                     "Description": "Add the **windows365SwitchCompatible** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpclaunchinfo?view=graph-rest-beta) resource.",
                     "Target": "cloudPc"
                 },
@@ -810,7 +810,7 @@
                     "Id": "cd4e114e-6354-438a-bde7-b92378954f0c",
                     "ApiChange": "Property",
                     "ChangedApiName": "windows365SwitchNotCompatibleReason",
-                    "ChangeType": "Addition",
+                    "ChangeType":"Addition",
                     "Description": "Add the **windows365SwitchNotCompatibleReason** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpclaunchinfo?view=graph-rest-beta) resource.",
                     "Target": "cloudPc"
                 }
@@ -3506,165 +3506,165 @@
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
         },
-        {
-            "ChangeList": [
-                {
-                    "Id": "cd9618a1-6427-4149-a0dd-0748e2b77b6f",
-                    "ApiChange": "Method",
-                    "ChangedApiName": "getShiftWorkCloudPcAccessState",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [getShiftWorkCloudPcAccessState](https://review.learn.microsoft.com/en-us/graph/api/cloudpc-getShiftWorkCloudPcAccessState?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
-                    "Target": "cloudPC"
-                },
-                {
-                    "Id": "cd9618a1-6427-4149-a0dd-0748e2b77b6f",
-                    "ApiChange": "Enumeration",
-                    "ChangedApiName": "shiftWorkCloudPcAccessState",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **shiftWorkCloudPcAccessState** enumeration type.",
-                    "Target": "shiftWorkCloudPcAccessState"
-                }
-            ],
+      {
+        "ChangeList": [
+          {
             "Id": "cd9618a1-6427-4149-a0dd-0748e2b77b6f",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2022-11-08T10:52:16.0013428Z",
-            "WorkloadArea": "Device and app management",
-            "SubArea": "Cloud PC"
-        },
-        {
-            "ChangeList": [
-                {
-                    "Id": "90d99702-fe6e-44c7-a45a-a2ad1442bd22",
-                    "ApiChange": "Member",
-                    "ChangedApiName": "hibernated",
-                    "ChangeType": "Addition",
-                    "Description": "Added the `hibernated` member to the **shiftWorkCloudPcAccessState** enumeration type.",
-                    "Target": "shiftWorkCloudPcAccessState"
-                }
-            ],
+            "ApiChange": "Method",
+            "ChangedApiName": "getShiftWorkCloudPcAccessState",
+            "ChangeType": "Addition",
+            "Description": "Added the [getShiftWorkCloudPcAccessState](https://review.learn.microsoft.com/en-us/graph/api/cloudpc-getShiftWorkCloudPcAccessState?view=graph-rest-beta) method to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+            "Target": "cloudPC"
+          },
+          {
+            "Id": "cd9618a1-6427-4149-a0dd-0748e2b77b6f",
+            "ApiChange": "Enumeration",
+            "ChangedApiName": "shiftWorkCloudPcAccessState",
+            "ChangeType": "Addition",
+            "Description": "Added the **shiftWorkCloudPcAccessState** enumeration type.",
+            "Target": "shiftWorkCloudPcAccessState"
+          }
+        ],
+        "Id": "cd9618a1-6427-4149-a0dd-0748e2b77b6f",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2022-11-08T10:52:16.0013428Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },
+      {
+        "ChangeList": [
+          {
             "Id": "90d99702-fe6e-44c7-a45a-a2ad1442bd22",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2023-03-21T10:52:16.0017488Z",
-            "WorkloadArea": "Device and app management",
-            "SubArea": "Cloud PC"
-        },
-        {
-            "ChangeList": [
-                {
-                    "Id": "c186e5e6-a3eb-4b60-a015-1d9770c08954",
-                    "ApiChange": "Property",
-                    "ChangedApiName": "ssoCheckKerberosConfigurationError",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **ssoCheckKerberosConfigurationError** member to the [cloudPcOnPremisesConnectionHealthCheckErrorType](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta#cloudpconpremisesconnectionhealthcheckerrortype-values) resource.",
-                    "Target": "cloudPcOnPremisesConnection"
-                }
-            ],
-            "Id": "c186e5e6-a3eb-4b60-a015-1d9770c08954",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2023-04-25T04:14:41.3424906Z",
-            "WorkloadArea": "Device and app management",
-            "SubArea": "Cloud PC"
-        },
-        {
-            "ChangeList": [
-                {
-                    "Id": "f65a6785-6042-4258-b9a4-385cfb2eb5d2",
-                    "ApiChange": "Member",
-                    "ChangedApiName": "informational",
-                    "ChangeType": "Addition",
-                    "Description": "Added the **informational** member to the [CloudPcOnPremisesConnectionStatus](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta#cloudpconpremisesconnectionstatus-values) resource.",
-                    "Target": "CloudPcOnPremisesConnectionStatus"
-                }
-            ],
-            "Id": "f65a6785-6042-4258-b9a4-385cfb2eb5d2",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2023-08-08T04:14:41.3424906Z",
-            "WorkloadArea": "Device and app management",
-            "SubArea": "Cloud PC"
-        },
-        {
-            "ChangeList": [
-                {
-                    "Id": "2107ee19-7ed3-4480-936c-61a372e36751",
-                    "ApiChange": "EnumType",
-                    "ChangedApiName": "shiftWorkCloudPcAccessState",
-                    "ChangeType": "Change",
-                    "Description": "Renamed the `hibernated` member to `standbyMode` in the **shiftWorkCloudPcAccessState** enumeration type.",
-                    "Target": "shiftWorkCloudPcAccessState"
-                }
-            ],
+            "ApiChange": "Member",
+            "ChangedApiName": "hibernated",
+            "ChangeType": "Addition",
+            "Description": "Added the `hibernated` member to the **shiftWorkCloudPcAccessState** enumeration type.",
+            "Target": "shiftWorkCloudPcAccessState"
+          }
+        ],
+        "Id": "90d99702-fe6e-44c7-a45a-a2ad1442bd22",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-03-21T10:52:16.0017488Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },
+      {
+        "ChangeList": [
+            {
+                "Id": "c186e5e6-a3eb-4b60-a015-1d9770c08954",
+                "ApiChange": "Property",
+                "ChangedApiName": "ssoCheckKerberosConfigurationError",
+                "ChangeType": "Addition",
+                "Description": "Added the **ssoCheckKerberosConfigurationError** member to the [cloudPcOnPremisesConnectionHealthCheckErrorType](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnectionhealthcheck?view=graph-rest-beta#cloudpconpremisesconnectionhealthcheckerrortype-values) resource.",
+                "Target": "cloudPcOnPremisesConnection"
+            }
+        ],
+        "Id": "c186e5e6-a3eb-4b60-a015-1d9770c08954",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-04-25T04:14:41.3424906Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+    },
+    {
+        "ChangeList": [
+            {
+                "Id": "f65a6785-6042-4258-b9a4-385cfb2eb5d2",
+                "ApiChange": "Member",
+                "ChangedApiName": "informational",
+                "ChangeType": "Addition",
+                "Description": "Added the **informational** member to the [CloudPcOnPremisesConnectionStatus](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta#cloudpconpremisesconnectionstatus-values) resource.",
+                "Target": "CloudPcOnPremisesConnectionStatus"
+            }
+        ],
+        "Id": "f65a6785-6042-4258-b9a4-385cfb2eb5d2",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-08-08T04:14:41.3424906Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+    },
+    {   
+        "ChangeList": [
+          {
             "Id": "2107ee19-7ed3-4480-936c-61a372e36751",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2023-05-24T08:27:16.0017488Z",
-            "WorkloadArea": "Device and app management",
-            "SubArea": "Cloud PC"
-        },
-        {
-            "ChangeList": [
-                {
-                    "Id": "59abcc02-0b31-48a0-a44b-052a3d123267",
-                    "ApiChange": "Member",
-                    "ChangedApiName": "udpConnectivityCheckTurnUrlNotAllowListed",
-                    "ChangeType": "Addition",
-                    "Description": "Added the `udpConnectivityCheckTurnUrlNotAllowListed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
-                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
-                },
-                {
-                    "Id": "59abcc02-0b31-48a0-a44b-052a3d123267",
-                    "ApiChange": "Member",
-                    "ChangedApiName": "udpConnectivityCheckUrlsNotAllowListed",
-                    "ChangeType": "Addition",
-                    "Description": "Added the `udpConnectivityCheckUrlsNotAllowListed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
-                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
-                }
-            ],
-            "Id": "59abcc02-0b31-48a0-a44b-052a3d123267",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2023-06-05T04:14:41.3424906Z",
-            "WorkloadArea": "Device and app management",
-            "SubArea": "Cloud PC"
-        },
-        {
-            "ChangeList": [
-                {
-                    "Id": "33faed78-3754-43a7-a08a-4d6c9d5d741f",
-                    "ApiChange": "Method",
-                    "ChangedApiName": "getInaccessibleCloudPcReports",
-                    "ChangeType": "Addition",
-                    "Description": "Added the [getInaccessibleCloudPcReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports-getInaccessibleCloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
-                    "Target": "cloudPcReports"
-                }
-            ],
-            "Id": "33faed78-3754-43a7-a08a-4d6c9d5d741f",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2023-07-31T09:00:37.9148169Z",
-            "WorkloadArea": "Device and app management",
-            "SubArea": "Cloud PC"
-        },
-        {
-            "ChangeList": [
-                {
-                    "Id": "3cc32469-33d9-46be-a085-7fa1273af503",
-                    "ApiChange": "Member",
-                    "ChangedApiName": "inaccessibleCloudPcReports",
-                    "ChangeType": "Addition",
-                    "Description": "Added the `inaccessibleCloudPcReports` member to the **cloudPcReportName** enumeration.",
-                    "Target": "cloudPcReportName"
-                }
-            ],
+            "ApiChange": "EnumType",
+            "ChangedApiName": "shiftWorkCloudPcAccessState",
+            "ChangeType": "Change",
+            "Description": "Renamed the `hibernated` member to `standbyMode` in the **shiftWorkCloudPcAccessState** enumeration type.",
+            "Target": "shiftWorkCloudPcAccessState"
+          }
+        ],
+        "Id": "2107ee19-7ed3-4480-936c-61a372e36751",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-05-24T08:27:16.0017488Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },
+      {
+        "ChangeList": [
+            {
+                "Id": "59abcc02-0b31-48a0-a44b-052a3d123267",
+                "ApiChange": "Member",
+                "ChangedApiName": "udpConnectivityCheckTurnUrlNotAllowListed",
+                "ChangeType": "Addition",
+                "Description": "Added the `udpConnectivityCheckTurnUrlNotAllowListed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+            },
+            {
+                "Id": "59abcc02-0b31-48a0-a44b-052a3d123267",
+                "ApiChange": "Member",
+                "ChangedApiName": "udpConnectivityCheckUrlsNotAllowListed",
+                "ChangeType": "Addition",
+                "Description": "Added the `udpConnectivityCheckUrlsNotAllowListed` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+            }
+        ],
+        "Id": "59abcc02-0b31-48a0-a44b-052a3d123267",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-06-05T04:14:41.3424906Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },
+      {
+      "ChangeList": [
+            {
+              "Id": "33faed78-3754-43a7-a08a-4d6c9d5d741f",
+              "ApiChange": "Method",
+              "ChangedApiName": "getInaccessibleCloudPcReports",
+              "ChangeType": "Addition",
+              "Description": "Added the [getInaccessibleCloudPcReports](https://learn.microsoft.com/en-us/graph/api/cloudPcReports-getInaccessibleCloudPcReports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+              "Target": "cloudPcReports"
+            }
+          ],
+          "Id": "33faed78-3754-43a7-a08a-4d6c9d5d741f",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2023-07-31T09:00:37.9148169Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
+     },
+     {
+        "ChangeList": [
+          {
             "Id": "3cc32469-33d9-46be-a085-7fa1273af503",
-            "Cloud": "Prod",
-            "Version": "beta",
-            "CreatedDateTime": "2023-07-06T03:57:35.2333537Z",
-            "WorkloadArea": "Device and app management",
-            "SubArea": "Cloud PC"
-        }
+            "ApiChange": "Member",
+            "ChangedApiName": "inaccessibleCloudPcReports",
+            "ChangeType": "Addition",
+            "Description": "Added the `inaccessibleCloudPcReports` member to the **cloudPcReportName** enumeration.",
+            "Target": "cloudPcReportName"
+          }
+        ],
+        "Id": "3cc32469-33d9-46be-a085-7fa1273af503",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-07-06T03:57:35.2333537Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      }
     ]
 }
