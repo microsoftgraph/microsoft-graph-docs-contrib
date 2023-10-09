@@ -120,7 +120,7 @@ HTTP/1.1 204 No Content
   "tocPath": ""
 }-->
 
-### Example 2: Cancel invited non active participant
+### Example 2: Cancel invited non-active participant
 
 #### Invite a participant to an existing call
 
