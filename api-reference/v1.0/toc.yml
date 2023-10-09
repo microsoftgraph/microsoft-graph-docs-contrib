@@ -8009,7 +8009,7 @@ items:
                   - name: Get article
                     href: api/security-article-get.md
                   - name: List articles
-                    href: api/api/security-threatintelligence-list-articles.md
+                    href: api/security-threatintelligence-list-articles.md
                   - name: List article indicators
                     href: api/security-article-list-indicators.md
               - name: Article indicator
