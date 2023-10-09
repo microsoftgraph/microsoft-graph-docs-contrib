@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 > APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
 
 
-The **fileStorageContainer** resource represents a file storage container. A file storeage container is a shared file storage space that can be used by a user or a group of users via an application. All file system objects in a fileStorageContainer are returned as [driveItem](../resources/driveItem.md) resources. 
+The **fileStorageContainer** resource represents a file storage container. A file storeage container is a shared file storage space that can be used by a user or a group of users via an application. All file system objects in a fileStorageContainer are returned as [driveItem](../resources/driveitem.md) resources. 
 
 **FileStorageContainer** resources have properties that provide data about the fileStorageContainer's status and access setting. This includes:
 * **ContainerType** specifies the application workload that owns or can access of all containers of that container type. Each container must have only one container type. 
