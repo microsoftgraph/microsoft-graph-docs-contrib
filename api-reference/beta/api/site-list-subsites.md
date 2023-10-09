@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Enumerate subsites
+# List subsites for a site
 
 Namespace: microsoft.graph
 
