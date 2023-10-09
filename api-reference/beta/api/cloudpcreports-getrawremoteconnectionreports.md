@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: getRawRemoteConnectionReports "
-description: "Get a Cloud PC's raw real-time remote connection report without any calculation or aggregation, such as roundTripTime, available bandwidth."
+description: "Get a Cloud PC's raw real-time remote connection report without any calculation or aggregation, such as roundTripTime or available bandwidth."
 author: "Gutentag0004"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,18 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a Cloud PC's raw real-time remote connection report without any calculation, such as roundTripTime, available bandwidth which is aggregated hourly of the raw event data.
+Get a Cloud PC's raw real-time remote connection report without any calculation, such as roundTripTime or available bandwidth, which are aggregated hourly of the raw event data.
 
 ##### Parameters
 | Parameter          | Type                             | Required? | Description                                                            |
 | ------------------ | -------------------------------- | --------- | ---------------------------------------------------------------------- |
 | `bindingParameter` | `microsoft.graph.cloudPcReports` | Yes       | The binding parameter of the action.                                   |
-| `filter`           | `Edm.String`                     | N         | OData filter syntax. Only ‘and’, ‘or’ and ’eq’ are currently supported |
-| `select`           | `Collection(Edm.String)`         | N         | Define behavior to get default columns if select not specified         |
+| `filter`           | `Edm.String`                     | N         | The OData filter for the report. Only ‘and’, ‘or’ and ’eq’ are currently supported. |
+| `select`           | `Collection(Edm.String)`         | N         | Define behavior to get default columns if they aren't specified        |
 | `search`           | `Edm.String`                     | N         | Specifies a string to search                                           |
 | `groupBy`          | `Collection(Edm.String)`         | N         | If used, must have the same contents as select parameter               |
 | `orderBy`          | `Collection(Edm.String)`         | N         | There will be a default order assigned                                 |
-| `skip`             | `Edm.Int32`                      | N         | Number of records to skip                                              |
+| `skip`             | `Edm.Int32`                      | N         | The number of records to skip                                          |
 | `top`              | `Edm.Int32`                      | N         | There will be a default top                                            |
 | `returnType`       | `Edm.Stream`                     | N/A       | N/A                                                                    |
 
