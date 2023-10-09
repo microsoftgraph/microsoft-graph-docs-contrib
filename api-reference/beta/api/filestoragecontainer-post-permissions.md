@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 > [!IMPORTANT]
 > APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
 
-Add [permission](../resources/permission.md) to an existing fileStorageContainer. The application calling this API must have permission to add permissions to fileStorageContainers of the respective container type.
+Add [permission](../resources/permission.md) to an existing fileStorageContainer. The application calling this API must have permission to add permissions to fileStorageContainers for the respective container type.
 
 
 ## Permissions
