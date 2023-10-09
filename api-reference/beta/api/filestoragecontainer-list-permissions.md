@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Enumerate permissions for an existing fileStorageContainer. 
 
-The application calling this API must have permision to enumerate permissions for fileStorageContainers of the respective container type.
+The application calling this API must have permision to enumerate permissions for fileStorageContainers for the respective container type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
-|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
@@ -98,7 +97,7 @@ Content-Type: application/json
         "grantedToV2": {
           "user": {
             "id": "86503198-b81b-43fe-81ee-ad45b8848ac9",
-            "userPrincipalName": "john@contoso.com",
+            "userPrincipalName": "mnick@contoso.com",
             "displayName": "Mark Nickhols",
             "email": "mnick@contoso.com"
           }
