@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Remove permission from a fileStorageContainer.
 
-The application calling this API must have permission to delete permissions from fileStorageContainers of the respective container type.
+The application calling this API must have permission to delete permissions from fileStorageContainers for the respective container type.
 
 
 ## Permissions
