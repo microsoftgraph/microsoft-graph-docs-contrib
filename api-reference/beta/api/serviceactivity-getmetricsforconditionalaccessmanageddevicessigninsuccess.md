@@ -95,16 +95,16 @@ Content-Type: application/json
 {
   "@odata.context": "https://graph.microsoft.com/beta/networkAccess/reports/$metadata#Collection(serviceActivityValueMetric)",
   "value": [
-    {
-      "intervalStartDateTime": "2023-01-10 00:00",
+   {
+      "intervalStartDateTime": "2023-01-10T00:00:00Z",
       "value": 4
     },
     {
-      "intervalStartDateTime": "2023-01-10 00:10",
+      "intervalStartDateTime": "2023-01-10T00:10:00Z",
       "value": 5
     },
     {
-      "intervalStartDateTime": "2023-01-10 00:20",
+      "intervalStartDateTime": "2023-01-10T00:20:00Z",
       "value": 4
     }
   ]

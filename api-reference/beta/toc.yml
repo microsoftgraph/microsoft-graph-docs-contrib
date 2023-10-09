@@ -15318,6 +15318,20 @@ items:
                       href: resources/servicelevelagreementroot.md
                     - name: Get Azure AD authentication
                       href: api/azureadauthentication-get.md
+                - name: Microsoft Entra service activity
+                  items:
+                    - name: Microsoft Entra service acitviy
+                      href: resources/serviceactivity.md
+                    - name: Get metrics for MFA sign in success
+                      href: api/serviceactivity-getmetricsformfasigninsuccess.md
+                    - name: Get metrics for MFA sign in failure
+                      href: api/serviceactivity-getmetricsformfasigninfailure.md
+                    - name: Get metrics for conditional access managed device sign in success
+                      href: api/serviceactivity-getmetricsforconditionalaccessmanageddevicesigninsuccess.md
+                    - name: Get metrics for conditional access compliant device sign in success
+                      href: api/serviceactivity-getmetricsforconditionalaccesscompliantdevicesigninsuccess.md
+                    - name: Get metrics for SAML sign in success
+                      href: api/serviceactivity-getmetricsforsamlsigninsuccess.md
                 - name: Registration and usage
                   items:
                     - name: Overview
