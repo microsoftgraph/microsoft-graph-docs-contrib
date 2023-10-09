@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a [fileStorageContainer](../resources/filestoragecontainer.md).
 
-The application calling this API must have read permission to fileStorageContainers of the respective container type.
+The application calling this API must have permission to read fileStorageContainers of the respective container type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). 
@@ -23,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
-|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
