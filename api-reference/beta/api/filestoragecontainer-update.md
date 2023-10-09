@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Update the properties of a [fileStorageContainer](../resources/filestoragecontainer.md) object.
 
-The application calling this API must have read/write permissions to fileStorageContainers of the respective container type.
+The application calling this API must have read/write permissions to fileStorageContainers for the respective container type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,9 +42,9 @@ PATCH /storage/fileStorage/containers/{containerId}
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply the new values for the fileStorageContainer properties. Existing properties that are not included in the request body will maintain their previous values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the new values for the fileStorageContainer properties. Existing properties that are not included in the request body will maintain their previous values. To optimize performance, you shouldn't include existing values that haven't changed.
 
-**Note**: Not all fileStorageContaienr properties can be mutated via this API.
+**Note**: Not all fileStorageContaienr properties can be changed via this API.
 
 ## Response
 
