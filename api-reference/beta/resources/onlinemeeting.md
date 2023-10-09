@@ -48,7 +48,7 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 | broadcastSettings     | [broadcastMeetingSettings](broadcastMeetingSettings.md)     | Settings related to a live event.      |
 | chatInfo              | [chatInfo](chatinfo.md) | The chat information associated with this online meeting.  |
 | creationDateTime      | DateTime | The meeting creation time in UTC. Read-only.     |
-| endDateTime           | DateTime | The meeting end time in UTC. Required for creating online meeting. |
+| endDateTime           | DateTime | The meeting end time in UTC. Required for creating an online meeting. |
 | externalId            | String | The external ID. A custom ID. Optional.      |
 | id | String | The default ID associated with the online meeting. Read-only.    |
 | isBroadcast | Boolean | Indicates whether this is a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). |
@@ -61,8 +61,8 @@ This resource supports subscribing to [change notifications](/graph/webhooks). F
 | recordAutomatically | Boolean | Indicates whether to record the meeting automatically. |
 | recording | Stream | The content stream of the recording of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events). Read-only. |
 | shareMeetingChatHistoryDefault | [meetingChatHistoryDefaultMode](#meetingchathistorydefaultmode-values) | Specifies whether meeting chat history is shared with participants.  Possible values are: `all`, `none`, `unknownFutureValue`. |
-| startDateTime | DateTime | The meeting start time in UTC. Required for creating online meeting. |
-| subject | String | The subject of the online meeting. Required for creating online meeting. |
+| startDateTime | DateTime | The meeting start time in UTC. Required for creating an online meeting. |
+| subject | String | The subject of the online meeting. Required for creating an online meeting. |
 | videoTeleconferenceId | String | The video teleconferencing ID. Read-only. |
 | watermarkProtection | [watermarkProtectionValues](watermarkprotectionvalues.md)     | Specifies whether a watermark should be applied to a content type by the client application. |
 | autoAdmittedUsers (deprecated) | String | The setting that specifies the type of participants that will automatically be allowed into the online meeting. Possible values are: `everyone`, `everyoneInSameAndFederatedCompany`, `everyoneInCompany`, `invitedUsersInCompany`, `organizer`. Read-only. |
