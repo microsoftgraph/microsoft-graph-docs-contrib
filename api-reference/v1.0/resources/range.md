@@ -1,4 +1,3 @@
-
 ---
 title: "Range resource type"
 description: "Range represents a set of one or more contiguous cells such as a cell, a row, a column, block of cells, etc."
@@ -62,7 +61,7 @@ Range represents a set of one or more contiguous cells such as a cell, a row, a 
 |rowCount|int|Returns the total number of rows in the range. Read-only.|
 |rowHidden|boolean|Represents if all rows of the current range are hidden.|
 |rowIndex|int|Returns the row number of the first cell in the range. Zero-indexed. Read-only.|
-|text|Json|Text values of the specified range. The Text value won't depend on the cell width. The # sign substitution that happens in Excel UI won't affect the text value returned by the API. Read-only.|
+|text|Json|Text values of the specified range. The Text value doesn't depend on the cell width. The # sign substitution that happens in Excel UI doesn't affect the text value returned by the API. Read-only.|
 |valueTypes|Json|Represents the type of data of each cell. The possible values are: `Unknown`, `Empty`, `String`, `Integer`, `Double`, `Boolean`, `Error`. Read-only.|
 |values|Json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contains an error returns the error string.|
 

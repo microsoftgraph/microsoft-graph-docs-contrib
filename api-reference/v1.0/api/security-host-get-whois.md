@@ -15,6 +15,8 @@ Namespace: microsoft.graph.security
 
 Get the current [whoisRecord](../resources/security-whoisrecord.md) resource for a [host](../resources/security-host.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
