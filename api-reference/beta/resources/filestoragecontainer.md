@@ -26,10 +26,10 @@ The **fileStorageContainer** resource represents a file storage container. A fil
 
 |Role|Details|
 |:---|:---|
-|reader|Provides the abililty to read the contents inside a storage container.|
-|writer|Proviodes the ability to read and modify the content inside a storage container.|
-|manager|Provides the ability to read and modify the content inside a storage container, and manage the permissions to the container.|
-|owner|Provides the ability to read and modify the content inside a storage container, manage the permission to the container, and delete and restore the container.|
+|reader|Provides the abililty to read fileStorageContaienr metadata and contents inside.|
+|writer|Proviodes the ability to read and modify fileStorageContaienr metadata and contents inside.|
+|manager|Provides the ability to read and modify fileStorageContaienr metadata and contents inside, and manage the permissions to the container.|
+|owner|Provides the ability to read and modify fileStorageContaienr metadata and contents inside, manage the permission to the container, delete and restore the container.|
 
 ## Container status enumeration
 
@@ -48,12 +48,12 @@ The **fileStorageContainer** resource represents a file storage container. A fil
 |[Delete fileStorageContainer](../api/filestorage-delete-containers.md)|None|Delete a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Activate fileStorageContainer](../api/filestoragecontainer-activate.md)|None|Activate a [fileStorageContainer](../resources/filestoragecontainer.md) object.|
 |[Get drive](../api/filestoragecontainer-get-drive.md)|[drive](../resources/drive.md)|Get the drive resources from the drive navigation property.|
-|[List permissions](../api/filestoragecontainer-list-permissions.md)|[permission](../resources/permission.md)|Retreive the list of permissions on a fileStorageContainer.|
-|[Create permissions](../api/filestoragecontainer-post-permissions.md)|[permission](../resources/permission.md)|Add the permission to a fileStorageContainer.|
-|[Update permissions](../api/filestoragecontainer-post-permissions.md)|[permission](../resources/permission.md)|Update the permission on a fileStorageContainer.|
-|[Delete permissions](../api/filestoragecontainer-post-permissions.md)|[permission](../resources/permission.md)|Delete fhte permission from a fileStorageContainer.|
-|[List fileStorageContainer custom property](../api/filestoragecontainer-list-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|List the custom properties of the fileStorageContainer.|
-|[Create fileStorageContainer custom property](../api/filestoragecontainer-add-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Create a new custom property to the fileStorageContainer.|
+|[List permissions](../api/filestoragecontainer-list-permissions.md)|[permission](../resources/permission.md)|Retreive list of permissions on a fileStorageContainer.|
+|[Create permissions](../api/filestoragecontainer-post-permissions.md)|[permission](../resources/permission.md)|Add permission to a fileStorageContainer.|
+|[Update permissions](../api/filestoragecontainer-update-permissions.md)|[permission](../resources/permission.md)|Update permission on a fileStorageContainer.|
+|[Delete permissions](../api/filestoragecontainer-delete-permissions.md)|[permission](../resources/permission.md)|Delete permission from a fileStorageContainer.|
+|[List fileStorageContainer custom property](../api/filestoragecontainer-list-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|List custom properties of the fileStorageContainer.|
+|[Create fileStorageContainer custom property](../api/filestoragecontainer-add-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Create custom property to the fileStorageContainer.|
 |[Update fileStorageContainer custom property](../api/filestoragecontainer-update-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Update custom property on a fileStorageContainer.|
 |[Delete fileStorageContainer custom property](../api/filestoragecontainer-delete-customproperty.md)|[filestoragecontainercustompropertyvalue](../resources/filestoragecontainercustompropertyvalue.md)|Delete custom property from a fileStorageContainer.|
 
@@ -61,7 +61,7 @@ The **fileStorageContainer** resource represents a file storage container. A fil
 
 |Property|Type|Description|
 |:---|:---|:---|
-|containerTypeId|Guid|Container type of the fileStorageContainer. Read-only.|
+|containerTypeId|Guid|Container type id of the fileStorageContainer. Read-only.|
 |createdDateTime|DateTimeOffset|Date and time of fileStorageContainer creation. Read-only.|
 |customProperties|[fileStorageContainerCustomPropertyDictionary](../resources/filestoragecontainercustompropertydictionary.md)|Custom property collection for the fileStorageContainer. Read-write.|
 |description|String|Provides a user-visible description of the fileStorageContainer. Read-write.|
