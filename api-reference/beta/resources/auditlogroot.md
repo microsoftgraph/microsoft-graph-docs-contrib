@@ -1,6 +1,6 @@
 ---
 title: "auditLogRoot resource type"
-description: "Contains different types of audit logs. This resources returns a singleton auditLog resource. It doesn't contain any usable properties."
+description: "Contains different types of audit logs. This resource returns a singleton auditLog resource. It doesn't contain any usable properties."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains different types of audit logs. This resources returns a singleton auditLog resource. It doesn't contain any usable properties.
+Contains different types of audit logs. This resource returns a singleton auditLog resource. It doesn't contain any usable properties.
 
 ## Methods
 
@@ -29,12 +29,12 @@ None.
 |:---|:---|:---|
 |customSecurityAttributeAudits|[customSecurityAttributeAudit](../resources/customsecurityattributeaudit.md) collection|Represents a custom security attribute audit log.|
 |directoryAudits|[directoryAudit](../resources/directoryaudit.md) collection|Read-only. Nullable.|
-|provisioning|[provisioningObjectSummary](../resources/provisioningobjectsummary.md) collection|Represents an action performed by the Azure AD Provisioning service and its associated properties.|
+|provisioning|[provisioningObjectSummary](../resources/provisioningobjectsummary.md) collection|Represents an action performed by the Microsoft Entra provisioning service and its associated properties.|
 |signIns|[signIn](../resources/signin.md) collection|Read-only. Nullable.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following output is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
