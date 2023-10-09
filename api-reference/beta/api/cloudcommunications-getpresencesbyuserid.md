@@ -26,6 +26,9 @@ One of the following permissions is required to call these APIs. To learn more, 
 | Delegated (personal Microsoft account) | Not Supported.                         |
 | Application                            | Not Supported.                                  |
 
+> **Note:**
+> This API allows users to subscribe only to another user's presence. If an application wants to use subscription APIs, it uses dummy users to subscribe to the presence of all users and collect the required data.
+
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
