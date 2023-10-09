@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Delete one or multiple custom properties from a fileStorageContainer by assigning **null** to the properties.
 
-The application calling this API must have write permission to fileStorageContainers of the respective container type.
+The application calling this API must have write permission to fileStorageContainers for the respective container type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
