@@ -1,7 +1,7 @@
 ---
 title: "educationSubmission: return"
 description: "Make the grade and feedback associated with this submission available to the student."
-author: "sharad-sharma-msft"
+author: "cristobal-buenrostro"
 ms.localizationpriority: medium
 ms.prod: "education"
 doc_type: apiPageType
@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite   |
+|Delegated (work or school account) |  EduAssignments.ReadWrite   |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | EduAssignments.ReadWrite.All, EduAssignments.ReadWriteBasic.All |
+|Application | EduAssignments.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

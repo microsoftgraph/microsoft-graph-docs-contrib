@@ -72,19 +72,19 @@ _id_ property is always returned.
 | Content-Type  | application/json |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ### Response
 
 If successful, this method returns `200 OK` response code and [application](../resources/application.md) collection object in the response body. The response also includes a nextLink URL or a deltaLink URL. 
 
-- If a `@odata.nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the `@odata.nextLink` URL until a `@odata.deltaLink` URL is included in the response.
+- If a `@odata.nextLink` URL is returned, there are more pages of data to be retrieved in the session. The application continues making requests by using the `@odata.nextLink` URL until a `@odata.deltaLink` URL is included in the response.
 
 - If a `@odata.deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. Persist and use the `@odata.deltaLink` URL to learn about changes to the resource in the future.
 
 See:</br>
 - [Using Delta Query](/graph/delta-query-overview) for more details</br>
-- [Get incremental changes for users](/graph/delta-query-users) for an example requests.</br>
+- [Get incremental changes for users](/graph/delta-query-users) for an example request.</br>
 
 ### Example
 ##### Request

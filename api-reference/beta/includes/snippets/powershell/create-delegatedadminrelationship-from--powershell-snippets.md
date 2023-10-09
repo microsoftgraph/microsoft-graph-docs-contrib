@@ -23,6 +23,7 @@ $params = @{
 			}
 		)
 	}
+	autoExtendDuration = "P180D"
 }
 
 New-MgBetaTenantRelationshipDelegatedAdminRelationship -BodyParameter $params
