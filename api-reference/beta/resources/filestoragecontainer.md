@@ -27,7 +27,7 @@ The **fileStorageContainer** resource represents a file storage container. A fil
 |Role|Details|
 |:---|:---|
 |reader|Provides the abililty to read fileStorageContaienr metadata and contents inside.|
-|writer|Proviodes the ability to read and modify fileStorageContaienr metadata and contents inside.|
+|writer|Provides the ability to read and modify fileStorageContaienr metadata and contents inside.|
 |manager|Provides the ability to read and modify fileStorageContaienr metadata and contents inside, and manage the permissions to the container.|
 |owner|Provides the ability to read and modify fileStorageContaienr metadata and contents inside, manage the permission to the container, delete and restore the container.|
 
