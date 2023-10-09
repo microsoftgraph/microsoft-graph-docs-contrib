@@ -13,7 +13,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents a WHOIS record that contains information about a registered [host](../resources/security-host.md), the contacts for the registered **host**, and other metadata about the registration.
+Represents a WHOIS record that contains information about a registered [host](../resources/security-host.md), the contacts for the registered **host**, and other metadata about the registration. 
+
+Microsoft Defender Threat Intelligence supports the WHOIS protocol commonly used in searching public registrars. One of the most common functions of WHOIS in threat infrastructure is to identify or connect disparate entities based on unique data shared within the records.
 
 Inherits from [whoisBaseRecord](../resources/security-whoisbaserecord.md).
 
@@ -22,8 +24,7 @@ Inherits from [whoisBaseRecord](../resources/security-whoisbaserecord.md).
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List whoisRecords](../api/security-threatintelligence-list-whoisrecords.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) collection|Get a list of [whoisRecord](../resources/security-whoisrecord.md) objects.|
-|[Get whoisRecord](../api/security-whoisrecord-get.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md)|Read the properties and relationships of a [whoisRecord](../resources/security-whoisrecord.md) object.|
-|[Get whoisRecord for a host](../api/security-host-get-whois.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md) |Get the current [whoisRecord](../resources/security-whoisrecord.md) resource for a [host](../resources/security-host.md).|
+|[Get whoisRecord](../api/security-whoisrecord-get.md)|[microsoft.graph.security.whoisRecord](../resources/security-whoisrecord.md)|Get the specified [whoisRecord](../resources/security-whoisrecord.md) resource.|
 
 ## Properties
 

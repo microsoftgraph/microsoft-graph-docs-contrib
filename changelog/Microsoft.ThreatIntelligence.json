@@ -376,14 +376,6 @@
       "ChangeList": [
         {
           "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [Get whoisRecord for a host](https://learn.microsoft.com/en-us/graph/api/security-host-get-whois?view=graph-rest-beta) method to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
-          "Target": "host"
-        },
-        {
-          "Id": "fd7c5536-089c-4a40-9c7f-aae6fd492ba6",
           "ApiChange": "Relationship",
           "ChangedApiName": "whois",
           "ChangeType": "Addition",
@@ -501,63 +493,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-host-list-childhostpairs?view=graph-rest-beta) operation to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatintelligence?view=graph-rest-beta) resource.",
-          "Target": "threatIntelligence"
-        },
-        {
-          "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-host-list-hostpairs?view=graph-rest-beta) operation to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatintelligence?view=graph-rest-beta) resource.",
-          "Target": "threatIntelligence"
-        },
-        {
-          "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-host-list-parenthostpairs?view=graph-rest-beta) operation to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatintelligence?view=graph-rest-beta) resource.",
-          "Target": "threatIntelligence"
-        },
-        {
-          "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/security-hostpair-get?view=graph-rest-beta) operation to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatintelligence?view=graph-rest-beta) resource.",
-          "Target": "threatIntelligence"
-        },
-        {
-          "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-host-list-childhostpairs?view=graph-rest-beta) operation to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
-          "Target": "host"
-        },
-        {
-          "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-host-list-hostpairs?view=graph-rest-beta) operation to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
-          "Target": "host"
-        },
-        {
-          "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-host-list-parenthostpairs?view=graph-rest-beta) operation to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
-          "Target": "host"
-        },
-        {
-          "Id": "5008c515-c75e-4cc9-b436-4b42133cb927",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-host-list-childhostpairs?view=graph-rest-beta) operation to the [hostpair](https://learn.microsoft.com/en-us/graph/api/resources/security-hostpair?view=graph-rest-beta) resource.",
+          "Description": "Added the [list childHostPairs](https://learn.microsoft.com/en-us/graph/api/security-host-list-childhostpairs?view=graph-rest-beta) operation to the [hostpair](https://learn.microsoft.com/en-us/graph/api/resources/security-hostpair?view=graph-rest-beta) resource.",
           "Target": "hostpair"
         },
         {
@@ -565,7 +501,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-host-list-hostpairs?view=graph-rest-beta) operation to the [hostpair](https://learn.microsoft.com/en-us/graph/api/resources/security-hostpair?view=graph-rest-beta) resource.",
+          "Description": "Added the [list hostPairs](https://learn.microsoft.com/en-us/graph/api/security-host-list-hostpairs?view=graph-rest-beta) operation to the [hostpair](https://learn.microsoft.com/en-us/graph/api/resources/security-hostpair?view=graph-rest-beta) resource.",
           "Target": "hostpair"
         },
         {
@@ -573,7 +509,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "GET",
           "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-host-list-parenthostpairs?view=graph-rest-beta) operation to the [hostpair](https://learn.microsoft.com/en-us/graph/api/resources/security-hostpair?view=graph-rest-beta) resource.",
+          "Description": "Added the [list parentHostPairs](https://learn.microsoft.com/en-us/graph/api/security-host-list-parenthostpairs?view=graph-rest-beta) operation to the [hostpair](https://learn.microsoft.com/en-us/graph/api/resources/security-hostpair?view=graph-rest-beta) resource.",
           "Target": "hostpair"
         },
         {

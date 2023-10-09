@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 <!-- markdownlint-disable MD001 -->
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ### Delete an app from your organization's app catalog
 
