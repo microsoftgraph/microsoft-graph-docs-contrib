@@ -15,7 +15,7 @@
              }
      :scores {
               ;;:terminology 100
-              ;;:qualityscore 20 ;; Confirmed with Hugo that you just comment out the single score and leave the structure in place
+              :qualityscore 80
               ;;:correctness 40
              }
    }
