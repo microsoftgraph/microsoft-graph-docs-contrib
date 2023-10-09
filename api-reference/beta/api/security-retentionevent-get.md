@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Read the properties and relationships of a [retentionEvent](../resources/security-retentionevent.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -21,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|RecordsManagement.Read.All, RecordsManagement.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+|Application|RecordsManagement.Read.All, RecordsManagement.ReadWrite.All|
 
 ## HTTP request
 

@@ -15,6 +15,8 @@ Get usage trends on the number of unique users and type of peer-to-peer sessions
 
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - Skype for Business peer-to-peer activity](/skypeforbusiness/skype-for-business-online-reporting/peer-to-peer-activity-report).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

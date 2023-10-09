@@ -1,5 +1,5 @@
 ---
-title: "List intelligenceProfiles"
+title: "List intelProfiles"
 description: "Get a list of the intelligenceProfile objects and their properties."
 author: "joerattazzi-microsoft"
 ms.localizationpriority: medium
@@ -7,13 +7,15 @@ ms.prod: "security"
 doc_type: apiPageType
 ---
 
-# List intelligenceProfiles
+# List intelProfiles
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
 Get a list of the [intelligenceProfile](../resources/security-intelligenceprofile.md) objects and their properties.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 

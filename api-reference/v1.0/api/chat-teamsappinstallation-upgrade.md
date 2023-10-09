@@ -16,6 +16,8 @@ Upgrade an [app installation](../resources/teamsappinstallation.md) within a [ch
 > **Notes**:
 > - If the chat is associated with an [onlineMeeting](../resources/onlinemeeting.md) instance, then effectively, the **teamsApp** installed in the meeting will get upgraded.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -61,6 +63,7 @@ If successful, this method returns a `204 No Content` response code.
 
 The following example upgrades an app installed in a chat.
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -70,6 +73,10 @@ The following example upgrades an app installed in a chat.
 
 ```http
 POST https://graph.microsoft.com/v1.0/chats/19:ea28e88c00e94c7786b065394a61f296@thread.v2/installedApps/NjRiOWM3NDYtYjE1NS00MDQyLThkNDctOTQxYmQzODE2ODFiIyMwZDgyMGVjZC1kZWYyLTQyOTctYWRhZC03ODA1NmNkZTdjNzg=/upgrade
+
+{
+
+}
 ```
 
 # [C#](#tab/csharp)
@@ -97,7 +104,7 @@ POST https://graph.microsoft.com/v1.0/chats/19:ea28e88c00e94c7786b065394a61f296@
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/upgrade-installedapps-in-chat-v1-e1-powershell-snippets.md)]
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

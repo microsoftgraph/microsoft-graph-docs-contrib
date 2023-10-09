@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object. You cannot update built-in roles. This feature requires an Azure AD Premium P1 or P2 license.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -20,6 +20,8 @@ Invalidates all the refresh tokens issued to applications for a user (as well as
 >
 >This API doesn't revoke sign-in sessions for external users, because external users sign in through their home tenant.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

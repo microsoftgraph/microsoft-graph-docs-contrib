@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Create a new [customAccessPackageWorkflowExtension](../resources/customaccesspackageworkflowextension.md) object and add it to an existing [accessPackageCatalog](../resources/accesspackagecatalog.md) object.  
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

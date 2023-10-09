@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Start a break in a specific [timeCard](../resources/timeCard.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

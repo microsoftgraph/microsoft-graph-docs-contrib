@@ -47,12 +47,12 @@ In the request body, provide a JSON representation of the **appId** of the appli
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a new [authenticationConditionApplication](../resources/authenticationconditionapplication.md) object in the response body. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `201 Created` response code and a new [authenticationConditionApplication](../resources/authenticationconditionapplication.md) object in the response body. If unsuccessful, a `4xx` error is returned with specific details.
 
 ## Examples
 
 ### Request
-The following is an example of a request.
+Here's an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -81,7 +81,7 @@ Content-Type: application/json
 ---
 
 ### Response
-The following is an example of the response
+Here's an example of the response
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.authenticationConditionApplication",

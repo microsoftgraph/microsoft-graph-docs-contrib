@@ -16,6 +16,8 @@ Soft-delete a [chat](../resources/chat.md). When invoked with delegated permissi
 
 >**Note:** This delete operation is not supported for non-admin users.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
