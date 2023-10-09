@@ -84,6 +84,43 @@ Content-Type: application/json
 }
 ```
 
+## Subscribe to transcripts available at the user-level
+
+To get change notifications for any transcript available for any online meeting organized by a specific user, subscribe to `users/{userId}/onlineMeetings/getAllTranscripts`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
+
+> [!NOTE]
+> This resource type is currently available on the `/beta` endpoint only.
+
+### Permissions
+
+One of the following permissions is required to subscribe to `users/{userId}/onlineMeetings/getAllTranscripts`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | OnlineMeetingTranscript.Read.All            |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | OnlineMeetingTranscript.Read.All            |
+
+### Example
+
+The following example shows how to subscribe to transcripts available for any online meeting organized by a specific user.
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "users/{userId}/onlineMeetings/getAllTranscripts",
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
+  "expirationDateTime": "2023-03-20T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
 ## Subscribe to recordings available at the tenant level
 
 To get change notifications for any recording available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllRecordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
@@ -157,6 +194,44 @@ Content-Type: application/json
   "clientState": "{secretClientState}"
 }
 ```
+
+## Subscribe to recordings available at the user level
+
+To get change notifications for any recording available for any online meeting organized by a specific user, subscribe to `users/{userId}/onlineMeetings/getAllRecordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
+
+> [!NOTE]
+> Change notifications for meeting recording are available on the `/beta` endpoint only.
+
+### Permissions
+
+One of the following permissions is required to subscribe to `users/{userId}/onlineMeetings/getAllRecordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | OnlineMeetingRecording.Read.All             |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | OnlineMeetingRecording.Read.All             |
+
+### Example
+
+The following example shows how to subscribe to recordings available for any online meeting organized by a specific user.
+
+```http
+POST https://graph.microsoft.com/beta/subscriptions
+Content-Type: application/json
+
+{
+  "changeType": "created",
+  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
+  "resource": "users/{userId}/onlineMeetings/getAllRecordings",
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
+  "expirationDateTime": "2023-04-11T11:00:00.0000000Z",
+  "clientState": "{secretClientState}"
+}
+```
+
 ## Notification payloads
 
 Depending on your subscription, you can either get the notification with resource data, or without it. Subscribing with resource data allows you to get the [transcript](/graph/api/resources/calltranscript) or [recording](/graph/api/resources/callrecording) metadata along with the notification.
