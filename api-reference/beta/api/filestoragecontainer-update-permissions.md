@@ -26,7 +26,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
-|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
@@ -48,7 +47,7 @@ PATCH /storage/fileStorage/containers/{containerId}/permissions/{permissionId}
 ## Request body
 In the request body, supply the new value for the **roles** property.
 
-THe following property on these permission types can be modified.
+The following property on these permission types can be modified.
 
 |Permission Type|Property|Type|Description|
 |:---|:---|:---|:---|
