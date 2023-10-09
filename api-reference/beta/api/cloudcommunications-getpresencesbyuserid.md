@@ -22,9 +22,9 @@ One of the following permissions is required to call these APIs. To learn more, 
 
 | Permission type | Permissions (from least to most privileged)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Delegated (work or school account)     | Presence.Read.All                         |
-| Delegated (personal Microsoft account) | Not Supported.                         |
-| Application                            | Not Supported.                                  |
+| Delegated (work or school account)     | Presence.Read.All                     |
+| Delegated (personal Microsoft account) | Not Supported.                        |
+| Application                            | Not Supported.                        |
 
 > **Note:**
 > This API allows users to subscribe only to another user's presence. If an application wants to use subscription APIs, it uses dummy users to subscribe to the presence of all users and collect the required data.
