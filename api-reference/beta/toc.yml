@@ -16701,6 +16701,8 @@ items:
                 href: api/site-getallsites.md
               - name: List recycle bin items
                 href: api/recyclebin-list-items.md
+              - name: Get delta
+                href: api/site-delta.md
           - name: List
             items:
               - name: List
