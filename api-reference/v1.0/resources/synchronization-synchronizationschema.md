@@ -1,6 +1,6 @@
 ---
 title: "synchronizationSchema resource type"
-description: "Defines what objects will be synchronized and how they will be synchronized."
+description: "Defines what objects will be synchronized and how they are synchronized."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
@@ -11,7 +11,7 @@ ms.prod: "applications"
 
 Namespace: microsoft.graph
 
-Defines what objects will be synchronized and how they will be synchronized. The synchronization schema contains most of the setup information for a particular synchronization job. Typically, you will customize some of the [attribute mappings](synchronization-attributemapping.md), or add a [scoping filter](synchronization-filter.md) to synchronize only objects that satisfy a certain condition.
+Defines what objects will be synchronized and how they are synchronized. The synchronization schema contains most of the setup information for a particular synchronization job. Typically, you customize some of the [attribute mappings](synchronization-attributemapping.md), or add a [scoping filter](synchronization-filter.md) to synchronize only objects that satisfy a certain condition.
 
 The following sections describe the high-level components of the synchronization schema.
 
@@ -54,7 +54,7 @@ The following sections describe the high-level components of the synchronization
 |directories|[directoryDefinition](../resources/synchronization-directorydefinition.md) collection|Contains the collection of directories and all of their objects.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

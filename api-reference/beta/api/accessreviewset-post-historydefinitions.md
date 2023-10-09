@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Create a new [accessReviewHistoryDefinition](../resources/accessreviewhistorydefinition.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -54,10 +56,10 @@ The following table shows the required properties used to create an [accessRevie
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName | String  | Name for the access review history data collection. Required. |
-|reviewHistoryPeriodStartDateTime  | DateTimeOffset  | A timestamp. Reviews starting on or after this date will be included in the fetched history data. Only required if **scheduleSettings** is not defined.  |
-|reviewHistoryPeriodEndDateTime  | DateTimeOffset  | A timestamp. Reviews starting on or before this date will be included in the fetched history data. Only required if **scheduleSettings** is not defined.  |
+|reviewHistoryPeriodStartDateTime  | DateTimeOffset  | A timestamp. Reviews starting on or after this date are in the fetched history data. Only required if **scheduleSettings** isn't defined.  |
+|reviewHistoryPeriodEndDateTime  | DateTimeOffset  | A timestamp. Reviews starting on or before this date are included in the fetched history data. Only required if **scheduleSettings** isn't defined.  |
 |scopes|[accessReviewQueryScope](../resources/accessreviewqueryscope.md) collection| Used to filter which reviews are included in the fetched history data. Fetches reviews whose scope matches with this provided scope. Required. <br> For more, see [Supported scope queries for accessReviewHistoryDefinition](#supported-scope-queries-for-accessreviewhistorydefinition). |
-| scheduleSettings |[accessReviewHistoryScheduleSettings](../resources/accessReviewHistoryScheduleSettings.md)| **Not supported yet.** The settings for a recurring access review history definition series. Only required if **reviewHistoryPeriodStartDateTime** or **reviewHistoryPeriodEndDateTime** are not defined. |
+| scheduleSettings |[accessReviewHistoryScheduleSettings](../resources/accessReviewHistoryScheduleSettings.md)| **Not supported yet.** The settings for a recurring access review history definition series. Only required if **reviewHistoryPeriodStartDateTime** or **reviewHistoryPeriodEndDateTime** aren't defined. |
 
 ### Supported scope queries for accessReviewHistoryDefinition
 

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 Retrieve the metadata for a [driveItem](../resources/driveitem.md) in a [drive](../resources/drive.md) by file system path or ID.
 `item-id` is the ID of a driveItem. It may also be the unique ID of a [SharePoint list item](../resources/listitem.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

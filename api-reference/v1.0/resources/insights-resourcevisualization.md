@@ -84,7 +84,7 @@ Notes:
 For `spsite`, you may need to sort by `lastUsed/lastAccessedDateTime` desc in order to retrieve valid results
 
 ## containerType property values
-The supported types can differ based on containers from which [officeGraphInsights](officegraphinsights.md) returns files. For example, only the [sharedInsight](insights-shared.md) insight returns files from 'DropBox', 'Box', and 'GDrive'.
+The supported types can differ based on containers from which [officeGraphInsights](officegraphinsights.md) returns files. For example, only the [sharedInsight](insights-shared.md) insight returns files from 'DropBox,' 'Box,' and 'GDrive.'
 
 -	OneDriveBusiness
 -	Site

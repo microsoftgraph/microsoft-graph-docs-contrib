@@ -23,7 +23,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the dataSourceContainer.The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
+|holdStatus|microsoft.graph.security.dataSourceHoldStatus|The hold status of the dataSourceContainer. The possible values are: `notApplied`, `applied`, `applying`, `removing`, `partial`|
 |createdDateTime|DateTimeOffset|Created date and time of the dataSourceContainer entity.|
 |displayName|String|Display name of the dataSourceContainer entity.|
 |id|String|Unique identifier of the dataSourceContainer. Inherited from [entity](../resources/entity.md)|
@@ -43,7 +43,7 @@ None.
 
 |Member|Description|
 |:----|-----------|
-| notApplied | Data source container is not on hold.|
+| notApplied | Data source container isn't on hold.|
 | applied | Data source container is on hold.|
 | applying | Data source container is in applying hold state (applyHold operation triggered).|
 | removing | Data source container is in removing the hold state (removeHold operation triggered).|
@@ -54,7 +54,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

@@ -17,6 +17,8 @@ Get the number of Yammer messages posted, read, and liked in groups.
 
 > **Note:** For details about different report views and names, see [Microsoft 365 reports - Yammer groups activity](https://support.office.com/client/Yammer-groups-activity-report-94dd92ec-ea73-43c6-b51f-2a11fd78aa31).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more information, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -59,7 +61,7 @@ This method supports the `$format` [OData query parameter](/graph/query-paramete
 
 If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
-Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.
+Preauthenticated download URLs are only valid for a short period of time (a few minutes) and don't require an `Authorization` header.
 
 The CSV file has the following headers for columns.
 
@@ -78,11 +80,11 @@ If successful, this method returns a `200 OK` response code and a JSON object in
 
 ### CSV
 
-The following is an example that outputs CSV.
+Here's an example that outputs CSV.
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 <!-- {
@@ -97,7 +99,7 @@ GET https://graph.microsoft.com/beta/reports/getYammerGroupsActivityCounts(perio
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -107,7 +109,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the CSV file that downloads will have the following schema.
+Follow the 302 redirection and the CSV file that downloads have the following schema.
 
 <!-- {
   "blockType": "response",
@@ -124,11 +126,11 @@ Report Refresh Date,Liked,Posted,Read,Report Date,Report Period
 
 ### JSON
 
-The following is an example that returns JSON.
+Here's an example that returns JSON.
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 <!-- {
@@ -143,7 +145,7 @@ GET https://graph.microsoft.com/beta/reports/getYammerGroupsActivityCounts(perio
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

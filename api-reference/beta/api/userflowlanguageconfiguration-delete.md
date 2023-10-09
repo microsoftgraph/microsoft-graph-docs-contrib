@@ -17,6 +17,8 @@ Deletes a [userFlowLanguageConfiguration](../resources/userflowlanguageconfigura
 
 **Note:** You cannot delete languages from an [Azure Active Directory user flow](../resources/b2xidentityuserflow.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

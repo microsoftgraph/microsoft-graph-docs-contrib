@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get a user's [presence](../resources/presence.md) information.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call these APIs. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -24,7 +26,7 @@ One of the following permissions is required to call these APIs. To learn more, 
 | Delegated (personal Microsoft account) | Not Supported.                        |
 | Application                            | Not Supported.                        |
 
-## HTTP Requests
+## HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/presence
@@ -111,7 +113,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 1574
 
-{  
+{
   "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
   "availability": "Available",
   "activity": "Available",

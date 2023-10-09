@@ -16,6 +16,8 @@ Get the [meetingAttendanceReport](../resources/meetingAttendanceReport.md) for a
 > [!WARNING]
 > This method does not support channel meetings.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

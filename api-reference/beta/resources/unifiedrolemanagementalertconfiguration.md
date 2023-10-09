@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleManagementAlertConfiguration resource type"
-description: "An abstract type that exposes the various configurations of a security alert that can be updated or modified in Privileged Identity Management (PIM) for Azure AD roles."
+description: "An abstract type that exposes the tenant-specific configurations of a security alert that can be updated or modified in Privileged Identity Management (PIM) for Azure AD roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An abstract type that exposes the various configurations of a security [alert](unifiedrolemanagementalert.md) that can be updated or modified in [Privileged Identity Management (PIM) for Azure AD roles](privilegedidentitymanagementv3-overview.md).
+An abstract type that exposes the tenant-specific configurations of a [security alert](unifiedrolemanagementalert.md) that can be updated or modified in [Privileged Identity Management (PIM) for Azure AD roles](privilegedidentitymanagementv3-overview.md).
 
 This abstract type is inherited by the following derived types:
 
@@ -26,6 +26,8 @@ This abstract type is inherited by the following derived types:
 - [tooManyGlobalAdminsAssignedToTenantAlertConfiguration](../resources/toomanyglobaladminsassignedtotenantalertconfiguration.md)
 
 Inherits from [entity](../resources/entity.md).
+
+For more information about working with security alerts for Azure AD roles using PIM APIs, see [Manage security alerts for Azure AD roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
 
 ## Methods
 |Method|Return type|Description|
@@ -68,4 +70,7 @@ The following is a JSON representation of the resource.
   "isEnabled": "Boolean"
 }
 ```
+
+## See also
++ [Manage security alerts for Azure AD roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
 

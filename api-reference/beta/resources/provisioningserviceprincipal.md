@@ -24,7 +24,7 @@ Represents the service principal used for provisioning. Inherits from [identity]
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

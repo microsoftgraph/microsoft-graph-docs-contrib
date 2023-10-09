@@ -17,6 +17,8 @@ Get a [taskReportSummary](../resources/identitygovernance-taskreportsummary.md) 
 
 This API provides a summary of [task processing results](identitygovernance-taskreport-list-taskprocessingresults.md) for a specified time period. Because the volume of task processing results and task reports returned by the List API calls can be overwhelming, this summary allows the administrator to get a quick overview based on counts.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

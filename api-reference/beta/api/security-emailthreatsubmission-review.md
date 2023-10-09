@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /emailThreats/{emailThreatsId}/review
+POST /security/threatSubmission/emailThreats/{emailThreatsId}/review
 ```
 
 ## Request headers

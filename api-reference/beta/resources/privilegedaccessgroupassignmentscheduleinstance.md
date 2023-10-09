@@ -38,12 +38,12 @@ Inherits from [privilegedAccessScheduleInstance](../resources/privilegedaccesssc
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|activatedUsing|[privilegedAccessGroupEligibilityScheduleInstance](../resources/privilegedaccessgroupeligibilityscheduleinstance.md)|When the request activates a membership or ownership in PIM for groups, this object represents the eligibility request for the group. Otherwise, it is `null`.|
+|activatedUsing|[privilegedAccessGroupEligibilityScheduleInstance](../resources/privilegedaccessgroupeligibilityscheduleinstance.md)|When the request activates a membership or ownership in PIM for groups, this object represents the eligibility request for the group. Otherwise, it's `null`.|
 |group|[group](../resources/group.md)|References the group that is the scope of the membership or ownership assignment through PIM for groups. Supports `$expand`.|
 |principal|[directoryObject](../resources/directoryobject.md)|References the principal that's in the scope of the membership or ownership assignment request through the group that's governed by PIM. Supports `$expand`.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
