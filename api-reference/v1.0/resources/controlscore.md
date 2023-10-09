@@ -17,6 +17,13 @@ Contains a tenant score and description for an individual control.
 
 |Name |Type |Description |
 |:--|:--|:--|
+|implementationStatus|String|Control implementation status|
+|lastSynced|DateTimeOffset|Control score last sync time|
+|state|String|Current control state|
+|currentScoreInPercentage|Double|Current control score in percentage|
+|count|Double|Applies only to controls whose score is based on the count/total|
+|total|Double|Applies only to controls whose score is based on the count/total|
+|on|Boolean|Represent a Boolean control state – true if score > 0|
 |controlCategory|String|Control action category (Identity, Data, Device, Apps, Infrastructure).|
 |controlName|String|Control unique name.|
 |description|String| Description of the control.|
