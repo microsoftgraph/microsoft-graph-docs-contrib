@@ -13,9 +13,9 @@ Register the application in the Azure Active Directory to enable user authentica
 
 1. Complete the **Register an application** form using the following values, and then select **Register**.
    * **Name**: One Productivity Hub Demo
-   * **Supported account types**: Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)
+   * **Supported account types**: Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (for example, Skype, Xbox)
    * **Redirect URI**: Select **Single-page application (SPA)** as a type of redirect URI and put `http://localhost:3000/index.html` as a redirect URI to test locally.
 
     ![Screenshot of the Register an application page showing the values to input](../../../images/mgt-one-productivity-hub/aad-new-app-registration-form.png)
 
-1. When app registration is completed, go to the **Overview** tab in your application page and copy **Application (client) ID**. You will need this ID for the following step.
+1. When app registration is completed, go to the **Overview** tab in your application page and copy **Application (client) ID**. You need this ID for the following step.

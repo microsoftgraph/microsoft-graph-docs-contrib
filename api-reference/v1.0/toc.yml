@@ -300,6 +300,8 @@ items:
             href: /graph/toolkit/customize-components/disambiguation?context=graph/api/1.0
       - name: Upgrading to v3
         href: /graph/toolkit/upgrade?context=graph/api/1.0
+  - name: Microsoft Graph activity logs (preview)
+    href: /graph/microsoft-graph-activity-logs-overview?context=graph/api/1.0
   - name: Configure Connected Services
     displayName: Configure Connected Services in Visual Studio
     href: /graph/office-365-connected-services?context=graph/api/1.0
@@ -7590,7 +7592,7 @@ items:
                   - name: Schema
                     href: resources/externalconnectors-schema.md
                   - name: Create
-                    href: api/externalconnectors-schema-create.md
+                    href: api/externalconnectors-externalconnection-patch-schema.md
                   - name: Get
                     href: api/externalconnectors-schema-get.md
               - name: External activity
@@ -7606,7 +7608,7 @@ items:
                   - name: External item
                     href: resources/externalconnectors-externalitem.md
                   - name: Create
-                    href: api/externalconnectors-externalitem-create.md
+                    href: api/externalconnectors-externalconnection-put-items.md
                   - name: Get
                     href: api/externalconnectors-externalitem-get.md
                   - name: Update
@@ -7634,7 +7636,7 @@ items:
                   - name: Create
                     href: api/externalconnectors-externalgroup-post-members.md
                   - name: Delete
-                    href: api/externalconnectors-identity-delete.md
+                    href: api/externalconnectors-externalgroupmember-delete.md
       - name: Security
         items:
           - name: Overview
@@ -8004,9 +8006,9 @@ items:
                 items:
                   - name: Article
                     href: resources/security-article.md
-                  - name: Get
+                  - name: Get article
                     href: api/security-article-get.md
-                  - name: List
+                  - name: List articles
                     href: api/security-article-list.md
                   - name: List article indicators
                     href: api/security-article-list-indicators.md
@@ -8014,71 +8016,133 @@ items:
                 items:
                   - name: Article indicator
                     href: resources/security-articleindicator.md
-                  - name: Get
+                  - name: List article indicators
+                    href: api/security-article-list-indicators.md
+                  - name: Get article indicator
                     href: api/security-articleindicator-get.md
               - name: Host
                 items:
                   - name: Host
                     href: resources/security-host.md
-                  - name: Get
+                  - name: Get host
                     href: api/security-host-get.md
+                  - name: Get host reputation
+                    href: api/security-host-get-reputation.md
+                  - name: Get WHOIS record
+                    href: api/security-whoisrecord-get.md
                   - name: List components
                     href: api/security-host-list-components.md
                   - name: List cookies
                     href: api/security-host-list-cookies.md
+                  - name: List host pairs for a host
+                    href: api/security-host-list-hostpairs.md
+                  - name: List host pairs for a host as child
+                    href: api/security-host-list-parenthostpairs.md
+                  - name: List host pairs for a host as parent
+                    href: api/security-host-list-childhostpairs.md
+                  - name: List host SSL certificates
+                    href: api/security-hostsslcertificate-list-host.md
                   - name: List passive DNS
                     href: api/security-host-list-passivedns.md
                   - name: List passive DNS reverse
                     href: api/security-host-list-passivednsreverse.md
-                  - name: Get reputation
-                    href: api/security-host-get-reputation.md
+                  - name: List subdomains
+                    href: api/security-host-list-subdomains.md
                   - name: List trackers
                     href: api/security-host-list-trackers.md
               - name: Host component
                 items:
                   - name: Host component
                     href: resources/security-hostcomponent.md
+                  - name: List
+                    href: api/security-host-list-components.md
                   - name: Get
                     href: api/security-hostcomponent-get.md
               - name: Host cookie
                 items:
                   - name: Host cookie
                     href: resources/security-hostcookie.md
+                  - name: List
+                    href: api/security-host-list-cookies.md
                   - name: Get
                     href: api/security-hostcookie-get.md
+              - name: Host pair
+                items:
+                  - name: Host pair
+                    href: resources/security-hostpair.md
+                  - name: Get
+                    href: api/security-hostpair-get.md
+                  - name: List for a host
+                    href: api/security-host-list-hostpairs.md
+                  - name: List for a host as child
+                    href: api/security-host-list-parenthostpairs.md
+                  - name: List for a host as parent
+                    href: api/security-host-list-childhostpairs.md
+              - name: Host SSL certificate
+                items:
+                - name: Host SSL certificate
+                  href: resources/security-hostsslcertificate.md
+                - name: List
+                  href: api/security-hostsslcertificate-list-host.md
+                - name: Get
+                  href: api/security-hostsslcertificate-get.md
               - name: Host tracker
                 items:
                   - name: Host tracker
                     href: resources/security-hosttracker.md
+                  - name: List
+                    href: api/security-host-list-trackers.md
                   - name: Get
                     href: api/security-hosttracker-get.md
               - name: Intelligence profile
                 items:
                   - name: Intelligence profile
                     href: resources/security-intelligenceprofile.md
-                  - name: Get
+                  - name: Get intelligence profile
                     href: api/security-intelligenceprofile-get.md
-                  - name: List
+                  - name: List intelligence profiles
                     href: api/security-intelligenceprofile-list.md
-                  - name: List intelligence profile indicators
+                  - name: List indicators
                     href: api/security-intelligenceprofile-list-indicators.md
               - name: Intelligence profile indicator
                 items:
                   - name: Intelligence profile indicator
                     href: resources/security-intelligenceprofileindicator.md
-                  - name: Get
+                  - name: List indicators
+                    href: api/security-intelligenceprofile-list-indicators.md
+                  - name: Get intelligence profile indicator
                     href: api/security-intelligenceprofileindicator-get.md
               - name: Passive DNS record
                 items:
                   - name: Passive DNS record
                     href: resources/security-passivednsrecord.md
-                  - name: Get
+                  - name: Get passive DNS record
                     href: api/security-passivednsrecord-get.md
+                  - name: List passive DNS
+                    href: api/security-host-list-passivedns.md
+                  - name: List passive DNS reverse
+                    href: api/security-host-list-passivednsreverse.md
+              - name: SSL certificate
+                items:
+                - name: SSL certificate
+                  href: resources/security-sslcertificate.md
+                - name: List
+                  href: api/security-sslcertificate-list.md
+                - name: Get
+                  href: api/security-sslcertificate-get.md
+              - name: Subdomain
+                items:
+                  - name: Subdomain
+                    href: resources/security-subdomain.md
+                  - name: List
+                    href: api/security-host-list-subdomains.md
+                  - name: Get
+                    href: api/security-subdomain-get.md
               - name: Vulnerability
                 items:
                   - name: Vulnerability
                     href: resources/security-vulnerability.md
-                  - name: Get
+                  - name: Get vulnerability
                     href: api/security-vulnerability-get.md
                   - name: List vulnerability components
                     href: api/security-vulnerability-list-components.md
@@ -8086,8 +8150,26 @@ items:
                 items:
                   - name: Vulnerability component
                     href: resources/security-vulnerabilitycomponent.md
+                  - name: List
+                    href: api/security-vulnerability-list-components.md
                   - name: Get
                     href: api/security-vulnerabilitycomponent-get.md
+              - name: WHOIS record
+                items:
+                  - name: WHOIS record
+                    href: resources/security-whoisrecord.md
+                  - name: List
+                    href: api/security-whoisrecord-list.md
+                  - name: Get
+                    href: api/security-whoisrecord-get.md
+              - name: WHOIS history record
+                items:
+                  - name: WHOIS history record
+                    href: resources/security-whoishistoryrecord.md
+                  - name: List
+                    href: api/security-whoisrecord-list-history.md
+                  - name: Get
+                    href: api/security-whoishistoryrecord-get.md
       - name: Sites and lists
         displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
         items:
@@ -8449,6 +8531,14 @@ items:
                         href: api/userteamwork-teamsappinstallation-upgrade.md
                       - name: Remove app for user
                         href: api/userteamwork-delete-installedapps.md
+              - name: App settings
+                items:
+                - name: App settings
+                  href: resources/teamsappsettings.md
+                - name: Get
+                  href: api/teamsappsettings-get.md
+                - name: Update
+                  href: api/teamsappsettings-update.md
               - name: Resource-specific permission grant
                 href: resources/resourcespecificpermissiongrant.md
                 items:
@@ -8619,6 +8709,14 @@ items:
                         items:
                           - name: List
                             href: api/attendancerecord-list.md
+                  - name: Call transcript
+                    items:
+                      - name: Call transcript
+                        href: resources/calltranscript.md
+                      - name: List transcripts
+                        href: api/onlinemeeting-list-transcripts.md
+                      - name: Get transcript
+                        href: api/calltranscript-get.md
                   - name: Online meeting
                     href: resources/onlinemeeting.md
                     items:
@@ -8651,6 +8749,8 @@ items:
                     href: api/presence-setuserpreferredpresence.md
                   - name: Clear user preferred presence
                     href: api/presence-clearuserpreferredpresence.md
+                  - name: Set user status message
+                    href: api/presence-setstatusmessage.md
           - name: Employee learning
             displayName: Viva Learning
             items:

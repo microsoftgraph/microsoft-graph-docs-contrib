@@ -20,6 +20,8 @@ To allow for asynchronous processing, you must wait a **minimum of 2 hours** bet
 
 Furthermore, to allow for asynchronous processing, you must wait **up to 4 hours** before joining a multi-tenant organization is completed.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

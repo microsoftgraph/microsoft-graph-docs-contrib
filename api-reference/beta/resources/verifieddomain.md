@@ -27,7 +27,7 @@ Specifies a domain for a tenant. The **verifiedDomains** property of the [organi
 
 ## JSON representation
 
-Here is a JSON representation of the resource
+Here's a JSON representation of the resource
 
 <!-- {
   "blockType": "resource",

@@ -20,7 +20,7 @@ Represents the Azure Active Directory tenant that the user or application is sig
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get organization](../api/organization-get.md) | [organization](organization.md) collection|Read properties and relationships of organization object.|
-|[Update organization](../api/organization-update.md) | None | Update organization object. The only properties that can be updated are: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones**, and **privacyProfile**. |
+|[Update organization](../api/organization-update.md) | None | Update organization object. The only properties that can be updated are: **marketingNotificationMails**, **onPremisesSyncEnabled**,  **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones**, and **privacyProfile**. |
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|

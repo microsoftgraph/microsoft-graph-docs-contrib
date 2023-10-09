@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Create a new [businessScenarioTask](../resources/businessscenariotask.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -73,7 +75,7 @@ If successful, this method returns a `201 Created` response code and a [business
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -142,7 +144,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows a response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

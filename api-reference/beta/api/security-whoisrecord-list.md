@@ -19,6 +19,8 @@ Get a list of [whoisRecord](../resources/security-whoisrecord.md) objects.
 
 > **Note:** You must include the `$search` query parameter in the request URL for this API.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

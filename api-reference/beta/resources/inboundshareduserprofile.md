@@ -28,7 +28,7 @@ Represents an Azure AD user from an external Azure AD tenant whose profile data 
 
 |Property|Type|Description|
 |:---|:---|:---|
-| displayName | String | The name displayed in the address book for teh user at the time when the sharing record was created. Read-only. |
+| displayName | String | The name displayed in the address book for the user at the time when the sharing record was created. Read-only. |
 | homeTenantId | String | The home tenant id of the external user. Read-only. |
 | userId | String | The object id of the external user. Read-only. |
 | userPrincipalName | String | The user principal name (UPN) of the external user. Read-only. |
@@ -39,7 +39,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "userId",

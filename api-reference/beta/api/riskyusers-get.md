@@ -16,6 +16,8 @@ Retrieve the properties and relationships of a **riskyUser** object.
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

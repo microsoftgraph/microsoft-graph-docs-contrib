@@ -1,6 +1,6 @@
 ---
 title: "staleSignInAlertIncident resource type"
-description: "Represents an alert incident that is triggered if there are accounts in a privileged role that have not signed into Azure AD within a specified time period."
+description: "Represents an alert incident that is triggered if there are accounts in a privileged role that haven't signed into Azure AD within a specified time period."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an alert incident that is triggered if there are accounts in a privileged role that have not signed into Azure AD within a specified time period.
+Represents an alert incident that is triggered if there are accounts in a privileged role that haven't signed into Azure AD within a specified time period.
 
 The threshold that triggers this alert when it's reached is defined in the [staleSignInAlertConfiguration](../resources/stalesigninalertconfiguration.md) resource type.
 
@@ -36,7 +36,7 @@ Inherits from [unifiedRoleManagementAlertIncident](../resources/unifiedrolemanag
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

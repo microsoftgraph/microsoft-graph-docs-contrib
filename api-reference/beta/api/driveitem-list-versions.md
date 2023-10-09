@@ -16,7 +16,9 @@ Namespace: microsoft.graph
 OneDrive and SharePoint can be configured to retain the history for files.
 Depending on the service and configuration, a new version can be created for each edit, each time the file is saved, manually, or never.
 
-Previous versions of a document may be retained for a finite period of time depending on admin settings which may be unique per user or location.
+Previous versions of a document may be retained for a finite period of time depending on admin settings that may be unique per user or location.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -48,7 +50,7 @@ If successful, this method returns a `200 OK` response code and collection of [D
 
 ## Example
 
-This example retrieves the versions of a file in the current user's drive.
+Here's and example the retrieves the versions of a file in the current user's drive.
 
 ### Request
 
@@ -96,7 +98,7 @@ GET /me/drive/items/{item-id}/versions
 
 ### Response
 
-This returns a collection of versions:
+Here's an example of the response that includes a collection of versions:
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItemVersion)", "truncated": true } -->
 
@@ -146,9 +148,9 @@ Content-Type: application/json
 
 ## Remarks
 
-Versions are returned in descending order (newest to oldest). The OData `$orderby` query string parameter is not supported.
+Versions are returned in descending order (newest to oldest). The OData `$orderby` query string parameter isn't supported.
 
-OneDrive does not preserve the complete metadata for previous versions of a file.
+OneDrive doesn't preserve the complete metadata for previous versions of a file.
 
 When your app retrieves the list of available versions for a file, a [driveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.
 

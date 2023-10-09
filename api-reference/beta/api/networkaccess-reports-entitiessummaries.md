@@ -14,6 +14,8 @@ Namespace: microsoft.graph.networkaccess
 
 Provides high-level summaries of entities in the Global Secure Access tenant.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -33,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /networkAccess/reports/entitiesSummaries
+GET /networkAccess/reports/entitiesSummaries(startDateTime={startDateTime},endDateTime={endDateTime})
 ```
 
 ## Function parameters
@@ -69,7 +71,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/reports/entitiesSummaries(startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T00:00:00Z)?$filter=trafficType  eq 'microsoft365'
+GET https://graph.microsoft.com/beta/networkAccess/reports/entitiesSummaries(startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T00:00:00Z)?$filter=trafficType eq 'microsoft365'
 ```
 
 # [C#](#tab/csharp)

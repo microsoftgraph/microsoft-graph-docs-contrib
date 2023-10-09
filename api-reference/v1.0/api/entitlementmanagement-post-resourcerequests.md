@@ -21,6 +21,8 @@ To add a SharePoint Online site an as a resource to a catalog, set the **request
 
 To remove a resource from a catalog, set the **requestType** to be `adminRemove`, and the `resource` to contain the `id` of the [resource](../resources/accesspackageresource.md) object to be removed.  The resource object can be retrieved using [list resources](accesspackagecatalog-list-resources.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -206,7 +208,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -293,7 +294,6 @@ Content-type: application/json
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
@@ -378,7 +378,6 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 #### Response
 

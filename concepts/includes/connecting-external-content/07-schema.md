@@ -4,7 +4,7 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD041 -->
 
-In this section you will add methods to [register the schema](../../connecting-external-content-manage-schema.md) for the connector.
+In this section, you'll add methods to [register the schema](../../connecting-external-content-manage-schema.md) for the connector.
 
 ## Register the schema
 
