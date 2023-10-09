@@ -155,6 +155,32 @@
     {
       "ChangeList": [
         {
+          "Id": "f42a2acd-7e06-4b84-abdd-5df825fc2845",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduAssignments.ReadWrite.All` to the [Create](https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments) method of [assignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment).",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "f42a2acd-7e06-4b84-abdd-5df825fc2845",
+          "ApiChange": "Permission",
+          "ChangedApiName": "EduAssignments.ReadWriteBasic.All",
+          "ChangeType": "Addition",
+          "Description": "Added support for the application permission `EduAssignments.ReadWriteBasic.All` to the [Create](https://learn.microsoft.com/en-us/graph/api/educationclass-post-assignments) method of [assignment](https://learn.microsoft.com/en-us/graph/api/resources/educationassignment).",
+          "Target": "educationAssignment"
+        }
+      ],
+      "Id": "f2ab8d6b-0439-418e-aa8a-7ac6267031e0",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-23T00:00:00",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3f365793-7526-4ce7-816b-ad1f7bba3eb4",
           "ApiChange": "Resource",
           "ChangedApiName": "educationModule",
