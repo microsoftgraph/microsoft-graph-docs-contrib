@@ -12,7 +12,7 @@ You can use the cloud communications API in Microsoft Graph to build bots to res
 
 ## Prerequisites
 
-Before you get started, it's helpful to familiarize yourself with the following topics:
+Before you get started, familiarize yourself with the following topics:
 
 - [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)
 (Azure AD) and how the service helps employees sign in and access resources.
@@ -43,7 +43,7 @@ On the other hand, a shared cache, such as REDIS, needs to be accessible to all 
 
 A virtual machine can handle only one bot instance at a time. Because all the states are on one machine, there aren't any extra memory or REDIS cache checks.
 
-The drawback is that it isn't as resilient because the bot instance is just on one machine.
+The drawback is that it isn't as resilient because the bot instance is just on one computer.
 
 > [!NOTE]
 > Service-hosted media bots can be stateful or stateless. Application-hosted media bots must be stateful to use the [Bot Media SDK](https://www.nuget.org/packages/Microsoft.Skype.Bots.Media).
