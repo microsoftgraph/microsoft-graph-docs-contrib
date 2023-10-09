@@ -16409,13 +16409,8 @@ items:
                   - name: Get article
                     href: api/security-article-get.md
                   - name: List articles
-<<<<<<< HEAD
                     href: api/security-threatintelligence-list-articles.md
-                  - name: List indicators
-=======
-                    href: api/security-article-list.md
                   - name: List article indicators
->>>>>>> 38c8f9c716f154d9706a2101129f339e94064307
                     href: api/security-article-list-indicators.md
               - name: Article indicator
                 items:
