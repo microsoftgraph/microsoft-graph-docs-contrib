@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update the properties of an [authorizationPolicy](../resources/authorizationpolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -69,11 +71,10 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 Here's example of the request. In this example, guest access level is modified to Restricted Guest User.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_authZPolicy_guestUserLevel"
+  "name": "update_authorizationpolicy_allowemailverifieduserstojoinorganization"
 }-->
 
 ```http
@@ -85,31 +86,31 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-guestuserlevel-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-authorizationpolicy-allowemailverifieduserstojoinorganization-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-authzpolicy-guestuserlevel-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/update-authorizationpolicy-allowemailverifieduserstojoinorganization-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-guestuserlevel-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/update-authorizationpolicy-allowemailverifieduserstojoinorganization-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-guestuserlevel-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-authorizationpolicy-allowemailverifieduserstojoinorganization-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-authzpolicy-guestuserlevel-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authorizationpolicy-allowemailverifieduserstojoinorganization-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-authzpolicy-guestuserlevel-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/update-authorizationpolicy-allowemailverifieduserstojoinorganization-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-authzpolicy-guestuserlevel-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/update-authorizationpolicy-allowemailverifieduserstojoinorganization-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -132,11 +133,10 @@ HTTP/1.1 204 No Content
 
 Here's example of the request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_authZPolicy_blockMSOLPowerShell"
+  "name": "update_authorizationpolicy_blockmsolpowershell"
 }-->
 
 ```http
@@ -148,31 +148,31 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-blockmsolpowershell-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-authorizationpolicy-blockmsolpowershell-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-authzpolicy-blockmsolpowershell-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/update-authorizationpolicy-blockmsolpowershell-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-blockmsolpowershell-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/update-authorizationpolicy-blockmsolpowershell-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-blockmsolpowershell-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-authorizationpolicy-blockmsolpowershell-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-authzpolicy-blockmsolpowershell-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authorizationpolicy-blockmsolpowershell-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-authzpolicy-blockmsolpowershell-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/update-authorizationpolicy-blockmsolpowershell-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-authzpolicy-blockmsolpowershell-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/update-authorizationpolicy-blockmsolpowershell-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -195,11 +195,10 @@ HTTP/1.1 204 No Content
 
 Here's example of the request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_authZPolicy_applications"
+  "name": "update_authorizationpolicy_defaultuserrolepermissions_allowedtocreateapps"
 }-->
 
 ```http
@@ -213,31 +212,31 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-applications-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-authorizationpolicy-defaultuserrolepermissions-allowedtocreateapps-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-authzpolicy-applications-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/update-authorizationpolicy-defaultuserrolepermissions-allowedtocreateapps-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-applications-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/update-authorizationpolicy-defaultuserrolepermissions-allowedtocreateapps-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-applications-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-authorizationpolicy-defaultuserrolepermissions-allowedtocreateapps-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-authzpolicy-applications-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authorizationpolicy-defaultuserrolepermissions-allowedtocreateapps-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-authzpolicy-applications-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/update-authorizationpolicy-defaultuserrolepermissions-allowedtocreateapps-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-authzpolicy-applications-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/update-authorizationpolicy-defaultuserrolepermissions-allowedtocreateapps-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -260,11 +259,10 @@ HTTP/1.1 204 No Content
 
 Here's example of the request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_authZPolicy_SSPR"
+  "name": "update_authorizationpolicy_allowedtousesspr"
 }-->
 
 ```http
@@ -276,31 +274,31 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-sspr-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-authorizationpolicy-allowedtousesspr-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-authzpolicy-sspr-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/update-authorizationpolicy-allowedtousesspr-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-sspr-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/update-authorizationpolicy-allowedtousesspr-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-sspr-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-authorizationpolicy-allowedtousesspr-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-authzpolicy-sspr-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authorizationpolicy-allowedtousesspr-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-authzpolicy-sspr-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/update-authorizationpolicy-allowedtousesspr-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-authzpolicy-sspr-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/update-authorizationpolicy-allowedtousesspr-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -323,11 +321,10 @@ HTTP/1.1 204 No Content
 
 Here's example of the request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_authZPolicy_disableUserConsent"
+  "name": "update_authorizationpolicy_disableusercontent"
 }-->
 
 ```http
@@ -341,31 +338,31 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-disableuserconsent-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-authorizationpolicy-disableusercontent-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-authzpolicy-disableuserconsent-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/update-authorizationpolicy-disableusercontent-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-disableuserconsent-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/update-authorizationpolicy-disableusercontent-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-disableuserconsent-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-authorizationpolicy-disableusercontent-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-authzpolicy-disableuserconsent-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authorizationpolicy-disableusercontent-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-authzpolicy-disableuserconsent-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/update-authorizationpolicy-disableusercontent-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-authzpolicy-disableuserconsent-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/update-authorizationpolicy-disableusercontent-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -388,11 +385,10 @@ HTTP/1.1 204 No Content
 
 Here's example of the request that allows user consent to apps, subject to the built-in [app consent policy](/azure/active-directory/manage-apps/manage-app-consent-policies) `microsoft-user-default-low`, which allows delegated permissions classified "low", for client apps from verified publishers or registered in the same tenant.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_authZPolicy_enableUserConsentLow"
+  "name": "update_authorizationpolicy_defaultuserrolepermissions_permissiongrantpoliciesassigned"
 }-->
 
 ```http
@@ -408,31 +404,31 @@ PATCH https://graph.microsoft.com/v1.0/policies/authorizationPolicy
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-authzpolicy-enableuserconsentlow-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-authorizationpolicy-defaultuserrolepermissions-permissiongrantpoliciesassigned-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/update-authzpolicy-enableuserconsentlow-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/update-authorizationpolicy-defaultuserrolepermissions-permissiongrantpoliciesassigned-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/update-authzpolicy-enableuserconsentlow-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/update-authorizationpolicy-defaultuserrolepermissions-permissiongrantpoliciesassigned-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-authzpolicy-enableuserconsentlow-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/update-authorizationpolicy-defaultuserrolepermissions-permissiongrantpoliciesassigned-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-authzpolicy-enableuserconsentlow-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-authorizationpolicy-defaultuserrolepermissions-permissiongrantpoliciesassigned-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/update-authzpolicy-enableuserconsentlow-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/update-authorizationpolicy-defaultuserrolepermissions-permissiongrantpoliciesassigned-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/update-authzpolicy-enableuserconsentlow-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/update-authorizationpolicy-defaultuserrolepermissions-permissiongrantpoliciesassigned-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

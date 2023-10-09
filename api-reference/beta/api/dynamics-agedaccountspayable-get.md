@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of an aged accounts payable report object for Dynamics 365 Business Central.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

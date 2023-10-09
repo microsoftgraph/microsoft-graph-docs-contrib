@@ -8,7 +8,7 @@ doc_type: "apiPageType"
 ---
 
 
-# Add Add noncustodialDataSources
+# Add noncustodialDataSources
 Namespace: microsoft.graph.security
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -57,7 +57,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -85,7 +85,7 @@ Content-Type: application/json
 ---
 
 ### Response
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

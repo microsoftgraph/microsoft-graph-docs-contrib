@@ -32,6 +32,8 @@ GET /me/onenote/pages/{id}/$value[?includeIDs=true]
 
 The `includeIDs=true` query option is used to [update pages](../api/page-update.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -61,14 +63,14 @@ The default response expands `parentSection` and selects the section's `id`, `na
 | Accept | string | `application/json` |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and the [page](../resources/page.md) object in the response body.
 ## Example
 ##### Request
-Here is an example of the request.
+Here's an example of the request.
 # [HTTP](#tab/http)
  <!-- { "blockType": "request", "name": "page_get" } -->
 
@@ -111,7 +113,7 @@ GET https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
+Here's an example of the response. Note: The response object shown Here's truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": "true",

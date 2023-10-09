@@ -13,8 +13,10 @@ Namespace: microsoft.graph
 
 Get the instances (occurrences) of an event for a specified time range. 
 
-If the event is a `seriesMaster` type, this returns the 
+If the event is a `seriesMaster` type, this API returns the 
 occurrences and exceptions of the event in the specified time range.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -66,7 +68,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [Event](../resources/event.md) objects in the response body.
 ## Example
 ##### Request
-The following example gets within the specified time range the occurrences and exceptions of an event which is the master event of a recurring series.
+The following example gets the occurrences and exceptions of a master event for a recurring series, within a specified time range.
 
 # [HTTP](#tab/http)
 <!-- {

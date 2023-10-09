@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Mark an `assigned` [educationAssignment](../resources/educationassignment.md) as `inactive` to signal that the assignment has no further action items for teachers and students. This action can only be performed by a teacher on assigned assignments.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -40,19 +42,19 @@ POST /education/classes/{classId}/assignments/{assignmentId}/deactivate
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and an [educationAssignment](../resources/educationassignment.md) object with `inactive` status in the response body.
 
 ## Examples
-`Inactive` is a new status for assignments, you can add the `Prefer` header in your request to get the status, otherwise you will get an `unknownFutureValue` value in the response.
+`Inactive` is a new status for assignments, you can add the `Prefer` header in your request to get the status, otherwise you'll get an `unknownFutureValue` value in the response.
 
 ### Example 1: Mark assignment inactive without optional Prefer header
 
 #### Request
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +101,7 @@ POST https://graph.microsoft.com/beta/education/classes/ffac078e-1b63-42d0-bc2a-
 ---
 
 #### Response
-The following is an example of the response when `Prefer: include-unknown-enum-members` is not provided in the request header.
+Here's an example of the response when `Prefer: include-unknown-enum-members` isn't provided in the request header.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -162,7 +164,7 @@ Content-type: application/json
 
 ### Example 2: Mark assignment inactive with optional Prefer header
 #### Request
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -210,7 +212,7 @@ Prefer: include-unknown-enum-members
 ---
 
 #### Response
-The following is an example of the response when the `Prefer: include-unknown-enum-members` is provided in the request header.
+Here's an example of the response when the `Prefer: include-unknown-enum-members` is provided in the request header.
 
 >**Note:** The response object shown here might be shortened for readability.
 

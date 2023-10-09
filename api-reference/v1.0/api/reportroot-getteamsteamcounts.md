@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get the number of teams of a particular type in an instance of Microsoft Teams.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
 
-> **Note:** For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure Active Directory limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
+> **Note:** For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure Active Directory limited administrator role. For more information, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -48,13 +50,13 @@ In the request URL, provide the following parameters with a valid value.
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `302 Found` response that redirects to a pre-authenticated download URL for the report. That URL can be found in the `Location` header in the response.
 
-Pre-authenticated download URLs are only valid for a short period (a few minutes) and do not require an `Authorization` header.
+Pre-authenticated download URLs are only valid for a short period (a few minutes) and don't require an `Authorization` header.
 
 The CSV file has the following headers for columns:
 
@@ -69,7 +71,7 @@ The CSV file has the following headers for columns:
 
 ### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -113,7 +115,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsTeamCounts(period='D7')?$fo
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- { "blockType": "ignored" } --> 
 ```http
@@ -122,7 +124,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-Follow the 302 redirection and the CSV file that downloads will have the following schema.
+Follow the 302 redirection and the CSV file that downloads have the following schema.
 
 <!-- {
   "blockType": "response",

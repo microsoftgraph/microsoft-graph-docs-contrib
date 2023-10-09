@@ -26,7 +26,7 @@ var requestBody = new AppManagementPolicy
 			new PasswordCredentialConfiguration
 			{
 				RestrictionType = AppCredentialRestrictionType.PasswordLifetime,
-				MaxLifetime = TimeSpan.Parse("P4DT12H30M5S"),
+				MaxLifetime = TimeSpan.Parse("P90D"),
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z"),
 			},
 			new PasswordCredentialConfiguration
@@ -38,7 +38,7 @@ var requestBody = new AppManagementPolicy
 			new PasswordCredentialConfiguration
 			{
 				RestrictionType = AppCredentialRestrictionType.SymmetricKeyLifetime,
-				MaxLifetime = TimeSpan.Parse("P4D"),
+				MaxLifetime = TimeSpan.Parse("P30D"),
 				RestrictForAppsCreatedAfterDateTime = DateTimeOffset.Parse("2014-10-19T10:37:00Z"),
 			},
 		},

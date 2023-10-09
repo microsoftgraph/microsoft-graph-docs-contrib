@@ -1,6 +1,6 @@
 ---
 title: "Range: OffsetRange"
-description: "Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception will be thrown."
+description: "Gets an object that represents a range that's offset from the specified range. The dimension of the returned range matches this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception is thrown."
 ms.localizationpriority: medium
 author: "lumine2008"
 ms.prod: "excel"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception will be thrown.
+Gets an object that represents a range that's offset from the specified range. The dimension of the returned range matches this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception is thrown.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -51,9 +51,9 @@ In the request body, provide a JSON object with the following parameters.
 If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
 
 ## Example
-Here is an example of how to call this API.
+Here's an example of how to call this API.
 ##### Request
-Here is an example of the request.
+Here's an example of the request.
 <!-- {
   "blockType": "request",
   "isComposable": true,
@@ -70,7 +70,7 @@ Content-type: application/json
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here's an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

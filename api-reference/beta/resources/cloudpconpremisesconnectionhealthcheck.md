@@ -89,24 +89,24 @@ The result of a Cloud PC Azure network connection health check.
 |resourceAvailabilityCheckNoIntuneReaderRoleError|The Cloud PC service principal doesn't have sufficient permissions to check the Intune platform restriction settings. Please make sure that the Cloud PC service principal has the *Reader* permissions on the subscription.|
 |resourceAvailabilityCheckIntuneDefaultWindowsRestrictionViolation|The Intune has a default Windows platform restriction policy, which may block you from provisioning.|
 |resourceAvailabilityCheckIntuneCustomWindowsRestrictionViolation|The Intune has a custom Windows platform restriction policy, which may block you from provisioning.|
-|resourceAvailabilityCheckUnknownError|The resource availability check for Azure resources failed due to an unknown error. Please ensure that all Azure resources meet the prerequisites.|
-|permissionCheckNoSubscriptionReaderRole|The Cloud PC service principal doesn't have sufficient permissions on the Azure subscription. Please make sure that the Cloud PC service principal has the *Reader* permissions on the subscription.|
-|permissionCheckNoResourceGroupOwnerRole|The Cloud PC service principal doesn't have sufficient permissions on the Azure resource group. Please make sure that the Cloud PC service principal has the *Owner* permissions on the resource group. |
-|permissionCheckNoVNetContributorRole|The Cloud PC service principal doesn't have sufficient permissions on the Azure vNet. Please make sure that the Cloud PC service has the *Network contributor* permissions on the vNet.|
-|permissionCheckNoResourceGroupNetworkContributorRole|Cloud PC service principal doesn't have sufficient permissions on the Azure resource group. Please make sure that the  application has Network contributor permissions on the resource group.|
-|permissionCheckTransientServiceError|The first-party app permission check failed due to a transient error. Please try it again. If the issue persists, please contact customer support.|
-|permissionCheckUnknownError|The Cloud PC service principal doesn't have sufficient permissions. Please make sure that the Cloud PC service principal is granted sufficient Azure permissions.|
-|udpConnectivityCheckStunUrlNotAllowListed|Your current network configuration does not allow the use of UDP direct connect Session Traversal Utilities for NAT (STUN). This does not prevent the use of Cloud PCs but can prevent optimal performance. Consider your own network configuration policies before you apply changes.|
-|udpConnectivityCheckTurnUrlNotAllowListed|Your current network configuration does not allow the use of UDP direct connect Session Traversal Utilities for NAT (TURN). This does not prevent the use of Cloud PCs but can prevent optimal performance. Consider your own network configuration policies before you apply changes.|
-|udpConnectivityCheckUrlsNotAllowListed|Your current network configuration does not allow the use of UDP direct connect Session Traversal Utilities for NAT (STUN and TURN). This does not prevent the use of Cloud PCs but can prevent optimal performance. Consider your own network configuration policies before you apply changes.|
+|resourceAvailabilityCheckUnknownError|The resource availability check for Azure resources failed due to an unknown error. Ensure that all Azure resources meet the prerequisites.|
+|permissionCheckNoSubscriptionReaderRole|The Cloud PC service principal doesn't have sufficient permissions on the Azure subscription. Make sure that the Cloud PC service principal has the *Reader* permissions on the subscription.|
+|permissionCheckNoResourceGroupOwnerRole|The Cloud PC service principal doesn't have sufficient permissions on the Azure resource group. Make sure that the Cloud PC service principal has the *Owner* permissions on the resource group. |
+|permissionCheckNoVNetContributorRole|The Cloud PC service principal doesn't have sufficient permissions on the Azure virtual network. Make sure that the Cloud PC service has the *Network contributor* permissions on the virtual network.|
+|permissionCheckNoResourceGroupNetworkContributorRole|Cloud PC service principal doesn't have sufficient permissions on the Azure resource group. Make sure that the  application has Network contributor permissions on the resource group.|
+|permissionCheckTransientServiceError|The first-party app permission check failed due to a transient error. Try it again. If the issue persists, please contact customer support.|
+|permissionCheckUnknownError|The Cloud PC service principal doesn't have sufficient permissions. Make sure that the Cloud PC service principal is granted sufficient Azure permissions.|
+|udpConnectivityCheckStunUrlNotAllowListed|Your current network configuration doesn't allow the use of UDP direct connect Session Traversal Utilities for NAT (STUN). This doesn't prevent the use of Cloud PCs but can prevent optimal performance. Consider your own network configuration policies before you apply changes.|
+|udpConnectivityCheckTurnUrlNotAllowListed|Your current network configuration doesn't allow the use of UDP direct connect Session Traversal Utilities for NAT (TURN). This doesn't prevent the use of Cloud PCs but can prevent optimal performance. Consider your own network configuration policies before you apply changes.|
+|udpConnectivityCheckUrlsNotAllowListed|Your current network configuration doesn't allow the use of UDP direct connect Session Traversal Utilities for NAT (STUN and TURN). This doesn't prevent the use of Cloud PCs but can prevent optimal performance. Consider your own network configuration policies before you apply changes.|
 |udpConnectivityCheckUnknownError|An unknown error occurred when trying to check UDP direct connect. Make sure your own network configuration policies can allow UDP direct connect. |
-|internalServerErrorDeploymentCanceled|The deployment was canceled. Please try again later. If the problem persists, please contact support.|
-|internalServerErrorAllocateResourceFailed|The allocation of resources failed. Please try again later. If the problem persists, please contact support.|
-|internalServerErrorVMDeploymentTimeout|The virtual machine deployment timed out. Please try again later. If the problem persists, please contact support.|
-|internalServerErrorUnableToRunDscScript|During provisioning, some PowerShell DSC scripts are executed on the Cloud PC. Unable to either download these DSC scripts or execute them during the health check. Please ensure vNet has unrestricted access to the required endpoints, and PowerShell isn't blocked in the environment or Group Policy.|
+|internalServerErrorDeploymentCanceled|The deployment was canceled. Try again later. If the problem persists, please contact support.|
+|internalServerErrorAllocateResourceFailed|The allocation of resources failed. Try again later. If the problem persists, please contact support.|
+|internalServerErrorVMDeploymentTimeout|The virtual machine deployment timed out. Try again later. If the problem persists, please contact support.|
+|internalServerErrorUnableToRunDscScript|During provisioning, some PowerShell DSC scripts are executed on the Cloud PC. Unable to either download these DSC scripts or execute them during the health check. Ensure virtual network has unrestricted access to the required endpoints, and PowerShell isn't blocked in the environment or Group Policy.|
 |ssoCheckKerberosConfigurationError|The Azure Active Directory (Azure AD) Kerberos is not configured properly, so the user failed to sign in to the Cloud PC through single sign-on (SSO) or receive SSO access to Kerberos-based resources on the network.|
-|internalServerUnknownError|The provisioning has failed due to an internal error. Please contact customer support.|
-|unknownFutureValue|Evolvable enumeration sentinel value. Do not use.|
+|internalServerUnknownError|The provisioning has failed due to an internal error. Contact customer support.|
+|unknownFutureValue|Evolvable enumeration sentinel value. Don't use.|
 
 ## Relationships
 
@@ -114,7 +114,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.cloudPcOnPremisesConnectionHealthCheck"

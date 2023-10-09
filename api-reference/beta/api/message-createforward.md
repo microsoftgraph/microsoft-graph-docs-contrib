@@ -28,8 +28,10 @@ When using MIME format:
 
 Alternatively, [forward a message](../api/message-forward.md) in a single operation.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
-One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -52,7 +54,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 | Content-Type | string  | Nature of the data in the body of an entity. Required. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content.|
 
 ## Request body
-To send a JSON object provide the following parameters.
+To send a JSON object, provide the following parameters.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|

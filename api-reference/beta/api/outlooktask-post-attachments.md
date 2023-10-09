@@ -18,6 +18,8 @@ Namespace: microsoft.graph
 
 Use this API to add an [attachment](../resources/attachment.md) to an [outlookTask](../resources/outlooktask.md). The attachment can be a file (of [fileAttachment](../resources/fileattachment.md) type) or Outlook item ([itemAttachment](../resources/itemattachment.md) type).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

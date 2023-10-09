@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), retrieve the properties of an [approvalStage](../resources/approvalstage.md) object. An approval stage is contained within an [approval](../resources/approval.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

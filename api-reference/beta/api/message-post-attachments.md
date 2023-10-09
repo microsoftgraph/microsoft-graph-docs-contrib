@@ -30,6 +30,9 @@ message that is being [drafted](../api/user-post-messages.md), or [created and s
 >**Note**: This operation limits the size of the attachment you can add to under 3 MB.
 >
 > However, if you're attaching to a message a file that is between 3MB and 150MB, you can [create an upload session](attachment-createuploadsession.md) and iteratively upload ranges of the file to attach it. See [attach large files to Outlook messages](/graph/outlook-large-attachments) for an example.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
