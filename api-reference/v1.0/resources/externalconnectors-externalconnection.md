@@ -21,8 +21,8 @@ A logical container to add content from an external source into Microsoft Graph.
 |[Get externalConnection](../api/externalconnectors-externalconnection-get.md)|[externalConnection](../resources/externalconnectors-externalconnection.md)|Read the properties and relationships of an [externalConnection](../resources/externalconnectors-externalconnection.md) object.|
 |[Update externalConnection](../api/externalconnectors-externalconnection-update.md)|[externalConnection](../resources/externalconnectors-externalconnection.md)|Update the properties of an [externalConnection](../resources/externalconnectors-externalconnection.md) object.|
 |[Delete externalConnection](../api/externalconnectors-externalconnection-delete.md)|None|Deletes an [externalConnection](../resources/externalconnectors-externalconnection.md) object.|
-|[Create schema](../api/externalconnectors-schema-create.md)|[schema](../resources/externalconnectors-schema.md)|Create a new schema object.|
-|[Create externalItem](../api/externalconnectors-externalitem-create.md)|[externalItem](../resources/externalconnectors-externalitem.md)|Create a new externalItem object.|
+|[Create schema](../api/externalconnectors-externalconnection-patch-schema.md)|[schema](../resources/externalconnectors-schema.md)|Create a new schema object.|
+|[Create externalItem](../api/externalconnectors-externalconnection-put-items.md)|[externalItem](../resources/externalconnectors-externalitem.md)|Create a new externalItem object.|
 
 ## Properties
 |Property|Type|Description|
@@ -63,7 +63,7 @@ The following is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.externalConnectors.searchSettings"
   },
   "state": "String"
-  
+
 }
 ```
 
