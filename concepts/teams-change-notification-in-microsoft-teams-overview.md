@@ -32,13 +32,13 @@ The following table lists the Microsoft Teams resources that support change noti
 
 | **Resource** | **Supported resource paths** | **Resource data can be included in notifications** |
 |:----------------|:------------|:-----------------------------------------|
-| Teams [callRecording](/graph/api/resources/callrecording)<sup>*<sup>| <li> Any recording becomes available in the tenant: `communications/onlineMeetings/getAllRecordings` <li> Any recording becomes available for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/recordings` | Yes |
-| Teams [callTranscript](/graph/api/resources/calltranscript)<sup>*<sup> | <li> Any transcript becomes available in the tenant: `communications/onlineMeetings/getAllTranscripts` <li> Any transcript becomes available for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/transcripts` | Yes |
-| Teams [channel](/graph/api/resources/channel) | <li> Changes to channels in all teams:<br>`/teams/getAllChannels` <br> <li>Changes to channel in a specific team:<br>`/teams/{id}/channels` | Yes |
-| Teams [chat](/graph/api/resources/chat) | <li> Changes to any chat in the tenant:<br>`/chats` <br> <li> Changes to a specific chat:<br>`/chats/{id}`<br/> <li> Changes to any chat in the tenant where a particular Teams app is installed:<br/>`/appCatalogs/teamsApps/{id}/installedToChats` | Yes |
-| Teams [chatMessage](/graph/api/resources/chatMessage) | <li> Changes to chat messages in all channels in all teams:<br>`/teams/getAllMessages` <br><li> Changes to chat messages in a specific channel:<br>`/teams/{id}/channels/{id}/messages`<br><li> Changes to chat messages in all chats:<br>`/chats/getAllMessages` <br><li> Changes to chat messages in a specific chat:<br>`/chats/{id}/messages`<br><li> Changes to chat messages in all chats a particular user is part of:<br>`/users/{id}/chats/getAllMessages`<br><li> Changes to chat messages in all the chats in the tenant where a particular Teams app is installed:<br>`/appCatalogs/teamsApps/{id}/installedToChats/getAllMessages` | Yes |
-| Teams [conversationMember](/graph/api/resources/conversationMember) | <li> Changes to membership in a specific team:<br>`/teams/{id}/members` <br> <li> Changes to membership in a specific chat:<br>`/chats/{id}/members` <br> <li> Changes to membership in all chats:<br>`/chats/getAllMembers` <br><li>  Changes to membership in all channels under a specific team:<br>`teams/{id}/channels/getAllMembers`<br/><li> Changes to membership in all the chats in the tenant where a particular Teams app is installed:<br/>`/appCatalogs/teamsApps/{id}/installedToChats/getAllMembers` <br> <li> Changes to membership in all channels across the tenant:<br> `teams/getAllChannels/getAllMembers` | Yes |
-| Teams [team](/graph/api/resources/team) | <li> Changes to any team in the tenant:<br>`/teams` <br><li> Changes to a specific team:<br>`/teams/{id}` | Yes |
+| Teams [callRecording](/graph/api/resources/callrecording)<sup>*<sup> | <li> Any recording becomes available in the tenant: `communications/onlineMeetings/getAllRecordings`  <li>Any recording becomes available for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/recordings` | Yes |
+| Teams [callTranscript](/graph/api/resources/calltranscript) | <li> All transcripts in an organization: `communications/onlineMeetings/getAllTranscripts` <li> All transcripts for a specific meeting: `communications/onlineMeetings/{onlineMeetingId}/transcripts` | Yes |
+| Teams [channel](/graph/api/resources/channel) | Changes to channels in all teams:<br>`/teams/getAllChannels` <br>Changes to channel in a specific team:<br>`/teams/{id}/channels` | Yes |
+| Teams [chat](/graph/api/resources/chat) | Changes to any chat in the tenant:<br>`/chats` <br>Changes to a specific chat:<br>`/chats/{id}`<br/>Changes to any chat in the tenant where a particular Teams app is installed:<br/>`/appCatalogs/teamsApps/{id}/installedToChats` | Yes |
+| Teams [chatMessage](/graph/api/resources/chatMessage) | Changes to chat messages in all channels in all teams:<br>`/teams/getAllMessages` <br>Changes to chat messages in a specific channel:<br>`/teams/{id}/channels/{id}/messages`<br>Changes to chat messages in all chats:<br>`/chats/getAllMessages` <br>Changes to chat messages in a specific chat:<br>`/chats/{id}/messages`<br>Changes to chat messages in all chats a particular user is part of:<br>`/users/{id}/chats/getAllMessages`<br>Changes to chat messages in all the chats in the tenant where a particular Teams app is installed:<br>`/appCatalogs/teamsApps/{id}/installedToChats/getAllMessages` | Yes |
+| Teams [conversationMember](/graph/api/resources/conversationMember) | Changes to membership in a specific team:<br>`/teams/{id}/members` <br> Changes to membership in a specific chat:<br>`/chats/{id}/members` <br> Changes to membership in all chats:<br>`/chats/getAllMembers` <br> Changes to membership in all channels under a specific team:<br>`teams/{id}/channels/getAllMembers`<br/>Changes to membership in all the chats in the tenant where a particular Teams app is installed:<br/>`/appCatalogs/teamsApps/{id}/installedToChats/getAllMembers` <br> Changes to membership in all channels across the tenant:<br> `teams/getAllChannels/getAllMembers` | Yes |
+| Teams [team](/graph/api/resources/team) | Changes to any team in the tenant:<br>`/teams` <br>Changes to a specific team:<br>`/teams/{id}` | Yes |
 
 ## Notification payloads
 
@@ -146,11 +146,11 @@ Previous example above shows a notification that corresponds to a chat message r
 
 ## See also
 
-- [Microsoft Graph change notifications](webhooks.md)
-- [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
-- [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
-- [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)
-- [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)
-- [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
-- [Microsoft Teams API overview](teams-concept-overview.md)
-- [Get change notification for meeting transcripts and recordings using Microsoft Graph](teams-changenotifications-callrecording-and-calltranscript.md)
+* [Microsoft Graph change notifications](webhooks.md)
+* [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
+* [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
+* [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)
+* [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)
+* [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
+* [Microsoft Teams API overview](teams-concept-overview.md)
+* [Get change notification for meeting transcripts and recordings using Microsoft Graph](teams-changenotifications-callrecording-and-calltranscript.md)

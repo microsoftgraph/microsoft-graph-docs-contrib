@@ -55,7 +55,7 @@ The following table specifies which operations are available in each state.
 | Update item       | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
 | Delete item       | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: |
 
-A connection allows your application to [define a schema](/graph/api/externalconnectors-externalconnection-post-schema) for items that will be indexed, and it provides an endpoint for your service to add, update, or delete items from the index. 
+A connection allows your application to [define a schema](/graph/api/externalconnectors-externalconnection-patch-schema) for items that will be indexed, and it provides an endpoint for your service to add, update, or delete items from the index.
 
 The first step for an application to add items to the search index is to create a connection.
 
@@ -64,7 +64,7 @@ The first step for an application to add items to the search index is to create 
 Before an application can add items to the search index, it must create and configure a connection:
 
 1. [Create a connection](/graph/api/externalconnectors-external-post-connections) with a unique ID, display name, and description.
-1. [Register a schema](/graph/api/externalconnectors-externalconnection-post-schema) to define the fields that will be included in the index.
+1. [Register a schema](/graph/api/externalconnectors-externalconnection-patch-schema) to define the fields that will be included in the index.
    > **Note:** For information about updating the schema for an existing connection, see [Schema update capabilities](/graph/connecting-external-content-manage-schema#schema-update-capabilities).
 
 ## Connection settings
@@ -74,7 +74,7 @@ You can configure the default connection settings for each enabled content exper
 You can define how search results are displayed in the Microsoft Search results page by supplying the default search display templates for your content in [searchSettings](/graph/api/resources/externalconnectors-searchsettings). A set of search display templates can be used to display distinct kinds of search results differently. A search display template has a result layout built using Adaptive Cards and rules that specify one or more conditions. When these conditions are met, the layout will be applied to the search result and displayed on the results page.
 
 ### Activity settings
-In [activity settings](/graph/api/resources/externalconnectors-activitysettings), you can provide a way for Microsoft 365 apps to detect **share activity**, which will enable your content to be recommended to users who interact with that content the most. The way to do this is to add a [urlToItemResolver](/graph/api/resources/externalconnectors-urltoitemresolverbase), which will allow a URL from the connection detected within Microsoft 365 apps to be resolved to its respective item ID on the [externalItem](/graph/api/resources/externalconnectors-externalitem). 
+In [activity settings](/graph/api/resources/externalconnectors-activitysettings), you can provide a way for Microsoft 365 apps to detect **share activity**, which will enable your content to be recommended to users who interact with that content the most. The way to do this is to add a [urlToItemResolver](/graph/api/resources/externalconnectors-urltoitemresolverbase), which will allow a URL from the connection detected within Microsoft 365 apps to be resolved to its respective item ID on the [externalItem](/graph/api/resources/externalconnectors-externalitem).
 
 The following image shows how your item might appear within recommendation experiences across Microsoft 365.
 
