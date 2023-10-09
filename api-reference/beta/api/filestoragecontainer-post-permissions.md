@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 > [!IMPORTANT]
 > APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
 
-Adds [permission](../resources/permission.md) to an existing fileStorageContainer. The application calling this API must have permission to add permissions to fileStorageContainers of the respective container type.
+Add [permission](../resources/permission.md) to an existing fileStorageContainer. The application calling this API must have permission to add permissions to fileStorageContainers of the respective container type.
 
 
 ## Permissions
@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
-|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
