@@ -43,7 +43,7 @@ PATCH /storage/fileStorage/containers/{containerId}/customProperties
 |Content-Type|application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of the [fileStorageContainerCustomPropertyDictionary](../resources/fileStorageContainerCustomPropertyDictionary.md), which is a map with string keys and [fileStorageContainerCustomPropertyValue](../resources/fileStorageContainerCustomPropertyValue.md) values.
+In the request body, supply a JSON representation of the [fileStorageContainerCustomPropertyDictionary](../resources/filestoragecontainercustompropertydictionary.md), which is a map with string keys and [fileStorageContainerCustomPropertyValue](../resources/filestoragecontainercustompropertyvalue.md) values.
 
 You can specify the following properties when creating a custom property.
 
