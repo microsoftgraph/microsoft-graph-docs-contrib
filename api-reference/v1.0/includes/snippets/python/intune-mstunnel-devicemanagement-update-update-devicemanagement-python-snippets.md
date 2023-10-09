@@ -12,7 +12,7 @@ request_body = DeviceManagement(
 	odata_type = "#microsoft.graph.deviceManagement",
 )
 
-result = await graph_client.device_management.patch(request_body = request_body)
+result = await graph_client.device_management.patch(body = request_body)
 
 
 ```

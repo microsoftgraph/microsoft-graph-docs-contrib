@@ -17,7 +17,7 @@ request_body = Room(
 	is_wheel_chair_accessible = False,
 )
 
-result = await graph_client.places.by_place_id('place-id').patch(request_body = request_body)
+result = await graph_client.places.by_place_id('place-id').patch(body = request_body)
 
 
 ```

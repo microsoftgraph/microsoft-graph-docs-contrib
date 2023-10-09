@@ -17,7 +17,7 @@ request_body = WorkbookNamedItem(
 	visible = True,
 )
 
-result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.names.by_name_id('workbookNamedItem-id').patch(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.names.by_name_id('workbookNamedItem-id').patch(body = request_body)
 
 
 ```

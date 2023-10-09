@@ -124,7 +124,7 @@ request_body = UnifiedRoleManagementPolicy(
 	]
 )
 
-result = await graph_client.policies.role_management_policies.by_role_management_policie_id('unifiedRoleManagementPolicy-id').patch(request_body = request_body)
+result = await graph_client.policies.role_management_policies.by_role_management_policie_id('unifiedRoleManagementPolicy-id').patch(body = request_body)
 
 
 ```

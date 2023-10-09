@@ -25,7 +25,7 @@ request_body = EducationAssignmentSettings(
 	]
 )
 
-result = await graph_client.education.classes.by_classe_id('educationClass-id').assignment_settings.patch(request_body = request_body)
+result = await graph_client.education.classes.by_classe_id('educationClass-id').assignment_settings.patch(body = request_body)
 
 
 ```

@@ -13,7 +13,7 @@ request_body = CreateLinkPostRequestBody(
 	scope = "organization",
 )
 
-result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').create_link.post(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').create_link.post(body = request_body)
 
 
 ```

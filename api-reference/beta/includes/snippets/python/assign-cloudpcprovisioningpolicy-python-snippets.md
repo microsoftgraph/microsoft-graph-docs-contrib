@@ -20,7 +20,7 @@ request_body = AssignPostRequestBody(
 	]
 )
 
-await graph_client.device_management.virtual_endpoint.provisioning_policies.by_provisioning_policie_id('cloudPcProvisioningPolicy-id').assign.post(request_body = request_body)
+await graph_client.device_management.virtual_endpoint.provisioning_policies.by_provisioning_policie_id('cloudPcProvisioningPolicy-id').assign.post(body = request_body)
 
 
 ```

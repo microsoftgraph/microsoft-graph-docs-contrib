@@ -12,7 +12,7 @@ request_body = ChangeUserAccountTypePostRequestBody(
 	user_account_type = CloudPcUserAccountType.Administrator,
 )
 
-await graph_client.device_management.virtual_endpoint.cloud_p_cs.by_cloud_p_c_id('cloudPC-id').change_user_account_type.post(request_body = request_body)
+await graph_client.device_management.virtual_endpoint.cloud_p_cs.by_cloud_p_c_id('cloudPC-id').change_user_account_type.post(body = request_body)
 
 
 ```

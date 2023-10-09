@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Details user and application sign-in activity for a tenant (directory). You must have an Azure AD Premium P1 or P2 license to download sign-in logs using the Microsoft Graph API. 
 
-The availability of sign-in logs is governed by the [Azure AD data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
+The [Azure AD data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data) govern the availability of sign-in logs.
 
 ## Methods
 
@@ -25,7 +25,7 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 ## Properties
 | Property       | Type    |Description|
 |:---------------|:--------|:----------|
-|appDisplayName|String|App name displayed in the Azure Portal. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
+|appDisplayName|String|App name displayed in the Microsoft Entra admin center. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |appId|String|Unique GUID representing the app ID in the Azure Active Directory. <br/><br/> Supports `$filter` (`eq`).|
 |appliedConditionalAccessPolicies|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|Provides a list of conditional access policies that are triggered by the corresponding sign-in activity.|
 |clientAppUsed|String|Identifies the client used for the sign-in activity. Modern authentication clients include `Browser`, `modern clients`. Legacy authentication clients include `Exchange ActiveSync`, `IMAP`, `MAPI`, `SMTP`, `POP`, and `other clients`. <br/><br/> Supports `$filter` (`eq`).|
@@ -42,10 +42,10 @@ The availability of sign-in logs is governed by the [Azure AD data retention pol
 |riskDetail|riskDetail|Provides the 'reason' behind a specific state of a risky user, sign-in or a risk event. The possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. The value `none` means that no action has been performed on the user or sign-in so far.  Supports `$filter` (`eq`).<br>**Note:** Details for this property require an Azure AD Premium P2 license. Other licenses return the value `hidden`.|
 |riskEventTypes|riskEventType collection|Risk event types associated with the sign-in. The possible values are: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic`, and `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`).|
 |riskEventTypes_v2|String collection|The list of risk event types associated with the sign-in. Possible values: `unlikelyTravel`, `anonymizedIPAddress`, `maliciousIPAddress`, `unfamiliarFeatures`, `malwareInfectedIPAddress`, `suspiciousIPAddress`, `leakedCredentials`, `investigationsThreatIntelligence`,  `generic`, or `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
-|riskLevelAggregated|riskLevel|Aggregated risk level. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection. <br/><br/> Supports `$filter` (`eq`). <br> **Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers will be returned `hidden`.|
-|riskLevelDuringSignIn|riskLevel|Risk level during sign-in. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in was not enabled for Azure AD Identity Protection. <br/><br/> Supports `$filter` (`eq`).  <br>**Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers will be returned `hidden`.|
+|riskLevelAggregated|riskLevel|Aggregated risk level. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in wasn't enabled for Azure AD Identity Protection. <br/><br/> Supports `$filter` (`eq`). <br> **Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers are returned `hidden`.|
+|riskLevelDuringSignIn|riskLevel|Risk level during sign-in. The possible values are: `none`, `low`, `medium`, `high`, `hidden`, and `unknownFutureValue`. The value `hidden` means the user or sign-in wasn't enabled for Azure AD Identity Protection. <br/><br/> Supports `$filter` (`eq`).  <br>**Note:** Details for this property are only available for Azure AD Premium P2 customers. All other customers are returned `hidden`.|
 |riskState|riskState|Reports status of the risky user, sign-in, or a risk event. The possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`. <br/><br/> Supports `$filter` (`eq`).|
-|status|[signInStatus](signinstatus.md)|Sign-in status. Includes the error code and description of the error (in case of a sign-in failure). <br/><br/> Supports `$filter` (`eq`) on **errorCode** property.|
+|status|[signInStatus](signinstatus.md)|Sign-in status. Includes the error code and description of the error (if there's a sign-in failure). <br/><br/> Supports `$filter` (`eq`) on **errorCode** property.|
 |userDisplayName|String|Display name of the user that initiated the sign-in. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
 |userId|String|ID of the user that initiated the sign-in. <br/><br/> Supports `$filter` (`eq`).|
 |userPrincipalName|String|User principal name of the user that initiated the sign-in. <br/><br/> Supports `$filter` (`eq`, `startsWith`).|
@@ -57,7 +57,7 @@ None
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

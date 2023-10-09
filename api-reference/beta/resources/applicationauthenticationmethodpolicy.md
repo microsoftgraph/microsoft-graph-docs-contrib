@@ -29,7 +29,7 @@ A tenant default policy is a single object that always exists and is disabled by
 - **applicationRestrictions** allows targeting applications owned by the tenant (application objects).
 - **servicePrincipalRestrictions** allows targeting provisioned from another tenant (service principal objects.
 
-These properties allow the organization to either lock down apps that originate within a tenant or raise the quality bar for apps that are provisioned from outside the tenant boundary.
+These properties enable an organization to lock down credential usage in apps that originate from their tenant and provide a mechanism to control credential addition in externally provisioned applications to protect them from credential abuse. The application owner of a multi-tenant app could still use any type of credentials in their application object, but the policy only protects the service principal from credential abuse. 
 
 ## App management policy for applications and service principals
 
@@ -75,6 +75,11 @@ Depending on whether your app is a single tenant or multitenant app, you apply t
 | Allows only single restriction object definition for all resources.                | Allows multiple policy objects to be defined, but only one can be applied to a resource.                                                            |
 | Allows distinction of restrictions for application objects vs. service principals. | Policy can be applied to either an application or service principal object.                                                                         |
 | Applies all restrictions configured to all apps or service principals.             | Applies only the restrictions configured in the resource policy to the specified app or service principal, and doesn't inherit from default policy. |
+
+## Requirements
+
+- Management of application authentication method policies can be performed by a global administrator, application administrator, or cloud application administrator.
+- All app policy management operations require a [Microsoft Entra Workload Identities Premium license](/azure/active-directory/workload-identities/workload-identities-faqs#what-is-the-cost-of-workload-identities-premium-plan).
 
 ## Next steps
 

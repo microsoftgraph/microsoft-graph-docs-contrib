@@ -13,7 +13,7 @@ request_body = EvaluateDynamicMembershipPostRequestBody(
 	membership_rule = "(user.displayName -startsWith \"EndTestUser\")",
 )
 
-result = await graph_client.groups.evaluate_dynamic_membership.post(request_body = request_body)
+result = await graph_client.groups.evaluate_dynamic_membership.post(body = request_body)
 
 
 ```

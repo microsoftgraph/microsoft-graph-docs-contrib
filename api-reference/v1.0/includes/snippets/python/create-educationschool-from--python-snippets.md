@@ -31,7 +31,7 @@ request_body = EducationSchool(
 	),
 )
 
-result = await graph_client.education.schools.post(request_body = request_body)
+result = await graph_client.education.schools.post(body = request_body)
 
 
 ```

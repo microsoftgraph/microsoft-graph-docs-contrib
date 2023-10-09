@@ -23,7 +23,7 @@ request_body = Windows10CustomConfiguration(
 	]
 )
 
-result = await graph_client.device_management.device_configurations.post(request_body = request_body)
+result = await graph_client.device_management.device_configurations.post(body = request_body)
 
 
 ```

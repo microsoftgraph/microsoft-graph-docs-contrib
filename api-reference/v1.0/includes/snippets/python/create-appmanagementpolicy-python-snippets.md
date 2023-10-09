@@ -45,7 +45,7 @@ request_body = AppManagementPolicy(
 	),
 )
 
-result = await graph_client.policies.app_management_policies.post(request_body = request_body)
+result = await graph_client.policies.app_management_policies.post(body = request_body)
 
 
 ```

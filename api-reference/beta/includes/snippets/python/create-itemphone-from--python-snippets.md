@@ -13,7 +13,7 @@ request_body = ItemPhone(
 	number = "+7 499 342 22 13",
 )
 
-result = await graph_client.me.profile.phones.post(request_body = request_body)
+result = await graph_client.me.profile.phones.post(body = request_body)
 
 
 ```

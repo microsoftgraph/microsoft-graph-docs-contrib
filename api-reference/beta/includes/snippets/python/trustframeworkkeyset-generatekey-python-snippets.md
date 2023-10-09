@@ -15,7 +15,7 @@ request_body = GenerateKeyPostRequestBody(
 	exp = 1508969811,
 )
 
-result = await graph_client.trust_framework.key_sets.by_key_set_id('trustFrameworkKeySet-id').generate_key.post(request_body = request_body)
+result = await graph_client.trust_framework.key_sets.by_key_set_id('trustFrameworkKeySet-id').generate_key.post(body = request_body)
 
 
 ```

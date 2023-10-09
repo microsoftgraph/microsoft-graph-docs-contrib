@@ -22,7 +22,7 @@ request_body = EducationalActivity(
 	),
 )
 
-result = await graph_client.me.profile.educational_activities.by_educational_activitie_id('educationalActivity-id').patch(request_body = request_body)
+result = await graph_client.me.profile.educational_activities.by_educational_activitie_id('educationalActivity-id').patch(body = request_body)
 
 
 ```

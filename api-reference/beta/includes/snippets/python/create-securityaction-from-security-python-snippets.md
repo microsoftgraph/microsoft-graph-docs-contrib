@@ -23,7 +23,7 @@ request_body = SecurityAction(
 	),
 )
 
-result = await graph_client.security.security_actions.post(request_body = request_body)
+result = await graph_client.security.security_actions.post(body = request_body)
 
 
 ```

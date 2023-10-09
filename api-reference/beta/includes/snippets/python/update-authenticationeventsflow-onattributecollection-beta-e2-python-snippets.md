@@ -78,7 +78,7 @@ request_body = ExternalUsersSelfServiceSignUpEventsFlow(
 	),
 )
 
-result = await graph_client.identity.authentication_event_flows.by_authentication_event_flow_id('authenticationEventsFlow-id').patch(request_body = request_body)
+result = await graph_client.identity.authentication_event_flows.by_authentication_event_flow_id('authenticationEventsFlow-id').patch(body = request_body)
 
 
 ```

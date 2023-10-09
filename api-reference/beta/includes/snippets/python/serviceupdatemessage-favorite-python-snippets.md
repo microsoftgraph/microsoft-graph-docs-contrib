@@ -15,7 +15,7 @@ request_body = FavoritePostRequestBody(
 	]
 )
 
-result = await graph_client.admin.service_announcement.messages.favorite.post(request_body = request_body)
+result = await graph_client.admin.service_announcement.messages.favorite.post(body = request_body)
 
 
 ```

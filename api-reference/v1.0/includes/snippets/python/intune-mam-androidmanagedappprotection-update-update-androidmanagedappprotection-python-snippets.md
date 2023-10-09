@@ -53,7 +53,7 @@ request_body = AndroidManagedAppProtection(
 	custom_browser_display_name = "Custom Browser Display Name value",
 )
 
-result = await graph_client.device_app_management.android_managed_app_protections.by_android_managed_app_protection_id('androidManagedAppProtection-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.android_managed_app_protections.by_android_managed_app_protection_id('androidManagedAppProtection-id').patch(body = request_body)
 
 
 ```

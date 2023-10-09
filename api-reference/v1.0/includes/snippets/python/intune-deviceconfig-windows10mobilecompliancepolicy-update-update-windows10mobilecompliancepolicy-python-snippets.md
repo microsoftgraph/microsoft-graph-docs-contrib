@@ -31,7 +31,7 @@ request_body = Windows10MobileCompliancePolicy(
 	storage_require_encryption = True,
 )
 
-result = await graph_client.device_management.device_compliance_policies.by_device_compliance_policie_id('deviceCompliancePolicy-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_compliance_policies.by_device_compliance_policie_id('deviceCompliancePolicy-id').patch(body = request_body)
 
 
 ```

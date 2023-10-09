@@ -25,7 +25,7 @@ Make sure that your application is presenting a valid access token to Microsoft 
 
 ### 403 Forbidden error: Have you chosen the right set of permissions?
 
-Verify that you have requested the correct set of permissions based on the Microsoft Graph APIs your app calls. The least privileged permissions that we recommend are provided in all the Microsoft Graph API method reference topics. Additionally, those permissions must be granted to the application by a user or an administrator. Granting permissions normally happens through a consent page or by granting permissions using the Azure Portal application registration blade. From the **Settings** blade for the application, click **Required Permissions**, and then click **Grant Permissions**.
+Verify that you have requested the correct set of permissions based on the Microsoft Graph APIs your app calls. The least privileged permissions that we recommend are provided in all the Microsoft Graph API method reference topics. Additionally, those permissions must be granted to the application by a user or an administrator. Granting permissions normally happens through a consent page or by granting permissions using the Microsoft Entra admin center application registration blade.
 
 * [Microsoft Graph permissions](./permissions-reference.md)
 * [Understanding Azure AD permissions and consent](/azure/active-directory/develop/v2-permissions-and-consent)

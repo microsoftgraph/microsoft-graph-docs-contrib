@@ -18,7 +18,7 @@ request_body = CheckMemberGroupsPostRequestBody(
 	]
 )
 
-result = await graph_client.directory_objects.by_directory_object_id('directoryObject-id').check_member_groups.post(request_body = request_body)
+result = await graph_client.directory_objects.by_directory_object_id('directoryObject-id').check_member_groups.post(body = request_body)
 
 
 ```

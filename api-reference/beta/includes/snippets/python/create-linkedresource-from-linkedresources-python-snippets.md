@@ -15,7 +15,7 @@ request_body = LinkedResource(
 	external_id = "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9",
 )
 
-result = await graph_client.me.todo.lists.by_list_id('todoTaskList-id').tasks.by_task_id('todoTask-id').linked_resources.post(request_body = request_body)
+result = await graph_client.me.todo.lists.by_list_id('todoTaskList-id').tasks.by_task_id('todoTask-id').linked_resources.post(body = request_body)
 
 
 ```

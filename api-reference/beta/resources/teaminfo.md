@@ -26,7 +26,7 @@ Base type of [associatedTeamInfo](associatedteaminfo.md) and [sharedWithChannelT
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

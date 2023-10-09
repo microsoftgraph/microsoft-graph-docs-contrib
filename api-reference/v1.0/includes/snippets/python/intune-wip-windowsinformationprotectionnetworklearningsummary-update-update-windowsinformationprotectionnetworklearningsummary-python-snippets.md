@@ -14,7 +14,7 @@ request_body = WindowsInformationProtectionNetworkLearningSummary(
 	device_count = 11,
 )
 
-result = await graph_client.device_management.window_information_protection_network_learning_summaries.by_window_information_protection_network_learning_summarie_id('windowsInformationProtectionNetworkLearningSummary-id').patch(request_body = request_body)
+result = await graph_client.device_management.window_information_protection_network_learning_summaries.by_window_information_protection_network_learning_summarie_id('windowsInformationProtectionNetworkLearningSummary-id').patch(body = request_body)
 
 
 ```

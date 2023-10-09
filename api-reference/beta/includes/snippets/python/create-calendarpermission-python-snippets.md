@@ -18,7 +18,7 @@ request_body = CalendarPermission(
 	role = CalendarRoleType.Read,
 )
 
-result = await graph_client.users.by_user_id('user-id').calendar.calendar_permissions.post(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').calendar.calendar_permissions.post(body = request_body)
 
 
 ```

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Create a new [checklistItem](../resources/checklistitem.md) object as a subtask in a bigger [todoTask](../resources/todotask.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

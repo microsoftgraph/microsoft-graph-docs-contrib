@@ -12,7 +12,7 @@ request_body = EducationRubric(
 	display_name = "Example Credit Rubric after display name patch",
 )
 
-result = await graph_client.education.me.rubrics.by_rubric_id('educationRubric-id').patch(request_body = request_body)
+result = await graph_client.education.me.rubrics.by_rubric_id('educationRubric-id').patch(body = request_body)
 
 
 ```

@@ -22,7 +22,7 @@ request_body = GetStaffAvailabilityPostRequestBody(
 	),
 )
 
-result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').get_staff_availability.post(request_body = request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').get_staff_availability.post(body = request_body)
 
 
 ```

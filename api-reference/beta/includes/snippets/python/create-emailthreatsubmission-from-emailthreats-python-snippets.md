@@ -17,7 +17,7 @@ request_body = EmailThreatSubmission(
 	}
 )
 
-result = await graph_client.security.threat_submission.email_threats.post(request_body = request_body)
+result = await graph_client.security.threat_submission.email_threats.post(body = request_body)
 
 
 ```

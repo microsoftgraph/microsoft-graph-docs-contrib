@@ -14,7 +14,7 @@ request_body = GroupLifecyclePolicy(
 	alternate_notification_emails = "admin@contoso.com",
 )
 
-result = await graph_client.group_lifecycle_policies.by_group_lifecycle_policie_id('groupLifecyclePolicy-id').patch(request_body = request_body)
+result = await graph_client.group_lifecycle_policies.by_group_lifecycle_policie_id('groupLifecyclePolicy-id').patch(body = request_body)
 
 
 ```

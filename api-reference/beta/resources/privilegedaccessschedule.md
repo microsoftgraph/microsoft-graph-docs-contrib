@@ -1,6 +1,6 @@
 ---
 title: "privilegedAccessSchedule resource type"
-description: "An abstract type that exposes properties relating to the schedule of assigned and eligible ownership and membership to groups that are governed by PIM."
+description: "An abstract type that exposes properties relating to the schedule of assigned and eligible ownership and membership to groups governed by PIM."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-An abstract type that exposes properties relating to the schedule of assigned and eligible membership and ownership to groups that are governed by PIM. This abstract type is inherited by the following derived types:
+An abstract type that exposes properties relating to the schedule of assigned and eligible membership and ownership to groups governed by PIM. The following derived types inherit the abstract type:
 + [privilegedAccessGroupAssignmentSchedule](privilegedaccessgroupassignmentschedule.md)
 + [privilegedAccessGroupEligibilitySchedule](privilegedaccessgroupeligibilityschedule.md)
 
@@ -35,7 +35,7 @@ None.
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

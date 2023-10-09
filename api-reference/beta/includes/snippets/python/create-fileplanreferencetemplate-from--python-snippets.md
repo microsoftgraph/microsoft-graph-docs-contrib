@@ -16,7 +16,7 @@ request_body = FilePlanReferenceTemplate(
 	),
 )
 
-result = await graph_client.security.labels.file_plan_references.post(request_body = request_body)
+result = await graph_client.security.labels.file_plan_references.post(body = request_body)
 
 
 ```

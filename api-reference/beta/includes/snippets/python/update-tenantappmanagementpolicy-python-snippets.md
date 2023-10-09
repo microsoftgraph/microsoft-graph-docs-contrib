@@ -19,7 +19,7 @@ request_body = TenantAppManagementPolicy(
 			),
 			PasswordCredentialConfiguration(
 				restriction_type = AppCredentialRestrictionType.PasswordLifetime,
-				max_lifetime = "P4DT12H30M5S",
+				max_lifetime = "P90D",
 				restrict_for_apps_created_after_date_time = "2017-01-01T10:37:00Z",
 			),
 			PasswordCredentialConfiguration(
@@ -34,7 +34,7 @@ request_body = TenantAppManagementPolicy(
 			),
 			PasswordCredentialConfiguration(
 				restriction_type = AppCredentialRestrictionType.SymmetricKeyLifetime,
-				max_lifetime = "P40D",
+				max_lifetime = "P30D",
 				restrict_for_apps_created_after_date_time = "2015-01-01T10:37:00Z",
 			),
 		]
@@ -48,7 +48,7 @@ request_body = TenantAppManagementPolicy(
 	),
 )
 
-result = await graph_client.policies.default_app_management_policy.patch(request_body = request_body)
+result = await graph_client.policies.default_app_management_policy.patch(body = request_body)
 
 
 ```

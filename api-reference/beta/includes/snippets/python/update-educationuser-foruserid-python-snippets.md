@@ -27,7 +27,7 @@ request_body = EducationUser(
 	]
 )
 
-result = await graph_client.education.users.by_user_id('educationUser-id').patch(request_body = request_body)
+result = await graph_client.education.users.by_user_id('educationUser-id').patch(body = request_body)
 
 
 ```

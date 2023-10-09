@@ -12,7 +12,7 @@ request_body = OutlookTaskGroup(
 	name = "Leisure tasks",
 )
 
-result = await graph_client.me.outlook.task_groups.post(request_body = request_body)
+result = await graph_client.me.outlook.task_groups.post(body = request_body)
 
 
 ```

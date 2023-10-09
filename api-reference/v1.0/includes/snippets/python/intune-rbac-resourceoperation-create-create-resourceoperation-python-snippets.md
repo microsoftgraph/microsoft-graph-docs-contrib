@@ -15,7 +15,7 @@ request_body = ResourceOperation(
 	description = "Description value",
 )
 
-result = await graph_client.device_management.resource_operations.post(request_body = request_body)
+result = await graph_client.device_management.resource_operations.post(body = request_body)
 
 
 ```

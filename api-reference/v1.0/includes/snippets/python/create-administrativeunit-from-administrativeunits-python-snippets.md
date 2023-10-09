@@ -14,7 +14,7 @@ request_body = AdministrativeUnit(
 	visibility = "HiddenMembership",
 )
 
-result = await graph_client.directory.administrative_units.post(request_body = request_body)
+result = await graph_client.directory.administrative_units.post(body = request_body)
 
 
 ```

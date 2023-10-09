@@ -19,7 +19,7 @@ request_body = Subscription(
 	encryption_certificate_id = "44M4444M4444M4M44MM4444MM4444MMMM44MM4M4",
 )
 
-result = await graph_client.subscriptions.post(request_body = request_body)
+result = await graph_client.subscriptions.post(body = request_body)
 
 
 ```

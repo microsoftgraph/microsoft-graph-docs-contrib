@@ -12,7 +12,7 @@ request_body = CopyPostRequestBody(
 	destination_id = "destinationId-value",
 )
 
-result = await graph_client.me.messages.by_message_id('message-id').copy.post(request_body = request_body)
+result = await graph_client.me.messages.by_message_id('message-id').copy.post(body = request_body)
 
 
 ```

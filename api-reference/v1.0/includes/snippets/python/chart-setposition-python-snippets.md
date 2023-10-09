@@ -13,7 +13,7 @@ request_body = SetPositionPostRequestBody(
 	end_cell = "endCell-value",
 )
 
-await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.worksheets.by_worksheet_id('workbookWorksheet-id').charts.by_chart_id('workbookChart-id').set_position.post(request_body = request_body)
+await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.worksheets.by_worksheet_id('workbookWorksheet-id').charts.by_chart_id('workbookChart-id').set_position.post(body = request_body)
 
 
 ```

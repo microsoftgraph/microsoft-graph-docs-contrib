@@ -17,6 +17,8 @@ Namespace: microsoft.graph.security
 
 Get a list of [article](../resources/security-article.md) objects, including their properties and relationships.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +41,7 @@ GET /security/threatIntelligence/articles
 
 ## Optional query parameters
 
-This method supports the `$count`, `$select`, `$search`, `$top`, `$skip`, and `$orderBy` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$select`, `$search`, `$top`, `$skip`, and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 > **Note:** Currently, the `$search` OData query parameter only supports single-term searches.
 
@@ -55,7 +57,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [microsoft.graph.security.article](../resources/security-article.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.article](../resources/security-article.md) objects in the response body.
 
 ## Examples
 

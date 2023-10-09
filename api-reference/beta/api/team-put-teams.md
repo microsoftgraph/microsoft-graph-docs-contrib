@@ -13,15 +13,18 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-> [!IMPORTANT]
-> This API is in the process of being deprecated in favor of [Create team](../api/team-post.md), and will be removed by the end of 2019. For details about how to create a team from a group, see examples 4 and 5 in [Create team](../api/team-post.md).
-
 Create a new [team](../resources/team.md) from a [group](../resources/group.md).
 
 In order to create a team, the group must have a least one owner.
 
-If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays.
+If the creation of the team call is delayed, you can retry the call up to three times before you have to wait for 15 minutes due to a propagation delay. If the group was created less than 15 minutes ago, the call might fail with a `404` error code due to replication delays.
+
+If the group was created less than 15 minutes ago, it's possible for a call to create a team to fail with a 404 error code, due to ongoing replication delays.
 The recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.
+
+> **Note:** SharePoint provisioning doesn't occur in real time, it's a background process. The completion of the provisioning can't be determined.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

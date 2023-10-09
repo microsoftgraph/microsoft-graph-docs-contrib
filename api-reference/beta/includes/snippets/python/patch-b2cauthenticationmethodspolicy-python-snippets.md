@@ -14,7 +14,7 @@ request_body = B2cAuthenticationMethodsPolicy(
 	is_phone_one_time_password_authentication_enabled = True,
 )
 
-result = await graph_client.policies.b2c_authentication_method_policy.patch(request_body = request_body)
+result = await graph_client.policies.b2c_authentication_method_policy.patch(body = request_body)
 
 
 ```

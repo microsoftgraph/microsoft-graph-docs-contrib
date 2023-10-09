@@ -16,7 +16,7 @@ request_body = CopyPostRequestBody(
 	name = "contoso plan (copy).txt",
 )
 
-result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').copy.post(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').copy.post(body = request_body)
 
 
 ```

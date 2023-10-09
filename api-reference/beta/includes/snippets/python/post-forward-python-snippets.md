@@ -20,7 +20,7 @@ request_body = ForwardPostRequestBody(
 	]
 )
 
-await graph_client.groups.by_group_id('group-id').threads.by_thread_id('conversationThread-id').posts.by_post_id('post-id').forward.post(request_body = request_body)
+await graph_client.groups.by_group_id('group-id').threads.by_thread_id('conversationThread-id').posts.by_post_id('post-id').forward.post(body = request_body)
 
 
 ```

@@ -13,7 +13,7 @@ request_body = PersonCertification(
 	issuing_company = "International Academy of Marketing Excellence",
 )
 
-result = await graph_client.users.by_user_id('user-id').profile.certifications.by_certification_id('personCertification-id').patch(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').profile.certifications.by_certification_id('personCertification-id').patch(body = request_body)
 
 
 ```

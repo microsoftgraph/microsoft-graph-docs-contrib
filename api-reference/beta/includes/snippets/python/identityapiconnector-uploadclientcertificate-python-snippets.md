@@ -13,7 +13,7 @@ request_body = UploadClientCertificatePostRequestBody(
 	password = "<password>",
 )
 
-result = await graph_client.identity.api_connectors.by_api_connector_id('identityApiConnector-id').upload_client_certificate.post(request_body = request_body)
+result = await graph_client.identity.api_connectors.by_api_connector_id('identityApiConnector-id').upload_client_certificate.post(body = request_body)
 
 
 ```

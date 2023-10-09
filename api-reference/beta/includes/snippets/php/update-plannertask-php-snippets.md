@@ -35,7 +35,7 @@ $recurrenceSchedule->setPattern($recurrenceSchedulePattern);
 $recurrenceSchedule->setPatternStartDateTime(new \DateTime('2022-02-22T02:10:33Z'));
 $recurrence->setSchedule($recurrenceSchedule);
 $requestBody->setRecurrence($recurrence);
-$requestConfiguration = new PlannerTaskRequestBuilderPatchRequestConfiguration();
+$requestConfiguration = new PlannerTaskItemRequestBuilderPatchRequestConfiguration();
 $headers = [
 		'Prefer' => 'return=representation',
 		'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',

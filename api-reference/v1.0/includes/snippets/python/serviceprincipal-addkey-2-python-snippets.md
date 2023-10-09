@@ -20,7 +20,7 @@ request_body = AddKeyPostRequestBody(
 	proof = "eyJ0eXAiOiJ...",
 )
 
-result = await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').add_key.post(request_body = request_body)
+result = await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').add_key.post(body = request_body)
 
 
 ```

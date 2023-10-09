@@ -35,7 +35,7 @@ request_body = ShiftPreferences(
 	}
 )
 
-result = await graph_client.users.by_user_id('user-id').settings.shift_preferences.patch(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').settings.shift_preferences.patch(body = request_body)
 
 
 ```

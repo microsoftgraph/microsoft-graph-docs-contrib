@@ -13,7 +13,7 @@ request_body = ReviewSetQuery(
 	query = "(subject:\"Quarterly Financials\")",
 )
 
-result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').review_sets.by_review_set_id('reviewSet-id').queries.post(request_body = request_body)
+result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').review_sets.by_review_set_id('reviewSet-id').queries.post(body = request_body)
 
 
 ```

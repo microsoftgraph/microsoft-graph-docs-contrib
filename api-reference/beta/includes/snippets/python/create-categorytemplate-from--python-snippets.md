@@ -16,7 +16,7 @@ request_body = CategoryTemplate(
 	),
 )
 
-result = await graph_client.security.labels.categories.post(request_body = request_body)
+result = await graph_client.security.labels.categories.post(body = request_body)
 
 
 ```

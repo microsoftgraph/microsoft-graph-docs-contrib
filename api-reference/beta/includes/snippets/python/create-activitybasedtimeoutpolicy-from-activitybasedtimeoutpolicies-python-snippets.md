@@ -16,7 +16,7 @@ request_body = ActivityBasedTimeoutPolicy(
 	is_organization_default = True,
 )
 
-result = await graph_client.policies.activity_based_timeout_policies.post(request_body = request_body)
+result = await graph_client.policies.activity_based_timeout_policies.post(body = request_body)
 
 
 ```

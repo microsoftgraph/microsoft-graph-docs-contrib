@@ -52,7 +52,7 @@ request_body = AndroidLobApp(
 	version_code = "Version Code value",
 )
 
-result = await graph_client.device_app_management.mobile_apps.by_mobile_app_id('mobileApp-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.mobile_apps.by_mobile_app_id('mobileApp-id').patch(body = request_body)
 
 
 ```

@@ -12,7 +12,7 @@ request_body = OnPremisesAgentGroup(
 	display_name = "Group New Name",
 )
 
-result = await graph_client.on_premise_publishing_profiles.by_on_premise_publishing_profile_id('onPremisesPublishingProfile-id').agent_groups.by_agent_group_id('onPremisesAgentGroup-id').patch(request_body = request_body)
+result = await graph_client.on_premise_publishing_profiles.by_on_premise_publishing_profile_id('onPremisesPublishingProfile-id').agent_groups.by_agent_group_id('onPremisesAgentGroup-id').patch(body = request_body)
 
 
 ```

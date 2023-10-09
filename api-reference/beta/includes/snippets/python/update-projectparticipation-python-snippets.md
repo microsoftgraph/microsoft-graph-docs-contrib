@@ -16,7 +16,7 @@ request_body = ProjectParticipation(
 	),
 )
 
-result = await graph_client.me.profile.projects.by_project_id('projectParticipation-id').patch(request_body = request_body)
+result = await graph_client.me.profile.projects.by_project_id('projectParticipation-id').patch(body = request_body)
 
 
 ```

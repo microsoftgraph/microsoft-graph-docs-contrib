@@ -60,7 +60,7 @@ request_body = DefaultManagedAppProtection(
 	face_id_blocked = True,
 )
 
-result = await graph_client.device_app_management.default_managed_app_protections.post(request_body = request_body)
+result = await graph_client.device_app_management.default_managed_app_protections.post(body = request_body)
 
 
 ```

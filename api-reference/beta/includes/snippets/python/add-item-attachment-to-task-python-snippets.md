@@ -29,7 +29,7 @@ request_body = ItemAttachment(
 	),
 )
 
-result = await graph_client.me.outlook.tasks.by_task_id('outlookTask-id').attachments.post(request_body = request_body)
+result = await graph_client.me.outlook.tasks.by_task_id('outlookTask-id').attachments.post(body = request_body)
 
 
 ```

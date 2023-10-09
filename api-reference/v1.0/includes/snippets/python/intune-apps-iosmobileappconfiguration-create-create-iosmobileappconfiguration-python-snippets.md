@@ -27,7 +27,7 @@ request_body = IosMobileAppConfiguration(
 	]
 )
 
-result = await graph_client.device_app_management.mobile_app_configurations.post(request_body = request_body)
+result = await graph_client.device_app_management.mobile_app_configurations.post(body = request_body)
 
 
 ```

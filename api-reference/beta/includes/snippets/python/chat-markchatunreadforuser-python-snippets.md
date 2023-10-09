@@ -18,7 +18,7 @@ request_body = MarkChatUnreadForUserPostRequestBody(
 	last_message_read_date_time = "2021-05-27T22:13:01.577Z",
 )
 
-await graph_client.chats.by_chat_id('chat-id').mark_chat_unread_for_user.post(request_body = request_body)
+await graph_client.chats.by_chat_id('chat-id').mark_chat_unread_for_user.post(body = request_body)
 
 
 ```

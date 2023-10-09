@@ -18,7 +18,7 @@ request_body = ConditionalAccessPolicy(
 	),
 )
 
-result = await graph_client.identity.conditional_access.policies.by_policie_id('conditionalAccessPolicy-id').patch(request_body = request_body)
+result = await graph_client.identity.conditional_access.policies.by_policie_id('conditionalAccessPolicy-id').patch(body = request_body)
 
 
 ```

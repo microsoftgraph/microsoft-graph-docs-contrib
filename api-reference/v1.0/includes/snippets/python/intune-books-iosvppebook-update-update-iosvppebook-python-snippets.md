@@ -33,7 +33,7 @@ request_body = IosVppEBook(
 	used_license_count = 0,
 )
 
-result = await graph_client.device_app_management.managed_e_books.by_managed_e_book_id('managedEBook-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.managed_e_books.by_managed_e_book_id('managedEBook-id').patch(body = request_body)
 
 
 ```

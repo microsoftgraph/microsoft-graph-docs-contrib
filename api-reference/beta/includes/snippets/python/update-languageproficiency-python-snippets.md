@@ -12,7 +12,7 @@ request_body = LanguageProficiency(
 	allowed_audiences = AllowedAudiences.Organization,
 )
 
-result = await graph_client.me.profile.languages.by_language_id('languageProficiency-id').patch(request_body = request_body)
+result = await graph_client.me.profile.languages.by_language_id('languageProficiency-id').patch(body = request_body)
 
 
 ```

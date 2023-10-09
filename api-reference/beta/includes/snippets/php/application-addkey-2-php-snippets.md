@@ -13,7 +13,7 @@ $requestBody = new AddKeyPostRequestBody();
 $keyCredential = new KeyCredential();
 $keyCredential->setType('X509CertAndPassword');
 $keyCredential->setUsage('Sign');
-$KeyCredential->setKey(base64_decode('MIIDYDCCAki...'));
+$keyCredential->setKey(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('MIIDYDCCAki...')));
 $requestBody->setKeyCredential($keyCredential);
 $passwordCredential = new PasswordCredential();
 $passwordCredential->setSecretText('MKTr0w1...');

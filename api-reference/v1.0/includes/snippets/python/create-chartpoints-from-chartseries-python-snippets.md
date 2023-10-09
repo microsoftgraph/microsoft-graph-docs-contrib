@@ -11,7 +11,7 @@ graph_client = GraphServiceClient(request_adapter)
 request_body = WorkbookChartPoint(
 )
 
-result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.worksheets.by_worksheet_id('workbookWorksheet-id').charts.by_chart_id('workbookChart-id').series.by_serie_id('workbookChartSeries-id').points.post(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.worksheets.by_worksheet_id('workbookWorksheet-id').charts.by_chart_id('workbookChart-id').series.by_serie_id('workbookChartSeries-id').points.post(body = request_body)
 
 
 ```

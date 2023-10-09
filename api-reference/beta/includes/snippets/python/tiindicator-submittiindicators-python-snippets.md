@@ -53,7 +53,7 @@ request_body = SubmitTiIndicatorsPostRequestBody(
 	]
 )
 
-result = await graph_client.security.ti_indicators.submit_ti_indicators.post(request_body = request_body)
+result = await graph_client.security.ti_indicators.submit_ti_indicators.post(body = request_body)
 
 
 ```

@@ -3,7 +3,7 @@ title: "Delete inferenceClassificationOverride"
 description: "Delete a Focused Inbox override specified by its ID."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: mail
 ---
 
@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [focused Inbox](../resources/manage-focused-inbox.md) override specified by its ID.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -91,7 +94,7 @@ DELETE https://graph.microsoft.com/beta/me/inferenceClassification/overrides/98f
 
 ### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

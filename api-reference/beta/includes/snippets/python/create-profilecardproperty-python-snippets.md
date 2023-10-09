@@ -23,7 +23,7 @@ request_body = ProfileCardProperty(
 	]
 )
 
-result = await graph_client.admin.people.profile_card_properties.post(request_body = request_body)
+result = await graph_client.admin.people.profile_card_properties.post(body = request_body)
 
 
 ```

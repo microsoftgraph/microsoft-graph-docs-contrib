@@ -51,7 +51,7 @@ request_body = DeviceEnrollmentPlatformRestrictionsConfiguration(
 	),
 )
 
-result = await graph_client.device_management.device_enrollment_configurations.post(request_body = request_body)
+result = await graph_client.device_management.device_enrollment_configurations.post(body = request_body)
 
 
 ```

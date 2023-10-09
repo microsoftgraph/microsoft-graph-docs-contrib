@@ -43,7 +43,7 @@ request_body = RedirectPostRequestBody(
 	),
 )
 
-result = await graph_client.print.printers.by_printer_id('printer-id').jobs.by_job_id('printJob-id').redirect.post(request_body = request_body)
+result = await graph_client.print.printers.by_printer_id('printer-id').jobs.by_job_id('printJob-id').redirect.post(body = request_body)
 
 
 ```

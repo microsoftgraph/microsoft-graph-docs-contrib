@@ -217,9 +217,11 @@ Content-type: application/json
 }
 ```
 
+### Confirm the app role assignment
+
 To confirm all principals with role assignments to the resource service principal, run the following request.
 
-### Request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -265,7 +267,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/7ea9e944-71ce-443d-811c-7
 
 ---
 
-### Response
+#### Response
 
 The response object includes a collection of app role assignments to your resource service principal and includes the app role assignment you created using the POST request.
 
@@ -495,6 +497,7 @@ Content-type: application/json
 
 ## Step 2: Grant a delegated permission to the client service principal on behalf of a user
 
+### Request
 In this step, you'll grant your app, on behalf of a user, a delegated permission that's exposed by Microsoft Graph, thereby creating an **delegated permission grant**. 
 
 + From Step 1, the object ID of Microsoft Graph in the tenant is `7ea9e944-71ce-443d-811c-71e8047b557a`
@@ -598,9 +601,11 @@ Content-type: application/json
 
 If you granted consent for all users in the tenant, the **consentType** in the response object would be `AllPrincipals`, and the **principalId** would be `null`.
 
+### Confirm the permission grant
+
 To confirm the delegated permissions assigned to the service principal on behalf of the user, you run the following request.
 
-### Request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -646,7 +651,7 @@ GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants?$filter=clientId eq 
 
 ---
 
-### Response
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true,

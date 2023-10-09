@@ -22,7 +22,7 @@ request_body = AddActivitiesPostRequestBody(
 	]
 )
 
-result = await graph_client.external.connections.by_connection_id('externalConnection-id').items.by_item_id('externalItem-id').microsoft_graph_external_connector_add_activities.post(request_body = request_body)
+result = await graph_client.external.connections.by_connection_id('externalConnection-id').items.by_item_id('externalItem-id').microsoft_graph_external_connector_add_activities.post(body = request_body)
 
 
 ```

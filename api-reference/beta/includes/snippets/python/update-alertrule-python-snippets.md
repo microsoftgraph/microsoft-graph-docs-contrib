@@ -40,7 +40,7 @@ request_body = AlertRule(
 	]
 )
 
-result = await graph_client.device_management.monitoring.alert_rules.by_alert_rule_id('alertRule-id').patch(request_body = request_body)
+result = await graph_client.device_management.monitoring.alert_rules.by_alert_rule_id('alertRule-id').patch(body = request_body)
 
 
 ```

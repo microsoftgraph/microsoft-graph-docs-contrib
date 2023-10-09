@@ -14,7 +14,7 @@ request_body = $refDeleteRequestBody(
 	}
 )
 
-await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').owners.by_owner_id('directoryObject-id').ref.delete(request_body = request_body)
+await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').owners.by_owner_id('directoryObject-id').ref.delete(body = request_body)
 
 
 ```

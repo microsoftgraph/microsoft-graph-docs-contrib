@@ -35,7 +35,7 @@ request_body = Schema(
 	]
 )
 
-result = await graph_client.external.connections.by_connection_id('externalConnection-id').schema.patch(request_body = request_body)
+result = await graph_client.external.connections.by_connection_id('externalConnection-id').schema.patch(body = request_body)
 
 
 ```

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Add conditions under which a permission grant event is *excluded* in a permission grant policy. You do this by adding a [permissionGrantConditionSet](../resources/permissiongrantconditionset.md) to the **excludes** collection of a  [permissionGrantPolicy](../resources/permissionGrantPolicy.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,6 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Policy.ReadWrite.PermissionGrant |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Policy.ReadWrite.PermissionGrant |
+
+[!INCLUDE [rbac-permission-grant-preapproval-policy-write](../includes/rbac-for-apis/rbac-permission-grant-preapproval-policy-write.md)]
 
 ## HTTP request
 
@@ -133,6 +137,10 @@ Content-type: application/json
   "clientApplicationTenantIds": ["all"],
   "clientApplicationPublisherIds": ["all"],
   "clientApplicationsFromVerifiedPublisherOnly": false,
-  "certifiedClientApplicationsOnly": false
+  "certifiedClientApplicationsOnly": false,
+  "scopeSensitivityLabels": {
+      "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+      "labelKind": "all"
+  }
 }
 ```

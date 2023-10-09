@@ -74,13 +74,13 @@ $additionalData = [
 ];
 $serviceLocationAddress->setAdditionalData($additionalData);
 $serviceLocation->setAddress($serviceLocationAddress);
-$ServiceLocation->setCoordinates(null);
+$serviceLocation->setCoordinates(null);
 $serviceLocation->setDisplayName('Customer location');
-$ServiceLocation->setLocationEmailAddress(null);
-$ServiceLocation->setLocationType(null);
-$ServiceLocation->setLocationUri(null);
-$ServiceLocation->setUniqueId(null);
-$ServiceLocation->setUniqueIdType(null);
+$serviceLocation->setLocationEmailAddress(null);
+$serviceLocation->setLocationType(null);
+$serviceLocation->setLocationUri(null);
+$serviceLocation->setUniqueId(null);
+$serviceLocation->setUniqueIdType(null);
 $additionalData = [
 'locationType@odata.type' => '#microsoft.graph.locationType',
 'uniqueIdType@odata.type' => '#microsoft.graph.locationUniqueIdType',

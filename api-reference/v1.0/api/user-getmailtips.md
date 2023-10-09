@@ -1,7 +1,7 @@
 ---
 title: "user: getMailTips"
 description: "Get the MailTips of one or more recipients as available to the signed-in user."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -13,8 +13,10 @@ Namespace: microsoft.graph
 
 Get the MailTips of one or more recipients as available to the signed-in [user](../resources/user.md).
 
-Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to 
+Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to
 be returned for more than one recipient at one time. The requested MailTips are returned in a [mailTips](../resources/mailtips.md) collection.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -66,7 +68,7 @@ Content-Type: application/json
 
 {
     "EmailAddresses": [
-        "danas@contoso.onmicrosoft.com", 
+        "danas@contoso.onmicrosoft.com",
         "fannyd@contoso.onmicrosoft.com"
     ],
     "MailTipsOptions": "automaticReplies, mailboxFullStatus"

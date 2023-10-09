@@ -24,7 +24,7 @@ request_body = InvitePostRequestBody(
 	expiration_date_time = "2018-07-15T14:00:00.000Z",
 )
 
-result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').invite.post(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').invite.post(body = request_body)
 
 
 ```

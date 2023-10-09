@@ -13,7 +13,7 @@ request_body = ChangePasswordPostRequestBody(
 	new_password = "0eM85N54wFxWwvJ]",
 )
 
-await graph_client.me.change_password.post(request_body = request_body)
+await graph_client.me.change_password.post(body = request_body)
 
 
 ```

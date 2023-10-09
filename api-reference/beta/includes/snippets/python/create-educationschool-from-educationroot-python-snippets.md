@@ -29,7 +29,7 @@ request_body = EducationSchool(
 	phone = "+1 (253) 555-0102",
 )
 
-result = await graph_client.education.schools.post(request_body = request_body)
+result = await graph_client.education.schools.post(body = request_body)
 
 
 ```

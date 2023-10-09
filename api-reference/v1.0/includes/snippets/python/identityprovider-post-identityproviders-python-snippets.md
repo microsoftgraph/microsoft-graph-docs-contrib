@@ -15,7 +15,7 @@ request_body = IdentityProvider(
 	client_secret = "000000000000",
 )
 
-result = await graph_client.identity_providers.post(request_body = request_body)
+result = await graph_client.identity_providers.post(body = request_body)
 
 
 ```

@@ -31,7 +31,7 @@ request_body = RoleDefinition(
 	is_built_in = True,
 )
 
-result = await graph_client.device_management.role_definitions.post(request_body = request_body)
+result = await graph_client.device_management.role_definitions.post(body = request_body)
 
 
 ```

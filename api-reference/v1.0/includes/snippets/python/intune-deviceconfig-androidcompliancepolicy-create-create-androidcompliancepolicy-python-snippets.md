@@ -36,7 +36,7 @@ request_body = AndroidCompliancePolicy(
 	security_require_company_portal_app_integrity = True,
 )
 
-result = await graph_client.device_management.device_compliance_policies.post(request_body = request_body)
+result = await graph_client.device_management.device_compliance_policies.post(body = request_body)
 
 
 ```

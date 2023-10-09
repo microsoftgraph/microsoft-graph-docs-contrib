@@ -143,7 +143,7 @@ request_body = WindowsInformationProtectionPolicy(
 	days_without_contact_before_unenroll = 0,
 )
 
-result = await graph_client.device_app_management.window_information_protection_policies.post(request_body = request_body)
+result = await graph_client.device_app_management.window_information_protection_policies.post(body = request_body)
 
 
 ```

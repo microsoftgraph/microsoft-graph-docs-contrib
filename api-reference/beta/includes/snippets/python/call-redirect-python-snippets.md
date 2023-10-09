@@ -26,7 +26,7 @@ request_body = RedirectPostRequestBody(
 	callback_uri = "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
 )
 
-await graph_client.communications.calls.by_call_id('call-id').redirect.post(request_body = request_body)
+await graph_client.communications.calls.by_call_id('call-id').redirect.post(body = request_body)
 
 
 ```
