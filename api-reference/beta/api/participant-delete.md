@@ -148,7 +148,7 @@ Content-Length: 464
           "identityProvider": "AAD"
         }
       },
-      "participantIId": "a7ebfb2d-871e-419c-87af-27290b22e8db"
+      "participantId": "a7ebfb2d-871e-419c-87af-27290b22e8db"
     }
   ],
   "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
