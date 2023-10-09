@@ -16674,8 +16674,6 @@ items:
                 href: api/sitesettings-get.md
               - name: List all sites
                 href: api/site-getallsites.md
-              - name: Get delta
-                href: api/site-delta.md
           - name: List
             items:
               - name: List
