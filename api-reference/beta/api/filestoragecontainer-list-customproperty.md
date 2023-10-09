@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 List the custom properties of a fileStorageContainer. Caller can either retrieve all custom properties or get specific property by name.
 
-The application calling this API must have permission to read fileStorageContainers of the respective container type.
+The application calling this API must have permission to read fileStorageContainers for the respective container type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
