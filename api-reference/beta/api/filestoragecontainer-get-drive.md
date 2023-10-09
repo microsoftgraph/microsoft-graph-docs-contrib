@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the fileStorageContainer's [drive](../resources/drive.md).  
 
-The calling application must have permission to access the contents of the fileStorageContainers of the respective container type.
+The calling application must have permission to access the content in fileStorageContainers of the respective container type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
