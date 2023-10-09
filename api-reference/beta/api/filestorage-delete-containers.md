@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 > [!IMPORTANT]
 > APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
 
-Delete a [fileStorageContainer](../resources/filestoragecontainer.md). Note that deleting fileStorageContainers using this method will move the fileStorageContainers to the recycle bin instead of permanently deleting them.
+Delete a [fileStorageContainer](../resources/filestoragecontainer.md). Deleting fileStorageContainers using this method will move the fileStorageContainers to the recycle bin instead of permanently deleting them.
 
 The application calling this API must have permissions to delete fileStorageContainers of the respective container type.
 
@@ -24,7 +24,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|FileStorageContainer.Selected|
-|Delegated (personal Microsoft account)|FileStorageContainer.Selected|
 |Application|FileStorageContainer.Selected|
 
 ## HTTP request
