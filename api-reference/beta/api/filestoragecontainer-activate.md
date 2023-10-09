@@ -19,7 +19,7 @@ FileStorageContainers are created in an inactive state, indicated by the contain
 
 A fileStorageContainer can be activated by either calling the activate API, or calling any API that mutates the container or its content.
 
-The application calling this API must have write permission to containers of the respective container type.
+The application calling this API must have write permission to fileStorageContainers of the respective container type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). 
