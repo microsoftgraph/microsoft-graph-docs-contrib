@@ -60,7 +60,7 @@ This method supports OData query parameters to help customize the response.
 - You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
 _id_ property is always returned. 
 
-- There is limited support for `$filter`:
+- There's limited support for `$filter`:
   * The only supported `$filter` expression is for tracking changes for specific resources, by their id:  `$filter=id+eq+{value}` or `$filter=id+eq+{value1}+or+id+eq+{value2}`. The number of ids you can specify is limited by the maximum URL length.
 
 
@@ -71,7 +71,7 @@ _id_ property is always returned.
 | Content-Type  | application/json |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ### Response
 
@@ -83,7 +83,7 @@ If successful, this method returns a `200 OK` response code and [directoryRole](
 
 See:</br>
 - [Using Delta Query](/graph/delta-query-overview) for more details</br>
-- [Get incremental changes for users](/graph/delta-query-users) for an example requests.</br>
+- [Get incremental changes for users](/graph/delta-query-users) for an example request.</br>
 
 ### Example
 #### Request

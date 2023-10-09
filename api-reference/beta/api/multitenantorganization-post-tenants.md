@@ -1,6 +1,6 @@
 ---
 title: "Add multiTenantOrganizationMember"
-description: "Add a tenant to a multi-tenant organization."
+description: "Add a tenant to a multitenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a tenant to a multi-tenant organization. The administrator of an owner tenant has the permissions to add tenants to the multi-tenant organization. The added tenant is in the pending state until the administrator of the added tenant joins the multi-tenant organization by submitting a join request. Note that a tenant can be part of only one multi-tenant organization.
+Add a tenant to a multitenant organization. The administrator of an owner tenant has the permissions to add tenants to the multitenant organization. The added tenant is in the pending state until the administrator of the added tenant joins the multitenant organization by submitting a join request. A tenant can be part of only one multitenant organization.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -50,18 +50,18 @@ You can specify the following properties when creating a **multiTenantOrganizati
 
 |Property|Type|Description|
 |:---|:---|:---|
-|tenantId|String|Tenant ID of the Azure Active Directory tenant to add to the multi-tenant organization. Required.|
-|displayName|String|Display name of the tenant added to the multi-tenant organization. Currently, cannot be changed once set. Required.|
-|role|multiTenantOrganizationMemberRole|Role of the tenant in the multi-tenant organization. The possible values are: `owner`, `member` (default), `unknownFutureValue`. Optional.|
+|tenantId|String|Tenant ID of the Azure Active Directory tenant to add to the multitenant organization. Required.|
+|displayName|String|Display name of the tenant added to the multitenant organization. Currently, can't be changed once set. Required.|
+|role|multiTenantOrganizationMemberRole|Role of the tenant in the multitenant organization. The possible values are: `owner`, `member` (default), `unknownFutureValue`. Optional.|
 
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object in the response body. If the tenant is already pending or active in this multi-tenant organization, you get a 'Request_BadRequest' error.
+If successful, this method returns a `201 Created` response code and a [multiTenantOrganizationMember](../resources/multitenantorganizationmember.md) object in the response body. If the tenant is already pending or active in this multitenant organization, you get a 'Request_BadRequest' error.
 
 ## Examples
 
-The following example adds the Fabrikam tenant to the multi-tenant organization.
+The following example adds the Fabrikam tenant to the multitenant organization.
 
 ### Request
 
@@ -140,7 +140,7 @@ Content-Type: application/json
 }
 ```
 
-If tenant is already pending or active in this multi-tenant organization, you get a 'Request_BadRequest' error.
+If tenant is already pending or active in this multitenant organization, you get a 'Request_BadRequest' error.
 
 ```http
 HTTP/1.1 400 Bad Request

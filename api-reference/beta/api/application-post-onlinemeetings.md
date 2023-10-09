@@ -41,11 +41,7 @@ POST /users/{userId}/onlineMeetings
 ```
 
 > [!NOTE]
-<<<<<<< HEAD
->- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more information, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
-=======
 >- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
->>>>>>> 41ea870097f52b604869cda08a9b6db33e04d064
 
 ## Request headers
 
@@ -190,109 +186,8 @@ Content-Type: application/json
     }
 ```
 
-### Example 2: Create a Microsoft Teams live event with a user token
 
-#### Request
-
-Here's an example  of a request.
-
-```http
-POST https://graph.microsoft.com/beta/me/onlineMeetings
-Content-Type: application/json
-
-{
-  "subject":"User Token Live Event",
-  "startDateTime":"2020-12-02T14:30:34.2444915+00:00",
-  "endDateTime":"2020-12-02T15:00:34.2464912+00:00",
-  "isBroadcast": true,
-  "broadcastSettings": {
-    "allowedAudience": "everyone",
-    "isRecordingEnabled": true,
-    "isAttendeeReportEnabled": true
-  }
-}
-```
-
-#### Response
-
-Here's an example  of the response.
-
-> **Note:** The response object shown here has been shortened for readability. All the properties will be returned from an actual call.
-
-```json
-{
-  "id": "dc17674c-81d9-4adb-bfb2-8fa442e4622_19:meeting_MGQ4MDDYxODYzMmY2@thread.v2",
-  "creationDateTime": "2020-12-02T14:30:34.2444915Z",
-  "startDateTime": "2020-09-29T22:35:31.389759Z",
-  "endDateTime": "2020-12-02T15:00:34.2464912Z",
-  "joinWebUrl": "(redacted)",
-  "subject": "User Token Live Event",
-  "autoAdmittedUsers": "EveryoneInCompany",
-  "isEntryExitAnnounced": true,
-  "allowedPresenters": "organization",
-  "videoTeleconferenceId": "(redacted)",
-  "participants": {
-    "organizer": {
-      "upn": "(redacted)",
-      "role": "producer",
-      "identity": {
-        "user": {
-          "id": "dc174c-81d9-4adb-bfb2-8f6a4622",
-          "displayName": null,
-          "tenantId": "909581-5130-43e9-88f3-fccde38",
-          "identityProvider": "AAD"
-        }
-      }
-    },
-    "attendees": [
-      {
-        "upn": "(redacted)",
-        "role": "producer",
-        "identity": {
-          "user": {
-            "id": "dc174c-81d9-4adb-bfb2-8442e4622",
-            "displayName": null,
-            "tenantId": "909581-5130-43e9-88f3-fcb3cde38",
-            "identityProvider": "AAD"
-          }
-        }
-      }
-    ],
-    "producers": [
-      {
-        "upn": "(redacted)",
-        "role": "producer",
-        "identity": {
-          "user": {
-            "id": "d7674c-81d9-4adb-bfb2-8f6a4622",
-            "displayName": null,
-            "tenantId": "909c81-5130-43e9-88f3-fcbcde38",
-            "identityProvider": "AAD"
-          }
-        }
-      }
-    ],
-    "contributors": []
-  },
-  "lobbyBypassSettings": {
-    "scope": "organization",
-    "isDialInBypassEnabled": false
-  },
-  "isBroadcast": true,
-  "broadcastSettings": {
-    "allowedAudience": "organization",
-    "isRecordingEnabled": true,
-    "isAttendeeReportEnabled": true
-  },
-  "joinMeetingIdSettings": {
-    "isPasscodeRequired": false,
-    "joinMeetingId": "1234567890",
-    "passcode": null
-  }
-}
-```
-
-### Example 3: Create an online meeting that requires a passcode
+### Example 2: Create an online meeting that requires a passcode
 
 The following example shows how to add a passcode to a meeting. The passcode is used when you join a meeting with a **joinMeetingId**. For more information, see [joinMeetingIdSettings](../resources/joinmeetingidsettings.md).
 
@@ -414,7 +309,7 @@ Content-Type: application/json
 ```
 
 
-### Example 4: Create an online meeting that doesn't require a passcode
+### Example 3: Create an online meeting that doesn't require a passcode
 
 When **isPasscodeRequired** is set to `false` or when **joinMeetingIdSettings** isn't specified in the request, the generated online meeting won't have a passcode.
 

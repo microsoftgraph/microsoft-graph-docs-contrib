@@ -70,10 +70,8 @@ This resource is an open type that allows other properties to be passed in. You 
 |isRooted|Boolean|`true` if device is rooted; `false` if device is jail-broken. This can only be updated by Intune.|
 |kind| String| Form factor of device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
 |managementType|String|Management channel of the device.  This property is set by Intune. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`.|
-|manufacturer|String| Manufacturer of the device. Read-only. |
 |manufacturer| String| Manufacturer of device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
 |mdmAppId|String|Application identifier used to register device into MDM. Read-only. Supports `$filter` (`eq`, `ne`, `not`, `startsWith`).|
-|model|String| Model of the device. Read-only. |
 |model| String| Model of device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
 |name| String | Friendly name of a device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
 |onPremisesLastSyncDateTime|DateTimeOffset|The last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z` Read-only. Supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`, `in`). |
