@@ -48,8 +48,8 @@ You can specify the following properties when creating a custom property.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|value|String|Value of the custom propety. Rewquired.|
-|isSearchable|Boolean|Flag to indicated if the property is searchable. Optional. Default False.|
+|value|String|Value of the custom propety. Required.|
+|isSearchable|Boolean|Flag to indicate if the property is searchable. Optional. Default False.|
 
 ## Response
 
