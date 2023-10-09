@@ -8227,6 +8227,8 @@ items:
                     href: api/site-update-permission.md
                   - name: Delete site permission
                     href: api/site-delete-permission.md
+              - name: Get delta
+                href: api/site-delta.md
           - name: List
             items:
               - name: List
