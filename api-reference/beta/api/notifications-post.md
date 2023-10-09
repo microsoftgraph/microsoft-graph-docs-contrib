@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Create and send a notification targeting a user through Microsoft Graph. The notification is stored in the Microsoft Graph notification feed store, and is sent to all app clients on all device endpoints that the user is signed in to.  
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 Your application service doesn't require any other permissions to post notifications to your targeted user.  
 

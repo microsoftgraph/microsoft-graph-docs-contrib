@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 List a set of items that have been recently used by the signed in user.
 This collection includes items that are in the user's drive and items they have access to from other drives.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

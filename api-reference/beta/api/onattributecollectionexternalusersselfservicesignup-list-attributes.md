@@ -47,7 +47,7 @@ This method supports the `$filter`, `$expand`,  `$orderby`, and  `$top` OData qu
 |Content-Type|application/json. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 
 ## Response
@@ -59,7 +59,7 @@ If no user flow attributes are assigned to the user flow, this method returns a 
 ## Examples
 
 #### Request
-The following is an example of a request to retrieve the attributes associated with a user flow.
+Here's an example of a request to retrieve the attributes associated with a user flow.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37
 ---
 
 #### Response
-The following is an example of the response
+Here's an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,

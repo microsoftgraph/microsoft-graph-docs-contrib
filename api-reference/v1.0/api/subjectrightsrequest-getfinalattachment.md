@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get the final attachment for a subject rights request. The attachment is a zip file that contains all the files that were included by the privacy administrator.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

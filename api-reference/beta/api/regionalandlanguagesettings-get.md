@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a user's [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -27,7 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /settings/regionalAndLanguageSettings
+GET /me/settings/regionalAndLanguageSettings
+GET /users/{user-id | userPrincipalName}/settings/regionalAndLanguageSettings
 ```
 ## Optional query parameters
 You can use `$select` to get specific regionalAndLanguageSettings properties, including properties that aren't returned by default.
@@ -154,7 +157,7 @@ Content-type: application/json
         "languageOverrides": [
             {
                 "languageTag": "fr",
-                "translationBehavior": "Yes" 
+                "translationBehavior": "Yes"
             }
         ],
         "untranslatedLanguages": ["de"]

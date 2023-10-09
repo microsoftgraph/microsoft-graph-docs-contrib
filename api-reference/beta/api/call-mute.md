@@ -21,6 +21,8 @@ For more details about how to handle mute operations, see [muteParticipantOperat
 
 > **Note:** This method is only supported for group calls.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
