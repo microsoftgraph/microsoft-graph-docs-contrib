@@ -28,21 +28,6 @@ Get a Cloud PC's raw real-time remote connection report without any calculation,
 | `top`              | `Edm.Int32`                      | N         | There will be a default top                                            |
 | `returnType`       | `Edm.Stream`                     | N/A       | N/A                                                                    |
 
-##### CSDL
-```xml
-<Action Name="getRawRemoteConnectionReports" IsBound="true">
-    <Parameter Name="bindingParameter" Type="Collection(microsoft.graph.cloudPcReports)"/>
-    <Parameter Name="filter" Type="Edm.String"/>
-    <Parameter Name="select" Type="Collection(String)"/>
-    <Parameter Name="search" Type="Edm.String"/>
-    <Parameter Name="groupBy" Type="Collection(String)"/>
-    <Parameter Name="orderBy" Type="Collection(String)"/>
-    <Parameter Name="skip" Type="Edm.Int32"/>
-    <Parameter Name="top" Type="Edm.Int32"/>
-    <ReturnType Type="Edm.Stream"/>
-</Action>
-```
-
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
