@@ -17,9 +17,9 @@ Activate a fileStorageContainer.
 
 FileStorageContainers are created in an inactive state, indicated by the container's status property. A container must be activated in 24 hours after creation or will be automatically deleted. Upon successful activation, the container's status property is set to "active".
 
-A fileStorageContainer can be activated by either calling the activate API, or calling any API that mutates the container or its content.
+A fileStorageContainer can be activated by either calling the activate API, or calling any API that updates or modifies the container or its content. For example, uploading a file to a container will activate the container.
 
-The application calling this API must have write permission to fileStorageContainers of the respective container type.
+The application calling this API must have write permission to fileStorageContainers for the respective container type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). 
