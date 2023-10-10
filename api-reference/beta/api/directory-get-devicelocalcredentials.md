@@ -41,7 +41,7 @@ To get the device local credential for a specific device object:
 }
 -->
 ``` http
-GET directory/deviceLocalCredentials/{deviceId}
+GET /directory/deviceLocalCredentials/{deviceId}
 GET /deviceLocalCredentials/{deviceId}
 ```
 
