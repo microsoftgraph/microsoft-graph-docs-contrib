@@ -10286,6 +10286,13 @@ items:
                     href: api/cloudpcexternalpartnersetting-get.md
                   - name: Update
                     href: api/cloudpcexternalpartnersetting-update.md
+              - name: Cloud PC front-line service plan
+                href: resources/cloudpcfrontlineserviceplan.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-frontlineserviceplans.md
+                  - name: Get
+                    href: api/cloudpcfrontlineserviceplan-get.md
               - name: Cloud PC gallery image
                 href: resources/cloudpcgalleryimage.md
                 items:
@@ -10357,13 +10364,6 @@ items:
                     href: api/virtualendpoint-list-shareduseserviceplans.md
                   - name: Get
                     href: api/cloudpcshareduseserviceplan-get.md
-              - name: Cloud PC front-line service plan
-                href: resources/cloudpcfrontlineserviceplan.md
-                items:
-                  - name: List
-                    href: api/virtualendpoint-list-frontlineserviceplans.md
-                  - name: Get
-                    href: api/cloudpcfrontlineserviceplan-get.md
               - name: Cloud PC snapshot
                 href: resources/cloudpcsnapshot.md
                 items:
