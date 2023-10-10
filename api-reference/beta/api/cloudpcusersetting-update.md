@@ -58,7 +58,7 @@ The following table shows the properties that are required when you update the [
 |localAdminEnabled|Boolean|To turn on the local admin option, change this setting to `true`.|
 |resetEnabled|Boolean|Indicates whether an end user is allowed to reset their Cloud PC. When `true`, the user is allowed to reset their Cloud PC. When `false`, end-user initiated reset is not allowed. The default value is `false`. |
 |restorePointSetting|[cloudPcRestorePointSetting](../resources/cloudpcrestorepointsetting.md)|Defines how frequently a restore point is created (that is, a snapshot is taken) for users' provisioned Cloud PCs (default is 12 hours), and whether the user is allowed to restore their own Cloud PCs to a backup made at a specific point in time.|
-|selfServiceEnabled (deprecated)|Boolean|To turn on the self-service option, change this setting to `true`. The **selfServiceEnabled** property is deprecated and will stop returning data on December 1st, 2023.|
+|selfServiceEnabled (deprecated)|Boolean|To turn on the self-service option, change this setting to `true`. The **selfServiceEnabled** property is deprecated and will stop returning data on December 1, 2023.|
 
 ## Response
 
