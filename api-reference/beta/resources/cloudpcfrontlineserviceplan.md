@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a servicePlan that provides an allotment of 3 Cloud PCs for the admin to provision to up to 3 users, but cannot be assigned to a specific user. This **servicePlan** enables the service to create a concept of a time-share across these provisioned users, where customers can deploy a larger number of users. Windows 365 enforces a limit on active users at a given time, effectively creating an innovative way to provide the personalized experience of a Cloud PC along with the improved economics of sharing.
+Represents a servicePlan that provides an allotment of three Cloud PCs for the admin to provision to up to three users, but can't be assigned to a specific user. This **servicePlan** enables the service to create a concept of a time-share across these provisioned users, where customers can deploy a larger number of users. Windows 365 enforces a limit on active users at a given time, effectively creating an innovative way to provide the personalized experience of a Cloud PC along with the improved economics of sharing.
 
 ## Methods
 
@@ -37,7 +37,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
