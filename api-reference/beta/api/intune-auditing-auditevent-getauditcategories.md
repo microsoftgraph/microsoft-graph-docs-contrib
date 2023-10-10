@@ -1,6 +1,6 @@
 ---
 title: "getAuditCategories function"
-description: ""
+description: "Intune Auditing Auditevent Getauditcategories Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -1,6 +1,6 @@
 ---
 title: "getMobileApplicationManagementAppRegistrationSummaryReport action"
-description: ""
+description: "Intune Mam Devicemanagementreports Getmobileapplicationmanagementappregistrationsummaryreport Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
