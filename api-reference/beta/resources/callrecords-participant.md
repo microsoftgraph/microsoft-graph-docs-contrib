@@ -12,7 +12,7 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity of a call or meeting participant in Microsoft Teams or Skype for Business.
+Represents the identity of a call or meeting participant in a [callRecord](callrecords-callrecord.md) resource.
 
 ## Properties
 
