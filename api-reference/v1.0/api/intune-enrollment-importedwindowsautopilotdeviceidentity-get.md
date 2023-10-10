@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/importedWindowsAutopilotDe
 [!INCLUDE [sample-code](../includes/snippets/php/intune-enrollment-importedwindowsautopilotdeviceidentity-get-get-importedwindowsautopilotdeviceidentity-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-enrollment-importedwindowsautopilotdeviceidentity-get-get-importedwindowsautopilotdeviceidentity-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-enrollment-importedwindowsautopilotdeviceidentity-get-get-importedwindowsautopilotdeviceidentity-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

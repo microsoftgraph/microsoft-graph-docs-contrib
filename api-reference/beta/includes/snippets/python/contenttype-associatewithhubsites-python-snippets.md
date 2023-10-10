@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = AssociateWithHubSitesPostRequestBody()
-request_body.HubSiteUrls(['https://graph.microsoft.com/beta/sites/id', ])
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.propagate_to_existing_lists = False
+request_body = AssociateWithHubSitesPostRequestBody(
+	hub_site_urls = [
+		"https://graph.microsoft.com/beta/sites/id",
+	]
+	propagate_to_existing_lists = False,
+)
 
-
-
-
-await client.sites.by_site_id('site-id').content_types.by_content_type_id('contentType-id').associate_with_hub_sites.post(request_body = request_body)
+await graph_client.sites.by_site_id('site-id').content_types.by_content_type_id('contentType-id').associate_with_hub_sites.post(body = request_body)
 
 
 ```

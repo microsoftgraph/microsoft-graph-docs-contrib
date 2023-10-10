@@ -4,21 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = AccessPackageAssignmentRequest()
-request_body.requesttype(AccessPackageRequestType.AdminRemove('accesspackagerequesttype.adminremove'))
+graph_client = GraphServiceClient(request_adapter)
 
-assignment = AccessPackageAssignment()
-assignment.id = 'a6bb6942-3ae1-4259-9908-0133aaee9377'
+request_body = AccessPackageAssignmentRequest(
+	request_type = AccessPackageRequestType.AdminRemove,
+	assignment = AccessPackageAssignment(
+		id = "a6bb6942-3ae1-4259-9908-0133aaee9377",
+	),
+)
 
-
-request_body.assignment = assignment
-
-
-
-result = await client.identity_governance.entitlement_management.assignment_requests.post(request_body = request_body)
+result = await graph_client.identity_governance.entitlement_management.assignment_requests.post(body = request_body)
 
 
 ```

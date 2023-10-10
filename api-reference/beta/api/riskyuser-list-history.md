@@ -16,6 +16,8 @@ Get the risk history of a [riskyUser](../resources/riskyuser.md) resource.
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -24,6 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | IdentityRiskyUser.Read.All, IdentityRiskyUser.ReadWrite.All |
+
+[!INCLUDE [rbac-identity-protection-apis-read](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -62,6 +66,10 @@ GET https://graph.microsoft.com/beta/riskyUsers/41a31b00-3b3b-42d9-8f1c-6d4f14e7
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-userriskhitsory-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-userriskhitsory-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -181,6 +189,10 @@ GET https://graph.microsoft.com/beta/identityProtection/riskyUsers/41a31b00-3b3b
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-userriskhitsory-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-userriskhitsory-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

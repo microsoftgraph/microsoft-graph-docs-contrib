@@ -1,6 +1,6 @@
 ---
 title: "consentToDataSharing action"
-description: ""
+description: "Intune Devices Datasharingconsent Consenttodatasharing Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

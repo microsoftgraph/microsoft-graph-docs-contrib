@@ -4,94 +4,55 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = WindowsPhone81GeneralConfiguration()
-request_body.@odata_type = '#microsoft.graph.windowsPhone81GeneralConfiguration'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.description = 'Description value'
+request_body = WindowsPhone81GeneralConfiguration(
+	odata_type = "#microsoft.graph.windowsPhone81GeneralConfiguration",
+	description = "Description value",
+	display_name = "Display Name value",
+	version = 7,
+	apply_only_to_windows_phone81 = True,
+	apps_block_copy_paste = True,
+	bluetooth_blocked = True,
+	camera_blocked = True,
+	cellular_block_wifi_tethering = True,
+	compliant_apps_list = [
+		AppListItem(
+			odata_type = "microsoft.graph.appListItem",
+			name = "Name value",
+			publisher = "Publisher value",
+			app_store_url = "https://example.com/appStoreUrl/",
+			app_id = "App Id value",
+		),
+	]
+	compliant_app_list_type = AppListType.AppsInListCompliant,
+	diagnostic_data_block_submission = True,
+	email_block_adding_accounts = True,
+	location_services_blocked = True,
+	microsoft_account_blocked = True,
+	nfc_blocked = True,
+	password_block_simple = True,
+	password_expiration_days = 6,
+	password_minimum_length = 5,
+	password_minutes_of_inactivity_before_screen_timeout = 14,
+	password_minimum_character_set_count = 0,
+	password_previous_password_block_count = 2,
+	password_sign_in_failure_count_before_factory_reset = 12,
+	password_required_type = RequiredPasswordType.Alphanumeric,
+	password_required = True,
+	screen_capture_blocked = True,
+	storage_block_removable_storage = True,
+	storage_require_encryption = True,
+	web_browser_blocked = True,
+	wifi_blocked = True,
+	wifi_block_automatic_connect_hotspots = True,
+	wifi_block_hotspot_reporting = True,
+	windows_store_blocked = True,
+)
 
-request_body.display_name = 'Display Name value'
-
-request_body.Version = 7
-
-request_body.apply_only_to_windows_phone81 = True
-
-request_body.apps_block_copy_paste = True
-
-request_body.bluetooth_blocked = True
-
-request_body.camera_blocked = True
-
-request_body.cellular_block_wifi_tethering = True
-
-compliant_apps_list_app_list_item1 = AppListItem()
-compliant_apps_list_app_list_item1.@odata_type = 'microsoft.graph.appListItem'
-
-compliant_apps_list_app_list_item1.name = 'Name value'
-
-compliant_apps_list_app_list_item1.publisher = 'Publisher value'
-
-compliant_apps_list_app_list_item1.app_store_url = 'https://example.com/appStoreUrl/'
-
-compliant_apps_list_app_list_item1.app_id = 'App Id value'
-
-
-compliantAppsListArray []= compliantAppsListAppListItem1;
-request_body.compliantappslist(compliantAppsListArray)
-
-
-request_body.compliantapplisttype(AppListType.AppsInListCompliant('applisttype.appsinlistcompliant'))
-
-request_body.diagnostic_data_block_submission = True
-
-request_body.email_block_adding_accounts = True
-
-request_body.location_services_blocked = True
-
-request_body.microsoft_account_blocked = True
-
-request_body.nfc_blocked = True
-
-request_body.password_block_simple = True
-
-request_body.PasswordExpirationDays = 6
-
-request_body.PasswordMinimumLength = 5
-
-request_body.PasswordMinutesOfInactivityBeforeScreenTimeout = 14
-
-request_body.PasswordMinimumCharacterSetCount = 0
-
-request_body.PasswordPreviousPasswordBlockCount = 2
-
-request_body.PasswordSignInFailureCountBeforeFactoryReset = 12
-
-request_body.passwordrequiredtype(RequiredPasswordType.Alphanumeric('requiredpasswordtype.alphanumeric'))
-
-request_body.password_required = True
-
-request_body.screen_capture_blocked = True
-
-request_body.storage_block_removable_storage = True
-
-request_body.storage_require_encryption = True
-
-request_body.web_browser_blocked = True
-
-request_body.wifi_blocked = True
-
-request_body.wifi_block_automatic_connect_hotspots = True
-
-request_body.wifi_block_hotspot_reporting = True
-
-request_body.windows_store_blocked = True
-
-
-
-
-result = await client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(body = request_body)
 
 
 ```

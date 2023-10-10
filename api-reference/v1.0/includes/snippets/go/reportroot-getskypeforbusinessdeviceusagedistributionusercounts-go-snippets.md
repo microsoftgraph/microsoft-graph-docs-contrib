@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Reports().GetSkypeForBusinessDeviceUsageDistributionUserCounts(period='{period}')().Get(context.Background(), nil)
+period := "{period}"
+graphClient.Reports().GetSkypeForBusinessDeviceUsageDistributionUserCountsWithPeriod(&period).Get(context.Background(), nil)
 
 
 ```

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Create a new reply to a [chatMessage](../resources/chatmessage.md) in a specified [channel](../resources/channel.md).
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -14,6 +14,8 @@ Retrieve the properties and relationships of [riskyServicePrincipal](../resource
 
 >**Note:** Using the riskyServicePrincipals API requires an Entra Workload Identity Premium license.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -22,6 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|IdentityRiskyServicePrincipal.Read.All, IdentityRiskyServicePrincipal.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|IdentityRiskyServicePrincipal.Read.All, IdentityRiskyServicePrincipal.ReadWrite.All|
+
+[!INCLUDE [rbac-identity-protection-apis-write](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-write.md)]
 
 ## HTTP request
 

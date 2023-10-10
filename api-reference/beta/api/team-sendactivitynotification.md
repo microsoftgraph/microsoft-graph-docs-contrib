@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 Send an activity feed notification in the scope of a team. For more details about sending notifications and the requirements for doing so, see
 [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -80,7 +82,7 @@ This example shows how you can send an activity feed notification for a team. Th
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_for_team"
+  "name": "team_sendactivitynotification_for_team_beta_e1"
 }
 -->
 ``` http
@@ -110,35 +112,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-for-team-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-for-team-beta-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/team-sendactivitynotification-for-team-beta-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-for-team-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-for-team-beta-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-for-team-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-for-team-beta-e1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-for-team-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-for-team-beta-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-for-team-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-for-team-beta-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-for-team-beta-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/team-sendactivitynotification-for-team-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/team-sendactivitynotification-for-team-beta-e1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -162,7 +164,7 @@ Similar to the previous example, this example uses `entityUrl` for the `topic`. 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_entityurl_topic"
+  "name": "team_sendactivitynotification_entityurl_topic_beta_e1"
 }
 -->
 ``` http
@@ -196,35 +198,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-entityurl-topic-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-entityurl-topic-beta-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/team-sendactivitynotification-entityurl-topic-beta-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-entityurl-topic-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-entityurl-topic-beta-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-entityurl-topic-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-entityurl-topic-beta-e1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-entityurl-topic-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-entityurl-topic-beta-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-entityurl-topic-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-entityurl-topic-beta-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-entityurl-topic-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-entityurl-topic-beta-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/team-sendactivitynotification-entityurl-topic-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/team-sendactivitynotification-entityurl-topic-beta-e1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -249,7 +251,7 @@ Similar to the previous example, this example uses `entityUrl` for the `topic`. 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_upn"
+  "name": "team_sendactivitynotification_upn_beta_e3"
 }
 -->
 ``` http
@@ -283,35 +285,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-upn-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-upn-beta-e3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/team-sendactivitynotification-upn-beta-e3-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-upn-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-upn-beta-e3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-upn-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-upn-beta-e3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-upn-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-upn-beta-e3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-upn-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-upn-beta-e3-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-upn-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-upn-beta-e3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/team-sendactivitynotification-upn-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/team-sendactivitynotification-upn-beta-e3-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -335,7 +337,7 @@ As seen in the previous examples, you can link to different aspects of the team.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_set_topicsource_to_text"
+  "name": "team_sendactivitynotification_set_topicsource_to_text_beta_e4"
 }
 -->
 ``` http
@@ -366,35 +368,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-set-topicsource-to-text-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-set-topicsource-to-text-beta-e4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/team-sendactivitynotification-set-topicsource-to-text-beta-e4-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-set-topicsource-to-text-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-set-topicsource-to-text-beta-e4-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-set-topicsource-to-text-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-set-topicsource-to-text-beta-e4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-set-topicsource-to-text-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-set-topicsource-to-text-beta-e4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-set-topicsource-to-text-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-set-topicsource-to-text-beta-e4-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-set-topicsource-to-text-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-set-topicsource-to-text-beta-e4-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/team-sendactivitynotification-set-topicsource-to-text-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/team-sendactivitynotification-set-topicsource-to-text-beta-e4-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -422,7 +424,7 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_pending_fin_approve"
+  "name": "team_sendactivitynotification_pending_fin_approve_beta_e5"
 }
 -->
 
@@ -453,35 +455,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-pending-fin-approve-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-pending-fin-approve-beta-e5-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/team-sendactivitynotification-pending-fin-approve-beta-e5-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-pending-fin-approve-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-pending-fin-approve-beta-e5-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-pending-fin-approve-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-pending-fin-approve-beta-e5-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-pending-fin-approve-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-pending-fin-approve-beta-e5-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-pending-fin-approve-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-pending-fin-approve-beta-e5-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-pending-fin-approve-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-pending-fin-approve-beta-e5-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/team-sendactivitynotification-pending-fin-approve-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/team-sendactivitynotification-pending-fin-approve-beta-e5-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -510,7 +512,7 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_6"
+  "name": "team_sendactivitynotification_beta_e6"
 }
 -->
 
@@ -542,35 +544,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-6-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-beta-e6-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/team-sendactivitynotification-beta-e6-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-6-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-beta-e6-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-6-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-beta-e6-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-6-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-beta-e6-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-6-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-beta-e6-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-6-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-beta-e6-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/team-sendactivitynotification-6-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/team-sendactivitynotification-beta-e6-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -600,7 +602,7 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "team_sendactivitynotification_7"
+  "name": "team_sendactivitynotification_beta_e7"
 }
 -->
 
@@ -635,35 +637,35 @@ Content-Type: application/json
 ```
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-7-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/team-sendactivitynotification-beta-e7-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [sample-code](../includes/snippets/cli/team-sendactivitynotification-7-cli-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/team-sendactivitynotification-beta-e7-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-7-go-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/go/team-sendactivitynotification-beta-e7-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-7-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/team-sendactivitynotification-beta-e7-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-7-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/team-sendactivitynotification-beta-e7-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-7-php-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/php/team-sendactivitynotification-beta-e7-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-7-powershell-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/team-sendactivitynotification-beta-e7-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/team-sendactivitynotification-7-python-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/python/team-sendactivitynotification-beta-e7-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

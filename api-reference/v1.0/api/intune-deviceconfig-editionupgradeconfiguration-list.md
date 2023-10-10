@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 [!INCLUDE [sample-code](../includes/snippets/php/intune-deviceconfig-editionupgradeconfiguration-list-list-editionupgradeconfigurations-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-editionupgradeconfiguration-list-list-editionupgradeconfigurations-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-editionupgradeconfiguration-list-list-editionupgradeconfigurations-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

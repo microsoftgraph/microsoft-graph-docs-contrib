@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Reports().GetOffice365GroupsActivityCounts(period='{period}')().Get(context.Background(), nil)
+period := "{period}"
+graphClient.Reports().GetOffice365GroupsActivityCountsWithPeriod(&period).Get(context.Background(), nil)
 
 
 ```

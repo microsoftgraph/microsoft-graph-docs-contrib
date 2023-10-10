@@ -100,6 +100,10 @@ Content-length: 193
 [!INCLUDE [sample-code](../includes/snippets/php/intune-books-iosvppebookassignment-update-update-iosvppebookassignment-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-books-iosvppebookassignment-update-update-iosvppebookassignment-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-books-iosvppebookassignment-update-update-iosvppebookassignment-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

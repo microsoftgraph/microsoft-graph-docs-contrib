@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: The listItemVersion resource represents a previous version of a ListItem resource.
 ms.date: 09/17/2017
 title: ListItemVersion

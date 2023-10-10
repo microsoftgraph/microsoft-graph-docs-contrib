@@ -44,19 +44,19 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |fields|WorkbookSortField collection|The list of conditions to sort on.|
-|matchCase|boolean|Optional. Whether to have the casing impact string ordering.|
+|matchCase|boolean|Optional. Whether to have the casing determine string ordering.|
 |hasHeaders|boolean|Optional. Whether the range has a header.|
 |orientation|string|Optional. Whether the operation is sorting rows or columns.  The possible values are: `Rows`, `Columns`.|
 |method|string|Optional. The ordering method used for Chinese characters.  The possible values are: `PinYin`, `StrokeCount`.|
 
 ## Response
 
-If successful, this method returns `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns `200 OK` response code. It doesn't return anything in the response body.
 
 ## Example
-Here is an example of how to call this API.
+Here's an example of how to call this API.
 ##### Request
-Here is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +99,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. 
+Here's an example of the response. 
 <!-- {
   "blockType": "response"
 } -->

@@ -2,7 +2,7 @@
 title: "outlookUser: supportedLanguages"
 description: "Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server."
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -13,9 +13,11 @@ Namespace: microsoft.graph
 
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
 
-When setting up an Outlook client, the user selects the preferred language from this supported list. You can subsequently get the preferred language by 
+When setting up an Outlook client, the user selects the preferred language from this supported list. You can subsequently get the preferred language by
 [getting the user's mailbox settings](user-get-mailboxsettings.md).
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -93,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/me/outlook/supportedLanguages
 ---
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

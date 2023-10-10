@@ -4,25 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = EducationAssignmentResource()
-request_body.distribute_for_student_work = False
+graph_client = GraphServiceClient(request_adapter)
 
-resource = EducationMediaResource()
-resource.@odata_type = 'microsoft.graph.educationMediaResource'
+request_body = EducationAssignmentResource(
+	distribute_for_student_work = False,
+	resource = EducationMediaResource(
+		odata_type = "microsoft.graph.educationMediaResource",
+		display_name = "homework example.PNG",
+		file_url = "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RMUWOKAGSJZ6BHINJVKNMOOJABF",
+	),
+)
 
-resource.display_name = 'homework example.PNG'
-
-resource.file_url = 'https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXoOOmEQNO79QpIMPdOmY3nf/items/01QTY63RMUWOKAGSJZ6BHINJVKNMOOJABF'
-
-
-request_body.resource = resource
-
-
-
-result = await client.education.classes.by_classe_id('educationClass-id').assignments.by_assignment_id('educationAssignment-id').resources.post(request_body = request_body)
+result = await graph_client.education.classes.by_classe_id('educationClass-id').assignments.by_assignment_id('educationAssignment-id').resources.post(body = request_body)
 
 
 ```

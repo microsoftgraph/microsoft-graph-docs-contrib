@@ -1595,6 +1595,32 @@
         "SubArea": "Identity and access reports"
     },
     {
+      "ChangeList": [
+        {
+          "Id": "b6aab1b1-6ba2-470c-85e6-a5b700bca26b",
+          "ApiChange": "Property",
+          "ChangedApiName": "federatedTokenId",
+          "ChangeType": "Addition",
+          "Description": "Added the `federatedTokenId` property to the [managedIdentity](https://learn.microsoft.com/en-us/graph/api/resources/managedIdentity?view=graph-rest-beta) resource.",
+          "Target": "managedIdentity"
+        },
+        {
+          "Id": "b6aab1b1-6ba2-470c-85e6-a5b700bca26b",
+          "ApiChange": "Property",
+          "ChangedApiName": "federatedTokenIssuer",
+          "ChangeType": "Addition",
+          "Description": "Added the `federatedTokenIssuer` property to the [managedIdentity](https://learn.microsoft.com/en-us/graph/api/resources/managedIdentity?view=graph-rest-beta) resource.",
+          "Target": "managedIdentity"
+        }
+      ],
+      "Id": "b6aab1b1-6ba2-470c-85e6-a5b700bca26b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-18T18:27:41.0670841Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
          "ChangeList":[
             {
                "Id":"c5972090-4edc-11eb-ae35-ed470c456b69",
@@ -2610,6 +2636,114 @@
       "Version": "v1.0",
       "CreatedDateTime": "2023-06-27T06:15:25.4854828Z",
       "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+     {
+      "ChangeList": [
+        {
+          "Id": "8f1f41d8-67e6-4a33-894c-2071e68e72f0",
+          "ApiChange": "Member",
+          "ChangedApiName": "authenticationFlows",
+          "ChangeType": "Addition",
+          "Description": "Added the `authenticationFlows` member to the **conditionalAccessConditions** enumeration.",
+          "Target": "conditionalAccessConditions"
+        },
+        {
+          "Id": "8f1f41d8-67e6-4a33-894c-2071e68e72f0",
+          "ApiChange": "Member",
+          "ChangedApiName": "insiderRisk",
+          "ChangeType": "Addition",
+          "Description": "Added the `insiderRisk` member to the **conditionalAccessConditions** enumeration.",
+          "Target": "conditionalAccessConditions"
+        },
+        {
+          "Id": "8f1f41d8-67e6-4a33-894c-2071e68e72f0",
+          "ApiChange": "Member",
+          "ChangedApiName": "deviceCodeFlow",
+          "ChangeType": "Addition",
+          "Description": "Added the `deviceCodeFlow` member to the **conditionalAccessRule** enumeration.",
+          "Target": "conditionalAccessRule"
+        },
+        {
+          "Id": "8f1f41d8-67e6-4a33-894c-2071e68e72f0",
+          "ApiChange": "Member",
+          "ChangedApiName": "authenticationTransfer",
+          "ChangeType": "Addition",
+          "Description": "Added the `authenticationTransfer` member to the **conditionalAccessRule** enumeration.",
+          "Target": "conditionalAccessRule"
+        },
+        {
+          "Id": "8f1f41d8-67e6-4a33-894c-2071e68e72f0",
+          "ApiChange": "Member",
+          "ChangedApiName": "insiderRisk",
+          "ChangeType": "Addition",
+          "Description": "Added the `insiderRisk` member to the **conditionalAccessRule** enumeration.",
+          "Target": "conditionalAccessRule"
+        },
+        {
+          "Id": "8f1f41d8-67e6-4a33-894c-2071e68e72f0",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "originalTransferMethods",
+          "ChangeType": "Addition",
+          "Description": "Added the **originalTransferMethods** enumeration type.",
+          "Target": "originalTransferMethods"
+        },
+        {
+          "Id": "8f1f41d8-67e6-4a33-894c-2071e68e72f0",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "tokenProtectionStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **tokenProtectionStatus** enumeration type.",
+          "Target": "tokenProtectionStatus"
+        },
+        {
+          "Id": "8f1f41d8-67e6-4a33-894c-2071e68e72f0",
+          "ApiChange": "Property",
+          "ChangedApiName": "originalTransferMethod",
+          "ChangeType": "Addition",
+          "Description": "Added the **originalTransferMethod** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        },
+        {
+          "Id": "8f1f41d8-67e6-4a33-894c-2071e68e72f0",
+          "ApiChange": "Property",
+          "ChangedApiName": "signInTokenProtectionStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **signInTokenProtectionStatus** property to the [signIn](https://learn.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+          "Target": "signIn"
+        }
+      ],
+      "Id": "8f1f41d8-67e6-4a33-894c-2071e68e72f0",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-25T00:05:07.5076393Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "73f50762-7b32-4890-a27f-1a2ec54482f6",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "releaseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **releaseType** enumeration type.",
+          "Target": "releaseType"
+        },
+        {
+          "Id": "73f50762-7b32-4890-a27f-1a2ec54482f6",
+          "ApiChange": "Property",
+          "ChangedApiName": "releaseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **releaseType** property to the [recommendationBase](https://learn.microsoft.com/en-us/graph/api/resources/recommendationBase?view=graph-rest-beta) resource.",
+          "Target": "recommendationBase"
+        }
+      ],
+      "Id": "73f50762-7b32-4890-a27f-1a2ec54482f6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-31T19:58:45.348003Z",
+      "WorkloadArea": "Reports and audit",
       "SubArea": "Identity and access reports"
     }
   ]

@@ -20,6 +20,8 @@ applying [state tokens](/graph/delta-query-overview) in one or more of these cal
 you can query for incremental changes in the contact folders. This allows you to maintain and synchronize 
 a local store of a user's contact folders without having to fetch all the contact folders of that mailbox from the server every time.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -92,6 +94,10 @@ GET https://graph.microsoft.com/beta/me/contactFolders/delta
 
 Prefer: odata.maxpagesize=2
 ```
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/contactfolder-delta-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/contactfolder-delta-javascript-snippets.md)]

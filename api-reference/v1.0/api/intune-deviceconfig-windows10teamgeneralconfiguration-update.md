@@ -146,6 +146,10 @@ Content-length: 1150
 [!INCLUDE [sample-code](../includes/snippets/powershell/intune-deviceconfig-windows10teamgeneralconfiguration-update-update-windows10teamgeneralconfiguration-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/intune-deviceconfig-windows10teamgeneralconfiguration-update-update-windows10teamgeneralconfiguration-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response

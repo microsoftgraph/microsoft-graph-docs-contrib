@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 <?php
 
-// THIS SNIPPET IS A PREVIEW FOR THE KIOTA BASED SDK. NON-PRODUCTION USE ONLY
+// THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestConfiguration = new DeltaRequestBuilderGetRequestConfiguration();
@@ -15,7 +15,6 @@ $queryParameters->deltatoken = "oEcOySpF_hWYmTIUZBOIfPzcwisr_rPe8o9M54L45qEXQGmv
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->users()->delta()->get($requestConfiguration);
-
+$result = $graphServiceClient->users()->delta()->get($requestConfiguration)->wait();
 
 ```

@@ -28,18 +28,25 @@ GET /me/drive/items/{id}/workbook/worksheets/{id}/range(address={address})/visib
 GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range(address={address})/visibleView/itemAt(index={n})
 
 ```
+
+## Function parameters
+
+The following table shows the parameters that can be used with this function.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|index|Int32|Index value of the object to be retrieved. Zero-indexed.|
+
 ## Request headers
+
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
-## Function parameters
-In the request URL, provide following query parameters with values.
+## Request body
 
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|index|Int32|Index of the item to be returned.|
+Do not supply a request body for this method.
 
 ## Response
 

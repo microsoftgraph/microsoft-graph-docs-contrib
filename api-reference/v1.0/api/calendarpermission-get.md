@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get the specified permissions object of a user or group calendar that has been shared.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 Depending on the type of calendar that the event is in and the permission type (delegated or application) requested, one of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -98,6 +100,10 @@ GET https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/{id
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-calendarpermission-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-calendarpermission-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -17,6 +17,8 @@ This operation returns only the **id** and **displayName** of each Microsoft Boo
 
 > **Note:** Results are limited to 500 mailboxes. Pagination of the results is not currently supported.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,7 +37,7 @@ GET /solutions/bookingBusinesses
 
 ## Optional query parameters
 
-This method supports the `$count` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$count` [OData query parameter](/graph/query-parameters) to help customize the response.
 
 This method also supports the `query` parameter which accepts a string value. This parameter limits the GET results to businesses that match the specified string. For more details, see [Example 2](#example-2-use-query-to-get-one-or-more-matching-bookings-businesses-in-a-tenant).
 
@@ -95,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/bookingbusinesslist-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

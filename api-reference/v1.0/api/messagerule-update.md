@@ -1,7 +1,7 @@
 ---
 title: "Update rule"
 description: "Change writable properties on a messageRule object and save the changes."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 
 Change writable properties on a [messageRule](../resources/messagerule.md) object and save the changes.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +38,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/inbox/messageRules/{id}
 
 
 ## Request body
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will 
+In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will
 maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
@@ -54,8 +56,8 @@ maintain their previous values or be recalculated based on changes to other prop
 If successful, this method returns a `200 OK` response code and updated [messageRule](../resources/messagerule.md) object in the response body.
 ## Example
 ##### Request
-The following example changes the name of the rule, and the actions to be taken for that rule in the 
-[example](messagerule-get.md#example) in [Get rule](messagerule-get.md), from forwarding to an address to marking its importance as high. 
+The following example changes the name of the rule, and the actions to be taken for that rule in the
+[example](messagerule-get.md#example) in [Get rule](messagerule-get.md), from forwarding to an address to marking its importance as high.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -72,7 +74,7 @@ Content-type: application/json
     "actions": {
         "markImportance": "high"
      }
-} 
+}
 ```
 
 # [C#](#tab/csharp)
@@ -97,6 +99,10 @@ Content-type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-messagerule-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-messagerule-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

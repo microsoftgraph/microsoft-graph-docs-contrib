@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Update the properties of [place](../resources/place.md) object, which can be a [room](../resources/room.md), [workspace](../resources/workspace.md), or [roomList](../resources/roomlist.md). You can identify the **room**, **workspace**, or **roomList** by specifying the **id** or **emailAddress** property.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,7 +44,7 @@ PATCH /places/{id | emailAddress}
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Only one instance of a place resource (**room**, **workspace**, or **roomList**) can be updated at a time. In the request body, use `@odata.type` to specify the type of place, and include the properties of that type to update. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Only one instance of a place resource (**room**, **workspace**, or **roomList**) can be updated at a time. In the request body, use `@odata.type` to specify the type of place, and include the properties of that type to update. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 >**Note**: You cannot use this API to update the **id**, **emailAddress**, **displayName**, or **bookingType** of a [place](../resources/place.md) object.  
 
@@ -99,6 +101,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-room-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-room-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -209,6 +215,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-workspace-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-workspace-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -322,6 +332,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-roomlist-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-roomlist-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

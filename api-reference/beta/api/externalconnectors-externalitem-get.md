@@ -15,7 +15,9 @@ Namespace: microsoft.graph.externalConnectors
 
 Get the properties and relationships of an [externalitem](../resources/externalconnectors-externalitem.md) object.
 
-This API is provided for diagnostic purposes only. It is not intended to be used for any other purpose. Repeated requests to this API might result in `429` HTTP errors.
+This API is provided for diagnostic purposes only. It isn't intended to be used for any other purpose. Repeated requests to this API might result in `429` HTTP errors.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -44,7 +46,7 @@ GET /external/connections/{connection-id}/items/{item-id}
 
 ## Optional query parameters
 
-This method does not support optional query parameters to customize the response.
+This method doesn't support optional query parameters to customize the response.
 
 ## Request headers
 
@@ -54,7 +56,7 @@ This method does not support optional query parameters to customize the response
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -64,7 +66,7 @@ If successful, this method returns a `200 OK` response code and an [externalItem
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -80,6 +82,10 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-externalitem-e1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-externalitem-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -112,7 +118,7 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/items/TSP228
 ### Response
 <!-- markdownlint-enable MD024 -->
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

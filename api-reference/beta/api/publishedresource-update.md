@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of publishedresource  [publishedResource](../resources/publishedresource.md) object.
+Update the properties of published resource  [publishedResource](../resources/publishedresource.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}
+PATCH /onPremisesPublishingProfiles/{profile-id}/publishedResources/{resource-id}
 ```
 
 ## Request headers
@@ -41,7 +43,7 @@ PATCH /onPremisesPublishingProfiles/{publishingType}/publishedResources/{id1}
 
 ## Request body
 
-In the request body, supply the values for relevant fields to update. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields to update. Existing properties that aren't included in the request body maintains their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 The following table lists the properties that can be updated.
 
@@ -57,7 +59,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -75,6 +77,10 @@ PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-publishedresource-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-publishedresource-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -101,7 +107,7 @@ PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning
 
 ### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

@@ -1,7 +1,7 @@
 ---
 title: "delegatedAdminCustomer resource type"
 description: "Represents a customer who has a delegated admin relationship with a Microsoft partner."
-author: "adtangir"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: resourcePageType
@@ -24,7 +24,7 @@ Represents an Azure AD organization that is a customer of a Microsoft partner an
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|The Azure AD display name of the customer tenant. Read-only. Supports `$orderBy`. |
+|displayName|String|The Azure AD display name of the customer tenant. Read-only. Supports `$orderby`. |
 |id|String|The Azure AD-assigned unique identifier of the customer. Read-only. Inherited from [entity](../resources/entity.md).|
 |tenantId|String|The Azure AD-assigned tenant ID of the customer. Read-only.|
 

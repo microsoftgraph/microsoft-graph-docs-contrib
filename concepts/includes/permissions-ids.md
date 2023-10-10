@@ -3,7 +3,7 @@ author: "FaithOmbongi"
 ms.localizationpriority: high
 ms.prod: "msgraph"
 ms.topic: include
-ms.date: 07/18/2023
+ms.date: 09/08/2023
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
@@ -183,6 +183,8 @@ ms.date: 07/18/2023
 | DelegatedAdminRelationship.Read.All                     | Delegated   | 0c0064ea-477b-4130-82a5-4c2cc4ff68aa |
 | DelegatedAdminRelationship.ReadWrite.All                | Application | cc13eba4-8cd8-44c6-b4d4-f93237adce58 |
 | DelegatedAdminRelationship.ReadWrite.All                | Delegated   | 885f682f-a990-4bad-a642-36736a74b0c7 |
+| DelegatedPermissionGrant.Read.All                       | Application | 81b4724a-58aa-41c1-8a55-84ef97466587 |
+| DelegatedPermissionGrant.Read.All                       | Delegated   | a197cdc4-a8e8-4d49-9d35-4ca7c83887b4 |
 | DelegatedPermissionGrant.ReadWrite.All                  | Application | 8e8e4742-1d95-4f68-9d56-6ee75648c72a |
 | DelegatedPermissionGrant.ReadWrite.All                  | Delegated   | 41ce6ca6-6826-4807-84f1-1c82854f7ee5 |
 | Device.Command                                          | Delegated   | bac3b9c2-b516-4ef4-bd3b-c2ef73d8d804 |
@@ -248,6 +250,10 @@ ms.date: 07/18/2023
 | EduAssignments.ReadWrite.All                            | Application | 0d22204b-6cad-4dd0-8362-3e3f2ae699d9 |
 | EduAssignments.ReadWriteBasic                           | Delegated   | 2ef770a1-622a-47c4-93ee-28d6adbed3a0 |
 | EduAssignments.ReadWriteBasic.All                       | Application | f431cc63-a2de-48c4-8054-a34bc093af84 |
+| EduCurricula.Read                                       | Delegated   | 484859e8-b9e2-4e92-b910-84db35dadd29 |
+| EduCurricula.Read.All                                   | Application | 6cdb464c-3a03-40f8-900b-4cb7ea1da9c0 |
+| EduCurricula.ReadWrite                                  | Delegated   | 4793c53b-df34-44fd-8d26-d15c517732f5 |
+| EduCurricula.ReadWrite.All                              | Application | 6a0c2318-d59d-4c7d-bf2e-5f3902dc2593 |
 | EduRoster.Read                                          | Delegated   | a4389601-22d9-4096-ac18-36a927199112 |
 | EduRoster.Read.All                                      | Application | e0ac9e1b-cb65-4fc5-87c5-1a8bc181f648 |
 | EduRoster.ReadBasic                                     | Delegated   | 5d186531-d1bf-4f07-8cea-7c42119e1bd9 |
@@ -387,6 +393,12 @@ ms.date: 07/18/2023
 | ManagedTenants.ReadWrite.All                            | Delegated   | b31fa710-c9b3-4d9e-8f5e-8036eecddab9 |
 | Member.Read.Hidden                                      | Application | 658aa5d8-239f-45c4-aa12-864f4fc7e490 |
 | Member.Read.Hidden                                      | Delegated   | f6a3db3e-f7e8-4ed2-a414-557c8c9830be |
+| MultiTenantOrganization.Read.All                        | Application | 4f994bc0-31bb-44bb-b480-7a7c1be8c02e |
+| MultiTenantOrganization.Read.All                        | Delegated   | 526aa72a-5878-49fe-bf4e-357973af9b06 |
+| MultiTenantOrganization.ReadBasic.All                   | Application | f9c2b2a7-3895-4b2e-80f6-c924b456e50b |
+| MultiTenantOrganization.ReadBasic.All                   | Delegated   | 225db56b-15b2-4daa-acb3-0eec2bbe4849 |
+| MultiTenantOrganization.ReadWrite.All                   | Application | 920def01-ca61-4d2d-b3df-105b46046a70 |
+| MultiTenantOrganization.ReadWrite.All                   | Delegated   | 77af1528-84f3-4023-8d90-d219cd433108 |
 | NetworkAccessBranch.Read.All                            | Application | 39ae4a24-1ef0-49e8-9d63-2a66f5c39edd |
 | NetworkAccessBranch.Read.All                            | Delegated   | 4051c7fc-b429-4804-8d80-8f1f8c24a6f7 |
 | NetworkAccessBranch.ReadWrite.All                       | Application | 8137102d-ec16-4191-aaf8-7aeda8026183 |
@@ -553,13 +565,13 @@ ms.date: 07/18/2023
 | RecordsManagement.Read.All                              | Delegated   | 07f995eb-fc67-4522-ad66-2b8ca8ea3efd |
 | RecordsManagement.ReadWrite.All                         | Application | eb158f57-df43-4751-8b21-b8932adb3d34 |
 | RecordsManagement.ReadWrite.All                         | Delegated   | f2833d75-a4e6-40ab-86d4-6dfe73c97605 |
+| Reports.Read.All                                        | Application | 230c1aed-a721-4c5d-9cb4-a90514e508ef |
+| Reports.Read.All                                        | Delegated   | 02e97553-ed7b-43d0-ab3c-f8bace0d040c |
 | ReportSettings.Read.All                                 | Application | ee353f83-55ef-4b78-82da-555bfa2b4b95 |
 | ReportSettings.Read.All                                 | Delegated   | 84fac5f4-33a9-4100-aa38-a20c6d29e5e7 |
 | ReportSettings.ReadWrite.All                            | Application | 2a60023f-3219-47ad-baa4-40e17cd02a1d |
 | ReportSettings.ReadWrite.All                            | Delegated   | b955410e-7715-4a88-a940-dfd551018df3 |
-| Reports.Read.All                                        | Application | 230c1aed-a721-4c5d-9cb4-a90514e508ef |
-| Reports.Read.All                                        | Delegated   | 02e97553-ed7b-43d0-ab3c-f8bace0d040c |
-| ResourceSpecificPermissionGrant.ReadForUser             | Delegated   | f1d91a8f-88e7-4774-8401-b668d5bca0c5 |
+| ResourceSpecificPermissionGrant.ReadForUser             | Delegated   | 83834009-f9ec-40f2-a2aa-78aeabb74eed |
 | ResourceSpecificPermissionGrant.ReadForUser.All         | Application | acfca4d5-f49f-40ed-9648-84068b474c73 |
 | RoleAssignmentSchedule.Read.Directory                   | Application | d5fe8ce8-684c-4c83-a52c-46e882ce4be1 |
 | RoleAssignmentSchedule.Read.Directory                   | Delegated   | 344a729c-0285-42c6-9014-f12b9b8d6129 |
@@ -691,13 +703,13 @@ ms.date: 07/18/2023
 | TeamsAppInstallation.ReadWriteAndConsentForChat.All     | Application | 6e74eff9-4a21-45d6-bc03-3a20f61f8281 |
 | TeamsAppInstallation.ReadWriteAndConsentForTeam         | Delegated   | 946349d5-2a9d-4535-abc0-7beeacaedd1d |
 | TeamsAppInstallation.ReadWriteAndConsentForTeam.All     | Application | b0c13be0-8e20-4bc5-8c55-963c23a39ce9 |
-| TeamsAppInstallation.ReadWriteAndConsentForUser         | Delegated   | 2da62c49-dfbd-40df-ba16-fef3529d391c |
+| TeamsAppInstallation.ReadWriteAndConsentForUser         | Delegated   | 0688cf9a-12d9-4fa7-8d77-40aca89d08d8 |
 | TeamsAppInstallation.ReadWriteAndConsentForUser.All     | Application | 32ca478f-f89e-41d0-aaf8-101deb7da510 |
 | TeamsAppInstallation.ReadWriteAndConsentSelfForChat     | Delegated   | a0e0e18b-8fb2-458f-8130-da2d7cab9c75 |
 | TeamsAppInstallation.ReadWriteAndConsentSelfForChat.All | Application | ba1ba90b-2d8f-487e-9f16-80728d85bb5c |
 | TeamsAppInstallation.ReadWriteAndConsentSelfForTeam     | Delegated   | 4a6bbf29-a0e1-4a4d-a7d1-cef17f772975 |
 | TeamsAppInstallation.ReadWriteAndConsentSelfForTeam.All | Application | 1e4be56c-312e-42b8-a2c9-009600d732c0 |
-| TeamsAppInstallation.ReadWriteAndConsentSelfForUser     | Delegated   | 7a349935-c54d-44ab-ab66-1b460d315be7 |
+| TeamsAppInstallation.ReadWriteAndConsentSelfForUser     | Delegated   | 48e2957e-5bb6-4b45-a404-9f0a2b902c40 |
 | TeamsAppInstallation.ReadWriteAndConsentSelfForUser.All | Application | a87076cf-6abd-4e56-8559-4dbdf41bef96 |
 | TeamsAppInstallation.ReadWriteForChat                   | Delegated   | aa85bf13-d771-4d5d-a9e6-bca04ce44edf |
 | TeamsAppInstallation.ReadWriteForChat.All               | Application | 9e19bae1-2623-4c4f-ab6e-2664615ff9a0 |

@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "This resource provides information on the status of a asynchronous job progress."
 ms.date: 09/10/2017
 title: AsyncJobStatus

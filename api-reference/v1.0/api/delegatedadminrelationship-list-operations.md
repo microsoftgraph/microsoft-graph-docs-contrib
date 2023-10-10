@@ -1,7 +1,7 @@
 ---
 title: "List operations"
 description: "Get a list of the delegatedAdminRelationshipOperation objects and their properties."
-author: "koravva"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: apiPageType
@@ -11,6 +11,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get a list of the [delegatedAdminRelationshipOperation](../resources/delegatedadminrelationshipoperation.md) objects and their properties.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

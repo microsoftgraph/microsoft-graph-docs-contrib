@@ -4,24 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = LocalizedNotificationMessage()
-request_body.@odata_type = '#microsoft.graph.localizedNotificationMessage'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.locale = 'Locale value'
+request_body = LocalizedNotificationMessage(
+	odata_type = "#microsoft.graph.localizedNotificationMessage",
+	locale = "Locale value",
+	subject = "Subject value",
+	message_template = "Message Template value",
+	is_default = True,
+)
 
-request_body.subject = 'Subject value'
-
-request_body.message_template = 'Message Template value'
-
-request_body.is_default = True
-
-
-
-
-result = await client.device_management.notification_message_templates.by_notification_message_template_id('notificationMessageTemplate-id').localized_notification_messages.post(request_body = request_body)
+result = await graph_client.device_management.notification_message_templates.by_notification_message_template_id('notificationMessageTemplate-id').localized_notification_messages.post(body = request_body)
 
 
 ```

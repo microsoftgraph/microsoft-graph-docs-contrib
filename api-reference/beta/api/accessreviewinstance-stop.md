@@ -17,6 +17,8 @@ Stop a currently active [accessReviewInstance](../resources/accessreviewinstance
 
 Stopping an instance will not effect future instances. To prevent a recurring access review from starting future instances, [update the schedule definition](accessreviewscheduledefinition-update.md) to change its scheduled end date.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -25,6 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)     | AccessReview.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported.|
 |Application                            | AccessReview.ReadWrite.All |
+
+[!INCLUDE [rbac-access-reviews-apis-write](../includes/rbac-for-apis/rbac-access-reviews-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -58,6 +62,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 [!INCLUDE [sample-code](../includes/snippets/csharp/stop-accessreviewinstance-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/stop-accessreviewinstance-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/stop-accessreviewinstance-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -72,6 +80,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitio
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/stop-accessreviewinstance-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/stop-accessreviewinstance-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

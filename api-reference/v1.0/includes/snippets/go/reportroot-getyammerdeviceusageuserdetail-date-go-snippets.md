@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Reports().GetYammerDeviceUsageUserDetail(date={date})().Get(context.Background(), nil)
+date := {date}
+graphClient.Reports().GetYammerDeviceUsageUserDetailWithDate(&date).Get(context.Background(), nil)
 
 
 ```

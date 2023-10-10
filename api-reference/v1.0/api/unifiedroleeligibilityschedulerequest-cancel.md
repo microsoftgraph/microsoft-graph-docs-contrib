@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Immediately cancel a unifiedRoleEligibilityScheduleRequest object whose status is `Granted` and have the system automatically delete the cancelled request after 30 days. After calling this action, the **status** of the cancelled **unifiedRoleEligibilityScheduleRequest** changes to `Revoked`.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -19,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory	|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|RoleManagement.ReadWrite.Directory |
+|Application|RoleEligibilitySchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory |
 
 ## HTTP request
 

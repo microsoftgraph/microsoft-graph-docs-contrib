@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Reset any changes made to the default configuration in a cross-tenant access policy back to the system default.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

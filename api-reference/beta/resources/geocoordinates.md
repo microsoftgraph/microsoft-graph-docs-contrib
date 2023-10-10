@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "The geoCoordinates resource provides geographic coordinates and elevation of a location based on metadata contained within the file."
 ms.date: 09/10/2017
 title: GeoCoordinates

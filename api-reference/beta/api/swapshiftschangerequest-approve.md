@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Approve a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.
 
+>**Note:** Only the recipient of the request can approve a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md).
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,7 +53,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -106,5 +108,3 @@ HTTP/1.1 204 NO CONTENT
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

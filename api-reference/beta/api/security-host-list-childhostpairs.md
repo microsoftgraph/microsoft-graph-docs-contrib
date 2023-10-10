@@ -14,7 +14,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get the list of [hostPair](../resources/security-hostpair.md) resources associated with a host, where that host is the *parent* and has an outgoing pairing to a *child*. 
+Get the list of [hostPair](../resources/security-hostpair.md) resources associated with a specified host, where that host is the *parent* and has an outgoing pairing to a *child*.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -31,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET threatIntelligence/hosts/{hostId}/childHostPairs
+GET /security/threatIntelligence/hosts/{hostId}/childHostPairs
 ```
 
 ## Optional query parameters
@@ -66,7 +68,7 @@ The following properties can be used for `$select` calls.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method. 
+Do not supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.hostPair](../resources/security-hostpair.md) objects in the response body.
@@ -90,6 +92,10 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.c
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-childhostpair-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-childhostpair-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-childhostpair-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -104,6 +110,10 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.c
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-childhostpair-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-childhostpair-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

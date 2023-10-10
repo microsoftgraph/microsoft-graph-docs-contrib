@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [cross-tenant access policy](../resources/crosstenantaccesspolicy.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -55,7 +57,7 @@ PATCH /policies/crossTenantAccessPolicy
 
 If successful, this method returns a `204 No Content` response code.
 
-The [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) object size is currently limited to 25KB. This method will return a `400 Bad Request` error code if the size of the policy will exceed 25KB.
+The [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) object size is currently limited to 25 KB. This method returns a `400 Bad Request` error code if the size of the policy exceeds 25 KB.
 
 ## Examples
 
@@ -79,6 +81,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-crosstenantaccesspolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-crosstenantaccesspolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

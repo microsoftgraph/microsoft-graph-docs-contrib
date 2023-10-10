@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: List the contents of a folder
 ms.localizationpriority: high
@@ -15,6 +15,8 @@ Return a collection of [DriveItems](../resources/driveitem.md) in the **children
 
 DriveItems with a non-null **folder** or **package** facet can have one or more child DriveItems.
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -155,8 +157,8 @@ GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 If successful, this method returns the list of items in the children collection of the target item.
 The children collection will be composed of [driveItem][item-resource] resources.
 
-<!-- { "blockType": "response", 
-       "@odata.type": "Collection(microsoft.graph.driveItem)", 
+<!-- { "blockType": "response",
+       "@odata.type": "Collection(microsoft.graph.driveItem)",
        "truncated": true,
        "name": [ "list-children-root", "list-children-files", "list-children-from-path" ] } -->
 

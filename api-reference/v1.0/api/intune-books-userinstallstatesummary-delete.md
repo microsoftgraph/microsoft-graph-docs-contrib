@@ -80,6 +80,10 @@ DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/managedEBooks/{manag
 [!INCLUDE [sample-code](../includes/snippets/php/intune-books-userinstallstatesummary-delete-delete-userinstallstatesummary-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-books-userinstallstatesummary-delete-delete-userinstallstatesummary-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-books-userinstallstatesummary-delete-delete-userinstallstatesummary-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
