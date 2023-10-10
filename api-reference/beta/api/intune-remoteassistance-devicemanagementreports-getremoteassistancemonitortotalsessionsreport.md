@@ -1,6 +1,6 @@
 ---
 title: "getRemoteAssistanceMonitorTotalSessionsReport action"
-description: ""
+description: "Intune Remoteassistance Devicemanagementreports Getremoteassistancemonitortotalsessionsreport Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

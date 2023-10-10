@@ -1,6 +1,6 @@
 ---
 title: "deprovision action"
-description: ""
+description: "Intune Devices Manageddevice Deprovision Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -12,7 +12,7 @@ Namespace: microsoft.graph.managedTenants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [conditionalAccessPolicyCoverage](../resources/managedtenants-conditionalaccesspolicycoverage.md) objects and their properties. Use this operation to list of Azure Active Directory conditional access policy coverage across all tenants that are being managed by the multi-tenant management platform.
+Get a list of the [conditionalAccessPolicyCoverage](../resources/managedtenants-conditionalaccesspolicycoverage.md) objects and their properties. Use this operation to list Azure Active Directory conditional access policy coverage for all tenants that are being managed by the multi-tenant management platform.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 

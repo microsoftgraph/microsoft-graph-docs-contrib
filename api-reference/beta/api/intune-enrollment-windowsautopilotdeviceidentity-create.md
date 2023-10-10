@@ -75,6 +75,7 @@ The following table shows the properties that are required when you create the w
 |deviceFriendlyName|String|Surface Hub Device Friendly Name|
 |remediationState|[windowsAutopilotDeviceRemediationState](../resources/intune-enrollment-windowsautopilotdeviceremediationstate.md)|Device Remediation State. Possible values are: `unknown`, `noRemediationRequired`, `automaticRemediationRequired`, `manualRemediationRequired`, `unknownFutureValue`.|
 |remediationStateLastModifiedDateTime|DateTimeOffset|RemediationState set time of Autopilot device.|
+|userlessEnrollmentStatus|[windowsAutopilotUserlessEnrollmentStatus](../resources/intune-enrollment-windowsautopilotuserlessenrollmentstatus.md)|Enrollment status for userless enrollments. Possible values are: `unknown`, `allowed`, `blocked`, `unknownFutureValue`.|
 
 
 
@@ -88,7 +89,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 1371
+Content-length: 1413
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -116,7 +117,8 @@ Content-length: 1371
   "deviceAccountPassword": "Device Account Password value",
   "deviceFriendlyName": "Device Friendly Name value",
   "remediationState": "noRemediationRequired",
-  "remediationStateLastModifiedDateTime": "2017-01-01T00:00:10.730021-08:00"
+  "remediationStateLastModifiedDateTime": "2017-01-01T00:00:10.730021-08:00",
+  "userlessEnrollmentStatus": "allowed"
 }
 ```
 
@@ -125,7 +127,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1420
+Content-Length: 1462
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -154,6 +156,7 @@ Content-Length: 1420
   "deviceAccountPassword": "Device Account Password value",
   "deviceFriendlyName": "Device Friendly Name value",
   "remediationState": "noRemediationRequired",
-  "remediationStateLastModifiedDateTime": "2017-01-01T00:00:10.730021-08:00"
+  "remediationStateLastModifiedDateTime": "2017-01-01T00:00:10.730021-08:00",
+  "userlessEnrollmentStatus": "allowed"
 }
 ```

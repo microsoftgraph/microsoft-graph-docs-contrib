@@ -7592,7 +7592,7 @@ items:
                   - name: Schema
                     href: resources/externalconnectors-schema.md
                   - name: Create
-                    href: api/externalconnectors-schema-create.md
+                    href: api/externalconnectors-externalconnection-patch-schema.md
                   - name: Get
                     href: api/externalconnectors-schema-get.md
               - name: External activity
@@ -7608,7 +7608,7 @@ items:
                   - name: External item
                     href: resources/externalconnectors-externalitem.md
                   - name: Create
-                    href: api/externalconnectors-externalitem-create.md
+                    href: api/externalconnectors-externalconnection-put-items.md
                   - name: Get
                     href: api/externalconnectors-externalitem-get.md
                   - name: Update
@@ -7636,7 +7636,7 @@ items:
                   - name: Create
                     href: api/externalconnectors-externalgroup-post-members.md
                   - name: Delete
-                    href: api/externalconnectors-identity-delete.md
+                    href: api/externalconnectors-externalgroupmember-delete.md
       - name: Security
         items:
           - name: Overview
@@ -8009,14 +8009,14 @@ items:
                   - name: Get article
                     href: api/security-article-get.md
                   - name: List articles
-                    href: api/security-article-list.md
-                  - name: List indicators
+                    href: api/security-threatintelligence-list-articles.md
+                  - name: List article indicators
                     href: api/security-article-list-indicators.md
               - name: Article indicator
                 items:
                   - name: Article indicator
                     href: resources/security-articleindicator.md
-                  - name: List indicators
+                  - name: List article indicators
                     href: api/security-article-list-indicators.md
                   - name: Get article indicator
                     href: api/security-articleindicator-get.md
@@ -8028,8 +8028,8 @@ items:
                     href: api/security-host-get.md
                   - name: Get host reputation
                     href: api/security-host-get-reputation.md
-                  - name: Get WHOIS records for a host
-                    href: api/security-host-get-whois.md
+                  - name: Get WHOIS record
+                    href: api/security-whoisrecord-get.md
                   - name: List components
                     href: api/security-host-list-components.md
                   - name: List cookies
@@ -8041,7 +8041,7 @@ items:
                   - name: List host pairs for a host as parent
                     href: api/security-host-list-childhostpairs.md
                   - name: List host SSL certificates
-                    href: api/security-hostsslcertificate-list-host.md
+                    href: api/security-host-list-sslcertificates.md
                   - name: List passive DNS
                     href: api/security-host-list-passivedns.md
                   - name: List passive DNS reverse
@@ -8083,7 +8083,7 @@ items:
                 - name: Host SSL certificate
                   href: resources/security-hostsslcertificate.md
                 - name: List
-                  href: api/security-hostsslcertificate-list-host.md
+                  href: api/security-host-list-sslcertificates.md
                 - name: Get
                   href: api/security-hostsslcertificate-get.md
               - name: Host tracker
@@ -8101,7 +8101,7 @@ items:
                   - name: Get intelligence profile
                     href: api/security-intelligenceprofile-get.md
                   - name: List intelligence profiles
-                    href: api/security-intelligenceprofile-list.md
+                    href: api/security-threatintelligence-list-intelprofiles.md
                   - name: List indicators
                     href: api/security-intelligenceprofile-list-indicators.md
               - name: Intelligence profile indicator
@@ -8127,7 +8127,7 @@ items:
                 - name: SSL certificate
                   href: resources/security-sslcertificate.md
                 - name: List
-                  href: api/security-sslcertificate-list.md
+                  href: api/security-threatintelligence-list-sslcertificates.md
                 - name: Get
                   href: api/security-sslcertificate-get.md
               - name: Subdomain
@@ -8158,12 +8158,10 @@ items:
                 items:
                   - name: WHOIS record
                     href: resources/security-whoisrecord.md
-                  - name: Get WHOIS record
+                  - name: List
+                    href: api/security-threatintelligence-list-whoisrecords.md
+                  - name: Get
                     href: api/security-whoisrecord-get.md
-                  - name: Get WHOIS record for a host
-                    href: api/security-host-get-whois.md
-                  - name: List WHOIS records
-                    href: api/security-whoisrecord-list.md
               - name: WHOIS history record
                 items:
                   - name: WHOIS history record
@@ -8711,6 +8709,14 @@ items:
                         items:
                           - name: List
                             href: api/attendancerecord-list.md
+                  - name: Call transcript
+                    items:
+                      - name: Call transcript
+                        href: resources/calltranscript.md
+                      - name: List transcripts
+                        href: api/onlinemeeting-list-transcripts.md
+                      - name: Get transcript
+                        href: api/calltranscript-get.md
                   - name: Online meeting
                     href: resources/onlinemeeting.md
                     items:
@@ -8742,7 +8748,7 @@ items:
                   - name: Set user preferred presence
                     href: api/presence-setuserpreferredpresence.md
                   - name: Clear user preferred presence
-                    href: api/presence-clearuserpreferredpresence.md            
+                    href: api/presence-clearuserpreferredpresence.md
                   - name: Set user status message
                     href: api/presence-setstatusmessage.md
           - name: Employee learning
@@ -8839,6 +8845,8 @@ items:
                     href: api/channel-get-members.md
                   - name: Get message reply
                     href: api/chatmessage-get.md
+                  - name: Get primary channel
+                    href: api/team-get-primarychannel.md  
                   - name: List channel messages
                     href: api/channel-list-messages.md
                   - name: List members
@@ -9013,8 +9021,6 @@ items:
                     href: api/teams-list.md
                   - name: List your associated teams
                     href: api/associatedteaminfo-list.md
-                  - name: Get primary channel
-                    href: api/team-get-primarychannel.md
                   - name: Get team photo
                     href: api/profilephoto-get.md
                   - name: Update team photo
