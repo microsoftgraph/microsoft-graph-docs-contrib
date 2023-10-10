@@ -12,6 +12,8 @@ Namespace: microsoft.graph.termStore
 
 Create a new [relation](../resources/termstore-relation.md) object. These are used to create pinned and reused relations between terms or between a term and set. If you create a pinned/reused term between term and set, then **fromTerm**  must be set to *null* in the post body.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -67,7 +69,7 @@ If successful, this method returns a `201 Created` response code and a [microsof
 -->
 
 ``` http
-POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStore/27fd2d26-60d3-485c-9420-0c71f74a0cfd/terms/8861b57a-c777-49e7-826f-47d6afecf80d/relations
+POST https://graph.microsoft.com/v1.0/sites/microsoft.sharepoint.com,b9b0bc03-cbc4-40d2-aba9-2c9dd9821ddf,6a742cee-9216-4db5-8046-13a595684e74/termStores/27fd2d26-60d3-485c-9420-0c71f74a0cfd/terms/8861b57a-c777-49e7-826f-47d6afecf80d/relations
 Content-Type: application/json
 
 {
@@ -124,6 +126,12 @@ Content-Type: application/json
   "section": "documentation",
   "tocPath": "termStore/Pinned term",
   "suppressions": [
+    "Error: microsoft.graph.microsoft.graph/sites:
+      /sites/{var}/termStores/{var}/terms/{var}/relations
+      Uri path requires navigating into unknown object hierarchy: missing property 'terms' on 'store'. Possible issues:
+  	 1) Doc bug where 'terms' isn't defined on the resource.
+  	 2) Doc bug where 'terms' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.
+  	 3) Doc bug where 'store' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation."
   ]
 }
 -->

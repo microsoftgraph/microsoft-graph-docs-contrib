@@ -16,7 +16,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatePolicy
 		OdataType = "microsoft.graph.windowsUpdates.deploymentSettings",
 		Schedule = new Microsoft.Graph.Beta.Models.WindowsUpdates.ScheduleSettings
 		{
-			GradualRollout = new Microsoft.Graph.Beta.Models.WindowsUpdates.GradualRolloutSettings
+			GradualRollout = new Microsoft.Graph.Beta.Models.WindowsUpdates.RateDrivenRolloutSettings
 			{
 				OdataType = "#microsoft.graph.windowsUpdates.rateDrivenRolloutSettings",
 				DurationBetweenOffers = TimeSpan.Parse("P1D"),

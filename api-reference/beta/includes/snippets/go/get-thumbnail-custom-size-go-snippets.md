@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphdrives.DriveItemItemItemThumbnailsRequestBuilderGetQueryParameters{
@@ -22,7 +22,7 @@ configuration := &graphdrives.DriveItemItemItemThumbnailsRequestBuilderGetReques
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Thumbnails().Get(context.Background(), configuration)
+thumbnails, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Thumbnails().Get(context.Background(), configuration)
 
 
 ```

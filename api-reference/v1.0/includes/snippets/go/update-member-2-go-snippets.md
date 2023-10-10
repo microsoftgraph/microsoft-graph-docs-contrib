@@ -12,17 +12,16 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewConversationMember()
 roles := []string {
 	"owner",
-
 }
 requestBody.SetRoles(roles)
 
-result, err := graphClient.Teams().ByTeamId("team-id").Members().ByMemberId("conversationMember-id").Patch(context.Background(), requestBody, nil)
+members, err := graphClient.Teams().ByTeamId("team-id").Members().ByConversationMemberId("conversationMember-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

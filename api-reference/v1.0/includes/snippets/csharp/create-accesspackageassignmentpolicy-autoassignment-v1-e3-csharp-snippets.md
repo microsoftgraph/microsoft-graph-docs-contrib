@@ -15,23 +15,18 @@ var requestBody = new AccessPackageAssignmentPolicy
 	AllowedTargetScope = AllowedTargetScope.SpecificDirectoryUsers,
 	SpecificAllowedTargets = new List<SubjectSet>
 	{
-		new SubjectSet
+		new AttributeRuleMembers
 		{
 			OdataType = "#microsoft.graph.attributeRuleMembers",
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"description" , "Membership rule for all users from sales department"
-				},
-				{
-					"membershipRule" , "(user.department -eq \"Sales\")"
-				},
-			},
+			Description = "Membership rule for all users from sales department",
+			MembershipRule = "(user.department -eq \"Sales\")",
 		},
 	},
 	AutomaticRequestSettings = new AccessPackageAutomaticRequestSettings
 	{
 		RequestAccessForAllowedTargets = true,
+		RemoveAccessWhenTargetLeavesAllowedTargets = true,
+		GracePeriodBeforeAccessRemoval = TimeSpan.Parse("P7D"),
 	},
 	AccessPackage = new AccessPackage
 	{

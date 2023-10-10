@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEducationSchool()
@@ -47,7 +47,7 @@ requestBody.SetCreatedBy(createdBy)
 address := graphmodels.NewPhysicalAddress()
 requestBody.SetAddress(address)
 
-result, err := graphClient.Education().Schools().Post(context.Background(), requestBody, nil)
+schools, err := graphClient.Education().Schools().Post(context.Background(), requestBody, nil)
 
 
 ```

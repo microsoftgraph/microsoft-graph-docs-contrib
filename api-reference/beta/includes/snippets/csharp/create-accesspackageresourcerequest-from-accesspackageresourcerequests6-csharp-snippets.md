@@ -28,30 +28,25 @@ var requestBody = new AccessPackageResourceRequest
 				AttributeName = "extension_2b676109c7c74ae2b41549205f1947ed_personalTitle",
 				IsEditable = true,
 				IsPersistedOnAssignmentRemoval = true,
-				AttributeSource = new AccessPackageResourceAttributeSource
+				AttributeSource = new AccessPackageResourceAttributeQuestion
 				{
 					OdataType = "#microsoft.graph.accessPackageResourceAttributeQuestion",
-					AdditionalData = new Dictionary<string, object>
+					Question = new AccessPackageTextInputQuestion
 					{
+						OdataType = "#microsoft.graph.accessPackageTextInputQuestion",
+						IsRequired = false,
+						Sequence = 0,
+						IsSingleLineQuestion = true,
+						Text = new AccessPackageLocalizedContent
 						{
-							"question" , new 
+							DefaultText = "Title",
+							LocalizedTexts = new List<AccessPackageLocalizedText>
 							{
-								OdataType = "#microsoft.graph.accessPackageTextInputQuestion",
-								IsRequired = false,
-								Sequence = 0,
-								IsSingleLineQuestion = true,
-								Text = new 
-								{
-									DefaultText = "Title",
-									LocalizedTexts = new List<>
-									{
-									},
-								},
-							}
+							},
 						},
 					},
 				},
-				AttributeDestination = new AccessPackageResourceAttributeDestination
+				AttributeDestination = new AccessPackageUserDirectoryAttributeStore
 				{
 					OdataType = "#microsoft.graph.accessPackageUserDirectoryAttributeStore",
 				},

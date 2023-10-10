@@ -4,49 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = SendActivityNotificationPostRequestBody()
-topic = TeamworkActivityTopic()
-topic.source(TeamworkActivityTopicSource.EntityUrl('teamworkactivitytopicsource.entityurl'))
+graph_client = GraphServiceClient(request_adapter)
 
-topic.value = 'https://graph.microsoft.com/beta/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2'
+request_body = SendActivityNotificationPostRequestBody(
+	topic = TeamworkActivityTopic(
+		source = TeamworkActivityTopicSource.EntityUrl,
+		value = "https://graph.microsoft.com/beta/chats/19:1c3af46e9e0f4a5293343c8813c47619@thread.v2",
+	),
+	activity_type = "taskCreated",
+	preview_text = ItemBody(
+		content = "New Task Created",
+	),
+	recipient = ChatMembersNotificationRecipient(
+		odata_type = "microsoft.graph.chatMembersNotificationRecipient",
+		chat_id = "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2",
+	),
+	template_parameters = [
+		KeyValuePair(
+			name = "taskId",
+			value = "Task 12322",
+		),
+	]
+)
 
-
-request_body.topic = topic
-request_body.activity_type = 'taskCreated'
-
-preview_text = ItemBody()
-preview_text.content = 'New Task Created'
-
-
-request_body.preview_text = preview_text
-recipient = TeamworkNotificationRecipient()
-recipient.@odata_type = 'microsoft.graph.chatMembersNotificationRecipient'
-
-additional_data = [
-'chat_id' => '19:1c3af46e9e0f4a5293343c8813c47619@thread.v2', 
-];
-recipient.additional_data(additional_data)
-
-
-
-request_body.recipient = recipient
-template_parameters_key_value_pair1 = KeyValuePair()
-template_parameters_key_value_pair1.name = 'taskId'
-
-template_parameters_key_value_pair1.value = 'Task 12322'
-
-
-templateParametersArray []= templateParametersKeyValuePair1;
-request_body.templateparameters(templateParametersArray)
-
-
-
-
-
-await client.chats.by_chat_id('chat-id').send_activity_notification.post(request_body = request_body)
+await graph_client.chats.by_chat_id('chat-id').send_activity_notification.post(body = request_body)
 
 
 ```

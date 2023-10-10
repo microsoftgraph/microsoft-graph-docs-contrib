@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Refreshes the PivotTable within a given worksheet.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -27,9 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /me/drive/items/{id}/workbook/worksheets/{id|name}/pivotTables/refreshAll
 POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/pivotTables/refreshAll
-     /me/drive/items/{id}/workbook/worksheets/{id|name}/pivotTables/refreshAll
-
 ```
+
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
@@ -59,16 +60,20 @@ POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id|name
 [!INCLUDE [sample-code](../includes/snippets/csharp/workbookpivottable-refreshall-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/workbookpivottable-refreshall-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/workbookpivottable-refreshall-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/workbookpivottable-refreshall-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/workbookpivottable-refreshall-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/workbookpivottable-refreshall-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/workbookpivottable-refreshall-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -90,7 +95,7 @@ Here is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",

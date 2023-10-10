@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 $params = @{
 	id = "c1"
@@ -13,6 +13,6 @@ $params = @{
 	isAvailable = $true
 }
 
-New-MgIdentityConditionalAccessAuthenticationContextClassReference -BodyParameter $params
+New-MgBetaIdentityConditionalAccessAuthenticationContextClassReference -BodyParameter $params
 
 ```

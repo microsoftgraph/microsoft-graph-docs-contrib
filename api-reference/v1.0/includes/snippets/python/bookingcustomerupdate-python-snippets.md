@@ -4,23 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = BookingCustomerBase()
-request_body.@odata_type = '#microsoft.graph.bookingCustomer'
+graph_client = GraphServiceClient(request_adapter)
 
-additional_data = [
-'display_name' => 'Adele', 
-'email_address' => 'adele@relecloud.com', 
-];
-request_body.additional_data(additional_data)
+request_body = BookingCustomer(
+	odata_type = "#microsoft.graph.bookingCustomer",
+	display_name = "Adele",
+	email_address = "adele@relecloud.com",
+)
 
-
-
-
-
-result = await client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').customers.by_customer_id('bookingCustomerBase-id').patch(request_body = request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').customers.by_customer_id('bookingCustomerBase-id').patch(body = request_body)
 
 
 ```

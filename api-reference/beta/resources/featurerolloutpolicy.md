@@ -2,7 +2,7 @@
 title: "featureRolloutPolicy resource type"
 description: "Represents a feature rollout policy associated with a directory object."
 ms.localizationpriority: medium
-author: "keylimesoda"
+author: "madhavpatel6"
 ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---
@@ -30,7 +30,7 @@ The following are pre-requisites for each of the features that are currently sup
 * Identify a server running Windows Server 2012 R2 or later where you want the [PassthroughAuthentication](/azure/active-directory/hybrid/how-to-connect-pta) Agent to run. Ensure that the server is domain-joined, can authenticate selected users with Active Directory, and can communicate with Azure AD on outbound ports / URLs.
 * [Download](https://aka.ms/getauthagent) & install the Microsoft Azure AD Connect Authentication Agent on the server.
 * To enable high availability, install additional Authentication Agents on other servers as described [here](/azure/active-directory/hybrid/how-to-connect-pta-quick-start#step-4-ensure-high-availability).
-* Ensure that you have configured your [Smart Lockout](/azure/active-directory/authentication/howto-password-smart-lockout) settings appropriately. This is to ensure that your users’ on-premises Active Directory accounts don’t get locked out by bad actors.
+* Ensure that you have configured your [Smart Lockout](/azure/active-directory/authentication/howto-password-smart-lockout) settings appropriately. This is to ensure that your users' on-premises Active Directory accounts don't get locked out by bad actors.
 
 ### SeamlessSso
 
@@ -38,7 +38,7 @@ The following are pre-requisites for each of the features that are currently sup
 
 ### PasswordHashSync
 
-* Enable [PasswordHashSync](/azure/active-directory/hybrid/whatis-phs) from the “Optional features” page in Azure AD Connect.
+* Enable [PasswordHashSync](/azure/active-directory/hybrid/whatis-phs) from the "Optional features" page in Azure AD Connect.
 
 ### EmailAsAlternateId
 

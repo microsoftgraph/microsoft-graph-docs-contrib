@@ -11,11 +11,12 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().Snapshots().BySnapshotId("cloudPcSnapshot-id").Get(context.Background(), nil)
+subscriptionId := "{subscriptionId}"
+getStorageAccounts, err := graphClient.DeviceManagement().VirtualEndpoint().Snapshots().GetStorageAccountsWithSubscriptionId(&subscriptionId).Get(context.Background(), nil)
 
 
 ```

@@ -4,24 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Attachment()
-request_body.@odata_type = '#microsoft.graph.fileAttachment'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.name = 'menu.txt'
+request_body = FileAttachment(
+	odata_type = "#microsoft.graph.fileAttachment",
+	name = "menu.txt",
+	content_bytes = base64.urlsafe_b64decode("base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="),
+)
 
-additional_data = [
-'content_bytes' => 'base64bWFjIGFuZCBjaGVlc2UgdG9kYXk=', 
-];
-request_body.additional_data(additional_data)
-
-
-
-
-
-result = await client.me.events.by_event_id('event-id').attachments.post(request_body = request_body)
+result = await graph_client.me.events.by_event_id('event-id').attachments.post(body = request_body)
 
 
 ```

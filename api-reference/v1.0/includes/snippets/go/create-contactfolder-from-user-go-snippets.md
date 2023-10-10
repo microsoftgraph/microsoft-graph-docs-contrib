@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewContactFolder()
@@ -21,7 +21,7 @@ requestBody.SetParentFolderId(&parentFolderId)
 displayName := "Important contacts"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Me().ContactFolders().Post(context.Background(), requestBody, nil)
+contactFolders, err := graphClient.Me().ContactFolders().Post(context.Background(), requestBody, nil)
 
 
 ```

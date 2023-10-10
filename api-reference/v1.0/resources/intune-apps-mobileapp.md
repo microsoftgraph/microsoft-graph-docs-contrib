@@ -1,6 +1,6 @@
 ---
 title: "mobileApp resource type"
-description: "An abstract class containing the base properties for Intune mobile apps."
+description: "An abstract class containing the base properties for Intune mobile apps. Note: Listing mobile apps with `$expand=assignments` has been deprecated. Instead get the list of apps without the `$expand` query on `assignments`. Then, perform the expansion on individual applications."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-An abstract class containing the base properties for Intune mobile apps.
+An abstract class containing the base properties for Intune mobile apps. Note: Listing mobile apps with `$expand=assignments` has been deprecated. Instead get the list of apps without the `$expand` query on `assignments`. Then, perform the expansion on individual applications.
 
 ## Methods
 |Method|Return Type|Description|

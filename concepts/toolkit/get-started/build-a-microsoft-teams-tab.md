@@ -7,133 +7,151 @@ author: sebastienlevert
 
 # Build a Microsoft Teams tab with the Microsoft Graph Toolkit
 
-This topic covers how to get started using the Microsoft Graph Toolkit in a Microsoft Teams solution. This guide is for a single page app without single sign-on (SSO) and does not require a backend. If you're implementing SSO with a custom backend, see [Build a Microsoft Teams tab (SSO)](./build-a-microsoft-teams-sso-tab.md).
+This topic covers how to get started using the Microsoft Graph Toolkit in a Microsoft Teams solution. This guide is for a single page app without single sign-on (SSO) and does not require a backend. It uses the Teams Toolkit as the scaffolding system.
 
 Building a tab involves the following steps:
 
-1. Add the Microsoft Graph Toolkit.
-1. Create the auth popup page.
-1. Creating an app/client ID
-1. Initialize the Teams MSAL2 Provider.
+1. Build a new Teams tab using React and Fluent UI with the Teams Toolkit.
+1. Replace the content of the `Tab.tsx` file.
+1. Initialize the TeamsFx Provider.
 1. Add components.
 1. Test your app.
 
-## Add the Microsoft Graph Toolkit
+## Build a new Teams tab using React and Fluent UI with the Teams Toolkit
 
-You can use the Microsoft Graph Toolkit in your application by referencing the loader directly (via unpkg) or by installing the npm packages. To use the Toolkit, you will also need the [Microsoft Teams SDK](/javascript/api/overview/msteams-client?view=msteams-client-js-latest&preserve-view=true#using-the-sdk).
+To get started, see [Create a new Teams project](/microsoftteams/platform/toolkit/create-new-project) to get your tab up and running. When prompted to choose the capabilities of your new App, select **React with Fluent UI**. When prompted to choose a **Programming Language**, select **TypeScript**. For the rest, go through the regular path of the wizard.
 
-# [unpkg](#tab/unpkg)
-To use the Toolkit and the Teams SDK via the loaders, add the reference in a script to your code:
+---
 
-```html
-<!-- Microsoft Teams sdk must be referenced before the toolkit -->
-<script src="https://unpkg.com/@microsoft/teams-js@2/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
-```
+## Replace the content of the `Tab.tsx` file
 
-# [npm](#tab/npm)
-Using the Toolkit via ES6 modules will give you full control of the bundling process and allow you to bundle only the code you need for your application. To use the ES6 modules, add the npm packages for both the Toolkit and the Microsoft Teams SDK to your project:
+Remove the contents of the `/src/components/Tab.tsx` file and use the following code. This will help with focusing on the goal to achieve.
 
-```cmd
-npm install @microsoft/teams-js @microsoft/mgt-element @microsoft/mgt-teams-msal2-provider @microsoft/mgt-components
+```tsx
+import { useContext } from "react";
+import { TeamsFxContext } from "./Context";
+import React from "react";
+import { applyTheme } from "@microsoft/mgt-react";
+import { Button } from "@fluentui/react-components";
+
+export default function Tab() {
+  const { themeString } = useContext(TeamsFxContext);
+  const [loading, setLoading] = React.useState<boolean>(false);
+  const [consentNeeded, setConsentNeeded] = React.useState<boolean>(false);
+
+  React.useEffect(() => {
+    applyTheme(themeString === "default" ? "light" : "dark");
+  }, [themeString]);
+
+  return (
+    <div>
+      {consentNeeded && (
+        <>
+          <p>
+            Click below to authorize button to grant permission to using
+            Microsoft Graph.
+          </p>
+          <Button appearance="primary">Authorize</Button>
+        </>
+      )}
+
+      {!consentNeeded && <></>}
+    </div>
+  );
+}
 ```
 
 ---
 
-## Create the auth popup page
+## Initialize the TeamsFx Provider
 
-In order to allow users to sign in, you will need a page in your app that Teams will open in a popup to follow the authentication flow. The path to the page can be anything as long as it is in the same domain as your app (for example, https://yourdomain.com/tabauth). The only requirement for this page is to call the `TeamsMsal2Provider.handleAuth()` method, but you can add any content or loading progress you want.
+Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [TeamsFx Provider](../providers/teamsfx.md) handles all the logic and interactions that need to be implemented with the Teams SDK to authenticate the user.
 
-The following is an example of basic page that handles the auth flow in the popup.
+To initialize the provider in your JavaScript code, add the following code in the `imports` section of your file:
 
-# [unpkg](#tab/unpkg)
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <script src="https://unpkg.com/@microsoft/teams-js@2/dist/MicrosoftTeams.min.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
-  </head>
+```tsx
+import { Providers, ProviderState } from "@microsoft/mgt-react";
+import { TeamsFxProvider } from "@microsoft/mgt-teamsfx-provider";
+import {
+  TeamsUserCredential,
+  TeamsUserCredentialAuthConfig,
+} from "@microsoft/teamsfx";
 
-  <body>
-    <script>
-      mgt.TeamsMsal2Provider.handleAuth();
-    </script>
-  </body>
-</html>
+const authConfig: TeamsUserCredentialAuthConfig = {
+  clientId: process.env.REACT_APP_CLIENT_ID!,
+  initiateLoginEndpoint: process.env.REACT_APP_START_LOGIN_PAGE_URL!,
+};
+
+const scopes = ["User.Read", "Calendars.Read"];
+const credential = new TeamsUserCredential(authConfig);
+const provider = new TeamsFxProvider(credential, scopes);
+Providers.globalProvider = provider;
 ```
-# [npm](#tab/npm)
-```js
-import { TeamsMsal2Provider } from '@microsoft/mgt-teams-msal2-provider';
 
-TeamsMsal2Provider.handleAuth();
+Within the `Tab` component, before the `React.useEffect` statement, add the following:
+
+```tsx
+React.useEffect(() => {
+  const init = async () => {
+    try {
+      await credential.getToken(scopes);
+      Providers.globalProvider.setState(ProviderState.SignedIn);
+    } catch (error) {
+      setConsentNeeded(true);
+    }
+  };
+
+  init();
+}, []);
+
+const consent = async () => {
+  setLoading(true);
+  await credential.login(scopes);
+  Providers.globalProvider.setState(ProviderState.SignedIn);
+  setLoading(false);
+  setConsentNeeded(false);
+};
+```
+
+Replace the `<Button>` by the following code:
+
+```tsx
+<Button appearance="primary" disabled={loading} onClick={consent}>
+  Authorize
+</Button>
 ```
 
 ---
 
-## Creating an app/client ID
-To get a client ID, you need to register an Azure Active Directory application. Follow the steps in the [Create an Azure Active Directory app](./add-aad-app-registration.md) article.
-
-Make sure to set the `redirect URI` in your app registration to point to the auth page you created in the previous step. For example, https://localhost:3000/tabauth.
-
-> **Note:** Make sure to set the `redirect URI` as a `Single Page Application (SPA)`. Teams MSAL2 Provider makes use of MSAL2 Provider behind the scenes.
-
-## Initialize the Teams MSAL2 Provider
-
-The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [Teams MSAL2 Provider](../providers/teams-msal2.md) handles all the logic and interactions that need to be implemented with the Teams SDK to authenticate the user.
-
-You can choose to initialize the provider in either your HTML or your JavaScript code.
-
-# [html](#tab/html)
-
-
-Add the `mgt-teams-msal2-provider` component to your HTML page as shown.
-
-```html
-<mgt-teams-msal2-provider
-  client-id="<YOUR_CLIENT_ID>"
-  auth-popup-url="/tabauth"
-  scopes="User.Read,Mail.ReadBasic"
-  ></mgt-teams-msal2-provider>
-```
-
-Replace `<YOUR_CLIENT_ID>` with the client ID for your application, and replace the `auth-popup-url` with the full or relative path to your auth page.
-
-# [js](#tab/js)
-
-
-To initialize the provider in your JavaScript code, add the following code to your application:
-
-```ts
-import {Providers} from '@microsoft/mgt-element';
-import {TeamsMsal2Provider} from '@microsoft/mgt-teams-msal2-provider';
-import * as MicrosoftTeams from "@microsoft/teams-js";
-
-TeamsMsal2Provider.microsoftTeamsLib = MicrosoftTeams;
-
-Providers.globalProvider = new TeamsMsal2Provider({
-  clientId: `<YOUR_CLIENT_ID>`,
-  authPopupUrl: '/tabauth',
-  scopes: ['User.Read','Mail.ReadBasic'],
-});
-```
-Replace `<YOUR_CLIENT_ID>` with the client ID for your application, and replace the `authPopupUrl` with the full or relative path to your auth page.
-
----
 ## Add components
 
-Now, you're ready to add any of the Microsoft Graph Toolkit components. The first component you will likely need to add is the Login component.
+Now, you're ready to add any of the Microsoft Graph Toolkit components. The first components you will likely want to add are a person and an agenda. First, update your `imports` for `@microsoft/mgt-react`:
 
-```HTML
-<mgt-login></mgt-login>
+```tsx
+import { Agenda, Person, applyTheme } from "@microsoft/mgt-react";
 ```
 
-The Login component renders a "Sign In" button that guides the user through the sign in process and integrates with any of the providers to handle the authentication. After the user has signed in, all other toolkit components will be able to call Microsoft Graph automatically. The providers also expose an authenticated Microsoft Graph client for making API calls or getting access tokens. For details, see [Using the providers](../providers/providers.md).
+Add your component between the `<></>` at the bottom of the file:
 
-If you're using React, we recommend using the React components instead from the `mgt-react` library. To learn more, see [Using Microsoft Graph Toolkit with React](./use-toolkit-with-react.md)
+```tsx
+<Person personQuery="me" />
+<Agenda></Agenda>
+```
+
+## Test your app
+
+1. Press `F5` or use the `Run and Debug Activity Panel` in Visual Studio Code.
+1. Select a target Microsoft 365 application where the personal tabs can run: **Debug in Teams**, **Debug in Outlook**, or **Debug in the Microsoft 365 app**, and choose **Run and Debug**.
+
+> **Note**
+> If you receive the HTTPS error when running your tab `It looks like the webpage at **https://localhost:53000/index.html#/tab** might be having issues, or it may have moved permanently to a new web address`, see the following articles:
+>
+> - [What to do if I do not want to install the development certificate?](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/fx-core/localdebug-help.md#what-to-do-if-i-do-not-want-to-install-the-development-certificate) (Windows)
+> - [What to do if I do not want to install the development certificate?](https://github.com/OfficeDev/TeamsFx/blob/dev/docs/fx-core/localdebug-help.md#what-to-do-if-i-do-not-want-to-install-the-development-certificate) (WSL)
 
 ## Next Steps
+
 - Try out the components in the [playground](https://mgt.dev).
 - Ask a question on [Microsoft Q&A](/answers/topics/microsoft-graph-toolkit.html).
-- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt).
-- Check out the [Microsoft Teams samples](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/tab-graph-toolkit).
+- Report bugs or leave a feature request on [GitHub](https://aka.ms/mgt/issues).
+- Check out the [Microsoft TeamsFx samples](https://github.com/OfficeDev/TeamsFx-Samples).

@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphtenantrelationships.NewTenantSearchPostRequestBody()
 tenantId := "String"
 requestBody.SetTenantId(&tenantId) 
 
-result, err := graphClient.TenantRelationships().ManagedTenants().TenantGroups().MicrosoftGraphManagedTenantsTenantSearch().Post(context.Background(), requestBody, nil)
+microsoftGraphManagedTenantsTenantSearch, err := graphClient.TenantRelationships().ManagedTenants().TenantGroups().MicrosoftGraphManagedTenantsTenantSearch().Post(context.Background(), requestBody, nil)
 
 
 ```

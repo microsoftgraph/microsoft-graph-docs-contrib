@@ -58,7 +58,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.FindMeetingTimes.FindMeetingTimesP
 	IsOrganizerOptional = false,
 	MeetingDuration = TimeSpan.Parse("PT1H"),
 	ReturnSuggestionReasons = true,
-	MinimumAttendeePercentage = "100",
+	MinimumAttendeePercentage = 100d,
 };
 var result = await graphClient.Me.FindMeetingTimes.PostAsync(requestBody, (requestConfiguration) =>
 {

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEducationalActivity()
@@ -67,7 +67,7 @@ requestBody.SetProgram(program)
 startMonthYear := date
 requestBody.SetStartMonthYear(&startMonthYear) 
 
-result, err := graphClient.Me().Profile().EducationalActivities().Post(context.Background(), requestBody, nil)
+educationalActivities, err := graphClient.Me().Profile().EducationalActivities().Post(context.Background(), requestBody, nil)
 
 
 ```

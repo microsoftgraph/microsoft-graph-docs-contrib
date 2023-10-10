@@ -41,6 +41,7 @@ None.
 |accessPackages|[accessPackage](../resources/accesspackage.md) collection|Represents access package objects.|
 |connectedOrganizations|[connectedOrganization](../resources/connectedorganization.md) collection|Represents references to a directory or domain of another organization whose users can request access.|
 |settings|[entitlementManagementSettings](../resources/entitlementmanagementsettings.md)|Represents the settings that control the behavior of Azure AD entitlement management.|
+|subjects|[accessPackageSubject](../resources/accesspackagesubject.md)|Represents the subjects within entitlement management.|
 
 ## JSON representation
 

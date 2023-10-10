@@ -22,7 +22,7 @@ Inherits from [identity](../resources/identity.md).
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |details|[detailsInfo](detailsinfo.md)|Details of the system.|
-|displayName|String|Name of the system that a user was provisioned to or from. Inherited from [identity](../resources/identity.md).|
+|displayName|String|Name of the system that a user was provisioned to or from. Inherited from [identity](../resources/identity.md). Supports `$filter` (`eq`, `contains`).|
 |id|String|Identifier of the system that a user was provisioned to or from. Inherited from [identity](../resources/identity.md).|
 
 ## JSON representation

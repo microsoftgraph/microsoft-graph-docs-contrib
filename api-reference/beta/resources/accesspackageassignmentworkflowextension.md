@@ -16,8 +16,8 @@ Namespace: microsoft.graph
 Defines the attributes of a logic app that can be called at various stages of an access package request cycle. You can integrate logic apps with entitlement management to broaden your governance workflows beyond the core entitlement management use cases. 
 
 The following use cases can be integrated with logic apps in the [access package assignment](accesspackageassignment.md) workflow:
-- When an [access package assignment will expire in fourteen days](accesspackageassignment.md)
-- When an [access package assignment will expire in one day](accesspackageassignment.md)
+- When an [access package assignment expires in fourteen days](accesspackageassignment.md)
+- When an [access package assignment expires in one day](accesspackageassignment.md)
 
 Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 
@@ -35,6 +35,7 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 |:---|:---|:---|
 |authenticationConfiguration|[customExtensionAuthenticationConfiguration](../resources/customextensionauthenticationconfiguration.md)|Configuration for securing the API call to the logic app. For example, using OAuth client credentials flow. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |callbackConfiguration|[customExtensionCallbackConfiguration](../resources/customextensioncallbackconfiguration.md)|The callback configuration for a custom extension.|
+|clientConfiguration|[customExtensionClientConfiguration](../resources/customextensionclientconfiguration.md)| HTTP connection settings that define how long Azure AD can wait for a connection to a logic app, how many times you can retry a timed-out connection and the exception scenarios when retries are allowed. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |createdBy|String|The userPrincipalName of the user or identity of the subject that created this resource. Read-only.|
 |createdDateTime|DateTimeOffset|When the entity was created.|
 |description|String|Description for the customAccessPackageWorkflowExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
@@ -48,7 +49,7 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

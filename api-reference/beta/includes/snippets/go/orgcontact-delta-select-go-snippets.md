@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphcontacts.ContactsDelta()RequestBuilderGetQueryParameters{
@@ -22,7 +22,7 @@ configuration := &graphcontacts.ContactsDelta()RequestBuilderGetRequestConfigura
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Contacts().Delta().Get(context.Background(), configuration)
+delta, err := graphClient.Contacts().Delta().Get(context.Background(), configuration)
 
 
 ```

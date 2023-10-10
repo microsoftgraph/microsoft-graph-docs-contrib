@@ -14,7 +14,7 @@ var requestBody = new Microsoft.Graph.Beta.Security.TiIndicators.SubmitTiIndicat
 	{
 		new TiIndicator
 		{
-			ActivityGroupNames = new List<String>
+			ActivityGroupNames = new List<string>
 			{
 			},
 			Confidence = 0,
@@ -23,14 +23,14 @@ var requestBody = new Microsoft.Graph.Beta.Security.TiIndicators.SubmitTiIndicat
 			ExternalId = "Test--8586509942423126760MS164-0",
 			FileHashType = FileHashType.Sha256,
 			FileHashValue = "b555c45c5b1b01304217e72118d6ca1b14b7013644a078273cea27bbdc1cf9d6",
-			KillChain = new List<String>
+			KillChain = new List<string>
 			{
 			},
-			MalwareFamilyNames = new List<String>
+			MalwareFamilyNames = new List<string>
 			{
 			},
 			Severity = 0,
-			Tags = new List<String>
+			Tags = new List<string>
 			{
 			},
 			TargetProduct = "Azure Sentinel",
@@ -39,7 +39,7 @@ var requestBody = new Microsoft.Graph.Beta.Security.TiIndicators.SubmitTiIndicat
 		},
 		new TiIndicator
 		{
-			ActivityGroupNames = new List<String>
+			ActivityGroupNames = new List<string>
 			{
 			},
 			Confidence = 0,
@@ -48,14 +48,14 @@ var requestBody = new Microsoft.Graph.Beta.Security.TiIndicators.SubmitTiIndicat
 			ExternalId = "Test--8586509942423126760MS164-1",
 			FileHashType = FileHashType.Sha256,
 			FileHashValue = "1796b433950990b28d6a22456c9d2b58ced1bdfcdf5f16f7e39d6b9bdca4213b",
-			KillChain = new List<String>
+			KillChain = new List<string>
 			{
 			},
-			MalwareFamilyNames = new List<String>
+			MalwareFamilyNames = new List<string>
 			{
 			},
 			Severity = 0,
-			Tags = new List<String>
+			Tags = new List<string>
 			{
 			},
 			TargetProduct = "Azure Sentinel",

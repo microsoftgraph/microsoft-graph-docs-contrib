@@ -48,7 +48,7 @@ const meetingTimeSuggestionsResult = {
   isOrganizerOptional: 'false',
   meetingDuration: 'PT1H',
   returnSuggestionReasons: 'true',
-  minimumAttendeePercentage: '100'
+  minimumAttendeePercentage: 100
 };
 
 await client.api('/me/findMeetingTimes')

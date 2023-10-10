@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAccessPackageCatalog()
@@ -25,7 +25,7 @@ requestBody.SetState(&state)
 isExternallyVisible := true
 requestBody.SetIsExternallyVisible(&isExternallyVisible) 
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().Catalogs().Post(context.Background(), requestBody, nil)
+catalogs, err := graphClient.IdentityGovernance().EntitlementManagement().Catalogs().Post(context.Background(), requestBody, nil)
 
 
 ```

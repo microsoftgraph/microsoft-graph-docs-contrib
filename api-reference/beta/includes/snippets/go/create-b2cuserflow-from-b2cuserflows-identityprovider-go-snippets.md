@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -38,11 +38,10 @@ identityProvider.SetId(&id)
 
 identityProviders := []graphmodels.IdentityProviderable {
 	identityProvider,
-
 }
 requestBody.SetIdentityProviders(identityProviders)
 
-result, err := graphClient.Identity().B2cUserFlows().Post(context.Background(), requestBody, configuration)
+b2cUserFlows, err := graphClient.Identity().B2cUserFlows().Post(context.Background(), requestBody, configuration)
 
 
 ```

@@ -26,9 +26,11 @@ The following example shows iterating over all the messages in a user's mailbox.
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/Paging.cs" id="PagingSnippet":::
 
-### [TypeScript](#tab/typeScript)
+### [Go](#tab/go)
 
-:::code language="typescript" source="./snippets/typescript/src/snippets/paging.ts" id="PagingSnippet":::
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ImportSnippet":::
+
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="PagingSnippet":::
 
 ### [Java](#tab/java)
 
@@ -37,11 +39,9 @@ The following example shows iterating over all the messages in a user's mailbox.
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/Paging.java" id="PagingSnippet":::
 
-### [Go](#tab/Go)
+### [TypeScript](#tab/typescript)
 
-:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ImportSnippet":::
-
-:::code language="go" source="./snippets/go/src/snippets/paging.go" id="PagingSnippet":::
+:::code language="typescript" source="./snippets/typescript/src/snippets/paging.ts" id="PagingSnippet":::
 
 ---
 
@@ -54,9 +54,11 @@ Some scenarios require stopping the iteration process in order to perform other 
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/Paging.cs" id="ResumePagingSnippet":::
 
-### [TypeScript](#tab/typeScript)
+### [Go](#tab/go)
 
-:::code language="typescript" source="./snippets/typescript/src/snippets/paging.ts" id="ResumePagingSnippet":::
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ImportSnippet":::
+
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ResumePagingSnippet":::
 
 ### [Java](#tab/java)
 
@@ -64,11 +66,9 @@ Some scenarios require stopping the iteration process in order to perform other 
 // not supported in java SDK
 ```
 
-### [Go](#tab/Go)
+### [TypeScript](#tab/typescript)
 
-:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ImportSnippet":::
-
-:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ResumePagingSnippet":::
+:::code language="typescript" source="./snippets/typescript/src/snippets/paging.ts" id="ResumePagingSnippet":::
 
 ---
 <!-- markdownlint-enable MD024 -->

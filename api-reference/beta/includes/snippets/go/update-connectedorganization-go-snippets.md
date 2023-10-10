@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewConnectedOrganization()
@@ -23,7 +23,7 @@ requestBody.SetDescription(&description)
 state := graphmodels.CONFIGURED_CONNECTEDORGANIZATIONSTATE 
 requestBody.SetState(&state) 
 
-result, err := graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizations().ByConnectedOrganizationId("connectedOrganization-id").Patch(context.Background(), requestBody, nil)
+connectedOrganizations, err := graphClient.IdentityGovernance().EntitlementManagement().ConnectedOrganizations().ByConnectedOrganizationId("connectedOrganization-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

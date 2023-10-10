@@ -1,7 +1,7 @@
 ---
 title: "authenticationAppDeviceDetails resource type"
 description: "Provides details about the app and device used during the Azure AD authentication step."
-author: "besiler"
+author: "egreenberg14"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType

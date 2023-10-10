@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Print().Connectors().ByConnectorId("printConnector-id").Delete(context.Background(), nil)
+graphClient.Print().Connectors().ByPrintConnectorId("printConnector-id").Delete(context.Background(), nil)
 
 
 ```

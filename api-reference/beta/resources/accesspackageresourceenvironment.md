@@ -1,7 +1,7 @@
 ---
 title: "accessPackageResourceEnvironment resource type"
 description: "An access package resource environment is a reference to the geolocation environment in which a resource is located."
-author: "hanki-microsoft"
+author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType

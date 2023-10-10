@@ -4,29 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = GrantPostRequestBody()
-recipients_drive_recipient1 = DriveRecipient()
-recipients_drive_recipient1.email = 'john@contoso.com'
+graph_client = GraphServiceClient(request_adapter)
 
+request_body = GrantPostRequestBody(
+	recipients = [
+		DriveRecipient(
+			email = "john@contoso.com",
+		),
+		DriveRecipient(
+			email = "ryan@external.com",
+		),
+	]
+	roles = [
+		"read",
+	]
+)
 
-recipientsArray []= recipientsDriveRecipient1;
-recipients_drive_recipient2 = DriveRecipient()
-recipients_drive_recipient2.email = 'ryan@external.com'
-
-
-recipientsArray []= recipientsDriveRecipient2;
-request_body.recipients(recipientsArray)
-
-
-request_body.Roles(['read', ])
-
-
-
-
-result = await client.shares.by_share_id('sharedDriveItem-id').permission.grant.post(request_body = request_body)
+result = await graph_client.shares.by_share_id('sharedDriveItem-id').permission.grant.post(body = request_body)
 
 
 ```

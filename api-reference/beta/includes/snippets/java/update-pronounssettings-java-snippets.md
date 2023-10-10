@@ -9,7 +9,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 PronounsSettings pronounsSettings = new PronounsSettings();
 pronounsSettings.isEnabledInOrganization = true;
 
-graphClient.organization("{organizationId}").settings().pronouns()
+graphClient.admin().people().pronouns()
 	.buildRequest()
 	.patch(pronounsSettings);
 

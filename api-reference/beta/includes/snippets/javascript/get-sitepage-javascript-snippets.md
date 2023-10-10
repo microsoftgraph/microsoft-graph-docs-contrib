@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let sitePage = await client.api('/sites/{sitesId}/pages/{sitePageId}?select=id,title&expand=webparts')
+let sitePage = await client.api('/sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage')
 	.version('beta')
 	.get();
 

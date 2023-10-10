@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Solutions().VirtualEvents().Webinars().ByWebinarId("virtualEventWebinar-id").Sessions().BySessionId("virtualEventSession-id").AttendanceReports().ByAttendanceReportId("meetingAttendanceReport-id").Get(context.Background(), nil)
+attendanceReports, err := graphClient.Solutions().VirtualEvents().Webinars().ByVirtualEventWebinarId("virtualEventWebinar-id").Sessions().ByVirtualEventSessionId("virtualEventSession-id").AttendanceReports().ByMeetingAttendanceReportId("meetingAttendanceReport-id").Get(context.Background(), nil)
 
 
 ```

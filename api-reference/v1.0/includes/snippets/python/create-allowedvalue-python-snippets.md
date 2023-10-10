@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = AllowedValue()
-request_body.id = 'Alpine'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.is_active = True
+request_body = AllowedValue(
+	id = "Alpine",
+	is_active = True,
+)
 
-
-
-
-result = await client.directory.custom_security_attribute_definitions.by_custom_security_attribute_definition_id('customSecurityAttributeDefinition-id').allowed_values.post(request_body = request_body)
+result = await graph_client.directory.custom_security_attribute_definitions.by_custom_security_attribute_definition_id('customSecurityAttributeDefinition-id').allowed_values.post(body = request_body)
 
 
 ```

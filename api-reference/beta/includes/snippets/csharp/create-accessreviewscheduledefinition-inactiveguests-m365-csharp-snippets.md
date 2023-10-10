@@ -13,34 +13,18 @@ var requestBody = new AccessReviewScheduleDefinition
 	DisplayName = "Review inactive guests on teams",
 	DescriptionForAdmins = "Control guest user access to our teams.",
 	DescriptionForReviewers = "Information security is everyone's responsibility. Review our access policy for more.",
-	InstanceEnumerationScope = new AccessReviewScope
+	InstanceEnumerationScope = new AccessReviewQueryScope
 	{
 		OdataType = "#microsoft.graph.accessReviewQueryScope",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"query" , "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')"
-			},
-			{
-				"queryType" , "MicrosoftGraph"
-			},
-		},
+		Query = "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')",
+		QueryType = "MicrosoftGraph",
 	},
-	Scope = new AccessReviewScope
+	Scope = new AccessReviewInactiveUsersQueryScope
 	{
 		OdataType = "#microsoft.graph.accessReviewInactiveUsersQueryScope",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"query" , "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')"
-			},
-			{
-				"queryType" , "MicrosoftGraph"
-			},
-			{
-				"inactiveDuration" , "P30D"
-			},
-		},
+		Query = "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')",
+		QueryType = "MicrosoftGraph",
+		InactiveDuration = TimeSpan.Parse("P30D"),
 	},
 	Reviewers = new List<AccessReviewReviewerScope>
 	{

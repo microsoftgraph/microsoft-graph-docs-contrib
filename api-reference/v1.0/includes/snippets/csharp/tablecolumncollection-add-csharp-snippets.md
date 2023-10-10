@@ -11,9 +11,9 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new Microsoft.Graph.Drives.Item.Items.Item.Workbook.Tables.Item.Columns.Add.AddPostRequestBody
 {
 	Index = 3,
-	Values = new List<>
+	Values = new List<Json>
 	{
-		new 
+		new Json
 		{
 		},
 	},

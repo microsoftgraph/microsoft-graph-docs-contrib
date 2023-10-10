@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelssecurity.NewSiteSource()
@@ -22,7 +22,7 @@ webUrl := "https://m365x809305.sharepoint.com/sites/Retail"
 site.SetWebUrl(&webUrl) 
 requestBody.SetSite(site)
 
-result, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Custodians().ByCustodianId("ediscoveryCustodian-id").SiteSources().Post(context.Background(), requestBody, nil)
+siteSources, err := graphClient.Security().Cases().EdiscoveryCases().ByEdiscoveryCaseId("ediscoveryCase-id").Custodians().ByEdiscoveryCustodianId("ediscoveryCustodian-id").SiteSources().Post(context.Background(), requestBody, nil)
 
 
 ```

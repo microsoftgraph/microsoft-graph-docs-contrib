@@ -2,7 +2,7 @@
 title: "segment resource type"
 description: "The segment type"
 ms.localizationpriority: medium
-author: "williamlooney"
+author: "mcm223"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---
@@ -12,13 +12,13 @@ doc_type: "resourcePageType"
 Namespace: microsoft.graph.callRecords
 
 Represents a portion of a User-User communication or a User-Meeting communication
-in the case of a Conference call. A typical VOIP call will have one segment per session. In certain
+in the case of a Conference call. A typical VOIP call has one segment per session. In certain
 scenarios, such as PSTN calls, there will be multiple segments per session due to additional
 server-to-server communication required to connect the call.
 
 ## Methods
 
-No methods exist to directly access segments. Please use the [Get callRecord](../api/callrecords-callrecord-get.md)
+No methods exist to directly access segments. Use the [Get callRecord](../api/callrecords-callrecord-get.md)
 api with `$expand=sessions($expand=segments)` or the [List session](../api/callrecords-session-list.md) api with
 `$expand=segments` to get the segments for a [callRecord](callrecords-callrecord.md).
 
@@ -40,7 +40,7 @@ None
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

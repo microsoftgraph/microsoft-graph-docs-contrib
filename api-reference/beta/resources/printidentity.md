@@ -23,7 +23,7 @@ Represents an identity within the Universal Print service. Maps to an [Azure Act
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

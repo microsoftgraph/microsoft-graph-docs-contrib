@@ -1,7 +1,7 @@
 ---
 title: "authentication resource type"
 description: "Exposes relationships that represent the authentication methods supported by Azure AD and that can configured for users."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -20,8 +20,9 @@ Inherits from [entity](entity.md).
 None.
 
 ## Properties
-
-None.
+|Property|Type|Description|
+|:---|:---|:---|
+|id|String|Unique identifier for the **authentication**.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -39,7 +40,7 @@ None.
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

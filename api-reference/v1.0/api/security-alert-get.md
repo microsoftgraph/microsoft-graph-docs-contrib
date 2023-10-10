@@ -12,6 +12,8 @@ Namespace: microsoft.graph.security
 
 Get the properties and relationships of an [alert](../resources/security-alert.md) in an organization based on the specified alert **id** property.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -63,24 +65,28 @@ GET https://graph.microsoft.com/v1.0/security/alerts_v2/da637578995287051192_756
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-security-alert-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-security-alert-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-security-alert-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-security-alert-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-security-alert-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-security-alert-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-security-alert-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-security-alert-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-security-alert-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-security-alert-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -154,9 +160,15 @@ Content-type: application/json
       "rbacGroupName": "UnassignedGroup",
       "onboardingStatus": "onboarded",
       "defenderAvStatus": "unknown",
+      "ipInterfaces": [
+        "1.1.1.1"
+      ],
       "loggedOnUsers": [],
       "roles": [
         "compromised"
+      ],
+      "detailedRoles": [
+        "Main device"
       ],
       "tags": [
         "Test Machine"
@@ -177,6 +189,9 @@ Content-type: application/json
       "detectionStatus": "detected",
       "mdeDeviceId": "73e7e2de709dff64ef64b1d0c30e67fab63279db",
       "roles": [],
+      "detailedRoles": [
+        "Referred in command line"
+      ],
       "tags": [],
       "fileDetails": {
         "sha1": "5f1e8acedc065031aad553b710838eb366cfee9a",
@@ -203,6 +218,7 @@ Content-type: application/json
       "detectionStatus": "detected",
       "mdeDeviceId": "73e7e2de709dff64ef64b1d0c30e67fab63279db",
       "roles": [],
+      "detailedRoles": [],
       "tags": [],
       "imageFile": {
         "sha1": "5f1e8acedc065031aad553b710838eb366cfee9a",
@@ -242,6 +258,7 @@ Content-type: application/json
       "registryKey": "SYSTEM\\CONTROLSET001\\CONTROL\\WMI\\AUTOLOGGER\\SENSEAUDITLOGGER",
       "registryHive": "HKEY_LOCAL_MACHINE",
       "roles": [],
+      "detailedRoles": [],
       "tags": []
     }
   ]

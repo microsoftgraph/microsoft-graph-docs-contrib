@@ -4,18 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = PersonAward()
-request_body.issuing_authority = 'International Association of Branding Management'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.thumbnail_url = 'https://iabm.io/sdhdfhsdhshsd.jpg'
+request_body = PersonAward(
+	issuing_authority = "International Association of Branding Management",
+	thumbnail_url = "https://iabm.io/sdhdfhsdhshsd.jpg",
+)
 
-
-
-
-result = await client.users.by_user_id('user-id').profile.awards.by_award_id('personAward-id').patch(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').profile.awards.by_award_id('personAward-id').patch(body = request_body)
 
 
 ```

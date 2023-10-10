@@ -15,15 +15,12 @@ Namespace: microsoft.graph
 
 Represents the Azure Active Directory tenant that the user or application is signed in to. Only the read and update operations are supported on this resource; create and delete are not supported. Inherits from [directoryObject](directoryobject.md).
 
-This resource lets you add your own data to custom properties using [extensions](/graph/extensibility-overview).
-
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |[Get organization](../api/organization-get.md) | [organization](organization.md) collection|Read properties and relationships of organization object.|
-|[Update organization](../api/organization-update.md) | None | Update organization object. The only properties that can be updated are: **marketingNotificationMails**, **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones**, and **privacyProfile**. |
-| [Get organization settings](../api/organizationsettings-get.md) | [organizationSettings](organizationsettings.md) | Read the organization settings object. |
+|[Update organization](../api/organization-update.md) | None | Update organization object. The only properties that can be updated are: **marketingNotificationMails**, **onPremisesSyncEnabled**,  **technicalNotificationMails**, **securityComplianceNotificationMails**, **securityComplianceNotificationPhones**, and **privacyProfile**. |
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
@@ -58,6 +55,7 @@ This resource lets you add your own data to custom properties using [extensions]
 | id | String | The tenant ID, a unique identifier representing the organization (or tenant). Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |
 | isMultipleDataLocationsForServicesEnabled | Boolean | `true` if organization is Multi-Geo enabled; `false` if organization is not Multi-Geo enabled; `null` (default). Read-only. For more information, see [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | String collection | Not nullable. |
+| onPremisesLastPasswordSyncDateTime  | DateTimeOffset  | The last time a password sync request was received for the tenant. |
 | onPremisesLastSyncDateTime | DateTimeOffset | The time and date at which the tenant was last synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 | onPremisesSyncEnabled | Boolean | `true` if this object is synced from an on-premises directory; `false` if this object was originally synced from an on-premises directory but is no longer synced; Nullable. `null` if this object has never been synced from an on-premises directory (default). |
 | partnerTenantType | partnerTenantType | The type of partnership this tenant has with Microsoft. The possible values are: `microsoftSupport`, `syndicatePartner`, `breadthPartner`, `breadthPartnerDelegatedAdmin`, `resellerPartnerDelegatedAdmin`, `valueAddedResellerPartnerDelegatedAdmin`, `unknownFutureValue`. Nullable. For more information about the possible types, see [partnerTenantType values](#partnertenanttype-values).|
@@ -65,8 +63,8 @@ This resource lets you add your own data to custom properties using [extensions]
 | preferredLanguage | String | The preferred language for the organization. Should follow ISO 639-1 Code; for example `en`. |
 | privacyProfile | [privacyProfile](privacyprofile.md) | The privacy profile of an organization. |
 | provisionedPlans | [provisionedPlan](provisionedplan.md) collection | Not nullable. |
-| securityComplianceNotificationMails | String collection ||
-| securityComplianceNotificationPhones | String collection ||
+| securityComplianceNotificationMails | String collection | Not nullable.|
+| securityComplianceNotificationPhones | String collection | Not nullable.|
 | state | String | State name of the address for the organization. |
 | street | String | Street name of the address for organization. |
 | technicalNotificationMails |String collection | Not nullable. |
@@ -91,7 +89,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |:---------------|:--------|:----------|
 |certificateBasedAuthConfiguration|[certificateBasedAuthConfiguration](certificatebasedauthconfiguration.md) collection| Navigation property to manage certificate-based authentication configuration. Only a single instance of certificateBasedAuthConfiguration can be created in the collection.  |
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the organization resource. Nullable.| 
-|branding|[organizationalBranding](organizationalbranding.md) collection| Resource to manage the default branding for the organization. Nullable.|
+|branding|[organizationalBranding](organizationalbranding.md)| Resource to manage the default branding for the organization. Nullable.|
 |settings|[organizationSettings](organizationsettings.md) | Retrieve the properties and relationships of organizationSettings object. Nullable.|
 
 ## JSON representation
@@ -112,16 +110,19 @@ Here is a JSON representation of the resource
   "assignedPlans": [{"@odata.type": "microsoft.graph.assignedPlan"}],
   "businessPhones": ["String"],
   "city": "String",
+  "companyLastDirSyncTime": "2019-02-07T20:33:52.942Z",
   "country": "String",
   "countryLetterCode": "String",
   "createdDateTime": "String (timestamp)",
   "defaultUsageLocation": "String",
   "deletedDateTime": "String (timestamp)",
   "directorySizeQuota": {"@odata.type": "microsoft.graph.directorySizeQuota"},
+  "dirSyncEnabled": true,
   "displayName": "String",
   "id": "String (identifier)",
   "isMultipleDataLocationsForServicesEnabled": "Boolean",
   "marketingNotificationEmails": ["String"],
+  "onPremisesLastPasswordSyncDateTime": "String (timestamp)",
   "onPremisesLastSyncDateTime": "String (timestamp)",
   "onPremisesSyncEnabled": true,
   "partnerTenantType": "String",
@@ -135,9 +136,7 @@ Here is a JSON representation of the resource
   "street": "String",
   "technicalNotificationMails": ["String"],
   "tenantType": "string",
-  "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}],
-  "companyLastDirSyncTime": "2019-02-07T20:33:52.942Z",
-  "dirSyncEnabled": true
+  "verifiedDomains": [{"@odata.type": "microsoft.graph.verifiedDomain"}]
 }
 ```
 

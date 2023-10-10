@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.SchemaExtensions
+Import-Module Microsoft.Graph.Beta.SchemaExtensions
 
-Remove-MgSchemaExtension -SchemaExtensionId $schemaExtensionId
+Remove-MgBetaSchemaExtension -SchemaExtensionId $schemaExtensionId
 
 ```

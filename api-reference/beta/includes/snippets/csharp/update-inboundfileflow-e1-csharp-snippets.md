@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.Models.IndustryData.InboundFlow
+var requestBody = new Microsoft.Graph.Beta.Models.IndustryData.InboundFileFlow
 {
 	OdataType = "#microsoft.graph.industryData.inboundFileFlow",
 	DisplayName = "Updated flow name",

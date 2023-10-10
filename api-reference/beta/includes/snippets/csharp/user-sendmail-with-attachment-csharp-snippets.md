@@ -30,17 +30,12 @@ var requestBody = new Microsoft.Graph.Beta.Me.SendMail.SendMailPostRequestBody
 		},
 		Attachments = new List<Attachment>
 		{
-			new Attachment
+			new FileAttachment
 			{
 				OdataType = "#microsoft.graph.fileAttachment",
 				Name = "attachment.txt",
 				ContentType = "text/plain",
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"contentBytes" , "SGVsbG8gV29ybGQh"
-					},
-				},
+				ContentBytes = Convert.FromBase64String("SGVsbG8gV29ybGQh"),
 			},
 		},
 	},

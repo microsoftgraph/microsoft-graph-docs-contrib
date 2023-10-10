@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEducationAssignmentDefaults()
@@ -23,7 +23,7 @@ requestBody.SetAddToCalendarAction(&addToCalendarAction)
 notificationChannelUrl := "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 requestBody.SetNotificationChannelUrl(&notificationChannelUrl) 
 
-result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").AssignmentDefaults().Patch(context.Background(), requestBody, nil)
+assignmentDefaults, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").AssignmentDefaults().Patch(context.Background(), requestBody, nil)
 
 
 ```

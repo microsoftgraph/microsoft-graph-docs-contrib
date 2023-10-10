@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.RoleManagement.Directory.RoleAssignmentScheduleInstances["{unifiedRoleAssignmentScheduleInstance-id}"].GetAsync();
+var result = await graphClient.RoleManagement.Directory.RoleAssignmentScheduleInstances.FilterByCurrentUserWithOn("principal").GetAsync();
 
 
 ```

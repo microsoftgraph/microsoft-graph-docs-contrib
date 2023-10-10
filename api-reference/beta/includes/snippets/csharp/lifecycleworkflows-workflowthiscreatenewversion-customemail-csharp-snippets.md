@@ -10,79 +10,86 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Beta.IdentityGovernance.LifecycleWorkflows.Workflows.Item.MicrosoftGraphIdentityGovernanceCreateNewVersion.CreateNewVersionPostRequestBody
 {
-	Workflow = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
+	AdditionalData = new Dictionary<string, object>
 	{
-		Category = Microsoft.Graph.Beta.Models.IdentityGovernance.LifecycleWorkflowCategory.Joiner,
-		Description = "Configure new hire tasks for onboarding employees on their first day",
-		DisplayName = "Global onboard new hire employee",
-		IsEnabled = true,
-		IsSchedulingEnabled = false,
-		ExecutionConditions = new Microsoft.Graph.Beta.Models.IdentityGovernance.WorkflowExecutionConditions
 		{
-			OdataType = "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"scope" , new 
-					{
-						OdataType = "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-						Rule = "(department eq 'Marketing')",
-					}
-				},
-				{
-					"trigger" , new 
-					{
-						OdataType = "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-						TimeBasedAttribute = "employeeHireDate",
-						OffsetInDays = 1,
-					}
-				},
-			},
+			"category" , "joiner"
 		},
-		Tasks = new List<Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject>
 		{
-			new Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject
+			"description" , "Configure new hire tasks for onboarding employees on their first day"
+		},
+		{
+			"displayName" , "custom email marketing API test"
+		},
+		{
+			"isEnabled" , true
+		},
+		{
+			"isSchedulingEnabled" , false
+		},
+		{
+			"executionConditions" , new 
 			{
-				ContinueOnError = false,
-				Description = "Enable user account in the directory",
-				DisplayName = "Enable User Account",
-				IsEnabled = true,
-				TaskDefinitionId = "6fc52c9d-398b-4305-9763-15f42c1676fc",
-				Arguments = new List<KeyValuePair>
+				OdataType = "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
+				Scope = new 
 				{
+					OdataType = "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+					Rule = "(department eq 'Marketing')",
 				},
-			},
-			new Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject
+				Trigger = new 
+				{
+					OdataType = "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+					TimeBasedAttribute = "employeeHireDate",
+					OffsetInDays = 0,
+				},
+			}
+		},
+		{
+			"tasks" , new List<object>
 			{
-				ContinueOnError = false,
-				Description = "Send welcome email to new hire",
-				DisplayName = "Send Welcome Email",
-				IsEnabled = true,
-				TaskDefinitionId = "70b29d51-b59a-4773-9280-8841dfd3f2ea",
-				Arguments = new List<KeyValuePair>
+				new 
 				{
-					new KeyValuePair
+					ContinueOnError = false,
+					Description = "Enable user account in the directory",
+					DisplayName = "Enable User Account",
+					IsEnabled = true,
+					TaskDefinitionId = "6fc52c9d-398b-4305-9763-15f42c1676fc",
+					Arguments = new List<object>
 					{
-						Name = "cc",
-						Value = "1baa57fa-3c4e-4526-ba5a-db47a9df95f0",
-					},
-					new KeyValuePair
-					{
-						Name = "customSubject",
-						Value = "Welcome to the organization {{userDisplayName}}!",
-					},
-					new KeyValuePair
-					{
-						Name = "customBody",
-						Value = "Welcome to our organization {{userGivenName}}!",
-					},
-					new KeyValuePair
-					{
-						Name = "locale",
-						Value = "en-us",
 					},
 				},
-			},
+				new 
+				{
+					ContinueOnError = false,
+					Description = "Send welcome email to new hire",
+					DisplayName = "Send Welcome Email",
+					IsEnabled = true,
+					TaskDefinitionId = "70b29d51-b59a-4773-9280-8841dfd3f2ea",
+					Arguments = new List<object>
+					{
+						new 
+						{
+							Name = "cc",
+							Value = "1baa57fa-3c4e-4526-ba5a-db47a9df95f0",
+						},
+						new 
+						{
+							Name = "customSubject",
+							Value = "Welcome to the organization {{userDisplayName}}!",
+						},
+						new 
+						{
+							Name = "customBody",
+							Value = "Welcome to our organization {{userGivenName}}!",
+						},
+						new 
+						{
+							Name = "locale",
+							Value = "en-us",
+						},
+					},
+				},
+			}
 		},
 	},
 };

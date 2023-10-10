@@ -21,7 +21,7 @@ The typical call pattern is as follows:
 1. The application begins by calling a GET request with the delta function on the desired resource.
 2. Microsoft Graph sends a response containing the requested resource and a [state token](#state-tokens).
 
-     a.  If a `@odata.nextLink` URL is returned, there may be additional pages of data to be retrieved in the session. The application continues making requests using the `@odata.nextLink` URL to retrieve all pages of data until a `@odata.deltaLink` URL is returned in the response.
+     a.  If an `@odata.nextLink` URL is returned, there are additional pages of data to be retrieved in the session. This is true even if the current response may contain an empty result.  The application continues making requests using the `@odata.nextLink` URL to retrieve all pages of data until a `@odata.deltaLink` URL is returned in the response.
 
      b.  If a `@odata.deltaLink` URL is returned, there is no more data about the existing state of the resource to be returned. For future requests, the application uses the `@odata.deltaLink` URL to learn about changes to the resource.
 
@@ -110,7 +110,9 @@ Delta query is currently supported for the following resources. Note that some r
 | :------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Applications                                                   | [delta](/graph/api/application-delta) function of the [application](/graph/api/resources/application) resource                                     |
 | Administrative units                                           | [delta](/graph/api/administrativeunit-delta) function of the [administrativeUnit](/graph/api/resources/administrativeunit) resource                |
-| Chat messages in a channel                                     | [delta](/graph/api/chatmessage-delta) function (preview) of the [chatMessage](/graph/api/resources/chatmessage) resource                           |
+| Call recordings (preview)                                    | [delta](/graph/api/callrecording-delta) function (preview) of the [callRecording](/graph/api/resources/callrecording) resource, through the [getAllRecordings](/graph/api/onlinemeeting-getallrecordings) function
+| Call transcripts (preview)                                    | [delta](/graph/api/calltranscript-delta) function (preview) of the [callTranscript](/graph/api/resources/calltranscript) resource, through the [getAllTranscripts](/graph/api/onlinemeeting-getalltranscripts) function
+| Chat messages in a channel                                     | [delta](/graph/api/chatmessage-delta) function (preview) of the [chatMessage](/graph/api/resources/chatmessage) resource                             |
 | Device objects                                                 | [delta](/graph/api/device-delta) function of the [device](/graph/api/resources/device) resource                                                    |
 | Directory roles                                                | [delta](/graph/api/directoryrole-delta) function of the [directoryRole](/graph/api/resources/directoryrole) resource |
 | Directory objects                                              | [delta](/graph/api/directoryobject-delta) function of the [directoryObject](/graph/api/resources/directoryObject) resource |
@@ -195,7 +197,7 @@ Sometimes the changes that have occurred to the object might not be indicated wh
 
 ### National clouds
 
-Delta queries are available for customers hosted on the public cloud and Microsoft Graph China operated by 21Vianet only.
+Delta queries are only available for customers hosted on the public cloud, Microsoft Cloud for US Government, and Microsoft Graph China operated by 21Vianet.
 
 ### Replays
 

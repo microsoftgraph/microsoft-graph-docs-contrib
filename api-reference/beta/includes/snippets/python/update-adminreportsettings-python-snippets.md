@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = AdminReportSettings()
-request_body.display_concealed_names = True
+graph_client = GraphServiceClient(request_adapter)
 
+request_body = AdminReportSettings(
+	display_concealed_names = True,
+)
 
-
-
-result = await client.admin.report_settings.patch(request_body = request_body)
+result = await graph_client.admin.report_settings.patch(body = request_body)
 
 
 ```

@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelsediscovery.NewSiteSource()
@@ -22,7 +22,7 @@ webUrl := "https://contoso.sharepoint.com/sites/HumanResources"
 site.SetWebUrl(&webUrl) 
 requestBody.SetSite(site)
 
-result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").Custodians().ByCustodianId("custodian-id").SiteSources().Post(context.Background(), requestBody, nil)
+siteSources, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").Custodians().ByCustodianId("custodian-id").SiteSources().Post(context.Background(), requestBody, nil)
 
 
 ```

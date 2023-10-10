@@ -2,7 +2,7 @@
 title: "relyingPartyDetailedSummary resource type"
 description: "Represents a relying party in AD FS."
 ms.localizationpriority: medium
-author: "besiler"
+author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---

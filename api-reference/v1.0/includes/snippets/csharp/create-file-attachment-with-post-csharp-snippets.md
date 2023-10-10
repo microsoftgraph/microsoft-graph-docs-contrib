@@ -19,16 +19,11 @@ var requestBody = new Microsoft.Graph.Groups.Item.Threads.Item.Reply.ReplyPostRe
 		},
 		Attachments = new List<Attachment>
 		{
-			new Attachment
+			new FileAttachment
 			{
 				OdataType = "#microsoft.graph.fileAttachment",
 				Name = "Another file as attachment",
-				AdditionalData = new Dictionary<string, object>
-				{
-					{
-						"contentBytes" , "VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"
-					},
-				},
+				ContentBytes = Convert.FromBase64String("VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu"),
 			},
 		},
 	},

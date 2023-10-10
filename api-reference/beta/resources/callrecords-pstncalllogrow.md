@@ -1,7 +1,7 @@
 ---
 title: "pstnCallLogRow resource type"
 description: "Represents a row of data in the public switched telephone network (PSTN) call log."
-author: "williamlooney"
+author: "mcm223"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
@@ -31,6 +31,10 @@ Represents a row of data in the public switched telephone network (PSTN) call lo
 |callId|String|Call identifier. Not guaranteed to be unique.|
 |callType|String|Indicates whether the call was a PSTN outbound or inbound call and the type of call such as a call placed by a user or an audio conference.|
 |charge|Decimal|Amount of money or cost of the call that is charged to your account.|
+|clientLocalIpV4Address|String|Local IPv4 of the client that is retrieved from the operating system of the client.|
+|clientLocalIpV6Address|String|Local IPv6 of the client that is retrieved from the operating system of the client.|
+|clientPublicIpV4Address|String|Public IPv4 of the client that can be used to determine the location of the client.|
+|clientPublicIpV6Address|String|Public IPv6 of the client that can be used to determine the location of the client.|
 |conferenceId|String|ID of the audio conference.|
 |connectionCharge|Decimal|Connection fee price.|
 |currency|String|Type of currency used to calculate the cost of the call ([ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)).|
@@ -41,8 +45,8 @@ Represents a row of data in the public switched telephone network (PSTN) call lo
 |id|String|Unique call identifier (GUID).|
 |inventoryType|String|User's phone number type, such as a service of toll-free number.|
 |licenseCapability|String|The license used for the call.|
-|operator|String|The telecommunications operator which provided PSTN services for this call. This may be Microsoft, or it may be a third-party operator via the [Operator Connect Program](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-operator-connect-and-more-teams-calling-updates/ba-p/2176398).|
-|otherPartyCountryCode|String|Country code of the caller in case of an incoming call, or callee in case of an outgoing call. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
+|operator|String|The telecommunications operator that provided PSTN services for this call. This may be Microsoft, or it may be a third-party operator via the [Operator Connect Program](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/introducing-operator-connect-and-more-teams-calling-updates/ba-p/2176398).|
+|otherPartyCountryCode|String|Country code of the caller for an incoming call, or callee for an outgoing call. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |startDateTime|DateTimeOffset|Call start time.|
 |tenantCountryCode|String|Country code of the tenant. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |usageCountryCode|String|Country code of the user. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
@@ -56,7 +60,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -74,6 +78,10 @@ The following is a JSON representation of the resource.
   "callId": "String",
   "callType": "String",
   "charge": "Decimal",
+  "clientLocalIpV4Address": "String",
+  "clientLocalIpV6Address": "String",
+  "clientPublicIpV4Address": "String",
+  "clientPublicIpV6Address": "String",
   "conferenceId": "String",
   "connectionCharge": "Decimal",
   "currency": "String",

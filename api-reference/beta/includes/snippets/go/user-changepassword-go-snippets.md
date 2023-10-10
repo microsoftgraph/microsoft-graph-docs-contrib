@@ -12,10 +12,10 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewChangePasswordPostRequestBody()
+requestBody := graphusers.NewItemChangePasswordPostRequestBody()
 currentPassword := "xWwvJ]6NMw+bWH-d"
 requestBody.SetCurrentPassword(&currentPassword) 
 newPassword := "0eM85N54wFxWwvJ]"

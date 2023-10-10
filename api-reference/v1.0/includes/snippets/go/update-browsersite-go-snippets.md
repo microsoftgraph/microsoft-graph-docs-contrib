@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewBrowserSite()
@@ -29,7 +29,7 @@ requestBody.SetAllowRedirect(&allowRedirect)
 comment := "Updating to Edge."
 requestBody.SetComment(&comment) 
 
-result, err := graphClient.Admin().Edge().InternetExplorerMode().SiteLists().BySiteListId("browserSiteList-id").Sites().BySiteId("browserSite-id").Patch(context.Background(), requestBody, nil)
+sites, err := graphClient.Admin().Edge().InternetExplorerMode().SiteLists().ByBrowserSiteListId("browserSiteList-id").Sites().ByBrowserSiteId("browserSite-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

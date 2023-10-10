@@ -24,7 +24,7 @@ A logical container to add content from an external source into Microsoft Graph.
 | [Get externalConnection](../api/externalconnectors-externalconnection-get.md)       | externalConnection                            | Read properties and relationships of an **externalConnection** object. |
 | [Update externalConnection](../api/externalconnectors-externalconnection-update.md) | externalConnection                            | Update an **externalConnection** object. |
 | [Delete externalConnection](../api/externalconnectors-externalconnection-delete.md) | None                                          | Delete an **externalConnection** object. |
-| [Create schema](../api/externalconnectors-externalconnection-post-schema.md)        | None *or* [schema](externalconnectors-schema.md)                 | Register connection schema. |
+| [Create schema](../api/externalconnectors-externalconnection-patch-schema.md)        | None *or* [schema](externalconnectors-schema.md)                 | Register connection schema. |
 | [Get operation](../api/externalconnectors-connectionoperation-get.md)               | [connectionOperation](externalconnectors-connectionoperation.md) | Get the status of an asynchronous request to create the connection schema. |
 | [Create externalItem](../api/externalconnectors-externalconnection-put-items.md)    | [externalItem](externalconnectors-externalitem.md)               | Create a new externalItem by posting to the items collection. |
 |[Get connectionQuota](../api/externalconnectors-connectionquota-get.md)|[connectionQuota](../resources/externalconnectors-connectionquota.md)| Retrieve the properties and relationships of a **connectionQuota**. |
@@ -34,11 +34,10 @@ A logical container to add content from an external source into Microsoft Graph.
 | Property           | Type                              | Description |
 |:--------------------------|:----------------------------------|:------------|
 | activitySettings          |[microsoft.graph.externalConnectors.activitySettings](../resources/externalconnectors-activitysettings.md)| Collects configurable settings related to activities involving connector content.|
-| complianceSettings        |[microsoft.graph.externalConnectors.complianceSettings](../resources/externalconnectors-compliancesettings.md)| The settings required for the connection to participate in eDiscovery, such as the display templates for eDiscovery results.|
 | configuration             | [microsoft.graph.externalConnectors.configuration](externalconnectors-configuration.md) | Specifies additional application IDs that are allowed to manage the connection and to index content in the connection. Optional. |
 | connectorId               | String            | The Teams App ID. Optional.|
 | description               | String           | Description of the connection displayed in the Microsoft 365 admin center. Optional. |
-| enabledContentExperiences | microsoft.graph.externalConnectors.contentExperienceType collection | The list of content experiences the connection will participate in. Possible values are `search` and `compliance`.|
+| enabledContentExperiences | microsoft.graph.externalConnectors.contentExperienceType collection | The list of content experiences the connection will participate in. Possible values are `search`.|
 | id                        | String           | Developer-provided unique ID of the connection within the Azure Active Directory tenant. Must be between 3 and 32 characters in length. Must only contain alphanumeric characters. Cannot begin with `Microsoft` or be one of the following values: `None`, `Directory`, `Exchange`, `ExchangeArchive`, `LinkedIn`, `Mailbox`, `OneDriveBusiness`, `SharePoint`, `Teams`, `Yammer`, `Connectors`, `TaskFabric`, `PowerBI`, `Assistant`, `TopicEngine`, `MSFT_All_Connectors`. Required. |
 | ingestedItemsCount        | Int64            |  The number of items ingested into a connection. This value is refreshed every 15 minutes. If the connection state is `draft`, then **ingestedItemsCount** will be `null`. |
 | name                      | String           | The display name of the connection to be displayed in the Microsoft 365 admin center. Maximum length of 128 characters. Required. |

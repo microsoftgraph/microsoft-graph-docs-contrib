@@ -4,7 +4,7 @@ description: "Represents an Azure Active Directory (Azure AD) terms of use agree
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
-author: "raprakasMSFT"
+author: "AlexFilipin"
 ---
 
 # agreementFileData resource type

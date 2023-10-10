@@ -28,6 +28,7 @@ Describes print activity for a printer during a specified time period (usageDate
 |:-------------|:------------|:------------|
 |id|String|The ID of this usage summary.|
 |printerID|String|The ID of the printer represented by these statistics.|
+|printerName|String|The name of the printer represented by these statistics.|
 |usageDate|Date|The date associated with these statistics.|
 |completedBlackAndWhiteJobCount|Int64|The number of black and white print jobs completed by the printer on the associated date.|
 |completedColorJobCount|Int64|The number of color print jobs completed by the printer on the associated date.|
@@ -49,6 +50,7 @@ The following is a JSON representation of the resource.
 {
     "id": "String (identifier)",
     "printerId": "String (identifier)",
+    "printerName": "String (identifier)",
     "usageDate": "String (timestamp)",
     "completedBlackAndWhiteJobCount": 123456,
     "completedColorJobCount": 123456,

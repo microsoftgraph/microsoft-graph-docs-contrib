@@ -12,19 +12,18 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphcommunications.NewMuteAllPostRequestBody()
 participants := []string {
 	"",
-
 }
 requestBody.SetParticipants(participants)
 clientContext := "clientContext-value"
 requestBody.SetClientContext(&clientContext) 
 
-result, err := graphClient.Communications().Calls().ByCallId("call-id").Participants().MuteAll().Post(context.Background(), requestBody, nil)
+muteAll, err := graphClient.Communications().Calls().ByCallId("call-id").Participants().MuteAll().Post(context.Background(), requestBody, nil)
 
 
 ```

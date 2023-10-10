@@ -27,7 +27,7 @@ var requestBody = new Microsoft.Graph.Beta.Models.DeviceManagement.AlertRule
 			{
 				"",
 			},
-			NotificationReceivers = new List<NotificationReceiver>
+			NotificationReceivers = new List<Microsoft.Graph.Beta.Models.DeviceManagement.NotificationReceiver>
 			{
 			},
 		},

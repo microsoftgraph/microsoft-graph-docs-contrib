@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new AuthenticationEventsFlow
+var requestBody = new ExternalUsersSelfServiceSignUpEventsFlow
 {
 	OdataType = "#microsoft.graph.externalUsersSelfServiceSignUpEventsFlow",
 	DisplayName = "New user flow description",

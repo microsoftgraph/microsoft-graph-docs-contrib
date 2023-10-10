@@ -16,8 +16,6 @@ Namespace: microsoft.graph
 Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API. Identity synchronization (also called *provisioning*) allows you to automate the provisioning (creation, maintenance) and de-provisioning (removal) of user identities and roles from Azure AD to supported cloud applications. For more information, see [How Application Provisioning works in Azure Active Directory](/azure/active-directory/app-provisioning/how-provisioning-works)
 
 ## Methods
-
-
 |Method|Return type|Description|
 |:---|:---|:---|
 |[acquireAccessToken](../api/synchronization-synchronization-acquireaccesstoken.md)|None| Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application. |
@@ -38,7 +36,6 @@ Represents the capability for Azure Active Directory (Azure AD) identity synchro
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.synchronization",
   "openType": false
 }

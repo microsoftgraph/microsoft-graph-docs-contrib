@@ -169,78 +169,59 @@ var requestBody = new BookingAppointment
 	FilledAttendeesCount = 1,
 	Customers = new List<BookingCustomerInformationBase>
 	{
-		new BookingCustomerInformationBase
+		new BookingCustomerInformation
 		{
 			OdataType = "#microsoft.graph.bookingCustomerInformation",
-			AdditionalData = new Dictionary<string, object>
+			CustomerId = "7ed53fa5-9ef2-4f2f-975b-27447440bc09",
+			Name = "Jordan Miller",
+			EmailAddress = "jordanm@contoso.com",
+			Phone = "213-555-0199",
+			Notes = null,
+			Location = new Location
 			{
+				OdataType = "#microsoft.graph.location",
+				DisplayName = "Customer",
+				LocationEmailAddress = null,
+				LocationUri = "",
+				LocationType = null,
+				UniqueId = null,
+				UniqueIdType = null,
+				Address = new PhysicalAddress
 				{
-					"customerId" , "7ed53fa5-9ef2-4f2f-975b-27447440bc09"
+					OdataType = "#microsoft.graph.physicalAddress",
+					Type = PhysicalAddressType.Home,
+					PostOfficeBox = "",
+					Street = "",
+					City = "",
+					State = "",
+					CountryOrRegion = "",
+					PostalCode = "",
 				},
+				Coordinates = new OutlookGeoCoordinates
 				{
-					"name" , "Jordan Miller"
+					Altitude = null,
+					Latitude = null,
+					Longitude = null,
+					Accuracy = null,
+					AltitudeAccuracy = null,
 				},
+			},
+			TimeZone = "America/Chicago",
+			CustomQuestionAnswers = new List<BookingQuestionAnswer>
+			{
+				new BookingQuestionAnswer
 				{
-					"emailAddress" , "jordanm@contoso.com"
-				},
-				{
-					"phone" , "213-555-0199"
-				},
-				{
-					"notes" , null
-				},
-				{
-					"location" , new 
+					QuestionId = "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
+					Question = "What is your age",
+					AnswerInputType = AnswerInputType.Text,
+					AnswerOptions = new List<string>
 					{
-						OdataType = "#microsoft.graph.location",
-						DisplayName = "Customer",
-						LocationEmailAddress = null,
-						LocationUri = "",
-						LocationType = null,
-						UniqueId = null,
-						UniqueIdType = null,
-						Address = new 
-						{
-							OdataType = "#microsoft.graph.physicalAddress",
-							Type = "home",
-							PostOfficeBox = "",
-							Street = "",
-							City = "",
-							State = "",
-							CountryOrRegion = "",
-							PostalCode = "",
-						},
-						Coordinates = new 
-						{
-							Altitude = null,
-							Latitude = null,
-							Longitude = null,
-							Accuracy = null,
-							AltitudeAccuracy = null,
-						},
-					}
-				},
-				{
-					"timeZone" , "America/Chicago"
-				},
-				{
-					"customQuestionAnswers" , new List<>
+					},
+					IsRequired = true,
+					Answer = "25",
+					SelectedOptions = new List<string>
 					{
-						new 
-						{
-							QuestionId = "3bc6fde0-4ad3-445d-ab17-0fc15dba0774",
-							Question = "What is your age",
-							AnswerInputType = "text",
-							AnswerOptions = new List<>
-							{
-							},
-							IsRequired = true,
-							Answer = "25",
-							SelectedOptions = new List<>
-							{
-							},
-						},
-					}
+					},
 				},
 			},
 		},

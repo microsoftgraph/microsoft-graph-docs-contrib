@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewLearningProvider()
@@ -31,7 +31,7 @@ requestBody.SetLoginWebUrl(&loginWebUrl)
 isCourseActivitySyncEnabled := true
 requestBody.SetIsCourseActivitySyncEnabled(&isCourseActivitySyncEnabled) 
 
-result, err := graphClient.EmployeeExperience().LearningProviders().Post(context.Background(), requestBody, nil)
+learningProviders, err := graphClient.EmployeeExperience().LearningProviders().Post(context.Background(), requestBody, nil)
 
 
 ```

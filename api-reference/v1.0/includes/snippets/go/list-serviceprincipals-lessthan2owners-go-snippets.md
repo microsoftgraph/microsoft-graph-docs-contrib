@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -33,7 +33,7 @@ configuration := &graphserviceprincipals.ServicePrincipalsRequestBuilderGetReque
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.ServicePrincipals().Get(context.Background(), configuration)
+servicePrincipals, err := graphClient.ServicePrincipals().Get(context.Background(), configuration)
 
 
 ```

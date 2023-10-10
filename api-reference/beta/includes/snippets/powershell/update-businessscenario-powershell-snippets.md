@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Bookings
+Import-Module Microsoft.Graph.Beta.Bookings
 
 $params = @{
 	ownerAppIds = @(
@@ -13,6 +13,6 @@ $params = @{
 	)
 }
 
-Update-MgBusinessScenario -BusinessScenarioId $businessScenarioId -BodyParameter $params
+Update-MgBetaBusinessScenario -BusinessScenarioId $businessScenarioId -BodyParameter $params
 
 ```

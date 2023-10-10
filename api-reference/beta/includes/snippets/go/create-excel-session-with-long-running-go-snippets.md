@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -26,7 +26,7 @@ requestBody := graphdrives.NewCreateSessionPostRequestBody()
 persistChanges := true
 requestBody.SetPersistChanges(&persistChanges) 
 
-result, err := graphClient.Drives().ByDriveId("drive-id").Items().ByItemId("driveItem-id").Workbook().CreateSession().Post(context.Background(), requestBody, configuration)
+createSession, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().CreateSession().Post(context.Background(), requestBody, configuration)
 
 
 ```

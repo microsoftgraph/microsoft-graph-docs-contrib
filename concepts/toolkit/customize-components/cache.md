@@ -7,18 +7,18 @@ author: sebastienlevert
 
 # Microsoft Graph Toolkit caching
 
-The Microsoft Graph Toolkit supports caching of select Microsoft Graph API calls. Calls are being cached per entity, such as people, contact, photo. This allows one component to retrieve the data and other components to reuse it without calling Microsoft Graph.
+The Microsoft Graph Toolkit supports caching of select Microsoft Graph API calls. Calls are cached per entity, such as people, contact, photo. This allows one component to retrieve the data and other components to reuse it without calling Microsoft Graph.
 
 > [!TIP]
-> For more information about which entities are cached by each component, see the component's documentation.
+> For more information about which entities are cached by each component, see the documentation for that component.
 
-Databases created by mgt for caching are prefixed with `mgt-`. The data for each entity is stored in a separate object store. To inspect the cache, use the **Application** tab in the developer panel (F12 tools) - under the **Storage** section, click on the **IndexedDB** tab. 
+Databases created by the Toolkit for caching are prefixed with `mgt-`. The data for each entity is stored in a separate object store. To inspect the cache, use the **Application** tab in the developer panel (F12 tools). In the **Storage** section, choose the **IndexedDB** tab.
 
 ![devtools indexedDB](../images/indexedDBpanel.png)
 
 ## Cache configuration
 
-You can read and write the cache options through the static class `CacheService.config` object. It is formatted as shown.
+You can read and write the cache options through the static class `CacheService.config` object. The following example shows the format.
 
 ```TypeScript
 let config = {
@@ -85,17 +85,19 @@ CacheService.config.users.invalidationPeriod = 1800000;
 
 The cache is automatically cleared when the user signs out. It can also be cleared manually.
 
-The clear all the stores in the cache, the `clearCaches()` method of the `CacheService` class will clear every store maintained by the CacheService.
+To clear all the stores in the cache for the currently signed-in user, use the `clearCacheById()` method of the `CacheService` class, providing the user's cache ID. To retrieve the user's cache ID, call the `getCacheId` method from the `Providers` class.
 
 ```JavaScript
+import { Providers } from '@microsoft/mgt';
 import { CacheService } from '@microsoft/mgt-element';
 
-CacheService.clearCaches();
+const cacheId = await Providers.getCacheId();
+await CacheService.clearCacheById(cacheId);
 ```
 
 ## Creating your own cache stores
 
-If you want to create and populate your own cache stores for your custom components, you can use the `CacheService` static class.
+If you want to create and populate your own cache stores for your custom components, use the `CacheService` static class.
 
 ```JavaScript
 CacheService.getCache(schema: CacheSchema, storeName: String);

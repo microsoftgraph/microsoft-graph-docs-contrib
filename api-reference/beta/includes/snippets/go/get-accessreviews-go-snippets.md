@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
@@ -29,7 +29,7 @@ configuration := &graphaccessreviews.AccessReviewsRequestBuilderGetRequestConfig
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.AccessReviews().Get(context.Background(), configuration)
+accessReviews, err := graphClient.AccessReviews().Get(context.Background(), configuration)
 
 
 ```

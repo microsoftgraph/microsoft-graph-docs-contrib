@@ -20,8 +20,8 @@ Represents a request to offer a shift to another user in the team.
 | [List](../api/offershiftrequest-list.md) | Collection of [offerShiftRequest](offershiftrequest.md) | Read the properties and relationships of all **offerShiftRequest** objects in a team. |
 | [Create](../api/offershiftrequest-post.md) | [offerShiftRequest](offershiftrequest.md) | Create an instance of an **offerShiftRequest** object. |
 | [Get](../api/offershiftrequest-get.md) | [offerShiftRequest](offershiftrequest.md) | Read the properties and relationships of an **offerShiftRequest** object. |
-|[Approve](../api/offershiftrequest-approve.md)|None|Approve an **offerShiftRequest**. |
-|[Decline](../api/offershiftrequest-decline.md)|None|Decline an **offerShiftRequest**. |
+| [Approve](../api/offershiftrequest-approve.md)|None|Approve an **offerShiftRequest**. |
+| [Decline](../api/offershiftrequest-decline.md)|None|Decline an **offerShiftRequest**. |
 
 ## Properties
 

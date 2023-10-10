@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewTeamsTab()
@@ -33,7 +33,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Chats().ByChatId("chat-id").Tabs().Post(context.Background(), requestBody, nil)
+tabs, err := graphClient.Chats().ByChatId("chat-id").Tabs().Post(context.Background(), requestBody, nil)
 
 
 ```

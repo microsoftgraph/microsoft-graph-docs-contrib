@@ -12,13 +12,12 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphsites.NewAssociateWithHubSitesPostRequestBody()
 hubSiteUrls := []string {
 	"https://graph.microsoft.com/beta/sites/id",
-
 }
 requestBody.SetHubSiteUrls(hubSiteUrls)
 propagateToExistingLists := false

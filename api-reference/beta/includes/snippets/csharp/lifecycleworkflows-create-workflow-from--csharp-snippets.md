@@ -14,27 +14,20 @@ var requestBody = new Microsoft.Graph.Beta.Models.IdentityGovernance.Workflow
 	Description = "Configure new hire tasks for onboarding employees on their first day",
 	DisplayName = "Australia Onboard new hire employee",
 	IsEnabled = true,
-	IsSchedulingEnabled = false,
-	ExecutionConditions = new Microsoft.Graph.Beta.Models.IdentityGovernance.WorkflowExecutionConditions
+	IsSchedulingEnabled = true,
+	ExecutionConditions = new Microsoft.Graph.Beta.Models.IdentityGovernance.TriggerAndScopeBasedConditions
 	{
 		OdataType = "#microsoft.graph.identityGovernance.triggerAndScopeBasedConditions",
-		AdditionalData = new Dictionary<string, object>
+		Scope = new Microsoft.Graph.Beta.Models.IdentityGovernance.RuleBasedSubjectSet
 		{
-			{
-				"scope" , new 
-				{
-					OdataType = "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
-					Rule = "(country eq 'Australia')",
-				}
-			},
-			{
-				"trigger" , new 
-				{
-					OdataType = "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
-					TimeBasedAttribute = "employeeHireDate",
-					OffsetInDays = 0,
-				}
-			},
+			OdataType = "#microsoft.graph.identityGovernance.ruleBasedSubjectSet",
+			Rule = "(country eq 'Australia')",
+		},
+		Trigger = new Microsoft.Graph.Beta.Models.IdentityGovernance.TimeBasedAttributeTrigger
+		{
+			OdataType = "#microsoft.graph.identityGovernance.timeBasedAttributeTrigger",
+			TimeBasedAttribute = Microsoft.Graph.Beta.Models.IdentityGovernance.WorkflowTriggerTimeBasedAttribute.EmployeeHireDate,
+			OffsetInDays = 0,
 		},
 	},
 	Tasks = new List<Microsoft.Graph.Beta.Models.IdentityGovernance.TaskObject>

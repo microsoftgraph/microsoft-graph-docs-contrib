@@ -4,45 +4,32 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = AccessPackageAssignmentPolicy()
-request_body.display_name = 'Sales department users'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.description = 'All users from sales department'
+request_body = AccessPackageAssignmentPolicy(
+	display_name = "Sales department users",
+	description = "All users from sales department",
+	allowed_target_scope = AllowedTargetScope.SpecificDirectoryUsers,
+	specific_allowed_targets = [
+		AttributeRuleMembers(
+			odata_type = "#microsoft.graph.attributeRuleMembers",
+			description = "Membership rule for all users from sales department",
+			membership_rule = "(user.department -eq \"Sales\")",
+		),
+	]
+	automatic_request_settings = AccessPackageAutomaticRequestSettings(
+		request_access_for_allowed_targets = True,
+		remove_access_when_target_leaves_allowed_targets = True,
+		grace_period_before_access_removal = "P7D",
+	),
+	access_package = AccessPackage(
+		id = "8a36831e-1527-4b2b-aff2-81259a8d8e76",
+	),
+)
 
-request_body.allowedtargetscope(AllowedTargetScope.SpecificDirectoryUsers('allowedtargetscope.specificdirectoryusers'))
-
-specific_allowed_targets_subject_set1 = SubjectSet()
-specific_allowed_targets_subject_set1.@odata_type = '#microsoft.graph.attributeRuleMembers'
-
-additional_data = [
-'description' => 'Membership rule for all users from sales department', 
-'membership_rule' => '(user.department -eq \"Sales\")', 
-];
-specific_allowed_targets_subject_set1.additional_data(additional_data)
-
-
-
-specificAllowedTargetsArray []= specificAllowedTargetsSubjectSet1;
-request_body.specificallowedtargets(specificAllowedTargetsArray)
-
-
-automatic_request_settings = AccessPackageAutomaticRequestSettings()
-automatic_request_settings.request_access_for_allowed_targets = True
-
-
-request_body.automatic_request_settings = automatic_request_settings
-access_package = AccessPackage()
-access_package.id = '8a36831e-1527-4b2b-aff2-81259a8d8e76'
-
-
-request_body.access_package = access_package
-
-
-
-result = await client.identity_governance.entitlement_management.assignment_policies.post(request_body = request_body)
+result = await graph_client.identity_governance.entitlement_management.assignment_policies.post(body = request_body)
 
 
 ```

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewTenantAppManagementPolicy()
@@ -31,7 +31,7 @@ passwordCredentialConfiguration.SetRestrictForAppsCreatedAfterDateTime(&restrict
 passwordCredentialConfiguration1 := graphmodels.NewPasswordCredentialConfiguration()
 restrictionType := graphmodels.PASSWORDLIFETIME_APPCREDENTIALRESTRICTIONTYPE 
 passwordCredentialConfiguration1.SetRestrictionType(&restrictionType) 
-maxLifetime , err := abstractions.ParseISODuration("P4DT12H30M5S")
+maxLifetime , err := abstractions.ParseISODuration("P90D")
 passwordCredentialConfiguration1.SetMaxLifetime(&maxLifetime) 
 restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2017-01-01T10:37:00Z")
 passwordCredentialConfiguration1.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
@@ -52,7 +52,7 @@ passwordCredentialConfiguration3.SetRestrictForAppsCreatedAfterDateTime(&restric
 passwordCredentialConfiguration4 := graphmodels.NewPasswordCredentialConfiguration()
 restrictionType := graphmodels.SYMMETRICKEYLIFETIME_APPCREDENTIALRESTRICTIONTYPE 
 passwordCredentialConfiguration4.SetRestrictionType(&restrictionType) 
-maxLifetime , err := abstractions.ParseISODuration("P40D")
+maxLifetime , err := abstractions.ParseISODuration("P30D")
 passwordCredentialConfiguration4.SetMaxLifetime(&maxLifetime) 
 restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2015-01-01T10:37:00Z")
 passwordCredentialConfiguration4.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
@@ -63,7 +63,6 @@ passwordCredentials := []graphmodels.PasswordCredentialConfigurationable {
 	passwordCredentialConfiguration2,
 	passwordCredentialConfiguration3,
 	passwordCredentialConfiguration4,
-
 }
 applicationRestrictions.SetPasswordCredentials(passwordCredentials)
 
@@ -78,12 +77,11 @@ keyCredentialConfiguration.SetRestrictForAppsCreatedAfterDateTime(&restrictForAp
 
 keyCredentials := []graphmodels.KeyCredentialConfigurationable {
 	keyCredentialConfiguration,
-
 }
 applicationRestrictions.SetKeyCredentials(keyCredentials)
 requestBody.SetApplicationRestrictions(applicationRestrictions)
 
-result, err := graphClient.Policies().DefaultAppManagementPolicy().Patch(context.Background(), requestBody, nil)
+defaultAppManagementPolicy, err := graphClient.Policies().DefaultAppManagementPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

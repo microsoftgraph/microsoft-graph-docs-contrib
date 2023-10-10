@@ -11,6 +11,15 @@ author: "BenAlfasi"
 
 Namespace: microsoft.graph.security
 
+### contentFormat values
+
+| Member             |
+| :----------------- |
+| text               |
+| html               |
+| markdown           |
+| unknownFutureValue |
+
 ### detectionStatus values
 
 | Member
@@ -20,35 +29,81 @@ Namespace: microsoft.graph.security
 | prevented
 | unknownFutureValue
 
-### eventPropagationStatus values 
+### eventPropagationStatus values
 
-|Member|
-|:---|
-|none|
-|inProcessing|
-|failed|
-|success|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| none               |
+| inProcessing       |
+| failed             |
+| success            |
+| unknownFutureValue |
 
-### eventStatusType values 
+### eventStatusType values
 
-|Member|
-|:---|
-|pending|
-|error|
-|success|
-|notAvaliable|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| pending            |
+| error              |
+| success            |
+| notAvaliable       |
+| unknownFutureValue |
 
-### queryType values 
+### hostReputationClassification values
 
-|Member|
-|:---|
-|files|
-|messages|
-|unknownFutureValue|
+| Member             |
+| :----------------- |
+| unknown            |
+| neutral            |
+| suspicious         |
+| malicious          |
+| unknownFutureValue |
 
+### hostReputationRuleSeverity values
 
+| Member             |
+| :----------------- |
+| unknown            |
+| low                |
+| medium             |
+| high               |
+| unknownFutureValue |
+
+### indicatorSource values
+
+| Member             |
+| :----------------- |
+| microsoft          |
+| osint              |
+| public             |
+| unknownFutureValue |
+
+### intelligenceProfileKind values
+
+| Member             |
+| :----------------- |
+| actor              |
+| tool               |
+| unknownFutureValue |
+
+### queryType values
+
+| Member             |
+| :----------------- |
+| files              |
+| messages           |
+| unknownFutureValue |
+
+### vulnerabilitySeverity values
+
+| Member             |
+| :----------------- |
+| none               |
+| low                |
+| medium             |
+| high               |
+| critical           |
+| unknownFutureValue |
 
 <!--
 {

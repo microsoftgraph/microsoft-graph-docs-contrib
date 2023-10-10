@@ -12,18 +12,11 @@ var requestBody = new IdentityApiConnector
 {
 	DisplayName = "Test API",
 	TargetUrl = "https://someotherapi.com/api",
-	AuthenticationConfiguration = new ApiAuthenticationConfigurationBase
+	AuthenticationConfiguration = new Pkcs12Certificate
 	{
 		OdataType = "#microsoft.graph.pkcs12Certificate",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"pkcs12Value" , "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
-			},
-			{
-				"password" , "CertificatePassword"
-			},
-		},
+		Pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
+		Password = "CertificatePassword",
 	},
 };
 var result = await graphClient.Identity.ApiConnectors.PostAsync(requestBody);

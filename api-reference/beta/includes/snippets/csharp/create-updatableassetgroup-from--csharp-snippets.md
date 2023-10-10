@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAsset
+var requestBody = new Microsoft.Graph.Beta.Models.WindowsUpdates.UpdatableAssetGroup
 {
 	OdataType = "#microsoft.graph.windowsUpdates.updatableAssetGroup",
 };

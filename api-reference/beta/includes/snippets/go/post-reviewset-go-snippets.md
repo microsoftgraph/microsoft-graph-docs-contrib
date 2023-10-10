@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelsediscovery.NewReviewSet()
 displayName := "My Reviewset 3"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").ReviewSets().Post(context.Background(), requestBody, nil)
+reviewSets, err := graphClient.Compliance().Ediscovery().Cases().ByCaseId("case-id").ReviewSets().Post(context.Background(), requestBody, nil)
 
 
 ```

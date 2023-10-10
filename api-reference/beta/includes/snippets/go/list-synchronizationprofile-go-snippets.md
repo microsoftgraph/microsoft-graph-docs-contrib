@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Education().SynchronizationProfiles().Get(context.Background(), nil)
+synchronizationProfiles, err := graphClient.Education().SynchronizationProfiles().Get(context.Background(), nil)
 
 
 ```

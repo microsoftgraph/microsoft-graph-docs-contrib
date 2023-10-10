@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAdministrativeUnit()
@@ -23,7 +23,7 @@ requestBody.SetDescription(&description)
 isMemberManagementRestricted := true
 requestBody.SetIsMemberManagementRestricted(&isMemberManagementRestricted) 
 
-result, err := graphClient.AdministrativeUnits().Post(context.Background(), requestBody, nil)
+administrativeUnits, err := graphClient.AdministrativeUnits().Post(context.Background(), requestBody, nil)
 
 
 ```

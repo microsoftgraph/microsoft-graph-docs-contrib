@@ -8,17 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Models.Security.DataSource
+var requestBody = new Microsoft.Graph.Models.Security.SiteSource
 {
 	OdataType = "microsoft.graph.security.siteSource",
-	AdditionalData = new Dictionary<string, object>
+	Site = new Site
 	{
-		{
-			"site" , new 
-			{
-				WebUrl = "https://contoso.sharepoint.com/sites/SecretSite",
-			}
-		},
+		WebUrl = "https://contoso.sharepoint.com/sites/SecretSite",
 	},
 };
 var result = await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].Searches["{ediscoverySearch-id}"].AdditionalSources.PostAsync(requestBody);

@@ -2,7 +2,7 @@
 title: "Create customAppScope"
 description: "Create a new customAppScope object for an RBAC provider."
 ms.localizationpriority: medium
-author: "bili1"
+author: "cubika"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 Create a new [customAppScope](../resources/customappscope.md) object for an RBAC provider.
 
 Currently only the Exchange Online RBAC provider is supported.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -86,12 +88,16 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-customappscope-exchangeonlineprovider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/post-customappscope-exchangeonlineprovider-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-customappscope-exchangeonlineprovider-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-customappscope-exchangeonlineprovider-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/post-customappscope-exchangeonlineprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

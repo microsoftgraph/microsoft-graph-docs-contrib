@@ -4,29 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = LifecycleManagementSettings()
-request_body.WorkflowScheduleIntervalInHours = 3
+graph_client = GraphServiceClient(request_adapter)
 
-email_settings = EmailSettings()
-email_settings.sender_domain = 'ContosoIndustries.net'
+request_body = LifecycleManagementSettings(
+	workflow_schedule_interval_in_hours = 3,
+	email_settings = EmailSettings(
+		sender_domain = "ContosoIndustries.net",
+		use_company_branding = True,
+	),
+	additional_data = {
+			"@odata_context" : "https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/settings/$entity",
+	}
+)
 
-email_settings.use_company_branding = True
-
-
-request_body.email_settings = email_settings
-additional_data = [
-'@odata_context' => 'https://graph.microsoft.com/beta/$metadata#identityGovernance/lifecycleWorkflows/settings/$entity', 
-];
-request_body.additional_data(additional_data)
-
-
-
-
-
-result = await client.identity_governance.lifecycle_workflows.settings.patch(request_body = request_body)
+result = await graph_client.identity_governance.lifecycle_workflows.settings.patch(body = request_body)
 
 
 ```

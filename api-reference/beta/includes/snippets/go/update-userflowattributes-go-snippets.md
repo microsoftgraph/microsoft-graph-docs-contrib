@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewIdentityUserFlowAttribute()
 description := "Your new hobby"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Identity().UserFlowAttributes().ByUserFlowAttributeId("identityUserFlowAttribute-id").Patch(context.Background(), requestBody, nil)
+userFlowAttributes, err := graphClient.Identity().UserFlowAttributes().ByIdentityUserFlowAttributeId("identityUserFlowAttribute-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewItemAddress()
@@ -35,7 +35,7 @@ postalCode := "E14 3TD"
 detail.SetPostalCode(&postalCode) 
 requestBody.SetDetail(detail)
 
-result, err := graphClient.Me().Profile().Addresses().Post(context.Background(), requestBody, nil)
+addresses, err := graphClient.Me().Profile().Addresses().Post(context.Background(), requestBody, nil)
 
 
 ```

@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new ConversationMember
+var requestBody = new AadUserConversationMember
 {
 	OdataType = "#microsoft.graph.aadUserConversationMember",
 	VisibleHistoryStartDateTime = DateTimeOffset.Parse("0001-01-01T00:00:00Z"),

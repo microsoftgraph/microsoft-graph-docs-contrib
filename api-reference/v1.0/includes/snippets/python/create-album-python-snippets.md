@@ -4,36 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = DriveItem()
-request_body.name = 'My Day at the Beach'
+graph_client = GraphServiceClient(request_adapter)
 
-bundle = Bundle()
-bundlealbum = Album()
+request_body = DriveItem(
+	name = "My Day at the Beach",
+	bundle = Bundle(
+		album = Album(
+		),
+	),
+	children = [
+		DriveItem(
+			id = "1234asdf",
+		),
+	]
+	additional_data = {
+			"@microsoft_graph_conflict_behavior" : "rename",
+	}
+)
 
-bundle.album = bundlealbum
-
-request_body.bundle = bundle
-children_drive_item1 = DriveItem()
-children_drive_item1.id = '1234asdf'
-
-
-childrenArray []= childrenDriveItem1;
-request_body.children(childrenArray)
-
-
-additional_data = [
-'@microsoft_graph_conflict_behavior' => 'rename', 
-];
-request_body.additional_data(additional_data)
-
-
-
-
-
-result = await client.drives.by_drive_id('drive-id').bundles.post(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').bundles.post(body = request_body)
 
 
 ```

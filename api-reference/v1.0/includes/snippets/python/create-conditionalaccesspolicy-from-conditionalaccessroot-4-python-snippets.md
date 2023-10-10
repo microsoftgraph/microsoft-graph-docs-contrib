@@ -4,39 +4,34 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ConditionalAccessPolicy()
-request_body.display_name = 'Require MFA to EXO from non-compliant devices.'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.state(ConditionalAccessPolicyState.Enabled('conditionalaccesspolicystate.enabled'))
+request_body = ConditionalAccessPolicy(
+	display_name = "Require MFA to EXO from non-compliant devices.",
+	state = ConditionalAccessPolicyState.Enabled,
+	conditions = ConditionalAccessConditionSet(
+		applications = ConditionalAccessApplications(
+			include_applications = [
+				"00000002-0000-0ff1-ce00-000000000000",
+			]
+		),
+		users = ConditionalAccessUsers(
+			include_groups = [
+				"ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba",
+			]
+		),
+	),
+	grant_controls = ConditionalAccessGrantControls(
+		operator = "OR",
+		built_in_controls = [
+			ConditionalAccessGrantControl.Mfa,
+		]
+	),
+)
 
-conditions = ConditionalAccessConditionSet()
-conditionsapplications = ConditionalAccessApplications()
-conditionsapplications.IncludeApplications(['00000002-0000-0ff1-ce00-000000000000', ])
-
-
-conditions.applications = conditionsapplications
-conditionsusers = ConditionalAccessUsers()
-conditionsusers.IncludeGroups(['ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba', ])
-
-
-conditions.users = conditionsusers
-
-request_body.conditions = conditions
-grant_controls = ConditionalAccessGrantControls()
-grant_controls.operator = 'OR'
-
-grant_controls.BuiltInControls([grant_controls.conditionalaccessgrantcontrol(ConditionalAccessGrantControl.Mfa('conditionalaccessgrantcontrol.mfa'))
-])
-
-
-request_body.grant_controls = grant_controls
-
-
-
-result = await client.identity.conditional_access.policies.post(request_body = request_body)
+result = await graph_client.identity.conditional_access.policies.post(body = request_body)
 
 
 ```

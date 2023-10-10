@@ -141,7 +141,7 @@ A JSON batch request body consists of a single JSON object with one required pro
 
 | Property | Description |
 |----------|-------------|
-| id       | Required. A correlation value to associate individual responses with requests. This value allows the server to process requests in the batch in the most efficient order.    |
+| id       | Required. String. A correlation value to associate individual responses with requests. This value allows the server to process requests in the batch in the most efficient order. Not case-sensitive.   |
 | method   | Required. The HTTP method.    |
 | url      | Required. The relative resource URL the individual request would typically be sent to. Therefore, while the absolute URL is `https://graph.microsoft.com/v1.0/users`, this url is `/users`. |
 | headers   | Optional but required when the **body** is specified. A JSON object with the key/value pair for the headers. For example, when the **ConsistencyLevel** header is required, this property would be represented as `"headers": {"ConsistencyLevel": "eventual"}`. When the **body** is supplied, a **Content-Type** header must be included.    |
@@ -212,9 +212,9 @@ For more information, see [Throttling and batching][throttling-and-batching].
 
 ## Known issues
 
-For a list of current limitations related to batching, see [known issues][batching-known-issues].
+For a list of current limitations related to batching, see [known issues](https://developer.microsoft.com/en-us/graph/known-issues/?filterBy=JSON%20batching&search=).
 
-[batching-known-issues]: known-issues.md#json-batching
+[batching-known-issues]: https://developer.microsoft.com/en-us/graph/known-issues/?filterBy=JSON%20batching&search=
 [odata-4.01-json]: https://www.oasis-open.org/committees/download.php/60365/odata-json-format-v4.01-wd02-2017-03-24.docx
 [throttling-and-batching]: throttling.md#throttling-and-batching
 

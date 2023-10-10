@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: List Recent Files
 ms.localizationpriority: medium
@@ -12,7 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 List a set of items that have been recently used by the signed in user.
-This collection includes items that are in the user's drive as well as items they have access to from other drives.
+This collection includes items that are in the user's drive and items they have access to from other drives.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -32,7 +34,7 @@ GET /me/drive/recent
 ```
 
 ## Response
-This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.
+This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items that the owner of the drive has recently accessed.
 
 ## Examples
 
@@ -49,20 +51,28 @@ GET /me/drive/recent
 [!INCLUDE [sample-code](../includes/snippets/csharp/view-recent-files-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/view-recent-files-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/view-recent-files-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/view-recent-files-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/view-recent-files-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/view-recent-files-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/view-recent-files-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/view-recent-files-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/view-recent-files-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -73,7 +83,7 @@ GET /me/drive/recent
 
 ### Response
 
-<!-- { 
+<!-- {
     "blockType": "response",
      "@odata.type": "Collection(microsoft.graph.driveItem)",
      "truncated": true
@@ -121,8 +131,8 @@ Content-Type: application/json
 
 ## Remarks
 
-Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive.
-To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:
+Some driveItems returned from the **recent** action includes the **remoteItem** facet that indicates that items are from another drive.
+To access the original driveItem object, you'll need to make a request using the information provided in **remoteItem** in the following format:
 
 <!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 

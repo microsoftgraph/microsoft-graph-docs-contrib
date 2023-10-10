@@ -15,6 +15,8 @@ Namespace: microsoft.graph.deviceManagement
 
 Create an [alertRule](../resources/devicemanagement-alertrule.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,7 +50,7 @@ POST /deviceManagement/monitoring/alertRules
 
 |Property|Type|Description|
 |:---|:---|:---|
-|alertRuleTemplate|microsoft.graph.deviceManagement.alertRuleTemplate|The rule template of the alert event. The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `unknownFutureValue`.|
+|alertRuleTemplate|microsoft.graph.deviceManagement.alertRuleTemplate|The rule template of the alert event. The possible values are: `cloudPcProvisionScenario`, `cloudPcImageUploadScenario`, `cloudPcOnPremiseNetworkConnectionCheckScenario`, `unknownFutureValue`, `cloudPcInGracePeriodScenario`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following values from this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `cloudPcInGracePeriodScenario`.|
 |description|String|The rule description.|
 |displayName|String|The display name of the rule.|
 |enabled|Boolean|The status of the rule that indicates whether the rule is enabled or disabled. If `true`, the rule is enabled; otherwise, the rule is disabled.|
@@ -67,8 +69,6 @@ If successful, this method returns a `201 Created` response code and an [microso
 
 The following is an example of a request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_alertrule"
@@ -94,16 +94,10 @@ Content-Type: application/json
   "notificationChannels": [
       {
         "notificationChannelType": "portal",
-        "receivers": [
-            ""
-        ],
         "notificationReceivers": []
       },
       {
         "notificationChannelType": "email",
-        "receivers": [
-            "serena.davis@contoso.com"
-        ],
         "notificationReceivers": [
             {
                 "locale": "en-us",
@@ -114,32 +108,6 @@ Content-Type: application/json
   ]
 }
 ```
-
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/post-alertrule-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/post-alertrule-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/post-alertrule-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/post-alertrule-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PHP](#tab/php)
-[!INCLUDE [sample-code](../includes/snippets/php/post-alertrule-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/post-alertrule-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 
@@ -172,16 +140,10 @@ Content-Type: application/json
   "notificationChannels": [
       {
         "notificationChannelType": "portal",
-        "receivers": [
-            ""
-        ],
         "notificationReceivers": []
       },
       {
         "notificationChannelType": "email",
-        "receivers": [
-            "serena.davis@contoso.com"
-        ],
         "notificationReceivers": [
             {
                 "locale": "en-us",

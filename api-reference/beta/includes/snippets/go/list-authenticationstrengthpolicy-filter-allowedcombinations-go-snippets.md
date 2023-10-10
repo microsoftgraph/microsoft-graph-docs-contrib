@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
@@ -25,7 +25,7 @@ configuration := &graphpolicies.PoliciesAuthenticationStrengthPoliciesRequestBui
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Policies().AuthenticationStrengthPolicies().Get(context.Background(), configuration)
+authenticationStrengthPolicies, err := graphClient.Policies().AuthenticationStrengthPolicies().Get(context.Background(), configuration)
 
 
 ```

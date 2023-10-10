@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Planner
+Import-Module Microsoft.Graph.Beta.Planner
 
-Get-MgPlannerPlanDetail -PlannerPlanId $plannerPlanId
+Get-MgBetaPlannerPlanDetail -PlannerPlanId $plannerPlanId
 
 ```

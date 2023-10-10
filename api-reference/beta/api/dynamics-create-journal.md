@@ -1,5 +1,5 @@
 ---
-title: Create journals 
+title: Create journals
 description: Creates a journal object in Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a journal in Dynamics 365 Business Central. 
+Creates a journal in Dynamics 365 Business Central.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 ```http
-POST /financials/companies/{id}/journals/{id}
+POST /financials/companies/{id}/journals
 ```
 
 ## Optional query parameters

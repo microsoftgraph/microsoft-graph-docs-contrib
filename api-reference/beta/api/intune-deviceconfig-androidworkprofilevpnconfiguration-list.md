@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2951
+Content-Length: 3030
 
 {
   "value": [
@@ -146,7 +146,10 @@ Content-Length: 2951
       ],
       "alwaysOn": true,
       "alwaysOnLockdown": true,
-      "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
+      "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
+      "proxyExclusionList": [
+        "Proxy Exclusion List value"
+      ]
     }
   ]
 }

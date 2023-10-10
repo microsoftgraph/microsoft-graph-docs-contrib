@@ -12,16 +12,16 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewCopyToSectionPostRequestBody()
+requestBody := graphusers.NewItemCopyToSectionPostRequestBody()
 id := "id-value"
 requestBody.SetId(&id) 
 groupId := "groupId-value"
 requestBody.SetGroupId(&groupId) 
 
-result, err := graphClient.Me().Onenote().Pages().ByPageId("onenotePage-id").CopyToSection().Post(context.Background(), requestBody, nil)
+copyToSection, err := graphClient.Me().Onenote().Pages().ByOnenotePageId("onenotePage-id").CopyToSection().Post(context.Background(), requestBody, nil)
 
 
 ```

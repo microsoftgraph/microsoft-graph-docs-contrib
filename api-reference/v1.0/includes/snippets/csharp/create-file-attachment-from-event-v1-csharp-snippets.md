@@ -8,16 +8,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Attachment
+var requestBody = new FileAttachment
 {
 	OdataType = "#microsoft.graph.fileAttachment",
 	Name = "menu.txt",
-	AdditionalData = new Dictionary<string, object>
-	{
-		{
-			"contentBytes" , "base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="
-		},
-	},
+	ContentBytes = Convert.FromBase64String("base64bWFjIGFuZCBjaGVlc2UgdG9kYXk="),
 };
 var result = await graphClient.Me.Events["{event-id}"].Attachments.PostAsync(requestBody);
 

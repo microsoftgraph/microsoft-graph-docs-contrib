@@ -2,7 +2,7 @@
 title: "Delete customAppScope"
 description: "Delete a customAppScope object of an RBAC provider."
 ms.localizationpriority: medium
-author: "bili1"
+author: "cubika"
 ms.prod: "directory-management"
 doc_type: "apiPageType"
 ---
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 Delete a [customAppScope](../resources/customappscope.md) object of an RBAC provider.
 
 Currently only the Exchange Online RBAC provider is supported.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -74,16 +76,20 @@ DELETE https://graph.microsoft.com/beta/roleManagement/exchange/customAppScopes/
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-customappscope-exchangeonlineprovider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-customappscope-exchangeonlineprovider-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-customappscope-exchangeonlineprovider-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/delete-customappscope-exchangeonlineprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-customappscope-exchangeonlineprovider-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/delete-customappscope-exchangeonlineprovider-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-customappscope-exchangeonlineprovider-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
