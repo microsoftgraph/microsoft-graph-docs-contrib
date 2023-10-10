@@ -17,12 +17,6 @@ Replace an existing [timeOff](../resources/timeoff.md).
 
 If the specified [timeOff](../resources/timeoff.md) doesn't exist, this method returns `404 Not found`.
 
-When you replace a shift, the `sharedTimeOff` property is visible to all team members, but the `draftTimeOff` property is only visible to team owners, and would need to be shared with team members for visibility. Sharing changes to the `draftTimeOff` property copies those changes to the `sharedTimeOff` property.
-
-You can't update the `sharedTimeOff` property if you're updating the `draftTimeOff` property. The `draftTimeOff` property must be empty in order to update the `sharedTimeOff` property.
-
-Updates to the `sharedTimeOff` property send notifications to users in the Teams client. To streamline the user experience, update the `draftTimeOff` property, and then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
