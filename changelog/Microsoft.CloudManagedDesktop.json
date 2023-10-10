@@ -221,10 +221,10 @@
             {
               "Id": "79a3808d-826e-431f-9288-58144fe2776a",
               "ApiChange": "Resource",
-              "ChangedApiName": "cloudPcFrontLineServicePlan",
+              "ChangedApiName": "cloudPcSharedUseServicePlan",
               "ChangeType": "Deprecation",
-              "Description": "Deprecated the [cloudPcSharedUseServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSharedUseServicePlan?view=graph-rest-beta) resource and related methods. Going forward, use the [cloudPcFrontLineServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcFrontLineServicePlan?view=graph-rest-beta) resource and supported methods.",
-              "Target": "cloudPcFrontLineServicePlan"
+              "Description": "Deprecated the [cloudPcSharedUseServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSharedUseServicePlan?view=graph-rest-beta) resource and related operations and methods. Going forward, use the [cloudPcFrontLineServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcFrontLineServicePlan?view=graph-rest-beta) resource and supported methods.",
+              "Target": "cloudPcSharedUseServicePlan"
             },
             {
               "Id": "79a3808d-826e-431f-9288-58144fe2776a",
