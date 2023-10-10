@@ -15,7 +15,7 @@ Replace an existing [shift](../resources/shift.md).
 
 If the specified [shift](../resources/shift.md) doesn't exist, this method returns `404 Not found`.
 
-The duration of a shift can't be less than 1 minute or longer than 24 hours.
+The duration of a shift can't be less than 1 minute or longer than 24 hours.l
 
 ## Permissions
 
@@ -210,3 +210,4 @@ Content-type: application/json
   ]
 }
 -->
+
