@@ -1,7 +1,7 @@
 ---
 title: "azureADAuthentication resource type"
 description: "Collects the Azure AD SLA attainment for each month for an Azure AD tenant."
-author: "sarbar"
+author: "SarahBar"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType

@@ -23,15 +23,15 @@ Represents a single secret value.
 ### Supported key value pairs
 | Key       |Value|
 |:---------------|:----------|
-|BaseAddress| The tenant URL / SCIM end point that you are trying to provision.|
+|BaseAddress| The tenant URL / SCIM end point that you're trying to provision.|
 |SecretToken    | The token to authorize access to the application. This token is provided by the application developer. |
 |SyncNotificationSettings    |This property is used to determine if quarantine emails are sent.|
 |SyncAll    |Determines scope of sync between all users and groups or only ones that are assigned. When provisioning users into applications, the value is generally "True".|
-|SkipOutOfScopeDeletions |Determines if accounts that go out of scope will/won't be disabled in the target.|
+|SkipOutOfScopeDeletions |Determines if accounts that go out of scope are or aren't disabled in the target.|
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

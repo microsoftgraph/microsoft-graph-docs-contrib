@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Delete a [filePlanReferenceTemplate](../resources/security-fileplanreferencetemplate.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -30,8 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /security/labels/filePlanReferences/{filePlanReferenceTemplateId}/$ref
-DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/filePlanReferenceTemplate/$ref
+DELETE /security/labels/filePlanReferences/{filePlanReferenceTemplateId}
+DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/filePlanReferenceTemplate
 ```
 
 ## Request headers
@@ -62,6 +64,10 @@ DELETE https://graph.microsoft.com/beta/security/labels/filePlanReferences/{file
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-fileplanreferencetemplate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-fileplanreferencetemplate-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

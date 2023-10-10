@@ -4,11 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(request_adapter)
 
 query_params = GroupsRequestBuilder.GroupsRequestBuilderGetQueryParameters(
-		count = true,
+		count = True,
 		filter = "hasMembersWithLicenseErrors eq true",
 		select = ["id","displayName"],
 )
@@ -21,8 +22,7 @@ headers = {
 
 )
 
-
-result = await client.groups.get(request_configuration = request_configuration)
+result = await graph_client.groups.get(request_configuration = request_configuration)
 
 
 ```

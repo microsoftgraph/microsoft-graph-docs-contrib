@@ -12,18 +12,18 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the configurations related to self-service sign up.
+Represents the configurations related to self-service sign-up.
 
 ## Properties
 |Property|Type|Description|
 |:-------|:---|:----------|
-|isEnabled|Boolean|Indicates whether self-service sign-up flow is enabled or disabled. The default value is `false`. This property is not a key. Required. |
+|isEnabled|Boolean|Indicates whether self-service sign-up flow is enabled or disabled. The default value is `false`. This property isn't a key. Required. |
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.selfServiceSignUpAuthenticationFlowConfiguration"

@@ -2,7 +2,7 @@
 title: "conditionalAccessFilter resource type"
 description: "Represents filter in the policy scope."
 ms.localizationpriority: medium
-author: "sandeo"
+author: "SanDeo-MSFT"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

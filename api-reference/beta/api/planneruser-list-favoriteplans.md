@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [plannerPlans](../resources/plannerplan.md) that are marked as favorite by a user. You can mark a plan as favorite by [updating the plannerUser resource](planneruser-update.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -57,6 +59,10 @@ GET https://graph.microsoft.com/beta/me/planner/favoritePlans
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-favoriteplans-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-favoriteplans-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

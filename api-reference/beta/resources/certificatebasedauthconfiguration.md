@@ -2,7 +2,7 @@
 title: "certificateBasedAuthConfiguration resource type"
 description: "Represents a collection of certificate authorities."
 ms.localizationpriority: medium
-author: "vimrang"
+author: "adimitui"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---

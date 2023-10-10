@@ -4,19 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ChatMessage()
-body = ItemBody()
-body.content = 'Hello World'
+graph_client = GraphServiceClient(request_adapter)
 
+request_body = ChatMessage(
+	body = ItemBody(
+		content = "Hello World",
+	),
+)
 
-request_body.body = body
-
-
-
-result = await client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').messages.post(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').messages.post(body = request_body)
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget resource type"
 description: "A collection of groups enabled to use Microsoft Authenticator Passwordless Phone Sign-in authentication methods policy."
-author: "mmcla"
+author: "mjsantani"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

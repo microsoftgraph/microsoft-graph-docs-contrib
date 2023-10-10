@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Bookmark()
-request_body.description = 'Book a fancy vacation in Tuscany or browse museums in Florence.'
+graph_client = GraphServiceClient(request_adapter)
 
+request_body = Bookmark(
+	description = "Book a fancy vacation in Tuscany or browse museums in Florence.",
+)
 
-
-
-result = await client.search.bookmarks.by_bookmark_id('bookmark-id').patch(request_body = request_body)
+result = await graph_client.search.bookmarks.by_bookmark_id('bookmark-id').patch(body = request_body)
 
 
 ```

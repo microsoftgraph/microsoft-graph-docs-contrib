@@ -2,7 +2,7 @@
 title: "onPremisesPublishingProfile resource type"
 description: "onPremisesPublishingProfile resource type."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinrshah"
 ms.prod: "applications"
 doc_type: "resourcePageType"
 ---

@@ -60,7 +60,8 @@ Add the `mgt-msal2-provider` component to your HTML page and set the `client-id`
 To initialize the MSAL provider in your JavaScript, add the following code to your application:
 
 ```javascript
-import { Providers, Msal2Provider } from "@microsoft/mgt";
+import { Providers } from "@microsoft/mgt-element";
+import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
 
 Providers.globalProvider = new Msal2Provider({
   clientId: "<YOUR_CLIENT_ID>",
@@ -105,7 +106,8 @@ This is an example using the ES6 modules, the MSAL2 Provider initialized in HTML
 This is an example using the ES6 modules, the MSAL2 Provider initialized in JavaScript, and the Login component:
 
 ```javascript
-import { Providers, Msal2Provider } from "@microsoft/mgt";
+import { Providers } from "@microsoft/mgt-element";
+import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
 
 Providers.globalProvider = new Msal2Provider({
   clientId: "<YOUR_CLIENT_ID>",
@@ -128,7 +130,7 @@ In order to test your app, MSAL requires the page to be hosted in a web server f
 
 If you're just getting started and want to play around, you can use [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code or any similar lightweight development server. Download the extension and open your HTML file using live server.
 
-> **Note:** Make sure the **redirect URI** in your app registration is set to the localhost port your application is hosted on. Go to your app registration in the [Azure portal](https://portal.azure.com), click **Authentication** under manage, and add the correct **redirect URI**.
+> **Note:** Make sure the **redirect URI** in your app registration is set to the localhost port your application is hosted on. Go to your app registration in the [Microsoft Entra admin center](https://entra.microsoft.com), click **Authentication** under manage, and add the correct **redirect URI**.
 
 ## Track a user's sign in state
 
@@ -169,7 +171,8 @@ If you're using the `mgt-loader` library, you can access the `Provider` and `Pro
 If you're using the toolkit via the npm packages, you can import the `Provider` and `ProviderState` from `@microsoft/mgt`.
 
 ```javascript
-import { Providers, ProviderState, Msal2Provider } from "@microsoft/mgt";
+import { Providers, ProviderState } from "@microsoft/mgt-element";
+import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
 
 Providers.globalProvider = new Msal2Provider({
   clientId: "<YOUR_CLIENT_ID>",

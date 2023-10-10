@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = AccessReviewPolicy()
-request_body.is_group_owner_management_enabled = True
+graph_client = GraphServiceClient(request_adapter)
 
+request_body = AccessReviewPolicy(
+	is_group_owner_management_enabled = True,
+)
 
-
-
-result = await client.identity_governance.acce_reviews.policy.patch(request_body = request_body)
+result = await graph_client.identity_governance.acce_reviews.policy.patch(body = request_body)
 
 
 ```

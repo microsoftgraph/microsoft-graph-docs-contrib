@@ -4,30 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = MobileAppAssignment()
-request_body.@odata_type = '#microsoft.graph.mobileAppAssignment'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.intent(InstallIntent.Required('installintent.required'))
+request_body = MobileAppAssignment(
+	odata_type = "#microsoft.graph.mobileAppAssignment",
+	intent = InstallIntent.Required,
+	target = AllLicensedUsersAssignmentTarget(
+		odata_type = "microsoft.graph.allLicensedUsersAssignmentTarget",
+	),
+	settings = WindowsUniversalAppXAppAssignmentSettings(
+		odata_type = "microsoft.graph.windowsUniversalAppXAppAssignmentSettings",
+		use_device_context = True,
+	),
+)
 
-target = AllLicensedUsersAssignmentTarget()
-target.@odata_type = 'microsoft.graph.allLicensedUsersAssignmentTarget'
-
-
-request_body.target = target
-settings = WindowsUniversalAppXAppAssignmentSettings()
-settings.@odata_type = 'microsoft.graph.windowsUniversalAppXAppAssignmentSettings'
-
-settings.use_device_context = True
-
-
-request_body.settings = settings
-
-
-
-result = await client.device_app_management.mobile_apps.by_mobile_app_id('mobileApp-id').assignments.by_assignment_id('mobileAppAssignment-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.mobile_apps.by_mobile_app_id('mobileApp-id').assignments.by_assignment_id('mobileAppAssignment-id').patch(body = request_body)
 
 
 ```

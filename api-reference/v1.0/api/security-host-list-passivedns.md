@@ -13,7 +13,11 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get a list of [passiveDnsRecord](../resources/security-passivednsrecord.md) resources associated to a host.
+Get a list of [passiveDnsRecord](../resources/security-passivednsrecord.md) resources associated with a [host](../resources/security-host.md).
+
+This is a forward DNS lookup which queries the IP address of the specified host using its hostname. 
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -94,6 +98,10 @@ GET https://graph.microsoft.com/v1.0/security/threatIntelligence/hosts/contoso.c
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-passivedns-e1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-passivedns-e1-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

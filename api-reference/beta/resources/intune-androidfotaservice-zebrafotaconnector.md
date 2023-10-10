@@ -22,10 +22,10 @@ The Zebra FOTA connector entity that represents the tenant's authorization statu
 |:---|:---|:---|
 |[Get zebraFotaConnector](../api/intune-androidfotaservice-zebrafotaconnector-get.md)|[zebraFotaConnector](../resources/intune-androidfotaservice-zebrafotaconnector.md)|Read properties and relationships of the [zebraFotaConnector](../resources/intune-androidfotaservice-zebrafotaconnector.md) object.|
 |[Update zebraFotaConnector](../api/intune-androidfotaservice-zebrafotaconnector-update.md)|[zebraFotaConnector](../resources/intune-androidfotaservice-zebrafotaconnector.md)|Update the properties of a [zebraFotaConnector](../resources/intune-androidfotaservice-zebrafotaconnector.md) object.|
-|[hasActiveDeployments action](../api/intune-androidfotaservice-zebrafotaconnector-hasactivedeployments.md)|Boolean|Not yet documented|
-|[approveFotaApps action](../api/intune-androidfotaservice-zebrafotaconnector-approvefotaapps.md)|Boolean|Not yet documented|
-|[connect action](../api/intune-androidfotaservice-zebrafotaconnector-connect.md)|Boolean|Not yet documented|
-|[disconnect action](../api/intune-androidfotaservice-zebrafotaconnector-disconnect.md)|Boolean|Not yet documented|
+|[hasActiveDeployments action](../api/intune-androidfotaservice-zebrafotaconnector-hasactivedeployments.md)|Boolean||
+|[approveFotaApps action](../api/intune-androidfotaservice-zebrafotaconnector-approvefotaapps.md)|Boolean||
+|[connect action](../api/intune-androidfotaservice-zebrafotaconnector-connect.md)|Boolean||
+|[disconnect action](../api/intune-androidfotaservice-zebrafotaconnector-disconnect.md)|Boolean||
 
 ## Properties
 |Property|Type|Description|

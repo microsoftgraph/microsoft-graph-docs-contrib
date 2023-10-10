@@ -4,34 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = DeviceCompliancePolicyDeviceStateSummary()
-request_body.@odata_type = '#microsoft.graph.deviceCompliancePolicyDeviceStateSummary'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.InGracePeriodCount = 2
+request_body = DeviceCompliancePolicyDeviceStateSummary(
+	odata_type = "#microsoft.graph.deviceCompliancePolicyDeviceStateSummary",
+	in_grace_period_count = 2,
+	config_manager_count = 2,
+	unknown_device_count = 2,
+	not_applicable_device_count = 8,
+	compliant_device_count = 4,
+	remediated_device_count = 5,
+	non_compliant_device_count = 7,
+	error_device_count = 0,
+	conflict_device_count = 3,
+)
 
-request_body.ConfigManagerCount = 2
-
-request_body.UnknownDeviceCount = 2
-
-request_body.NotApplicableDeviceCount = 8
-
-request_body.CompliantDeviceCount = 4
-
-request_body.RemediatedDeviceCount = 5
-
-request_body.NonCompliantDeviceCount = 7
-
-request_body.ErrorDeviceCount = 0
-
-request_body.ConflictDeviceCount = 3
-
-
-
-
-result = await client.device_management.device_compliance_policy_device_state_summary.patch(request_body = request_body)
+result = await graph_client.device_management.device_compliance_policy_device_state_summary.patch(body = request_body)
 
 
 ```

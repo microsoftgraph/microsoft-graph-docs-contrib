@@ -1,7 +1,7 @@
 ---
 title: "Get extensionProperty (directory extension)"
 description: "Read a directory extension definition."
-author: "keylimesoda"
+author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "extensions"
 doc_type: apiPageType
@@ -11,6 +11,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Read a directory extension definition represented by an [extensionProperty](../resources/extensionproperty.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -1,7 +1,7 @@
 ---
 title: "connector resource type"
 description: "Represents an Application Proxy connector."
-author: "japere"
+author: "dhruvinrshah"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: resourcePageType

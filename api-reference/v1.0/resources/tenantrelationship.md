@@ -1,7 +1,7 @@
 ---
 title: "tenantRelationship resource type"
 description: "Represent the various type of tenant relationships."
-author: "koravva"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: resourcePageType

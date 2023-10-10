@@ -2,7 +2,7 @@
 title: "webSegmentConfiguration resource type"
 description: "Represents application segments for an on-premises wildcard application published through Azure AD Application Proxy."
 ms.localizationpriority: medium
-author: "dhruvinshah"
+author: "dhruvinrshah"
 ms.prod: "applications"
 doc_type: "resourcePageType"
 ---

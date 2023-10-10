@@ -4,36 +4,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = UnifiedRoleEligibilityScheduleRequest()
-request_body.action = 'AdminRemove'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.justification = 'Assign User Admin eligibility to IT Helpdesk (User) group'
+request_body = UnifiedRoleEligibilityScheduleRequest(
+	action = "AdminRemove",
+	justification = "Assign User Admin eligibility to IT Helpdesk (User) group",
+	role_definition_id = "fdd7a751-b60b-444a-984c-02652fe8fa1c",
+	directory_scope_id = "/",
+	principal_id = "07706ff1-46c7-4847-ae33-3003830675a1",
+	schedule_info = RequestSchedule(
+		start_date_time = "2021-07-26T18:08:06.2081758Z",
+		expiration = ExpirationPattern(
+			end_date_time = "2022-06-30T00:00:00Z",
+			type = ExpirationPatternType.AfterDateTime,
+		),
+	),
+)
 
-request_body.role_definition_id = 'fdd7a751-b60b-444a-984c-02652fe8fa1c'
-
-request_body.directory_scope_id = '/'
-
-request_body.principal_id = '07706ff1-46c7-4847-ae33-3003830675a1'
-
-schedule_info = RequestSchedule()
-schedule_info.startDateTime = DateTime('2021-07-26T18:08:06.2081758Z')
-
-schedule_infoexpiration = ExpirationPattern()
-schedule_infoexpiration.endDateTime = DateTime('2022-06-30T00:00:00Z')
-
-schedule_infoexpiration.type(ExpirationPatternType.AfterDateTime('expirationpatterntype.afterdatetime'))
-
-
-schedule_info.expiration = schedule_infoexpiration
-
-request_body.schedule_info = schedule_info
-
-
-
-result = await client.role_management.directory.role_eligibility_schedule_requests.post(request_body = request_body)
+result = await graph_client.role_management.directory.role_eligibility_schedule_requests.post(body = request_body)
 
 
 ```

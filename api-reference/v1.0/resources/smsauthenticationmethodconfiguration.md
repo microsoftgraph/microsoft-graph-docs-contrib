@@ -1,7 +1,7 @@
 ---
 title: "smsAuthenticationMethodConfiguration resource type"
 description: "Represents a text message authentication methods policy."
-author: "jpettere"
+author: "luc-msft"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -18,8 +18,8 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[Get](../api/smsauthenticationmethodconfiguration-get.md)|[smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md)|Read the properties and relationships of a smsAuthenticationMethodConfiguration object.|
-|[Update](../api/smsauthenticationmethodconfiguration-update.md)|None|Update the properties of a smsAuthenticationMethodConfiguration object.|
+|[Get](../api/smsauthenticationmethodconfiguration-get.md)|[smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md)|Read the properties and relationships of an smsAuthenticationMethodConfiguration object.|
+|[Update](../api/smsauthenticationmethodconfiguration-update.md)|None|Update the properties of an smsAuthenticationMethodConfiguration object.|
 |[Delete](../api/smsauthenticationmethodconfiguration-delete.md)|None|Reverts the smsAuthenticationMethodConfiguration object to its default configuration.|
 
 ## Properties
@@ -35,7 +35,7 @@ Inherits from [authenticationMethodConfiguration](../resources/authenticationmet
 |includeTargets|[smsAuthenticationMethodTarget](../resources/smsauthenticationmethodtarget.md) collection|A collection of groups that are enabled to use the authentication method.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

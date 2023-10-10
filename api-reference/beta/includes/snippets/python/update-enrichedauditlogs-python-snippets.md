@@ -4,31 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = EnrichedAuditLogs()
-request_body.@odata_type = '#microsoft.graph.networkaccess.enrichedAuditLogs'
+graph_client = GraphServiceClient(request_adapter)
 
-sharepoint = EnrichedAuditLogsSettings()
-sharepoint.@odata_type = 'microsoft.graph.networkaccess.enrichedAuditLogsSettings'
+request_body = EnrichedAuditLogs(
+	odata_type = "#microsoft.graph.networkaccess.enrichedAuditLogs",
+	sharepoint = EnrichedAuditLogsSettings(
+		odata_type = "microsoft.graph.networkaccess.enrichedAuditLogsSettings",
+	),
+	teams = EnrichedAuditLogsSettings(
+		odata_type = "microsoft.graph.networkaccess.enrichedAuditLogsSettings",
+	),
+	exchange = EnrichedAuditLogsSettings(
+		odata_type = "microsoft.graph.networkaccess.enrichedAuditLogsSettings",
+	),
+)
 
-
-request_body.sharepoint = sharepoint
-teams = EnrichedAuditLogsSettings()
-teams.@odata_type = 'microsoft.graph.networkaccess.enrichedAuditLogsSettings'
-
-
-request_body.teams = teams
-exchange = EnrichedAuditLogsSettings()
-exchange.@odata_type = 'microsoft.graph.networkaccess.enrichedAuditLogsSettings'
-
-
-request_body.exchange = exchange
-
-
-
-result = await client.network_access.settings.enriched_audit_logs.patch(request_body = request_body)
+result = await graph_client.network_access.settings.enriched_audit_logs.patch(body = request_body)
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "serviceLevelAgreementAttainment resource type"
 description: "Describes the Azure AD SLA attainment for a tenant for the identified calendar month."
-author: "sarbar"
+author: "SarahBar"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType

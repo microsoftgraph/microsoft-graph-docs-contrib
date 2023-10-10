@@ -2,7 +2,7 @@
 title: "onPremisesApplicationSegment resource type (deprecated)"
 description: "Represents onPremisesApplicationSegment object when publishing an on-premises wildcard application with Azure AD Application Proxy."
 ms.localizationpriority: medium
-author: "dhruvinshah"
+author: "dhruvinrshah"
 ms.prod: "applications"
 doc_type: "resourcePageType"
 ---

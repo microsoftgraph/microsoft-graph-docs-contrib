@@ -4,7 +4,7 @@ description: "Information about the locale, including the preferred language and
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "outlook"
-author: "abheek-das"
+author: "SuryaLashmiS"
 ---
 
 # localeInfo resource type

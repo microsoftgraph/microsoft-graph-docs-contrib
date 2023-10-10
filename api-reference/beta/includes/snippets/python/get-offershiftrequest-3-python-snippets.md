@@ -4,17 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = OfferShiftRequest()
-request_body.sender_shift_id = 'SHFT_f7e484ed-fdd6-421c-92d9-0bc9e62e2c29'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.sender_message = 'Having a family emergency, could you take this shift for me?'
-
-request_body.recipient_user_id = 'fe278b61-21ac-4872-8b41-1962bbb98e3c'
-
-
+request_body = OfferShiftRequest(
+	sender_shift_id = "SHFT_f7e484ed-fdd6-421c-92d9-0bc9e62e2c29",
+	sender_message = "Having a family emergency, could you take this shift for me?",
+	recipient_user_id = "fe278b61-21ac-4872-8b41-1962bbb98e3c",
+)
 
 request_configuration = OfferShiftRequestsRequestBuilder.OfferShiftRequestsRequestBuilderPostRequestConfiguration(
 headers = {
@@ -23,8 +21,7 @@ headers = {
 
 )
 
-
-result = await client.teams.by_team_id('team-id').schedule.offer_shift_requests.post(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.teams.by_team_id('team-id').schedule.offer_shift_requests.post(body = request_body, request_configuration = request_configuration)
 
 
 ```

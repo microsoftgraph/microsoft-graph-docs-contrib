@@ -72,8 +72,9 @@ The following table shows the properties that are required when you create the a
 |alwaysOn|Boolean|Whether or not to enable always-on VPN connection.|
 |alwaysOnLockdown|Boolean|If always-on VPN connection is enabled, whether or not to lock network traffic when that VPN is disconnected.|
 |microsoftTunnelSiteId|String|Microsoft Tunnel site ID.|
+|proxyExclusionList|String collection|List of hosts to exclude using the proxy on connections for. These hosts can use wildcards such as *.example.com.|
 |customData|[keyValue](../resources/intune-deviceconfig-keyvalue.md) collection|Custom data to define key/value pairs specific to a VPN provider. This collection can contain a maximum of 25 elements.|
-|customKeyValueData|[keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md) collection|Custom data to define key/value pairs specific to a VPN provider. This collection can contain a maximum of 25 elements.|
+|customKeyValueData|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Custom data to define key/value pairs specific to a VPN provider. This collection can contain a maximum of 25 elements.|
 
 
 
@@ -87,7 +88,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2383
+Content-length: 2450
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerVpnConfiguration",
@@ -153,6 +154,9 @@ Content-length: 2383
   "alwaysOn": true,
   "alwaysOnLockdown": true,
   "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
+  "proxyExclusionList": [
+    "Proxy Exclusion List value"
+  ],
   "customData": [
     {
       "@odata.type": "microsoft.graph.keyValue",
@@ -175,7 +179,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2555
+Content-Length: 2622
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerVpnConfiguration",
@@ -244,6 +248,9 @@ Content-Length: 2555
   "alwaysOn": true,
   "alwaysOnLockdown": true,
   "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
+  "proxyExclusionList": [
+    "Proxy Exclusion List value"
+  ],
   "customData": [
     {
       "@odata.type": "microsoft.graph.keyValue",

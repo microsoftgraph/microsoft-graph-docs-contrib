@@ -4,26 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = OnTokenIssuanceStartListener()
-request_body.@odata_type = '#microsoft.graph.onTokenIssuanceStartListener'
+graph_client = GraphServiceClient(request_adapter)
 
-conditions = AuthenticationConditions()
-conditionsapplications = AuthenticationConditionsApplications()
-conditionsapplications.include_all_applications = False
+request_body = OnTokenIssuanceStartListener(
+	odata_type = "#microsoft.graph.onTokenIssuanceStartListener",
+	conditions = AuthenticationConditions(
+		applications = AuthenticationConditionsApplications(
+			include_all_applications = False,
+		),
+	),
+	priority = 500,
+)
 
-
-conditions.applications = conditionsapplications
-
-request_body.conditions = conditions
-request_body.Priority = 500
-
-
-
-
-result = await client.identity.authentication_event_listeners.by_authentication_event_listener_id('authenticationEventListener-id').patch(request_body = request_body)
+result = await graph_client.identity.authentication_event_listeners.by_authentication_event_listener_id('authenticationEventListener-id').patch(body = request_body)
 
 
 ```

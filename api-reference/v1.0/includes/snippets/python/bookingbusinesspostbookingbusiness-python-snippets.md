@@ -4,43 +4,29 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = BookingBusiness()
-request_body.display_name = 'Fourth Coffee'
+graph_client = GraphServiceClient(request_adapter)
 
-address = PhysicalAddress()
-address.street = '4567 Main Street'
+request_body = BookingBusiness(
+	display_name = "Fourth Coffee",
+	address = PhysicalAddress(
+		street = "4567 Main Street",
+		city = "Buffalo",
+		state = "NY",
+		country_or_region = "USA",
+		postal_code = "98052",
+		additional_data = {
+				"post_office_box" : "P.O. Box 123",
+		}
+	),
+	phone = "206-555-0100",
+	email = "manager@fourthcoffee.com",
+	web_site_url = "https://www.fourthcoffee.com",
+	default_currency_iso = "USD",
+)
 
-address.city = 'Buffalo'
-
-address.state = 'NY'
-
-address.country_or_region = 'USA'
-
-address.postal_code = '98052'
-
-additional_data = [
-'post_office_box' => 'P.O. Box 123', 
-];
-address.additional_data(additional_data)
-
-
-
-request_body.address = address
-request_body.phone = '206-555-0100'
-
-request_body.email = 'manager@fourthcoffee.com'
-
-request_body.web_site_url = 'https://www.fourthcoffee.com'
-
-request_body.default_currency_iso = 'USD'
-
-
-
-
-result = await client.solutions.booking_businesses.post(request_body = request_body)
+result = await graph_client.solutions.booking_businesses.post(body = request_body)
 
 
 ```

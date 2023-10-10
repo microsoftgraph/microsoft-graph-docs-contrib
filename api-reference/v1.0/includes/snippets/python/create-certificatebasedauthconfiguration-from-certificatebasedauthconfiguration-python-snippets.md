@@ -4,24 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = CertificateBasedAuthConfiguration()
-certificate_authorities_certificate_authority1 = CertificateAuthority()
-certificate_authorities_certificate_authority1.is_root_authority = True
+graph_client = GraphServiceClient(request_adapter)
 
-certificate_authorities_certificate_authority1.Certificate(base64_decode('Binary'))
+request_body = CertificateBasedAuthConfiguration(
+	certificate_authorities = [
+		CertificateAuthority(
+			is_root_authority = True,
+			certificate = base64.urlsafe_b64decode("Binary"),
+		),
+	]
+)
 
-
-certificateAuthoritiesArray []= certificateAuthoritiesCertificateAuthority1;
-request_body.certificateauthorities(certificateAuthoritiesArray)
-
-
-
-
-
-result = await client.organization.by_organization_id('organization-id').certificate_based_auth_configuration.post(request_body = request_body)
+result = await graph_client.organization.by_organization_id('organization-id').certificate_based_auth_configuration.post(body = request_body)
 
 
 ```

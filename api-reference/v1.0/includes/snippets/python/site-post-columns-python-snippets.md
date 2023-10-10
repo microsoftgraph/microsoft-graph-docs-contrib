@@ -4,35 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ColumnDefinition()
-request_body.description = 'test'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.enforce_unique_values = False
+request_body = ColumnDefinition(
+	description = "test",
+	enforce_unique_values = False,
+	hidden = False,
+	indexed = False,
+	name = "Title",
+	text = TextColumn(
+		allow_multiple_lines = False,
+		append_changes_to_existing_text = False,
+		lines_for_editing = 0,
+		max_length = 255,
+	),
+)
 
-request_body.hidden = False
-
-request_body.indexed = False
-
-request_body.name = 'Title'
-
-text = TextColumn()
-text.allow_multiple_lines = False
-
-text.append_changes_to_existing_text = False
-
-text.LinesForEditing = 0
-
-text.MaxLength = 255
-
-
-request_body.text = text
-
-
-
-result = await client.sites.by_site_id('site-id').columns.post(request_body = request_body)
+result = await graph_client.sites.by_site_id('site-id').columns.post(body = request_body)
 
 
 ```

@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Cancel a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference#privileged-access-permissions).
 
@@ -60,22 +62,22 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 | Content-type  | application/json|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns `204 NoContent` response code. It does not return anything in the response body. 
+If successful, this method returns `204 NoContent` response code. It doesn't return anything in the response body. 
 
 ## Error codes
 This API follows the standard of HTTP codes. Besides, the custom error codes are shown below.
 
 | Error code | Error message | Details |
 |:---------- |:------------- |:------- |
-| 400 BadRequest | RoleAssignmentRequestNotFound | The governanceRoleAssignmentRequest does not exist in system. |
-| 400 BadRequest | RequestCannotBeCancelled | Only requests in status of `Granted`, `PendingApproval`, `PendingApprovalProvisioning` and `PendingAdminDecision` can be cancelled. |
+| 400 BadRequest | RoleAssignmentRequestNotFound | The governanceRoleAssignmentRequest doesn't exist in system. |
+| 400 BadRequest | RequestCannotBeCancelled | Only requests in status of `Granted`, `PendingApproval`, `PendingApprovalProvisioning` and `PendingAdminDecision` can be canceled. |
 
 ## Example
 ### Request
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -88,6 +90,10 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/cancel-governanceroleassignmentrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/cancel-governanceroleassignmentrequest-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

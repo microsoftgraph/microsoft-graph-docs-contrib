@@ -4,8 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(request_adapter)
 
 query_params = DeltaRequestBuilder.DeltaRequestBuilderGetQueryParameters(
 		skiptoken = "R0usmcCM996atia_s",
@@ -19,8 +20,7 @@ headers = {
 
 )
 
-
-result = await client.me.calendar_view.delta.get(request_configuration = request_configuration)
+result = await graph_client.me.calendar_view.delta.get(request_configuration = request_configuration)
 
 
 ```

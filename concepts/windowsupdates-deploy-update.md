@@ -45,19 +45,39 @@ Content-Type: application/json
     "value": [
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
-            "id": "560a186a-1434-4364-8330-deb944b494ff",
-            "displayName": "Windows 10, version 20H2",
-            "releaseDate": "String (timestamp)",
-            "deployableUntilDateTime": "String (timestamp)",
-            "version": "20H2"
+            "id": "d9049ddb-0ca8-4bc1-bd3c-41a456ef300f",
+            "displayName": "Windows 11, version 22H2",
+            "deployableUntilDateTime": "2025-10-14T00:00:00Z",
+            "releaseDateTime": "2022-09-20T00:00:00Z",
+            "version": "Windows 11, version 22H2",
+            "buildNumber": "22621"
         },
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
-            "id": "5e436dae-56bd-4925-bf8b-acf550e07227",
-            "displayName": "Windows 10, version 2004",
-            "releaseDate": "String (timestamp)",
-            "deployableUntilDateTime": "String (timestamp)",
-            "version": "2004"
+            "id": "7f4cee4c-9aa5-4e61-a4ca-c23a1bdba6f7",
+            "displayName": "Windows 11",
+            "deployableUntilDateTime": "2024-10-08T00:00:00Z",
+            "releaseDateTime": "2021-10-04T00:00:00Z",
+            "version": "Windows 11, version 21H2",
+            "buildNumber": "22000"
+        },
+        {
+            "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+            "id": "f341705b-0b15-4ce3-aaf2-6a1681d78606",
+            "displayName": "Windows 10, version 22H2",
+            "deployableUntilDateTime": "2025-10-14T00:00:00Z",
+            "releaseDateTime": "2022-10-18T00:00:00Z",
+            "version": "Windows 10, version 22H2",
+            "buildNumber": "19045"
+        },
+        {
+            "@odata.type": "#microsoft.graph.windowsUpdates.featureUpdateCatalogEntry",
+            "id": "53707a30-7816-448e-ab54-8cfedc48bfbc",
+            "displayName": "Windows 10, version 21H2",
+            "deployableUntilDateTime": "2024-06-11T00:00:00Z",
+            "releaseDateTime": "2021-11-16T00:00:00Z",
+            "version": "Windows 10, version 21H2",
+            "buildNumber": "19044"
         }
     ]
 }

@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "SharePoint can be configured to retain the history for list items."
 ms.date: 09/10/2017
 title: Get a previous version of a SharePoint list record
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 SharePoint can be configured to retain the history for list items.
 
 Previous versions may be retained for a finite period of time depending on admin settings which may be unique per user or location.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

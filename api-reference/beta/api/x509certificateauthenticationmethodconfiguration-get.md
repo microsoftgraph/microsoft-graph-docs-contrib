@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Read the configuration details for the [X.509 certificate authentication method](../resources/x509certificateauthenticationmethodconfiguration.md) in the [authentication methods policy](../resources/authenticationmethodspolicy.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -66,6 +68,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-x509certificateauthenticationmethodconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-x509certificateauthenticationmethodconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -128,6 +134,9 @@ Content-Type: application/json
     "authenticationModeConfiguration": {
         "x509CertificateAuthenticationDefaultMode": "x509CertificateSingleFactor",
         "rules": []
+    },
+    "issuerHintsConfiguration": {
+        "state": "disabled"
     },
     "includeTargets": [
         {
