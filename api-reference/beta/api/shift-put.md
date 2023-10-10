@@ -19,6 +19,12 @@ If the specified [shift](../resources/shift.md) doesn't exist, this method retur
 
 The duration of a shift can't be less than 1 minute or longer than 24 hours.
 
+When you replace a shift, the `sharedShift` property is visible to all team members, but the `draftShift` property is only visible to team owners, and would need to be shared with team members for visibility. Sharing changes to the `draftShift` property copies those changes to the `sharedShift` property.
+
+You can't update the `sharedShift` property if you're updating the `draftShift` property. The `draftShift` property must be empty in order to update the `sharedShift` property.
+
+Updates to the `sharedShift` property send notifications to users in the Teams client. To streamline the user experience, update the `draftShift` property, and then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -212,12 +218,3 @@ Content-type: application/json
   ]
 }
 -->
-
-**Difference between the `sharedShift` and `draftShift`:**
-
-* The `sharedShift` property is visible to all team members.
-* The `draftShift` property is for draft changes only visible to team owners. The `draftShift` changes need to be shared with team members for visibility.
-* When the `draftShift` changes are shared, the content from the `draftShift` property is copied into the `sharedShift` property.
-* Changes to the shared property are restricted when there's a draft waiting. You can only make changes to the shared property when the draft property is empty.
-* Updates to the shared property prompt notifications for the affected user within the Teams client notifications are presented through both the activity feed and mobile notifications.
-* For a streamlined user experience, it is advisable to make further changes to the draft properties, thereby mitigating notification alerts. You can then use the [schedule share](/graph/api/schedule-share) API to publish all pending changes within a date range as a single action.
