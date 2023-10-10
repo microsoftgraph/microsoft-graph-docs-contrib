@@ -36,7 +36,7 @@ Inherits from [entity](../resources/entity.md).
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|targetDeviceGroups|[targetDeviceGroup](../resources/targetdevicegroup.md) collection|The collection of target device groups associated with the remote desktop security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new RDS Entra ID authentication protocol.|
+|targetDeviceGroups|[targetDeviceGroup](../resources/targetdevicegroup.md) collection|The collection of target device groups associated with the remote desktop security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.|
 
 ## JSON representation
 Here's a JSON representation of the resource.
