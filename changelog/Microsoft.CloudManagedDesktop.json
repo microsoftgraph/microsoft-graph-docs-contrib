@@ -3593,6 +3593,24 @@
         "CreatedDateTime": "2023-07-06T03:57:35.2333537Z",
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "cd506d8f-eddb-4d12-859d-a7894452989e",
+            "ApiChange": "Permission",
+            "ChangedApiName": "CloudPC.ReadWrite.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the application permission `CloudPC.ReadWrite.All` to the following operations of the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource: [POST](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-beta), [UPDATE](https://learn.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-update?view=graph-rest-beta), [DELETE](https://learn.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-delete?view=graph-rest-beta), and [runHealthChecks](https://learn.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta).",
+            "Target": "cloudPcOnPremisesConnection"
+          }
+        ],
+        "Id": "cd506d8f-eddb-4d12-859d-a7894452989e",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-10-09T11:36:16.0017333Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
       }
     ]
 }
