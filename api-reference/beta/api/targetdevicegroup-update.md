@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [targetDeviceGroup](../resources/targetdevicegroup.md) object for remoteDesktopSecurityConfiguration object on the servicePrincipal. A max of 10 target device groups can be configured for the remoteDesktopSecurityConfiguraiton object on the servicePrincipal.
+Update the properties of a [targetDeviceGroup](../resources/targetdevicegroup.md) object for remoteDesktopSecurityConfiguration object on the servicePrincipal. You can configure a maximum of 10 target device groups for the remoteDesktopSecurityConfiguraiton object on the servicePrincipal.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
