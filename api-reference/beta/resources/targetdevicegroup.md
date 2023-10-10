@@ -29,7 +29,7 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display name for the target device group|
+|displayName|String|Display name for the target device group.|
 |id|String|Object id of the group in the directory. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
