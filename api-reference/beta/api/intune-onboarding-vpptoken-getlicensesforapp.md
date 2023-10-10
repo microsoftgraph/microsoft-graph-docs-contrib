@@ -1,6 +1,6 @@
 ---
 title: "getLicensesForApp function"
-description: ""
+description: "Intune Onboarding Vpptoken Getlicensesforapp Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
