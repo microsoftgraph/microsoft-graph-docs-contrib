@@ -30,6 +30,10 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 To get a list of deviceLocalCredentialInfo within the tenant:
 
+> [!CAUTION]
+> We're introducing breaking changes where the `GET /deviceLocalCredentials` endpoint will be deprecated at the end of 2023. Use the `GET /directory/deviceLocalCredentials` endpoint instead.
+>
+ 
 <!-- {
   "blockType": "ignored"
 }
@@ -38,9 +42,6 @@ To get a list of deviceLocalCredentialInfo within the tenant:
 GET /directory/deviceLocalCredentials
 GET /deviceLocalCredentials
 ```
-> [!CAUTION]
-> We're introducing breaking changes at the end of 2023, where GET /deviceLocalCredentials will be deprecated. Use GET /directory/deviceLocalCredentials instead.
->
 
 ## Optional query parameters
 This method supports the `$select`, `$filter`, `$search`, `$orderby`, `$top`, `$count` and `$skiptoken` OData query parameter to help customize the response.
