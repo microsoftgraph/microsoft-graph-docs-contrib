@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> Existing apps that use this feature with the **cloudPcSharedUseServicePlan** should be updated, as the **cloudPcSharedUseServicePlan** resource is being deprecated and will stop returning data on October 8th, 2023.
+> Existing apps that use this feature with the **cloudPcSharedUseServicePlan** should be updated, as the **cloudPcSharedUseServicePlan** resource is deprecated and stopped returning data on October 8, 2023.
 
 Represents a container for APIs to manage Cloud PCs.
 
@@ -59,6 +59,7 @@ Use the Cloud PC API to provision and manage virtual desktops for employees in a
 |crossCloudGovernmentOrganizationMapping|[cloudPcCrossCloudGovernmentOrganizationMapping](../resources/cloudpccrosscloudgovernmentorganizationmapping.md)|Cloud PC organization mapping between public and US Government Community Cloud (GCC) organizations.|
 |deviceImages|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) collection|The image resource on Cloud PC.|
 |externalPartnerSettings|[cloudPcExternalPartnerSetting](../resources/cloudpcexternalpartnersetting.md) collection|The external partner settings on a Cloud PC.|
+|frontLineServicePlans|[cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) collection|Front-line service plans for a Cloud PC.|
 |galleryImages|[cloudPcGalleryImage](../resources/cloudpcgalleryimage.md) collection|The gallery image resource on Cloud PC.|
 |onPremisesConnections|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) collection|A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.|
 |organizationSettings|[cloudPcOrganizationSettings](../resources/cloudpcorganizationsettings.md) |The Cloud PC organization settings for a tenant. |
@@ -69,7 +70,6 @@ Use the Cloud PC API to provision and manage virtual desktops for employees in a
 |supportedRegions|[cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) collection|Cloud PC supported regions.|
 |userSettings|[cloudPcUserSetting](../resources/cloudpcusersetting.md) collection|Cloud PC user settings. |
 |sharedUseServicePlans (deprecated)|[cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) collection|Cloud PC shared-use service plans.|
-|frontLineServicePlans (deprecated)|[cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md) collection|Cloud PC front-line service plans.|
 
 ## JSON representation
 
