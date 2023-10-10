@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Get basic details
+### Example 1: List all records
 
 #### Request
 
