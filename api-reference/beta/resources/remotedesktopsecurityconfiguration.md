@@ -1,6 +1,6 @@
 ---
 title: "remoteDesktopSecurityConfiguration resource type"
-description: "Represents configuration for remoteDesktopSecurityConfiguration object on the servicePrincipal to enable new RDS Entra ID authentication protocol and SSO for clients connecting over RDP to devices that belong to target device groups."
+description: "Represents the configuration for a remoteDesktopSecurityConfiguration object on the servicePrincipal to enable the Microsoft Entra Remote Desktop Services (RDS) authentication protocol and single sign-on (SSO) for clients connecting over RDP to devices that belong to target device groups."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "applications"
