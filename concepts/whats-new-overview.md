@@ -47,6 +47,7 @@ Manage additional resources, such as a Kubernetes account or service, or a stora
 ### Teamwork and communications | Apps
 - [List](/graph/api/chat-list-permissiongrants) each [resource-specific permission grant](/graph/api/resources/resourcespecificpermissiongrant) on a specific [chat](/graph/api/resources/chat), showing each Azure AD app that has access to the chat, the permission type, and actual resource-specific permission.
 - [List](/graph/api/team-list-permissiongrants) each [resource-specific permission grant](/graph/api/resources/resourcespecificpermissiongrant) on a specific [team](/graph/api/resources/team), showing each Azure AD app that has access to the team, the permission type, and actual resource-specific permission.
+- [Set](/graph/api/chatmessage-setreaction) or [unset](/graph/api/chatmessage-unsetreaction) a reaction to a single [message](/graph/api/resources/chatmessage) or a [message reply](/graph/api/resources/chatmessage) in a Teams [channel](/graph/api/resources/channel) or a [chat](/graph/api/resources/chat).
 
 ## August 2023: New in preview only
 
@@ -56,6 +57,12 @@ Set as part of [authentication behaviors](/graph/api/resources/authenticationBeh
 ### Device and app management | Cloud PC
 - Set up an [alert rule](/graph/api/resources/devicemanagement-alertrule?view=graph-rest-beta&preserve-view=true) by using a rule template for a grace period scenario. This type of an alert rule triggers an alert on the Microsoft Endpoint Manager admin center when a license or assignment change happens to the user and the Cloud PC enters a grace period. For more information about Cloud PC grace periods, see [Device management overview for Cloud PCs](/windows-365/enterprise/device-management-overview).
 - Get informational status from the most recent health check on an [on-premises network connection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true#cloudpconpremisesconnectionstatus-values) between a Cloud PC and Azure, involving Cloud PC add-on features such as single sign-on. This information is intended to optimize the user experience and doesn't affect the provisioning of the customer's Cloud PC.
+
+### Device and app management | Device updates
+- [Get](/graph/api/windowsupdates-catalog-list-entries?view=graph-rest-beta) one ore more [quality updates](/graph/api/resources/windowsupdates-qualityupdatecatalogentry?view=graph-rest-beta) and their corresponding [operating system revision](/graph/api/resources/windowsupdates-productRevision?view=graph-rest-beta).
+- Get quality updates with [Common Vulnerabilities and Exposures (CVE) information](/graph/api/resources/windowsupdates-qualityupdatecveseverityinformation?view=graph-rest-beta) indicating they address publicly exploited vulnerabilities or CVEs of a specific severity level.
+- Get all operating system builds that were affected by a [product revision](/graph/api/resources/windowsupdates-productRevision?view=graph-rest-beta).
+- Get the build numbers of available [product releases](/graph/api/resources/windowsupdates-featureupdatecatalogentry?view=graph-rest-beta) to deploy.
 
 ### Device and app management | Multi-tenant management
 Get the license type of a specified managed tenant as part of the Azure Active Directory [credential user registration](/graph/api/resources/managedtenants-credentialUserRegistrationsSummary?view=graph-rest-beta&preserve-view=true), for example, AADFree, AADPremium1, AADPremium2.
