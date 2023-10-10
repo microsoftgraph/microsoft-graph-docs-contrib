@@ -3557,6 +3557,24 @@
           "CreatedDateTime": "2023-07-31T09:00:37.9148169Z",
           "WorkloadArea": "Device and app management",
           "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "80297d8c-5457-4fa1-be2b-769490b818bb",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "adJoinCheckServerNotOperational",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `adJoinCheckServerNotOperational` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "80297d8c-5457-4fa1-be2b-769490b818bb",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2023-10-09T10:11:50.582Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
      },
      {
         "ChangeList": [
