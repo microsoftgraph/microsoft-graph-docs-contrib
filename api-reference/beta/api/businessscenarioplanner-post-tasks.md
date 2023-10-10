@@ -75,7 +75,7 @@ If successful, this method returns a `201 Created` response code and a [business
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -144,7 +144,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows a response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -34,7 +34,7 @@ The work or school account needs to belong to one of the following roles:
 * Service Support Administrator
 * Billing Administrator
 * Mailbox Administrator
-* Partner Tier1 Support
+* Partner Tier 1 Support
 * Partner Tier2 Support
 * Directory Readers
 * Directory Writers
@@ -87,7 +87,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Accept         | application/json; |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

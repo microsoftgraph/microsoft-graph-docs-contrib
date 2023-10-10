@@ -21,7 +21,7 @@ Follow these business rules for business-level settings.
 
 ### Business hours
 
-Use the [Update bookingBusiness](/graph/api/bookingbusiness-update) API to modify **businessHours**. Note that an appointment can't be set outside the business hours.
+Use the [Update bookingBusiness](/graph/api/bookingbusiness-update) API to modify **businessHours**. An appointment can't be set outside the business hours.
 
 ### Scheduling policy
 
@@ -29,7 +29,7 @@ For details about the scheduling policy, see [bookingSchedulingPolicy](/graph/ap
 
 **Time increments (Time slot interval)** indicates the duration of an appointment. While validating business rules, make sure that an appointment is for the same duration as indicated in the service.
 
-**Minimum lead time** indicates the minimum time before an appointment can be made or cancelled.
+**Minimum lead time** indicates the minimum time before an appointment can be made or canceled.
 
 **Maximum Lead time** indicates the maximum time before an appointment can be made.  
 
