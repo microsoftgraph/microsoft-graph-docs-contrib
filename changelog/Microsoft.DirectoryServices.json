@@ -7,7 +7,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "remoteDesktopSecurityConfiguration",
           "ChangeType": "Addition",
-          "Description": "Added the [remoteDesktopSecurityConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/remoteDesktopSecurityConfiguration?view=graph-rest-beta) resource",
+          "Description": "Added the [remoteDesktopSecurityConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/remoteDesktopSecurityConfiguration?view=graph-rest-beta) resource and its associated methods.",
           "Target": "remoteDesktopSecurityConfiguration"
         },
         {
