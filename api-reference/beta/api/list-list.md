@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Enumerate lists in a site
+# Get lists in a site
 
 Namespace: microsoft.graph
 
