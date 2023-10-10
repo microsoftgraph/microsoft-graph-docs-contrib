@@ -24,7 +24,7 @@ To check for changes in the future, call `delta` again with the **@odata.deltaL
 The delta feed shows the latest state for each item, not each change. If an item were renamed twice, it will only show up once, with its latest name.
 The same item might appear more than once in a delta feed, for various reasons. You should use the last occurrence you see.
 
-Deleted items are returned with the [deleted facet](../resources/deleted.md). Deleted indicates that the item is deleted and cannot be restored.
+Deleted items are returned with the [`deleted` facet](../resources/deleted.md) and @removed annotation with the reason of removal. Deleted indicates that the item is deleted and cannot be restored.
 Items with this property should be removed from your local state.
 
 > **Note:** You should only delete a folder locally if it's empty after syncing all the changes.
@@ -247,6 +247,9 @@ Content-type: application/json
                 "name": "Document"
             },
             "deleted": {"state": "deleted"}
+            "@removed": {
+                "reason": "deleted"
+            },
         }
     ],
     "@odata.deltaLink": "https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-251A-49EA-93A8-39E1C3A060FE/lists/22e03ef3-6ef4-424d-a1d3-92a337807c30/items/delta?token=1230919asd190410jlka"
