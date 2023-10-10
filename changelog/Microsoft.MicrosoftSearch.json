@@ -770,8 +770,6 @@
     }
   ]
 },
-{
-  "changelog": [
     {
       "ChangeList": [
         {
@@ -779,9 +777,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "connectorId",
           "ChangeType": "Addition",
-          "Description": "Added the `connectorId` property to the [externalConnection](
-https://learn.microsoft.com/en-us/graph/api/resources/externalConnectors-externalConnection?view=graph-rest-1.0)
-resource.",
+          "Description": "Added the **connectorId** property to the [externalConnection](https://learn.microsoft.com/en-us/graph/api/resources/externalConnectors-externalConnection?view=graph-rest-1.0) resource.",
           "Target": "externalConnection"
         }
       ],
