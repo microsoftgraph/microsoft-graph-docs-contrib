@@ -31,7 +31,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique identifier for the remote desktop security configuration. Inherited from [entity](../resources/entity.md).|
-|isRemoteDesktopProtocolEnabled|Boolean|Determines if RDS Entra ID authentication protocol for RDP is enabled or not.|
+|isRemoteDesktopProtocolEnabled|Boolean|Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.|
 
 ## Relationships
 |Relationship|Type|Description|
