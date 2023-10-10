@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Types of [teamsAsyncOperation](teamsasyncoperation.md). Members will be added here as more async operations are supported.
 
 ## Members
-The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `teamifyGroup`, `createChannel`, `createChat`.
+The following table lists the members of an [evolvable enumeration](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations). You must use the `Prefer: include-unknown-enum-members` request header to get the following values in this evolvable enum: `teamifyGroup`, `createChannel`, `createChat`, `archiveChannel`, `unarchiveChannel`.
 
 | Member | Description |
 |:---------------|:----------|
@@ -29,3 +29,5 @@ The following table lists the members of an [evolvable enumeration](/graph/best-
 |teamifyGroup |Operation to create a team from a group. |
 |createChannel |Operation to create a channel in a team. |
 |createChat|Operation to create a chat from scratch.|
+|archiveChannel |Operation to archive a channel.|
+|unarchiveChannel |Operation to unarchive a channel.|
