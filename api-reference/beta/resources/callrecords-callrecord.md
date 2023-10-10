@@ -20,6 +20,7 @@ Represents a single peer-to-peer call or a group call between multiple participa
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get callRecord](../api/callrecords-callrecord-get.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) | Read the properties and relationships of a **callRecord** object. |
+| [List callRecord](../api/callrecords-callrecord-list.md) | [microsoft.graph.callRecords.callRecord](callrecords-callrecord.md) | List and filter all **callRecord** objects. |
 | [getPstnCalls](../api/callrecords-callrecord-getpstncalls.md) | [microsoft.graph.callRecords.pstnCallLogRow](callrecords-pstncalllogrow.md) collection | List **pstnCallLogRow** objects in a call record. |
 | [getDirectRoutingCalls](../api/callrecords-callrecord-getdirectroutingcalls.md) | [microsoft.graph.callRecords.directRoutingLogRow](callrecords-directroutinglogrow.md) collection| List **directRoutingLogRow** objects for a call record. |
 | [getPstnBlockedUsersLog](../api/callrecords-callrecord-getpstnblockeduserslog.md) | [microsoft.graph.callRecords.pstnBlockedUsersLogRow](callrecords-pstnblockeduserslogrow.md) collection| Get the log of users who are blocked/unblocked from making public switched telephone network (PSTN) calls in Microsoft Teams as a collection of **pstnBlockedUsersLogRow** entries. |
@@ -37,8 +38,6 @@ Represents a single peer-to-peer call or a group call between multiple participa
 |modalities|modality collection|List of all the modalities used in the call. Possible values are: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
 |organizer|[identitySet](identityset.md)|The organizing party's identity. Deprecated.|
 |participants|[identitySet](identityset.md) collection|List of distinct identities involved in the call. Deprecated.|
-|organizer_v2|[organizer](callrecord-organizer.md)|Identity of the organizer of the call.|
-|participants_v2|[participant](callrecord-participant.md)|List of distinct participants in the call.|
 |startDateTime|DateTimeOffset|UTC time when the first user joined the call. The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |type|callType|Indicates the type of the call. Possible values are: `unknown`, `groupCall`, `peerToPeer`, `unknownFutureValue`.|
 |version|Int64|Monotonically increasing version of the call record. Higher version call records with the same ID includes additional data compared to the lower version.|
@@ -48,6 +47,8 @@ Represents a single peer-to-peer call or a group call between multiple participa
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |sessions|[microsoft.graph.callRecords.session](callrecords-session.md) collection|List of sessions involved in the call. Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant. Read-only. Nullable.|
+|organizer_v2|[organizer](callrecord-organizer.md)|Identity of the organizer of the call.|
+|participants_v2|[participant](callrecord-participant.md) collection|List of distinct participants in the call.|
 
 ## JSON representation
 
@@ -71,6 +72,8 @@ The following is a JSON representation of the resource.
   "modalities": ["string"],
   "organizer": {"@odata.type": "microsoft.graph.identitySet"},
   "participants": [{"@odata.type": "microsoft.graph.identitySet"}],
+  "organizer_v2": {"@odata.type": "microsoft.graph.callRecords.organizer"},
+  "participants_v2": [{"@odata.type": "microsoft.graph.callRecords.participant"}],
   "startDateTime": "String (timestamp)",
   "type": "string",
   "version": 1024

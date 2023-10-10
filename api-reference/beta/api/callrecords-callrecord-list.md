@@ -98,41 +98,57 @@ The following is an example of the response. If the list is truncated, a `callRe
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords/$entity",
-    "version": 1,
-    "type": "peerToPeer",
-    "modalities": [
+	"@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords",
+	"value": [
+    {
+      "id": "3cf3bbc8-b21d-4f2e-bfd0-b13603ae6c65",
+      "version": 2,
+      "type": "unknown",
+      "modalities": [
         "audio"
-    ],
-    "lastModifiedDateTime": "2020-02-25T19:00:24.582757Z",
-    "startDateTime": "2020-02-25T18:52:21.2169889Z",
-    "endDateTime": "2020-02-25T18:52:46.7640013Z",
-    "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
-    "organizer": {
-        "user": {
+      ],
+      "lastModifiedDateTime": "2023-09-25T10:36:40Z",
+      "startDateTime": "2023-09-25T09:28:38Z",
+      "endDateTime": "2023-09-25T09:28:41Z",
+      "organizer_v2@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('3cf3bbc8-b21d-4f2e-bfd0-b13603ae6c65')/organizer_v2/$entity",
+      "organizer_v2": {
+        "id": "821809f5-0000-0000-0000-3b5136c0e777",
+        "identity": {
+          "user": {
             "id": "821809f5-0000-0000-0000-3b5136c0e777",
             "displayName": "Abbie Wilkins",
-            "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
+            "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+          }
         }
+      }
     },
-    "participants": [
-        {
-            "user": {
-                "id": "821809f5-0000-0000-0000-3b5136c0e777",
-                "displayName": "Abbie Wilkins",
-                "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
-            }
-        },
-        {
-            "user": {
-                "id": "f69e2c00-0000-0000-0000-185e5f5f5d8a",
-                "displayName": "Owen Franklin",
-                "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
-            }
+    {
+      "id": "c3ad8c4b-4a87-4ab1-bef0-284d2f40ed9f",
+      "version": 2,
+      "type": "unknown",
+      "modalities": [
+        "audio"
+      ],
+      "lastModifiedDateTime": "2023-09-25T14:18:13Z",
+			"startDateTime": "2023-09-25T14:03:36Z",
+			"endDateTime": "2023-09-25T14:03:40Z",
+      "organizer_v2@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('c3ad8c4b-4a87-4ab1-bef0-284d2f40ed9f')/organizer_v2/$entity",
+      "organizer_v2": {
+        "id": "+5564981205182",
+				"identity": {
+					"user": null,
+					"acsUser": null,
+					"spoolUser": null,
+					"phone": {
+						"id": "+5564981205182",
+						"displayName": null,
+						"tenantId": null
+					}
         }
-    ]
+      }
+    }
+  ]
 }
 ```
 
@@ -149,14 +165,14 @@ The following is an example of a request to get call records filtered by a speci
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/communications/callRecords?$filter=startDateTime ge 2023-04-21 and startDateTime lt 2023-05-04
+GET https://graph.microsoft.com/beta/communications/callRecords?$filter=startDateTime ge 2023-09-25T09:25:00Z and startDateTime lt 2023-09-25T09:30:00Z
 ```
 
 ---
 
 #### Response
 
-The following is an example of the response. If the list is truncated, a `callRecord@odata.nextLink` value will be provided to retrieve the next page of sessions. The default page size for call records is 60 entries.
+The following is an example of the response. If the list is truncated, a `callRecord@odata.nextLink` value will be provided to retrieve the next page of records. The default page size for call records is 60 entries.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -171,7 +187,33 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   TODO: Put example response here
+  {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords",
+    "value": [
+      {
+        "id": "3cf3bbc8-b21d-4f2e-bfd0-b13603ae6c65",
+        "version": 2,
+        "type": "unknown",
+        "modalities": [
+          "audio"
+        ],
+        "lastModifiedDateTime": "2023-09-25T10:36:40Z",
+        "startDateTime": "2023-09-25T09:28:38Z",
+        "endDateTime": "2023-09-25T09:28:41Z",
+        "organizer_v2@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('3cf3bbc8-b21d-4f2e-bfd0-b13603ae6c65')/organizer_v2/$entity",
+        "organizer_v2": {
+          "id": "821809f5-0000-0000-0000-3b5136c0e777",
+          "identity": {
+            "user": {
+              "id": "821809f5-0000-0000-0000-3b5136c0e777",
+              "displayName": "Abbie Wilkins",
+              "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+            }
+          }
+        }
+      }
+    ]
+  }
 }
 ```
 
@@ -188,14 +230,14 @@ The following is an example of a request to get call records filtered by a speci
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/communications/callRecords?$filter=participants_v2/any(p:p/id eq '00000000-0000-0000-0000-000000000000')
+GET https://graph.microsoft.com/beta/communications/callRecords?$filter=participants_v2/any(p:p/id eq '821809f5-0000-0000-0000-3b5136c0e777')
 ```
 
 ---
 
 #### Response
 
-The following is an example of the response. If the list is truncated, a `callRecord@odata.nextLink` value will be provided to retrieve the next page of sessions. The default page size for call records is 60 entries.
+The following is an example of the response. If the list is truncated, a `callRecord@odata.nextLink` value will be provided to retrieve the next page of records. The default page size for call records is 60 entries.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -210,7 +252,33 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-   TODO: Put example response here
+  {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords",
+    "value": [
+      {
+        "id": "3cf3bbc8-b21d-4f2e-bfd0-b13603ae6c65",
+        "version": 2,
+        "type": "unknown",
+        "modalities": [
+          "audio"
+        ],
+        "lastModifiedDateTime": "2023-09-25T10:36:40Z",
+        "startDateTime": "2023-09-25T09:28:38Z",
+        "endDateTime": "2023-09-25T09:28:41Z",
+        "organizer_v2@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('3cf3bbc8-b21d-4f2e-bfd0-b13603ae6c65')/organizer_v2/$entity",
+        "organizer_v2": {
+          "id": "821809f5-0000-0000-0000-3b5136c0e777",
+          "identity": {
+            "user": {
+              "id": "821809f5-0000-0000-0000-3b5136c0e777",
+              "displayName": "Abbie Wilkins",
+              "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+            }
+          }
+        }
+      }
+    ]
+  }
 }
 ```
 

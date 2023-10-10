@@ -20,19 +20,22 @@ In some circumstances, the unique identifier for the actor might not be availabl
 
 | Property            | Type   | Description                                                                                                                                                                                                                                                                                                           |
 |:--------------------|:-------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| displayName         | String | The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md).  |
-| id                  | String | Unique identifier for the identity.                                                                                                                                                                                                                                                                                   |
-| tenantId            | String | Unique identity of the tenant (optional).                                                                                                                                                                                                                                                                             |
+| displayName         | String | The display name of the identity. This might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md).       |
+| id                  | String | Unique identifier for the identity.                                          |
+| tenantId            | String | Unique identity of the tenant (optional).                                    |
+| userPrincipalName   | String | User Principal Name of the identity (optional).                              |
+| thumbnails          | [thumbnailSet](thumbnailset.md) | Keyed collection of thumbnail resources (optional). |
 
 ## JSON representation
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identity", "optionalProperties": ["displayName", "tenantId", "thumbnails"], "openType": true } -->
+<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.identity", "optionalProperties": ["displayName", "tenantId", "userPrincipalName", "thumbnails"], "openType": true } -->
 
 ```json
 {
   "displayName": "string",
   "id": "string",
   "tenantId": "string",
+  "userPrincipalName": "string",
   "thumbnails": { "@odata.type": "microsoft.graph.thumbnailSet" }
 }
 ```
