@@ -1,6 +1,6 @@
 ---
 title: "updateDefinitionValues action"
-description: ""
+description: "Intune Grouppolicy Grouppolicyconfiguration Updatedefinitionvalues Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

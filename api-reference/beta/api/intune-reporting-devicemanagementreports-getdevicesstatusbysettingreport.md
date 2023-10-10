@@ -1,6 +1,6 @@
 ---
 title: "getDevicesStatusBySettingReport action"
-description: ""
+description: "Intune Reporting Devicemanagementreports Getdevicesstatusbysettingreport Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
