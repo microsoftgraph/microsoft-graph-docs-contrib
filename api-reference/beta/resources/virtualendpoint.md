@@ -69,7 +69,7 @@ Use the Cloud PC API to provision and manage virtual desktops for employees in a
 |snapshots|[cloudPcSnapshot](../resources/cloudpcsnapshot.md) collection|Cloud PC snapshots.|
 |supportedRegions|[cloudPcSupportedRegion](../resources/cloudpcsupportedregion.md) collection|Cloud PC supported regions.|
 |userSettings|[cloudPcUserSetting](../resources/cloudpcusersetting.md) collection|Cloud PC user settings. |
-|sharedUseServicePlans (deprecated)|[cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) collection|Cloud PC shared-use service plans.|
+|sharedUseServicePlans (deprecated)|[cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) collection|Cloud PC shared-use service plans. The **sharedUseServicePlans** relationship is deprecated and stopped returning data on October 8, 2023. Going forward, use the **frontLineServicePlans** relationship.|
 
 ## JSON representation
 
