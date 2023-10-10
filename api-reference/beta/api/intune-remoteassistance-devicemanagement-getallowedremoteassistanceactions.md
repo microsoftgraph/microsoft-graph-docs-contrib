@@ -1,6 +1,6 @@
 ---
 title: "getAllowedRemoteAssistanceActions function"
-description: ""
+description: "Intune Remoteassistance Devicemanagement Getallowedremoteassistanceactions Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

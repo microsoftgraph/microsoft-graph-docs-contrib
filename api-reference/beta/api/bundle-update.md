@@ -19,7 +19,7 @@ You can only update the following metadata:
 * Bundle name
 * Album `coverImageItemId` (if applicable)
 
-Any other change requests will be ignored.
+Any other change requests are ignored.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -46,20 +46,20 @@ PATCH /drive/items/{bundle-id}
 | Name          | Description  |
 |:------------- |:------------ |
 | Authorization | Bearer \{token\}. Required. |
-| if-match      | eTag. Optional. If this request header is included and the eTag provided does not match the current eTag on the buncle, a `412 Precondition Failed` response is returned.
+| if-match      | eTag. Optional. If this request header is included and the eTag provided doesn't match the current eTag on the bundle, a `412 Precondition Failed` response is returned.
 
 ## Request body
 
 In the request body, supply the values for relevant fields that should be
-updated. Existing properties that are not included in the request body
-will maintain their previous values or be recalculated based on changes to other
+updated. Existing properties that aren't included in the request body
+maintains their previous values or be recalculated based on changes to other
 property values. For best performance, don't include existing values that haven't changed.
 
 ## Response
 
 If successful, this method returns a [driveItem][] resource that represents the updated bundle in the response body.
 
-Read the [Error Responses][error-response] topic for more info about how errors are returned.
+Read the [Error Responses][error-response] article for more info about how errors are returned.
 
 ## Example
 

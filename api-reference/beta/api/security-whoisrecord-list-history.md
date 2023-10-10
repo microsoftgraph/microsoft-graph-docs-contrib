@@ -17,6 +17,8 @@ Namespace: microsoft.graph.security
 
 Get the history for a [whoisRecord](../resources/security-whoisrecord.md), as represented by a collection of [whoisHistoryRecord](../resources/security-whoishistoryrecord.md) resources.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

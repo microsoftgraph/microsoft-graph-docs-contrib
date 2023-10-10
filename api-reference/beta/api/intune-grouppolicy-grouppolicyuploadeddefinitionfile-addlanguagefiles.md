@@ -1,6 +1,6 @@
 ---
 title: "addLanguageFiles action"
-description: ""
+description: "Intune Grouppolicy Grouppolicyuploadeddefinitionfile Addlanguagefiles Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

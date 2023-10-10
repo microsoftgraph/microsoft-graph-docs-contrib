@@ -1,6 +1,6 @@
 ---
 title: "disconnect action"
-description: ""
+description: "Intune Chromebooksync Chromeosonboardingsettings Disconnect Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

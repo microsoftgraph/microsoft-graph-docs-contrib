@@ -15,6 +15,8 @@ Namespace: microsoft.graph.security
 
 Get a list of [sslCertificate](../resources/security-sslcertificate.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -127,8 +129,6 @@ GET https://graph.microsoft.com/v1.0/security/threatIntelligence/sslCertificates
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-sslcertificates-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ---
 
