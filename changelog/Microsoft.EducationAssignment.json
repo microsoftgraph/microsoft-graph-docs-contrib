@@ -163,7 +163,7 @@
           "Target": "educationAssignment"
         },
         {
-          "Id": "f42a2acd-7e06-4b84-abdd-5df825fc2845",
+          "Id": "8ecf649b-9be2-4d02-b1cd-fc6f53bca6a6",
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWriteBasic.All",
           "ChangeType": "Addition",
@@ -171,7 +171,7 @@
           "Target": "educationAssignment"
         }
       ],
-      "Id": "f2ab8d6b-0439-418e-aa8a-7ac6267031e0",
+      "Id": "8ecf649b-9be2-4d02-b1cd-fc6f53bca6a6",
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2023-08-23T00:00:00",
