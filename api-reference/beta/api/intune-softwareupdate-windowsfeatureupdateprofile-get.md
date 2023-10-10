@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 896
+Content-Length: 960
 
 {
   "value": {
@@ -84,7 +84,8 @@ Content-Length: 896
       "Role Scope Tag Ids value"
     ],
     "deployableContentDisplayName": "Deployable Content Display Name value",
-    "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00"
+    "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
+    "installLatestWindows10OnWindows11IneligibleDevice": true
   }
 }
 ```
