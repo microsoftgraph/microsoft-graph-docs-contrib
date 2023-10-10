@@ -786,7 +786,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2023-10-02T19:03:32.2883548Z",
       "WorkloadArea": "Search",
-      "SubArea": ""
+      "SubArea": "Index"
     }
   ]
 }
