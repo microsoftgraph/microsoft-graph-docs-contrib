@@ -1449,6 +1449,40 @@
       "CreatedDateTime": "2023-09-26T09:31:18.7436605Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callTranscript",
+          "ChangeType": "Addition",
+          "Description": "Added the [callTranscript](https://docs.microsoft.com/en-us/graph/api/resources/callTranscript?view=graph-rest-1.0) resource type.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/callTranscript-list?view=graph-rest-1.0) operation to the [callTranscript] resource.",
+          "Target": "callTranscript"
+        },
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/callTranscript-get?view=graph-rest-1.0) operation to the [callTranscript] resource.",
+          "Target": "callTranscript"
+        }
+      ],
+      "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-10-04T15:37:11Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     }
   ]
 }
