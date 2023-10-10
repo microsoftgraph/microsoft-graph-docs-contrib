@@ -132,8 +132,6 @@ GET https://graph.microsoft.com/v1.0/security/threatIntelligence/sslCertificates
 
 ---
 
----
-
 ### Response
 
 The following is an example of the response.

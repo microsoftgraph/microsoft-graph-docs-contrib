@@ -16416,14 +16416,14 @@ items:
                   - name: Get article
                     href: api/security-article-get.md
                   - name: List articles
-                    href: api/security-article-list.md
-                  - name: List indicators
+                    href: api/security-threatintelligence-list-articles.md
+                  - name: List article indicators
                     href: api/security-article-list-indicators.md
               - name: Article indicator
                 items:
                   - name: Article indicator
                     href: resources/security-articleindicator.md
-                  - name: List indicators
+                  - name: List article indicators
                     href: api/security-article-list-indicators.md
                   - name: Get article indicator
                     href: api/security-articleindicator-get.md
@@ -16435,8 +16435,8 @@ items:
                     href: api/security-host-get.md
                   - name: Get host reputation
                     href: api/security-host-get-reputation.md
-                  - name: Get WHOIS record for a host
-                    href: api/security-host-get-whois.md
+                  - name: Get WHOIS record
+                    href: api/security-whoisrecord-get.md
                   - name: List components
                     href: api/security-host-list-components.md
                   - name: List cookies
@@ -16448,7 +16448,7 @@ items:
                   - name: List host pairs for a host as parent
                     href: api/security-host-list-childhostpairs.md
                   - name: List host SSL certificates
-                    href: api/security-hostsslcertificate-list-host.md
+                    href: api/security-host-list-sslcertificates.md
                   - name: List passive DNS
                     href: api/security-host-list-passivedns.md
                   - name: List passive DNS reverse
@@ -16490,7 +16490,7 @@ items:
                 - name: Host SSL certificate
                   href: resources/security-hostsslcertificate.md
                 - name: List
-                  href: api/security-hostsslcertificate-list-host.md
+                  href: api/security-host-list-sslcertificates.md
                 - name: Get
                   href: api/security-hostsslcertificate-get.md
               - name: Host tracker
@@ -16508,7 +16508,7 @@ items:
                   - name: Get intelligence profile
                     href: api/security-intelligenceprofile-get.md
                   - name: List intelligence profiles
-                    href: api/security-intelligenceprofile-list.md
+                    href: api/security-threatintelligence-list-intelprofiles.md
                   - name: List indicators
                     href: api/security-intelligenceprofile-list-indicators.md
               - name: Intelligence profile indicator
@@ -16534,7 +16534,7 @@ items:
                 - name: SSL certificate
                   href: resources/security-sslcertificate.md
                 - name: List
-                  href: api/security-sslcertificate-list.md
+                  href: api/security-threatintelligence-list-sslcertificates.md
                 - name: Get
                   href: api/security-sslcertificate-get.md
               - name: Subdomain
@@ -16565,12 +16565,10 @@ items:
                 items:
                   - name: WHOIS record
                     href: resources/security-whoisrecord.md
-                  - name: Get WHOIS record
+                  - name: List
+                    href: api/security-threatintelligence-list-whoisrecords.md
+                  - name: Get
                     href: api/security-whoisrecord-get.md
-                  - name: Get WHOIS record for a host
-                    href: api/security-host-get-whois.md
-                  - name: List WHOIS records
-                    href: api/security-whoisrecord-list.md
               - name: WHOIS history record
                 items:
                   - name: WHOIS history record
@@ -17720,6 +17718,8 @@ items:
                     href: api/chatmessage-get.md
                   - name: Get messages across all channels
                     href: api/channel-getallmessages.md
+                  - name: Get primary channel
+                    href: api/team-get-primarychannel.md
                   - name: List channel messages
                     href: api/channel-list-messages.md
                   - name: List members
@@ -17907,8 +17907,6 @@ items:
                     href: api/associatedteaminfo-list.md
                   - name: List all teams in an organization
                     href: api/teams-list.md
-                  - name: Get primary channel
-                    href: api/team-get-primarychannel.md
                   - name: Get team photo
                     href: api/profilephoto-get.md
                   - name: Update team photo
