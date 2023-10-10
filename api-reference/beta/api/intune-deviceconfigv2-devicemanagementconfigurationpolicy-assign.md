@@ -1,6 +1,6 @@
 ---
 title: "assign action"
-description: ""
+description: "Intune Deviceconfigv2 Devicemanagementconfigurationpolicy Assign Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
