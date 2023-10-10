@@ -47,7 +47,7 @@ This method supports the `$select`, `$filter`, `$orderby`, and `$skip` OData que
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
