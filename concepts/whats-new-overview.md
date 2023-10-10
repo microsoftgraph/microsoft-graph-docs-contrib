@@ -59,10 +59,10 @@ Set as part of [authentication behaviors](/graph/api/resources/authenticationBeh
 - Get informational status from the most recent health check on an [on-premises network connection](/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta&preserve-view=true#cloudpconpremisesconnectionstatus-values) between a Cloud PC and Azure, involving Cloud PC add-on features such as single sign-on. This information is intended to optimize the user experience and doesn't affect the provisioning of the customer's Cloud PC.
 
 ### Device and app management | Device updates
-- [Get](/graph/api/windowsupdates-catalog-list-entries?view=graph-rest-beta) one ore more [quality updates](/graph/api/resources/windowsupdates-qualityupdatecatalogentry?view=graph-rest-beta) and their corresponding [operating system revision](/graph/api/resources/windowsupdates-productRevision?view=graph-rest-beta).
-- Get quality updates with [Common Vulnerabilities and Exposures (CVE) information](/graph/api/resources/windowsupdates-qualityupdatecveseverityinformation?view=graph-rest-beta) indicating they address publicly exploited vulnerabilities or CVEs of a specific severity level.
-- Get all operating system builds that were affected by a [product revision](/graph/api/resources/windowsupdates-productRevision?view=graph-rest-beta).
-- Get the build numbers of available [product releases](/graph/api/resources/windowsupdates-featureupdatecatalogentry?view=graph-rest-beta) to deploy.
+- [Get](/graph/api/windowsupdates-catalog-list-entries?view=graph-rest-beta&preserve-view=true) one ore more [quality updates](/graph/api/resources/windowsupdates-qualityupdatecatalogentry?view=graph-rest-beta&preserve-view=true) and their corresponding [operating system revision](/graph/api/resources/windowsupdates-productRevision?view=graph-rest-beta&preserve-view=true).
+- Get quality updates with [Common Vulnerabilities and Exposures (CVE) information](/graph/api/resources/windowsupdates-qualityupdatecveseverityinformation?view=graph-rest-beta&preserve-view=true) indicating they address publicly exploited vulnerabilities or CVEs of a specific severity level.
+- Get all operating system builds that were affected by a [product revision](/graph/api/resources/windowsupdates-productRevision?view=graph-rest-beta&preserve-view=true).
+- Get the build numbers of available [product releases](/graph/api/resources/windowsupdates-featureupdatecatalogentry?view=graph-rest-beta&preserve-view=true) to deploy.
 
 ### Device and app management | Multi-tenant management
 Get the license type of a specified managed tenant as part of the Azure Active Directory [credential user registration](/graph/api/resources/managedtenants-credentialUserRegistrationsSummary?view=graph-rest-beta&preserve-view=true), for example, AADFree, AADPremium1, AADPremium2.
