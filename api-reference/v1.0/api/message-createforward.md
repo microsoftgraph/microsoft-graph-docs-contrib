@@ -29,7 +29,7 @@ Alternatively, [forward a message](../api/message-forward.md) in a single operat
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -56,7 +56,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 | Content-Type | string  | Nature of the data in the body of an entity. <br/> Use `application/json` for a JSON object and `text/plain` for MIME content. |
 
 ## Request body
-This method does not require a request body.
+This method doesn't require a request body.
 
 However, for creating a forward draft using MIME format, provide the MIME content with the applicable Internet message headers ("To", "CC", "BCC", "Subject"), all encoded in **base64** format in the request body.
 
@@ -69,11 +69,11 @@ If the request body includes malformed MIME content, this method returns `400 Ba
 ## Examples
 
 ### Example 1: Create a draft message in JSON format to forward an existing message
-Here is an example of how to call this API.
+Here's an example of how to call this API.
 
 ##### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -121,7 +121,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createForward
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here's an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -167,7 +167,7 @@ MU1CMjAwMDAwMDAwRDc2RDlDMjgyMjAwMDA5QUQ5QTlASF
 ```
 
 ##### Response
-Here is an example of the response.
+Here's an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

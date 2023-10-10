@@ -1560,6 +1560,14 @@ Namespace: microsoft.graph
 | policyOID          |
 | unknownFutureValue |
 
+### x509CertificateIssuerHintsState values
+
+|Member|
+|:---|
+|disabled|
+|enabled|
+|unknownFutureValue|
+
 ### anniversaryType values
 
 | Member             |

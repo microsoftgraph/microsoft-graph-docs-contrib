@@ -43,7 +43,7 @@ PATCH /places/{id | emailAddress}
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Only one instance of a place resource (**room** or **roomList**) can be updated at a time. In the request body, use `@odata.type` to specify the type of place, and include the properties of that type to update. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Only one instance of a place resource (**room** or **roomList**) can be updated at a time. In the request body, use `@odata.type` to specify the type of place, and include the properties of that type to update. Existing properties that aren't included in the request body maintain their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property               | Type                                              | Description |
 |:-----------------------|:--------------------------------------------------|:--|

@@ -1,6 +1,6 @@
 ---
 title: "assign action"
-description: ""
+description: "Intune Rbac Rolescopetag Assign Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
