@@ -46,7 +46,7 @@ You can specify the following properties when creating a **targetDeviceGroup**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Object ID of the group in the directory. Required.|
+|id|String|Object identifier of the [group](../resources/group.md). Required.|
 |displayName|String|Display name of the group. Required.|
 
 
