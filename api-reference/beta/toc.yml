@@ -16448,8 +16448,6 @@ items:
                     href: api/security-host-list-passivednsreverse.md
                   - name: List ports
                     href: api/security-host-list-ports.md
-                  - name: Get reputation
-                    href: api/security-host-get-reputation.md
                   - name: List subdomains
                     href: api/security-host-list-subdomains.md
                   - name: List trackers
