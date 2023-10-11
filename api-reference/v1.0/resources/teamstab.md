@@ -39,11 +39,11 @@ A teamsTab is a [tab](../resources/teamstab.md) that's pinned (attached) to a [c
 
 | Relationship | Type	| Description |
 |:---------------|:--------|:----------|
-|teamsApp|[teamsApp](teamsapp.md) | The application that is linked to the tab. This cannot be changed after tab creation. |
+|teamsApp|[teamsApp](teamsapp.md) | The application that is linked to the tab. This can't be changed after tab creation. |
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 
 <!-- {

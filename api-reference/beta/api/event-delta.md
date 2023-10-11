@@ -29,6 +29,8 @@ The following table lists the differences between the **delta** function on even
 | Applies to events in user calendars but not group calendars. | Applies to events in user and group calendars. |
 | Currently available only in the beta version. | Available in the v1.0 and beta versions. |
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

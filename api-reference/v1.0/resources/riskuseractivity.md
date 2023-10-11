@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the risk activites of an Azure AD user as determined by Azure AD Identity Protection.
+Represents the risk activities of an Azure AD user as determined by Azure AD Identity Protection.
 
 ## Properties
 |Property|Type|Description|
@@ -23,7 +23,7 @@ Represents the risk activites of an Azure AD user as determined by Azure AD Iden
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.riskUserActivity"

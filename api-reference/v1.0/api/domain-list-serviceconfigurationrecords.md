@@ -15,6 +15,8 @@ Retrieves a list of [domainDnsRecord](../resources/domaindnsrecord.md) objects n
 
 Use the returned list to add records to the zone file of the domain. This can be done through the domain registrar or DNS server configuration.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

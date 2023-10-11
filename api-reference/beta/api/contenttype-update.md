@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Update a [content type][contentType].
   
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
   

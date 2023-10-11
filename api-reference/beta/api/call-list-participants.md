@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of participant objects in the call.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 | Permission type | Permissions (from least to most privileged) |
@@ -150,7 +152,8 @@ Content-Type: application/json
          "isInLobby":false,
          "id":"a7ebfb2d-871e-419c-87af-27290b22e8db",
          "metadata":null,
-         "recordingInfo":null
+         "recordingInfo":null,
+         "preferredDisplayName":null
       },
       {
          "@odata.type":"#microsoft.graph.participant",
@@ -184,7 +187,8 @@ Content-Type: application/json
          "isInLobby":false,
          "id":"1e126418-44a0-4a94-a6f8-0efe1ad71acb",
          "metadata":null,
-         "recordingInfo":null
+         "recordingInfo":null,
+         "preferredDisplayName":null
       }
    ],
    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#communications/calls('7531d31f-d10d-44de-802f-c569dbca451c')/participants"

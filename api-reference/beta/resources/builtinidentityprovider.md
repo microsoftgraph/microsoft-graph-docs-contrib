@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Represents built-in identity providers with [External Identities](/azure/active-directory/external-identities/) for an Azure Active Directory tenant.
 
-For Azure AD B2B scenarios in an Azure AD tenant, the built in identity provider type can be an Azure Active Directory(AAD), Microsoft account(MSA) or email one-time passcode (EmailOTP).
+For Azure AD B2B scenarios in an Azure AD tenant, the built-in identity provider type can be an Azure Active Directory(AAD), Microsoft account(MSA) or email one-time passcode (EmailOTP).
 
 This type will inherit from [identityProviderBase](../resources/identityproviderbase.md).
 
@@ -22,8 +22,8 @@ This type will inherit from [identityProviderBase](../resources/identityprovider
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md) collection|Retrieve all identity providers configured in a tenant including the built-in identity providers. There is no way to retrieve only the built-in identity providers in a tenant.|
-|[Get](../api/identityproviderbase-get.md) |builtInIdentityProvider|Retrieve properties of an built-in identity provider.|
+|[List](../api/identitycontainer-list-identityproviders.md)|[identityProviderBase](../resources/identityproviderbase.md) collection|Retrieve all identity providers configured in a tenant including the built-in identity providers. There's no way to retrieve only the built-in identity providers in a tenant.|
+|[Get](../api/identityproviderbase-get.md) |builtInIdentityProvider|Retrieve properties of a built-in identity provider.|
 |[List available provider types](../api/identityproviderbase-availableprovidertypes.md)|String collection|Retrieve all available identity provider types available in the tenant.|
 
 ## Properties
@@ -36,7 +36,7 @@ This type will inherit from [identityProviderBase](../resources/identityprovider
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

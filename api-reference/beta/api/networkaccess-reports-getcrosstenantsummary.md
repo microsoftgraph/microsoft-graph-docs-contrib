@@ -14,6 +14,8 @@ Namespace: microsoft.graph.networkaccess
 
 Cross-tenant report is a summary of counts of the organization's devices accessing other tenants than your tenant.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -32,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /networkAccess/reports/getCrossTenantSummary
+GET /networkAccess/reports/getCrossTenantSummary(startDateTime={startDateTime},endDateTime={endDateTime},discoveryPivotDateTime={discoveryPivotDateTime})
 ```
 
 ## Function parameters

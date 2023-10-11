@@ -1,6 +1,6 @@
 ---
 title: "hasPayloadLinks action"
-description: ""
+description: "Intune Shared Androidmanagedappprotection Haspayloadlinks Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

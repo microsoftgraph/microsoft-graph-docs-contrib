@@ -17,7 +17,7 @@ This abstract type is inherited by the following resource type:
 
 - [azureAdPopTokenAuthentication](../resources/azureAdPopTokenAuthentication.md)
 
-The type of token authentication used depends on the token security. If the value is Proof of Possession, you will use the [azureAdPopTokenAuthentication](../resources/azureAdPopTokenAuthentication.md) resource type.
+The type of token authentication used depends on the token security. If the value is Proof of Possession, you'll use the [azureAdPopTokenAuthentication](../resources/azureAdPopTokenAuthentication.md) resource type.
 
 ## Properties
 
@@ -25,7 +25,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.customExtensionAuthenticationConfiguration",
