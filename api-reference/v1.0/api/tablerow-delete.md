@@ -12,6 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Deletes the row from the table.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -28,7 +31,6 @@ DELETE /me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}
 DELETE /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/{index}
 DELETE /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
 DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}
-
 ```
 ## Request headers
 | Name       | Description|
@@ -87,7 +89,7 @@ DELETE https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|
 ---
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

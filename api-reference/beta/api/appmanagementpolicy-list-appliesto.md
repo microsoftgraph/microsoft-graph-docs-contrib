@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 List application and service principal objects assigned an [appManagementPolicy](../resources/appManagementPolicy.md) policy object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

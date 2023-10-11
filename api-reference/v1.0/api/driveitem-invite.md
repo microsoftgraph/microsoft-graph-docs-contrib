@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Sends a sharing invitation for a **driveItem**.
 A sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -92,7 +92,7 @@ Content-Type: application/json
 ## Add activities to an item
 To add activities to an item, you call the [addActivities](/graph/api/externalconnectors-externalitem-addactivities) endpoint, with the same unique identifier for that item in the URL.
 
-For example, if Joe Bloggs with Azure AD ID `18948b93-d3ed-4307-9981-10fc36a08a52` commented on the helpdesk ticket with ticket number `SR00145` on April 11, 2022 at 4:25PM, the request to send that activity might look like the following.
+For example, if someone with Azure AD ID `18948b93-d3ed-4307-9981-10fc36a08a52` commented on the helpdesk ticket with ticket number `SR00145` on April 11, 2022 at 4:25PM, the request to send that activity might look like the following.
 
 ```http
 POST /external/connections/contosohelpdesk/items/SR00145/addActivities
@@ -109,6 +109,8 @@ Content-Type: application/json
   }
 ]
 ```
+
+You can also add an activity to an item in the same request that creates the item. Add the activity as another entity, just like `acl` and `content`. If you choose to add an activity this way, include the `@odata.type` for the activity, or the request will fail. Activities with timestamps older than seven days won't surface in the Microsoft 365 app. End users can only see activities in the Microsoft 365 app for items they have access to and have an activity on (for example, shared with them, created, edited, and so on).
 
 ## Update an item
 

@@ -1,6 +1,6 @@
 ---
 title: "educationModule: pin"
-description: "Pin an educationModule in the classwork list."
+description: "Pin an educationModule in the class work list."
 ms.localizationpriority: medium
 author: "cristobal-buenrostro"
 ms.prod: "education"
@@ -13,9 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Pin an [educationModule](../resources/educationmodule.md) in the classwork list. This action sets the **isPinned** property to **true** for an [educationModule](../resources/educationmodule.md).
+Pin an [educationModule](../resources/educationmodule.md) in the class work list. This action sets the **isPinned** property to **true** for an [educationModule](../resources/educationmodule.md).
 
-Only teachers can perform this action and only one module at a time can be pinned in the classwork list.
+Only teachers can perform this action and only one module at a time can be pinned in the class work list.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EduCurricula.ReadWrite  |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not supported. |
+|Application | EduCurricula.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -47,7 +49,7 @@ If successful, this method returns a `200 Ok` response code and an [educationMod
 The following example shows how to call this API.
 
 ### Request
-The following is an example of a request.
+Here's an example  of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,7 +97,7 @@ POST https://graph.microsoft.com/beta/education/classes/37d99af7-cfc5-4e3b-8566-
 ---
 
 ### Response
-The following is an example of a response.
+Here's an example  of a response.
 
 <!-- {
   "blockType": "response",

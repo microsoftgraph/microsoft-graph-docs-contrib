@@ -1,18 +1,20 @@
 ---
 author: spgraph-docs-team
-title: List the subsites for a SharePoint site
+title: List subsites for a site
 ms.localizationpriority: high
 ms.prod: "sharepoint"
-description: "Get a collection of subsites defined for a site."
+description: "Get a collection of subsites defined for a SharePoint site."
 doc_type: apiPageType
 ---
-# Enumerate subsites
+# List subsites for a site
 
 Namespace: microsoft.graph
 
 Get a collection of subsites defined for a [site][].
 
 [site]: ../resources/site.md
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

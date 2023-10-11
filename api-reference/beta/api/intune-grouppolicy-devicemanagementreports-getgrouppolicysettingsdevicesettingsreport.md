@@ -1,6 +1,6 @@
 ---
 title: "getGroupPolicySettingsDeviceSettingsReport action"
-description: ""
+description: "Intune Grouppolicy Devicemanagementreports Getgrouppolicysettingsdevicesettingsreport Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

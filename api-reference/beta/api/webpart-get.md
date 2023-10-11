@@ -50,7 +50,7 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a [standardWebPa
 ### Example 1: Get a webPart object
 #### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 <!-- { "blockType": "ignored" } -->
 
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsof
 
 #### Response
 
-The following is an example of the response
+Here's an example of the response
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/sites/{sitesId}/pages/{sitePageId}/microsof
 
 #### Response
 
-The following is an example of the response
+Here's an example of the response
 
 > **Note:** The response object shown here might be shortened for readability.
 

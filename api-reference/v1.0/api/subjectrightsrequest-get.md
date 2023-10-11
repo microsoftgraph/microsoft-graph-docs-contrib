@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [subjectRightsRequest](../resources/subjectRightsRequest.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -33,7 +35,7 @@ GET /privacy/subjectRightsRequests/{subjectRightsRequestId}
 
 ## Optional query parameters
 
-This method does not support the [OData query parameter](/graph/query-parameters) to help customize the response.
+This method doesn't support the [OData query parameter](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 |Name|Description|
@@ -41,7 +43,7 @@ This method does not support the [OData query parameter](/graph/query-parameters
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

@@ -17,6 +17,8 @@ Namespace: microsoft.graph.security
 
 Get the properties and relationships of a [hostSslCertificate](../resources/security-hostsslcertificate.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -105,7 +107,6 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/hostSslCertific
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

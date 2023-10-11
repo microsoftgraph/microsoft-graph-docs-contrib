@@ -12,7 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 Add a new user or group to the rejectedSender list.
 
-Specify the user or group in `@odata.id` in the request body. Users in the rejected senders list cannot post to conversations of the group (identified in the POST request URL). Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.
+Specify the user or group in `@odata.id` in the request body. Users in the rejected senders list can't post to conversations of the group (identified in the POST request URL). Make sure you don't specify the same user or group in the rejected senders and accepted senders lists, otherwise you'll get an error.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -40,7 +42,7 @@ POST /groups/{id}/rejectedSenders/$ref
 
 ## Request body
 
-In the request body, supply the id of a user or group object.
+In the request body, supply the ID of a user or group object.
 
 ## Response
 
@@ -50,7 +52,7 @@ This method returns `204 No Content` response code and no response body.
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 
@@ -104,7 +106,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
