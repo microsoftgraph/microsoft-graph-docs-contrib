@@ -20,6 +20,8 @@ Additional properties display in the **Contact** section of the profile card in 
 
 You can also [delete](/graph/api/profilecardproperty-delete) custom attributes from profile cards of the organization.
 
+> **Note:** Deleting a custom attribute does not delete the property from AAD, but only removes the attribute from users' profile cards for an organization.
+
 > [!NOTE]
 > Operations on the **profileCardProperty** resource that use delegated permissions require the signed-in user to have a tenant administrator or global administrator role.
 
