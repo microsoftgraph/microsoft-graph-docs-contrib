@@ -13,24 +13,40 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of an [inactiveGroupFinding](../resources/inactivegroupfinding.md) object.
+You want to view details about inactive groups in AWS, Azure, and GCP authorization systems.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+ 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
+<!-- {
+  "blockType": "ignored"
+}
+-->
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveGroupFinding?$filter=group/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
+```
 
 <!-- {
   "blockType": "ignored"
 }
 -->
-``` http
-GET /inactiveGroupFinding
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveGroupFinding?$filter=group/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
+```
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveGroupFinding?$filter=group/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
 ```
 
 ## Optional query parameters
@@ -46,7 +62,9 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [inactiveGroupFinding](../resources/inactivegroupfinding.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [inactiveGroupFinding](../resources/inactivegroupfinding.md) objects in the response body.
+
+If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the key passed into the GET method is invalid.
 
 ## Examples
 
@@ -54,13 +72,12 @@ If successful, this method returns a `200 OK` response code and an [inactiveGrou
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_inactivegroupfinding"
+  "name": "list_inactivegroupfinding"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/inactiveGroupFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.inactiveGroupFinding?$filter=group/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
 ```
-
 
 ### Response
 The following is an example of the response
@@ -68,7 +85,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.inactiveGroupFinding"
+  "@odata.type": "Collection(microsoft.graph.inactiveGroupFinding)"
 }
 -->
 ``` http
@@ -76,17 +93,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.inactiveGroupFinding",
-    "id": "e41a6878-b1cc-cc5c-055b-bab8a047c97f",
-    "createdDateTime": "String (timestamp)",
-    "actionSummary": {
-      "@odata.type": "microsoft.graph.actionSummary"
-    },
-    "permissionsCreepIndex": {
-      "@odata.type": "microsoft.graph.permissionsCreepIndex"
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.inactiveGroupFinding",
+      "id": "e41a6878-b1cc-cc5c-055b-bab8a047c97f",
+      "createdDateTime": "String (timestamp)",
+      "actionSummary": {
+        "@odata.type": "microsoft.graph.actionSummary"
+      },
+      "permissionsCreepIndex": {
+        "@odata.type": "microsoft.graph.permissionsCreepIndex"
+      }
     }
-  }
+  ]
 }
 ```
-
