@@ -1,5 +1,5 @@
 ---
-title: "Get drive"
+title: "Get drive for fileStorageContainer"
 description: "Get the drive resources from fileStorageContainer"
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Get drive
+# Get drive for fileStorageContainer
 Namespace: microsoft.graph
 
 > [!IMPORTANT]
