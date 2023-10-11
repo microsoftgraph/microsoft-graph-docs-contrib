@@ -40,7 +40,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.microsoftTrainingAssignmentMapping",
   "assignedTo": ["String"],
-  "completionDateTime": "String (timestamp)",
+
   "settingType": "String",
   "trainingCompletionDuration": "String"
 }
