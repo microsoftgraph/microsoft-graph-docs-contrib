@@ -328,7 +328,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["237d99af7-cfc5-4e3b-8566-f7d40e4a2070","a3cce0ba-2008-4c4d-bf62-079408562d96"],
-  "name": "get_resources_with_filter"
+  "name": "get_submissions_with_filter"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/a3cce0ba-2008-4c4d-bf62-079408562d96/submissions?$filter=id eq 'ff2c7fe6-91cd-57a4-aa62-5b9c6b73222a'
@@ -410,7 +410,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["2003c52e-807a-4186-9b49-60c573095461"],
-  "name": "get_resources_with_orderby"
+  "name": "get_submissions_with_orderby"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/2003c52e-807a-4186-9b49-60c573095461/assignments/131eeaaa-829e-4c6c-9cf3-491b1320fe4d/submissions?$orderby=submittedDateTime

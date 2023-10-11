@@ -521,7 +521,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","c3307ea8-1343-4109-aeb9-92b9a74bf131"],  
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070",  
   "name": "get_assignment_delta_with_select"
 }-->
 ```msgraph-interactive
@@ -536,7 +536,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationCategory",
+  "@odata.type": "microsoft.graph.educationAssignment",
   "isCollection": true
 } -->
 ```http

@@ -539,7 +539,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.educationCategory",
+  "@odata.type": "microsoft.graph.educationassignment delta",
   "isCollection": true
 } -->
 ```http

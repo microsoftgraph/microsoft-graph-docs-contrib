@@ -355,7 +355,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "sampleKey": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
-  "name": "get_assignments_resources"
+  "name": "get_assignments"
 }-->
 
 ```msgraph-interactive
@@ -621,7 +621,7 @@ The following is an example of the request.
 <!-- {
   "blockType": "request",
   "sampleKey": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
-  "name": "get_assignments_resources"
+  "name": "get_assignments"
 }-->
 
 ```msgraph-interactive
