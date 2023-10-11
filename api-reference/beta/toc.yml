@@ -15333,9 +15333,9 @@ items:
                     - name: Get metrics for MFA sign in failure
                       href: api/serviceactivity-getmetricsformfasigninfailure.md
                     - name: Get metrics for conditional access managed device sign in success
-                      href: api/serviceactivity-getmetricsforconditionalaccessmanageddevicesigninsuccess.md
+                      href: api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess.md
                     - name: Get metrics for conditional access compliant device sign in success
-                      href: api/serviceactivity-getmetricsforconditionalaccesscompliantdevicesigninsuccess.md
+                      href: api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
                     - name: Get metrics for SAML sign in success
                       href: api/serviceactivity-getmetricsforsamlsigninsuccess.md
                 - name: Registration and usage
