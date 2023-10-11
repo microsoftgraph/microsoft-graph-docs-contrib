@@ -27,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|availabilityStatus|trainingAvailabilityStatus|Training availability status.Possible values are: `unknown`, `notAvailable`, `available`, `archive`, `delete`, `unknownFutureValue`.|
+|availabilityStatus|trainingAvailabilityStatus|Training availability status. Possible values are: `unknown`, `notAvailable`, `available`, `archive`, `delete`, `unknownFutureValue`.|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the training.|
 |createdDateTime|DateTimeOffset|Date and time when the training was created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|The description for the training.|
