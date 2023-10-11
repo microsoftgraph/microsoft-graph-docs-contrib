@@ -1,9 +1,9 @@
 ---
 title: "List inactiveUserFindings"
 description: "Get a list of the inactiveUserFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -13,6 +13,10 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the [inactiveUserFinding](../resources/inactiveuserfinding.md) objects and their properties.
+Get the authorizationSystemIdentity resources from the identity navigation property.
+For example, an admin wants to view the number of user identities in their AWS authorization systems that haven't been used recently and then manage those identities.
+
+The admin logs into the Microsoft Entra Permissions Management portal and navigates to the Permissions Analytics Report. On this report page, the admin will see the "Inactive Users" table. They will navigate to the "Users" tab and use the data in this table to determine what action is needed for the identities.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

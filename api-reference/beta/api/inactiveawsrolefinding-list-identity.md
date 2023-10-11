@@ -29,8 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
-GET /identityFinding/identity
+```GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding?$filter=identity/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
 ```
 
 ## Optional query parameters
@@ -71,6 +70,7 @@ The following is an example of the response
   "@odata.type": "Collection(microsoft.graph.authorizationSystemIdentity)"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -90,3 +90,48 @@ Content-Type: application/json
 }
 ```
 
+'''
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding",
+  "value": [
+    {
+      "@odata.type": "graph.inactiveAwsRoleFinding",
+      "id": "aW5hY3RpdmVSb2xlRmluZGluZzE",
+      "identity": {
+          "@odata.type": "graph.awsRole",
+          "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpyb2xlL21vbmdvLWRiLXN0YWdpbmc=",
+          "externalId": "arn:aws:iam::377596131774:role/mongo-db-staging",
+          "displayName": "mongo-db-staging",
+          "source": {
+            "@odata.type": "graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "377596131774"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.awsAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "377596131774",
+            "authorizationSystemName": "cloudknox-staging",
+            "authorizationSystemType": "aws"
+          }
+      },
+      "actionSummary": {
+        "assigned": 736,
+        "exercised": 0,
+        "available": 10000
+      },
+      "permissionsCreepIndex": {
+        "score": 3
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "identityDetails": {
+        "createdDateTime": "2022-05-16T21:26:50Z",
+        "lastActiveDateTime": "2022-10-20T05:23:35Z"
+      }
+    },
+
+  ]
+}
+'''

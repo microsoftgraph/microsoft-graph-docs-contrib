@@ -1,9 +1,9 @@
 ---
 title: "inactiveAwsRoleFinding: aggregatedSummary"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "**The user calls the summary endpoint to retrieve number of inactive identities relative to the total identities."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -13,6 +13,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **TODO: Add Description**
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
-GET ** Collection URI for microsoft.graph.inactiveAwsRoleFinding not found/aggregatedSummary
+```POST https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding/aggregatedSummary(authorizationSystemIds=@p1)/$query
+    @p1=[{authorizationSystemIds}]
 ```
 
 ## Function parameters
@@ -39,7 +40,8 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|authorizationSystemIds|String collection|**TODO: Add Description**|
+|authorizationSystemIds|Collection(Edm.String)||
+|bindingParameter|Collection(graph.inactiveAwsRoleFinding)||
 
 
 ## Request headers
@@ -63,10 +65,8 @@ The following is an example of a request.
   "name": "inactiveawsrolefindingthis.aggregatedsummary"
 }
 -->
-``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.inactiveAwsRoleFinding not found/aggregatedSummary(authorizationSystemIds=[
-  "String"
-])
+``` POST https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding/aggregatedSummary(authorizationSystemIds=@p1)/$query
+@p1=[{authorizationSystemIds}]
 ```
 
 
@@ -79,14 +79,11 @@ The following is an example of the response
   "@odata.type": "microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary"
 }
 -->
-``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
+```HTTP/1.1 200 OK
+Content-type: application/json
 {
-  "value": {
-    "@odata.type": "microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary"
-  }
+    "totalCount": 4312,
+    "findingsCount": 121
 }
 ```
 

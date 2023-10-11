@@ -1,9 +1,9 @@
 ---
 title: "List inactiveGroupFindings"
 description: "Get a list of the inactiveGroupFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -29,8 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-``` http
-GET ** Collection URI for microsoft.graph.inactiveGroupFinding not found
+```GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.inactiveGroupFinding?$filter=group/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
 ```
 
 ## Optional query parameters
@@ -57,8 +56,7 @@ The following is an example of a request.
   "name": "list_inactivegroupfinding"
 }
 -->
-``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.inactiveGroupFinding not found
+``` GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.inactiveGroupFinding?$filter=group/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
 ```
 
 
