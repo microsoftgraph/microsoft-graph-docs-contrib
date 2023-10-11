@@ -53,7 +53,7 @@ This method supports the following OData query parameters to help customize the 
 |:----------|:----------|
 | Authorization | Bearer {token} |
 | Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. Optional. This value must be equal to or less than the maximum allowable page size. |
-| Prefer: include-unknown-enum-members | Enables evolveable enum values beyond the sentinel value. See [Best Practices](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) for more information. Optional. |
+| Prefer: include-unknown-enum-members | Enables evolvable enum values beyond the sentinel value. See [Best Practices](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) for more information. Optional. |
 
 ## Request body
 
@@ -69,9 +69,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of a request to list all available call records.
-
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -85,7 +82,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords
 
 #### Response
 
-The following is an example of the response. If the list is truncated, a `callRecord@odata.nextLink` value will be provided to retrieve the next page of sessions. The default page size for call records is 60 entries.
+If the list is truncated, a `callRecord@odata.nextLink` value will be provided to retrieve the next page of sessions. The default page size for call records is 60 entries.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -156,8 +153,6 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of a request to get call records filtered by a specific time period using `startDateTime`. 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -172,7 +167,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords?$filter=startDat
 
 #### Response
 
-The following is an example of the response. If the list is truncated, a `callRecord@odata.nextLink` value will be provided to retrieve the next page of records. The default page size for call records is 60 entries.
+If the list is truncated, a `callRecord@odata.nextLink` value will be provided to retrieve the next page of records. The default page size for call records is 60 entries.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -217,11 +212,9 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Filter by participant id
+### Example 3: Filter by participant Azure Entra ID
 
 #### Request
-
-The following is an example of a request to get call records filtered by a specific participant id using their Azure Active Directory (Entra) object id. 
 
 # [HTTP](#tab/http)
 <!-- {
@@ -237,7 +230,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords?$filter=particip
 
 #### Response
 
-The following is an example of the response. If the list is truncated, a `callRecord@odata.nextLink` value will be provided to retrieve the next page of records. The default page size for call records is 60 entries.
+If the list is truncated, a `callRecord@odata.nextLink` value will be provided to retrieve the next page of records. The default page size for call records is 60 entries.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -281,6 +274,10 @@ Content-type: application/json
   }
 }
 ```
+
+## See also
+
+For more information on using call records, see [call records](callrecords-callrecord.md).
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

@@ -24,7 +24,7 @@ Represents the identity of a call or meeting organizer in a [callRecord](callrec
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following example is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -44,4 +44,4 @@ The following is a JSON representation of the resource.
 
 ## See also
 
-For examples that show how to use **organizer** resources, see [callrecords](callrecords-callrecord.md).
+For examples that show how to use **organizer** resources, see [call records](callrecords-callrecord.md).

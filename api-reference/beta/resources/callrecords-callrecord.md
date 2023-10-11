@@ -40,7 +40,7 @@ Represents a single peer-to-peer call or a group call between multiple participa
 |participants|[identitySet](identityset.md) collection|List of distinct identities involved in the call. Deprecated.|
 |startDateTime|DateTimeOffset|UTC time when the first user joined the call. The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |type|callType|Indicates the type of the call. Possible values are: `unknown`, `groupCall`, `peerToPeer`, `unknownFutureValue`.|
-|version|Int64|Monotonically increasing version of the call record. Higher version call records with the same ID includes additional data compared to the lower version.|
+|version|Int64|Monotonically increasing version of the call record. Higher version call records with the same ID include additional data compared to the lower version.|
 
 ## Relationships
 
@@ -52,7 +52,7 @@ Represents a single peer-to-peer call or a group call between multiple participa
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following example is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
