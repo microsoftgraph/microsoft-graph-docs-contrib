@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [authorizationSystem](../resources/authorizationsystem.md) object. Gets a single authorizationSystem if the calling user has access to it in EPM.
+Read the details of an [authorizationSystem](../resources/authorizationsystem.md) that you've onboarded to Microsoft Entra Permissions Management.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
