@@ -81,13 +81,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#plans/$entity",
-    "@odata.etag":"W/\"JzEtUGxhbiAgQEBAQEBAQEBAQEBAQEBARCc=\"",
-    "title":"The Plan",
-    "id":"planId",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#plans/$entity",
+    "@odata.etag": "W/\"JzEtUGxhbiAgQEBAQEBAQEBAQEBAQEBARCc=\"",
+    "title": "The Plan",
+    "id": "planId",
     "container": {
-        "externalId":"groupId",
-        "type":"group",
+        "containerId": "groupId",
+        "type": "group",
         "url": "https://graph.microsoft.com/beta/groups/groupId"
 
     },
