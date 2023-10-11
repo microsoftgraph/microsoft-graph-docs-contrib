@@ -1,9 +1,9 @@
 ---
 title: "List inactiveServerlessFunctionFindings"
 description: "Get a list of the inactiveServerlessFunctionFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
+
+## HTTP request
 
 ## HTTP request
 
@@ -30,7 +32,21 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.inactiveServerlessFunctionFinding not found
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveServerlessFunctionFinding
+```
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveServerlessFunctionFinding
+```
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveServerlessFunctionFinding
 ```
 
 ## Optional query parameters
@@ -48,6 +64,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [inactiveServerlessFunctionFinding](../resources/inactiveserverlessfunctionfinding.md) objects in the response body.
 
+If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the LIST method filter uses a bad key.
+
 ## Examples
 
 ### Request
@@ -57,8 +75,8 @@ The following is an example of a request.
   "name": "list_inactiveserverlessfunctionfinding"
 }
 -->
-``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.inactiveServerlessFunctionFinding not found
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveServerlessFunctionFinding
 ```
 
 

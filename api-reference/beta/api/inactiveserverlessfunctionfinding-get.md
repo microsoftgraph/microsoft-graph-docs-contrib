@@ -1,9 +1,9 @@
 ---
 title: "Get inactiveServerlessFunctionFinding"
 description: "Read the properties and relationships of an inactiveServerlessFunctionFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -13,15 +13,16 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of an [inactiveServerlessFunctionFinding](../resources/inactiveserverlessfunctionfinding.md) object.
+You want to view inactive serverless functions in AWS, Azure, and GCP authorization systems.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+ 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,6 +31,23 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveServerlessFunctionFinding$filter=group/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
+```
+```
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveServerlessFunctionFinding$filter=group/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
+```
+```
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveServerlessFunctionFinding$filter=group/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
 ```
 
 ## Optional query parameters
@@ -56,10 +74,9 @@ The following is an example of a request.
   "name": "get_inactiveserverlessfunctionfinding"
 }
 -->
-``` http
-
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveServerlessFunctionFinding?$filter=group/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
 ```
-
 
 ### Response
 The following is an example of the response
@@ -70,23 +87,49 @@ The following is an example of the response
   "@odata.type": "microsoft.graph.inactiveServerlessFunctionFinding"
 }
 -->
-``` http
+```http
 HTTP/1.1 200 OK
-Content-Type: application/json
-
+Content-type: application/json
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.inactiveServerlessFunctionFinding",
-    "id": "f6c1e7e7-d263-d935-cfef-078c8e9198d7",
-    "createdDateTime": "String (timestamp)",
-    "permissionsCreepIndex": {
-      "@odata.type": "microsoft.graph.permissionsCreepIndex"
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.inactiveServerlessFunctionFinding",
+  "value": [
+    {
+      "@odata.type": "graph.inactiveServerlessFunctionFinding",
+      "id": "aW5hY3RpdmVTZXJ2ZXJsZXNzRnVuY3Rpb25GaW5kaW5nMTAwMDE",
+      "identity": {
+          "@odata.type": "graph.awsLambda",
+          "id": "YXJuOmF3czpsYW1iZGE6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTpmdW5jdGlvbjphbm90aGVyQWRtaW5GdWN0aW9u",
+          "externalId": "arn:aws:lambda:us-west-2:956987887735:function:anotherAdminFuction",
+          "displayName": "anotherAdminFuction",
+          "source": {
+            "@odata.type": "graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "956987887735"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.awsAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "956987887735",
+            "authorizationSystemName": "cloudknox-development",
+            "authorizationSystemType": "aws"
+          }
+      },
+      "actionSummary": {
+        "assigned": 10783,
+        "exercised": 0,
+        "available": 20000
+      },
+      "permissionsCreepIndex": {
+        "score": 3
+      },
+      "createdDateTime": "2020-10-11T20:11:45.671Z",
+      "identityDetails": {
+        "createdDateTime": "2020-04-12T20:34:24Z",
+        "lastActiveDateTime": "2020-10-30T03:21:05Z"
+      }
     },
-    "lastActiveDateTime": "String (timestamp)",
-    "actionSummary": {
-      "@odata.type": "microsoft.graph.actionSummary"
-    }
-  }
+
+  ]
 }
 ```
 
