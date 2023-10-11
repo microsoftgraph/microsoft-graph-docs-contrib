@@ -22,7 +22,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|installationOptions|[microsoft.graph.m365AppsInstallationOptions](../resources/m365AppsInstallationOptions.md)|A container for tenant-level settings for Microsoft 365 applications.|
+|installationOptions|[microsoft.graph.m365AppsInstallationOptions](../resources/m365appsInstallationoptions.md)|A container for tenant-level settings for Microsoft 365 applications.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
