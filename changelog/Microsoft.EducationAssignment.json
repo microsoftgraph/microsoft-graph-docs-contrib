@@ -155,7 +155,7 @@
     {
       "ChangeList": [
         {
-          "Id": "f42a2acd-7e06-4b84-abdd-5df825fc2845",
+          "Id": "8ecf649b-9be2-4d02-b1cd-fc6f53bca6a6",
           "ApiChange": "Permission",
           "ChangedApiName": "EduAssignments.ReadWrite.All",
           "ChangeType": "Addition",
