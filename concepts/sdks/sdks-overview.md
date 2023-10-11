@@ -10,7 +10,7 @@ ms.custom: scenarios:getting-started
 
 The Microsoft Graph SDKs are designed to simplify building high-quality, efficient, and resilient applications that access Microsoft Graph. The SDKs include two components: a service library and a core library.
 
-The *service library* contains models and request builders that are generated from Microsoft Graph metadata to provide a rich, strongly typed, and discoverable experience when working with the many datasets available in Microsoft Graph.
+The *service library* contains models and request builders that are generated from Microsoft Graph metadata. The service library provides a rich, strongly-typed, and discoverable experience when working with the many datasets available in Microsoft Graph.
 
 The *core library* provides a set of features that enhance working with all the Microsoft Graph services. Embedded support for retry handling, secure redirects, transparent authentication, and payload compression improve the quality of your application's interactions with Microsoft Graph, with no added complexity, while leaving you completely in control. The core library also provides support for common tasks such as paging through collections and creating batch requests.
 
@@ -41,5 +41,5 @@ When building applications using Microsoft Graph, we recommend that you get a fr
 ## See also
 
 - For more information about the features and capabilities of the SDK, see [design requirements documentation](https://github.com/microsoftgraph/msgraph-sdk-design).
-- Request or vote on additional features at the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
+- Request or vote on new features at the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 - For a list of samples for Microsoft Graph, see the [Microsoft Graph resources page](https://developer.microsoft.com/graph/gallery/?filterBy=Samples).

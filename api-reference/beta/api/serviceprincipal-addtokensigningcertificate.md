@@ -23,6 +23,8 @@ All the objects have the same value of **customKeyIdentifier**.
 
 The **passwordCredential** is used to open the PFX file (private key). It and the associated private key object have the same value of **keyId**. Once set during creation through the **displayName** property, the subject of the certificate cannot be updated. The **startDateTime** is set to the same time the certificate is created using the action. The **endDateTime** can be up to three years after the certificate is created.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 |Permission type      | Permissions (from least to most privileged)              |

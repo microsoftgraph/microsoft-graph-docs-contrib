@@ -15,6 +15,8 @@ Namespace: microsoft.graph.ediscovery
 
 Read the properties and relationships of a [legalHold](../resources/ediscovery-legalhold.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

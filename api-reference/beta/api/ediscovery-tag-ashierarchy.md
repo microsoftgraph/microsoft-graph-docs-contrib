@@ -15,6 +15,8 @@ Namespace: microsoft.graph.ediscovery
 
 Return a list of [tag](../resources/ediscovery-tag.md) objects in hierarchial form
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

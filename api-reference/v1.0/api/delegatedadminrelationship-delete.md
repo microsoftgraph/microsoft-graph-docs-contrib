@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Delete a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. A relationship can only be deleted if it's in the "created" status. 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

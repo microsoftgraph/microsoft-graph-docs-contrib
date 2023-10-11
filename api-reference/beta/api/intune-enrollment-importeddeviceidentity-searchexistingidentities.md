@@ -1,6 +1,6 @@
 ---
 title: "searchExistingIdentities action"
-description: ""
+description: "Intune Enrollment Importeddeviceidentity Searchexistingidentities Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

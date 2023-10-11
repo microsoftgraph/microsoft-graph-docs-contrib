@@ -15,6 +15,8 @@ Retrieve a collection of [person](../resources/person.md) objects ordered by the
 
 You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Use the People API to get information about the people most relevant to you](/graph/people-insights-overview).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

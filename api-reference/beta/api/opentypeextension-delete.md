@@ -19,6 +19,8 @@ Delete an open extension ([openTypeExtension](../resources/opentypeextension.md)
 
 For the list of resources that support open extensions, see the table in the [Permissions](#permissions) section.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 Depending on the resource you're deleting the extension from and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).

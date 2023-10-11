@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [informationprotection-deprecate](../../includes/informationprotection-deprecate.md)]
 
-Using [classification results](../resources/classificationresult.md), compute the [information protection label](../resources/informationprotectionlabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service. 
+Using [classification results](../resources/classificationresult.md), compute the [information protection label](../resources/informationprotectionlabel.md) that should be applied and return the set of actions that must be taken to correctly label the information. This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service.
 
-To evaluate based on classification results, provide [contentInfo](../resources/contentinfo.md), which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), and [classification results](../resources/classificationresult.md). The API returns an [informationProtectionAction](../resources/informationprotectionaction.md) that contains one of more of the following: 
+To evaluate based on classification results, provide [contentInfo](../resources/contentinfo.md), which includes existing content metadata [key/value pairs](../resources/keyvaluepair.md), and [classification results](../resources/classificationresult.md). The API returns an [informationProtectionAction](../resources/informationprotectionaction.md) that contains one of more of the following:
 
 * [addContentFooterAction](../resources/addcontentfooteraction.md)
 * [addContentHeaderAction](../resources/addcontentheaderaction.md)
@@ -35,6 +35,8 @@ To evaluate based on classification results, provide [contentInfo](../resources/
 * [removeProtectionAction](../resources/removeprotectionaction.md)
 * [removeWatermarkAction](../resources/removewatermarkaction.md)
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,7 +52,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /informationProtection/policy/labels/{id}/evaluateClassificationResults
+POST /informationProtection/policy/labels/evaluateClassificationResults
 ```
 
 ## Request headers
