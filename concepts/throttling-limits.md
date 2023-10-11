@@ -32,6 +32,7 @@ The following limits apply to requests on the assignment service API:
 | Any         | 500 requests per 10 seconds   | 1000 requests per 10 seconds
 |Any          | 15,000 requests per 3600 seconds|30,000 requests per 3600 seconds|
 | GET me/Assignment  | 50 requests per 10 seconds | 150 requests per 10 seconds |
+| POST /reauthorize Subscription by ID  |  4000 requests per 20 seconds  |  1000 requests per 20 seconds
 
 The preceding limits apply to the following resources:
 
