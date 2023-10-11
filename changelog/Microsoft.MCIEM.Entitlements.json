@@ -1,0 +1,78 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "e4cbe6c2-ad47-48e8-91aa-2c6a8634d6fd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsAccessKey",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsAccessKey](https://learn.microsoft.com/en-us/graph/api/resources/awsAccessKey?view=graph-rest-beta) resource",
+          "Target": "awsAccessKey"
+        },
+        {
+          "Id": "e4cbe6c2-ad47-48e8-91aa-2c6a8634d6fd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsEc2Instance",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsEc2Instance](https://learn.microsoft.com/en-us/graph/api/resources/awsEc2Instance?view=graph-rest-beta) resource",
+          "Target": "awsEc2Instance"
+        },
+        {
+          "Id": "e4cbe6c2-ad47-48e8-91aa-2c6a8634d6fd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsGroup](https://learn.microsoft.com/en-us/graph/api/resources/awsGroup?view=graph-rest-beta) resource",
+          "Target": "awsGroup"
+        },
+        {
+          "Id": "e4cbe6c2-ad47-48e8-91aa-2c6a8634d6fd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "awsLambda",
+          "ChangeType": "Addition",
+          "Description": "Added the [awsLambda](https://learn.microsoft.com/en-us/graph/api/resources/awsLambda?view=graph-rest-beta) resource",
+          "Target": "awsLambda"
+        },
+        {
+          "Id": "e4cbe6c2-ad47-48e8-91aa-2c6a8634d6fd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureGroup](https://learn.microsoft.com/en-us/graph/api/resources/azureGroup?view=graph-rest-beta) resource",
+          "Target": "azureGroup"
+        },
+        {
+          "Id": "e4cbe6c2-ad47-48e8-91aa-2c6a8634d6fd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "azureServerlessFunction",
+          "ChangeType": "Addition",
+          "Description": "Added the [azureServerlessFunction](https://learn.microsoft.com/en-us/graph/api/resources/azureServerlessFunction?view=graph-rest-beta) resource",
+          "Target": "azureServerlessFunction"
+        },
+        {
+          "Id": "e4cbe6c2-ad47-48e8-91aa-2c6a8634d6fd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gcpCloudFunction",
+          "ChangeType": "Addition",
+          "Description": "Added the [gcpCloudFunction](https://learn.microsoft.com/en-us/graph/api/resources/gcpCloudFunction?view=graph-rest-beta) resource",
+          "Target": "gcpCloudFunction"
+        },
+        {
+          "Id": "e4cbe6c2-ad47-48e8-91aa-2c6a8634d6fd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "gcpGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the [gcpGroup](https://learn.microsoft.com/en-us/graph/api/resources/gcpGroup?view=graph-rest-beta) resource",
+          "Target": "gcpGroup"
+        }
+      ],
+      "Id": "e4cbe6c2-ad47-48e8-91aa-2c6a8634d6fd",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-10-10T18:23:51.7240937Z",
+      "WorkloadArea": "Microsoft.MCIEM.Entitlements",
+      "SubArea": ""
+    }
+  ]
+}
