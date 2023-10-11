@@ -12,27 +12,42 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [inactiveUserFinding](../resources/inactiveuserfinding.md) object.
-For example, an admin wants to view the number of user identities in their AWS authorization systems that haven't been used recently and then manage those identities.
+Read the properties and relationships of an [inactiveUserFinding](../resources/inactiveuserfinding.md) object. Get the authorizationSystemIdentity resources from the identity navigation property.
 
-The admin logs into the Microsoft Entra Permissions Management portal and navigates to the Permissions Analytics Report. On this report page, the admin will see the "Inactive Users" table. They will navigate to the "Users" tab and use the data in this table to determine what action is needed for the identities.
+You want to view details about an inactive user in an AWS account, Azure subscription, or GCP project.
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
+
 
 ## HTTP request
-
 <!-- {
   "blockType": "ignored"
 }
 -->
-```GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveUserFinding?$filter=identity/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveUserFinding?$filter=identity/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
+```
+<!-- {
+  "blockType": "ignored"
+}
+-->
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/graph.inactiveUserFinding?$filter=identity/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
+```
+<!-- {
+  "blockType": "ignored"
+}
+-->
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.inactiveUserFinding?$filter=identity/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
 ```
 
 ## Optional query parameters
@@ -59,7 +74,8 @@ The following is an example of a request.
   "name": "get_inactiveuserfinding"
 }
 -->
-```GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveUserFinding?$filter=identity/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
+```http
+GET https://canary.graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding
 ```
 
 
@@ -77,18 +93,42 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.inactiveUserFinding",
-    "id": "5964c3f0-92dd-8fc3-070a-cc0a3a2450e5",
-    "createdDateTime": "String (timestamp)",
-    "permissionsCreepIndex": {
-      "@odata.type": "microsoft.graph.permissionsCreepIndex"
-    },
-    "lastActiveDateTime": "String (timestamp)",
-    "actionSummary": {
-      "@odata.type": "microsoft.graph.actionSummary"
-    }
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding",
+    "value": [
+        {
+            "id": "MSxJbmFjdGl2ZVVzZXJGaW5kaW5nLDEyMw",
+            "createdDateTime": "2023-10-11T19:55:35.7420719Z",
+            "actionSummary": {
+                "assigned": 1,
+                "exercised": 2,
+                "available": 3
+            },
+            "identityDetails": {
+                "createdDateTime": "2023-10-11T19:55:35.742073Z",
+                "lastActiveDateTime": "2023-10-11T19:55:35.7420731Z"
+            },
+            "permissionsCreepIndex": {
+                "score": 10
+            },
+            "identity": {
+                "@odata.type": "#microsoft.graph.awsUser",
+                "id": "TW9kZWxJRA",
+                "externalId": "ModelID",
+                "displayName": "LoadTesting",
+                "source": {
+                    "@odata.type": "#microsoft.graph.awsSource",
+                    "identityProviderType": "aws",
+                    "accountId": "AuthorizationSystemId"
+                },
+                "authorizationSystem": {
+                    "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
+                    "authorizationSystemId": "AuthorizationSystemId",
+                    "authorizationSystemName": "AuthSystemName",
+                    "authorizationSystemType": "aws",
+                    "id": "MSxhd3MsQXV0aG9yaXphdGlvblN5c3RlbUlk"
+                }
+            }
+        }
+    ]
 }
-```
 

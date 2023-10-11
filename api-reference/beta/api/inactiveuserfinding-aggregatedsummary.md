@@ -1,6 +1,6 @@
 ---
 title: "inactiveUserFinding: aggregatedSummary"
-description: "**TODO: Add Description**"
+description: "view inactive users"
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,27 +12,38 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-For example, an admin wants to view the number of user identities in their AWS authorization systems that haven't been used recently and then manage those identities.
-
-The admin logs into the Microsoft Entra Permissions Management portal and navigates to the Permissions Analytics Report. On this report page, the admin will see the "Inactive Users" table. They will navigate to the "Users" tab and use the data in this table to determine what action is needed for the identities.
+For example, you want to view the number of inactive user identities in their AWS authorization systems.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
-
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.inactiveUserFinding not found/aggregatedSummary
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary
+```
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary
+```
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary
 ```
 
 ## Function parameters
@@ -41,7 +52,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|authorizationSystemIds|String collection|**TODO: Add Description**|
+|authorizationSystemIds|String collection|list of authorization systems|
 
 
 ## Request headers
@@ -66,9 +77,8 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.inactiveUserFinding not found/aggregatedSummary(authorizationSystemIds=[
-  "String"
-])
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary(authorizationSystemIds=@p1)/$query
+@p1=[{authorizationSystemIds}]
 ```
 
 
@@ -89,6 +99,15 @@ Content-Type: application/json
   "value": {
     "@odata.type": "microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary"
   }
+}
+```
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+{
+    "totalCount": 4312,
+    "findingsCount": 121
 }
 ```
 
