@@ -40,6 +40,8 @@ GET /education/classes/{class-id}/assignments/{assignment-id}/submissions
 
 This method supports the `$filter`,'$top', and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
+The following are the available `$expand` options for this method: `outcomes`, `resources`, `submittedResources`, and `*`, which includes all the previous options.
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
