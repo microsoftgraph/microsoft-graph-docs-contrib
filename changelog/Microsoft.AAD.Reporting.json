@@ -2743,8 +2743,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-08-31T19:58:45.348003Z",
-      "WorkloadArea": "Reports and audit",
-      "SubArea": "Identity and access reports"
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     },
     {
       "ChangeList": [
