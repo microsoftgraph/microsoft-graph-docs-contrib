@@ -57,7 +57,7 @@ PATCH /policies/crossTenantAccessPolicy
 
 If successful, this method returns a `204 No Content` response code.
 
-The [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) object size is currently limited to 25KB. This method will return a `400 Bad Request` error code if the size of the policy will exceed 25KB.
+The [crossTenantAccessPolicy](../resources/crosstenantaccesspolicy.md) object size is currently limited to 25 KB. This method returns a `400 Bad Request` error code if the size of the policy exceeds 25 KB.
 
 ## Examples
 
