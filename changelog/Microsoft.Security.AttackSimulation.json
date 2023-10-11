@@ -373,7 +373,7 @@
       ],
       "Id": "3984db43-19bc-4257-bfc2-38c30d8462f3",
       "Cloud": "Prod",
-      "Version": "v1.0",
+      "Version": "beta",
       "CreatedDateTime": "2023-09-28T19:11:13.0245061Z",
       "WorkloadArea": "Security",
       "SubArea": "Attack simulation and training"
@@ -751,7 +751,7 @@
       ],
       "Id": "3984db43-19bc-4257-bfc2-38c30d8462f3",
       "Cloud": "Prod",
-      "Version": "beta",
+      "Version": "v1.0",
       "CreatedDateTime": "2023-09-28T19:11:13.0245061Z",
       "WorkloadArea": "Security",
       "SubArea": "Attack simulation and training"
