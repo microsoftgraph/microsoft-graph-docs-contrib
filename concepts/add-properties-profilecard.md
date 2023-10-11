@@ -1,13 +1,13 @@
 ---
-title: "Add or delete custom attributes on a profile card (preview)"
-description: "Learn how to use the profile card API in Microsoft Graph to make additional attributes visible and add or delete custom attributes on a profile card."
+title: "Add or remove custom attributes on a profile card (preview)"
+description: "Learn how to use the profile card API in Microsoft Graph to make additional attributes visible and add or remove custom attributes on a profile card."
 author: "rwaithera"
 ms.localizationpriority: high
 ms.prod: "people"
 ms.custom: scenarios:getting-started
 ---
 
-# Add or delete custom attributes on a profile card using the profile card API
+# Add or remove custom attributes on a profile card using the profile card API
 
 On the profile card in Microsoft 365, you can find information about users that is stored and maintained by your organization, for example **Job title** or **Office location**.
 
@@ -18,9 +18,9 @@ Use the [profileCardProperty](/graph/api/resources/profilecardproperty) resource
 
 Additional properties display in the **Contact** section of the profile card in Microsoft 365.
 
-You can also [delete](/graph/api/profilecardproperty-delete) custom attributes from profile cards of the organization.
+You can also [remove](/graph/api/profilecardproperty-delete) custom attributes from profile cards of the organization.
 
-> **Note:** Deleting a custom attribute does not delete the property from AAD, but only removes the attribute from users' profile cards for an organization.
+> **Note:** Removing a custom attribute does not remove the property from AAD, but only removes the attribute from users' profile cards for an organization.
 
 > [!NOTE]
 > Operations on the **profileCardProperty** resource that use delegated permissions require the signed-in user to have a tenant administrator or global administrator role.
@@ -163,13 +163,13 @@ Content-type: application/json
 }
 ```
 
-## Delete a custom attribute
+## Remove a custom attribute
 
-Following the same mapping between Azure AD custom extension attributes and profile card custom attributes (such as `customAttribute1`) as described in the preceding section [Adding a custom attribute](/graph/add-properties-profilecard#adding-a-custom-attribute), you can delete a custom attribute using the [delete](/graph/api/profilecardproperty-delete) operation, as shown in the following example.
+Following the same mapping between Azure AD custom extension attributes and profile card custom attributes (such as `customAttribute1`) as described in the preceding section [Adding a custom attribute](/graph/add-properties-profilecard#adding-a-custom-attribute), you can remove a custom attribute using the [delete](/graph/api/profilecardproperty-delete) operation, as shown in the following example.
 
 ### Example
 
-The following example deletes the custom attribute `customAttribute5` from the organization settings. A successful deletion returns `HTTP 204`.
+The following example removes the custom attribute `customAttribute5` from the organization settings. A successful deletion returns `HTTP 204`.
 
 #### Request
 
@@ -283,18 +283,18 @@ $params = @{
 Update-MgBetaAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
 ```
 
-### Delete profile card properties in your organization
+### Remove profile card properties in your organization
 
 You can use the Microsoft Graph PowerShell module to remove profile card properties from your organization.
 
 > [!NOTE]
-> The delete command requires `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+> The remove command requires `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
 >
 > ```powershell
 >    Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
 > ```
 
-Use the following command, where you replace `$profileCardPropertyId` with the id of the property to be deleted.
+Use the following command, where you replace `$profileCardPropertyId` with the id of the property to be removed.
 
 ```powershell
  Remove-MgBetaAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
@@ -306,3 +306,4 @@ Use the following command, where you replace `$profileCardPropertyId` with the i
 - [User resource type](/graph/api/resources/user)
 - [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
 - [Get profileCardProperty](/graph/api/profilecardproperty-get)
+- [Azure Data Subject Requests for the GDPR and CCPA](https://learn.microsoft.com/en-us/compliance/regulatory/gdpr-dsr-azure)
