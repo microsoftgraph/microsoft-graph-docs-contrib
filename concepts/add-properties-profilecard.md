@@ -81,7 +81,7 @@ Content-type: application/json
 }
 ```
 
-## Add a custom attribute
+## Add a custom attribute to the profile card
 
 You can add any of the 15 Azure AD [custom extension attributes](/graph/api/resources/onpremisesextensionattributes) to users' profile cards by configuring your organization settings and [adding the corresponding value as a profileCardProperty](/graph/api/peopleadminsettings-post-profilecardproperties) in Microsoft Graph. You can add one **profileCardProperty** resource at a time.
 
@@ -163,7 +163,7 @@ Content-type: application/json
 }
 ```
 
-## Remove a custom attribute
+## Remove a custom attribute from the profile card
 
 Following the same mapping between Azure AD custom extension attributes and profile card custom attributes (such as `customAttribute1`) as described in the preceding section [Adding a custom attribute](/graph/add-properties-profilecard#adding-a-custom-attribute), you can remove a custom attribute using the [delete](/graph/api/profilecardproperty-delete) operation, as shown in the following example.
 
