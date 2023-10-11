@@ -20,6 +20,8 @@ applying [state tokens](/graph/delta-query-overview) in one or more of these cal
 that folder](/graph/delta-query-messages). This allows you to maintain and synchronize a local store of a user's messages without
 having to fetch the entire set of messages from the server every time.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

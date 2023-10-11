@@ -15,19 +15,21 @@ Create a SharePoint folder to upload feedback files for a given [educationSubmis
 
 The teacher determines the resources to upload in the feedback resources folder of a submission.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EduAssignments.ReadBasic, EduAssignments.Read  |
+|Delegated (work or school account) |  EduAssignments.ReadWrite  |
 |Delegated (personal Microsoft account) |  Not supported.  |
 |Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /classes/{classId}/assignments/{assignmentId}/setUpFeedbackResourcesFolder
+POST /education/classes/{classId}/assignments/{assignmentId}/setUpFeedbackResourcesFolder
 ```
 
 ## Request headers
@@ -52,7 +54,7 @@ The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","a3cce0ba-2008-4c4d-bf62-079408562d96"],  
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","a3cce0ba-2008-4c4d-bf62-079408562d96"],
   "name": "educationassignment_setupfeedbackresourcesfolder"
 }-->
 ```http

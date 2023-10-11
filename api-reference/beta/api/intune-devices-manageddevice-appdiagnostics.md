@@ -1,6 +1,6 @@
 ---
 title: "appDiagnostics function"
-description: ""
+description: "Intune Devices Manageddevice Appdiagnostics Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

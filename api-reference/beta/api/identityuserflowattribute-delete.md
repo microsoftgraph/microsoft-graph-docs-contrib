@@ -1,6 +1,6 @@
 ---
 title: "Delete identityUserFlowAttribute"
-description: "Delete an identityUserFlowAttribute."
+description: "Delete a custom identityUserFlowAttribute."
 ms.localizationpriority: medium
 doc_type: apiPageType
 author: "nanguil"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete an [identityUserFlowAttribute](../resources/identityuserflowattribute.md). Only custom user flow attributes can be deleted.
+Delete a custom [identityUserFlowAttribute](../resources/identityuserflowattribute.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -25,10 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)| Not supported.|
 |Application|IdentityUserFlow.ReadWrite.All|
 
-The work or school account needs to belong to one of the following roles:
-
-* Global Administrator
-* External Identity User Flow Attribute Administrator
+[!INCLUDE [rbac-user-flows-attributes-apis](../includes/rbac-for-apis/rbac-user-flows-attributes-apis.md)]
 
 ## HTTP request
 

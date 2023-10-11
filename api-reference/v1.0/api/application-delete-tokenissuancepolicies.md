@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Remove a [tokenIssuancePolicy](../resources/tokenissuancepolicy.md) from an [application](../resources/application.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,8 +34,8 @@ You can address the application using either its **id** or **appId**. **id** and
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /applications/{id}/tokenIssuancePolicies/$ref
-DELETE /applications(appId='{appId}')/tokenIssuancePolicies/$ref
+DELETE /applications/{id}/tokenIssuancePolicies/{id}/$ref
+DELETE /applications(appId='{appId}')/tokenIssuancePolicies/{id}/$ref
 ```
 
 ## Request headers

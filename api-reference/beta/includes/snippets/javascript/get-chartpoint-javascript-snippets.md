@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let workbookChartPoint = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points/{undefined}')
+let workbookChartPoint = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points/{point-id}')
 	.version('beta')
 	.get();
 

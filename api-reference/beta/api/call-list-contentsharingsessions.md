@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [contentSharingSession](../resources/contentsharingsession.md) objects in a call.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 | Permission type | Permissions (from least to most privileged) |

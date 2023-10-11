@@ -15,6 +15,8 @@ Namespace: microsoft.graph.deviceManagement
 
 Get a list of the [alertRule](../resources/devicemanagement-alertrule.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -134,16 +136,10 @@ Content-Type: application/json
           "notificationChannels": [
               {
                 "notificationChannelType": "portal",
-                "receivers": [
-                    ""
-                ],
                 "notificationReceivers": []
               },
               {
                 "notificationChannelType": "email",
-                "receivers": [
-                    "serena.davis@contoso.com"
-                ],
                 "notificationReceivers": [
                     {
                         "locale": "en-us",
@@ -169,16 +165,10 @@ Content-Type: application/json
           "notificationChannels": [
               {
                 "notificationChannelType": "portal",
-                "receivers": [
-                    ""
-                ],
                 "notificationReceivers": []
               },
               {
                 "notificationChannelType": "email",
-                "receivers": [
-                    "serena.davis@contoso.com"
-                ],
                 "notificationReceivers": [
                     {
                         "locale": "en-us",
@@ -204,16 +194,10 @@ Content-Type: application/json
           "notificationChannels": [
               {
                 "notificationChannelType": "portal",
-                "receivers": [
-                    ""
-                ],
                 "notificationReceivers": []
               },
               {
                 "notificationChannelType": "email",
-                "receivers": [
-                    "serena.davis@contoso.com"
-                ],
                 "notificationReceivers": [
                     {
                         "locale": "en-us",

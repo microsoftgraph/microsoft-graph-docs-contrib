@@ -19,6 +19,8 @@ Remove a key credential from a [servicePrincipal](../resources/serviceprincipal.
 
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 |Permission type      | Permissions (from least to most privileged)              |
