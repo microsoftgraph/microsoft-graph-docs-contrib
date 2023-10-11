@@ -1,5 +1,5 @@
 ---
-title: "Add permission"
+title: "Add permission to fileStorageContainer"
 description: "Add permission to a fileStorageContainer instance"
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Create permission
+# Add permission to fileStorageContainer
 Namespace: microsoft.graph
 
 > [!IMPORTANT]
