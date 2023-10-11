@@ -49,7 +49,11 @@ If successful, this method returns `201 Created` response code and the new [page
 ##### Request
 Here is an example of the request.
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "section_post_pages"
+}-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/me/onenote/sections/{id}/pages
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
@@ -90,7 +94,12 @@ Content-Type:application/pdf
 ```
 ##### Response
 Here is an example of the response. Note: The response object shown here is truncated for brevity. All of the properties will be returned from an actual call.
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.onenotePage"
+} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

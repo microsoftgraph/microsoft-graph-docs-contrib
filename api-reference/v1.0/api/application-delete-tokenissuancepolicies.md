@@ -28,10 +28,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
 
+<!-- { "blockType": "ignored" } -->
 ```http
-DELETE /applications/{id}/tokenIssuancePolicies/{id}/$ref
+DELETE /applications/{id}/tokenIssuancePolicies/$ref
+DELETE /applications(appId='{appId}')/tokenIssuancePolicies/$ref
 ```
 
 ## Request headers

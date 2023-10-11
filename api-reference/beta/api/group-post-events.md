@@ -1,7 +1,7 @@
 ---
 title: "Create event"
 description: "Use this API to create a new event."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType

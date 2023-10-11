@@ -59,7 +59,7 @@ POST /administrativeUnits/{id}/members
 | Content-type  | application/json. Required. |
 
 ### Adding an existing user or group
-In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md), [device](../resources/device.md), or [directoryObject](../resources/directoryobject.md) to be added.
+In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md), [device](../resources/device.md), or [directoryObject](../resources/directoryobject.md) to be added. If the administrative unit is a restricted management administrative unit (`isMemberManagementRestricted`=true), the group type must be an Azure AD security group. Only non-unified groups that are security enabled, not mail enabled, and not on-premises sync enabled are supported.
 
 ### Creating a new group
 The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group in the administrative unit.

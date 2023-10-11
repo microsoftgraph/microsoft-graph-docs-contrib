@@ -78,7 +78,7 @@ Content-length: 199
 <!-- {
   "blockType": "response",
   "truncated": true,
-   "@odata.type": "microsoft.graph.security.retentionEventType"
+  "@odata.type": "microsoft.graph.security.retentionEventType"
 }
 -->
 

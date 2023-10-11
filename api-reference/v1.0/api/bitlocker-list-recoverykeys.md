@@ -85,7 +85,7 @@ The following is an example of the request.
   "name": "list_bitlockerrecoverykey"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys
 User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
@@ -105,7 +105,7 @@ The following is an example of the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -142,7 +142,7 @@ The following is an example of the request.
   "name": "list_bitlockerrecoverykey_filter_deviceId"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
 User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"

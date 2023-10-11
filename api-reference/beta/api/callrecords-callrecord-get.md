@@ -349,7 +349,7 @@ Content-type: application/json
                     },
                     "callee": {
                         "@odata.type": "#microsoft.graph.callRecords.participantEndpoint",
-                        "name": "machineName_4",
+                        "name": "machineName_6",
                         "cpuName": "Intel(R) Xeon(R) CPU E5-2673 v4 @ 2.30GHz",
                         "cpuCoresCount": 8,
                         "cpuProcessorSpeedInMhz": 2295,

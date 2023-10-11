@@ -1,7 +1,7 @@
 ---
 title: "authentication resource type"
-description: "Exposes relationships that represent the authentication methods supported by Azure AD and that can configured for users."
-author: "mmcla"
+description: "Exposes relationships that represent the authentication methods supported by Azure AD that can be configured for users."
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
@@ -13,13 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exposes relationships that represent the authentication methods supported by Azure AD and that can configured for users.
+Exposes authentication sign-in preferences and relationships that represent the authentication methods supported by Azure AD that can be configured for users.
 
 Inherits from [entity](entity.md).
 
 ## Methods
-
-None.
+|Method|Return type|Description|
+|:---|:---|:---|
+|[Get authentication sign-in preferences](../api/authentication-get.md)|[authentication](../resources/authentication.md)|Get the authentication sign-in preferences of a user. This includes whether the user is enabled for system preferred authentication and the users preferred multi-factor authentication method.|
+|[Update authentication sign-in preferences](../api/authentication-update.md)|[authentication](../resources/authentication.md)|Update the authentication sign-in preferences of a user.|
 
 ## Properties
 

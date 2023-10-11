@@ -2,7 +2,7 @@
 title: "Get a group setting template"
 description: "Get a group setting template that represents a template of settings from which settings may be created within a tenant."
 ms.localizationpriority: medium
-author: "psaffaie"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---

@@ -2,7 +2,7 @@
 title: "evaluateDynamicMembershipResult resource type"
 description: "Represents the result of membership evaluation."
 ms.localizationpriority: medium
-author: "psaffaie"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: "resourcePageType"
 ---

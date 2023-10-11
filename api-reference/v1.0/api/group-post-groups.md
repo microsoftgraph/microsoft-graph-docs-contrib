@@ -1,7 +1,7 @@
 ---
 title: "Create group"
 description: "Create a new group as specified in the request body. "
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: apiPageType

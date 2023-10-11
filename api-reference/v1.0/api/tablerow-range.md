@@ -35,22 +35,22 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
+| Workbook-Session-Id  | Workbook session ID that indicates whether changes are persisted. Optional.|
 
 ## Request body
+Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.
+If successful, this method returns `200 OK` response code and a [range](../resources/range.md) object in the response body.
 
-## Example
-Here is an example of how to call this API.
-##### Request
-Here is an example of the request.
+## Examples
+
+### Request
+The following example shows a request.
 
 <!--{
   "blockType": "request",
-  "isComposable": true,
   "name": "tablerow_range"
 }-->
 ```http
@@ -58,8 +58,11 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|nam
 ```
 
 
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+The following example shows the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
+>
 <!-- {
   "blockType": "response",
   "truncated": true,

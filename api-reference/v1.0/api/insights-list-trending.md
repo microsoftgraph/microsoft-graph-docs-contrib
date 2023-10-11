@@ -25,14 +25,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 Get a list of documents trending around the signed-in user or specified user:
-
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/insights/trending
 GET /users/{id | userPrincipalName}/insights/trending
 ```
 
 Expand the resource referenced by a **trending** insight:
-
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/insights/trending/{id}/resource
 GET /users/{id | userPrincipalName}/insights/trending/{id}/resource
@@ -68,11 +68,25 @@ If successful, this method returns a `200 OK` response code and a list of [trend
 ## Example
 #### Request
 Here is an example of the request.
+
+<!-- { "blockType": "request",
+  "name": "insightslisttrending"
+}
+-->
+
 ```http
 GET https://graph.microsoft.com/v1.0/me/insights/trending
 ```
 #### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability. See an example un-truncated response at the bottom of the page.
+
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.usedInsight"
+}-->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

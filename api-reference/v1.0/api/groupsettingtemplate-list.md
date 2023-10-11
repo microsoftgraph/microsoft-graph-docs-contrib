@@ -1,7 +1,7 @@
 ---
 title: "List groupSettingTemplates"
 description: "Retrieve a list of available groupSettingTemplates objects."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType

@@ -45,7 +45,10 @@ If successful, this method returns a `201 Created` response code and a [columnDe
 ## Example
 
 ### Request
-<!-- { "blockType": "request" } -->
+<!-- { "blockType": "request",
+    "name": "listpostcolumns"
+} -->
+
 ```http
 POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/columns
 Content-Type: application/json

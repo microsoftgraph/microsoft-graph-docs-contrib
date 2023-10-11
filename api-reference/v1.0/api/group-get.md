@@ -1,7 +1,7 @@
 ---
 title: "Get group"
 description: "Get the properties and relationships of a group object."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: high
 ms.prod: "groups"
 doc_type: apiPageType

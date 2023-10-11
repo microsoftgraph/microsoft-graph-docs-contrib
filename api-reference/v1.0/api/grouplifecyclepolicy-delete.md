@@ -1,7 +1,7 @@
 ---
 title: "Delete groupLifecyclePolicy"
 description: "Deletes a groupLifecyclePolicy."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType

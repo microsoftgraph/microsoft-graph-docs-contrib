@@ -16,7 +16,7 @@ $queryParameters->select = ["id","description"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$graphServiceClient->teams()->get($requestConfiguration);
+$result = $graphServiceClient->teams()->get($requestConfiguration);
 
 
 ```

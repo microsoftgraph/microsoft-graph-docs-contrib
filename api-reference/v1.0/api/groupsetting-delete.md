@@ -1,7 +1,7 @@
 ---
 title: "Delete a group setting"
 description: "Delete a group setting."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType

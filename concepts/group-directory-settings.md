@@ -3,7 +3,7 @@ title: "Overview of group settings"
 description: "Use group settings to configure tenant-wide or object-specific settings in your tenant."
 author: "FaithOmbongi"
 ms.author: ombongifaith
-ms.reviewer: psaffaie, jodah
+ms.reviewer: jodah
 ms.localizationpriority: high
 ms.date: 06/08/2022
 ---

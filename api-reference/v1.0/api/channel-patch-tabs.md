@@ -50,6 +50,12 @@ If successful, this method returns a `200 OK` response code.
 ## Example
 #### Request
 The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "channel_patch_tabs"
+} -->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
@@ -59,6 +65,13 @@ Content-type: application/json
 }
 ```
 #### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.teamsTab"
+} -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -93,4 +106,3 @@ Content-type: application/json
   "tocPath": ""
 }
 -->
-

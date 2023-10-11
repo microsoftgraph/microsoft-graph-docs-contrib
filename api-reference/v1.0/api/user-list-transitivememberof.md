@@ -1,7 +1,7 @@
 ---
 title: "List a user's memberships (direct and transitive)"
 description: "Get groups, directory roles, and administrative units that the user is a member of through either direct or transitive membership."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "users"
 doc_type: apiPageType

@@ -2,7 +2,7 @@
 title: "Remove member"
 description: "Remove a member from a group via the members navigation property."
 ms.localizationpriority: high
-author: "psaffaie"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---

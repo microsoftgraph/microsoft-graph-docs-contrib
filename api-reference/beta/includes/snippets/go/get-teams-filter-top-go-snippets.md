@@ -8,26 +8,26 @@ description: "Automatically generated file. DO NOT MODIFY"
 import (
 	  "context"
 	  msgraphsdk "github.com/microsoftgraph/msgraph-beta-sdk-go"
-	  graphconfig "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
+	  graphteams "github.com/microsoftgraph/msgraph-beta-sdk-go/teams"
 	  //other-imports
 )
 
-graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-requestFilter := "startswith(displayName,%20'A')"
+requestFilter := "startswith(displayName, 'A')"
 requestTop := int32(2)
 
-requestParameters := &graphconfig.TeamsRequestBuilderGetQueryParameters{
+requestParameters := &graphteams.TeamsRequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 	Top: &requestTop,
 }
-configuration := &graphconfig.TeamsRequestBuilderGetRequestConfiguration{
+configuration := &graphteams.TeamsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-graphClient.Teams().Get(context.Background(), configuration)
+result, err := graphClient.Teams().Get(context.Background(), configuration)
 
 
 ```

@@ -20,6 +20,8 @@ request_body.long_logo_web_url_for_light_theme = 'https://support.content.office
 
 request_body.login_web_url = 'https://www.linkedin.com/learning-login/teams'
 
+request_body.is_course_activity_sync_enabled = True
+
 
 
 

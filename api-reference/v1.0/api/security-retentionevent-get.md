@@ -91,7 +91,6 @@ GET https://graph.microsoft.com/v1.0/security/triggers/retentionEvents/{retentio
 
 ---
 
-
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

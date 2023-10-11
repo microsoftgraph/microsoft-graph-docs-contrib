@@ -10,6 +10,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestBody = new AdministrativeUnit();
+$requestBody->setDisplayName('Executive Division');
+
 $additionalData = [
 		'membershipType' => 'Dynamic', 
 		'membershipRule' => '(user.country -eq \"United States\")', 

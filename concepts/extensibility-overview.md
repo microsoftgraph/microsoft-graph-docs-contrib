@@ -7,7 +7,7 @@ ms.reviewer: dkershaw
 ms.localizationpriority: high
 ms.prod: "extensions"
 ms.custom: graphiamtop20
-ms.date: 05/30/2023
+ms.date: 06/09/2023
 ---
 
 # Add custom data to resources using extensions
@@ -1009,7 +1009,7 @@ The table below contrasts and compares the extension types, which should help yo
 
 ## Permissions and privileges
 
-The same privileges that your app requires to read from or write to a resource instance are also required to manage any extensions data on that resource instance. For example, for an app to update any user's profile with custom app data, the app must have been granted the *User.ReadWrite.All* Microsoft Graph permission.
+The same privileges that your app requires to read from or write to a resource instance are also required to manage any extensions data on that resource instance. For example, in a delegated scenario, an app can only update any user's extension data if it's granted the *User.ReadWrite.All* permission and the signed-in user is assigned a supported Azure AD administrative role.
 
 ## Known limitations
 

@@ -2,7 +2,7 @@
 title: "Create settings"
 description: "Create a new setting, based on the templates available in groupSettingTemplates."
 ms.localizationpriority: medium
-author: "psaffaie"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---

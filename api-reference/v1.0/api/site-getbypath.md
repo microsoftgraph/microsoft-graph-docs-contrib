@@ -37,7 +37,14 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Sites.Read.All, Sites.ReadWrite.All |
 
 ## HTTP Request
+<!-- { "blockType": "ignored" } -->
 
+```http
+GET /sites/{hostname}:/{relative-path}
+```
+## Example
+
+### Request
 To access the root SharePoint site with a relative path:
 
 <!-- { "blockType": "request", "name": "get-site-by-hostname-and-path", "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
@@ -46,7 +53,7 @@ To access the root SharePoint site with a relative path:
 GET /sites/{hostname}:/{relative-path}
 ```
 
-## Response
+### Response
 
 This method returns a [site][] resource for the site referenced by the unique identifier.
 

@@ -1,7 +1,7 @@
 ---
 title: "groupSetting resource type"
 description: "Group settings define the configurations that can be used to customize the tenant-wide and object-specific restrictions and allowed behavior. For examples, you can block word lists for group display names or define whether guest users are allowed to be group owners."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: resourcePageType

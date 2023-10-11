@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a specific endpoint o
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "groups"
-author: "psaffaie"
+author: "Jordanndahl"
 ---
 
 # Get endpoint

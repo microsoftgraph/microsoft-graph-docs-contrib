@@ -1,7 +1,7 @@
 ---
 title: "Update event"
 description: "Update an event object."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType

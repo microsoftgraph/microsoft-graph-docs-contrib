@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "9818e810-caf7-4afe-8a53-b7eaf302cabe",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerShareViewpoint",
+          "ChangeType": "Addition",
+          "Description": "Added the [printerShareViewpoint](https://learn.microsoft.com/en-us/graph/api/resources/printerShareViewpoint?view=graph-rest-1.0) resource type.",
+          "Target": "printerShareViewpoint"
+        },
+        {
+          "Id": "9818e810-caf7-4afe-8a53-b7eaf302cabe",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [List recentPrinterShares](https://learn.microsoft.com/en-us/graph/api/print-list-recentprintershares?view=graph-rest-1.0) method to the [printerShare](https://learn.microsoft.com/graph/api/resources/printerShare?view=graph-rest-1.0) resource.",
+          "Target": "printerShare"
+        },
+        {
+          "Id": "9818e810-caf7-4afe-8a53-b7eaf302cabe",
+          "ApiChange": "Property",
+          "ChangedApiName": "viewPoint",
+          "ChangeType": "Addition",
+          "Description": "Added the `viewPoint` property to the [printerShare](https://learn.microsoft.com/en-us/graph/api/resources/printerShare?view=graph-rest-1.0) resource.",
+          "Target": "printerShare"
+        }
+      ],
+      "Id": "9818e810-caf7-4afe-8a53-b7eaf302cabe",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-06-13T01:56:49.6329133Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "ed1e8b28-8fc9-4e8d-b90b-322b07ad18dd",
           "ApiChange": "Property",
           "ChangedApiName": "displayName",
@@ -72,7 +106,7 @@
     },
     {
       "ChangeList": [
-                {
+        {
           "Id": "2531d4d1-1572-4ce3-0654-61cf63abow90",
           "ApiChange": "Enum type",
           "ChangedApiName": "printerStatus",

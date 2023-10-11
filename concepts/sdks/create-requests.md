@@ -19,15 +19,15 @@ To read information from Microsoft Graph, you first need to create a request obj
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-read.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="ReadRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-read.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="ReadRequestSnippet":::
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-read.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="ReadRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -35,7 +35,7 @@ To read information from Microsoft Graph, you first need to create a request obj
 
 # [Go](#tab/Go)
 
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-read.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="ReadRequestSnippet":::
 
 # [Python](#tab/Python)
 
@@ -52,15 +52,15 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 <!-- markdownlint-disable MD024 -->
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-select.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="SelectRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-select.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="SelectRequestSnippet":::
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-select.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="SelectRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -68,7 +68,7 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 
 # [Go](#tab/Go)
 
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-select.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="SelectRequestSnippet":::
 
 # [Python](#tab/Python)
 
@@ -86,15 +86,15 @@ Retrieving a list of entities is similar to retrieving a single entity except th
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-list.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="ListRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-list.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="ListRequestSnippet":::
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-list.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="ListRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -102,7 +102,7 @@ Retrieving a list of entities is similar to retrieving a single entity except th
 
 # [Go](#tab/Go)
 
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-list.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="ListRequestSnippet":::
 
 # [Python](#tab/Python)
 
@@ -120,15 +120,15 @@ For SDKs that support a fluent style, collections of entities can be accessed us
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-index.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="ItemByIdRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-index.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="ItemByIdRequestSnippet":::
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-index.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="ItemByIdRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -136,7 +136,7 @@ For SDKs that support a fluent style, collections of entities can be accessed us
 
 # [Go](#tab/Go)
 
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-index.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="ItemByIdRequestSnippet":::
 
 # [Python](#tab/Python)
 
@@ -152,15 +152,15 @@ You can use the `$expand` filter to request a related entity, or collection of e
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-expand.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="ExpandRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-expand.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="ExpandRequestSnippet":::
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-expand.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="ExpandRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -168,7 +168,7 @@ You can use the `$expand` filter to request a related entity, or collection of e
 
 # [Go](#tab/Go)
 
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-expand.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="ExpandRequestSnippet":::
 
 # [Python](#tab/Python)
 
@@ -184,15 +184,15 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-delete.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="DeleteRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-delete.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="DeleteRequestSnippet":::
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-delete.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="DeleteRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -200,7 +200,7 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 # [Go](#tab/Go)
 
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-delete.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="DeleteRequestSnippet":::
 
 # [Python](#tab/Python)
 
@@ -216,15 +216,15 @@ For SDKs that support a fluent style, new items can be added to collections with
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-create.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="CreateRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-create.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="CreateRequestSnippet":::
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-create.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="CreateRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -232,7 +232,7 @@ For SDKs that support a fluent style, new items can be added to collections with
 
 # [Go](#tab/Go)
 
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-create.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="CreateRequestSnippet":::
 
 # [Python](#tab/Python)
 
@@ -248,15 +248,15 @@ Most updates in Microsoft Graph are performed using a `PATCH` method and therefo
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-update.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="UpdateRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-update.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="UpdateRequestSnippet":::
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-update.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="UpdateRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -264,7 +264,7 @@ Most updates in Microsoft Graph are performed using a `PATCH` method and therefo
 
 # [Go](#tab/Go)
 
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-update.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="UpdateRequestSnippet":::
 
 # [Python](#tab/Python)
 
@@ -280,15 +280,15 @@ You can use a `Header()` function to attach custom headers to a request. For Pow
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-headers.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="HeadersRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-headers.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="HeadersRequestSnippet":::
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-headers.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="HeadersRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -296,7 +296,7 @@ You can use a `Header()` function to attach custom headers to a request. For Pow
 
 # [Go](#tab/Go)
 
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-headers.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="HeadersRequestSnippet":::
 
 # [Python](#tab/Python)
 
@@ -312,15 +312,15 @@ For SDKs that support a fluent style, you can provide custom query parameter val
 
 # [C#](#tab/CS)
 
-[!INCLUDE [sample-code](includes/snippets/csharp/create-requests-queryparams.md)]
+:::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateRequests.cs" id="QueryParametersRequestSnippet":::
 
 # [TypeScript](#tab/TypeScript)
 
-[!INCLUDE [sample-code](includes/snippets/typescript/create-requests-queryparams.md)]
+:::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="QueryParametersRequestSnippet":::
 
 # [Java](#tab/java)
 
-[!INCLUDE [sample-code](includes/snippets/java/create-requests-queryparams.md)]
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="QueryParametersRequestSnippet":::
 
 # [PowerShell](#tab/PowerShell)
 
@@ -328,13 +328,12 @@ For SDKs that support a fluent style, you can provide custom query parameter val
 
 # [Go](#tab/Go)
 
-[!INCLUDE [sample-code](includes/snippets/go/create-requests-queryparams.md)]
+:::code language="go" source="./snippets/go/src/snippets/create_requests.go" id="QueryParametersRequestSnippet":::
 
 # [Python](#tab/Python)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-TODO
 [!INCLUDE [sample-code](includes/snippets/python/create-requests-queryparams.md)]
 
 ---

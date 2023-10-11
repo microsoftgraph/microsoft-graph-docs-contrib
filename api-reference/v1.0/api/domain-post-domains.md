@@ -60,8 +60,9 @@ In the request body, supply a JSON representation of [domain](../resources/domai
 
 <!-- {
   "blockType": "request",
-  "id": "create_domain_from_domains"
+  "name": "create_domain_from_domains"
 }-->
+
 ```http
 POST https://graph.microsoft.com/v1.0/domains
 Content-type: application/json

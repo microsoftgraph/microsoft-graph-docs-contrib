@@ -11,12 +11,12 @@ $graphServiceClient = new GraphServiceClient($requestAdapter);
 
 $requestConfiguration = new TeamsRequestBuilderGetRequestConfiguration();
 $queryParameters = TeamsRequestBuilderGetRequestConfiguration::createQueryParameters();
-$queryParameters->filter = "startswith(displayName,%20'A')";
+$queryParameters->filter = "startswith(displayName, 'A')";
 $queryParameters->top = 2;
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$graphServiceClient->teams()->get($requestConfiguration);
+$result = $graphServiceClient->teams()->get($requestConfiguration);
 
 
 ```

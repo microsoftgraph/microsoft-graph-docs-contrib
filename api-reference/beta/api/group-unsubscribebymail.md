@@ -2,7 +2,7 @@
 title: "group: unsubscribeByMail"
 description: "Calling this method will disable the current user to receive email notifications for this group about new posts, events, and files in that group."
 ms.localizationpriority: medium
-author: "psaffaie"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---

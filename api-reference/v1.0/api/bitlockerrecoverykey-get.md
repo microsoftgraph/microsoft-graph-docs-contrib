@@ -79,10 +79,10 @@ The following is an example of the request. This example does not return the **k
 
 <!-- {
   "blockType": "request",
-  "name": "get_bitlockerrecoverykey"
+  "name": "get_bitlockerrecoverykey_1"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4
 User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
@@ -101,7 +101,7 @@ The following is an example of the response.
 }
 -->
 
-``` http
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -125,10 +125,10 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_bitlockerrecoverykey_key"
+  "name": "get_bitlockerrecoverykey_key_2"
 }
 -->
-``` http
+```http
 GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys/b465e4e8-e4e8-b465-e8e4-65b4e8e465b4?$select=key
 User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"

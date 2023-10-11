@@ -61,7 +61,11 @@ The following example creates an **identityProvider**.
 
 ##### Request
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+   "blockType": "request",
+   "name": "identityprovider-post-identityproviders"
+} -->
+
 ```http
 POST https://graph.microsoft.com/v1.0/identityProviders
 Content-type: application/json
@@ -76,7 +80,10 @@ Content-type: application/json
 
 ##### Response
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "response",
+  "@odata.type": "microsoft.graph.identityProvider"
+} -->
 ```http
 HTTP/1.1 201 Created
 Content-type: application/json

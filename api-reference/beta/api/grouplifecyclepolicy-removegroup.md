@@ -1,7 +1,7 @@
 ---
 title: "groupLifecyclePolicy: removeGroup"
 description: "Removes a group from a lifecycle policy."
-author: "psaffaie"
+author: "Jordanndahl"
 ms.localizationpriority: medium
 ms.prod: "groups"
 doc_type: apiPageType
