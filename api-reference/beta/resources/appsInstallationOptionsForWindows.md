@@ -18,10 +18,10 @@ This is a Microsoft 365 applications installation options container object for W
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| isMicrosoft365AppsEnabled | Boolean | Specifes whether the users can install Microsoft 365 apps (include Skype for Business) on their Windows devices. Default value is `true` meaning users with active license assigned can install. |
-| isProjectEnabled| Boolean | Specifes whether the users can install Project on their Windows devices. Default value is `true` meaning users with active license assigned can install. |
-| isSkypeForBusinessEnabled | Boolean | Specifes whether the users can install Skype for Business (Standalone) on their Windows devices. Default value is `true` meaning users with active license assigned can install. |
-| isVisioEnabled | Boolean | Specifes whether the users can install Visio on their Windows devices. Default value is `true` meaning users with active license assigned can install. |
+| isMicrosoft365AppsEnabled | Boolean | Specifies whether the users can install Microsoft 365 apps (include Skype for Business) on their Windows devices. Default value is `true` meaning users with active license assigned can install. |
+| isProjectEnabled| Boolean | Specifies whether the users can install Project on their Windows devices. Default value is `true` meaning users with active license assigned can install. |
+| isSkypeForBusinessEnabled | Boolean | Specifies whether the users can install Skype for Business (Standalone) on their Windows devices. Default value is `true` meaning users with active license assigned can install. |
+| isVisioEnabled | Boolean | Specifies whether the users can install Visio on their Windows devices. Default value is `true` meaning users with active license assigned can install. |
 
 ## Relationships
 None.
