@@ -25,7 +25,7 @@ You can also [remove](/graph/api/profilecardproperty-delete) custom attributes f
 > [!NOTE]
 > Operations on the **profileCardProperty** resource that use delegated permissions require the signed-in user to have a tenant administrator or global administrator role.
 
-## Make additional attributes visible
+## Make additional attributes visible to the profile card
 
 You can make the following attributes from Azure Active Directory (Azure AD) visible on users' profile cards. These attributes are *not case-sensitive*:
 
