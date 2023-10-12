@@ -51,7 +51,7 @@ Inherits from [entity](entity.md).
 | onPremisesSynchronization          | [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) | A container for on-premises directory synchronization functionalities that are available for the organization.      |
 | outboundSharedUserProfile          | [outboundSharedUserProfile](outboundshareduserprofile.md) collection                     | A collection of Azure AD users whose profile data has been shared with an external Azure AD tenant. Nullable.           |
 | recommendations                    | [recommendation](../resources/recommendation.md) collection                              | List of recommended improvements to improve tenant posture.                                                               |
-| subscriptions                      | [companySubscription](companysubscription.md) collection                                       | List of commercial subscriptions that an organization has acquired.                                                 |
+| subscriptions                      | [companySubscription](companysubscription.md) collection                                 | List of commercial subscriptions that an organization has acquired.                                                       |
 
 ## JSON representation
 
