@@ -9,9 +9,9 @@ ms.custom: scenarios:getting-started
 
 # Add or remove custom attributes on a profile card using the profile card API
 
-On the profile card in Microsoft 365, you can find information about users that is stored and maintained by your organization, for example **Job title** or **Office location**.
+The profile card in Microsoft 365 shows information about a user in an organization. The information shown on the profile card is stored and maintained by the organization, for example **Job title** or **Office location**.
 
-Use the [profileCardProperty](/graph/api/resources/profilecardproperty) resource to show additional properties from Azure AD on profile cards for an organization by:
+Organizations can use the [profileCardProperty](/graph/api/resources/profilecardproperty) resource to show additional properties from [Azure AD](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) on profile cards for a user in an organization by:
 
 * Making additional attributes visible
 * Adding custom attributes
@@ -42,7 +42,7 @@ The following table shows how the Azure AD attributes correspond with properties
 | ------------------ | -------------------- |
 | UserPrincipalName | userPrincipalName |
 | Fax | faxNumber |
-| StreetAddress | streetAddress |
+| StreetAddress | officeAddress |
 | PostalCode | postalCode |
 | StateOrProvince | state |
 | Alias | mailNickname |
