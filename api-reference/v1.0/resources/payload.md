@@ -27,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 
 | Property | Type        | Description |
 |:-------------|:------------|:------------|
-|brand|[payloadBrand](#payloadbrand-values)|The branch of a payload. Possible values are: `unknown`, `other`, `americanExpress`, `capitalOne`, `dhl`, `docuSign`, `dropbox`, `facebook`, `firstAmerican`, `microsoft`, `netflix`, `scotiabank`, `stewartTitle`, `tesco`, `wellsFargo`, `syrinxCloud`, `adobe`, `teams`, `zoom`, `unknownFutureValue`. |
+|brand|[payloadBrand](#payloadbrand-values)|The branch of a payload. Possible values are: `unknown`, `other`, `americanExpress`, `capitalOne`, `dhl`, `docuSign`, `dropbox`, `facebook`, `firstAmerican`, `microsoft`, `netflix`, `scotiabank`, `sendGrid`, `stewartTitle`, `tesco`, `wellsFargo`, `syrinxCloud`, `adobe`, `teams`, `zoom`, `unknownFutureValue`. |
 |complexity|[payloadComplexity](#payloadcomplexity-values)|The complexity of a payload. Possible values are: `unknown`, `low`, `medium`, `high`, `unknownFutureValue`.|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the attack simulation and training campaign payload.|
 |createdDateTime|DateTimeOffset|Date and time when the attack simulation and training campaign payload. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
