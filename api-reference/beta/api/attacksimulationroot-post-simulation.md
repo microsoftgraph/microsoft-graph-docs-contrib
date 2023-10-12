@@ -77,7 +77,7 @@ If successful, this method returns a `202 Accepted` response code and a tracking
 
 ### Request
 
-The following is an example of the request.
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
