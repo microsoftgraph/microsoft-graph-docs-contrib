@@ -17,7 +17,7 @@ Represents local administrator credential information for all device objects in 
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List deviceLocationCredentialInfo](../api/directory-list-devicelocalcredentials.md)|[deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) collection|Get a list of the [deviceLocalCredentials](../resources/devicelocalcredential.md) objects and their properties.|
-|[Get deviceLocalCredentialInfo](../api/directory-get-devicelocalcredentials.md)|[deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md)|Retrieve the properties and relationships of a [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) object.|
+|[Get deviceLocalCredentialInfo](../api/devicelocalcredentialinfo-get.md)|[deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md)|Retrieve the properties and relationships of a [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) object.|
 
 ## Properties
 |Property|Type|Description|
