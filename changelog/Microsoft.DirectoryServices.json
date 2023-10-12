@@ -39,8 +39,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-10-12T00:00:00.9221522Z",
-      "WorkloadArea": "Identity an access",
-      "SubArea": "Identuty and sign-in"
+      "WorkloadArea": "Applications",
+      "SubArea": ""
     },
     {
     "ChangeList": [
