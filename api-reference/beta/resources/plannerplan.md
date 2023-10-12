@@ -30,7 +30,7 @@ Represents a plan in Microsoft 365. A plan can be owned by a [group](group.md) a
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|container|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifies the container of the plan. Specify only the **url**, the **containerId** and **type**, or all properties. After it is set, this property can only be updated while [moving a plan](../api/plannerplan-movetocontainer.md) from User to Group container. Required.|
+|container|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifies the container of the plan. Specify only the **url**, the **containerId** and **type**, or all properties. After it is set, this property can’t be updated. It can change when a plan is moved from User to Group container, using [plan move to container](../api/plannerplan-movetocontainer.md). Required.|
 |contexts|[plannerPlanContextCollection](plannerplancontextcollection.md)| Read-only. Additional user experiences in which this plan is used, represented as [plannerPlanContext](plannerplancontext.md) entries.|
 |createdBy|[identitySet](identityset.md)|Read-only. The user who created the plan.|
 |createdDateTime|DateTimeOffset|Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
