@@ -11656,7 +11656,7 @@ items:
                   - name: List
                     href: api/directory-list-devicelocalcredentials.md
                   - name: Get
-                    href: api/directory-get-devicelocalcredentials.md
+                    href: api/devicelocalcredentialinfo-get.md
               - name: Directory object
                 href: resources/directoryobject.md
                 items:
