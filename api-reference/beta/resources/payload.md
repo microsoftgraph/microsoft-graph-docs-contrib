@@ -32,7 +32,7 @@ Inherits from [entity](../resources/entity.md).
 |brand|[payloadBrand](#payloadbrand-values)|The branch of a payload. Possible values are: `unknown`, `other`, `americanExpress`, `capitalOne`, `dhl`, `docuSign`, `dropbox`, `facebook`, `firstAmerican`, `microsoft`, `netflix`, `scotiabank`, `stewartTitle`, `tesco`, `wellsFargo`, `syrinxCloud`, `adobe`, `teams`, `zoom`, `unknownFutureValue`. |
 |complexity|[payloadComplexity](#payloadcomplexity-values)|The complexity of a payload. Possible values are: `unknown`, `low`, `medium`, `high`, `unknownFutureValue`.|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the attack simulation and training campaign payload.|
-|createdDateTime|DateTimeOffset|Date and time when the attack simulation and training campaign payload.|
+|createdDateTime|DateTimeOffset|Date and time when the attack simulation and training campaign payload. The timestamp represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|Description of the attack simulation and training campaign payload.|
 |detail|[payloadDetail](../resources/payloaddetail.md)|Additional details about the payload.|
 |displayName|String|Display name of the attack simulation and training campaign payload. Supports `$filter` and `$orderby`.|
@@ -43,7 +43,7 @@ Inherits from [entity](../resources/entity.md).
 |isCurrentEvent|Boolean|Indicates whether the payload is from any recent event. |
 |language|String|Payload language.|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation and training campaign payload.|
-|lastModifiedDateTime|DateTimeOffset|Date and time when the attack simulation and training campaign payload was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastModifiedDateTime|DateTimeOffset|Date and time when the attack simulation and training campaign payload was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |payloadTags|String collection|Free text tags for a payload.|
 |platform|payloadDeliveryPlatform|The payload delivery platform for a simulation. Possible values are: `unknown`, `sms`, `email`, `teams`, `unknownFutureValue`.|
 |predictedCompromiseRate|Double|Predicted probability for a payload to phish a targeted user.|
