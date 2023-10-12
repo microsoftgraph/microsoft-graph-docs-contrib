@@ -51,7 +51,7 @@ Inherits from [entity](../resources/entity.md).
 |source|[simulationContentSource](../resources/simulation.md#simulationcontentsource-values)|Simulation content source. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
 |status|[simulationContentStatus](../resources/simulation.md#simulationcontentsource-values)|Simulation content status. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
 |technique|[simulationAttackTechnique](../resources/simulation.md#simulationattacktechnique-values)|The social engineering technique used in the attack simulation and training campaign. Supports `$filter` and `$orderby`. Possible values are: `unknown`, `credentialHarvesting`, `attachmentMalware`, `driveByUrl`, `linkInAttachment`, `linkToMalwareFile`, `unknownFutureValue`. For more information on the types of social engineering attack techniques, see [simulations](/microsoft-365/security/office-365-security/attack-simulation-training-get-started?view=o365-worldwide&preserve-view=true#simulations).|
-|theme|[payloadTheme](#payloadtheme-values)|The theme of a payload. Possible values are: `unknown`, `other`, `accountActivation`, `accountVerification`, `billing`, `cleanUpMail`, `controversial`, `documentReceived`, `expense`, `incomingMessages`, `invoice`, `itemReceived`, `loginAlert`, `mailReceived`, `password`, `payment`, `payroll`, `personalizedOffer`, `quarantine`, `remoteWork`, `reviewMessage`, `securityUpdate`, `serviceSuspended`, `signatureRequired`, `upgradeMailboxStorage`, `verifyMailbox`, `voicemail`, `advertisement`, `employeeEngagement`, `unknownFutureValue`.|
+|theme|[payloadTheme](#payloadtheme-values)|The theme of a payload. Possible values are: `unknown`, `other`, `accountActivation`, `accountVerification`, `billing`, `cleanUpMail`, `controversial`, `documentReceived`, `expense`, `fax`, `financeReport`, `incomingMessages`, `invoice`, `itemReceived`, `loginAlert`, `mailReceived`, `password`, `payment`, `payroll`, `personalizedOffer`, `quarantine`, `remoteWork`, `reviewMessage`, `securityUpdate`, `serviceSuspended`, `signatureRequired`, `upgradeMailboxStorage`, `verifyMailbox`, `voicemail`, `advertisement`, `employeeEngagement`, `unknownFutureValue`.|
 
 ### payloadTheme values
 
@@ -80,11 +80,11 @@ Inherits from [entity](../resources/entity.md).
 |quarantine| Payload with quarantine-related details.|
 |remoteWork| Payload related to as remote work.|
 |reviewMessage| Payload with a review message request.|
-|securityUpdate| Payload mentioning that a security update is required.|
-|serviceSuspended| Payload mentioning that a service has been suspended.|
-|signatureRequired| Payload telling that a signature is required.|
-|upgradeMailboxStorage| Payload asking to upgrade the mailbox storage.|
-|verifyMailbox| Payload asking for mailbox verification.|
+|securityUpdate| Payload mentions that a security update is required.|
+|serviceSuspended| Payload mentions that a service has been suspended.|
+|signatureRequired| Payload tells that a signature is required.|
+|upgradeMailboxStorage| Payload asks to upgrade the mailbox storage.|
+|verifyMailbox| Payload asks for mailbox verification.|
 |voicemail| Payload with voicemail details.|
 |advertisement| Payload with advertisement details.|
 |employeeEngagement| Payload with employee engagement details.|
