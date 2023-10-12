@@ -23,10 +23,10 @@ The threat intelligence API allows you to operationalize intelligence found with
 
 | Method                                                                            | Return type                                                                                                               | Description                                                                                |
 | :-------------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------- |
-| [List articles](../api/security-article-list.md)                                  | [microsoft.graph.security.article](../resources/security-article.md) collection                                           | Get a list of **article** objects, including their properties and relationships.           |
-| [List intelProfiles](../api/security-intelligenceprofile-list.md)                 | [microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) collection                   | Get a list of **intelligenceProfile** resources.                                           |
-|[List sslCertificates](../api/security-sslcertificate-list.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) collection |Get a list of [sslCertificate](../resources/security-sslcertificate.md) objects and their properties.|
-| [List whoisRecords](../api/security-whoisrecord-list.md)                     |[microsoft.graph.security.whoisRecord](../resources/security-vulnerability.md) |Get a list of [whoisRecord](../resources/security-whoisrecord.md) objects.|
+| [List articles](../api/security-threatintelligence-list-articles.md)                                  | [microsoft.graph.security.article](../resources/security-article.md) collection                                           | Get a list of **article** objects, including their properties and relationships.           |
+| [List intelProfiles](../api/security-threatintelligence-list-intelprofiles.md)                 | [microsoft.graph.security.intelligenceProfile](../resources/security-intelligenceprofile.md) collection                   | Get a list of **intelligenceProfile** resources.                                           |
+|[List sslCertificates](../api/security-threatintelligence-list-sslcertificates.md)|[microsoft.graph.security.sslCertificate](../resources/security-sslcertificate.md) collection |Get a list of [sslCertificate](../resources/security-sslcertificate.md) objects and their properties.|
+| [List whoisRecords](../api/security-threatintelligence-list-whoisrecords.md)                     |[microsoft.graph.security.whoisRecord](../resources/security-vulnerability.md) |Get a list of [whoisRecord](../resources/security-whoisrecord.md) objects.|
 
 ## Properties
 
@@ -55,7 +55,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

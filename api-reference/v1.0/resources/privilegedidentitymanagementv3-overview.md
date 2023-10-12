@@ -5,7 +5,7 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
-ms.date: 12/07/2022
+ms.date: 09/13/2023
 ---
 
 # Manage Azure AD role assignments using PIM APIs
@@ -58,13 +58,13 @@ The following table lists scenarios for using PIM to manage role eligibilities a
 
 ## Role settings and PIM
 
-Each Azure AD role defines settings or rules. Such rules include whether multifactor authentication (MFA), justification, or approval is required to activate an eligible role, or whether you can create permanent assignments or eligibilities for principals to the role. These role-specific rules will determine the settings you can apply while creating or managing role assignments and eligibilities through PIM.
+Each Azure AD role defines settings or rules. Such rules include whether multifactor authentication (MFA), justification, or approval is required to activate an eligible role, or whether you can create permanent assignments or eligibilities for principals to the role. These role-specific rules determine the settings you can apply while creating or managing role assignments and eligibilities through PIM.
 
 In Microsoft Graph, these rules are managed through the [unifiedRoleManagementPolicy](unifiedrolemanagementpolicy.md) and the [unifiedRoleManagementPolicyAssignment](unifiedrolemanagementpolicyassignment.md) resource types and their related methods.
 
-For example, assume that by default, a role doesn't allow permanent active assignments and defines a maximum of 15 days for active assignments. Attempting to create a [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) object without expiry date will return a `400 Bad Request` response code for violation of the expiration rule.
+For example, assume that by default, a role doesn't allow permanent active assignments and defines a maximum of 15 days for active assignments. Attempting to create a [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) object without expiry date returns a `400 Bad Request` response code for violation of the expiration rule.
 
-PIM allows you to configure various rules including the following:
+PIM allows you to configure various rules including:
 
 + Whether principals can be assigned permanent eligible assignments
 + The maximum duration allowed for a role activation and whether justification or approval is required to activate eligible roles
@@ -78,6 +78,7 @@ The following table lists scenarios for using PIM to manage Azure AD rules and t
 |--------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Retrieve role management policies and associated rules or settings                                                                        | [List unifiedRoleManagementPolicies](../api/policyroot-list-rolemanagementpolicies.md)                   |
 | Retrieve a role management policy and its associated rules or settings                                                                    | [Get unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-get.md)                             |
+| Update a role management policy on its associated rules or settings                                                                    | [Update unifiedRoleManagementPolicy](../api/unifiedrolemanagementpolicy-update.md)                             |
 | Retrieve the rules defined for role management policy                                                                                     | [List rules](../api/unifiedrolemanagementpolicy-list-rules.md)                                           |
 | Retrieve a rule defined for a role management policy                                                                                      | [Get unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)                     |
 | Update a rule defined for a role management policy                                                                                        | [Update unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-update.md)                  |
@@ -107,7 +108,7 @@ For more information about permissions to call PIM APIs, see the [Microsoft Grap
 
 ## Licensing
 
-The tenant where Privileged Identity Management is being used must have sufficient purchased or trial licenses. For more information, see [License requirements to use Privileged Identity Management](/azure/active-directory/privileged-identity-management/subscription-requirements).
+The tenant where Privileged Identity Management is being used must have enough purchased or trial licenses. For more information, see [License requirements to use Privileged Identity Management](/azure/active-directory/privileged-identity-management/subscription-requirements).
 
 ## See also
 

@@ -1,6 +1,6 @@
 ---
 title: "getDevicesScheduledToRetire function"
-description: ""
+description: "Intune Deviceconfig Devicecompliancepolicy Getdevicesscheduledtoretire Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
