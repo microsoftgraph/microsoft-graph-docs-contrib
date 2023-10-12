@@ -518,9 +518,7 @@
       "SubArea": "Partner customer administration"
     },
     {
-      "changelog": [
-        {
-          "ChangeList": [
+      "ChangeList": [
             {
               "Id": "80aec7bf-811c-46b9-bb97-9db36b618153",
               "ApiChange": "Property",
@@ -547,5 +545,3 @@
         }
       ]
     }
-  ]
-}
