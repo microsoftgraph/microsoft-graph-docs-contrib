@@ -10,9 +10,9 @@ doc_type: apiPageType
 # approval: filterByCurrentUser
 Namespace: microsoft.graph
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), return a collection of [access package assignment approvals](../resources/approval.md). The returned objects are those which the calling user is in the scope of being an approver.
+In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), return a collection of [access package assignment approvals](../resources/approval.md). The objects returned are those that are in scope for approval by the calling user.
 
-In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), return a collection of [assignment approvals](../resources/approval.md). The returned objects are those which the calling user is in the scope of being an approver.
+In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), return a collection of [assignment approvals](../resources/approval.md). The objects returned are those that are in scope for approval by the calling user.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
