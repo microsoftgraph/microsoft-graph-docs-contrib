@@ -34,11 +34,13 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/privilegedAccess/group/eligibilityScheduleInstances?$filter=groupId eq 'groupId'
-GET /identityGovernance/privilegedAccess/group/eligibilityScheduleInstances?filter=principalId eq 'principalId'
+GET /identityGovernance/privilegedAccess/group/eligibilityScheduleInstances?$filter=groupId eq '{groupId}'
+GET /identityGovernance/privilegedAccess/group/eligibilityScheduleInstances?filter=principalId eq '{principalId}'
 ```
 
-## Optional query parameters
+## Query parameters
+This method requires the `$filter` (`eq`) query parameter to scope the request to a **principalId** or a **groupId**.
+
 This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
@@ -115,22 +117,22 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/eligibilityScheduleInstances/$entity",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/eligibilityScheduleInstances",
   "value": [
     {
-      "id": "772d5185-39b7-58be-4915-137ffaa7e42e",
-      "startDateTime": "String (timestamp)",
+      "id": "2b5ed229-4072-478d-9504-a047ebd4b07d_member_326a4063-93c5-4998-9537-969b8cd50297",
+      "startDateTime": "2023-08-18T00:33:48.8Z",
       "endDateTime": null,
-      "accessId": null,
+      "accessId": "member",
       "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
       "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
       "memberType": "Direct",
     },
     {
-      "id": "lAPpYvVpN0KRkAEhdxReEBLS8lac5ONCgpgBiOW-8JQ-1",
-      "startDateTime": "String (timestamp)",
+      "id": "2b5ed229-4072-478d-9504-a047ebd4b07d_owner_d663bb72-3781-4af0-b69b-01f2f0283a96",
+      "startDateTime": "2023-09-06T18:18:03.917Z",
       "endDateTime": null,
-      "accessId": null,
+      "accessId": "owner",
       "principalId": "56f2d212-e49c-42e3-8298-0188e5bef094",
       "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
       "memberType": "Direct",

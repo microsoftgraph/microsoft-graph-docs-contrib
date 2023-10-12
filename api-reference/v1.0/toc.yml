@@ -6010,9 +6010,9 @@ items:
                             href: api/unifiedroleeligibilityscheduleinstance-get.md
                           - name: Filter by current user
                             href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
-                      - name: Policies
+                      - name: Policies and rules
                         items:
-                          - name: Policies and rules
+                          - name: Policy
                             href: resources/unifiedrolemanagementpolicy.md
                           - name: List
                             href: api/policyroot-list-rolemanagementpolicies.md
@@ -6020,12 +6020,123 @@ items:
                             href: api/unifiedrolemanagementpolicy-get.md
                           - name: Update
                             href: api/unifiedrolemanagementpolicy-update.md
-                          - name: List rules
-                            href: api/unifiedrolemanagementpolicy-list-rules.md
-                          - name: Get rule
-                            href: api/unifiedrolemanagementpolicyrule-get.md
-                          - name: Update rule
-                            href: api/unifiedrolemanagementpolicyrule-update.md
+                          - name: Rules
+                            href: resources/unifiedrolemanagementpolicyrule.md
+                            items:
+                              - name: List rules
+                                href: api/unifiedrolemanagementpolicy-list-rules.md
+                              - name: Get rule
+                                href: api/unifiedrolemanagementpolicyrule-get.md
+                              - name: Update rule
+                                href: api/unifiedrolemanagementpolicyrule-update.md
+                      - name: Policy assignments
+                        href: resources/unifiedrolemanagementpolicyassignment.md
+                        items:
+                          - name: List
+                            href: api/policyroot-list-rolemanagementpolicyassignments.md
+                          - name: Get
+                            href: api/unifiedrolemanagementpolicyassignment-get.md
+                  - name: PIM for Groups
+                    href: resources/privilegedidentitymanagement-for-groups-api-overview.md
+                    items:
+                      - name: Assignment schedule requests
+                        href: resources/privilegedaccessgroupassignmentschedulerequest.md
+                        items:
+                          - name: List
+                            href: api/privilegedaccessgroup-list-assignmentschedulerequests.md
+                          - name: Create
+                            href: api/privilegedaccessgroup-post-assignmentschedulerequests.md
+                          - name: Get
+                            href: api/privilegedaccessgroupassignmentschedulerequest-get.md
+                          - name: Cancel
+                            href: api/privilegedaccessgroupassignmentschedulerequest-cancel.md
+                          - name: Filter by current user
+                            href: api/privilegedaccessgroupassignmentschedulerequest-filterbycurrentuser.md
+                      - name: Assignment schedules
+                        href: resources/privilegedaccessgroupassignmentschedule.md
+                        items:
+                          - name: List
+                            href: api/privilegedaccessgroup-list-assignmentschedules.md
+                          - name: Get
+                            href: api/privilegedaccessgroupassignmentschedule-get.md
+                          - name: Filter by current user
+                            href: api/privilegedaccessgroupassignmentschedule-filterbycurrentuser.md
+                      - name: Assignment schedule instances
+                        href: resources/privilegedaccessgroupassignmentscheduleinstance.md
+                        items:
+                          - name: List
+                            href: api/privilegedaccessgroup-list-assignmentscheduleinstances.md
+                          - name: Get
+                            href: api/privilegedaccessgroupassignmentscheduleinstance-get.md
+                          - name: Filter by current user
+                            href: api/privilegedaccessgroupassignmentscheduleinstance-filterbycurrentuser.md
+                      - name: Eligibility schedule requests
+                        href: resources/privilegedaccessgroupeligibilityschedulerequest.md
+                        items:
+                          - name: List
+                            href: api/privilegedaccessgroup-list-eligibilityschedulerequests.md
+                          - name: Create
+                            href: api/privilegedaccessgroup-post-eligibilityschedulerequests.md
+                          - name: Get
+                            href: api/privilegedaccessgroupeligibilityschedulerequest-get.md
+                          - name: Cancel
+                            href: api/privilegedaccessgroupeligibilityschedulerequest-cancel.md
+                          - name: Filter by current user
+                            href: api/privilegedaccessgroupeligibilityschedulerequest-filterbycurrentuser.md
+                      - name: Eligibility schedules
+                        href: resources/privilegedaccessgroupeligibilityschedule.md
+                        items:
+                          - name: List
+                            href: api/privilegedaccessgroup-list-eligibilityschedules.md
+                          - name: Get
+                            href: api/privilegedaccessgroupeligibilityschedule-get.md
+                          - name: Filter by current user
+                            href: api/privilegedaccessgroupeligibilityschedule-filterbycurrentuser.md
+                      - name: Eligibility schedule instances
+                        href: resources/privilegedaccessgroupeligibilityscheduleinstance.md
+                        items:
+                          - name: List
+                            href: api/privilegedaccessgroup-list-eligibilityscheduleinstances.md
+                          - name: Get
+                            href: api/privilegedaccessgroupeligibilityscheduleinstance-get.md
+                          - name: Filter by current user
+                            href: api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser.md
+                      - name: Assignment approval
+                        href: resources/approval.md
+                        items:
+                          - name: Get
+                            href: api/approval-get.md
+                          - name: Filter by current user
+                            href: api/approval-filterbycurrentuser.md
+                          - name: Approval stage
+                            items:
+                              - name: Approval stage
+                                href: resources/approvalstage.md
+                              - name: List
+                                href: api/approval-list-stages.md
+                              - name: Get
+                                href: api/approvalstage-get.md
+                              - name: Update
+                                href: api/approvalstage-update.md
+                      - name: Policies and rules
+                        items:
+                          - name: Policy
+                            href: resources/unifiedrolemanagementpolicy.md
+                          - name: List
+                            href: api/policyroot-list-rolemanagementpolicies.md
+                          - name: Get
+                            href: api/unifiedrolemanagementpolicy-get.md
+                          - name: Update
+                            href: api/unifiedrolemanagementpolicy-update.md
+                          - name: Rules
+                            href: resources/unifiedrolemanagementpolicyrule.md
+                            items:
+                              - name: List rules
+                                href: api/unifiedrolemanagementpolicy-list-rules.md
+                              - name: Get rule
+                                href: api/unifiedrolemanagementpolicyrule-get.md
+                              - name: Update rule
+                                href: api/unifiedrolemanagementpolicyrule-update.md
                       - name: Policy assignments
                         href: resources/unifiedrolemanagementpolicyassignment.md
                         items:
