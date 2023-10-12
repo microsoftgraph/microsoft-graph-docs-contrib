@@ -91,12 +91,15 @@ POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/templates
 [!INCLUDE [sample-code](../includes/snippets/php/multitenantorganizationpartnerconfigurationtemplatethisresettodefaultsettings-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/multitenantorganizationpartnerconfigurationtemplatethisresettodefaultsettings-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/multitenantorganizationpartnerconfigurationtemplatethisresettodefaultsettings-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

@@ -20,8 +20,6 @@ requestBody := graphcommunications.NewInvitePostRequestBody()
 
 
 invitationParticipantInfo := graphmodels.NewInvitationParticipantInfo()
-replacesCallId := "a7ebfb2d-871e-419c-87af-27290b22e8db"
-invitationParticipantInfo.SetReplacesCallId(&replacesCallId) 
 identity := graphmodels.NewIdentitySet()
 user := graphmodels.NewIdentity()
 id := "278405a3-f568-4b3e-b684-009193463064"
@@ -32,6 +30,8 @@ additionalData := map[string]interface{}{
 user.SetAdditionalData(additionalData)
 identity.SetUser(user)
 invitationParticipantInfo.SetIdentity(identity)
+participantId := "a7ebfb2d-871e-419c-87af-27290b22e8db"
+invitationParticipantInfo.SetParticipantId(&participantId) 
 
 participants := []graphmodels.InvitationParticipantInfoable {
 	invitationParticipantInfo,

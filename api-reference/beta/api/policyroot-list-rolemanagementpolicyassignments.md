@@ -55,7 +55,7 @@ To retrieve details of all role management policy assignments for groups:
 GET /policies/roleManagementPolicyAssignments?$filter=scopeId eq '{groupId}' and scopeType eq 'Group'
 ```
 
-## Optional query parameters
+## Query parameters
 This method requires the `$filter` (`eq`) query parameter to scope the request to a **scopeId** and a **scopeType**. 
 
 - To retrieve policies for Azure AD roles, the **scopeId** must be `/` and, **scopeType** can be either `Directory` or `DirectoryRole`.

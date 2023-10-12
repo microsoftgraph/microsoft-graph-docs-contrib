@@ -17,14 +17,25 @@ Retrieve the details of a role management policy.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+### For PIM for Azure AD roles
+
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+
+### For PIM for groups
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|RoleManagementPolicy.Read.AzureADGroup, RoleManagementPolicy.ReadWrite.AzureADGroup|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|RoleManagementPolicy.Read.AzureADGroup, RoleManagementPolicy.ReadWrite.AzureADGroup|
 
 ## HTTP request
 
+To retrieve the details of a policy in PIM that can be applied to Azure AD roles or group membership or ownership:
 <!-- {
   "blockType": "ignored"
 }
@@ -50,7 +61,7 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 
 ## Examples
 
-### Example 1: Retrieve the details of a role management policy
+### Example 1: Retrieve the details of a policy in PIM for Azure AD roles
 
 #### Request
 
@@ -128,7 +139,7 @@ Content-Type: application/json
 ```
 
 
-### Example 2: Retrieve the details of a role management policy and expand the relationships
+### Example 2: Retrieve the details of a policy in PIM for Azure AD roles and expand the relationships
 
 #### Request
 
@@ -802,5 +813,51 @@ Content-Type: application/json
             }
         }
     ]
+}
+```
+
+### Example 3: Retrieve the details of a policy in PIM for groups
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_unifiedrolemanagementpolicy_azureADGroup"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369
+```
+
+#### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicy"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/roleManagementPolicies/$entity",
+    "id": "Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369",
+    "displayName": "Group",
+    "description": "Group",
+    "isOrganizationDefault": false,
+    "scopeId": "60bba733-f09d-49b7-8445-32369aa066b3",
+    "scopeType": "Group",
+    "lastModifiedDateTime": "2023-05-23T23:29:43.687Z",
+    "lastModifiedBy": {
+        "displayName": null,
+        "id": null
+    }
 }
 ```
