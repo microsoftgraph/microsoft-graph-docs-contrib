@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveGroupFinding?$filter=group/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/key/findings/microsoft.graph.inactiveGroupFinding
 ```
 
 <!-- {
@@ -38,15 +38,14 @@ GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveGroupFinding?$filter=group/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
-```
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/key/findings/microsoft.graph.inactiveGroupFinding
 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveGroupFinding?$filter=group/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/key/findings/microsoft.graph.inactiveGroupFinding
 ```
 
 ## Optional query parameters
@@ -76,7 +75,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.inactiveGroupFinding?$filter=group/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp('id)/findings/microsoft.graph.inactiveGroupFinding
 ```
 
 ### Response
@@ -90,21 +89,42 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
-
+Content-type: application/json
 {
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/gcp/findings/graph.inactiveGroupFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.inactiveGroupFinding",
-      "id": "e41a6878-b1cc-cc5c-055b-bab8a047c97f",
-      "createdDateTime": "String (timestamp)",
+      "@odata.type": "graph.inactiveGroupFinding",
+      "id": "aW5hY3RpdmVHcm91cEZpbmRpbmcx",
+      "group": {
+          "@odata.type": "graph.gcpGroup",
+          "id": "dGVzdGdyb3VwQGNsb3Vka25veC5pbw==",
+          "externalId": "testgroup@cloudknox.io",
+          "displayName": "testgroup",
+          "source": {
+            "@odata.type": "graph.gsuiteSource",
+            "identityProviderType": "gsuite",
+            "domain": "carbide-bonsai-205017"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.gcpAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "carbide-bonsai-205017",
+            "authorizationSystemName": "ck-staging",
+            "authorizationSystemType": "gcp"
+          }
+      },
       "actionSummary": {
-        "@odata.type": "microsoft.graph.actionSummary"
+        "assigned": 3059,
+        "exercised": 0,
+        "available": 7076
       },
       "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
-      }
-    }
+        "score": 1
+      },
+      "createdDateTime": "2020-10-11T20:11:45.671Z"
+    },
+
   ]
 }
 ```

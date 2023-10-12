@@ -1,4 +1,3 @@
-
 ---
 title: "List inactiveUserFindings"
 description: "Get a list of the inactiveUserFinding objects and their properties."
@@ -15,7 +14,7 @@ Namespace: microsoft.graph
 
 Get a list of the [inactiveUserFinding](../resources/inactiveuserfinding.md) objects and their properties.
 
-You want to view the inactive users in an AWS account, Azure subscription or GCP project.
+You want to view the inactive users in your AWS, Azure, or GCP cloud environments.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
