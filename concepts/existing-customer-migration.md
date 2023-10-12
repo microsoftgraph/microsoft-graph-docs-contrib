@@ -14,7 +14,13 @@ Starting August 17, 2023, new customers who onboard to Microsoft Graph Data Conn
 
 <!-- Update 8/17/2023 changed date per developer guidance to August 17, 2023. -->
 
-If you're an existing Data Connect customer and want to get started with the enhanced app registration and authorization experience, have your tenant admin disable Data Connect in the Microsoft 365 admin portal and then re-enable it. Then, follow the steps in the [onboarding guide](./onboarding-experience-overview.md).
+If you're an existing Data Connect customer and want to get started with the enhanced app registration and authorization experience, have your tenant admin disable Data Connect in the Microsoft 365 admin portal and then re-enable it:
+1. Disable MGDC by unckecking the "Turn Microsoft Graph Data Connect on or off for your entire organization" checkbox on the Microsoft 365 admin portal.
+2. Click "Save".
+3. Refresh the page. Once refreshed, the opt-in flyout will no longer present a textbox for providing an approver security group, along with modified text and links to reflect the new experience.  
+4. Enable MGDC by checking the "Turn Microsoft Graph Data Connect on or off for your entire organization" checkbox on the Microsoft 365 admin portal. 
+5. Click "Save". Congrats, you are on the new onboarding experience!
+6. Follow the steps in [onboarding guide](./onboarding-experience-overview.md) to register the apps you require and work with your tenant administrator to get them authorized for MGDC.
 
 This option is available today. If you choose this option, none of your existing Privileged Access Management (PAM) authorizations will be migrated to the new experience. You'll need to register the apps and work with your tenant admin to get them authorized.
 
