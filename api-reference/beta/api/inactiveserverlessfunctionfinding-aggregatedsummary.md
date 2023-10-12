@@ -1,6 +1,6 @@
 ---
 title: "inactiveServerlessFunctionFinding: aggregatedSummary"
-description: "**TODO: Add Description**"
+description: "Get a list of inactive serverless functions compared to all inactive identities"
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -39,7 +39,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|authorizationSystemIds|String collection|**TODO: Add Description**|
+|authorizationSystemIds|String collection|get a list of authorization system IDs|
 
 
 ## Request headers
@@ -64,9 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=[
-  "String"
-])
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveServerlessFunctionFinding/aggregatedSummary
 ```
 
 
@@ -89,4 +87,3 @@ Content-Type: application/json
   }
 }
 ```
-

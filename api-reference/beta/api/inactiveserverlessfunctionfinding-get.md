@@ -31,23 +31,22 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveServerlessFunctionFinding$filter=group/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/key/findings/microsoft.graph.inactiveServerlessFunctionFinding
 ```
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/key/findings/microsoft.graph.inactiveServerlessFunctionFinding
 ```
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveServerlessFunctionFinding$filter=group/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
-```
-```
-<!-- {
-  "blockType": "ignored"
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveServerlessFunctionFinding$filter=group/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/key/findings/microsoft.graph.inactiveServerlessFunctionFinding
 ```
 
 ## Optional query parameters
@@ -75,7 +74,7 @@ The following is an example of a request.
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveServerlessFunctionFinding?$filter=group/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws('id)/findings/microsoft.graph.inactiveServerlessFunctionFinding
 ```
 
 ### Response
