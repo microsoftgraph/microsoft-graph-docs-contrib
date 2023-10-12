@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the configuration for the remoteDesktopSecurityConfiguration object on the servicePrincipal. Use this configuration to enable the new Microsoft Entra ID [Remote Desktop Services (RDS) authentication protocol](/openspecs/windows_protocols/ms-rdpbcgr/dc43f040-d75d-49a9-90c6-0c9999281136) to authenticate a user to [Microsoft Entra joined](/azure/active-directory/devices/concept-directory-join) or [Microsoft Entra hybrid joined](/azure/active-directory/devices/concept-hybrid-join) devices. Additionally, IT administrators can also enable single sign-on (SSO) when RDP clients connect to a Microsoft Entra joined or Microsoft Entra hybrid joined device that is part of the target device groups.
+Represents the configuration for the remoteDesktopSecurityConfiguration object on the servicePrincipal.
+
+Use this configuration to enable the Microsoft Entra ID [Remote Desktop Services (RDS) authentication protocol](/openspecs/windows_protocols/ms-rdpbcgr/dc43f040-d75d-49a9-90c6-0c9999281136), for Microsoft Entra ID to authenticate users to [joined](/azure/active-directory/devices/concept-directory-join) or [hybrid joined](/azure/active-directory/devices/concept-hybrid-join) devices. The configuration also enables single sign-on (SSO) when RDP clients connect to a Microsoft Entra joined or Microsoft Entra hybrid joined device that is part of the **targetDeviceGroups** object.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -29,16 +31,16 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the remote desktop security configuration. Inherited from [entity](../resources/entity.md).|
+|id|String|Unique identifier for the RDS security configuration. Inherited from [entity](../resources/entity.md).|
 |isRemoteDesktopProtocolEnabled|Boolean|Determines if Microsoft Entra ID RDS authentication protocol for RDP is enabled.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|targetDeviceGroups|[targetDeviceGroup](../resources/targetdevicegroup.md) collection|The collection of target device groups associated with the remote desktop security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.|
+|targetDeviceGroups|[targetDeviceGroup](../resources/targetdevicegroup.md) collection|The collection of target device groups that are associated with the RDS security configuration that will be enabled for SSO when a client connects to the target device over RDP using the new Microsoft Entra ID RDS authentication protocol.|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

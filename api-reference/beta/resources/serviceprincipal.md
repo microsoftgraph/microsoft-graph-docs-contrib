@@ -163,7 +163,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 
 
 ## JSON representation
-
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
