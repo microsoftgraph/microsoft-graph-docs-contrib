@@ -609,6 +609,96 @@
       "CreatedDateTime": "2023-06-28T15:48:54.3649155Z",
       "WorkloadArea": "Security",
       "SubArea": "Compliance"
-    }
+    },
+    {
+			"ChangeList": [
+				{
+				  "Id": "df278ca9-077c-4380-b333-19d93ed06495",
+				  "ApiChange": "Enumeration",
+				  "ChangedApiName": "additionalOptions",
+				  "ChangeType": "Addition",
+				  "Description": "Added the **additionalOptions** enumeration type.",
+				  "Target": "additionalOptions"
+				},
+				{
+				  "Id": "df278ca9-077c-4380-b333-19d93ed06495",
+				  "ApiChange": "Member",
+				  "ChangedApiName": "exportReport",
+				  "ChangeType": "Addition",
+				  "Description": "Added the `exportReport` member to the **caseAction** enumeration.",
+				  "Target": "caseAction"
+				},
+				{
+				  "Id": "df278ca9-077c-4380-b333-19d93ed06495",
+				  "ApiChange": "Member",
+				  "ChangedApiName": "exportResult",
+				  "ChangeType": "Addition",
+				  "Description": "Added the `exportResult` member to the **caseAction** enumeration.",
+				  "Target": "caseAction"
+				},
+				{
+				  "Id": "df278ca9-077c-4380-b333-19d93ed06495",
+				  "ApiChange": "Enumeration",
+				  "ChangedApiName": "exportCriteria",
+				  "ChangeType": "Addition",
+				  "Description": "Added the **exportCriteria** enumeration type.",
+				  "Target": "exportCriteria"
+				},
+				{
+				  "Id": "df278ca9-077c-4380-b333-19d93ed06495",
+				  "ApiChange": "Enumeration",
+				  "ChangedApiName": "exportFormat",
+				  "ChangeType": "Addition",
+				  "Description": "Added the **exportFormat** enumeration type.",
+				  "Target": "exportFormat"
+				},
+				{
+				  "Id": "df278ca9-077c-4380-b333-19d93ed06495",
+				  "ApiChange": "Enumeration",
+				  "ChangedApiName": "exportLocation",
+				  "ChangeType": "Addition",
+				  "Description": "Added the **exportLocation** enumeration type.",
+				  "Target": "exportLocation"
+				},
+				{
+				  "Id": "df278ca9-077c-4380-b333-19d93ed06495",
+				  "ApiChange": "Resource",
+				  "ChangedApiName": "ediscoverySearchExportOperation",
+				  "ChangeType": "Addition",
+				  "Description": "Added the [ediscoverySearchExportOperation](https://learn.microsoft.com/en-us/graph/api/resources/security-ediscoverySearchExportOperation?view=graph-rest-beta) resource",
+				  "Target": "ediscoverySearchExportOperation"
+				},
+				{
+				  "Id": "df278ca9-077c-4380-b333-19d93ed06495",
+				  "ApiChange": "Method",
+				  "ChangedApiName": "export",
+				  "ChangeType": "Addition",
+				  "Description": "Added the [export](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method to the [ediscoverySearch](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) resource.",
+				  "Target": "ediscoverySearch"
+				},
+				{
+				  "Id": "df278ca9-077c-4380-b333-19d93ed06495",
+				  "ApiChange": "Method",
+				  "ChangedApiName": "exportReport",
+				  "ChangeType": "Addition",
+				  "Description": "Added the [exportReport](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method to the [ediscoverySearch](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) resource.",
+				  "Target": "ediscoverySearch"
+				},
+				{
+				  "Id": "df278ca9-077c-4380-b333-19d93ed06495",
+				  "ApiChange": "Method",
+				  "ChangedApiName": "exportResult",
+				  "ChangeType": "Addition",
+				  "Description": "Added the [exportResult](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) method to the [ediscoverySearch](https://learn.microsoft.com/en-us/graph/api/ediscoverySearch?view=graph-rest-beta) resource.",
+				  "Target": "ediscoverySearch"
+				}
+			  ],
+			  "Id": "df278ca9-077c-4380-b333-19d93ed06495",
+			  "Cloud": "Prod",
+			  "Version": "beta",
+			  "CreatedDateTime": "2023-10-12T05:50:29.9021049Z",
+			  "WorkloadArea": "Security",
+			  "SubArea": "eDiscovery"
+		}
   ]
   }
