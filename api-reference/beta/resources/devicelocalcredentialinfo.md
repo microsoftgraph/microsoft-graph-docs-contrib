@@ -28,14 +28,14 @@ Represents local administrator credential information for all device objects in 
 |deviceName|String|Display name of the device that the local credentials are associated with.|
 |id|String| ID of the device that the local credentials are associated with Key. This is same as **deviceId** in the [device](device.md) object.|
 |lastBackupDateTime|DateTimeOffset|When the local administrator account credential was backed up to Azure Active Directory.|
-|refreshDateTime|DateTimeOffset|When the local administrator account credential will be refreshed and backed up to Azure Active Directory.|
+|refreshDateTime|DateTimeOffset|When the local administrator account credential is refreshed up to Azure Active Directory.|
 
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
