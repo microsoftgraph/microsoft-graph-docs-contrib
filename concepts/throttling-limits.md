@@ -27,12 +27,12 @@ Any request can be evaluated against multiple limits, depending on the scope of 
 
 The following limits apply to requests on the assignment service API:
 
-| Request Type                 | Limit per app per tenant     | Limit per tenant for all apps |
+| Request type                 | Limit per app per tenant     | Limit per tenant for all apps |
 |---------------------------|------------------------------|----------------------------|
 | Any         | 500 requests per 10 seconds   | 1000 requests per 10 seconds
 |Any          | 15,000 requests per 3600 seconds|30,000 requests per 3600 seconds|
 | GET me/Assignment  | 50 requests per 10 seconds | 150 requests per 10 seconds |
-| POST /reauthorize Subscription by ID  |  4000 requests per 20 seconds  |  1000 requests per 20 seconds
+| POST /reauthorize subscription by ID  |  4000 requests per 20 seconds  |  1000 requests per 20 seconds
 
 The preceding limits apply to the following resources:
 
