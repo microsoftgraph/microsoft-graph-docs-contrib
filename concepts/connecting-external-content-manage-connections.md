@@ -80,9 +80,9 @@ The following image shows how your item might appear within recommendation exper
 
 ![Screenshot of a recommended item with share activity](./images/connectors-images/share-activity-recommendation-example.png)
 
-The following is an example `activitySettings` payload with a complete `urlToItemResolvers` section. For example, if the link `https://contoso.com/items/39483948/` is pasted into a Teams chat, then there is a connector that ingests an `externalItem` that represents the object that the link points to, with `itemId` id_39483948. This connection specifies how to map from the URL to the `itemId` of that `externalItem`. In this example, this connection has an `id` of `contosohr`.
+The following example shows the **activitySettings** payload with a complete **urlToItemResolvers** section. For example, if the link `https://contoso.com/items/39483948/` is pasted into a Teams chat, a connector ingests an **externalItem** that represents the object that the link points to, with an **itemId** of `id_39483948`. This connection specifies how to map from the URL to the **itemId** of that **externalItem**. In this example, this connection has an **id** of `contosohr`.
 
-The activity settings can be updated by sending a patch request on the connection:
+The activity settings can be updated by sending a patch request on the connection.
 <!-- {
   "blockType": "ignored"
 }
@@ -115,13 +115,13 @@ The following `activitySettings` payload would be sent with the patch request:
   ]
 }
 ```
-In the example above, the `itemId` field specifies how to form the ID of the external item that the URL represents. The `itemId` is referenced in `urlPattern` (which is within `urlMatchInfo`) to extract 39483948 as the id of the `externalItem`.
+In the previous example, the `itemId` field specifies how to form the ID of the external item that the URL represents. The `itemId` is referenced in `urlPattern` (which is within **urlMatchInfo**) to extract 39483948 as the id of the `externalItem`.
 
-You can supply a list of up to eight `itemIdResolver` resources in the `urlToItemResolvers` resource for your activity settings payload. For each of these `urlMatchInfo` resources, specify a value of `#microsoft.graph.externalConnectors.itemIdResolver` for the `@odata.type`, an integer greater than zero for the `priority` property, and a `urlMatchInfo` object that contains a list of base URLs and a regular expression.
+You can supply a list of up to eight **itemIdResolver** resources in the **urlToItemResolvers** resource for your activity settings payload. For each of these **urlMatchInfo** resources, specify a value of `#microsoft.graph.externalConnectors.itemIdResolver` for the `@odata.type`, an integer greater than zero for the **priority** property, and a **urlMatchInfo** object that contains a list of base URLs and a regular expression.
 
-When a link is shared, the `urlMatchInfo` objects that belong to the resolvers are applied in the order that the `priority` values specify. In ascending `priority` order, the URL is first compared to the URLs in the `baseUrls` list in the `urlMatchInfo`. Then, if the base of the link URL is in the `baseUrls` list, the `urlPattern` regular expression is applied to the URL. If this pattern matches, no further resolvers are applied. If either the base of the link URL is not in the `baseUrls` list, or the `urlPattern` fails to match, then the next `urlToItemResolver` is evaluated until a match is found or there are no more `urltoItemResolver` resources to apply.
+When a link is shared, the **urlMatchInfo** objects that belong to the resolvers are applied in the order that the **priority** values specify. In ascending **priority** order, the URL is first compared to the URLs in the **baseUrls** list in the **urlMatchInfo** property. Then, if the base of the link URL is in the **baseUrls** list, the **urlPattern** regular expression is applied to the URL. If this pattern matches, no further resolvers are applied. If either the base of the link URL is not in the **baseUrls** list, or the **urlPattern** fails to match,  the next **urlToItemResolver** is evaluated until a match is found or there are no more **urltoItemResolver** resources to apply.
 
-To learn more about `urlMatchInfo` resources, see [urlMatchInfo type](https://learn.microsoft.com/graph/api/resources/externalconnectors-urlmatchinfo?view=graph-rest-1.0).
+To learn more about **urlMatchInfo** resources, see [urlMatchInfo type](https://learn.microsoft.com/graph/api/resources/externalconnectors-urlmatchinfo?view=graph-rest-1.0).
 ## Update a connection
 
 To change the display name, description, or enabled content experiences for an existing connection, you can [update the connection](/graph/api/externalconnectors-externalconnection-update).
