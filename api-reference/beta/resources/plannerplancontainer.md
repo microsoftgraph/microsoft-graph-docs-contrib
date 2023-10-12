@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a container for a [plannerPlan](plannerPlan.md). The container is a resource that specifies authorization rules and the lifetime of the plan. This means that only the people who are authorized to work with the resource containing the plan will be able to work with the plan and the tasks within it. When the containing resource is deleted, the contained plans are also deleted. Properties of **plannerPlanContainer** can only be changed while [moving a plan](../api/plannerplan-movetocontainer.md) from User to Group container.
+Represents a container for a [plannerPlan](plannerPlan.md). The container is a resource that specifies authorization rules and the lifetime of the plan. Only people authorized to work with the resource containing the plan are allowed to work with the plan and the tasks within it. When the containing resource is deleted, the contained plans are also deleted. Properties of **plannerPlanContainer** can only be changed when a plan is moved from one container to another, using [plan move to container](../api/plannerplan-movetocontainer.md).
 
-Planner currently supports the container types listed in the following table. When creating a plan, the **containerUrl** property must be specified with the path of the resource identified in the table.
+Planner currently supports the container types listed in the following table. The **containerUrl** property must be specified during plan creation with the path of the resource identified in the table.
 
 |Type|Description|Path to the resource|
 |----|-----------|--------------------|
@@ -29,14 +29,14 @@ Planner currently supports the container types listed in the following table. Wh
 |Property|Type|Description|
 |:---|:---|:---|
 |containerId|String|The identifier of the resource that contains the plan. Optional.|
-|type|plannerContainerType|The type of the resource that contains the plan. For supported types, see the previous table. Possible values are: `group`, `unknownFutureValue`, `roster`, `project`, `driveItem`, and `user`. Note that you must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `roster`, `project`, `driveItem`, and `user`. Optional.|
+|type|plannerContainerType|The type of the resource that contains the plan. For supported types, see the previous table. Possible values are: `group`, `unknownFutureValue`, `roster`, `project`, `driveItem`, and `user`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `roster`, `project`, `driveItem`, and `user`. Optional.|
 |url|String|The full canonical URL of the container. Optional.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.plannerPlanContainer"

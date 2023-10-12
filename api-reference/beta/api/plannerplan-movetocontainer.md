@@ -1,6 +1,6 @@
 ---
 title: "Move plan across containers"
-description: "Move a **plannerPlan** object from User to Group plannerPlanContainer"
+description: "Move a **plannerPlan** object from one plannerPlanContainer to another. Currently the only allowed move is from User to Group container."
 ms.localizationpriority: medium
 author: "vasrinwork"
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Move a **plannerPlan** object from User to Group [plannerPlanContainer](../resources/plannerplancontainer.md).
+Move a **plannerPlan** object from one [plannerPlanContainer](../resources/plannerplancontainer.md) to another. Currently the only allowed move is from User to Group container.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ If successful, this API returns a `200 OK` response code and a [plannerPlan](../
 
 ## Example
 ### Request
-The following is an example of a request.
+Here is an example of the request.
 
 <!-- {
   "blockType": "request",
@@ -66,7 +66,7 @@ If-Match: "string"
 ```
 
 ### Response
-The following is an example of the response. **Note:** The response object shown here might be shortened for readability.
+Here is an example of the response. **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
