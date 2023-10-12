@@ -82,7 +82,7 @@ The following image shows how your item might appear within recommendation exper
 
 The following example shows the **activitySettings** payload with a complete **urlToItemResolvers** section. For example, if the link `https://contoso.com/items/39483948/` is pasted into a Teams chat, a connector ingests an **externalItem** that represents the object that the link points to, with an **itemId** of `id_39483948`. This connection specifies how to map from the URL to the **itemId** of that **externalItem**. In this example, this connection has an **id** of `contosohr`.
 
-The activity settings can be updated by sending a patch request on the connection.
+Update the activity settings by sending a patch request on the connection.
 <!-- {
   "blockType": "ignored"
 }
@@ -90,7 +90,8 @@ The activity settings can be updated by sending a patch request on the connectio
 ``` http
 PATCH https://graph.microsoft.com/v1.0/external/connections/contosohr
 ```
-The following `activitySettings` payload would be sent with the patch request:
+The following **activitySettings** payload would be sent with the patch request.
+
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.externalConnectors.activitySettings"
@@ -115,7 +116,7 @@ The following `activitySettings` payload would be sent with the patch request:
   ]
 }
 ```
-In the previous example, the `itemId` field specifies how to form the ID of the external item that the URL represents. The `itemId` is referenced in `urlPattern` (which is within **urlMatchInfo**) to extract 39483948 as the id of the `externalItem`.
+In the previous example, the **itemId** field specifies how to form the ID of the external item that the URL represents. The **itemId** is referenced in **urlPattern** (which is within **urlMatchInfo**) to extract `39483948` as the ID of the **externalItem**.
 
 You can supply a list of up to eight **itemIdResolver** resources in the **urlToItemResolvers** resource for your activity settings payload. For each of these **urlMatchInfo** resources, specify a value of `#microsoft.graph.externalConnectors.itemIdResolver` for the `@odata.type`, an integer greater than zero for the **priority** property, and a **urlMatchInfo** object that contains a list of base URLs and a regular expression.
 
