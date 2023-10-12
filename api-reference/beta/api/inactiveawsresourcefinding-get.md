@@ -1,9 +1,9 @@
 ---
 title: "Get inactiveAwsResourceFinding"
 description: "Read the properties and relationships of an inactiveAwsResourceFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/key/findings/graph.inactiveAwsResourceFinding
 ```
 
 ## Optional query parameters
@@ -57,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws('id')/findings/graph.inactiveAwsResourceFinding
 ```
 
 
@@ -72,21 +73,47 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
-
+Content-type: application/json
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.inactiveAwsResourceFinding",
-    "id": "4b65ecf9-4a09-b03d-3d46-ca4dc114c5fb",
-    "createdDateTime": "String (timestamp)",
-    "permissionsCreepIndex": {
-      "@odata.type": "microsoft.graph.permissionsCreepIndex"
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.inactiveAwsResourceFinding",
+  "value": [
+    {
+      "@odata.type": "graph.inactiveAwsResourceFinding",
+      "id": "aW5hY3RpdmVSb2xlRmluZGluZzE",
+      "identity": {
+          "@odata.type": "graph.awsEc2Instance",
+          "id": "YXJuOmF3czplYzI6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTppbnN0YW5jZS9pLTBmYzU1NjFlMjFlYTcwOTcw",
+          "externalId": "arn:aws:ec2:us-west-2:956987887735:instance/i-0fc5561e21ea70970",
+          "displayName": "ck-ami-update-test",
+          "source": {
+            "@odata.type": "graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "377596131774"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.awsAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "377596131774",
+            "authorizationSystemName": "cloudknox-staging",
+            "authorizationSystemType": "aws",
+          }
+      },
+      "actionSummary": {
+        "assigned": 736,
+        "exercised": 0,
+        "available": 10000
+      },
+      "permissionsCreepIndex": {
+        "score": 3
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "identityDetails": {
+        "createdDateTime": "2020-04-12T20:34:24Z",
+        "lastActiveDateTime": "2020-10-30T03:21:05Z"
+      }
     },
-    "lastActiveDateTime": "String (timestamp)",
-    "actionSummary": {
-      "@odata.type": "microsoft.graph.actionSummary"
-    }
-  }
+
+  ]
 }
 ```
 

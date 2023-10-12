@@ -66,7 +66,9 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.inactiveGcpServiceAccountFinding/aggregatedSummary
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.inactiveGcpServiceAccountFinding/aggregatedSummary(authorizationSystemIds=[
+  "String"
+])
 ```
 
 
