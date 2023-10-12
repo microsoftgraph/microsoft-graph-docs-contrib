@@ -1,9 +1,9 @@
 ---
 title: "Get inactiveGcpServiceAccountFinding"
 description: "Read the properties and relationships of an inactiveGcpServiceAccountFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -25,7 +25,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|**SERVICENOWAPI**|
 
-
 ## HTTP request
 
 <!-- {
@@ -33,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveGcpServiceAccountFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/key/findings/microsoft.graph.inactiveGcpServiceAccountFinding
 ```
 
 ## Optional query parameters
@@ -51,6 +50,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and an [inactiveGcpServiceAccountFinding](../resources/inactivegcpserviceaccountfinding.md) object in the response body.
 
+If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the key passed into the GET method is invalid.
+
 ## Examples
 
 ### Request
@@ -61,7 +62,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveGcpServiceAccountFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp('id')/findings/microsoft.graph.inactiveGcpServiceAccountFinding
 ```
 
 
@@ -75,22 +76,44 @@ The following is an example of the response
 }
 -->
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.inactiveGcpServiceAccountFinding",
-    "id": "b7e6821c-bda5-b80e-07a5-fdf3b2eb801e",
-    "createdDateTime": "String (timestamp)",
-    "permissionsCreepIndex": {
-      "@odata.type": "microsoft.graph.permissionsCreepIndex"
-    },
-    "lastActiveDateTime": "String (timestamp)",
-    "actionSummary": {
-      "@odata.type": "microsoft.graph.actionSummary"
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/gcp/findings/graph.inactiveGcpServiceAccountFinding",
+  "value": [
+    {
+      "@odata.type": "graph.inactiveGcpServiceAccountFinding",
+      "id": "aW5hY3RpdmVTZXJ2aWNlQWNjb3VudEZpbmRpbmcxMDAwMQ",
+      "identity": {
+        "@odata.type": "graph.gcpServiceAccount",
+        "id": "Z2VldGEtc2VydmljZWFjY291bnQxQGNhcmJpZGUtYm9uc2FpLTIwNTAxNy5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbQ==",
+        "externalId": "geeta-serviceaccount1@carbide-bonsai-205017.iam.gserviceaccount.com",
+        "displayName": "geeta-serviceaccount1",
+        "source": {
+          "@odata.type": "graph.gsuiteSource",
+          "identityProviderType": "gsuite",
+          "domain": "carbide-bonsai-205017"
+        },
+        "authorizationSystem": {
+          "@odata.type": "graph.gcpAuthorizationSystem",
+          "id": "{Id}",
+          "authorizationSystemId": "carbide-bonsai-205017",
+          "authorizationSystemName": "ck-staging",
+          "authorizationSystemType": "gcp"
+        }
+      },
+      "actionSummary": {
+        "assigned": 4631,
+        "exercised": 0,
+        "available": 4631
+      },
+      "permissionsCreepIndex": {
+        "score": 82
+      },
+      "createdDateTime": "2020-10-11T20:11:45.671Z",
+      "identityDetails": {
+        "createdDateTime": "2020-04-12T20:34:24Z",
+        "lastActiveDateTime": "2020-10-30T03:21:05Z"
+      }
     }
-  }
+  ]
 }
 ```
-

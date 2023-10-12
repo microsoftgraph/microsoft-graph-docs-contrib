@@ -1,9 +1,9 @@
 ---
 title: "inactiveGcpServiceAccountFinding: aggregatedSummary"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -23,7 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|**SERVICENOWAPI**|
 
-
 ## HTTP request
 
 <!-- {
@@ -31,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.inactiveGcpServiceAccountFinding not found/aggregatedSummary
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveGcpServiceAccountFinding/aggregatedSummary
 ```
 
 ## Function parameters
@@ -40,7 +39,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|authorizationSystemIds|String collection|**TODO: Add Description**|
+|authorizationSystemIds|String collection|list authorization systems|
 
 
 ## Request headers
@@ -55,6 +54,8 @@ Do not supply a request body for this method.
 
 If successful, this function returns a `200 OK` response code and a [permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md) in the response body.
 
+If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the LIST method filter uses a bad key.
+
 ## Examples
 
 ### Request
@@ -65,9 +66,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.inactiveGcpServiceAccountFinding/aggregatedSummary(authorizationSystemIds=[
-  "String"
-])
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.inactiveGcpServiceAccountFinding/aggregatedSummary
 ```
 
 

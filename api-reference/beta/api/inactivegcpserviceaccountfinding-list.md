@@ -1,9 +1,9 @@
 ---
 title: "List inactiveGcpServiceAccountFindings"
 description: "Get a list of the inactiveGcpServiceAccountFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Not supported|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|**SERVICENOWAPI**|
-
 
 ## HTTP request
 
@@ -93,4 +92,3 @@ Content-Type: application/json
   ]
 }
 ```
-
