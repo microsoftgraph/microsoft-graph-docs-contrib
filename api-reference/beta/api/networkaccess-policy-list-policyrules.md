@@ -96,7 +96,6 @@ GET https://graph.microsoft.com/beta/networkaccess/forwardingPolicies/{forwardin
 
 ---
 
-
 ### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
