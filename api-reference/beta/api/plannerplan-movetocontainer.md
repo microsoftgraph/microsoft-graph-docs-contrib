@@ -1,19 +1,19 @@
 ---
-title: "Move a planner plan from User to Group container"
-description: "Move a **plannerPlan** from User to Group container"
+title: "Move plan across containers"
+description: "Move a **plannerPlan** object from User to Group plannerPlanContainer"
 ms.localizationpriority: medium
 author: "vasrinwork"
 ms.prod: "planner"
 doc_type: apiPageType
 ---
 
-# Move a [plannerPlan](../resources/plannerplan.md) from a User to Group [plannerPlanContainer](../resources/plannerplancontainer.md)
+# Move plan across containers
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Plans can currently be moved from a User container type to a group container type.
+Move a **plannerPlan** object from User to Group [plannerPlanContainer](../resources/plannerplancontainer.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,7 +25,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Application | Tasks.Read.All, Tasks.ReadWrite.All |
 
 ## HTTP request
-
 <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/planner/plans/planId/moveToContainer
@@ -43,18 +42,16 @@ In the request body, supply a JSON representation of the [plannerPlanContainer](
 
 ## Response
 
-If successful, this API returns a `200 Ok` response code and a [plannerPlan](../resources/plannerplan.md) object in the response body.
+If successful, this API returns a `200 OK` response code and a [plannerPlan](../resources/plannerplan.md) object in the response body.
 
-## Examples
-
+## Example
 ### Request
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",
   "name": "plannerplan_move_to_container_"
-}
--->
-
+}-->
 ```http
 POST https://graph.microsoft.com/beta/planner/plans/planId/moveToContainer
 Content-type: application/json
@@ -69,14 +66,13 @@ If-Match: "string"
 ```
 
 ### Response
-**Note:** The response object shown here might be shortened for readability.
+The following is an example of the response. **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.plannerPlan"
-}
--->
-``` http
+}-->
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -90,7 +86,6 @@ Content-Type: application/json
         "type": "group",
         "url": "https://graph.microsoft.com/beta/groups/groupId"
 
-    },
-    //other plan properties": "..."
+    }
 }
 ```
