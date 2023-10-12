@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a [simulation](.
 
 ### Example 1: Get an attack simulation campaign
 
-### Request
+#### Request
 
 The following is an example of a request.
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulations/f1b13
 
 ---
 
-### Response
+#### Response
 
 The following is an example of the response.
 
@@ -153,7 +153,7 @@ The following is an example of a request.
 -->
 ``` http
 GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/includedAccountTarget
----
+```
 
 #### Response
 
@@ -186,6 +186,7 @@ The following example shows how to get excluded account targets (users) for an a
 #### Request
 
 The following is an example of a request.
+
 <!-- {
   "blockType": "request",
   "name": "get_simulation_excludedAccountTarget"
@@ -194,7 +195,6 @@ The following is an example of a request.
 ``` http
 GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/excludedAccountTarget
 ```
-
 
 #### Response
 
