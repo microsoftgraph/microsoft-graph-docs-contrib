@@ -182,8 +182,8 @@ The following is a JSON representation of the resource.
     "platform": {"@odata.type": "microsoft.graph.payloadDeliveryPlatform"},
     "predictedCompromiseRate": "Double",
     "simulationAttackType": {"@odata.type": "microsoft.graph.simulationAttackType"},
-    "source": {"@odata.type": "microsoft.graph.simulationContentSource"},
-    "status": {"@odata.type": "microsoft.graph.simulationContentStatus"},
+    "source": "String",
+    "status": "String",
     "technique": {"@odata.type": "microsoft.graph.simulationAttackType"},
     "theme": "String"
 }
