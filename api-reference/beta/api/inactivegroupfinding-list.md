@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the [inactiveGroupFinding](../resources/inactivegroupfinding.md) objects and their properties.
-You want to view the inactive groups in an AWS account, Azure subscription, GCP project.
+You want to view the inactive groups in your AWS, Azure, or GCP cloud environments.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -76,7 +76,7 @@ The following is an example of a request.
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.inactiveGroupFinding?$filter=group/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.inactiveGroupFinding
 ```
 
 ### Response
