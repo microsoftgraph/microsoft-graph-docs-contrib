@@ -30,6 +30,9 @@ To access the Microsoft Graph activity logs, you need the following privileges.
 
 ## What data is available in the Microsoft Graph activity logs?
 
+> [!WARNING]
+> The current field name "IpAddress" will change to "IPAddress" during public preview. Any queries referencing this field will need to be updated when this change is released.
+
 The following data relating to API requests is available for Microsoft Graph activity logs on the Logs Analytics interface.
 
 [!INCLUDE [microsoftgraphactivitylogs-include](~/../azure-reference-other/azure-monitor-ref/includes/microsoftgraphactivitylogs-include.md)]
