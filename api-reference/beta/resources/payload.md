@@ -164,15 +164,15 @@ The following is a JSON representation of the resource.
 ``` json
 {
     "@odata.type": "#microsoft.graph.payload",
-    "brand": {"@odata.type": "microsoft.graph.payloadBrand"},
-    "complexity": {"@odata.type": "microsoft.graph.payloadComplexity"},
+    "brand": "String",
+    "complexity": "String",
     "createdBy": {"@odata.type": "microsoft.graph.emailIdentity"},
     "createdDateTime": "String (timestamp)",
     "description": "String",
     "detail": {"@odata.type": "microsoft.graph.payloadDetail"},
     "displayName": "String",
     "id": "String (identifier)",
-    "industry": {"@odata.type": "microsoft.graph.payloadIndustry"},
+    "industry": "String",
     "isAutomated": "Boolean",
     "isControversial": "Boolean",
     "isCurrentEvent": "Boolean",
@@ -187,7 +187,7 @@ The following is a JSON representation of the resource.
     "source": {"@odata.type": "microsoft.graph.simulationContentSource"},
     "status": {"@odata.type": "microsoft.graph.simulationContentStatus"},
     "technique": {"@odata.type": "microsoft.graph.simulationAttackType"},
-    "theme": {"@odata.type": "microsoft.graph.payloadTheme"}
+    "theme": "String"
 }
 ```
 
