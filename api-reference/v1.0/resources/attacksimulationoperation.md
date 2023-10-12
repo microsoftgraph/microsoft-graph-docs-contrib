@@ -71,9 +71,7 @@ The following is a JSON representation of the resource.
     },
     "statusDetail": "String",
     "tenantId": "String",
-    "type": {
-        "@odata.type": "microsoft.graph.attackSimulationOperationType"
-    }
+    "type": "
 }
 ```
 
