@@ -15,6 +15,7 @@ The following table lists the latency to expect between an event happening in th
 |:------------------------|:---------------------|:----------------|
 | [alert][] <sup>1</sup>  | Less than 3 minutes  | 5 minutes       |
 | [callRecord][]          | Less than 15 minutes | 60 minutes      |
+| [callRecording][]       | Less than 10 seconds | 60 minutes      |
 | [callTranscript][]      | Less than 10 seconds | 60 minutes      |
 | [channel][]             | Less than 10 seconds | 60 minutes      |
 | [chat][]                | Less than 10 seconds | 60 minutes      |
@@ -58,3 +59,4 @@ The following table lists the latency to expect between an event happening in th
 [team]: /graph/api/resources/team
 [onlineMeeting]: /graph/api/resources/onlinemeeting
 [callTranscript]: /graph/api/resources/calltranscript
+[callRecording]: /graph/api/resources/callrecording

@@ -7,7 +7,7 @@ ms.reviewer: jackson.woods
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20
-ms.date: 05/25/2023
+ms.date: 09/08/2023
 ---
 
 # Get access without a user
@@ -39,11 +39,11 @@ For an app to get authorization and access to Microsoft Graph using the client c
 
 ## 1. Register the app
 
-Before the app can use the Microsoft identity platform endpoint or call Microsoft Graph, it must be properly registered. [Follow the steps to register your app](./auth-register-app-v2.md) on the Azure portal.
+Before the app can use the Microsoft identity platform endpoint or call Microsoft Graph, it must be properly registered. [Follow the steps to register your app](./auth-register-app-v2.md) on the Microsoft Entra admin center.
 
 From the app registration, save the following values:
 
-- The application ID (referred to as Object ID on the Azure portal) assigned by the app registration portal.
+- The application ID (referred to as Object ID on the Microsoft Entra admin center) assigned by the app registration portal.
 - A client secret (application password), a certificate, or a federated identity credential.
 - A redirect URI for the app to receive token responses from Azure AD.
 - A redirect URI for the service to receive admin consent responses if the app implements functionality to request administrator consent.
@@ -52,7 +52,7 @@ From the app registration, save the following values:
 
 Microsoft Graph exposes [application permissions](./permissions-overview.md#application-permissions) for apps that call Microsoft Graph under their own identity. These permissions always require administrator consent.
 
-You pre-configure the application permissions the app needs when you register the app. An administrator can consent to these permissions either using the [Azure portal](https://portal.azure.com) when they install the app in their organization, or you can provide a sign-up experience in the app through which administrators can consent to the permissions you configured. Once Azure AD records the administrator consent, the app can request tokens without having to request consent again.
+You pre-configure the application permissions the app needs when you register the app. An administrator can consent to these permissions either using the [Microsoft Entra admin center](https://entra.microsoft.com) when they install the app in their organization, or you can provide a sign-up experience in the app through which administrators can consent to the permissions you configured. Once Azure AD records the administrator consent, the app can request tokens without having to request consent again.
 
 To configure application permissions for the app in the [Azure app registrations portal](https://go.microsoft.com/fwlink/?linkid=2083908), follow these steps:
 
@@ -71,7 +71,7 @@ The following screenshot shows the **Select Permissions** dialog box for Microso
 
 ## 3. Request administrator consent
 
-Administrators can grant the permissions your app needs at the [Azure portal](https://portal.azure.com). However, when you don't have access to the Azure portal, you can provide a sign-up experience for administrators by using the Microsoft identity platform `/adminconsent` endpoint.
+Administrators can grant the permissions your app needs at the [Microsoft Entra admin center](https://entra.microsoft.com). However, when you don't have access to the Microsoft Entra admin center, you can provide a sign-up experience for administrators by using the Microsoft identity platform `/adminconsent` endpoint.
 
 > [!IMPORTANT]
 > 

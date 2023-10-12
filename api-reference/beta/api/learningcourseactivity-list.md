@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get a list of the [learningCourseActivity](../resources/learningcourseactivity.md) objects (assigned or self-initiated) for a user.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -84,6 +86,10 @@ GET https://graph.microsoft.com/beta/users/7ba2228a-e020-11ec-9d64-0242ac120002/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-learningcourseactivity-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-learningcourseactivity-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

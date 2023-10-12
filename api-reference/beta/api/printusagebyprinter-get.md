@@ -18,6 +18,8 @@ Retrieve a [printer](../resources/printer.md)'s usage summary for a particular t
 
 For descriptions of each of the endpoints, see [printUsageByPrinter](../resources/printUsageByPrinter.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -66,6 +68,10 @@ GET https://graph.microsoft.com/beta/reports/dailyPrintUsageByPrinter/016b5565-3
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printusagebyprinter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-printusagebyprinter-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

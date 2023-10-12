@@ -18,6 +18,8 @@ Create an online meeting on behalf of a user.
 > [!TIP]
 > This API creates a standalone meeting that is not associated with any event on the user's calendar; therefore, meetings created via this API will not show on the user's calendar.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -39,7 +41,7 @@ POST /users/{userId}/onlineMeetings
 ```
 
 > [!NOTE]
->- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
+>- **userId** is the object ID of a user in [Microsoft Entra admin center > user management page](https://entra.microsoft.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [Allow applications to access online meetings on behalf of a user](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## Request headers
 
@@ -49,7 +51,7 @@ POST /users/{userId}/onlineMeetings
 | Content-type    | application/json. Required. |
 | Accept-Language | Language. Optional.         |
 
-If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header. The default content will be in English.
+If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header. The default content is in English.
 
 ## Request body
 In the request body, supply a JSON representation of an [onlineMeeting](../resources/onlinemeeting.md) object.
@@ -67,7 +69,7 @@ If successful, this method returns a `201 Created` response code and an [onlineM
 
 #### Request
 
-The following is an example of a request.
+Here's an example  of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -87,6 +89,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-onlinemeeting-user-token-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-onlinemeeting-user-token-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -117,7 +123,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -180,115 +186,14 @@ Content-Type: application/json
     }
 ```
 
-### Example 2: Create a Microsoft Teams live event with a user token
+
+### Example 2: Create an online meeting that requires a passcode
+
+The following example shows how to add a passcode to a meeting. The passcode is used when you join a meeting with a **joinMeetingId**. For more information, see [joinMeetingIdSettings](../resources/joinmeetingidsettings.md).
 
 #### Request
 
-The following is an example of a request.
-
-```http
-POST https://graph.microsoft.com/beta/me/onlineMeetings
-Content-Type: application/json
-
-{
-  "subject":"User Token Live Event",
-  "startDateTime":"2020-12-02T14:30:34.2444915+00:00",
-  "endDateTime":"2020-12-02T15:00:34.2464912+00:00",
-  "isBroadcast": true,
-  "broadcastSettings": {
-    "allowedAudience": "everyone",
-    "isRecordingEnabled": true,
-    "isAttendeeReportEnabled": true
-  }
-}
-```
-
-#### Response
-
-The following is an example of the response.
-
-> **Note:** The response object shown here has been shortened for readability. All the properties will be returned from an actual call.
-
-```json
-{
-  "id": "dc17674c-81d9-4adb-bfb2-8fa442e4622_19:meeting_MGQ4MDDYxODYzMmY2@thread.v2",
-  "creationDateTime": "2020-12-02T14:30:34.2444915Z",
-  "startDateTime": "2020-09-29T22:35:31.389759Z",
-  "endDateTime": "2020-12-02T15:00:34.2464912Z",
-  "joinWebUrl": "(redacted)",
-  "subject": "User Token Live Event",
-  "autoAdmittedUsers": "EveryoneInCompany",
-  "isEntryExitAnnounced": true,
-  "allowedPresenters": "organization",
-  "videoTeleconferenceId": "(redacted)",
-  "participants": {
-    "organizer": {
-      "upn": "(redacted)",
-      "role": "producer",
-      "identity": {
-        "user": {
-          "id": "dc174c-81d9-4adb-bfb2-8f6a4622",
-          "displayName": null,
-          "tenantId": "909581-5130-43e9-88f3-fccde38",
-          "identityProvider": "AAD"
-        }
-      }
-    },
-    "attendees": [
-      {
-        "upn": "(redacted)",
-        "role": "producer",
-        "identity": {
-          "user": {
-            "id": "dc174c-81d9-4adb-bfb2-8442e4622",
-            "displayName": null,
-            "tenantId": "909581-5130-43e9-88f3-fcb3cde38",
-            "identityProvider": "AAD"
-          }
-        }
-      }
-    ],
-    "producers": [
-      {
-        "upn": "(redacted)",
-        "role": "producer",
-        "identity": {
-          "user": {
-            "id": "d7674c-81d9-4adb-bfb2-8f6a4622",
-            "displayName": null,
-            "tenantId": "909c81-5130-43e9-88f3-fcbcde38",
-            "identityProvider": "AAD"
-          }
-        }
-      }
-    ],
-    "contributors": []
-  },
-  "lobbyBypassSettings": {
-    "scope": "organization",
-    "isDialInBypassEnabled": false
-  },
-  "isBroadcast": true,
-  "broadcastSettings": {
-    "allowedAudience": "organization",
-    "isRecordingEnabled": true,
-    "isAttendeeReportEnabled": true
-  },
-  "joinMeetingIdSettings": {
-    "isPasscodeRequired": false,
-    "joinMeetingId": "1234567890",
-    "passcode": null
-  }
-}
-```
-
-### Example 3: Create an online meeting that requires a passcode
-
-The following example shows how to add a passcode to a meeting. The passcode is used when you join a meeting with a **joinMeetingId**. For more details, see [joinMeetingIdSettings](../resources/joinmeetingidsettings.md).
-
-#### Request
-
-The following is an example of a request.
+Here's an example  of a request.
 
 >**Note:** The passcode is automatically generated and a custom passcode is not supported.
 
@@ -317,6 +222,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-online-meeting-with-passcode-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-online-meeting-with-passcode-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-online-meeting-with-passcode-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -334,7 +243,7 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-online-meeting-with-passcode-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -345,7 +254,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -400,13 +309,13 @@ Content-Type: application/json
 ```
 
 
-### Example 4: Create an online meeting that does not require a passcode
+### Example 3: Create an online meeting that doesn't require a passcode
 
-When **isPasscodeRequired** is set to `false` or when **joinMeetingIdSettings** is not specified in the request, the generated online meeting will not have a passcode.
+When **isPasscodeRequired** is set to `false` or when **joinMeetingIdSettings** isn't specified in the request, the generated online meeting won't have a passcode.
 
 #### Request
 
-The following is an example of a request.
+Here's an example  of a request.
 
 
 # [HTTP](#tab/http)
@@ -431,6 +340,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-online-meeting-without-passcode-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-online-meeting-without-passcode-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -474,7 +387,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

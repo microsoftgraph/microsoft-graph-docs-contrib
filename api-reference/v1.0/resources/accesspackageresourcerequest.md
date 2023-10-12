@@ -27,7 +27,7 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |id|String| Read-only.|
 |requestType|accessPackageRequestType|The type of the request. Use `adminAdd` to add a resource, if the caller is an administrator or resource owner, `adminUpdate` to update a resource, or `adminRemove` to remove a resource. |
-|state|accessPackageRequestState| The outcome of whether the service was able to add the resource to the catalog.  The value is `delivered` if the resource was added or removed. Read-only.|
+|state|accessPackageRequestState| The outcome of whether the service was able to add the resource to the catalog.  The value is `delivered` if the resource was added or removed, and `deliveryFailed` if it could not be added or removed. Read-only.|
 
 ## Relationships
 

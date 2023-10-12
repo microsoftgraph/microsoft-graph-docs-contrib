@@ -1,6 +1,6 @@
 ---
 title: "getTopMobileApps function"
-description: ""
+description: "Intune Shared Mobileapp Gettopmobileapps Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

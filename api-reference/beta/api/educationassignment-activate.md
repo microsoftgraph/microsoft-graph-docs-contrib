@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Activate an `inactive` [educationAssignment](../resources/educationassignment.md) to signal that the assignment has further action items for teachers and students. This action can only be performed by a teacher on currently inactive assignments.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -64,6 +66,10 @@ POST https://graph.microsoft.com/beta/education/classes/ffac078e-1b63-42d0-bc2a-
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-activateassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-activateassignment-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/post-activateassignment-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -78,6 +84,10 @@ POST https://graph.microsoft.com/beta/education/classes/ffac078e-1b63-42d0-bc2a-
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/post-activateassignment-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-activateassignment-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

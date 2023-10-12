@@ -19,6 +19,8 @@ For more information about how to handle unmute operations, see [unmuteParticipa
 
 > **Note:** This method is only supported for group calls.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 | Permission type                        | Permissions (from least to most privileged) |
@@ -94,6 +96,10 @@ Content-Length: 46
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/call-unmute-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/call-unmute-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

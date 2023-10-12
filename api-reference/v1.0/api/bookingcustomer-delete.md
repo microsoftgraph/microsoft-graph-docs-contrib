@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Delete the specified [bookingCustomer](../resources/bookingcustomer.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,17 +40,17 @@ DELETE /solutions/bookingBusinesses/{id}/customers/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -84,6 +86,10 @@ DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunch
 [!INCLUDE [sample-code](../includes/snippets/php/bookingcustomerdelete-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/bookingcustomerdelete-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/bookingcustomerdelete-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -92,7 +98,7 @@ DELETE https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunch
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

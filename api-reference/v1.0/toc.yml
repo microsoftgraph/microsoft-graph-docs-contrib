@@ -144,6 +144,8 @@ items:
             href: /graph/migrate-exchange-web-services-authentication?context=graph/api/1.0
           - name: API mapping
             href: /graph/migrate-exchange-web-services-api-mapping?context=graph/api/1.0
+      - name: Outlook REST APIs
+        href: /outlook/rest/compare-graph?context=graph/context
   - name: Use SDKs
     items:
       - name: Overview
@@ -298,6 +300,8 @@ items:
             href: /graph/toolkit/customize-components/disambiguation?context=graph/api/1.0
       - name: Upgrading to v3
         href: /graph/toolkit/upgrade?context=graph/api/1.0
+  - name: Microsoft Graph activity logs (preview)
+    href: /graph/microsoft-graph-activity-logs-overview?context=graph/api/1.0
   - name: Configure Connected Services
     displayName: Configure Connected Services in Visual Studio
     href: /graph/office-365-connected-services?context=graph/api/1.0
@@ -958,10 +962,10 @@ items:
                       - name: Get available extension properties
                         href: api/directoryobject-getavailableextensionproperties.md
               - name: Federated identity credentials
-                displayName: Workload identity federation, workload identities
                 items:
                   - name: Overview
                     href: resources/federatedidentitycredentials-overview.md
+                    displayName: Workload identity federation, workload identities
                   - name: Federated identity credentials
                     href: resources/federatedidentitycredential.md
                     items:
@@ -5091,6 +5095,8 @@ items:
                 href: api/driveitem-update.md
               - name: Delete item
                 href: api/driveitem-delete.md
+              - name: Permanently delete item
+                href: api/driveitem-permanentdelete.md
               - name: Restore item
                 href: api/driveitem-restore.md
               - name: Move item
@@ -5158,7 +5164,6 @@ items:
               - name: Delete permission
                 href: api/permission-delete.md
       - name: Identity and access
-        displayName: Azure AD, Microsoft identity platform, Identity and access
         items:
           - name: Overview
             displayName: Azure AD, Microsoft identity platform, Identity and access
@@ -5675,7 +5680,7 @@ items:
                       - name: Reprocess
                         href: api/accesspackageassignmentrequest-reprocess.md
                       - name: Resume
-                        href: api/accesspackageassignmentrequest-resume.md  
+                        href: api/accesspackageassignmentrequest-resume.md
                   - name: Access package catalog
                     href: resources/accesspackagecatalog.md
                     items:
@@ -5694,7 +5699,6 @@ items:
                       - name: List resource roles
                         href: api/accesspackagecatalog-list-resourceroles.md
                   - name: Access package custom workflow extension
-                    displayName: Custom authentication extensions
                     items:
                     - name: Assignment request workflow extension
                       href: resources/accesspackageassignmentrequestworkflowextension.md
@@ -5709,19 +5713,19 @@ items:
                         href: api/accesspackageassignmentrequestworkflowextension-update.md
                       - name: Delete
                         href: api/accesspackageassignmentrequestworkflowextension-delete.md
-                  - name: Assignment workflow extension
-                    href: resources/accesspackageassignmentworkflowextension.md
-                    items:
-                    - name: List
-                      href: api/accesspackagecatalog-list-accesspackagecustomworkflowextensions.md
-                    - name: Create
-                      href: api/accesspackagecatalog-post-accesspackagecustomworkflowextensions.md
-                    - name: Get
-                      href: api/accesspackageassignmentworkflowextension-get.md
-                    - name: Update
-                      href: api/accesspackageassignmentworkflowextension-update.md
-                    - name: Delete
-                      href: api/accesspackageassignmentworkflowextension-delete.md
+                    - name: Assignment workflow extension
+                      href: resources/accesspackageassignmentworkflowextension.md
+                      items:
+                      - name: List
+                        href: api/accesspackagecatalog-list-accesspackagecustomworkflowextensions.md
+                      - name: Create
+                        href: api/accesspackagecatalog-post-accesspackagecustomworkflowextensions.md
+                      - name: Get
+                        href: api/accesspackageassignmentworkflowextension-get.md
+                      - name: Update
+                        href: api/accesspackageassignmentworkflowextension-update.md
+                      - name: Delete
+                        href: api/accesspackageassignmentworkflowextension-delete.md
                   - name: Connected organization
                     href: resources/connectedorganization.md
                     items:
@@ -5779,11 +5783,30 @@ items:
                     items:
                       - name: List
                         href: api/entitlementmanagement-list-resourceenvironments.md
+                  - name: Access package resource
+                    href: resources/accesspackageresource.md
+                    items:
+                      - name: List
+                        href: api/accesspackagecatalog-list-resources.md
+                  - name: Access package resource role
+                    href: resources/accesspackageresourcerole.md
+                    items:
+                      - name: List
+                        href: api/accesspackagecatalog-list-resourceroles.md
+                  - name: Access package resource role scope
+                    href: resources/accesspackageresourcerolescope.md
+                    items:
+                      - name: List
+                        href: api/accesspackage-list-resourcerolescopes.md
+                      - name: Create
+                        href: api/accesspackage-post-resourcerolescopes.md
+                      - name: Delete
+                        href: api/accesspackage-delete-resourcerolescopes.md
               - name: Lifecycle workflows
-                displayName: LCW, Identity Governance, Joiner, Mover, Leaver
                 items:
                   - name: Overview
                     href: resources/identitygovernance-lifecycleworkflows-overview.md
+                    displayName: LCW, Identity Governance, Joiner, Mover, Leaver
                   - name: Workflow
                     items:
                       - name: Workflow
@@ -5835,7 +5858,6 @@ items:
                           - name: Update task
                             href: api/identitygovernance-task-update.md
                       - name: Reports
-                        displayName: Lifecycle Workflows
                         items:
                           - name: Overview
                             displayName: Lifecycle Workflows reporting
@@ -5919,10 +5941,10 @@ items:
                       - name: Update
                         href: api/identitygovernance-lifecyclemanagementsettings-update.md
               - name: Privileged Identity Management
-                displayName: Privileged Identity Management, PIM, Identity Governance
                 items:
                   - name: PIM for Azure AD Roles
                     href: resources/privilegedidentitymanagementv3-overview.md
+                    displayName: Privileged Identity Management, PIM, Identity Governance
                     items:
                       - name: Assignment schedule requests
                         href: resources/unifiedroleassignmentschedulerequest.md
@@ -7570,7 +7592,7 @@ items:
                   - name: Schema
                     href: resources/externalconnectors-schema.md
                   - name: Create
-                    href: api/externalconnectors-schema-create.md
+                    href: api/externalconnectors-externalconnection-patch-schema.md
                   - name: Get
                     href: api/externalconnectors-schema-get.md
               - name: External activity
@@ -7586,7 +7608,7 @@ items:
                   - name: External item
                     href: resources/externalconnectors-externalitem.md
                   - name: Create
-                    href: api/externalconnectors-externalitem-create.md
+                    href: api/externalconnectors-externalconnection-put-items.md
                   - name: Get
                     href: api/externalconnectors-externalitem-get.md
                   - name: Update
@@ -7614,7 +7636,7 @@ items:
                   - name: Create
                     href: api/externalconnectors-externalgroup-post-members.md
                   - name: Delete
-                    href: api/externalconnectors-identity-delete.md
+                    href: api/externalconnectors-externalgroupmember-delete.md
       - name: Security
         items:
           - name: Overview
@@ -7984,81 +8006,143 @@ items:
                 items:
                   - name: Article
                     href: resources/security-article.md
-                  - name: Get
+                  - name: Get article
                     href: api/security-article-get.md
-                  - name: List
-                    href: api/security-article-list.md
+                  - name: List articles
+                    href: api/security-threatintelligence-list-articles.md
                   - name: List article indicators
                     href: api/security-article-list-indicators.md
               - name: Article indicator
                 items:
                   - name: Article indicator
                     href: resources/security-articleindicator.md
-                  - name: Get
+                  - name: List article indicators
+                    href: api/security-article-list-indicators.md
+                  - name: Get article indicator
                     href: api/security-articleindicator-get.md
               - name: Host
                 items:
                   - name: Host
                     href: resources/security-host.md
-                  - name: Get
+                  - name: Get host
                     href: api/security-host-get.md
+                  - name: Get host reputation
+                    href: api/security-host-get-reputation.md
+                  - name: Get WHOIS record
+                    href: api/security-whoisrecord-get.md
                   - name: List components
                     href: api/security-host-list-components.md
                   - name: List cookies
                     href: api/security-host-list-cookies.md
+                  - name: List host pairs for a host
+                    href: api/security-host-list-hostpairs.md
+                  - name: List host pairs for a host as child
+                    href: api/security-host-list-parenthostpairs.md
+                  - name: List host pairs for a host as parent
+                    href: api/security-host-list-childhostpairs.md
+                  - name: List host SSL certificates
+                    href: api/security-host-list-sslcertificates.md
                   - name: List passive DNS
                     href: api/security-host-list-passivedns.md
                   - name: List passive DNS reverse
                     href: api/security-host-list-passivednsreverse.md
-                  - name: Get reputation
-                    href: api/security-host-get-reputation.md
+                  - name: List subdomains
+                    href: api/security-host-list-subdomains.md
                   - name: List trackers
                     href: api/security-host-list-trackers.md
               - name: Host component
                 items:
                   - name: Host component
                     href: resources/security-hostcomponent.md
+                  - name: List
+                    href: api/security-host-list-components.md
                   - name: Get
                     href: api/security-hostcomponent-get.md
               - name: Host cookie
                 items:
                   - name: Host cookie
                     href: resources/security-hostcookie.md
+                  - name: List
+                    href: api/security-host-list-cookies.md
                   - name: Get
                     href: api/security-hostcookie-get.md
+              - name: Host pair
+                items:
+                  - name: Host pair
+                    href: resources/security-hostpair.md
+                  - name: Get
+                    href: api/security-hostpair-get.md
+                  - name: List for a host
+                    href: api/security-host-list-hostpairs.md
+                  - name: List for a host as child
+                    href: api/security-host-list-parenthostpairs.md
+                  - name: List for a host as parent
+                    href: api/security-host-list-childhostpairs.md
+              - name: Host SSL certificate
+                items:
+                - name: Host SSL certificate
+                  href: resources/security-hostsslcertificate.md
+                - name: List
+                  href: api/security-host-list-sslcertificates.md
+                - name: Get
+                  href: api/security-hostsslcertificate-get.md
               - name: Host tracker
                 items:
                   - name: Host tracker
                     href: resources/security-hosttracker.md
+                  - name: List
+                    href: api/security-host-list-trackers.md
                   - name: Get
                     href: api/security-hosttracker-get.md
               - name: Intelligence profile
                 items:
                   - name: Intelligence profile
                     href: resources/security-intelligenceprofile.md
-                  - name: Get
+                  - name: Get intelligence profile
                     href: api/security-intelligenceprofile-get.md
-                  - name: List
-                    href: api/security-intelligenceprofile-list.md
-                  - name: List intelligence profile indicators
+                  - name: List intelligence profiles
+                    href: api/security-threatintelligence-list-intelprofiles.md
+                  - name: List indicators
                     href: api/security-intelligenceprofile-list-indicators.md
               - name: Intelligence profile indicator
                 items:
                   - name: Intelligence profile indicator
                     href: resources/security-intelligenceprofileindicator.md
-                  - name: Get
+                  - name: List indicators
+                    href: api/security-intelligenceprofile-list-indicators.md
+                  - name: Get intelligence profile indicator
                     href: api/security-intelligenceprofileindicator-get.md
               - name: Passive DNS record
                 items:
                   - name: Passive DNS record
                     href: resources/security-passivednsrecord.md
-                  - name: Get
+                  - name: Get passive DNS record
                     href: api/security-passivednsrecord-get.md
+                  - name: List passive DNS
+                    href: api/security-host-list-passivedns.md
+                  - name: List passive DNS reverse
+                    href: api/security-host-list-passivednsreverse.md
+              - name: SSL certificate
+                items:
+                - name: SSL certificate
+                  href: resources/security-sslcertificate.md
+                - name: List
+                  href: api/security-threatintelligence-list-sslcertificates.md
+                - name: Get
+                  href: api/security-sslcertificate-get.md
+              - name: Subdomain
+                items:
+                  - name: Subdomain
+                    href: resources/security-subdomain.md
+                  - name: List
+                    href: api/security-host-list-subdomains.md
+                  - name: Get
+                    href: api/security-subdomain-get.md
               - name: Vulnerability
                 items:
                   - name: Vulnerability
                     href: resources/security-vulnerability.md
-                  - name: Get
+                  - name: Get vulnerability
                     href: api/security-vulnerability-get.md
                   - name: List vulnerability components
                     href: api/security-vulnerability-list-components.md
@@ -8066,8 +8150,26 @@ items:
                 items:
                   - name: Vulnerability component
                     href: resources/security-vulnerabilitycomponent.md
+                  - name: List
+                    href: api/security-vulnerability-list-components.md
                   - name: Get
                     href: api/security-vulnerabilitycomponent-get.md
+              - name: WHOIS record
+                items:
+                  - name: WHOIS record
+                    href: resources/security-whoisrecord.md
+                  - name: List
+                    href: api/security-threatintelligence-list-whoisrecords.md
+                  - name: Get
+                    href: api/security-whoisrecord-get.md
+              - name: WHOIS history record
+                items:
+                  - name: WHOIS history record
+                    href: resources/security-whoishistoryrecord.md
+                  - name: List
+                    href: api/security-whoisrecord-list-history.md
+                  - name: Get
+                    href: api/security-whoishistoryrecord-get.md
       - name: Sites and lists
         displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
         items:
@@ -8429,11 +8531,23 @@ items:
                         href: api/userteamwork-teamsappinstallation-upgrade.md
                       - name: Remove app for user
                         href: api/userteamwork-delete-installedapps.md
+              - name: App settings
+                items:
+                - name: App settings
+                  href: resources/teamsappsettings.md
+                - name: Get
+                  href: api/teamsappsettings-get.md
+                - name: Update
+                  href: api/teamsappsettings-update.md
               - name: Resource-specific permission grant
                 href: resources/resourcespecificpermissiongrant.md
                 items:
                   - name: List for group
                     href: api/group-list-permissiongrants.md
+                  - name: List for team
+                    href: api/team-list-permissiongrants.md
+                  - name: List for chat
+                    href: api/chat-list-permissiongrants.md
               - name: Tab
                 href: resources/teamstab.md
                 items:
@@ -8595,6 +8709,14 @@ items:
                         items:
                           - name: List
                             href: api/attendancerecord-list.md
+                  - name: Call transcript
+                    items:
+                      - name: Call transcript
+                        href: resources/calltranscript.md
+                      - name: List transcripts
+                        href: api/onlinemeeting-list-transcripts.md
+                      - name: Get transcript
+                        href: api/calltranscript-get.md
                   - name: Online meeting
                     href: resources/onlinemeeting.md
                     items:
@@ -8627,6 +8749,8 @@ items:
                     href: api/presence-setuserpreferredpresence.md
                   - name: Clear user preferred presence
                     href: api/presence-clearuserpreferredpresence.md
+                  - name: Set user status message
+                    href: api/presence-setstatusmessage.md
           - name: Employee learning
             displayName: Viva Learning
             items:
@@ -8721,6 +8845,8 @@ items:
                     href: api/channel-get-members.md
                   - name: Get message reply
                     href: api/chatmessage-get.md
+                  - name: Get primary channel
+                    href: api/team-get-primarychannel.md  
                   - name: List channel messages
                     href: api/channel-list-messages.md
                   - name: List members
@@ -8755,6 +8881,10 @@ items:
                     href: api/chatmessage-softdelete.md
                   - name: Undo message deletion
                     href: api/chatmessage-undosoftdelete.md
+                  - name: Set message reaction
+                    href: api/chatmessage-setreaction.md
+                  - name: Unset message reaction
+                    href: api/chatmessage-unsetreaction.md
               - name: Chat
                 href: resources/chat.md
                 items:
@@ -8798,6 +8928,12 @@ items:
                     href: api/chat-post-pinnedmessages.md
                   - name: Unpin message
                     href: api/chat-delete-pinnedmessages.md
+                  - name: Set message reaction
+                    href: api/chatmessage-setreaction.md
+                  - name: Unset message reaction
+                    href: api/chatmessage-unsetreaction.md
+                  - name: List permission grants
+                    href: api/chat-list-permissiongrants.md
               - name: Chat message
                 href: resources/chatmessage.md
                 items:
@@ -8835,6 +8971,10 @@ items:
                     href: api/chat-post-pinnedmessages.md
                   - name: Unpin message
                     href: api/chat-delete-pinnedmessages.md
+                  - name: Set message reaction
+                    href: api/chatmessage-setreaction.md
+                  - name: Unset message reaction
+                    href: api/chatmessage-unsetreaction.md
               - name: Pinned chat message
                 href: resources/pinnedchatmessageinfo.md
                 items:
@@ -8881,8 +9021,6 @@ items:
                     href: api/teams-list.md
                   - name: List your associated teams
                     href: api/associatedteaminfo-list.md
-                  - name: Get primary channel
-                    href: api/team-get-primarychannel.md
                   - name: Get team photo
                     href: api/profilephoto-get.md
                   - name: Update team photo
@@ -8891,6 +9029,8 @@ items:
                     href: /graph/teams-list-all-teams?context=graph/api/1.0
                   - name: Complete migration for team
                     href: api/team-completemigration.md
+                  - name: List permission grants
+                    href: api/team-list-permissiongrants.md
                   - name: Deleted team
                     href: resources/deletedteam.md
                     items:

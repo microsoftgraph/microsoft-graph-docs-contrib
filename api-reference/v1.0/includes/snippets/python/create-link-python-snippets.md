@@ -4,22 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = CreateLinkPostRequestBody()
-request_body.type = 'view'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.password = 'ThisIsMyPrivatePassword'
+request_body = CreateLinkPostRequestBody(
+	type = "view",
+	password = "ThisIsMyPrivatePassword",
+	scope = "anonymous",
+	retain_inherited_permissions = False,
+)
 
-request_body.scope = 'anonymous'
-
-request_body.retain_inherited_permissions = False
-
-
-
-
-result = await client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').create_link.post(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').create_link.post(body = request_body)
 
 
 ```

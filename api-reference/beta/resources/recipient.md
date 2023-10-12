@@ -4,7 +4,7 @@ description: "Represents information about a user in the sending or receiving en
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: mail
-author: "abheek-das"
+author: "SuryaLashmiS"
 ---
 
 # recipient resource type

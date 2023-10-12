@@ -17,6 +17,8 @@ Get a list of [driveItem](../resources/driveitem.md) objects that have been shar
 
 The **driveItems** returned from the **sharedWithMe** method always include the [**remoteItem**](../resources/remoteitem.md) facet that indicates they are items from a different drive.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -79,6 +81,10 @@ GET https://graph.microsoft.com/beta/me/drive/sharedWithMe
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-driveitems-shared-with-me-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-driveitems-shared-with-me-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -189,6 +195,10 @@ GET https://graph.microsoft.com/beta/drives/987def/items/987def!654
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/drives-get-remoteitem-metadata-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/drives-get-remoteitem-metadata-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

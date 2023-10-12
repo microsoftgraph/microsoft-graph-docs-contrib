@@ -15,6 +15,8 @@ Namespace: microsoft.graph.security
 
 Get the properties and relationships of an [alert](../resources/security-alert.md) in an organization based on the specified alert **id** property.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -67,6 +69,10 @@ GET https://graph.microsoft.com/beta/security/alerts_v2/da637578995287051192_756
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-security-alert-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-security-alert-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-security-alert-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -81,6 +87,10 @@ GET https://graph.microsoft.com/beta/security/alerts_v2/da637578995287051192_756
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-security-alert-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-security-alert-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

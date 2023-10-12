@@ -8,12 +8,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new Microsoft.Graph.Beta.Security.Cases.EdiscoveryCases.Item.ReviewSets.Item.MicrosoftGraphSecurityExport.ExportPostRequestBody
+var requestBody = new Microsoft.Graph.Security.Cases.EdiscoveryCases.Item.ReviewSets.Item.MicrosoftGraphSecurityExport.ExportPostRequestBody
 {
 	OutputName = "Export via API",
 	Description = "Export for the Contoso investigation",
-	ExportOptions = Microsoft.Graph.Beta.Models.Security.ExportOptions.OriginalFiles | Microsoft.Graph.Beta.Models.Security.ExportOptions.Tags,
-	ExportStructure = Microsoft.Graph.Beta.Models.Security.ExportFileStructure.Directory,
+	ExportOptions = Microsoft.Graph.Models.Security.ExportOptions.OriginalFiles | Microsoft.Graph.Models.Security.ExportOptions.Tags,
+	ExportStructure = Microsoft.Graph.Models.Security.ExportFileStructure.Directory,
 };
 await graphClient.Security.Cases.EdiscoveryCases["{ediscoveryCase-id}"].ReviewSets["{ediscoveryReviewSet-id}"].MicrosoftGraphSecurityExport.PostAsync(requestBody);
 

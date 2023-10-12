@@ -36,7 +36,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/resizedRange(de
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |deltarows|Int32|The number of rows by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it|
-|deltaColumns|Int32|The number of columnsby which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.|
+|deltaColumns|Int32|The number of columns by which to expand the bottom-right corner, relative to the current range. Use a positive number to expand the range, or a negative number to decrease it.|
 
 ## Request headers
 | Name       | Description|
@@ -45,7 +45,7 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/resizedRange(de
 | Workbook-Session-Id  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a [workbookRange
 ## Example
 
 ### Request
-The following is an example of the request.
+Here's an example  of the request.
 <!-- {
   "blockType": "request",
   "name": "workbookrange_resizedrange"
@@ -64,7 +64,7 @@ POST https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range/
 ```
 
 ### Response
-The following is an example of the response. 
+Here's an example  of the response. 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

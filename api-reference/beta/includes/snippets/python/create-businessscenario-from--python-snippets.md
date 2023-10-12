@@ -4,20 +4,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = BusinessScenario()
-request_body.@odata_type = '#microsoft.graph.businessScenario'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.display_name = 'Contoso Order Tracking'
+request_body = BusinessScenario(
+	odata_type = "#microsoft.graph.businessScenario",
+	display_name = "Contoso Order Tracking",
+	unique_name = "com.contoso.apps.ordertracking",
+)
 
-request_body.unique_name = 'com.contoso.apps.ordertracking'
-
-
-
-
-result = await client.solutions.busines_scenarios.post(request_body = request_body)
+result = await graph_client.solutions.busines_scenarios.post(body = request_body)
 
 
 ```

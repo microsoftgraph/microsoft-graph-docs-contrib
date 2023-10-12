@@ -15,7 +15,8 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-filterByCurrentUser(on='{on}'), err := graphClient.IdentityGovernance().AccessReviews().Definitions().ByAccessReviewScheduleDefinitionId("accessReviewScheduleDefinition-id").Instances().FilterByCurrentUser(on='{on}')().Get(context.Background(), nil)
+on := "reviewer"
+filterByCurrentUser, err := graphClient.IdentityGovernance().AccessReviews().Definitions().ByAccessReviewScheduleDefinitionId("accessReviewScheduleDefinition-id").Instances().FilterByCurrentUserWithOn(&on).Get(context.Background(), nil)
 
 
 ```

@@ -37,8 +37,8 @@ After an application is granted permissions, everyone with access to the applica
 
 To assign a role to a user:
 
-1. Sign in to the [Azure portal](https://portal.azure.com) (https://portal.azure.com).
-2. Click the icon in the top left to expand the Azure portal menu. Select **Azure Active Directory** > **Users**.
-3. Click the name of the user.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
+2. Expand the **Identity** menu > **Users** > select **All users**.
+3. Select the user.
 4. Choose **Assigned roles**, and then **Add assignment**.
 5. Select the appropriate role, and click **Add**.

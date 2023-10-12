@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Get the list of [queries](../resources/security-ediscoveryreviewsetquery.md) associated with an eDiscovery review set.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -66,6 +68,10 @@ GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ceb
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-ediscoveryreviewsetquery-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-ediscoveryreviewsetquery-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-ediscoveryreviewsetquery-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -80,6 +86,10 @@ GET https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ceb
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-ediscoveryreviewsetquery-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-ediscoveryreviewsetquery-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

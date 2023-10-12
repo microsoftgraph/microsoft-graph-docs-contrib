@@ -21,6 +21,8 @@ For more information about how to handle unmute operations, see [unmuteParticipa
 
 > **Note:** This method is only supported for group calls.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 | Permission type                        | Permissions (from least to most privileged) |
@@ -78,6 +80,10 @@ Content-Length: 46
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/call-unmute-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/call-unmute-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

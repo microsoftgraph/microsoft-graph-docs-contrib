@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 List all [teams](../resources/team.md) in an organization.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -41,7 +43,7 @@ This method supports the `$filter`, `$select`, `$top`, `$skiptoken`, and `$count
 | Accept  | application/json|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,7 +58,7 @@ If successful, this method returns a `200 OK` response code and collection of [t
 
 #### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 
 # [HTTP](#tab/http)
@@ -70,6 +72,10 @@ GET https://graph.microsoft.com/beta/teams
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-teams-in-org-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-teams-in-org-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -99,7 +105,7 @@ GET https://graph.microsoft.com/beta/teams
 ---
 
 #### Response
-The following is an example of a response.
+Here's an example  of a response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -137,7 +143,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 
 # [HTTP](#tab/http)
@@ -152,6 +158,10 @@ GET https://graph.microsoft.com/beta/teams?$filter=startswith(displayName, 'A')&
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-teams-filter-top-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-teams-filter-top-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -182,7 +192,7 @@ GET https://graph.microsoft.com/beta/teams?$filter=startswith(displayName, 'A')&
 
 #### Response
 
-The following is an example of a response.
+Here's an example  of a response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -215,7 +225,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 
 # [HTTP](#tab/http)
@@ -229,6 +239,10 @@ GET https://graph.microsoft.com/beta/teams?$filter=displayName eq 'A Contoso Tea
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-teams-filter-select-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-teams-filter-select-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -258,7 +272,7 @@ GET https://graph.microsoft.com/beta/teams?$filter=displayName eq 'A Contoso Tea
 ---
 
 #### Response
-The following is an example of a response.
+Here's an example  of a response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

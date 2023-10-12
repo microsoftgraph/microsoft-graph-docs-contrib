@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Enumerate lists in a site
+# Get lists in a site
 
 Namespace: microsoft.graph
 
@@ -16,6 +16,8 @@ Get the collection of [lists][] for a [site][].
 
 Lists with the [system][] facet are hidden by default.
 To list them, include `system` in your `$select` statement.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -63,6 +65,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/enum-lists-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/enum-lists-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

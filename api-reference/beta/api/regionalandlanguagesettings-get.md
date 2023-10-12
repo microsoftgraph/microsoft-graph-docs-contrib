@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a user's [regionalAndLanguageSettings](../resources/regionalandlanguagesettings.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -27,10 +29,11 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /settings/regionalAndLanguageSettings
+GET /me/settings/regionalAndLanguageSettings
+GET /users/{user-id | userPrincipalName}/settings/regionalAndLanguageSettings
 ```
 ## Optional query parameters
-You can use `$select` to get specific regionalAndLanguageSettings properties, including those that are not returned by default.
+You can use `$select` to get specific regionalAndLanguageSettings properties, including properties that aren't returned by default.
 
 For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).
 
@@ -40,7 +43,7 @@ For more information on OData query options, see [OData Query Parameters](/graph
 | Authorization  | Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -52,7 +55,7 @@ The following example gets the properties of the signed-in user.
 
 ### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -65,6 +68,10 @@ GET https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-regionalandlanguagesettings-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-regionalandlanguagesettings-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -83,6 +90,10 @@ GET https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 [!INCLUDE [sample-code](../includes/snippets/php/get-regionalandlanguagesettings-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-regionalandlanguagesettings-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-regionalandlanguagesettings-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -91,7 +102,7 @@ GET https://graph.microsoft.com/beta/me/settings/regionalAndLanguageSettings
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -146,7 +157,7 @@ Content-type: application/json
         "languageOverrides": [
             {
                 "languageTag": "fr",
-                "translationBehavior": "Yes" 
+                "translationBehavior": "Yes"
             }
         ],
         "untranslatedLanguages": ["de"]

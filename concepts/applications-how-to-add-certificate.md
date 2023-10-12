@@ -6,14 +6,14 @@ ms.reviewer: saurabh.madan
 ms.localizationpriority: medium
 ms.topic: how-to
 ms.prod: "applications"
-ms.date: 01/24/2023
+ms.date: 09/08/2023
 ---
 
 # Add a certificate to an app using Microsoft Graph
 
 Azure Active Directory (Azure AD) supports three types of credentials to authenticate apps and service principals: *passwords* (app secrets), *certificates*, and *federated identity credentials*. If you can't use federated identity credentials for your app, we strongly recommend that you use certificates instead of secrets.
 
-You can [add or remove certificates using the Azure portal](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). However, in automation scenarios, you may need to automate the certificate rollover for your app or service principal. 
+You can [add or remove certificates using the Microsoft Entra admin center](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). However, in automation scenarios, you may need to automate the certificate rollover for your app or service principal.
 
 This article provides guidance for using Microsoft Graph and PowerShell scripts to update certificate credentials programmatically for an app registration.
 
@@ -278,4 +278,4 @@ ClientTimeout         : 00:05:00
 
 ## Conclusion
 
-You've used Microsoft Graph to update certificate credentials for an app object. This process is a programmatic alternative to using the Azure portal. You can also update certificate credentials for a service principal by following a similar process and calling the `https://graph.microsoft.com/v1.0/servicePrincipals/` endpoint.
+You've used Microsoft Graph to update certificate credentials for an app object. This process is a programmatic alternative to using the Microsoft Entra admin center. You can also update certificate credentials for a service principal by following a similar process and calling the `https://graph.microsoft.com/v1.0/servicePrincipals/` endpoint.

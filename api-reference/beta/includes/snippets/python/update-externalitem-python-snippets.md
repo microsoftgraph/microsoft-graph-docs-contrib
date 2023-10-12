@@ -4,26 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ExternalItem()
-acl_acl1 = Acl()
-acl_acl1.type(AclType.Everyone('acltype.everyone'))
+graph_client = GraphServiceClient(request_adapter)
 
-acl_acl1.value = '67a141d8-cf4e-4528-ba07-bed21bfacd2d'
+request_body = ExternalItem(
+	acl = [
+		Acl(
+			type = AclType.Everyone,
+			value = "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
+			access_type = AccessType.Grant,
+		),
+	]
+)
 
-acl_acl1.accesstype(AccessType.Grant('accesstype.grant'))
-
-
-aclArray []= aclAcl1;
-request_body.acl(aclArray)
-
-
-
-
-
-result = await client.external.connections.by_connection_id('externalConnection-id').items.by_item_id('externalItem-id').put(request_body = request_body)
+result = await graph_client.external.connections.by_connection_id('externalConnection-id').items.by_item_id('externalItem-id').put(body = request_body)
 
 
 ```

@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Get a list of the [retentionEventType](../resources/security-retentioneventtype.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -21,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|RecordsManagement.Read.All, RecordsManagement.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not supported.|
+|Application|RecordsManagement.Read.All, RecordsManagement.ReadWrite.All|
 
 ## HTTP request
 
@@ -66,6 +68,10 @@ GET https://graph.microsoft.com/beta/security/triggerTypes/retentionEventTypes
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-retentioneventtype-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-retentioneventtype-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-retentioneventtype-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -80,6 +86,10 @@ GET https://graph.microsoft.com/beta/security/triggerTypes/retentionEventTypes
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-retentioneventtype-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-retentioneventtype-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

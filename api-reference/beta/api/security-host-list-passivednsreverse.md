@@ -15,7 +15,11 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get a list of [passiveDnsRecord](../resources/security-passivednsrecord.md) resources.
+Get a collection of [passiveDnsRecord](../resources/security-passivednsrecord.md) resources from a reverse passive DNS retrieval. 
+
+A reverse DNS lookup queries the hostname of a [host](../resources/security-host.md) using an IP address.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -75,6 +79,10 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.c
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-passivedns-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-passivedns-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-passivedns-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -89,6 +97,10 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/contoso.c
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-passivedns-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-passivedns-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

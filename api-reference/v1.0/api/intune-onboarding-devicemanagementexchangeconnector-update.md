@@ -112,6 +112,10 @@ Content-length: 490
 [!INCLUDE [sample-code](../includes/snippets/php/intune-onboarding-devicemanagementexchangeconnector-update-update-devicemanagementexchangeconnector-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-onboarding-devicemanagementexchangeconnector-update-update-devicemanagementexchangeconnector-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-onboarding-devicemanagementexchangeconnector-update-update-devicemanagementexchangeconnector-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

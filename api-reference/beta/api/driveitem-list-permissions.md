@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 List the effective sharing permissions on a [driveItem](../resources/driveitem.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Access to sharing permissions
 
 The permissions collection includes potentially sensitive information and may not be available for every caller.
@@ -82,6 +84,10 @@ GET /me/drive/items/{item-id}/permissions
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-permissions-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-item-permissions-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
