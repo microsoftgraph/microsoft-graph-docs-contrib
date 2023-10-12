@@ -1,6 +1,6 @@
 ---
 title: "getConfigurationPolicyNonComplianceSummaryReport action"
-description: ""
+description: "Intune Reporting Devicemanagementreports Getconfigurationpolicynoncompliancesummaryreport Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

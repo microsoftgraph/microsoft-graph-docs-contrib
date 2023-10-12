@@ -1,6 +1,6 @@
 ---
 title: "assign action"
-description: ""
+description: "Intune Shared Devicecompliancepolicy Assign Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

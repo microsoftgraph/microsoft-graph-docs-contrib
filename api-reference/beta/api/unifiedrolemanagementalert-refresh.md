@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Refresh incidents on all security alerts or on a single security alert in Privileged Identity Management (PIM) for Azure AD roles.
+Refresh incidents on all security alerts or on a single security alert in Privileged Identity Management (PIM) for Azure AD roles. This task is a long-running operation and the unifiedRoleManagementAlert object will be updated only when the operation completes.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -67,7 +67,7 @@ For refreshing a single alert, do not specify a request body.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code with a 'Location' header which specifies the URL for polling the operation status.
+If successful, this action returns a `202 Accepted` response code with a **Location** header which specifies the URL for polling the operation status.
 
 ## Examples
 

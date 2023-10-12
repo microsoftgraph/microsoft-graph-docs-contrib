@@ -1,6 +1,6 @@
 ---
 title: "import action"
-description: ""
+description: "Intune Enrollment Importedwindowsautopilotdeviceidentity Import Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

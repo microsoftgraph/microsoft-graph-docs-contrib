@@ -73,6 +73,10 @@ The following is an example of a request.
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{id}/archive
+
+{
+  
+}
 ```
 
 # [C#](#tab/csharp)
@@ -97,10 +101,6 @@ POST https://graph.microsoft.com/v1.0/teams/{id}/archive
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/archive-team-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/archive-team-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
