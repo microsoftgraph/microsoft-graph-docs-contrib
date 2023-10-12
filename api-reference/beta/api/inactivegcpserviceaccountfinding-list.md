@@ -48,6 +48,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [inactiveGcpServiceAccountFinding](../resources/inactivegcpserviceaccountfinding.md) objects in the response body.
 
+If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the LIST method filter uses a bad key.
+
 ## Examples
 
 ### Request
