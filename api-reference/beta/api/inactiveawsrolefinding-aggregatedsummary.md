@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding/aggregatedSummary(authorizationSystemIds=@p1)/$query
-    @p1=[{authorizationSystemIds}]
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding/aggregatedSummary
 ```
 
 ## Function parameters
@@ -65,8 +65,8 @@ The following is an example of a request.
   "name": "inactiveawsrolefindingthis.aggregatedsummary"
 }
 -->
-``` POST https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding/aggregatedSummary(authorizationSystemIds=@p1)/$query
-@p1=[{authorizationSystemIds}]
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding/aggregatedSummary
 ```
 
 
@@ -86,4 +86,3 @@ Content-type: application/json
     "findingsCount": 121
 }
 ```
-

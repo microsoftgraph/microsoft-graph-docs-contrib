@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -29,7 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-```GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding?$filter=identity/authorizationSystem/authorizationSystemId IN [{authorizationSystemIds}]
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/key/findings/graph.inactiveAwsRoleFinding
 ```
 
 ## Optional query parameters
@@ -47,6 +48,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and an [inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md) object in the response body.
 
+If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the key passed into the GET method is invalid.
+
 ## Examples
 
 ### Request
@@ -57,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding
 ```
 
 
@@ -72,21 +75,46 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
-
+Content-type: application/json
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.inactiveAwsRoleFinding",
-    "id": "bba11b43-5584-77a0-cf6b-da70e2338543",
-    "createdDateTime": "String (timestamp)",
-    "permissionsCreepIndex": {
-      "@odata.type": "microsoft.graph.permissionsCreepIndex"
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding",
+  "value": [
+    {
+      "@odata.type": "graph.inactiveAwsRoleFinding",
+      "id": "aW5hY3RpdmVSb2xlRmluZGluZzE",
+      "identity": {
+          "@odata.type": "graph.awsRole",
+          "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpyb2xlL21vbmdvLWRiLXN0YWdpbmc=",
+          "externalId": "arn:aws:iam::377596131774:role/mongo-db-staging",
+          "displayName": "mongo-db-staging",
+          "source": {
+            "@odata.type": "graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "377596131774"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.awsAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "377596131774",
+            "authorizationSystemName": "cloudknox-staging",
+            "authorizationSystemType": "aws"
+          }
+      },
+      "actionSummary": {
+        "assigned": 736,
+        "exercised": 0,
+        "available": 10000
+      },
+      "permissionsCreepIndex": {
+        "score": 3
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "identityDetails": {
+        "createdDateTime": "2022-05-16T21:26:50Z",
+        "lastActiveDateTime": "2022-10-20T05:23:35Z"
+      }
     },
-    "lastActiveDateTime": "String (timestamp)",
-    "actionSummary": {
-      "@odata.type": "microsoft.graph.actionSummary"
-    }
-  }
+
+  ]
 }
 ```
-
