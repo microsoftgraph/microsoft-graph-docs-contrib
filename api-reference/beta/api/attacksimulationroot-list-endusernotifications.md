@@ -1,6 +1,6 @@
 ---
 title: "List endUserNotifications"
-description: "Get a list of endUserNotifications and objects and their properties."
+description: "Get a list of endUserNotifications objects and their properties."
 author: "stuartcl"
 ms.localizationpriority: medium
 ms.prod: "security"
