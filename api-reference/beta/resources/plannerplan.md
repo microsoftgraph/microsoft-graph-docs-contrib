@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a plan in Microsoft 365. A plan contains a collection of [plannerTasks](plannertask.md). It can also have a collection of [plannerBuckets](plannerbucket.md). Each plan object has a [details](plannerplandetails.md) object that can contain more information about the plan. A [group](group.md) can own a plan. For more information about the relationships between groups, plans, and tasks, see [Planner](planner-overview.md).
+Represents a plan in Microsoft 365. Either a [group](group.md) or a [user](user.md) owns a plan. Plans contain a collection of [plannerTasks](plannertask.md). Plans can also have a collection of [plannerBuckets](plannerbucket.md). Each plan object has a [details](plannerplandetails.md) object that can contain more information about the plan. For more information about the relationships between groups, plans, and tasks, see [Planner](planner-overview.md).
 
 ## Methods
 
@@ -37,14 +37,14 @@ Represents a plan in Microsoft 365. A plan contains a collection of [plannerTask
 |id|String| Read-only. ID of the plan. It's 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
 |title|String|Required. Title of the plan.|
 |creationSource|[plannerPlanCreation](plannerplancreation.md)|  Contains information about the origin of the plan.|
-|owner (deprecated) |String| Use the **container** property instead. ID of the [group](group.md) that owns the plan. After it's set, this property can’t be updated. This property returns a valid group ID if the container of the plan isn't a group.|
+|owner (deprecated) |String| Use the **container** property instead. ID of the [group](group.md) that owns the plan. After it's set, this property can’t be updated. This property doesn't return a valid group ID if the container of the plan isn't a group.|
 |sharedWithContainers|[plannerSharedWithContainer](plannersharedwithcontainer.md) collection|List of containers the plan is shared with.|
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |buckets|[plannerBucket](plannerbucket.md) collection| Collection of buckets in the plan. Read-only. Nullable.|
-|details|[plannerPlanDetails](plannerplandetails.md)| More details about the plan. Read-only. Nullable. |
+|details|[plannerPlanDetails](plannerplandetails.md)| Extra details about the plan. Read-only. Nullable. |
 |tasks|[plannerTask](plannertask.md) collection| Collection of tasks in the plan. Read-only. Nullable. |
 
 ## JSON representation

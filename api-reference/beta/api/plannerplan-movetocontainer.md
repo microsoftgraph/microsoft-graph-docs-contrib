@@ -46,7 +46,7 @@ If successful, this API returns a `200 OK` response code and a [plannerPlan](../
 
 ## Example
 ### Request
-Here is an example of the request.
+The following example demonstrates a request to move a Plan from a User Container to a Group Container.
 
 <!-- {
   "blockType": "request",
@@ -66,7 +66,10 @@ If-Match: "string"
 ```
 
 ### Response
-Here is an example of the response. **Note:** The response object shown here might be shortened for readability.
+The following example displays a response to a request to move a Plan from a User Container to a Group Container.
+
+>**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

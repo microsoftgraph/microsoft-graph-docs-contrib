@@ -64,7 +64,7 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 ### Request
 
-Here is an example of the request.
+The following example demonstrates a request to create a Plan in a Group Container.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -119,9 +119,10 @@ Content-type: application/json
 
 ### Response
 
-Here is an example of the response.
+The following example displays a response to a request to create a Plan in a Group Container.
 
 >**Note:** The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
