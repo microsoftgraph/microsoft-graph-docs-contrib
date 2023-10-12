@@ -6,20 +6,26 @@ ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "users"
 ---
-# participant resource type
+# Participant resource type
 
 Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity of a call or meeting participant in a [callRecord](callrecords-callrecord.md) resource.
+Represents the identity of a participant in a [callRecord](callrecords-callrecord.md) resource.
+
+## Methods
+| Method          | Return Type                                                                                     | Description                                                   |
+|:----------------|:------------------------------------------------------------------------------------------------|:--------------------------------------------------------------|
+| [List participants](../api/callrecords-participant-list.md)|[microsoft.graph.callRecords.participant](callrecords-participant.md) collection|Retrieve the list of participants associated to a [callRecord](callrecords-callrecord.md) object.|
+
 
 ## Properties
 
-| Property    | Type                       | Description                                             |
-|:---------|:------------------------------|:--------------------------------------------------------|
-| id       | String                        | Optional. Unique identifier for the call participant.     |
-| identity | [identitySet](identityset.md) | Optional. The identity of the call participant.           |
+| Property    | Type                          | Description                                               |
+|:------------|:------------------------------|:----------------------------------------------------------|
+| id          | String                        | Optional. Unique identifier for the call participant.     |
+| identity    | [identitySet](identityset.md) | Optional. The identity of the call participant.           |
 
 
 ## JSON representation
@@ -44,4 +50,4 @@ The following example is a JSON representation of the resource.
 
 ## See also
 
-For examples that show how to use **participant** resources, see [call records](callrecords-callrecord.md).
+For examples that show how to use **participant** resource, see [call records](callrecords-callrecord.md).
