@@ -14,6 +14,8 @@ Starting August 17, 2023, new customers who onboard to Microsoft Graph Data Conn
 
 <!-- Update 8/17/2023 changed date per developer guidance to August 17, 2023. -->
 
+![A screenshot showing how to enable data connect in the Microsoft 365 admin center.](../concepts/images/data-connect-new-consent-flow-enable-mgdc.png)
+
 If you're an existing Data Connect customer and want to get started with the enhanced app registration and authorization experience, have your tenant admin disable Data Connect in the Microsoft 365 admin portal and then re-enable it:
 1. Disable MGDC by unckecking the "Turn Microsoft Graph Data Connect on or off for your entire organization" checkbox on the Microsoft 365 admin portal.
 2. Click "Save".
