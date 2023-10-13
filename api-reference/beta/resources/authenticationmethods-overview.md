@@ -28,7 +28,7 @@ The authentication method APIs are used to manage a user's authentication method
 * You can add an email address to a user. The user can then use that email as part of the Self-Service Password Reset (SSPR) process.
 * You can update that email, or delete it from the user.
 
-Note that we don't recommend using these APIs for scenarios where you might need to iterate over your entire user population for auditing or security check purposes. For these types of scenarios we recommend leveraging the [authentication method registration and usage reporting APIs](authenticationmethods-usage-insights-overview.md).
+We don't recommend using the authentication methods APIs for scenarios where you need to iterate over your entire user population for auditing or security check purposes. For these types of scenarios, we recommend using the [authentication method registration and usage reporting APIs](../resources/authenticationmethods-usage-insights-overview.md).
 
 ## What authentication methods can be managed in Microsoft Graph?
 
