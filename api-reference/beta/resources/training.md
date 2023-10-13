@@ -39,7 +39,7 @@ Inherits from [entity](../resources/entity.md).
 |id|String|Unique identifier for the **training** object. Inherited from [entity](../resources/entity.md).|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who last modified the training.|
 |lastModifiedDateTime|DateTimeOffset|Date and time when the training was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
-|source|simulationContentSource|Training content source. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
+|source|[simulationContentSource](../resources/simulation.md#simulationcontentsource-values)|Training content source. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
 |supportedLocales|String collection|Supported locales for content for the associated training.|
 |tags|String collection|Training tags.|
 |type|trainingType|The type of training. Possible values are: `unknown`, `phishing`, `unknownFutureValue`.|
