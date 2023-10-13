@@ -416,6 +416,15 @@ Namespace: microsoft.graph
 |existingPartners|
 |unknownFutureValue|
 
+### approvalFilterByCurrentUserOptions values 
+
+| Member             |
+| :----------------- |
+| target             |
+| createdBy          |
+| approver           |
+| unknownFutureValue |
+
 ### accessPackageFilterByCurrentUserOptions values
 
 | Member             |

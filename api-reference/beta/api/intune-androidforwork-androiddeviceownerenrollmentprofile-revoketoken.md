@@ -1,6 +1,6 @@
 ---
 title: "revokeToken action"
-description: ""
+description: "Intune Androidforwork Androiddeviceownerenrollmentprofile Revoketoken Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

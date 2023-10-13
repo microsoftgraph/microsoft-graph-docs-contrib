@@ -1,6 +1,6 @@
 ---
 title: "setPriority action"
-description: ""
+description: "Intune Enrollment Appleuserinitiatedenrollmentprofile Setpriority Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

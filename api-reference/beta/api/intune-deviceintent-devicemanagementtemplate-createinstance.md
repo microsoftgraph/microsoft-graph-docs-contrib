@@ -1,6 +1,6 @@
 ---
 title: "createInstance action"
-description: ""
+description: "Intune Deviceintent Devicemanagementtemplate Createinstance Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

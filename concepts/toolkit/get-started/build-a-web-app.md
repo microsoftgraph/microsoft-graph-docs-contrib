@@ -25,7 +25,7 @@ You can use Microsoft Graph Toolkit in your application by referencing the loade
 To use the Toolkit via mgt-loader, add the reference in a script to your code:
 
 ```html
-<script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
 ```
 
 # [npm](#tab/npm)
@@ -85,7 +85,7 @@ After you initialize the MSAL2 provider, you can start using any of the Toolkit 
 The following is a full working example using mgt-loader, the MSAL2 Provider initialized in HTML, and the Login component:
 
 ```html
-<script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
 <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
 <mgt-login></mgt-login>
 ```
@@ -146,7 +146,7 @@ If you're using the `mgt-loader` library, you can access the `Provider` and `Pro
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
+    <script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
   </head>
   <body>
     <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>

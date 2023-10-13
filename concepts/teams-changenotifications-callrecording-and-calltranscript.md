@@ -35,7 +35,7 @@ One of the following permissions is required to subscribe to `communications/onl
 The following example shows how to subscribe to transcripts available at the tenant level.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -69,7 +69,7 @@ One of the following permissions is required to subscribe to `communications/onl
 The following example shows how to subscribe to transcripts available for a particular online meeting.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -87,6 +87,9 @@ Content-Type: application/json
 ## Subscribe to recordings available at the tenant level
 
 To get change notifications for any recording available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllRecordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
+
+> [!NOTE]
+> Change notifications for meeting recording are available on the `/beta` endpoint only.
 
 ### Permissions
 
@@ -121,6 +124,9 @@ Content-Type: application/json
 ## Subscribe to recordings available for a particular online meeting
 
 To get change notifications for any recording available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/recordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
+
+> [!NOTE]
+> Change notifications for meeting recording are available on the `/beta` endpoint only.
 
 ### Permissions
 
@@ -194,7 +200,6 @@ The decrypted notification payload looks like the following. The payload conform
 {
   "id": "MSMjMCMjOGIzMmI0MzktY2QxNy00ODc1LTg1NWQtYzA1MDM0ZmFkZWMx",
   "meetingId": "MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19aalk0TXpRNU9UQXRZamxqWWkwMFpESXdMVGczTkdZdFptUTNNRGhtWm1FMk9EVTNAdGhyZWFkLnYy",
-  "meetingOrganizerId": "976f4b31-fd01-4e0b-9178-29cc40c14438",
   "transcriptContentUrl": "communications/onlineMeetings/MSo5NzZmNGIzMS1mZDAxLTRlMGItOTE3OC0yOWNjNDBjMTQ0MzgqMCoqMTk6bWVldGluZ19aalk0TXpRNU9UQXRZamxqWWkwMFpESXdMVGczTkdZdFptUTNNRGhtWm1FMk9EVTNAdGhyZWFkLnYy/transcripts/MSMjMCMjOGIzMmI0MzktY2QxNy00ODc1LTg1NWQtYzA1MDM0ZmFkZWMx/content",
   "createdDateTime": null,
   "meetingOrganizer": {
