@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Remove teacher from educationClass
 Namespace: microsoft.graph
 
-Remove teacher from an [educationClass](../resources/educationclass.md).
+Remove a teacher from an [educationClass](../resources/educationclass.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -28,6 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 DELETE /education/classes/{id}/teachers/{userId}/$ref
 ```
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -36,12 +37,12 @@ DELETE /education/classes/{id}/teachers/{userId}/$ref
 ## Request body
 Do not supply a request body for this method.
 
-
 ## Response
-If successful, this method returns a `204 No Content` response code and an empty response body.
+
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -63,7 +64,7 @@ DELETE https://graph.microsoft.com/v1.0/education/classes/{class-id}/teachers/{t
 
 ---
 
-##### Response
+### Response
 The following is an example of the response. 
 <!-- {
   "blockType": "response"

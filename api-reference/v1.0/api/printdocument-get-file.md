@@ -11,14 +11,14 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Download the binary file associated with a [printDocument](../resources/printdocument.md). Calling this method yields a redirect response with a pre-authenticated URL that can be used to download the payload.
+Download the binary file associated with a [printDocument](../resources/printdocument.md). Calling this method yields a redirect response with a preauthenticated URL that can be used to download the payload.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription and have a permission that grants grants [Get printer](printer-get.md) access.
+In addition to the following permissions, the user or app's tenant must have an active Universal Print subscription and have a permission that grants [Get printer](printer-get.md) access.
 
 | Permission type                        | Permissions (from least to most privileged)                  |
 | :------------------------------------- | :----------------------------------------------------------- |
@@ -37,13 +37,13 @@ GET /print/printers/{printerId}/jobs/{printJobId}/documents/{printDocumentId}/$v
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns `302 Found` and the pre-authenticated download URL in the Location header.
+If successful, this method returns `302 Found` and the preauthenticated download URL in the Location header.
 
 ## Examples
-The following example shows how to call this API to acquire a pre-authenticated download URL. To start the download, follow the redirect URL in the response.
+The following example shows how to call this API to acquire a preauthenticated download URL. To start the download, follow the redirect URL in the response.
 
 ### Request
 

@@ -154,10 +154,10 @@ The following is an example of the request. This request requires the **Consiste
 >**Note:** The `$count` and `$search` query parameters are currently not available in Azure AD B2C tenants.
 
 <!-- {
-  "blockType": "ignored",
-  "name": "get_count_only"
+  "blockType": "request",
+  "name": "get_count_only_beta_e2"
 }-->
-```msgraph-interactive
+```http
 GET https://graph.microsoft.com/beta/applications/$count
 ConsistencyLevel: eventual
 ```
@@ -168,7 +168,8 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "String"
 } -->
 ```http
 HTTP/1.1 200 OK

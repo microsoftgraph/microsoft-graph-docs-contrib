@@ -12,10 +12,12 @@ Namespace: microsoft.graph
 
 Get the [conversationMember](../resources/conversationmember.md) collection of a [team](../resources/team.md).
 
+The membership IDs returned by the server must be treated as opaque strings. The client should not try to parse or make assumptions about these resource IDs.
+
+In the future, membership results may include users from various tenants, as indicated in the response. Clients should avoid assuming that all members exclusively belong to the current tenant.
+
 > [!NOTE]
-> The membership IDs returned by the server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
->
-> The membership results could map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are from the current tenant only.
+> This API results in a 401 error when a newly created tenant calls this method. For more information, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/?search=19164).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 

@@ -300,6 +300,8 @@ items:
             href: /graph/toolkit/customize-components/disambiguation?context=graph/api/beta
       - name: Upgrading to v3
         href: /graph/toolkit/upgrade?context=graph/api/beta
+  - name: Microsoft Graph activity logs (preview)
+    href: /graph/microsoft-graph-activity-logs-overview?context=graph/api/beta
   - name: Configure Connected Services
     displayName: Configure Connected Services in Visual Studio
     href: /graph/office-365-connected-services?context=graph/api/beta
@@ -10208,13 +10210,13 @@ items:
                     href: api/cloudpc-rename.md
                   - name: Reprovision
                     href: api/cloudpc-reprovision.md
-                  - name: Reprovision remotely
+                  - name: Reprovision remotely (deprecated)
                     href: api/manageddevice-reprovisioncloudpc.md
                   - name: Resize remotely
                     href: api/manageddevice-resizecloudpc.md
                   - name: Restore
                     href: api/cloudpc-restore.md
-                  - name: Restore remotely
+                  - name: Restore remotely (deprecated)
                     href: api/manageddevice-restorecloudpc.md
                   - name: Set review status
                     href: api/manageddevice-setcloudpcreviewstatus.md
@@ -10316,7 +10318,9 @@ items:
               - name: Cloud PC reports
                 items:
                   - name: Cloud PC reports
-                    href: resources/cloudpcreports.md
+                    href: resources/cloudpcreports.md                  
+                  - name: Get connection quality reports
+                    href: api/cloudpcreports-getconnectionqualityreports.md
                   - name: Get daily aggregated remote connection reports
                     href: api/cloudpcreports-getdailyaggregatedremoteconnectionreports.md
                   - name: Get historical remote connection reports
@@ -10327,8 +10331,10 @@ items:
                     href: api/cloudpcreports-getrealtimeremoteconnectionlatency.md
                   - name: Get real time remote connection status
                     href: api/cloudpcreports-getrealtimeremoteconnectionstatus.md
-                  - name: Get shared-use license usage report
+                  - name: Get shared-use license usage reports (deprecated)
                     href: api/cloudpcreports-getshareduselicenseusagereport.md
+                  - name: Get Windows 365 Frontline reports
+                    href: api/cloudpcreports-getfrontlinereport.md
                   - name: Get total aggregated remote connection reports
                     href: api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md
                   - name: Export to download report
@@ -15859,6 +15865,30 @@ items:
                     href: resources/attacksimulationoperation.md
                   - name: Get
                     href: api/attacksimulationoperation-get.md
+              - name: End user notification
+                items:
+                  - name: End user notification
+                    href: resources/endusernotification.md
+                  - name: List
+                    href: api/attacksimulationroot-list-endusernotifications.md
+                  - name: Get
+                    href: api/endusernotification-get.md
+              - name: Landing page
+                items:
+                  - name: Landing page
+                    href: resources/landingpage.md
+                  - name: List
+                    href: api/attacksimulationroot-list-landingpage.md
+                  - name: Get
+                    href: api/landingpage-get.md
+              - name: Login page
+                items:
+                  - name: Login page
+                    href: resources/loginpage.md
+                  - name: List
+                    href: api/attacksimulationroot-list-loginpage.md
+                  - name: Get
+                    href: api/loginpage-get.md
               - name: Payload
                 items:
                   - name: Payload
@@ -15869,6 +15899,20 @@ items:
                     href: api/payload-get.md
                   - name: Get payload detail
                     href: api/payloaddetail-get.md
+              - name: Training
+                items:
+                  - name: Training
+                    href: resources/training.md
+                  - name: List
+                    href: api/attacksimulationroot-list-trainings.md
+                  - name: Get
+                    href: api/training-get.md
+              - name: Training language detail
+                items:
+                  - name: Training language detail
+                    href: resources/traininglanguagedetail.md
+                  - name: Get
+                    href: api/traininglanguagedetail-get.md
               - name: Reports
                 items:
                   - name: Attack simulation reports
@@ -16335,38 +16379,42 @@ items:
                 items:
                   - name: Article
                     href: resources/security-article.md
-                  - name: Get
+                  - name: Get article
                     href: api/security-article-get.md
-                  - name: List
+                  - name: List articles
                     href: api/security-article-list.md
-                  - name: List article indicators
+                  - name: List indicators
                     href: api/security-article-list-indicators.md
               - name: Article indicator
                 items:
                   - name: Article indicator
                     href: resources/security-articleindicator.md
-                  - name: Get
+                  - name: List indicators
+                    href: api/security-article-list-indicators.md
+                  - name: Get article indicator
                     href: api/security-articleindicator-get.md
               - name: Host
                 items:
                   - name: Host
                     href: resources/security-host.md
-                  - name: Get
+                  - name: Get host
                     href: api/security-host-get.md
-                  - name: Get reputation
+                  - name: Get host reputation
                     href: api/security-host-get-reputation.md
-                  - name: List child host pairs
-                    href: api/security-host-list-childhostpairs.md
+                  - name: Get WHOIS record for a host
+                    href: api/security-host-get-whois.md
                   - name: List components
                     href: api/security-host-list-components.md
                   - name: List cookies
                     href: api/security-host-list-cookies.md
-                  - name: List host pairs
+                  - name: List host pairs for a host
                     href: api/security-host-list-hostpairs.md
-                  - name: List host SSL certificate
-                    href: api/security-hostsslcertificate-list-host.md
-                  - name: List parent host pairs
+                  - name: List host pairs for a host as child
                     href: api/security-host-list-parenthostpairs.md
+                  - name: List host pairs for a host as parent
+                    href: api/security-host-list-childhostpairs.md
+                  - name: List host SSL certificates
+                    href: api/security-hostsslcertificate-list-host.md
                   - name: List passive DNS
                     href: api/security-host-list-passivedns.md
                   - name: List passive DNS reverse
@@ -16375,18 +16423,20 @@ items:
                     href: api/security-host-list-subdomains.md
                   - name: List trackers
                     href: api/security-host-list-trackers.md
-                  - name: Get WHOIS for a host
-                    href: api/security-host-get-whois.md
               - name: Host component
                 items:
                   - name: Host component
                     href: resources/security-hostcomponent.md
+                  - name: List
+                    href: api/security-host-list-components.md
                   - name: Get
                     href: api/security-hostcomponent-get.md
               - name: Host cookie
                 items:
                   - name: Host cookie
                     href: resources/security-hostcookie.md
+                  - name: List
+                    href: api/security-host-list-cookies.md
                   - name: Get
                     href: api/security-hostcookie-get.md
               - name: Host pair
@@ -16413,30 +16463,38 @@ items:
                 items:
                   - name: Host tracker
                     href: resources/security-hosttracker.md
+                  - name: List
+                    href: api/security-host-list-trackers.md
                   - name: Get
                     href: api/security-hosttracker-get.md
               - name: Intelligence profile
                 items:
                   - name: Intelligence profile
                     href: resources/security-intelligenceprofile.md
-                  - name: Get
+                  - name: Get intelligence profile
                     href: api/security-intelligenceprofile-get.md
-                  - name: List
+                  - name: List intelligence profiles
                     href: api/security-intelligenceprofile-list.md
-                  - name: List intelligence profile indicators
+                  - name: List indicators
                     href: api/security-intelligenceprofile-list-indicators.md
               - name: Intelligence profile indicator
                 items:
                   - name: Intelligence profile indicator
                     href: resources/security-intelligenceprofileindicator.md
-                  - name: Get
+                  - name: List indicators
+                    href: api/security-intelligenceprofile-list-indicators.md
+                  - name: Get intelligence profile indicator
                     href: api/security-intelligenceprofileindicator-get.md
               - name: Passive DNS record
                 items:
                   - name: Passive DNS record
                     href: resources/security-passivednsrecord.md
-                  - name: Get
+                  - name: Get passive DNS record
                     href: api/security-passivednsrecord-get.md
+                  - name: List passive DNS
+                    href: api/security-host-list-passivedns.md
+                  - name: List passive DNS reverse
+                    href: api/security-host-list-passivednsreverse.md
               - name: SSL certificate
                 items:
                 - name: SSL certificate
@@ -16449,26 +16507,36 @@ items:
                 items:
                   - name: Subdomain
                     href: resources/security-subdomain.md
+                  - name: List
+                    href: api/security-host-list-subdomains.md
                   - name: Get
                     href: api/security-subdomain-get.md
-                  - name: List subdomains for a host
-                    href: api/security-host-list-subdomains.md
+              - name: Vulnerability
+                items:
+                  - name: Vulnerability
+                    href: resources/security-vulnerability.md
+                  - name: Get vulnerability
+                    href: api/security-vulnerability-get.md
+                  - name: List vulnerability components
+                    href: api/security-vulnerability-list-components.md
               - name: Vulnerability component
                 items:
                   - name: Vulnerability component
                     href: resources/security-vulnerabilitycomponent.md
+                  - name: List
+                    href: api/security-vulnerability-list-components.md
                   - name: Get
                     href: api/security-vulnerabilitycomponent-get.md
               - name: WHOIS record
                 items:
                   - name: WHOIS record
                     href: resources/security-whoisrecord.md
-                  - name: List
-                    href: api/security-whoisrecord-list.md
-                  - name: Get
+                  - name: Get WHOIS record
                     href: api/security-whoisrecord-get.md
-                  - name: Get WHOIS for a host
+                  - name: Get WHOIS record for a host
                     href: api/security-host-get-whois.md
+                  - name: List WHOIS records
+                    href: api/security-whoisrecord-list.md
               - name: WHOIS history record
                 items:
                   - name: WHOIS history record

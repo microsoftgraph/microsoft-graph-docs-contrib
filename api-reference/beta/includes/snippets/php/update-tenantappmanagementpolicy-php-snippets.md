@@ -44,12 +44,6 @@ $keyCredentialsKeyCredentialConfiguration1->setRestrictionType(new AppKeyCredent
 $keyCredentialsKeyCredentialConfiguration1->setMaxLifetime(new \DateInterval('P30D'));
 $keyCredentialsKeyCredentialConfiguration1->setRestrictForAppsCreatedAfterDateTime(new \DateTime('2015-01-01T10:37:00Z'));
 $keyCredentialsArray []= $keyCredentialsKeyCredentialConfiguration1;
-$keyCredentialsKeyCredentialConfiguration2 = new KeyCredentialConfiguration();
-$keyCredentialsKeyCredentialConfiguration2->setRestrictionType(new AppKeyCredentialRestrictionType('trustedCertificateAuthority'));
-$keyCredentialsKeyCredentialConfiguration2->setRestrictForAppsCreatedAfterDateTime(new \DateTime('2019-10-19T10:37:00Z'));
-$keyCredentialsKeyCredentialConfiguration2->setCertificateBasedApplicationConfigurationIds(['eec5ba11-2fc0-4113-83a2-ed986ed13743', 'bb8e164b-f9ed-4b98-bc45-65eddc14f4c1', ]);
-$keyCredentialsKeyCredentialConfiguration2->setMaxLifetime(null);
-$keyCredentialsArray []= $keyCredentialsKeyCredentialConfiguration2;
 $applicationRestrictions->setKeyCredentials($keyCredentialsArray);
 
 $requestBody->setApplicationRestrictions($applicationRestrictions);

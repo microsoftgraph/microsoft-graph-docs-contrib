@@ -63,7 +63,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleInstances$filter=groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d'
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleInstances?$filter=groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d'
 ```
 
 

@@ -27,12 +27,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+To update String data types, such as signInPageText and usernameHintText, use the PATCH method. To update Stream data types, such as backgroundLogo and backgroundImage, use the PUT method. You can't update Stream types with other data types in the same request.
+
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 PATCH /organization/{organizationId}/branding
+PUT /organization/{organizationId}/branding/localizations/{organizationalBrandingLocalizationId}/{Stream object type such as backgroundImage}
 ```
 
 ## Request headers
@@ -146,7 +149,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Update bannerLogo for the default branding
 
-The following request updates the banner logo for the default branding.
+The following request updates the banner logo for the default branding. To update a Stream object type, use the PUT HTTP method and include the locale ID in the URL path.
 
 #### Request
 
@@ -162,7 +165,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-PATCH https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo
+PUT https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/0/bannerLogo
 Content-Type: image/jpeg
 
 <Image>

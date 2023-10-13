@@ -1,6 +1,6 @@
 ---
 title: "List memberOf"
-description: "List the groups that this organizaitonal contact is a member of."
+description: "List the groups that this organizational contact is a member of."
 ms.localizationpriority: medium
 author: "dkershaw10"
 ms.prod: "directory-management"
@@ -41,14 +41,14 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.
 ## Example
 ##### Request
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/contacts/e63333f5-3d11-4026-8fe3-c0f7b044dd
 ---
 
 ##### Response
-The following is an example of the response.
+Here's an example of the response.
 >**Note**: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
