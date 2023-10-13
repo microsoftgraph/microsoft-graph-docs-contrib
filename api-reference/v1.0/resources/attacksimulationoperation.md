@@ -66,9 +66,7 @@ The following is a JSON representation of the resource.
     "lastActionDateTime": "String (timestamp)",
     "percentageCompleted": "Int32",
     "resourceLocation": "String",
-    "status": {
-        "@odata.type": "microsoft.graph.longRunningOperationStatus"
-    },
+    "status": "String",
     "statusDetail": "String",
     "tenantId": "String",
     "type": "String"
