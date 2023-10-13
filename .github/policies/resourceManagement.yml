@@ -198,8 +198,6 @@ configuration:
       - labelAdded:
           label: ready for content review
       - isOpen
-      - activitySenderHasAssociation:
-          association: COLLABORATOR
       then:
       - addReply:
           reply: >-
@@ -213,8 +211,6 @@ configuration:
       - labelAdded:
           label: content review complete
       - isOpen
-      - activitySenderHasAssociation:
-          association: COLLABORATOR
       then:
       - removeLabel:
           label: ready for content review
@@ -239,8 +235,6 @@ configuration:
       - labelAdded:
           label: changes requested
       - isOpen
-      - activitySenderHasAssociation:
-          association: COLLABORATOR
       then:
       - addReply:
           reply: >-

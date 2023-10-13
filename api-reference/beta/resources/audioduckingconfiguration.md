@@ -22,13 +22,13 @@ Parameters for ducking of other sources (phasing in and out of other sources.)
 | lowerLevel    | Int64    | The volume of sources in percent when the sources are being ducked.             |
 | rampActive    | Int64    | The amount of time (in milliseconds) it takes for ducked sources to "fade out". |
 | rampInactive  | Int64    | The amount of time (in milliseconds) it takes for ducked sources to "fade in".  |
-| upperLevel    | Int64    | The volume of sources in percent when the sources are not being ducked.         |
+| upperLevel    | Int64    | The volume of sources in percent when the sources aren't being ducked.         |
 
 > **Note:** Ramp duration cannot be more than 5,000 milliseconds.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
