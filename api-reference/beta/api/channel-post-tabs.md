@@ -54,7 +54,7 @@ If successful, this method returns a `201 Created` response code.
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 <!-- {
   "blockType": "ignored",
   "name": "get_team"
@@ -76,7 +76,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 
 #### Response
 
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+Here's an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -103,7 +103,7 @@ Content-type: application/json
 
 ## See also
 
-- [Configuring the buit-in tab types](/graph/teams-configuring-builtin-tabs)
+- [Configuring the built-in tab types](/graph/teams-configuring-builtin-tabs)
 - [Add app to team](team-post-installedapps.md)
 - [Microsoft Graph service-specific throttling limits](/graph/throttling-limits#microsoft-teams-service-limits)
 

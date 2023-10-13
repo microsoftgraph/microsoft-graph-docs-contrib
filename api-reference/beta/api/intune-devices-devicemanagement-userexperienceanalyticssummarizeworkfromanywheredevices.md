@@ -1,6 +1,6 @@
 ---
 title: "userExperienceAnalyticsSummarizeWorkFromAnywhereDevices function"
-description: ""
+description: "Intune Devices Devicemanagement Userexperienceanalyticssummarizeworkfromanywheredevices Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
