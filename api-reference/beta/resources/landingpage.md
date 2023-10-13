@@ -37,7 +37,7 @@ Inherits from [entity](../resources/entity.md).
 |lastModifiedDateTime|DateTimeOffset|Date and time when the landing page was last modified. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |locale|String|Content locale.|
 |source|[simulationContentSource](../resources/simulation.md#simulationcontentsource-values)|The source of the content. Possible values are: `unknown`, `global`, `tenant`, `unknownFutureValue`.|
-|status|[simulationContentStatus](../resources/simulation.md#simulationcontentsource-values)|The status of the simulation. Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
+|status|[simulationContentStatus](../resources/simulation.md#simulationcontentstatus-values)|The status of the simulation. Possible values are: `unknown`, `draft`, `ready`, `archive`, `delete`, `unknownFutureValue`.|
 |supportedLocales|String collection|Supported locales.|
 
 ## Relationships
