@@ -145,12 +145,12 @@ The tenant where Privileged Identity Management is being used must have enough p
 
 ## See also
 
-- Visit the following articles to learn more about working with PIM APIs:
+- See the following articles to learn more about working with PIM APIs:
   - [Working with rules for Azure AD roles in PIM APIs](/graph/identity-governance-pim-rules-overview).
   - [Use PIM APIs to update Azure AD rules (settings)](/graph/how-to-pim-update-rules).
   - [Manage security alerts for Azure AD roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
   - [Tutorial: Use PIM APIs to assign Azure AD roles](/graph/tutorial-assign-azureadroles).
-- Visit the Microsoft Entra architecture center to learn more about [Microsoft Entra security operations for Privileged Identity Management](/azure/active-directory/architecture/security-operations-privileged-identity-management?source=docs#privileged-identity-management-alerts).
+- To learn more about security operations, see [Microsoft Entra security operations for Privileged Identity Management](/azure/active-directory/architecture/security-operations-privileged-identity-management?source=docs#privileged-identity-management-alerts) in the Microsoft Entra architecture center.
 
 
 <!-- {
