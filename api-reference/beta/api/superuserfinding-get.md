@@ -1,9 +1,9 @@
 ---
 title: "Get superUserFinding"
 description: "Read the properties and relationships of a superUserFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -16,12 +16,12 @@ Read the properties and relationships of a [superUserFinding](../resources/super
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+ 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,6 +30,23 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/key/findings/graph.superUserFinding
+```
+<!-- {
+  "blockType": "request",
+  "name": "get_superuserfinding"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/key/findings/graph.superUserFinding
+```
+<!-- {
+  "blockType": "request",
+  "name": "get_superuserfinding"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/key/findings/graph.superUserFinding
 ```
 
 ## Optional query parameters
@@ -47,6 +64,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [superUserFinding](../resources/superuserfinding.md) object in the response body.
 
+If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the key passed into the GET method is invalid.
+
 ## Examples
 
 ### Request
@@ -57,9 +76,8 @@ The following is an example of a request.
 }
 -->
 ``` http
-
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws('id')/findings/graph.superUserFinding
 ```
-
 
 ### Response
 The following is an example of the response
@@ -72,21 +90,46 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
-
+Content-type: application/json
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.superUserFinding",
-    "id": "38121cbd-ff7c-44ea-e6de-f9c1fe55b372",
-    "createdDateTime": "String (timestamp)",
-    "permissionsCreepIndex": {
-      "@odata.type": "microsoft.graph.permissionsCreepIndex"
+  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/gcp/findings/graph.superUserFinding",
+  "value": [
+    {
+      "@odata.type": "graph.superUserFinding",
+      "id": "c3VwZXJVc2VyRmluZGluZzE",
+      "identity": {
+          "@odata.type": "graph.gcpUser",
+          "id": "dGVtcF91c2VyXzFAZ21haWwuY29t",
+          "externalId": "temp_user_1@gmail.com",
+          "displayName": "temp_user_1",
+          "source": {
+            "@odata.type": "graph.gsuiteSource",
+            "identityProviderType": "gsuite",
+            "domain": "gmail.com"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.gcpAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "carbide-bonsai-205017",
+            "authorizationSystemName": "ck-staging",
+            "authorizationSystemType": "gcp"
+          }
+      },
+      "actionSummary": {
+        "assigned": 10532,
+        "exercised": 0,
+        "available": 10542
+      },
+      "permissionsCreepIndex": {
+        "score": 95
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "identityDetails": {
+        "createdDateTime": "2021-04-12T20:34:24Z",
+        "lastActiveDateTime": "2021-10-30T03:21:05Z"
+      }
     },
-    "lastActiveDateTime": "String (timestamp)",
-    "actionSummary": {
-      "@odata.type": "microsoft.graph.actionSummary"
-    }
-  }
+
+  ]
 }
 ```
-
