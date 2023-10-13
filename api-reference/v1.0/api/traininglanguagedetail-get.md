@@ -99,6 +99,6 @@ Content-Type: application/json
     "displayName": "Alex Waber"
   },
   "lastModifiedDateTime": "2021-10-07T12:23:18.8157586Z",
-  "isDefaultLangauge": "true"
+  "isDefaultLangauge": true
 }
 ```
