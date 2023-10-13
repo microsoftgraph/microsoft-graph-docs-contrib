@@ -63,7 +63,6 @@ The following is an example of a request.
 GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/azure/findings/graph.overprovisionedUserFinding
 ```
 
-
 ### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.

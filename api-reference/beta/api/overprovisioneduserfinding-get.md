@@ -75,21 +75,47 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
-
+Content-type: application/json
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.overprovisionedUserFinding",
-    "id": "e4dbcfb5-4bae-7307-d36d-8497c584f4f4",
-    "createdDateTime": "String (timestamp)",
-    "permissionsCreepIndex": {
-      "@odata.type": "microsoft.graph.permissionsCreepIndex"
+  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/azure/findings/graph.overprovisionedUserFinding",
+  "value": [
+    {
+      "@odata.type": "graph.overprovisionedUserFinding",
+      "id": "b3ZlcnByb3Zpc2lvbmVkVXNlckZpbmRpbmc3",
+      "identity": {
+          "@odata.type": "graph.azureUser",
+          "id": "dXNlcl9yZWFkZXJfc3Vic2NyaXB0aW9uX293bmVyX3JnQG1jaWVtYzEub25taWNyb3NvZnQuY29t",
+          "externalId": "user_reader_subscription_owner_rg@mciemc1.onmicrosoft.com",
+          "displayName": "user_reader_subscription_owner_rg",
+          "source": {
+            "@odata.type": "graph.aadSource":,
+            "identityProviderType": "aad",
+            "domain": "mciemc1.onmicrosoft.com"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.azureAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "6ea285d9-fe7e-49f6-a0ff-203c1a7ac225",
+            "authorizationSystemName": "Microsoft Azure Sponsorship 2",
+            "authorizationSystemType": "azure"
+          }
+      },
+      "actionSummary": {
+        "assigned": 12676,
+        "exercised": 0,
+        "available": 12900
+      },
+      "permissionsCreepIndex": {
+        "score": 3
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "identityDetails": {
+        "createdDateTime": "2021-04-12T20:34:24Z",
+        "lastActiveDateTime": "2021-10-30T03:21:05Z"
+      }
     },
-    "lastActiveDateTime": "String (timestamp)",
-    "actionSummary": {
-      "@odata.type": "microsoft.graph.actionSummary"
-    }
-  }
+
+  ]
 }
 ```
 
