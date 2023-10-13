@@ -75,3 +75,6 @@ Membership | Membership APIs to add, delete guests are not supported.
 |[Get transcript](/graph/api/calltranscript-get) | Not supported. |
 |[Get delta by organizer](/graph/api/calltranscript-delta) | Not supported. |
 |[List transcripts by organizer](/graph/api/onlinemeeting-getalltranscripts) | Not supported. |
+| **HostedContent**            |                                                          |
+[Hosted Content](/graph/api/chatmessagehostedcontent-get) | APIs to manage hosted content are not supported in application context. 
+
