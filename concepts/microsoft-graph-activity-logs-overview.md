@@ -31,7 +31,7 @@ To access the Microsoft Graph activity logs, you need the following privileges.
 ## What data is available in the Microsoft Graph activity logs?
 
 > [!WARNING]
-> The current field name "IpAddress" will change to "IPAddress" during public preview. Any queries referencing this field will need to be updated when this change is released.
+> The current field name "IpAddress" will change to "IPAddress" in the beta schema. When this change is released, you will need to update any queries that reference this field.
 
 The following data relating to API requests is available for Microsoft Graph activity logs on the Logs Analytics interface.
 
