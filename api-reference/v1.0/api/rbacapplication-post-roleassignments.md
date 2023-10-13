@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Create a new [unifiedRoleAssignment](../resources/unifiedroleassignment.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 

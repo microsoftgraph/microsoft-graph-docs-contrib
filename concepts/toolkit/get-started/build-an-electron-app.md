@@ -50,9 +50,8 @@ To create an application in Azure Active Directory (Azure AD), you need to add a
 
 To create the app in Azure AD:
 
-1. Go to the [Azure portal](https://portal.azure.com).
-1. From the menu, select **Azure Active Directory**.
-1. From the Azure Active Directory menu, select **App registrations**.
+1. Go to the [Microsoft Entra admin center](https://entra.microsoft.com).
+1. Expand **Identity** > expand **Applications** > select **App registrations**.
 1. From the top menu, select the **New registration** button.
 1. Enter the name for your app; for example, `My Electron-App`.
 1. For the type of [supported account types](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app), select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.

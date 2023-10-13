@@ -62,7 +62,7 @@ Now that you have registered your application with Azure Active Directory (Azure
 
 ### Copy the Azure AD application registration ID
 
-1. In the Azure Portal, go to your application registration.
+1. In the Microsoft Entra admin center, go to your application registration.
 1. Verify that you are on the **Overview** page.
 1. From the **Essentials** section, copy the value of the **Application (client) ID** property
 
@@ -88,7 +88,7 @@ Next, configure the authentication provider that the Microsoft Graph Toolkit sho
    });
    ```
 
-   Replace the value of the `clientId` property with the value of the `Application (client) ID` property you copied previously in the Azure Portal.
+   Replace the value of the `clientId` property with the value of the `Application (client) ID` property you copied previously in the Microsoft Entra admin center app registration overview.
 
 With these changes, the **src/index.tsx** file will look like the following.
 

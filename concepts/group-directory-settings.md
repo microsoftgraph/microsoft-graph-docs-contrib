@@ -13,12 +13,13 @@ ms.date: 06/08/2022
 Group settings (also called *directory settings* in `beta`) are a collection of settings that allow you to configure either tenant-wide or object-specific allowed behaviors for specific Azure AD objects like Microsoft 365 groups.
 
 There are eight groups of setting templates with each setting template including a collection of individual settings.
+
 + Group.Unified
 + Group.Unified.Guest
 + Application
 + Custom Policy Settings
 + Consent Policy Settings
-+ Password Rule Settings
++ Password Rule Settings - For more information, see [Configure custom banned passwords for Azure Active Directory password protection](/azure/active-directory/authentication/tutorial-configure-custom-password-protection)
 + Prohibited Names Restricted Settings
 + Prohibited Names Settings
 
@@ -45,7 +46,7 @@ Unless otherwise indicated, these features require an Azure AD P1 license.
 | ClassificationList | String | A comma-delimited list of values that can be applied to classify Microsoft 365 groups. This setting doesn't apply when **EnableMIPLabels** is `true`. For more information, see [SharePoint "modern" sites classification](/sharepoint/dev/solution-guidance/modern-experience-site-classification). |
 | CustomBlockedWordsList | String | Comma-separated string of phrases that users won't be permitted to use in group names or aliases. For more information, see [Enforce a naming policy for Microsoft 365 groups](/azure/active-directory/enterprise-users/groups-naming-policy). |
 | DefaultClassification | String | The classification that's used as the default classification for a Microsoft 365 group if none was specified during group creation. This setting doesn't apply when **EnableMIPLabels** is `true`. For more information, see [SharePoint "modern" sites classification](/sharepoint/dev/solution-guidance/modern-experience-site-classification). |
-| EnableGroupCreation | Boolean | Indicates whether non-admin users can create Microsoft 365 groups. The default setting is `true`. This setting doesn't require an Azure AD P1 license. This setting corresponds to the _Users can create Microsoft 365 groups in Azure portals, API or PowerShell_ setting in the [group settings menu in the Azure portal](/azure/active-directory/enterprise-users/groups-self-service-management). <br/><br/> **Note:** _The Users can create security groups in Azure portals, API or PowerShell_ setting is configured through the **allowedToCreateSecurityGroups** property of the [defaultUserRolePermissions](/graph/api/resources/defaultuserrolepermissions) object of the [authorizationPolicy resource type](/graph/api/resources/authorizationpolicy).|
+| EnableGroupCreation | Boolean | Indicates whether non-admin users can create Microsoft 365 groups. The default setting is `true`. This setting doesn't require an Azure AD P1 license. This setting corresponds to the _Users can create Microsoft 365 groups in Azure portals, API or PowerShell_ setting in the [group settings menu in the Microsoft Entra admin center](/azure/active-directory/enterprise-users/groups-self-service-management). <br/><br/> **Note:** _The Users can create security groups in Azure portals, API or PowerShell_ setting is configured through the **allowedToCreateSecurityGroups** property of the [defaultUserRolePermissions](/graph/api/resources/defaultuserrolepermissions) object of the [authorizationPolicy resource type](/graph/api/resources/authorizationpolicy).|
 | EnableMSStandardBlockedWords | Boolean | Deprecated and retired. |
 | EnableMIPLabels | Boolean | Indicates whether Microsoft information protection sensitivity labels published in the Microsoft Purview compliance portal can be applied to Microsoft 365 groups. For more information, see [Assign Sensitivity Labels for Microsoft 365 groups](/azure/active-directory/enterprise-users/groups-assign-sensitivity-labels). |
 | GroupCreationAllowedGroupId | GUID | Identifier of the security group for which the members are allowed to create Microsoft 365 groups even when **EnableGroupCreation** is `false`. This setting doesn't require an Azure AD P1 license. |
@@ -63,6 +64,7 @@ Only one setting is available in this collection.
 | Setting name | Type | Description |
 |--|--|--|
 | AllowToAddGuests | Boolean | Indicates whether guest users can be added to all or specific Microsoft 365 groups. The default setting is `true`. This setting can be overwritten when: <br/><li>**EnableMIPLabels** is `true` and a guest policy is applied when a sensitivity label is assigned to a group </ul><li>**AllowToAddGuests** is `false` at the tenant-level, the group-level setting is overwritten </ul> |
+
 
 ## Next steps
 

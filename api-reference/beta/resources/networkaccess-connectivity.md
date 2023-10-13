@@ -28,10 +28,10 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|branches|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) collection|Branch represent locations for connectivity.|
+|branches|[microsoft.graph.networkaccess.branchSite](../resources/networkaccess-branchsite.md) collection|Branches represent locations for connectivity.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

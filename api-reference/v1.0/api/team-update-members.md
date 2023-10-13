@@ -16,6 +16,8 @@ Update the role of a [conversationMember](../resources/conversationmember.md) in
 > [!NOTE]
 > Team members with the role of `guest` cannot be given the role of `owner`.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

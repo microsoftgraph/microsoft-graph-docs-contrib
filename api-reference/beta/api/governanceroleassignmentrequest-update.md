@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Enable administrators to update their decisions (`AdminApproved` or `AdminDenied`) on [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) that are in status of `PendingAdminDecision`.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 The following table shows the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -32,7 +34,7 @@ The requester must also have at least one active administrator role assignment (
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest   
+POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 ```
 
 ## Request headers

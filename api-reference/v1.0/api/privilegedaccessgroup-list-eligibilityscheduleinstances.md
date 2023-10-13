@@ -1,0 +1,105 @@
+---
+title: "List eligibilityScheduleInstances"
+description: "Get a list of the privilegedAccessGroupEligibilityScheduleInstance objects and their properties."
+author: "ilyalushnikov"
+ms.localizationpriority: medium
+ms.prod: "governance"
+doc_type: apiPageType
+---
+
+# List eligibilityScheduleInstances
+Namespace: microsoft.graph
+
+Get a list of the [privilegedAccessGroupEligibilityScheduleInstance](../resources/privilegedaccessgroupeligibilityscheduleinstance.md) objects and their properties.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|PrivilegedEligibilitySchedule.Read.AzureADGroup, PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|PrivilegedEligibilitySchedule.Read.AzureADGroup, PrivilegedEligibilitySchedule.ReadWrite.AzureADGroup|
+
+[!INCLUDE [rbac-pim-groups-apis-read-eligibilityschedules](../includes/rbac-for-apis/rbac-pim-groups-apis-read-eligibilityschedules.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identityGovernance/privilegedAccess/group/eligibilityScheduleInstances?$filter=groupId eq '{groupId}'
+GET /identityGovernance/privilegedAccess/group/eligibilityScheduleInstances?filter=principalId eq '{principalId}'
+```
+
+## Query parameters
+This method requires the `$filter` (`eq`) query parameter to scope the request to a **principalId** or a **groupId**.
+
+This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+Do not supply a request body for this method.
+
+## Response
+
+If successful, this method returns a `200 OK` response code and a collection of [privilegedAccessGroupEligibilityScheduleInstance](../resources/privilegedaccessgroupeligibilityscheduleinstance.md) objects in the response body.
+
+## Examples
+
+### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "list_privilegedaccessgroupeligibilityscheduleinstance"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/eligibilityScheduleInstances?$filter=groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d'
+```
+
+
+### Response
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.privilegedAccessGroupEligibilityScheduleInstance)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identityGovernance/privilegedAccess/group/eligibilityScheduleInstances",
+  "value": [
+    {
+      "id": "2b5ed229-4072-478d-9504-a047ebd4b07d_member_326a4063-93c5-4998-9537-969b8cd50297",
+      "startDateTime": "2023-08-18T00:33:48.8Z",
+      "endDateTime": null,
+      "accessId": "member",
+      "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
+      "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
+      "memberType": "Direct",
+    },
+    {
+      "id": "2b5ed229-4072-478d-9504-a047ebd4b07d_owner_d663bb72-3781-4af0-b69b-01f2f0283a96",
+      "startDateTime": "2023-09-06T18:18:03.917Z",
+      "endDateTime": null,
+      "accessId": "owner",
+      "principalId": "56f2d212-e49c-42e3-8298-0188e5bef094",
+      "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
+      "memberType": "Direct",
+    }
+  ]
+}
+```
+

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This is an abstract type that exposes properties used to configure segment configurations that are allowed for an on-premises wildcard application that's published through Azure AD Application Proxy. The following types are derived from this abstract type:
+This resource type is an abstract type that exposes properties used to configure segment configurations that are allowed for an on-premises wildcard application that's published through Azure AD Application Proxy. The following types are derived from this abstract type:
 + [webApplicationSegment](webapplicationsegment.md)
 
 ## Properties
@@ -24,7 +24,7 @@ This is an abstract type that exposes properties used to configure segment confi
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.applicationSegment"

@@ -74,7 +74,7 @@ After defining the authentication strength policy, you apply and enforce it for 
 
 In the Conditional Access [grant controls](conditionalaccessgrantcontrols.md), configure the **authenticationStrength** relationship by assigning the [authenticationStrengthPolicy](authenticationstrengthpolicy.md) object that should be associated with the conditional access policy. When a conditional access policy applies to a sign-in and that policy has an authentication strength grant control, the user will be required to use one of the allowed authentication method combinations to sign in. Authentication strength policies can also be enforced for guest users through both conditional access policies and [cross-tenant access inbound trust settings](/graph/api/resources/crosstenantaccesspolicy-overview).
 
-The **authenticationStrength** object corresponds to the 'Require authentication strength' control of the Conditional Access policy's UX on the Azure portal.
+The **authenticationStrength** object corresponds to the 'Require authentication strength' control of the Conditional Access policy's UX on the Microsoft Entra admin center.
 
 You can't configure authentication strengths and the multifactor authentication grant control on the same conditional access policy.
 

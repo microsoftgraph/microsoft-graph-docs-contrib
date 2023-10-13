@@ -27,10 +27,10 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|The description of the alert.|
-|displayName|String|The friendly display name that renders in Privileged Identity Management (PIM) alerts in the Azure portal.|
+|displayName|String|The friendly display name that renders in Privileged Identity Management (PIM) alerts in the Microsoft Entra admin center.|
 |howToPrevent|String|Long-form text that indicates the ways to prevent the alert from being triggered in your tenant.|
 |id|String|The identifier of the alert definition. Inherited from [entity](../resources/entity.md).|
-|isConfigurable|Boolean|`true` if the alert configuration can be customized in the tenant, and `false` otherwise. For example, the number and percentage thresholds of the 'There are too many global administrators' alert can be configured by users, while the 'This organization does not have Azure AD Premium P2' cannot be configured, because the criteria is restricted.|
+|isConfigurable|Boolean|`true` if the alert configuration can be customized in the tenant, and `false` otherwise. For example, the number and percentage thresholds of the 'There are too many global administrators' alert can be configured by users, while the 'This organization doesn't have Azure AD Premium P2' can't be configured, because the criteria are restricted.|
 |isRemediatable|Boolean|`true` if the alert can be remediated, and `false` otherwise.|
 |mitigationSteps|String|The methods to mitigate the alert when it's triggered in the tenant. For example, to mitigate the 'There are too many global administrators', you could remove redundant privileged role assignments. |
 |scopeId|String|The identifier of the scope where the alert is related. `/` is the only supported one for the tenant. Supports `$filter` (`eq`, `ne`).|
@@ -42,7 +42,7 @@ Inherits from [entity](../resources/entity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

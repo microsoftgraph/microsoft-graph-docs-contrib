@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A wrapper object that stores the resources associated with a module. The student will not be able to update this resource. This is a handout from the teacher to the student with nothing to be turned in.
+A wrapper object that stores the resources associated with a module. The student won't be able to update this resource. This is a handout from the teacher to the student with nothing to be turned in.
 
 ## Methods
 
@@ -37,7 +37,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
