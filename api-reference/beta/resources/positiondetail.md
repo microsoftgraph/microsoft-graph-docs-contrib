@@ -46,12 +46,12 @@ The following is a JSON representation of the resource.
 {
   "company": {"@odata.type": "microsoft.graph.companyDetail"},
   "description": "String",
-  "endMonthYear": "Date",
+  "endMonthYear": "String (timestamp)",
   "jobTitle": "String",
   "layer": "Integer",
   "level": "String",
   "role": "String",
-  "startMonthYear": "Date",
+  "startMonthYear": "String (timestamp)",
   "summary": "String"
 }
 ```
@@ -65,3 +65,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
