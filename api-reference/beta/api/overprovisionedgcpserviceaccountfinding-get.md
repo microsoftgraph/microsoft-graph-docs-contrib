@@ -1,9 +1,9 @@
 ---
 title: "Get overprovisionedGcpServiceAccountFinding"
 description: "Read the properties and relationships of an overprovisionedGcpServiceAccountFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/gcp/key/findings/graph.overprovisionedGcpServiceAccountFinding
 ```
 
 ## Optional query parameters
@@ -47,6 +48,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and an [overprovisionedGcpServiceAccountFinding](../resources/overprovisionedgcpserviceaccountfinding.md) object in the response body.
 
+If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the key passed into the GET method is invalid.
+
 ## Examples
 
 ### Request
@@ -57,7 +60,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/gcp/key/findings/graph.overprovisionedGcpServiceAccountFinding
 ```
 
 
@@ -72,21 +75,47 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
-
+Content-type: application/json
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.overprovisionedGcpServiceAccountFinding",
-    "id": "805e9028-d010-bba1-7272-d85a7a7352e5",
-    "createdDateTime": "String (timestamp)",
-    "permissionsCreepIndex": {
-      "@odata.type": "microsoft.graph.permissionsCreepIndex"
+  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/gcp/findings/graph.overprovisionedGcpServiceAccountFinding",
+  "value": [
+    {
+      "@odata.type": "graph.overprovisionedGcpServiceAccountFinding",
+      "id": "b3ZlcnByb3Zpc2lvbmVkU2VydmljZUFjY291bnRGaW5kaW5nMTM",
+      "identity": {
+          "@odata.type": "graph.gcpServiceAccount",
+          "id": "bW50ZXN0QGNhcmJpZGUtYm9uc2FpLTIwNTAxNy5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbQ==",
+          "externalId": "mntest@carbide-bonsai-205017.iam.gserviceaccount.com",
+          "displayName": "mntest",
+          "source": {
+            "@odata.type": "graph.gsuiteSource",
+            "identityProviderType": "gsuite",
+            "domain": "carbide-bonsai-205017.iam.gserviceaccount.com"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.gcpAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "carbide-bonsai-205017",
+            "authorizationSystemName": "cloudknox-staging",
+            "authorizationSystemType": "gcp"
+          }
+      },
+      "actionSummary": {
+        "assigned": 4624,
+        "exercised": 0,
+        "available": 10542
+      },
+      "permissionsCreepIndex": {
+        "score": 82
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "identityDetails": {
+        "createdDateTime": "2021-04-12T20:34:24Z",
+        "lastActiveDateTime": "2021-10-30T03:21:05Z"
+      }
     },
-    "lastActiveDateTime": "String (timestamp)",
-    "actionSummary": {
-      "@odata.type": "microsoft.graph.actionSummary"
-    }
-  }
+
+  ]
 }
 ```
 
