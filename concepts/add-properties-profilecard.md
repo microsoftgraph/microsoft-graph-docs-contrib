@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Add or remove custom attributes on a profile card using the profile card API
 
-The profile card in Microsoft 365 shows information about a user in an organization. The information shown on the profile card is stored and maintained by the organization, for example **Job title** or **Office location**.
+The [profile card](https://support.microsoft.com/en-au/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Microsoft 365 shows information about a user in an organization. The information shown on the profile card is stored and maintained by the organization, for example **Job title** or **Office location**.
 
 Organizations can use the [profileCardProperty](/graph/api/resources/profilecardproperty) resource to show additional properties from [Azure AD](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) on profile cards for a user in an organization by:
 
@@ -42,12 +42,14 @@ The following table shows how the Azure AD attributes correspond with properties
 | ------------------ | -------------------- |
 | UserPrincipalName | userPrincipalName |
 | Fax | faxNumber |
-| StreetAddress | officeAddress |
+| StreetAddress | streetAddress |
 | PostalCode | postalCode |
 | StateOrProvince | state |
 | Alias | mailNickname |
 
 You can add any of these attributes to the profile card by configuring your [people admin settings](/graph/api/resources/peopleadminsettings) and adding the attribute as the **directoryPropertyName** property of a **profileCardProperty** in Microsoft Graph. When you make additional attributes visible, you must use the property names for `en-us`. You don't have to add localized values. The additional properties will automatically be shown in the language settings that the user has specified for Microsoft 365.
+
+> **Note:** User entity property values contain user information stored and managed by the organization
 
 > [!IMPORTANT]
 > When adding an attribute to profile card, it takes up to 24 hours for the addition to be displayed.
@@ -134,6 +136,8 @@ Content-Type: application/json
   ]
 }
 ```
+
+> **Note:** Custom profile card attributes are added for all users in the organization. Necessary precautions should be taken to avoid accidentally exposing sensitive data.
 
 > **Note:** The `/organization/{organizationId}/settings` path is deprecated in the beta experience. Going forward, use the `/admin/people` path.
 
