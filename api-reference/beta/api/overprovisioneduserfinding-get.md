@@ -24,13 +24,26 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|**SERVICENOWAPI**|
 
 ## HTTP request
-
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/key/findings/graph.overprovisionedUserFinding
+```
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/azure/key/findings/graph.overprovisionedUserFinding
+```
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/gcp/key/findings/graph.overprovisionedUserFinding
 ```
 
 ## Optional query parameters

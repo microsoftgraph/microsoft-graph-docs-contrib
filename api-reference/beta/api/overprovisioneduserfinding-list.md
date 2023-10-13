@@ -30,7 +30,21 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.overprovisionedUserFinding
+```
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
 GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/azure/findings/graph.overprovisionedUserFinding
+```
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/gcp/findings/graph.overprovisionedUserFinding
 ```
 
 ## Optional query parameters

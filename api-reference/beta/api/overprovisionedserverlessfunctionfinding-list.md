@@ -24,13 +24,26 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|**TODO: Provide applicable permissions.**|
 
 ## HTTP request
-
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.overprovisionedServerlessFunctionFinding not found
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.overprovisionedServerlessFunctionFinding
+```
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/azure/findings/graph.overprovisionedServerlessFunctionFinding
+```
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/gcp/findings/graph.overprovisionedServerlessFunctionFinding
 ```
 
 ## Optional query parameters
