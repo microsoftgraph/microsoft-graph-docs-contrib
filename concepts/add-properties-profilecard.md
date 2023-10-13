@@ -137,7 +137,8 @@ Content-Type: application/json
 }
 ```
 
-> **Note:** Custom profile card attributes are added for all users in the organization. Necessary precautions should be taken to avoid accidentally exposing sensitive data.
+> [!IMPORTANT]
+> Custom profile card attributes are added for all users in the organization. Necessary precautions should be taken to avoid accidentally exposing sensitive data.
 
 > **Note:** The `/organization/{organizationId}/settings` path is deprecated in the beta experience. Going forward, use the `/admin/people` path.
 
