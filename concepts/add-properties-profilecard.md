@@ -111,6 +111,9 @@ The following table shows how the Azure AD custom extension attribute names corr
 | extensionAttribute14 | customAttribute14 |
 | extensionAttribute15 | customAttribute15 |
 
+> [!IMPORTANT]
+> Custom profile card attributes are added for all users in the organization. Necessary precautions should be taken to avoid accidentally exposing sensitive data.
+
 ### Example
 
 The following example adds the first Azure AD custom extension attribute to the profile card, using the display name **Cost center**. For users that have set their language settings to German, the display name will be **Kostenstelle**.
@@ -136,9 +139,6 @@ Content-Type: application/json
   ]
 }
 ```
-
-> [!IMPORTANT]
-> Custom profile card attributes are added for all users in the organization. Necessary precautions should be taken to avoid accidentally exposing sensitive data.
 
 > **Note:** The `/organization/{organizationId}/settings` path is deprecated in the beta experience. Going forward, use the `/admin/people` path.
 
