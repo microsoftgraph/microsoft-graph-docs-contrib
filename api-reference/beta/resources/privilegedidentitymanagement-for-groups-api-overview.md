@@ -150,7 +150,7 @@ Only the approver of the request can call the `/approval` and `/approvalStep` en
 
 ## See also
 
-- Visit the Microsoft Entra architecture center to learn more about [Microsoft Entra security operations for Privileged Identity Management](/azure/active-directory/architecture/security-operations-privileged-identity-management?source=docs#privileged-identity-management-alerts).
+- [Microsoft Entra security operations for Privileged Identity Management](/azure/active-directory/architecture/security-operations-privileged-identity-management?source=docs#privileged-identity-management-alerts) in the Microsoft Entra architecture center
 
 <!-- {
   "type": "#page.annotation",
