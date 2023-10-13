@@ -1,9 +1,9 @@
 ---
 title: "Get superServerlessFunctionFinding"
 description: "Read the properties and relationships of a superServerlessFunctionFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,6 +30,21 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/key/findings/graph.superServerlessFunctionFinding
+```
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/key/findings/graph.superServerlessFunctionFinding
+```
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/key/findings/graph.superServerlessFunctionFinding
 ```
 
 ## Optional query parameters
@@ -47,6 +62,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [superServerlessFunctionFinding](../resources/superserverlessfunctionfinding.md) object in the response body.
 
+If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the key passed into the GET method is invalid.
+
 ## Examples
 
 ### Request
@@ -57,7 +74,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure('id)/findings/graph.superServerlessFunctionFinding
 ```
 
 
@@ -72,21 +89,47 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
-
+Content-type: application/json
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.superServerlessFunctionFinding",
-    "id": "fc5d7e58-3208-f5de-6f77-e8eae196a7da",
-    "createdDateTime": "String (timestamp)",
-    "permissionsCreepIndex": {
-      "@odata.type": "microsoft.graph.permissionsCreepIndex"
+  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/azure/findings/graph.superServerlessFunctionFinding",
+  "value": [
+    {
+      "@odata.type": "graph.superServerlessFunctionFinding",
+      "id": "c3VwZXJTZXJ2ZXJsZXNzRnVuY3Rpb25GaW5kaW4z",
+      "identity": {
+          "@odata.type": "graph.azureServerlessFunction",
+          "id":"L3N1YnNjcmlwdGlvbnMvNmVhMjg1ZDktZmU3ZS00OWY2LWEwZmYtMjAzYzFhN2FjMjI1L3Jlc291cmNlR3JvdXBzL9C/0YPRgdGC0YvQvdC90YvRhS9wcm92aWRlcnMvTWljcm9zb2Z0LldlYi9zaXRlcy9LaXJjaHLDtmFkcw==",
+          "externalId": "/subscriptions/6ea285d9-fe7e-49f6-a0ff-203c1a7ac225/resourceGroups/пустынных/providers/Microsoft.Web/sites/Kirchröads",
+          "displayName": "Kirchröads",
+          "source": {
+            "@odata.type": "graph.aadSource":,
+            "identityProviderType": "aad",
+            "domain": "mciemc1.onmicrosoft.com"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.azureAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "e7c4026e-93bc-404f-9f77-0af3ed4df58c",
+            "authorizationSystemName": "Microsoft Azure Sponsorship 2",
+            "authorizationSystemType": "azure"
+          }
+      },
+      "actionSummary": {
+        "assigned": 2,
+        "exercised": 0,
+        "available": 12906
+      },
+      "permissionsCreepIndex": {
+        "score": 0
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "identityDetails": {
+        "createdDateTime": "2021-04-12T20:34:24Z",
+        "lastActiveDateTime": "2021-10-30T03:21:05Z"
+      }
     },
-    "lastActiveDateTime": "String (timestamp)",
-    "actionSummary": {
-      "@odata.type": "microsoft.graph.actionSummary"
-    }
-  }
+
+  ]
 }
 ```
 

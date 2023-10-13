@@ -67,7 +67,7 @@ If successful, this method returns a `200 OK` response code and a [superUserFind
 If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the key passed into the GET method is invalid.
 
 ## Examples
-
+The following is an example of a GCP request.
 ### Request
 The following is an example of a request.
 <!-- {
@@ -76,7 +76,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws('id')/findings/graph.superUserFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp('id')/findings/graph.superUserFinding
 ```
 
 ### Response
