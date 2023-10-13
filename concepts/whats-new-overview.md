@@ -31,9 +31,6 @@ You can now configure the Azure AD [certificate-based authentication (CBA)](/gra
 ### Reports
 The audit trail of all HTTP requests that Microsoft Graph received and processed for your tenant are now available through **Microsoft Graph activity logs**. Use Azure Monitor Logs to collect the logs and configure downstream destinations such as Azure Storage or stream with Azure Event Hubs to external security information and event management (SIEM) tools. For more information about Microsoft Graph activity logs, see [Access Microsoft Graph activity logs (preview)](/graph/microsoft-graph-activity-logs-overview).
 
-### Teamwork and communications | Calls and online meetings
-Use application permission (`OnlineMeetingTranscript.Read.Chat`) to read the [call transcript](/graph/api/resources/calltranscript?view=graph-rest-beta&preserve-view=true) of a chat. _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=d51c4dba-957b-47a8-9eb5-be042d0519fd)_.
-
 ### Workbooks and charts
 - [List](/graph/api/workbookworksheet-list-tasks?view=graph-rest-beta&preserve-view=true) [document tasks](/graph/api/resources/workbookDocumentTask?view=graph-rest-beta&preserve-view=true) on a [worksheet](/graph/api/resources/workbookWorksheet?view=graph-rest-beta&preserve-view=true). _See the [related changelog section](https://developer.microsoft.com/en-us/graph/changelog/?search=5472d980-5acf-4663-b1af-c7d22e28d1b3)_.
 - [List](/graph/api/workbookdocumenttask-list-changes?view=graph-rest-beta&preserve-view=true) the [changes of a document task](/graph/api/resources/workbookdocumenttaskchange?view=graph-rest-beta&preserve-view=true) associated with a [comment](/graph/api/resources/workbookcomment?view=graph-rest-beta&preserve-view=true) or [reply for a comment](/graph/api/resources/workbookcommentreply?view=graph-rest-beta&preserve-view=true) in a worksheet.
