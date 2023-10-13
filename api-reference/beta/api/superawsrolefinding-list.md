@@ -1,9 +1,9 @@
 ---
 title: "List superAwsRoleFindings"
 description: "Get a list of the superAwsRoleFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -16,12 +16,12 @@ Get a list of the [superAwsRoleFinding](../resources/superawsrolefinding.md) obj
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
-
+ 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.superAwsRoleFinding not found
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.superAwsRoleFinding
 ```
 
 ## Optional query parameters
@@ -47,6 +47,8 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [superAwsRoleFinding](../resources/superawsrolefinding.md) objects in the response body.
+
+If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the LIST method filter uses a bad key.
 
 ## Examples
 
