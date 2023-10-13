@@ -5,12 +5,12 @@ author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
-ms.date: 10/03/2023
+ms.date: 10/12/2023
 ---
 
 # Govern membership and ownership of groups using PIM for groups
 
-With Privileged Identity Management for groups (PIM for groups), you can govern how principals are assigned membership or ownership of [groups](groups-overview.md). Security and Microsoft 365 groups are critical resources that you can use to provide access to Microsoft cloud resources like Azure AD roles, Azure roles, Azure SQL, Azure Key Vault, Intune; and third-party applications. PIM for groups gives you more control over how and when principals are members or owners of groups, and therefore have privileges granted through their group membership or ownership.
+With [Privileged Identity Management for groups (PIM for groups)](/azure/active-directory/privileged-identity-management/concept-pim-for-groups), you can govern how principals are assigned membership or ownership of [groups](groups-overview.md). Security and Microsoft 365 groups are critical resources that you can use to provide access to Microsoft cloud resources like Azure AD roles, Azure roles, Azure SQL, Azure Key Vault, Intune; and third-party applications. PIM for groups gives you more control over how and when principals are members or owners of groups, and therefore have privileges granted through their group membership or ownership.
 
 The PIM for groups APIs in Microsoft Graph provide you with more governance over security and Microsoft 365 groups such as the following capabilities:
 
@@ -150,10 +150,8 @@ Only the approver of the request can call the `/approval` and `/approvalStep` en
 
 ## See also
 
-- [What is Azure AD Identity Governance?](/azure/active-directory/governance/identity-governance-overview)
-- [What is Azure AD Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
-- [Privileged Identity Management (PIM) for groups](/azure/active-directory/privileged-identity-management/concept-pim-for-groups)
-  
+- [Microsoft Entra security operations for Privileged Identity Management](/azure/active-directory/architecture/security-operations-privileged-identity-management?source=docs#privileged-identity-management-alerts) in the Microsoft Entra architecture center
+
 <!-- {
   "type": "#page.annotation",
   "description": "",
