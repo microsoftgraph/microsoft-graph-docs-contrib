@@ -25,12 +25,12 @@ Represents a plan in Microsoft 365. Either a [group](group.md) or a [user](user.
 |[Update](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md)	|Update **plannerPlan** object. |
 |[Delete](../api/plannerplan-delete.md) | None | Delete **plannerPlan** object. |
 |[Get delta](../api/plannerplan-delta.md) | [plannerPlan](../resources/plannerplan.md) collection | Get newly created, updated, or deleted **plannerPlan** objects in either a **group** or a [plannerRoster](plannerroster.md) type container without having to perform a full read of the entire resource collection. |
-|[Move plannerPlan to Container](../api/plannerplan-movetocontainer.md) | [plannerPlan](../resources/plannerplan.md) | Move a **plannerPlan** object from a User to Group **plannerPlanContainer**. |
+|[Move plannerPlan to Container](../api/plannerplan-movetocontainer.md) | [plannerPlan](../resources/plannerplan.md) | Move a **plannerPlan** object from one **plannerPlanContainer** to another. |
 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|container|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifies the container of the plan. Specify only the **url**, the **containerId** and **type**, or all properties. After it's set, this property can’t be updated. It can change when a plan is moved from User to Group container, using [plan move to container](../api/plannerplan-movetocontainer.md). Required.|
+|container|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifies the container of the plan. Specify only the **url**, the **containerId** and **type**, or all properties. After it's set, this property can’t be updated. It changes when a plan is moved from one container to another, using [plan move to container](../api/plannerplan-movetocontainer.md). Required.|
 |contexts|[plannerPlanContextCollection](plannerplancontextcollection.md)| Read-only. Other user experiences in which this plan is used, represented as [plannerPlanContext](plannerplancontext.md) entries.|
 |createdBy|[identitySet](identityset.md)|Read-only. The user who created the plan.|
 |createdDateTime|DateTimeOffset|Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
