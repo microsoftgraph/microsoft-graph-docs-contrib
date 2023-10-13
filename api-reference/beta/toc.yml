@@ -1320,19 +1320,19 @@ items:
                         href: api/remotedesktopsecurityconfiguration-update.md
                       - name: Delete
                         href: api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
-                        - name: Target device groups
-                          href: resources/targetdevicegroup.md
-                          items:
-                            - name: List
-                              href: api/remotedesktopsecurityconfiguration-list-targetdevicegroups.md
-                            - name: Create
-                              href: api/remotedesktopsecurityconfiguration-post-targetdevicegroups.md
-                            - name: Get
-                              href: api/targetdevicegroup-get.md
-                            - name: Update
-                              href: api/targetdevicegroup-update.md
-                            - name: Delete
-                              href: api/remotedesktopsecurityconfiguration-delete-targetdevicegroups.md                        
+                      - name: Target device groups
+                        href: resources/targetdevicegroup.md
+                        items:
+                          - name: List
+                            href: api/remotedesktopsecurityconfiguration-list-targetdevicegroups.md
+                          - name: Create
+                            href: api/remotedesktopsecurityconfiguration-post-targetdevicegroups.md
+                          - name: Get
+                            href: api/targetdevicegroup-get.md
+                          - name: Update
+                            href: api/targetdevicegroup-update.md
+                          - name: Delete
+                            href: api/remotedesktopsecurityconfiguration-delete-targetdevicegroups.md                        
                   - name: Token issuance policy
                     href: resources/tokenissuancepolicy.md
                     items:
