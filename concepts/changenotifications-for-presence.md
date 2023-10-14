@@ -73,7 +73,7 @@ Bulk subscriptions for user presence can be created by setting the subscription 
 
 ## Receive presence event notifications
 
-Change notifications for presence events are expected when a subscribed user presence experiences a change in a user's availability and activity.
+Change notifications for presence events are triggered when changes to a user's availability and activity are made.
 
 ### Example: Basic presence notifications
 ```json
