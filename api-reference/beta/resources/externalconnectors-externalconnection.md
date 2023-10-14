@@ -69,21 +69,16 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
+  "activitySettings": {"@odata.type": "microsoft.graph.externalConnectors.activitySettings"},
+  "configuration": {"@odata.type": "microsoft.graph.externalConnectors.configuration"},
+  "connectorId": "String",
+  "description": "String",
+  "enabledContentExperiences": "[String]",
   "id": "String (identifier)",
   "ingestedItemsCount": "Int64",
   "name": "String",
-  "description": "String",
-  "configuration": {
-    "@odata.type": "microsoft.graph.externalConnectors.configuration"
-  },
-  "state": "String",
-  "connectorId": "String",
-  "searchSettings": {
-    "@odata.type": "microsoft.graph.externalConnectors.searchSettings"
-  },
-  "activitySettings": {
-    "@odata.type": "microsoft.graph.externalConnectors.activitySettings"
-  }
+  "searchSettings": {"@odata.type": "microsoft.graph.externalConnectors.searchSettings"},
+  "state": "String"
 }
 ```
 

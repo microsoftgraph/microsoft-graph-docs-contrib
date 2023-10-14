@@ -57,6 +57,10 @@ The following is a JSON representation of the resource.
   "activitySettings": {
     "@odata.type": "microsoft.graph.externalConnectors.activitySettings"
   },
+  "configuration": {
+    "@odata.type": "microsoft.graph.externalConnectors.configuration"
+  },
+  "connectorId": "String",
   "description": "String",
   "id": "String (identifier)",
   "name": "String",
@@ -64,7 +68,6 @@ The following is a JSON representation of the resource.
     "@odata.type": "microsoft.graph.externalConnectors.searchSettings"
   },
   "state": "String"
-
 }
 ```
 
