@@ -63,7 +63,7 @@ This section describes implementation differences in the Microsoft Graph for the
 | **Channel**            |                                                          |
 [Channel](/graph/api/resources/channel) | Channel APIs are not supported in the context of shared channels, which are channels with a **channelMembershipType** value of `shared`.
 | **Chat**            |                                                          |
-|[List chats](/graph/api/chat-list)| The `OrderBy` OData query parameter is not supported for this api. |
+|[List chats](/graph/api/chat-list)| The `OrderBy` OData query parameter is not supported. |
 | **Messaging**            |                                                          |
 [Export content](/microsoftteams/export-teams-content) | APIs to export chat and channel messages are not supported. 
 | **Team Membership**            |                                                          |
