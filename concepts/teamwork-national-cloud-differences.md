@@ -46,22 +46,22 @@ This section describes implementation differences in the Microsoft Graph for US 
 |[Soft delete a message](/graph/api/chatmessage-softdelete) | Not supported in the GCC High and DOD Environments. |
 |[List messages in a chat](/graph/api/chat-list-messages) | The `OrderBy` OData query parameter is not supported in the GCC environment. |
 
-## Implementation differences in Microsoft Graph for Microsoft China cloud
+## Implementation differences in Microsoft Graph for Microsoft Graph China operated by 21Vianet
 
-This section describes implementation differences in the Microsoft Graph for the Microsoft China cloud.
+This section describes implementation differences in the Microsoft Graph for the Microsoft Graph China operated by 21Vianet.
 
 |API    | Details              |
 |:--------------------|:---------------------------------------------------------|
 **Apps**            |                                                          |
 [Apps in Microsoft Teams app catalog](/graph/api/resources/teamsapp) | APIs to create, update, or delete apps in the catalog are not supported.
 [App installation](/graph/api/resources/teamsappinstallation) | APIs to manage app installation are not supported in any scope.
-[Resource specific permission grant](/graph/api/resources/resourcespecificpermissiongrant) | APIs to list resource specific permission grants are not supported in any scope.
+[Resource-specific permission grant](/graph/api/resources/resourcespecificpermissiongrant) | APIs to list resource-specific permission grants are not supported in any scope.
 **Activity Feed**            |                                                          |
 | [Activity Feed notifications](/graph/teams-send-activityfeednotifications)| APIs to send activity feed notifications are not supported in any scope. |
 | **Tabs**            |                                                          |
 [Tabs](/graph/api/resources/teamstab) | APIs to manage tabs in chat and channels are not supported.
 | **Channel**            |                                                          |
-[Channel](/graph/api/resources/channel) | Channel APIs are not supported in the context of Shared channels, which are channels with a **channelMembershipType** value of `Shared`.
+[Channel](/graph/api/resources/channel) | Channel APIs are not supported in the context of shared channels, which are channels with a **channelMembershipType** value of `shared`.
 | **Chat**            |                                                          |
 |[List chats](/graph/api/chat-list)| The `OrderBy` OData query parameter is not supported for this api. |
 | **Messaging**            |                                                          |
