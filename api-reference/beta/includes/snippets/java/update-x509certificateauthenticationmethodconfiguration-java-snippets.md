@@ -31,6 +31,9 @@ rules1.x509CertificateAuthenticationMode = X509CertificateAuthenticationMode.X50
 rulesList.add(rules1);
 authenticationModeConfiguration.rules = rulesList;
 authenticationMethodConfiguration.authenticationModeConfiguration = authenticationModeConfiguration;
+X509CertificateIssuerHintsConfiguration issuerHintsConfiguration = new X509CertificateIssuerHintsConfiguration();
+issuerHintsConfiguration.state = X509CertificateIssuerHintsState.DISABLED;
+authenticationMethodConfiguration.issuerHintsConfiguration = issuerHintsConfiguration;
 LinkedList<AuthenticationMethodTarget> includeTargetsList = new LinkedList<AuthenticationMethodTarget>();
 AuthenticationMethodTarget includeTargets = new AuthenticationMethodTarget();
 includeTargets.targetType = AuthenticationMethodTargetType.GROUP;
