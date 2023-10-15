@@ -1,6 +1,6 @@
 ---
 title: "hostPort resource type"
-description: "Represents the connection endpoints that direct data to and from the services running on a host."
+description: "Represents the connection endpoints that direct data to and from the services that run on a host."
 author: "angelo-moulic"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents the connection endpoints that direct data to and from the services running on a [host](../resources/security-host.md).
+Represents the connection endpoints that direct data to and from the services that run on a [host](../resources/security-host.md).
 
 Inherits from [entity](../resources/entity.md).
 
