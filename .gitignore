@@ -11,3 +11,5 @@ apidoc.exe
 
 # Unotes related files
 .unotes/
+api-reference/beta/includes/snippets/powershell/patch-chatmessage-4-powershell-snippets.md
+includes/snippets/powershell/tutorial-configure-saml-sso-create-claimsmappingpolicy-powershell-snippets.md

@@ -1,6 +1,6 @@
 ---
 title: "branchConnectivityConfiguration resource type"
-description: "The branchConnectivityConfiguration represents the specific configuration settings and parameters for the connectivity of a branch."
+description: "BranchConnectivityConfiguration specifies how a branch's connectivity is configured."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The branchConnectivityConfiguration represents the specific configuration settings and parameters for the connectivity of a branch.
+BranchConnectivityConfiguration specifies how a branch's connectivity is configured.
 
 ## Methods
 |Method|Return type|Description|
@@ -23,13 +23,13 @@ The branchConnectivityConfiguration represents the specific configuration settin
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|branchId|String|Unique identifier or a specific reference assigned to a branch.|
-|branchName|String|Display name assigned to a branch.|
+|branchId|String|Unique identifier or a specific reference assigned to a branchSite. Key.|
+|branchName|String|Display name assigned to a branchSite.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|links|[microsoft.graph.networkaccess.connectivityConfigurationLink](../resources/networkaccess-connectivityconfigurationlink.md) collection|**TODO: Add Description**|
+|links|[microsoft.graph.networkaccess.connectivityConfigurationLink](../resources/networkaccess-connectivityconfigurationlink.md) collection|List of connectivity configurations of device links link|
 
 ## JSON representation
 The following is a JSON representation of the resource.

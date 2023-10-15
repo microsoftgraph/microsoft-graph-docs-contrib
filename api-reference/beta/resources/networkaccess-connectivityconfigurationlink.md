@@ -1,6 +1,6 @@
 ---
 title: "connectivityConfigurationLink resource type"
-description: "Represents the link or association between a branch, and its corresponding connectivity configuration."
+description: "Specifies connectivity details for device links associated with a branch, providing access within the branchConnectivityConfiguration."
 author: "Moti-ba"
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -13,10 +13,10 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the link or association between a branch, and its corresponding connectivity configuration.
+Specifies connectivity details for device links associated with a branch, providing access within the branchConnectivityConfiguration
 
 ## Methods
-No methods available.
+None.
 
 ## Properties
 |Property|Type|Description|
