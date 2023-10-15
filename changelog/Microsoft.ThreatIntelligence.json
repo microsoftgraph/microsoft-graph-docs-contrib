@@ -21,6 +21,14 @@
         {
           "Id": "a9a67281-e206-43ef-92d1-ad9375b97d1b",
           "ApiChange": "Resource",
+          "ChangedApiName": "hostPort",
+          "ChangeType": "Addition",
+          "Description": "Added the [hostPort](https://learn.microsoft.com/en-us/graph/api/resources/security-hostPort?view=graph-rest-beta) resource and supported methods.",
+          "Target": "hostPort"
+        },
+        {
+          "Id": "a9a67281-e206-43ef-92d1-ad9375b97d1b",
+          "ApiChange": "Resource",
           "ChangedApiName": "hostPortBanner",
           "ChangeType": "Addition",
           "Description": "Added the [hostPortBanner](https://learn.microsoft.com/en-us/graph/api/resources/security-hostPortBanner?view=graph-rest-beta) resource type.",
@@ -36,15 +44,7 @@
         },
         {
           "Id": "a9a67281-e206-43ef-92d1-ad9375b97d1b",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [list](https://learn.microsoft.com/en-us/graph/api/security-host-list-ports?view=graph-rest-beta) operation to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
-          "Target": "host"
-        },
-        {
-          "Id": "a9a67281-e206-43ef-92d1-ad9375b97d1b",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "ports",
           "ChangeType": "Addition",
           "Description": "Added the **ports** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-beta) resource.",
@@ -52,23 +52,7 @@
         },
         {
           "Id": "a9a67281-e206-43ef-92d1-ad9375b97d1b",
-          "ApiChange": "Resource",
-          "ChangedApiName": "hostPort",
-          "ChangeType": "Addition",
-          "Description": "Added the [hostPort](https://learn.microsoft.com/en-us/graph/api/resources/security-hostPort?view=graph-rest-beta) resource",
-          "Target": "hostPort"
-        },
-        {
-          "Id": "a9a67281-e206-43ef-92d1-ad9375b97d1b",
-          "ApiChange": "Method",
-          "ChangedApiName": "GET",
-          "ChangeType": "Addition",
-          "Description": "Added the [get](https://learn.microsoft.com/en-us/graph/api/security-hostport-get?view=graph-rest-beta) operation to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
-          "Target": "threatIntelligence"
-        },
-        {
-          "Id": "a9a67281-e206-43ef-92d1-ad9375b97d1b",
-          "ApiChange": "Resource",
+          "ApiChange": "Relationship",
           "ChangedApiName": "hostPorts",
           "ChangeType": "Addition",
           "Description": "Added the **hostPorts** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-beta) resource.",
@@ -80,7 +64,73 @@
       "Version": "beta",
       "CreatedDateTime": "2023-09-05T16:46:05.0563028Z",
       "WorkloadArea": "Security",
-      "SubArea": "Threat Intelligence"
+      "SubArea": "Threat intelligence"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6f211280-ef11-487b-b98a-fe6eec64ea7b",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "hostPortProtocol",
+          "ChangeType": "Addition",
+          "Description": "Added the **hostPortProtocol** enumeration type.",
+          "Target": "hostPortProtocol"
+        },
+        {
+          "Id": "6f211280-ef11-487b-b98a-fe6eec64ea7b",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "hostPortStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **hostPortStatus** enumeration type.",
+          "Target": "hostPortStatus"
+        },
+        {
+          "Id": "6f211280-ef11-487b-b98a-fe6eec64ea7b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hostPort",
+          "ChangeType": "Addition",
+          "Description": "Added the [hostPort](https://learn.microsoft.com/en-us/graph/api/resources/security-hostPort?view=graph-rest-1.0) resource and supported methods.",
+          "Target": "hostPort"
+        },
+        {
+          "Id": "6f211280-ef11-487b-b98a-fe6eec64ea7b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hostPortBanner",
+          "ChangeType": "Addition",
+          "Description": "Added the [hostPortBanner](https://learn.microsoft.com/en-us/graph/api/resources/security-hostPortBanner?view=graph-rest-1.0) resource type.",
+          "Target": "hostPortBanner"
+        },
+        {
+          "Id": "6f211280-ef11-487b-b98a-fe6eec64ea7b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "hostPortComponent",
+          "ChangeType": "Addition",
+          "Description": "Added the [hostPortComponent](https://learn.microsoft.com/en-us/graph/api/resources/security-hostPortComponent?view=graph-rest-1.0) resource type.",
+          "Target": "hostPortComponent"
+        },
+        {
+          "Id": "6f211280-ef11-487b-b98a-fe6eec64ea7b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "ports",
+          "ChangeType": "Addition",
+          "Description": "Added the **ports** relationship to the [host](https://learn.microsoft.com/en-us/graph/api/resources/security-host?view=graph-rest-1.0) resource.",
+          "Target": "host"
+        },
+        {
+          "Id": "6f211280-ef11-487b-b98a-fe6eec64ea7b",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "hostPorts",
+          "ChangeType": "Addition",
+          "Description": "Added the **hostPorts** relationship to the [threatIntelligence](https://learn.microsoft.com/en-us/graph/api/resources/security-threatIntelligence?view=graph-rest-1.0) resource.",
+          "Target": "threatIntelligence"
+        }
+      ],
+      "Id": "6f211280-ef11-487b-b98a-fe6eec64ea7b",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-09-05T16:46:05.0563028Z",
+      "WorkloadArea": "Security",
+      "SubArea": "Threat intelligence"
     },
     {
       "ChangeList": [
