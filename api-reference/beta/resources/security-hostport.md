@@ -1,6 +1,6 @@
 ---
 title: "hostPort resource type"
-description: "Represents the connection endpoints that direct data to and from the services running on a host."
+description: "Represents the connection endpoints that direct data to and from the services that running on a host."
 author: "angelo-moulic"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -23,7 +23,7 @@ Inherits from [entity](../resources/entity.md).
 
 | Method                                               | Return type                                                                       | Description                                                     |
 |:-----------------------------------------------------|:----------------------------------------------------------------------------------|:----------------------------------------------------------------|
-| [List hostPorts](../api/security-host-list-ports.md) | [microsoft.graph.security.hostPort](../resources/security-hostport.md) collection | Get a list of **hostPort** objects assoicated with a host.      |
+| [List hostPorts](../api/security-host-list-ports.md) | [microsoft.graph.security.hostPort](../resources/security-hostport.md) collection | Get a list of **hostPort** objects assoicated with a **host**.      |
 | [Get hostPort](../api/security-hostport-get.md)      | [microsoft.graph.security.hostPort](../resources/security-hostport.md)            | Read the properties and relationships of a **hostPort** object. |
 
 ## Properties
