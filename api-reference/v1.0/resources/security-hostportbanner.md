@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents a banner retrieved from scanning a port on a host.
+Represents a banner retrieved from scanning a port on a [host](../resources/security-host.md).
 
 ## Properties
 
