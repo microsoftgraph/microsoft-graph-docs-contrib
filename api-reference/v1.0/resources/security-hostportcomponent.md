@@ -1,6 +1,6 @@
 ---
 title: "hostPortComponent resource type"
-description: "Represents a web component that is running on a specific hostPort"
+description: "Represents a web component that runs on a specific hostPort."
 author: "angelo-moulic"
 ms.localizationpriority: medium
 ms.prod: "security"
@@ -13,15 +13,15 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Represents a web component that is running on a specific **hostPort**
+Represents a web component that runs on a specific [hostPort](../resources/security-hostport.md).
 
 ## Properties
 
 | Property          | Type           | Description                                                                                                                                                                                                                                                                                                          |
 | :---------------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| firstSeenDateTime | DateTimeOffset | The first date and time when Microsoft Defender Threat Intelligence observed the **hostPortComponent**. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.                                       |
+| firstSeenDateTime | DateTimeOffset | The first date and time when Microsoft Defender Threat Intelligence observed the **hostPortComponent**. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is `2014-01-01T00:00:00Z`.                                       |
 | isRecent          | Boolean        | Indicates whether this **hostPortComponent** is recent. It is recent if either it was seen at the same time or more recently than the latest **hostPortBanner** in the scan history or it was seen within two days of the latest scan of the **hostPort**, and there are no **hostPortBanners** in the scan history. |
-| lastSeenDateTime  | DateTimeOffset | The last date and time when Microsoft Defender Threat Intelligence observed the **hostPortComponent**. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.                                        |
+| lastSeenDateTime  | DateTimeOffset | The last date and time when Microsoft Defender Threat Intelligence observed the **hostPortComponent**. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014, is `2014-01-01T00:00:00Z`.                                        |
 
 ## Relationships
 
@@ -42,11 +42,9 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.security.hostPortComponent",
+  "component": {"@odata.type": "microsoft.graph.security.hostComponent"},
   "firstSeenDateTime": "String (timestamp)",
-  "lastSeenDateTime": "String (timestamp)",
   "isRecent": "Boolean",
-  "component": {
-    "@odata.type": "microsoft.graph.security.hostComponent"
-  }
+  "lastSeenDateTime": "String (timestamp)"
 }
 ```
