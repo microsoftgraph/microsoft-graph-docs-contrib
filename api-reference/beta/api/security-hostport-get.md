@@ -44,11 +44,11 @@ This method supports the `$select` and `$expand` OData query parameters to help 
 
 The following properties can be used for `$select` calls.
 
-| Property                                                     | Example                            | Notes                                                                                        |
-| :----------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------------------------------------- |
-| All [hostPort](../resources/security-hostport.md) properties | `$select=id,firstSeenDateTime`     | Use the name as it appears in the [hostPort](../resources/security-hostport.md) resource.    |
-| mostRecentSslCertificate                                     | `$select=mostRecentSslCertificate` | Does not support selecting on nested properties (for example `mostRecentSslCertificate/id`). |
-| host                                                         | `$select=host`                     | Does not support selecting on nested properties (for example `host/id`).                     |
+| Property                                                     | Example                            | Notes                                                                                      |
+| :----------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------------------------------------|
+| All [hostPort](../resources/security-hostport.md) properties | `$select=id,firstSeenDateTime`     | Use the name as it appears in the [hostPort](../resources/security-hostport.md) resource.  |
+| mostRecentSslCertificate                                     | `$select=mostRecentSslCertificate` | You can't use `$select` on nested properties (for example, `mostRecentSslCertificate/id`). |
+| host                                                         | `$select=host`                     | You can't use `$select` on nested properties (for example, `host/id`).                     |
 
 The following properties can be used for `$expand` calls.
 
@@ -64,7 +64,7 @@ The following properties can be used for `$expand` calls.
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -78,7 +78,8 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "get_hostport"
+  "name": "get_hostport",
+  "sampleKeys": ["ODUuMTMuMTM5LjE4JCQyMQ=="]
 }
 -->
 
@@ -88,7 +89,7 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/hostPorts/ODUuM
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
