@@ -8084,10 +8084,10 @@ items:
                 items:
                   - name: Host port
                     href: resources/security-hostport.md
+                  - name: List
+                    href: api/security-host-list-ports.md
                   - name: Get
                     href: api/security-hostport-get.md
-                  - name: List ports for a host
-                    href: api/security-host-list-ports.md
               - name: Host SSL certificate
                 items:
                 - name: Host SSL certificate
