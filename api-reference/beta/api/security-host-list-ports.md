@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 | :------------------------------------- | :------------------------------------------ |
-| Delegated (work or school account)     | ThreatIntelligence.Read.All.                |
+| Delegated (work or school account)     | ThreatIntelligence.Read.All                 |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | ThreatIntelligence.Read.All.                |
+| Application                            | ThreatIntelligence.Read.All                 |
 
 ## HTTP request
 
@@ -40,15 +40,15 @@ GET /security/threatIntelligence/hosts/{hostId}/ports
 
 ## Optional query parameters
 
-This method supports `$count`, `$skip`, `$top`, `$select`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$count`, `$skip`, `$top`, `$select`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 The following properties can be used for `$select` calls.
 
-| Property                                                     | Example                            | Notes                                                                                        |
-| :----------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------------------------------------- |
-| All [hostPort](../resources/security-hostport.md) properties | `$select=id,firstSeenDateTime`     | Use the name as it appears in the [hostPort](../resources/security-hostport.md) resource.    |
-| mostRecentSslCertificate                                     | `$select=mostRecentSslCertificate` | Does not support selecting on nested properties (for example `mostRecentSslCertificate/id`). |
-| host                                                         | `$select=host`                     | Does not support selecting on nested properties (for example `host/id`).                     |
+| Property                                                     | Example                            | Notes                                                                                      |
+| :----------------------------------------------------------- | :--------------------------------- | :----------------------------------------------------------------------------------------- |
+| All [hostPort](../resources/security-hostport.md) properties | `$select=id,firstSeenDateTime`     | Use the name as it appears in the [hostPort](../resources/security-hostport.md) resource.  |
+| mostRecentSslCertificate                                     | `$select=mostRecentSslCertificate` | You can't use `$select` on nested properties (for example, `mostRecentSslCertificate/id`). |
+| host                                                         | `$select=host`                     | You can't use `$select` on nested properties (for example, `host/id`).                     |
 
 The following properties can be used for `$expand` calls.
 
@@ -64,7 +64,7 @@ The following properties can be used for `$expand` calls.
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -78,7 +78,8 @@ The following is an example of a request.
 
 <!-- {
   "blockType": "request",
-  "name": "list_hostport"
+  "name": "list_hostport",
+  "sampleKeys": ["8.8.8.8"]
 }
 -->
 
@@ -88,7 +89,7 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/hosts/8.8.8.8/p
 
 ### Response
 
-The following is an example of the response
+The following is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
