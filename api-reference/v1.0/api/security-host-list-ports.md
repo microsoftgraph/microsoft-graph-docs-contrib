@@ -1,5 +1,5 @@
 ---
-title: "List ports"
+title: "List hostPorts"
 description: "Get the list of hostPort resources associated with a host."
 author: angelo-moulic
 ms.localizationpriority: medium
@@ -7,13 +7,13 @@ ms.prod: security
 doc_type: apiPageType
 ---
 
-# List ports
+# List hostPorts
 
 Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get the list of [hostPort](../resources/security-hostport.md) resources associated with a host.
+Get the list of [hostPort](../resources/security-hostport.md) resources associated with a [host](../resources/security-host.md).
 
 ## Permissions
 
