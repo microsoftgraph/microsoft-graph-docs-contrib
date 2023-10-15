@@ -1,6 +1,6 @@
 ---
 title: "hostPort resource type"
-description: "Represents the connection endpoints that direct data to and from the services that running on a host."
+description: "Represents the connection endpoints that direct data to and from the services running on a host."
 author: "angelo-moulic"
 ms.localizationpriority: medium
 ms.prod: "security"
