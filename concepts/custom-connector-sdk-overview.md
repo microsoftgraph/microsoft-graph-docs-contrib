@@ -16,6 +16,8 @@ The SDK includes the framework and contract components to help you write the cod
 
 The connectors SDK enables you to create custom Microsoft Graph connectors directly within the Visual Studio integrated development environment (IDE). It provides everything you need to build, debug, and deploy your custom connector.
 
+Items ingested through connections built with the SDK consume your item quota. To learn more about how to determine how much item quota you have and how to purchase more quota, see [licensing requirements and pricing](/microsoftsearch/licensing). 
+
 ## Components
 
 The connectors SDK includes the following components:
@@ -54,7 +56,7 @@ It includes the following capabilities:
 
 >[!Note]
 > The following capabilities are not currently available:
-> - Microsoft Graph-based data source traversal during crawls; for example, traversing through folder structures.
+> - Graph-based data source traversal during crawls; for example, traversing through folder structures.
 > - The ability to manage search permissions based on access control from your data source.
 
 You can get started in C# with our sample connector or in other supported languages using the contracts from the [Microsoft Graph connectors SDK page in GitHub](https://github.com/microsoftgraph/msgraph-connectors-sdk).

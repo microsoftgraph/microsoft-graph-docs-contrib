@@ -34,6 +34,9 @@ request_body = X509CertificateAuthenticationMethodConfiguration(
 			),
 		]
 	),
+	issuer_hints_configuration = X509CertificateIssuerHintsConfiguration(
+		state = X509CertificateIssuerHintsState.Disabled,
+	),
 	include_targets = [
 		AuthenticationMethodTarget(
 			target_type = AuthenticationMethodTargetType.Group,

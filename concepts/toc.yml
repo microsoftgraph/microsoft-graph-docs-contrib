@@ -84,6 +84,8 @@ items:
             displayName: monetize, charge, cost, pricing
           - name: List of metered APIs
             href: metered-api-list.md
+      - name: Microsoft Graph activity logs
+        href: microsoft-graph-activity-logs-overview.md
       - name: Versioning and support
         href: versioning-and-support.md
       - name: Terms of use
@@ -764,11 +766,13 @@ items:
                 href: cloud-communications-watermark-meeting.md
           - name: Change notifications
             items:
-              - name: Subscribe for teams, chats, channels
+              - name: Subscribe to teams, chats, channels
                 href: teams-change-notification-in-microsoft-teams-overview.md
-              - name: Subscribe for online meetings
+              - name: Subscribe to user presence
+                href: changenotifications-for-presence.md
+              - name: Subscribe to online meetings
                 href: changenotifications-for-onlinemeeting.md
-              - name: Subscribe for virtual events
+              - name: Subscribe to virtual events
                 href: changenotifications-for-virtualevent.md
           - name: Groups and teams
             items:
@@ -1145,6 +1149,8 @@ items:
                 href: toolkit/customize-components/disambiguation.md
           - name: Upgrading to v3
             href: toolkit/upgrade.md
+      - name: Microsoft Graph activity logs (preview)
+        href: microsoft-graph-activity-logs-overview.md
       - name: Configure Connected Services
         displayName: Configure Connected Services in Visual Studio
         href: office-365-connected-services.md

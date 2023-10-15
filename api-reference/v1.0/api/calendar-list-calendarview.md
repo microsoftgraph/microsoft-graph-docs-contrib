@@ -58,7 +58,7 @@ In the request URL, provide the following required query parameters with values.
 | startDateTime | String | The start date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T19:00:00-08:00". |
 | endDateTime   | String | The end date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T20:00:00-08:00".   |
 
-The values of `startDateTime` and `endDateTime` are interpreted using the timezone offset specified in the value and are not impacted by the value of the `Prefer: outlook.timezone` header if present. If no timezone offset is included in the value, it is interpreted as UTC.
+The values of `startDateTime` and `endDateTime` are interpreted using the timezone offset specified in the value and aren't impacted by the value of the `Prefer: outlook.timezone` header if present. If no timezone offset is included in the value, it is interpreted as UTC.
 
 This method also supports some of the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
@@ -74,7 +74,7 @@ This method also supports some of the [OData Query Parameters](/graph/query-para
 | Prefer: outlook.timezone  | string | Use this to specify the time zone for start and end times in the response. If not specified, those time values are returned in UTC. Optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -84,7 +84,7 @@ If the result set spans multiple pages, **calendarView** returns an **@odata.nex
 
 ## Example
 ### Request
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -130,7 +130,7 @@ GET https://graph.microsoft.com/v1.0/me/calendar/calendarView?startDateTime=2017
 ---
 
 ### Response
-The following is an example of the response. 
+Here's an example of the response. 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
