@@ -42,7 +42,6 @@ The following is a JSON representation of the resource.
 ```json
 {
   "@odata.type": "#microsoft.graph.security.hostPortComponent",
-  "component": {"@odata.type": "microsoft.graph.security.hostComponent"},
   "firstSeenDateTime": "String (timestamp)",
   "isRecent": "Boolean",
   "lastSeenDateTime": "String (timestamp)"
