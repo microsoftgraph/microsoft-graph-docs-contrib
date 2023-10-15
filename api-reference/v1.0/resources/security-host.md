@@ -53,7 +53,7 @@ Inherits from [artifact](../resources/security-artifact.md).
 
 | Relationship      | Type                                                                                              | Description                                                |
 |:------------------|:------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
-| childHostPairs    | [microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection                     | The **hostPairs** that are resources associated with a host, where that host is the *parentHost* and has an outgoing pairing to a *cihldHost*. |
+| childHostPairs    | [microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection                     | The **hostPairs** that are resources associated with a host, where that host is the *parentHost* and has an outgoing pairing to a *childHost*. |
 | components        | [microsoft.graph.security.hostComponent](../resources/security-hostcomponent.md) collection       | The **hostComponents** that are associated with this host. |
 | cookies           | [microsoft.graph.security.hostCookie](../resources/security-hostcookie.md) collection             | The **hostCookies** that are associated with this host.    |
 | hostPairs         | [microsoft.graph.security.hostPair](../resources/security-hostpair.md) collection                     | The **hostPairs** that are associated with this host, where this host is *either* the *parentHost* or *childHost*.                             |
