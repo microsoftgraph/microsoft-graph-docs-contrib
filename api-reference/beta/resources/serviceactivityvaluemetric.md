@@ -15,8 +15,8 @@ Namespace: microsoft.graph
 
 Describes the aggregated value of a service activity metric over a given interval from the start time.
 
-
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |intervalStartDateTime|DateTimeOffset|The starting date and time(UTC) of the interval.|
