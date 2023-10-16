@@ -21,7 +21,7 @@ Additional properties display in the **Contact** section of the profile card in 
 You can also [remove](/graph/api/profilecardproperty-delete) custom attributes from profile cards of the organization.
 
 > [!NOTE]
-> * Removing a custom attribute doesn't delete the property from Azure AD; instead, it only removes the attribute from the users' profile cards for an organization.
+> * Removing a custom attribute doesn't delete the property from Azure AD; instead, only the attribute from the users' profile cards for an organization is removed.
 > * Operations on the **profileCardProperty** resource that use delegated permissions require the signed-in user to have a Tenant Administrator or Global Administrator role. 
 
 ## Make additional attributes visible on the profile card
