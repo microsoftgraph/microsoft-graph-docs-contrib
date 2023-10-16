@@ -11,8 +11,6 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Remove a retention label from a [driveItem](../resources/driveitem.md).
 
 For information about retention labels from an administrator's perspective, see [Use retention labels to manage the lifecycle of documents stored in SharePoint](/microsoft-365/compliance/auto-apply-retention-labels-scenario).
@@ -37,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ```http
 DELETE /driveitem/retentionLabel
-DELETE /drives/{drive-id}/items/{id}/retentionLabel
+DELETE /drives/{drive-id}/items/{item-id}/retentionLabel
 ```
 
 ## Request headers
@@ -68,7 +66,7 @@ The following shows an example of a request.
 -->
 
 ```http
-DELETE https://graph.microsoft.com/beta/drives/22e064df-3562-4a3c-98c3-74721ca06aa0/items/44d372fc-2eb6-4c85-8538-f3a0386a568f/retentionLabel
+DELETE https://graph.microsoft.com/v1.0/drives/22e064df-3562-4a3c-98c3-74721ca06aa0/items/44d372fc-2eb6-4c85-8538-f3a0386a568f/retentionLabel
 ```
 
 ### Response
