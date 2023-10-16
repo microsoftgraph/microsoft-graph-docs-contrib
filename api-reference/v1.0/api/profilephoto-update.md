@@ -11,9 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the photo for the specified contact, group, team, or user in a tenant.
-
-Due to the current limit of 4 MB on the total size of each REST request, the size of the photo you can add is limited to 4 MB. The following are the supported dimensions for HD photos on Exchange Online: `48x48`, `64x64`, `96x96`, `120x120`, `240x240`, `360x360`, `432x432`, `504x504`, and `648x648`.
+Update the photo for the specified contact, group, team, or user in a tenant. Due to the current limit of 4 MB on the total size of each REST request, the size of the photo you can add is limited to 4 MB.
 
 You can use either PATCH or PUT for this operation.
 
@@ -84,25 +82,25 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 To update a group photo:
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /groups/{id}/photo/$value
+PATCH /groups/{objectId}/photo/$value
 
-PUT /groups/{id}/photo/$value
+PUT /groups/{objectId}/photo/$value
 ```
 
 To update a team photo:
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT /team/{id}/photo/$value
+PUT /teams/{id}/photo/$value
 ```
 
 To update a user's profile photo:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/photo/$value
-PATCH /users/{id | userPrincipalName}/photo/$value
+PATCH /users/{objectId | objectId@tenantId | userPrincipalName}/photo/$value
 
 PUT /me/photo/$value
-PUT /users/{id | userPrincipalName}/photo/$value
+PUT /users/{objectId | objectId@tenantId | userPrincipalName}/photo/$value
 ```
 
 ## Request headers
