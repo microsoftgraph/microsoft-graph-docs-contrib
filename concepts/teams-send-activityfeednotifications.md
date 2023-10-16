@@ -12,7 +12,7 @@ The Microsoft Teams activity feed enables users to triage items that require att
 
 ## Understand the basics of activity feed notification
 
-Activity feed notifications in Microsoft Teams comprise multiple bits of information displayed together, as shown in the following image.
+The following image shows that activity feed notifications in Microsoft Teams comprise multiple bits of information displayed together.
 
 ![Image showing components of an activity feed notification](images/teams-activityfeednotifications/notificationtemplate.png)
 
@@ -91,14 +91,14 @@ This section describes the changes that must be added to the Teams app manifest.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|type|string|Type of activity. This needs to be unique in a specific manifest.|
-|description|string|Human-readable short description. This will be visible on the Microsoft Teams client.|
+|type|string|The type needs to be unique in a specific manifest.|
+|description|string|Human-readable short description. The description will be visible on the Microsoft Teams client.|
 |templateText|string|Template text for the activity notification. You can declare your parameters by encapsulating parameters in `{}`.|
 
 > [!NOTE]
 > * `actor` is a special parameter that always takes the caller's name. In delegated calls, `actor` is the user's name. In application-only calls, it takes the name of the Teams app.
 >
-> * The reserved `systemDefault` activity type should not be provided in the `activities` section of the manifest. This reserved activity type can provide free-form text in the `Actor+Reason` line of the activity feed notification. For more information, see [Send customizable activity feed notifications](#example-8-send-a-notification-to-a-user-using-the-systemdefault-activity-type).
+> * The reserved `systemDefault` activity type should not be provided in the `activities` section of the manifest. The reserved activity type can provide free-form text in the `Actor+Reason` line of the activity feed notification. For more information, see [Send customizable activity feed notifications](#example-8-send-a-notification-to-a-user-using-the-systemdefault-activity-type).
 
 #### authorization section changes
 
@@ -132,7 +132,7 @@ This section describes the changes that must be added to the Teams app manifest.
 
 ### Install the Teams app
 
-Teams apps can be installed in a team, a chat, or for a user personally, and can be distributed in multiple ways. For details, see [Teams app distribution methods](/microsoftteams/platform/concepts/deploy-and-publish/overview). Typically, [sideloading](/microsoftteams/platform/concepts/deploy-and-publish/apps-upload) is preferred for development purposes. After development, you can choose the right distribution method based on whether you want to distribute to one tenant or to all tenants.
+Teams apps can be installed in a team, a chat, or for a user personally, and can be distributed in multiple ways. For details, see [Teams app distribution methods](/microsoftteams/platform/concepts/deploy-and-publish/overview). Typically, [sideloading](/microsoftteams/platform/concepts/deploy-and-publish/apps-upload) is preferred for development purposes. After development, you can choose the right distribution method based on whether you want to distribute to one tenant or all tenants.
 
 You can also use [Teams app installation](/graph/api/resources/teamsappinstallation) APIs to manage Teams app installations.
 
@@ -322,7 +322,7 @@ HTTP/1.1 204 No Content
 
 ### Example 3: Notify a user about an event using a custom topic
 
-As the previous examples show, you can link to different aspects of a team or a chat. However, if you want to link to an aspect that is not part of the team or is not represented by Microsoft Graph, or if you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. Additionally, `webUrl` is required when you use `topic` source as `text`.
+As the previous examples show, you can link to different team or chat aspects. However, if you want to link to an aspect that is not part of the team or is not represented by Microsoft Graph, or if you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. Additionally, `webUrl` is required when you use `topic` source as `text`.
 
 The Yammer notification example shown earlier uses a custom topic because Microsoft Graph does not support Yammer's resources.
 
