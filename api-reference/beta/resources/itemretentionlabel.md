@@ -21,13 +21,13 @@ Groups retention and compliance-related properties on an item into a single stru
 |:-------------------------|:-----------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | isLabelAppliedExplicitly | Boolean                                                          | Specifies whether the label is applied explicitly on the item. `True` indicates that the label is applied explicitly; otherwise, the label is inherited from its parent. Read-only.                                                                    |
 | labelAppliedBy           | [identitySet](../resources/identityset.md)                       | Identity of the user who applied the label. Read-only.                                                                                                                                                                                                 |
-| labelAppliedDateTime     | DateTimeOffset                                                   | The date and time when the label was applied on the item. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
+| labelAppliedDateTime     | DateTimeOffset                                                   | The date and time when the label was applied on the item. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 | name                     | String                                                           | The retention label on the document. Read-write.                                                                                                                                                                                                       |
 | retentionSettings        | [retentionLabelSettings](../resources/retentionlabelsettings.md) | The retention settings enforced on the item. Read-write.                                                                                                                                                                                               |
 
 ## JSON representation
 
-The following shows an example of a JSON representation of the resource.
+The following is a JSON representation of the resource.
 
 <!-- {
 "blockType": "resource",
