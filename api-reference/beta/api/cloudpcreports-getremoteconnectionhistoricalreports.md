@@ -54,7 +54,7 @@ The following table shows the parameters that can be used with this action.
 |groupBy|String collection|A list of columns that describe how to group the data in the report.|
 |orderBy|String collection|A list of columns that describe how to sort the data in the report.|
 |skip|Int32|Number of records to skip.|
-|top|Int32|The number of top records to return.|
+|top|Int32|The top number of records to return.|
 
 
 
