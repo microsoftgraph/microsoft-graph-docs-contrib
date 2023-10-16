@@ -87,6 +87,7 @@ Content-Type: application/json
         "id": "1a9db3ab-0acf-4808-99ae-e8ed581cb2e0",
         "displayName": "Device Group A"
       }
+    ]
   }
 }
 ```
