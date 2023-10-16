@@ -80,7 +80,7 @@ The following image shows how your item might appear within recommendation exper
 
 ![Screenshot of a recommended item with share activity](./images/connectors-images/share-activity-recommendation-example.png)
 
-The following example shows the **activitySettings** payload with a complete **urlToItemResolvers** section. For example, when someone pastes the link `https://contoso.com/items/39483948/` into a Teams chat, a connector ingests an **externalItem** that represents the object that the link points to. In this example, this **itemId** of `id_39483948`. This connection specifies how to map from the URL to the **itemId** of that **externalItem**. In this example, this connection has an **id** of `contosohr`.
+The following example shows the **activitySettings** payload with a complete **urlToItemResolvers** section. For example, when someone shares the link `https://contoso.com/items/39483948/`, it represents an **externalItem** that was ingested through a Microsoft Graph connection. In this example, the shared link represents an **externalItem** with an **itemId** of `id_39483948`. This connection specifies how to map from the URL to the **itemId** of that **externalItem**. In this example, this connection has an **id** of `contosohr`.
 
 Update the activity settings by sending a patch request on the connection.
 <!-- {
