@@ -35,6 +35,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-authentication-methods-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-apis-write.md)]
 
+*User*, *Helpdesk* and *Password Administrators* can also reset passwords for non-admin users and a limited set of admin roles as defined in [Who can reset passwords](https://learn.microsoft.com/azure/active-directory/roles/privileged-roles-permissions?tabs=admin-center#who-can-reset-passwords).
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
