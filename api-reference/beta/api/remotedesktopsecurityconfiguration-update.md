@@ -70,7 +70,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.remoteDesktopSecurityConfiguration",
-  "isRemoteDesktopProtocolEnabled": "true"
+  "isRemoteDesktopProtocolEnabled": true
 }
 ```
 
@@ -80,7 +80,8 @@ Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.remoteDesktopSecurityConfiguration"
 }
 -->
 ``` http
@@ -90,7 +91,7 @@ Content-Type: application/json
 {
   "@odata.type": "#microsoft.graph.remoteDesktopSecurityConfiguration",
   "id": "ca738153-c98a-f822-a7d1-5a6e1058462b",
-  "isRemoteDesktopProtocolEnabled": "true"
+  "isRemoteDesktopProtocolEnabled": true
 }
 ```
 
