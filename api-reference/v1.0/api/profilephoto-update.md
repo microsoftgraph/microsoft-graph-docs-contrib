@@ -82,9 +82,9 @@ PUT /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 To update a group photo:
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /groups/{objectId}/photo/$value
+PATCH /groups/{id}/photo/$value
 
-PUT /groups/{objectId}/photo/$value
+PUT /groups/{id}/photo/$value
 ```
 
 To update a team photo:
@@ -97,10 +97,10 @@ To update a user's profile photo:
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /me/photo/$value
-PATCH /users/{objectId | objectId@tenantId | userPrincipalName}/photo/$value
+PATCH /users/{id | userPrincipalName}/photo/$value
 
 PUT /me/photo/$value
-PUT /users/{objectId | objectId@tenantId | userPrincipalName}/photo/$value
+PUT /users/{id | userPrincipalName}/photo/$value
 ```
 
 ## Request headers
