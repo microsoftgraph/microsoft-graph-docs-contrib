@@ -28,13 +28,13 @@ None.
 ## JSON representation
 The following is a JSON representation of the resource.
 <!-- {
-  "blockType": "resource"
+  "blockType": "resource",
   "@odata.type": "microsoft.graph.serviceActivityValueMetric"
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.serviceActivityValueMetric"
+  "@odata.type": "#microsoft.graph.serviceActivityValueMetric",
   "intervalStartDateTime": "String (timestamp)",
   "value": "Integer"
 }
