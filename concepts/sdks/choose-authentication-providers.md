@@ -55,8 +55,6 @@ The [Azure Identity Client Module for Go](https://pkg.go.dev/github.com/Azure/az
 
 ### [Python](#tab/python)
 
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
 In the following example we are using the asynchronous [AuthorizationCodeCredential](/python/api/azure-identity/azure.identity.aio.authorizationcodecredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.authorizationcodecredential?view=azure-python&preserve-view-true) of this credential.
 
 :::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="AuthorizationCodeSnippet":::
@@ -109,8 +107,6 @@ The client credential flow enables service applications to run without user inte
 
 ### [Python](#tab/python)
 
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
 ### Using a client certificate
 
 In the following example we are using the asynchronous [CertificateCredential](/python/api/azure-identity/azure.identity.aio.certificatecredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.certificatecredential?view=azure-python&preserve-view-true) of this credential.
@@ -152,8 +148,6 @@ The on-behalf-of flow is applicable when your application calls a service/web AP
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="OnBehalfOfSnippet":::
 
 ### [Python](#tab/python)
-
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
 In the following example we are using the asynchronous [OnBehalfOfCredential](/python/api/azure-identity/azure.identity.aio.onbehalfofcredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.onbehalfofcredential?view=azure-python&preserve-view-true) of this credential.
 

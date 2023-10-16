@@ -26,8 +26,6 @@ The Microsoft Graph SDK client configures a default set of middleware that allow
 
 ## [Python](#tab/python)
 
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
 :::code language="python" source="./snippets/python/src/snippets/custom_clients.py" id="CustomMiddlewareSnippet":::
 
 ## Custom middleware
@@ -60,8 +58,6 @@ Some environments require client applications to use a HTTP proxy before they ca
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CustomClients.java" id="ProxySnippet":::
 
 ## [Python](#tab/python)
-
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
 :::code language="python" source="./snippets/python/src/snippets/custom_clients.py" id="ProxySnippet":::
 

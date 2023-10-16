@@ -145,8 +145,6 @@ Install-Module Microsoft.Graph -AllowClobber -Force
 
 ## Install the Microsoft Graph Python SDK
 
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
 The [Microsoft Graph Python SDK](https://github.com/microsoftgraph/msgraph-sdk-python) is available on [PyPI](https://pypi.org/).
 
 ```py

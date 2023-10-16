@@ -55,8 +55,6 @@ $user = $graph->createRequest("GET", "/me")
 
 # [Python](#tab/python)
 
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
 :::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="DeviceCodeSnippet":::
 
 # [TypeScript](#tab/typescript)

@@ -76,6 +76,13 @@ class UseBeta
 }
 ```
 
+## [Python](#tab/python)
+To use the [Microsoft Graph Beta SDK for Python](https://github.com/microsoftgraph/msgraph-beta-sdk-python) install the SDK for the beta endpoint with the following command:
+```py
+pip install msgraph-beta-sdk
+```
+Use the SDK for the beta endpoint in the same way as the SDK for the v1 endpoint.
+
 ## [TypeScript](#tab/typescript)
 
 The [Microsoft Graph JavaScript Client Library](https://github.com/microsoftgraph/msgraph-sdk-javascript) can call the beta API in one of two ways.

@@ -35,8 +35,6 @@ To read information from Microsoft Graph, you first need to create a request obj
 
 # [Python](#tab/python)
 
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="ReadRequestSnippet":::
 
 # [TypeScript](#tab/typescript)
@@ -67,8 +65,6 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-select.md)]
 
 # [Python](#tab/python)
-
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="SelectRequestSnippet":::
 
@@ -102,8 +98,6 @@ Retrieving a list of entities is similar to retrieving a single entity except th
 
 # [Python](#tab/python)
 
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="ListRequestSnippet":::
 
 # [TypeScript](#tab/typescript)
@@ -136,8 +130,6 @@ For SDKs that support a fluent style, collections of entities can be accessed us
 
 # [Python](#tab/python)
 
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="ItemByIdRequestSnippet":::
 
 # [TypeScript](#tab/typescript)
@@ -167,8 +159,6 @@ You can use the `$expand` filter to request a related entity, or collection of e
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-expand.md)]
 
 # [Python](#tab/python)
-
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="ExpandRequestSnippet":::
 
@@ -200,8 +190,6 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 # [Python](#tab/python)
 
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="DeleteRequestSnippet":::
 
 # [TypeScript](#tab/typescript)
@@ -231,8 +219,6 @@ For SDKs that support a fluent style, new items can be added to collections with
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-create.md)]
 
 # [Python](#tab/python)
-
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="CreateRequestSnippet":::
 
@@ -264,8 +250,6 @@ Most updates in Microsoft Graph are performed using a `PATCH` method and therefo
 
 # [Python](#tab/python)
 
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="UpdateRequestSnippet":::
 
 # [TypeScript](#tab/typescript)
@@ -296,8 +280,6 @@ You can use a `Header()` function to attach custom headers to a request. For Pow
 
 # [Python](#tab/python)
 
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
-
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="HeadersRequestSnippet":::
 
 # [TypeScript](#tab/typescript)
@@ -327,8 +309,6 @@ For SDKs that support a fluent style, you can provide custom query parameter val
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-queryparams.md)]
 
 # [Python](#tab/python)
-
-[!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="QueryParametersRequestSnippet":::
 
