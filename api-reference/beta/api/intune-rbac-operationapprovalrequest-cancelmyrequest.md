@@ -1,6 +1,6 @@
 ---
 title: "cancelMyRequest action"
-description: ""
+description: "Intune Rbac Operationapprovalrequest Cancelmyrequest Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -73,6 +73,10 @@ The following table shows the properties that are required when you create the w
 |bitLockerEnabled|Boolean|Require devices to be reported healthy by Windows Device Health Attestation - bit locker is enabled|
 |secureBootEnabled|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation - secure boot is enabled.|
 |codeIntegrityEnabled|Boolean|Require devices to be reported as healthy by Windows Device Health Attestation.|
+|memoryIntegrityEnabled|Boolean|When TRUE, indicates that Memory Integrity as known as Hypervisor-protected Code Integrity (HVCI) or Hypervisor Enforced Code Integrity protection is required to be reported as healthy by Microsoft Azure Attestion. When FALSE, indicates that Memory Integrity Protection is not required to be reported as healthy. Default value is FALSE.|
+|kernelDmaProtectionEnabled|Boolean|When TRUE, indicates that Kernel Direct Memory Access (DMA) protection is required to be reported as healthy by Microsoft Azure Attestion. When FALSE, indicates that Kernel DMA Protection is not required to be reported as healthy. Default value is FALSE.|
+|virtualizationBasedSecurityEnabled|Boolean|When TRUE, indicates that Virtualization-based Security is required to be reported as healthy by Microsoft Azure Attestion. When FALSE, indicates that Virtualization-based Security is not required to be reported as healthy. Default value is FALSE.|
+|firmwareProtectionEnabled|Boolean|When TRUE, indicates that Firmware protection is required to be reported as healthy by Microsoft Azure Attestion. When FALSE, indicates that Firmware protection is not required to be reported as healthy. Devices that support either Dynamic Root of Trust for Measurement (DRTM) or Firmware Attack Surface Reduction (FASR) will report compliant for this setting. Default value is FALSE.|
 |storageRequireEncryption|Boolean|Require encryption on windows devices.|
 |activeFirewallRequired|Boolean|Require active firewall on Windows devices.|
 |defenderEnabled|Boolean|Require Windows Defender Antimalware on Windows devices.|
@@ -100,7 +104,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1911
+Content-length: 2070
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -128,6 +132,10 @@ Content-length: 1911
   "bitLockerEnabled": true,
   "secureBootEnabled": true,
   "codeIntegrityEnabled": true,
+  "memoryIntegrityEnabled": true,
+  "kernelDmaProtectionEnabled": true,
+  "virtualizationBasedSecurityEnabled": true,
+  "firmwareProtectionEnabled": true,
   "storageRequireEncryption": true,
   "activeFirewallRequired": true,
   "defenderEnabled": true,
@@ -161,7 +169,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2083
+Content-Length: 2242
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -192,6 +200,10 @@ Content-Length: 2083
   "bitLockerEnabled": true,
   "secureBootEnabled": true,
   "codeIntegrityEnabled": true,
+  "memoryIntegrityEnabled": true,
+  "kernelDmaProtectionEnabled": true,
+  "virtualizationBasedSecurityEnabled": true,
+  "firmwareProtectionEnabled": true,
   "storageRequireEncryption": true,
   "activeFirewallRequired": true,
   "defenderEnabled": true,

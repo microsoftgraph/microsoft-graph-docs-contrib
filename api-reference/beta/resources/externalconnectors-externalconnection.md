@@ -24,7 +24,7 @@ A logical container to add content from an external source into Microsoft Graph.
 | [Get externalConnection](../api/externalconnectors-externalconnection-get.md)       | externalConnection                            | Read properties and relationships of an **externalConnection** object. |
 | [Update externalConnection](../api/externalconnectors-externalconnection-update.md) | externalConnection                            | Update an **externalConnection** object. |
 | [Delete externalConnection](../api/externalconnectors-externalconnection-delete.md) | None                                          | Delete an **externalConnection** object. |
-| [Create schema](../api/externalconnectors-externalconnection-post-schema.md)        | None *or* [schema](externalconnectors-schema.md)                 | Register connection schema. |
+| [Create schema](../api/externalconnectors-externalconnection-patch-schema.md)        | None *or* [schema](externalconnectors-schema.md)                 | Register connection schema. |
 | [Get operation](../api/externalconnectors-connectionoperation-get.md)               | [connectionOperation](externalconnectors-connectionoperation.md) | Get the status of an asynchronous request to create the connection schema. |
 | [Create externalItem](../api/externalconnectors-externalconnection-put-items.md)    | [externalItem](externalconnectors-externalitem.md)               | Create a new externalItem by posting to the items collection. |
 |[Get connectionQuota](../api/externalconnectors-connectionquota-get.md)|[connectionQuota](../resources/externalconnectors-connectionquota.md)| Retrieve the properties and relationships of a **connectionQuota**. |
@@ -69,21 +69,16 @@ The following is a JSON representation of the resource.
 
 ``` json
 {
+  "activitySettings": {"@odata.type": "microsoft.graph.externalConnectors.activitySettings"},
+  "configuration": {"@odata.type": "microsoft.graph.externalConnectors.configuration"},
+  "connectorId": "String",
+  "description": "String",
+  "enabledContentExperiences": "[String]",
   "id": "String (identifier)",
   "ingestedItemsCount": "Int64",
   "name": "String",
-  "description": "String",
-  "configuration": {
-    "@odata.type": "microsoft.graph.externalConnectors.configuration"
-  },
-  "state": "String",
-  "connectorId": "String",
-  "searchSettings": {
-    "@odata.type": "microsoft.graph.externalConnectors.searchSettings"
-  },
-  "activitySettings": {
-    "@odata.type": "microsoft.graph.externalConnectors.activitySettings"
-  }
+  "searchSettings": {"@odata.type": "microsoft.graph.externalConnectors.searchSettings"},
+  "state": "String"
 }
 ```
 
