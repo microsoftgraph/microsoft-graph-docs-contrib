@@ -8,7 +8,7 @@ ms.prod: "microsoft-teams"
 
 # Send activity feed notifications to users in Microsoft Teams
 
-The Microsoft Teams activity feed enables users to triage items that require attention by notifying them of changes. You can use the activity feed notification APIs in Microsoft Graph to extend this functionality to your apps. This allows your apps to provide richer experiences and better engage users by helping to keep them up to date with changes in the tools and workflows they use.
+The Microsoft Teams activity feed enables users to triage items that require attention by notifying them of changes. You can use the activity feed notification APIs in Microsoft Graph to extend this functionality to your apps. It also allows your apps to provide richer experiences and better engage users by helping to keep them up to date with changes in the tools and workflows they use.
 
 ## Understand the basics of activity feed notification
 
@@ -92,7 +92,7 @@ This section describes the changes that must be added to the Teams app manifest.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |type|string|The type needs to be unique in a specific manifest.|
-|description|string|Human-readable short description. The description will be visible on the Microsoft Teams client.|
+|description|string|Human-readable short description. The description is visible on the Microsoft Teams client.|
 |templateText|string|Template text for the activity notification. You can declare your parameters by encapsulating parameters in `{}`.|
 
 > [!NOTE]
@@ -322,7 +322,7 @@ HTTP/1.1 204 No Content
 
 ### Example 3: Notify a user about an event using a custom topic
 
-As the previous examples show, you can link to different team or chat aspects. However, if you want to link to an aspect that is not part of the team or is not represented by Microsoft Graph, or if you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. Additionally, `webUrl` is required when you use `topic` source as `text`.
+As the previous examples show, you can link to different team or chat aspects. However, if you want to link to an aspect that is not part of the team or Microsoft Graph doesn't represent it, or if you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. Additionally, `webUrl` is required when you use `topic` source as `text`.
 
 The Yammer notification example shown earlier uses a custom topic because Microsoft Graph does not support Yammer's resources.
 
@@ -796,13 +796,13 @@ HTTP/1.1 204 No Content
   - For Store apps, it saves time and streamlines the process since you don't need to adjust activity types in your app's manifest constantly. The `systemDefault` activity type is ready to use from the get-go.
 - Keep in mind that with the `systemDefault` activity type, you cannot:
   - Utilize the built-in localization features provided by manifests.
-  - Rely solely on sending customizable notifications with the  `systemDefault` activity type. Users can turn off all notifications from your app with a toggle in the Microsoft Teams client settings, which could hinder communication between your app and its users.
+  - Rely on sending customizable notifications with the  `systemDefault` activity type. Users can turn off all notifications from your app with a toggle in the Microsoft Teams client settings, which could hinder communication between your app and its users.
 - Templated notifications are still recommended for recurring and large batches of notifications because they require activity templates in the manifest.
 - The `systemDefault` reserved activity type remains available, regardless of the activity types listed in your app's manifest.
 
 ## Customize how the notifications alert you
 
-Microsoft Teams users can customize the notifications they see in their feed, as a banner, and so on. Notifications generated through activity feed APIs can also be customized. Users can choose how they are notified via settings in Microsoft Teams. Teams apps will appear in the list for the user to choose from, as shown in the following screenshot.
+Microsoft Teams users can customize the notifications they see in their feed, as a banner, and so on. Notifications generated through activity feed APIs can also be customized. Users can choose how they are notified via settings in Microsoft Teams. Teams apps appear in the list for the user to choose from, as shown in the following screenshot.
 
 ![Screenshot of the Notifications settings in Teams, with the Custom option highlighted](images/teams-activityfeednotifications/notificationsettings.png)
 
@@ -827,11 +827,11 @@ No, only users are allowed to change notification settings.
 
 ### I installed my app; why don't I see notification settings under the user account?
 
-The settings will appear after the first notification is sent by the Teams app. This reduces the number of settings that users see.
+The settings will appear after the Teams app sends the first notification. This reduces the number of settings that users see.
 
 ### I started getting a 409 (conflict) error; how do I resolve it?
 
-`Conflict` errors primarily occur when multiple Teams apps installed in the same scope (team, chat, user, and so on) have the same Azure AD appId in the `webApplicationInfo` section of the manifest. When this happens, you will get an error such as `Found multiple applications with the same Azure AD App ID 'Your AzureAD AppId'.`. Make sure that you use unique Azure AD apps for unique Teams apps. Note that you can have the same Teams app installed in multiple scopes (team + user, for example).
+`Conflict` errors primarily occur when multiple Teams apps installed in the same scope (team, chat, user, and so on) have the same Azure AD appId in the `webApplicationInfo` section of the manifest. When this happens, you will get an error like `Found multiple applications with the same Azure AD App ID 'Your AzureAD AppId'.`. Make sure that you use unique Azure AD apps for unique Teams apps.  You can install the same Teams app in multiple scopes (team + user, for example).
 
 ## See also
 
