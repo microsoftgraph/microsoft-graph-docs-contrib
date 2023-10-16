@@ -12,7 +12,7 @@ The Microsoft Teams activity feed enables users to triage items that require att
 
 ## Understand the basics of activity feed notification
 
-Activity feed notifications in Microsoft Teams are comprised of multiple bits of information, displayed together, as shown in the following image.
+Activity feed notifications in Microsoft Teams comprise multiple bits of information displayed together, as shown in the following image.
 
 ![Image showing components of an activity feed notification](images/teams-activityfeednotifications/notificationtemplate.png)
 
@@ -21,10 +21,10 @@ The components include:
 - An icon that represents the activity type
 - The reason the actor did the activity
 - A text preview
-- A time stamp
+- A timestamp
 - The location of the activity
 
-The following example shows how these components together provide the details about a notification. This example is a notification about a user mentioned in a Yammer community.
+The following example shows how these components provide the details about a notification. This example is a notification about a user mentioned in a Yammer community.
 
 ![Yammer actifity notification example](images/teams-activityfeednotifications/examplefeednotification.png)
 
@@ -32,11 +32,11 @@ The following example shows how these components together provide the details ab
 
 Activity feed APIs work with a [Teams app](/microsoftteams/platform/overview). The following are the requirements for sending activity feed notifications:
 
-- The Teams app manifest must have the Azure AD app ID added to the `webApplicationInfo` section. For details, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
+- The Teams app manifest must have the Azure AD app ID added to the `webApplicationInfo` section. For more information, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 - Activity notifications can be sent with or without activity types declared in the app manifest.
   - By default, you can use the activity notification APIs without declaring the `activities` section in the manifest. The `systemDefault` activity type is reserved, allowing you to provide free-form text in the `Actor+Reason` line of the activity feed notification.  For more information, see [Send customizable activity feed notifications](#example-8-send-a-notification-to-a-user-using-the-systemdefault-activity-type).
   - If you want to send a templated notification in the traditional mode, activity types must be declared in the [Activities](#activities-section-changes) section. For more information, see [Manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
-- The Teams app must be installed for the recipient, either personally, or in a [team](/graph/api/resources/team) or [chat](/graph/api/resources/chat) they are part of. For more information, see [Teams app installation](/graph/api/resources/teamsappinstallation).
+- The Teams app must be installed for the recipient, either personally or in a [team](/graph/api/resources/team) or [chat](/graph/api/resources/chat) they are part of. For more information, see [Teams app installation](/graph/api/resources/teamsappinstallation).
 
 ### Permissions
 
@@ -44,7 +44,7 @@ You can use delegated or application permissions to send activity notifications.
 
 ### Teams app manifest changes
 
-This section describes the changes that need to be added to Teams app manifest. Note that you must be using the [Teams app manifest](/microsoftteams/platform/resources/schema/manifest-schema) version `1.7` or greater.
+This section describes the changes that must be added to the Teams app manifest. You need to use the [Teams app manifest](/microsoftteams/platform/resources/schema/manifest-schema) version `1.7` or greater.
 
 ```json
 "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
@@ -64,10 +64,10 @@ This section describes the changes that need to be added to Teams app manifest. 
 |Parameter|Type|Description|
 |:---|:---|:---|
 |id|string|Azure AD app ID (client ID).|
-|resource|string|Resource associated with the Azure AD app. Also known as reply or Redirect URI in the Microsoft Entra admin center app registration overview.|
+|resource|string|Resource associated with the Azure AD app. It is also known as a reply or redirect URI in the Microsoft Entra admin center app registration overview.|
 
 > [!NOTE]
-> You might get an error if multiple Teams apps in the same scope (team, chat or user) are using the same Azure AD app. Make sure that you're using unique Azure AD apps.
+> You might get an error if multiple Teams apps in the same scope (team, chat, or user) use the same Azure AD app. Make sure that you're using unique Azure AD apps.
 
 #### activities section changes
 
@@ -96,7 +96,7 @@ This section describes the changes that need to be added to Teams app manifest. 
 |templateText|string|Template text for the activity notification. You can declare your parameters by encapsulating parameters in `{}`.|
 
 > [!NOTE]
-> * `actor` is a special parameter that always takes the name of the caller. In delegated calls, `actor` is the user's name. In application-only calls, it takes the name of the Teams app.
+> * `actor` is a special parameter that always takes the caller's name. In delegated calls, `actor` is the user's name. In application-only calls, it takes the name of the Teams app.
 >
 > * The reserved `systemDefault` activity type should not be provided in the `activities` section of the manifest. This reserved activity type can provide free-form text in the `Actor+Reason` line of the activity feed notification. For more information, see [Send customizable activity feed notifications](#example-8-send-a-notification-to-a-user-using-the-systemdefault-activity-type).
 
@@ -792,11 +792,11 @@ HTTP/1.1 204 No Content
 
 - The `systemDefault` activity type is reserved and cannot be used in the manifest while declaring [Activities](#activities-section-changes).
 - You can use the `systemDefault` activity type to:
-  - Easily test new scenarios and/or quickly try out the activity feed notification APIs without defining activity types in your app's manifest.
+  - Easily test new scenarios and/or quickly try the activity feed notification APIs without defining activity types in your app's manifest.
   - For Store apps, it saves time and streamlines the process since you don't need to adjust activity types in your app's manifest constantly. The `systemDefault` activity type is ready to use from the get-go.
-- Keep in mind that with the `systemDefault` activity type you cannot:
+- Keep in mind that with the `systemDefault` activity type, you cannot:
   - Utilize the built-in localization features provided by manifests.
-  - Rely solely on sending customizable notifications with the  `systemDefault` activity type. Users can turn off all notifications from your app with a single toggle in the Microsoft Teams client settings, which could hinder communication between your app and its users.
+  - Rely solely on sending customizable notifications with the  `systemDefault` activity type. Users can turn off all notifications from your app with a toggle in the Microsoft Teams client settings, which could hinder communication between your app and its users.
 - Templated notifications are still recommended for recurring and large batches of notifications because they require activity templates in the manifest.
 - The `systemDefault` reserved activity type remains available, regardless of the activity types listed in your app's manifest.
 
@@ -816,7 +816,7 @@ Users can click **Edit** next to an app and customize the notifications, as show
 
 The target user must have the Teams app that is sending notifications installed.
 
-### Can a user send notifications to themselves?
+### Can a user send notifications to themselves?f
 
 No, a user cannot send notifications to themselves. For this scenario, use application permissions.
 
@@ -830,7 +830,7 @@ The settings will appear after the first notification is sent by the Teams app. 
 
 ### I started getting a 409 (conflict) error; how do I resolve it?
 
-`Conflict` errors primarily occur when multiple Teams apps installed in the same scope (team, chat, user, and so on) have the same Azure AD appId in the `webApplicationInfo` section of the manifest. When this happens, you will get an error such as `Found multiple applications with the same Azure AD App ID 'Your AzureAD AppId'.`. Make sure that you use unique Azure AD apps for unique Teams apps. Note that you can have the same Teams app installed in multiple scopes (team + user for example).
+`Conflict` errors primarily occur when multiple Teams apps installed in the same scope (team, chat, user, and so on) have the same Azure AD appId in the `webApplicationInfo` section of the manifest. When this happens, you will get an error such as `Found multiple applications with the same Azure AD App ID 'Your AzureAD AppId'.`. Make sure that you use unique Azure AD apps for unique Teams apps. Note that you can have the same Teams app installed in multiple scopes (team + user, for example).
 
 ## See also
 
