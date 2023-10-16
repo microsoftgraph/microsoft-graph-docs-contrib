@@ -51,7 +51,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |topic|[teamworkActivityTopic](../resources/teamworkactivitytopic.md)|Topic of the notification. Specifies the resource being talked about.|
-|activityType|String|The activity type must be declared in the [Teams app manifest](/microsoftteams/platform/overview), except for `systemDefault` [Reserved activity type](/graph/teams-send-activityfeednotifications/#reserved-activity-types), which may be used to provide free-form text in the `Actor+Reason` line of the notification.|
+|activityType|String|The activity type must be declared in the [Teams app manifest](/microsoftteams/platform/overview), except for `systemDefault` [Reserved activity type](/graph/teams-send-activityfeednotifications/#reserved-activity-types), which provides free-form text in the `Actor+Reason` line of the notification.|
 |chainId|Int64|Optional. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification.|
 |previewText|[itemBody](../resources/itembody.md)|Preview text for the notification. Microsoft Teams only shows the first 150 characters.|
 |templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview).|
@@ -333,7 +333,7 @@ HTTP/1.1 204 No Content
 
 ### Example 4: Notify a user about an event about a chat
 
-As shown in the previous examples, you can link to different aspects of the chat. However, if you want to link to an aspect that is not part of the chat or is not represented by Microsoft Graph, you can set the source of the `topic` to `text` and pass in a custom value. Also, `webUrl` is required when setting `topic` source to `text`.
+As shown in the previous examples, you can link to different aspects of the chat. However, if you want to link to an aspect that isn't part of the chat or isn't represented by Microsoft Graph, you can set the source of the `topic` to `text` and pass in a custom value. Also, `webUrl` is required when setting `topic` source to `text`.
 
 #### Request
 
