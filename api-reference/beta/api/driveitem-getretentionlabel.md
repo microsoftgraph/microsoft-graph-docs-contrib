@@ -63,7 +63,7 @@ If successful, this method returns a `200 OK` response code and an [itemRetentio
 
 ### Request
 
-The following shows an example of the request.
+The following shows an example of a request.
 
 <!-- {
   "blockType": "request",
