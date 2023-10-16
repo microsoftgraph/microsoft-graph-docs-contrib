@@ -1,0 +1,111 @@
+---
+title: "Update filteringProfile"
+description: "Update the properties of a microsoft.graph.networkaccess.filteringProfile object."
+author: Moti-ba
+ms.localizationpriority: medium
+ms.prod: identity-and-access
+doc_type: apiPageType
+---
+
+# Update filteringProfile
+Namespace: microsoft.graph.networkaccess
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Update the properties of a [microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) object.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|NetworkAccessPolicy.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+[!INCLUDE [rbac-global-secure-access-apis-write](../includes/rbac-for-apis/rbac-global-secure-access-apis-write.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH /networkAccess/filteringProfiles/{filteringProfileId}
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
+## Request body
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+
+
+|Property|Type|Description|
+|:---|:---|:---|
+|name|String|Display Name. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). Required.|
+|description|String|Profile Description Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). Optional.|
+|state|microsoft.graph.networkaccess.status|Provides a state for the profile. Inherited from [microsoft.graph.networkaccess.profile](../resources/networkaccess-profile.md). The possible values are: `enabled`, `disabled`. Required.|
+|priority|Int64|Priority order. Required.|
+
+
+
+
+## Response
+
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.networkaccess.filteringProfile](../resources/networkaccess-filteringprofile.md) object in the response body.
+
+## Examples
+
+### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_filteringprofile"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/networkAccess/filteringProfiles/{filteringProfileId}
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.networkaccess.filteringProfile",
+  "name": "String",
+  "description": "String",
+  "state": "String",
+  "version": "String",
+  "priority": "Integer"
+}
+```
+
+
+### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.networkaccess.filteringProfile",
+  "id": "da1b7ff3-fbc1-f307-4ac7-f6aa4956055e",
+  "name": "String",
+  "description": "String",
+  "state": "String",
+  "version": "String",
+  "lastModifiedDateTime": "String (timestamp)",
+  "priority": "Integer",
+  "createdDateTime": "String (timestamp)"
+}
+```
+

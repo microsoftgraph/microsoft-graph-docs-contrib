@@ -1,0 +1,91 @@
+---
+title: "Update filteringPolicyLink"
+description: "Update the properties of a microsoft.graph.networkaccess.filteringPolicyLink object."
+author: Moti-ba
+ms.localizationpriority: medium
+ms.prod: identity-and-access
+doc_type: apiPageType
+---
+
+# Update filteringPolicyLink
+Namespace: microsoft.graph.networkaccess
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Update the properties of a [microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object.
+
+## Permissions
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|NetworkAccessPolicy.ReadWrite.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
+
+[!INCLUDE [rbac-global-secure-access-apis-write](../includes/rbac-for-apis/rbac-global-secure-access-apis-write.md)]
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+PATCH ** Entity URI for microsoft.graph.networkaccess.filteringPolicyLink not found
+```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
+
+## Request body
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
+
+
+|Property|Type|Description|
+|:---|:---|:---|
+|state|microsoft.graph.networkaccess.status| Determines whether the link is enabled or disabled. Inherited from [microsoft.graph.networkaccess.policyLink](../resources/networkaccess-policylink.md). The possible values are: `enabled`, `disabled`. Required.|
+|action|microsoft.graph.networkaccess.filteringPolicyAction|Represents actions for filtering policies, offering "block" and "allow" options to specify whether to block or allow access based on the policy. The possible values are: `block`, `allow`. Required.|
+
+
+
+
+## Response
+
+If successful, this method returns a `200 OK` response code and an updated [microsoft.graph.networkaccess.filteringPolicyLink](../resources/networkaccess-filteringpolicylink.md) object in the response body.
+
+## Examples
+
+### Request
+The following is an example of a request.
+<!-- {
+  "blockType": "request",
+  "name": "update_filteringpolicylink"
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/beta/networkaccess/filteringProfiles/9020f79d-71f6-4650-83a9-6b532479578f/policies/d00cf227-8645-4ab8-bd99-a9b455fd83a3
+Content-Type: application/json
+
+{
+  @odata.type:"#microsoft.graph.networkaccess.filteringPolicyLink"
+  state:"disabled"
+}
+```
+
+
+### Response
+The following is an example of the response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
