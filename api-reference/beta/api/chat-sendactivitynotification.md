@@ -1,6 +1,6 @@
 ---
 title: "chat: sendActivityNotification"
-description: Send an activity feed notification in scope of a chat.
+description: Send an activity feed notification in the scope of a chat.
 author: RamjotSingh
 ms.localizationpriority: medium
 ms.prod: microsoft-teams
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Send an activity feed notification in scope of a chat. For more details about sending notifications and the requirements for doing so, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
+Send an activity feed notification in the scope of a chat. For more information, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -55,14 +55,14 @@ The following table shows the parameters that can be used with this action.
 |chainId|Int64|Optional. Used to override a previous notification. Use the same `chainId` in subsequent requests to override the previous notification.|
 |previewText|[itemBody](../resources/itembody.md)|Preview text for the notification. Microsoft Teams only shows the first 150 characters.|
 |templateParameters|[keyValuePair](../resources/keyvaluepair.md) collection|Values for template variables defined in the activity feed entry corresponding to `activityType` in [Teams app manifest](/microsoftteams/platform/overview).|
-|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Recipient of the notification. For more details, see [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) and [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). |
+|recipient|[teamworkNotificationRecipient](../resources/teamworknotificationrecipient.md)|Recipient of the notification. For more information, see [aadUserNotificationRecipient](../resources/aadusernotificationrecipient.md) and [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). |
 
 The following resources are supported when setting the `source` value of the **topic** property to `entityURL`:
 
 - [chat](../resources/chat.md)
 - [chatMessage](../resources/chatmessage.md)
 
-> **Note:** The entity URL must be the same as or a child resource of the chat in the URL. Additionally, the [Teams app](/microsoftteams/platform/overview) must be installed in the chat.
+> **:** The entity URL must be the same as or the child resource of the chat in the URL. Additionally, the [Teams app](/microsoftteams/platform/overview) must be installed in the chat.
 
 ## Response
 
@@ -72,7 +72,7 @@ If successful, this action returns a `204 No Content` response code.
 
 ### Example 1: Notify a user about a task created in a chat
 
-The following example shows how you can send an activity feed notification for a new task created in a chat. For more details, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
+The following example shows how you can send an activity feed notification for a new task created in a chat. For more information, see [sending Teams activity notifications](/graph/teams-send-activityfeednotifications).
 
 #### Request
 
@@ -159,7 +159,7 @@ HTTP/1.1 204 No Content
 
 ### Example 2: Notify a user about an approval needed in a chat message
 
-Similar to the previous example, this example uses `entityUrl` for the `topic`. However, in this case, it links to a message in the chat. The message can contains a card with the approval button on it.
+Similar to the previous example, this example uses `entityUrl` for the `topic`. However, in this case, it links to a message in the chat. The message can contain a card with the approval button on it.
 
 #### Request
 
@@ -244,9 +244,9 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 3: Notify a user about an approval needed in a chat message using user principal name
+### Example 3: Notify a user about an approval needed in a chat message using the user's principal name
 
-Similar to the previous example, this example uses `entityUrl` for the `topic`. However, in this case, it links to a message in the chat. The message can contains a card with the approval button on it.
+Similar to the previous example, this example uses `entityUrl` for the `topic`. However, in this case, it links to a message in the chat. The message can contain a card with the approval button on it.
 
 #### Request
 
@@ -331,9 +331,9 @@ The following example shows the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 4: Notify a user about an event in relation to a chat
+### Example 4: Notify a user about an event about a chat
 
-As shown in the previous examples, you can link to different aspects of the chat. However, if you want to link to an aspect that is not part of the chat, or is not represented by Microsoft Graph, you can set the source of the `topic` to `text` and pass in a custom value for it. Also, `webUrl` is required when setting `topic` source to `text`.
+As shown in the previous examples, you can link to different aspects of the chat. However, if you want to link to an aspect that is not part of the chat or is not represented by Microsoft Graph, you can set the source of the `topic` to `text` and pass in a custom value. Also, `webUrl` is required when setting `topic` source to `text`.
 
 #### Request
 
@@ -421,7 +421,7 @@ HTTP/1.1 204 No Content
 
 ### Example 5: Notify the chat members about a task created in a chat
 
-The following example shows how you can send an activity feed notification to all chat members. This example is similar to previous examples. However, in this case, the **recipient** is a [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). Note that the **chatId** specified in the **recipient** must match the **chatId** specified in the request URL.
+The following example shows how you can send an activity feed notification to all chat members. This example is similar to previous examples. However, in this case, the **recipient** is a [chatMembersNotificationRecipient](../resources/chatmembersnotificationrecipient.md). The **chatId** specified in the **recipient** must match the **chatId** specified in the request URL.
 
 #### Request
 
