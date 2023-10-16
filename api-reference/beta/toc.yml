@@ -781,8 +781,8 @@ items:
                 href: api/user-list-joinedteams.md
               - name: List associated teams
                 href: api/associatedteaminfo-list.md
-              - name: List lifecycle 
-                href: api/group-list-grouplifecycle.md
+              - name: List lifecycle policies
+                href: api/group-list-grouplifecyclepolicies.md
               - name: List photos
                 href: api/group-list-photos.md
               - name: List permission grants
@@ -943,8 +943,8 @@ items:
             href: resources/grouplifecyclepolicy.md
             items:
               - name: Create policy
-                href: api/grouplifecyclepolicy-post-grouplifecycle.md
-              - name: List 
+                href: api/grouplifecyclepolicy-post-grouplifecyclepolicies.md
+              - name: List policies
                 href: api/grouplifecyclepolicy-list.md
               - name: Get policy
                 href: api/grouplifecyclepolicy-get.md
@@ -1309,30 +1309,6 @@ items:
                         href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
                       - name: Remove
                         href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
-                  - name: Remote desktop security configuration policy
-                    href: resources/remotedesktopsecurityconfiguration.md
-                    items:
-                      - name: Create
-                        href: api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
-                      - name: Get
-                        href: api/remotedesktopsecurityconfiguration-get.md
-                      - name: Update
-                        href: api/remotedesktopsecurityconfiguration-update.md
-                      - name: Delete
-                        href: api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
-                      - name: Target device groups
-                        href: resources/targetdevicegroup.md
-                        items:
-                          - name: List
-                            href: api/remotedesktopsecurityconfiguration-list-targetdevicegroups.md
-                          - name: Create
-                            href: api/remotedesktopsecurityconfiguration-post-targetdevicegroups.md
-                          - name: Get
-                            href: api/targetdevicegroup-get.md
-                          - name: Update
-                            href: api/targetdevicegroup-update.md
-                          - name: Delete
-                            href: api/remotedesktopsecurityconfiguration-delete-targetdevicegroups.md                        
                   - name: Token issuance policy
                     href: resources/tokenissuancepolicy.md
                     items:
