@@ -116,7 +116,7 @@ The following **activitySettings** payload is sent with the patch request.
   ]
 }
 ```
-In the previous example, the **itemId** field specifies how to form the ID of the external item that the URL represents. The **itemId** is referenced in **urlPattern** (which is within **urlMatchInfo**) to extract `39483948` as the ID of the **externalItem**.
+In this example, the **itemId** field specified how to form the ID of the external item that the URL represents. The **itemId** is referenced in **urlPattern** (which is within **urlMatchInfo**) to extract `39483948` as the ID of the **externalItem**.
 
 You can supply a list of up to eight **itemIdResolver** resources in the **urlToItemResolvers** resource for your activity settings payload. For each of these **urlMatchInfo** resources, specify a value of `#microsoft.graph.externalConnectors.itemIdResolver` for the `@odata.type`, an integer greater than zero for the **priority** property, and a **urlMatchInfo** object that contains a list of base URLs and a regular expression.
 
