@@ -45,7 +45,7 @@ This method supports the `$select` and `$expand` OData query parameters to help 
 The following properties can be used for `$select` calls.
 
 | Property                                                     | Example                            | Notes                                                                                      |
-| :----------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------------------------------------|
+| :----------------------------------------------------------- | :--------------------------------- | :----------------------------------------------------------------------------------------- |
 | All [hostPort](../resources/security-hostport.md) properties | `$select=id,firstSeenDateTime`     | Use the name as it appears in the [hostPort](../resources/security-hostport.md) resource.  |
 | mostRecentSslCertificate                                     | `$select=mostRecentSslCertificate` | You can't use `$select` on nested properties (for example, `mostRecentSslCertificate/id`). |
 | host                                                         | `$select=host`                     | You can't use `$select` on nested properties (for example, `host/id`).                     |
