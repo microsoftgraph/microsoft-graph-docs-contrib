@@ -71,7 +71,7 @@ Content-Type: application/json
 
 {
   "@odata.type": "#microsoft.graph.remoteDesktopSecurityConfiguration",
-  "isRemoteDesktopProtocolEnabled": "true"
+  "isRemoteDesktopProtocolEnabled": true
 }
 ```
 
