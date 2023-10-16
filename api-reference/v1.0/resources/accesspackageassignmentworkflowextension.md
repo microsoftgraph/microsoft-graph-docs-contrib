@@ -42,7 +42,7 @@ Inherits from [customCalloutExtension](../resources/customcalloutextension.md).
 |description|String|Description for the customAccessPackageWorkflowExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |displayName|String|Display name for the customAccessPackageWorkflowExtension object. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
 |endpointConfiguration|[customExtensionEndpointConfiguration](../resources/customextensionendpointconfiguration.md)|The type and details for configuring the endpoint to call the logic app's workflow. Inherited from [customCalloutExtension](../resources/customcalloutextension.md).|
-|ID|String|Read-only.|
+|id|String|Read-only.|
 |lastModifiedBy|String|The userPrincipalName of the identity that last modified the entity. |
 |lastModifiedDateTime|DateTimeOffset|When the entity was last modified.|
 
