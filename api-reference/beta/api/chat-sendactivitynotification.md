@@ -62,7 +62,7 @@ The following resources are supported when setting the `source` value of the **t
 - [chat](../resources/chat.md)
 - [chatMessage](../resources/chatmessage.md)
 
-> **Note:** The entity URL must be the same as or the child resource of the chat in the URL. Additionally, the [Teams app](/microsoftteams/platform/overview) must be installed in the chat.
+> **Note:** The entity URL must be the same as the child resource of the chat in the URL. Additionally, the [Teams app](/microsoftteams/platform/overview) must be installed in the chat.
 
 ## Response
 

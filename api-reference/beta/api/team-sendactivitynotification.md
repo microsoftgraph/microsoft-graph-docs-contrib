@@ -64,7 +64,7 @@ The following resources are supported when setting the `source` value of the **t
 - [chatMesage](../resources/chatmessage.md)
 - [teamsTab](../resources/teamstab.md)
 
-> **Note:** The entity URL must be the same or the child resource of the team in the URL. Additionally, the [Teams app](/microsoftteams/platform/overview) must be installed in the team.
+> **Note:** The entity URL must be the same as the child resource of the team in the URL. Additionally, the [Teams app](/microsoftteams/platform/overview) must be installed in the team.
 
 ## Response
 
