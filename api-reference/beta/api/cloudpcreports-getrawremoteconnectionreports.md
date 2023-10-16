@@ -53,7 +53,7 @@ The following table shows the parameters that can be used with this action.
 |filter|String|OData filter syntax. Supported filters include `and`, `or`, `lt`, `le`, `gt`, `ge` and `eq`.|
 |select|String collection|OData select syntax. Represents the selected columns of the reports. |
 |skip|Int32|The number of records to skip.|
-|top|Int32|The number of top records to return.|
+|top|Int32|The top number of records to return.|
 
 ## Response
 
