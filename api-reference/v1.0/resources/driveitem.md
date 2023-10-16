@@ -124,10 +124,10 @@ The eTag value is only modified when the folder's properties are changed, except
 | createdByUser      | [user][]                    | Identity of the user who created the item. Read-only.
 | lastModifiedByUser | [user][]                    | Identity of the user who last modified the item. Read-only.
 | listItem           | [listItem][]                | For drives in SharePoint, the associated document library list item. Read-only. Nullable.
-
 | permissions        | [permission][] collection   | The set of permissions for the item. Read-only. Nullable.
+| retentionLabel     | [itemRetentionLabel][]      | Information about retention label and settings enforced on the **driveItem**. Read-write.
 | subscriptions      | [subscription][] collection | The set of subscriptions on the item. Only supported on the root of a drive.
-| thumbnails         | [thumbnailSet][] collection | Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
+| thumbnails         | [thumbnailSet][] collection | Collection of [thumbnailSet][] objects associated with the item. For more information, see [getting thumbnails][]. Read-only. Nullable.
 | versions           | [driveItemVersion][] collection | The list of previous versions of the item. For more info, see [getting previous versions][]. Read-only. Nullable.
 | workbook           | [workbook][]                | For files that are Excel spreadsheets, accesses the workbook API to work with the spreadsheet's contents. Nullable.
 
