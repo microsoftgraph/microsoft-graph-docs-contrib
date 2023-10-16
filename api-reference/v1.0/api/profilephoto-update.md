@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Update the photo for the specified contact, group, team, or user in a tenant. Due to the current limit of 4 MB on the total size of each REST request, the size of the photo you can add is limited to 4 MB.
+Update the photo for the specified contact, group, team, or user in a tenant. The size of the photo you can update to is limited to 4 MB.
 
 You can use either PATCH or PUT for this operation.
 
