@@ -32,11 +32,11 @@ The following example shows how these components provide the details about a not
 
 Activity feed APIs work with a [Teams app](/microsoftteams/platform/overview). The following are the requirements for sending activity feed notifications:
 
-- The Teams app manifest must have the Azure AD app ID added to the `webApplicationInfo` section. For more information, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
+- The Teams app manifest must have the Azure AD app Id added to the `webApplicationInfo` section. For more information, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 - Activity notifications can be sent with or without activity types declared in the app manifest.
   - By default, you can use the activity notification APIs without declaring the `activities` section in the manifest. The `systemDefault` activity type is reserved, allowing you to provide free-form text in the `Actor+Reason` line of the activity feed notification.  For more information, see [Send customizable activity feed notifications](#example-8-send-a-notification-to-a-user-using-the-systemdefault-activity-type).
   - If you want to send a templated notification in the traditional mode, activity types must be declared in the [Activities](#activities-section-changes) section. For more information, see [Manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
-- The Teams app must be installed for the recipient, either personally or in a [team](/graph/api/resources/team) or [chat](/graph/api/resources/chat) they are part of. For more information, see [Teams app installation](/graph/api/resources/teamsappinstallation).
+- The Teams app must be installed for the recipient, either personally or in a [team](/graph/api/resources/team) or [chat](/graph/api/resources/chat) they're part of. For more information, see [Teams app installation](/graph/api/resources/teamsappinstallation).
 
 ### Permissions
 
@@ -790,11 +790,11 @@ HTTP/1.1 204 No Content
 
 ## Reserved activity types
 
-- The `systemDefault` activity type is reserved and cannot be used in the manifest while declaring [Activities](#activities-section-changes).
+- The `systemDefault` activity type is reserved and can't be used in the manifest while declaring [Activities](#activities-section-changes).
 - You can use the `systemDefault` activity type to:
   - Easily test new scenarios and/or quickly try the activity feed notification APIs without defining activity types in your app's manifest.
-  - For Store apps, it saves time and streamlines the process since you don't need to adjust activity types in your app's manifest constantly. The `systemDefault` activity type is ready to use from the get-go.
-- Keep in mind that with the `systemDefault` activity type, you cannot:
+  - For Store apps, it saves time and streamlines the process since you don't need to constantly adjust activity types in your app's manifest. The `systemDefault` activity type is ready to use from the get-go.
+- Keep in mind that with the `systemDefault` activity type, you can't:
   - Utilize the built-in localization features provided by manifests.
   - Rely on sending customizable notifications with the  `systemDefault` activity type. Users can turn off all notifications from your app with a toggle in the Microsoft Teams client settings, which could hinder communication between your app and its users.
 - Templated notifications are still recommended for recurring and large batches of notifications because they require activity templates in the manifest.
@@ -802,7 +802,7 @@ HTTP/1.1 204 No Content
 
 ## Customize how the notifications alert you
 
-Microsoft Teams users can customize the notifications they see in their feed, as a banner, and so on. Notifications generated through activity feed APIs can also be customized. Users can choose how they are notified via settings in Microsoft Teams. Teams apps appear in the list for the user to choose from, as shown in the following screenshot.
+Microsoft Teams users can customize the notifications they see in their feed, as a banner, and so on. Notifications generated through activity feed APIs can also be customized. Users can choose how they're notified via settings in Microsoft Teams. Teams apps appear in the list for the user to choose from, as shown in the following screenshot.
 
 ![Screenshot of the Notifications settings in Teams, with the Custom option highlighted](images/teams-activityfeednotifications/notificationsettings.png)
 
@@ -819,7 +819,7 @@ The target user must have the Teams app that is sending notifications installed.
 ### Can a user send notifications to themselves?
 ``
 
-No, a user cannot send notifications to themselves. For this scenario, use application permissions.
+No, a user can't send notifications to themselves. For this scenario, use application permissions.
 
 ### Can a Teams app control how the notifications are shown to the user?
 
@@ -827,11 +827,11 @@ No, only users are allowed to change notification settings.
 
 ### I installed my app; why don't I see notification settings under the user account?
 
-The settings will appear after the Teams app sends the first notification. This reduces the number of settings that users see.
+The settings appear after the Teams app sends the first notification. This reduces the number of settings that users see.
 
 ### I started getting a 409 (conflict) error; how do I resolve it?
 
-`Conflict` errors primarily occur when multiple Teams apps installed in the same scope (team, chat, user, and so on) have the same Azure AD appId in the `webApplicationInfo` section of the manifest. When this happens, you will get an error like `Found multiple applications with the same Azure AD App ID 'Your AzureAD AppId'.`. Make sure that you use unique Azure AD apps for unique Teams apps.  You can install the same Teams app in multiple scopes (team + user, for example).
+`Conflict` errors primarily occur when multiple Teams apps installed in the same scope (team, chat, user, and so on) have the same Azure AD appId in the `webApplicationInfo` section of the manifest. When this happens, you get an error like `Found multiple applications with the same Azure AD App ID 'Your AzureAD AppId'.`. Make sure that you use unique Azure AD apps for unique Teams apps.  You can install the same Teams app in multiple scopes (team + user, for example).
 
 ## See also
 
