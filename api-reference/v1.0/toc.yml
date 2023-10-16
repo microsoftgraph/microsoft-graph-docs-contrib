@@ -8830,6 +8830,14 @@ items:
                         href: api/onlinemeeting-list-transcripts.md
                       - name: Get transcript
                         href: api/calltranscript-get.md
+                  - name: Call recording
+                    items:
+                      - name: Call recording
+                        href: resources/callrecording.md
+                      - name: List recordings
+                        href: api/onlinemeeting-list-recordings.md
+                      - name: Get recording
+                        href: api/callrecording-get.md
                   - name: Online meeting
                     href: resources/onlinemeeting.md
                     items:
