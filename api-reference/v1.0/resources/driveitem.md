@@ -35,41 +35,41 @@ Items with the **folder** facet act as containers of items and therefore have a 
 
 ## Methods
 
-| Method                                                                       | Return Type | Description
-|:-----------------------------------------------------------------------------|:------------|:------------
-| [Get item](../api/driveitem-get.md)                                          | driveItem |Retrieve the metadata for a DriveItem in a Drive.
-| [Get analytics][]                                                            | [itemAnalytics][] | Get analytics for this resource.
-| [Get activities by interval][]                                               | [itemActivityStat][] | Get a collection of itemActivityStats within the specified time interval.
-| [List children](../api/driveitem-list-children.md)                           | collection of driveItem | Return a collection of DriveItems in the children relationship of a DriveItem.
-| [List versions](../api/driveitem-list-versions.md)                           | collection of [DriveItemVersion][] | Retrieves the versions of a file in the current user's drive.
-| [Create item](../api/driveitem-post-children.md)                             | driveItem | Creates a driveItem in the specified drive.
-| [Update item](../api/driveitem-update.md)                                    | driveItem | Updates a driveItem in the drive.
-| [Upload content](../api/driveitem-put-content.md)                            | driveItem | Uploads content to the driveItem.
-| [Download content](../api/driveitem-get-content.md)                          | download Url | Downloads content of a driveItem.
-| [Download specific file format][download-format]                             | download Url | Downloads content of a driveItem with a specific format.
-| [Delete item](../api/driveitem-delete.md)                                    | No Content | Deletes a driveItem.
-| [PermanentDelete item](../api/driveitem-permanentDelete.md)                  | `POST /drives/{driveId}/items/{itemId}/permanentDelete`
-| [Move item](../api/driveitem-move.md)                                        | driveItem | Move a DriveItem to a new parent item.
-| [Copy item](../api/driveitem-copy.md)                                        | details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy                                     | Creates a copy of an driveItem (including any children).
-| [Search items](../api/driveitem-search.md)                                   | collection of driveItem | Search the hierarchy of items for items matching a query.
-| [List changes in a drive](../api/driveitem-delta.md)                         | delta link | List any changes in the drive.
-| [Follow Item](../api/driveitem-follow.md)                                    | driveItem  | Follow a driveItem.
-| [Unfollow Item](../api/driveitem-unfollow.md)                                | No content | Unfollow a driveItem.
-| [List thumbnails](../api/driveitem-list-thumbnails.md)                       | collection of driveItem | List driveItems with their thumbnails.
-| [Create sharing link](../api/driveitem-createlink.md)                        | sharing link | Create a link to share the driveItem.
-| [Add permissions](../api/driveitem-invite.md)                                | collection of [permission][] | Sends a sharing invite to a user.
-| [List permissions](../api/driveitem-list-permissions.md)                     | collection of [permission][] | Retrieves the collection of permissions on an driveItem.
-| [Delete permission](../api/permission-delete.md)                             | No Content | Removes the permission from the driveItem.
-| [Get WebSocket channel][getWebSocket]                                        | [subscription][] | Receives near-real-time change notifications for a drive using socket.io.
-| [Preview item][item-preview]                                                 | json object | Obtain short-lived embeddable URLs for an item in order to render a temporary preview.
-| [Check in](../api/driveitem-checkin.md)                                      | `POST /drives/{driveId}/items/{itemId}/checkin`
-| [Check out](../api/driveitem-checkout.md)                                    | `POST /drives/{driveId}/items/{itemId}/checkout`
-| [Extract sensitivity labels](../api/driveitem-extractsensitivitylabels.md)   | `POST /drive/items/{item-id}/extractSensitivityLabels` | Extract one or more sensitivity labels assigned to a drive item and update the metadata of a drive item with the latest details of the assigned label.
-| [Assign sensitivity label](../api/driveitem-assignsensitivitylabel.md)       | `POST /drive/items/{item-id}/assignSensitivityLabel` | Asynchronously assign a sensitivity label to a driveItem.
-| [Get retention label](../api/driveitem-getretentionlabel.md)                 | `GET /drives/{drive-id}/items/{id}/retentionLabel`                |
-| [Set retention label](../api/driveitem-setretentionlabel.md)                 | `PATCH /drives/{drive-id}/items/{id}/retentionLabel`              |
-| [Remove retention label](../api/driveitem-removeretentionlabel.md)           | `DELETE /drives/{drive-id}/items/{id}/retentionLabel`             |
-| [Lock or unlock record](../api/driveitem-lockorunlockrecord.md)              | `PATCH /drives/{drive-id}/items/{id}/retentionLabel`              |
+| Method                                                                       | Return Type | Description |
+|:-----------------------------------------------------------------------------|:------------|:-------------|
+| [Get item](../api/driveitem-get.md)                                          | [driveItem](../resources/driveitem.md) |Retrieve the metadata for a **driveItem** in a drive.|
+| [Get analytics][]                                                            | [itemAnalytics][] | Get analytics for this resource.|
+| [Get activities by interval][]                                               | [itemActivityStat][] | Get a collection of **itemActivityStats** within the specified time interval.|
+| [List children](../api/driveitem-list-children.md)                           | [driveItem](../resources/driveitem.md) collection | Return a collection of **driveItems** in the children relationship of a **driveItem**.|
+| [List versions](../api/driveitem-list-versions.md)                           | [driveItemVersion][] collection | Retrieve the versions of a file in the current user's drive.|
+| [Create item](../api/driveitem-post-children.md)                             | [driveItem](../resources/driveitem.md) | Create a **driveItem** in the specified drive.|
+| [Update item](../api/driveitem-update.md)                                    | [driveItem](../resources/driveitem.md) | Update a **driveItem** in the drive.|
+| [Upload content](../api/driveitem-put-content.md)                            | [driveItem](../resources/driveitem.md) | Upload content to the **driveItem**.|
+| [Download content](../api/driveitem-get-content.md)                          | download Url | Download content of a **driveItem**.|
+| [Download specific file format][download-format]                             | download Url | Download content of a **driveItem** with a specific format.|
+| [Delete item](../api/driveitem-delete.md)                                    | None | Delete a **driveItem**.|
+| [PermanentDelete item](../api/driveitem-permanentdelete.md)                  | None | Permanently delete a **driveItem** by using its ID. |
+| [Move item](../api/driveitem-move.md)                                        | [driveItem](../resources/driveitem.md) | Move a **driveItem** to a new parent item.|
+| [Copy item](../api/driveitem-copy.md)                                        | details about how to [monitor the progress](/graph/long-running-actions-overview) of the copy | Create a copy of a **driveItem** (including any children).|
+| [Search items](../api/driveitem-search.md)                                   | [driveItem](../resources/driveitem.md) collection | Search the hierarchy of items for items matching a query.|
+| [List changes in a drive](../api/driveitem-delta.md)                         | delta link | List any changes in the drive.|
+| [Follow Item](../api/driveitem-follow.md)                                    | [driveItem](../resources/driveitem.md)  | Follow a **driveItem**.|
+| [Unfollow Item](../api/driveitem-unfollow.md)                                | None | Unfollow a **driveItem**.|
+| [List thumbnails](../api/driveitem-list-thumbnails.md)                       | [driveItem](../resources/driveitem.md) collection | List **driveItems** with their thumbnails.|
+| [Create sharing link](../api/driveitem-createlink.md)                        | sharing link | Create a link to share the **driveItem**.|
+| [Add permissions](../api/driveitem-invite.md)                                | [permission][] collection | Send a sharing invite to a user.|
+| [List permissions](../api/driveitem-list-permissions.md)                     | [permission][] collection | Retrieve the collection of permissions on an **driveItem**.|
+| [Delete permission](../api/permission-delete.md)                             | None | Remove the permission from the **driveItem**.|
+| [Get WebSocket channel][getWebSocket]                                        | [subscription][] | Receive near-real-time change notifications for a drive using socket.io.|
+| [Preview item][item-preview]                                                 | json object | Obtain short-lived embeddable URLs for an item in order to render a temporary preview.|
+| [Check in](../api/driveitem-checkin.md)                                      | None| Check in a checked out **driveItem** resource, which makes the version of the document available to others. |
+| [Check out](../api/driveitem-checkout.md)                                    | None| Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is [checked in](driveitem-checkin.md). |
+| [Extract sensitivity labels](../api/driveitem-extractsensitivitylabels.md)   | [extractSensitivityLabelsResult](../resources/extractsensitivitylabelsresult.md) | Extract one or more sensitivity labels assigned to a drive item and update the metadata of a drive item with the latest details of the assigned label. |
+| [Assign sensitivity label](../api/driveitem-assignsensitivitylabel.md)       | String | Asynchronously assign a sensitivity label to a **driveItem**.|
+| [Get retention label](../api/driveitem-getretentionlabel.md)                 | [itemRetentionLabel](../resources/itemretentionlabel.md) | Get metadata information for a retention label applied on a **driveItem**. |
+| [Set retention label](../api/driveitem-setretentionlabel.md)                 | [itemRetentionLabel](../resources/itemretentionlabel.md) | Apply (set) a retention label on a **driveItem** (files and folders). |
+| [Remove retention label](../api/driveitem-removeretentionlabel.md)           | None | Remove a retention label from a **driveItem**. |
+| [Lock or unlock record](../api/driveitem-lockorunlockrecord.md)              | [itemRetentionLabel](../resources/itemretentionlabel.md) | Lock or unlock a retention label on a **driveItem** that classifies content as records. |
 
 ## Properties
 
