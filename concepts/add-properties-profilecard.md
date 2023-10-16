@@ -11,7 +11,7 @@ ms.custom: scenarios:getting-started
 
 The [profile card](https://support.microsoft.com/en-au/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Microsoft 365 shows information about a user in an organization. The information shown on the profile card is stored and maintained by the organization, for example, **Job title** or **Office location**.
 
-Organizations can use the [profileCardProperty](/graph/api/resources/profilecardproperty) resource to show additional properties from [Azure Active Directory (Azure AD)](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) on profile cards for a user in an organization by:
+Organizations can use the [profileCardProperty](/graph/api/resources/profilecardproperty) resource to show additional properties from [Azure Active Directory (Azure AD)](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) on the profile card for a user in an organization by:
 
 * Making additional attributes visible
 * Adding custom attributes
