@@ -216,7 +216,6 @@ POST https://graph.microsoft.com/v1.0/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0
 
 ---
 
-
 #### Response
 
 The following is an example of the response.
