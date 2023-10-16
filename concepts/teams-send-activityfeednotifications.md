@@ -797,7 +797,7 @@ HTTP/1.1 204 No Content
 - Keep in mind that with the `systemDefault` activity type you cannot:
   - Utilize the built-in localization features provided by manifests.
   - Rely solely on sending customizable notifications with the  `systemDefault` activity type. Users can turn off all notifications from your app with a single toggle in the Microsoft Teams client settings, which could hinder communication between your app and its users.
-- Recurring and large batch of notifications should still use templated notifications since they require activity templates in the manifest.
+- Templated notifications are still recommended for recurring and large batches of notifications because they require activity templates in the manifest.
 - The `systemDefault` reserved activity type remains available for use, regardless of the activity types listed in your app's manifest.
 
 ## Customize how the notifications alert you
