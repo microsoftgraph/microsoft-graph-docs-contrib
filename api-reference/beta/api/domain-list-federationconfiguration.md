@@ -1,5 +1,5 @@
 ---
-title: "List internalDomainFederation"
+title: "List internalDomainFederations"
 description: "Read the properties of the internalDomainFederation object for the domain."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
