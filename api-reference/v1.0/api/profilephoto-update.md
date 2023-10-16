@@ -1,6 +1,6 @@
 ---
 title: "Update profilePhoto"
-description: "Update the photo for the signed-in user, or the specified group or contact or team."
+description: "Update the photo for any user in the tenant including the signed-in user, or the specified group or contact or team."
 ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
