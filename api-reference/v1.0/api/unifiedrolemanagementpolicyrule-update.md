@@ -28,14 +28,25 @@ For more information about rules for Azure AD roles and examples of updating rul
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+### For PIM for Azure AD roles
+
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+
+### For PIM for groups
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|RoleManagementPolicy.ReadWrite.AzureADGroup|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|RoleManagementPolicy.ReadWrite.AzureADGroup|
 
 ## HTTP request
 
+To update a rule defined for a policy for either Azure AD roles or groups in PIM:
 <!-- {
   "blockType": "ignored"
 }
@@ -73,11 +84,13 @@ PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}/rules/{un
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code and an [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) object in the response body.
 
 ## Examples
 
-### Request
+### Example 1: Update a rule defined for a policy in PIM for Azure AD roles
+
+#### Request
 
 The following example updates a role management policy rule of type **unifiedRoleManagementPolicyExpirationRule** and with ID is `Expiration_EndUser_Assignment`.
 
@@ -144,17 +157,101 @@ Content-Type: application/json
 
 ---
 
-### Response
+#### Response
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRule"
 }
 -->
 ``` http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/roleManagementPolicies('DirectoryRole_84841066-274d-4ec0-a5c1-276be684bdd3_200ec19a-09e7-4e7a-9515-cf1ee64b96f9')/rules/$entity",
+    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
+    "id": "Expiration_EndUser_Assignment",
+    "isExpirationRequired": true,
+    "maximumDuration": "PT1H45M",
+    "target": {
+        "caller": "EndUser",
+        "operations": [
+            "All"
+        ],
+        "level": "Assignment",
+        "inheritableSettings": [],
+        "enforcedSettings": []
+    }
+}
 ```
 
 ## See also
 
 + [Overview of rules for Azure AD roles in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview)
 + [Use PIM APIs in Microsoft Graph to update Azure AD rules](/graph/how-to-pim-update-rules)
+
+### Example 2: Update a rule defined for a policy in PIM for groups
+
+#### Request
+
+The following example updates a role management policy rule with ID `Expiration_EndUser_Assignment`.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_unifiedrolemanagementpolicyrule_azureADGroup",
+  "sampleKeys": ["Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369", "Expiration_EndUser_Assignment"]
+}
+-->
+``` http
+PATCH https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369/rules/Expiration_EndUser_Assignment
+Content-Type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
+    "id": "Expiration_EndUser_Assignment",
+    "isExpirationRequired": true,
+    "maximumDuration": "PT1H45M",
+    "target": {
+        "caller": "EndUser",
+        "operations": [
+            "All"
+        ],
+        "level": "Assignment",
+        "inheritableSettings": [],
+        "enforcedSettings": []
+    }
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRule"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/roleManagementPolicies('Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369')/rules/$entity",
+    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
+    "id": "Expiration_EndUser_Assignment",
+    "isExpirationRequired": true,
+    "maximumDuration": "PT1H45M",
+    "target": {
+        "caller": "EndUser",
+        "operations": [
+            "All"
+        ],
+        "level": "Assignment",
+        "inheritableSettings": [],
+        "enforcedSettings": []
+    }
+}
+```
