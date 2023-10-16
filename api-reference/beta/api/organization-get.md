@@ -85,7 +85,7 @@ The calling user must also be in one of the following [Azure AD roles](/azure/ac
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /organization
+GET /organization/{organizationId}
 ```
 
 ## Optional query parameters

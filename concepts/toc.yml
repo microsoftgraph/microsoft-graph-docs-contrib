@@ -766,11 +766,13 @@ items:
                 href: cloud-communications-watermark-meeting.md
           - name: Change notifications
             items:
-              - name: Subscribe for teams, chats, channels
+              - name: Subscribe to teams, chats, channels
                 href: teams-change-notification-in-microsoft-teams-overview.md
-              - name: Subscribe for online meetings
+              - name: Subscribe to user presence
+                href: changenotifications-for-presence.md
+              - name: Subscribe to online meetings
                 href: changenotifications-for-onlinemeeting.md
-              - name: Subscribe for virtual events
+              - name: Subscribe to virtual events
                 href: changenotifications-for-virtualevent.md
           - name: Groups and teams
             items:

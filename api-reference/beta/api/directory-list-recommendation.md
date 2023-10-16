@@ -137,6 +137,7 @@ Content-Type: application/json
       "category": "identityBestPractice",
       "status": "active",
       "priority": "medium",
+      "releaseType": "preview",
       "impactType": "users",
       "remediationImpact": "",
       "actionSteps": [
@@ -250,6 +251,7 @@ Content-Type: application/json
   "category": "identityBestPractice",
   "status": "active",
   "priority": "medium",
+  "releaseType": "preview",
   "impactType": "users",
   "remediationImpact": "",
   "actionSteps": [
@@ -362,6 +364,7 @@ Content-Type: application/json
   "category": "identityBestPractice",
   "status": "active",
   "priority": "medium",
+  "releaseType": "preview",
   "impactType": "users",
   "remediationImpact": "",
   "actionSteps": [
