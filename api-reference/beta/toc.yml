@@ -11955,33 +11955,6 @@ items:
                         href: api/orgcontact-list-memberof.md
                       - name: Get manager
                         href: api/orgcontact-get-manager.md
-              - name: People admin settings
-                href: resources/peopleadminsettings.md
-                items:
-                  - name: Get
-                    href: api/peopleadminsettings-get.md
-                  - name: Org control for pronouns settings (preview)
-                    items:
-                      - name: Pronouns settings
-                        href: resources/pronounssettings.md
-                      - name: List
-                        href: api/peopleadminsettings-list-pronouns.md
-                      - name: Update
-                        href: api/pronounssettings-update.md
-                  - name: Profile card customization
-                    items:
-                      - name: Profile card property
-                        href: resources/profilecardproperty.md
-                      - name: List
-                        href: api/peopleadminsettings-list-profilecardproperties.md
-                      - name: Create
-                        href: api/peopleadminsettings-post-profilecardproperties.md
-                      - name: Get
-                        href: api/profilecardproperty-get.md
-                      - name: Update
-                        href: api/profilecardproperty-update.md
-                      - name: Delete
-                        href: api/profilecardproperty-delete.md
               - name: Role management
                 displayName: Unified RBAC
                 href: resources/rolemanagement.md
@@ -14817,6 +14790,33 @@ items:
                     href: api/organizationsettings-list-peopleinsights.md
                   - name: Update
                     href: api/insightssettings-update.md
+          - name: People admin settings
+            href: resources/peopleadminsettings.md
+            items:
+              - name: Get
+                href: api/peopleadminsettings-get.md
+              - name: Org control for pronouns settings (preview)
+                items:
+                  - name: Pronouns settings
+                    href: resources/pronounssettings.md
+                  - name: List
+                    href: api/peopleadminsettings-list-pronouns.md
+                  - name: Update
+                    href: api/pronounssettings-update.md
+              - name: Profile card customization
+                items:
+                  - name: Profile card property
+                    href: resources/profilecardproperty.md
+                  - name: List
+                    href: api/peopleadminsettings-list-profilecardproperties.md
+                  - name: Create
+                    href: api/peopleadminsettings-post-profilecardproperties.md
+                  - name: Get
+                    href: api/profilecardproperty-get.md
+                  - name: Update
+                    href: api/profilecardproperty-update.md
+                  - name: Delete
+                    href: api/profilecardproperty-delete.md
           - name: Profile (preview)
             items:
               - name: Profile
@@ -15105,20 +15105,6 @@ items:
                     href: api/personwebsite-update.md
                   - name: Delete
                     href: api/personwebsite-delete.md
-          - name: Profile card customization
-            items:
-              - name: Profile card property
-                href: resources/profilecardproperty.md
-              - name: List
-                href: api/peopleadminsettings-list-profilecardproperties.md
-              - name: Create
-                href: api/peopleadminsettings-post-profilecardproperties.md
-              - name: Get
-                href: api/profilecardproperty-get.md
-              - name: Update
-                href: api/profilecardproperty-update.md
-              - name: Delete
-                href: api/profilecardproperty-delete.md
           - name: Item insights
             items:
               - name: Item insights
