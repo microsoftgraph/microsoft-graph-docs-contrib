@@ -50,9 +50,9 @@ The following properties can be used for `$select` calls.
 
 The following properties can be used for `$expand` calls.
 
-| Property                 | Example                            | Notes |
-| :----------------------- | :--------------------------------- | :---- |
-| mostRecentSslCertificate | `$expand=mostRecentSslCertificate` |       |
+| Property                 | Example                            |
+| :----------------------- | :--------------------------------- |
+| mostRecentSslCertificate | `$expand=mostRecentSslCertificate` |
 
 ## Request headers
 
