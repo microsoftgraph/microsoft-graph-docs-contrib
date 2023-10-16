@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties of the [internalDomainFederation](../resources/internaldomainfederation.md) objects for the domain.
+Read the properties of the [internalDomainFederation](../resources/internaldomainfederation.md) objects for the domain. This API returns only one object in the collection.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
