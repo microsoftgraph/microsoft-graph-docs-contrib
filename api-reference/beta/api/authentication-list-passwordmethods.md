@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [password authentication method](../resources/passwordauthenticationmethod.md) objects. This will return exactly one object, as a user can have exactly one password.
+Retrieve a list of [password authentication method](../resources/passwordauthenticationmethod.md) objects. This API returns exactly one object, as a user can have exactly one password.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -57,7 +57,7 @@ GET /users/{id | userPrincipalName}/authentication/passwordMethods
 
 ## Optional query parameters
 
-This method does not support optional query parameters to customize the response.
+This method doesn't support optional query parameters to customize the response.
 
 ## Request headers
 
@@ -67,7 +67,7 @@ This method does not support optional query parameters to customize the response
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
