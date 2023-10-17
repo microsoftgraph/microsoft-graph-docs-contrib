@@ -109,6 +109,13 @@ Content-type: application/json
       "lastModifiedDateTime": "2023-09-25T10:36:40Z",
       "startDateTime": "2023-09-25T09:28:38Z",
       "endDateTime": "2023-09-25T09:28:41Z",
+      "organizer": {
+        "user": {
+            "id": "821809f5-0000-0000-0000-3b5136c0e777",
+            "displayName": "Abbie Wilkins",
+            "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
+        }
+      },
       "organizer_v2@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('3cf3bbc8-b21d-4f2e-bfd0-b13603ae6c65')/organizer_v2/$entity",
       "organizer_v2": {
         "id": "821809f5-0000-0000-0000-3b5136c0e777",
@@ -131,6 +138,13 @@ Content-type: application/json
       "lastModifiedDateTime": "2023-09-25T14:18:13Z",
 			"startDateTime": "2023-09-25T14:03:36Z",
 			"endDateTime": "2023-09-25T14:03:40Z",
+      "organizer": {
+        "user": {
+          "id": "821809f5-0000-0000-0000-3b5136c0e777",
+          "displayName": "Abbie Wilkins",
+          "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
+        }
+      },
       "organizer_v2@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('c3ad8c4b-4a87-4ab1-bef0-284d2f40ed9f')/organizer_v2/$entity",
       "organizer_v2": {
         "id": "+5564981205182",
@@ -196,6 +210,13 @@ Content-type: application/json
         "lastModifiedDateTime": "2023-09-25T10:36:40Z",
         "startDateTime": "2023-09-25T09:28:38Z",
         "endDateTime": "2023-09-25T09:28:41Z",
+        "organizer": {
+          "user": {
+              "id": "821809f5-0000-0000-0000-3b5136c0e777",
+              "displayName": "Abbie Wilkins",
+              "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
+          }
+        },
         "organizer_v2@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('3cf3bbc8-b21d-4f2e-bfd0-b13603ae6c65')/organizer_v2/$entity",
         "organizer_v2": {
           "id": "821809f5-0000-0000-0000-3b5136c0e777",
@@ -259,6 +280,13 @@ Content-type: application/json
         "lastModifiedDateTime": "2023-09-25T10:36:40Z",
         "startDateTime": "2023-09-25T09:28:38Z",
         "endDateTime": "2023-09-25T09:28:41Z",
+        "organizer": {
+          "user": {
+            "id": "821809f5-0000-0000-0000-3b5136c0e777",
+            "displayName": "Abbie Wilkins",
+            "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
+          }
+        },
         "organizer_v2@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('3cf3bbc8-b21d-4f2e-bfd0-b13603ae6c65')/organizer_v2/$entity",
         "organizer_v2": {
           "id": "821809f5-0000-0000-0000-3b5136c0e777",
@@ -280,11 +308,9 @@ Content-type: application/json
 
 For more information on using call records, see [call records](../resources/callrecords-callrecord.md).
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Get callRecord",
+  "description": "List callRecord",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
