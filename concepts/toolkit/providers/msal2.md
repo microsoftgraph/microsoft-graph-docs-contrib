@@ -1,18 +1,18 @@
 ---
 title: "MSAL2 provider"
-description: "The MSAL 2 provider uses msal-browser to sign in users and acquire tokens to use with the Microsoft Graph"
+description: "The MSAL 2 provider uses MSAL-browser to sign in users and acquire tokens to use with the Microsoft Graph"
 ms.localizationpriority: medium
 author: sebastienlevert
 ---
 
 # MSAL2 Provider
 
-The MSAL2 Provider uses [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) to sign in users and acquire tokens to use with Microsoft Graph.
+The MSAL2 Provider uses [MSAL-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser) to sign in users and acquire tokens to use with Microsoft Graph.
 
 To learn more, see [providers](./providers.md).
 
 ## Difference between MSAL2 Provider and MSAL Provider
-Although the usage is similar, MSAL Provider and MSAL2 Provider are built on different OAuth flows. MSAL Provider is built on msal.js, which implements the OAuth2.0 [Implicit Grant Flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow). MSAL2 Provider is built on [msal-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE.
+Although the usage is similar, MSAL Provider and MSAL2 Provider are built on different OAuth flows. MSAL Provider is built on msal.js, which implements the OAuth2.0 [Implicit Grant Flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow). MSAL2 Provider is built on [MSAL-browser](https://github.com/AzureAD/microsoft-authentication-library-for-js/tree/dev/lib/msal-browser), which implements the OAuth 2.0 [Authorization Code Flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow) with PKCE.
 Because Authorization Code Flow is deemed more secure than Implicit Grant Flow for web applications, we recommend using Msal2Provider over MsalProvider. For details about security issues related to implicit grant flow, see [Disadvantages of the implicit flow](https://tools.ietf.org/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6).
 
 All new applications should use MSAL2 Provider whenever possible. 
@@ -83,7 +83,7 @@ interface Msal2Config {
 
 #### Pass an existing `PublicClientApplication` in the `publicClientApplication` property.
 
-Use this when your app uses MSAL functionality beyond what's exposed by the `Msal2Provider` and other Microsoft Graph Toolkit features. This is particularly appropriate if a framework automatically instantiates and exposes a `PublicClientApplication` for you; for example, when using [msal-angular](/azure/active-directory/develop/tutorial-v2-angular). For further guidance, see the `angular-app` sample in the Microsoft Graph Toolkit [repo](https://github.com/microsoftgraph/microsoft-graph-toolkit).
+Use this when your app uses MSAL functionality beyond what's exposed by the `Msal2Provider` and other Microsoft Graph Toolkit features. This is particularly appropriate if a framework automatically instantiates and exposes a `PublicClientApplication` for you; for example, when using [MSAL-angular](/azure/active-directory/develop/tutorial-v2-angular). For further guidance, see the `angular-app` sample in the Microsoft Graph Toolkit [repo](https://github.com/microsoftgraph/microsoft-graph-toolkit).
 
 Be sure to understand opportunities for collisions when using this option. By its very nature, there is a risk that the `Msal2Provider` can change the state of a session; for example, by having the user sign in or consent to additional scopes. Make sure that your app and other frameworks respond gracefully to these changes in state, or consider using a [custom provider](./custom.md) instead.
 
@@ -149,9 +149,11 @@ graphClient
 ...
 ```
 
-#### Use custom hosts to call different Azure AD-secured endpoints
+<a name='use-custom-hosts-to-call-different-azure-ad-secured-endpoints'></a>
 
-If you want to call your own custom Azure AD secured endpoints, pass those domains to the underlying Microsoft Graph client.
+#### Use custom hosts to call different Microsoft Entra ID-secured endpoints
+
+If you want to call your own custom Microsoft Entra ID secured endpoints, pass those domains to the underlying Microsoft Graph client.
 
 ```ts
 import {Providers, Msal2Provider} from '@microsoft/mgt'
@@ -179,7 +181,7 @@ Alternatively:
 
 ## Creating an app/client ID
 
-For details about how to register an app and get a client ID, see [Create an Azure Active Directory app](../get-started/add-aad-app-registration.md).
+For details about how to register an app and get a client ID, see [Create a Microsoft Entra app](../get-started/add-aad-app-registration.md).
 
 ## Migrating from MSAL Provider to MSAL2 Provider
 To migrate an application that's using MSAL provider to the MSAL2 Provider:
@@ -193,7 +195,7 @@ To migrate an application that's using MSAL provider to the MSAL2 Provider:
 
     If you are initializing your provider in the JS/TS code, follow these steps:
     
-    Replace the import statement for ```mgt-msal-provider``` with 
+    Replace the import statement for ```mgt-MSAL-provider``` with 
     ```ts 
     import {Msal2Provider, PromptType} from '@microsoft/mgt-msal2-provider';
     ```

@@ -45,8 +45,8 @@ Administrators can manage the display or return of people relevant to a profile 
 * For an organization:
   - Enable for the entire organization. This is the default setting.
   - Disable for the entire organization, other than the profile owner.
-* For an Azure AD group in the organization:
-  - Disable for a specified Azure AD group. This is useful for enabling "working-with" for an organization except for members in the Azure AD group.
+* For a Microsoft Entra group in the organization:
+  - Disable for a specified Microsoft Entra group. This is useful for enabling "working-with" for an organization except for members in the Microsoft Entra group.
 
 For more information, see [customize people insight privacy control](insights-customize-people-insights-privacy.md).
 
@@ -985,4 +985,3 @@ GET https://graph.microsoft.com/v1.0/me/people?$search="tylerle@example.com"  //
 GET https://graph.microsoft.com/v1.0/me/people?$search="tiler"                //fuzzy match with Tyler's name
 GET https://graph.microsoft.com/v1.0/me/people?$search="tyler lee"            //matches Tyler's name. Note the quotes to enclose the space.
 ```
-

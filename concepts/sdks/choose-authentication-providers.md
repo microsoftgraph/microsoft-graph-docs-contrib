@@ -63,7 +63,7 @@ In the following example we are using the asynchronous [AuthorizationCodeCredent
 
 ### [TypeScript](#tab/typescript)
 
-### Using @azure/msal-browser for browser applications
+### Using @azure/MSAL-browser for browser applications
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="BrowserSnippet":::
 
