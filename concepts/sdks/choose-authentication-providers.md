@@ -53,6 +53,30 @@ The [Azure Identity Client Module for Go](https://pkg.go.dev/github.com/Azure/az
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="AuthorizationCodeSnippet":::
 
+### [PHP](#tab/PHP)
+The Microsoft Graph PHP SDK doesn't use MSAL libraries, but custom authentication. In this case, [AuthorizationCodeContext()](https://github.com/microsoft/kiota-authentication-phpleague-php/blob/dev/src/Oauth/AuthorizationCodeContext.php).
+
+```php
+<?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Kiota\Abstractions\ApiException;
+use Microsoft\Kiota\Authentication\Oauth\AuthorizationCodeContext;
+
+// Create an auth provider object. We are using the AuthorizationCodeContext library in this example.
+$tokenRequestContext = new AuthorizationCodeContext(
+    'tenantId',
+    'clientId',
+    'clientSecret',
+    'authCode',
+    'redirectUri'
+);
+$scopes = ['User.Read', 'Mail.Read'];
+
+// Initialize the service client
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
+
+```
+
 ### [Python](#tab/python)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
@@ -70,8 +94,6 @@ In the following example we are using the asynchronous [AuthorizationCodeCredent
 ### Using @azure/identity for server-side applications
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="AuthorizationCodeSnippet":::
-
----
 
 ## Client credentials provider
 
@@ -107,9 +129,31 @@ The client credential flow enables service applications to run without user inte
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="ClientSecretSnippet":::
 
+### [PHP](#tab/PHP)
+The Microsoft Graph PHP SDK doesn't use MSAL libraries, but custom authentication. In this case, [ClientCredentialContext()](https://github.com/microsoft/kiota-authentication-phpleague-php/blob/dev/src/Oauth/ClientCredentialContext.php).
+
+```php
+<?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Kiota\Abstractions\ApiException;
+use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
+
+// Create an auth provider object. We are using the ClientCredentialContext library in this example.
+$tokenRequestContext = new ClientCredentialContext(
+    'TENANT_ID',
+    'CLIENT_ID',
+    'CLIENT_SECRET'
+);
+
+// Initialize the service client
+$graphServiceClient = new GraphServiceClient($tokenRequestContext);
+
+```
+
 ### [Python](#tab/python)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
+
 
 ### Using a client certificate
 
@@ -151,6 +195,28 @@ The on-behalf-of flow is applicable when your application calls a service/web AP
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="OnBehalfOfSnippet":::
 
+### [PHP](#tab/PHP)
+The Microsoft Graph PHP SDK doesn't use MSAL libraries, but custom authentication. In this case, [OnBehalfOfContext()](https://github.com/microsoft/kiota-authentication-phpleague-php/blob/dev/src/Oauth/OnBehalfOfContext.php).
+
+```php
+<?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Kiota\Abstractions\ApiException;
+use Microsoft\Kiota\Authentication\Oauth\OnBehalfOfContext;
+
+// Create an auth provider object.
+$tokenRequestContext = new OnBehalfOfContext(
+    'TENANT_ID',
+    'CLIENT_ID',
+    'CLIENT_SECRET',
+    'ASSERTION'
+);
+
+// Initialize the service client
+$graphServiceClient = new GraphServiceClient($tokenRequestContext);
+
+```
+
 ### [Python](#tab/python)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
@@ -170,8 +236,8 @@ In the following example we are using the asynchronous [OnBehalfOfCredential](/p
 Implicit Authentication flow is not recommended due to its [disadvantages](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6). Public clients such as native apps and single-page apps should now use the authorization code flow with the PKCE extension instead. [Reference](https://oauth.net/2/grant-types/implicit/).
 
 ## Device code provider
-
 The device code flow enables sign in to devices by way of another device. For details, see [Microsoft identity platform and the OAuth 2.0 device code flow](/azure/active-directory/develop/v2-oauth2-device-code).
+
 
 ### [C#](#tab/csharp)
 
@@ -184,6 +250,9 @@ The device code flow enables sign in to devices by way of another device. For de
 ### [Java](#tab/java)
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="DeviceCodeSnippet":::
+
+### [PHP](#tab/PHP)
+The Microsoft Graph PHP SDK doesn't use MSAL libraries, but custom authentication. To authenticate, use one of the following contexts: [AuthorizationCodeContext()](#authorization-code-provider), [ClientCredentialContext()](#client-credentials-provider), [OnBehalfOfContext()](#on-behalf-of-provider).
 
 ### [Python](#tab/python)
 
@@ -207,6 +276,11 @@ The `Azure.Identity` package does not currently support Windows integrated authe
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/IntegratedWindowsTokenProvider.cs" id="IntegratedWindowsTokenProviderSnippet":::
 
+### [PHP](#tab/PHP)
+The Microsoft Graph PHP SDK doesn't use MSAL libraries, but custom authentication. To authenticate, use one of the following contexts: [AuthorizationCodeContext()](#authorization-code-provider), [ClientCredentialContext()](#client-credentials-provider), [OnBehalfOfContext()](#on-behalf-of-provider).
+
+
+
 ### Create the client
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="IntegratedWindowsSnippet":::
@@ -219,7 +293,11 @@ Not applicable.
 
 Not applicable.
 
+### [PHP](#tab/PHP)
+The Microsoft Graph PHP SDK doesn't use MSAL libraries, but custom authentication. To authenticate, use one of the following contexts: [AuthorizationCodeContext()](#authorization-code-provider), [ClientCredentialContext()](#client-credentials-provider), [OnBehalfOfContext()](#on-behalf-of-provider).
+
 ### [Python](#tab/python)
+
 
 Not applicable.
 
@@ -244,6 +322,9 @@ The interactive flow is used by mobile applications (Xamarin and UWP) and deskto
 ### [Java](#tab/java)
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="InteractiveSnippet":::
+
+### [PHP](#tab/PHP)
+The Microsoft Graph PHP SDK doesn't use MSAL libraries, but custom authentication. To authenticate, use one of the following contexts: [AuthorizationCodeContext()](#authorization-code-provider), [ClientCredentialContext()](#client-credentials-provider), [OnBehalfOfContext()](#on-behalf-of-provider).
 
 ### [Python](#tab/python)
 
@@ -270,6 +351,9 @@ The username/password provider allows an application to sign in a user by using 
 ### [Java](#tab/java)
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="UserNamePasswordSnippet":::
+
+### [PHP](#tab/PHP)
+The Microsoft Graph PHP SDK doesn't use MSAL libraries, but custom authentication. To authenticate, use one of the following contexts: [AuthorizationCodeContext()](#authorization-code-provider), [ClientCredentialContext()](#client-credentials-provider), [OnBehalfOfContext()](#on-behalf-of-provider).
 
 ### [Python](#tab/python)
 

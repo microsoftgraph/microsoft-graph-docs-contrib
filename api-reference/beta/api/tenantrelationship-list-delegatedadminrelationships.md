@@ -3,7 +3,7 @@ title: "List delegatedAdminRelationships"
 description: "Get a list of the delegatedAdminRelationship objects and their properties."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.prod: partner-customer-administration
 doc_type: apiPageType
 ---
 
