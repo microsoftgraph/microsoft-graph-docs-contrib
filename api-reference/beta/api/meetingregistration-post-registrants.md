@@ -20,6 +20,8 @@ Enroll a [meeting registrant](../resources/meetingregistrant.md) in an online me
 
 In either scenario, the registrant will receive an email notification that contains their registration information.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

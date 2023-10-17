@@ -6,5 +6,6 @@ To provide feedback on [Microsoft Graph documentation](https://learn.microsoft.c
 If you have service issues and want to raise a support request, and if one of the following applies:
 - You are an administrator of an active Azure subscription - raise a new technical support ticket at the **[Azure Admin Center](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportreq)**.
 - You are an administrator of a Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.
+- You are an administrator of a Microsoft Entra service - raise a new technical support ticket through the **[Microsoft Entra admin center](https://entra.microsoft.com/#view/Microsoft_Azure_Support/NewSupportRequestV3Blade/callerName/ActiveDirectory/issueType/technical)**.
 
 If you would like to ask a question about Microsoft Graph, please visit [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph) and ask your questions there using the `[microsoft-graph]` tag. 

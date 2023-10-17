@@ -15,6 +15,8 @@ Update the metadata for a [driveItem](../resources/driveitem.md) by ID or [path]
 
 You can also use update to [move an item](driveitem-move.md) to another parent by updating the item's **parentReference** property.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

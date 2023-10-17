@@ -1,6 +1,6 @@
 ---
 title: "scheduleActionsForRules action"
-description: ""
+description: "Intune Shared Devicecompliancepolicy Scheduleactionsforrules Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

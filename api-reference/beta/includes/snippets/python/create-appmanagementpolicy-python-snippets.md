@@ -21,7 +21,7 @@ request_body = AppManagementPolicy(
 			),
 			PasswordCredentialConfiguration(
 				restriction_type = AppCredentialRestrictionType.PasswordLifetime,
-				max_lifetime = "P4DT12H30M5S",
+				max_lifetime = "P90D",
 				restrict_for_apps_created_after_date_time = "2014-10-19T10:37:00Z",
 			),
 			PasswordCredentialConfiguration(
@@ -31,7 +31,7 @@ request_body = AppManagementPolicy(
 			),
 			PasswordCredentialConfiguration(
 				restriction_type = AppCredentialRestrictionType.SymmetricKeyLifetime,
-				max_lifetime = "P4D",
+				max_lifetime = "P30D",
 				restrict_for_apps_created_after_date_time = "2014-10-19T10:37:00Z",
 			),
 		]
@@ -40,6 +40,15 @@ request_body = AppManagementPolicy(
 				restriction_type = AppKeyCredentialRestrictionType.AsymmetricKeyLifetime,
 				max_lifetime = "P90D",
 				restrict_for_apps_created_after_date_time = "2014-10-19T10:37:00Z",
+			),
+			KeyCredentialConfiguration(
+				restriction_type = AppKeyCredentialRestrictionType.TrustedCertificateAuthority,
+				restrict_for_apps_created_after_date_time = "2019-10-19T10:37:00Z",
+				certificate_based_application_configuration_ids = [
+					"eec5ba11-2fc0-4113-83a2-ed986ed13743",
+					"bb8e164b-f9ed-4b98-bc45-65eddc14f4c1",
+				]
+				max_lifetime = None,
 			),
 		]
 	),

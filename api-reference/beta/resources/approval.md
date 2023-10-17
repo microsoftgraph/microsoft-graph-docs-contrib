@@ -1,6 +1,6 @@
 ---
 title: "approval resource type"
-description: "The approval object associated with an accessPackageAssignmentRequest or userConsentRequest."
+description: "The approval object associated with a userConsentRequest, an accessPackageAssignmentRequest or a privilegedAccessGroupAssignmentScheduleRequest."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
@@ -12,6 +12,8 @@ doc_type: "resourcePageType"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Represents the approval object for decisions associated with a request.
 
 In [Azure AD Entitlement Management](entitlementmanagement-overview.md), the approval object for decisions associated with the `accessPackageAssignmentRequest`. A single step request can have one step associated with it which approvers can act on. Similarly, a multi-step request can have multiple steps associated with it which approvers can act on. However, in multi-step approvals both pending and previously completed steps are shown.
 
@@ -27,8 +29,8 @@ In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-ove
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-|[Get approval](../api/approval-get.md) | [approval](approval.md) | Retrieve the properties of an **approval** object. |
-
+|[Get approval](../api/approval-get.md) | [approval](approval.md) | Retrieve the properties of an **approval** object in entitlement management and PIM. |
+|[filterByCurrentUser](../api/approval-filterbycurrentuser.md)| [approval](approval.md) collection| Retrieve the **approval** objects for an approver in entitlement management and PIM.|
 
 ## Properties
 |Property|Type|Description|

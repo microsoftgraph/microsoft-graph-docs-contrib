@@ -1,6 +1,6 @@
 ---
 title: "getHealthMetricTimeSeries action"
-description: ""
+description: "Intune Raimportcerts Certificateconnectordetails Gethealthmetrictimeseries Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

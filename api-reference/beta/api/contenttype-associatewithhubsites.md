@@ -17,6 +17,8 @@ Associate a [content type][contentType] with a list of hub sites.
 >**Note:** This feature is limited to tenants that have a SharePoint Syntex license.
   
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions  
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

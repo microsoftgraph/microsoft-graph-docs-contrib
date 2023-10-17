@@ -27,10 +27,12 @@ You can specify which parts of the team to clone:
 > [!NOTE]
 > A known issue related to owners of cloned teams is associated with this method. For details, see [Known issues](https://developer.microsoft.com/en-us/graph/known-issues/&search=18955).
 
-When tabs are cloned, they are not configured. The tabs are displayed on the tab bar in Microsoft Teams, and the first time a user opens them, they must go through the configuration screen. 
-If the user who opens the tab does not have permission to configure apps, they will see a message that says that the tab is not configured.
+When tabs are cloned, they aren't configured. The tabs are displayed on the tab bar in Microsoft Teams, and the first time a user opens them, they must go through the configuration screen. 
+If the user who opens the tab doesn't have permission to configure apps, they see a message that says that the tab isn't configured.
 
-Cloning is a long-running operation. After the POST clone returns, you need to GET the [operation](../resources/teamsasyncoperation.md) returned by the `Location:` header to see if it's `running`, `succeeded`, or `failed`. You should continue to GET until the status is not `running`. The recommended delay between GETs is 5 seconds.
+Cloning is a long-running operation. After the POST clone returns, you need to GET the [operation](../resources/teamsasyncoperation.md) returned by the `Location:` header to see if it's `running`, `succeeded`, or `failed`. You should continue to GET until the status isn't `running`. The recommended delay between GETs is 5 seconds.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -60,24 +62,24 @@ POST /teams/{id}/clone
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|classification|String (optional)|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](../resources/directorysetting.md) value, based on the [template definition](../resources/directorysettingtemplate.md). If classification is not specified, the classification will be copied from the original team/group.|
-|description|String (optional)|An optional description for the group. If this property is not specified, it will be left blank.|
-|displayName|String|The display name for the group. This property is required when a group is created and it cannot be cleared during updates. Supports $filter and $orderby.|
-|mailNickname|String|The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports $filter. If this property is not specified, it will be computed from the displayName. Known issue: this property is currently ignored.|
+|classification|String (optional)|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](../resources/directorysetting.md) value, based on the [template definition](../resources/directorysettingtemplate.md). If classification isn't specified, the classification is copied from the original team/group.|
+|description|String (optional)|An optional description for the group. If this property isn't specified, it is left blank.|
+|displayName|String|The display name for the group. This property is required when a group is created and it can't be cleared during updates. Supports $filter and $orderby.|
+|mailNickname|String|The mail alias for the group, unique in the organization. This property must be specified when a group is created. Supports $filter. If this property isn't specified, it's computed from the displayName. Known issue: this property is currently ignored.|
 |partsToClone| [clonableTeamParts](../resources/clonableteamparts.md) |A comma-separated list of the parts to clone. Legal parts are "apps, tabs, settings, channels, members".|
-|visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (optional)| Specifies the visibility of the group. Possible values are: **Private**, **Public**. If visibility is not specified, the visibility will be copied from the original team/group. If the team being cloned is an **educationClass** team, the visibility parameter is ignored, and the new group's visibility will be set to HiddenMembership.|
+|visibility|[teamVisibilityType](../resources/teamvisibilitytype.md) (optional)| Specifies the visibility of the group. Possible values are: **Private**, **Public**. If visibility isn't specified, the visibility is copied from the original team/group. If the team being cloned is an **educationClass** team, the visibility parameter is ignored, and the new group's visibility will be set to HiddenMembership.|
 
 > [!NOTE]
 > If the **description** property isn't specified in the request body, it takes the value of the **displayName** property from the request payload.
 
 ## Response
 
-If successful, this method will return a `202 Accepted` response code with a Location: header pointing to the [operation](../resources/teamsasyncoperation.md) resource.
-When the operation is complete, the operation resource will tell you the id of the created team.
+If successful, this method returns a `202 Accepted` response code with a Location: header pointing to the [operation](../resources/teamsasyncoperation.md) resource.
+When the operation is complete, the operation resource tells you the id of the created team.
 
 ## Example
 ### Request
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -133,7 +135,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+Here's an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response"
 } -->

@@ -44,7 +44,7 @@ In the request body, supply an array of JSON objects with the id parameter menti
 ## Response
 
 * If the request is successful, this method returns a `204` status code with no content.  
-* If an error occured while unfollowing any of the specified sites, this method returns a `207` status code and the response body will contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites unable to be unfollowed.
+* If an error occurred while unfollowing any of the specified sites, this method returns a `207` status code and the response body contain an array of entries containing [error](/graph/errors) objects and siteIds indicating which sites unable to be unfollowed.
 
 ## Example
 
@@ -93,7 +93,7 @@ If successful, it returns the following JSON response.
 HTTP/1.1 204 No Content
 ```
 
-If an error occured, it returns the following JSON response 
+If an error occurred, it returns the following JSON response 
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

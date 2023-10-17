@@ -15,6 +15,9 @@ Retrieve a list of authentication methods registered to a user. The authenticati
 
 We don't recommend using the authentication methods APIs for scenarios where you need to iterate over your entire user population for auditing or security check purposes. For these types of scenarios, we recommend using the [authentication method registration and usage reporting APIs](../resources/authenticationmethods-usage-insights-overview.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

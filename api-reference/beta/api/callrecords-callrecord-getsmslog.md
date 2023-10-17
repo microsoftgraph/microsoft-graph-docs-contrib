@@ -15,6 +15,8 @@ Namespace: microsoft.graph.callRecords
 
 Get the log of a sent/received SMS as a collection of [smsLogRow](../resources/callrecords-smslogrow.md) entries.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

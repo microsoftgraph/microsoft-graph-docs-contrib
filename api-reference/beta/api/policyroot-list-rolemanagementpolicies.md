@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get the details of the policies in PIM that can be applied to Azure AD roles or group membership or ownership. To retrieve policies that apply to Azure RBAC, use the [Azure REST PIM API for role management policies](/rest/api/authorization/role-management-policies/list-for-scope).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -53,7 +55,7 @@ To retrieve details of all role management policies scoped to a group:
 GET /policies/roleManagementPolicies?$filter=scopeId eq '{groupId}' and scopeType eq 'Group'
 ```
 
-## Optional query parameters
+## Query parameters
 This method requires the `$filter` (`eq`) query parameter to scope the request to a **scopeId** and a **scopeType**. 
 
 - To retrieve policies in PIM for Azure AD roles, the **scopeId** must be `/` and **scopeType** can be either `Directory` or `DirectoryRole`. 

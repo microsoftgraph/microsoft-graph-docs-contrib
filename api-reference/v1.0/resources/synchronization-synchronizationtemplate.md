@@ -1,6 +1,6 @@
 ---
 title: "synchronizationTemplate resource type"
-description: "Provides pre-configured synchronization settings for a particular application."
+description: "Provides preconfigured synchronization settings for a particular application."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 author: "ArvindHarinder1"
@@ -11,7 +11,7 @@ ms.prod: "applications"
 
 Namespace: microsoft.graph
 
-Provides pre-configured synchronization settings for a particular application. These settings will be used by default for any [synchronization job](synchronization-synchronizationjob.md) that is based on the template. The application developer specifies the template; anyone can retrieve the template to see the default settings, including the [synchronization schema](synchronization-synchronizationschema.md).
+Provides preconfigured synchronization settings for a particular application. These settings are used by default for any [synchronization job](synchronization-synchronizationjob.md) that is based on the template. The application developer specifies the template; anyone can retrieve the template to see the default settings, including the [synchronization schema](synchronization-synchronizationschema.md).
 
 You can provide multiple templates for an application, and designate a default template. If multiple templates are available for the application you're interested in, seek application-specific guidance to determine which one best meets your needs.
 
@@ -42,7 +42,7 @@ You can provide multiple templates for an application, and designate a default t
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
