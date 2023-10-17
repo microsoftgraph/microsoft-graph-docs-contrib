@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 > [!CAUTION]
-> Existing apps that use this feature with the **cloudPcSharedUseServicePlan** should be updated, as the **cloudPcSharedUseServicePlan** resource is deprecated and stopped returning data on October 8, 2023.
+> The **cloudPcSharedUseServicePlan** resource is deprecated and stopped returning data on October 8, 2023. Existing apps that use this feature with the **cloudPcSharedUseServicePlan** should be updated. 
 
 Represents a container for APIs to manage Cloud PCs.
 
