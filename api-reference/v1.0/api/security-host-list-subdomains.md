@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 
 Get the list of [subdomain](../resources/security-subdomain.md) resources associated with a host.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -91,6 +93,10 @@ GET https://graph.microsoft.com/v1.0/security/threatIntelligence/hosts/contoso.c
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-subdomain-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-subdomain-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

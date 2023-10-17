@@ -15,6 +15,8 @@ Namespace: microsoft.graph.security
 
 Get the properties and relationships of an [sslCertificate](../resources/security-sslcertificate.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -92,6 +94,10 @@ GET https://graph.microsoft.com/v1.0/security/threatIntelligence/sslCertificates
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-sslcertificate-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-sslcertificate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

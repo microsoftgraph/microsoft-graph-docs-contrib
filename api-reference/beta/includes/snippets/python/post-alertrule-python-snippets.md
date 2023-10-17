@@ -24,17 +24,11 @@ request_body = AlertRule(
 	notification_channels = [
 		NotificationChannel(
 			notification_channel_type = NotificationChannelType.Portal,
-			receivers = [
-				"",
-			]
 			notification_receivers = [
 			]
 		),
 		NotificationChannel(
 			notification_channel_type = NotificationChannelType.Email,
-			receivers = [
-				"serena.davis@contoso.com",
-			]
 			notification_receivers = [
 				NotificationReceiver(
 					locale = "en-us",
