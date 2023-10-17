@@ -44,7 +44,7 @@ The following table shows the parameters that can be used with this function.
 |startDateTime|DateTimeOffset|Timestamp indicating the starting date and time for summarizing data within the specified report, providing the beginning point for data aggregation and analysis.|
 |endDateTime|DateTimeOffset|Timestamp indicating the ending date and time for summarizing data within the specified report, marking the conclusion of the data aggregation and analysis period.|
 |activityPivotDateTime|DateTimeOffset|The time that defines what is an active or inactive device.|
-
+|trafficType|String|Traffic classification. The possible values are: `microsoft365`, `private`,`internet`. Required.
 
 ## Request headers
 |Name|Description|
