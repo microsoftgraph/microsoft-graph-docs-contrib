@@ -84,7 +84,7 @@ This example shows with the consent of Alex or administrator, how to get the **c
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -192,7 +192,7 @@ The example in this section updates the **role** property, changing the permissi
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `Calendars.ReadWrite`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated or application permission, `Calendars.ReadWrite`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -298,7 +298,7 @@ Note the following properties on Alex' behalf:
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -399,7 +399,7 @@ Note the following properties:
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated permission, `Calendars.Read.Shared`, or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated permission, `Calendars.Read.Shared`, or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -510,7 +510,7 @@ The example in this section gets the **mailboxSettings** of a calendar owner who
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `MailboxSettings.Read`, as appropriate, for this operation. For more information about mailbox permissions, see [mail permissions](permissions-reference.md#mail-permissions).
+Use the least privileged delegated or application permission, `MailboxSettings.Read`, as appropriate, for this operation. For more information about mailbox permissions, see [mail permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -614,7 +614,7 @@ The example in this section updates the **delegateMeetingMessageDeliveryOptions*
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `MailboxSettings.ReadWrite`, as appropriate, for this operation. For more information about mailbox permissions, see [mail permissions](permissions-reference.md#mail-permissions).
+Use the least privileged delegated or application permission, `MailboxSettings.ReadWrite`, as appropriate, for this operation. For more information about mailbox permissions, see [mail permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -688,7 +688,7 @@ In the example below, Alex deletes Megan as a sharee of the "Kids parties" calen
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated or application permission, `Calendars.ReadWrite`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
+Use the least privileged delegated or application permission, `Calendars.ReadWrite`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md).
 
 # [HTTP](#tab/http)
 <!-- {

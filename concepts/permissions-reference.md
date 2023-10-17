@@ -4897,7 +4897,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 | TeamsTab.ReadWrite.Chat | d583f4d7-57da-4b2c-9744-253e9ec3c7be | Manage this chat's tabs | Allows the app to manage this chat's tabs, without a signed-in user. 
 | TeamsTab.ReadWrite.Group | 717ca3a4-bc73-47f8-b613-4d43e657fa9c | Manage this team's tabs | Allows the app to manage this team's tabs, without a signed-in user. 
 
-[!INCLUDE [permissions-rsa](../includes/permissions-notes/permissions-rsa.md)]
+[!INCLUDE [permissions-rsc](../includes/permissions-notes/permissions-rsc.md)]
 
 ## See also
 
