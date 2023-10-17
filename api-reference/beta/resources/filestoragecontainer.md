@@ -29,7 +29,8 @@ A file storage container is a shared file storage space that can be used by a us
 |:---|:---|
 |reader|Readers can read fileStorageContainer metadata and the content inside.|
 
-|writer|Provides the ability to read and modify fileStorageContainer metadata and contents inside.|
+|writer|Writers can read and modify fileStorageContainer metadata and contents inside.|
+
 |manager|Managers can read and modify fileStorageContainer metadata and contents inside and manage the permissions to the container.|
 
 |owner|Owners can read and modify fileStorageContainer metadata and contents inside, manage permissions to containers, delete and restore containers.|
