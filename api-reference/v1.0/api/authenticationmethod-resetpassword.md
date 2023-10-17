@@ -12,7 +12,7 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 
-Reset a user's password, represented by a [password authentication method](../resources/passwordauthenticationmethod.md) object. This can only be done by an administrator with appropriate permissions and cannot be performed on a user's own account.
+Reset a user's password, represented by a [password authentication method](../resources/passwordauthenticationmethod.md) object. This can only be done by an administrator with appropriate permissions and can't be performed on a user's own account.
 
 This flow writes the new password to Azure Active Directory and pushes it to on-premises Active Directory if configured using password writeback. The admin can either provide a new password or have the system generate one. The user is prompted to change their password on their next sign in.
 
@@ -58,13 +58,13 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|newPassword|String|The new password. Required for tenants with hybrid password scenarios. If omitted for a cloud-only password, the system returns a system-generated password. This is a unicode string with no other encoding. It is validated against the tenant's banned password system before acceptance, and must adhere to the tenant's cloud and/or on-premises password requirements.|
+|newPassword|String|The new password. Required for tenants with hybrid password scenarios. If omitted for a cloud-only password, the system returns a system-generated password. This is a unicode string with no other encoding. It's validated against the tenant's banned password system before acceptance, and must adhere to the tenant's cloud and/or on-premises password requirements.|
 
 ## Response
 
 If successful, this method returns a `202 Accepted` response code and a [passwordResetResponse](../resources/passwordresetresponse.md) in the response body. The response body may also include a **Location** header with a URL to check the status of the [reset operation](longrunningoperation-get.md).
 
-If the caller did not submit a password, a Microsoft-generated password is provided in a JSON object in the response body.
+If the caller didn't submit a password, a Microsoft-generated password is provided in a JSON object in the response body.
 
 ### Response headers
 
