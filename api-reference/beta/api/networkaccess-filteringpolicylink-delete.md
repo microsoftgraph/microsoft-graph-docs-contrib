@@ -41,7 +41,7 @@ DELETE ** Entity URI for microsoft.graph.networkaccess.filteringPolicyLink not f
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -50,7 +50,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "delete_filteringpolicylink"
@@ -62,7 +62,7 @@ DELETE https://graph.microsoft.com/beta/networkaccess/FilteringProfiles/c308a3af
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
