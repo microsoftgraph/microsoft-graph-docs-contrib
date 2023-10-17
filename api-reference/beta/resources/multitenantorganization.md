@@ -1,6 +1,6 @@
 ---
 title: "multiTenantOrganization resource type"
-description: "Defines an organization with more than one instance of Azure Active Directory (Azure AD)."
+description: "Defines an organization with more than one instance of Microsoft Entra ID."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines an organization with more than one instance of Azure Active Directory (Azure AD). A multitenant organization enables multiple tenants to collaborate like a single entity.
+Defines an organization with more than one instance of Microsoft Entra ID. A multitenant organization enables multiple tenants to collaborate like a single entity.
 
 There can only be one multitenant organization per active tenant. It is not possible to be part of multiple multitenant organizations.
 
@@ -58,4 +58,3 @@ Here's a JSON representation of the resource.
   "state": "String"
 }
 ```
-
