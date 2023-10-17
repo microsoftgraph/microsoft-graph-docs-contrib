@@ -1,9 +1,9 @@
 ---
 title: "Get privilegeEscalationGcpServiceAccountFinding"
 description: "Read the properties and relationships of a privilegeEscalationGcpServiceAccountFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/gcp/key/findings/graph.privilegeEscalationGcpServiceAccountFinding
 ```
 
 ## Optional query parameters
@@ -57,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.privilegeEscalationGcpServiceAccountFinding
 ```
 
 
@@ -72,18 +73,42 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
-
+Content-type: application/json
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.privilegeEscalationGcpServiceAccountFinding",
-    "id": "aaa94343-782c-c971-71f9-1273514aea9d",
-    "createdDateTime": "String (timestamp)",
-    "permissionsCreepIndex": {
-      "@odata.type": "microsoft.graph.permissionsCreepIndex"
-    },
-    "lastActiveDateTime": "String (timestamp)"
-  }
+  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/gcp/findings/graph.privilegeEscalationGcpServiceAccountFinding",
+  "value": [
+    {
+      "@odata.type": "graph.privilegeEscalationGcpServiceAccountFinding",
+      "id": "cHJpdmlsZWdlRXNjYWxhdGlvblNlcnZpY2VBY2NvdW50RmluZGluZzEwMDAx",
+      "identity": {
+        "@odata.type": "graph.gcpServiceAccount",
+        "id": "YXNldGhpYUBjbG91ZGtub3guaW8=",
+        "externalId": "asethia@cloudknox.io",
+        "displayName": "asethia",
+        "source": {
+          "@odata.type": "graph.gsuiteSource",
+          "identityProviderType": "gsuite",
+          "domain": "cloudknox.io"
+        },
+        "authorizationSystem": {
+          "@odata.type": "graph.gcpAuthorizationSystem",
+          "id": "{Id}",
+          "authorizationSystemId": "carbide-bonsai-205017",
+          "authorizationSystemName": "ck-staging",
+          "authorizationSystemType": "gcp"
+        }
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "permissionsCreepIndex": {
+        "score": 99
+      },
+      "identityDetails": {
+        "createdDateTime": "2020-04-12T20:34:24Z",
+        "lastActiveDateTime": "2020-10-30T03:21:05Z"
+      }
+    }
+  ],
+  "@odata.nextLink": "https://graph.microsoft.com/identityGovernance/permissionsAnalytics/gcp/findings/graph.privilegeEscalationGcpServiceAccountFinding?$skiptoken=foobar"
 }
 ```
 
