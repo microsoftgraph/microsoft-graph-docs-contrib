@@ -29,7 +29,7 @@ Use a method in the [Methods](#methods) section to get the corresponding report 
 |[getSharedUseLicenseUsageReport](../api/cloudpcreports-getshareduselicenseusagereport.md) (deprecated) |Stream| Get the shared use license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.|
 |[getFrontlineReport](../api/cloudpcreports-getfrontlinereport.md)|Stream| Get Frontline Cloud PC license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.|
 |[getTotalAggregatedRemoteConnectionReports](../api/cloudpcreports-gettotalaggregatedremoteconnectionreports.md)|Stream|Get the total aggregated remote connection reports, like usage and **daysSinceLastUse**, in a given period.|
-|[getRawRemoteConnectionReports](../api/cloudpcreports-getrawremoteconnectionreports.md)|Stream|Get a Cloud PC's raw real-time remote connection report without any calculation or aggregation.|
+|[getRawRemoteConnectionReports](../api/cloudpcreports-getrawremoteconnectionreports.md)|Stream|Get the raw real-time remote connection report for a Cloud PC without any calculation or aggregation.|
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
