@@ -10,7 +10,7 @@ doc_type: apiPageType
 # riskyUser: dismiss
 Namespace: microsoft.graph
 
->**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
+>**Note:** Using the riskyUsers API requires a Microsoft Entra ID P2 license.
 
 Dismiss the risk of one or more [riskyUser](../resources/riskyuser.md) objects. This action sets the targeted user's risk level to none.
 
@@ -124,5 +124,3 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
