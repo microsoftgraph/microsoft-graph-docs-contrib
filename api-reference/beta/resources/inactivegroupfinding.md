@@ -1,9 +1,9 @@
 ---
 title: "inactiveGroupFinding resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Contains information on a group, its authorization system, and actions granted to this group along with how many of these actions were executed by this group identity in the last 90 days."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+An inactiveGroupFinding contains information on a group, its authorization system, and information on authorization system actions granted to this group identity along with how many of these actions were executed by this group identity in the last 90 days.
 
 Inherits from [finding](../resources/finding.md).
 
@@ -23,24 +22,19 @@ Inherits from [finding](../resources/finding.md).
 |:---|:---|:---|
 |[List inactiveGroupFindings](../api/inactivegroupfinding-list.md)|[inactiveGroupFinding](../resources/inactivegroupfinding.md) collection|Get a list of the [inactiveGroupFinding](../resources/inactivegroupfinding.md) objects and their properties.|
 |[Get inactiveGroupFinding](../api/inactivegroupfinding-get.md)|[inactiveGroupFinding](../resources/inactivegroupfinding.md)|Read the properties and relationships of an [inactiveGroupFinding](../resources/inactivegroupfinding.md) object.|
-|[Update inactiveGroupFinding](../api/inactivegroupfinding-update.md)|[inactiveGroupFinding](../resources/inactivegroupfinding.md)|Update the properties of an [inactiveGroupFinding](../resources/inactivegroupfinding.md) object.|
-|[Delete inactiveGroupFinding](../api/inactivegroupfinding-delete.md)|None|Delete an [inactiveGroupFinding](../resources/inactivegroupfinding.md) object.|
-|[List authorizationSystemIdentity](../api/inactivegroupfinding-list-group.md)|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md) collection|Get the authorizationSystemIdentity resources from the group navigation property.|
-|[Add authorizationSystemIdentity](../api/inactivegroupfinding-post-group.md)|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Add group by posting to the group collection.|
-|[Remove authorizationSystemIdentity](../api/inactivegroupfinding-delete-group.md)|None|Remove an [authorizationSystemIdentity](../resources/authorizationsystemidentity.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionSummary|[actionSummary](../resources/actionsummary.md)|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [finding](../resources/finding.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|**TODO: Add Description**|
+|actionSummary|[actionSummary](../resources/actionsummary.md)|Contains information on authorization system actions granted to this group identity and actions executed by this group identity in the last 90 days. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the group identity|
+|createdDateTime|DateTimeOffset|Inherited from [finding](../resources/finding.md).|
+|id|String|Inherited from [entity](../resources/entity.md).|
+|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|Assigns an index based on an identities excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the group identity. Supports `$filter` (`gt`) and `$orderby`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|group|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|**TODO: Add Description**|
+|group|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system|
 
 ## JSON representation
 The following is a JSON representation of the resource.
@@ -65,4 +59,3 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-

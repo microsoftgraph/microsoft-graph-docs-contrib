@@ -3,7 +3,7 @@ title: "List inactiveGroupFindings"
 description: "Get a list of the inactiveGroupFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -25,32 +25,36 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|**SERVICENOWAPI**|
 
 ## HTTP request
+
+Get AWS inactive groups:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveGroupFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveGroupFinding
 ```
 
+Get Azure inactive groups:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveGroupFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveGroupFinding
 ```
 
+Get GCP inactive groups:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveGroupFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveGroupFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -63,8 +67,6 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [inactiveGroupFinding](../resources/inactivegroupfinding.md) objects in the response body.
-
-If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the LIST method filter uses a bad key.
 
 ## Examples
 
@@ -93,18 +95,68 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.inactiveGroupFinding",
-      "id": "e41a6878-b1cc-cc5c-055b-bab8a047c97f",
-      "createdDateTime": "String (timestamp)",
-      "actionSummary": {
-        "@odata.type": "microsoft.graph.actionSummary"
-      },
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
-      }
-    }
-  ]
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveGroupFinding",
+    "value": [
+        {
+            "id": "MSxJbmFjdGl2ZUdyb3VwRmluZGluZyw2MDI0NA",
+            "createdDateTime": "2023-10-17T15:46:31.448597Z",
+            "permissionsCreepIndex": {
+                "score": 1
+            },
+            "actionSummary": {
+                "assigned": 3011,
+                "exercised": 0,
+                "available": 7075
+            },
+            "group": {
+                "@odata.type": "#microsoft.graph.gcpGroup",
+                "id": "dGVzdGdyb3VwQGNsb3Vka25veC5pbw",
+                "externalId": "testgroup@cloudknox.io",
+                "displayName": "testgroup",
+                "source": {
+                    "@odata.type": "#microsoft.graph.gsuiteSource",
+                    "identityProviderType": "gsuite",
+                    "domain": "carbide-bonsai-205017"
+                },
+                "authorizationSystem": {
+                    "@odata.type": "#microsoft.graph.gcpAuthorizationSystem",
+                    "authorizationSystemId": "carbide-bonsai-205017",
+                    "authorizationSystemName": "ck-staging",
+                    "authorizationSystemType": "gcp",
+                    "id": "MSxnY3AsY2FyYmlkZS1ib25zYWktMjA1MDE3"
+                }
+            }
+        },
+        {
+            "id": "MSxJbmFjdGl2ZUdyb3VwRmluZGluZyw2MDI0NQ",
+            "createdDateTime": "2023-10-17T15:46:31.448597Z",
+            "permissionsCreepIndex": {
+                "score": 1
+            },
+            "actionSummary": {
+                "assigned": 3061,
+                "exercised": 0,
+                "available": 7075
+            },
+            "group": {
+                "@odata.type": "#microsoft.graph.gcpGroup",
+                "id": "ZW5naW5lZXJpbmdAY2xvdWRrbm94Lmlv",
+                "externalId": "engineering@cloudknox.io",
+                "displayName": "engineering",
+                "source": {
+                    "@odata.type": "#microsoft.graph.gsuiteSource",
+                    "identityProviderType": "gsuite",
+                    "domain": "carbide-bonsai-205017"
+                },
+                "authorizationSystem": {
+                    "@odata.type": "#microsoft.graph.gcpAuthorizationSystem",
+                    "authorizationSystemId": "carbide-bonsai-205017",
+                    "authorizationSystemName": "ck-staging",
+                    "authorizationSystemType": "gcp",
+                    "id": "MSxnY3AsY2FyYmlkZS1ib25zYWktMjA1MDE3"
+                }
+            }
+        }
+    ]
 }
 ```
