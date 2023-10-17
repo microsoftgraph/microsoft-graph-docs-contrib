@@ -7,9 +7,9 @@ ms.prod: identity-and-access
 doc_type: enumTypes
 ---
 
+# Microsoft Global Secure Access enumeration values
+
 ### aggregationFilter values 
-
-
 
 |Member|
 |:---|
