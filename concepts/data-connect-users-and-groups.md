@@ -85,7 +85,7 @@ Use the following steps to search for the types of groups in your tenant to help
 
 3. In a new tab, go to the [Microsoft Entra admin center](https://entra.microsoft.com) > Under **Identity**, select **Overview**.
 
-    ![Screenshot of the Azure homepage with Azure Active Directory hihglighted](images/data-connect-groups-2.5.png)
+    ![Screenshot of the Azure homepage with Microsoft Entra hihglighted](images/data-connect-groups-2.5.png)
 
 4. On the Overview tab, paste the group ID copied from step 2, and then and choose the **Groups** tab.
 
@@ -93,5 +93,5 @@ Use the following steps to search for the types of groups in your tenant to help
 
 5. In the **Type** field for the group, verify the type of group that you have.
 
-    ![Screenshot of the group in the Microsoft Entra with the Type field highlighted](images/data-connect-groups-4.png)
+    ![Screenshot of the group in the Microsoft Entra ID with the Type field highlighted](images/data-connect-groups-4.png)
  
