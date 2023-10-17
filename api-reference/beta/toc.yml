@@ -17412,7 +17412,7 @@ items:
                       - name: Participant
                         href: resources/callrecords-participant.md
                       - name: List
-                        href: api/callrecords-participants-list.md
+                        href: api/callrecords-participant-list.md
                   - name: Direct routing calls
                     items:
                       - name: Direct routing log row
