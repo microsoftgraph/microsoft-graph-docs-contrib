@@ -1,6 +1,6 @@
 ---
 title: "reports: transactionSummaries"
-description: "Provides a high-level summary of transactions, including a breakdown by traffic type and counts for allowed and blocked transactions."
+description: "Provide a summary on the transaction level, with a breakdown on the traffic type."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,9 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides a high-level summary of transactions, including a breakdown by traffic type and counts for allowed and blocked transactions.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+Provide a summary on the transaction level, with a breakdown on the traffic type.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,8 +20,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|NetworkAccessPolicy.Read.All, NetworkAccessPolicy.ReadWrite.All|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|Not supported|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Not supported.|
 
 [!INCLUDE [rbac-global-secure-access-apis-read](../includes/rbac-for-apis/rbac-global-secure-access-apis-read.md)]
 
@@ -34,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /networkAccess/reports/transactionSummaries(startDateTime={startDateTime},endDateTime={endDateTime})
+GET /networkAccessRoot/reports/transactionSummaries
 ```
 
 ## Function parameters
@@ -43,8 +41,8 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Sets the starting date and time.|
-|endDateTime|DateTimeOffset|Sets the ending date and time.|
+|startDateTime|DateTimeOffset|Timestamp indicating the starting date and time for summarizing data within the specified report, providing the beginning point for data aggregation and analysis.|
+|endDateTime|DateTimeOffset|Timestamp indicating the ending date and time for summarizing data within the specified report, marking the conclusion of the data aggregation and analysis period.|
 
 
 ## Request headers
@@ -69,12 +67,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/reports/transactionSummaries(startDate=2023-01-01T00:00:00Z,endDate=2023-01-31T00:00:00Z)?$filter=trafficType  eq 'microsoft365'
+GET https://graph.microsoft.com/beta/networkAccess/reports/transactionSummaries(startDate=2023-01-01T00:00:00Z,endDate=2023-01-31T00:00:00Z) 
 ```
 
 
 ### Response
-The following is an example of the response.
+The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -87,8 +85,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/networkAccess/reports/$metadata#transactionSummaries",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.networkaccess.transactionSummary)",
   "value": [
+    {
+      "trafficType": "internet",
+      "totalCount": 469000,
+      "blockedCount": 400
+    },
+    {
+      "trafficType": "private",
+      "totalCount": 220302,
+      "blockedCount": 0
+    },
     {
       "trafficType": "microsoft365",
       "totalCount": 280443,

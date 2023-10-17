@@ -1,7 +1,7 @@
 ---
 title: "logs resource type"
-description: "Represents network connections that are routed through the Global Secure Access services."
-author: "Moti-ba"
+description: "**TODO: Add Description**"
+author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: resourcePageType
@@ -13,38 +13,43 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents network connections that are routed through the Global Secure Access services.
-
-Inherits from [microsoft.graph.entity](../resources/entity.md).
+**TODO: Add Description**
 
 ## Methods
-
-None.
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List logs](../api/networkaccess-networkaccessroot-list-logs.md)|[microsoft.graph.networkaccess.logs](../resources/networkaccess-logs.md) collection|Get a list of the [microsoft.graph.networkaccess.logs](../resources/networkaccess-logs.md) objects and their properties.|
+|[Create logs](../api/networkaccess-networkaccessroot-post-logs.md)|[microsoft.graph.networkaccess.logs](../resources/networkaccess-logs.md)|Create a new [microsoft.graph.networkaccess.logs](../resources/networkaccess-logs.md) object.|
+|[Get logs](../api/networkaccess-logs-get.md)|[microsoft.graph.networkaccess.logs](../resources/networkaccess-logs.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.logs](../resources/networkaccess-logs.md) object.|
+|[Update logs](../api/networkaccess-logs-update.md)|[microsoft.graph.networkaccess.logs](../resources/networkaccess-logs.md)|Update the properties of a [microsoft.graph.networkaccess.logs](../resources/networkaccess-logs.md) object.|
+|[Delete logs](../api/networkaccess-networkaccessroot-delete-logs.md)|None|Delete a [microsoft.graph.networkaccess.logs](../resources/networkaccess-logs.md) object.|
+|[List remoteNetworks](../api/networkaccess-logs-list-remotenetworks.md)|[microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) collection|Get the remoteNetworkHealthEvent resources from the remoteNetworks navigation property.|
+|[Create remoteNetworkHealthEvent](../api/networkaccess-logs-post-remotenetworks.md)|[microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md)|Create a new remoteNetworkHealthEvent object.|
+|[List traffic](../api/networkaccess-logs-list-traffic.md)|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) collection|Get the networkAccessTraffic resources from the traffic navigation property.|
+|[Create networkAccessTraffic](../api/networkaccess-logs-post-traffic.md)|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md)|Create a new networkAccessTraffic object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Identifier. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|traffic|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) collection|Represents a collection of log entries in the network access traffic log.|
+|remoteNetworks|[microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) collection|**TODO: Add Description**|
+|traffic|[microsoft.graph.networkaccess.networkAccessTraffic](../resources/networkaccess-networkaccesstraffic.md) collection|**TODO: Add Description**|
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.networkaccess.logs",
-  "baseType": "microsoft.graph.entity",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.networkaccess.logs",
-  "id": "String (identifier)"
+  "@odata.type": "#microsoft.graph.networkaccess.logs"
 }
 ```
 

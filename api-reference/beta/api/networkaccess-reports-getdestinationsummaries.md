@@ -1,6 +1,6 @@
 ---
 title: "reports: getDestinationSummaries"
-description: "Return the total unique count of transactions per aggregation in the past 24 hours."
+description: "Provide a summary on the top destinations visited by different aggregations."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,9 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Return the total unique count of transactions per aggregation in the past 24 hours.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+Provide a summary on the top destinations visited by different aggregations.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /networkAccess/reports/getDestinationSummaries(startDateTime={startDateTime},endDateTime={endDateTime},aggregatedBy={aggregatedBy})
+GET /networkAccessRoot/reports/getDestinationSummaries
 ```
 
 ## Function parameters
@@ -43,9 +41,9 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Sets the starting date and time.|
-|endDateTime|DateTimeOffset|Sets the ending date and time.|
-|aggregatedBy|microsoft.graph.networkaccess.aggregationFilter|The aggregation filter used for the summary.|
+|startDateTime|DateTimeOffset|Timestamp indicating the starting date and time for summarizing data within the specified report, providing the beginning point for data aggregation and analysis.|
+|endDateTime|DateTimeOffset|Timestamp indicating the ending date and time for summarizing data within the specified report, marking the conclusion of the data aggregation and analysis period.|
+|aggregatedBy|microsoft.graph.networkaccess.aggregationFilter|The aggregation filter used for the summary. The possible values are: `transactions`, `users`,`devices`. Required.|
 
 
 ## Request headers
@@ -64,28 +62,18 @@ If successful, this function returns a `200 OK` response code and a [microsoft.g
 
 ### Request
 The following is an example of a request.
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "reportsthis.getdestinationsummaries"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/networkAccess/reports/getDestinationSummaries(aggregatedBy='devices', startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T00:00:00Z)
+GET https://graph.microsoft.com/beta/networkAccess/reports/getDestinationSummaries (aggregatedBy='devices', startDateTime=2023-01-01T00:00:00Z,endDateTime=2023-01-31T00:00:00Z)
 ```
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/reportsthisgetdestinationsummaries-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/reportsthisgetdestinationsummaries-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
-The following is an example of the response.
+The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -98,6 +86,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.networkaccess.destinationSummary)",
   "value": [
     {
       "destination": "office365.com",
@@ -114,13 +103,8 @@ Content-Type: application/json
     {
       "destination": "sharepoint.com",
       "count": 989
-    },
-    {
-      "destination": "5.29.13.185",
-      "count": 120
     }
   ]
 }
-
 ```
 

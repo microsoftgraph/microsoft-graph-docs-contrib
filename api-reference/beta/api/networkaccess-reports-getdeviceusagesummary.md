@@ -1,6 +1,6 @@
 ---
 title: "reports: getDeviceUsageSummary"
-description: "Device Usage Summary report is a summary of counts around the area of the onboarding and offboarding of the organization devices to the Global Secure Access client."
+description: "Provide a summary on the onboarding and offboarding of the devices to the ZTNA client."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,9 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Device Usage Summary report is a summary of counts around the area of the onboarding and offboarding of the organization devices to the Global Secure Access client.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+Provide a summary on the onboarding and offboarding of the devices to the ZTNA client.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /networkAccess/reports/getDeviceUsageSummary(startDateTime={startDateTime},endDateTime={endDateTime},activityPivotDateTime={activityPivotDateTime})
+GET /networkAccess/reports/getDeviceUsageSummary
 ```
 
 ## Function parameters
@@ -43,8 +41,8 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Sets the starting date and time.|
-|endDateTime|DateTimeOffset|Sets the ending date and time.|
+|startDateTime|DateTimeOffset|Timestamp indicating the starting date and time for summarizing data within the specified report, providing the beginning point for data aggregation and analysis.|
+|endDateTime|DateTimeOffset|Timestamp indicating the ending date and time for summarizing data within the specified report, marking the conclusion of the data aggregation and analysis period.|
 |activityPivotDateTime|DateTimeOffset|The time that defines what is an active or inactive device.|
 
 
@@ -88,13 +86,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "totalDeviceCount": 545,
-      "activeDeviceCount": 540,
-      "inactiveDeviceCount": 7
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.networkaccess.deviceUsageSummary",
+    "totalDeviceCount": 545,
+    "activeDeviceCount": 540,
+    "inactiveDeviceCount": 7
 }
 ```
 

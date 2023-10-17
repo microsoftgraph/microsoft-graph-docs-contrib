@@ -1,7 +1,7 @@
 ---
 title: "destinationSummary resource type"
-description: "A summary for most accessed destinations."
-author: "Moti-ba"
+description: "A summary for device destinations being accessed."
+author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
 doc_type: resourcePageType
@@ -13,13 +13,14 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A summary for most accessed destinations that's returned by the [getDestinationSummaries](../api/networkaccess-reports-getdestinationsummaries.md) method.
+A summary for device destinations being accessed.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |count|Int32|Count of the aggregation.|
-|destination|String|Destination FQDN or IP address.|
+|destination|String|destination fqdn or ip.|
+|trafficType|microsoft.graph.networkaccess.trafficType|traffic classification.The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -35,7 +36,8 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.networkaccess.destinationSummary",
   "destination": "String",
-  "count": "Integer"
+  "count": "Integer",
+  "trafficType": "String"
 }
 ```
 

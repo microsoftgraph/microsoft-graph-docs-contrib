@@ -1,15 +1,11 @@
 ---
-title: "Network Access enum values"
-description: "Microsoft Graph Network Access enumeration values"
-author: "moti-ba"
+title: "Enum values"
+description: "Microsoft Graph enumeration values"
+author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
+ms.prod: identity-and-access
 doc_type: enumTypes
 ---
-
-# Network Access Enum Values
-
-Namespace: microsoft.graph.networkaccess
 
 ### aggregationFilter values 
 
@@ -37,28 +33,14 @@ Namespace: microsoft.graph.networkaccess
 |sap|
 |unknownFutureValue|
 
-### bandwidthCapacityInMbps values 
+### bgpRoutingHealthStatus values 
 
 
 
 |Member|
 |:---|
-|mbps250|
-|mbps500|
-|mbps750|
-|mbps1000|
-|unknownFutureValue|
-
-### connectivityState values 
-
-
-
-|Member|
-|:---|
-|pending|
-|connected|
-|inactive|
-|error|
+|bgpDisconnected|
+|bgpConnected|
 |unknownFutureValue|
 
 ### deviceCategory values 
@@ -71,42 +53,6 @@ Namespace: microsoft.graph.networkaccess
 |branch|
 |unknownFutureValue|
 
-### deviceVendor values 
-
-
-
-|Member|
-|:---|
-|barracudaNetworks|
-|checkPoint|
-|ciscoMeraki|
-|citrix|
-|fortinet|
-|hpeAruba|
-|netFoundry|
-|nuage|
-|openSystems|
-|paloAltoNetworks|
-|riverbedTechnology|
-|silverPeak|
-|vmWareSdWan|
-|versa|
-|other|
-|unknownFutureValue|
-
-### dhGroup values 
-
-
-
-|Member|
-|:---|
-|dhGroup14|
-|dhGroup24|
-|dhGroup2048|
-|ecp256|
-|ecp384|
-|unknownFutureValue|
-
 ### filteringPolicyAction values 
 
 
@@ -115,90 +61,6 @@ Namespace: microsoft.graph.networkaccess
 |:---|
 |block|
 |allow|
-|unknownFutureValue|
-
-### forwardingCategory values 
-
-
-
-|Member|
-|:---|
-|default|
-|optimized|
-|allow|
-|unknownFutureValue|
-
-### forwardingRuleAction values 
-
-
-
-|Member|
-|:---|
-|bypass|
-|forward|
-|unknownFutureValue|
-
-### ikeEncryption values 
-
-
-
-|Member|
-|:---|
-|aes128|
-|aes192|
-|aes256|
-|gcmAes128|
-|gcmAes256|
-|unknownFutureValue|
-
-### ikeIntegrity values 
-
-
-
-|Member|
-|:---|
-|sha256|
-|sha384|
-|gcmAes128|
-|gcmAes256|
-|unknownFutureValue|
-
-### ipSecEncryption values 
-
-
-
-|Member|
-|:---|
-|none|
-|gcmAes128|
-|gcmAes192|
-|gcmAes256|
-|unknownFutureValue|
-
-### ipSecIntegrity values 
-
-
-
-|Member|
-|:---|
-|gcmAes128|
-|gcmAes192|
-|gcmAes256|
-|sha256|
-|unknownFutureValue|
-
-### networkDestinationType values 
-
-
-
-|Member|
-|:---|
-|url|
-|fqdn|
-|ipAddress|
-|ipRange|
-|ipSubnet|
-|webCategory|
 |unknownFutureValue|
 
 ### networkingProtocol values 
@@ -231,93 +93,13 @@ Namespace: microsoft.graph.networkaccess
 |spxII|
 |unknownFutureValue|
 
-### onboardingStatus values 
+### remoteNetworkHealthAliveStatus values 
 
 
 
 |Member|
 |:---|
-|offboarded|
-|offboardingInProgress|
-|onboardingInProgress|
-|onboarded|
-|onboardingErrorOccurred|
-|offboardingErrorOccurred|
-|unknownFutureValue|
-
-### pfsGroup values 
-
-
-
-|Member|
-|:---|
-|none|
-|pfs1|
-|pfs2|
-|pfs14|
-|pfs24|
-|pfs2048|
-|pfsmm|
-|ecp256|
-|ecp384|
-|unknownFutureValue|
-
-### redundancyTier values 
-
-
-
-|Member|
-|:---|
-|noRedundancy|
-|zoneRedundancy|
-|unknownFutureValue|
-
-### region values 
-
-
-
-|Member|
-|:---|
-|eastUS|
-|eastUS2|
-|westUS|
-|westUS2|
-|westUS3|
-|centralUS|
-|northCentralUS|
-|southCentralUS|
-|northEurope|
-|westEurope|
-|franceCentral|
-|germanyWestCentral|
-|switzerlandNorth|
-|ukSouth|
-|canadaEast|
-|canadaCentral|
-|southAfricaWest|
-|southAfricaNorth|
-|uaeNorth|
-|unknownFutureValue|
-
-### status values 
-
-
-
-|Member|
-|:---|
-|enabled|
-|disabled|
-|unknownFutureValue|
-
-### trafficForwardingType values 
-
-
-
-|Member|
-|:---|
-|m365|
-|internet|
-|private|
+|alive|
 |unknownFutureValue|
 
 ### trafficType values 
@@ -332,9 +114,33 @@ Namespace: microsoft.graph.networkaccess
 |all|
 |unknownFutureValue|
 
-<!--
-{
-  "type": "#page.annotation",
-  "namespace": "microsoft.graph.networkaccess"
-}
--->
+### tunnelConnectivityHealthStatus values 
+
+
+
+|Member|
+|:---|
+|tunnelDisconnected|
+|tunnelConnected|
+|unknownFutureValue|
+
+### usageStatus values 
+
+
+
+|Member|
+|:---|
+|frequentlyUsed|
+|rarelyUsed|
+|unknownFutureValue|
+
+### userType values 
+
+
+
+|Member|
+|:---|
+|member|
+|guest|
+|unknownFutureValue|
+

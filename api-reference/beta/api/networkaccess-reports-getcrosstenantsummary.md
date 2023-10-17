@@ -1,6 +1,6 @@
 ---
 title: "reports: getCrossTenantSummary"
-description: "A summary of counts of the organization's devices accessing other tenants than your tenant."
+description: "Provide a summary on the cross tenant access patterns."
 author: Moti-ba
 ms.localizationpriority: medium
 ms.prod: identity-and-access
@@ -12,9 +12,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Cross-tenant report is a summary of counts of the organization's devices accessing other tenants than your tenant.
-
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+Provide a summary on the cross tenant access patterns.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /networkAccess/reports/getCrossTenantSummary(startDateTime={startDateTime},endDateTime={endDateTime},discoveryPivotDateTime={discoveryPivotDateTime})
+GET /networkAccessRoot/reports/getCrossTenantSummary
 ```
 
 ## Function parameters
@@ -43,8 +41,8 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|startDateTime|DateTimeOffset|Sets the starting date and time.|
-|endDateTime|DateTimeOffset|Sets the ending date and time.|
+|startDateTime|DateTimeOffset|Timestamp indicating the starting date and time for summarizing data within the specified report, providing the beginning point for data aggregation and analysis.|
+|endDateTime|DateTimeOffset|Timestamp indicating the ending date and time for summarizing data within the specified report, marking the conclusion of the data aggregation and analysis period.|
 |discoveryPivotDateTime|DateTimeOffset|The time that defines what is new discovered tenant.|
 
 
@@ -75,7 +73,7 @@ GET https://graph.microsoft.com/beta/networkAccess/reports/getCrossTenantSummary
 
 
 ### Response
-The following is an example of the response.
+The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -88,15 +86,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-      {
-          "authTransactionCount": 5000,
-          "tenantCount": 23,
-          "newTenantCount": 2,
-          "userCount": 300,
-          "deviceCount": 545
-      }
-    ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.networkaccess.crossTenantSummary",
+  "authTransactionCount": 150049,
+  "tenantCount": 71,
+  "newTenantCount": 9,
+  "userCount": 85,
+  "deviceCount": 93,
+  "rarelyUsedTenantCount": 12
 }
 ```
 
