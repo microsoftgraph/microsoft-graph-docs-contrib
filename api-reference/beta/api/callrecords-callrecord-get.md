@@ -20,7 +20,7 @@ There are two ways to get the **id** of a **callRecord**:
 * Subscribe to [change notifications](/graph/api/resources/webhooks) to the `/communications/callRecords` endpoint.
 * Use the **callChainId** property of a [call](../resources/call.md). The call record is available only after the associated call is completed.
 
-You can use the `$expand` query parameter to optionally include session and segment details, as shown in the [Get full details](#example-2-get-full-details) example. When you expand session details, the maximum page size is 60 sessions.
+You can use the `$expand` query parameter to optionally include participant_v2 details or session and segment details, as shown in the [Get full details](#example-2-get-full-details) example. When you expand session details, the maximum page size is 60 sessions. When you expand participants_v2, the maximum page size is 130 participants.
 
 > [!WARNING]
 >
@@ -62,6 +62,7 @@ This method supports the following OData query parameters to help customize the 
 | Authorization | Bearer {token} |
 | Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. Optional. This value must be equal to or less than the maximum allowable page size. |
 | Prefer: include-unknown-enum-members | Enables evolveable enum values beyond the sentinel value. See [Best Practices](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) for more information. Optional. |
+| Prefer: omit-values=nulls | Removes null or empty values from the response. Optional. |
 
 ## Request body
 
@@ -262,6 +263,17 @@ Content-type: application/json
             "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
         }
     },
+    "organizer_v2@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/organizer_v2/$entity",
+      "organizer_v2": {
+        "id": "821809f5-0000-0000-0000-3b5136c0e777",
+        "identity": {
+          "user": {
+            "id": "821809f5-0000-0000-0000-3b5136c0e777",
+            "displayName": "Abbie Wilkins",
+            "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+          }
+        }
+      }
     "participants": [
         {
             "user": {
@@ -306,6 +318,12 @@ Content-type: application/json
                         "displayName": "Abbie Wilkins",
                         "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
                     }
+                },
+                "associatedIdentity": {
+                    "id": "821809f5-0000-0000-0000-3b5136c0e777",
+                    "displayName": "Abbie Wilkins",
+                    "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+                    "userPrincipalName": "abbie.wilkins@contoso.com"
                 }
             },
             "callee": {
@@ -326,6 +344,12 @@ Content-type: application/json
                         "displayName": "Owen Franklin",
                         "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
                     }
+                },
+                "associatedIdentity": {
+                    "id": "f69e2c00-0000-0000-0000-185e5f5f5d8a",
+                    "displayName": "Owen Franklin",
+                    "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+                    "userPrincipalName": "owen.franklin@contoso.com"
                 },
                 "feedback": {
                     "rating": "poor",
@@ -364,6 +388,12 @@ Content-type: application/json
                                 "displayName": "Abbie Wilkins",
                                 "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
                             }
+                        },
+                        "associatedIdentity": {
+                            "id": "821809f5-0000-0000-0000-3b5136c0e777",
+                            "displayName": "Abbie Wilkins",
+                            "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+                            "userPrincipalName": "abbie.wilkins@contoso.com"
                         }
                     },
                     "callee": {
@@ -384,7 +414,13 @@ Content-type: application/json
                                 "displayName": "Owen Franklin",
                                 "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
                             }
-                        }
+                        },
+                        "associatedIdentity": {
+                            "id": "f69e2c00-0000-0000-0000-185e5f5f5d8a",
+                            "displayName": "Owen Franklin",
+                            "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+                            "userPrincipalName": "owen.franklin@contoso.com"
+                        },
                     },
                     "media": [
                         {

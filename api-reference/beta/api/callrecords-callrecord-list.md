@@ -13,7 +13,7 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [callRecord](../resources/callrecords-callrecord.md) objects.
+Retrieves a list of [callRecord](../resources/callrecords-callrecord.md) objects. The results can be optionally filtered using the `$filter` query parameter on `startDateTime` and participant `id`. Note that the listed call records will not include expandable attributes such as session, segment, or participant_v2. These attributes can be expanded using [Get callRecord](callrecords-callrecord-get.md) for a specific record.
 
 > [!WARNING]
 >
@@ -54,6 +54,7 @@ This method supports the following OData query parameters to help customize the 
 | Authorization | Bearer {token} |
 | Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. Optional. This value must be equal to or less than the maximum allowable page size. |
 | Prefer: include-unknown-enum-members | Enables evolvable enum values beyond the sentinel value. See [Best Practices](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) for more information. Optional. |
+| Prefer: omit-values=nulls | Removes null or empty values from the response. Optional. |
 
 ## Request body
 
@@ -212,7 +213,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Filter by participant Azure Entra ID
+### Example 3: Filter by participant ID
 
 #### Request
 

@@ -53,6 +53,7 @@ This method supports some of the OData query parameters to help customize the re
 | Authorization | Bearer {token} |
 | Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. Optional. This value must be equal to or less than the maximum allowable page size. |
 | Prefer: include-unknown-enum-members | Enables evolvable enum values beyond the sentinel value. See [Best Practices](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) for more information. Optional. |
+| Prefer: omit-values=nulls | Removes null or empty values from the response. Optional. |
 
 ## Request body
 
@@ -162,6 +163,12 @@ Content-type: application/json
                         "displayName": "Abbie Wilkins",
                         "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
                     }
+                },
+                "associatedIdentity": {
+                    "id": "821809f5-0000-0000-0000-3b5136c0e777",
+                    "displayName": "Abbie Wilkins",
+                    "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+                    "userPrincipalName": "abbie.wilkins@contoso.com"
                 }
             },
             "callee": {
@@ -182,6 +189,12 @@ Content-type: application/json
                         "displayName": "Owen Franklin",
                         "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
                     }
+                },
+                "associatedIdentity": {
+                    "id": "f69e2c00-0000-0000-0000-185e5f5f5d8a",
+                    "displayName": "Owen Franklin",
+                    "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+                    "userPrincipalName": "owen.franklin@contoso.com"
                 },
                 "feedback": {
                     "rating": "poor",
@@ -301,6 +314,12 @@ Content-type: application/json
                         "displayName": "Abbie Wilkins",
                         "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
                     }
+                },
+                "associatedIdentity": {
+                    "id": "821809f5-0000-0000-0000-3b5136c0e777",
+                    "displayName": "Abbie Wilkins",
+                    "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+                    "userPrincipalName": "abbie.wilkins@contoso.com"
                 }
             },
             "callee": {
@@ -321,6 +340,12 @@ Content-type: application/json
                         "displayName": "Owen Franklin",
                         "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
                     }
+                },
+                "associatedIdentity": {
+                    "id": "f69e2c00-0000-0000-0000-185e5f5f5d8a",
+                    "displayName": "Owen Franklin",
+                    "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+                    "userPrincipalName": "owen.franklin@contoso.com"
                 },
                 "feedback": {
                     "rating": "poor",
@@ -359,6 +384,12 @@ Content-type: application/json
                                 "displayName": "Abbie Wilkins",
                                 "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
                             }
+                        },
+                        "associatedIdentity": {
+                            "id": "821809f5-0000-0000-0000-3b5136c0e777",
+                            "displayName": "Abbie Wilkins",
+                            "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+                            "userPrincipalName": "abbie.wilkins@contoso.com"
                         }
                     },
                     "callee": {
@@ -378,6 +409,12 @@ Content-type: application/json
                                 "displayName": "Owen Franklin",
                                 "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
                             }
+                        },
+                        "associatedIdentity": {
+                            "id": "f69e2c00-0000-0000-0000-185e5f5f5d8a",
+                            "displayName": "Owen Franklin",
+                            "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+                            "userPrincipalName": "owen.franklin@contoso.com"
                         }
                     },
                     "media": [

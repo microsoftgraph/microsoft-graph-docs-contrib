@@ -15,7 +15,7 @@ Namespace: microsoft.graph.callRecords
 
 Retrieve the list of [participants](../resources/callrecords-participant.md) associated with a [callRecord](../resources/callrecords-callrecord.md) object.
 
-If the participant list is truncated, a `sessions@odata.nextLink` value will be provided to retrieve the next page of sessions. The maximum page size for sessions is 60 entries.
+If the participant list is truncated, a `participants_v2@odata.nextLink` value will be provided to retrieve the next page of participants. The maximum page size for participants is 130 entries.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -52,6 +52,7 @@ This method supports some of the OData query parameters to help customize the re
 | Authorization | Bearer {token} |
 | Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. Optional. This value must be equal to or less than the maximum allowable page size. |
 | Prefer: include-unknown-enum-members | Enables evolvable enum values beyond the sentinel value. See [Best Practices](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) for more information. Optional. |
+| Prefer: omit-values=nulls | Removes null or empty values from the response. Optional. |
 
 ## Request body
 
