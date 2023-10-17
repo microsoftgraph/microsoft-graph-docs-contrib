@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a single [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object for a user. This method is available only for standard Azure AD and B2B users, but not B2C users.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

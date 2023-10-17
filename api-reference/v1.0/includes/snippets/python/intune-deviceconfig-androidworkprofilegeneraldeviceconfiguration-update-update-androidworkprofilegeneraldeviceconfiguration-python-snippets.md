@@ -4,90 +4,52 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = AndroidWorkProfileGeneralDeviceConfiguration()
-request_body.@odata_type = '#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.description = 'Description value'
+request_body = AndroidWorkProfileGeneralDeviceConfiguration(
+	odata_type = "#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
+	description = "Description value",
+	display_name = "Display Name value",
+	version = 7,
+	password_block_fingerprint_unlock = True,
+	password_block_trust_agents = True,
+	password_expiration_days = 6,
+	password_minimum_length = 5,
+	password_minutes_of_inactivity_before_screen_timeout = 14,
+	password_previous_password_block_count = 2,
+	password_sign_in_failure_count_before_factory_reset = 12,
+	password_required_type = AndroidWorkProfileRequiredPasswordType.LowSecurityBiometric,
+	work_profile_data_sharing_type = AndroidWorkProfileCrossProfileDataSharingType.PreventAny,
+	work_profile_block_notifications_while_device_locked = True,
+	work_profile_block_adding_accounts = True,
+	work_profile_bluetooth_enable_contact_sharing = True,
+	work_profile_block_screen_capture = True,
+	work_profile_block_cross_profile_caller_id = True,
+	work_profile_block_camera = True,
+	work_profile_block_cross_profile_contacts_search = True,
+	work_profile_block_cross_profile_copy_paste = True,
+	work_profile_default_app_permission_policy = AndroidWorkProfileDefaultAppPermissionPolicyType.Prompt,
+	work_profile_password_block_fingerprint_unlock = True,
+	work_profile_password_block_trust_agents = True,
+	work_profile_password_expiration_days = 1,
+	work_profile_password_minimum_length = 0,
+	work_profile_password_min_numeric_characters = 7,
+	work_profile_password_min_non_letter_characters = 9,
+	work_profile_password_min_letter_characters = 6,
+	work_profile_password_min_lower_case_characters = 9,
+	work_profile_password_min_upper_case_characters = 9,
+	work_profile_password_min_symbol_characters = 6,
+	work_profile_password_minutes_of_inactivity_before_screen_timeout = 9,
+	work_profile_password_previous_password_block_count = 13,
+	work_profile_password_sign_in_failure_count_before_factory_reset = 7,
+	work_profile_password_required_type = AndroidWorkProfileRequiredPasswordType.LowSecurityBiometric,
+	work_profile_require_password = True,
+	security_require_verify_apps = True,
+)
 
-request_body.display_name = 'Display Name value'
-
-request_body.Version = 7
-
-request_body.password_block_fingerprint_unlock = True
-
-request_body.password_block_trust_agents = True
-
-request_body.PasswordExpirationDays = 6
-
-request_body.PasswordMinimumLength = 5
-
-request_body.PasswordMinutesOfInactivityBeforeScreenTimeout = 14
-
-request_body.PasswordPreviousPasswordBlockCount = 2
-
-request_body.PasswordSignInFailureCountBeforeFactoryReset = 12
-
-request_body.passwordrequiredtype(AndroidWorkProfileRequiredPasswordType.LowSecurityBiometric('androidworkprofilerequiredpasswordtype.lowsecuritybiometric'))
-
-request_body.workprofiledatasharingtype(AndroidWorkProfileCrossProfileDataSharingType.PreventAny('androidworkprofilecrossprofiledatasharingtype.preventany'))
-
-request_body.work_profile_block_notifications_while_device_locked = True
-
-request_body.work_profile_block_adding_accounts = True
-
-request_body.work_profile_bluetooth_enable_contact_sharing = True
-
-request_body.work_profile_block_screen_capture = True
-
-request_body.work_profile_block_cross_profile_caller_id = True
-
-request_body.work_profile_block_camera = True
-
-request_body.work_profile_block_cross_profile_contacts_search = True
-
-request_body.work_profile_block_cross_profile_copy_paste = True
-
-request_body.workprofiledefaultapppermissionpolicy(AndroidWorkProfileDefaultAppPermissionPolicyType.Prompt('androidworkprofiledefaultapppermissionpolicytype.prompt'))
-
-request_body.work_profile_password_block_fingerprint_unlock = True
-
-request_body.work_profile_password_block_trust_agents = True
-
-request_body.WorkProfilePasswordExpirationDays = 1
-
-request_body.WorkProfilePasswordMinimumLength = 0
-
-request_body.WorkProfilePasswordMinNumericCharacters = 7
-
-request_body.WorkProfilePasswordMinNonLetterCharacters = 9
-
-request_body.WorkProfilePasswordMinLetterCharacters = 6
-
-request_body.WorkProfilePasswordMinLowerCaseCharacters = 9
-
-request_body.WorkProfilePasswordMinUpperCaseCharacters = 9
-
-request_body.WorkProfilePasswordMinSymbolCharacters = 6
-
-request_body.WorkProfilePasswordMinutesOfInactivityBeforeScreenTimeout = 9
-
-request_body.WorkProfilePasswordPreviousPasswordBlockCount = 13
-
-request_body.WorkProfilePasswordSignInFailureCountBeforeFactoryReset = 7
-
-request_body.workprofilepasswordrequiredtype(AndroidWorkProfileRequiredPasswordType.LowSecurityBiometric('androidworkprofilerequiredpasswordtype.lowsecuritybiometric'))
-
-request_body.work_profile_require_password = True
-
-request_body.security_require_verify_apps = True
-
-
-
-
-result = await client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(body = request_body)
 
 
 ```

@@ -80,6 +80,10 @@ POST https://graph.microsoft.com/v1.0/deviceManagement/notificationMessageTempla
 [!INCLUDE [sample-code](../includes/snippets/php/intune-notification-notificationmessagetemplate-sendtestmessage-sendtestmessage-action-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-notification-notificationmessagetemplate-sendtestmessage-sendtestmessage-action-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-notification-notificationmessagetemplate-sendtestmessage-sendtestmessage-action-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

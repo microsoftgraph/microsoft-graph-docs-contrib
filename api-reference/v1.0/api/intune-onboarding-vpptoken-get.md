@@ -83,6 +83,10 @@ GET https://graph.microsoft.com/v1.0/deviceAppManagement/vppTokens/{vppTokenId}
 [!INCLUDE [sample-code](../includes/snippets/php/intune-onboarding-vpptoken-get-get-vpptoken-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/intune-onboarding-vpptoken-get-get-vpptoken-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/intune-onboarding-vpptoken-get-get-vpptoken-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

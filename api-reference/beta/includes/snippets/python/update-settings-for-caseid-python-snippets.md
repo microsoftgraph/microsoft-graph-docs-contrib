@@ -4,43 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = CaseSettings()
-redundancy_detection = RedundancyDetectionSettings()
-redundancy_detection.is_enabled = False
+graph_client = GraphServiceClient(request_adapter)
 
-redundancy_detection.SimilarityThreshold = 70
+request_body = CaseSettings(
+	redundancy_detection = RedundancyDetectionSettings(
+		is_enabled = False,
+		similarity_threshold = 70,
+		min_words = 12,
+		max_words = 400000,
+	),
+	topic_modeling = TopicModelingSettings(
+		is_enabled = False,
+		ignore_numbers = False,
+		topic_count = 50,
+		dynamically_adjust_topic_count = False,
+	),
+	ocr = OcrSettings(
+		is_enabled = True,
+		max_image_size = 12000,
+	),
+)
 
-redundancy_detection.MinWords = 12
-
-redundancy_detection.MaxWords = 400000
-
-
-request_body.redundancy_detection = redundancy_detection
-topic_modeling = TopicModelingSettings()
-topic_modeling.is_enabled = False
-
-topic_modeling.ignore_numbers = False
-
-topic_modeling.TopicCount = 50
-
-topic_modeling.dynamically_adjust_topic_count = False
-
-
-request_body.topic_modeling = topic_modeling
-ocr = OcrSettings()
-ocr.is_enabled = True
-
-ocr.MaxImageSize = 12000
-
-
-request_body.ocr = ocr
-
-
-
-result = await client.compliance.ediscovery.cases.by_case_id('case-id').settings.patch(request_body = request_body)
+result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').settings.patch(body = request_body)
 
 
 ```

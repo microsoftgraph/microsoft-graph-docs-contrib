@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 description: "Represents a specific version of a driveItem."
 title: "driveItemVersion resource type"
 ms.localizationpriority: medium

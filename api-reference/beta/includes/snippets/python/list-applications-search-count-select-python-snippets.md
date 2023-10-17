@@ -4,12 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
+
+graph_client = GraphServiceClient(request_adapter)
 
 query_params = ApplicationsRequestBuilder.ApplicationsRequestBuilderGetQueryParameters(
 		search = "\"displayName:Web\"",
-		count = true,
+		count = True,
 		select = ["appId","identifierUris","displayName","publisherDomain","signInAudience"],
 )
 
@@ -21,8 +22,7 @@ headers = {
 
 )
 
-
-result = await client.applications.get(request_configuration = request_configuration)
+result = await graph_client.applications.get(request_configuration = request_configuration)
 
 
 ```

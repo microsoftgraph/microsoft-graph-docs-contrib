@@ -15,7 +15,9 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-cell(row={row},column={column}), err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Worksheets().ByWorkbookWorksheetId("workbookWorksheet-id").Cell(row={row},column={column})().Get(context.Background(), nil)
+row := int32(1)
+column := int32(1)
+cell, err := graphClient.Drives().ByDriveId("drive-id").Items().ByDriveItemId("driveItem-id").Workbook().Worksheets().ByWorkbookWorksheetId("workbookWorksheet-id").CellWithRowWithColumn(&row, &column).Get(context.Background(), nil)
 
 
 ```

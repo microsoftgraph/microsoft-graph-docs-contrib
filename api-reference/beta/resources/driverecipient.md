@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: The driveRecipient resource represents a person, group, or other recipient to share with using the invite action.
 ms.date: 09/10/2017
 title: DriveRecipient
@@ -31,9 +31,9 @@ The recipients resource has these properties.
 
 ## JSON representation
 
-<!-- { 
-  "blockType": "resource", 
-  "@odata.type": "microsoft.graph.driveRecipient", 
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.driveRecipient",
   "optionalProperties": ["alias", "objectId", "email"] } -->
 
 ```json

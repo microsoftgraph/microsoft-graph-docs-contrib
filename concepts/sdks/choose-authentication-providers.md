@@ -368,5 +368,5 @@ The Microsoft Graph PHP SDK doesn't use MSAL libraries, but custom authenticatio
 ## Next steps
 
 - For code samples that show you how to use the Microsoft identity platform to secure different application types, see [Microsoft identity platform code samples (v2.0 endpoint)](/azure/active-directory/develop/sample-v2-code).
-- Authentication providers require an client ID. You'll want to [register your application](https://portal.azure.com/) after you set up your authentication provider.
+- Authentication providers require an client ID. You'll want to [register your application](https://entra.microsoft.com/) after you set up your authentication provider.
 - Let us know if a required OAuth flow isn't currently supported by voting for or opening a [Microsoft Graph feature request](https://aka.ms/graphrequests).

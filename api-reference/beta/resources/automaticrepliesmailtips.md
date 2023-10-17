@@ -4,7 +4,7 @@ description: "MailTips about any automatic replies that have been set up on a ma
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: mail
-author: "abheek-das"
+author: "SuryaLashmiS"
 ---
 
 # automaticRepliesMailTips resource type

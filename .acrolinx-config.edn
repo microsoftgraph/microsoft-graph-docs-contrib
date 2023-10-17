@@ -1,7 +1,7 @@
 {
  ; https://support.acrolinx.com/hc/en-us/articles/10342999034130-Define-What-Acrolinx-for-Git-Hosting-Checks
  :allowed-branchname-matches ["main" "live"]
- :allowed-filename-matches ["concepts/" "(?i)(?!(^.*/i|^i)ntune[^/]*$)^(api-reference)/.*$"] ;; Can be overridden in repo-specific edn file. This is an allow list that identifies which folders contain the files Acrolinx will check. Separate multiple folders as follows ["folder/" "folder2"]
+ :allowed-filename-matches ["concepts/" "includes/" "(?i)(?!(^.*/i|^i)ntune[^/]*$)^(api-reference)/.*$"] ;; Can be overridden in repo-specific edn file. This is an allow list that identifies which folders contain the files Acrolinx will check. Separate multiple folders as follows ["folder/" "folder2"]
 
  :use-gh-statuses true
 
@@ -15,7 +15,7 @@
              }
      :scores {
               ;;:terminology 100
-              ;;:qualityscore 20 ;; Confirmed with Hugo that you just comment out the single score and leave the structure in place
+              :qualityscore 80
               ;;:correctness 40
              }
    }
@@ -28,7 +28,7 @@
 
 ## Acrolinx Scorecards
 
-**The minimum Acrolinx topic score of 20 is required for all Microsoft Graph content merged to the default branch.**
+**The minimum Acrolinx topic score of 80 is required for all Microsoft Graph content merged to the default branch.**
 
 If you need a scoring exception for content in this PR, add the *ready for content review* and the *acrolinx exception* labels to the PR. The content review team will review the exception request and may take one or more of the following actions:
 

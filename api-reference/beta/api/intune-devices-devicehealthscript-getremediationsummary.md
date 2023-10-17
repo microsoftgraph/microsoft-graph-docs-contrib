@@ -1,6 +1,6 @@
 ---
 title: "getRemediationSummary function"
-description: ""
+description: "Intune Devices Devicehealthscript Getremediationsummary Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -88,7 +88,7 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 
 ## Retrieve a list of entities
 
-Retrieving a list of entities is similar to retrieving a single entity except there a number of other options for configuring the request. The `$filter` query parameter can be used to reduce the result set to only those rows that match the provided condition.  The `$orderBy` query parameter will request that the server provide the list of entities sorted by the specified properties.
+Retrieving a list of entities is similar to retrieving a single entity except there a number of other options for configuring the request. The `$filter` query parameter can be used to reduce the result set to only those rows that match the provided condition.  The `$orderby` query parameter will request that the server provide the list of entities sorted by the specified properties.
 
 [!INCLUDE [aad-advanced-queries-note](../../includes/aad-advanced-queries-note.md)]
 

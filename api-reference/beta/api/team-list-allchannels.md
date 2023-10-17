@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get the list of [channels](../resources/channel.md) either in this [team](../resources/team.md) or shared with this [team](../resources/team.md) (incoming channels).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -40,7 +42,9 @@ GET /teams/{team-id}/allChannels
 This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
 
 ### Use $select for better performance
-Populating the **email** and **moderationSettings** properties for a channel is an expensive operation that results in slow performance. Use `$select` to exclude the **email** and **moderationSettings** properties to improve performance.
+Populating the **email** property for a channel is an expensive operation that results in slow performance. Use `$select` to exclude the **email** property to improve performance.
+
+> **Note**: This API does not return the **moderationSettings** property for a channel by default. To get this property, use the `$select` query parameter.
 
 ## Request headers
 |Name|Description|
@@ -76,6 +80,10 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-all-channel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-all-channel-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -161,6 +169,10 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-all-shared-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-all-shared-channel-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-all-shared-channel-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -209,7 +221,9 @@ Content-Type: application/json
       "createdDateTime": "2020-05-27T19:22:25.692Z",
       "displayName": "Shared channel from Contoso",
       "membershipType": "shared",
-      "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910"
+      "tenantId": "b3246f44-b4gb-5678-96c6-25b18fa2c910",
+      "email": "someperson@microsoft.com",
+      "moderationSettings": null
     }
   ]
 }

@@ -15,7 +15,7 @@ graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-sessions, err := graphClient.Solutions().VirtualEvents().Events().ByVirtualEventId("virtualEvent-id").Sessions().ByVirtualEventSessionId("virtualEventSession-id").Get(context.Background(), nil)
+sessions, err := graphClient.Solutions().VirtualEvents().Webinars().ByVirtualEventWebinarId("virtualEventWebinar-id").Sessions().ByVirtualEventSessionId("virtualEventSession-id").Get(context.Background(), nil)
 
 
 ```

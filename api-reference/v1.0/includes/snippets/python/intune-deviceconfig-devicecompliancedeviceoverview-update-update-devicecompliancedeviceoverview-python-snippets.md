@@ -4,30 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = DeviceComplianceDeviceOverview()
-request_body.@odata_type = '#microsoft.graph.deviceComplianceDeviceOverview'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.PendingCount = 12
+request_body = DeviceComplianceDeviceOverview(
+	odata_type = "#microsoft.graph.deviceComplianceDeviceOverview",
+	pending_count = 12,
+	not_applicable_count = 2,
+	success_count = 12,
+	error_count = 10,
+	failed_count = 11,
+	last_update_date_time = "2016-12-31T23:58:21.6459442-08:00",
+	configuration_version = 4,
+)
 
-request_body.NotApplicableCount = 2
-
-request_body.SuccessCount = 12
-
-request_body.ErrorCount = 10
-
-request_body.FailedCount = 11
-
-request_body.lastUpdateDateTime = DateTime('2016-12-31T23:58:21.6459442-08:00')
-
-request_body.ConfigurationVersion = 4
-
-
-
-
-result = await client.device_management.device_compliance_policies.by_device_compliance_policie_id('deviceCompliancePolicy-id').device_statu_overview.patch(request_body = request_body)
+result = await graph_client.device_management.device_compliance_policies.by_device_compliance_policie_id('deviceCompliancePolicy-id').device_statu_overview.patch(body = request_body)
 
 
 ```

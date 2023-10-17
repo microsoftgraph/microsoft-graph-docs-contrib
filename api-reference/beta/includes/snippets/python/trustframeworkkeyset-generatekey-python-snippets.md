@@ -4,22 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = GenerateKeyPostRequestBody()
-request_body.use = 'sig'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.kty = 'RSA'
+request_body = GenerateKeyPostRequestBody(
+	use = "sig",
+	kty = "RSA",
+	nbf = 1508969811,
+	exp = 1508969811,
+)
 
-request_body.Nbf = 1508969811
-
-request_body.Exp = 1508969811
-
-
-
-
-result = await client.trust_framework.key_sets.by_key_set_id('trustFrameworkKeySet-id').generate_key.post(request_body = request_body)
+result = await graph_client.trust_framework.key_sets.by_key_set_id('trustFrameworkKeySet-id').generate_key.post(body = request_body)
 
 
 ```

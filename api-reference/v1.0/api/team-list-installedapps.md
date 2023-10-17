@@ -16,6 +16,8 @@ Retrieve a list of [apps installed](../resources/teamsappinstallation.md) in the
 > [!NOTE]
 > The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -181,7 +183,7 @@ GET https://graph.microsoft.com/v1.0/teams/6903fa93-605b-43ef-920e-77c4729f8258/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-installed-teams-apps-expand-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -220,7 +222,7 @@ Content-type: application/json
             "displayName":"Power Automate Actions",
             "version":"1.0.2",
             "requiredResourceSpecificApplicationPermissions":[
-               
+
             ],
             "publishingState":"published",
             "shortDescription":"Be more productive with Microsoft Flow",
@@ -238,7 +240,7 @@ Content-type: application/json
             "displayName":"SharePoint Pages",
             "version":"1.2",
             "requiredResourceSpecificApplicationPermissions":[
-               
+
             ],
             "publishingState":"published",
             "shortDescription":"Add a tab for a SharePoint news article or page.",
@@ -256,7 +258,7 @@ Content-type: application/json
             "displayName":"OneNote",
             "version":"1.0.0",
             "requiredResourceSpecificApplicationPermissions":[
-               
+
             ],
             "publishingState":"published",
             "shortDescription":"Capture and share ideas, to-do lists and other notes with your team.",
@@ -357,7 +359,7 @@ Content-type: application/json
             "displayName":"YPA",
             "version":"6.0.0",
             "requiredResourceSpecificApplicationPermissions":[
-               
+
             ],
             "publishingState":"published",
             "shortDescription":"A conversational smart assistant from MSX that surfaces real-time insights.",
@@ -412,7 +414,7 @@ GET https://graph.microsoft.com/v1.0/teams/7eeb5a95-f602-4861-ab67-49714fa5a020/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-installed-apps-in-team-select-consentedpermissionset-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

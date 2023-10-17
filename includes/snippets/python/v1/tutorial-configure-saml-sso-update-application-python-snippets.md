@@ -4,21 +4,22 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Application()
-web = WebApplication()
-web.RedirectUris(['https://signin.aws.amazon.com/saml', ])
+graph_client = GraphServiceClient(request_adapter)
 
+request_body = Application(
+	web = WebApplication(
+		redirect_uris = [
+			"https://signin.aws.amazon.com/saml",
+		]
+	),
+	identifier_uris = [
+		"https://signin.aws.amazon.com/saml",
+	]
+)
 
-request_body.web = web
-request_body.IdentifierUris(['https://signin.aws.amazon.com/saml', ])
-
-
-
-
-result = await client.applications.by_application_id('application-id').patch(request_body = request_body)
+result = await graph_client.applications.by_application_id('application-id').patch(body = request_body)
 
 
 ```

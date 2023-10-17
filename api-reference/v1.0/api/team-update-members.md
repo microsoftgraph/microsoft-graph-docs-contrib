@@ -16,6 +16,8 @@ Update the role of a [conversationMember](../resources/conversationmember.md) in
 > [!NOTE]
 > Team members with the role of `guest` cannot be given the role of `owner`.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -55,15 +57,16 @@ If successful, this method returns a `200 OK` response code and an updated [conv
 
 ### Request
 
-The following is a request to apply the `owner` role to an existing member of a team.
-
+The following example shows a request to apply the owner role to an existing member of a team.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "update_member_2",
   "sampleKeys": ["ece6f0a1-7ca4-498b-be79-edf6c8fc4d82", "ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk="]
 } -->
+
 ```http
 PATCH https://graph.microsoft.com/v1.0/teams/ece6f0a1-7ca4-498b-be79-edf6c8fc4d82/members/ZWUwZjVhZTItOGJjNi00YWU1LTg0NjYtN2RhZWViYmZhMDYyIyM3Mzc2MWYwNi0yYWM5LTQ2OWMtOWYxMC0yNzlhOGNjMjY3Zjk=
 content-type: application/json
@@ -108,6 +111,9 @@ content-length: 26
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
+> [!NOTE]
+> If you're using Power Automate to make this call, replace `@odata.type` with `@@odata.type`.
 
 ### Response
 

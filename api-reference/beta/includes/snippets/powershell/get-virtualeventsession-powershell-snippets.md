@@ -6,6 +6,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 Import-Module Microsoft.Graph.Beta.Bookings
 
-Get-MgBetaVirtualEventSession -VirtualEventId $virtualEventId -VirtualEventSessionId $virtualEventSessionId
+Get-MgBetaVirtualEventWebinarSession -VirtualEventWebinarId $virtualEventWebinarId -VirtualEventSessionId $virtualEventSessionId
 
 ```

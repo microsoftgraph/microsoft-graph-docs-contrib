@@ -9,7 +9,7 @@ ms.prod: search
 
 # Work with the Microsoft Graph connectors API
 
-Microsoft Graph connectors bring external data into Microsoft Graph and enhance Microsoft 365 intelligent experiences. You might want to build a custom connector to integrate with services that aren't available as connectors built by Microsoft. To build custom connectors, you use the Microsoft Graph connectors REST API.
+Microsoft Graph connectors bring external data into Microsoft Graph and enhance Microsoft 365 intelligent experiences. You might want to build a custom connector to integrate with services that aren't available as connectors built by Microsoft. To build custom connectors, you use the Microsoft Graph connectors REST API. Items ingested through connections built with the APIs consume your item quota. To learn more about how to determine how much item quota you have and purchasing additional quota, see [licensing requirements and pricing](/microsoftsearch/licensing).
 
 ![Image showing the external data coming trough different types of connectors to Microsoft Graph](./images/connectors-images/api-overview.png)
 

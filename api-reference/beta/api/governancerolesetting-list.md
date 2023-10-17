@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Retrieve a collection of [governanceRoleSettings](../resources/governancerolesetting.md) on a resource.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 The following table shows the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
@@ -32,7 +34,7 @@ The requestor must also have at least one role assignment on the resource.
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /privilegedAccess/azureResources/resources/<resourceId>/roleSettings
+GET /privilegedAccess/azureResources/resources/{resourceId}/roleSettings
 GET /privilegedAccess/azureResources/roleSettings?$filter=resourceId+eq+'<resourceId>'
 ```
 ## Optional query parameters
@@ -50,7 +52,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [governanceRoleSetting](../resources/governancerolesetting.md) objects in the response body.
 
 ## Example
-This example shows how an administrator lists role settings for the resource Wingtip Toys - Prod. 
+This example shows how an administrator lists role settings for the resource Wingtip Toys - Prod.
 <!-- {
   "blockType": "request",
   "name": "get_governancerolesettings"

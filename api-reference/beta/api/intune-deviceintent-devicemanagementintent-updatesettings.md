@@ -1,6 +1,6 @@
 ---
 title: "updateSettings action"
-description: ""
+description: "Intune Deviceintent Devicemanagementintent Updatesettings Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

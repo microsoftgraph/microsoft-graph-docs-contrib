@@ -4,38 +4,27 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = TargetedManagedAppConfiguration()
-request_body.@odata_type = '#microsoft.graph.targetedManagedAppConfiguration'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.display_name = 'Display Name value'
+request_body = TargetedManagedAppConfiguration(
+	odata_type = "#microsoft.graph.targetedManagedAppConfiguration",
+	display_name = "Display Name value",
+	description = "Description value",
+	version = "Version value",
+	custom_settings = [
+		KeyValuePair(
+			odata_type = "microsoft.graph.keyValuePair",
+			name = "Name value",
+			value = "Value value",
+		),
+	]
+	deployed_app_count = 0,
+	is_assigned = True,
+)
 
-request_body.description = 'Description value'
-
-request_body.version = 'Version value'
-
-custom_settings_key_value_pair1 = KeyValuePair()
-custom_settings_key_value_pair1.@odata_type = 'microsoft.graph.keyValuePair'
-
-custom_settings_key_value_pair1.name = 'Name value'
-
-custom_settings_key_value_pair1.value = 'Value value'
-
-
-customSettingsArray []= customSettingsKeyValuePair1;
-request_body.customsettings(customSettingsArray)
-
-
-request_body.DeployedAppCount = 0
-
-request_body.is_assigned = True
-
-
-
-
-result = await client.device_app_management.targeted_managed_app_configurations.post(request_body = request_body)
+result = await graph_client.device_app_management.targeted_managed_app_configurations.post(body = request_body)
 
 
 ```

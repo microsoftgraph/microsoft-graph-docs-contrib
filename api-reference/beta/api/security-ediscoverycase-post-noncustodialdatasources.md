@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Create a new [ediscoveryNoncustodialDataSource](../resources/security-ediscoverynoncustodialdatasource.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -48,9 +50,9 @@ You can specify the following properties when creating an **ediscoveryNoncustodi
 |:---|:---|:---|
 |dataSource|[microsoft.graph.security.dataSource](../resources/security-datasource.md)|Required. Either a [microsoft.graph.security.userSource](../resources/security-usersource.md) or [microsoft.graph.security.siteSource](../resources/security-sitesource.md).
 
-For userSource, use "dataSource" : { "@odata.type" : "microsoft.graph.security.userSource", "email" : "SMTP address"}.  
-For siteSource use "dataSource" : { "@odata.type" : "microsoft.graph.security.siteSource", "site@odata.bind" : "siteId" },
-Alternatively use the webUrl directly, "dataSource": {"@odata.type": "microsoft.graph.security.siteSource","site": {"webUrl": `https://m365x809305.sharepoint.com/sites/Design-topsecret`}}
+For userSource, use `"dataSource" : { "@odata.type" : "microsoft.graph.security.userSource", "email" : "SMTP address"}`.  
+For siteSource use `"dataSource" : { "@odata.type" : "microsoft.graph.security.siteSource", "site@odata.bind" : "siteId" }`,
+Alternatively use the webUrl directly, `"dataSource": {"@odata.type": "microsoft.graph.security.siteSource","site": {"webUrl": "https://m365x809305.sharepoint.com/sites/Design-topsecret"}}`
 
 ## Response
 
@@ -59,7 +61,7 @@ If successful, this method returns a `201 Created` response code and an [microso
 ## Examples
 
 ### Request
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -85,6 +87,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-ediscoverynoncustodialdatasource-from--wesite-url-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-ediscoverynoncustodialdatasource-from--wesite-url-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-ediscoverynoncustodialdatasource-from--wesite-url-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -101,6 +107,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-ediscoverynoncustodialdatasource-from--wesite-url-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-ediscoverynoncustodialdatasource-from--wesite-url-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-ediscoverynoncustodialdatasource-from--wesite-url-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -108,7 +118,7 @@ Content-Type: application/json
 ---
 
 ### Response
-The following is an example of the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

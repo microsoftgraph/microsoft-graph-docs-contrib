@@ -84,6 +84,8 @@ items:
             displayName: monetize, charge, cost, pricing
           - name: List of metered APIs
             href: metered-api-list.md
+      - name: Microsoft Graph activity logs
+        href: microsoft-graph-activity-logs-overview.md
       - name: Versioning and support
         href: versioning-and-support.md
       - name: Terms of use
@@ -155,8 +157,6 @@ items:
             displayName: Microsoft Graph Data Connect
           - name: Datasets, regions, and sinks
             href: data-connect-datasets.md
-          - name: Policies and billing
-            href: data-connect-policies.md
           - name: User selection and filtering
             href: data-connect-filtering.md
           - name: Updated onboarding experience
@@ -164,22 +164,30 @@ items:
               - name: Onboarding experience overview
                 href: onboarding-experience-overview.md
               - name: App registration
-                href: app-registration.md 
+                href: app-registration.md
               - name: App authorization
-                href: app-authorization.md 
+                href: app-authorization.md
               - name: Existing customer migration
                 href: existing-customer-migration.md  
+          - name: Templates
+            href: data-connect-templates-overview.md
           - name: Integrate with PAM
             href: data-connect-pam.md
             displayName: Privileged Access Management
           - name: Define dataset scopes
             href: data-connect-users-and-groups.md
-          - name: Microsoft Graph Data Connect FAQ
+          - name: Security, privacy, and compliance
+            items:
+              - name: Managed private endpoints
+                href: managed-private-endpoints-overview.md
+              - name: Microsoft 365 audit logs 
+                href: microsoft365-audit-logs.md  
+          - name: Data Connect FAQ
             href: data-connect-faq.md
-            displayName: Microsoft Graph Data Connect, frequently asked questions
+            displayName: Microsoft Graph Data Connect frequently asked questions
           - name: Data Connect troubleshooting
             href: data-connect-troubleshooting.md
-            displayName: Microsoft Graph Data Connect Troubleshooting
+            displayName: Microsoft Graph Data Connect troubleshooting
       - name: Calendar
         items:
           - name: Overview
@@ -228,30 +236,27 @@ items:
             href: webhooks-lifecycle.md
           - name: Rich notifications
             href: webhooks-with-resource-data.md
-          - name: Tutorials
-            displayName: change notifications, rich notifications, basic notifications, subscriptions, webhooks, Azure Event Hubs, Azure Event Grids
+          - name: Notifications for cloud printing
+            href: universal-print-webhook-notifications.md
+          - name: Notifications for Microsoft Teams resources
             items:
-              - name: Notifications for cloud printing
-                href: universal-print-webhook-notifications.md
-              - name: Notifications for Microsoft Teams resources
-                items:
-                  - name: Notification types and payloads
-                    href: teams-change-notification-in-microsoft-teams-overview.md
-                    displayName: change notifications, Teams, Microsoft Teams
-                  - name: Call transcripts
-                    href: teams-changenotifications-callrecording-and-calltranscript.md
-                  - name: Chat
-                    href: teams-changenotifications-chat.md
-                  - name: Chat and channel messages
-                    href: teams-changenotifications-chatmessage.md
-                  - name: Chat membership
-                    href: teams-changenotifications-chatmembership.md
-                  - name: Team and channel membership
-                    href: teams-changenotifications-teammembership.md
-                  - name: Teams and channels
-                    href: teams-changenotifications-team-and-channel.md
-              - name: Notifications for Outlook resources
-                href: outlook-change-notifications-overview.md
+              - name: Notification types and payloads
+                href: teams-change-notification-in-microsoft-teams-overview.md
+                displayName: change notifications, Teams, Microsoft Teams
+              - name: Call recordings and transcripts
+                href: teams-changenotifications-callrecording-and-calltranscript.md
+              - name: Chat
+                href: teams-changenotifications-chat.md
+              - name: Chat and channel messages
+                href: teams-changenotifications-chatmessage.md
+              - name: Chat membership
+                href: teams-changenotifications-chatmembership.md
+              - name: Team and channel membership
+                href: teams-changenotifications-teammembership.md
+              - name: Teams and channels
+                href: teams-changenotifications-team-and-channel.md
+          - name: Notifications for Outlook resources
+            href: outlook-change-notifications-overview.md
       - name: Change tracking
         items:
           - name: Overview
@@ -469,7 +474,7 @@ items:
           - name: Identity and sign-in
             items:
               - name: Configure a custom claim provider token issuance event
-                href: /azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json
+                href: /azure/active-directory/develop/custom-extension-get-started?tabs=microsoft-graph?toc=/graph/toc.json&context=graph/context&tabs=microsoft-graph
               - name: Authentication methods
                 href: authenticationmethods-get-started.md
                 displayName: identity, authenticate, sign-in, sign in, signin
@@ -519,6 +524,9 @@ items:
                   - name: Assign Azure AD roles using PIM
                     href: tutorial-assign-azureadroles.md
                     displayName: PIM, privileged identity management
+                  - name: Manage security alerts for Azure AD roles
+                    href: how-to-pim-alerts.md
+                    displayName: PIM alerts, privileged identity management
       - name: Industry data ETL (preview)
         href: industrydata-concept-overview.md
       - name: Mail
@@ -758,11 +766,13 @@ items:
                 href: cloud-communications-watermark-meeting.md
           - name: Change notifications
             items:
-              - name: Subscribe for teams, chats, channels
+              - name: Subscribe to teams, chats, channels
                 href: teams-change-notification-in-microsoft-teams-overview.md
-              - name: Subscribe for online meetings
+              - name: Subscribe to user presence
+                href: changenotifications-for-presence.md
+              - name: Subscribe to online meetings
                 href: changenotifications-for-onlinemeeting.md
-              - name: Subscribe for virtual events
+              - name: Subscribe to virtual events
                 href: changenotifications-for-virtualevent.md
           - name: Groups and teams
             items:
@@ -897,7 +907,13 @@ items:
               - name: Work with Graph Explorer
                 href: graph-explorer/graph-explorer-features.md
           - name: Use Postman
-            href: use-postman.md
+            items:
+              - name: Get started with Postman
+                href: use-postman.md
+              - name: Set up delegated authentication 
+                href: use-postman-with-delegated-authentication.md
+              - name: Set up app-only authentication
+                href: use-postman-with-app-only-authentication.md
       - name: Migrate
         items:
           - name: Azure AD Graph
@@ -949,6 +965,8 @@ items:
                 href: migrate-exchange-web-services-authentication.md
               - name: API mapping
                 href: migrate-exchange-web-services-api-mapping.md
+          - name: Outlook REST APIs
+            href: /outlook/rest/compare-graph?context=graph/context
       - name: Use SDKs
         items:
           - name: Overview
@@ -1131,6 +1149,8 @@ items:
                 href: toolkit/customize-components/disambiguation.md
           - name: Upgrading to v3
             href: toolkit/upgrade.md
+      - name: Microsoft Graph activity logs (preview)
+        href: microsoft-graph-activity-logs-overview.md
       - name: Configure Connected Services
         displayName: Configure Connected Services in Visual Studio
         href: office-365-connected-services.md

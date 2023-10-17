@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Update a file or folder
 ms.localizationpriority: high
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Update the metadata for a [driveItem](../resources/driveitem.md) by ID or [path](/graph/onedrive-addressing-driveitems#path-based-addressing).
 
 You can also use update to [move an item](driveitem-move.md) to another parent by updating the item's **parentReference** property.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

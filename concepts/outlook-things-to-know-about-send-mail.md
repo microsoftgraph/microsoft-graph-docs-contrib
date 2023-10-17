@@ -1,17 +1,17 @@
 ---
 title: "Explainer: How does the Microsoft Graph API send mail?"
 description: "Different steps involved in sending email using Microsoft Graph API till delivery."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.prod: "outlook"
 ---
 
 # Explainer: How does the Microsoft Graph API send mail?
-In Microsoft Graph, each of the [forward](/graph/api/message-forward), [reply](/graph/api/message-reply), [replyAll](/graph/api/message-replyAll), or [sendMail](/graph/api/user-sendmail) methods creates and sends an email message in the same call. This article summarizes how Outlook and Exchange Online usually process these API calls to send mail behind the scenes. Most of the steps (steps 2 to 7) take place after the method has returned. 
+In Microsoft Graph, each of the [forward](/graph/api/message-forward), [reply](/graph/api/message-reply), [replyAll](/graph/api/message-replyAll), or [sendMail](/graph/api/user-sendmail) methods creates and sends an email message in the same call. This article summarizes how Outlook and Exchange Online usually process these API calls to send mail behind the scenes. Most of the steps (steps 2 to 7) take place after the method has returned.
 
 
 ## 1. Creating a new message in sender's mailbox
-Outlook creates a new message in the sender's Drafts folder, copies the message content, recipients, and attachments from the JSON request to the draft message, and 
+Outlook creates a new message in the sender's Drafts folder, copies the message content, recipients, and attachments from the JSON request to the draft message, and
 then saves it. If successful, the method returns an HTTP response `202 Accepted` status code.
 
 If the sender provided MIME content, Exchange Online copies it to a single property in the new draft message. Exchange Online then parses the MIME content and copies relevant content to message properties, and to the recipients and attachments tables. When complete, the method returns a `202 Accepted` status code.
@@ -24,20 +24,20 @@ Once step 1 is complete, your app's direct interaction with Microsoft Graph is o
 Next, Exchange Online notifies its transport service that a new message is available for pickup.
 
 ## 3. Copying outbound message to transport pipeline
-Next, the transport process reads message content from the sender's mailbox, converts it to MIME format, and stores it into the transport pipeline. If the sender 
+Next, the transport process reads message content from the sender's mailbox, converts it to MIME format, and stores it into the transport pipeline. If the sender
 provided MIME content, the transport process copies the MIME content more or less intact. Otherwise, the transport process serializes the message properties to construct MIME content.
 
 If step 3 fails, the transport process constructs a non-delivery report message and places it in the sender's Inbox.
 
 ## 4. Moving original message to the Sent Items folder
-After all of this succeeds, transport calls back to the store to assume responsibility for the message. In response, the Exchange store updates the message and 
+After all of this succeeds, transport calls back to the store to assume responsibility for the message. In response, the Exchange store updates the message and
 moves it from the Drafts folder to the Sent Items folder. (Depending on optional message properties, it may move to a different folder or delete the message instead.)
 
 ## 5. Performing policy evaluation and routing
-The next steps taken by transport include policy enforcement, routing, and next-hop delivery. Transport examines recipient email addresses and buckets them according 
-to what the initial routing hop has to be. Transport detects invalid recipient addresses at this point, for which transport mails the non-delivery reports back to the 
-sender. Transport then applies policies configured by tenant administrators. Such policies may reject the message based on its content, store additional copies, and 
-so on. After applying policy, transport fans out a copy of the message to each next-hop destination. For more details about the transport flow, see [mail flow 
+The next steps taken by transport include policy enforcement, routing, and next-hop delivery. Transport examines recipient email addresses and buckets them according
+to what the initial routing hop has to be. Transport detects invalid recipient addresses at this point, for which transport mails the non-delivery reports back to the
+sender. Transport then applies policies configured by tenant administrators. Such policies may reject the message based on its content, store additional copies, and
+so on. After applying policy, transport fans out a copy of the message to each next-hop destination. For more details about the transport flow, see [mail flow
 and the transport pipeline](/Exchange/mail-flow/mail-flow?view=exchserver-2019&viewFallbackFrom=exchonline-ww).
 
 ## 6. Delivering message to recipients
@@ -45,10 +45,10 @@ Exchange Online transport may or may not be responsible for final delivery to al
 
 ## 7. Delivering report messages to sender
 A few services are involved in generating delivery reports and sending them to the sender accordingly:
-- When a responsible transport component, which can be a Exchange Online or non-Exchange Online component, determines that one or more recipient email 
-addresses are non-deliverable, the component generates non-delivery reports. 
-- At the same time, the transport component generates delivery reports if the sender explicitly requested them. 
-- The recipient's email service or email client may generate read and non-read notifications, or not at all. 
+- When a responsible transport component, which can be a Exchange Online or non-Exchange Online component, determines that one or more recipient email
+addresses are non-deliverable, the component generates non-delivery reports.
+- At the same time, the transport component generates delivery reports if the sender explicitly requested them.
+- The recipient's email service or email client may generate read and non-read notifications, or not at all.
 For more details about report messages, see [DSNs and NDRs in Exchange Server](/exchange/mail-flow/non-delivery-reports-and-bounce-messages/non-delivery-reports-and-bounce-messages?view=exchserver-2019).
 
 

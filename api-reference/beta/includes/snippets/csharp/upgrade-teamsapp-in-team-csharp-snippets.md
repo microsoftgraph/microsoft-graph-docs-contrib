@@ -8,7 +8,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-await graphClient.Teams["{team-id}"].InstalledApps["{teamsAppInstallation-id}"].Upgrade.PostAsync(null);
+var requestBody = new Microsoft.Graph.Beta.Teams.Item.InstalledApps.Item.Upgrade.UpgradePostRequestBody
+{
+};
+await graphClient.Teams["{team-id}"].InstalledApps["{teamsAppInstallation-id}"].Upgrade.PostAsync(requestBody);
 
 
 ```

@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Delete a [authorityTemplate](../resources/security-authoritytemplate.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -30,8 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /security/labels/authorities/{authorityTemplateId}/$ref
-DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/authorityTemplate/$ref
+DELETE /security/labels/authorities/{authorityTemplateId}
+DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/authorityTemplate
 ```
 
 ## Request headers
@@ -64,6 +66,10 @@ DELETE https://graph.microsoft.com/beta/security/labels/authorities/{authorityTe
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-authoritytemplate-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-authoritytemplate-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-authoritytemplate-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -78,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/security/labels/authorities/{authorityTe
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-authoritytemplate-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-authoritytemplate-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

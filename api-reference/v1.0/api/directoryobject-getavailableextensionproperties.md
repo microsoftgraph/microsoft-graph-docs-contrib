@@ -1,7 +1,7 @@
 ---
 title: "directoryObject: getAvailableExtensionProperties"
 description: "Get all or a filtered list of the directory extension properties that have been registered in a directory."
-author: "sureshja"
+author: "dkershaw10"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -11,12 +11,15 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Return all directory extension definitions that have been registered in a directory, including through multi-tenant apps. The following entities support extension properties:
+
 + [user](../resources/user.md)
 + [group](../resources/group.md)
 + [administrativeUnit](../resources/administrativeunit.md)
 + [application](../resources/application.md)
 + [device](../resources/device.md)
 + [organization](../resources/organization.md)
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -69,6 +72,10 @@ If successful, this action returns a `200 OK` response code and an [extensionPro
 -->
 ``` http
 POST https://graph.microsoft.com/v1.0/directoryObjects/getAvailableExtensionProperties
+
+{
+
+}
 ```
 
 # [C#](#tab/csharp)
@@ -93,10 +100,6 @@ POST https://graph.microsoft.com/v1.0/directoryObjects/getAvailableExtensionProp
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/directoryobject-getavailableextensionproperties-php-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/directoryobject-getavailableextensionproperties-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

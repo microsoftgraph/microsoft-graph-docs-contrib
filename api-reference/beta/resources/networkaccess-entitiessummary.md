@@ -3,7 +3,7 @@ title: "entitiesSummary resource type"
 description: "A summary for Global Secure Access entities."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -20,14 +20,14 @@ A summary for Global Secure Access entities that's returned by the [entitiesSumm
 |:---|:---|:---|
 |deviceCount|Int64|Count of unique devices that were seen.|
 |trafficType|microsoft.graph.networkaccess.trafficType|Traffic classification. The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`.|
-|userCount|Int64|Count of unique Azure Active Directoy users that were seen.|
+|userCount|Int64|Count of unique Azure Active Directory users that were seen.|
 |workloadCount|Int64|Count of unique target workloads or hosts that were seen.|
 
 ## Relationships
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.networkaccess.entitiesSummary"
