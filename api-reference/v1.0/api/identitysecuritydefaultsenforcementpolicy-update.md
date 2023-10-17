@@ -47,7 +47,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|isEnabled|Boolean|If set to true, Azure Active Directory security defaults are enabled for the tenant.|
+|isEnabled|Boolean|If set to true, Microsoft Entra security defaults are enabled for the tenant.|
 
 ## Response
 
@@ -130,4 +130,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-
