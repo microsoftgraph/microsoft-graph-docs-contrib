@@ -1,9 +1,9 @@
 ---
 title: "Get privilegeEscalationAwsResourceFinding"
 description: "Read the properties and relationships of a privilegeEscalationAwsResourceFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/key/findings/graph.privilegeEscalationAwsResourceFinding
 ```
 
 ## Optional query parameters
@@ -57,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws('id')/findings/graph.privilegeEscalationAwsResourceFinding
 ```
 
 
@@ -72,18 +73,42 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
-
+Content-type: application/json
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.privilegeEscalationAwsResourceFinding",
-    "id": "39dd4fcf-a6be-5d88-41a3-1bf3c231346e",
-    "createdDateTime": "String (timestamp)",
-    "permissionsCreepIndex": {
-      "@odata.type": "microsoft.graph.permissionsCreepIndex"
-    },
-    "lastActiveDateTime": "String (timestamp)"
-  }
+  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.privilegeEscalationAwsResourceFinding",
+  "value": [
+    {
+      "@odata.type": "graph.privilegeEscalationAwsResourceFinding",
+      "id": "cHJpdmlsZWdlRXNjYWxhdGlvblJlc291cmNlRmluZGluZzEwMDAx",
+      "identity": {
+        "@odata.type": "graph.awsEc2Instance",
+        "id": "YXJuOmF3czplYzI6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTppbnN0YW5jZS9pLTAxNTAzYTZhYjA0ODZlZmU1",
+        "externalId": "arn:aws:ec2:us-west-2:956987887735:instance/i-01503a6ab0486efe5",
+        "displayName": "prat-cnx-user-test3",
+        "source": {
+          "@odata.type": "graph.awsSource",
+          "identityProviderType": "aws",
+          "accountId": "956987887735"
+        },
+        "authorizationSystem": {
+          "@odata.type": "graph.awsAuthorizationSystem",
+          "id": "{Id}",
+          "authorizationSystemId": "956987887735",
+          "authorizationSystemName": "cloudknox-development",
+          "authorizationSystemType": "aws"
+        }
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "permissionsCreepIndex": {
+        "score": 99
+      },
+      "identityDetails": {
+        "createdDateTime": "2020-04-12T20:34:24Z",
+        "lastActiveDateTime": "2020-10-30T03:21:05Z"
+      }
+    }
+  ],
+  "@odata.nextLink": "https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.privilegeEscalationAwsResourceFinding?$skiptoken=foobar"
 }
 ```
 
