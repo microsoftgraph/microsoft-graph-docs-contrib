@@ -13,8 +13,7 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an participant endpoint in a call. The endpoint represents
-a user or user-like entity. Inherits from [endpoint](callrecords-endpoint.md) type.
+Represents a participant endpoint in a call. The endpoint represents a user or user-like entity. Inherits from [endpoint](callrecords-endpoint.md) type.
 
 ## Properties
 
@@ -31,7 +30,7 @@ a user or user-like entity. Inherits from [endpoint](callrecords-endpoint.md) ty
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following example is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

@@ -61,7 +61,7 @@ This method supports the following OData query parameters to help customize the 
 |:----------|:----------|
 | Authorization | Bearer {token} |
 | Prefer: odata.maxpagesize={x} | Specifies a preferred integer {x} page size for paginated results. Optional. This value must be equal to or less than the maximum allowable page size. |
-| Prefer: include-unknown-enum-members | Enables evolveable enum values beyond the sentinel value. See [Best Practices](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) for more information. Optional. |
+| Prefer: include-unknown-enum-members | Enables evolvable enum values beyond the sentinel value. See [Best Practices](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations) for more information. Optional. |
 | Prefer: omit-values=nulls | Removes null or empty values from the response. Optional. |
 
 ## Request body
