@@ -49,7 +49,7 @@ In the request body, supply the values for relevant fields that should be update
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|isEnabled|Boolean|If set to true, Microsoft Entra security defaults are enabled for the tenant.|
+|isEnabled|Boolean|If set to true, Microsoft Entra ID security defaults are enabled for the tenant.|
 
 ## Response
 
