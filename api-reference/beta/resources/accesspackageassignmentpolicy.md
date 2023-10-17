@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package assignment policy specifies the policy by which subjects can request or be assigned an access package via an access package assignment. An access package can have zero or more policies. When a request from a subject is received, the subject is matched against each policy to find the policy (if any) with requestorSettings that include that subject. The policy then determines whether the request requires approval, the duration of the access package assignment, and whether the assignment needs regularly review.
+In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package assignment policy specifies the policy by which subjects can request or be assigned an access package via an access package assignment. An access package can have zero or more policies. When a request from a subject is received, the subject is matched against each policy to find the policy (if any) with requestorSettings that include that subject. The policy then determines whether the request requires approval, the duration of the access package assignment, and whether the assignment needs regularly review.
 
 To assign a user to an access package, [create an accessPackageAssignmentRequest](../api/entitlementmanagement-post-accesspackageassignmentrequests.md) which references the access package and access package assignment policy.
 
@@ -47,7 +47,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 |requestApprovalSettings|[approvalSettings](approvalsettings.md)|Who must approve requests for access package in this policy.|
 |requestorSettings|[requestorSettings](requestorsettings.md)|Who can request this access package from this policy.|
 |questions|[accessPackageQuestion](accesspackagequestion.md) collection|Questions that are posed to the  requestor.|
-|verifiableCredentialSettings|[verifiableCredentialSettings](verifiablecredentialsettings.md)|Settings for verifiable credentials set up through the Azure AD Verified ID service. These settings represent the verifiable credentials that a requestor of an access package in this policy can present to be assigned the access package.|
+|verifiableCredentialSettings|[verifiableCredentialSettings](verifiablecredentialsettings.md)|Settings for verifiable credentials set up through the Microsoft Entra Verified I D service. These settings represent the verifiable credentials that a requestor of an access package in this policy can present to be assigned the access package.|
 
 
 ## Relationships
@@ -116,4 +116,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
