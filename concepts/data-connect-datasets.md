@@ -19,96 +19,96 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 
 | Dataset name | Details |
 | --- | --- |
-| TeamsCallRecords_v1 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-teamscallrecords1.md) |
+| TeamsCallRecords_v1 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-teamscallrecords1.md) |
 
 ### Channel
 
 | Dataset name | Details |
 | --- | --- |
-| TeamsChannelDetails_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-teamschanneldetails.md) |
+| TeamsChannelDetails_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-teamschanneldetails.md) |
 
 ### Contact
 
 | Dataset name | Details |
 | --- | --- |
-| Contact_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-contact.md) |
-| Contact_v1 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-contact1.md) |
+| Contact_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-contact.md) |
+| Contact_v1 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-contact1.md) |
 
 ### Event
 
 | Dataset name | Details |
 | --- | --- |
-| CalendarView_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-calendarview.md) |
-| ConferenceRoomCalendar_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-conferenceroomcalendar.md) |
-| Event_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-event.md) |
-| Event_v1 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-event1.md) |
+| CalendarView_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-calendarview.md) |
+| ConferenceRoomCalendar_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-conferenceroomcalendar.md) |
+| Event_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-event.md) |
+| Event_v1 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-event1.md) |
 
 ### Group
 
 | Dataset name | Details |
 | --- | --- |
-| GroupDetails_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-groupdetails.md) |
-| GroupMembers_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-groupmembers.md) |
-| GroupOwners_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-groupowners.md) |
+| GroupDetails_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-groupdetails.md) |
+| GroupMembers_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-groupmembers.md) |
+| GroupOwners_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-groupowners.md) |
 
 ### Mail
 
 | Dataset name | Details |
 | --- | --- |
-| Message_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-message.md) |
-| Message_v1 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-message1.md) |
-| SentItems_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-sentitems.md) |
-| SentItems_v1 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-sentitems1.md) |
+| Message_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-message.md) |
+| Message_v1 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-message1.md) |
+| SentItems_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sentitems.md) |
+| SentItems_v1 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-sentitems1.md) |
 
 ### Mail folder
 
 | Dataset name | Details |
 | --- | --- |
-| Inbox_v1 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-inbox.md) |
-| Mailfolder_v0 | [Learn more](https://github.com/microsoftgraphdataconnect-solutions/Datasets/data-connect-dataset-mailfolder.md) |
-| Mailfolder_v2 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-mailfolder2.md) |
+| Inbox_v1 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-inbox.md) |
+| Mailfolder_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-mailfolder.md) |
+| Mailfolder_v2 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-mailfolder2.md) |
 
 ### Mailbox settings
 
 | Dataset name | Details |
 | --- | --- |
-| MailboxSettings_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-mailboxsettings.md) |
+| MailboxSettings_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-mailboxsettings.md) |
 
 ### Message
 
 | Dataset name | Details |
 | --- | --- |
-| OutlookGroupConversations_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-outlookgroupconversations.md) |
-| TeamChat_v1 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-teamchat.md) |
-| TeamChat_v2 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-teamchat2.md) |
-| TeamsStandardChannelMessages_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-teamsstandardchannelmessages.md) |
+| OutlookGroupConversations_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-outlookgroupconversations.md) |
+| TeamChat_v1 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-teamchat.md) |
+| TeamChat_v2 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-teamchat2.md) |
+| TeamsStandardChannelMessages_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-teamsstandardchannelmessages.md) |
 
 ### Online meetings
 
 | Dataset name | Details |
 | --- | --- |
-| TeamsTranscript_v1 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-teamstranscript1.md) |
+| TeamsTranscript_v1 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-teamstranscript1.md) |
 
 ### Org hierarchy
 
 | Dataset name | Details |
 | --- | --- |
-| DirectReport_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-directreport.md) |
-| Manager_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-manager.md) |
+| DirectReport_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-directreport.md) |
+| Manager_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-manager.md) |
 
 ### Task
 
 | Dataset name | Details |
 | --- | --- |
-| TodoTaskFolders_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-todotaskfolders.md) |
-| TodoTasks_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-todotasks.md) |
+| TodoTaskFolders_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-todotaskfolders.md) |
+| TodoTasks_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-todotasks.md) |
 
 ### User
 
 | Dataset name | Details |
 | --- | --- |
-| User_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-user.md) |
-| User_v1 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/Datasets/data-connect-dataset-user1.md) |
+| User_v0 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-user.md) |
+| User_v1 | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-user1.md) |
 
 ## Regions
 
