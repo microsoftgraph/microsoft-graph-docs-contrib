@@ -15,7 +15,8 @@ Namespace: microsoft.graph
 > APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
 
 
-The **fileStorageContainer** resource represents a file storage container. A file storeage container is a shared file storage space that can be used by a user or a group of users via an application. All file system objects in a fileStorageContainer are returned as [driveItem](../resources/driveitem.md) resources. 
+A file storage container is a shared file storage space that can be used by a user or a group of users via an application. All file system objects in a fileStorageContainer are returned as [driveItem](../resources/driveitem.md) resources. 
+
 
 **FileStorageContainer** resources have properties that provide data about the fileStorageContainer's status and access setting. This includes:
 * **ContainerType** specifies the application workload that owns or can access of all containers of that container type. Each container must have only one container type. 
@@ -26,10 +27,13 @@ The **fileStorageContainer** resource represents a file storage container. A fil
 
 |Role|Details|
 |:---|:---|
-|reader|Provides the abililty to read fileStorageContainer metadata and contents inside.|
+|reader|Readers can read fileStorageContainer metadata and the content inside.|
+
 |writer|Provides the ability to read and modify fileStorageContainer metadata and contents inside.|
-|manager|Provides the ability to read and modify fileStorageContainer metadata and contents inside, and manage the permissions to the container.|
-|owner|Provides the ability to read and modify fileStorageContainer metadata and contents inside, manage the permission to the container, delete and restore the container.|
+|manager|Managers can read and modify fileStorageContainer metadata and contents inside and manage the permissions to the container.|
+
+|owner|Owners can read and modify fileStorageContainer metadata and contents inside, manage permissions to containers, delete and restore containers.|
+
 
 ## Container status enumeration
 
