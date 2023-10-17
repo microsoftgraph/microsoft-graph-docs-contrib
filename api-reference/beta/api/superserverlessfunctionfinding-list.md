@@ -3,7 +3,7 @@ title: "List superServerlessFunctionFindings"
 description: "Get a list of the superServerlessFunctionFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -25,30 +25,35 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+List AWS super serverless functions:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.superServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.superServerlessFunctionFinding
 ```
+
+List AWS super serverless functions:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/graph.superServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings/graph.superServerlessFunctionFinding
 ```
+
+List GCP super serverless functions:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.superServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/graph.superServerlessFunctionFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -74,7 +79,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.superServerlessFunctionFinding not found
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/azure/findings/graph.superServerlessFunctionFinding
 ```
 
 
@@ -91,20 +96,47 @@ The following is an example of the response
 HTTP/1.1 200 OK
 Content-Type: application/json
 
+HTTP/1.1 200 OK
+Content-type: application/json
 {
+  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/azure/findings/graph.superServerlessFunctionFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.superServerlessFunctionFinding",
-      "id": "fc5d7e58-3208-f5de-6f77-e8eae196a7da",
-      "createdDateTime": "String (timestamp)",
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
+      "@odata.type": "graph.superServerlessFunctionFinding",
+      "id": "c3VwZXJTZXJ2ZXJsZXNzRnVuY3Rpb25GaW5kaW4z",
+      "identity": {
+          "@odata.type": "graph.azureServerlessFunction",
+          "id":"L3N1YnNjcmlwdGlvbnMvNmVhMjg1ZDktZmU3ZS00OWY2LWEwZmYtMjAzYzFhN2FjMjI1L3Jlc291cmNlR3JvdXBzL9C/0YPRgdGC0YvQvdC90YvRhS9wcm92aWRlcnMvTWljcm9zb2Z0LldlYi9zaXRlcy9LaXJjaHLDtmFkcw==",
+          "externalId": "/subscriptions/6ea285d9-fe7e-49f6-a0ff-203c1a7ac225/resourceGroups/пустынных/providers/Microsoft.Web/sites/Kirchröads",
+          "displayName": "Kirchröads",
+          "source": {
+            "@odata.type": "graph.aadSource":,
+            "identityProviderType": "aad",
+            "domain": "mciemc1.onmicrosoft.com"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.azureAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "e7c4026e-93bc-404f-9f77-0af3ed4df58c",
+            "authorizationSystemName": "Microsoft Azure Sponsorship 2",
+            "authorizationSystemType": "azure"
+          }
       },
-      "lastActiveDateTime": "String (timestamp)",
       "actionSummary": {
-        "@odata.type": "microsoft.graph.actionSummary"
+        "assigned": 2,
+        "exercised": 0,
+        "available": 12906
+      },
+      "permissionsCreepIndex": {
+        "score": 0
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "identityDetails": {
+        "createdDateTime": "2021-04-12T20:34:24Z",
+        "lastActiveDateTime": "2021-10-30T03:21:05Z"
       }
-    }
+    },
+
   ]
 }
 ```

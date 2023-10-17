@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # List inactiveGroupFindings
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -16,8 +17,8 @@ Get a list of the [inactiveGroupFinding](../resources/inactivegroupfinding.md) o
 You want to view the inactive groups in your AWS, Azure, or GCP cloud environments.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
- 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Not supported|
@@ -26,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-Get AWS inactive groups:
+List AWS inactive groups:
 <!-- {
   "blockType": "ignored"
 }
@@ -35,7 +36,7 @@ Get AWS inactive groups:
 GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveGroupFinding
 ```
 
-Get Azure inactive groups:
+List Azure inactive groups:
 <!-- {
   "blockType": "ignored"
 }
@@ -44,7 +45,7 @@ Get Azure inactive groups:
 GET /identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveGroupFinding
 ```
 
-Get GCP inactive groups:
+List GCP inactive groups:
 <!-- {
   "blockType": "ignored"
 }
@@ -54,14 +55,17 @@ GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inacti
 ```
 
 ## Optional query parameters
+
 This method supports the `$filter` and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response

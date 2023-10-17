@@ -3,7 +3,7 @@ title: "List superGcpServiceAccountFindings"
 description: "Get a list of the superGcpServiceAccountFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/gcp/findings/graph.superGcpServiceAccountFinding
+GET identityGovernance/permissionsAnalytics/gcp/findings/graph.superGcpServiceAccountFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -47,8 +47,6 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [superGcpServiceAccountFinding](../resources/supergcpserviceaccountfinding.md) objects in the response body.
-
-If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the LIST method filter uses a bad key.
 
 ## Examples
 
@@ -75,22 +73,47 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/gcp/findings/graph.superGcpServiceAccountFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.superGcpServiceAccountFinding",
-      "id": "800a0d4c-750a-d2d6-51d1-89f37d8b8b13",
-      "createdDateTime": "String (timestamp)",
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
+      "@odata.type": "graph.superGcpServiceAccountFinding",
+      "id": "c3VwZXJTZXJ2aWNlQWNjb3VudEZpbmRpbmc2",
+      "identity": {
+          "@odata.type": "graph.gcpServiceAccount",
+          "id": "bW50ZXN0QGNhcmJpZGUtYm9uc2FpLTIwNTAxNy5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbQ==",
+          "externalId": "mntest@carbide-bonsai-205017.iam.gserviceaccount.com",
+          "displayName": "mntest",
+          "source": {
+            "@odata.type": "graph.gsuiteSource",
+            "identityProviderType": "gsuite",
+            "domain": "carbide-bonsai-205017.iam.gserviceaccount.com"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.gcpAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "carbide-bonsai-205017",
+            "authorizationSystemName": "cloudknox-staging",
+            "authorizationSystemType": "gcp"
+          }
       },
-      "lastActiveDateTime": "String (timestamp)",
       "actionSummary": {
-        "@odata.type": "microsoft.graph.actionSummary"
+        "assigned": 4624,
+        "exercised": 0,
+        "available": 10542
+      },
+      "permissionsCreepIndex": {
+        "score": 82
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "identityDetails": {
+        "createdDateTime": "2021-04-12T20:34:24Z",
+        "lastActiveDateTime": "2021-10-30T03:21:05Z"
       }
-    }
+    },
+
   ]
 }
 ```

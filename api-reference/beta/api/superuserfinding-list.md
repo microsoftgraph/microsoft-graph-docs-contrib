@@ -3,7 +3,7 @@ title: "List superUserFindings"
 description: "Get a list of the superUserFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -25,30 +25,36 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+List AWS super users:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.superUserFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.superUserFinding
 ```
+
+List Azure super users:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/graph.superUserFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings/graph.superUserFinding
 ```
+
+List GCP super users:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.superUserFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/graph.superUserFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 
 ## Request headers
 |Name|Description|
@@ -62,8 +68,6 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [superUserFinding](../resources/superuserfinding.md) objects in the response body.
 
-If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the LIST method filter uses a bad key.
-
 ## Examples
 
 ### Request
@@ -74,7 +78,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/graph.superUserFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.superUserFinding
 ```
 
 
@@ -92,19 +96,44 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/gcp/findings/graph.superUserFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.superUserFinding",
-      "id": "38121cbd-ff7c-44ea-e6de-f9c1fe55b372",
-      "createdDateTime": "String (timestamp)",
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
+      "@odata.type": "graph.superUserFinding",
+      "id": "c3VwZXJVc2VyRmluZGluZzE",
+      "identity": {
+          "@odata.type": "graph.gcpUser",
+          "id": "dGVtcF91c2VyXzFAZ21haWwuY29t",
+          "externalId": "temp_user_1@gmail.com",
+          "displayName": "temp_user_1",
+          "source": {
+            "@odata.type": "graph.gsuiteSource",
+            "identityProviderType": "gsuite",
+            "domain": "gmail.com"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.gcpAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "carbide-bonsai-205017",
+            "authorizationSystemName": "ck-staging",
+            "authorizationSystemType": "gcp"
+          }
       },
-      "lastActiveDateTime": "String (timestamp)",
       "actionSummary": {
-        "@odata.type": "microsoft.graph.actionSummary"
+        "assigned": 10532,
+        "exercised": 0,
+        "available": 10542
+      },
+      "permissionsCreepIndex": {
+        "score": 95
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "identityDetails": {
+        "createdDateTime": "2021-04-12T20:34:24Z",
+        "lastActiveDateTime": "2021-10-30T03:21:05Z"
       }
-    }
+    },
+
   ]
 }
 ```

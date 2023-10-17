@@ -3,7 +3,7 @@ title: "Get superServerlessFunctionFinding"
 description: "Read the properties and relationships of a superServerlessFunctionFinding object."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -25,30 +25,35 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+Get AWS super serverless functions:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/key/findings/graph.superServerlessFunctionFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.superServerlessFunctionFinding
 ```
+
+Get Azure super serverless functions:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/key/findings/graph.superServerlessFunctionFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings('id')/graph.superServerlessFunctionFinding
 ```
+
+Get GCP super serverless functions:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/key/findings/graph.superServerlessFunctionFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.superServerlessFunctionFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports none of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -74,10 +79,8 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure('id)/findings/graph.superServerlessFunctionFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings('id)/graph.superServerlessFunctionFinding
 ```
-
-
 ### Response
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.

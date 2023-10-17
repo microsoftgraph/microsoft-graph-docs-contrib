@@ -18,12 +18,14 @@ An inactiveGroupFinding contains information on a group, its authorization syste
 Inherits from [finding](../resources/finding.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List inactiveGroupFindings](../api/inactivegroupfinding-list.md)|[inactiveGroupFinding](../resources/inactivegroupfinding.md) collection|Get a list of the [inactiveGroupFinding](../resources/inactivegroupfinding.md) objects and their properties.|
 |[Get inactiveGroupFinding](../api/inactivegroupfinding-get.md)|[inactiveGroupFinding](../resources/inactivegroupfinding.md)|Read the properties and relationships of an [inactiveGroupFinding](../resources/inactivegroupfinding.md) object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |actionSummary|[actionSummary](../resources/actionsummary.md)|Contains information on authorization system actions granted to this group identity and actions executed by this group identity in the last 90 days. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the group identity|
@@ -32,11 +34,13 @@ Inherits from [finding](../resources/finding.md).
 |permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|Assigns an index based on an identities excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the group identity. Supports `$filter` (`gt`) and `$orderby`.|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
 |group|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",

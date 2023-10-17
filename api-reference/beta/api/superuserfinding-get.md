@@ -3,7 +3,7 @@ title: "Get superUserFinding"
 description: "Read the properties and relationships of a superUserFinding object."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -25,32 +25,37 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+Get AWS super users:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/key/findings/graph.superUserFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.superUserFinding
 ```
+
+Get Azure super users:
 <!-- {
   "blockType": "request",
   "name": "get_superuserfinding"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/key/findings/graph.superUserFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings('id')/graph.superUserFinding
 ```
+
+Get GCP super users:
 <!-- {
   "blockType": "request",
   "name": "get_superuserfinding"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/key/findings/graph.superUserFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.superUserFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -64,10 +69,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [superUserFinding](../resources/superuserfinding.md) object in the response body.
 
-If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the key passed into the GET method is invalid.
-
 ## Examples
-The following is an example of a GCP request.
+
 ### Request
 The following is an example of a request.
 <!-- {
@@ -76,7 +79,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp('id')/findings/graph.superUserFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxTdXBlclVzZXJGaW5kaW5nLDE1NDczMQ')/graph.superUserFinding
 ```
 
 ### Response
@@ -91,45 +94,36 @@ The following is an example of the response
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-{
-  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/gcp/findings/graph.superUserFinding",
-  "value": [
-    {
-      "@odata.type": "graph.superUserFinding",
-      "id": "c3VwZXJVc2VyRmluZGluZzE",
-      "identity": {
-          "@odata.type": "graph.gcpUser",
-          "id": "dGVtcF91c2VyXzFAZ21haWwuY29t",
-          "externalId": "temp_user_1@gmail.com",
-          "displayName": "temp_user_1",
-          "source": {
-            "@odata.type": "graph.gsuiteSource",
-            "identityProviderType": "gsuite",
-            "domain": "gmail.com"
-          },
-          "authorizationSystem": {
-            "@odata.type": "graph.gcpAuthorizationSystem",
-            "id": "{Id}",
-            "authorizationSystemId": "carbide-bonsai-205017",
-            "authorizationSystemName": "ck-staging",
-            "authorizationSystemType": "gcp"
-          }
-      },
-      "actionSummary": {
-        "assigned": 10532,
-        "exercised": 0,
-        "available": 10542
-      },
-      "permissionsCreepIndex": {
-        "score": 95
-      },
-      "createdDateTime": "2020-10-11T20:11:45.6711Z",
-      "identityDetails": {
-        "createdDateTime": "2021-04-12T20:34:24Z",
-        "lastActiveDateTime": "2021-10-30T03:21:05Z"
-      }
-    },
 
-  ]
+{
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.superUserFinding/$entity",
+    "id": "MSxTdXBlclVzZXJGaW5kaW5nLDE1NDczMQ",
+    "createdDateTime": "2023-10-17T19:49:19.622563Z",
+    "actionSummary": {
+        "assigned": 10783,
+        "exercised": 0,
+        "available": 58
+    },
+    "permissionsCreepIndex": {
+        "score": 100
+    },
+    "identity": {
+        "@odata.type": "#microsoft.graph.awsUser",
+        "id": "YXJuOmF3czppYW06Ojk1Njk4Nzg4NzczNTp1c2VyL2FzaHlh",
+        "externalId": "arn:aws:iam::956987887735:user/ashya",
+        "displayName": "ashya",
+        "source": {
+            "@odata.type": "#microsoft.graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "956987887735"
+        },
+        "authorizationSystem": {
+            "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
+            "authorizationSystemId": "956987887735",
+            "authorizationSystemName": "ck-development",
+            "authorizationSystemType": "aws",
+            "id": "MSxhd3MsOTU2OTg3ODg3NzM1"
+        }
+    }
 }
 ```
