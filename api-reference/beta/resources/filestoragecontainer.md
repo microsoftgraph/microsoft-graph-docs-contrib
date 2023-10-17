@@ -12,15 +12,13 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 > [!IMPORTANT]
-> APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
-
+> APIs under the `/beta` version in Microsoft Graph are subject to change. The use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **version** selector.
 
 A file storage container is a shared file storage space that can be used by a user or a group of users via an application. All file system objects in a fileStorageContainer are returned as [driveItem](../resources/driveitem.md) resources. 
 
-
 **FileStorageContainer** resources have properties that provide data about the fileStorageContainer's status and access setting. This includes:
-* **ContainerType** specifies the application workload that owns or can access of all containers of that container type. Each container must have only one container type. 
-* **Permissions** specifies the role a user is assigned to and the corresponding access priviledges. 
+* **ContainerType** specifies the application workload that owns or can access all containers of that container type. Each container must have only one container type. 
+* **Permissions** specifies the role a user is assigned to and the corresponding access privileges. 
 * **Status** specifies the current state of the container. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours.
 
 ## Permission roles enumeration
@@ -28,13 +26,9 @@ A file storage container is a shared file storage space that can be used by a us
 |Role|Details|
 |:---|:---|
 |reader|Readers can read fileStorageContainer metadata and the content inside.|
-
 |writer|Writers can read and modify fileStorageContainer metadata and contents inside.|
-
 |manager|Managers can read and modify fileStorageContainer metadata and contents inside and manage the permissions to the container.|
-
 |owner|Owners can read and modify fileStorageContainer metadata and contents inside, manage permissions to containers, delete and restore containers.|
-
 
 ## Container status enumeration
 
@@ -67,7 +61,7 @@ A file storage container is a shared file storage space that can be used by a us
 |Property|Type|Description|
 |:---|:---|:---|
 |containerTypeId|Guid|Container type id of the fileStorageContainer. Read-only.|
-|createdDateTime|DateTimeOffset|Date and time of fileStorageContainer creation. Read-only.|
+|createdDateTime|DateTimeOffset|Date and time of the fileStorageContainer creation. Read-only.|
 |customProperties|[fileStorageContainerCustomPropertyDictionary](../resources/filestoragecontainercustompropertydictionary.md)|Custom property collection for the fileStorageContainer. Read-write.|
 |description|String|Provides a user-visible description of the fileStorageContainer. Read-write.|
 |displayName|String|The display name of the fileStorageContainer. Read-write.|
@@ -80,7 +74,7 @@ A file storage container is a shared file storage space that can be used by a us
 |Relationship|Type|Description|
 |:---|:---|:---|
 |drive|[drive](../resources/drive.md)|The fileStorageContainer's drive resource. Read-only.|
-|permissions|[permission](../resources/permission.md)|Permissions of users in the fileStorageContainer. Read-write.|
+|permissions|[permission](../resources/permission.md)|Permissions of the users in the fileStorageContainer. Read-write.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
