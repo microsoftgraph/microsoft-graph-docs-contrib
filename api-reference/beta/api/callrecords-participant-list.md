@@ -70,8 +70,6 @@ If successful, this method returns a `200 OK` response code and the requested li
 
 Here's an example of the request to get the list of [participants](../resources/callrecords-participant.md) for a [callRecord](../resources/callrecords-callrecord.md).
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_callrecord_sessions"
@@ -80,8 +78,6 @@ Here's an example of the request to get the list of [participants](../resources/
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/communications/callRecords/{id}/participants_v2
 ```
-
----
 
 #### Response
 
@@ -154,9 +150,6 @@ Content-type: application/json
 }
 ```
 
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
   "description": "List participants",
