@@ -32,7 +32,7 @@ Inherits from [microsoft.graph.networkaccess.policyRule](../resources/networkacc
 |destinations|[microsoft.graph.networkaccess.ruleDestination](../resources/networkaccess-ruledestination.md) collection|Possible destinations and types of destinations accessed by the user in accordance with the network filtering policy, such as IP addresses and FQDNs/URLs.|
 |id|String|Unique Id. Inherited from [microsoft.graph.entity](../resources/entity.md).|
 |name|String|Display name. Inherited from [microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md).|
-|ruleType|microsoft.graph.networkaccess.networkDestinationType|Defines rule types for specifying network policy destinations.The possible values are: `url`, `fqdn`, `ipAddress`, `ipRange`, `ipSubnet`, `webCategory`.|
+|ruleType|microsoft.graph.networkaccess.networkDestinationType|Defines rule types for specifying network policy destinations. The possible values are: `url`, `fqdn`, `ipAddress`, `ipRange`, `ipSubnet`, `webCategory`.|
 
 ## Relationships
 None.
