@@ -17,7 +17,7 @@ Represents the identity of a participant in a [callRecord](callrecords-callrecor
 ## Methods
 | Method          | Return Type                                                                                     | Description                                                   |
 |:----------------|:------------------------------------------------------------------------------------------------|:--------------------------------------------------------------|
-| [List participants](../api/callrecords-participant-list.md)|[microsoft.graph.callRecords.participant](callrecords-participant.md) collection|Retrieve the list of participants associated to a [callRecord](callrecords-callrecord.md) object.|
+| [List participants](../api/callrecords-participant-list.md)|[microsoft.graph.callRecords.participant](callrecords-participant.md) collection|Retrieve the list of participants associated with a [callRecord](callrecords-callrecord.md) object.|
 
 
 ## Properties

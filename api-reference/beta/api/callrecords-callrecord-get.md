@@ -20,7 +20,7 @@ There are two ways to get the **id** of a **callRecord**:
 * Subscribe to [change notifications](/graph/api/resources/webhooks) to the `/communications/callRecords` endpoint.
 * Use the **callChainId** property of a [call](../resources/call.md). The call record is available only after the associated call is completed.
 
-You can use the `$expand` query parameter to optionally include participant_v2 details or session and segment details, as shown in the [Get full details](#example-2-get-full-details) example. When you expand session details, the maximum page size is 60 sessions. When you expand participants_v2, the maximum page size is 130 participants.
+You can use the `$expand` query parameter to optionally include participants_v2 details or session and segment details, as shown in the [Get full session and segment details](#example-2-get-full-details) example. When you expand session details, the maximum page size is 60 sessions. When you expand participants_v2, the maximum page size is 130 participants.
 
 > [!WARNING]
 >
@@ -159,6 +159,17 @@ Content-type: application/json
             "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
         }
     },
+    "organizer_v2@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/organizer_v2/$entity",
+    "organizer_v2": {
+        "id": "821809f5-0000-0000-0000-3b5136c0e777",
+        "identity": {
+            "user": {
+                "id": "821809f5-0000-0000-0000-3b5136c0e777",
+                "displayName": "Abbie Wilkins",
+                "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+            }
+        }
+    },
     "participants": [
         {
             "user": {
@@ -174,7 +185,8 @@ Content-type: application/json
                 "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
             }
         }
-    ]
+    ],
+    "participants_v2@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/participants_v2/$entity",
 }
 ```
 
@@ -182,7 +194,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request to get the full details from a [callRecord](../resources/callrecords-callrecord.md), including session and segment components.
+The following is an example of the request to get the full session and segment details from a [callRecord](../resources/callrecords-callrecord.md).
 
 
 # [HTTP](#tab/http)
@@ -290,6 +302,7 @@ Content-type: application/json
             }
         }
     ],
+    "participants_v2@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/participants_v2/$entity",
     "sessions": [
         {
             "modalities": [
@@ -530,6 +543,115 @@ Content-type: application/json
         }
     ],
     "sessions@odata.nextLink": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/sessions?$expand=segments&$skiptoken=abc"
+}
+```
+
+### Example 3: Expand participants_v2
+
+#### Request
+
+The following is an example of a request to expand the full paginated participant list for a [callRecord](../resources/callrecords-callrecord.md).
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_callrecord_expanded_participants_v2"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/communications/callRecords/{id}?$expand=participants_v2
+```
+
+---
+
+#### Response
+
+The following is an example of the response. If the participants list is truncated, a `participants_v2@odata.nextLink` value will be provided to retrieve the next page of participants. The default page size for participants is 130 entries.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.callRecords.callRecord"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords(participants_v2())/$entity",
+    "version": 1,
+    "type": "peerToPeer",
+    "modalities": [
+        "audio"
+    ],
+    "lastModifiedDateTime": "2020-02-25T19:00:24.582757Z",
+    "startDateTime": "2020-02-25T18:52:21.2169889Z",
+    "endDateTime": "2020-02-25T18:52:46.7640013Z",
+    "id": "e523d2ed-2966-4b6b-925b-754a88034cc5",
+    "organizer": {
+        "user": {
+            "id": "821809f5-0000-0000-0000-3b5136c0e777",
+            "displayName": "Abbie Wilkins",
+            "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
+        }
+    },
+    "organizer_v2@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/organizer_v2/$entity",
+    "organizer_v2": {
+        "id": "821809f5-0000-0000-0000-3b5136c0e777",
+        "identity": {
+            "user": {
+                "id": "821809f5-0000-0000-0000-3b5136c0e777",
+                "displayName": "Abbie Wilkins",
+                "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+            }
+        }    
+    },
+    "participants": [
+        {
+            "user": {
+                "id": "821809f5-0000-0000-0000-3b5136c0e777",
+                "displayName": "Abbie Wilkins",
+                "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
+            }
+        },
+        {
+            "user": {
+                "id": "f69e2c00-0000-0000-0000-185e5f5f5d8a",
+                "displayName": "Owen Franklin",
+                "tenantId": "dc368399-474c-4d40-900c-6265431fd81f"
+            }
+        }
+    ],
+    "participants_v2@odata.context": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/participants_v2/$entity",
+    "participants_v2@odata.nextLink": "https://graph.microsoft.com/beta/$metadata#communications/callRecords('e523d2ed-2966-4b6b-925b-754a88034cc5')/participants_v2?$skiptoken=abc"
+    "participants_v2": [
+        {
+            "id": "821809f5-0000-0000-0000-3b5136c0e777",
+            "identity": {
+                "user": {
+                    "id": "821809f5-0000-0000-0000-3b5136c0e777",
+                    "displayName": "Abbie Wilkins",
+                    "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+                    "userPrincipalName": "abbie.wilkins@contoso.com"
+                }
+            }    
+        },
+        {
+            "id": "821809f5-0000-0000-0000-3b5136c0e777",
+            "identity": {
+                "user": {
+                    "id": "f69e2c00-0000-0000-0000-185e5f5f5d8a",
+                    "displayName": "Owen Franklin",
+                    "tenantId": "dc368399-474c-4d40-900c-6265431fd81f",
+                    "userPrincipalName": "owen.franklin@contoso.com"
+                }
+            }    
+        }
+    ]
 }
 ```
 

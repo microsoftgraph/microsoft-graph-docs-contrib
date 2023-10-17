@@ -37,7 +37,7 @@ Represents a single peer-to-peer call or a group call between multiple participa
 |lastModifiedDateTime|DateTimeOffset|UTC time when the call record was created. The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |modalities|modality collection|List of all the modalities used in the call. Possible values are: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
 |organizer|[identitySet](identityset.md)|The organizing party's identity. Deprecated.|
-|participants|[identitySet](identityset.md) collection|List of distinct identities involved in the call. Deprecated.|
+|participants|[identitySet](identityset.md) collection|List of distinct identities involved in the call. Limited to 130 entries. Deprecated.|
 |startDateTime|DateTimeOffset|UTC time when the first user joined the call. The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |type|callType|Indicates the type of the call. Possible values are: `unknown`, `groupCall`, `peerToPeer`, `unknownFutureValue`.|
 |version|Int64|Monotonically increasing version of the call record. Higher version call records with the same ID include additional data compared to the lower version.|

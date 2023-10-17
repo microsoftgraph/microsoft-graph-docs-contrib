@@ -13,7 +13,7 @@ Namespace: microsoft.graph.callRecords
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieves a list of [callRecord](../resources/callrecords-callrecord.md) objects. The results can be optionally filtered using the `$filter` query parameter on `startDateTime` and participant `id`. Note that the listed call records will not include expandable attributes such as session, segment, or participant_v2. These attributes can be expanded using [Get callRecord](callrecords-callrecord-get.md) for a specific record.
+Retrieves a list of [callRecord](../resources/callrecords-callrecord.md) objects. The results can be optionally filtered using the `$filter` query parameter on `startDateTime` and participant `id`. Note that the listed call records will not include expandable attributes such as session, segment, or participants_v2. These attributes can be expanded using [Get callRecord](callrecords-callrecord-get.md) for a specific record.
 
 > [!WARNING]
 >
