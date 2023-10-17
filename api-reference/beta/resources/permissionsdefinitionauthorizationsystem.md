@@ -3,7 +3,7 @@ title: "permissionsDefinitionAuthorizationSystem resource type"
 description: "Represents the authorization system that the permissions will be requested on."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 

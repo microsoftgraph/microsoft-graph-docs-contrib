@@ -3,7 +3,7 @@ title: "scheduledPermissionsRequest resource type"
 description: "Represents a permissions request that (EPM) will use to manage permissions for a request identity on resources in the authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 

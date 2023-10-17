@@ -3,7 +3,7 @@ title: "List actions in a GCP authorization system"
 description: "List the gcpAuthorizationSystemTypeAction objects and their properties."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 

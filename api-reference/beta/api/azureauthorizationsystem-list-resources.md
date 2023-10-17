@@ -3,7 +3,7 @@ title: "List azureAuthorizationSystemResources"
 description: "List the azureAuthorizationSystemResource objects and their properties for a provided Azure authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 

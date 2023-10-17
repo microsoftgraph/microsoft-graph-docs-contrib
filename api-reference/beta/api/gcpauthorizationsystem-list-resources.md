@@ -3,7 +3,7 @@ title: "List gcpAuthorizationSystemResources"
 description: "List the gcpAuthorizationSystemResource objects and their properties for a provided GCP authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "Get gcpRole"
 description: "Get a GCP role in a GCP authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 

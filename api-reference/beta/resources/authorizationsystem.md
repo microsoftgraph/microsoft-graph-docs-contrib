@@ -3,7 +3,7 @@ title: "authorizationSystem resource type"
 description: "Represents an onboarded AWS account, Azure subscription, or GCP project that Entra Permissions Management will collect and analyze permissions and actions on."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 

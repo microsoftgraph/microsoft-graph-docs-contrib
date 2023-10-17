@@ -3,7 +3,7 @@ title: "permissionsManagement resource type"
 description: "Used for the path based routing with path prefix permissionsManagement that leads to permissionsRequest."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 

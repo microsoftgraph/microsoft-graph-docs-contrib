@@ -3,7 +3,7 @@ title: "entitlementsDataCollectionInfo resource type"
 description: "Abstract type for entitlements data collection information."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "permissionsRequestChange resource type"
 description: "Represents a change event of the scheduledPermissionsRequest entity."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 

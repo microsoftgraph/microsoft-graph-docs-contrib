@@ -3,7 +3,7 @@ title: "awsActionsPermissionsDefinitionAction resource type"
 description: "An awsPermissionsDefinitionAction that will allow permissions requests with AWS Actions."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 

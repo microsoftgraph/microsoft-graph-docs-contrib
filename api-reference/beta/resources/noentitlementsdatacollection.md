@@ -3,7 +3,7 @@ title: "noEntitlementsDataCollection resource type"
 description: "Returned when there are no entitlements data collected."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 

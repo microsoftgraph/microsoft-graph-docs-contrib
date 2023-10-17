@@ -3,7 +3,7 @@ title: "awsPermissionsDefinitionAction resource type"
 description: "RAbstract Complex Type that represents the action to take in a permissionsDefinition if the request is approved specific for AWS."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 

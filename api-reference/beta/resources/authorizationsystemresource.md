@@ -3,7 +3,7 @@ title: "authorizationSystemResource resource type"
 description: "Represents a resource in an authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
