@@ -19,11 +19,11 @@ Inherits from [identityUserFlowAttribute](../resources/identityuserflowattribute
 
 |Property|Type|Description|
 |:---|:---|:---|
-|dataType|identityUserFlowAttributeDataType|The data type of the user flow attribute. This can't be modified after the custom user flow attribute is created. The supported values for **dataType** are: `string` , `boolean` , `int64` , `stringCollection` , `dateTime`. Inherited from [identityUserFlowAttribute](../resources/identityuserflowattribute.md). Read-only.|
-|description|String|The description of the user flow attribute that's shown to the user at the time of sign-up. Inherited from [identityUserFlowAttribute](../resources/identityuserflowattribute.md). Read-only.|
+|dataType|identityUserFlowAttributeDataType|The data type of the user flow attribute, and can't be modified after the custom user flow attribute is created. The supported values for **dataType** are: `string` , `boolean` , `int64` , `stringCollection` , `dateTime`. Inherited from [identityUserFlowAttribute](../resources/identityuserflowattribute.md). Read-only.|
+|description|String|The description of the user flow attribute that's shown to the user at the time of sign up. Inherited from [identityUserFlowAttribute](../resources/identityuserflowattribute.md). Read-only.|
 |displayName|String|The display name of the user flow attribute. Inherited from [identityUserFlowAttribute](../resources/identityuserflowattribute.md). Read-only.|
-|id|String|The identifier of the user flow attribute. This is a read-only attribute that is automatically created. Inherited from [identityUserFlowAttribute](../resources/identityuserflowattribute.md)|
-|userFlowAttributeType|identityUserFlowAttributeType|The type of the user flow attribute. This is a read-only attribute that is automatically set. The value for this property is `builtIn`. Inherited from [identityUserFlowAttribute](../resources/identityuserflowattribute.md). Read-only.|
+|id|String|The identifier of the user flow attribute and is a read-only attribute that is automatically created. Inherited from [identityUserFlowAttribute](../resources/identityuserflowattribute.md)|
+|userFlowAttributeType|identityUserFlowAttributeType|The type of the user flow attribute and is a read-only attribute that is automatically set. The value for this property is `builtIn`. Inherited from [identityUserFlowAttribute](../resources/identityuserflowattribute.md). Read-only.|
 
 
 ## Relationships
