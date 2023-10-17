@@ -34,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-authentication-methods-apis-write](../includes/rbac-for-apis/rbac-authentication-methods-apis-write.md)]
 
-Admins with *User Administrator*, *Helpdesk Administrator*, or *Password Administrator* roles can also reset passwords for non-admin users and a limited set of admin roles as defined in [Who can reset passwords](https://learn.microsoft.com/azure/active-directory/roles/privileged-roles-permissions?tabs=admin-center#who-can-reset-passwords).
+Admins with *User Administrator*, *Helpdesk Administrator*, or *Password Administrator* roles can also reset passwords for non-admin users and a limited set of admin roles as defined in [Who can reset passwords](/azure/active-directory/roles/privileged-roles-permissions#who-can-reset-passwords).
 
 ## HTTP request
 
@@ -169,7 +169,7 @@ POST https://graph.microsoft.com/beta/users/6ea91a8d-e32e-41a1-b7bd-d2d185eed0e0
 
 #### Response
 
-Here's an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
