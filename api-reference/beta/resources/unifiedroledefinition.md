@@ -18,8 +18,8 @@ Represents a collection of permissions listing the operations, such as read, wri
 The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
-- directory (Azure AD) 
-- entitlement management (Azure AD)
+- directory (Microsoft Entra ID) 
+- entitlement management (Microsoft Entra ID)
 - Exchange Online
 
 
@@ -44,7 +44,7 @@ The following RBAC providers are currently supported:
 |id|String| The unique identifier for the unifiedRoleDefinition. Key, not nullable, Read-only.  Supports `$filter` (`eq` operator only). |
 |isBuiltIn|Boolean| Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports `$filter` (`eq`).|
 |isEnabled|Boolean| Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when **isBuiltIn** is `true`. |
-|isPrivileged|Boolean| Flag indicating if the role is privileged. Azure AD defines a role as privileged if it contains at least one sensitive resource action in the **rolePermissions** and **allowedResourceActions** objects. Applies only for actions in the `microsoft.directory` resource namespace. Read-only. Supports `$filter` (`eq`).|
+|isPrivileged|Boolean| Flag indicating if the role is privileged. Microsoft Entra ID defines a role as privileged if it contains at least one sensitive resource action in the **rolePermissions** and **allowedResourceActions** objects. Applies only for actions in the `microsoft.directory` resource namespace. Read-only. Supports `$filter` (`eq`).|
 |resourceScopes|String collection| List of scopes permissions granted by the role definition apply to. Currently only `/` is supported. Read-only when isBuiltIn is `true`. **DO NOT USE. This will be deprecated soon. Attach scope to role assignment**.| 
 |rolePermissions|[unifiedRolePermission](unifiedrolepermission.md) collection| List of permissions included in the role. Read-only when **isBuiltIn** is `true`. Required. |
 |templateId|String| Custom template identifier that can be set when isBuiltIn is `false`. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when **isBuiltIn** is `true`. |
@@ -54,7 +54,7 @@ The following RBAC providers are currently supported:
 
 | Relationship | Type    |Description|
 |:---------------|:--------|:----------|
-|inheritsPermissionsFrom| [unifiedRoleDefinition](unifiedroledefinition.md) collection| Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute. |
+|inheritsPermissionsFrom| [unifiedRoleDefinition](unifiedroledefinition.md) collection| Read-only collection of role definitions that the given role definition inherits from. Only Microsoft Entra built-in roles support this attribute. |
 
 ## JSON representation
 
@@ -95,5 +95,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

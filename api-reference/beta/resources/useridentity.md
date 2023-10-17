@@ -1,6 +1,6 @@
 ---
 title: "userIdentity type"
-description: "Represents an Azure AD user identity for a reviewer of an access review."
+description: "Represents a Microsoft Entra user identity for a reviewer of an access review."
 ms.localizationpriority: medium
 author: "jyothig123"
 ms.prod: "governance"
@@ -13,8 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-For the Azure AD [access reviews](accessreviews-root.md), this type represents an Azure AD user identity for a creator or reviewer of an access review.
-In the context of an Azure AD audit log, this represents the user information that initiated or was affected by an audit activity.
+For the Microsoft Entra [access reviews](accessreviews-root.md), this type represents a Microsoft Entra user identity for a creator or reviewer of an access review.
+In the context of a Microsoft Entra audit log, this represents the user information that initiated or was affected by an audit activity.
 
 This type inherits from [identity](identity.md) and has one additional property, the user principal name of the user.
 
@@ -79,5 +79,3 @@ Here's a JSON representation of the type.
   "suppressions": []
 }
 -->
-
-
