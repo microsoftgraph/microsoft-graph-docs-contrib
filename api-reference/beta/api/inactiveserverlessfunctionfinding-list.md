@@ -12,7 +12,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [inactiveServerlessFunctionFinding](../resources/inactiveserverlessfunctionfinding.md) objects and their properties.
+Get a list of the [inactiveServerlessFunctionFindauthor: "ashyasingh"
+ms.localizationpriority: medium
+ms.prod: "multicloud-permissions-management"
+doc_type: apiPageTypeing](../resources/inactiveserverlessfunctionfinding.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,30 +28,35 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+List AWS inactive serverless functions:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveServerlessFunctionFinding
 ```
+
+List Azure inactive serverless functions:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveServerlessFunctionFinding
+GET /beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveServerlessFunctionFinding
 ```
+
+List GCP inactive serverless functions:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveServerlessFunctionFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveServerlessFunctionFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -61,8 +69,6 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [inactiveServerlessFunctionFinding](../resources/inactiveserverlessfunctionfinding.md) objects in the response body.
-
-If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the LIST method filter uses a bad key.
 
 ## Examples
 
@@ -89,22 +95,46 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
-
+Content-type: application/json
 {
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.inactiveServerlessFunctionFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.inactiveServerlessFunctionFinding",
-      "id": "f6c1e7e7-d263-d935-cfef-078c8e9198d7",
-      "createdDateTime": "String (timestamp)",
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
+      "@odata.type": "graph.inactiveServerlessFunctionFinding",
+      "id": "aW5hY3RpdmVTZXJ2ZXJsZXNzRnVuY3Rpb25GaW5kaW5nMTAwMDE",
+      "identity": {
+          "@odata.type": "graph.awsLambda",
+          "id": "YXJuOmF3czpsYW1iZGE6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTpmdW5jdGlvbjphbm90aGVyQWRtaW5GdWN0aW9u",
+          "externalId": "arn:aws:lambda:us-west-2:956987887735:function:anotherAdminFuction",
+          "displayName": "anotherAdminFuction",
+          "source": {
+            "@odata.type": "graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "956987887735"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.awsAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "956987887735",
+            "authorizationSystemName": "cloudknox-development",
+            "authorizationSystemType": "aws"
+          }
       },
-      "lastActiveDateTime": "String (timestamp)",
       "actionSummary": {
-        "@odata.type": "microsoft.graph.actionSummary"
+        "assigned": 10783,
+        "exercised": 0,
+        "available": 20000
+      },
+      "permissionsCreepIndex": {
+        "score": 3
+      },
+      "createdDateTime": "2020-10-11T20:11:45.671Z",
+      "identityDetails": {
+        "createdDateTime": "2020-04-12T20:34:24Z",
+        "lastActiveDateTime": "2020-10-30T03:21:05Z"
       }
-    }
+    },
+
   ]
 }
 ```

@@ -1,9 +1,9 @@
 ---
 title: "inactiveAzureServicePrincipalFinding resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -23,26 +23,22 @@ Inherits from [identityFinding](../resources/identityfinding.md).
 |:---|:---|:---|
 |[List inactiveAzureServicePrincipalFindings](../api/inactiveazureserviceprincipalfinding-list.md)|[inactiveAzureServicePrincipalFinding](../resources/inactiveazureserviceprincipalfinding.md) collection|Get a list of the [inactiveAzureServicePrincipalFinding](../resources/inactiveazureserviceprincipalfinding.md) objects and their properties.|
 |[Get inactiveAzureServicePrincipalFinding](../api/inactiveazureserviceprincipalfinding-get.md)|[inactiveAzureServicePrincipalFinding](../resources/inactiveazureserviceprincipalfinding.md)|Read the properties and relationships of an [inactiveAzureServicePrincipalFinding](../resources/inactiveazureserviceprincipalfinding.md) object.|
-|[Update inactiveAzureServicePrincipalFinding](../api/inactiveazureserviceprincipalfinding-update.md)|[inactiveAzureServicePrincipalFinding](../resources/inactiveazureserviceprincipalfinding.md)|Update the properties of an [inactiveAzureServicePrincipalFinding](../resources/inactiveazureserviceprincipalfinding.md) object.|
-|[Delete inactiveAzureServicePrincipalFinding](../api/inactiveazureserviceprincipalfinding-delete.md)|None|Delete an [inactiveAzureServicePrincipalFinding](../resources/inactiveazureserviceprincipalfinding.md) object.|
 |[aggregatedSummary](../api/inactiveazureserviceprincipalfinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIdentitySummary](../resources/permissionsanalyticsaggregatedidentitysummary.md)|**TODO: Add Description**|
-|[List authorizationSystemIdentity](../api/inactiveazureserviceprincipalfinding-list-identity.md)|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md) collection|Get the authorizationSystemIdentity resources from the identity navigation property.|
-|[Add authorizationSystemIdentity](../api/inactiveazureserviceprincipalfinding-post-identity.md)|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Add identity by posting to the identity collection.|
-|[Remove authorizationSystemIdentity](../api/inactiveazureserviceprincipalfinding-delete-identity.md)|None|Remove an [authorizationSystemIdentity](../resources/authorizationsystemidentity.md) object.|
+
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionSummary|[actionSummary](../resources/actionsummary.md)|**TODO: Add Description** Inherited from [identityFinding](../resources/identityfinding.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [finding](../resources/finding.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|lastActiveDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [identityFinding](../resources/identityfinding.md).|
-|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|**TODO: Add Description** Inherited from [identityFinding](../resources/identityfinding.md).|
+|actionSummary|[actionSummary](../resources/actionsummary.md)|Contains information on authorization system actions granted to an identity and actions executed by this identity in the last 90 days. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the identity Inherited from [identityFinding](../resources/identityfinding.md).|
+|createdDateTime|DateTimeOffset|Inherited from [finding](../resources/finding.md).|
+|id|String|Inherited from [entity](../resources/entity.md).|
+|lastActiveDateTime|DateTimeOffset|A date specifiying when the last time the identity in this Finding executed an authorization system action Inherited from [identityFinding](../resources/identityfinding.md).|
+|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|This value represents how much risk an identity poses. This risk range is classified in three buckets: 0-33: low, 34-66: medium, 67-100: high Inherited from [identityFinding](../resources/identityfinding.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|**TODO: Add Description** Inherited from [microsoft.graph.identityFinding](../resources/identityfinding.md)|
+|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system|Inherited from [microsoft.graph.identityFinding](../resources/identityfinding.md)|
 
 ## JSON representation
 The following is a JSON representation of the resource.

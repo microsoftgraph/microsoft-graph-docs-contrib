@@ -3,7 +3,7 @@ title: "List inactiveAzureServicePrincipalFindings"
 description: "Get a list of the inactiveAzureServicePrincipalFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -32,11 +32,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/betaevan/identityGovernance/permissionsAnalytics/azure/findings/graph.inactiveAzureServicePrincipalFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings/graph.inactiveAzureServicePrincipalFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -50,7 +50,6 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [inactiveAzureServicePrincipalFinding](../resources/inactiveazureserviceprincipalfinding.md) objects in the response body.
 
-If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the LIST method filter uses a bad key.
 
 ## Examples
 
@@ -62,7 +61,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/betaevan/identityGovernance/permissionsAnalytics/azure/findings/graph.inactiveAzureServicePrincipalFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/graph.inactiveAzureServicePrincipalFinding
 ```
 
 
@@ -80,20 +79,47 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/azure/graph.inactiveAzureServicePrincipalFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.inactiveAzureServicePrincipalFinding",
-      "id": "febd40d7-a84e-e57a-ceb2-ed07cc5d87f0",
-      "createdDateTime": "String (timestamp)",
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
+      "@odata.type": "graph.inactiveAzureServicePrincipalFinding",
+      "id": "aW5hY3RpdmVTZXJ2aWNlUHJpbmNpcGFsRmluZGluZzEwMDAx",
+      "identity": {
+          "@odata.type": "graph.azureServicePincipal",
+          "id":"YjRkY2ViZTMtMGQ1Yy00ODQ3LWI2ZjktNWY2ZjllODhhYTUw",
+          "externalId": "b4dcebe3-0d5c-4847-b6f9-5f6f9e88aa50",
+          "displayName": "ciem-cloudknox-3p-app",
+          "source": {
+            "@odata.type": "graph.aadSource":,
+            "identityProviderType": "aad",
+            "domain": "6bdeb36e-2415-4f7e-ac03-49c518da0e10"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.azureAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "6ea285d9-fe7e-49f6-a0ff-203c1a7ac225",
+            "authorizationSystemName": "Microsoft Azure Sponsorship 2",
+            "authorizationSystemType": "azure"
+          }
       },
-      "lastActiveDateTime": "String (timestamp)",
       "actionSummary": {
-        "@odata.type": "microsoft.graph.actionSummary"
+        "assigned": 5046,
+        "exercised": 0,
+        "available": 12724
+      },
+      "permissionsCreepIndex": {
+        "score": 0
+      },
+      "createdDateTime": "2020-10-11T20:11:45.671Z",
+      "identityDetails": {
+        "createdDateTime": "2020-04-12T20:34:24Z",
+        "lastActiveDateTime": "2020-10-30T03:21:05Z"
       }
-    }
+    },
+
   ]
 }
+
+
 ```
 

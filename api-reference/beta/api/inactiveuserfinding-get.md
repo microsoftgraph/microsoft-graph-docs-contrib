@@ -3,7 +3,7 @@ title: "Get inactiveUserFinding"
 description: "Read the properties and relationships of an inactiveUserFinding object."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -28,30 +28,37 @@ One of the following permissions is required to call this API. To learn more, in
 
 
 ## HTTP request
+
+Get AWS inactive users:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/key/findings/graph.inactiveUserFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.inactiveUserFinding
 ```
+
+Get Azure inactive users:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/key/findings/graph.inactiveUserFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings('id')/graph.inactiveUserFinding
 ```
+
+Get GCP inactive users:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/key/findings/graph.inactiveUserFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.inactiveUserFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 
 ## Request headers
 |Name|Description|
@@ -75,7 +82,7 @@ The following is an example of a request.
 }
 -->
 ```http
-GET https://canary.graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws('id')/findings/microsoft.graph.inactiveUserFinding
+GET https://canary.graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxJbmFjdGl2ZVVzZXJGaW5kaW5nLDI0MTI5MA')/microsoft.graph.inactiveUserFinding
 ```
 
 
@@ -92,44 +99,34 @@ The following is an example of the response
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.inactiveUserFinding",
-  "value": [
-    {
-      "@odata.type": "graph.inactiveUserFinding",
-      "id": "aW5hY3RpdmVSb2xlRmluZGluZzE",
-      "identity": {
-          "@odata.type": "graph.awsUser",
-          "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDp1c2VyL0FuZHlfQmFnX0Jhc2g=",
-          "externalId": "arn:aws:iam::377596131774:user/Andy_Bag_Bash",
-          "displayName": "Andy_Bag_Bash",
-          "source": {
-            "@odata.type": "graph.awsSource",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding/$entity",
+    "id": "MSxJbmFjdGl2ZVVzZXJGaW5kaW5nLDI0MTI5MA",
+    "createdDateTime": "2023-10-17T15:48:01.549695Z",
+    "actionSummary": {
+        "assigned": 10532,
+        "exercised": 0,
+        "available": 10542
+    },
+    "permissionsCreepIndex": {
+        "score": 93
+    },
+    "identity": {
+        "@odata.type": "#microsoft.graph.awsUser",
+        "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDp1c2VyL2NoYWl0YW55YQ",
+        "externalId": "arn:aws:iam::377596131774:user/chaitanya",
+        "displayName": "chaitanya",
+        "source": {
+            "@odata.type": "#microsoft.graph.awsSource",
             "identityProviderType": "aws",
             "accountId": "377596131774"
-          },
-          "authorizationSystem": {
-            "@odata.type": "graph.awsAuthorizationSystem",
-            "id": "{Id}",
+        },
+        "authorizationSystem": {
+            "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
             "authorizationSystemId": "377596131774",
             "authorizationSystemName": "cloudknox-staging",
             "authorizationSystemType": "aws",
-          }
-      },
-      "actionSummary": {
-        "assigned": 736,
-        "exercised": 0,
-        "available": 10000
-      },
-      "permissionsCreepIndex": {
-        "score": 3
-      },
-      "createdDateTime": "2020-10-11T20:11:45.6711Z",
-      "identityDetails": {
-        "createdDateTime": "2020-04-12T20:34:24Z",
-        "lastActiveDateTime": "2020-10-30T03:21:05Z"
-      }
-    },
-
-  ]
+            "id": "MSxhd3MsMzc3NTk2MTMxNzc0"
+        }
+    }
 }
 ```

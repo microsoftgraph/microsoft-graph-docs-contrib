@@ -3,7 +3,7 @@ title: "Get inactiveAzureServicePrincipalFinding"
 description: "Read the properties and relationships of an inactiveAzureServicePrincipalFinding object."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -32,12 +32,13 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/betaevan/identityGovernance/permissionsAnalytics/azure/key/findings/graph.inactiveAzureServicePrincipalFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings('id')/graph.inactiveAzureServicePrincipalFinding
 ```
 
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 
 ## Request headers
 |Name|Description|
@@ -51,8 +52,6 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and an [inactiveAzureServicePrincipalFinding](../resources/inactiveazureserviceprincipalfinding.md) object in the response body.
 
-If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the key passed into the GET method is invalid.
-
 ## Examples
 
 ### Request
@@ -63,7 +62,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/betaevan/identityGovernance/permissionsAnalytics/azure('id)/findings/graph.inactiveAzureServicePrincipalFinding
+GET https://graph.microsoft.com/betaevan/identityGovernance/permissionsAnalytics/azure/findings('MSxJbmFjdGl2ZUF6dXJlU2VydmljZVByaW5jaXBhbEZpbmRpbmcsMTA3NDQz')/graph.inactiveAzureServicePrincipalFinding
 ```
 
 ### Response
@@ -76,46 +75,39 @@ The following is an example of the response
 }
 -->
 ``` http
-{
-  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/azure/graph.inactiveAzureServicePrincipalFinding",
-  "value": [
-    {
-      "@odata.type": "graph.inactiveAzureServicePrincipalFinding",
-      "id": "aW5hY3RpdmVTZXJ2aWNlUHJpbmNpcGFsRmluZGluZzEwMDAx",
-      "identity": {
-          "@odata.type": "graph.azureServicePincipal",
-          "id":"YjRkY2ViZTMtMGQ1Yy00ODQ3LWI2ZjktNWY2ZjllODhhYTUw",
-          "externalId": "b4dcebe3-0d5c-4847-b6f9-5f6f9e88aa50",
-          "displayName": "ciem-cloudknox-3p-app",
-          "source": {
-            "@odata.type": "graph.aadSource":,
-            "identityProviderType": "aad",
-            "domain": "6bdeb36e-2415-4f7e-ac03-49c518da0e10"
-          },
-          "authorizationSystem": {
-            "@odata.type": "graph.azureAuthorizationSystem",
-            "id": "{Id}",
-            "authorizationSystemId": "6ea285d9-fe7e-49f6-a0ff-203c1a7ac225",
-            "authorizationSystemName": "Microsoft Azure Sponsorship 2",
-            "authorizationSystemType": "azure"
-          }
-      },
-      "actionSummary": {
-        "assigned": 5046,
-        "exercised": 0,
-        "available": 12724
-      },
-      "permissionsCreepIndex": {
-        "score": 0
-      },
-      "createdDateTime": "2020-10-11T20:11:45.671Z",
-      "identityDetails": {
-        "createdDateTime": "2020-04-12T20:34:24Z",
-        "lastActiveDateTime": "2020-10-30T03:21:05Z"
-      }
-    },
+HTTP/1.1 200 OK
+Content-Type: application/json
 
-  ]
+{
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveAzureServicePrincipalFinding/$entity",
+    "id": "MSxJbmFjdGl2ZUF6dXJlU2VydmljZVByaW5jaXBhbEZpbmRpbmcsMTA3NDQz",
+    "createdDateTime": "2023-10-17T19:42:38.053563Z",
+    "actionSummary": {
+        "assigned": 5737,
+        "exercised": 0,
+        "available": 14486
+    },
+    "permissionsCreepIndex": {
+        "score": 0
+    },
+    "identity": {
+        "@odata.type": "#microsoft.graph.azureServicePrincipal",
+        "id": "YWJkNjM1ZTUtNTUyOC00NTY1LThjYWYtZjJjNjBmNGY4MGY4",
+        "externalId": "abd635e5-5528-4565-8caf-f2c60f4f80f8",
+        "displayName": "ciem-cloudknox-3p-app",
+        "source": {
+            "@odata.type": "#microsoft.graph.aadSource",
+            "identityProviderType": "aad",
+            "domain": "00f7dcae-97f9-492b-af2e-36eb35b613af"
+        },
+        "authorizationSystem": {
+            "@odata.type": "#microsoft.graph.azureAuthorizationSystem",
+            "authorizationSystemId": "00f7dcae-97f9-492b-af2e-36eb35b613af",
+            "authorizationSystemName": "????-Subscription-???????-2023",
+            "authorizationSystemType": "azure",
+            "id": "MSxhenVyZSwwMGY3ZGNhZS05N2Y5LTQ5MmItYWYyZS0zNmViMzViNjEzYWY"
+        }
+    }
 }
 ```
 

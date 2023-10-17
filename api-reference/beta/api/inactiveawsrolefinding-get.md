@@ -30,11 +30,12 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ```http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/key/findings/graph.inactiveAwsRoleFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.inactiveAwsRoleFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 
 ## Request headers
 |Name|Description|
@@ -48,8 +49,6 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and an [inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md) object in the response body.
 
-If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the key passed into the GET method is invalid.
-
 ## Examples
 
 ### Request
@@ -60,7 +59,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxJbmFjdGl2ZUF3c1JvbGVGaW5kaW5nLDY1MTY0MA')/graph.inactiveAwsRoleFinding
 ```
 
 
@@ -76,45 +75,36 @@ The following is an example of the response
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
-  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding",
-  "value": [
-    {
-      "@odata.type": "graph.inactiveAwsRoleFinding",
-      "id": "aW5hY3RpdmVSb2xlRmluZGluZzE",
-      "identity": {
-          "@odata.type": "graph.awsRole",
-          "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpyb2xlL21vbmdvLWRiLXN0YWdpbmc=",
-          "externalId": "arn:aws:iam::377596131774:role/mongo-db-staging",
-          "displayName": "mongo-db-staging",
-          "source": {
-            "@odata.type": "graph.awsSource",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveAwsRoleFinding/$entity",
+    "id": "MSxJbmFjdGl2ZUF3c1JvbGVGaW5kaW5nLDY1MTY0MA",
+    "createdDateTime": "2023-10-17T19:48:33.530943Z",
+    "actionSummary": {
+        "assigned": 125,
+        "exercised": 0,
+        "available": 10542
+    },
+    "permissionsCreepIndex": {
+        "score": 1
+    },
+    "identity": {
+        "@odata.type": "#microsoft.graph.awsRole",
+        "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpyb2xlL2Vrc2N0bC1jay1la3MtYWRkb24taWFtc2VydmljZWFjY291bnQtZGVmYXVsLVJvbGUxLTFYRllEOTNLUThXTjI",
+        "externalId": "arn:aws:iam::377596131774:role/eksctl-ck-eks-addon-iamserviceaccount-defaul-Role1-1XFYD93KQ8WN2",
+        "displayName": "eksctl-ck-eks-addon-iamserviceaccount-defaul-Role1-1XFYD93KQ8WN2",
+        "source": {
+            "@odata.type": "#microsoft.graph.awsSource",
             "identityProviderType": "aws",
             "accountId": "377596131774"
-          },
-          "authorizationSystem": {
-            "@odata.type": "graph.awsAuthorizationSystem",
-            "id": "{Id}",
+        },
+        "authorizationSystem": {
+            "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
             "authorizationSystemId": "377596131774",
             "authorizationSystemName": "cloudknox-staging",
-            "authorizationSystemType": "aws"
-          }
-      },
-      "actionSummary": {
-        "assigned": 736,
-        "exercised": 0,
-        "available": 10000
-      },
-      "permissionsCreepIndex": {
-        "score": 3
-      },
-      "createdDateTime": "2020-10-11T20:11:45.6711Z",
-      "identityDetails": {
-        "createdDateTime": "2022-05-16T21:26:50Z",
-        "lastActiveDateTime": "2022-10-20T05:23:35Z"
-      }
-    },
-
-  ]
+            "authorizationSystemType": "aws",
+            "id": "MSxhd3MsMzc3NTk2MTMxNzc0"
+        }
+    }
 }
 ```

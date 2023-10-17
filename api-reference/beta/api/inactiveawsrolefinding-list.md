@@ -3,7 +3,7 @@ title: "List inactiveAwsRoleFindings"
 description: "Get a list of the inactiveAwsRoleFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -47,8 +47,6 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [inactiveAwsRoleFinding](../resources/inactiveawsrolefinding.md) objects in the response body.
-
-If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the LIST method filter uses a bad key.
 
 
 ## Examples
@@ -79,19 +77,44 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.inactiveAwsRoleFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.inactiveAwsRoleFinding",
-      "id": "bba11b43-5584-77a0-cf6b-da70e2338543",
-      "createdDateTime": "String (timestamp)",
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
+      "@odata.type": "graph.inactiveAwsRoleFinding",
+      "id": "aW5hY3RpdmVSb2xlRmluZGluZzE",
+      "identity": {
+          "@odata.type": "graph.awsRole",
+          "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpyb2xlL21vbmdvLWRiLXN0YWdpbmc=",
+          "externalId": "arn:aws:iam::377596131774:role/mongo-db-staging",
+          "displayName": "mongo-db-staging",
+          "source": {
+            "@odata.type": "graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "377596131774"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.awsAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "377596131774",
+            "authorizationSystemName": "cloudknox-staging",
+            "authorizationSystemType": "aws"
+          }
       },
-      "lastActiveDateTime": "String (timestamp)",
       "actionSummary": {
-        "@odata.type": "microsoft.graph.actionSummary"
+        "assigned": 736,
+        "exercised": 0,
+        "available": 10000
+      },
+      "permissionsCreepIndex": {
+        "score": 3
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "identityDetails": {
+        "createdDateTime": "2022-05-16T21:26:50Z",
+        "lastActiveDateTime": "2022-10-20T05:23:35Z"
       }
-    }
+    },
+
   ]
 }
 ```

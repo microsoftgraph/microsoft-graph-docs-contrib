@@ -3,7 +3,7 @@ title: "List inactiveUserFindings"
 description: "Get a list of the inactiveUserFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -27,20 +27,25 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+List AWS inactive users:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveUserFinding
+GET /identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveUserFinding
 ```
+
+List Azure inactive groups:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding
 ```
+
+List GCP inactive groups:
 <!-- {
   "blockType": "ignored"
 }
@@ -50,7 +55,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$filter` and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

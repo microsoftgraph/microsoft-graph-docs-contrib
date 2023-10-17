@@ -3,7 +3,7 @@ title: "Get inactiveGcpServiceAccountFinding"
 description: "Read the properties and relationships of an inactiveGcpServiceAccountFinding object."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -36,7 +36,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method does not support any of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 
 ## Request headers
 |Name|Description|
@@ -50,8 +51,6 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and an [inactiveGcpServiceAccountFinding](../resources/inactivegcpserviceaccountfinding.md) object in the response body.
 
-If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the key passed into the GET method is invalid.
-
 ## Examples
 
 ### Request
@@ -62,7 +61,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp('id')/findings/microsoft.graph.inactiveGcpServiceAccountFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings('MSxJbmFjdGl2ZUdjcFNlcnZpY2VBY2NvdW50RmluZGluZywxNDM1NjM')/microsoft.graph.inactiveGcpServiceAccountFinding
 ```
 
 
@@ -76,44 +75,38 @@ The following is an example of the response
 }
 -->
 ``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
 {
-  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/gcp/findings/graph.inactiveGcpServiceAccountFinding",
-  "value": [
-    {
-      "@odata.type": "graph.inactiveGcpServiceAccountFinding",
-      "id": "aW5hY3RpdmVTZXJ2aWNlQWNjb3VudEZpbmRpbmcxMDAwMQ",
-      "identity": {
-        "@odata.type": "graph.gcpServiceAccount",
-        "id": "Z2VldGEtc2VydmljZWFjY291bnQxQGNhcmJpZGUtYm9uc2FpLTIwNTAxNy5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbQ==",
-        "externalId": "geeta-serviceaccount1@carbide-bonsai-205017.iam.gserviceaccount.com",
-        "displayName": "geeta-serviceaccount1",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveGcpServiceAccountFinding/$entity",
+    "id": "MSxJbmFjdGl2ZUdjcFNlcnZpY2VBY2NvdW50RmluZGluZywxNDM1NjM",
+    "createdDateTime": "2023-10-17T19:46:22.653412Z",
+    "actionSummary": {
+        "assigned": 0,
+        "exercised": 0,
+        "available": 7075
+    },
+    "permissionsCreepIndex": {
+        "score": 0
+    },
+    "identity": {
+        "@odata.type": "#microsoft.graph.gcpServiceAccount",
+        "id": "ZGV2LXRlc3RAY2FyYmlkZS1ib25zYWktMjA1MDE3LmlhbS5nc2VydmljZWFjY291bnQuY29t",
+        "externalId": "dev-test@carbide-bonsai-205017.iam.gserviceaccount.com",
+        "displayName": "Dev Testing Bot",
         "source": {
-          "@odata.type": "graph.gsuiteSource",
-          "identityProviderType": "gsuite",
-          "domain": "carbide-bonsai-205017"
+            "@odata.type": "#microsoft.graph.gsuiteSource",
+            "identityProviderType": "gsuite",
+            "domain": "carbide-bonsai-205017.iam.gserviceaccount.com"
         },
         "authorizationSystem": {
-          "@odata.type": "graph.gcpAuthorizationSystem",
-          "id": "{Id}",
-          "authorizationSystemId": "carbide-bonsai-205017",
-          "authorizationSystemName": "ck-staging",
-          "authorizationSystemType": "gcp"
+            "@odata.type": "#microsoft.graph.gcpAuthorizationSystem",
+            "authorizationSystemId": "carbide-bonsai-205017",
+            "authorizationSystemName": "ck-staging",
+            "authorizationSystemType": "gcp",
+            "id": "MSxnY3AsY2FyYmlkZS1ib25zYWktMjA1MDE3"
         }
-      },
-      "actionSummary": {
-        "assigned": 4631,
-        "exercised": 0,
-        "available": 4631
-      },
-      "permissionsCreepIndex": {
-        "score": 82
-      },
-      "createdDateTime": "2020-10-11T20:11:45.671Z",
-      "identityDetails": {
-        "createdDateTime": "2020-04-12T20:34:24Z",
-        "lastActiveDateTime": "2020-10-30T03:21:05Z"
-      }
     }
-  ]
 }
 ```
