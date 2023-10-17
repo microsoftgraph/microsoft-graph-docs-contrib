@@ -40,7 +40,7 @@ client := graphbeta.NewGraphServiceClientWithCredentials(credentials, scopes)
 
 ## [Java](#tab/java)
 
-In order to call the API, you must install the [Microsoft Graph Beta Java SDK](https://github.com/microsoftgraph/msgraph-beta-sdk-java). Usage is the same as the non-beta SDK.
+In order to call the API, you must install the [Microsoft Graph Beta Java SDK](https://github.com/microsoftgraph/msgraph-beta-sdk-java). Usage is the same as the non beta SDK.
 
 ```Java
 GraphServiceClient graphClient = GraphServiceClient
@@ -77,7 +77,7 @@ class UseBeta
 ```
 
 ## [Python](#tab/python)
-To use the [Microsoft Graph Beta SDK for Python](https://github.com/microsoftgraph/msgraph-beta-sdk-python) install the SDK for the beta endpoint with the following command:
+To use the [Microsoft Graph Beta SDK for Python](https://github.com/microsoftgraph/msgraph-beta-sdk-python), install the SDK for the beta endpoint with the following command:
 ```py
 pip install msgraph-beta-sdk
 ```
