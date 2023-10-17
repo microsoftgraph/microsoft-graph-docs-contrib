@@ -31,7 +31,7 @@ Inherits from [policyBase](../resources/policybase.md).
 |description|String|Description for this policy. Read-only.|
 |displayName|String|Display name for this policy. Read-only.|
 |id|String|Identifier for this policy. Read-only.|
-|isEnabled|Boolean|If set to `true`, Azure Active Directory security defaults is enabled for the tenant.|
+|isEnabled|Boolean|If set to `true`, Azure Active Directory security defaults are enabled for the tenant.|
 
 ## Relationships
 
@@ -39,7 +39,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

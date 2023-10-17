@@ -20,6 +20,8 @@ Create a new [authenticationEventListener](../resources/authenticationeventliste
 - [onAttributeCollectionListener resource type](../resources/onattributecollectionlistener.md)
 - [onUserCreateStartListener resource type](../resources/onusercreatestartlistener.md)
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

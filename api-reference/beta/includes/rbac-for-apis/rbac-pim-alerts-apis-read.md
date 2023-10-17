@@ -4,4 +4,4 @@ ms.topic: include
 ms.author: rkarim-ms
 ---
 
-For delegated scenarios, the calling user must be a member user or be assigned the *Privileged Role Administrator* role in Azure AD.
+For delegated scenarios, the calling user must be a member user or be assigned at least the *Privileged Role Administrator* [Azure AD role](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).

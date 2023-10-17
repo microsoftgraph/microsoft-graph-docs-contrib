@@ -89,15 +89,17 @@ For more information about using Microsoft Graph to configure rules, see [Overvi
 
 PIM for Azure AD roles generates alerts when it detects suspicious or unsafe settings for Azure AD roles in your tenant. The following seven alert types are available:
 
-| Alert                                                                        | Comments |
-|------------------------------------------------------------------------------|----------|
-| Too many global administrators in the tenant                                 | For more information about this alert including the severity rating and triggers, see, [Configure security alerts for Azure AD roles in PIM: There are too many global administrators](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts#there-are-too-many-global-administrators).          |
-| Invalid license alerts that limit the use of PIM                             | For more information about this alert including the severity rating and triggers, see, [Configure security alerts for Azure AD roles in PIM: The organization doesn't have Microsoft Entra Premium P2 or Microsoft Entra ID Governance](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts#the-organization-doesnt-have-microsoft-entra-premium-p2-or-microsoft-entra-id-governance).         |
-| Roles configured for activation without requiring multifactor authentication | For more information about this alert including the severity rating and triggers, see, [Configure security alerts for Azure AD roles in PIM: Roles don't require multi-factor authentication for activation](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts#roles-dont-require-multi-factor-authentication-for-activation).         |
-| Users with unused eligible or active Azure AD role assignments               | For more information about this alert including the severity rating and triggers, see, [Configure security alerts for Azure AD roles in PIM: Administrators aren't using their privileged roles](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts#administrators-arent-using-their-privileged-roles).       |
-| Azure AD roles being assigned outside of Privileged Identity Management      | For more information about this alert including the severity rating and triggers, see, [Configure security alerts for Azure AD roles in PIM: Roles are being assigned outside of Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts#roles-are-being-assigned-outside-of-privileged-identity-management).          |
-| Azure AD roles being activated too frequently                                | For more information about this alert including the severity rating and triggers, see, [Configure security alerts for Azure AD roles in PIM: Roles are being activated too frequently](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts#roles-are-being-activated-too-frequently).          |
-| Potential stale accounts in a privileged role                                | For more information about this alert including the severity rating and triggers, see, [Configure security alerts for Azure AD roles in PIM: Potential stale accounts in a privileged role](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts#potential-stale-accounts-in-a-privileged-role).         |
+| Alert | Microsoft Graph resources (alert configuration / incidents) |
+|--|--|
+| Too many global administrators in the tenant | [tooManyGlobalAdminsAssignedToTenantAlertConfiguration](/graph/api/resources/toomanyglobaladminsassignedtotenantalertconfiguration) / [tooManyGlobalAdminsAssignedToTenantAlertIncident](/graph/api/resources/toomanyglobaladminsassignedtotenantalertincident) |
+| Invalid license alerts that limit the use of PIM | [invalidLicenseAlertConfiguration](/graph/api/resources/invalidlicensealertconfiguration) / [invalidLicenseAlertIncident](/graph/api/resources/invalidlicensealertincident) |
+| Roles configured for activation without requiring multifactor authentication | [noMfaOnRoleActivationAlertConfiguration](/graph/api/resources/nomfaonroleactivationalertconfiguration) / [noMfaOnRoleActivationAlertIncident](/graph/api/resources/nomfaonroleactivationalertincident) |
+| Users with unused eligible or active Azure AD role assignments | [redundantAssignmentAlertConfiguration](/graph/api/resources/redundantassignmentalertconfiguration) / [redundantAssignmentAlertIncident](/graph/api/resources/redundantassignmentalertincident) |
+| Azure AD roles being assigned outside of Privileged Identity Management | [rolesAssignedOutsidePrivilegedIdentityManagementAlertConfiguration](/graph/api/resources/rolesassignedoutsideprivilegedidentitymanagementalertconfiguration) / [rolesAssignedOutsidePrivilegedIdentityManagementAlertIncident](/graph/api/resources/rolesassignedoutsideprivilegedidentitymanagementalertincident) |
+| Azure AD roles being activated too frequently | [sequentialActivationRenewalsAlertConfiguration](/graph/api/resources/sequentialactivationrenewalsalertconfiguration) / [sequentialActivationRenewalsAlertIncident](/graph/api/resources/sequentialactivationrenewalsalertincident) |
+| Potential stale accounts in a privileged role | [staleSignInAlertConfiguration](/graph/api/resources/stalesigninalertconfiguration) / [staleSignInAlertIncident](/graph/api/resources/stalesigninalertincident) |
+
+For more information about these alerts including the severity rating and triggers, see, [Configure security alerts for Azure AD roles in PIM](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts).
 
 ### Building blocks of the PIM alerts APIs
 
@@ -112,6 +114,12 @@ Use the following Microsoft Graph resources to manage PIM alerts.
 
 
 For more information about working with security alerts for Azure AD roles, see [Configure security alerts for Azure AD roles in Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-how-to-configure-security-alerts).
+
+For more information about working with security alerts for Azure AD roles using PIM APIs, see [Manage security alerts for Azure AD roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
+
+## Audit logs
+
+All activities made through PIM for Azure AD roles are logged in Azure AD audit logs and you can read through the [List directory audits](/graph/api/directoryaudit-list) API.
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
@@ -137,12 +145,12 @@ The tenant where Privileged Identity Management is being used must have sufficie
 
 ## See also
 
-- [What is Azure AD Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
-- Learn more about role settings in PIM through the following articles:
-  - [Working with rules for Azure AD roles in PIM APIs](/graph/identity-governance-pim-rules-overview)
-  - [Use PIM APIs to update Azure AD rules](/graph/how-to-pim-update-rules)
-- Follow this tutorial to learn more about using PIM APIs:
-  - [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles)
+- [What is Azure AD Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure).
+- Learn more about role settings in PIM APIs through the following articles:
+  - [Working with rules for Azure AD roles in PIM APIs](/graph/identity-governance-pim-rules-overview).
+  - [Use PIM APIs to update Azure AD rules (settings)](/graph/how-to-pim-update-rules).
+- Learn more about security alerts in PIM: [Manage security alerts for Azure AD roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
+- Follow this tutorial to learn more about using PIM for Azure AD roles APIs: [Tutorial: Use PIM APIs to assign Azure AD roles](/graph/tutorial-assign-azureadroles).
 
 
 <!-- {

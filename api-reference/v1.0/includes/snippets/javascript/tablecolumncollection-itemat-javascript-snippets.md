@@ -10,11 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const workbookTableColumn = {
-  index: 3
-};
-
-await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/columns/itemAt')
-	.post(workbookTableColumn);
+let workbookTableColumn = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/columns/itemAt(index=3)')
+	.get();
 
 ```

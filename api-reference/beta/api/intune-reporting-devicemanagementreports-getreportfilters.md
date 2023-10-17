@@ -1,6 +1,6 @@
 ---
 title: "getReportFilters action"
-description: ""
+description: "Intune Reporting Devicemanagementreports Getreportfilters Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

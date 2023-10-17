@@ -45,6 +45,8 @@ Additionally, if the meeting location has been set up as a resource, or if the e
 5. Set the attendee **emailAddress** as the resource email address.
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

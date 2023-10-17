@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get the specified [Teams async operation](../resources/teamsasyncoperation.md) that ran or is running on a specific resource.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
