@@ -26,7 +26,7 @@ Inherits from [entity](../resources/entity.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|User object identifier in Azure Active Directory. Inherited from [entity](../resources/entity.md).|
+|id|String|User object identifier in Microsoft Entra ID. Inherited from [entity](../resources/entity.md).|
 |isAdmin|Boolean|Indicates whether the user has an admin role in the tenant. This value can be used to check the authentication methods that privileged accounts are registered for and capable of.|
 |isMfaCapable|Boolean|Indicates whether the user has registered a strong authentication method for multi-factor authentication. The method must be allowed by the [authentication methods policy](../resources/authenticationmethodspolicy.md). Supports `$filter` (`eq`).|
 |isMfaRegistered|Boolean|Indicates whether the user has registered a strong authentication method for multi-factor authentication. The method may not necessarily be allowed by the [authentication methods policy](../resources/authenticationmethodspolicy.md). Supports `$filter` (`eq`).|
