@@ -1,5 +1,5 @@
 ---
-title: "Manage an Azure AD application using Microsoft Graph"
+title: "Manage a Microsoft Entra application using Microsoft Graph"
 description: "Learn how to use the applications and service principals APIs in Microsoft Graph to manage your applications."
 author: "FaithOmbongi"
 ms.author: ombongifaith
@@ -10,9 +10,9 @@ ms.prod: "applications"
 ms.date: 08/14/2023
 ---
 
-# Manage an Azure AD application using Microsoft Graph
+# Manage a Microsoft Entra application using Microsoft Graph
 
-Your app must be registered in Azure AD before the Microsoft identity platform can authorize it to access data stored in Azure Active Directory (Azure AD) or Microsoft 365 tenants. This condition applies to apps that you develop yourself, that your tenant owns, or that you access through an active subscription.
+Your app must be registered in Microsoft Entra ID before the Microsoft identity platform can authorize it to access data stored in Microsoft Entra ID or Microsoft 365 tenants. This condition applies to apps that you develop yourself, that your tenant owns, or that you access through an active subscription.
 
 Many settings for apps are recorded as objects that can be accessed, updated, or deleted using Microsoft Graph. In this article, you learn how to use Microsoft Graph to manage app and service principal objects including the properties, permissions, and role assignments.
 
@@ -20,10 +20,12 @@ Many settings for apps are recorded as objects that can be accessed, updated, or
 
 To complete this tutorial, you need the following resources and privileges:
 
-+ A working Azure AD tenant.
++ A working Microsoft Entra tenant.
 + Sign in to [Graph Explorer](https://aka.ms/ge) as a user with privileges allowed to create and manage applications in the tenant.
 
-## Register an application with Azure AD
+<a name='register-an-application-with-azure-ad'></a>
+
+## Register an application with Microsoft Entra ID
 
 The following request creates an app by specifying only the required **displayName** property.
 
@@ -77,7 +79,7 @@ Content-type: application/json
 
 ---
 
-The request returns a `201 Created` response with the application object in the response body. The application is assigned an **id** that's unique for apps in the tenant, and an **appId** that's globally unique in the Azure AD ecosystem.
+The request returns a `201 Created` response with the application object in the response body. The application is assigned an **id** that's unique for apps in the tenant, and an **appId** that's globally unique in the Microsoft Entra ecosystem.
 
 ## Create a service principal for an application
 

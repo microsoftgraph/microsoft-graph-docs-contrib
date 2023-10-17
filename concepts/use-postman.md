@@ -20,10 +20,10 @@ For details about how to use Postman, follow the steps in this article or watch 
 > [!VIDEO https://www.youtube-nocookie.com/embed/3RTHY3jScmA]
 
 > [!TIP]
-> The Microsoft Graph Postman collection is configured to authenticate with the global Azure AD service and access the global Microsoft Graph service (`graph.microsoft.com`). If you want to use the collection to connect to a [national cloud deployment](deployments.md), you must modify your fork of the collection.
+> The Microsoft Graph Postman collection is configured to authenticate with the global Microsoft Entra service and access the global Microsoft Graph service (`graph.microsoft.com`). If you want to use the collection to connect to a [national cloud deployment](deployments.md), you must modify your fork of the collection.
 >
 > - Update the request URL, replacing `graph.microsoft.com` with the Microsoft Graph service root endpoint for your national cloud.
-> - Update the **Auth URL** and **Access Token URL** values on the **Authorization** tab of the **Delegated** and **Application** folders, replacing `login.microsoftonline.com` with the Azure AD endpoint for your national cloud.
+> - Update the **Auth URL** and **Access Token URL** values on the **Authorization** tab of the **Delegated** and **Application** folders, replacing `login.microsoftonline.com` with the Microsoft Entra endpoint for your national cloud.
 > - Update the **Scope** value on the **Authorization** tab of the **Delegated** and **Application** folders, replacing `graph.microsoft.com` with the Microsoft Graph service root endpoint for your national cloud.
 
 ## Step 1: Fork the Microsoft Graph Postman collection
@@ -44,9 +44,11 @@ To use this particular Postman collection in your web browser, download the [Pos
 
 You don't need the agent if you're using the Postman for Windows app. If you open Postman for Windows, you see this forked collection in your workspace.
 
-## Step 3: Create an Azure AD application
+<a name='step-3-create-an-azure-ad-application'></a>
 
-To use this collection in your own developer tenant, create an Azure Active Directory (Azure AD) application and give it the appropriate permissions for the requests that you want to call. If you don't have a developer tenant, you can sign up for one through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
+## Step 3: Create a Microsoft Entra application
+
+To use this collection in your own developer tenant, create a Microsoft Entra application and give it the appropriate permissions for the requests that you want to call. If you don't have a developer tenant, you can sign up for one through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program).
 
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
 1. Expand the **Identity** menu > select **Applications** > **App registrations** > **New registration**.
@@ -64,7 +66,7 @@ To use this collection in your own developer tenant, create an Azure Active Dire
 1. On the left menu, select **Certificates and secrets**.
 1. Select **New client secret**, enter a description, and then select **Add**. Hover over the new client secret **Value** and copy it; you'll need this in step 4.
 
-The application now has two permissions configured. `Mail.Read` is added as a delegated permission, which is a permission that requires a signed-in user. The application can read mail on behalf of the user. `User.Read.All` is added as an application permission, which is a permission that does not require a signed-in user. The application can read users in Azure AD.
+The application now has two permissions configured. `Mail.Read` is added as a delegated permission, which is a permission that requires a signed-in user. The application can read mail on behalf of the user. `User.Read.All` is added as an application permission, which is a permission that does not require a signed-in user. The application can read users in Microsoft Entra ID.
 
 ## Step 4: Configure authentication
 
