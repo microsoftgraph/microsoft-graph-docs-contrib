@@ -37,7 +37,7 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 |comments|[microsoft.graph.security.alertComment](security-alertComment.md) collection|Array of comments created by the Security Operations (SecOps) team during the alert management process.|
 |createdDateTime|DateTimeOffset|Time when Microsoft 365 Defender created the alert.|
 |description|String|String value describing each alert.|
-|detectionSource|[microsoft.graph.security.detectionSource](#detectionsource-values)|Detection technology or sensor that identified the notable component or activity. Possible values are: `unknown`, `microsoftDefenderForEndpoint`, `antivirus`, `smartScreen`, `customTi`, `microsoftDefenderForOffice365`, `automatedInvestigation`, `microsoftThreatExperts`, `customDetection`, `microsoftDefenderForIdentity`, `cloudAppSecurity`, `microsoft365Defender`, `azureAdIdentityProtection`, `manual`, `microsoftDataLossPrevention`, `appGovernancePolicy`, `appGovernanceDetection`, `unknownFutureValue`, `microsoftDefenderForCloud`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `microsoftDefenderForCloud`.|
+|detectionSource|[microsoft.graph.security.detectionSource](#detectionsource-values)|Detection technology or sensor that identified the notable component or activity. Possible values are: `unknown`, `microsoftDefenderForEndpoint`, `antivirus`, `smartScreen`, `customTi`, `microsoftDefenderForOffice365`, `automatedInvestigation`, `microsoftThreatExperts`, `customDetection`, `microsoftDefenderForIdentity`, `cloudAppSecurity`, `microsoft365Defender`, `azureAdIdentityProtection`, `manual`, `microsoftDataLossPrevention`, `appGovernancePolicy`, `appGovernanceDetection`, `unknownFutureValue`, `microsoftDefenderForCloud`, `microsoftDefenderForIoT`, `microsoftDefenderForServers`, `microsoftDefenderForStorage`, `microsoftDefenderForDNS`, `microsoftDefenderForDatabases`, `microsoftDefenderForContainers`, `microsoftDefenderForNetwork`, `microsoftDefenderForAppService`, `microsoftDefenderForKeyVault`, `microsoftDefenderForResourceManager`, `microsoftDefenderForApiManagement`. You must use the `Prefer: include-unknown-enum-members` request header to get the following value(s) in this [evolvable enum](/graph/best-practices-concept#handling-future-members-in-evolvable-enumerations): `microsoftDefenderForCloud`, `microsoftDefenderForIoT`, `microsoftDefenderForServers`, `microsoftDefenderForStorage`, `microsoftDefenderForDNS`, `microsoftDefenderForDatabases`, `microsoftDefenderForContainers`, `microsoftDefenderForNetwork`, `microsoftDefenderForAppService`, `microsoftDefenderForKeyVault`, `microsoftDefenderForResourceManager`, `microsoftDefenderForApiManagement`.|
 |detectorId|String|The ID of the detector that triggered the alert.|
 |determination|[microsoft.graph.security.alertDetermination](#alertdetermination-values)|Specifies the result of the investigation, whether the alert represents a true attack and if so, the nature of the attack. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |evidence|[microsoft.graph.security.alertEvidence](security-alertEvidence.md) collection|Collection of evidence related to the alert.|
@@ -132,28 +132,38 @@ When detecting a threat, a security provider creates an alert in the system. Mic
 
 ### detectionSource values 
 
-| Value                        | Description                                    |
-| :----------------------------| :----------------------------------------------|
-| unknown                        | Unknown detection source.                                    |
-| microsoftDefenderForEndpoint   | Microsoft Defender For Endpoint.                             |
-| antivirus                      | Antivirus software.                                          |
-| smartScreen                    | Microsoft Defender SmartScreen.                              |
-| customTi                       | Custom threat intelligence.                                  |
-| microsoftDefenderForOffice365  | Microsoft Defender for Office 365.                           |
-| automatedInvestigation         | Automated investigation.                                     |
-| microsoftThreatExperts         | Microsoft Threat Experts.                                    |
-| customDetection                | Custom detection.                                            |
-| microsoftDefenderForIdentity   | Microsoft Defender for Identity.                             |
-| cloudAppSecurity               | Cloud app security.                                          |
-| microsoft365Defender           | Microsoft 365 Defender.                                      |
-| azureAdIdentityProtection      | Azure Active Directory Identity Protection.                  |
-| manual                         | Manual detection.                                            |
-| microsoftDataLossPrevention    | Microsoft Purview Data Loss Prevention.                      |
-| appGovernancePolicy            | App governance policy.                                       |
-| appGovernanceDetection         | App governance detection.                                    |
-| unknownFutureValue             | Evolvable enumeration sentinel value. Don't use.            |
-| microsoftDefenderForCloud      | Microsoft Defender for Cloud.                                |
-
+| Value                                   | Description                                                  |
+| :---------------------------------------| :------------------------------------------------------------|
+| unknown                                 | Unknown detection source.                                    |
+| microsoftDefenderForEndpoint            | Microsoft Defender For Endpoint.                             |
+| antivirus                               | Antivirus software.                                          |
+| smartScreen                             | Microsoft Defender SmartScreen.                              |
+| customTi                                | Custom threat intelligence.                                  |
+| microsoftDefenderForOffice365           | Microsoft Defender for Office 365.                           |
+| automatedInvestigation                  | Automated investigation.                                     |
+| microsoftThreatExperts                  | Microsoft Threat Experts.                                    |
+| customDetection                         | Custom detection.                                            |
+| microsoftDefenderForIdentity            | Microsoft Defender for Identity.                             |
+| cloudAppSecurity                        | Cloud app security.                                          |
+| microsoft365Defender                    | Microsoft 365 Defender.                                      |
+| azureAdIdentityProtection               | Azure Active Directory Identity Protection.                  |
+| manual                                  | Manual detection.                                            |
+| microsoftDataLossPrevention             | Microsoft Purview Data Loss Prevention.                      |
+| appGovernancePolicy                     | App governance policy.                                       |
+| appGovernanceDetection                  | App governance detection.                                    |
+| unknownFutureValue                      | Evolvable enumeration sentinel value. Don't use.             |
+| microsoftDefenderForCloud               | Microsoft Defender for Cloud.                                |
+| microsoftDefenderForIoT                 | Microsoft Defender for IoT.                                  |
+| microsoftDefenderForServers             | Microsoft Defender for Servers.                              |
+| microsoftDefenderForStorage             | Microsoft Defender for Storage.                              |
+| microsoftDefenderForDNS                 | Microsoft Defender for DNS.                                  |
+| microsoftDefenderForDatabases           | Microsoft Defender for Databases.                            |
+| microsoftDefenderForContainers          | Microsoft Defender for Containers.                           |
+| microsoftDefenderForNetwork             | Microsoft Defender for Network.                              |
+| microsoftDefenderForAppService          | Microsoft Defender for App Service.                          |
+| microsoftDefenderForKeyVault            | Microsoft Defender for Key Vault.                            |
+| microsoftDefenderForResourceManager     | Microsoft Defender for Resource Manager.                     |
+| microsoftDefenderForApiManagement       | Microsoft Defender for Api Management.                       |
 
 ## Relationships
 None.
