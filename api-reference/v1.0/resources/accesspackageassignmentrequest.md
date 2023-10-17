@@ -11,7 +11,7 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 
-In [Azure AD Entitlement Management](entitlementmanagement-overview.md), an access package assignment request is created by or on behalf of a user who wants to obtain an access package assignment. If the request is successful, with any necessary approvals, the user receives an access package assignment, and is the subject of that resulting access package assignment.  Azure AD also creates access package assignment requests automatically for tracking access removal.
+In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), an access package assignment request is created by or on behalf of a user who wants to obtain an access package assignment. If the request is successful, with any necessary approvals, the user receives an access package assignment, and is the subject of that resulting access package assignment.  Microsoft Entra ID also creates access package assignment requests automatically for tracking access removal.
 
 ## Methods
 |Method|Return type|Description|
@@ -73,5 +73,3 @@ Here's a JSON representation of the resource.
 
 }
 ```
-
-
