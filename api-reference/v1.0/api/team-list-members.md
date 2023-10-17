@@ -155,9 +155,11 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Find members of a team by their Azure AD user object ID
+<a name='example-2-find-members-of-a-team-by-their-azure-ad-user-object-id'></a>
 
-The following example shows a request to find the membership resources based on `id` of the [Azure AD user](../resources/user.md) associated with the [aadUserConversationMember](../resources/aaduserconversationmember.md).
+### Example 2: Find members of a team by their Microsoft Entra user object ID
+
+The following example shows a request to find the membership resources based on `id` of the [Microsoft Entra user](../resources/user.md) associated with the [aadUserConversationMember](../resources/aaduserconversationmember.md).
 
 #### Request
 
