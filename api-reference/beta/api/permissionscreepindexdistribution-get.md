@@ -1,9 +1,9 @@
 ---
 title: "Get permissionsCreepIndexDistribution"
 description: "Read the properties and relationships of a permissionsCreepIndexDistribution object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/permissionsAnalytics/aws/permissionsCreepIndexDistributions/{permissionsCreepIndexDistributionId}
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/permissionsCreepIndexDistributions/{permissionsCreepIndexDistributionId}
 ```
 
 ## Optional query parameters
@@ -73,23 +73,34 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
-
+Content-type: application/json
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.permissionsCreepIndexDistribution",
-    "id": "cce5bd87-ac4c-20f5-8205-50a2c6e4fcaf",
-    "createdDateTime": "String (timestamp)",
-    "lowRiskProfile": {
-      "@odata.type": "microsoft.graph.riskProfile"
-    },
-    "mediumRiskProfile": {
-      "@odata.type": "microsoft.graph.riskProfile"
-    },
-    "highRiskProfile": {
-      "@odata.type": "microsoft.graph.riskProfile"
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/azure/permissionsCreepIndexDistributions",
+  "value": [
+    {
+      "id": "10001-10002-10003",
+      "authorizationSystem": {
+        "@odata.type": "graph.azureAuthorizationSystem",
+        "id": "{Id}",
+        "authorizationSystemId": "6ea285d9-fe7e-49f6-a0ff-203c1a7ac225",
+        "authorizationSystemName": "Microsoft Azure Sponsorship 2",
+        "authorizationSystemType": "azure"   
+      },
+      "lowRiskProfile": {
+        "humanCount" : 16,
+        "nonHumanCount" : 539,
+      },
+      "mediumRiskProfile": {
+        "humanCount" : 0,
+        "nonHumanCount" : 0,
+      },
+      "highRiskProfile": {
+        "humanCount" : 0,
+        "nonHumanCount" : 6,
+      },
+      "createdDateTime ": "2020-10-11T20:11:45.6711Z"
     }
-  }
+  ]
 }
 ```
 
