@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Retrieve a list of the passwords registered to a user, represented by a [passwordAuthenticationMethod](../resources/passwordauthenticationmethod.md) object. This will return exactly one object, as a user can have exactly one password. For security, the password itself will never be returned in the object and the **password** property is always `null`.
+Retrieve a list of the passwords registered to a user, represented by a [passwordAuthenticationMethod](../resources/passwordauthenticationmethod.md) object. This API returns exactly one object, as a user can have exactly one password. For security, the password itself will never be returned in the object and the **password** property is always `null`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -55,7 +55,7 @@ GET /users/{id | userPrincipalName}/authentication/passwordMethods
 
 ## Optional query parameters
 
-This method does not support optional query parameters to customize the response.
+This method doesn't support optional query parameters to customize the response.
 
 ## Request headers
 
@@ -65,7 +65,7 @@ This method does not support optional query parameters to customize the response
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
