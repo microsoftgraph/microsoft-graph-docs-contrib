@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get the [language details](../resources/traininglanguagedetail.md) about an attack simulation training for a tenant.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -101,6 +103,6 @@ Content-Type: application/json
     "displayName": "Alex Waber"
   },
   "lastModifiedDateTime": "2021-10-07T12:23:18.8157586Z",
-  "isDefaultLanguage": "true"
+  "isDefaultLangauge": true
 }
 ```

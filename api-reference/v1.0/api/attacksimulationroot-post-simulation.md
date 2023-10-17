@@ -59,7 +59,7 @@ The following table shows the properties that are required when you create the s
 |includedAccountTarget|[accountTargetContent](../resources/accounttargetcontent.md)|Users targeted in the simulation.|
 |landingPage|[landingPage](../resources/landingpage.md)|The landing page associated with the attack simulation and training campaign.|
 |lastModifiedBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who most recently modified the attack simulation and training campaign.|
-|launchDateTime|DateTimeOffset|Date and time of the launch/start of the attack simulation and training campaign. Supports `$filter` and `$orderby`.|
+|launchDateTime|DateTimeOffset|Date and time of the launch/start of the attack simulation and training campaign. Supports `$filter` and `$orderby`. The timestamp represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |loginPage|[loginPage](../resources/loginpage.md)|The login page associated with the attack simulation and training campaign.|
 |oAuthConsentAppDetail|[oAuthConsentAppDetail](../resources/oauthconsentappdetail.md)|Details required for the `oAuthConsentGrant` technique.|
 |payload|[payload](../resources/payload.md)|The payload associated with the attack simulation and training campaign.|
@@ -75,7 +75,7 @@ If successful, this method returns a `202 Accepted` response code and a tracking
 
 ### Request
 
-The following is an example of the request.
+The following is an example of a request.
 
 <!-- {
   "blockType": "request",

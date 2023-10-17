@@ -2227,7 +2227,6 @@ Possible values for user account types (group membership), per Windows definitio
 | chunkFinished      |
 | unknownFutureValue |
 
-
 ### endUserNotificationPreference values
 
 |Member|
@@ -2333,7 +2332,6 @@ Possible values for user account types (group membership), per Windows definitio
 | month              |
 | unknownFutureValue |
 
-
 ### trainingSettingType values
 
 |Member|
@@ -2351,7 +2349,6 @@ Possible values for user account types (group membership), per Windows definitio
 |unknown|
 |phishing|
 |unknownFutureValue|
-
 
 ### payloadDeliveryPlatform values
 

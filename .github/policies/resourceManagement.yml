@@ -28,6 +28,7 @@ configuration:
           reply: >-
             This PR has been automatically marked as stale because it has been labeled "do not merge" but has not had any activity for **60 days**. It will be closed if no further activity occurs **within 7 days of this comment**.
 
+
             If you still intend to merge this pull request eventually, please add a comment to keep this open, and update the status labels accordingly.
     - description: Close pull requests with no recent activity label with no activity for 7 days
       frequencies:
@@ -99,12 +100,15 @@ configuration:
           label: blocked
       actions:
       - addReply:
-          reply: >
+          reply: >-
             Hello, @${issueAuthor}.
+
 
             Your PR has been in "Changes requested" state for more than 2 weeks.
 
+
             Please address the feedback left by your reviewer. Feel free to ping your reviewer on the side if you have any questions.
+
 
             Thank you!
     - description: Add reminder to pull requests with content review complete label with no activity for 14 days
@@ -195,11 +199,12 @@ configuration:
           label: ready for content review
       - isOpen
       - activitySenderHasAssociation:
-          association: MEMBER
+          association: COLLABORATOR
       then:
       - addReply:
           reply: >-
             Thank you for indicating that your pull request is ready for content review, @${issueAuthor}. It has been added to the **Content Review** project and an available reviewer will be assigned in the next 15 business days, depending on demand.
+
 
             Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow?anchor=content-review-process-summary).
     - description: Remove status labels and add reply when pull request is labeled with content review complete
@@ -209,7 +214,7 @@ configuration:
           label: content review complete
       - isOpen
       - activitySenderHasAssociation:
-          association: MEMBER
+          association: COLLABORATOR
       then:
       - removeLabel:
           label: ready for content review
@@ -221,7 +226,9 @@ configuration:
           reply: >-
             Thank you for your work in this PR, @${issueAuthor}.
 
+
             When the updates in this PR are ready for external customers to use, please replace the **do not merge** label with **ready to merge**.
+
 
             Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow?anchor=content-review-process-summary).
       - removeLabel:
@@ -233,15 +240,18 @@ configuration:
           label: changes requested
       - isOpen
       - activitySenderHasAssociation:
-          association: MEMBER
+          association: COLLABORATOR
       then:
       - addReply:
           reply: >-
             @${issueAuthor}, your content reviewer has requested changes to your pull request. Please review feedback and address accordingly as soon as possible to keep your pull request moving forward.
 
+
             Once you have addressed the feedback, please add the `review feedback addressed` label and select the **Re-request review** icon.
 
+
             If you cannot add labels, please add a comment with `#feedback-addressed` to the pull request.
+
 
             Check the content review workflow [here](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow?anchor=content-review-process-summary).
       - assignTo:
@@ -319,7 +329,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-teamwork.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-teamwork.html)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -340,7 +351,7 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-files.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-files.html)
 
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
@@ -362,7 +373,7 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-mail.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-mail.html)
 
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
@@ -384,7 +395,7 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-calendar.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-calendar.html)
 
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
@@ -406,7 +417,7 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-toolkit.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-toolkit.html)
 
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
@@ -428,7 +439,7 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-cloud-communications.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-cloud-communications.html)
 
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
@@ -450,7 +461,7 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-tasks-plans.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-tasks-plans.html)
 
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
@@ -472,7 +483,7 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-security.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-security.html)
 
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
@@ -494,7 +505,7 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-sites-lists.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-sites-lists.html)
 
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
@@ -516,7 +527,7 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-notes.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-notes.html)
 
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
@@ -538,7 +549,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-corporate-mgmt.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-corporate-mgmt.html)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -559,7 +571,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-users.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-users.html)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -580,7 +593,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-reports.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-reports.html)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -601,7 +615,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-insights.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-insights.html)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -622,7 +637,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-extensions.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-extensions.html)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -643,7 +659,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-change-notifications.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-change-notifications.html)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -664,7 +681,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-customer-booking.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-customer-booking.html)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -685,7 +703,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-people.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-people.html)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -706,7 +725,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-query-parameters.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-query-parameters.html)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -727,7 +747,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-workbooks.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-workbooks.html)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -748,7 +769,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-search.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-search.html)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -769,7 +791,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-todo.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-todo.html)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -790,7 +813,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-compliance.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-compliance.html)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -811,7 +835,7 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-corporate-mgmt.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-corporate-mgmt.html)
 
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
@@ -833,7 +857,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-authentication.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-authentication.html)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -854,7 +879,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-groups.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-groups.html)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -875,7 +901,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-identity.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-identity.html)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -896,7 +923,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-governance.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-governance.html)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -917,7 +945,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/products/graph)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/products/graph)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -938,7 +967,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-batching.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-batching.html)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -959,7 +989,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-notifications.html)
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-notifications.html)
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -980,7 +1011,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-education.html).
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-education.html).
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -1001,7 +1033,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-sdk.html).
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-sdk.html).
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
       - closeIssue
@@ -1022,7 +1055,8 @@ configuration:
       then:
       - addReply:
           reply: >-
-            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/topics/microsoft-graph-applications.html).
+            This issue will be closed because this forum is for documentation issues only. To report functionality issues or get help with your code, please visit [Microsoft Q&A](https://learn.microsoft.com/answers/topics/microsoft-graph-applications.html).
+
 
             If you have suggestions or feedback on Microsoft Graph, please visit [Microsoft Feedback](https://aka.ms/graphfeedback).
     - description: 'Add ready for content review label if author comments #sign-off'
@@ -1044,7 +1078,7 @@ configuration:
       - isAction:
           action: Opened
       - activitySenderHasAssociation:
-          association: MEMBER
+          association: COLLABORATOR
       - not:
           or:
             - hasLabel:
@@ -1071,16 +1105,23 @@ configuration:
       - addReply:
           reply: >-
             > [!NOTE]
+
             > The following guidance is for Microsoft employees only. Community contributors can ignore this message; our content team will manage the status.
+
 
             Thanks for your pull request, ${issueAuthor}! I've added the **do not merge** label as a default status.
 
+
             Please add the **ready for content review** label to start a review. Your PR won't be reviewed until you add this label.
+
 
             After the content review is complete and the updates in this PR are ready for external customers to use, please replace the **do not merge** label with **ready to merge**.
 
+
             > [!NOTE]
+
             > Pull requests will not be merged until the **ready to merge** label is set.
+
 
             For details, see the [Content review process summary](https://dev.azure.com/msazure/One/_wiki/wikis/Microsoft%20Graph%20Partners/211773/Content-workflow).
 

@@ -29,7 +29,7 @@ Inherits from [entity](../resources/entity.md).
 |:---|:---|:---|
 |content|String|Language specific content for the training.|
 |createdBy|[emailIdentity](../resources/emailidentity.md)|Identity of the user who created the language details.|
-|createdDateTime|DateTimeOffset|Date and time when the language details were created.|
+|createdDateTime|DateTimeOffset|Date and time when the language details were created. The timestamp type represents date and time information using ISO 8601 format and is always in UTC. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|Description as defined by the user.|
 |displayName|String|Display name as defined by the user.|
 |id|String|Unique identifier of the **trainingLanguageDetail** object. Inherited from [entity](../resources/entity.md).|

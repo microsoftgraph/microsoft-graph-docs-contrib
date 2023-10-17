@@ -22,7 +22,7 @@ Inherits from [accountTargetContent](../resources/accounttargetcontent.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |accountTargetEmails|String collection|List of user emails targeted for an attack simulation training campaign.|
-|type|accountTargetContentType| The type of account target content contains targeted user email addresses. The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`. Inherited from [accountTargetContent](../resources/accounttargetcontent.md).|
+|type|[accountTargetContentType](../resources/accounttargetcontent.md#accounttargetcontenttype-values)| The type of account target content contains targeted user email addresses. The possible values are: `unknown`, `includeAll`, `addressBook`, `unknownFutureValue`. Inherited from [accountTargetContent](../resources/accounttargetcontent.md).|
 
 ## Relationships
 
@@ -40,12 +40,8 @@ The following is a JSON representation of the resource.
 ``` json
 {
     "@odata.type": "#microsoft.graph.security.addressBookAccountTargetContent",
-    "accountTargetEmails": [
-        "String"
-    ],
-    "type": {
-        "@odata.type": "microsoft.graph.accountTargetContentType"
-    }
+    "accountTargetEmails": ["String"],
+    "type": "String"
 }
 ```
 

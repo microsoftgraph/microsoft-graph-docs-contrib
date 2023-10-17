@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Set a presence status message for a user. An optional expiration date and time can be supplied.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 The following permission is required to call the API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

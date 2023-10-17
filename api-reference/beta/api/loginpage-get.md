@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get a [loginPage](../resources/loginpage.md) associated with an attack simulation campaign for a tenant. Login pages are shown to users in attack simulations that use _credential harvest_ and _link in attachment_ social engineering techniques.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
