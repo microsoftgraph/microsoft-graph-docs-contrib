@@ -104,7 +104,6 @@ DELETE /directory/certificateAuthorities/certificateBasedApplicationConfiguratio
 
 ---
 
-
 ### Response
 
 The following is an example of the response.

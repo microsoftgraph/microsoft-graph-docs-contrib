@@ -66,6 +66,7 @@ If successful, this method returns a `201 Created` response code and a [privileg
 The following request creates an assignment schedule request to assign a principal active membership to the specified group. The active membership expires after two hours.
 
 #### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_privilegedaccessgroupassignmentschedulerequest_from_v1_e1"
@@ -90,6 +91,40 @@ Content-Type: application/json
   "justification": "Assign active member access."
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-privilegedaccessgroupassignmentschedulerequest-from-v1-e1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-privilegedaccessgroupassignmentschedulerequest-from-v1-e1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-privilegedaccessgroupassignmentschedulerequest-from-v1-e1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-privilegedaccessgroupassignmentschedulerequest-from-v1-e1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-privilegedaccessgroupassignmentschedulerequest-from-v1-e1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-privilegedaccessgroupassignmentschedulerequest-from-v1-e1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-privilegedaccessgroupassignmentschedulerequest-from-v1-e1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-privilegedaccessgroupassignmentschedulerequest-from-v1-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response
@@ -144,6 +179,7 @@ Content-Type: application/json
 In the following request, a user identified by **principalId** `3cce9d87-3986-4f19-8335-7ed075408ca2` activates their *eligible membership* to a group managed by PIM identified by **groupId** `2b5ed229-4072-478d-9504-a047ebd4b07d`.
 
 #### Request
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_privilegedaccessgroupassignmentschedulerequest_from_v1_e2"
@@ -168,6 +204,40 @@ Content-Type: application/json
   "justification": "Activate assignment."
 }
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-privilegedaccessgroupassignmentschedulerequest-from-v1-e2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-privilegedaccessgroupassignmentschedulerequest-from-v1-e2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/create-privilegedaccessgroupassignmentschedulerequest-from-v1-e2-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-privilegedaccessgroupassignmentschedulerequest-from-v1-e2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-privilegedaccessgroupassignmentschedulerequest-from-v1-e2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/create-privilegedaccessgroupassignmentschedulerequest-from-v1-e2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-privilegedaccessgroupassignmentschedulerequest-from-v1-e2-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-privilegedaccessgroupassignmentschedulerequest-from-v1-e2-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 
 ### Response
