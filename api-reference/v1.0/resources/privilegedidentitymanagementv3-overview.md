@@ -1,6 +1,6 @@
 ---
-title: "Manage Azure AD role assignments using the privileged identity management (PIM) APIs"
-description: "Privileged Identity Management (PIM) is a feature of Azure AD Identity Governance that enables you to manage, control, and monitor access to important resources in your organization."
+title: "Manage Microsoft Entra role assignments using the privileged identity management (PIM) APIs"
+description: "Privileged Identity Management (PIM) is a feature of Microsoft Entra ID Governance that enables you to manage, control, and monitor access to important resources in your organization."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -8,16 +8,16 @@ doc_type: resourcePageType
 ms.date: 09/13/2023
 ---
 
-# Manage Azure AD role assignments using PIM APIs
+# Manage Microsoft Entra role assignments using PIM APIs
 
-Privileged Identity Management (PIM) is a feature of [Azure AD Identity Governance](#see-also) that enables you to manage, control, and monitor access to important resources in your organization. One method through which principals such as users, groups, and service principals (applications) are granted access to important resources is through assignment of [Azure AD roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+Privileged Identity Management (PIM) is a feature of [Microsoft Entra ID Governance](#see-also) that enables you to manage, control, and monitor access to important resources in your organization. One method through which principals such as users, groups, and service principals (applications) are granted access to important resources is through assignment of [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
-The PIM for Azure AD roles APIs allow you to govern privileged access and limit excessive access to Azure AD roles. This article introduces the governance capabilities of PIM for Azure AD roles APIs in Microsoft Graph.
+The PIM for Microsoft Entra roles APIs allow you to govern privileged access and limit excessive access to Microsoft Entra roles. This article introduces the governance capabilities of PIM for Microsoft Entra roles APIs in Microsoft Graph.
 
 > [!NOTE]
 > To manage Azure resource roles use the [Azure Resource Manager (ARM) APIs for PIM](/rest/api/authorization/privileged-role-eligibility-rest-sample).
 >
-> PIM APIs for managing security alerts for Azure AD roles are available on the `beta` endpoint only. For more information, see [Security alerts for Azure AD roles](/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta#security-alerts-for-azure-ad-roles&preserve-view=true).
+> PIM APIs for managing security alerts for Microsoft Entra roles are available on the `beta` endpoint only. For more information, see [Security alerts for Microsoft Entra roles](/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta#security-alerts-for-azure-ad-roles&preserve-view=true).
 
 ## PIM APIs for managing active role assignments
 
@@ -58,7 +58,7 @@ The following table lists scenarios for using PIM to manage role eligibilities a
 
 ## Role settings and PIM
 
-Each Azure AD role defines settings or rules. Such rules include whether multifactor authentication (MFA), justification, or approval is required to activate an eligible role, or whether you can create permanent assignments or eligibilities for principals to the role. These role-specific rules determine the settings you can apply while creating or managing role assignments and eligibilities through PIM.
+Each Microsoft Entra role defines settings or rules. Such rules include whether multifactor authentication (MFA), justification, or approval is required to activate an eligible role, or whether you can create permanent assignments or eligibilities for principals to the role. These role-specific rules determine the settings you can apply while creating or managing role assignments and eligibilities through PIM.
 
 In Microsoft Graph, these rules are managed through the [unifiedRoleManagementPolicy](unifiedrolemanagementpolicy.md) and the [unifiedRoleManagementPolicyAssignment](unifiedrolemanagementpolicyassignment.md) resource types and their related methods.
 
@@ -68,11 +68,11 @@ PIM allows you to configure various rules including:
 
 + Whether principals can be assigned permanent eligible assignments
 + The maximum duration allowed for a role activation and whether justification or approval is required to activate eligible roles
-+ The users who are allowed to approve activation requests for an Azure AD role
++ The users who are allowed to approve activation requests for a Microsoft Entra role
 + Whether MFA is required to both activate and enforce a role assignment
 + The principals who get notified of role activations
 
-The following table lists scenarios for using PIM to manage Azure AD rules and the APIs to call.
+The following table lists scenarios for using PIM to manage Microsoft Entra ID rules and the APIs to call.
 
 | Scenarios                                                                                                                                 | API                                                                                                      |
 |--------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -82,10 +82,10 @@ The following table lists scenarios for using PIM to manage Azure AD rules and t
 | Retrieve the rules defined for role management policy                                                                                     | [List rules](../api/unifiedrolemanagementpolicy-list-rules.md)                                           |
 | Retrieve a rule defined for a role management policy                                                                                      | [Get unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-get.md)                     |
 | Update a rule defined for a role management policy                                                                                        | [Update unifiedRoleManagementPolicyRule](../api/unifiedrolemanagementpolicyrule-update.md)                  |
-| Get the details of all role management policy assignments including the policies and rules or settings associated with the Azure AD roles | [List unifiedRoleManagementPolicyAssignments](../api/policyroot-list-rolemanagementpolicyassignments.md) |
-| Get the details of a role management policy assignment including the policy and rules or settings associated with the Azure AD role       | [Get unifiedRoleManagementPolicyAssignment](../api/unifiedrolemanagementpolicyassignment-get.md)         |
+| Get the details of all role management policy assignments including the policies and rules or settings associated with the Microsoft Entra roles | [List unifiedRoleManagementPolicyAssignments](../api/policyroot-list-rolemanagementpolicyassignments.md) |
+| Get the details of a role management policy assignment including the policy and rules or settings associated with the Microsoft Entra role       | [Get unifiedRoleManagementPolicyAssignment](../api/unifiedrolemanagementpolicyassignment-get.md)         |
 
-For more information about using Microsoft Graph to configure rules, see [Overview of rules for Azure AD roles in PIM APIs](/graph/identity-governance-pim-rules-overview). For examples of updating rules, see [Use PIM APIs to update Azure AD rules](/graph/how-to-pim-update-rules).
+For more information about using Microsoft Graph to configure rules, see [Overview of rules for Microsoft Entra roles in PIM APIs](/graph/identity-governance-pim-rules-overview). For examples of updating rules, see [Use PIM APIs to update Microsoft Entra ID rules](/graph/how-to-pim-update-rules).
 
 <!-- Start of: Link to ZT guidance: H2 section -->
 
@@ -112,12 +112,12 @@ The tenant where Privileged Identity Management is being used must have enough p
 
 ## See also
 
-+ [What is Azure AD Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
++ [What is Microsoft Entra Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure)
 + Learn more about role settings in PIM through the following articles:
-  + [Working with rules for Azure AD roles in PIM APIs](/graph/identity-governance-pim-rules-overview)
-  + [Use PIM APIs to update Azure AD rules](/graph/how-to-pim-update-rules)
+  + [Working with rules for Microsoft Entra roles in PIM APIs](/graph/identity-governance-pim-rules-overview)
+  + [Use PIM APIs to update Microsoft Entra ID rules](/graph/how-to-pim-update-rules)
 + Follow these tutorials to learn more about using PIM APIs
-  + [Tutorial: Use the Privileged Identity Management (PIM) API to assign Azure AD roles](/graph/tutorial-assign-azureadroles)
+  + [Tutorial: Use the Privileged Identity Management (PIM) API to assign Microsoft Entra roles](/graph/tutorial-assign-azureadroles)
 
 
 
