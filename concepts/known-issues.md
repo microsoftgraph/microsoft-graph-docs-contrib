@@ -24,7 +24,7 @@ Current limitations:
 - Some application properties (such as appRoles and addIns) won't be available until all changes are completed.
 - Only multitenant apps can be registered.
 - Updating apps is restricted to apps registered after the initial beta update.
-- Azure Active Directory users can register apps and add additional owners.
+- Microsoft Entra users can register apps and add additional owners.
 - Support for OpenID Connect and OAuth protocols.
 - Policy assignments to an application fail.
 - Operations on ownedObjects that require appId fail (For example, users/{id|userPrincipalName}/ownedObjects/{id}/...).
@@ -33,13 +33,13 @@ In development:
 
 - Ability to register single tenant apps.
 - Updates to servicePrincipal.
-- Migration of existing Azure AD apps to updated model.
+- Migration of existing Microsoft Entra apps to updated model.
 - Support for appRoles, pre-authorized clients, optional claims, group membership claims, and branding
 - Microsoft account (MSA) users can register apps.
 
 ### Azure AD v2.0 endpoint is not supported for CSP apps
 
-Cloud solution provider (CSP) apps must acquire tokens from the Azure AD (v1) endpoints to successfully call Microsoft Graph in their partner-managed customers. Currently, acquiring a token through the newer Azure AD v2.0 endpoint is not supported.
+Cloud solution provider (CSP) apps must acquire tokens from the Microsoft Entra ID (v1) endpoints to successfully call Microsoft Graph in their partner-managed customers. Currently, acquiring a token through the newer Azure AD v2.0 endpoint is not supported.
 
 ### Pre-consent for CSP apps doesn't work in some customer tenants
 
@@ -464,7 +464,7 @@ The Microsoft Teams client does not show the **View Meeting details**  menu for 
 
 ### Encode number (#) symbols in userPrincipalName
 
-The **userPrincipalName** of guest users added through Azure AD B2B often contains the number (#) character. Using `$filter` on a **userPrincipalName** that contains the # symbol, for example, `GET /users?$filter=userPrincipalName eq 'AdeleV_contoso.com#EXT#@fabrikam.com'`, returns a `400 Bad request` HTTP error response. To filter by the **userPrincipalName**, encode the # character using its UTF-8 equivalent (`%23`), for example, `GET /users?$filter=userPrincipalName eq 'AdeleV_contoso.com%23EXT%23@fabrikam.com'`.
+The **userPrincipalName** of guest users added through Microsoft Entra B2B often contains the number (#) character. Using `$filter` on a **userPrincipalName** that contains the # symbol, for example, `GET /users?$filter=userPrincipalName eq 'AdeleV_contoso.com#EXT#@fabrikam.com'`, returns a `400 Bad request` HTTP error response. To filter by the **userPrincipalName**, encode the # character using its UTF-8 equivalent (`%23`), for example, `GET /users?$filter=userPrincipalName eq 'AdeleV_contoso.com%23EXT%23@fabrikam.com'`.
 
 ### Access to user resources is delayed after creation
 
