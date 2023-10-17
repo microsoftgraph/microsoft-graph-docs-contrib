@@ -3,7 +3,7 @@ title: "reports: getDeviceUsageSummary"
 description: "Provide a summary on the onboarding and offboarding of the devices to the ZTNA client."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 

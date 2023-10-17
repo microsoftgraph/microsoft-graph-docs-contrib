@@ -3,7 +3,7 @@ title: "reports: transactionSummaries"
 description: "Provide a summary on the transaction level, with a breakdown on the traffic type."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "reports: getCrossTenantSummary"
 description: "Provide a summary on the cross tenant access patterns."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 

@@ -3,7 +3,7 @@ title: "reports: entitiesSummaries"
 description: "Provide a summary on the unique count of the entities that are calculated per traffic type."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 

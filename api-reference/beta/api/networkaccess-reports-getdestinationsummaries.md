@@ -3,7 +3,7 @@ title: "reports: getDestinationSummaries"
 description: "Provide a summary on the top destinations visited by different aggregations."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
