@@ -1,6 +1,6 @@
 ---
 title: "agreement resource type"
-description: "Represents a tenant's customizable terms of use agreement that is created and managed with Azure Active Directory (Azure AD)."
+description: "Represents a tenant's customizable terms of use agreement that is created and managed with Microsoft Entra ID."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
@@ -11,7 +11,7 @@ author: "AlexFilipin"
 
 Namespace: microsoft.graph
 
-Represents a tenant's customizable terms of use agreement that is created and managed with Azure Active Directory (Azure AD). You can use the following methods to create and manage the [Azure Active Directory Terms of Use feature](#see-also) according to your scenario.
+Represents a tenant's customizable terms of use agreement that is created and managed with Microsoft Entra ID. You can use the following methods to create and manage the [Microsoft Entra Terms of Use feature](#see-also) according to your scenario.
 
 ## Methods
 
@@ -33,7 +33,7 @@ Represents a tenant's customizable terms of use agreement that is created and ma
 |:-------------|:------------|:------------|
 |displayName|String|Display name of the agreement. The display name is used for internal tracking of the agreement but is not shown to end users who view the agreement. Supports `$filter` (`eq`).|
 |id|String| The identifier of the agreement. Read-only. Supports `$filter` (`eq`).|
-|isPerDeviceAcceptanceRequired|Boolean|Indicates whether end users are required to accept this agreement on every device that they access it from. The end user is required to register their device in Azure AD, if they haven't already done so. Supports `$filter` (`eq`).|
+|isPerDeviceAcceptanceRequired|Boolean|Indicates whether end users are required to accept this agreement on every device that they access it from. The end user is required to register their device in Microsoft Entra ID, if they haven't already done so. Supports `$filter` (`eq`).|
 |isViewingBeforeAcceptanceRequired|Boolean|Indicates whether the user has to expand the agreement before accepting. Supports `$filter` (`eq`).|
 |termsExpiration|[termsExpiration](termsexpiration.md)| Expiration schedule and frequency of agreement for all users. Supports `$filter` (`eq`).|
 |userReacceptRequiredFrequency|Duration|The duration after which the user must re-accept the terms of use. The value is represented in ISO 8601 format for durations. Supports `$filter` (`eq`).|
@@ -73,4 +73,4 @@ The following is a JSON representation of the resource.
 
 ## See also
 
-+ [Azure Active Directory Terms of Use](/azure/active-directory/conditional-access/terms-of-use) 
++ [Microsoft Entra Terms of Use](/azure/active-directory/conditional-access/terms-of-use) 
