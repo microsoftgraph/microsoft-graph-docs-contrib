@@ -1,6 +1,6 @@
 ---
 title: "cloudPcFrontLineServicePlan resource type"
-description: "Represents a servicePlan available for use by up to three users."
+description: "Represents a service plan that is available for use by up to three users."
 author: "Guoan-Tang"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a servicePlan that provides an allotment of three Cloud PCs for the admin to provision to up to three users, but can't be assigned to a specific user. This **servicePlan** enables the service to create a concept of a time-share across these provisioned users, where customers can deploy a larger number of users. Windows 365 enforces a limit on active users at a given time, effectively creating an innovative way to provide the personalized experience of a Cloud PC along with the improved economics of sharing.
+Represents a service plan that provides an allotment of three Cloud PCs for the admin to provision for up to three users, but can't be assigned to a specific user. This service plan enables the service to create a concept of a time-share across these provisioned users, where customers can deploy a larger number of users. Windows 365 enforces a limit on active users at a given time, effectively creating an innovative way to provide the personalized experience of a Cloud PC along with the improved economics of sharing.
 
 ## Methods
 
@@ -37,7 +37,7 @@ None.
 
 ## JSON representation
 
-Here's is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
