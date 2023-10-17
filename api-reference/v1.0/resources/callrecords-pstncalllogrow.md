@@ -45,7 +45,7 @@ Represents a row of data in the public switched telephone network (PSTN) call lo
 |usageCountryCode|String|Country code of the user. For details, see [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).|
 |userDisplayName|String|Display name of the user.|
 |userId|String|Calling user's ID in Graph. GUID. This and other user info will be null/empty for bot call types (ucap_in, ucap_out).|
-|userPrincipalName|String|The user principal name (sign-in name) in Azure Active Directory. This is usually the same as the user's SIP address, and can be same as the user's e-mail address.|
+|userPrincipalName|String|The user principal name (sign-in name) in Microsoft Entra ID. This is usually the same as the user's SIP address, and can be same as the user's e-mail address.|
 
 ## Relationships
 
@@ -90,5 +90,3 @@ The following is a JSON representation of the resource.
   "userPrincipalName": "String"
 }
 ```
-
-
