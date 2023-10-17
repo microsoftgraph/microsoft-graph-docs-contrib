@@ -22,7 +22,7 @@ Begin by creating a new .NET console project using the [.NET CLI](/dotnet/core/t
 
 ## Install dependencies
 
-Before moving on, add some additional dependencies that you will use later.
+Before moving on, add some additional dependencies that you use later.
 
 - [.NET configuration packages](/dotnet/core/extensions/configuration) to read application configuration from **appsettings.json**.
 - [Azure Identity client library for .NET](https://www.nuget.org/packages/Azure.Identity) to authenticate the user and acquire access tokens.
@@ -44,7 +44,7 @@ dotnet add package CsvHelper
 
 ## Load application settings
 
-In this section you'll add the details of your app registration to the project.
+In this section, you add the details of your app registration to the project.
 
 1. Add your client ID, tenant ID, and client secret to the [.NET Secret Manager](/aspnet/core/security/app-secrets). In your command-line interface, change the directory to the location of **PartsInventoryConnector.csproj** and run the following commands, replacing *&lt;client-id&gt;* with your client ID from your app registration, *&lt;tenant-id&gt;* with your tenant ID, and *&lt;client-secret&gt;* with your client secret.
 
@@ -61,13 +61,13 @@ In this section you'll add the details of your app registration to the project.
 
 ## Design the app
 
-In this section you will create a simple console-based menu.
+In this section you create a console-based menu.
 
 1. Open **./Program.cs** and replace its entire contents with the following code.
 
     :::code language="csharp" source="./snippets/PartsInventoryConnector/Program.cs" id="ProgramSnippet":::
 
-1. Add the following placeholder methods at the end of the file. You'll implement them in later steps.
+1. Add the following placeholder methods at the end of the file. You implement them in later steps.
 
     ```csharp
     void InitializeGraph(Settings settings)

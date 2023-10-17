@@ -165,6 +165,7 @@ None.
 | _Application.Read.All_ | Read applications | Allows the app to read applications and service principals on behalf of the signed-in user. | Yes |
 | _Application.ReadWrite.All_ | Read and write all apps |  Allows the app to create, read, update and delete applications and service principals on behalf of the signed-in user. | Yes |
 | _AppRoleAssignment.ReadWrite.All_ | Manage app permission grants and app role assignments | Allows the app to manage permission grants for application permissions to any API (including Microsoft Graph) and application assignments for any app, on behalf of the signed-in user. | Yes |
+| _DelegatedPermissionGrant.Read.All_ | Read all delegated permission grants | Allows the app to read all delegated permission grants, on behalf of the signed in user. | Yes |
 | _DelegatedPermissionGrant.ReadWrite.All_ | Manage delegated permission grants | Allows the app to manage delegated permission grants for any API (including Microsoft Graph), on behalf of the signed-in user. | Yes |
 
 #### Application permissions
@@ -175,6 +176,7 @@ None.
 | _Application.ReadWrite.All_ | Read and write all apps | Allows the calling app to create, and manage (read, update, update application secrets and delete) applications and service principals without a signed-in user.  Does not allow management of consent grants or application assignments to users or groups. | Yes |
 | _Application.ReadWrite.OwnedBy_ | Manage apps that this app creates or owns | Allows the calling app to create other applications and service principals, and fully manage those applications and service principals (read, update, update application secrets and delete), without a signed-in user.  It cannot update any applications that it is not an owner of. | Yes |
 | _AppRoleAssignment.ReadWrite.All_ | Manage app permission grants and app role assignments | Allows the app to manage permission grants for application permissions to any API (including Microsoft Graph) and application assignments for any app, without a signed-in user. | Yes |
+| _DelegatedPermissionGrant.Read.All_ | Read all delegated permission grants | Allows the app to read all delegated permission grants, without a signed-in user. | Yes |
 | _DelegatedPermissionGrant.ReadWrite.All_ | Manage all delegated permission grants | Allows the app to grant or revoke any delegated permission for any API (including Microsoft Graph), without a signed-in user. | Yes |
 
 ### Remarks
@@ -2058,14 +2060,14 @@ For an app with delegated permissions to read programs and program controls, the
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_RecordsManagement.Read.All_ |Read Records Management configuration, labels, and policies |Allows the application to read any data from Records Management, such as configuration, labels, and policies on behalf of the signed-in user. |Yes |
-|_RecordsManagement.ReadWrite.All_ | Read and write Records Management configuration, labels, and policies | Allow the application to create, update and delete any data from Records Management, such as configuration, labels, and policies on behalf of the signed-in user. |Yes |
+|_RecordsManagement.ReadWrite.All_ | Read and write Records Management configuration, labels, and policies | Allows the application to create, update and delete any data from Records Management, such as configuration, labels, and policies on behalf of the signed-in user. |Yes |
 
 #### Application permissions
 
 |   Permission    |  Display String   |  Description | Admin Consent Required |
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 |_RecordsManagement.Read.All_ |Read Records Management configuration, labels and policies |Allows the application to read any data from Records Management, such as configuration, labels, and policies without the signed in user. |Yes |
-|_RecordsManagement.ReadWrite.All_ | Read and write Records Management configuration, labels and policies |Allow the application to create, update and delete any data from Records Management, such as configuration, labels, and policies without the signed in user. |Yes |
+|_RecordsManagement.ReadWrite.All_ | Read and write Records Management configuration, labels and policies |Allows the application to create, update and delete any data from Records Management, such as configuration, labels, and policies without the signed in user. |Yes |
 
 ### Example usage
 
@@ -2889,6 +2891,25 @@ _ThreatIntelligence.Read.All_: List threat intelligence articles on behalf of th
 #### Application
 
 _ThreatIntelligence.Read.All_: Get host reputation information, without a signed-in user (`GET /security/threatIntelligence/hosts/contoso.com/reputation`)
+
+---
+
+## Trusted certificate authority configuration permissions
+
+#### Delegated permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_AppCertTrustConfiguration.Read.All_| Read all trusted certificate authorities| Allows the app to read configuration of trusted certificate authorities for applications on behalf of the signed-in user. | Yes | Yes |
+|_AppCertTrustConfiguration.ReadWrite.All_| Manage all trusted certificate authorities| Allows the app to read and write configuration of trusted certificate authorities for applications on behalf of the signed-in user. | Yes | Yes |
+
+#### Application permissions
+
+|   Permission    |  Display String   |  Description | Admin Consent Required | Microsoft Account supported |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+|_AppCertTrustConfiguration.Read.All_| Read all trusted certificate authorities| Allows the app to read configuration of trusted certificate authorities for applications, without a signed-in user. | Yes | Yes |
+|_AppCertTrustConfiguration.ReadWrite.All_| Manage all trusted certificate authorities| Allows the app to read and write configuration of trusted certificate authorities for applications, without a signed-in user. | Yes | Yes |
+
 
 ---
 

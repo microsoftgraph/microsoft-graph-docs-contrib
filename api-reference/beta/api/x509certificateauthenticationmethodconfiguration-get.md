@@ -135,6 +135,9 @@ Content-Type: application/json
         "x509CertificateAuthenticationDefaultMode": "x509CertificateSingleFactor",
         "rules": []
     },
+    "issuerHintsConfiguration": {
+        "state": "disabled"
+    },
     "includeTargets": [
         {
             "targetType": "group",

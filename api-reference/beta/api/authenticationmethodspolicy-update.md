@@ -73,6 +73,7 @@ Content-Type: application/json
   "registrationEnforcement": {
     "authenticationMethodsRegistrationCampaign": {
         "snoozeDurationInDays": 1,
+        "enforceRegistrationAfterAllowedSnoozes": true,
         "state": "enabled",
         "excludeTargets": [],
         "includeTargets": [
@@ -151,6 +152,7 @@ Content-Type: application/json
   "registrationEnforcement": {
     "authenticationMethodsRegistrationCampaign": {
       "snoozeDurationInDays": 1,
+      "nforceRegistrationAfterAllowedSnoozes": true,
       "state": "enabled",
       "excludeTargets": [],
       "includeTargets": [

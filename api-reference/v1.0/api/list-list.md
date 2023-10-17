@@ -1,12 +1,12 @@
 ---
 author: spgraph-docs-team
-title: List the SharePoint lists in a site
+title: Get lists in a site
 ms.localizationpriority: high
 ms.prod: "sharepoint"
 description: "Get the collection of lists for a site."
 doc_type: apiPageType
 ---
-# Enumerate lists in a site
+# Get lists in a site
 
 Namespace: microsoft.graph
 
