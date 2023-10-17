@@ -1,6 +1,6 @@
 ---
 title: "cloudPcReports: getRawRemoteConnectionReports "
-description: "Get a Cloud PC's raw real-time remote connection report without any calculation or aggregation, such as roundTripTime or available bandwidth, which are aggregated hourly from the raw event data."
+description: "Get the raw real-time remote connection report for a Cloud PC without any calculation or aggregation, such as roundTripTime or available bandwidth, which are aggregated hourly from the raw event data."
 author: "Gutentag0004"
 ms.localizationpriority: medium
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a Cloud PC's raw real-time remote connection report without any calculation, such as roundTripTime or available bandwidth, which are aggregated hourly from the raw event data.
+Get the raw real-time remote connection report for a Cloud PC without any calculation, such as roundTripTime or available bandwidth, which are aggregated hourly from the raw event data.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -63,7 +63,7 @@ If successful, this action returns a `200 OK` response code and a Stream in the 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -86,7 +86,7 @@ Content-length: 199
 
 ### Response
 
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
