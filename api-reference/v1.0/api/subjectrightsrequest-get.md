@@ -25,11 +25,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
+
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+GET /security/subjectRightsRequests/{subjectRightsRequestId}
 GET /privacy/subjectRightsRequests/{subjectRightsRequestId}
 ```
 
@@ -109,59 +112,73 @@ GET https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests/{subjectRight
 HTTP/1.1 200 OK
 Content-Type: application/json
 
+{
+  "type": "export",
+  "dataSubjectType": "customer",
+  "regulations": [
+    "GDPR"
+  ],
+  "displayName": "Export request for Monica Thompson",
+  "description": "This is a export request",
+  "status": "active",
+  "internalDueDateTime": "2022-06-20T22:42:28Z",
+  "lastModifiedDateTime": "2022-04-20T22:42:28Z",
+  "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
+  "createdDateTime": "2022-04-19T22:42:28Z",
+  "stages": [
     {
-    "type": "microsoft.graph.subjectRightsRequestType",
-    "dataSubjectType": "microsoft.graph.dataSubjectType",
-    "regulations": [
-        "String"
-    ],
-    "displayName": "String",
-    "description": "String",
-    "status": "active",
-    "internalDueDateTime": "String",
-    "lastModifiedDateTime": "String",
-    "id": "String",
-    "createdDateTime": "String",
-    "stages": [
-        {
-            "stage": "contentRetrieval",
-            "status": "notStarted",
-            "error": null
-        },
-        {
-            "stage": "contentReview",
-            "status": "notStarted",
-            "error": null
-        },
-        {
-            "stage": "generateReport",
-            "status": "notStarted",
-            "error": null
-        },
-        {
-            "stage": "caseResolved",
-            "status": "notStarted",
-            "error": null
-        }
-    ],
-    "createdBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+      "stage": "contentRetrieval",
+      "status": "notStarted",
+      "error": null
     },
-    "lastModifiedBy": {
-        "@odata.type": "microsoft.graph.identitySet"
+    {
+      "stage": "contentReview",
+      "status": "notStarted",
+      "error": null
     },
-    "dataSubject": {
-        "firstName": "String",
-        "lastName": "String",
-        "email": "String",
-        "residency": "String",
-        "phoneNumber": "String",
-        "SSN": "String"
+    {
+      "stage": "generateReport",
+      "status": "notStarted",
+      "error": null
     },
-    "team": {
-        "id": "String (identifier)",
-        "webUrl": "String"
+    {
+      "stage": "caseResolved",
+      "status": "notStarted",
+      "error": null
     }
+  ],
+  "createdBy": {
+    "user": {
+      "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+      "displayName": "srradmin@contoso.com"
+    }
+  },
+  "lastModifiedBy": {
+    "user": {
+      "id": "1B761ED2-AA7E-4D82-9CF5-C09D737B6167",
+      "displayName": "srradmin@contoso.com"
+    }
+  },
+  "dataSubject": {
+    "firstName": "Monica",
+    "lastName": "Thompson",
+    "email": "Monica.Thompson@contoso.com",
+    "residency": "USA",
+    "SSN": "123-456-7890"
+  },
+  "team": {
+    "id": "5484809c-fb5b-415a-afc6-da7ff601034e",
+    "webUrl": "https://teams.contoso.com/teams/teamid"
+  },
+  "includeAllVersions": false,
+  "pauseAfterEstimate": true,
+  "includeAuthoredContent": true,
+  "externalId": null,
+  "contentQuery": "(('Monica Thompson' OR 'Monica.Thompson@contoso.com') OR (participants=Monica.Thompson@contoso.com))",
+  "mailboxLocations": null,
+  "siteLocations": {
+    "@odata.type": "microsoft.graph.subjectRightsRequestAllSiteLocation"
+  }
 }
 ```
 
