@@ -20,21 +20,17 @@ This is an abstract type.
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List remoteNetworkHealthEvents](../api/networkaccess-logs-list-remotenetworks.md)|[microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) collection|Get a list of the [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) objects and their properties.|
-|[Create remoteNetworkHealthEvent](../api/networkaccess-logs-post-remotenetworks.md)|[microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md)|Create a new [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) object.|
-|[Get remoteNetworkHealthEvent](../api/networkaccess-remotenetworkhealthevent-get.md)|[microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) object.|
-|[Update remoteNetworkHealthEvent](../api/networkaccess-remotenetworkhealthevent-update.md)|[microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md)|Update the properties of a [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) object.|
-|[Delete remoteNetworkHealthEvent](../api/networkaccess-logs-delete-remotenetworks.md)|None|Delete a [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|bgpRoutesAdvertisedCount|Int32|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description**|
-|description|String|**TODO: Add Description**|
-|destinationIp|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description**|
-|remoteNetworkId|String|**TODO: Add Description**|
-|sourceIp|String|**TODO: Add Description**|
+|bgpRoutesAdvertisedCount|Int32|Count of BGP routes advertised through tunnel.|
+|createdDateTime|DateTimeOffset|Time of original event generation in UTC Client time generated.|
+|description|String|Description and summary of the event.|
+|destinationIp|String|The IP address of the destination.|
+|id|String|A unique identifier for each remoteNetworkHealthEvent.|
+|remoteNetworkId|String|A unique identifier for each remoteNetwork site.|
+|sourceIp|String|The public IP address.|
 
 ## Relationships
 None.

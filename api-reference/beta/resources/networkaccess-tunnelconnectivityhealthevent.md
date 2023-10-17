@@ -21,22 +21,19 @@ Inherits from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resour
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List tunnelConnectivityHealthEvents](../api/networkaccess-tunnelconnectivityhealthevent-list.md)|[microsoft.graph.networkaccess.tunnelConnectivityHealthEvent](../resources/networkaccess-tunnelconnectivityhealthevent.md) collection|Get a list of the [microsoft.graph.networkaccess.tunnelConnectivityHealthEvent](../resources/networkaccess-tunnelconnectivityhealthevent.md) objects and their properties.|
-|[Get tunnelConnectivityHealthEvent](../api/networkaccess-tunnelconnectivityhealthevent-get.md)|[microsoft.graph.networkaccess.tunnelConnectivityHealthEvent](../resources/networkaccess-tunnelconnectivityhealthevent.md)|Read the properties and relationships of a [microsoft.graph.networkaccess.tunnelConnectivityHealthEvent](../resources/networkaccess-tunnelconnectivityhealthevent.md) object.|
-|[Update tunnelConnectivityHealthEvent](../api/networkaccess-tunnelconnectivityhealthevent-update.md)|[microsoft.graph.networkaccess.tunnelConnectivityHealthEvent](../resources/networkaccess-tunnelconnectivityhealthevent.md)|Update the properties of a [microsoft.graph.networkaccess.tunnelConnectivityHealthEvent](../resources/networkaccess-tunnelconnectivityhealthevent.md) object.|
-|[Delete tunnelConnectivityHealthEvent](../api/networkaccess-tunnelconnectivityhealthevent-delete.md)|None|Delete a [microsoft.graph.networkaccess.tunnelConnectivityHealthEvent](../resources/networkaccess-tunnelconnectivityhealthevent.md) object.|
+|[List remoteNetworkHealthEvents](../api/networkaccess-logs-list-remotenetworks.md)|[microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) collection|Get a list of the [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|bgpRoutesAdvertisedCount|Int32|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
-|description|String|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
-|destinationIp|String|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
-|id|String|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
-|remoteNetworkId|String|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
-|sourceIp|String|**TODO: Add Description** Inherited from [microsoft.graph.networkaccess.remoteNetworkHealthEvent](../resources/networkaccess-remotenetworkhealthevent.md).|
-|status|microsoft.graph.networkaccess.tunnelConnectivityHealthStatus|**TODO: Add Description**.The possible values are: `tunnelDisconnected`, `tunnelConnected`, `unknownFutureValue`.|
+|bgpRoutesAdvertisedCount|Int32|Count of BGP routes advertised through tunnel.|
+|createdDateTime|DateTimeOffset|Time of original event generation in UTC Client time generated.|
+|description|String|Description and summary of the event.|
+|destinationIp|String|The IP address of the destination.|
+|id|String|A unique identifier for each remoteNetworkHealthEvent.|
+|remoteNetworkId|String|A unique identifier for each remoteNetwork site.|
+|sourceIp|String|The public IP address.|
+|status|microsoft.graph.networkaccess.tunnelConnectivityHealthStatus|Connection status .The possible values are: `tunnelDisconnected`, `tunnelConnected`|
 
 ## Relationships
 None.
