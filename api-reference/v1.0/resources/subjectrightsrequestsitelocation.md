@@ -11,8 +11,6 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents an abstract base type for the properties of a site location in a subject rights request.
 
 This abstract type is inherited by the following derived types:
