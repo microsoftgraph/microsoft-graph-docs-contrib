@@ -78,7 +78,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | audio                | [audio][]          | Audio metadata, if the item is an audio file. Read-only. Read-only. Only on OneDrive Personal.
 | bundle               | [bundle][]         | Bundle metadata, if the item is a bundle. Read-only.
 | content              | Stream             | The content stream, if the item represents a file.
-| createdBy            | [identitySet][]    | Identity of the user, device, and application which created the item. Read-only.
+| createdBy            | [identitySet][]    | Identity of the user, device, and application that created the item. Read-only.
 | createdDateTime      | DateTimeOffset     | Date and time of item creation. Read-only.
 | cTag                 | String             | An eTag for the content of the item. This eTag is not changed if only the metadata is changed. **Note** This property is not returned if the item is a folder. Read-only.
 | deleted              | [deleted][]        | Information about the deleted state of the item. Read-only.
@@ -89,7 +89,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | folder               | [folder][]         | Folder metadata, if the item is a folder. Read-only.
 | id                   | String             | The unique identifier of the item within the Drive. Read-only.
 | image                | [image][]          | Image metadata, if the item is an image. Read-only.
-| lastModifiedBy       | [identitySet][]    | Identity of the user, device, and application which last modified the item. Read-only.
+| lastModifiedBy       | [identitySet][]    | Identity of the user, device, and application that last modified the item. Read-only.
 | lastModifiedDateTime | DateTimeOffset     | Date and time the item was last modified. Read-only.
 | location             | [geoCoordinates][] | Location metadata, if the item has location data. Read-only.
 | malware              | [malware][]        | Malware metadata, if the item was detected to contain malware. Read-only.
@@ -134,7 +134,7 @@ The eTag value is only modified when the folder's properties are changed, except
 ## Instance Attributes
 
 Instance attributes are properties with special behaviors.
-These properties are temporary and either a) define behavior the service should perform or b) provide short-term property values, like a download URL for an item that expires.
+These properties are temporary and either define behavior the service should perform or provide short-term property values, like a download URL for an item that expires.
 
 | Property name                     | Type   | Description
 |:----------------------------------|:-------|:--------------------------------
