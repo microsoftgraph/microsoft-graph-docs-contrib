@@ -104,7 +104,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | name                 | String             | The name of the item (filename and extension). Read-write.
 | package              | [package][]        | If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some contexts and folders in others. Read-only.
 | parentReference      | [itemReference][]  | Parent information, if the item has a parent. Read-write.
-| pendingOperations    | [pendingOperations][] | If present, indicates that indicates that one or more operations that may affect the state of the driveItem are pending completion. Read-only.
+| pendingOperations    | [pendingOperations][] | If present, indicates that indicates that one or more operations that might affect the state of the driveItem are pending completion. Read-only.
 | photo                | [photo][]          | Photo metadata, if the item is a photo. Read-only.
 | publication          | [publicationFacet][] | Provides information about the published or checked-out state of an item, in locations that support such actions. This property isn't returned by default. Read-only. |
 | remoteItem           | [remoteItem][]     | Remote item data, if the item is shared from a drive other than the one being accessed. Read-only.
@@ -153,7 +153,7 @@ These properties are temporary and either define behavior the service should per
 
 **Note:** The @microsoft.graph.downloadUrl value is a short-lived URL and can't be cached.
 The URL is only available for a short period of time (1 hour) before it's invalidated.
-Removing file permissions for a user may not immediately invalidate the URL.
+Removing file permissions for a user might not immediately invalidate the URL.
 
 >**Note:** The parameter @microsoft.graph.conflictBehavior should be included in the URL instead of the body of the request.
 
