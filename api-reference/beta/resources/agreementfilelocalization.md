@@ -1,6 +1,6 @@
 ---
 title: "agreementFileLocalization resource type"
-description: "Represents localized policy files for terms of use agreements in Azure Active Directory (Azure AD). It contains metadata about the agreement file (for example, the name, the language, and whether it's the default file)."
+description: "Represents localized policy files for terms of use agreements in Microsoft Entra ID. It contains metadata about the agreement file (for example, the name, the language, and whether it's the default file)."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a customizable term-of-use agreement file that a tenant manages with Azure Active Directory (Azure AD). It contains metadata about the agreement file (for example, the name, the language, and whether it's the default file).
+Represents a customizable term-of-use agreement file that a tenant manages with Microsoft Entra ID. It contains metadata about the agreement file (for example, the name, the language, and whether it's the default file).
 
 Inherits from [agreementFileProperties](agreementfileproperties.md).
 
@@ -41,7 +41,7 @@ Inherits from [agreementFileProperties](agreementfileproperties.md).
 ## Relationships
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|versions|[agreementFileVersion](agreementfileversion.md) collection|Read-only. Customized versions of the terms of use agreement in the Azure AD tenant.|
+|versions|[agreementFileVersion](agreementfileversion.md) collection|Read-only. Customized versions of the terms of use agreement in the Microsoft Entra tenant.|
 
 
 ## JSON representation
