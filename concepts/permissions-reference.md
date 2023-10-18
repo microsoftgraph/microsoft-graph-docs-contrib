@@ -1076,7 +1076,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _Files.Read.All_ | Read all files that user can access | Allows the app to read all files the signed-in user can access. | No | Yes |
 | _Files.ReadWrite_  | Have full access to user files | Allows the app to read, create, update, and delete the signed-in user's files. | No| Yes |
 | _Files.ReadWrite.All_ | Have full access to all files user can access | Allows the app to read, create, update, and delete all files the signed-in user can access. | No | Yes |
-| _Files.ReadWrite.AppFolder_ | Have full access to the application's folder (preview) | (Preview) Allows the app to read, create, update, and delete files in the application's folder. | No | Yes |
+| _Files.ReadWrite.AppFolder_ | Have full access to the application's folder | Allows the app to read, create, update, and delete files in the application's folder. | No | Yes |
 | _Files.Read.Selected_  | Read files that the user selects | **Limited support in Microsoft Graph; see Remarks** <br/> (Preview) Allows the app to read files that the user selects. The app has access for several hours after the user selects a file.  | No | No |
 | _Files.ReadWrite.Selected_ | Read and write files that the user selects | **Limited support in Microsoft Graph; see Remarks** <br/> (Preview) Allows the app to read and write files that the user selects. The app has access for several hours after the user selects a file. | No | No |
 
@@ -1086,6 +1086,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | :--------- | :------------- | :---------- | :--------------------- |
 | _Files.Read.All_ | Read files in all site collections | Allows the app to read all files in all site collections without a signed in user.  | Yes |
 | _Files.ReadWrite.All_ | Read and write files in all site collections | Allows the app to read, create, update, and delete all files in all site collections without a signed in user. | Yes |
+| _Files.ReadWrite.AppFolder_ | Have full access to the application's folder without a user present | Allows the app to read, create, update, and delete files in the application's folder. | Yes |
 
 ### Remarks
 
@@ -1093,8 +1094,6 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 
 The Files.Read.Selected and Files.ReadWrite.Selected delegated permissions are only valid on work or school accounts and are only exposed for working with [Office 365 file handlers (v1.0)](/previous-versions/office/office-365-api/).
 They should not be used for directly calling Microsoft Graph APIs.
-
-The Files.ReadWrite.AppFolder delegated permission is only valid for personal accounts and is used for accessing the [App Root special folder](https://dev.onedrive.com/misc/appfolder.htm) with the OneDrive [Get special folder](/graph/api/drive-get-specialfolder) Microsoft Graph API.
 
 
 ### Example usage
