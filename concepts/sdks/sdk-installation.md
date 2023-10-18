@@ -124,7 +124,7 @@ The [Microsoft Graph PHP SDK](https://github.com/microsoftgraph/msgraph-sdk-php)
     ```json
     {
         "require": {
-            "microsoft/microsoft-graph": "^1.8"
+            "microsoft/microsoft-graph": "^2.0.0"
         }
     }
     ```

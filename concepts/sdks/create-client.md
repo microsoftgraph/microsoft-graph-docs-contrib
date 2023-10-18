@@ -28,29 +28,18 @@ The following code examples show how to create an instance of a Microsoft Graph 
 # [PHP](#tab/php)
 
 ```php
-// PHP client currently doesn't have an authentication provider. You will need to handle
-// getting an access token. The following example demonstrates the client credential
-// OAuth flow and assumes that an administrator has consented to the application.
-$guzzle = new \GuzzleHttp\Client();
-$url = 'https://login.microsoftonline.com/' . $tenantId . '/oauth2/token?api-version=1.0';
-$token = json_decode($guzzle->post($url, [
-    'form_params' => [
-        'client_id' => $clientId,
-        'client_secret' => $clientSecret,
-        'resource' => 'https://graph.microsoft.com/',
-        'grant_type' => 'client_credentials',
-    ],
-])->getBody()->getContents());
-$accessToken = $token->access_token;
+<?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Kiota\Abstractions\ApiException;
+use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
 
-// Create a new Graph client.
-$graph = new Graph();
-$graph->setAccessToken($accessToken);
+$tokenRequestContext = new ClientCredentialContext(
+    'tenantID',
+    'clientID',
+    'clientSecret'
+);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext);
 
-// Make a call to /me Graph resource.
-$user = $graph->createRequest("GET", "/me")
-              ->setReturnType(Model\User::class)
-              ->execute();
 ```
 
 # [Python](#tab/python)
