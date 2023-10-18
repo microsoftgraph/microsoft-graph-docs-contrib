@@ -1473,6 +1473,202 @@
       "CreatedDateTime": "2023-08-03T07:42:28.4357385Z",
       "WorkloadArea": "Security",
       "SubArea": "Alerts and incidents"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1ab6bfa0-5fd2-4d51-9834-a8cfc0ba637c",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForIoT",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForIoT` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "1ab6bfa0-5fd2-4d51-9834-a8cfc0ba637c",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForServers",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForServers` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "1ab6bfa0-5fd2-4d51-9834-a8cfc0ba637c",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForStorage",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForStorage` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "1ab6bfa0-5fd2-4d51-9834-a8cfc0ba637c",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForDNS",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForDNS` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "1ab6bfa0-5fd2-4d51-9834-a8cfc0ba637c",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForDatabases",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForDatabases` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "1ab6bfa0-5fd2-4d51-9834-a8cfc0ba637c",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForContainers",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForContainers` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "1ab6bfa0-5fd2-4d51-9834-a8cfc0ba637c",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForNetwork",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForNetwork` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "1ab6bfa0-5fd2-4d51-9834-a8cfc0ba637c",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForAppService",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForAppService` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "1ab6bfa0-5fd2-4d51-9834-a8cfc0ba637c",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForKeyVault",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForKeyVault` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "1ab6bfa0-5fd2-4d51-9834-a8cfc0ba637c",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForResourceManager",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForResourceManager` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "1ab6bfa0-5fd2-4d51-9834-a8cfc0ba637c",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForApiManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForApiManagement` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        }
+      ],
+      "Id": "1ab6bfa0-5fd2-4d51-9834-a8cfc0ba637c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-10-18T08:39:06.2660971Z",
+      "WorkloadArea": "Microsoft.M365.Defender",
+      "SubArea": "Alerts and incidents"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2ffb1cd0-70b3-4e55-b5f2-b7e6c7d62dc2",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForIoT",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForIoT` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "2ffb1cd0-70b3-4e55-b5f2-b7e6c7d62dc2",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForServers",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForServers` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "2ffb1cd0-70b3-4e55-b5f2-b7e6c7d62dc2",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForStorage",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForStorage` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "2ffb1cd0-70b3-4e55-b5f2-b7e6c7d62dc2",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForDNS",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForDNS` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "2ffb1cd0-70b3-4e55-b5f2-b7e6c7d62dc2",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForDatabases",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForDatabases` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "2ffb1cd0-70b3-4e55-b5f2-b7e6c7d62dc2",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForContainers",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForContainers` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "2ffb1cd0-70b3-4e55-b5f2-b7e6c7d62dc2",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForNetwork",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForNetwork` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "2ffb1cd0-70b3-4e55-b5f2-b7e6c7d62dc2",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForAppService",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForAppService` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "2ffb1cd0-70b3-4e55-b5f2-b7e6c7d62dc2",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForKeyVault",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForKeyVault` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "2ffb1cd0-70b3-4e55-b5f2-b7e6c7d62dc2",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForResourceManager",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForResourceManager` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        },
+        {
+          "Id": "2ffb1cd0-70b3-4e55-b5f2-b7e6c7d62dc2",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftDefenderForApiManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftDefenderForApiManagement` member to the **detectionSource** enumeration.",
+          "Target": "detectionSource"
+        }
+      ],
+      "Id": "2ffb1cd0-70b3-4e55-b5f2-b7e6c7d62dc2",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-10-18T08:39:06.2667542Z",
+      "WorkloadArea": "Microsoft.M365.Defender",
+      "SubArea": "Alerts and incidents"
     }
   ]
 }
