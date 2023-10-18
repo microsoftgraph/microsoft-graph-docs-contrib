@@ -1,6 +1,6 @@
 ---
 title: "targetDeviceGroup resource type"
-description: "This represents the targetDeviceGroup configured for the remoteDesktopSecurityConfiguration object on the servicePrincipal."
+description: "Represents the group of devices configured for the remoteDesktopSecurityConfiguration object on the servicePrincipal."
 author: "SanDeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-This configuration represents the targetDeviceGroup for the remoteDesktopSecurityConfiguration object on the servicePrincipal. This configuration enables SSO using the RDS Entra ID authentication protocol when a user authenticates over RDP to a Microsoft Entra joined or Microsoft Entra hybrid joined devices that are member of the targetDeviceGroup.
+Represents the group of devices configured for the remoteDesktopSecurityConfiguration object on the servicePrincipal. This configuration enables SSO using the Microsoft Entra ID [Remote Desktop Services (RDS) authentication protocol](/openspecs/windows_protocols/ms-rdpbcgr/dc43f040-d75d-49a9-90c6-0c9999281136), when Microsoft Entra ID authenticates a user to a [joined](/azure/active-directory/devices/concept-directory-join) or [hybrid joined](/azure/active-directory/devices/concept-hybrid-join) device that is a member of the targetDeviceGroup.  
 
 Inherits from [entity](../resources/entity.md).
 
@@ -27,14 +27,14 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display name for the target device group|
-|id|String|Object id of the group in the directory. Inherited from [entity](../resources/entity.md).|
+|displayName|String|Display name for the target device group.|
+|id|String|Object identifier of the [group](../resources/group.md). Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
