@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|LifecycleWorkflows.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|LifecycleWorkflows.ReadWrite.All (See note below for least privileged)|
+|Application|LifecycleWorkflows.ReadWrite.All|
 
 [!INCLUDE [rbac-lifecycle-workflows-apis-write](../includes/rbac-for-apis/rbac-lifecycle-workflows-apis-write.md)].
 

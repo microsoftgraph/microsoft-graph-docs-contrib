@@ -1,6 +1,6 @@
 ---
 title: "Create accessReview (deprecated)"
-description: "In the Azure AD access reviews feature, create a new accessReview object."
+description: "In the Microsoft Entra access reviews feature, create a new accessReview object."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
 ms.prod: "governance"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [accessReview](../resources/accessreview.md) object.
+In the Microsoft Entra [access reviews](../resources/accessreviews-root.md) feature, create a new [accessReview](../resources/accessreview.md) object.
 
 Before making this request, the caller must have previously [retrieved the list of business flow templates](businessflowtemplate-list.md), to have the value of **businessFlowTemplateId** to include in the request.
 
@@ -199,5 +199,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

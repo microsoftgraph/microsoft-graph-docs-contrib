@@ -10,7 +10,7 @@ doc_type: "apiPageType"
 # accessPackageAssignment: additionalAccess
 Namespace: microsoft.graph
 
-In [Azure AD Entitlement Management](../resources/entitlementmanagement-overview.md), retrieve a collection of [accessPackageAssignment](../resources/accesspackageassignment.md) objects that indicate a target user has an assignment to a specified access package and also an assignment to another, potentially incompatible, access package.  This can be used to prepare to configure the incompatible access packages for a specific access package.
+In [Microsoft Entra Entitlement Management](../resources/entitlementmanagement-overview.md), retrieve a collection of [accessPackageAssignment](../resources/accesspackageassignment.md) objects that indicate a target user has an assignment to a specified access package and also an assignment to another, potentially incompatible, access package.  This can be used to prepare to configure the incompatible access packages for a specific access package.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -147,4 +147,3 @@ Content-Type: application/json
 }
 
 ```
-
