@@ -38,7 +38,7 @@ DELETE /security/labels/retentionLabels/{retentionLabelId}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -47,7 +47,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-
+Here's an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -60,6 +60,7 @@ DELETE https://graph.microsoft.com/v1.0/security/labels/retentionLabels/9563a605
 
 
 ### Response
+Here's an example of the response.
 >
 <!-- {
   "blockType": "response",
