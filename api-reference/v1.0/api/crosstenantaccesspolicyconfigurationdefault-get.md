@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Read the [default configuration](../resources/crosstenantaccesspolicyconfigurationdefault.md) of a cross-tenant access policy. This default configuration may be the service default assigned by Azure AD (**isServiceDefault** is `true`) or may be customized in your tenant (**isServiceDefault** is `false`).
+Read the [default configuration](../resources/crosstenantaccesspolicyconfigurationdefault.md) of a cross-tenant access policy. This default configuration may be the service default assigned by Microsoft Entra ID (**isServiceDefault** is `true`) or may be customized in your tenant (**isServiceDefault** is `false`).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/default
 
 ### Response
 
-The following response object shows a default cross-tenant policy inherited from Azure AD, as identified by **isServiceDefault** set to `true`.
+The following response object shows a default cross-tenant policy inherited from Microsoft Entra ID, as identified by **isServiceDefault** set to `true`.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

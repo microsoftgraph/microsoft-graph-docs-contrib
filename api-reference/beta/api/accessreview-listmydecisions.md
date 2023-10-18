@@ -1,6 +1,6 @@
 ---
 title: "List my accessReview decisions (deprecated)"
-description: "In the Azure AD access reviews feature, retrieve the decisions of an accessReview object for the calling user as reviewer."
+description: "In the Microsoft Entra access reviews feature, retrieve the decisions of an accessReview object for the calling user as reviewer."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
 ms.prod: "governance"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve the decisions of an [accessReview](../resources/accessreview.md) object for the calling user as reviewer.
+In the Microsoft Entra [access reviews](../resources/accessreviews-root.md) feature, retrieve the decisions of an [accessReview](../resources/accessreview.md) object for the calling user as reviewer.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -137,5 +137,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

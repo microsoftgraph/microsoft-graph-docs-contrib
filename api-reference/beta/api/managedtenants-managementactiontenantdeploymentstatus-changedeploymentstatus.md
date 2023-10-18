@@ -49,7 +49,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |tenantGroupId|String|The identifier for the tenant group.|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
+|tenantId|String|The Microsoft Entra tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
 |managementActionId|String|The identifier for the [management action](../resources/managedtenants-managementaction.md).|
 |managementTemplateId|String|The identifier for the [management template](../resources/managedtenants-managementtemplate.md).|
 |status|String|The new status for the [management action](../resources/managedtenants-managementaction.md) tenant deployment.|

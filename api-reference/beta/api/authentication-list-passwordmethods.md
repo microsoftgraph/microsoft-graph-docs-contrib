@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [password authentication method](../resources/passwordauthenticationmethod.md) objects. This will return exactly one object, as a user can have exactly one password.
+Retrieve a list of [password authentication method](../resources/passwordauthenticationmethod.md) objects. This API returns exactly one object, as a user can have exactly one password.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -39,6 +39,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [rbac-authentication-methods-apis-read-others](../includes/rbac-for-apis/rbac-authentication-methods-apis-read-others.md)]
 
+Admins with *User Administrator*, *Helpdesk Administrator*, or *Password Administrator* roles can also retrieve password authentication methods for non-admin users and a limited set of admin roles as defined in [Who can reset passwords](/azure/active-directory/roles/privileged-roles-permissions#who-can-reset-passwords).
+
 ## HTTP request
 
 Get details of your own password authentication method.
@@ -55,7 +57,7 @@ GET /users/{id | userPrincipalName}/authentication/passwordMethods
 
 ## Optional query parameters
 
-This method does not support optional query parameters to customize the response.
+This method doesn't support optional query parameters to customize the response.
 
 ## Request headers
 
@@ -65,7 +67,7 @@ This method does not support optional query parameters to customize the response
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -123,7 +125,7 @@ GET https://graph.microsoft.com/beta/me/authentication/passwordMethods
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
