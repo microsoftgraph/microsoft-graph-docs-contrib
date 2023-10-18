@@ -17464,7 +17464,7 @@ items:
                         items:
                           - name: List
                             href: api/attendancerecord-list.md
-                  - name: Call recording (preview)
+                  - name: Call recording
                     items:
                       - name: Call recording
                         href: resources/callrecording.md

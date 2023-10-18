@@ -1483,6 +1483,40 @@
       "CreatedDateTime": "2023-10-04T15:37:11Z",
       "WorkloadArea": "Teamwork and communications",
       "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callRecording",
+          "ChangeType": "Addition",
+          "Description": "Added the [callRecording](https://docs.microsoft.com/en-us/graph/api/resources/callRecording?view=graph-rest-1.0) resource type.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+          "ApiChange": "Method",
+          "ChangedApiName": "LIST",
+          "ChangeType": "Addition",
+          "Description": "Added the [list](https://docs.microsoft.com/en-us/graph/api/callRecording-list?view=graph-rest-1.0) operation to the [callRecording] resource.",
+          "Target": "callRecording"
+        },
+        {
+          "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "Addition",
+          "Description": "Added the [get](https://docs.microsoft.com/en-us/graph/api/callRecording-get?view=graph-rest-1.0) operation to the [callRecording] resource.",
+          "Target": "callRecording"
+        }
+      ],
+      "Id": "09e85d0c-2551-40e7-a037-1f36fade0b0b",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-10-04T15:37:11Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     }
   ]
 }
