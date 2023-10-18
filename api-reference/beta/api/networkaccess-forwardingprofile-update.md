@@ -3,7 +3,7 @@ title: "Update forwardingProfile"
 description: "Update an existing forwarding profile."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 

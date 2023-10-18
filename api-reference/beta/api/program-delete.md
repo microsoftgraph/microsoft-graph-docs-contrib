@@ -1,6 +1,6 @@
 ---
 title: "Delete program (deprecated)"
-description: "In the Azure AD access reviews feature, delete a program object."
+description: "In the Microsoft Entra access reviews feature, delete a program object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, delete a [program](../resources/program.md) object.
+In the Microsoft Entra [access reviews](../resources/accessreviews-root.md) feature, delete a [program](../resources/program.md) object.
 
 Do not delete a program which still has `programControl` linked to it, those access reviews should first be deleted or unlinked from the program and linked to a different program.  Also, please note that the built-in default program cannot be deleted.
 
@@ -119,5 +119,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-
