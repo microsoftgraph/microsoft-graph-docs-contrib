@@ -46,7 +46,7 @@ The following access review schedule definition has the following settings:
 
 ### Request
 
-In the following request, replace the `f674a1c9-4a40-439c-bfa3-4b61a9f29d85` with the value of your user ID. The roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` is the global template identifier for the User Administrator role in Microsoft Entra ID.
+In the following request, replace the `f674a1c9-4a40-439c-bfa3-4b61a9f29d85` with the value of your user ID. The roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` is the global template identifier for the Microsoft Entra *User Administrator* role.
 
 
 # [HTTP](#tab/http)
@@ -914,7 +914,7 @@ HTTP/1.1 204 No Content
 
 ## Conclusion
 
-You've learned how to review access to privileged roles in Microsoft Entra ID and generate an auditable access review history report for compliance reporting. Your organization can use the access reviews API to continually govern privileged access to its resources including both Microsoft Entra roles and Azure resource roles. In addition to users and groups, you can also review access by applications and service principals to privileged roles.
+You've learned how to review access to privileged roles in Microsoft Entra and generate an auditable access review history report for compliance reporting. Your organization can use the access reviews API to continually govern privileged access to its resources including both Microsoft Entra roles and Azure resource roles. In addition to users and groups, you can also review access by applications and service principals to privileged roles.
 
 ## See also
 

@@ -30,7 +30,7 @@ As a prerequisite, please enable Data Connect in your tenant. It's helpful to ha
         - **Destination Type:** Select Azure storage account.
         - **Storage Account:** Select the storage account you created previously.
         - **Storage Account Uri:** Select the option with **.blob.core.windows.net**
-    2. **Application ID:** Select an existing Microsoft Entra ID in the tenant or create a new one.
+    2. **Application ID:** Select an existing Microsoft Entra tenant or create a new one.
     3. **Description:** Type **My first app**.
     4. **Publish Type:** Choose **Single-Tenant**.
 
@@ -115,7 +115,7 @@ Attempting self-approval will result in an error message in the PAM portal: "Req
 
 1. Open a browser and go to the [Azure portal](https://portal.azure.com/#home).
 
-1. Sign in using an account with **Global Administrator** rights to your Microsoft Entra ID and Microsoft 365 tenants.
+1. Sign in using an account with **Global Administrator** rights to your Microsoft Entra and Microsoft 365 tenants.
 
 1. From the **Recent** list of resources, select the **Azure Storage account** you created previously in this tutorial.
 
@@ -177,7 +177,7 @@ Attempting self-approval will result in an error message in the PAM portal: "Req
 
 1. Open a browser and go to your [Azure portal](https://portal.azure.com/#home).
 
-1. Sign in using an account with **global administrator** rights to your Microsoft Entra ID and Microsoft 365 tenants.
+1. Sign in using an account with **global administrator** rights to your Microsoft Entra and Microsoft 365 tenants.
 
 1. In the **Recent** list of resources, select the **Azure Storage account** you created previously in this tutorial.
 

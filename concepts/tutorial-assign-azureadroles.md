@@ -13,7 +13,7 @@ ms.date: 12/20/2022
 
 Microsoft Graph PIM API enables organizations to manage privileged access to resources in Microsoft Entra ID. It also helps to manage the risks of privileged access by limiting when access is active, managing the scope of access, and providing an auditable log of privileged access.
 
-In this tutorial, a fictitious company called Contoso Limited wishes to have its IT Helpdesk manage the lifecycle of employees' access. The company has identified the Microsoft Entra user Administrator role as the appropriate privileged role required by IT Helpdesk, and will use the PIM API to assign the role.
+In this tutorial, a fictitious company called Contoso Limited wishes to have its IT Helpdesk manage the lifecycle of employees' access. The company has identified the Microsoft Entra *User Administrator* role as the appropriate privileged role required by IT Helpdesk, and will use the PIM API to assign the role.
 
 You'll create a role-assignable security group for IT Helpdesk and using the PIM API, assign the security group eligibility to the User Administrator role. By assigning the eligible role to a security group, Contoso has a more efficient way to manage administrator access to resources such as Microsoft Entra roles. For example:
 
@@ -226,7 +226,7 @@ Now that you have a security group, assign it as eligible for the User Administr
 
 ### Request
 
-Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the value of the **id** of the **IT Helpdesk (User)** security group. This **principalId** identifies the assignee of eligibility to the User Administrator role. The roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` is the global template identifier for the User Administrator role in Microsoft Entra ID.
+Replace `e77cbb23-0ff2-4e18-819c-690f58269752` with the value of the **id** of the **IT Helpdesk (User)** security group. This **principalId** identifies the assignee of eligibility to the User Administrator role. The roleDefinitionId `fe930be7-5e62-47db-91af-98c3a49a38b1` is the global template identifier for the Microsoft Entra *User Administrator* role.
 
 
 # [HTTP](#tab/http)

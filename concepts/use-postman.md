@@ -23,7 +23,7 @@ For details about how to use Postman, follow the steps in this article or watch 
 > The Microsoft Graph Postman collection is configured to authenticate with the global Microsoft Entra service and access the global Microsoft Graph service (`graph.microsoft.com`). If you want to use the collection to connect to a [national cloud deployment](deployments.md), you must modify your fork of the collection.
 >
 > - Update the request URL, replacing `graph.microsoft.com` with the Microsoft Graph service root endpoint for your national cloud.
-> - Update the **Auth URL** and **Access Token URL** values on the **Authorization** tab of the **Delegated** and **Application** folders, replacing `login.microsoftonline.com` with the Microsoft Entra endpoint for your national cloud.
+> - Update the **Auth URL** and **Access Token URL** values on the **Authorization** tab of the **Delegated** and **Application** folders, replacing `login.microsoftonline.com` with the endpoint for your national cloud.
 > - Update the **Scope** value on the **Authorization** tab of the **Delegated** and **Application** folders, replacing `graph.microsoft.com` with the Microsoft Graph service root endpoint for your national cloud.
 
 ## Step 1: Fork the Microsoft Graph Postman collection
