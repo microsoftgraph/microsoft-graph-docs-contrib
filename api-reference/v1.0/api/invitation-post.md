@@ -30,6 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All |
 
+> [!IMPORTANT]
+> Application permissions (app-only) do not work if B2B has been enabled on the tenant.
+> More on this setting here-
+> [Enabling and disabling the B2B integration](https://learn.microsoft.com/en-us/sharepoint/sharepoint-azureb2b-integration#enabling-the-integration)
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
