@@ -25,7 +25,7 @@ If you're an existing Data Connect customer and you want to get started with the
 
 ![A screenshot showing how to enable data connect in the Microsoft 365 admin center.](../concepts/images/data-connect-new-consent-flow-enable-mgdc.png)
 
-This option is available today. If you choose this option, none of your existing Privileged Access Management (PAM) authorizations will be migrated to the new experience. You'll need to register the apps and work with your tenant admin to get them authorized.
+This option is available today. If you choose this option, none of your existing Privileged Access Management (PAM) authorizations will be migrated to the new experience. You need to register the apps and work with your tenant admin to get them authorized.
 
 ## Option 2: One-click automatic migration
 
@@ -35,4 +35,4 @@ This option will be available in late 2023. Stay tuned for more details.
 
 ## Option 3: Automatic migration
 
-Starting in late 2023 or early 2024, existing Data Connect customers who didn't perform the one-click automatic migration will be migrated automatically to the new onboarding experience. Any customer who has not migrated by this time will be migrated to the new experience on their first run of Data Connect.
+Starting in late 2023 or early 2024, existing Data Connect customers who didn't perform the one-click automatic migration are migrated automatically to the new onboarding experience. Any customer who hasn't migrated by this time will be migrated to the new experience on their first run of Data Connect.

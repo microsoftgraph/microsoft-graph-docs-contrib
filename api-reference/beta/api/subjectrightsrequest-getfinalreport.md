@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|SubjectRightsRequest.Read.All, SubjectRightsRequest.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported|
+|Application|Not supported.|
 
 ## HTTP request
 
@@ -61,7 +61,7 @@ If successful, this function returns a `200 OK` response code and a Stream in th
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalReport
+GET https://graph.microsoft.com/beta/privacy/subjectRightsRequests/4ef5e3e6-545b-4b5f-a8b4-ff4f9980d7a9/getFinalReport
 ```
 
 # [C#](#tab/csharp)

@@ -3,7 +3,7 @@ title: "entitiesSummary resource type"
 description: "A summary for Global Secure Access entities."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 
