@@ -52,7 +52,7 @@ PATCH /policies/crossTenantAccessPolicy/partners/{id}/identitySynchronization
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Display name for the cross-tenant user synchronization policy. Generally, this should be the tenant name of the partner Azure Active Directory organization. Optional.|
+|displayName|String|Display name for the cross-tenant user synchronization policy. Generally, this should be the tenant name of the partner Microsoft Entra organization. Optional.|
 |userSyncInbound|[crossTenantUserSyncInbound](../resources/crosstenantusersyncinbound.md)|Determines whether users can be synchronized from the partner tenant. `false` causes any current user synchronization from the source tenant to the target tenant to stop. This property has no impact on existing users who have already been synchronized.|
 
 ## Response

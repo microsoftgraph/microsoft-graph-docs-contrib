@@ -3,7 +3,7 @@ title: "reports: getDestinationSummaries"
 description: "Return the total unique count of transactions per aggregation in the past 24 hours."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 

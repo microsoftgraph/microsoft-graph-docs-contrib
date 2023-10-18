@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | AdministrativeUnit.ReadWrite.All |
 
-To add a user, group, or device to an administrative unit, the calling user must be assigned the *Privileged Role Administrator* [Azure AD role](/azure/active-directory/roles/permissions-reference).
+To add a user, group, or device to an administrative unit, the calling user must be assigned the *Privileged Role Administrator* [Microsoft Entra role](/azure/active-directory/roles/permissions-reference).
 
 ### Permissions to create a new group
 |Permission type      | Permissions (from least to most privileged)              |
@@ -38,7 +38,7 @@ To add a user, group, or device to an administrative unit, the calling user must
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.ReadWrite.All |
 
-To create a new group in an administrative unit, the calling user must be assigned the *Privileged Role Administrator* or *Groups Administrator* [Azure AD role](/azure/active-directory/roles/permissions-reference).
+To create a new group in an administrative unit, the calling user must be assigned the *Privileged Role Administrator* or *Groups Administrator* [Microsoft Entra role](/azure/active-directory/roles/permissions-reference).
 
 ## HTTP request
 
@@ -61,7 +61,7 @@ POST /administrativeUnits/{id}/members
 | Content-type  | application/json. Required. |
 
 ### Adding an existing user or group
-In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md), [device](../resources/device.md), or [directoryObject](../resources/directoryobject.md) to be added. If the administrative unit is a restricted management administrative unit (`isMemberManagementRestricted`=true), the group type must be an Azure AD security group. Only non-unified groups that are security enabled, not mail enabled, and not on-premises sync enabled are supported.
+In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md), [device](../resources/device.md), or [directoryObject](../resources/directoryobject.md) to be added. If the administrative unit is a restricted management administrative unit (`isMemberManagementRestricted`=true), the group type must be a Microsoft Entra security group. Only non-unified groups that are security enabled, not mail enabled, and not on-premises sync enabled are supported.
 
 ### Creating a new group
 The following table shows the properties of the [group](../resources/group.md) resource to specify when you create a group in the administrative unit.
@@ -70,7 +70,7 @@ The following table shows the properties of the [group](../resources/group.md) r
 |:---------------|:--------|:----------|
 | displayName | string | The name to display in the address book for the group. Required. |
 | description | string | A description for the group. Optional. |
-| isAssignableToRole | Boolean | Set to **true** to enable the group to be assigned to an Azure AD role. Only Privileged Role Administrator and Global Administrator can set the value of this property. Optional. |
+| isAssignableToRole | Boolean | Set to **true** to enable the group to be assigned to a Microsoft Entra role. Only Privileged Role Administrator and Global Administrator can set the value of this property. Optional. |
 | mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. These characters cannot be used in the mailNickName: `@()\[]";:.<>,SPACE`. Required. |
 | securityEnabled | boolean | Set to **true** for security-enabled groups, including Microsoft 365 groups. Required. |

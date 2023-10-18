@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get a [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) object of a [riskyUser](../resources/riskyuser.md).
 
->**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
+>**Note:** Using the riskyUsers API requires a Microsoft Entra ID P2 license.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -219,6 +219,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
-
-
