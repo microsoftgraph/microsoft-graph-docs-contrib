@@ -505,6 +505,72 @@
     {
       "ChangeList": [
         {
+          "Id": "a12d7c65-273a-4409-8c5a-a8be6bcfd005",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "x509CertificateAffinityLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the **x509CertificateAffinityLevel** enumeration type.",
+          "Target": "x509CertificateAffinityLevel"
+        },
+        {
+          "Id": "a12d7c65-273a-4409-8c5a-a8be6bcfd005",
+          "ApiChange": "Member",
+          "ChangedApiName": "issuerSubjectAndPolicyOID",
+          "ChangeType": "Addition",
+          "Description": "Added the `issuerSubjectAndPolicyOID` member to the **x509CertificateRuleType** enumeration.",
+          "Target": "x509CertificateRuleType"
+        },
+        {
+          "Id": "a12d7c65-273a-4409-8c5a-a8be6bcfd005",
+          "ApiChange": "Property",
+          "ChangedApiName": "x509CertificateDefaultRequiredAffinityLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the `x509CertificateDefaultRequiredAffinityLevel` property to the [x509CertificateAuthenticationModeConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationModeConfiguration?view=graph-rest-beta) resource.",
+          "Target": "x509CertificateAuthenticationModeConfiguration"
+        },
+        {
+          "Id": "a12d7c65-273a-4409-8c5a-a8be6bcfd005",
+          "ApiChange": "Property",
+          "ChangedApiName": "issuerSubjectIdentifier",
+          "ChangeType": "Addition",
+          "Description": "Added the `issuerSubjectIdentifier` property to the [x509CertificateRule](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateRule?view=graph-rest-beta) resource.",
+          "Target": "x509CertificateRule"
+        },
+        {
+          "Id": "a12d7c65-273a-4409-8c5a-a8be6bcfd005",
+          "ApiChange": "Property",
+          "ChangedApiName": "policyOidIdentifier",
+          "ChangeType": "Addition",
+          "Description": "Added the `policyOidIdentifier` property to the [x509CertificateRule](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateRule?view=graph-rest-beta) resource.",
+          "Target": "x509CertificateRule"
+        },
+        {
+          "Id": "a12d7c65-273a-4409-8c5a-a8be6bcfd005",
+          "ApiChange": "Property",
+          "ChangedApiName": "x509CertificateRequiredAffinityLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the `x509CertificateRequiredAffinityLevel` property to the [x509CertificateRule](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateRule?view=graph-rest-beta) resource.",
+          "Target": "x509CertificateRule"
+        },
+        {
+          "Id": "a12d7c65-273a-4409-8c5a-a8be6bcfd005",
+          "ApiChange": "Property",
+          "ChangedApiName": "trustAffinityLevel",
+          "ChangeType": "Addition",
+          "Description": "Added the `trustAffinityLevel` property to the [x509CertificateUserBinding](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateUserBinding?view=graph-rest-beta) resource.",
+          "Target": "x509CertificateUserBinding"
+        }
+      ],
+      "Id": "a12d7c65-273a-4409-8c5a-a8be6bcfd005",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-10-17T16:40:54.9462605Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "26b75f44-c3c8-4300-a98b-2ee6c75e6146",
           "ApiChange": "Enumeration",
           "ChangedApiName": "x509CertificateIssuerHintsState",

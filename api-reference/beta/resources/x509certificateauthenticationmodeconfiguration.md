@@ -20,6 +20,7 @@ Defines the strong authentication configurations for the X.509 certificate. This
 |:---|:---|:---|
 |rules|[x509CertificateRule](../resources/x509certificaterule.md) collection| Rules are configured in addition to the authentication mode to bind a specific **x509CertificateRuleType** to an **x509CertificateAuthenticationMode**. For example, bind the `policyOID` with identifier `1.32.132.343` to `x509CertificateMultiFactor` authentication mode.|
 |x509CertificateAuthenticationDefaultMode|x509CertificateAuthenticationMode| The type of strong authentication mode. The possible values are: `x509CertificateSingleFactor`, `x509CertificateMultiFactor`, `unknownFutureValue`.|
+|x509CertificateDefaultRequiredAffinityLevel|x509CertificateAffinityLevel| Determines the default value for tenant affinity binding level. The possible values are: `low`, `high`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -35,6 +36,7 @@ The following is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.x509CertificateAuthenticationModeConfiguration",
   "x509CertificateAuthenticationDefaultMode": "String",
+  "x509CertificateDefaultRequiredAffinityLevel": "String",
   "rules": [
     {
       "@odata.type": "microsoft.graph.x509CertificateRule"

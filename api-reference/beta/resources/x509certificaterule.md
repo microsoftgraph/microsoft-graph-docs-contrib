@@ -19,8 +19,10 @@ Defines the strong authentication configuration rules for the X.509 certificate.
 |Property|Type|Description|
 |:---|:---|:---|
 |identifier|String| The identifier of the X.509 certificate. Required.|
+|issuerSubjectIdentifier|String| The identifier of the certificate issuer. |
+|policyOidIdentifier|String| The identifier of the x509 certificate policyOid. |
 |x509CertificateAuthenticationMode|x509CertificateAuthenticationMode| The type of strong authentication mode. The possible values are: `x509CertificateSingleFactor`, `x509CertificateMultiFactor`, `unknownFutureValue`. Required.|
-|x509CertificateRuleType|x509CertificateRuleType| The type of the X.509 certificate mode configuration rule. The possible values are: `issuerSubject`, `policyOID`, `unknownFutureValue`. Required.|
+|x509CertificateRuleType|x509CertificateRuleType| The type of the X.509 certificate mode configuration rule. The possible values are: `issuerSubject`, `policyOID`, `unknownFutureValue`, `issuerSubjectAndPolicyOID`. Required.|
 
 ## Relationships
 None.
@@ -37,7 +39,10 @@ The following is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.x509CertificateRule",
   "x509CertificateRuleType": "String",
   "identifier": "String",
-  "x509CertificateAuthenticationMode": "String"
+  "x509CertificateAuthenticationMode": "String",
+  "x509CertificateRequiredAffinityLevel": "String",
+  "issuerSubjectIdentifier": "String",
+  "policyOidIdentifier": "String"
 }
 ```
 
