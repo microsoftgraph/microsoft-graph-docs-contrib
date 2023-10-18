@@ -1,6 +1,6 @@
 ---
 title: "Update profilePhoto"
-description: "Update the photo for any user in the tenant including the signed-in user, or the specified group or contact or team."
+description: "Update the photo for any user in the tenant, including the signed-in user, or the specified group or contact or team."
 ms.localizationpriority: medium
 author: "kevinbellinger"
 ms.prod: "people"
@@ -60,7 +60,7 @@ The following tables show the least privileged permission or permissions require
 > [!NOTE]
 >
 > - An app with only application permissions cannot update a group's photo.
-> - Global admin and User admin can update the photo of any user in the organization using delegated permissions. This operation is also supported with application permissions. Updating the photo of any user in the organization requires *User.ReadWrite.All* permission. Updating the photo of the signed-in user only requires *User.ReadWrite* permission.
+> - Global admin and User admin can update the photo of any user in the organization by using delegated permissions. This operation is also supported with application permissions. Updating the photo of any user in the organization requires *User.ReadWrite.All* permission. Updating the photo of the signed-in user only requires *User.ReadWrite* permission.
 > - Updating a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 
 ## HTTP request
@@ -108,7 +108,7 @@ PUT /users/{id | userPrincipalName}/photo/$value
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | e.g. image/jpeg. Required.  |
+| Content-Type  | image/jpeg. Required.  |
 
 ## Request body
 
