@@ -1,6 +1,6 @@
 ---
 title: "Multitenant organization API overview"
-description: "Multitenant organizations allow you to define an organization with more than one instance of Azure Active Directory (Azure AD)."
+description: "Multitenant organizations allow you to define an organization with more than one instance of Microsoft Entra ID."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The multitenant organization feature allows you to define an organization with more than one instance of Azure Active Directory (Azure AD). A multitenant organization enables multiple tenants to collaborate like a single entity.
+The multitenant organization feature allows you to define an organization with more than one instance of Microsoft Entra ID. A multitenant organization enables multiple tenants to collaborate like a single entity.
 
 ## Multitenant organization setup
 
@@ -40,5 +40,5 @@ If you need to increase these limits, you can submit a support request using the
 
 ## Next steps
 
-+ [What is a multitenant organization in Azure Active Directory?](/azure/active-directory/multi-tenant-organizations/overview)
++ [What is a multitenant organization in Microsoft Entra ID?](/azure/active-directory/multi-tenant-organizations/overview)
 + [multiTenantOrganization resource type](../resources/multitenantorganization.md)

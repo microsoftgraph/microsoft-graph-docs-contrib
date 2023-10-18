@@ -19,7 +19,7 @@ The Toolkit includes the following providers.
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | [Custom](../providers/custom.md)         | Creates a custom provider to enable authentication and access to Microsoft Graph by using your application's existing authentication code. |
 | [Electron](../providers/electron.md)     | Authenticates and provides Microsoft Graph access to components inside of Electron apps.                                                   |
-| [MSAL2](../providers/msal2.md)           | Uses msal-browser to sign in users and acquire tokens to use with Microsoft Graph.                                                         |
+| [MSAL2](../providers/msal2.md)           | Uses MSAL-browser to sign in users and acquire tokens to use with Microsoft Graph.                                                         |
 | [Proxy](../providers/proxy.md)           | Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.                                     |
 | [SharePoint](../providers/sharepoint.md) | Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.                                            |
 | [TeamsFx](../providers/teamsfx.md)       | Use the TeamsFx provider inside your Microsoft Teams applications to provide Microsoft Graph Toolkit components access to Microsoft Graph. |
@@ -49,7 +49,7 @@ Providers.globalProvider = new Msal2Provider({
 });
 ```
 
-> **Note:** For details about how to register your app and get a client ID, see [Create an Azure Active Directory app](../get-started/add-aad-app-registration.md).
+> **Note:** For details about how to register your app and get a client ID, see [Create a Microsoft Entra app](../get-started/add-aad-app-registration.md).
 
 ## Permission Scopes
 
@@ -77,7 +77,7 @@ You can find the list of permission scopes required by each component in the **M
 
 ## Custom hosts
 
-You can specify custom hosts for the Microsoft Graph client. This allows you to call non-Microsoft Graph Azure AD-secured APIs. When you specify custom hosts, make sure that you request the scope for the access token.
+You can specify custom hosts for the Microsoft Graph client. This allows you to call non-Microsoft Graph Microsoft Entra ID-secured APIs. When you specify custom hosts, make sure that you request the scope for the access token.
 
 ```HTML
 <script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>

@@ -32,7 +32,7 @@ The following example shows how these components together provide the details ab
 
 Activity feed APIs work with a [Teams app](/microsoftteams/platform/overview). The following are the requirements for sending activity feed notifications:
 
-- The Teams app manifest must have the Azure AD app ID added to the `webApplicationInfo` section. For details, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
+- The Teams app manifest must have the Microsoft Entra app ID added to the `webApplicationInfo` section. For details, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 - Activity types must be declared in the `activities` section. For details, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
 - The Teams app must be installed for the recipient, either personally, or in a [team](/graph/api/resources/team) or [chat](/graph/api/resources/chat) they are part of. For more information, see [Teams app installation](/graph/api/resources/teamsappinstallation).
 
@@ -61,11 +61,11 @@ This section describes the changes that need to be added to Teams app manifest. 
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|id|string|Azure AD app ID (client ID).|
-|resource|string|Resource associated with the Azure AD app. Also known as reply or Redirect URI in the Microsoft Entra admin center app registration overview.|
+|id|string|Microsoft Entra app ID (client ID).|
+|resource|string|Resource associated with the Microsoft Entra app. Also known as reply or Redirect URI in the Microsoft Entra admin center app registration overview.|
 
 > [!NOTE]
-> You might get an error if multiple Teams apps in the same scope (team, chat or user) are using the same Azure AD app. Make sure that you're using unique Azure AD apps.
+> You might get an error if multiple Teams apps in the same scope (team, chat or user) are using the same Microsoft Entra app. Make sure that you're using unique Microsoft Entra apps.
 
 #### activities section changes
 
@@ -763,7 +763,7 @@ The settings will appear after the first notification is sent by the Teams app. 
 
 ### I started getting a 409 (conflict) error; how do I resolve it?
 
-`Conflict` errors primarily occur when multiple Teams apps installed in the same scope (team, chat, user, and so on) have the same Azure AD appId in the `webApplicationInfo` section of the manifest. When this happens, you will get an error such as `Found multiple applications with the same Azure AD App ID 'Your AzureAD AppId'.`. Make sure that you use unique Azure AD apps for unique Teams apps. Note that you can have the same Teams app installed in multiple scopes (team + user for example).
+`Conflict` errors primarily occur when multiple Teams apps installed in the same scope (team, chat, user, and so on) have the same Microsoft Entra appId in the `webApplicationInfo` section of the manifest. When this happens, you will get an error such as `Found multiple applications with the same Azure AD App ID 'Your AzureAD AppId'.`. Make sure that you use unique Microsoft Entra apps for unique Teams apps. Note that you can have the same Teams app installed in multiple scopes (team + user for example).
 
 ## See also
 
