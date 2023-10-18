@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 ## Examples
 
 ### Request
-The following shows an example of a request.
+Here's an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/v1.0/security/labels/authorities/a94af2e3-853b-6
 
 
 ### Response
-The following shows an example of the response.
+Here's an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
