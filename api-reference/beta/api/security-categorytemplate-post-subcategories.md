@@ -46,19 +46,18 @@ You can specify the following properties when creating a **subCategoryTemplate**
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String| Unique string that defines a sub-category name. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptor.md). Optional.|
+|displayName|String| Unique string that defines a subcategory name. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptor.md). Optional.|
 
 
 
 
 ## Response
-
 If successful, this method returns a `201 Created` response code and a [microsoft.graph.security.subCategoryTemplate](../resources/security-subcategorytemplate.md) object in the response body.
 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following shows an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -86,7 +85,7 @@ Content-Type: application/json
 ---
 
 ### Response
-The following is an example of the response.
+The following shows an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
