@@ -10,7 +10,7 @@ doc_type: "apiPageType"
 # Update fido2AuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Update the properties of a [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object, which represents the FIDO2 Security Keys authentication method policy for the Azure AD tenant.
+Update the properties of a [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object, which represents the FIDO2 Security Keys authentication method policy for the Microsoft Entra tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -118,4 +118,3 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 204 No Content
 ```
-

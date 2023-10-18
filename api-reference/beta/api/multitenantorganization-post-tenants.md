@@ -50,7 +50,7 @@ You can specify the following properties when creating a **multiTenantOrganizati
 
 |Property|Type|Description|
 |:---|:---|:---|
-|tenantId|String|Tenant ID of the Azure Active Directory tenant to add to the multitenant organization. Required.|
+|tenantId|String|Tenant ID of the Microsoft Entra tenant to add to the multitenant organization. Required.|
 |displayName|String|Display name of the tenant added to the multitenant organization. Currently, can't be changed once set. Required.|
 |role|multiTenantOrganizationMemberRole|Role of the tenant in the multitenant organization. The possible values are: `owner`, `member` (default), `unknownFutureValue`. Optional.|
 

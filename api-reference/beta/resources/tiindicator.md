@@ -72,7 +72,7 @@ For details about the types of indicators supported and limits on indicator coun
 |action|string| The action to apply if the indicator is matched from within the targetProduct security tool. Possible values are: `unknown`, `allow`, `block`, `alert`. **Required.**|
 |activityGroupNames|String collection|The cyber threat intelligence name(s) for the parties responsible for the malicious activity covered by the threat indicator.|
 |additionalInformation|String|A catchall area for extra data from the indicator that is not specifically covered by other tiIndicator properties. The security tool specified by targetProduct typically does not utilize this data.|
-|azureTenantId|String| Stamped by the system when the indicator is ingested. The Azure Active Directory tenant id of submitting client. **Required.**|
+|azureTenantId|String| Stamped by the system when the indicator is ingested. The Microsoft Entra tenant id of submitting client. **Required.**|
 |confidence|Int32|An integer representing the confidence the data within the indicator accurately identifies malicious behavior. Acceptable values are 0 – 100 with 100 being the highest.|
 |description|String| Brief description (100 characters or less) of the threat represented by the indicator. **Required.**|
 |diamondModel|[diamondModel](#diamondmodel-values)|The area of the Diamond Model in which this indicator exists. Possible values are: `unknown`, `adversary`, `capability`, `infrastructure`, `victim`.|
