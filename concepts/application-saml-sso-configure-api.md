@@ -14,7 +14,7 @@ ms.date: 12/08/2022
 
 In this article, you'll learn how to create and configure a SAML-based single sign-on (SSO) for your application in Microsoft Entra ID using the Microsoft Graph API. The application configuration includes basic SAML URLs, a claims mapping policy, and using a certificate to add a custom signing key. After the application is created, you assign a user to it to be an administrator. You then can use a URL to obtain Microsoft Entra SAML metadata for additional configuration of the application. 
 
-This article uses an AWS Microsoft Entra application template as an example, but you can use the steps in this article for any SAML-based app in the Microsoft Entra Gallery.
+This article uses an AWS Microsoft Entra application template as an example, but you can use the steps in this article for any SAML-based app in the Microsoft Entra gallery.
 
 ## Prerequisites
 

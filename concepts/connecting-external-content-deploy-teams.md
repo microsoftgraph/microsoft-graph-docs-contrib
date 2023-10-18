@@ -15,7 +15,7 @@ This article describes how to enable the simplified admin experience for your Mi
 
 To enable the simplified admin experience in the Teams admin center:
 1. Update the Teams app manifest.
-2. Update Microsoft Entra permissions.
+2. Update Microsoft Graph permissions.
 3. Handle Microsoft Graph webhook notifications.
 4. Create or delete Microsoft Graph connections.
 5. Validate the experience by enabling the Microsoft Graph Connector in the Teams admin center.
@@ -43,7 +43,7 @@ Ensure that the **webApplicationInfo** property is added to the manifest. After 
 
 ## Update Microsoft Graph permissions
 In the [Microsoft Entra admin center](https://entra.microsoft.com) > expand the **Identity** menu > select **Applications** > **App registrations** > select your app registration > select **API permissions** > select **Add a permission** > select **Microsoft Graph**. Select the `ExternalConnection.ReadWrite.OwnedBy` and `ExternalItem.ReadWrite.OwnedBy` Microsoft Graph permissions as shown in the following example.
-![updated Microsoft Entra permissions](images/connectors-images/AADperms-TAC-connectors.png)
+![updated Microsoft Graph permissions](images/connectors-images/AADperms-TAC-connectors.png)
 
 ## Handle Microsoft Graph webhook notifications
 When the admin turns **on** or **off** the Microsoft Graph connector from the Teams admin center, Microsoft Graph sends a change notification to the URL specified in the **notificationUrl** property in the manifest. Your app needs to manage these Microsoft Graph connections accordingly.
@@ -157,7 +157,7 @@ Authorization: bearer {{accessToken}}
 
 >[!NOTE]
 >- {{connectorId}} is the value of the **id** property in the manifest. For details, see [App manifest schema for Teams](/microsoftteams/platform/resources/schema/manifest-schema).
->- You should acquire the {{accessToken}} from the [Microsoft identity platform (Microsoft Entra ID)](/azure/active-directory/develop/v2-app-types) for the tenant that is being notified.
+>- You should acquire the {{accessToken}} from the [Microsoft identity platform](/azure/active-directory/develop/v2-app-types) for the tenant that is being notified.
 
 ### Response
 ```
