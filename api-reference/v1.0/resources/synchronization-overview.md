@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Entra synchronization API overview"
+title: "Microsoft Entra ID synchronization API overview"
 description: "Automate the provisioning of identities from HR systems, Active Directory, and Microsoft Entra ID to cloud applications."
 ms.localizationpriority: medium
 doc_type: conceptualPageType
@@ -7,7 +7,7 @@ author: "ArvindHarinder1"
 ms.prod: "applications"
 ---
 
-# Microsoft Entra synchronization API overview
+# Microsoft Entra ID synchronization API overview
 
 Namespace: microsoft.graph
 
@@ -59,7 +59,7 @@ Working with synchronization API primarily involves accessing the [synchronizati
 
 ### Authorization
 
-To work with the Microsoft Entra synchronization APIs, Microsoft Graph supports the following granular permissions:
+To work with the Microsoft Entra ID synchronization APIs, Microsoft Graph supports the following granular permissions:
 
 - Synchronization.Read.All
 - Synchronization.ReadWrite.All

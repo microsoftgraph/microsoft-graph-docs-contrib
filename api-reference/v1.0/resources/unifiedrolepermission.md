@@ -90,7 +90,7 @@ The following is a JSON representation of the resource.
 ```
 ## See also
 
-- [Administrator role permissions in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) - For information about permissions for built-in directory roles.
+- [Administrator role permissions in Microsoft Entra](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) - For information about permissions for built-in directory roles.
 - [Application registration subtypes and permissions in Microsoft Entra ID](/azure/active-directory/users-groups-roles/roles-custom-available-permissions) -  For information about permissions that are available for custom directory roles. 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

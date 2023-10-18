@@ -30,7 +30,7 @@ None.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |agreementAcceptances|[agreementAcceptance](agreementacceptance.md) collection| Represents the current status of a user's response to a company's customizable terms of use agreement.|
-|agreements|[agreement](agreement.md) collection|Represents a tenant's customizable terms of use agreement that's created and managed with Microsoft Entra ID.|
+|agreements|[agreement](agreement.md) collection|Represents a tenant's customizable terms of use agreement that's created and managed with Microsoft Entra ID Governance.|
 
 ## JSON representation
 
