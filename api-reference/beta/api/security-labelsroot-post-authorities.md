@@ -48,7 +48,7 @@ You can specify the following properties when creating a **authorityTemplate**.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|displayName|String|Unique string that defines an authortiy name. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptor.md).|
+|displayName|String|Unique string that defines an authority name. Inherited from [microsoft.graph.security.filePlanDescriptorTemplate](../resources/security-fileplandescriptor.md).|
 
 
 
