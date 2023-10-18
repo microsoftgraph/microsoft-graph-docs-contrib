@@ -1,6 +1,6 @@
 ---
 title: "reportRoot resource type"
-description: "Represents a container for Microsoft Entra ID reporting resources."
+description: "Represents a container for Microsoft Entra reporting resources."
 author: "kvenkit"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents a container for Microsoft Entra ID reporting resources.
+Represents a container for Microsoft Entra reporting resources.
 
 ## Methods
 
