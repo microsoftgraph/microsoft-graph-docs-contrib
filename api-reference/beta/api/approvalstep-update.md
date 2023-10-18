@@ -29,7 +29,9 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
-### For PIM for Azure AD roles
+<a name='for-pim-for-azure-ad-roles'></a>
+
+### For PIM for Microsoft Entra roles
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -54,7 +56,7 @@ To update an approval decision in entitlement management:
 PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/steps/{id}
 ```
 
-To update an approval decision in PIM for Azure AD roles:
+To update an approval decision in PIM for Microsoft Entra roles:
 
 <!-- { "blockType": "ignored" } -->
 ```http
