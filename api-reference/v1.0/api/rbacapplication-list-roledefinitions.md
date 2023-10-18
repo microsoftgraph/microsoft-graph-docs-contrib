@@ -15,7 +15,7 @@ Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) obj
 
 The following RBAC providers are currently supported:
 - directory (Microsoft Entra ID)
-- entitlement management (Microsoft Entra ID)
+- entitlement management (Microsoft Entra Entitlement Management)
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
