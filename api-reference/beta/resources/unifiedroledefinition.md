@@ -19,7 +19,7 @@ The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
 - directory (Microsoft Entra ID) 
-- entitlement management (Microsoft Entra ID)
+- entitlement management (Microsoft Entra Entitlement Management)
 - Exchange Online
 
 
