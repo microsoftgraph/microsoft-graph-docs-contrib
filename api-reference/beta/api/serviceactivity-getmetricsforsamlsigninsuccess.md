@@ -1,6 +1,6 @@
 ---
 title: "serviceActivity: getMetricsForSamlSignInSuccess"
-description: "Get the number of SAML 2.0 authentications successfully processed by the Microsoft Entra cloud service for the tenant over a given time range. This health signal currently doesn't include WS-FED/SAML 1.1 apps integrated with Microsoft Entra."
+description: "Get the number of SAML 2.0 authentications successfully processed by the Microsoft Entra cloud service for the tenant over a specified time period. This health signal currently doesn't include WS-FED/SAML 1.1 apps integrated with Microsoft Entra."
 author: "Zacharypeng"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of SAML 2.0 authentications successfully processed by the Microsoft Entra cloud service for the tenant over a given time range. This health signal currently doesn't include WS-FED/SAML 1.1 apps integrated with Microsoft Entra.
+Get the number of SAML 2.0 authentications successfully processed by the Microsoft Entra cloud service for the tenant over a specified time period. This health signal currently doesn't include WS-FED/SAML 1.1 apps integrated with Microsoft Entra.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,9 +48,9 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|inclusiveIntervalStartDateTime|DateTimeOffset|Sets the starting date and time in UTC. The allowed earliest start time is 30 days in the past.|
-|exclusiveIntervalEndDateTime|DateTimeOffset|Sets the ending date and time in UTC.|
-|aggregationIntervalInMinutes|Int32|Aggregation interval in minutes. This parameter is optional. The default value is 15, which sets the data to be aggregated into 15-minute sets. Allowed values are 5, 10, 15 and 30.|
+|inclusiveIntervalStartDateTime|DateTimeOffset|Sets the starting date and time in UTC. The earliest start time allowed is 30 days in the past. Required.|
+|exclusiveIntervalEndDateTime|DateTimeOffset|Sets the ending date and time in UTC. Required.|
+|aggregationIntervalInMinutes|Int32|Aggregation interval in minutes. The default value is 15, which sets the data to be aggregated into 15-minute sets. Allowed values are 5, 10, 15 and 30. Optional.|
 
 
 ## Request headers
@@ -59,7 +59,7 @@ The following table shows the parameters that can be used with this function.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -68,7 +68,7 @@ If successful, this function returns a `200 OK` response code and a [serviceActi
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "serviceactivitythis.getmetricsforsamlsigninsuccess"
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForSamlSi
 
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

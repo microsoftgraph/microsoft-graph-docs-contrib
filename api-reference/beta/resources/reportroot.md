@@ -41,19 +41,19 @@ None.
 | appCredentialSignInActivities     | [appCredentialSignInActivity](../resources/appcredentialsigninactivity.md) collection             | Represents a collection of sign-in activities of application credentials.                                             |
 | applicationSignInDetailedSummary  | [applicationSignInDetailedSummary](../resources/applicationsignindetailedsummary.md) collection   | Represents a detailed summary of an application sign-in.                                                            |
 | authenticationMethods             | [authenticationMethodsRoot](../resources/authenticationmethodsroot.md)                            | Container for navigation properties for Azure AD authentication methods resources.                                  |
-| credentialUserRegistrationDetails | [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) collection | Details of the usage of self-service password reset and multi-factor authentication (MFA) for all registered users. |
+| credentialUserRegistrationDetails | [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) collection | Details of the usage of self-service password reset and multifactor authentication (MFA) for all registered users. |
 | dailyPrintUsageByPrinter | [printUsageByPrinter](../resources/printusagebyprinter.md) collection | Retrieve a list of daily print usage summaries, grouped by printer. | 
 | dailyPrintUsageByUser | [printUsageByUser](../resources/printusagebyuser.md) collection | Retrieve a list of daily print usage summaries, grouped by user. |
 | monthlyPrintUsageByPrinter | [printUsageByPrinter](../resources/printusagebyprinter.md) collection | Retrieve a list of monthly print usage summaries, grouped by printer. |
 | monthlyPrintUsageByUser | [printUsageByUser](../resources/printusagebyuser.md) collection | Retrieve a list of monthly print usage summaries, grouped by user. |
-| security                          | [securityReportsRoot](../resources/securityreportsroot.md)                                        | Provides the ability to launch a realistic simulated phishing attack that organizations can learn from.             |
+| security                          | [securityReportsRoot](../resources/securityreportsroot.md)                                        | Provides the ability to launch a realistically simulated phishing attack that organizations can learn from.             |
 | servicePrincipalSignInActivities  | [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) collection       | Represents a collection of sign-in activities of service principals.                                                   |
 | userCredentialUsageDetails        | [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) collection               | Represents the self-service password reset (SSPR) usage for a given tenant.                                         |
 | sla                               | [serviceLevelAgreementRoot](../resources/servicelevelagreementroot.md)                            | A placeholder to allow for the desired URL path for SLA.                                                            |
 | serviceActivity                               | [serviceActivity](../resources/serviceactivity.md)                            | A placeholder to allow for the desired URL path for Service Activity.                                                            |
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
