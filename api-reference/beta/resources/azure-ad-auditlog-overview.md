@@ -1,6 +1,6 @@
 ---
 title: "Activity reports API overview"
-description: "Use the activity reports API in Microsoft Graph to access the reports that Microsoft Entra ID creates to help you track user activity in a tenant."
+description: "Use the activity reports API in Microsoft Graph to access the reports that Microsoft Entra creates to help you track user activity in a tenant."
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: "identity-and-access-reports"
@@ -14,13 +14,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Entra ID tracks user activity and creates reports that help you understand how your users access and use Microsoft Entra services. Use the Microsoft Graph API for Microsoft Entra ID to analyze the data in these reports and to create custom solutions tailored to your organization's specific needs.
+Microsoft Entra ID tracks user activity and creates reports that help you understand how your users access and use Microsoft Entra services. Use the Microsoft Graph API for Microsoft Entra to analyze the data in these reports and to create custom solutions tailored to your organization's specific needs.
 
 The availability of these activity reports is governed by the Microsoft Entra data retention policies. For more information, see [data retention policies](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data).
 
 ## What are activity reports?
 
-Microsoft Entra ID provides three types of activity reports:
+Microsoft Entra provides three types of activity reports:
 
 - Directory audits
 - Sign-ins

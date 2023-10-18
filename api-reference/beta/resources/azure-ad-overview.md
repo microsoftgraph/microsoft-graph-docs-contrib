@@ -1,6 +1,6 @@
 ---
 title: "Working with Microsoft Entra resources in Microsoft Graph"
-description: "Microsoft Graph for Microsoft Entra ID provides REST APIs to help manage your organization, resources, and assets."
+description: "Microsoft Graph for Microsoft Entra provides REST APIs to help manage your organization, resources, and assets."
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: "identity-and-access"
@@ -12,7 +12,7 @@ ms.date: 11/29/2022
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-With Microsoft Graph, you can access [Microsoft Entra ID](/azure/active-directory/active-directory-whatis) resources to enable scenarios like managing administrator (directory) roles, inviting external users to an organization, and, if you are a [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider), managing your customer's data. Microsoft Graph also provides methods apps can use, for example, to discover information about users' transitive group and role memberships.
+With Microsoft Graph, you can access [Microsoft Entra](/azure/active-directory/active-directory-whatis) resources to enable scenarios like managing administrator (directory) roles, inviting external users to an organization, and, if you are a [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider), managing your customer's data. Microsoft Graph also provides methods apps can use, for example, to discover information about users' transitive group and role memberships.
 
 > **Note**: Some Microsoft Entra resources are documented in other sections of the API reference. For more information, see [Users](users.md) and [Groups](group.md).
 
@@ -34,11 +34,11 @@ The following table lists some common use cases for Microsoft Entra resources.
 | **Directory object and methods** | | |
 | `directoryObject` is the base class that many directory resources, like users and groups, inherit from. Microsoft Graph exposes several methods that you can use to discover information about users, groups, and other directory objects. For example, you can check for transitive membership in a list of groups, return all the groups and directory roles that a directory object is a transitive member of, or get all the resources of a specified type (like user or group) from a list of generic resource IDs. | [directoryObject](../resources/directoryobject.md) | N/A |
 | **Manage directory (administrator) roles, administrative units, directory settings, and policy** | | |
-| Activate directory roles in a Microsoft Entra tenant and manage user memberships in directory roles. Directory roles are also known as administrator roles. | [directoryRole](../resources/directoryrole.md) <br/>[directoryRoleTemplate](../resources/directoryroletemplate.md) |[Assigning administrator roles in Microsoft Entra ID](/azure/active-directory/active-directory-assign-admin-roles)|
+| Activate directory roles in a Microsoft Entra tenant and manage user memberships in directory roles. Directory roles are also known as administrator roles. | [directoryRole](../resources/directoryrole.md) <br/>[directoryRoleTemplate](../resources/directoryroletemplate.md) |[Assigning Microsoft Entra administrator roles](/azure/active-directory/active-directory-assign-admin-roles)|
 | Manage administrative units. Directory roles delegate tenant-wide authority to their members. An administrator can create and manage administrative units to delegate more granularly scoped administrative authority to users. | [administrativeUnit](../resources/administrativeunit.md) | [Administrative units management in Microsoft Entra ID](/azure/active-directory/active-directory-administrative-units-management) |
 | Apply predefined directory settings across a tenant or to individual resource instances. Currently, only settings for Microsoft 365 groups are supported. Directory settings control behaviors like blocked word lists for group display names, whether guest users are allowed to be group owners, and much more. | [directorySetting](../resources/directorysetting.md) <br/>[directorySettingTemplate](../resources/directorysettingtemplate.md)| [Microsoft Entra cmdlets for configuring group settings](/azure/active-directory/active-directory-accessmanagement-groups-settings-cmdlets)|
 | Apply Microsoft Entra policies to applications, service principals, groups, or the entire organization. Policies for claims mapping, token issuance, token lifetime, home realm discovery and more are supported.  | [Available policies](../resources/policy-overview.md) | N/A |
-| **Secure privileged access to Microsoft Entra ID** | | |
+| **Secure privileged access in Microsoft Entra** | | |
 | Manage and monitor time-bound privileged access to directory and Azure resources for administrators and IT professionals with Privileged Identity Management (PIM). | [Privileged Identity Management API](../resources/privilegedidentitymanagement-root.md) | [What is Microsoft Entra Privileged Identity Management?](/azure/active-directory/active-directory-privileged-identity-management-configure)|
 | Monitor identity risk events like users signing in from malware-infected devices or from unfamiliar locations. | [Identity Protection Service API](../resources/identityprotection-overview.md) | [Microsoft Entra ID Protection](/azure/active-directory/active-directory-identityprotection)<br/><br/>[Microsoft Entra risk events](/azure/active-directory/active-directory-reporting-risk-events) |
 | **Manage devices** | | |

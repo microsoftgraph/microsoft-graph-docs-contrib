@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Represents built-in identity providers with [External Identities](/azure/active-directory/external-identities/) for a Microsoft Entra tenant.
 
-For Microsoft Entra B2B scenarios in a Microsoft Entra tenant, the built-in identity provider type can be a Microsoft Entra ID, Microsoft account(MSA) or email one-time passcode (EmailOTP).
+For Microsoft Entra B2B scenarios in a Microsoft Entra tenant, the built-in identity provider type can be a Microsoft Entra ID, Microsoft account (MSA) or email one-time passcode (EmailOTP).
 
 This type will inherit from [identityProviderBase](../resources/identityproviderbase.md).
 
