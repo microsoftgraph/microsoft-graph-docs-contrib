@@ -1,6 +1,6 @@
 ---
 title: "riskyUser resource type"
-description: "Represents Microsoft Entra users who are at risk. Microsoft Entra ID continually evaluates user risk based on various signals and machine learning. This API provides programmatic access to all at-risk users in your Azure AD."
+description: "Represents Microsoft Entra users who are at risk. Microsoft Entra ID Protection continually evaluates user risk based on various signals and machine learning. This API provides programmatic access to all at-risk users in your Azure AD."
 author: "tracyshi"
 ms.localizationpriority: medium
 doc_type: resourcePageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents Microsoft Entra users who are at risk. Microsoft Entra ID continually evaluates user risk based on various signals and machine learning. This API provides programmatic access to all at-risk users in your Microsoft Entra ID.
+Represents Microsoft Entra users who are at risk. Microsoft Entra ID Protection continually evaluates user risk based on various signals and machine learning. This API provides programmatic access to all at-risk users in your Microsoft Entra tenant.
 
 For more information about risk events, see [Microsoft Entra ID Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 

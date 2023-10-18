@@ -70,7 +70,7 @@ PIM allows you to configure various rules including:
 - Whether MFA is required to both activate and enforce a role assignment
 - The principals who get notified of role activations
 
-The following table lists scenarios for using PIM to manage Microsoft Entra ID rules and the APIs to call.
+The following table lists scenarios for using PIM to manage rules for Microsoft Entra roles and the APIs to call.
 
 | Scenarios                                                                                                                                 | API                                                                                                      |
 |--------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -149,7 +149,7 @@ The tenant where Privileged Identity Management is being used must have enough p
 
 - See the following articles to learn more about working with PIM APIs:
   - [Working with rules for Microsoft Entra roles in PIM APIs](/graph/identity-governance-pim-rules-overview).
-  - [Use PIM APIs to update Microsoft Entra ID rules (settings)](/graph/how-to-pim-update-rules).
+  - [Use PIM APIs to update rules (settings) for Microsoft Entra roles](/graph/how-to-pim-update-rules).
   - [Manage security alerts for Microsoft Entra roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
   - [Tutorial: Use PIM APIs to assign Microsoft Entra roles](/graph/tutorial-assign-azureadroles).
 - To learn more about security operations, see [Microsoft Entra security operations for Privileged Identity Management](/azure/active-directory/architecture/security-operations-privileged-identity-management?source=docs#privileged-identity-management-alerts) in the Microsoft Entra architecture center.

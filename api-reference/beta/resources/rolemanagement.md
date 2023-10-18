@@ -23,8 +23,8 @@ The unified role management API currently supports the following RBAC providers 
 - Exchange Online
  
 For more information, see: 
-* [Roles in Microsoft 365, including Microsoft Entra ID, service-specific and cross-service roles](/azure/active-directory/roles/concept-understand-roles#how-azure-ad-roles-are-different-from-other-microsoft-365-roles) 
-* [Administrator role permissions in Microsoft Entra ID](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
+* [Roles in Microsoft 365, Microsoft Entra, service-specific and cross-service roles](/azure/active-directory/roles/concept-understand-roles#how-azure-ad-roles-are-different-from-other-microsoft-365-roles) 
+* [Administrator role permissions in Microsoft Entra](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
 * [Delegation and roles in Microsoft Entra entitlement management](/azure/active-directory/governance/entitlement-management-delegate).
 * [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control)
 * [Understanding Role Based Access Control in Exchange Online](/exchange/understanding-role-based-access-control-exchange-2013-help)
