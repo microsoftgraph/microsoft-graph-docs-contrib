@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following shows an example of a request.
+Here's an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/beta/security/labels/categories/{categoryTemplat
 ---
 
 ### Response
-The following shows an example of the response.
+Here's an example of the response.
 >**Note:** The response object shown here may be shortened for readability.
 <!-- {
   "blockType": "response",
