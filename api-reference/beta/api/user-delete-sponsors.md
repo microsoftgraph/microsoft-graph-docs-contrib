@@ -36,7 +36,7 @@ DELETE /users/{id}/sponsors/{id}/$ref
 ```
 
 > [!CAUTION]
-> If `/$ref` is not appended to the request and the calling app has permissions to manage the sponsor object type, the sponsor object is also deleted from Azure Active Directory (Azure AD); otherwise, a `403 Forbidden` error is returned. For example, an app with `User.ReadWrite.All` permissions deletes a user who is a sponsor. You can restore specific objects through the [Restore deleted items API](directory-deleteditems-restore.md).
+> If `/$ref` is not appended to the request and the calling app has permissions to manage the sponsor object type, the sponsor object is also deleted from Microsoft Entra ID; otherwise, a `403 Forbidden` error is returned. For example, an app with `User.ReadWrite.All` permissions deletes a user who is a sponsor. You can restore specific objects through the [Restore deleted items API](directory-deleteditems-restore.md).
 
 ## Request headers
 

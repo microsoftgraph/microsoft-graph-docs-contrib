@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 Get the risk history of a [riskyServicePrincipal](../resources/riskyServicePrincipal.md) object.
 
->**Note:** Using the riskyServicePrincipal API requires an Entra Workload Identity Premium license.
+>**Note:** Using the riskyServicePrincipal API requires a Microsoft Entra Workload ID Premium license.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
