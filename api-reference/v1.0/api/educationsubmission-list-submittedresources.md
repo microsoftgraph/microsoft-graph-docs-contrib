@@ -206,7 +206,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Using `$orderby` to get submitted resources
+### Example 3: Using `$orderby` to get submitted resources
 
 #### Request
 The following is an example of the request.

@@ -36,7 +36,6 @@ This method only supports the `$top` OData query parameter.
 GET /education/classes/{educationClassId}/assignmentCategories/delta
 GET /education/classes/{educationClassId}/assignments/{educationAssignmentId}/categories/delta
 ```
-All [properties](/graph/api/resources/educationcategorydelta#properties) are supported for the query parameters `$filter` and `$orderby`.
 
 ## Request headers
 |Name|Description|

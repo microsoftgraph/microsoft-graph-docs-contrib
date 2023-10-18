@@ -28,8 +28,6 @@ One of the following permissions is required to call this API. To learn more, in
 ## Optional query parameters
 This method only supports the `$top` OData query parameter.
 
-All [properties](/graph/api/resources/educationassignmentdelta#properties) are supported for the query parameters `$filter` and `$orderby`.
-
 ## HTTP request
 
 <!-- {

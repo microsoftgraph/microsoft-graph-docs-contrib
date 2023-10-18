@@ -319,7 +319,7 @@ Content-length: 4492
     ]
 }
 ```
-### Example 2: Using `$filter` to get submissions
+### Example 3: Using `$filter` to get submissions
 
 ### Request
 The following is an example of the request.
@@ -401,7 +401,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Using `$orderby` to get submissions
+### Example 4: Using `$orderby` to get submissions
 
 ### Request
 The following is an example of the request.
