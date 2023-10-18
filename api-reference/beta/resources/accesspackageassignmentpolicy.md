@@ -1,6 +1,6 @@
 ---
 title: "accessPackageAssignmentPolicy resource type"
-description: "An access package assignment policy specifies the policy by which subjects may request or be assigned an access package via an access package assignment."
+description: "An access package assignment policy specifies the policy by which subjects can request or be assigned an access package via an access package assignment."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
@@ -33,13 +33,13 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |accessPackageId|String|Identifier of the access package.|
-|accessReviewSettings|[assignmentReviewSettings](assignmentreviewsettings.md)|Who must review, and how often, the assignments to the access package from this policy. This property is null if reviews are not required.|
+|accessReviewSettings|[assignmentReviewSettings](assignmentreviewsettings.md)|Who must review, and how often, the assignments to the access package from this policy. This property is null if reviews aren't required.|
 |canExtend|Boolean|Indicates whether a user can extend the access package assignment duration after approval.|
 |createdBy|String|Read-only.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |description|String|The description of the policy.|
 |displayName|String|The display name of the policy. Supports `$filter` (`eq`).|
-|durationInDays|Int32|The number of days in which assignments from this policy last until they are expired.|
+|durationInDays|Int32|The number of days in which assignments from this policy last until they're expired.|
 |expirationDateTime|DateTimeOffset|The expiration date for assignments created in this policy. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String| Read-only.|
 |modifiedBy|String|Read-only.|
