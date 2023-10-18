@@ -16,7 +16,7 @@ Add members to an [updatableAssetGroup](../resources/windowsupdates-updatableass
 
 You can add [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources as members, but may not add **updatableAssetGroup** resources as members.
 
-Adding an Azure AD device as a member of an updatable asset group automatically creates an **azureADDevice** object, if it does not already exist.
+Adding a Microsoft Entra device as a member of an updatable asset group automatically creates an **azureADDevice** object, if it does not already exist.
 
 You can also use the method [addMembersById](windowsupdates-updatableassetgroup-addmembersbyid.md) to add members.
 
