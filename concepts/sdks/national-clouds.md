@@ -48,6 +48,25 @@ The following example configures an [Interactive authentication provider](choose
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/NationalClouds.java" id="NationalCloudSnippet":::
 
+### [PHP](#tab/PHP)
+
+```php
+<?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
+
+// Uses https://graph.microsoft.com/.default scopes if none are specified
+$tokenRequestContext = new ClientCredentialContext(
+    'tenantId',
+    'clientId',
+    'clientSecret'
+);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes, NationalCloud::CHINA);
+
+
+
+```
+
 ### [PowerShell](#tab/powershell)
 
 ```powershell
