@@ -129,7 +129,7 @@ The eTag value is only modified when the folder's properties are changed, except
 | subscriptions      | [subscription][] collection | The set of subscriptions on the item. Only supported on the root of a drive.
 | thumbnails         | [thumbnailSet][] collection | Collection of [thumbnailSet][] objects associated with the item. For more information, see [getting thumbnails][]. Read-only. Nullable.
 | versions           | [driveItemVersion][] collection | The list of previous versions of the item. For more info, see [getting previous versions][]. Read-only. Nullable.
-| workbook           | [workbook][]                | For files that are Excel spreadsheets, accesses the workbook API to work with the spreadsheet's contents. Nullable.
+| workbook           | [workbook][]                | For files that are Excel spreadsheets, access to the workbook API to work with the spreadsheet's contents. Nullable.
 
 ## Instance Attributes
 
@@ -138,9 +138,9 @@ These properties are temporary and either define behavior the service should per
 
 | Property name                     | Type   | Description
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.conflictBehavior | string | The conflict resolution behavior for actions that create a new item. You can use the values *fail*, *replace*, or *rename*. The default for PUT is *replace*. An item will never be returned with this annotation. Write-only.
+| @microsoft.graph.conflictBehavior | string | The conflict resolution behavior for actions that create a new item. You can use the values *fail*, *replace*, or *rename*. The default for PUT is *replace*. An item is never returned with this annotation. Write-only.
 | @microsoft.graph.downloadUrl      | string | A URL that can be used to download this file's content. Authentication is not required with this URL. Read-only.
-| @microsoft.graph.sourceUrl        | string | When issuing a PUT request, this instance annotation can be used to instruct the service to download the contents of the URL, and store it as the file. Write-only.
+| @microsoft.graph.sourceUrl        | string | This instance annotation can be used to instruct the service to download the contents of the URL when issuing a PUT request, and stores it as the file. Write-only.
 
 >**Notes:**
 >The parameter `@microsoft.graph.conflictBehavior` should be included in the URL instead of the body of the request.
