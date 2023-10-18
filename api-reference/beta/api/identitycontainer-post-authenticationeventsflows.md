@@ -65,7 +65,9 @@ If successful, this method returns a `201 Created` response code and a JSON repr
 
 ## Examples
 
-### Example 1: Create a basic External Identities sign-up and sign-in user flow on an Azure AD customer tenant
+<a name='example-1-create-a-basic-external-identities-sign-up-and-sign-in-user-flow-on-an-azure-ad-customer-tenant'></a>
+
+### Example 1: Create a basic External Identities sign-up and sign-in user flow on a Microsoft Entra customer tenant
 
 #### Request
 The following is an example of a request. In this example, you create a user flow named "Woodgrove User Flow" with the following configuration.
@@ -257,7 +259,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Create a basic external identities sign-up and sign-in user flow with an attached application on an Azure AD customer tenant
+<a name='example-2-create-a-basic-external-identities-sign-up-and-sign-in-user-flow-with-an-attached-application-on-an-azure-ad-customer-tenant'></a>
+
+### Example 2: Create a basic external identities sign-up and sign-in user flow with an attached application on a Microsoft Entra customer tenant
 
 #### Request
 The following is an example of a request. In this example, you create a user flow named "Woodgrove User Flow" with the following configuration.
