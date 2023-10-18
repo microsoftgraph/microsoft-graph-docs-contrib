@@ -15,9 +15,9 @@ Namespace: microsoft.graph
 
 Activate a fileStorageContainer. 
 
-FileStorageContainers are created in an inactive state, indicated by the container's status property. A container must be activated in 24 hours after creation or will be automatically deleted. Upon successful activation, the container's status property is set to "active".
+FileStorageContainers are created in an inactive state, indicated by the container's status property. A container must be activated within 24 hours after creation or will be automatically deleted. Upon successful activation, the container's status property is set to "active".
 
-A fileStorageContainer can be activated by either calling the activate API, or calling any API that updates or modifies the container or its content. For example, uploading a file to a container will activate the container.
+A fileStorageContainer can be activated by calling the activate API or any API that updates or modifies the container or its content. For example, uploading a file to a container will activate the container.
 
 The application calling this API must have write permission to fileStorageContainers for the respective container type.
 
