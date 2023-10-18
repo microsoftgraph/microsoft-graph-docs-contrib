@@ -56,7 +56,7 @@ If successful, this method returns a `204 No Content` response code. It doesn't 
 
 ### Request
 
-The following shows an example of a request.
+Here's an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -71,7 +71,7 @@ DELETE https://graph.microsoft.com/v1.0/drives/22e064df-3562-4a3c-98c3-74721ca06
 
 ### Response
 
-The following shows an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
