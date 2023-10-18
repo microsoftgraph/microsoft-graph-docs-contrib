@@ -10,7 +10,7 @@ ms.date: 07/07/2022
 
 # Working with Microsoft Entra resources in Microsoft Graph
 
-With Microsoft Graph, you can access [Microsoft Entra ID](/azure/active-directory/active-directory-whatis) resources to enable scenarios like managing administrator (directory) roles, inviting external users to an organization, and, if you are a [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider), managing your customer's data. Microsoft Graph also provides methods that apps can use to, for example, discover information about users' transitive group and role memberships.
+With Microsoft Graph, you can access [Microsoft Entra](/azure/active-directory/active-directory-whatis) resources to enable scenarios like managing administrator (directory) roles, inviting external users to an organization, and, if you are a [Cloud Solution Provider (CSP)](https://partner.microsoft.com/cloud-solution-provider), managing your customer's data. Microsoft Graph also provides methods that apps can use to, for example, discover information about users' transitive group and role memberships.
 
 > **Note**: Some Microsoft Entra resources are documented in other sections of the API reference. For more information, see [Users](users.md) and [Groups](group.md).
 
