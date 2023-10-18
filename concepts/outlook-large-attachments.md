@@ -406,7 +406,7 @@ Content-type: image/jpeg
 Following the message example, the example request in this section shows using a `$select` parameter to get some of the metadata of a file attachment on a message, excluding **contentBytes**.
 
 #### Permissions
-Use the least privileged delegated or application permission, `Mail.Read`, as appropriate, for this operation. For more information, see [mail permissions](permissions-reference.md#mail-permissions).
+Use the least privileged delegated or application permission, `Mail.Read`, as appropriate, for this operation. For more information, see [mail permissions](permissions-reference.md).
 
 #### Request
 

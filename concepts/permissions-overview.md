@@ -107,7 +107,7 @@ This principle is applied to all relationships that are of [directoryObject](/gr
 
 ### Example scenario
 
-A group's members are users, groups, and devices. An app has been granted the Microsoft Graph [User.Read.All](permissions-reference.md#user.read.all) and [Group.Read.All](permissions-reference.md#group.read.all) permissions. The app calls the [list group members](/graph/api/group-list-members) API to retrieve the members of the group.
+A group's members are users, groups, and devices. An app has been granted the Microsoft Graph [User.Read.All](permissions-reference.md#userreadall) and [Group.Read.All](permissions-reference.md#groupreadall) permissions. The app calls the [list group members](/graph/api/group-list-members) API to retrieve the members of the group.
 
 To read the basic properties of a group's members that are users, the app needs at least the *User.Read.All* permission. To read the basic properties of a group's members that are groups, the app needs at least the *Group.Read.All* permission. To read the basic properties of a group's members that are devices, the app needs at least the *Device.Read.All* permission.
 

@@ -23,7 +23,7 @@ The rest of this article is based on the following example scenario:
 
 This article describes programmatically carrying out the following tasks with a shared or delegated calendar:
 
-- [Get calendar information about share recipients, delegates, and allowed permissions, and update individual permissions](#get-calendar-information-about-sharees-and-delegates-and-update-individual-permissions).
+- [Get calendar information about share recipients, delegates, and allowed permissions, and update individual permissions](#get-calendar-information-about-share-recipients-and-delegates-and-update-individual-permissions)
 - [Get the properties that describe the sharing or delegation of the calendar](#get-properties-of-a-shared-or-delegated-calendar).
 - [Get or set mailbox setting to receive meeting requests and responses for a delegated calendar](#get-or-set-mailbox-setting-to-receive-meeting-requests-and-responses).
 - [Delete a share recipient or delegate of a calendar](#delete-a-sharee-or-delegate-of-a-calendar).

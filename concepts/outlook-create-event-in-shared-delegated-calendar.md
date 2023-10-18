@@ -34,7 +34,7 @@ Signed in as Adele, get the calendars she has access to and identify the one Ale
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated permission, `Calendars.Read.Shared`. For more information, see the [Calendars.Read.Shared permission in the permissions reference](permissions-reference.md#calendars.read.shared).
+Use the least privileged delegated permission, `Calendars.Read.Shared`. For more information, see the [Calendars.Read.Shared permission in the permissions reference](permissions-reference.md#calendarsreadshared).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -138,7 +138,7 @@ Signed in as Adele, use the calendar ID obtained from step 1 to create an [event
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated permission, `Calendars.ReadWrite.Shared`. For more information, see [Calendars.ReadWrite.Shared permission in the permissions reference](permissions-reference.md#calendars.readwrite.shared).
+Use the least privileged delegated permission, `Calendars.ReadWrite.Shared`. For more information, see [Calendars.ReadWrite.Shared permission in the permissions reference](permissions-reference.md#calendarsreadwriteshared).
 
 <!-- {
   "blockType": "request",
@@ -416,7 +416,7 @@ Signed in as Christie, reply to the **event** as tentative, and include a reply 
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated permission, `Calendars.ReadWrite.Shared`. For more information, see [Calendars.ReadWrite.Shared permission in the permissions reference](permissions-reference.md#calendars.readwrite.shared).
+Use the least privileged delegated permission, `Calendars.ReadWrite.Shared`. For more information, see [Calendars.ReadWrite.Shared permission in the permissions reference](permissions-reference.md#calendarsreadwriteshared).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -487,7 +487,7 @@ Signed in as Adele, get the [eventMessage](/graph/api/resources/eventmessage) th
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated permission, `Mail.Read.Shared`. For more information, see [Mail.Read.Shared permission in the permissions reference](permissions-reference.md#mail.read.shared).
+Use the least privileged delegated permission, `Mail.Read.Shared`. For more information, see [Mail.Read.Shared permission in the permissions reference](permissions-reference.md#mailreadshared).
 
 
 # [HTTP](#tab/http)
@@ -617,7 +617,7 @@ Signed in as Alex, get the [event](/graph/api/resources/event) that Adele create
 
 **Microsoft Graph permissions**
 
-Use the least privileged delegated permission, `Calendars.Read`. For more information, see [Calendars.Read permission in the permissions reference](permissions-reference.md#calendars.read).
+Use the least privileged delegated permission, `Calendars.Read`. For more information, see [Calendars.Read permission in the permissions reference](permissions-reference.md#calendarsread).
 
 
 # [HTTP](#tab/http)
