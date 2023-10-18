@@ -12,7 +12,7 @@ request_body = UserAccountInformation(
 	country_code = "NO",
 )
 
-result = await graph_client.me.profile.account.by_account_id('userAccountInformation-id').patch(request_body = request_body)
+result = await graph_client.me.profile.account.by_account_id('userAccountInformation-id').patch(body = request_body)
 
 
 ```

@@ -13,7 +13,7 @@ request_body = UserSource(
 	included_sources = SourceType.Mailbox | SourceType.Site,
 )
 
-result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').custodians.by_custodian_id('custodian-id').user_sources.post(request_body = request_body)
+result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').custodians.by_custodian_id('custodian-id').user_sources.post(body = request_body)
 
 
 ```

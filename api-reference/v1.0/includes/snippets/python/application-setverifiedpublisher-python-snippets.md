@@ -12,7 +12,7 @@ request_body = SetVerifiedPublisherPostRequestBody(
 	verified_publisher_id = "1234567",
 )
 
-await graph_client.applications.by_application_id('application-id').set_verified_publisher.post(request_body = request_body)
+await graph_client.applications.by_application_id('application-id').set_verified_publisher.post(body = request_body)
 
 
 ```

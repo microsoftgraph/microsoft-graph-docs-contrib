@@ -1,6 +1,6 @@
 ---
 title: "completeSignup action"
-description: ""
+description: "Intune Androidforwork Androidmanagedstoreaccountenterprisesettings Completesignup Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

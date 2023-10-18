@@ -1,6 +1,6 @@
 ---
 title: "getDefaultTeamsDeviceNonGmsEnrollmentProfile action"
-description: ""
+description: "Intune Androidforwork Androiddeviceownerenrollmentprofile Getdefaultteamsdevicenongmsenrollmentprofile Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -14,7 +14,7 @@ request_body = UrlThreatSubmission(
 	web_url = "http://phishing.contoso.com",
 )
 
-result = await graph_client.security.threat_submission.url_threats.post(request_body = request_body)
+result = await graph_client.security.threat_submission.url_threats.post(body = request_body)
 
 
 ```

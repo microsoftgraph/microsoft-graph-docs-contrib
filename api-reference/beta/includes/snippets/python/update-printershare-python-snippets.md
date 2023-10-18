@@ -16,7 +16,7 @@ request_body = PrinterShare(
 	}
 )
 
-result = await graph_client.print.shares.by_share_id('printerShare-id').patch(request_body = request_body)
+result = await graph_client.print.shares.by_share_id('printerShare-id').patch(body = request_body)
 
 
 ```

@@ -12,7 +12,7 @@ request_body = WorkPosition(
 	is_current = True,
 )
 
-result = await graph_client.me.profile.positions.by_position_id('workPosition-id').patch(request_body = request_body)
+result = await graph_client.me.profile.positions.by_position_id('workPosition-id').patch(body = request_body)
 
 
 ```

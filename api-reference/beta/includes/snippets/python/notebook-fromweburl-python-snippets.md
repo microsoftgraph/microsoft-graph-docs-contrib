@@ -12,7 +12,7 @@ request_body = GetNotebookFromWebUrlPostRequestBody(
 	web_url = "webUrl value",
 )
 
-result = await graph_client.me.onenote.notebooks.get_notebook_from_web_url.post(request_body = request_body)
+result = await graph_client.me.onenote.notebooks.get_notebook_from_web_url.post(body = request_body)
 
 
 ```

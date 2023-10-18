@@ -21,7 +21,7 @@ request_body = TeamsTab(
 	}
 )
 
-result = await graph_client.chats.by_chat_id('chat-id').tabs.post(request_body = request_body)
+result = await graph_client.chats.by_chat_id('chat-id').tabs.post(body = request_body)
 
 
 ```

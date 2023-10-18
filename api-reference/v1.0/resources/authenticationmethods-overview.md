@@ -5,7 +5,7 @@ ms.localizationpriority: medium
 author: "jpettere"
 ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"
-ms.date: 10/21/2022
+ms.date: 09/12/2023
 ---
 
 # Azure AD authentication methods API overview
@@ -24,6 +24,8 @@ The authentication method APIs are used to manage a user's authentication method
 * You can retrieve details of a user's Windows Hello for Business registration, and delete it if the user has lost the device.
 * You can add an email address to a user. The user can then use that email as part of the Self-Service Password Reset (SSPR) process.
     * You can update that email, or delete it from the user.
+
+We don't recommend using the authentication methods APIs for scenarios where you need to iterate over your entire user population for auditing or security check purposes. For these types of scenarios, we recommend using the [authentication method registration and usage reporting APIs](/graph/api/resources/authenticationmethods-usage-insights-overview) (available on the `beta` endpoint only).
 
 ## What authentication methods can be managed in Microsoft Graph?
 
@@ -45,7 +47,7 @@ The following authentication methods are not yet supported in Microsoft Graph v1
 |Default method | Represents the method the user has selected as default for performing multi-factor authentication.| Change a user's default MFA method. <br/> **NOTE:** Managing the details of the default method is currently supported only through the MSOL `Get-MsolUser` and `Set-MsolUser` cmdlets, using the **StrongAuthenticationMethods** property. |
 |Hardware token | Allow users to perform multifactor authentication using a physical device that provides a one-time code. | Get a hardware token assigned to a user.|
 |Password | A password is currently the default primary authentication method in Azure AD.|Reset a user's password.|
-|Require re-register MFA | Represents a configuration that requires that when user signs in next time, they're requested to set up a new MFA authentication method.| **NOTE:** This feature is replaced by the individual authentication method APIs listed above. These can be used to delete a user's existing registered authentication methods; once the user has no more methods, they'll be prompted to register the next time they sign in where strong authentication is required (the user can also register at any time using [MySecurityInfo](https://aka.ms/mysecurityinfo)). This can be done using the Azure portal, Microsoft Graph APIs, and the Microsoft Graph Powershell SDK. The legacy version of this feature is currently supported only through the MSOL`Set-MsolUser` cmdlet, using the **StrongAuthenticationMethods** property. |
+|Require re-register MFA | Represents a configuration that requires that when user signs in next time, they're requested to set up a new MFA authentication method.| **NOTE:** This feature is replaced by the individual authentication method APIs listed above. These can be used to delete a user's existing registered authentication methods; once the user has no more methods, they'll be prompted to register the next time they sign in where strong authentication is required (the user can also register at any time using [MySecurityInfo](https://aka.ms/mysecurityinfo)). This can be done using the Microsoft Entra admin center, Microsoft Graph APIs, and the Microsoft Graph Powershell SDK. The legacy version of this feature is currently supported only through the MSOL`Set-MsolUser` cmdlet, using the **StrongAuthenticationMethods** property. |
 |Security questions and answers | Allow users to validate their identity when performing a self-service password reset. |Delete a security question a user registered.|
 
 ## Next steps

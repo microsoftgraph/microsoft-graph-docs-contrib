@@ -19,7 +19,7 @@ request_body = ResumePostRequestBody(
 	),
 )
 
-await graph_client.identity_governance.entitlement_management.acce_package_assignment_requests.by_acce_package_assignment_request_id('accessPackageAssignmentRequest-id').resume.post(request_body = request_body)
+await graph_client.identity_governance.entitlement_management.acce_package_assignment_requests.by_acce_package_assignment_request_id('accessPackageAssignmentRequest-id').resume.post(body = request_body)
 
 
 ```

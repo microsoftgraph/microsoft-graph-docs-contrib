@@ -33,7 +33,7 @@ request_body = SharedPCConfiguration(
 	maintenance_start_time = "11:59:24.7240000",
 )
 
-result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(body = request_body)
 
 
 ```

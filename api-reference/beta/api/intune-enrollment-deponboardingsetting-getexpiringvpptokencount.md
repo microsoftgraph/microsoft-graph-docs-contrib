@@ -1,6 +1,6 @@
 ---
 title: "getExpiringVppTokenCount function"
-description: ""
+description: "Intune Enrollment Deponboardingsetting Getexpiringvpptokencount Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

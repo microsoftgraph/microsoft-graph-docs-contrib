@@ -16,8 +16,10 @@ Namespace: microsoft.graph
 
 Create and send a notification targeting a user through Microsoft Graph. The notification is stored in the Microsoft Graph notification feed store, and is sent to all app clients on all device endpoints that the user is signed in to.  
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
-Your application service does not require any additional permissions to post notifications to your targeted user.  
+Your application service doesn't require any additional permissions to post notifications to your targeted user.  
 
 > [!IMPORTANT]
 > If you choose to post notifications on behalf of a user via delegated permissions instead, one of the following permissions is required to call this API. We don't recommend this option for creating notifications. If you'd like to learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,20 +50,20 @@ POST /me/notifications/
 In the request body, supply a JSON representation of a [notification](../resources/projectrome-notification.md) object.
 
 ## Response
-If successful, this method returns a `201 Created` response code that indicates that the notification was successfully created and stored. The notification will be subsequently fanned-out to all specified endpoints with a valid subscription. 
+If successful, this method returns a `201 Created` response code that indicates that the notification was successfully created and stored. The notification is later fanned-out to all specified endpoints with a valid subscription. 
 
 The following table lists the possible error and response codes that can be returned.
 
-|Error code             | Descrition                              |
+|Error code             | Description                              |
 |:-----------------------------------|:----------------------------------------------------------|
-|HttpStatusCode.BadRequest           | Body is an array (multiple notifications is not supported).|
+|HttpStatusCode.BadRequest           | Body is an array (multiple notifications isn't supported).|
 |HttpStatusCode.BadRequest           | Body doesn't match the contract for the API.               |
 |HttpStatusCode.Forbidden            | Caller is on the blocked list.                          |
-|HttpStatusCode.MethodNotAllowed     | The HTTP method used is not supported.                     |
-|HttpStatusCode.BadRequest           | Unsupported headers are present in the request. Two headers are not supported:<br/><br/>If-Modified-Since<br/>If-Range |                    
+|HttpStatusCode.MethodNotAllowed     | The HTTP method used isn't supported.                     |
+|HttpStatusCode.BadRequest           | Unsupported headers are present in the request. Two headers aren't supported:<br/><br/>If-Modified-Since<br/>If-Range |                    
 |HttpStatusCode.UnsupportedMediaType | The header Content-Encoding is present and has compression algorithm values other than `Deflate` or `Gzip`.  |
 |HttpStatusCode.BadRequest           | Invalid payload.                                           |
-|HttpStatusCode.Forbidden            | Caller is not authorized to act on behalf of the user or send notification to the user.                         |
+|HttpStatusCode.Forbidden            | Caller isn't authorized to act on behalf of the user or send notification to the user.                         |
 |HttpStatusCode.Unauthorized         |    Request body contains invalid activity data types.        |
 |HttpStatusCode.OK                   |     Activity successfully created.                            |
 |HttpStatusCode.NotAcceptable        |    Request has been throttled or the server is busy.    |
@@ -69,7 +71,7 @@ The following table lists the possible error and response codes that can be retu
 
 ## Example
 ### Request
-The following is an example of a request.
+Here's an example of a request.
 
 ```http
 POST https://graph.microsoft.com/beta/me/notifications/
@@ -99,7 +101,7 @@ Content-type: application/json
 ```
 
 ### Response
-The following is an example of the corresponding response.
+Here's an example of the corresponding response.
 
 ```http
 HTTP/1.1 201

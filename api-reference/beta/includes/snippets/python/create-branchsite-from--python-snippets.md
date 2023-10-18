@@ -15,7 +15,7 @@ request_body = BranchSite(
 	bandwidth_capacity = 500,
 )
 
-result = await graph_client.network_access.connectivity.branches.post(request_body = request_body)
+result = await graph_client.network_access.connectivity.branches.post(body = request_body)
 
 
 ```

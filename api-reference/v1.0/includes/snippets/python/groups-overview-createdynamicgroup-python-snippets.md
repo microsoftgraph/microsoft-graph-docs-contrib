@@ -22,7 +22,7 @@ request_body = Group(
 	membership_rule_processing_state = "on",
 )
 
-result = await graph_client.groups.post(request_body = request_body)
+result = await graph_client.groups.post(body = request_body)
 
 
 ```

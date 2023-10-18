@@ -12,7 +12,7 @@ request_body = MoveToCatalogPostRequestBody(
 	catalog_id = "3301434b-99bd-46be-923b-d762c30c8e8b",
 )
 
-await graph_client.identity_governance.entitlement_management.acce_packages.by_acce_package_id('accessPackage-id').move_to_catalog.post(request_body = request_body)
+await graph_client.identity_governance.entitlement_management.acce_packages.by_acce_package_id('accessPackage-id').move_to_catalog.post(body = request_body)
 
 
 ```

@@ -15,7 +15,7 @@ request_body = SocialIdentityProvider(
 	}
 )
 
-result = await graph_client.identity.identity_providers.by_identity_provider_id('identityProviderBase-id').patch(request_body = request_body)
+result = await graph_client.identity.identity_providers.by_identity_provider_id('identityProviderBase-id').patch(body = request_body)
 
 
 ```

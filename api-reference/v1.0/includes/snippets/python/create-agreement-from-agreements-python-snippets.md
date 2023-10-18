@@ -23,7 +23,7 @@ request_body = Agreement(
 	]
 )
 
-result = await graph_client.identity_governance.term_of_use.agreements.post(request_body = request_body)
+result = await graph_client.identity_governance.term_of_use.agreements.post(body = request_body)
 
 
 ```

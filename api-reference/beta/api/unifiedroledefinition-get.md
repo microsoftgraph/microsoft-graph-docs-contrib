@@ -18,9 +18,11 @@ Get the properties and relationships of a [unifiedRoleDefinition](../resources/u
 The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
-- directory (Azure AD directory roles)
-- entitlement management (Azure AD entitlement management)
+- directory (Microsoft Entra directory roles)
+- entitlement management (Microsoft Entra entitlement management)
 - Exchange Online
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -42,7 +44,9 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
-### For a directory (Azure AD) provider
+<a name='for-a-directory-azure-ad-provider'></a>
+
+### For a directory (Microsoft Entra ID) provider
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -197,6 +201,7 @@ Content-type: application/json
     "displayName": "Application Registration Reader",
     "isBuiltIn": false,
     "isEnabled": true,
+    "isPrivileged": false,
     "templateId": "f189965f-f560-4c59-9101-933d4c87a91a",
     "version": null,
     "rolePermissions": [
@@ -286,6 +291,7 @@ Content-type: application/json
     "displayName": "Groups Administrator",
     "isBuiltIn": true,
     "isEnabled": true,
+    "isPrivileged": false,
     "resourceScopes": [
         "/"
     ],
@@ -416,7 +422,7 @@ Content-type: application/json
 }
 ```
 
-## Example 4: Get the definition of a built-in role for the entitlement management provider
+### Example 4: Get the definition of a built-in role for the entitlement management provider
 
 #### Request
 
@@ -498,7 +504,7 @@ Content-type: application/json
 }
 ```
 
-## Example 5: Get the definition of a built-in role for the Exchange Online provider
+### Example 5: Get the definition of a built-in role for the Exchange Online provider
 
 #### Request
 
@@ -593,5 +599,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

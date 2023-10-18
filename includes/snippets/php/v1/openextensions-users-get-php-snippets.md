@@ -9,8 +9,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new MeRequestBuilderGetRequestConfiguration();
-$queryParameters = MeRequestBuilderGetRequestConfiguration::createQueryParameters();
+$requestConfiguration = new UserItemRequestBuilderGetRequestConfiguration();
+$queryParameters = UserItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->select = ["id","displayName","mail","mobilePhone"];
 $queryParameters->expand = ["extensions"];
 $requestConfiguration->queryParameters = $queryParameters;

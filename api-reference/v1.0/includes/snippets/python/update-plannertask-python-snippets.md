@@ -33,7 +33,7 @@ headers = {
 
 )
 
-result = await graph_client.planner.tasks.by_task_id('plannerTask-id').patch(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.planner.tasks.by_task_id('plannerTask-id').patch(body = request_body, request_configuration = request_configuration)
 
 
 ```

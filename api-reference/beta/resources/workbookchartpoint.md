@@ -28,7 +28,7 @@ Represents a point of a series in a chart.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |value|Json|Returns the value of a chart point. Read-only.|
-|id|string|unique identifier|
+|ID|string|unique identifier|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -37,7 +37,7 @@ Represents a point of a series in a chart.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",

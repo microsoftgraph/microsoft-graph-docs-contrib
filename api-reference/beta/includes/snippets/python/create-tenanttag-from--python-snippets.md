@@ -13,7 +13,7 @@ request_body = TenantTag(
 	description = "Tenants that have purchased extended support",
 )
 
-result = await graph_client.tenant_relationships.managed_tenants.tenant_tags.post(request_body = request_body)
+result = await graph_client.tenant_relationships.managed_tenants.tenant_tags.post(body = request_body)
 
 
 ```

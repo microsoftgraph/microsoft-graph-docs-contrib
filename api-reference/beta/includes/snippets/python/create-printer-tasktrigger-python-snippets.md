@@ -15,7 +15,7 @@ request_body = PrintTaskTrigger(
 	}
 )
 
-result = await graph_client.print.printers.by_printer_id('printer-id').task_triggers.post(request_body = request_body)
+result = await graph_client.print.printers.by_printer_id('printer-id').task_triggers.post(body = request_body)
 
 
 ```

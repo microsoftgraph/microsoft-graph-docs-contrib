@@ -1,6 +1,6 @@
 ---
 title: "Update insights"
-description: "Update properties of insightsSettings object"
+description: "Update privacy settings to display or return the specified type of insights in an organization."
 author: "simonhult"
 ms.localizationpriority: medium
 ms.prod: "insights"
@@ -13,11 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the privacy settings to display or return the specified type of insights in an organization. The type of settings can be contact insights, item insights, or people insights.
+Update privacy settings to display or return the specified type of insights in an organization. The type of settings can be contact insights, item insights, or people insights.
 
 To learn more about customizing insights privacy for your organization, see:
 -  [Customize item insights privacy](/graph/insights-customize-item-insights-privacy) 
 -  [Customize people insights privacy](/graph/insights-customize-people-insights-privacy)
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -38,7 +40,7 @@ To update settings for item insights or people insights, one of the following pe
 |Application | Not supported. |
 
 
->**Note:** Using delegated permissions for this operation to update insights for contacts, item, or people requires the signed-in user to have a global administrator role.
+>**Note:** Using delegated permissions for this operation to update insights for contacts, item, or people requires the signed-in user to have a Global Administrator role.
 
 
 ## HTTP request
@@ -73,24 +75,25 @@ PATCH /organization/{organizationId}/settings/peopleInsights
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+[!INCLUDE [table-intro](../../includes/update-property-table-intro.md)]
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
+|disabledForGroup|String| The ID of a Microsoft Entra group, of which the specified type of insights are disabled for its members. Default is `empty`. Optional.|
 |isEnabledInOrganization|Boolean| `true` if the specified type of insights are enabled for the organization; `false` if the specified type of insights are disabled for all users without exceptions. Default is `true`. Optional.|
-|disabledForGroup|String| The ID of an Azure AD group, of which the specified type of insights are disabled for its members. Default is `empty`. Optional.|
 
->**Note:** This operation does not verify the **disabledForGroup** property value if you include it in the request body. If you set the **disabledForGroup** property to a string, this operation does not check the existence of the corresponding Azure AD group. This means, if you set **disabledForGroup** to an Azure AD group that does not exist or is deleted afterwards, this operation will not be able to identify any group membership and disable item or people insights for any specific users. If **isEnabledInOrganization** is set to `true`, the operation will enable the specified type of insights for _all_ the users in the organization. 
+>**Note:** This operation does not verify the **disabledForGroup** property value if you include it in the request body. If you set the **disabledForGroup** property to a String, this operation does not check the existence of the corresponding Microsoft Entra group. This means, if you set **disabledForGroup** to a Microsoft Entra group that does not exist or is deleted afterwards, this operation will not be able to identify any group membership and disable item or people insights for any specific users. If **isEnabledInOrganization** is set to `true`, the operation will enable the specified type of insights for _all_ the users in the organization. 
+
 ## Response
 
-If successful, this method returns a `200 OK` response code and [insightsSettings](../resources/insightssettings.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [insightsSettings](../resources/insightssettings.md) object in the response body.
 
 ## Examples 
 
 ### Example 1: Update settings for contact insights
 #### Request
 
-The following is an example of a request that shows how an admin updates **isEnabledInOrganization** to enable contact insights for the specified organization; the default for **isEnabledInOrganization** is false, disabling contact insights. The example also sets the **disabledForGroup** privacy setting to prohibit displaying user's contact insights in a particular Azure AD group.
+The following example shows how an admin updates the **isEnabledInOrganization** property to enable contact insights for the specified organization; the default value for **isEnabledInOrganization** is `false`, disabling contact insights. The example also sets the **disabledForGroup** privacy setting to prohibit displaying user's contact insights in a particular Microsoft Entra group.
 
 
 # [HTTP](#tab/http)
@@ -167,7 +170,7 @@ Content-type: application/json
 ### Example 2: Update settings for item insights
 #### Request
 
-Here is an example request that shows how an admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying item insights of users in a particular Azure AD group.
+The following example shows how an admin updates the **disabledForGroup** privacy setting in order to prohibit displaying item insights of users in a particular Microsoft Entra group.
 
 
 
@@ -222,7 +225,7 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response. 
+The following is an example of the response. 
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -242,11 +245,10 @@ Content-type: application/json
 
 
 ### Example 3: Update settings for people insights
+
 #### Request
 
-The following is an example of a request that shows how an admin updates "**disabledForGroup**" privacy setting in order to prohibit displaying people insights of users in a particular Azure AD group.
-
-
+The following example shows how an admin updates the **disabledForGroup** privacy setting in order to prohibit displaying people insights of users in a particular Microsoft Entra group.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -318,6 +320,3 @@ Content-type: application/json
   "disabledForGroup": "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
 ```
-
-
-

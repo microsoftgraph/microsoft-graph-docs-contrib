@@ -8,10 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 graph_client = GraphServiceClient(request_adapter)
 
-request_body = ClearUserPreferredPresencePostRequestBody(
-)
 
-await graph_client.users.by_user_id('user-id').presence.clear_user_preferred_presence.post(request_body = request_body)
+await graph_client.users.by_user_id('user-id').presence.clear_user_preferred_presence.post()
 
 
 ```

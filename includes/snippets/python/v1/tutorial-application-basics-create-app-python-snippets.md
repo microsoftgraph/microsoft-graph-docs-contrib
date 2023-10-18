@@ -12,7 +12,7 @@ request_body = Application(
 	display_name = "My application",
 )
 
-result = await graph_client.applications.post(request_body = request_body)
+result = await graph_client.applications.post(body = request_body)
 
 
 ```

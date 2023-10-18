@@ -21,7 +21,7 @@ request_body = ProfileCardProperty(
 	]
 )
 
-result = await graph_client.admin.people.profile_card_properties.by_profile_card_propertie_id('profileCardProperty-id').patch(request_body = request_body)
+result = await graph_client.admin.people.profile_card_properties.by_profile_card_propertie_id('profileCardProperty-id').patch(body = request_body)
 
 
 ```

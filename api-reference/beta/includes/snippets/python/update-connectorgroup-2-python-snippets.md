@@ -13,7 +13,7 @@ request_body = ConnectorGroup(
 	region = ConnectorGroupRegion.Nam,
 )
 
-result = await graph_client.on_premise_publishing_profiles.by_on_premise_publishing_profile_id('onPremisesPublishingProfile-id').connector_groups.by_connector_group_id('connectorGroup-id').patch(request_body = request_body)
+result = await graph_client.on_premise_publishing_profiles.by_on_premise_publishing_profile_id('onPremisesPublishingProfile-id').connector_groups.by_connector_group_id('connectorGroup-id').patch(body = request_body)
 
 
 ```

@@ -29,6 +29,10 @@ To read information from Microsoft Graph, you first need to create a request obj
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="ReadRequestSnippet":::
 
+# [PHP](#tab/PHP)
+
+[!INCLUDE [sample-code](includes/snippets/php/create-requests-read.md)]
+
 # [PowerShell](#tab/powershell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-read.md)]
@@ -62,6 +66,10 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="SelectRequestSnippet":::
 
+# [PHP](#tab/PHP)
+
+[!INCLUDE [sample-code](includes/snippets/php/create-requests-select.md)]
+
 # [PowerShell](#tab/powershell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-select.md)]
@@ -80,7 +88,7 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 
 ## Retrieve a list of entities
 
-Retrieving a list of entities is similar to retrieving a single entity except there a number of other options for configuring the request. The `$filter` query parameter can be used to reduce the result set to only those rows that match the provided condition.  The `$orderBy` query parameter will request that the server provide the list of entities sorted by the specified properties.
+Retrieving a list of entities is similar to retrieving a single entity except there a number of other options for configuring the request. The `$filter` query parameter can be used to reduce the result set to only those rows that match the provided condition.  The `$orderby` query parameter will request that the server provide the list of entities sorted by the specified properties.
 
 [!INCLUDE [aad-advanced-queries-note](../../includes/aad-advanced-queries-note.md)]
 
@@ -95,6 +103,10 @@ Retrieving a list of entities is similar to retrieving a single entity except th
 # [Java](#tab/java)
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="ListRequestSnippet":::
+
+# [PHP](#tab/PHP)
+
+[!INCLUDE [sample-code](includes/snippets/php/create-requests-list.md)]
 
 # [PowerShell](#tab/powershell)
 
@@ -130,6 +142,10 @@ For SDKs that support a fluent style, collections of entities can be accessed us
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="ItemByIdRequestSnippet":::
 
+# [PHP](#tab/PHP)
+
+[!INCLUDE [sample-code](includes/snippets/php/create-requests-index.md)]
+
 # [PowerShell](#tab/powershell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-index.md)]
@@ -161,6 +177,10 @@ You can use the `$expand` filter to request a related entity, or collection of e
 # [Java](#tab/java)
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="ExpandRequestSnippet":::
+
+# [PHP](#tab/PHP)
+
+[!INCLUDE [sample-code](includes/snippets/php/create-requests-expand.md)]
 
 # [PowerShell](#tab/powershell)
 
@@ -194,6 +214,10 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="DeleteRequestSnippet":::
 
+# [PHP](#tab/PHP)
+
+[!INCLUDE [sample-code](includes/snippets/php/create-requests-delete.md)]
+
 # [PowerShell](#tab/powershell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-delete.md)]
@@ -226,11 +250,16 @@ For SDKs that support a fluent style, new items can be added to collections with
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="CreateRequestSnippet":::
 
+# [PHP](#tab/PHP)
+
+[!INCLUDE [sample-code](includes/snippets/php/create-requests-create.md)]
+
 # [PowerShell](#tab/powershell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-create.md)]
 
 # [Python](#tab/python)
+
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
@@ -240,7 +269,6 @@ For SDKs that support a fluent style, new items can be added to collections with
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="CreateRequestSnippet":::
 
----
 
 ## Updating an existing entity with PATCH
 
@@ -258,11 +286,16 @@ Most updates in Microsoft Graph are performed using a `PATCH` method and therefo
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="UpdateRequestSnippet":::
 
+# [PHP](#tab/PHP)
+
+[!INCLUDE [sample-code](includes/snippets/php/create-requests-update.md)]
+
 # [PowerShell](#tab/powershell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-update.md)]
 
 # [Python](#tab/python)
+
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
@@ -271,8 +304,6 @@ Most updates in Microsoft Graph are performed using a `PATCH` method and therefo
 # [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="UpdateRequestSnippet":::
-
----
 
 ## Use HTTP headers to control request behavior
 
@@ -290,11 +321,16 @@ You can use a `Header()` function to attach custom headers to a request. For Pow
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="HeadersRequestSnippet":::
 
+# [PHP](#tab/PHP)
+
+[!INCLUDE [sample-code](includes/snippets/php/create-requests-headers.md)]
+
 # [PowerShell](#tab/powershell)
 
 [!INCLUDE [sample-code](includes/snippets/powershell/create-requests-headers.md)]
 
 # [Python](#tab/python)
+
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
@@ -303,8 +339,6 @@ You can use a `Header()` function to attach custom headers to a request. For Pow
 # [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="HeadersRequestSnippet":::
-
----
 
 ## Provide custom query parameters
 
@@ -321,6 +355,10 @@ For SDKs that support a fluent style, you can provide custom query parameter val
 # [Java](#tab/java)
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateRequests.java" id="QueryParametersRequestSnippet":::
+
+# [PHP](#tab/PHP)
+
+[!INCLUDE [sample-code](includes/snippets/php/create-requests-queryparams.md)]
 
 # [PowerShell](#tab/powershell)
 

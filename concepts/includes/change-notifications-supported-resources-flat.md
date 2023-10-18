@@ -1,5 +1,5 @@
 ---
-author: FaithOmbongi
+author: "FaithOmbongi"
 ms.reviewer: ric.lewis
 ms.prod: "change-notifications"
 ms.topic: include
@@ -15,6 +15,7 @@ Currently, subscriptions are enabled for the following resources.
 - An [alert][] from the Microsoft Graph Security API.
 - A [baseTask][] (deprecated) of a user in Microsoft To-Do.*
 - A [callRecord][] produced after a call or meeting in Microsoft Teams.
+- A [callRecording][] for an online meeting in Teams.*
 - A [callTranscript][] for an online meeting in Teams.*
 - A [channel][] in Microsoft Teams.
 - A [chat][] in Microsoft Teams.
@@ -55,3 +56,4 @@ Currently, subscriptions are enabled for the following resources.
 [online meeting]: /graph/api/resources/onlinemeeting
 [baseTask]: /graph/api/resources/basetask
 [callTranscript]: /graph/api/resources/calltranscript
+[callRecording]: /graph/api/resources/callrecording

@@ -1,9 +1,9 @@
 ---
 title: "delegatedAdminRelationshipCustomerParticipant resource type"
 description: "Represents identification details of a customer in a delegated admin relationship."
-author: "koravva"
+author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.prod: partner-customer-administration
 doc_type: resourcePageType
 ---
 

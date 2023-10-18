@@ -16,7 +16,7 @@ request_body = IdentityApiConnector(
 	),
 )
 
-result = await graph_client.identity.api_connectors.by_api_connector_id('identityApiConnector-id').patch(request_body = request_body)
+result = await graph_client.identity.api_connectors.by_api_connector_id('identityApiConnector-id').patch(body = request_body)
 
 
 ```

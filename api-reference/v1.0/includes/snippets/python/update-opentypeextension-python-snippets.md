@@ -23,7 +23,7 @@ request_body = Extension(
 	}
 )
 
-result = await graph_client.groups.by_group_id('group-id').threads.by_thread_id('conversationThread-id').posts.by_post_id('post-id').extensions.by_extension_id('extension-id').patch(request_body = request_body)
+result = await graph_client.groups.by_group_id('group-id').threads.by_thread_id('conversationThread-id').posts.by_post_id('post-id').extensions.by_extension_id('extension-id').patch(body = request_body)
 
 
 ```

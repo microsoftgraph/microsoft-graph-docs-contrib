@@ -19,22 +19,22 @@ $customerLocationAddress->setOdataType('#microsoft.graph.physicalAddress');
 $customerLocationAddress->setCity('Buffalo');
 $customerLocationAddress->setCountryOrRegion('USA');
 $customerLocationAddress->setPostalCode('98052');
-$CustomerLocationAddress->setPostOfficeBox(null);
+$customerLocationAddress->setPostOfficeBox(null);
 $customerLocationAddress->setState('NY');
 $customerLocationAddress->setStreet('123 First Avenue');
-$CustomerLocationAddress->setType(null);
+$customerLocationAddress->setType(null);
 $additionalData = [
 	'type@odata.type' => '#microsoft.graph.physicalAddressType',
 ];
 $customerLocationAddress->setAdditionalData($additionalData);
 $customerLocation->setAddress($customerLocationAddress);
-$CustomerLocation->setCoordinates(null);
+$customerLocation->setCoordinates(null);
 $customerLocation->setDisplayName('Customer');
-$CustomerLocation->setLocationEmailAddress(null);
-$CustomerLocation->setLocationType(null);
-$CustomerLocation->setLocationUri(null);
-$CustomerLocation->setUniqueId(null);
-$CustomerLocation->setUniqueIdType(null);
+$customerLocation->setLocationEmailAddress(null);
+$customerLocation->setLocationType(null);
+$customerLocation->setLocationUri(null);
+$customerLocation->setUniqueId(null);
+$customerLocation->setUniqueIdType(null);
 $additionalData = [
 	'locationType@odata.type' => '#microsoft.graph.locationType',
 	'uniqueIdType@odata.type' => '#microsoft.graph.locationUniqueIdType',
@@ -107,22 +107,22 @@ $serviceLocationAddress->setOdataType('#microsoft.graph.physicalAddress');
 $serviceLocationAddress->setCity('Buffalo');
 $serviceLocationAddress->setCountryOrRegion('USA');
 $serviceLocationAddress->setPostalCode('98052');
-$ServiceLocationAddress->setPostOfficeBox(null);
+$serviceLocationAddress->setPostOfficeBox(null);
 $serviceLocationAddress->setState('NY');
 $serviceLocationAddress->setStreet('123 First Avenue');
-$ServiceLocationAddress->setType(null);
+$serviceLocationAddress->setType(null);
 $additionalData = [
 'type@odata.type' => '#microsoft.graph.physicalAddressType',
 ];
 $serviceLocationAddress->setAdditionalData($additionalData);
 $serviceLocation->setAddress($serviceLocationAddress);
-$ServiceLocation->setCoordinates(null);
+$serviceLocation->setCoordinates(null);
 $serviceLocation->setDisplayName('Customer location');
-$ServiceLocation->setLocationEmailAddress(null);
-$ServiceLocation->setLocationType(null);
-$ServiceLocation->setLocationUri(null);
-$ServiceLocation->setUniqueId(null);
-$ServiceLocation->setUniqueIdType(null);
+$serviceLocation->setLocationEmailAddress(null);
+$serviceLocation->setLocationType(null);
+$serviceLocation->setLocationUri(null);
+$serviceLocation->setUniqueId(null);
+$serviceLocation->setUniqueIdType(null);
 $additionalData = [
 'locationType@odata.type' => '#microsoft.graph.locationType',
 'uniqueIdType@odata.type' => '#microsoft.graph.locationUniqueIdType',

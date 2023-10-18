@@ -13,7 +13,7 @@ request_body = EducationSchool(
 	description = "Magnate school for the arts. Los Angeles School District",
 )
 
-result = await graph_client.education.schools.by_school_id('educationSchool-id').patch(request_body = request_body)
+result = await graph_client.education.schools.by_school_id('educationSchool-id').patch(body = request_body)
 
 
 ```

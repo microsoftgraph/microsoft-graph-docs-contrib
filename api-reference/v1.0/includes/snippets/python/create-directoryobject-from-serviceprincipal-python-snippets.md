@@ -12,7 +12,7 @@ request_body = ReferenceCreate(
 	odata_id = "https://graph.microsoft.com/v1.0/directoryObjects/{id}",
 )
 
-await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').owners.ref.post(request_body = request_body)
+await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').owners.ref.post(body = request_body)
 
 
 ```

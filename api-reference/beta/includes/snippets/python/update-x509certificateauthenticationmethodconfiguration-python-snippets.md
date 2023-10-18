@@ -34,6 +34,9 @@ request_body = X509CertificateAuthenticationMethodConfiguration(
 			),
 		]
 	),
+	issuer_hints_configuration = X509CertificateIssuerHintsConfiguration(
+		state = X509CertificateIssuerHintsState.Disabled,
+	),
 	include_targets = [
 		AuthenticationMethodTarget(
 			target_type = AuthenticationMethodTargetType.Group,
@@ -43,7 +46,7 @@ request_body = X509CertificateAuthenticationMethodConfiguration(
 	]
 )
 
-result = await graph_client.policies.authentication_method_policy.authentication_method_configurations.by_authentication_method_configuration_id('authenticationMethodConfiguration-id').patch(request_body = request_body)
+result = await graph_client.policies.authentication_method_policy.authentication_method_configurations.by_authentication_method_configuration_id('authenticationMethodConfiguration-id').patch(body = request_body)
 
 
 ```

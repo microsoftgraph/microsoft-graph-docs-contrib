@@ -17,7 +17,7 @@ request_body = DirectorySetting(
 	]
 )
 
-result = await graph_client.settings.by_setting_id('directorySetting-id').patch(request_body = request_body)
+result = await graph_client.settings.by_setting_id('directorySetting-id').patch(body = request_body)
 
 
 ```

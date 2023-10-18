@@ -18,7 +18,7 @@ request_body = DeviceComplianceActionItem(
 	]
 )
 
-result = await graph_client.device_management.device_compliance_policies.by_device_compliance_policie_id('deviceCompliancePolicy-id').scheduled_action_for_rule.by_scheduled_action_for_rule_id('deviceComplianceScheduledActionForRule-id').scheduled_action_configurations.by_scheduled_action_configuration_id('deviceComplianceActionItem-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_compliance_policies.by_device_compliance_policie_id('deviceCompliancePolicy-id').scheduled_action_for_rule.by_scheduled_action_for_rule_id('deviceComplianceScheduledActionForRule-id').scheduled_action_configurations.by_scheduled_action_configuration_id('deviceComplianceActionItem-id').patch(body = request_body)
 
 
 ```

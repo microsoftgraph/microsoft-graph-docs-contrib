@@ -16,7 +16,7 @@ request_body = CreateUploadSessionPostRequestBody(
 	),
 )
 
-result = await graph_client.print.shares.by_share_id('printerShare-id').jobs.by_job_id('printJob-id').documents.by_document_id('printDocument-id').create_upload_session.post(request_body = request_body)
+result = await graph_client.print.shares.by_share_id('printerShare-id').jobs.by_job_id('printJob-id').documents.by_document_id('printDocument-id').create_upload_session.post(body = request_body)
 
 
 ```

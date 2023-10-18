@@ -14,7 +14,7 @@ request_body = PermissionGrantPolicy(
 	description = "A custom permission grant policy to customize conditions for granting consent.",
 )
 
-result = await graph_client.policies.permission_grant_policies.post(request_body = request_body)
+result = await graph_client.policies.permission_grant_policies.post(body = request_body)
 
 
 ```

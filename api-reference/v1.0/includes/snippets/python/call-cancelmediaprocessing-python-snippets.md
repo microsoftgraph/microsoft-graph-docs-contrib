@@ -12,7 +12,7 @@ request_body = CancelMediaProcessingPostRequestBody(
 	client_context = "clientContext-value",
 )
 
-result = await graph_client.communications.calls.by_call_id('call-id').cancel_media_processing.post(request_body = request_body)
+result = await graph_client.communications.calls.by_call_id('call-id').cancel_media_processing.post(body = request_body)
 
 
 ```

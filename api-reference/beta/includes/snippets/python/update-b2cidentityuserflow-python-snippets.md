@@ -13,7 +13,7 @@ request_body = B2cIdentityUserFlow(
 	default_language_tag = "en",
 )
 
-result = await graph_client.identity.b2c_user_flows.by_b2c_user_flow_id('b2cIdentityUserFlow-id').patch(request_body = request_body)
+result = await graph_client.identity.b2c_user_flows.by_b2c_user_flow_id('b2cIdentityUserFlow-id').patch(body = request_body)
 
 
 ```

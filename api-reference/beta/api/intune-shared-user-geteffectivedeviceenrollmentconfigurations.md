@@ -1,6 +1,6 @@
 ---
 title: "getEffectiveDeviceEnrollmentConfigurations function"
-description: ""
+description: "Intune Shared User Geteffectivedeviceenrollmentconfigurations Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

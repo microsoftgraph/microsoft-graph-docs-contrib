@@ -15,7 +15,7 @@ request_body = TooManyGlobalAdminsAssignedToTenantAlertConfiguration(
 	percentage_of_global_admins_out_of_roles_threshold = 70,
 )
 
-result = await graph_client.identity_governance.role_management_alerts.alert_configurations.by_alert_configuration_id('unifiedRoleManagementAlertConfiguration-id').patch(request_body = request_body)
+result = await graph_client.identity_governance.role_management_alerts.alert_configurations.by_alert_configuration_id('unifiedRoleManagementAlertConfiguration-id').patch(body = request_body)
 
 
 ```

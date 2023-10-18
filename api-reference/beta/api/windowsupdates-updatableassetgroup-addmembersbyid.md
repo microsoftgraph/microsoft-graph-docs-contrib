@@ -16,6 +16,8 @@ Add members of the same type to an [updatableAssetGroup](../resources/windowsupd
 
 You can also use the method [addMembers](windowsupdates-updatableassetgroup-addmembers.md) to add members.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

@@ -15,7 +15,7 @@ request_body = AccessPackageCatalog(
 	is_externally_visible = True,
 )
 
-result = await graph_client.identity_governance.entitlement_management.catalogs.post(request_body = request_body)
+result = await graph_client.identity_governance.entitlement_management.catalogs.post(body = request_body)
 
 
 ```

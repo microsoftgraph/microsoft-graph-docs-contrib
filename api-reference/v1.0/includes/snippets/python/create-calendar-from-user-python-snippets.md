@@ -12,7 +12,7 @@ request_body = Calendar(
 	name = "Volunteer",
 )
 
-result = await graph_client.me.calendars.post(request_body = request_body)
+result = await graph_client.me.calendars.post(body = request_body)
 
 
 ```

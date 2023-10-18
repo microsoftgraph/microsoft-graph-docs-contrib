@@ -13,7 +13,7 @@ request_body = MobileAppCategory(
 	display_name = "Display Name value",
 )
 
-result = await graph_client.device_app_management.mobile_app_categories.by_mobile_app_categorie_id('mobileAppCategory-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.mobile_app_categories.by_mobile_app_categorie_id('mobileAppCategory-id').patch(body = request_body)
 
 
 ```

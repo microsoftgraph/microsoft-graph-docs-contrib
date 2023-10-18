@@ -22,7 +22,7 @@ request_body = VppToken(
 	country_or_region = "Country Or Region value",
 )
 
-result = await graph_client.device_app_management.vpp_tokens.post(request_body = request_body)
+result = await graph_client.device_app_management.vpp_tokens.post(body = request_body)
 
 
 ```

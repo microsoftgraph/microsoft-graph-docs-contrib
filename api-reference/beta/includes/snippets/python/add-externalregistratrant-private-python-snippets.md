@@ -15,7 +15,7 @@ request_body = ExternalMeetingRegistrant(
 	user_id = "cc515404-b55c-466e-b896-992c918ecc01",
 )
 
-result = await graph_client.me.online_meetings.by_online_meeting_id('onlineMeeting-id').registration.registrants.post(request_body = request_body)
+result = await graph_client.me.online_meetings.by_online_meeting_id('onlineMeeting-id').registration.registrants.post(body = request_body)
 
 
 ```

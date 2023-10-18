@@ -44,7 +44,7 @@ request_body = PrintJob(
 	),
 )
 
-result = await graph_client.print.printers.by_printer_id('printer-id').jobs.post(request_body = request_body)
+result = await graph_client.print.printers.by_printer_id('printer-id').jobs.post(body = request_body)
 
 
 ```

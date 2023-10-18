@@ -16,7 +16,7 @@ request_body = TokenLifetimePolicy(
 	is_organization_default = True,
 )
 
-result = await graph_client.policies.token_lifetime_policies.by_token_lifetime_policie_id('tokenLifetimePolicy-id').patch(request_body = request_body)
+result = await graph_client.policies.token_lifetime_policies.by_token_lifetime_policie_id('tokenLifetimePolicy-id').patch(body = request_body)
 
 
 ```

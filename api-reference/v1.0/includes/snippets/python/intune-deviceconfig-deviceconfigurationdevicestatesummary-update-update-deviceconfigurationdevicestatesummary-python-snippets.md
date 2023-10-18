@@ -19,7 +19,7 @@ request_body = DeviceConfigurationDeviceStateSummary(
 	conflict_device_count = 3,
 )
 
-result = await graph_client.device_management.device_configuration_device_state_summaries.patch(request_body = request_body)
+result = await graph_client.device_management.device_configuration_device_state_summaries.patch(body = request_body)
 
 
 ```

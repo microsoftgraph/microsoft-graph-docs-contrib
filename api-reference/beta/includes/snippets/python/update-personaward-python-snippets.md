@@ -13,7 +13,7 @@ request_body = PersonAward(
 	thumbnail_url = "https://iabm.io/sdhdfhsdhshsd.jpg",
 )
 
-result = await graph_client.users.by_user_id('user-id').profile.awards.by_award_id('personAward-id').patch(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').profile.awards.by_award_id('personAward-id').patch(body = request_body)
 
 
 ```

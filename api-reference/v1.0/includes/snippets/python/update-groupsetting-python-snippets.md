@@ -17,7 +17,7 @@ request_body = GroupSetting(
 	]
 )
 
-result = await graph_client.groups.by_group_id('group-id').settings.by_setting_id('groupSetting-id').patch(request_body = request_body)
+result = await graph_client.groups.by_group_id('group-id').settings.by_setting_id('groupSetting-id').patch(body = request_body)
 
 
 ```

@@ -28,7 +28,7 @@ request_body = DeviceLink(
 	),
 )
 
-result = await graph_client.network_access.connectivity.branches.by_branche_id('branchSite-id').device_links.post(request_body = request_body)
+result = await graph_client.network_access.connectivity.branches.by_branche_id('branchSite-id').device_links.post(body = request_body)
 
 
 ```

@@ -25,7 +25,7 @@ request_body = MailboxSettings(
 	}
 )
 
-result = await graph_client.me.mailbox_settings.patch(request_body = request_body)
+result = await graph_client.me.mailbox_settings.patch(body = request_body)
 
 
 ```

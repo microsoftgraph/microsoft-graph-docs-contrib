@@ -16,7 +16,7 @@ request_body = GetApplicablePolicyRequirementsPostRequestBody(
 	}
 )
 
-result = await graph_client.identity_governance.entitlement_management.acce_packages.by_acce_package_id('accessPackage-id').get_applicable_policy_requirements.post(request_body = request_body)
+result = await graph_client.identity_governance.entitlement_management.acce_packages.by_acce_package_id('accessPackage-id').get_applicable_policy_requirements.post(body = request_body)
 
 
 ```

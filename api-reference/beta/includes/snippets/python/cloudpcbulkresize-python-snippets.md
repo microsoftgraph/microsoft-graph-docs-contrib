@@ -16,7 +16,7 @@ request_body = BulkResizePostRequestBody(
 	target_service_plan_id = "662009bc-7732-4f6f-8726-25883518b33e",
 )
 
-result = await graph_client.device_management.virtual_endpoint.cloud_p_cs.bulk_resize.post(request_body = request_body)
+result = await graph_client.device_management.virtual_endpoint.cloud_p_cs.bulk_resize.post(body = request_body)
 
 
 ```

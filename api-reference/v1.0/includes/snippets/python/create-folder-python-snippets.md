@@ -17,7 +17,7 @@ request_body = DriveItem(
 	}
 )
 
-result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').children.post(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').children.post(body = request_body)
 
 
 ```

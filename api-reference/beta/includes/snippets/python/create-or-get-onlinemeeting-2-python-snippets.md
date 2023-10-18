@@ -30,7 +30,7 @@ request_body = CreateOrGetPostRequestBody(
 	subject = "Create a meeting with customId provided",
 )
 
-result = await graph_client.me.online_meetings.create_or_get.post(request_body = request_body)
+result = await graph_client.me.online_meetings.create_or_get.post(body = request_body)
 
 
 ```

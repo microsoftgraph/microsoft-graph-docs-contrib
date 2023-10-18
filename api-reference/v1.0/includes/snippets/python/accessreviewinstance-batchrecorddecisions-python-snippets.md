@@ -14,7 +14,7 @@ request_body = BatchRecordDecisionsPostRequestBody(
 	resource_id = "a5c51e59-3fcd-4a37-87a1-835c0c21488a",
 )
 
-await graph_client.identity_governance.acce_reviews.definitions.by_definition_id('accessReviewScheduleDefinition-id').instances.by_instance_id('accessReviewInstance-id').batch_record_decisions.post(request_body = request_body)
+await graph_client.identity_governance.acce_reviews.definitions.by_definition_id('accessReviewScheduleDefinition-id').instances.by_instance_id('accessReviewInstance-id').batch_record_decisions.post(body = request_body)
 
 
 ```

@@ -2719,6 +2719,32 @@
       "CreatedDateTime": "2023-08-25T00:05:07.5076393Z",
       "WorkloadArea": "Reports",
       "SubArea": "Identity and access reports"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "73f50762-7b32-4890-a27f-1a2ec54482f6",
+          "ApiChange": "Enumeration",
+          "ChangedApiName": "releaseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **releaseType** enumeration type.",
+          "Target": "releaseType"
+        },
+        {
+          "Id": "73f50762-7b32-4890-a27f-1a2ec54482f6",
+          "ApiChange": "Property",
+          "ChangedApiName": "releaseType",
+          "ChangeType": "Addition",
+          "Description": "Added the **releaseType** property to the [recommendationBase](https://learn.microsoft.com/en-us/graph/api/resources/recommendationBase?view=graph-rest-beta) resource.",
+          "Target": "recommendationBase"
+        }
+      ],
+      "Id": "73f50762-7b32-4890-a27f-1a2ec54482f6",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-08-31T19:58:45.348003Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
     }
   ]
 }

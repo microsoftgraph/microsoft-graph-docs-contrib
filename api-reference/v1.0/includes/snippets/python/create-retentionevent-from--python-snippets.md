@@ -23,7 +23,7 @@ request_body = RetentionEvent(
 	}
 )
 
-result = await graph_client.security.triggers.retention_events.post(request_body = request_body)
+result = await graph_client.security.triggers.retention_events.post(body = request_body)
 
 
 ```

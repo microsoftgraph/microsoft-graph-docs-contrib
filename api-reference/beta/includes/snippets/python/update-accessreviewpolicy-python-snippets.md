@@ -12,7 +12,7 @@ request_body = AccessReviewPolicy(
 	is_group_owner_management_enabled = True,
 )
 
-result = await graph_client.policies.acces_review_policy.patch(request_body = request_body)
+result = await graph_client.policies.acces_review_policy.patch(body = request_body)
 
 
 ```

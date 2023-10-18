@@ -31,7 +31,7 @@ headers = {
 
 )
 
-result = await graph_client.me.calendar.get_schedule.post(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.me.calendar.get_schedule.post(body = request_body, request_configuration = request_configuration)
 
 
 ```

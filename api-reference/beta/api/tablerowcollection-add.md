@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Adds rows to the end of the table. Note that the API can accept multiple rows data using this API. Adding one row at a time could lead to performance degradation. The recommended approach would be to batch the rows together in a single call rather than doing single row insertion. For best results, collect the rows to be inserted on the application side and perform single rows add operation. Experiment with the number of rows to determine the ideal number of rows to use in single API call. 
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Error Handling
 
 This request might occasionally receive a 504 HTTP error. The appropriate response to this error is to repeat the request.

@@ -13,7 +13,7 @@ request_body = SocialIdentityProvider(
 	client_secret = "1111111111111",
 )
 
-result = await graph_client.identity.identity_providers.by_identity_provider_id('identityProviderBase-id').patch(request_body = request_body)
+result = await graph_client.identity.identity_providers.by_identity_provider_id('identityProviderBase-id').patch(body = request_body)
 
 
 ```

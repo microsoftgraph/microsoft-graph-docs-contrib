@@ -15,7 +15,7 @@ request_body = PrintTask(
 	),
 )
 
-result = await graph_client.print.task_definitions.by_task_definition_id('printTaskDefinition-id').tasks.by_task_id('printTask-id').patch(request_body = request_body)
+result = await graph_client.print.task_definitions.by_task_definition_id('printTaskDefinition-id').tasks.by_task_id('printTask-id').patch(body = request_body)
 
 
 ```

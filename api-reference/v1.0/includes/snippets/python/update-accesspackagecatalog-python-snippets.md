@@ -12,7 +12,7 @@ request_body = AccessPackageCatalog(
 	display_name = "Catalog One",
 )
 
-result = await graph_client.identity_governance.entitlement_management.catalogs.by_catalog_id('accessPackageCatalog-id').patch(request_body = request_body)
+result = await graph_client.identity_governance.entitlement_management.catalogs.by_catalog_id('accessPackageCatalog-id').patch(body = request_body)
 
 
 ```

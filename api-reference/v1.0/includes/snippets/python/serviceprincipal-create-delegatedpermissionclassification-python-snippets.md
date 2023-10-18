@@ -14,7 +14,7 @@ request_body = DelegatedPermissionClassification(
 	classification = PermissionClassificationType.Low,
 )
 
-result = await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').delegated_permission_classifications.post(request_body = request_body)
+result = await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').delegated_permission_classifications.post(body = request_body)
 
 
 ```

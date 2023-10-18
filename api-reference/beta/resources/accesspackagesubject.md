@@ -1,6 +1,6 @@
 ---
 title: "accessPackageSubject resource type"
-description: "In Azure AD entitlement management, a subject of an access package assignment."
+description: "In Microsoft Entra entitlement management, a subject of an access package assignment."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package subject is a user, service principal, or other entity that can be configured to request or be assigned an access package.  It may represent a requestor from a connected organization who is not yet in the tenant.
+In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package subject is a user, service principal, or other entity that can be configured to request or be assigned an access package.  It may represent a requestor from a connected organization who isn't yet in the tenant.
 
 ## Methods
 
@@ -26,12 +26,13 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
+|cleanupScheduledDateTime|DateTimeOffset|The date and time the subject is marked to be blocked from sign in or deleted. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.|
 |altSecId|String|Not Supported.|
 |connectedOrganizationId|String|The identifier of the connected organization of the subject.|
 |displayName|String|The display name of the subject.|
 |email|String|The email address of the subject.|
 |id|String| Read-only. Key.|
-|objectId|String|The object identifier of the subject. `null` if the subject is not yet a user in the tenant. Alternate key.|
+|objectId|String|The object identifier of the subject. `null` if the subject isn't yet a user in the tenant. Alternate key.|
 |principalName|String|The principal name, if known, of the subject.|
 |subjectLifecycle|accessPackageSubjectLifecycle|The lifecycle of the subject user, if a guest. The possible values are: `notDefined`, `notGoverned`, `governed`, `unknownFutureValue`.|
 |type|String|The resource type of the subject.|
@@ -45,7 +46,7 @@ In [Azure AD entitlement management](entitlementmanagement-overview.md), an acce
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -81,4 +82,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

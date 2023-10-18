@@ -36,7 +36,7 @@ The following authentication methods are derived from the **authenticationMethod
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

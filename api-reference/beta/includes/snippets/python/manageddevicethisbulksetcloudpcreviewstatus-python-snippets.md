@@ -20,7 +20,7 @@ request_body = BulkSetCloudPcReviewStatusPostRequestBody(
 	),
 )
 
-result = await graph_client.device_management.managed_devices.bulk_set_cloud_pc_review_status.post(request_body = request_body)
+result = await graph_client.device_management.managed_devices.bulk_set_cloud_pc_review_status.post(body = request_body)
 
 
 ```

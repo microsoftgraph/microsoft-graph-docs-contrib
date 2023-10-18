@@ -133,7 +133,7 @@ request_body = MdmWindowsInformationProtectionPolicy(
 	is_assigned = True,
 )
 
-result = await graph_client.device_app_management.mdm_window_information_protection_policies.post(request_body = request_body)
+result = await graph_client.device_app_management.mdm_window_information_protection_policies.post(body = request_body)
 
 
 ```

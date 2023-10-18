@@ -29,7 +29,7 @@ request_body = WorkPosition(
 	is_current = True,
 )
 
-result = await graph_client.me.profile.positions.post(request_body = request_body)
+result = await graph_client.me.profile.positions.post(body = request_body)
 
 
 ```

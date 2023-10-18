@@ -33,7 +33,7 @@ request_body = IosVppEBook(
 	used_license_count = 0,
 )
 
-result = await graph_client.device_app_management.managed_e_books.post(request_body = request_body)
+result = await graph_client.device_app_management.managed_e_books.post(body = request_body)
 
 
 ```

@@ -38,7 +38,7 @@ request_body = LearningContent(
 	is_searchable = True,
 )
 
-result = await graph_client.employee_experience.learning_providers.by_learning_provider_id('learningProvider-id').learning_contents.by_learning_content_id('learningContent-id').patch(request_body = request_body)
+result = await graph_client.employee_experience.learning_providers.by_learning_provider_id('learningProvider-id').learning_contents.by_learning_content_id('learningContent-id').patch(body = request_body)
 
 
 ```

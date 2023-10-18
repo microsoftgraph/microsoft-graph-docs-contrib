@@ -16,7 +16,7 @@ request_body = CreateUploadSessionPostRequestBody(
 	),
 )
 
-result = await graph_client.me.messages.by_message_id('message-id').attachments.create_upload_session.post(request_body = request_body)
+result = await graph_client.me.messages.by_message_id('message-id').attachments.create_upload_session.post(body = request_body)
 
 
 ```

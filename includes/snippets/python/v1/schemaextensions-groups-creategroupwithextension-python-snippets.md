@@ -26,7 +26,7 @@ request_body = Group(
 	}
 )
 
-result = await graph_client.groups.post(request_body = request_body)
+result = await graph_client.groups.post(body = request_body)
 
 
 ```

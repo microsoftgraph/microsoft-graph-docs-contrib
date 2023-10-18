@@ -17,6 +17,6 @@ $location->setLongitude(2.2);
 $location->setAltitudeInMeters(3);
 $requestBody->setLocation($location);
 
-$result = $graphServiceClient->print()->printers()->byPrinterId('printer-id')->patch($requestBody)->wait();
+$result = $graphServiceClient->escapedPrint()->printers()->byPrinterId('printer-id')->patch($requestBody)->wait();
 
 ```

@@ -32,7 +32,7 @@ request_body = MacOSCompliancePolicy(
 	firewall_enable_stealth_mode = True,
 )
 
-result = await graph_client.device_management.device_compliance_policies.post(request_body = request_body)
+result = await graph_client.device_management.device_compliance_policies.post(body = request_body)
 
 
 ```

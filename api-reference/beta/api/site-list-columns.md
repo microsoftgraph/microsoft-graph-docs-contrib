@@ -15,6 +15,8 @@ Get the collection of columns, represented as [columnDefinition][columnDefinitio
 
   
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
   

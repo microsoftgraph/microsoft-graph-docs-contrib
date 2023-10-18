@@ -26,7 +26,7 @@ request_body = AuthenticationMethodsPolicy(
 	),
 )
 
-result = await graph_client.policies.authentication_method_policy.patch(request_body = request_body)
+result = await graph_client.policies.authentication_method_policy.patch(body = request_body)
 
 
 ```

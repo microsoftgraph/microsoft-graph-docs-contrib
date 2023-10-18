@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get the [presence](../resources/presence.md) information for multiple users.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call these APIs. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -153,4 +155,5 @@ Content-Length: 1574
 }
 -->
 
-
+## See also
+- [Get change notifications for presence updates in Microsoft Teams](/graph/changenotifications-for-presence)

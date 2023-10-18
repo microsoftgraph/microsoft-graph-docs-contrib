@@ -30,6 +30,7 @@ request_body = DelegatedAdminRelationship(
 			),
 		]
 	),
+	auto_extend_duration = "P180D",
 )
 
 request_configuration = DelegatedAdminRelationshipRequestBuilder.DelegatedAdminRelationshipRequestBuilderPatchRequestConfiguration(
@@ -39,7 +40,7 @@ headers = {
 
 )
 
-result = await graph_client.tenant_relationships.delegated_admin_relationships.by_delegated_admin_relationship_id('delegatedAdminRelationship-id').patch(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.tenant_relationships.delegated_admin_relationships.by_delegated_admin_relationship_id('delegatedAdminRelationship-id').patch(body = request_body, request_configuration = request_configuration)
 
 
 ```

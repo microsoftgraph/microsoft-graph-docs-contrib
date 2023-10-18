@@ -17,6 +17,6 @@ $additionalData = [
 ];
 $requestBody->setAdditionalData($additionalData);
 
-$result = $graphServiceClient->print()->shares()->byPrinterShareId('printerShare-id')->patch($requestBody)->wait();
+$result = $graphServiceClient->escapedPrint()->shares()->byPrinterShareId('printerShare-id')->patch($requestBody)->wait();
 
 ```

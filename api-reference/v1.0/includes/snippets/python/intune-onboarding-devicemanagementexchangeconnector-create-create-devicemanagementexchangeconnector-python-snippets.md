@@ -21,7 +21,7 @@ request_body = DeviceManagementExchangeConnector(
 	exchange_organization = "Exchange Organization value",
 )
 
-result = await graph_client.device_management.exchange_connectors.post(request_body = request_body)
+result = await graph_client.device_management.exchange_connectors.post(body = request_body)
 
 
 ```

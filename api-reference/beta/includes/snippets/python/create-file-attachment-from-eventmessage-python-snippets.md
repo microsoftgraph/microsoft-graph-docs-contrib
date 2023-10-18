@@ -19,7 +19,7 @@ request_body = Attachment(
 	}
 )
 
-result = await graph_client.me.messages.by_message_id('message-id').attachments.post(request_body = request_body)
+result = await graph_client.me.messages.by_message_id('message-id').attachments.post(body = request_body)
 
 
 ```

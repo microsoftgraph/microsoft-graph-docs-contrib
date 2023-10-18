@@ -18,7 +18,7 @@ request_body = CountryNamedLocation(
 	include_unknown_countries_and_regions = True,
 )
 
-result = await graph_client.identity.conditional_access.named_locations.post(request_body = request_body)
+result = await graph_client.identity.conditional_access.named_locations.post(body = request_body)
 
 
 ```

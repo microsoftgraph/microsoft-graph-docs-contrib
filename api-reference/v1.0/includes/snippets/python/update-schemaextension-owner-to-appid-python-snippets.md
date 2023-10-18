@@ -30,7 +30,7 @@ request_body = SchemaExtension(
 	]
 )
 
-result = await graph_client.schema_extensions.by_schema_extension_id('schemaExtension-id').patch(request_body = request_body)
+result = await graph_client.schema_extensions.by_schema_extension_id('schemaExtension-id').patch(body = request_body)
 
 
 ```

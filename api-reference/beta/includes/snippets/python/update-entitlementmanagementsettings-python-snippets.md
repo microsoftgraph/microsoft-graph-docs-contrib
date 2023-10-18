@@ -12,7 +12,7 @@ request_body = EntitlementManagementSettings(
 	external_user_lifecycle_action = "None",
 )
 
-result = await graph_client.identity_governance.entitlement_management.settings.patch(request_body = request_body)
+result = await graph_client.identity_governance.entitlement_management.settings.patch(body = request_body)
 
 
 ```

@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Delete a [authorityTemplate](../resources/security-authoritytemplate.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -30,8 +32,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-DELETE /security/labels/authorities/{authorityTemplateId}/$ref
-DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/authorityTemplate/$ref
+DELETE /security/labels/authorities/{authorityTemplateId}
+DELETE /security/labels/retentionLabels/{retentionLabelId}/descriptors/authorityTemplate
 ```
 
 ## Request headers

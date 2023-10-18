@@ -13,7 +13,7 @@ request_body = AccessReviewInstanceDecisionItem(
 	justification = "This person is still on my team",
 )
 
-result = await graph_client.identity_governance.acce_reviews.definitions.by_definition_id('accessReviewScheduleDefinition-id').instances.by_instance_id('accessReviewInstance-id').stages.by_stage_id('accessReviewStage-id').decisions.by_decision_id('accessReviewInstanceDecisionItem-id').patch(request_body = request_body)
+result = await graph_client.identity_governance.acce_reviews.definitions.by_definition_id('accessReviewScheduleDefinition-id').instances.by_instance_id('accessReviewInstance-id').stages.by_stage_id('accessReviewStage-id').decisions.by_decision_id('accessReviewInstanceDecisionItem-id').patch(body = request_body)
 
 
 ```

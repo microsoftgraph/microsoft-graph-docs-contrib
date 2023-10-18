@@ -15,7 +15,7 @@ request_body = SkillProficiency(
 	proficiency = SkillProficiencyLevel.AdvancedProfessional,
 )
 
-result = await graph_client.me.profile.skills.by_skill_id('skillProficiency-id').patch(request_body = request_body)
+result = await graph_client.me.profile.skills.by_skill_id('skillProficiency-id').patch(body = request_body)
 
 
 ```

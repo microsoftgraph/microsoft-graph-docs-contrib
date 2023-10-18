@@ -14,7 +14,7 @@ request_body = ConfirmCompromisedPostRequestBody(
 	]
 )
 
-await graph_client.identity_protection.risky_service_principals.confirm_compromised.post(request_body = request_body)
+await graph_client.identity_protection.risky_service_principals.confirm_compromised.post(body = request_body)
 
 
 ```

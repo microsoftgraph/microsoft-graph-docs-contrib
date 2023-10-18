@@ -18,7 +18,7 @@ request_body = ContentType(
 	group = "Document Set Content Types",
 )
 
-result = await graph_client.sites.by_site_id('site-id').content_types.post(request_body = request_body)
+result = await graph_client.sites.by_site_id('site-id').content_types.post(body = request_body)
 
 
 ```

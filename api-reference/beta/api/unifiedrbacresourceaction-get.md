@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [unifiedRbacResourceAction](../resources/unifiedrbacresourceaction.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -115,6 +117,7 @@ Content-Type: application/json
     "actionVerb": "GET",
     "description": "Read all properties of access reviews",
     "id": "microsoft.directory-accessReviews-allProperties-read-get",
+    "isPrivileged": false,
     "name": "microsoft.directory/accessReviews/allProperties/read",
     "resourceScopeId": null
 }

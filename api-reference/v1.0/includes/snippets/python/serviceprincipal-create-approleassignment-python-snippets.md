@@ -14,7 +14,7 @@ request_body = AppRoleAssignment(
 	app_role_id = UUID("498476ce-e0fe-48b0-b801-37ba7e2685c6"),
 )
 
-result = await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').app_role_assignments.post(request_body = request_body)
+result = await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').app_role_assignments.post(body = request_body)
 
 
 ```

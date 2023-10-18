@@ -15,7 +15,7 @@ request_body = BusinessScenario(
 	]
 )
 
-result = await graph_client.solutions.busine_scenarios.by_busines_scenario_id('businessScenario-id').patch(request_body = request_body)
+result = await graph_client.solutions.busine_scenarios.by_busines_scenario_id('businessScenario-id').patch(body = request_body)
 
 
 ```

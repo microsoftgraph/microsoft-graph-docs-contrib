@@ -14,7 +14,7 @@ request_body = BrandingDeleteRequestBody(
 	}
 )
 
-await graph_client.organization.by_organization_id('organization-id').branding.delete(request_body = request_body)
+await graph_client.organization.by_organization_id('organization-id').branding.delete(body = request_body)
 
 
 ```

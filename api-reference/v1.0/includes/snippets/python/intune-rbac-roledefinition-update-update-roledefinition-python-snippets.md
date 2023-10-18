@@ -31,7 +31,7 @@ request_body = RoleDefinition(
 	is_built_in = True,
 )
 
-result = await graph_client.device_management.role_definitions.by_role_definition_id('roleDefinition-id').patch(request_body = request_body)
+result = await graph_client.device_management.role_definitions.by_role_definition_id('roleDefinition-id').patch(body = request_body)
 
 
 ```

@@ -19,7 +19,7 @@ request_body = DeviceComplianceDeviceStatus(
 	user_principal_name = "User Principal Name value",
 )
 
-result = await graph_client.device_management.device_compliance_policies.by_device_compliance_policie_id('deviceCompliancePolicy-id').device_statuses.by_device_statuse_id('deviceComplianceDeviceStatus-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_compliance_policies.by_device_compliance_policie_id('deviceCompliancePolicy-id').device_statuses.by_device_statuse_id('deviceComplianceDeviceStatus-id').patch(body = request_body)
 
 
 ```

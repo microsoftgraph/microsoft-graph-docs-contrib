@@ -22,7 +22,7 @@ request_body = AssignLicensePostRequestBody(
 	]
 )
 
-result = await graph_client.me.assign_license.post(request_body = request_body)
+result = await graph_client.me.assign_license.post(body = request_body)
 
 
 ```

@@ -38,7 +38,7 @@ request_body = Event(
 	online_meeting_provider = OnlineMeetingProviderType.TeamsForBusiness,
 )
 
-result = await graph_client.me.calendars.by_calendar_id('calendar-id').events.post(request_body = request_body)
+result = await graph_client.me.calendars.by_calendar_id('calendar-id').events.post(body = request_body)
 
 
 ```

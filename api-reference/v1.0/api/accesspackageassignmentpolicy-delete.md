@@ -11,7 +11,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), delete an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), delete an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -103,5 +105,3 @@ DELETE https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-

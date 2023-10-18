@@ -16,7 +16,7 @@ request_body = PersonWebsite(
 	web_url = "www.lyndamer.no",
 )
 
-result = await graph_client.me.profile.websites.post(request_body = request_body)
+result = await graph_client.me.profile.websites.post(body = request_body)
 
 
 ```

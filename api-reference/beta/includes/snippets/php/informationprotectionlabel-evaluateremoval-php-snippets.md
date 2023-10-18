@@ -13,7 +13,7 @@ $requestBody = new EvaluateRemovalPostRequestBody();
 $contentInfo = new ContentInfo();
 $contentInfo->setOdataType('#microsoft.graph.contentInfo');
 $contentInfo->setFormat(new ContentFormat('default'));
-$ContentInfo->setIdentifier(null);
+$contentInfo->setIdentifier(null);
 $contentInfo->setState(new ContentState('rest'));
 $metadataKeyValuePair1 = new KeyValuePair();
 $metadataKeyValuePair1->setOdataType('#microsoft.graph.keyValuePair');

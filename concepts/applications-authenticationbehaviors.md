@@ -452,7 +452,6 @@ Content-Type: application/json
 
 ---
 
-
 ## See also
 
 - [authenticationBehaviors resource type](/graph/api/resources/authenticationbehaviors?view=graph-rest-beta&preserve-view=true)

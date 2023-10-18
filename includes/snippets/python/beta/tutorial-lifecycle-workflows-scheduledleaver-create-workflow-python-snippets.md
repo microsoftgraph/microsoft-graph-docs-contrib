@@ -63,7 +63,7 @@ request_body = Workflow(
 	]
 )
 
-result = await graph_client.identity_governance.lifecycle_workflows.workflows.post(request_body = request_body)
+result = await graph_client.identity_governance.lifecycle_workflows.workflows.post(body = request_body)
 
 
 ```

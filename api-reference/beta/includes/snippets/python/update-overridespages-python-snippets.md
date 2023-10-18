@@ -22,7 +22,7 @@ request_body = $valuePutRequestBody(
 	}
 )
 
-await graph_client.identity.b2c_user_flows.by_b2c_user_flow_id('b2cIdentityUserFlow-id').languages.by_language_id('userFlowLanguageConfiguration-id').override_pages.by_override_page_id('userFlowLanguagePage-id').content.put(request_body = request_body)
+await graph_client.identity.b2c_user_flows.by_b2c_user_flow_id('b2cIdentityUserFlow-id').languages.by_language_id('userFlowLanguageConfiguration-id').override_pages.by_override_page_id('userFlowLanguagePage-id').content.put(body = request_body)
 
 
 ```

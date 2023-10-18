@@ -46,7 +46,7 @@ request_body = Shift(
 	),
 )
 
-result = await graph_client.teams.by_team_id('team-id').schedule.shifts.post(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').schedule.shifts.post(body = request_body)
 
 
 ```

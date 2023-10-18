@@ -17,7 +17,7 @@ request_body = BrowserSharedCookie(
 	comment = "Updating source environment.",
 )
 
-result = await graph_client.admin.edge.internet_explorer_mode.site_lists.by_site_list_id('browserSiteList-id').shared_cookies.by_shared_cookie_id('browserSharedCookie-id').patch(request_body = request_body)
+result = await graph_client.admin.edge.internet_explorer_mode.site_lists.by_site_list_id('browserSiteList-id').shared_cookies.by_shared_cookie_id('browserSharedCookie-id').patch(body = request_body)
 
 
 ```

@@ -17,7 +17,7 @@ request_body = PersonAward(
 	web_url = "https://www.iabm.io",
 )
 
-result = await graph_client.me.profile.awards.post(request_body = request_body)
+result = await graph_client.me.profile.awards.post(body = request_body)
 
 
 ```

@@ -22,7 +22,7 @@ headers = {
 
 )
 
-result = await graph_client.teams.by_team_id('team-id').schedule.swap_shift_change_requests.post(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.teams.by_team_id('team-id').schedule.swap_shift_change_requests.post(body = request_body, request_configuration = request_configuration)
 
 
 ```

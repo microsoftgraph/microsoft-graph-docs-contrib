@@ -13,7 +13,7 @@ request_body = PersonAnnualEvent(
 	date = "1980-01-08",
 )
 
-result = await graph_client.me.profile.anniversaries.post(request_body = request_body)
+result = await graph_client.me.profile.anniversaries.post(body = request_body)
 
 
 ```

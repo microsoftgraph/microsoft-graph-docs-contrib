@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Update the properties of the currently authenticated organization. In this case, `organization` is defined as a collection of exactly one record, and so its **ID** must be specified in the request.  The **ID** is also known as the **tenantId** of the organization.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,11 +27,17 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | Organization.ReadWrite.All |
 
-The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+The calling user must also be in one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
 
 * Global Administrator
 * Partner Tier2 Support
 * Billing Administrator
+
+**Note**: To update the **onPremisesSyncEnabled** property requires that the calling user to have one of the following Microsoft Entra roles: 
+
+* Global Administrator
+* Directory Synchronization Accounts
+* Hybrid Identity Administrator
 
 ## HTTP request
 
@@ -54,6 +62,7 @@ In the request body, supply the values for relevant fields that should be update
 | Property  | Type |Description|
 |:---------------|:--------|:----------|
 |marketingNotificationEmails|String collection|                                        **Notes**: not nullable.            |
+|onPremisesSyncEnabled|Boolean|`true` to enable this object to be synced from an on-premises directory; `false` to disable syncing from an on-premises directory; Nullable. `null` if this object has never been synced from an on-premises directory (default).            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|The privacy profile of an organization (set statementUrl and contactEmail).            |
 |securityComplianceNotificationMails|String collection||
 |securityComplianceNotificationPhones|String collection||
@@ -82,6 +91,7 @@ Content-type: application/json
 
 {
   "marketingNotificationEmails" : ["marketing@contoso.com"],
+  "onPremisesSyncEnabled" : true,
   "privacyProfile" :
     {
       "contactEmail":"alice@contoso.com",
@@ -160,5 +170,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

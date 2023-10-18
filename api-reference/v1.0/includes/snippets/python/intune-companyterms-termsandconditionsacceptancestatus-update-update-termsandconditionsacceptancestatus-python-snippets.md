@@ -16,7 +16,7 @@ request_body = TermsAndConditionsAcceptanceStatus(
 	user_principal_name = "User Principal Name value",
 )
 
-result = await graph_client.device_management.term_and_conditions.by_term_and_condition_id('termsAndConditions-id').acceptance_statuses.by_acceptance_statuse_id('termsAndConditionsAcceptanceStatus-id').patch(request_body = request_body)
+result = await graph_client.device_management.term_and_conditions.by_term_and_condition_id('termsAndConditions-id').acceptance_statuses.by_acceptance_statuse_id('termsAndConditionsAcceptanceStatus-id').patch(body = request_body)
 
 
 ```

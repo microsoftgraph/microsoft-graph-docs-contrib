@@ -5,6 +5,6 @@ description: "Automatically generated file. DO NOT MODIFY"
 ```bash
 
 // THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
-mgc-beta users list --search "displayName:wa" --count true --orderby displayName --consistency-level eventual
+mgc-beta users list --search ""displayName:wa"" --count "true" --orderby "displayName" --consistency-level "eventual"
 
 ```

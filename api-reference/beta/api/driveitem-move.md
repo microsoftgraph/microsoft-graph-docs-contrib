@@ -20,6 +20,8 @@ Your app can combine moving an item to a new container and updating other proper
 
 Items cannot be moved between [Drives](../resources/drive.md) using this request.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

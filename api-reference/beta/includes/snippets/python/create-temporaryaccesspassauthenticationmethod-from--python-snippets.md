@@ -14,7 +14,7 @@ request_body = TemporaryAccessPassAuthenticationMethod(
 	is_usable_once = False,
 )
 
-result = await graph_client.users.by_user_id('user-id').authentication.temporary_acces_pas_methods.post(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').authentication.temporary_acces_pas_methods.post(body = request_body)
 
 
 ```

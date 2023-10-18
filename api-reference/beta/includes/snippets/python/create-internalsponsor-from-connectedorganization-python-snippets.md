@@ -12,7 +12,7 @@ request_body = ReferenceCreate(
 	odata_id = "https://graph.microsoft.com/beta/users/{id}",
 )
 
-await graph_client.identity_governance.entitlement_management.connected_organizations.by_connected_organization_id('connectedOrganization-id').internal_sponsors.ref.post(request_body = request_body)
+await graph_client.identity_governance.entitlement_management.connected_organizations.by_connected_organization_id('connectedOrganization-id').internal_sponsors.ref.post(body = request_body)
 
 
 ```

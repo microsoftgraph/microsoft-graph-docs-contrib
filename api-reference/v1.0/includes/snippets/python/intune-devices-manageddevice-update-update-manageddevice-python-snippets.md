@@ -115,7 +115,7 @@ request_body = ManagedDevice(
 	physical_memory_in_bytes = 5,
 )
 
-result = await graph_client.device_management.managed_devices.by_managed_device_id('managedDevice-id').patch(request_body = request_body)
+result = await graph_client.device_management.managed_devices.by_managed_device_id('managedDevice-id').patch(body = request_body)
 
 
 ```
