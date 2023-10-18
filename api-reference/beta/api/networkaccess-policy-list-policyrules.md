@@ -3,7 +3,7 @@ title: "List policyRules"
 description: "Retrieve a list of forwarding rules within a forwarding policy."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
@@ -95,7 +95,6 @@ GET https://graph.microsoft.com/beta/networkaccess/forwardingPolicies/{forwardin
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 The following is an example of the response.

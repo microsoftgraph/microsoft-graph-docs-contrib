@@ -3,7 +3,7 @@ title: "Update delegatedAdminRelationship"
 description: "Update the properties of a delegatedAdminRelationship object."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.prod: partner-customer-administration
 doc_type: apiPageType
 ---
 

@@ -10,7 +10,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-In [Azure AD Entitlement Management](../resources/entitlementmanagement-overview.md), cancel [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects that are in a cancellable state: `accepted`, `pendingApproval`, `pendingNotBefore`, `pendingApprovalEscalated`.
+In [Microsoft Entra Entitlement Management](../resources/entitlementmanagement-overview.md), cancel [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects that are in a cancellable state: `accepted`, `pendingApproval`, `pendingNotBefore`, `pendingApprovalEscalated`.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -103,5 +103,3 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/a
 ``` http
 HTTP/1.1 200 Status OK
 ```
-
-

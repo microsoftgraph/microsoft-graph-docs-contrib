@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 Read the properties and relationships of a [riskyUserHistoryItem](../resources/riskyuserhistoryitem.md) object.
 
 
->**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
+>**Note:** Using the riskyUsers API requires a Microsoft Entra ID P2 license.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -135,5 +135,3 @@ Content-Type: application/json
   }
 }
 ```
-
-
