@@ -13,7 +13,7 @@ Change notifications in Microsoft Graph enable you to subscribe to call started/
 
 A subscription has a max expiry period of 3 days. To persist the subscription for more than this period, a subscription renewal request must be made. For details, see [Update subscription](/graph/api/subscription-update). Alternatively, a user can wait for the subscription to expire and create a new subscription with the same meeting resource.
 
-To get change notifications for a meeting's call events, subscribe to `/communications/onlineMeetings/?$filter=JoinWebUrl eq '{JoinWebUrl}'`. 
+To get change notifications for a meeting's call events, subscribe to `/communications/onlineMeetings/getMeetingByJoinUrl(joinWebUrl='{joinWebUrl}')/meetingCallEvents`. 
 
 This resource supports notifications with resource data. For more information about setting up notifications with resource data, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data).
 
