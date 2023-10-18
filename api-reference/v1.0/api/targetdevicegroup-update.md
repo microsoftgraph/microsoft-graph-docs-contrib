@@ -10,16 +10,18 @@ doc_type: apiPageType
 # Update targetDeviceGroup
 Namespace: microsoft.graph
 
-Update the properties of a [targetDeviceGroup](../resources/targetdevicegroup.md) object for remoteDesktopSecurityConfiguration object on the servicePrincipal. A max of 10 target device groups can be configured for the remoteDesktopSecurityConfiguraiton object on the servicePrincipal.
+Update the properties of a [targetDeviceGroup](../resources/targetdevicegroup.md) object for remoteDesktopSecurityConfiguration object on the servicePrincipal. You can configure a maximum of 10 target device groups for the remoteDesktopSecurityConfiguraiton object on the servicePrincipal.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account) | Application-RemoteDesktopConfig.ReadWrtite.All, Application.ReadWrite.All, Directory.ReadWrite.All |
+|Delegated (work or school account) | Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application | Application-RemoteDesktopConfig.ReadWrtite.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+|Application | Application-RemoteDesktopConfig.ReadWrite.All, Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
+
+[!INCLUDE [rbac-remote-desktop-security-config-apis](../includes/rbac-for-apis/rbac-remote-desktop-security-config-apis.md)]
 
 ## HTTP request
 
@@ -76,7 +78,8 @@ The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.targetDeviceGroup"
 }
 -->
 ``` http
@@ -89,4 +92,3 @@ Content-Type: application/json
   "displayName": "Device Group A"
 }
 ```
-
