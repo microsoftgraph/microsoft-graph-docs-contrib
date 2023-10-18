@@ -1,6 +1,6 @@
 ---
 title: "agreementAcceptance resource type"
-description: "Represents the current status of a user within scope of a company's customizable terms of use powered by Microsoft Entra ID."
+description: "Represents the current status of a user within scope of a company's customizable terms of use powered by Microsoft Entra ID Governance."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
@@ -11,7 +11,7 @@ author: AlexFilipin
 
 Namespace: microsoft.graph
 
-Represents the current status of a user's response to a company's customizable terms of use agreement powered by Microsoft Entra ID.
+Represents the current status of a user's response to a company's customizable terms of use agreement powered by Microsoft Entra ID Governance.
 
 ## Properties
 | Property     | Type        | Description |

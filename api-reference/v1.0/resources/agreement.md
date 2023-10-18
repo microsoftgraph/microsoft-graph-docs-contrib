@@ -1,6 +1,6 @@
 ---
 title: "agreement resource type"
-description: "Represents a tenant's customizable terms of use agreement that is created and managed with Microsoft Entra ID."
+description: "Represents a tenant's customizable terms of use agreement that is created and managed with Microsoft Entra."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
@@ -11,7 +11,7 @@ author: "AlexFilipin"
 
 Namespace: microsoft.graph
 
-Represents a tenant's customizable terms of use agreement that is created and managed with Microsoft Entra ID. You can use the following methods to create and manage the [Microsoft Entra Terms of Use feature](#see-also) according to your scenario.
+Represents a tenant's customizable terms of use agreement that is created and managed with Microsoft Entra. You can use the following methods to create and manage the [Microsoft Entra Terms of Use feature](#see-also) according to your scenario.
 
 ## Methods
 
