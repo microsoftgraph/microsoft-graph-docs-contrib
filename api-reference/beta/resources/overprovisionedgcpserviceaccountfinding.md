@@ -1,10 +1,10 @@
 ---
 title: "overprovisionedGcpServiceAccountFinding resource type"
 description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
-doc_type: resourcePageType
+ms.prod: "multicloud-permissions-management"
+doc_type: apiPageType
 ---
 
 # overprovisionedGcpServiceAccountFinding resource type
@@ -15,19 +15,15 @@ Namespace: microsoft.graph
 
 **TODO: Add Description**
 
-
 Inherits from [identityFinding](../resources/identityfinding.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List overprovisionedGcpServiceAccountFindings](../api/overprovisionedgcpserviceaccountfinding-list.md)|[overprovisionedGcpServiceAccountFinding](../resources/overprovisionedgcpserviceaccountfinding.md) collection|Get a list of the [overprovisionedGcpServiceAccountFinding](../resources/overprovisionedgcpserviceaccountfinding.md) objects and their properties.|
 |[Get overprovisionedGcpServiceAccountFinding](../api/overprovisionedgcpserviceaccountfinding-get.md)|[overprovisionedGcpServiceAccountFinding](../resources/overprovisionedgcpserviceaccountfinding.md)|Read the properties and relationships of an [overprovisionedGcpServiceAccountFinding](../resources/overprovisionedgcpserviceaccountfinding.md) object.|
-|[Update overprovisionedGcpServiceAccountFinding](../api/overprovisionedgcpserviceaccountfinding-update.md)|[overprovisionedGcpServiceAccountFinding](../resources/overprovisionedgcpserviceaccountfinding.md)|Update the properties of an [overprovisionedGcpServiceAccountFinding](../resources/overprovisionedgcpserviceaccountfinding.md) object.|
-|[Delete overprovisionedGcpServiceAccountFinding](../api/overprovisionedgcpserviceaccountfinding-delete.md)|None|Delete an [overprovisionedGcpServiceAccountFinding](../resources/overprovisionedgcpserviceaccountfinding.md) object.|
-|[List authorizationSystemIdentity](../api/overprovisionedgcpserviceaccountfinding-list-identity.md)|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md) collection|Get the authorizationSystemIdentity resources from the identity navigation property.|
-|[Add authorizationSystemIdentity](../api/overprovisionedgcpserviceaccountfinding-post-identity.md)|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Add identity by posting to the identity collection.|
-|[Remove authorizationSystemIdentity](../api/overprovisionedgcpserviceaccountfinding-delete-identity.md)|None|Remove an [authorizationSystemIdentity](../resources/authorizationsystemidentity.md) object.|
+
 
 ## Properties
 |Property|Type|Description|

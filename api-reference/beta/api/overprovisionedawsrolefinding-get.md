@@ -3,7 +3,7 @@ title: "Get overprovisionedAwsRoleFinding"
 description: "Read the properties and relationships of an overprovisionedAwsRoleFinding object."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -15,6 +15,7 @@ Namespace: microsoft.graph
 Read the properties and relationships of an [overprovisionedAwsRoleFinding](../resources/overprovisionedawsrolefinding.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -30,25 +31,26 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/key/findings/graph.overprovisionedAwsRoleFinding
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.overprovisionedAwsRoleFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports none of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and an [overprovisionedAwsRoleFinding](../resources/overprovisionedawsrolefinding.md) object in the response body.
-
-If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the key passed into the GET method is invalid.
 
 ## Examples
 
@@ -60,11 +62,11 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws('id')/findings/graph.overprovisionedAwsRoleFinding
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws('MSxPdmVycHJvdmlzaW9uZWRBd3NSb2xlRmluZGluZywxNzYzMTk')/findings/graph.overprovisionedAwsRoleFinding
 ```
 
-
 ### Response
+
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -76,46 +78,36 @@ The following is an example of the response
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
-{
-  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.overprovisionedAwsRoleFinding",
-  "value": [
-    {
-      "@odata.type": "graph.overprovisionedAwsRoleFinding",
-      "id": "b3ZlcnByb3Zpc2lvbmVkUm9sZUZpbmRpbmc4",
-      "identity": {
-          "@odata.type": "graph.awsRole",
-          "id": "YXJuOmF3czppYW06OjkxMjAwMDA5MDUxNDpyb2xlL2NrLWlyaXMtdGVzdA==",
-          "externalId": "arn:aws:iam::912000090514:role/ck-iris-test",
-          "displayName": "ck-iris-test",
-          "source": {
-            "@odata.type": "graph.awsSource",
-            "identityProviderType": "aws",
-            "accountId": "377596131774"
-          },
-          "authorizationSystem": {
-            "@odata.type": "graph.awsAuthorizationSystem",
-            "id": "{Id}",
-            "authorizationSystemId": "912000090514",
-            "authorizationSystemName": "ck-test-stack",
-            "authorizationSystemType": "aws"
-          }
-      },
-      "actionSummary": {
-        "assigned": 118,
-        "exercised": 0,
-        "available": 10793
-      },
-      "permissionsCreepIndex": {
-        "score": 1
-      },
-      "createdDateTime": "2020-10-11T20:11:45.6711Z",
-      "identityDetails": {
-        "createdDateTime": "2021-04-12T20:34:24Z",
-        "lastActiveDateTime": "2021-10-30T03:21:05Z"
-      }
-    },
 
-  ]
+{
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.overprovisionedAwsRoleFinding/$entity",
+    "id": "MSxPdmVycHJvdmlzaW9uZWRBd3NSb2xlRmluZGluZywxNzYzMTk",
+    "createdDateTime": "2023-10-17T23:47:23.492779Z",
+    "actionSummary": {
+        "assigned": 166,
+        "exercised": 1,
+        "available": 58
+    },
+    "permissionsCreepIndex": {
+        "score": 1
+    },
+    "identity": {
+        "@odata.type": "#microsoft.graph.awsRole",
+        "id": "YXJuOmF3czppYW06Ojk1Njk4Nzg4NzczNTpyb2xlL21jaWVtLW9pZGMtY29ubmVjdC1yb2xlLXByb2RjMTY",
+        "externalId": "arn:aws:iam::956987887735:role/mciem-oidc-connect-role-prodc16",
+        "displayName": "mciem-oidc-connect-role-prodc16",
+        "source": {
+            "@odata.type": "#microsoft.graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "956987887735"
+        },
+        "authorizationSystem": {
+            "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
+            "authorizationSystemId": "956987887735",
+            "authorizationSystemName": "ck-development",
+            "authorizationSystemType": "aws",
+            "id": "MSxhd3MsOTU2OTg3ODg3NzM1"
+        }
+    }
 }
 ```
-

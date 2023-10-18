@@ -3,7 +3,7 @@ title: "List overprovisionedAwsRoleFindings"
 description: "Get a list of the overprovisionedAwsRoleFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -15,6 +15,7 @@ Namespace: microsoft.graph
 Get a list of the [overprovisionedAwsRoleFinding](../resources/overprovisionedawsrolefinding.md) objects and their properties.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -34,9 +35,11 @@ GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/find
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the `$filter` and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
@@ -48,8 +51,6 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [overprovisionedAwsRoleFinding](../resources/overprovisionedawsrolefinding.md) objects in the response body.
 
-If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the LIST method filter uses a bad key.
-
 ## Examples
 
 ### Request
@@ -60,9 +61,8 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.overprovisionedAwsRoleFinding not found
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.overprovisionedAwsRoleFinding
 ```
-
 
 ### Response
 The following is an example of the response
@@ -78,20 +78,44 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.overprovisionedAwsRoleFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.overprovisionedAwsRoleFinding",
-      "id": "5a4135f3-9ca8-aa51-0864-be7e452d70cd",
-      "createdDateTime": "String (timestamp)",
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
+      "@odata.type": "graph.overprovisionedAwsRoleFinding",
+      "id": "b3ZlcnByb3Zpc2lvbmVkUm9sZUZpbmRpbmc4",
+      "identity": {
+          "@odata.type": "graph.awsRole",
+          "id": "YXJuOmF3czppYW06OjkxMjAwMDA5MDUxNDpyb2xlL2NrLWlyaXMtdGVzdA==",
+          "externalId": "arn:aws:iam::912000090514:role/ck-iris-test",
+          "displayName": "ck-iris-test",
+          "source": {
+            "@odata.type": "graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "377596131774"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.awsAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "912000090514",
+            "authorizationSystemName": "ck-test-stack",
+            "authorizationSystemType": "aws"
+          }
       },
-      "lastActiveDateTime": "String (timestamp)",
       "actionSummary": {
-        "@odata.type": "microsoft.graph.actionSummary"
+        "assigned": 118,
+        "exercised": 0,
+        "available": 10793
+      },
+      "permissionsCreepIndex": {
+        "score": 1
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "identityDetails": {
+        "createdDateTime": "2021-04-12T20:34:24Z",
+        "lastActiveDateTime": "2021-10-30T03:21:05Z"
       }
-    }
+    },
+
   ]
 }
 ```
-

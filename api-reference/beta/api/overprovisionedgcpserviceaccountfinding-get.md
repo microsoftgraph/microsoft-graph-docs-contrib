@@ -3,7 +3,7 @@ title: "Get overprovisionedGcpServiceAccountFinding"
 description: "Read the properties and relationships of an overprovisionedGcpServiceAccountFinding object."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -15,6 +15,7 @@ Namespace: microsoft.graph
 Read the properties and relationships of an [overprovisionedGcpServiceAccountFinding](../resources/overprovisionedgcpserviceaccountfinding.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -30,29 +31,31 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/gcp/key/findings/graph.overprovisionedGcpServiceAccountFinding
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.overprovisionedGcpServiceAccountFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports none of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and an [overprovisionedGcpServiceAccountFinding](../resources/overprovisionedgcpserviceaccountfinding.md) object in the response body.
 
-If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the key passed into the GET method is invalid.
-
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -60,11 +63,11 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/gcp/key/findings/graph.overprovisionedGcpServiceAccountFinding
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/gcp/findings('MSxPdmVycHJvdmlzaW9uZWRHY3BTZXJ2aWNlQWNjb3VudEZpbmRpbmcsODM1Mw')/graph.overprovisionedGcpServiceAccountFinding
 ```
 
-
 ### Response
+
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -76,46 +79,36 @@ The following is an example of the response
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
-  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/gcp/findings/graph.overprovisionedGcpServiceAccountFinding",
-  "value": [
-    {
-      "@odata.type": "graph.overprovisionedGcpServiceAccountFinding",
-      "id": "b3ZlcnByb3Zpc2lvbmVkU2VydmljZUFjY291bnRGaW5kaW5nMTM",
-      "identity": {
-          "@odata.type": "graph.gcpServiceAccount",
-          "id": "bW50ZXN0QGNhcmJpZGUtYm9uc2FpLTIwNTAxNy5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbQ==",
-          "externalId": "mntest@carbide-bonsai-205017.iam.gserviceaccount.com",
-          "displayName": "mntest",
-          "source": {
-            "@odata.type": "graph.gsuiteSource",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.overprovisionedGcpServiceAccountFinding/$entity",
+    "id": "MSxPdmVycHJvdmlzaW9uZWRHY3BTZXJ2aWNlQWNjb3VudEZpbmRpbmcsODM1Mw",
+    "createdDateTime": "2023-10-17T23:46:11.04383Z",
+    "actionSummary": {
+        "assigned": 3287,
+        "exercised": 34,
+        "available": 7075
+    },
+    "permissionsCreepIndex": {
+        "score": 1
+    },
+    "identity": {
+        "@odata.type": "#microsoft.graph.gcpServiceAccount",
+        "id": "bWNpZW0tc2VydmljZS1zdGcxLWRlYzE5QGNhcmJpZGUtYm9uc2FpLTIwNTAxNy5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbQ",
+        "externalId": "mciem-service-stg1-dec19@carbide-bonsai-205017.iam.gserviceaccount.com",
+        "displayName": "ms-ciem-service-account",
+        "source": {
+            "@odata.type": "#microsoft.graph.gsuiteSource",
             "identityProviderType": "gsuite",
             "domain": "carbide-bonsai-205017.iam.gserviceaccount.com"
-          },
-          "authorizationSystem": {
-            "@odata.type": "graph.gcpAuthorizationSystem",
-            "id": "{Id}",
+        },
+        "authorizationSystem": {
+            "@odata.type": "#microsoft.graph.gcpAuthorizationSystem",
             "authorizationSystemId": "carbide-bonsai-205017",
-            "authorizationSystemName": "cloudknox-staging",
-            "authorizationSystemType": "gcp"
-          }
-      },
-      "actionSummary": {
-        "assigned": 4624,
-        "exercised": 0,
-        "available": 10542
-      },
-      "permissionsCreepIndex": {
-        "score": 82
-      },
-      "createdDateTime": "2020-10-11T20:11:45.6711Z",
-      "identityDetails": {
-        "createdDateTime": "2021-04-12T20:34:24Z",
-        "lastActiveDateTime": "2021-10-30T03:21:05Z"
-      }
-    },
-
-  ]
+            "authorizationSystemName": "ck-staging",
+            "authorizationSystemType": "gcp",
+            "id": "MSxnY3AsY2FyYmlkZS1ib25zYWktMjA1MDE3"
+        }
+    }
 }
 ```
-
