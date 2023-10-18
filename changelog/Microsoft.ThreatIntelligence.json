@@ -62,7 +62,7 @@
       "Id": "a9a67281-e206-43ef-92d1-ad9375b97d1b",
       "Cloud": "Prod",
       "Version": "beta",
-      "CreatedDateTime": "2023-09-05T16:46:05.0563028Z",
+      "CreatedDateTime": "2023-10-17T16:46:05.0563028Z",
       "WorkloadArea": "Security",
       "SubArea": "Threat intelligence"
     },
@@ -128,7 +128,7 @@
       "Id": "6f211280-ef11-487b-b98a-fe6eec64ea7b",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-09-05T16:46:05.0563028Z",
+      "CreatedDateTime": "2023-10-17T16:46:05.0563028Z",
       "WorkloadArea": "Security",
       "SubArea": "Threat intelligence"
     },
