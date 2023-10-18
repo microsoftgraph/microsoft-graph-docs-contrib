@@ -27,14 +27,14 @@ Find the **Create connection** sample request in the **Connection setup** folder
 
 ## Register connection schema
 
-Find the **Register schema** sample request in the **Connection setup** -> **Manage schema** folder. Use this sample request to register a schema for the connection you just created. This returns a response that looks like the following.
+Find the **Register schema** sample request in the **Connection setup** -> **Manage schema** folder. Use this sample request to register a schema for the connection you created. This request returns a response that looks like the following.
 
 ```http
 HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/v1.0/external/connections/sampleConnectionId/operations/616bfeed-666f-4ce0-8cd9-058939010bfc
 ```
 
-Registering a schema is an asynchronous operation. The URL returned in the `Location` header should be polled for the status of this operation until the status is `completed`. Find the **Get operation status** sample request in the **Connection setup** folder. Replace the request URL with the value in the `Location` header and send the request to check status. This returns a response that looks like the following.
+Registering a schema is an asynchronous operation. The URL returned in the `Location` header should be polled for the status of this operation until the status is `completed`. Find the **Get operation status** sample request in the **Connection setup** folder. Replace the request URL with the value in the `Location` header and send the request to check status. This request returns a response that looks like the following.
 
 ```http
 HTTP/1.1 200 OK
@@ -54,7 +54,7 @@ The **Manage schema** folder also contains other sample requests for [managing c
 
 ## Add external group member (optional)
 
-If your external service uses non-Azure AD access control lists (ACLs), sync those permissions. External groups (along with Azure Active Directory users and groups) are used to set permissions on `externalItems` added to a Microsoft Graph connection. For details, see [externalGroup](/graph/api/resources/externalconnectors-externalgroup).
+If your external service uses non-Microsoft Entra ID access control lists (ACLs), sync those permissions. External groups (along with Microsoft Entra ID users and groups) are used to set permissions on `externalItems` added to a Microsoft Graph connection. For details, see [externalGroup](/graph/api/resources/externalconnectors-externalgroup).
 
 Sample requests for creating external groups and adding members are located in the **Identity Sync** folder.
 
