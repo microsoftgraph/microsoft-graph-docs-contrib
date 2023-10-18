@@ -3,11 +3,12 @@ title: "Get superAwsResourceFinding"
 description: "Read the properties and relationships of a superAwsResourceFinding object."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
 # Get superAwsResourceFinding
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,6 +16,7 @@ Namespace: microsoft.graph
 Read the properties and relationships of a [superAwsResourceFinding](../resources/superawsresourcefinding.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -30,13 +32,15 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/key/findings/graph.superAwsResourceFinding
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.superAwsResourceFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports none of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
@@ -58,7 +62,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws('id')/findings/graph.superAwsResourceFinding
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.superAwsResourceFinding
 ```
 
 

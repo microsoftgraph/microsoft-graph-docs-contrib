@@ -3,11 +3,12 @@ title: "List superAwsRoleFindings"
 description: "Get a list of the superAwsRoleFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
 # List superAwsRoleFindings
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,8 +16,8 @@ Namespace: microsoft.graph
 Get a list of the [superAwsRoleFinding](../resources/superawsrolefinding.md) objects and their properties.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
- 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Not supported|
@@ -30,29 +31,33 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.superAwsRoleFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.superAwsRoleFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports the `$filter` and `$orderby` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [superAwsRoleFinding](../resources/superawsrolefinding.md) objects in the response body.
 
-If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the LIST method filter uses a bad key.
-
 ## Examples
 
+List AWS super service principals:
+
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -60,11 +65,11 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.superAwsRoleFinding not found
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.superAwsRoleFinding
 ```
 
-
 ### Response
+
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -78,20 +83,44 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.superAwsRoleFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.superAwsRoleFinding",
-      "id": "28f6edd3-dd1c-a353-e2c8-8d88c3e4076e",
-      "createdDateTime": "String (timestamp)",
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
+      "@odata.type": "graph.superAwsRoleFinding",
+      "id": "c3VwZXJSb2xlRmluZGluZzI",
+      "identity": {
+          "@odata.type": "graph.awsRole",
+          "id":"YXJuOmF3czppYW06OjkxMjAwMDA5MDUxNDpyb2xlL2NrLWlyaXMtdGVzdA==",
+          "externalId": "arn:aws:iam::912000090514:role/ck-iris-test",
+          "displayName": "ck-iris-test",
+          "source": {
+            "@odata.type": "graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "377596131774"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.awsAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "912000090514",
+            "authorizationSystemName": "ck-test-stack",
+            "authorizationSystemType": "aws"
+          }
       },
-      "lastActiveDateTime": "String (timestamp)",
       "actionSummary": {
-        "@odata.type": "microsoft.graph.actionSummary"
+        "assigned": 118,
+        "exercised": 0,
+        "available": 10793
+      },
+      "permissionsCreepIndex": {
+        "score": 1
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "identityDetails": {
+        "createdDateTime": "2021-04-12T20:34:24Z",
+        "lastActiveDateTime": "2021-10-30T03:21:05Z"
       }
-    }
+    },
+
   ]
 }
 ```
-

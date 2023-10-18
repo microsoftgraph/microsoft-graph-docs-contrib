@@ -3,11 +3,12 @@ title: "Get superAwsRoleFinding"
 description: "Read the properties and relationships of a superAwsRoleFinding object."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
 # Get superAwsRoleFinding
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,8 +16,8 @@ Namespace: microsoft.graph
 Read the properties and relationships of a [superAwsRoleFinding](../resources/superawsrolefinding.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
- 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Not supported|
@@ -30,29 +31,33 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.superAwsRoleFinding
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.superAwsRoleFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+This method supports none of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [superAwsRoleFinding](../resources/superawsrolefinding.md) object in the response body.
 
-If unsuccessful, this method will return a '403' response if you don't have access to the authorization system or a '404' response if the key passed into the GET method is invalid.
-
 ## Examples
 
+List Azure super service principals:
+
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -60,11 +65,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws('id')/findings/graph.superAwsRoleFinding
+https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.superAwsRoleFinding
 ```
 
 
 ### Response
+
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

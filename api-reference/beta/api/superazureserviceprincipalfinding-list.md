@@ -69,7 +69,6 @@ The following is an example of a request.
 GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/azure/findings/graph.superAzureServicePrincipalFinding
 ```
 
-
 ### Response
 
 The following is an example of the response
