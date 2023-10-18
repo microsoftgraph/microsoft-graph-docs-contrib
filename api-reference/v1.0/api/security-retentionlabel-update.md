@@ -62,7 +62,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-
+Here's an example of a request.
 
 <!-- {
   "blockType": "request",
@@ -84,6 +84,7 @@ Content-length: 555
 ```
 
 ### Response
+Here's an example of the response.
 
 <!-- {
   "blockType": "response"
