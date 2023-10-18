@@ -3,7 +3,7 @@ title: "Get privilegeEscalationAwsRoleFinding"
 description: "Read the properties and relationships of a privilegeEscalationAwsRoleFinding object."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/key/findings/graph.privilegeEscalationAwsRoleFinding
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.privilegeEscalationAwsRoleFinding
 ```
 
 ## Optional query parameters
@@ -51,6 +51,7 @@ If successful, this method returns a `200 OK` response code and a [privilegeEsca
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -58,11 +59,11 @@ The following is an example of a request.
 }
 -->
 ``` http
-https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.privilegeEscalationAwsRoleFinding
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('MSxQcml2aWxlZ2VFc2NhbGF0aW9uQXdzUm9sZUZpbmRpbmcsOTg0MzI')/graph.privilegeEscalationAwsRoleFinding
 ```
 
-
 ### Response
+
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -74,41 +75,31 @@ The following is an example of the response
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
-  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.privilegeEscalationAwsRoleFinding",
-  "value": [
-    {
-      "@odata.type": "graph.privilegeEscalationAwsRoleFinding",
-      "id": "cHJpdmlsZWdlRXNjYWxhdGlvblJvbGVGaW5kaW5nMTAwMDE",
-      "identity": {
-        "@odata.type": "graph.awsRole",
-        "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpyb2xlL2RlcGxveWVyLWVudi1zaGVsbA==",
-        "externalId": "arn:aws:iam::377596131774:role/deployer-env-shell",
-        "displayName": "deployer-env-shell",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.privilegeEscalationAwsRoleFinding/$entity",
+    "id": "MSxQcml2aWxlZ2VFc2NhbGF0aW9uQXdzUm9sZUZpbmRpbmcsOTg0MzI",
+    "createdDateTime": "2023-10-17T23:47:23.930439Z",
+    "permissionsCreepIndex": {
+        "score": 2
+    },
+    "identity": {
+        "@odata.type": "#microsoft.graph.awsRole",
+        "id": "YXJuOmF3czppYW06Ojk1Njk4Nzg4NzczNTpyb2xlL2NrLXFhLXNlbnRyeS1tZW1iZXItcm9sZQ",
+        "externalId": "arn:aws:iam::956987887735:role/ck-qa-sentry-member-role",
+        "displayName": "ck-qa-sentry-member-role",
         "source": {
-          "@odata.type": "graph.awsSource",
-          "identityProviderType": "aws",
-          "accountId": "956987887735"
+            "@odata.type": "#microsoft.graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "956987887735"
         },
         "authorizationSystem": {
-          "@odata.type": "graph.awsAuthorizationSystem",
-          "id": "{Id}",
-          "authorizationSystemId": "956987887735",
-          "authorizationSystemName": "cloudknox-development",
-          "authorizationSystemType": "aws"
+            "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
+            "authorizationSystemId": "956987887735",
+            "authorizationSystemName": "ck-development",
+            "authorizationSystemType": "aws",
+            "id": "MSxhd3MsOTU2OTg3ODg3NzM1"
         }
-      },
-      "createdDateTime": "2020-10-11T20:11:45.6711Z",
-      "permissionsCreepIndex": {
-        "score": 99
-      },
-      "identityDetails": {
-        "createdDateTime": "2020-04-12T20:34:24Z",
-        "lastActiveDateTime": "2020-10-30T03:21:05Z"
-      }
     }
-  ],
-  "@odata.nextLink": "https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.privilegeEscalationAwsRoleFinding?$skiptoken=foobar"
 }
 ```
-

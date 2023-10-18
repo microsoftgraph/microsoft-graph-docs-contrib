@@ -3,7 +3,7 @@ title: "List privilegeEscalationGcpServiceAccountFindings"
 description: "Get a list of the privilegeEscalationGcpServiceAccountFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/gcp/findings/graph.privilegeEscalationGcpServiceAccountFinding
+GET /identityGovernance/permissionsAnalytics/gcp/findings/graph.privilegeEscalationGcpServiceAccountFinding
 ```
 
 ## Optional query parameters
@@ -51,6 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
+
 The following is an example of a request.
 <!-- {
   "blockType": "request",
@@ -61,8 +62,8 @@ The following is an example of a request.
 GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/gcp/findings/graph.privilegeEscalationGcpServiceAccountFinding
 ```
 
-
 ### Response
+
 The following is an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -76,17 +77,40 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/gcp/findings/graph.privilegeEscalationGcpServiceAccountFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.privilegeEscalationGcpServiceAccountFinding",
-      "id": "aaa94343-782c-c971-71f9-1273514aea9d",
-      "createdDateTime": "String (timestamp)",
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
+      "@odata.type": "graph.privilegeEscalationGcpServiceAccountFinding",
+      "id": "cHJpdmlsZWdlRXNjYWxhdGlvblNlcnZpY2VBY2NvdW50RmluZGluZzEwMDAx",
+      "identity": {
+        "@odata.type": "graph.gcpServiceAccount",
+        "id": "YXNldGhpYUBjbG91ZGtub3guaW8=",
+        "externalId": "asethia@cloudknox.io",
+        "displayName": "asethia",
+        "source": {
+          "@odata.type": "graph.gsuiteSource",
+          "identityProviderType": "gsuite",
+          "domain": "cloudknox.io"
+        },
+        "authorizationSystem": {
+          "@odata.type": "graph.gcpAuthorizationSystem",
+          "id": "{Id}",
+          "authorizationSystemId": "carbide-bonsai-205017",
+          "authorizationSystemName": "ck-staging",
+          "authorizationSystemType": "gcp"
+        }
       },
-      "lastActiveDateTime": "String (timestamp)"
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "permissionsCreepIndex": {
+        "score": 99
+      },
+      "identityDetails": {
+        "createdDateTime": "2020-04-12T20:34:24Z",
+        "lastActiveDateTime": "2020-10-30T03:21:05Z"
+      }
     }
-  ]
+  ],
+  "@odata.nextLink": "https://graph.microsoft.com/identityGovernance/permissionsAnalytics/gcp/findings/graph.privilegeEscalationGcpServiceAccountFinding?$skiptoken=foobar"
 }
-```
 
+```

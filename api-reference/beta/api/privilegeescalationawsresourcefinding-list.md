@@ -3,7 +3,7 @@ title: "List privilegeEscalationAwsResourceFindings"
 description: "Get a list of the privilegeEscalationAwsResourceFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.privilegeEscalationAwsResourceFindingd
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.privilegeEscalationAwsResourceFindingd
 ```
 
 ## Optional query parameters
@@ -76,17 +76,40 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.privilegeEscalationAwsResourceFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.privilegeEscalationAwsResourceFinding",
-      "id": "39dd4fcf-a6be-5d88-41a3-1bf3c231346e",
-      "createdDateTime": "String (timestamp)",
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
+      "@odata.type": "graph.privilegeEscalationAwsResourceFinding",
+      "id": "cHJpdmlsZWdlRXNjYWxhdGlvblJlc291cmNlRmluZGluZzEwMDAx",
+      "identity": {
+        "@odata.type": "graph.awsEc2Instance",
+        "id": "YXJuOmF3czplYzI6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTppbnN0YW5jZS9pLTAxNTAzYTZhYjA0ODZlZmU1",
+        "externalId": "arn:aws:ec2:us-west-2:956987887735:instance/i-01503a6ab0486efe5",
+        "displayName": "prat-cnx-user-test3",
+        "source": {
+          "@odata.type": "graph.awsSource",
+          "identityProviderType": "aws",
+          "accountId": "956987887735"
+        },
+        "authorizationSystem": {
+          "@odata.type": "graph.awsAuthorizationSystem",
+          "id": "{Id}",
+          "authorizationSystemId": "956987887735",
+          "authorizationSystemName": "cloudknox-development",
+          "authorizationSystemType": "aws"
+        }
       },
-      "lastActiveDateTime": "String (timestamp)"
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "permissionsCreepIndex": {
+        "score": 99
+      },
+      "identityDetails": {
+        "createdDateTime": "2020-04-12T20:34:24Z",
+        "lastActiveDateTime": "2020-10-30T03:21:05Z"
+      }
     }
-  ]
+  ],
+  "@odata.nextLink": "https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.privilegeEscalationAwsResourceFinding?$skiptoken=foobar"
 }
 ```
 

@@ -1,9 +1,9 @@
 ---
 title: "privilegeEscalationUserFinding resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "A finding that represents the a list of potential exploiting of a misconfigured IAM policy or configuration oversight to gain elevated access to other permissions and resources."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,39 +13,36 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+A finding that represents the a list of potential exploiting of a misconfigured IAM policy or configuration oversight to gain elevated access to other permissions and resources.
 
 Inherits from [privilegeEscalationFinding](../resources/privilegeescalationfinding.md).
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List privilegeEscalationUserFindings](../api/privilegeescalationuserfinding-list.md)|[privilegeEscalationUserFinding](../resources/privilegeescalationuserfinding.md) collection|Get a list of the [privilegeEscalationUserFinding](../resources/privilegeescalationuserfinding.md) objects and their properties.|
 |[Get privilegeEscalationUserFinding](../api/privilegeescalationuserfinding-get.md)|[privilegeEscalationUserFinding](../resources/privilegeescalationuserfinding.md)|Read the properties and relationships of a [privilegeEscalationUserFinding](../resources/privilegeescalationuserfinding.md) object.|
-|[Update privilegeEscalationUserFinding](../api/privilegeescalationuserfinding-update.md)|[privilegeEscalationUserFinding](../resources/privilegeescalationuserfinding.md)|Update the properties of a [privilegeEscalationUserFinding](../resources/privilegeescalationuserfinding.md) object.|
-|[Delete privilegeEscalationUserFinding](../api/privilegeescalationuserfinding-delete.md)|None|Delete a [privilegeEscalationUserFinding](../resources/privilegeescalationuserfinding.md) object.|
-|[List authorizationSystemIdentity](../api/privilegeescalationuserfinding-list-identity.md)|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md) collection|Get the authorizationSystemIdentity resources from the identity navigation property.|
-|[Add authorizationSystemIdentity](../api/privilegeescalationuserfinding-post-identity.md)|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Add identity by posting to the identity collection.|
-|[Remove authorizationSystemIdentity](../api/privilegeescalationuserfinding-delete-identity.md)|None|Remove an [authorizationSystemIdentity](../resources/authorizationsystemidentity.md) object.|
 |[List potentialPrivilegeEscalations](../api/privilegeescalationuserfinding-list-potentialprivilegeescalations.md)|[privilegeEscalation](../resources/privilegeescalation.md) collection|Get the privilegeEscalation resources from the potentialPrivilegeEscalations navigation property.|
-|[Create privilegeEscalation](../api/privilegeescalationuserfinding-post-potentialprivilegeescalations.md)|[privilegeEscalation](../resources/privilegeescalation.md)|Create a new privilegeEscalation object.|
 
 ## Properties
+
 |Property|Type|Description|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [finding](../resources/finding.md).|
 |id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|lastActiveDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [privilegeEscalationFinding](../resources/privilegeescalationfinding.md).|
-|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|**TODO: Add Description** Inherited from [privilegeEscalationFinding](../resources/privilegeescalationfinding.md).|
+|lastActiveDateTime|DateTimeOffset|A date specifiying when the last time the identity in this Finding executed an authorization system action. Inherited from [privilegeEscalationFinding](../resources/privilegeescalationfinding.md).|
+|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|Assigns an index based on an identities excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the identity Inherited from [privilegeEscalationFinding](../resources/privilegeescalationfinding.md).|
 
 ## Relationships
+
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|**TODO: Add Description** Inherited from [microsoft.graph.privilegeEscalationFinding](../resources/privilegeescalationfinding.md)|
-|potentialPrivilegeEscalations|[privilegeEscalation](../resources/privilegeescalation.md) collection|**TODO: Add Description** Inherited from [microsoft.graph.privilegeEscalationFinding](../resources/privilegeescalationfinding.md)|
+|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization system|Inherited from [microsoft.graph.privilegeEscalationFinding](../resources/privilegeescalationfinding.md)|
+|potentialPrivilegeEscalations|[privilegeEscalation](../resources/privilegeescalation.md) collection|represents users with the potential to escalate privileges Inherited from [microsoft.graph.privilegeEscalationFinding](../resources/privilegeescalationfinding.md)|
 
 ## JSON representation
+
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
@@ -66,4 +63,3 @@ The following is a JSON representation of the resource.
   "lastActiveDateTime": "String (timestamp)"
 }
 ```
-

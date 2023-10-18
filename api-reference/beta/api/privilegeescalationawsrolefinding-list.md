@@ -3,7 +3,7 @@ title: "List privilegeEscalationAwsRoleFindings"
 description: "Get a list of the privilegeEscalationAwsRoleFinding objects and their properties."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -22,6 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Not supported|
 |Delegated (personal Microsoft account)|Not supported|
 |Application|**SERVICENOWAPI**|
+
 ## HTTP request
 
 <!-- {
@@ -29,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.privilegeEscalationAwsRoleFinding
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.privilegeEscalationAwsRoleFinding
 ```
 
 ## Optional query parameters
@@ -57,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.privilegeEscalationAwsRoleFinding
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.privilegeEscalationAwsRoleFinding
 ```
 
 
@@ -75,17 +76,39 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.privilegeEscalationAwsRoleFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.privilegeEscalationAwsRoleFinding",
-      "id": "10fff27f-9bbc-ed92-f26d-a848928a72a3",
-      "createdDateTime": "String (timestamp)",
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
+      "@odata.type": "graph.privilegeEscalationAwsRoleFinding",
+      "id": "cHJpdmlsZWdlRXNjYWxhdGlvblJvbGVGaW5kaW5nMTAwMDE",
+      "identity": {
+        "@odata.type": "graph.awsRole",
+        "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpyb2xlL2RlcGxveWVyLWVudi1zaGVsbA==",
+        "externalId": "arn:aws:iam::377596131774:role/deployer-env-shell",
+        "displayName": "deployer-env-shell",
+        "source": {
+          "@odata.type": "graph.awsSource",
+          "identityProviderType": "aws",
+          "accountId": "956987887735"
+        },
+        "authorizationSystem": {
+          "@odata.type": "graph.awsAuthorizationSystem",
+          "id": "{Id}",
+          "authorizationSystemId": "956987887735",
+          "authorizationSystemName": "cloudknox-development",
+          "authorizationSystemType": "aws"
+        }
       },
-      "lastActiveDateTime": "String (timestamp)"
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "permissionsCreepIndex": {
+        "score": 99
+      },
+      "identityDetails": {
+        "createdDateTime": "2020-04-12T20:34:24Z",
+        "lastActiveDateTime": "2020-10-30T03:21:05Z"
+      }
     }
-  ]
+  ],
+  "@odata.nextLink": "https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.privilegeEscalationAwsRoleFinding?$skiptoken=foobar"
 }
 ```
-

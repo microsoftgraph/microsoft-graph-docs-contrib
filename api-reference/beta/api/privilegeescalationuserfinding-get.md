@@ -3,7 +3,7 @@ title: "Get privilegeEscalationUserFinding"
 description: "Read the properties and relationships of a privilegeEscalationUserFinding object."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -25,15 +25,26 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+List AWS users with privilege escalation:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+GET /identityGovernance/permissionsAnalytics/aws/findings('id')/graph.privilegeEscalationUserFinding
+```
+
+List GCP users with privilege escalation:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.privilegeEscalationUserFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports none of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -57,7 +68,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws('id')/findings/graph.privilegeEscalationUserFinding
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('MSxQcml2aWxlZ2VFc2NhbGF0aW9uVXNlckZpbmRpbmcsNjI4MzQ')/graph.privilegeEscalationUserFinding
 ```
 
 
@@ -73,41 +84,31 @@ The following is an example of the response
 ``` http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
-  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.privilegeEscalationUserFinding",
-  "value": [
-    {
-      "@odata.type": "graph.privilegeEscalationUserFinding",
-      "id": "10Z3JhcGgucHJpdmlsZWdlRXNjYWxhdGlvblVzZXJGaW5kaW5nMTAwMDE0001",
-      "identity": {
-        "@odata.type": "graph.awsUser",
-        "id": "YXJuOmF3czppYW06Ojk1Njk4Nzg4NzczNTp1c2VyL3JhZ2hhdmVuZHJh",
-        "externalId": "arn:aws:iam::956987887735:user/raghavendra",
-        "displayName": "raghavendra",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.privilegeEscalationUserFinding/$entity",
+    "id": "MSxQcml2aWxlZ2VFc2NhbGF0aW9uVXNlckZpbmRpbmcsNjI4MzQ",
+    "createdDateTime": "2023-10-17T23:47:24.056138Z",
+    "permissionsCreepIndex": {
+        "score": 99
+    },
+    "identity": {
+        "@odata.type": "#microsoft.graph.awsUser",
+        "id": "YWx2b2xrb3ZAZ21haWwuY29t",
+        "externalId": "alvolkov@gmail.com",
+        "displayName": "readonly user1",
         "source": {
-          "@odata.type": "graph.awsSource",
-          "identityProviderType": "aws",
-          "accountId": "956987887735"
+            "@odata.type": "#microsoft.graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "956987887735"
         },
         "authorizationSystem": {
-          "@odata.type": "graph.awsAuthorizationSystem",
-          "id": "{Id}",
-          "authorizationSystemId": "956987887735",
-          "authorizationSystemName": "cloudknox-development",
-          "authorizationSystemType": "aws"
+            "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
+            "authorizationSystemId": "956987887735",
+            "authorizationSystemName": "ck-development",
+            "authorizationSystemType": "aws",
+            "id": "MSxhd3MsOTU2OTg3ODg3NzM1"
         }
-      },
-      "permissionsCreepIndex": {
-        "score": 99
-      },
-      "createdDateTime": "2020-10-11T20:11:45.6711Z",
-      "identityDetails": {
-        "createdDateTime": "2020-04-12T20:34:24Z",
-        "lastActiveDateTime": "2020-10-30T03:21:05Z"
-      }
-    },
-  ],
-  "@odata.nextLink": "https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.privilegeEscalationUserFinding?$skiptoken=foobar"
+    }
 }
 ```
-

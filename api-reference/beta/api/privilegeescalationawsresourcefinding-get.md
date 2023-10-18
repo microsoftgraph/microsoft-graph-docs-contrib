@@ -3,7 +3,7 @@ title: "Get privilegeEscalationAwsResourceFinding"
 description: "Read the properties and relationships of a privilegeEscalationAwsResourceFinding object."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/key/findings/graph.privilegeEscalationAwsResourceFinding
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.privilegeEscalationAwsResourceFinding
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws('id')/findings/graph.privilegeEscalationAwsResourceFinding
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.privilegeEscalationAwsResourceFinding
 ```
 
 

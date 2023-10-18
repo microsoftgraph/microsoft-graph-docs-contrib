@@ -1,9 +1,9 @@
 ---
 title: "privilegeEscalation resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Represents the Privilege Escalation events."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+Represents the Privilege Escalation events.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -24,8 +23,6 @@ Inherits from [entity](../resources/entity.md).
 |[List privilegeEscalations](../api/privilegeescalationuserfinding-list-potentialprivilegeescalations.md)|[privilegeEscalation](../resources/privilegeescalation.md) collection|Get a list of the [privilegeEscalation](../resources/privilegeescalation.md) objects and their properties.|
 |[Create privilegeEscalation](../api/privilegeescalationuserfinding-post-potentialprivilegeescalations.md)|[privilegeEscalation](../resources/privilegeescalation.md)|Create a new [privilegeEscalation](../resources/privilegeescalation.md) object.|
 |[Get privilegeEscalation](../api/privilegeescalation-get.md)|[privilegeEscalation](../resources/privilegeescalation.md)|Read the properties and relationships of a [privilegeEscalation](../resources/privilegeescalation.md) object.|
-|[Update privilegeEscalation](../api/privilegeescalation-update.md)|[privilegeEscalation](../resources/privilegeescalation.md)|Update the properties of a [privilegeEscalation](../resources/privilegeescalation.md) object.|
-|[Delete privilegeEscalation](../api/privilegeescalationuserfinding-delete-potentialprivilegeescalations.md)|None|Delete a [privilegeEscalation](../resources/privilegeescalation.md) object.|
 |[List actions](../api/privilegeescalation-list-actions.md)|[authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md) collection|Get the authorizationSystemTypeAction resources from the actions navigation property.|
 |[Add authorizationSystemTypeAction](../api/privilegeescalation-post-actions.md)|[authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md)|Add actions by posting to the actions collection.|
 |[Remove actions](../api/privilegeescalation-delete-actions.md)|None|Remove an [authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md) object.|
@@ -36,15 +33,15 @@ Inherits from [entity](../resources/entity.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|**TODO: Add Description**|
-|displayName|String|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
+|description|Edm.String|A detailed description of the privilege escalation.|
+|displayName|Edm.String|The name of the policy that defines the escalation|
+|id|Edm.String|the ID of the privilege escalation Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|actions|[authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md) collection|**TODO: Add Description**|
-|resources|[authorizationSystemResource](../resources/authorizationsystemresource.md) collection|**TODO: Add Description**|
+|actions|[authorizationSystemTypeAction](../resources/authorizationsystemtypeaction.md) collection|The list of actions that the identity could perform.|
+|resources|[authorizationSystemResource](../resources/authorizationsystemresource.md) collection|The list of resources that the identity could perform actions on.|
 
 ## JSON representation
 The following is a JSON representation of the resource.

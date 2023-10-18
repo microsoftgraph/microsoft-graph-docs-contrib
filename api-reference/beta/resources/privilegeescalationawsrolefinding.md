@@ -1,9 +1,9 @@
 ---
 title: "privilegeEscalationAwsRoleFinding resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "AWS roles with privilege escalation"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+AWS roles with privilege escalation
 
 Inherits from [privilegeEscalationFinding](../resources/privilegeescalationfinding.md).
 
@@ -23,11 +22,6 @@ Inherits from [privilegeEscalationFinding](../resources/privilegeescalationfindi
 |:---|:---|:---|
 |[List privilegeEscalationAwsRoleFindings](../api/privilegeescalationawsrolefinding-list.md)|[privilegeEscalationAwsRoleFinding](../resources/privilegeescalationawsrolefinding.md) collection|Get a list of the [privilegeEscalationAwsRoleFinding](../resources/privilegeescalationawsrolefinding.md) objects and their properties.|
 |[Get privilegeEscalationAwsRoleFinding](../api/privilegeescalationawsrolefinding-get.md)|[privilegeEscalationAwsRoleFinding](../resources/privilegeescalationawsrolefinding.md)|Read the properties and relationships of a [privilegeEscalationAwsRoleFinding](../resources/privilegeescalationawsrolefinding.md) object.|
-|[Update privilegeEscalationAwsRoleFinding](../api/privilegeescalationawsrolefinding-update.md)|[privilegeEscalationAwsRoleFinding](../resources/privilegeescalationawsrolefinding.md)|Update the properties of a [privilegeEscalationAwsRoleFinding](../resources/privilegeescalationawsrolefinding.md) object.|
-|[Delete privilegeEscalationAwsRoleFinding](../api/privilegeescalationawsrolefinding-delete.md)|None|Delete a [privilegeEscalationAwsRoleFinding](../resources/privilegeescalationawsrolefinding.md) object.|
-|[List authorizationSystemIdentity](../api/privilegeescalationawsrolefinding-list-identity.md)|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md) collection|Get the authorizationSystemIdentity resources from the identity navigation property.|
-|[Add authorizationSystemIdentity](../api/privilegeescalationawsrolefinding-post-identity.md)|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Add identity by posting to the identity collection.|
-|[Remove authorizationSystemIdentity](../api/privilegeescalationawsrolefinding-delete-identity.md)|None|Remove an [authorizationSystemIdentity](../resources/authorizationsystemidentity.md) object.|
 |[List potentialPrivilegeEscalations](../api/privilegeescalationawsrolefinding-list-potentialprivilegeescalations.md)|[privilegeEscalation](../resources/privilegeescalation.md) collection|Get the privilegeEscalation resources from the potentialPrivilegeEscalations navigation property.|
 |[Create privilegeEscalation](../api/privilegeescalationawsrolefinding-post-potentialprivilegeescalations.md)|[privilegeEscalation](../resources/privilegeescalation.md)|Create a new privilegeEscalation object.|
 
@@ -36,8 +30,8 @@ Inherits from [privilegeEscalationFinding](../resources/privilegeescalationfindi
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [finding](../resources/finding.md).|
 |id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|lastActiveDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [privilegeEscalationFinding](../resources/privilegeescalationfinding.md).|
-|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|**TODO: Add Description** Inherited from [privilegeEscalationFinding](../resources/privilegeescalationfinding.md).|
+|lastActiveDateTime|DateTimeOffset| date specifiying when the last time the identity in this Finding executed an authorization system* Inherited from [privilegeEscalationFinding](../resources/privilegeescalationfinding.md).|
+|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|Assigns an index based on an identities excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the identity Inherited from [privilegeEscalationFinding](../resources/privilegeescalationfinding.md).|
 
 ## Relationships
 |Relationship|Type|Description|
