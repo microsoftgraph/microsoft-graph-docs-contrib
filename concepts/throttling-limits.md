@@ -10,7 +10,7 @@ ms.custom: graphiamtop20
 
 # Microsoft Graph service-specific throttling limits
 
-Microsoft Graph allows you to access data in [multiple services](overview-major-services.md), such as Outlook or Azure Active Directory. These services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
+Microsoft Graph allows you to access data in [multiple services](overview-major-services.md), such as Outlook or Microsoft Entra ID. These services impose their own throttling limits that affect applications that use Microsoft Graph to access them.
 
 Any request can be evaluated against multiple limits, depending on the scope of the limit (per app across all tenants, per tenant for all apps, per app per tenant, and so on), the request type (GET, POST, PATCH, and so on), and other factors. The first limit to be reached triggers throttling behavior. In addition to the service specific-limits described in the section, the following global limits apply:
 
@@ -108,9 +108,9 @@ The preceding limits apply to the following resources:
 [!INCLUDE [Azure AD identity and access reports throttling documentation](../includes/throttling-aad-reports.md)]
 
 ### Identity and access reports best practices
-Azure AD reporting APIs are throttled when Azure AD receives too many calls during a given timeframe from a tenant or app. Calls may also be throttled if the service takes too long to respond. If your requests still fail with a `429 Too Many Requests` error code despite applying the [best practices to handle throttling](throttling.md#best-practices-to-handle-throttling), try reducing the amount of data returned. Try these approaches first:
+Microsoft Entra reporting APIs are throttled when Microsoft Entra ID receives too many calls during a given timeframe from a tenant or app. Calls may also be throttled if the service takes too long to respond. If your requests still fail with a `429 Too Many Requests` error code despite applying the [best practices to handle throttling](throttling.md#best-practices-to-handle-throttling), try reducing the amount of data returned. Try these approaches first:
 - Use filters to target your query to just the data you need. If you only need a certain type of event or a subset of users, for example, filter out other events using the `$filter` and `$select` query parameters to reduce the size of your response object and the risk of throttling.
-- If you need a broad set of Azure AD reporting data, use `$filter` on the **createdDateTime** to limit the number of sign-in events you query in a single call. Then, iterate through the next timespan until you have all the records you need. For example, if you are being throttled, you can begin with a call that requests three days of data and iterate with shorter timespans until your requests are no longer throttled.
+- If you need a broad set of Microsoft Entra ID reporting data, use `$filter` on the **createdDateTime** to limit the number of sign-in events you query in a single call. Then, iterate through the next timespan until you have all the records you need. For example, if you are being throttled, you can begin with a call that requests three days of data and iterate with shorter timespans until your requests are no longer throttled.
 
 
 ## Identity and access service limits
