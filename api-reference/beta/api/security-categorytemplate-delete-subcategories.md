@@ -39,7 +39,7 @@ DELETE /security/labels/categories/{categoryTemplateId}/subCategories/{subCatego
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -48,7 +48,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following shows an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -70,7 +70,7 @@ DELETE https://graph.microsoft.com/beta/security/labels/categories/6cf65e55-6baf
 ---
 
 ### Response
-The following is an example of the response.
+The following shows an example of the response.
 >
 <!-- {
   "blockType": "response",
