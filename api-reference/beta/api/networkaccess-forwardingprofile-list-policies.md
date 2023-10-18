@@ -3,7 +3,7 @@ title: "List policies"
 description: "Retrieve a list of forwarding policy links associated with a specific forwarding profile."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 

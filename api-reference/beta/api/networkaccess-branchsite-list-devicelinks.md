@@ -3,7 +3,7 @@ title: "List deviceLinks"
 description: "Retrieve a list of device links associated with a specific branch."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 

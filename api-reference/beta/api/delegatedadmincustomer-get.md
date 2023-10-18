@@ -3,7 +3,7 @@ title: "Get delegatedAdminCustomer"
 description: "Read the properties of a delegatedAdminCustomer object."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.prod: partner-customer-administration
 doc_type: apiPageType
 ---
 
