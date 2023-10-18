@@ -27,15 +27,15 @@ This article provides information about the different Microsoft Graph national c
 
 ## App registration and token service root endpoints
 
-Before calling the Microsoft Graph APIs, you should first register your application and acquire a token. The following table lists the base URLs for the Microsoft Entra endpoints to register your application and acquire tokens for each national cloud.
+Before calling the Microsoft Graph APIs, you should first register your application and acquire a token. The following table lists the base URLs for the endpoints to register your application and acquire tokens for each national cloud.
 
-| National cloud | Microsoft Entra admin center endpoint | Microsoft Entra endpoint |
+| National cloud | Azure portal endpoint | Microsoft Entra ID endpoint |
 | -------------- | ------------------------ | ----------------- |
-| Microsoft Entra ID (global service) | `https://portal.azure.com` | `https://login.microsoftonline.com` |
-| Microsoft Entra ID for US Government | `https://portal.azure.us` | `https://login.microsoftonline.us` |
-| Microsoft Entra China operated by 21Vianet | `https://portal.azure.cn` | `https://login.chinacloudapi.cn` |
+| Azure global service | `https://portal.azure.com` | `https://login.microsoftonline.com` |
+| Azure US Government | `https://portal.azure.us` | `https://login.microsoftonline.us` |
+| Azure China operated by 21Vianet | `https://portal.azure.cn` | `https://login.chinacloudapi.cn` |
 
-To learn more about access tokens and Microsoft Graph, see [authentication basics](./auth/auth-concepts.md). For Microsoft Entra authentication scenarios, see [Microsoft Entra authentication basics](/azure/active-directory/develop/authentication-scenarios).
+To learn more about access tokens and Microsoft Graph, see [authentication basics](./auth/auth-concepts.md). For authentication scenarios, see [Microsoft identity platform authentication basics](/azure/active-directory/develop/authentication-scenarios).
 
 ## Microsoft Graph and Graph Explorer service root endpoints
 

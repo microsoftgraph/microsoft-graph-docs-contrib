@@ -52,7 +52,7 @@ To switch to the newer Microsoft Graph schema extension model, you'll need to:
 
 - Define new schema extension definitions using Microsoft Graph.
 - Update the app to support the new schema extension definitions.
-- Migrate the data from the Microsoft Entra schema extension properties to the new Microsoft Graph schema extension properties.  Automatic migration of data is not supported.
+- Migrate the data from the Microsoft Entra ID schema extension properties to the new Microsoft Graph schema extension properties.  Automatic migration of data is not supported.
 
 ## Differential queries
 

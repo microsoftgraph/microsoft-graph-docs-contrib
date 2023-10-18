@@ -39,7 +39,7 @@ In development:
 
 ### Azure AD v2.0 endpoint is not supported for CSP apps
 
-Cloud solution provider (CSP) apps must acquire tokens from the Microsoft Entra ID (v1) endpoints to successfully call Microsoft Graph in their partner-managed customers. Currently, acquiring a token through the newer Azure AD v2.0 endpoint is not supported.
+Cloud solution provider (CSP) apps must acquire tokens from the Microsoft identity platform (v1) endpoints to successfully call Microsoft Graph in their partner-managed customers. Currently, acquiring a token through the newer Azure AD v2.0 endpoint is not supported.
 
 ### Pre-consent for CSP apps doesn't work in some customer tenants
 

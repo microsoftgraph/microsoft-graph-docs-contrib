@@ -356,7 +356,7 @@ Create a new PowerShell script named **updatePermissions.ps1** and add the follo
 
 # [Azure AD Graph permissions only](#tab/updatepermissions-azureadgraph-powershell)
 [!INCLUDE [addAzureADPermissions](includes/azure-ad-graph-migration-scripts/azureadgraphpermissions.md)]
-# [Microsoft Entra ID and Microsoft Graph permissions](#tab/updatepermissions-azureadgraph-msgraph-powershell)
+# [Azure AD Graph and Microsoft Graph permissions](#tab/updatepermissions-azureadgraph-msgraph-powershell)
 [!INCLUDE [addAzureAD+MicrosoftGraphPermissions](includes/azure-ad-graph-migration-scripts/azureadgraph-microsoftgraph-permissions.md)]
 
 ---
