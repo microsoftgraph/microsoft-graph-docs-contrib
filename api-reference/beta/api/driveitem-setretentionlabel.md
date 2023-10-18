@@ -65,7 +65,7 @@ When a file is applied with a retention label for the first time, this method re
 
 ### Request
 
-The following shows an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -120,7 +120,7 @@ Content-Type: application/json
 
 ### Response
 
-The following shows an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
