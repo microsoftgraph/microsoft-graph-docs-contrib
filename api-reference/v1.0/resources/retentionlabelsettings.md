@@ -26,7 +26,7 @@ Groups all the compliance retention restrictions on the item into a single struc
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following shows a JSON representation of the resource.
 
 <!-- {
 "blockType": "resource",
