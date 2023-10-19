@@ -8,11 +8,11 @@ ms.prod: "microsoft-teams"
 
 # Send activity feed notifications to users in Microsoft Teams
 
-The Microsoft Teams activity feed enables users to triage items that require attention by notifying them of changes. You can use the activity feed notification APIs in Microsoft Graph to extend this functionality to your apps. This allows your apps to provide richer experiences and better engage users by helping to keep them up to date with changes in the tools and workflows they use.
+The Microsoft Teams activity feed enables users to triage items that require attention by notifying them of changes. You can use the activity feed notification APIs in Microsoft Graph to extend this functionality to your apps. It also allows your apps to provide richer experiences and better engage users by helping to keep them up to date with changes in the tools and workflows they use.
 
 ## Understand the basics of activity feed notification
 
-Activity feed notifications in Microsoft Teams are comprised of multiple bits of information, displayed together, as shown in the following image.
+The following image shows that activity feed notifications in Microsoft Teams comprise multiple bits of information displayed together.
 
 ![Image showing components of an activity feed notification](images/teams-activityfeednotifications/notificationtemplate.png)
 
@@ -21,10 +21,10 @@ The components include:
 - An icon that represents the activity type
 - The reason the actor did the activity
 - A text preview
-- A time stamp
+- A timestamp
 - The location of the activity
 
-The following example shows how these components together provide the details about a notification. This example is a notification about a user mentioned in a Yammer community.
+The following example shows how these components provide the details about a notification. This example is a notification about a user mentioned in a Yammer community.
 
 ![Yammer actifity notification example](images/teams-activityfeednotifications/examplefeednotification.png)
 
@@ -32,9 +32,11 @@ The following example shows how these components together provide the details ab
 
 Activity feed APIs work with a [Teams app](/microsoftteams/platform/overview). The following are the requirements for sending activity feed notifications:
 
-- The Teams app manifest must have the Microsoft Entra app ID added to the `webApplicationInfo` section. For details, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
-- Activity types must be declared in the `activities` section. For details, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
-- The Teams app must be installed for the recipient, either personally, or in a [team](/graph/api/resources/team) or [chat](/graph/api/resources/chat) they are part of. For more information, see [Teams app installation](/graph/api/resources/teamsappinstallation).
+- The Teams app manifest must have the Microsoft Entra app ID added to the `webApplicationInfo` section. For more information, see [manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
+- Activity notifications can be sent with or without activity types declared in the app manifest.
+  - By default, you can use the activity notification APIs without declaring the `activities` section in the manifest. The `systemDefault` activity type is reserved, allowing you to provide free-form text in the `Actor+Reason` line of the activity feed notification.  For more information, see [Send customizable activity feed notifications](#example-8-send-a-notification-to-a-user-using-the-systemdefault-activity-type).
+  - If you want to send a templated notification in the traditional mode, activity types must be declared in the [Activities](#activities-section-changes) section. For more information, see [Manifest schema](/microsoftteams/platform/resources/schema/manifest-schema).
+- The Teams app must be installed for the recipient, either personally or in a [team](/graph/api/resources/team) or [chat](/graph/api/resources/chat) they're part of. For more information, see [Teams app installation](/graph/api/resources/teamsappinstallation).
 
 ### Permissions
 
@@ -42,7 +44,7 @@ You can use delegated or application permissions to send activity notifications.
 
 ### Teams app manifest changes
 
-This section describes the changes that need to be added to Teams app manifest. Note that you must be using the [Teams app manifest](/microsoftteams/platform/resources/schema/manifest-schema) version `1.7` or greater.
+This section describes the changes that must be added to the Teams app manifest. You need to use the [Teams app manifest](/microsoftteams/platform/resources/schema/manifest-schema) version `1.7` or greater.
 
 ```json
 "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
@@ -61,11 +63,11 @@ This section describes the changes that need to be added to Teams app manifest. 
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|id|string|Microsoft Entra app ID (client ID).|
-|resource|string|Resource associated with the Microsoft Entra app. Also known as reply or Redirect URI in the Microsoft Entra admin center app registration overview.|
+|id|string|Microsoft Entra (client ID).|
+|resource|string|Resource associated with the Azure AD app. It is also known as a reply or redirect URI in the Microsoft Entra admin center app registration overview.|
 
 > [!NOTE]
-> You might get an error if multiple Teams apps in the same scope (team, chat or user) are using the same Microsoft Entra app. Make sure that you're using unique Microsoft Entra apps.
+> You might get an error if multiple Teams apps in the same scope (team, chat, or user) use the same Microsoft Entra app. Make sure that you're using unique Microsoft Entra apps.
 
 #### activities section changes
 
@@ -89,12 +91,14 @@ This section describes the changes that need to be added to Teams app manifest. 
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|type|string|Type of activity. This needs to be unique in a specific manifest.|
-|description|string|Human-readable short description. This will be visible on the Microsoft Teams client.|
+|type|string|The type needs to be unique in a specific manifest.|
+|description|string|Human-readable short description. The description is visible on the Microsoft Teams client.|
 |templateText|string|Template text for the activity notification. You can declare your parameters by encapsulating parameters in `{}`.|
 
 > [!NOTE]
-> `actor` is a special parameter that always takes the name of the caller. In delegated calls, `actor` is the user's name. In application-only calls, it takes the name of the Teams app.
+> * `actor` is a special parameter that always takes the caller's name. In delegated calls, `actor` is the user's name. In application-only calls, it takes the name of the Teams app.
+>
+> * The reserved `systemDefault` activity type should not be provided in the `activities` section of the manifest. The reserved activity type can provide free-form text in the `Actor+Reason` line of the activity feed notification. For more information, see [Send customizable activity feed notifications](#example-8-send-a-notification-to-a-user-using-the-systemdefault-activity-type).
 
 #### authorization section changes
 
@@ -123,21 +127,21 @@ This section describes the changes that need to be added to Teams app manifest. 
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|type|string|The type of the resource-specific consent (RSC) permission.|
+|type|string|The resource-specific consent (RSC) permission type.|
 |name|string|The name of the RSC permission. For more information, see [Supported RSC permissions](/microsoftteams/platform/graph-api/rsc/resource-specific-consent#supported-rsc-permissions) |
 
 ### Install the Teams app
 
-Teams apps can be installed in a team, a chat, or for a user personally, and can be distributed in multiple ways. For details, see [Teams app distribution methods](/microsoftteams/platform/concepts/deploy-and-publish/overview). Typically, [sideloading](/microsoftteams/platform/concepts/deploy-and-publish/apps-upload) is preferred for development purposes. After development, you can choose the right distribution method based on whether you want to distribute to one tenant or to all tenants.
+Teams apps can be installed in a team, a chat, or for a user personally, and can be distributed in multiple ways. For details, see [Teams app distribution methods](/microsoftteams/platform/concepts/deploy-and-publish/overview). Typically, [sideloading](/microsoftteams/platform/concepts/deploy-and-publish/apps-upload) is preferred for development purposes. After development, you can choose the right distribution method based on whether you want to distribute to one tenant or all tenants.
 
 You can also use [Teams app installation](/graph/api/resources/teamsappinstallation) APIs to manage Teams app installations.
 
 ## Send activity feed notifications to users
 
 > [!NOTE]
-> To show activity feed notifications on iOS and Android clients, the app must be included in the allow list. Only third-party apps are supported.
+> The app must be included in the allow list to show activity feed notifications on iOS and Android clients. Only third-party apps are supported.
 
-Because a Teams app can be installed for a user, in a team, or in a chat, the notifications can be sent in these three contexts as well:
+Because a Teams app can be installed for a user, in a team, or a chat, the notifications can be sent in these three contexts as well:
 
 - [Send notification to user in a chat](/graph/api/chat-sendactivitynotification)
 - [Send notification to user in a team](/graph/api/team-sendactivitynotification)
@@ -150,11 +154,11 @@ Additionally, notifications can be sent in bulk up to 100 users at a time:
 For details about what topics are supported for each scenario, see the specific APIs. Custom text-based topics are supported for all scenarios.
 
 > [!NOTE]
-> The activity icon is based on the context the request is made in. If the request is made with delegated permissions, the user's photo appears as the avatar, while the Teams app icon appears as the activity icon. In an application-only context, the Teams app icon is used as the avatar and the activity icon is omitted.
+> The activity icon is based on the context in which the request is made. If the request is made with delegated permissions, the user's photo appears as the avatar, while the Teams app icon appears as the activity icon. In an application-only context, the Teams app icon is used as the avatar, and the activity icon is omitted.
 
 ### Example 1: Notify a user about a task created in a chat
 
-This example shows how you can send an activity feed notification for a new task created in a chat. In this case, the Teams app must be installed in a chat with Id `chatId` and user `569363e2-4e49-4661-87f2-16f245c5d66a` must be part of the chat as well.
+This example shows how you can send an activity feed notification for a new task created in a chat. In this case, the Teams app must be installed in a chat with Id `chatId` and user `569363e2-4e49-4661-87f2-16f245c5d66a` must also be part of the chat.
 
 #### Request
 
@@ -318,12 +322,12 @@ HTTP/1.1 204 No Content
 
 ### Example 3: Notify a user about an event using a custom topic
 
-As seen in the previous examples, you can link to different aspects of a team or a chat. However, if you want to link to an aspect that is not part of the team or is not represented by Microsoft Graph, or if you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. Additionally, `webUrl` is required when you use `topic` source as `text`.
+As the previous examples show, you can link to different team or chat aspects. However, if you want to link to an aspect that is not part of the team or Microsoft Graph doesn't represent it, or if you want to customize the name, you can set the source of the `topic` to `text` and pass in a custom value for it. Additionally, `webUrl` is required when you use `topic` source as `text`.
 
-The Yammer notification example shown earlier uses a custom topic because Yammer's resources are not supported by Microsoft Graph.
+The Yammer notification example shown earlier uses a custom topic because Microsoft Graph does not support Yammer's resources.
 
 > [!NOTE]
-> `webUrl` must start with the Microsoft Teams domain (teams.microsoft.com for example).
+> `webUrl` must start with the Microsoft Teams domain (teams.microsoft.com, for example).
 
 #### Request
 
@@ -733,9 +737,72 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
+### Example 8: Send a notification to a user using the systemDefault activity type
+This example shows how you can send an activity notification for a team without activity types defined in the manifest. You have the flexibility to provide free-form text here. For more information, see [Reserved activity types](#reserved-activity-types).
+
+This example notifies the team owner to take a short break. Modify the `value` in `templateParameters` to customize the notification for various scenarios.
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification_take_a_break"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/v1.0/teams/{teamId}/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "entityUrl",
+        "value": "https://graph.microsoft.com/v1.0/teams/{teamId}"
+    },
+    "activityType": "systemDefault",
+    "previewText": {
+        "content": "Take a break"
+    },
+    "recipient": {
+        "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
+        "userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
+    },
+    "templateParameters": [
+        {
+            "name": "systemDefaultText",
+            "value": "You need to take a short break"
+        }
+    ]
+}
+```
+
+---
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+## Reserved activity types
+
+- The `systemDefault` activity type is reserved and can't be used in the manifest while declaring [Activities](#activities-section-changes).
+- You can use the `systemDefault` activity type to:
+  - Easily test new scenarios and/or quickly try the activity feed notification APIs without defining activity types in your app's manifest.
+  - For Store apps, it saves time and streamlines the process because you don't need to constantly adjust activity types in your app's manifest. The `systemDefault` activity type is ready to use from the get-go.
+- Keep in mind that with the `systemDefault` activity type, you can't:
+  - Utilize the built-in localization features provided by manifests.
+  - Rely on sending customizable notifications with the  `systemDefault` activity type. Users can turn off all notifications from your app with a toggle in the Microsoft Teams client settings, which can hinder communication between your app and its users.
+- We still recommend templated notifications for recurring and large batches of notifications because they require activity templates in the manifest.
+- The `systemDefault` reserved activity type remains available, regardless of the activity types listed in your app's manifest.
+
 ## Customize how the notifications alert you
 
-Microsoft Teams users can customize the notifications they see in their feed, as a banner, and so on. Notifications generated through activity feed APIs can also be customized. Users can choose how they are notified via settings in Microsoft Teams. Teams apps will appear in the list for the user to choose from, as shown in the following screenshot.
+Microsoft Teams users can customize the notifications they see in their feed, as a banner, and so on. Notifications generated through activity feed APIs can also be customized. Users can choose how they're notified via settings in Microsoft Teams. Teams apps appear in the list for the user to choose from, as shown in the following screenshot.
 
 ![Screenshot of the Notifications settings in Teams, with the Custom option highlighted](images/teams-activityfeednotifications/notificationsettings.png)
 
@@ -750,8 +817,9 @@ Users can click **Edit** next to an app and customize the notifications, as show
 The target user must have the Teams app that is sending notifications installed.
 
 ### Can a user send notifications to themselves?
+``
 
-No, a user cannot send notifications to themselves. For this scenario, use application permissions.
+No, a user can't send notifications to themselves. For this scenario, use application permissions.
 
 ### Can a Teams app control how the notifications are shown to the user?
 
@@ -759,11 +827,11 @@ No, only users are allowed to change notification settings.
 
 ### I installed my app; why don't I see notification settings under the user account?
 
-The settings will appear after the first notification is sent by the Teams app. This reduces the number of settings that users see.
+The settings appear after the Teams app sends the first notification. This reduces the number of settings that users see.
 
 ### I started getting a 409 (conflict) error; how do I resolve it?
 
-`Conflict` errors primarily occur when multiple Teams apps installed in the same scope (team, chat, user, and so on) have the same Microsoft Entra appId in the `webApplicationInfo` section of the manifest. When this happens, you will get an error such as `Found multiple applications with the same Azure AD App ID 'Your AzureAD AppId'.`. Make sure that you use unique Microsoft Entra apps for unique Teams apps. Note that you can have the same Teams app installed in multiple scopes (team + user for example).
+`Conflict` errors primarily occur when multiple Teams apps installed in the same scope (team, chat, user, and so on) have the same Microsoft Entra appId in the `webApplicationInfo` section of the manifest. When this happens, you get an error like `Found multiple applications with the same Microsoft Entra App ID 'Your Microsoft Entra AppId'.`. Make sure that you use unique Microsoft Entra apps for unique Teams apps.  You can install the same Teams app in multiple scopes (team + user, for example).
 
 ## See also
 
