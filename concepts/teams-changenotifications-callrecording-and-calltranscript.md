@@ -14,7 +14,7 @@ Change notifications enable you to subscribe to changes to transcripts and recor
 This article describes scenarios for the **transcript** and **recording** resources. For more information, see [Change notifications for Microsoft Teams resources](teams-change-notification-in-microsoft-teams-overview.md).
 
 > [!NOTE]
-> If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise your subscription request will fail with the following error message: *lifecycleNotificationUrl is a required property for subscription creation on this resource when the expirationDateTime value is set to greater than 1 hour*.
+> If you request a subscription **expirationDateTime** that is more than 1 hour in the future, you must subscribe to lifecycle notifications by including a **lifecycleNotificationUrl** property in your subscription request. Otherwise, your subscription request will fail with the following error message: *lifecycleNotificationUrl is required for subscription creation on this resource when the expirationDateTime value exceeds 1 hour*.
 
 ## Subscribe to transcripts available at the tenant-level
 
@@ -66,7 +66,7 @@ One of the following permissions is required to subscribe to `communications/onl
 
 ### Example
 
-The following example shows how to subscribe to transcripts available for a particular online meeting.
+The following example shows how to subscribe to transcripts available for online meetings.
 
 ```http
 POST https://graph.microsoft.com/v1.0/subscriptions
@@ -84,12 +84,12 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to transcripts available at the user-level
+## Subscribe to transcripts available at the user level
 
 To get change notifications for any transcript available for any online meeting organized by a specific user, subscribe to `users/{userId}/onlineMeetings/getAllTranscripts`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. The notification for a transcript is sent only if the subscription happens before the transcription starts. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
 
 > [!NOTE]
-> This resource type is currently available on the `/beta` endpoint only.
+> This resource type is available only on the `/beta` endpoint.
 
 ### Permissions
 
@@ -126,7 +126,7 @@ Content-Type: application/json
 To get change notifications for any recording available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllRecordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
 
 > [!NOTE]
-> Change notifications for meeting recording are available on the `/beta` endpoint only.
+> Change notifications for meeting recordings are available on the `/beta` endpoint only.
 
 ### Permissions
 
@@ -163,7 +163,7 @@ Content-Type: application/json
 To get change notifications for any recording available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/recordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
 
 > [!NOTE]
-> Change notifications for meeting recording are available on the `/beta` endpoint only.
+> Change notifications for meeting recordings are available only on the `/beta` endpoint.
 
 ### Permissions
 
@@ -177,7 +177,7 @@ One of the following permissions is required to subscribe to `communications/onl
 
 ### Example
 
-The following example shows how to subscribe to recordings available for a particular online meeting.
+The following example shows how to subscribe to recordings available for online meetings.
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
@@ -200,7 +200,7 @@ Content-Type: application/json
 To get change notifications for any recording available for any online meeting organized by a specific user, subscribe to `users/{userId}/onlineMeetings/getAllRecordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
 
 > [!NOTE]
-> Change notifications for meeting recording are available on the `/beta` endpoint only.
+> Change notifications for meeting recordings are available only on the `/beta` endpoint.
 
 ### Permissions
 
@@ -234,7 +234,7 @@ Content-Type: application/json
 
 ## Notification payloads
 
-Depending on your subscription, you can either get the notification with resource data, or without it. Subscribing with resource data allows you to get the [transcript](/graph/api/resources/calltranscript) or [recording](/graph/api/resources/callrecording) metadata along with the notification.
+Depending on your subscription, you can get the notification with or without resource data. Subscribing with resource data allows you to get the [transcript](/graph/api/resources/calltranscript) or [recording](/graph/api/resources/callrecording) metadata along with the notification.
 
 ### Notifications with resource data
 
@@ -383,7 +383,7 @@ For notifications without resource data, the payload looks like the following. T
 }
 ```
 
-The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the transcript or recording.
+The **resource** and **@odata.id** properties can be used to call Microsoft Graph to get the transcript or recording.
 
 ## See also
 
