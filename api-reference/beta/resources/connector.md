@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Connectors are lightweight agents that sit on-premises and facilitate the outbound connection to the [Azure AD Application Proxy](/azure/active-directory/app-proxy/what-is-application-proxy) service. Each connector is part of a [connectorGroup](connectorgroup.md).
+Connectors are lightweight agents that sit on-premises and facilitate the outbound connection to the [Microsoft Entra application proxy](/azure/active-directory/app-proxy/what-is-application-proxy) service. Each connector is part of a [connectorGroup](connectorgroup.md).
 
 ## Methods
 
