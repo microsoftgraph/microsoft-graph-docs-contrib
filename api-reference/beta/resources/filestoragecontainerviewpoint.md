@@ -15,7 +15,8 @@ Namespace: microsoft.graph
 > APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
 
 
-The **fileStorageContainerVierwpoint** resource contains data that is specifc to the current user.
+The **fileStorageContainerViewpoint** resource contains data specific to the current user.
+
 
 ## Properties
 |Property|Type|Description|
