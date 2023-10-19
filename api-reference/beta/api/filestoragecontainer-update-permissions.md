@@ -10,8 +10,7 @@ doc_type: apiPageType
 # Update fileStoreContainer permission
 Namespace: microsoft.graph
 
-> [!IMPORTANT]
-> APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the existing permission for a fileStorageContainer by patching the permission resource.
 
