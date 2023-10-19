@@ -190,7 +190,7 @@ The `clientState` and `latestSupportedTlsVersion` fields are optional.
 
 #### Duplicate subscription behavior
 
-Duplicate subscriptions are not allowed.  When a subscription request contains the same values for **changeType** and **resource** as an existing subscription, the request will fail with an HTTP error code `409 Conflict`, and the error message "Subscription Id <> already exists for the requested combination".
+Duplicate subscriptions are not allowed. When a subscription request contains the same values for **changeType** and **resource** that an existing subscription contains, the request will fail with an HTTP error code `409 Conflict`, and the error message `Subscription Id <> already exists for the requested combination`.
 
 #### Resources examples
 
