@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 For the Microsoft Entra [access reviews](accessreviews-root.md), this type represents a Microsoft Entra user identity for a creator or reviewer of an access review.
 In the context of a Microsoft Entra audit log, this represents the user information that initiated or was affected by an audit activity.
 
-This type inherits from [identity](identity.md) and has one additional property, the user principal name of the user.
+This type inherits from [identity](identity.md) and has one more property, the user principal name of the user.
 
 ## Methods
 
@@ -26,14 +26,14 @@ None.  You would include objects of this type in the body of a request when [cre
 
 | Property          | Type   | Description                                                                            |
 |:------------------|:-------|:---------------------------------------------------------------------------------------|
-| displayName       | String | The identity's display name. This may not always be available or up-to-date. |
+| displayName       | String | The identity's display name. This might not always be available or up-to-date. |
 | id                | String | Unique identifier for the identity. Nullable.                                                   |
 | ipAddress         | String | Indicates the client IP address used by user performing the activity (audit log only). |
 | userPrincipalName | String | The userPrincipalName attribute of the user.                                           |
 
 ### Remarks
 
-In some circumstances, the unique identifier for the actor may not be available. In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.
+In some circumstances, the unique identifier for the actor might not be available. In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.
 
 ## Relationships
 
