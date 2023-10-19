@@ -43,8 +43,6 @@ GET /education/classes/{educationClassId}/assignments/delta
 GET /education/classes/{educationClassId}/members/{educationUserId}/assignments/delta
 ```
 
-All [properties](/graph/api/resources/educationassignmentdelta#properties) are supported for the query parameters `$filter` and `$orderby`.
-
 ## Request headers
 |Name|Description|
 |:---|:---|
