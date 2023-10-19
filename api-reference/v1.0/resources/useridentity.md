@@ -1,6 +1,6 @@
 ---
 title: "userIdentity resource type"
-description: "In the context of an Azure AD audit log, the resource represents the user information that initiated or was affected by an audit activity."
+description: "In the context of a Microsoft Entra audit log, the resource represents the user information that initiated or was affected by an audit activity."
 ms.localizationpriority: medium
 author: "dhanyahk"
 ms.prod: "users"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-In the context of an Azure AD audit log, the resource represents the user information that initiated or was affected by an audit activity.
+In the context of a Microsoft Entra audit log, the resource represents the user information that initiated or was affected by an audit activity.
 
 ## Properties
 
@@ -57,4 +57,3 @@ Here's a JSON representation of the type.
   ]
 }
 -->
-
