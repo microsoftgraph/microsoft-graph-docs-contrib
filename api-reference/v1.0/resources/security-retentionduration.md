@@ -23,7 +23,7 @@ None.
 None.
 
 ## JSON representation for retentionDuration
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.security.retentionDuration"
