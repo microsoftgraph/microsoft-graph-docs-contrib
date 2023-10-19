@@ -1,6 +1,6 @@
 ---
 title: "fileStorageContainerViewpoint resource type"
-description: "fileStorageContainerViewpoint resource type"
+description: "The fileStorageContainerViewpoint resource represents data specific to the current user of a fileStorageContainer"
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
