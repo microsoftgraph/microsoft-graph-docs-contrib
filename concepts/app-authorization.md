@@ -43,7 +43,7 @@ First, the wizard shows overview information about the application:
 
 - **Data destination**—The sink where the data will be delivered. If approved, this app can move the requested data to any location within the listed sink.
 
-- **App publisher**—The Azure AD tenant ID where the app is registered. For single-tenant apps, this should be the same Azure AD tenant ID as your tenant.
+- **App publisher**—The Microsoft Entra tenant ID where the app is registered. For single-tenant apps, this should be the same Microsoft Entra tenant ID as your tenant.
 
 ![Screenshot showing the app details view for a teams call records dataset sample in Data Connect portal.](images/authorization-app-details-dataset.png)
 
