@@ -47,7 +47,7 @@ Represents a single peer-to-peer call or a group call between multiple participa
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
 |sessions|[microsoft.graph.callRecords.session](callrecords-session.md) collection|List of sessions involved in the call. Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant. Read-only. Nullable.|
-|organizer_v2|[organizer](callrecords-organizer.md)|Identity of the organizer of the call.|
+|organizer_v2|[organizer](callrecords-organizer.md)|Identity of the organizer of the call. This relationship is expanded by default in callRecord methods.|
 |participants_v2|[participant](callrecords-participant.md) collection|List of distinct participants in the call.|
 
 ## JSON representation
