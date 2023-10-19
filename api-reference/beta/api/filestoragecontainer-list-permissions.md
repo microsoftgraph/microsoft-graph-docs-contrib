@@ -1,5 +1,5 @@
 ---
-title: "List permissions for fileStorageContainer"
+title: "List fileStorageContainer permissions"
 description: "Get the set of permissions for fileStorageContainer."
 author: "tonchan-msft"
 ms.localizationpriority: medium
@@ -7,7 +7,7 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# List permissions for fileStorageContainer
+# List fileStorageContainer permissions
 Namespace: microsoft.graph
 
 > [!IMPORTANT]
