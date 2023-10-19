@@ -4,7 +4,7 @@ ms.localizationpriority: medium
 
 <!-- markdownlint-disable MD041 -->
 
-In this exercise you'll register a new application in Azure Active Directory to enable [app-only authentication](/graph/auth-v2-service). Microsoft Graph connectors use app-only authentication to access the connector APIs.
+In this exercise you'll register a new application in Microsoft Entra ID to enable [app-only authentication](/graph/auth-v2-service). Microsoft Graph connectors use app-only authentication to access the connector APIs.
 
 ## Register application for app-only authentication
 

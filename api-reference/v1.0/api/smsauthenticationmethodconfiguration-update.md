@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update smsAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Update the properties of a [smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) object, which represents the SMS authentication method policy for the Azure AD tenant.
+Update the properties of a [smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) object, which represents the SMS authentication method policy for the Microsoft Entra tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -120,4 +120,3 @@ Here's an example of the response
 ``` http
 HTTP/1.1 204 No Content
 ```
-
