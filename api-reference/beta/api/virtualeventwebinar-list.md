@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 > [!NOTE]
 >
-> When used with Application Permissions, this API returns only the events whose organizers have been assigned an [application access policy] (/graph/cloud-communication-online-meeting-application-access-policy)
+> When used with Application Permissions, this API returns only the events whose organizers have been assigned an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## HTTP request
 
