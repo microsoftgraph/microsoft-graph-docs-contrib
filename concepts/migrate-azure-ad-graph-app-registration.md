@@ -1,6 +1,6 @@
 ---
 title: "Review app registration, permissions, and consent migration issues"
-description: "Describes app registration, permission, and consent migration from Azure Active Directory (Azure AD) to Microsoft Graph API."
+description: "Describes app registration, permission, and consent migration from Azure AD Graph to Microsoft Graph."
 author: "FaithOmbongi"
 ms.author: ombongifaith
 ms.reviewer: dkershaw

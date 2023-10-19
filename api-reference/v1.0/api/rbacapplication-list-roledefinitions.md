@@ -14,8 +14,8 @@ Namespace: microsoft.graph
 Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) objects for the provider.
 
 The following RBAC providers are currently supported:
-- directory (Azure AD)
-- entitlement management (Azure AD)
+- directory (Microsoft Entra ID)
+- entitlement management (Microsoft Entra Entitlement Management)
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -23,7 +23,9 @@ The following RBAC providers are currently supported:
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For the directory (Azure AD) provider
+<a name='for-the-directory-azure-ad-provider'></a>
+
+### For the directory (Microsoft Entra ID) provider
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -396,4 +398,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
