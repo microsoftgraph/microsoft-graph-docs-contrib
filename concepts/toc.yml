@@ -524,7 +524,7 @@ items:
                   - name: Assign Azure AD roles using PIM
                     href: tutorial-assign-azureadroles.md
                     displayName: PIM, privileged identity management
-                  - name: Manage security alerts for Azure AD roles
+                  - name: Manage security alerts for Azure AD roles (preview)
                     href: how-to-pim-alerts.md
                     displayName: PIM alerts, privileged identity management
       - name: Industry data ETL (preview)
