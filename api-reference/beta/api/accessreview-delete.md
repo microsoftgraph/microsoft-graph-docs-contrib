@@ -1,6 +1,6 @@
 ---
 title: "Delete accessReview (deprecated)"
-description: "In the Azure AD access reviews feature, delete an accessReview object."
+description: "In the Microsoft Entra access reviews feature, delete an accessReview object."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
 ms.prod: "governance"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, delete an [accessReview](../resources/accessreview.md) object.
+In the Microsoft Entra [access reviews](../resources/accessreviews-root.md) feature, delete an [accessReview](../resources/accessreview.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -116,5 +116,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

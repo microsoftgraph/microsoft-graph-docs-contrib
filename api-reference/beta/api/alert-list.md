@@ -57,7 +57,7 @@ The following table lists the `$filter` keywords by each vendor name. Even thoug
 | Microsoft Defender for Identity | Azure Advanced Threat Protection | 
 | Azure Security Center | ASC |
 | Microsoft Defender for Cloud Apps | MCAS |
-| Azure Active Directory Identity Protection | IPC |
+| Microsoft Entra ID Protection | IPC |
 | Microsoft Sentinel | Azure Sentinel |
 | Microsoft Defender for Endpoint | Microsoft Defender ATP |
 | Office 365 |  Not currently supported. |
@@ -173,5 +173,3 @@ Content-type: application/json
   ]
 }
 -->
-
-
