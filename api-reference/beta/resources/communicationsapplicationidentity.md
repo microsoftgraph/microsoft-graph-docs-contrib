@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity of an application used for communications such as calling. These should be registered as enterprise applications in [Azure Active Directory](/azure/active-directory/).
+Represents the identity of an application used for communications such as calling. These should be registered as enterprise applications in [Microsoft Entra ID](/azure/active-directory/).
 
 Inherits from [identity](identity.md).
 
@@ -21,7 +21,7 @@ Inherits from [identity](identity.md).
 
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id | String | Inherited from **identity**. The application's client ID from Azure Active Directory. |
+| id | String | Inherited from **identity**. The application's client ID from Microsoft Entra ID. |
 | displayName | String | Inherited from **identity**. The display name associated with the application. |
 | applicationType | String | First party Microsoft application presenting this **identity**. |
 | hidden | Boolean | True if the participant wouldn't like to be shown in other participants' rosters. |
