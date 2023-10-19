@@ -1,6 +1,6 @@
 ---
 title: "fileStorageContainerCustomPropertyValue resource type"
-description: "fileStorageContainerCustomPropertyValue resource type"
+description: "The fileStorageContainerCustomPropertyValue resource contains the custom property values stored in a fileStorageContainerCustomPropertyDictionary"
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
@@ -21,7 +21,7 @@ The **fileStorageContainerCustomPropertyValue** resource contains the custom pro
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|isSearchable|Boolean|Indicator if the custom propety is searchable. Optional. The default value is False.|
+|isSearchable|Boolean|Indicator if the custom property is searchable. Optional. The default value is False.|
 |value|String|Value of the custom property. Required.|
 
 ## Relationships
