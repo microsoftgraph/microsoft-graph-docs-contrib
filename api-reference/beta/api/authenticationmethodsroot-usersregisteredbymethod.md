@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get the number of users registered for each authentication method.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
