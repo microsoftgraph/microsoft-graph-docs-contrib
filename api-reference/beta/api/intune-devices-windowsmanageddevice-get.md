@@ -69,7 +69,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9694
+Content-Length: 9966
 
 {
   "value": {
@@ -225,7 +225,13 @@ Content-Length: 9694
       "bootRevisionListInfo": "Boot Revision List Info value",
       "operatingSystemRevListInfo": "Operating System Rev List Info value",
       "healthStatusMismatchInfo": "Health Status Mismatch Info value",
-      "healthAttestationSupportedStatus": "Health Attestation Supported Status value"
+      "healthAttestationSupportedStatus": "Health Attestation Supported Status value",
+      "memoryIntegrityProtection": "enabled",
+      "memoryAccessProtection": "enabled",
+      "virtualizationBasedSecurity": "enabled",
+      "firmwareProtection": "systemGuardSecureLaunch",
+      "systemManagementMode": "level1",
+      "securedCorePC": "enabled"
     },
     "subscriberCarrier": "Subscriber Carrier value",
     "meid": "Meid value",

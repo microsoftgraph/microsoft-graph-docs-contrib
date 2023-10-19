@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 Retrieve the properties of a **riskDetection** object.
 
 >[!NOTE]
->You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
+>You must have a Microsoft Entra ID P1 or P2 license to use the risk detection API.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -233,6 +233,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
-

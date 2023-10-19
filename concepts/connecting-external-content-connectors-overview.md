@@ -22,7 +22,7 @@ Today, with Microsoft Graph connectors, the data you bring in from your organiza
 - [Microsoft 365 app](https://microsoft365.com) (formerly known as [Office.com](https://office.com))
 
 >[!NOTE]
->Microsoft Graph connectors for Microsoft 365 Copilot are in early access preview. For details about how to build a Microsoft Graph connetor that is integrated with Microsoft 365 Copilot, see [Copilot for Microsoft Graph connectors](/graph/connecting-external-content-experiences#Copilot). 
+>For details about how to build a Microsoft Graph connetor that is integrated with Microsoft 365 Copilot, see [Copilot for Microsoft Graph connectors](/graph/connecting-external-content-experiences#microsoft-365-copilot). 
 
 ## Get started with custom connectors
 
