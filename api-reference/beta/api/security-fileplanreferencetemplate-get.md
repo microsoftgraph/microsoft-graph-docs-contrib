@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a [microsoft.gra
 ## Examples
 
 ### Request
-The following shows an example of a request.
+Here's an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/security/labels/filePlanReferences/b1f7b518
 ---
 
 ### Response
-The following shows an example of the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
