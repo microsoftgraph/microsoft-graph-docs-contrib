@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Use this API to add a member (user, group, or device) to an administrative unit. Currently it's only possible to add one member at a time to an administrative unit.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -23,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | AdministrativeUnit.ReadWrite.All |
 
-To add a user, group, or device to an administrative unit, the calling principal must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+To add a user, group, or device to an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
 
 * Privileged Role Administrator
 * Global Administrator
@@ -35,7 +37,7 @@ To add a user, group, or device to an administrative unit, the calling principal
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 
-To create a new group in an administrative unit, the calling principal must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+To create a new group in an administrative unit, the calling principal must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
 
 * Privileged Role Administrator
 * Global Administrator
@@ -73,7 +75,7 @@ The following table shows the properties of the [group](../resources/group.md) r
 |:---------------|:--------|:----------|
 | displayName | string | The name to display in the address book for the group. Required. |
 | description | string | A description for the group. Optional. |
-| isAssignableToRole | Boolean | Set to **true** to enable the group to be assigned to an Azure AD role. Only Privileged Role Administrator and Global Administrator can set the value of this property. Optional. |
+| isAssignableToRole | Boolean | Set to **true** to enable the group to be assigned to a Microsoft Entra role. Only Privileged Role Administrator and Global Administrator can set the value of this property. Optional. |
 | mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
 | mailNickname | string | The mail alias for the group. These characters cannot be used in the mailNickName: `@()\[]";:.<>,SPACE`. Required. |
 | securityEnabled | boolean | Set to **true** for security-enabled groups, including Microsoft 365 groups. Required. |

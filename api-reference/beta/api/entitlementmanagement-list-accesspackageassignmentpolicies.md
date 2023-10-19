@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), retrieve a list of [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) objects. If the delegated user is in a directory role, the resulting list includes all the assignment policies that the caller has access to read, across all catalogs and access packages.  If the delegated user is an access package manager or catalog owner, they should instead retrieve the policies for the access packages they can read with [list accessPackages](entitlementmanagement-list-accesspackages.md) by including `$expand=accessPackageAssignmentPolicies` in the query.
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), retrieve a list of [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) objects. If the delegated user is in a directory role, the resulting list includes all the assignment policies that the caller has access to read, across all catalogs and access packages.  If the delegated user is an access package manager or catalog owner, they should instead retrieve the policies for the access packages they can read with [list accessPackages](entitlementmanagement-list-accesspackages.md) by including `$expand=accessPackageAssignmentPolicies` in the query.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -142,5 +144,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

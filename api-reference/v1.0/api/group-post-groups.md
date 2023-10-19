@@ -22,6 +22,8 @@ To get properties that are _not_ returned by default, do a [GET operation](group
 
 > **Note**: Although Microsoft Teams is built on Microsoft 365 groups, you can't currently create a team via this API. You can use the other group APIs to manage a team that has been created in the Microsoft Teams UI.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -321,7 +323,9 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Create a Microsoft 365 group that can be assigned to an Azure AD role
+<a name='example-3-create-a-microsoft-365-group-that-can-be-assigned-to-an-azure-ad-role'></a>
+
+### Example 3: Create a Microsoft 365 group that can be assigned to a Microsoft Entra role
 
 #### Request
 
@@ -394,7 +398,7 @@ Content-Type: application/json
 
 ---
 
-> **Note:** A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type and cannot have an owner. For more information, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037).
+> **Note:** A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type and cannot have an owner. For more information, see [Using a group to manage Microsoft Entra role assignments](https://go.microsoft.com/fwlink/?linkid=2103037).
 
 #### Response
 

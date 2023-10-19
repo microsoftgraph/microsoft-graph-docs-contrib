@@ -16,8 +16,10 @@ Namespace: microsoft.graph
 Retrieve the properties of an [approval](../resources/approval.md) object. This API request is made by an approver in the following scenarios:
 
 - In [entitlement management](../resources/entitlementmanagement-overview.md), providing the identifier of the [access package assignment request](../resources/accesspackageassignmentrequest.md).
-- In [PIM for Azure AD roles](../resources/privilegedidentitymanagementv3-overview.md), providing the identifier of the [role assignment schedule request](../resources/unifiedroleassignmentschedulerequest.md).
+- In [PIM for Microsoft Entra roles](../resources/privilegedidentitymanagementv3-overview.md), providing the identifier of the [role assignment schedule request](../resources/unifiedroleassignmentschedulerequest.md).
 - In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), providing the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -31,7 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
-### For PIM for Azure AD roles
+<a name='for-pim-for-azure-ad-roles'></a>
+
+### For PIM for Microsoft Entra roles
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -56,7 +60,7 @@ To get approval objects in entitlement management:
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}
 ```
 
-To get approval objects in PIM for Azure AD roles:
+To get approval objects in PIM for Microsoft Entra roles:
 
 <!-- { "blockType": "ignored" } -->
 ```http

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Update the properties of an [authenticationStrengthPolicy](../resources/authenticationstrengthpolicy.md) object. You cannot update the allowed auth method combinations using this request. To do so, use the [Update allowed combinations](authenticationstrengthpolicy-updateallowedcombinations.md) action.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

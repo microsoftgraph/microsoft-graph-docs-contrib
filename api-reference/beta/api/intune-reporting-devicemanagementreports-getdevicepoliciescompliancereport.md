@@ -1,6 +1,6 @@
 ---
 title: "getDevicePoliciesComplianceReport action"
-description: ""
+description: "Intune Reporting Devicemanagementreports Getdevicepoliciescompliancereport Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

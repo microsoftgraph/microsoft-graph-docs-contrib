@@ -11,11 +11,15 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), approve or deny an [approvalStage](../resources/approvalstage.md) object in an [approval](../resources/approval.md).
+Approve or deny an [approvalStage](../resources/approvalstage.md) object in an [approval](../resources/approval.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+### Permissions required for calling this API for entitlement management
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -23,12 +27,26 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
+### Permissions required for calling this API for PIM for groups
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
+
 ## HTTP request
 
+To update an approval decision in entitlement management:
 <!-- { "blockType": "ignored" } -->
-
 ```http
 PATCH /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{accessPackageAssignmentRequestId}/stages/{approvalStageId}
+```
+
+To update an approval decision in PIM for groups:
+<!-- { "blockType": "ignored" } -->
+```http
+PATCH /identityGovernance/privilegedAccess/group/assignmentApprovals/{privilegedaccessgroupassignmentschedulerequestId}/steps/{approvalStageId}
 ```
 
 ## Request headers

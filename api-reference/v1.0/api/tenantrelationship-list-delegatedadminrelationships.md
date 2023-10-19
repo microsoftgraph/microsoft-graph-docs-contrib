@@ -3,7 +3,7 @@ title: "List delegatedAdminRelationships"
 description: "Get a list of the delegatedAdminRelationship objects and their properties."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.prod: partner-customer-administration
 doc_type: apiPageType
 ---
 
@@ -11,6 +11,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get a list of the [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) objects and their properties.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

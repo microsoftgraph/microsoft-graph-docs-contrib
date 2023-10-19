@@ -1,6 +1,6 @@
 ---
 title: "Remove a scopedRoleMember"
-description: "Remove an Azure Active Directory (Azure AD) role assignment with administrative unit scope."
+description: "Remove a Microsoft Entra role assignment with administrative unit scope."
 author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove an Azure Active Directory (Azure AD) role assignment with administrative unit scope.
+Remove a Microsoft Entra role assignment with administrative unit scope.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -115,5 +117,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

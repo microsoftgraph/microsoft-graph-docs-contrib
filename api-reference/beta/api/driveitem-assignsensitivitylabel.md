@@ -21,6 +21,8 @@ For more information about sensitivity labels from an administrator's perspectiv
 > [!NOTE] 
 > This is a metered API and some charges for use may apply. For details, see [Overview of metered Microsoft 365 APIs in Microsoft Graph](/graph/metered-api-overview).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

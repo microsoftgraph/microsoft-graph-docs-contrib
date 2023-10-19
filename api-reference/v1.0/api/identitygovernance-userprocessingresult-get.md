@@ -13,6 +13,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Get the user processing result of a user processing result of a [run](../resources/identitygovernance-run.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/lifecycleWorkflows/workflows/{{workflow_id}}/runs/{runId}/userProcessingResults/{userProcessingResultId}
+GET /identityGovernance/lifecycleWorkflows/workflows/{workflow_id}/runs/{runId}/userProcessingResults/{userProcessingResultId}
 ```
 
 ## Optional query parameters

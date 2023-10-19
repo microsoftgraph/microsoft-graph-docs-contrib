@@ -1,6 +1,6 @@
 ---
 title: "Add a scopedRoleMember"
-description: "Assign an Azure Active Directory (Azure AD) role with administrative unit scope."
+description: "Assign a Microsoft Entra role with administrative unit scope."
 ms.localizationpriority: medium
 author: "DougKirschner"
 ms.prod: "directory-management"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Assign an Azure Active Directory (Azure AD) role with administrative unit scope. For a list of roles that can be assigned with administrative unit scope, see [Assign Azure AD roles with administrative unit scope](/azure/active-directory/roles/admin-units-assign-roles).
+Assign a Microsoft Entra role with administrative unit scope. For a list of roles that can be assigned with administrative unit scope, see [Assign Microsoft Entra roles with administrative unit scope](/azure/active-directory/roles/admin-units-assign-roles).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -137,5 +139,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

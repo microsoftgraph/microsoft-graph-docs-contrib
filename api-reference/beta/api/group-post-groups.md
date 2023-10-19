@@ -22,6 +22,8 @@ This operation returns by default only a subset of the properties for each group
 
 **Note**: To create a [team](../resources/team.md), first create a group then add a team to it, see [create team](../api/team-put-teams.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -342,7 +344,9 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Create a Microsoft 365 group that can be assigned to an Azure AD role
+<a name='example-3-create-a-microsoft-365-group-that-can-be-assigned-to-an-azure-ad-role'></a>
+
+### Example 3: Create a Microsoft 365 group that can be assigned to a Microsoft Entra role
 
 #### Request
 

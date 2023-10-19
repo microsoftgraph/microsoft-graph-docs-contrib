@@ -10,7 +10,9 @@ doc_type: "apiPageType"
 # Get fido2AuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of the [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object, which represents the FIDO2 Security Keys [authentication method policy](../resources/authenticationmethodspolicies-overview.md) for the Azure Active Directory (Azure AD) tenant.
+Retrieve the properties and relationships of the [fido2AuthenticationMethodConfiguration](../resources/fido2authenticationmethodconfiguration.md) object, which represents the FIDO2 Security Keys [authentication method policy](../resources/authenticationmethodspolicies-overview.md) for the Microsoft Entra tenant.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -130,4 +132,3 @@ Content-type: application/json
     "excludeTargets": []
 }
 ```
-

@@ -9,7 +9,9 @@ doc_type: apiPageType
 # Create assignmentPolicies
 Namespace: microsoft.graph
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), create a new [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.  The request will include a reference to the [accessPackage](../resources/accesspackage.md) that will contain this policy, which must already exist.
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), create a new [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md) object.  The request will include a reference to the [accessPackage](../resources/accesspackage.md) that will contain this policy, which must already exist.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

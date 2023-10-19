@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Remove a member from a group via the **members** navigation property. You can't remove a member from groups with dynamic memberships.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +38,7 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /groups/{id}/members/{id}/$ref
 ```
 > [!CAUTION]
-> If `/$ref` is not appended to the request and the calling app has permissions to manage the member object type, the member object will also be deleted from Azure Active Directory (Azure AD); otherwise, a `403 Forbidden` error is returned. For example, an app with both *GroupMember.ReadWrite.All* and *User.ReadWrite.All* permissions will delete a user. You can restore specific objects through the [Restore deleted items API](directory-deleteditems-restore.md).
+> If `/$ref` is not appended to the request and the calling app has permissions to manage the member object type, the member object will also be deleted from Microsoft Entra ID; otherwise, a `403 Forbidden` error is returned. For example, an app with both *GroupMember.ReadWrite.All* and *User.ReadWrite.All* permissions will delete a user. You can restore specific objects through the [Restore deleted items API](directory-deleteditems-restore.md).
 
 ## Request headers
 

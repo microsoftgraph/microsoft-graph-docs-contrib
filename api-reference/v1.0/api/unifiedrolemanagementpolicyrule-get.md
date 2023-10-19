@@ -11,23 +11,39 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Retrieve a rule or settings defined for a role management policy. The rule can be one of the following types that are derived from the [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) object:
+
 + [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md)
 + [unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md)
 + [unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md)
 + [unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md)
 + [unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md)
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+<a name='for-pim-for-azure-ad-roles'></a>
+
+### For PIM for Microsoft Entra roles
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
-|Delegated (personal Microsoft account)|Not supported|
-|Application|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|RoleManagementPolicy.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagementPolicy.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+
+### For PIM for groups
+
+|Permission type|Permissions (from least to most privileged)|
+|:---|:---|
+|Delegated (work or school account)|RoleManagementPolicy.Read.AzureADGroup, RoleManagementPolicy.ReadWrite.AzureADGroup|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|RoleManagementPolicy.Read.AzureADGroup, RoleManagementPolicy.ReadWrite.AzureADGroup|
 
 ## HTTP request
 
+To retrieve a rule defined for a policy for either Microsoft Entra roles or PIM for groups membership and ownership:
 <!-- {
   "blockType": "ignored"
 }
@@ -53,7 +69,11 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 
 ## Examples
 
-### Request
+<a name='example-1-retrieve-a-rule-defined-for-a-policy-in-pim-for-azure-ad-roles'></a>
+
+### Example 1: Retrieve a rule defined for a policy in PIM for Microsoft Entra roles
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -100,7 +120,7 @@ GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/DirectoryRo
 
 ---
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -130,3 +150,51 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Retrieve a rule defined for a policy in PIM for groups
+
+#### Request
+
+The following example retrieves a role management policy rule with ID `Expiration_Admin_Eligibility`.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_unifiedrolemanagementpolicyrule_azureADGroup",
+  "sampleKeys": ["Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369", "Expiration_Admin_Eligibility"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/policies/roleManagementPolicies/Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369/rules/Expiration_Admin_Eligibility
+```
+
+#### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRule"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/roleManagementPolicies('Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369')/rules/$entity",
+    "@odata.type": "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
+    "id": "Expiration_Admin_Eligibility",
+    "isExpirationRequired": true,
+    "maximumDuration": "P365D",
+    "target": {
+        "caller": "Admin",
+        "operations": [
+            "All"
+        ],
+        "level": "Eligibility",
+        "inheritableSettings": [],
+        "enforcedSettings": []
+    }
+}
+```

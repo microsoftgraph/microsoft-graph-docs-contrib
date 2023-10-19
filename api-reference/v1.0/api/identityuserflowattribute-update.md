@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update the properties of a custom [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,11 +50,11 @@ In the request body, provide a JSON object with one or more properties that need
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|description|String|The description of the user flow attribute. It is shown to the user at the time of sign up.|
+|description|String|The description of the user flow attribute. It is shown to the user at the time of sign-up.|
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error is returned with specific details.
 
 ## Examples
 

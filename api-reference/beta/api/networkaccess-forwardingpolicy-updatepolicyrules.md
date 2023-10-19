@@ -3,7 +3,7 @@ title: "forwardingPolicy: updatePolicyRules"
 description: "Update the rules within a forwarding policy."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
@@ -13,6 +13,8 @@ Namespace: microsoft.graph.networkaccess
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the rules within a forwarding policy.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +51,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |id|[microsoft.graph.networkaccess.policyRule](../resources/networkaccess-policyrule.md)|Unique Identifier for the rule.|
-|action|[microsoft.graph.networkaccess.policyRuleDelta](../resources/networkaccess-policyruledelta.md)|Action for the traffic, possible values are "forward" or "bypass". Required.|
+|action|[microsoft.graph.networkaccess.policyRuleDelta](../resources/networkaccess-policyruledelta.md)|Action for the traffic, possible values are `forward` or `bypass`. Required.|
 
 
 ## Response
@@ -59,7 +61,7 @@ If successful, this action returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -95,7 +97,7 @@ Content-Type: application/json
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows a response.
 <!-- {
   "blockType": "response",
   "truncated": true

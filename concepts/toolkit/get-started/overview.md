@@ -36,7 +36,7 @@ You can use Microsoft Graph Toolkit in your application by referencing the loade
 To use the toolkit via `mgt-loader`, add the reference in a script to your code:
 
 ```html
-<script src="https://unpkg.com/@microsoft/mgt@2/dist/bundle/mgt-loader.js"></script>
+<script src="https://unpkg.com/@microsoft/mgt@3/dist/bundle/mgt-loader.js"></script>
 
 <mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
 <mgt-login></mgt-login>
@@ -82,7 +82,7 @@ Providers are available via a single package and can be installed as needed. The
 
 - <b>@microsoft/mgt-msal2-provider</b>
 
-  <code>[@microsoft/mgt-msal2-provider](../providers/msal2.md)</code> contains the `Msal2Provider` and `mgt-msal2-provider` component. The MSAL2 provider uses msal-browser for authenticating in web apps and PWAs.
+  <code>[@microsoft/mgt-msal2-provider](../providers/msal2.md)</code> contains the `Msal2Provider` and `mgt-msal2-provider` component. The MSAL2 provider uses MSAL-browser for authenticating in web apps and PWAs.
 
 - <b>@microsoft/mgt-sharepoint-provider</b>
 
@@ -112,7 +112,7 @@ The <code>@microsoft/mgt-spfx-utils</code> package contains a helper function to
 
 You're now ready to start developing with Microsoft Graph Toolkit! The following guides are available to help you get started:
 
-- [Register an Azure Active Directory (Azure AD) app](./add-aad-app-registration.md)
+- [Register a Microsoft Entra app](./add-aad-app-registration.md)
 - [Build a web app (JavaScript)](./build-a-web-app.md) (vanilla JavaScript)
 - [Build a web app (React)](./use-toolkit-with-react.md)
 - [Build a web app (Angular)](./use-toolkit-with-angular.md)

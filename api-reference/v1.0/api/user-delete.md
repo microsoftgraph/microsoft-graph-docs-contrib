@@ -15,6 +15,8 @@ Delete user.
 
 When deleted, user resources are moved to a temporary container and can be restored within 30 days.  After that time, they are permanently deleted.  To learn more, see [deletedItems](../resources/directory.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.ReadWrite.All |
 
-The calling user must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
+The calling user must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json):
 
 - User Administrator
 - Privileged Authentication Administrator
@@ -127,4 +129,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

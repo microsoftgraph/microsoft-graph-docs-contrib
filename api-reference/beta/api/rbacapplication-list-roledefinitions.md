@@ -18,9 +18,11 @@ Get a list of [unifiedRoleDefinition](../resources/unifiedroledefinition.md) obj
 The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
-- directory (Azure AD) 
-- entitlement management (Azure AD)
+- directory (Microsoft Entra ID) 
+- entitlement management (Microsoft Entra ID)
 - Exchange Online
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -42,7 +44,9 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
-### For a directory (Azure AD) provider
+<a name='for-a-directory-azure-ad-provider'></a>
+
+### For a directory (Microsoft Entra ID) provider
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -776,5 +780,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

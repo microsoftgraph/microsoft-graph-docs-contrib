@@ -3,7 +3,7 @@ title: "Delete delegatedAdminRelationship"
 description: "Deletes a delegatedAdminRelationship object."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.prod: partner-customer-administration
 doc_type: apiPageType
 ---
 
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. A relationship can only be deleted if it's in the "created" status. 
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -17,6 +17,8 @@ Retrieve a list of users that are registered users of the device.
 
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -28,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
-The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+The calling user must also be in one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
 
 * Global Administrator
 * Users

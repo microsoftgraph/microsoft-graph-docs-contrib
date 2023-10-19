@@ -1,6 +1,6 @@
 ---
 title: "windowsDefenderUpdateSignatures action"
-description: ""
+description: "Intune Devices Manageddevice Windowsdefenderupdatesignatures Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

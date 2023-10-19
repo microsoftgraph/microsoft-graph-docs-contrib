@@ -17,6 +17,8 @@ Retrieve a user's usage summary for a particular time period.
 
 See the [printUsageByUser](../resources/printUsageByUser.md) documentation for descriptions of each of the endpoints.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -113,9 +115,16 @@ Content-type: application/json
   "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
   "userPrincipalName": "username@contoso.com",
   "usageDate": "2020-02-04T00:00:00.0000000Z",
-  "completedBlackAndWhiteJobCount": 42,
-  "completedColorJobCount": 0,
-  "incompleteJobCount": 6
+  "completedJobCount": 110,
+  "completedBlackAndWhiteJobCount": 1,
+  "completedColorJobCount": 109,
+  "incompleteJobCount": 13,
+  "pageCount": 138,
+  "blackAndWhitePageCount": 0,
+  "colorPageCount": 138,
+  "mediaSheetCount": 132,
+  "doubleSidedSheetCount": 12,
+  "singleSidedSheetCount": 120
 }
 ```
 

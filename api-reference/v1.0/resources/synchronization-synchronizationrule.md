@@ -21,9 +21,9 @@ Synchronization rules are updated as part of the [synchronization schema](synchr
 
 | Property      | Type      | Description    |
 |:--------------|:----------|:---------------|
-|editable       |Boolean    |`true` if the synchronization rule can be customized; `false` if this rule is read-only and should not be changed.|
+|editable       |Boolean    |`true` if the synchronization rule can be customized; `false` if this rule is read-only and shouldn't be changed.|
 |id             |String     |Synchronization rule identifier. Must be one of the identifiers recognized by the synchronization engine. Supported rule identifiers can be found in the synchronization template returned by the API.|
-|metadata       |[stringKeyStringValuePair](synchronization-stringkeystringvaluepair.md) collection |Additional extension properties. Unless instructed explicitly by the support team, metadata values should not be changed.|
+|metadata       |[stringKeyStringValuePair](synchronization-stringkeystringvaluepair.md) collection |Additional extension properties. Unless instructed explicitly by the support team, metadata values shouldn't be changed.|
 |name           |String     |Human-readable name of the synchronization rule. Not nullable.|
 |objectMappings |[objectMapping](synchronization-objectmapping.md) collection    |Collection of object mappings supported by the rule. Tells the synchronization engine which objects should be synchronized.|
 |priority       |Integer    |Priority relative to other rules in the [synchronizationSchema](synchronization-synchronizationschema.md). Rules with the lowest priority number will be processed first.|
@@ -32,7 +32,7 @@ Synchronization rules are updated as part of the [synchronization schema](synchr
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

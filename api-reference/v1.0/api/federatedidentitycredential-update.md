@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -48,10 +50,10 @@ PATCH /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIden
 
 |Property|Type|Description|
 |:---|:---|:---|
-|audiences|String collection|The audience that can appear in the issued token. For Azure AD, set its value to `api://AzureADTokenExchange`. This field can only accept a single value and has a limit of 600 characters.|
+|audiences|String collection|The audience that can appear in the issued token. For Microsoft Entra ID, set its value to `api://AzureADTokenExchange`. This field can only accept a single value and has a limit of 600 characters.|
 |description|String|A user-provided description of what the federatedIdentityCredential is used for. It has a limit of 600 characters. |
-|issuer|String|The URL of the incoming trusted issuer (Secure Token Service). Matches the issuer claim of an access token. For example, with the Customer Managed Keys scenario, Azure AD is the issuer and a valid value would be `https://login.microsoftonline.com/{tenantid}/v2.0`. The combination of the values of **issuer** and **subject** must be unique on the app. It has a limit of 600 characters. |
-|subject|String|<li>For Azure AD issuer, the `objectId` of the servicePrincipal (can represent a managed identity) that can impersonate the app. The object associated with this GUID needs to exist in the tenant.</li><li>For all other issuers, a string with no additional validation</ul><br><br>The combination of the values of **issuer** and **subject** must be unique on the app. It has a limit of 600 characters.|
+|issuer|String|The URL of the incoming trusted issuer (Secure Token Service). Matches the issuer claim of an access token. For example, with the Customer Managed Keys scenario, Microsoft Entra ID is the issuer and a valid value would be `https://login.microsoftonline.com/{tenantid}/v2.0`. The combination of the values of **issuer** and **subject** must be unique on the app. It has a limit of 600 characters. |
+|subject|String|<li>For Microsoft Entra issuer, the `objectId` of the servicePrincipal (can represent a managed identity) that can impersonate the app. The object associated with this GUID needs to exist in the tenant.</li><li>For all other issuers, a string with no additional validation</ul><br><br>The combination of the values of **issuer** and **subject** must be unique on the app. It has a limit of 600 characters.|
 
 
 

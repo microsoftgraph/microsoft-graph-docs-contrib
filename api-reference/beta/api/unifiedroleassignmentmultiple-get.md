@@ -19,7 +19,9 @@ The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
 
-For other Microsoft 365 applications (like Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
+For other Microsoft 365 applications (like Microsoft Entra ID), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -562,5 +564,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

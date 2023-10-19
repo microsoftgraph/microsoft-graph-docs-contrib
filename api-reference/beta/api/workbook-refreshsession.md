@@ -11,7 +11,9 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Use this API to refresh an existing workbook session. 
+Use this API to refresh an existing workbook session.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,13 +29,12 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 POST /me/drive/items/{id}/workbook/refreshSession
 POST /me/drive/root:/{item-path}:/workbook/refreshSession
-workbook-session-id: {session-id}
 ```
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| workbook-session-id | Workbook session Id to be refreshed |
+| workbook-session-id | Workbook session Id to be refreshed. Required. |
 
 ## Request body
 This API doesn't require any request body.
@@ -43,7 +44,7 @@ This API doesn't require any request body.
 If successful, this method returns `204 No Content` response code.
 
 ## Example
-##### Request
+### Request
 Here's an example of the request.
 
 # [HTTP](#tab/http)
@@ -91,10 +92,10 @@ workbook-session-id: {session-id}
 
 ---
 
-Workbook-session-id header is required. 
+The workbook-session-id header is required. 
 
 
-##### Response
+### Response
 Here's an example of the response. 
 
 <!-- {
@@ -104,7 +105,7 @@ Here's an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",

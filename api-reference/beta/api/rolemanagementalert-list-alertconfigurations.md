@@ -22,6 +22,8 @@ Get a list of the alert configurations. The alert configurations are a collectio
 - [staleSignInAlertConfiguration](../resources/stalesigninalertconfiguration.md)
 - [tooManyGlobalAdminsAssignedToTenantAlertConfiguration](../resources/toomanyglobaladminsassignedtotenantalertconfiguration.md)
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -61,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request that retrieves all the alert configurations for Azure AD roles under the tenant resource scope.
+The following is an example of a request that retrieves all the alert configurations for Microsoft Entra roles under the tenant resource scope.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -148,4 +150,3 @@ Content-Type: application/json
     ]
 }
 ```
-

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a list of directory objects that were created by the user. This API returns only those directory objects that were created by a user who isn't in any administrator role; otherwise, it returns an empty object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
