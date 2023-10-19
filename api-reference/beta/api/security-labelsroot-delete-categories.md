@@ -51,7 +51,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-The following shows an example of a request.
+Here's an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -97,7 +97,7 @@ DELETE https://graph.microsoft.com/beta/security/labels/categories/f44dkle55-6ba
 ---
 
 ### Response
-The following shows an example of the response.
+Here's an example of the response.
 >
 <!-- {
   "blockType": "response",
