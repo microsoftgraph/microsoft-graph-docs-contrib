@@ -10,8 +10,7 @@ doc_type: apiPageType
 # Activate fileStorageContainer
 Namespace: microsoft.graph
 
-> [!IMPORTANT]
-> APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 FileStorageContainers are created in an inactive state, indicated by the container's status property. A container must be activated within 24 hours after creation or will be automatically deleted. Upon successful activation, the container's status property is set to "active".
 
