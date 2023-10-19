@@ -10,8 +10,7 @@ doc_type: apiPageType
 # Update custom properties of fileStorageContainer
 Namespace: microsoft.graph
 
-> [!IMPORTANT]
-> APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update one or multiple custom properties on a fileStorageContainer. Only the **value** and **isSearchable** attributes of custom properties can be updated. 
 
