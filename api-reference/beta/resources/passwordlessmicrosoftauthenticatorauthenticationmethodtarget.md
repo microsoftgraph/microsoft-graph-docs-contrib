@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A collection of groups enabled to use Microsoft Authenticator Passwordless Phone Sign-in authentication methods policy](../resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration.md) in Azure AD.
+A collection of groups enabled to use Microsoft Authenticator Passwordless Phone Sign-in authentication methods policy](../resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration.md) in Microsoft Entra ID.
 
 > [!CAUTION]
 > The Microsoft Authenticator Passwordless Phone Sign-in authentication method policy API is deprecated and stopped returning results on December 31, 2020. Please use the new [Microsoft Authenticator authentication method policy](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md).
@@ -21,10 +21,10 @@ A collection of groups enabled to use Microsoft Authenticator Passwordless Phone
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Object ID of an Azure AD user or group.|
+|id|String|Object ID of a Microsoft Entra user or group.|
 |isRegistrationRequired|Boolean|Determines whether the user is enforced to register the authentication method.|
 |targetType|authenticationMethodTargetType|Possible values are: `user`, `group`.|
-|useForSignIn|Boolean|Determines whether the authentication method can be used to sign in to Azure AD.|
+|useForSignIn|Boolean|Determines whether the authentication method can be used to sign in to Microsoft Entra ID.|
 
 ## Relationships
 None.

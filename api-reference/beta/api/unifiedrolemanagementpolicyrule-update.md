@@ -18,16 +18,18 @@ Update a rule defined for a role management policy. The rule can be one of the f
 + [unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md)
 + [unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md)
 
-For more information about rules for Azure AD roles and examples of updating rules, see the following articles:
-+ [Overview of rules for Azure AD roles in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview)
-+ [Use PIM APIs in Microsoft Graph to update Azure AD rules](/graph/how-to-pim-update-rules)
+For more information about rules for Microsoft Entra roles and examples of updating rules, see the following articles:
++ [Overview of rules for Microsoft Entra roles in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview)
++ [Use PIM APIs in Microsoft Graph to update Microsoft Entra ID rules](/graph/how-to-pim-update-rules)
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For PIM for Azure AD roles
+<a name='for-pim-for-azure-ad-roles'></a>
+
+### For PIM for Microsoft Entra roles
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -45,7 +47,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To update a rule defined for a policy for either Azure AD roles or groups in PIM:
+To update a rule defined for a policy for either Microsoft Entra roles or groups in PIM:
 <!-- {
   "blockType": "ignored"
 }
@@ -87,7 +89,9 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 
 ## Examples
 
-### Example 1: Update a rule defined for a policy in PIM for Azure AD roles
+<a name='example-1-update-a-rule-defined-for-a-policy-in-pim-for-azure-ad-roles'></a>
+
+### Example 1: Update a rule defined for a policy in PIM for Microsoft Entra roles
 
 #### Request
 
@@ -290,5 +294,5 @@ Content-Type: application/json
 
 ## See also
 
-+ [Overview of rules for Azure AD roles in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview)
-+ [Use PIM APIs in Microsoft Graph to update Azure AD rules](/graph/how-to-pim-update-rules)
++ [Overview of rules for Microsoft Entra roles in PIM APIs in Microsoft Graph](/graph/identity-governance-pim-rules-overview)
++ [Use PIM APIs in Microsoft Graph to update Microsoft Entra ID rules](/graph/how-to-pim-update-rules)

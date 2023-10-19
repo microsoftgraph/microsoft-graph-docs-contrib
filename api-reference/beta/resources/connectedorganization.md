@@ -1,6 +1,6 @@
 ---
 title: "connectedOrganization resource type"
-description: "In Azure AD entitlement management, a connected organization is a reference to a directory or domain of another organization whose users can request access."
+description: "In Microsoft Entra entitlement management, a connected organization is a reference to a directory or domain of another organization whose users can request access."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](entitlementmanagement-overview.md), a connected organization is a reference to a directory or domain of another organization whose users can request access.
+In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), a connected organization is a reference to a directory or domain of another organization whose users can request access.
 
 ## Methods
 
@@ -94,5 +94,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
