@@ -17,7 +17,7 @@ You can add a descriptor by using the POST operation of the corresponding file p
 
 To list the descriptors that supplement a retention label, use the [GET](../api/security-retentionlabel-get.md) operation on that [retentionLabel](security-retentionlabel.md) resource and  apply `$expand` on the **descriptors** relationship.
 
-For information on how retention labels and file plan descriptors work in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), see [Use file plan to create and manage retention labels](/purview/file-plan-manager?view=o365-worldwide).
+For information on how retention labels and file plan descriptors work in the [Microsoft Purview compliance portal](https://compliance.microsoft.com/), see [Use file plan to create and manage retention labels](/purview/file-plan-manager).
 
 Inherits from [microsoft.graph.entity](../resources/entity.md).
 
