@@ -30,13 +30,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
-For multi-tenant apps, the calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+For multitenant apps, the calling user must also be in one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
 
 + Global Administrator
 + Application Administrator
 + Cloud Application Administrator roles
 
-For single-tenant apps where the calling user is a non-admin user but is the owner of the backing application, the user must have the *Application Developer* role.
+For single-tenant apps where the calling user is a nonadmin user but is the owner of the backing application, the user must have the *Application Developer* role.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -182,6 +182,3 @@ Content-type: application/json
   ]
 }
 -->
-
-
-

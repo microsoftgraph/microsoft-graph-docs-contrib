@@ -3,7 +3,7 @@ title: "reports: transactionSummaries"
 description: "Provides a high-level summary of transactions, including a breakdown by traffic type and counts for allowed and blocked transactions."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 

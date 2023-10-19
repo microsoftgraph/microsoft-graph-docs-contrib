@@ -58,7 +58,7 @@ In the request body, supply a JSON representation of an [onlineMeeting](../resou
 
 > [!CAUTION]
 >
-> Assigning the `presenter` or `coorganizer` role to users who are not registered in Azure Active Directory is not currently supported.
+> Assigning the `presenter` or `coorganizer` role to users who are not registered in Microsoft Entra ID is not currently supported.
 
 ## Response
 If successful, this method returns a `201 Created` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.

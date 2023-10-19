@@ -52,7 +52,7 @@ POST /users/{userId}/onlineMeetings/{meetingId}/registration/registrants
 
 ## Request body
 
-- If the value of the **allowedRegistrant** property of the [externalMeetingRegistration](../resources/externalmeetingregistration.md) object is `organization`, supply the **id** from the external registration system, the registrant's **tenantId** and **userId** in Azure Active Directory.
+- If the value of the **allowedRegistrant** property of the [externalMeetingRegistration](../resources/externalmeetingregistration.md) object is `organization`, supply the **id** from the external registration system, the registrant's **tenantId** and **userId** in Microsoft Entra ID.
 - If the value of the **allowedRegistrant** property of the [externalMeetingRegistration](../resources/externalmeetingregistration.md) object is `everyone`, only supply the **id** from the external registration system.
 
 > [!IMPORTANT]

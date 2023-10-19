@@ -11,7 +11,7 @@ summary: |
 
   ## About quick start samples
 
-  The quick start samples show you how to access the power of Microsoft Graph. These samples access two services with one authentication: Azure Active Directory and Outlook. Each quick start sample accesses information from a Microsoft account user's profile and displays messages from their inbox.
+  The quick start samples show you how to access the power of Microsoft Graph. These samples access two services with one authentication: Microsoft Entra ID and Outlook. Each quick start sample accesses information from a Microsoft account user's profile and displays messages from their inbox.
 
   The quick start involves three steps:
 
@@ -45,7 +45,7 @@ sections:
       - question: |
           Why don't any of the quick start samples show advanced authentication use cases?
         answer: |
-          The quick start samples give you an introduction to authentication and Microsoft Graph API calls. You can learn more about other [authentication flows](/azure/active-directory/develop/authentication-flows-app-scenarios) in the Azure Active Directory documentation.
+          The quick start samples give you an introduction to authentication and Microsoft Graph API calls. You can learn more about other [authentication flows](/azure/active-directory/develop/authentication-flows-app-scenarios) in the Microsoft Entra documentation.
 
       - question: |
           What if I run into an unexpected error or problem with a quick start?

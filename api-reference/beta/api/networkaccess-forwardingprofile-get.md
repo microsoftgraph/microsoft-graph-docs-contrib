@@ -3,7 +3,7 @@ title: "Get forwardingProfile"
 description: "Retrieve information about a specific forwarding profile."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 

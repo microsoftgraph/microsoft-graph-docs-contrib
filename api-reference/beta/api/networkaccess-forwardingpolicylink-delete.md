@@ -3,7 +3,7 @@ title: "Delete forwardingPolicyLink"
 description: "Delete a specific forwarding policy link."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
