@@ -1,6 +1,6 @@
 ---
 title: "serviceActivity: getMetricsForMfaSignInSuccess"
-description: "Get the number of times users successfully completed interactive MFA sign-ins using the Microsoft Entra MFA cloud service over a specified time period."
+description: "Get the number of times users successfully completed interactive MFA sign-ins using the Microsoft Entra MFA cloud service during a specified time period."
 author: "Zacharypeng"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of times users successfully completed interactive MFA sign-ins using the Microsoft Entra MFA cloud service over a specified time period.
+Get the number of times users successfully completed interactive MFA sign-ins using the Microsoft Entra MFA cloud service during a specified time period.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

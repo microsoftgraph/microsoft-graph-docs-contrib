@@ -1,6 +1,6 @@
 ---
 title: "serviceActivity: getMetricsForSamlSignInSuccess"
-description: "Get the number of SAML 2.0 authentications successfully processed by the Microsoft Entra cloud service for the tenant over a specified time period. This health signal currently doesn't include WS-FED/SAML 1.1 apps integrated with Microsoft Entra."
+description: "Get the number of SAML 2.0 authentications successfully processed by the Microsoft Entra cloud service for the tenant during a specified time period. This health signal currently doesn't include WS-FED/SAML 1.1 apps that are integrated with Microsoft Entra."
 author: "Zacharypeng"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of SAML 2.0 authentications successfully processed by the Microsoft Entra cloud service for the tenant over a specified time period. This health signal currently doesn't include WS-FED/SAML 1.1 apps integrated with Microsoft Entra.
+Get the number of SAML 2.0 authentications successfully processed by the Microsoft Entra cloud service for the tenant during a specified time period. This health signal currently doesn't include WS-FED/SAML 1.1 apps that are integrated with Microsoft Entra.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

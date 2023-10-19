@@ -50,7 +50,7 @@ None.
 | servicePrincipalSignInActivities  | [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) collection       | Represents a collection of sign-in activities of service principals.                                                   |
 | userCredentialUsageDetails        | [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) collection               | Represents the self-service password reset (SSPR) usage for a given tenant.                                         |
 | sla                               | [serviceLevelAgreementRoot](../resources/servicelevelagreementroot.md)                            | A placeholder to allow for the desired URL path for SLA.                                                            |
-| serviceActivity                               | [serviceActivity](../resources/serviceactivity.md)                            | A placeholder to allow for the desired URL path for Service Activity.                                                            |
+| serviceActivity                               | [serviceActivity](../resources/serviceactivity.md)                            | A placeholder to the Microsoft Entra service activity.                                                            |
 
 ## JSON representation
 The following JSON representation shows the resource type.

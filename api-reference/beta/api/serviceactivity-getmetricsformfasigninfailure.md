@@ -1,6 +1,6 @@
 ---
 title: "serviceActivity: getMetricsForMfaSignInFailure"
-description: "Get the number of times users fail to complete interactive MFA sign-ins using the Microsoft Entra MFA cloud service over a specified time period."
+description: "Get the number of times users fail to complete interactive MFA sign-ins using the Microsoft Entra MFA cloud service during a specified time period."
 author: "Zacharypeng"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of times users fail to complete interactive MFA sign-ins using the Microsoft Entra MFA cloud service over a specified time period. Sign-in failures happen, for example, when users abandon or cancel MFA requests, refresh MFA sessions without doing interactive MFA, or use passwordless methods that are not counted as MFA sign-ins.
+Get the number of times users fail to complete interactive MFA sign-ins using the Microsoft Entra MFA cloud service during a specified time period. Sign-in failures happen, for example, when users abandon or cancel MFA requests, or refresh MFA sessions without doing interactive MFA.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

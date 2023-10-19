@@ -1,6 +1,6 @@
 ---
 title: "serviceActivity: getMetricsForConditionalAccessCompliantDevicesSignInSuccess"
-description: "Get the number of user authentication requests for a specified time period that satisfy a Conditional Access policy requiring device compliance. Microsoft Intune manages compliant devices, including mobile iOS/Android devices, tablets, or cloud Microsoft Entra-joined computers (not hybrid)."
+description: "Get the number of user authentication requests, during a specified time period, that satisfy a Conditional Access policy that requires device compliance. Microsoft Intune manages compliant devices, including mobile iOS/Android devices, tablets, or cloud Microsoft Entra-joined computers (not hybrid)."
 author: "Zacharypeng"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the number of user authentication requests for a specified time period that satisfy a Conditional Access policy requiring device compliance. Microsoft Intune manages compliant devices, including mobile iOS/Android devices, tablets, or cloud Microsoft Entra-joined computers (not hybrid).
+Get the number of user authentication requests, during a specified time period, that satisfy a Conditional Access policy that requires device compliance. Microsoft Intune manages compliant devices, including mobile iOS/Android devices, tablets, or cloud Microsoft Entra-joined computers (not hybrid).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -52,7 +52,6 @@ The following table shows the parameters that can be used with this function.
 |exclusiveIntervalEndDateTime|DateTimeOffset|Sets the ending date and time in UTC. Required|
 |aggregationIntervalInMinutes|Int32|Aggregation interval in minutes. The default value is 15, which sets the data to be aggregated into 15-minute sets. Allowed values are 5, 10, 15 and 30. Optional.|
 
-
 ## Request headers
 |Name|Description|
 |:---|:---|
@@ -77,7 +76,6 @@ The following example shows a request.
 ``` http
 GET https://graph.microsoft.com/beta/reports/serviceActivity/getMetricsForConditionalAccessCompliantDevicesSignInSuccess(inclusiveIntervalStartDateTime=2023-01-01T00:00:00Z,exclusiveIntervalEndDateTime=2023-01-01T00:20:00Z,aggregationIntervalInMinutes=10)
 ```
-
 
 ### Response
 The following example shows the response.
@@ -110,4 +108,3 @@ Content-Type: application/json
   ]
 }
 ```
-
