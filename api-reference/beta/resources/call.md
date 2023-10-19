@@ -93,7 +93,7 @@ myParticipantId     | String                                                    
 | state               | callState                                                                                                 | The call state. Possible values are: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Read-only.                          |
 | subject             | String                                                                                                 | The subject of the conversation.                                                                                                                                                                    |
 | targets             | [invitationParticipantInfo](participantinfo.md) collection                                             | The targets of the call. Required information for creating peer to peer call.                                                                                                            |
-| tenantId            | String                                                                                                 | Read-only. `tenantId` in Azure Active Directory.                                                                                                                        |
+| tenantId            | String                                                                                                 | Read-only. `tenantId` in Microsoft Entra ID.                                                                                                                        |
 | terminationReason   | String                                                                                                 | Read-only.                                                                                                                                                                       |
 | toneInfo            | [toneInfo](toneinfo.md)                                                                                | Read-only.                                                                                                                                                                        |
 
@@ -189,5 +189,3 @@ Here's a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-
