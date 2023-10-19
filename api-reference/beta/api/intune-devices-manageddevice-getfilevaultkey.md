@@ -1,6 +1,6 @@
 ---
 title: "getFileVaultKey function"
-description: ""
+description: "Intune Devices Manageddevice Getfilevaultkey Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

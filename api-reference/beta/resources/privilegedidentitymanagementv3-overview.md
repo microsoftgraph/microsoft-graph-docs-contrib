@@ -5,12 +5,12 @@ author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
 doc_type: resourcePageType
-ms.date: 08/01/2023
+ms.date: 10/12/2023
 ---
 
 # Manage Azure AD role assignments using PIM APIs
 
-Privileged Identity Management (PIM) is a feature of [Azure Active Directory (Azure AD) Identity Governance](#see-also) that enables you to manage, control, and monitor access to important resources in your organization. One method through which principals such as users, groups, and service principals (applications) are granted access to important resources is through assignment of [Azure AD roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+[Privileged Identity Management (PIM)](/azure/active-directory/privileged-identity-management/pim-configure) is a feature of Azure Active Directory (Azure AD) Identity Governance that enables you to manage, control, and monitor access to important resources in your organization. One method through which principals such as users, groups, and service principals (applications) are granted access to important resources is through assignment of [Azure AD roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 The PIM for Azure AD roles APIs allow you to govern privileged access and limit excessive access to Azure AD roles. This article introduces the governance capabilities of PIM for Azure AD roles APIs in Microsoft Graph.
 
@@ -56,13 +56,13 @@ The following table lists scenarios for using PIM to manage role eligibilities a
 
 ## Role settings and PIM
 
-Each Azure AD role defines settings or rules. Such rules include whether multifactor authentication (MFA), justification, or approval is required to activate an eligible role, or whether you can create permanent assignments or eligibilities for principals to the role. These role-specific rules will determine the settings you can apply while creating or managing role assignments and eligibilities through PIM.
+Each Azure AD role defines settings or rules. Such rules include whether multifactor authentication (MFA), justification, or approval is required to activate an eligible role, or whether you can create permanent assignments or eligibilities for principals to the role. These role-specific rules determine the settings you can apply while creating or managing role assignments and eligibilities through PIM.
 
 In Microsoft Graph, these rules are managed through the [unifiedRoleManagementPolicy](unifiedrolemanagementpolicy.md) and the [unifiedRoleManagementPolicyAssignment](unifiedrolemanagementpolicyassignment.md) resource types and their related methods.
 
-For example, assume that by default, a role doesn't allow permanent active assignments and defines a maximum of 15 days for active assignments. Attempting to create a [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) object without expiry date will return a `400 Bad Request` response code for violation of the expiration rule.
+For example, assume that by default, a role doesn't allow permanent active assignments and defines a maximum of 15 days for active assignments. Attempting to create a [unifiedRoleAssignmentScheduleRequest](unifiedroleassignmentschedulerequest.md) object without expiry date returns a `400 Bad Request` response code for violation of the expiration rule.
 
-PIM allows you to configure various rules including the following:
+PIM allows you to configure various rules including:
 
 - Whether principals can be assigned permanent eligible assignments
 - The maximum duration allowed for a role activation and whether justification or approval is required to activate eligible roles
@@ -107,7 +107,7 @@ Use the following Microsoft Graph resources to manage PIM alerts.
 
 | Resource | Description | API operations|
 |--|--|--|
-| [unifiedRoleManagementAlert](unifiedrolemanagementalert.md) | Provides a summary of alerts in PIM for Azure AD roles, whether they are enabled or disabled, when the PIM service last scanned the tenant for incidences or this alert, and the number of incidences mapping to this alert type in the tenant. The PIM service scans the tenant daily for incidences relating to the alert but you can also run a manual scan.| [List](../api/rolemanagementalert-list-alerts.md) <br/><br/> [Get](../api/unifiedrolemanagementalert-get.md) <br/><br/> [Update](../api/unifiedrolemanagementalert-update.md) <br/><br/> [Refresh (Manual scan)](../api/unifiedrolemanagementalert-refresh.md)|
+| [unifiedRoleManagementAlert](unifiedrolemanagementalert.md) | Provides a summary of alerts in PIM for Azure AD roles, whether they're enabled or disabled, when the PIM service last scanned the tenant for incidences or this alert, and the number of incidences mapping to this alert type in the tenant. The PIM service scans the tenant daily for incidences relating to the alert but you can also run a manual scan.| [List](../api/rolemanagementalert-list-alerts.md) <br/><br/> [Get](../api/unifiedrolemanagementalert-get.md) <br/><br/> [Update](../api/unifiedrolemanagementalert-update.md) <br/><br/> [Refresh (Manual scan)](../api/unifiedrolemanagementalert-refresh.md)|
 | [unifiedRoleManagementAlertDefinition](unifiedrolemanagementalertdefinition.md) | Provides detailed description of each alert type, the severity level, the recommended steps to mitigate incidences relating to the alert in the tenant, and the recommended actions to prevent future incidences. | [List](../api/rolemanagementalert-list-alertdefinitions.md) <br/><br/> [Get](../api/unifiedrolemanagementalertdefinition-get.md) |
 | [unifiedRoleManagementAlertConfiguration](unifiedrolemanagementalertconfiguration.md) | The tenant-specific configuration for the alert including whether the PIM service should scan the tenant for incidences relating to the alert, the thresholds that trigger the alert, and the related alert definition. This is an abstract type from which resources that represent the individual alert types are derived. | [List](../api/rolemanagementalert-list-alertconfigurations.md) <br/><br/> [Get](../api/unifiedrolemanagementalertconfiguration-get.md) <br/><br/> [Update](../api/unifiedrolemanagementalertconfiguration-update.md)|
 | [unifiedRoleManagementAlertIncident](unifiedrolemanagementalertincident.md) | The incidences in the tenant that match the alert type. | [List](../api/unifiedrolemanagementalert-list-alertincidents.md) <br/><br/> [Get](../api/unifiedrolemanagementalertincident-get.md) <br/><br/> [Remediate](../api/unifiedrolemanagementalertincident-remediate.md) |
@@ -141,16 +141,16 @@ For delegated scenarios, the signed-in user must be assigned the *Privileged Rol
 
 ## Licensing
 
-The tenant where Privileged Identity Management is being used must have sufficient purchased or trial licenses. For more information, see [License requirements to use Privileged Identity Management](/azure/active-directory/privileged-identity-management/subscription-requirements).
+The tenant where Privileged Identity Management is being used must have enough purchased or trial licenses. For more information, see [License requirements to use Privileged Identity Management](/azure/active-directory/privileged-identity-management/subscription-requirements).
 
 ## See also
 
-- [What is Azure AD Privileged Identity Management?](/azure/active-directory/privileged-identity-management/pim-configure).
-- Learn more about role settings in PIM APIs through the following articles:
+- See the following articles to learn more about working with PIM APIs:
   - [Working with rules for Azure AD roles in PIM APIs](/graph/identity-governance-pim-rules-overview).
   - [Use PIM APIs to update Azure AD rules (settings)](/graph/how-to-pim-update-rules).
-- Learn more about security alerts in PIM: [Manage security alerts for Azure AD roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
-- Follow this tutorial to learn more about using PIM for Azure AD roles APIs: [Tutorial: Use PIM APIs to assign Azure AD roles](/graph/tutorial-assign-azureadroles).
+  - [Manage security alerts for Azure AD roles using PIM APIs in Microsoft Graph](/graph/how-to-pim-alerts).
+  - [Tutorial: Use PIM APIs to assign Azure AD roles](/graph/tutorial-assign-azureadroles).
+- To learn more about security operations, see [Microsoft Entra security operations for Privileged Identity Management](/azure/active-directory/architecture/security-operations-privileged-identity-management?source=docs#privileged-identity-management-alerts) in the Microsoft Entra architecture center.
 
 
 <!-- {

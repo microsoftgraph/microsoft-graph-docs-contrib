@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a collection of **riskyUser** objects.
 
->**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
+>**Note:** Using the riskyUsers API requires a Microsoft Entra ID P2 license.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -215,5 +215,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
-

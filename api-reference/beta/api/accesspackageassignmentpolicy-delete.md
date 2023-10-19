@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), delete an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), delete an [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -121,5 +121,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

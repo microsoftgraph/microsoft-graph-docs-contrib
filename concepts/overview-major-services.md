@@ -21,8 +21,8 @@ A Microsoft 365 _group_ is the fundamental entity that lets users collaborate. I
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Users | Azure Active Directory (Azure AD) and most productivity, collaboration, intelligence, and education services | The user is a core focus of Microsoft Graph, around which many Microsoft Graph services build user-centric functionality. | [Overview of users in Microsoft Graph](azuread-users-concept-overview.md)|
-|Groups | Azure AD, OneDrive, OneNote, Outlook, Planner | A Microsoft 365 group provides the fundamental collaborative unit for users to share conversations, files, notes, calendar, plans, and more. | [Overview of Microsoft 365 groups in Microsoft Graph](microsoft365-groups-concept-overview.md) |
+| Users | Microsoft Entra ID and most productivity, collaboration, intelligence, and education services | The user is a core focus of Microsoft Graph, around which many Microsoft Graph services build user-centric functionality. | [Overview of users in Microsoft Graph](azuread-users-concept-overview.md)|
+|Groups | Microsoft Entra ID, OneDrive, OneNote, Outlook, Planner | A Microsoft 365 group provides the fundamental collaborative unit for users to share conversations, files, notes, calendar, plans, and more. | [Overview of Microsoft 365 groups in Microsoft Graph](microsoft365-groups-concept-overview.md) |
 
 ## Connecting users' data, Microsoft 365 services, and your apps
 
@@ -38,7 +38,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Identity and access management | Azure AD | Creates and manages directory resources such as users, groups, and applications. Manages access to resources and data. Gives customers access to sign-in and account risk data in Azure AD.| [Azure AD identity and access management overview](azuread-identity-access-management-concept-overview.md)  |
+| Identity and access management | Microsoft Entra ID | Creates and manages directory resources such as users, groups, and applications. Manages access to resources and data. Gives customers access to sign-in and account risk data in Microsoft Entra ID.| [Microsoft Entra identity and access management overview](azuread-identity-access-management-concept-overview.md)  |
 
 ## Productivity
 
@@ -71,7 +71,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| People | Azure AD, Outlook, SharePoint, and more | Gets information about persons as ordered by their relevance to a user, determined by the user's communication and collaboration patterns and business relationships.  | [People and workplace intelligence in Microsoft Graph](social-intel-concept-overview.md) |
+| People | Microsoft Entra ID, Outlook, SharePoint, and more | Gets information about persons as ordered by their relevance to a user, determined by the user's communication and collaboration patterns and business relationships.  | [People and workplace intelligence in Microsoft Graph](social-intel-concept-overview.md) |
 | Profile (preview) | Profile | Provides a lightweight mechanism for storing and retrieving information about people within a tenant. | [People and workplace intelligence in Microsoft Graph](social-intel-concept-overview.md) |
 | Profile card customization | Profile card | Provides a lightweight mechanism for an administrator to customize the content that surfaces on the Microsoft 365 profile card within an organization. | [People and workplace intelligence in Microsoft Graph](social-intel-concept-overview.md) |
 | Document insights  | Delve, OneDrive, Outlook, SharePoint | Uses advanced analytics and machine learning techniques to get documents trending around, viewed, modified, or shared by a user.  | [People and workplace intelligence in Microsoft Graph](social-intel-concept-overview.md)  |
@@ -93,7 +93,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Security integration | Azure AD Identity Protection, Azure Information Protection, Azure Security Center, Microsoft Defender for Cloud Apps, Windows Defender Advanced Threat Protection, and [more](/graph/api/resources/security-api-overview) | Provides a unified gateway to security insights and actions across Microsoft and ecosystem partners. | [Security in Microsoft Graph](security-concept-overview.md) |
+| Security integration | Microsoft Entra ID Protection, Azure Information Protection, Azure Security Center, Microsoft Defender for Cloud Apps, Windows Defender Advanced Threat Protection, and [more](/graph/api/resources/security-api-overview) | Provides a unified gateway to security insights and actions across Microsoft and ecosystem partners. | [Security in Microsoft Graph](security-concept-overview.md) |
 | eDiscovery | Microsoft Purview eDiscovery (Premium) | Provides access to eDiscovery capabilities used in the process of identifying and delivering electronic information that can be used as evidence in legal cases.|[Security in Microsoft Graph](security-concept-overview.md)|
 
 ## Cross-device experiences
@@ -121,7 +121,7 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Education | Azure AD, Education | Provides information relevant for education scenarios, including schools, classes, students, teachers, and assignment info. Enables ISVs to build applications for the classroom that save teachers time and promote teamwork and collaboration.  | [Education overview](education-concept-overview.md) |
+| Education | Microsoft Entra ID, Education | Provides information relevant for education scenarios, including schools, classes, students, teachers, and assignment info. Enables ISVs to build applications for the classroom that save teachers time and promote teamwork and collaboration.  | [Education overview](education-concept-overview.md) |
 | Industry data ETL (preview) | Azure Data Lake, Education | A multi-vertical, cross-industry, ETL (Extract-Transform-Load) platform that includes support for the education sector, enabling applications to manage and move user and roster data from a student information system (SIS). | [Industry data overview](industrydata-concept-overview.md) |
 
 ## Business applications
