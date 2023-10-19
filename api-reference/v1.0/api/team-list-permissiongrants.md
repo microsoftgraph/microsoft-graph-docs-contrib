@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [team](../resources/team.md). This list specifies the Azure AD apps that have access to the **team**, along with each app's corresponding type of resource-specific access.
+List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [team](../resources/team.md). This list specifies the Microsoft Entra apps that have access to the **team**, along with each app's corresponding type of resource-specific access.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
