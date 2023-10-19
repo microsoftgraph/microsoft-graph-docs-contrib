@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Delete fileStorageContainer
 Namespace: microsoft.graph
 
-!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Delete a [fileStorageContainer](../resources/filestoragecontainer.md). Deleting fileStorageContainers using this method will move the fileStorageContainers to the recycle bin instead of permanently deleting them.
 
