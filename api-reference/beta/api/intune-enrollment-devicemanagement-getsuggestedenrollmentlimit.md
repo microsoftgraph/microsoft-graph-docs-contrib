@@ -1,6 +1,6 @@
 ---
 title: "getSuggestedEnrollmentLimit function"
-description: ""
+description: "Intune Enrollment Devicemanagement Getsuggestedenrollmentlimit Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

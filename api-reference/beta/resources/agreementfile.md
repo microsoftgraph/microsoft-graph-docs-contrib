@@ -1,6 +1,6 @@
 ---
 title: "agreementFile resource type"
-description: "Represents a customizable terms-of-use agreement file that a tenant manages with Azure Active Directory (Azure AD). It contains metadata about the agreement file (for example, the name, the language, and whether it's the default file)."
+description: "Represents a customizable terms-of-use agreement file that a tenant manages with Microsoft Entra ID. It contains metadata about the agreement file (for example, the name, the language, and whether it's the default file)."
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a customizable terms-of-use agreement file that a tenant manages with Azure Active Directory (Azure AD). It contains metadata about the agreement file (for example, the name, the language, and whether it's the default file).
+Represents a customizable terms-of-use agreement file that a tenant manages with Microsoft Entra ID. It contains metadata about the agreement file (for example, the name, the language, and whether it's the default file).
 
 Inherits from [agreementFileProperties](agreementfileproperties.md).
 
@@ -79,5 +79,3 @@ Here's a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

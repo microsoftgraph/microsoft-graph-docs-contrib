@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application    | Organization.ReadWrite.All |
 
-For delegated scenarios, the calling user must have the *Global Administrator* [Azure AD role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+For delegated scenarios, the calling user must have the *Global Administrator* [Microsoft Entra role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 ## HTTP request
 
@@ -155,4 +155,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

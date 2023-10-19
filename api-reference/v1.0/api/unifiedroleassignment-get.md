@@ -19,7 +19,9 @@ Retrieve the properties and relationships of a [unifiedRoleAssignment](../resour
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For the directory (Azure AD) provider
+<a name='for-the-directory-azure-ad-provider'></a>
+
+### For the directory (Microsoft Entra ID) provider
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -251,4 +253,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

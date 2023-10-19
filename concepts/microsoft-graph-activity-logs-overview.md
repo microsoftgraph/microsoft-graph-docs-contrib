@@ -19,8 +19,8 @@ All logs for API requests made from line of business applications, API clients, 
 
 To access the Microsoft Graph activity logs, you need the following privileges.
 
-- An Azure AD Premium P1 or P2 tenant license in your tenant.
-- An administrator with one of the following [Azure AD administrator roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json) listed in the order of least to most privileged role.
+- A Microsoft Entra ID P1 or P2 tenant license in your tenant.
+- An administrator with one of the following [Microsoft Entra administrator roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json) listed in the order of least to most privileged role.
   - Security Administrator – To configure diagnostic settings
   - Global Administrator – To configure diagnostic settings
 - An Azure subscription with one of the following log destinations are configured, and permissions to access data in the corresponding log destinations.
@@ -29,6 +29,9 @@ To access the Microsoft Graph activity logs, you need the following privileges.
   - An Azure Event Hubs namespace to integrate with third-party solutions
 
 ## What data is available in the Microsoft Graph activity logs?
+
+> [!WARNING]
+> The current field name `IpAddress` will change to `IPAddress` in the beta schema. When this change is released, you will need to update any queries that reference this field. The change has already rolled out to some regions.
 
 The following data relating to API requests is available for Microsoft Graph activity logs on the Logs Analytics interface.
 
@@ -45,7 +48,7 @@ The following data relating to API requests is available for Microsoft Graph act
 
 ## Configure to receive the Microsoft Graph activity logs
 
-You can configure to stream the logs through either the Diagnostic Setting in Entra portal or the Azure Resource Manager APIs. For more information, see the guidance in the following articles:
+You can configure to stream the logs through either the Diagnostic Setting in Microsoft Entra admin center or the Azure Resource Manager APIs. For more information, see the guidance in the following articles:
 
 - [Integrate activity logs with Azure Monitor logs](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)
 - [Configure diagnosticSettings through the Azure Resource Manager API](/azure/templates/microsoft.insights/diagnosticsettings?pivots=deployment-language-arm-template)
@@ -58,7 +61,7 @@ The following articles guide you to configure the storage destinations:
 
 ## Cost planning estimates
 
-If you already have an Azure AD P1 license, you need an Azure subscription to set up the Log Analytics workspace, Storage account, or Event Hubs. The Azure subscription comes at no cost, but you have to pay to utilize Azure resources.
+If you already have a Microsoft Entra ID P1 license, you need an Azure subscription to set up the Log Analytics workspace, Storage account, or Event Hubs. The Azure subscription comes at no cost, but you have to pay to utilize Azure resources.
 
 The amount of data logged and, thus, the cost incurred, can vary significantly depending on the tenant size and the applications in your tenant that interact with Microsoft Graph APIs. The following table provides some estimates for log data size to aid the price calculation. Use these estimations for general consideration only.
 
@@ -75,7 +78,7 @@ See the following pricing calculations for respective services:
 
 ## Azure Monitor Logs query examples
 
-If you send Microsoft Graph activity logs to a Log Analytics workspace, you can query the logs using Kusto Query Language (KQL). For more information about queries in Log Analytics Workspace, see [Analyze Azure AD activity logs with Log Analytics](/azure/active-directory/reports-monitoring/howto-analyze-activity-logs-log-analytics). You can use these queries for data exploration, to build alert rules, build Azure dashboards, or integrate into your custom applications using the Azure Monitor Logs API or Query SDK.
+If you send Microsoft Graph activity logs to a Log Analytics workspace, you can query the logs using Kusto Query Language (KQL). For more information about queries in Log Analytics Workspace, see [Analyze Microsoft Entra activity logs with Log Analytics](/azure/active-directory/reports-monitoring/howto-analyze-activity-logs-log-analytics). You can use these queries for data exploration, to build alert rules, build Azure dashboards, or integrate into your custom applications using the Azure Monitor Logs API or Query SDK.
 
 The following Kusto query identifies the top 20 entities making requests to groups resources that are failing due to authorization:
 

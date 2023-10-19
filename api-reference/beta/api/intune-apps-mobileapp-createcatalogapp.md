@@ -1,6 +1,6 @@
 ---
 title: "createCatalogApp action"
-description: ""
+description: "Intune Apps Mobileapp Createcatalogapp Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

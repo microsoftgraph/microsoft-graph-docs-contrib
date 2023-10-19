@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Get the number of users registered for each authentication method.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -64,7 +64,7 @@ The value `privilegedAdmin` consists of the following privileged admin roles:
 * User Administrator
 * Authentication Administrator
 
-The value `admin` includes all Azure Active Directory admin roles.
+The value `admin` includes all Microsoft Entra admin roles.
 
 ## Request headers
 
