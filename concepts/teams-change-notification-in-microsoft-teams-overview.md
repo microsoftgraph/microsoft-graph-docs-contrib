@@ -1,6 +1,6 @@
 ---
 title: "Change notifications for Microsoft Teams resources"
-description: "Subscribe to changes to resources and resource data in Microsoft Teams by using the Microsoft Graph API. Learn about change notification types and payloads."
+description: "Subscribe to resource and resource data changes in Microsoft Teams using the Microsoft Graph API. Learn about change notification types and payloads."
 author: "anandab-msft"
 ms.localizationpriority: high
 ms.prod: "microsoft-teams"
@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Change notifications for Microsoft Teams resources
 
-Change notifications for Microsoft Teams resources using Microsoft Graph enable you to subscribe to changes (create, update, and delete) to a resource. Change notifications provide a low latency model by allowing you to maintain a [subscription](/graph/api/resources/webhooks). You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
+Change notifications for Microsoft Teams resources using Microsoft Graph enable you to subscribe to a resource's changes (create, update, and delete). Change notifications provide a low latency model, allowing you to maintain a [subscription](/graph/api/resources/webhooks). You can also get the resource data in the notifications and avoid calling the API to get the payload.
 
 > [!NOTE]
 > The maximum time a subscription can last is 60 minutes; however, subscriptions can be renewed until the caller has permissions to access the resource.
@@ -20,15 +20,15 @@ Microsoft Teams supports two types of change notifications:
 
 - **Change notification to track all changes related to a resource across the tenant:** For example, you can subscribe to changes in messages in any channel across the tenant and get notified whenever a message is created, updated, or deleted in any channel in the tenant. These notifications may have [licensing and payment requirements](/graph/teams-licenses), such as change notifications for [messages](teams-changenotifications-chatmessage.md) and [membership](teams-changenotifications-chatMembership.md).
 
-- **Change notification to track all changes for a specific resource:** For example, you can subscribe to changes in messages in a particular channel and get notified whenever a message is created, updated, or deleted in that channel.
+- **Change notification to track all changes for a specific resource:** For example, you can subscribe to changes in messages in a particular channel and get notified whenever a message is created, updated, or deleted.
 
 For details about which resources support which types of change notifications, see [Microsoft Graph change notifications](webhooks.md).
 
 ## Supported resources
 
-The following table lists the Microsoft Teams resources that support change notifications and their corresponding resource paths. Apply the resource path for your scenario as specified when [creating a subscription](/graph/api/subscription-post-subscriptions). The type of the resource path payload is the type under the "Resource" column, or a collection of that type.
+The following table lists the Microsoft Teams resources that support change notifications and their corresponding resource paths. Apply the resource path for your scenario as specified when [creating a subscription](/graph/api/subscription-post-subscriptions). The type of the resource path payload is the type under the "Resource" column or a collection of that type.
 
-> **Note:** Subscriptions to resources marked with an asterisk (`*`) are available on the `/beta` endpoint only.
+> **Note:** Subscriptions to resources marked with an asterisk (`*`) are only available on the `/beta` endpoint.
 
 | **Resource** | **Supported resource paths** | **Resource data can be included in notifications** |
 |:----------------|:------------|:-----------------------------------------|
@@ -42,7 +42,7 @@ The following table lists the Microsoft Teams resources that support change noti
 
 ## Notification payloads
 
-Depending on your subscription, you can either get the notification with resource data, or without resource data. Subscribing with resource data allows you to get the message payload along with the notification, which removes the need to call back and get the content.
+You can get the notification with or without resource data, depending on your subscription. Subscribing with resource data lets you get the message payload along with the notification, removing the need to call back and get the content.
 
 ### Notifications with resource data
 
@@ -73,7 +73,7 @@ For notifications with resource data, the payload looks like the following.  Thi
 }
 ```
 
-For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
+For details about validating tokens and decrypting the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
 
 The decrypted notification payload looks like the following. The decrypted payload for the previous example conforms to the [chatMessage](/graph/api/resources/chatMessage) schema. The payload is similar to that returned by GET operations.
 
@@ -139,7 +139,7 @@ The payload looks like the following. This payload is for a message sent in a ch
 }
 ```
 
-Previous example above shows a notification that corresponds to a chat message resource. The actual notification includes the **resource** and **resourceData** properties, which represent the resource that has triggered the notification. The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload of the resource.
+The previous example above shows a notification that corresponds to a chat message resource. The actual notification includes the **resource** and **resourceData** properties, which represent the resource that has triggered the notification. The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload of the resource.
 
 > [!NOTE]
 > GET calls always return the current state of the resource. If the resource is changed between when the notification is sent and when the resource is retrieved, the operation returns the updated resource.
