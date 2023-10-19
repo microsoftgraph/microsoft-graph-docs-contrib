@@ -10,8 +10,7 @@ doc_type: apiPageType
 # List fileStorageContainer custom properties
 Namespace: microsoft.graph
 
-> [!IMPORTANT]
-> APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List the custom properties of a fileStorageContainer. Caller can either retrieve all custom properties or get specific property by name.
 
