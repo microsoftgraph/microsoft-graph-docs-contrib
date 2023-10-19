@@ -41,7 +41,7 @@ In the request URL, provide the following query parameters with values. The foll
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-| tenantId | String | Unique tenant identifier of an Azure AD tenant. |
+| tenantId | String | Unique tenant identifier of a Microsoft Entra tenant. |
 
 ## Request headers
 
