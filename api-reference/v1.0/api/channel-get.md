@@ -39,7 +39,11 @@ GET /teams/{team-id}/channels/{channel-id}
 
 ## Optional query parameters
 
-This method supports the `$filter`and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter` and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
+
+### Use $select for better performance
+
+Populating the **email** and **summary** property for a channel is an expensive operation that results in slow performance. Use `$select` to exclude the **email** and **summary** property to improve performance.
 
 > **Note**: The summary property can only be retrieved via the `select` parameter, as shown in Example 2 in this topic.
 
@@ -148,7 +152,7 @@ The following example shows a request to get the **channelSummary** property.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2?$select=summary
+GET https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2?$select=summary
 ```
 
 #### Response
@@ -165,7 +169,7 @@ The following example shows the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('8bb12236-b929-42e0-94a0-1c417466ebf8')/channels(summary)/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('8bb12236-b929-42e0-94a0-1c417466ebf8')/channels(summary)/$entity",
     "summary":{
         "ownersCount":2,
         "membersCount":3,

@@ -11,10 +11,10 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Contains information about a channel in Microsoft Teams, including numbers of guests, members, and owners, and whether the channel includes members from other tenants.
+Contains information about a channel in Microsoft Teams, including numbers of owners, members, guests and whether the channel includes members from other tenants.
 
 ## Properties
-| Property	   | Type	|Description|
+|Property|Type|Description|
 |:---------------|:--------|:----------|
 |ownersCount|Int32|Count of owners in a channel.|
 |membersCount|Int32|Count of members in a channel.|
