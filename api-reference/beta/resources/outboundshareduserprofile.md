@@ -1,6 +1,6 @@
 ---
 title: "outboundSharedUserProfile resource type"
-description: "Represents an Azure AD user that has shared their profile data with an external Azure AD tenant using B2B direct connect."
+description: "Represents a Microsoft Entra user that has shared their profile data with an external Microsoft Entra tenant using B2B direct connect."
 author: "jkdouglas"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure AD user that has shared their profile data with an external Azure AD tenant using B2B direct connect.
+Represents a Microsoft Entra user that has shared their profile data with an external Microsoft Entra tenant using B2B direct connect.
 
 ## Methods
 
@@ -21,8 +21,8 @@ Represents an Azure AD user that has shared their profile data with an external 
 |:---|:---|:---|
 |[List outboundSharedUserProfiles](../api/directory-list-outboundshareduserprofiles.md)|[outboundSharedUserProfile](../resources/outboundshareduserprofile.md) collection|Retrieve all outboundSharedUserProfiles in the directory.|
 |[Get outboundSharedUserProfile](../api/outboundshareduserprofile-get.md)|[outboundSharedUserProfile](../resources/outboundshareduserprofile.md) collection|Retrieve a specific outboundSharedUserProfile from the directory.|
-|[List tenantReferences](../api/outboundshareduserprofile-list-tenants.md)|[tenantReferences](../resources/tenantreference.md) collection| Get all Azure AD tenants that a user has shared their data with as an Azure AD B2B direct connect user.|
-|[Remove personal data](../api/tenantreference-removepersonaldata.md)|None| Create a request to remove all personal data associated with a remote user in an external Azure AD tenant.|
+|[List tenantReferences](../api/outboundshareduserprofile-list-tenants.md)|[tenantReferences](../resources/tenantreference.md) collection| Get all Microsoft Entra tenants that a user has shared their data with as a Microsoft Entra B2B direct connect user.|
+|[Remove personal data](../api/tenantreference-removepersonaldata.md)|None| Create a request to remove all personal data associated with a remote user in an external Microsoft Entra tenant.|
 
 ## Properties
 
@@ -34,7 +34,7 @@ Represents an Azure AD user that has shared their profile data with an external 
 
 |Property|Type|Description|
 |:---|:---|:---|
-| tenants | [tenantReference](../resources/tenantreference.md) collection | The collection of external Azure AD tenants that the user has shared profile data with. Read-only. |
+| tenants | [tenantReference](../resources/tenantreference.md) collection | The collection of external Microsoft Entra tenants that the user has shared profile data with. Read-only. |
 
 None.
 

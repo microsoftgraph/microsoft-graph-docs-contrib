@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-Guests can't call this API. For more information about the permissions for member and guests, see [What are the default user permissions in Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#member-and-guest-users)
+Guests can't call this API. For more information about the permissions for member and guests, see [What are the default user permissions in Microsoft Entra ID?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context#member-and-guest-users)
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -855,7 +855,7 @@ Content-type: application/json
 
 #### Request
 
-Here's an example of the request. Details for the **signInActivity** property require an Azure AD Premium P1/P2 license and the AuditLog.Read.All permission. 
+Here's an example of the request. Details for the **signInActivity** property require a Microsoft Entra ID P1 or P2 license and the AuditLog.Read.All permission. 
 
 >**Note:** When you specify `$select=signInActivity` or `$filter=signInActivity` while listing users, the maximum page size for `$top` is 120. Requests with `$top` set higher than 120 will return pages with up to 120 users. signInActivity supports `$filter` (`eq`, `ne`, `not`, `ge`, `le`) *but* not with any other filterable properties. 
 

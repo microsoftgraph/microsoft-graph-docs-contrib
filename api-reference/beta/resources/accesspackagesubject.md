@@ -26,8 +26,8 @@ In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), 
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|cleanupScheduledDateTime|DateTimeOffset|The date and time the subject is marked to be blocked from sign in or deleted. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.|
 |altSecId|String|Not Supported.|
+|cleanupScheduledDateTime|DateTimeOffset|The date and time the subject is marked to be blocked from sign in or deleted. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.|
 |connectedOrganizationId|String|The identifier of the connected organization of the subject.|
 |displayName|String|The display name of the subject.|
 |email|String|The email address of the subject.|
@@ -63,6 +63,7 @@ Here's a JSON representation of the resource.
   "id": "String (identifier)",
   "objectId": "String",
   "altSecId": "String",
+  "cleanupScheduledDateTime": "String (timestamp)",
   "displayName": "String",
   "principalName": "String",
   "email": "String",
