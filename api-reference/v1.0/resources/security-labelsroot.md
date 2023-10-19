@@ -1,4 +1,4 @@
-![image](https://github.com/microsoftgraph/microsoft-graph-docs/assets/83306914/85def6f8-7271-4d7b-85c6-932fc91f30ac)---
+---
 title: "labelsRoot resource type"
 description: "A root resource for capabilities that support records management for Microsoft 365 data in an organization."
 author: "sseth"
