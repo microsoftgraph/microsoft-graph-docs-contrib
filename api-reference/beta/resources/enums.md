@@ -416,6 +416,15 @@ Namespace: microsoft.graph
 |existingPartners|
 |unknownFutureValue|
 
+### approvalFilterByCurrentUserOptions values 
+
+| Member             |
+| :----------------- |
+| target             |
+| createdBy          |
+| approver           |
+| unknownFutureValue |
+
 ### accessPackageFilterByCurrentUserOptions values
 
 | Member             |
@@ -1559,6 +1568,14 @@ Namespace: microsoft.graph
 | issuerSubject      |
 | policyOID          |
 | unknownFutureValue |
+
+### x509CertificateIssuerHintsState values
+
+|Member|
+|:---|
+|disabled|
+|enabled|
+|unknownFutureValue|
 
 ### anniversaryType values
 
@@ -3466,6 +3483,7 @@ Possible values for user account types (group membership), per Windows definitio
 | contentDeletion    |
 | caseResolved       |
 | unknownFutureValue |
+| approval           |
 
 ### subjectRightsRequestStageStatus values
 

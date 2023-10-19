@@ -1,6 +1,6 @@
 ---
 title: "List accessReview decisions (deprecated)"
-description: "In the Azure AD access reviews feature, retrieve the decisions of an accessReview object."
+description: "In the Microsoft Entra access reviews feature, retrieve the decisions of an accessReview object."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
 ms.prod: "governance"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, retrieve the decisions of an [accessReview](../resources/accessreview.md) object.
+In the Microsoft Entra [access reviews](../resources/accessreviews-root.md) feature, retrieve the decisions of an [accessReview](../resources/accessreview.md) object.
 
 Note that a recurring access review will not have a **decisions** relationship.  Instead, the caller must navigate the **instance** relationship to find an [accessReview](../resources/accessreview.md) object for a current or past instance of the access review.
 
@@ -143,5 +143,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

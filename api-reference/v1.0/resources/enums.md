@@ -174,6 +174,93 @@ Namespace: microsoft.graph
 | absoluteYearly  |
 | relativeYearly  |
 
+### assignmentScheduleFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| unknownFutureValue |
+
+### assignmentScheduleInstanceFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| unknownFutureValue |
+
+### assignmentScheduleRequestFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| createdBy          |
+| approver           |
+| unknownFutureValue |
+
+
+### eligibilityScheduleFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| unknownFutureValue |
+
+### eligibilityScheduleInstanceFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| unknownFutureValue |
+
+### eligibilityScheduleRequestFilterByCurrentUserOptions values
+
+| Member             |
+| :----------------- |
+| principal          |
+| createdBy          |
+| approver           |
+| unknownFutureValue |
+
+
+### privilegedAccessGroupAssignmentType values
+
+| Member             |
+| :----------------- |
+| assigned           |
+| activated          |
+| unknownFutureValue |
+
+### privilegedAccessGroupMemberType values
+
+| Member             |
+| :----------------- |
+| direct             |
+| group              |
+| unknownFutureValue |
+
+### privilegedAccessGroupRelationships values
+
+| Member             |
+| :----------------- |
+| owner              |
+| member             |
+| unknownFutureValue |
+
+### scheduleRequestActions values
+
+| Member             |
+| :----------------- |
+| adminAssign        |
+| adminUpdate        |
+| adminRemove        |
+| selfActivate       |
+| selfDeactivate     |
+| adminExtend        |
+| adminRenew         |
+| selfExtend         |
+| selfRenew          |
+| unknownFutureValue |
+
 ### roleAssignmentScheduleFilterByCurrentUserOptions values 
 
 | Member             |
@@ -2175,6 +2262,7 @@ Possible values for user account types (group membership), per Windows definitio
 | contentDeletion    |
 | caseResolved       |
 | unknownFutureValue |
+| approval           |
 
 ### subjectRightsRequestStageStatus values 
 

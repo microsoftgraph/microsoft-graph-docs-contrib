@@ -1,6 +1,6 @@
 ---
 title: "Create programControl (deprecated)"
-description: "In the Azure AD access reviews feature, create a new programControl object.  This links an access review to a program."
+description: "In the Microsoft Entra access reviews feature, create a new programControl object.  This links an access review to a program."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [programControl](../resources/programcontrol.md) object.  This links an access review to a program.
+In the Microsoft Entra [access reviews](../resources/accessreviews-root.md) feature, create a new [programControl](../resources/programcontrol.md) object.  This links an access review to a program.
 
 Prior to making this request, the caller must have previously
 
@@ -157,5 +157,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

@@ -1,6 +1,6 @@
 ---
 title: "accessReviewRecommendationInsightSetting resource type"
-description: "In the Azure AD access reviews, the accessReviewRecommendationInsightSetting represents the settings associated with an insight provided for an access review."
+description: "In the Microsoft Entra access reviews, the accessReviewRecommendationInsightSetting represents the settings associated with an insight provided for an access review."
 author: "jyothig123"
 ms.localizationpriority: medium
 ms.prod: "governance"
