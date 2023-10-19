@@ -1,6 +1,6 @@
 ---
 title: "fileStorageContainerCustomPropertyDictionary resource type"
-description: "fileStorageContainerCustomPropertyDictionary resource type"
+description: "The fileStorageContainerCustomPropertyDictionary resource is a dictionary storing custom properties of a fileStorageContainer in key/value pairs."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
