@@ -10,8 +10,7 @@ doc_type: apiPageType
 # Delete fileStorageContainer
 Namespace: microsoft.graph
 
-> [!IMPORTANT]
-> APIs under the `/beta` version in Microsoft Graph are subject to change. The use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
+!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)
 
 Delete a [fileStorageContainer](../resources/filestoragecontainer.md). Deleting fileStorageContainers using this method will move the fileStorageContainers to the recycle bin instead of permanently deleting them.
 
