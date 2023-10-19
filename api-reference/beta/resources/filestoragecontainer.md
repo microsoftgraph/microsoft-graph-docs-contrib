@@ -1,6 +1,6 @@
 ---
 title: "fileStorageContainer resource type"
-description: "fileStorageContainer resource type"
+description: "The fileStorageContainer is the top-level object representing a shared file storage space that can be used by a user or a group of users via an application."
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
