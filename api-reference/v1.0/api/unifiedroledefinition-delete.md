@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object. You can't delete built-in roles. This feature requires an Azure AD Premium P1 or P2 license.
+Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object. You can't delete built-in roles. This feature requires a Microsoft Entra ID P1 or P2 license.
 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -122,4 +122,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-

@@ -3,7 +3,7 @@ title: "m365ForwardingRule resource type"
 description: "Defines the rule or criteria used to direct and route specific Microsoft 365 traffic through the Global Secure Access services."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 

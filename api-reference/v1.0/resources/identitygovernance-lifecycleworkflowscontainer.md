@@ -1,6 +1,6 @@
 ---
 title: "lifecycleWorkflowsContainer resource type"
-description: "A container for the relationships that expose the Azure AD Identity Governance life cycle workflows API capabilities."
+description: "A container for the relationships that expose the Microsoft Entra ID Governance life cycle workflows API capabilities."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph.identityGovernance
 
-A container for the relationships that expose the Azure AD Identity Governance life cycle workflows API capabilities.
+A container for the relationships that expose the Microsoft Entra ID Governance life cycle workflows API capabilities.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -53,4 +53,3 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)"
 }
 ```
-

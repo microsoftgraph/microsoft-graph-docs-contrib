@@ -3,7 +3,7 @@ title: "url resource type"
 description: "Represents a Uniform Resource Locator (URL), which specifies the address of a web resource and includes the protocol, domain, path, and parameters."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 
