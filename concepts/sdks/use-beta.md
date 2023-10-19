@@ -99,7 +99,7 @@ The [Microsoft Graph JavaScript Client Library](https://github.com/microsoftgrap
       .get();
     ```
 
-
+---
 
 ## See also
 

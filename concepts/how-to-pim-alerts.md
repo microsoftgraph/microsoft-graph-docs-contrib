@@ -1,6 +1,6 @@
 ---
-title: "Manage security alerts for Azure AD roles using PIM APIs"
-description: "Learn how to manage security alerts for Azure AD roles using PIM APIs."
+title: "Manage security alerts for Microsoft Entra roles using PIM APIs"
+description: "Learn how to manage security alerts for Microsoft Entra roles using PIM APIs."
 author: FaithOmbongi
 ms.reviewer: rianakarim
 ms.localizationpriority: medium
@@ -9,15 +9,17 @@ ms.prod: "governance"
 ms.date: 09/27/2023
 ---
 
-# Manage security alerts for Azure AD roles using PIM APIs (preview)
 
-Privileged Identity Management (PIM) for Azure AD roles generates alerts when it detects suspicious or unsafe settings for Azure AD roles in your tenant. This article describes scenarios for managing PIM alerts using Microsoft Graph.
+# Manage security alerts for Microsoft Entra roles using PIM APIs 
 
-For more information about API resources for managing PIM security alerts, see [Security alerts for Azure AD roles](/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta&preserve-view=true#security-alerts-for-azure-ad-roles).
+
+Privileged Identity Management (PIM) for Microsoft Entra roles generates alerts when it detects suspicious or unsafe settings for Microsoft Entra roles in your tenant. This article describes scenarios for managing PIM alerts using Microsoft Graph.
+
+For more information about API resources for managing PIM security alerts, see [Security alerts for Microsoft Entra roles](/graph/api/resources/privilegedidentitymanagementv3-overview?view=graph-rest-beta&preserve-view=true#security-alerts-for-azure-ad-roles).
 
 ## Prerequisites
 
-+ Have an understanding of [PIM for Azure AD roles APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) or [PIM for groups APIs](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview).
++ Have an understanding of [PIM for Microsoft Entra roles APIs](/graph/api/resources/privilegedidentitymanagementv3-overview) or [PIM for groups APIs](/graph/api/resources/privilegedidentitymanagement-for-groups-api-overview).
 + In this article, you call the APIs in a [delegated scenario](/graph/auth-v2-user).
   + Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. Use an account with at least the *Privileged Role Administrator* role.
   + Grant yourself the *RoleManagementAlert.ReadWrite.Directory* delegated permission.
@@ -39,7 +41,7 @@ Consider moving this to the API Overview (replace existing) and keeping this art
 ### Request
 <!-- clarify this statement in the draft: All built-in roles are granted access to this operation.-->
 
-Only alerts relating to Azure AD built-in roles and scoped to the tenant are supported and can be retrieved using the following request. Not specifying the correct scope and scopeType returns a `400 Bad Request` error.
+Only alerts relating to Microsoft Entra built-in roles and scoped to the tenant are supported and can be retrieved using the following request. Not specifying the correct scope and scopeType returns a `400 Bad Request` error.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -760,7 +762,7 @@ The request returns a `204 No Content` response.
 
 ## Remediate an alert incident
 
-Remediating an alert incident means requesting Azure AD to apply the mitigationSteps that are defined in the alert definition. For example, if the alert definition recommends that you remove a user from a role, then remediating the incident means that Azure AD removes the user from the role.
+Remediating an alert incident means requesting Microsoft Entra ID to apply the mitigationSteps that are defined in the alert definition. For example, if the alert definition recommends that you remove a user from a role, then remediating the incident means that Microsoft Entra ID removes the user from the role.
 
 ### Request
 # [HTTP](#tab/http)
@@ -815,4 +817,4 @@ HTTP/1.1 200 OK
 
 ## See also
 
-+ [Tutorial: Assign Azure AD roles through PIM](tutorial-assign-azureadroles.md).
++ [Tutorial: Assign Microsoft Entra roles through PIM](tutorial-assign-azureadroles.md).

@@ -21,7 +21,7 @@ Represents a user in an attack simulation and training campaign.
 |displayName|String|Display name of the user.|
 |email|String|Email address of the user.|
 |outOfOfficeDays|Int32 | Number of days the user is OOF during a simulation journey/course of a campaign.|
-|userId|String|The **id** property value of the [user](../resources/user.md) resource that represents the user in the Azure Active Directory tenant.|
+|userId|String|The **id** property value of the [user](../resources/user.md) resource that represents the user in the Microsoft Entra tenant.|
 
 ## Relationships
 None.
@@ -42,4 +42,3 @@ The following is a JSON representation of the resource.
   "userId": "String"
 }
 ```
-

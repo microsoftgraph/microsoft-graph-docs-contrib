@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-The identity governance singleton is the container for the following Azure Active Directory identity governance features that are exposed through the following resources and APIs:
+The identity governance singleton is the container for the following Microsoft Entra ID Governance features that are exposed through the following resources and APIs:
 
 + [Access reviews](accessreviewsv2-overview.md)
 + [Entitlement management](entitlementmanagement-overview.md)

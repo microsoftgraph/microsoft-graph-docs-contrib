@@ -1,6 +1,6 @@
 ---
 title: "List programControlTypes (deprecated)"
-description: "In the Azure AD access reviews feature, list all the programControlType objects."
+description: "In the Microsoft Entra access reviews feature, list all the programControlType objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, list all the [programControlType](../resources/programcontroltype.md) objects.
+In the Microsoft Entra [access reviews](../resources/accessreviews-root.md) feature, list all the [programControlType](../resources/programcontroltype.md) objects.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -146,5 +146,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

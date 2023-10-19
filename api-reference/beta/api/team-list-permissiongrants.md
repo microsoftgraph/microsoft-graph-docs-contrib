@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [team](../resources/team.md). This list specifies the Azure AD apps that have access to the **team**, along with the corresponding kind of resource-specific access that each app has.
+List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [team](../resources/team.md). This list specifies the Microsoft Entra apps that have access to the **team**, along with the corresponding kind of resource-specific access that each app has.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 

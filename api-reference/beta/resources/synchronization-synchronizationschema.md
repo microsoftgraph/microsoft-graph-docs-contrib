@@ -19,7 +19,7 @@ The following sections describe the high-level components of the synchronization
 
 ## Directory definitions
 
-[Directory definitions](synchronization-directorydefinition.md) provide the synchronization engine information about directories and their objects. For example, the directory definition tells the synchronization engine that an Azure AD directory has objects named **user** and **group**, which attributes are supported for those objects, and the types for those attributes. In order for a particular object and attribute to be used in synchronization rules/object mappings, they have to be defined as part of the directory definition.
+[Directory definitions](synchronization-directorydefinition.md) provide the synchronization engine information about directories and their objects. For example, the directory definition tells the synchronization engine that a Microsoft Entra directory has objects named **user** and **group**, which attributes are supported for those objects, and the types for those attributes. In order for a particular object and attribute to be used in synchronization rules/object mappings, they have to be defined as part of the directory definition.
 
 ## Synchronization rules
 
@@ -77,5 +77,3 @@ Here's a JSON representation of the resource.
   "version": "String"
 }
 ```
-
-

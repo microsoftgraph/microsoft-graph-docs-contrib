@@ -20,7 +20,7 @@ This resource is the derivative of the [actionResultPart](actionresultpart.md) r
 
 | Property | Type	| Description |
 |:---------------|:--------|:----------|
-|userId|`String`|The user object ID of the Azure AD user that was being added as part of the bulk operation.|
+|userId|`String`|The user object ID of the Microsoft Entra user that was being added as part of the bulk operation.|
 |error|[publicError](publicerror.md) |The error that occurred, if any, during the course of the bulk operation.|
 
 ## JSON representation
@@ -55,5 +55,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

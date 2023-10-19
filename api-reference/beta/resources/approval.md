@@ -15,13 +15,13 @@ Namespace: microsoft.graph
 
 Represents the approval object for decisions associated with a request.
 
-In [Azure AD Entitlement Management](entitlementmanagement-overview.md), the approval object for decisions associated with the `accessPackageAssignmentRequest`. A single step request can have one step associated with it which approvers can act on. Similarly, a multi-step request can have multiple steps associated with it which approvers can act on. However, in multi-step approvals both pending and previously completed steps are shown.
+In [Microsoft Entra Entitlement Management](entitlementmanagement-overview.md), the approval object for decisions associated with the `accessPackageAssignmentRequest`. A single step request can have one step associated with it which approvers can act on. Similarly, a multi-step request can have multiple steps associated with it which approvers can act on. However, in multi-step approvals both pending and previously completed steps are shown.
 
 In [userConsentRequests](../resources/userconsentrequest.md), the approval object for decisions associated with a request.
 
 In [Role management](../resources/rolemanagement.md), the approval object for decisions to approve or deny role assignments.
 
-In [PIM for Azure AD roles](../resources/privilegedidentitymanagementv3-overview.md), the approval object for decisions to approve or deny requests to activate eligible roles.
+In [PIM for Microsoft Entra roles](../resources/privilegedidentitymanagementv3-overview.md), the approval object for decisions to approve or deny requests to activate eligible roles.
 
 In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), the approval object for decisions to approve or deny requests to activate group membership or ownership.
 
@@ -35,7 +35,7 @@ In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-ove
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The identifier of the approval object. <br/><li> In entitlement management, it is the same identifier as the identifier of the [access package assignment request](accesspackageassignmentrequest.md). <li>In PIM for Azure AD roles, it is the same identifier as the identifier of the [assignment schedule request](../resources/unifiedroleassignmentschedulerequest.md). <li>In PIM for groups, it is the same identifier as the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).|
+|id|String|The identifier of the approval object. <br/><li> In entitlement management, it is the same identifier as the identifier of the [access package assignment request](accesspackageassignmentrequest.md). <li>In PIM for Microsoft Entra roles, it is the same identifier as the identifier of the [assignment schedule request](../resources/unifiedroleassignmentschedulerequest.md). <li>In PIM for groups, it is the same identifier as the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).|
 
 ## Relationships
 |Relationship|Type|Description|
