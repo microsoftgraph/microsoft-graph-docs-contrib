@@ -21,22 +21,6 @@ A file storage container is a shared file storage space that can be used by a us
 * **Permissions** specifies the role a user is assigned to and the corresponding access privileges. 
 * **Status** specifies the current state of the container. Containers are created as inactive and require activation. Inactive containers are subjected to automatic deletion in 24 hours.
 
-## Permission roles enumeration
-
-|Role|Details|
-|:---|:---|
-|reader|Readers can read fileStorageContainer metadata and the content inside.|
-|writer|Writers can read and modify fileStorageContainer metadata and contents inside.|
-|manager|Managers can read and modify fileStorageContainer metadata and contents inside and manage the permissions to the container.|
-|owner|Owners can read and modify fileStorageContainer metadata and contents inside, manage permissions to containers, delete and restore containers.|
-
-## Container status enumeration
-
-|Status|Details|
-|:---|:---|
-|inactive|The container is inactive.|
-|active|The container is active.|
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -69,12 +53,28 @@ A file storage container is a shared file storage space that can be used by a us
 |status|fileStorageContainerStatus|Status of the fileStorageContainer. Read-only.|
 |viewpoint|[fileStorageContainerViewpoint](../resources/filestoragecontainerviewpoint.md)|Data specific to the current user. Read-only.|
 
+## status values
+
+|Member|Description|
+|:---|:---|
+|inactive|The container is inactive.|
+|active|The container is active.|
+
 ## Relationships
 
 |Relationship|Type|Description|
 |:---|:---|:---|
 |drive|[drive](../resources/drive.md)|The fileStorageContainer's drive resource. Read-only.|
-|permissions|[permission](../resources/permission.md)|Permissions of the users in the fileStorageContainer. Read-write.|
+|permissions|[permission](../resources/permission.md)|Permissions of users in the fileStorageContainer. The possible values are 'reader', 'writer', 'manager', 'owner'. Read-write.|
+
+## permissions values
+
+|Values|Description|
+|:---|:---|
+|reader|Readers can read fileStorageContainer metadata and the content inside.|
+|writer|Writers can read and modify fileStorageContainer metadata and contents inside.|
+|manager|Managers can read and modify fileStorageContainer metadata and contents inside and manage the permissions to the container.|
+|owner|Owners can read and modify fileStorageContainer metadata and contents inside, manage permissions to containers, delete and restore containers.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
