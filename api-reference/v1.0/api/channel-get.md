@@ -147,7 +147,7 @@ The following example shows a request to get the **channelSummary** property.
 
 <!-- {
   "blockType": "request",
-  "name": "get_channel",
+  "name": "get_channel_summary",
   "sampleKeys": ["893075dd-2487-4122-925f-022c42e20265", "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2"]
 }-->
 
