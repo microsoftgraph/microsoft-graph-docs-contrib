@@ -11,8 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-> [!IMPORTANT]
-> APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
 The **fileStorageContainerCustomPropertyValue** resource contains the custom property values stored in a [fileStorageContainerCustomPropertyDictionary](../resources/filestoragecontainercustompropertydictionary.md) resource.
