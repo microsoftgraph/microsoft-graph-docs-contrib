@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Get smsAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Read the properties and relationships of a [smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) object, which represents the SMS authentication method policy for the Azure AD tenant.
+Read the properties and relationships of a [smsAuthenticationMethodConfiguration](../resources/smsauthenticationmethodconfiguration.md) object, which represents the SMS authentication method policy for the Microsoft Entra tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -125,4 +125,3 @@ Content-Type: application/json
   }
 }
 ```
-
