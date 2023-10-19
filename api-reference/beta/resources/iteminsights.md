@@ -23,7 +23,7 @@ Each insight is returned with a `resourceVisualization` and `resourceReference` 
 
 ### Limiting item insights
 
-Update [insightsSettings](insightssettings.md) to disable item insights for a specific Azure AD group or an entire organization. For more details, see [customize insights privacy](/graph/insights-customize-item-insights-privacy).
+Update [insightsSettings](insightssettings.md) to disable item insights for a specific Microsoft Entra group or an entire organization. For more details, see [customize insights privacy](/graph/insights-customize-item-insights-privacy).
 
 ## Properties
 
@@ -61,5 +61,3 @@ Here is a JSON representation of the resource
   "shared": [ { "@odata.type": "microsoft.graph.shared" } ]
 }
 ```
-
-

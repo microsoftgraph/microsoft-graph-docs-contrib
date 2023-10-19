@@ -3,7 +3,7 @@ title: "Get forwardingPolicyLink"
 description: "Retrieve information about a specific link between a forwarding policy and a forwarding profile."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 

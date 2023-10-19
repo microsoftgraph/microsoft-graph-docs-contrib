@@ -59,7 +59,9 @@ If successful, this method returns a `200 OK` response code and a stringKeyStrin
 
 ## Examples
 
-### Example 1: Provision users from Azure AD to third-party applications
+<a name='example-1-provision-users-from-azure-ad-to-third-party-applications'></a>
+
+### Example 1: Provision users from Microsoft Entra ID to third-party applications
 
 #### Request
 
@@ -141,7 +143,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Sync on-demand from Active Directory to Azure Active Directory (Azure AD cloud sync)
+<a name='example-2-sync-on-demand-from-active-directory-to-azure-active-directory-azure-ad-cloud-sync'></a>
+
+### Example 2: Sync on-demand from Active Directory to Microsoft Entra ID (Microsoft Entra Cloud Sync)
 
 #### Request
 
@@ -318,4 +322,3 @@ Content-Type: application/json
     "value": "{}"
 }
 ```
-

@@ -1,6 +1,6 @@
 ---
 title: "signIn: confirmCompromised"
-description: "Allow admins to mark Azure AD sign in events as risky for Azure AD Identity Protection."
+description: "Allow admins to mark Microsoft Entra sign-in events as risky for Microsoft Entra ID Protection."
 author: "egreenberg14"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Allow admins to mark an event in the Azure AD sign in logs as risky. Events marked as risky by an admin are immediately flagged as high risk in Azure AD Identity Protection, overriding previous risk states. Admins can confirm that events flagged as risky by Azure AD Identity Protection are in fact risky.
+Allow admins to mark an event in the Microsoft Entra sign-in logs as risky. Events marked as risky by an admin are immediately flagged as high risk in Microsoft Entra ID Protection, overriding previous risk states. Admins can confirm that events flagged as risky by Microsoft Entra ID Protection are in fact risky.
 
 For details about investigating Identity Protection risks, see [How to investigate risk](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk).
 
@@ -50,7 +50,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|requestIds|String collection|The IDs of the sign in events that should be marked risky for Azure AD Identity Protection.|
+|requestIds|String collection|The IDs of the sign in events that should be marked risky for Microsoft Entra ID Protection.|
 
 
 
@@ -124,4 +124,3 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 204 No Content
 ```
-
