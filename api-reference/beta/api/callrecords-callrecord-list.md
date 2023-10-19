@@ -44,7 +44,7 @@ This method supports the following OData query parameters to help customize the 
 | Name      |Description|
 |:----------|:----------|
 | $select | Use the `$select` query parameter to return a set of properties that are different than the default set for an individual resource or a collection of resources. |
-| $filter | Use the `$filter` query parameter to retrieve just a subset of a collection. Only supported for `startDateTime` and participant `participants_v2.id` fields. |
+| $filter | Use the `$filter` query parameter to retrieve just a subset of a collection. Only supported for `startDateTime` (`lt`,`le`,`gt`,`ge`) and participant `participants_v2.id` (`eq`) fields. |
 
 
 ## Request headers
@@ -73,7 +73,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_callrecord"
+  "name": "list_callrecords"
 }-->
 
 ```msgraph-interactive
@@ -171,7 +171,7 @@ Content-type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_callrecord_expanded"
+  "name": "list_callrecords_filter_by_startDateTime"
 }-->
 
 ```msgraph-interactive
@@ -240,7 +240,7 @@ Content-type: application/json
 
 <!-- {
   "blockType": "request",
-  "name": "get_callrecord_expanded"
+  "name": "list_callrecords_filter_by_participant"
 }-->
 
 ```msgraph-interactive

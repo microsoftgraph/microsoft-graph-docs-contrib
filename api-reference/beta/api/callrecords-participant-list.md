@@ -72,7 +72,7 @@ Here's an example of the request to get the list of [participants](../resources/
 
 <!-- {
   "blockType": "request",
-  "name": "get_callrecord_sessions"
+  "name": "list_callrecord_participants_v2"
 }-->
 
 ```msgraph-interactive

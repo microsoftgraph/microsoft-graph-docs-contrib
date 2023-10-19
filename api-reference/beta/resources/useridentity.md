@@ -13,14 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-For the Azure AD [access reviews](accessreviews-root.md), this type represents an Azure AD user identity for a creator or reviewer of an access review.
-In the context of an Azure AD audit log, this represents the user information that initiated or was affected by an audit activity.
+In the context of an Azure AD audit log, the resource represents the user information that initiated or was affected by an audit activity. In the context of [callRecords](callrecords-callrecord.md), this resource is used to reflect the identity of a [participant](callrecords-participant.md) or [organizer](callrecords-organizer.md) in a call.
 
-This type inherits from [identity](identity.md) and has one additional property, the user principal name of the user.
-
-## Methods
-
-None.  You would include objects of this type in the body of a request when [creating an accessReview](../api/accessreview-create.md).
+This type inherits from the [identity](identity.md) resource.
 
 ## Properties
 
@@ -31,21 +26,7 @@ None.  You would include objects of this type in the body of a request when [cre
 | ipAddress         | String | Indicates the client IP address used by user performing the activity (audit log only). |
 | userPrincipalName | String | The userPrincipalName attribute of the user.                                           |
 
-### Remarks
-
-In some circumstances, the unique identifier for the actor may not be available. In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.
-
-## Relationships
-
-None.
-
-## See also
-
-| Method                                                                | Return Type                                | Description                             |
-|:----------------------------------------------------------------------|:-------------------------------------------|:----------------------------------------|
-| [Get accessReview reviewers](../api/accessreview-listreviewers.md)    | [userIdentity](useridentity.md) collection | Get the reviewers of an accessReview.   |
-| [Add accessReview reviewer](../api/accessreview-addreviewer.md)       | None.                                      | Add a reviewer to an accessReview.      |
-| [Remove accessReview reviewer](../api/accessreview-removereviewer.md) | None.                                      | Remove a reviewer from an accessReview. |
+> **Note:** In some cases, the unique identifier might not be available. In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.
 
 ## JSON representation
 

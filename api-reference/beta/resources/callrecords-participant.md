@@ -24,7 +24,7 @@ Represents the identity of a participant in a [callRecord](callrecords-callrecor
 
 | Property    | Type                          | Description                                               |
 |:------------|:------------------------------|:----------------------------------------------------------|
-| id          | String                        | Optional. Unique identifier for the call participant.     |
+| id          | String                        | Unique identifier for the call participant.     |
 | identity    | [identitySet](identityset.md) | Optional. The identity of the call participant.           |
 
 

@@ -18,7 +18,7 @@ Represents the identity of a call or meeting organizer in a [callRecord](callrec
 
 | Property    | Type                       | Description                                             |
 |:---------|:------------------------------|:--------------------------------------------------------|
-| id       | String                        | Optional. Unique identifier for the call organizer.     |
+| id       | String                        | Unique identifier for the call organizer.     |
 | identity | [identitySet](identityset.md) | Optional. The identity of the call organizer.           |
 
 
