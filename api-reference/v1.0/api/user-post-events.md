@@ -7,7 +7,7 @@ author: "iamgirishck"
 ms.prod: "outlook"
 ---
 
-# Create Event
+# Create event
 
 Namespace: microsoft.graph
 
