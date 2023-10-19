@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 > [!IMPORTANT]
 > APIs under the `/beta` version in Microsoft Graph are subject to change. Use of these APIs in production applications is not supported. To determine whether an API is available in v1.0, use the **Version** selector.
 
-Retrieve the list of [fileStorageContainer](../resources/filestoragecontainer.md) objects visible to the caller. ContainerTypeId filter parameter is required. The application calling these APIs must have permission to read fileStorageContainers for the respective container type.
+Retrieve the list of [fileStorageContainer](../resources/filestoragecontainer.md) objects visible to the caller. The containerTypeId filter parameter is required. The application calling these APIs must have permissions to read fileStorageContainers for the respective container type.
+
 
 Note: Only a limited subset of properties will be returned for each fileStorageContainer. $expand operation is not supported for drive, permissions and customProperties properties.
 
