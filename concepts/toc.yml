@@ -263,7 +263,7 @@ items:
       - name: Compliance
         href: compliance-concept-overview.md
       - name: Connecting external content
-        items:
+        items: 
           - name: Connectors overview
             href: connecting-external-content-connectors-overview.md
             displayName: Microsoft Graph connectors, connect external content
@@ -279,6 +279,14 @@ items:
           - name: Build your first custom connector
             href: connecting-external-content-build-quickstart.yml
             displayName: connectors, Microsoft Graph connectors
+          - name: Connectors samples
+            items: 
+              - name: C# Github connector sample 
+                href: samples/microsoftgraph/msgraph-sample-github-connector-dotnet/microsoft-graph-github-connector-sample
+              - name: Typescript Github connector sample
+                href: samples/microsoftgraph/msgraph-sample-github-connector-typescript/microsoft-graph-typescript-github-connector-sample
+              - name: Search connector sample
+                href: samples/microsoftgraph/msgraph-search-connector-sample/microsoft-graph-search-connector-sample
           - name: Build your first custom connector using SDK
             items:
               - name: Overview
