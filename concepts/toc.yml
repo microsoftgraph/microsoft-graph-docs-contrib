@@ -280,13 +280,7 @@ items:
             href: connecting-external-content-build-quickstart.yml
             displayName: connectors, Microsoft Graph connectors
           - name: Connectors samples
-            items: 
-              - name: C# Github connector sample 
-                href: samples/microsoftgraph/msgraph-sample-github-connector-dotnet/microsoft-graph-github-connector-sample
-              - name: Typescript Github connector sample
-                href: samples/microsoftgraph/msgraph-sample-github-connector-typescript/microsoft-graph-typescript-github-connector-sample
-              - name: Search connector sample
-                href: samples/microsoftgraph/msgraph-search-connector-sample/microsoft-graph-search-connector-sample
+            href: /samples/browse/?products=microsoft-graph-connectors-api
           - name: Build your first custom connector using SDK
             items:
               - name: Overview
