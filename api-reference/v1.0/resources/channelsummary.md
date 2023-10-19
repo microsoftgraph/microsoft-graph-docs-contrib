@@ -2,7 +2,7 @@
 title: "channelSummary resource type"
 description: "Contains information about a channel in Microsoft Teams, including numbers of guests, members, and owners, and whether the channel includes members from other tenants."
 ms.localizationpriority: medium
-author: "sonalikallanimicrosoft"
+author: "rupanshoo"
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
