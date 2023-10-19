@@ -168,6 +168,7 @@ The following example shows the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('8bb12236-b929-42e0-94a0-1c417466ebf8')/channels(summary)/$entity",
     "summary":{
