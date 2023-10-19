@@ -61,7 +61,7 @@ For more information on how retention labels work, when to use them, and how Mic
 
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
