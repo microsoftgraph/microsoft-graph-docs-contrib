@@ -35,7 +35,7 @@ Inherits from [microsoft.graph.security.filePlanDescriptorTemplate](../resources
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
