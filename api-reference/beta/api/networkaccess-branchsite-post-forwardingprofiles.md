@@ -3,7 +3,7 @@ title: "Assign a forwardingProfile to a branchSite"
 description: "Create a new branch and assign a forwarding profile."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 

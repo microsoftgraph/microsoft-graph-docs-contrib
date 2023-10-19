@@ -1,23 +1,23 @@
 ---
-title: "Azure AD access reviews"
-description: "Use Azure AD access reviews to configure one-time or recurring access reviews for attestation of a principal's access rights to Azure AD resources."
+title: "Microsoft Entra access reviews"
+description: "Use Microsoft Entra access reviews to configure one-time or recurring access reviews for attestation of a principal's access rights to Microsoft Entra resources."
 ms.localizationpriority: medium
 author: "jyothig123"
 ms.prod: "governance"
 doc_type: conceptualPageType
 ---
 
-# Azure AD access reviews
+# Microsoft Entra access reviews
 
 Namespace: microsoft.graph
 
-Use Azure AD access reviews to configure one-time or recurring access reviews for attestation of a principal's right to access Azure AD resources. The principals are users or applications (service principals). The Azure AD resources include groups, applications (service principals), access packages, and privileged roles. Access reviews is a feature of Azure AD Identity Governance.
+Use Microsoft Entra access reviews to configure one-time or recurring access reviews for attestation of a principal's right to access Microsoft Entra resources. The principals are users or applications (service principals). The Microsoft Entra resources include groups, applications (service principals), access packages, and privileged roles. Access reviews is a feature of Microsoft Entra ID Governance.
 
 Typical customer scenarios for access reviews include:
 
 - Customers can review and certify guest user access to groups through group memberships. Reviewers can use the insights that are provided to efficiently decide whether guests should have continued access.
-- Customers can review and certify employee access to Azure AD resources.
-- Customers can review and audit assignments to Azure AD privileged roles. This supports organizations in the management of privileged access.
+- Customers can review and certify employee access to Microsoft Entra resources.
+- Customers can review and audit assignments to Microsoft Entra ID privileged roles. This supports organizations in the management of privileged access.
 
 The tenant where an access review is being created or managed via the API must have sufficient purchased or trial licenses. For more information about the license requirements, see [Access reviews license requirements](/azure/active-directory/governance/access-reviews-overview#license-requirements).
 
@@ -60,7 +60,7 @@ The following table lists the methods that you can use to interact with access r
 
 ## Role and application permission authorization checks
 
-The following [Azure AD roles](/azure/active-directory/roles/permissions-reference) are required for a calling user to manage access reviews.
+The following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference) are required for a calling user to manage access reviews.
 
 | Operation | Application permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|
@@ -72,7 +72,7 @@ In addition, a user who is an assigned reviewer of an access review can manage t
 ## See also
 
 
-- [Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview)
-- [Tutorials](/graph/accessreviews-overview) to learn how to use the access reviews API to review access to Azure AD resources
-- [How an administrator can manage user access with Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
-- [How an administrator can manage guest access with Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)
+- [Microsoft Entra access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview)
+- [Tutorials](/graph/accessreviews-overview) to learn how to use the access reviews API to review access to Microsoft Entra resources
+- [How an administrator can manage user access with Microsoft Entra access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-user-access-with-access-reviews)
+- [How an administrator can manage guest access with Microsoft Entra access reviews](/azure/active-directory/active-directory-azure-ad-controls-manage-guest-access-with-access-reviews)

@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Reset the sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
 
-> **Note:** This operation will cause synchronization to restart. Any errors encountered will be deleted. No data will be deleted from Azure Active Directory (Azure AD). 
+> **Note:** This operation will cause synchronization to restart. Any errors encountered will be deleted. No data will be deleted from Microsoft Entra ID. 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -113,5 +113,3 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
-
-

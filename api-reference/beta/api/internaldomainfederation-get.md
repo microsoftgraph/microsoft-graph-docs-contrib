@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Domain.Read.All, Domain.ReadWrite.All|
 
-The calling user must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+The calling user must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
 
 - Security Administrator
 - External Identity Provider Administrator
@@ -139,4 +139,3 @@ Content-Type: application/json
   }
 }
 ```
-
