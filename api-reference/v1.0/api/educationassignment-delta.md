@@ -8,6 +8,7 @@ doc_type: apiPageType
 ---
 
 # educationAssignment: delta
+
 Namespace: microsoft.graph
 
 Get a list of newly created or updated [assignments](../resources/educationassignment.md) without having to perform a full read of the collection.
@@ -19,15 +20,17 @@ A teacher or an application running with application permissions can see all **a
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)                                                            |
-| :------------------------------------- | :----------------------------------------------------------------------------------------------------- |
-| Delegated (work or school account)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
-| Delegated (personal Microsoft account) | Not supported.                                                                                         |
+| Permission type                        | Permissions (from least to most privileged)                                                                            |
+| :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------- |
+| Delegated (work or school account)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite                 |
+| Delegated (personal Microsoft account) | Not supported.                                                                                                         |
 | Application                            | EduAssignments.ReadBasic.All, EduAssignments.ReadWriteBasic.All, EduAssignments.Read.All, EduAssignments.ReadWrite.All |
 
 ## Optional query parameters
+
 This method only supports the `$top` OData query parameter.
 
 ## HTTP request
@@ -36,17 +39,20 @@ This method only supports the `$top` OData query parameter.
   "blockType": "ignored"
 }
 -->
-``` http
+
+```http
 GET /education/classes/{educationClassId}/assignments/delta
 GET /education/classes/{educationClassId}/members/{educationUserId}/assignments/delta
 ```
 
 ## Request headers
-|Name|Description|
-|:---|:---|
-|Authorization|Bearer {token}. Required.|
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -63,8 +69,8 @@ The following is an example of the request.
 
 Use the `$top` parameter to specify the number of assignments to be returned. The parameter is optional. Use it when you have a long list of assignments; otherwise, you will get all the assignments in the class.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_assignments_delta_query_support"
@@ -75,34 +81,42 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 ```
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-assignments-delta-query-support-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
+
 [!INCLUDE [sample-code](../includes/snippets/cli/get-assignments-delta-query-support-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/get-assignments-delta-query-support-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-assignments-delta-query-support-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-assignments-delta-query-support-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
+
 [!INCLUDE [sample-code](../includes/snippets/php/get-assignments-delta-query-support-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-delta-query-support-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
+
 [!INCLUDE [sample-code](../includes/snippets/python/get-assignments-delta-query-support-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -110,9 +124,9 @@ GET https://graph.microsoft.com/v1.0/education/classes/72a7baec-c3e9-4213-a850-f
 
 #### Response
 
-The following is an example of the response. 
+The following is an example of the response.
 
->**Note:** Take the `@odata.nextLink` from the response to make another call and get the next set of assignments.
+> **Note:** Take the `@odata.nextLink` from the response to make another call and get the next set of assignments.
 
 <!-- {
   "blockType": "response",
@@ -230,8 +244,8 @@ The following is an example of the request.
 
 Use the `@odata.nextLink` value from the previous call for this request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_assignments_delta_nextlink"
@@ -242,34 +256,42 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$s
 ```
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-assignments-delta-nextlink-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
+
 [!INCLUDE [sample-code](../includes/snippets/cli/get-assignments-delta-nextlink-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/get-assignments-delta-nextlink-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-assignments-delta-nextlink-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-assignments-delta-nextlink-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
+
 [!INCLUDE [sample-code](../includes/snippets/php/get-assignments-delta-nextlink-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-delta-nextlink-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
+
 [!INCLUDE [sample-code](../includes/snippets/python/get-assignments-delta-nextlink-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -279,7 +301,7 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$s
 
 The following is an example of the response.
 
->**Note:** You must continue using the `@odata.nextLink` value for the subsequent calls until you get the `@odata.deltaLink` property in the response.
+> **Note:** You must continue using the `@odata.nextLink` value for the subsequent calls until you get the `@odata.deltaLink` property in the response.
 
 <!-- {
   "blockType": "response",
@@ -397,8 +419,8 @@ The following is an example of the request.
 
 Use the `@odata.deltaLink` value from the previous call for this request.
 
-
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_assignments_delta_delatlink"
@@ -409,34 +431,42 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$d
 ```
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-assignments-delta-delatlink-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
+
 [!INCLUDE [sample-code](../includes/snippets/cli/get-assignments-delta-delatlink-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
+
 [!INCLUDE [sample-code](../includes/snippets/go/get-assignments-delta-delatlink-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-assignments-delta-delatlink-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-assignments-delta-delatlink-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
+
 [!INCLUDE [sample-code](../includes/snippets/php/get-assignments-delta-delatlink-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
+
 [!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-delta-delatlink-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
+
 [!INCLUDE [sample-code](../includes/snippets/python/get-assignments-delta-delatlink-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -446,9 +476,9 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments/delta?$d
 
 The following is an example of the response.
 
->**Note:** You must continue using the `@odata.deltaLink` to get the newly created or modified assignments since the initial delta call.
+> **Note:** You must continue using the `@odata.deltaLink` to get the newly created or modified assignments since the initial delta call.
 
->**Note:** The delta response might be large, in which case an `@odata.nextLink` is returned. Continue fetching changes until you hit an `@odata.deltaLink` again.
+> **Note:** The delta response might be large, in which case an `@odata.nextLink` is returned. Continue fetching changes until you hit an `@odata.deltaLink` again.
 
 <!-- {
   "blockType": "response",
@@ -513,24 +543,29 @@ Content-length: 344
     ]
 }
 ```
+
 ### Example 4: Using `$select` to get selected data
 
 #### Request
+
 The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070",  
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
   "name": "get_assignment_delta_with_select"
 }-->
+
 ```msgraph-interactive
 
 GET https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/delta?$select=displayName,id
 ```
-### Response
-The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability.
+### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -538,9 +573,11 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.educationAssignment",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(educationAssignment)",
     "@odata.nextLink": "https://graph.microsoft.com/v1.0/education/classes/37d99af7-cfc5-4e3b-8566-f7d40e4a2070/assignments/delta?$skiptoken=U43TyYWKlRvJ6wWxZOfJvkp22nMqShRw9f-GxBtG2FBcWCIKOSenQFv_rF12_tcPmr6GwzMmFb15rLKFgPCB9AMyomQQBsp8rpPB7REHVRY72dH9ygXt_v5J1THi6kEL_8e3gkl9GNBOgD75V4zUe2HWxrbhLZJFQSSRKQZ0t17wpjUSGULoPPeRrR5w4jWj3547BmlwhJydTPtrNqhNhgpWiDkoyMdfMlb4-T0uqrk.kp0pIEG4F09nMMbrh4ww0iChxBI7LqWNS6y2zQK3w7E",
