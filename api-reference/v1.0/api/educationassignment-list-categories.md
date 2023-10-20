@@ -32,7 +32,7 @@ GET /education/classes/{id}/assignments/{id}/categories
 
 This method supports the `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-All [properties](/graph/api/resources/educationeducationcategory#properties) are supported for the query parameters `$filter` and `$orderby`.
+All [properties](../resources/educationresources.md#properties) are supported for the query parameters `$filter` and `$orderby`.
 
 ## Request headers
 | Header       | Value |
@@ -121,7 +121,6 @@ Content-type: application/json
 #### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["77c30802-3e00-4e91-975f-f2aaa2c5a569","c3307ea8-1343-4109-aeb9-92b9a74bf131"],  

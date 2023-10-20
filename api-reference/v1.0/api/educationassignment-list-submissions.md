@@ -37,7 +37,7 @@ This method supports the `$filter`,'$top', and `$select` OData query parameters 
 
 The following are the available `$expand` options for this method: `outcomes`, `resources`, `submittedResources`, and `*`, which includes all the previous options.
 
-All [properties](/graph/api/resources/educationassignmentsubmissions#properties) are supported for the query parameters `$filter` and `$orderby`.
+All [properties](../resources/educationresources.md#properties) are supported for the query parameters `$filter` and `$orderby`.
 
 ## Request headers
 | Header       | Value |
@@ -324,7 +324,6 @@ Content-length: 4492
 ### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["237d99af7-cfc5-4e3b-8566-f7d40e4a2070","a3cce0ba-2008-4c4d-bf62-079408562d96"],
