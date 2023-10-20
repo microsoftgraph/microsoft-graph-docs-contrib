@@ -31,8 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 To get a list of deviceLocalCredentialInfo within the tenant:
 
 > [!CAUTION]
-> We're introducing breaking changes where the `GET /deviceLocalCredentials` endpoint will be deprecated at the end of 2023. Use the `GET /directory/deviceLocalCredentials` endpoint instead.
->
+>  The `GET /deviceLocalCredentials` endpoint will be deprecated on December 31, 2023. Use the `GET /directory/deviceLocalCredentials` endpoint instead.
  
 <!-- {
   "blockType": "ignored"
