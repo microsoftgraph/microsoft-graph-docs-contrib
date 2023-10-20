@@ -1,6 +1,6 @@
 ---
 title: "deviceLocalCredentialInfo resource type"
-description: "Represents local administrator credential information for all device objects in Azure Active Directory that are enabled with Local Admin Password Solution (LAPS)."
+description: "Represents local administrator credential information for all device objects in Microsoft Entra ID that are enabled with Local Admin Password Solution (LAPS)."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents local administrator credential information for all device objects in Azure Active Directory that are enabled with Local Admin Password Solution (LAPS).
+Represents local administrator credential information for all device objects in Microsoft Entra ID that are enabled with Local Admin Password Solution (LAPS).
 
 ## Methods
 |Method|Return type|Description|
@@ -27,8 +27,8 @@ Represents local administrator credential information for all device objects in 
 |credentials|[deviceLocalCredential](../resources/devicelocalcredential.md) collection|The credentials of the device's local administrator account backed up to Azure Active Directory.|
 |deviceName|String|Display name of the device that the local credentials are associated with.|
 |id|String| ID of the device that the local credentials are associated with Key. This is same as **deviceId** in the [device](device.md) object.|
-|lastBackupDateTime|DateTimeOffset|When the local administrator account credential was backed up to Azure Active Directory.|
-|refreshDateTime|DateTimeOffset|When the local administrator account credential is refreshed up to Azure Active Directory.|
+|lastBackupDateTime|DateTimeOffset|When the local administrator account credential was backed up to Microsoft Entra ID.|
+|refreshDateTime|DateTimeOffset|When the local administrator account credential will be refreshed and backed up to Microsoft Entra ID.|
 
 
 ## Relationships

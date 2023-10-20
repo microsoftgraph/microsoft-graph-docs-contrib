@@ -1,5 +1,5 @@
 ---
-title: "Create Event"
+title: "Create event"
 description: "Create an event in the user's default calendar or specified calendar."
 ms.localizationpriority: high
 doc_type: apiPageType
@@ -7,7 +7,7 @@ author: "iamgirishck"
 ms.prod: "outlook"
 ---
 
-# Create Event
+# Create event
 
 Namespace: microsoft.graph
 
