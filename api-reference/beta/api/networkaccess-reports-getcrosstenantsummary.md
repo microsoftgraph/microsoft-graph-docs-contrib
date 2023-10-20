@@ -3,7 +3,7 @@ title: "reports: getCrossTenantSummary"
 description: "A summary of counts of the organization's devices accessing other tenants than your tenant."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
