@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 > [!IMPORTANT]
 >
-> To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and assign it to a the organizer/coorganizer of the webinar. The list of results will only contain webinars of which the organizer/co-organizer has been assigned an valid application access policy.
+> To use application permission for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to the specified user to authorize the app to get webinars on behalf of that user.
 
 ## HTTP request
 

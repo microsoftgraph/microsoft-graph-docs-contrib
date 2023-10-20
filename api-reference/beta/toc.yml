@@ -17567,9 +17567,9 @@ items:
                     items:
                       - name: Get
                         href: api/virtualeventwebinar-get.md
-                      - name: GetByUserRole()
+                      - name: GetByUserRole
                         href: api/virtualeventwebinar-getbyuserrole.md
-                      - name: GetByUserIdAndRole()
+                      - name: GetByUserIdAndRole
                         href: api/virtualeventwebinar-getbyuseridandrole.md
                   - name: Session
                     href: resources/virtualeventsession.md
