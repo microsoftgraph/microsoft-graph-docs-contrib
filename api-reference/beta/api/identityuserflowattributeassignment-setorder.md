@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Set the order of identityUserFlowAttributeAssignments being collected within a user flow.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

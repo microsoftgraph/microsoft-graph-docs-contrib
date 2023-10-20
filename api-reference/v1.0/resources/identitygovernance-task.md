@@ -1,6 +1,6 @@
 ---
 title: "task resource type (lifecycle workflow tasks)"
-description: "Represents the built-in and custom tasks within workflows in Azure AD Lifecycle Workflows."
+description: "Represents the built-in and custom tasks within workflows in Microsoft Entra Lifecycle Workflows."
 author: "AlexFilipin"
 ms.localizationpriority: medium
 ms.prod: "governance"

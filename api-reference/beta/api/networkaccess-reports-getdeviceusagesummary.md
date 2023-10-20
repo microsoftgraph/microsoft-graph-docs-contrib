@@ -3,7 +3,7 @@ title: "reports: getDeviceUsageSummary"
 description: "Device Usage Summary report is a summary of counts around the area of the onboarding and offboarding of the organization devices to the Global Secure Access client."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 

@@ -24,7 +24,7 @@ Inherits from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrole
 |id|String|The identifier of the alert configuration. Inherited from [entity](../resources/entity.md).|
 |isEnabled|Boolean|`true` if the alert is enabled. Setting it to `false` disables PIM scanning the tenant to identify instances that trigger this alert. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
 |scopeId|String|The identifier of the scope to which the alert is related. Only `/` is supported to represent the tenant scope. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md). Supports `$filter` (`eq`, `ne`).|
-|scopeType|String|The type of scope where the alert is created. `DirectoryRole` is the only currently supported scope type for Azure AD roles. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
+|scopeType|String|The type of scope where the alert is created. `DirectoryRole` is the only currently supported scope type for Microsoft Entra roles. Inherited from [unifiedRoleManagementAlertConfiguration](../resources/unifiedrolemanagementalertconfiguration.md).|
 |sequentialActivationCounterThreshold|Int32|The minimum number of activations within the timeIntervalBetweenActivations period to trigger an alert.|
 |timeIntervalBetweenActivations|Duration|Time interval between activations to trigger an alert.|
 
@@ -55,4 +55,3 @@ The following is a JSON representation of the resource.
   "sequentialActivationCounterThreshold": "Integer"
 }
 ```
-
