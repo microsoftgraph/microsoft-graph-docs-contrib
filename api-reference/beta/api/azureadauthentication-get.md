@@ -1,6 +1,6 @@
 ---
 title: "Get azureADAuthentication"
-description: "Read the properties and relationships of an azureADAuthentication object to find Azure AD SLA attainment for your tenant."
+description: "Read the properties and relationships of an azureADAuthentication object to find Microsoft Entra SLA attainment for your tenant."
 author: "SarahBar"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the properties and relationships of an [azureADAuthentication](../resources/azureadauthentication.md) object to find the level of Azure AD authentication availability for your tenant. The Azure AD Service Level Agreement (SLA) commits to at least 99.99% authentication availability, as described in [Azure Active Directory SLA performance](/azure/active-directory/reports-monitoring/reference-azure-ad-sla-performance). This object provides you with your tenant’s actual performance against this commitment.
+Read the properties and relationships of an [azureADAuthentication](../resources/azureadauthentication.md) object to find the level of Microsoft Entra authentication availability for your tenant. The Microsoft Entra service Level Agreement (SLA) commits to at least 99.99% authentication availability, as described in [Microsoft Entra SLA performance](/azure/active-directory/reports-monitoring/reference-azure-ad-sla-performance). This object provides you with your tenant’s actual performance against this commitment.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Reports.Read.All |
 
-In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):
+In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference):
 + Global Administrator
 + Global Reader
 + Reports Reader

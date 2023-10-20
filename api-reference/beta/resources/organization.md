@@ -1,6 +1,6 @@
 ---
 title: "organization resource type"
-description: "Represents an Azure Active Directory tenant. "
+description: "Represents a Microsoft Entra tenant. "
 ms.localizationpriority: medium
 author: "adimitui"
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Azure Active Directory tenant that the user or application is signed in to. Only the read and update operations are supported on this resource; create and delete are not supported. Inherits from [directoryObject](directoryobject.md).
+Represents the Microsoft Entra tenant that the user or application is signed in to. Only the read and update operations are supported on this resource; create and delete are not supported. Inherits from [directoryObject](directoryobject.md).
 
 ## Methods
 
@@ -50,7 +50,7 @@ Represents the Azure Active Directory tenant that the user or application is sig
 | countryLetterCode | String | Country or region abbreviation for the organization in ISO 3166-2 format. |
 | createdDateTime | DateTimeOffset | Timestamp of when the organization was created. The value cannot be modified and is automatically populated when the organization is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 | defaultUsageLocation | String | Two-letter ISO 3166 country code indicating the default service usage location of an organization. |
-| deletedDateTime | DateTimeOffset | Represents date and time of when the Azure AD tenant was deleted using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
+| deletedDateTime | DateTimeOffset | Represents date and time of when the Microsoft Entra tenant was deleted using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 | directorySizeQuota | [directorySizeQuota](directorySizeQuota.md) | The directory size quota information of an organization. |
 | displayName | String | The display name for the tenant. |
 | id | String | The tenant ID, a unique identifier representing the organization (or tenant). Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |

@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents ticket information related to assignment and eligibility requests in [PIM for Azure AD roles](privilegedidentitymanagementv3-overview.md) and [PIM for Groups](privilegedidentitymanagement-for-groups-api-overview.md). Use this object to define ticket parameters for an assignment or eligibility request that's initiated by another request made in an external system.
+Represents ticket information related to assignment and eligibility requests in [PIM for Microsoft Entra roles](privilegedidentitymanagementv3-overview.md) and [PIM for Groups](privilegedidentitymanagement-for-groups-api-overview.md). Use this object to define ticket parameters for an assignment or eligibility request that's initiated by another request made in an external system.
 
 ## Properties
 |Property|Type|Description|
@@ -36,4 +36,3 @@ The following is a JSON representation of the resource.
   "ticketSystem": "String"
 }
 ```
-
