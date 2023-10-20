@@ -528,7 +528,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["237d99af7-cfc5-4e3b-8566-f7d40e4a2070","a3cce0ba-2008-4c4d-bf62-079408562d96"],
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070","a3cce0ba-2008-4c4d-bf62-079408562d96"],
   "name": "get_submissions_with_filter"
 }-->
 

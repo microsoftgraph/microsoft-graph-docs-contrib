@@ -552,7 +552,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070",
+  "sampleKeys": ["37d99af7-cfc5-4e3b-8566-f7d40e4a2070"],
   "name": "get_assignment_delta_with_select"
 }-->
 

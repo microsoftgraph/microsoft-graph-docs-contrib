@@ -170,6 +170,7 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('77c30802-3e00-4e91-975f-f2aaa2c5a569')/assignments('c3307ea8-1343-4109-aeb9-92b9a74bf131')/categories",
     "value": [

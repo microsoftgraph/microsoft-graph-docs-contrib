@@ -136,6 +136,8 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('f4a941ff-9da6-4707-ba5b-0eae93cad0b4')/assignments('9018ae7a-9953-4796-a152-4c54e0910922')/resources",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET education/classes('<f4a941ff-9da6-4707-ba5b-0eae93cad0b4>')/assignments('<9018ae7a-9953-4796-a152-4c54e0910922>')/resources?$select=distributeForStudentWork,resource",
     "value": [
         {
             "distributeForStudentWork": false,
