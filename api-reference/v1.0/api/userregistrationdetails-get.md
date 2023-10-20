@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [userRegistrationDetails](../resources/userregistrationdetails.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

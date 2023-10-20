@@ -1,6 +1,6 @@
 ---
 title: "userIdentity type"
-description: "Represents an Azure AD user identity for a reviewer of an access review."
+description: "Represents a Microsoft Entra user identity for a reviewer of an access review."
 ms.localizationpriority: medium
 author: "jyothig123"
 ms.prod: "governance"
@@ -21,7 +21,7 @@ This type inherits from the [identity](identity.md) resource.
 
 | Property          | Type   | Description                                                                            |
 |:------------------|:-------|:---------------------------------------------------------------------------------------|
-| displayName       | String | The identity's display name. This may not always be available or up-to-date. |
+| displayName       | String | The identity's display name. This might not always be available or up-to-date. |
 | id                | String | Unique identifier for the identity. Nullable.                                                   |
 | ipAddress         | String | Indicates the client IP address used by user performing the activity (audit log only). |
 | userPrincipalName | String | The userPrincipalName attribute of the user.                                           |
@@ -60,5 +60,3 @@ Here's a JSON representation of the type.
   "suppressions": []
 }
 -->
-
-

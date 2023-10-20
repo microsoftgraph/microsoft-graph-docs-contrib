@@ -32,13 +32,13 @@ In this article, we'll discuss how Microsoft Graph supports extending its resour
 Microsoft Graph offers four types of extensions for adding custom data.
 
 - Extension attributes
-- Directory (Azure AD) extensions
+- Directory (Microsoft Entra ID) extensions
 - Schema extensions
 - Open extensions
 
 ## Extension attributes
 
-Azure AD offers a set of 15 extension attributes with predefined names on the [user](/graph/api/resources/onpremisesextensionattributes) and [device](/graph/api/resources/onpremisesextensionattributes) resources. These properties were initially custom attributes provided in on-premises Active Directory (AD) and Microsoft Exchange. However, they can now be used for more than syncing on-premises AD and Microsoft Exchange data to Azure AD through Microsoft Graph.
+Microsoft Entra ID offers a set of 15 extension attributes with predefined names on the [user](/graph/api/resources/onpremisesextensionattributes) and [device](/graph/api/resources/onpremisesextensionattributes) resources. These properties were initially custom attributes provided in on-premises Active Directory (AD) and Microsoft Exchange. However, they can now be used for more than syncing on-premises AD and Microsoft Exchange data to Microsoft Entra ID through Microsoft Graph.
 
 ### Developer experience
 
@@ -191,7 +191,9 @@ The **onPremisesExtensionAttributes** object can be updated only for objects tha
 
 The 15 extension attributes are already predefined in Microsoft Graph and their property names can't be changed. Therefore, you can't use custom names such as **SkypeId** for the extension attributes. This requires you and the organization to be aware of the extension attribute properties that are in use so that the values aren't inadvertently overwritten by other apps.
 
-## Directory (Azure AD) extensions
+<a name='directory-azure-ad-extensions'></a>
+
+## Directory (Microsoft Entra ID) extensions
 
 [Directory extensions](/graph/api/resources/extensionProperty) provide developers with a strongly typed, discoverable and filterable extension experience for directory objects.
 
@@ -1062,7 +1064,7 @@ The table below contrasts and compares the extension types, which should help yo
 
 ## Permissions and privileges
 
-The same privileges that your app requires to read from or write to a resource instance are also required to manage any extensions data on that resource instance. For example, in a delegated scenario, an app can only update any user's extension data if it's granted the *User.ReadWrite.All* permission and the signed-in user is assigned a supported Azure AD administrative role.
+The same privileges that your app requires to read from or write to a resource instance are also required to manage any extensions data on that resource instance. For example, in a delegated scenario, an app can only update any user's extension data if it's granted the *User.ReadWrite.All* permission and the signed-in user is assigned a supported Microsoft Entra administrative role.
 
 ## Next steps
 
