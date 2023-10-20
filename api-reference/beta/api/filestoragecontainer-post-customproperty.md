@@ -1,19 +1,19 @@
 ---
-title: "Add a custom property to a fileStorageContainer"
+title: "Add custom properties to a fileStorageContainer"
 
-description: "Add custom property to a fileStorageContainer"
+description: "Add custom properties to a fileStorageContainer"
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Add custom property to fileStorageContainer
+# Add custom properties to fileStorageContainer
 Namespace: microsoft.graph
 
 !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add custom property to fileStorageContainer. 
+Add custom properties to fileStorageContainer. 
 
 The application calling this API must have write permission to fileStorageContainers for the respective container type.
 
