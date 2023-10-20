@@ -112,6 +112,25 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 | User_v0 | This dataset provides user details stored for all the Azure Active Directory (Azure AD) user accounts that are created for a particular tenant. | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-user.md) |
 | User_v1 | This dataset provides user details stored for all the Azure Active Directory (Azure AD) user accounts. | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-user1.md) |
 
+### OneDrive and SharePoint Online
+
+Please consider that these datasets are available after 48 hours (about two days). For example, you can query data for 07/01 starting on 07/03.  
+
+The data available is from the last 21 days (about three weeks). For example, if you would like to query data for 07/01, you can do so from 07/03 to 07/24. 
+
+| Dataset name | Description | Sample and Schema |
+| --- | --- | --- |
+| BasicDataSet_v0.SharePointPermissions_v1 | Contains information about sharing permissions.(Formerly known as DocumentSharingDataset_v0_Preview)| <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SharePointPermissions_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.SharePointPermissions_v1.md)</li></ul>
+| BasicDataSet_v0.SharePointSites_v1  | Contains information about SharePoint sites.(Formerly known as SharePointSitesDataset_v0_Preview)| <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SharePointSites_v1.json) </li><li> [Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.SharePointSites_v1.md)</li></ul>
+| BasicDataSet_v0.SharePointGroups_v1 | Contains SharePoint group information, including details about group members.(Formerly known as SharePointGroupsDataset_v0_Preview) | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/BasicDataSet_v0.SharePointGroups_v1.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/BasicDataSet_v0.SharePointGroups_v1.md)</li></ul>
+
+### Viva Insights
+
+| Dataset name | Description | Sample and Schema | License |
+| --- | --- | --- | --- |
+| VivaInsightsDataset_PersonReport_v1 | Contains Viva Insights metrics. | <ul><li> [Sample](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/sampledatasets/VivaInsightsDataset_v0.json)</li><li>[Schema](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/datasetschemas/VivaInsightsDataSet_v0.md)</li></ul> | Requires Viva Insights license |
+
+
 ## Regions
 
 Microsoft Graph Data Connect supports extracting data from a variety of Microsoft 365 regions. To successfully move data from the Microsoft 365 data center into your Microsoft Azure storage, the Azure Synapse or Azure Data Factory instance and the Azure storage location must both map to a supported region for the location of the Microsoft 365 data.
