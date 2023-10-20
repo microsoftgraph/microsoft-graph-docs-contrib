@@ -68,7 +68,7 @@ export class AppComponent implements OnInit {
 
 ### Create an app/client ID
 
-In order to get a client ID, you need to [register your application](../../auth-register-app-v2.md) in Azure AD.
+In order to get a client ID, you need to [register your application](../../auth-register-app-v2.md) in Microsoft Entra ID.
 
 ## Add components
 

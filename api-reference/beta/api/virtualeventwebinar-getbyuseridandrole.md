@@ -1,6 +1,6 @@
 ---
 title: "virtualEventWebinar: getByUserIdAndRole"
-description: "List all webinars where the specified user is the organizer/co-organizer"
+description: "List all webinars where the specified user is either the organizer or a co-organizer."
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Function to get a [virtualEventWebinar](../resources/virtualeventwebinar.md) collection where the specified user is the organizer or a co-organizer.
+Function to get a [virtualEventWebinar](../resources/virtualeventwebinar.md) collection where the specified user is either the organizer or a co-organizer.
 
 ## Permissions
 
@@ -56,7 +56,7 @@ In the request URL, provide the following query parameters with values. The foll
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -65,7 +65,7 @@ If successful, this function returns a `200 OK` response code and a [virtualEven
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "virtualeventwebinarthis.getbyuseridandrole"
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/getByUserI
 
 ### Response
 
-The following is an example of the response
+The following example shows the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

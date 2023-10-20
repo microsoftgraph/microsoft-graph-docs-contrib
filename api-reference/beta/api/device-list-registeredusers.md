@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 [!INCLUDE [limited-info](../../includes/limited-info.md)]
 
-The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+The calling user must also be in one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
 
 * Global Administrator
 * Users

@@ -1,6 +1,6 @@
 ---
 title: "summarizeDeviceResourcePerformance function"
-description: ""
+description: "Intune Devices Userexperienceanalyticsresourceperformance Summarizedeviceresourceperformance Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

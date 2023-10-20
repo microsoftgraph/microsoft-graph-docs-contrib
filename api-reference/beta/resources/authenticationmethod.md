@@ -28,7 +28,7 @@ The **authenticationMethod** resource type is an abstract type that's inherited 
 + [windowsHelloForBusinessAuthenticationMethod](windowshelloforbusinessauthenticationmethod.md)
 
 > [!IMPORTANT]
-> Listing users' authentication methods only returns methods supported on this API version and registered to the user. See [Azure AD authentication methods API overview](authenticationmethods-overview.md) for a list of currently supported methods.
+> Listing users' authentication methods only returns methods supported on this API version and registered to the user. See [Microsoft Entra authentication methods API overview](authenticationmethods-overview.md) for a list of currently supported methods.
 
 ## Methods
 
