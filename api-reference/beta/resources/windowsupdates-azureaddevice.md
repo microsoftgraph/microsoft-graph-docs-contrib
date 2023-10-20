@@ -1,6 +1,6 @@
 ---
 title: "azureADDevice resource type"
-description: "Represents a device in Azure Active Directory (Azure AD) that is registered with the deployment service."
+description: "Represents a device in Microsoft Entra ID that is registered with the deployment service."
 author: "ryan-k-williams"
 ms.localizationpriority: medium
 ms.prod: "w10"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a device in Azure Active Directory (Azure AD) that is registered with the deployment service.
+Represents a device in Microsoft Entra ID that is registered with the deployment service.
 
-An Azure AD device is automatically created through one of the following methods:
+A Microsoft Entra device is automatically created through one of the following methods:
 * [updatableAsset: enrollAssets](../api/windowsupdates-updatableasset-enrollassets.md)
 * [updatableAsset: enrollAssetsById](../api/windowsupdates-updatableasset-enrollassetsbyid.md)
 * [deploymentAudience: updateAudience](../api/windowsupdates-deploymentaudience-updateaudience.md)
@@ -72,4 +72,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-
