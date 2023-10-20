@@ -13,7 +13,7 @@ Microsoft Graph Data Connect supports a variety of datasets, data regions, and s
 
 ## Datasets
 
-Microsoft Graph Data Connect currently supports the following datasets. To view the schemas for each dataset, create a new dataset in Azure Synapse or Azure Data Factory and use the Schema tab to view it.
+Microsoft Graph Data Connect currently supports the following datasets. To view the schemas for each dataset, create a new dataset in Azure Synapse or Azure Data Factory and go to the Schema tab.
 
 <a name='azure-active-directory'></a>
 
