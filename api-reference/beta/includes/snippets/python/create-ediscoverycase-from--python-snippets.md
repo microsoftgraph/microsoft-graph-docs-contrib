@@ -14,7 +14,7 @@ request_body = EdiscoveryCase(
 	external_id = "324516",
 )
 
-result = await graph_client.security.cases.ediscovery_cases.post(request_body = request_body)
+result = await graph_client.security.cases.ediscovery_cases.post(body = request_body)
 
 
 ```

@@ -16,7 +16,7 @@ request_body = ActivityBasedTimeoutPolicy(
 	is_organization_default = True,
 )
 
-result = await graph_client.policies.activity_based_timeout_policies.by_activity_based_timeout_policie_id('activityBasedTimeoutPolicy-id').patch(request_body = request_body)
+result = await graph_client.policies.activity_based_timeout_policies.by_activity_based_timeout_policie_id('activityBasedTimeoutPolicy-id').patch(body = request_body)
 
 
 ```

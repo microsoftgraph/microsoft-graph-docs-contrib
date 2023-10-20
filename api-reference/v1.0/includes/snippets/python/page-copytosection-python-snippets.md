@@ -13,7 +13,7 @@ request_body = CopyToSectionPostRequestBody(
 	group_id = "groupId-value",
 )
 
-result = await graph_client.me.onenote.pages.by_page_id('onenotePage-id').copy_to_section.post(request_body = request_body)
+result = await graph_client.me.onenote.pages.by_page_id('onenotePage-id').copy_to_section.post(body = request_body)
 
 
 ```

@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Enumerate lists in a site
+# Get lists in a site
 
 Namespace: microsoft.graph
 
@@ -16,6 +16,8 @@ Get the collection of [lists][] for a [site][].
 
 Lists with the [system][] facet are hidden by default.
 To list them, include `system` in your `$select` statement.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

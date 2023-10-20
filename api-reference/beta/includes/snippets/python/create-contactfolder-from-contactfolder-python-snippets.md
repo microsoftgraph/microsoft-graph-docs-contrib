@@ -12,7 +12,7 @@ request_body = ContactFolder(
 	display_name = "Family",
 )
 
-result = await graph_client.me.contact_folders.by_contact_folder_id('contactFolder-id').child_folders.post(request_body = request_body)
+result = await graph_client.me.contact_folders.by_contact_folder_id('contactFolder-id').child_folders.post(body = request_body)
 
 
 ```

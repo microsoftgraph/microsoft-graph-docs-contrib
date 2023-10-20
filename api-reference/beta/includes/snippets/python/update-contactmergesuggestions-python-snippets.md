@@ -12,7 +12,7 @@ request_body = ContactMergeSuggestions(
 	is_enabled = False,
 )
 
-result = await graph_client.me.settings.contact_merge_suggestions.patch(request_body = request_body)
+result = await graph_client.me.settings.contact_merge_suggestions.patch(body = request_body)
 
 
 ```

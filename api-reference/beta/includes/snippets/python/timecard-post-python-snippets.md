@@ -43,7 +43,7 @@ request_body = TimeCard(
 	}
 )
 
-result = await graph_client.teams.by_team_id('team-id').schedule.time_cards.post(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').schedule.time_cards.post(body = request_body)
 
 
 ```

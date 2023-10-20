@@ -19,11 +19,11 @@ Get an attack simulation campaign payload detail for a tenant.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | AttackSimulation.Read.All                   |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | AttackSimulation.Read.All                   |
+| Permission type                        | Permissions (from least to most privileged)                            |
+|:---------------------------------------|:-----------------------------------------------------------------------|
+| Delegated (work or school account)     | AttackSimulation.Read.All, AttackSimulation.ReadWrite.All              |
+| Delegated (personal Microsoft account) | Not supported.                                                         |
+| Application                            | AttackSimulation.Read.All, AttackSimulation.ReadWrite.All              |
 
 ## HTTP request
 
@@ -85,26 +85,26 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/payloads/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc/detail",
-    "fromName": "faiza",
-    "fromEmail": "faiza@contoso.com",
-    "addIsExternalSender": false,
-    "subject": "Payload Detail",
-    "content": "<meta http-equiv=\"Content-Type\" content=\"text/html>\">",
-    "phishingUrl": "http://www.widgetsinc10+.com",
-    "coachMarks": [
-        {
-            "indicator": "URL hyperlinking",
-            "description": "URL hyperlinking hides the true URL behind text; the text can also look like another link",
-            "language": "en",
-            "order": "0",
-            "isValid": true,
-            "coachmarkLocation": {
-                "offset": 144,
-                "length": 6,
-                "type": "messageBody"
-            }
-        }
-    ]            
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/payloads/2f5548d1-0dd8-4cc8-9de0-e0d6ec7ea3dc/detail",
+  "fromName": "faiza",
+  "fromEmail": "faiza@contoso.com",
+  "addIsExternalSender": false,
+  "subject": "Payload Detail",
+  "content": "<meta http-equiv=\"Content-Type\" content=\"text/html>\">",
+  "phishingUrl": "http://www.widgetsinc10+.com",
+  "coachMarks": [
+    {
+      "indicator": "URL hyperlinking",
+      "description": "URL hyperlinking hides the true URL behind text; the text can also look like another link",
+      "language": "en",
+      "order": "0",
+      "isValid": true,
+      "coachmarkLocation": {
+        "offset": 144,
+        "length": 6,
+        "type": "messageBody"
+      }
+    }
+  ]
 }
 ```

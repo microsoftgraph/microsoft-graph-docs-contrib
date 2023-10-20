@@ -18,7 +18,7 @@ $post->setBody($postBody);
 $attachmentsAttachment1 = new FileAttachment();
 $attachmentsAttachment1->setOdataType('#microsoft.graph.fileAttachment');
 $attachmentsAttachment1->setName('Another file as attachment');
-$attachmentsAttachment1->setContentBytes(base64_decode('VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu'));
+$attachmentsAttachment1->setContentBytes(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('VGhpcyBpcyBhIGZpbGUgdG8gYmUgYXR0YWNoZWQu')));
 $attachmentsArray []= $attachmentsAttachment1;
 $post->setAttachments($attachmentsArray);
 

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Grant users access to a link represented by a [permission][].
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

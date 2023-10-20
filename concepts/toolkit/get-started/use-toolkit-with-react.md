@@ -58,11 +58,13 @@ You should be able to open your app in the browser via `http://localhost:3000`.
 
 ## Connect React app to Microsoft 365
 
-Now that you have registered your application with Azure Active Directory (Azure AD), you can connect the React app to Microsoft 365. First, allow users to sign in to the app using their Microsoft account.
+Now that you have registered your application with Microsoft Entra ID, you can connect the React app to Microsoft 365. First, allow users to sign in to the app using their Microsoft account.
 
-### Copy the Azure AD application registration ID
+<a name='copy-the-azure-ad-application-registration-id'></a>
 
-1. In the Azure Portal, go to your application registration.
+### Copy the Microsoft Entra application registration ID
+
+1. In the Microsoft Entra admin center, go to your application registration.
 1. Verify that you are on the **Overview** page.
 1. From the **Essentials** section, copy the value of the **Application (client) ID** property
 
@@ -76,8 +78,8 @@ Next, configure the authentication provider that the Microsoft Graph Toolkit sho
 1. In the code editor, open the **src/index.tsx** file, and to the list of imports, add:
 
    ```TypeScript
-   import { Providers } from '@microsoft/mgt-element';
-   import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
+   import { Providers } from "@microsoft/mgt-element";
+   import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
    ```
 
 1. After the last `import` statement, initialize the Microsoft Graph Toolkit with MSAL provider.
@@ -88,7 +90,7 @@ Next, configure the authentication provider that the Microsoft Graph Toolkit sho
    });
    ```
 
-   Replace the value of the `clientId` property with the value of the `Application (client) ID` property you copied previously in the Azure Portal.
+   Replace the value of the `clientId` property with the value of the `Application (client) ID` property you copied previously in the Microsoft Entra admin center app registration overview.
 
 With these changes, the **src/index.tsx** file will look like the following.
 
@@ -166,7 +168,7 @@ You should now be able to sign in to your application with your Microsoft accoun
 
 1. Go back to the browser where your React app is running. You should now see a **Sign in** button.
 1. When you click the **Sign in** button, you will be prompted to sign in with your Microsoft account (you can use the same account as the one you accessed the Azure Portal with).
-1. Because this is the first time you're using this Azure AD application, you need to consent its use in your organization.
+1. Because this is the first time you're using this Microsoft Entra application, you need to consent its use in your organization.
 1. After signing in, you will be redirected to your React app. Notice that the **Sign in** button changed to show your user's name
    ![React app showing user info retrieved from Microsoft 365 using Microsoft Graph Toolkit](../images/mgt-react-userinfo.png).
 
@@ -311,7 +313,7 @@ export default App;
 
 With these changes, after signing in to your application with your Microsoft account, you should see your calendar.
 
-1. To see the changes, close the browser and open it again, and go to `http://localhost:3000`. You do this because you changed the value of the `scopes` property, which affects the access token that you request from Azure AD.
+1. To see the changes, close the browser and open it again, and go to `http://localhost:3000`. You do this because you changed the value of the `scopes` property, which affects the access token that you request from Microsoft Entra ID.
 1. Choose the **Sign In** button and sign in using your Microsoft account. Notice the additions to the list of permissions requested in the consent prompt. This is because you included additional permissions in the `scope` property.
 1. After consenting to the use of the application, you should see information about the current user and their calendar.
 

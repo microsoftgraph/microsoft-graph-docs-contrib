@@ -11,7 +11,7 @@ graph_client = GraphServiceClient(request_adapter)
 request_body = SetUpResourcesFolderPostRequestBody(
 )
 
-result = await graph_client.education.classes.by_classe_id('educationClass-id').assignments.by_assignment_id('educationAssignment-id').set_up_resource_folder.post(request_body = request_body)
+result = await graph_client.education.classes.by_classe_id('educationClass-id').assignments.by_assignment_id('educationAssignment-id').set_up_resource_folder.post(body = request_body)
 
 
 ```

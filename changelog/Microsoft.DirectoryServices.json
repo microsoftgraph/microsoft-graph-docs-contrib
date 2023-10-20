@@ -3,6 +3,84 @@
     {
       "ChangeList": [
         {
+          "Id": "2795003f-a59e-4944-9c52-6dcee39bacdb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "remoteDesktopSecurityConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [remoteDesktopSecurityConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/remoteDesktopSecurityConfiguration?view=graph-rest-beta) resource and its associated methods.",
+          "Target": "remoteDesktopSecurityConfiguration"
+        },
+        {
+          "Id": "2795003f-a59e-4944-9c52-6dcee39bacdb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "targetDeviceGroups",
+          "ChangeType": "Addition",
+          "Description": "Added the **targetDeviceGroups** relationship to the [remoteDesktopSecurityConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/remoteDesktopSecurityConfiguration?view=graph-rest-beta) resource.",
+          "Target": "remoteDesktopSecurityConfiguration"
+        },
+        {
+          "Id": "2795003f-a59e-4944-9c52-6dcee39bacdb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "remoteDesktopSecurityConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the **remoteDesktopSecurityConfiguration** relationship to the [servicePrincipal](https://learn.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-beta) resource.",
+          "Target": "servicePrincipal"
+        },
+        {
+          "Id": "2795003f-a59e-4944-9c52-6dcee39bacdb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "targetDeviceGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the [targetDeviceGroup](https://learn.microsoft.com/en-us/graph/api/resources/targetDeviceGroup?view=graph-rest-beta) resource",
+          "Target": "targetDeviceGroup"
+        }
+      ],
+      "Id": "2795003f-a59e-4944-9c52-6dcee39bacdb",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-10-19T00:00:00.9221522Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+    "ChangeList": [
+        {
+          "Id": "6e41743f-c9a0-4ee7-bcb8-a09ab773585b",
+          "ApiChange": "Method",
+          "ChangedApiName": "PATCH",
+          "ChangeType": "Change",
+          "Description": "Added the capability to update the **onPremisesSyncEnabled** property of the [organization](https://learn.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-beta) entity.",
+          "Target": "organization"
+        }
+      ],
+      "Id": "6e41743f-c9a0-4ee7-bcb8-a09ab773585b",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-09-18T00:00:00.1897204Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "de6bd646-f2ab-44d0-b45c-21c58410c210",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Throttling",
+          "ChangeType": "Change",
+          "Description": "Increased the global throttling limits for all requests from 2,000 requests per second to 130,000 requests per 10 seconds per app across all tenants. However, the service-specific limits still apply. For more information, see the [Microsoft Graph service-specific throttling limits](https://learn.microsoft.com/graph/throttling-limits).",
+          "Target": "application"
+        }
+      ],
+      "Id": "de6bd646-f2ab-44d0-b45c-21c58410c210",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-09-05T00:00:00.1897204Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "7c184bc2-56c6-4580-a706-636276e2b405",
           "ApiChange": "Resource",
           "ChangedApiName": "servicePrincipalLockConfiguration",
@@ -51,6 +129,24 @@
       "CreatedDateTime": "2023-08-03T14:24:00",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "39955405-56ab-4f32-b153-a55fb58fc173",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Policy.ReadWrite.SecurityDefaults",
+          "ChangeType": "Addition",
+          "Description": "Added the `Policy.ReadWrite.SecurityDefaults` delegated and application permissions to the read and write operations of [security defaults policies](https://learn.microsoft.com/en-us/graph/api/resources/identitysecuritydefaultsenforcementpolicy?view=graph-rest-1.0).",
+          "Target": "identitySecurityDefaultsEnforcementPolicy"
+        }
+      ],
+      "Id": "39955405-56ab-4f32-b153-a55fb58fc173",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2023-09-05T00:00:00.0123959Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [
@@ -411,6 +507,24 @@
     {
       "ChangeList": [
         {
+          "Id": "7cd18c8c-0160-47ce-a87c-bb90f3d67212",
+          "ApiChange": "Property",
+          "ChangedApiName": "onPremisesSecurityIdentifier",
+          "ChangeType": "Addition",
+          "Description": "Added the **onPremisesSecurityIdentifier** property to the [device](https://learn.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-beta) resource.",
+          "Target": "device"
+        }
+      ],
+      "Id": "7cd18c8c-0160-47ce-a87c-bb90f3d67212",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-07-28T17:55:51.6093472Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {      
           "Id": "550c269a-e3c6-43e8-b3b7-cc251dbf755e",
           "ApiChange": "Resource",
           "ChangedApiName": "policyTemplate",
@@ -7687,6 +7801,64 @@
       "CreatedDateTime": "2020-07-01T00:00:00",
       "WorkloadArea": "Identity and access",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c022f245-26dd-4fd7-81f2-4297d5a37c6d",
+          "ApiChange": "Member",
+          "ChangedApiName": "trustedCertificateAuthority",
+          "ChangeType": "Addition",
+          "Description": "Added the `trustedCertificateAuthority` member to the **appKeyCredentialRestrictionType** enumeration.",
+          "Target": "appKeyCredentialRestrictionType"
+        },
+        {
+          "Id": "c022f245-26dd-4fd7-81f2-4297d5a37c6d",
+          "ApiChange": "Property",
+          "ChangedApiName": "certificateBasedApplicationConfigurationIds",
+          "ChangeType": "Addition",
+          "Description": "Added the **certificateBasedApplicationConfigurationIds** property to the [keyCredentialConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/keyCredentialConfiguration?view=graph-rest-beta) resource.",
+          "Target": "keyCredentialConfiguration"
+        },
+        {
+          "Id": "c022f245-26dd-4fd7-81f2-4297d5a37c6d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "certificateAuthorityAsEntity",
+          "ChangeType": "Addition",
+          "Description": "Added the [certificateAuthorityAsEntity](https://learn.microsoft.com/en-us/graph/api/resources/certificateAuthorityAsEntity?view=graph-rest-beta) resource and supported methods.",
+          "Target": "certificateAuthorityAsEntity"
+        },
+        {
+          "Id": "c022f245-26dd-4fd7-81f2-4297d5a37c6d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "certificateAuthorityPath",
+          "ChangeType": "Addition",
+          "Description": "Added the [certificateAuthorityPath](https://learn.microsoft.com/en-us/graph/api/resources/certificateAuthorityPath?view=graph-rest-beta) resource type.",
+          "Target": "certificateAuthorityPath"
+        },
+        {
+          "Id": "c022f245-26dd-4fd7-81f2-4297d5a37c6d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "certificateBasedApplicationConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [certificateBasedApplicationConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/certificateBasedApplicationConfiguration?view=graph-rest-beta) resource and supported methods.",
+          "Target": "certificateBasedApplicationConfiguration"
+        },
+        {
+          "Id": "c022f245-26dd-4fd7-81f2-4297d5a37c6d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "trustedCertificateAuthorityAsEntityBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [trustedCertificateAuthorityAsEntityBase](https://learn.microsoft.com/en-us/graph/api/resources/trustedCertificateAuthorityAsEntityBase?view=graph-rest-beta) resource type.",
+          "Target": "trustedCertificateAuthorityAsEntityBase"
+        }
+      ],
+      "Id": "c022f245-26dd-4fd7-81f2-4297d5a37c6d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-10-03T00:00:00.4911623Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
     },
     {
       "ChangeList": [

@@ -17,7 +17,7 @@ request_body = WindowsDefenderAdvancedThreatProtectionConfiguration(
 	enable_expedited_telemetry_reporting = True,
 )
 
-result = await graph_client.device_management.device_configurations.post(request_body = request_body)
+result = await graph_client.device_management.device_configurations.post(body = request_body)
 
 
 ```

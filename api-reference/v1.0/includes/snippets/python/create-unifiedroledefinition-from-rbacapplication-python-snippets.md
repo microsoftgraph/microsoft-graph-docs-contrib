@@ -21,7 +21,7 @@ request_body = UnifiedRoleDefinition(
 	is_enabled = True,
 )
 
-result = await graph_client.role_management.directory.role_definitions.post(request_body = request_body)
+result = await graph_client.role_management.directory.role_definitions.post(body = request_body)
 
 
 ```

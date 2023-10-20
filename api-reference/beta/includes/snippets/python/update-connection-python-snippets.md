@@ -13,7 +13,7 @@ request_body = ExternalConnection(
 	description = "Connection to index HR service tickets",
 )
 
-result = await graph_client.external.connections.by_connection_id('externalConnection-id').patch(request_body = request_body)
+result = await graph_client.external.connections.by_connection_id('externalConnection-id').patch(body = request_body)
 
 
 ```

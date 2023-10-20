@@ -11,7 +11,9 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Create a new custom [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object. This feature requires an Azure AD Premium P1 or P2 license.
+Create a new custom [unifiedRoleDefinition](../resources/unifiedroledefinition.md) object. This feature requires a Microsoft Entra ID P1 or P2 license.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -167,4 +169,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-

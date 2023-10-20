@@ -14,7 +14,7 @@ request_body = ExternalConnection(
 	description = "Connection to index Contoso HR system",
 )
 
-result = await graph_client.external.connections.post(request_body = request_body)
+result = await graph_client.external.connections.post(body = request_body)
 
 
 ```

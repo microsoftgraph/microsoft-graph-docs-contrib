@@ -23,7 +23,7 @@ request_body = ForwardPostRequestBody(
 	comment = "Dana, just want to make sure you get this.",
 )
 
-await graph_client.me.messages.by_message_id('message-id').forward.post(request_body = request_body)
+await graph_client.me.messages.by_message_id('message-id').forward.post(body = request_body)
 
 
 ```

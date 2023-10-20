@@ -13,7 +13,7 @@ request_body = ExternalGroup(
 	description = "The product marketing team",
 )
 
-result = await graph_client.external.connections.by_connection_id('externalConnection-id').groups.by_group_id('externalGroup-id').patch(request_body = request_body)
+result = await graph_client.external.connections.by_connection_id('externalConnection-id').groups.by_group_id('externalGroup-id').patch(body = request_body)
 
 
 ```

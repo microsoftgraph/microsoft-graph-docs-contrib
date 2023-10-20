@@ -16,7 +16,7 @@ request_body = RevokeGrantsPostRequestBody(
 	]
 )
 
-result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').permissions.by_permission_id('permission-id').revoke_grants.post(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').permissions.by_permission_id('permission-id').revoke_grants.post(body = request_body)
 
 
 ```

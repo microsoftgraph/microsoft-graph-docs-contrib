@@ -20,7 +20,7 @@ request_body = EnterpriseCodeSigningCertificate(
 	upload_date_time = "2016-12-31T23:58:46.5747426-08:00",
 )
 
-result = await graph_client.device_app_management.enterprise_code_signing_certificates.by_enterprise_code_signing_certificate_id('enterpriseCodeSigningCertificate-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.enterprise_code_signing_certificates.by_enterprise_code_signing_certificate_id('enterpriseCodeSigningCertificate-id').patch(body = request_body)
 
 
 ```

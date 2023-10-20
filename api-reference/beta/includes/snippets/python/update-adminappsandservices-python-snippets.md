@@ -17,7 +17,7 @@ request_body = AdminAppsAndServices(
 	),
 )
 
-result = await graph_client.admin.app_and_services.patch(request_body = request_body)
+result = await graph_client.admin.app_and_services.patch(body = request_body)
 
 
 ```

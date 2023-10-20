@@ -21,7 +21,7 @@ request_body = CloudPcOnPremisesConnection(
 	subnet_id = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default",
 )
 
-result = await graph_client.device_management.virtual_endpoint.on_premise_connections.by_on_premise_connection_id('cloudPcOnPremisesConnection-id').patch(request_body = request_body)
+result = await graph_client.device_management.virtual_endpoint.on_premise_connections.by_on_premise_connection_id('cloudPcOnPremisesConnection-id').patch(body = request_body)
 
 
 ```

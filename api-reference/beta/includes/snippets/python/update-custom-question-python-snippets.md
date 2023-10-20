@@ -19,7 +19,7 @@ request_body = MeetingRegistrationQuestion(
 	]
 )
 
-result = await graph_client.me.online_meetings.by_online_meeting_id('onlineMeeting-id').registration.custom_questions.by_custom_question_id('meetingRegistrationQuestion-id').patch(request_body = request_body)
+result = await graph_client.me.online_meetings.by_online_meeting_id('onlineMeeting-id').registration.custom_questions.by_custom_question_id('meetingRegistrationQuestion-id').patch(body = request_body)
 
 
 ```

@@ -35,7 +35,7 @@ request_body = ConditionalAccessPolicy(
 	),
 )
 
-result = await graph_client.identity.conditional_access.policies.post(request_body = request_body)
+result = await graph_client.identity.conditional_access.policies.post(body = request_body)
 
 
 ```

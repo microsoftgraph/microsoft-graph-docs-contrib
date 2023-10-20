@@ -58,7 +58,7 @@ request_body = AccessReviewScheduleDefinition(
 	),
 )
 
-result = await graph_client.identity_governance.acce_reviews.definitions.post(request_body = request_body)
+result = await graph_client.identity_governance.acce_reviews.definitions.post(body = request_body)
 
 
 ```

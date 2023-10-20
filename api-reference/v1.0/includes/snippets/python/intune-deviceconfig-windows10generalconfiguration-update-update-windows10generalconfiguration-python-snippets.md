@@ -241,7 +241,7 @@ request_body = Windows10GeneralConfiguration(
 	tenant_lockdown_require_network_during_out_of_box_experience = True,
 )
 
-result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(body = request_body)
 
 
 ```

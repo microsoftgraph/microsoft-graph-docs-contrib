@@ -12,7 +12,7 @@ request_body = DismissPostRequestBody(
 	dismiss_reason = "Recommendations is not relevant for my organization because...",
 )
 
-result = await graph_client.directory.recommendations.by_recommendation_id('recommendation-id').dismiss.post(request_body = request_body)
+result = await graph_client.directory.recommendations.by_recommendation_id('recommendation-id').dismiss.post(body = request_body)
 
 
 ```

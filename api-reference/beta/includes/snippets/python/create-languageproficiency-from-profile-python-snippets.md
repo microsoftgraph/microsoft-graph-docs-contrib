@@ -16,7 +16,7 @@ request_body = LanguageProficiency(
 	reading = LanguageProficiencyLevel.NativeOrBilingual,
 )
 
-result = await graph_client.me.profile.languages.post(request_body = request_body)
+result = await graph_client.me.profile.languages.post(body = request_body)
 
 
 ```

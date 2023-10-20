@@ -21,7 +21,7 @@ request_body = SettingStateDeviceSummary(
 	conflict_device_count = 3,
 )
 
-result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').device_setting_state_summaries.post(request_body = request_body)
+result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').device_setting_state_summaries.post(body = request_body)
 
 
 ```

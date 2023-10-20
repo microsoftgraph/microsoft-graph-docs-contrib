@@ -12,7 +12,7 @@ request_body = InstantiatePostRequestBody(
 	display_name = "Azure AD SAML Toolkit",
 )
 
-result = await graph_client.application_templates.by_application_template_id('applicationTemplate-id').instantiate.post(request_body = request_body)
+result = await graph_client.application_templates.by_application_template_id('applicationTemplate-id').instantiate.post(body = request_body)
 
 
 ```

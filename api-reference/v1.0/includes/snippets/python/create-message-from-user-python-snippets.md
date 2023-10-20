@@ -24,7 +24,7 @@ request_body = Message(
 	]
 )
 
-result = await graph_client.me.messages.post(request_body = request_body)
+result = await graph_client.me.messages.post(body = request_body)
 
 
 ```

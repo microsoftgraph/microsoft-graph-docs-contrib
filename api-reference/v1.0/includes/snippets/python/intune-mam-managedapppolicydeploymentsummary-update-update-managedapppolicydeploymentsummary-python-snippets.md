@@ -26,7 +26,7 @@ request_body = ManagedAppPolicyDeploymentSummary(
 	version = "Version value",
 )
 
-result = await graph_client.device_app_management.io_managed_app_protections.by_io_managed_app_protection_id('iosManagedAppProtection-id').deployment_summary.patch(request_body = request_body)
+result = await graph_client.device_app_management.io_managed_app_protections.by_io_managed_app_protection_id('iosManagedAppProtection-id').deployment_summary.patch(body = request_body)
 
 
 ```

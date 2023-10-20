@@ -31,7 +31,7 @@ request_body = SynchronizationSecretKeyStringValuePair(
 	}
 )
 
-result = await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').synchronization.secrets.put(request_body = request_body)
+result = await graph_client.service_principals.by_service_principal_id('servicePrincipal-id').synchronization.secrets.put(body = request_body)
 
 
 ```

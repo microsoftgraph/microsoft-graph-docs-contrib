@@ -15,7 +15,7 @@ request_body = ClaimsMappingPolicy(
 	display_name = "Test1234",
 )
 
-result = await graph_client.policies.claim_mapping_policies.post(request_body = request_body)
+result = await graph_client.policies.claim_mapping_policies.post(body = request_body)
 
 
 ```

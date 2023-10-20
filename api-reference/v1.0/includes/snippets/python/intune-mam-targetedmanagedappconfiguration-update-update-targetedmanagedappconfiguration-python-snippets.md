@@ -24,7 +24,7 @@ request_body = TargetedManagedAppConfiguration(
 	is_assigned = True,
 )
 
-result = await graph_client.device_app_management.targeted_managed_app_configurations.by_targeted_managed_app_configuration_id('targetedManagedAppConfiguration-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.targeted_managed_app_configurations.by_targeted_managed_app_configuration_id('targetedManagedAppConfiguration-id').patch(body = request_body)
 
 
 ```

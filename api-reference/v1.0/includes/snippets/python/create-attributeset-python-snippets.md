@@ -14,7 +14,7 @@ request_body = AttributeSet(
 	max_attributes_per_set = 25,
 )
 
-result = await graph_client.directory.attribute_sets.post(request_body = request_body)
+result = await graph_client.directory.attribute_sets.post(body = request_body)
 
 
 ```

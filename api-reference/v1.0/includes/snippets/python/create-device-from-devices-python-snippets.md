@@ -22,7 +22,7 @@ request_body = Device(
 	operating_system_version = "1",
 )
 
-result = await graph_client.devices.post(request_body = request_body)
+result = await graph_client.devices.post(body = request_body)
 
 
 ```

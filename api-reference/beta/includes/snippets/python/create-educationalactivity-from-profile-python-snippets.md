@@ -39,7 +39,7 @@ request_body = EducationalActivity(
 	start_month_year = "Date",
 )
 
-result = await graph_client.me.profile.educational_activities.post(request_body = request_body)
+result = await graph_client.me.profile.educational_activities.post(body = request_body)
 
 
 ```

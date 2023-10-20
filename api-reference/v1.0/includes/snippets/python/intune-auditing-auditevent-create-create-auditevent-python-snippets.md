@@ -56,7 +56,7 @@ request_body = AuditEvent(
 	category = "Category value",
 )
 
-result = await graph_client.device_management.audit_events.post(request_body = request_body)
+result = await graph_client.device_management.audit_events.post(body = request_body)
 
 
 ```

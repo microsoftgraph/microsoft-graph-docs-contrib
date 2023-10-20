@@ -15,7 +15,7 @@ request_body = InboundFlow(
 	expiration_date_time = "2023-03-12T16:40:46.924769+05:30",
 )
 
-result = await graph_client.external.industry_data.inbound_flows.by_inbound_flow_id('inboundFlow-id').patch(request_body = request_body)
+result = await graph_client.external.industry_data.inbound_flows.by_inbound_flow_id('inboundFlow-id').patch(body = request_body)
 
 
 ```

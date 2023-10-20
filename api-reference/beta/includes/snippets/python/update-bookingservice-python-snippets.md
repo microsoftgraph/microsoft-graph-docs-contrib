@@ -13,7 +13,7 @@ request_body = BookingService(
 	default_duration = "PT30M",
 )
 
-result = await graph_client.booking_businesses.by_booking_businesse_id('bookingBusiness-id').services.by_service_id('bookingService-id').patch(request_body = request_body)
+result = await graph_client.booking_businesses.by_booking_businesse_id('bookingBusiness-id').services.by_service_id('bookingService-id').patch(body = request_body)
 
 
 ```

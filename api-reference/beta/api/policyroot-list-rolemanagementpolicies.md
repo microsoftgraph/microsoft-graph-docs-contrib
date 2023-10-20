@@ -12,12 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the details of the policies in PIM that can be applied to Azure AD roles or group membership or ownership. To retrieve policies that apply to Azure RBAC, use the [Azure REST PIM API for role management policies](/rest/api/authorization/role-management-policies/list-for-scope).
+Get the details of the policies in PIM that can be applied to Microsoft Entra roles or group membership or ownership. To retrieve policies that apply to Azure RBAC, use the [Azure REST PIM API for role management policies](/rest/api/authorization/role-management-policies/list-for-scope).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For PIM for Azure AD roles
+<a name='for-pim-for-azure-ad-roles'></a>
+
+### For PIM for Microsoft Entra roles
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -35,7 +39,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To retrieve policies and their details for Azure AD roles scoped to the tenant:
+To retrieve policies and their details for Microsoft Entra roles scoped to the tenant:
 <!-- {
   "blockType": "ignored"
 }
@@ -53,10 +57,10 @@ To retrieve details of all role management policies scoped to a group:
 GET /policies/roleManagementPolicies?$filter=scopeId eq '{groupId}' and scopeType eq 'Group'
 ```
 
-## Optional query parameters
+## Query parameters
 This method requires the `$filter` (`eq`) query parameter to scope the request to a **scopeId** and a **scopeType**. 
 
-- To retrieve policies in PIM for Azure AD roles, the **scopeId** must be `/` and **scopeType** can be either `Directory` or `DirectoryRole`. 
+- To retrieve policies in PIM for Microsoft Entra roles, the **scopeId** must be `/` and **scopeType** can be either `Directory` or `DirectoryRole`. 
 - To retrieve policies in PIM for groups, the **scopeId** must be a group ID and **scopeType** must be `Group`.
 
 You can also use the `$select` and `$expand` OData query parameters to help customize the response. This API also supports `$select` nested in `$expand` to return only specific properties of those rules. For general information, see [OData query parameters](/graph/query-parameters).
@@ -75,7 +79,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Retrieve policies and their details in PIM for Azure AD roles
+<a name='example-1-retrieve-policies-and-their-details-in-pim-for-azure-ad-roles'></a>
+
+### Example 1: Retrieve policies and their details in PIM for Microsoft Entra roles
 
 #### Request
 

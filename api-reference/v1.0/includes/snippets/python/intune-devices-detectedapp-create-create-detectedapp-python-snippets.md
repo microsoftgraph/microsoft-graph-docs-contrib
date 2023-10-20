@@ -18,7 +18,7 @@ request_body = DetectedApp(
 	platform = DetectedAppPlatformType.Windows,
 )
 
-result = await graph_client.device_management.detected_apps.post(request_body = request_body)
+result = await graph_client.device_management.detected_apps.post(body = request_body)
 
 
 ```

@@ -15,7 +15,7 @@ request_body = CrossTenantAccessPolicy(
 	]
 )
 
-result = await graph_client.policies.cros_tenant_acces_policy.patch(request_body = request_body)
+result = await graph_client.policies.cros_tenant_acces_policy.patch(body = request_body)
 
 
 ```

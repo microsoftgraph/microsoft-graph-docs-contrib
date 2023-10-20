@@ -23,7 +23,7 @@ $additionalData = [
 		],
 ];
 $requestBody->setAdditionalData($additionalData);
-$requestConfiguration = new CustomSecurityAttributeDefinitionRequestBuilderPatchRequestConfiguration();
+$requestConfiguration = new CustomSecurityAttributeDefinitionItemRequestBuilderPatchRequestConfiguration();
 $headers = [
 		'OData-Version' => '4.01',
 	];

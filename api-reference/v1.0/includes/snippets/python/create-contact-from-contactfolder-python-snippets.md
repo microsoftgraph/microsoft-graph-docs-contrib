@@ -17,7 +17,7 @@ request_body = Contact(
 	initials = "initials-value",
 )
 
-result = await graph_client.me.contact_folders.by_contact_folder_id('contactFolder-id').contacts.post(request_body = request_body)
+result = await graph_client.me.contact_folders.by_contact_folder_id('contactFolder-id').contacts.post(body = request_body)
 
 
 ```

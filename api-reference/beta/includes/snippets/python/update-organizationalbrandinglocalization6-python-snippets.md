@@ -13,7 +13,7 @@ request_body = OrganizationalBrandingLocalization(
 	sign_in_page_text = "Welcome to Contoso France",
 )
 
-result = await graph_client.organization.by_organization_id('organization-id').branding.localizations.by_localization_id('organizationalBrandingLocalization-id').patch(request_body = request_body)
+result = await graph_client.organization.by_organization_id('organization-id').branding.localizations.by_localization_id('organizationalBrandingLocalization-id').patch(body = request_body)
 
 
 ```

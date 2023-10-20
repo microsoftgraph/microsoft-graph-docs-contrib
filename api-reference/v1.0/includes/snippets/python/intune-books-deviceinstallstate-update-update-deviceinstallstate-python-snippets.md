@@ -20,7 +20,7 @@ request_body = DeviceInstallState(
 	user_name = "User Name value",
 )
 
-result = await graph_client.device_app_management.managed_e_books.by_managed_e_book_id('managedEBook-id').device_states.by_device_state_id('deviceInstallState-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.managed_e_books.by_managed_e_book_id('managedEBook-id').device_states.by_device_state_id('deviceInstallState-id').patch(body = request_body)
 
 
 ```

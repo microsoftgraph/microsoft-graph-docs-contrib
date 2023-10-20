@@ -16,7 +16,7 @@ request_body = UserInstallStateSummary(
 	not_installed_device_count = 7,
 )
 
-result = await graph_client.device_app_management.managed_e_books.by_managed_e_book_id('managedEBook-id').user_state_summary.by_user_state_summary_id('userInstallStateSummary-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.managed_e_books.by_managed_e_book_id('managedEBook-id').user_state_summary.by_user_state_summary_id('userInstallStateSummary-id').patch(body = request_body)
 
 
 ```

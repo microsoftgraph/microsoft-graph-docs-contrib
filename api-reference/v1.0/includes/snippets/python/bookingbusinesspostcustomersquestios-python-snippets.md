@@ -16,7 +16,7 @@ request_body = BookingCustomQuestion(
 	]
 )
 
-result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').custom_questions.post(request_body = request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').custom_questions.post(body = request_body)
 
 
 ```

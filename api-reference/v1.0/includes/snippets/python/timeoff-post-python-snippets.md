@@ -24,7 +24,7 @@ request_body = TimeOff(
 	),
 )
 
-result = await graph_client.teams.by_team_id('team-id').schedule.time_off.post(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').schedule.time_off.post(body = request_body)
 
 
 ```

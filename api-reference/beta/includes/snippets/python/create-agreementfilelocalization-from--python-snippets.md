@@ -19,7 +19,7 @@ request_body = AgreementFileLocalization(
 	),
 )
 
-result = await graph_client.identity_governance.term_of_use.agreements.by_agreement_id('agreement-id').files.post(request_body = request_body)
+result = await graph_client.identity_governance.term_of_use.agreements.by_agreement_id('agreement-id').files.post(body = request_body)
 
 
 ```

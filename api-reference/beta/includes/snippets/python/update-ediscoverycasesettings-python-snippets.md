@@ -21,7 +21,7 @@ request_body = EdiscoveryCaseSettings(
 	),
 )
 
-result = await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').settings.patch(request_body = request_body)
+result = await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').settings.patch(body = request_body)
 
 
 ```

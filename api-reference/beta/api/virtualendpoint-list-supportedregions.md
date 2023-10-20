@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 List the supported regions that are available for creating Cloud PC connections.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

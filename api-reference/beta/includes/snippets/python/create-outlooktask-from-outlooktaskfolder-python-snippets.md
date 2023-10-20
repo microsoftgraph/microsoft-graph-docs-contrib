@@ -20,7 +20,7 @@ request_body = OutlookTask(
 	),
 )
 
-result = await graph_client.me.outlook.task_folders.by_task_folder_id('outlookTaskFolder-id').tasks.post(request_body = request_body)
+result = await graph_client.me.outlook.task_folders.by_task_folder_id('outlookTaskFolder-id').tasks.post(body = request_body)
 
 
 ```

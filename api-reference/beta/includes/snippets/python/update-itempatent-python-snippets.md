@@ -13,7 +13,7 @@ request_body = ItemPatent(
 	web_url = "https://patents.gov/3954432633",
 )
 
-result = await graph_client.users.by_user_id('user-id').profile.patents.by_patent_id('itemPatent-id').patch(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').profile.patents.by_patent_id('itemPatent-id').patch(body = request_body)
 
 
 ```

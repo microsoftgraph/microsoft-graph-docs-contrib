@@ -18,7 +18,7 @@ request_body = MacOSCustomConfiguration(
 	payload = base64.urlsafe_b64decode("cGF5bG9hZA=="),
 )
 
-result = await graph_client.device_management.device_configurations.post(request_body = request_body)
+result = await graph_client.device_management.device_configurations.post(body = request_body)
 
 
 ```

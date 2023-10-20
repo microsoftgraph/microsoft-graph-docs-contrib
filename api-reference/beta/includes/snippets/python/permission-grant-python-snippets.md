@@ -22,7 +22,7 @@ request_body = GrantPostRequestBody(
 	]
 )
 
-result = await graph_client.shares.by_share_id('sharedDriveItem-id').permission.grant.post(request_body = request_body)
+result = await graph_client.shares.by_share_id('sharedDriveItem-id').permission.grant.post(body = request_body)
 
 
 ```

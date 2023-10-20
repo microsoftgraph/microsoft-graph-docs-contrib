@@ -12,7 +12,7 @@ request_body = Program(
 	display_name = "testprogram3 new name",
 )
 
-result = await graph_client.programs.by_program_id('program-id').patch(request_body = request_body)
+result = await graph_client.programs.by_program_id('program-id').patch(body = request_body)
 
 
 ```

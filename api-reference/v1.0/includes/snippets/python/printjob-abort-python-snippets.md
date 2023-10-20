@@ -12,7 +12,7 @@ request_body = AbortPostRequestBody(
 	reason = "String",
 )
 
-await graph_client.print.printers.by_printer_id('printer-id').jobs.by_job_id('printJob-id').abort.post(request_body = request_body)
+await graph_client.print.printers.by_printer_id('printer-id').jobs.by_job_id('printJob-id').abort.post(body = request_body)
 
 
 ```

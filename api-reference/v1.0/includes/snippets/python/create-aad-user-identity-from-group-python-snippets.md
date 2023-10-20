@@ -13,7 +13,7 @@ request_body = Identity(
 	type = IdentityType.User,
 )
 
-result = await graph_client.external.connections.by_connection_id('externalConnection-id').groups.by_group_id('externalGroup-id').members.post(request_body = request_body)
+result = await graph_client.external.connections.by_connection_id('externalConnection-id').groups.by_group_id('externalGroup-id').members.post(body = request_body)
 
 
 ```

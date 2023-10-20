@@ -17,7 +17,7 @@ request_body = AdministrativeUnit(
 	}
 )
 
-result = await graph_client.administrative_units.by_administrative_unit_id('administrativeUnit-id').patch(request_body = request_body)
+result = await graph_client.administrative_units.by_administrative_unit_id('administrativeUnit-id').patch(body = request_body)
 
 
 ```

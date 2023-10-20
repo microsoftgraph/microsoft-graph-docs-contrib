@@ -18,7 +18,7 @@ request_body = TermsAndConditions(
 	version = 7,
 )
 
-result = await graph_client.device_management.term_and_conditions.by_term_and_condition_id('termsAndConditions-id').patch(request_body = request_body)
+result = await graph_client.device_management.term_and_conditions.by_term_and_condition_id('termsAndConditions-id').patch(body = request_body)
 
 
 ```

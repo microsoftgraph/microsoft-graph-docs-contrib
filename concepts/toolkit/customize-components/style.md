@@ -55,7 +55,7 @@ You can set the second `mgt-login` component to `dark` theme and leave the other
 ```
 
 ```javascript
-import { applyTheme } from "@microsoft/mgt";
+import { applyTheme } from "@microsoft/mgt-components";
 
 const loginTwo = document.querySelector("#login-two");
 

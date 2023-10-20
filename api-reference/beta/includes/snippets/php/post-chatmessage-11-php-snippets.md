@@ -26,7 +26,7 @@ $attachmentsArray []= $attachmentsChatMessageAttachment1;
 $requestBody->setAttachments($attachmentsArray);
 
 $hostedContentsChatMessageHostedContent1 = new ChatMessageHostedContent();
-$hostedContentsChatMessageHostedContent1->setContentBytes(base64_decode('iVBORw0KGgoAAAANSUhEUgAABWMAAAEMCAYAAAChuaTsAAAAAXNSR0IArs4c6QAAAARnQU1BA'));
+$hostedContentsChatMessageHostedContent1->setContentBytes(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('iVBORw0KGgoAAAANSUhEUgAABWMAAAEMCAYAAAChuaTsAAAAAXNSR0IArs4c6QAAAARnQU1BA')));
 $hostedContentsChatMessageHostedContent1->setContentType('image/png');
 $additionalData = [
 '@microsoft.graph.temporaryId' => '1',
@@ -34,7 +34,7 @@ $additionalData = [
 $hostedContentsChatMessageHostedContent1->setAdditionalData($additionalData);
 $hostedContentsArray []= $hostedContentsChatMessageHostedContent1;
 $hostedContentsChatMessageHostedContent2 = new ChatMessageHostedContent();
-$hostedContentsChatMessageHostedContent2->setContentBytes(base64_decode('iVBORw0KGgoAAAANSUhEUgAAA5YAAAB4CAYAAACJrW0RAAAAAXNSR0IArs4c6QAAIABJREFUe'));
+$hostedContentsChatMessageHostedContent2->setContentBytes(\GuzzleHttp\Psr7\Utils::streamFor(base64_decode('iVBORw0KGgoAAAANSUhEUgAAA5YAAAB4CAYAAACJrW0RAAAAAXNSR0IArs4c6QAAIABJREFUe')));
 $hostedContentsChatMessageHostedContent2->setContentType('image/png');
 $additionalData = [
 '@microsoft.graph.temporaryId' => '2',

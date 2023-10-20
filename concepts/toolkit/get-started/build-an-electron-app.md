@@ -44,18 +44,19 @@ npm start
 
 ## Create an app/client ID
 
-### Add new application registration in Azure AD to get a client ID
+<a name='add-new-application-registration-in-azure-ad-to-get-a-client-id'></a>
 
-To create an application in Azure Active Directory (Azure AD), you need to add a new application registration, and then configure an app name and redirect URI.
+### Add new application registration in Microsoft Entra ID to get a client ID
 
-To create the app in Azure AD:
+To create an application in Microsoft Entra ID, you need to add a new application registration, and then configure an app name and redirect URI.
 
-1. Go to the [Azure portal](https://portal.azure.com).
-1. From the menu, select **Azure Active Directory**.
-1. From the Azure Active Directory menu, select **App registrations**.
+To create the app in Microsoft Entra ID:
+
+1. Go to the [Microsoft Entra admin center](https://entra.microsoft.com).
+1. Expand **Identity** > expand **Applications** > select **App registrations**.
 1. From the top menu, select the **New registration** button.
 1. Enter the name for your app; for example, `My Electron-App`.
-1. For the type of [supported account types](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app), select **Accounts in any organizational directory (Any Azure AD directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
+1. For the type of [supported account types](/azure/active-directory/develop/single-and-multi-tenant-apps#who-can-sign-in-to-your-app), select **Accounts in any organizational directory (Any Microsoft Entra directory - Multitenant) and personal Microsoft accounts (e.g. Skype, Xbox)**.
 1. In the **Redirect URI** field, in the dropdown, select **Public client/native (mobile & desktop)**, and in the URL field, enter `msal://redirect`.
 1. Confirm changes by selecting the **Register** button.
 1. Go to your application registration.
@@ -243,7 +244,7 @@ let config: MsalElectronConfig = {
 };
 ```
 
-For more details about how to implement this, see the [microsoft-authentication-library-for-js](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/extensions/samples/msal-node-extensions/index.js) sample.
+For more details about how to implement this, see the [Microsoft Authentication Library-for-js](https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/extensions/samples/msal-node-extensions/index.js) sample.
 
 ## Next Steps
 

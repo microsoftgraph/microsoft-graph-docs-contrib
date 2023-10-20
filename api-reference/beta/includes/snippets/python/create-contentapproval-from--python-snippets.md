@@ -30,7 +30,7 @@ request_body = ContentApproval(
 	}
 )
 
-result = await graph_client.admin.windows.updates.update_policies.by_update_policie_id('updatePolicy-id').compliance_changes.post(request_body = request_body)
+result = await graph_client.admin.windows.updates.update_policies.by_update_policie_id('updatePolicy-id').compliance_changes.post(body = request_body)
 
 
 ```

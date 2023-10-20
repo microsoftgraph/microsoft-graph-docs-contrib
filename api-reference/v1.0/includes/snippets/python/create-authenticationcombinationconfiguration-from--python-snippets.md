@@ -20,7 +20,7 @@ request_body = Fido2CombinationConfiguration(
 	]
 )
 
-result = await graph_client.identity.conditional_access.authentication_strength.policies.by_policie_id('authenticationStrengthPolicy-id').combination_configurations.post(request_body = request_body)
+result = await graph_client.identity.conditional_access.authentication_strength.policies.by_policie_id('authenticationStrengthPolicy-id').combination_configurations.post(body = request_body)
 
 
 ```

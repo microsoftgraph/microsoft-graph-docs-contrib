@@ -15,7 +15,7 @@ request_body = ApplyHoldPostRequestBody(
 	]
 )
 
-await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').custodians.microsoft_graph_security_apply_hold.post(request_body = request_body)
+await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').custodians.microsoft_graph_security_apply_hold.post(body = request_body)
 
 
 ```

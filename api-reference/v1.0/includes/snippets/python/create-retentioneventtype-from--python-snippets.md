@@ -17,7 +17,7 @@ request_body = RetentionEventType(
 	),
 )
 
-result = await graph_client.security.trigger_types.retention_event_types.post(request_body = request_body)
+result = await graph_client.security.trigger_types.retention_event_types.post(body = request_body)
 
 
 ```

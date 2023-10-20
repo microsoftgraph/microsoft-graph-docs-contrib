@@ -13,7 +13,7 @@ request_body = WorkbookCommentReply(
 	content_type = "plain",
 )
 
-result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.comments.by_comment_id('workbookComment-id').replies.post(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.comments.by_comment_id('workbookComment-id').replies.post(body = request_body)
 
 
 ```

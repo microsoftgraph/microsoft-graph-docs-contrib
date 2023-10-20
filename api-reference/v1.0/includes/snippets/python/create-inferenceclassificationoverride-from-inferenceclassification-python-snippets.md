@@ -16,7 +16,7 @@ request_body = InferenceClassificationOverride(
 	),
 )
 
-result = await graph_client.me.inference_classification.overrides.post(request_body = request_body)
+result = await graph_client.me.inference_classification.overrides.post(body = request_body)
 
 
 ```

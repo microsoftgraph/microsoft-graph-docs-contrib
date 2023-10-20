@@ -27,7 +27,7 @@ request_body = UnifiedRoleManagementPolicyExpirationRule(
 	),
 )
 
-result = await graph_client.policies.role_management_policies.by_role_management_policie_id('unifiedRoleManagementPolicy-id').rules.by_rule_id('unifiedRoleManagementPolicyRule-id').patch(request_body = request_body)
+result = await graph_client.policies.role_management_policies.by_role_management_policie_id('unifiedRoleManagementPolicy-id').rules.by_rule_id('unifiedRoleManagementPolicyRule-id').patch(body = request_body)
 
 
 ```

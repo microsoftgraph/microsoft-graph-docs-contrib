@@ -18,7 +18,7 @@ request_body = AppLogCollectionRequest(
 	completed_date_time = "2016-12-31T23:58:52.3534526-08:00",
 )
 
-result = await graph_client.device_management.mobile_app_troubleshooting_events.by_mobile_app_troubleshooting_event_id('mobileAppTroubleshootingEvent-id').app_log_collection_requests.by_app_log_collection_request_id('appLogCollectionRequest-id').patch(request_body = request_body)
+result = await graph_client.device_management.mobile_app_troubleshooting_events.by_mobile_app_troubleshooting_event_id('mobileAppTroubleshootingEvent-id').app_log_collection_requests.by_app_log_collection_request_id('appLogCollectionRequest-id').patch(body = request_body)
 
 
 ```

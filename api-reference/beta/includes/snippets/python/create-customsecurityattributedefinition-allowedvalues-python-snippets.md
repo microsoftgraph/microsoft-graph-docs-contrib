@@ -33,7 +33,7 @@ request_body = CustomSecurityAttributeDefinition(
 	]
 )
 
-result = await graph_client.directory.custom_security_attribute_definitions.post(request_body = request_body)
+result = await graph_client.directory.custom_security_attribute_definitions.post(body = request_body)
 
 
 ```

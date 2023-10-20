@@ -80,7 +80,7 @@ request_body = BookingService(
 	}
 )
 
-result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').services.post(request_body = request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').services.post(body = request_body)
 
 
 ```

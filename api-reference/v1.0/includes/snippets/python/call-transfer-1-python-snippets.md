@@ -22,7 +22,7 @@ request_body = TransferPostRequestBody(
 	),
 )
 
-await graph_client.communications.calls.by_call_id('call-id').transfer.post(request_body = request_body)
+await graph_client.communications.calls.by_call_id('call-id').transfer.post(body = request_body)
 
 
 ```

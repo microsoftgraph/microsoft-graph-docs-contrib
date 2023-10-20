@@ -12,7 +12,7 @@ request_body = TodoTaskList(
 	display_name = "Travel items",
 )
 
-result = await graph_client.me.todo.lists.post(request_body = request_body)
+result = await graph_client.me.todo.lists.post(body = request_body)
 
 
 ```

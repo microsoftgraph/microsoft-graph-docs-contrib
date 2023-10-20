@@ -17,7 +17,7 @@ request_body = EdiscoveryReviewTag(
 	}
 )
 
-result = await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').tags.post(request_body = request_body)
+result = await graph_client.security.cases.ediscovery_cases.by_ediscovery_case_id('ediscoveryCase-id').tags.post(body = request_body)
 
 
 ```

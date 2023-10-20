@@ -15,7 +15,7 @@ request_body = PrintTaskDefinition(
 	),
 )
 
-result = await graph_client.print.task_definitions.post(request_body = request_body)
+result = await graph_client.print.task_definitions.post(body = request_body)
 
 
 ```

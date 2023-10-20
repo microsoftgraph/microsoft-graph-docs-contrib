@@ -13,7 +13,7 @@ request_body = TeamsAppSettings(
 	is_chat_resource_specific_consent_enabled = True,
 )
 
-result = await graph_client.teamwork.team_app_settings.patch(request_body = request_body)
+result = await graph_client.teamwork.team_app_settings.patch(body = request_body)
 
 
 ```

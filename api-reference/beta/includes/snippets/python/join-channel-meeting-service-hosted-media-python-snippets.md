@@ -49,7 +49,7 @@ request_body = Call(
 	),
 )
 
-result = await graph_client.communications.calls.post(request_body = request_body)
+result = await graph_client.communications.calls.post(body = request_body)
 
 
 ```

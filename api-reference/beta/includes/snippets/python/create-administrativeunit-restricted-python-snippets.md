@@ -14,7 +14,7 @@ request_body = AdministrativeUnit(
 	is_member_management_restricted = True,
 )
 
-result = await graph_client.administrative_units.post(request_body = request_body)
+result = await graph_client.administrative_units.post(body = request_body)
 
 
 ```

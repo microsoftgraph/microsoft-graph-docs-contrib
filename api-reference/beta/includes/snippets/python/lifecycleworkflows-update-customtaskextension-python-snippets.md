@@ -32,7 +32,7 @@ request_body = CustomTaskExtension(
 	),
 )
 
-result = await graph_client.identity_governance.lifecycle_workflows.custom_task_extensions.by_custom_task_extension_id('customTaskExtension-id').patch(request_body = request_body)
+result = await graph_client.identity_governance.lifecycle_workflows.custom_task_extensions.by_custom_task_extension_id('customTaskExtension-id').patch(body = request_body)
 
 
 ```

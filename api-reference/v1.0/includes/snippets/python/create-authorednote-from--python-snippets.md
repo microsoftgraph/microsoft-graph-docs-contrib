@@ -15,7 +15,7 @@ request_body = AuthoredNote(
 	),
 )
 
-result = await graph_client.privacy.subject_right_requests.by_subject_right_request_id('subjectRightsRequest-id').notes.post(request_body = request_body)
+result = await graph_client.privacy.subject_right_requests.by_subject_right_request_id('subjectRightsRequest-id').notes.post(body = request_body)
 
 
 ```

@@ -43,7 +43,7 @@ request_body = BookingCustomer(
 	]
 )
 
-result = await graph_client.booking_businesses.by_booking_businesse_id('bookingBusiness-id').customers.post(request_body = request_body)
+result = await graph_client.booking_businesses.by_booking_businesse_id('bookingBusiness-id').customers.post(body = request_body)
 
 
 ```

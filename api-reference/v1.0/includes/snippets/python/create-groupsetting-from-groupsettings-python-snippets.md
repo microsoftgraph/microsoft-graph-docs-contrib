@@ -30,7 +30,7 @@ request_body = GroupSetting(
 	]
 )
 
-result = await graph_client.group_settings.post(request_body = request_body)
+result = await graph_client.group_settings.post(body = request_body)
 
 
 ```

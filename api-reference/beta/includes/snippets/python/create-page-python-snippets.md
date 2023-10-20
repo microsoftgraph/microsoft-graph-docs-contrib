@@ -106,7 +106,7 @@ request_body = SitePage(
 	),
 )
 
-result = await graph_client.sites.by_site_id('site-id').pages.post(request_body = request_body)
+result = await graph_client.sites.by_site_id('site-id').pages.post(body = request_body)
 
 
 ```

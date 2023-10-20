@@ -50,7 +50,7 @@ request_body = CreateNewVersionPostRequestBody(
 	),
 )
 
-result = await graph_client.identity_governance.lifecycle_workflows.workflows.by_workflow_id('workflow-id').microsoft_graph_identity_governance_create_new_version.post(request_body = request_body)
+result = await graph_client.identity_governance.lifecycle_workflows.workflows.by_workflow_id('workflow-id').microsoft_graph_identity_governance_create_new_version.post(body = request_body)
 
 
 ```

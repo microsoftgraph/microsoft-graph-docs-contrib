@@ -13,7 +13,7 @@ request_body = MultiTenantOrganizationMember(
 	display_name = "Fabrikam",
 )
 
-result = await graph_client.tenant_relationships.multi_tenant_organization.tenants.post(request_body = request_body)
+result = await graph_client.tenant_relationships.multi_tenant_organization.tenants.post(body = request_body)
 
 
 ```

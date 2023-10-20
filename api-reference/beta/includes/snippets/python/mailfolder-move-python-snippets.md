@@ -12,7 +12,7 @@ request_body = MovePostRequestBody(
 	destination_id = "destinationId-value",
 )
 
-result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').move.post(request_body = request_body)
+result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').move.post(body = request_body)
 
 
 ```

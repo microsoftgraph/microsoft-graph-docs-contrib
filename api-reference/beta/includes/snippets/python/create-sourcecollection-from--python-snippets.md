@@ -18,7 +18,7 @@ request_body = SourceCollection(
 	}
 )
 
-result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').source_collections.post(request_body = request_body)
+result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').source_collections.post(body = request_body)
 
 
 ```

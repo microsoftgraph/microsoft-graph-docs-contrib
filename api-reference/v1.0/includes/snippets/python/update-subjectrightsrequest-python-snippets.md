@@ -13,7 +13,7 @@ request_body = SubjectRightsRequest(
 	internal_due_date_time = "2021-08-30T00:00:00Z",
 )
 
-result = await graph_client.privacy.subject_right_requests.by_subject_right_request_id('subjectRightsRequest-id').patch(request_body = request_body)
+result = await graph_client.privacy.subject_right_requests.by_subject_right_request_id('subjectRightsRequest-id').patch(body = request_body)
 
 
 ```

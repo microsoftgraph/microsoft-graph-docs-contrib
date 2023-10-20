@@ -18,7 +18,7 @@ request_body = Group(
 	mail_nickname = "library-help",
 )
 
-result = await graph_client.groups.by_group_id('group-id').patch(request_body = request_body)
+result = await graph_client.groups.by_group_id('group-id').patch(body = request_body)
 
 
 ```

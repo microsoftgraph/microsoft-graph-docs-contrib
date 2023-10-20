@@ -15,7 +15,7 @@ request_body = ScopedRoleMembership(
 	),
 )
 
-result = await graph_client.directory.administrative_units.by_administrative_unit_id('administrativeUnit-id').scoped_role_members.post(request_body = request_body)
+result = await graph_client.directory.administrative_units.by_administrative_unit_id('administrativeUnit-id').scoped_role_members.post(body = request_body)
 
 
 ```

@@ -12,7 +12,7 @@ request_body = AccessPackage(
 	display_name = "Access Package New Name",
 )
 
-result = await graph_client.identity_governance.entitlement_management.acce_packages.by_acces_package_id('accessPackage-id').patch(request_body = request_body)
+result = await graph_client.identity_governance.entitlement_management.acce_packages.by_acces_package_id('accessPackage-id').patch(body = request_body)
 
 
 ```

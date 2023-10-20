@@ -24,7 +24,7 @@ request_body = TargetedManagedAppConfiguration(
 	is_assigned = True,
 )
 
-result = await graph_client.device_app_management.targeted_managed_app_configurations.post(request_body = request_body)
+result = await graph_client.device_app_management.targeted_managed_app_configurations.post(body = request_body)
 
 
 ```

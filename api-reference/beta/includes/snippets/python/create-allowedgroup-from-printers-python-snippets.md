@@ -12,7 +12,7 @@ request_body = ReferenceCreate(
 	odata_id = "https://graph.microsoft.com/beta/groups/{id}",
 )
 
-await graph_client.print.shares.by_share_id('printerShare-id').allowed_groups.ref.post(request_body = request_body)
+await graph_client.print.shares.by_share_id('printerShare-id').allowed_groups.ref.post(body = request_body)
 
 
 ```

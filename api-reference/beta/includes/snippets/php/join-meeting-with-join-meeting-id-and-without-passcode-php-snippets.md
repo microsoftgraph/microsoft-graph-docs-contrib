@@ -29,7 +29,7 @@ $requestBody->setMediaConfig($mediaConfig);
 $meetingInfo = new JoinMeetingIdMeetingInfo();
 $meetingInfo->setOdataType('#microsoft.graph.joinMeetingIdMeetingInfo');
 $meetingInfo->setJoinMeetingId('1234567');
-$MeetingInfo->setPasscode(null);
+$meetingInfo->setPasscode(null);
 $requestBody->setMeetingInfo($meetingInfo);
 $requestBody->setTenantId('86dc81db-c112-4228-9222-63f3esaa1edb');
 

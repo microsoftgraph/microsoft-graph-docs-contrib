@@ -13,7 +13,7 @@ request_body = DeviceComplianceScheduledActionForRule(
 	rule_name = "Rule Name value",
 )
 
-result = await graph_client.device_management.device_compliance_policies.by_device_compliance_policie_id('deviceCompliancePolicy-id').scheduled_action_for_rule.by_scheduled_action_for_rule_id('deviceComplianceScheduledActionForRule-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_compliance_policies.by_device_compliance_policie_id('deviceCompliancePolicy-id').scheduled_action_for_rule.by_scheduled_action_for_rule_id('deviceComplianceScheduledActionForRule-id').patch(body = request_body)
 
 
 ```

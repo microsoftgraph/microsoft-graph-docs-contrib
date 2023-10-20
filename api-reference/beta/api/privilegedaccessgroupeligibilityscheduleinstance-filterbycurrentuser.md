@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Return instances of membership and ownership eligibility schedules for the calling principal.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -58,9 +60,7 @@ If successful, this function returns a `200 OK` response code and a [privilegedA
 
 ## Examples
 
-### Example 1: Retrieve schedule instances for the calling principal
-
-#### Request
+### Request
 The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/e
 
 ---
 
-#### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

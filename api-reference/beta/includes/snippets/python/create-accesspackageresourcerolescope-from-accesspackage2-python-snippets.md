@@ -23,7 +23,7 @@ request_body = AccessPackageResourceRoleScope(
 	),
 )
 
-result = await graph_client.identity_governance.entitlement_management.acce_packages.by_acce_package_id('accessPackage-id').acces_package_resource_role_scopes.post(request_body = request_body)
+result = await graph_client.identity_governance.entitlement_management.acce_packages.by_acce_package_id('accessPackage-id').acces_package_resource_role_scopes.post(body = request_body)
 
 
 ```

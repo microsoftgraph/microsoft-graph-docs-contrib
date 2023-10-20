@@ -28,7 +28,7 @@ request_body = WindowsAutopilotDeviceIdentity(
 	display_name = "Display Name value",
 )
 
-result = await graph_client.device_management.window_autopilot_device_identities.post(request_body = request_body)
+result = await graph_client.device_management.window_autopilot_device_identities.post(body = request_body)
 
 
 ```

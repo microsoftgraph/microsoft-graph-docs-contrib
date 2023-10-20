@@ -13,7 +13,7 @@ request_body = AddPostRequestBody(
 	has_headers = True,
 )
 
-result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.tables.add.post(request_body = request_body)
+result = await graph_client.drives.by_drive_id('drive-id').items.by_item_id('driveItem-id').workbook.tables.add.post(body = request_body)
 
 
 ```

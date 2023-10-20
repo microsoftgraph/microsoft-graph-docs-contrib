@@ -26,7 +26,7 @@ $additionalData = [
 ];
 $appliedCategories->setAdditionalData($additionalData);
 $requestBody->setAppliedCategories($appliedCategories);
-$requestConfiguration = new PlannerTaskRequestBuilderPatchRequestConfiguration();
+$requestConfiguration = new PlannerTaskItemRequestBuilderPatchRequestConfiguration();
 $headers = [
 		'Prefer' => 'return=representation',
 		'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',

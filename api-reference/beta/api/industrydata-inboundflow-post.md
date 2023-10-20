@@ -21,6 +21,8 @@ The following prerequisite resources are required when you create an **inboundFl
 - [sourceSystemDefinition](../resources/industrydata-sourcesystemdefinition.md)
 - [yearTimePeriodDefinition](../resources/industrydata-yeartimeperioddefinition.md)
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

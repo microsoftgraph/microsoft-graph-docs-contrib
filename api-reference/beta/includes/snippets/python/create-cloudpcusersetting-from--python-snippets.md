@@ -19,7 +19,7 @@ request_body = CloudPcUserSetting(
 	),
 )
 
-result = await graph_client.device_management.virtual_endpoint.user_settings.post(request_body = request_body)
+result = await graph_client.device_management.virtual_endpoint.user_settings.post(body = request_body)
 
 
 ```

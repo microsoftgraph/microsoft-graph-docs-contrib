@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Upload a plain text secret to a [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). Examples of secrets are application secrets in Azure Active Directory, Google, Facebook, or any other identity provider. his method returns [trustFrameworkKey](../resources/trustframeworkkey.md).
+Upload a plain text secret to a [trustFrameworkKeyset](../resources/trustframeworkkeyset.md). Examples of secrets are application secrets in Microsoft Entra ID, Google, Facebook, or any other identity provider. his method returns [trustFrameworkKey](../resources/trustframeworkkey.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -147,5 +149,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

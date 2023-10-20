@@ -17,7 +17,7 @@ request_body = PersonInterest(
 	web_url = "https://www.chelseafc.com",
 )
 
-result = await graph_client.me.profile.interests.post(request_body = request_body)
+result = await graph_client.me.profile.interests.post(body = request_body)
 
 
 ```

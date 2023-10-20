@@ -15,6 +15,8 @@ Delete the [channel](../resources/channel.md).
 
 > **Note**: There is a known issue with application permissions and this API. For details, see the [known issues list](/graph/known-issues#application-permissions).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -54,7 +56,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 <!-- markdownlint-disable MD025 -->
 
 # [HTTP](#tab/http)
@@ -105,7 +107,7 @@ DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

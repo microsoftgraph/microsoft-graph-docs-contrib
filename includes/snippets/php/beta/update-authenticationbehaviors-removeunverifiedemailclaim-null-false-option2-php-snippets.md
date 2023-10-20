@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new Application();
 $authenticationBehaviors = new AuthenticationBehaviors();
-$AuthenticationBehaviors->setRemoveUnverifiedEmailClaim(null);
+$authenticationBehaviors->setRemoveUnverifiedEmailClaim(null);
 $requestBody->setAuthenticationBehaviors($authenticationBehaviors);
 
 $result = $graphServiceClient->applications()->byApplicationId('application-id')->patch($requestBody)->wait();

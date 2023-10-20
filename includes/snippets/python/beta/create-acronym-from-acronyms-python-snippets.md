@@ -16,7 +16,7 @@ request_body = Acronym(
 	state = AnswerState.Published,
 )
 
-result = await graph_client.search.acronyms.post(request_body = request_body)
+result = await graph_client.search.acronyms.post(body = request_body)
 
 
 ```

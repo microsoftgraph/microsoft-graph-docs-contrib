@@ -18,7 +18,7 @@ request_body = EBookInstallSummary(
 	not_installed_user_count = 5,
 )
 
-result = await graph_client.device_app_management.managed_e_books.by_managed_e_book_id('managedEBook-id').install_summary.patch(request_body = request_body)
+result = await graph_client.device_app_management.managed_e_books.by_managed_e_book_id('managedEBook-id').install_summary.patch(body = request_body)
 
 
 ```

@@ -14,6 +14,8 @@ Namespace: microsoft.graph.externalConnectors
 
 Create an [identity](../resources/externalconnectors-identity.md) resource for a new member in an [externalGroup](../resources/externalconnectors-externalgroup.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +51,7 @@ You can specify the following properties when creating an **identity** resource 
 
 | Property       | Type                    | Description                                              |
 |:---------------|:------------------------|:---------------------------------------------------------|
-| id             | String                  | The unique `id` of the member. It would be the **objectId** in case of Azure Active Directory users or groups and the **externalGroupId** in case of external groups. Required.                                    |
+| id             | String                  | The unique `id` of the member. It would be the **objectId** in case of Microsoft Entra users or groups and the **externalGroupId** in case of external groups. Required.                                    |
 | type           | microsoft.graph.externalConnectors.identityType | The type of member added to the external group. Possible values are: `user`,`group`, `externalGroup`. Required. |
 
 
@@ -59,7 +61,9 @@ If successful, this method returns a `201 Created` response code and an **identi
 
 ## Examples
 
-### Example 1: Add an Azure Active Directory user as a member
+<a name='example-1-add-an-azure-active-directory-user-as-a-member'></a>
+
+### Example 1: Add a Microsoft Entra user as a member
 
 #### Request
 
@@ -136,7 +140,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Add an Azure Active Directory group as a member
+<a name='example-2-add-an-azure-active-directory-group-as-a-member'></a>
+
+### Example 2: Add a Microsoft Entra group as a member
 
 #### Request
 

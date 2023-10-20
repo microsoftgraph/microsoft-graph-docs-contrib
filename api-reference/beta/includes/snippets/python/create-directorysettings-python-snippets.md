@@ -30,7 +30,7 @@ request_body = DirectorySetting(
 	]
 )
 
-result = await graph_client.settings.post(request_body = request_body)
+result = await graph_client.settings.post(body = request_body)
 
 
 ```
