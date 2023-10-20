@@ -45,7 +45,7 @@ GET /solutions/virtualEvents/webinars
 
 ## Optional query parameters
 
-This method supports the `$count` [OData query parameter](/graph/query-parameters) to help customize the response. When (`?$count=true`) is supplied, the response will have a root level property denoting the total number of the resource (e.g. "@odata.count": 6).
+This method supports the `$count` [OData query parameter](/graph/query-parameters) to help customize the response. When (`?$count=true`) is supplied, the response has a root level property denoting the total number of the resource (for example, "@odata.count": 6).
 
 Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
