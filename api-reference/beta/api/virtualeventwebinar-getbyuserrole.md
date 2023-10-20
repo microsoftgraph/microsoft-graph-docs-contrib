@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Function to get a [virtualEventWebinar](../resources/virtualeventwebinar.md) collection where I am the organizer or a co-organizer.
+Function to get a [virtualEventWebinar](../resources/virtualeventwebinar.md) collection where the signed-in user is the organizer or a co-organizer.
 
 ## Permissions
 
