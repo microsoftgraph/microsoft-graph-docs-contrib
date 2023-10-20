@@ -102,7 +102,7 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 
 | Dataset name | Description | Details |
 | --- | --- | --- |
-| TodoTaskFolders_v0 | Use this dataset to identify tasks in Microsoft Outlook that track user-level work items. | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-todotaskfolders.md) |
+| TodoTaskFolders_v0 | Use this dataset to identify tasks folders in Microsoft Outlook that track user-level work items. | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-todotaskfolders.md) |
 | TodoTasks_v0 | Use this dataset to identify Tasks in Microsoft Outlook that track user-level work items. | [Learn more](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-todotasks.md) |
 
 ### User
