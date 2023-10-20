@@ -26,7 +26,7 @@ Represents the tenant-level installation options for Microsoft 365 Apps. Specify
 
 | Property       | Type           | Description                                 |
 | -------------- | -------------- | ------------------------------------------- |
-| updateChannel | [appsUpdateChannelType](../resources/appsUpdateChannelType.md) | Sepcify how often users get feature updates for Microsoft 365 Apps installed on devices running Windows. The possible values are: 'current', 'monthlyEnterprise', or 'semiAnnual', with corresponding update frequencies of 'As soon as they're ready', 'Once a month', and 'Every six months'. |
+| updateChannel | [appsUpdateChannelType](../resources/appsUpdateChannelType.md) | Specify how often users get feature updates for Microsoft 365 Apps installed on devices running Windows. The possible values are: 'current', 'monthlyEnterprise', or 'semiAnnual', with corresponding update frequencies of 'As soon as they're ready', 'Once a month', and 'Every six months'. |
 | appsForWindows | [appsInstallationOptionsForWindows](../resources/appsInstallationOptionsForWindows.md) | The Microsoft 365 applications installation options container object for Windows platform. |
 | appsForMac | [appsInstallationOptionsForMac](../resources/appsInstallationOptionsForMac.md) | The Microsoft 365 applications installation options container object for MAC platform. |
 
