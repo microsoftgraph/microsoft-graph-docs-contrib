@@ -18,8 +18,8 @@ This is a Microsoft 365 applications installation options container object for M
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| isMicrosoft365AppsEnabled | Boolean | Specifies whether the users can install Microsoft 365 apps on their MAC devices. Default value is `true` meaning users with active license assigned can install. |
-| isSkypeForBusinessEnabled | Boolean | Specifies whether the users can install Skype for Business (X EI Capitan 10.11 or higher) on their MAC devices. Default value is `true` meaning users with active license assigned can install. |
+| isMicrosoft365AppsEnabled | Boolean | Specifies if users can install Microsoft 365 apps on their MAC devices. The default value is `true`, meaning a user with an active license assigned can install. |
+| isSkypeForBusinessEnabled | Boolean | Specifies if users can install Skype for Business on their MAC devices running OS X El Capitan 10.11 or later. The default value is `true`, meaning a user with an active license assigned can install. |
 
 ## Relationships
 None.
