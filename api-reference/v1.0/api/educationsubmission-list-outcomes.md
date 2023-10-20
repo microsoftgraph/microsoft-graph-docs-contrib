@@ -47,7 +47,7 @@ GET /education/classes/{classId}/assignments/{assignmentId}/submissions/{submiss
 
 This method supports the `$top`, `$filter`, and `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
-All [properties](/graph/api/resources/educationsubmissionlistoutcomes#properties) are supported for the query parameters `$filter` and `$orderby`.
+All [properties](../resources/educationsubmissionlistoutcomes.md#properties) are supported for the query parameters `$filter` and `$orderby`.
 
 ## Request headers
 
@@ -402,7 +402,6 @@ Content-type: application/json
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_outcomes_by_orderby"

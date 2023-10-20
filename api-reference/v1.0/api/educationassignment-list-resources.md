@@ -236,7 +236,6 @@ Content-type: application/json
 ### Request
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "sampleKeys": ["2003c52e-807a-4186-9b49-60c573095461","131eeaaa-829e-4c6c-9cf3-491b1320fe4d"],
