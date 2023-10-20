@@ -114,7 +114,7 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 
 ### OneDrive and SharePoint Online
 
-Please consider that these datasets are available after 48 hours (about two days). For example, you can query data for 07/01 starting on 07/03.  
+The OneDrive and SharePoint Online datasets are available after 48 hours (about two days). For example, you can query data for 07/01 starting on 07/03.  
 
 The data available is from the last 21 days (about three weeks). For example, if you would like to query data for 07/01, you can do so from 07/03 to 07/24. 
 
