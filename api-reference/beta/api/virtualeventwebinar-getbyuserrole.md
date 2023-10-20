@@ -68,7 +68,7 @@ The following example shows a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/me/virtualEvents/webinars/getByUserRole(role='organizer')
+GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/getByUserRole(role='organizer')
 ```
 
 ### Response
