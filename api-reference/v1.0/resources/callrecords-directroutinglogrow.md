@@ -25,8 +25,8 @@ Represents a row of data in the direct routing call log. Each row maps to one ca
 |:---|:---|:---|
 |callEndSubReason|Int32| In addition to the SIP codes, Microsoft has own subcodes that indicate the specific issue.|
 |callType|String| Call type and direction.|
-|calleeNumber|String| Number of the user or bot who received the call. [E.164](https://en.wikipedia.org/wiki/E.164) format, but may include other data.|
-|callerNumber|String| Number of the user or bot who made the call. [E.164](https://en.wikipedia.org/wiki/E.164) format, but may include other data.|
+|calleeNumber|String| Number of the user or bot who received the call. [E.164](https://en.wikipedia.org/wiki/E.164) format, but might include other data.|
+|callerNumber|String| Number of the user or bot who made the call. [E.164](https://en.wikipedia.org/wiki/E.164) format, but might include other data.|
 |correlationId|String|Identifier for the call that you can use when calling Microsoft Support. GUID.|
 |duration|Int32| Duration of the call in seconds.|
 |endDateTime|DateTimeOffset| Only exists for successful (fully established) calls. Time when call ended.|
@@ -42,8 +42,8 @@ Represents a row of data in the direct routing call log. Each row maps to one ca
 |successfulCall|Boolean| Success or attempt.|
 |trunkFullyQualifiedDomainName|String| Fully qualified domain name of the session border controller.|
 |userDisplayName|String|Display name of the user.|
-|userId|String|Calling user's ID in Graph. This and other user info will be null/empty for bot call types. GUID.|
-|userPrincipalName|String|UserPrincipalName (sign-in name) in Microsoft Entra ID. This is usually the same as user's SIP Address, and can be same as user's e-mail address.|
+|userId|String|Calling user's ID in Microsoft Graph. This and other user info is null/empty for bot call types. GUID.|
+|userPrincipalName|String|UserPrincipalName (sign-in name) in Microsoft Entra ID. This is usually the same as user's SIP Address, and can be same as user's email address.|
 
 ## Relationships
 
