@@ -1,6 +1,6 @@
 ---
 title: "List virtualEventWebinars"
-description: "Get a list of all virtualEventWebinar objects under a virtual event."
+description: "Get a list of all virtualEventWebinar objects."
 author: "halleclottey-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of all [virtualEventWebinar](../resources/virtualeventwebinar.md) objects under a virtual event.
+Get a list of all [virtualEventWebinar](../resources/virtualeventwebinar.md) objects created in the tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|VirtualEvent.Read|
+|Delegated (work or school account)|Not supported.|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|VirtualEvent.Read.All|
 
@@ -66,16 +66,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 
 The following is an example of a request.
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "list_virtualeventwebinars",
-}
--->
-``` http
-GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars
-```
----
 
 ### Response
 
