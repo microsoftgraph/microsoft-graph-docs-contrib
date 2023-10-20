@@ -1,6 +1,6 @@
 ---
 title: "programControlType resource type (deprecated)"
-description: "In the Azure AD access reviews feature, the program control type is used when associating a control to a program, to indicate the type of access review the control is for.  "
+description: "In the Microsoft Entra access reviews feature, the program control type is used when associating a control to a program, to indicate the type of access review the control is for.  "
 ms.localizationpriority: medium
 doc_type: resourcePageType
 ms.prod: "governance"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Azure AD [access reviews](accessreviews-root.md) feature, the program control type is used when associating a control to a program, to indicate the type of access review the control is for.  
+In the Microsoft Entra [access reviews](accessreviews-root.md) feature, the program control type is used when associating a control to a program, to indicate the type of access review the control is for.  
 
 The program control type objects are automatically generated when the global administrator onboards the tenant to use the access reviews feature.  No additional program control types can be created.
 
@@ -75,5 +75,3 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-
