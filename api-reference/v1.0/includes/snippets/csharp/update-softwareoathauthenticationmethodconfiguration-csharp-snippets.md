@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new AuthenticationMethodConfiguration
+var requestBody = new SoftwareOathAuthenticationMethodConfiguration
 {
 	OdataType = "#microsoft.graph.softwareOathAuthenticationMethodConfiguration",
 	State = AuthenticationMethodState.Disabled,

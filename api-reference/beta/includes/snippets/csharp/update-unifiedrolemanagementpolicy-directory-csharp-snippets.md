@@ -12,7 +12,7 @@ var requestBody = new UnifiedRoleManagementPolicy
 {
 	Rules = new List<UnifiedRoleManagementPolicyRule>
 	{
-		new UnifiedRoleManagementPolicyRule
+		new UnifiedRoleManagementPolicyApprovalRule
 		{
 			OdataType = "#microsoft.graph.unifiedRoleManagementPolicyApprovalRule",
 			Id = "Approval_EndUser_Assignment",
@@ -24,46 +24,43 @@ var requestBody = new UnifiedRoleManagementPolicy
 					"All",
 				},
 				Level = "Assignment",
-				InheritableSettings = new List<String>
+				InheritableSettings = new List<string>
 				{
 				},
-				EnforcedSettings = new List<String>
+				EnforcedSettings = new List<string>
 				{
 				},
 			},
-			AdditionalData = new Dictionary<string, object>
+			Setting = new ApprovalSettings
 			{
+				IsApprovalRequired = false,
+				IsApprovalRequiredForExtension = false,
+				IsRequestorJustificationRequired = true,
+				ApprovalMode = "SingleStage",
+				ApprovalStages = new List<ApprovalStage>
 				{
-					"setting" , new 
+					new ApprovalStage
 					{
-						IsApprovalRequired = false,
-						IsApprovalRequiredForExtension = false,
-						IsRequestorJustificationRequired = true,
-						ApprovalMode = "SingleStage",
-						ApprovalStages = new List<>
+						ApprovalStageTimeOutInDays = 1,
+						IsApproverJustificationRequired = true,
+						EscalationTimeInMinutes = 0,
+						IsEscalationEnabled = false,
+						PrimaryApprovers = new List<UserSet>
 						{
-							new 
-							{
-								ApprovalStageTimeOutInDays = 1,
-								IsApproverJustificationRequired = true,
-								EscalationTimeInMinutes = 0,
-								IsEscalationEnabled = false,
-								PrimaryApprovers = new List<>
-								{
-								},
-								EscalationApprovers = new List<>
-								{
-								},
-							},
 						},
-					}
+						EscalationApprovers = new List<UserSet>
+						{
+						},
+					},
 				},
 			},
 		},
-		new UnifiedRoleManagementPolicyRule
+		new UnifiedRoleManagementPolicyAuthenticationContextRule
 		{
 			OdataType = "#microsoft.graph.unifiedRoleManagementPolicyAuthenticationContextRule",
 			Id = "AuthenticationContext_EndUser_Assignment",
+			IsEnabled = false,
+			ClaimValue = "",
 			Target = new UnifiedRoleManagementPolicyRuleTarget
 			{
 				Caller = "EndUser",
@@ -72,27 +69,21 @@ var requestBody = new UnifiedRoleManagementPolicy
 					"All",
 				},
 				Level = "Assignment",
-				InheritableSettings = new List<String>
+				InheritableSettings = new List<string>
 				{
 				},
-				EnforcedSettings = new List<String>
+				EnforcedSettings = new List<string>
 				{
-				},
-			},
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"isEnabled" , false
-				},
-				{
-					"claimValue" , ""
 				},
 			},
 		},
-		new UnifiedRoleManagementPolicyRule
+		new UnifiedRoleManagementPolicyEnablementRule
 		{
 			OdataType = "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule",
 			Id = "Enablement_Admin_Eligibility",
+			EnabledRules = new List<string>
+			{
+			},
 			Target = new UnifiedRoleManagementPolicyRuleTarget
 			{
 				Caller = "Admin",
@@ -101,26 +92,20 @@ var requestBody = new UnifiedRoleManagementPolicy
 					"All",
 				},
 				Level = "Eligibility",
-				InheritableSettings = new List<String>
+				InheritableSettings = new List<string>
 				{
 				},
-				EnforcedSettings = new List<String>
+				EnforcedSettings = new List<string>
 				{
-				},
-			},
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"enabledRules" , new List<>
-					{
-					}
 				},
 			},
 		},
-		new UnifiedRoleManagementPolicyRule
+		new UnifiedRoleManagementPolicyExpirationRule
 		{
 			OdataType = "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule",
 			Id = "Expiration_Admin_Eligibility",
+			IsExpirationRequired = false,
+			MaximumDuration = TimeSpan.Parse("P365D"),
 			Target = new UnifiedRoleManagementPolicyRuleTarget
 			{
 				Caller = "Admin",
@@ -129,27 +114,25 @@ var requestBody = new UnifiedRoleManagementPolicy
 					"All",
 				},
 				Level = "Eligibility",
-				InheritableSettings = new List<String>
+				InheritableSettings = new List<string>
 				{
 				},
-				EnforcedSettings = new List<String>
+				EnforcedSettings = new List<string>
 				{
-				},
-			},
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"isExpirationRequired" , false
-				},
-				{
-					"maximumDuration" , "P365D"
 				},
 			},
 		},
-		new UnifiedRoleManagementPolicyRule
+		new UnifiedRoleManagementPolicyNotificationRule
 		{
 			OdataType = "#microsoft.graph.unifiedRoleManagementPolicyNotificationRule",
 			Id = "Notification_Admin_Admin_Eligibility",
+			NotificationType = "Email",
+			RecipientType = "Admin",
+			NotificationLevel = "All",
+			IsDefaultRecipientsEnabled = true,
+			NotificationRecipients = new List<string>
+			{
+			},
 			Target = new UnifiedRoleManagementPolicyRuleTarget
 			{
 				Caller = "Admin",
@@ -158,31 +141,11 @@ var requestBody = new UnifiedRoleManagementPolicy
 					"All",
 				},
 				Level = "Eligibility",
-				InheritableSettings = new List<String>
+				InheritableSettings = new List<string>
 				{
 				},
-				EnforcedSettings = new List<String>
+				EnforcedSettings = new List<string>
 				{
-				},
-			},
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"notificationType" , "Email"
-				},
-				{
-					"recipientType" , "Admin"
-				},
-				{
-					"notificationLevel" , "All"
-				},
-				{
-					"isDefaultRecipientsEnabled" , true
-				},
-				{
-					"notificationRecipients" , new List<>
-					{
-					}
 				},
 			},
 		},

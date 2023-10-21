@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.IdentityGovernance().AccessReviews().Policy().Get(context.Background(), nil)
+policy, err := graphClient.IdentityGovernance().AccessReviews().Policy().Get(context.Background(), nil)
 
 
 ```

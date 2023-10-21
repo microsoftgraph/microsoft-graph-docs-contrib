@@ -68,7 +68,7 @@ The following table shows the properties that are required when you create the [
 |servers|[vpnServer](../resources/intune-deviceconfig-vpnserver.md) collection|List of VPN Servers on the network. Make sure end users can access these network locations. This collection can contain a maximum of 500 elements.|
 |fingerprint|String|Fingerprint is a string that will be used to verify the VPN server can be trusted, which is only applicable when connection type is Check Point Capsule VPN.|
 |customData|[keyValue](../resources/intune-deviceconfig-keyvalue.md) collection|Custom data when connection type is set to Citrix. This collection can contain a maximum of 25 elements.|
-|customKeyValueData|[keyValuePair](../resources/intune-deviceconfig-keyvaluepair.md) collection|Custom data when connection type is set to Citrix. This collection can contain a maximum of 25 elements.|
+|customKeyValueData|[keyValuePair](../resources/intune-shared-keyvaluepair.md) collection|Custom data when connection type is set to Citrix. This collection can contain a maximum of 25 elements.|
 |authenticationMethod|[vpnAuthenticationMethod](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Authentication method. Possible values are: `certificate`, `usernameAndPassword`, `sharedSecret`, `derivedCredential`, `azureAD`.|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Proxy server.|
 |targetedPackageIds|String collection|Targeted App package IDs.|
@@ -76,6 +76,7 @@ The following table shows the properties that are required when you create the [
 |alwaysOn|Boolean|Whether or not to enable always-on VPN connection.|
 |alwaysOnLockdown|Boolean|If always-on VPN connection is enabled, whether or not to lock network traffic when that VPN is disconnected.|
 |microsoftTunnelSiteId|String|Microsoft Tunnel site ID.|
+|proxyExclusionList|String collection|List of hosts to exclude using the proxy on connections for. These hosts can use wildcards such as *.example.com.|
 
 
 
@@ -89,7 +90,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2422
+Content-length: 2489
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileVpnConfiguration",
@@ -169,7 +170,10 @@ Content-length: 2422
   ],
   "alwaysOn": true,
   "alwaysOnLockdown": true,
-  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
+  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
+  "proxyExclusionList": [
+    "Proxy Exclusion List value"
+  ]
 }
 ```
 
@@ -178,7 +182,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2594
+Content-Length: 2661
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileVpnConfiguration",
@@ -261,6 +265,9 @@ Content-Length: 2594
   ],
   "alwaysOn": true,
   "alwaysOnLockdown": true,
-  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value"
+  "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
+  "proxyExclusionList": [
+    "Proxy Exclusion List value"
+  ]
 }
 ```

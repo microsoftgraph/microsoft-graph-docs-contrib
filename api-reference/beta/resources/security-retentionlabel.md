@@ -18,13 +18,14 @@ Represents how customers can manage their data, including whether and for how lo
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List retentionLabels](../api/security-retentionlabel-list.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md) collection|Get a list of the [retentionLabel](../resources/security-retentionlabel.md) objects and their properties.|
-|[Create retentionLabel](../api/security-retentionlabel-post.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Create a new [retentionLabel](../resources/security-retentionlabel.md) object.|
+|[List retentionLabels](../api/security-labelsroot-list-retentionlabel.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md) collection|Get a list of the [retentionLabel](../resources/security-retentionlabel.md) objects and their properties.|
+|[Create retentionLabel](../api/security-labelsroot-post-retentionlabel.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Create a new [retentionLabel](../resources/security-retentionlabel.md) object.|
 |[Get retentionLabel](../api/security-retentionlabel-get.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Read the properties and relationships of a [retentionLabel](../resources/security-retentionlabel.md) object.|
 |[Update retentionLabel](../api/security-retentionlabel-update.md)|[microsoft.graph.security.retentionLabel](../resources/security-retentionlabel.md)|Update the properties of a [retentionLabel](../resources/security-retentionlabel.md) object.|
 |[Delete retentionLabel](../api/security-retentionlabel-delete.md)|None|Delete a [retentionLabel](../resources/security-retentionlabel.md) object.|
 |[List retentionEventType](../api/security-retentioneventtype-list.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md) collection|Get the retentionEventType resources from the exapnd eventType navigation property.|
 |[Add retentionEventType](../api/security-retentioneventtype-post.md)|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Add eventType by adding the relevant odata property when creating a label.|
+
 
 ## Properties
 |Property|Type|Description|
@@ -36,7 +37,6 @@ Represents how customers can manage their data, including whether and for how lo
 |descriptionForAdmins|String|Provides label information for the admin. Optional.|
 |descriptionForUsers|String|Provides the label information for the user. Optional.|
 |displayName|String|Unique string that defines a label name.|
-|dispositionReviewStages|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md) collection|Review stages during which reviewers are notified to determine whether a document must be deleted or retained.|
 |id|String|Unique ID of the retentionLabel. [entity](/graph/api/resources/entity).|
 |isInUse|Boolean|Specifies whether the label is currently being used.|
 |lastModifiedBy|[microsoft.graph.identitySet](/graph/api/resources/identityset)|The user who last modified the retentionLabel.|
@@ -51,7 +51,10 @@ Represents how customers can manage their data, including whether and for how lo
 |Relationship|Type|Description|
 |:---|:---|:---|
 |dispositionReviewStages|[microsoft.graph.security.dispositionReviewStage](../resources/security-dispositionreviewstage.md) collection|When action at the end of retention is chosen as 'dispositionReview', dispositionReviewStages specifies a sequential set of stages with at least one reviewer in each stage.|
-|eventType|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Represents the type associated with a retention event..|
+|retentionEventType|[microsoft.graph.security.retentionEventType](../resources/security-retentioneventtype.md)|Represents the type associated with a retention event.|
+|descriptors|[microsoft.graph.security.filePlanDescriptor](../resources/security-fileplandescriptor.md)|Represents out-of-the-box values that provide more options to improve the manageability and organization of the content you need to label.|
+
+
 
 ## JSON representation
 The following is a JSON representation of the resource.

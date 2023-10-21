@@ -13,10 +13,10 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
-requestBody := graphusers.NewCreateUploadSessionPostRequestBody()
+requestBody := graphusers.NewItemCreateUploadSessionPostRequestBody()
 attachmentItem := graphmodels.NewAttachmentItem()
 attachmentType := graphmodels.FILE_ATTACHMENTTYPE 
 attachmentItem.SetAttachmentType(&attachmentType) 
@@ -26,7 +26,7 @@ size := int64(3483322)
 attachmentItem.SetSize(&size) 
 requestBody.SetAttachmentItem(attachmentItem)
 
-result, err := graphClient.Me().Messages().ByMessageId("message-id").Attachments().CreateUploadSession().Post(context.Background(), requestBody, nil)
+createUploadSession, err := graphClient.Me().Messages().ByMessageId("message-id").Attachments().CreateUploadSession().Post(context.Background(), requestBody, nil)
 
 
 ```

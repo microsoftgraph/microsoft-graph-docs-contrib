@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewMessage()
@@ -36,11 +36,10 @@ recipient.SetEmailAddress(emailAddress)
 
 toRecipients := []graphmodels.Recipientable {
 	recipient,
-
 }
 requestBody.SetToRecipients(toRecipients)
 
-result, err := graphClient.Me().Messages().Post(context.Background(), requestBody, nil)
+messages, err := graphClient.Me().Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

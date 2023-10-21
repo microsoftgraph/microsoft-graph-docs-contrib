@@ -40,6 +40,7 @@ This article describes implementation and operational limits for Microsoft Graph
 | ---------- | ----- |
 | Throughput limit to ingest items through a connection | 25 items/sec |
 | Item size; this limit applies to the request body when [ingesting and indexing an item](/graph/api/externalconnectors-externalconnection-put-items) | 4 MB |
+| Number of [activities](/graph/api/resources/externalconnectors-externalactivity); this is the [throttling](#throttling) threshold per activities call | 20 activities |
 | Property size | N/A |
 
 ## Throttling

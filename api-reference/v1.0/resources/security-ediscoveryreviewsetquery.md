@@ -1,6 +1,6 @@
 ---
 title: "ediscoveryReviewSetQuery resource type"
-description: "Represents a review set query, which is used to query and cull data stored in an eDiscovery reviewSet."
+description: "Represents a review set query, which is used to query and cull data stored in a Microsoft Purview eDiscovery reviewSet."
 author: "SeunginLyu"
 ms.localizationpriority: medium
 ms.prod: "ediscovery"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.security
 
 
 
-Represents a review set query, which is used to query and cull data stored in an eDiscovery [reviewSet](security-ediscoveryreviewset.md).
+Represents a review set query, which is used to query and cull data stored in a Microsoft Purview eDiscovery [reviewSet](security-ediscoveryreviewset.md).
 
 ## Methods
 |Method|Return type|Description|
@@ -24,6 +24,7 @@ Represents a review set query, which is used to query and cull data stored in an
 |[Update ediscoveryReviewSetQuery](../api/security-ediscoveryreviewsetquery-update.md)|[microsoft.graph.security.ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md)|Update the properties of an [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object.|
 |[Delete ediscoveryReviewSetQuery](../api/security-ediscoveryreviewset-delete-queries.md)|None|Delete an [ediscoveryReviewSetQuery](../resources/security-ediscoveryreviewsetquery.md) object.|
 |[applyTags](../api/security-ediscoveryreviewsetquery-applytags.md)|None|Apply tags to documents that match the specified query.|
+|[export](../api/security-ediscoveryreviewsetquery-export.md)|None|Export documents that match the specified query from a review set.|
 
 ## Properties
 |Property|Type|Description|

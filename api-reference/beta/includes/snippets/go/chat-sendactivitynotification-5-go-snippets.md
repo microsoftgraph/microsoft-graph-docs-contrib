@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphchats.NewSendActivityNotificationPostRequestBody()
@@ -29,11 +29,9 @@ previewText := graphmodels.NewItemBody()
 content := "New Task Created"
 previewText.SetContent(&content) 
 requestBody.SetPreviewText(previewText)
-recipient := graphmodels.NewTeamworkNotificationRecipient()
-additionalData := map[string]interface{}{
-	"chatId" : "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2", 
-}
-recipient.SetAdditionalData(additionalData)
+recipient := graphmodels.NewChatMembersNotificationRecipient()
+chatId := "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
+recipient.SetChatId(&chatId) 
 requestBody.SetRecipient(recipient)
 
 
@@ -43,9 +41,8 @@ keyValuePair.SetName(&name)
 value := "Task 12322"
 keyValuePair.SetValue(&value) 
 
-templateParameters := []graphchats.KeyValuePairable {
+templateParameters := []graphmodels.KeyValuePairable {
 	keyValuePair,
-
 }
 requestBody.SetTemplateParameters(templateParameters)
 

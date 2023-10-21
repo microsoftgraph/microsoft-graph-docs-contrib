@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelsindustrydata.NewSourceSystemDefinition()
 vendor := "LMS Vendor"
 requestBody.SetVendor(&vendor) 
 
-result, err := graphClient.External().IndustryData().SourceSystems().BySourceSystemId("sourceSystemDefinition-id").Patch(context.Background(), requestBody, nil)
+sourceSystems, err := graphClient.External().IndustryData().SourceSystems().BySourceSystemDefinitionId("sourceSystemDefinition-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

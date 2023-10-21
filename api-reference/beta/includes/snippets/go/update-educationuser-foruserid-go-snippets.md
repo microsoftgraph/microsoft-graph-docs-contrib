@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEducationUser()
@@ -44,11 +44,10 @@ relatedContact1.SetAccessConsent(&accessConsent)
 relatedContacts := []graphmodels.RelatedContactable {
 	relatedContact,
 	relatedContact1,
-
 }
 requestBody.SetRelatedContacts(relatedContacts)
 
-result, err := graphClient.Education().Users().ByUserId("educationUser-id").Patch(context.Background(), requestBody, nil)
+users, err := graphClient.Education().Users().ByEducationUserId("educationUser-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

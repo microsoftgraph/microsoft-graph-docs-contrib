@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Education
+Import-Module Microsoft.Graph.Beta.Education
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/beta/education/classes/11006"
 }
 
-New-MgEducationSchoolClassByRef -EducationSchoolId $educationSchoolId -BodyParameter $params
+New-MgBetaEducationSchoolClassByRef -EducationSchoolId $educationSchoolId -BodyParameter $params
 
 ```

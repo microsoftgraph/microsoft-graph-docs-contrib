@@ -10,18 +10,13 @@ var graphClient = new GraphServiceClient(requestAdapter);
 
 var requestBody = new Microsoft.Graph.Communications.Calls.Item.Participants.Item.StartHoldMusic.StartHoldMusicPostRequestBody
 {
-	CustomPrompt = new Prompt
+	CustomPrompt = new MediaPrompt
 	{
 		OdataType = "#microsoft.graph.mediaPrompt",
-		AdditionalData = new Dictionary<string, object>
+		MediaInfo = new MediaInfo
 		{
-			{
-				"mediaInfo" , new 
-				{
-					OdataType = "#microsoft.graph.mediaInfo",
-					Uri = "https://bot.contoso.com/onHold.wav",
-				}
-			},
+			OdataType = "#microsoft.graph.mediaInfo",
+			Uri = "https://bot.contoso.com/onHold.wav",
 		},
 	},
 	ClientContext = "d45324c1-fcb5-430a-902c-f20af696537c",

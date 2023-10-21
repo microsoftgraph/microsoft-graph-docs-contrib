@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAppManagementPolicy()
 isEnabled := false
 requestBody.SetIsEnabled(&isEnabled) 
 
-result, err := graphClient.Policies().AppManagementPolicies().ByAppManagementPolicieId("appManagementPolicy-id").Patch(context.Background(), requestBody, nil)
+appManagementPolicies, err := graphClient.Policies().AppManagementPolicies().ByAppManagementPolicyId("appManagementPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

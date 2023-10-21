@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Onenote().SectionGroups().BySectionGroupId("sectionGroup-id").Get(context.Background(), nil)
+sectionGroups, err := graphClient.Me().Onenote().SectionGroups().BySectionGroupId("sectionGroup-id").Get(context.Background(), nil)
 
 
 ```

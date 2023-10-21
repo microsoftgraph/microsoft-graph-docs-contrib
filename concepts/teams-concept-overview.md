@@ -62,9 +62,8 @@ Microsoft Teams APIs can enhance apps inside and outside of Teams:
 | [Messaging extensions](/microsoftteams/platform/concepts/messaging-extensions) |Allow users to query and share information in conversations.|
 |Websites| Surface enhanced content in your webpages.|
 |Services|Enhance your client applications with Microsoft Graph data via your web service.|
-| [Activity feed](/microsoftteams/platform/concepts/activity-feed)|Engage users via feed notifications.|
+| [Activity feed](/graph/teams-send-activityfeednotifications) |Engage users via feed notifications.|
 | [Calling and online meetings (preview)](/graph/api/resources/communications-api-overview) |Create Microsoft Teams apps with bots that can initiate and participate in audio/video calls, route/transfer calls based on interactive voice response (IVR) flows, and participate in online meetings.|
-
 
 ### Automate team lifecycles
 

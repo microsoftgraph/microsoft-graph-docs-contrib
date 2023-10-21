@@ -12,20 +12,21 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
 requestFilter := "groupId eq 'd5f0ad2e-6b34-401b-b6da-0c8fc2c5a3fc' and accessId eq 'member'"
 
-requestParameters := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGroupEligibilityScheduleItemRequestBuilderGetQueryParameters{
+requestParameters := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGroupEligibilitySchedulesFilterByCurrentUser(on='{on}')RequestBuilderGetQueryParameters{
 	Filter: &requestFilter,
 }
-configuration := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGroupEligibilityScheduleItemRequestBuilderGetRequestConfiguration{
+configuration := &graphidentitygovernance.IdentityGovernancePrivilegedAccessGroupEligibilitySchedulesFilterByCurrentUser(on='{on}')RequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().EligibilitySchedules().ByEligibilityScheduleId("privilegedAccessGroupEligibilitySchedule-id").Get(context.Background(), configuration)
+on := "principal"
+filterByCurrentUser, err := graphClient.IdentityGovernance().PrivilegedAccess().Group().EligibilitySchedules().FilterByCurrentUserWithOn(&on).Get(context.Background(), configuration)
 
 
 ```

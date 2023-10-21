@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -77,7 +77,6 @@ metadata := []graphmodels.KeyValuePairable {
 	keyValuePair4,
 	keyValuePair5,
 	keyValuePair6,
-
 }
 contentInfo.SetMetadata(metadata)
 additionalData := map[string]interface{}{
@@ -94,7 +93,7 @@ isDowngradeJustified := true
 downgradeJustification.SetIsDowngradeJustified(&isDowngradeJustified) 
 requestBody.SetDowngradeJustification(downgradeJustification)
 
-result, err := graphClient.InformationProtection().Policy().Labels().EvaluateRemoval().Post(context.Background(), requestBody, configuration)
+evaluateRemoval, err := graphClient.InformationProtection().Policy().Labels().EvaluateRemoval().Post(context.Background(), requestBody, configuration)
 
 
 ```

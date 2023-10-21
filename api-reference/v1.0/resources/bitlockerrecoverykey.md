@@ -1,7 +1,7 @@
 ---
 title: "bitlockerRecoveryKey resource type"
 description: "BitLocker recovery key resource"
-author: "hafowler"
+author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
@@ -23,7 +23,7 @@ Represents a stored BitLocker key that contains the actual recovery key via the 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|The date and time when the key was originally backed up to Azure Active Directory. Not nullable.|
+|createdDateTime|DateTimeOffset|The date and time when the key was originally backed up to Microsoft Entra ID. Not nullable.|
 |deviceId|String|Identifier of the device the BitLocker key is originally backed up from. Supports `$filter` (`eq`).|
 |id|String|The unique identifier for the BitLocker key.|
 |key|String|The BitLocker recovery key. Returned only on `$select`. Not nullable.|
@@ -52,4 +52,3 @@ The following is a JSON representation of the resource.
   "volumeType": "String"
 }
 ```
-

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewScopedRoleMembership()
@@ -23,7 +23,7 @@ id := "id-value"
 roleMemberInfo.SetId(&id) 
 requestBody.SetRoleMemberInfo(roleMemberInfo)
 
-result, err := graphClient.AdministrativeUnits().ByAdministrativeUnitId("administrativeUnit-id").ScopedRoleMembers().Post(context.Background(), requestBody, nil)
+scopedRoleMembers, err := graphClient.AdministrativeUnits().ByAdministrativeUnitId("administrativeUnit-id").ScopedRoleMembers().Post(context.Background(), requestBody, nil)
 
 
 ```

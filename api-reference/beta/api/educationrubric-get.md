@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of an [educationRubric](../resources/educationrubric.md) object. Only teachers and students can perform this operation.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,7 +43,7 @@ GET /education/me/rubrics/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -51,7 +53,7 @@ If successful, this method returns a `200 OK` response code and the requested [e
 
 ### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -67,24 +69,28 @@ GET https://graph.microsoft.com/beta/education/me/rubrics/bf040af7-a5ff-4abe-a8c
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationrubric-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationrubric-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-educationrubric-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-educationrubric-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-educationrubric-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationrubric-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationrubric-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationrubric-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-educationrubric-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-educationrubric-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -95,10 +101,9 @@ GET https://graph.microsoft.com/beta/education/me/rubrics/bf040af7-a5ff-4abe-a8c
 
 ### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -111,92 +116,92 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "displayName": "Example Points Rubric",
-    "id": "bf040af7-a5ff-4abe-a8c8-1bdc532344c2",
-    "description": {
-        "content": "This is an example of a rubric with points",
+  "displayName": "Example Points Rubric",
+  "id": "bf040af7-a5ff-4abe-a8c8-1bdc532344c2",
+  "description": {
+    "content": "This is an example of a rubric with points",
+    "contentType": "text"
+  },
+  "levels": [
+    {
+      "levelId": "519cd134-c513-40b9-aa71-fdb0d063c084",
+      "displayName": "Good",
+      "description": {
+        "content": "",
         "contentType": "text"
-    },
-    "levels": [
-        {
-            "levelId": "519cd134-c513-40b9-aa71-fdb0d063c084",
-            "displayName": "Good",
-            "description": {
-                "content": "",
-                "contentType": "text"
-            },
-            "grading": {
-                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-                "maxPoints": 2
-            }
-        },
-        {
-            "levelId": "db2a0c91-abef-44cb-b8b1-ef1f85ef4a77",
-            "displayName": "Poor",
-            "description": {
-                "content": "",
-                "contentType": "text"
-            },
-            "grading": {
-                "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-                "maxPoints": 1
-            }
-        }
-    ],
-    "qualities": [
-        {
-            "qualityId": "bbf3fb4a-a794-4b51-a1ad-c22fb891c5d8",
-            "weight": 50.0,
-            "description": {
-                "content": "Argument",
-                "contentType": "text"
-            },
-            "criteria": [
-                {
-                    "id": "5e637d79-f26b-4ea6-acd7-73824f0c0967",
-                    "description": {
-                        "content": "The essay's argument is persuasive.",
-                        "contentType": "text"
-                    }
-                },
-                {
-                    "id": "ebdcc27f-d1ec-4aa3-9da7-bd8d7842e3d3",
-                    "description": {
-                        "content": "The essay's argument does not make sense.",
-                        "contentType": "text"
-                    }
-                }
-            ]
-        },
-        {
-            "qualityId": "ebe97fd7-47f7-4e9a-b31b-221ad731fc5a",
-            "weight": 50.0,
-            "description": {
-                "content": "Spelling and Grammar",
-                "contentType": "text"
-            },
-            "criteria": [
-                {
-                    "id": "5417252a-f810-41eb-9a83-09276a258a08",
-                    "description": {
-                        "content": "The essay uses proper spelling and grammar with few or no errors.",
-                        "contentType": "text"
-                    }
-                },
-                {
-                    "id": "5de220bd-74b9-41a7-85d5-9be7c6cb7933",
-                    "description": {
-                        "content": "The essay has numerous errors in spelling and/or grammar.",
-                        "contentType": "text"
-                    }
-                }
-            ]
-        }
-    ],
-    "grading": {
+      },
+      "grading": {
         "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
-        "maxPoints": 100
+        "maxPoints": 2
+      }
+    },
+    {
+      "levelId": "db2a0c91-abef-44cb-b8b1-ef1f85ef4a77",
+      "displayName": "Poor",
+      "description": {
+        "content": "",
+        "contentType": "text"
+      },
+      "grading": {
+        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+        "maxPoints": 1
+      }
     }
+  ],
+  "qualities": [
+    {
+      "qualityId": "bbf3fb4a-a794-4b51-a1ad-c22fb891c5d8",
+      "weight": 50.0,
+      "description": {
+        "content": "Argument",
+        "contentType": "text"
+      },
+      "criteria": [
+        {
+          "id": "5e637d79-f26b-4ea6-acd7-73824f0c0967",
+          "description": {
+            "content": "The essay's argument is persuasive.",
+            "contentType": "text"
+          }
+        },
+        {
+          "id": "ebdcc27f-d1ec-4aa3-9da7-bd8d7842e3d3",
+          "description": {
+            "content": "The essay's argument does not make sense.",
+            "contentType": "text"
+          }
+        }
+      ]
+    },
+    {
+      "qualityId": "ebe97fd7-47f7-4e9a-b31b-221ad731fc5a",
+      "weight": 50.0,
+      "description": {
+        "content": "Spelling and Grammar",
+        "contentType": "text"
+      },
+      "criteria": [
+        {
+          "id": "5417252a-f810-41eb-9a83-09276a258a08",
+          "description": {
+            "content": "The essay uses proper spelling and grammar with few or no errors.",
+            "contentType": "text"
+          }
+        },
+        {
+          "id": "5de220bd-74b9-41a7-85d5-9be7c6cb7933",
+          "description": {
+            "content": "The essay has numerous errors in spelling and/or grammar.",
+            "contentType": "text"
+          }
+        }
+      ]
+    }
+  ],
+  "grading": {
+    "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+    "maxPoints": 100
+  }
 }
 ```
 

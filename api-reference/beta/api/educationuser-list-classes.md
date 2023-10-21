@@ -1,6 +1,6 @@
 ---
 title: "List classes"
-description: "Retrieve a list of class objects. Note that if the delegated token is used, members can only see information about their own classes. "
+description: "Get the educationClass resources an educationUser is a member of."
 ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a collection of educationClass resources.
+Get the [educationClass](../resources/educationclass.md) resources an [educationUser](../resources/educationuser.md) is a member of.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -26,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
 > [!NOTE]
-> When delegated permissions are used, only educationClass resources that the authentication user is a member will be returned.
+> Note that if the delegated token is used, members can only see information about their own classes.
 
 ## HTTP request
 
@@ -57,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Example
 
-##### Request
+### Request
 
 The following is an example of the request.
 
@@ -76,24 +78,28 @@ GET https://graph.microsoft.com/beta/education/me/classes
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-classes-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-classes-3-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-classes-3-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-classes-3-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-classes-3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-classes-3-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-classes-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-classes-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-classes-3-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-classes-3-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -102,7 +108,7 @@ GET https://graph.microsoft.com/beta/education/me/classes
 
 ---
 
-##### Response
+### Response
 
 The following is an example of the response.
 

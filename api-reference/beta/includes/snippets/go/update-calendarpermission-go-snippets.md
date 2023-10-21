@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewCalendarPermission()
 role := graphmodels.WRITE_CALENDARROLETYPE 
 requestBody.SetRole(&role) 
 
-result, err := graphClient.Users().ByUserId("user-id").Calendar().CalendarPermissions().ByCalendarPermissionId("calendarPermission-id").Patch(context.Background(), requestBody, nil)
+calendarPermissions, err := graphClient.Users().ByUserId("user-id").Calendar().CalendarPermissions().ByCalendarPermissionId("calendarPermission-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelssearch.NewBookmark()
 description := "Book a fancy vacation in Tuscany or browse museums in Florence."
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Search().Bookmarks().ByBookmarkId("bookmark-id").Patch(context.Background(), requestBody, nil)
+bookmarks, err := graphClient.Search().Bookmarks().ByBookmarkId("bookmark-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

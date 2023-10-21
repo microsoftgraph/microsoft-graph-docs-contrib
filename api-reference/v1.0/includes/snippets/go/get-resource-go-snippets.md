@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Me().Onenote().Resources().ByResourceId("onenoteResource-id").Content().Get(context.Background(), nil)
+graphClient.Me().Onenote().Resources().ByOnenoteResourceId("onenoteResource-id").Content().Get(context.Background(), nil)
 
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "List a user's direct memberships"
-description: "Get groups, directory roles, and administrative units that the user is a direct member of. This operation is not transitive."
+description: "Get groups, directory roles, and administrative units that the user is a direct member of. This operation isn't transitive."
 ms.localizationpriority: medium
 author: "yyuank"
 ms.prod: "users"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get [groups](../resources/group.md), [directory roles](../resources/directoryrole.md), and [administrative units](../resources/administrativeunit.md) that the user is a direct member of. This operation is not transitive. To retrieve groups, directory roles, and administrative units that the user is a member through transitive membership, use the [List user transitive memberOf](user-list-transitivememberof.md) API.
+Get [groups](../resources/group.md), [directory roles](../resources/directoryrole.md), and [administrative units](../resources/administrativeunit.md) that the user is a direct member of. This operation isn't transitive. To retrieve groups, directory roles, and administrative units that the user is a member through transitive membership, use the [List user transitive memberOf](user-list-transitivememberof.md) API.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -37,7 +39,7 @@ GET /users/{id | userPrincipalName}/memberOf
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the directoryRoles the user is a member of. You can use `$search` on the **displayName** property. When items are added or updated for this resource, they are specially indexed for use with the `$count` and `$search` query parameters. There can be a slight delay between when an item is added or updated and when it is available in the index.
+This method supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$select`, `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the directoryRoles the user is a member of. You can use `$search` on the **displayName** property. The default and maximum page sizes are 100 and 999 objects respectively.
 
 ## Request headers
 
@@ -48,7 +50,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -60,7 +62,7 @@ If successful, this method returns a `200 OK` response code and collection of [d
 
 #### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -76,24 +78,28 @@ GET https://graph.microsoft.com/beta/users/{id}/memberOf
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-memberof-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-memberof-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-user-memberof-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-user-memberof-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-memberof-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-user-memberof-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-memberof-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-memberof-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-user-memberof-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-user-memberof-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -104,7 +110,7 @@ GET https://graph.microsoft.com/beta/users/{id}/memberOf
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -133,7 +139,7 @@ Content-type: application/json
 
 #### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -146,7 +152,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -164,7 +170,7 @@ Content-type: text/plain
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -177,7 +183,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -194,7 +200,7 @@ Content-type: text/plain
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -207,7 +213,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -236,7 +242,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -249,7 +255,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {

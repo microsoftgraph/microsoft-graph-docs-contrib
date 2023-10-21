@@ -1,6 +1,6 @@
 ---
 title: "auditLogRoot resource type"
-description: "Contains different types of audit logs. This resources returns a singleton auditLog resource. It doesn't contain any usable properties."
+description: "Contains different types of audit logs. The auditLogRoot resource returns a singleton auditLog resource. It doesn't contain any usable properties."
 author: "dhanyahk"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Contains different types of audit logs. This resources returns a singleton auditLog resource. It doesn't contain any usable properties.
+Contains different types of audit logs. The auditLogRoot resource returns a singleton auditLog resource. It doesn't contain any usable properties.
 
 ## Methods
 
@@ -35,7 +35,7 @@ None.
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Heres a JSON representation of the resource.
 
 <!--{
   "blockType": "resource",
@@ -65,16 +65,20 @@ GET https://graph.microsoft.com/v1.0/auditLogs
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-auditlogs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-auditlogs-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-auditlogs-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-auditlogs-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/get-auditlogs-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-auditlogs-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-auditlogs-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)

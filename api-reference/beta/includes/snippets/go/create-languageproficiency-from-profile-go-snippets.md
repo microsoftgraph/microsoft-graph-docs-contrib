@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewLanguageProficiency()
@@ -27,7 +27,7 @@ requestBody.SetWritten(&written)
 reading := graphmodels.NATIVEORBILINGUAL_LANGUAGEPROFICIENCYLEVEL 
 requestBody.SetReading(&reading) 
 
-result, err := graphClient.Me().Profile().Languages().Post(context.Background(), requestBody, nil)
+languages, err := graphClient.Me().Profile().Languages().Post(context.Background(), requestBody, nil)
 
 
 ```

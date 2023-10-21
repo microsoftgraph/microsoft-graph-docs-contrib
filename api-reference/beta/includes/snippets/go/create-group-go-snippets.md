@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewGroup()
@@ -22,7 +22,6 @@ displayName := "Golf Assist"
 requestBody.SetDisplayName(&displayName) 
 groupTypes := []string {
 	"Unified",
-
 }
 requestBody.SetGroupTypes(groupTypes)
 mailEnabled := true
@@ -32,7 +31,7 @@ requestBody.SetMailNickname(&mailNickname)
 securityEnabled := false
 requestBody.SetSecurityEnabled(&securityEnabled) 
 
-result, err := graphClient.Groups().Post(context.Background(), requestBody, nil)
+groups, err := graphClient.Groups().Post(context.Background(), requestBody, nil)
 
 
 ```

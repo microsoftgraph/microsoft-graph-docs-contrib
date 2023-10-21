@@ -26,9 +26,11 @@ The following example shows iterating over all the messages in a user's mailbox.
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/Paging.cs" id="PagingSnippet":::
 
-### [TypeScript](#tab/typeScript)
+### [Go](#tab/go)
 
-:::code language="typescript" source="./snippets/typescript/src/snippets/paging.ts" id="PagingSnippet":::
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ImportSnippet":::
+
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="PagingSnippet":::
 
 ### [Java](#tab/java)
 
@@ -37,11 +39,30 @@ The following example shows iterating over all the messages in a user's mailbox.
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/Paging.java" id="PagingSnippet":::
 
-### [Go](#tab/Go)
+### [PHP](#tab/PHP)
 
-:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ImportSnippet":::
+```php
+<?php
+$messages = $graphServiceClient->users()->byUserId(USER_ID)->messages()->get()->wait();
 
-:::code language="go" source="./snippets/go/src/snippets/paging.go" id="PagingSnippet":::
+$pageIterator = new PageIterator($messages, $graphServiceClient->getRequestAdapter());
+
+$callback = function (Message $message) {
+    echo "Message ID: {$message->getId()}";
+    return ($message->getId() !== 5);
+}
+
+// iteration will pause at message ID 5
+$pageIterator->iterate($callback);
+
+// resumes iteration from next message (ID 6)
+$pageIterator->iterate($callback);
+
+```
+
+### [TypeScript](#tab/typescript)
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/paging.ts" id="PagingSnippet":::
 
 ---
 
@@ -54,21 +75,40 @@ Some scenarios require stopping the iteration process in order to perform other 
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/Paging.cs" id="ResumePagingSnippet":::
 
-### [TypeScript](#tab/typeScript)
+### [Go](#tab/go)
 
-:::code language="typescript" source="./snippets/typescript/src/snippets/paging.ts" id="ResumePagingSnippet":::
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ImportSnippet":::
+
+:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ResumePagingSnippet":::
 
 ### [Java](#tab/java)
 
 ```java
 // not supported in java SDK
 ```
+### [PHP](#tab/PHP)
 
-### [Go](#tab/Go)
+```php
+<?php
+$messages = $graphServiceClient->users()->byUserId(USER_ID)->messages()->get()->wait();
 
-:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ImportSnippet":::
+$pageIterator = new PageIterator($messages, $graphServiceClient->getRequestAdapter());
 
-:::code language="go" source="./snippets/go/src/snippets/paging.go" id="ResumePagingSnippet":::
+$callback = function (Message $message) {
+    echo "Message ID: {$message->getId()}";
+    return ($message->getId() !== 5);
+}
+
+// iteration will pause at message ID 5
+$pageIterator->iterate($callback);
+
+// resumes iteration from next message (ID 6)
+$pageIterator->iterate($callback);
+```
+
+### [TypeScript](#tab/typescript)
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/paging.ts" id="ResumePagingSnippet":::
 
 ---
 <!-- markdownlint-enable MD024 -->

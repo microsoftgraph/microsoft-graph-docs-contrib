@@ -19,33 +19,28 @@ var requestBody = new Microsoft.Graph.Beta.Groups.Item.Threads.Item.Reply.ReplyP
 		},
 		Attachments = new List<Attachment>
 		{
-			new Attachment
+			new ItemAttachment
 			{
 				OdataType = "#microsoft.graph.itemAttachment",
 				Name = "Holiday event",
-				AdditionalData = new Dictionary<string, object>
+				Item = new Event
 				{
+					OdataType = "microsoft.graph.event",
+					Subject = "Discuss gifts for children",
+					Body = new ItemBody
 					{
-						"item" , new 
-						{
-							OdataType = "microsoft.graph.event",
-							Subject = "Discuss gifts for children",
-							Body = new 
-							{
-								ContentType = "HTML",
-								Content = "Let's look for funding!",
-							},
-							Start = new 
-							{
-								DateTime = "2019-12-02T18:00:00",
-								TimeZone = "Pacific Standard Time",
-							},
-							End = new 
-							{
-								DateTime = "2019-12-02T19:00:00",
-								TimeZone = "Pacific Standard Time",
-							},
-						}
+						ContentType = BodyType.Html,
+						Content = "Let's look for funding!",
+					},
+					Start = new DateTimeTimeZone
+					{
+						DateTime = "2019-12-02T18:00:00",
+						TimeZone = "Pacific Standard Time",
+					},
+					End = new DateTimeTimeZone
+					{
+						DateTime = "2019-12-02T19:00:00",
+						TimeZone = "Pacific Standard Time",
 					},
 				},
 			},

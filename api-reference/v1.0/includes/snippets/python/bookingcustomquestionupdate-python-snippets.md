@@ -4,22 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = BookingCustomQuestion()
-request_body.@odata_type = '#microsoft.graph.bookingCustomQuestion'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.display_name = 'What is your age?'
+request_body = BookingCustomQuestion(
+	odata_type = "#microsoft.graph.bookingCustomQuestion",
+	display_name = "What is your age?",
+	answer_input_type = AnswerInputType.Text,
+	answer_options = [
+	]
+)
 
-request_body.answerinputtype(AnswerInputType.Text('answerinputtype.text'))
-
-request_body.AnswerOptions([])
-
-
-
-
-result = await client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').custom_questions.by_custom_question_id('bookingCustomQuestion-id').patch(request_body = request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').custom_questions.by_custom_question_id('bookingCustomQuestion-id').patch(body = request_body)
 
 
 ```

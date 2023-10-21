@@ -15,7 +15,7 @@ By default, the Microsoft Graph SDKs are configured to access data in the Micros
 
 You will need the following information to configure a Microsoft Graph SDK to connect to a national cloud deployment.
 
-- Application registration details, such as client ID, tenant ID, and client secret or certificate. The application registration MUST be created in the Azure portal that corresponds to the national cloud deployment. See [App registration and token service root endpoints](../deployments.md#app-registration-and-token-service-root-endpoints) for details.
+- Application registration details, such as client ID, tenant ID, and client secret or certificate. The application registration MUST be created in the Microsoft Entra admin center that corresponds to the national cloud deployment. See [App registration and token service root endpoints](../deployments.md#app-registration-and-token-service-root-endpoints) for details.
 - The token endpoint for the national cloud deployment.
 - The Microsoft Graph service root endpoint for the national cloud deployment. See [Microsoft Graph and Graph Explorer service root endpoints](../deployments.md#microsoft-graph-and-graph-explorer-service-root-endpoints) for a list of endpoints.
 
@@ -38,9 +38,34 @@ The following example configures an [Interactive authentication provider](choose
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/NationalClouds.cs" id="NationalCloudSnippet":::
 
-### [TypeScript](#tab/typescript)
+### [Go](#tab/go)
 
-:::code language="csharp" source="./snippets/typescript/src/snippets/nationalClouds.ts" id="NationalCloudSnippet":::
+:::code language="go" source="./snippets/go/src/snippets/national_clouds.go" id="ImportSnippet":::
+
+:::code language="go" source="./snippets/go/src/snippets/national_clouds.go" id="NationalCloudSnippet":::
+
+### [Java](#tab/java)
+
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/NationalClouds.java" id="NationalCloudSnippet":::
+
+### [PHP](#tab/PHP)
+
+```php
+<?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
+
+// Uses https://graph.microsoft.com/.default scopes if none are specified
+$tokenRequestContext = new ClientCredentialContext(
+    'tenantId',
+    'clientId',
+    'clientSecret'
+);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes, NationalCloud::CHINA);
+
+
+
+```
 
 ### [PowerShell](#tab/powershell)
 
@@ -49,14 +74,12 @@ Connect-MgGraph -Environment USGov -ClientId 'YOUR_CLIENT_ID' `
   -TenantId 'YOUR_TENANT_ID' -Scopes 'https://graph.microsoft.us/.default'
 ```
 
-### [Java](#tab/java)
+### [Python](#tab/python)
 
-:::code language="java" source="./snippets/java/app/src/main/java/snippets/NationalClouds.java" id="NationalCloudSnippet":::
+:::code language="python" source="./snippets/python/src/snippets/national_clouds.py" id="NationalCloudSnippet":::
 
-### [Go](#tab/go)
+### [TypeScript](#tab/typescript)
 
-:::code language="go" source="./snippets/go/src/snippets/national_clouds.go" id="ImportSnippet":::
-
-:::code language="go" source="./snippets/go/src/snippets/national_clouds.go" id="NationalCloudSnippet":::
+:::code language="csharp" source="./snippets/typescript/src/snippets/nationalClouds.ts" id="NationalCloudSnippet":::
 
 ---

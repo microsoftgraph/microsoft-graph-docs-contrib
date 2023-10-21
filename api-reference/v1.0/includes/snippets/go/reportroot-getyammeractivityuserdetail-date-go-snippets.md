@@ -11,11 +11,12 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Reports().GetYammerActivityUserDetail(date={date})().Get(context.Background(), nil)
+date := {date}
+graphClient.Reports().GetYammerActivityUserDetailWithDate(&date).Get(context.Background(), nil)
 
 
 ```

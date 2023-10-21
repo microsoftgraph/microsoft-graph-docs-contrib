@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphchats.ChatItemTabsRequestBuilderGetQueryParameters{
@@ -22,7 +22,7 @@ configuration := &graphchats.ChatItemTabsRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Chats().ByChatId("chat-id").Tabs().Get(context.Background(), configuration)
+tabs, err := graphClient.Chats().ByChatId("chat-id").Tabs().Get(context.Background(), configuration)
 
 
 ```

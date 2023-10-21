@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get a list of archived print jobs for a particular user.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -30,7 +32,7 @@ In addition to the following permissions, the user's tenant must have an active 
 }
 -->
 ``` http
-GET /reports/getUserArchivedPrintJobs
+GET /reports/getUserArchivedPrintJobs(userId='{userId}',startDateTime='{startDateTime}',endDateTime='{endDateTime}')
 ```
 
 ## Function Parameters
@@ -73,12 +75,12 @@ GET https://graph.microsoft.com/v1.0/reports/getUserArchivedPrintJobs(userId='{i
 [!INCLUDE [sample-code](../includes/snippets/csharp/reportroot-getuserarchivedprintjobs-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/reportroot-getuserarchivedprintjobs-go-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/reportroot-getuserarchivedprintjobs-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getuserarchivedprintjobs-powershell-snippets.md)]
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/reportroot-getuserarchivedprintjobs-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -107,9 +109,18 @@ Content-Type: application/json
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-      "printerId": "fe6ff85a-f0d3-4c4f-aec6-b9d5154356a1",
-      "createdBy": {},
-      "processingState": "completed"
+      "printerId": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
+      "printerName": "printerName1",
+      "processingState": "completed",
+      "createdDateTime": "2023-06-29T00:00:00.0000000Z",
+      "acquiredDateTime": "2023-06-29T00:00:01.0000000Z",
+      "completionDateTime": "2023-06-29T00:00:02.0000000Z",
+      "acquiredByPrinter": true,
+      "copiesPrinted": 1,
+      "createdBy": {
+        "displayName": "username",
+        "userPrincipalName": "username@contoso.com",
+      }
     }
   ]
 }

@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Policies().HomeRealmDiscoveryPolicies().ByHomeRealmDiscoveryPolicieId("homeRealmDiscoveryPolicy-id").AppliesTo().Get(context.Background(), nil)
+appliesTo, err := graphClient.Policies().HomeRealmDiscoveryPolicies().ByHomeRealmDiscoveryPolicyId("homeRealmDiscoveryPolicy-id").AppliesTo().Get(context.Background(), nil)
 
 
 ```

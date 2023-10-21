@@ -13,7 +13,7 @@ var requestBody = new Microsoft.Graph.Beta.Me.AssignLicense.AssignLicensePostReq
 	AddLicenses = new List<AssignedLicense>
 	{
 	},
-	RemoveLicenses = new List<F30db892-07e9-47e9-837c-80727f46fd3d>
+	RemoveLicenses = new List<Guid?>
 	{
 		Guid.Parse("f30db892-07e9-47e9-837c-80727f46fd3d"),
 		Guid.Parse("84a661c4-e949-4bd2-a560-ed7766fcaf2b"),

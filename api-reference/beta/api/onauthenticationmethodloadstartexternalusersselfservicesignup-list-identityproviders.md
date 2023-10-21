@@ -45,7 +45,7 @@ This method supports some of the OData query parameters to help customize the re
 |Content-Type|application/json. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 
 ## Response
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a new [identityP
 ## Examples
 
 #### Request
-The following is an example of a request.
+Here's an example of a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -66,18 +66,18 @@ The following is an example of a request.
 GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37-d421-421d-857b-87804d61e33e/microsoft.graph.externalUsersSelfServiceSignUpEventsFlow/onAuthenticationMethodLoadStart/microsoft.graph.onAuthenticationMethodLoadStartExternalUsersSelfServiceSignUp/identityProviders/
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-onauthenticationmethodloadstartexternalusersselfservicesignup-identityproviders-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/list-onauthenticationmethodloadstartexternalusersselfservicesignup-identityproviders-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-onauthenticationmethodloadstartexternalusersselfservicesignup-identityproviders-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
-The following is an example of the response
+Here's an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewOutlookTaskGroup()
 name := "Leisure tasks"
 requestBody.SetName(&name) 
 
-result, err := graphClient.Me().Outlook().TaskGroups().Post(context.Background(), requestBody, nil)
+taskGroups, err := graphClient.Me().Outlook().TaskGroups().Post(context.Background(), requestBody, nil)
 
 
 ```

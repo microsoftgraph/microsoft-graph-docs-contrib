@@ -24,7 +24,7 @@ const externalActivityResult = {
   ]
 };
 
-await client.api('/connections/contosohr/items/TSP228082938/addActivities')
+await client.api('/external/connections/contosohr/items/TSP228082938/addActivities')
 	.version('beta')
 	.post(externalActivityResult);
 

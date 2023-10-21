@@ -15,15 +15,10 @@ var requestBody = new Microsoft.Graph.Beta.Communications.Calls.Item.Answer.Answ
 	{
 		Modality.Audio,
 	},
-	MediaConfig = new MediaConfig
+	MediaConfig = new AppHostedMediaConfig
 	{
 		OdataType = "#microsoft.graph.appHostedMediaConfig",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"blob" , "<Media Session Configuration Blob>"
-			},
-		},
+		Blob = "<Media Session Configuration Blob>",
 	},
 };
 await graphClient.Communications.Calls["{call-id}"].Answer.PostAsync(requestBody);

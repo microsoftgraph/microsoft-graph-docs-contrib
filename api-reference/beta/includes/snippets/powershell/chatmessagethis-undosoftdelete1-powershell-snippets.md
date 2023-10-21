@@ -4,8 +4,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
-Undo-MgUserChatMessageSoftDelete -UserId $userId -ChatId $chatId -ChatMessageId $chatMessageId
+Undo-MgBetaUserChatMessageSoftDelete -UserId $userId -ChatId $chatId -ChatMessageId $chatMessageId
 
 ```

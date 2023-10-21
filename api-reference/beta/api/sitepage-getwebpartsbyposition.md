@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ```http
-GET /sites/{siteId}/pages/{sitePageId}/getWebPartsByPosition(horizontalSectionId={horizontalSectionId},columnId={columnId},webPartIndex={webPartIndex},isInVerticalSection={isInVerticalSection})
+GET /sites/{siteId}/pages/{sitePageId}/microsoft.graph.sitePage/getWebPartsByPosition
 ```
 
 ## Function parameters
@@ -47,11 +47,16 @@ In the request URL, provide one or more following parameters with a valid value.
 | isInVerticalSection | boolean | Indicate whether the WebPart located in the vertical section.                                                                                                  |
 | webPartIndex        | Double  | Index of the current WebPart. Represents the order of WebPart in this column or section. Only works if either `columnId` or `isInVerticalSection` is provided. |
 
+## Optional query parameters
+
+This method supports the  `$expand`, `$filter`, and `$select` [OData query parameters](/graph/query-parameters) to help customize the response.
+
 ## Request headers
 
-| Name          | Description               |
-| :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
@@ -68,6 +73,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of a request.
 
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_webparts_by_position"
@@ -75,8 +81,18 @@ The following is an example of a request.
 -->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/sites/{siteId}/pages/{sitePageId}/getWebPartsByPosition(horizontalSectionId={horizontalSectionId},columnId={columnId},webPartIndex={webPartIndex},isInVerticalSection={isInVerticalSection})
+GET https://graph.microsoft.com/beta/sites/{siteId}/pages/{sitePageId}/microsoft.graph.sitePage/getWebPartsByPosition?isInVerticalSection=true
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-webparts-by-position-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-webparts-by-position-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 ### Response
 

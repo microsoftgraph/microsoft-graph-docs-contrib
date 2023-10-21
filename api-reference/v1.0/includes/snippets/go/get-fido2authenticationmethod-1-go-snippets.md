@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Me().Authentication().Fido2Methods().ByFido2MethodId("fido2AuthenticationMethod-id").Get(context.Background(), nil)
+fido2Methods, err := graphClient.Me().Authentication().Fido2Methods().ByFido2AuthenticationMethodId("fido2AuthenticationMethod-id").Get(context.Background(), nil)
 
 
 ```

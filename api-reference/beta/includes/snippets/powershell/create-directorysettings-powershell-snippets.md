@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
 	templateId = "62375ab9-6b52-47ed-826b-58e47e0e304b"
@@ -28,6 +28,6 @@ $params = @{
 	)
 }
 
-New-MgDirectorySetting -BodyParameter $params
+New-MgBetaDirectorySetting -BodyParameter $params
 
 ```

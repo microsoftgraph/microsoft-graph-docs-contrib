@@ -19,7 +19,7 @@ You can access users through Microsoft Graph in two ways:
 - By their ID, `/users/{id}`
 - By using the `/me` alias for the signed-in user, which is the same as `/users/{signed-in user's id}`
 
-There are two types of users in Azure AD - members and guest users. Guest users join the organization through redeeming their invitation. Guest users can be converted to members to enjoy all the privileges of members.
+There are two types of users in Microsoft Entra ID - members and guest users. Guest users join the organization through redeeming their invitation. Guest users can be converted to members to enjoy all the privileges of members.
 
 ## Authorization and privileges
 
@@ -35,11 +35,11 @@ One of the following [permissions](/graph/permissions-reference) is required to 
 - Directory.ReadWrite.All
 - Directory.AccessAsUser.All
 
-In addition to the required permissions, the user operations that the calling user can perform are bounded to the privileges granted to the calling user via specific [Azure AD roles](/azure/active-directory/roles/permissions-reference). For more information, see the *Who can reset passwords?* and *Who can update sensitive attributes?* sections.
+In addition to the required permissions, the user operations that the calling user can perform are bounded to the privileges granted to the calling user via specific [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference). For more information, see the *Who can reset passwords?* and *Who can update sensitive attributes?* sections.
 
 ### Default user permissions
 
-The set of default permissions depends on whether the user is a native member of the tenant (member user) or whether the user is brought over from another directory as a business-to-business (B2B) collaboration guest (guest user). Azure AD defines a set of default permissions for member users and guest users. For more information about what member users and guest users can do, see [What are the default user permissions in Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context)
+The set of default permissions depends on whether the user is a native member of the tenant (member user) or whether the user is brought over from another directory as a business-to-business (B2B) collaboration guest (guest user). Microsoft Entra ID defines a set of default permissions for member users and guest users. For more information about what member users and guest users can do, see [What are the default user permissions in Microsoft Entra ID?](/azure/active-directory/fundamentals/users-default-permissions?context=graph/context)
 
 ### Sensitive actions for users
 
@@ -165,6 +165,7 @@ For details and a list of all the properties, see the [user](user.md) object.
 |[`/users/{id}/drive`](../api/drive-get.md)| Gets the user's OneDrive file store. |
 |[`/users/{id}/memberOf`](../api/user-list-memberof.md)| Lists the groups that the user is a member of. |
 |[`/users/{id}/joinedTeams`](../api/user-list-joinedteams.md)| Lists the Microsoft Teams that the user is a member of. |
+|[`/users/{id}/permissionGrants`](../api/user-list-permissiongrants.md)| List all resource-specific permission grants of a user. |
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

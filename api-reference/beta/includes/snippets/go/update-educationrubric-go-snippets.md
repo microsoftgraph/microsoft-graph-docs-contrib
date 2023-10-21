@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEducationRubric()
 displayName := "Example Credit Rubric after display name patch"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Education().Me().Rubrics().ByRubricId("educationRubric-id").Patch(context.Background(), requestBody, nil)
+rubrics, err := graphClient.Education().Me().Rubrics().ByEducationRubricId("educationRubric-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Graph REST API beta endpoint reference"
-description: "Documentation for the Microsoft Graph REST API beta endpoint, which includes APIs that are currently in preview and are not yet generally available."
+description: "Documentation for the Microsoft Graph REST API beta endpoint, which includes APIs that are currently in preview and aren't yet generally available."
 ms.localizationpriority: high
 doc_type: conceptualPageType
 ms.prod: "non-product-specific"

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphdevicemanagement.DeviceManagementVirtualEndpointUserSettingItemRequestBuilderGetQueryParameters{
@@ -22,7 +22,7 @@ configuration := &graphdevicemanagement.DeviceManagementVirtualEndpointUserSetti
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettings().ByUserSettingId("cloudPcUserSetting-id").Get(context.Background(), configuration)
+userSettings, err := graphClient.DeviceManagement().VirtualEndpoint().UserSettings().ByCloudPcUserSettingId("cloudPcUserSetting-id").Get(context.Background(), configuration)
 
 
 ```

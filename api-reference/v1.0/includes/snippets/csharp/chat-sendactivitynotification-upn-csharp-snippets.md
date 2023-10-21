@@ -20,15 +20,10 @@ var requestBody = new Microsoft.Graph.Chats.Item.SendActivityNotification.SendAc
 	{
 		Content = "Deployment requires your approval",
 	},
-	Recipient = new TeamworkNotificationRecipient
+	Recipient = new AadUserNotificationRecipient
 	{
 		OdataType = "microsoft.graph.aadUserNotificationRecipient",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"userId" , "jacob@contoso.com"
-			},
-		},
+		UserId = "jacob@contoso.com",
 	},
 	TemplateParameters = new List<KeyValuePair>
 	{

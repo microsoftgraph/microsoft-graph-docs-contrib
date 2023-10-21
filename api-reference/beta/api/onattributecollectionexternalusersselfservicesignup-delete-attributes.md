@@ -48,12 +48,12 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.  If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `204 No Content` response code.  If unsuccessful, a `4xx` error is returned with specific details.
 
 ## Examples
 
 #### Request
-The following is an example of a request that removes city as an attribute from the attribute collection step of an external identities self-service sign-up user flow. After executing this step, [update the attributes collected in the userflow](../api/authenticationeventsflow-update.md).
+Here's an example of a request that removes city as an attribute from the attribute collection step of an external identities self-service sign-up user flow. After executing this step, [update the attributes collected in the userflow](../api/authenticationeventsflow-update.md).
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -68,18 +68,18 @@ DELETE https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313c
 } 
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-onattributecollectionexternalusersselfservicesignup-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-onattributecollectionexternalusersselfservicesignup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-onattributecollectionexternalusersselfservicesignup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 #### Response
-The following is an example of the response
+Here's an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true

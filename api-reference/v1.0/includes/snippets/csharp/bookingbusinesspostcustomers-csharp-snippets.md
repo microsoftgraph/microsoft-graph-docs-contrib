@@ -8,56 +8,59 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new BookingCustomerBase
+var requestBody = new BookingCustomer
 {
 	OdataType = "#microsoft.graph.bookingCustomer",
-	AdditionalData = new Dictionary<string, object>
+	DisplayName = "Joni Sherman",
+	EmailAddress = "jonis@relecloud.com",
+	Addresses = new List<PhysicalAddress>
 	{
+		new PhysicalAddress
 		{
-			"displayName" , "Joni Sherman"
-		},
-		{
-			"emailAddress" , "jonis@relecloud.com"
-		},
-		{
-			"addresses" , new List<>
+			Street = "4567 Main Street",
+			City = "Buffalo",
+			State = "NY",
+			CountryOrRegion = "USA",
+			PostalCode = "98052",
+			AdditionalData = new Dictionary<string, object>
 			{
-				new 
 				{
-					PostOfficeBox = "",
-					Street = "4567 Main Street",
-					City = "Buffalo",
-					State = "NY",
-					CountryOrRegion = "USA",
-					PostalCode = "98052",
-					Type = "home",
+					"postOfficeBox" , ""
 				},
-				new 
 				{
-					PostOfficeBox = "",
-					Street = "4570 Main Street",
-					City = "Buffalo",
-					State = "NY",
-					CountryOrRegion = "USA",
-					PostalCode = "98054",
-					Type = "business",
+					"type" , "home"
 				},
-			}
+			},
 		},
+		new PhysicalAddress
 		{
-			"phones" , new List<>
+			Street = "4570 Main Street",
+			City = "Buffalo",
+			State = "NY",
+			CountryOrRegion = "USA",
+			PostalCode = "98054",
+			AdditionalData = new Dictionary<string, object>
 			{
-				new 
 				{
-					Number = "206-555-0100",
-					Type = "home",
+					"postOfficeBox" , ""
 				},
-				new 
 				{
-					Number = "206-555-0200",
-					Type = "business",
+					"type" , "business"
 				},
-			}
+			},
+		},
+	},
+	Phones = new List<Phone>
+	{
+		new Phone
+		{
+			Number = "206-555-0100",
+			Type = PhoneType.Home,
+		},
+		new Phone
+		{
+			Number = "206-555-0200",
+			Type = PhoneType.Business,
 		},
 	},
 };

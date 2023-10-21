@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPersonWebsite()
 description := "Lyn Damer play in the Women's 1st Division (Toppserien) in Norway"
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Me().Profile().Websites().ByWebsiteId("personWebsite-id").Patch(context.Background(), requestBody, nil)
+websites, err := graphClient.Me().Profile().Websites().ByPersonWebsiteId("personWebsite-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

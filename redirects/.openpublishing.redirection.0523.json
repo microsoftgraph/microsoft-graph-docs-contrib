@@ -1,0 +1,9 @@
+{
+    "redirections": [
+      {
+        "source_path_from_root": "/api-reference/beta/api/organizationsettings-list-pronounssettings.md",
+        "redirect_url": "/graph/api/peopleadminsettings-list-pronouns?view=graph-rest-beta",
+        "redirect_document_id": false
+      }
+    ]
+}

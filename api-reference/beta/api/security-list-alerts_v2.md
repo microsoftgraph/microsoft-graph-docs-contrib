@@ -16,6 +16,8 @@ Get a list of [alert](../resources/security-alert.md) resources that have been c
 
 This operation lets you filter and sort through alerts to create an informed cyber security response. It exposes a collection of alerts that were flagged in your network, within the time range you specified in your environment retention policy. The most recent alerts are displayed at the top of the list.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -86,24 +88,28 @@ GET https://graph.microsoft.com/beta/security/alerts_v2
 [!INCLUDE [sample-code](../includes/snippets/csharp/security-list-alerts-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/security-list-alerts-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/security-list-alerts-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/security-list-alerts-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/security-list-alerts-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/security-list-alerts-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/security-list-alerts-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/security-list-alerts-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/security-list-alerts-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/security-list-alerts-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -180,9 +186,15 @@ Content-type: application/json
           "rbacGroupName": "UnassignedGroup",
           "onboardingStatus": "onboarded",
           "defenderAvStatus": "unknown",
+          "ipInterfaces": [
+            "1.1.1.1"
+          ],
           "loggedOnUsers": [],
           "roles": [
             "compromised"
+          ],
+          "detailedRoles": [
+            "Main device"
           ],
           "tags": [
             "Test Machine"
@@ -203,6 +215,9 @@ Content-type: application/json
           "detectionStatus": "detected",
           "mdeDeviceId": "73e7e2de709dff64ef64b1d0c30e67fab63279db",
           "roles": [],
+          "detailedRoles": [
+            "Referred in command line"
+          ],
           "tags": [],
           "fileDetails": {
             "sha1": "5f1e8acedc065031aad553b710838eb366cfee9a",
@@ -229,6 +244,7 @@ Content-type: application/json
           "detectionStatus": "detected",
           "mdeDeviceId": "73e7e2de709dff64ef64b1d0c30e67fab63279db",
           "roles": [],
+          "detailedRoles": [],
           "tags": [],
           "imageFile": {
             "sha1": "5f1e8acedc065031aad553b710838eb366cfee9a",
@@ -268,6 +284,7 @@ Content-type: application/json
           "registryKey": "SYSTEM\\CONTROLSET001\\CONTROL\\WMI\\AUTOLOGGER\\SENSEAUDITLOGGER",
           "registryHive": "HKEY_LOCAL_MACHINE",
           "roles": [],
+          "detailedRoles": [],
           "tags": []
         }
       ]

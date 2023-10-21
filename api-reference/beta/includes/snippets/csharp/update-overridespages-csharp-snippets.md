@@ -13,7 +13,7 @@ var requestBody = new Microsoft.Graph.Beta.Identity.B2cUserFlows.Item.Languages.
 	AdditionalData = new Dictionary<string, object>
 	{
 		{
-			"LocalizedStrings" , new List<>
+			"LocalizedStrings" , new List<object>
 			{
 				new 
 				{

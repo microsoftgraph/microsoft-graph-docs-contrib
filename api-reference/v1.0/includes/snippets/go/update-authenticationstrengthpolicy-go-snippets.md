@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewAuthenticationStrengthPolicy()
@@ -21,7 +21,7 @@ requestBody.SetDisplayName(&displayName)
 description := "An auth strength allowing only FIDO2 security keys."
 requestBody.SetDescription(&description) 
 
-result, err := graphClient.Policies().AuthenticationStrengthPolicies().ByAuthenticationStrengthPolicieId("authenticationStrengthPolicy-id").Patch(context.Background(), requestBody, nil)
+authenticationStrengthPolicies, err := graphClient.Policies().AuthenticationStrengthPolicies().ByAuthenticationStrengthPolicyId("authenticationStrengthPolicy-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

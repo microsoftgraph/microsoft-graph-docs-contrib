@@ -11,6 +11,8 @@ doc_type: apiPageType
 
 Delete a specific participant in a call. In some situations, it is appropriate for an application to remove a participant from an active call. This action can be done before or after the participant answers the call. When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification. When an invited participant is removed, any outstanding add participant request is canceled. 
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -55,31 +57,35 @@ The following example shows the request.
   "name": "delete-participant_active"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/{id}
+DELETE https://graph.microsoft.com/v1.0/communications/calls/112f7296-5fa4-42ca-bae8-6a692b15d4b8/participants/a7ebfb2d-871e-419c-87af-27290b22e8db
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-participant-active-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-participant-active-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-participant-active-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-participant-active-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-participant-active-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-participant-active-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-participant-active-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-participant-active-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-participant-active-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-participant-active-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -114,6 +120,7 @@ HTTP/1.1 204 No Content
 
 #### Invite a participant to an existing call
 
+> **Note:** Provide a value for the `participantId` member of the [invitationParticipantInfo](../resources/invitationparticipantinfo.md) so that you can use it to cancel the invitation later.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -121,7 +128,7 @@ HTTP/1.1 204 No Content
   "name": "participant-invite-nonactive-participant"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/invite
+POST https://graph.microsoft.com/v1.0/communications/calls/112f7296-5fa4-42ca-bae8-6a692b15d4b8/participants/invite
 Content-Type: application/json
 Content-Length: 464
 
@@ -129,7 +136,6 @@ Content-Length: 464
   "participants": [
     {
       "@odata.type": "#microsoft.graph.invitationParticipantInfo",
-      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
       "identity": {
         "@odata.type": "#microsoft.graph.identitySet",
         "user": {
@@ -137,7 +143,8 @@ Content-Length: 464
           "id": "278405a3-f568-4b3e-b684-009193463064",
           "identityProvider": "AAD"
         }
-      }
+      },
+      "participantId": "a7ebfb2d-871e-419c-87af-27290b22e8db"
     }
   ],
   "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
@@ -148,24 +155,28 @@ Content-Length: 464
 [!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-nonactive-participant-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-nonactive-participant-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/participant-invite-nonactive-participant-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/participant-invite-nonactive-participant-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/participant-invite-nonactive-participant-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-nonactive-participant-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/participant-invite-nonactive-participant-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/participant-invite-nonactive-participant-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -197,7 +208,7 @@ Content-Type: application/json
     {
       "endpointType": null,
       "id": null,
-      "replacesCallId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
+      "participantId": "a7ebfb2d-871e-419c-87af-27290b22e8db",
       "identity": {
         "user": {
           "id": "278405a3-f568-4b3e-b684-009193463064",
@@ -221,31 +232,35 @@ Content-Type: application/json
   "name": "delete-participant_before-added-to-roster"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/{id}
+DELETE https://graph.microsoft.com/v1.0/communications/calls/112f7296-5fa4-42ca-bae8-6a692b15d4b8/participants/a7ebfb2d-871e-419c-87af-27290b22e8db
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-participant-before-added-to-roster-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-participant-before-added-to-roster-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-participant-before-added-to-roster-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-participant-before-added-to-roster-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-participant-before-added-to-roster-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/delete-participant-before-added-to-roster-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-participant-before-added-to-roster-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-participant-before-added-to-roster-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/delete-participant-before-added-to-roster-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-participant-before-added-to-roster-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

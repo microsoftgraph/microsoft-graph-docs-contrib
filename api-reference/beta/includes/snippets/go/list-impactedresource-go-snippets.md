@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Directory().Recommendations().ByRecommendationId("recommendation-id").ImpactedResources().Get(context.Background(), nil)
+impactedResources, err := graphClient.Directory().Recommendations().ByRecommendationId("recommendation-id").ImpactedResources().Get(context.Background(), nil)
 
 
 ```

@@ -12,18 +12,11 @@ var requestBody = new IdentityApiConnector
 {
 	DisplayName = "Test API",
 	TargetUrl = "https://someapi.com/api",
-	AuthenticationConfiguration = new ApiAuthenticationConfigurationBase
+	AuthenticationConfiguration = new BasicAuthentication
 	{
 		OdataType = "#microsoft.graph.basicAuthentication",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"username" , "<USERNAME>"
-			},
-			{
-				"password" , "<PASSWORD>"
-			},
-		},
+		Username = "<USERNAME>",
+		Password = "<PASSWORD>",
 	},
 };
 var result = await graphClient.Identity.ApiConnectors.PostAsync(requestBody);

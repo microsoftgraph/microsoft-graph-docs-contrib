@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphusers.ItemProfileRequestBuilderGetQueryParameters{
@@ -22,7 +22,7 @@ configuration := &graphusers.ItemProfileRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Me().Profile().Get(context.Background(), configuration)
+profile, err := graphClient.Me().Profile().Get(context.Background(), configuration)
 
 
 ```

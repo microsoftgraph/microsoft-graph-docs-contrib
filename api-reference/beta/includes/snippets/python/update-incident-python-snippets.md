@@ -4,20 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = Incident()
-request_body.classification(AlertClassification.TruePositive('alertclassification.truepositive'))
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.determination(AlertDetermination.MultiStagedAttack('alertdetermination.multistagedattack'))
+request_body = Incident(
+	classification = AlertClassification.TruePositive,
+	determination = AlertDetermination.MultiStagedAttack,
+	custom_tags = [
+		"Demo",
+	]
+)
 
-request_body.CustomTags(['Demo', ])
-
-
-
-
-result = await client.security.incidents.by_incident_id('incident-id').patch(request_body = request_body)
+result = await graph_client.security.incidents.by_incident_id('incident-id').patch(body = request_body)
 
 
 ```

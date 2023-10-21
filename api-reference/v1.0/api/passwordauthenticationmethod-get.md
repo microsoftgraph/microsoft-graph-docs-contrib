@@ -2,7 +2,7 @@
 title: "Get passwordAuthenticationMethod"
 description: "Retrieve a user's passwordAuthenticationMethod object."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "zhvolosh"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 
 Retrieve a password that's registered to a user, represented by a [passwordAuthenticationMethod](../resources/passwordauthenticationmethod.md) object. For security, the password itself will never be returned in the object and the **password** property is always `null`.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -35,6 +37,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 [!INCLUDE [rbac-authentication-methods-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-apis-read.md)]
+
+Admins with *User Administrator*, *Helpdesk Administrator*, or *Password Administrator* roles can also retrieve password authentication methods for non-admin users and a limited set of admin roles as defined in [Who can reset passwords](/azure/active-directory/roles/privileged-roles-permissions#who-can-reset-passwords).
 
 ## HTTP request
 
@@ -88,24 +92,28 @@ GET https://graph.microsoft.com/v1.0/me/authentication/passwordMethods/28c10230-
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-passwordauthenticationmethod-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-passwordauthenticationmethod-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-passwordauthenticationmethod-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-passwordauthenticationmethod-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-passwordauthenticationmethod-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-passwordauthenticationmethod-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-passwordauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-passwordauthenticationmethod-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-passwordauthenticationmethod-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-passwordauthenticationmethod-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -116,7 +124,7 @@ GET https://graph.microsoft.com/v1.0/me/authentication/passwordMethods/28c10230-
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

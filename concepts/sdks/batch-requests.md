@@ -12,7 +12,7 @@ author: DarrelMiller
 [Batching](../json-batching.md) is a way of combining multiple requests into a single HTTP request. The requests are combined in a single JSON payload, which is sent via POST to the `\$batch` endpoint. Microsoft Graph SDKs have a set of classes to simplify how you create batch payloads and parse batch response payloads.
 
 > [!IMPORTANT]
-> For current limitations with JSON batching in Microsoft Graph, see [Known Issues](../known-issues.md#json-batching).
+> For current limitations with JSON batching in Microsoft Graph, see [Known Issues](https://developer.microsoft.com/en-us/graph/known-issues/?filterBy=JSON%20batching&search=).
 
 ## Create a batch request
 
@@ -30,17 +30,49 @@ This example shows how to send multiple requests in a batch that are not depende
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/BatchRequests.cs" id="SimpleBatchSnippet":::
 
-### [TypeScript](#tab/typescript)
+### [Go](#tab/go)
 
-:::code language="typescript" source="./snippets/typescript/src/snippets/batchRequests.ts" id="SimpleBatchSnippet":::
+:::code language="go" source="./snippets/go/src/snippets/batch_requests.go" id="SimpleBatchSnippet":::
 
 ### [Java](#tab/java)
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/BatchRequests.java" id="SimpleBatchSnippet":::
 
-### [Go](#tab/go)
+### [PHP](#tab/PHP)
 
-:::code language="go" source="./snippets/go/src/snippets/batch_requests.go" id="SimpleBatchSnippet":::
+```php
+<?php
+use Microsoft\Graph\Core\Requests\BatchRequestContent;
+use Microsoft\Graph\Core\Requests\BatchResponseItem;
+use Microsoft\Graph\Generated\Models\Message;
+use Microsoft\Graph\BatchRequestBuilder;
+
+$message = new Message();
+$message->setSubject("Test Subject");
+
+$batchRequestContent = new BatchRequestContent([
+    $graphServiceClient->users()->byUserId(USER_ID)->messages()->byMessageId('id')->toDeleteRequestInformation(),
+    $graphServiceClient->users()->byUserId(USER_ID)->messages()->toPostRequestInformation($message),
+    $graphServiceClient->users()->byUserId(USER_ID)->toGetRequestInformation()
+]);
+
+// Send the request
+$requestBuilder = new BatchRequestBuilder($graphServiceClient->getRequestAdapter());
+/** @var BatchResponseContent $batchResponse  */
+$batchResponse = $requestBuilder->postAsync($batchRequestContent)->wait();
+
+// Get response back
+$batchRequests = $batchRequestContent->getRequests();
+// Uses the auto-generated ID added to the batch request content
+$response1 = $batchResponse->getResponse($batchRequests[0]->getId());
+echo "Response1 status code: {$response1->getStatusCode()}";
+
+```
+
+### [TypeScript](#tab/typescript)
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/batchRequests.ts" id="SimpleBatchSnippet":::
+
 
 ---
 
@@ -55,16 +87,36 @@ This example shows how to send multiple requests in a batch that are dependent o
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/BatchRequests.cs" id="DependentBatchSnippet":::
 
-### [TypeScript](#tab/typescript)
+### [Go](#tab/go)
 
-:::code language="typescript" source="./snippets/typescript/src/snippets/batchRequests.ts" id="DependentBatchSnippet":::
+:::code language="go" source="./snippets/go/src/snippets/batch_requests.go" id="DependentBatchSnippet":::
 
 ### [Java](#tab/java)
 
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/BatchRequests.java" id="DependentBatchSnippet":::
 
-### [Go](#tab/go)
+### [PHP](#tab/PHP)
 
-:::code language="go" source="./snippets/go/src/snippets/batch_requests.go" id="DependentBatchSnippet":::
+```php
+use Microsoft\Graph\Core\Requests\BatchRequestContent;
+use Microsoft\Graph\Core\Requests\BatchRequestItem;
+use Microsoft\Graph\Generated\Models\Message;
+
+$message = new Message();
+$message->setSubject("Test Subject");
+
+$request1 = new BatchRequestItem($graphServiceClient->users()->byUserId(USER_ID)->messages()->byMessageId('[id]')->toGetRequestInformation());
+$request2 = new BatchRequestItem($graphServiceClient->users()->byUserId(USER_ID)->messages()->byMessageId('[id]')->toPatchRequestInformation($message));
+$request2->dependsOn([$request1]);
+
+$batchRequestContent = new BatchRequestContent([
+    $request1, $request2
+]);
+
+```
+
+### [TypeScript](#tab/typescript)
+
+:::code language="typescript" source="./snippets/typescript/src/snippets/batchRequests.ts" id="DependentBatchSnippet":::
 
 ---

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Update the properties of an **educationuser** object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,7 +45,7 @@ PATCH /education/users/{id}
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or are recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
 | Property         | Type               | Description                                                                                                                                     |
 | :--------------- | :----------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -52,13 +54,13 @@ In the request body, supply the values for relevant fields that should be update
 | middleName       | String             | Middle Name of user                                                                                                                             |
 | surname          | String             | Surname of user                                                                                                                                 |
 | mail             | String             | email address                                                                                                                                   |
-| mobilePhone      | String             | Mobile number of user                                                                                                                           |
+| mobilePhone      | String             | Mobile number of users                                                                                                                           |
 | externalSource   | string             | Where this user was created from. Possible values are: `sis`, `manual`, or `lms`.                                                               |
-| mailingAddress   | [physicalAddress]  | Mail address of user. Note: `type` and `postOfficeBox` are not supported for `educationUser` resources.                                         |
-| residenceAddress | [physicalAddress]  | Address where user lives. Note: `type` and `postOfficeBox` are not supported for `educationUser` resources.                                     |
+| mailingAddress   | [physicalAddress]  | Mail address of user. Note: `type` and `postOfficeBox` aren't supported for `educationUser` resources.                                         |
+| residenceAddress | [physicalAddress]  | Address where user lives. Note: `type` and `postOfficeBox` aren't supported for `educationUser` resources.                                     |
 | primaryRole      | string             | Default Role for a user. The user's role might be different in an individual class. Possible values are: `student`, `teacher`, `enum_sentinel`. |
-| student          | [educationStudent] | If the primary role is student, this block will contain student specific data.                                                                  |
-| teacher          | [educationTeacher](../resources/educationteacher.md) | If the primary role is teacher, this block will contain teacher specific data.                                                                  |
+| student          | [educationStudent] | If the primary role is student, this block contains student specific data.                                                                  |
+| teacher          | [educationTeacher](../resources/educationteacher.md) | If the primary role is teacher, this block contains teacher specific data.                                                                  |
 
 ## Response
 
@@ -68,7 +70,7 @@ If successful, this method returns a `200 OK` response code and updated [educati
 
 ##### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 
@@ -94,24 +96,28 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-educationuser-names-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationuser-names-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-educationuser-names-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-educationuser-names-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-educationuser-names-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-educationuser-names-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-educationuser-names-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationuser-names-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-educationuser-names-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-educationuser-names-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -122,7 +128,7 @@ Content-type: application/json
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here's an example of the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewPrinterShare()
@@ -25,7 +25,7 @@ additionalData := map[string]interface{}{
 }
 requestBody.SetAdditionalData(additionalData)
 
-result, err := graphClient.Print().Shares().ByShareId("printerShare-id").Patch(context.Background(), requestBody, nil)
+shares, err := graphClient.Print().Shares().ByPrinterShareId("printerShare-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

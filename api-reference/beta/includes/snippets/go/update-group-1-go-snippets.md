@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewGroup()
@@ -21,7 +21,7 @@ requestBody.SetDescription(&description)
 displayName := "Contoso Life Renewed"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Groups().ByGroupId("group-id").Patch(context.Background(), requestBody, nil)
+groups, err := graphClient.Groups().ByGroupId("group-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

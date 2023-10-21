@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -39,7 +39,7 @@ timeZone := "Eastern Standard Time"
 dueDateTime.SetTimeZone(&timeZone) 
 requestBody.SetDueDateTime(dueDateTime)
 
-result, err := graphClient.Me().Outlook().Tasks().Post(context.Background(), requestBody, configuration)
+tasks, err := graphClient.Me().Outlook().Tasks().Post(context.Background(), requestBody, configuration)
 
 
 ```

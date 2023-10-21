@@ -8,24 +8,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var requestBody = new NamedLocation
+var requestBody = new IpNamedLocation
 {
 	OdataType = "#microsoft.graph.ipNamedLocation",
 	DisplayName = "Untrusted named location with only IPv4 address",
-	AdditionalData = new Dictionary<string, object>
+	IsTrusted = false,
+	IpRanges = new List<IpRange>
 	{
+		new IPv4CidrRange
 		{
-			"isTrusted" , false
-		},
-		{
-			"ipRanges" , new List<>
-			{
-				new 
-				{
-					OdataType = "#microsoft.graph.iPv4CidrRange",
-					CidrAddress = "6.5.4.3/18",
-				},
-			}
+			OdataType = "#microsoft.graph.iPv4CidrRange",
+			CidrAddress = "6.5.4.3/18",
 		},
 	},
 };

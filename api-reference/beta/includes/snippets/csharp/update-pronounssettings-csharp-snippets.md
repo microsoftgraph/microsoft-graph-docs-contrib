@@ -12,7 +12,7 @@ var requestBody = new PronounsSettings
 {
 	IsEnabledInOrganization = true,
 };
-var result = await graphClient.Organization["{organization-id}"].Settings.Pronouns.PatchAsync(requestBody);
+var result = await graphClient.Admin.People.Pronouns.PatchAsync(requestBody);
 
 
 ```

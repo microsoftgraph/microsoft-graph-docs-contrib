@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-graphClient.Print().Shares().ByShareId("printerShare-id").AllowedGroups().ByAllowedGroupId("group-id").Ref().Delete(context.Background(), nil)
+graphClient.Print().Shares().ByPrinterShareId("printerShare-id").AllowedGroups().ByGroupId("group-id").Ref().Delete(context.Background(), nil)
 
 
 ```

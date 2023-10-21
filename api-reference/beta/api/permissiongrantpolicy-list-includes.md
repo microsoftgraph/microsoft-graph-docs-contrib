@@ -1,6 +1,6 @@
 ---
 title: "List includes collection of permissionGrantPolicy"
-description: "Retrieve a list of the condition sets which describe conditions under which a permission grant event is included in a permission grant policy."
+description: "Retrieve a list of the condition sets that describe conditions under which a permission grant event is included in a permission grant policy."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the condition sets which are *included* in a [permissionGrantPolicy](../resources/permissiongrantpolicy.md).
+Retrieve the condition sets that are *included* in a [permissionGrantPolicy](../resources/permissiongrantpolicy.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -24,6 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | Policy.Read.PermissionGrant, Directory.Read.All |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Policy.Read.PermissionGrant, Directory.Read.All |
+
+[!INCLUDE [rbac-permission-grant-preapproval-policy-read](../includes/rbac-for-apis/rbac-permission-grant-preapproval-policy-read.md)]
 
 ## HTTP request
 
@@ -72,24 +76,28 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 [!INCLUDE [sample-code](../includes/snippets/csharp/permissiongrantpolicy-get-includes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/permissiongrantpolicy-get-includes-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/permissiongrantpolicy-get-includes-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/permissiongrantpolicy-get-includes-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/permissiongrantpolicy-get-includes-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/permissiongrantpolicy-get-includes-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/permissiongrantpolicy-get-includes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/permissiongrantpolicy-get-includes-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/permissiongrantpolicy-get-includes-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/permissiongrantpolicy-get-includes-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -127,7 +135,11 @@ Content-type: application/json
       "clientApplicationTenantIds": [ "all" ],
       "clientApplicationPublisherIds": [ "all" ],
       "clientApplicationsFromVerifiedPublisherOnly": false,
-      "certifiedClientApplicationsOnly": false
+      "certifiedClientApplicationsOnly": false,
+      "scopeSensitivityLabels": {
+          "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+          "labelKind": "all"
+      }
     },
     {
       "id": "60461179-740e-4d8b-9e00-1456a338c44b",
@@ -139,7 +151,11 @@ Content-type: application/json
       "clientApplicationTenantIds": [ "all" ],
       "clientApplicationPublisherIds": [ "all" ],
       "clientApplicationsFromVerifiedPublisherOnly": false,
-      "certifiedClientApplicationsOnly": false
+      "certifiedClientApplicationsOnly": false,
+      "scopeSensitivityLabels": {
+          "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+          "labelKind": "all"
+      }
     }
   ]
 }

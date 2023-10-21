@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewDelegatedPermissionClassification()
@@ -23,7 +23,7 @@ requestBody.SetPermissionName(&permissionName)
 classification := graphmodels.LOW_PERMISSIONCLASSIFICATIONTYPE 
 requestBody.SetClassification(&classification) 
 
-result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").DelegatedPermissionClassifications().Post(context.Background(), requestBody, nil)
+delegatedPermissionClassifications, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").DelegatedPermissionClassifications().Post(context.Background(), requestBody, nil)
 
 
 ```

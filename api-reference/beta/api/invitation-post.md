@@ -2,7 +2,7 @@
 title: "Create invitation"
 description: "Use this API to create a new invitation. Invitation adds an external user to the organization."
 ms.localizationpriority: medium
-author: "Sammak"
+author: "ppolkadots"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -15,10 +15,12 @@ Namespace: microsoft.graph
 
 Use this API to create a new [invitation](../resources/invitation.md). Invitation adds an external user to the organization.
 
-When creating a new invitation you have several options available:
+When creating a new invitation, you have several options available:
 
 1. On invitation creation, Microsoft Graph can automatically send an invitation email directly to the invited user, or your app can use the *inviteRedeemUrl* returned in the creation response to craft your own invitation (through your communication mechanism of choice) to the invited user. If you decide to have Microsoft Graph send an invitation email automatically, you can control the content and language of the email using [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).
 2. When the user is invited, a user entity (of userType Guest) is created and can now be used to control access to resources. The invited user has to go through the redemption process to access any resources they have been invited to.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -29,6 +31,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.Invite.All, User.ReadWrite.All, Directory.ReadWrite.All |
+
+> [!IMPORTANT]
+> Application permissions (app-only) do not work if B2B is enabled on the tenant. For details, see [Enabling and disabling the B2B integration](/sharepoint/sharepoint-azureb2b-integration#enabling-the-integration).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -44,11 +49,11 @@ POST /invitations
 ## Request body
 In the request body, supply a JSON representation of an [invitation](../resources/invitation.md) object.
 
-The following table shows the properties that are required when you create a invitation.
+The following table shows the properties that are required when you create an invitation.
 
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
-|invitedUserEmailAddress |string | The email address of the user you are inviting.|
+|invitedUserEmailAddress |string | The email address of the user you're inviting.|
 |inviteRedirectUrl |string |The URL that the user will be redirected to after redemption.|
 
 ## Response
@@ -57,7 +62,7 @@ If successful, this method returns `201 Created` response code and [invitation](
 
 ## Example
 ### Request
-The following is an example of the request.
+Here's an example  of the request.
 
 
 # [HTTP](#tab/http)
@@ -79,24 +84,28 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-invitation-post-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-invitation-post-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-invitation-post-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-invitation-post-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-invitation-post-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/create-invitation-post-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-invitation-post-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-invitation-post-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-invitation-post-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-invitation-post-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -106,7 +115,7 @@ Content-type: application/json
 ---
 
 ### Response
-The following is an example of the response. 
+Here's an example  of the response. 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Directory().OutboundSharedUserProfiles().ByOutboundSharedUserProfileId("outboundSharedUserProfile-userId").Get(context.Background(), nil)
+outboundSharedUserProfiles, err := graphClient.Directory().OutboundSharedUserProfiles().ByOutboundSharedUserProfileUserId("outboundSharedUserProfile-userId").Get(context.Background(), nil)
 
 
 ```

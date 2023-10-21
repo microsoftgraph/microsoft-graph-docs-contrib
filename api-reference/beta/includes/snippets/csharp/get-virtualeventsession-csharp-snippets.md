@@ -8,7 +8,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.Solutions.VirtualEvents.Events["{virtualEvent-id}"].Sessions["{virtualEventSession-id}"].GetAsync();
+var result = await graphClient.Solutions.VirtualEvents.Webinars["{virtualEventWebinar-id}"].Sessions["{virtualEventSession-id}"].GetAsync();
 
 
 ```

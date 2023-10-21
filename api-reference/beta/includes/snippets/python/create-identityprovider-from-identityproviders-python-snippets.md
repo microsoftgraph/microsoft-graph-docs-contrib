@@ -4,24 +4,19 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = IdentityProvider()
-request_body.@odata_type = 'microsoft.graph.identityProvider'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.name = 'Login with Amazon'
+request_body = IdentityProvider(
+	odata_type = "microsoft.graph.identityProvider",
+	name = "Login with Amazon",
+	type = "Amazon",
+	client_id = "56433757-cadd-4135-8431-2c9e3fd68ae8",
+	client_secret = "000000000000",
+)
 
-request_body.type = 'Amazon'
-
-request_body.client_id = '56433757-cadd-4135-8431-2c9e3fd68ae8'
-
-request_body.client_secret = '000000000000'
-
-
-
-
-result = await client.identity_providers.post(request_body = request_body)
+result = await graph_client.identity_providers.post(body = request_body)
 
 
 ```

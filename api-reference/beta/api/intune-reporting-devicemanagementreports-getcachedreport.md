@@ -1,6 +1,6 @@
 ---
 title: "getCachedReport action"
-description: "Not yet documented"
+description: "Intune Reporting Devicemanagementreports Getcachedreport Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Not yet documented
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -48,13 +48,13 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
-|select|String collection|Not yet documented|
-|search|String|Not yet documented|
-|groupBy|String collection|Not yet documented|
-|orderBy|String collection|Not yet documented|
-|skip|Int32|Not yet documented|
-|top|Int32|Not yet documented|
+|id|String||
+|select|String collection||
+|search|String||
+|groupBy|String collection||
+|orderBy|String collection||
+|skip|Int32||
+|top|Int32||
 
 
 

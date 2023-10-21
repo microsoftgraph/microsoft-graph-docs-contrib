@@ -12,13 +12,13 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEducationAssignmentResource()
 distributeForStudentWork := false
 requestBody.SetDistributeForStudentWork(&distributeForStudentWork) 
-resource := graphmodels.NewEducationResource()
+resource := graphmodels.NewEducationFileResource()
 displayName := "article.pdf"
 resource.SetDisplayName(&displayName) 
 additionalData := map[string]interface{}{
@@ -30,7 +30,7 @@ file.SetOdataid(&odataid)
 resource.SetAdditionalData(additionalData)
 requestBody.SetResource(resource)
 
-result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().ByAssignmentId("educationAssignment-id").Resources().Post(context.Background(), requestBody, nil)
+resources, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").Assignments().ByEducationAssignmentId("educationAssignment-id").Resources().Post(context.Background(), requestBody, nil)
 
 
 ```

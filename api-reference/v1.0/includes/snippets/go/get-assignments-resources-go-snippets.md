@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &grapheducation.EducationClasseItemAssignmentsRequestBuilderGetQueryParameters{
@@ -22,7 +22,7 @@ configuration := &grapheducation.EducationClasseItemAssignmentsRequestBuilderGet
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").Assignments().Get(context.Background(), configuration)
+assignments, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").Assignments().Get(context.Background(), configuration)
 
 
 ```

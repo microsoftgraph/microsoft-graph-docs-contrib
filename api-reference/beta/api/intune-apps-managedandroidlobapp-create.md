@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All|
+|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -79,6 +79,7 @@ The following table shows the properties that are required when you create the m
 |versionName|String|The version name of managed Android Line of Business (LoB) app.|
 |versionCode|String|The version code of managed Android Line of Business (LoB) app.|
 |identityVersion|String|The identity version. This property is being deprecated in 2302(February 2023).|
+|targetedPlatforms|[androidTargetedPlatforms](../resources/intune-apps-androidtargetedplatforms.md)|The platforms to which the application can be targeted. If not specified, will defauilt to Android Device Administrator. Possible values are: `androidDeviceAdministrator`, `androidOpenSourceProject`, `unknownFutureValue`.|
 
 
 
@@ -92,7 +93,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1588
+Content-length: 1640
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidLobApp",
@@ -147,7 +148,8 @@ Content-length: 1588
   },
   "versionName": "Version Name value",
   "versionCode": "Version Code value",
-  "identityVersion": "Identity Version value"
+  "identityVersion": "Identity Version value",
+  "targetedPlatforms": "androidOpenSourceProject"
 }
 ```
 
@@ -156,7 +158,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1760
+Content-Length: 1812
 
 {
   "@odata.type": "#microsoft.graph.managedAndroidLobApp",
@@ -214,6 +216,7 @@ Content-Length: 1760
   },
   "versionName": "Version Name value",
   "versionCode": "Version Code value",
-  "identityVersion": "Identity Version value"
+  "identityVersion": "Identity Version value",
+  "targetedPlatforms": "androidOpenSourceProject"
 }
 ```

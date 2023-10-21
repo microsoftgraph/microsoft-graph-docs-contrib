@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewEducationCategory()
 displayName := "Quizzes"
 requestBody.SetDisplayName(&displayName) 
 
-result, err := graphClient.Education().Classes().ByClasseId("educationClass-id").AssignmentCategories().Post(context.Background(), requestBody, nil)
+assignmentCategories, err := graphClient.Education().Classes().ByEducationClassId("educationClass-id").AssignmentCategories().Post(context.Background(), requestBody, nil)
 
 
 ```

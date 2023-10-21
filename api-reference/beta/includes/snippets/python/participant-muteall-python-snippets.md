@@ -4,18 +4,18 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = MuteAllPostRequestBody()
-request_body.Participants(['', ])
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.client_context = 'clientContext-value'
+request_body = MuteAllPostRequestBody(
+	participants = [
+		"",
+	]
+	client_context = "clientContext-value",
+)
 
-
-
-
-result = await client.communications.calls.by_call_id('call-id').participants.mute_all.post(request_body = request_body)
+result = await graph_client.communications.calls.by_call_id('call-id').participants.mute_all.post(body = request_body)
 
 
 ```

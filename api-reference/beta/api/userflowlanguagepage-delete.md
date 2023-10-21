@@ -1,6 +1,6 @@
 ---
 title: "Delete userFlowLanguagePage"
-description: "Deletes the values in an userFlowLanguagePage object."
+description: "Deletes the values in a userFlowLanguagePage object."
 author: "jkdouglas"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -30,7 +30,7 @@ The work or school account needs to belong to one of the following roles:
 
 ## HTTP request
 
-To reference the content within the object, you must use `$value`. This returns the content within the object and allows you to reference it directly.
+To reference the content within the object, you must use `$value`, which returns the content within the object and allows you to reference it directly.
 
 <!-- {
   "blockType": "ignored"
@@ -50,7 +50,7 @@ DELETE /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/$value
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -60,7 +60,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 
 # [HTTP](#tab/http)
@@ -75,19 +75,19 @@ The following is an example of the request.
 DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/languages/en/overridesPages/phonefactor/$value
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-userflowlanguagepage-beta-e1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/delete-userflowlanguagepage-beta-e1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-userflowlanguagepage-beta-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 <!-- {
   "blockType": "response",

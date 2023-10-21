@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodelssecurity.NewRetentionEventType()
@@ -24,7 +24,7 @@ requestBody.SetDescription(&description)
 createdBy := graphmodels.NewIdentitySet()
 requestBody.SetCreatedBy(createdBy)
 
-result, err := graphClient.Security().TriggerTypes().RetentionEventTypes().Post(context.Background(), requestBody, nil)
+retentionEventTypes, err := graphClient.Security().TriggerTypes().RetentionEventTypes().Post(context.Background(), requestBody, nil)
 
 
 ```

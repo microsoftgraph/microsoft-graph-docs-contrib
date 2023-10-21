@@ -20,15 +20,10 @@ var requestBody = new Microsoft.Graph.Beta.Chats.Item.SendActivityNotification.S
 	{
 		Content = "New Task Created",
 	},
-	Recipient = new TeamworkNotificationRecipient
+	Recipient = new ChatMembersNotificationRecipient
 	{
 		OdataType = "microsoft.graph.chatMembersNotificationRecipient",
-		AdditionalData = new Dictionary<string, object>
-		{
-			{
-				"chatId" , "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2"
-			},
-		},
+		ChatId = "19:1c3af46e9e0f4a5293343c8813c47619@thread.v2",
 	},
 	TemplateParameters = new List<KeyValuePair>
 	{

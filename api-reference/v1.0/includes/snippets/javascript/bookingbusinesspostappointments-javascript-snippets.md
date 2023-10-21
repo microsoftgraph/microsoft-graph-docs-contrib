@@ -77,6 +77,9 @@ const bookingAppointment = {
     },
     serviceName: 'Catered bento',
     serviceNotes: 'Customer requires punctual service.',
+    staffMemberIds: [
+      '8ee1c803-a1fa-406d-8259-7ab53233f148'
+    ],
     startDateTime: {
         '@odata.type': '#microsoft.graph.dateTimeTimeZone',
         dateTime: '2018-05-01T12:00:00.0000000+00:00',

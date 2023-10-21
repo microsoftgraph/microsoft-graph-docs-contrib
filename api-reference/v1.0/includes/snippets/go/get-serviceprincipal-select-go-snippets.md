@@ -12,17 +12,17 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphserviceprincipals.ServicePrincipalItemRequestBuilderGetQueryParameters{
-	Select: [] string {"id","appId","displayName","appRoles","oauth2PermissionScopes"},
+	Select: [] string {"id","appId","displayName","appRoles","oauth2PermissionScopes","resourceSpecificApplicationPermissions"},
 }
 configuration := &graphserviceprincipals.ServicePrincipalItemRequestBuilderGetRequestConfiguration{
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Get(context.Background(), configuration)
+servicePrincipals, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").Get(context.Background(), configuration)
 
 
 ```

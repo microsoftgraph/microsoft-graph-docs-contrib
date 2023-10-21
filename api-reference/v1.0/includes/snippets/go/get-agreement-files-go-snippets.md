@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestParameters := &graphidentitygovernance.IdentityGovernanceTermsOfUseAgreementItemRequestBuilderGetQueryParameters{
@@ -22,7 +22,7 @@ configuration := &graphidentitygovernance.IdentityGovernanceTermsOfUseAgreementI
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.IdentityGovernance().TermsOfUse().Agreements().ByAgreementId("agreement-id").Get(context.Background(), configuration)
+agreements, err := graphClient.IdentityGovernance().TermsOfUse().Agreements().ByAgreementId("agreement-id").Get(context.Background(), configuration)
 
 
 ```

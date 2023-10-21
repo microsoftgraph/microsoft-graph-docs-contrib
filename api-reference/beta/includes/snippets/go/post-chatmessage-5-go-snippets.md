@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewChatMessage()
@@ -36,11 +36,10 @@ chatMessageHostedContent.SetAdditionalData(additionalData)
 
 hostedContents := []graphmodels.ChatMessageHostedContentable {
 	chatMessageHostedContent,
-
 }
 requestBody.SetHostedContents(hostedContents)
 
-result, err := graphClient.Chats().ByChatId("chat-id").Messages().Post(context.Background(), requestBody, nil)
+messages, err := graphClient.Chats().ByChatId("chat-id").Messages().Post(context.Background(), requestBody, nil)
 
 
 ```

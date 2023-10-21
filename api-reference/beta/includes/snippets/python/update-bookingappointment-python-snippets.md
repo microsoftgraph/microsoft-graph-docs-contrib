@@ -4,43 +4,30 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = BookingAppointment()
-request_body.@odata_type = '#microsoft.graph.bookingAppointment'
+graph_client = GraphServiceClient(request_adapter)
 
-end = DateTimeTimeZone()
-end.@odata_type = '#microsoft.graph.dateTimeTimeZone'
+request_body = BookingAppointment(
+	odata_type = "#microsoft.graph.bookingAppointment",
+	end = DateTimeTimeZone(
+		odata_type = "#microsoft.graph.dateTimeTimeZone",
+		date_time = "2018-05-06T12:30:00.0000000+00:00",
+		time_zone = "UTC",
+	),
+	invoice_date = DateTimeTimeZone(
+		odata_type = "#microsoft.graph.dateTimeTimeZone",
+		date_time = "2018-05-06T12:30:00.0000000+00:00",
+		time_zone = "UTC",
+	),
+	start = DateTimeTimeZone(
+		odata_type = "#microsoft.graph.dateTimeTimeZone",
+		date_time = "2018-05-06T12:00:00.0000000+00:00",
+		time_zone = "UTC",
+	),
+)
 
-end.date_time = '2018-05-06T12:30:00.0000000+00:00'
-
-end.time_zone = 'UTC'
-
-
-request_body.end = end
-invoice_date = DateTimeTimeZone()
-invoice_date.@odata_type = '#microsoft.graph.dateTimeTimeZone'
-
-invoice_date.date_time = '2018-05-06T12:30:00.0000000+00:00'
-
-invoice_date.time_zone = 'UTC'
-
-
-request_body.invoice_date = invoice_date
-start = DateTimeTimeZone()
-start.@odata_type = '#microsoft.graph.dateTimeTimeZone'
-
-start.date_time = '2018-05-06T12:00:00.0000000+00:00'
-
-start.time_zone = 'UTC'
-
-
-request_body.start = start
-
-
-
-result = await client.booking_businesses.by_booking_businesse_id('bookingBusiness-id').appointments.by_appointment_id('bookingAppointment-id').patch(request_body = request_body)
+result = await graph_client.booking_businesses.by_booking_businesse_id('bookingBusiness-id').appointments.by_appointment_id('bookingAppointment-id').patch(body = request_body)
 
 
 ```

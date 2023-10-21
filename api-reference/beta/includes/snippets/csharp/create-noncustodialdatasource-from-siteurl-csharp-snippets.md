@@ -11,17 +11,12 @@ var graphClient = new GraphServiceClient(requestAdapter);
 var requestBody = new Microsoft.Graph.Beta.Models.Ediscovery.NoncustodialDataSource
 {
 	ApplyHoldToSource = false,
-	DataSource = new Microsoft.Graph.Beta.Models.Ediscovery.DataSource
+	DataSource = new Microsoft.Graph.Beta.Models.Ediscovery.SiteSource
 	{
 		OdataType = "microsoft.graph.ediscovery.siteSource",
-		AdditionalData = new Dictionary<string, object>
+		Site = new Site
 		{
-			{
-				"site" , new 
-				{
-					WebUrl = "https://contoso.sharepoint.com/sites/SecretSite",
-				}
-			},
+			WebUrl = "https://contoso.sharepoint.com/sites/SecretSite",
 		},
 	},
 };

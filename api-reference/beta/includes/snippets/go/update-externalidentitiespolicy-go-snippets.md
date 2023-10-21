@@ -12,14 +12,14 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphmodels.NewExternalIdentitiesPolicy()
 allowExternalIdentitiesToLeave := false
 requestBody.SetAllowExternalIdentitiesToLeave(&allowExternalIdentitiesToLeave) 
 
-result, err := graphClient.Policies().ExternalIdentitiesPolicy().Patch(context.Background(), requestBody, nil)
+externalIdentitiesPolicy, err := graphClient.Policies().ExternalIdentitiesPolicy().Patch(context.Background(), requestBody, nil)
 
 
 ```

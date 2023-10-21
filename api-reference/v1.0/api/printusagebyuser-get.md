@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Retrieve a user's usage summary for a particular time period. For descriptions of each endpoint, see [printUsageByUser](../resources/printUsageByUser.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -67,24 +69,28 @@ GET https://graph.microsoft.com/v1.0/reports/dailyPrintUsageByUser/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-printusagebyuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-printusagebyuser-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-printusagebyuser-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-printusagebyuser-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-printusagebyuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-printusagebyuser-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-printusagebyuser-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-printusagebyuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-printusagebyuser-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-printusagebyuser-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -108,10 +114,17 @@ Content-Type: application/json
 {
   "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
   "userPrincipalName": "username@contoso.com",
-  "usageDate": "Date",
-  "completedBlackAndWhiteJobCount": 42,
-  "completedColorJobCount": 0,
-  "incompleteJobCount": 6
+  "usageDate": "2020-02-04T00:00:00.0000000Z",
+  "completedJobCount": 110,
+  "completedBlackAndWhiteJobCount": 1,
+  "completedColorJobCount": 109,
+  "incompleteJobCount": 13,
+  "pageCount": 138,
+  "blackAndWhitePageCount": 0,
+  "colorPageCount": 138,
+  "mediaSheetCount": 132,
+  "doubleSidedSheetCount": 12,
+  "singleSidedSheetCount": 120
 }
 ```
 

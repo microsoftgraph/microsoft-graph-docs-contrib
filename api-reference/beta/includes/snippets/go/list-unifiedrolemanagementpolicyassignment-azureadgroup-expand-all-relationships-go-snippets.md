@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
@@ -26,7 +26,7 @@ configuration := &graphpolicies.PoliciesRoleManagementPolicyAssignmentsRequestBu
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Policies().RoleManagementPolicyAssignments().Get(context.Background(), configuration)
+roleManagementPolicyAssignments, err := graphClient.Policies().RoleManagementPolicyAssignments().Get(context.Background(), configuration)
 
 
 ```

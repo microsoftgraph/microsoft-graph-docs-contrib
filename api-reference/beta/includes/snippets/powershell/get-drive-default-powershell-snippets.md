@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```powershell
 
-Import-Module Microsoft.Graph.Files
+Import-Module Microsoft.Graph.Beta.Files
 
 # A UPN can also be used as -UserId.
-Get-MgUserDefaultDrive -UserId $userId
+Get-MgBetaUserDefaultDrive -UserId $userId
 
 ```

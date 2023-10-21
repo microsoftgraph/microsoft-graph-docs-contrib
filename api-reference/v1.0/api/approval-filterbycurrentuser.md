@@ -1,6 +1,6 @@
 ---
 title: "approval: filterByCurrentUser"
-description: "Get the approval resources from the accessPackageAssignmentApprovals navigation property for the current user."
+description: "Get the approval resources."
 author: "markwahl-msft"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -10,11 +10,16 @@ doc_type: apiPageType
 # approval: filterByCurrentUser
 Namespace: microsoft.graph
 
-In Azure AD entitlement management, return a collection of [access package assignment approvals](../resources/approval.md). The returned objects are those which the calling user is in the scope of being an approver.
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), return a collection of [access package assignment approvals](../resources/approval.md). The objects returned are those that are in scope for approval by the calling user.
+
+In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), return a collection of [assignment approvals](../resources/approval.md). The objects returned are those that are in scope for approval by the calling user.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
-
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+### For entitlement management
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -22,14 +27,32 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
+### For PIM for groups
+
+| Permission type                        | Permissions (from least to most privileged) |
+|:---------------------------------------|:--------------------------------------------|
+| Delegated (work or school account)     | PrivilegedAssignmentSchedule.Read.AzureADGroup, PrivilegedAssignmentSchedule.ReadWrite.AzureADGroup |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
+
 ## HTTP request
 
+To retrieve the approval resources in entitlement management:
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/filterByCurrentUser(on='approver')
+```
+
+To retrieve the approval resources in PIM for groups:
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /identityGovernance/privilegedAccess/group/assignmentApprovals/filterByCurrentUser(on='approver')
 ```
 
 ## Function parameters
@@ -53,7 +76,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Retrieve the approval resources in entitlement management
+
+#### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -69,16 +94,20 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ac
 [!INCLUDE [sample-code](../includes/snippets/csharp/approvalthis-filterbycurrentuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/approvalthis-filterbycurrentuser-javascript-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/approvalthis-filterbycurrentuser-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/approvalthis-filterbycurrentuser-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/approvalthis-filterbycurrentuser-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/approvalthis-filterbycurrentuser-go-snippets.md)]
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/approvalthis-filterbycurrentuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
@@ -91,7 +120,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ac
 
 ---
 
-### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -113,3 +142,49 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Retrieve the approval resources in PIM for groups
+
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "approvalthis-filterbycurrentuser_azureADGroup"
+}
+-->
+``` http
+GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/assignmentApprovals/filterByCurrentUser(on='approver')
+```
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(microsoft.graph.approval)"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.approval",
+      "id": "46bc634a-0696-43c5-bc99-d568bc3c27f5",
+      "stages": [
+        {
+          "id": "46bc634a-0696-43c5-bc99-d568bc3c27f5",
+          "displayName": null,
+          "reviewedDateTime": null,
+          "reviewResult": "NotReviewed",
+          "status": "Completed",
+          "assignedToMe": true,
+          "justification": "",
+          "reviewedBy": null
+        }
+      ]
+    }
+  ]
+}
+```

@@ -13,7 +13,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 requestBody := graphserviceprincipals.NewAddPasswordPostRequestBody()
@@ -22,7 +22,7 @@ displayName := "Password friendly name"
 passwordCredential.SetDisplayName(&displayName) 
 requestBody.SetPasswordCredential(passwordCredential)
 
-result, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").AddPassword().Post(context.Background(), requestBody, nil)
+addPassword, err := graphClient.ServicePrincipals().ByServicePrincipalId("servicePrincipal-id").AddPassword().Post(context.Background(), requestBody, nil)
 
 
 ```

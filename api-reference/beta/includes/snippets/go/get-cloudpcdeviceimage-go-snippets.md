@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.DeviceManagement().VirtualEndpoint().DeviceImages().ByDeviceImageId("cloudPcDeviceImage-id").Get(context.Background(), nil)
+deviceImages, err := graphClient.DeviceManagement().VirtualEndpoint().DeviceImages().ByCloudPcDeviceImageId("cloudPcDeviceImage-id").Get(context.Background(), nil)
 
 
 ```

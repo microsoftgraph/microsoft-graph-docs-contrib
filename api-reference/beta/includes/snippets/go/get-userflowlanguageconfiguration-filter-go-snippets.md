@@ -12,7 +12,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
@@ -25,7 +25,7 @@ configuration := &graphidentity.IdentityB2cUserFlowItemLanguagesRequestBuilderGe
 	QueryParameters: requestParameters,
 }
 
-result, err := graphClient.Identity().B2cUserFlows().ByB2cUserFlowId("b2cIdentityUserFlow-id").Languages().Get(context.Background(), configuration)
+languages, err := graphClient.Identity().B2cUserFlows().ByB2cIdentityUserFlowId("b2cIdentityUserFlow-id").Languages().Get(context.Background(), configuration)
 
 
 ```

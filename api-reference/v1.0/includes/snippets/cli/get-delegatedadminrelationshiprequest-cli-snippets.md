@@ -1,0 +1,10 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```bash
+
+// THE CLI IS IN PREVIEW. NON-PRODUCTION USE ONLY
+mgc tenant-relationships delegated-admin-relationships requests get --delegated-admin-relationship-id {delegatedAdminRelationship-id} --delegated-admin-relationship-request-id {delegatedAdminRelationshipRequest-id}
+
+```

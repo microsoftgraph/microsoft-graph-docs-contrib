@@ -14,52 +14,59 @@ The Microsoft Graph SDK client configures a default set of middleware that allow
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CustomClients.cs" id="ChaosHandlerSnippet":::
 
-## [TypeScript](#tab/typeScript)
-
-:::code language="typescript" source="./snippets/typescript/src/snippets/customClients.ts" id="ChaosHandlerSnippet":::
-
-## [Java](#tab/java)
-
-:::code language="java" source="./snippets/java/app/src/main/java/snippets/CustomClients.java" id="ChaosHandlerSnippet":::
-
-## [Go](#tab/Go)
+## [Go](#tab/go)
 
 :::code language="go" source="./snippets/go/src/snippets/custom_clients.go" id="ImportSnippet":::
 
 :::code language="go" source="./snippets/go/src/snippets/custom_clients.go" id="ChaosHandlerSnippet":::
 
-## [Python](#tab/Python)
+## [Java](#tab/java)
+
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CustomClients.java" id="ChaosHandlerSnippet":::
+
+## [PHP](#tab/PHP)
+We currently use [Guzzle](http://guzzlephp.org/) as our HTTP client. You can pass your custom configured Guzzle client using:
+
+```php
+<?php
+use Microsoft\Graph\Core\GraphClientFactory;
+use Microsoft\Graph\GraphRequestAdapter;
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Graph\Core\Authentication\GraphPhpLeagueAuthenticationProvider;
+
+$tokenRequestContext = new ClientCredentialContext(
+    'tenantId',
+    'clientId',
+    'clientSecret'
+);
+$authProvider = new GraphPhpLeagueAuthenticationProvider($tokenRequestContext);
+// Get default middleware stack from SDK
+$handlerStack = GraphClientFactory::getDefaultHandlerStack();
+
+// Add a custom handler or extra handlers not added by default
+// Add Chaos handler to simulate random server failure responses
+$handlerStack->push(KiotaMiddleware::chaos());
+
+$httpClient = GraphClientFactory::createWithMiddleware($handlerStack);
+
+$requestAdapter = new GraphRequestAdapter($authProvider, $httpClient);
+$graphServiceClient = new GraphServiceClient($requestAdapter);
+
+```
+
+## [Python](#tab/python)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-```python
-# using Azure.Identity
-# https://learn.microsoft.com/en-us/python/api/azure-identity/azure.identity.interactivebrowsercredential
-interactive_credential = InteractiveBrowserCredential()
-scopes = ['https://graph.microsoft.com/.default']
-authProvider = AzureIdentityAuthenticationProvider(interactive_credential, scopes=scopes)
+:::code language="python" source="./snippets/python/src/snippets/custom_clients.py" id="CustomMiddlewareSnippet":::
 
-# Get default middleware
-middleware = GraphClientFactory.get_default_middleware(options=None)
+## Custom middleware
 
-# Remove a default handler
-retry_handler = [handler for handler in middleware if isinstance(handler, RetryHandler)][0]
-middleware.remove(retry_handler)
+:::code language="python" source="./snippets/python/src/snippets/middleware/custom_middleware.py" id="CustomMiddlewareSnippet":::
 
-# Add custom middleware
-# Implement a custom middleware by extending the BaseMiddleware class
-# https://github.com/microsoft/kiota-http-go/blob/main/kiota_http/middleware/middleware.py
-middleware.append(MyCustomMiddleware())
+## [TypeScript](#tab/typescript)
 
-# Create an HTTP client with the middleware
-http_client = GraphClientFactory().create_with_custom_middleware(middleware)
-
-# Create a request adapter with the HTTP client
-adapter = GraphRequestAdapter(auth_provider=authProvider, client=http_client)
-
-# Create Graph client
-client = GraphServiceClient(adapter)
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/customClients.ts" id="ChaosHandlerSnippet":::
 
 ---
 
@@ -72,48 +79,45 @@ Some environments require client applications to use a HTTP proxy before they ca
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CustomClients.cs" id="ProxySnippet":::
 
-## [TypeScript](#tab/typeScript)
-
-:::code language="typescript" source="./snippets/typescript/src/snippets/customClients.ts" id="ProxySnippet":::
-
-## [Java](#tab/java)
-
-:::code language="java" source="./snippets/java/app/src/main/java/snippets/CustomClients.java" id="ProxySnippet":::
-
-## [Go](#tab/Go)
+## [Go](#tab/go)
 
 :::code language="go" source="./snippets/go/src/snippets/custom_clients.go" id="ImportSnippet":::
 
 :::code language="go" source="./snippets/go/src/snippets/custom_clients.go" id="ProxySnippet":::
 
-## [Python](#tab/Python)
+## [Java](#tab/java)
+
+:::code language="java" source="./snippets/java/app/src/main/java/snippets/CustomClients.java" id="ProxySnippet":::
+
+## [PHP](#tab/PHP)
+
+```php
+<?php
+use Microsoft\Graph\Core\GraphClientFactory;
+use Microsoft\Graph\GraphRequestAdapter;
+
+// Configure proxy URLs on the Guzzle client
+$guzzleConfig = [
+    'proxy' => [
+        'http'  => 'http://proxy-url', // Use this proxy with "http"
+        'https' => 'http://proxy-url', // Use this proxy with "https"
+    ]
+];
+
+$httpClient = GraphClientFactory::createWithConfig($guzzleConfig);
+$requestAdapter = new GraphRequestAdapter($authProvider, $httpClient);
+$graphServiceClient = GraphServiceClient::createWithRequestAdapter($requestAdapter);
+
+```
+
+## [Python](#tab/python)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-```python
-# using Azure.Identity
-# https://learn.microsoft.com/en-us/python/api/azure-identity/azure.identity.interactivebrowsercredential
-interactive_credential = InteractiveBrowserCredential()
-scopes = ['https://graph.microsoft.com/.default']
-authProvider = AzureIdentityAuthenticationProvider(interactive_credential, scopes=scopes)
+:::code language="python" source="./snippets/python/src/snippets/custom_clients.py" id="ProxySnippet":::
 
-# Proxy URLs
-proxies = {
-    'http://': 'http://proxy-url',
-    'https://': 'http://proxy-url'
-}
+## [TypeScript](#tab/typescript)
 
-# Create a custom HTTP client with the proxies
-http_client = AsyncClient(proxies=proxies)
-
-# Apply Graph default middleware to HTTP client
-http_client = GraphClientFactory.create_with_default_middleware(client=http_client)
-
-# Create a request adapter with the HTTP client
-adapter = GraphRequestAdapter(auth_provider=authProvider, client=http_client)
-
-# Create Graph client
-client = GraphServiceClient(adapter)
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/customClients.ts" id="ProxySnippet":::
 
 ---

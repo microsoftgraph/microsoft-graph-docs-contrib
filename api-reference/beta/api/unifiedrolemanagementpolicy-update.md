@@ -14,10 +14,14 @@ Namespace: microsoft.graph
 
 Update the details of a role management policy [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For PIM for Azure AD roles
+<a name='for-pim-for-azure-ad-roles'></a>
+
+### For PIM for Microsoft Entra roles
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -35,7 +39,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To update the details of a role management policy for either Azure AD roles or groups:
+To update the details of a role management policy for either Microsoft Entra roles or groups:
 <!-- {
   "blockType": "ignored"
 }
@@ -59,11 +63,13 @@ PATCH /policies/roleManagementPolicies/{unifiedRoleManagementPolicyId}
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code.
+If successful, this method returns a `200 OK` response code and an [unifiedRoleManagementPolicy](../resources/unifiedrolemanagementpolicy.md) object in the response body.
 
 ## Examples
 
-### Example 1: Update the details of a policy defined in PIM for Azure AD roles
+<a name='example-1-update-the-details-of-a-policy-defined-in-pim-for-azure-ad-roles'></a>
+
+### Example 1: Update the details of a policy defined in PIM for Microsoft Entra roles
 
 #### Request
 
@@ -180,24 +186,32 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-unifiedrolemanagementpolicy-directory-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-unifiedrolemanagementpolicy-directory-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-unifiedrolemanagementpolicy-directory-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-unifiedrolemanagementpolicy-directory-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-unifiedrolemanagementpolicy-directory-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-unifiedrolemanagementpolicy-directory-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-unifiedrolemanagementpolicy-directory-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-unifiedrolemanagementpolicy-directory-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-unifiedrolemanagementpolicy-directory-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-unifiedrolemanagementpolicy-directory-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-unifiedrolemanagementpolicy-directory-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -208,11 +222,28 @@ The following is an example of the response
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicy"
 }
 -->
-```http
-HTTP/1.1 204 No Content
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies/$entity",
+    "id": "DirectoryRole_2132228a-d66e-401c-ab8a-a8ae31254a36_0f8c4bbc-4f1a-421c-b63d-a68f571b7fab",
+    "displayName": "DirectoryRole",
+    "description": "DirectoryRole",
+    "isOrganizationDefault": false,
+    "scopeId": "/",
+    "scopeType": "DirectoryRole",
+    "lastModifiedDateTime": "2023-10-01T19:27:32.663Z",
+    "lastModifiedBy": {
+        "displayName": "Test User 1",
+        "id": null
+    }
+}
 ```
 
 ### Example 2: Update the details of a policy defined in PIM for groups
@@ -339,24 +370,32 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-unifiedrolemanagementpolicy-azureadgroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-unifiedrolemanagementpolicy-azureadgroup-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-unifiedrolemanagementpolicy-azureadgroup-java-snippets.md)]
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-unifiedrolemanagementpolicy-azureadgroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-unifiedrolemanagementpolicy-azureadgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/update-unifiedrolemanagementpolicy-azureadgroup-powershell-snippets.md)]
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-unifiedrolemanagementpolicy-azureadgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-unifiedrolemanagementpolicy-azureadgroup-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/update-unifiedrolemanagementpolicy-azureadgroup-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-unifiedrolemanagementpolicy-azureadgroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-unifiedrolemanagementpolicy-azureadgroup-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -367,9 +406,26 @@ The following is an example of the response
 
 <!-- {
   "blockType": "response",
-  "truncated": true
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicy"
 }
 -->
-```http
-HTTP/1.1 204 No Content
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/roleManagementPolicies/$entity",
+    "id": "Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369",
+    "displayName": "Group",
+    "description": "Group",
+    "isOrganizationDefault": false,
+    "scopeId": "60bba733-f09d-49b7-8445-32369aa066b3",
+    "scopeType": "Group",
+    "lastModifiedDateTime": "2023-10-01T23:29:43.687Z",
+    "lastModifiedBy": {
+        "displayName": "Test User 1",
+        "id": null
+    }
+}
 ```

@@ -17,9 +17,9 @@ The following code examples show how to create an instance of a Microsoft Graph 
 
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="DeviceCodeSnippet":::
 
-# [TypeScript](#tab/typescript)
+# [Go](#tab/go)
 
-:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="DeviceCodeSnippet":::
+:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="DeviceCodeSnippet":::
 
 # [Java](#tab/java)
 
@@ -28,49 +28,28 @@ The following code examples show how to create an instance of a Microsoft Graph 
 # [PHP](#tab/php)
 
 ```php
-// PHP client currently doesn't have an authentication provider. You will need to handle
-// getting an access token. The following example demonstrates the client credential
-// OAuth flow and assumes that an administrator has consented to the application.
-$guzzle = new \GuzzleHttp\Client();
-$url = 'https://login.microsoftonline.com/' . $tenantId . '/oauth2/token?api-version=1.0';
-$token = json_decode($guzzle->post($url, [
-    'form_params' => [
-        'client_id' => $clientId,
-        'client_secret' => $clientSecret,
-        'resource' => 'https://graph.microsoft.com/',
-        'grant_type' => 'client_credentials',
-    ],
-])->getBody()->getContents());
-$accessToken = $token->access_token;
+<?php
+use Microsoft\Graph\GraphServiceClient;
+use Microsoft\Kiota\Abstractions\ApiException;
+use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
 
-// Create a new Graph client.
-$graph = new Graph();
-$graph->setAccessToken($accessToken);
+$tokenRequestContext = new ClientCredentialContext(
+    'tenantID',
+    'clientID',
+    'clientSecret'
+);
+$graphServiceClient = new GraphServiceClient($tokenRequestContext);
 
-// Make a call to /me Graph resource.
-$user = $graph->createRequest("GET", "/me")
-              ->setReturnType(Model\User::class)
-              ->execute();
 ```
-
-# [Go](#tab/go)
-
-:::code language="go" source="./snippets/go/src/snippets/create_clients.go" id="DeviceCodeSnippet":::
 
 # [Python](#tab/python)
 
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
-```python
-from azure.identity.aio import EnvironmentCredential
-from kiota_authentication_azure.azure_identity_authentication_provider import AzureIdentityAuthenticationProvider
-from msgraph import GraphRequestAdapter, GraphServiceClient
+:::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="DeviceCodeSnippet":::
 
-credential=EnvironmentCredential()
-auth_provider = AzureIdentityAuthenticationProvider(credential)
+# [TypeScript](#tab/typescript)
 
-adapter = GraphRequestAdapter(auth_provider)
-client = GraphServiceClient(adapter)
-```
+:::code language="typescript" source="./snippets/typescript/src/snippets/createClients.ts" id="DeviceCodeSnippet":::
 
 ---

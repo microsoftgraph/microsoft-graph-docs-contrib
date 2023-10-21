@@ -11,11 +11,11 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 
-result, err := graphClient.Users().ByUserId("user-id").Authentication().WindowsHelloForBusinessMethods().ByWindowsHelloForBusinessMethodId("windowsHelloForBusinessAuthenticationMethod-id").Get(context.Background(), nil)
+windowsHelloForBusinessMethods, err := graphClient.Users().ByUserId("user-id").Authentication().WindowsHelloForBusinessMethods().ByWindowsHelloForBusinessAuthenticationMethodId("windowsHelloForBusinessAuthenticationMethod-id").Get(context.Background(), nil)
 
 
 ```

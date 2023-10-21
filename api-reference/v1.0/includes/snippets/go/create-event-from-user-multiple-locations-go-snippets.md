@@ -14,7 +14,7 @@ import (
 	  //other-imports
 )
 
-graphClient, err := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
+graphClient := msgraphsdk.NewGraphServiceClientWithCredentials(cred, scopes)
 
 
 headers := abstractions.NewRequestHeaders()
@@ -65,10 +65,9 @@ attendee1.SetEmailAddress(emailAddress)
 type := graphmodels.REQUIRED_ATTENDEETYPE 
 attendee1.SetType(&type) 
 
-attendees := []graphmodels.Objectable {
+attendees := []graphmodels.attendeeable {
 	attendee,
 	attendee1,
-
 }
 requestBody.SetAttendees(attendees)
 location := graphmodels.NewLocation()
@@ -111,13 +110,12 @@ locations := []graphmodels.Locationable {
 	location,
 	location1,
 	location2,
-
 }
 requestBody.SetLocations(locations)
 allowNewTimeProposals := true
 requestBody.SetAllowNewTimeProposals(&allowNewTimeProposals) 
 
-result, err := graphClient.Me().Events().Post(context.Background(), requestBody, configuration)
+events, err := graphClient.Me().Events().Post(context.Background(), requestBody, configuration)
 
 
 ```

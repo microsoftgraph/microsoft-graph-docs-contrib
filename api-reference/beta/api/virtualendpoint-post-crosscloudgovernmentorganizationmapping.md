@@ -38,7 +38,7 @@ POST /deviceManagement/virtualEndpoint/crossCloudGovernmentOrganizationMapping
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
-|X-MS-CloudPC-USGovCloudTenantAADToken|{token}. Required. Represents the Azure AD token of the government cloud tenant.|
+|X-MS-CloudPC-USGovCloudTenantAADToken|{token}. Required. Represents the Microsoft Entra token of the government cloud tenant.|
 
 ## Request body
 The request body is an empty JSON string.
@@ -65,12 +65,12 @@ X-MS-CloudPC-USGovCloudTenantAADToken: {token}
 {}
 ```
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-cloudpccrosscloudgovernmentorganizationmapping-from--javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/create-cloudpccrosscloudgovernmentorganizationmapping-from--java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-cloudpccrosscloudgovernmentorganizationmapping-from--javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -94,4 +94,3 @@ Content-Type: application/json
   ]
 }
 ```
-
