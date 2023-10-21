@@ -46,7 +46,7 @@ The following properties can be updated.
 |Property|Type|Description|
 |:---|:---|:---|
 |state|authenticationMethodState|The possible values are: `enabled`, `disabled`. Inherited from [authenticationMethodConfiguration](../resources/authenticationmethodconfiguration.md).|
-|certificateUserBindings|[x509CertificateUserBinding](../resources/x509certificateuserbinding.md) collection|Defines fields in the X.509 certificate that map to attributes of the Azure AD user object in order to bind the certificate to the user. The **priority** of the object determines the order in which the binding is carried out. The first binding that matches will be used and the rest ignored. |
+|certificateUserBindings|[x509CertificateUserBinding](../resources/x509certificateuserbinding.md) collection|Defines fields in the X.509 certificate that map to attributes of the Microsoft Entra user object in order to bind the certificate to the user. The **priority** of the object determines the order in which the binding is carried out. The first binding that matches will be used and the rest ignored. |
 |authenticationModeConfiguration|[x509CertificateAuthenticationModeConfiguration](../resources/x509certificateauthenticationmodeconfiguration.md)|Defines strong authentication configurations. This configuration includes the default authentication mode and the different rules for strong authentication bindings. |
 
 >**Note:** The `@odata.type` property with a value of `#microsoft.graph.x509CertificateAuthenticationMethodConfiguration` must be included in the body.
@@ -61,7 +61,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 The following is an example of an update request with the following settings:
 
 + Enables the x509 certificate authentication method in the tenant.
-+ Configures only one user binding between the certificate **PrincipalName** and the Azure AD **onPremisesUserPrincipalName** properties.
++ Configures only one user binding between the certificate **PrincipalName** and the Microsoft Entra ID **onPremisesUserPrincipalName** properties.
 + Defines multi-factor authentication as requirement.
 + Configures the binding rules for the strong authentication method against the rule type.
 
@@ -154,4 +154,3 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 204 No Content
 ```
-

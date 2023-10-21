@@ -3,7 +3,7 @@ title: "logs resource type"
 description: "Represents network connections that are routed through the Global Secure Access services."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 

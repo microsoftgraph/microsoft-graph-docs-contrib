@@ -29,7 +29,7 @@ Represents a cloud PC connection for a given managed tenant.
 |id|String|The unique identifier for the cloud PC connection. Required. Read-only.|
 |lastRefreshedDateTime|DateTimeOffset|Date and time the entity was last updated in the multi-tenant management platform. Required. Read-only.|
 |tenantDisplayName|String|The display name for the managed tenant. Required. Read-only.|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Required. Read-only.|
+|tenantId|String|The Microsoft Entra tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Required. Read-only.|
 
 ## Relationships
 None.

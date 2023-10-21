@@ -1,6 +1,6 @@
 ---
 title: "List scopedRoleMembers"
-description: "List Azure Active Directory (Azure AD) role assignments with administrative unit scope."
+description: "List Microsoft Entra role assignments with administrative unit scope."
 author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List Azure Active Directory (Azure AD) role assignments with administrative unit scope.
+List Microsoft Entra role assignments with administrative unit scope.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
