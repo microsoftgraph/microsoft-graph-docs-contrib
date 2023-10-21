@@ -20,7 +20,7 @@ Granular controls let you determine the users, groups, and apps, both in your or
 + **Default cross-tenant access settings** which set the baseline inbound and outbound access settings.
     + In Microsoft Entra B2B collaboration, both access settings are enabled by default. This means all your users can be invited to external organizations, and all your users can invite external users.
     + In Microsoft Entra B2B direct connect, both access settings are disabled by default.
-    + The service default settings may be updated.
+    + The service default settings can be updated.
 + **Partner-specific access settings** which allow you to configure customized settings for individual organizations. For the configured organizations, this configuration takes precedence over the default settings. Therefore, while Microsoft Entra B2B collaboration and Microsoft Entra B2B direct connect might be disabled across your organization by default, you can enable these features for a specific external organization.
 
 > [!IMPORTANT]
@@ -37,7 +37,7 @@ By default, Microsoft Entra ID assigns all Microsoft Entra tenants a service def
 
 Partner-specific cross-tenant access settings determine your stance for inbound and outbound collaboration with a specific Microsoft Entra organization. Any collaboration with this organization inherits these partner-specific settings. Partner settings are defined using the [crossTenantAccessPolicyConfigurationPartner](../resources/crosstenantaccesspolicyconfigurationpartner.md) resource type.
 
-Even though you have added a partner to your cross-tenant access settings, some of your default settings will still apply. For example, if you configure only **b2bCollaborationInbound** for a partner in your cross-tenant access settings, all other settings for that partner configuration will be inherited from the default cross-tenant access settings. When querying the partner endpoint, any property on the partner object that is `null` means that for that property, it's inheriting settings from the default policy.
+Even though you have added a partner to your cross-tenant access settings, some of your default settings still apply. For example, if you configure only **b2bCollaborationInbound** for a partner in your cross-tenant access settings, all other settings for that partner configuration are inherited from the default cross-tenant access settings. When querying the partner endpoint, any property on the partner object that is `null` means that for that property, it's inheriting settings from the default policy.
 
 ## Inbound trust settings in cross-tenant access settings
 
