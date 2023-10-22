@@ -8073,14 +8073,14 @@ items:
                     href: api/attacksimulationroot-post-simulation.md
                   - name: Get
                     href: api/simulation-get.md
-                  - name: List simulation users
-                    href: api/usersimulationdetails-list.md
-                  - name: Get simulation overview
-                    href: api/simulationreportoverview-get.md
                   - name: Update
                     href: api/simulation-update.md
                   - name: Delete
                     href: api/simulation-delete.md
+                  - name: List simulation users
+                    href: api/usersimulationdetails-list.md
+                  - name: Get simulation overview
+                    href: api/simulationreportoverview-get.md
               - name: Attack simulation operation
                 items:
                   - name: Attack simulation operation
