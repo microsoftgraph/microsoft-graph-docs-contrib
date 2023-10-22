@@ -552,7 +552,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2023-09-15T05:35:15.6688356Z",
       "WorkloadArea": "Security",
-      "SubArea": ""
+      "SubArea": "Attack simulation and training"
     },
     {
       "ChangeList": [
@@ -899,11 +899,35 @@
           "ChangeType": "Addition",
           "Description": "Added the **trainingSetting** property to the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
           "Target": "simulation"
+        },
+        {
+          "Id": "3984db43-19bc-4257-bfc2-38c30d8462f3",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AttackSimulation.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `AttackSimulation.ReadWrite.All` delegated and application permissions to the [LIST](https://learn.microsoft.com/en-us/graph/api/attacksimulationroot-list-payloads?view=graph-rest-beta) and [GET](https://learn.microsoft.com/en-us/graph/api/payload-get?view=graph-rest-beta) operations of the [payload](https://learn.microsoft.com/en-us/graph/api/resources/payload?view=graph-rest-beta) resource.",
+          "Target": "payload"
+        },
+        {
+          "Id": "3984db43-19bc-4257-bfc2-38c30d8462f3",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AttackSimulation.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `AttackSimulation.ReadWrite.All` delegated and application permissions to the [GET](https://learn.microsoft.com/en-us/graph/api/payloaddetail-get?view=graph-rest-beta) operation of the [payloadDetail](https://learn.microsoft.com/en-us/graph/api/resources/payloaddetail?view=graph-rest-beta) resource.",
+          "Target": "payloadDetail"
+        },
+        {
+          "Id": "3984db43-19bc-4257-bfc2-38c30d8462f3",
+          "ApiChange": "Permission",
+          "ChangedApiName": "AttackSimulation.ReadWrite.All",
+          "ChangeType": "Addition",
+          "Description": "Added the `AttackSimulation.ReadWrite.All` delegated and application permissions to the [GET](https://learn.microsoft.com/en-us/graph/api/payloaddetail-get?view=graph-rest-beta) operation of the [simulation](https://learn.microsoft.com/en-us/graph/api/resources/simulation?view=graph-rest-beta) resource.",
+          "Target": "simulation"
         }
       ],
       "Id": "3984db43-19bc-4257-bfc2-38c30d8462f3",
       "Cloud": "Prod",
-      "Version": "v1.0",
+      "Version": "beta",
       "CreatedDateTime": "2023-09-28T19:11:13.0245061Z",
       "WorkloadArea": "Security",
       "SubArea": "Attack simulation and training"
