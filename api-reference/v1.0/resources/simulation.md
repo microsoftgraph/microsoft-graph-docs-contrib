@@ -134,24 +134,24 @@ The following is a JSON representation of the resource.
   "attackType": "String",
   "automationId": "String",
   "completionDateTime": "String (timestamp)",
-  "createdBy": {
-    "@odata.type": "microsoft.graph.emailIdentity"
-  },
+  "createdBy": {"@odata.type": "microsoft.graph.emailIdentity"},
   "createdDateTime": "String (timestamp)",
   "description": "String",
   "displayName": "String",
+  "durationInDays": "Int32",
+  "endUserNotificationSetting": {"@odata.type": "microsoft.graph.endUserNotificationSetting"},
+  "excludedAccountTarget": {"@odata.type": "microsoft.graph.accountTargetContent"},
   "id": "String (identifier)",
+  "includedAccountTarget": {"@odata.type": "microsoft.graph.accountTargetContent"},
   "isAutomated": "Boolean",
-  "lastModifiedBy": {
-    "@odata.type": "microsoft.graph.emailIdentity"
-  },
+  "lastModifiedBy": {"@odata.type": "microsoft.graph.emailIdentity"},
   "lastModifiedDateTime": "String (timestamp)",
   "launchDateTime": "String (timestamp)",
+  "oAuthConsentAppDetail": {"@odata.type": "microsoft.graph.oAuthConsentAppDetail"},
   "payloadDeliveryPlatform": "String",
-  "report": {
-    "@odata.type": "microsoft.graph.simulationReport"
-  },
-  "status": "String"
+  "report": {"@odata.type": "microsoft.graph.simulationReport"},
+  "status": "String",
+  "trainingSetting": {"@odata.type": "microsoft.graph.trainingSetting"}
 }
 ```
 
