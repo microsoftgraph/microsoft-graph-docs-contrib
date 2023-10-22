@@ -51,28 +51,26 @@ GraphServiceClient graphClient = GraphServiceClient
 
 ## [PHP](#tab/php)
 
-The [Microsoft Graph SDK for PHP](https://github.com/microsoftgraph/msgraph-sdk-php) supports the beta endpoint and models. You set the endpoint with the `setApiVersion` method. You need to disambiguate the v1.0 and beta models by providing an alias.
+The [Microsoft Graph SDK for PHP](https://github.com/microsoftgraph/msgraph-sdk-php) supports the beta endpoint and models. You set the endpoint with the `setApiVersion` method. You need to disambiguate the v1.0 and beta models by providing an alias. For instructions to install see [Microsoft Graph PHP SDK for Beta endpoint](https://packagist.org/packages/microsoft/microsoft-graph-beta).
 
 ```php
-use Microsoft\Graph\Graph;
-use Beta\Microsoft\Graph\Model as BetaModel;
+use Microsoft\Graph\Beta\GraphServiceClient;
+use Microsoft\Kiota\Abstractions\ApiException;
+use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
 
-class UseBeta
-{
-    public function run()
-    {
-        $accessToken = 'xxx';
+$tokenRequestContext = new ClientCredentialContext(
+    'tenantId',
+    'clientId',
+    'clientSecret'
+);
+$betaGraphServiceClient = new GraphServiceClient($tokenRequestContext);
 
-        $graph = new Graph();
-        $graph->setAccessToken($accessToken);
+try {
+    $user = $betaGraphServiceClient->users()->byUserId('[userPrincipalName]')->get()->wait();
+    echo "Hello, I am {$user->getGivenName()}";
 
-        $user = $graph->setApiVersion("beta")
-                      ->createRequest("GET", "/me")
-                      ->setReturnType(BetaModel\User::class)
-                      ->execute();
-
-        echo "Hello, I am $user->getGivenName() ";
-    }
+} catch (ApiException $ex) {
+    echo $ex->getError()->getMessage();
 }
 ```
 

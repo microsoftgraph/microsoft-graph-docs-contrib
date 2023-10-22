@@ -18,7 +18,7 @@ Represents the users or groups of users that are excluded from a policy.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The object identifier of an Azure AD group.|
+|id|String|The object identifier of a Microsoft Entra group.|
 |targetType|authenticationMethodTargetType|The type of the authentication method target. Possible values are: `group` and `unknownFutureValue`.|
 
 ## Relationships

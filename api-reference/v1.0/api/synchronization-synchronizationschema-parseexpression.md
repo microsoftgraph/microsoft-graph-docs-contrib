@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Parse a given string expression into an [attributeMappingSource](../resources/synchronization-attributemappingsource.md) object.
 
-For more information about expressions, see [Writing Expressions for Attribute Mappings in Azure Active Directory](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
+For more information about expressions, see [Writing Expressions for Attribute Mappings in Microsoft Entra ID](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -204,5 +204,3 @@ Content-type: application/json
   ]
 }
 -->
-
-
