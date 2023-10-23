@@ -1,19 +1,19 @@
 ---
 title: "virtualEventWebinar: getByUserIdAndRole"
-description: "List all webinars where the specified user is either the organizer or a co-organizer."
+description: "List all webinars where the specified user is either the organizer or a coorganizer."
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Collection of webinars: getByUserIdAndRole
+# virtualEventWebinar: getByUserIdAndRole
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Function to get a [virtualEventWebinar](../resources/virtualeventwebinar.md) collection where the specified user is either the organizer or a co-organizer.
+Get a [virtualEventWebinar](../resources/virtualeventwebinar.md) collection where the specified user is either the organizer or a coorganizer.
 
 ## Permissions
 
@@ -41,11 +41,11 @@ GET /solutions/virtualEvents/webinars/getByUserIdAndRole(userId='{userId}', role
 
 ## Function parameters
 
-In the request URL, provide the following query parameters with values. The following table shows the parameters that can be used with this function.
+In the request URL, provide the following query parameters with values.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|userId|String|The ID of the specified user in Azure Active Directory.|
+|userId|String|The ID of the specified user in Microsoft Entra.|
 |role|String|User role of the specified user in the webinar. Possible values are: `organizer`, `coOrganizer`.|
 
 ## Request headers

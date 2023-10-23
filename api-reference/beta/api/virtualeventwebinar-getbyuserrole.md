@@ -1,19 +1,19 @@
 ---
 title: "virtualEventWebinar: getByUserRole"
-description: "List all webinars where the signed-in user is either the organizer a co-organizer."
+description: "List all webinars where the signed-in user is either the organizer a coorganizer."
 author: "awang119"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
 doc_type: apiPageType
 ---
 
-# Collection of webinars: getByUserRole
+# virtualEventWebinar: getByUserRole
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Function to get a [virtualEventWebinar](../resources/virtualeventwebinar.md) collection where the signed-in user is either the organizer or a co-organizer.
+Get a [virtualEventWebinar](../resources/virtualeventwebinar.md) collection where the signed-in user is either the organizer or a coorganizer.
 
 ## Permissions
 
@@ -37,7 +37,7 @@ GET /solutions/virtualEvents/webinars/getByUserRole(role={role})
 
 ## Function parameters
 
-In the request URL, provide the following query parameters with values. The following table shows the parameters that can be used with this function.
+In the request URL, provide the following query parameters with values. 
 
 |Parameter|Type|Description|
 |:---|:---|:---|
