@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve a list of languages supported for customization in a B2X user flow.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
