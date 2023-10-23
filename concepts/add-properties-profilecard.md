@@ -11,7 +11,7 @@ ms.custom: scenarios:getting-started
 
 The [profile card](https://support.microsoft.com/en-au/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Microsoft 365 shows information about a user in an organization. The information shown on the profile card is stored and maintained by the organization, for example, **Job title** or **Office location**.
 
-Organizations can use the [profileCardProperty](/graph/api/resources/profilecardproperty) resource to show additional properties from [Azure Active Directory (Microsoft Entra ID)](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) on the profile card for a user in an organization by:
+Organizations can use the [profileCardProperty](/graph/api/resources/profilecardproperty) resource to show additional properties from [Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id) on the profile card for a user in an organization by:
 
 * Making additional attributes visible
 * Adding custom attributes
@@ -21,7 +21,7 @@ Additional properties display in the **Contact** section of the profile card in 
 You can also [remove](/graph/api/profilecardproperty-delete) custom attributes from profile cards of the organization.
 
 > [!NOTE]
-> * Custom properties are managed in AAD. Removing a custom attribute doesn't delete the property from Microsoft Entra ID; instead, only the attribute from the users' profile cards for an organization is removed.
+> * Custom attributes are managed in Microsoft Entra ID. Removing a custom attribute doesn't delete the property from Microsoft Entra ID; instead, only the attribute from the users' profile cards for an organization is removed.
 > * Operations on the **profileCardProperty** resource that use delegated permissions require the signed-in user to have a Tenant Administrator or Global Administrator role. 
 
 ## Make additional attributes visible on the profile card
@@ -70,7 +70,7 @@ Content-Type: application/json
 
 > **Note:** The `/organization/{organizationId}/settings` path is deprecated in the beta experience. Going forward, use the `/admin/people` path.
 
-If successful, the response returns a `201 OK` response code and a **profileCardProperty** object in the response body. The value for the `Alias` attribute would be displayed on a user's profile card.
+If successful, the response returns a `201 OK` response code and a **profileCardProperty** object in the response body. The value for the `Alias` attribute is displayed on a user's profile card.
 
 ``` http
 HTTP/1.1 201 OK
@@ -111,7 +111,7 @@ The following table shows how the Microsoft Entra ID custom extension attribute 
 | extensionAttribute15 | customAttribute15 |
 
 > [!IMPORTANT]
-> Custom profile card attributes are added for all users in the organization. Necessary precautions should be taken to avoid accidentally exposing sensitive data.
+> Custom profile card attributes are added for all users in the organization, requiring necessary precautions to prevent accidental exposure of sensitive data.
 
 ### Example
 
@@ -173,7 +173,7 @@ Following the same mapping between Microsoft Entra ID custom extension attribute
 
 ### Example
 
-The following example removes the custom attribute `customAttribute5` from the organization settings If successful, this method returns a `204 No Content` response code.
+The following example removes the custom attribute `customAttribute5` from the organization settings. If successful, this method returns a `204 No Content` response code.
 
 #### Request
 
