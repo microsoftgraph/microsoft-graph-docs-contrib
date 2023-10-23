@@ -1,6 +1,6 @@
 ---
 title: "conditionalAccessPolicyDetail resource type"
-description: "Represents the configuration of a Microsoft recommended best-practice template for an Azure Active Directory conditional access policy."
+description: "Represents the configuration of a Microsoft recommended best-practice template for a Microsoft Entra Conditional Access policy."
 author: "lisaychuang"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the configuration of the **details** property of a Microsoft recommended best-practice [template](../resources/conditionalaccesstemplate.md) for an Azure Active Directory [conditional access policy](../resources/conditionalaccesspolicy.md).
+Represents the configuration of the **details** property of a Microsoft recommended best-practice [template](../resources/conditionalaccesstemplate.md) for a Microsoft Entra [conditional access policy](../resources/conditionalaccesspolicy.md).
 
 ## Properties
 |Property|Type|Description|
