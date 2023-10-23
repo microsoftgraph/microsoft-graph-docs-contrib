@@ -254,7 +254,7 @@ $params = @{
 	)
 }
 
-New-MgBetaAdminPeopleProfileCardProperty -BodyParameter $params
+New-MgAdminPeopleProfileCardProperty -BodyParameter $params
 ```
 
 ### Update profile card properties in your organization
@@ -274,9 +274,10 @@ Use the following command, where you replace `$profileCardPropertyId` with the i
 $params = @{
 	annotations = @(
 		@{
+      displayName = "Cost Center"
 			localizations = @(
 				@{
-					languageTag = "no-NB"
+					languageTag = "nb-NO"
 					displayName = "Kostnads Senter"
 				}
 			)
@@ -284,7 +285,7 @@ $params = @{
 	)
 }
 
-Update-MgBetaAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
+Update-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
 ```
 
 ### Remove profile card properties in your organization
@@ -301,7 +302,7 @@ You can use the Microsoft Graph PowerShell module to remove profile card propert
 Use the following command, where you replace `$profileCardPropertyId` with the ID of the property to be removed.
 
 ```powershell
- Remove-MgBetaAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
+ Remove-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId
 ```
 
 ## See also

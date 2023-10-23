@@ -74,9 +74,10 @@ Content-type: application/json; charset=utf-8
 {
   "annotations": [
     {
+      "displayName": "Cost Center",
       "localizations": [
         {
-          "languageTag": "no-NB",
+          "languageTag": "nb-NO",
           "displayName": "Kostnads Senter"
         }
       ]
@@ -112,7 +113,7 @@ Content-type: application/json; charset=utf-8
           "displayName": "центр затрат"
         },
         {
-          "languageTag": "no-NB",
+          "languageTag": "nb-NO",
           "displayName": "Kostnads Senter"
         }
       ]
