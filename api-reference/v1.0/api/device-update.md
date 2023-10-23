@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 In application-only scenarios and for non-Windows devices, that is, where the **operatingSystem** property is not `Windows`, the app can update only the **extensionAttributes** property.
 
-The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference): *Global Administrator*, *Intune Administrator*. A calling user in the *Cloud Device Administrator* role can only enable or disable devices using this API and a user with the *Windows 365 Administrator* role can only update basic device properties.
+The calling user must also be in one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference): *Global Administrator*, *Intune Administrator*. A calling user in the *Cloud Device Administrator* role can only enable or disable devices using this API and a user with the *Windows 365 Administrator* role can only update basic device properties.
 
 ## HTTP request
 

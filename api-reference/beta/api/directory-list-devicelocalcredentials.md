@@ -30,13 +30,18 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 To get a list of deviceLocalCredentialInfo within the tenant:
 
+> [!CAUTION]
+>  The `GET /deviceLocalCredentials` endpoint will be deprecated on December 31, 2023. Use the `GET /directory/deviceLocalCredentials` endpoint instead.
+ 
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
+GET /directory/deviceLocalCredentials
 GET /deviceLocalCredentials
 ```
+
 ## Optional query parameters
 This method supports the `$select`, `$filter`, `$search`, `$orderby`, `$top`, `$count` and `$skiptoken` OData query parameter to help customize the response.
 
@@ -69,7 +74,7 @@ The following is an example of the request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/deviceLocalCredentials
+GET https://graph.microsoft.com/beta/directory/deviceLocalCredentials
 User-Agent: "Dsreg/10.0 (Windows 10.0.19043.1466)"
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"

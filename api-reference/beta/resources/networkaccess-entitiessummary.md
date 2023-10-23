@@ -20,7 +20,7 @@ A summary for Global Secure Access entities that's returned by the [entitiesSumm
 |:---|:---|:---|
 |deviceCount|Int64|Count of unique devices that were seen.|
 |trafficType|microsoft.graph.networkaccess.trafficType|Traffic classification. The possible values are: `internet`, `private`, `microsoft365`, `all`, `unknownFutureValue`.|
-|userCount|Int64|Count of unique Azure Active Directory users that were seen.|
+|userCount|Int64|Count of unique Microsoft Entra users that were seen.|
 |workloadCount|Int64|Count of unique target workloads or hosts that were seen.|
 
 ## Relationships
@@ -42,4 +42,3 @@ Here's a JSON representation of the resource.
   "workloadCount": "Integer"
 }
 ```
-

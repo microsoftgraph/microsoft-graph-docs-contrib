@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get a list of the authentication methods registered for a user as defined in the [userRegistrationDetails](../resources/userregistrationdetails.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

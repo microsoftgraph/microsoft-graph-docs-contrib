@@ -17,7 +17,9 @@ Update the details of a role management policy [unifiedRoleManagementPolicy](../
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For PIM for Azure AD roles
+<a name='for-pim-for-azure-ad-roles'></a>
+
+### For PIM for Microsoft Entra roles
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -35,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To update the details of a role management policy for either Azure AD roles or groups:
+To update the details of a role management policy for either Microsoft Entra roles or groups:
 <!-- {
   "blockType": "ignored"
 }
@@ -63,7 +65,9 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 
 ## Examples
 
-### Example 1: Update the details of a policy defined in PIM for Azure AD roles
+<a name='example-1-update-the-details-of-a-policy-defined-in-pim-for-azure-ad-roles'></a>
+
+### Example 1: Update the details of a policy defined in PIM for Microsoft Entra roles
 
 #### Request
 

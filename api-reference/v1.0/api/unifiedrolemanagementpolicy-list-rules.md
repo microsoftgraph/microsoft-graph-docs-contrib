@@ -23,7 +23,9 @@ Get the rules or settings defined for a role management policy. The rules are a 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For PIM for Azure AD roles
+<a name='for-pim-for-azure-ad-roles'></a>
+
+### For PIM for Microsoft Entra roles
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -41,7 +43,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To retrieve rules in a policy for either Azure AD roles or groups:
+To retrieve rules in a policy for either Microsoft Entra roles or groups:
 <!-- {
   "blockType": "ignored"
 }
@@ -67,7 +69,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Retrieve rules of a policy in PIM for Azure AD roles
+<a name='example-1-retrieve-rules-of-a-policy-in-pim-for-azure-ad-roles'></a>
+
+### Example 1: Retrieve rules of a policy in PIM for Microsoft Entra roles
 
 #### Request
 

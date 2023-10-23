@@ -1,6 +1,6 @@
 ---
 title: "tokenLifetimePolicy resource type"
-description: "Represents a policy that can control the lifetime of an access token issued by Azure Active Directory."
+description: "Represents a policy that can control the lifetime of an access token issued by Microsoft Entra ID."
 ms.localizationpriority: medium
 author: "lujiangfeng666"
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 
 
-Represents a policy that can control the lifetime of a JWT access token, an ID token or a SAML 1.1/2.0 token issued by Azure Active Directory (Azure AD). You can set token lifetimes for all apps in your organization, for a multi-tenant (multi-organization) application, or for a specific service principal in your organization. 
+Represents a policy that can control the lifetime of a JWT access token, an ID token or a SAML 1.1/2.0 token issued by Microsoft Entra ID. You can set token lifetimes for all apps in your organization, for a multi-tenant (multi-organization) application, or for a specific service principal in your organization. 
 
 >**Note:** Configuring this policy for Refresh Tokens and Session Tokens is not supported.
 
