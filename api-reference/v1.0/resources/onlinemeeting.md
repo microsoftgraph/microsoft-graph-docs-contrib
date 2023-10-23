@@ -101,6 +101,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | ------------ | ---- | ----------- |
 | attendanceReports | [meetingAttendanceReport](meetingAttendanceReport.md)  collection | The attendance reports of an online meeting. Read-only. |
 | transcripts | [callTranscript](callTranscript.md) collection | The transcripts of an online meeting. Read-only. |
+| recordings | [callRecording](callRecording.md) collection | The recordings of an online meeting. Read-only. |
 
 ## JSON representation
 
