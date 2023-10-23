@@ -287,4 +287,5 @@ HTTP/1.1 200 OK
 }
 -->
 
-
+## See also
+- [Get change notifications for presence updates in Microsoft Teams](/graph/changenotifications-for-presence)

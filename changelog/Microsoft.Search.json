@@ -1792,7 +1792,7 @@
     "Version": "v1.0",
     "CreatedDateTime": "2023-09-06T17:03:43.000Z",
     "WorkloadArea": "Search",
-    "SubArea": ""
+    "SubArea": "Index"
   }
   ]
 }

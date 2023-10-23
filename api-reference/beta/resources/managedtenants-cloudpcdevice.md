@@ -35,7 +35,7 @@ Represents a cloud PC device that belongs to a given managed tenant.
 |servicePlanName|String|The service plan name of the cloud PC device. Required. Read-only.|
 |servicePlanType|String|The service plan type of the cloud PC device. Required. Read-only.|
 |tenantDisplayName|String|The display name for the managed tenant. Required. Read-only.|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Required. Read-only.|
+|tenantId|String|The Microsoft Entra tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md). Required. Read-only.|
 |userPrincipalName|String|The user principal name (UPN) of the user assigned to the cloud PC device. Required. Read-only.|
 
 ## Relationships

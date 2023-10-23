@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Represents a software OATH token registered to a user. A software OATH token is a software-based number generator that uses the OATH Time-Based One Time Password (TOTP) standard for multi-factor authentication. This API won't return Microsoft Authenticator authentication method entities, though it returns an entity if Microsoft Authenticator was set up via the third-party software authenticator flow.
 
-This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
+This resource type is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
 
 ## Methods
 |Method|Return type|Description|
