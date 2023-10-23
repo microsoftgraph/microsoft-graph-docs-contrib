@@ -1,17 +1,17 @@
 ---
-title: "Delete profileCardProperty"
-description: "Delete a profileCardProperty object and remove all customizations from a profile card."
+title: "Remove profileCardProperty"
+description: "Remove a profileCardProperty object and remove all customizations from a profile card."
 ms.localizationpriority: medium
 author: "rwaithera"
 ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
-# Delete profileCardProperty
+# Remove profileCardProperty
 
 Namespace: microsoft.graph
 
-Delete the [profileCardProperty](../resources/profilecardproperty.md) object specified by its **directoryPropertyName** from the organization's profile card, and remove any localized customizations for that property.
+Remove the [profileCardProperty](../resources/profilecardproperty.md) object specified by its **directoryPropertyName** from the organization's profile card, and remove any localized customizations for that property.
 
 ## Permissions
 
@@ -51,11 +51,11 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ### Request
 
-The following example shows how to delete the attribute named `Fax` from the profile card for the organization.
+The following example shows how to remove the attribute named `Fax` from the profile card for the organization.
 
 <!-- {
   "blockType": "request",
-  "name": "delete_profilecardproperty",
+  "name": "remove_profilecardproperty",
   "sampleKeys": ["fax"]
 }-->
 

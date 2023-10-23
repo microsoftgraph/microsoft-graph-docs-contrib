@@ -14870,13 +14870,13 @@ items:
                     href: resources/profilecardproperty.md
                   - name: List
                     href: api/peopleadminsettings-list-profilecardproperties.md
-                  - name: Create
+                  - name: Add
                     href: api/peopleadminsettings-post-profilecardproperties.md
                   - name: Get
                     href: api/profilecardproperty-get.md
                   - name: Update
                     href: api/profilecardproperty-update.md
-                  - name: Delete
+                  - name: Remove
                     href: api/profilecardproperty-delete.md
           - name: Profile (preview)
             items:

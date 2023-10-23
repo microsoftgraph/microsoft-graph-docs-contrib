@@ -1,17 +1,17 @@
 ---
-title: "Create profileCardProperty"
-description: "Create a new profileCardProperty resource for an organization."
+title: "Add profileCardProperty"
+description: "Add a new profileCardProperty resource for an organization."
 ms.localizationpriority: medium
 author: "rwaithera"
 ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
-# Create profileCardProperty
+# Add profileCardProperty
 
 Namespace: microsoft.graph
 
-Create a new [profileCardProperty](../resources/profilecardproperty.md) for an organization. The new property is identified by its **directoryPropertyName** property.
+Add a new [profileCardProperty](../resources/profilecardproperty.md) for an organization. The new property is identified by its **directoryPropertyName** property.
 
 For more information about how to add properties to the profile card for an organization, see [Add or remove custom attributes on a profile card using the profile card API](/graph/add-properties-profilecard).
 
@@ -48,7 +48,7 @@ POST /admin/people/profileCardProperties
 
 In the request body, supply a JSON representation of a [profileCardProperty](../resources/profilecardproperty.md) object.
 
-You can specify the following properties when you create a **profileCardProperty**.
+You can specify the following properties when you add a **profileCardProperty** for an organization.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -67,7 +67,7 @@ The following is an example of the request.
 
 <!-- {
   "blockType": "request",
-  "name": "create_profilecardproperty"
+  "name": "add_profilecardproperty"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/admin/people/profileCardProperties
