@@ -88,9 +88,6 @@ Content-Type: application/json
 
 To get change notifications for any recording available for any online meeting in a tenant, subscribe to `communications/onlineMeetings/getAllRecordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
 
-> [!NOTE]
-> Change notifications for meeting recording are available on the `/beta` endpoint only.
-
 ### Permissions
 
 One of the following permissions is required to subscribe to `communications/onlineMeetings/getAllRecordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -106,7 +103,7 @@ One of the following permissions is required to subscribe to `communications/onl
 The following example shows how to subscribe to recordings available at the tenant level.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
@@ -125,9 +122,6 @@ Content-Type: application/json
 
 To get change notifications for any recording available for a particular online meeting, subscribe to `communications/onlineMeetings/{onlineMeetingId}/recordings`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification. This subscription supports scheduled [onlineMeetings](/graph/api/resources/onlinemeeting) but not channel meetings.
 
-> [!NOTE]
-> Change notifications for meeting recording are available on the `/beta` endpoint only.
-
 ### Permissions
 
 One of the following permissions is required to subscribe to `communications/onlineMeetings/{onlineMeetingId}/recordings`. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -143,7 +137,7 @@ One of the following permissions is required to subscribe to `communications/onl
 The following example shows how to subscribe to recordings available for a particular online meeting.
 
 ```http
-POST https://graph.microsoft.com/beta/subscriptions
+POST https://graph.microsoft.com/v1.0/subscriptions
 Content-Type: application/json
 
 {
