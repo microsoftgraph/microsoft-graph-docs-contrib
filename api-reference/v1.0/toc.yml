@@ -8159,6 +8159,8 @@ items:
                     href: api/security-host-list-passivedns.md
                   - name: List passive DNS reverse
                     href: api/security-host-list-passivednsreverse.md
+                  - name: List ports
+                    href: api/security-host-list-ports.md
                   - name: List subdomains
                     href: api/security-host-list-subdomains.md
                   - name: List trackers
@@ -8191,6 +8193,14 @@ items:
                     href: api/security-host-list-parenthostpairs.md
                   - name: List for a host as parent
                     href: api/security-host-list-childhostpairs.md
+              - name: Host port
+                items:
+                  - name: Host port
+                    href: resources/security-hostport.md
+                  - name: List
+                    href: api/security-host-list-ports.md
+                  - name: Get
+                    href: api/security-hostport-get.md
               - name: Host SSL certificate
                 items:
                 - name: Host SSL certificate
