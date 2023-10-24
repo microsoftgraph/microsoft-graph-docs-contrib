@@ -24,7 +24,7 @@ Inherits from [identity](identity.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
