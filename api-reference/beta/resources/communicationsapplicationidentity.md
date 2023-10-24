@@ -19,12 +19,12 @@ Inherits from [identity](identity.md).
 
 ## Properties
 
-| Property                       | Type                        | Description                                                                                                                                       |
-| :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id | String | Inherited from **identity**. The application's client ID from Microsoft Entra ID. |
-| displayName | String | Inherited from **identity**. The display name associated with the application. |
-| applicationType | String | First party Microsoft application presenting this **identity**. |
-| hidden | Boolean | True if the participant wouldn't like to be shown in other participants' rosters. |
+| Property                       | Type                        | Description                    |
+| :----------------------------- | :---------------------------| :------------------------------|
+| applicationType | String | First-party Microsoft application that presents this **identity**. |
+| displayName | String | The display name associated with the application. Inherited from **identity**. |
+| hidden | Boolean | `True` if the participant shouldn't be shown in other participants' rosters. |
+| id | String | The client ID of the application from Microsoft Entra ID. Inherited from **identity**. |
 
 ## JSON representation
 
@@ -41,9 +41,9 @@ Here's a JSON representation of the resource.
 } -->
 ```json
 {
-  "id": "String",
-  "displayName": "String",
   "applicationType": "String",
-  "hidden": false
+  "displayName": "String",
+  "hidden": "Boolean",
+  "id": "String"
 }
 ```
