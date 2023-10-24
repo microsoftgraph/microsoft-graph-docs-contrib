@@ -15817,16 +15817,12 @@ items:
                   href: api/externalconnectors-externalconnection-delete.md
                 - name: Get operation
                   href: api/externalconnectors-connectionoperation-get.md
-            - name: Schema
+            - name: Connection quota
               items:
-                - name: Schema
-                  href: resources/externalconnectors-schema.md
-                - name: Create
-                  href: api/externalconnectors-externalconnection-patch-schema.md
+                - name: Connection quota
+                  href: resources/externalconnectors-connectionquota.md
                 - name: Get
-                  href: api/externalconnectors-schema-get.md
-                - name: Update
-                  href: api/externalconnectors-schema-update.md
+                  href: api/externalconnectors-connectionquota-get.md
             - name: External activity
               items:
                 - name: External activity
@@ -15835,21 +15831,7 @@ items:
               items:
                 - name: External activity result
                   href: resources/externalconnectors-externalactivityresult.md
-            - name: External item
-              items:
-                - name: External item
-                  href: resources/externalconnectors-externalitem.md
-                - name: Create
-                  href: api/externalconnectors-externalconnection-put-items.md
-                - name: Get
-                  href: api/externalconnectors-externalitem-get.md
-                - name: Update
-                  href: api/externalconnectors-externalitem-update.md
-                - name: Delete
-                  href: api/externalconnectors-externalitem-delete.md
-                - name: Add activities
-                  href: api/externalconnectors-externalitem-addactivities.md
-            - name: External group
+             - name: External group
               items:
                 - name: External group
                   href: resources/externalconnectors-externalgroup.md
@@ -15865,12 +15847,30 @@ items:
                   href: api/externalconnectors-externalgroup-post-members.md
                 - name: Delete
                   href: api/externalconnectors-externalgroupmember-delete.md
-            - name: Connection quota
+             - name: External item
               items:
-                - name: Connection quota
-                  href: resources/externalconnectors-connectionquota.md
+                - name: External item
+                  href: resources/externalconnectors-externalitem.md
+                - name: Create
+                  href: api/externalconnectors-externalconnection-put-items.md
                 - name: Get
-                  href: api/externalconnectors-connectionquota-get.md
+                  href: api/externalconnectors-externalitem-get.md
+                - name: Update
+                  href: api/externalconnectors-externalitem-update.md
+                - name: Delete
+                  href: api/externalconnectors-externalitem-delete.md
+                - name: Add activities
+                  href: api/externalconnectors-externalitem-addactivities.md
+            - name: Schema
+              items:
+                - name: Schema
+                  href: resources/externalconnectors-schema.md
+                - name: Create
+                  href: api/externalconnectors-externalconnection-patch-schema.md
+                - name: Get
+                  href: api/externalconnectors-schema-get.md
+                - name: Update
+                  href: api/externalconnectors-schema-update.md
       - name: Security
         items:
           - name: Overview
