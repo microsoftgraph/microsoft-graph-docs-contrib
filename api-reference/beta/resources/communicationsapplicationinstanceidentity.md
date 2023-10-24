@@ -21,10 +21,10 @@ Inherits from [identity](identity.md).
 
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id | String | Inherited from **identity**. The object ID of the resource account user in Microsoft Entra ID. |
-| displayName | String | Inherited from **identity**. The display name associated with the resource account. |
-| tenantId | String | The application's tenant ID. |
-| hidden | Boolean | True if the participant wouldn't like to be shown in other participants' rosters. |
+| displayName | String | The display name associated with the resource account. Inherited from **identity**. |
+| hidden | Boolean | `True` if the participant shouldn't be shown in other participants' rosters. |
+| id | String | The object ID of the resource account user in Microsoft Entra ID. Inherited from **identity**. |
+| tenantId | String | The tenant ID of the application. |
 
 ## JSON representation
 
@@ -41,9 +41,9 @@ Here's a JSON representation of the resource.
 } -->
 ```json
 {
-  "id": "String",
   "displayName": "String",
-  "tenantId": "String",
-  "hidden": false
+  "hidden": "Boolean",
+  "id": "String",
+  "tenantId": "String"
 }
 ```
