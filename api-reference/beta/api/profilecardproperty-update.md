@@ -65,7 +65,7 @@ If successful, this method returns a `200 OK` response code and an updated [prof
 
 ### Request
 
-The following example adds a localized label `Kostnadssenter` for the locale `no-NB`.
+The following example adds a localized label `Kostnadssenter` for the locale `nb-NO`.
 
 <!-- {
   "blockType": "request",

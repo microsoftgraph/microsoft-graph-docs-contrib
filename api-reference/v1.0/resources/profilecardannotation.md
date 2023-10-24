@@ -16,7 +16,7 @@ Allows an administrator to customize the appearance of selected fields in a Micr
 | Property     | Type                                                            | Description                                                                                                                       |
 |:-------------|:----------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------|
 |displayName   |String                                                           | If present, the value of this field is used by the profile card as the default property label in the experience (for example, "Cost Center"). |
-|localizations |[displayNameLocalization](displaynamelocalization.md) collection | Each resource in this collection represents the localized value of the attribute name for a given language, used as the default label for that locale. For example, a user with a `no-NB` client gets "Kostnads Senter" as the attribute label, rather than "Cost Center."|
+|localizations |[displayNameLocalization](displaynamelocalization.md) collection | Each resource in this collection represents the localized value of the attribute name for a given language, used as the default label for that locale. For example, a user with a `no-NB` client gets "Kostnadssenter" as the attribute label, rather than "Cost Center."|
 
 ## JSON representation
 
