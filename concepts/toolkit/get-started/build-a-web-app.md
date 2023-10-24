@@ -40,7 +40,7 @@ npm install @microsoft/mgt
 
 ## Initialize the MSAL2 Provider
 
-The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [MSAL2 Provider](../providers/msal2.md) uses msal-browser to sign in users and acquire tokens. You can initialize this provider in your HTML or JavaScript.
+The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [MSAL2 Provider](../providers/msal2.md) uses MSAL-browser to sign in users and acquire tokens. You can initialize this provider in your HTML or JavaScript.
 
 > **Note**: If you're currently using the MSAL Provider and would like to update to MSAL2 Provider, see [Migrating from MSAL Provider to MSAL2 Provider](../providers/msal2.md#migrating-from-msal-provider-to-msal2-provider).
 > If you want to use your own backend authentication, use the [Proxy Provider](../providers/proxy.md) in place of the MSAL2 Provider.
@@ -74,7 +74,7 @@ The client ID is the only property required to initialize the provider, but you 
 
 ### Creating an app/client ID
 
-In order to get a client ID, you need to [register your application](./add-aad-app-registration.md) in Azure AD.
+In order to get a client ID, you need to [register your application](./add-aad-app-registration.md) in Microsoft Entra ID.
 
 ## Add components
 

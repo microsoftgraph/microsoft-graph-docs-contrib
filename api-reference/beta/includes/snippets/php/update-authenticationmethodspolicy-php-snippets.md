@@ -22,6 +22,10 @@ $includeTargetsAuthenticationMethodsRegistrationCampaignIncludeTarget1->setTarge
 $includeTargetsArray []= $includeTargetsAuthenticationMethodsRegistrationCampaignIncludeTarget1;
 $registrationEnforcementAuthenticationMethodsRegistrationCampaign->setIncludeTargets($includeTargetsArray);
 
+$additionalData = [
+'enforceRegistrationAfterAllowedSnoozes' => true,
+];
+$registrationEnforcementAuthenticationMethodsRegistrationCampaign->setAdditionalData($additionalData);
 $registrationEnforcement->setAuthenticationMethodsRegistrationCampaign($registrationEnforcementAuthenticationMethodsRegistrationCampaign);
 $requestBody->setRegistrationEnforcement($registrationEnforcement);
 $reportSuspiciousActivitySettings = new ReportSuspiciousActivitySettings();

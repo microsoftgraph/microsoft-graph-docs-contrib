@@ -3,7 +3,7 @@ title: "Create deviceLink"
 description: "Create a branch site with associated device links."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 

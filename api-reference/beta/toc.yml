@@ -18,20 +18,33 @@ items:
     - name: Permissions
       items:
       - name: Overview
-        displayName: Microsoft Graph permissions
-        href: /graph/permissions-overview?context=graph/api/1.0
-      - name: Permissions reference
-        displayName: Microsoft Graph permissions list
-        href: /graph/permissions-reference?context=graph/api/1.0
-      - name: Azure AD built-in roles
-        displayName: Microsoft Graph permissions
-        href: /azure/active-directory/roles/permissions-reference?toc=/graph/toc.json
-    - name: Manage app access (CSPs)
-      href: /graph/auth-cloudsolutionprovider?context=graph/api/beta
-    - name: Limit mailbox access
-      href: /graph/auth-limit-mailbox-access?context=graph/api/beta
-    - name: Resolve authorization errors
-      href: /graph/resolve-auth-errors?context=graph/api/beta
+        href: /graph/auth/index?context=graph/api/beta
+        displayName: authentication, authorization, authenticate, authorize
+      - name: Basics
+        href: /graph/auth/auth-concepts?context=graph/api/beta
+      - name: Register your app
+        href: /graph/auth-register-app-v2?context=graph/api/beta
+      - name: Get access on behalf of a user
+        href: /graph/auth-v2-user?context=graph/api/beta
+      - name: Get access without a user
+        href: /graph/auth-v2-service?context=graph/api/beta
+      - name: Permissions
+        items:
+          - name: Overview
+            displayName: Microsoft Graph permissions
+            href: /graph/permissions-overview?context=graph/api/beta
+          - name: Permissions reference
+            displayName: Microsoft Graph permissions list
+            href: /graph/permissions-reference?context=graph/api/beta
+          - name: Microsoft Entra built-in roles
+            displayName: Microsoft Graph permissions
+            href: /azure/active-directory/roles/permissions-reference?toc=/graph/toc.json
+      - name: Manage app access (CSPs)
+        href: /graph/auth-cloudsolutionprovider?context=graph/api/beta
+      - name: Limit mailbox access
+        href: /graph/auth-limit-mailbox-access?context=graph/api/beta
+      - name: Resolve authorization errors
+        href: /graph/resolve-auth-errors?context=graph/api/beta
   - name: Use the API
     items:
     - name: Overview
@@ -199,7 +212,7 @@ items:
             href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/beta
       - name: Build your first app
         items:
-          - name: Register an Azure AD app
+          - name: Register a Microsoft Entra app
             href: /graph/toolkit/get-started/add-aad-app-registration?context=graph/api/beta
           - name: Build a web app (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/beta
@@ -359,31 +372,434 @@ items:
         href: resources/calendar.md
         displayName: Outlook, Outlook calendar
         items:
-        - name: Create calendar
-          href: api/user-post-calendars.md
-        - name: Create calendar group
-          href: api/user-post-calendargroups.md
-        - name: Create event
-          href: api/user-post-events.md
-        - name: Find meeting times
-          href: api/user-findmeetingtimes.md
-        - name: Find rooms
-          href: api/user-findrooms.md
-        - name: Find room lists
-          href: api/user-findroomlists.md
-        - name: Get free/busy schedule
-          href: api/calendar-getschedule.md
-        - name: List calendars
-          href: api/user-list-calendars.md
-        - name: List calendar groups
-          href: api/user-list-calendargroups.md
-        - name: List calendar view
-          href: api/user-list-calendarview.md
-        - name: List events
-          href: api/user-list-events.md
-        - name: Reminder view
-          href: api/user-reminderview.md
-      - name: Cloud PC
+          - name: Application
+            href: resources/application.md
+            items:
+              - name: List applications
+                href: api/application-list.md
+              - name: Create application
+                href: api/application-post-applications.md
+              - name: Get application
+                href: api/application-get.md
+              - name: Update application
+                href: api/application-update.md
+              - name: Delete application
+                href: api/application-delete.md
+              - name: Get delta
+                href: api/application-delta.md
+              - name: Get delta for directory object
+                href: api/directoryobject-delta.md
+              - name: List deleted applications
+                href: api/directory-deleteditems-list.md
+              - name: List deleted applications owned by user
+                href: api/directory-deleteditems-getuserownedobjects.md
+              - name: Get deleted application
+                href: api/directory-deleteditems-get.md
+              - name: Permanently delete application
+                href: api/directory-deleteditems-delete.md
+              - name: Restore deleted application
+                href: api/directory-deleteditems-restore.md
+              - name: Application template
+                href: resources/applicationtemplate.md
+                items:
+                  - name: List
+                    href: api/applicationtemplate-list.md
+                  - name: Get
+                    href: api/applicationtemplate-get.md
+                  - name: Instantiate
+                    href: api/applicationtemplate-instantiate.md
+              - name: Certificates & secrets
+                items:
+                  - name: Add password
+                    displayName: Add secrets
+                    href: api/application-addpassword.md
+                  - name: Remove password
+                    displayName: Remove secrets
+                    href: api/application-removepassword.md
+                  - name: Add key
+                    href: api/application-addkey.md
+                  - name: Remove key
+                    href: api/application-removekey.md
+              - name: Federated identity credentials
+                items:
+                  - name: Overview
+                    href: resources/federatedidentitycredentials-overview.md
+                    displayName: Workload identity federation, workload identities
+                  - name: Federated identity credentials
+                    href: resources/federatedidentitycredential.md
+                    items:
+                      - name: List
+                        href: api/application-list-federatedidentitycredentials.md
+                      - name: Create
+                        href: api/application-post-federatedidentitycredentials.md
+                      - name: Get
+                        href: api/federatedidentitycredential-get.md
+                      - name: Update
+                        href: api/federatedidentitycredential-update.md
+                      - name: Delete
+                        href: api/federatedidentitycredential-delete.md
+              - name: Owners
+                items:
+                  - name: List owners
+                    href: api/application-list-owners.md
+                  - name: Add owner
+                    href: api/application-post-owners.md
+                  - name: Remove owner
+                    href: api/application-delete-owners.md
+              - name: Policies
+                items:
+                  - name: Remote desktop security configuration policy
+                    href: resources/remotedesktopsecurityconfiguration.md
+                    items:
+                      - name: Create
+                        href: api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
+                      - name: Get
+                        href: api/remotedesktopsecurityconfiguration-get.md
+                      - name: Update
+                        href: api/remotedesktopsecurityconfiguration-update.md
+                      - name: Delete
+                        href: api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
+                      - name: Target device groups
+                        href: resources/targetdevicegroup.md
+                        items:
+                          - name: List
+                            href: api/remotedesktopsecurityconfiguration-list-targetdevicegroups.md
+                          - name: Create
+                            href: api/remotedesktopsecurityconfiguration-post-targetdevicegroups.md
+                          - name: Get
+                            href: api/targetdevicegroup-get.md
+                          - name: Update
+                            href: api/targetdevicegroup-update.md
+                          - name: Delete
+                            href: api/remotedesktopsecurityconfiguration-delete-targetdevicegroups.md
+                  - name: Token issuance policy
+                    href: resources/tokenissuancepolicy.md
+                    items:
+                      - name: Assign
+                        href: api/application-post-tokenissuancepolicies.md
+                      - name: List
+                        href: api/application-list-tokenissuancepolicies.md
+                      - name: Remove
+                        href: api/application-delete-tokenissuancepolicies.md
+                  - name: Token lifetime policy
+                    href: resources/tokenlifetimepolicy.md
+                    items:
+                      - name: Assign
+                        href: api/application-post-tokenlifetimepolicies.md
+                      - name: List
+                        href: api/application-list-tokenlifetimepolicies.md
+                      - name: Remove
+                        href: api/application-delete-tokenlifetimepolicies.md
+              - name: Verified publisher
+                items:
+                  - name: Set
+                    href: api/application-setverifiedpublisher.md
+                  - name: Unset
+                    href: api/application-unsetverifiedpublisher.md
+          - name: On-premises publishing
+            href: resources/onpremisespublishingprofile-root.md
+            items:
+              - name: On-premises agent
+                href: resources/onpremisesagent.md
+                items:
+                  - name: List
+                    href: api/onpremisesagent-list.md
+                  - name: Get
+                    href: api/onpremisesagent-get.md
+                  - name: Assign to agent group
+                    href: api/onpremisesagent-post-agentgroups.md
+                  - name: Remove from agent group
+                    href: api/onpremisesagent-delete-agentgroups.md
+              - name: On-premises agent group
+                href: resources/onpremisesagentgroup.md
+                items:
+                  - name: List
+                    href: api/onpremisesagentgroup-list.md
+                  - name: Get
+                    href: api/onpremisesagentgroup-get.md
+                  - name: Create
+                    href: api/onpremisesagentgroup-post.md
+                  - name: Update
+                    href: api/onpremisesagentgroup-update.md
+                  - name: Delete
+                    href: api/onpremisesagentgroup-delete.md
+              - name: On-premises publishing profile
+                href: resources/onpremisespublishingprofile.md
+                items:
+                  - name: Get
+                    href: api/onpremisespublishingprofile-get.md
+                  - name: Update
+                    href: api/onpremisespublishingprofile-update.md
+              - name: Published resource
+                href: resources/publishedresource.md
+                items:
+                  - name: List
+                    href: api/publishedresource-list.md
+                  - name: Get
+                    href: api/publishedresource-get.md
+                  - name: Create
+                    href: api/publishedresource-post.md
+                  - name: Update
+                    href: api/publishedresource-update.md
+                  - name: Delete
+                    href: api/publishedresource-delete.md
+                  - name: Assign to agent group
+                    href: api/publishedresource-post-agentgroups.md
+                  - name: Remove from agent group
+                    href: api/publishedresource-delete-agentgroups.md
+              - name: Connector
+                href: resources/connector.md
+                items:
+                  - name: List
+                    href: api/connector-list.md
+                  - name: Get
+                    href: api/connector-get.md
+                  - name: List memberOf
+                    href: api/connector-list-memberof.md
+                  - name: Add connector to connectorGroup
+                    href: api/connector-post-memberof.md
+              - name: Connector group
+                href: resources/connectorgroup.md
+                items:
+                  - name: List
+                    href: api/connectorgroup-list.md
+                  - name: Create
+                    href: api/connectorgroup-post.md
+                  - name: Get
+                    href: api/connectorgroup-get.md
+                  - name: Update
+                    href: api/connectorgroup-update.md
+                  - name: Delete
+                    href: api/connectorgroup-delete.md
+                  - name: List applications
+                    href: api/connectorgroup-list-applications.md
+                  - name: List members
+                    href: api/connectorgroup-list-members.md
+                  - name: Add connector
+                    href: api/connectorgroup-post-members.md
+                  - name: Add application
+                    href: api/connectorgroup-post-applications.md
+          - name: Service principal
+            href: resources/serviceprincipal.md
+            items:
+              - name: List service principal
+                href: api/serviceprincipal-list.md
+              - name: Create service principal
+                href: api/serviceprincipal-post-serviceprincipals.md
+              - name: Get service principal
+                href: api/serviceprincipal-get.md
+              - name: Update service principal
+                href: api/serviceprincipal-update.md
+              - name: Delete service principal
+                href: api/serviceprincipal-delete.md
+              - name: List deleted service principals
+                href: api/directory-deleteditems-list.md
+              - name: Get deleted service principal
+                href: api/directory-deleteditems-get.md
+              - name: Permanently delete service principal
+                href: api/directory-deleteditems-delete.md
+              - name: Restore deleted service principal
+                href: api/directory-deleteditems-restore.md
+              - name: List createdObjects
+                href: api/serviceprincipal-list-createdobjects.md
+              - name: List ownedObjects
+                href: api/serviceprincipal-list-ownedobjects.md
+              - name: Get delta
+                href: api/serviceprincipal-delta.md
+              - name: Get delta for directory object
+                href: api/directoryobject-delta.md
+              - name: App role assignment
+                href: resources/approleassignment.md
+                items:
+                  - name: List app role assignments
+                    href: api/serviceprincipal-list-approleassignments.md
+                  - name: Add app role assignment
+                    href: api/serviceprincipal-post-approleassignments.md
+                  - name: Get app role assignment
+                    href: api/approleassignment-get.md
+                  - name: Remove app role assignment
+                    href: api/serviceprincipal-delete-approleassignments.md
+                  - name: List app role assigned to
+                    href: api/serviceprincipal-list-approleassignedto.md
+                  - name: Add app role assigned to
+                    href: api/serviceprincipal-post-approleassignedto.md
+                  - name: Remove app role assigned to
+                    href: api/serviceprincipal-delete-approleassignedto.md
+              - name: Certificates and secrets
+                items:
+                  - name: Add password
+                    displayName: Add secrets
+                    href: api/serviceprincipal-addpassword.md
+                  - name: Remove password
+                    displayName: Remove secrets
+                    href: api/serviceprincipal-removepassword.md
+                  - name: Add key
+                    href: api/serviceprincipal-addkey.md
+                  - name: Remove key
+                    href: api/serviceprincipal-removekey.md
+                  - name: Add token signing certificate
+                    href: api/serviceprincipal-addtokensigningcertificate.md
+              - name: Delegated permission grant
+                items:
+                  - name: OAuth 2.0 permission grant
+                    href: resources/oauth2permissiongrant.md
+                  - name: List
+                    href: api/serviceprincipal-list-oauth2permissiongrants.md
+              - name: Delegated permission classification
+                href: resources/delegatedpermissionclassification.md
+                items:
+                  - name: List
+                    href: api/serviceprincipal-list-delegatedpermissionclassifications.md
+                  - name: Create
+                    href: api/serviceprincipal-post-delegatedpermissionclassifications.md
+                  - name: Delete
+                    href: api/serviceprincipal-delete-delegatedpermissionclassifications.md
+              - name: Membership
+                items:
+                  - name: List memberOf
+                    href: api/serviceprincipal-list-memberof.md
+                  - name: List transitive memberOf
+                    href: api/serviceprincipal-list-transitivememberof.md
+                  - name: Check member groups
+                    href: api/directoryobject-checkmembergroups.md
+                  - name: Check member objects
+                    href: api/directoryobject-checkmemberobjects.md
+                  - name: Get member groups
+                    href: api/directoryobject-getmembergroups.md
+                  - name: Get member objects
+                    href: api/directoryobject-getmemberobjects.md
+              - name: Owners
+                items:
+                  - name: List owners
+                    href: api/serviceprincipal-list-owners.md
+                  - name: Add owner
+                    href: api/serviceprincipal-post-owners.md
+                  - name: Remove owner
+                    href: api/serviceprincipal-delete-owners.md
+              - name: Permission grant pre-approval policy
+                items:
+                  - name: List
+                    href: api/serviceprincipal-list-permissiongrantpreapprovalpolicies.md
+                  - name: Assign
+                    href: api/serviceprincipal-post-permissiongrantpreapprovalpolicies.md
+                  - name: Remove
+                    href: api/serviceprincipal-delete-permissiongrantpreapprovalpolicies.md
+              - name: Policies
+                items:
+                  - name: Claims mapping policy
+                    href: resources/claimsmappingpolicy.md
+                    items:
+                      - name: Assign
+                        href: api/serviceprincipal-post-claimsmappingpolicies.md
+                      - name: List
+                        href: api/serviceprincipal-list-claimsmappingpolicies.md
+                      - name: Remove
+                        href: api/serviceprincipal-delete-claimsmappingpolicies.md
+                  - name: Home realm discovery policy
+                    href: resources/homerealmdiscoverypolicy.md
+                    items:
+                      - name: Assign
+                        href: api/serviceprincipal-post-homerealmdiscoverypolicies.md
+                      - name: List
+                        href: api/serviceprincipal-list-homerealmdiscoverypolicies.md
+                      - name: Remove
+                        href: api/serviceprincipal-delete-homerealmdiscoverypolicies.md
+                  - name: Token issuance policy
+                    href: resources/tokenissuancepolicy.md
+                    items:
+                      - name: Assign
+                        href: api/application-post-tokenissuancepolicies.md
+                      - name: List
+                        href: api/application-list-tokenissuancepolicies.md
+                      - name: Remove
+                        href: api/application-delete-tokenissuancepolicies.md
+                  - name: Token lifetime policy
+                    href: resources/tokenlifetimepolicy.md
+                    items:
+                      - name: Assign
+                        href: api/application-post-tokenlifetimepolicies.md
+                      - name: List
+                        href: api/application-list-tokenlifetimepolicies.md
+                      - name: Remove
+                        href: api/application-delete-tokenlifetimepolicies.md
+              - name: Single sign on
+                items:
+                  - name: Create password single sign on credentials
+                    href: api/serviceprincipal-createpasswordsinglesignoncredentials.md
+                  - name: Get password single sign on credentials
+                    href: api/serviceprincipal-getpasswordsinglesignoncredentials.md
+                  - name: Update password single sign on credentials
+                    href: api/serviceprincipal-updatepasswordsinglesignoncredentials.md
+                  - name: Delete password single sign on credentials
+                    href: api/serviceprincipal-deletepasswordsinglesignoncredentials.md
+          - name: Synchronization
+            items:
+              - name: Overview
+                href: resources/synchronization-overview.md
+              - name: Synchronization
+                href: resources/synchronization-synchronization.md
+                items:
+                  - name: Acquire access token
+                    href: api/synchronization-synchronization-acquireaccesstoken.md
+                  - name: Add secrets
+                    href: api/synchronization-serviceprincipal-put-synchronization.md
+              - name: Job
+                href: resources/synchronization-synchronizationjob.md
+                items:
+                  - name: List
+                    href: api/synchronization-synchronization-list-jobs.md
+                  - name: Create
+                    href: api/synchronization-synchronization-post-jobs.md
+                  - name: Get
+                    href: api/synchronization-synchronizationjob-get.md
+                  - name: Start
+                    href: api/synchronization-synchronizationjob-start.md
+                  - name: Pause
+                    href: api/synchronization-synchronizationjob-pause.md
+                  - name: Restart
+                    href: api/synchronization-synchronizationjob-restart.md
+                  - name: Delete
+                    href: api/synchronization-synchronizationjob-delete.md
+                  - name: Provision on demand
+                    href: api/synchronization-synchronizationjob-provisionondemand.md
+                  - name: Validate credentials
+                    href: api/synchronization-synchronizationjob-validatecredentials.md
+                  - name: Bulk upload
+                    href: resources/synchronization-bulkupload.md
+                    items:
+                      - name: Perform bulk upload
+                        href: api/synchronization-synchronizationjob-post-bulkupload.md
+              - name: Schema
+                href: resources/synchronization-synchronizationschema.md
+                items:
+                  - name: Get schema
+                    href: api/synchronization-synchronizationschema-get.md
+                  - name: Get schema functions
+                    href: api/synchronization-synchronizationschema-functions.md
+                  - name: Get schema filter operators
+                    href: api/synchronization-synchronizationschema-filteroperators.md
+                  - name: Update schema
+                    href: api/synchronization-synchronizationschema-update.md
+                  - name: Reset schema
+                    href: api/synchronization-synchronizationschema-delete.md
+                  - name: Parse attribute mapping expression
+                    href: api/synchronization-synchronizationschema-parseexpression.md
+                  - name: Directory definition
+                    href: resources/synchronization-directorydefinition.md
+                    items:
+                      - name: Discover
+                        href: api/synchronization-directorydefinition-discover.md
+              - name: Template
+                href: resources/synchronization-synchronizationtemplate.md
+                items:
+                  - name: List
+                    href: api/synchronization-synchronization-list-templates.md
+                  - name: Get
+                    href: api/synchronization-synchronizationtemplate-get.md
+                  - name: Update
+                    href: api/synchronization-synchronizationtemplate-update.md
+      - name: Calendars
+        displayName: Outlook calendar
         items:
         - name: Cloud PC
           href: resources/cloudpc.md
@@ -2006,7 +2422,7 @@ items:
                         href: api/intune-enrollment-appleuserinitiatedenrollmentprofile-setpriority.md
                   - name: Apple user initiated enrollment type
                     href: resources/intune-enrollment-appleuserinitiatedenrollmenttype.md
-                  - name: Azure AD windows autopilot deployment profile
+                  - name: Microsoft Entra windows autopilot deployment profile
                     href: resources/intune-enrollment-azureadwindowsautopilotdeploymentprofile.md
                     items:
                       - name: List
@@ -4109,7 +4525,7 @@ items:
                     href: resources/intune-deviceconfig-internetexplorermessagesetting.md
                   - name: Internet site security level
                     href: resources/intune-deviceconfig-internetsitesecuritylevel.md
-                  - name: iOS Azure ad single sign on extension
+                  - name: iOS Microsoft Entra single sign on extension
                     href: resources/intune-deviceconfig-iosazureadsinglesignonextension.md
                   - name: iOS bookmark
                     href: resources/intune-deviceconfig-iosbookmark.md
@@ -4464,7 +4880,7 @@ items:
                     href: resources/intune-deviceconfig-macosappleeventreceiver.md
                   - name: macOS associated domains item
                     href: resources/intune-deviceconfig-macosassociateddomainsitem.md
-                  - name: macOS Azure ad single sign on extension
+                  - name: macOS Microsoft Entra single sign on extension
                     href: resources/intune-deviceconfig-macosazureadsinglesignonextension.md
                   - name: macOS certificate profile base
                     href: resources/intune-deviceconfig-macoscertificateprofilebase.md
@@ -5556,9 +5972,9 @@ items:
                     href: resources/intune-deviceconfig-windowskioskapptype.md
                   - name: Windows kiosk autologon
                     href: resources/intune-deviceconfig-windowskioskautologon.md
-                  - name: Windows kiosk Azure AD group
+                  - name: Windows kiosk Microsoft Entra group
                     href: resources/intune-deviceconfig-windowskioskazureadgroup.md
-                  - name: Windows kiosk Azure AD user
+                  - name: Windows kiosk Microsoft Entra user
                     href: resources/intune-deviceconfig-windowskioskazureaduser.md
                   - name: Windows kiosk configuration
                     href: resources/intune-deviceconfig-windowskioskconfiguration.md
@@ -7355,7 +7771,7 @@ items:
                     href: resources/intune-devices-windowsdeviceaccount.md
                   - name: Windows device AD account
                     href: resources/intune-devices-windowsdeviceadaccount.md
-                  - name: Windows device Azure AD account
+                  - name: Windows device Microsoft Entra account
                     href: resources/intune-devices-windowsdeviceazureadaccount.md
                   - name: Windows device health state
                     href: resources/intune-devices-windowsdevicehealthstate.md
@@ -8803,6 +9219,13 @@ items:
                     href: api/cloudpcexternalpartnersetting-get.md
                   - name: Update
                     href: api/cloudpcexternalpartnersetting-update.md
+              - name: Cloud PC front-line service plan
+                href: resources/cloudpcfrontlineserviceplan.md
+                items:
+                  - name: List
+                    href: api/virtualendpoint-list-frontlineserviceplans.md
+                  - name: Get
+                    href: api/cloudpcfrontlineserviceplan-get.md
               - name: Cloud PC gallery image
                 href: resources/cloudpcgalleryimage.md
                 items:
@@ -8836,6 +9259,8 @@ items:
                 items:
                   - name: Cloud PC reports
                     href: resources/cloudpcreports.md
+                  - name: Get raw remote connection reports
+                    href: api/cloudpcreports-getrawremoteconnectionreports.md
                   - name: Get connection quality reports
                     href: api/cloudpcreports-getconnectionqualityreports.md
                   - name: Get daily aggregated remote connection reports
@@ -8867,7 +9292,7 @@ items:
                 items:
                   - name: List
                     href: api/virtualendpoint-list-serviceplans.md
-              - name: Cloud PC shared-use service plan
+              - name: Cloud PC shared-use service plan (deprecated)
                 href: resources/cloudpcshareduseserviceplan.md
                 items:
                   - name: List
@@ -9038,14 +9463,14 @@ items:
                     href: api/windowsupdates-updatableasset-get.md
                   - name: Delete updatable asset
                     href: api/windowsupdates-updatableasset-delete.md
-                  - name: Azure AD device
+                  - name: Microsoft Entra device
                     href: resources/windowsupdates-azureaddevice.md
                     items:
-                      - name: List Azure AD devices
+                      - name: List Microsoft Entra devices
                         href: api/adminwindowsupdates-list-updatableassets-azureaddevice.md
-                      - name: Get Azure AD device
+                      - name: Get Microsoft Entra device
                         href: api/windowsupdates-azureaddevice-get.md
-                      - name: Delete Azure AD device
+                      - name: Delete Microsoft Entra device
                         href: api/windowsupdates-azureaddevice-delete.md
                       - name: Enroll in update management
                         href: api/windowsupdates-updatableasset-enrollassets.md
@@ -10171,7 +10596,7 @@ items:
                   - name: Device local credential
                     href: resources/devicelocalcredentialinfo.md
                   - name: List
-                    href: api/devicelocalcredentialinfo-list.md
+                    href: api/directory-list-devicelocalcredentials.md
                   - name: Get
                     href: api/devicelocalcredentialinfo-get.md
               - name: Directory object
@@ -10362,9 +10787,11 @@ items:
               - name: Organization
                 href: resources/organization.md
                 items:
-                  - name: Get org details
+                  - name: List
+                    href: api/organization-list.md
+                  - name: Get
                     href: api/organization-get.md
-                  - name: Update org details
+                  - name: Update
                     href: api/organization-update.md
               - name: Organization settings
                 href: resources/organizationSettings.md
@@ -11326,7 +11753,7 @@ items:
                         href: api/identitygovernance-lifecyclemanagementsettings-update.md
               - name: Privileged Identity Management iteration 3
                 items:
-                  - name: PIM for Azure AD Roles
+                  - name: PIM for Microsoft Entra roles
                     href: resources/privilegedidentitymanagementv3-overview.md
                     displayName: Privileged Identity Management, PIM, Identity Governance
                     items:
@@ -11560,6 +11987,8 @@ items:
                         items:
                           - name: Get
                             href: api/approval-get.md
+                          - name: Filter by current user
+                            href: api/approval-filterbycurrentuser.md
                           - name: Approval step
                             items:
                               - name: Approval step
@@ -12169,7 +12598,7 @@ items:
                         href: api/samlorwsfedexternaldomainfederation-list-domains.md
                       - name: Create domain
                         href: api/samlorwsfedexternaldomainfederation-post-domains.md
-                  - name: Federation with Azure AD
+                  - name: Federation with Microsoft Entra ID
                     items:
                       - name: Federated domain configuration
                         href: resources/internaldomainfederation.md
@@ -12585,6 +13014,30 @@ items:
                       href: api/permissiongrantpreapprovalpolicy-update.md
                     - name: Delete
                       href: api/permissiongrantpreapprovalpolicy-delete.md
+                  - name: Remote desktop security configuration policy
+                    href: resources/remotedesktopsecurityconfiguration.md
+                    items:
+                      - name: Create
+                        href: api/serviceprincipal-post-remotedesktopsecurityconfiguration.md
+                      - name: Get
+                        href: api/remotedesktopsecurityconfiguration-get.md
+                      - name: Update
+                        href: api/remotedesktopsecurityconfiguration-update.md
+                      - name: Delete
+                        href: api/serviceprincipal-delete-remotedesktopsecurityconfiguration.md
+                      - name: Target device groups
+                        href: resources/targetdevicegroup.md
+                        items:
+                          - name: List
+                            href: api/remotedesktopsecurityconfiguration-list-targetdevicegroups.md
+                          - name: Create
+                            href: api/remotedesktopsecurityconfiguration-post-targetdevicegroups.md
+                          - name: Get
+                            href: api/targetdevicegroup-get.md
+                          - name: Update
+                            href: api/targetdevicegroup-update.md
+                          - name: Delete
+                            href: api/remotedesktopsecurityconfiguration-delete-targetdevicegroups.md
                   - name: Token issuance policy
                     href: resources/tokenissuancepolicy.md
                     items:
@@ -12658,7 +13111,7 @@ items:
                     href: api/trustframework-put-trustframeworkpolicy.md
                   - name: Delete
                     href: api/trustframeworkpolicy-delete.md
-              - name: User flows for Azure AD and Azure AD B2C
+              - name: User flows for Microsoft Entra ID and Azure AD B2C
                 items:
                   - name: User flow (deprecated)
                     items:
@@ -12710,7 +13163,7 @@ items:
                         href: api/b2cidentityuserflow-get-apiConnectorConfiguration.md
                       - name: Configure an API connector
                         href: api/b2cidentityuserflow-put-apiConnectorConfiguration.md
-                  - name: Self-service sign up user flows for Azure AD
+                  - name: Self-service sign up user flows for Microsoft Entra ID
                     items:
                       - name: Self-service sign up user flow
                         href: resources/b2xidentityuserflow.md
@@ -12804,7 +13257,7 @@ items:
                         href: api/identityapiconnector-uploadclientcertificate.md
                       - name: Delete
                         href: api/identityapiconnector-delete.md
-              - name: User flows for Azure AD for customers (preview)
+              - name: User flows for Microsoft Entra ID for customers (preview)
                 items:
                   - name: Authentication events flow
                     href: resources/authenticationeventsflow.md
@@ -24471,169 +24924,7 @@ items:
               href: api/insightssettings-update.md
           - name: Org control for people insights (preview)
             items:
-            - name: Insights settings
-              href: resources/insightssettings.md
-            - name: List
-              href: api/organizationsettings-list-peopleinsights.md
-            - name: Update
-              href: api/insightssettings-update.md
-          - name: Org control for pronouns settings (preview)
-            items:
-            - name: Pronouns settings
-              href: resources/pronounssettings.md
-            - name: List
-              href: api/organizationsettings-list-pronounssettings.md
-            - name: Update
-              href: api/pronounssettings-update.md
-          - name: Profile card customization (preview)
-            items:
-            - name: Profile card property
-              href: resources/profilecardproperty.md
-            - name: List
-              href: api/organizationsettings-list-profilecardproperties.md
-            - name: Create
-              href: api/organizationsettings-post-profilecardproperties.md
-            - name: Get
-              href: api/profilecardproperty-get.md
-            - name: Update
-              href: api/profilecardproperty-update.md
-            - name: Delete
-              href: api/profilecardproperty-delete.md
-        - name: Organizational contacts
-          href: resources/orgcontact.md
-          items:
-          - name: List org contacts
-            href: api/orgcontact-list.md
-          - name: Get org contact
-            href: api/orgcontact-get.md
-          - name: Get org contact delta
-            href: api/orgcontact-delta.md
-          - name: Get delta for directory object
-            href: api/directoryobject-delta.md
-          - name: Directory objects
-            href: resources/directoryobject.md
-            items:
-            - name: Get member groups
-              href: api/directoryobject-getmembergroups.md
-            - name: Check member groups
-              href: api/directoryobject-checkmembergroups.md
-            - name: Get member objects
-              href: api/directoryobject-getmemberobjects.md
-            - name: Check member objects
-              href: api/directoryobject-checkmemberobjects.md
-          - name: Retry service provisioning
-            href: api/orgcontact-retryserviceprovisioning.md
-          - name: Groups
-            href: resources/group.md
-            items:
-            - name: List memberOf
-              href: api/orgcontact-list-memberof.md
-            - name: Get member groups
-              href: api/directoryobject-getmembergroups.md
-            - name: Get member groups
-              href: api/directoryobject-getmembergroups.md
-            - name: Check member groups
-              href: api/directoryobject-checkmembergroups.md
-          - name: Org hierarchy
-            items:
-            - name: List direct reports
-              href: api/orgcontact-list-directreports.md
-            - name: List memberOf
-              href: api/orgcontact-list-memberof.md
-            - name: Get manager
-              href: api/orgcontact-get-manager.md
-        - name: On-premises directory synchronization
-          href: resources/onpremisesdirectorysynchronization.md
-          items:
-          - name: Get
-            href: api/onpremisesdirectorysynchronization-get.md
-          - name: Update
-            href: api/onpremisesdirectorysynchronization-update.md
-        - name: Mobility management policy (Preview)
-          href: resources/mobilitymanagementpolicy.md
-          items:
-          - name: List mobile device management policies
-            href: api/mobiledevicemanagementpolicies-list.md
-          - name: Get
-            href: api/mobiledevicemanagementpolicies-get.md
-          - name: Update
-            href: api/mobiledevicemanagementpolicies-update.md
-          - name: Delete
-            href: api/mobiledevicemanagementpolicies-delete.md
-          - name: List included groups
-            href: api/mobiledevicemanagementpolicies-list-includedgroups.md
-          - name: Add included groups
-            href: api/mobiledevicemanagementpolicies-post-includedgroups.md
-          - name: Remove included groups
-            href: api/mobiledevicemanagementpolicies-delete-includedgroups.md
-          - name: List mobile app management policies
-            href: api/mobileappmanagementpolicies-list.md
-          - name: Get
-            href: api/mobileappmanagementpolicies-get.md
-          - name: Update
-            href: api/mobileappmanagementpolicies-update.md
-          - name: Delete
-            href: api/mobileappmanagementpolicies-delete.md
-          - name: List included groups
-            href: api/mobileappmanagementpolicies-list-includedgroups.md
-          - name: Add included groups
-            href: api/mobileappmanagementpolicies-post-includedgroups.md
-          - name: Remove included groups
-            href: api/mobileappmanagementpolicies-delete-includedgroups.md
-        - name: Role management
-          displayName: Unified RBAC
-          href: resources/rolemanagement.md
-          items:
-          - name: Role definition
-            href: resources/unifiedroledefinition.md
-            items:
-            - name: List role definitions
-              href: api/rbacapplication-list-roledefinitions.md
-            - name: Create role definition
-              href: api/rbacapplication-post-roledefinitions.md
-            - name: Get role definition
-              href: api/unifiedroledefinition-get.md
-            - name: Update role definition
-              href: api/unifiedroledefinition-update.md
-            - name: Delete role definition
-              href: api/unifiedroledefinition-delete.md
-            - name: List assigned principals
-              href: api/unifiedroledefinition-assignedprincipals.md
-          - name: Role assignment
-            href: resources/unifiedroleassignment.md
-            items:
-            - name: List role assignment
-              href: api/rbacapplication-list-roleassignments.md
-            - name: List transitive role assignments
-              href: api/rbacapplication-list-transitiveroleassignments.md
-            - name: Create role assignment
-              href: api/rbacapplication-post-roleassignments.md
-            - name: Get role assignment
-              href: api/unifiedroleassignment-get.md
-            - name: Delete role assignment
-              href: api/unifiedroleassignment-delete.md
-          - name: Role assignment multiple
-            href: resources/unifiedroleassignmentmultiple.md
-            items:
-            - name: List
-              href: api/rbacapplicationmultiple-list-roleassignments.md
-            - name: Create
-              href: api/rbacapplicationmultiple-post-roleassignments.md
-            - name: Get
-              href: api/unifiedroleassignmentmultiple-get.md
-            - name: Update
-              href: api/unifiedroleassignmentmultiple-update.md
-            - name: Delete
-              href: api/unifiedroleassignmentmultiple-delete.md
-          - name: Resource namespace
-            href: resources/unifiedrbacresourcenamespace.md
-            items:
-            - name: List
-              href: api/rbacapplicationmultiple-list-resourcenamespaces.md
-            - name: Get
-              href: api/unifiedrbacresourcenamespace-get.md
-            - name: Resource action
-              href: resources/unifiedrbacresourceaction.md
+            - name: Microsoft Entra activity reports
               items:
                 - name: Overview
                   href: resources/report-identity-access.md
@@ -24665,13 +24956,13 @@ items:
                           href: api/reportroot-list-applicationsignindetailedsummary.md
                         - name: Get
                           href: api/applicationsignindetailedsummary-get.md
-                - name: Azure AD SLA attainment
+                - name: Microsoft Entra SLA attainment
                   items:
-                    - name: Azure AD authentication
+                    - name: Microsoft Entra authentication
                       href: resources/azureadauthentication.md
                     - name: Service level agreement
                       href: resources/servicelevelagreementroot.md
-                    - name: Get Azure AD authentication
+                    - name: Get Microsoft Entra authentication
                       href: api/azureadauthentication-get.md
                 - name: Registration and usage
                   items:
@@ -24721,7 +25012,7 @@ items:
                       href: api/reportroot-list-serviceprincipalsigninactivities.md
                     - name: Get
                       href: api/serviceprincipalsigninactivity-get.md
-            - name: Azure AD audit logs
+            - name: Microsoft Entra audit logs
               items:
                 - name: Overview
                   href: resources/azure-ad-auditlog-overview.md
@@ -25795,6 +26086,8 @@ items:
                     href: api/security-host-list-passivedns.md
                   - name: List passive DNS reverse
                     href: api/security-host-list-passivednsreverse.md
+                  - name: List ports
+                    href: api/security-host-list-ports.md
                   - name: List subdomains
                     href: api/security-host-list-subdomains.md
                   - name: List trackers
@@ -25827,6 +26120,14 @@ items:
                     href: api/security-host-list-parenthostpairs.md
                   - name: List for a host as parent
                     href: api/security-host-list-childhostpairs.md
+              - name: Host port
+                items:
+                  - name: Host port
+                    href: resources/security-hostport.md
+                  - name: List
+                    href: api/security-host-list-ports.md
+                  - name: Get
+                    href: api/security-hostport-get.md
               - name: Host SSL certificate
                 items:
                 - name: Host SSL certificate
@@ -27112,6 +27413,10 @@ items:
                     items:
                       - name: Get
                         href: api/virtualeventwebinar-get.md
+                      - name: List by user role
+                        href: api/virtualeventwebinar-getbyuserrole.md
+                      - name: List by user ID/role
+                        href: api/virtualeventwebinar-getbyuseridandrole.md
                   - name: Session
                     href: resources/virtualeventsession.md
                     items:

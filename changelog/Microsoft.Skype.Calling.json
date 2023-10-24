@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "2b4cd7a5-2095-4ca3-80b0-da96df6c7e90",
+          "ApiChange": "Method",
+          "ChangedApiName": "getByUserIdAndRole",
+          "ChangeType": "Addition",
+          "Description": "Added the [getByUserIdAndRole](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-getbyuseridandrole?view=graph-rest-beta) function to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualeventwebinar?view=graph-rest-beta&preserve-view=true) resource.",
+          "Target": "virtualEventWebinar"
+        },
+        {
+          "Id": "2b4cd7a5-2095-4ca3-80b0-da96df6c7e90",
+          "ApiChange": "Method",
+          "ChangedApiName": "getByUserRole",
+          "ChangeType": "Addition",
+          "Description": "Added the [getByUserRole](https://learn.microsoft.com/en-us/graph/api/virtualeventwebinar-getbyuserrole?view=graph-rest-beta) function to the [virtualEventWebinar](https://learn.microsoft.com/en-us/graph/api/resources/virtualEventWebinar?view=graph-rest-betaa&preserve-view=true) resource.",
+          "Target": "virtualEventWebinar"
+        }
+      ],
+      "Id": "2b4cd7a5-2095-4ca3-80b0-da96df6c7e90",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-10-23T00:00:00Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "840dd994-b26b-48a2-8d7c-1b52ea86a45c",
           "ApiChange": "Property",
           "ChangedApiName": "preferredDisplayName",
@@ -3440,7 +3466,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "setStatusMessage",
           "ChangeType": "Addition",
-          "Description": "Added the [setStatusMessage](https://learn.microsoft.com/en-us/graph/api/presence?view=graph-rest-1.0) method to the [presence](https://learn.microsoft.com/en-us/graph/api/presence?view=graph-rest-1.0) resource.",
+          "Description": "Added the [setStatusMessage](https://learn.microsoft.com/en-us/graph/api/presence?view=graph-rest-1.0) method to the [presence](https://learn.microsoft.com/en-us/graph/api/resources/presence?view=graph-rest-1.0) resource.",
           "Target": "presence"
         }
       ],
