@@ -17601,6 +17601,10 @@ items:
                     items:
                       - name: Get join link
                         href: api/virtualappointment-getvirtualappointmentjoinweburl.md
+                      - name: Send SMS 
+                        href: api/virtualappointment-sendvirtualappointmentsms.md
+                      - name: Send SMS reminder 
+                        href: api/virtualappointment-sendvirtualappointmentsmsreminder.md
                       - name: Virtual appointment (deprecated)
                         href: resources/virtualappointment.md
                       - name: Create virtual appointment (deprecated)

@@ -1,0 +1,103 @@
+---
+title: "virtualAppointment: sendvirtualappointmentsmsreminder"
+description: "Send a virtual appointment SMS reminder."
+author: "benmicrosoft"
+ms.localizationpriority: medium
+ms.prod: "cloud-communications"
+doc_type: apiPageType
+---
+
+# virtualAppointment: sendSMS
+
+Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+Send a SMS reminder to external attendees for a Teams Virtual Appointment. This feature requires [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams) and attendees need a valid United States phone number to recieve SMS notifications.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
+## Permissions
+
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+
+| Permission type                        | Permissions (from least to most privileged)                                                          |
+|:---------------------------------------|:-----------------------------------------------------------------------------------------------------|
+| Delegated (work or school account)     | VirtualAppointment.ReadWrite |
+| Delegated (personal Microsoft account) | Not supported.                                                                                       |
+| Application                            | VirtualAppointment.ReadWrite.All                                        |
+
+## Remind Before Time Type Values
+
+| Name            | Description               |
+| :-------------- | :------------------------ |
+| 'mins15'   | To send a reminder SMS 15 mins before meeting start time |
+
+## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /me/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentSmsReminder
+GET /users/{userId}/onlineMeetings/{onlineMeetingId}/sendVirtualAppointmentSmsReminder
+```
+
+## Request headers
+
+| Name            | Description               |
+| :-------------- | :------------------------ |
+| Authorization   | Bearer {token}. Required. |
+| Accept-Language | Language. Optional.       |
+
+## Request body
+In the request body, supply a JSON representation of the following parameters:
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|phonenumbers|String|List of phone numbers to send SMS notification. Required.|
+|remindBeforeTimeInMinutes|String|Type of SMS notification. Required.|
+
+## Response
+
+If successful, this method returns a `202 Accepted` response code. 
+
+## Examples
+
+### Request
+
+The following is an example of a request.
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_virtualappointment_getVirtualAppointmentJoinWebUrl",
+  "sampleKeys": ["MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi"]
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZi/sendVirtualAppointmentSmsReminder
+```
+{
+“phoneNumbers”: [ “+13129224122”, “+1242421412”],
+“remindBeforeTimeInMinutesType”: "mins15"
+}
+
+---
+
+### Response
+
+The following example shows the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Edm.String"
+}
+-->
+``` http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+
+```
