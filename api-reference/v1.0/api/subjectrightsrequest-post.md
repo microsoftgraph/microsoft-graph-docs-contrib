@@ -45,7 +45,7 @@ POST /privacy/subjectRightsRequests
 ## Request body
 In the request body, supply a JSON representation of the [subjectRightsRequest](../resources/subjectRightsRequest.md) object.
 
-The following table shows the properties that are required when you create the [subjectRightsRequest](../resources/subjectRightsRequest.md).
+The following table lists the properties that are required when you create the [subjectRightsRequest](../resources/subjectRightsRequest.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

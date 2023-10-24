@@ -43,7 +43,7 @@ POST /applications(appId='{appId}')/federatedIdentityCredentials
 ## Request body
 In the request body, supply a JSON representation of the [federatedIdentityCredential](../resources/federatedidentitycredential.md) object.
 
-The following table shows the properties that are required when you create the [federatedIdentityCredential](../resources/federatedidentitycredential.md).
+The following table lists the properties that are required when you create the [federatedIdentityCredential](../resources/federatedidentitycredential.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

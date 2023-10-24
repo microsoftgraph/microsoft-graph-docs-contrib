@@ -56,7 +56,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful and there are no validation errors, the method returns `204 No Content` response code. It does not return anything in the response body.
+If successful and there are no validation errors, the method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 If the request is invalid, the method returns `400 Bad Request` response code. An error message with details about the invalid request is returned in the response body.
 

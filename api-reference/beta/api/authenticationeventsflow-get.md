@@ -46,7 +46,7 @@ This method supports some of the OData query parameters to help customize the re
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc37
 ---
 
 ### Response
-The following is an example of the response. In this example, the user flow retrieved is named "Woodgrove Drive Users Flow" and is set up to:
+The following example shows the response. In this example, the user flow retrieved is named "Woodgrove Drive Users Flow" and is set up to:
 
 - Allow users to create a local email with password account, or sign up with their Google or Facebook identity
 - Collect **Display Name** and **Favorite Color**

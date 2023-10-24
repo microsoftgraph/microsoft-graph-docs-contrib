@@ -47,7 +47,7 @@ POST /compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/activate
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

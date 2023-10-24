@@ -42,7 +42,7 @@ DELETE /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelations
 |If-Match|If-match: {etag}. Last known ETag value for the **delegatedAdminAccessAssignment** to be deleted. Required. Retrieve the ETag value from a LIST or GET operation.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

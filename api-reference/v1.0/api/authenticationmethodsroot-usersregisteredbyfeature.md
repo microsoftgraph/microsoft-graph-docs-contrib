@@ -74,7 +74,7 @@ The value `admin` includes all Microsoft Entra admin roles.
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -84,7 +84,7 @@ If successful, this function returns a `200 OK` response code and a [userRegistr
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -116,7 +116,7 @@ GET https://graph.microsoft.com/v1.0/reports/authenticationMethods/usersRegister
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

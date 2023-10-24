@@ -52,7 +52,7 @@ For more information on OData query options, see [OData query parameters](/graph
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
