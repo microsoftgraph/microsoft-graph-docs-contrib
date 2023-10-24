@@ -272,7 +272,7 @@ items:
             href: delta-query-users.md
       - name: Compliance
         href: compliance-concept-overview.md
-      - name: Connecting external content
+      - name: External data connections
         items: 
           - name: Connectors overview
             href: connecting-external-content-connectors-overview.md
