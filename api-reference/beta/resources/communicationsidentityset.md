@@ -29,7 +29,7 @@ Inherits from [identitySet](identityset.md).
 | endpointType | endpointType | Type of endpoint the participant uses. Possible values are: `default`, `voicemail`, `skypeForBusiness`, `skypeForBusinessVoipPhone` and `unknownFutureValue`. |
 | guest | [communicationsGuestIdentity](communicationsguestidentity.md) | The guest user associated with this action. |
 | onPremises | [communicationsUserIdentity](communicationsuseridentity.md) | The Skype for Business on-premises user associated with this action. |
-| phone | [communicationsPhoneIdentity](communicationsphoneidentity.md) | The phone user associated with this action. Inherited from **identitySet**. |
+| phone | [communicationsPhoneIdentity](communicationsphoneidentity.md) | The phone user associated with this action. |
 | user | [communicationsUserIdentity](communicationsuseridentity.md) | The user associated with this action. Inherited from **identitySet**. |
 
 ## JSON representation
