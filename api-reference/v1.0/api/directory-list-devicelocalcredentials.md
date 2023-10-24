@@ -1,6 +1,6 @@
 ---
 title: "List deviceLocalCredentialInfo"
-description: "Get a list of deviceLocalCredentialInfo and their properties excluding the credentials."
+description: "Get a list of deviceLocalCredentialInfo and their properties, excluding the credentials property."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # List deviceLocalCredentialInfo
 Namespace: microsoft.graph
 
-Get a list of the [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) objects and their properties excluding the [credentials](../resources/devicelocalcredential.md). 
+Get a list of the [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) objects and their properties, excluding the [credentials](../resources/devicelocalcredential.md) property. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 [!INCLUDE [rbac-device-local-credentials-basic-apis-read](../includes/rbac-for-apis/rbac-device-local-credentials-basic-apis-read.md)]
 
 ## HTTP request
-To get a list of deviceLocalCredentialInfo within the tenant:
+To get a list of **deviceLocalCredentialInfo** objects within the tenant:
 
 <!-- {
   "blockType": "ignored"
@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) objects excluding the [credentials](../resources/devicelocalcredential.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [deviceLocalCredentialInfo](../resources/devicelocalcredentialinfo.md) objects, excluding the [credentials](../resources/devicelocalcredential.md) properties, in the response body.
 
 ## Examples
 
