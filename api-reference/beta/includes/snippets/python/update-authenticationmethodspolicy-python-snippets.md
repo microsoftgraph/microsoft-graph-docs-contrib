@@ -22,6 +22,9 @@ request_body = AuthenticationMethodsPolicy(
 					targeted_authentication_method = "microsoftAuthenticator",
 				),
 			]
+			additional_data = {
+					"enforce_registration_after_allowed_snoozes" : True,
+			}
 		),
 	),
 	report_suspicious_activity_settings = ReportSuspiciousActivitySettings(
