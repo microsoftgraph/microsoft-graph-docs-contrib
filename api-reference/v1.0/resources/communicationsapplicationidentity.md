@@ -22,7 +22,7 @@ Inherits from [identity](identity.md).
 | applicationType | String | First-party Microsoft application that presents this **identity**. |
 | displayName | String | The display name associated with the application. Inherited from **identity**. |
 | hidden | Boolean | `True` if the participant shouldn't be shown in other participants' rosters. |
-| id | String | The client ID of the application from Azure Active Directory. Inherited from **identity**. |
+| id | String | The client ID of the application from Microsoft Entra ID. Inherited from **identity**. |
 
 ## JSON representation
 
