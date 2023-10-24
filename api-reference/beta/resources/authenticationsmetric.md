@@ -1,6 +1,6 @@
 ---
 title: "authenticationsMetric resource type"
-description: "Insights for authentications for a specific period."
+description: "Insights on authentications for registered apps within your Microsoft Entra ID customer tenant during a specific timeframe
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,10 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Insights for authentications for a specific period.
-
-> **_NOTE:_**
-> When you aggregate all counts within this entity, the total will match the sum in the summary entity above.
+"Insights on authentications for registered apps within your Microsoft Entra ID customer tenant during a specific timeframe
 
 ## Methods
 |Method|Return type|Description|
@@ -32,7 +29,7 @@ Insights for authentications for a specific period.
 | attemptsCount | Int64 | Number of authentication requests made. Supports `$filter` (`eq`). |
 | successCount | Int64 | Number of successful authentication requests. Supports `$filter` (`eq`). |
 | os | String | The platform for the device that the customers used. Supports `$filter` (`eq`). |
-| country | String | The source country of the customers who authenticated. Supports `$filter` (`eq`). |
+| country | String | The country/region from which the customers authenticated. Supports `$filter` (`eq`). |
 | appID | String | The appID. Supports `$filter` (`eq`). |
 
 ## Relationships

@@ -23,7 +23,7 @@ Insights of the total users in the tenant over time.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| id|String| Identifier for the insight.|
+| ID|String| Identifier for the insight.|
 | factDate|Date| Date of the insight.|
 | count|String| Total users in the tenant at over time.|
 ## Relationships

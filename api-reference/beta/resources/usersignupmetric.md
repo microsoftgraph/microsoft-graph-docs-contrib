@@ -15,9 +15,6 @@ Namespace: microsoft.graph
 
 Insights for user sign ups for a specific period.
 
-> **_NOTE:_**
-> If you combine all counts in this entity, it **SHOULD** tally with the sum in the summary entity above.
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -28,9 +25,9 @@ Insights for user sign ups for a specific period.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|count|Int64|Number of users who signed up.Supports `$filter` (`eq`).|
+|count|Int64|Number of users who signed up. Supports `$filter` (`eq`).|
 |factDate|Date|The date of the user insight.|
-|id|String|Identifier for the user insight.|
+|ID|String|Identifier for the user insight.|
 |os|String|The device plaform that the customers used. Supports `$filter` (`eq`).|
 
 ## Relationships

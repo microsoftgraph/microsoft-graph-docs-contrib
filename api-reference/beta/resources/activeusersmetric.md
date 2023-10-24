@@ -17,7 +17,6 @@ Insights for users who were active for a specific period. This value is calculat
 
 > **_NOTE:_**
 > A user may be counted more that once if they use multiple device platforms or application.
-> Please be aware that when you aggregate all the counts within this entity, the total will not match the sum in the summary entity above due to this.
 
 ## Methods
 |Method|Return type|Description|

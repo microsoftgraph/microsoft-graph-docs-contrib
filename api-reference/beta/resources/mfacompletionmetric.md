@@ -15,9 +15,6 @@ Namespace: microsoft.graph
 
 Insights for MFA usage for a specific period.
 
-> **_NOTE:_**
-> When you aggregate all counts within this entity, the total will match the sum in the summary entity above
-
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
@@ -33,7 +30,7 @@ Insights for MFA usage for a specific period.
 |factDate|Date|The date of the user insight.|
 |ID|String|Identifier for the user insight.|
 |mfaMethod|String|The mfa authentication method customers used. Supports `$filter` (`eq`).|
-|os|String|The plaform of the device that the customers used. Supports `$filter` (`eq`).|
+|os|String|The platform of the device that the customers used. Supports `$filter` (`eq`).|
 |successCount|Int64|Number of users who have sucessfully signed up. Supports `$filter` (`eq`).|
 
 ## Relationships
