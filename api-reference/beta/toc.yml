@@ -13658,10 +13658,10 @@ items:
                         href: resources/internaldomainfederation.md
                       - name: List
                         href: api/domain-list-federationconfiguration.md
-                      - name: Get
-                        href: api/internaldomainfederation-get.md
                       - name: Create
                         href: api/domain-post-federationconfiguration.md
+                      - name: Get
+                        href: api/internaldomainfederation-get.md
                       - name: Update
                         href: api/internaldomainfederation-update.md
                       - name: Delete
