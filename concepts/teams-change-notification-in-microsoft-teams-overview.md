@@ -18,9 +18,9 @@ Change notifications for Microsoft Teams resources using Microsoft Graph enable 
 
 Microsoft Teams supports two types of change notifications:
 
-- **Change notification to track all changes related to a resource across the tenant:** For example, you can subscribe to changes in messages in any channel across the tenant and get notified whenever a message is created, updated, or deleted in any channel in the tenant. These notifications may have [licensing and payment requirements](/graph/teams-licenses), such as change notifications for [messages](teams-changenotifications-chatmessage.md) and [membership](teams-changenotifications-chatMembership.md).
+* **Change notification to track all changes related to a resource across the tenant:** For example, you can subscribe to changes in messages in any channel across the tenant and get notified whenever a message is created, updated, or deleted in any channel in the tenant. These notifications might have [licensing and payment requirements](/graph/teams-licenses), such as change notifications for [messages](teams-changenotifications-chatmessage.md) and [membership](teams-changenotifications-chatMembership.md).
 
-- **Change notification to track all changes for a specific resource:** For example, you can subscribe to changes in messages in a particular channel and get notified whenever a message is created, updated, or deleted in that channel.
+* **Change notification to track all changes for a specific resource:** For example, you can subscribe to changes in messages in a particular channel and get notified whenever a message is created, updated, or deleted in that channel.
 
 For details about which resources support which types of change notifications, see [Microsoft Graph change notifications](webhooks.md).
 
@@ -146,11 +146,11 @@ Previous example above shows a notification that corresponds to a chat message r
 
 ## See also
 
-- [Microsoft Graph change notifications](webhooks.md)
-- [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
-- [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
-- [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)
-- [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)
-- [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
-- [Microsoft Teams API overview](teams-concept-overview.md)
-- [Get change notification for meeting transcripts and recordings using Microsoft Graph](teams-changenotifications-callrecording-and-calltranscript.md)
+* [Microsoft Graph change notifications](webhooks.md)
+* [Get change notifications for teams and channels using Microsoft Graph](teams-changenotifications-team-and-channel.md)
+* [Get change notifications for membership changes in teams and channels using Microsoft Graph](teams-changenotifications-teammembership.md)
+* [Get change notifications for messages in Teams channels and chats using Microsoft Graph](teams-changenotifications-chatmessage.md)
+* [Get change notifications for chats using Microsoft Graph](teams-changenotifications-chat.md)
+* [Get change notifications for chat membership using Microsoft Graph](teams-changenotifications-chatmembership.md)
+* [Microsoft Teams API overview](teams-concept-overview.md)
+* [Get change notification for meeting transcripts and recordings using Microsoft Graph](teams-changenotifications-callrecording-and-calltranscript.md)

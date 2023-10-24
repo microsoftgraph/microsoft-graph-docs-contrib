@@ -8,7 +8,7 @@ ms.custom: scenarios:getting-started
 
 # Microsoft Graph Data Connect app registration
 
-This article provides best practice guidance for using the Azure portal experience to register an Azure Active Directory (Azure AD) app with Microsoft Graph Data Connect.
+This article provides best practice guidance for using the Azure portal experience to register a Microsoft Entra app with Microsoft Graph Data Connect.
 
 ## Azure portal experience
 
@@ -26,7 +26,7 @@ The first screen of the Azure portal experience prompts you to register your fir
 The table includes the following column fields:
 
 - **Name** — The app registration name
-- **App ID** — The Azure AD application ID
+- **App ID** — The Microsoft Entra application ID
 - **Registered On** — The date the app was registered
 - **Developer** — The developer who registered the application
 - **Multi-tenant** — Whether the app is multi-tenant or single tenant
@@ -58,7 +58,7 @@ If you select SQL for **Storage Account**, the **Uri** project detail field is d
 
 App registration requires you to select entries for the **Instance Details** that affect default behaviors, such as the following fields:
 
-- **Application ID** (required) - Select from Azure AD apps in the tenant, or create a new one.
+- **Application ID** (required) - Select from Microsoft Entra apps in the tenant, or create a new one.
 - **Description** (required) - Provide details in the text field for app registration such as project goal, unique identifier, and organization project name.
 - **Publish Type** (required) - Select from multi-tenant or single-tenant fields.
 - **Key Vault** (required **only** for multi-tenant app registrations) - Specify the key vault that will enable communication between tenants.

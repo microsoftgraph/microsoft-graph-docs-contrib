@@ -273,7 +273,7 @@ items:
       - name: Compliance
         href: compliance-concept-overview.md
       - name: Connecting external content
-        items:
+        items: 
           - name: Connectors overview
             href: connecting-external-content-connectors-overview.md
             displayName: Microsoft Graph connectors, connect external content
@@ -289,6 +289,8 @@ items:
           - name: Build your first custom connector
             href: connecting-external-content-build-quickstart.yml
             displayName: connectors, Microsoft Graph connectors
+          - name: Connectors samples
+            href: /samples/browse/?products=microsoft-graph-connectors-api
           - name: Build your first custom connector using SDK
             items:
               - name: Overview
@@ -524,7 +526,7 @@ items:
                   - name: Assign Microsoft Entra roles using PIM
                     href: tutorial-assign-azureadroles.md
                     displayName: PIM, privileged identity management
-                  - name: Manage security alerts for Microsoft Entra roles
+                  - name: Manage security alerts for Microsoft Entra roles (preview)
                     href: how-to-pim-alerts.md
                     displayName: PIM alerts, privileged identity management
       - name: Industry data ETL (preview)

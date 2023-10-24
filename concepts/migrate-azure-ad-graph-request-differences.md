@@ -63,7 +63,7 @@ Here:
 
 - The version is `v1.0`.
 - The tenant ID is inferred from the access token (not shown).
-- The resource and `$filter` query parameter are the same as the Azure AD query.
+- The resource and `$filter` query parameter are the same as the Microsoft Entra ID query.
 
 > **NOTE**: If you're using the Azure AD Graph .NET client library, see [.NET client libraries](migrate-azure-ad-graph-client-libraries.md) for more specific strategies and assistance to move to the Microsoft Graph .NET client library.
 

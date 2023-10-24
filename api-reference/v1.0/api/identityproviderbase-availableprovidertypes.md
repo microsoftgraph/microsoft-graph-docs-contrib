@@ -52,7 +52,9 @@ If successful, this function returns a `200 OK` response code and a string colle
 
 ## Example
 
-### Example 1: List all identity providers available in an Azure AD directory
+<a name='example-1-list-all-identity-providers-available-in-an-azure-ad-directory'></a>
+
+### Example 1: List all identity providers available in a Microsoft Entra directory
 
 ### Request
 The following is an example of the request.

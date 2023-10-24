@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Create a new [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
