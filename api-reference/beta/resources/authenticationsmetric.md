@@ -29,7 +29,7 @@ Namespace: microsoft.graph
 | attemptsCount | Int64 | Number of authentication requests made. Supports `$filter` (`eq`). |
 | successCount | Int64 | Number of successful authentication requests. Supports `$filter` (`eq`). |
 | os | String | The platform for the device that the customers used. Supports `$filter` (`eq`). |
-| country | String | The country/region from which the customers authenticated. Supports `$filter` (`eq`). |
+| country | String | The location where the customers authenticated from. Supports `$filter` (`eq`). |
 | appID | String | The appID. Supports `$filter` (`eq`). |
 
 ## Relationships

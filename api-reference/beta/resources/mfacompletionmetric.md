@@ -31,7 +31,7 @@ Insights for MFA usage for a specific period.
 |ID|String|Identifier for the user insight.|
 |mfaMethod|String|The mfa authentication method customers used. Supports `$filter` (`eq`).|
 |os|String|The platform of the device that the customers used. Supports `$filter` (`eq`).|
-|successCount|Int64|Number of users who have sucessfully signed up. Supports `$filter` (`eq`).|
+|successCount|Int64|Number of users who have successfully signed up. Supports `$filter` (`eq`).|
 
 ## Relationships
 None.
