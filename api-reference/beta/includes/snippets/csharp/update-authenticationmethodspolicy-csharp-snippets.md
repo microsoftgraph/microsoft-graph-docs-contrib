@@ -28,6 +28,12 @@ var requestBody = new AuthenticationMethodsPolicy
 					TargetedAuthenticationMethod = "microsoftAuthenticator",
 				},
 			},
+			AdditionalData = new Dictionary<string, object>
+			{
+				{
+					"enforceRegistrationAfterAllowedSnoozes" , true
+				},
+			},
 		},
 	},
 	ReportSuspiciousActivitySettings = new ReportSuspiciousActivitySettings
