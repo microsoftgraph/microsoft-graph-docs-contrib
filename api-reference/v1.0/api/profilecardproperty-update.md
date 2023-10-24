@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an updated [prof
 
 ### Request
 
-The following example adds a localized label `Kostnads Senter` for the locale `no-NB`.
+The following example adds a localized label `Kostnadssenter` for the locale `nb-NO`.
 
 <!-- {
   "blockType": "request",
@@ -78,7 +78,7 @@ Content-type: application/json; charset=utf-8
       "localizations": [
         {
           "languageTag": "nb-NO",
-          "displayName": "Kostnads Senter"
+          "displayName": "Kostnadssenter"
         }
       ]
     }
@@ -114,7 +114,7 @@ Content-type: application/json; charset=utf-8
         },
         {
           "languageTag": "nb-NO",
-          "displayName": "Kostnads Senter"
+          "displayName": "Kostnadssenter"
         }
       ]
     }
