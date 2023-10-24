@@ -5306,6 +5306,14 @@ items:
                     href: api/device-list-registeredowners.md
                   - name: List registered users
                     href: api/device-list-registeredusers.md
+              - name: Device local credential
+                items:
+                  - name: Device local credential
+                    href: resources/devicelocalcredentialinfo.md
+                  - name: List
+                    href: api/directory-list-devicelocalcredentials.md
+                  - name: Get
+                    href: api/devicelocalcredentialinfo-get.md
               - name: Directory object
                 href: resources/directoryobject.md
                 items:
