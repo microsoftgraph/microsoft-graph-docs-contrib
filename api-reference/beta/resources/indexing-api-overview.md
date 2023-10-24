@@ -31,6 +31,19 @@ The use cases for the APIs in this section involve building [Microsoft Graph con
 | **Indexing actions**                             |                                             |   |
 | Add, update or delete a custom item in the index | [externalItem](externalconnectors-externalitem.md)             | [externalItem methods](externalconnectors-externalitem.md#methods) |
 
+## Process overview
+
+Building a custom Microsoft Graph connector involves four steps:
+
+1. Create an Entra ID (formerly known as Azure Active Directory) app registration. Along with the request to Microsoft Graph, you submit the name of the app registration and API permissions that your app needs. Microsoft Graph responds with information about the newly created app registration.
+2. Create an external connection. Each connection requires a unique ID, name, and a description.
+3. Create the schema for the external connection. The schema defines the shape of external content that you'll ingest through this Microsoft Graph connection. Creating the schema is a long-running operation. After you submit the schema to create the connection, Microsoft Graph responds with a URL that you can use to check the status of the operation. The schema is being provisioned as long as the operation status is `inprogress`. When provisioning completes, the operation will return a `completed` status.
+4. Ingest external content. For each external item, extract it from the source content repository, transform it so that it matches the schema for your external connection, and submit it to Microsoft Graph as an external item. Along with the item, include information about who's allowed to access it, also known as the access control list (ACL).
+
+The following is a sequence diagram that illustrates the four steps to build a Microsoft Graph connector.
+
+![A diagram that shows the four steps to build a Microsoft Graph connector](concepts/images/connectors-images/graph-connectors-sequence-diagram.png)
+
 ## Known limitations
 
 The following are current known limitations:
