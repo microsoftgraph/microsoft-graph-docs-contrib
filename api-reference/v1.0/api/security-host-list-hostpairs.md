@@ -117,7 +117,6 @@ GET https://graph.microsoft.com/v1.0/security/threatIntelligence/hosts/contoso.c
 
 ---
 
-
 ### Response
 The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
