@@ -22,6 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Insights-UserMetrics.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Insights-UserMetrics.Read.All|
+
 In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 - Reports Reader
 - Application Administrator
@@ -60,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-This is an example of a request.
+Here's an example of a request.
 <!-- {
   "blockType": "request",
   "name": "list_inactiveusersmetricbase"
@@ -72,7 +73,7 @@ GET https://graph.microsoft.com/beta/reports/userinsights/daily/inactiveUsers
 
 
 ### Response
-This is an example of the response.
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

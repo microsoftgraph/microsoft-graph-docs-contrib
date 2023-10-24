@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Insights for authentications for a specific period.
 
 > **_NOTE:_**
-> If you combine all counts in this entity, it will tally with the sum in the summary entity above.
+> When you aggregate all counts within this entity, the total will match the sum in the summary entity above.
 
 ## Methods
 |Method|Return type|Description|

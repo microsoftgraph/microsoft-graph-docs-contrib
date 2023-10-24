@@ -1,6 +1,6 @@
 ---
 title: "mfaCompletionMetric resource type"
-description: "Insights for MFA calls for a specific period."
+description: "Insights for MFA usage for a specific period."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,10 +13,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Insights for MFA calls for a specific period.
+Insights for MFA usage for a specific period.
 
 > **_NOTE:_**
-> If you combine all counts in this entity, it **SHOULD** tally with the sum in the summary entity above.
+> When you aggregate all counts within this entity, the total will match the sum in the summary entity above
 
 ## Methods
 |Method|Return type|Description|
@@ -28,13 +28,13 @@ Insights for MFA calls for a specific period.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appId|String|The application id. Supports `$filter` (`eq`).|
+|appID|String|The application ID. Supports `$filter` (`eq`).|
 |attemptsCount|Int64|Number of users who attempted to sign up. Supports `$filter` (`eq`).|
 |factDate|Date|The date of the user insight.|
-|id|String|Identifier for the user insight.|
+|ID|String|Identifier for the user insight.|
 |mfaMethod|String|The mfa authentication method customers used. Supports `$filter` (`eq`).|
-|os|String|The device plaform that the customers used. Supports `$filter` (`eq`).|
-|successCount|Int64|Number of users who sucessfully signed up. Supports `$filter` (`eq`).|
+|os|String|The plaform of the device that the customers used. Supports `$filter` (`eq`).|
+|successCount|Int64|Number of users who have sucessfully signed up. Supports `$filter` (`eq`).|
 
 ## Relationships
 None.

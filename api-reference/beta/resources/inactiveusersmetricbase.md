@@ -29,8 +29,8 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |factDate|Date|Day of the insight.|
-|id|String|Identifier for the user insight. Inherited from [entity](../resources/entity.md).|
-|inactive1DayCount|Int64|Number of users inactive for 1 day. Supports `$select`.|
+|ID|String|Identifier for the user insight. Inherited from [entity](../resources/entity.md).|
+|inactive1DayCount|Int64|Number of users inactive for one day. Supports `$select`.|
 |inactive30DayCount|Int64|Number of users inactive for 30 consecutive days. Supports `$select`.|
 |inactive60DayCount|Int64|Number of users inactive for 60 consecutive days. Supports `$select`.|
 |inactive90DayCount|Int64|Number of users inactive for 90 consecutive days. Supports `$select`.|
