@@ -1,6 +1,6 @@
 ---
 title: "x509CertificateUserBinding resource type"
-description: "Defines the fields in the X.509 certificate that map to attributes of the Azure AD user object in order to bind the certificate to the user account."
+description: "Defines the fields in the X.509 certificate that map to attributes of the Microsoft Entra user object in order to bind the certificate to the user account."
 author: "vimrang"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines the fields in the X.509 certificate that map to attributes of the Azure AD user object in order to bind the certificate to the user account.
+Defines the fields in the X.509 certificate that map to attributes of the Microsoft Entra user object in order to bind the certificate to the user account.
 
 ## Properties
 |Property|Type|Description|
@@ -42,4 +42,3 @@ The following is a JSON representation of the resource.
   "trustAffinityLevel": "String"
 }
 ```
-

@@ -1,6 +1,6 @@
 ---
 title: "featureTarget resource type"
-description: "Defines a single group, Azure AD role, or administrative unit that is included or excluded in the settings specified in the authenticationMethodFeatureConfiguration object."
+description: "Defines a single group, Microsoft Entra role, or administrative unit that is included or excluded in the settings specified in the authenticationMethodFeatureConfiguration object."
 author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Defines a single group, Azure AD role, or administrative unit that is included or excluded in the settings specified in the [authenticationMethodFeatureConfiguration](authenticationmethodfeatureconfiguration.md) object.
+Defines a single group, Microsoft Entra role, or administrative unit that is included or excluded in the settings specified in the [authenticationMethodFeatureConfiguration](authenticationmethodfeatureconfiguration.md) object.
 
 ## Properties
 |Property|Type|Description|
@@ -36,4 +36,3 @@ The following is a JSON representation of the resource.
   "targetType": "String"
 }
 ```
-

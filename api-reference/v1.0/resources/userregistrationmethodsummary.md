@@ -40,7 +40,7 @@ The value `privilegedAdmin` consists of the following privileged admin roles:
 * User Administrator
 * Authentication Administrator
 
-The value `admin` includes all Azure Active Directory admin roles.
+The value `admin` includes all Microsoft Entra admin roles.
 
 ## Relationships
 
