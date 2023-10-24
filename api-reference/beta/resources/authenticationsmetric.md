@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Insights for authentications for a specific period.
 
 > **_NOTE:_**
-> If you combine all counts in this entity, it **SHOULD** tally with the sum in the summary entity above.
+> If you combine all counts in this entity, it will tally with the sum in the summary entity above.
 
 ## Methods
 |Method|Return type|Description|
@@ -27,13 +27,13 @@ Insights for authentications for a specific period.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| id | String | Identifier for the user insight.  |
+| ID | String | Identifier for the user insight.  |
 | factDate | Date | The date of the user insight. |
 | attemptsCount | Int64 | Number of authentication requests made. Supports `$filter` (`eq`). |
 | successCount | Int64 | Number of successful authentication requests. Supports `$filter` (`eq`). |
-| os | String | The device plaform that the customers used. Supports `$filter` (`eq`). |
+| os | String | The platform for the device that the customers used. Supports `$filter` (`eq`). |
 | country | String | The source country of the customers who authenticated. Supports `$filter` (`eq`). |
-| appId | String | The app id. Supports `$filter` (`eq`). |
+| appID | String | The appID. Supports `$filter` (`eq`). |
 
 ## Relationships
 None.

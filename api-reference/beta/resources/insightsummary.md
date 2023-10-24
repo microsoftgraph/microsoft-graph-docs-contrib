@@ -29,12 +29,12 @@ Summary of all usage insights for a specific time period.
 |Property|Type|Description|
 |:---|:---|:---|
 |activeUsers|Int64|Daily active users.|
-|appId|String|Application id the users sent requests to.|
+|appID|String|Application ID the users sent requests to.|
 |authenticationCompletions|Int64|Daily authentication completions.|
 |authenticationRequests|Int64|Daily authentication requests.|
 |factDate|Date|Day/Month of the insight.|
-|id|String|Identifier for the insight.|
-|os|String|The device plaform that the customers used. Supports `$filter` (`eq`).|
+|ID|String|Identifier for the insight.|
+|os|String|The platform for the device that the customers used. Supports `$filter` (`eq`).|
 |securityTextCompletions|Int64|Daily MFA SMS completions.|
 |securityTextRequests|Int64|Daily MFA SMS requests.|
 |securityVoiceCompletions|Int64|Daily MFA Voice completions.|

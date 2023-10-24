@@ -1,6 +1,6 @@
 ---
 title: "inactiveUsersMetric resource type"
-description: "Insights for users who were inactive for a specific period. This is calculated as count of all users who have not made an authentication request in that period."
+description: "Insights for users who were inactive for a specific period. This value is calculated as count of all users who have not made an authentication request in that period."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This insight metric provides users who were inactive for a specific period. This is calculated as count of all users who have not made an authentication request in that period.
+This insight metric provides users who were inactive for a specific period. This value is calculated as count of all users who have not made an authentication request in that period.
 
 
 Inherits from [entity](../resources/entity.md).
@@ -39,7 +39,7 @@ Inherits from [entity](../resources/entity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

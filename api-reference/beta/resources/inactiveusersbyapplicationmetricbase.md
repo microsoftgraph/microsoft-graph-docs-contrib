@@ -27,7 +27,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |factDate|Date|Day of the insight.|
-|id|String|Identifier for the user insight. Inherited from [entity](../resources/entity.md).|
+|ID|String|Identifier for the user insight. Inherited from [entity](../resources/entity.md).|
 |inactive30DayCount|Int64|Number of users inactive for 30 consecutive days. Supports `$select`.|
 |inactive60DayCount|Int64|Number of users inactive for 60 consecutive days.Supports `$select`.|
 |inactive90DayCount|Int64|Number of users inactive for 90 consecutive days.Supports `$select`.|
@@ -36,7 +36,7 @@ Inherits from [entity](../resources/entity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

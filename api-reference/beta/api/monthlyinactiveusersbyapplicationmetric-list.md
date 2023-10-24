@@ -1,18 +1,18 @@
 ---
-title: "List monthlyInactiveUsersByApplicationMetrics"
-description: "Get a list of the monthlyInactiveUsersByApplicationMetric objects and their properties."
-author: "srutto
+title: "List monthly inactiveUsersByApplication"
+description: "Get a list of the monthly inactiveUsersByApplication objects and their properties."
+author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
-# List monthlyInactiveUsersByApplicationMetrics
+# List monthly inactiveUsersByApplication
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [monthlyInactiveUsersByApplicationMetric](../resources/monthlyinactiveusersbyapplicationmetric.md) objects and their properties.
+Get a list of the monthly [inactiveUsersByApplicationMetric](../resources/inactiveusersbyapplicationmetricbase.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,7 +22,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Insights-UserMetrics.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Insights-UserMetrics.Read.All|
-In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference).
+
+In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 - Reports Reader
 - Application Administrator
 - Cloud Application Administrator
@@ -51,7 +52,7 @@ This method supports some of the OData query parameters to help customize the re
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -60,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+Here's an example of a request.
 <!-- {
   "blockType": "request",
   "name": "list_monthlyinactiveusersbyapplicationmetric"
@@ -72,7 +73,7 @@ GET https://graph.microsoft.com/beta/reports/userInsights/monthly/inactiveUsersB
 
 
 ### Response
-The following is an example of the response
+Here's an example of the response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
