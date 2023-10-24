@@ -58,18 +58,9 @@ If successful, this function returns a `200 OK` response code and a [cloudPcTena
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "virtualendpoint_retrieveTenantEncryptionSetting"
-}
--->
-
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/retrieveTenantEncryptionSetting
 ```
-
----
 
 ### Response
 
