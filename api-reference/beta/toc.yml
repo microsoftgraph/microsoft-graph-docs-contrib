@@ -15797,7 +15797,7 @@ items:
                     href: api/search-qna-update.md
                   - name: Delete qna
                     href: api/search-qna-delete.md
-      - name: Index
+      - name: External data connections
           items:
             - name: Overview
               href: resources/indexing-api-overview.md
