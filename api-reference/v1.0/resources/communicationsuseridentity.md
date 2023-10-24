@@ -1,6 +1,6 @@
 --- 
 title: "communicationsUserIdentity resource type"
-description: "Represents the identity of a user present in Azure Active Directory who participates in a communication."
+description: "Represents the identity of a user present in Microsoft Entra ID who participates in a communication."
 author: "rahulva-msft"
 ms.localizationpriority: medium
 ms.prod: "cloud-communications"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the identity of a user present in [Azure Active Directory](/azure/active-directory/) who participates in a communication; for example, as a caller in an audio-video call.
+Represents the identity of a user present in [Microsoft Entra ID](/azure/active-directory/) who participates in a communication; for example, as a caller in an audio-video call.
 
 Inherits from [identity](identity.md).
 
@@ -25,7 +25,7 @@ Inherits from [identity](identity.md).
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
