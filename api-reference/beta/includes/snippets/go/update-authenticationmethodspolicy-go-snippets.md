@@ -40,6 +40,11 @@ includeTargets := []graphmodels.AuthenticationMethodsRegistrationCampaignInclude
 	authenticationMethodsRegistrationCampaignIncludeTarget,
 }
 authenticationMethodsRegistrationCampaign.SetIncludeTargets(includeTargets)
+additionalData := map[string]interface{}{
+	enforceRegistrationAfterAllowedSnoozes := true
+authenticationMethodsRegistrationCampaign.SetEnforceRegistrationAfterAllowedSnoozes(&enforceRegistrationAfterAllowedSnoozes) 
+}
+authenticationMethodsRegistrationCampaign.SetAdditionalData(additionalData)
 registrationEnforcement.SetAuthenticationMethodsRegistrationCampaign(authenticationMethodsRegistrationCampaign)
 requestBody.SetRegistrationEnforcement(registrationEnforcement)
 reportSuspiciousActivitySettings := graphmodels.NewReportSuspiciousActivitySettings()
