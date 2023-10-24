@@ -7,11 +7,17 @@ ms.prod: "people"
 ms.custom: scenarios:getting-started
 ---
 
+
 # Add or delete custom attributes on a profile card using the profile card API (preview)
 
-On the profile card in Microsoft 365, you can find information about users that is stored and maintained by your organization, for example **Job title** or **Office location**.
+On the profile card in Microsoft 365, you can find information about users that is stored and maintained by your organization; for example, **Job title** or **Office location**.
 
-Use the [profileCardProperty](/graph/api/resources/profilecardproperty) resource to show additional properties from Azure AD on profile cards for an organization by:
+You can use the [profileCardProperty](/graph/api/resources/profilecardproperty) resource to show additional properties from Microsoft Entra ID on profile cards for an organization.
+
+> [!NOTE]
+> This feature is in preview only and is not supported for use in production applications.
+
+You can do this by:
 
 * Making additional attributes visible
 * Adding custom attributes
@@ -25,7 +31,7 @@ You can also [delete](/graph/api/profilecardproperty-delete?view=graph-rest-beta
 
 ## Make additional attributes visible
 
-You can make the following attributes from Azure Active Directory (Azure AD) visible on users' profile cards. These attributes are *not case-sensitive*:
+You can make the following attributes from Microsoft Entra ID visible on users' profile cards. These attributes are *not case-sensitive*:
 
 * `UserPrincipalName`
 * `Fax`
@@ -34,9 +40,9 @@ You can make the following attributes from Azure Active Directory (Azure AD) vis
 * `StateOrProvince`
 * `Alias`
 
-The following table shows how the Azure AD attributes correspond with properties of the Microsoft Graph [user](/graph/api/resources/user) entity.
+The following table shows how the Microsoft Entra ID attributes correspond with the properties of the Microsoft Graph [user](/graph/api/resources/user) entity.
 
-| Azure AD attribute | User entity property |
+| Microsoft Entra ID attribute | User entity property |
 | ------------------ | -------------------- |
 | UserPrincipalName | userPrincipalName |
 | Fax | faxNumber |
@@ -81,15 +87,15 @@ Content-type: application/json
 
 ## Add a custom attribute
 
-You can add any of the 15 Azure AD [custom extension attributes](/graph/api/resources/onpremisesextensionattributes) to users' profile cards by configuring your organization settings and [adding the corresponding value as a profileCardProperty](/graph/api/peopleadminsettings-post-profilecardproperties) in Microsoft Graph. You can add one **profileCardProperty** resource at a time.
+You can add any of the 15 Microsoft Entra ID [custom extension attributes](/graph/api/resources/onpremisesextensionattributes) to users' profile cards by configuring your organization settings and [adding the corresponding value as a profileCardProperty](/graph/api/peopleadminsettings-post-profilecardproperties) in Microsoft Graph. You can add one **profileCardProperty** resource at a time.
 
 It takes up to 24 hours for the changes to show on profile cards.
 
 Custom properties are not searchable and can't be used to search for people across Microsoft apps and services.
 
-The following table shows how the Azure AD custom extension attribute names correspond to the supported values for the **directoryPropertyName** property of the [profileCardProperty](/graph/api/resources/profilecardproperty) resource. These Azure AD custom extension attribute names are *not case-sensitive*:
+The following table shows how the Microsoft Entra ID custom extension attribute names correspond to the supported values for the **directoryPropertyName** property of the [profileCardProperty](/graph/api/resources/profilecardproperty) resource. These Microsoft Entra ID custom extension attribute names are *not case-sensitive*:
 
-| Azure AD custom extension attribute | Value to specify as directoryPropertyName |
+| Microsoft Entra ID custom extension attribute | Value to specify as directoryPropertyName |
 | ----------------------------------- | ----------------------------------------- |
 | extensionAttribute1 | customAttribute1 |
 | extensionAttribute2 | customAttribute2 |
@@ -109,7 +115,7 @@ The following table shows how the Azure AD custom extension attribute names corr
 
 ### Example
 
-The following example adds the first Azure AD custom extension attribute to the profile card, using the display name **Cost center**. For users that have set their language settings to German, the display name will be **Kostenstelle**.
+The following example adds the first Microsoft Entra ID custom extension attribute to the profile card, using the display name **Cost center**. For users that have set their language settings to German, the display name will be **Kostenstelle**.
 
 #### Request
 
@@ -163,7 +169,7 @@ Content-type: application/json
 
 ## Delete a custom attribute
 
-Following the same mapping between Azure AD custom extension attributes and profile card custom attributes (such as `customAttribute1`) as described in the preceding section [Adding a custom attribute](/graph/add-properties-profilecard#adding-a-custom-attribute), you can delete a custom attribute using the [delete](/graph/api/profilecardproperty-delete?view=graph-rest-beta&preserve-view=true) operation, as shown in the following example.
+Following the same mapping between Microsoft Entra ID custom extension attributes and profile card custom attributes (such as `customAttribute1`) as described in the preceding section [Adding a custom attribute](/graph/add-properties-profilecard#adding-a-custom-attribute), you can delete a custom attribute using the [delete](/graph/api/profilecardproperty-delete?view=graph-rest-beta&preserve-view=true) operation, as shown in the following example.
 
 ### Example
 
@@ -223,7 +229,7 @@ To get a profile card property configuration in an organization, use the followi
 
 ### Create profile card properties in your organization
 
-You can use the Microsoft Graph PowerShell module to make both additional AAD profile card  properties, and the 15 customizable AAD profile card properties available in your organization.
+You can use the Microsoft Graph PowerShell module to make both additional Microsoft Entra ID profile card properties, and the 15 customizable Microsoft Entra ID profile card properties available in your organization.
 
 > [!NOTE]
 > The create command requires `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.

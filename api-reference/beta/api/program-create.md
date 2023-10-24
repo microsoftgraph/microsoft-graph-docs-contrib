@@ -1,6 +1,6 @@
 ---
 title: "Create program (deprecated)"
-description: "In the Azure AD access reviews feature, create a new program object."
+description: "In the Microsoft Entra access reviews feature, create a new program object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
@@ -15,7 +15,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [program](../resources/program.md) object.
+In the Microsoft Entra [access reviews](../resources/accessreviews-root.md) feature, create a new [program](../resources/program.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -143,5 +146,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

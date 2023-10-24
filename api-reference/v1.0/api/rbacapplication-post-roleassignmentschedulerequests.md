@@ -11,10 +11,13 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 In PIM, carry out the following operations through the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object:
+
 + Request active and persistent role assignments for a principal, with or without expiry dates.
 + Activate, deactivate, extend, or renew an eligible role assignment for a principal.
 
-To call this API to update, renew, and extend assignments for yourself, you must have multi-factor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA. See [Enable per-user Azure AD Multi-Factor Authentication to secure sign-in events](/azure/active-directory/authentication/howto-mfa-userstates).
+To call this API to update, renew, and extend assignments for yourself, you must have multifactor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA. See [Enable per-user Microsoft Entra multifactor authentication to secure sign-in events](/azure/active-directory/authentication/howto-mfa-userstates).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -187,7 +190,7 @@ Content-Type: application/json
 
 #### Request
 
-In the following request, a user identified by **principalId** `071cc716-8147-4397-a5ba-b2105951cc0b` activates their own *eligible role* to an Azure AD role identified by ID `8424c6f0-a189-499e-bbd0-26c1753c96d4`. The scope of their role is all directory objects in the tenant and the assignment is for five hours. To run this request, the calling user must have multi-factor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
+In the following request, a user identified by **principalId** `071cc716-8147-4397-a5ba-b2105951cc0b` activates their own *eligible role* to a Microsoft Entra role identified by ID `8424c6f0-a189-499e-bbd0-26c1753c96d4`. The scope of their role is all directory objects in the tenant and the assignment is for five hours. To run this request, the calling user must have multifactor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
 
 To retrieve the details of their eligibility requests and identify the eligibility to activate, the user will call the [unifiedRoleEligibilitySchedule: filterByCurrentUser](unifiedroleeligibilityschedule-filterbycurrentuser.md) API.
 

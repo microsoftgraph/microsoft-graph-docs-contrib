@@ -21,13 +21,13 @@ Provides the city, state and country/region from where the sign-in happened.
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |city|String|Provides the city where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.|
-|countryOrRegion|String|Provides the country code info (2 letter code) where the sign-in originated.  This is calculated using latitude/longitude information from the sign-in activity.|
+|countryOrRegion|String|Provides the country code info (two letter code) where the sign-in originated.  This is calculated using latitude/longitude information from the sign-in activity.|
 |geoCoordinates|[geoCoordinates](geocoordinates.md)|Provides the latitude, longitude and altitude where the sign-in originated.|
 |state|String|Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.|
 
 ## JSON representation
 
-Here is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

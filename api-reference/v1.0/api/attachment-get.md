@@ -21,6 +21,8 @@ An attachment can be one of the following types:
 
 All these types of attachments are derived from the [attachment](../resources/attachment.md) resource.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ### Get the raw contents of a file or item attachment
 You can append the path segment `/$value` to get the raw contents of a file or item attachment.
 

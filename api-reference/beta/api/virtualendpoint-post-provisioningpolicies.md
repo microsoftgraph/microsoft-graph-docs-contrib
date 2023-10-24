@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Create a new [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -53,7 +55,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |description|String|The provisioning policy description.|
 |displayName|String|The display name for the provisioning policy.|
-|domainJoinConfiguration|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Specifies how Cloud PCs will join Azure Active Directory.|
+|domainJoinConfiguration|[cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md)|Specifies how Cloud PCs will join Microsoft Entra ID.|
 |domainJoinConfigurations|Collection([microsoft.graph.cloudPcDomainJoinConfiguration](../resources/cloudpcdomainjoinconfiguration.md))|Specifies a list ordered by priority on how Cloud PCs will join Azure AD.|
 |imageDisplayName|String|The display name for the OS image you’re provisioning.|
 |imageId|String|The ID of the operating system image you want to provision on Cloud PCs. The format for a gallery type image is: {publisher_offer_sku}. Supported values for each of the parameters are as follows:<ul><li>publisher: `Microsoftwindowsdesktop`.</li> <li>offer: `windows-ent-cpc`.</li> <li>sku: `21h1-ent-cpc-m365`, `21h1-ent-cpc-os`, `20h2-ent-cpc-m365`, `20h2-ent-cpc-os`, `20h1-ent-cpc-m365`, `20h1-ent-cpc-os`, `19h2-ent-cpc-m365` and `19h2-ent-cpc-os`.</li></ul>|

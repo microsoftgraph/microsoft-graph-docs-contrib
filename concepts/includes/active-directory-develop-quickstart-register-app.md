@@ -27,7 +27,7 @@ The Microsoft identity platform performs identity and access management (IAM) on
 ## Prerequisites
 
 - An Azure account that has an active subscription. [Create an account for free](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
-- The Azure account must have permission to manage applications in Azure Active Directory (Azure AD). Any of the following Azure AD roles include the required permissions:
+- The Azure account must have permission to manage applications in Microsoft Entra ID. Any of the following Microsoft Entra roles include the required permissions:
   - [Application administrator](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json#application-administrator)
   - [Application developer](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json#application-developer)
   - [Cloud application administrator](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json#cloud-application-administrator)
@@ -39,7 +39,7 @@ Registering your application establishes a trust relationship between your app a
 
 Follow these steps to create the app registration:
 
-1. Sign in to the <a href="https://portal.azure.com/" target="_blank">Microsoft Entra admin center</a>.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
 1. If you have access to multiple tenants, use the **Directories + subscriptions** filter :::image type="icon" source="../images/portal-directory-subscription-filter.png" border="false"::: in the top menu to switch to the tenant in which you want to register the application.
 1. Expand the **Identity** menu > expand **Applications**> select **App registrations** > **New registration**.
 1. Enter a display **Name** for your application. Users of your application might see the display name when they use the app, for example during sign-in.
@@ -49,7 +49,7 @@ Follow these steps to create the app registration:
    | Supported account types                                                      | Description                                                                                                                                                                                                                                                                                                                                                                                 |
    | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
    | **Accounts in this organizational directory only**                           | Select this option if you're building an application for use only by users (or guests) in _your_ tenant.<br><br>Often called a _line-of-business_ (LOB) application, this app is a _single-tenant_ application in the Microsoft identity platform.                                                                                                                                          |
-   | **Accounts in any organizational directory**                                 | Select this option if you want users in _any_ Azure Active Directory (Azure AD) tenant to be able to use your application. This option is appropriate if, for example, you're building a software-as-a-service (SaaS) application that you intend to provide to multiple organizations.<br><br>This type of app is known as a _multitenant_ application in the Microsoft identity platform. |
+   | **Accounts in any organizational directory**                                 | Select this option if you want users in _any_ Microsoft Entra tenant to be able to use your application. This option is appropriate if, for example, you're building a software-as-a-service (SaaS) application that you intend to provide to multiple organizations.<br><br>This type of app is known as a _multitenant_ application in the Microsoft identity platform. |
    | **Accounts in any organizational directory and personal Microsoft accounts** | Select this option to target the widest set of customers.<br><br>By selecting this option, you're registering a _multitenant_ application that can also support users who have personal _Microsoft accounts_.                                                                                                                                                                               |
    | **Personal Microsoft accounts**                                              | Select this option if you're building an application only for users who have personal Microsoft accounts. Personal Microsoft accounts include Skype, Xbox, Live, and Hotmail accounts.                                                                                                                                                                                                      |
 
@@ -61,7 +61,7 @@ Follow these steps to create the app registration:
 When registration finishes, the Microsoft Entra admin center displays the app registration's **Overview** pane. You see the **Application (client) ID**. Also called the _client ID_, this value uniquely identifies your application in the Microsoft identity platform.
 
 > [!IMPORTANT]
-> New app registrations are hidden to users by default. When you are ready for users to see the app on their [My Apps page](https://support.microsoft.com/account-billing/sign-in-and-start-apps-from-the-my-apps-portal-2f3b1bae-0e5a-4a86-a33e-876fbd2a4510) you can enable it. To enable the app, in the Microsoft Entra admin center, expand the **Identity** menu > expand **App registrations** > **Enterprise applications** and select the app. Then on the **Properties** page toggle **Visible to users?** to Yes.
+> New app registrations are hidden to users by default. When you are ready for users to see the app on their [My Apps page](https://support.microsoft.com/account-billing/sign-in-and-start-apps-from-the-my-apps-portal-2f3b1bae-0e5a-4a86-a33e-876fbd2a4510) you can enable it. To enable the app, in the [Microsoft Entra admin center](https://entra.microsoft.com), expand the **Identity** menu > expand **Applications**> select **Enterprise applications** > select the app. Then on the **Properties** page toggle **Visible to users?** to Yes.
 
 Your application's code, or more typically an authentication library used in your application, also uses the client ID. The ID is used as part of validating the security tokens it receives from the identity platform.
 
@@ -140,7 +140,7 @@ For application security recommendations, see [Microsoft identity platform best 
 
 ### Option 3: Add a federated credential
 
-Federated identity credentials are a type of credential that allows workloads, such as GitHub Actions, workloads running on Kubernetes, or workloads running in compute platforms outside of Azure access Azure AD protected resources without needing to manage secrets using [workload identity federation](/azure/active-directory/develop/workload-identity-federation).
+Federated identity credentials are a type of credential that allows workloads, such as GitHub Actions, workloads running on Kubernetes, or workloads running in compute platforms outside of Azure access Microsoft Entra protected resources without needing to manage secrets using [workload identity federation](/azure/active-directory/develop/workload-identity-federation).
 
 To add a federated credential, follow these steps:
 

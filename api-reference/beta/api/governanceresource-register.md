@@ -17,13 +17,15 @@ Namespace: microsoft.graph
 
 Register a [governanceResource](../resources/governanceresource.md) object in Privileged Identity Management.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 The following table shows the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-|:-|:-|:-|
-| Azure AD | PrivilegedAccess.ReadWrite.AzureAD | Not supported. | Not supported. |
+| Microsoft Entra ID | PrivilegedAccess.ReadWrite.AzureAD | Not supported. | Not supported. |
 | Azure resources | PrivilegedAccess.ReadWrite.AzureResources | Not supported. | Not supported. |
 | [group](../resources/group.md) | PrivilegedAccess.ReadWrite.AzureADGroup | Not supported. | Not supported. |
 
@@ -95,5 +97,3 @@ HTTP/1.1 200 OK
   "suppressions": []
 }
 -->
-
-

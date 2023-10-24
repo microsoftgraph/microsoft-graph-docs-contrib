@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Set the state of a user's presence session as an application.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ### Presence sessions
 A user can have multiple presence sessions because the user can be on multiple Teams clients (desktop, mobile, and web). Each Teams client has an independent presence session and the user's presence is an aggregated state from all the sessions behind.
 
@@ -60,7 +62,7 @@ In the request body, provide a JSON object with the following parameters.
 | sessionId          | string   | The ID of the application's presence session.                                                          |
 | availability       | string   | The base presence information.                                                                         |
 | activity           | string   | The supplemental information to availability.                                                          |
-| expirationDuration | duration | The expiration of the app presence session. The value is represented in ISO 8601 format for durations.</p>If not provided, a default expiration of 5 minutes will be applied. The valid duration range is 5-240 minutes (PT5M to PT4H)|
+| expirationDuration | duration | The expiration of the app presence session. The value is represented in [ISO 8601 format for durations](http://en.wikipedia.org/wiki/ISO_8601#Durations).</p>If not provided, a default expiration of 5 minutes will be applied. The valid duration range is 5-240 minutes (PT5M to PT4H)|
 
 > [!IMPORTANT]
 >

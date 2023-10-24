@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) objects. View a list of all the managed image resources from your Azure Active Directory subscriptions.
+Get [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) objects. View a list of all the managed image resources from your Microsoft Entra subscriptions.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 

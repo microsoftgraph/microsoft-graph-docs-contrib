@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get all identity providers supported in a directory.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,7 +52,9 @@ If successful, this function returns a `200 OK` response code and a string colle
 
 ## Example
 
-### Example 1: List all identity providers available in an Azure AD directory
+<a name='example-1-list-all-identity-providers-available-in-an-azure-ad-directory'></a>
+
+### Example 1: List all identity providers available in a Microsoft Entra directory
 
 ### Request
 The following is an example of the request.

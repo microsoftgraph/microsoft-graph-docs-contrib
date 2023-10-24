@@ -1,6 +1,6 @@
 ---
 title: "Get temporaryAccessPassAuthenticationMethodConfiguration"
-description: "Read the details of the Temporary Access Pass policy for the Azure AD tenant, represented by a temporaryAccessPassAuthenticationMethodConfiguration object."
+description: "Read the details of the Temporary Access Pass policy for the Microsoft Entra tenant, represented by a temporaryAccessPassAuthenticationMethodConfiguration object."
 author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,7 +10,9 @@ doc_type: apiPageType
 # Get temporaryAccessPassAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Read the details of the Temporary Access Pass policy for the Azure Active Directory (Azure AD) tenant, represented by a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object.
+Read the details of the Temporary Access Pass policy for the Microsoft Entra tenant, represented by a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

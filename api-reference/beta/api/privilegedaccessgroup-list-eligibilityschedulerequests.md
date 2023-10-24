@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get a list of the [privilegedAccessGroupEligibilityScheduleRequest](../resources/privilegedaccessgroupeligibilityschedulerequest.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -32,10 +34,13 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/privilegedAccess/group/eligibilityScheduleRequests
+GET /identityGovernance/privilegedAccess/group/eligibilityScheduleRequests?$filter=groupId eq '{groupId}'
+GET /identityGovernance/privilegedAccess/group/eligibilityScheduleRequests?$filter=principalId eq '{principalId}'
 ```
 
-## Optional query parameters
+## Query parameters
+This method requires the `$filter` (`eq`) query parameter to scope the request to a **principalId** or a **groupId**.
+
 This method supports the `$select`, `$filter`, and `$expand` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
@@ -52,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Retrieve all the eligibility requests
+### Example 1: Retrieve all the eligibility requests scoped to a group and a principal
 
 #### Request
 The following is an example of a request.
@@ -63,7 +68,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleRequests
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleRequests?$filter=groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d' and principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'
 ```
 
 # [C#](#tab/csharp)
@@ -100,6 +105,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/e
 
 ---
 
+
 #### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -114,14 +120,13 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/eligibilityScheduleRequests/$entity",
     "value": [
     {
       "id": "534b3d4d-3ba0-8429-3568-5e9cce6c2cbd",
       "status": "Provisioned",
-      "completedDateTime": "2022-04-12T09:05:41.853Z",
-      "createdDateTime": "2022-04-12T09:05:41.807Z",
+      "createdDateTime": "2022-04-12T09:05:41.853Z",
+      "completedDateTime": "2022-04-12T09:05:41.807Z",
       "approvalId": null,
       "customData": null,
       "createdBy": {
@@ -149,13 +154,13 @@ Content-Type: application/json
       "accessId": "member",
       "principalId": "3cce9d87-3986-4f19-8335-7ed075408ca2",
       "groupId": "2b5ed229-4072-478d-9504-a047ebd4b07d",
-      "targetScheduleId": "534b3d4d-3ba0-8429-3568-5e9cce6c2cbd"
+      "targetScheduleId": "2b5ed229-4072-478d-9504-a047ebd4b07d_member_fa0d6af6-1fb9-4605-9ef7-72d78d1821ef"
     }
   ]
 }
 ```
 
-### Example 2: Retrieve specific properties of all eligibility requests
+### Example 2: Retrieve specific properties of all eligibility requests scoped to a group and a principal
 
 #### Request
 The following is an example of a request.
@@ -166,7 +171,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleRequests?$select=principalId,action,groupId
+GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/eligibilityScheduleRequests?$filter=groupId eq '2b5ed229-4072-478d-9504-a047ebd4b07d' and principalId eq '3cce9d87-3986-4f19-8335-7ed075408ca2'&$select=principalId,action,groupId
 ```
 
 # [C#](#tab/csharp)
@@ -203,6 +208,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/e
 
 ---
 
+
 #### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
@@ -218,7 +224,7 @@ Content-Type: application/json
 
 {
 
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/eligibilityScheduleRequests/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/privilegedAccess/group/eligibilityScheduleRequests(principalId,action,groupId)",
     "value": [
     {
       "action": "adminAssign",

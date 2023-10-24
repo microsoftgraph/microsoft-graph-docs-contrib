@@ -1,13 +1,13 @@
 ---
-title: "List oauth2PermissionGrants"
-description: "Retrieve a list of oAuth2PermissionGrant objects, representing delegated permission grants."
+title: "List a user's oauth2PermissionGrants"
+description: "Retrieve a list of oAuth2PermissionGrant objects, representing delegated permission grants, granted on behalf of a user."
 ms.localizationpriority: high
 doc_type: apiPageType
 ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
-# List oauth2PermissionGrants
+# List a user's oauth2PermissionGrants
 
 Namespace: microsoft.graph
 
@@ -21,15 +21,17 @@ Retrieve a list of [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md
 > [!NOTE]
 > This request might have replication delays for delegated permission grants that were recently created, updated, or deleted.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | User.ReadBasic.All, Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All |
+|Delegated (work or school account) | DelegatedPermissionGrant.Read.All, User.ReadBasic.All, Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All |
+|Application | DelegatedPermissionGrant.Read.All, Directory.Read.All, DelegatedPermissionGrant.ReadWrite.All |
 
 ## HTTP request
 

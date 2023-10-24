@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get an [app](../resources/teamsappinstallation.md) installed in a [chat](../resources/chat.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

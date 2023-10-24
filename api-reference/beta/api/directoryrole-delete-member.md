@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 Remove a member from a directoryRole.
 
-You can use both the object ID and template ID of the **directoryRole** with this API. The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal. For details, see [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+You can use both the object ID and template ID of the **directoryRole** with this API. The template ID of a built-in role is immutable and can be seen in the role description on the Microsoft Entra admin center. For details, see [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -39,7 +41,7 @@ DELETE /directoryRoles/{role-id}/members/{id}/$ref
 DELETE /directoryRoles(roleTemplateId='{roleTemplateId}')/members/{id}/$ref
 ```
 > [!CAUTION]
-> If `/$ref` is not appended to the request and the calling app has permissions to manage the member object, the object will also be deleted from Azure Active Directory (Azure AD); otherwise, a `403 Forbidden` error is returned. You can restore specific objects through the [Restore deleted items API](directory-deleteditems-restore.md).
+> If `/$ref` is not appended to the request and the calling app has permissions to manage the member object, the object will also be deleted from Microsoft Entra ID; otherwise, a `403 Forbidden` error is returned. You can restore specific objects through the [Restore deleted items API](directory-deleteditems-restore.md).
 
 ## Request headers
 
@@ -157,5 +159,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

@@ -10,8 +10,10 @@ doc_type: apiPageType
 # Update microsoftAuthenticatorAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Update the properties of a [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) object, which represents the Microsoft Authenticator authentication method policy for the Azure AD tenant.
+Update the properties of a [microsoftAuthenticatorAuthenticationMethodConfiguration](../resources/microsoftauthenticatorauthenticationmethodconfiguration.md) object, which represents the Microsoft Authenticator authentication method policy for the Microsoft Entra tenant.
 
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -115,4 +117,3 @@ The following is an example of the response.
 ``` http
 HTTP/1.1 204 No Content
 ```
-

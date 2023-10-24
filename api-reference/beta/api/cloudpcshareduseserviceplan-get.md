@@ -1,5 +1,5 @@
 ---
-title: "Get cloudPcSharedUseServicePlan"
+title: "Get cloudPcSharedUseServicePlan (deprecated)"
 description: "Read the properties and relationships of a cloudPcSharedUseServicePlan object."
 author: "GuoanTang"
 ms.localizationpriority: medium
@@ -7,13 +7,18 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# Get cloudPcSharedUseServicePlan
+# Get cloudPcSharedUseServicePlan (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+> [!CAUTION]
+> The **cloudPcSharedUseServicePlan** resource is deprecated and stopped returning data on October 8, 2023. Going forward, use the [cloudPcFrontLineServicePlan](../resources/cloudpcfrontlineserviceplan.md).
+
 Read the properties and relationships of a [cloudPcSharedUseServicePlan](../resources/cloudpcshareduseserviceplan.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -37,7 +42,7 @@ GET /deviceManagement/virtualEndpoint/sharedUseServicePlans/{cloudPcSharedUseSer
 
 ## Optional query parameters
 
-This method supports the `$select` OData query parameter to help customize the response.. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -47,7 +52,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -57,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [cloudPcShared
 
 ### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -105,7 +110,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/sharedUseS
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

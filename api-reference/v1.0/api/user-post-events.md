@@ -1,5 +1,5 @@
 ---
-title: "Create Event"
+title: "Create event"
 description: "Create an event in the user's default calendar or specified calendar."
 ms.localizationpriority: high
 doc_type: apiPageType
@@ -7,7 +7,7 @@ author: "iamgirishck"
 ms.prod: "outlook"
 ---
 
-# Create Event
+# Create event
 
 Namespace: microsoft.graph
 
@@ -43,6 +43,8 @@ Additionally, if the meeting location has been set up as a resource, or if the e
 5. Set the attendee **emailAddress** as the resource email address.
 
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

@@ -14,6 +14,8 @@ Namespace: microsoft.graph.managedTenants
 
 Changes the tenant level deployment status for the management action. This information is used to provide insights into what management actions are in a specific state. As example there might be a plan to apply the require multi-factor authentication for admins, so it would be ideal to change the status to planned to reflect the appropriate status.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -47,7 +49,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |:---|:---|:---|
 |tenantGroupId|String|The identifier for the tenant group.|
-|tenantId|String|The Azure Active Directory tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
+|tenantId|String|The Microsoft Entra tenant identifier for the [managed tenant](../resources/managedtenants-tenant.md).|
 |managementActionId|String|The identifier for the [management action](../resources/managedtenants-managementaction.md).|
 |managementTemplateId|String|The identifier for the [management template](../resources/managedtenants-managementtemplate.md).|
 |status|String|The new status for the [management action](../resources/managedtenants-managementaction.md) tenant deployment.|

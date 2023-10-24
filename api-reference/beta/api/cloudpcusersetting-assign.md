@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Assign a [cloudPcUserSetting](../resources/cloudpcusersetting.md) to user groups.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +51,7 @@ In the request body, supply a JSON representation of the [cloudPcUserSettingAssi
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|assignments|[cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) collection | The collection of Cloud PC user setting resources each to be assigned to the corresponding target group. Only Microsoft 365 groups and security groups in Azure AD are currently supported. |
+|assignments|[cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) collection | The collection of Cloud PC user setting resources each to be assigned to the corresponding target group. Only Microsoft 365 groups and security groups in Microsoft Entra ID are currently supported. |
 
 ## Response
 

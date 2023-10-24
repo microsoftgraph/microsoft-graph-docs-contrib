@@ -1,6 +1,6 @@
 ---
 title: "getAuditActivityTypes function"
-description: ""
+description: "Intune Auditing Auditevent Getauditactivitytypes Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

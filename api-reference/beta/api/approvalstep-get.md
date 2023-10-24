@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties of an [approvalStep](../resources/approvalstep.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,7 +29,9 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
-### For PIM for Azure AD roles
+<a name='for-pim-for-azure-ad-roles'></a>
+
+### For PIM for Microsoft Entra roles
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -52,7 +56,7 @@ To get an approval step in entitlement management:
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/steps/{id}
 ```
 
-To get an approval step in PIM for Azure AD roles:
+To get an approval step in PIM for Microsoft Entra roles:
 
 <!-- { "blockType": "ignored" } -->
 ```http

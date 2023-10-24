@@ -1,6 +1,6 @@
 ---
 title: "reportRemoteHelpSessionStartTime action"
-description: ""
+description: "Intune Remoteassistance Devicemanagement Reportremotehelpsessionstarttime Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
