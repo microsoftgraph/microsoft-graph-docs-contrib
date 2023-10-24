@@ -41,7 +41,7 @@ Apps can also do the following using API that is generally available:
 In this section:
 
 - [Calendar owner: Get sharing or delegation information and permissions](#calendar-owner-get-sharing-or-delegation-information-and-permissions)
-- [Calendar owner: Update permissions for an existing share recipient or delegate on a calendar](#calendar-owner-update-permissions-for-an-existing-sharee-or-delegate-on-a-calendar)
+- [Calendar owner: Update permissions for an existing share recipient or delegate on a calendar](#calendar-owner-update-permissions-for-an-existing-share-recipient-or-delegate-on-a-calendar)
 
 Each calendar is associated with a collection of [calendarPermission](/graph/api/resources/calendarpermission) objects, each of which describes a share recipient or delegate and the associated permission that the calendar owner has set up. The [calendarRoleType](/graph/api/resources/calendarpermission#calendarroletype-values) enumeration defines the range of permissions that Microsoft Graph supports:
 
@@ -279,7 +279,7 @@ Content-type: application/json
 In this section:
 
 - [Calendar owner: Get properties of a shared or delegated calendar](#calendar-owner-get-properties-of-a-shared-or-delegated-calendar)
-- [share recipient or delegate: Get properties of shared or delegated calendar](#sharee-or-delegate-get-properties-of-shared-or-delegated-calendar)
+- [share recipient or delegate: Get properties of shared or delegated calendar](#share-recipient-or-delegate-get-properties-of-shared-or-delegated-calendar)
 
 Recalling in this example, Alex has delegated his primary calendar and given the delegate, Megan Bowen, the permission to view calendar items that are marked private.
 This section shows the properties of the delegated calendar, first from the perspective of and with the consent of the owner, Alex, and then from the perspective of and with the consent of the delegate, Megan. Consent from the administrator also works for each case.
