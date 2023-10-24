@@ -1,6 +1,6 @@
 ---
 title: "deviceLocalCredential resource type"
-description: "Represents the local administrator account credential of a device object in Azure Active Directory that is enabled with Local Admin Password Solution (LAPS). Includes the actual password for the local administrator account returned as Base64 encoded value."
+description: "Represents the local administrator account credential of a device object in Azure Active Directory that is enabled with Local Admin Password Solution (LAPS)."
 author: "sandeo-MSFT"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -26,7 +26,7 @@ Represents the local administrator account credential of a device object in Azur
 None.
 
 ## JSON representation
-Here's a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.deviceLocalCredential",
