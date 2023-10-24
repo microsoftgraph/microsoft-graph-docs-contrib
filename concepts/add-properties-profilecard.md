@@ -230,7 +230,7 @@ To get a specific profile card property configuration in an organization, use th
 You can use the Microsoft Graph PowerShell module to make both additional Microsoft Entra ID profile card properties, and the 15 customizable Microsoft Entra ID profile card properties available in your organization.
 
 > [!NOTE]
-> The new command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+> The POST command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
 >
 > ```powershell
 >    Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
