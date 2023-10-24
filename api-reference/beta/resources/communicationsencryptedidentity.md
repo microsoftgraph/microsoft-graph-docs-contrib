@@ -19,10 +19,10 @@ Inherits from [identity](identity.md).
 
 ## Properties
 
-| Property                       | Type                        | Description                                                                                                                                       |
-| :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id | String | Inherited from **identity**. The user's encrypted identifier. |
+| Property                       | Type                        | Description   |
+| :----------------------------- | :---------------------------| :-------------|
 | displayName | String | Inherited from **identity**. The display name associated with the user. |
+| id | String | Inherited from **identity**. The user's encrypted identifier. |
 
 ## JSON representation
 
@@ -37,7 +37,7 @@ Here's a JSON representation of the resource.
 } -->
 ```json
 {
-  "id": "String",
-  "displayName": "String"
+  "displayName": "String",
+  "id": "String"
 }
 ```
