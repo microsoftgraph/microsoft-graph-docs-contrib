@@ -7688,7 +7688,7 @@ items:
                 href: resources/searchresponse.md
               - name: Query data
                 href: api/search-query.md
-    - name: Index
+    - name: External data connections
       items:
         - name: Overview
           href: resources/indexing-api-overview.md
