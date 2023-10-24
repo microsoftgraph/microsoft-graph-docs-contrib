@@ -20,6 +20,8 @@ registrationEnforcement := graphmodels.NewRegistrationEnforcement()
 authenticationMethodsRegistrationCampaign := graphmodels.NewAuthenticationMethodsRegistrationCampaign()
 snoozeDurationInDays := int32(1)
 authenticationMethodsRegistrationCampaign.SetSnoozeDurationInDays(&snoozeDurationInDays) 
+enforceRegistrationAfterAllowedSnoozes := true
+authenticationMethodsRegistrationCampaign.SetEnforceRegistrationAfterAllowedSnoozes(&enforceRegistrationAfterAllowedSnoozes) 
 state := graphmodels.ENABLED_ADVANCEDCONFIGSTATE 
 authenticationMethodsRegistrationCampaign.SetState(&state) 
 excludeTargets := []graphmodels.ExcludeTargetable {
@@ -40,11 +42,6 @@ includeTargets := []graphmodels.AuthenticationMethodsRegistrationCampaignInclude
 	authenticationMethodsRegistrationCampaignIncludeTarget,
 }
 authenticationMethodsRegistrationCampaign.SetIncludeTargets(includeTargets)
-additionalData := map[string]interface{}{
-	enforceRegistrationAfterAllowedSnoozes := true
-authenticationMethodsRegistrationCampaign.SetEnforceRegistrationAfterAllowedSnoozes(&enforceRegistrationAfterAllowedSnoozes) 
-}
-authenticationMethodsRegistrationCampaign.SetAdditionalData(additionalData)
 registrationEnforcement.SetAuthenticationMethodsRegistrationCampaign(authenticationMethodsRegistrationCampaign)
 requestBody.SetRegistrationEnforcement(registrationEnforcement)
 reportSuspiciousActivitySettings := graphmodels.NewReportSuspiciousActivitySettings()
