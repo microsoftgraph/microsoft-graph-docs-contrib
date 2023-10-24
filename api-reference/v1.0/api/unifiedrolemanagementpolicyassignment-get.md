@@ -1,6 +1,6 @@
 ---
 title: "Get unifiedRoleManagementPolicyAssignment"
-description: "Get the details of a role management policy assignment including the policy and rules associated with the Azure AD role."
+description: "Get the details of a role management policy assignment including the policy and rules associated with the Microsoft Entra role."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -10,14 +10,16 @@ doc_type: apiPageType
 # Get unifiedRoleManagementPolicyAssignment
 Namespace: microsoft.graph
 
-Get the details of a policy assignment in PIM that's assigned to Azure AD roles or group membership or ownership.
+Get the details of a policy assignment in PIM that's assigned to Microsoft Entra roles or group membership or ownership.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For PIM for Azure AD roles
+<a name='for-pim-for-azure-ad-roles'></a>
+
+### For PIM for Microsoft Entra roles
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -35,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To retrieve the details of a policy assignment made in PIM for Azure AD roles or PIM for groups membership and ownership:
+To retrieve the details of a policy assignment made in PIM for Microsoft Entra roles or PIM for groups membership and ownership:
 <!-- {
   "blockType": "ignored"
 }
@@ -61,7 +63,9 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 
 ## Examples
 
-### Example 1: RRetrieve the details of a policy assignment for PIM for Azure AD roles
+<a name='example-1-rretrieve-the-details-of-a-policy-assignment-for-pim-for-azure-ad-roles'></a>
+
+### Example 1: RRetrieve the details of a policy assignment for PIM for Microsoft Entra roles
 
 #### Request
 
@@ -133,7 +137,9 @@ Content-Type: application/json
 ```
 
 
-### Example 2: Retrieve the details of a policy assignment for PIM for Azure AD roles and expand the policy and its associated rules
+<a name='example-2-retrieve-the-details-of-a-policy-assignment-for-pim-for-azure-ad-roles-and-expand-the-policy-and-its-associated-rules'></a>
+
+### Example 2: Retrieve the details of a policy assignment for PIM for Microsoft Entra roles and expand the policy and its associated rules
 
 #### Request
 
@@ -523,6 +529,7 @@ Content-Type: application/json
 
 The following is an example of the request.
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedrolemanagementpolicyassignment_azureADGroup"
@@ -531,6 +538,40 @@ The following is an example of the request.
 ``` http
 GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments/Group_60bba733-f09d-49b7-8445-32369aa066b3_f21b26d9-9ff9-4af1-b1d4-bddf28591369_member
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedrolemanagementpolicyassignment-azureadgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedrolemanagementpolicyassignment-azureadgroup-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/get-unifiedrolemanagementpolicyassignment-azureadgroup-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-unifiedrolemanagementpolicyassignment-azureadgroup-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedrolemanagementpolicyassignment-azureadgroup-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/get-unifiedrolemanagementpolicyassignment-azureadgroup-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-unifiedrolemanagementpolicyassignment-azureadgroup-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/get-unifiedrolemanagementpolicyassignment-azureadgroup-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
 
 #### Response
 

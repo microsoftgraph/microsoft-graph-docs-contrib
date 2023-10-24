@@ -17,8 +17,8 @@ The `@odata.type` value `#microsoft.graph.groupMembers` indicates that this type
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|description|String|The name of the group in Azure AD. Read only. |
-|groupId|String|The ID of the [group](group.md) in Azure AD.|
+|description|String|The name of the group in Microsoft Entra ID. Read only. |
+|groupId|String|The ID of the [group](group.md) in Microsoft Entra ID.|
 
 ## Relationships
 None.
@@ -37,6 +37,3 @@ The following is a JSON representation of the resource.
   "description": "String"
 }
 ```
-
-
-
