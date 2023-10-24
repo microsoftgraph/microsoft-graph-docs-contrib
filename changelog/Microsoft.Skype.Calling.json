@@ -4,6 +4,14 @@
       "ChangeList": [
         {
           "Id": "c1808556-a3ee-4258-a706-e1dc6ab234bf",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "endpointType",
+          "ChangeType": "Addition",
+          "Description": "Added the **endpointType** enumeration type.",
+          "Target": "endpointType"
+        },
+        {
+          "Id": "c1808556-a3ee-4258-a706-e1dc6ab234bf",
           "ApiChange": "Resource",
           "ChangedApiName": "azureCommunicationServicesUserIdentity",
           "ChangeType": "Addition",
