@@ -19,8 +19,8 @@ Inherits from [identity](identity.md).
 
 | Property                       | Type                        | Description           |
 | :----------------------------- | :---------------------------| :---------------------|
-| id | String | The unique identifier for the guest user. Inherited from **identity**. |
 | displayName | String | The display name associated with the guest user. Inherited from **identity**. |
+| id | String | The unique identifier for the guest user. Inherited from **identity**. |
 
 ## JSON representation
 
