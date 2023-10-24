@@ -230,7 +230,7 @@ To get a specific profile card property configuration in an organization, use th
 You can use the Microsoft Graph PowerShell module to make both additional Microsoft Entra ID profile card properties, and the 15 customizable Microsoft Entra ID profile card properties available in your organization.
 
 > [!NOTE]
-> The POST command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+> The New command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
 >
 > ```powershell
 >    Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
@@ -262,7 +262,7 @@ New-MgAdminPeopleProfileCardProperty -BodyParameter $params
 You can use the Microsoft Graph PowerShell module to update profile card properties available in your organization.
 
 > [!NOTE]
-> The update command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+> The Update command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
 >
 > ```powershell
 >    Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
@@ -293,7 +293,7 @@ Update-MgAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPrope
 You can use the Microsoft Graph PowerShell module to remove profile card properties from your organization.
 
 > [!NOTE]
-> The remove command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
+> The Remove command requires the `PeopleSettings.ReadWrite.All` permission. To create a Microsoft Graph session with a specific required scope, use the following command and consent to requested permissions.
 >
 > ```powershell
 >    Connect-MgGraph -Scopes "PeopleSettings.ReadWrite.All","PeopleSettings.Read.All"
