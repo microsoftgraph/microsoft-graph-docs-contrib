@@ -22,17 +22,17 @@ Insights for users who were active for a specific period. This is calculated as 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List daily activeUsersBreakdownMetrics](../api/dailyuserinsightmetricsroot-list-activeusersbreakdown.md)|[daily activeUsersBreakdownMetrics](../resources/activeusersbreakdownmetric.md) collection|Get a list of the daily [activeUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) objects and their properties.|
-|[List monthly activeUsersBreakdownMetrics](../api/monthlyuserinsightmetricsroot-list-activeusersbreakdown.md)|[monthly activeUsersBreakdownMetrics](../resources/activeusersbreakdownmetric.md) collection|Get a list of the monthly [activeUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) objects and their properties.|
+|[List daily activeUsersBreakdownMetrics](../api/dailyuserinsightmetricsroot-list-activeusersbreakdown.md)|[daily activeUsersBreakdownMetrics](../resources/activeusersbreakdownmetric.md) collection.|Get a list of the daily [activeUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) objects and their properties.|
+|[List monthly activeUsersBreakdownMetrics](../api/monthlyuserinsightmetricsroot-list-activeusersbreakdown.md)|[monthly activeUsersBreakdownMetrics](../resources/activeusersbreakdownmetric.md) collection.|Get a list of the monthly [activeUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| appId    | String | Application id the users authenticated to.|              
-| appName  | String | Application name the users authenticated to. |           
-| count    | Int64  | Number of users.|                                     
-| factDate | Date   | Day of the insight. |                                   
-| os       | String | The device plaform that the customers used. (Filterable)|
+|appId|String|Application id the users authenticated to.|              
+|appName| String|Application name the users authenticated to.|           
+|count| Int64|Number of users.|                                     
+|factDate|Date| Day of the insight.|                                   
+|os| String|The device plaform that the customers used. Supports `$filter` (`eq`).|
 
 ## Relationships
 None.

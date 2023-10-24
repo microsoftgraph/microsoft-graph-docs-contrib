@@ -21,15 +21,15 @@ Insights for all user requests to a tenant for a specific period. This involves 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List daily userRequestsMetric](../api/dailyuserinsightmetricsroot-list-requests.md)|Daily [userRequestsMetric](../resources/userrequestsmetric.md) collection|Get a list of the daily [userRequestsMetric](../resources/userrequestsmetric.md) objects and their properties.|
-|[List monthly userRequestsMetric](../api/monthlyuserinsightmetricsroot-list-requests.md)| Monthly [userRequestsMetric](../resources/userrequestsmetric.md) collection|Get a list of the monthly [userRequestsMetric](../resources/userrequestsmetric.md) objects and their properties.|
+|[List userRequestsMetric](../api/monthlyuserinsightmetricsroot-list-requests.md)| [userRequestsMetric](../resources/userrequestsmetric.md) collection|Get a list of the [userRequestsMetric](../resources/userrequestsmetric.md) objects and their properties.|
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|factDate|Date|The date of the user insight|
-|id|String|Identifier for the user insight|
+|factDate|Date|The date of the user insight.|
+|id|String|Identifier for the user insight.|
+|requestCount|Int64|Number of requests that came to the tenant. Supports `$filter` (`eq`).|
 
 ## Relationships
 None.

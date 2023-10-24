@@ -1,9 +1,9 @@
 ---
 title: "List dailyInactiveUsersByApplicationMetrics"
 description: "Get a list of the dailyInactiveUsersByApplicationMetric objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: srutto"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,25 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [dailyInactiveUsersByApplicationMetric](../resources/dailyinactiveusersbyapplicationmetric.md) objects and their properties.
+Get a list of the [dailyInactiveUsersByApplicationMetric](../resources/inactiveusersbyapplicationmetricbase.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Insights-UserMetrics.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Insights-UserMetrics.Read.All|
+In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference).
+- Reports Reader
+- Application Administrator
+- Cloud Application Administrator
+- Company Administrator
+- Global Readers
+- Security Administrator
+- Security Reader
+- Security Operator
 
 ## HTTP request
 
@@ -30,7 +39,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.dailyInactiveUsersByApplicationMetric not found
+GET /beta/reports/userInsights/daily/inactiveUsersByApplication
 ```
 
 ## Optional query parameters
@@ -46,7 +55,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [dailyInactiveUsersByApplicationMetric](../resources/dailyinactiveusersbyapplicationmetric.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [dailyInactiveUsersByApplicationMetric](../resources/inactiveusersbyapplicationmetricbase.md) objects in the response body.
 
 ## Examples
 
@@ -58,12 +67,12 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.dailyInactiveUsersByApplicationMetric not found
+GET https://graph.microsoft.com/beta/reports/userInsights/daily/inactiveUsersByApplication
 ```
 
 
 ### Response
-The following is an example of the response
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -76,15 +85,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.dailyInactiveUsersByApplicationMetric)",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.dailyInactiveUsersByApplicationMetric",
-      "id": "a42a6c11-24a9-6411-5804-e0967a0b93af",
-      "factDate": "Date",
-      "inactive30DayCount": "Integer",
-      "inactive60DayCount": "Integer",
-      "inactive90DayCount": "Integer",
-      "inactive1DayCount": "Integer"
+      "id": "601",
+      "factDate": "2023-10-01",
+      "appId": "18ed3507-a475-4ccb-b669-d66bc9f2a36e",
+      "inactive1DayCount": 6,
+      "inactive30DayCount": 10,
+      "inactive60DayCount": 30,
+      "inactive90DayCount": 90
+    },
+    {
+      "id": "600",
+      "factDate": "2023-10-01",
+      "appId": "04f0c124-f2bc-4f59-8241-bf6df9866bbd",
+      "inactive1DayCount": 3,
+      "inactive30DayCount": 23,
+      "inactive60DayCount": 43,
+      "inactive90DayCount": 60
     }
   ]
 }

@@ -1,18 +1,18 @@
 ---
-title: "List mfaCompletionMetrics"
-description: "Get a list of the mfaCompletionMetric objects and their properties."
+title: "List daily mfaCompletions"
+description: "Get a list of the daily mfaCompletionMetric objects and their properties."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
-# List dailyMfaCompletions
+# List daily mfaCompletions
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [mfaCompletionMetric](../resources/mfacompletionmetric.md) objects and their properties.
+Get a list of the daily [mfaCompletionMetric](../resources/mfacompletionmetric.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -20,7 +20,18 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Insights-UserMetrics.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Insights-UserMetrics.Read.All|
+
+In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference).
+- Reports Reader
+- Application Administrator
+- Cloud Application Administrator
+- Company Administrator
+- Global Readers
+- Security Administrator
+- Security Reader
+- Security Operator
 
 ## HTTP request
 
@@ -62,7 +73,7 @@ GET https://graph.microsoft.com/beta/reports/userInsights/daily/mfaCompletions
 
 
 ### Response
-Here's an example of the response
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -75,16 +86,25 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mfaCompletionMetric)",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.mfaCompletionMetric",
-      "id": "87675ec1-a1c5-712f-7b62-af3e5bcd0b51",
-      "factDate": "Date",
-      "attemptsCount": "Integer",
-      "successCount": "Integer",
-      "mfaMethod": "String",
-      "os": "String",
-      "appId": "String"
+      "id": "2",
+      "factDate": "2023-09-28",
+      "mfaMethod": "PhoneAppOTP",
+      "successCount": 0,
+      "attemptsCount": 1,
+      "os": "Windows",
+      "appId": "c44d4083-3bb0-49d1-b47d-974f53cbbf3e"
+    },
+    {
+      "id": "1",
+      "factDate": "2023-09-28",
+      "mfaMethod": "PhoneAppNotification",
+      "successCount": 4,
+      "attemptsCount": 5,
+      "os": "Windows",
+      "appId": "c44d4083-3bb0-49d1-b47d-974f53cbbf3e"
     }
   ]
 }

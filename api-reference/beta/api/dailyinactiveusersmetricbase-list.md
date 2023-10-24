@@ -1,18 +1,18 @@
 ---
-title: "List monthly mfaCompletions"
-description: "Get the monthly mfaCompletionMetric resources from the mfaCompletions navigation property."
-author: "kingjuli"
+title: "List dailyInactiveUsersMetric"
+description: "Get a list of the daily inactiveUsersMetric objects and their properties."
+author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
-# List monthly mfaCompletions
+# List dailyInactiveUsersMetric
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the monthly [mfaCompletionMetric](../resources/mfacompletionmetric.md) objects and their properties.
+Get a list of the daily [inactiveUsersMetric](../resources/inactiveusersmetricbase.md) objects together with their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,7 +22,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|Insights-UserMetrics.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Insights-UserMetrics.Read.All|
-
 In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference).
 - Reports Reader
 - Application Administrator
@@ -40,7 +39,7 @@ In addition to the delegated permissions, the signed-in user needs to belong to 
 }
 -->
 ``` http
-GET /reports/userInsights/monthly/mfaCompletions
+GET beta/reports/userinsights/daily/inactiveUsers
 ```
 
 ## Optional query parameters
@@ -56,29 +55,29 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [mfaCompletionMetric](../resources/mfacompletionmetric.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [inactiveUsersMetricBase](../resources/inactiveusersmetricbase.md) objects in the response body.
 
 ## Examples
 
 ### Request
-Here's an example of a request.
+The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "list_monthlymfacompletionmetric"
+  "name": "list_inactiveusersmetricbase"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/reports/userInsights/monthly/mfaCompletions
+GET https://graph.microsoft.com/beta/reports/userinsights/daily/inactiveUsers
 ```
 
 
 ### Response
-Here's an example of the response.
+The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.mfaCompletionMetric)"
+  "@odata.type": "Collection(microsoft.graph.inactiveUsersMetricBase)"
 }
 -->
 ``` http
@@ -86,34 +85,23 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.mfaCompletionMetric)",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.dailyInactiveUsersMetric)",
   "value": [
     {
-      "id": "8",
-      "factDate": "2023-07-01",
-      "mfaMethod": "PhoneAppNotification",
-      "successCount": 6,
-      "attemptsCount": 6,
-      "os": "Windows",
-      "appId": "c44d4083-3bb0-49d1-b47d-974f53cbbf3e"
+      "id": "20",
+      "factDate": "2023-10-01",
+      "inactive1DayCount": 68,
+      "inactive30DayCount": 80,
+      "inactive60DayCount": 120,
+      "inactive90DayCount": 300
     },
     {
-      "id": "7",
-      "factDate": "2023-07-01",
-      "mfaMethod": "PhoneAppNotification",
-      "successCount": 3,
-      "attemptsCount": 4,
-      "os": "OSX",
-      "appId": "c44d4083-3bb0-49d1-b47d-974f53cbbf3e"
-    },
-    {
-      "id": "6",
-      "factDate": "2023-08-01",
-      "mfaMethod": "PhoneAppOTP",
-      "successCount": 1,
-      "attemptsCount": 1,
-      "os": "Windows",
-      "appId": "c44d4083-3bb0-49d1-b47d-974f53cbbf3e"
+      "id": "19",
+      "factDate": "2023-10-02",
+      "inactive1DayCount": 70,
+      "inactive30DayCount": 90,
+      "inactive60DayCount": 150,
+      "inactive90DayCount": 230
     }
   ]
 }

@@ -29,11 +29,11 @@ Insights for authentications for a specific period.
 |:---|:---|:---|
 | id | String | Identifier for the user insight.  |
 | factDate | Date | The date of the user insight. |
-| attemptsCount | Int64 | Number of authentication requests made. (Filterable) |
-| successCount | Int64 | Number of successful authentication requests. (Filterable) |
-| os | String | The device plaform that the customers used. (Filterable) |
-| country | String | The source country of the customers who authenticated. (Filterable) |
-| appId | String | The app id. (Filterable) |
+| attemptsCount | Int64 | Number of authentication requests made. Supports `$filter` (`eq`). |
+| successCount | Int64 | Number of successful authentication requests. Supports `$filter` (`eq`). |
+| os | String | The device plaform that the customers used. Supports `$filter` (`eq`). |
+| country | String | The source country of the customers who authenticated. Supports `$filter` (`eq`). |
+| appId | String | The app id. Supports `$filter` (`eq`). |
 
 ## Relationships
 None.

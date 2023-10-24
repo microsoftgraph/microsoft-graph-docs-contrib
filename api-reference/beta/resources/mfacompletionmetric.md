@@ -21,20 +21,20 @@ Insights for MFA calls for a specific period.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List daily mfaCompletionMetrics](../api/dailyuserinsightmetricsroot-list-mfacompletions.md)|Daily [mfaCompletionMetric](../resources/mfacompletionmetric.md) collection|Get a list of the daily [mfaCompletionMetric](../resources/mfacompletionmetric.md) objects and their properties.|
-|[List monthly mfaCompletionMetrics](../api/monthlyuserinsightmetricsroot-list-mfacompletions.md)|Monthly [mfaCompletionMetric](../resources/mfacompletionmetric.md) collection|Get a list of the monthly [mfaCompletionMetric](../resources/mfacompletionmetric.md) objects and their properties.|
+|[List daily mfaCompletionMetrics](../api/dailyuserinsightmetricsroot-list-mfacompletions.md)|Daily [mfaCompletionMetric](../resources/mfacompletionmetric.md) collection.|Get a list of the daily [mfaCompletionMetric](../resources/mfacompletionmetric.md) objects and their properties.|
+|[List monthly mfaCompletionMetrics](../api/monthlyuserinsightmetricsroot-list-mfacompletions.md)|Monthly [mfaCompletionMetric](../resources/mfacompletionmetric.md) collection.|Get a list of the monthly [mfaCompletionMetric](../resources/mfacompletionmetric.md) objects and their properties.|
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|appId|String|The application id (Filterable).|
-|attemptsCount|Int64|Number of users who attempted to sign up (Filterable).|
+|appId|String|The application id. Supports `$filter` (`eq`).|
+|attemptsCount|Int64|Number of users who attempted to sign up. Supports `$filter` (`eq`).|
 |factDate|Date|The date of the user insight.|
 |id|String|Identifier for the user insight.|
-|mfaMethod|String|The mfa authentication method customers used. (Filterable)|
-|os|String|The device plaform that the customers used. (Filterable)|
-|successCount|Int64|Number of users who sucessfully signed up. (Filterable)|
+|mfaMethod|String|The mfa authentication method customers used. Supports `$filter` (`eq`).|
+|os|String|The device plaform that the customers used. Supports `$filter` (`eq`).|
+|successCount|Int64|Number of users who sucessfully signed up. Supports `$filter` (`eq`).|
 
 ## Relationships
 None.

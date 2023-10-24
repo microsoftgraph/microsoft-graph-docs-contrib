@@ -22,8 +22,8 @@ Summary of all usage insights for a specific time period.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List insightSummaries](../api/dailyuserinsightmetricsroot-list-summary.md)|[insightSummary](../resources/insightsummary.md) collection|Get a list of the [insightSummary](../resources/insightsummary.md) objects and their properties.|
-|[Get insightSummary](../api/insightsummary-get.md)|[insightSummary](../resources/insightsummary.md)|Read the properties and relationships of an [insightSummary](../resources/insightsummary.md) object.|
+|[List dailyInsightSummaries](../api/dailyuserinsightmetricsroot-list-summary.md)|[insightSummary](../resources/insightsummary.md) collection.|Get a list of the daily [insightSummary](../resources/insightsummary.md) objects and their properties.|
+|[Get monthlyInsightSummary](../api/monthlyuserinsightmetricsroot-list-summary.md)|[insightSummary](../resources/insightsummary.md)|Get a list of the monthly [insightSummary](../resources/insightsummary.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
@@ -34,7 +34,7 @@ Summary of all usage insights for a specific time period.
 |authenticationRequests|Int64|Daily authentication requests.|
 |factDate|Date|Day/Month of the insight.|
 |id|String|Identifier for the insight.|
-|os|String|The device plaform that the customers used. (Filterable)|
+|os|String|The device plaform that the customers used. Supports `$filter` (`eq`).|
 |securityTextCompletions|Int64|Daily MFA SMS completions.|
 |securityTextRequests|Int64|Daily MFA SMS requests.|
 |securityVoiceCompletions|Int64|Daily MFA Voice completions.|

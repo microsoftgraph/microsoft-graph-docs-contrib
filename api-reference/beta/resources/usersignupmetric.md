@@ -28,10 +28,10 @@ Insights for user sign ups for a specific period.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|count|Int64|Number of users who signed up.|
+|count|Int64|Number of users who signed up.Supports `$filter` (`eq`).|
 |factDate|Date|The date of the user insight.|
 |id|String|Identifier for the user insight.|
-|os|String|The device plaform that the customers used.|
+|os|String|The device plaform that the customers used. Supports `$filter` (`eq`).|
 
 ## Relationships
 None.

@@ -18,7 +18,7 @@ Insights of the total users in the tenant over time.
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List userCountMetrics](../api/dailyuserinsightmetricsroot-list-usercount.md)| [userCountMetric](../resources/usercountmetric.md) collection|Get a list of the daily [userCountMetric](../resources/usercountmetric.md) objects and their properties.|
+|[List userCountMetrics](../api/dailyuserinsightmetricsroot-list-usercount.md)| [userCountMetric](../resources/usercountmetric.md) collection.|Get a list of the daily [userCountMetric](../resources/usercountmetric.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|

@@ -1,5 +1,5 @@
 ---
-title: "List daily userRequestsMetrics"
+title: "List daily userRequests"
 description: "Get a list of the daily userRequestsMetric objects and their properties."
 author: "srutto"
 ms.localizationpriority: medium
@@ -7,12 +7,12 @@ ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
-# List daily userRequestsMetrics
+# List daily userRequests
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [userRequestsMetric](../resources/userrequestsmetric.md) objects and their properties.
+Get a list of the daily [userRequestsMetric](../resources/userrequestsmetric.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -20,7 +20,18 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Insights-UserMetrics.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Insights-UserMetrics.Read.All|
+
+In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference).
+- Reports Reader
+- Application Administrator
+- Cloud Application Administrator
+- Company Administrator
+- Global Readers
+- Security Administrator
+- Security Reader
+- Security Operator
 
 ## HTTP request
 
@@ -62,7 +73,7 @@ GET https://graph.microsoft.com/beta/reports/userInsights/daily/requests
 
 
 ### Response
-Here's an example of the response
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

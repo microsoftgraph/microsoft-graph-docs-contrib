@@ -1,6 +1,6 @@
 ---
-title: "List userCountMetrics"
-description: "Get a list of the userCountMetric objects and their properties."
+title: "List daily userCount"
+description: "Get a list of the daily userCountMetric objects and their properties."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [userCountMetric](../resources/usercountmetric.md) objects and their properties.
+Get a list of the daily [userCountMetric](../resources/usercountmetric.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/reports/userInsights/daily/userCount
 
 
 ### Response
-Here's an example of the response
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -75,14 +75,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.userCountMetric",
-      "id": "9bf0ee43-c44c-d3bb-2559-47d849b63d84",
-      "factDate": "Date",
-      "count": "Integer"
-    }
-  ]
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.userCountMetric)",
+    "value": [
+      {
+        "id": "2",
+        "count": 549,
+        "factDate": "2023-10-18"
+      },
+      {
+        "id": "1",
+        "count": 583,
+        "factDate": "2023-10-19"
+      }
+    ]
 }
 ```
 

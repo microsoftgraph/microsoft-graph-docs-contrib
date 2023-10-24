@@ -24,7 +24,7 @@ Represents a container for Azure Active Directory (Azure AD) reporting resources
 | [getAzureADApplicationSignInSummary](../api/reportroot-getazureadapplicationsigninsummary.md)         | [applicationSignInSummary](applicationsigninsummary.md)                                           | Read the properties and relationships of an **applicationSignInSummary** object.                                                                  |
 | [List credentialUserRegistrationDetails](../api/reportroot-list-credentialuserregistrationdetails.md) | [credentialUserRegistrationDetails](../resources/credentialuserregistrationdetails.md) collection | Get the details of credentialUserRegistrationDetails objects for a given tenant.                                                                  |
 | [List userCredentialUsageDetails](../api/reportroot-list-usercredentialusagedetails.md)               | [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) collection               | Get the userCredentialUsageDetails objects for a given tenant. Details include user information, status of the reset, and the reason for failure. |
-|[List userInsightsSummary](../api/reportroot-list-userinsights.md)|[userInsightsSummary](../resources/userinsightsroot.md) collection|Get the userInsightsSummary resources from the userInsights navigation property.|
+|[List userInsightsSummary](../api/reportroot-list-userinsights.md)|[userInsightsSummary](../resources/userinsightsroot.md) collection|Get the userInsights objects for user activities on applications in a given Microsoft Entra External ID for customers tenant."|
 
 <!--Temporarily hide these functions until we document them and others.
 |[getAzureADLicenseUsage](../api/reportroot-getazureadlicenseusage.md)|[azureADLicenseUsage](../resources/azureadlicenseusage.md) collection|**TODO: Add Description**|
@@ -50,9 +50,9 @@ None.
 | monthlyPrintUsageByUser | [printUsageByUser](../resources/printusagebyuser.md) collection | Retrieve a list of monthly print usage summaries, grouped by user. |
 | security                          | [securityReportsRoot](../resources/securityreportsroot.md)                                        | Provides the ability to launch a realistic simulated phishing attack that organizations can learn from.             |
 | servicePrincipalSignInActivities  | [servicePrincipalSignInActivity](../resources/serviceprincipalsigninactivity.md) collection       | Represents a collection of sign-in activities of service principals.                                                   |
-| userCredentialUsageDetails        | [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) collection               | Represents the self-service password reset (SSPR) usage for a given tenant.                                         |
 | sla                               | [serviceLevelAgreementRoot](../resources/servicelevelagreementroot.md)                            | A placeholder to allow for the desired URL path for SLA.                                                            |
-|userInsights|[userInsightsRoot](../resources/userinsightsroot.md)|Represents a collection of application user activities for a given tenant. |
+| userCredentialUsageDetails        | [userCredentialUsageDetails](../resources/usercredentialusagedetails.md) collection               | Represents the self-service password reset (SSPR) usage for a given tenant.                                         |
+|userInsights|[userInsightsRoot](../resources/userinsightsroot.md)|Represents a collection of user activities on applications in a given Microsoft Entra External ID for customers tenant.|
 
 ## JSON representation
 Here's a JSON representation of the resource.

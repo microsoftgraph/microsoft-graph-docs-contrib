@@ -1,18 +1,18 @@
 ---
-title: "List authenticationsMetrics"
-description: "Get a list of the authenticationsMetric objects and their properties."
+title: "List daily authentications"
+description: "Get a list of the daily authenticationsMetric objects and their properties."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
-# List authenticationsMetrics
+# List daily authentications
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the [authenticationsMetric](../resources/authenticationsmetric.md) objects and their properties.
+Get a list of the daily [authenticationsMetric](../resources/authenticationsmetric.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -20,7 +20,18 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Insights-UserMetrics.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Insights-UserMetrics.Read.All|
+
+In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference).
+- Reports Reader
+- Application Administrator
+- Cloud Application Administrator
+- Company Administrator
+- Global Readers
+- Security Administrator
+- Security Reader
+- Security Operator
 
 ## HTTP request
 
@@ -62,7 +73,7 @@ GET https://graph.microsoft.com/beta/reports/userInsights/daily/authentications
 
 
 ### Response
-Here's an example of the response
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -75,16 +86,34 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.authenticationsMetric)",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.authenticationsMetric",
-      "id": "42fb9ea3-0785-cd40-cdfd-f5ae80ee7ce8",
-      "factDate": "Date",
-      "attemptsCount": "Integer",
-      "successCount": "Integer",
-      "os": "String",
-      "country": "String",
-      "appid": "String"
+      "id": "3",
+      "factDate": "2023-09-20",
+      "os": "Windows",
+      "country": "IL",
+      "attemptsCount": 3,
+      "successCount": 3,
+      "appid": "df8bf8b5-d9d9-48e1-a8ed-c748df725064"
+    },
+    {
+      "id": "2",
+      "factDate": "2023-09-20",
+      "os": "MacOs",
+      "country": "UK",
+      "attemptsCount": 3,
+      "successCount": 0,
+      "appid": "10e90284-3dd4-4f82-a641-55ee4068b633"
+    },
+    {
+      "id": "1",
+      "factDate": "2023-09-20",
+      "os": "Windows",
+      "country": "US",
+      "attemptsCount": 18,
+      "successCount": 18,
+      "appid": "6fa90dbc-614e-4762-846f-bf95e1b27558"
     }
   ]
 }

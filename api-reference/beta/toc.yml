@@ -28784,24 +28784,26 @@ items:
               href: api/relyingpartydetailedsummary-list.md
         - name: Application user activity (preview)
           items:
-          - name: Total users
-            href: resources/usercountmetric.md
           - name: Active users
             href: resources/activeusersmetric.md
           - name: Active users breakdown
             href: resources/activeusersbreakdownmetric.md
-          - name: User signup
-            href: resources/usersignupmetric.md
-          - name: User requests
-            href: resources/userrequestsmetric.md
-          - name: User authentications
-            href: resources/authenticationsmetric.md
+          - name: Inactive users
+            href: resources/inactiveusersmetricbase.md
+          - name: Inactive users by Application
+            href: resources/inactiveusersbyapplicationmetricbase.md
           - name: MFA completions
             href: resources/mfacompletionmetric.md
-          - name: Daily active users
-            href: resources/dailyuserinsightmetricsroot.md
-          - name: Monthly active users
-            href: resources/monthlyuserinsightmetricsroot.md
+          - name: Total users
+            href: resources/usercountmetric.md
+          - name: User authentications
+            href: resources/authenticationsmetric.md
+          - name: User requests
+            href: resources/userrequestsmetric.md
+          - name: User signup
+            href: resources/usersignupmetric.md
+          - name: Insights summary
+            href: resources/insightsummary.md
         - name: Application credential activity
           href: resources/appcredentialsigninactivity.md
           items:

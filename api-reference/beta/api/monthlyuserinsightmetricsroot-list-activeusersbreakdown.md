@@ -1,6 +1,6 @@
 ---
-title: "List activeUsersBreakdown"
-description: "Get the activeUsersBreakdownMetric resources from the activeUsersBreakdown navigation property."
+title: "List monthly activeUsersBreakdown"
+description: "Get the monthly activeUsersBreakdownMetric resources from the activeUsersBreakdown navigation property."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the activeUsersBreakdownMetric resources from the activeUsersBreakdown navigation property.
+Get the monthly [activeUsersBreakdownMetric](../resources/activeusersbreakdownmetric.md) resources from the activeUsersBreakdown navigation property.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -20,7 +20,18 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Insights-UserMetrics.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Insights-UserMetrics.Read.All|
+
+In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference).
+- Reports Reader
+- Application Administrator
+- Cloud Application Administrator
+- Company Administrator
+- Global Readers
+- Security Administrator
+- Security Reader
+- Security Operator
 
 ## HTTP request
 
@@ -62,7 +73,7 @@ GET https://graph.microsoft.com/beta/reports/userInsights/monthly/activeUsersBre
 
 
 ### Response
-Here's an example of the response
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -75,16 +86,24 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.activeUsersBreakdownMetric)",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.activeUsersBreakdownMetric",
-      "id": "5e8880da-5611-89c3-ffde-36ba559e00b3",
-      "factDate": "Date",
-      "count": "Integer",
-      "appId": "String",
-      "appName": "String",
-      "os": "String"
-    }
+      "id": "2",
+      "appId": "Groceries API",
+      "appName": "b97b956d-e881-43b9-9384-5dd684cd7f57",
+      "count": 3,
+      "factDate": "2023-07-01",
+      "os": "Windows"
+    },
+    {
+      "id": "2",
+      "appId": "Groceries",
+      "appName": "10e90284-3cc4-4d82-d641-55ff4068c633",
+      "count": 9,
+      "factDate": "2023-07-01",
+      "os": "MacOs"
+    },
   ]
 }
 ```

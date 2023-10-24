@@ -1,6 +1,6 @@
 ---
-title: "List summary"
-description: "Get the insightSummary resources from the summary navigation property."
+title: "List monthly summary"
+description: "Get a list of the monthly insightSummary objects and their properties."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the insightSummary resources from the summary navigation property.
+Get a list of the monthly [insightSummary](../resources/insightsummary.md) objects and their properties.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -20,7 +20,19 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Insights-UserMetrics.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
 |Application|Insights-UserMetrics.Read.All|
+
+In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference).
+- Reports Reader
+- Application Administrator
+- Cloud Application Administrator
+- Company Administrator
+- Global Readers
+- Security Administrator
+- Security Reader
+- Security Operator
+
 
 ## HTTP request
 
@@ -62,7 +74,7 @@ GET https://graph.microsoft.com/beta//reports/userInsightsRoot/monthly/summary
 
 
 ### Response
-Here's an example of the response
+Here's an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -75,20 +87,12 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.userRequestsMetric)",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.insightSummary",
-      "id": "9db498ba-cc11-0738-014e-adba1118fdad",
-      "factDate": "Date",
-      "activeUsers": "Integer",
-      "authenticationRequests": "Integer",
-      "authenticationCompletions": "Integer",
-      "securityTextRequests": "Integer",
-      "securityTextCompletions": "Integer",
-      "securityVoiceRequests": "Integer",
-      "securityVoiceCompletions": "Integer",
-      "os": "String",
-      "appId": "String"
+      "id": "1",
+      "factDate": "2023-09-01",
+      "requestCount": 11429
     }
   ]
 }

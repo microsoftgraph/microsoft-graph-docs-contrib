@@ -1,9 +1,9 @@
 ---
 title: "inactiveUsersByApplicationMetricBase resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Breakdown by application insights for users who were inactive for a specific period."
+author: "srutto"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -13,27 +13,24 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+This insight metric provides users who were inactive for a specific period broken down by application.
 
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List inactiveUsersByApplicationMetricBases](../api/inactiveusersbyapplicationmetricbase-list.md)|[inactiveUsersByApplicationMetricBase](../resources/inactiveusersbyapplicationmetricbase.md) collection|Get a list of the [inactiveUsersByApplicationMetricBase](../resources/inactiveusersbyapplicationmetricbase.md) objects and their properties.|
-|[Get inactiveUsersByApplicationMetricBase](../api/inactiveusersbyapplicationmetricbase-get.md)|[inactiveUsersByApplicationMetricBase](../resources/inactiveusersbyapplicationmetricbase.md)|Read the properties and relationships of an [inactiveUsersByApplicationMetricBase](../resources/inactiveusersbyapplicationmetricbase.md) object.|
-|[Update inactiveUsersByApplicationMetricBase](../api/inactiveusersbyapplicationmetricbase-update.md)|[inactiveUsersByApplicationMetricBase](../resources/inactiveusersbyapplicationmetricbase.md)|Update the properties of an [inactiveUsersByApplicationMetricBase](../resources/inactiveusersbyapplicationmetricbase.md) object.|
-|[Delete inactiveUsersByApplicationMetricBase](../api/inactiveusersbyapplicationmetricbase-delete.md)|None|Delete an [inactiveUsersByApplicationMetricBase](../resources/inactiveusersbyapplicationmetricbase.md) object.|
+|[List dailyInactiveUsersByApplicationMetric](../api/dailyinactiveusersbyapplicationmetric-list.md)|[inactiveUsersByApplicationMetric](../resources/inactiveusersbyapplicationmetricbase.md) collection.|Get a list of the daily [inactiveUsersByApplicationMetric](../resources/inactiveusersbyapplicationmetricbase.md) objects and their properties.|
+|[List monthlyInactiveUsersByApplicationMetric](../api/monthlyinactiveusersbyapplicationmetric-list.md)| [inactiveUsersByApplicationMetric](../resources/inactiveusersbyapplicationmetricbase.md) collection.|Get a list of the monthly [inactiveUsersByApplicationMetric](../resources/inactiveusersbyapplicationmetricbase.md) objects and their properties.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|factDate|Date|**TODO: Add Description**|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|inactive30DayCount|Int64|**TODO: Add Description**|
-|inactive60DayCount|Int64|**TODO: Add Description**|
-|inactive90DayCount|Int64|**TODO: Add Description**|
+|factDate|Date|Day of the insight.|
+|id|String|Identifier for the user insight. Inherited from [entity](../resources/entity.md).|
+|inactive30DayCount|Int64|Number of users inactive for 30 consecutive days. Supports `$select`.|
+|inactive60DayCount|Int64|Number of users inactive for 60 consecutive days.Supports `$select`.|
+|inactive90DayCount|Int64|Number of users inactive for 90 consecutive days.Supports `$select`.|
 
 ## Relationships
 None.

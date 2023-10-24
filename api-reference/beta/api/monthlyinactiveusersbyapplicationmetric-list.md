@@ -1,9 +1,9 @@
 ---
 title: "List monthlyInactiveUsersByApplicationMetrics"
 description: "Get a list of the monthlyInactiveUsersByApplicationMetric objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "srutto
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,18 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Insights-UserMetrics.Read.All|
+|Delegated (personal Microsoft account)|Not supported.|
+|Application|Insights-UserMetrics.Read.All|
+In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](https://learn.microsoft.com/en-us/azure/active-directory/roles/permissions-reference).
+- Reports Reader
+- Application Administrator
+- Cloud Application Administrator
+- Company Administrator
+- Global Readers
+- Security Administrator
+- Security Reader
+- Security Operator
 
 ## HTTP request
 
@@ -30,7 +39,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.monthlyInactiveUsersByApplicationMetric not found
+GET GET /beta/reports/userInsights/monthly/inactiveUsersByApplication
 ```
 
 ## Optional query parameters
@@ -46,7 +55,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [monthlyInactiveUsersByApplicationMetric](../resources/monthlyinactiveusersbyapplicationmetric.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [monthlyInactiveUsersByApplicationMetric](../resources/inactiveusersbyapplicationmetricbase.md) objects in the response body.
 
 ## Examples
 
@@ -58,7 +67,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.monthlyInactiveUsersByApplicationMetric not found
+GET https://graph.microsoft.com/beta/reports/userInsights/monthly/inactiveUsersByApplication
 ```
 
 
@@ -76,15 +85,27 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.monthlyInactiveUsersByApplicationMetric)",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.monthlyInactiveUsersByApplicationMetric",
-      "id": "7cfef9d4-cdee-9e14-0e57-1ab5f6711dd2",
-      "factDate": "Date",
-      "inactive30DayCount": "Integer",
-      "inactive60DayCount": "Integer",
-      "inactive90DayCount": "Integer",
-      "inactiveCalendarMonthCount": "Integer"
+      "id": "601",
+      "factDate": "2023-10-01",
+      "appId": "18ed3507-a475-4ccb-b669-d66bc9f2a36e",
+      "inactiveCalendarMonthCount": 12,
+      "inactive1DayCount": 6,
+      "inactive30DayCount": 10,
+      "inactive60DayCount": 30,
+      "inactive90DayCount": 90
+    },
+    {
+      "id": "600",
+      "factDate": "2023-09-01",
+      "appId": "04f0c124-f2bc-4f59-8241-bf6df9866bbd",
+       "inactiveCalendarMonthCount": 25,
+      "inactive1DayCount": 3,
+      "inactive30DayCount": 23,
+      "inactive60DayCount": 43,
+      "inactive90DayCount": 60
     }
   ]
 }

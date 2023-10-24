@@ -22,16 +22,16 @@ Insights for users who were active for a specific period. This is calculated as 
 ## Methods
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List daily activeUsersMetrics](../api/dailyuserinsightmetricsroot-list-activeusers.md)|[daily activeUsersMetrics](../resources/activeusersmetric.md) collection|Get a list of the daily [activeUsersMetric](../resources/activeusersmetric.md) objects and their properties.|
-|[List monthly activeUsersMetrics](../api/monthlyuserinsightsmetricsroot-list-activeusers.md)|[monthly activeUsersMetric](../resources/activeusersmetric.md) collection|Get a list of the monthly [activeUsersMetric](../resources/activeusersmetric.md) objects and their properties.|
+|[List daily activeUsersMetrics](../api/dailyuserinsightmetricsroot-list-activeusers.md)|[daily activeUsersMetrics](../resources/activeusersmetric.md) collection.|Get a list of the daily [activeUsersMetric](../resources/activeusersmetric.md) objects and their properties.|
+|[List monthly activeUsersMetrics](../api/monthlyuserinsightsmetricsroot-list-activeusers.md)|[monthly activeUsersMetric](../resources/activeusersmetric.md) collection.|Get a list of the monthly [activeUsersMetric](../resources/activeusersmetric.md) objects and their properties.|
 
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-| id     | string    | Identifier for the user insight.|
-| factDate | Date  | Day of the insight.|
-| count   | Int64 | Number of users.|
+|id|String|Identifier for the user insight.|
+|factDate|Date|Day of the insight.|
+|count|Int64|Number of users.|
 
 ## Relationships
 None.
