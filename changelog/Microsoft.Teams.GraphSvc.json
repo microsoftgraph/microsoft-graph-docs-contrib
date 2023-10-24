@@ -1287,16 +1287,16 @@
           "ApiChange": "Property",
           "ChangedApiName": "summary",
           "ChangeType": "Addition",
-          "Description": "Added the `summary` property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
+          "Description": "Added the **summary** property to the [channel](https://learn.microsoft.com/en-us/graph/api/resources/channel?view=graph-rest-1.0) resource.",
           "Target": "channel"
         }
       ],
       "Id": "be053170-38ef-40c5-a2bd-4e1e2db5a1e7",
       "Cloud": "Prod",
       "Version": "v1.0",
-      "CreatedDateTime": "2023-10-19T08:25:53.4222059Z",
-      "WorkloadArea": "Teamwork",
-      "SubArea": "Microsoft.Teams.Shifts"
+      "CreatedDateTime": "2023-10-23T08:25:53.4222059Z",
+      "WorkloadArea": "Teamwork and communications",
+      "SubArea": "Calls and online meetings"
     },
     {
       "ChangeList": [
