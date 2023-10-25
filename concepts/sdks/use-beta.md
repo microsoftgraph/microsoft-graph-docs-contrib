@@ -40,7 +40,7 @@ client := graphbeta.NewGraphServiceClientWithCredentials(credentials, scopes)
 
 ## [Java](#tab/java)
 
-To call the API, you must install the [Microsoft Graph Beta Java SDK](https://github.com/microsoftgraph/msgraph-beta-sdk-java). Usage is the same as the non-beta SDK.
+To call the API, you must install the [Microsoft Graph Beta Java SDK](https://github.com/microsoftgraph/msgraph-beta-sdk-java). Usage is the same as the nonbeta SDK.
 
 ```Java
 GraphServiceClient graphClient = GraphServiceClient
