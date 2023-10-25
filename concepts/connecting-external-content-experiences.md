@@ -27,8 +27,7 @@ To configure your connector for Microsoft Search:
 
 ## Context IQ in Outlook on the web (preview)
 
-[Context IQ in Outlook on the web](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-editor-using-context-iq-in-outlook-on-the-web-and-word/ba-p/3643497) with Microsoft Graph connectors allows users to find in-content suggestions from third-party data while composing emails in Outlook on the web. Editors using Context IQ surface relevant people, files, and Microsoft Graph connector content that users can select and embed as an adaptive card within the email.
-Users can access this feature by inserting "/" in an Outlook on the web email and typing keywords. They are then given relevant suggestions, based on the context typed, that can be inserted into the body of the email.
+[Context IQ in Outlook on the web](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-editor-using-context-iq-in-outlook-on-the-web-and-word/ba-p/3643497) with Microsoft Graph connectors allows users to find in-content suggestions from third-party data while composing emails in Outlook on the web. Editors using Context IQ surface relevant people, files, and Microsoft Graph connector content that users can select and embed as an adaptive card within the email. Users can access this feature by inserting "/" in an Outlook on the web email and typing keywords. Outlook presents relevant suggestions, based on the context typed, that can be inserted into the body of the email.
 
 To configure your connector for Context IQ:
 
@@ -45,7 +44,7 @@ To make sure that Microsoft 365 Copilot uses your content effectively:
 - Apply [semantic labels](/graph/connecting-external-content-manage-schema). Semantic labels help Microsoft 365 Copilot interpret the semantic meaning of your schema. Apply as many of them to your schema as applicable. The `iconUrl`, `title`, and `url` labels must be applied for content to surface in Copilot.
 - Add a [urlToItemResolver](/graph/api/resources/externalconnectors-urltoitemresolverbase) in [activitySettings](/graph/api/resources/externalconnectors-activitysettings) when you [create your connection](/graph/connecting-external-content-manage-connections#create-a-connection). A `urlToItemResolver` enables the platform to detect when users share URLs from your external content with each other. Microsoft 365 Copilot has a higher likelihood of displaying content that has been shared with that user.
 - Add [user activities](/graph/api/externalconnectors-externalitem-addactivities) on your items. For a list of supported activity types, see [externalActivity](/graph/api/resources/externalconnectors-externalactivity). Items that have more activities are boosted in importance.
-- Provide meaningful descriptions in the `description` property when [creating connections](/graph/api/externalconnectors-external-post-connections). This will improve the likelihood of displaying content in Copilot.
+- Provide meaningful descriptions in the `description` property when [creating connections](/graph/api/externalconnectors-external-post-connections). Rich descriptions improve the likelihood of displaying content in Copilot.
 
 In addition, search administrators should ensure that your Graph Connector connections are enabled for [inline results](/microsoftsearch/connectors-in-all-vertical), using the following steps.
 
