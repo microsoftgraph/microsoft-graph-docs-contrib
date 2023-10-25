@@ -7,7 +7,7 @@ author: DarrelMiller
 
 # Customize the Microsoft Graph SDK service client
 
-The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints. This customizable default set allows you to change the client's behavior. For example, you can insert customized logging or a test handler to simulate specific scenarios. You can add and remove middleware components. It is important to note that the order in which middleware components run is significant.
+The Microsoft Graph SDK client configures a default set of middleware that allows the SDK to communicate with the Microsoft Graph endpoints. This customizable default set allows you to change the client's behavior. For example, you can insert customized logging or a test handler to simulate specific scenarios. You can add and remove middleware components. It's important to note that the order in which middleware components run is significant.
 
 <!-- markdownlint-disable MD051 -->
 ## [C#](#tab/csharp)
@@ -25,7 +25,7 @@ The Microsoft Graph SDK client configures a default set of middleware that allow
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CustomClients.java" id="ChaosHandlerSnippet":::
 
 ## [PHP](#tab/PHP)
-We currently use [Guzzle](http://guzzlephp.org/) as our HTTP client. You can pass your custom-configured Guzzle client using the following:
+We currently use [Guzzle](http://guzzlephp.org/) as our HTTP client. You can pass your custom-configured Guzzle client using:
 
 ```php
 <?php
