@@ -57,8 +57,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-08-23T13:04:20.9572176Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People admin settings"
     },
     {
       "ChangeList": [
@@ -171,8 +171,8 @@
       "Cloud": "Prod",
       "Version": "beta",
       "CreatedDateTime": "2023-07-26T13:25:08.1357387Z",
-      "WorkloadArea": "Identity and access",
-      "SubArea": "Directory management"
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "People admin settings"
     },
     {
       "ChangeList": [
