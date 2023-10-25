@@ -25,7 +25,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|entitlements|[entitlementsDataCollectionInfo](../resources/entitlementsdatacollectioninfo.md)|Represents the combination of an assigned permission that grants an identity access to an authorized system resource, the associated identity, and an optional source identity where the assigned permission was inherited. Read-only.|
+|entitlements|[entitlementsDataCollectionInfo](../resources/entitlementsdatacollectioninfo.md)|Represents the details and status of data collection about permissions assigned to an identity in the authorization system. Read-only.|
 
 ## Relationships
 None.
