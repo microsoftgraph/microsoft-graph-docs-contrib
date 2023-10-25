@@ -11,11 +11,11 @@ author: DarrelMiller
 
 The Microsoft Graph SDK service libraries provide a client class to use as the starting point for creating all API requests. There are two styles of client class: one uses a fluent interface to create the request (for example, `client.Users["user-id"].Manager`) and the other accepts a path string (for example, `api("/users/user-id/manager")`). When you have a request object, you can specify various options, such as filtering and sorting, and finally, you select the type of operation you want to perform.
 
-There is also the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started), which has no client class. Instead, all requests are represented as PowerShell commands. For example, to get a user's manager, the command is `Get-MgUserManager`. For more information on finding commands for API calls, see [Navigating the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/navigating).
+There's also the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/get-started), which has no client class. Instead, all requests are represented as PowerShell commands. For example, to get a user's manager, the command is `Get-MgUserManager`. For more information on finding commands for API calls, see [Navigating the Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/navigating).
 
 ## Read information from Microsoft Graph
 
-To read information from Microsoft Graph, you first need to create a request object, and then run the `GET` method on the request.
+To read information from Microsoft Graph, you first need to create a request object and then run the `GET` method on the request.
 
 # [C#](#tab/csharp)
 
@@ -118,11 +118,11 @@ Retrieving a list of entities is similar to retrieving a single entity, except o
 
 ---
 
-The object returned when retrieving a list of entities will likely be a paged collection. For details about how to get the complete list of entities, see [paging through a collection](../paging.md).
+The object returned when retrieving a list of entities is likely be a paged collection. For details about how to get the complete list of entities, see [paging through a collection](../paging.md).
 
 ## Access an item of a collection
 
-For SDKs that support a fluent style, collections of entities can be accessed using an array index. For template-based SDKs, it is sufficient to embed the item identifier in the path segment following the collection. For PowerShell, identifiers are passed as parameters.
+For SDKs that support a fluent style, collections of entities can be accessed using an array index. For template-based SDKs, it's sufficient to embed the item identifier in the path segment following the collection. For PowerShell, identifiers are passed as parameters.
 
 # [C#](#tab/csharp)
 
@@ -224,7 +224,7 @@ Delete requests are constructed in the same way as requests to retrieve an entit
 
 ## Make a POST request to create a new entity
 
-For SDKs that support a fluent style, new items can be added to collections with an `Add` method. For template-based SDKs, the request object exposes a `post` method. For PowerShell, a `New-*` command accepts parameters that map to the entity to add. The created entity is usually returned from the call.
+For SDKs that support a fluent style, new items can be added to collections with an `Add` method. For template-based SDKs, the request object exposes a `post` method. For PowerShell, a `New-*` command accepts parameters that map to the entity to add. The created entity is returned from the call.
 
 # [C#](#tab/csharp)
 
@@ -257,7 +257,7 @@ For SDKs that support a fluent style, new items can be added to collections with
 
 ## Updating an existing entity with PATCH
 
-Most updates in Microsoft Graph are performed using a `PATCH` method; therefore, it is only necessary to include the properties you want to change in the object you pass.
+Most updates in Microsoft Graph are performed using a `PATCH` method; therefore, it's only necessary to include the properties you want to change in the object you pass.
 
 # [C#](#tab/csharp)
 
