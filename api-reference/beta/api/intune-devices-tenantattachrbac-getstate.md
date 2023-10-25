@@ -1,6 +1,6 @@
 ---
 title: "getState function"
-description: ""
+description: "Intune Devices Tenantattachrbac Getstate Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

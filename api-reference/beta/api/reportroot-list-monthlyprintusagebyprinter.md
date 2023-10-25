@@ -41,12 +41,12 @@ GET /print/reports/monthlyPrintUsageByPrinter
 | Authorization | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [printUsageByPrinter](../resources/printUsageByPrinter.md) objects in the response body.
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/reports/monthlyPrintUsageByPrinter
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -111,9 +111,16 @@ Content-type: application/json
       "printerId": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
       "printerName": "printerName1",
       "usageDate": "2020-02-04T00:00:00.0000000Z",
-      "completedBlackAndWhiteJobCount": 42,
-      "completedColorJobCount": 0,
-      "incompleteJobCount": 6
+      "completedJobCount": 110,
+      "completedBlackAndWhiteJobCount": 1,
+      "completedColorJobCount": 109,
+      "incompleteJobCount": 13,
+      "pageCount": 138,
+      "blackAndWhitePageCount": 0,
+      "colorPageCount": 138,
+      "mediaSheetCount": 132,
+      "doubleSidedSheetCount": 12,
+      "singleSidedSheetCount": 120
     }
   ]
 }

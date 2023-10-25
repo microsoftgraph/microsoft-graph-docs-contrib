@@ -321,7 +321,7 @@ content-length: 152
 ```
 
 Similarly, you can follow a relationship to navigate to related resources.
-For example, the user-messages relationship enables traversal from an Azure Active Directory (Azure AD) User to a set of Outlook mail messages.
+For example, the user-messages relationship enables traversal from a Microsoft Entra user to a set of Outlook mail messages.
 The following example shows how to do this in a REST API call.
 
 # [HTTP](#tab/http)

@@ -1,6 +1,6 @@
 ---
 title: "Get multiTenantOrganization"
-description: "Get properties of the multi-tenant organization."
+description: "Get properties of the multitenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get properties of the multi-tenant organization.
+Get properties of the multitenant organization.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -46,7 +46,7 @@ This method supports the `$select` OData query parameter to help customize the r
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a [multiTenantOr
 
 ## Examples
 
-The following example gets properties of the multi-tenant organization.
+The following example gets properties of the multitenant organization.
 
 ### Request
 
@@ -124,7 +124,7 @@ Content-Type: application/json
 }
 ```
 
-The following response shows when the requesting tenant is not part of any multi-tenant organization.
+The following response shows when the requesting tenant is not part of any multitenant organization.
 
 ``` http
 HTTP/1.1 200 OK

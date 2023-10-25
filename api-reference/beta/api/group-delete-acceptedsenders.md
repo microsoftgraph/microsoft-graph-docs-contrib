@@ -41,11 +41,11 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id={id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -76,7 +76,7 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=htt
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -115,7 +115,7 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/acceptedSenders/$ref?$id=htt
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

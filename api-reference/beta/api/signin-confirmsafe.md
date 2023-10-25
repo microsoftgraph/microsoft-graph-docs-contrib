@@ -1,6 +1,6 @@
 ---
 title: "signIn: confirmSafe"
-description: "Allow admins to mark Azure AD sign in events as safe for Azure AD Identity Protection."
+description: "Allow admins to mark Microsoft Entra sign-in events as safe for Microsoft Entra ID Protection."
 author: "egreenberg14"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Allow admins to mark an event in Azure AD sign in logs as safe. Admins can either mark the events flagged as risky by Azure AD Identity Protection as safe, or they can mark unflagged events as safe. For details about investigating Identity Protection risks, see [How to investigate risk](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk).
+Allow admins to mark an event in Microsoft Entra sign-in logs as safe. Admins can either mark the events flagged as risky by Microsoft Entra ID Protection as safe, or they can mark unflagged events as safe. For details about investigating Identity Protection risks, see [How to investigate risk](/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -48,7 +48,7 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|requestIds|String collection|The IDs of the sign in events that should be marked safe for Azure AD Identity Protection.|
+|requestIds|String collection|The IDs of the sign in events that should be marked safe for Microsoft Entra ID Protection.|
 
 
 
@@ -122,4 +122,3 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 204 No Content
 ```
-

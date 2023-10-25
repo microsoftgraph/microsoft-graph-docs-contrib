@@ -59,7 +59,7 @@ If successful, this method returns a `201 Created` response code and a [bookingA
 
 ### Request
 
-The following is an example of the request. This appointment does not involve booking specific staff members.
+The following example shows a request. This appointment does not involve booking specific staff members.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -230,7 +230,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

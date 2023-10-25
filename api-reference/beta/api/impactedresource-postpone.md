@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Postpone action on an [impactedResource](../resources/impactedresource.md) object to a specified future date and time by marking its **status** as `postponed`. On the specified date and time, Azure AD will automatically mark the status of the **impactedResource** object to `active`.
+Postpone action on an [impactedResource](../resources/impactedresource.md) object to a specified future date and time by marking its **status** as `postponed`. On the specified date and time, Microsoft Entra ID will automatically mark the status of the **impactedResource** object to `active`.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -25,12 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|DirectoryRecommendations.ReadWrite.All|
 
-For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-- Global administrator
-- Security administrator
-- Security operator
-- Application administrator
-- Cloud application administrator
+[!INCLUDE [rbac-directory-recommendations-apis-write](../includes/rbac-for-apis/rbac-directory-recommendations-apis-write.md)]
 
 ## HTTP request
 
@@ -118,7 +113,7 @@ Content-Type: application/json
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -155,4 +150,3 @@ Content-Type: application/json
   ]
 }
 ```
-

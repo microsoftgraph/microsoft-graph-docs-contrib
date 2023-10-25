@@ -1,6 +1,6 @@
 ---
 title: "authenticationAppDeviceDetails resource type"
-description: "Provides details about the app and device used during the Azure AD authentication step."
+description: "Provides details about the app and device used during the Microsoft Entra authentication step."
 author: "egreenberg14"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides details about the app and device used during the Azure AD authentication step.
+Provides details about the app and device used during the Microsoft Entra authentication step.
 
 ## Properties
 |Property|Type|Description|
@@ -42,4 +42,3 @@ The following is a JSON representation of the resource.
   "appVersion": "String"
 }
 ```
-

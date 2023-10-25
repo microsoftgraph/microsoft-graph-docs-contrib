@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [applicationTemplate](../resources/applicationtemplate.md) objects from the Azure AD application gallery.
+Retrieve a list of [applicationTemplate](../resources/applicationtemplate.md) objects from the Microsoft Entra application gallery.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -152,6 +152,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-
-

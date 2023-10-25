@@ -58,13 +58,13 @@ A request using an empty JSON object, with no properties, will create a new [aut
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request. If an object with the ID `c1` doesn't exist, this request creates the new object; if the object exists, this request updates the specified properties.
+The following example shows a request. If an object with the ID `c1` doesn't exist, this request creates the new object; if the object exists, this request updates the specified properties.
 
 
 
@@ -122,7 +122,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

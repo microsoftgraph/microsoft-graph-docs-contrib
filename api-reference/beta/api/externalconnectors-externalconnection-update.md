@@ -60,7 +60,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -119,7 +119,7 @@ Content-type: application/json
 ### Response
 <!-- markdownlint-enable MD024 -->
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

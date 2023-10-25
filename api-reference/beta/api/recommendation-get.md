@@ -25,15 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|DirectoryRecommendations.Read.All, DirectoryRecommendations.ReadWrite.All|
 
-For delegated scenarios, the admin needs one of the following [Azure AD roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-- Global administrator
-- Global reader
-- Security administrator
-- Security operator
-- Security reader
-- Application administrator
-- Cloud application administrator
-- Reports reader
+[!INCLUDE [rbac-directory-recommendations-apis-read](../includes/rbac-for-apis/rbac-directory-recommendations-apis-read.md)]
 
 ## HTTP request
 
@@ -54,7 +46,7 @@ This method supports the `$select` OData query parameter to help customize the r
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -110,7 +102,7 @@ GET https://graph.microsoft.com/beta/directory/recommendations/0cb31920-84b9-471
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -142,6 +134,7 @@ Content-Type: application/json
   "category": "identityBestPractice",
   "status": "active",
   "priority": "medium",
+  "releaseType": "preview",
   "impactType": "users",
   "remediationImpact": "",
   "actionSteps": [

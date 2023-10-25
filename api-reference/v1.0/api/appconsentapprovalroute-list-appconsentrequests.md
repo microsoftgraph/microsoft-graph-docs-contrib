@@ -46,7 +46,7 @@ This method supports the `$select`, `$skip`, `$top`, `$filter` (`eq`), and `$o
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -196,7 +196,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/appConsent/appConsentReq
 
 #### Response
 
-The following is an example of the response. The response object includes all **appConsentRequest** objects that have at least one **userConsentRequest** that's `InProgress`, but doesn't expand the related **userConsentRequests** relationship.
+The following example shows the response. The response object includes all **appConsentRequest** objects that have at least one **userConsentRequest** that's `InProgress`, but doesn't expand the related **userConsentRequests** relationship.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

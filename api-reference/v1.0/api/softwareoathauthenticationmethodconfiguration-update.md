@@ -10,7 +10,7 @@ doc_type: apiPageType
 # Update softwareOathAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Update the properties of a [softwareOathAuthenticationMethodConfiguration](../resources/softwareoathauthenticationmethodconfiguration.md) object, which represents the third-party software OATH authentication method policy for the Azure AD tenant.
+Update the properties of a [softwareOathAuthenticationMethodConfiguration](../resources/softwareoathauthenticationmethodconfiguration.md) object, which represents the third-party software OATH authentication method policy for the Microsoft Entra tenant.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -50,7 +50,7 @@ For the list of properties, see [softwareOathAuthenticationMethodConfiguration](
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -107,7 +107,7 @@ Content-Type: application/json
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -116,4 +116,3 @@ The following is an example of the response
 ``` http
 HTTP/1.1 204 No Content
 ```
-

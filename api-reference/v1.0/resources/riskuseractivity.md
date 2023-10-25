@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the risk activities of an Azure AD user as determined by Azure AD Identity Protection.
+Represents the risk activities of a Microsoft Entra user as determined by Microsoft Entra ID Protection.
 
 ## Properties
 |Property|Type|Description|
@@ -38,5 +38,3 @@ Here's a JSON representation of the resource.
   "detail": "String"
 }
 ```
-
-

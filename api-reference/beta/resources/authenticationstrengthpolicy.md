@@ -1,6 +1,6 @@
 ---
 title: "authenticationStrengthPolicy resource type"
-description: "A collection of settings that define specific combinations of authentication methods and metadata. The authentication strength policy, when applied to a given scenario using Azure AD Conditional Access, defines which authentication methods must be used to authenticate in that scenario."
+description: "A collection of settings that define specific combinations of authentication methods and metadata. The authentication strength policy, when applied to a given scenario using Microsoft Entra Conditional Access, defines which authentication methods must be used to authenticate in that scenario."
 author: "InbarckMS"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A collection of settings that define specific combinations of authentication methods and metadata. The authentication strength policy, when applied to a given scenario using Azure AD Conditional Access, defines which authentication methods must be used to authenticate in that scenario. An authentication strength may be built-in or custom (defined by the tenant) and may or may not fulfill the requirements to grant an MFA claim.
+A collection of settings that define specific combinations of authentication methods and metadata. The authentication strength policy, when applied to a given scenario using Microsoft Entra Conditional Access, defines which authentication methods must be used to authenticate in that scenario. An authentication strength may be built-in or custom (defined by the tenant) and may or may not fulfill the requirements to grant an MFA claim.
 
 Inherits from [entity](../resources/entity.md).
 
@@ -40,7 +40,7 @@ Inherits from [entity](../resources/entity.md).
 |displayName|String|The human-readable display name of this policy. <br><br>Supports `$filter` (`eq`, `ne`, `not` , and `in`). |
 |id|String|The system-generated identifier for this mode. Inherited from [entity](../resources/entity.md).|
 |modifiedDateTime|DateTimeOffset|The datetime when this policy was last modified.|
-|policyType|authenticationStrengthPolicyType|A descriptor of whether this policy is built into Azure AD or created by an admin for the tenant. The possible values are: `builtIn`, `custom`, `unknownFutureValue`. <br><br>Supports `$filter` (`eq`, `ne`, `not` , and `in`). |
+|policyType|authenticationStrengthPolicyType|A descriptor of whether this policy is built into Microsoft Entra Conditional Access or created by an admin for the tenant. The possible values are: `builtIn`, `custom`, `unknownFutureValue`. <br><br>Supports `$filter` (`eq`, `ne`, `not` , and `in`). |
 |requirementsSatisfied|authenticationStrengthRequirements|A descriptor of whether this authentication strength grants the MFA claim upon successful satisfaction. The possible values are: `none`, `mfa`, `unknownFutureValue`.|
 
 ## Relationships
@@ -73,4 +73,3 @@ The following is a JSON representation of the resource.
   ]
 }
 ```
-

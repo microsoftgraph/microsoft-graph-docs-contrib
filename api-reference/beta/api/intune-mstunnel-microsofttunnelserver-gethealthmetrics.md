@@ -1,6 +1,6 @@
 ---
 title: "getHealthMetrics action"
-description: ""
+description: "Intune Mstunnel Microsofttunnelserver Gethealthmetrics Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

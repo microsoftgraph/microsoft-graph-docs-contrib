@@ -291,6 +291,7 @@ ms.date: 09/08/2023
 | Files.ReadWrite                                         | Delegated   | 5c28f0bf-8a70-41f1-8ab2-9032436ddb65 |
 | Files.ReadWrite.All                                     | Application | 75359482-378d-4052-8f01-80520e7db3cd |
 | Files.ReadWrite.All                                     | Delegated   | 863451e7-0667-486c-a5d6-d135439485f0 |
+| Files.ReadWrite.AppFolder                               | Application | 5cac37fc-899e-45c3-a9e1-c514c13e86b1 |
 | Files.ReadWrite.AppFolder                               | Delegated   | 8019c312-3263-48e6-825e-2b833497195b |
 | Files.ReadWrite.Selected                                | Delegated   | 17dde5bd-8c17-420f-a486-969730c1b827 |
 | Financials.ReadWrite.All                                | Delegated   | f534bf13-55d4-45a9-8f3c-c92fe64d6131 |

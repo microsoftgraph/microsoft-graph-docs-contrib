@@ -49,7 +49,7 @@ GET /education/classes/{educationClassId}/assignments/{educationAssignmentId}/ca
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -61,7 +61,7 @@ If successful, this function returns a `200 OK` response code and an [educationC
 
 #### Request
 
-The following is an example of the request. 
+The following example shows a request.
 
 Use the `$top` parameter to specify the number of categories to be returned. The parameter is optional but use it preferably when you have a long list of categories, otherwise you will get all the categories in the class.
 
@@ -112,7 +112,7 @@ GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** Take the `@odata.nextLink` from the response to make another call and get the next set of categories.
 
@@ -155,7 +155,7 @@ Content-length: 344
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 Use the `@odata.nextLink` value from the previous call for this request.
 
@@ -206,7 +206,7 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** You must continue using the `@odata.nextLink` value for the consequent calls until you get the `@odata.deltaLink` property in the response.
 
@@ -244,7 +244,7 @@ Content-length: 344
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 Use the `@odata.deltaLink` value from the previous call for this request.
 
@@ -295,7 +295,7 @@ GET /education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignmentcategories
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** You must continue using the `@odata.deltaLink` to get the newly created or modified categories since the initial Delta call.
 
