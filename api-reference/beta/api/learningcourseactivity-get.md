@@ -76,7 +76,7 @@ This method supports the `$select` and other OData query parameters to customize
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

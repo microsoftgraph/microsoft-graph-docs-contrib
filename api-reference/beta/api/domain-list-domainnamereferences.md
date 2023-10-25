@@ -55,7 +55,7 @@ This method supports the `$select` and `$filter` [OData Query Parameters](/graph
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

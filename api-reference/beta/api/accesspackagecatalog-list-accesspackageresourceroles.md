@@ -47,7 +47,7 @@ This method uses OData query parameters to construct the response. For general i
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -191,7 +191,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 #### Response
 
-The following is an example of the response.  The **displayName** is the same as shown in the SharePoint Online view of a site, and the **originId** is the underlying identifier established by SharePoint Online for the role.
+The following example shows the response.  The **displayName** is the same as shown in the SharePoint Online view of a site, and the **originId** is the underlying identifier established by SharePoint Online for the role.
 
 > **Note:** The response object shown here might be shortened for readability.
 

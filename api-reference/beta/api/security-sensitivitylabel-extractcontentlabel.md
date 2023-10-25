@@ -76,7 +76,7 @@ If successful, this action returns a `200 OK` response code and a [contentLabel]
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 
 # [HTTP](#tab/http)
@@ -162,7 +162,7 @@ User-agent: ContosoLOBApp/1.0
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

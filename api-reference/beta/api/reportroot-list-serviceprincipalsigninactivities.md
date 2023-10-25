@@ -49,7 +49,7 @@ This method supports the `$top`, `$filter`, and `$orderby` OData query parameter
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -180,7 +180,7 @@ The following example shows how to get a **servicePrincipalSignInActivity** obje
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -227,7 +227,7 @@ GET https://graph.microsoft.com/beta/reports/servicePrincipalSignInActivities?$f
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

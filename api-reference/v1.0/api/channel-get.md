@@ -55,7 +55,7 @@ Populating the **email** and **summary** property for a channel is an expensive 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

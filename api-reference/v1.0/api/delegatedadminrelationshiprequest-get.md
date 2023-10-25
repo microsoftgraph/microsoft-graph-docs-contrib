@@ -42,7 +42,7 @@ This method supports the `$select` OData query parameter to retrieve specific us
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
