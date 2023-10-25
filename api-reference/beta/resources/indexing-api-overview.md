@@ -42,27 +42,24 @@ Building a custom Microsoft Graph connector involves four steps:
 
 The following is a sequence diagram that illustrates the four steps to build a Microsoft Graph connector.
 
-![A diagram that shows the four steps to build a Microsoft Graph connector](concepts/images/connectors-images/graph-connectors-sequence-diagram.png)
+![A diagram that shows the four steps to build a Microsoft Graph connector](./concepts/images/connectors-images/graph-connectors-sequence-diagram.png)
 
 ## Known limitations
 
 The following are current known limitations:
 
 - Organizations are limited to a maximum of 10 connections. (If you need more connections, complete the [Request form](https://aka.ms/GraphConnectorsHigherCapacity).)
-- You can create up to 25 `externalItem` resources items per second.
+- You can create up to 25 **externalItem** resources items per second.
 - An application is limited to 25 concurrent operations on a connection.
 - Connections have a capacity limit of 5,000,000 items or ~350 GB of data.
-- Maximum size of an `externalItem` entity is 4 MB.
+- Maximum size of an **externalItem** entity is 4 MB.
 - Sorting results is not supported.
-
-## What's new
-Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
 
-- See the [Microsoft Search API overview](/graph/search-concept-overview).
+- See the [Microsoft Graph connectors overview](connecting-external-content-connectors-overview).
 - Drill down on the methods, properties, and relationships of the [externalConnection](externalconnectors-externalconnection.md), [schema](externalconnectors-schema.md), and [externalItem](externalconnectors-externalitem.md) resources.
-- Check out the [Microsoft Graph postman collection](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/folder/455214-66cbb476-ad94-448e-ba5a-ef58e1da7a90?ctx=documentation) ([learn more](https://developer.microsoft.com/graph/blogs/postman-collections))
-- Check out the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub.
+- Check out the [Microsoft Graph postman collection](https://www.postman.com/microsoftgraph/workspace/microsoft-graph/folder/455214-66cbb476-ad94-448e-ba5a-ef58e1da7a90?ctx=documentation).
+- Check out the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample).
 
 
