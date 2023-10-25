@@ -14,18 +14,16 @@ Namespace: microsoft.graph
 
 Represents the policy scope of the Azure Active Directory (Azure AD) tenant that controls the ability for users and groups to register device identities to your organization using **Azure AD registered**. For more information, see [What is a device identity?](/azure/active-directory/devices/overview).
 
-> [!CAUTION]
-> This resource type is deprecated. Use [azureADRegistrationSettings](../resources/azureadregistrationsettings.md) instead.
-> 
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|allowedGroups|String collection| The identifiers of the groups that are in the scope of the policy. Either this property or **allowedUsers** is required when the **appliesTo** property is set to `selected`. |
-|allowedUsers|String collection| The identifiers of users that are in the scope of the policy. Either this property or **allowedGroups** is required when the **appliesTo** property is set to `selected`. |
-|appliesTo|policyScope|Specifies whether to block or allow fine-grained control of the policy scope. The possible values are: `0` (meaning `none`), `1` (meaning `all`), `2` (meaning `selected`), `3` (meaning `unknownFutureValue`). <br/><br/>The default value is `1`. When set to `2`, at least one user or group identifier must be specified in either **allowedUsers** or **allowedGroups**.  Setting this property to `0` or `1` removes all identifiers in both **allowedUsers** and **allowedGroups**.|
-|isAdminConfigurable|Boolean|Specifies whether this policy scope is configurable by the admin. The default value is `false`. When an admin has enabled Intune (MEM) to manage devices, this property is set to `false` and **appliesTo** defaults to `1` (meaning `all`). |
+|allowedToRegister|[deviceRegistrationMembership](../resources/deviceregistrationmembership.md)|Determines if Microsoft Entra registered is allowed. The possible values are `noDeviceRegistrationMembership` meaning no users/groups are allowed to do Microsoft Entra registered, `allDeviceRegistrationMembership` meaning all users/groups are allowed to do Microsoft Entra registered and `enumeratedDeviceRegistrationMembership` meaning enumerated users/groups are allowed to do Microsoft Entra registered.  |
+|isAdminConfigurable|Boolean|Determines if Entra ID administrators can modify this policy.|
+|allowedGroups (deprecated)|String collection| The identifiers of the groups that are in the scope of the policy. Either this property or **allowedUsers** is required when the **appliesTo** property is set to `selected`. |
+|allowedUsers (deprecated)|String collection| The identifiers of users that are in the scope of the policy. Either this property or **allowedGroups** is required when the **appliesTo** property is set to `selected`. |
+|appliesTo (deprecated)|policyScope|Specifies whether to block or allow fine-grained control of the policy scope. The possible values are: `0` (meaning `none`), `1` (meaning `all`), `2` (meaning `selected`), `3` (meaning `unknownFutureValue`). <br/><br/>The default value is `1`. When set to `2`, at least one user or group identifier must be specified in either **allowedUsers** or **allowedGroups**.  Setting this property to `0` or `1` removes all identifiers in both **allowedUsers** and **allowedGroups**.|
 
 ## Relationships
 
@@ -42,13 +40,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.azureADRegistrationPolicy",
-  "appliesTo": "String",
   "isAdminConfigurable": "Boolean",
-  "allowedUsers": [
-    "String"
-  ],
-  "allowedGroups": [
-    "String"
-  ]
+  "allowedToRegister": {
+    "@odata.type": "microsoft.graph.deviceRegistrationMembership"
+  }
 }
 ```
