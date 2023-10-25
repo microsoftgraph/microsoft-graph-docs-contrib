@@ -46,7 +46,7 @@ DELETE /external/industryData/years/{yearTimePeriodDefinitionId}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -106,7 +106,7 @@ DELETE https://graph.microsoft.com/beta/external/industryData/years/0c629a1a-a85
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

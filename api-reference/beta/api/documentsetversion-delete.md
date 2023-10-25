@@ -41,7 +41,7 @@ DELETE /sites/{siteId}/lists/{listId}/items/{itemId}/documentSetVersions/{docume
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -101,7 +101,7 @@ DELETE https://graph.microsoft.com/beta/sites/root/lists/Documents/items/2/docum
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -12,7 +12,7 @@ $params = @{
 			localizations = @(
 				@{
 					languageTag = "no-NB"
-					displayName = "Kostnads Senter"
+					displayName = "Kostnadssenter"
 				}
 			)
 		}

@@ -47,7 +47,7 @@ POST /identity/b2xUserFlows/{id}/userAttributeAssignments
 
 In the request body, supply a JSON representation of the [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) object.
 
-The following table shows the properties that are required when you create the [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md).
+The following table lists the properties that are required when you create the [identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

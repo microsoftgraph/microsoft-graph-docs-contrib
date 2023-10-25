@@ -44,7 +44,7 @@ GET /identity/b2xUserFlows/{b2xIdentityUserFlowId}/userAttributeAssignments/getO
 
 ## Function parameters
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

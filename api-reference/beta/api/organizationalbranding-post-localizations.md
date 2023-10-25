@@ -45,7 +45,7 @@ POST /organization/{organizationId}/branding/localizations
 
 ## Request body
 
-The following table shows the properties that are required when you create the [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object.
+The following table lists the properties that are required when you create the [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
@@ -61,7 +61,7 @@ The following example creates a branding localization for French (`fr-FR`) local
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -116,7 +116,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

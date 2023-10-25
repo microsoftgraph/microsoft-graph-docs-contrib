@@ -43,7 +43,7 @@ No request body is required.
 
 ## Response
 
-If successful, the API call returns a `204 No Content`. It does not return anything in the response body.
+If successful, the API call returns a `204 No Content`. It doesn't return anything in the response body.
 
 ## Example
 ### Request
