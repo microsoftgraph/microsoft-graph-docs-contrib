@@ -42,8 +42,8 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 | --- | --- | --- |
 | CalendarView_v0 | Provides occurrences, exceptions and single instances of events, based on the calendar view from users' calendars. | [CalendarView_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-calendarview.md) |
 | ConferenceRoomCalendar_v0 | Provides CalendarView data of the Conference Rooms created for a tenant. | [ConferenceRoomCalendar_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-conferenceroomcalendar.md) |
-| Event_v0 | Provides all the events from users' calendar. | [Event_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-event.md) |
-| Event_v1 | Provides all the events from users' calendar. | [Event_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-event1.md) |
+| Event_v0 | Provides all the events from users' calendars. | [Event_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-event.md) |
+| Event_v1 | Provides all the events from users' calendars. | [Event_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-event1.md) |
 
 ### Group
 
