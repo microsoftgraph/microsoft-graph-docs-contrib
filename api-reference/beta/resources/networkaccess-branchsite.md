@@ -3,7 +3,7 @@ title: "branch resource type"
 description: "A branch connects the Customer Premises Equipment (CPE) to the Global Secure Access services edge network."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -47,6 +47,7 @@ Inherits from [microsoft.graph.entity](../resources/entity.md).
 |:---|:---|:---|
 |deviceLinks|[microsoft.graph.networkaccess.deviceLink](../resources/networkaccess-devicelink.md) collection|Each unique CPE device associated with a branch is specified. Supports `$expand`.|
 |forwardingProfiles|[microsoft.graph.networkaccess.forwardingProfile](../resources/networkaccess-forwardingprofile.md) collection|Each forwarding profile associated with a branch site is specified. Supports `$expand`.|
+|branchConnectivityConfiguration|[microsoft.graph.networkaccess.branchConnectivityConfiguration](../resources/networkaccess-branchconnectivityconfiguration.md) collection|Each branch can be associated with a multiple branchconnectivityconfiguration objects.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
