@@ -1,6 +1,6 @@
 ---
 title: "Create invitation"
-description: "Use this API to create a new invitation. Invitation adds an external user to the organization."
+description: "Create a new invitation. The invitation adds an external user to the organization."
 ms.localizationpriority: medium
 author: "ppolkadots"
 ms.prod: "identity-and-sign-in"
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new [invitation](../resources/invitation.md). Invitation adds an external user to the organization.
+Create a new [invitation](../resources/invitation.md). The invitation adds an external user to the organization.
 
-When creating a new invitation, you have several options available:
+The following options are available for creating an invitation:
 
-1. On invitation creation, Microsoft Graph can automatically send an invitation email directly to the invited user, or your app can use the *inviteRedeemUrl* returned in the creation response to craft your own invitation (through your communication mechanism of choice) to the invited user. If you decide to have Microsoft Graph send an invitation email automatically, you can control the content and language of the email using [*invitedUserMessageInfo*](../resources/invitedusermessageinfo.md).
-2. When the user is invited, a user entity (of userType Guest) is created and can now be used to control access to resources. The invited user has to go through the redemption process to access any resources they have been invited to.
+1. On invitation creation, Microsoft Graph can automatically send an invitation email directly to the invited user, or your app can use the **inviteRedeemUrl** returned in the response to craft your own invitation (through your communication mechanism of choice) to the invited user. If you decide to have Microsoft Graph send an invitation email automatically, you can specify the content and language of the email by using [invitedUserMessageInfo](../resources/invitedusermessageinfo.md).
+2. When the user is invited, a user entity (of **userType** `Guest`) is created and can be used to control access to resources. The invited user has to go through the redemption process to access any resources they have been invited to.
 
 ## Permissions
 
@@ -65,7 +65,7 @@ If successful, this method returns `201 Created` response code and [invitation](
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -83,7 +83,7 @@ Content-type: application/json
 
 ### Response
 
-Here's an example  of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
