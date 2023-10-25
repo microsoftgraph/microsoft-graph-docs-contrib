@@ -17,6 +17,7 @@ The base container for Microsoft Graph APIs such as the industry data ETL and Mi
 
 ## Methods
 None.
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
