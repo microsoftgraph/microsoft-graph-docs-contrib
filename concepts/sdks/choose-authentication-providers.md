@@ -190,7 +190,7 @@ In the following example, we're using the asynchronous [OnBehalfOfCredential](/p
 
 ## Implicit provider
 
-Implicit Authentication flow is not recommended due to its [disadvantages](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6). Public clients such as native apps and single-page apps should now use the authorization code flow with the PKCE extension instead. [Reference](https://oauth.net/2/grant-types/implicit/).
+Implicit Authentication flow isn't recommended due to its [disadvantages](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-browser-based-apps-04#section-9.8.6). Public clients such as native apps and single-page apps should now use the authorization code flow with the PKCE extension instead. [Reference](https://oauth.net/2/grant-types/implicit/).
 
 ## Device code provider
 The device code flow enables sign-in to devices through another device. For details, see [Microsoft identity platform and the OAuth 2.0 device code flow](/azure/active-directory/develop/v2-oauth2-device-code).
@@ -290,7 +290,7 @@ The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication
 
 ## Username/password provider
 
-The username/password provider allows an application to sign in a user using their username and password. Use this flow only when you cannot use any other OAuth flows. For more information, see [Microsoft identity platform and the OAuth 2.0 resource owner password credential](/azure/active-directory/develop/v2-oauth-ropc)
+The username/password provider allows an application to sign in a user using their username and password. Use this flow only when you can't use any other OAuth flows. For more information, see [Microsoft identity platform and the OAuth 2.0 resource owner password credential](/azure/active-directory/develop/v2-oauth-ropc)
 
 ### [C#](#tab/csharp)
 
