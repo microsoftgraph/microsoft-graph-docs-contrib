@@ -10,7 +10,7 @@ ms.custom: scenarios:getting-started
 
 The Microsoft Graph SDKs are designed to simplify building high-quality, efficient, resilient applications that access Microsoft Graph. The SDKs include two components: a service library and a core library.
 
-The *service library* contains models and request builders generated from Microsoft Graph metadata. The service library provides a rich, strongly typed, and discoverable experience when working with the many datasets available in Microsoft Graph.
+The *service library* contains models and request builders generated from Microsoft Graph metadata. The service library provides a rich, typed, and discoverable experience when working with the many datasets available in Microsoft Graph.
 
 The *core library* provides features that enhance working with all the Microsoft Graph services. Embedded support for retry handling, secure redirects, transparent authentication, and payload compression improve the quality of your application's interactions with Microsoft Graph with no added complexity while leaving you entirely in control. The core library also supports everyday tasks such as paging through collections and creating batch requests.
 
