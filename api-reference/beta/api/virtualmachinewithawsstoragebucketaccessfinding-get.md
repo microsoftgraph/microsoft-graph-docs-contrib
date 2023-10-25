@@ -1,9 +1,9 @@
 ---
 title: "Get virtualMachineWithAwsStorageBucketAccessFinding"
 description: "Read the properties and relationships of a virtualMachineWithAwsStorageBucketAccessFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /virtualMachineWithAwsStorageBucketAccessFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.virtualMachineWithAwsStorageBucketAccessFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports none of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,9 +58,8 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/virtualMachineWithAwsStorageBucketAccessFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxWaXJ0dWFsTWFjaGluZVdpdGhBd3NTdG9yYWdlQnVja2V0QWNjZXNzRmluZGluZyw0MzUwMg')/graph.virtualMachineWithAwsStorageBucketAccessFinding
 ```
-
 
 ### Response
 The following is an example of the response
@@ -76,16 +75,37 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.virtualMachineWithAwsStorageBucketAccessFinding",
-    "id": "5f83ae0b-e109-f37a-4840-2975b240a8a4",
-    "createdDateTime": "String (timestamp)",
-    "bucketCount": "Integer",
-    "accessibleCount": "Integer",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.virtualMachineWithAwsStorageBucketAccessFinding/$entity",
+    "id": "MSxWaXJ0dWFsTWFjaGluZVdpdGhBd3NTdG9yYWdlQnVja2V0QWNjZXNzRmluZGluZyw0MzUwMg",
+    "createdDateTime": "2023-10-25T19:48:43.993578Z",
+    "bucketCount": 4,
+    "accessibleCount": 4,
     "permissionsCreepIndex": {
-      "@odata.type": "microsoft.graph.permissionsCreepIndex"
+        "score": 1
+    },
+    "ec2Instance": {
+        "id": "YXJuOmF3czplYzI6dXMtZWFzdC0yOjM3NzU5NjEzMTc3NDppbnN0YW5jZS9pLTBhZmEwOTdiMjIzZjRjOTQ5",
+        "externalId": "arn:aws:ec2:us-east-2:377596131774:instance/i-0afa097b223f4c949",
+        "displayName": "automation-ec2",
+        "resourceType": "instance"
+    },
+    "role": {
+        "id": "YXJuOmF3czplYzI6dXMtZWFzdC0yOjM3NzU5NjEzMTc3NDppbnN0YW5jZS9pLTBhZmEwOTdiMjIzZjRjOTQ5",
+        "externalId": "arn:aws:ec2:us-east-2:377596131774:instance/i-0afa097b223f4c949",
+        "displayName": "automation-ec2",
+        "source": {
+            "@odata.type": "#microsoft.graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "377596131774"
+        },
+        "authorizationSystem": {
+            "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
+            "authorizationSystemId": "377596131774",
+            "authorizationSystemName": "cloudknox-staging",
+            "authorizationSystemType": "aws",
+            "id": "MSxhd3MsMzc3NTk2MTMxNzc0"
+        }
     }
-  }
 }
 ```
 

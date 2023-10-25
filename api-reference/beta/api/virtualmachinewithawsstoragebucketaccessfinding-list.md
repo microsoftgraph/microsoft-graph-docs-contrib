@@ -1,9 +1,9 @@
 ---
 title: "List virtualMachineWithAwsStorageBucketAccessFindings"
 description: "Get a list of the virtualMachineWithAwsStorageBucketAccessFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.virtualMachineWithAwsStorageBucketAccessFinding not found
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.virtualMachineWithAwsStorageBucketAccessFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$filter` and `$orderby` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,9 +58,8 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.virtualMachineWithAwsStorageBucketAccessFinding not found
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.virtualMachineWithAwsStorageBucketAccessFinding
 ```
-
 
 ### Response
 The following is an example of the response
@@ -76,17 +75,44 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.virtualMachineWithAwsStorageBucketAccessFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.virtualMachineWithAwsStorageBucketAccessFinding",
-      "id": "5f83ae0b-e109-f37a-4840-2975b240a8a4",
-      "createdDateTime": "String (timestamp)",
-      "bucketCount": "Integer",
-      "accessibleCount": "Integer",
+      "@odata.type": "graph.virtualMachineWithAwsStorageBucketAccessFinding",
+      "id": "dmlydHVhbE1hY2hpbmVTdG9yYWdlQnVja2V0QWNjZXNzRmluZGluZzEwMDAwMQ",
+      "ec2Instance": {
+          "@odata.type": "graph.awsAuthorizationSystemResource",
+          "id": "YXJuOmF3czplYzI6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTppbnN0YW5jZS9pLTAzMzRlNmQxZmRhYTg5OWIw",
+          "externalId": "arn:aws:ec2:us-west-2:956987887735:instance/i-0334e6d1fdaa899b0",
+          "displayName": "Elasticbeanstalkapp-env",
+          "resourceType": "instance",
+      },
+      "role": {
+          "@odata.type": "graph.awsRole",
+          "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpyb2xlL21vbmdvLWRiLXN0YWdpbmc=",
+          "externalId": "arn:aws:iam::377596131774:role/mongo-db-staging",
+          "displayName": "mongo-db-staging",
+          "source": {
+            "@odata.type": "graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "377596131774"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.awsAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "377596131774",
+            "authorizationSystemName": "cloudknox-staging",
+            "authorizationSystemType": "aws"
+          }
+      },
+      "bucketCount": 132,
+      "accessibleCount": 122,
       "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
-      }
-    }
+        "score": 3
+      },
+      "createdDateTime": "2020-10-11T20:11:45.671Z"
+    },
+
   ]
 }
 ```
