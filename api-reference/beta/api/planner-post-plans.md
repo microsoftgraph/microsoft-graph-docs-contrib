@@ -45,11 +45,11 @@ POST /planner/plans
 
 In the request body, supply a JSON representation of [plannerPlan](../resources/plannerplan.md) object.
 
-The following table shows the properties that are required when you create a [plannerPlan](../resources/plannerplan.md).
+The following table lists the properties that are required when you create a [plannerPlan](../resources/plannerplan.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|container|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifies the container of the plan. Specify only the **url**, the **containerId** and **type**, or all properties. After it's set, this property can’t be updated. However, it changes when a plan is moved from one container to another, using [plan move to container](../api/plannerplan-movetocontainer.md).|
+|container|[plannerPlanContainer](../resources/plannerplancontainer.md)|Identifies the container of the plan. Specify only the **url**, the **containerId** and **type**, or all properties. You can only change this property by moving a plan from one container to another using [plan move to container](../api/plannerplan-movetocontainer.md).|
 |title|String|The title of the plan.|
 
 >**Note:** If the container is a Microsoft 365 group, the user who is creating the plan must be a member of the group that will contain the plan. When you create a new group by using [Create group](../api/group-post-groups.md), you are not added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).
@@ -64,7 +64,7 @@ This method can return any of the [HTTP status codes](/graph/errors). The most c
 
 ### Request
 
-The following example demonstrates a request to create a Plan in a Group Container.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -119,7 +119,7 @@ Content-type: application/json
 
 ### Response
 
-The following example displays a response to a request to create a Plan in a Group Container.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
