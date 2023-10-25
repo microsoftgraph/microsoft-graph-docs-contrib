@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
-# azureAdJoinPolicy resource type
+# azureADJoinPolicy resource type
 
 Namespace: microsoft.graph
 
