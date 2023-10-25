@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,10 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.securityToolAwsRoleAdministratorFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$filter` and `$orderby` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -57,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.securityToolAwsRoleAdministratorFinding
 ```
 
 
@@ -75,16 +76,42 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.securityToolAwsRoleAdministratorFinding",
-    "id": "b19d82f7-b16c-b5a6-bfae-52ae6c44dbb8",
-    "createdDateTime": "String (timestamp)",
-    "securityTools": "String",
-    "permissionsCreepIndex": {
-      "@odata.type": "microsoft.graph.permissionsCreepIndex"
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.securityToolAwsRoleAdministratorFinding",
+  "value": [
+      {
+        "@odata.type": "graph.securityToolAwsRoleAdministratorFinding",
+        "id": "YXdzU2VjdXJpdHlUb29sQWRtaW5pc3RyYXRpb25GaW5kaW5nMw",
+        "identity": {
+          "@odata.type": "graph.awsRole",
+          "id": "YXJuOmF3czppYW06Ojk1Njk4Nzg4NzczNTpyb2xlL3hhLTJlZGVtb3Byb2QtZmE=",
+          "externalId": "arn:aws:iam::956987887735:role/xa-2edemoprod-fa",
+          "displayName": "xa-2edemoprod-fa",
+          "source": {
+            "@odata.type": "graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "956987887735"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.awsAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "956987887735",
+            "authorizationSystemName": "cloudknox-development",
+            "authorizationSystemType": "aws"
+          }
+        },
+        "securityTools": "inspector, securityHub, detective",
+        "permissionsCreepIndex": {
+          "score": 100
+        },
+        "createdDateTime": "2020-10-11T20:11:45.6711Z",
+        "identityDetails": {
+          "createdDateTime": "2020-04-12T20:34:24Z",
+          "lastActiveDateTime": "2020-10-30T03:21:05Z"
+        }
+      },
     },
-    "lastActiveDateTime": "String (timestamp)"
-  }
+
+  ]
 }
 ```
 

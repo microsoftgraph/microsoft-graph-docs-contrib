@@ -1,9 +1,9 @@
 ---
 title: "List securityToolAwsServerlessFunctionAdministratorFindings"
 description: "Get a list of the securityToolAwsServerlessFunctionAdministratorFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.securityToolAwsServerlessFunctionAdministratorFinding not found
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.securityToolAwsServerlessFunctionAdministratorFinding
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.securityToolAwsServerlessFunctionAdministratorFinding not found
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxTZWN1cml0eVRvb2xBd3NTZXJ2ZXJsZXNzRnVuY3Rpb25BZG1pbmlzdHJhdG9yRmluZGluZyw1MDA2')/graph.securityToolAwsServerlessFunctionAdministratorFinding
 ```
 
 
@@ -76,18 +76,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.securityToolAwsServerlessFunctionAdministratorFinding",
-      "id": "644bc05f-e530-b4c3-a3a5-c516133397ab",
-      "createdDateTime": "String (timestamp)",
-      "securityTools": "String",
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
-      },
-      "lastActiveDateTime": "String (timestamp)"
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.securityToolAwsServerlessFunctionAdministratorFinding/$entity",
+    "id": "MSxTZWN1cml0eVRvb2xBd3NTZXJ2ZXJsZXNzRnVuY3Rpb25BZG1pbmlzdHJhdG9yRmluZGluZyw1MDA2",
+    "createdDateTime": "2023-10-25T19:49:40.33157Z",
+    "securityTools": "macie,wafShield,cloudTrail,inspector,securityHub,detective,guardDuty",
+    "permissionsCreepIndex": {
+        "score": 98
+    },
+    "identity": {
+        "@odata.type": "#microsoft.graph.awsLambda",
+        "id": "YXJuOmF3czpsYW1iZGE6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTpmdW5jdGlvbjp0ZXN0U3VwZXJJZExhbWJkYQ",
+        "externalId": "arn:aws:lambda:us-west-2:956987887735:function:testSuperIdLambda",
+        "displayName": "testSuperIdLambda",
+        "source": {
+            "@odata.type": "#microsoft.graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "956987887735"
+        },
+        "authorizationSystem": {
+            "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
+            "authorizationSystemId": "956987887735",
+            "authorizationSystemName": "ck-development",
+            "authorizationSystemType": "aws",
+            "id": "MSxhd3MsOTU2OTg3ODg3NzM1"
+        }
     }
-  ]
 }
 ```
 

@@ -1,9 +1,9 @@
 ---
 title: "securityToolAwsResourceAdministratorFinding resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "View AWS resources that can administer security tools."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+View AWS resources that can administer security tools.
 
 
 Inherits from [awsSecurityToolAdministrationFinding](../resources/awssecuritytooladministrationfinding.md).
@@ -23,25 +23,20 @@ Inherits from [awsSecurityToolAdministrationFinding](../resources/awssecuritytoo
 |:---|:---|:---|
 |[List securityToolAwsResourceAdministratorFindings](../api/securitytoolawsresourceadministratorfinding-list.md)|[securityToolAwsResourceAdministratorFinding](../resources/securitytoolawsresourceadministratorfinding.md) collection|Get a list of the [securityToolAwsResourceAdministratorFinding](../resources/securitytoolawsresourceadministratorfinding.md) objects and their properties.|
 |[Get securityToolAwsResourceAdministratorFinding](../api/securitytoolawsresourceadministratorfinding-get.md)|[securityToolAwsResourceAdministratorFinding](../resources/securitytoolawsresourceadministratorfinding.md)|Read the properties and relationships of a [securityToolAwsResourceAdministratorFinding](../resources/securitytoolawsresourceadministratorfinding.md) object.|
-|[Update securityToolAwsResourceAdministratorFinding](../api/securitytoolawsresourceadministratorfinding-update.md)|[securityToolAwsResourceAdministratorFinding](../resources/securitytoolawsresourceadministratorfinding.md)|Update the properties of a [securityToolAwsResourceAdministratorFinding](../resources/securitytoolawsresourceadministratorfinding.md) object.|
-|[Delete securityToolAwsResourceAdministratorFinding](../api/securitytoolawsresourceadministratorfinding-delete.md)|None|Delete a [securityToolAwsResourceAdministratorFinding](../resources/securitytoolawsresourceadministratorfinding.md) object.|
-|[List authorizationSystemIdentity](../api/securitytoolawsresourceadministratorfinding-list-identity.md)|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md) collection|Get the authorizationSystemIdentity resources from the identity navigation property.|
-|[Add authorizationSystemIdentity](../api/securitytoolawsresourceadministratorfinding-post-identity.md)|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Add identity by posting to the identity collection.|
-|[Remove authorizationSystemIdentity](../api/securitytoolawsresourceadministratorfinding-delete-identity.md)|None|Remove an [authorizationSystemIdentity](../resources/authorizationsystemidentity.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [finding](../resources/finding.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|lastActiveDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [awsSecurityToolAdministrationFinding](../resources/awssecuritytooladministrationfinding.md).|
-|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|**TODO: Add Description** Inherited from [awsSecurityToolAdministrationFinding](../resources/awssecuritytooladministrationfinding.md).|
-|securityTools|awsSecurityToolWebServices|**TODO: Add Description** Inherited from [awsSecurityToolAdministrationFinding](../resources/awssecuritytooladministrationfinding.md).The possible values are: `macie`, `wafShield`, `cloudTrail`, `inspector`, `securityHub`, `detective`, `guardDuty`, `unknownFutureValue`.|
+|createdDateTime|DateTimeOffset|Inherited from [finding](../resources/finding.md).|
+|id|String|Inherited from [entity](../resources/entity.md).|
+|lastActiveDateTime|DateTimeOffset|A date specifiying when the last time the identity in this Finding administered a security tool Inherited from [awsSecurityToolAdministrationFinding](../resources/awssecuritytooladministrationfinding.md).|
+|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|	Assigns an index based on an identities excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the identityInherited from [awsSecurityToolAdministrationFinding](../resources/awssecuritytooladministrationfinding.md).|
+|securityTools|awsSecurityToolWebServices|AWS security tools which can be administered by the user, role, resource or serverless functionInherited from [awsSecurityToolAdministrationFinding](../resources/awssecuritytooladministrationfinding.md).The possible values are: `macie`, `wafShield`, `cloudTrail`, `inspector`, `securityHub`, `detective`, `guardDuty`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|**TODO: Add Description** Inherited from [microsoft.graph.awsSecurityToolAdministrationFinding](../resources/awssecuritytooladministrationfinding.md)|
+|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization systemInherited from [microsoft.graph.awsSecurityToolAdministrationFinding](../resources/awssecuritytooladministrationfinding.md)|
 
 ## JSON representation
 The following is a JSON representation of the resource.

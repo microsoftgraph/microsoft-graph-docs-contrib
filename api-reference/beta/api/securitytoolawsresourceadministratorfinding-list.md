@@ -1,9 +1,9 @@
 ---
 title: "List securityToolAwsResourceAdministratorFindings"
 description: "Get a list of the securityToolAwsResourceAdministratorFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.securityToolAwsResourceAdministratorFinding not found
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.securityToolAwsResourceAdministratorFinding
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.securityToolAwsResourceAdministratorFinding not found
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.securityToolAwsResourceAdministratorFinding
 ```
 
 
@@ -76,17 +76,40 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.securityToolAwsResourceAdministratorFinding",
   "value": [
-    {
-      "@odata.type": "#microsoft.graph.securityToolAwsResourceAdministratorFinding",
-      "id": "e79209b9-663f-6f5a-4145-521b9aeb522d",
-      "createdDateTime": "String (timestamp)",
-      "securityTools": "String",
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
+      {
+      "@odata.type": "graph.securityToolAwsResourceAdministratorFinding",
+      "id": "YXdzU2VjdXJpdHlUb29sQWRtaW5pc3RyYXRpb25GaW5kaW5nNA",
+      "identity": {
+          "@odata.type": "graph.awsEc2Instance",
+          "id": "YXJuOmF3czplYzI6dXMtd2VzdC0yOjM3NzU5NjEzMTc3NDppbnN0YW5jZS9pLTA0YTQwZTE0ZTE3MGQxNDA4",
+          "externalId": "arn:aws:ec2:us-west-2:377596131774:instance/i-04a40e14e170d1408",
+          "displayName": "ck-bastion-staging",
+          "source": {
+            "@odata.type": "graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "377596131774"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.awsAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "377596131774",
+            "authorizationSystemName": "cloudknox-staging",
+            "authorizationSystemType": "aws"
+          }
       },
-      "lastActiveDateTime": "String (timestamp)"
-    }
+      "securityTools": "guardDuty, macie, wafShield",
+      "permissionsCreepIndex": {
+        "score": 95
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "identityDetails": {
+        "createdDateTime": "2020-04-12T20:34:24Z",
+        "lastActiveDateTime": "2020-10-30T03:21:05Z"
+      }
+    },
+
   ]
 }
 ```

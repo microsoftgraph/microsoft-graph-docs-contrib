@@ -1,9 +1,9 @@
 ---
 title: "Get securityToolAwsServerlessFunctionAdministratorFinding"
 description: "Read the properties and relationships of a securityToolAwsServerlessFunctionAdministratorFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,10 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.securityToolAwsServerlessFunctionAdministratorFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$filter` and `$orderby` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -57,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.securityToolAwsServerlessFunctionAdministratorFinding
 ```
 
 
@@ -75,16 +76,41 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.securityToolAwsServerlessFunctionAdministratorFinding",
-    "id": "644bc05f-e530-b4c3-a3a5-c516133397ab",
-    "createdDateTime": "String (timestamp)",
-    "securityTools": "String",
-    "permissionsCreepIndex": {
-      "@odata.type": "microsoft.graph.permissionsCreepIndex"
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.securityToolAwsServerlessFunctionAdministratorFinding",
+  "value": [
+      {
+      "@odata.type": "graph.securityToolAwsServerlessFunctionAdministratorFinding",
+      "id": "YXdzU2VjdXJpdHlUb29sQWRtaW5pc3RyYXRpb25GaW5kaW5nNQ",
+      "identity": {
+          "@odata.type": "graph.awsLambda",
+          "id": "YXJuOmF3czpsYW1iZGE6dXMtd2VzdC0yOjM3NzU5NjEzMTc3NDpmdW5jdGlvbjphbm90aGVyQWRtaW5GdWN0aW9u",
+          "externalId": "arn:aws:lambda:us-west-2:377596131774:function:anotherAdminFuction",
+          "displayName": "anotherAdminFuction",
+          "source": {
+            "@odata.type": "graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "377596131774"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.awsAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "377596131774",
+            "authorizationSystemName": "cloudknox-staging",
+            "authorizationSystemType": "aws"
+          }
+      },
+      "securityTools": "cloudTrail, inspector, securityHub",
+      "permissionsCreepIndex": {
+        "score": 95
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "identityDetails": {
+        "createdDateTime": "2020-04-12T20:34:24Z",
+        "lastActiveDateTime": "2020-10-30T03:21:05Z"
+      }
     },
-    "lastActiveDateTime": "String (timestamp)"
-  }
+
+  ]
 }
 ```
 

@@ -1,9 +1,9 @@
 ---
 title: "List securityToolAwsRoleAdministratorFindings"
 description: "Get a list of the securityToolAwsRoleAdministratorFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.securityToolAwsRoleAdministratorFinding not found
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.securityToolAwsRoleAdministratorFinding
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.securityToolAwsRoleAdministratorFinding not found
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxTZWN1cml0eVRvb2xBd3NSb2xlQWRtaW5pc3RyYXRvckZpbmRpbmcsNDAyNDE')/graph.securityToolAwsRoleAdministratorFinding
 ```
 
 
@@ -76,18 +76,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.securityToolAwsRoleAdministratorFinding",
-      "id": "b19d82f7-b16c-b5a6-bfae-52ae6c44dbb8",
-      "createdDateTime": "String (timestamp)",
-      "securityTools": "String",
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
-      },
-      "lastActiveDateTime": "String (timestamp)"
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.securityToolAwsRoleAdministratorFinding/$entity",
+    "id": "MSxTZWN1cml0eVRvb2xBd3NSb2xlQWRtaW5pc3RyYXRvckZpbmRpbmcsNDAyNDE",
+    "createdDateTime": "2023-10-25T19:48:41.223948Z",
+    "securityTools": "macie,wafShield,cloudTrail,inspector,securityHub,detective,guardDuty",
+    "permissionsCreepIndex": {
+        "score": 93
+    },
+    "identity": {
+        "@odata.type": "#microsoft.graph.awsRole",
+        "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpyb2xlL29rdGEtYWRtaW4",
+        "externalId": "arn:aws:iam::377596131774:role/okta-admin",
+        "displayName": "okta-admin",
+        "source": {
+            "@odata.type": "#microsoft.graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "377596131774"
+        },
+        "authorizationSystem": {
+            "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
+            "authorizationSystemId": "377596131774",
+            "authorizationSystemName": "cloudknox-staging",
+            "authorizationSystemType": "aws",
+            "id": "MSxhd3MsMzc3NTk2MTMxNzc0"
+        }
     }
-  ]
 }
 ```
 

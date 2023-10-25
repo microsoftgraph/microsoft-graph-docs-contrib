@@ -1,9 +1,9 @@
 ---
 title: "List securityToolAwsUserAdministratorFindings"
 description: "Get a list of the securityToolAwsUserAdministratorFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.securityToolAwsUserAdministratorFinding not found
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.securityToolAwsUserAdministratorFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports none of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.securityToolAwsUserAdministratorFinding not found
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.securityToolAwsUserAdministratorFinding
 ```
 
 
@@ -76,17 +76,40 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.securityToolAwsUserAdministratorFinding",
   "value": [
-    {
-      "@odata.type": "#microsoft.graph.securityToolAwsUserAdministratorFinding",
-      "id": "5fb39f16-47e0-1cc2-1083-8dd01e23a706",
-      "createdDateTime": "String (timestamp)",
-      "securityTools": "String",
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
+      {
+      "@odata.type": "graph.securityToolAwsUserAdministratorFinding",
+      "id": "YXdzU2VjdXJpdHlUb29sQWRtaW5pc3RyYXRpb25GaW5kaW5nMg",
+      "identity": {
+          "@odata.type": "graph.awsUser",
+          "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDp1c2VyL3VzZXJfYWRtaW5pc3RyYXRvcl9idWNrZXRwb2xpY3lfZGVueXVzZXI=",
+          "externalId": "arn:aws:iam::377596131774:user/user_administrator_bucketpolicy_denyuser",
+          "displayName": "user_administrator_bucketpolicy_denyuser",
+          "source": {
+            "@odata.type": "graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "377596131774"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.awsAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "377596131774",
+            "authorizationSystemName": "cloudknox-staging",
+            "authorizationSystemType": "aws"
+          }
       },
-      "lastActiveDateTime": "String (timestamp)"
-    }
+      "securityTools": "macie, wafShield, cloudTrail",
+      "permissionsCreepIndex": {
+        "score": 95
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "identityDetails": {
+        "createdDateTime": "2020-04-12T20:34:24Z",
+        "lastActiveDateTime": "2020-10-30T03:21:05Z"
+      }
+    },
+
   ]
 }
 ```
