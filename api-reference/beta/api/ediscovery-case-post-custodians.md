@@ -49,7 +49,7 @@ POST /compliance/ediscovery/cases/{caseId}/custodians
 
 In the request body, supply a JSON representation of the [custodian](../resources/ediscovery-custodian.md) object.
 
-The following table shows the properties that are required when you create the [custodian](../resources/ediscovery-custodian.md).
+The following table lists the properties that are required when you create the [custodian](../resources/ediscovery-custodian.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

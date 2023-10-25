@@ -50,7 +50,7 @@ POST /directory/federationConfigurations/{samlOrWsFedExternalDomainFederation ID
 
 In the request body, supply a JSON representation of the [externalDomainName](../resources/externaldomainname.md) object.
 
-The following table shows the properties that are required when you create the [externalDomainName](../resources/externaldomainname.md).
+The following table lists the properties that are required when you create the [externalDomainName](../resources/externaldomainname.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -93,7 +93,7 @@ Content-Type: application/json
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

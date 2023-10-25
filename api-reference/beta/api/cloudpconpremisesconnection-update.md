@@ -51,7 +51,7 @@ PATCH /deviceManagement/virtualEndpoint/onPremisesConnections/{id}
 
 In the request body, supply a JSON representation of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 
-The following table shows the properties that are required when you create the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
+The following table lists the properties that are required when you create the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 
 |Property|Type|Description|
 |:---|:---|:---|

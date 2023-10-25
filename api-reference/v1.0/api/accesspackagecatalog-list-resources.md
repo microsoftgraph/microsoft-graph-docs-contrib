@@ -45,7 +45,7 @@ This method supports OData query parameters to help customize the response. For 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ca
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -195,7 +195,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ca
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -294,7 +294,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ca
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

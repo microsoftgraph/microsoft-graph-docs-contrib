@@ -45,7 +45,7 @@ GET /deviceManagement/monitoring/alertRules
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -104,7 +104,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRules
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

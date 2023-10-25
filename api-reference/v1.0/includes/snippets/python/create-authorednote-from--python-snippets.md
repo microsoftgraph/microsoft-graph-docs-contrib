@@ -10,7 +10,7 @@ graph_client = GraphServiceClient(request_adapter)
 
 request_body = AuthoredNote(
 	content = ItemBody(
-		content = "String",
+		content = "Please take a look at the files tagged with follow up",
 		content_type = BodyType.Text,
 	),
 )

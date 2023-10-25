@@ -129,7 +129,7 @@ A [connection](/graph/connecting-external-content-manage-connections) is a logic
 POST /external/connections
 ```
 
-The following is an example of the request.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/external/connections 
@@ -142,7 +142,7 @@ Content-type: application/json
 } 
 ```
 
-The following is an example of the response.
+The following example shows the response.
 
 ```http
 HTTP/1.1 201 Created 
@@ -174,7 +174,7 @@ The connection schema determines how your content is used in various Microsoft G
 POST /external/connections/{id}/schema 
 ```
 
-The following is an example of the request.
+The following example shows a request.
 
 ```http
 POST https://graph.microsoft.com/beta/external/connections/contosotasks/schema 
@@ -222,7 +222,7 @@ Prefer: respond-async
 } 
 ```
 
-The following is an example of the response.
+The following example shows the response.
 
 ```http
 HTTP/1.1 202 Accepted 

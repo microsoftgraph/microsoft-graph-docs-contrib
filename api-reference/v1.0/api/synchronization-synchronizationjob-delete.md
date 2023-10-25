@@ -40,11 +40,11 @@ DELETE /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, returns a `204 No Content` response. It does not return anything in the response body.
+If successful, returns a `204 No Content` response. It doesn't return anything in the response body.
 
 ## Example
 
@@ -95,7 +95,7 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/synchronization/j
 ---
 
 ##### Response
-The following is an example of the response. 
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

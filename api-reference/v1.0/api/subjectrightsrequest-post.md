@@ -45,7 +45,7 @@ POST /privacy/subjectRightsRequests
 ## Request body
 In the request body, supply a JSON representation of the [subjectRightsRequest](../resources/subjectRightsRequest.md) object.
 
-The following table shows the properties that are required when you create the [subjectRightsRequest](../resources/subjectRightsRequest.md).
+The following table lists the properties that are required when you create the [subjectRightsRequest](../resources/subjectRightsRequest.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -126,6 +126,10 @@ Content-Type: application/json
 
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-subjectrightsrequest-from--go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-subjectrightsrequest-from--java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
