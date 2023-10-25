@@ -1,9 +1,9 @@
 ---
 title: "openAwsSecurityGroupFinding resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "View AWS open security groups."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+View AWS open security groups.
 
 
 Inherits from [finding](../resources/finding.md).
@@ -23,28 +23,20 @@ Inherits from [finding](../resources/finding.md).
 |:---|:---|:---|
 |[List openAwsSecurityGroupFindings](../api/openawssecuritygroupfinding-list.md)|[openAwsSecurityGroupFinding](../resources/openawssecuritygroupfinding.md) collection|Get a list of the [openAwsSecurityGroupFinding](../resources/openawssecuritygroupfinding.md) objects and their properties.|
 |[Get openAwsSecurityGroupFinding](../api/openawssecuritygroupfinding-get.md)|[openAwsSecurityGroupFinding](../resources/openawssecuritygroupfinding.md)|Read the properties and relationships of an [openAwsSecurityGroupFinding](../resources/openawssecuritygroupfinding.md) object.|
-|[Update openAwsSecurityGroupFinding](../api/openawssecuritygroupfinding-update.md)|[openAwsSecurityGroupFinding](../resources/openawssecuritygroupfinding.md)|Update the properties of an [openAwsSecurityGroupFinding](../resources/openawssecuritygroupfinding.md) object.|
-|[Delete openAwsSecurityGroupFinding](../api/openawssecuritygroupfinding-delete.md)|None|Delete an [openAwsSecurityGroupFinding](../resources/openawssecuritygroupfinding.md) object.|
-|[List assignedComputeInstancesDetails](../api/openawssecuritygroupfinding-list-assignedcomputeinstancesdetails.md)|[assignedComputeInstanceDetails](../resources/assignedcomputeinstancedetails.md) collection|Get the assignedComputeInstanceDetails resources from the assignedComputeInstancesDetails navigation property.|
-|[Add assignedComputeInstanceDetails](../api/openawssecuritygroupfinding-post-assignedcomputeinstancesdetails.md)|[assignedComputeInstanceDetails](../resources/assignedcomputeinstancedetails.md)|Add assignedComputeInstancesDetails by posting to the assignedComputeInstancesDetails collection.|
-|[Remove assignedComputeInstancesDetails](../api/openawssecuritygroupfinding-delete-assignedcomputeinstancesdetails.md)|None|Remove an [assignedComputeInstanceDetails](../resources/assignedcomputeinstancedetails.md) object.|
-|[List awsAuthorizationSystemResource](../api/openawssecuritygroupfinding-list-securitygroup.md)|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) collection|Get the awsAuthorizationSystemResource resources from the securityGroup navigation property.|
-|[Add awsAuthorizationSystemResource](../api/openawssecuritygroupfinding-post-securitygroup.md)|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md)|Add securityGroup by posting to the securityGroup collection.|
-|[Remove awsAuthorizationSystemResource](../api/openawssecuritygroupfinding-delete-securitygroup.md)|None|Remove an [awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [finding](../resources/finding.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|inboundPorts|[inboundPorts](../resources/inboundports.md)|**TODO: Add Description**|
-|totalStorageBucketCount|Int32|**TODO: Add Description**|
+|createdDateTime|DateTimeOffset|Inherited from [finding](../resources/finding.md).|
+|id|String|Inherited from [entity](../resources/entity.md).|
+|inboundPorts|[inboundPorts](../resources/inboundports.md)|Contains information on inbound ports related to an open security group|
+|totalStorageBucketCount|Int32|The number of storage buckets accessed by the assigned compute instances|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|assignedComputeInstancesDetails|[assignedComputeInstanceDetails](../resources/assignedcomputeinstancedetails.md) collection|**TODO: Add Description**|
-|securityGroup|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md)|**TODO: Add Description**|
+|assignedComputeInstancesDetails|[assignedComputeInstanceDetails](../resources/assignedcomputeinstancedetails.md) collection|a set of AWS EC2 compute instances related to this open security group|
+|securityGroup|[awsAuthorizationSystemResource](../resources/awsauthorizationsystemresource.md)|Represents a resource in an authorization system|
 
 ## JSON representation
 The following is a JSON representation of the resource.

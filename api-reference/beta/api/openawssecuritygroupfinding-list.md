@@ -1,9 +1,9 @@
 ---
 title: "List openAwsSecurityGroupFindings"
 description: "Get a list of the openAwsSecurityGroupFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.openAwsSecurityGroupFinding not found
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.openAwsSecurityGroupFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$filter` and `$orderby` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.openAwsSecurityGroupFinding not found
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.openAwsSecurityGroupFinding
 ```
 
 
@@ -76,16 +76,33 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.openAwsSecurityGroupFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.openAwsSecurityGroupFinding",
-      "id": "5a91b0d2-95fe-9ba2-984e-93925e238666",
-      "createdDateTime": "String (timestamp)",
-      "totalStorageBucketCount": "Integer",
-      "inboundPorts": {
-        "@odata.type": "microsoft.graph.inboundPorts"
-      }
-    }
+        "@odata.type": "graph.openAwsSecurityGroupFinding",
+        "id": "b3BlbkF3c1NlY3VyaXR5R3JvdXBGaW5kaW5nMTAwMDAy",
+        "securityGroup": {
+            "@odata.type": "graph.awsAuthorizationSystemResource",
+            "id": "YXJuOmF3czplYzI6dXMtZWFzdC0xOjk1Njk4Nzg4NzczNTpzZWN1cml0eS1ncm91cC9zZy0wN2RhODgxNzU2NGVkMzM4MQ==",
+            "externalId": "arn:aws:ec2:us-east-1:956987887735:security-group/sg-07da8817564ed3381",
+            "displayName": "s10-sg",
+            "resourceType": "networkSecurityGroups",
+            "authorizationSystem": {
+              "@odata.type": "graph.awsAuthorizationSystem",
+              "id": "{Id}",
+              "authorizationSystemId": "377596131774",
+              "authorizationSystemName": "cloudknox-staging",
+              "authorizationSystemType": "aws"
+            }
+        },
+        "inboundPorts": {
+            "@odata.type": "graph.allInboundPorts"
+        },
+        "assignedComputeInstancesDetails@odata.count": 1, // We created a work item for the future implementation of expanding this the assignedComputeInstancesDetails property https://identitydivision.visualstudio.com/Engineering/_workitems/edit/2503297
+        "totalStorageBucketCount": 0,
+        "createdDateTime ": "2020-10-09T20:11:45.671Z"
+    },
+
   ]
 }
 ```

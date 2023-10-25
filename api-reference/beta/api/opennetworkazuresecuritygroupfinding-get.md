@@ -1,9 +1,9 @@
 ---
 title: "Get openNetworkAzureSecurityGroupFinding"
 description: "Read the properties and relationships of an openNetworkAzureSecurityGroupFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /openNetworkAzureSecurityGroupFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings('id')/graph.openNetworkAzureSecurityGroupFinding
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/openNetworkAzureSecurityGroupFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings('MSxPcGVuTmV0d29ya0F6dXJlU2VjdXJpdHlHcm91cEZpbmRpbmcsMjIyNjk1')/graph.openNetworkAzureSecurityGroupFinding
 ```
 
 
@@ -76,14 +76,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.openNetworkAzureSecurityGroupFinding",
-    "id": "ee7aff03-e064-3aa7-bc6e-89c500070c24",
-    "createdDateTime": "String (timestamp)",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.openNetworkAzureSecurityGroupFinding/$entity",
+    "id": "MSxPcGVuTmV0d29ya0F6dXJlU2VjdXJpdHlHcm91cEZpbmRpbmcsMjIyNjk1",
+    "createdDateTime": "2023-10-25T19:47:57.589627Z",
     "inboundPorts": {
-      "@odata.type": "microsoft.graph.inboundPorts"
+        "@odata.type": "#microsoft.graph.enumeratedInboundPorts",
+        "ports": [
+            "22"
+        ]
+    },
+    "securityGroup": {
+        "id": "L3N1YnNjcmlwdGlvbnMvNmJkZWIzNmUtMjQxNS00ZjdlLWFjMDMtNDljNTE4ZGEwZTEwL3Jlc291cmNlR3JvdXBzL21jaWVtLXN1YnNjcmlwdGlvbi0xLXJlc291cmNlLWdyb3VwL3Byb3ZpZGVycy9NaWNyb3NvZnQuTmV0d29yay9uZXR3b3JrU2VjdXJpdHlHcm91cHMvRXZhbk9wZW5TZWN1cml0eUdyb3Vw",
+        "externalId": "/subscriptions/6bdeb36e-2415-4f7e-ac03-49c518da0e10/resourceGroups/mciem-subscription-1-resource-group/providers/Microsoft.Network/networkSecurityGroups/EvanOpenSecurityGroup",
+        "displayName": "mciem-subscription-1-resource-group//subscriptions/6bdeb36e-2415-4f7e-ac03-49c518da0e10/resourceGroups/mciem-subscription-1-resource-group/providers/Microsoft.Network/networkSecurityGroups/EvanOpenSecurityGroup",
+        "resourceType": "networkSecurityGroups"
     }
-  }
 }
 ```
 

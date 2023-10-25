@@ -1,9 +1,9 @@
 ---
 title: "openNetworkAzureSecurityGroupFinding resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "View Azure open security groups."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
-
+View Azure open security groups.
 
 Inherits from [finding](../resources/finding.md).
 
@@ -23,27 +22,19 @@ Inherits from [finding](../resources/finding.md).
 |:---|:---|:---|
 |[List openNetworkAzureSecurityGroupFindings](../api/opennetworkazuresecuritygroupfinding-list.md)|[openNetworkAzureSecurityGroupFinding](../resources/opennetworkazuresecuritygroupfinding.md) collection|Get a list of the [openNetworkAzureSecurityGroupFinding](../resources/opennetworkazuresecuritygroupfinding.md) objects and their properties.|
 |[Get openNetworkAzureSecurityGroupFinding](../api/opennetworkazuresecuritygroupfinding-get.md)|[openNetworkAzureSecurityGroupFinding](../resources/opennetworkazuresecuritygroupfinding.md)|Read the properties and relationships of an [openNetworkAzureSecurityGroupFinding](../resources/opennetworkazuresecuritygroupfinding.md) object.|
-|[Update openNetworkAzureSecurityGroupFinding](../api/opennetworkazuresecuritygroupfinding-update.md)|[openNetworkAzureSecurityGroupFinding](../resources/opennetworkazuresecuritygroupfinding.md)|Update the properties of an [openNetworkAzureSecurityGroupFinding](../resources/opennetworkazuresecuritygroupfinding.md) object.|
-|[Delete openNetworkAzureSecurityGroupFinding](../api/opennetworkazuresecuritygroupfinding-delete.md)|None|Delete an [openNetworkAzureSecurityGroupFinding](../resources/opennetworkazuresecuritygroupfinding.md) object.|
-|[List authorizationSystemResource](../api/opennetworkazuresecuritygroupfinding-list-securitygroup.md)|[authorizationSystemResource](../resources/authorizationsystemresource.md) collection|Get the authorizationSystemResource resources from the securityGroup navigation property.|
-|[Add authorizationSystemResource](../api/opennetworkazuresecuritygroupfinding-post-securitygroup.md)|[authorizationSystemResource](../resources/authorizationsystemresource.md)|Add securityGroup by posting to the securityGroup collection.|
-|[Remove authorizationSystemResource](../api/opennetworkazuresecuritygroupfinding-delete-securitygroup.md)|None|Remove an [authorizationSystemResource](../resources/authorizationsystemresource.md) object.|
-|[List virtualMachines](../api/opennetworkazuresecuritygroupfinding-list-virtualmachines.md)|[authorizationSystemResource](../resources/authorizationsystemresource.md) collection|Get the authorizationSystemResource resources from the virtualMachines navigation property.|
-|[Add authorizationSystemResource](../api/opennetworkazuresecuritygroupfinding-post-virtualmachines.md)|[authorizationSystemResource](../resources/authorizationsystemresource.md)|Add virtualMachines by posting to the virtualMachines collection.|
-|[Remove virtualMachines](../api/opennetworkazuresecuritygroupfinding-delete-virtualmachines.md)|None|Remove an [authorizationSystemResource](../resources/authorizationsystemresource.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [finding](../resources/finding.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|inboundPorts|[inboundPorts](../resources/inboundports.md)|**TODO: Add Description**|
+|createdDateTime|DateTimeOffset|Inherited from [finding](../resources/finding.md).|
+|id|String|Inherited from [entity](../resources/entity.md).|
+|inboundPorts|[inboundPorts](../resources/inboundports.md)|Contains information on inbound ports related to an open security group|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|securityGroup|[authorizationSystemResource](../resources/authorizationsystemresource.md)|**TODO: Add Description**|
-|virtualMachines|[authorizationSystemResource](../resources/authorizationsystemresource.md) collection|**TODO: Add Description**|
+|securityGroup|[authorizationSystemResource](../resources/authorizationsystemresource.md)|Represents a resource in an authorization system|
+|virtualMachines|[authorizationSystemResource](../resources/authorizationsystemresource.md) collection|Represents a virtual machine in an authorization system|
 
 ## JSON representation
 The following is a JSON representation of the resource.

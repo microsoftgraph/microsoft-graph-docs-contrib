@@ -1,9 +1,9 @@
 ---
 title: "Get openAwsSecurityGroupFinding"
 description: "Read the properties and relationships of an openAwsSecurityGroupFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /openAwsSecurityGroupFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.openAwsSecurityGroupFinding
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/openAwsSecurityGroupFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxPcGVuQXdzU2VjdXJpdHlHcm91cEZpbmRpbmcsMjIyNjk2')/graph.openAwsSecurityGroupFinding
 ```
 
 
@@ -76,15 +76,21 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.openAwsSecurityGroupFinding",
-    "id": "5a91b0d2-95fe-9ba2-984e-93925e238666",
-    "createdDateTime": "String (timestamp)",
-    "totalStorageBucketCount": "Integer",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.openAwsSecurityGroupFinding/$entity",
+    "id": "MSxPcGVuQXdzU2VjdXJpdHlHcm91cEZpbmRpbmcsMjIyNjk2",
+    "createdDateTime": "2023-10-25T19:48:44.224315Z",
+    "totalStorageBucketCount": 0,
     "inboundPorts": {
-      "@odata.type": "microsoft.graph.inboundPorts"
+        "@odata.type": "#microsoft.graph.enumeratedInboundPorts",
+        "ports": [
+            "22"
+        ]
+    },
+    "securityGroup": {
+        "id": "YXJuOmF3czplYzI6dXMtZWFzdC0yOjM3NzU5NjEzMTc3NDpzZWN1cml0eS1ncm91cC9zZy0wMGMyMzRjM2YwNjZkYWYyNA",
+        "externalId": "arn:aws:ec2:us-east-2:377596131774:security-group/sg-00c234c3f066daf24",
+        "displayName": "launch-wizard-1",
+        "resourceType": "security-group"
     }
-  }
 }
 ```
-
