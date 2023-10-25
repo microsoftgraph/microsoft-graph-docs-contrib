@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Delete a [certificateAuthorityAsEntity](../resources/certificateauthorityasentity.md) object. You can't delete all items in the collection because this collection requires at least one object that is a root authority to always persist.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -47,7 +47,7 @@ DELETE /directory/certificateAuthorities/certificateBasedApplicationConfiguratio
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 
 ## Response
@@ -104,10 +104,9 @@ DELETE /directory/certificateAuthorities/certificateBasedApplicationConfiguratio
 
 ---
 
-
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -47,7 +47,7 @@ POST /education/users
 
 In the request body, supply a JSON representation of the [educationUser](../resources/educationuser.md) object.
 
-The following table shows the properties that are required when you create the [educationUser](../resources/educationuser.md).
+The following table lists the properties that are required when you create the [educationUser](../resources/educationuser.md).
 
 | Property             | Type                                                               | Description                                                                                                                                                                                                                                                                                                                                                 |
 | :------------------- | :----------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

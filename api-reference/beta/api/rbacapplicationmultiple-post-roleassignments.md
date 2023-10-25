@@ -19,7 +19,7 @@ The following RBAC providers are currently supported:
 - Cloud PC 
 - device management (Intune)
 
-For other Microsoft 365 applications (like Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
+For other Microsoft 365 applications (like Microsoft Entra ID), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -70,7 +70,7 @@ POST /roleManagement/deviceManagement/roleAssignments
 
 ## Request body
 
-In the request body, supply a JSON representation of [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object. The request must have either a scope defined in Azure AD, such as `directoryScopeIds`, or an application-specific scope, such as `appScopeId`. Examples of Azure AD scope are tenant ("/"), administrative units, or applications. 
+In the request body, supply a JSON representation of [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object. The request must have either a scope defined in Microsoft Entra ID, such as `directoryScopeIds`, or an application-specific scope, such as `appScopeId`. Examples of Microsoft Entra scope are tenant ("/"), administrative units, or applications. 
 
 ## Response
 
@@ -78,11 +78,13 @@ If successful, this method returns a `201 Created` response code and a new [unif
 
 ## Examples
 
-### Example 1: Create a role assignment in Intune over two scope groups (which are Azure AD objects)
+<a name='example-1-create-a-role-assignment-in-intune-over-two-scope-groups-which-are-azure-ad-objects'></a>
+
+### Example 1: Create a role assignment in Intune over two scope groups (which are Microsoft Entra objects)
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 > **Note:** the use of the **roleTemplateId** for **roleDefinitionId**. **roleDefinitionId** can be either the service-wide template ID or the directory-specific **roleDefinitionId**.
 
 
@@ -141,7 +143,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -173,7 +175,7 @@ Use the following information for creating Intune role assignments:
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -231,7 +233,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -314,7 +316,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
@@ -353,5 +355,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

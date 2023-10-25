@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Delete the properties and relationships of a [certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,7 +44,7 @@ DELETE /directory/certificateAuthorities/certificateBasedApplicationConfiguratio
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 
 ## Response
@@ -100,7 +100,7 @@ DELETE https://graph.microsoft.com/beta/directory/certificateAuthorities//certif
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -16,7 +16,7 @@ Enroll [updatableAsset](../resources/windowsupdates-updatableasset.md) resources
 
 You can enroll an [azureADDevice](../resources/windowsupdates-azureaddevice.md) resource in update management, but may not enroll an [updatableAssetGroup](../resources/windowsupdates-updatableassetgroup.md) in update management.
 
-Enrolling an Azure AD device in update management automatically creates an **azureADDevice** object if it does not already exist.
+Enrolling a Microsoft Entra device in update management automatically creates an **azureADDevice** object if it does not already exist.
 
 You can also use the method [enrollAssetsById](windowsupdates-updatableasset-enrollassetsbyid.md) to enroll assets.
 
@@ -59,7 +59,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code. It does not return anything in the response body.
+If successful, this action returns a `202 Accepted` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -130,4 +130,3 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 202 Accepted
 ```
-

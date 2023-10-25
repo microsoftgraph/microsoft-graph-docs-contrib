@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get a list of [recycleBinItems](../resources/recyclebinitem.md) under the specified site.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -98,7 +100,7 @@ GET https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,48f1898f-77d9-
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

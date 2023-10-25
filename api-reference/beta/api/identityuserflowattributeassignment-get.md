@@ -49,7 +49,7 @@ This method supports the `$select` and `$expand` query parameters to get the det
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

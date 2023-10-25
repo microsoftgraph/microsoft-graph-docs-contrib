@@ -12,14 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the details of a policy assignment in PIM that's assigned to Azure AD roles or group membership or ownership.
+Get the details of a policy assignment in PIM that's assigned to Microsoft Entra roles or group membership or ownership.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For PIM for Azure AD roles
+<a name='for-pim-for-azure-ad-roles'></a>
+
+### For PIM for Microsoft Entra roles
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -37,7 +39,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To retrieve the details of a policy assignment made in PIM for Azure AD roles or PIM for groups membership and ownership:
+To retrieve the details of a policy assignment made in PIM for Microsoft Entra roles or PIM for groups membership and ownership:
 <!-- {
   "blockType": "ignored"
 }
@@ -55,7 +57,7 @@ This method supports the `$select` and `$expand` OData query parameters to help 
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -63,11 +65,13 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 
 ## Examples
 
-### Example 1: Retrieve the details of a policy assignment for PIM for Azure AD roles
+<a name='example-1-retrieve-the-details-of-a-policy-assignment-for-pim-for-azure-ad-roles'></a>
+
+### Example 1: Retrieve the details of a policy assignment for PIM for Microsoft Entra roles
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -115,7 +119,7 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments/Di
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -142,7 +146,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -190,7 +194,7 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicyAssignments/Gr
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

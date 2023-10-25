@@ -49,7 +49,7 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/userSources
 
 In the request body, supply a JSON representation of the [userSource](../resources/ediscovery-usersource.md) object.
 
-The following table shows the properties that are required when you create the [userSource](../resources/ediscovery-usersource.md).
+The following table lists the properties that are required when you create the [userSource](../resources/ediscovery-usersource.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

@@ -53,7 +53,7 @@ If successful, this method returns a `201 Created` response code and a new [onPr
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -101,7 +101,7 @@ In the request body, supply a JSON representation of OData reference to an [onPr
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

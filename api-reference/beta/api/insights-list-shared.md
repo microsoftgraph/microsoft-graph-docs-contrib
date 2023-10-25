@@ -64,7 +64,7 @@ See the [sharingDetail](../resources/insights-sharingdetail.md) complex type.
 | Accept  | application/json|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
