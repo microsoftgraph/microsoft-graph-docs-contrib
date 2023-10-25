@@ -47,7 +47,7 @@ This method does **not** support the [OData Query Parameters](/graph/query-param
 
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and [governanceRoleDefinition](../resources/governanceroledefinition.md) object in the response body.
 ## Example

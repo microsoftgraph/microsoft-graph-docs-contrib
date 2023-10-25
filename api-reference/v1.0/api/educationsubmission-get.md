@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and an [educationSub
 ## Examples
 ### Example 1: Get submission
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/59069eb2-2a09-4d90-bb19-2
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Notes:** 
 >The response object shown here might be shortened for readability. 
@@ -157,7 +157,7 @@ Content-length: 712
 
 ### Example 2: Get submission with $expand options
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -204,7 +204,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/59069eb2-2a09-4d90-bb19-2
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

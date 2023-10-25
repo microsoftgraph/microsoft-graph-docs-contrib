@@ -47,7 +47,7 @@ POST /identityGovernance/entitlementManagement/connectedOrganizations
 ## Request body
 In the request body, supply a JSON representation of the [connectedOrganization](../resources/connectedorganization.md) object.
 
-The following table shows the properties that are required when you create the [connectedOrganization](../resources/connectedorganization.md).
+The following table lists the properties that are required when you create the [connectedOrganization](../resources/connectedorganization.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

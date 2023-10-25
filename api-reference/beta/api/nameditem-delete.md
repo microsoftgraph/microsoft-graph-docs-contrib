@@ -44,11 +44,11 @@ DELETE /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/names/{name}
 | Workbook-Session-ID  | Workbook session ID that determines if changes are persisted or not. Optional.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content`. It does not return anything in the response body.
+If successful, this method returns a `204 No Content`. It doesn't return anything in the response body.
 
 
 ## Example

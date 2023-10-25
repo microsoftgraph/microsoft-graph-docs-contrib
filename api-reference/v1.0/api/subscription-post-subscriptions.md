@@ -205,7 +205,7 @@ The following are valid values for the resource property of the subscription:
 
 ### Response
 
-The following is an example of the response. 
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

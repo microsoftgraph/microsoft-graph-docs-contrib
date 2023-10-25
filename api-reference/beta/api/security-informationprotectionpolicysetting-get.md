@@ -59,7 +59,7 @@ This method supports some of the OData query parameters to help customize the re
 | User-Agent    | Describes the name and version of the calling application. Details will surface in Azure Information Protection Analytics. Suggested format is `ApplicationName/Version`. Optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -119,7 +119,7 @@ GET https://graph.microsoft.com/beta/users/bob@contoso.com/security/informationP
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

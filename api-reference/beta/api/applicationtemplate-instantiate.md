@@ -61,7 +61,7 @@ The following example shows how to call this API.
 
 ### Request
 
-The following is an example of the request. The request URL specifies `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` as the application template ID. This means the request is instantiating a non-gallery app.
+The following example shows a request. The request URL specifies `8adf8e6e-67b2-4cf2-a259-e3dc5476c621` as the application template ID. This means the request is instantiating a non-gallery app.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -114,7 +114,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability. 
 

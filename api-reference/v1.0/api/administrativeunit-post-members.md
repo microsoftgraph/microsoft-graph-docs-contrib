@@ -85,7 +85,7 @@ The following table shows the properties of the [group](../resources/group.md) r
 
 ## Response
 
-If successful, adding an existing object (using `$ref`) returns `204 No Content` response code. It does not return anything in the response body. 
+If successful, adding an existing object (using `$ref`) returns `204 No Content` response code. It doesn't return anything in the response body.
 
 When creating a new group (without `$ref`), this method returns a `201 Created` response code and a [group](../resources/group.md) object in the response body. The response includes only the default properties of the group. You must supply the `"@odata.type" : "#microsoft.graph.group"` line in the request body to explicitly identify the new member as a group. A request body without the correct @odata.type returns a `400 Bad Request` error message.
 
@@ -94,7 +94,7 @@ When creating a new group (without `$ref`), this method returns a `201 Created` 
 The following request adds an existing user or group to an administrative unit.
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -148,7 +148,7 @@ Content-type: application/json
 In the request body, provide the `id` of the [user](../resources/user.md) or [group](../resources/group.md) object you want to add.
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
  
 <!-- {
   "blockType": "response",
@@ -163,7 +163,7 @@ HTTP/1.1 204 No Content
 The following example creates a new group in the administrative unit. You must supply the `"@odata.type" : "#microsoft.graph.group"` line in the request body to explicitly identify the new member as a group. A request body without the correct @odata.type returns a `400 Bad Request` error message.
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -226,7 +226,7 @@ In the request body, provide the properties of the [group](../resources/group.md
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
