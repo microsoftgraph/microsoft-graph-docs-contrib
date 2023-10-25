@@ -12,7 +12,7 @@ ms.custom: scenarios:getting-started
 Change notifications for Microsoft Teams resources using Microsoft Graph enable you to subscribe to a resource's changes (create, update, and delete). Change notifications provide a low latency model, allowing you to maintain a [subscription](/graph/api/resources/webhooks). You can also get the resource data in the notifications and avoid calling the API to get the payload.
 
 > [!NOTE]
-> The maximum time a subscription can last is 60 minutes; however, subscriptions can be renewed until the caller has permissions to access the resource.
+> The maximum time a subscription can last is 60 minutes; however, subscriptions can be renewed until the caller has permission to access the resource.
 
 ## Change notification types
 
@@ -20,7 +20,7 @@ Microsoft Teams supports two types of change notifications:
 
 * **Change notification to track all changes related to a resource across the tenant:** For example, you can subscribe to changes in messages in any channel across the tenant and get notified whenever a message is created, updated, or deleted in any channel in the tenant. These notifications might have [licensing and payment requirements](/graph/teams-licenses), such as change notifications for [messages](teams-changenotifications-chatmessage.md) and [membership](teams-changenotifications-chatMembership.md).
 
-* **Change notification to track all changes for a specific resource:** For example, you can subscribe to changes in messages in a particular channel and get notified whenever a message is created, updated, or deleted in that channel.
+* **Change notification to track all changes for a specific resource:** For example, you can subscribe to changes in messages in a particular channel and get notified whenever a message is created, updated, or deleted.
 
 For details about which resources support which types of change notifications, see [Microsoft Graph change notifications](webhooks.md).
 
@@ -42,7 +42,7 @@ The following table lists the Microsoft Teams resources that support change noti
 
 ## Notification payloads
 
-You can get the notification with or without resource data, depending on your subscription. Subscribing with resource data lets you get the message payload along with the notification, removing the need to call back and get the content.
+You can get the notification with or without resource data, depending on your subscription. Subscribing with resource data lets you get the message payload and the notification, removing the need to call back and get the content.
 
 ### Notifications with resource data
 
@@ -119,7 +119,7 @@ The decrypted notification payload looks like the following. The decrypted paylo
 
 ### Notifications without resource data
 
-Notifications without resource data give you enough information to make GET calls to get the resource. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data is not sent over).
+Notifications without resource data give you enough information to make GET calls to get the resource. Subscriptions for notifications without resource data don't require an encryption certificate (because actual resource data isn't sent over).
 
 The payload looks like the following. This payload is for a message sent in a channel.
 
@@ -139,7 +139,7 @@ The payload looks like the following. This payload is for a message sent in a ch
 }
 ```
 
-The previous example above shows a notification that corresponds to a chat message resource. The actual notification includes the **resource** and **resourceData** properties, which represent the resource that has triggered the notification. The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload of the resource.
+The previous example shows a notification corresponding to a chat message resource. The actual notification includes the **resource** and **resourceData** properties, which represent the resource that has triggered the notification. The **resource** and **@odata.id** properties can be used to make calls to Microsoft Graph to get the payload of the resource.
 
 > [!NOTE]
 > GET calls always return the current state of the resource. If the resource is changed between when the notification is sent and when the resource is retrieved, the operation returns the updated resource.
