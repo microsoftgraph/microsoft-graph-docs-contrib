@@ -176,6 +176,7 @@ Content-Type: image/jpg
 > [!NOTE]
 > 
 > - To ensure a fixed size for the output photo, it is necessary to utilize the dedicated endpoint for photos with fixed sizes (/photos) instead of relying on the default photo endpoint, which provides the largest available photo (/photo).
+
 #### Response
 Contains the binary data of the requested 48x48 photo. The HTTP response code is 200.
 
