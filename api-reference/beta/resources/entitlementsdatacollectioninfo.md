@@ -1,6 +1,6 @@
 ---
 title: "entitlementsDataCollectionInfo resource type"
-description: "Abstract type for entitlements data collection information."
+description: "An abstract type that defines any data collected about permissions assigned to an identity in the authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
