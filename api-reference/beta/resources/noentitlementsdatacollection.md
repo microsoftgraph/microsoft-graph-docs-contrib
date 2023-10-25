@@ -1,6 +1,6 @@
 ---
 title: "noEntitlementsDataCollection resource type"
-description: "Returned when there are no entitlements data collected."
+description: "Represents the details and status of data collection about permissions assigned to an identity in the authorization system. The API returns this object when it doesn't collect data from the authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
