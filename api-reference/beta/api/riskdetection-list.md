@@ -51,7 +51,7 @@ This method supports `$filter` and `$select` to customize the query response. Se
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

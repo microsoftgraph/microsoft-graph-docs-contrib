@@ -15,6 +15,7 @@ var requestBody = new AuthenticationMethodsPolicy
 		AuthenticationMethodsRegistrationCampaign = new AuthenticationMethodsRegistrationCampaign
 		{
 			SnoozeDurationInDays = 1,
+			EnforceRegistrationAfterAllowedSnoozes = true,
 			State = AdvancedConfigState.Enabled,
 			ExcludeTargets = new List<ExcludeTarget>
 			{
@@ -26,12 +27,6 @@ var requestBody = new AuthenticationMethodsPolicy
 					Id = "3ee3a9de-0a86-4e12-a287-9769accf1ba2",
 					TargetType = AuthenticationMethodTargetType.Group,
 					TargetedAuthenticationMethod = "microsoftAuthenticator",
-				},
-			},
-			AdditionalData = new Dictionary<string, object>
-			{
-				{
-					"enforceRegistrationAfterAllowedSnoozes" , true
 				},
 			},
 		},

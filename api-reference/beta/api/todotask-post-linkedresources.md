@@ -46,7 +46,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks/{taskId}/li
 ## Request body
 In the request body, supply a JSON representation of the [linkedResource](../resources/linkedresource.md) object.
 
-The following table shows the properties that are required when you create the [linkedResource](../resources/linkedresource.md).
+The following table lists the properties that are required when you create the [linkedResource](../resources/linkedresource.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

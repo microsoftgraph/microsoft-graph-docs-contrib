@@ -49,7 +49,7 @@ POST /deviceManagement/virtualEndpoint/deviceImages
 
 In the request body, supply a JSON representation of the [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.
 
-The following table shows the properties that are required when you create the [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md).
+The following table lists the properties that are required when you create the [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
