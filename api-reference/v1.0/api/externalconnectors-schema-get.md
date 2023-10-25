@@ -49,6 +49,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [schema](../resources/externalconnectors-schema.md) object in the response body.
 
+Note, it may take anywhere from 5 to 15 minutes to register the schema. It is advised to poll the job status for schema registration once a minute until the GET operation status returns a `200 OK`. 
+
 ## Examples
 
 ### Request
