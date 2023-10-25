@@ -29,14 +29,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 | ScopeName | DisplayName | Description | Type | Admin Consent? | Entities/APIs covered |
 | :-- | :-- | :-- | :-- | :-- | :-- |
-| `Policy.ReadWrite.FederatedTokenValidation` | Read and write Federated Token Validation Policy | This role can read and write Federated Token Validation Policy that determines which domains have enabled the validation | Delegated | Yes | All |
-| `Policy.ReadWrite.FederatedTokenValidation` | Read and write Federated Token Validation Policy | This role can read and write Federated Token Validation Policy that determines which domains have enabled the validation | Yes | All |
+| `Policy.ReadWrite.FedTokenValidation` | Read and write Federated Token Validation Policy | This role can read and write Federated Token Validation Policy that determines which domains have enabled the validation | Delegated | Yes | All |
+| `Policy.ReadWrite.FedTokenValidation` | Read and write Federated Token Validation Policy | This role can read and write Federated Token Validation Policy that determines which domains have enabled the validation | Yes | All |
 
 ### Actions
 
 | Permission | Action | Description |
 | :-- | :-- | :-- |
-| `Policy.ReadWrite.FederatedTokenValidation` | `/policies/federatedTokenValidationPolicy` | Update verified domains for which AAD will perform validation (matching federated account's root domain matches with mapped AAD account's root domain) before granting access. |
+| `Policy.ReadWrite.FedTokenValidation` | `/policies/federatedTokenValidationPolicy` | Update verified domains for which AAD will perform validation (matching federated account's root domain matches with mapped AAD account's root domain) before granting access. |
 | `Policy.Read.All`                           | `/policies/federatedTokenValidationPolicy` | Get verified domains for which AAD will perform validation (matching federated account's root domain matches with mapped AAD account's root domain) before granting access.    |
 
 ## HTTP request
