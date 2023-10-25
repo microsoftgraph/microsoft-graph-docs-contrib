@@ -1,9 +1,9 @@
 ---
 title: "Get externallyAccessibleAzureBlobContainerFinding"
 description: "Read the properties and relationships of an externallyAccessibleAzureBlobContainerFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /externallyAccessibleAzureBlobContainerFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings(id')/graph.externallyAccessibleAzureBlobContainerFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports none of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -46,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an [externallyAccessibleAzureBlobContainerFinding](../resources/externallyaccessibleazureblobcontainerfinding.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an [externallyAccessibleAwsStorageBucketFinding](../resources/externallyaccessibleawsstoragebucketfinding.md) object in the response body.
 
 ## Examples
 
@@ -54,11 +54,11 @@ If successful, this method returns a `200 OK` response code and an [externallyAc
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_externallyaccessibleazureblobcontainerfinding"
+  "name": "get_externallyaccessibleawsstoragebucketfinding"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/externallyAccessibleAzureBlobContainerFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings(id')/graph.externallyAccessibleAzureBlobContainerFinding
 ```
 
 
@@ -68,7 +68,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.externallyAccessibleAzureBlobContainerFinding"
+  "@odata.type": "microsoft.graph.externallyAccessibleAwsStorageBucketFinding"
 }
 -->
 ``` http
@@ -76,13 +76,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.externallyAccessibleAzureBlobContainerFinding",
-    "id": "c20246e2-184e-94ee-4e76-0f6f4209d712",
-    "createdDateTime": "String (timestamp)",
-    "accessibility": "String",
-    "encryptionManagedBy": "String"
-  }
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.externallyAccessibleAzureBlobContainerFinding/$entity",
+    "id": "MSxFeHRlcm5hbGx5QWNjZXNzaWJsZUF6dXJlQmxvYkNvbnRhaW5lckZpbmRpbmcsNzIzNg",
+    "createdDateTime": "2023-10-25T19:47:57.721188Z",
+    "accessibility": "public",
+    "encryptionManagedBy": "microsoftStorage",
+    "storageAccount": {
+        "id": "L3N1YnNjcmlwdGlvbnMvNmJkZWIzNmUtMjQxNS00ZjdlLWFjMDMtNDljNTE4ZGEwZTEwL3Jlc291cmNlR3JvdXBzL2Nsb3VkLXNoZWxsLXN0b3JhZ2Utd2VzdHVzL3Byb3ZpZGVycy9NaWNyb3NvZnQuU3RvcmFnZS9zdG9yYWdlQWNjb3VudHMvYmIwNzE4MjAyM3N0b3JhZ2VhY2NvdW50L2Jsb2JTZXJ2aWNlcy9kZWZhdWx0L2NvbnRhaW5lcnMvYmIwNzE4MjkyM2NvbnRhaW5lcg",
+        "externalId": "/subscriptions/6bdeb36e-2415-4f7e-ac03-49c518da0e10/resourceGroups/cloud-shell-storage-westus/providers/Microsoft.Storage/storageAccounts/bb07182023storageaccount/blobServices/default/containers/bb07182923container",
+        "displayName": "cloud-shell-storage-westus//subscriptions/6bdeb36e-2415-4f7e-ac03-49c518da0e10/resourceGroups/cloud-shell-storage-westus/providers/Microsoft.Storage/storageAccounts/bb07182023storageaccount/blobServices/default/containers/bb07182923container",
+        "resourceType": "Microsoft.Storage"
+    }
 }
 ```
-

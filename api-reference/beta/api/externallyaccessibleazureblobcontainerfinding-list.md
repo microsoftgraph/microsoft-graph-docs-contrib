@@ -1,9 +1,9 @@
 ---
 title: "List externallyAccessibleAzureBlobContainerFindings"
 description: "Get a list of the externallyAccessibleAzureBlobContainerFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.externallyAccessibleAzureBlobContainerFinding not found
+GET /identityGovernance/permissionsAnalytics/azure/findings/graph.externallyAccessibleAzureBlobContainerFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method Supports `$filter` and `$orderby` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.externallyAccessibleAzureBlobContainerFinding not found
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/graph.externallyAccessibleAzureBlobContainerFinding
 ```
 
 
@@ -76,14 +76,30 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/azure/findings/graph.externallyAccessibleAzureBlobContainerFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.externallyAccessibleAzureBlobContainerFinding",
-      "id": "c20246e2-184e-94ee-4e76-0f6f4209d712",
-      "createdDateTime": "String (timestamp)",
-      "accessibility": "String",
-      "encryptionManagedBy": "String"
-    }
+      "@odata.type": "graph.externallyAccessibleAzureBlobContainerFinding",
+      "id": "cmVzb3VyY2VmaW5kaW5nMTAwMDAx",
+      "storageAccount": {
+        "@odata.type": "graph.azureAuthorizationSystemResource",
+        "id": "L3N1YnNjcmlwdGlvbnMvZTE2MGIzNGItMmEwZi00MWY2LWFhZjMtMDljNWE5ZjQzNzY4L3Jlc291cmNlR3JvdXBzLzJlUmVzb3VyY2VHcm91cC9wcm92aWRlcnMvTWljcm9zb2Z0LlN0b3JhZ2Uvc3RvcmFnZUFjY291bnRzLzJlcmVzb3VyY2Vncm91cDlkNjAvYmxvYlNlcnZpY2VzL2RlZmF1bHQvY29udGFpbmVycy90ZXN0Y29udGFpbmVy",
+        "externalId": "/subscriptions/e160b34b-2a0f-41f6-aaf3-09c5a9f43768/resourceGroups/2eResourceGroup/providers/Microsoft.Storage/storageAccounts/2eresourcegroup9d60/blobServices/default/containers/testcontainer",
+        "displayName": "2eResourceGroup/testcontainer",
+        "resourceType": "storageAccounts",
+        "authorizationSystem": {
+          "@odata.type": "graph.azureAuthorizationSystem",
+          "id": "{Id}",
+          "authorizationSystemId": "e160b34b-2a0f-41f6-aaf3-09c5a9f43768",
+          "authorizationSystemName": "ck-qa",
+          "authorizationSystemType": "azure"
+        }
+      },
+      "accessibility": "public",
+      "encryptionManagedBy": "microsoftStorage",
+      "createdDateTime": "2020-10-11T20:11:45.671Z"
+    },
+
   ]
 }
 ```

@@ -1,9 +1,9 @@
 ---
 title: "Get externallyAccessibleGcpStorageBucketFinding"
 description: "Read the properties and relationships of an externallyAccessibleGcpStorageBucketFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /externallyAccessibleGcpStorageBucketFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings('id')/graph.externallyAccessibleGcpStorageBucketFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports none of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/externallyAccessibleGcpStorageBucketFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings('MSxFeHRlcm5hbGx5QWNjZXNzaWJsZUdjcFN0b3JhZ2VCdWNrZXRGaW5kaW5nLDI3Nzcy')/graph.externallyAccessibleGcpStorageBucketFinding
 ```
 
 
@@ -76,13 +76,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.externallyAccessibleGcpStorageBucketFinding",
-    "id": "e144737a-a7c4-6099-694b-424b1a8c6c86",
-    "createdDateTime": "String (timestamp)",
-    "accessibility": "String",
-    "encryptionManagedBy": "String"
-  }
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.externallyAccessibleGcpStorageBucketFinding/$entity",
+    "id": "MSxFeHRlcm5hbGx5QWNjZXNzaWJsZUdjcFN0b3JhZ2VCdWNrZXRGaW5kaW5nLDI3Nzcy",
+    "createdDateTime": "2023-10-25T17:41:21.929679Z",
+    "accessibility": "unknownFutureValue",
+    "encryptionManagedBy": "google",
+    "storageBucket": {
+        "id": "Y2xvdWRrbm94LXNlbnRyeS1jYXJiaWRlLWJvbnNhaS0yMDUwMTctdXMtd2VzdDE",
+        "externalId": "cloudknox-sentry-carbide-bonsai-205017-us-west1",
+        "displayName": "cloudknox-sentry-carbide-bonsai-205017-us-west1",
+        "resourceType": "buckets"
+    }
 }
 ```
-

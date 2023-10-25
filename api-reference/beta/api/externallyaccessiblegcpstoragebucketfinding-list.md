@@ -1,9 +1,9 @@
 ---
 title: "List externallyAccessibleGcpStorageBucketFindings"
 description: "Get a list of the externallyAccessibleGcpStorageBucketFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.externallyAccessibleGcpStorageBucketFinding not found
+GET /identityGovernance/permissionsAnalytics/gcp/findings/graph.externallyAccessibleGcpStorageBucketFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$filter` (`eq`) and `$orderby` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,9 +58,8 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.externallyAccessibleGcpStorageBucketFinding not found
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.externallyAccessibleGcpStorageBucketFinding
 ```
-
 
 ### Response
 The following is an example of the response
@@ -76,14 +75,30 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/gcp/findings/graph.externallyAccessibleGcpStorageBucketFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.externallyAccessibleGcpStorageBucketFinding",
-      "id": "e144737a-a7c4-6099-694b-424b1a8c6c86",
-      "createdDateTime": "String (timestamp)",
-      "accessibility": "String",
-      "encryptionManagedBy": "String"
-    }
+      "@odata.type": "graph.externallyAccessibleGcpStorageBucketFinding",
+      "id": "cmVzb3VyY2VmaW5kaW5nMTAwMDAx",
+      "storageBucket": {
+        "@odata.type": "graph.gcpAuthorizationSystemResource",
+        "id": "Y2FyYmlkZS1ib25zYWktMjA1MDE3LmFwcHNwb3QuY29t",
+        "externalId": "carbide-bonsai-205017.appspot.com",
+        "displayName": "carbide-bonsai-205017.appspot.com",
+        "resourceType": "buckets",
+        "authorizationSystem": {
+          "@odata.type": "graph.gcpAuthorizationSystem",
+          "id": "{Id}",
+          "authorizationSystemId": "carbide-bonsai-205017",
+          "authorizationSystemName": "ck-staging",
+          "authorizationSystemType": "gcp"
+        }
+      },
+      "accessibility": "subjectToObjectAcls",
+      "encryptionManagedBy": "google",
+      "createdDateTime": "2020-10-11T20:11:45.671Z"
+    },
+
   ]
 }
 ```

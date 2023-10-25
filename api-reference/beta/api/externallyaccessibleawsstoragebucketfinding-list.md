@@ -1,9 +1,9 @@
 ---
 title: "List externallyAccessibleAwsStorageBucketFindings"
 description: "Get a list of the externallyAccessibleAwsStorageBucketFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.externallyAccessibleAwsStorageBucketFinding not found
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.externallyAccessibleAwsStorageBucketFinding
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.externallyAccessibleAwsStorageBucketFinding not found
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.externallyAccessibleAwsStorageBucketFinding
 ```
 
 
@@ -73,19 +73,58 @@ The following is an example of the response
 -->
 ``` http
 HTTP/1.1 200 OK
-Content-Type: application/json
+Content-type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.externallyAccessibleAwsStorageBucketFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.externallyAccessibleAwsStorageBucketFinding",
-      "id": "767c9360-654a-62a5-a659-403dfed079c5",
-      "createdDateTime": "String (timestamp)",
-      "accessibility": "String",
+      "@odata.type": "graph.externallyAccessibleAwsStorageBucketFinding",
+      "id": "cmVzb3VyY2VmaW5kaW5nMTAwMDAx",
+      "storageBucket": {
+        "@odata.type": "graph.awsAuthorizationSystemResource",
+        "id": "YXJuOmF3czpzMzo6OjAyLXNldHRpbmdzLTAxLWJwLW5vbmUtYWNsLWV2ZXJ5b25lLWVuY3J5cHRpb24tbm9uZQ==",
+        "externalId": "arn:aws:s3:::02-settings-01-bp-none-acl-everyone-encryption-none",
+        "displayName": "02-settings-01-bp-none-acl-everyone-encryption-none",
+        "resourceType": "bucket",
+        "authorizationSystem": {
+          "@odata.type": "graph.awsAuthorizationSystem",
+          "id": "{Id}",
+          "authorizationSystemId": "377596131774",
+          "authorizationSystemName": "cloudknox-staging",
+          "authorizationSystemType": "aws"
+        }
+      },
+      "accessibility": "public",
       "accountsWithAccess": {
-        "@odata.type": "microsoft.graph.accountsWithAccess"
-      }
-    }
+        "@odata.type": "graph.allAccountsWithAccess"
+      },
+      "createdDateTime": "2020-10-11T20:11:45.671Z"
+    },
+    {
+      "id": "cmVzb3VyY2VmaW5kaW5nMTAwMDAy",
+      "storageBucket": {
+        "@odata.type": "graph.awsAuthorizationSystemResource",
+        "id": "YXJuOmF3czpzMzo6Omtub3gtdGVzdC1zZXR0aW5ncy1hbGwtYWNsLW5vbmUtYnAtbm9uZS1lbmNyeXB0aW9uLW5vbmUteC1hY2N0",
+        "externalId": "arn:aws:s3:::knox-test-settings-all-acl-none-bp-none-encryption-none-x-acct",
+        "displayName": "knox-test-settings-all-acl-none-bp-none-encryption-none-x-acct",
+        "resourceType": "bucket",
+        "authorizationSystem": {
+          "@odata.type": "graph.awsAuthorizationSystem",
+          "id": "{Id}",
+          "authorizationSystemId": "377596131774",
+          "authorizationSystemName": "cloudknox-staging",
+          "authorizationSystemType": "aws"
+        }
+      },
+      "accessibility": "crossAccount",
+      "accountsWithAccess": {
+        "@odata.type": "graph.enumeratedAccountsWithAccess",
+        "accounts@odata.count": 3 // there is no annotation for auto-expanding the count, but it always allowed for a service to respond with more data than is requested; if there were an annotation, we would use it
+      },
+      "createdDateTime": "2020-10-11T20:11:45.671Z"
+    },
+
   ]
 }
 ```

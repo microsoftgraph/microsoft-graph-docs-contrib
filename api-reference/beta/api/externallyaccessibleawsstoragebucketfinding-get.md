@@ -1,9 +1,9 @@
 ---
 title: "Get externallyAccessibleAwsStorageBucketFinding"
 description: "Read the properties and relationships of an externallyAccessibleAwsStorageBucketFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /externallyAccessibleAwsStorageBucketFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.externallyAccessibleAwsStorageBucketFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports none of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/externallyAccessibleAwsStorageBucketFinding
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws('MSxFeHRlcm5hbGx5QWNjZXNzaWJsZUF3c1N0b3JhZ2VCdWNrZXRGaW5kaW5nLDI3NjQ3OQ')/findings/graph.externallyAccessibleAwsStorageBucketFinding
 ```
 
 
@@ -76,15 +76,18 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.externallyAccessibleAwsStorageBucketFinding",
-    "id": "767c9360-654a-62a5-a659-403dfed079c5",
-    "createdDateTime": "String (timestamp)",
-    "accessibility": "String",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.externallyAccessibleAwsStorageBucketFinding/$entity",
+    "id": "MSxFeHRlcm5hbGx5QWNjZXNzaWJsZUF3c1N0b3JhZ2VCdWNrZXRGaW5kaW5nLDI3NjQ3OQ",
+    "createdDateTime": "2023-10-25T19:48:44.050499Z",
+    "accessibility": "crossAccount",
     "accountsWithAccess": {
-      "@odata.type": "microsoft.graph.accountsWithAccess"
+        "@odata.type": "#microsoft.graph.enumeratedAccountsWithAccess"
+    },
+    "storageBucket": {
+        "id": "YXJuOmF3czpzMzo6OmNmLXRlbXBsYXRlcy0xYmZxY2w4c3h0OTUwLXVzLWVhc3QtMg",
+        "externalId": "arn:aws:s3:::cf-templates-1bfqcl8sxt950-us-east-2",
+        "displayName": "cf-templates-1bfqcl8sxt950-us-east-2",
+        "resourceType": "bucket"
     }
-  }
 }
 ```
-
