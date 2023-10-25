@@ -10,15 +10,15 @@ ms.localizationpriority: high
 
 An app can subscribe to changes on the Microsoft Graph resources listed in the table.
 
-> **Note:** Subscriptions to resources marked with an asterisk (`*`) are available on the `/beta` endpoint only.
+> **Note:** Subscriptions to resources marked with an asterisk (`*`) are only available on the `/beta` endpoint.
 
 | Resource | Supported resource paths | Limitations |
 |---|---|---|
 | Cloud printing [printer][] | Changes when a print job is ready to be downloaded (jobFetchable event): `/print/printers/{id}/jobs` | - |
-| Cloud printing [printTaskDefinition][] | Changes when there is a valid job in the queue (jobStarted event): `/print/printtaskdefinition/{id}/tasks` | - |
+| Cloud printing [printTaskDefinition][] | Changes when there's a valid job in the queue (jobStarted event): `/print/printtaskdefinition/{id}/tasks` | - |
 | [driveItem][] on OneDrive (personal) | Changes to content within the hierarchy of _any folder_: `/users/{id}/drive/root` | - |
 | [driveItem][] on OneDrive for Business | Changes to content within the hierarchy of the _root folder_: `/drives/{id}/root` , `/users/{id}/drive/root` | - |
-| [group][] | Changes to all groups: `/groups`  <br><br> Changes to a specific group: `/groups/{id}` <br><br> Changes to owners of a specific group:  `/groups/{id}/owners` <br><br> Changes to members of a specific group: `/groups/{id}/members` | Maximum subscription quotas: <li> Per app (for all tenants combined): 50,000 total subscriptions. <li> Per tenant (for all applications combined): 1000 total subscriptions across all apps. <li> Per app and tenant combination: 100 total subscriptions .<br/><br/>Not supported for Azure AD B2C tenants.<br/><br/>**NOTE:** Creation and soft-deletion of groups will also trigger the `updated` **changeType**. |
+| [group][] | Changes to all groups: `/groups`  <br><br> Changes to a specific group: `/groups/{id}` <br><br> Changes to owners of a specific group:  `/groups/{id}/owners` <br><br> Changes to members of a specific group: `/groups/{id}/members` | Maximum subscription quotas: <li> Per app (for all tenants combined): 50,000 total subscriptions. <li> Per tenant (for all applications combined): 1000 total subscriptions across all apps. <li> Per app and tenant combination: 100 total subscriptions.<br/><br/>Not supported for Azure AD B2C tenants.<br/><br/>**NOTE:** Creation and soft-deletion of groups also trigger the `updated` **changeType**. |
 | [list][] under a SharePoint [site][] | Changes to content within the _list_:  `/sites/{site-id}/lists/{list-id}` | - |
 | Microsoft 365 group [conversation][] | Changes to a group's conversations: `groups/{id}/conversations` | - |
 | Outlook [message][] | Changes to all messages in a user's mailbox: `/users/{id}/messages` , `/me/messages` <br><br> Changes to messages in a user's Inbox: `/users/{id}/mailFolders('inbox')/messages` , `/me/mailFolders('inbox')/messages` | A maximum of 1,000 active subscriptions per mailbox for all applications is allowed. |
@@ -36,9 +36,9 @@ An app can subscribe to changes on the Microsoft Graph resources listed in the t
 | Teams [presence][] | Changes to a single user's presence:  `/communications/presences/{id}` <br><br> Changes to multiple user presences:  `/communications/presences?$filter=id in ({id},{id}...)` |  |
 | Teams [team][] | Changes to any team in the tenant: `/teams` <br><br> Changes to a specific team: `/teams/{id}` | Maximum subscription quotas: <li> Per app and team combination: 1 subscription. <li> Per organization: 10,000 total subscriptions. |
 | [todoTask][] | Changes to all task in a specific task list: `/me/todo/lists/{todoTaskListId}/tasks` | - |
-| [user][] | Changes to all users: `/users` <br><br> Changes to a specific user: `/users/{id}` | Maximum subscription quotas: <li> Per app (for all tenants combined): 50,000 total subscriptions. <li> Per tenant (for all applications combined): 1000 total subscriptions across all apps <li> Per app and tenant combination: 100 total subscriptions.<br/><br/>Not supported for personal Microsoft accounts like outlook.com.<br/><br/>Not supported for Azure AD B2C tenants.<br/><br/>**NOTE:** Creation and soft-deletion of users will also trigger the `updated` **changeType**. |
+| [user][] | Changes to all users: `/users` <br><br> Changes to a specific user: `/users/{id}` | Maximum subscription quotas: <li> Per app (for all tenants combined): 50,000 total subscriptions. <li> Per tenant (for all applications combined): 1000 total subscriptions across all apps <li> Per app and tenant combination: 100 total subscriptions.<br/><br/>Not supported for personal Microsoft accounts like outlook.com.<br/><br/>Not supported for Azure AD B2C tenants.<br/><br/>**NOTE:** Creation and soft-deletion of users also trigger the `updated` **changeType**. |
 
-> **Note:** Many resources have limits or quotas of how many subscriptions can be made against that resource.  When that limit is exceeded, attempts to create a subscription will result in an `403 Forbidden` error response. The **message** property of the error response will explain the limit that has been exceeded.
+> **Note:** Many resources have limits or quotas on how many subscriptions can be made against that resource.  When exceeding that limit, attempts to create a subscription will result in a `403 Forbidden` error response. The **message** property of the error response will explain the limit that has been exceeded.
 
 Some of these resources support rich notifications (notifications with resource data). For more information about resources that support rich notifications, see [Set up change notifications that include resource data](/graph/webhooks-with-resource-data#supported-resources).
 
