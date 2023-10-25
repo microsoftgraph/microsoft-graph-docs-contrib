@@ -12,6 +12,7 @@ request_body = AuthenticationMethodsPolicy(
 	registration_enforcement = RegistrationEnforcement(
 		authentication_methods_registration_campaign = AuthenticationMethodsRegistrationCampaign(
 			snooze_duration_in_days = 1,
+			enforce_registration_after_allowed_snoozes = True,
 			state = AdvancedConfigState.Enabled,
 			exclude_targets = [
 			]

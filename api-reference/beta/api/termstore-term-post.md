@@ -46,7 +46,7 @@ POST /termStore/sets/{setId}/terms/{termId}/children
 ## Request body
 In the request body, supply a JSON representation of the [term](../resources/termstore-term.md) object.
 
-The following table shows the properties that are required when you create the [term](../resources/termstore-term.md).
+The following table lists the properties that are required when you create the [term](../resources/termstore-term.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

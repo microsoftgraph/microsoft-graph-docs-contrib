@@ -52,7 +52,7 @@ This method supports the following [OData query parameters](/graph/query-paramet
 
 ## Request body
 
-Do not supply a request body for this method. The request body will be ignored.
+Don't supply a request body for this method. The request body will be ignored.
 
 ## Response
 
@@ -62,7 +62,7 @@ If successful, this method returns a `200 OK` response code and collection of **
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/security/secureScoreControlProfiles
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

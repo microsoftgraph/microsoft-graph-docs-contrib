@@ -55,7 +55,7 @@ In the request URL, provide one of the following parameters with a valid value.
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -106,7 +106,7 @@ The CSV file has the following headers for columns:
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -151,7 +151,7 @@ GET https://graph.microsoft.com/v1.0/reports/getTeamsUserActivityUserDetail(peri
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "ignored"

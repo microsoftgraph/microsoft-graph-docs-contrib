@@ -54,7 +54,7 @@ This API supports the `$filter` [OData query parameter](/graph/query-parameters)
 |odata.maxpagesize|Set the max result page size pereference. Optional.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [usageRight](../resources/usageright.md) objects in the response body.

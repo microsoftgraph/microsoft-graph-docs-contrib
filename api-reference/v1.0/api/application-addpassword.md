@@ -62,7 +62,7 @@ The following example shows how to call this API.
 
 ### Request
 
-The following is an example of the request. The **id** that is specified in the request is the value of the **id** property of the application, not the value of the **appId** property. 
+The following example shows a request. The **id** that is specified in the request is the value of the **id** property of the application, not the value of the **appId** property. 
 
 # [HTTP](#tab/http)
 <!-- {
@@ -117,7 +117,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

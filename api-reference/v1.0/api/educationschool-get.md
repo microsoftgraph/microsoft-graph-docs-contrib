@@ -48,7 +48,7 @@ This method supports the same OData query parameters as [Get User](../api/user-g
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

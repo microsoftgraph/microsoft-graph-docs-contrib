@@ -84,7 +84,7 @@ If successful, this method returns a `201 Created` response code and a new [unif
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 > **Note:** the use of the **roleTemplateId** for **roleDefinitionId**. **roleDefinitionId** can be either the service-wide template ID or the directory-specific **roleDefinitionId**.
 
 
@@ -143,7 +143,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -175,7 +175,7 @@ Use the following information for creating Intune role assignments:
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -233,7 +233,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -316,7 +316,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {

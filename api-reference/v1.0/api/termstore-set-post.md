@@ -43,7 +43,7 @@ POST /sites/{site-id}/termStore/sets
 ## Request body
 In the request body, supply a JSON representation of the [set](../resources/termstore-set.md) object.
 
-The following table shows the properties that are required when you create the [set](../resources/termstore-set.md) object.
+The following table lists the properties that are required when you create the [set](../resources/termstore-set.md) object.
 
 |Property|Type|Description|
 |:---|:---|:---|
