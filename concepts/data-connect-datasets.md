@@ -42,14 +42,14 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 | --- | --- | --- |
 | CalendarView_v0 | Provides occurrences, exceptions and single instances of events, based on the calendar view from users' calendars. | [CalendarView_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-calendarview.md) |
 | ConferenceRoomCalendar_v0 | Provides CalendarView data of the Conference Rooms created for a tenant. | [ConferenceRoomCalendar_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-conferenceroomcalendar.md) |
-| Event_v0 | Provides the information of all the events from users' calendar events. | [Event_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-event.md) |
-| Event_v1 | Provides the information of all the events from users' calendar events. | [Event_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-event1.md) |
+| Event_v0 | Provides all the events from users' calendar. | [Event_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-event.md) |
+| Event_v1 | Provides all the events from users' calendar. | [Event_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-event1.md) |
 
 ### Group
 
 | Dataset name | Description | Learn more |
 | --- | --- | --- |
-| GroupDetails_v0 | Provides the Azure Active Directory (Azure AD) groups data for a tenant. | [GroupDetails_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-groupdetails.md) |
+| GroupDetails_v0 | Provides the Microsoft Entra ID (Azure AD) groups data for a tenant. | [GroupDetails_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-groupdetails.md) |
 | GroupMembers_v0 | Generates a list of direct members of all groups. | [GroupMembers_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-groupmembers.md) |
 | GroupOwners_v0 | Retrieves the list of all the group owners. | [GroupOwners_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-groupowners.md) |
 
@@ -109,8 +109,8 @@ Microsoft Graph Data Connect currently supports the following datasets. To view 
 
 | Dataset name | Description | Learn more |
 | --- | --- | --- |
-| User_v0 | Provides user details stored for all the Azure Active Directory (Azure AD) user accounts that are created for a particular tenant. | [User_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-user.md) |
-| User_v1 | Provides user details stored for all the Azure Active Directory (Azure AD) user accounts. | [User_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-user1.md) |
+| User_v0 | Provides user details stored for all the Microsoft Entra ID (Azure AD) user accounts that are created for a particular tenant. | [User_v0 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-user.md) |
+| User_v1 | Provides user details stored for all the Microsoft Entra ID (Azure AD) user accounts. | [User_v1 dataset](https://github.com/microsoftgraph/dataconnect-solutions/blob/main/Datasets/data-connect-dataset-user1.md) |
 
 ### OneDrive and SharePoint Online
 
