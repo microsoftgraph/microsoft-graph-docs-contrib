@@ -49,7 +49,7 @@ If successful, this method returns `200 Ok` response code and an [educationSubmi
 ## Example
 The following example shows how to call this API.
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -96,7 +96,7 @@ POST https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

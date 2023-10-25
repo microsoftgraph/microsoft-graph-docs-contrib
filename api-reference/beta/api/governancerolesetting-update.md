@@ -54,7 +54,7 @@ In the request body, supply the values for [governanceRuleSettings](../resources
 |userMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md) collection|The rule settings that are evaluated when a user tries to activate his role assignment.|
 
 ## Response
-If successful, this method returns a `204 NoContent` response code. It does not return anything in the response body. 
+If successful, this method returns a `204 NoContent` response code. It doesn't return anything in the response body.
 
 ### Error codes
 This API returns the standard HTTP error codes. In addition, it returns the following custom error codes.

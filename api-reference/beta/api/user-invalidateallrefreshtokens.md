@@ -50,7 +50,7 @@ If successful, this method returns a 2xx series response code.
 ## Example
 
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -96,7 +96,7 @@ POST https://graph.microsoft.com/beta/me/invalidateAllRefreshTokens
 ---
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

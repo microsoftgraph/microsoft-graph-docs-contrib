@@ -41,7 +41,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedLanguages
 
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns `200 OK` response code and a collection of [localeInfo](../resources/localeinfo.md) objects in the response body.

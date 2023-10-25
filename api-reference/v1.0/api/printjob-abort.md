@@ -52,7 +52,7 @@ In the request body, you can optionally provide the reason why the job is being 
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 

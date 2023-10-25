@@ -59,7 +59,7 @@ POST /groups
 
 In the request body, supply a JSON representation of the [group](../resources/group.md) object.
 
-The following table shows the properties that are required when you create the [group](../resources/group.md). Specify other writable properties as necessary for your group.
+The following table lists the properties that are required when you create the [group](../resources/group.md). Specify other writable properties as necessary for your group.
 
 | Property        | Type    | Description                                                                                                                                                                                                                                                                                                                                |
 | :-------------- | :------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -156,7 +156,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
+The following example shows the response. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -329,7 +329,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request. The calling user must be assigned the _RoleManagement.ReadWrite.Directory_ permission to set the **isAssignableToRole** property or update the membership of such groups.
+The following example shows a request. The calling user must be assigned the _RoleManagement.ReadWrite.Directory_ permission to set the **isAssignableToRole** property or update the membership of such groups.
 
 A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type, its **securityEnabled** must be set to `true`, and **visibility** can only be `Private`.
 
@@ -402,7 +402,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response. It includes only default properties. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
+The following example shows the response. It includes only default properties. The value of the **preferredDataLocation** property is inherited from the group creator's preferred data location.
 
 <!-- {
   "blockType": "response",
