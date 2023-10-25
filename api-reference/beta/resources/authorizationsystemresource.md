@@ -1,6 +1,6 @@
 ---
 title: "authorizationSystemResource resource type"
-description: "Represents a resource in an authorization system."
+description: "Represents a resource in an authorization system that you've onboarded to Permissions Management."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
