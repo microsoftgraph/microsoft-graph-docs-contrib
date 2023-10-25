@@ -40,7 +40,7 @@ For more information on OData query options, see [OData Query Parameters](/graph
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and an [educationClass](../resources/educationclass.md) object in the response body.
 

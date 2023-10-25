@@ -52,7 +52,7 @@ This function *requires* the `$filter` (`eq`) OData query parameter to return 
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

@@ -22,7 +22,7 @@ items:
           - name: Permissions reference
             displayName: Microsoft Graph permissions list
             href: /graph/permissions-reference?context=graph/api/1.0
-          - name: Azure AD built-in roles
+          - name: Microsoft Entra built-in roles
             displayName: Microsoft Graph permissions
             href: /azure/active-directory/roles/permissions-reference?toc=/graph/toc.json
       - name: Manage app access (CSPs)
@@ -212,7 +212,7 @@ items:
             href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/1.0
       - name: Build your first app
         items:
-          - name: Register an Azure AD app
+          - name: Register a Microsoft Entra app
             href: /graph/toolkit/get-started/add-aad-app-registration?context=graph/api/1.0
           - name: Build a web app (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
@@ -4002,7 +4002,7 @@ items:
                     href: resources/intune-devices-windowsdeviceaccount.md
                   - name: Windows device AD account
                     href: resources/intune-devices-windowsdeviceadaccount.md
-                  - name: Windows device Azure AD account
+                  - name: Windows device Microsoft Entra account
                     href: resources/intune-devices-windowsdeviceazureadaccount.md
                   - name: Windows device health state
                     href: resources/intune-devices-windowsdevicehealthstate.md
@@ -5306,6 +5306,14 @@ items:
                     href: api/device-list-registeredowners.md
                   - name: List registered users
                     href: api/device-list-registeredusers.md
+              - name: Device local credential
+                items:
+                  - name: Device local credential
+                    href: resources/devicelocalcredentialinfo.md
+                  - name: List
+                    href: api/directory-list-devicelocalcredentials.md
+                  - name: Get
+                    href: api/devicelocalcredentialinfo-get.md
               - name: Directory object
                 href: resources/directoryobject.md
                 items:
@@ -5390,9 +5398,11 @@ items:
               - name: Organization
                 href: resources/organization.md
                 items:
-                  - name: Get org details
+                  - name: List
+                    href: api/organization-list.md
+                  - name: Get
                     href: api/organization-get.md
-                  - name: Update org details
+                  - name: Update
                     href: api/organization-update.md
               - name: Organizational contacts
                 href: resources/orgcontact.md
@@ -5942,7 +5952,7 @@ items:
                         href: api/identitygovernance-lifecyclemanagementsettings-update.md
               - name: Privileged Identity Management
                 items:
-                  - name: PIM for Azure AD Roles
+                  - name: PIM for Microsoft Entra roles
                     href: resources/privilegedidentitymanagementv3-overview.md
                     displayName: Privileged Identity Management, PIM, Identity Governance
                     items:
@@ -6008,9 +6018,9 @@ items:
                             href: api/unifiedroleeligibilityscheduleinstance-get.md
                           - name: Filter by current user
                             href: api/unifiedroleeligibilityscheduleinstance-filterbycurrentuser.md
-                      - name: Policies
+                      - name: Policies and rules
                         items:
-                          - name: Policies and rules
+                          - name: Policy
                             href: resources/unifiedrolemanagementpolicy.md
                           - name: List
                             href: api/policyroot-list-rolemanagementpolicies.md
@@ -6018,12 +6028,123 @@ items:
                             href: api/unifiedrolemanagementpolicy-get.md
                           - name: Update
                             href: api/unifiedrolemanagementpolicy-update.md
-                          - name: List rules
-                            href: api/unifiedrolemanagementpolicy-list-rules.md
-                          - name: Get rule
-                            href: api/unifiedrolemanagementpolicyrule-get.md
-                          - name: Update rule
-                            href: api/unifiedrolemanagementpolicyrule-update.md
+                          - name: Rules
+                            href: resources/unifiedrolemanagementpolicyrule.md
+                            items:
+                              - name: List rules
+                                href: api/unifiedrolemanagementpolicy-list-rules.md
+                              - name: Get rule
+                                href: api/unifiedrolemanagementpolicyrule-get.md
+                              - name: Update rule
+                                href: api/unifiedrolemanagementpolicyrule-update.md
+                      - name: Policy assignments
+                        href: resources/unifiedrolemanagementpolicyassignment.md
+                        items:
+                          - name: List
+                            href: api/policyroot-list-rolemanagementpolicyassignments.md
+                          - name: Get
+                            href: api/unifiedrolemanagementpolicyassignment-get.md
+                  - name: PIM for Groups
+                    href: resources/privilegedidentitymanagement-for-groups-api-overview.md
+                    items:
+                      - name: Assignment schedule requests
+                        href: resources/privilegedaccessgroupassignmentschedulerequest.md
+                        items:
+                          - name: List
+                            href: api/privilegedaccessgroup-list-assignmentschedulerequests.md
+                          - name: Create
+                            href: api/privilegedaccessgroup-post-assignmentschedulerequests.md
+                          - name: Get
+                            href: api/privilegedaccessgroupassignmentschedulerequest-get.md
+                          - name: Cancel
+                            href: api/privilegedaccessgroupassignmentschedulerequest-cancel.md
+                          - name: Filter by current user
+                            href: api/privilegedaccessgroupassignmentschedulerequest-filterbycurrentuser.md
+                      - name: Assignment schedules
+                        href: resources/privilegedaccessgroupassignmentschedule.md
+                        items:
+                          - name: List
+                            href: api/privilegedaccessgroup-list-assignmentschedules.md
+                          - name: Get
+                            href: api/privilegedaccessgroupassignmentschedule-get.md
+                          - name: Filter by current user
+                            href: api/privilegedaccessgroupassignmentschedule-filterbycurrentuser.md
+                      - name: Assignment schedule instances
+                        href: resources/privilegedaccessgroupassignmentscheduleinstance.md
+                        items:
+                          - name: List
+                            href: api/privilegedaccessgroup-list-assignmentscheduleinstances.md
+                          - name: Get
+                            href: api/privilegedaccessgroupassignmentscheduleinstance-get.md
+                          - name: Filter by current user
+                            href: api/privilegedaccessgroupassignmentscheduleinstance-filterbycurrentuser.md
+                      - name: Eligibility schedule requests
+                        href: resources/privilegedaccessgroupeligibilityschedulerequest.md
+                        items:
+                          - name: List
+                            href: api/privilegedaccessgroup-list-eligibilityschedulerequests.md
+                          - name: Create
+                            href: api/privilegedaccessgroup-post-eligibilityschedulerequests.md
+                          - name: Get
+                            href: api/privilegedaccessgroupeligibilityschedulerequest-get.md
+                          - name: Cancel
+                            href: api/privilegedaccessgroupeligibilityschedulerequest-cancel.md
+                          - name: Filter by current user
+                            href: api/privilegedaccessgroupeligibilityschedulerequest-filterbycurrentuser.md
+                      - name: Eligibility schedules
+                        href: resources/privilegedaccessgroupeligibilityschedule.md
+                        items:
+                          - name: List
+                            href: api/privilegedaccessgroup-list-eligibilityschedules.md
+                          - name: Get
+                            href: api/privilegedaccessgroupeligibilityschedule-get.md
+                          - name: Filter by current user
+                            href: api/privilegedaccessgroupeligibilityschedule-filterbycurrentuser.md
+                      - name: Eligibility schedule instances
+                        href: resources/privilegedaccessgroupeligibilityscheduleinstance.md
+                        items:
+                          - name: List
+                            href: api/privilegedaccessgroup-list-eligibilityscheduleinstances.md
+                          - name: Get
+                            href: api/privilegedaccessgroupeligibilityscheduleinstance-get.md
+                          - name: Filter by current user
+                            href: api/privilegedaccessgroupeligibilityscheduleinstance-filterbycurrentuser.md
+                      - name: Assignment approval
+                        href: resources/approval.md
+                        items:
+                          - name: Get
+                            href: api/approval-get.md
+                          - name: Filter by current user
+                            href: api/approval-filterbycurrentuser.md
+                          - name: Approval stage
+                            items:
+                              - name: Approval stage
+                                href: resources/approvalstage.md
+                              - name: List
+                                href: api/approval-list-stages.md
+                              - name: Get
+                                href: api/approvalstage-get.md
+                              - name: Update
+                                href: api/approvalstage-update.md
+                      - name: Policies and rules
+                        items:
+                          - name: Policy
+                            href: resources/unifiedrolemanagementpolicy.md
+                          - name: List
+                            href: api/policyroot-list-rolemanagementpolicies.md
+                          - name: Get
+                            href: api/unifiedrolemanagementpolicy-get.md
+                          - name: Update
+                            href: api/unifiedrolemanagementpolicy-update.md
+                          - name: Rules
+                            href: resources/unifiedrolemanagementpolicyrule.md
+                            items:
+                              - name: List rules
+                                href: api/unifiedrolemanagementpolicy-list-rules.md
+                              - name: Get rule
+                                href: api/unifiedrolemanagementpolicyrule-get.md
+                              - name: Update rule
+                                href: api/unifiedrolemanagementpolicyrule-update.md
                       - name: Policy assignments
                         href: resources/unifiedrolemanagementpolicyassignment.md
                         items:
@@ -6458,14 +6579,16 @@ items:
                         href: api/samlorwsfedexternaldomainfederation-list-domains.md
                       - name: Create externalDomainName
                         href: api/samlorwsfedexternaldomainfederation-post-domains.md
-                  - name: Federation with Azure AD
+                  - name: Federation with Microsoft Entra ID
                     items:
                       - name: Federated domain configuration
                         href: resources/internaldomainfederation.md
-                      - name: Get
-                        href: api/internaldomainfederation-get.md
+                      - name: List
+                        href: api/domain-list-federationconfiguration.md
                       - name: Create
                         href: api/domain-post-federationconfiguration.md
+                      - name: Get
+                        href: api/internaldomainfederation-get.md
                       - name: Update
                         href: api/internaldomainfederation-update.md
                       - name: Delete
@@ -6745,7 +6868,7 @@ items:
                         href: api/identitysecuritydefaultsenforcementpolicy-update.md
               - name: User flows
                 items:
-                  - name: Self-service sign up user flows in Azure AD
+                  - name: Self-service sign up user flows in Microsoft Entra ID
                     items:
                       - name: Self-service sign up user flow
                         href: resources/b2xidentityuserflow.md
@@ -7269,7 +7392,7 @@ items:
         items:
           - name: Identity and access reports
             items:
-            - name: Azure AD activity reports
+            - name: Microsoft Entra activity reports
               items:
                 - name: Registration and usage
                   items:
@@ -7290,7 +7413,7 @@ items:
                       items:
                         - name: List
                           href: api/authenticationmethodsroot-usersregisteredbymethod.md
-            - name: Azure AD audit logs
+            - name: Microsoft Entra audit logs
               items:
                 - name: Overview
                   href: resources/azure-ad-auditlog-overview.md
@@ -8046,6 +8169,8 @@ items:
                     href: api/security-host-list-passivedns.md
                   - name: List passive DNS reverse
                     href: api/security-host-list-passivednsreverse.md
+                  - name: List ports
+                    href: api/security-host-list-ports.md
                   - name: List subdomains
                     href: api/security-host-list-subdomains.md
                   - name: List trackers
@@ -8078,6 +8203,14 @@ items:
                     href: api/security-host-list-parenthostpairs.md
                   - name: List for a host as parent
                     href: api/security-host-list-childhostpairs.md
+              - name: Host port
+                items:
+                  - name: Host port
+                    href: resources/security-hostport.md
+                  - name: List
+                    href: api/security-host-list-ports.md
+                  - name: Get
+                    href: api/security-hostport-get.md
               - name: Host SSL certificate
                 items:
                 - name: Host SSL certificate

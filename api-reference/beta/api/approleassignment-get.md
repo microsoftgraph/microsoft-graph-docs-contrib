@@ -101,7 +101,7 @@ This method supports the `$select` OData query parameter to help customize the r
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -125,7 +125,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals(appId='00000003-0000-0000
 
 
 #### Response
-The following is an example of the response. It shows a client service principal named **Postman** has been granted an app role with the ID **df021288-bdef-4463-88db-98f22de89214** which is the *User.Read.All* application permission, for the resource service principal named **Microsoft Graph**.
+The following example shows the response. It shows a client service principal named **Postman** has been granted an app role with the ID **df021288-bdef-4463-88db-98f22de89214** which is the *User.Read.All* application permission, for the resource service principal named **Microsoft Graph**.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -168,7 +168,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals(appId='ceb96a54-de95-49a0
 
 
 #### Response
-The following is an example of the response. It shows a client service principal named **Postman** has been granted an app role with the ID **df021288-bdef-4463-88db-98f22de89214** which is the *User.Read.All* application permission, for the resource service principal named **Microsoft Graph**.
+The following example shows the response. It shows a client service principal named **Postman** has been granted an app role with the ID **df021288-bdef-4463-88db-98f22de89214** which is the *User.Read.All* application permission, for the resource service principal named **Microsoft Graph**.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -243,7 +243,7 @@ GET https://graph.microsoft.com/beta/me/appRoleAssignments/Lo6gEKI-4EyAy9X91LBep
 ---
 
 #### Response
-The following is an example of the response. It shows the signed-in user has the default app role for a resource service principal named *Postman*.
+The following example shows the response. It shows the signed-in user has the default app role for a resource service principal named *Postman*.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

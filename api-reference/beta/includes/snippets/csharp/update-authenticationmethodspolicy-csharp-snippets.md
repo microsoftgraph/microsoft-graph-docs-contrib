@@ -15,6 +15,7 @@ var requestBody = new AuthenticationMethodsPolicy
 		AuthenticationMethodsRegistrationCampaign = new AuthenticationMethodsRegistrationCampaign
 		{
 			SnoozeDurationInDays = 1,
+			EnforceRegistrationAfterAllowedSnoozes = true,
 			State = AdvancedConfigState.Enabled,
 			ExcludeTargets = new List<ExcludeTarget>
 			{

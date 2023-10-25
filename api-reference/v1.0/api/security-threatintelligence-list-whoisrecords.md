@@ -87,7 +87,7 @@ The following properties can be used for `$search` calls.
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -126,6 +126,10 @@ GET https://graph.microsoft.com/v1.0/security/threatIntelligence/whoisRecords?$s
 [!INCLUDE [sample-code](../includes/snippets/php/list-whoisrecord-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-whoisrecord-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-whoisrecord-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -134,7 +138,7 @@ GET https://graph.microsoft.com/v1.0/security/threatIntelligence/whoisRecords?$s
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

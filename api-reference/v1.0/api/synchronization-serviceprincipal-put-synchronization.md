@@ -45,12 +45,12 @@ In the request body, provide a JSON object with the following parameters.
 |credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization-synchronizationsecretkeystringvaluepair.md) collection|Credentials to validate. Ignored when the **useSavedCredentials** parameter is `true`.|
 
 ## Response
-If the secrets are successfully saved, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If the secrets are successfully saved, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -111,7 +111,7 @@ Content-type: application/json
 ---
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

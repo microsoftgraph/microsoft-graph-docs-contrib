@@ -59,7 +59,7 @@ DELETE /users/{id | userPrincipalName}/tasks/lists/{todoTaskListId}/tasks/{todoT
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

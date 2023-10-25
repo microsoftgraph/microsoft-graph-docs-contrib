@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Update the properties of an [authenticationEventsFlow](../resources/authenticationeventsflow.md) object. Only the [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object type is supported.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

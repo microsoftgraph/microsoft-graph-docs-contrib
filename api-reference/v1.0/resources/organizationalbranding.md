@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 Contains details about the organization's default branding. Inherits from [organizationalBrandingProperties](organizationalbrandingproperties.md).
 
-Organizations can customize their Azure Active Directory (Azure AD) sign-in pages which appear when users sign in to their organization's tenant-specific apps, or when Azure AD identifies the user's tenant from their username. A developer can also read the company's branding information and customize their app experience to tailor it specifically for the signed-in user using their company's branding.
+Organizations can customize their Microsoft Entra sign-in pages which appear when users sign in to their organization's tenant-specific apps, or when Microsoft Entra ID identifies the user's tenant from their username. A developer can also read the company's branding information and customize their app experience to tailor it specifically for the signed-in user using their company's branding.
 
 You can't change your original configuration's language. However, companies can add different branding based on locale. For language-specific branding, see the [organizationalBrandingLocalization](organizationalbrandingproperties.md) object.
 
 >[!NOTE]
->Adding custom branding requires you to have either Azure Active Directory (Azure AD) Premium 1, Premium 2, or Office 365 (for Office 365 apps) licenses. For more information about licensing and editions, see [Sign up for Azure AD Premium](/azure/active-directory/fundamentals/active-directory-get-started-premium).
+>Adding custom branding requires you to have either Microsoft Entra ID P1 or P2, Premium 2, or Office 365 (for Office 365 apps) licenses. For more information about licensing and editions, see [Sign up for Microsoft Entra ID P1 or P2](/azure/active-directory/fundamentals/active-directory-get-started-premium).
 >
->Azure AD Premium editions are available for customers in China using the worldwide instance of Azure Active Directory. Azure AD Premium editions aren't currently supported in the Azure service operated by 21Vianet in China. For more information, talk to us using the [Azure Active Directory Forum](https://feedback.azure.com/forums/169401-azure-active-directory/).
+>Microsoft Entra ID P1 or P2 editions are available for customers in China using the worldwide instance of Microsoft Entra ID. Microsoft Entra ID P1 or P2 editions aren't currently supported in the Azure service operated by 21Vianet in China. For more information, talk to us using the [Microsoft Entra Forum](https://feedback.azure.com/forums/169401-azure-active-directory/).
 
 ## Methods
 |Method|Return type|Description|
@@ -49,7 +49,7 @@ You can't change your original configuration's language. However, companies can 
 | customResetItNowText | String | A string to replace the default "reset it now" hyperlink text on the sign-in form. This text must be in Unicode format and not exceed 256 characters. <br/><br/>**DO NOT USE:** Customization of the "reset it now" hyperlink text is currently not supported. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
 | customTermsOfUseText | String | A string to replace the the default "Terms of Use" hyperlink text in the footer. This text must be in Unicode format and not exceed 256 characters. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
 | customTermsOfUseUrl | String | A custom URL to replace the default URL of the "Terms of Use" hyperlink in the footer. This URL must be in ASCII format or non-ASCII characters must be URL encoded, and not exceed 128characters. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
-| favicon | Stream | A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
+| favicon | Stream | A custom icon (favicon) to replace a default Microsoft product favicon on a Microsoft Entra tenant. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
 | faviconRelativeUrl | String | A relative url for the favicon above that is combined with a CDN base URL from the **cdnList** to provide the version served by a CDN. Read-only. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
 | headerBackgroundColor | String | The RGB color to apply to customize the color of the header. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |
 | headerLogo | Stream | A company logo that appears in the header of the sign-in page. The allowed types are PNG or JPEG not larger than 36 × 245 pixels. We recommend using a transparent image with no padding around the logo. Inherited from [organizationalBrandingProperties](organizationalbrandingproperties.md). |

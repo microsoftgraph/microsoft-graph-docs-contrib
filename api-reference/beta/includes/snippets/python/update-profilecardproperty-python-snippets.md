@@ -14,7 +14,7 @@ request_body = ProfileCardProperty(
 			localizations = [
 				DisplayNameLocalization(
 					language_tag = "no-NB",
-					display_name = "Kostnads Senter",
+					display_name = "Kostnadssenter",
 				),
 			]
 		),

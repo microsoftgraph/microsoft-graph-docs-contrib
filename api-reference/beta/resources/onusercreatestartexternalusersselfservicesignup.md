@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a managed handler for the user creation step in an external identities self-service sign-up user flow on an Azure AD workforce or customer tenant. It defines whether a guest or member user type is created.
+Represents a managed handler for the user creation step in an external identities self-service sign-up user flow on a Microsoft Entra workforce or customer tenant. It defines whether a guest or member user type is created.
 
 Inherits from [onUserCreateStartHandler](../resources/onusercreatestarthandler.md). Complex type.
 
@@ -43,4 +43,3 @@ Here's a JSON representation of the resource.
   "userTypeToCreate": "String"
 }
 ```
-

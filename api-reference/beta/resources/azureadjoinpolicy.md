@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the policy scope of the Azure Active Directory (Azure AD) tenant that controls the ability for users and groups to register device identities to your organization using Azure AD Join.
+Represents the policy scope of the Microsoft Entra tenant that controls the ability for users and groups to register device identities to your organization using Microsoft Entra join.
 
 ## Properties
 

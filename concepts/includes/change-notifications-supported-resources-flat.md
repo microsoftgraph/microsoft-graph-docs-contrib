@@ -23,7 +23,7 @@ Currently, subscriptions are enabled for the following resources.
 - A [conversation][] in a Microsoft 365 group.
 - A [conversationMember][conversationmember] in a team, channel, or chat in Microsoft Teams.
 - Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive.
-- A [group][] in Azure Active Directory.
+- A [group][] in Microsoft Entra ID.
 - A [list][] under a SharePoint [site][].
 - A [message][], [event][], or [contact][] in Outlook.
 - An [online meeting][] in Microsoft Teams.*
@@ -31,7 +31,7 @@ Currently, subscriptions are enabled for the following resources.
 - A [team][team] in Microsoft Teams.
 - A [printer][] (when a print job for the printer gets to JobFetchable state - ready to be fetched for printing) and a [printTaskDefinition][] in Universal Print. For more information, see [Subscribe to change notifications from cloud printing APIs](/graph/universal-print-webhook-notifications).
 - A [todoTask][] of a user in Microsoft To Do (webhooks are only available in the worldwide endpoint and no other national clouds).
-- A [user][] in Azure Active Directory.
+- A [user][] in Microsoft Entra ID.
 
 [channel]: /graph/api/resources/channel
 [chat]: /graph/api/resources/chat

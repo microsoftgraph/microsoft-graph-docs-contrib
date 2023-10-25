@@ -69,7 +69,7 @@ If successful, this method returns a `201 Created` response code and an [educati
 ## Examples
 ### Example 1: Create an educationLinkResource
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -128,7 +128,7 @@ Content-type: application/json
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -174,7 +174,7 @@ Content-type: application/json
 
 ### Example 2: Create an educationWordResource
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -232,7 +232,7 @@ Content-type: application/json
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -278,7 +278,7 @@ Content-type: application/json
 
 ### Example 3: Create an educationFileResource
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -338,7 +338,7 @@ Content-type: application/json
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 																					   
 
 >**Note:** The response object shown here might be shortened for readability.
@@ -386,7 +386,7 @@ Content-type: application/json
 
 ### Example 4: Create an educationExcelResource
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -443,7 +443,7 @@ Content-type: application/json
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -489,7 +489,7 @@ Content-type: application/json
 
 ### Example 5: Create an educationPowerPointResource
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -546,7 +546,7 @@ Content-type: application/json
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -592,7 +592,7 @@ Content-type: application/json
 
 ### Example 6: Create an educationMediaResource
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -649,7 +649,7 @@ Content-type: application/json
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -695,7 +695,7 @@ Content-type: application/json
 ### Example 7: Create an educationTeamsAppResource
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -757,7 +757,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

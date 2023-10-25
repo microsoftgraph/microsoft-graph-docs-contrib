@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Defines authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD).
+Defines authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Microsoft Entra ID.
 
 ## Methods
 |Method|Return type|Description|

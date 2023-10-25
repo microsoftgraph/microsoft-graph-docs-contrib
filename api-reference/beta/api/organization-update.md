@@ -27,13 +27,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported. |
 |Application | Organization.ReadWrite.All |
 
-The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+The calling user must also be in one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
 
 * Global Administrator
 * Partner Tier2 Support
 * Billing Administrator
 
-**Note**: To update the **onPremisesSyncEnabled** property requires that the calling user to have one of the following Azure AD roles: 
+**Note**: To update the **onPremisesSyncEnabled** property requires that the calling user to have one of the following Microsoft Entra roles: 
 
 * Global Administrator
 * Directory Synchronization Accounts
@@ -73,7 +73,7 @@ add, update, or delete your own app-specific data in custom properties of an ext
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 ##### Request
@@ -170,5 +170,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

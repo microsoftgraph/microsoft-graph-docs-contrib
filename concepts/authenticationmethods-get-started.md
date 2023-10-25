@@ -11,7 +11,7 @@ ms.date: 10/18/2022
 
 # Manage users' authentication methods using Microsoft Graph
 
-[Authentication methods](/azure/active-directory/authentication/concept-authentication-methods) are the ways that users authenticate in Azure Active Directory (Azure AD). Authentication methods in Azure AD include password and phone (for example, SMS and voice calls), which are manageable in Microsoft Graph today, among many others such as FIDO2 security keys and the Microsoft Authenticator app. Authentication methods are used in primary, second-factor, and step-up authentication, and also in the self-service password reset (SSPR) process.
+[Authentication methods](/azure/active-directory/authentication/concept-authentication-methods) are the ways that users authenticate in Microsoft Entra ID. Authentication methods in Microsoft Entra ID include password and phone (for example, SMS and voice calls), which are manageable in Microsoft Graph today, among many others such as FIDO2 security keys and the Microsoft Authenticator app. Authentication methods are used in primary, second-factor, and step-up authentication, and also in the self-service password reset (SSPR) process.
 
 You can use the authentication method APIs to manage a user's authentication methods. For example, you can:
 
@@ -22,16 +22,20 @@ You can use the authentication method APIs to manage a user's authentication met
 
 The APIs are a key tool to manage your users' authentication methods.
 
+We don't recommend using the authentication methods APIs for scenarios where you need to iterate over your entire user population for auditing or security check purposes. For these types of scenarios, we recommend using the [authentication method registration and usage reporting APIs](/graph/api/resources/authenticationmethods-usage-insights-overview) (available on the `beta` endpoint only).
+
 In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
-> * Authenticate to Azure AD with the right roles and permissions
+> * Authenticate to Microsoft Entra ID with the right roles and permissions
 > * Check the user's authentication methods
 > * Add new phone numbers for the user
 > * Remove a phone number from the user
 > * Reset the user's password
 
-## Step 1: Authenticate to Azure AD with the right roles and permissions
+<a name='step-1-authenticate-to-azure-ad-with-the-right-roles-and-permissions'></a>
+
+## Step 1: Authenticate to Microsoft Entra ID with the right roles and permissions
 
 Using your favorite [tool for interacting with Microsoft Graph](use-the-api.md#tools-for-interacting-with-microsoft-graph), sign in using an account with one of these roles:
 
@@ -253,11 +257,11 @@ And success! You've walked through seeing a user's profile, their auth methods, 
 
 Looking for the API reference for authentication methods?
 
-* See [Azure AD authentication methods API overview](/graph/api/resources/authenticationmethods-overview)
+* See [Microsoft Entra authentication methods API overview](/graph/api/resources/authenticationmethods-overview)
 
 ## Next steps
 
-* Use Azure AD to [authenticate](./auth/index.yml) to Microsoft Graph.
-* Integrate [Azure AD sign-in](https://azure.microsoft.com/develop/identity/signin/) into your app or website.
-* See the [Changelog](changelog.md) for information about what's new in the Azure AD APIs.
+* Use Microsoft Entra ID to [authenticate](./auth/index.yml) to Microsoft Graph.
+* Integrate [Microsoft Entra sign-in](https://azure.microsoft.com/develop/identity/signin/) into your app or website.
+* See the [Changelog](changelog.md) for information about what's new in the Microsoft Entra APIs.
 * Explore [examples](https://developer.microsoft.com/graph/graph/examples) for more ideas about how to use Microsoft Graph.

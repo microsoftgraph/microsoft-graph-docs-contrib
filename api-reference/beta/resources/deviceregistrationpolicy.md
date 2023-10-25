@@ -1,6 +1,6 @@
 ---
 title: "deviceRegistrationPolicy resource type"
-description: "Represents the policy scope that controls quota restrictions, additional authentication, and authorization policies for the Azure Active Directory tenant."
+description: "Represents the policy scope that controls quota restrictions, additional authentication, and authorization policies for the Microsoft Entra tenant."
 author: "myra-ramdenbourg"
 ms.localizationpriority: medium
 ms.prod: "directory-management"

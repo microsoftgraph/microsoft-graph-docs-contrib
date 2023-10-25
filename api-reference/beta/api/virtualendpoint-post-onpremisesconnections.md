@@ -51,12 +51,12 @@ POST /deviceManagement/virtualEndpoint/onPremisesConnections
 
 In the request body, supply a JSON representation of the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 
-The following table shows the properties that are required when you create the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
+The following table lists the properties that are required when you create the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.
 
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|The display name for the Azure network connection.|
-|type|cloudPcOnPremisesConnectionType|Specifies how the provisioned Cloud PC will be joined to Azure Active Directory. Default value is `hybridAzureADJoin`. Possible values are: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
+|type|cloudPcOnPremisesConnectionType|Specifies how the provisioned Cloud PC will be joined to Microsoft Entra ID. Default value is `hybridAzureADJoin`. Possible values are: `azureADJoin`, `hybridAzureADJoin`, `unknownFutureValue`.|
 |subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
 |adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join.|
 |adDomainUsername|String|The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: admin@contoso.com.|
@@ -135,7 +135,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

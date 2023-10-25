@@ -36,7 +36,7 @@ For example, an application has been granted the *Files.Read.All* delegated perm
 
 - Tom created or owns the files.
 - The files were shared directly with Tom, or indirectly shared with him through a team or group membership.
-- Tom has been granted permissions through a role-based access control (RBAC) system such as [Azure AD RBAC](/azure/active-directory/roles/custom-overview).
+- Tom has been granted permissions through a role-based access control (RBAC) system such as [Microsoft Entra RBAC](/azure/active-directory/roles/custom-overview).
 
 Therefore, in a delegated scenario, the privileges that an app has to act on behalf of a user is determined by the Microsoft Graph permissions that the app has been granted *and* the user's own permissions.
 
@@ -47,7 +47,7 @@ In a delegated access scenario, an app may allow users to sign in with their per
 When a user signs in to an app they, or, in some cases, an administrator, are given a chance to consent to the delegated permissions. If they grant consent, the app can access resources and APIs within the boundaries of the user's permissions.
 
 > [!NOTE]
-> Permissions granted through [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json) don't limit the app to calling Microsoft Graph APIs only.
+> Permissions granted through [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json) don't limit the app to calling Microsoft Graph APIs only.
 
 ### Application permissions
 
@@ -58,10 +58,10 @@ For apps that access resources and APIs without a signed-in user, the applicatio
 Apart from being assigned Microsoft Graph application permissions, an app may also be granted the privileges it needs through one of the following conditions:
 
 - When the app is assigned ownership of the resource that it intends to manage.
-- When the app is assigned an Azure AD built-in or custom administrative roles.
+- When the app is assigned a Microsoft Entra built-in or custom administrative roles.
 
 > [!NOTE]
-> Permissions granted through [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json) don't limit the app to calling Microsoft Graph APIs only.
+> Permissions granted through [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference?toc=/graph/toc.json) don't limit the app to calling Microsoft Graph APIs only.
 
 ### Comparison of delegated and application permissions
 
@@ -219,7 +219,7 @@ Apply the principle of least privilege when assigning and granting Microsoft Gra
 
 To set permissions using the Azure CLI, PowerShell, or infrastructure as code frameworks, you may need the identifier for the permission that you want to use instead of the name.
 
-To find the IDs for all Microsoft Graph permissions, see [All permissions and IDs](permissions-reference.md#all-permissions-and-ids). Alternatively, you can read information about all Microsoft Graph permissions programmatically through the [Get servicePrincipal](/graph/api/serviceprincipal-get) API in Microsoft Graph. The following is an example of the request.
+To find the IDs for all Microsoft Graph permissions, see [All permissions and IDs](permissions-reference.md#all-permissions-and-ids). Alternatively, you can read information about all Microsoft Graph permissions programmatically through the [Get servicePrincipal](/graph/api/serviceprincipal-get) API in Microsoft Graph. The following example shows a request.
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000-c000-000000000000')?$select=id,appId,displayName,appRoles,oauth2PermissionScopes,resourceSpecificApplicationPermissions
@@ -228,5 +228,5 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals(appId='00000003-0000-0000
 ## See also
 
 - [Microsoft Graph permissions reference](permissions-reference.md).
-- [Overview of role-based access control in Azure Active Directory](/azure/active-directory/roles/custom-overview).
+- [Overview of role-based access control in Microsoft Entra ID](/azure/active-directory/roles/custom-overview).
 - [Understanding delegated access](/azure/active-directory/develop/delegated-access-primer)

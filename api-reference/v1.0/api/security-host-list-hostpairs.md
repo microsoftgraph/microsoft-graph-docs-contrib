@@ -42,7 +42,7 @@ The following properties can be used for `$filter` calls.
 |Property|Example|Notes|
 |:---|:---|:---|
 |All [hostPair](../resources/security-hostpair.md) properties|`$filter=(linkKind eq 'redirect')`|Use the name as it appears in the [hostPair](../resources/security-hostpair.md) resource.|
-|childHost/id|`$filter=(childHost/id eq 'contoso.com')`|Full path is requried for `$filter` usage.|
+|childHost/id|`$filter=(childHost/id eq 'contoso.com')`|Full path is required for `$filter` usage.|
 |parentHost/id|`$filter=(parentHost/id in ('contoso.com','downstream.consoso.com'))`|Full path is required for `$filter` usage.|
 
 The following properties can be used for `$orderby` calls.
@@ -57,8 +57,8 @@ The following properties can be used for `$select` calls.
 |Property|Example|Notes|
 |:---|:---|:---|
 |All [hostPair](../resources/security-hostpair.md) properties|`$select=id,firstSeenDateTime`|Use the name as it appears in the [hostPair](../resources/security-hostpair.md) resource.|
-|parentHost|`$select=parentHost`|Does not support selecting on nested properties (for example `parentHost/id`).|
-|childHost|`$select=childHost`|Does not support selecting on nested properties (for example `childHost/id`).|
+|parentHost|`$select=parentHost`|Doesn't support selecting on nested properties (for example `parentHost/id`).|
+|childHost|`$select=childHost`|Doesn't support selecting on nested properties (for example `childHost/id`).|
 
 ## Request headers
 |Name|Description|
@@ -66,7 +66,7 @@ The following properties can be used for `$select` calls.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.hostPair](../resources/security-hostpair.md) objects in the response body.
@@ -74,7 +74,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Request
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -117,10 +117,8 @@ GET https://graph.microsoft.com/v1.0/security/threatIntelligence/hosts/contoso.c
 
 ---
 
----
-
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

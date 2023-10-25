@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the identity of an instance of an application. An application instance is a resource account created by [**New-CsOnlineApplicationInstance**](/powershell/module/skype/new-csonlineapplicationinstance). For example, you might have multiple Call Queue application instances that are all backed by the same Azure Active Directory application. These application instances are represented in Azure Active Directory by disabled user accounts.
+Represents the identity of an instance of an application. An application instance is a resource account created by [**New-CsOnlineApplicationInstance**](/powershell/module/skype/new-csonlineapplicationinstance). For example, you might have multiple Call Queue application instances that are all backed by the same Microsoft Entra application. These application instances are represented in Microsoft Entra ID by disabled user accounts.
 
 Inherits from [identity](identity.md).
 
@@ -21,7 +21,7 @@ Inherits from [identity](identity.md).
 
 | Property                       | Type                        | Description                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| id | String | Inherited from **identity**. The object ID of the resource account user in Azure Active Directory. |
+| id | String | Inherited from **identity**. The object ID of the resource account user in Microsoft Entra ID. |
 | displayName | String | Inherited from **identity**. The display name associated with the resource account. |
 | tenantId | String | The application's tenant ID. |
 | hidden | Boolean | True if the participant wouldn't like to be shown in other participants' rosters. |

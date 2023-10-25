@@ -43,7 +43,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this call returns a `204 No Content` response.

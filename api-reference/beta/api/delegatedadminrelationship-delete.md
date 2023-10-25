@@ -3,7 +3,7 @@ title: "Delete delegatedAdminRelationship"
 description: "Deletes a delegatedAdminRelationship object."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.prod: partner-customer-administration
 doc_type: apiPageType
 ---
 
@@ -42,7 +42,7 @@ DELETE /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelations
 |If-Match|If-match: {etag}. Last known ETag value for the **delegatedAdminRelationship** to be deleted. Retrieve the ETag value from a LIST or GET operation. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

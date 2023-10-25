@@ -43,7 +43,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 |Authorization  |Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and an **accounts** object in the response body.
