@@ -23,7 +23,7 @@ Some resources support rich notifications, that is, notifications that include r
 
 ## Permissions
 
-Creating a subscription requires read permission to the resource. For example, to get change notifications on messages, your app needs the Mail.Read permission.
+Creating a subscription requires read permission to the resource. For example, to get change notifications on messages, your app needs the Mail.Read permissions.
 
 Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing the permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
@@ -85,11 +85,11 @@ Depending on the resource and the permission type (delegated or application) req
 
 ### driveItem
 
-Additional limitations apply for subscriptions on OneDrive items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.
+More limitations apply to subscriptions on OneDrive items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.
 
-On a personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Change notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other **driveItem** instances in its hierarchy. You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.
+On a personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Change notifications are sent for the requested changes on the subscribed folder or any file, folder, or other **driveItem** instances in its hierarchy. You can't subscribe to **drive** or **driveItem** instances that aren't folders, such as individual files.
 
-OneDrive for Business and SharePoint support sending your application notifications of security events that occur on a **driveItem**. To subscribe to these events, add the `prefer:includesecuritywebhooks` header to your request to create a subscription. After the subscription is created, you will receive notifications when the permissions on an item change. This header is applicable to SharePoint and OneDrive for Business but not consumer OneDrive accounts.
+OneDrive for Business and SharePoint support sending your application notifications of security events that occur on a **driveItem**. To subscribe to these events, add the `prefer:includesecuritywebhooks` header to your request to create a subscription. After the subscription is created, you will receive notifications when the permissions on an item change. This header applies to SharePoint and OneDrive for Business but not consumer OneDrive accounts.
 
 ### contact, event, and message
 
@@ -133,7 +133,7 @@ For details about how errors are returned, see [Error responses][error-response]
 In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
 The `clientState` and `latestSupportedTlsVersion` fields are optional.
 
-This request creates a subscription for change notifications about new mail received by the currently signed in user.
+This request creates a subscription for change notifications about new mail received by the currently signed-in user.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -194,7 +194,7 @@ The `clientState` and `latestSupportedTlsVersion` fields are optional.
 
 #### Duplicate subscription behavior
 
-Duplicate subscriptions are not allowed. When a subscription request contains the same values for **changeType** and **resource** that an existing subscription contains, the request will fail with an HTTP error code `409 Conflict`, and the error message `Subscription Id <> already exists for the requested combination`.
+Duplicate subscriptions aren't allowed. When a subscription request contains the same values for **changeType** and **resource** that an existing subscription contains, the request fails with an HTTP error code `409 Conflict`, and the error message `Subscription Id <> already exists for the requested combination`.
 
 #### Resources examples
 
