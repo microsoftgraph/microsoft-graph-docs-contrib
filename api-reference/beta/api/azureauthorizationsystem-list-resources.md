@@ -113,7 +113,7 @@ Returns collection of all azureAuthorizationSystemResource entities for a provid
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_azureauthorizationsystemresource"
+  "name": "list_azureauthorizationsystemresource_entitlements"
 }
 -->
 ``` http
