@@ -45,7 +45,7 @@ In the request body, supply the [synchronizationSchema](../resources/synchroniza
 
 ## Response
 
-If successful, returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 

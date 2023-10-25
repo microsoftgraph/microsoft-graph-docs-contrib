@@ -1,6 +1,6 @@
 ---
 title: "Get a scopedRoleMember"
-description: "Get an Azure Active Directory (Azure AD) role assignment with administrative unit scope."
+description: "Get a Microsoft Entra role assignment with administrative unit scope."
 author: "DougKirschner"
 ms.localizationpriority: medium
 ms.prod: "directory-management"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get an Azure Active Directory (Azure AD) role assignment with administrative unit scope.
+Get a Microsoft Entra role assignment with administrative unit scope.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -39,7 +39,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

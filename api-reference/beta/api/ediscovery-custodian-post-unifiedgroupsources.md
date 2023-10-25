@@ -49,7 +49,7 @@ POST /compliance/ediscovery/cases/{id}/custodians/{id}/unifiedGroupSources
 
 In the request body, supply a JSON representation of the [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md) object.
 
-The following table shows the properties that are required when you create the [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md).
+The following table lists the properties that are required when you create the [unifiedGroupSource](../resources/ediscovery-unifiedgroupsource.md).
 
 >**Note:** Either **group** or **group@odata.bind** is required in order to create a **unifiedGroupSource**.
 

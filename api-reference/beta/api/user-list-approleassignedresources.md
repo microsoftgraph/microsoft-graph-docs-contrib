@@ -49,7 +49,7 @@ This method supports the `$count`, `$expand`, `$filter`, `$orderby`, `$select`, 
 | ConsistencyLevel | eventual. This header is required when calling this API. For more information about the use of **ConsistencyLevel**, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries). |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -106,7 +106,7 @@ ConsistencyLevel: eventual
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

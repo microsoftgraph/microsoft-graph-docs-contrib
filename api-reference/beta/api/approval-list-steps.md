@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 List the [approvalStep](../resources/approvalstep.md) objects associated with an [approval](../resources/approval.md). This API request is made by an approver in the following scenarios:
 
 - In [entitlement management](../resources/entitlementmanagement-overview.md), providing the identifier of the [access package assignment request](../resources/accesspackageassignmentrequest.md).
-- In [PIM for Azure AD roles](../resources/privilegedidentitymanagementv3-overview.md), providing the identifier of the [role assignment schedule request](../resources/unifiedroleassignmentschedulerequest.md).
+- In [PIM for Microsoft Entra roles](../resources/privilegedidentitymanagementv3-overview.md), providing the identifier of the [role assignment schedule request](../resources/unifiedroleassignmentschedulerequest.md).
 - In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), providing the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
@@ -33,7 +33,9 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
-### For PIM for Azure AD roles
+<a name='for-pim-for-azure-ad-roles'></a>
+
+### For PIM for Microsoft Entra roles
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
@@ -58,7 +60,7 @@ To list the approval steps in entitlement management:
 GET /identityGovernance/entitlementManagement/accessPackageAssignmentApprovals/{id}/steps
 ```
 
-To list the approval steps in PIM for Azure AD roles:
+To list the approval steps in PIM for Microsoft Entra roles:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -80,7 +82,7 @@ GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{id}/steps
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -90,7 +92,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -134,7 +136,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/ac
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

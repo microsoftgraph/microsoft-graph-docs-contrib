@@ -11,7 +11,7 @@ doc_type: "resourcePageType"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains certains customizable permissions of default user role in Azure AD.
+Contains certains customizable permissions of default user role in Microsoft Entra ID.
 
 ## Properties
 
@@ -60,5 +60,3 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
-
-

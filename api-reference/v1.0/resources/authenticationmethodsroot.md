@@ -1,6 +1,6 @@
 ---
 title: "authenticationMethodsRoot resource type"
-description: "Container for navigation properties of resources for Azure Active Directory authentication methods."
+description: "Container for navigation properties of resources for Microsoft Entra authentication methods."
 author: "kvenkit"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Container for navigation properties of resources for Azure Active Directory authentication methods.
+Container for navigation properties of resources for Microsoft Entra authentication methods.
 
 Inherits from [entity](../resources/entity.md).
 

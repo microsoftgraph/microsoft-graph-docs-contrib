@@ -13,13 +13,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object for an RBAC provider. You cannot delete built-in roles. This feature requires an Azure AD Premium P1 or P2 license.
+Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object for an RBAC provider. You cannot delete built-in roles. This feature requires a Microsoft Entra ID P1 or P2 license.
 
 
 The following RBAC providers are currently supported:
 - Cloud PC
 - device management (Intune)
-- directory (Azure AD) 
+- directory (Microsoft Entra ID) 
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -43,7 +43,9 @@ Depending on the RBAC provider and the permission type (delegated or application
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | DeviceManagementRBAC.ReadWrite.All |
 
-### For a directory (Azure AD) provider
+<a name='for-a-directory-azure-ad-provider'></a>
+
+### For a directory (Microsoft Entra ID) provider
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -81,11 +83,11 @@ DELETE /roleManagement/cloudPc/roleDefinitions/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example 1: Delete a **unifiedRoleDefinition** resource for a directory provider
 
@@ -138,7 +140,7 @@ DELETE https://graph.microsoft.com/beta/roleManagement/directory/roleDefinitions
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -210,7 +212,7 @@ DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions/b
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

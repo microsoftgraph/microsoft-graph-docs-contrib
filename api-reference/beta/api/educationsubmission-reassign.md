@@ -53,7 +53,7 @@ If successful, this method returns `200 OK` response code and an [educationSubmi
 ### Example 1: Request without optional Prefer header
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -164,7 +164,7 @@ HTTP/1.1 200 OK
 The following example shows how to call this method.
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

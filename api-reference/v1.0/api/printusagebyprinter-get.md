@@ -45,7 +45,7 @@ This method supports some of the OData query parameters to help customize the re
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -118,7 +118,14 @@ Content-Type: application/json
     "usageDate": "Date",
     "completedBlackAndWhiteJobCount": 42,
     "completedColorJobCount": 0,
-    "incompleteJobCount": 6
+    "incompleteJobCount": 6,
+    "completedJobCount": 110,
+    "pageCount": 138,
+    "blackAndWhitePageCount": 0,
+    "colorPageCount": 138,
+    "mediaSheetCount": 132,
+    "doubleSidedSheetCount": 12,
+    "singleSidedSheetCount": 120
 }
 ```
 

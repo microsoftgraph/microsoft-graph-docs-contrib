@@ -51,7 +51,7 @@ Since this method sends an already existing draft message, specifying a request 
 
 ## Response
 
-If successful, this method returns `202 Accepted` response code. It does not return anything in the response body.
+If successful, this method returns `202 Accepted` response code. It doesn't return anything in the response body.
 
 ## Examples
 

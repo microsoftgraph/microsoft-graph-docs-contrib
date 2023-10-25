@@ -109,7 +109,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ce
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -194,7 +194,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/58399dff-ce
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

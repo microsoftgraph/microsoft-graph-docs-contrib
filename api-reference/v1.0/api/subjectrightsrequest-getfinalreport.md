@@ -25,12 +25,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+[!INCLUDE [subject-rights-request-privacy-deprecate](../../includes/subject-rights-request-privacy-deprecate.md)]
+
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET /privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalReport
+GET /security/subjectRightsRequests/4EF5E3E6-545B-4B5F-A8B4-FF4F9980D7A9/getFinalReport
+GET /privacy/subjectRightsRequests/4EF5E3E6-545B-4B5F-A8B4-FF4F9980D7A9/getFinalReport
 ```
 
 ## Request headers
@@ -56,7 +59,7 @@ If successful, this function returns a `200 OK` response code and a Stream in th
 }
 -->
 ``` http
-GET https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests/{subjectRightsRequestId}/getFinalReport
+GET https://graph.microsoft.com/v1.0/privacy/subjectRightsRequests/4ef5e3e6-545b-4b5f-a8b4-ff4f9980d7a9/getFinalReport
 ```
 
 # [C#](#tab/csharp)

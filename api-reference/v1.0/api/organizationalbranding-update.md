@@ -66,7 +66,7 @@ If successful, this method returns a `204 No Content` response code.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -121,7 +121,7 @@ Accept-Language: 0
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
@@ -137,7 +137,7 @@ The following request updates the banner logo for the default branding. To updat
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -190,7 +190,7 @@ Content-Type: image/jpeg
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response"
