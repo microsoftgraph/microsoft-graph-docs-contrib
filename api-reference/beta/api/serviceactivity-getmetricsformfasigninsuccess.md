@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported    |
 | Application                            | Reports.Read.All |
 
-In addition to the delegated permissions, the signed-in user who is accessing the data needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference):
+In addition to the delegated permissions, the signed-in user who is accessing the data needs to belong to one of the following directory roles, which allow them to read sign-in reports:
 
 + Global Administrator
 + Global Reader
@@ -31,6 +31,8 @@ In addition to the delegated permissions, the signed-in user who is accessing th
 + Security Administrator
 + Security Operator
 + Security Reader
+
+To learn more about directory roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 
 ## HTTP request
 
@@ -44,7 +46,6 @@ GET /reports/serviceActivity/getMetricsForMfaSignInSuccess
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
