@@ -1,6 +1,6 @@
 ---
 title: "List azureAuthorizationSystemResources"
-description: "List the azureAuthorizationSystemResource objects and their properties for a provided Azure authorization system."
+description: "List the azureAuthorizationSystemResource objects and their properties for an Azure authorization system that you've onboarded to Permissions Management."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
