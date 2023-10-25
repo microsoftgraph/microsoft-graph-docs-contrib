@@ -95,7 +95,6 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/00af5dfb-85da-4b41-a67
 
 ---
 
-
 ### Response
 Here's an example of the response.
 <!-- {
