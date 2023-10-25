@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the different statuses of an authorizationSystem related to Microsoft Entra Permissions Management.
+Represents the details and status of the data collection process for the authorizationSystem that you've onboarded to Microsoft Entra Permissions Management.
 
 Inherits from [entity](../resources/entity.md).
 
