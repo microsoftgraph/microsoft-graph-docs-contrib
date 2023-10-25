@@ -156,7 +156,7 @@ For SDKs that support a fluent style, collections of entities can be accessed us
 
 ## Use $expand to access related entities
 
-You can use the `$expand` filter to request a related entity, or collection of entities, at the same time that you request the main entity.
+You can use the `$expand` filter to request a related entity or collection of entities at the same time that you request the main entity.
 
 # [C#](#tab/csharp)
 
