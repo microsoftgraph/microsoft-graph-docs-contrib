@@ -18,8 +18,6 @@ Represents the details and status of the data collection process for the authori
 Inherits from [entity](../resources/entity.md).
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
 None.
 
 ## Properties
