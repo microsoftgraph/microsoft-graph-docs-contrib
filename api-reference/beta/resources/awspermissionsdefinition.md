@@ -3,7 +3,7 @@ title: "awsPermissionsDefinition resource type"
 description: "AWS Specific Permissions Definition that extends permissionsDefinition that requires AWS Specific ActionInfo."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 

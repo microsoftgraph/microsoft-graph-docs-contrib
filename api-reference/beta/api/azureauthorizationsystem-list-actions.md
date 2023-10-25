@@ -3,7 +3,7 @@ title: "List azureAuthorizationSystemTypeActions"
 description: "List the azureAuthorizationSystemTypeAction objects and their properties."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 

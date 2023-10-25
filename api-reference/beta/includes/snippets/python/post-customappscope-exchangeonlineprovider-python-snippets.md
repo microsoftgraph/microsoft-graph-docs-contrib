@@ -19,7 +19,7 @@ request_body = CustomAppScope(
 	),
 )
 
-result = await graph_client.role_management.exchange.custom_app_scopes.post(request_body = request_body)
+result = await graph_client.role_management.exchange.custom_app_scopes.post(body = request_body)
 
 
 ```

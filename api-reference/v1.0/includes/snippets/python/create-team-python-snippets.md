@@ -23,7 +23,7 @@ request_body = Team(
 	),
 )
 
-result = await graph_client.groups.by_group_id('group-id').team.put(request_body = request_body)
+result = await graph_client.groups.by_group_id('group-id').team.put(body = request_body)
 
 
 ```

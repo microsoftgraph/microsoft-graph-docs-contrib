@@ -50,7 +50,7 @@ request_body = IosManagedAppProtection(
 	custom_browser_protocol = "Custom Browser Protocol value",
 )
 
-result = await graph_client.device_app_management.io_managed_app_protections.post(request_body = request_body)
+result = await graph_client.device_app_management.io_managed_app_protections.post(body = request_body)
 
 
 ```

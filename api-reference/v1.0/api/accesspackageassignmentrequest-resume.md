@@ -11,7 +11,9 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action. It is performed on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object whose **requestStatus** is in a `WaitingForCallback` state. 
+In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action. It is performed on an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object whose **requestStatus** is in a `WaitingForCallback` state.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /identityGovernance/entitlementManagement/accessPackageAssignmentRequests/{accessPackageAssignmentRequestId}/resume
+POST /identityGovernance/entitlementManagement/assignmentRequests/{accessPackageAssignmentRequestId}/resume
 ```
 
 ## Request headers
@@ -70,7 +72,7 @@ The following is an example of a call to resume an access package assignment req
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/0e60f18c-b2a0-4887-9da8-da2e30a39d99/resume
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests/0e60f18c-b2a0-4887-9da8-da2e30a39d99/resume
 Content-Type: application/json
 
 {
@@ -107,7 +109,7 @@ The following is an example to resume the processing of an access package assign
 }
 -->
 ``` http
-POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/9e60f18c-b2a0-4887-9da8-da2e30a39d99/resume
+POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/assignmentRequests/9e60f18c-b2a0-4887-9da8-da2e30a39d99/resume
 Content-Type: application/json
 
 {

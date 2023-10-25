@@ -3,7 +3,7 @@ title: "Get awsPolicy"
 description: "Read the properties and relationships of an awsPolicy object."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 

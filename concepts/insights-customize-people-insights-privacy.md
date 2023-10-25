@@ -36,12 +36,12 @@ Use the [update](/graph/api/insightssettings-update?view=graph-rest-beta&preserv
 
 Keep the following in mind when updating item insights settings: 
 * People insights settings are available only in the beta endpoint. 
-* The update operation doesn’t verify that a group exists. Make sure to get the correct ID of the Azure AD group from the Azure portal, verify that the group exists, and that the intended users have been added to the group. If the group doesn’t exist, no changes will be made for any user in the organization. 
+* The update operation doesn't verify that a group exists. Make sure to get the correct ID of the Azure AD group from the Microsoft Entra admin center, verify that the group exists, and that the intended users have been added to the group. If the group doesn't exist, no changes will be made for any user in the organization. 
 * It can take up to 24 hours or longer for updates to **insightsSettings** to be reflected. 
 
 ## Behavior changes in the Microsoft 365 UI and people API 
 
-Disabling people insights means that the data is not generated for a specified user. It doesn’t affect search and ranking of results.
+Disabling people insights means that the data is not generated for a specified user. It doesn't affect search and ranking of results.
 
 When customizing privacy for people insights, you can observe behavioral changes in the following areas:
 * Microsoft 365 [profile card](https://support.microsoft.com/office/profile-cards-in-microsoft-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501)

@@ -14,7 +14,7 @@ request_body = PersonInterest(
 	]
 )
 
-result = await graph_client.me.profile.interests.by_interest_id('personInterest-id').patch(request_body = request_body)
+result = await graph_client.me.profile.interests.by_interest_id('personInterest-id').patch(body = request_body)
 
 
 ```

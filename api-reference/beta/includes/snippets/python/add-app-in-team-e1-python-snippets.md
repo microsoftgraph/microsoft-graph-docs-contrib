@@ -14,7 +14,7 @@ request_body = TeamsAppInstallation(
 	}
 )
 
-result = await graph_client.teams.by_team_id('team-id').installed_apps.post(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').installed_apps.post(body = request_body)
 
 
 ```

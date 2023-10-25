@@ -17,7 +17,7 @@ request_body = OAuth2PermissionGrant(
 	expiry_time = "2023-03-17T00:00:00Z",
 )
 
-result = await graph_client.oauth2_permission_grants.post(request_body = request_body)
+result = await graph_client.oauth2_permission_grants.post(body = request_body)
 
 
 ```

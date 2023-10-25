@@ -18,6 +18,8 @@ In PIM, retrieve the requests for active role assignments for a particular princ
 > This API doesn't return active role assignments through group memberships.
 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

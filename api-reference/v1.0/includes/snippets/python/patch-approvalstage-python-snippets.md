@@ -13,7 +13,7 @@ request_body = ApprovalStage(
 	justification = "OK",
 )
 
-result = await graph_client.identity_governance.entitlement_management.acce_package_assignment_approvals.by_acce_package_assignment_approval_id('approval-id').stages.by_stage_id('approvalStage-id').patch(request_body = request_body)
+result = await graph_client.identity_governance.entitlement_management.acce_package_assignment_approvals.by_acce_package_assignment_approval_id('approval-id').stages.by_stage_id('approvalStage-id').patch(body = request_body)
 
 
 ```

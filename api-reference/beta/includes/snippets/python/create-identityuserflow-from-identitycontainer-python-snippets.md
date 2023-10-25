@@ -14,7 +14,7 @@ request_body = IdentityUserFlow(
 	user_flow_type_version = 1,
 )
 
-result = await graph_client.identity.user_flows.post(request_body = request_body)
+result = await graph_client.identity.user_flows.post(body = request_body)
 
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "Update authenticationListener"
 description: "Update the listener defined for an event in the authentication pipeline."
-author: "jkdouglas"
+author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

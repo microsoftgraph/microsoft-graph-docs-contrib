@@ -26,7 +26,7 @@ request_body = BookingBusiness(
 	default_currency_iso = "USD",
 )
 
-result = await graph_client.solutions.booking_businesses.post(request_body = request_body)
+result = await graph_client.solutions.booking_businesses.post(body = request_body)
 
 
 ```

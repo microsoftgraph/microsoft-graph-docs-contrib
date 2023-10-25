@@ -50,7 +50,7 @@ request_body = Event(
 	]
 )
 
-result = await graph_client.me.events.post(request_body = request_body)
+result = await graph_client.me.events.post(body = request_body)
 
 
 ```

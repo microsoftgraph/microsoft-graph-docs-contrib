@@ -20,7 +20,7 @@ request_body = OnPremisesConditionalAccessSettings(
 	override_default_rule = True,
 )
 
-result = await graph_client.device_management.conditional_acces_settings.patch(request_body = request_body)
+result = await graph_client.device_management.conditional_acces_settings.patch(body = request_body)
 
 
 ```

@@ -36,7 +36,7 @@ request_body = Event(
 	]
 )
 
-result = await graph_client.groups.by_group_id('group-id').events.post(request_body = request_body)
+result = await graph_client.groups.by_group_id('group-id').events.post(body = request_body)
 
 
 ```

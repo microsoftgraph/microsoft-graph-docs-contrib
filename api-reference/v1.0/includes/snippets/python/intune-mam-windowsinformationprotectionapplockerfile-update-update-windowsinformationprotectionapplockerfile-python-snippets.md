@@ -16,7 +16,7 @@ request_body = WindowsInformationProtectionAppLockerFile(
 	version = "Version value",
 )
 
-result = await graph_client.device_app_management.window_information_protection_policies.by_window_information_protection_policie_id('windowsInformationProtectionPolicy-id').exempt_app_locker_files.by_exempt_app_locker_file_id('windowsInformationProtectionAppLockerFile-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.window_information_protection_policies.by_window_information_protection_policie_id('windowsInformationProtectionPolicy-id').exempt_app_locker_files.by_exempt_app_locker_file_id('windowsInformationProtectionAppLockerFile-id').patch(body = request_body)
 
 
 ```

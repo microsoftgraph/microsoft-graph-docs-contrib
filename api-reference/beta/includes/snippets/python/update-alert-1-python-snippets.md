@@ -25,7 +25,7 @@ request_body = Alert(
 	),
 )
 
-result = await graph_client.security.alerts.by_alert_id('alert-id').patch(request_body = request_body)
+result = await graph_client.security.alerts.by_alert_id('alert-id').patch(body = request_body)
 
 
 ```

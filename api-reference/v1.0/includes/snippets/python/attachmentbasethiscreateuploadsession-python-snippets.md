@@ -16,7 +16,7 @@ request_body = CreateUploadSessionPostRequestBody(
 	),
 )
 
-result = await graph_client.me.todo.lists.by_list_id('todoTaskList-id').tasks.by_task_id('todoTask-id').attachments.create_upload_session.post(request_body = request_body)
+result = await graph_client.me.todo.lists.by_list_id('todoTaskList-id').tasks.by_task_id('todoTask-id').attachments.create_upload_session.post(body = request_body)
 
 
 ```

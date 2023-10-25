@@ -14,7 +14,7 @@ request_body = BookingCustomer(
 	email_address = "adele@relecloud.com",
 )
 
-result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').customers.by_customer_id('bookingCustomerBase-id').patch(request_body = request_body)
+result = await graph_client.solutions.booking_businesses.by_booking_businesse_id('bookingBusiness-id').customers.by_customer_id('bookingCustomerBase-id').patch(body = request_body)
 
 
 ```

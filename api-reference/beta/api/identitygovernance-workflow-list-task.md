@@ -15,6 +15,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Retrieve the details of the built-in tasks in Lifecycle Workflows.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,12 +36,12 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/lifecycleWorkflows/workflow/{workflowId}/tasks
+GET /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/tasks
 ```
 
 ## Optional query parameters
 
-This method supports the `$search`, `$orderBy`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$search`, `$orderby`, and `$filter` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -66,7 +68,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflow/156ce798-1eb6-4e0a-8515-e79f54d04390/tasks
+GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workflows/156ce798-1eb6-4e0a-8515-e79f54d04390/tasks
 ```
 
 ### Response

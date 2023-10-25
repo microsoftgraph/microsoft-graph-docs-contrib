@@ -22,7 +22,7 @@ request_body = Contact(
 	]
 )
 
-result = await graph_client.me.contacts.post(request_body = request_body)
+result = await graph_client.me.contacts.post(body = request_body)
 
 
 ```

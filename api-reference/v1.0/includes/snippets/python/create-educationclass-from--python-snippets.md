@@ -27,7 +27,7 @@ request_body = EducationClass(
 	),
 )
 
-result = await graph_client.education.classes.post(request_body = request_body)
+result = await graph_client.education.classes.post(body = request_body)
 
 
 ```

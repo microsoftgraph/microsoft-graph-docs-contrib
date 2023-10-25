@@ -16,7 +16,7 @@ request_body = Device(
 	}
 )
 
-result = await graph_client.devices.by_device_id('device-id').patch(request_body = request_body)
+result = await graph_client.devices.by_device_id('device-id').patch(body = request_body)
 
 
 ```

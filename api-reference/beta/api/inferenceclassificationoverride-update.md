@@ -3,7 +3,7 @@ title: "Update inferenceClassificationOverride"
 description: "Change the **classifyAs** field of a Focused Inbox override as specified. "
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: mail
 ---
 
@@ -21,6 +21,8 @@ If an override exists for a sender and the sender changes his/her display name, 
 
 If an override exists for a sender and the sender changes his/her SMTP address, [deleting](inferenceclassificationoverride-delete.md) the existing override and [creating](inferenceclassification-post-overrides.md) a new one with
 the new SMTP address is the only way to "update" the override for this sender.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -108,7 +110,7 @@ Content-type: application/json
 ---
 
 ### Response
-The following is an example of the response. 
+The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

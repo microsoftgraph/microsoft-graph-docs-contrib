@@ -32,7 +32,7 @@ request_body = ReplyPostRequestBody(
 	),
 )
 
-await graph_client.groups.by_group_id('group-id').threads.by_thread_id('conversationThread-id').posts.by_post_id('post-id').reply.post(request_body = request_body)
+await graph_client.groups.by_group_id('group-id').threads.by_thread_id('conversationThread-id').posts.by_post_id('post-id').reply.post(body = request_body)
 
 
 ```

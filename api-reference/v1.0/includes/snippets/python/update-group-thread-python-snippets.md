@@ -22,7 +22,7 @@ request_body = ConversationThread(
 	}
 )
 
-result = await graph_client.groups.by_group_id('group-id').threads.by_thread_id('conversationThread-id').patch(request_body = request_body)
+result = await graph_client.groups.by_group_id('group-id').threads.by_thread_id('conversationThread-id').patch(body = request_body)
 
 
 ```

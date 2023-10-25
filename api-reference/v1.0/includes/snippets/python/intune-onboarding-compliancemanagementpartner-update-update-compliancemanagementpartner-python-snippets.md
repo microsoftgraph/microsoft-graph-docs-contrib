@@ -45,7 +45,7 @@ request_body = ComplianceManagementPartner(
 	]
 )
 
-result = await graph_client.device_management.compliance_management_partners.by_compliance_management_partner_id('complianceManagementPartner-id').patch(request_body = request_body)
+result = await graph_client.device_management.compliance_management_partners.by_compliance_management_partner_id('complianceManagementPartner-id').patch(body = request_body)
 
 
 ```

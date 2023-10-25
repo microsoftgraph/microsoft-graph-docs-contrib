@@ -16,7 +16,7 @@ request_body = TokenIssuancePolicy(
 	is_organization_default = True,
 )
 
-result = await graph_client.policies.token_issuance_policies.by_token_issuance_policie_id('tokenIssuancePolicy-id').patch(request_body = request_body)
+result = await graph_client.policies.token_issuance_policies.by_token_issuance_policie_id('tokenIssuancePolicy-id').patch(body = request_body)
 
 
 ```

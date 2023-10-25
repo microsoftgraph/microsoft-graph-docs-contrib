@@ -22,6 +22,8 @@ This operation returns by default only a subset of the properties for each group
 
 **Note**: To create a [team](../resources/team.md), first create a group then add a team to it, see [create team](../api/team-put-teams.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -63,7 +65,7 @@ The following table shows the properties that are required when you create the [
 | displayName     | string  | The name to display in the address book for the group. Maximum length is 256 characters. Required.                                                                                                                                                                                                                                         |
 | mailEnabled     | boolean | Set to `true` for mail-enabled groups. Required.                                                                                                                                                                                                                                                                                           |
 | mailNickname    | string  | The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters. This property can contain only characters in the [ASCII character set 0 - 127](/office/vba/language/reference/user-interface-help/character-set-0127) except the following: ` @ () \ [] " ; : <> , SPACE`. Required. |
-| securityEnabled | boolean | Set to `true` for security-enabled groups, including Microsoft 365 groups. Required. **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.                                                                                                                                    |
+| securityEnabled | boolean | Set to `true` for security-enabled groups, including Microsoft 365 groups. Required. **Note:** Groups created using the Microsoft Entra admin center or the Azure portal always have **securityEnabled** initially set to `true`.                                                                                                                                    |
 
 > [!IMPORTANT]
 >
@@ -174,38 +176,38 @@ Content-type: application/json
 
 {
    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups/$entity",
-	 "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
-	 "deletedDateTime": null,
-	 "classification": null,
-	 "createdDateTime": "2018-12-22T02:21:05Z",
-	 "description": "Self help community for golf",
-	 "displayName": "Golf Assist",
-	 "expirationDateTime": null,
-	 "groupTypes": [
-	     "Unified"
-	 ],
+     "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+     "deletedDateTime": null,
+     "classification": null,
+     "createdDateTime": "2018-12-22T02:21:05Z",
+     "description": "Self help community for golf",
+     "displayName": "Golf Assist",
+     "expirationDateTime": null,
+     "groupTypes": [
+         "Unified"
+     ],
    "isAssignableToRole": null,
-	 "mail": "golfassist@contoso.com",
-	 "mailEnabled": true,
-	 "mailNickname": "golfassist",
-	 "membershipRule": null,
-	 "membershipRuleProcessingState": null,
-	 "onPremisesLastSyncDateTime": null,
-	 "onPremisesSecurityIdentifier": null,
-	 "onPremisesSyncEnabled": null,
-	 "preferredDataLocation": "CAN",
-	 "preferredLanguage": null,
-	 "proxyAddresses": [
-	     "SMTP:golfassist@contoso.onmicrosoft.com"
-	 ],
-	 "renewedDateTime": "2018-12-22T02:21:05Z",
-	 "resourceBehaviorOptions": [],
-	 "resourceProvisioningOptions": [],
-	 "securityEnabled": false,
+     "mail": "golfassist@contoso.com",
+     "mailEnabled": true,
+     "mailNickname": "golfassist",
+     "membershipRule": null,
+     "membershipRuleProcessingState": null,
+     "onPremisesLastSyncDateTime": null,
+     "onPremisesSecurityIdentifier": null,
+     "onPremisesSyncEnabled": null,
+     "preferredDataLocation": "CAN",
+     "preferredLanguage": null,
+     "proxyAddresses": [
+         "SMTP:golfassist@contoso.onmicrosoft.com"
+     ],
+     "renewedDateTime": "2018-12-22T02:21:05Z",
+     "resourceBehaviorOptions": [],
+     "resourceProvisioningOptions": [],
+     "securityEnabled": false,
    "securityIdentifier": "S-1-12-1-1753967289-1089268234-832641959-555555555",
-	 "theme": null,
-	 "visibility": "Public",
-	 "onPremisesProvisioningErrors": []
+     "theme": null,
+     "visibility": "Public",
+     "onPremisesProvisioningErrors": []
 }
 ```
 

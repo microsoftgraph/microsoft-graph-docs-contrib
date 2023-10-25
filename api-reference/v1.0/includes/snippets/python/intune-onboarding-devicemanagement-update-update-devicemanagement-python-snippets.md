@@ -42,7 +42,7 @@ request_body = DeviceManagement(
 	),
 )
 
-result = await graph_client.device_management.patch(request_body = request_body)
+result = await graph_client.device_management.patch(body = request_body)
 
 
 ```

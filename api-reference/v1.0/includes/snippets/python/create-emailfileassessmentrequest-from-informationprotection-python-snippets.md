@@ -16,7 +16,7 @@ request_body = EmailFileAssessmentRequest(
 	content_data = "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC.....",
 )
 
-result = await graph_client.information_protection.threat_assessment_requests.post(request_body = request_body)
+result = await graph_client.information_protection.threat_assessment_requests.post(body = request_body)
 
 
 ```

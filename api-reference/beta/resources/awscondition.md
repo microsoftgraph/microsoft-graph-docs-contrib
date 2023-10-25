@@ -3,7 +3,7 @@ title: "awsCondition resource type"
 description: "An OpenType to represent AWS Conditions JSON that will be used in AWS Statements."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 

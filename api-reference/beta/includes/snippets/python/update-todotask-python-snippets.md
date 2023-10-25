@@ -15,7 +15,7 @@ request_body = TodoTask(
 	),
 )
 
-result = await graph_client.me.todo.lists.by_list_id('todoTaskList-id').tasks.by_task_id('todoTask-id').patch(request_body = request_body)
+result = await graph_client.me.todo.lists.by_list_id('todoTaskList-id').tasks.by_task_id('todoTask-id').patch(body = request_body)
 
 
 ```

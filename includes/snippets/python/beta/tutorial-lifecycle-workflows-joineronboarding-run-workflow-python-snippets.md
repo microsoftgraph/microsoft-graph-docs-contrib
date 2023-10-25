@@ -16,7 +16,7 @@ request_body = ActivatePostRequestBody(
 	]
 )
 
-await graph_client.identity_governance.lifecycle_workflows.workflows.by_workflow_id('workflow-id').microsoft_graph_identity_governance_activate.post(request_body = request_body)
+await graph_client.identity_governance.lifecycle_workflows.workflows.by_workflow_id('workflow-id').microsoft_graph_identity_governance_activate.post(body = request_body)
 
 
 ```

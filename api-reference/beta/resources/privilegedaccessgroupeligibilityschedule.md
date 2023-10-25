@@ -43,7 +43,7 @@ Inherits from [privilegedAccessSchedule](../resources/privilegedaccessschedule.m
 |principal|[directoryObject](../resources/directoryobject.md)|References the principal that's in the scope of this membership or ownership eligibility request to the group that's governed by PIM. Supports `$expand`.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

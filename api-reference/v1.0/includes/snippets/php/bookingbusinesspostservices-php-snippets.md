@@ -28,13 +28,13 @@ $additionalData = [
 ];
 $defaultLocationAddress->setAdditionalData($additionalData);
 $defaultLocation->setAddress($defaultLocationAddress);
-$DefaultLocation->setCoordinates(null);
+$defaultLocation->setCoordinates(null);
 $defaultLocation->setDisplayName('Contoso Lunch Delivery');
-$DefaultLocation->setLocationEmailAddress(null);
-$DefaultLocation->setLocationType(null);
-$DefaultLocation->setLocationUri(null);
-$DefaultLocation->setUniqueId(null);
-$DefaultLocation->setUniqueIdType(null);
+$defaultLocation->setLocationEmailAddress(null);
+$defaultLocation->setLocationType(null);
+$defaultLocation->setLocationUri(null);
+$defaultLocation->setUniqueId(null);
+$defaultLocation->setUniqueIdType(null);
 $additionalData = [
 	'locationType@odata.type' => '#microsoft.graph.locationType',
 	'uniqueIdType@odata.type' => '#microsoft.graph.locationUniqueIdType',

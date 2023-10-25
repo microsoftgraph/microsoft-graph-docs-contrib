@@ -23,7 +23,7 @@ request_body = UpgradePostRequestBody(
 	),
 )
 
-await graph_client.chats.by_chat_id('chat-id').installed_apps.by_installed_app_id('teamsAppInstallation-id').upgrade.post(request_body = request_body)
+await graph_client.chats.by_chat_id('chat-id').installed_apps.by_installed_app_id('teamsAppInstallation-id').upgrade.post(body = request_body)
 
 
 ```

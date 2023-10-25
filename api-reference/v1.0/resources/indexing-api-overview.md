@@ -33,7 +33,7 @@ The use cases for the APIs in this section involve building [Microsoft Graph con
 
 The following are current known limitations:
 
-- Organizations are limited to a maximum of 10 connections (reach out if you need more).
+- Organizations are limited to a maximum of 30 connections. (If you need more connections, complete the [Request form](https://aka.ms/GraphConnectorsHigherCapacity).)
 - You can create up to 25 `externalItem` resources items per second.
 - An application is limited to 25 concurrent operations on a connection.
 - Connections have a capacity limit of 5,000,000 items or ~350 GB of data.

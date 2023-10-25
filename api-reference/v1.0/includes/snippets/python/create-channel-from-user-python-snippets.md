@@ -26,7 +26,7 @@ request_body = Channel(
 	]
 )
 
-result = await graph_client.teams.by_team_id('team-id').channels.post(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').channels.post(body = request_body)
 
 
 ```

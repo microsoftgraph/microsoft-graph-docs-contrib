@@ -24,7 +24,7 @@ request_body = Contact(
 	]
 )
 
-result = await graph_client.me.contacts.by_contact_id('contact-id').patch(request_body = request_body)
+result = await graph_client.me.contacts.by_contact_id('contact-id').patch(body = request_body)
 
 
 ```

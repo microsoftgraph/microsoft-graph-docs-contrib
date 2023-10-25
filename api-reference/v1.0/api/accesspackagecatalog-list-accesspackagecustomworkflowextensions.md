@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a list of the [accessPackageAssignmentRequestWorkflowExtension](../resources/accessPackageAssignmentRequestWorkflowExtension.md) and [accessPackageAssignmentWorkflowExtension](../resources/accessPackageAssignmentWorkflowExtension.md) objects and their properties. The resulting list includes all the **customAccessPackageWorkflowExtension** objects for the catalog that the caller has access to read. Each object includes an `@odata.type` property that indicates whether the object is an  **accessPackageAssignmentRequestWorkflowExtension** or an **accessPackageAssignmentWorkflowExtension**.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogId}/accessPackageCustomWorkflowExtensions
+GET /identityGovernance/entitlementManagement/catalogs/{catalogId}/customWorkflowExtensions
 ```
 
 ## Optional query parameters
@@ -61,7 +63,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 }
 -->
 ``` http
-GET /identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/accessPackageCustomWorkflowExtensions
+GET /identityGovernance/entitlementManagement/catalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customWorkflowExtensions
 ```
 
 ### Response
@@ -78,7 +80,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-   "@odata.context":"https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/accessPackageCustomWorkflowExtensions",
+   "@odata.context":"https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/catalogs/32efb28c-9a7a-446c-986b-ca6528c6669d/customWorkflowExtensions",
    "value":[
       {
          "@odata.type":"#microsoft.graph.accessPackageAssignmentRequestWorkflowExtension",

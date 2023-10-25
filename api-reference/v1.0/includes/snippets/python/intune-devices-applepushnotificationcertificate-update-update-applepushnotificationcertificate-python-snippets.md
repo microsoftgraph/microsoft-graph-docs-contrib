@@ -19,7 +19,7 @@ request_body = ApplePushNotificationCertificate(
 	certificate = "Certificate value",
 )
 
-result = await graph_client.device_management.apple_push_notification_certificate.patch(request_body = request_body)
+result = await graph_client.device_management.apple_push_notification_certificate.patch(body = request_body)
 
 
 ```

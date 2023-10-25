@@ -14,7 +14,7 @@ request_body = WindowsInformationProtectionNetworkLearningSummary(
 	device_count = 11,
 )
 
-result = await graph_client.device_management.window_information_protection_network_learning_summaries.post(request_body = request_body)
+result = await graph_client.device_management.window_information_protection_network_learning_summaries.post(body = request_body)
 
 
 ```

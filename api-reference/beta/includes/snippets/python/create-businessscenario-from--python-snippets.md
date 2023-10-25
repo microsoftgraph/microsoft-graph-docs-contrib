@@ -14,7 +14,7 @@ request_body = BusinessScenario(
 	unique_name = "com.contoso.apps.ordertracking",
 )
 
-result = await graph_client.solutions.busines_scenarios.post(request_body = request_body)
+result = await graph_client.solutions.busines_scenarios.post(body = request_body)
 
 
 ```

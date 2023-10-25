@@ -1,6 +1,6 @@
 {
   "changelog": [
-      {  
+      {
         "ChangeList": [
         {
           "Id": "800896d9-7cab-47e8-a9af-7d9e23addbeb",
@@ -105,6 +105,24 @@
         "Cloud": "Prod",
         "Version": "v1.0",
         "CreatedDateTime": "2023-07-27T00:00:01Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Governance"
+      },
+      {
+        "ChangeList": [
+        {
+          "Id": "cfb9bd20-e02b-4b0f-8f2a-7bf1aeec12e3",
+          "ApiChange": "Property",
+          "ChangedApiName": "cleanupScheduledDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **cleanupScheduledDateTime** property to the [accessPackageSubject](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageSubject?view=graph-rest-beta) resource.",
+          "Target": "accessPackageSubject"
+        }
+        ],
+        "Id": "cfb9bd20-e02b-4b0f-8f2a-7bf1aeec12e3",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-09-26T17:53:43.5042993Z",
         "WorkloadArea": "Identity and access",
         "SubArea": "Governance"
       },
@@ -596,7 +614,7 @@
           "ChangedApiName": "customExtensionCalloutInstances",
           "ChangeType": "Addition",
           "Description": "Added the `customExtensionCalloutInstances` property to the [accessPackageAssignmentRequest](https://learn.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-1.0) resource.",
-          "Target": "accessPackageAssignmentRequest" 
+          "Target": "accessPackageAssignmentRequest"
         },
         {
           "Id": "e4f06e06-e395-4532-a745-2c8aa89db1b4",

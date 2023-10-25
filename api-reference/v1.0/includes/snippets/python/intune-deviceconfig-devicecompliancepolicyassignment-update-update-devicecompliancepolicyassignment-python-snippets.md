@@ -16,7 +16,7 @@ request_body = DeviceCompliancePolicyAssignment(
 	),
 )
 
-result = await graph_client.device_management.device_compliance_policies.by_device_compliance_policie_id('deviceCompliancePolicy-id').assignments.by_assignment_id('deviceCompliancePolicyAssignment-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_compliance_policies.by_device_compliance_policie_id('deviceCompliancePolicy-id').assignments.by_assignment_id('deviceCompliancePolicyAssignment-id').patch(body = request_body)
 
 
 ```

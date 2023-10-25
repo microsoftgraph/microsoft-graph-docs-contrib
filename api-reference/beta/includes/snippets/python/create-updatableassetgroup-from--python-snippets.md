@@ -12,7 +12,7 @@ request_body = UpdatableAssetGroup(
 	odata_type = "#microsoft.graph.windowsUpdates.updatableAssetGroup",
 )
 
-result = await graph_client.admin.windows.updates.updatable_assets.post(request_body = request_body)
+result = await graph_client.admin.windows.updates.updatable_assets.post(body = request_body)
 
 
 ```

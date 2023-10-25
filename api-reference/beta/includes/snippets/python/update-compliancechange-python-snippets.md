@@ -13,7 +13,7 @@ request_body = ComplianceChange(
 	is_revoked = True,
 )
 
-result = await graph_client.admin.windows.updates.update_policies.by_update_policie_id('updatePolicy-id').compliance_changes.by_compliance_change_id('complianceChange-id').patch(request_body = request_body)
+result = await graph_client.admin.windows.updates.update_policies.by_update_policie_id('updatePolicy-id').compliance_changes.by_compliance_change_id('complianceChange-id').patch(body = request_body)
 
 
 ```

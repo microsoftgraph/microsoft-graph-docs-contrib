@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Postpone action on a [recommendation](../resources/recommendation.md) object to a specified future date and time by marking its **status** as `postponed`. On the date and time provided, Azure AD will automatically update the **status** of the **recommendation** object to `active` again.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

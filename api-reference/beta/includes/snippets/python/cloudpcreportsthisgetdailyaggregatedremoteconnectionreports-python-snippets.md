@@ -25,7 +25,7 @@ request_body = GetDailyAggregatedRemoteConnectionReportsPostRequestBody(
 	top = 25,
 )
 
-await graph_client.device_management.virtual_endpoint.reports.get_daily_aggregated_remote_connection_reports.post(request_body = request_body)
+await graph_client.device_management.virtual_endpoint.reports.get_daily_aggregated_remote_connection_reports.post(body = request_body)
 
 
 ```

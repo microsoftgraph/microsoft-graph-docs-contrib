@@ -32,7 +32,7 @@ headers = {
 
 )
 
-result = await graph_client.security.alerts.by_alert_id('alert-id').patch(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.security.alerts.by_alert_id('alert-id').patch(body = request_body, request_configuration = request_configuration)
 
 
 ```

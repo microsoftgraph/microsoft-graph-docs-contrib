@@ -12,7 +12,7 @@ request_body = ReferenceCreate(
 	odata_id = "https://graph.microsoft.com/beta/users/{id}",
 )
 
-await graph_client.groups.by_group_id('group-id').owners.ref.post(request_body = request_body)
+await graph_client.groups.by_group_id('group-id').owners.ref.post(body = request_body)
 
 
 ```

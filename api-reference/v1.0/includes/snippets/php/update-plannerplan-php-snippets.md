@@ -11,7 +11,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
 $requestBody = new PlannerPlan();
 $requestBody->setTitle('title-value');
-$requestConfiguration = new PlannerPlanRequestBuilderPatchRequestConfiguration();
+$requestConfiguration = new PlannerPlanItemRequestBuilderPatchRequestConfiguration();
 $headers = [
 		'Prefer' => 'return=representation',
 		'If-Match' => 'W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="',

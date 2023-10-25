@@ -13,7 +13,7 @@ $requestBody = new EvaluateApplicationPostRequestBody();
 $contentInfo = new ContentInfo();
 $contentInfo->setOdataType('#microsoft.graph.contentInfo');
 $contentInfo->setFormat(new ContentFormat('default'));
-$ContentInfo->setIdentifier(null);
+$contentInfo->setIdentifier(null);
 $contentInfo->setState(new ContentState('rest'));
 $metadataKeyValuePair1 = new KeyValuePair();
 $metadataKeyValuePair1->setOdataType('#microsoft.graph.keyValuePair');
@@ -63,7 +63,7 @@ $labelingOptions = new LabelingOptions();
 $labelingOptions->setOdataType('#microsoft.graph.labelingOptions');
 $labelingOptions->setAssignmentMethod(new AssignmentMethod('standard'));
 $labelingOptions->setLabelId('97309856-9c28-4ac6-9382-5f8bc20c457b');
-$LabelingOptions->setDowngradeJustification(null);
+$labelingOptions->setDowngradeJustification(null);
 $labelingOptions->setExtendedProperties([]);
 $additionalData = [
 'assignmentMethod@odata.type' => '#microsoft.graph.assignmentMethod',

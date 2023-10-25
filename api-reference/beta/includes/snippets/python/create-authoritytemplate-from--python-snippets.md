@@ -16,7 +16,7 @@ request_body = AuthorityTemplate(
 	),
 )
 
-result = await graph_client.security.labels.authorities.post(request_body = request_body)
+result = await graph_client.security.labels.authorities.post(body = request_body)
 
 
 ```

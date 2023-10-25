@@ -3,7 +3,7 @@ title: "Get authorizationSystemResource"
 description: "Read the properties and relationships of an authorizationSystemResource object."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Reactivate a completed, dismissed, or postponed [recommendation](../resources/recommendation.md) object. This action updates the **status** of the [recommendation](../resources/recommendation.md) to `active`. This method only works when the **status** of the recommendation is `completedByUser`, `dismissed`, or `postponed`.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

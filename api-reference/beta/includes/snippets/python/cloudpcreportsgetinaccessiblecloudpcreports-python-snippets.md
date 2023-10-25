@@ -31,7 +31,7 @@ request_body = GetInaccessibleCloudPcReportsPostRequestBody(
 	skip = 0,
 )
 
-await graph_client.device_management.virtual_endpoint.reports.get_inaccessible_cloud_pc_reports.post(request_body = request_body)
+await graph_client.device_management.virtual_endpoint.reports.get_inaccessible_cloud_pc_reports.post(body = request_body)
 
 
 ```

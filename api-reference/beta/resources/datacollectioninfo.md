@@ -3,7 +3,7 @@ title: "dataCollectionInfo resource type"
 description: "Represents the different statuses of an authorizationSystem related to Microsoft Entra Permissions Management."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 

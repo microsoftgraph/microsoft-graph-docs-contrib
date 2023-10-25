@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get the [permission](../resources/permission.md) resources from the permissions navigation property on a site.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

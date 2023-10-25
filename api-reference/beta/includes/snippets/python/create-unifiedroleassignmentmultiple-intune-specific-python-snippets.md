@@ -21,7 +21,7 @@ request_body = UnifiedRoleAssignmentMultiple(
 	]
 )
 
-result = await graph_client.role_management.device_management.role_assignments.post(request_body = request_body)
+result = await graph_client.role_management.device_management.role_assignments.post(body = request_body)
 
 
 ```

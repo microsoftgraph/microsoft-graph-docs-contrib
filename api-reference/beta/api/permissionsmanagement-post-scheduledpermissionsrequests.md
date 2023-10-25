@@ -3,7 +3,7 @@ title: "Create scheduledPermissionsRequest"
 description: "Create a new scheduledPermissionsRequest object."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 

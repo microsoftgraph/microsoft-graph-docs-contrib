@@ -19,7 +19,7 @@ request_body = CloudPcExportJob(
 	]
 )
 
-result = await graph_client.device_management.virtual_endpoint.reports.export_jobs.post(request_body = request_body)
+result = await graph_client.device_management.virtual_endpoint.reports.export_jobs.post(body = request_body)
 
 
 ```

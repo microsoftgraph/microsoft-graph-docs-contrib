@@ -27,7 +27,7 @@ This type has the following properties:
 
 ## JSON representation
 
-The following is a JSON representation of the type.
+Here's a JSON representation of the type.
 
 <!-- {
   "blockType": "resource",

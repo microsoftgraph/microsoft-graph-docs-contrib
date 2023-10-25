@@ -15,7 +15,7 @@ request_body = UnarchivePostRequestBody(
 	]
 )
 
-result = await graph_client.admin.service_announcement.messages.unarchive.post(request_body = request_body)
+result = await graph_client.admin.service_announcement.messages.unarchive.post(body = request_body)
 
 
 ```

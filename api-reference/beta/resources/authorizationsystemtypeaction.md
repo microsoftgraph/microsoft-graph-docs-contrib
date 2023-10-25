@@ -3,7 +3,7 @@ title: "authorizationSystemTypeAction resource type"
 description: "Represents an action in an authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 

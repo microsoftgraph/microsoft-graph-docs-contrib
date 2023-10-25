@@ -93,7 +93,7 @@ request_body = LogTeleconferenceDeviceQualityPostRequestBody(
 	),
 )
 
-await graph_client.communications.calls.log_teleconference_device_quality.post(request_body = request_body)
+await graph_client.communications.calls.log_teleconference_device_quality.post(body = request_body)
 
 
 ```

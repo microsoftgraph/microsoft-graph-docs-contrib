@@ -19,22 +19,22 @@ $defaultLocationAddress->setOdataType('#microsoft.graph.physicalAddress');
 $defaultLocationAddress->setCity('Buffalo');
 $defaultLocationAddress->setCountryOrRegion('USA');
 $defaultLocationAddress->setPostalCode('98052');
-$DefaultLocationAddress->setPostOfficeBox(null);
+$defaultLocationAddress->setPostOfficeBox(null);
 $defaultLocationAddress->setState('NY');
 $defaultLocationAddress->setStreet('4567 First Street');
-$DefaultLocationAddress->setType(null);
+$defaultLocationAddress->setType(null);
 $additionalData = [
 	'type@odata.type' => '#microsoft.graph.physicalAddressType',
 ];
 $defaultLocationAddress->setAdditionalData($additionalData);
 $defaultLocation->setAddress($defaultLocationAddress);
-$DefaultLocation->setCoordinates(null);
+$defaultLocation->setCoordinates(null);
 $defaultLocation->setDisplayName('Contoso Lunch Delivery');
-$DefaultLocation->setLocationEmailAddress(null);
-$DefaultLocation->setLocationType(null);
-$DefaultLocation->setLocationUri(null);
-$DefaultLocation->setUniqueId(null);
-$DefaultLocation->setUniqueIdType(null);
+$defaultLocation->setLocationEmailAddress(null);
+$defaultLocation->setLocationType(null);
+$defaultLocation->setLocationUri(null);
+$defaultLocation->setUniqueId(null);
+$defaultLocation->setUniqueIdType(null);
 $additionalData = [
 	'locationType@odata.type' => '#microsoft.graph.locationType',
 	'uniqueIdType@odata.type' => '#microsoft.graph.locationUniqueIdType',

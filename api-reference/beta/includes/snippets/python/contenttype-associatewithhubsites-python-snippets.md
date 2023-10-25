@@ -15,7 +15,7 @@ request_body = AssociateWithHubSitesPostRequestBody(
 	propagate_to_existing_lists = False,
 )
 
-await graph_client.sites.by_site_id('site-id').content_types.by_content_type_id('contentType-id').associate_with_hub_sites.post(request_body = request_body)
+await graph_client.sites.by_site_id('site-id').content_types.by_content_type_id('contentType-id').associate_with_hub_sites.post(body = request_body)
 
 
 ```

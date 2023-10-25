@@ -9,12 +9,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 // THIS SNIPPET IS A PREVIEW VERSION OF THE SDK. NON-PRODUCTION USE ONLY
 $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 
-$requestConfiguration = new PrintJobRequestBuilderGetRequestConfiguration();
-$queryParameters = PrintJobRequestBuilderGetRequestConfiguration::createQueryParameters();
+$requestConfiguration = new PrintJobItemRequestBuilderGetRequestConfiguration();
+$queryParameters = PrintJobItemRequestBuilderGetRequestConfiguration::createQueryParameters();
 $queryParameters->expand = ["documents"];
 $requestConfiguration->queryParameters = $queryParameters;
 
 
-$result = $graphServiceClient->print()->printers()->byPrinterId('printer-id')->jobs()->byPrintJobId('printJob-id')->get($requestConfiguration)->wait();
+$result = $graphServiceClient->escapedPrint()->printers()->byPrinterId('printer-id')->jobs()->byPrintJobId('printJob-id')->get($requestConfiguration)->wait();
 
 ```

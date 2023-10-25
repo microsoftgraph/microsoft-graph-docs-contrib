@@ -12,7 +12,7 @@ request_body = CopyPostRequestBody(
 	destination_id = "destinationId-value",
 )
 
-result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').copy.post(request_body = request_body)
+result = await graph_client.me.mail_folders.by_mail_folder_id('mailFolder-id').copy.post(body = request_body)
 
 
 ```

@@ -45,7 +45,7 @@ request_body = AlertRule(
 	]
 )
 
-result = await graph_client.device_management.monitoring.alert_rules.post(request_body = request_body)
+result = await graph_client.device_management.monitoring.alert_rules.post(body = request_body)
 
 
 ```

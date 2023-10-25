@@ -13,7 +13,7 @@ request_body = UserAccountInformation(
 	country_code = "NO",
 )
 
-result = await graph_client.me.profile.account.post(request_body = request_body)
+result = await graph_client.me.profile.account.post(body = request_body)
 
 
 ```

@@ -15,7 +15,7 @@ request_body = SiteSource(
 	),
 )
 
-result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').source_collections.by_source_collection_id('sourceCollection-id').additional_sources.post(request_body = request_body)
+result = await graph_client.compliance.ediscovery.cases.by_case_id('case-id').source_collections.by_source_collection_id('sourceCollection-id').additional_sources.post(body = request_body)
 
 
 ```

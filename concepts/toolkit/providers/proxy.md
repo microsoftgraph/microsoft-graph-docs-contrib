@@ -42,7 +42,8 @@ Initializing the proxy provider in HTML is the simplest way to define your own r
 You can provide more options by initializing the provider in JavaScript.
 
 ```ts
-import { Providers, ProxyProvider } from "@microsoft/mgt";
+import { Providers } from "@microsoft/mgt-element";
+import { ProxyProvider } from "@microsoft/mgt-proxy-provider";
 
 Providers.globalProvider = new ProxyProvider(
   "https://myurl.com/api/GraphProxy"
@@ -52,7 +53,8 @@ Providers.globalProvider = new ProxyProvider(
 Optionally, you can send additional headers with each request to your proxy api by using an optional function as the second parameter in the constructor.
 
 ```ts
-import { Providers, ProxyProvider } from "@microsoft/mgt";
+import { Providers } from "@microsoft/mgt-element";
+import { ProxyProvider } from "@microsoft/mgt-proxy-provider";
 
 Providers.globalProvider = new ProxyProvider(
   "https://myurl.com/api/GraphProxy",
@@ -70,7 +72,8 @@ This is useful when you need to pass tokens or other headers to your backend.
 If you will be using the `mgt-login` component, you should also specify the `login` and `logout` functions for the provider:
 
 ```ts
-import { Providers, ProxyProvider } from "@microsoft/mgt";
+import { Providers } from "@microsoft/mgt-element";
+import { ProxyProvider } from "@microsoft/mgt-proxy-provider";
 
 let provider = new ProxyProvider("https://myurl.com/api/GraphProxy");
 provider.login = () => {

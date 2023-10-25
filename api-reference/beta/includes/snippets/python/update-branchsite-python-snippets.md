@@ -12,7 +12,7 @@ request_body = BranchSite(
 	name = "My updated branch",
 )
 
-result = await graph_client.network_access.connectivity.branches.by_branche_id('branchSite-id').patch(request_body = request_body)
+result = await graph_client.network_access.connectivity.branches.by_branche_id('branchSite-id').patch(body = request_body)
 
 
 ```

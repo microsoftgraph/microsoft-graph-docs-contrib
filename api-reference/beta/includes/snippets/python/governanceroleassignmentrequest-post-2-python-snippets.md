@@ -23,7 +23,7 @@ request_body = GovernanceRoleAssignmentRequest(
 	linked_eligible_role_assignment_id = "e327f4be-42a0-47a2-8579-0a39b025b394",
 )
 
-result = await graph_client.privileged_access.by_privileged_acce_id('privilegedAccess-id').role_assignment_requests.post(request_body = request_body)
+result = await graph_client.privileged_access.by_privileged_acce_id('privilegedAccess-id').role_assignment_requests.post(body = request_body)
 
 
 ```

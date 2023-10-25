@@ -81,7 +81,7 @@ The error resource is composed of a single resource:
     "message": "string",
     "innererror": { 
       "code": "string"
-    }
+    },
     "details": []
   }
 }

@@ -29,7 +29,7 @@ headers = {
 
 )
 
-result = await graph_client.planner.plans.by_plan_id('plannerPlan-id').details.patch(request_body = request_body, request_configuration = request_configuration)
+result = await graph_client.planner.plans.by_plan_id('plannerPlan-id').details.patch(body = request_body, request_configuration = request_configuration)
 
 
 ```

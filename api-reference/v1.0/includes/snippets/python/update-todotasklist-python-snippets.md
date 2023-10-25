@@ -12,7 +12,7 @@ request_body = TodoTaskList(
 	display_name = "Vacation Plan",
 )
 
-result = await graph_client.me.todo.lists.by_list_id('todoTaskList-id').patch(request_body = request_body)
+result = await graph_client.me.todo.lists.by_list_id('todoTaskList-id').patch(body = request_body)
 
 
 ```

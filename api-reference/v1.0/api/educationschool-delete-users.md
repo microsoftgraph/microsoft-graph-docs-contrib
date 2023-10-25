@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Delete a user from a school.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -20,12 +22,12 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  Not supported.  |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | EduRoster.ReadWrite.All | 
+|Application | EduRoster.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /education/schools/{id}/users/{userId}/
+DELETE /education/schools/{id}/users/{userId}/$ref
 ```
 ## Request headers
 | Header       | Value |
@@ -49,7 +51,7 @@ The following is an example of a request.
   "name": "remove_user_from_school_v1_e1"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/users/{user-id}
+DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/users/{user-id}/$ref
 ```
 
 # [Java](#tab/java)
@@ -63,7 +65,7 @@ DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/users/{use
 ---
 
 ### Response
-The following is an example of the response. 
+The following is an example of the response.
 <!-- {
   "blockType": "response"
 } -->

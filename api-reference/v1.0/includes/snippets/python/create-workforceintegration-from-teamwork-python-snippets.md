@@ -20,7 +20,7 @@ request_body = WorkforceIntegration(
 	supported_entities = WorkforceIntegrationSupportedEntities.None,
 )
 
-result = await graph_client.teamwork.workforce_integrations.post(request_body = request_body)
+result = await graph_client.teamwork.workforce_integrations.post(body = request_body)
 
 
 ```

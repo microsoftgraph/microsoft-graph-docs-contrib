@@ -15,14 +15,16 @@ Namespace: microsoft.graph
 
 Get an attack simulation campaign for a tenant.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | AttackSimulation.Read.All                   |
-| Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | AttackSimulation.Read.All                   |
+| Permission type                        | Permissions (from least to most privileged)                            |
+|:---------------------------------------|:-----------------------------------------------------------------------|
+| Delegated (work or school account)     | AttackSimulation.Read.All, AttackSimulation.ReadWrite.All              |
+| Delegated (personal Microsoft account) | Not supported.                                                         |
+| Application                            | AttackSimulation.Read.All, AttackSimulation.ReadWrite.All              |
 
 ## HTTP request
 
@@ -283,5 +285,85 @@ Content-Type: application/json
   "accountTargetEmails": [
     "alie@contoso.com"
   ]
+}
+```
+
+### Example 4: Get training setting details
+
+The following example shows how to get training setting details for a simulation.
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_simulation_trainingSetting"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/trainingSetting
+```
+
+#### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.trainingSetting"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/simulations('d93188b6-6473-4fdb-a73f-48d0dbdd0df6')/trainingSetting",
+  "trainingCompletionDuration": "month",
+  "completionDateTime": "0001-01-01T00:00:00Z",
+  "settingType": "microsoftManaged"
+}
+```
+
+### Example 5: Get end user notification setting 
+
+The following example shows how to get end user notification setting details for a simulation.
+
+#### Request
+
+The following is an example of a request.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_simulation_endUserNotificationSetting"
+}
+-->
+``` http
+GET https://graph.microsoft.com/beta/security/attackSimulation/simulations/f1b13829-3829-f1b1-2938-b1f12938b1a/endUserNotificationSetting
+```
+
+#### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.endUserNotificationSetting"
+}
+-->
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#security/attackSimulation/simulations('d93188b6-6473-4fdb-a73f-48d0dbdd0df6')/endUserNotificationSetting",
+  "settingType": "noNotification",
+  "positiveReinforcement": null,
+  "notificationPreference": "unknown"
 }
 ```

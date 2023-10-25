@@ -12,7 +12,7 @@ request_body = UnifiedRoleManagementAlert(
 	is_active = False,
 )
 
-result = await graph_client.identity_governance.role_management_alerts.alerts.by_alert_id('unifiedRoleManagementAlert-id').patch(request_body = request_body)
+result = await graph_client.identity_governance.role_management_alerts.alerts.by_alert_id('unifiedRoleManagementAlert-id').patch(body = request_body)
 
 
 ```

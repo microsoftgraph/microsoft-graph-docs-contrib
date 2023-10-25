@@ -12,7 +12,7 @@ request_body = UserInsightsSettings(
 	is_enabled = False,
 )
 
-result = await graph_client.users.by_user_id('user-id').settings.item_insights.patch(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').settings.item_insights.patch(body = request_body)
 
 
 ```

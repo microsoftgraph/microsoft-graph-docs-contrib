@@ -12,7 +12,7 @@ request_body = Set(
 	description = "mySet",
 )
 
-result = await graph_client.term_store.sets.by_set_id('set-id').patch(request_body = request_body)
+result = await graph_client.term_store.sets.by_set_id('set-id').patch(body = request_body)
 
 
 ```

@@ -1,6 +1,6 @@
 ---
 title: "keyValue resource type"
-description: "Provides additional relevant information about the sign-in request"
+description: "Provides more relevant information about the sign-in request"
 ms.localizationpriority: medium
 author: "egreenberg14"
 ms.prod: "identity-and-access-reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Provides additional authentication processing information, such as the server name and the presence of hints for sign in and domain.
+Provides more authentication processing information, such as the server name and the presence of hints for sign in and domain.
 The configuration of this resource is shared by the following objects:
 + The **attributeCollection** property of the [contentCustomization](contentcustomization.md) complex type of [organizationalBrandingProperties](organizationalbrandingproperties.md).
 + The **additionalDetails** property of the [directoryAudit](directoryaudit.md) resource type.
@@ -39,11 +39,11 @@ The configuration of this resource is shared by the following objects:
 | Attribute_Country | Country/Region |
 | Attribute_DisplayName | Display Name |
 | Attribute_Email | Email Address |
-| Attribute_Generic_ConfirmationLabel |  Re-enter |
+| Attribute_Generic_ConfirmationLabel |  Reenter |
 | Attribute_GivenName | Given Name |
 | Attribute_JobTitle |  Job Title |
 | Attribute_Password | Password |
-| Attribute_Password_MismatchErrorString | Passwords do not match. |
+| Attribute_Password_MismatchErrorString | Passwords don't match. |
 | Attribute_PostalCode | Postal Code |
 | Attribute_State | State/Province |
 | Attribute_StreetAddress | Street Address |
@@ -58,7 +58,7 @@ The configuration of this resource is shared by the following objects:
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",

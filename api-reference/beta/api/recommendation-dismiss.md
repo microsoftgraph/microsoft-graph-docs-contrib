@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Dismiss a [recommendation](../resources/recommendation.md) object that you consider to be inapplicable to your tenant and update its **status** to `dismissed` .
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

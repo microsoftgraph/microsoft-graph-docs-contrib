@@ -19,6 +19,9 @@ Namespace: microsoft.graph
 Update the writable properties of an Outlook task group.
 
 Note that you cannot modify the name of the default task group, "My Tasks".
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

@@ -17,7 +17,7 @@ This resource extends from the **identity** resource to provide the ability to e
 
 | Property         | Type                        | Description |
 |:------------     |:----------------------------|:--------------------------------- |
-| displayName      | String                      | The identity's display name. Note that this might not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md). |
+| displayName      | String                      | The identity's display name. This might not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using [delta](../api/driveitem-delta.md). |
 | id               | String                      | Unique identifier for the identity. It can be either an Azure Active Directory ID or a SharePoint ID. |
 | loginName        | String                      | The sign in name of the SharePoint identity. |
 | thumbnails       | [thumbnailSet][] collection | Collection that contains [thumbnailSet][] objects associated with the item. For more information, see [List thumbnails for a driveItem][]. Read-only. Nullable. |

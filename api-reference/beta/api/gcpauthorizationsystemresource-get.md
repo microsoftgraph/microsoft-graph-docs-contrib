@@ -3,7 +3,7 @@ title: "Get gcpAuthorizationSystemResource"
 description: "Read the properties and relationships of a gcpAuthorizationSystemResource object for a provided GCP authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 

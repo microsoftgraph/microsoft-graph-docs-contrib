@@ -28,7 +28,7 @@ request_body = AnswerPostRequestBody(
 	),
 )
 
-await graph_client.communications.calls.by_call_id('call-id').answer.post(request_body = request_body)
+await graph_client.communications.calls.by_call_id('call-id').answer.post(body = request_body)
 
 
 ```

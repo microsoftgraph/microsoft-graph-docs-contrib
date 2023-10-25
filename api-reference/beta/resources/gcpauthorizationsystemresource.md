@@ -3,7 +3,7 @@ title: "gcpAuthorizationSystemResource resource type"
 description: "Represents a GCP resource in an GCP authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 

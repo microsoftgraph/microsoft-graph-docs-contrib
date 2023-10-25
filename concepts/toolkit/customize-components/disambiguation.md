@@ -82,7 +82,7 @@ To make use of disambiguation in a React application, call `customElementHelper.
 import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import { customElementHelper, Providers } from '@microsoft/mgt-element';
-import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
+import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
 
 customElementHelper.withDisambiguation('contoso');
 
@@ -99,7 +99,7 @@ To make use of the disambiguation feature when using standard HTML and JavaScrip
 ```html
 <script type="module">
   import { Providers, customElementHelper } from '@microsoft/mgt-element';
-  import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
+  import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
   // configure disambiguation
   customElementHelper.withDisambiguation('contoso');
 
@@ -131,7 +131,7 @@ When using an `import` statement, the import statement is [hoisted](https://deve
 ```typescript
 // static import via a statement
 import { Providers, customElementHelper } from '@microsoft/mgt-element';
-import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
+import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
 
 customElementHelper.withDisambiguation('contoso');
 Providers.globalProvider = new Msal2Provider({clientId: 'clientId'});
@@ -149,8 +149,8 @@ import('@microsoft/mgt-components').then(() => {
 
 ```typescript
 // static import via a statement
-import { Provider } from '@microsoft/mgt-element';
-import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
+import { Providers } from '@microsoft/mgt-element';
+import { Msal2Provider } from "@microsoft/mgt-msal2-provider";
 import '@microsoft/mgt-components';
 
 Providers.globalProvider = new Msal2Provider({clientId: 'clientId'});

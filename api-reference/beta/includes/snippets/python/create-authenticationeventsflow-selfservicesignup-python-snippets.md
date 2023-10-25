@@ -72,7 +72,7 @@ request_body = ExternalUsersSelfServiceSignUpEventsFlow(
 	),
 )
 
-result = await graph_client.identity.authentication_event_flows.post(request_body = request_body)
+result = await graph_client.identity.authentication_event_flows.post(body = request_body)
 
 
 ```

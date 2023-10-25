@@ -18,7 +18,7 @@ request_body = Term(
 	]
 )
 
-result = await graph_client.term_store.sets.by_set_id('set-id').terms.by_term_id('term-id').patch(request_body = request_body)
+result = await graph_client.term_store.sets.by_set_id('set-id').terms.by_term_id('term-id').patch(body = request_body)
 
 
 ```

@@ -10,13 +10,11 @@ In this exercise you will register a new application in Azure Active Directory t
 
 In this section you will register an application that supports app-only authentication using [client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
-1. Open a browser and navigate to the [Azure Active Directory admin center](https://aad.portal.azure.com) and login using a Global administrator account.
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
 
-1. Select **Azure Active Directory** in the left-hand navigation, then select **App registrations** under **Manage**.
+1. Expand the **Identity** menu > select **Applications** > **App registrations** > **New registration**.
 
-    :::image type="content" source="../../images/connectors-images/aad-portal-app-registrations.png" alt-text="A screenshot of the App registrations":::
-
-1. Select **New registration**. Enter a name for your application, for example, `Parts Inventory Connector`.
+1. Enter a name for your application, for example, `Parts Inventory Connector`.
 
 1. Set **Supported account types** to **Accounts in this organizational directory only**.
 

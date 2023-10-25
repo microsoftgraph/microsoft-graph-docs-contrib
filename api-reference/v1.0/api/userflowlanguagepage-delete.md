@@ -1,7 +1,7 @@
 ---
 title: "Delete userFlowLanguagePage"
 description: "Deletes the values in an userFlowLanguagePage object."
-author: "jkdouglas"
+author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -49,7 +49,7 @@ DELETE /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/$value
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -59,7 +59,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -86,7 +86,7 @@ DELETE https://graph.microsoft.com/beta/identity/b2xUserFlows/B2X_1_Partner/lang
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

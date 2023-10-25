@@ -16,7 +16,7 @@ request_body = TargetedManagedAppPolicyAssignment(
 	),
 )
 
-result = await graph_client.device_app_management.io_managed_app_protections.by_io_managed_app_protection_id('iosManagedAppProtection-id').assignments.by_assignment_id('targetedManagedAppPolicyAssignment-id').patch(request_body = request_body)
+result = await graph_client.device_app_management.io_managed_app_protections.by_io_managed_app_protection_id('iosManagedAppProtection-id').assignments.by_assignment_id('targetedManagedAppPolicyAssignment-id').patch(body = request_body)
 
 
 ```

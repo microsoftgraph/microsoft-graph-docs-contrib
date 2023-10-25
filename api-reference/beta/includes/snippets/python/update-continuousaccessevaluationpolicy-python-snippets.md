@@ -13,7 +13,7 @@ request_body = ContinuousAccessEvaluationPolicy(
 	migrate = True,
 )
 
-result = await graph_client.identity.continuou_acces_evaluation_policy.patch(request_body = request_body)
+result = await graph_client.identity.continuou_acces_evaluation_policy.patch(body = request_body)
 
 
 ```

@@ -28,11 +28,11 @@ SDKs are currently available for the following languages:
 
 ## SDKs in preview or GA status
 
-A release of an SDK can be in *preview* status upon debut or a significant update. Do not assume that a preview release will always be promoted to generally available (GA) status.
+A release of an SDK can be in *preview* status upon debut or a significant update. Don't assume that a preview release will always be promoted to generally available (GA) status.
 
-In addition, do not use a preview release of an SDK in production apps, regardless of the version of Microsoft Graph API (v1.0 or beta) it uses.
+In addition, don't use a preview release of an SDK in production apps, regardless of the version of Microsoft Graph API (v1.0 or beta) it uses.
 
-A release of an SDK in *GA* status can use the Microsoft Graph API v1.0 endpoint or beta endpoint as specified. Because Microsoft Graph APIs in the beta endpoint are subject to breaking changes, do not use in production apps a GA release of an SDK that accesses the Microsoft Graph API beta endpoint.
+A release of an SDK in *GA* status can use the Microsoft Graph API v1.0 endpoint or beta endpoint as specified. Because Microsoft Graph APIs in the beta endpoint are subject to breaking changes, don't use in production apps a GA release of an SDK that accesses the Microsoft Graph API beta endpoint.
 
 ## Microsoft 365 developer subscription
 
@@ -40,6 +40,6 @@ When building applications using Microsoft Graph, we recommend that you get a fr
 
 ## See also
 
-- For more details about the features and capabilities of the SDK, see the SDK [design requirements documentation](https://github.com/microsoftgraph/msgraph-sdk-design).
+- For more information about the features and capabilities of the SDK, see [design requirements documentation](https://github.com/microsoftgraph/msgraph-sdk-design).
 - Request or vote on additional features at the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 - For a list of samples for Microsoft Graph, see the [Microsoft Graph resources page](https://developer.microsoft.com/graph/gallery/?filterBy=Samples).

@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get a [session cookie](../resources/browsersharedcookie.md) that can be shared between a Microsoft Edge process and an Internet Explorer process, while using [Internet Explorer mode](/deployedge/edge-ie-mode).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 

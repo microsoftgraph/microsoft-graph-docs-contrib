@@ -16,7 +16,7 @@ request_body = LocalizedNotificationMessage(
 	is_default = True,
 )
 
-result = await graph_client.device_management.notification_message_templates.by_notification_message_template_id('notificationMessageTemplate-id').localized_notification_messages.post(request_body = request_body)
+result = await graph_client.device_management.notification_message_templates.by_notification_message_template_id('notificationMessageTemplate-id').localized_notification_messages.post(body = request_body)
 
 
 ```

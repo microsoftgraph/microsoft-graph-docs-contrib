@@ -14,7 +14,7 @@ request_body = B2xIdentityUserFlow(
 	user_flow_type_version = 1,
 )
 
-result = await graph_client.identity.b2x_user_flows.post(request_body = request_body)
+result = await graph_client.identity.b2x_user_flows.post(body = request_body)
 
 
 ```

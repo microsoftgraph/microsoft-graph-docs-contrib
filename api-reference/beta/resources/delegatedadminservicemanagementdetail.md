@@ -1,7 +1,7 @@
 ---
 title: "delegatedAdminServiceManagementDetail resource type"
 description: "Contains the management details of a service in the customer tenant that's managed by delegated administration."
-author: "adtangir"
+author: "koravvams"
 ms.localizationpriority: medium
 ms.prod: "customer-relationship-management"
 doc_type: resourcePageType
@@ -32,7 +32,7 @@ Contains the management details of a service in the customer tenant that's manag
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",

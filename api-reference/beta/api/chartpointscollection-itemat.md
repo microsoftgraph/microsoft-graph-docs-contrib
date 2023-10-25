@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a point based on its position within the series.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -26,10 +29,18 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points/ItemAt
-POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points/ItemAt
-
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points/ItemAt(index={index})
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points/ItemAt(index={index})
 ```
+
+## Function parameters
+
+The following table shows the parameters that can be used with this function.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|index|Int32|Index value of the object to be retrieved. Zero-indexed.|
+
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
@@ -37,11 +48,8 @@ POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/se
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
-In the request body, provide a JSON object with the following parameters.
 
-| Parameter	   | Type	|Description|
-|:---------------|:--------|:----------|
-|index|number|Index value of the object to be retrieved. Zero-indexed.|
+Do not supply a request body for this method.
 
 ## Response
 
@@ -58,13 +66,7 @@ Here is an example of the request.
   "name": "chartpointscollection_itemat"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}/points/ItemAt
-Content-type: application/json
-
-{
-  "index": {
-  }
-}
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{series-id}/points/ItemAt(index=8)
 ```
 
 # [JavaScript](#tab/javascript)

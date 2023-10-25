@@ -3,7 +3,7 @@ title: "permissionsDefinition resource type"
 description: "Represents the authorizationSystemInfo needed to request permissions, the actions to allow the user to perform and the identity."
 author: "mrudulahg01"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 

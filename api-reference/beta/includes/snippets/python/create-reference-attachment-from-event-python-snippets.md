@@ -17,7 +17,7 @@ request_body = ReferenceAttachment(
 	is_folder = True,
 )
 
-result = await graph_client.me.events.by_event_id('event-id').attachments.post(request_body = request_body)
+result = await graph_client.me.events.by_event_id('event-id').attachments.post(body = request_body)
 
 
 ```

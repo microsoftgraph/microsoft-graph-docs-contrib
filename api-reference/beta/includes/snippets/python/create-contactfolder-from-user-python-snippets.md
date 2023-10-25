@@ -13,7 +13,7 @@ request_body = ContactFolder(
 	display_name = "Important contacts",
 )
 
-result = await graph_client.me.contact_folders.post(request_body = request_body)
+result = await graph_client.me.contact_folders.post(body = request_body)
 
 
 ```

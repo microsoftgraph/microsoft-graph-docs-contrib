@@ -21,7 +21,7 @@ request_body = UpdateTiIndicatorsPostRequestBody(
 	]
 )
 
-result = await graph_client.security.ti_indicators.update_ti_indicators.post(request_body = request_body)
+result = await graph_client.security.ti_indicators.update_ti_indicators.post(body = request_body)
 
 
 ```
