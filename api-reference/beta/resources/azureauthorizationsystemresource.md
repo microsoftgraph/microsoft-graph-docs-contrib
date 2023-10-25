@@ -1,6 +1,6 @@
 ---
 title: "azureAuthorizationSystemResource resource type"
-description: "Represents an Azure resource in an Azure authorization system."
+description: "Represents an Azure resource in an Azure authorization system that you've onboarded to Permissions Management."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
