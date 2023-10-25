@@ -39,13 +39,13 @@ Authentication providers implement the code required to acquire a token using th
 
 ## Authorization code provider
 
-The authorization code flow enables native and web apps to securely obtain tokens in the user's name. To learn more, see [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+The authorization code flow enables native and web apps to obtain tokens in the user's name securely. To learn more, see [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
 ### [C#](#tab/csharp)
 :::code language="csharp" source="./snippets/dotnet/src/SdkSnippets/Snippets/CreateClients.cs" id="AuthorizationCodeSnippet":::
 
 ### [Go](#tab/go)
-The [Azure Identity Client Module for Go](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azidentity) does not support the authorization code flow.
+The [Azure Identity Client Module for Go](https://pkg.go.dev/github.com/Azure/azure-sdk-for-go/sdk/azidentity) doesn't support the authorization code flow.
 
 ### [Java](#tab/java)
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="AuthorizationCodeSnippet":::
@@ -58,7 +58,7 @@ use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Kiota\Abstractions\ApiException;
 use Microsoft\Kiota\Authentication\Oauth\AuthorizationCodeContext;
 
-// Create an auth provider object. We are using the AuthorizationCodeContext library in this example.
+// Create an auth provider object. We're using the AuthorizationCodeContext library in this example.
 $tokenRequestContext = new AuthorizationCodeContext(
     'tenantId',
     'clientId',
@@ -74,7 +74,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext, $scopes);
 ```
 
 ### [Python](#tab/python)
-In the following example we are using the asynchronous [AuthorizationCodeCredential](/python/api/azure-identity/azure.identity.aio.authorizationcodecredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.authorizationcodecredential?view=azure-python&preserve-view-true) of this credential.
+In the following example, we're using the asynchronous [AuthorizationCodeCredential](/python/api/azure-identity/azure.identity.aio.authorizationcodecredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.authorizationcodecredential?view=azure-python&preserve-view-true) of this credential.
 :::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="AuthorizationCodeSnippet":::
 
 ### [TypeScript](#tab/typescript)
@@ -117,7 +117,7 @@ use Microsoft\Graph\GraphServiceClient;
 use Microsoft\Kiota\Abstractions\ApiException;
 use Microsoft\Kiota\Authentication\Oauth\ClientCredentialContext;
 
-// Create an auth provider object. We are using the ClientCredentialContext library in this example.
+// Create an auth provider object. We're using the ClientCredentialContext library in this example.
 $tokenRequestContext = new ClientCredentialContext(
     'TENANT_ID',
     'CLIENT_ID',
@@ -131,10 +131,10 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext);
 
 ### [Python](#tab/python)
 ### Using a client certificate
-In the following example we are using the asynchronous [CertificateCredential](/python/api/azure-identity/azure.identity.aio.certificatecredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.certificatecredential?view=azure-python&preserve-view-true) of this credential.
+In the following example, we're using the asynchronous [CertificateCredential](/python/api/azure-identity/azure.identity.aio.certificatecredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.certificatecredential?view=azure-python&preserve-view-true) of this credential.
 :::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="ClientCertificateSnippet":::
 ### Using a client's secret
-In the following example we are using the asynchronous [ClientSecretCredential](/python/api/azure-identity/azure.identity.aio.clientsecretcredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.clientsecretcredential?view=azure-python&preserve-view-true) of this credential.
+In the following example, we're using the asynchronous [ClientSecretCredential](/python/api/azure-identity/azure.identity.aio.clientsecretcredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.clientsecretcredential?view=azure-python&preserve-view-true) of this credential.
 :::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="ClientSecretSnippet":::
 
 ### [TypeScript](#tab/typescript)
@@ -180,7 +180,7 @@ $graphServiceClient = new GraphServiceClient($tokenRequestContext);
 ```
 
 ### [Python](#tab/python)
-In the following example we are using the asynchronous [OnBehalfOfCredential](/python/api/azure-identity/azure.identity.aio.onbehalfofcredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.onbehalfofcredential?view=azure-python&preserve-view-true) of this credential.
+In the following example, we're using the asynchronous [OnBehalfOfCredential](/python/api/azure-identity/azure.identity.aio.onbehalfofcredential?view=azure-python&preserve-view=true). You can alternatively use the [synchronous version](/python/api/azure-identity/azure.identity.onbehalfofcredential?view=azure-python&preserve-view-true) of this credential.
 :::code language="python" source="./snippets/python/src/snippets/create_clients.py" id="OnBehalfOfSnippet":::
 
 ### [TypeScript](#tab/typescript)
@@ -227,7 +227,7 @@ The integrated Windows flow allows Windows computers to acquire an access token 
 
 ### [C#](#tab/csharp)
 
-The `Azure.Identity` package does not currently support Windows-integrated authentication. Instead, create a custom access token provider using MSAL.
+The `Azure.Identity` package doesn't currently support Windows-integrated authentication. Instead, create a custom access token provider using MSAL.
 
 ### Access token provider
 
