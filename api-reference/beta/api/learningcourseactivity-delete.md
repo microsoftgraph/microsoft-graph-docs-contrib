@@ -48,7 +48,7 @@ DELETE /employeeExperience/learningProviders/{registrationId}/learningCourseActi
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -103,7 +103,7 @@ DELETE https://graph.microsoft.com/beta/employeeExperience/learningProviders/137
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

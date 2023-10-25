@@ -48,7 +48,7 @@ This method supports the `$select` and `$expand` parameters to get the details o
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

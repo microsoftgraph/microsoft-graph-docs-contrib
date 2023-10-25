@@ -22,7 +22,7 @@ items:
           - name: Permissions reference
             displayName: Microsoft Graph permissions list
             href: /graph/permissions-reference?context=graph/api/1.0
-          - name: Azure AD built-in roles
+          - name: Microsoft Entra built-in roles
             displayName: Microsoft Graph permissions
             href: /azure/active-directory/roles/permissions-reference?toc=/graph/toc.json
       - name: Manage app access (CSPs)
@@ -212,7 +212,7 @@ items:
             href: /graph/toolkit/get-started/mgt-spfx?context=graph/api/1.0
       - name: Build your first app
         items:
-          - name: Register an Azure AD app
+          - name: Register a Microsoft Entra app
             href: /graph/toolkit/get-started/add-aad-app-registration?context=graph/api/1.0
           - name: Build a web app (JavaScript)
             href: /graph/toolkit/get-started/build-a-web-app?context=graph/api/1.0
@@ -4002,7 +4002,7 @@ items:
                     href: resources/intune-devices-windowsdeviceaccount.md
                   - name: Windows device AD account
                     href: resources/intune-devices-windowsdeviceadaccount.md
-                  - name: Windows device Azure AD account
+                  - name: Windows device Microsoft Entra account
                     href: resources/intune-devices-windowsdeviceazureadaccount.md
                   - name: Windows device health state
                     href: resources/intune-devices-windowsdevicehealthstate.md
@@ -5314,6 +5314,14 @@ items:
                     href: api/device-list-registeredowners.md
                   - name: List registered users
                     href: api/device-list-registeredusers.md
+              - name: Device local credential
+                items:
+                  - name: Device local credential
+                    href: resources/devicelocalcredentialinfo.md
+                  - name: List
+                    href: api/directory-list-devicelocalcredentials.md
+                  - name: Get
+                    href: api/devicelocalcredentialinfo-get.md
               - name: Directory object
                 href: resources/directoryobject.md
                 items:
@@ -5952,7 +5960,7 @@ items:
                         href: api/identitygovernance-lifecyclemanagementsettings-update.md
               - name: Privileged Identity Management
                 items:
-                  - name: PIM for Azure AD Roles
+                  - name: PIM for Microsoft Entra roles
                     href: resources/privilegedidentitymanagementv3-overview.md
                     displayName: Privileged Identity Management, PIM, Identity Governance
                     items:
@@ -6579,14 +6587,16 @@ items:
                         href: api/samlorwsfedexternaldomainfederation-list-domains.md
                       - name: Create externalDomainName
                         href: api/samlorwsfedexternaldomainfederation-post-domains.md
-                  - name: Federation with Azure AD
+                  - name: Federation with Microsoft Entra ID
                     items:
                       - name: Federated domain configuration
                         href: resources/internaldomainfederation.md
-                      - name: Get
-                        href: api/internaldomainfederation-get.md
+                      - name: List
+                        href: api/domain-list-federationconfiguration.md
                       - name: Create
                         href: api/domain-post-federationconfiguration.md
+                      - name: Get
+                        href: api/internaldomainfederation-get.md
                       - name: Update
                         href: api/internaldomainfederation-update.md
                       - name: Delete
@@ -6866,7 +6876,7 @@ items:
                         href: api/identitysecuritydefaultsenforcementpolicy-update.md
               - name: User flows
                 items:
-                  - name: Self-service sign up user flows in Azure AD
+                  - name: Self-service sign up user flows in Microsoft Entra ID
                     items:
                       - name: Self-service sign up user flow
                         href: resources/b2xidentityuserflow.md
@@ -7390,7 +7400,7 @@ items:
         items:
           - name: Identity and access reports
             items:
-            - name: Azure AD activity reports
+            - name: Microsoft Entra activity reports
               items:
                 - name: Registration and usage
                   items:
@@ -7411,7 +7421,7 @@ items:
                       items:
                         - name: List
                           href: api/authenticationmethodsroot-usersregisteredbymethod.md
-            - name: Azure AD audit logs
+            - name: Microsoft Entra audit logs
               items:
                 - name: Overview
                   href: resources/azure-ad-auditlog-overview.md
@@ -8167,6 +8177,8 @@ items:
                     href: api/security-host-list-passivedns.md
                   - name: List passive DNS reverse
                     href: api/security-host-list-passivednsreverse.md
+                  - name: List ports
+                    href: api/security-host-list-ports.md
                   - name: List subdomains
                     href: api/security-host-list-subdomains.md
                   - name: List trackers
@@ -8199,6 +8211,14 @@ items:
                     href: api/security-host-list-parenthostpairs.md
                   - name: List for a host as parent
                     href: api/security-host-list-childhostpairs.md
+              - name: Host port
+                items:
+                  - name: Host port
+                    href: resources/security-hostport.md
+                  - name: List
+                    href: api/security-host-list-ports.md
+                  - name: Get
+                    href: api/security-hostport-get.md
               - name: Host SSL certificate
                 items:
                 - name: Host SSL certificate

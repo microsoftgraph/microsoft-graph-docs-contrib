@@ -56,7 +56,7 @@ For the list of properties that can be updated, see [emailAuthenticationMethodCo
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 

@@ -24,7 +24,7 @@ profileCardAnnotation := graphmodels.NewProfileCardAnnotation()
 displayNameLocalization := graphmodels.NewDisplayNameLocalization()
 languageTag := "no-NB"
 displayNameLocalization.SetLanguageTag(&languageTag) 
-displayName := "Kostnads Senter"
+displayName := "Kostnadssenter"
 displayNameLocalization.SetDisplayName(&displayName) 
 
 localizations := []graphmodels.DisplayNameLocalizationable {

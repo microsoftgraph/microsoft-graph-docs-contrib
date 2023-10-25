@@ -37,6 +37,8 @@ To add a Microsoft Entra group as a resource to a catalog, using delegated permi
 
 To add a Microsoft Entra application as a resource to a catalog, using delegated permissions, the user requesting to add an application should be an owner of the application or in a directory role that allows them to modify application role assignments.
 
+To add a SharePoint Online site as a resource to a catalog, when using delegated permissions, the user who wants to add the site should be in a role that allows them to modify the SharePoint site roles, such as the SharePoint Administrator role. When using application permissions, the application should also be assigned the `Sites.FullControl.All` permission.
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -64,7 +66,7 @@ If successful, this method returns a `201 Created` response code and a new [acce
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -125,7 +127,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -150,7 +152,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -210,7 +212,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -236,7 +238,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -296,7 +298,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -322,7 +324,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -381,7 +383,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

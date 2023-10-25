@@ -19,7 +19,7 @@ Defines which APIs are called at specific points in the user flow.  Each relatio
 
 | Relationship            | Type                                            | Description                                                                                                                                             |
 | :---------------------- | :---------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| postFederationSignup    | [identityApiConnector](identityapiconnector.md) | Specifies an API to call after federation with an external identity provider (like Google, Facebook, or Azure AD) is completed when user is signing up (doesn't apply to sign in). |
+| postFederationSignup    | [identityApiConnector](identityapiconnector.md) | Specifies an API to call after federation with an external identity provider (like Google, Facebook, or Microsoft Entra ID) is completed when user is signing up (doesn't apply to sign in). |
 | postAttributeCollection | [identityApiConnector](identityapiconnector.md) | Specifies an API to call after a user submits collected attributes and before the user is created during sign-up.                                                      |
 
 ## JSON representation

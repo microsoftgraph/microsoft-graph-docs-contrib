@@ -11,7 +11,7 @@ ms.date: 11/01/2022
 
 # Identify and remediate risks using Microsoft Graph
 
-Azure AD Identity Protection provides organizations insight into identity-based risk and different ways to investigate and automatically remediate risk. The Identity Protection APIs used in this tutorial can help you identify risk and configure a workflow to confirm compromise or enable remediation. For more information, see [What is risk?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
+Microsoft Entra ID Protection provides organizations insight into identity-based risk and different ways to investigate and automatically remediate risk. The Identity Protection APIs used in this tutorial can help you identify risk and configure a workflow to confirm compromise or enable remediation. For more information, see [What is risk?](/azure/active-directory/identity-protection/concept-identity-protection-risks)
 
 In this tutorial, you learn how to generate a risky sign-in and remediate the risk status of the user with a conditional access policy that requires multi-factor authentication (MFA). An optional section shows you how to block the user from signing in also using a conditional access policy, and dismissing the user risk.
 
@@ -22,14 +22,14 @@ In this tutorial, you learn how to generate a risky sign-in and remediate the ri
 
 To successfully complete this tutorial, make sure that you have the required prerequisites:
 
-- You must have an Azure AD Premium P1 or P2 license to use the risk detection API.
+- You must have a Microsoft Entra ID P1 or P2 license to use the risk detection API.
 - This tutorial uses the Tor browser to sign in to the Microsoft Entra admin center anonymously. You can use any anonymous browser to accomplish the task. To download the Tor browser, see [Download Tor Browser](https://www.torproject.org/download/).
 - Sign in to an API client such as [Graph Explorer](https://aka.ms/ge), Postman, or create your own client app to call Microsoft Graph. To call Microsoft Graph APIs in this tutorial, you need to use an account with the Global Administrator role.
 - Grant yourself the following delegated permissions: `IdentityRiskEvent.Read.All`, `IdentityRiskyUser.ReadWrite.All`, `Policy.Read.All`, `Policy.ReadWrite.ConditionalAccess`, and `User.ReadWrite.All`.
 
 ## Step 1: Create a user account
 
-For this tutorial, you create a user account that is used to test risk detections. In the request body, change `contoso.com` to the domain name of your tenant. You can find tenant information on the Azure Active Directory overview page.
+For this tutorial, you create a user account that is used to test risk detections. In the request body, change `contoso.com` to the domain name of your tenant. You can find tenant information on the Microsoft Entra overview page.
 
 ### Request
 

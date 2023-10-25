@@ -145,6 +145,9 @@ Each subscription has a unique **subscriptionId**, even if you have multiple sub
 > [!NOTE]
 > Any query string parameter included in the **notificationUrl** property will be included in the HTTP POST request when notifications are being delivered to your service.
 
+> [!NOTE]
+> Duplicate subscriptions are not allowed. When a subscription request contains the same values for **changeType** and **resource** as an existing subscription, the request fails with an HTTP error code `409 Conflict`, and the error message `Subscription Id <> already exists for the requested combination`.
+
 #### notificationUrl validation
 
 [!INCLUDE [change-notifications-delivery-notificationurl-validation](includes/change-notifications-delivery-notificationurl-validation.md)]

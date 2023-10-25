@@ -1,6 +1,6 @@
 ---
 title: "Govern membership and ownership of groups using privileged identity management (PIM) for groups"
-description: "Privileged Identity Management (PIM) is a feature of Azure AD Identity Governance that enables you to manage, control, and monitor access to important resources, such as groups, in your organization."
+description: "Privileged Identity Management (PIM) is a feature of Microsoft Entra ID Governance that enables you to manage, control, and monitor access to important resources, such as groups, in your organization."
 author: "ilyalushnikov"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -10,7 +10,7 @@ ms.date: 10/12/2023
 
 # Govern membership and ownership of groups using PIM for groups
 
-With [Privileged Identity Management for groups (PIM for groups)](/azure/active-directory/privileged-identity-management/concept-pim-for-groups), you can govern how principals are assigned membership or ownership of [groups](groups-overview.md). Security and Microsoft 365 groups are critical resources that you can use to provide access to Microsoft cloud resources like Azure AD roles, Azure roles, Azure SQL, Azure Key Vault, Intune; and third-party applications. PIM for groups gives you more control over how and when principals are members or owners of groups, and therefore have privileges granted through their group membership or ownership.
+With [Privileged Identity Management for groups (PIM for groups)](/azure/active-directory/privileged-identity-management/concept-pim-for-groups), you can govern how principals are assigned membership or ownership of [groups](groups-overview.md). Security and Microsoft 365 groups are critical resources that you can use to provide access to Microsoft cloud resources like Microsoft Entra roles, Azure roles, Azure SQL, Azure Key Vault, Intune; and third-party applications. PIM for groups gives you more control over how and when principals are members or owners of groups, and therefore have privileges granted through their group membership or ownership.
 
 The PIM for groups APIs in Microsoft Graph provide you with more governance over security and Microsoft 365 groups such as the following capabilities:
 
@@ -103,7 +103,7 @@ When you assign a principal *active* permanent or temporary membership or owners
 - The principal's details are returned when you query the **members** and **owners** relationships through the [List group members](../api/group-list-members.md) or [List group owners](../api/group-list-owners.md) APIs.
 - You can remove the principal from the group using the [Remove group owner](../api/group-delete-owners.md) or [Remove group member](../api/group-delete-members.md) APIs.
 - If changes to the group are tracked using the [Get delta](../api/group-delta.md) and [Get delta for directory objects](../api/directoryobject-delta.md) functions, an `@odata.nextLink` contains the new member or owner.
-- The changes to group **members** and **owners** made through PIM for groups are logged in Azure AD audit logs and can be read through the [List directory audits](../api/directoryaudit-list.md) API.
+- The changes to group **members** and **owners** made through PIM for groups are logged in Microsoft Entra audit logs and can be read through the [List directory audits](../api/directoryaudit-list.md) API.
 
 When a principal is assigned *eligible* permanent or temporary membership or ownership of a group, the members and owners relationships of the group aren't updated.
 
@@ -145,7 +145,7 @@ In addition, for delegated scenarios, the calling principal needs one of the fol
 
 `*` Permissions for group members and group owners are limited to the read or write operations they need to perform. For example, a group member can [cancel their assignmentScheduleRequest](../api/privilegedaccessgroupassignmentschedulerequest-cancel.md) but not any other principal's request.
 
-Only the approver of the request can call the `/approval` and `/approvalStep` endpoints. They don't have to be assigned any Azure AD roles.
+Only the approver of the request can call the `/approval` and `/approvalStep` endpoints. They don't have to be assigned any Microsoft Entra roles.
 
 
 ## See also
