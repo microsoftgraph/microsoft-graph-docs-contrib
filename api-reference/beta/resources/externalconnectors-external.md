@@ -25,7 +25,7 @@ None.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|authorizationSystems|[microsoft.graph.authorizationSystem](../resources/authorizationsystem.md) collection|**TODO: Add Description**|
+|authorizationSystems|[microsoft.graph.authorizationSystem](../resources/authorizationsystem.md) collection|Represents an onboarded AWS account, Azure subscription, or GCP project that Entra Permissions Management will collect and analyze permissions and actions on.|
 |connections|[microsoft.graph.externalConnectors.externalConnection](../resources/externalconnectors-externalconnection.md) collection|**TODO: Add Description**|
 |industryData|[industryDataRoot](../resources/industrydata-industrydataroot.md)|**TODO: Add Description**|
 
