@@ -20,6 +20,7 @@ None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|id|String|Identifier for the object. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 |Relationship|Type|Description|
