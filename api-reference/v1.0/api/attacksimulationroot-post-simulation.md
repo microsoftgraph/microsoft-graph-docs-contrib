@@ -90,6 +90,9 @@ Content-type: application/json
   "payload@odata.bind": "https://graph.microsoft.com/v1.0/security/attacksimulation/payloads/12345678-9abc-def0-123456789a",
   "loginPage@odata.bind": "https://graph.microsoft.com/v1.0/security/attacksimulation/loginPages/1w345678-9abc-def0-123456789a",
   "landingPage@odata.bind": "https://graph.microsoft.com/v1.0/security/attacksimulation/landingPages/1c345678-9abc-def0-123456789a",
+  "createdBy": {
+        "email": "john@contoso.com"
+    },
   "durationInDays": "3",
   "attackTechnique": "credentialHarvesting",
   "status": "scheduled",

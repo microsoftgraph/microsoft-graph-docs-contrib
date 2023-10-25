@@ -117,7 +117,9 @@ Inherits from [entity](../resources/entity.md).
 |unknownFutureValue| Evolvable enumeration sentinel value. Do not use. |
 
 ## Relationships
-None.
+|landingPage|[landingPage](../resources/landingpage.md)|The landing page associated with a simulation during its creation.|
+|loginPage|[loginPage](../resources/loginpage.md)|The login page associated with a simulation during its creation.|
+|payload|[payload](../resources/payload.md)|The payload associated with a simulation during its creation.|
 
 ## JSON representation
 The following is a JSON representation of the resource.
