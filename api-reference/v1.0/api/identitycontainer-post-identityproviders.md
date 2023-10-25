@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 Create an identity provider object that is of the type specified in the request body.
 
-Among the types of providers derived from identityProviderBase, you can currently create a [socialIdentityProvider](../resources/socialidentityprovider.md) resource in Azure AD. In Azure AD B2C, this operation can currently create a [socialIdentityProvider](../resources/socialidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource.
+Among the types of providers derived from identityProviderBase, you can currently create a [socialIdentityProvider](../resources/socialidentityprovider.md) resource in Microsoft Entra ID. In Azure AD B2C, this operation can currently create a [socialIdentityProvider](../resources/socialidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -48,7 +48,7 @@ POST /identity/identityProviders
 
 ## Request body
 
-In the request body, provide a JSON representation of [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD.
+In the request body, provide a JSON representation of [socialIdentityProvider](../resources/socialidentityprovider.md) object in Microsoft Entra ID.
 
 In Azure AD B2C provide a JSON representation of [socialIdentityProvider](../resources/socialidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) object.
 
@@ -74,7 +74,7 @@ In Azure AD B2C provide a JSON representation of [socialIdentityProvider](../res
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) object in the response body for an Azure AD tenant.
+If successful, this method returns a `201 Created` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md) object in the response body for a Microsoft Entra tenant.
 
 For an Azure AD B2C tenant, this method returns a `201 Created` response code and a JSON representation of a [socialIdentityProvider](../resources/socialidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) object in the response body.
 
@@ -82,11 +82,13 @@ If unsuccessful, a `4xx` error will be returned with specific details.
 
 ## Examples
 
-### Example 1: Create a specific social identity provider (Azure AD and Azure AD B2C)
+<a name='example-1-create-a-specific-social-identity-provider-azure-ad-and-azure-ad-b2c'></a>
+
+### Example 1: Create a specific social identity provider (Microsoft Entra ID and Azure AD B2C)
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -145,7 +147,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -173,7 +175,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -233,7 +235,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

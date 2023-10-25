@@ -46,7 +46,7 @@ POST /compliance/ediscovery/cases/{CaseId}/close
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

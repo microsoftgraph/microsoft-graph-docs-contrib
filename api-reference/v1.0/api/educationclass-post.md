@@ -50,7 +50,7 @@ POST /education/classes
 
 In the request body, supply a JSON representation of the [educationClass](../resources/educationclass.md) object.
 
-The following table shows the properties that are required when you create the [educationClass](../resources/educationclass.md).
+The following table lists the properties that are required when you create the [educationClass](../resources/educationclass.md).
 
 | Property             | Type                                           | Description                                                        |
 | :------------------- | :--------------------------------------------- | :----------------------------------------------------------------- |

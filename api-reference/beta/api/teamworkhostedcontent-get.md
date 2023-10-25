@@ -52,7 +52,7 @@ This operation supports the `$select` [OData query parameters](/graph/query-para
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -64,7 +64,7 @@ If successful, this method returns a `200 OK` response code and a [teamworkHoste
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -137,7 +137,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 > **Note:** Requests for the raw value does not support [OData query parameters](/graph/query-parameters) to customize the response.
 

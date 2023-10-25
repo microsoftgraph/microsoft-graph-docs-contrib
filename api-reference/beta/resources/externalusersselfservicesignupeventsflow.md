@@ -1,6 +1,6 @@
 ---
 title: "externalUsersSelfServiceSignUpEventsFlow resource type"
-description: "Represents a self-service user flow for external identities within an Azure AD workforce tenant or customer tenant."
+description: "Represents a self-service user flow for external identities within a Microsoft Entra workforce tenant or customer tenant."
 author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a self-service user flow for external identities within an Azure AD workforce tenant or customer tenant. A user flow is implemented as a multi-event policy executing the specific events at specific points of user interaction.
+Represents a self-service user flow for external identities within a Microsoft Entra workforce tenant or customer tenant. A user flow is implemented as a multi-event policy executing the specific events at specific points of user interaction.
 
 Inherits from [authenticationEventsFlow](../resources/authenticationeventsflow.md).
 
@@ -91,4 +91,3 @@ The following is a JSON representation of the resource.
   }
 }
 ```
-

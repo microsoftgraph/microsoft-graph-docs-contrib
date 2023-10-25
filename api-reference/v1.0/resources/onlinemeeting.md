@@ -22,6 +22,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | [Update](../api/onlinemeeting-update.md)                           | [onlineMeeting](onlinemeeting.md) | Update the properties of an **onlineMeeting** object. |
 | [Delete onlineMeeting](../api/onlinemeeting-delete.md)             | None                              | Delete an **onlineMeeting** object.                                                                                    |
 | [Create or get onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an **onlineMeeting** object with a custom, external ID. If the meeting already exists, retrieve its properties. |
+| [List transcripts of an onlineMeeting](../api/onlinemeeting-list-transcripts.md) | [callTranscript](callTranscript.md) collection | Retrieve the list of transcripts of an **onlineMeeting**. |
 
 > [!NOTE]
 > 
@@ -33,7 +34,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 
 ## Properties
 
-| Property              | Type                                          | Description                                                                                                                |
+| Property   | Type  | Description  |
 | :-------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | allowAttendeeToEnableCamera     | Boolean                       | Indicates whether attendees can turn on their camera.                          |
 | allowAttendeeToEnableMic     | Boolean                       | Indicates whether attendees can turn on their microphone.                          |
@@ -98,6 +99,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | Relationship | Type | Description |
 | ------------ | ---- | ----------- |
 | attendanceReports | [meetingAttendanceReport](meetingAttendanceReport.md)  collection | The attendance reports of an online meeting. Read-only. |
+| transcripts | [callTranscript](callTranscript.md) collection | The transcripts of an online meeting. Read-only. |
 
 ## JSON representation
 

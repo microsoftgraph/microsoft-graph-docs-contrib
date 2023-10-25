@@ -3,7 +3,7 @@ title: "Onboard tenant"
 description: "Initiate the process to onboard the tenant to the Global Secure Access services."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
@@ -95,7 +95,7 @@ POST https://graph.microsoft.com/beta/networkAccess/microsoft.graph.networkacces
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

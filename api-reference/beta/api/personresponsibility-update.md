@@ -42,7 +42,7 @@ PATCH /users/{id | userPrincipalName}/responsibilities/{id}
 ## Request body
 In the request body, supply a JSON representation of the [personResponsibility](../resources/personresponsibility.md) object.
 
-The following table shows the properties that are required when you create the [personResponsibility](../resources/personresponsibility.md).
+The following table lists the properties that are required when you create the [personResponsibility](../resources/personresponsibility.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

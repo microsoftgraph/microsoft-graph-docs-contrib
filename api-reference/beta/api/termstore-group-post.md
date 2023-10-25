@@ -45,7 +45,7 @@ POST /termStore/groups
 ## Request body
 In the request body, supply a JSON representation of the [group](../resources/termstore-group.md) object.
 
-The following table shows the properties that are required when you create the [group](../resources/termstore-group.md).
+The following table lists the properties that are required when you create the [group](../resources/termstore-group.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

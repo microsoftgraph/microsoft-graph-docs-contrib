@@ -1,6 +1,6 @@
 ---
 title: "assign action"
-description: ""
+description: "Intune Devices Deviceshellscript Assign Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

@@ -59,7 +59,7 @@ This method supports [OData query parameters](/graph/query-parameters) to help c
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -73,7 +73,7 @@ This example includes a **mailSearchFolder** object in the response. The mail se
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -280,7 +280,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/?includeHiddenFolders=true
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here is shortened for readability, and doesn't include all the default folders in a user mailbox.
 <!-- {

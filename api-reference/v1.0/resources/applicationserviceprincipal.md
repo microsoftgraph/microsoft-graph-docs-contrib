@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-When an instance of an application from the Azure AD application gallery is added, [application](../resources/application.md) and [servicePrincipal](../resources/serviceprincipal.md) objects are created in the directory. The **applicationServicePrincipal** represents the concatenation of the **application** and **servicePrincipal** object.
+When an instance of an application from the Microsoft Entra application gallery is added, [application](../resources/application.md) and [servicePrincipal](../resources/serviceprincipal.md) objects are created in the directory. The **applicationServicePrincipal** represents the concatenation of the **application** and **servicePrincipal** object.
 
 ## Methods
 
@@ -21,7 +21,7 @@ None
 
 | Property         | Type                                                 | Description                                                     |
 | :--------------- | :--------------------------------------------------- | :-------------------------------------------------------------- |
-| application      | [application](../resources/application.md)           | Represents an application registered in Azure Active Directory. |
+| application      | [application](../resources/application.md)           | Represents an application registered in Microsoft Entra ID. |
 | servicePrincipal | [servicePrincipal](../resources/serviceprincipal.md) | Represents an instance of an application in a directory.        |
 
 ## Relationships

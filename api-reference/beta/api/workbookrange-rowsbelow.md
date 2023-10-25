@@ -45,7 +45,7 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/rowsBelow(count=
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

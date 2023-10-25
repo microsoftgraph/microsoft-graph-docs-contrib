@@ -1,7 +1,7 @@
 ---
 title: "Call Microsoft Graph from a Cloud Solution Provider application"
 description: "This article describes how to enable application access to partner-managed customer data via Microsoft Graph using either the authorization code grant flow or the service to service client credentials flow."
-author: "jackson-woods"
+author: koravvams
 ms.localizationpriority: high
 ms.prod: "applications"
 ms.custom: graphiamtop20
@@ -133,7 +133,7 @@ CSP customer engagement is currently limited to a single region. Partner-managed
 
 When you create a new customer using the [Partner Center API](https://partnercenter.microsoft.com/partner/developer), a new customer tenant gets created. Additionally, a partner relationship also gets created, which makes you the partner of record for this new customer tenant. This partner relationship can take up to 3 minutes to propagate to the new customer tenant. If your app calls Microsoft Graph straight after creation, your app will likely receive an access denied error. A similar delay may be experienced when an existing customer accepts your invitation. This is because preconsent relies on the partner relationship being present in the customer tenant.
 
-To avoid this problem, we recommend that your partner app should wait **three minutes** after customer creation before calling Azure AD to acquire a token (to call Microsoft Graph). This should cover most cases. 
+To avoid this problem, we recommend that your partner app should wait **three minutes** after customer creation before calling Microsoft Entra ID to acquire a token (to call Microsoft Graph). This should cover most cases. 
 However, if after waiting three minutes you still receive an authorization error, please wait an extra 60 seconds and try again.
 
-> **Note:** On the retry, you must acquire a new access token from Azure AD, before calling Microsoft Graph.  Calling Microsoft Graph with the access token you already have will not work, because the access token is good for an hour and won't contain the pre-consented permission claims.
+> **Note:** On the retry, you must acquire a new access token from Microsoft Entra ID, before calling Microsoft Graph.  Calling Microsoft Graph with the access token you already have will not work, because the access token is good for an hour and won't contain the pre-consented permission claims.

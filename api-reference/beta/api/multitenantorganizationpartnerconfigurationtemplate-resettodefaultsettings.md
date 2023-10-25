@@ -1,6 +1,6 @@
 ---
 title: "multiTenantOrganizationPartnerConfigurationTemplate: resetToDefaultSettings"
-description: "Reset the cross-tenant access policy template with inbound and outbound partner configuration settings for a multi-tenant organization to the default values."
+description: "Reset the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization to the default values."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,9 +12,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reset the cross-tenant access policy template with inbound and outbound partner configuration settings for a multi-tenant organization to the default values.
+Reset the cross-tenant access policy template with inbound and outbound partner configuration settings for a multitenant organization to the default values.
 
-In its reset state, the template has no impact on partner configuration settings, other than that an unconfigured partner configuration is created if needed, for every multi-tenant organization tenant.
+In its reset state, the template has no impact on partner configuration settings, other than that an unconfigured partner configuration is created if needed, for every multitenant organization tenant.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,7 +45,7 @@ POST /policies/crossTenantAccessPolicy/templates/multiTenantOrganizationPartnerC
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -89,12 +91,15 @@ POST https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/templates
 [!INCLUDE [sample-code](../includes/snippets/php/multitenantorganizationpartnerconfigurationtemplatethisresettodefaultsettings-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/multitenantorganizationpartnerconfigurationtemplatethisresettodefaultsettings-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/multitenantorganizationpartnerconfigurationtemplatethisresettodefaultsettings-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 ### Response
 

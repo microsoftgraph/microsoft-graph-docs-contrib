@@ -1,6 +1,6 @@
 ---
 title: "synchronization: acquireAccessToken"
-description: "Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application"
+description: "Acquire an OAuth Access token to authorize the Microsoft Entra provisioning service to provision users into an application"
 author: "ArvindHarinder1"
 ms.localizationpriority: medium
 ms.prod: "applications"
@@ -10,7 +10,7 @@ doc_type: apiPageType
 # synchronization: acquireAccessToken
 Namespace: microsoft.graph
 
-Acquire an OAuth access token to authorize the Azure AD provisioning service to provision users into an application.
+Acquire an OAuth access token to authorize the Microsoft Entra provisioning service to provision users into an application.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -123,5 +123,3 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
