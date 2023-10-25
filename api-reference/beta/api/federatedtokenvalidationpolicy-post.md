@@ -1,5 +1,5 @@
 ---
-title: "POst federatedTokenValidation Policy"
+title: "Post federatedTokenValidation Policy"
 description: "Create or update verified domains for which AAD will validate whether federated account's root domain matches with mapped AAD account's root domain."
 author: "rahul-nagraj"
 ms.localizationpriority: medium
