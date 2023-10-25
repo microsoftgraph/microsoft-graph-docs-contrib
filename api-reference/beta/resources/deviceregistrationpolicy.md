@@ -28,14 +28,14 @@ Represents the policy scope that controls quota restrictions, additional authent
 
 |Property|Type|Description|
 |:---|:---|:---|
-|azureADJoin |[azureADJoinPolicy](../resources/azureadjoinpolicy.md) |Specifies the authorization policy for controlling registration of new devices using **Microsoft Entra Join** within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview).|
-|azureADRegistration |[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)|Specifies the authorization policy for controlling registration of new devices using **Microsoft Entra registered** within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview).|
+|azureADJoin|[azureADJoinPolicy](../resources/azureadjoinpolicy.md)|Specifies the authorization policy for controlling registration of new devices using **Microsoft Entra join** within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview).|
+|azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)|Specifies the authorization policy for controlling registration of new devices using **Microsoft Entra registered** within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview).|
 |description|String|The description of the device registration policy. It's always set to `Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks`. Read-only.|
 |displayName|String|The name of the device registration policy. It's always set to `Device Registration Policy`. Read-only.|
 |id|String| The identifier of the device registration policy. It's always set to `deviceRegistrationPolicy`. Read-only.|
 |localAdminPassword|[localAdminPasswordSettings](../resources/localadminpasswordsettings.md)| Specifies the setting for **Local Admin Password Solution (LAPS)** within your organization.|
-|multiFactorAuthConfiguration|multiFactorAuthConfiguration|Specifies the authentication policy for a user to complete registration using **Microsoft Entra Join** or **Microsoft Entra registered** within your organization. The possible values are: `notRequired` and `required`. The default value is `notRequired`. |
-|userDeviceQuota|Int32|Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations. The default value is set to 50. If this property isn't specified during the policy update operation, it's automatically reset to `0` to indicate that users aren't allowed to join any devices. |
+|multiFactorAuthConfiguration|multiFactorAuthConfiguration|Specifies the authentication policy for a user to complete registration using **Microsoft Entra Join** or **Microsoft Entra registered** within your organization. The possible values are: `notRequired` and `required`. The default value is `notRequired`.|
+|userDeviceQuota|Int32|Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations. The default value is set to 50. If this property isn't specified during the policy update operation, it's automatically reset to `0` to indicate that users aren't allowed to join any devices.|
 
 
 ## Relationships
