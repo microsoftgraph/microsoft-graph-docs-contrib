@@ -15,7 +15,7 @@ This article provides answers to frequently asked questions about migrating from
 
 ## How is Microsoft Graph different from Azure AD Graph and why should I migrate my apps?
 
-The Azure AD Graph API offers access to only Azure AD services. The Microsoft Graph API offers a single unified endpoint to access Azure AD services and other Microsoft services such as Microsoft Teams, Microsoft Exchange, and Microsoft Intune.
+The Azure AD Graph API offers access to only Microsoft Entra services. The Microsoft Graph API offers a single unified endpoint to access Microsoft Entra services and other Microsoft services such as Microsoft Teams, Microsoft Exchange, and Microsoft Intune.
 
 [Microsoft Graph](/graph/overview) is also more secure and resilient than Azure AD Graph. For this reason, Azure AD Graph has been on a deprecation path since June 30, 2020, and will enter the retirement phase after June 30, 2023 as we move all investments to Microsoft Graph. Migrate to Microsoft Graph to avoid loss of functionality.
 
@@ -86,7 +86,7 @@ This list captures only apps used within the last 28 days and that called the Az
 
 The email you receive includes the tenant IDs linked to the app IDs. Follow these steps to retrieve the technical contact details for the specific tenants.
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com).
-1. If you're a subscription owner in multiple Azure AD tenants, first switch to the relevant tenant or directory.
+1. If you're a subscription owner in multiple Microsoft Entra tenants, first switch to the relevant tenant or directory.
     1. On the top right of the window, select your profile icon and choose **Switch directory**. This reveals the **Portal settings | Directories + subscriptions** window. 
     1. From the list, use the **Switch** tab to switch to the directory whose Directory ID matches the tenant ID you received in the email. The active directory is marked **Current**.
     1. Close the window.

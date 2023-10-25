@@ -43,11 +43,11 @@ DELETE /admin/windows/updates/updatableAssets/{azureADDeviceId}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.
+If successful, this method returns a `202 Accepted` response code. It doesn't return anything in the response body.
 
 ## Examples
 

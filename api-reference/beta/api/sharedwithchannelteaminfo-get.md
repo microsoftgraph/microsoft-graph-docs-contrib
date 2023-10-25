@@ -46,7 +46,7 @@ This method does not support the OData query parameters to help customize the re
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [sharedWithCha
 ## Examples
 
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/teams/893075dd-2487-5634-925f-022c42e20265/
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

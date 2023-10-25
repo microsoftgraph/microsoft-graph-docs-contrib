@@ -54,7 +54,7 @@ POST /groups/{groupId}/appRoleAssignments
 
 In the request body, supply a JSON representation of an [appRoleAssignment](../resources/approleassignment.md) object.
 
-The following table shows the properties that are required when you create the [appRoleAssignment](../resources/approleassignment.md). Specify other writable properties as necessary for your **appRoleAssignment**.
+The following table lists the properties that are required when you create the [appRoleAssignment](../resources/approleassignment.md). Specify other writable properties as necessary for your **appRoleAssignment**.
 
 | Property | Type | Description |
 |--|--|--|

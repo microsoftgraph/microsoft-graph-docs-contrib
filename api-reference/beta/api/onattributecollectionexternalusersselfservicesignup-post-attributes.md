@@ -83,7 +83,7 @@ POST https://graph.microsoft.com/beta/identity/authenticationEventsFlows/0313cc3
 ---
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

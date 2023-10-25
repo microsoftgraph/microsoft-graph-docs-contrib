@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [certificateBasedApplicationConfiguration](../resources/certificatebasedapplicationconfiguration.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -46,7 +46,7 @@ This method supports `$select` and `$expand` OData query parameters to help cust
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a [certificateBa
 The following example shows how to get a single chain of trust from the **certificateBasedApplicationConfigurations** collection.
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/directory/certificateAuthorities/certificat
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -132,7 +132,7 @@ The following example shows how to get the **trustedCertificateAuthorities** wit
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_certificatebasedapplicationconfiguration_expand_trustedcertificateauthorities"
@@ -144,7 +144,7 @@ GET https://graph.microsoft.com/beta/directory/certificateAuthorities/certificat
 
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

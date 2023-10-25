@@ -1,5 +1,5 @@
 ---
-title: "Update profilephoto"
+title: "Update profilePhoto"
 description: "Update the photo for any user in the tenant including the signed-in user, or the specified group or contact or team."
 ms.localizationpriority: medium
 doc_type: apiPageType
@@ -7,23 +7,20 @@ ms.prod: "people"
 author: "kevinbellinger"
 ---
 
-# Update profilephoto
+# Update profilePhoto
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the photo for the specified contact, group, team, or user in a tenant. The size of the photo you can update to must be under 8MB.
+Update the photo for the specified contact, group, team, or user in a tenant. The size of the photo you can update to is limited to 4 MB.
 
-Only use PUT for this operation.
-
-> **Note**:  When updating the **user** photo, this operation first attempts to update the photo in Microsoft 365. If that fails (due to the user not having a mailbox), this API will attempt to update the photo in Microsoft Entra ID.
+You can use either PATCH or PUT for this operation.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 The following tables show the least privileged permission or permissions required to call this API on each supported resource type. Follow [best practices](/graph/permissions-overview#best-practices-for-using-microsoft-graph-permissions) to request least privileged permissions. For details about delegated and application permissions, see [Permission types](/graph/permissions-overview#permission-types). To learn more about these permissions, see the [permissions reference](/graph/permissions-reference).
-
 
 ### To update the profile photo of a contact
 
@@ -41,7 +38,7 @@ The following tables show the least privileged permission or permissions require
 |:--------------------|:-----------------------------------------|:------------------------------------------|
 |Delegated (work or school account)      |   Group.ReadWrite.All           | Not supported. |
 |Delegated (personal Microsoft account)      |   Not supported.            | Not supported. |
-|Application      |    Group.ReadWrite.All           | Not supported. |
+|Application      |    Not supported.           | Not supported. |
 
 ### To update the profile photo of a team
 
@@ -52,7 +49,7 @@ The following tables show the least privileged permission or permissions require
 | Delegated (personal Microsoft account) | Not supported.                                                         | Not supported. |
 | Application                            | Not supported.                                                         | Not supported. |
 
-### To update the profile photo of the signed-in user
+### To update the profile photo of a user
 
 <!-- { "blockType": "ignored"  } // Note: Removing this line will result in the permissions autogeneration tool overwriting the table. -->
 |Permission type      | Least privileged permissions             | Higher privileged permissions             |
@@ -64,7 +61,7 @@ The following tables show the least privileged permission or permissions require
 > [!NOTE]
 > - An app with only application permissions cannot update a group's photo.
 > - Permissions marked with * are supported only for backward compatibility. Please update your solutions to use an alternative permission and avoid using these permissions going forward.
-> - To update the photo of any user in the organization, your app must have the *User.ReadWrite.All* application permission and call this API under its own identity, not on behalf of a user. To learn more, see [get access without a signed-in user](/graph/auth-v2-service). Updating the photo of the signed-in user only requires *User.ReadWrite* permission.
+> - Global admin and User admin can update the photo of any user in the organization by using delegated permissions. This operation is also supported with application permissions. Updating the photo of any user in the organization requires *User.ReadWrite.All* permission. Updating the photo of the signed-in user only requires *User.ReadWrite* permission.
 > - Updating a user's photo using the Microsoft Graph API is currently not supported in Azure AD B2C tenants.
 
 ## HTTP request
@@ -88,7 +85,7 @@ PUT /groups/{id}/photo/$value
 To update a team photo:
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT /groups/{teamId}/photo/$value
+PUT /teams/{id}/photo/$value
 ```
 
 To update a user's profile photo:
@@ -103,19 +100,20 @@ PUT /users/{id | userPrincipalName}/photo/$value
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | image/jpeg. Required.  |
+| Content-Type  | e.g. image/jpeg. Required.  |
 
 ## Request body
-In the request body, include the binary data of the photo in the request body.
+In the request body, include the binary data of the photo.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code or a `204 No Content` response code for updating the photo of a team.
+If successful, this method returns a `200 OK` response code or a `204 No Content` response code for updating the photo of a **team**.
 
 ## Examples
-### Example 1: Update the profile photo of the user
+### Example 1: Update the profile photo of a user
 #### Request
-The following is an example of the request.
+
+The following is an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -149,7 +147,7 @@ Binary data for the image
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -198,7 +196,7 @@ Binary data for the image
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

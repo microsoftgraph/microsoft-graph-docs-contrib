@@ -54,7 +54,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns `200 OK` response code and a collection of [timeZoneInformation](../resources/timezoneinformation.md) objects in the response body.

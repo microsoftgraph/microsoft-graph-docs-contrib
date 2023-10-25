@@ -53,7 +53,7 @@ Right now, Universal Print supports only one **printDocument** per **printJob** 
 If successful, this method returns a `201 Created` response code and a [printJob](../resources/printjob.md) object and associated [printDocument](../resources/printDocument.md) in the response body. 
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -135,7 +135,7 @@ Content-type: application/json
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {

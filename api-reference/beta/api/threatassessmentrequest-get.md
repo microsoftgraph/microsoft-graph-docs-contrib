@@ -59,7 +59,7 @@ This method supports the following OData query parameters to help customize the 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -71,7 +71,7 @@ If successful, this method returns a `200 OK` response code and the requested [t
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -119,7 +119,7 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -159,7 +159,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -207,7 +207,7 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -247,7 +247,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -295,7 +295,7 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -334,7 +334,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -382,7 +382,7 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -420,7 +420,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -468,7 +468,7 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

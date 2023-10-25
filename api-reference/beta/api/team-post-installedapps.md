@@ -62,7 +62,7 @@ The following table lists additional properties that can be included in the requ
 
 ## Response
 
-If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -70,7 +70,7 @@ If successful, this method returns a `200 OK` response code. It does not return 
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -124,7 +124,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

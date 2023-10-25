@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 The **conditionalAccessRoot** resource is the entry point for the Conditional Access (CA) object model. It doesn't contain any usable properties.
 
-For more information on Conditional Access in Azure Active Directory, see [What is Conditional Access](/azure/active-directory/conditional-access/overview)?
+For more information on Conditional Access in Microsoft Entra ID, see [What is Conditional Access](/azure/active-directory/conditional-access/overview)?
 
 ## Methods
 

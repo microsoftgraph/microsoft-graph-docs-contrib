@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Domain.Read.All, Domain.ReadWrite.All|
 
-The calling user must be assigned one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+The calling user must be assigned one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
 
 - Security Administrator
 - External Identity Provider Administrator
@@ -47,7 +47,7 @@ This method does not support OData query parameters to help customize the respon
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -137,4 +137,3 @@ Content-Type: application/json
   }
 }
 ```
-

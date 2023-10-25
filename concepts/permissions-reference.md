@@ -8,7 +8,7 @@ ms.localizationpriority: high
 ms.topic: reference
 ms.prod: "applications"
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.date: 06/06/2023
+ms.date: 07/12/2023
 ---
 
 # Microsoft Graph permissions reference
@@ -164,6 +164,8 @@ None.
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Application.Read.All_ | Read applications | Allows the app to read applications and service principals on behalf of the signed-in user. | Yes |
 | _Application.ReadWrite.All_ | Read and write all apps |  Allows the app to create, read, update and delete applications and service principals on behalf of the signed-in user. | Yes |
+| _Application-RemoteDesktopConfig.Read.All_ | Read remote desktop security configuration | Allows the app to read remote desktop security configuration for service principals on behalf of the signed-in user. | Yes |
+| _Application-RemoteDesktopConfig.ReadWrite.All_ | Read and write remote desktop security configuration | Allows the app to create, read, update and delete remote desktop security configuration for service principals on behalf of the signed-in user. | Yes |
 | _AppRoleAssignment.ReadWrite.All_ | Manage app permission grants and app role assignments | Allows the app to manage permission grants for application permissions to any API (including Microsoft Graph) and application assignments for any app, on behalf of the signed-in user. | Yes |
 | _DelegatedPermissionGrant.Read.All_ | Read all delegated permission grants | Allows the app to read all delegated permission grants, on behalf of the signed in user. | Yes |
 | _DelegatedPermissionGrant.ReadWrite.All_ | Manage delegated permission grants | Allows the app to manage delegated permission grants for any API (including Microsoft Graph), on behalf of the signed-in user. | Yes |
@@ -174,6 +176,9 @@ None.
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 | _Application.Read.All_ | Read applications | Allows the app to read applications and service principals without a signed-in user. | Yes |
 | _Application.ReadWrite.All_ | Read and write all apps | Allows the calling app to create, and manage (read, update, update application secrets and delete) applications and service principals without a signed-in user.  Does not allow management of consent grants or application assignments to users or groups. | Yes |
+| _Application.ReadWrite.OwnedBy_ | Manage apps that this app creates or owns | Allows the calling app to create other applications and service principals, and fully manage those applications and service principals (read, update, update application secrets and delete), without a signed-in user.  It cannot update any applications that it is not an owner of. Does not allow management of consent grants or application assignments to users or groups. | Yes |
+| _Application-RemoteDesktopConfig.Read.All_ | Read remote desktop security configuration | Allows the app to read remote desktop security configuration for service principals without a signed-in user. | Yes |
+| _Application-RemoteDesktopConfig.ReadWrite.All_ | Read and write remote desktop security configuration | Allows the app to create, read, update and delete remote desktop security configuration for service principals without a signed-in user. | Yes |
 | _Application.ReadWrite.OwnedBy_ | Manage apps that this app creates or owns | Allows the calling app to create other applications and service principals, and fully manage those applications and service principals (read, update, update application secrets and delete), without a signed-in user.  It cannot update any applications that it is not an owner of. | Yes |
 | _AppRoleAssignment.ReadWrite.All_ | Manage app permission grants and app role assignments | Allows the app to manage permission grants for application permissions to any API (including Microsoft Graph) and application assignments for any app, without a signed-in user. | Yes |
 | _DelegatedPermissionGrant.Read.All_ | Read all delegated permission grants | Allows the app to read all delegated permission grants, without a signed-in user. | Yes |
@@ -195,11 +200,19 @@ The _Application.ReadWrite.OwnedBy_ permission allows the same operations as _Ap
 
 * _Application.Read.All_: List all applications (`GET /v1.0/applications`)
 * _Application.ReadWrite.All_: Update a service principal (`PATCH /v1.0/servicePrincipals/{id}`)
+* _Application-RemoteDesktopConfig.Read.All_: Get remote desktop security configuration for a service principal (`GET /beta/servicePrincipals/{id}/remoteDesktopSecurityConfiguration`)
+* _Application-RemoteDesktopConfig.Read.All_: List target device groups of remote desktop security configuration for a service principal (`GET /beta/servicePrincipals/{id}/remoteDesktopSecurityConfiguration/targetDeviceGroups`)
+* _Application-RemoteDesktopConfig.ReadWrite.All_: Update remote desktop security configuration for a service principal (`PATCH /beta/servicePrincipals/{id}/remoteDesktopSecurityConfiguration`)
+* _Application-RemoteDesktopConfig.ReadWrite.All_: Add target device groups to remote desktop security configuration for a service principal (`POST /beta/servicePrincipals/{id}/remoteDesktopSecurityConfiguration/targetDeviceGroups`)
 
 #### Application
 
 * _Application.Read.All_: List all applications (`GET /v1.0/applications`)
 * _Application.ReadWrite.All_: Delete a service principal (`DELETE /v1.0/servicePrincipals/{id}`)
+* _Application-RemoteDesktopConfig.Read.All_: Get remote desktop security configuration for a service principal (`GET /beta/servicePrincipals/{id}/remoteDesktopSecurityConfiguration`)
+* _Application-RemoteDesktopConfig.Read.All_: List target device groups of remote desktop security configuration for a service principal (`GET /beta/servicePrincipals/{id}/remoteDesktopSecurityConfiguration/targetDeviceGroups`)
+* _Application-RemoteDesktopConfig.ReadWrite.All_: Update remote desktop security configuration for a service principal (`PATCH /beta/servicePrincipals/{id}/remoteDesktopSecurityConfiguration`)
+* _Application-RemoteDesktopConfig.ReadWrite.All_: Add target device groups to remote desktop security configuration for a service principal (`POST /beta/servicePrincipals/{id}/remoteDesktopSecurityConfiguration/targetDeviceGroups`)
 * _Application.ReadWrite.OwnedBy_: Create an application (`POST /v1.0/applications`)
 * _Application.ReadWrite.OwnedBy_: List all applications owned by the calling application (`GET /v1.0/servicePrincipals/{id}/ownedObjects`)
 * _Application.ReadWrite.OwnedBy_: Add another owner to an owned application (`POST /v1.0/applications/{id}/owners/$ref`).
