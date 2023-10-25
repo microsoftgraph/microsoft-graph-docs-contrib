@@ -17,7 +17,7 @@ SDKs are available in the following languages:
 - [JavaScript](#install-the-microsoft-graph-javascript-sdk)
 - [PHP](#install-the-microsoft-graph-php-sdk)
 - [PowerShell](#install-the-microsoft-graph-powershell-sdk)
-- [Python (preview)](#install-the-microsoft-graph-python-sdk-preview)
+- [Python](#install-the-microsoft-graph-python-sdk)
 
 ## Install the Microsoft Graph .NET SDK
 
