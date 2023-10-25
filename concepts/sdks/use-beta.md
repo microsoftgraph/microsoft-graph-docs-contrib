@@ -9,13 +9,13 @@ author: jasonjoh
 
 # Use the Microsoft Graph SDKs with the beta API
 
-Many of the Microsoft Graph SDKs use the [v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=false) Microsoft Graph endpoint by default. The SDKs can be used with the [beta](/graph/api/overview?view=graph-rest-beta&preserve-view=true) endpoint for nonproduction applications. The method for accessing the beta endpoint depends on which SDK you're using.
+Many Microsoft Graph SDKs use the [v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=false) Microsoft Graph endpoint by default. The SDKs can be used with the [beta](/graph/api/overview?view=graph-rest-beta&preserve-view=true) endpoint for nonproduction applications. The method for accessing the beta endpoint depends on your SDK.
 
 [!INCLUDE [beta-disclaimer](../../api-reference/includes/beta-disclaimer.md)]
 
 ## [C#](#tab/csharp)
 
-In order to call the API, you must install the [Microsoft.Graph.Beta](https://www.nuget.org/packages/Microsoft.Graph.Beta) package. Usage is the same as the `Microsoft.Graph` package.
+To call the API, you must install the [Microsoft.Graph.Beta](https://www.nuget.org/packages/Microsoft.Graph.Beta) package. Usage is the same as the `Microsoft.Graph` package.
 
 ```csharp
 // Version 5.x
@@ -29,7 +29,7 @@ GraphServiceClient graphClient = new GraphServiceClient(...);
 
 ## [Go](#tab/go)
 
-In order to call the API, you must install the [Microsoft Graph Beta SDK for Go](https://github.com/microsoftgraph/msgraph-beta-sdk-go) package.
+To call the API, you must install the [Microsoft Graph Beta SDK for Go](https://github.com/microsoftgraph/msgraph-beta-sdk-go) package.
 
 ```go
 import (
@@ -40,7 +40,7 @@ client := graphbeta.NewGraphServiceClientWithCredentials(credentials, scopes)
 
 ## [Java](#tab/java)
 
-In order to call the API, you must install the [Microsoft Graph Beta Java SDK](https://github.com/microsoftgraph/msgraph-beta-sdk-java). Usage is the same as the non beta SDK.
+To call the API, you must install the [Microsoft Graph Beta Java SDK](https://github.com/microsoftgraph/msgraph-beta-sdk-java). Usage is the same as the non-beta SDK.
 
 ```Java
 GraphServiceClient graphClient = GraphServiceClient
@@ -51,7 +51,7 @@ GraphServiceClient graphClient = GraphServiceClient
 
 ## [PHP](#tab/php)
 
-The [Microsoft Graph SDK for PHP](https://github.com/microsoftgraph/msgraph-sdk-php) supports the beta endpoint and models. You set the endpoint with the `setApiVersion` method. You need to disambiguate the v1.0 and beta models by providing an alias. For instructions to install see [Microsoft Graph PHP SDK for Beta endpoint](https://packagist.org/packages/microsoft/microsoft-graph-beta).
+The [Microsoft Graph SDK for PHP](https://github.com/microsoftgraph/msgraph-sdk-php) supports the beta endpoint and models. You set the endpoint with the `setApiVersion` method. You need to disambiguate the v1.0 and beta models by providing an alias. For installation instructions, see [Microsoft Graph PHP SDK for Beta endpoint](https://packagist.org/packages/microsoft/microsoft-graph-beta).
 
 ```php
 use Microsoft\Graph\Beta\GraphServiceClient;
@@ -97,7 +97,7 @@ The [Microsoft Graph JavaScript Client Library](https://github.com/microsoftgrap
     const client = MicrosoftGraph.Client.initWithMiddleware(clientOptions);
     ```
 
-- You can set the version on a specific request by using the `version` function on the `GraphRequest` object.
+- You can set the version on a specific request using the `version` function on the `GraphRequest` object.
 
     ```typescript
     const user = await client
