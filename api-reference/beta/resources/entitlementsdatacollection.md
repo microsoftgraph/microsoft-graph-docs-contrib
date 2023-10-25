@@ -1,6 +1,6 @@
 ---
 title: "entitlementsDataCollection resource type"
-description: "Returned when there are entitlements data collected."
+description: "Represents the details and status of data collection about permissions assigned to an identity in the authorization system."
 author: "mrudulahg01"
 ms.localizationpriority: medium
 ms.prod: "multicloud-permissions-management"
