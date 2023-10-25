@@ -41,7 +41,7 @@ DELETE /servicePrincipals/{{ servicePrincipal id }}/permissionGrantPreApprovalPo
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 
 

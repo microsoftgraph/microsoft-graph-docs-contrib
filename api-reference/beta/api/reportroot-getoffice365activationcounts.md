@@ -79,7 +79,7 @@ The following is an example that outputs CSV.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/reports/getOffice365ActivationCounts?$forma
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "ignored" } --> 
 

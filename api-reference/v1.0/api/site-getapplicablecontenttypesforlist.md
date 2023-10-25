@@ -52,7 +52,7 @@ To list only custom content types, use `$filter=isBuiltin eq false`.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

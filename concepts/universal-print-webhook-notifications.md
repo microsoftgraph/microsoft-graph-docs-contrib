@@ -74,7 +74,7 @@ For more details, see [Subscription resource type properties](/graph/api/resourc
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_subscription_print_taskdefinition"
@@ -136,7 +136,7 @@ For more details, see [Subscription resource type properties](/graph/api/resourc
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_subscription_for_print"

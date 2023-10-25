@@ -49,7 +49,7 @@ This function also supports the `$select`, `$filter` (`eq`), `$orderby`, `$skip`
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

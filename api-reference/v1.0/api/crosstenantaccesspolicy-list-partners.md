@@ -48,7 +48,7 @@ This method supports the `$select` and `$expand` OData query parameters to help 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -62,7 +62,7 @@ The following example shows how to list all partner configurations within a cros
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/partners
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -168,7 +168,7 @@ The following example uses the `$expand` parameter to list the user synchronizat
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -216,7 +216,7 @@ GET https://graph.microsoft.com/v1.0/policies/crossTenantAccessPolicy/partners?$
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

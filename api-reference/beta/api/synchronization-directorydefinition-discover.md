@@ -45,7 +45,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/directories/{di
 
 ## Request body
 
-Do not supply a request body for this method. 
+Don't supply a request body for this method.
 
 ## Response
 
