@@ -20,6 +20,8 @@ The following options are available for creating an invitation:
 1. On invitation creation, Microsoft Graph can automatically send an invitation email directly to the invited user, or your app can use the **inviteRedeemUrl** returned in the response to craft your own invitation (through your communication mechanism of choice) to the invited user. If you decide to have Microsoft Graph send an invitation email automatically, you can specify the content and language of the email by using [invitedUserMessageInfo](../resources/invitedusermessageinfo.md).
 2. When the user is invited, a user entity (of **userType** `Guest`) is created and can be used to control access to resources. The invited user has to go through the redemption process to access any resources they have been invited to.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,7 +52,7 @@ POST /invitations
 
 In the request body, supply a JSON representation of an [invitation](../resources/invitation.md) object.
 
-The following table shows the properties that are required when you create an invitation.
+The following table lists the parameters that are required when you create an invitation.
 
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
