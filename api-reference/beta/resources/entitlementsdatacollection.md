@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returned when there are entitlements data collected. Exposes the last time entitlements were transformed, status of the entitlements, and the status of the permissions modification capability configuration.
+Represents the details and status of data collection about permissions assigned to an identity in the authorization system. The API returns this object when it collects data from the authorization system.
 
 Inherits from [entitlementsDataCollectionInfo](../resources/entitlementsdatacollectioninfo.md).
 
