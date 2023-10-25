@@ -43,7 +43,7 @@ This method supports some of the `$filter`, `$select`, and `$expand` OData query
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

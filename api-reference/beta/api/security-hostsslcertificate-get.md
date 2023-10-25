@@ -51,7 +51,7 @@ This method supports the `$count`, `$select`, `$orderBy`, `$skip`, and `$top` OD
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -110,7 +110,7 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/hostSslCertific
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

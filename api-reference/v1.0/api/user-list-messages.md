@@ -80,7 +80,7 @@ Failing to do this results in the following error:
 
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -135,7 +135,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=sender,subject
 ---
 
 #### Response
-The following is an example of the response. To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.
+The following example shows the response. To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.
 
 <!-- {
   "blockType": "response",

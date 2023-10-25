@@ -46,7 +46,7 @@ The default response expands `parentSection` and selects the section's `id`, `na
 | Accept | string | `application/json` |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

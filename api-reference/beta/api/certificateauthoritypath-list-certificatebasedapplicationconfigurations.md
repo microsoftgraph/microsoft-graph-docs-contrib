@@ -46,7 +46,7 @@ This method supports `$select`, `$filter`, and `$expand` OData query parameters 
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/directory/certificateAuthorities/certificat
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

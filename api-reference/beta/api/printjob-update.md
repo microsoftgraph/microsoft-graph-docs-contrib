@@ -50,7 +50,7 @@ If successful, this method returns a `200 OK` response code with an updated [pri
 ## Example
 The following example shows how to call this API.
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -128,7 +128,7 @@ PATCH https://graph.microsoft.com/beta/print/printers/d5ef6ec4-07ca-4212-baf9-d4
 ---
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",

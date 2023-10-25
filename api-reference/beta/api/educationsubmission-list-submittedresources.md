@@ -51,19 +51,19 @@ All [properties](/graph/api/resources/educationsubmissionresource#properties) ar
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and a collection of [educationSubmissionResource](../resources/educationsubmissionresource.md) objects in the response body.
 
-## Example
+## Examples
 
 ### Example 1: Get all submitted resources
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -74,7 +74,9 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/ad8afb28-c138-4ad7-b7f5-a6986c2655a8/submissions/fbe51c90-78b7-418a-b5f3-871bf8d8d21e/submittedResources
 ```
 
-##### Response
+#### Response
+
+The following example shows the response.
 
 The following is an example of the response.
 

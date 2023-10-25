@@ -59,7 +59,7 @@ The following example updates the **updateWindow** in the **hybridAgentUpdaterCo
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -106,7 +106,7 @@ The following example updates **deferUpdate** in the **hybridAgentUpdaterConfigu
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -150,7 +150,7 @@ The following example updates **allowUpdateConfigurationOverride** in the **hybr
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

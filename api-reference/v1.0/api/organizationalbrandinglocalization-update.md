@@ -69,7 +69,7 @@ The following request updates the banner logo for the fr-FR localization.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -136,7 +136,7 @@ The following request updates the banner logo for the `fr-FR` localization.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -205,7 +205,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

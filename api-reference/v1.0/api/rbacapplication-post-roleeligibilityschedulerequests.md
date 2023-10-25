@@ -239,7 +239,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response. The response object shows a previous role eligibility for a principal is `Revoked`. The principal will no longer see their previously eligible role.
+The following example shows the response. The response object shows a previous role eligibility for a principal is `Revoked`. The principal will no longer see their previously eligible role.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

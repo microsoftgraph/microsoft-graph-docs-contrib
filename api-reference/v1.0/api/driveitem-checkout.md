@@ -38,7 +38,7 @@ POST /users/{userId}/drive/items/{itemId}/checkout
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

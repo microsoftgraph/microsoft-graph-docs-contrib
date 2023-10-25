@@ -63,7 +63,7 @@ If the optional request header is used, the method returns a `200 OK` response c
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

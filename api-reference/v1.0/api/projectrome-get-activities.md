@@ -69,7 +69,7 @@ If successful, this method returns the `200 OK` response code with the user's ac
 
 ##### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -117,7 +117,7 @@ GET https://graph.microsoft.com/v1.0/me/activities
 
 ##### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

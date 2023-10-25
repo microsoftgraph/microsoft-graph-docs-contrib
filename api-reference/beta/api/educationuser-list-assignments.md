@@ -56,7 +56,7 @@ All [properties](../resources/educationassignment.md#properties) are supported f
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -68,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -112,7 +112,7 @@ GET https://graph.microsoft.com/beta/education/me/assignments
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -217,7 +217,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -265,7 +265,7 @@ If user tries to query a different user-id than his own, this method returns a `
 
 The `instructions`, `assignedDateTime`, `assignTo`, `resourcesFolderUrl` and `webUrl` properties will always display null.
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -370,6 +370,8 @@ Content-type: application/json
 
 #### Request
 
+The following example shows a request.
+
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -414,7 +416,7 @@ GET https://graph.microsoft.com/beta/education/users/80cefd93-8d88-40e2-b5d3-678
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** It will expand submissions if the user has a student role, and will be null for teacher role.
 
