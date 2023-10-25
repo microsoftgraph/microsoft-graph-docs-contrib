@@ -32,7 +32,7 @@ In addition to the delegated permissions, the signed-in user who is accessing th
 + Security Operator
 + Security Reader
 
-To learn more about directory roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference)
+To learn more about directory roles, see [Microsoft Entra built-in roles](/azure/active-directory/roles/permissions-reference).
 ## HTTP request
 
 <!-- {
