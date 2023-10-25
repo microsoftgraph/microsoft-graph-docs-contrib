@@ -16,13 +16,7 @@ Namespace: microsoft.graph.externalConnectors
 **TODO: Add Description**
 
 ## Methods
-|Method|Return type|Description|
-|:---|:---|:---|
-|[Get external](../api/externalconnectors-external-get.md)|[microsoft.graph.externalConnectors.external](../resources/externalconnectors-external.md)|Read the properties and relationships of a [microsoft.graph.externalConnectors.external](../resources/externalconnectors-external.md) object.|
-|[Update external](../api/externalconnectors-external-update.md)|[microsoft.graph.externalConnectors.external](../resources/externalconnectors-external.md)|Update the properties of a [microsoft.graph.externalConnectors.external](../resources/externalconnectors-external.md) object.|
-|[List authorizationSystems](../api/externalconnectors-external-list-authorizationsystems.md)|[microsoft.graph.authorizationSystem](../resources/authorizationsystem.md) collection|Get the authorizationSystem resources from the authorizationSystems navigation property.|
-|[Create authorizationSystem](../api/externalconnectors-external-post-authorizationsystems.md)|[microsoft.graph.authorizationSystem](../resources/authorizationsystem.md)|Create a new authorizationSystem object.|
-
+None.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
