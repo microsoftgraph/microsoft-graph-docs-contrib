@@ -13,7 +13,7 @@ Namespace: microsoft.graph.externalConnectors
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The base container for Microsoft Graph APIs such as the industry data ETL and Microsoft Entra Permissions Management for interacting with external data sources.
 
 ## Methods
 None.
