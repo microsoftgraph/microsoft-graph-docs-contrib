@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure resource in an Azure authorization system.
+Represents an Azure resource in an Azure authorization system that you've onboarded to Permissions Management.
 
 Inherits from [authorizationSystemResource](../resources/authorizationsystemresource.md).
 
