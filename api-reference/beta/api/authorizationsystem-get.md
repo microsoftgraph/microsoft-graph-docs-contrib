@@ -77,7 +77,7 @@ Content-Type: application/json
 {
   "id": "{base64}",
   "authorizationSystemId": "956987887735",
-  "authorizationSystemName": "cloudknox-development",
+  "authorizationSystemName": "permissionsmanagement-development",
   "authorizationSystemType": "aws",
   "dataCollectionInfo": {
     "entitlements": {

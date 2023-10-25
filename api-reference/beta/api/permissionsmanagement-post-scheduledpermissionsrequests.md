@@ -93,7 +93,7 @@ Content-Type: application/json
       ]
     },
     "identityInfo": {
-      "externalId": "saketh@cloudknox.io",
+      "externalId": "saketh@permissionsmanagement.io",
       "source": {
         "@odata.type": "microsoft.graph.awsIdentitySource",
         "authoriztionSystemInfo": {
