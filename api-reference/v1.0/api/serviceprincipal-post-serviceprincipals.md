@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
-For multi-tenant apps, the calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+For multi-tenant apps, the calling user must also be in one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
 
 + Global Administrator
 + Application Administrator
@@ -57,7 +57,7 @@ If successful, this method returns a `201 Created` response code and a [serviceP
 
 ## Examples
 ### Request
-Here is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -109,7 +109,7 @@ Content-type: application/json
 ---
 
 ### Response
-Here is an example of the response. 
+Here's an example of the response. 
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -153,4 +153,3 @@ Content-type: application/json
     "passwordCredentials": []
 }
 ```
-

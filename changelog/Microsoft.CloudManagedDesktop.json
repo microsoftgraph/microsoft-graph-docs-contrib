@@ -1,6 +1,101 @@
 {
     "changelog": [
-    {
+        {
+            "ChangeList": [
+                {
+                    "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "rawRemoteConnectionReports",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `rawRemoteConnectionReports` member to the **cloudPcReportName** enumeration.",
+                    "Target": "cloudPcReportName"
+                },
+                {
+                    "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "getRawRemoteConnectionReports",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [getRawRemoteConnectionReports](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getrawremoteconnectionreports?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcReports?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcReports"
+                }
+            ],
+            "Id": "12f93700-b666-4c5c-b569-7db20691c5b3",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-10-16T06:58:17.7596296Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+      {
+            "ChangeList": [
+                {
+                    "Id": "4d35dcf2-2f6c-413d-a4c4-c7770152a77b",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcReportName",
+                    "ChangeType": "Change",
+                    "Description": "Added the `frontlineLicenseUsageReport` member to the **cloudPcReportName** enumeration type.",
+                    "Target": "cloudPcReportName"
+                },
+                {
+                    "Id": "4d35dcf2-2f6c-413d-a4c4-c7770152a77b",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "cloudPcReportName",
+                    "ChangeType": "Change",
+                    "Description": "Added the `frontlineLicenseUsageRealTimeReport` member to the **cloudPcReportName** enumeration type.",
+                    "Target": "cloudPcReportName"
+                },
+                {
+                    "Id": "4d35dcf2-2f6c-413d-a4c4-c7770152a77b",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "getFrontlineReport",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [getFrontlineReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getFrontlineReport?view=graph-rest-beta) method to the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcReports"
+                },
+                {
+                    "Id": "4d35dcf2-2f6c-413d-a4c4-c7770152a77b",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "getSharedUseLicenseUsageReport",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the [getSharedUseLicenseUsageReport](https://learn.microsoft.com/en-us/graph/api/cloudpcreports-getSharedUseLicenseUsageReport?view=graph-rest-beta) method of the [cloudPcReports](https://learn.microsoft.com/en-us/graph/api/resources/cloudpcreports?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcReports"
+                }
+            ],
+            "Id": "4d35dcf2-2f6c-413d-a4c4-c7770152a77b",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-09-29T10:36:40.1525853Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },  
+
+      {
+            "ChangeList": [
+                {
+                    "Id": "6ec2ebe8-8f0c-4595-a8bb-5a40c631fcb8",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "reprovisionCloudPc",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **reprovisionCloudPc** method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Goind forward, use the [reprovision](https://learn.microsoft.com/en-us/graph/api/cloudpc-reprovision?view=graph-rest-beta) API instead.",
+                    "Target": "cloudPc"
+                },
+                {
+                    "Id": "6ec2ebe8-8f0c-4595-a8bb-5a40c631fcb8",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "restoreCloudPc",
+                    "ChangeType": "Deprecation",
+                    "Description": "Deprecated the **restoreCloudPc** method of the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource. Going forward, use the [restore](https://learn.microsoft.com/en-us/graph/api/cloudpc-restore?view=graph-rest-beta) API instead.",
+                    "Target": "cloudPc"
+                }
+            ],
+            "Id": "6ec2ebe8-8f0c-4595-a8bb-5a40c631fcb8",
+            "Cloud": "Prod",
+            "Version": "beta",
+            "CreatedDateTime": "2023-09-29T06:58:17.7596296Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "0361ec23-60ea-4fd8-a32c-6e7387ab5eeb",
@@ -41,7 +136,7 @@
                     "ApiChange": "Property",
                     "ChangedApiName": "powerState",
                     "ChangeType": "Addition",
-                    "Description": "Added the **powerState** property to the [cloudPc](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Description": "Added the **powerState** property to the [cloudPC](https://learn.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
                     "Target": "cloudpc"
                 },
                 {
@@ -147,6 +242,40 @@
             "CreatedDateTime": "2023-06-13T10:36:40.1525853Z",
             "WorkloadArea": "Device and app management",
             "SubArea": "Cloud PC"
+        },
+        {
+          "ChangeList": [
+            {
+              "Id": "79a3808d-826e-431f-9288-58144fe2776a",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcSharedUseServicePlan",
+              "ChangeType": "Deprecation",
+              "Description": "Deprecated the [cloudPcSharedUseServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcSharedUseServicePlan?view=graph-rest-beta) resource and related operations and methods. Going forward, use the [cloudPcFrontLineServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcFrontLineServicePlan?view=graph-rest-beta) resource and supported methods.",
+              "Target": "cloudPcSharedUseServicePlan"
+            },
+            {
+              "Id": "79a3808d-826e-431f-9288-58144fe2776a",
+              "ApiChange": "Resource",
+              "ChangedApiName": "cloudPcFrontLineServicePlan",
+              "ChangeType": "Addition",
+              "Description": "Added the [cloudPcFrontLineServicePlan](https://learn.microsoft.com/en-us/graph/api/resources/cloudPcFrontLineServicePlan?view=graph-rest-beta) resource and supported methods.",
+              "Target": "cloudPcFrontLineServicePlan"
+            },
+            {
+              "Id": "79a3808d-826e-431f-9288-58144fe2776a",
+              "ApiChange": "Resource",
+              "ChangedApiName": "frontLineServicePlans",
+              "ChangeType": "Addition",
+              "Description": "Added the **frontLineServicePlans** relationship to the [virtualEndpoint](https://learn.microsoft.com/en-us/graph/api/resources/intune-virtualEndpoint?view=graph-rest-beta) resource.",
+              "Target": "virtualEndpoint"
+            }
+          ],
+          "Id": "79a3808d-826e-431f-9288-58144fe2776a",
+          "Cloud": "Prod",
+          "Version": "beta",
+          "CreatedDateTime": "2023-10-16T09:35:45.0502622Z",
+          "WorkloadArea": "Device and app management",
+          "SubArea": "Cloud PC"
         },
         {
             "ChangeList": [
@@ -3489,6 +3618,24 @@
           "CreatedDateTime": "2023-07-31T09:00:37.9148169Z",
           "WorkloadArea": "Device and app management",
           "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "80297d8c-5457-4fa1-be2b-769490b818bb",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "adJoinCheckServerNotOperational",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `adJoinCheckServerNotOperational` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "80297d8c-5457-4fa1-be2b-769490b818bb",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2023-10-09T10:11:50.582Z",
+            "WorkloadArea": "Device and app management",
+            "SubArea": "Cloud PC"
      },
      {
         "ChangeList": [
@@ -3505,6 +3652,24 @@
         "Cloud": "Prod",
         "Version": "beta",
         "CreatedDateTime": "2023-07-06T03:57:35.2333537Z",
+        "WorkloadArea": "Device and app management",
+        "SubArea": "Cloud PC"
+      },
+      {
+        "ChangeList": [
+          {
+            "Id": "cd506d8f-eddb-4d12-859d-a7894452989e",
+            "ApiChange": "Permission",
+            "ChangedApiName": "CloudPC.ReadWrite.All",
+            "ChangeType": "Addition",
+            "Description": "Added support for the application permission `CloudPC.ReadWrite.All` to the following operations of the [cloudPcOnPremisesConnection](https://learn.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource: [POST](https://learn.microsoft.com/en-us/graph/api/virtualendpoint-post-onpremisesconnections?view=graph-rest-beta), [UPDATE](https://learn.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-update?view=graph-rest-beta), [DELETE](https://learn.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-delete?view=graph-rest-beta), and [runHealthChecks](https://learn.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-runhealthcheck?view=graph-rest-beta).",
+            "Target": "cloudPcOnPremisesConnection"
+          }
+        ],
+        "Id": "cd506d8f-eddb-4d12-859d-a7894452989e",
+        "Cloud": "Prod",
+        "Version": "beta",
+        "CreatedDateTime": "2023-10-09T11:36:16.0017333Z",
         "WorkloadArea": "Device and app management",
         "SubArea": "Cloud PC"
       }

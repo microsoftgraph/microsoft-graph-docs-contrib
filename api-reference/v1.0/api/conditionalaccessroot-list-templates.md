@@ -43,7 +43,7 @@ This method supports the `$filter` and `$select` OData query parameters to help 
 | Accept-Language | Language. Optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/templates
 ---
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -228,7 +228,7 @@ GET https://graph.microsoft.com/v1.0/identity/conditionalAccess/templates?$selec
 ---
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

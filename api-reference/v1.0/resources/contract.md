@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 Represents an existing partnership that the partner tenant has with a customer tenant.
 
 > **Important:**
-> Exists in partner tenants only. Partner tenants are Azure AD tenants that belong to Microsoft partners who are either part of [Microsoft Cloud Solution Provider](https://partnercenter.microsoft.com/en-us/partner/programs), Office 365 Syndication, or Microsoft Advisor partner programs.
+> Exists in partner tenants only. Partner tenants are Microsoft Entra tenants that belong to Microsoft partners who are either part of [Microsoft Cloud Solution Provider](https://partnercenter.microsoft.com/en-us/partner/programs), Office 365 Syndication, or Microsoft Advisor partner programs.
 
 ## Methods
 
@@ -75,4 +75,3 @@ Here's a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

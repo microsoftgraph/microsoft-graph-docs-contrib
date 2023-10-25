@@ -1,6 +1,6 @@
 ---
 title: "Remove multiTenantOrganizationMember"
-description: "Remove a tenant from a multi-tenant organization."
+description: "Remove a tenant from a multitenant organization."
 author: "rolyon"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove a tenant from a multi-tenant organization. A tenant can be removed in the following scenarios:
+Remove a tenant from a multitenant organization. A tenant can be removed in the following scenarios:
 
 * An active member tenant can remove itself.
 * An active owner tenant can remove any other tenant.
@@ -50,7 +50,7 @@ DELETE /tenantRelationships/multiTenantOrganization/tenants/{tenantId}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

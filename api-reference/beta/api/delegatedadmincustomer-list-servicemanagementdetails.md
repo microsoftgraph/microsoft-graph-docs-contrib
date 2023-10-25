@@ -3,7 +3,7 @@ title: "List serviceManagementDetails"
 description: "Get a list of the delegatedAdminServiceManagementDetail objects and their properties."
 author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.prod: partner-customer-administration
 doc_type: apiPageType
 ---
 
@@ -44,7 +44,7 @@ This method does not support OData query parameters to help customize the respon
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

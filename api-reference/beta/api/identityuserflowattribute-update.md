@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Update the properties of a custom [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object.
 
-[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -56,13 +56,13 @@ In the request body, provide a JSON object with one or more properties that need
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error will be returned with specific details.
+If successful, this method returns a `204 No Content` response code. If unsuccessful, a `4xx` error is returned with specific details.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -118,7 +118,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve the [app](../resources/teamsappinstallation.md) installed in the specified [team](../resources/team.md).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -43,7 +43,7 @@ GET /teams/{id}/installedApps/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [teamsAppInsta
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/v1.0/teams/02bd9fd6-8f93-4758-87c3-1fb73740a315/
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -132,7 +132,7 @@ Content-type: application/json
 
 #### Requests
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -181,7 +181,7 @@ GET https://graph.microsoft.com/v1.0/teams/{id}/installedApps/{id}?$expand=teams
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

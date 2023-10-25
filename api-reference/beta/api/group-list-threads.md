@@ -49,7 +49,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and collection of [c
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -108,7 +108,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/threads
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

@@ -64,13 +64,13 @@ In the request body, supply the values for relevant fields from the [tenantAppMa
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -118,6 +118,15 @@ Content-Type: application/json
                 "restrictionType": "asymmetricKeyLifetime",
                 "maxLifetime": "P30D",
                 "restrictForAppsCreatedAfterDateTime": "2015-01-01T10:37:00Z"
+            },
+            {
+                "restrictionType": "trustedCertificateAuthority",
+                "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z",
+                "certificateBasedApplicationConfigurationIds": [
+                    "eec5ba11-2fc0-4113-83a2-ed986ed13743",
+                    "bb8e164b-f9ed-4b98-bc45-65eddc14f4c1"
+                ],
+                "maxLifetime": null
             }
         ]
     }
@@ -160,7 +169,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

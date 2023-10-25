@@ -1,6 +1,6 @@
 ---
 title: "unifiedRoleManagementAlert: refresh"
-description: "Refresh incidents on all security alerts or on a single security alert in Privileged Identity Management (PIM) for Azure AD roles."
+description: "Refresh incidents on all security alerts or on a single security alert in Privileged Identity Management (PIM) for Microsoft Entra roles."
 author: "rkarim-ms"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Refresh incidents on all security alerts or on a single security alert in Privileged Identity Management (PIM) for Azure AD roles.
+Refresh incidents on all security alerts or on a single security alert in Privileged Identity Management (PIM) for Microsoft Entra roles. This task is a long-running operation and the unifiedRoleManagementAlert object will be updated only when the operation completes.
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -60,14 +60,14 @@ The following table shows the parameters that can be used with this action.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|scopeType|String|The type of the scope where the alert is created. `DirectoryRole` is the only supported one for Azure AD roles. |
+|scopeType|String|The type of the scope where the alert is created. `DirectoryRole` is the only supported one for Microsoft Entra roles. |
 |scopeId|String|The identifier of the scope where the alert applies. `/` is the only supported one for the tenant.|
 
 For refreshing a single alert, do not specify a request body.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code with a 'Location' header which specifies the URL for polling the operation status.
+If successful, this action returns a `202 Accepted` response code with a **Location** header which specifies the URL for polling the operation status.
 
 ## Examples
 
@@ -127,7 +127,7 @@ Content-Type: application/json
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -190,7 +190,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/al
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

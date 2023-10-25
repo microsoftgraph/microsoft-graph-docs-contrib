@@ -46,7 +46,7 @@ If successful, this method returns `204 No Content` response code.
 
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -58,7 +58,7 @@ PUT https://graph.microsoft.com/beta/applications/{id}/connectorGroup/$ref
 Content-type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"
+  "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"
 }
 ```
 
@@ -97,7 +97,7 @@ Content-type: application/json
 ---
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 
 <!-- {
   "blockType": "response"

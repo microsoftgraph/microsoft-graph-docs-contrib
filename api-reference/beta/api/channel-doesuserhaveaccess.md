@@ -41,7 +41,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|tenantId|String|The ID of the Azure Active Directory tenant that the [user](../resources/useridentity.md) belongs to. The default value for this property is the current **tenantId** of the signed-in user or app.|
+|tenantId|String|The ID of the Microsoft Entra tenant that the [user](../resources/useridentity.md) belongs to. The default value for this property is the current **tenantId** of the signed-in user or app.|
 |userId|String|Unique identifier for the [user](../resources/useridentity.md). Either specify the **userId** or the **userPrincipalName** property in the request.|
 |userPrincipalName|String|The user principal name (UPN) of the [user](../resources/useridentity.md). Either specify the **userId** or the **userPrincipalName** property in the request.|
 
@@ -52,7 +52,7 @@ The following table shows the parameters that can be used with this function.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this function.
+Don't supply a request body for this function.
 
 ## Response
 
@@ -62,11 +62,11 @@ If successful, this function returns a `200 OK` response code and a Boolean in t
 
 ### Example 1: Check access for an internal user
 
-The following is an example of a request that checks whether an internal user has access to a shared channel.
+Here's an example of a request that checks whether an internal user has access to a shared channel.
 
 #### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/teams/0fddfdc5-f319-491f-a514-be1bc1bf9ddc/
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -124,13 +124,13 @@ Content-Type: application/json
 ```
 
 
-### Example 2: Check access for an external user
+### Example 2: Check access for a guest
 
-The following is an example of a request that uses the **tenantId** property to check whether an external user has access to a shared channel.
+Here's an example of a request that uses the **tenantId** property to check whether a guest has access to a shared channel.
 
 #### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -171,7 +171,7 @@ GET https://graph.microsoft.com/beta/teams/0fddfdc5-f319-491f-a514-be1bc1bf9ddc/
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -190,11 +190,11 @@ Content-Type: application/json
 
 ### Example 3: Check user access for a user using the user principal name
 
-The following is an example of a request that uses the **userPrincipalName** property to check whether an internal user has access to a shared channel.
+Here's an example of a request that uses the **userPrincipalName** property to check whether an internal user has access to a shared channel.
 
 #### Request
 
-The following is an example of a request.
+Here's an example of a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -235,7 +235,7 @@ GET https://graph.microsoft.com/beta/teams/0fddfdc5-f319-491f-a514-be1bc1bf9ddc/
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 <!-- {
   "blockType": "response",
@@ -250,4 +250,3 @@ Content-Type: application/json
   "value": false
 }
 ```
-

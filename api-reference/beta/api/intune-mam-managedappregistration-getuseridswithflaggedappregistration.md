@@ -1,6 +1,6 @@
 ---
 title: "getUserIdsWithFlaggedAppRegistration function"
-description: ""
+description: "Intune Mam Managedappregistration Getuseridswithflaggedappregistration Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

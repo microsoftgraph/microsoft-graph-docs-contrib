@@ -1,6 +1,6 @@
 ---
 title: "getComanagementEligibleDevicesSummary function"
-description: ""
+description: "Intune Devices Devicemanagement Getcomanagementeligibledevicessummary Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"

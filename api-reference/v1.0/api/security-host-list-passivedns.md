@@ -13,7 +13,9 @@ Namespace: microsoft.graph.security
 
 [!INCLUDE [threatintelligence-api-disclaimer](../../includes/threatintelligence-api-disclaimer.md)]
 
-Get a list of [passiveDnsRecord](../resources/security-passivednsrecord.md) resources associated to a host.
+Get a list of [passiveDnsRecord](../resources/security-passivednsrecord.md) resources associated with a [host](../resources/security-host.md).
+
+This is a forward DNS lookup which queries the IP address of the specified host using its hostname. 
 
 [!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
@@ -50,7 +52,7 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -110,7 +112,7 @@ GET https://graph.microsoft.com/v1.0/security/threatIntelligence/hosts/contoso.c
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

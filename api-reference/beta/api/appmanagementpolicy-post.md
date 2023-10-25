@@ -67,7 +67,7 @@ If successful, this method returns a `201 Created` response code with the new [a
 
 ### Request
 
-The following is an example of the request. This request created an app management policy with the following settings:
+The following example shows a request. This request created an app management policy with the following settings:
 
 - Enables the policy.
 - Blocks creating of new passwords for applications and service principals created on or after 2019-10-19 at 10:37 AM UTC time.
@@ -116,6 +116,15 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
                 "restrictionType": "asymmetricKeyLifetime",
                 "maxLifetime": "P90D",
                 "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
+            },
+            {
+                "restrictionType": "trustedCertificateAuthority",
+                "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z",
+                "certificateBasedApplicationConfigurationIds": [
+                    "eec5ba11-2fc0-4113-83a2-ed986ed13743",
+                    "bb8e164b-f9ed-4b98-bc45-65eddc14f4c1"
+                ],
+                "maxLifetime": null
             }
         ]
     }
@@ -155,7 +164,7 @@ POST https://graph.microsoft.com/beta/policies/appManagementPolicies
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

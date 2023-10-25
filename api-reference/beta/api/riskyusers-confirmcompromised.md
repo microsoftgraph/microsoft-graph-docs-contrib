@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->**Note:** The riskyUsers API requires an Azure AD Premium P2 license.
+>**Note:** The riskyUsers API requires a Microsoft Entra ID P2 license.
 
 Confirm one or more [riskyUser](../resources/riskyuser.md) objects as compromised. This action sets the targeted user's risk level to high.
 
@@ -46,11 +46,11 @@ Specify the risky user IDs to dismiss in the request body.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 ## Examples
 <!--### Example 1: Confirm users as compromised-->
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -100,7 +100,7 @@ Content-type: application/json
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

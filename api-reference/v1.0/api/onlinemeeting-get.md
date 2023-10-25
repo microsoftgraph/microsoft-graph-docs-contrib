@@ -16,9 +16,13 @@ Retrieve the properties and relationships of an [onlineMeeting](../resources/onl
 For example, you can:
 
 - Get details of an online meeting using [videoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id),  [joinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl), or [joinMeetingId](#example-4-retrieve-an-online-meeting-by-joinmeetingid).
-- Use the `/attendeeReport` path to get the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link, as shown in [example 5](#example-5-fetch-attendee-report-of-a-teams-live-event).
+- Use the `/attendeeReport` path to get the attendee report of a [Microsoft Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) in the form of a download link. **(deprecated)**
 
-Teams live event attendee report is an online meeting artifact. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
+Teams live event attendee report **(deprecated)** is an online meeting artifact. For details, see [Online meeting artifacts and permissions](/graph/cloud-communications-online-meeting-artifacts).
+
+> [!CAUTION]
+> 
+> The online meeting APIs that support Microsoft Teams live events stopped returning data on September 30, 2024. For details about the removal of these APIs and upcoming new APIs to replace them, see the [Deprecation of Teams live events API on Microsoft Graph](https://devblogs.microsoft.com/microsoft365dev/deprecation-of-teams-live-events-api-on-microsoft-graph/) blog post.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -68,7 +72,7 @@ GET /me/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{join
 GET /users/{userId}/onlineMeetings?$filter=joinMeetingIdSettings/joinMeetingId%20eq%20'{joinMeetingId}'
 ```
 
-To get the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) with delegated (`/me`) and app (`/users/{userId}`) permission:
+To get the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events) with delegated (`/me`) and app (`/users/{userId}`) permission: **(deprecated)**
 <!-- { "blockType": "ignored" }-->
 
 ```http
@@ -96,7 +100,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 If the request contains an `Accept-Language` HTTP header, the `content` of `joinInformation` will be in the language and locale variant specified in the `Accept-Language` header. The default content will be in English.
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -104,7 +108,7 @@ If successful, this method returns a `200 OK` response code. The response also i
 
 - If you fetch an online meeting by meeting ID, this method returns an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
 - If you fetch an online meeting by **videoTeleconferenceId** or **joinWebUrl**, this method returns a collection that contains only one [onlineMeeting](../resources/onlinemeeting.md) object in the response body.
-- If you fetch the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events), this method returns a `Location` header that indicates the URI to the attendee report.
+- If you fetch the attendee report of a [Teams live event](/microsoftteams/teams-live-events/what-are-teams-live-events), this method returns a `Location` header that indicates the URI to the attendee report. **(deprecated)**
 
 > [!NOTE]
 >- **joinMeetingIdSettings** might not be generated for some prescheduled meetings if the meeting was created before this feature was supported.
@@ -173,7 +177,7 @@ GET https://graph.microsoft.com/v1.0/communications/onlineMeetings/?$filter=Vide
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -306,7 +310,7 @@ GET https://graph.microsoft.com/v1.0/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -412,7 +416,7 @@ GET https://graph.microsoft.com/v1.0/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -525,7 +529,7 @@ GET https://graph.microsoft.com/v1.0/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -585,7 +589,7 @@ Content-Type: application/json
 }
 ```
 
-### Example 5: Fetch attendee report of a Teams live event
+### Example 5: Fetch attendee report of a Teams live event (deprecated)
 
 The following example shows a request to download an attendee report.
 
@@ -647,7 +651,7 @@ GET https://graph.microsoft.com/v1.0/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

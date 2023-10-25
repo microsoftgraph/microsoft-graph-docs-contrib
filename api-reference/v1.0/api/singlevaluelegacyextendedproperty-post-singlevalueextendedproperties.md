@@ -22,7 +22,7 @@ The following user resources are supported:
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 
-As well as the following group resources:
+The following group resources:
 
 - group [calendar](../resources/calendar.md)
 - group [event](../resources/event.md)
@@ -53,8 +53,8 @@ You can create extended properties in a new or existing resource instance.
 
 To create one or more extended properties in a _new_ resource instance, use the same REST request as creating the
 instance, and include the properties of the new resource instance _and extended property_ in the request body.
-Note that some resources support creation in more than one way. For more information on creating these resource instances,
-see the corresponding topics for creating a [message](../resources/message.md), [mailFolder](../api/user-post-mailfolders.md),
+Some resources support creation in more than one way. For more information on creating these resource instances,
+see the corresponding articles for creating a [message](../resources/message.md), [mailFolder](../api/user-post-mailfolders.md),
 [event](../api/user-post-events.md), [calendar](../api/user-post-calendars.md),
 [contact](../api/user-post-contacts.md), [contactFolder](../api/user-post-contactfolders.md),
 [group event](../api/group-post-events.md), and [group post](../resources/post.md).
@@ -95,7 +95,7 @@ POST /groups/{id}/conversations
 To create one or more extended properties in an existing resource instance, specify the instance in the
 request, and include the extended property in the request body.
 
-**Note** You cannot create an extended property in an existing group post.
+**Note** You can't create an extended property in an existing group post.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -249,7 +249,7 @@ Content-Type: application/json
 
 #### Response
 
-A successful response is indicated by an `HTTP 201 Created` response code, and includes the new event in the response body, similar to the response from [creating just an event](../api/user-post-events.md). The response does not include any newly created extended properties.
+A successful response is indicated by an `HTTP 201 Created` response code, and includes the new event in the response body, similar to the response from [creating just an event](../api/user-post-events.md). The response doesn't include any newly created extended properties.
 
 To see the newly created extended property, [get the event expanded with the extended property](../api/singlevaluelegacyextendedproperty-get.md).
 
@@ -408,7 +408,7 @@ Content-Type: application/json
 
 #### Response
 
-A successful response is indicated by an `HTTP 200 OK` response code, and includes the specified message in the response body, similar to the response from [updating a message](../api/message-update.md). The response does not include the newly created extended property.
+A successful response is indicated by an `HTTP 200 OK` response code, and includes the specified message in the response body, similar to the response from [updating a message](../api/message-update.md). The response doesn't include the newly created extended property.
 
 To see the newly created extended property, [get the message expanded with the extended property](../api/singlevaluelegacyextendedproperty-get.md).
 

@@ -48,7 +48,7 @@ GET /policies/appManagementPolicies
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -58,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/policies/appManagementPolicies
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -155,6 +155,15 @@ Content-type: application/json
                   "restrictionType": "asymmetricKeyLifetime",
                   "maxLifetime": "P90D",
                   "restrictForAppsCreatedAfterDateTime": "2014-10-19T10:37:00Z"
+               },
+               {
+                  "restrictionType": "trustedCertificateAuthority",
+                  "restrictForAppsCreatedAfterDateTime": "2019-10-19T10:37:00Z",
+                  "certificateBasedApplicationConfigurationIds": [
+                     "eec5ba11-2fc0-4113-83a2-ed986ed13743",
+                     "bb8e164b-f9ed-4b98-bc45-65eddc14f4c1"
+                  ],
+                  "maxLifetime": null
                }
             ]
          }

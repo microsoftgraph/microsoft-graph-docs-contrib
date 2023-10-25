@@ -17,7 +17,7 @@ Install an [app](../resources/teamsapp.md) in the personal scope of the specifie
 
 >**Note:** This API works differently in one or more national clouds. For details, see [Microsoft Teams API implementation differences in national clouds](/graph/teamwork-national-cloud-differences).
 
-[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -57,7 +57,7 @@ The following table lists additional parameters that can be used with the reques
 
 ## Response
 
-If successful, this method returns a `201 Created` response code. It does not return anything in the response body.
+If successful, this method returns a `201 Created` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -65,7 +65,7 @@ If successful, this method returns a `201 Created` response code. It does not re
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -117,7 +117,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -131,7 +131,7 @@ HTTP/1.1 201 Created
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -191,7 +191,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

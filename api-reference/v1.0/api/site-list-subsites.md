@@ -1,12 +1,12 @@
 ---
 author: spgraph-docs-team
-title: List the subsites for a SharePoint site
+title: List subsites for a site
 ms.localizationpriority: high
 ms.prod: "sharepoint"
-description: "Get a collection of subsites defined for a site."
+description: "Get a collection of subsites defined for a SharePoint site."
 doc_type: apiPageType
 ---
-# Enumerate subsites
+# List subsites for a site
 
 Namespace: microsoft.graph
 
@@ -42,7 +42,7 @@ GET /sites/{site-id}/sites
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/sites
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

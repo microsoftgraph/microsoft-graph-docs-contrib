@@ -59,10 +59,6 @@ The following is an example of a request that clears the preferred availability 
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/clearUserPreferredPresence
-Content-Type: application/json
-
-{
-}
 ```
 
 # [C#](#tab/csharp)
@@ -101,7 +97,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
