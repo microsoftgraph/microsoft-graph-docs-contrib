@@ -46,7 +46,7 @@ For more information about subscriptions and change notifications, including res
 | notificationUrlAppId | String | Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received. |
 | resource | String | Required. Specifies the resource that will be monitored for changes. Do not include the base URL (`https://graph.microsoft.com/v1.0/`). See the possible resource path [values](webhooks.md) for each supported resource. |
 
-## Subscription lifetime
+### Subscription lifetime
 
 Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time; Otherwise, they need to create a new subscription. Apps can also unsubscribe at any time to stop getting change notifications.
 
@@ -54,7 +54,7 @@ The following table shows the maximum expiration times for subscriptions per res
 
 [!INCLUDE [change-notifications-subscription-lifetime](../../../concepts/includes/change-notifications-subscription-lifetime.md)]
 
-## Latency
+### Latency
 
 [!INCLUDE [change-notifications-delivery-latency](../../../concepts/includes/change-notifications-delivery-latency.md)]
 
