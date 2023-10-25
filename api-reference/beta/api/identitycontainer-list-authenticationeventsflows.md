@@ -49,7 +49,7 @@ This method supports the `$filter`, `$expand`,  `$orderby`, and  `$top` OData qu
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

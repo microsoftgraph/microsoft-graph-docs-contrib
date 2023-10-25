@@ -86,7 +86,7 @@ The following is an example that outputs CSV.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessPeerToPeerActivi
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -132,7 +132,7 @@ The following is an example that returns JSON.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 <!-- {
@@ -147,7 +147,7 @@ GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessPeerToPeerActivi
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

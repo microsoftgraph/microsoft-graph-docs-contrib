@@ -54,7 +54,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a [printerShare](../resources/printershare.md) object in the response body.
 By default, the response will not contain [printerCapabilities](../resources/printerCapabilities.md). To get **printerCapabilities**, use the `$select` query parameter. 

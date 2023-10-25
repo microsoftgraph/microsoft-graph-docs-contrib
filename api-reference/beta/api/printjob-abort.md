@@ -48,12 +48,12 @@ In the request body, you can optionally provide the reason why the job is being 
 |reason|String|Reason why job is being aborted.|
 
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 The following example shows how to call this API.
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -100,7 +100,7 @@ POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/abort
 ---
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

@@ -58,7 +58,7 @@ GET /users/{id | userPrincipalName}/authentication/softwareOathMethods/{id}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

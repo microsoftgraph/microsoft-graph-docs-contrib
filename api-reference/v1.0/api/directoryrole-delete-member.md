@@ -49,11 +49,11 @@ DELETE /directoryRoles(roleTemplateId='{roleTemplateId}')/members/{id}/$ref
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -121,7 +121,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request. Replace `9f06204d-73c1-4d4c-880a-6edb90606fd8` with the value of your roleTemplateId and `bb165b45-151c-4cf6-9911-cd7188912848` with the **id** value of your user of directory object.
+The following example shows a request. Replace `9f06204d-73c1-4d4c-880a-6edb90606fd8` with the value of your roleTemplateId and `bb165b45-151c-4cf6-9911-cd7188912848` with the **id** value of your user of directory object.
 
 <!-- disabling snippet generation because of an SDK limitation. For more information, see https://github.com/microsoftgraph/msgraph-sdk-dotnet/issues/1041-->
 

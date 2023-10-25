@@ -49,7 +49,7 @@ GET /users/{userId}/onlineMeetings/{onlineMeetingId}/getVirtualAppointmentJoinWe
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

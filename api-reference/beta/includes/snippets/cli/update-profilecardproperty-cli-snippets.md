@@ -11,7 +11,7 @@ mgc-beta admin people profile-card-properties patch --profile-card-property-id {
       "localizations": [\
         {\
           "languageTag": "no-NB",\
-          "displayName": "Kostnads Senter"\
+          "displayName": "Kostnadssenter"\
         }\
       ]\
     }\

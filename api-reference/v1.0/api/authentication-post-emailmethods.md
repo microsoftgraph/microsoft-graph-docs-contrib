@@ -44,7 +44,7 @@ POST /users/{id | userPrincipalName}/authentication/emailMethods
 ## Request body
 In the request body, supply a JSON representation of the [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object with the desired email address.
 
-The following table shows the properties that are required when you create the [emailAuthenticationMethod](../resources/emailauthenticationmethod.md).
+The following table lists the properties that are required when you create the [emailAuthenticationMethod](../resources/emailauthenticationmethod.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -112,7 +112,7 @@ Content-Type: application/json
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

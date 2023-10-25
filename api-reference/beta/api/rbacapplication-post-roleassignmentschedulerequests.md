@@ -44,7 +44,7 @@ POST /roleManagement/directory/roleAssignmentScheduleRequests
 ## Request body
 In the request body, supply a JSON representation of the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.
 
-The following table shows the properties that are required when you create the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md).
+The following table lists the properties that are required when you create the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -135,7 +135,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -260,7 +260,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

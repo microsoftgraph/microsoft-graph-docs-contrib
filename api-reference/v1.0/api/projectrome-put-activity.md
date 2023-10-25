@@ -53,7 +53,7 @@ If successful, this method returns the `201 Created` response code if the activi
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -104,7 +104,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
     "blockType": "response",
@@ -163,7 +163,7 @@ This example creates a new activity and a history item for that activity in one 
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -221,7 +221,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
     "blockType": "response",
