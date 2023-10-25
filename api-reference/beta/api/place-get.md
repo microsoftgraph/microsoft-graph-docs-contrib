@@ -22,6 +22,8 @@ The **place** object can be one of the following types:
 
 The **room**, **workspace**, and **roomList** resources are derived from the **place** object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -53,7 +55,7 @@ For more information about OData query options, see [OData query parameters](/gr
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -89,7 +91,7 @@ GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note**: The response object shown here might be shortened for readability.
 
@@ -166,7 +168,7 @@ GET https://graph.microsoft.com/beta/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note**: The response object shown here might be shortened for readability.
 
@@ -237,7 +239,7 @@ GET https://graph.microsoft.com/beta/places/bldg1@contoso.com
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note**: The response object shown here might be shortened for readability.
 

@@ -2,7 +2,7 @@
 title: "message: reply"
 description: "Reply to the sender of a message using either JSON or MIME format."
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -26,6 +26,8 @@ When using MIME format:
 This method saves the message in the **Sent Items** folder.
 
 Alternatively, [create a draft to reply to a message](../api/message-createreply.md), and [send](../api/message-send.md) it later.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -66,7 +68,7 @@ When specifying the body in MIME format, provide the MIME content with the appli
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.
+If successful, this method returns a `202 Accepted` response code. It doesn't return anything in the response body.
 
 If the request body includes malformed MIME content, this method returns a `400 Bad Request` response code and the following error message: "Invalid base64 string for MIME content".
 
@@ -74,7 +76,7 @@ If the request body includes malformed MIME content, this method returns a `400 
 ### Example 1: Reply to a message in JSON format
 The following example includes a comment and adds a recipient to the reply message.
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -89,7 +91,7 @@ POST https://graph.microsoft.com/beta/me/messages/AAMkADA1MTAAAAqldOAAA=/reply
 Content-Type: application/json
 
 {
-  "message":{  
+  "message":{
     "toRecipients":[
       {
         "emailAddress": {
@@ -105,13 +107,17 @@ Content-Type: application/json
       }
      ]
   },
-  "comment": "Samantha, Randi, would you name the group please?" 
+  "comment": "Samantha, Randi, would you name the group please?"
 }
 
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/message-reply-beta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/message-reply-beta-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -141,7 +147,7 @@ Content-Type: application/json
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -154,7 +160,7 @@ HTTP/1.1 202 Accepted
 
 ### Example 2: Reply to a message in MIME format
 #### Request
-The following is an example of the request.
+The following example shows a request.
 <!-- {
   "blockType": "ignored",
   "name": "message_reply_mime_beta"
@@ -169,7 +175,7 @@ UmVjZWl2ZWQ6IGZyb20gY29udG9zby5jb20gKDEwLjE5NC4yNDEuMTk3KSBieSAKY29udG9zby5jb20g
 ```
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -48,8 +48,8 @@ The following table shows the parameters that can be used with this action.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|notifyManagedDevices|Boolean|Not yet documented|
-|revokeUntrackedLicenses|Boolean|Not yet documented|
+|notifyManagedDevices|Boolean||
+|revokeUntrackedLicenses|Boolean||
 
 
 

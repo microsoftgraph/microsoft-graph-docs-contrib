@@ -1,7 +1,7 @@
 ---
 title: "List userAttributeAssignments"
 description: "Get the identityUserFlowAttributeAssignment resources from the userAttributeAssignments navigation property."
-author: "jkdouglas"
+author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -12,6 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get the identityUserFlowAttributeAssignment resources from the userAttributeAssignments navigation property in a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -46,7 +48,7 @@ This method supports the `$select` and `$expand` parameters to get the details o
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -72,6 +74,10 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userAttributeAss
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-identityuserflowattributeassignment-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-identityuserflowattributeassignment-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -164,6 +170,10 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userAttributeAss
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-identityuserflowattributeassignment-expand-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-identityuserflowattributeassignment-expand-2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-identityuserflowattributeassignment-expand-2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -181,7 +191,7 @@ GET https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/userAttributeAss
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-identityuserflowattributeassignment-expand-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

@@ -12,13 +12,13 @@ $params = @{
 			localizations = @(
 				@{
 					languageTag = "no-NB"
-					displayName = "Kostnads Senter"
+					displayName = "Kostnadssenter"
 				}
 			)
 		}
 	)
 }
 
-Update-MgBetaOrganizationSettingProfileCardProperty -OrganizationId $organizationId -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
+Update-MgBetaAdminPeopleProfileCardProperty -ProfileCardPropertyId $profileCardPropertyId -BodyParameter $params
 
 ```

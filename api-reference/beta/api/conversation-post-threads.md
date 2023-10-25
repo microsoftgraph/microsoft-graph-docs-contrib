@@ -20,6 +20,8 @@ to that thread. Or, if you get the post ID, you can also [reply](post-reply.md) 
 
 Note: You can also [start a new conversation by first creating a thread](group-post-threads.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -48,7 +50,7 @@ If successful, this method returns `201 Created` response code and a [conversati
 
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -76,6 +78,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-conversationthread-from-conversation-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-conversationthread-from-conversation-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -109,7 +115,7 @@ In the request body, supply a JSON representation of [conversationThread](../res
 
 If successful, this method returns `201 Created` response code and the `id` of the new thread in the response body.
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

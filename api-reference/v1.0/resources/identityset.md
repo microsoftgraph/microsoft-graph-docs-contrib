@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 title: "identitySet resource type"
 description: "Represents a keyed collection of identity resources."
 ms.localizationpriority: medium
@@ -51,7 +51,7 @@ The following is a JSON representation of the resource.
 }
 ```
 
-## See also 
+## See also
 
 For examples about the usage of **identitySet** resources, see [driveItem](driveitem.md).
 

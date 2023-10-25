@@ -12,6 +12,8 @@ Namespace: microsoft.graph.security
 
 Get a list of the [retentionEvent](../resources/security-retentionevent.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -40,7 +42,7 @@ This method supports the expand OData query parameters to help customize the res
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

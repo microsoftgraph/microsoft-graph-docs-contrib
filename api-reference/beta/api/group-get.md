@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 Get the properties and relationships of a [group](../resources/group.md) object.
 
-This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that are _not_ returned by default, specify them in a `$select` OData query option. The **hasMembersWithLicenseErrors** and **isArchived** properties are an exception and are not returned in the `$select` query. Because the **group** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **group** instance.
+This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section. To get properties that aren't_ returned by default, specify them in a `$select` OData query option. The **hasMembersWithLicenseErrors** and **isArchived** properties are an exception and aren't returned in the `$select` query. Because the **group** resource supports [extensions](/graph/extensibility-overview), you can also use the `GET` operation to get custom properties and extension data in a **group** instance.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -37,7 +39,7 @@ GET /groups/{id}
 
 ## Optional query parameters
 
-You can use `$select` to get specific group properties, including those that are not returned by default. Extension properties also support query parameters as follows:
+You can use `$select` to get specific group properties, including properties that aren't returned by default. Extension properties also support query parameters as follows:
 
 | Extension type       | Comments                                                                       |
 |----------------------|--------------------------------------------------------------------------------|
@@ -55,7 +57,7 @@ For more information on OData query options, see [OData Query Parameters](/graph
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -67,7 +69,7 @@ If successful, this method returns a `200 OK` response code and [group](../resou
 
 #### Request
 
-The following is an example of a GET request.
+Here's an example  of a GET request.
 
 # [HTTP](#tab/http)
 
@@ -83,6 +85,10 @@ GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-group-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-group-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -113,7 +119,7 @@ GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 
 #### Response
 
-The following is an example of the response. It includes only the default properties.
+Here's an example  of the response. It includes only the default properties.
 
 > **Note:** The response object shown here might be shortened for readability. All the default properties are returned in an actual call.
 
@@ -179,11 +185,11 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Return additional properties by using $select
+### Example 2: Return properties by using $select
 
 #### Request
 
-The following is an example of a GET request.
+Here's an example  of a GET request.
 
 # [HTTP](#tab/http)
 
@@ -199,6 +205,10 @@ GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-group-non-default-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-group-non-default-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -218,7 +228,7 @@ GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-group-non-default-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -229,7 +239,7 @@ GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 
 #### Response
 
-The following is an example of the response which includes the requested non-default properties.
+Here's an example  of the response that includes the requested nondefault properties.
 
 <!-- {
   "blockType": "response",
@@ -256,7 +266,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example  of the request.
 
 <!-- {
   "blockType": "ignored",
@@ -270,7 +280,7 @@ GET https://graph.microsoft.com/beta/groups/1cdf9c18-a7dc-46b1-b47f-094d5656376d
 
 #### Response
 
-The following is an example of the response.
+Here's an example  of the response.
 
 <!-- {
   "blockType": "response",
@@ -310,6 +320,10 @@ GET https://graph.microsoft.com/beta/groups/aed0b780-965f-4149-85c5-a8c73e58brt6
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-group-restricted-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-group-restricted-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -1,7 +1,7 @@
 ---
 title: "Delete windowsHelloForBusinessAuthenticationMethod"
 description: "Deletes a windowsHelloForBusinessAuthenticationMethod object."
-author: "mmcla"
+author: "calvinlui"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -11,6 +11,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Deletes a [windowsHelloForBusinessAuthenticationMethod](../resources/windowshelloforbusinessauthenticationmethod.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -54,7 +56,7 @@ DELETE /users/{id | userPrincipalName}/authentication/windowsHelloForBusinessMet
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

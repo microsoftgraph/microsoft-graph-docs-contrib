@@ -1,7 +1,7 @@
 ---
 title: "Delete emailAuthenticationMethodConfiguration"
 description: "Deletes an emailAuthenticationMethodConfiguration object."
-author: "mmcla"
+author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -12,6 +12,8 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 Remove changes made to the [email authentication method policy](../resources/emailauthenticationmethodconfiguration.md) by reverting the policy to its default configuration.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,7 +45,7 @@ DELETE /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

@@ -2,7 +2,7 @@
 title: "Create extensionProperty (directory extension)"
 description: "Create a new directory extension."
 ms.localizationpriority: medium
-author: "sureshja"
+author: "dkershaw10"
 ms.prod: "extensions"
 doc_type: "apiPageType"
 ---
@@ -12,6 +12,8 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 Create a new directory extension definition, represented by an [extensionProperty](../resources/extensionproperty.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -58,7 +60,7 @@ If successful, this method returns a `201 Created` response code and a new [exte
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Create a new task object in a specified [todoTaskList](../resources/todotasklist.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -41,7 +43,7 @@ POST /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 ## Request body
 In the request body, supply a JSON representation of the [todoTask](../resources/todotask.md) object.
 
-The following table shows the properties that are required when you create the [todoTask](../resources/todotask.md).
+The following table lists the properties that are required when you create the [todoTask](../resources/todotask.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -119,6 +121,10 @@ Content-Type: application/json
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/create-todotask-from-tasks-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-todotask-from-tasks-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

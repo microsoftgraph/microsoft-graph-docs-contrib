@@ -2,7 +2,7 @@
 title: "applicationEnforcedRestrictionsSessionControl resource type"
 description: "Session control to enforce application restrictions."
 ms.localizationpriority: medium
-author: "davidspooner"
+author: "lisaychuang"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---

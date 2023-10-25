@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 title: "Remove item from bundle"
 description: "Remove item from a bundle of driveItems."
 ms.localizationpriority: medium
@@ -12,6 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Remove an item from a [bundle][].
+
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -70,7 +72,7 @@ DELETE https://graph.microsoft.com/v1.0/drive/bundles/{bundle-id}/children/{item
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response" } -->
 

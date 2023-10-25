@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get a list of the [businessScenarioTask](../resources/businessscenariotask.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -45,7 +47,7 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -76,6 +78,10 @@ GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c686491
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-businessscenariotask-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-businessscenariotask-e1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-businessscenariotask-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -104,7 +110,7 @@ GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c686491
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -164,6 +170,10 @@ GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c686491
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-businessscenariotask-e2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-businessscenariotask-e2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-businessscenariotask-e2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -192,7 +202,7 @@ GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c686491
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -252,6 +262,10 @@ GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c686491
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-businessscenariotask-e3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-businessscenariotask-e3-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-businessscenariotask-e3-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -280,7 +294,7 @@ GET https://graph.microsoft.com/beta/solutions/businessScenarios/c5d514e6c686491
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

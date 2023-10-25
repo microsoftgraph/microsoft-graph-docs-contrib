@@ -15,6 +15,8 @@ Create a new assignment.
 
 Only teachers in a class can create an assignment. Assignments start in the Draft state, which means that students will not see the assignment until publication.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -22,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not supported. |
+|Application | EduAssignments.ReadWrite.All, EduAssignments.ReadWriteBasic.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -43,7 +45,7 @@ If successful, this method returns a `201 Created` response code and an [educati
 
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -110,7 +112,7 @@ Content-type: application/json
 In the request body, supply a JSON representation of an [educationAssignment](../resources/educationassignment.md) object.
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

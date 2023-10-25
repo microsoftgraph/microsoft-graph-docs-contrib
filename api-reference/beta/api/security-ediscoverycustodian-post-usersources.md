@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Create a new [userSource](../resources/security-usersource.md) object associated with an [eDiscovery custodian](../resources/security-ediscoverycustodian.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -77,6 +79,10 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-41
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-usersource-associated-with-custodians-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-usersource-associated-with-custodians-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-usersource-associated-with-custodians-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -100,7 +106,7 @@ POST https://graph.microsoft.com/beta/security/cases/ediscoveryCases/b0073e4e-41
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

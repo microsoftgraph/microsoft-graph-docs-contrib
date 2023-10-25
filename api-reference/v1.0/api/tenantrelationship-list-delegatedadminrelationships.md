@@ -1,9 +1,9 @@
 ---
 title: "List delegatedAdminRelationships"
 description: "Get a list of the delegatedAdminRelationship objects and their properties."
-author: "koravva"
+author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.prod: partner-customer-administration
 doc_type: apiPageType
 ---
 
@@ -11,6 +11,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get a list of the [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) objects and their properties.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +34,7 @@ GET /tenantRelationships/delegatedAdminRelationships
 ```
 
 ## Optional query parameters
-This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select`, `$filter`, `$top`, `$orderby`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
 
 `$top` supports up to 300 objects.
 
@@ -42,11 +44,11 @@ This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$count`, and
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) objects in the response body. The response collection can also include one or more [resellerDelegatedAdminRelationship](../resources/resellerdelegatedadminrelationship.md) objects.
 
 Each **delegatedAdminRelationship** object contains an **@odata.etag** property as per RFC2616.
 
@@ -161,6 +163,55 @@ Content-Type: application/json
       "lastModifiedDateTime": "2021-10-29T16:57:20.2101088Z",
       "activatedDateTime": "2021-09-29T16:55:20.2101088Z",
       "endDateTime": "2021-10-29T16:57:20.2101088Z"
+    },
+    {
+      "@odata.type": "#microsoft.graph.resellerDelegatedAdminRelationship",
+      "@odata.etag": "W/\"JyIwMzAwZTM0ZS0wMDAwLTAyMDAtMDAwMC02MTRjZjI1YzAwMDAiJw==\"",
+      "id": "4b227261-d21f-4aa9-b7db-7fa1f56fb163-8777b240-c6f0-4469-9e98-a3205431b836",
+      "displayName": "Fabrikam admin relationship",
+      "duration": "P180D",
+      "customer": {
+        "tenantId": "52eaad04-13a2-4a2f-9ce8-93a294fadf36",
+        "displayName": "Fabrikam Inc."
+      },
+      "accessDetails": {
+        "unifiedRoles": [
+          {
+            "roleDefinitionId": "7be44c8a-adaf-4e2a-84d6-ab2649e08a13"
+          },
+          {
+            "roleDefinitionId": "e8611ab8-c189-46e8-94e1-60213ab1f814"
+          },
+          {
+            "roleDefinitionId": "fe930be7-5e62-47db-91af-98c3a49a38b1"
+          },
+          {
+            "roleDefinitionId": "729827e3-9c14-49f7-bb1b-9608f156bbb8"
+          },
+          {
+            "roleDefinitionId": "4d6ac14f-3453-41d0-bef9-a3e0c569773a"
+          },
+          {
+            "roleDefinitionId": "f023fd81-a637-4b56-95fd-791ac0226033"
+          },
+          {
+            "roleDefinitionId": "9360feb5-f418-4baa-8175-e2a00bac4301"
+          },
+          {
+            "roleDefinitionId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
+          },
+          {
+            "roleDefinitionId": "f2ef992c-3afb-46b9-b7cf-a126ee74c451"
+          }
+        ]
+      },
+      "status": "approvalPending",
+      "createdDateTime": "2022-02-10T11:24:42.3148266Z",
+      "lastModifiedDateTime": "2022-02-10T11:26:44.9941884Z",
+      "activatedDateTime": null,
+      "endDateTime": null,
+      "isPartnerConsentPending": true,
+      "indirectProviderTenantId": "60ea59db-a506-485e-94c5-d115f369e239"
     }
   ]
 }

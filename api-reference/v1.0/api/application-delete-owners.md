@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Remove an owner from an [application](../resources/application.md). As a recommended best practice, apps should have at least two owners.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -24,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /applications/{id}/owners/{id}/$ref
@@ -32,7 +34,7 @@ DELETE /applications(appId='{appId}')/owners/{id}/$ref
 ```
 
 > [!CAUTION]
-> If `/$ref` is not appended to the request and the calling app has permissions to manage the user who is the app owner, the user will also be deleted from Azure Active Directory (Azure AD); otherwise, a `403 Forbidden` error is returned. You can restore deleted users through the [Restore deleted items API](directory-deleteditems-restore.md).
+> If `/$ref` is not appended to the request and the calling app has permissions to manage the user who is the app owner, the user will also be deleted from Microsoft Entra ID; otherwise, a `403 Forbidden` error is returned. You can restore deleted users through the [Restore deleted items API](directory-deleteditems-restore.md).
 
 ## Request headers
 | Name | Description|
@@ -98,7 +100,7 @@ DELETE https://graph.microsoft.com/v1.0/applications/{id}/owners/{id}/$ref
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -122,4 +124,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-

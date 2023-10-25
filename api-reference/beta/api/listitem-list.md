@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Get the collection of items in a list."
 title: Retrieve items from a SharePoint list
 ms.localizationpriority: medium
@@ -16,6 +16,8 @@ Get the collection of [items][item] in a [list][].
 
 [list]: ../resources/list.md
 [item]: ../resources/listitem.md
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -43,11 +45,11 @@ GET /sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
-## Response 
+## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [listItem][item] objects in the response body. 
+If successful, this method returns a `200 OK` response code and a collection of [listItem][item] objects in the response body.
 
 ## Example
 
@@ -64,6 +66,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-list-items-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-list-items-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -94,7 +100,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItem)", "truncated": true } -->
 

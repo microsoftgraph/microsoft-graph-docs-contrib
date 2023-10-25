@@ -1,7 +1,7 @@
 ---
 title: "Delete softwareOathAuthenticationMethod"
 description: "Deletes a user's softwareOathAuthenticationMethod object."
-author: "mmcla"
+author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -11,6 +11,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Delete a user's [Software OATH token authentication method](../resources/softwareoathauthenticationmethod.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -55,7 +57,7 @@ DELETE /users/{id | userPrincipalName}/authentication/softwareOathMethods/{id}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

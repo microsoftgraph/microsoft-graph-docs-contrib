@@ -1,7 +1,7 @@
 ---
 title: "Update voiceAuthenticationMethodConfiguration"
 description: "Update the properties of a voiceAuthenticationMethodConfiguration object."
-author: "jpettere"
+author: "luc-msft"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -12,7 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) object, which represents the voice call authentication method policy for the Azure AD tenant.
+Update the properties of a [voiceAuthenticationMethodConfiguration](../resources/voiceauthenticationmethodconfiguration.md) object, which represents the voice call authentication method policy for the Microsoft Entra tenant.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -54,7 +56,7 @@ PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/v
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -81,6 +83,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-voiceauthenticationmethodconfiguration-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-voiceauthenticationmethodconfiguration-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-voiceauthenticationmethodconfiguration-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -97,6 +103,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-voiceauthenticationmethodconfiguration-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-voiceauthenticationmethodconfiguration-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-voiceauthenticationmethodconfiguration-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -104,7 +114,7 @@ Content-Type: application/json
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -113,4 +123,3 @@ The following is an example of the response
 ``` http
 HTTP/1.1 204 No Content
 ```
-

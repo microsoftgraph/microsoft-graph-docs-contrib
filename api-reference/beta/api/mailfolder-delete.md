@@ -1,7 +1,7 @@
 ---
 title: "Delete mailFolder"
 description: "Delete the specified mailFolder or mailSearchFolder."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -18,6 +18,8 @@ Delete the specified [mailFolder](../resources/mailfolder.md). The folder can be
 You can specify a mail folder by its folder ID, or by its [well-known folder name](../resources/mailfolder.md), if one exists.
 
 >**Note** You may not be able to delete items in the recoverable items deletions folder (represented by the well-known folder name `recoverableitemsdeletions`). See [Deleted item retention](/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) and [Clean up deleted items](/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) for more information.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -40,14 +42,14 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 ### Request
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -61,6 +63,10 @@ DELETE https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-mailfolder-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-mailfolder-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -90,7 +96,7 @@ DELETE https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 ---
 
 ### Response
-The following is an example of the response.
+Here's an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -4,60 +4,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = MacOSGeneralDeviceConfiguration()
-request_body.@odata_type = '#microsoft.graph.macOSGeneralDeviceConfiguration'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.description = 'Description value'
+request_body = MacOSGeneralDeviceConfiguration(
+	odata_type = "#microsoft.graph.macOSGeneralDeviceConfiguration",
+	description = "Description value",
+	display_name = "Display Name value",
+	version = 7,
+	compliant_apps_list = [
+		AppListItem(
+			odata_type = "microsoft.graph.appListItem",
+			name = "Name value",
+			publisher = "Publisher value",
+			app_store_url = "https://example.com/appStoreUrl/",
+			app_id = "App Id value",
+		),
+	]
+	compliant_app_list_type = AppListType.AppsInListCompliant,
+	email_in_domain_suffixes = [
+		"Email In Domain Suffixes value",
+	]
+	password_block_simple = True,
+	password_expiration_days = 6,
+	password_minimum_character_set_count = 0,
+	password_minimum_length = 5,
+	password_minutes_of_inactivity_before_lock = 5,
+	password_minutes_of_inactivity_before_screen_timeout = 14,
+	password_previous_password_block_count = 2,
+	password_required_type = RequiredPasswordType.Alphanumeric,
+	password_required = True,
+)
 
-request_body.display_name = 'Display Name value'
-
-request_body.Version = 7
-
-compliant_apps_list_app_list_item1 = AppListItem()
-compliant_apps_list_app_list_item1.@odata_type = 'microsoft.graph.appListItem'
-
-compliant_apps_list_app_list_item1.name = 'Name value'
-
-compliant_apps_list_app_list_item1.publisher = 'Publisher value'
-
-compliant_apps_list_app_list_item1.app_store_url = 'https://example.com/appStoreUrl/'
-
-compliant_apps_list_app_list_item1.app_id = 'App Id value'
-
-
-compliantAppsListArray []= compliantAppsListAppListItem1;
-request_body.compliantappslist(compliantAppsListArray)
-
-
-request_body.compliantapplisttype(AppListType.AppsInListCompliant('applisttype.appsinlistcompliant'))
-
-request_body.EmailInDomainSuffixes(['Email In Domain Suffixes value', ])
-
-request_body.password_block_simple = True
-
-request_body.PasswordExpirationDays = 6
-
-request_body.PasswordMinimumCharacterSetCount = 0
-
-request_body.PasswordMinimumLength = 5
-
-request_body.PasswordMinutesOfInactivityBeforeLock = 5
-
-request_body.PasswordMinutesOfInactivityBeforeScreenTimeout = 14
-
-request_body.PasswordPreviousPasswordBlockCount = 2
-
-request_body.passwordrequiredtype(RequiredPasswordType.Alphanumeric('requiredpasswordtype.alphanumeric'))
-
-request_body.password_required = True
-
-
-
-
-result = await client.device_management.device_configurations.post(request_body = request_body)
+result = await graph_client.device_management.device_configurations.post(body = request_body)
 
 
 ```

@@ -19,6 +19,8 @@ Retrieve a [conversationMember](../resources/conversationmember.md) from a [chat
 >
 > The membership results could map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are from the current tenant only.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,7 +37,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{chat-id}/members/{membership-id}
-GET /users/{user-id} | user-principal-name/chats/{chat-id}/members/{membership-id}
+GET /users/{user-id | user-principal-name}/chats/{chat-id}/members/{membership-id}
 ```
 
 ## Optional query parameters
@@ -50,7 +52,7 @@ This operation does not support the [OData query parameters](/graph/query-parame
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -112,7 +114,7 @@ GET https://graph.microsoft.com/v1.0/chats/19:d0f51aeb0e8e43d0befb24be72b09ea7@t
 
 Here is an example of the response.
 
-<!-- 
+<!--
 {
   "blockType": "response",
   "truncated": true,

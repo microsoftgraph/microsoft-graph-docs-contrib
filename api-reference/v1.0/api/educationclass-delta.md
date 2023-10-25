@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get newly created or updated classes, including membership changes, without having to perform a full read of the entire class collection. See [Use delta query](/graph/delta-query-overview) for details.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,7 +44,7 @@ GET /education/classes/delta
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -94,6 +96,10 @@ GET https://graph.microsoft.com/v1.0/education/classes/delta
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/educationclass-delta-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationclass-delta-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

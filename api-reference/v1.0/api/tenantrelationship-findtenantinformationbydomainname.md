@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Given a domain name, search for a tenant and read its [tenantInformation](../resources/tenantInformation.md). You can use this API to validate tenant information and use the **tenantId** to [configure cross-tenant access settings between you and the tenant](../resources/crosstenantaccesspolicyconfigurationpartner.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -40,7 +42,7 @@ In the request URL, provide the following query parameters with values. The foll
 
 | Parameter | Type | Description |
 |:---|:---|:---|
-| domainName | String | Primary domain name of an Azure AD tenant. |
+| domainName | String | Primary domain name of a Microsoft Entra tenant. |
 
 ## Request headers
 
@@ -50,7 +52,7 @@ In the request URL, provide the following query parameters with values. The foll
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

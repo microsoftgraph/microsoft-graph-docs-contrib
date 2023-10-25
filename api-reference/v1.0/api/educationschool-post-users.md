@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Add a user to a school.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -42,7 +44,7 @@ If successful, this method returns a `204 No Content` response code and an [educ
 
 ## Example
 ##### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -82,6 +84,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/create-educationuser-from-educationschool-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-educationuser-from-educationschool-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/create-educationuser-from-educationschool-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -89,7 +95,7 @@ Content-type: application/json
 ---
 
 ##### Response
-The following is an example of the response. 
+The following example shows the response.
 
 <!-- Add the educationClass resource to the response. -->
 

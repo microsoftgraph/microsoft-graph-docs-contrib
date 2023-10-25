@@ -1,7 +1,7 @@
 ---
 title: "identityUserFlowAttributeAssignment: getOrder"
 description: "Get the order of identityUserFlowAttributeAssignments being collected within a user flow."
-author: "jkdouglas"
+author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -12,6 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get the order of identityUserFlowAttributeAssignments being collected within a user flow.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -42,7 +44,7 @@ GET /identity/b2xUserFlows/{b2xIdentityUserFlowId}/userAttributeAssignments/getO
 
 ## Function parameters
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

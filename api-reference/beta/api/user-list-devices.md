@@ -18,6 +18,8 @@ Namespace: microsoft.graph
 
 Get a list of user devices that support Project Rome capabilities. This includes the ability to launch an app, or message or send data to an application. After you do a GET call on me/devices, pass in the ID of the device to [send a command](send-device-command.md) to your device.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +47,7 @@ GET me/devices
 |Accept | application/json |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -81,7 +83,7 @@ This example will return the list of devices for a user. To command a device usi
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -96,7 +98,7 @@ Content-Type: application/json; charset=utf-8
 
 #### Response
 
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "ignored",

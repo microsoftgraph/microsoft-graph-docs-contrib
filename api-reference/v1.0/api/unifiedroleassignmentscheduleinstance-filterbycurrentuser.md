@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get the instances of active role assignments for the calling principal.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -19,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|RoleManagement.Read.All, RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory|
+|Application|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -33,7 +35,7 @@ GET /roleManagement/directory/roleAssignmentScheduleInstances/filterByCurrentUse
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that are required with this function.
+The following table lists the parameters that are required when you call this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -49,7 +51,7 @@ This method supports the `$select`, `$filter`, and `$expand` OData query paramet
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

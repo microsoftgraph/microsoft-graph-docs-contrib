@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3711
+Content-Length: 3760
 
 {
   "value": {
@@ -149,7 +149,8 @@ Content-Length: 3711
     "workProfileAccountUse": "blockAll",
     "allowedGoogleAccountDomains": [
       "Allowed Google Account Domains value"
-    ]
+    ],
+    "blockUnifiedPasswordForWorkProfile": true
   }
 }
 ```

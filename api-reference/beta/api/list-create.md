@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Create a new list in a site."
 title: Create a SharePoint List
 ms.localizationpriority: medium
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create a new [list][] in a [site][].
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -45,7 +47,7 @@ In the request body, supply a JSON representation of a [list][] object.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [list][] object in the response body. 
+If successful, this method returns a `201 Created` response code and a [list][] object in the response body.
 
 ## Examples
 
@@ -88,6 +90,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-list-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-list-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-list-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -116,7 +122,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object is truncated for clarity. Default properties will be returned from the actual call.
 

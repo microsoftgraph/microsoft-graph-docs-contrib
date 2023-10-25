@@ -17,6 +17,8 @@ Get a list of [customAppScope](../resources/customappscope.md) objects for an RB
 
 Currently only the Exchange Online RBAC provider is supported.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
@@ -51,7 +53,7 @@ This method supports the `$filter` and `$count` [OData query parameters](/graph/
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -79,6 +81,10 @@ GET https://graph.microsoft.com/beta/roleManagement/exchange/customAppScopes
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-customappscope-exchangeonlineprovider-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-customappscope-exchangeonlineprovider-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-customappscope-exchangeonlineprovider-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -103,7 +109,7 @@ GET https://graph.microsoft.com/beta/roleManagement/exchange/customAppScopes
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

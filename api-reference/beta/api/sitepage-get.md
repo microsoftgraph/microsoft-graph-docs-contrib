@@ -20,6 +20,8 @@ Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][]
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -56,7 +58,7 @@ You can use the `$expand=canvasLayout` query string parameter to include the con
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -157,7 +159,7 @@ GET /sites/{site-id}/pages/{page-id}/microsoft.graph.sitePage
 
 #### Response
 
-The following is an example of the response
+The following example shows the response.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 

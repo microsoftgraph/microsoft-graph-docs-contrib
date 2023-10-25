@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of a user's [temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) objects and their properties. This API will only return a single object in the collection as a user can have only one Temporary Access Pass (TAP) method.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -60,7 +62,7 @@ This method does not support optional query parameters to customize the response
 |Authorization|Bearer {token}. Required.|
 
 ## Request 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -83,6 +85,10 @@ GET https://graph.microsoft.com/beta/users/071cc716-8147-4397-a5ba-b2105951cc0b/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-temporaryaccesspassauthenticationmethod-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-temporaryaccesspassauthenticationmethod-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve a single [permissionGrantPolicy](../resources/permissiongrantpolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,6 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Policy.Read.PermissionGrant, Policy.ReadWrite.PermissionGrant |
+
+[!INCLUDE [rbac-permission-grant-preapproval-policy-read](../includes/rbac-for-apis/rbac-permission-grant-preapproval-policy-read.md)]
 
 ## HTTP request
 
@@ -45,7 +49,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -55,7 +59,7 @@ If successful, this method returns a `200 OK` response code and the requested [p
 
 ### Request
 
-The following is an example of the request. In this example, the requested policy is the built-in permission grant policy `microsoft-user-default-low`, which includes delegated permissions classified low, for apps from verified publishers or apps registered in this tenant.
+The following example shows a request. In this example, the requested policy is the built-in permission grant policy `microsoft-user-default-low`, which includes delegated permissions classified low, for apps from verified publishers or apps registered in this tenant.
 
 
 # [HTTP](#tab/http)
@@ -71,6 +75,10 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-permissiongrantpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-permissiongrantpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -101,7 +109,7 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 
 ### Response
 
-The following is an example of the response. The policy has two `includes` condition sets, one which matches with delegated permission classified `low` for client apps registered in this tenant, and the other which matches delegated permissions classified `low` for apps from verified publishers (regardless of which tenant the app is registered in).
+The following example shows the response. The policy has two `includes` condition sets, one that matches with delegated permission classified `low` for client apps registered in this tenant, and the other that matches delegated permissions classified `low` for apps from verified publishers (regardless of which tenant the app is registered in).
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -131,7 +139,11 @@ Content-type: application/json
             "clientApplicationTenantIds": [ "11e37ee2-48fe-42e0-aab9-07d0bb165353" ],
             "clientApplicationPublisherIds": [ "all" ],
             "clientApplicationsFromVerifiedPublisherOnly": false,
-            "certifiedClientApplicationsOnly": false
+            "certifiedClientApplicationsOnly": false,
+            "scopeSensitivityLabels": {
+                "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+                "labelKind": "all"
+            }
         },
         {
             "id": "8ce99f96-730c-4ebd-8397-07ee65942b97",
@@ -143,7 +155,11 @@ Content-type: application/json
             "clientApplicationTenantIds": [ "all" ],
             "clientApplicationPublisherIds": [ "all" ],
             "clientApplicationsFromVerifiedPublisherOnly": true,
-            "certifiedClientApplicationsOnly": false
+            "certifiedClientApplicationsOnly": false,
+            "scopeSensitivityLabels": {
+                "@odata.type": "#microsoft.graph.allScopeSensitivityLabels",
+                "labelKind": "all"
+            }
         }
     ],
     "excludes": []

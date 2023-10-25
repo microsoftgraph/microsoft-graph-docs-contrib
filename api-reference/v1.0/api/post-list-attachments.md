@@ -12,6 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Retrieve a list of [attachment](../resources/attachment.md) objects attached to a post.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -45,7 +48,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts/{id}?$expand
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

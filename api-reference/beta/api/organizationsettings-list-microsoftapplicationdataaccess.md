@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get the _settings_ in a [microsoftApplicationDataAccessSettings](../resources/microsoftapplicationdataaccesssettings.md) object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,7 +45,7 @@ GET /organization/{organizationId}/settings/microsoftApplicationDataAccess
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -67,6 +69,10 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/micr
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-microsoftapplicationdataaccesssettings-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-microsoftapplicationdataaccesssettings-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-microsoftapplicationdataaccesssettings-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -81,6 +87,10 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/micr
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-microsoftapplicationdataaccesssettings-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-microsoftapplicationdataaccesssettings-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

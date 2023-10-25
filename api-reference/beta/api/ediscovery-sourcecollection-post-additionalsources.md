@@ -15,6 +15,8 @@ Namespace: microsoft.graph.ediscovery
 
 Add additional data sources to a source collection.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +49,7 @@ POST /compliance/ediscovery/cases/{caseId}/sourceCollections/{sourceCollectionId
 
 In the request body, supply a JSON representation of the [dataSource](../resources/ediscovery-datasource.md) object.
 
-The following table shows the properties that are required when you create the [dataSource](../resources/ediscovery-datasource.md).
+The following table lists the properties that are required when you create the [dataSource](../resources/ediscovery-datasource.md).
 
 >**Note:** Either **email** or **site** are required, not both. 
 
@@ -86,6 +88,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-datasource-caseid-sourcecollectionid-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-datasource-caseid-sourcecollectionid-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -165,6 +171,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-site-to-additional-sources-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/add-site-to-additional-sources-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

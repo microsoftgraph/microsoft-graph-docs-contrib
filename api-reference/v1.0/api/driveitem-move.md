@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Move a file or folder
 ms.localizationpriority: medium
@@ -17,6 +17,8 @@ This is a special case of the [Update](driveitem-update.md) method.
 Your app can combine moving an item to a new container and updating other properties of the item into a single request.
 
 Items cannot be moved between [Drives](../resources/drive.md) using this request.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

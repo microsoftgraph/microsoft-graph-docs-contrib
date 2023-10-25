@@ -17,6 +17,8 @@ List the resources associated with a submission. Only teachers, students, and ap
 
 The [educationSubmissionResource](../resources/educationsubmissionresource.md) object is a wrapper around the actual resource object the student is working on. The wrapper also includes a pointer to the resources on the assignment if this was copied from the assignment during the assign process. These resources are the working copy of the assignment. The **submittedResources** are the resources that have officially been submitted to be graded.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -36,7 +38,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/resources
 
 ## Optional query parameters
 
-This method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData query parameters to help customize the response.For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$top`, `$filter`, `$orderby`, and `$select` OData query parameters to help customize the response.For general information, see [OData query parameters](/graph/query-parameters).
 
 
 ## Request headers
@@ -47,7 +49,7 @@ This method supports the `$top`, `$filter`, `$orderBy`, and `$select` OData quer
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -57,7 +59,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ##### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -72,6 +74,10 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/sub
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-resources-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-resources-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -102,7 +108,7 @@ GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/sub
 
 ##### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

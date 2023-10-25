@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get a list of the [customSecurityAttributeDefinition](../resources/customsecurityattributedefinition.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -57,7 +59,7 @@ The **allowedValues** navigation property is not returned or expanded by default
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -85,6 +87,10 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-customsecurityattributedefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-customsecurityattributedefinition-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -115,7 +121,7 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -189,6 +195,10 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-customsecurityattributedefinition-filter-name-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-customsecurityattributedefinition-filter-name-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-customsecurityattributedefinition-filter-name-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -206,7 +216,7 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-customsecurityattributedefinition-filter-name-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -217,7 +227,7 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -280,6 +290,10 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-customsecurityattributedefinition-filter-attributeset-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-customsecurityattributedefinition-filter-attributeset-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-customsecurityattributedefinition-filter-attributeset-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -308,7 +322,7 @@ GET https://graph.microsoft.com/beta/directory/customSecurityAttributeDefinition
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

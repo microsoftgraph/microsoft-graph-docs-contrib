@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Publishes a [contentType][] present in the content type hub site.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,7 +43,7 @@ POST /sites/{siteId}/contentTypes/{contentTypeId}/publish
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this call returns a `204 No Content` response.
@@ -83,6 +85,10 @@ POST https://graph.microsoft.com/v1.0/sites/{siteId}/contentTypes/{contentTypeId
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/contenttype-publish-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/contenttype-publish-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

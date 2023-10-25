@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 Assign [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) to user groups.
 
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,7 +52,7 @@ In the request body, supply a JSON representation of the [cloudPcProvisioningPol
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|assignments|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) collection | The collection of Cloud PC provisioning policy resources each to be assigned to the corresponding target group. Only Microsoft 365 groups and security groups in Azure AD are currently supported. |
+|assignments|[cloudPcProvisioningPolicyAssignment](../resources/cloudpcprovisioningpolicyassignment.md) collection | The collection of Cloud PC provisioning policy resources each to be assigned to the corresponding target group. Only Microsoft 365 groups and security groups in Microsoft Entra ID are currently supported. |
 
 ## Response
 
@@ -88,6 +90,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/assign-cloudpcprovisioningpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/assign-cloudpcprovisioningpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

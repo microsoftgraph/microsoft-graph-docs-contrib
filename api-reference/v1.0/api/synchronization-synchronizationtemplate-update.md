@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update (override) the synchronization template associated with a given application.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -42,7 +44,7 @@ In the request body, supply the [synchronizationTemplate](../resources/synchroni
 
 ### Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ### Examples
 

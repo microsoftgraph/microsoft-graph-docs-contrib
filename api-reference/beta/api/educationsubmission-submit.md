@@ -19,12 +19,14 @@ This method changes the status of the submission from `working` to `submitted`. 
 
 A teacher can also submit a student's assignment on their behalf.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EduAssignments.ReadWriteBasic, EduAssignments.ReadWrite  |
+|Delegated (work or school account) |  EduAssignments.ReadWrite  |
 |Delegated (personal Microsoft account) |  Not supported.  |
 |Application | EduAssignments.ReadWrite.All | 
 
@@ -48,7 +50,7 @@ If successful, this method returns a `200 Ok` response code and an [educationSub
 ## Example
 The following example shows how to call this API.
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -62,6 +64,10 @@ POST https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationsubmission-submit-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/educationsubmission-submit-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -91,7 +97,7 @@ POST https://graph.microsoft.com/beta/education/classes/2003c52e-807a-4186-9b49-
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

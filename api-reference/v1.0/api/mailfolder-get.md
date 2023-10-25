@@ -1,7 +1,7 @@
 ---
 title: "Get mailFolder"
 description: "Retrieve the properties and relationships of a message folder object."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -18,6 +18,8 @@ The following list shows the two existing scenarios where an app can get another
 * If the app has application permissions, or,
 * If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user. For more details, see [Get Outlook messages in a shared or delegated folder](/graph/outlook-share-messages-folders).
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,7 +44,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -102,7 +104,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzMTM4LTZmYWUtNDdk
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -181,7 +183,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/AAMkAGVmMDEzMTM4LTZmYWUtNDdk
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

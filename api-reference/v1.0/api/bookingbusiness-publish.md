@@ -15,6 +15,8 @@ Make the scheduling page of a business available to external customers.
 
 Set the **isPublished** property to `true`, and the **publicUrl** property to the URL of the scheduling page.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -37,12 +39,12 @@ POST /solutions/bookingBusinesses/{id}/publish
 ## Request body
 
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 The following is an example of how to call this API.
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -89,7 +91,7 @@ POST https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchde
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

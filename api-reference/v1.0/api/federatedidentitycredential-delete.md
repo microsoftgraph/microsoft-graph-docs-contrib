@@ -1,7 +1,7 @@
 ---
 title: "Delete federatedIdentityCredential"
 description: "Delete a federatedIdentityCredential object."
-author: "shahzad-khalid"
+author: "nickludwig"
 ms.localizationpriority: medium
 ms.prod: "applications"
 doc_type: apiPageType
@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 
 Delete a [federatedIdentityCredential](../resources/federatedidentitycredential.md) object from an application.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in the Azure portal.
+You can address the application using either its **id** or **appId**. **id** and **appId** are referred to as the **Object ID** and **Application (Client) ID**, respectively, in app registrations in the Microsoft Entra admin center.
 
 You can also address the federated identity credential with either its **id** or **name**.
 <!-- { "blockType": "ignored" } -->
@@ -42,7 +44,7 @@ DELETE /applications(appId='{appId}')/federatedIdentityCredentials/{federatedIde
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

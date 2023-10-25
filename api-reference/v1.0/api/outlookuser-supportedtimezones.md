@@ -2,7 +2,7 @@
 title: "outlookUser: supportedTimeZones"
 description: "Get the list of time zones that are supported for the user, as configured on the user's mailbox server."
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -15,9 +15,11 @@ Get the list of time zones that are supported for the user, as configured on the
 
 You can explicitly specify to have time zones returned in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format. The Windows format is the default.
 
-When setting up an Outlook client, the user selects the preferred time zone from this supported list. You can subsequently get the preferred time zone by 
+When setting up an Outlook client, the user selects the preferred time zone from this supported list. You can subsequently get the preferred time zone by
 [getting the user's mailbox settings](user-get-mailboxsettings.md).
 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +51,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns `200 OK` response code and a collection of [timeZoneInformation](../resources/timezoneinformation.md) objects in the response body.
@@ -57,7 +59,7 @@ If successful, this method returns `200 OK` response code and a collection of [t
 ## Example
 
 ##### Request 1
-The following example does not specify the `timeZoneStandard` parameter, and gets the list of supported time zones represented in the Windows time zone format. 
+The following example does not specify the `timeZoneStandard` parameter, and gets the list of supported time zones represented in the Windows time zone format.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -103,7 +105,7 @@ GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones
 ---
 
 ##### Response 1
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "name": "user_supportedtimezones_default",
@@ -139,7 +141,7 @@ Content-type: application/json
 ```
 
 ##### Request 2
-The following example specifies `Iana` for the `TimeZoneStandard` parameter, and gets the list of supported time zones represented in IANA format. 
+The following example specifies `Iana` for the `TimeZoneStandard` parameter, and gets the list of supported time zones represented in IANA format.
 
 
 # [HTTP](#tab/http)
@@ -187,7 +189,7 @@ GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones(TimeZoneStand
 ---
 
 ##### Response 2
-Here is an example of the response. 
+Here is an example of the response.
 
 <!-- {
   "blockType": "response",

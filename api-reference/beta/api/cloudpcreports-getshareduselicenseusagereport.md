@@ -1,5 +1,5 @@
 ---
-title: "cloudPcReports: getSharedUseLicenseUsageReport"
+title: "cloudPcReports: getSharedUseLicenseUsageReport (deprecated)"
 description: "Get the shared use license usage reports, such as servicePlanId, licenseCount, and claimedLicenseCount, for real-time, 7 days, or 28 days trend."
 author: "rbayetov"
 ms.localizationpriority: medium
@@ -7,13 +7,18 @@ ms.prod: "cloud-pc"
 doc_type: apiPageType
 ---
 
-# cloudPcReports: getSharedUseLicenseUsageReport
+# cloudPcReports: getSharedUseLicenseUsageReport (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a usage report on shared-use licenses, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.
+
+>[!CAUTION] 
+>This API is deprecated. Going forward, use the [getFrontlineReport](cloudpcreports-getfrontlinereport.md) API.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -94,6 +99,10 @@ Content-length: 199
 [!INCLUDE [sample-code](../includes/snippets/csharp/cloudpcreportsthisgetshareduselicenseusagereport-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/cloudpcreportsthisgetshareduselicenseusagereport-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/cloudpcreportsthisgetshareduselicenseusagereport-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -122,7 +131,7 @@ Content-length: 199
 
 ### Response
 
-The following is an example of the response
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

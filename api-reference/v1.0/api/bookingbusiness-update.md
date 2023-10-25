@@ -12,6 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Update the properties of a [bookingBusiness](../resources/bookingbusiness.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -47,7 +50,7 @@ PATCH /solutions/bookingBusinesses/{id}
 |webSiteUrl|String|The URL of the business web site.|
 
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 ## Example
 ### Request
 The following example updates the business email address and scheduling policy, to change the business default booking time slot to an hour, and advance booking up to 30 days.
@@ -109,7 +112,7 @@ Content-type: application/json
 ---
 
 ### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

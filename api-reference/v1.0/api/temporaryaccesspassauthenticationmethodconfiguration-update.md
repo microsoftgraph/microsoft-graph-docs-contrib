@@ -1,6 +1,6 @@
 ---
 title: "Update temporaryAccessPassAuthenticationMethodConfiguration"
-description: "Update the Temporary Access Pass policy for the Azure AD tenant, represented by a temporaryAccessPassAuthenticationMethodConfiguration object."
+description: "Update the Temporary Access Pass policy for the Microsoft Entra tenant, represented by a temporaryAccessPassAuthenticationMethodConfiguration object."
 author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -10,7 +10,9 @@ doc_type: apiPageType
 # Update temporaryAccessPassAuthenticationMethodConfiguration
 Namespace: microsoft.graph
 
-Update the Temporary Access Pass policy for the Azure AD tenant, represented by a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object.
+Update the Temporary Access Pass policy for the Microsoft Entra tenant, represented by a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +51,7 @@ All properties and relationships of the object can be updated. For the list of p
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 

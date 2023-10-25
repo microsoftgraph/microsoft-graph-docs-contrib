@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a user's [presence](../resources/presence.md) information.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call these APIs. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -24,7 +26,7 @@ One of the following permissions is required to call these APIs. To learn more, 
 
 > **Note:** The maximum request rate for this API is 1500 API requests in a 30 second period, per application per tenant.
 
-## HTTP Requests
+## HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/presence
@@ -40,7 +42,7 @@ GET /communications/presences
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and a [presence](../resources/presence.md) object in the response body.
@@ -112,7 +114,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 1574
 
-{  
+{
 	"id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
 	"availability": "Available",
 	"activity": "Available"

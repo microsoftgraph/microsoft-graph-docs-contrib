@@ -2,7 +2,7 @@
 title: "Update phoneAuthenticationMethod"
 description: "Update a user's phone number associated with a phoneAuthenticationMethod object."
 ms.localizationpriority: medium
-author: "jpettere"
+author: "luc-msft"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -16,6 +16,8 @@ Update a user's phone number associated with a [phone authentication method](../
 You can't change a phone's type. To change a phone's type, add a new number of the desired type and then delete the object with the original type.
 
 If a user is enabled by policy to use SMS to sign in and the `mobile` number is changed, the system will attempt to register the number for use in that system.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -68,7 +70,7 @@ If successful, this method returns a `204 No Content` response code and an updat
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -112,6 +114,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/update-phoneauthenticationmethod-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/update-phoneauthenticationmethod-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/update-phoneauthenticationmethod-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -120,7 +126,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 
 <!-- {

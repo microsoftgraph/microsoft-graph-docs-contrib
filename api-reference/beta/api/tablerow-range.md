@@ -30,8 +30,16 @@ GET /me/drive/items/{id}/workbook/tables/{id|name}/rows/{index}/range
 GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/rows/{index}/range
 GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/range
 GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/rows/{index}/range
-
 ```
+
+## Function parameters
+
+The following table shows the parameters that can be used with this function.
+
+|Parameter|Type|Description|
+|:---|:---|:---|
+|index|Int32|Index value of the object to be retrieved. Zero-indexed.|
+
 ## Request headers
 | Name       | Description|
 |:---------------|:----------|
@@ -39,6 +47,8 @@ GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/
 | Workbook-Session-Id  | Workbook session Id that determines if changes are persisted or not. Optional.|
 
 ## Request body
+
+Don't supply a request body for this method.
 
 ## Response
 
@@ -60,6 +70,10 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|nam
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablerow-range-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/tablerow-range-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -17,6 +17,8 @@ Namespace: microsoft.graph
 
 Get a [companies](../resources/dynamics-companies.md) object in Dynamics 365 Business Central.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +47,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -55,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [companies](..
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -68,7 +70,7 @@ GET https://graph.microsoft.com/beta/financials/companies
 
 ### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 > **Note**: The response object shown here might be shortened for readability.
 

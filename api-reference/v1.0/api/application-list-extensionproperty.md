@@ -2,7 +2,7 @@
 title: "List extensionProperties (directory extensions)"
 description: "Retrieve a list of directory extension definitions."
 ms.localizationpriority: medium
-author: "sureshja"
+author: "dkershaw10"
 ms.prod: "extensions"
 doc_type: "apiPageType"
 ---
@@ -12,6 +12,8 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 Retrieve the list of directory extension definitions, represented by [extensionProperty](../resources/extensionproperty.md) objects on an [application](../resources/application.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -46,7 +48,7 @@ This method supports the `$select` and `$filter` (`eq` on **name**) OData query 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,7 +58,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -104,7 +106,7 @@ GET https://graph.microsoft.com/v1.0/applications/acc848e9-e8ec-4feb-a521-8d58b5
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

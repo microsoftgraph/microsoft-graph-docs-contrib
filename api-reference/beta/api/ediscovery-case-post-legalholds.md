@@ -15,6 +15,8 @@ Namespace: microsoft.graph.ediscovery
 
 Create a new [legalHold](../resources/ediscovery-legalhold.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +49,7 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds
 
 In the request body, supply a JSON representation of the [legalHold](../resources/ediscovery-legalhold.md) object.
 
-The following table shows the properties that are required when you create the [legalHold](../resources/ediscovery-legalhold.md).
+The following table lists the properties that are required when you create the [legalHold](../resources/ediscovery-legalhold.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -91,6 +93,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-legalhold-from--csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-legalhold-from--cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

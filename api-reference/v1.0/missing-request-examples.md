@@ -66,7 +66,7 @@ Content-Type: application/json
 ```
 
 
-## Define drives as an queryable entityset
+## Define drives as a queryable entity set
 
 # [HTTP](#tab/http)
 <!-- {"blockType": "request", "name": "get_drive_from_id" } -->
@@ -99,7 +99,7 @@ GET https://graph.microsoft.com/v1.0/drives/{drive-id}
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-drive-from-id-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -118,7 +118,7 @@ Content-Type: application/json
 ```
 
 
-## define users as an queryable entityset
+## Define users as a queryable entity set
 
 
 # [HTTP](#tab/http)

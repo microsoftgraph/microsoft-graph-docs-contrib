@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of an [openshift](../resources/openshift.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -35,7 +37,7 @@ GET /teams/{id}/schedule/openShifts/{openShiftId}
 
 ## Optional query parameters
 
-This method does not support OData query parameters to customize the response.
+This method doesn't support OData query parameters to customize the response.
 
 ## Request headers
 
@@ -46,7 +48,7 @@ This method does not support OData query parameters to customize the response.
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,7 +58,7 @@ If successful, this method returns a `200 OK` response code and the requested [o
 
 ### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -71,6 +73,10 @@ GET https://graph.microsoft.com/beta/teams/3d88b7a2-f988-4f4b-bb34-d66df66af126/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-openshift-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-openshift-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -101,7 +107,7 @@ GET https://graph.microsoft.com/beta/teams/3d88b7a2-f988-4f4b-bb34-d66df66af126/
 
 ### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

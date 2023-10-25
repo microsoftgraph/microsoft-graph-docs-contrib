@@ -1,7 +1,7 @@
 ---
 title: "Get emailAuthenticationMethodConfiguration"
 description: "Read the properties and relationships of an emailAuthenticationMethodConfiguration object."
-author: "mmcla"
+author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -11,7 +11,9 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Read the properties and relationships of an [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) object, which represents the email OTP [authentication method policy](../resources/authenticationmethodspolicies-overview.md) for the Azure Active Directory (Azure AD) tenant.
+Read the properties and relationships of an [emailAuthenticationMethodConfiguration](../resources/emailauthenticationmethodconfiguration.md) object, which represents the email OTP [authentication method policy](../resources/authenticationmethodspolicies-overview.md) for the Microsoft Entra tenant.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -44,7 +46,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/ema
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

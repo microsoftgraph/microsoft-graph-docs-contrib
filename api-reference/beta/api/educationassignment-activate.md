@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Activate an `inactive` [educationAssignment](../resources/educationassignment.md) to signal that the assignment has further action items for teachers and students. This action can only be performed by a teacher on currently inactive assignments.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +41,7 @@ POST /education/classes/{classId}/assignments/{assignmentId}/activate
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -48,7 +50,7 @@ If successful, this method returns a `200 OK` response code and an [educationAss
 ## Example
 
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -62,6 +64,10 @@ POST https://graph.microsoft.com/beta/education/classes/ffac078e-1b63-42d0-bc2a-
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-activateassignment-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-activateassignment-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -91,7 +97,7 @@ POST https://graph.microsoft.com/beta/education/classes/ffac078e-1b63-42d0-bc2a-
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

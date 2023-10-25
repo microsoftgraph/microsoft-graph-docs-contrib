@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Enroll an [externalMeetingRegistrant](../resources/externalmeetingregistrant.md) in an online meeting which has [externalMeetingRegistration](../resources/externalmeetingregistration.md) enabled. The meeting organizer enrolls someone by providing a unique **id** in the external registration system and gets the unique **joinWebUrl** of this registrant.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,7 +52,7 @@ POST /users/{userId}/onlineMeetings/{meetingId}/registration/registrants
 
 ## Request body
 
-- If the value of the **allowedRegistrant** property of the [externalMeetingRegistration](../resources/externalmeetingregistration.md) object is `organization`, supply the **id** from the external registration system, the registrant's **tenantId** and **userId** in Azure Active Directory.
+- If the value of the **allowedRegistrant** property of the [externalMeetingRegistration](../resources/externalmeetingregistration.md) object is `organization`, supply the **id** from the external registration system, the registrant's **tenantId** and **userId** in Microsoft Entra ID.
 - If the value of the **allowedRegistrant** property of the [externalMeetingRegistration](../resources/externalmeetingregistration.md) object is `everyone`, only supply the **id** from the external registration system.
 
 > [!IMPORTANT]
@@ -88,6 +90,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-externalregistratrant-public-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/add-externalregistratrant-public-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -164,6 +170,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-externalregistratrant-private-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/add-externalregistratrant-private-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

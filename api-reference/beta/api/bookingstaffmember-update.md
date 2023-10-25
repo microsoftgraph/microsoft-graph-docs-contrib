@@ -14,6 +14,9 @@ Namespace: microsoft.graph
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update the properties of a [bookingStaffMember](../resources/bookingstaffmember.md) in the specified [bookingBusiness](../resources/bookingbusiness.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -49,7 +52,7 @@ In the request body, supply the values for relevant fields that should be update
 |workingHours|[bookingWorkHours](../resources/bookingworkhours.md) collection|The range of hours each day of the week that the staff member is available for booking.|
 
 ## Response
-If successful, this method returns a `204 No content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No content` response code. It doesn't return anything in the response body.
 ## Example
 ### Request
 The following example changes the staff member's schedule to have Mondays off.
@@ -135,6 +138,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-bookingstaffmember-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-bookingstaffmember-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-bookingstaffmember-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -155,10 +162,14 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/update-bookingstaffmember-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/update-bookingstaffmember-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

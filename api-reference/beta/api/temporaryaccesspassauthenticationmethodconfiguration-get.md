@@ -1,6 +1,6 @@
 ---
 title: "Get temporaryAccessPassAuthenticationMethodConfiguration"
-description: "Read the details of the Temporary Access Pass policy for the Azure AD tenant, represented by a temporaryAccessPassAuthenticationMethodConfiguration object."
+description: "Read the details of the Temporary Access Pass policy for the Microsoft Entra tenant, represented by a temporaryAccessPassAuthenticationMethodConfiguration object."
 author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -12,7 +12,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Read the details of the Temporary Access Pass policy for the Azure Active Directory (Azure AD) tenant, represented by a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object.
+Read the details of the Temporary Access Pass policy for the Microsoft Entra tenant, represented by a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -40,7 +42,7 @@ GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/tem
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and a [temporaryAccessPassAuthenticationMethodConfiguration](../resources/temporaryaccesspassauthenticationmethodconfiguration.md) object in the response body.
@@ -63,6 +65,10 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-temporaryaccesspassauthenticationmethodconfiguration-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-temporaryaccesspassauthenticationmethodconfiguration-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -93,7 +99,7 @@ GET https://graph.microsoft.com/beta/policies/authenticationMethodsPolicy/authen
 
 ### Response
 
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {

@@ -1,7 +1,7 @@
 ---
 title: "List emailAuthenticationMethods"
 description: "Get a list of the emailAuthenticationMethod objects and their properties."
-author: "mmcla"
+author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve a list of a user's [email Authentication Method](../resources/emailauthenticationmethod.md) objects and their properties. This call will only return a single object as only one email method can be set on users.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -58,7 +60,7 @@ This method does not support optional query parameters to customize the response
 |Authorization|Bearer {token}|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -80,6 +82,10 @@ GET https://graph.microsoft.com/beta/me/authentication/emailMethods
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-emailauthenticationmethod-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-emailauthenticationmethod-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -109,7 +115,7 @@ GET https://graph.microsoft.com/beta/me/authentication/emailMethods
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

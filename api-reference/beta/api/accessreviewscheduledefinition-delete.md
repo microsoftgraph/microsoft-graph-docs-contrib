@@ -17,6 +17,8 @@ Delete an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefi
 
 [!INCLUDE [GDPR-related-guidance](../../includes/accessreviews-gdpr-delete-intro-sentence.md)]
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -25,6 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)     | AccessReview.ReadWrite.All  |
 |Delegated (personal Microsoft account)|Not supported.|
 |Application                            | AccessReview.ReadWrite.All |
+
+[!INCLUDE [rbac-access-reviews-apis-write](../includes/rbac-for-apis/rbac-access-reviews-apis-write.md)]
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -35,11 +39,11 @@ DELETE /identityGovernance/accessReviews/definitions/{review-id}
 None.
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 
 ## Response
-If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204, No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 ### Request
@@ -56,6 +60,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definit
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-accessreviewscheduledefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-accessreviewscheduledefinition-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

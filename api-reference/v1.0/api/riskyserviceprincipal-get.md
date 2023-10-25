@@ -14,6 +14,8 @@ Read the properties and relationships of a [riskyServicePrincipal](../resources/
 
 >**Note:** Using the riskyServicePrincipal API requires a Workload Identities Premium license.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -22,6 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|IdentityRiskyServicePrincipal.Read.All, IdentityRiskyServicePrincipal.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|IdentityRiskyServicePrincipal.Read.All, IdentityRiskyServicePrincipal.ReadWrite.All|
+
+[!INCLUDE [rbac-identity-protection-apis-read](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
 
 ## HTTP request
 
@@ -39,7 +43,7 @@ GET /identityProtection/riskyServicePrincipals/{riskyServicePrincipalId}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -83,6 +87,10 @@ GET https://graph.microsoft.com/v1.0/identityProtection/riskyServicePrincipals/9
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-riskyserviceprincipal-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-riskyserviceprincipal-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

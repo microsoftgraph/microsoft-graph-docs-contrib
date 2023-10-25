@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) object. Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -23,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
-When calling on behalf of a user, the user needs to belong to the following [Azure AD roles](/azure/active-directory/roles/permissions-reference):
+When calling on behalf of a user, the user needs to belong to the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference):
 + Global Reader
 + Cloud Device Administrator
 + Intune Administrator
@@ -48,7 +50,7 @@ GET /policies/deviceRegistrationPolicy
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -70,6 +72,10 @@ GET https://graph.microsoft.com/beta/policies/deviceRegistrationPolicy
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-deviceregistrationpolicy-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-deviceregistrationpolicy-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

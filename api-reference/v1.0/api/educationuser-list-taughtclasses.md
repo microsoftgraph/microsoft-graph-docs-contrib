@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get the [educationClass](../resources/educationclass.md) resources owned by an [educationUser](../resources/educationuser.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -62,7 +64,7 @@ For more information on OData query options, see [OData query parameters](/graph
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -106,6 +108,10 @@ GET https://graph.microsoft.com/v1.0/education/users/{educationUserId}/taughtCla
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/list-educationclass-for-userid-thaughtclass-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-educationclass-for-userid-thaughtclass-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

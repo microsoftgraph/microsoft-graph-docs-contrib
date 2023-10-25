@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get the list of [teamTemplate](../resources/teamtemplate.md) objects that are available for a tenant. 
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -42,7 +44,7 @@ This method supports the `$expand`, `$filter`, and `$skipToken` [OData query par
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -74,6 +76,10 @@ GET https://graph.microsoft.com/beta/teamwork/teamTemplates
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-teamtemplatedefinition-for-tenant-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-teamtemplatedefinition-for-tenant-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-teamtemplatedefinition-for-tenant-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -101,7 +107,7 @@ GET https://graph.microsoft.com/beta/teamwork/teamTemplates
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -148,6 +154,10 @@ GET https://graph.microsoft.com/beta/teamwork/teamTemplates?$expand=definitions&
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-teamtemplatedefinition-extend-filter-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-teamtemplatedefinition-extend-filter-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-teamtemplatedefinition-extend-filter-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -175,7 +185,7 @@ GET https://graph.microsoft.com/beta/teamwork/teamTemplates?$expand=definitions&
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

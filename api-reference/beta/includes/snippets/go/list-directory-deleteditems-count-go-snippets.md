@@ -32,7 +32,7 @@ configuration := &graphdirectory.DirectoryDeletedItemsGraph.groupRequestBuilderG
 	QueryParameters: requestParameters,
 }
 
-graph.group, err := graphClient.Directory().DeletedItems().GraphGroup().Get(context.Background(), configuration)
+graphGroup, err := graphClient.Directory().DeletedItems().GraphGroup().Get(context.Background(), configuration)
 
 
 ```

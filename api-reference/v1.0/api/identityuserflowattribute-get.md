@@ -3,7 +3,7 @@ title: "Get identityUserFlowAttribute"
 description: "Retrieve the properties and relationships of an identityUserFlowAttribute object."
 ms.localizationpriority: medium
 doc_type: apiPageType
-author: "jkdouglas"
+author: "nanguil"
 ms.prod: "identity-and-sign-in"
 ---
 
@@ -12,6 +12,8 @@ ms.prod: "identity-and-sign-in"
 Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [identityUserFlowAttribute](../resources/identityuserflowattribute.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -23,10 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)| Not supported.|
 |Application|IdentityUserFlow.Read.All, IdentityUserFlow.ReadWrite.All|
 
-The work or school account needs to belong to one of the following roles:
-
-* Global administrator
-* External Identity User Flow Attribute administrator
+[!INCLUDE [rbac-user-flows-attributes-apis](../includes/rbac-for-apis/rbac-user-flows-attributes-apis.md)]
 
 ## HTTP request
 
@@ -44,7 +43,7 @@ GET /identity/userFlowAttributes/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

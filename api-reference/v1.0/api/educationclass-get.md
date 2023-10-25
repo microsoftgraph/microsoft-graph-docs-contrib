@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a class from the system. A class is a universal group with a special property that indicates to the system that the group is a class. Group members represent the students; group admins represent the teachers in the class. If you're using the delegated token, the user will only see classes in which they are members.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -38,7 +40,7 @@ For more information on OData query options, see [OData Query Parameters](/graph
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and an [educationClass](../resources/educationclass.md) object in the response body.
 

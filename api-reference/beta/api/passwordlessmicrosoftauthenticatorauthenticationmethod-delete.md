@@ -1,7 +1,7 @@
 ---
 title: "Delete passwordlessMicrosoftAuthenticatorAuthenticationMethod"
 description: "Deletes a passwordlessMicrosoftAuthenticatorAuthenticationMethod object."
-author: "mmcla"
+author: "mjsantani"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -16,6 +16,8 @@ Deletes a user's [Microsoft Authenticator Passwordless Phone Sign-in method](../
 
 > [!CAUTION]
 > The Microsoft Authenticator Passwordless Phone Sign-in method API is deprecated and will stop returning results on December 31, 2020. Please use the new [Microsoft Authenticator Authentication Method](../resources/microsoftAuthenticatorAuthenticationMethod.md).
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -59,11 +61,11 @@ DELETE /users/{id | userPrincipalName}/authentication/passwordlessMicrosoftAuthe
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -82,6 +84,10 @@ DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/pas
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-passwordlessmicrosoftauthenticatorauthenticationmethod-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-passwordlessmicrosoftauthenticatorauthenticationmethod-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -111,7 +117,7 @@ DELETE https://graph.microsoft.com/beta/users/kim@contoso.com/authentication/pas
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

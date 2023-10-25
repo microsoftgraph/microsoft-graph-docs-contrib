@@ -1,7 +1,7 @@
 ---
 title: "List microsoftAuthenticatorAuthenticationMethods"
 description: "Get a list of the microsoftAuthenticatorAuthenticationMethod objects and their properties."
-author: "mmcla"
+author: "mjsantani"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -11,6 +11,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get a list of the [microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) objects and their properties.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -60,7 +62,7 @@ Not supported.
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

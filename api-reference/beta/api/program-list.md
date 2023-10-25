@@ -1,10 +1,10 @@
 ---
 title: "List programs (deprecated)"
-description: "In the Azure AD access reviews feature, list all the program objects."
+description: "In the Microsoft Entra access reviews feature, list all the program objects."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "markwahl-msft"
+author: "shubhamguptacal"
 ---
 
 # List programs (deprecated)
@@ -15,7 +15,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, list all the [program](../resources/program.md) objects.
+In the Microsoft Entra [access reviews](../resources/accessreviews-root.md) feature, list all the [program](../resources/program.md) objects.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -58,6 +61,10 @@ GET https://graph.microsoft.com/beta/programs
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-program-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-program-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -117,9 +124,9 @@ Content-type: application/json
 
 ## See also
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[List programControls of a program](program-listcontrols.md) |		[programControl](../resources/programcontrol.md) collection|	Get a collection of the controls of a program.|
+|[List programControls of a program](program-listcontrols.md) |        [programControl](../resources/programcontrol.md) collection|    Get a collection of the controls of a program.|
 
 
 <!--
@@ -133,5 +140,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

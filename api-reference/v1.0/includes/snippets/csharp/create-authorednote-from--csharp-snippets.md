@@ -12,7 +12,7 @@ var requestBody = new AuthoredNote
 {
 	Content = new ItemBody
 	{
-		Content = "String",
+		Content = "Please take a look at the files tagged with follow up",
 		ContentType = BodyType.Text,
 	},
 };

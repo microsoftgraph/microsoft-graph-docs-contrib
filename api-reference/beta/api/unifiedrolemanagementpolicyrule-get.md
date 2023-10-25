@@ -11,16 +11,21 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Retrieve a rule defined for a role management policy. The rule can be one of the following types that are derived from the [unifiedRoleManagementPolicyRule](../resources/unifiedrolemanagementpolicyrule.md) object:
+
 + [unifiedRoleManagementPolicyApprovalRule](../resources/unifiedrolemanagementpolicyapprovalrule.md)
 + [unifiedRoleManagementPolicyAuthenticationContextRule](../resources/unifiedrolemanagementpolicyauthenticationcontextrule.md)
 + [unifiedRoleManagementPolicyEnablementRule](../resources/unifiedrolemanagementpolicyenablementrule.md)
 + [unifiedRoleManagementPolicyExpirationRule](../resources/unifiedrolemanagementpolicyexpirationrule.md)
 + [unifiedRoleManagementPolicyNotificationRule](../resources/unifiedrolemanagementpolicynotificationrule.md)
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For PIM for Azure AD roles
+<a name='for-pim-for-azure-ad-roles'></a>
+
+### For PIM for Microsoft Entra roles
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -38,7 +43,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To retrieve a rule defined for a policy for either Azure AD roles or PIM for groups membership and ownership:
+To retrieve a rule defined for a policy for either Microsoft Entra roles or PIM for groups membership and ownership:
 <!-- {
   "blockType": "ignored"
 }
@@ -56,7 +61,7 @@ This method supports the `$select` and `$expand` OData query parameters to help 
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -64,7 +69,9 @@ If successful, this method returns a `200 OK` response code and an [unifiedRoleM
 
 ## Examples
 
-### Example 1: Retrieve a rule defined for a policy in PIM for Azure AD roles
+<a name='example-1-retrieve-a-rule-defined-for-a-policy-in-pim-for-azure-ad-roles'></a>
+
+### Example 1: Retrieve a rule defined for a policy in PIM for Microsoft Entra roles
 
 #### Request
 
@@ -83,6 +90,10 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/DirectoryRo
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedrolemanagementpolicyrule-directory-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedrolemanagementpolicyrule-directory-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -113,7 +124,7 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/DirectoryRo
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -165,6 +176,10 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/Group_60bba
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedrolemanagementpolicyrule-azureadgroup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-unifiedrolemanagementpolicyrule-azureadgroup-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-unifiedrolemanagementpolicyrule-azureadgroup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -193,7 +208,7 @@ GET https://graph.microsoft.com/beta/policies/roleManagementPolicies/Group_60bba
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

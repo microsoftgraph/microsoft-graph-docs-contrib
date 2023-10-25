@@ -55,10 +55,10 @@ The following table shows the properties that are required when you create the d
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Format of the exported report. Possible values are: `csv`, `pdf`, `json`, `unknownFutureValue`.|
 |snapshotId|String|A snapshot is an identifiable subset of the dataset represented by the ReportName. A sessionId or CachedReportConfiguration id can be used here. If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId. Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.|
 |localizationType|[deviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|Configures how the requested export job is localized. Possible values are: `localizedValuesAsAdditionalColumn`, `replaceLocalizableValues`.|
-|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the export job. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
-|url|String|Temporary location of the exported report|
-|requestDateTime|DateTimeOffset|Time that the exported report was requested|
-|expirationDateTime|DateTimeOffset|Time that the exported report expires|
+|status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the export job. This property is read-only. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
+|url|String|Temporary location of the exported report. This property is read-only.|
+|requestDateTime|DateTimeOffset|Time that the exported report was requested. This property is read-only.|
+|expirationDateTime|DateTimeOffset|Time that the exported report expires. This property is read-only.|
 
 
 

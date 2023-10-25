@@ -15,6 +15,8 @@ Namespace: microsoft.graph.industryData
 
 Create a new [industryDataConnector](../resources/industrydata-industrydataconnector.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -86,6 +88,10 @@ Content-length: 104
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-industrydataconnector-from-dataconnectors-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-industrydataconnector-from-dataconnectors-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-industrydataconnector-from-dataconnectors-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -114,7 +120,7 @@ Content-length: 104
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

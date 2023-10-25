@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Delete a user from a school.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -20,12 +22,12 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  Not supported.  |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | EduRoster.ReadWrite.All | 
+|Application | EduRoster.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /education/schools/{id}/users/{userId}/
+DELETE /education/schools/{id}/users/{userId}/$ref
 ```
 ## Request headers
 | Header       | Value |
@@ -33,7 +35,7 @@ DELETE /education/schools/{id}/users/{userId}/
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 
 ## Response
@@ -49,8 +51,20 @@ The following is an example of a request.
   "name": "remove_user_from_school_v1_e1"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/users/{user-id}
+DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/users/{user-id}/$ref
 ```
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/remove-user-from-school-v1-e1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/remove-user-from-school-v1-e1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Go](#tab/go)
+[!INCLUDE [sample-code](../includes/snippets/go/remove-user-from-school-v1-e1-go-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/remove-user-from-school-v1-e1-java-snippets.md)]
@@ -60,10 +74,22 @@ DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/users/{use
 [!INCLUDE [sample-code](../includes/snippets/javascript/remove-user-from-school-v1-e1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PHP](#tab/php)
+[!INCLUDE [sample-code](../includes/snippets/php/remove-user-from-school-v1-e1-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/remove-user-from-school-v1-e1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/remove-user-from-school-v1-e1-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

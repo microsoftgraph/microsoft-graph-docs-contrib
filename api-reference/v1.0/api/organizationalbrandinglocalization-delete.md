@@ -1,7 +1,7 @@
 ---
 title: "Delete organizationalBrandingLocalization"
 description: "Deletes an organizationalBrandingLocalization object."
-author: "AlexanderMars"
+author: "quievey"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -11,6 +11,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Delete a localized branding object. To delete the [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object, all images (Stream types) must first be removed from the object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -37,7 +39,7 @@ DELETE /organization/{organizationId}/branding/localizations/{organizationalBran
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -97,7 +99,7 @@ DELETE https://graph.microsoft.com/v1.0/organization/d69179bf-f4a4-41a9-a9de-249
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

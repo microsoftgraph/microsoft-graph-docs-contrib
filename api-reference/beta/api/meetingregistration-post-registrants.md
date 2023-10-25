@@ -15,10 +15,12 @@ Namespace: microsoft.graph
 
 Enroll a [meeting registrant](../resources/meetingregistrant.md) in an online meeting that has [meeting registration](../resources/meetingregistration.md) enabled on behalf of the registrant. This operation has two scenarios:
 
-- If the value of the **allowedRegistrant** property of the [meetingRegistration](../resources/meetingregistration.md) object is `organization`, registrants will be required to sign in before they register for the meeting. The **firstName**, **lastName**, and **email** must match the information stored in Azure Active Directory (Azure AD).
+- If the value of the **allowedRegistrant** property of the [meetingRegistration](../resources/meetingregistration.md) object is `organization`, registrants will be required to sign in before they register for the meeting. The **firstName**, **lastName**, and **email** must match the information stored in Microsoft Entra ID.
 - If the value of the **allowedRegistrant** property of the [meetingRegistration](../resources/meetingregistration.md) object is `everyone`, registrants will not be required to sign in and will be considered anonymous.
 
 In either scenario, the registrant will receive an email notification that contains their registration information.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -106,6 +108,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-registratrant-user-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/add-registratrant-user-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -198,6 +204,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/add-registratrant-app-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/add-registratrant-app-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

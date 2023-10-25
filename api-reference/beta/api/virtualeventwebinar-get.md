@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [virtualEventWebinar](../resources/virtualeventwebinar.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 > [!NOTE]
 >
-> To use application permissions for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and assign it to a user. The authorized application will access registrants' information from virtual events created by that specific user.
+> To use application permissions for this API, tenant administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and assign it to a user. This allows the authorized application to access registrants' information from virtual events created by that specific user.
 
 ## HTTP request
 
@@ -51,7 +53,7 @@ This method does not support the OData query parameters. For general information
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -74,6 +76,10 @@ GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/{webinarId
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-virtualeventwebinar-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-virtualeventwebinar-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -104,7 +110,7 @@ GET https://graph.microsoft.com/beta/solutions/virtualEvents/webinars/{webinarId
 
 ### Response
 
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

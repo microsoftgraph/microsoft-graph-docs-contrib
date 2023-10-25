@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of an [onPremisesDirectorySynchronization](../resources/onpremisesdirectorysynchronization.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +51,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -75,6 +77,10 @@ GET https://graph.microsoft.com/beta/directory/onPremisesSynchronization/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-onpremisesdirectorysynchronization-e1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-onpremisesdirectorysynchronization-e1-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-onpremisesdirectorysynchronization-e1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -91,6 +97,10 @@ GET https://graph.microsoft.com/beta/directory/onPremisesSynchronization/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/get-onpremisesdirectorysynchronization-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-onpremisesdirectorysynchronization-e1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-onpremisesdirectorysynchronization-e1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -99,7 +109,7 @@ GET https://graph.microsoft.com/beta/directory/onPremisesSynchronization/{id}
 
 ### Response
 
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

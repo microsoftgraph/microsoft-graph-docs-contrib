@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get the [itemAddress](../resources/itemaddress.md) resources from the **addresses** navigation property.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,7 +53,7 @@ This method supports the following OData query parameters to help customize the 
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -73,6 +75,10 @@ GET https://graph.microsoft.com/beta/me/profile/addresses
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-itemaddresses-from-profile-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-itemaddresses-from-profile-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-itemaddresses-from-profile-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -87,6 +93,10 @@ GET https://graph.microsoft.com/beta/me/profile/addresses
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-itemaddresses-from-profile-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-itemaddresses-from-profile-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

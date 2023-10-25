@@ -1,9 +1,9 @@
 ---
 title: "Delete delegatedAdminRelationship"
 description: "Deletes a delegatedAdminRelationship object."
-author: "koravva"
+author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.prod: partner-customer-administration
 doc_type: apiPageType
 ---
 
@@ -11,6 +11,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Delete a [delegatedAdminRelationship](../resources/delegatedadminrelationship.md) object. A relationship can only be deleted if it's in the "created" status. 
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,7 +40,7 @@ DELETE /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelations
 |If-Match|If-match: {etag}. Last known ETag value for the **delegatedAdminRelationship** to be deleted. Retrieve the ETag value from a LIST or GET operation. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

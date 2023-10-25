@@ -13,9 +13,10 @@ Namespace: microsoft.graph
 
 Retrieve a list of [apps installed](../resources/teamsappinstallation.md) in the specified [team](../resources/team.md).
 
-
 > [!NOTE]
 > The `id` of a **teamsAppInstallation** resource is not the same value as the `id` of the associated **teamsApp** resource.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -49,7 +50,7 @@ This method supports the `$filter`, `$select`, and `$expand` [OData Query Parame
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -60,7 +61,7 @@ If successful, this method returns a `200 OK` response code and collection of [t
 ### Example 1: List installed apps
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -109,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/teams/6903fa93-605b-43ef-920e-77c4729f8258/
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -144,7 +145,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -193,7 +194,7 @@ GET https://graph.microsoft.com/v1.0/teams/6903fa93-605b-43ef-920e-77c4729f8258/
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -221,7 +222,7 @@ Content-type: application/json
             "displayName":"Power Automate Actions",
             "version":"1.0.2",
             "requiredResourceSpecificApplicationPermissions":[
-               
+
             ],
             "publishingState":"published",
             "shortDescription":"Be more productive with Microsoft Flow",
@@ -239,7 +240,7 @@ Content-type: application/json
             "displayName":"SharePoint Pages",
             "version":"1.2",
             "requiredResourceSpecificApplicationPermissions":[
-               
+
             ],
             "publishingState":"published",
             "shortDescription":"Add a tab for a SharePoint news article or page.",
@@ -257,7 +258,7 @@ Content-type: application/json
             "displayName":"OneNote",
             "version":"1.0.0",
             "requiredResourceSpecificApplicationPermissions":[
-               
+
             ],
             "publishingState":"published",
             "shortDescription":"Capture and share ideas, to-do lists and other notes with your team.",
@@ -274,7 +275,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request. In the example, the manifest ID of the Teams app is 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
+The following example shows a request. In the example, the manifest ID of the Teams app is 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -319,9 +320,13 @@ GET https://graph.microsoft.com/v1.0/teams/acda442c-78d2-491b-8204-4ef5019c0193/
 
 ---
 
+>[!NOTE]
+>
+> This example applies to sideloaded or organizational apps. The **externalId** value is empty for apps with a **distributionMethod** type of `store`. When apps are published to the global store, the **id** of the app matches the **id** in the app manifest.
+
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -354,7 +359,7 @@ Content-type: application/json
             "displayName":"YPA",
             "version":"6.0.0",
             "requiredResourceSpecificApplicationPermissions":[
-               
+
             ],
             "publishingState":"published",
             "shortDescription":"A conversational smart assistant from MSX that surfaces real-time insights.",

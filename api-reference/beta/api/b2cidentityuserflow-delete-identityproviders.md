@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Delete an identity provider from a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object. For more information about identity providers available for user flows, see the [identityProviders](../resources/identityprovider.md) API reference.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +49,7 @@ DELETE /identity/b2cUserFlows/{id}/identityProviders/{id}/$ref
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -57,7 +59,7 @@ If successful, this method returns a `204 No Content` response code. If unsucces
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -74,6 +76,10 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSign
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-b2xuserflows-identityproviders-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-b2xuserflows-identityproviders-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -104,7 +110,7 @@ DELETE https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSign
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

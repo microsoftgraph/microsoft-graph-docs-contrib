@@ -1,6 +1,6 @@
 ---
 title: "List classes of an educationUser"
-description: "Retrieve a list of class objects. Note that if the delegated token is used, members can only see information about their own classes. "
+description: "Get the educationClass resources an educationUser is a member of."
 ms.localizationpriority: medium
 author: "mmast-msft"
 ms.prod: "education"
@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 Get the [educationClass](../resources/educationclass.md) resources an [educationUser](../resources/educationuser.md) is a member of.
 
 <!-- Please verify the revision to the delegated token text. -->
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,12 +44,14 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
+
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [educationClass](../resources/educationclass.md) objects in the response body.
+
 ## Example
-##### Request
-The following is an example of the request.
+### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -92,8 +96,8 @@ GET https://graph.microsoft.com/v1.0/education/me/classes
 
 ---
 
-##### Response
-The following is an example of the response. 
+### Response
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

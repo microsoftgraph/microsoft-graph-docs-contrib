@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get newly created, updated, or deleted devices without performing a full read of the entire resource collection. For more information, see [Using delta query](/graph/delta-query-overview).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -55,7 +57,7 @@ This method supports OData query parameters to help customize the response.
 | Authorization  | Bearer &lt;token&gt;. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -81,6 +83,10 @@ GET https://graph.microsoft.com/beta/devices/delta
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/device-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/device-delta-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

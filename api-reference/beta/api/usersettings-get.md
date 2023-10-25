@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 Read the user and organization [userSettings](../resources/usersettings.md) object.
 To learn how to update the properties of the [userSettings](../resources/usersettings.md) object, see [update user settings](usersettings-update.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -40,7 +42,7 @@ GET /users/{id | userPrincipalName}/settings/
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

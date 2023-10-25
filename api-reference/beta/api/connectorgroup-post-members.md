@@ -2,7 +2,7 @@
 title: "Add connector to connectorGroup"
 description: "Use this API to add a connector to a connectorGroup."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinrshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
@@ -45,7 +45,7 @@ If successful, this method returns a `201 Created` response code and a [connecto
 
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -63,6 +63,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-connector-from-connectorgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-connector-from-connectorgroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -92,7 +96,7 @@ Content-type: application/json
 ---
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 
 <!-- {
   "blockType": "response"

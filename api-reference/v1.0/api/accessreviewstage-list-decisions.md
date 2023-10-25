@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get the decisions from a stage in a multi-stage access review. The decisions in an [accessReviewStage](../resources/accessReviewStage.md) object are represented by an [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -32,7 +34,7 @@ GET /identityGovernance/accessReviews/definitions/{accessReviewScheduleDefinitio
 ```
 
 ## Optional query parameters
-This method supports the `$select`, `$filter` (`eq`), `$orderBy`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$select`, `$filter` (`eq`), `$orderby`, `$skip`, and `$top` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 The default page size for this API is 100 **accessReviewStage** objects. To improve efficiency and avoid timeouts due to large result sets, apply pagination using the `$skip` and `$top` query parameters. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
@@ -43,7 +45,7 @@ The default page size for this API is 100 **accessReviewStage** objects. To impr
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

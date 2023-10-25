@@ -2,7 +2,7 @@
 title: "Update authenticationContextClassReference"
 description: "Create a new or update the properties of an authenticationContextClassReference object."
 ms.localizationpriority: medium
-author: "bakerCaleb"
+author: "swetha-rai"
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
@@ -12,6 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Create an [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object, if the ID has not been used. If ID has been used, this call updates the [authenticationContextClassReference](../resources/authenticationcontextclassreference.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -56,13 +58,13 @@ A request using an empty JSON object, with no properties, will create a new [aut
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request. If an object with the ID `c1` doesn't exist, this request creates the new object; if the object exists, this request updates the specified properties.
+The following example shows a request. If an object with the ID `c1` doesn't exist, this request creates the new object; if the object exists, this request updates the specified properties.
 
 
 
@@ -120,7 +122,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

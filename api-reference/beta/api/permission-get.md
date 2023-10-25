@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "Return the effective sharing permission for a particular permission resource."
 ms.date: 09/10/2017
 title: Get permission
@@ -19,6 +19,8 @@ Effective permissions of an item can come from two sources: permissions set dire
 
 Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.
 This property is an [ItemReference](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -68,6 +70,10 @@ GET https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{perm-
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-item-permission-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-item-permission-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-item-permission-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -84,6 +90,10 @@ GET https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{perm-
 [!INCLUDE [sample-code](../includes/snippets/php/get-item-permission-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-item-permission-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/get-item-permission-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -92,7 +102,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{perm-
 
 ### Response
 
-If successful, this method returns a [Permission](../resources/permission.md) resource for the specified ID. 
+If successful, this method returns a [Permission](../resources/permission.md) resource for the specified ID.
 
 <!-- {"blockType": "response", "@odata.type": "microsoft.graph.permission", "truncated": true} -->
 
@@ -128,7 +138,7 @@ Content-type: application/json
 
 The [Permission](../resources/permission.md) resource uses _facets_ to provide information about the kind of permission represented by the resource.
 
-Permissions with a [**link**](../resources/sharinglink.md) facet represent sharing links created on the item. 
+Permissions with a [**link**](../resources/sharinglink.md) facet represent sharing links created on the item.
 Sharing links contain a unique token that provides access to the item for anyone with the link.
 
 Permissions with a [**invitation**](../resources/sharinginvitation.md) facet represent permissions added by inviting specific users or groups to have access to the file.

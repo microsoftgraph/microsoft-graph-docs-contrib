@@ -15,6 +15,8 @@ Namespace: microsoft.graph.deviceManagement
 
 Create an [alertRule](../resources/devicemanagement-alertrule.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -67,7 +69,6 @@ If successful, this method returns a `201 Created` response code and an [microso
 
 The following is an example of a request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -94,16 +95,10 @@ Content-Type: application/json
   "notificationChannels": [
       {
         "notificationChannelType": "portal",
-        "receivers": [
-            ""
-        ],
         "notificationReceivers": []
       },
       {
         "notificationChannelType": "email",
-        "receivers": [
-            "serena.davis@contoso.com"
-        ],
         "notificationReceivers": [
             {
                 "locale": "en-us",
@@ -117,6 +112,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-alertrule-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-alertrule-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -147,7 +146,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -176,16 +175,10 @@ Content-Type: application/json
   "notificationChannels": [
       {
         "notificationChannelType": "portal",
-        "receivers": [
-            ""
-        ],
         "notificationReceivers": []
       },
       {
         "notificationChannelType": "email",
-        "receivers": [
-            "serena.davis@contoso.com"
-        ],
         "notificationReceivers": [
             {
                 "locale": "en-us",

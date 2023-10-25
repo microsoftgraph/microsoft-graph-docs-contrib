@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update the properties of an [alert](../resources/security-alert.md) object in an organization based on the specified alert **id** property.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -45,7 +47,7 @@ PATCH /security/alerts_v2/{alertId}
 |Property|Type|Description|
 |:---|:---|:---|
 |status|microsoft.graph.security.alertStatus|The status of the alert. Possible values are: `new`, `inProgress`, `resolved`, `unknownFutureValue`.|
-|classification|microsoft.graph.security.alertClassification|Specifies the classification of the alert. Possible values are: `unknown`, `falsePositive`, `truePositive`, `benignPositive`, `unknownFutureValue`.|
+|classification|microsoft.graph.security.alertClassification|Specifies the classification of the alert. Possible values are: `unknown`, `falsePositive`, `truePositive`, `informationalExpectedActivity`, `unknownFutureValue`.|
 |determination|microsoft.graph.security.alertDetermination|Specifies the determination of the alert. Possible values are: `unknown`, `apt`, `malware`, `securityPersonnel`, `securityTesting`, `unwantedSoftware`, `other`, `multiStagedAttack`, `compromisedUser`, `phishing`, `maliciousUserActivity`, `clean`, `insufficientData`, `confirmedUserActivity`, `lineOfBusinessApplication`, `unknownFutureValue`.|
 |assignedTo|String|Owner of the incident, or null if no owner is assigned.|
 
@@ -114,7 +116,7 @@ Content-length: 2450
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

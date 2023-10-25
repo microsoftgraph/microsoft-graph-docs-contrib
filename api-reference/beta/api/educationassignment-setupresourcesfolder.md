@@ -17,14 +17,16 @@ Create a SharePoint folder to upload files for a given [educationAssignment](../
 
 The teacher determines the resources to upload in the assignment's folder.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  EduAssignments.ReadBasic, EduAssignments.Read  |
+|Delegated (work or school account) |  EduAssignments.ReadWrite  |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not supported. | 
+|Application | EduAssignments.ReadWrite.All | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -70,6 +72,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationassignment-setupresourcesfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/educationassignment-setupresourcesfolder-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/educationassignment-setupresourcesfolder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -86,6 +92,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/php/educationassignment-setupresourcesfolder-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/educationassignment-setupresourcesfolder-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/educationassignment-setupresourcesfolder-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -93,7 +103,7 @@ Content-type: application/json
 ---
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -1,7 +1,7 @@
 ---
 title: "Update organizationalBrandingLocalization"
 description: "Update the properties of an organizationalBrandingLocalization object."
-author: "AlexanderMars"
+author: "quievey"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -11,6 +11,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Update the properties of an [organizationalBrandingLocalization](../resources/organizationalbrandinglocalization.md) object for a specific localization.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -23,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-Only Stream data types, including **backgroundLogo** and **backgroundImage**, are updated using the PUT method. To update String data types, including **signInPageText** and **usernameHintText**, use the PATCH method. You cannot update Stream types with other data types in the same request.
+To update String data types, such as signInPageText and usernameHintText, use the PATCH method. To update Stream data types, such as backgroundLogo and backgroundImage, use the PUT method. You can't update Stream types with other data types in the same request.
 
 <!-- {
   "blockType": "ignored"
@@ -32,7 +34,7 @@ Only Stream data types, including **backgroundLogo** and **backgroundImage**, ar
 ``` http
 PATCH /organization/{organizationId}/branding/localizations/{organizationalBrandingLocalizationId}
 
-PUT /organization/{organizationId}/branding/localizations/{organizationalBrandingLocalizationId}/{backgroundImage | bannerLogo | squareLogo}
+PUT /organization/{organizationId}/branding/localizations/{organizationalBrandingLocalizationId}/{Stream object type such as backgroundImage}
 ```
 
 ## Request headers
@@ -67,7 +69,7 @@ The following request updates the banner logo for the fr-FR localization.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -134,7 +136,7 @@ The following request updates the banner logo for the `fr-FR` localization.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -203,7 +205,7 @@ HTTP/1.1 204 No Content
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

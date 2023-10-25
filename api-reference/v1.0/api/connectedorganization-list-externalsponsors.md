@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of a [connectedOrganization](../resources/connectedorganization.md)'s external sponsors.  The [external sponsors](../resources/externalsponsors.md) are a set of users who can approve requests on behalf of other users from that connected organization.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,7 +44,7 @@ This method supports the [OData query parameters](/graph/query-parameters) for p
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

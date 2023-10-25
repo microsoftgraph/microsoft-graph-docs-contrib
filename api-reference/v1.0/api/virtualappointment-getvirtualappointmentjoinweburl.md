@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Get a join web URL for a [Microsoft Virtual Appointments](/microsoft-365/frontline/virtual-appointments). This web URL includes enhanced business-to-customer experiences such as mobile browser join and virtual lobby rooms. With [Teams Premium](/microsoftteams/teams-add-on-licensing/licensing-enhance-teams), you can configure a [custom lobby room](/microsoft-365/frontline/browser-join#customize-the-waiting-room-with-your-company-logo) experience for attendees by adding your company logo and access the [Virtual Appointments usage report](/microsoft-365/frontline/virtual-appointments-usage-report) for organizational analytics.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,7 +45,7 @@ GET /users/{userId}/onlineMeetings/{onlineMeetingId}/getVirtualAppointmentJoinWe
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

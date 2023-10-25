@@ -14,14 +14,18 @@ Namespace: microsoft.graph
 Get a list of [unifiedRoleAssignment](../resources/unifiedroleassignment.md) objects for the RBAC provider.
 
 The following RBAC providers are currently supported:
-- directory (Azure AD)
-- entitlement management (Azure AD)
+- directory (Microsoft Entra ID)
+- entitlement management (Microsoft Entra Entitlement Management)
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For the directory (Azure AD) provider
+<a name='for-the-directory-azure-ad-provider'></a>
+
+### For the directory (Microsoft Entra ID) provider
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
@@ -79,7 +83,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -91,7 +95,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -141,7 +145,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$f
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -219,7 +223,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -269,7 +273,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleAssignments?$f
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -307,7 +311,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -356,7 +360,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleAs
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

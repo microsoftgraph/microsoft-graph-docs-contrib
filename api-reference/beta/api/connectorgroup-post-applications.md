@@ -2,7 +2,7 @@
 title: "Assign a connectorGroup to an application"
 description: "Use this API to assign a connectorGroup to an application"
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinrshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Assign a [connectorGroup](../resources/connectorgroup.md) to an [application](../resources/application.md).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,7 +46,7 @@ If successful, this method returns `204 No Content` response code.
 
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -56,12 +58,16 @@ PUT https://graph.microsoft.com/beta/applications/{id}/connectorGroup/$ref
 Content-type: application/json
 
 {
-  "@odata.id": "https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"
+  "@odata.id": "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"
 }
 ```
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-application-from-connectorgroup-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-application-from-connectorgroup-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -91,7 +97,7 @@ Content-type: application/json
 ---
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 
 <!-- {
   "blockType": "response"

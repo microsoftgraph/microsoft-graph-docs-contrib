@@ -17,7 +17,7 @@ Replace an existing [shift](../resources/shift.md).
 
 If the specified [shift](../resources/shift.md) doesn't exist, this method returns `404 Not found`.
 
-The duration of a shift cannot be less than 1 minute or longer than 24 hours.
+The duration of a shift can't be less than 1 minute or longer than 24 hours.
 
 ## Permissions
 
@@ -51,13 +51,13 @@ In the request body, supply a JSON representation of a [shift](../resources/shif
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
+If successful, this method returns a `204 No Content` response code and empty content. If the request specifies the `Prefer` header with `return=representation` preference, then this method returns a `200 OK` response code and a [shift](../resources/shift.md) object in the response body.
 
 ## Example
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -131,7 +131,7 @@ Prefer: return=representation
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -212,5 +212,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

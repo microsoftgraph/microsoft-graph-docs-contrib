@@ -12,6 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get the properties and relationships of a device object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -40,7 +43,7 @@ This method supports the `$select` [OData query parameter](/graph/query-paramete
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -51,7 +54,7 @@ If successful, this method returns a `200 OK` response code and [device](../reso
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -97,7 +100,7 @@ GET https://graph.microsoft.com/v1.0/devices/000005c3-b7a6-4c61-89fc-80bf5ccfc36
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -141,7 +144,7 @@ GET https://graph.microsoft.com/beta/devices/6a59ea83-02bd-468f-a40b-f2c3d182198
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/get-device-select-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -161,7 +164,7 @@ GET https://graph.microsoft.com/beta/devices/6a59ea83-02bd-468f-a40b-f2c3d182198
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-device-select-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -172,7 +175,7 @@ GET https://graph.microsoft.com/beta/devices/6a59ea83-02bd-468f-a40b-f2c3d182198
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

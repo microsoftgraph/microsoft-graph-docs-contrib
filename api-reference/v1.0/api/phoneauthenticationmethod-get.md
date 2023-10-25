@@ -2,7 +2,7 @@
 title: "Get phoneAuthenticationMethod"
 description: "Retrieve a single phoneAuthenticationMethod object for a user."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "luc-msft"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -11,7 +11,9 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Retrieve a single [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object for a user. This method is available only for standard Azure AD and B2B users, but not B2C users.
+Retrieve a single [phoneAuthenticationMethod](../resources/phoneauthenticationmethod.md) object for a user. This method is available only for standard Microsoft Entra ID and B2B users, but not B2C users.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -69,7 +71,7 @@ This method does not support optional query parameters to customize the response
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -79,7 +81,7 @@ If successful, this method returns a `200 OK` response code and the requested [p
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -128,7 +130,7 @@ GET https://graph.microsoft.com/v1.0/me/authentication/phoneMethods/3179e48a-750
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

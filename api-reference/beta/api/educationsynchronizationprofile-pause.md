@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Pause the sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -36,13 +38,13 @@ POST /education/synchronizationProfiles/{id}/pause
 | Authorization  | string  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code.
 
 ## Example
 ##### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -55,6 +57,10 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/pau
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-synchronizationprofile-pause-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-synchronizationprofile-pause-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -71,6 +77,10 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/pau
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/post-synchronizationprofile-pause-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/post-synchronizationprofile-pause-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

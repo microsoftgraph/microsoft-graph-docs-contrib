@@ -1,6 +1,6 @@
 ---
 title: "authentication resource type"
-description: "Exposes relationships that represent the authentication methods supported by Azure AD that can be configured for users."
+description: "Exposes relationships that represent the authentication methods supported by Microsoft Entra ID that can be configured for users."
 author: "jpettere"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Exposes authentication sign-in preferences and relationships that represent the authentication methods supported by Azure AD that can be configured for users.
+Exposes authentication sign-in preferences and relationships that represent the authentication methods supported by Microsoft Entra ID that can be configured for users.
 
 Inherits from [entity](entity.md).
 

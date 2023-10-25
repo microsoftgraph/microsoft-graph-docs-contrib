@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Use this API to get the members list (users, groups, or devices) in an administrative unit.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -34,18 +36,18 @@ GET /directory/administrativeUnits/{id}/members/$ref
 ```
 
 ## Optional query parameters
-This method (when used without `$ref`) supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the users that are a member of the administrative unit. 
+This method (when used without `$ref`) supports the [OData query parameters](/graph/query-parameters) to help customize the response, including `$search`, `$count`, and `$filter`. OData cast is also enabled, for example, you can cast to get just the users that are a member of the administrative unit.
 
-`$search` is supported on the **displayName** and **description** properties only. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+`$search` is supported on the **displayName** and **description** properties only. Some queries are supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries).
 
 ## Request headers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
-| ConsistencyLevel  | eventual. This header and `$count` are required when using `$search`, or in specific usage of `$filter`. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries). |
+| ConsistencyLevel  | eventual. This header and `$count` are required when using `$search`, or in specific usage of `$filter`. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries). |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -211,3 +213,11 @@ Content-type: application/json
   ]
 }
 ```
+
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api/administrativeunit-list-members.md:
+      Failed to parse enumeration values for type microsoft.graph.list. Table requires a column header named one of the following: Member, Name, Value"
+  ]
+} -->

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Grant the specified user access to submit print jobs to the associated [printerShare](../resources/printershare.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -45,7 +47,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -64,6 +66,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-alloweduser-from-printers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-alloweduser-from-printers-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -95,7 +101,7 @@ Content-type: application/json
 In the request body, supply a reference to a user entity by including the user's Microsoft Graph URI in the `@odata.id` field of the JSON body.
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

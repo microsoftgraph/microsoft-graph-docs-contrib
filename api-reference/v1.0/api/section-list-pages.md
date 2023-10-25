@@ -12,6 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Retrieve a list of [page](../resources/page.md) objects from the specified section.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -43,7 +46,7 @@ The default response expands `parentSection` and selects the section's `id`, `na
 | Accept | string | `application/json` |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

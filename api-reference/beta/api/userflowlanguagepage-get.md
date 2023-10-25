@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Read the values in a [userFlowLanguagePage](../resources/userflowlanguagepage.md) object for a language in a user flow. These values are shown to a user during a user journey defined by a user flow.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -52,7 +54,7 @@ GET /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/{id}/$value
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -62,7 +64,7 @@ If successful, this method returns a `200 OK` response code and a [userFlowLangu
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -79,6 +81,10 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/langua
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-userflowlanguagepage-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-userflowlanguagepage-3-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -109,7 +115,7 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_Customer/langua
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

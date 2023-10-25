@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Read the properties of a [tenantAppManagementPolicy](../resources/tenantAppManagementPolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,6 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
 | Delegated (personal Microsoft account) | Not supported.                                             |
 | Application                            | Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration |
+
+[!INCLUDE [rbac-app-auth-method-policy-apis](../includes/rbac-for-apis/rbac-app-auth-method-policy-apis.md)]
 
 ## HTTP request
 
@@ -39,7 +43,7 @@ GET /policies/defaultAppManagementPolicy
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -49,7 +53,7 @@ If successful, this method returns a `200 OK` response code and the requested [d
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 

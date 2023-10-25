@@ -15,6 +15,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Read the properties and relationships of a [customTaskExtension](../resources/identitygovernance-customtaskextension.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -49,7 +51,7 @@ This method supports the `$select` and `$expand` OData query parameters to help 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -73,6 +75,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/custo
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-get-customtaskextension-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-get-customtaskextension-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -103,7 +109,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/custo
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

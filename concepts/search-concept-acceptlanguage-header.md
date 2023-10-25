@@ -128,7 +128,7 @@ For Microsoft Search APIs in Microsoft Graph, the `Accept-Language` HTTP request
 |zu|isiZulu|
 
 ## Examples
-We will support the format language-region e.g. en-US. Multiple languages also can be listed by using commas and given an associated quality value which represents an estimate of the user's preference for the languages specified by that range e.g. en-US, fr-FR;q=0.9. The quality value defaults to "q=1".
+We support the format language-region (for example en-US). Multiple languages can be listed by using commas and given an associated quality value. The value represents an estimate of the user's preference for the languages specified by that range, for example,  en-US, fr-FR;q=0.9. The quality value defaults to "q=1".
 
 ```http
 POST /search/query
@@ -137,7 +137,7 @@ Accept-Language: en-US, fr-FR;q=0.9
 ```
 
 ## Known limitations
-- If no Accept-Language header is present in the request, the server assumes that all languages are equally acceptable. If an Accept-Language header is present, then all languages which are assigned a quality factor greater than 0 are acceptable.
+- If no Accept-Language header is present in the request, the server assumes that all languages are equally acceptable. If an Accept-Language header is present, then all languages, which are assigned a quality factor greater than zero are acceptable.
 
 ## See also
 

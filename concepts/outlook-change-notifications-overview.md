@@ -1,7 +1,7 @@
 ---
 title: "Change notifications for Outlook resources in Microsoft Graph"
 description: "Subscribe to changes to Outlook resources (create, update, and delete) and changed resource data in Microsoft Graph APIs and receive notifications via webhooks."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.prod: "outlook"
 ms.custom: scenarios:getting-started
@@ -44,7 +44,7 @@ Depending on the resource, use the least privileged permission specified in the 
 ### Include resource data in notification payload (preview)
 
 > [!NOTE]
-> Notifications with resource data for Outlook resources are currently available only in the Microsoft Graph beta endpoint. 
+> Notifications with resource data for Outlook resources are currently available only in the Microsoft Graph beta endpoint.
 
 To have resource data included in a change notification, you **must** specify the following properties, in addition to those you normally include when creating a subscription:
 
@@ -77,13 +77,13 @@ If you don’t use a `$filter` when creating the subscription:
 The Outlook **contact**, **event**, and **message** resources also support subscribing to lifecycle notifications. Lifecycle notifications are needed in case your app gets their subscriptions removed or misses some change notifications. Apps should implement logic to detect and recover from the loss, and resume a continuous change notification flow. To learn more, see [subscribing to lifecycle notifications](webhooks-lifecycle.md).
 
 ### Keep track of subscription lifetime
-Make sure to [extend](/graph/api/subscription-update) a subscription before it expires. The maximum lifetime for a subscription without Outlook resource data is 4230 minutes (under 3 days), and 1 day with resource data. 
+Make sure to [extend](/graph/api/subscription-update) a subscription before it expires. The maximum lifetime for a subscription without Outlook resource data is 4230 minutes (under 3 days), and 1 day with resource data.
 
 If you lose the permission granted earlier for a subscription and the subscription expires meanwhile, request permission again to [create](/graph/api/subscription-post-subscriptions) a new subscription.
 
 ## Receive notification payloads
 
-Depending on your subscription, notifications may include resource data. Subscriptions with resource data allow you to get the 
+Depending on your subscription, notifications may include resource data. Subscriptions with resource data allow you to get the
 resource payload along with the notification, avoiding the overhead for a separate API call to get the changed resource data.
 
 ### Receive notifications with resource data (preview)
@@ -102,7 +102,7 @@ The following is an example of the payload of a notification with resource data 
         "tenantId": "<<--TenantForWhichNotificationWasSent-->>",
         "encryptedContent": {
           "data": "<<--EncryptedContent-->>",
-          "dataKey": "<<--EnryptedDataKeyUsedForEncryptingContent-->>",        
+          "dataKey": "<<--EnryptedDataKeyUsedForEncryptingContent-->>",
           "dataSignature": "Qw/9ubWeUYJPWWXvNiGgct2FkNG2MXTRm/BLUpJM66k=",
           "encryptionCertificateId": "<<--IdOfTheCertificateUsedForEncryptingDataKey-->>",
           "encryptionCertificateThumbprint": "<<--ThumbprintOfTheCertificateUsedForEncryptingDataKey-->>"
@@ -121,7 +121,7 @@ The following is an example of the payload of a notification with resource data 
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
 
-The following is an example of a decrypted notification payload. The decrypted payload conforms to the Outlook [message](/graph/api/resources/message) schema. The payload is similar to that returned by a [GET message](/graph/api/message-get) operation. However, the notification payload contains only those properties specified with a `$select` parameter in the **resource** property of the subscription. Notification payloads for other Outlook resources like [contact](/graph/api/resources/contact) and [event](/graph/api/resources/event) follow their respective schemas. 
+The following is an example of a decrypted notification payload. The decrypted payload conforms to the Outlook [message](/graph/api/resources/message) schema. The payload is similar to that returned by a [GET message](/graph/api/message-get) operation. However, the notification payload contains only those properties specified with a `$select` parameter in the **resource** property of the subscription. Notification payloads for other Outlook resources like [contact](/graph/api/resources/contact) and [event](/graph/api/resources/event) follow their respective schemas.
 
 ```json
 {
@@ -157,9 +157,9 @@ The next example shows the payload of a notification that corresponds to an Outl
  {
    "subscriptionId": "c6126aa3-0ed8-412f-a988-71e6cee627c4",
    "subscriptionExpirationDateTime": "2022-01-02T03:12:18.2257768+05:30",
-   "changeType": "created",    
+   "changeType": "created",
    "resource": "Users/622eaaff-0683-4862-9de4-f2ec83c2bd98/Messages/AAMkAGUwNjQ4ZjIxAAA=",
-   "resourceData": {      
+   "resourceData": {
      "@odata.type": "#Microsoft.Graph.Message",
      "@odata.id": "Users/622eaaff-0683-4862-9de4-f2ec83c2bd98/Messages/AAMkAGUwNjQ4ZjIAAA=",
      "@odata.etag": "W/\"CQAAABYAAACQ2fKdhq8oSKEDSVrdi3lRAAGDUUXn\"",
@@ -234,7 +234,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -284,7 +284,7 @@ The following example subscribes to notifications with resource data for a messa
 POST https://graph.microsoft.com/beta/subscriptions
 Content-type: application/json
 
-{ 
+{
     "changeType": "created",
     "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
     "resource": "users/622eaaff-0683-4862-9de4-f2ec83c2bd98/messages?$select=Subject,bodyPreview,importance,receivedDateTime,from",
@@ -301,7 +301,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/create-subscription-withresourcedata-for-message-resource-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -332,7 +332,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -382,7 +382,7 @@ The following example subscribes to notifications with resource data for a messa
 POST https://graph.microsoft.com/beta/subscriptions
 Content-type: application/json
 
-{ 
+{
     "changeType": "created",
     "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
     "resource": "me/mailfolders('Drafts')/messages?$select=Subject,bodyPreview&$filter=hasAttachments eq true AND importance eq 'High'",
@@ -399,7 +399,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [CLI](#tab/cli)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/cli/beta/create-subscription-withresourcedata-for-message-resource-basedonfilter-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -419,7 +419,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/beta/create-subscription-withresourcedata-for-message-resource-basedonfilter-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -430,7 +430,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

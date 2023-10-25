@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update the properties of a [todoTaskList](../resources/todotasklist.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -42,7 +44,7 @@ PATCH /users/{id|userPrincipalName}/todo/lists/{todoTaskListId}/tasks
 ## Request body
 In the request body, supply a JSON representation of the [todoTaskList](../resources/todotasklist.md) object.
 
-The following table shows the properties that are required when you create the [todoTaskList](../resources/todotasklist.md).
+The following table lists the properties that are required when you create the [todoTaskList](../resources/todotasklist.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -76,6 +78,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-todotasklist-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-todotasklist-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

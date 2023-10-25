@@ -15,6 +15,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Get a list of workflow resources that are associated with lifecycle workflows.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +41,7 @@ GET /identityGovernance/lifecycleWorkflows/workflows
 
 ## Optional query parameters
 
-This method supports the `$search`, `$orderBy`, and `$filter` OData query parameters to help customize the response. `$expand` is supported by the **createdBy** and **lastModifiedBy** relationships only. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports the `$search`, `$orderby`, and `$filter` OData query parameters to help customize the response. `$expand` is supported by the **createdBy** and **lastModifiedBy** relationships only. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -49,7 +51,7 @@ This method supports the `$search`, `$orderBy`, and `$filter` OData query parame
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -75,6 +77,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-workflow-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-list-workflow-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -105,7 +111,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -210,6 +216,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-list-workflow-select-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-list-workflow-select-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-list-workflow-select-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -237,7 +247,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/workf
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Delete a [browserSite](../resources/browsersite.md) from a [browserSiteList](../resources/browsersitelist.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -39,7 +41,7 @@ DELETE /admin/edge/internetExplorerMode/siteLists/{browserSiteListId}/sites/{bro
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -65,6 +67,10 @@ DELETE https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteList
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-browsersite-e1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-browsersite-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -94,7 +100,7 @@ DELETE https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteList
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -121,6 +127,10 @@ DELETE https://graph.microsoft.com/beta/admin/edge/internetExplorerMode/siteList
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-browsersite-e2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-browsersite-e2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

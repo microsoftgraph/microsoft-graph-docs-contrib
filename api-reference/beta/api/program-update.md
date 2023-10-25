@@ -1,10 +1,10 @@
 ---
 title: "Update program (deprecated)"
-description: "In the Azure AD access reviews feature, update an existing program object."
+description: "In the Microsoft Entra access reviews feature, update an existing program object."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
-author: "markwahl-msft"
+author: "shubhamguptacal"
 ---
 
 # Update program (deprecated)
@@ -15,7 +15,10 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, update an existing [program](../resources/program.md) object.
+In the Microsoft Entra [access reviews](../resources/accessreviews-root.md) feature, update an existing [program](../resources/program.md) object.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -74,6 +77,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-program-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-program-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-program-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -120,10 +127,10 @@ Content-type: application/json
 
 ## See also
 
-| Method		   | Return Type	|Description|
+| Method           | Return Type    |Description|
 |:---------------|:--------|:----------|
-|[List programControls of a program](program-listcontrols.md) |		[programControl](../resources/programcontrol.md) collection|	Get a collection of the controls of a program.|
-|[Create programControl](programcontrol-create.md) |		[programControl](../resources/programcontrol.md)	|	Add a programControl to a program.|
+|[List programControls of a program](program-listcontrols.md) |        [programControl](../resources/programcontrol.md) collection|    Get a collection of the controls of a program.|
+|[Create programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |    Add a programControl to a program.|
 
 <!--
 {
@@ -136,5 +143,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

@@ -1,7 +1,7 @@
 ---
 title: "Get userFlowLanguagePage"
 description: "Read the values in a userFlowLanguagePage object for a language in a user flow."
-author: "jkdouglas"
+author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -12,6 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Read the values in a [userFlowLanguagePage](../resources/userflowlanguagepage.md) object for a language in a user flow. These values are shown to a user during a user journey defined by a user flow.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -50,7 +52,7 @@ GET /identity/b2xUserFlows/{id}/languages/{id}/overridesPages/{id}/$value
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -60,7 +62,7 @@ If successful, this method returns a `200 OK` response code and a [userFlowLangu
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -111,7 +113,7 @@ GET https://graph.microsoft.com/v1.0/identity/b2xUserFlows/B2X_1_Partner/languag
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

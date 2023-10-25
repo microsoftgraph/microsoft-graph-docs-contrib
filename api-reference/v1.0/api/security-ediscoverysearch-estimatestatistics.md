@@ -13,6 +13,8 @@ Namespace: microsoft.graph.security
 Run an estimate of the number of emails and documents in the eDiscovery search. To learn more about searches in eDiscovery, see [Collect data for a case in eDiscovery (Premium)](/microsoft-365/compliance/collecting-data-for-ediscovery).
 
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -38,7 +40,7 @@ POST /security/cases/ediscoveryCases/{ediscoveryCaseId}/searches/{ediscoverySear
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -95,7 +97,7 @@ POST https://graph.microsoft.com/v1.0/security/cases/ediscoveryCases/b0073e4e-41
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

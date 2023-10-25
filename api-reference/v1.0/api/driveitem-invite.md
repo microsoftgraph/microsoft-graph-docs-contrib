@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Send an invite to access an item
 ms.localizationpriority: medium
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Sends a sharing invitation for a **driveItem**.
 A sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

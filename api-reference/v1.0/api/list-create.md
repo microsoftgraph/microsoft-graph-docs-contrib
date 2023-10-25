@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: Create a SharePoint List
 ms.localizationpriority: medium
 ms.prod: "sharepoint"
@@ -11,6 +11,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Create a new [list][] in a [site][].
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -43,7 +45,7 @@ In the request body, supply a JSON representation of a [list][] object.
 
 ## Response
 
-If successful, this method returns a `201 Created` response code and a [list][] object in the response body. 
+If successful, this method returns a `201 Created` response code and a [list][] object in the response body.
 
 ## Examples
 
@@ -118,7 +120,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object is truncated for clarity. Default properties will be returned from the actual call.
 

@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 Get a specific thread that belongs to a group. You can specify both the parent conversation and the thread, or, 
 you can specify the thread without referencing the parent conversation. 
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -39,7 +42,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -61,6 +64,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-conversationthread-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-conversationthread-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-conversationthread-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -75,6 +82,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/threads/{id}
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/get-conversationthread-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-conversationthread-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

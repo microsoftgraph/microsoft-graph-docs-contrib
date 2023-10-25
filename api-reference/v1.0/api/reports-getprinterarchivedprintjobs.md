@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Get a list of archived print jobs that were queued for particular [printer](../resources/printer.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -30,7 +32,7 @@ In addition to the following permissions, the user's tenant must have an active 
 }
 -->
 ``` http
-GET /reports/getPrinterArchivedPrintJobs
+GET /reports/getPrinterArchivedPrintJobs(printerId='{printerId}',startDateTime='{startDateTime}',endDateTime='{endDateTime}')
 ```
 
 ## Function parameters
@@ -50,7 +52,7 @@ In the request URL, provide the following function parameters with values:
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

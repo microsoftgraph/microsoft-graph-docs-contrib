@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [conditionalAccessTemplate](../resources/conditionalaccesstemplate.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -43,7 +45,7 @@ This method supports the `$select` OData query parameter to help customize the r
 | Accept-Language | Language. Optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -68,6 +70,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/templates/c75034
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-conditionalaccesstemplate-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-conditionalaccesstemplate-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -97,7 +103,7 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/templates/c75034
 ---
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -189,6 +195,10 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/templates/c75034
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-conditionalaccesstemplate-select-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-conditionalaccesstemplate-select-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-conditionalaccesstemplate-select-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -216,7 +226,7 @@ GET https://graph.microsoft.com/beta/identity/conditionalAccess/templates/c75034
 ---
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

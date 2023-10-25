@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Clear the preferred availability and activity status for a user.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 The following permission is required to call the API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -56,11 +58,6 @@ The following is an example of a request that clears the preferred availability 
 
 ```msgraph-interactive
 POST https://graph.microsoft.com/v1.0/users/fa8bf3dc-eca7-46b7-bad1-db199b62afc3/presence/clearUserPreferredPresence
-Content-Type: application/json
-
-{
-
-}
 ```
 
 # [C#](#tab/csharp)
@@ -99,7 +96,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 description: "The Image resource groups image-related properties into a single structure."
 ms.date: 09/10/2017
 title: Image

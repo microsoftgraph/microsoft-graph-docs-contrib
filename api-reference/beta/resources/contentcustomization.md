@@ -1,7 +1,7 @@
 ---
 title: "contentCustomization resource type"
 description: "Contains details of the various content options for a tenant."
-author: "AlexanderMars"
+author: "quievey"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType

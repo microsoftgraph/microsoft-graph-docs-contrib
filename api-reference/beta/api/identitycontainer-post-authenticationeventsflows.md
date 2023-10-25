@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Create a new [authenticationEventsFlow](../resources/authenticationeventsflow.md) object that is of the type specified in the request body. You can create only an [externalUsersSelfServiceSignupEventsFlow](../resources/externalusersselfservicesignupeventsflow.md) object type.
 
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -54,8 +56,8 @@ You can specify the following properties when creating an **authenticationEvents
 |priority|Int32|Optional. The priority to use for each individual event of the events policy. If multiple competing listeners for an event have the same priority, one is chosen and an error is silently logged. Default is 500. |
 |onInteractiveAuthFlowStart|[onInteractiveAuthFlowStartHandler](../resources/oninteractiveauthflowstarthandler.md)|Required. The configuration for what to invoke when an authentication flow is ready to be initiated. |
 |onAuthenticationMethodLoadStart|[onAuthenticationMethodLoadStartHandler](../resources/onauthenticationmethodloadstarthandler.md)|Required. The configuration for what to invoke when authentication methods are ready to be presented to the user. Must have at least one identity provider linked.|
-|onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|The configuration for what to invoke when attributes are ready to be collected from the user.|
-|onUserCreateStart|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|The configuration for what to invoke during user creation.|
+|onAttributeCollection|[onAttributeCollectionHandler](../resources/onattributecollectionhandler.md)|Optional. The configuration for what to invoke when attributes are ready to be collected from the user.|
+|onUserCreateStart|[onUserCreateStartHandler](../resources/onusercreatestarthandler.md)|Optional. The configuration for what to invoke during user creation.|
 
 ## Response
 
@@ -63,7 +65,9 @@ If successful, this method returns a `201 Created` response code and a JSON repr
 
 ## Examples
 
-### Example 1: Create a basic External Identities sign-up and sign-in user flow on an Azure AD customer tenant
+<a name='example-1-create-a-basic-external-identities-sign-up-and-sign-in-user-flow-on-an-azure-ad-customer-tenant'></a>
+
+### Example 1: Create a basic External Identities sign-up and sign-in user flow on a Microsoft Entra customer tenant
 
 #### Request
 The following is an example of a request. In this example, you create a user flow named "Woodgrove User Flow" with the following configuration.
@@ -152,6 +156,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationeventsflow-selfservicesignup-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-authenticationeventsflow-selfservicesignup-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-authenticationeventsflow-selfservicesignup-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -179,7 +187,7 @@ Content-Type: application/json
 ---
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -251,7 +259,9 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Create a basic external identities sign-up and sign-in user flow with an attached application on an Azure AD customer tenant
+<a name='example-2-create-a-basic-external-identities-sign-up-and-sign-in-user-flow-with-an-attached-application-on-an-azure-ad-customer-tenant'></a>
+
+### Example 2: Create a basic external identities sign-up and sign-in user flow with an attached application on a Microsoft Entra customer tenant
 
 #### Request
 The following is an example of a request. In this example, you create a user flow named "Woodgrove User Flow" with the following configuration.
@@ -349,6 +359,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationeventsflow-selfservicesignup-includeapplications-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-authenticationeventsflow-selfservicesignup-includeapplications-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-authenticationeventsflow-selfservicesignup-includeapplications-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -376,7 +390,7 @@ Content-Type: application/json
 ---
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -565,6 +579,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-authenticationeventsflow--selfservicesignup-socialproviders-customattribute-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-authenticationeventsflow--selfservicesignup-socialproviders-customattribute-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-authenticationeventsflow--selfservicesignup-socialproviders-customattribute-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -592,7 +610,7 @@ Content-Type: application/json
 ---
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

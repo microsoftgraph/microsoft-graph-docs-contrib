@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Get a list of the [unifiedRoleManagementAlert](../resources/unifiedrolemanagementalert.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -44,7 +46,7 @@ This method supports the `$select`, `$filter`, and `$expand` OData query paramet
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -52,7 +54,9 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Request
+### Example 1: Get all alerts and expand the relationships
+
+#### Request
 The following is an example of a request.
 # [HTTP](#tab/http)
 <!-- {
@@ -66,6 +70,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ale
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-unifiedrolemanagementalert-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-unifiedrolemanagementalert-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -94,8 +102,8 @@ GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/ale
 
 ---
 
-### Response
-The following is an example of the response
+#### Response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -164,3 +172,55 @@ Content-Type: application/json
 }
 ```
 
+### Example 2: Get all alerts where the alert configuration is disabled and expand all the relationships
+
+#### Request
+
+```http
+GET https://graph.microsoft.com/beta/identityGovernance/roleManagementAlerts/alerts?$filter=scopeId eq '/' and scopeType eq 'DirectoryRole' and alertConfiguration/isEnabled eq false&$expand=*
+```
+
+#### Response
+
+```http
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/roleManagementAlerts/alerts(alertConfiguration(),alertDefinition(),alertIncidents())",
+    "value": [
+        {
+            "id": "DirectoryRole_38d49456-54d4-455d-a8d6-c383c71e0a6d_SequentialActivationRenewalsAlert",
+            "alertDefinitionId": "DirectoryRole_38d49456-54d4-455d-a8d6-c383c71e0a6d_SequentialActivationRenewalsAlert",
+            "scopeId": "/",
+            "scopeType": "DirectoryRole",
+            "incidentCount": 0,
+            "isActive": false,
+            "lastModifiedDateTime": "0001-01-01T08:00:00Z",
+            "lastScannedDateTime": "2023-06-19T16:30:55.887Z",
+            "alertConfiguration": {
+                "@odata.type": "#microsoft.graph.sequentialActivationRenewalsAlertConfiguration",
+                "id": "DirectoryRole_38d49456-54d4-455d-a8d6-c383c71e0a6d_SequentialActivationRenewalsAlert",
+                "alertDefinitionId": "DirectoryRole_38d49456-54d4-455d-a8d6-c383c71e0a6d_SequentialActivationRenewalsAlert",
+                "scopeType": "DirectoryRole",
+                "scopeId": "/",
+                "isEnabled": false,
+                "timeIntervalBetweenActivations": "PT10S",
+                "sequentialActivationCounterThreshold": 3
+            },
+            "alertDefinition": {
+                "id": "DirectoryRole_38d49456-54d4-455d-a8d6-c383c71e0a6d_SequentialActivationRenewalsAlert",
+                "displayName": "Roles are being activated too frequently",
+                "scopeType": "DirectoryRole",
+                "scopeId": "/",
+                "description": "{0} multiple activations for a privileged role were made by the same user",
+                "severityLevel": "medium",
+                "securityImpact": "Multiple activations to the same privileged role by the same user is a sign of an attack.",
+                "mitigationSteps": "Review the users in the list and ensure that the activation duration for their privileged role is set long enough for them to perform their tasks.",
+                "howToPrevent": "·Ensure that the activation duration for privileged roles is set long enough for users to perform their tasks.·Require multi-factor authentication for privileged roles that have accounts shared by multiple administrators.",
+                "isRemediatable": false,
+                "isConfigurable": true
+            },
+            "alertIncidents@odata.context": "https://graph.microsoft.com/beta/$metadata#identityGovernance/roleManagementAlerts/alerts('DirectoryRole_38d49456-54d4-455d-a8d6-c383c71e0a6d_SequentialActivationRenewalsAlert')/alertIncidents",
+            "alertIncidents": []
+        }
+    ]
+}
+```

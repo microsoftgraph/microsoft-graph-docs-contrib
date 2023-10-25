@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Delete calendarPermission.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,17 +52,17 @@ DELETE /users/{id}/events/{id}/calendar/calendarPermissions/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204, No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -96,6 +98,10 @@ DELETE https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/
 [!INCLUDE [sample-code](../includes/snippets/php/delete-calendarpermission-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-calendarpermission-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-calendarpermission-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -104,7 +110,7 @@ DELETE https://graph.microsoft.com/v1.0/users/{id}/calendar/calendarPermissions/
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

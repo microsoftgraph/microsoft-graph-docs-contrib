@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [partner-specific](../resources/crosstenantaccesspolicyconfigurationpartner.md) configuration.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,7 +46,7 @@ GET /policies/crossTenantAccessPolicy/partners/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -67,6 +69,10 @@ GET https://graph.microsoft.com/beta/policies/crossTenantAccessPolicy/partners/9
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-crosstenantaccesspolicyconfigurationpartner-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-crosstenantaccesspolicyconfigurationpartner-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -112,6 +118,7 @@ Content-Type: application/json
 {
   "tenantId": "9c5d131d-b1c3-4fc4-9e3f-c6557947d551",
   "inboundTrust": null,
+  "isInMultiTenantOrganization": false,
   "automaticUserConsentSettings":
   {
     "inboundAllowed": null,

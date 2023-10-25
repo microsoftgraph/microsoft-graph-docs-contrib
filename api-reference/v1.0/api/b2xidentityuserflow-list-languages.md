@@ -1,7 +1,7 @@
 ---
 title: "List languages"
 description: "Retrieve a list of languages supported for customization within a B2X user flow."
-author: "jkdouglas"
+author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -12,6 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Retrieve a list of languages supported for customization in a B2X user flow.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -47,7 +49,7 @@ GET /identity/b2xUserFlows/{id}/languages
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

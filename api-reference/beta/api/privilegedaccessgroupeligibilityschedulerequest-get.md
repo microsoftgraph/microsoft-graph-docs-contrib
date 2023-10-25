@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [privilegedAccessGroupEligibilityScheduleRequest](../resources/privilegedaccessgroupeligibilityschedulerequest.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -44,7 +46,7 @@ This method supports the `$select` and `$expand` OData query parameters to help 
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -68,6 +70,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/e
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-privilegedaccessgroupeligibilityschedulerequest-beta-e1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-privilegedaccessgroupeligibilityschedulerequest-beta-e1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -97,7 +103,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/e
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -157,6 +163,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/e
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-privilegedaccessgroupeligibilityschedulerequest-beta-e2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-privilegedaccessgroupeligibilityschedulerequest-beta-e2-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-privilegedaccessgroupeligibilityschedulerequest-beta-e2-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -184,7 +194,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/privilegedAccess/group/e
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

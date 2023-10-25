@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of domain objects.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -32,7 +34,7 @@ The work or school account needs to belong to one of the following roles:
 * Service Support Administrator
 * Billing Administrator
 * Mailbox Administrator
-* Partner Tier1 Support
+* Partner Tier 1 Support
 * Partner Tier2 Support
 * Directory Readers
 * Directory Writers
@@ -85,7 +87,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Accept         | application/json; |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -105,6 +107,10 @@ GET https://graph.microsoft.com/beta/domains
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-domains-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-domains-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

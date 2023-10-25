@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 
 Remove an [educationCategory](../resources/educationcategory.md) from an [educationAssignment](../resources/educationassignment.md). Only teachers can perform this operation.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -36,14 +38,14 @@ DELETE /education/classes/{id}/assignments/{id}/categories/{id}/$ref
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `204 No Content` response code.
 
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 <!-- {
   "blockType": "ignored",
   "name": "add_educationcategory_to_educationassignment",
@@ -54,7 +56,7 @@ DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/1900
 ```
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 
 <!-- {
   "blockType": "ignored",

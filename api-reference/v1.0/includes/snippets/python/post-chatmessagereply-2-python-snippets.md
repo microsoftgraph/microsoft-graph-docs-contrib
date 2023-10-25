@@ -4,33 +4,25 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ChatMessage()
-request_body.createdDateTime = DateTime('2019-02-04T19:58:15.511Z')
+graph_client = GraphServiceClient(request_adapter)
 
-from = ChatMessageFromIdentitySet()
-fromuser = Identity()
-fromuser.id = '8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca'
+request_body = ChatMessage(
+	created_date_time = "2019-02-04T19:58:15.511Z",
+	from = ChatMessageFromIdentitySet(
+		user = Identity(
+			id = "8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca",
+			display_name = "John Doe",
+		),
+	),
+	body = ItemBody(
+		content_type = BodyType.Html,
+		content = "Hello World",
+	),
+)
 
-fromuser.display_name = 'John Doe'
-
-
-from.user = fromuser
-
-request_body.from = from
-body = ItemBody()
-body.contenttype(BodyType.Html('bodytype.html'))
-
-body.content = 'Hello World'
-
-
-request_body.body = body
-
-
-
-result = await client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').messages.by_message_id('chatMessage-id').replies.post(request_body = request_body)
+result = await graph_client.teams.by_team_id('team-id').channels.by_channel_id('channel-id').messages.by_message_id('chatMessage-id').replies.post(body = request_body)
 
 
 ```

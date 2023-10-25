@@ -12,14 +12,16 @@ Namespace: microsoft.graph
 
 In PIM, read the details of a request for an active and persistent role assignment made through the [unifiedRoleAssignmentScheduleRequest](../resources/unifiedroleassignmentschedulerequest.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Delegated (work or school account)|RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|RoleManagement.ReadWrite.Directory|
+|Application|RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -40,7 +42,7 @@ This method supports the `$select` and `$expand` OData query parameters to help 
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

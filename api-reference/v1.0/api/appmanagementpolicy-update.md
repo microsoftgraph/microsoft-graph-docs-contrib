@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Update an [appManagementPolicy](../resources/appmanagementpolicy.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,6 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (work or school account)     | Policy.ReadWrite.ApplicationConfiguration   |
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Policy.ReadWrite.ApplicationConfiguration   |
+
+[!INCLUDE [rbac-app-auth-method-policy-apis](../includes/rbac-for-apis/rbac-app-auth-method-policy-apis.md)]
 
 ## HTTP request
 
@@ -57,7 +61,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -105,7 +109,7 @@ PATCH https://graph.microsoft.com/v1.0/policies/appManagementPolicies/{id}
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a single [message](../resources/chatmessage.md) or a [message reply](../resources/chatmessage.md) in a [channel](../resources/channel.md) or a [chat](../resources/chat.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -63,7 +65,7 @@ This method does not support the [OData query parameters](/graph/query-parameter
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -73,7 +75,7 @@ If successful, this method returns a `200 OK` response code and a [chatmessage](
 
 ### Example 1: Get a message in a chat
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -176,7 +178,7 @@ Content-type: application/json
 
 ### Example 2: Get a message in a channel
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -214,7 +216,7 @@ GET https://graph.microsoft.com/v1.0/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-chatmessagechannel-2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -282,7 +284,7 @@ Content-type: application/json
 
 ### Example 3: Get reply to a message in a channel
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

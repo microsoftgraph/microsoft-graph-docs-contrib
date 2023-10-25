@@ -3,7 +3,7 @@ title: "Update policyRule"
 description: "Update an existing forwarding rule within a forwarding policy."
 author: Moti-ba
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
@@ -13,6 +13,8 @@ Namespace: microsoft.graph.networkaccess
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Update an existing forwarding rule within a forwarding policy.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -72,6 +74,10 @@ PATCH https://graph.microsoft.com/beta/networkAccess/forwardingPolicies/{forward
 [!INCLUDE [sample-code](../includes/snippets/csharp/update-policyrule-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/update-policyrule-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/update-policyrule-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -87,7 +93,7 @@ PATCH https://graph.microsoft.com/beta/networkAccess/forwardingPolicies/{forward
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

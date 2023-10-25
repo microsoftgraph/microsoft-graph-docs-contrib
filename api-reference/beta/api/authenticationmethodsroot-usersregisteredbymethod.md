@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get the number of users registered for each authentication method.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -64,7 +66,7 @@ The value `privilegedAdmin` consists of the following privileged admin roles:
 * User Administrator
 * Authentication Administrator
 
-The value `admin` includes all Azure Active Directory admin roles.
+The value `admin` includes all Microsoft Entra admin roles.
 
 ## Request headers
 
@@ -74,7 +76,7 @@ The value `admin` includes all Azure Active Directory admin roles.
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -84,7 +86,7 @@ If successful, this function returns a `200 OK` response code and a [userRegistr
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -95,6 +97,10 @@ The following is an example of the request.
 ``` http
 GET https://graph.microsoft.com/beta/reports/authenticationMethods/usersRegisteredByMethod(includedUserTypes='all',includedUserRoles='all')
 ```
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/authenticationmethodsroot-usersregisteredbymethod-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
 [!INCLUDE [sample-code](../includes/snippets/java/authenticationmethodsroot-usersregisteredbymethod-java-snippets.md)]
@@ -108,7 +114,7 @@ GET https://graph.microsoft.com/beta/reports/authenticationMethods/usersRegister
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

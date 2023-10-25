@@ -15,7 +15,9 @@ Namespace: microsoft.graph
 
 Reset the sync of a specific school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.
 
-> **Note:** This operation will cause synchronization to restart. Any errors encountered will be deleted. No data will be deleted from Azure Active Directory (Azure AD). 
+> **Note:** This operation will cause synchronization to restart. Any errors encountered will be deleted. No data will be deleted from Microsoft Entra ID. 
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,13 +40,13 @@ POST /education/synchronizationProfiles/{id}/reset
 | Authorization  | string  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code.
 
 ## Example
 ##### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -57,6 +59,10 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/res
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/post-educationsynchronizationprofile-reset-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/post-educationsynchronizationprofile-reset-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -107,5 +113,3 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
-
-

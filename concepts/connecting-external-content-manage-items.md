@@ -20,7 +20,7 @@ An **externalItem** has three key components: access control list, properties, a
 
 ### Access control list
 
-The access control list (ACL) is used to specify whether the given roles are granted or denied access to view items in Microsoft experiences. The ACL is an array of access control entries, each representing an Azure Active Directory (Azure AD) user or group. A third access control entry type `Everyone` represents all the users in the tenant.
+The access control list (ACL) is used to specify whether the given roles are granted or denied access to view items in Microsoft experiences. The ACL is an array of access control entries, each representing a Microsoft Entra user or group. A third access control entry type `Everyone` represents all the users in the tenant.
 
 ![An example access control list.](./images/connectors-images/connecting-external-content-manage-items-acl.png)
 
@@ -30,7 +30,7 @@ The **accessType** value `deny` takes precedence over `grant`. For example, in t
 
 If your data source has non-Azure AD groups (such as teams within your helpdesk system) that are used to set permissions for the item, you can create external groups in Microsoft Graph by using the group sync APIs to replicate the `allow` or `deny` permissions. Avoid expanding the membership of your external groups directly into the ACLs of individual items because each group membership can lead to a high volume of item updates.
 
-External groups can consist of another external group, Azure AD users, and Azure AD groups. If you have non-Azure AD users, you must translate them to Azure AD users in your ACL.
+External groups can consist of another external group, Microsoft Entra users, and Microsoft Entra groups. If you have non-Azure AD users, you must translate them to Microsoft Entra users in your ACL.
 
 ### Properties
 
@@ -92,7 +92,7 @@ Content-Type: application/json
 ## Add activities to an item
 To add activities to an item, you call the [addActivities](/graph/api/externalconnectors-externalitem-addactivities) endpoint, with the same unique identifier for that item in the URL.
 
-For example, if Joe Bloggs with Azure AD ID `18948b93-d3ed-4307-9981-10fc36a08a52` commented on the helpdesk ticket with ticket number `SR00145` on April 11, 2022 at 4:25PM, the request to send that activity might look like the following.
+For example, if someone with Microsoft Entra ID `18948b93-d3ed-4307-9981-10fc36a08a52` commented on the helpdesk ticket with ticket number `SR00145` on April 11, 2022 at 4:25PM, the request to send that activity might look like the following.
 
 ```http
 POST /external/connections/contosohelpdesk/items/SR00145/addActivities
@@ -109,6 +109,8 @@ Content-Type: application/json
   }
 ]
 ```
+
+You can also add an activity to an item in the same request that creates the item. Add the activity as another entity, just like `acl` and `content`. If you choose to add an activity this way, include the `@odata.type` for the activity, or the request will fail. Activities with timestamps older than seven days won't surface in the Microsoft 365 app. End users can only see activities in the Microsoft 365 app for items they have access to and have an activity on (for example, shared with them, created, edited, and so on).
 
 ## Update an item
 

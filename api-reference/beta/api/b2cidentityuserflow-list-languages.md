@@ -15,6 +15,8 @@ Retrieve a list of languages supported for customization in an Azure AD B2C user
 
 **Note:** To retrieve a list of languages supported for customization, you must first enable language customization on your Azure AD B2C user flow. For more information, see [Update b2cIdentityUserFlow](../api/b2cidentityuserflow-update.md).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -53,7 +55,7 @@ This method supports the `$filter` query parameter to show only the enabled lang
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -65,7 +67,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -82,6 +84,10 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSignUp/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-userflowlanguageconfiguration-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-userflowlanguageconfiguration-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -112,7 +118,7 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSignUp/
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -147,7 +153,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -164,6 +170,10 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSignUp/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-userflowlanguageconfiguration-filter-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-userflowlanguageconfiguration-filter-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -194,7 +204,7 @@ GET https://graph.microsoft.com/beta/identity/b2cUserFlows/B2C_1_CustomerSignUp/
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 <!-- {

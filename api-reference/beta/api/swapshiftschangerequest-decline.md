@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Decline a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md) object.
 
+>**Note:** Only the recipient of the request can decline a [swapShiftsChangeRequest](../resources/swapshiftschangerequest.md).
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,7 +53,7 @@ In the request body, provide a JSON object with the following parameters.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -88,7 +90,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->
@@ -106,5 +108,3 @@ HTTP/1.1 204 NO CONTENT
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

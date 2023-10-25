@@ -1,5 +1,5 @@
 ---
-author: "JeremyKelley"
+author: "spgraph-docs-team"
 title: "Get bundle"
 description: "Get a bundle of driveItems."
 ms.localizationpriority: medium
@@ -12,6 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
+
+[!INCLUDE [national-cloud-support](../../includes/global-china.md)]
 
 ## Permissions
 
@@ -45,7 +47,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -104,7 +106,7 @@ GET https://graph.microsoft.com/v1.0/drive/bundles/{bundle-id}
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -183,7 +185,7 @@ GET https://graph.microsoft.com/v1.0/drive/items/{bundle-id}?expand=children
 
 #### Response
 
-The following is an example of the response. This call will return the bundle metadata and a list of children of the bundle.
+The following example shows the response. This call will return the bundle metadata and a list of children of the bundle.
 If the bundle has no children, it will return an empty collection.
 
 If the number of children in the bundle is greater than the default page size, the **children@odata.nextLink** property will be returned with a URL that can be

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [person](../resources/person.md) objects ordered by their relevance to the [user](../resources/user.md), which is determined by the user's communication and collaboration patterns, and business relationships.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,7 +46,7 @@ This method supports the following OData query parameters to help customize the 
 |$orderby|string|By default the people in the response are sorted by their relevance to your query. You can change the order of the people in the response using the *$orderby* parameter.|
 |$search|string|Search for people by name or alias. Supports Fuzzy matching. Parameter only works for searching the signed-in user's relevant people, not for searching people relevant to other users. Also supports the `topic` keyword to find people based on topics extracted from e-mail conversations with that person. For information and examples, see the *Perform a fuzzy search* section at [Use the People API to get information about the people most relevant to you](/graph/people-insights-overview#perform-a-fuzzy-search).|
 |$select|string|Comma-separated list of properties to include in the response. For optimal performance, only select the subset of properties needed.|
-|$skip|int|Skip the first n results, useful for paging. This is not supported when using *$search*.|
+|$skip|int|Skip the first n results, useful for paging. Skipping is not supported when using *$search*.|
 |$top|int|The maximum number of results to be returned on a results page. For more information, see [top parameter](/graph/query-parameters?tabs=http#top-parameter).|
 
 ## Request headers
@@ -56,7 +58,7 @@ This method supports the following OData query parameters to help customize the 
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -88,6 +90,10 @@ GET https://graph.microsoft.com/beta/me/people
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-person-collection-beta-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-person-collection-beta-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-person-collection-beta-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -116,7 +122,7 @@ GET https://graph.microsoft.com/beta/me/people
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
@@ -208,7 +214,7 @@ Content-type: application/json
 
 #### Requesting a subsequent page of people
 
-If the first response does not contain the complete list of relevant people, you can make a second request using *$top* and *$skip* to request additional pages of information. If the previous request has additional information, the following request gets the next page of people from the server.
+If the first response does not contain the complete list of relevant people, you can make a second request using *$top* and *$skip* to request more pages of information. If the previous request has additional information, the following request gets the next page of people from the server.
 
 ```http
 GET https://graph.microsoft.com/beta/me/people/?$top=10&$skip=10

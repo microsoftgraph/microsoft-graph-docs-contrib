@@ -15,14 +15,16 @@ In PIM, retrieve the requests for active role assignments for a particular princ
 > [!NOTE]
 > This API doesn't return active role assignments through group memberships.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|RoleAssignmentSchedule.Read.Directory, RoleManagement.Read.Directory, RoleManagement.Read.All, RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
+|Delegated (work or school account)|RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|RoleManagement.Read.Directory, RoleManagement.Read.All, RoleManagement.ReadWrite.Directory|
+|Application|RoleAssignmentSchedule.ReadWrite.Directory, RoleManagement.ReadWrite.Directory|
 
 ## HTTP request
 
@@ -36,7 +38,7 @@ GET /roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that are required with this function.
+The following table lists the parameters that are required when you call this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -53,7 +55,7 @@ This method supports the `$select`, `$filter`, and `$expand` OData query paramet
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

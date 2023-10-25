@@ -1,7 +1,7 @@
 ---
 title: "Get mailFolder"
 description: "Retrieve the properties and relationships of a message folder object."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: medium
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -19,6 +19,8 @@ The following list shows the two existing scenarios where an app can get another
 
 * If the app has application permissions, or,
 * If the app has the appropriate delegated [permissions](#permissions) from one user, and another user has shared a mail folder with that user, or, has given delegated access to that user. For more details, see [Get Outlook messages in a shared or delegated folder](/graph/outlook-share-messages-folders).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -51,7 +53,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -79,6 +81,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mailfolder-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-mailfolder-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -111,7 +117,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -159,6 +165,10 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzN
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-mailsearchfolder-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-mailsearchfolder-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-mailsearchfolder-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -187,7 +197,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzN
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

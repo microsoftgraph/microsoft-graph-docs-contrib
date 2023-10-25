@@ -15,6 +15,8 @@ Namespace: microsoft.graph.callRecords
 
 Get log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-GET /communications/callRecords/getPstnCalls
+GET /communications/callRecords/getPstnCalls(fromDateTime={fromDateTime},toDateTime={toDateTime})
 ```
 
 ## Function parameters
@@ -58,7 +60,7 @@ The following table shows the parameters that can be used with this function.
 ## Response
 
 If successful, this function returns a `200 OK` response code and a collection of [pstnCallLogRow](../resources/callrecords-pstncalllogrow.md) entries in the response body.
-  
+
 If there are more than 1000 entries in the date range, the body also includes an `@odata.NextLink` with a URL to query the next page of call entries. The last page in the date range does not have `@odata.NextLink`. For more information, see [paging Microsoft Graph data in your app](/graph/paging).
 
 ## Example
@@ -80,6 +82,10 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fro
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/callrecord-getpstncalls-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/callrecord-getpstncalls-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -105,7 +111,7 @@ GET https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(fro
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

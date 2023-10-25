@@ -4,33 +4,24 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = ItemAddress()
-request_body.display_name = 'Home'
+graph_client = GraphServiceClient(request_adapter)
 
-detail = PhysicalAddress()
-detail.type(PhysicalAddressType.Home('physicaladdresstype.home'))
+request_body = ItemAddress(
+	display_name = "Home",
+	detail = PhysicalAddress(
+		type = PhysicalAddressType.Home,
+		post_office_box = None,
+		street = "221B Baker Street",
+		city = "London",
+		state = None,
+		country_or_region = "United Kingdom",
+		postal_code = "E14 3TD",
+	),
+)
 
-detail.postOfficeBox=null
-
-detail.street = '221B Baker Street'
-
-detail.city = 'London'
-
-detail.state=null
-
-detail.country_or_region = 'United Kingdom'
-
-detail.postal_code = 'E14 3TD'
-
-
-request_body.detail = detail
-
-
-
-result = await client.me.profile.addresses.post(request_body = request_body)
+result = await graph_client.me.profile.addresses.post(body = request_body)
 
 
 ```

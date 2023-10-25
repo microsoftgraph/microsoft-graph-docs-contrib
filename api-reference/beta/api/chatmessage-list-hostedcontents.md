@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) objects from a message. This API only lists the hosted content objects. To get the content bytes, see [get chatmessage hosted content](chatmessagehostedcontent-get.md)
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 ### Permissions for channel
@@ -55,7 +57,7 @@ GET /users/{user-id | user-principal-name}/chats/{chat-id}/messages/{message-id}
 
 ## Optional query parameters
 
-This operation does not support the [OData query parameters](/graph/query-parameters) to customize the response.
+This operation doesn't support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -65,7 +67,7 @@ This operation does not support the [OData query parameters](/graph/query-parame
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -77,7 +79,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -92,6 +94,10 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-hostedcontentschannelmessage-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-hostedcontentschannelmessage-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -122,7 +128,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** `contentBytes` and `contentType` are always set to null.
 
@@ -158,7 +164,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -173,6 +179,10 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-hostedcontentschannelmessage-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-hostedcontentschannelmessage-2-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -203,7 +213,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** `contentBytes` and `contentType` are always set to null.
 
@@ -239,7 +249,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+Here's an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -254,6 +264,10 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-hostedcontentschatmessage-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-hostedcontentschatmessage-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -284,7 +298,7 @@ GET https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@t
 
 #### Response
 
-The following is an example of the response.
+Here's an example of the response.
 
 > **Note:** `contentBytes` and `contentType` are always set to null.
 

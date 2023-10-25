@@ -7,7 +7,7 @@ ms.reviewer: keylimesoda
 ms.prod: "change-notifications"
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.date: 07/19/2023
+ms.date: 08/17/2023
 ---
 
 # Set up notifications for changes in resource data
@@ -52,7 +52,7 @@ You manage the subscription using the [subscription resource type](/graph/api/re
 
 [!INCLUDE [change-notifications-supported-resources-expanded](includes/change-notifications-supported-resources-expanded.md)]
 
-### Subscription lifetime
+## Subscription lifetime
 
 Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time; Otherwise, they need to create a new subscription. Apps can also unsubscribe at any time to stop getting change notifications.
 
@@ -60,7 +60,7 @@ The following table shows the maximum expiration times for subscriptions per res
 
 [!INCLUDE [change-notifications-subscription-lifetime](includes/change-notifications-subscription-lifetime.md)]
 
-### Latency
+## Latency
 
 [!INCLUDE [change-notifications-delivery-latency](includes/change-notifications-delivery-latency.md)]
 
@@ -76,10 +76,6 @@ The following code samples are available on GitHub.
 
 
 ## Deployment resources
-
-- [Get change notifications through webhooks](./change-notifications-delivery-webhooks.md)
-- [Get change notifications through Azure Event Hubs](./change-notifications-delivery-event-hubs.md)
-- [Get change notifications through Azure Event Grid](/azure/event-grid/subscribe-to-graph-api-events?context=graph%2Fcontext)
 - [Rich notifications (notifications with resource data)](./webhooks-with-resource-data.md)
 - [Lifecycle notifications](./webhooks-lifecycle.md)
 - Tutorials

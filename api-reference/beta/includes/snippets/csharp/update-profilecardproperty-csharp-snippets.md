@@ -19,13 +19,13 @@ var requestBody = new ProfileCardProperty
 				new DisplayNameLocalization
 				{
 					LanguageTag = "no-NB",
-					DisplayName = "Kostnads Senter",
+					DisplayName = "Kostnadssenter",
 				},
 			},
 		},
 	},
 };
-var result = await graphClient.Organization["{organization-id}"].Settings.ProfileCardProperties["{profileCardProperty-id}"].PatchAsync(requestBody);
+var result = await graphClient.Admin.People.ProfileCardProperties["{profileCardProperty-id}"].PatchAsync(requestBody);
 
 
 ```

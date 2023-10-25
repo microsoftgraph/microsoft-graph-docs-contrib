@@ -17,6 +17,8 @@ Delete an [accessPackageAssignmentWorkflowExtension](../resources/accesspackagea
 2. Use the access package catalog ID and retrieve the ID of the **accessPackageCustomWorkflowExtension** object that you want to delete by running the [List accessPackageCustomWorkflowExtensions](accesspackagecatalog-list-accesspackagecustomworkflowextensions.md) operation.
 3. Call the [Update accessPackageAssignmentPolicy](accesspackageassignmentpolicy-update.md) operation to remove the custom workflow extension object from the policy. For an example, see [Example 3: Remove the customExtensionStageSettings from a policy](accesspackageassignmentpolicy-update.md#example-3-remove-the-customextensionstagesettings-from-a-policy).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -42,7 +44,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/{catalogI
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -66,6 +68,10 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-accesspackageassignmentworkflowextension-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-accesspackageassignmentworkflowextension-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-accesspackageassignmentworkflowextension-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -82,6 +88,10 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-
 [!INCLUDE [sample-code](../includes/snippets/php/delete-accesspackageassignmentworkflowextension-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-accesspackageassignmentworkflowextension-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-accesspackageassignmentworkflowextension-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -89,7 +99,7 @@ DELETE /identityGovernance/entitlementManagement/accessPackageCatalogs/32efb28c-
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

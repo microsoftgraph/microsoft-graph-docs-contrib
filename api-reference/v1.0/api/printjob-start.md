@@ -12,6 +12,8 @@ Namespace: microsoft.graph
 
 Submits the print job to the associated [printer](../resources/printer.md) or [printerShare](../resources/printershare.md). It will be printed after any existing pending **jobs** are completed, aborted, or canceled.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -39,7 +41,7 @@ POST /print/shares/{printerShareId}/jobs/{printJobId}/start
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and a [printJobStatus](../resources/printjobstatus.md) object in the body.

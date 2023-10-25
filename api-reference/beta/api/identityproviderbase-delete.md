@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 Delete an identity provider resource that is of the type specified by the **id** in the request.
 
-Among the types of providers derived from identityProviderBase, you can currently delete a [socialIdentityProvider](../resources/socialidentityprovider.md) resource in Azure AD. In Azure AD B2C, this operation can currently delete a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource.
+Among the types of providers derived from identityProviderBase, you can currently delete a [socialIdentityProvider](../resources/socialidentityprovider.md) resource in Microsoft Entra ID. In Azure AD B2C, this operation can currently delete a [socialIdentityProvider](../resources/socialidentityprovider.md), [openIdConnectIdentityProvider](../resources/openidconnectidentityprovider.md), or an [appleManagedIdentityProvider](../resources/applemanagedidentityprovider.md) resource.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -46,7 +48,7 @@ DELETE /identity/identityProviders/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -56,7 +58,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -75,6 +77,10 @@ DELETE https://graph.microsoft.com/beta/identity/identityProviders/{id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-identityprovider-for-id-specified-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-identityprovider-for-id-specified-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/delete-identityprovider-for-id-specified-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -91,6 +97,10 @@ DELETE https://graph.microsoft.com/beta/identity/identityProviders/{id}
 [!INCLUDE [sample-code](../includes/snippets/php/delete-identityprovider-for-id-specified-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/delete-identityprovider-for-id-specified-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/delete-identityprovider-for-id-specified-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -99,7 +109,7 @@ DELETE https://graph.microsoft.com/beta/identity/identityProviders/{id}
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 **Note:** The response object shown here might be shortened for readability.
 

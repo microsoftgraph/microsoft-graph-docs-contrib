@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Get Special Folders
 ms.localizationpriority: medium
@@ -19,6 +19,8 @@ Special folders are automatically created the first time an application attempts
 
 > **Note:**  If you have read-only permissions and request a special folder that doesn't exist, you'll receive a `403 Forbidden` error.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -27,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------- |
 | Delegated (work or school account)     | Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                            |
 | Delegated (personal Microsoft account) | Files.ReadWrite.AppFolder, Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
-| Application                            | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                                                         |
+| Application                            | Files.ReadWrite.AppFolder, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All                                                         |
 
 ## HTTP Request
 
@@ -48,6 +50,7 @@ The follow special folder names are available in OneDrive and OneDrive for Busin
 | Camera Roll | `cameraroll` | The Camera Roll Backup folder.                                           |
 | App Root    | `approot`    | The application's personal folder. Usually in `/Apps/{Application Name}` |
 | Music       | `music`      | The Music folder.                                                        |
+| Recordings  | `recordings` | The Recordings folder. This option is only available in OneDrive for Business and SharePoint Online. |
 
 
 ### Optional query parameters

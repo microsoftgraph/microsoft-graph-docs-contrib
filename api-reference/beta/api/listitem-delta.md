@@ -29,6 +29,8 @@ Items with this property should be removed from your local state.
 
 > **Note:** You should only delete a folder locally if it's empty after syncing all the changes.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -65,7 +67,7 @@ This method supports the `$select`, `$expand`, and `$top` [OData query parameter
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -109,6 +111,10 @@ GET https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,2C712604-1370-
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-listitem-delta-first-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-listitem-delta-first-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -237,6 +243,10 @@ GET https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,2C712604-1370-
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-listitem-delta-last-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-listitem-delta-last-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-listitem-delta-last-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -254,7 +264,7 @@ GET https://graph.microsoft.com/beta/sites/contoso.sharepoint.com,2C712604-1370-
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-listitem-delta-last-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -336,6 +346,10 @@ GET /sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-delta-latest-datalink-tokenislatest-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-delta-latest-datalink-tokenislatest-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-delta-latest-datalink-tokenislatest-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -364,7 +378,7 @@ GET /sites/contoso.sharepoint.com,2C712604-1370-44E7-A1F5-426573FDA80A,2D2244C3-
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response", "name": "get-delta-latest_datalink_tokenislatest", "isEmpty": true, "@odata.type": "microsoft.graph.listItem", "isCollection": true } -->
 

@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Submit a data policy operation request from a company administrator or an application to export an organizational user's data. This data includes the user's data stored in OneDrive and their activity reports. For more guidance about exporting data while complying with regulations, see [Data Subject Requests and the GDPR and CCPA](/compliance/regulatory/gdpr-data-subject-requests).
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -43,7 +45,7 @@ In the request body, provide a JSON object with the following parameters.
 |storageLocation|String|This is a shared access signature (SAS) URL to an Azure Storage account, to where data should be exported.|
 
 ## Response
-If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body. The response contains the following headers.
+If successful, this method returns a `202 Accepted` response code. It doesn't return anything in the response body. The response contains the following headers.
 
 | Name       | Description |
 |:---------------|:----------|
@@ -70,6 +72,10 @@ Content-type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/user-exportpersonaldata-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/user-exportpersonaldata-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

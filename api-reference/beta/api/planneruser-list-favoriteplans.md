@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [plannerPlans](../resources/plannerplan.md) that are marked as favorite by a user. You can mark a plan as favorite by [updating the plannerUser resource](planneruser-update.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -39,12 +41,12 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Authorization  | Bearer {code}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [plannerPlan](../resources/plannerplan.md) objects in the response body.
 ## Example
 ##### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -57,6 +59,10 @@ GET https://graph.microsoft.com/beta/me/planner/favoritePlans
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-favoriteplans-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-favoriteplans-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -86,7 +92,7 @@ GET https://graph.microsoft.com/beta/me/planner/favoritePlans
 ---
 
 ##### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Get a user's [presence](../resources/presence.md) information.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call these APIs. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -24,7 +26,7 @@ One of the following permissions is required to call these APIs. To learn more, 
 | Delegated (personal Microsoft account) | Not Supported.                        |
 | Application                            | Not Supported.                        |
 
-## HTTP Requests
+## HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/presence
@@ -40,7 +42,7 @@ GET /communications/presences
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and a [presence](../resources/presence.md) object in the response body.
@@ -66,6 +68,10 @@ GET https://graph.microsoft.com/beta/me/presence
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-your-presence-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-your-presence-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -107,7 +113,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 1574
 
-{  
+{
   "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
   "availability": "Available",
   "activity": "Available",
@@ -135,6 +141,10 @@ GET https://graph.microsoft.com/beta/users/66825e03-7ef5-42da-9069-724602c31f6b/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-presence-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-user-presence-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -209,6 +219,10 @@ GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-presences-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-user-presences-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-user-presences-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -226,7 +240,7 @@ GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-user-presences-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -273,4 +287,5 @@ HTTP/1.1 200 OK
 }
 -->
 
-
+## See also
+- [Get change notifications for presence updates in Microsoft Teams](/graph/changenotifications-for-presence)

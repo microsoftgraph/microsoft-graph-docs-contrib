@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 ms.date: 09/10/2017
 title: Share a file with a link
 ms.localizationpriority: medium
@@ -17,6 +17,8 @@ The **createLink** action will create a new sharing link if the specified link t
 If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 
 DriveItem resources inherit sharing permissions from their ancestors.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 

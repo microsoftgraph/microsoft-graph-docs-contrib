@@ -1,9 +1,9 @@
 ---
 title: "List accessAssignments"
 description: "Get a list of the delegatedAdminAccessAssignment objects and their properties."
-author: "koravva"
+author: "koravvams"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.prod: partner-customer-administration
 doc_type: apiPageType
 ---
 
@@ -11,6 +11,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get a list of the [delegatedAdminAccessAssignment](../resources/delegatedadminaccessassignment.md) objects and their properties.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -32,7 +34,7 @@ GET /tenantRelationships/delegatedAdminRelationships/{delegatedAdminRelationship
 ```
 
 ## Optional query parameters
-This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select`, `$filter`, `$top`, `$orderby`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
 
 `$top` supports up to 300 objects.
 
@@ -42,7 +44,7 @@ This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$count`, and
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

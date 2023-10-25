@@ -15,9 +15,11 @@ Namespace: microsoft.graph
 
 Add rows to the end of a table. 
 
-Note that the API can accept multiple rows data using this API. Adding one row at a time can lead to performance degradation. The recommended approach is to batch the rows together in a single call rather than doing single row insertion. For best results, collect the rows to be inserted on the application side and perform a single row add operation. Experiment with the number of rows to determine the ideal number of rows to use in a single API call. 
+The API can accept multiple rows data using this API. Adding one row at a time can lead to performance degradation. The recommended approach is to batch the rows together in a single call rather than doing single row insertion. For best results, collect the rows to be inserted on the application side and perform a single row add operation. Experiment with the number of rows to determine the ideal number of rows to use in a single API call. 
 
 This request might occasionally result in a `504 HTTP` error. The appropriate response to this error is to repeat the request.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -68,7 +70,7 @@ In this example, two rows of data are inserted at the end of the table.
 
 #### Request
 
-Here is an example of the request.
+Here's an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -93,6 +95,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/insert-2-rows-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/insert-2-rows-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/insert-2-rows-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -113,7 +119,7 @@ Content-type: application/json
 
 #### Response
 
-Here is an example of the response. 
+Here's an example of the response. 
 
 > **Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -134,13 +140,13 @@ Content-type: application/json
 
 ### Example 2: Add two rows to a table asynchronously
 
-Async requests will be useful if the request takes longer time than expected. Please note that `Workbook-Session-Id` header is required in issuing async requests. The user needs to [Create session](./workbook-createsession.md) before using async rich API features. The header `Prefer:respond-async` is also required in the async requests.
+Async requests are useful if the request takes longer time than expected. Note that `Workbook-Session-Id` header is required in issuing async requests. The user needs to [Create session](./workbook-createsession.md) before using async rich API features. The header `Prefer:respond-async` is also required in the async requests.
 
 For async features, the user usually needs to issue 2-3 requests. This request, [Get workbookOperation](./workbookoperation-get.md) request and optionally [Get tableRowOperationResult](./workbook-tablerowoperationresult.md) request.
 
 #### Request
 
-Here is an example of the async request. Note that `202 Accepted` will only happen when the request takes a long time to respond. If the request is completed quickly, it will work like a regular sync request, falling back to [Example 1](#example-1-add-two-rows-to-a-table).
+Here's an example of the async request. Note that `202 Accepted` will only happen when the request takes a long time to respond. If the request is completed quickly, it works like a regular sync request, falling back to [Example 1](#example-1-add-two-rows-to-a-table).
 
 
 
@@ -169,6 +175,10 @@ Workbook-Session-Id: {Workbook-Session-Id}
 [!INCLUDE [sample-code](../includes/snippets/csharp/tablerowcollection-add-sync-request-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/tablerowcollection-add-sync-request-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/tablerowcollection-add-sync-request-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -189,7 +199,7 @@ Workbook-Session-Id: {Workbook-Session-Id}
 
 #### Response
 
-Here is another example of the response that will lead to an async operation. For details, see [Get workbookOperation](./workbookoperation-get.md) and [Get tableRowOperationResult](./workbook-tablerowoperationresult.md).
+Here's another example of the response that will lead to an async operation. For details, see [Get workbookOperation](./workbookoperation-get.md) and [Get tableRowOperationResult](./workbook-tablerowoperationresult.md).
 <!-- {
   "blockType": "response",
   "truncated": true,

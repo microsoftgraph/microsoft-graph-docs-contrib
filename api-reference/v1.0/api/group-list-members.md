@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 Get a list of the group's direct members. A group can have users, organizational contacts, devices, service principals and other groups as members. This operation is not transitive.
 
 > [!IMPORTANT]
-> This API has a known issue where service principals are not listed as group members in v1.0. Use this API on the `beta` endpoint instead or the `/groups/{id}?members` API.
+> This API has a known issue where service principals are not listed as group members in v1.0. Use this API on the `beta` endpoint instead or the `/groups/{id}?$expand=members` API. Note the [limitations of $expand on directory objects](https://developer.microsoft.com/en-us/graph/known-issues/?search=13635).
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 
@@ -51,7 +53,7 @@ OData cast is also enabled. For example, `/groups/{id}}/members/microsoft.graph.
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -65,7 +67,7 @@ An attempt to filter by an OData cast that represents an unsupported member type
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -103,7 +105,7 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/get-group-members-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -114,7 +116,7 @@ GET https://graph.microsoft.com/v1.0/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -144,7 +146,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -193,7 +195,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -213,7 +215,7 @@ Content-type: text/plain
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -262,7 +264,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -282,7 +284,7 @@ Content-type: text/plain
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -332,7 +334,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -367,7 +369,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -417,7 +419,7 @@ ConsistencyLevel: eventual
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -444,14 +446,10 @@ Content-type: application/json
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "List members",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
   "suppressions": [
+    "Error: /api/group-list-members.md:
+      Failed to parse enumeration values for type microsoft.graph.group. Table requires a column header named one of the following: Member, Name, Value"
   ]
-}-->
+} -->

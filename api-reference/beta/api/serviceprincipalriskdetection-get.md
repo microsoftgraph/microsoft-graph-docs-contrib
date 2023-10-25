@@ -14,7 +14,9 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md) object.
 
->**Note:** You must have an Entra Workload Identity Premium license to use the servicePrincipalRiskDetection API.
+>**Note:** You must have a Microsoft Entra Workload ID Premium license to use the servicePrincipalRiskDetection API.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,6 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account)|IdentityRiskEvent.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|IdentityRiskEvent.Read.All|
+
+[!INCLUDE [rbac-identity-protection-apis-read](../../beta/includes/rbac-for-apis/rbac-identity-protection-apis-read.md)]
 
 ## HTTP request
 
@@ -41,7 +45,7 @@ GET /identityProtection/servicePrincipalRiskDetections/{servicePrincipalRiskDete
 |Content-Type|application/json|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -64,6 +68,10 @@ GET https://graph.microsoft.com/beta/identityProtection/servicePrincipalRiskDete
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-serviceprincipalriskdetection-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-serviceprincipalriskdetection-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -133,4 +141,3 @@ Content-Type: application/json
   }
 }
 ```
-

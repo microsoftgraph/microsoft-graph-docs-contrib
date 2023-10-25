@@ -14,6 +14,8 @@ Namespace: microsoft.graph.security
 
 Get a list of the [retentionLabel](../resources/security-retentionlabel.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -21,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|RecordsManagement.Read.All, RecordsManagement.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not supported.|
+|Application|RecordsManagement.Read.All, RecordsManagement.ReadWrite.All|
 
 ## HTTP request
 
@@ -48,7 +50,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -70,6 +72,10 @@ GET https://graph.microsoft.com/beta/security/labels/retentionLabels
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-retentionlabel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-retentionlabel-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

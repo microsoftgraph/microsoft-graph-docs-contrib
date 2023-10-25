@@ -13,7 +13,9 @@ Namespace: microsoft.graph.identityGovernance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Restore a workflow that has been deleted. You can only restore a workflow that was deleted within the last 30 days before Azure AD automatically permanently deletes it.
+Restore a workflow that has been deleted. You can only restore a workflow that was deleted within the last 30 days before Microsoft Entra ID automatically permanently deletes it.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 
@@ -45,7 +47,7 @@ POST /identityGovernance/lifecycleWorkflows/deletedItems/workflows/{workflowId}/
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -71,6 +73,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/dele
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-workflowthisrestore-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-workflowthisrestore-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/lifecycleworkflows-workflowthisrestore-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -87,6 +93,10 @@ POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/dele
 [!INCLUDE [sample-code](../includes/snippets/php/lifecycleworkflows-workflowthisrestore-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/lifecycleworkflows-workflowthisrestore-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/lifecycleworkflows-workflowthisrestore-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -94,7 +104,7 @@ POST https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/dele
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

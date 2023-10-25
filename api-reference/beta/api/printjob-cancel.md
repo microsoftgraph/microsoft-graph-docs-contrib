@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Cancel a print job. Print jobs can be canceled only on behalf of a user, using delegated permissions.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -44,12 +46,12 @@ POST /print/printers/{id}/jobs/{id}/cancel
 Do not supply a request body with this method.
 
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 The following example shows how to call this API.
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -63,6 +65,10 @@ POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/cancel
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/printjob-cancel-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/printjob-cancel-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -92,7 +98,7 @@ POST https://graph.microsoft.com/beta/print/printers/{id}/jobs/{id}/cancel
 ---
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 <!-- {
   "blockType": "response"
 } -->

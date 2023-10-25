@@ -2,7 +2,7 @@
 title: "message: reply"
 description: "Reply to the sender of a message using either JSON or MIME format."
 ms.localizationpriority: medium
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -24,6 +24,8 @@ When using MIME format:
 This method saves the message in the **Sent Items** folder.
 
 Alternatively, [create a draft to reply to an existing message](../api/message-createreply.md) and [send](../api/message-send.md) it later.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
 ## Permissions
 One of the following permissions are required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -62,7 +64,7 @@ When specifying the body in MIME format, provide the MIME content with the appli
 
 ## Response
 
-If successful, this method returns a `202 Accepted` response code. It does not return anything in the response body.
+If successful, this method returns a `202 Accepted` response code. It doesn't return anything in the response body.
 
 If the request body includes malformed MIME content, this method returns a `400 Bad Request` error code and the following error message: "Invalid base64 string for MIME content".
 
@@ -70,7 +72,7 @@ If the request body includes malformed MIME content, this method returns a `400 
 ### Example 1: Reply in JSON format to an existing message
 The following example includes a comment and adds a recipient to the reply message.
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -83,7 +85,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/AAMkADA1MTAAAAqldOAAA=/reply
 Content-Type: application/json
 
 {
-  "message":{  
+  "message":{
     "toRecipients":[
       {
         "emailAddress": {
@@ -99,7 +101,7 @@ Content-Type: application/json
       }
      ]
   },
-  "comment": "Samantha, Randi, would you name the group please?" 
+  "comment": "Samantha, Randi, would you name the group please?"
 }
 ```
 
@@ -138,7 +140,7 @@ Content-Type: application/json
 ---
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -149,7 +151,7 @@ HTTP/1.1 202 Accepted
 
 ### Example 2: Reply in MIME format to an existing message
 #### Request
-The following is an example of the request.
+The following example shows a request.
 <!-- {
   "blockType": "ignored",
   "name": "message_reply_mime_v1"
@@ -163,7 +165,7 @@ Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNt
 ```
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

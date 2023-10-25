@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Remove a user as a registered owner of the device.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -33,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 DELETE /devices/{id}/registeredOwners/{id}/$ref
 ```
 > [!CAUTION]
-> If `/$ref` is not appended to the request and the calling app has permissions to manage the user who is a registered owner of the device, the user will also be deleted from Azure Active Directory (Azure AD); otherwise, a `403 Forbidden` error is returned. You can restore deleted users through the [Restore deleted items API](directory-deleteditems-restore.md).
+> If `/$ref` is not appended to the request and the calling app has permissions to manage the user who is a registered owner of the device, the user will also be deleted from Microsoft Entra ID; otherwise, a `403 Forbidden` error is returned. You can restore deleted users through the [Restore deleted items API](directory-deleteditems-restore.md).
 
 ## Request headers
 | Name       | Description|
@@ -41,7 +43,7 @@ DELETE /devices/{id}/registeredOwners/{id}/$ref
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -62,6 +64,10 @@ DELETE https://graph.microsoft.com/beta/devices/{id}/registeredOwners/{id}/$ref
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-registeredowners-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/delete-registeredowners-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -113,5 +119,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

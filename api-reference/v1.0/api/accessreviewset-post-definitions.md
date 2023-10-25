@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Create a new [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -47,7 +49,7 @@ The following table shows the properties accepted to create an accessReview.
 | descriptionForAdmins | String | Context of the review provided to admins. Required. |
 | descriptionForReviewers | String | Context of the review provided to reviewers in email notifications. Email notifications support up to 256 characters. Required. |
 | displayName | String | Name of access review series. Required.|
-| fallbackReviewers |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|If provided, the fallback reviewers are asked to complete a review if the primary reviewers do not exist. For example, if managers are selected as `reviewers` and a principal under review does not have a manager in Azure AD, the fallback reviewers are asked to review that principal. <br/><br/>**NOTE:** The value of this property will be ignored if fallback reviewers are assigned through the **stageSettings** property.|
+| fallbackReviewers |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection|If provided, the fallback reviewers are asked to complete a review if the primary reviewers do not exist. For example, if managers are selected as `reviewers` and a principal under review does not have a manager in Microsoft Entra ID, the fallback reviewers are asked to review that principal. <br/><br/>**NOTE:** The value of this property will be ignored if fallback reviewers are assigned through the **stageSettings** property.|
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | In the case of an all groups review, this determines the scope of which groups will be reviewed. See [accessReviewScope](../resources/accessreviewscope.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept).| 
 | reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Defines who the reviewers are. If none are specified, the review is a self-review (users review their own access).  For examples of options for assigning reviewers, see [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-reviewers-concept). <br/><br/>**NOTE:** The value of this property will be ignored if reviewers are assigned through the **stageSettings** property. |
 | scope | [accessReviewScope](../resources/accessreviewscope.md) | Defines the entities whose access is reviewed. See  [accessReviewScope](../resources/accessreviewscope.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept). Required.| 
@@ -140,6 +142,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewscheduledefinition-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accessreviewscheduledefinition-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -311,6 +317,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewscheduledefinition-inactiveguests-m365-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accessreviewscheduledefinition-inactiveguests-m365-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -512,6 +522,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewscheduledefinition-allusers-m365-aadrole-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accessreviewscheduledefinition-allusers-m365-aadrole-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -668,6 +682,10 @@ Content-type: application/json
 
 # [PowerShell](#tab/powershell)
 [!INCLUDE [sample-code](../includes/snippets/powershell/create-accessreviewscheduledefinition-group-multistage-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/create-accessreviewscheduledefinition-group-multistage-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

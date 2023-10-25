@@ -20,6 +20,9 @@ To create a new file-based resource, upload the file to the resources folder ass
 > [!IMPORTANT] 
 > Before you can upload an assignment resource, you must [set up the resources folder](../api/educationassignment-setupresourcesfolder.md) for the [educationAssignment](../resources/educationassignment.md) to upload the files to.
 > 
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -61,7 +64,7 @@ If successful, this method returns a `201 Created` response code and an object a
 ## Examples
 ### Example 1: Create an educationWordResource
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -116,7 +119,7 @@ Content-type: application/json
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -161,7 +164,7 @@ Content-type: application/json
 
 ### Example 2: Create an educationLinkResource
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -207,7 +210,7 @@ Content-type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [PowerShell](#tab/powershell)
-[!INCLUDE [snippet-not-available](../includes/snippets/snippet-not-available.md)]
+[!INCLUDE [sample-code](../includes/snippets/powershell/create-educationlinkresource-from-educationsubmission-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)
@@ -217,7 +220,7 @@ Content-type: application/json
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -262,7 +265,7 @@ Content-type: application/json
 
 ### Example 3: Create an educationFileResource
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -318,7 +321,7 @@ Content-type: application/json
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -363,7 +366,7 @@ Content-type: application/json
 
 ### Example 4: Create an educationExcelResource
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -419,7 +422,7 @@ Content-type: application/json
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -464,7 +467,7 @@ Content-type: application/json
 
 ### Example 5: Create an educationPowerPointResource
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -520,7 +523,7 @@ Content-type: application/json
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -565,7 +568,7 @@ Content-type: application/json
 
 ### Example 6: Create an educationMediaResource
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -621,7 +624,7 @@ Content-type: application/json
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

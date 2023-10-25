@@ -8,10 +8,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 var graphClient = new GraphServiceClient(requestAdapter);
 
-var result = await graphClient.Groups.Delta.GetAsync((requestConfiguration) =>
-{
-	requestConfiguration.QueryParameters.Skiptoken = "ppqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7";
-});
+var deltaRequestBuilder = new Microsoft.Graph.Groups.Delta.DeltaRequestBuilder("https://graph.microsoft.com/v1.0/groups/delta?$skiptoken=ppqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjtQ5LOhVoS7qQG_wdVCHHlbQpga7", graphClient.RequestAdapter);
+var result = await deltaRequestBuilder.GetAsync();
 
 
 ```

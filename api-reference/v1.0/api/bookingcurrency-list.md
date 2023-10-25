@@ -12,6 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Get a list of [bookingCurrency](../resources/bookingcurrency.md) objects available to a Microsoft Bookings business.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -35,12 +38,12 @@ This method supports the $count and $expand [OData query parameters](/graph/quer
 | Authorization  | Bearer {code}|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [bookingCurrency](../resources/bookingcurrency.md) objects in the response body.
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -86,7 +89,7 @@ GET https://graph.microsoft.com/v1.0/solutions/bookingCurrencies
 ---
 
 ### Response
-The following is an example of the response. Note: The response object shown here is truncated for brevity. All of the supported currencies and properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here is truncated for brevity. All of the supported currencies and properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "truncated": true,

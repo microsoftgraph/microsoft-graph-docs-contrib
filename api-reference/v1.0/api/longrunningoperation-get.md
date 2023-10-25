@@ -2,7 +2,7 @@
 title: "Get longRunningOperation"
 description: "Retrieve the status of a long-running operation."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "jpettere"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 Retrieve the status of a long-running operation, represented by a [longRunningOperation](../resources/longrunningoperation.md) object. A long-running operation is initiated when you [reset a user's password](authenticationmethod-resetpassword.md). This resource type is also the base type for the richLongRunningOperation object that represents the status of a long-running operation on a [site](../resources/site.md) or a [list](../resources/list.md).
 
 The possible states of the long-running operation are `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue` where `succeeded` and `failed` are terminal states.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -48,7 +50,7 @@ This method does not support optional query parameters to customize the response
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -58,7 +60,7 @@ If successful, this method returns a `200 OK` response code and the requested [l
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -108,7 +110,7 @@ GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}/authenticati
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

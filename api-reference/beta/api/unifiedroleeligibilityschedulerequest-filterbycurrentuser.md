@@ -17,6 +17,8 @@ Get a list of the [unifiedRoleEligibilityScheduleRequest](../resources/unifiedRo
 > [!NOTE]
 > This method doesn't retrieve objects for groups that the currently signed in user is member of, and which have the eligible assignment.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -55,7 +57,7 @@ This method supports the `$select` OData query parameter to help customize the r
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -77,6 +79,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/RoleEligibilitySch
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/unifiedroleeligibilityschedulerequest-filterbycurrentuser-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/unifiedroleeligibilityschedulerequest-filterbycurrentuser-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -103,7 +109,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/RoleEligibilitySch
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

@@ -15,6 +15,8 @@ Namespace: microsoft.graph
 
 Create a new [bookingAppointment](../resources/bookingappointment.md) for the specified [bookingBusiness](../resources/bookingbusiness.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -59,7 +61,7 @@ If successful, this method returns a `201 Created` response code and a [bookingA
 
 ### Request
 
-The following is an example of the request. This appointment does not involve booking specific staff members.
+The following example shows a request. This appointment does not involve booking specific staff members.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -237,6 +239,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/csharp/create-bookingappointment-from-bookingbusiness-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/create-bookingappointment-from-bookingbusiness-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/create-bookingappointment-from-bookingbusiness-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -260,7 +266,7 @@ Content-type: application/json
 ---
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

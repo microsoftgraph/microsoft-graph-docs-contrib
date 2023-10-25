@@ -19,6 +19,8 @@ A presence session is created as a result of a successful [setPresence](presence
 
 For more details, see [presence sessions](presence-setpresence.md#presence-sessions) and [time-out and expiration](presence-setpresence.md#timeout-expiration-and-keep-alive).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 The following permission is required to call the API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -125,7 +127,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

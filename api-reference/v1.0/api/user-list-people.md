@@ -15,6 +15,8 @@ Retrieve a collection of [person](../resources/person.md) objects ordered by the
 
 You can get this information via the People API. For examples, see the [Examples](#examples) section and the article [Use the People API to get information about the people most relevant to you](/graph/people-insights-overview).
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -56,7 +58,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -66,7 +68,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -115,7 +117,7 @@ GET https://graph.microsoft.com/v1.0/me/people
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -15,9 +15,11 @@ Update the properties of the [userSettings](../resources/usersettings.md) object
 Users in the same organization can have different settings based on their preference or on the organization policies. 
 To get the user current settings, see [current user settings](usersettings-get.md). 
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ### Batch request
 
-It's also possible to opt-out multiple users from Delve and disable their contribution on content relevancy for the whole organization through a batch request.
+It's also possible to opt out multiple users from Delve and disable their contribution on content relevancy for the whole organization through a batch request.
 To learn more, see [JSON batching](/graph/json-batching).
 
 >**Important**: Only members of the [organization management](/exchange/permissions/permissions?view=exchserver-2019#role-groups&preserve-view=true) role group can update multiple users. 
@@ -55,11 +57,11 @@ PATCH /users/{id | userPrincipalName}/settings/
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.
+In the request body, supply the values for relevant fields that should be updated. Existing properties that aren't included in the request body maintains their previous values or are recalculated based on changes to other property values. For best performance, you shouldn't include existing values that haven't changed.
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Boolean|Set to true do disable delegate access to the [Trending](/graph/api/resources/insights-trending?view=graph-rest-1.0&preserve-view=true) API and to disable access to documents in Office Delve for the user. Setting to true also affects the relevance of the content displayed in Microsoft 365 - for example, Suggested sites in SharePoint Home and the Discover view in OneDrive for Business show less relevant results. This setting reflects the control state in [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
+|contributionToContentDiscoveryDisabled|Boolean|Set to true to disable delegate access to the [Trending](/graph/api/resources/insights-trending?view=graph-rest-1.0&preserve-view=true) API and to disable access to documents in Office Delve for the user. Setting to true also affects the relevance of the content displayed in Microsoft 365 - for example, Suggested sites in SharePoint Home and the Discover view in OneDrive for Business show less relevant results. This setting reflects the control state in [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
 
 ## Response
 If successful, this method returns a `200 OK` response code and the updated **userSettings** in the response body.
@@ -68,7 +70,7 @@ If successful, this method returns a `200 OK` response code and the updated **us
 
 ### Request
 
-Here is an example request on how to opt-out a user from Delve and disable his contribution on content relevancy for the whole organization.
+Here's an example request on how to opt out a user from Delve and disable their contribution on content relevancy for the whole organization.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -119,7 +121,7 @@ Content-type: application/json
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+Here's an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

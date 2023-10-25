@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a [contentSharingSession](../resources/contentsharingsession.md) object in a call.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 | Permission type                        | Permissions (from least to most privileged)                                                              |
@@ -35,7 +37,7 @@ GET /communications/calls/{id}/contentSharingSessions/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -93,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/communications/calls/7531d31f-d10d-44de-802
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

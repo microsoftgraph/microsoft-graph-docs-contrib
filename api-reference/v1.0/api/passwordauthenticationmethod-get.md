@@ -2,7 +2,7 @@
 title: "Get passwordAuthenticationMethod"
 description: "Retrieve a user's passwordAuthenticationMethod object."
 ms.localizationpriority: medium
-author: "mmcla"
+author: "zhvolosh"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 
 Retrieve a password that's registered to a user, represented by a [passwordAuthenticationMethod](../resources/passwordauthenticationmethod.md) object. For security, the password itself will never be returned in the object and the **password** property is always `null`.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 
@@ -35,6 +37,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 [!INCLUDE [rbac-authentication-methods-apis-read](../includes/rbac-for-apis/rbac-authentication-methods-apis-read.md)]
+
+Admins with *User Administrator*, *Helpdesk Administrator*, or *Password Administrator* roles can also retrieve password authentication methods for non-admin users and a limited set of admin roles as defined in [Who can reset passwords](/azure/active-directory/roles/privileged-roles-permissions#who-can-reset-passwords).
 
 ## HTTP request
 
@@ -62,7 +66,7 @@ This method does not support optional query parameters to customize the response
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -72,7 +76,7 @@ If successful, this method returns a `200 OK` response code and the requested [p
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -120,7 +124,7 @@ GET https://graph.microsoft.com/v1.0/me/authentication/passwordMethods/28c10230-
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

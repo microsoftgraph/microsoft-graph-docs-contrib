@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Retrieve [appConsentRequest](../resources/appconsentrequest.md) objects and their properties.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -42,7 +44,7 @@ This method supports the `$select`, `$skip`, `$top`, `$filter` (`eq`), and `$o
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -66,6 +68,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-appconsentrequest-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-appconsentrequest-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -154,6 +160,10 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-appconsentrequest-userconsentrequest-inprogress-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-appconsentrequest-userconsentrequest-inprogress-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-appconsentrequest-userconsentrequest-inprogress-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -182,7 +192,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/appConsent/appConsentReq
 
 #### Response
 
-The following is an example of the response. The response object includes all **appConsentRequest** objects that have at least one **userConsentRequest** that's `InProgress`, but doesn't expand the related **userConsentRequests** relationship.
+The following example shows the response. The response object includes all **appConsentRequest** objects that have at least one **userConsentRequest** that's `InProgress`, but doesn't expand the related **userConsentRequests** relationship.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

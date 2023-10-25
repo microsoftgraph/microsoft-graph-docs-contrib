@@ -32,6 +32,8 @@ Given [contentInfo](../resources/security-contentinfo.md), which includes existi
 * [removeProtectionAction](../resources/security-removeprotectionaction.md)
 * [removeWatermarkAction](../resources/security-removewatermarkaction.md)
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -170,6 +172,10 @@ User-agent: ContosoLobApp/1.0
 [!INCLUDE [sample-code](../includes/snippets/csharp/sensitivitylabelthisevaluateapplication-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/sensitivitylabelthisevaluateapplication-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/sensitivitylabelthisevaluateapplication-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -194,7 +200,7 @@ User-agent: ContosoLobApp/1.0
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

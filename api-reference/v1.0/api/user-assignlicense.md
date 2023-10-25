@@ -1,7 +1,7 @@
 ---
 title: "user: assignLicense"
 description: "Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription."
-author: "jconley76"
+author: "frank-masuelli"
 ms.localizationpriority: high
 ms.prod: "users"
 doc_type: apiPageType
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Add or remove subscriptions for the user. You can also enable and disable specific plans associated with a subscription.
 
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -22,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.ReadWrite.All, Directory.ReadWrite.All |
 
-For delegated scenarios, the calling user needs one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
+For delegated scenarios, the calling user needs one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference?toc=%2Fgraph%2Ftoc.json).
 
 - Directory Writers
 - License Administrator
@@ -106,6 +108,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/powershell/user-assignlicense-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Python](#tab/python)
+[!INCLUDE [sample-code](../includes/snippets/python/user-assignlicense-python-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -154,4 +160,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-

@@ -1,7 +1,7 @@
 ---
 title: "List attachments"
 description: "Retrieve a list of attachment objects attached to a message."
-author: "abheek-das"
+author: "SuryaLashmiS"
 ms.localizationpriority: high
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -12,6 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Retrieve a list of [attachment](../resources/attachment.md) objects attached to a message.
+
+[!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -33,7 +36,7 @@ Attachments for a [message](../resources/message.md) contained in a top level [m
 GET /me/mailFolders/{id}/messages/{id}/attachments
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments
 ```
-Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The 
+Attachments for a [message](../resources/message.md) contained in a child folder of a [mailFolder](../resources/mailfolder.md) in a user's mailbox.  The
 example below shows one level of nesting, but a message can be located in a child of a child and so on.
 ```http
 GET /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
@@ -47,7 +50,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Authorization  | string  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

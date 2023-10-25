@@ -1,9 +1,9 @@
 ---
 title: "tunnelConfigurationIKEv2Default resource type"
-description: "Specifies connectivity settings such as protocol, IPSec policy, and presharked key) for establishing connectivity."
+description: "Specifies connectivity settings such as protocol, IPSec policy, and preshared key) for establishing connectivity."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph.networkaccess
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Specifies connectivity settings such as protocol, IPSec policy, and presharked key) for establishing connectivity.
+Specifies connectivity settings such as protocol, IPSec policy, and preshared key) for establishing connectivity.
 
 Inherits from [microsoft.graph.networkaccess.tunnelConfiguration](../resources/networkaccess-tunnelconfiguration.md).
 
@@ -26,7 +26,7 @@ Inherits from [microsoft.graph.networkaccess.tunnelConfiguration](../resources/n
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.networkaccess.tunnelConfigurationIKEv2Default"

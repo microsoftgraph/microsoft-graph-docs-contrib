@@ -2,7 +2,7 @@
 title: "Get connector"
 description: "Retrieve the properties of a connector object."
 ms.localizationpriority: medium
-author: "japere"
+author: "dhruvinrshah"
 ms.prod: "applications"
 doc_type: "apiPageType"
 ---
@@ -39,7 +39,7 @@ This method supports the [OData Query Parameters](/graph/query-parameters) to he
 | Authorization  | Bearer. Required|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -49,7 +49,7 @@ If successful, this method returns a `200 OK` response code and [connector](../r
 
 ##### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -62,6 +62,10 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-connector-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-connector-1-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -91,7 +95,7 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 ---
 
 ##### Response
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

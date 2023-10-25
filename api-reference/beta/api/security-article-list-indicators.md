@@ -17,6 +17,8 @@ Namespace: microsoft.graph.security
 
 Get a list of [articleIndicator](../resources/security-articleindicator.md) objects that represent indicators of threat or compromise related to the contents of an [article](../resources/security-article.md).
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -50,7 +52,7 @@ This method supports the `$count`, `$select`, `$top`, and `$skip` OData query pa
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -79,6 +81,10 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/articles/a272d5
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-articleindicator-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-articleindicator-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/list-articleindicator-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -103,7 +109,7 @@ GET https://graph.microsoft.com/beta/security/threatIntelligence/articles/a272d5
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

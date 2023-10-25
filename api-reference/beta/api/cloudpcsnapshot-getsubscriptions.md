@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 List all subscriptions [cloudPcSubscription](../resources/cloudpcsubscription.md) that can be used to store a snapshot or snapshots of a Cloud PC for forensic analysis.
 
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -39,7 +41,7 @@ GET /deviceManagement/virtualEndpoint/snapshots/getSubscriptions
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -64,6 +66,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/snapshots/
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-cloudpcsubscription-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/get-cloudpcsubscription-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -94,7 +100,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/snapshots/
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

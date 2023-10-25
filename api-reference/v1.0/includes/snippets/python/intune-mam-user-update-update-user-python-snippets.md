@@ -4,16 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = User()
-request_body.@odata_type = '#microsoft.graph.user'
+graph_client = GraphServiceClient(request_adapter)
 
+request_body = User(
+	odata_type = "#microsoft.graph.user",
+)
 
-
-
-result = await client.users.by_user_id('user-id').patch(request_body = request_body)
+result = await graph_client.users.by_user_id('user-id').patch(body = request_body)
 
 
 ```

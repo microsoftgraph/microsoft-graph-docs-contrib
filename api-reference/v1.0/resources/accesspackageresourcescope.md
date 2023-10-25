@@ -1,6 +1,6 @@
 ---
 title: "accessPackageResourceScope resource type"
-description: "In Azure AD entitlement management, an access package resource scope is a reference to a scope within a resource."
+description: "In Microsoft Entra entitlement management, an access package resource scope is a reference to a scope within a resource."
 ms.localizationpriority: medium
 author: "markwahl-msft"
 ms.prod: "governance"
@@ -11,11 +11,11 @@ doc_type: "resourcePageType"
 
 Namespace: microsoft.graph
 
-In [Azure AD entitlement management](entitlementmanagement-overview.md), an access package resource scope is a reference to a scope within a resource, for those resources that have multiple scopes.
+In [Microsoft Entra entitlement management](entitlementmanagement-overview.md), an access package resource scope is a reference to a scope within a resource, for those resources that have multiple scopes.
 
-You can determine the access package resource scope, for a resource which has roles already added to an access package, by using [list accessPackageResourceRoleScopes](../api/accesspackage-list-resourcerolescopes.md) to return a collection of [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) objects.
+You can determine the access package resource scope, for a resource that has roles already added to an access package, by using [list accessPackageResourceRoleScopes](../api/accesspackage-list-resourcerolescopes.md) to return a collection of [accessPackageResourceRoleScope](accesspackageresourcerolescope.md) objects.
 
-If the resource is in an access package catalog but has not yet had its roles added to an access package, you can determine the access package resource scope by using [list accessPackageResources](../api/accesspackagecatalog-list-resources.md) and including `$expand=scopes` in the query.
+If the resource is in an access package catalog but hasn't yet had its roles added to an access package, you can determine the access package resource scope by using [list accessPackageResources](../api/accesspackagecatalog-list-resources.md) and including `$expand=scopes` in the query.
 
 ## Properties
 
@@ -36,7 +36,7 @@ If the resource is in an access package catalog but has not yet had its roles ad
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+Here's a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
@@ -67,5 +67,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

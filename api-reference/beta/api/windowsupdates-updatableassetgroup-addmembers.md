@@ -16,9 +16,11 @@ Add members to an [updatableAssetGroup](../resources/windowsupdates-updatableass
 
 You can add [azureADDevice](../resources/windowsupdates-azureaddevice.md) resources as members, but may not add **updatableAssetGroup** resources as members.
 
-Adding an Azure AD device as a member of an updatable asset group automatically creates an **azureADDevice** object, if it does not already exist.
+Adding a Microsoft Entra device as a member of an updatable asset group automatically creates an **azureADDevice** object, if it does not already exist.
 
 You can also use the method [addMembersById](windowsupdates-updatableassetgroup-addmembersbyid.md) to add members.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -56,7 +58,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this action returns a `202 Accepted` response code. It does not return anything in the response body.
+If successful, this action returns a `202 Accepted` response code. It doesn't return anything in the response body.
 
 ## Examples
 
@@ -84,6 +86,10 @@ Content-Type: application/json
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/updatableassetgroup-addmembers-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/updatableassetgroup-addmembers-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -15,6 +15,8 @@ Namespace: microsoft.graph.deviceManagement
 
 Set the status of the notification associated with the specified [alertRecord](../resources/devicemanagement-alertrecord.md) on the Microsoft EndPoint Manager admin center as sent, by setting the **isPortalNotificationSent** property of the [portal notification](../resources/devicemanagement-portalnotification.md) to `true`.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,7 +45,7 @@ POST /deviceManagement/monitoring/alertRecords/{alertRecordId}/setPortalNotifica
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -68,6 +70,10 @@ POST https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/6
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/alertrecordthissetportalnotificationassent-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/alertrecordthissetportalnotificationassent-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -98,7 +104,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRecords/6
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -1,7 +1,7 @@
 ---
 title: "Create emailMethod"
 description: "Create a new emailAuthenticationMethod object for a user."
-author: "jpettere"
+author: "tilarso"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
@@ -11,6 +11,8 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 Set a user's [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object. Email authentication is a self-service password reset method. A user may only have one email authentication method.
+
+[!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,7 +44,7 @@ POST /users/{id | userPrincipalName}/authentication/emailMethods
 ## Request body
 In the request body, supply a JSON representation of the [emailAuthenticationMethod](../resources/emailauthenticationmethod.md) object with the desired email address.
 
-The following table shows the properties that are required when you create the [emailAuthenticationMethod](../resources/emailauthenticationmethod.md).
+The following table lists the properties that are required when you create the [emailAuthenticationMethod](../resources/emailauthenticationmethod.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -110,7 +112,7 @@ Content-Type: application/json
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

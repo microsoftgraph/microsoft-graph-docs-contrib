@@ -1,5 +1,5 @@
 ---
-author: JeremyKelley
+author: spgraph-docs-team
 title: driveItem resource type
 description: Item is the main data model in the OneDrive API. Everything is an item.
 ms.localizationpriority: high
@@ -19,7 +19,7 @@ There are two primary ways of addressing a **driveItem** resource:
 * By the **driveItem** unique identifier using `drive/items/{item-id}`
 * By file system path using `/drive/root:/path/to/file`
 
-For more information, see [addressing driveItems](/graph/onedrive-addressing-driveitems). 
+For more information, see [addressing driveItems](/graph/onedrive-addressing-driveitems).
 
 **driveItem** resources have facets modeled as properties that provide data about the driveItem's identities and capabilities.
 For example:
@@ -38,7 +38,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | Method                                                                       | Return Type | Description
 |:-----------------------------------------------------------------------------|:------------|:------------
 | [Get item](../api/driveitem-get.md)                                          | driveItem |Retrieve the metadata for a DriveItem in a Drive.
-| [Get analytics][]                                                            | [itemAnalytics][] | Get analytics for this resource. 
+| [Get analytics][]                                                            | [itemAnalytics][] | Get analytics for this resource.
 | [Get activities by interval][]                                               | [itemActivityStat][] | Get a collection of itemActivityStats within the specified time interval.
 | [List children](../api/driveitem-list-children.md)                           | collection of driveItem | Return a collection of DriveItems in the children relationship of a DriveItem.
 | [List versions](../api/driveitem-list-versions.md)                           | collection of [DriveItemVersion][] | Retrieves the versions of a file in the current user's drive.
@@ -55,7 +55,7 @@ Items with the **folder** facet act as containers of items and therefore have a 
 | [List changes in a drive](../api/driveitem-delta.md)                         | delta link | List any changes in the drive.
 | [Follow Item](../api/driveitem-follow.md)                                    | driveItem  | Follow a driveItem.
 | [Unfollow Item](../api/driveitem-unfollow.md)                                | No content | Unfollow a driveItem.
-| [List thumbnails](../api/driveitem-list-thumbnails.md)                       | collection of driveItem | List driveItems with their thumbnails. 
+| [List thumbnails](../api/driveitem-list-thumbnails.md)                       | collection of driveItem | List driveItems with their thumbnails.
 | [Create sharing link](../api/driveitem-createlink.md)                        | sharing link | Create a link to share the driveItem.
 | [Add permissions](../api/driveitem-invite.md)                                | collection of [permission][] | Sends a sharing invite to a user.
 | [List permissions](../api/driveitem-list-permissions.md)                     | collection of [permission][] | Retrieves the collection of permissions on an driveItem.
@@ -137,7 +137,7 @@ These properties are temporary and either a) define behavior the service should 
 | @microsoft.graph.downloadUrl      | string | A URL that can be used to download this file's content. Authentication is not required with this URL. Read-only.
 | @microsoft.graph.sourceUrl        | string | When issuing a PUT request, this instance annotation can be used to instruct the service to download the contents of the URL, and store it as the file. Write-only.
 
->**Notes:** 
+>**Notes:**
 >The parameter `@microsoft.graph.conflictBehavior` should be included in the URL instead of the body of the request.
 >
 >The `@microsoft.graph.downloadUrl` value is a short-lived URL and can't be cached. The URL will only be available for a short period of time (1 hour) before it is invalidated.

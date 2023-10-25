@@ -33,10 +33,10 @@ You can use several attributes to change the behavior of the component. The requ
 | site-id                   | siteId                  | Optional. The id of the site where the term set is present. If not specified, the term set is assumed to be at the tenant level.                                                                                                                                            | String  |
 | version                   | version                 | Optional. API version to use when making the GET request. Default is `beta`.                                                                                                                                                                                                | String  |
 | placeholder               | placeholder             | Optional. The placeholder to use in the combobox. Default value is `Select a term`.                                                                                                                                                                                         | string  |
-| locale                    | locale                  | Optional. The locale of the terms that need to be displayed. This will be useful only when terms have multiple labels in different languages.                                                                                                                               | String  |
+| locale                    | locale                  | Optional. The locale of the terms that need to be displayed. This is useful only when terms have multiple labels in different languages.                                                                                                                               | String  |
 | default-selected-term-id  | defaultSelectedTermId   | Optional. The id of the term that should be selected by default.                                                                                                                                                                                                            | String  |
 | position                  | position                | Optional. The position of the dropdown. Can be 'above' or 'below'. Default is `below`                                                                                                                                                                                       | String  |
-| disabled                  | disabled                | Optional. Sets whether the taxonomy picker is disabled. When disabled, the user is not able to search or select terms.                                                                                                                                                      | NA      |
+| disabled                  | disabled                | Optional. Sets whether the taxonomy picker is disabled. When disabled, the user isn't able to search or select terms.                                                                                                                                                      | NA      |
 | cache-enabled             | cacheEnabled            | Optional. When set, it indicates that the response from the resource will be cached. Default is `false`.                                                                                                                                                                    | Boolean |
 | cache-invalidation-period | cacheInvalidationPeriod | Optional. (Number of milliseconds) When set in combination with `cacheEnabled`, the delay before the cache reaches its invalidation period will be modified by this value. Default is `0` and will use the default invalidation period.                                     | Number  |
 
@@ -100,6 +100,9 @@ The `mgt-taxonomy-picker` component defines the following CSS custom properties 
 .taxonomy-picker {
   --taxonomy-picker-background-color: grey;
   --taxonomy-picker-list-max-height: 200px;
+  --taxonomy-picker-background-color: black;
+  --taxonomy-picker-placeholder-color: white;
+  
 }
 ```
 
@@ -115,7 +118,7 @@ To learn more, see [styling components](../customize-components/style.md).
 
 | Event              | When is it emitted                                               | Custom data                                                                                                          | Cancelable | Bubbles | Works with custom template |
 | ------------------ | ---------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | :--------: | :-----: | :------------------------: |
-| `selectionChanged` | Fired when the user makes a change in selection in the dropdown. | The selected term which will of the type [`TermStore.Term`](/graph/api/resources/termstore-term#json-representation) |     No     |   Yes   |            Yes             |
+| `selectionChanged` | Fired when the user makes a change in selection in the dropdown. | The selected term that will of the type [`TermStore.Term`](/graph/api/resources/termstore-term#json-representation) |     No     |   Yes   |            Yes             |
 
 For more information about handling events, see [events](../customize-components/events.md).
 
@@ -125,7 +128,7 @@ The `mgt-taxonomy-picker` component supports several [templates](../customize-co
 
 | Data type | Data context                    | Description                                                         |
 | --------- | ------------------------------- | ------------------------------------------------------------------- |
-| error     | The error from Microsoft Graph. | This template will be used if there is an error making the request. |
+| error     | The error from Microsoft Graph. | This template is used if there's an error making the request. |
 | loading   | N/A                             | This template is used while the request is being made.              |
 | no-data   | N/A                             | This template is used when the request returned no data.            |
 
@@ -163,7 +166,7 @@ The control uses the global authentication provider described in the [authentica
 
 ## Cache
 
-To enable and configure the cache, use the `cacheEnabled` and `cacheInvalidationPeriod` properties. By default, the `mgt-taxonomy-picker` component does not cache any responses.
+To enable and configure the cache, use the `cacheEnabled` and `cacheInvalidationPeriod` properties. By default, the `mgt-taxonomy-picker` component doesn't cache any responses.
 
 | Object store | Cached data                                                     | Remarks |
 | ------------ | --------------------------------------------------------------- | ------- |

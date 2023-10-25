@@ -3,7 +3,7 @@ title: "List delegatedAdminCustomers"
 description: "Get a list of the delegatedAdminCustomer objects and their properties."
 author: "adtangir"
 ms.localizationpriority: medium
-ms.prod: "customer-relationship-management"
+ms.prod: partner-customer-administration
 doc_type: apiPageType
 ---
 
@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get a list of the [delegatedAdminCustomer](../resources/delegatedadmincustomer.md) objects and their properties.
+
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -34,7 +36,7 @@ GET /tenantRelationships/delegatedAdminCustomers
 ```
 
 ## Optional query parameters
-This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select`, `$filter`, `$top`, `$orderby`, `$count`, and `$skipToken`  [OData query parameters](/graph/query-parameters) to help customize the response.
 
 `$top` supports up to 300 objects.
 
@@ -44,7 +46,7 @@ This method supports the `$select`, `$filter`, `$top`, `$orderBy`, `$count`, and
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -68,6 +70,10 @@ GET https://graph.microsoft.com/beta/tenantRelationships/delegatedAdminCustomers
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-delegatedadmincustomer-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/list-delegatedadmincustomer-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

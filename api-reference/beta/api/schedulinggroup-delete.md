@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 Mark a [schedulingGroup](../resources/schedulinggroup.md) as inactive by setting its **isActive** property.
 This method does not remove the [schedulingGroup](../resources/schedulinggroup.md) from the schedule. Existing [shift](../resources/shift.md) instances assigned to the scheduling group remain part of the group.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -42,17 +44,17 @@ DELETE /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 | MS-APP-ACTS-AS  | A user ID (GUID). Required only if the authorization token is an application token; otherwise, optional. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -65,6 +67,10 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/schedule-delete-schedulinggroups-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/schedule-delete-schedulinggroups-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)
@@ -83,6 +89,10 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups
 [!INCLUDE [sample-code](../includes/snippets/php/schedule-delete-schedulinggroups-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/schedule-delete-schedulinggroups-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/schedule-delete-schedulinggroups-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -91,7 +101,7 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

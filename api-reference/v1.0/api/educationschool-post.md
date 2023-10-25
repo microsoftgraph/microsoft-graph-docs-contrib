@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Create a new [educationSchool](../resources/educationschool.md) object.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +47,7 @@ POST /education/schools
 
 In the request body, supply a JSON representation of the [educationSchool](../resources/educationschool.md) object.
 
-The following table shows the properties that are required when you create the [educationSchool](../resources/educationschool.md).
+The following table lists the properties that are required when you create the [educationSchool](../resources/educationschool.md).
 
 | Property             | Type                                               | Description                                                                                                                                                          |
 | :------------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

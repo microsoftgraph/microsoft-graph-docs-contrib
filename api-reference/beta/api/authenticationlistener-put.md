@@ -1,7 +1,7 @@
 ---
 title: "Put authenticationListener"
 description: "Replace an authenticationListener object."
-author: "jkdouglas"
+author: "nanguil"
 ms.localizationpriority: medium
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
@@ -47,7 +47,7 @@ PUT /identity/events/onSignupStart/{id}
 
 In the request body, supply a JSON representation of the [authenticationListener](../resources/authenticationlistener.md) object.
 
-The following table shows the properties that are required when you create the [invokeUserFlowListener](../resources/invokeuserflowlistener.md).
+The following table lists the properties that are required when you create the [invokeUserFlowListener](../resources/invokeuserflowlistener.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -63,7 +63,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -91,7 +91,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

@@ -15,6 +15,8 @@ Namespace: microsoft.graph.identityGovernance
 
 Delete a [workflow](../resources/identitygovernance-workflow.md) object and its associated [tasks](../resources/identitygovernance-task.md), [taskProcessingResults](../resources/identitygovernance-taskprocessingresult.md) and [versions](../resources/identitygovernance-workflowversion.md). You can restore a deleted workflow and its associated objects within 30 days of deletion.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -45,7 +47,7 @@ DELETE /identityGovernance/lifecycleWorkflows/workflows/{workflowId}/
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -69,6 +71,10 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/lifecycleWorkflows/wo
 
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/lifecycleworkflows-delete-workflow-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/lifecycleworkflows-delete-workflow-cli-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Go](#tab/go)

@@ -18,6 +18,8 @@ Use the metadata that exists on an already-labeled piece of information to resol
 >[!NOTE]
 >The [contentLabel](../resources/security-contentlabel.md) resource represents a sensitivity label that has been applied to a piece of information. [sensitivityLabels](../resources/security-sensitivitylabel.md) objects are the abstract labels that are part of the organizational labeling policy and can be applied to the information.
 
+[!INCLUDE [national-cloud-support](../../includes/global-only.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -74,7 +76,7 @@ If successful, this action returns a `200 OK` response code and a [contentLabel]
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 
 # [HTTP](#tab/http)
@@ -132,6 +134,10 @@ User-agent: ContosoLOBApp/1.0
 [!INCLUDE [sample-code](../includes/snippets/csharp/sensitivitylabelthisextractcontentlabel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [CLI](#tab/cli)
+[!INCLUDE [sample-code](../includes/snippets/cli/sensitivitylabelthisextractcontentlabel-cli-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Go](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/sensitivitylabelthisextractcontentlabel-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -156,7 +162,7 @@ User-agent: ContosoLOBApp/1.0
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
