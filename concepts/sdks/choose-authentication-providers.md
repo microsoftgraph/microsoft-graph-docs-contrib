@@ -51,7 +51,7 @@ The [Azure Identity Client Module for Go](https://pkg.go.dev/github.com/Azure/az
 :::code language="java" source="./snippets/java/app/src/main/java/snippets/CreateClients.java" id="AuthorizationCodeSnippet":::
 
 ### [PHP](#tab/PHP)
-The Microsoft Graph PHP SDK doesn't use MSAL libraries, but custom authentication. In this case, [AuthorizationCodeContext()](https://github.com/microsoft/kiota-authentication-phpleague-php/blob/dev/src/Oauth/AuthorizationCodeContext.php).
+The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication. In this case, [AuthorizationCodeContext()](https://github.com/microsoft/kiota-authentication-phpleague-php/blob/dev/src/Oauth/AuthorizationCodeContext.php).
 ```php
 <?php
 use Microsoft\Graph\GraphServiceClient;
@@ -223,7 +223,7 @@ The Microsoft Graph PHP SDK doesn't use MSAL libraries but custom authentication
 
 ## Integrated Windows provider
 
-The integrated Windows flow allows Windows computers to acquire an access token when they are domain-joined silently. For details, see [Integrated Windows authentication](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
+The integrated Windows flow allows Windows computers to acquire an access token when domain-joined silently. For details, see [Integrated Windows authentication](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
 
 ### [C#](#tab/csharp)
 
