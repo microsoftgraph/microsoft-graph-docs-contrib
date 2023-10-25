@@ -13,7 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an onboarded AWS account, Azure subscription, or GCP project that Entra Permissions Management (EPM) will collect and analyze permissions and actions on.
+Represents a Microsoft Azure susbcription, Amazon Web Services (AWS) account, or Google Cloud Platform (GCP) project that you've onboarded onto Microsoft Entra Permissions Management, Microsoft's cloud infrastructure entitlement management (CIEM) solution. Permissions Management discovers, remediates, and monitors the permissions and actions of identities in these platforms.
+
+This object is read-only and is populated when you successfully onboard the platform onto Permissions Management.
+
+The following resource types are derived from this resource: [awsAuthorizationSystem](../resources/awsauthorizationsystem.md), [azureAuthorizationSystem](../resources/azureauthorizationsystem.md), and [gcpAuthorizationSystem](../resources/gcpauthorizationsystem.md).
 
 Inherits from [entity](../resources/entity.md).
 
