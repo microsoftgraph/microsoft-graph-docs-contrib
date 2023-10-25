@@ -36,9 +36,9 @@ The following is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.x509CertificateUserBinding",
-  "x509CertificateField": "String",
+  "priority": "Int32",
+  "trustAffinityLevel": "String",
   "userProperty": "String",
-  "priority": "Integer",
-  "trustAffinityLevel": "String"
+  "x509CertificateField": "String"
 }
 ```
