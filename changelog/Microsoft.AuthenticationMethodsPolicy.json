@@ -506,7 +506,7 @@
       "ChangeList": [
         {
           "Id": "a12d7c65-273a-4409-8c5a-a8be6bcfd005",
-          "ApiChange": "Enumeration",
+          "ApiChange": "Enum type",
           "ChangedApiName": "x509CertificateAffinityLevel",
           "ChangeType": "Addition",
           "Description": "Added the **x509CertificateAffinityLevel** enumeration type.",
@@ -525,7 +525,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "x509CertificateDefaultRequiredAffinityLevel",
           "ChangeType": "Addition",
-          "Description": "Added the `x509CertificateDefaultRequiredAffinityLevel` property to the [x509CertificateAuthenticationModeConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationModeConfiguration?view=graph-rest-beta) resource.",
+          "Description": "Added the **x509CertificateDefaultRequiredAffinityLevel** property to the [x509CertificateAuthenticationModeConfiguration](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateAuthenticationModeConfiguration?view=graph-rest-beta) resource.",
           "Target": "x509CertificateAuthenticationModeConfiguration"
         },
         {
@@ -533,7 +533,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "issuerSubjectIdentifier",
           "ChangeType": "Addition",
-          "Description": "Added the `issuerSubjectIdentifier` property to the [x509CertificateRule](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateRule?view=graph-rest-beta) resource.",
+          "Description": "Added the **issuerSubjectIdentifier** property to the [x509CertificateRule](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateRule?view=graph-rest-beta) resource.",
           "Target": "x509CertificateRule"
         },
         {
@@ -541,7 +541,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "policyOidIdentifier",
           "ChangeType": "Addition",
-          "Description": "Added the `policyOidIdentifier` property to the [x509CertificateRule](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateRule?view=graph-rest-beta) resource.",
+          "Description": "Added the **policyOidIdentifier** property to the [x509CertificateRule](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateRule?view=graph-rest-beta) resource.",
           "Target": "x509CertificateRule"
         },
         {
@@ -549,7 +549,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "x509CertificateRequiredAffinityLevel",
           "ChangeType": "Addition",
-          "Description": "Added the `x509CertificateRequiredAffinityLevel` property to the [x509CertificateRule](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateRule?view=graph-rest-beta) resource.",
+          "Description": "Added the **x509CertificateRequiredAffinityLevel** property to the [x509CertificateRule](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateRule?view=graph-rest-beta) resource.",
           "Target": "x509CertificateRule"
         },
         {
@@ -557,7 +557,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "trustAffinityLevel",
           "ChangeType": "Addition",
-          "Description": "Added the `trustAffinityLevel` property to the [x509CertificateUserBinding](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateUserBinding?view=graph-rest-beta) resource.",
+          "Description": "Added the **trustAffinityLevel** property to the [x509CertificateUserBinding](https://learn.microsoft.com/en-us/graph/api/resources/x509CertificateUserBinding?view=graph-rest-beta) resource.",
           "Target": "x509CertificateUserBinding"
         }
       ],
