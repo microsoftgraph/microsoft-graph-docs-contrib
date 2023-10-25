@@ -15,7 +15,7 @@ There is also the [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/ge
 
 ## Read information from Microsoft Graph
 
-To read information from Microsoft Graph, you first need to create a request object and then run the `GET` method on the request.
+To read information from Microsoft Graph, you first need to create a request object, and then run the `GET` method on the request.
 
 # [C#](#tab/csharp)
 
@@ -49,7 +49,7 @@ To read information from Microsoft Graph, you first need to create a request obj
 
 ## Use $select to control the properties returned
 
-When retrieving an entity, not all properties are automatically retrieved; sometimes, they need to be explicitly selected. Also, in some scenarios, returning the default set of properties isn't necessary. Selecting just the required properties can improve the performance of the request. You can customize the request to include the `$select` query parameter with a list of properties.
+When retrieving an entity, not all properties are automatically retrieved; sometimes, they need to be explicitly selected. Also, returning the default set of properties isn't necessary in some scenarios. Selecting just the required properties can improve the performance of the request. You can customize the request to include the `$select` query parameter with a list of properties.
 
 <!-- markdownlint-disable MD024 -->
 # [C#](#tab/csharp)
@@ -84,7 +84,7 @@ When retrieving an entity, not all properties are automatically retrieved; somet
 
 ## Retrieve a list of entities
 
-Retrieving a list of entities is similar to retrieving a single entity, except there some other options for configuring the request. The `$filter` query parameter can reduce the result set to only those rows that match the provided condition.  The `$orderby` query parameter will request that the server provide the list of entities sorted by the specified properties.
+Retrieving a list of entities is similar to retrieving a single entity, except other options exist for configuring the request. The `$filter` query parameter can reduce the result set to only those rows that match the provided condition.  The `$orderby` query parameter requests that the server provide the list of entities sorted by the specified properties.
 
 [!INCLUDE [aad-advanced-queries-note](../../includes/aad-advanced-queries-note.md)]
 
