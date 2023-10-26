@@ -1,9 +1,9 @@
 ---
 title: "inactiveServerlessFunctionFinding: aggregatedSummary"
-description: "Get a list of inactive serverless functions compared to all inactive identities"
+description: "A raw count of inactive serverless functions in the specified AWS, Azure, or GCP authorization systems."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You want to view inactive serverless functions in your cloud environments.
+View the raw count of inactive serverless functions in the specified AWS, Azure, or GCP authorization systems in your multicloud environment.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,13 +24,31 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|**SERVICENOWAPI**|
 
 ## HTTP request
-
+Example of an AWS request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveServerlessFunctionFinding/aggregatedSummary
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['{{awsAuthSystemId}}'])
+```
+
+Example of an Azure request
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['{{azureAuthSystemId}}'])
+```
+
+Example of a GCP request
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+GET /beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['{{gcpAuthSystemId}}'])
 ```
 
 ## Function parameters
@@ -39,7 +57,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|authorizationSystemIds|String collection|get a list of authorization system IDs|
+|authorizationSystemIds|String collection|List of authorization system IDs.|
 
 
 ## Request headers
@@ -64,9 +82,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=[
-  "String"
-])
+GET https://canary.graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveServerlessFunctionFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['377596131774','956987887735'])
 ```
 
 
@@ -84,8 +100,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary"
-  }
+    "@odata.context": "https://canary.graph.microsoft.com/beta/$metadata#microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary",
+    "totalCount": 25,
+    "findingsCount": 21
 }
 ```

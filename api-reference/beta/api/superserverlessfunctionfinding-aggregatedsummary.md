@@ -1,9 +1,9 @@
 ---
 title: "superServerlessFunctionFinding: aggregatedSummary"
-description: "View super serverless functions"
+description: "View the raw count of super serverless functions in the specified AWS, Azure, or GCP authorization systems."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+View the raw count of super serverless functions in the specified AWS, Azure, or GCP authorization systems in your multicloud environment.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -25,26 +25,31 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+Example of an AWS request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.superServerlessFunctionFinding/aggregatedSummary
+GET /beta/identityGovernance/permissionsAnalytics/aws/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['{{awsAuthSystemId}}'])
 ```
+
+Example of an Azure request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/graph.superServerlessFunctionFinding/aggregatedSummary
+GET /beta/identityGovernance/permissionsAnalytics/azure/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['{{azureAuthSystemId}}'])
 ```
+
+Example of a GCP request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/graph.superServerlessFunctionFinding/aggregatedSummary
+GET /identityGovernance/permissionsAnalytics/gcp/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['{{gcpAuthSystemId}}'])
 ```
 
 ## Function parameters
@@ -78,9 +83,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=[
-  "String"
-])
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.superServerlessFunctionFinding/aggregatedSummary(authorizationSystemIds=['377596131774','956987887735'])
 ```
 
 
@@ -98,9 +101,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary"
-  }
+    "@odata.context": "https://canary.graph.microsoft.com/beta/$metadata#microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary",
+    "totalCount": 25,
+    "findingsCount": 0
 }
 ```
-

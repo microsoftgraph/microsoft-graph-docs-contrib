@@ -1,6 +1,6 @@
 ---
 title: "inactiveAzureServicePrincipalFinding: aggregatedSummary"
-description: "Get inactive azure service principals"
+description: "View the count of inactive Azure service principals in yor authorization systems."
 author: "ashyasingh"
 ms.localizationpriority: medium
 ms.prod: "governance"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can view inactive azure service principals compared to inactive identities.
+View the count of inactive Azure service principals for the specified authorization systems in your Azure environment.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/betaevan/identityGovernance/permissionsAnalytics/azure/findings/graph.inactiveAzureServicePrincipalFinding/aggregatedSummary
+GET /identityGovernance/permissionsAnalytics/azure/findings/graph.inactiveAzureServicePrincipalFinding/aggregatedSummary(authorizationSystemIds=['{{azureAuthSystemId}}'])
 ```
 
 ## Function parameters
@@ -64,9 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/betaevan/identityGovernance/permissionsAnalytics/azure/findings/graph.inactiveAzureServicePrincipalFinding/aggregatedSummary(authorizationSystemIds=[
-  "String"
-])
+GET https://canary.graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/graph.superAzureServicePrincipalFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['00f7dcae-97f9-492b-af2e-36eb35b613af','23057d68-859a-4afc-a9af-f3ff974583ab'])
 ```
 
 
@@ -84,9 +82,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary"
-  }
+    "@odata.context": "https://canary.graph.microsoft.com/beta/$metadata#microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary",
+    "totalCount": 7,
+    "findingsCount": 1
 }
 ```
 

@@ -1,9 +1,9 @@
 ---
 title: "superAzureServicePrincipalFinding: aggregatedSummary"
-description: "**TODO: Add Description**"
+description: View the count of super Azure service principals in your authorization systems.
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+View the count of super Azure service principals for the specified authorization systems in your Azure environment.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.superAzureServicePrincipalFinding not found/aggregatedSummary
+GET /identityGovernance/permissionsAnalytics/azure/findings/graph.superAzureServicePrincipalFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['{{zureAuthSystemId}}'])
 ```
 
 ## Function parameters
@@ -39,7 +39,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|authorizationSystemIds|String collection|list authorization systems|
+|authorizationSystemIds|String collection|List of authorization system IDs|
 
 
 ## Request headers
@@ -64,9 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/azure/findings/graph.superAzureServicePrincipalFinding/aggregatedSummary(authorizationSystemIds=[
-  "String"
-])
+GET GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/azure/findings/graph.superAzureServicePrincipalFinding/aggregatedSummary(authorizationSystemIds=['00f7dcae-97f9-492b-af2e-36eb35b613af','23057d68-859a-4afc-a9af-f3ff974583ab'])
 ```
 
 
@@ -84,8 +82,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary"
-  }
+    "@odata.context": "https://canary.graph.microsoft.com/beta/$metadata#microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary",
+    "totalCount": 7,
+    "findingsCount": 1
 }
 ```

@@ -1,9 +1,9 @@
 ---
 title: "inactiveAwsResourceFinding: aggregatedSummary"
-description: "**TODO: Add Description**"
+description: View the count of inactive AWS resources in your authorization systems.
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+View the count of inactive AWS resources for the specified authorization systems in your AWS environment.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsResourceFinding/aggregatedSummary(authorizationSystemIds=['{{awsAuthSystemId}}'])
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsResourceFinding/aggregatedSummary(authorizationSystemIds=['{{awsAuthSystemId}}'])
 ```
 
 ## Function parameters

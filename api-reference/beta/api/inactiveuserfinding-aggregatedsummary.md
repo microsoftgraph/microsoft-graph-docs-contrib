@@ -1,9 +1,9 @@
 ---
 title: "inactiveUserFinding: aggregatedSummary"
-description: "view inactive users"
+description: "View the raw count of inactive users in the specified AWS, Azure, or GCP authorization systems."
 author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "governance"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-For example, you want to view the number of inactive user identities in their AWS authorization systems.
+View the raw count of inactive users in the specified AWS, Azure, or GCP authorization systems in your multicloud environment.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,32 +24,38 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|**SERVICENOWAPI**|
 
 ## HTTP request
+
+Example of an AWS request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary
+GET /identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary(authorizationSystemIds=['{{awsAuthSystemId}}'])
 ```
+
+Example of an Azure request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/azure/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary(authorizationSystemIds=['{{azureAuthSystemId}}'])
 ```
+
+Example of a GCP request
 <!-- {
   "blockType": "ignored"
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/gcp/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary(authorizationSystemIds=['{{gcpAuthSystemId}}'])
 ```
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
 The following table shows the parameters that can be used with this function.
-
+|authorizationSystemIds|String collection|The collection of IDs for the authorization systems against which to get the summary of records.|
 |Parameter|Type|Description|
 |:---|:---|:---|
 |authorizationSystemIds|String collection|list of authorization systems|
@@ -77,8 +83,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary(authorizationSystemIds=@p1)/$query
-@p1=[{authorizationSystemIds}]
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.inactiveUserFinding/aggregatedSummary(authorizationSystemIds=['377596131774','956987887735'])
 ```
 
 
@@ -96,18 +101,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary"
-  }
-}
-```
-
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-{
-    "totalCount": 4312,
-    "findingsCount": 121
+    "@odata.context": "https://canary.graph.microsoft.com/beta/$metadata#microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary",
+    "totalCount": 103,
+    "findingsCount": 77
 }
 ```
 
