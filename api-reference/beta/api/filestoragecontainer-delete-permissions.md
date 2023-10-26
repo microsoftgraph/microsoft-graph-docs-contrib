@@ -8,7 +8,8 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Delete permissions from fileStorageContainer
+# Delete permissions from a fileStorageContainer
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
