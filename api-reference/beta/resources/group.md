@@ -322,7 +322,7 @@ The following is a JSON representation of the resource.
   "membersWithLicenseErrors": [{ "@odata.type": "microsoft.graph.user" }],
   "owners": [{ "@odata.type": "microsoft.graph.directoryObject" }],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "photos": { "@odata.type": "microsoft.graph.profilePhoto" },
+  "photos": [{ "@odata.type": "microsoft.graph.profilePhoto" }],
   "rejectedSenders": [{ "@odata.type": "microsoft.graph.directoryObject" }],
   "sites": [{ "@odata.type": "microsoft.graph.site" }],
   "threads": [{ "@odata.type": "microsoft.graph.conversationThread" }],
