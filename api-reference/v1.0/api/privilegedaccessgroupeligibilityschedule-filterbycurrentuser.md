@@ -97,6 +97,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/e
 [!INCLUDE [sample-code](../includes/snippets/php/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-v1-e1-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-v1-e1-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-v1-e1-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -179,6 +183,10 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/privilegedAccess/group/e
 
 # [PHP](#tab/php)
 [!INCLUDE [sample-code](../includes/snippets/php/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-v1-e2-php-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/privilegedaccessgroupeligibilityschedulethisfilterbycurrentuser-v1-e2-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Python](#tab/python)

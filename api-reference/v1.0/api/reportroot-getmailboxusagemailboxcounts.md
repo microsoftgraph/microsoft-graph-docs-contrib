@@ -108,6 +108,10 @@ GET https://graph.microsoft.com/v1.0/reports/getMailboxUsageMailboxCounts(period
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getmailboxusagemailboxcounts-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getmailboxusagemailboxcounts-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/reportroot-getmailboxusagemailboxcounts-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]

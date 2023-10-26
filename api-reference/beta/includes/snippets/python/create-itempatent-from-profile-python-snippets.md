@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ItemPatent(
 	description = "Calculating the intent of a user to purchase an item based on the amount of time they hover their mouse over a given pixel.",
@@ -16,7 +16,7 @@ request_body = ItemPatent(
 	web_url = "https://patents.gov/3954432633",
 )
 
-result = await graph_client.me.profile.patents.post(body = request_body)
+result = await graph_client.me.profile.patents.post(request_body)
 
 
 ```

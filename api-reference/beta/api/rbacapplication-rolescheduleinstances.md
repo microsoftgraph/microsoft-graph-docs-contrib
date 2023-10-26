@@ -92,10 +92,6 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/roleScheduleInstan
 [!INCLUDE [sample-code](../includes/snippets/powershell/rbacapplication-rolescheduleinstances-powershell-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Python](#tab/python)
-[!INCLUDE [sample-code](../includes/snippets/python/rbacapplication-rolescheduleinstances-python-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 ### Response

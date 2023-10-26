@@ -6,10 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 
-result = await graph_client.identity_governance.entitlement_management.acce_package_assignment_requests.by_acces_package_assignment_request_id('accessPackageAssignmentRequest-id').get()
+result = await graph_client.identity_governance.entitlement_management.access_package_assignment_requests.by_access_package_assignment_request_id('accessPackageAssignmentRequest-id').get()
 
 
 ```
