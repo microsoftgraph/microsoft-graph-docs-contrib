@@ -1,6 +1,6 @@
 ---
 title: "enableAndroidDeviceAdministratorEnrollment action"
-description: ""
+description: "Intune Deviceconfig Devicemanagement Enableandroiddeviceadministratorenrollment Api ."
 author: "jaiprakashmb"
 localization_priority: Normal
 ms.prod: "intune"
