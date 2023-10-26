@@ -52,7 +52,7 @@ POST /identity/apiConnectors
 
 In the request body, supply a JSON representation of the [identityApiConnector](../resources/identityapiconnector.md) object.
 
-The following table shows the properties that are required when you create the [identityApiConnector](../resources/identityapiconnector.md).
+The following table lists the properties that are required when you create the [identityApiConnector](../resources/identityapiconnector.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -70,7 +70,7 @@ If successful, this method returns a `201 Created` response code and an [identit
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -131,7 +131,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -163,7 +163,7 @@ Content-Type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 > **Note:** `authenticationConfiguration` in the request is of type [microsoft.graph.pkcs12certificate](../resources/pkcs12certificate.md), which represents the configuration of a certificate needed on upload or create.
 
@@ -226,7 +226,7 @@ Content-Type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** `authenticationConfiguration` in the response is of type [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md) because this represents the public information of uploaded certificates.
 

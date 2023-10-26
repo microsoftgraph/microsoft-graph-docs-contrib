@@ -44,7 +44,7 @@ This method supports the `$select` OData query parameter to help customize the
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

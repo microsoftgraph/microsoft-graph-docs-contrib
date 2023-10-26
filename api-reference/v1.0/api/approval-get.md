@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties of an [approval](../resources/approval.md) object. This API request is made by an approver in the following scenarios:
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), providing the identifier of the [access package assignment request](../resources/accesspackageassignmentrequest.md).
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), providing the identifier of the [access package assignment request](../resources/accesspackageassignmentrequest.md).
 In [PIM for groups](../resources/privilegedidentitymanagement-for-groups-api-overview.md), providing the identifier of the [assignment schedule request](../resources/privilegedaccessgroupassignmentschedulerequest.md).
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
@@ -63,7 +63,7 @@ GET /identityGovernance/privilegedAccess/group/assignmentApprovals/{privilegedac
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -116,7 +116,7 @@ GET https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/ac
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -156,5 +156,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

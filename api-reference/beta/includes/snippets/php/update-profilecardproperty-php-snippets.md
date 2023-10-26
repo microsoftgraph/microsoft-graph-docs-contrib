@@ -13,7 +13,7 @@ $requestBody = new ProfileCardProperty();
 $annotationsProfileCardAnnotation1 = new ProfileCardAnnotation();
 $localizationsDisplayNameLocalization1 = new DisplayNameLocalization();
 $localizationsDisplayNameLocalization1->setLanguageTag('no-NB');
-$localizationsDisplayNameLocalization1->setDisplayName('Kostnads Senter');
+$localizationsDisplayNameLocalization1->setDisplayName('Kostnadssenter');
 $localizationsArray []= $localizationsDisplayNameLocalization1;
 $annotationsProfileCardAnnotation1->setLocalizations($localizationsArray);
 

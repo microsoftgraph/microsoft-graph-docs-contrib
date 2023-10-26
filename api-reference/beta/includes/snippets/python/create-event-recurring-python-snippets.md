@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Event(
 	subject = "Let's go for lunch",
@@ -28,7 +28,7 @@ request_body = Event(
 			interval = 1,
 			days_of_week = [
 				DayOfWeek.Monday,
-			]
+			],
 		),
 		range = RecurrenceRange(
 			type = RecurrenceRangeType.EndDate,
@@ -47,10 +47,10 @@ request_body = Event(
 			),
 			type = AttendeeType.Required,
 		),
-	]
+	],
 )
 
-result = await graph_client.me.events.post(body = request_body)
+result = await graph_client.me.events.post(request_body)
 
 
 ```

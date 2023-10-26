@@ -47,7 +47,7 @@ POST /oauth2PermissionGrants
 
 In the request body, supply a JSON representation of an [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) object.
 
-The following table shows the properties that are required when you create the [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
+The following table lists the properties that are required when you create the [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md).
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|

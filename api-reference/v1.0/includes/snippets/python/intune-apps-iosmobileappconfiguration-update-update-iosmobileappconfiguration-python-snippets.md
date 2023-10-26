@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = IosMobileAppConfiguration(
 	odata_type = "#microsoft.graph.iosMobileAppConfiguration",
 	targeted_mobile_apps = [
 		"Targeted Mobile Apps value",
-	]
+	],
 	description = "Description value",
 	display_name = "Display Name value",
 	version = 7,
@@ -24,10 +24,10 @@ request_body = IosMobileAppConfiguration(
 			app_config_key_type = MdmAppConfigKeyType.IntegerType,
 			app_config_key_value = "App Config Key Value value",
 		),
-	]
+	],
 )
 
-result = await graph_client.device_app_management.mobile_app_configurations.by_mobile_app_configuration_id('managedDeviceMobileAppConfiguration-id').patch(body = request_body)
+result = await graph_client.device_app_management.mobile_app_configurations.by_managed_device_mobile_app_configuration_id('managedDeviceMobileAppConfiguration-id').patch(request_body)
 
 
 ```

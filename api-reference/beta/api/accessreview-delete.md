@@ -1,6 +1,6 @@
 ---
 title: "Delete accessReview (deprecated)"
-description: "In the Azure AD access reviews feature, delete an accessReview object."
+description: "In the Microsoft Entra access reviews feature, delete an accessReview object."
 ms.localizationpriority: medium
 author: "shubhamguptacal"
 ms.prod: "governance"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, delete an [accessReview](../resources/accessreview.md) object.
+In the Microsoft Entra [access reviews](../resources/accessreviews-root.md) feature, delete an [accessReview](../resources/accessreview.md) object.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -41,11 +41,11 @@ DELETE /accessReviews/{reviewId}
 | Authorization | string | Bearer \{token\}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 
 ## Response
-If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204, No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 ##### Request
@@ -116,5 +116,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

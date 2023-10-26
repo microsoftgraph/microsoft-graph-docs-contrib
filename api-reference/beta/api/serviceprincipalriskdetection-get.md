@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [servicePrincipalRiskDetection](../resources/serviceprincipalriskdetection.md) object.
 
->**Note:** You must have an Entra Workload Identity Premium license to use the servicePrincipalRiskDetection API.
+>**Note:** You must have a Microsoft Entra Workload ID Premium license to use the servicePrincipalRiskDetection API.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -45,7 +45,7 @@ GET /identityProtection/servicePrincipalRiskDetections/{servicePrincipalRiskDete
 |Content-Type|application/json|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -141,4 +141,3 @@ Content-Type: application/json
   }
 }
 ```
-

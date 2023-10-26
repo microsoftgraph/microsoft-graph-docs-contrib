@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Parse a given string expression into an [attributeMappingSource](../resources/synchronization-attributemappingsource.md) object.
 
-For more information about expressions, see [Writing Expressions for Attribute Mappings in Azure Active Directory](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
+For more information about expressions, see [Writing Expressions for Attribute Mappings in Microsoft Entra ID](/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and a [parseExpressi
 ## Example
 
 ##### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -130,7 +130,7 @@ Content-type: application/json
 ---
 
 ##### Response
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -208,5 +208,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

@@ -24,7 +24,7 @@ $additionalData = [
 		],
 		'trigger' => [
 			'@odata.type' => '#microsoft.graph.identityGovernance.timeBasedAttributeTrigger',
-			'timeBasedAttribute' => 'employeeHireDate',
+			'timeBasedAttribute' => new WorkflowTriggerTimeBasedAttribute('employeeHireDate'),
 			'offsetInDays' => 0,
 		],
 	],

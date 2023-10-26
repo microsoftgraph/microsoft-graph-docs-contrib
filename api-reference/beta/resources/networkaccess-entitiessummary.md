@@ -23,6 +23,8 @@ entitiesSummary provides key information about unique connectivity entities.
 |userCount|Int64|Count of unique Azure Active Directoy users that were seen.|
 |workloadCount|Int64|Count of unique target workloads/hosts that were seen.|
 
+
+
 ## Relationships
 None.
 
@@ -42,4 +44,3 @@ The following is a JSON representation of the resource.
   "workloadCount": "Integer"
 }
 ```
-

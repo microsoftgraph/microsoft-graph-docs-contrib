@@ -28,9 +28,10 @@ This is step 4 of the [process to migrate apps](migrate-azure-ad-graph-planning-
 3.  **Explore new value**
 
     Now you've made the switch to Microsoft Graph, it's never been easier for you to unlock many more datasets and features that are now at your fingertips. 
-    Microsoft Graph supports many new Azure Active Directory (Azure AD) datasets and features that aren't available in Azure Active Directory (Azure AD) Graph.
+    
+    Microsoft Graph supports many new Microsoft Entra datasets and features that aren't available in Azure Active Directory (Azure AD) Graph.
 
-    Microsoft Graph offers access to many more services than just Azure Active Directory. It's the [API gateway to Microsoft 365 services too](./index.yml).
+    Microsoft Graph offers access to many more services than just Microsoft Entra ID. It's the [API gateway to Microsoft 365 services and other Microsoft Entra services](./index.yml).
     Check for new datasets and capabilities regularly.  
 
     - See [Major services and features in Microsoft Graph](overview-major-services.md).

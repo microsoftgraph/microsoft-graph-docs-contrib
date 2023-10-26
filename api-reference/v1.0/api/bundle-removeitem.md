@@ -72,7 +72,7 @@ DELETE https://graph.microsoft.com/v1.0/drive/bundles/{bundle-id}/children/{item
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response" } -->
 

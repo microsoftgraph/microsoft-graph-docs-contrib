@@ -10,7 +10,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-In [Azure AD Entitlement Management](../resources/entitlementmanagement-overview.md), cancel [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects that are in a cancellable state: `accepted`, `pendingApproval`, `pendingNotBefore`, `pendingApprovalEscalated`.
+In [Microsoft Entra Entitlement Management](../resources/entitlementmanagement-overview.md), cancel [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) objects that are in a cancellable state: `accepted`, `pendingApproval`, `pendingNotBefore`, `pendingApprovalEscalated`.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -39,11 +39,11 @@ POST /identityGovernance/entitlementManagement/assignmentRequests/{accessPackage
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code.  It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code.  It doesn't return anything in the response body.
 
 ## Examples
 
@@ -103,5 +103,3 @@ POST https://graph.microsoft.com/v1.0/identityGovernance/entitlementManagement/a
 ``` http
 HTTP/1.1 200 Status OK
 ```
-
-
