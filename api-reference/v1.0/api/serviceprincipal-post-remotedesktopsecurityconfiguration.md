@@ -57,7 +57,7 @@ If successful, this method returns a `201 Created` response code and a [remoteDe
 ## Examples
 
 ### Request
-Here's an example of the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "create_remotedesktopsecurityconfiguration_from_"
@@ -75,7 +75,7 @@ Content-Type: application/json
 
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

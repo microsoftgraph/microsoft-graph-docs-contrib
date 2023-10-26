@@ -50,7 +50,7 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-Here's an example of the request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "delete_targetdevicegroup"
@@ -62,7 +62,7 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/00af5dfb-85da-4b41-a67
 
 
 ### Response
-Here's an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true
