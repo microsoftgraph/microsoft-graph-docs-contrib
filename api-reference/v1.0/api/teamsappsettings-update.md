@@ -1,6 +1,6 @@
 ---
 title: "Update teamsAppSettings"
-description: "Update the properties of a teamsAppSettings object."
+description: "Update the tenant-wide teamsAppSettings for all Teams apps in the tenant."
 author: "subray2014"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -19,7 +19,7 @@ Update the tenant-wide [teamsAppSettings](../resources/teamsappsettings.md) for 
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
->**Note:** Only global administrators and Teams administrators can call this API.
+>**Note:** Only Global Administrators and Teams Administrators can call this API.
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
@@ -58,10 +58,8 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-The following example shows how to allow Teams users to request access to certain Teams apps.
-
 ### Request
-The following example shows the request.
+The following example shows how to allow Teams users to request access to certain Teams apps.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -113,6 +111,7 @@ Content-Type: application/json
 ---
 
 ### Response
+
 The following example shows the response.
 
 <!-- {
