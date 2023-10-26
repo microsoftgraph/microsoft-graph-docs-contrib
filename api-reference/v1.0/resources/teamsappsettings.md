@@ -1,6 +1,6 @@
 ---
 title: "teamsAppSettings resource type"
-description: "Represents Teams App Settings"
+description: "Represents tenant-wide settings for all Teams apps in the tenant."
 author: "sthapliyal"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
@@ -30,7 +30,7 @@ Inherits from [entity](../resources/entity.md).
 None.
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
