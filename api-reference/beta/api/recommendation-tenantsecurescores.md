@@ -1,6 +1,6 @@
 ---
 title: "recommendation: tenantSecureScores"
-description: "**TODO: Add Description**"
+description: "Get historical tenant secure score for an Entra tenant."
 author: "sacsai"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Get historical tenant secure score for an Entra tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
