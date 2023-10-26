@@ -1,9 +1,9 @@
 ---
 title: "List awsExternalSystemAccessFindings"
 description: "Get a list of the awsExternalSystemAccessFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.awsExternalSystemAccessFinding not found
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.awsExternalSystemAccessFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$filter` and `$orderby` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.awsExternalSystemAccessFinding not found
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.awsExternalSystemAccessFinding
 ```
 
 
@@ -76,19 +76,30 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.awsExternalSystemAccessFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.awsExternalSystemAccessFinding",
-      "id": "c921da9a-fe6b-3c85-2dea-4d637d130e1e",
-      "createdDateTime": "String (timestamp)",
-      "trustsAllIdentities": "Boolean",
-      "accessMethods": "String",
-      "trustedIdentityCount": "Integer",
-      "systemWithAccess": {
-        "@odata.type": "microsoft.graph.authorizationSystemInfo"
-      }
+    "@odata.type": "graph.awsExternalSystemAccessFinding",
+    "id": "YXdzRXh0ZXJuYWxTeXN0ZW1BY2Nlc3NGaW5kaW5nMTAwMDE",
+    "trustsAllIdentities": false,
+    "trustedIdentityCount": 10,
+    "accessMethods": "direct,roleChaining",
+    "affectedSystem": {
+      "@odata.type": "graph.awsAuthorizationSystem",
+      "id": "MSxhd3MsOTU2OTg3ODg3NzM1",
+      "authorizationSystemId": "956987887735",
+      "authorizationSystemName": "cloudknox-development",
+      "authorizationSystemType": "aws"
+    },
+    "systemWithAccess": {
+            "id": "377596131774",
+            "displayName": "cloudknox-staging",
+            "authorizationSystemType": "aws"
+          }
+    "createdDateTime": "2020-10-11T20:11:45.6711Z",
     }
-  ]
+  ],
+  "@odata.nextLink": "https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.awsExternalSystemAccessFinding?$skiptoken=foobar"
 }
 ```
 

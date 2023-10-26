@@ -1,9 +1,9 @@
 ---
 title: "List awsExternalSystemAccessRoleFindings"
 description: "Get a list of the awsExternalSystemAccessRoleFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.awsExternalSystemAccessRoleFinding not found
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.awsExternalSystemAccessRoleFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$filter` and `$orderby` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.awsExternalSystemAccessRoleFinding not found
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.awsExternalSystemAccessRoleFinding
 ```
 
 
@@ -76,19 +76,39 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.awsExternalSystemAccessRoleFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.awsExternalSystemAccessRoleFinding",
-      "id": "eea1a82c-5e19-f78a-6991-5a2f7702a71e",
-      "createdDateTime": "String (timestamp)",
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
+    "@odata.type": "graph.awsExternalSystemAccessRoleFinding",
+    "id": "YXdzQ3Jvc3NTeXN0ZW1BY2Nlc3NSb2xlRmluZGluZ3MxMDAwMQ",
+    "permissionsCreepIndex": {
+      "score": 99
+    },
+    "role": {
+      "@odata.type": "graph.awsRole",
+      "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDpyb2xlL0VORzMwNDQ=",
+      "externalId": "arn:aws:iam::377596131774:role/ENG3044",
+      "displayName": "ENG3044",
+      "source": {
+        "@odata.type": "graph.awsSource",
+        "identityProviderType": "aws",
+        "accountId": "956987887735"
       },
-      "accessibleSystemIds": [
-        "String"
-      ]
+      "authorizationSystem": {
+        "@odata.type": "graph.awsAuthorizationSystem",
+        "id": "{Id}",
+        "authorizationSystemId": "956987887735",
+        "authorizationSystemName": "cloudknox-development",
+        "authorizationSystemType": "aws"
+      }
+    },
+    "accessibleSystemIds": [
+      "377596131774",
+    ],
+    "createdDateTime": "2020-10-11T20:11:45.6711Z",
     }
-  ]
+  ],
+  "@odata.nextLink": "https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.awsExternalSystemAccessRoleFinding?$skiptoken=foobar"
 }
 ```
 

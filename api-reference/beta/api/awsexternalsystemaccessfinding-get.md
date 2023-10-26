@@ -1,9 +1,9 @@
 ---
 title: "Get awsExternalSystemAccessFinding"
 description: "Read the properties and relationships of an awsExternalSystemAccessFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /awsExternalSystemAccessFinding
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.awsExternalSystemAccessFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports none of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/awsExternalSystemAccessFinding
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('MSxBd3NFeHRlcm5hbFN5c3RlbUFjY2Vzc0ZpbmRpbmcsMTg5NzE')/graph.awsExternalSystemAccessFinding
 ```
 
 
@@ -76,17 +76,19 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.awsExternalSystemAccessFinding",
-    "id": "c921da9a-fe6b-3c85-2dea-4d637d130e1e",
-    "createdDateTime": "String (timestamp)",
-    "trustsAllIdentities": "Boolean",
-    "accessMethods": "String",
-    "trustedIdentityCount": "Integer",
-    "systemWithAccess": {
-      "@odata.type": "microsoft.graph.authorizationSystemInfo"
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.awsExternalSystemAccessFinding/$entity",
+    "id": "MSxBd3NFeHRlcm5hbFN5c3RlbUFjY2Vzc0ZpbmRpbmcsMTg5NzE",
+    "createdDateTime": "2023-10-25T23:48:18.389587Z",
+    "trustsAllIdentities": true,
+    "trustedIdentityCount": null,
+    "accessMethods": "direct",
+    "affectedSystem": {
+        "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
+        "authorizationSystemId": "956987887735",
+        "authorizationSystemName": "ck-development",
+        "authorizationSystemType": "aws",
+        "id": "MSxhd3MsOTU2OTg3ODg3NzM1"
     }
-  }
 }
 ```
 
