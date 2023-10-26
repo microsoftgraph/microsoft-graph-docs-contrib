@@ -70,9 +70,22 @@ maxLifetime , err := abstractions.ParseISODuration("P90D")
 keyCredentialConfiguration.SetMaxLifetime(&maxLifetime) 
 restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2014-10-19T10:37:00Z")
 keyCredentialConfiguration.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
+keyCredentialConfiguration1 := graphmodels.NewKeyCredentialConfiguration()
+restrictionType := graphmodels.TRUSTEDCERTIFICATEAUTHORITY_APPKEYCREDENTIALRESTRICTIONTYPE 
+keyCredentialConfiguration1.SetRestrictionType(&restrictionType) 
+restrictForAppsCreatedAfterDateTime , err := time.Parse(time.RFC3339, "2019-10-19T10:37:00Z")
+keyCredentialConfiguration1.SetRestrictForAppsCreatedAfterDateTime(&restrictForAppsCreatedAfterDateTime) 
+certificateBasedApplicationConfigurationIds := []string {
+	"eec5ba11-2fc0-4113-83a2-ed986ed13743",
+	"bb8e164b-f9ed-4b98-bc45-65eddc14f4c1",
+}
+keyCredentialConfiguration1.SetCertificateBasedApplicationConfigurationIds(certificateBasedApplicationConfigurationIds)
+maxLifetime := null
+keyCredentialConfiguration1.SetMaxLifetime(&maxLifetime) 
 
 keyCredentials := []graphmodels.KeyCredentialConfigurationable {
 	keyCredentialConfiguration,
+	keyCredentialConfiguration1,
 }
 restrictions.SetKeyCredentials(keyCredentials)
 requestBody.SetRestrictions(restrictions)

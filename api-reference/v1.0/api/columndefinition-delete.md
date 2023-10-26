@@ -41,7 +41,7 @@ DELETE /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{c
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

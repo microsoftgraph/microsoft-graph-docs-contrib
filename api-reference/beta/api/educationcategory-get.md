@@ -45,7 +45,7 @@ This method supports the `$select` OData query parameter to help customize the r
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and an [educationCat
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -104,7 +104,7 @@ GET https://graph.microsoft.com/beta/education/classes/dacbf757-888d-42ae-b701-5
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

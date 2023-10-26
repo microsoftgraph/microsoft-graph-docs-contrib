@@ -45,7 +45,7 @@ GET /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installat
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -57,7 +57,7 @@ If successful, this method returns a `200 OK` response code and an [app](../reso
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -105,7 +105,7 @@ GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps/{id}
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -131,7 +131,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -179,7 +179,7 @@ GET https://graph.microsoft.com/beta/users/5b649834-7412-4cce-9e69-176e95a394f5/
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

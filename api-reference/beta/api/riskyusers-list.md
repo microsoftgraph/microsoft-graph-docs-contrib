@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a collection of **riskyUser** objects.
 
->**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
+>**Note:** Using the riskyUsers API requires a Microsoft Entra ID P2 license.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -45,7 +45,7 @@ This method supports `$filter` to customize the query response. See the example 
 | Workbook-Session-Id  | Workbook session ID that determines whether changes are persisted. Optional.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [riskyUser](../resources/riskyuser.md) objects in the response body.
@@ -215,5 +215,3 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
-
-

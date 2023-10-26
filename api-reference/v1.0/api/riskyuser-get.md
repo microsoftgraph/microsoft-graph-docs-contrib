@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 Read the properties and relationships of a [riskyUser](../resources/riskyuser.md) object.
 
->**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
+>**Note:** Using the riskyUsers API requires a Microsoft Entra ID P2 license.
 
 [!INCLUDE [national-cloud-support](../../includes/global-us.md)]
 
@@ -46,7 +46,7 @@ This method supports some of the OData query parameters to help customize the re
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -129,5 +129,3 @@ Content-Type: application/json
   ]
 }
 ```
-
-

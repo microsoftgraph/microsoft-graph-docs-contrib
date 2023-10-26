@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 The following conditions apply for apps to delete role-assignable groups:
 + For delegated scenarios, the app must be assigned the _RoleManagement.ReadWrite.Directory_ delegated permission, and the calling user must be the creator of the group or a global administrator or a privileged role administrator.
-+ For app-only scenarios, the calling app must be the owner of the group or be assigned the _RoleManagement.ReadWrite.Directory_ application permission or be assigned the Global Administrator or Privileged Role Administrator Azure AD role.
++ For app-only scenarios, the calling app must be the owner of the group or be assigned the _RoleManagement.ReadWrite.Directory_ application permission or be assigned the Global Administrator or Privileged Role Administrator Microsoft Entra role.
 
 ## HTTP request
 
@@ -47,17 +47,17 @@ DELETE /groups/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 
@@ -106,7 +106,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

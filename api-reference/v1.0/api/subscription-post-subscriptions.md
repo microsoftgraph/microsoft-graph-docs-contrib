@@ -173,6 +173,11 @@ Content-type: application/json
 In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
 The `clientState` and `latestSupportedTlsVersion` fields are optional.
 
+#### Duplicate subscription behavior
+
+Duplicate subscriptions are not allowed. When a subscription request contains the same values for **changeType** and **resource** that an existing subscription contains, the request will fail with an HTTP error code `409 Conflict`, and the error message `Subscription Id <> already exists for the requested combination`.
+
+
 #### Resources examples
 
 The following are valid values for the resource property of the subscription:
@@ -200,7 +205,7 @@ The following are valid values for the resource property of the subscription:
 
 ### Response
 
-The following is an example of the response. 
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -230,6 +235,7 @@ Content-type: application/json
 #### Notification endpoint validation
 
 The subscription notification endpoint (specified in the `notificationUrl` property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.
+
 
 [error-response]: /graph/errors
 

@@ -3,7 +3,7 @@ title: "Update enrichedAuditLogs"
 description: "Update the settings for the enriched audit logs workloads to control the enrichment feature for each partner workload, such as SharePoint, Teams, and Exchange."
 author: "Moti-ba"
 ms.localizationpriority: medium
-ms.prod: identity-and-access
+ms.prod: global-secure-access
 doc_type: apiPageType
 ---
 
@@ -118,7 +118,7 @@ Content-Type: application/json
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

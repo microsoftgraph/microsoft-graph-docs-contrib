@@ -66,7 +66,7 @@ The following properties can be used for `$select` calls.
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method. 
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [microsoft.graph.security.hostPair](../resources/security-hostpair.md) objects in the response body.
@@ -111,6 +111,10 @@ GET https://graph.microsoft.com/v1.0/security/threatIntelligence/hosts/contoso.c
 [!INCLUDE [sample-code](../includes/snippets/php/list-childhostpair-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/list-childhostpair-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/list-childhostpair-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -120,7 +124,7 @@ GET https://graph.microsoft.com/v1.0/security/threatIntelligence/hosts/contoso.c
 ---
 
 ### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

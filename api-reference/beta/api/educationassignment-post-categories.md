@@ -47,7 +47,7 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Example
 ##### Request
-The following is an example of the request.
+The following example shows a request.
 <!-- {
   "blockType": "ignored",
   "name": "add_educationcategory_to_educationassignment",
@@ -64,7 +64,7 @@ Content-type: application/json
 ```
 In the request body, supply the odata.id of the existing [educationCategory](../resources/educationcategory.md) object to add to this assignment.
 ##### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 

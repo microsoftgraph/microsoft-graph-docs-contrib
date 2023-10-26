@@ -79,7 +79,7 @@ The following [OData query parameters](/graph/query-parameters) are supported by
 
 ## Request Body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

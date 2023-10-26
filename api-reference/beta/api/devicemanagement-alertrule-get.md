@@ -45,7 +45,7 @@ GET /deviceManagement/monitoring/alertRules/{alertRuleId}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -104,7 +104,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/monitoring/alertRules/3007
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -133,16 +133,10 @@ Content-Type: application/json
     "notificationChannels": [
         {
             "notificationChannelType": "portal",
-            "receivers": [
-                ""
-            ],
             "notificationReceivers": []
         },
         {
             "notificationChannelType": "email",
-            "receivers": [
-                "serena.davis@contoso.com"
-            ],
             "notificationReceivers": [
                 {
                     "locale": "en-us",

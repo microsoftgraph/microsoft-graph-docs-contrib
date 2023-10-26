@@ -46,7 +46,7 @@ This method supports the `$select` OData query parameter to help customize the r
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -102,7 +102,7 @@ GET https://graph.microsoft.com/beta/directory/recommendations/0cb31920-84b9-471
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -134,6 +134,7 @@ Content-Type: application/json
   "category": "identityBestPractice",
   "status": "active",
   "priority": "medium",
+  "releaseType": "preview",
   "impactType": "users",
   "remediationImpact": "",
   "actionSteps": [

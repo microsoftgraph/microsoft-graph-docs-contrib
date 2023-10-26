@@ -51,7 +51,7 @@ GET /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns/{colu
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -108,7 +108,7 @@ GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 
 ### Response
 
-The following is an example of the response.  
+The following example shows the response.
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.columnDefinition", "truncated": true } -->
 

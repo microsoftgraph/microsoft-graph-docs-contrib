@@ -49,7 +49,7 @@ POST /deviceManagement/virtualEndpoint/userSettings
 
 In the request body, supply a JSON representation of the [cloudPcUserSetting](../resources/cloudpcusersetting.md) object.
 
-The following table shows the properties that are required when you create the [cloudPcUserSetting](../resources/cloudpcusersetting.md).
+The following table lists the properties that are required when you create the [cloudPcUserSetting](../resources/cloudpcusersetting.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

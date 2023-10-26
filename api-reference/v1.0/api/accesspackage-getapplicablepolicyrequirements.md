@@ -10,7 +10,7 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-overview.md), this action retrieves a list of [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) objects that the currently signed-in user can use to create an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).  Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
+In [Microsoft Entra entitlement management](../resources/entitlementmanagement-overview.md), this action retrieves a list of [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) objects that the currently signed-in user can use to create an [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md).  Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -39,7 +39,7 @@ POST /identityGovernance/entitlementManagement/accessPackages/{accessPackageId}/
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and an [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) collection in the response body, one object for each policy for which the user is an **allowedRequestor**. If there is a policy with no requirements, the **accessPackageAssignmentRequestRequirements** will have `false` and `null` values. If there are no policies where the user is an **allowedRequestor**, an empty collection will be returned instead.
@@ -115,5 +115,3 @@ Content-Type: application/json
   ]
 }
 ```
-
-

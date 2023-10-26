@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Device.ReadWrite.All |
 
-The calling user must also be in one of the following [Azure AD roles](/azure/active-directory/roles/permissions-reference): *Global Administrator*, *Intune Administrator*, *Windows 365 Administrator*, or *Cloud Device Administrator*.
+The calling user must also be in one of the following [Microsoft Entra roles](/azure/active-directory/roles/permissions-reference): *Global Administrator*, *Intune Administrator*, *Windows 365 Administrator*, or *Cloud Device Administrator*.
 
 ## HTTP request
 
@@ -42,11 +42,11 @@ DELETE /devices(deviceId='{deviceId}')
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 ### Request
@@ -116,4 +116,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

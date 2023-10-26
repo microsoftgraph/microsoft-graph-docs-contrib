@@ -65,7 +65,6 @@ If successful, this method returns a `200 OK` response code and an updated [micr
 
 The following is an example of a request.
 
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -87,16 +86,10 @@ Content-Type: application/json
   "notificationChannels": [
       {
         "notificationChannelType": "portal",
-        "receivers": [
-            ""
-        ],
         "notificationReceivers": []
       },
       {
         "notificationChannelType": "email",
-        "receivers": [
-            "serena.davis@contoso.com"
-        ],
         "notificationReceivers": [
             {
                 "locale": "en-us",
@@ -144,7 +137,7 @@ Content-Type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -173,16 +166,10 @@ Content-Type: application/json
   "notificationChannels": [
       {
         "notificationChannelType": "portal",
-        "receivers": [
-            ""
-        ],
         "notificationReceivers": []
       },
       {
         "notificationChannelType": "email",
-        "receivers": [
-            "serena.davis@contoso.com"
-        ],
         "notificationReceivers": [
             {
                 "locale": "en-us",

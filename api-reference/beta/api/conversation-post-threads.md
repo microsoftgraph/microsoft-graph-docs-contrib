@@ -50,7 +50,7 @@ If successful, this method returns `201 Created` response code and a [conversati
 
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -115,7 +115,7 @@ In the request body, supply a JSON representation of [conversationThread](../res
 
 If successful, this method returns `201 Created` response code and the `id` of the new thread in the response body.
 
-The following is an example of the response.
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,6 +1,6 @@
 ---
 title: "Delete programControl (deprecated)"
-description: "In the Azure AD access reviews feature, delete a programControl object.  This unlinks an access review from a program."
+description: "In the Microsoft Entra access reviews feature, delete a programControl object.  This unlinks an access review from a program."
 ms.localizationpriority: medium
 doc_type: apiPageType
 ms.prod: "governance"
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [accessreviews-disclaimer](../../includes/accessreviews-disclaimer.md)]
 
-In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, delete a [programControl](../resources/programcontrol.md) object.  This unlinks an access review from a program.
+In the Microsoft Entra [access reviews](../resources/accessreviews-root.md) feature, delete a [programControl](../resources/programcontrol.md) object.  This unlinks an access review from a program.
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
@@ -41,11 +41,11 @@ DELETE /programControls/{id}
 | Authorization | string | Bearer \{token\}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 
 ## Response
-If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204, No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 ##### Request
@@ -116,5 +116,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-
