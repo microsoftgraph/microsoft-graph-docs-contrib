@@ -20,10 +20,10 @@ For more information about how to add properties to the profile card for an orga
 | Method       | Return Type | Description |
 |:-------------------------------------------------------------|:----------------------------------------------|:-----------------------------------------------------------------|
 | [List profileCardProperties](../api/peopleadminsettings-list-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) collection | Get a collection of [profileCardProperty](../resources/profilecardproperty.md) resources for an organization. |
-| [Add profileCardProperty](../api/peopleadminsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Add a new [profileCardProperty](../resources/profilecardproperty.md) for an organization. |
+| [Create profileCardProperty](../api/peopleadminsettings-post-profilecardproperties.md) | [profileCardProperty](profilecardproperty.md) | Create a new [profileCardProperty](../resources/profilecardproperty.md) for an organization. |
 | [Get profileCardProperty](../api/profilecardproperty-get.md) | [profileCardProperty](profilecardproperty.md) | Retrieve the properties of a [profileCardProperty](../resources/profilecardproperty.md) entity. |
 | [Update profileCardProperty](../api/profilecardproperty-update.md)               | [profileCardProperty](profilecardproperty.md) | Update the properties of a [profileCardProperty](../resources/profilecardproperty.md) object, identified by its **directoryPropertyName** property.                               |
-| [Remove profileCardProperty](../api/profilecardproperty-delete.md)               | None                                          | Remove the [profileCardProperty](../resources/profilecardproperty.md) object specified by its **directoryPropertyName** from the organization's profile card, and remove any localized customizations for that property.                               |
+| [Delete profileCardProperty](../api/profilecardproperty-delete.md)               | None                                          | Delete the [profileCardProperty](../resources/profilecardproperty.md) object specified by its **directoryPropertyName** from the organization's profile card, and remove any localized customizations for that property.                               |
 
 ## Properties
 
@@ -38,7 +38,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
