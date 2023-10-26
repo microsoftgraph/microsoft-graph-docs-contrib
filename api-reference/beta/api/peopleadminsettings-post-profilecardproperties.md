@@ -7,7 +7,7 @@ ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
-# Add profileCardProperty
+# Create profileCardProperty
 
 Namespace: microsoft.graph
 
