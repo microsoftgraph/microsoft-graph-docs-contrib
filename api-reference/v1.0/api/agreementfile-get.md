@@ -43,7 +43,7 @@ This method does not support any OData query parameters to help customize the re
 |Accept-Language|A valid ISO 639-1 locale. Optional.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

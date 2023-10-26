@@ -147,7 +147,7 @@ Binary data for the image
 ---
 
 #### Response
-The following is an example of the response. 
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -196,7 +196,7 @@ Binary data for the image
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",

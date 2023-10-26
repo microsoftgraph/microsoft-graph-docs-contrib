@@ -73,7 +73,7 @@ You can filter on the `roleDefinitionId` or `principalId` properties. The `roleD
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

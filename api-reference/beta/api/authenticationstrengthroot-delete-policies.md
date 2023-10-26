@@ -43,7 +43,7 @@ DELETE /policies/authenticationStrengthPolicies/{authenticationStrengthPolicyId}
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -75,7 +75,7 @@ DELETE https://graph.microsoft.com/beta/policies/authenticationStrengthPolicies/
 ---
 
 ### Response
-The following is an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

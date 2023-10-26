@@ -49,7 +49,7 @@ POST /compliance/ediscovery/cases/{caseId}/legalHolds/{legalholdId}/siteSources
 
 In the request body, supply a JSON representation of the [siteSource](../resources/ediscovery-sitesource.md) object.
 
-The following table shows the properties that are required when you create the [siteSource](../resources/ediscovery-sitesource.md).
+The following table lists the properties that are required when you create the [siteSource](../resources/ediscovery-sitesource.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
