@@ -1,9 +1,9 @@
 ---
 title: "tenantSecureScore resource type"
-description: "Represents tenant secure score for your Microsoft Entra tenant."
-author: "sacsai"
+description: "**TODO: Add Description**"
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 ms.localizationpriority: medium
-ms.prod: "identity-and-access"
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
 doc_type: resourcePageType
 ---
 
@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Tenant secure score properties.
+**TODO: Add Description**
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createDateTime|DateTimeOffset|Date on which score was computed.|
-|tenantMaxScore|Int64|Tenant MaxScore|
-|tenantScore|Int64|Score achieved by tenant|
+|createDateTime|DateTimeOffset|**TODO: Add Description**|
+|tenantMaxScore|Int64|**TODO: Add Description**|
+|tenantScore|Int64|**TODO: Add Description**|
 
 ## Relationships
 None.

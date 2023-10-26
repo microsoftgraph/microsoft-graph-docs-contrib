@@ -1,6 +1,6 @@
 ---
 title: "recommendation: tenantSecureScores"
-description: "Get historical tenant secure scores"
+description: "**TODO: Add Description**"
 author: "sacsai"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access"
