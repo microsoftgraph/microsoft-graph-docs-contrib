@@ -49,7 +49,7 @@ requestBody.SetPinExpirationInDays(&pinExpirationInDays)
 enhancedBiometricsState := graphmodels.ENABLED_ENABLEMENT 
 requestBody.SetEnhancedBiometricsState(&enhancedBiometricsState) 
 
-result, err := graphClient.DeviceManagement().DeviceEnrollmentConfigurations().ByDeviceEnrollmentConfigurationId("deviceEnrollmentConfiguration-id").Patch(context.Background(), requestBody, nil)
+deviceEnrollmentConfigurations, err := graphClient.DeviceManagement().DeviceEnrollmentConfigurations().ByDeviceEnrollmentConfigurationId("deviceEnrollmentConfiguration-id").Patch(context.Background(), requestBody, nil)
 
 
 ```

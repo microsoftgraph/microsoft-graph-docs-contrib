@@ -4,26 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```python
 
-// THE PYTHON SDK IS IN PREVIEW. NON-PRODUCTION USE ONLY
-client =  GraphServiceClient(request_adapter)
+# THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-request_body = WindowsDefenderAdvancedThreatProtectionConfiguration()
-request_body.@odata_type = '#microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration'
+graph_client = GraphServiceClient(request_adapter)
 
-request_body.description = 'Description value'
+request_body = WindowsDefenderAdvancedThreatProtectionConfiguration(
+	odata_type = "#microsoft.graph.windowsDefenderAdvancedThreatProtectionConfiguration",
+	description = "Description value",
+	display_name = "Display Name value",
+	version = 7,
+	allow_sample_sharing = True,
+	enable_expedited_telemetry_reporting = True,
+)
 
-request_body.display_name = 'Display Name value'
-
-request_body.Version = 7
-
-request_body.allow_sample_sharing = True
-
-request_body.enable_expedited_telemetry_reporting = True
-
-
-
-
-result = await client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(request_body = request_body)
+result = await graph_client.device_management.device_configurations.by_device_configuration_id('deviceConfiguration-id').patch(body = request_body)
 
 
 ```

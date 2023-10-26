@@ -25,7 +25,7 @@ requestBody.SetVersion(&version)
 uninstallBuiltInApps := true
 requestBody.SetUninstallBuiltInApps(&uninstallBuiltInApps) 
 
-result, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
+deviceConfigurations, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
 
 
 ```
