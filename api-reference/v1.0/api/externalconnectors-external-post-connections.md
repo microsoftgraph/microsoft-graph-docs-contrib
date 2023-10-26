@@ -59,6 +59,8 @@ You can specify the following properties when creating an [externalConnection](.
 
 If successful, this method returns a `201 Created` response code and an [externalConnection](../resources/externalconnectors-externalconnection.md) object in the response body.
 
+>**Note:** When creating an external connection with a broken adaptive card for the result layout, the first call will fail with a `503 Service Unavailable`. Upon second try, the second call will fail with `409 Conflict` saying that the connection with the same name already exists. This happens because the connection was still created even though the first call failed with `503 Service Unavailable`. This is a [Known Issue](https://developer.microsoft.com/en-us/graph/known-issues/?search=) we are tracking.
+
 ## Examples
 
 ### Request
