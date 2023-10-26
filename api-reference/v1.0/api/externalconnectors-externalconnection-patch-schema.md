@@ -40,7 +40,7 @@ When you register a custom item schema, the **schema** object **must** have the 
 
 If successful, this method returns a `202 Accepted` response code and a URL in the `Location` response header that can be used to [get the operation status](../api/externalconnectors-connectionoperation-get.md).
 
-Note, it may take anywhere from 5 to 15 minutes to register the schema. It is advised to poll the job status for schema registration once a minute until the GET operation status returns a `200 OK`. 
+>**Note:** It can take between 5 and 15 minutes to register the schema. We recommend that you poll the status property for schema registration in the response body one time per minute until it shows it is completed. 
 
 ## Examples
 
