@@ -84,7 +84,7 @@ The following is an example of a request.
   "name": "delete_profilephoto"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/photo/$value
+DELETE https://graph.microsoft.com/beta/me/photo/$value
 ```
 #### Response
 
