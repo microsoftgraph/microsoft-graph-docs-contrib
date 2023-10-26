@@ -51,7 +51,7 @@ None.
 
 ## JSON representation
 
-The following JSON representation shows of the resource type.
+The following JSON representation shows the resource type.
 
 <!-- {
   "blockType": "resource",
