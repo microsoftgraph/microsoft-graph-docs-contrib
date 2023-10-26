@@ -48,7 +48,7 @@ This method supports some of the OData query parameters to help customize the re
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a [printServiceEndpoint](../resources/printserviceendpoint.md) object in the response body.
@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a [printServiceE
 
 ##### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/print/services/{id}/endpoints/{name}
 
 ##### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {

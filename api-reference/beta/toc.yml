@@ -12602,10 +12602,12 @@ items:
                     items:
                       - name: Federated domain configuration
                         href: resources/internaldomainfederation.md
-                      - name: Get
-                        href: api/internaldomainfederation-get.md
+                      - name: List
+                        href: api/domain-list-federationconfiguration.md
                       - name: Create
                         href: api/domain-post-federationconfiguration.md
+                      - name: Get
+                        href: api/internaldomainfederation-get.md
                       - name: Update
                         href: api/internaldomainfederation-update.md
                       - name: Delete
@@ -24964,6 +24966,20 @@ items:
                       href: resources/servicelevelagreementroot.md
                     - name: Get Microsoft Entra authentication
                       href: api/azureadauthentication-get.md
+                - name: Microsoft Entra service activity
+                  items:
+                    - name: Microsoft Entra service acitviy
+                      href: resources/serviceactivity.md
+                    - name: Get MFA sign in success metrics
+                      href: api/serviceactivity-getmetricsformfasigninsuccess.md
+                    - name: Get MFA sign in failure metrics
+                      href: api/serviceactivity-getmetricsformfasigninfailure.md
+                    - name: Get managed devices conditional access sign in metrics
+                      href: api/serviceactivity-getmetricsforconditionalaccessmanageddevicessigninsuccess.md
+                    - name: Get compiant devices conditional access sign in metrics
+                      href: api/serviceactivity-getmetricsforconditionalaccesscompliantdevicessigninsuccess.md
+                    - name: Get SAML sign in metrics
+                      href: api/serviceactivity-getmetricsforsamlsigninsuccess.md
                 - name: Registration and usage
                   items:
                     - name: Overview
@@ -27417,6 +27433,13 @@ items:
                         href: api/virtualeventwebinar-getbyuserrole.md
                       - name: List by user ID/role
                         href: api/virtualeventwebinar-getbyuseridandrole.md
+                      - name: Registration
+                        href: resources/virtualeventregistration.md
+                        items:
+                          - name: List
+                            href: api/virtualeventregistration-list.md
+                          - name: Get
+                            href: api/virtualeventregistration-get.md
                   - name: Session
                     href: resources/virtualeventsession.md
                     items:
@@ -27424,13 +27447,6 @@ items:
                         href: api/virtualeventsession-list.md
                       - name: Get
                         href: api/virtualeventsession-get.md
-                  - name: Registration
-                    href: resources/virtualeventregistration.md
-                    items:
-                      - name: List
-                        href: api/virtualeventregistration-list.md
-                      - name: Get
-                        href: api/virtualeventregistration-get.md
           - name: Devices (preview)
             items:
             - name: Authentication events policy

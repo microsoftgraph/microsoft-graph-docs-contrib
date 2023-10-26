@@ -45,7 +45,7 @@ POST /termStore/sets/{setId}/terms/{termId}/relations
 ## Request body
 In the request body, supply a JSON representation of the [relation](../resources/termstore-relation.md) object.
 
-The following table shows the properties that are required when you create the [relation](../resources/termstore-relation.md).
+The following table lists the properties that are required when you create the [relation](../resources/termstore-relation.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

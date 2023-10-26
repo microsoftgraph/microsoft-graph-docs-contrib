@@ -37,7 +37,7 @@ DELETE /education/schools/{id}/classes/{classId}/$ref
 | Authorization  | Bearer {token}. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 
 ## Response
@@ -45,7 +45,7 @@ If successful, this method returns a `204 No Content` response code and a respon
 
 ## Example
 ### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -68,7 +68,7 @@ DELETE https://graph.microsoft.com/beta/education/schools/10001/classes/11001
 ---
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 
 <!-- {
   "blockType": "response"

@@ -29,7 +29,7 @@ GET /groups?$filter=resourceProvisioningOptions/Any(x:x eq 'Team')
 
 #### Response
 
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown might be shortened for readability. 
 >
@@ -91,7 +91,7 @@ GET /groups?$select=id,resourceProvisioningOptions
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 ```http
 HTTP/1.1 200 OK

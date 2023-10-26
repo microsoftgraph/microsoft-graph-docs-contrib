@@ -67,7 +67,7 @@ This method supports the `$filter` (`eq` and `in` operators) OData query paramet
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -125,7 +125,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/directory/roleDefinitions
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
@@ -280,7 +280,7 @@ GET https://graph.microsoft.com/v1.0/roleManagement/entitlementManagement/roleDe
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

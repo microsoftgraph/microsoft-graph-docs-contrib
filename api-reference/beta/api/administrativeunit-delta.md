@@ -69,7 +69,7 @@ This method supports the following OData query parameters to help customize the 
 | Authorization  | Bearer &lt;token&gt;. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

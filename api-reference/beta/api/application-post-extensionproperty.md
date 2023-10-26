@@ -63,7 +63,7 @@ If successful, this method returns `201, Created` response code and a new [exten
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

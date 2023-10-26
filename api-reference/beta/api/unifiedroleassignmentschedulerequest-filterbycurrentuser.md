@@ -41,7 +41,7 @@ GET /roleManagement/directory/roleAssignmentScheduleRequests/filterByCurrentUser
 
 ## Function parameters
 In the request URL, provide the following query parameters with values.
-The following table shows the parameters that are required with this function.
+The following table lists the parameters that are required when you call this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
@@ -58,7 +58,7 @@ This method supports the `$select`, `$filter`, and `$expand` OData query paramet
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -102,6 +102,10 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/RoleAssignmentSche
 [!INCLUDE [sample-code](../includes/snippets/php/unifiedroleassignmentschedulerequest-filterbycurrentuser-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/unifiedroleassignmentschedulerequest-filterbycurrentuser-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/unifiedroleassignmentschedulerequest-filterbycurrentuser-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -110,7 +114,7 @@ GET https://graph.microsoft.com/beta/roleManagement/directory/RoleAssignmentSche
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",

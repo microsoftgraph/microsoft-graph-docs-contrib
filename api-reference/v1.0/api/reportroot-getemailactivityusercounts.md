@@ -74,7 +74,7 @@ The CSV file has the following headers for columns.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)
@@ -111,6 +111,10 @@ GET https://graph.microsoft.com/v1.0/reports/getEmailActivityUserCounts(period='
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getemailactivityusercounts-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getemailactivityusercounts-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/reportroot-getemailactivityusercounts-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -119,7 +123,7 @@ GET https://graph.microsoft.com/v1.0/reports/getEmailActivityUserCounts(period='
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "ignored"

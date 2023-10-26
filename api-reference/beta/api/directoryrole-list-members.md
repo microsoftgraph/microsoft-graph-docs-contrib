@@ -50,7 +50,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -137,7 +137,7 @@ Content-type: application/json
 ### Example 2: Get the members of a directory role using roleTemplateId
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
