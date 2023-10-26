@@ -35,7 +35,7 @@ GET /security/attackSimulation/trainings/{trainingId}/languageDetails/{trainingL
 
 ## Optional query parameters
 
-This method does not currently support the [OData query parameters](/graph/query-parameters) to customize the response.
+This method doesn't currently support the [OData query parameters](/graph/query-parameters) to customize the response.
 
 ## Request headers
 
@@ -45,7 +45,7 @@ This method does not currently support the [OData query parameters](/graph/query
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [trainingLangu
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/v1.0/security/attackSimulation/trainings/3f5548d
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
