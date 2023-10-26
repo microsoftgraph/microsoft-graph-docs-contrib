@@ -524,7 +524,7 @@
               "ApiChange": "Property",
               "ChangedApiName": "autoExtendDuration",
               "ChangeType": "Addition",
-              "Description": "Added the `autoExtendDuration` property to the [delegatedAdminRelationship](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminRelationship?view=graph-rest-1.0) resource.",
+              "Description": "Added the **autoExtendDuration** property to the [delegatedAdminRelationship](https://learn.microsoft.com/en-us/graph/api/resources/delegatedAdminRelationship?view=graph-rest-1.0) resource.",
               "Target": "delegatedAdminRelationship"
             },
             {
@@ -532,7 +532,7 @@
               "ApiChange": "Property",
               "ChangedApiName": "autoExtendDuration",
               "ChangeType": "Addition",
-              "Description": "Added the **autoExtendDuration** property to the [resellerDelegatedAdminRelationship](https://learn.microsoft.com/en-us/graph/api/resources/resellerDelegatedAdminRelationship?view=graph-rest-beta) resource.",
+              "Description": "Added the **autoExtendDuration** property to the [resellerDelegatedAdminRelationship](https://learn.microsoft.com/en-us/graph/api/resources/resellerDelegatedAdminRelationship?view=graph-rest-1.0) resource.",
               "Target": "resellerDelegatedAdminRelationship"
             }
           ],
