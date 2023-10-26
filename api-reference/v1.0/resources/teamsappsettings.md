@@ -25,6 +25,7 @@ Inherits from [entity](../resources/entity.md).
 |Property|Type|Description|
 |:---|:---|:---|
 |allowUserRequestsForAppAccess|Boolean|Indicates whether users are allowed to request access to the unavailable Teams apps.|
+|id|String|Unique identifier for the **teamsAppSettings** object. Inherited from [entity](../resources/entity.md).|
 
 ## Relationships
 None.
@@ -42,9 +43,8 @@ The following JSON representation shows the resource type.
 ``` json
 {
   "@odata.type": "#microsoft.graph.teamsAppSettings",
-  "id": "String (identifier)",
   "allowUserRequestsForAppAccess": "Boolean",
-  "isChatResourceSpecificConsentEnabled": "Boolean"
+  "id": "String (identifier)"
 }
 ```
 
