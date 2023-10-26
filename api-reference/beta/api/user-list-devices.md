@@ -47,7 +47,7 @@ GET me/devices
 |Accept | application/json |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -83,7 +83,7 @@ This example will return the list of devices for a user. To command a device usi
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "ignored",
@@ -98,7 +98,7 @@ Content-Type: application/json; charset=utf-8
 
 #### Response
 
-The following is an example of the response. Note: The response object shown here might be shortened for readability.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "ignored",

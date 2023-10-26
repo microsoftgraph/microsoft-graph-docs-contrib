@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = AlertRule(
 	id = "215c55cc-b1c9-4d36-a870-be5778101714",
@@ -25,7 +25,7 @@ request_body = AlertRule(
 		NotificationChannel(
 			notification_channel_type = NotificationChannelType.Portal,
 			notification_receivers = [
-			]
+			],
 		),
 		NotificationChannel(
 			notification_channel_type = NotificationChannelType.Email,
@@ -34,12 +34,12 @@ request_body = AlertRule(
 					locale = "en-us",
 					contact_information = "serena.davis@contoso.com",
 				),
-			]
+			],
 		),
-	]
+	],
 )
 
-result = await graph_client.device_management.monitoring.alert_rules.post(body = request_body)
+result = await graph_client.device_management.monitoring.alert_rules.post(request_body)
 
 
 ```

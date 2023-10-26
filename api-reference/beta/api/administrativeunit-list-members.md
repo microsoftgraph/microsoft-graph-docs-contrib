@@ -51,7 +51,7 @@ This method (when used without `$ref`) supports the [OData query parameters](/gr
 | ConsistencyLevel  | eventual. This header and `$count` are required when using `$search`, or in specific usage of `$filter`. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on directory objects](/graph/aad-advanced-queries). |
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 ```http
@@ -107,7 +107,7 @@ GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
 ```
 
 #### Response
-The following is an example of the response.
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 ```http

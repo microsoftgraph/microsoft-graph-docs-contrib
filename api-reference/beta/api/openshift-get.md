@@ -48,7 +48,7 @@ This method doesn't support OData query parameters to customize the response.
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

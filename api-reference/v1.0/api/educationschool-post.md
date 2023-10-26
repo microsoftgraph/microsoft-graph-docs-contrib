@@ -47,7 +47,7 @@ POST /education/schools
 
 In the request body, supply a JSON representation of the [educationSchool](../resources/educationschool.md) object.
 
-The following table shows the properties that are required when you create the [educationSchool](../resources/educationschool.md).
+The following table lists the properties that are required when you create the [educationSchool](../resources/educationschool.md).
 
 | Property             | Type                                               | Description                                                                                                                                                          |
 | :------------------- | :------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

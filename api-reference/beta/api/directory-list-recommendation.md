@@ -46,7 +46,7 @@ This method supports `$select` and `$filter` OData query parameters to help cust
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -103,7 +103,7 @@ GET https://graph.microsoft.com/beta/directory/recommendations
 ---
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -219,7 +219,7 @@ GET https://graph.microsoft.com/beta/directory/recommendations?$filter=recommend
 ---
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -332,7 +332,7 @@ GET https://graph.microsoft.com/beta/directory/recommendations?$filter=id eq '0c
 ---
 
 #### Response
-The following is an example of the response
+The following example shows the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
