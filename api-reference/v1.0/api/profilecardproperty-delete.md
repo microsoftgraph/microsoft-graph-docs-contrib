@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Delete the [profileCardProperty](../resources/profilecardproperty.md) object specified by its **directoryPropertyName** from the organization's profile card, and remove any localized customizations for that property.
 
+[!INCLUDE [profilecardproperty-add-remove-note](../../includes/profilecardproperty-add-remove-note.md)]
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
