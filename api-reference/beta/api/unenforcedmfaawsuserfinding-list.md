@@ -1,9 +1,9 @@
 ---
 title: "List unenforcedMfaAwsUserFindings"
 description: "Get a list of the unenforcedMfaAwsUserFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.unenforcedMfaAwsUserFinding not found
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.unenforcedMfaAwsUserFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$filter` and `$orderby` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.unenforcedMfaAwsUserFinding not found
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.unenforcedMfaAwsUserFinding
 ```
 
 
@@ -76,20 +76,46 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.unenforcedMfaAwsUserFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.unenforcedMfaAwsUserFinding",
-      "id": "d4cbabae-19d0-a62c-4633-10642b0f9d6f",
-      "createdDateTime": "String (timestamp)",
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
+      "@odata.type": "graph.unenforcedMfaAwsUserFinding",
+      "id": "dW5lbmZvcmNlZE1mYVVzZXJGaW5kaW5nMTU2",
+      "identity": {
+          "@odata.type": "graph.awsUser",
+          "id": "YXJuOmF3czppYW06OjM3NzU5NjEzMTc3NDp1c2VyL3VzZXJfYWRtaW5pc3RyYXRvcl9pbmxpbmVfZGVueXMzYWxs",
+          "externalId": "arn:aws:iam::377596131774:user/user_administrator_inline_denys3all",
+          "displayName": "user_administrator_inline_denys3all",
+          "source": {
+            "@odata.type": "graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "377596131774"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.awsAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "377596131774",
+            "authorizationSystemName": "cloudknox-staging",
+            "authorizationSystemType": "aws",
+          }
       },
-      "lastActiveDateTime": "String (timestamp)",
       "actionSummary": {
-        "@odata.type": "microsoft.graph.actionSummary"
+        "assigned": 10688,
+        "exercised": 0,
+        "available": 10793
+      },
+      "permissionsCreepIndex": {
+        "score": 97
+      },
+      "createdDateTime ": "2020-10-11T20:11:45.6711Z",
+      "identityDetails": {
+        "createdDateTime": "2020-04-12T20:34:24Z",
+        "lastActiveDateTime": "2020-10-30T03:21:05Z"
       }
-    }
+    },
+
   ]
 }
+
 ```
 

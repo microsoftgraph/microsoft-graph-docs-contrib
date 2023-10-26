@@ -1,9 +1,9 @@
 ---
 title: "Get unenforcedMfaAwsUserFinding"
 description: "Read the properties and relationships of an unenforcedMfaAwsUserFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,10 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
-
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 ## HTTP request
 
 <!-- {
@@ -30,10 +29,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.unenforcedMfaAwsUserFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports none of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -57,9 +57,8 @@ The following is an example of a request.
 }
 -->
 ``` http
-
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxVbmVuZm9yY2VkTWZhQXdzVXNlckZpbmRpbmcsNjUzMjU')/graph.unenforcedMfaAwsUserFinding
 ```
-
 
 ### Response
 The following is an example of the response
@@ -75,18 +74,35 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.unenforcedMfaAwsUserFinding",
-    "id": "d4cbabae-19d0-a62c-4633-10642b0f9d6f",
-    "createdDateTime": "String (timestamp)",
-    "permissionsCreepIndex": {
-      "@odata.type": "microsoft.graph.permissionsCreepIndex"
-    },
-    "lastActiveDateTime": "String (timestamp)",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.unenforcedMfaAwsUserFinding/$entity",
+    "id": "MSxVbmVuZm9yY2VkTWZhQXdzVXNlckZpbmRpbmcsNjUzMjU",
+    "createdDateTime": "2023-10-25T23:48:19.327666Z",
     "actionSummary": {
-      "@odata.type": "microsoft.graph.actionSummary"
+        "assigned": 10783,
+        "exercised": 58,
+        "available": 58
+    },
+    "permissionsCreepIndex": {
+        "score": 98
+    },
+    "identity": {
+        "@odata.type": "#microsoft.graph.awsUser",
+        "id": "YXJuOmF3czppYW06Ojk1Njk4Nzg4NzczNTp1c2VyL3NyaWhhcnNoYQ",
+        "externalId": "arn:aws:iam::956987887735:user/sriharsha",
+        "displayName": "sriharsha",
+        "source": {
+            "@odata.type": "#microsoft.graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "956987887735"
+        },
+        "authorizationSystem": {
+            "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
+            "authorizationSystemId": "956987887735",
+            "authorizationSystemName": "ck-development",
+            "authorizationSystemType": "aws",
+            "id": "MSxhd3MsOTU2OTg3ODg3NzM1"
+        }
     }
-  }
 }
 ```
 
