@@ -44,7 +44,7 @@ POST /security/attackSimulation/simulations
 
 In the request body, supply a JSON representation of a [simulation](../resources/simulation.md) object.
 
-The following table shows the properties that are required when you create the simulation.
+The following table lists the properties that are required when you create the simulation.
 
 | Property | Type        | Description |
 |:-------------|:------------|:------------|
@@ -73,7 +73,7 @@ If successful, this method returns a `202 Accepted` response code and a tracking
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -125,7 +125,7 @@ Content-type: application/json
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
