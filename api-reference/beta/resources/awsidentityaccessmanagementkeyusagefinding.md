@@ -1,9 +1,9 @@
 ---
 title: "awsIdentityAccessManagementKeyUsageFinding resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "The IAM access key age represents the number of keys that have not been used in the over 90 days."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+The IAM access key age represents the number of keys that have not been used in the over 90 days.
+
+
 
 
 Inherits from [finding](../resources/finding.md).
@@ -23,18 +25,15 @@ Inherits from [finding](../resources/finding.md).
 |:---|:---|:---|
 |[List awsIdentityAccessManagementKeyUsageFindings](../api/awsidentityaccessmanagementkeyusagefinding-list.md)|[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md) collection|Get a list of the [awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md) objects and their properties.|
 |[Get awsIdentityAccessManagementKeyUsageFinding](../api/awsidentityaccessmanagementkeyusagefinding-get.md)|[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md)|Read the properties and relationships of an [awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md) object.|
-|[Update awsIdentityAccessManagementKeyUsageFinding](../api/awsidentityaccessmanagementkeyusagefinding-update.md)|[awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md)|Update the properties of an [awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md) object.|
-|[Delete awsIdentityAccessManagementKeyUsageFinding](../api/awsidentityaccessmanagementkeyusagefinding-delete.md)|None|Delete an [awsIdentityAccessManagementKeyUsageFinding](../resources/awsidentityaccessmanagementkeyusagefinding.md) object.|
-|[aggregatedSummary](../api/awsidentityaccessmanagementkeyusagefinding-aggregatedsummary.md)|[permissionsAnalyticsAggregatedIamKeySummary](../resources/permissionsanalyticsaggregatediamkeysummary.md)|**TODO: Add Description**|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|actionSummary|[actionSummary](../resources/actionsummary.md)|**TODO: Add Description**|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [finding](../resources/finding.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|**TODO: Add Description**|
-|status|iamStatus|**TODO: Add Description**.The possible values are: `active`, `inactive`, `disabled`, `unknownFutureValue`.|
+|actionSummary|[actionSummary](../resources/actionsummary.md)|Contains information on authorization system actions granted to an identity and actions executed by this identity in the last 90 days. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the identity|
+|createdDateTime|DateTimeOffset| Inherited from [finding](../resources/finding.md).|
+|id|String| Inherited from [entity](../resources/entity.md).|
+|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|Assigns an index based on an identities excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the identity*|
+|status|iamStatus|Status of the Iam Access Key.The possible values are: `active`, `inactive`, `disabled`, `unknownFutureValue`.|
 
 ## Relationships
 None.

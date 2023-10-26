@@ -1,9 +1,9 @@
 ---
 title: "List awsIdentityAccessManagementKeyUsageFindings"
 description: "Get a list of the awsIdentityAccessManagementKeyUsageFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.awsIdentityAccessManagementKeyUsageFinding not found
+GET /identityGovernance/permissionsAnalytics/aws/findings/graph.awsIdentityAcessManagementKeyUsageFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports `$filter` and `$orderby` of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.awsIdentityAccessManagementKeyUsageFinding not found
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings/graph.awsIdentityAcessManagementKeyUsageFinding
 ```
 
 
@@ -76,19 +76,51 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.awsIdentityAcessManagementKeyUsageFinding",
   "value": [
     {
-      "@odata.type": "#microsoft.graph.awsIdentityAccessManagementKeyUsageFinding",
-      "id": "3855b940-50a2-ed60-0802-bedc64a6c670",
-      "createdDateTime": "String (timestamp)",
+      "@odata.type": "graph.awsIdentityAcessManagementKeyUsageFinding",
+      "id": "aWRlbnRpdHlBY2Vzc01hbmFnZW1lbnRLZXlVc2FnZUZpbmRpbmcxMjM",
       "actionSummary": {
-        "@odata.type": "microsoft.graph.actionSummary"
+        "assigned": 10783,
+        "exercised": 0,
+        "available": 10793
       },
-      "status": "String",
+      "awsAccessKeyDetails": {
+        "createdDateTime": "2021-09-21T05:15:52Z",
+        "lastUsedDateTime": "2023-08-10T03:12:00Z"
+      },
+      "accessKey": {
+        "@odata.type": "graph.awsAccessKey",
+        "id":"QUtJQTU1VUhNS0IzNUJPSUpHUkk=",
+        "externalId":"AKIA55UHMKB35BOIJGRI",
+        "displayName": "AKIA55UHMKB35BOIJGRI",
+        "authorizationSystem": {
+          "@odata.type": "graph.awsAuthorizationSystem",
+          "id": "{Id}",
+          "authorizationSystemId": "956987887735",
+          "authorizationSystemName": "cloudknox-development",
+          "authorizationSystemType": "aws"
+        },
+        "owner": { // NOTE: Because of a limit in our current data model, we do not have all of the standard identity information
+          "@odata.type": "graph.awsUser",
+          "id": "YXJuOmF3czppYW06Ojk1Njk4Nzg4NzczNTp1c2VyL2dlZXRh",
+          "externalId":"arn:aws:iam::956987887735:user/geeta",
+          "displayName": "geeta",
+          "source": {
+            "@odata.type": "graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "956987887735"
+          }
+        }
+      },
+      "status": "inactive",
       "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
-      }
-    }
+        "score": 99
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z"
+    },
+
   ]
 }
 ```

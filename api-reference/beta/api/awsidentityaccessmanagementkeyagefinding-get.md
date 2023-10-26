@@ -1,9 +1,9 @@
 ---
 title: "Get awsIdentityAccessManagementKeyAgeFinding"
 description: "Read the properties and relationships of an awsIdentityAccessManagementKeyAgeFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,11 +30,11 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET /awsIdentityAccessManagementKeyAgeFinding
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.awsIdentityAccessManagementKeyAgeFinding
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports none of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/awsIdentityAccessManagementKeyAgeFinding
+GET https://graph.microsoft.com/identityGovernance/permissionsAnalytics/aws/findings('MSxBd3NJZGVudGl0eUFjY2Vzc01hbmFnZW1lbnRLZXlBZ2VGaW5kaW5nLDIyMDE4')/graph.awsIdentityAccessManagementKeyAgeFinding
 ```
 
 
@@ -76,18 +76,45 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.awsIdentityAccessManagementKeyAgeFinding",
-    "id": "87683db1-4047-8bad-d774-2f7ad04acace",
-    "createdDateTime": "String (timestamp)",
-    "actionSummary": {
-      "@odata.type": "microsoft.graph.actionSummary"
-    },
-    "status": "String",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.awsIdentityAccessManagementKeyAgeFinding/$entity",
+    "id": "MSxBd3NJZGVudGl0eUFjY2Vzc01hbmFnZW1lbnRLZXlBZ2VGaW5kaW5nLDIyMDE4",
+    "createdDateTime": "2023-10-25T23:48:12.102767Z",
+    "status": "inactive",
     "permissionsCreepIndex": {
-      "@odata.type": "microsoft.graph.permissionsCreepIndex"
+        "score": 4
+    },
+    "actionSummary": {
+        "assigned": 4161,
+        "exercised": 0,
+        "available": 58
+    },
+    "accessKey": {
+        "id": "QUtJQTU1VUhNS0IzM1hTWFRSNjI",
+        "externalId": "AKIA55UHMKB33XSXTR62",
+        "displayName": "AKIA55UHMKB33XSXTR62",
+        "source": {
+            "@odata.type": "#microsoft.graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "956987887735"
+        },
+        "authorizationSystem": {
+            "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
+            "authorizationSystemId": "956987887735",
+            "authorizationSystemName": "ck-development",
+            "authorizationSystemType": "aws",
+            "id": "MSxhd3MsOTU2OTg3ODg3NzM1"
+        },
+        "owner": {
+            "id": "YXJuOmF3czppYW06Ojk1Njk4Nzg4NzczNTp1c2VyL2FuZHl3YW5n",
+            "externalId": "arn:aws:iam::956987887735:user/andywang",
+            "displayName": "andywang",
+            "source": {
+                "@odata.type": "#microsoft.graph.awsSource",
+                "identityProviderType": "aws",
+                "accountId": "956987887735"
+            }
+        }
     }
-  }
 }
 ```
 
