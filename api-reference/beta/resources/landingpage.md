@@ -42,7 +42,9 @@ Inherits from [entity](../resources/entity.md).
 
 ## Relationships
 
-None.
+|Relationship|Type|Description|
+|:---|:---|:---|
+|details|[landingPageDetail](../resources/landingpagedetail.md) collection|The detail information for a landing page associated with a simulation during its creation.|
 
 ## JSON representation
 
