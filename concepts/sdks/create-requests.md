@@ -269,6 +269,7 @@ For SDKs that support a fluent style, new items can be added to collections with
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="CreateRequestSnippet":::
 
+---
 
 ## Updating an existing entity with PATCH
 
@@ -305,6 +306,8 @@ Most updates in Microsoft Graph are performed using a `PATCH` method and therefo
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="UpdateRequestSnippet":::
 
+---
+
 ## Use HTTP headers to control request behavior
 
 You can use a `Header()` function to attach custom headers to a request. For PowerShell, adding headers is only possible with the `Invoke-GraphRequest` method. A number of Microsoft Graph scenarios use custom headers to adjust the behavior of the request.
@@ -331,7 +334,6 @@ You can use a `Header()` function to attach custom headers to a request. For Pow
 
 # [Python](#tab/python)
 
-
 [!INCLUDE [python-sdk-preview](../../includes/python-sdk-preview.md)]
 
 :::code language="python" source="./snippets/python/src/snippets/create_requests.py" id="HeadersRequestSnippet":::
@@ -339,6 +341,8 @@ You can use a `Header()` function to attach custom headers to a request. For Pow
 # [TypeScript](#tab/typescript)
 
 :::code language="typescript" source="./snippets/typescript/src/snippets/createRequests.ts" id="HeadersRequestSnippet":::
+
+---
 
 ## Provide custom query parameters
 

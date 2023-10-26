@@ -56,7 +56,7 @@ If successful, this method returns a `204 No Content` response code and does not
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 # [HTTP](#tab/http)

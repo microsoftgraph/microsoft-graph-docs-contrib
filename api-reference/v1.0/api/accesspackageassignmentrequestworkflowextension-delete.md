@@ -47,7 +47,7 @@ DELETE /identityGovernance/entitlementManagement/catalogs/{catalogId}/customWork
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -105,7 +105,7 @@ DELETE /identityGovernance/entitlementManagement/catalogs/32efb28c-9a7a-446c-986
 
 ### Response
 
-The following is an example of the response
+The following example shows the response.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -52,7 +52,7 @@ This method does not support OData query parameters to customize the response. F
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

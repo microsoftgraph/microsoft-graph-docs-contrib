@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = SnoozeReminderPostRequestBody(
 	new_reminder_time = DateTimeTimeZone(
@@ -15,7 +15,7 @@ request_body = SnoozeReminderPostRequestBody(
 	),
 )
 
-await graph_client.me.events.by_event_id('event-id').snooze_reminder.post(body = request_body)
+await graph_client.me.events.by_event_id('event-id').snooze_reminder.post(request_body)
 
 
 ```

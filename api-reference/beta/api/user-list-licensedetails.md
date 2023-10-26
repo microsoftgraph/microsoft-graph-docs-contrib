@@ -41,7 +41,7 @@ This method supports the `$select` query parameter. For general information, see
 | Authorization  | Bearer &lt;code&gt;|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

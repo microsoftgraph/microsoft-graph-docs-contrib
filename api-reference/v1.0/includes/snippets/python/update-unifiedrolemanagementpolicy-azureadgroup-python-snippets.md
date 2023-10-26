@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = UnifiedRoleManagementPolicy(
 	rules = [
@@ -17,12 +17,12 @@ request_body = UnifiedRoleManagementPolicy(
 				caller = "EndUser",
 				operations = [
 					UnifiedRoleManagementPolicyRuleTargetOperations.All,
-				]
+				],
 				level = "Assignment",
 				inheritable_settings = [
-				]
+				],
 				enforced_settings = [
-				]
+				],
 			),
 			setting = ApprovalSettings(
 				is_approval_required = True,
@@ -44,11 +44,11 @@ request_body = UnifiedRoleManagementPolicy(
 										"id" : "c277c8cb-6bb7-42e5-a17f-0add9a718151",
 								}
 							),
-						]
+						],
 						escalation_approvers = [
-						]
+						],
 					),
-				]
+				],
 			),
 		),
 		UnifiedRoleManagementPolicyAuthenticationContextRule(
@@ -60,29 +60,29 @@ request_body = UnifiedRoleManagementPolicy(
 				caller = "EndUser",
 				operations = [
 					UnifiedRoleManagementPolicyRuleTargetOperations.All,
-				]
+				],
 				level = "Assignment",
 				inheritable_settings = [
-				]
+				],
 				enforced_settings = [
-				]
+				],
 			),
 		),
 		UnifiedRoleManagementPolicyEnablementRule(
 			odata_type = "#microsoft.graph.unifiedRoleManagementPolicyEnablementRule",
 			id = "Enablement_Admin_Eligibility",
 			enabled_rules = [
-			]
+			],
 			target = UnifiedRoleManagementPolicyRuleTarget(
 				caller = "Admin",
 				operations = [
 					UnifiedRoleManagementPolicyRuleTargetOperations.All,
-				]
+				],
 				level = "Eligibility",
 				inheritable_settings = [
-				]
+				],
 				enforced_settings = [
-				]
+				],
 			),
 		),
 		UnifiedRoleManagementPolicyExpirationRule(
@@ -94,12 +94,12 @@ request_body = UnifiedRoleManagementPolicy(
 				caller = "Admin",
 				operations = [
 					UnifiedRoleManagementPolicyRuleTargetOperations.All,
-				]
+				],
 				level = "Eligibility",
 				inheritable_settings = [
-				]
+				],
 				enforced_settings = [
-				]
+				],
 			),
 		),
 		UnifiedRoleManagementPolicyNotificationRule(
@@ -110,23 +110,23 @@ request_body = UnifiedRoleManagementPolicy(
 			notification_level = "All",
 			is_default_recipients_enabled = True,
 			notification_recipients = [
-			]
+			],
 			target = UnifiedRoleManagementPolicyRuleTarget(
 				caller = "Admin",
 				operations = [
 					UnifiedRoleManagementPolicyRuleTargetOperations.All,
-				]
+				],
 				level = "Eligibility",
 				inheritable_settings = [
-				]
+				],
 				enforced_settings = [
-				]
+				],
 			),
 		),
-	]
+	],
 )
 
-result = await graph_client.policies.role_management_policies.by_role_management_policie_id('unifiedRoleManagementPolicy-id').patch(body = request_body)
+result = await graph_client.policies.role_management_policies.by_unified_role_management_policy_id('unifiedRoleManagementPolicy-id').patch(request_body)
 
 
 ```

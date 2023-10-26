@@ -55,7 +55,7 @@ In the request body, provide a JSON object with the following parameter.
 
 ## Response
 
-If successful, returns a `204 No Content` response. It does not return anything in the response body.
+If successful, returns a `204 No Content` response. It doesn't return anything in the response body.
 
 ## Example
 

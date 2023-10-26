@@ -48,7 +48,7 @@ To use a query parameter on a property that is not inherited from [updatableAsse
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
