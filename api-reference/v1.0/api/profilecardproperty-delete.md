@@ -1,17 +1,17 @@
 ---
-title: "Remove profileCardProperty"
-description: "Remove a profileCardProperty object and remove all customizations from a profile card."
+title: "Delete profileCardProperty"
+description: "Delete a profileCardProperty object and remove all customizations from a profile card."
 ms.localizationpriority: medium
 author: "rwaithera"
 ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
-# Remove profileCardProperty
+# Delete profileCardProperty
 
 Namespace: microsoft.graph
 
-Remove the [profileCardProperty](../resources/profilecardproperty.md) object specified by its **directoryPropertyName** from the organization's profile card, and remove any localized customizations for that property.
+Delete the [profileCardProperty](../resources/profilecardproperty.md) object specified by its **directoryPropertyName** from the organization's profile card, and remove any localized customizations for that property.
 
 ## Permissions
 
@@ -41,17 +41,17 @@ DELETE /admin/people/profileCardProperties/{id}
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Examples
 
 ### Request
 
-The following example shows how to remove the attribute named `Fax` from the profile card for the organization.
+The following example shows how to delete the attribute named `Fax` from the profile card for the organization.
 
 <!-- {
   "blockType": "request",
@@ -65,7 +65,7 @@ DELETE https://graph.microsoft.com/v1.0/admin/people/profileCardProperties/fax
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
