@@ -66,7 +66,7 @@ The following example shows how to update an attack simulation campaign for a te
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_simulation",
@@ -105,7 +105,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -122,7 +122,7 @@ The following example shows how to schedule an attack simulation campaign. The s
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -162,7 +162,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -179,7 +179,7 @@ The following example shows how to cancel an attack simulation campaign for a te
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_simulation_cancel",
@@ -199,7 +199,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
@@ -216,7 +216,7 @@ The following example shows how to exclude an attack simulation campaign for a t
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "update_simulation_exclude",
@@ -236,7 +236,7 @@ Content-type: application/json
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- {
   "blockType": "response",
