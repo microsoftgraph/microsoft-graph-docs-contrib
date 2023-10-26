@@ -125,7 +125,7 @@ Inherits from [entity](../resources/entity.md).
 |payload|[payload](../resources/payload.md)|The payload associated with a simulation during its creation.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
