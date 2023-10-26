@@ -1,6 +1,7 @@
 ---
 title: "List fileStorageContainer permissions"
-description: "Get the set of permissions for fileStorageContainer."
+description: "Get the set of permissions for a fileStorageContainer."
+
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
