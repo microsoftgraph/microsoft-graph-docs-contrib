@@ -1,6 +1,6 @@
 ---
 title: "teamsApp resource type"
-description: "An app in the Microsoft Teams app catalog."
+description: "Represents an app in the Microsoft Teams app catalog."
 author: "nkramer"
 ms.localizationpriority: medium
 ms.prod: "microsoft-teams"
