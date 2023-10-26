@@ -39,7 +39,7 @@ This method supports the `$count`, `$filter`, `$orderby`, `$skipToken`, `$top`, 
 
 If the result set spans multiple pages, the response body contains an `@odata.nextLink` that you can use to page through the result set.
 
-The following are examples of their use:
+The following list shows examples of their use:
 
 <!-- {
   "blockType": "ignored"
@@ -63,7 +63,7 @@ GET /security/attackSimulation/payloads?$filter=source eq 'Tenant' and $select={
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 
@@ -73,7 +73,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "list_payloads"
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/v1.0/security/attackSimulation/payloads?$filter=
 
 ### Response
 
-The following is an example of a response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
