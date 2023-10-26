@@ -27,7 +27,7 @@ requestBody.SetAllowSampleSharing(&allowSampleSharing)
 enableExpeditedTelemetryReporting := true
 requestBody.SetEnableExpeditedTelemetryReporting(&enableExpeditedTelemetryReporting) 
 
-deviceConfigurations, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
+result, err := graphClient.DeviceManagement().DeviceConfigurations().Post(context.Background(), requestBody, nil)
 
 
 ```
