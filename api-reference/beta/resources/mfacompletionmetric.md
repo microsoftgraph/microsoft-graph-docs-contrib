@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Insights for MFA usage for a specific period.
+Insights for MFA usage on apps registered in your Microsoft Entra External ID for customers tenant for a specific period.
 
 ## Methods
 |Method|Return type|Description|

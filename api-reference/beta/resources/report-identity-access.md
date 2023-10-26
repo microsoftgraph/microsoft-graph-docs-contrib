@@ -23,6 +23,7 @@ The following identity and access reports are available to help you understand a
 
 - AD FS application activity
 - Application sign-in
+- Application user activity (preview)
 - Registration and usage
 
 ### AD FS application activity
@@ -32,6 +33,9 @@ The AD FS application activity report provides information about how a relying p
 ### Application sign-in
 
 Evaluate the usage of application sign-ins in your tenant using either a summary report or a report that provides details of sign-ins, such as the number of sign-ins and whether any errors occured during sign-in. For more information, see the [applicationSignInSummary](/graph/api/resources/applicationsigninsummary?view=graph-rest-beta&preserve-view=true) resource.
+
+### Application user activity (preview)
+Application user activity provides sign-in and sign-up user activities data for registered application(s) in a Microsoft Entra ID for customers tenant. You can query and analyze data for daily active users, monthly active users, total users, new users, authentications, requests, and multifactor-authentication usage. For more information, see the [dailyUserInsightsSummary](/graph/api/resources/dailyuserinsightmetricsroot?view=graph-rest-beta&preserve-view=true) and [monthlyUserInsightsSummary](/graph/api/resources/monthlyuserinsightmetricsroot?view=graph-rest-beta&preserve-view=true) resources.
 
 ### Registration and usage
 

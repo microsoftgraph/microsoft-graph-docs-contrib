@@ -1,6 +1,6 @@
 ---
 title: "List daily userCount"
-description: "Get a list of the daily userCountMetric objects and their properties."
+description: "Get a list of daily userCount on apps registered in your Microsoft Entra External ID for customers tenant."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the daily [userCountMetric](../resources/usercountmetric.md) objects and their properties.
+Get a list of daily [userCount](../resources/usercountmetric.md) on apps registered in your Microsoft Entra External ID for customers tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

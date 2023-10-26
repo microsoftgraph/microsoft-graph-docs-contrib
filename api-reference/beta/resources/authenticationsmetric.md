@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-"Insights on authentications for registered apps within your Microsoft Entra ID customer tenant during a specific timeframe
+Insights on authentications for registered apps within your Microsoft Entra ID customer tenant during a specific timeframe
 
 ## Methods
 |Method|Return type|Description|

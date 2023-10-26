@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Summary of all usage insights for a specific time period.
+Summary of all usage insights on apps registered in your Microsoft Entra External ID for customers tenant for a specific time period.
 
 > **_NOTE:_**
 > A user (in activeUsers) may be counted more that once if they use multiple device platforms. This shall be communicated to the customer.

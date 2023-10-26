@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Insights for user sign ups for a specific period.
+Insights for user sign-ups on apps registered in your Microsoft Entra External ID for customers tenant for a specific period.
 
 ## Methods
 |Method|Return type|Description|

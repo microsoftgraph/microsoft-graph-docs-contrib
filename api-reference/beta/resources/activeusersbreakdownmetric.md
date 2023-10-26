@@ -1,6 +1,6 @@
 ---
 title: "activeUsersBreakdownMetric resource type"
-description: "Insights breakdown of the total users in the tenant over time."
+description: "Insights breakdown of the total users in your Microsoft Entra ID for customers tenant over time."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Insights for users who were active for a specific period. This value is calculated as count of all users who made at least one authentication request in that period.
+Insights for users on apps registered in your Microsoft Entra External ID for customers tenant who were active for a specific period. This value is calculated as count of all users who made at least one authentication request in that period.
 
 > **_NOTE:_**
 > A user may be counted more that once if they use multiple device platforms or application.

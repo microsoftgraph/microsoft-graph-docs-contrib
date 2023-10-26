@@ -7,15 +7,13 @@ ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
-# dailyUserInsighs resource type
+# dailyUserInsights resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 A container for the different summaries of daily user activities on apps registered in your Microsoft Entra External ID for customers tenant.
-> [!NOTE]
-> The APIs are only available to Entra ID for customers tenant.
 
 ## Methods
 |Method|Return type|Description|

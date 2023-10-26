@@ -1,6 +1,6 @@
 ---
 title:  "List monthly activeUsers"
-description: "Get the monthly activeUsersMetric resources from the activeUsers navigation property."
+description: "Get a list of monthly activeUsers on apps registered in your Microsoft Entra External ID for customers tenant."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the monthly [activeUsersMetric](../resources/activeusersmetric.md) resources from the activeUsers navigation property.
+Get a list of monthly [activeUsersMetric](../resources/activeusersmetric.md) on apps registered in your Microsoft Entra External ID for customers tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

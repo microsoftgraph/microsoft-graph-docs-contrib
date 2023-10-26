@@ -1,6 +1,6 @@
 ---
 title: "List monthly summary"
-description: "Get a list of the monthly insightSummary objects and their properties."
+description: "Get a list of monthly insightSummary on apps registered in your Microsoft Entra External ID for customers tenant."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get a list of the monthly [insightSummary](../resources/insightsummary.md) objects and their properties.
+Get a list of monthly [insightSummary](../resources/insightsummary.md) on apps registered in your Microsoft Entra External ID for customers tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

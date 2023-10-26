@@ -1,6 +1,6 @@
 ---
 title: "List monthly authentications"
-description: "Get the monthly authenticationsMetric resources from the authentications navigation property."
+description: "Get a list of monthly authentications on apps registered in your Microsoft Entra External ID for customers tenant."
 author: "srutto"
 ms.localizationpriority: medium
 ms.prod: "identity-and-access-reports"
@@ -12,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the monthly [authenticationsMetric](../resources/authenticationsmetric.md) resources from the authentications navigation property.
+Get a list of monthly [authenticationsMetric](../resources/authenticationsmetric.md) on apps registered in your Microsoft Entra External ID for customers tenant.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

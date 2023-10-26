@@ -13,9 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A container for the different summaries of monthly user activities on apps registered in the tenant.
-> [!NOTE]
-> The APIs are only available to Entra ID for customers tenant.
+A container for the different summaries of monthly user activities on apps registered in your Microsoft Entra External ID for customers tenant.
 
 ## Methods
 |Method|Return type|Description|
@@ -26,7 +24,7 @@ A container for the different summaries of monthly user activities on apps regis
 |[List mfaCompletions](../api/monthlyuserinsightmetricsroot-list-mfacompletions.md)|[mfaCompletionMetric](../resources/mfacompletionmetric.md) collection.|Monthly summary of MFA usage on apps registered in the tenant for specified time period.|
 |[List requests](../api/monthlyuserinsightmetricsroot-list-requests.md)|[userRequestsMetric](../resources/userrequestsmetric.md) collection|Monthly summary of requests on apps registered in the tenant for specified time period.|
 |[List signUps](../api/monthlyuserinsightmetricsroot-list-signups.md)|[userSignUpMetric](../resources/usersignupmetric.md) collection|Monthly summary of sign-ups on apps registered in the tenant for specified time period.|
-|[List summary](../api/monthlyuserinsightmetricsroot-list-summary.md)|[insightSummary](../resources/insightsummary.md)|Get a list of the monthly [insightSummary](../resources/insightsummary.md) objects and their properties.|
+|[List summary](../api/monthlyuserinsightmetricsroot-list-summary.md)|[insightSummary](../resources/insightsummary.md)|Monthly summary of all insights on apps registered in your tenant for specified time period.|
 
 
 ## Relationships
