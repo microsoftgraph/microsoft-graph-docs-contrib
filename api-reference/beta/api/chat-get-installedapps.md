@@ -48,7 +48,7 @@ GET /chats/{chat-id}/installedApps/{app-installation-id}
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [teamsAppInstallation](../resources/teamsappinstallation.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [teamsAppInstallation](../resources/teamsappinstallation.md) object in the response body.
 
 ## Examples
 
