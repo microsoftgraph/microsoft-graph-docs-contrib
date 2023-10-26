@@ -1,7 +1,8 @@
 ---
 title: "Update custom properties on a fileStorageContainer "
 
-description: "Update custom property on a fileStorageContainer"
+description: "Update custom properties on a fileStorageContainer"
+
 author: "tonchan-msft"
 ms.localizationpriority: medium
 ms.prod: "files"
