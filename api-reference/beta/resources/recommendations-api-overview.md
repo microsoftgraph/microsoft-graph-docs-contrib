@@ -61,7 +61,7 @@ The following are some of the most popular requests for working with the Microso
 | Retrieve details of all impacted resources for a recommendation. | [List impactedResources](../api/recommendation-list-impactedresources.md) |
 | Retrieve details of an impacted resource for a recommendation. | [Get impactedResource](../api/impactedresource-get.md) |
 | Act on a recommendation for an impacted resource | [Dismiss](../api/impactedresource-dismiss.md)  <br/> [Postpone](../api/impactedresource-postpone.md)  <br/> [Complete](../api/impactedresource-complete.md)  <br/> [Reactivate](../api/impactedresource-reactivate.md) |
-| Get historical tenant secure scores. | [Get tenantSecureScores](../api/recommendation-tenantsecurescores.md) |
+| Get historical tenant secure scores. | [Get tenantSecureScores](../api/tenantsecurescore.md) |
 
 ## License requirements
 
