@@ -94,6 +94,10 @@ GET https://graph.microsoft.com/beta/deviceManagement/virtualEndpoint/reports/ge
 [!INCLUDE [sample-code](../includes/snippets/php/cloudpcreportsthisgetrealtimeremoteconnectionlatency-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/cloudpcreportsthisgetrealtimeremoteconnectionlatency-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/cloudpcreportsthisgetrealtimeremoteconnectionlatency-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
