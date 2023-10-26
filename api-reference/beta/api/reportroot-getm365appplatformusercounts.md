@@ -91,7 +91,7 @@ The following is an example that outputs CSV.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -129,6 +129,10 @@ GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getm365appplatformusercounts-csv-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getm365appplatformusercounts-csv-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/reportroot-getm365appplatformusercounts-csv-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -137,7 +141,7 @@ GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 <!-- { "blockType": "response" } --> 
 
@@ -168,7 +172,7 @@ The following is an example that returns JSON.
 
 #### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 
 
@@ -206,6 +210,10 @@ GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period
 [!INCLUDE [sample-code](../includes/snippets/php/reportroot-getm365appplatformusercounts-json-php-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [PowerShell](#tab/powershell)
+[!INCLUDE [sample-code](../includes/snippets/powershell/reportroot-getm365appplatformusercounts-json-powershell-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [Python](#tab/python)
 [!INCLUDE [sample-code](../includes/snippets/python/reportroot-getm365appplatformusercounts-json-python-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -214,7 +222,7 @@ GET https://graph.microsoft.com/beta/reports/getM365AppPlatformUserCounts(period
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 

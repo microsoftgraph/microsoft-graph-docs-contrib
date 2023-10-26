@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an attendee's registration record of a [virtualEvent](../resources/virtualevent.md).
+Represents an attendee's registration record for a [virtualEventWebinar](../resources/virtualeventwebinar.md).
 
 Inherits from [entity](../resources/entity.md).
 

@@ -49,7 +49,7 @@ In the request body, specify the collection of ids of the risky service principa
 
 ## Response
 
-If successful, this action returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this action returns a `204 No Content` response code. It doesn't return anything in the response body.
 
 ## Example
 

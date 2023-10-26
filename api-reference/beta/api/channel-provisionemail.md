@@ -46,7 +46,7 @@ POST /teams/{team-id}/channels/{channel-id}/provisionEmail
 
 ## Request body
 
-Do not supply a request body for this method.
+Don't supply a request body for this method.
 
 ## Response
 

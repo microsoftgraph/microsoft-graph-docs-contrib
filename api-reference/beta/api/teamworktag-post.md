@@ -44,7 +44,7 @@ POST /teams/{team-Id}/tags
 ## Request body
 In the request body, supply a JSON representation of the [teamworkTag](../resources/teamworktag.md) object.
 
-The following table shows the properties that are required when you create the [teamworkTag](../resources/teamworktag.md).
+The following table lists the properties that are required when you create the [teamworkTag](../resources/teamworktag.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

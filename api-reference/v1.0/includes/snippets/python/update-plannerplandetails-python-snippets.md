@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = PlannerPlanDetails(
 	shared_with = PlannerUserIds(
@@ -29,7 +29,7 @@ headers = {
 
 )
 
-result = await graph_client.planner.plans.by_plan_id('plannerPlan-id').details.patch(body = request_body, request_configuration = request_configuration)
+result = await graph_client.planner.plans.by_planner_plan_id('plannerPlan-id').details.patch(request_body, request_configuration = request_configuration)
 
 
 ```

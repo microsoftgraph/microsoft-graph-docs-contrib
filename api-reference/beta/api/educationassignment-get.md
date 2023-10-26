@@ -59,7 +59,7 @@ If successful, this method returns a `200 OK` response code and an [educationAss
 ### Example 1: Get education assignment
 
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -106,7 +106,7 @@ GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0
 ---
 
 ### Response
-The following is an example of the response. 
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 
@@ -171,7 +171,7 @@ Content-length: 279
 
 ### Example 2: Get assignment in inactive state with optional Prefer header
 #### Request
-The following is an example of the request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {

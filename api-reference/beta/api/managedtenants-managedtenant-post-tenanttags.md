@@ -44,7 +44,7 @@ POST /tenantRelationships/managedTenants/tenantTags
 ## Request body
 In the request body, supply a JSON representation of the [tenantTag](../resources/managedtenants-tenanttag.md) object.
 
-The following table shows the properties that are required when you create the [tenantTag](../resources/managedtenants-tenanttag.md).
+The following table lists the properties that are required when you create the [tenantTag](../resources/managedtenants-tenanttag.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

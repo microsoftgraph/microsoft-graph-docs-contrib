@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = ManagedDevice(
 	odata_type = "#microsoft.graph.managedDevice",
@@ -21,7 +21,7 @@ request_body = ManagedDevice(
 			start_date_time = "2016-12-31T23:58:46.7156189-08:00",
 			last_updated_date_time = "2017-01-01T00:00:56.8321556-08:00",
 		),
-	]
+	],
 	enrolled_date_time = "2016-12-31T23:59:43.797191-08:00",
 	last_sync_date_time = "2017-01-01T00:02:49.3205976-08:00",
 	operating_system = "Operating System value",
@@ -115,7 +115,7 @@ request_body = ManagedDevice(
 	physical_memory_in_bytes = 5,
 )
 
-result = await graph_client.device_management.managed_devices.post(body = request_body)
+result = await graph_client.device_management.managed_devices.post(request_body)
 
 
 ```
