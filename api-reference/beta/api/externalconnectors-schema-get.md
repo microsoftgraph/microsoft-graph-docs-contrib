@@ -53,6 +53,8 @@ Don't supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and the requested [schema](../resources/externalconnectors-schema.md) object in the response body.
 
+>**Note:** It can take between 5 and 15 minutes to register the schema. We recommend that you poll the status property for schema registration in the response body one time per minute until it shows it is completed. 
+
 ## Examples
 
 ### Request
