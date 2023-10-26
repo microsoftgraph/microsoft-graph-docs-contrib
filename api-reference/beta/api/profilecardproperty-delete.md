@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Delete the [profileCardProperty](../resources/profilecardproperty.md) object specified by its **directoryPropertyName** from the organization's profile card, and remove any localized customizations for that property.
 
-[!INCLUDE [profilecardproperty-add-remove-note](../includes/profilecardproperty-add-remove-note.md)]
+[!INCLUDE [profilecardproperty-add-remove-note](../../includes/profilecardproperty-add-remove-note.md)]
 
 [!INCLUDE [national-cloud-support](../../includes/all-clouds.md)]
 
