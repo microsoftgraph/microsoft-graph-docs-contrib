@@ -1,9 +1,9 @@
 ---
 title: "Get secretInformationAccessAwsRoleFinding"
 description: "Read the properties and relationships of a secretInformationAccessAwsRoleFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.secretInformationAccessAwsRoleFinding
 ```
 
 ## Optional query parameters
@@ -57,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxTZWNyZXRJbmZvcm1hdGlvbkFjY2Vzc0F3c1JvbGVGaW5kaW5nLDQ4Mzcz')/graph.secretInformationAccessAwsRoleFinding
 ```
 
 
@@ -75,16 +76,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.secretInformationAccessAwsRoleFinding",
-    "id": "a566ccff-49ec-521f-6f8f-332a9af96bf3",
-    "createdDateTime": "String (timestamp)",
-    "secretInformationWebServices": "String",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.secretInformationAccessAwsRoleFinding/$entity",
+    "id": "MSxTZWNyZXRJbmZvcm1hdGlvbkFjY2Vzc0F3c1JvbGVGaW5kaW5nLDQ4Mzcz",
+    "createdDateTime": "2023-10-25T23:48:13.788962Z",
+    "secretInformationWebServices": "secretsManager,certificateAuthority,cloudHsm,certificateManager",
     "permissionsCreepIndex": {
-      "@odata.type": "microsoft.graph.permissionsCreepIndex"
+        "score": 98
     },
-    "lastActiveDateTime": "String (timestamp)"
-  }
+    "identity": {
+        "@odata.type": "#microsoft.graph.awsRole",
+        "id": "YXJuOmF3czppYW06Ojk1Njk4Nzg4NzczNTpyb2xlL3N0YWNrc2V0cy1leGVjLTVlMWEyNzViOTgxOThhMWY5OTI2ZjgwYTRmY2M3YTc2",
+        "externalId": "arn:aws:iam::956987887735:role/stacksets-exec-5e1a275b98198a1f9926f80a4fcc7a76",
+        "displayName": "stacksets-exec-5e1a275b98198a1f9926f80a4fcc7a76",
+        "source": {
+            "@odata.type": "#microsoft.graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "956987887735"
+        },
+        "authorizationSystem": {
+            "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
+            "authorizationSystemId": "956987887735",
+            "authorizationSystemName": "ck-development",
+            "authorizationSystemType": "aws",
+            "id": "MSxhd3MsOTU2OTg3ODg3NzM1"
+        }
+    }
 }
 ```
 

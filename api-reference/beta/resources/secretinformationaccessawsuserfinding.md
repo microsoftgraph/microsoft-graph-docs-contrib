@@ -1,9 +1,9 @@
 ---
 title: "secretInformationAccessAwsUserFinding resource type"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "View AWS identities that have privileges to read, modify, or delete secret information."
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+View AWS identities that have privileges to read, modify, or delete secret information.
 
 
 Inherits from [awsSecretInformationAccessFinding](../resources/awssecretinformationaccessfinding.md).
@@ -23,25 +23,20 @@ Inherits from [awsSecretInformationAccessFinding](../resources/awssecretinformat
 |:---|:---|:---|
 |[List secretInformationAccessAwsUserFindings](../api/secretinformationaccessawsuserfinding-list.md)|[secretInformationAccessAwsUserFinding](../resources/secretinformationaccessawsuserfinding.md) collection|Get a list of the [secretInformationAccessAwsUserFinding](../resources/secretinformationaccessawsuserfinding.md) objects and their properties.|
 |[Get secretInformationAccessAwsUserFinding](../api/secretinformationaccessawsuserfinding-get.md)|[secretInformationAccessAwsUserFinding](../resources/secretinformationaccessawsuserfinding.md)|Read the properties and relationships of a [secretInformationAccessAwsUserFinding](../resources/secretinformationaccessawsuserfinding.md) object.|
-|[Update secretInformationAccessAwsUserFinding](../api/secretinformationaccessawsuserfinding-update.md)|[secretInformationAccessAwsUserFinding](../resources/secretinformationaccessawsuserfinding.md)|Update the properties of a [secretInformationAccessAwsUserFinding](../resources/secretinformationaccessawsuserfinding.md) object.|
-|[Delete secretInformationAccessAwsUserFinding](../api/secretinformationaccessawsuserfinding-delete.md)|None|Delete a [secretInformationAccessAwsUserFinding](../resources/secretinformationaccessawsuserfinding.md) object.|
-|[List authorizationSystemIdentity](../api/secretinformationaccessawsuserfinding-list-identity.md)|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md) collection|Get the authorizationSystemIdentity resources from the identity navigation property.|
-|[Add authorizationSystemIdentity](../api/secretinformationaccessawsuserfinding-post-identity.md)|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Add identity by posting to the identity collection.|
-|[Remove authorizationSystemIdentity](../api/secretinformationaccessawsuserfinding-delete-identity.md)|None|Remove an [authorizationSystemIdentity](../resources/authorizationsystemidentity.md) object.|
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|createdDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [finding](../resources/finding.md).|
-|id|String|**TODO: Add Description** Inherited from [entity](../resources/entity.md).|
-|lastActiveDateTime|DateTimeOffset|**TODO: Add Description** Inherited from [awsSecretInformationAccessFinding](../resources/awssecretinformationaccessfinding.md).|
-|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|**TODO: Add Description** Inherited from [awsSecretInformationAccessFinding](../resources/awssecretinformationaccessfinding.md).|
-|secretInformationWebServices|awsSecretInformationWebServices|**TODO: Add Description** Inherited from [awsSecretInformationAccessFinding](../resources/awssecretinformationaccessfinding.md).The possible values are: `secretsManager`, `certificateAuthority`, `cloudHsm`, `certificateManager`, `unknownFutureValue`.|
+|createdDateTime|DateTimeOffset| Inherited from [finding](../resources/finding.md).|
+|id|String| Inherited from [entity](../resources/entity.md).|
+|lastActiveDateTime|DateTimeOffset|A date specifiying when the last time the identity in this Finding accessed a secret store Inherited from [awsSecretInformationAccessFinding](../resources/awssecretinformationaccessfinding.md).|
+|permissionsCreepIndex|[permissionsCreepIndex](../resources/permissionscreepindex.md)|Assigns an index based on an identities excessive permissions that is classified into three buckets: 0-33: low, 34-66: medium, 67-100: high. This property and its values are a snapshot as of when the finding was created and may not reflect the current values for the identity Inherited from [awsSecretInformationAccessFinding](../resources/awssecretinformationaccessfinding.md).|
+|secretInformationWebServices|awsSecretInformationWebServices|*WS secret stores which can be accessed by the user, role, resource or serverless function Inherited from [awsSecretInformationAccessFinding](../resources/awssecretinformationaccessfinding.md).The possible values are: `secretsManager`, `certificateAuthority`, `cloudHsm`, `certificateManager`, `unknownFutureValue`.|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|**TODO: Add Description** Inherited from [microsoft.graph.awsSecretInformationAccessFinding](../resources/awssecretinformationaccessfinding.md)|
+|identity|[authorizationSystemIdentity](../resources/authorizationsystemidentity.md)|Represents an identity in an authorization systemInherited from [microsoft.graph.awsSecretInformationAccessFinding](../resources/awssecretinformationaccessfinding.md)|
 
 ## JSON representation
 The following is a JSON representation of the resource.

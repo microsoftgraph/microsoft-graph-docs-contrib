@@ -1,9 +1,9 @@
 ---
 title: "Get secretInformationAccessAwsUserFinding"
 description: "Read the properties and relationships of a secretInformationAccessAwsUserFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.secretInformationAccessAwsUserFinding
 ```
 
 ## Optional query parameters
@@ -57,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxTZWNyZXRJbmZvcm1hdGlvbkFjY2Vzc0F3c1VzZXJGaW5kaW5nLDQ4MzA2')/graph.secretInformationAccessAwsUserFinding
 ```
 
 
@@ -75,16 +76,31 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.secretInformationAccessAwsUserFinding",
-    "id": "dcca6de5-b0d3-8b10-86d3-770e63f0132b",
-    "createdDateTime": "String (timestamp)",
-    "secretInformationWebServices": "String",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.secretInformationAccessAwsUserFinding/$entity",
+    "id": "MSxTZWNyZXRJbmZvcm1hdGlvbkFjY2Vzc0F3c1VzZXJGaW5kaW5nLDQ4MzA2",
+    "createdDateTime": "2023-10-25T23:48:14.666056Z",
+    "secretInformationWebServices": "secretsManager,certificateAuthority,cloudHsm,certificateManager",
     "permissionsCreepIndex": {
-      "@odata.type": "microsoft.graph.permissionsCreepIndex"
+        "score": 99
     },
-    "lastActiveDateTime": "String (timestamp)"
-  }
+    "identity": {
+        "@odata.type": "#microsoft.graph.awsUser",
+        "id": "cmFtcHJha2FzaG5AbWljcm9zb2Z0LmNvbQ",
+        "externalId": "ramprakashn@microsoft.com",
+        "displayName": "ram narayanaswamy",
+        "source": {
+            "@odata.type": "#microsoft.graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "956987887735"
+        },
+        "authorizationSystem": {
+            "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
+            "authorizationSystemId": "956987887735",
+            "authorizationSystemName": "ck-development",
+            "authorizationSystemType": "aws",
+            "id": "MSxhd3MsOTU2OTg3ODg3NzM1"
+        }
+    }
 }
 ```
 

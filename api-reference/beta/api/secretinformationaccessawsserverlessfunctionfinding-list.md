@@ -1,9 +1,9 @@
 ---
 title: "List secretInformationAccessAwsServerlessFunctionFindings"
 description: "Get a list of the secretInformationAccessAwsServerlessFunctionFinding objects and their properties."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.secretInformationAccessAwsServerlessFunctionFinding not found
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.secretInformationAccessAwsServerlessFunctionFinding
 ```
 
 ## Optional query parameters
@@ -58,7 +58,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.secretInformationAccessAwsServerlessFunctionFinding not found
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.secretInformationAccessAwsServerlessFunctionFinding
 ```
 
 
@@ -76,17 +76,40 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/identityGovernance/$metadata#permissionsAnalytics/aws/findings/graph.secretInformationAccessAwsServerlessFunctionFinding",
   "value": [
-    {
-      "@odata.type": "#microsoft.graph.secretInformationAccessAwsServerlessFunctionFinding",
-      "id": "09fa7e88-05f4-6b20-dd67-9e0b6ce8ab0b",
-      "createdDateTime": "String (timestamp)",
-      "secretInformationWebServices": "String",
-      "permissionsCreepIndex": {
-        "@odata.type": "microsoft.graph.permissionsCreepIndex"
+      {
+      "@odata.type": "graph.secretInformationAccessAwsServerlessFunctionFinding",
+      "id": "YXdzU2VjcmV0SW5mb3JtYXRpb25BY2Nlc3NGaW5kaW5nOQ",
+      "identity": {
+          "@odata.type": "graph.awsLambda",
+          "id": "YXJuOmF3czpsYW1iZGE6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTpmdW5jdGlvbjpDbG91ZEtub3hfSUFNUmlnaHRzaXpl",
+          "externalId": "arn:aws:lambda:us-west-2:956987887735:function:CloudKnox_IAMRightsize",
+          "displayName": "CloudKnox_IAMRightsize",
+          "source": {
+            "@odata.type": "graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "377596131774"
+          },
+          "authorizationSystem": {
+            "@odata.type": "graph.awsAuthorizationSystem",
+            "id": "{Id}",
+            "authorizationSystemId": "377596131774",
+            "authorizationSystemName": "cloudknox-staging",
+            "authorizationSystemType": "aws"
+          }
       },
-      "lastActiveDateTime": "String (timestamp)"
-    }
+      "secretInformationWebServices": "certificateAuthority, cloudHsm, certificateManager",
+      "permissionsCreepIndex": {
+        "score": 95
+      },
+      "createdDateTime": "2020-10-11T20:11:45.6711Z",
+      "identityDetails": {
+        "createdDateTime": "2020-04-12T20:34:24Z",
+        "lastActiveDateTime": "2020-10-30T03:21:05Z"
+      }
+    },
+
   ]
 }
 ```

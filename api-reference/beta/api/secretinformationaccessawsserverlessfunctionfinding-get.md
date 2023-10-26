@@ -1,9 +1,9 @@
 ---
 title: "Get secretInformationAccessAwsServerlessFunctionFinding"
 description: "Read the properties and relationships of a secretInformationAccessAwsServerlessFunctionFinding object."
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**|
 
 ## HTTP request
 
@@ -30,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('id')/graph.secretInformationAccessAwsServerlessFunctionFinding
 ```
 
 ## Optional query parameters
@@ -45,7 +46,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a [secretInformationAccessAwsServerlessFunctionFinding](../resources/secretinformationaccessawsserverlessfunctionfinding.md) object in the response body.
+If successful, this method returns a `200 OK` response code and a [secretInformationAccessAwsResourceFinding](../resources/secretinformationaccessawsresourcefinding.md) object in the response body.
 
 ## Examples
 
@@ -53,11 +54,11 @@ If successful, this method returns a `200 OK` response code and a [secretInforma
 The following is an example of a request.
 <!-- {
   "blockType": "request",
-  "name": "get_secretinformationaccessawsserverlessfunctionfinding"
+  "name": "get_secretinformationaccessawsresourcefinding"
 }
 -->
 ``` http
-
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings('MSxTZWNyZXRJbmZvcm1hdGlvbkFjY2Vzc0F3c1NlcnZlcmxlc3NGdW5jdGlvbkZpbmRpbmcsNzQyNg')/graph.secretInformationAccessAwsServerlessFunctionFinding
 ```
 
 
@@ -67,7 +68,7 @@ The following is an example of the response
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.secretInformationAccessAwsServerlessFunctionFinding"
+  "@odata.type": "microsoft.graph.secretInformationAccessAwsResourceFinding"
 }
 -->
 ``` http
@@ -75,16 +76,30 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.secretInformationAccessAwsServerlessFunctionFinding",
-    "id": "09fa7e88-05f4-6b20-dd67-9e0b6ce8ab0b",
-    "createdDateTime": "String (timestamp)",
-    "secretInformationWebServices": "String",
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#identityGovernance/permissionsAnalytics/aws/findings/microsoft.graph.secretInformationAccessAwsServerlessFunctionFinding/$entity",
+    "id": "MSxTZWNyZXRJbmZvcm1hdGlvbkFjY2Vzc0F3c1NlcnZlcmxlc3NGdW5jdGlvbkZpbmRpbmcsNzQyNg",
+    "createdDateTime": "2023-10-25T23:48:13.066859Z",
+    "secretInformationWebServices": "secretsManager",
     "permissionsCreepIndex": {
-      "@odata.type": "microsoft.graph.permissionsCreepIndex"
+        "score": 4
     },
-    "lastActiveDateTime": "String (timestamp)"
-  }
+    "identity": {
+        "@odata.type": "#microsoft.graph.awsLambda",
+        "id": "YXJuOmF3czpsYW1iZGE6dXMtd2VzdC0yOjk1Njk4Nzg4NzczNTpmdW5jdGlvbjpDbG91ZEtub3hfSUFNUmlnaHRzaXpl",
+        "externalId": "arn:aws:lambda:us-west-2:956987887735:function:CloudKnox_IAMRightsize",
+        "displayName": "CloudKnox_IAMRightsize",
+        "source": {
+            "@odata.type": "#microsoft.graph.awsSource",
+            "identityProviderType": "aws",
+            "accountId": "956987887735"
+        },
+        "authorizationSystem": {
+            "@odata.type": "#microsoft.graph.awsAuthorizationSystem",
+            "authorizationSystemId": "956987887735",
+            "authorizationSystemName": "ck-development",
+            "authorizationSystemType": "aws",
+            "id": "MSxhd3MsOTU2OTg3ODg3NzM1"
+        }
+    }
 }
 ```
-
