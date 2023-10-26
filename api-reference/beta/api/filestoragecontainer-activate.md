@@ -77,6 +77,7 @@ A fileStorageContainer can be activated by calling any API that mutates the cont
 |Task name|Example request|
 |:---|:---|
 |Update a fileStorageContainer|PATCH /storage/fileStorage/containers/{containerId}|
-|Add a Permission to a fileStorageContainer|POST /storage/fileStorage/containers/{containerId}/permissions|
+|Add permissions to a fileStorageContainer|POST /storage/fileStorage/containers/{containerId}/permissions|
+
 |Create or update a custom property of a fileStorageContainer|PATCH /storage/fileStorage/containers/{containerId}/customProperties|
 |Create a new file or folder in container's drive|POST /drives/{driveId}/items/{itemId}/children|
