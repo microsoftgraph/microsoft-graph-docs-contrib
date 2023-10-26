@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and [teamsAppInstall
 
 ## Examples
 
-### Example 1 : Get the app installed in the specified chat
+### Example 1: Get the app installed in the specified chat
 
 The following example gets an app installed in the specified chat.
 
