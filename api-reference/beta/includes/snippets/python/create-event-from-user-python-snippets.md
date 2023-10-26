@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 # THE PYTHON SDK IS IN PREVIEW. FOR NON-PRODUCTION USE ONLY
 
-graph_client = GraphServiceClient(request_adapter)
+graph_client = GraphServiceClient(credentials, scopes)
 
 request_body = Event(
 	subject = "Let's go for lunch",
@@ -33,7 +33,7 @@ request_body = Event(
 			),
 			type = AttendeeType.Required,
 		),
-	]
+	],
 	allow_new_time_proposals = True,
 	transaction_id = "7E163156-7762-4BEB-A1C6-729EA81755A7",
 )
@@ -45,7 +45,7 @@ headers = {
 
 )
 
-result = await graph_client.me.events.post(body = request_body, request_configuration = request_configuration)
+result = await graph_client.me.events.post(request_body, request_configuration = request_configuration)
 
 
 ```
