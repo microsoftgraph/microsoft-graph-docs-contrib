@@ -1,5 +1,6 @@
 ---
-title: "List fileStorageContainer custom property"
+title: "List fileStorageContainer custom properties"
+
 description: "List the custom properties of a fileStorageContainer"
 author: "tonchan-msft"
 ms.localizationpriority: medium
