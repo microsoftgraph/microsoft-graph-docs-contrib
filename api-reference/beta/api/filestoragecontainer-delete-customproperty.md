@@ -9,7 +9,8 @@ ms.prod: "files"
 doc_type: apiPageType
 ---
 
-# Delete custom property from fileStorageContainer
+# Delete custom properties from a fileStorageContainer
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
