@@ -375,7 +375,7 @@ The following is a JSON representation of the resource.
   "preferredDataLocation": "String",
   "proxyAddresses": ["String"],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
-  "photos": { "@odata.type": "microsoft.graph.profilePhoto" },
+  "photos": [{ "@odata.type": "microsoft.graph.profilePhoto" }],
   "rejectedSenders": [{ "@odata.type": "microsoft.graph.directoryObject" }],
   "renewedDateTime": "String (timestamp)",
   "resourceBehaviorOptions": ["String"],
