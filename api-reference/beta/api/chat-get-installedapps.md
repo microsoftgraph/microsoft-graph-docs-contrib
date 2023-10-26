@@ -54,9 +54,11 @@ If successful, this method returns a `200 OK` response code and [teamsAppInstall
 
 ### Example 1 : Get the app installed in the specified chat
 
+The following example gets an app installed in the specified chat.
+
 #### Request
 
-The following example gets an app installed in the specified chat.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -106,6 +108,8 @@ GET https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@t
 
 #### Response
 
+The following example shows the response.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -127,6 +131,8 @@ Content-type: application/json
 The following example gets the list of any [resource-specific permissions that were granted to an app](../resources/teamsapppermissionset.md) as part of installation. A `$select` query parameterd is required to show the consented permission set.
 
 #### Request
+
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -175,6 +181,8 @@ GET https://graph.microsoft.com/beta/chats/19%5bd86ec7f6b247d3b9e519b0bfef5d03%4
 ---
 
 #### Response
+
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
