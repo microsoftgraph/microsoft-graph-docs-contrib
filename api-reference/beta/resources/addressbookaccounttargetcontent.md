@@ -30,7 +30,7 @@ None.
 
 ## JSON representation
 
-The following is a JSON representation of the resource.
+The following JSON representation shows of the resource type.
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.addressBookAccountTargetContent",
