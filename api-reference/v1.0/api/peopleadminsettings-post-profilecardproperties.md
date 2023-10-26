@@ -1,17 +1,17 @@
 ---
-title: "Add profileCardProperty"
-description: "Add a new profileCardProperty resource for an organization."
+title: "Create profileCardProperty"
+description: "Create a new profileCardProperty resource for an organization."
 ms.localizationpriority: medium
 author: "rwaithera"
 ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
-# Add profileCardProperty
+# Create profileCardProperty
 
 Namespace: microsoft.graph
 
-Add a new [profileCardProperty](../resources/profilecardproperty.md) for an organization. The new property is identified by its **directoryPropertyName** property.
+Create a new [profileCardProperty](../resources/profilecardproperty.md) for an organization. The new property is identified by its **directoryPropertyName** property.
 
 For more information about how to add properties to the profile card for an organization, see [Add or remove custom attributes on a profile card using the profile card API](/graph/add-properties-profilecard).
 
@@ -48,7 +48,7 @@ POST /admin/people/profileCardProperties
 
 In the request body, supply a JSON representation of a [profileCardProperty](../resources/profilecardproperty.md) object.
 
-You can specify the following properties when you add a **profileCardProperty** for an organization.
+You can specify the following properties when you create a **profileCardProperty** for an organization.
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -63,7 +63,7 @@ If successful, this method returns a `201 Created` response code and a new [prof
 
 ### Request
 
-The following is an example of the request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -91,7 +91,7 @@ Content-type: application/json; charset=utf-8
 
 ### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
