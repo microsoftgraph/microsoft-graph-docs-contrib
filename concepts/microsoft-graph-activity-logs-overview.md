@@ -54,7 +54,7 @@ The following data relating to API requests is available for Microsoft Graph act
 
 ## Configure to receive the Microsoft Graph activity logs
 
-You can configure to stream the logs through either the Diagnostic Setting in Microsoft Entra admin center or the Azure Resource Manager APIs. For more information, see the guidance in the following articles:
+You can configure to stream the logs through the Diagnostic Setting in the Azure portal or through Azure Resource Manager APIs. For more information, see the guidance in the following articles:
 
 - [Integrate activity logs with Azure Monitor logs](/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-log-analytics)
 - [Configure diagnosticSettings through the Azure Resource Manager API](/azure/templates/microsoft.insights/diagnosticsettings?pivots=deployment-language-arm-template)
