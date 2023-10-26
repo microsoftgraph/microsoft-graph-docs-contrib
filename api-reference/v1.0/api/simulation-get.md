@@ -55,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a [simulation](.
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -145,7 +145,7 @@ The following example shows how to get included account targets (users) for an a
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 <!-- {
   "blockType": "request",
   "name": "get_simulation_includedAccountTarget"
@@ -157,7 +157,7 @@ GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulations/f1b13
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -185,7 +185,7 @@ The following example shows how to get excluded account targets (users) for an a
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -198,7 +198,7 @@ GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulations/f1b13
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -226,7 +226,7 @@ The following example shows how to get training setting details for a simulation
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -239,7 +239,7 @@ GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulations/f1b13
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
@@ -266,7 +266,7 @@ The following example shows how to get end user notification setting details for
 
 #### Request
 
-The following is an example of a request.
+The following example shows a request.
 
 <!-- {
   "blockType": "request",
@@ -279,7 +279,7 @@ GET https://graph.microsoft.com/v1.0/security/attackSimulation/simulations/f1b13
 
 #### Response
 
-The following is an example of the response.
+The following example shows the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
