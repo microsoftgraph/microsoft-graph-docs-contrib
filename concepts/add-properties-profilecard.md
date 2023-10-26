@@ -20,7 +20,7 @@ Additional properties display in the **Contact** section of the profile card in 
 
 You can also [remove](/graph/api/profilecardproperty-delete) custom attributes from profile cards of the organization.
 
-[!INCLUDE [profilecardproperty-add-remove-note](../../includes/profilecardproperty-add-remove-note.md)]
+[!INCLUDE [profilecardproperty-add-remove-note](../includes/profilecardproperty-add-remove-note.md)]
 
 > [!NOTE]
 > * Operations on the **profileCardProperty** resource that use delegated permissions require the signed-in user to have a Tenant Administrator or Global Administrator role. 
