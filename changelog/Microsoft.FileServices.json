@@ -41,6 +41,22 @@
           "ChangeType": "Addition",
           "Description": "Added the [fileStorageContainerViewpoint](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainerviewpoint?view=graph-rest-beta) resource.",
           "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "8988cba7-3b8c-4ec3-8f45-d7a0af670f53",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "permissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissions** navigation property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
+        },
+        {
+          "Id": "8988cba7-3b8c-4ec3-8f45-d7a0af670f53",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "drive",
+          "ChangeType": "Addition",
+          "Description": "Added the **drive** navigation property to [fileStorageContainer](https://learn.microsoft.com/en-us/graph/api/resources/filestoragecontainer?view=graph-rest-beta) resource.",
+          "Target": "fileStorageContainer"
         }
       ],
       "Id": "a376b86e-b5eb-4d9e-8270-de3cc02af307",
