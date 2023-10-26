@@ -7297,13 +7297,13 @@ items:
                     href: resources/profilecardproperty.md
                   - name: List
                     href: api/peopleadminsettings-list-profilecardproperties.md
-                  - name: Add
+                  - name: Create
                     href: api/peopleadminsettings-post-profilecardproperties.md
                   - name: Get
                     href: api/profilecardproperty-get.md
                   - name: Update
                     href: api/profilecardproperty-update.md
-                  - name: Remove
+                  - name: Delete
                     href: api/profilecardproperty-delete.md
           - name: Insights
             items:
