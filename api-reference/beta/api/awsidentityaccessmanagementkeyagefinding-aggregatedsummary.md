@@ -1,9 +1,9 @@
 ---
 title: "awsIdentityAccessManagementKeyAgeFinding: aggregatedSummary"
-description: "**TODO: Add Description**"
-author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+description: "Get a raw count of AWS IAM Access Keys and their ages"
+author: "ashyasingh"
 ms.localizationpriority: medium
-ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://aka.ms/msgo?pagePath=Document-APIs/Guidelines/Metadata)**"
+ms.prod: "multicloud-permissions-management"
 doc_type: apiPageType
 ---
 
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**TODO: Add Description**
+Get a raw count of AWS IAM Access Keys and their ages in an AWS environment.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|**TODO: Provide applicable permissions.**|
-|Delegated (personal Microsoft account)|**TODO: Provide applicable permissions.**|
-|Application|**TODO: Provide applicable permissions.**|
+|Delegated (work or school account)|Not supported|
+|Delegated (personal Microsoft account)|Not supported|
+|Application|**SERVICENOWAPI**
 
 ## HTTP request
 
@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET ** Collection URI for microsoft.graph.awsIdentityAccessManagementKeyAgeFinding not found/aggregatedSummary
+GET identityGovernance/permissionsAnalytics/aws/findings/graph.awsIdentityAccessManagementKeyAgeFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['{{awsAuthSystemId}}'])
+
 ```
 
 ## Function parameters
@@ -39,7 +40,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|authorizationSystemIds|String collection|**TODO: Add Description**|
+|authorizationSystemIds|String collection|List the authorization system IDs.|
 
 
 ## Request headers
@@ -64,9 +65,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta** Collection URI for microsoft.graph.awsIdentityAccessManagementKeyAgeFinding not found/aggregatedSummary(authorizationSystemIds=[
-  "String"
-])
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.awsIdentityAccessManagementKeyAgeFinding/microsoft.graph.aggregatedSummary(authorizationSystemIds=['377596131774'])
 ```
 
 
@@ -84,9 +83,8 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.permissionsAnalyticsAggregatedIamKeySummary"
-  }
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#microsoft.graph.permissionsAnalyticsAggregatedIamKeySummary",
+    "totalCount": 16,
+    "findingsCountOverLimit": 15
 }
 ```
-

@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsResourceFinding/aggregatedSummary
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsResourceFinding/aggregatedSummary(authorizationSystemIds=['{{awsAuthSystemId}}'])
 ```
 
 ## Function parameters
@@ -39,7 +39,7 @@ The following table shows the parameters that can be used with this function.
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|authorizationSystemIds|String collection|**TODO: Add Description**|
+|authorizationSystemIds|String collection|List the authorization system IDs.*|
 
 
 ## Request headers
@@ -64,9 +64,7 @@ The following is an example of a request.
 }
 -->
 ``` http
-GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsResourceFinding/aggregatedSummary(authorizationSystemIds=[
-  "String"
-])
+GET https://graph.microsoft.com/beta/identityGovernance/permissionsAnalytics/aws/findings/graph.inactiveAwsResourceFinding/aggregatedSummary(authorizationSystemIds=['377596131774','956987887735'])
 ```
 
 
@@ -84,9 +82,9 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary"
-  }
+    "@odata.context": "https://canary.graph.microsoft.com/testprodbetaevan_schema/$metadata#microsoft.graph.permissionsAnalyticsAggregatedIdentitySummary",
+    "totalCount": 8,
+    "findingsCount": 5
 }
 ```
 
