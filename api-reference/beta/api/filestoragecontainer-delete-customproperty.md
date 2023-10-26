@@ -1,5 +1,6 @@
 ---
-title: "Delete custom property from fileStorageContainer"
+title: "Delete custom properties from a fileStorageContainer"
+
 description: "Delete custom property from fileStorageContainer"
 author: "tonchan-msft"
 ms.localizationpriority: medium
