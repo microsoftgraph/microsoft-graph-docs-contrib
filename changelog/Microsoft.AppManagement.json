@@ -1,0 +1,56 @@
+﻿{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "7e77d427-7ee2-45d3-9684-aa4d13cdfe1d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "user",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **user** resource type.",
+          "Target": "user"
+        },
+        {
+          "Id": "7e77d427-7ee2-45d3-9684-aa4d13cdfe1d",
+          "ApiChange": "Method",
+          "ChangedApiName": "deletePasswordSingleSignOnCredentials",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **deletePasswordSingleSignOnCredentials** method from the [user](https://learn.microsoft.com/en-us/graph/api/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        },
+        {
+          "Id": "7e77d427-7ee2-45d3-9684-aa4d13cdfe1d",
+          "ApiChange": "Method",
+          "ChangedApiName": "getPasswordSingleSignOnCredentials",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **getPasswordSingleSignOnCredentials** method from the [user](https://learn.microsoft.com/en-us/graph/api/user?view=graph-rest-beta) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "7e77d427-7ee2-45d3-9684-aa4d13cdfe1d",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-10-26T09:40:52.56049Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2e3e8292-d8e1-419b-9ccf-300c5ea3be38",
+          "ApiChange": "EntitySet",
+          "ChangedApiName": "users",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **users** resource type",
+          "Target": "Container"
+        }
+      ],
+      "Id": "2e3e8292-d8e1-419b-9ccf-300c5ea3be38",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2023-10-26T09:40:52.5604927Z",
+      "WorkloadArea": "Applications",
+      "SubArea": "Service principal"
+    }
+  ]
+}
