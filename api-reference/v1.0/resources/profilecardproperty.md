@@ -15,7 +15,7 @@ The attribute can be an Microsoft Entra ID built-in attribute, such as **Alias**
 
 For more information about how to add properties to the profile card for an organization, see [Add or remove custom attributes on a profile card using the profile card API](/graph/add-properties-profilecard).
 
-[!INCLUDE [profilecardproperty-add-remove-note](../includes/profilecardproperty-add-remove-note.md)]
+[!INCLUDE [profilecardproperty-add-remove-note](../../includes/profilecardproperty-add-remove-note.md)]
 
 ## Methods
 
