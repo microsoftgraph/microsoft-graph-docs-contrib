@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 A representation of a platform credential instance registered to a user on macOS. Platform Credential is a sign-in authentication method for macOS devices.
 
-This is a derived type that inherits from the [authenticationMethod](authenticationmethod.md) resource type.
+This derived type inherits from the [authenticationMethod](authenticationmethod.md) resource type.
 
 ## Methods
 |Method|Return type|Description|
@@ -39,7 +39,7 @@ This is a derived type that inherits from the [authenticationMethod](authenticat
 |device|[device](../resources/device.md)|The registered device on which this Platform Credential resides. Supports `$expand`. <br/><br/>When you get a user's Platform Credential registration information, this property is returned only on a single GET and when you specify `?$expand`. For example, GET `/users/admin@contoso.com/authentication/platformCredentialAuthenticationMethod/_jpuR-TGZtk6aQCLF3BQjA2?$expand=device`.|
 
 ## JSON representation
-The following is a JSON representation of the resource.
+The following JSON representation shows the resource type.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
