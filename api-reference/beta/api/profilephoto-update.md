@@ -130,7 +130,7 @@ The following is an example of a request.
   "name": "update_profilephoto"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/me/photo/$value
+PUT https://graph.microsoft.com/beta/me/photo/$value
 Content-type: image/jpeg
 
 Binary data for the image
@@ -179,7 +179,7 @@ The following is an example of a request to update a team photo.
   "name": "update_team_photo"
 }-->
 ```http
-PUT https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo/$value
+PUT https://graph.microsoft.com/beta/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo/$value
 Content-type: image/jpeg
 
 Binary data for the image
