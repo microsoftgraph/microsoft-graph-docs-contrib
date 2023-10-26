@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List the custom properties of a fileStorageContainer. Caller can either retrieve all custom properties or get specific property by name.
+List the custom properties of a fileStorageContainer. The caller can either retrieve all custom properties or get a specific property by name.
+
 
 The application calling this API must have permission to read fileStorageContainers for the respective container type.
 
